@@ -240,6 +240,22 @@ def main() -> None:
 
     **字段**：`m_itemRestNumber`、`m_storageRestNumber`、恢复时长字段。**源码**：`UpdatePerSecond`、恢复处理。恢复补充的精确时机和服务器时间漂移属于 `runtime-pending`。
     """)
+    write("operations/generator/state/timing.md", """# 开启、加速与时间跳过
+
+    这组流程处理母体从关闭到可产出的等待，以及玩家用宝石、广告或活动 Buff 跳过等待的行为。它不生成棋子；它只改变 `m_startTimer`，再让统一的 `UpdatePerSecond` 重新结算状态。
+
+    ## 执行顺序
+
+    1. `OnOpen` 把状态置为 `Opening`，立即调用 `UpdatePerSecond`，并通知棋盘当前有正在开启的母体。
+    2. 玩家点击加速时进入 `OnSpeedUp → _SpeedUp`。非免费加速先读取 `GetSpeedUpCost`，再检查宝石余额；不足只发送 `LackGem`，不改计时。
+    3. 宝石扣除或免费资格通过后，`OnTimeSkip` 把 `m_startTimer` 向服务器时间方向提前，并保存母体属性。
+    4. `UpdatePerSecond` 重新计算进度；进度达到 1 时由 `_UpdateRecoveryState` 转为 `Opened` 或补回恢复次数。
+    5. 点击链成功消耗完可恢复母体次数后，`TryUseCDBuff` 可能用 CD Buff、GeneratorBoost CD Buff 或测试免费开关再次跳过等待。
+
+    左侧的具体页给出费用、时间字段、事件和每个分支的精确副作用。
+
+    **源码**：`ItemSpread:OnOpen`、`OnSpeedUp`、`_SpeedUp`、`OnTimeSkip`、`TryUseCDBuff`、`OnTimeSkipInZeroRestNumber`。动态广告和活动对象身份标记为 `runtime-pending`。
+    """)
     write("operations/generator/position/index.md", """# 空位检查
 
     空位检查发生在状态检查之后、能量检查之前。它只负责回答“本次产出能否找到目标格”，不负责决定产出代码。主动点击和自动产出在这里分流：自动母体先尝试自动落子；手动路径随后统一使用以母体为中心的扩散扫描。
@@ -524,6 +540,38 @@ def main() -> None:
 
     **状态持久化**：产出代码和次数处理过程中会调用 `SaveItemProperty`；变换走 `ItemTransform:Transform`，一次性耗尽走 `RemoveItem` 和 `BoardEventType.CollapseItem`。具体监听对象和异步网络上传仍按证据等级标记。
     """)
+    write("operations/generator/overrides/index.md", """# 产出改写与安全边界
+
+    产出代码确定前后还有三类会改变最终结果的逻辑：活动可以替换代码或费用，能量增益可以沿合成链升级代码，安全修正会把异常次数限制在配表上限内。它们分别发生在 `GenerateItemCode` 的不同位置，不能合并成一个“加成”字段。
+
+    - [Lucky、Disco 与产出改写](activity/index.md)
+    - [能量增益与链升级](boost/index.md)
+    - [数值安全修正](safety/index.md)
+    """)
+    write("operations/generator/overrides/activity.md", """# Lucky、Disco 与产出改写
+
+    `GenerateItemCode` 的入口优先检查 Lucky；Lucky 成功就直接返回 Lucky 代码。未命中时，如果 Disco 支持当前母体，先尝试直接提供 Disco 代码；没有直接代码时仍标记 Disco 场景并把最大能量增益档提升到 3。普通产出生成后，`DealActivityLimit` 还可以再次由 Disco 改写代码和增益倍率，并把本次 `costCount` 改为 0。
+
+    这解释了为什么同一个母体在不同活动状态下可能出现不同代码、不同扣费和不同 BI 产出类型。
+
+    **源码**：`CheckLuckyProduce`、`TryGenerateLuckyItem`、`TryGenerateDiscoItem`、`DealActivityLimit`、`GenerateItemCode`。Lucky 的机会池和物品池见左侧 Lucky 分支；本页只说明它们在普通产出入口的执行优先级。
+    """)
+    write("operations/generator/overrides/boost.md", """# 能量增益与链升级
+
+    能量增益不是简单把一个数乘大。`SpreadCheckEnergyRatioAndCode` 先保存原始代码，再根据最大增益档和订单缺口检查同一合成链上的更高等级；找到订单缺口或特定奇数缺口时提前截断增益档，然后沿 `MergedType` 逐级替换代码。FishNetProduceSmart 仅在服务端开关开启、代码属于生鱼链且缺口恰好满足二进制等级条件时再次替换到目标等级。
+
+    该流程发生在普通代码选择之后、次数扣除之前；最终 `energyBoostRatio` 同时影响代码等级和一次性母体的扣除量。
+
+    **源码**：`SpreadCheckEnergyRatioAndCode`、`CosetRestNumber`。订单缺口和服务端开关的实时值属于 `runtime-pending`。
+    """)
+    write("operations/generator/overrides/safety.md", """# 数值安全修正
+
+    `SafeSpreadItem` 在真正生成代码前检查两组持久化数值：`m_itemRestNumber` 不能大于 `m_itemMaxNumber`，`m_storageRestNumber` 不能大于 `m_storageMaxNumber`。超过上限时先记录对应 BI 错误，再把数值截回上限；它不会补次数，也不会改变权重池。
+
+    自动缓存完成后调用 `EmptySpreadCount`，把剩余次数和储备同时置零；Decremental 母体还会清空 `m_codeWeightPairs`。因此“异常上限修正”和“正常耗尽清空”是两个不同阶段。
+
+    **源码**：`SafeSpreadItem`、`EmptySpreadCount`。**字段**：`m_itemRestNumber`、`m_itemMaxNumber`、`m_storageRestNumber`、`m_storageMaxNumber`、`m_codeWeightPairs`。
+    """)
 
     # Non-Lucky generator branches use the same four-level contract as Lucky:
     # stage overview -> branch overview -> directly reproducible detail page.
@@ -532,6 +580,7 @@ def main() -> None:
         "state/closed_detail.md": ("关闭状态的具体判定", "`Init` 在没有初始化时，如果 `Spread_OpenDuration` 非空就把 `m_state` 设为 `Closed`，但不启动计时。`OnTap` 进入 `CheckSpreadState` 后首先命中 Closed 分支，调用 `_NotifySpreadFailed(ItemClosed)`，依次发送棋盘失败事件、全局失败事件和重震动，然后返回 false；空位、能量和产出函数均不会执行。`OnOpen` 才把状态改为 Opening 并开始计时。"),
         "state/opening_detail.md": ("开启中状态的具体判定", "`OnOpen` 写入 `m_state=Opening`，`UpdatePerSecond` 为 `m_startTimer` 记录服务器时间并发送 `StateChanged`。计时未完成时，`CheckSpreadState` 命中 Opening，发送 `ItemOpening` 失败链并停止；到期由 `_UpdateRecoveryState` 将状态改为 Opened、清空 `m_startTimer`、派发 `ItemOpened` 和 `UpdateOpeningItem`。`GetSpeedUpCost` 在此阶段使用 `m_openSpeedUpCost`，不是恢复时长费用。"),
         "state/opened_detail.md": ("可产出状态的具体判定", "`CheckSpreadState` 没有显式的 `Opened` 分支；只要不是 Closed/Opening/Initializing，且 `m_itemRestNumber` 不为 0，就返回 true。可恢复母体在次数耗尽时走同一个 `ItemRecharging` 分支；一次性母体耗尽则不发 Recharging，等待成功落子后的 `TryRemoveSelf` 删除。`GetTimerDuration` 在 Opened 状态根据 `m_storageRestNumber == 0` 选择储备恢复时长或单轮恢复时长。"),
+        "state/timing_detail.md": ("开启、加速和时间跳过的具体结算", "`OnOpen` 只写入 `m_state=Opening`，随后由 `UpdatePerSecond` 决定是否建立 `m_startTimer`；它还发送 `ItemOpening` 并调用 `UpdateOpeningItem`。`_SpeedUp(false)` 先读取 `GetSpeedUpCost` 和宝石余额，不足时发 `BoardEventType.LackGem`（场景 `TimeSkip`）并立即返回；足够时调用 `PropertyDataManager:Consume(Gem,cost,SpeedUp,sourceCode)`。免费路径跳过宝石扣除。两条路径最后都调用 `OnTimeSkip`：没有显式 duration 时先把起点重置为当前服务器时间，再减去整个阶段时长，保存属性、播放音效、重新 `UpdatePerSecond`，并按 `Gem`/`ad`/`Buff` 写加速 BI。`TryUseCDBuff` 只有在支持 CD Buff、GeneratorBoost CD Buff 或测试免费开关之一成立，且 `m_itemRestNumber==0` 时才调用同一时间跳过；`OnTimeSkipInZeroRestNumber` 还要求对象是生成器、使用能量且属于主棋盘。"),
         "position/disposable_detail.md": ("一次性落点的具体算法", "### 1. 手动点击：确定性的方形环扫描\n\n`_TrySpread` 先通过 `CheckSpreadPosAndAuto` 取落点。一次性母体通常 `Spread_Auto != 1`，因此直接调用 `FindEmptyPositionInSpreadOrder(centerPosition)`。底层实现先令 `currentPosition=centerPosition`，令 `maxTiles=max(HorizontalTiles,VerticalTiles)`；对 `i=1..maxTiles-1`，先把当前位置移到左下角方向的 `(-1,-1)`，形成边长 `2*i` 的方形环，再按 `dir=1..4`、每个方向走 `2*i` 格。每到一格先调用 `PositionIsValid`，再调用 `GetItem==nil`；第一个合法空格立即返回。扫描完所有环后返回传入的 `openedPosition`，本次调用没有传该参数所以结果为 nil。\n\n这意味着手动一次性母体不是随机选位置：同一棋盘占用状态和同一母体坐标下，返回位置完全由扫描顺序决定。\n\n### 2. 自动产出：随机空位与自动循环\n\n`Update` 对 `Spread_Auto==1` 的母体反复调用 `_TryAutoSpread`。该函数先检查 `m_itemRestNumber != 0` 且 `m_state == Opened`，再通过 `_GetAutoSpreadPosition → MainBoardModel:FindSpreadPosition` 选位置。`FindSpreadPosition` 对 `IsDisposable()` 为真时调用 `FindRandomPosition`；可恢复母体则调用八邻域 `FindEmptyPositionInCircleOrder`。位置成功后才生成代码并写入棋盘，循环继续直到无次数、无位置或触发变换。\n\n### 3. `FindRandomPosition` 的每一次抽样\n\n`BaseItemLayerModel:FindRandomPosition` 每次调用都新建 `positions` 临时数组，从 `GetValidPositionIterator()` 的有效位置迭代器开始。迭代器从 `(1,1)` 逐格走：x 递增，x 超过棋盘宽度时换到下一 y；每格读取 `GetItem`，只把空格插入数组。空数组交给 `Table.ListRandomSelectOne` 返回 nil；非空数组由 `MathUtil.Random(#positions)` 生成 1 到候选数的整数下标并返回该项。它没有保存“已抽过的位置”集合，也没有在抽样后从棋盘写入前修改候选数组；下一次调用重新扫描当前棋盘。因此它是“每次基于当前空位集合的独立均匀抽样”，从概率语义上属于有放回抽样；真正落子后该格才会从下一次候选集合消失。\n\n### 4. 满盘、缓存与最终写入\n\n手动扫描返回 nil 时，`CheckSpreadPosAndAuto` 立即调用 `_NotifySpreadFailed(BoardFull)`；该函数同时发 `BoardEventType.SpreadFailed`、`EEventType.SpreadFailed` 和 `VibrationHeavy`，随后 `_TrySpread` 返回，能量、产出代码、扣除次数、落子均不执行。自动路径无位置时，若 `IsDisposable()`、`m_weightType==Decremental`、`CacheItemFromSpread` 方法存在且 `AutoSpreadToCache` 服务端开关开启，则把 `GetAutoSpreadDecrementalRemainTypes()` 展开的剩余代码列表写入缓存，递增 `m_spreadCount`，调用 `EmptySpreadCount` 清空次数和 Decremental 权重，并通过缓存事件通知；否则 `_TryAutoSpread` 返回 false。\n\n**源码证据**：`ItemSpread:_TrySpread`（约 896 行）、`CheckSpreadPosAndAuto`（847 行）、`_TryAutoSpread`（798 行）、`MainBoardModel:FindSpreadPosition`（230 行）、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`（解码源码 25-38 行）、`FindRandomPosition`（解码源码 99-108 行）、`Table.ListRandomSelectOne`（解码源码 95-100 行）。"),
         "position/recoverable_detail.md": ("可恢复落点的具体算法", "手动点击仍由 `CheckSpreadPosAndAuto` 调用 `FindEmptyPositionInSpreadOrder`，算法是从母体坐标向外扩大的方形环扫描；“可恢复”只影响 `IsDisposable()`、次数耗尽和恢复计时，不改变手动落点函数。自动产出才走 `FindEmptyPositionInCircleOrder`：按 `dir=1..8` 检查母体八个相邻格，先通过 `PositionIsValid` 再检查为空，返回第一个空位；八邻域全部占用时返回 nil。"),
         "position/auto_detail.md": ("自动产出与缓存的具体条件", "`Update` 只有在 `m_auto==1` 时进入 while 循环；每轮 `_TryAutoSpread` 先要求 `m_itemRestNumber != 0` 且 `m_state==Opened`。落点由 `FindSpreadPosition` 决定：一次性母体调用全盘 `FindRandomPosition`，可恢复母体调用八邻域圆周顺序。无位置时，仅当 `IsDisposable()`、`m_weightType==Decremental`、棋盘实现 `CacheItemFromSpread` 且 `AutoSpreadToCache` 服务端开关为真才缓存剩余代码；缓存后 `m_spreadCount += #remainTypes`，`EmptySpreadCount` 将次数和 Decremental 权重清空。"),
@@ -553,6 +602,9 @@ def main() -> None:
         "events/resource_detail.md": ("资源事件的具体监听链", "通过能量检查后，`SpreadCostEnergy` 将棋盘能量类型映射为属性类型，调用 `PropertyDataManager:Consume(propertyType,costCount,EBIType.SpreadItem,sourceCode)`。这一步在 `GenerateItemCode` 之后、`BaseBoardModel:SpreadItem` 之前；`RecordBoostRatioAdjustData` 同时记录最终能量增益比率、产出类型、是否消耗能量和母体类型。属性系统的全局监听与上传目标在当前静态快照中未能确认，不能写成必然回调。"),
         "events/board_detail.md": ("棋盘事件的具体写入顺序", "`BaseBoardModel:SpreadItem` 先调用 `GenerateItem(newItemPosition,newItemCode,...)` 创建并放入目标格，再构造 `{Source,New,EnergyBoostRatio,CostEnergy,BoardSpreadType}` 发送 `BoardEventType.SpreadItem`。`MainBoardModel:SpreadItem` 随后派发 `EEventType.ItemSpread`；若 `logSpread` 则组装 `eb/md/st/oriEle/sc/ab` 写 `BIManager:LogSpread`，最后检查棋盘满。点击链再发送 `VibrationLight`，发生在落子之后。"),
         "events/side_effects_detail.md": ("副作用的具体字段", "`GenerateItemCode` 可能被 SmartProduce、Disco、FishNetProduceSmart 改写，并返回 `spreadType`、原始代码和扩展场景；`DealActivityLimit` 在 Disco 生效时把最终 `costCount` 改为 0。成功落子时 BI 扩展字段包括 `eb`（最终能量增益比率）、`md`（能量增益类型）、`st`（产出来源类型）、`oriEle`（原始代码）和 `sc`（扩展场景）；GeneratorBoost 活动文本写入 `ab`。动态活动实例仍标为 `runtime-pending`。"),
+        "overrides/activity_detail.md": ("活动改写的具体顺序", "`GenerateItemCode` 先调用 `CheckLuckyProduce`；教程棋盘和 Disco 支持时直接跳过 Lucky。Lucky 命中后调用 `TryGenerateLuckyItem`，按活动调整后的最大增益档沿 `MergedType` 升级并立即返回。Lucky 未命中且 Disco 支持时调用 `TryGenerateDiscoItem`：有直接代码返回 `(code, Disco, 0)`；没有直接代码则继续普通生成，但把 `spreadType` 设为 Disco、最大增益档设为 3。普通代码经 `SpreadCheckEnergyRatioAndCode` 后，再调用 `DealActivityLimit`；该函数可由 Disco 再次替换代码和倍率，并把 `costCount` 归零。"),
+        "overrides/boost_detail.md": ("链升级和 FishNet 具体算法", "`SpreadCheckEnergyRatioAndCode` 先把 `energyBoostRatio` 设为最大档。若棋盘提供订单缺口图，就按 `i=0..maxRatio` 检查同链更高等级：目标等级存在缺口，或目标等级库存减订单需求后为正奇数且仍在允许范围时，把比率截断为 `i` 并停止。之后按 `i=1..energyBoostRatio` 重复读取当前代码的 `MergedType`，得到最终代码。服务端 `FishNetProduceSmart` 打开且代码属于 RwaFish 时，再把各等级按 `2^(level-1)` 换算为一级鱼数量；当缺口是一个严格小于满链的二次幂，并且目标等级位于 `origin+1` 到 `origin+3` 范围内，才替换为匹配等级并记录 `FishNetProduceSmart` 场景。"),
+        "overrides/safety_detail.md": ("次数与储备上限修正", "`SafeSpreadItem` 在 `_GenerateItemCode` 前执行。若 `m_itemRestNumber > m_itemMaxNumber`，记录 `{rest,max}` 的 `ItemRestNumberOverflowError` 后截回最大值；若储备存在且 `m_storageRestNumber > m_storageMaxNumber`，同样记录 `StorageRestNumberOverflowError` 并截回。它不改变 `m_spreadCount` 或权重。自动缓存的另一条路径随后调用 `EmptySpreadCount`：次数、储备都置零，Decremental 的 `m_codeWeightPairs` 置为空表，更新计时、派发 `StateChanged` 并保存属性。"),
     }
     for rel, (title, body) in fourth_pages.items():
         clean_body = textwrap.dedent(body).strip()
@@ -570,6 +622,7 @@ def main() -> None:
         "state/closed": ("state/closed.md", "state/closed_detail.md"),
         "state/opening": ("state/opening.md", "state/opening_detail.md"),
         "state/opened": ("state/opened.md", "state/opened_detail.md"),
+        "state/timing": ("state/timing.md", "state/timing_detail.md"),
         "position/disposable": ("position/disposable.md", "position/disposable_detail.md"),
         "position/recoverable": ("position/recoverable.md", "position/recoverable_detail.md"),
         "position/auto": ("position/auto.md", "position/auto_detail.md"),
@@ -587,6 +640,9 @@ def main() -> None:
         "events/resource": ("events/resource.md", "events/resource_detail.md"),
         "events/board": ("events/board.md", "events/board_detail.md"),
         "events/side_effects": ("events/side_effects.md", "events/side_effects_detail.md"),
+        "overrides/activity": ("overrides/activity.md", "overrides/activity_detail.md"),
+        "overrides/boost": ("overrides/boost.md", "overrides/boost_detail.md"),
+        "overrides/safety": ("overrides/safety.md", "overrides/safety_detail.md"),
     }
 
     def clone_without_case(source: str, target: str) -> None:
@@ -617,9 +673,9 @@ def main() -> None:
 
     入口 `MainBoardModel:DragItem` 的优先级是：非法目标、源身份、空位移动、特殊影响、普通合成、吞噬、不可移动目标、交换。
 
-    - [拖拽分派与移动](dispatch.md)
-    - [普通合成](normal.md)
-    - [特殊棋子与吞噬](special.md)
+    - [拖拽分派与移动](dispatch/index.md)
+    - [普通合成](normal/index.md)
+    - [特殊棋子与吞噬](special/index.md)
     - [合成副产物](effects/index.md)
     """)
     write("operations/merge/dispatch.md", """# 拖拽分派与移动
@@ -637,17 +693,41 @@ def main() -> None:
 
     **源码**：`MainBoardModel:DragItem`、`CanItemMerge`。每个恢复路径需要独立回放验证。
     """)
+    write("operations/merge/dispatch_detail.md", """# 分支顺序与移动交换算法
+
+    `DragItem` 先用 `PositionIsValid` 检查目标格，再从源坐标重新读取棋子并确认仍是拖动对象；这是防止视图过期或重复拖动覆盖棋盘的身份门禁。随后按以下顺序短路：目标为空则移动；有目标时先尝试 `CanItemAffect`（升级/降级），再尝试 `CanItemMerge`，再尝试 `ItemSwallow:CanSwallow`，目标不可移动则复位，否则交换。
+
+    空位移动的原子写入是 `_SetItem(source,nil,false)` → `_SetItem(target,item,false)` → `_LogMove` → `SetPosition` → `_UpdateAccelerate` → `ItemMoveEnd`。交换则清空源格、写入拖入物、写回原目标物，分别记录两条 Move 日志，再更新两个位置；所有 `_SetItem` 都传 `false`，所以移动/交换不在中间刷新订单状态。
+
+    **源码**：`MainBoardModel:DragItem`、`BaseBoardModel:_SetItem`、`MainBoardModel:_UpdateAccelerate`。`CanItemMove` 会拒绝纸箱、蜘蛛网、锁定组件，吞噬棋子还必须允许点击；这些资格检查不能简化成“目标为空/不为空”。
+    """)
     write("operations/merge/normal.md", """# 普通合成
 
     `CanItemMerge` 要求类型相同、至少一方有 `MergedType`，且已使用的一次性箱子不能合成。`_DoMergeItem` 将目标替换为 `MergedType`，移除源棋子，保存新属性，发送 `BoardEventType.MergeItem` 和 `EEventType.ItemMerged`。
 
     **配表**：`ItemModelConfig.MergedType`，当前 370 行。**源码**：`BaseBoardModel:_DoMergeItem`、`MainBoardModel:_DoMergeItem`。活动监听器静态已定位，动态对象身份 `runtime-pending`。
     """)
+    write("operations/merge/normal_detail.md", """# 合成原子操作与事件顺序
+
+    基础合成先 `RemoveItem(item,false)` 删除拖入物，再决定输出代码：普通物品取拖入物的 `MergedType`，临时物品取目标物的 `MergedType`。生成前查询是否首次解锁，然后 `ReplaceItem` 删除目标并在原目标位置创建新棋子、写入 ItemManager 和棋盘。之后构造包含 Source、Target、New、原始 code 和首次解锁标记的 `MergeItem` 消息，依次发送 `BoardEventType.MergeItem` 与 `EEventType.ItemMerged`，最后震动四个正交邻格并发送 `ItemShocked`。
+
+    MainBoardModel 后处理再按 `TempItem` → `CardItem` → `EnergyBubble` → 普通气泡的顺序寻找一种主副产物；任何一种成功都会阻止后续三种。金币检查独立于这个互斥标记，仍可能在同一次合成后生成。最后调用 `CheckMoreUpload`。
+
+    **证据**：`BaseBoardModel:_DoMergeItem`、`MainBoardModel:_DoMergeItem`。`MergedType` 是实例初始化时从 `ItemModelConfig` 复制的直接字段，不是运行时按等级推导。
+    """)
     write("operations/merge/special.md", """# 特殊棋子与吞噬
 
     LevelUp 将目标替换为 `MergedType`；LevelDown 拆成两个前一级棋子；ItemSwallow 按两个 `Swallow_Weight` 生成目标代码并保存进度，两个目标数量都达标才 Transform；吞噬扫描按有效棋盘位置顺序，不随机打乱。
 
     **配表**：`Swallow_Weight`、吞噬数量、Transform 字段。**源码**：[ItemSwallow.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSwallow.lua)、`ItemTransform`。
+    """)
+    write("operations/merge/special_detail.md", """# 升级、降级和吞噬的具体算法
+
+    特殊棋子在普通合成前处理。LevelUp 确认窗口通过二次 `CanItemAffect` 校验后，删除升级棋、用目标的 `MergedType` 替换目标并发送合成/邻格震动事件；确认等待期间拖入物先复位。LevelDown 对普通目标读取目标链的前一级，消耗剪刀次数，删除目标并在目标位置和扩散扫描得到的第二空位各生成一个前一级；两把剪刀相遇时删除两者，生成一把新剪刀，并把两者剩余使用次数相加。
+
+    吞噬资格要求两个配置槽中存在相同 code 且该槽 `Swallowed < Count`。成功后先增加对应槽进度并保存目标属性，再移除拖入物、发送 `SwallowItem` 事件和 BI；两个槽都达到 Count 才 `ItemTransform:Transform`。目标 code 的选择不是每次独立随机：`ItemFixedSwallowModel` 把每槽权重展开为 `[1..W]`，用从 W 到 1 的 Fisher-Yates 洗牌持久化序列，取出序列头并按累计权重映射 code，消费后立即写回剩余序列；序列耗尽才重建。因此同一 code 可按 Weight 出现多次，但在一轮序列内属于无放回抽样。
+
+    **源码**：`MainBoardModel:_AffectItem`、`ItemSwallow:CanSwallow`、`ItemSwallow:Swallow`、`ItemFixedSwallowModel` 反汇编。权重数值以当前配置快照为准。
     """)
     write("operations/merge/effects/index.md", """# 合成副产物
 
@@ -671,11 +751,25 @@ def main() -> None:
 
     **配表**：`ItemModelConfig.BubbleChance`，当前 138 行大于 0；服务端 BubbleDecrease 和购买/订单修正。**源码**：`_TrySpreadBubbleByMerge`。基础顺序 `source-confirmed`，服务端值 `runtime-pending`。
     """)
+    write("operations/merge/effects/bubble_detail.md", """# 概率修正与随机判定
+
+    棋盘满或气泡功能关闭时不调用随机数；已有相同 inner code 的气泡也直接取消。否则先读新棋子的 `BubbleChance`，购买加成或订单加成成立时把概率置为 100%；普通路径依次乘订单衰减、高等级气泡链衰减和 `BubbleDecreaseModel` 的全局倍率，最后把概率下限限制为 1。测试开关 `TestBubbleMustSpread` 在随机前强制 100%。
+
+    最终调用 `MathUtil.Random(100)`，源码实现为 `floor(math.random()*100)+1`，取值 1..100（含端点）；条件是 `p >= R`。通过后把新棋子 code 加上 Bubble 前缀，并使用 `FindEmptyPositionInSpreadOrder` 找气泡落点，再派发 `BubbleSpread`。这是独立阈值判定，不是候选池抽样，也不保存历史抽样状态。
+
+    **源码**：`MainBoardModel:_TrySpreadBubbleByMerge`、`_GetDecreaseBubbleChanceRatio`、`_GetDecreaseBubbleChanceRatio2`、`MathUtil.Random`。
+    """)
     write("operations/merge/effects/activity.md", """# 卡牌、能量气泡和临时棋子
 
     Temp 先于 Card，Card 先于 EnergyBubble；某一步创建成功后，后续两类不再创建，棋盘满时跳过。
 
     **源码**：`MainBoardModel:_DoMergeItem` 及 Temp/Card/EnergyBubble 调用。**配置**：对应类型字段。活动开关、动态对象身份和真实概率 `runtime-pending`。
+    """)
+    write("operations/merge/effects/activity_detail.md", """# 互斥顺序与落点算法
+
+    合成完成且棋盘未满时，先调用 `TempItem:GenerateType`；成功就从合成物周围按 `FindEmptyPositionInSpreadOrder` 生成临时棋子并停止。没有临时棋子才调用 `CardItem:TryGenerateItem`，成功后生成卡牌并派发 `CardItemGenerate`。再没有卡牌才检查 `EnergyBubble:CanSpreadEnergyBubble` 并按其 `GetBubbleInfo().Code` 生成。前三类都通过 `hasCreateItem` 互斥，普通气泡位于其后。
+
+    每一步都必须有合法空位；满盘会跳过该副产物，不会把它改成随机落点。金币不受 `hasCreateItem` 互斥限制，独立在之后检查。
     """)
     write("operations/merge/effects/coin.md", """# 金币
 
@@ -683,15 +777,19 @@ def main() -> None:
 
     **配表**：`SystemConfig.SpreadCoinMinChainLevel`。**源码**：`MainBoardModel:_DoMergeItem` 金币分支。活动修正 `runtime-pending`。
     """)
+    write("operations/merge/effects/coin_detail.md", """# 合成等级与金币落点
+
+    主副产物流程完成后，若新棋子的合成链等级达到 `SystemConfig.SpreadCoinMinChainLevel` 且棋盘仍有空位，独立寻找扩散顺序中的第一个空格并生成 `ItemType.Coin01`。金币不是四类主副产物的竞争候选，不会因为临时棋子、卡牌或气泡已经生成而自动取消；只有棋盘无有效落点才跳过。
+    """)
 
     write("operations/orders/index.md", """# 订单提交
 
     UI 入口 `BaseOrderCell:OnGoButtonClicked` 先获取代码数量并调用 `BaseOrder:CanDeliver`；不足时进入确认流程，足够时调用 `MainBoardModel:FinishOrder`。
 
-    - [可交付判断](check.md)
-    - [奖励结算](rewards.md)
-    - [需求扣除](remove.md)
-    - [订单完成、补位与同步](finish.md)
+    - [可交付判断](check/index.md)
+    - [奖励结算](rewards/index.md)
+    - [需求扣除](remove/index.md)
+    - [订单完成、补位与同步](finish/index.md)
     """)
     write("operations/orders/check.md", """# 可交付判断
 
@@ -699,11 +797,27 @@ def main() -> None:
 
     **配表**：订单需求来自 `OrderItemConfig` 和当前订单对象。**源码**：`BaseOrderCell:OnGoButtonClicked`、`BaseOrder:CanDeliver`。重复需求语义 `source-confirmed`，确认窗口时序 `runtime-pending`。
     """)
+    write("operations/orders/check_detail.md", """# 重复需求与计数来源
+
+    普通订单按钮先要求 `m_bGoButtonEnabled`，再调用 `GetCodeCountMap(true,false,false)`；这三个参数的含义是只计棋盘，不计缓存和仓库。`BaseOrder:CanDeliver` 按需求原始顺序逐项检查：第 i 项先统计它在前 i 项中出现了几次，再要求代码数量至少达到这个序号。因此 `[203,203,204]` 要求 203 两个、204 一个，不能转成去重集合。
+
+    棋盘不足时入口打开仓库确认窗口；普通成功路径才进入 `FinishOrder`。显示层的 `CanDeliver` 状态只来自订单状态刷新，不能当作扣除已经完成的证明。
+
+    **源码**：`BaseOrderCell:OnGoButtonClicked`、`BaseOrder:CanDeliver`、`BaseBoardModel:GetCodeCountMap`。重复需求和入口计数口径为 `source-confirmed`。
+    """)
     write("operations/orders/rewards.md", """# 奖励结算
 
     顺序是特殊/分支订单处理 → 主奖励 → 亲密度礼物 → Buff 奖励 → OrderBoost/CookingFrenzy/ChestCustomer 副作用 → 需求移除 → 延迟奖励。
 
     **配表**：订单奖励、亲密度、Buff、OrderBoost、CookingFrenzy。**源码**：`MainBoardModel:FinishOrder`、`GetOrderRewardByFinishOrder`。服务端奖励覆盖和失败回滚 `runtime-pending`。
+    """)
+    write("operations/orders/rewards_detail.md", """# 奖励、价格和活动副作用顺序
+
+    普通订单完成时先读取并深拷贝完成瞬间的奖励快照，再依次发放主奖励、亲密度礼物、Buff 奖励；之后处理 OrderBoost 分数/标记，写入订单 Finished 状态，才扣需求棋子。扣除之后再尝试 CookingFrenzy、ChestCustomer 副作用和延迟奖励。
+
+    `MainOrder:GetPrice` 按需求顺序读取 `OrderItemConfig.Price` 并累加，重复需求重复计价；基准订单在配置有 `RecommendedPrice` 时使用推荐价。金币数量为 `ceil(price * multiplier)`，BuffGold 将倍率设为 2；特定亲密度订单可能改发其它奖励属性。奖励发放在需求扣除之前，源码没有事务回滚，扣除异常只记录错误。
+
+    **源码**：`MainBoardModel:FinishOrder`、`MainOrder:GetPrice`、`MainOrder:GetRewards`、`GetOrderRewardByFinishOrder`。活动实际奖励值标记为 `runtime-pending`。
     """)
     write("operations/orders/remove.md", """# 需求扣除
 
@@ -711,12 +825,66 @@ def main() -> None:
 
     **状态**：`RemovedFromBoard`、`RemovedFromInventory`、订单代码计数。**源码**：`MainBoardModel:RemoveOrderRequirementItems`。**配置**：订单需求代码和数量。
     """)
+    write("operations/orders/remove_detail.md", """# 棋盘优先与仓库兜底
+
+    `RemoveOrderRequirementItems` 按需求原始顺序逐项处理。每项先用 `GetValidPositionIterator` 扫描棋盘，遇到第一个 code 相同的棋子就 `RemoveItem(item,false)`；棋盘没有匹配项时才按仓库索引从 1 开始扫描并删除第一个匹配物。每项删除后立即重新 `CountItemsCode` 和 `UpdateOrderState`，所以重复需求会看到前一项已经扣除后的数量。
+
+    两处都找不到时记录 `FinishOrderRemoveItemError`，不会抛异常，也没有静态证据表明前面已发奖励会回滚。返回结果分别记录 `RemovedFromBoard` 对象列表和 `RemovedFromInventory` 代码列表。
+
+    **源码**：`MainBoardModel:RemoveOrderRequirementItems`、`GetValidPositionIterator`、`GetCodeCountMap`。棋盘/仓库混合扣除的运行时动画和网络时序仍需回放确认。
+    """)
     write("operations/orders/finish.md", """# 订单完成、补位与同步
 
     需求和延迟奖励后，订单模型执行 `FinishOrder`，尝试补位，更新状态，发送完成事件并上传同步。订单 `LuckyTriggerChance` 与母体 LuckyProduce 独立；Lucky 订单可直接允许 Lucky 行为。
 
     **配置**：`OrderFixedConfig`、`OrderRandomConfig`、订单类型和 `LuckyTriggerChance`。**源码**：`MainOrderModel:FinishOrder`、`SlotOrderModel:FinishOrder`、`BoardEventType.FinishOrder`。网络回调、补位失败重试和异步 UI `runtime-pending`。
     """)
+    write("operations/orders/finish_detail.md", """# 完成状态、补位循环和事件顺序
+
+    普通订单由 `MainBoardModel:FinishOrder` 发放奖励并调用一次 `order:SetFinished()`；随后所属 `OrderModel:FinishOrder` 会再次调用 `SetFinished`，写完成日志并进入 `_TryFillOrders`。第二次调用复用已缓存奖励，这是源码中的双写顺序。
+
+    `_TryFillOrders` 用 `repeat` 扫描所有空槽或 Finished 槽，只要本轮成功创建过订单就再扫一轮，直到整轮没有新订单；最后更新订单状态并记录新订单 unlock 日志。主订单模型在补位前还处理分支完成、亲密度、下一单 Lucky 资格和 `RepeatWeightDecrease` 重置。尾部顺序是 `UpdateOrderState` → OrderBoost 微笑事件（条件满足时）→ `CheckMoreUpload` → `BoardEventType.FinishOrder`；`EEventType.OrderFinished` 在槽位模型补位完成后更早发送。
+
+    特殊订单和分支订单在 `FinishOrder` 入口直接分流到专用函数，不进入普通奖励/扣除链。订单 Lucky 使用 `LuckyTriggerChance`，与母体 LuckyProduce 机会池独立。
+
+    **源码**：`MainBoardModel:FinishOrder`、`MainOrderModel:FinishOrder`、`SlotOrderModel:FinishOrder`、`_TryFillOrders`。
+    """)
+
+    # Convert merge and order mechanisms to the same clickable four-level tree
+    # used by generator pages. The flat files above are staging inputs.
+    operation_branches = {
+        "operations/merge/dispatch": ("dispatch.md", "dispatch_detail.md"),
+        "operations/merge/normal": ("normal.md", "normal_detail.md"),
+        "operations/merge/special": ("special.md", "special_detail.md"),
+        "operations/merge/effects/bubble": ("bubble.md", "bubble_detail.md"),
+        "operations/merge/effects/activity": ("activity.md", "activity_detail.md"),
+        "operations/merge/effects/coin": ("coin.md", "coin_detail.md"),
+        "operations/orders/check": ("check.md", "check_detail.md"),
+        "operations/orders/rewards": ("rewards.md", "rewards_detail.md"),
+        "operations/orders/remove": ("remove.md", "remove_detail.md"),
+        "operations/orders/finish": ("finish.md", "finish_detail.md"),
+    }
+    for stem, (overview_name, detail_name) in operation_branches.items():
+        parent = "/".join(stem.split("/")[:-1])
+        overview = DOCS / parent / overview_name
+        detail = DOCS / parent / detail_name
+        case_marker = "\n\n---\n\n## 贯穿案例"
+        overview_text = overview.read_text(encoding="utf-8").split(case_marker, 1)[0]
+        detail_text = detail.read_text(encoding="utf-8").split(case_marker, 1)[0]
+        write(stem + "/index.md", overview_text)
+        write(stem + "/detail.md", detail_text)
+        overview.unlink()
+        detail.unlink()
+
+    effects_index = DOCS / "operations/merge/effects/index.md"
+    effects_text = effects_index.read_text(encoding="utf-8")
+    effects_text = effects_text.replace("(bubble.md)", "(bubble/index.md)")
+    effects_text = effects_text.replace("(activity.md)", "(activity/index.md)")
+    effects_text = effects_text.replace("(coin.md)", "(coin/index.md)")
+    effects_index.write_text(effects_text, encoding="utf-8")
+
+    # Effects already has a directory index; its child pages are converted by
+    # the same mechanism, while the parent index remains in place.
 
     write("reference/evidence.md", """# 证据分级
 
@@ -800,6 +968,9 @@ nav:
           - Opened：可产出:
               - 机制说明: operations/generator/state/opened.md
               - 可产出状态的具体判定: operations/generator/state/opened_detail.md
+          - 开启、加速与时间跳过:
+              - 机制说明: operations/generator/state/timing.md
+              - 开启、加速和时间跳过的具体结算: operations/generator/state/timing_detail.md
       - 空位检查:
           - 总览: operations/generator/position/index.md
           - 一次性母体落点:
@@ -882,22 +1053,53 @@ nav:
           - 活动、日志和 UI 副作用:
               - 机制说明: operations/generator/events/side_effects.md
               - 副作用的具体字段: operations/generator/events/side_effects_detail.md
+      - 产出改写与安全边界:
+          - 总览: operations/generator/overrides/index.md
+          - Lucky、Disco 与产出改写:
+              - 机制说明: operations/generator/overrides/activity/index.md
+              - 活动改写的具体顺序: operations/generator/overrides/activity/detail.md
+          - 能量增益与链升级:
+              - 机制说明: operations/generator/overrides/boost/index.md
+              - 链升级和 FishNet 具体算法: operations/generator/overrides/boost/detail.md
+          - 数值安全修正:
+              - 机制说明: operations/generator/overrides/safety/index.md
+              - 次数与储备上限修正: operations/generator/overrides/safety/detail.md
   - 棋子拖拽与合成:
       - 总览: operations/merge/index.md
-      - 拖拽分派与移动: operations/merge/dispatch.md
-      - 普通合成: operations/merge/normal.md
-      - 特殊棋子与吞噬: operations/merge/special.md
+      - 拖拽分派与移动:
+          - 机制说明: operations/merge/dispatch.md
+          - 分支顺序与移动交换算法: operations/merge/dispatch_detail.md
+      - 普通合成:
+          - 机制说明: operations/merge/normal.md
+          - 合成原子操作与事件顺序: operations/merge/normal_detail.md
+      - 特殊棋子与吞噬:
+          - 机制说明: operations/merge/special.md
+          - 升级、降级和吞噬的具体算法: operations/merge/special_detail.md
       - 合成副产物:
           - 总览: operations/merge/effects/index.md
-          - 普通气泡: operations/merge/effects/bubble.md
-          - 卡牌、能量气泡和临时棋子: operations/merge/effects/activity.md
-          - 金币: operations/merge/effects/coin.md
+          - 普通气泡:
+              - 机制说明: operations/merge/effects/bubble.md
+              - 概率修正与随机判定: operations/merge/effects/bubble_detail.md
+          - 卡牌、能量气泡和临时棋子:
+              - 机制说明: operations/merge/effects/activity.md
+              - 互斥顺序与落点算法: operations/merge/effects/activity_detail.md
+          - 金币:
+              - 机制说明: operations/merge/effects/coin.md
+              - 合成等级与金币落点: operations/merge/effects/coin_detail.md
   - 订单提交:
       - 总览: operations/orders/index.md
-      - 可交付判断: operations/orders/check.md
-      - 奖励结算: operations/orders/rewards.md
-      - 需求扣除: operations/orders/remove.md
-      - 订单完成、补位与同步: operations/orders/finish.md
+      - 可交付判断:
+          - 机制说明: operations/orders/check.md
+          - 重复需求与计数来源: operations/orders/check_detail.md
+      - 奖励结算:
+          - 机制说明: operations/orders/rewards.md
+          - 奖励、价格和活动副作用顺序: operations/orders/rewards_detail.md
+      - 需求扣除:
+          - 机制说明: operations/orders/remove.md
+          - 棋盘优先与仓库兜底: operations/orders/remove_detail.md
+      - 订单完成、补位与同步:
+          - 机制说明: operations/orders/finish.md
+          - 完成状态、补位循环和事件顺序: operations/orders/finish_detail.md
 """
     # Point branch labels at their new index pages while keeping the readable
     # mechanism/detail labels beneath them.
@@ -909,6 +1111,15 @@ nav:
         ).replace(
             "operations/generator/" + old_detail,
             "operations/generator/" + stem + "/detail.md",
+        )
+    for stem, (old_overview, old_detail) in operation_branches.items():
+        parent = "/".join(stem.split("/")[:-1])
+        config = config.replace(
+            parent + "/" + old_overview,
+            stem + "/index.md",
+        ).replace(
+            parent + "/" + old_detail,
+            stem + "/detail.md",
         )
     config = config.replace(
         "operations/generator/events.md",
