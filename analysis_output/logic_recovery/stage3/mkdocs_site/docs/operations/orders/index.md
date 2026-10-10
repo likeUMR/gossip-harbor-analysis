@@ -2,10 +2,13 @@
 
 UI 入口 `BaseOrderCell:OnGoButtonClicked` 先获取代码数量并调用 `BaseOrder:CanDeliver`；不足时进入确认流程，足够时调用 `MainBoardModel:FinishOrder`。
 
-- [可交付判断](check.md)
-- [奖励结算](rewards.md)
-- [需求扣除](remove.md)
-- [订单完成、补位与同步](finish.md)
+- [可交付判断](check/index.md)
+- [库存确认与补交](inventory/index.md)
+- [奖励结算](rewards/index.md)
+- [需求扣除](remove/index.md)
+- [特殊与分支订单](special/index.md)
+- [订单完成、补位与同步](finish/index.md)
+- [订单创建与配置选择](creation/index.md)
 
 ---
 

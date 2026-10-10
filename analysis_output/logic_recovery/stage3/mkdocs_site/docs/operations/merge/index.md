@@ -2,9 +2,9 @@
 
 入口 `MainBoardModel:DragItem` 的优先级是：非法目标、源身份、空位移动、特殊影响、普通合成、吞噬、不可移动目标、交换。
 
-- [拖拽分派与移动](dispatch.md)
-- [普通合成](normal.md)
-- [特殊棋子与吞噬](special.md)
+- [拖拽分派与移动](dispatch/index.md)
+- [普通合成](normal/index.md)
+- [特殊棋子与吞噬](special/index.md)
 - [合成副产物](effects/index.md)
 
 ---

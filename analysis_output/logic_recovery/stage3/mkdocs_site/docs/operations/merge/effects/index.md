@@ -2,9 +2,9 @@
 
 顺序是 `TempItem.GenerateType` → `CardItem.TryGenerateItem` → `EnergyBubble.CanSpreadEnergyBubble` → `_TrySpreadBubbleByMerge` → 独立金币检查。前四类用 `hasCreateItem` 互斥，金币检查在之后单独执行，均需有效空位。
 
-- [普通气泡](bubble.md)
-- [卡牌、能量气泡和临时棋子](activity.md)
-- [金币](coin.md)
+- [普通气泡](bubble/index.md)
+- [卡牌、能量气泡和临时棋子](activity/index.md)
+- [金币](coin/index.md)
 
 ---
 

@@ -1,26 +1,75 @@
 # 一次性落点的具体算法
 
-### 1. 手动点击：确定性的方形环扫描
+## 1. 手动路径：`FindEmptyPositionInSpreadOrder`
 
-`_TrySpread` 先通过 `CheckSpreadPosAndAuto` 取落点。一次性母体通常 `Spread_Auto != 1`，因此直接调用 `FindEmptyPositionInSpreadOrder(centerPosition)`。底层实现先令 `currentPosition=centerPosition`，令 `maxTiles=max(HorizontalTiles,VerticalTiles)`；对 `i=1..maxTiles-1`，先把当前位置移到左下角方向的 `(-1,-1)`，形成边长 `2*i` 的方形环，再按 `dir=1..4`、每个方向走 `2*i` 格。每到一格先调用 `PositionIsValid`，再调用 `GetItem==nil`；第一个合法空格立即返回。扫描完所有环后返回传入的 `openedPosition`，本次调用没有传该参数所以结果为 nil。
+`CheckSpreadPosAndAuto` 把母体坐标作为 `centerPosition` 传给 `FindEmptyPositionInSpreadOrder`。实现先令 `currentPosition = centerPosition`，令 `maxTiles = max(HorizontalTiles, VerticalTiles)`；对 `i = 1 .. maxTiles - 1`，先把当前位置移动到本层左下角方向的 `(-1,-1)`，得到边长为 `2*i` 的方形环，再按四个方向依次走 `2*i` 格。每走一格先调用 `PositionIsValid`，越界格跳过；合法格再调用 `GetItem(position)`，只有返回 `nil` 才是候选格。遇到第一个合法空位立即返回。
 
-这意味着手动一次性母体不是随机选位置：同一棋盘占用状态和同一母体坐标下，返回位置完全由扫描顺序决定。
+所有环都没有空位时返回传入的 `openedPosition`；本调用没有传该参数，因此最终是 `nil`。这一步没有随机接口，也没有写棋盘，只产生一个待使用坐标。
 
-### 2. 自动产出：随机空位与自动循环
+## 2. 自动路径：分流和循环
 
-`Update` 对 `Spread_Auto==1` 的母体反复调用 `_TryAutoSpread`。该函数先检查 `m_itemRestNumber != 0` 且 `m_state == Opened`，再通过 `_GetAutoSpreadPosition → MainBoardModel:FindSpreadPosition` 选位置。`FindSpreadPosition` 对 `IsDisposable()` 为真时调用 `FindRandomPosition`；可恢复母体则调用八邻域 `FindEmptyPositionInCircleOrder`。位置成功后才生成代码并写入棋盘，循环继续直到无次数、无位置或触发变换。
+`Update` 仅在 `IsAutoSpread()`（`m_auto == 1`）为真时进入循环。每轮 `_TryAutoSpread` 先要求 `m_itemRestNumber ~= 0` 且 `m_state == Opened`，再经 `_GetAutoSpreadPosition → MainBoardModel:FindSpreadPosition` 选择位置。`FindSpreadPosition` 的分支是：一次性母体（`IsDisposable() == true`）调用 `FindRandomPosition`；可恢复母体调用八邻域 `FindEmptyPositionInCircleOrder`。位置成功后才调用 `GenerateItemCode` 和 `SpreadItem` 写入棋盘。
 
-### 3. `FindRandomPosition` 的每一次抽样
+## 3. `FindRandomPosition`：候选表和随机范围
 
-`BaseItemLayerModel:FindRandomPosition` 每次调用都新建 `positions` 临时数组，从 `GetValidPositionIterator()` 的有效位置迭代器开始。迭代器从 `(1,1)` 逐格走：x 递增，x 超过棋盘宽度时换到下一 y；每格读取 `GetItem`，只把空格插入数组。空数组交给 `Table.ListRandomSelectOne` 返回 nil；非空数组由 `MathUtil.Random(#positions)` 生成 1 到候选数的整数下标并返回该项。它没有保存“已抽过的位置”集合，也没有在抽样后从棋盘写入前修改候选数组；下一次调用重新扫描当前棋盘。因此它是“每次基于当前空位集合的独立均匀抽样”，从概率语义上属于有放回抽样；真正落子后该格才会从下一次候选集合消失。
+底层每次调用都新建局部数组 `positions = {}`。`GetValidPositionIterator()` 按棋盘坐标遍历：从 `(1,1)` 开始，x 递增，超过棋盘宽度后换到下一行 y。每个位置读取 `GetItem`；空位才插入 `positions`，被占用和无效格都不进入候选。
 
-### 4. 满盘、缓存与最终写入
+- 候选数为 `N = #positions`；`N == 0` 时 `Table.ListRandomSelectOne` 返回 `nil`。
+- `N > 0` 时调用 `MathUtil.Random(N)`，本版本接口返回整数 `1..N`（含两端），用作数组下标；每个当前空位概率均为 `1/N`。
+- 函数不保存历史位置、不删除已选项，也不在返回前写入棋盘。下一轮重新扫描当时的棋盘状态，因此在“抽样后尚未落子”的窗口内可以再次选中同一格；落子成功后该格才从下一轮候选表消失。这是当前实现的**有放回抽样语义**，与 Decremental 产物权重池的扣减/移除不是同一件事。
 
-手动扫描返回 nil 时，`CheckSpreadPosAndAuto` 立即调用 `_NotifySpreadFailed(BoardFull)`；该函数同时发 `BoardEventType.SpreadFailed`、`EEventType.SpreadFailed` 和 `VibrationHeavy`，随后 `_TrySpread` 返回，能量、产出代码、扣除次数、落子均不执行。自动路径无位置时，若 `IsDisposable()`、`m_weightType==Decremental`、`CacheItemFromSpread` 方法存在且 `AutoSpreadToCache` 服务端开关开启，则把 `GetAutoSpreadDecrementalRemainTypes()` 展开的剩余代码列表写入缓存，递增 `m_spreadCount`，调用 `EmptySpreadCount` 清空次数和 Decremental 权重，并通过缓存事件通知；否则 `_TryAutoSpread` 返回 false。
+## 4. 自动满盘和缓存
 
-**源码证据**：`ItemSpread:_TrySpread`（约 896 行）、`CheckSpreadPosAndAuto`（847 行）、`_TryAutoSpread`（798 行）、`MainBoardModel:FindSpreadPosition`（230 行）、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`（解码源码 25-38 行）、`FindRandomPosition`（解码源码 99-108 行）、`Table.ListRandomSelectOne`（解码源码 95-100 行）。
+位置为空时，`_TryAutoSpread` 计算 `bAllowAutoSpreadToCache`。必须同时满足 `IsDisposable()`、`m_weightType == Decremental`、棋盘实现 `CacheItemFromSpread`，以及 `IsServerControlOpen(AutoSpreadToCache)`。条件不全满足就返回 `false`，不会消耗次数。
 
-**证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
+条件全部满足时，调用 `GetAutoSpreadDecrementalRemainTypes()`，把当前每个 `{Code, Weight}` 展开为重复代码数组；写入 `CacheItemFromSpread`，将 `m_spreadCount` 增加数组长度，再调用 `EmptySpreadCount` 把次数、储备和 Decremental 权重清空，并保存属性、派发状态变化。
+
+## 5. 失败和销毁的精确边界
+
+`CheckSpreadPosAndAuto` 返回位置后，`_TrySpread` 才调用 `CheckEnergy`。若棋盘满，`_NotifySpreadFailed` 同时派发 `BoardEventType.SpreadFailed`、`EEventType.SpreadFailed` 和 `VibrationHeavy`；后续 `GenerateItemCode`、`SpreadCostEnergy`、`SpreadItem`、`CosetRestNumber` 都不会发生。
+
+成功落子后，点击链才执行 `TryRemoveSelf`：一次性母体的 `m_itemRestNumber == 0` 时调用 `RemoveItem` 并派发 `CollapseItem`。所以母体不会在“准备找位置”时删除，而是在产物已写入棋盘、次数已扣减后才销毁。
+
+## 6. 落点成功后，哪些逻辑才会继续
+
+落点函数只负责坐标，调用链的后续顺序仍然固定：
+
+1. `CheckEnergy` 读取 `Spread_CostEnergy`；一次性样本 `main_t_chest_new_1` 的值为 `0`，所以这条样本不扣能量，但仍然必须先有合法空位。
+2. `GenerateItemCode` 先尝试 Lucky，再尝试 Disco，最后按 `Spread_WeightType` 进入 Fixed、Decremental、OrderItem、ChestCustomItem 或 SmartItem。一次性落点算法不改变产物池；它只把 `position` 传给后续写入。
+3. 普通 Decremental 分支调用 `Table.ListWeightSelectOne(m_codeWeightPairs)`，选中后立即把对应 `Weight` 减 1，减到 0 就从 `m_codeWeightPairs` 删除，并保存母体属性。这是产物权重池的无放回式耗尽过程，和自动落点的有放回位置抽样是两套独立状态。
+4. `CosetRestNumber` 先把 `m_spreadCount` 加 1；一次性母体默认扣 `floor(2 ^ energyBoostRatio)` 次数，结果下限为 0。之后 `SpreadItem` 才把新棋子写入已选位置。
+5. 写入成功后 `TryRemoveSelf` 检查变换次数，再检查一次性剩余次数是否为 0；满足后删除母体并发送 `CollapseItem`，否则才有机会进入 CD Buff。
+
+因此复刻时必须保存两类不同的状态：`m_codeWeightPairs`（产物权重剩余）和棋盘占用集合（位置候选）。前者会因抽到某个代码而扣减，后者只在棋子真正落盘后改变。
+
+## 7. 可直接复刻的伪代码
+
+```text
+function manual_position(board, center):
+    for ring = 1 .. max(board.width, board.height)-1:
+        p = center + (-ring, -ring)
+        for direction in [right, up, left, down]:
+            repeat 2*ring times:
+                if board.valid(p) and board.item_at(p) == nil:
+                    return p
+                p = step(p, direction)
+    return nil
+
+function random_position(board):
+    candidates = [p for p in board.valid_positions() if board.item_at(p) == nil]
+    if candidates is empty: return nil
+    return candidates[random_integer_inclusive(1, len(candidates))]
+
+function auto_spread_once(generator):
+    if generator.rest == 0 or generator.state != Opened: return false
+    p = random_position(board) if generator.disposable else circle_position(board, generator.position)
+    if p is nil: maybe_cache_remaining_decremental(generator); return false
+    code = generate_code()
+    board.spread_item(generator, p, code)
+    return true
+```
+
+**底层证据位置**：`ItemSpread.lua` 的 `CheckSpreadPosAndAuto`（847-862）、`_TryAutoSpread`（798-828）、`_TrySpread`（864-928）、`TryRemoveSelf`（930-944）；`MainBoardModel.lua` 的 `FindSpreadPosition`（230-237）；解码 `BaseItemLayerModel` 的 `FindEmptyPositionInSpreadOrder` 和 `FindRandomPosition`；`Table.ListRandomSelectOne`。`MathUtil.Random` 的种子来源、实际棋盘尺寸和服务端 `AutoSpreadToCache` 开关仍是 `runtime-pending`，不能从客户端静态代码推出。
 
 ---
 

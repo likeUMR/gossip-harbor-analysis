@@ -199,6 +199,22 @@ def main() -> None:
 
     **源码证据**：[Board_Model_Item_ItemSpread.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua)。入口及主调用顺序为 `source-confirmed`；服务端开关和动态对象身份为 `runtime-pending`。
     """)
+    write("operations/generator/entry.md", """# 点击入口与测试循环
+
+    `ItemSpread:OnTap` 是玩家点击母体的入口。正常点击只执行一次 `_TrySpread`；测试模式同时开启 `TestSuperTap` 时把循环次数改为 10，教程棋盘又把它强制改回 1。每轮只要 `_TrySpread` 返回 false 就立即停止，不会为了凑满次数继续消耗资源。
+
+    点击循环结束后，非一次性母体如果仍有冷却且剩余时间至少 1200 秒、同时当前次数为 0，会尝试打开系统通知窗口。这个通知发生在产出链之后，不参与产出判定。
+
+    **源码**：`ItemSpread:OnTap`、`_TrySpread`、`CanAccelerate`、`GetTimerDuration`。`TestSuperTap` 的正式包可用性和通知权限属于 `runtime-pending`。
+    """)
+    write("operations/generator/entry_detail.md", """# OnTap、测试十连和通知判定
+
+    入口先令 `spreadCount=1`。只有 `GameConfig.IsTestMode()` 为真且 `PlayerPrefs[TestSuperTap] == 1` 时改为 10；如果 `BoardType == Tutorial`，又把它改回 1。随后执行 `for i=1..spreadCount`：每轮调用 `_TrySpread()`，返回 false 立即 `break`，所以棋盘满、能量不足、状态错误或母体变换都能截断测试十连。
+
+    循环结束后，代码只在 `not IsDisposable()` 且 `CanAccelerate()` 时计算 `restDuration = GetTimerDuration() + GetStartTimer() - serverTime`。当 `restDuration >= 1200` 且 `m_itemRestNumber == 0`，调用 `NotificationModel:TryOpenIOSNotificationWindow(ItemCoolDown)`。通知不扣资源、不改变计时，只是把长期冷却转为系统提醒。
+
+    **证据**：`ItemSpread:OnTap` 的测试分支、循环短路和通知阈值为 `source-confirmed`；系统权限和实际弹窗展示为 `runtime-pending`。
+    """)
     write("operations/generator/state/index.md", """# 状态检查
 
     状态检查是 `OnTap → _TrySpread` 的第一道闸门。代码按固定顺序读取同一个 `ItemSpread` 实例：先处理明确的关闭/开启状态，再处理初始化或次数耗尽，只有全部通过才允许寻找落点。
@@ -256,6 +272,14 @@ def main() -> None:
 
     **源码**：`ItemSpread:OnOpen`、`OnSpeedUp`、`_SpeedUp`、`OnTimeSkip`、`TryUseCDBuff`、`OnTimeSkipInZeroRestNumber`。动态广告和活动对象身份标记为 `runtime-pending`。
     """)
+    write("operations/generator/state/model.md", """# 状态字段与计时模型
+
+    `ItemSpread:Init` 把 `ItemModelConfig` 的 Spread 字段复制到实例，建立运行时状态：自动标记、初始化/开启/恢复时长、各阶段加速费用、能量开关、次数上限、储备上限、变换次数和权重池。次数和储备从各自最大值开始，`m_spreadCount` 从 0 开始。
+
+    初始状态由配置决定：有 `Spread_InitDuration` 就是 `Initializing`；否则有 `Spread_OpenDuration` 就是 `Closed`；两者都没有就是 `Opened`。教程强制时长只替换非空字段，不会凭空给母体增加一个计时阶段。`IsDisposable()` 的定义是没有 `Spread_ItemRecoveryDuration`，它决定耗尽后删除还是进入恢复。
+
+    **源码**：`ItemSpread:Create`、`Init`、`IsDisposable`、`GetState`、`GetItemRestNumber`、`GetStorageRestNumber`、`GetWeightType`、`GetTransformNumber`。字段来源为 `ItemModelConfig`；教程覆盖为 `runtime-pending`。
+    """)
     write("operations/generator/position/index.md", """# 空位检查
 
     空位检查发生在状态检查之后、能量检查之前。它只负责回答“本次产出能否找到目标格”，不负责决定产出代码。主动点击和自动产出在这里分流：自动母体先尝试自动落子；手动路径随后统一使用以母体为中心的扩散扫描。
@@ -274,13 +298,21 @@ def main() -> None:
     """)
     write("operations/generator/position/disposable.md", """# 一次性母体落点
 
-    一次性只描述母体的生命周期，不等于“每次点击都随机落点”。玩家手动点击时，`_TrySpread → CheckSpreadPosAndAuto` 调用 `FindEmptyPositionInSpreadOrder`，以母体为中心按方形环扫描并取第一个空位；只有 `Spread_Auto==1` 的自动产出才会经过 `FindSpreadPosition → FindRandomPosition`，从全盘空位中抽取。
+    这一页回答“一次性母体点击后，落点阶段先做什么、为什么这样做”。一次性描述的是耗尽后的生命周期，不是每次点击都随机找格子。正式点击链的顺序是：
 
-    本页的配置级例子是 `main_t_chest_new_1`：没有 `Spread_ItemRecoveryDuration`，所以 `IsDisposable()==true`；开启时长 120 秒、可产出 7 次、储备 7 次，Decremental 权重为 `2401-2 / 2402-2 / 2501-2 / 2502-1`。这些字段决定状态和次数，不改变手动方形环扫描。
+    1. `OnTap` 进入 `_TrySpread`，先过状态门槛；关闭、开启中、初始化中或次数为零时直接失败返回。
+    2. `CheckSpreadPosAndAuto` 先判断是否为自动母体。手动一次性母体调用 `FindEmptyPositionInSpreadOrder(母体坐标)`，按固定方形环取第一个合法空格。
+    3. 只有 `Spread_Auto == 1` 的自动路径才先调用 `FindSpreadPosition`；一次性母体在这里调用 `FindRandomPosition`，从当前全盘空位中均匀抽一个。自动路径已经找到位置时，手动点击不会再执行第二次扩散扫描。
+    4. 找不到位置时，手动路径发送 `SpreadFailed(BoardFull)`，流程在能量检查之前结束；因此这次不生成产物、不扣能量、不扣次数。自动路径只会返回 false，另有满足条件的缓存分支。
+    5. 找到位置后才进入能量检查、Lucky/普通产出、落子和次数扣除。一次性母体成功落子且剩余次数归零时，`TryRemoveSelf` 删除母体并派发 `CollapseItem`。
 
-    手动入口找不到空格会立即发送 `SpreadFailed(BoardFull)`。自动入口找不到空格时，只有一次性、Decremental、存在缓存函数且 `AutoSpreadToCache` 服务端开关开启，才会把剩余代码放入缓存；否则自动循环停止。Lucky、产出代码和能量扣除属于后续页面。
+    ## 这一层要掌握的结论
 
-    **源码**：`ItemSpread:_TrySpread`、`CheckSpreadPosAndAuto`、`_TryAutoSpread`、`MainBoardModel:FindSpreadPosition`、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`、`FindRandomPosition`。**证据**：入口分流、配置读取和候选构造为 `source-confirmed`；服务端自动缓存开关、账号棋盘和随机种子为 `runtime-pending`。
+    - **手动点击位置是确定性的**：同一母体坐标和同一棋盘占用状态得到同一格，不调用随机数。
+    - **自动位置是当前集合上的均匀抽样**：每次 `FindRandomPosition` 都重新扫描空位并重新抽样，不保存已经抽过的格子集合。因此抽样本身是有放回语义；只有某格真正写入棋盘后，它才从下一次候选集合消失。
+    - **一次性判定由缺失字段实现**：`IsDisposable()` 等价于 `m_itemRecoveryDuration == nil`。它影响耗尽后的删除/缓存和 CD 恢复，不改变手动落点算法。
+
+    **源码证据**：`ItemSpread:OnTap`、`_TrySpread`、`CheckSpreadState`、`CheckSpreadPosAndAuto`、`TryRemoveSelf`、`_TryAutoSpread`、`MainBoardModel:FindSpreadPosition`、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`、`BaseItemLayerModel:FindRandomPosition`。配置字段来自 `ItemModelConfig`。确定的代码分支标为 `source-confirmed`；服务端缓存开关、实际账号棋盘和运行时随机种子仍标为 `runtime-pending`，不能由静态代码假定。
     """)
     write("operations/generator/position/recoverable.md", """# 可恢复母体落点
 
@@ -576,11 +608,13 @@ def main() -> None:
     # Non-Lucky generator branches use the same four-level contract as Lucky:
     # stage overview -> branch overview -> directly reproducible detail page.
     fourth_pages = {
+        "entry_detail.md": ("OnTap、测试十连和通知判定", "`OnTap` 每次先把 `spreadCount` 设为 1；测试模式且 `PlayerPrefs.TestSuperTap==1` 时改为 10，但 Tutorial 棋盘再次限制为 1。循环逐次调用 `_TrySpread`，任何 false 结果立即终止，因此测试十连不会绕过状态、空位或能量门禁。循环后，非一次性且存在冷却计时的母体才计算 `GetTimerDuration()+GetStartTimer()-serverTime`；剩余时间至少 1200 秒并且 `m_itemRestNumber==0` 时调用 `TryOpenIOSNotificationWindow(ItemCoolDown)`。"),
         "state/initializing_detail.md": ("初始化计时的具体判定", "`Init` 先把 `Spread_InitDuration` 复制到 `m_initDuration`；存在该字段就把 `m_state` 设为 `Initializing`，随后立即调用 `UpdatePerSecond` 写入服务器时间 `m_startTimer`。点击时 `CheckSpreadState` 先排除 Closed/Opening，再因 Initializing 派发 `ItemRecharging`（可恢复母体）并返回 false；因此不会扫描空位，也不会读取能量。计时达到 `GetTimerDuration()` 后 `_UpdateRecoveryState` 清空计时、改为 Opened、派发 `EEventType.ItemOpened` 并刷新棋盘开启列表。"),
         "state/closed_detail.md": ("关闭状态的具体判定", "`Init` 在没有初始化时，如果 `Spread_OpenDuration` 非空就把 `m_state` 设为 `Closed`，但不启动计时。`OnTap` 进入 `CheckSpreadState` 后首先命中 Closed 分支，调用 `_NotifySpreadFailed(ItemClosed)`，依次发送棋盘失败事件、全局失败事件和重震动，然后返回 false；空位、能量和产出函数均不会执行。`OnOpen` 才把状态改为 Opening 并开始计时。"),
         "state/opening_detail.md": ("开启中状态的具体判定", "`OnOpen` 写入 `m_state=Opening`，`UpdatePerSecond` 为 `m_startTimer` 记录服务器时间并发送 `StateChanged`。计时未完成时，`CheckSpreadState` 命中 Opening，发送 `ItemOpening` 失败链并停止；到期由 `_UpdateRecoveryState` 将状态改为 Opened、清空 `m_startTimer`、派发 `ItemOpened` 和 `UpdateOpeningItem`。`GetSpeedUpCost` 在此阶段使用 `m_openSpeedUpCost`，不是恢复时长费用。"),
         "state/opened_detail.md": ("可产出状态的具体判定", "`CheckSpreadState` 没有显式的 `Opened` 分支；只要不是 Closed/Opening/Initializing，且 `m_itemRestNumber` 不为 0，就返回 true。可恢复母体在次数耗尽时走同一个 `ItemRecharging` 分支；一次性母体耗尽则不发 Recharging，等待成功落子后的 `TryRemoveSelf` 删除。`GetTimerDuration` 在 Opened 状态根据 `m_storageRestNumber == 0` 选择储备恢复时长或单轮恢复时长。"),
         "state/timing_detail.md": ("开启、加速和时间跳过的具体结算", "`OnOpen` 只写入 `m_state=Opening`，随后由 `UpdatePerSecond` 决定是否建立 `m_startTimer`；它还发送 `ItemOpening` 并调用 `UpdateOpeningItem`。`_SpeedUp(false)` 先读取 `GetSpeedUpCost` 和宝石余额，不足时发 `BoardEventType.LackGem`（场景 `TimeSkip`）并立即返回；足够时调用 `PropertyDataManager:Consume(Gem,cost,SpeedUp,sourceCode)`。免费路径跳过宝石扣除。两条路径最后都调用 `OnTimeSkip`：没有显式 duration 时先把起点重置为当前服务器时间，再减去整个阶段时长，保存属性、播放音效、重新 `UpdatePerSecond`，并按 `Gem`/`ad`/`Buff` 写加速 BI。`TryUseCDBuff` 只有在支持 CD Buff、GeneratorBoost CD Buff 或测试免费开关之一成立，且 `m_itemRestNumber==0` 时才调用同一时间跳过；`OnTimeSkipInZeroRestNumber` 还要求对象是生成器、使用能量且属于主棋盘。"),
+        "state/model_detail.md": ("初始化字段、进度公式和恢复重置", "`Init` 先深拷贝 `Spread_Weight`，再把次数和储备初始化为各自最大值。`Spread_InitDuration` 非空时状态为 `Initializing` 并立即 `UpdatePerSecond`；否则 `Spread_OpenDuration` 非空时状态为 `Closed`；否则直接 `Opened`。教程强制时长只对原本存在的 init/open/item-recovery/storage-recovery 字段替换。计时进度由 `elapsed = serverTime - m_startTimer`、`amount=min(elapsed/duration,1)` 得到；没有 duration 时记录完整字段诊断并把起点清空，duration 为 0 直接视为完成。`GetTimerDuration` 在 Initializing/Opening 读取对应阶段时长，在 Opened 依据 `m_storageRestNumber==0` 选择储备恢复或单轮恢复。完成后 `_UpdateRecoveryState` 要么转为 Opened，要么补满次数并扣除储备；储备耗尽时把起点推进一个 item recovery duration 再递归重算。"),
         "position/disposable_detail.md": ("一次性落点的具体算法", "### 1. 手动点击：确定性的方形环扫描\n\n`_TrySpread` 先通过 `CheckSpreadPosAndAuto` 取落点。一次性母体通常 `Spread_Auto != 1`，因此直接调用 `FindEmptyPositionInSpreadOrder(centerPosition)`。底层实现先令 `currentPosition=centerPosition`，令 `maxTiles=max(HorizontalTiles,VerticalTiles)`；对 `i=1..maxTiles-1`，先把当前位置移到左下角方向的 `(-1,-1)`，形成边长 `2*i` 的方形环，再按 `dir=1..4`、每个方向走 `2*i` 格。每到一格先调用 `PositionIsValid`，再调用 `GetItem==nil`；第一个合法空格立即返回。扫描完所有环后返回传入的 `openedPosition`，本次调用没有传该参数所以结果为 nil。\n\n这意味着手动一次性母体不是随机选位置：同一棋盘占用状态和同一母体坐标下，返回位置完全由扫描顺序决定。\n\n### 2. 自动产出：随机空位与自动循环\n\n`Update` 对 `Spread_Auto==1` 的母体反复调用 `_TryAutoSpread`。该函数先检查 `m_itemRestNumber != 0` 且 `m_state == Opened`，再通过 `_GetAutoSpreadPosition → MainBoardModel:FindSpreadPosition` 选位置。`FindSpreadPosition` 对 `IsDisposable()` 为真时调用 `FindRandomPosition`；可恢复母体则调用八邻域 `FindEmptyPositionInCircleOrder`。位置成功后才生成代码并写入棋盘，循环继续直到无次数、无位置或触发变换。\n\n### 3. `FindRandomPosition` 的每一次抽样\n\n`BaseItemLayerModel:FindRandomPosition` 每次调用都新建 `positions` 临时数组，从 `GetValidPositionIterator()` 的有效位置迭代器开始。迭代器从 `(1,1)` 逐格走：x 递增，x 超过棋盘宽度时换到下一 y；每格读取 `GetItem`，只把空格插入数组。空数组交给 `Table.ListRandomSelectOne` 返回 nil；非空数组由 `MathUtil.Random(#positions)` 生成 1 到候选数的整数下标并返回该项。它没有保存“已抽过的位置”集合，也没有在抽样后从棋盘写入前修改候选数组；下一次调用重新扫描当前棋盘。因此它是“每次基于当前空位集合的独立均匀抽样”，从概率语义上属于有放回抽样；真正落子后该格才会从下一次候选集合消失。\n\n### 4. 满盘、缓存与最终写入\n\n手动扫描返回 nil 时，`CheckSpreadPosAndAuto` 立即调用 `_NotifySpreadFailed(BoardFull)`；该函数同时发 `BoardEventType.SpreadFailed`、`EEventType.SpreadFailed` 和 `VibrationHeavy`，随后 `_TrySpread` 返回，能量、产出代码、扣除次数、落子均不执行。自动路径无位置时，若 `IsDisposable()`、`m_weightType==Decremental`、`CacheItemFromSpread` 方法存在且 `AutoSpreadToCache` 服务端开关开启，则把 `GetAutoSpreadDecrementalRemainTypes()` 展开的剩余代码列表写入缓存，递增 `m_spreadCount`，调用 `EmptySpreadCount` 清空次数和 Decremental 权重，并通过缓存事件通知；否则 `_TryAutoSpread` 返回 false。\n\n**源码证据**：`ItemSpread:_TrySpread`（约 896 行）、`CheckSpreadPosAndAuto`（847 行）、`_TryAutoSpread`（798 行）、`MainBoardModel:FindSpreadPosition`（230 行）、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`（解码源码 25-38 行）、`FindRandomPosition`（解码源码 99-108 行）、`Table.ListRandomSelectOne`（解码源码 95-100 行）。"),
         "position/recoverable_detail.md": ("可恢复落点的具体算法", "手动点击仍由 `CheckSpreadPosAndAuto` 调用 `FindEmptyPositionInSpreadOrder`，算法是从母体坐标向外扩大的方形环扫描；“可恢复”只影响 `IsDisposable()`、次数耗尽和恢复计时，不改变手动落点函数。自动产出才走 `FindEmptyPositionInCircleOrder`：按 `dir=1..8` 检查母体八个相邻格，先通过 `PositionIsValid` 再检查为空，返回第一个空位；八邻域全部占用时返回 nil。"),
         "position/auto_detail.md": ("自动产出与缓存的具体条件", "`Update` 只有在 `m_auto==1` 时进入 while 循环；每轮 `_TryAutoSpread` 先要求 `m_itemRestNumber != 0` 且 `m_state==Opened`。落点由 `FindSpreadPosition` 决定：一次性母体调用全盘 `FindRandomPosition`，可恢复母体调用八邻域圆周顺序。无位置时，仅当 `IsDisposable()`、`m_weightType==Decremental`、棋盘实现 `CacheItemFromSpread` 且 `AutoSpreadToCache` 服务端开关为真才缓存剩余代码；缓存后 `m_spreadCount += #remainTypes`，`EmptySpreadCount` 将次数和 Decremental 权重清空。"),
@@ -613,16 +647,95 @@ def main() -> None:
             f"# {title}\n\n{clean_body}\n\n**证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。\n",
         )
 
+    # Keep the algorithm page genuinely bottom-level: it describes the two
+    # position algorithms, their candidate construction, and the exact point
+    # where the rest of the click chain is allowed to continue.
+    write("operations/generator/position/disposable_detail.md", """# 一次性落点的具体算法
+
+## 1. 手动路径：`FindEmptyPositionInSpreadOrder`
+
+`CheckSpreadPosAndAuto` 把母体坐标作为 `centerPosition` 传给 `FindEmptyPositionInSpreadOrder`。实现先令 `currentPosition = centerPosition`，令 `maxTiles = max(HorizontalTiles, VerticalTiles)`；对 `i = 1 .. maxTiles - 1`，先把当前位置移动到本层左下角方向的 `(-1,-1)`，得到边长为 `2*i` 的方形环，再按四个方向依次走 `2*i` 格。每走一格先调用 `PositionIsValid`，越界格跳过；合法格再调用 `GetItem(position)`，只有返回 `nil` 才是候选格。遇到第一个合法空位立即返回。
+
+所有环都没有空位时返回传入的 `openedPosition`；本调用没有传该参数，因此最终是 `nil`。这一步没有随机接口，也没有写棋盘，只产生一个待使用坐标。
+
+## 2. 自动路径：分流和循环
+
+`Update` 仅在 `IsAutoSpread()`（`m_auto == 1`）为真时进入循环。每轮 `_TryAutoSpread` 先要求 `m_itemRestNumber ~= 0` 且 `m_state == Opened`，再经 `_GetAutoSpreadPosition → MainBoardModel:FindSpreadPosition` 选择位置。`FindSpreadPosition` 的分支是：一次性母体（`IsDisposable() == true`）调用 `FindRandomPosition`；可恢复母体调用八邻域 `FindEmptyPositionInCircleOrder`。位置成功后才调用 `GenerateItemCode` 和 `SpreadItem` 写入棋盘。
+
+## 3. `FindRandomPosition`：候选表和随机范围
+
+底层每次调用都新建局部数组 `positions = {}`。`GetValidPositionIterator()` 按棋盘坐标遍历：从 `(1,1)` 开始，x 递增，超过棋盘宽度后换到下一行 y。每个位置读取 `GetItem`；空位才插入 `positions`，被占用和无效格都不进入候选。
+
+- 候选数为 `N = #positions`；`N == 0` 时 `Table.ListRandomSelectOne` 返回 `nil`。
+- `N > 0` 时调用 `MathUtil.Random(N)`，本版本接口返回整数 `1..N`（含两端），用作数组下标；每个当前空位概率均为 `1/N`。
+- 函数不保存历史位置、不删除已选项，也不在返回前写入棋盘。下一轮重新扫描当时的棋盘状态，因此在“抽样后尚未落子”的窗口内可以再次选中同一格；落子成功后该格才从下一轮候选表消失。这是当前实现的**有放回抽样语义**，与 Decremental 产物权重池的扣减/移除不是同一件事。
+
+## 4. 自动满盘和缓存
+
+位置为空时，`_TryAutoSpread` 计算 `bAllowAutoSpreadToCache`。必须同时满足 `IsDisposable()`、`m_weightType == Decremental`、棋盘实现 `CacheItemFromSpread`，以及 `IsServerControlOpen(AutoSpreadToCache)`。条件不全满足就返回 `false`，不会消耗次数。
+
+条件全部满足时，调用 `GetAutoSpreadDecrementalRemainTypes()`，把当前每个 `{Code, Weight}` 展开为重复代码数组；写入 `CacheItemFromSpread`，将 `m_spreadCount` 增加数组长度，再调用 `EmptySpreadCount` 把次数、储备和 Decremental 权重清空，并保存属性、派发状态变化。
+
+## 5. 失败和销毁的精确边界
+
+`CheckSpreadPosAndAuto` 返回位置后，`_TrySpread` 才调用 `CheckEnergy`。若棋盘满，`_NotifySpreadFailed` 同时派发 `BoardEventType.SpreadFailed`、`EEventType.SpreadFailed` 和 `VibrationHeavy`；后续 `GenerateItemCode`、`SpreadCostEnergy`、`SpreadItem`、`CosetRestNumber` 都不会发生。
+
+成功落子后，点击链才执行 `TryRemoveSelf`：一次性母体的 `m_itemRestNumber == 0` 时调用 `RemoveItem` 并派发 `CollapseItem`。所以母体不会在“准备找位置”时删除，而是在产物已写入棋盘、次数已扣减后才销毁。
+
+## 6. 落点成功后，哪些逻辑才会继续
+
+落点函数只负责坐标，调用链的后续顺序仍然固定：
+
+1. `CheckEnergy` 读取 `Spread_CostEnergy`；一次性样本 `main_t_chest_new_1` 的值为 `0`，所以这条样本不扣能量，但仍然必须先有合法空位。
+2. `GenerateItemCode` 先尝试 Lucky，再尝试 Disco，最后按 `Spread_WeightType` 进入 Fixed、Decremental、OrderItem、ChestCustomItem 或 SmartItem。一次性落点算法不改变产物池；它只把 `position` 传给后续写入。
+3. 普通 Decremental 分支调用 `Table.ListWeightSelectOne(m_codeWeightPairs)`，选中后立即把对应 `Weight` 减 1，减到 0 就从 `m_codeWeightPairs` 删除，并保存母体属性。这是产物权重池的无放回式耗尽过程，和自动落点的有放回位置抽样是两套独立状态。
+4. `CosetRestNumber` 先把 `m_spreadCount` 加 1；一次性母体默认扣 `floor(2 ^ energyBoostRatio)` 次数，结果下限为 0。之后 `SpreadItem` 才把新棋子写入已选位置。
+5. 写入成功后 `TryRemoveSelf` 检查变换次数，再检查一次性剩余次数是否为 0；满足后删除母体并发送 `CollapseItem`，否则才有机会进入 CD Buff。
+
+因此复刻时必须保存两类不同的状态：`m_codeWeightPairs`（产物权重剩余）和棋盘占用集合（位置候选）。前者会因抽到某个代码而扣减，后者只在棋子真正落盘后改变。
+
+## 7. 可直接复刻的伪代码
+
+```text
+function manual_position(board, center):
+    for ring = 1 .. max(board.width, board.height)-1:
+        p = center + (-ring, -ring)
+        for direction in [right, up, left, down]:
+            repeat 2*ring times:
+                if board.valid(p) and board.item_at(p) == nil:
+                    return p
+                p = step(p, direction)
+    return nil
+
+function random_position(board):
+    candidates = [p for p in board.valid_positions() if board.item_at(p) == nil]
+    if candidates is empty: return nil
+    return candidates[random_integer_inclusive(1, len(candidates))]
+
+function auto_spread_once(generator):
+    if generator.rest == 0 or generator.state != Opened: return false
+    p = random_position(board) if generator.disposable else circle_position(board, generator.position)
+    if p is nil: maybe_cache_remaining_decremental(generator); return false
+    code = generate_code()
+    board.spread_item(generator, p, code)
+    return true
+```
+
+**底层证据位置**：`ItemSpread.lua` 的 `CheckSpreadPosAndAuto`（847-862）、`_TryAutoSpread`（798-828）、`_TrySpread`（864-928）、`TryRemoveSelf`（930-944）；`MainBoardModel.lua` 的 `FindSpreadPosition`（230-237）；解码 `BaseItemLayerModel` 的 `FindEmptyPositionInSpreadOrder` 和 `FindRandomPosition`；`Table.ListRandomSelectOne`。`MathUtil.Random` 的种子来源、实际棋盘尺寸和服务端 `AutoSpreadToCache` 开关仍是 `runtime-pending`，不能从客户端静态代码推出。
+""")
+
     # Give every third-level mechanism its own index page.  MkDocs only makes a
     # tree label clickable when the section has an index document; the previous
     # flat `mechanism.md` + `mechanism_detail.md` layout made the label expand
     # without opening the mechanism explanation.
     branch_pages = {
+        "entry": ("entry.md", "entry_detail.md"),
         "state/initializing": ("state/initializing.md", "state/initializing_detail.md"),
         "state/closed": ("state/closed.md", "state/closed_detail.md"),
         "state/opening": ("state/opening.md", "state/opening_detail.md"),
         "state/opened": ("state/opened.md", "state/opened_detail.md"),
         "state/timing": ("state/timing.md", "state/timing_detail.md"),
+        "state/model": ("state/model.md", "state/model_detail.md"),
         "position/disposable": ("position/disposable.md", "position/disposable_detail.md"),
         "position/recoverable": ("position/recoverable.md", "position/recoverable_detail.md"),
         "position/auto": ("position/auto.md", "position/auto_detail.md"),
@@ -787,9 +900,12 @@ def main() -> None:
     UI 入口 `BaseOrderCell:OnGoButtonClicked` 先获取代码数量并调用 `BaseOrder:CanDeliver`；不足时进入确认流程，足够时调用 `MainBoardModel:FinishOrder`。
 
     - [可交付判断](check/index.md)
+    - [库存确认与补交](inventory/index.md)
     - [奖励结算](rewards/index.md)
     - [需求扣除](remove/index.md)
+    - [特殊与分支订单](special/index.md)
     - [订单完成、补位与同步](finish/index.md)
+    - [订单创建与配置选择](creation/index.md)
     """)
     write("operations/orders/check.md", """# 可交付判断
 
@@ -805,6 +921,22 @@ def main() -> None:
 
     **源码**：`BaseOrderCell:OnGoButtonClicked`、`BaseOrder:CanDeliver`、`BaseBoardModel:GetCodeCountMap`。重复需求和入口计数口径为 `source-confirmed`。
     """)
+    write("operations/orders/inventory.md", """# 库存确认与补交
+
+    棋盘计数不足时，`BaseOrderCell:OnGoButtonClicked` 不会直接完成订单，而是打开 `UseInventoryItemConfirmWindow`，并传入 `boardModel` 与订单对象。这个页面代表“玩家决定是否把仓库物品用于订单”的中层机制；确认窗口本身不是奖励或扣除实现。
+
+    入口已确认，窗口内的确认、取消、仓库扣除及再次进入 `FinishOrder` 尚未在当前静态材料中闭合，因此后续步骤标为 `runtime-pending`，不能把“打开窗口”解释为已经消耗仓库。
+
+    **源码**：`BaseOrderCell:OnGoButtonClicked`。**证据**：窗口调用 `source-confirmed`；确认回调和服务端失败/重试 `runtime-pending`。
+    """)
+    write("operations/orders/inventory_detail.md", """# 确认窗口的边界与待追踪调用
+
+    点击入口始终以 `GetCodeCountMap(true,false,false)` 检查棋盘，不计缓存和仓库。只有 `CanDeliver` 返回假才打开 `UseInventoryItemConfirmWindow`；取消路径在入口没有扣除、奖励或状态写入。
+
+    需要继续从窗口 prefab 对应 Lua 入口追踪：确认按钮是否将缺口映射转换为仓库索引、是否先删除仓库物品再重新调用 `MainBoardModel:FinishOrder`、取消/关闭是否只销毁窗口、网络失败是否回滚。当前报告不填入推测实现。
+
+    **源码证据**：`Board_View_Order_BaseOrderCell.lua:22-33`；**证据状态**：入口 `source-confirmed`，窗口内部调用链 `runtime-pending`。
+    """)
     write("operations/orders/rewards.md", """# 奖励结算
 
     顺序是特殊/分支订单处理 → 主奖励 → 亲密度礼物 → Buff 奖励 → OrderBoost/CookingFrenzy/ChestCustomer 副作用 → 需求移除 → 延迟奖励。
@@ -819,6 +951,24 @@ def main() -> None:
 
     **源码**：`MainBoardModel:FinishOrder`、`MainOrder:GetPrice`、`MainOrder:GetRewards`、`GetOrderRewardByFinishOrder`。活动实际奖励值标记为 `runtime-pending`。
     """)
+    write("operations/orders/rewards_sources.md", """# 奖励来源与配置字段
+
+    `MainOrder:GetRewards` 按固定代码顺序追加奖励：主装饰活动代币、FloatRace 分数、TimedOrder 专属奖励/相册跳过标记、Album 奖励（相册 Buff 可翻倍）、Avenue、Upward、Road、HitBricks、Ring、Combo、`ActivityModuleManager:GetRewardsByOrder`、ChestCustomer 延迟奖励标记，最后才追加 Gold 或 BakeOutToken。
+
+    价格逐条读取 `OrderItemConfig.Price`；基准订单若存在 `RecommendedPrice` 则使用该字段。涉及的配置字段包括 `Code`、`Price`、`RecommendedPrice`、`DiffScore`、`RecommendedNumber`、活动 token property type，以及各活动模型自己的 `GetAddScoreByOrder` 配置。缺失 Code 配置时记录 `cfg_err` 并把价格返回为 0。
+
+    `GetOrderRewardByFinishOrder` 将 `ChestCustomerModel.RewardKey` 前缀奖励移到延迟映射；它们在需求扣除后另行发放。奖励快照在完成前深拷贝，订单完成后从 `m_cacheRewards` 读取。
+
+    **源码**：`Board_Model_Order_MainOrder.lua:106-271`、`Board_Model_Board_MainBoardModel.lua:1109-1144`。奖励具体数值受活动状态影响，标为 `runtime-pending`。
+    """)
+    write("operations/orders/rewards_sources_detail.md", """# 奖励来源的底层追加顺序
+
+    复刻时应保持 `MainOrder:GetRewards` 的追加顺序，因为 `GetOrderRewardByFinishOrder` 会按奖励属性前缀再拆成即时和延迟两组。主装饰、FloatRace、Album、Avenue、Upward、Road、HitBricks、Ring、Combo 等活动都通过当前活动模型查询订单；返回 `nil` 或非正值时不追加。`ActivityModuleManager:GetRewardsByOrder` 的数组则整体追加，不应当按普通货币合并。
+
+    金币分支最后执行：`_HasGoldReward` 过滤亲密度随机订单，`GetFirstRewardPropertyType` 在 BakeOut 可领取代币时返回 BakeOutToken，否则返回 Gold，数量为 `ceil(GetPrice() * (BuffGold and 2 or 1))`，并写入 `Crypt.CryptCurrency`。缺少 `OrderItemConfig` 代码时 `GetPrice` 记录 `cfg_err` 并返回 0。
+
+    **源码**：`Board_Model_Order_MainOrder.lua:136-254`、`257-271`、`337-342`；**证据**：追加顺序和公式 `source-confirmed`，活动模型具体数值 `runtime-pending`。
+    """)
     write("operations/orders/remove.md", """# 需求扣除
 
     每条需求先按棋盘有效位置顺序找相同代码；找不到才扫描仓库；两处都找不到记录 `FinishOrderRemoveItemError`。每项之后重新统计代码数量并 `UpdateOrderState`。
@@ -832,6 +982,22 @@ def main() -> None:
     两处都找不到时记录 `FinishOrderRemoveItemError`，不会抛异常，也没有静态证据表明前面已发奖励会回滚。返回结果分别记录 `RemovedFromBoard` 对象列表和 `RemovedFromInventory` 代码列表。
 
     **源码**：`MainBoardModel:RemoveOrderRequirementItems`、`GetValidPositionIterator`、`GetCodeCountMap`。棋盘/仓库混合扣除的运行时动画和网络时序仍需回放确认。
+    """)
+    write("operations/orders/special.md", """# 特殊与分支订单
+
+    `MainBoardModel:FinishOrder` 先检查 `order:GetInnerType()`。`Special` 进入 `_FinishSpecialOrder`，`Branch` 进入 `_FinishBranchOrder`，两者都会立即返回，不执行普通订单的奖励快照、亲密度礼物和逐项需求扣除链。
+
+    特殊订单按 `OrderSpecialConfig` 的 `Requirement1..3` 链和 `GeneratorChain` 批量清除棋盘相关物品，发放专用 `Rewards`，写入 `EndTimeline` 地图进度并派发 `BoardEventType.FinishSpecialOrder`。分支订单按单条 `Requirement` 链清除相关物品，然后对 `Rewards` 权重列表循环抽取并把结果落到空位；空位不足和尾部事件需要运行时复核。
+
+    **源码**：`MainBoardModel.lua:1101-1108`、`1258-1305`。Special/Branch 配置完整生效值当前未导出，标为 `runtime-pending`。
+    """)
+    write("operations/orders/special_detail.md", """# 特殊与分支的底层算法
+
+    Special 的链判断先取每个 Requirement 的 `GetChainId`，再把 `GeneratorChain` 也转成链 ID；棋盘棋子若本体代码或 `ItemBubble` 内部代码属于任一需求链/生成器链，就交给 `_BatchRemoveItems` 删除。完成后调用 `RewardApi.AcquireRewardsLogic(orderConfig.Rewards, Give, SpecialTaskComplete, Main, Type2)`，设置 `MapDataModel:SetSlot(orderConfig.EndTimeline,"1")`，最后发 `FinishSpecialOrder`。
+
+    Branch 使用单个 Requirement 的链 ID和 GeneratorChain组成清除条件；随后构造 `ItemModelFactory.GetCodeAndWeightPairs(orderConfig.Rewards)`，只要权重列表非空就调用 `Table.ListWeightSelectOne` 取一个 Code，并寻找有效空位生成奖励棋子。源码明确是循环消耗候选列表，但奖励列表为空、棋盘无空位和后续事件的完整处理需要运行时样本确认。
+
+    **证据状态**：Special 清除、奖励、时间线和事件 `source-confirmed`；Branch 落点失败和配置实际值 `runtime-pending`。**源码**：`Board_Model_Board_MainBoardModel.lua:1258-1310`。
     """)
     write("operations/orders/finish.md", """# 订单完成、补位与同步
 
@@ -849,6 +1015,24 @@ def main() -> None:
 
     **源码**：`MainBoardModel:FinishOrder`、`MainOrderModel:FinishOrder`、`SlotOrderModel:FinishOrder`、`_TryFillOrders`。
     """)
+    write("operations/orders/creation.md", """# 订单创建与配置选择
+
+    每次订单槽位为空或订单已完成时，`MainOrderModel:_TryCreateOrder` 按固定优先级尝试：Fixed、ReturnFreeOrder、Tutorial、Contiorders、ExtraCustomer、LuckyOrder，最后才是普通 Random。前一个 creator 返回非空后不会继续尝试；成功的 Random 订单若没有 ID 才由 `DBIdGenerator` 补 ID，并派发 `MainOrderCreated`。
+
+    随机订单按 `OrderRandomConfig.Type` 选择过滤器，读取玩家等级、`DiffSum`、`First/Second/Third Min/Max`、`RefreshTime` 和 `ItemAmounts`；物品候选还要经过解锁等级、进度、禁用槽位、生成器、其它订单和上一个订单排除。`OrderItemConfig` 提供 `Code`、`DiffScore`、`Price`、`RecommendedPrice`、`UnlockLevel`、`ProgressUnlock`、`ForbiddenSlot`、`Weight`、`WeightMultiple`、`RepeatWeightDecrease`、`RecommendedNumber`、`DifficultyLevel`。
+
+    **源码**：`MainOrderModel.lua:527-558`、`LoadFileConfig:31-86`、`MainOrderCreatorRandom.luac.txt` 原始行 119-1208。创建优先级的静态顺序 `source-confirmed`；活动/账号实际命中 `runtime-pending`。
+    """)
+    write("operations/orders/creation_detail.md", """# 随机订单过滤与抽取细节
+
+    Random creator 首先读取类型计时器；首次创建写入服务器时间，之后要求 `serverTime - startTimer >= RefreshTime`。过滤器选择后，分别按第一、第二、第三需求的难度上下限筛候选。候选必须通过 `_CheckItemCode`，并在 `Weight > 0` 时进入累计权重池。
+
+    需求数量从 `ItemAmounts` 的 `OneItemWeight`、`TwoItemsWeight`、`ThreeItemsWeight` 中抽取；当前 JSON 的常见类型为 50/50/0。候选代码按 `Table.ListWeightSelectOne` 选择，重复链衰减通过 `RepeatWeightDecreaseChain` 元数据改变权重；这不是永久删除全局配置项。订单完成后，涉及 `RepeatWeightDecrease > 0` 的链会重置衰减状态。
+
+    当前本地快照：`OrderItemConfig.json` 74 行，`DiffScore` 2–3000；`OrderRandomConfig.json` 9 个 Type（1、2、3、4、9、12、15、16、21）；`OrderFixedConfig.json` 16 行。Special/Branch 配置由 Lua 配置装载，但没有完整 JSON 快照。
+
+    **源码**：`MainOrderCreatorRandom.luac.txt` 的 `CanCreate` 119-168、`Create` 185-309、`GetAvailableItems` 671-824、`FilterByLevel` 1087-1117、`FilterByChainId` 1122-1131；**证据**：配置字段和选择顺序 `source-confirmed`，随机接口端点和运行时筛选结果 `runtime-pending`。
+    """)
 
     # Convert merge and order mechanisms to the same clickable four-level tree
     # used by generator pages. The flat files above are staging inputs.
@@ -860,9 +1044,13 @@ def main() -> None:
         "operations/merge/effects/activity": ("activity.md", "activity_detail.md"),
         "operations/merge/effects/coin": ("coin.md", "coin_detail.md"),
         "operations/orders/check": ("check.md", "check_detail.md"),
+        "operations/orders/inventory": ("inventory.md", "inventory_detail.md"),
         "operations/orders/rewards": ("rewards.md", "rewards_detail.md"),
+        "operations/orders/rewards_sources": ("rewards_sources.md", "rewards_sources_detail.md"),
         "operations/orders/remove": ("remove.md", "remove_detail.md"),
+        "operations/orders/special": ("special.md", "special_detail.md"),
         "operations/orders/finish": ("finish.md", "finish_detail.md"),
+        "operations/orders/creation": ("creation.md", "creation_detail.md"),
     }
     for stem, (overview_name, detail_name) in operation_branches.items():
         parent = "/".join(stem.split("/")[:-1])
@@ -954,6 +1142,9 @@ markdown_extensions:
 nav:
   - 母体点击:
       - 总览: operations/generator/index.md
+      - 点击入口与测试循环:
+          - 机制说明: operations/generator/entry/index.md
+          - OnTap、测试十连和通知判定: operations/generator/entry/detail.md
       - 状态检查:
           - 总览: operations/generator/state/index.md
           - Initializing：初始化中:
@@ -971,6 +1162,9 @@ nav:
           - 开启、加速与时间跳过:
               - 机制说明: operations/generator/state/timing.md
               - 开启、加速和时间跳过的具体结算: operations/generator/state/timing_detail.md
+          - 状态字段与计时模型:
+              - 机制说明: operations/generator/state/model.md
+              - 初始化字段、进度公式和恢复重置: operations/generator/state/model_detail.md
       - 空位检查:
           - 总览: operations/generator/position/index.md
           - 一次性母体落点:
@@ -1091,15 +1285,27 @@ nav:
       - 可交付判断:
           - 机制说明: operations/orders/check.md
           - 重复需求与计数来源: operations/orders/check_detail.md
+      - 库存确认与补交:
+          - 机制说明: operations/orders/inventory.md
+          - 确认窗口的边界与待追踪调用: operations/orders/inventory_detail.md
       - 奖励结算:
           - 机制说明: operations/orders/rewards.md
           - 奖励、价格和活动副作用顺序: operations/orders/rewards_detail.md
+      - 奖励来源与配置字段:
+          - 机制说明: operations/orders/rewards_sources.md
+          - 奖励来源的底层追加顺序: operations/orders/rewards_sources_detail.md
       - 需求扣除:
           - 机制说明: operations/orders/remove.md
           - 棋盘优先与仓库兜底: operations/orders/remove_detail.md
+      - 特殊与分支订单:
+          - 机制说明: operations/orders/special.md
+          - 特殊与分支的底层算法: operations/orders/special_detail.md
       - 订单完成、补位与同步:
           - 机制说明: operations/orders/finish.md
           - 完成状态、补位循环和事件顺序: operations/orders/finish_detail.md
+      - 订单创建与配置选择:
+          - 机制说明: operations/orders/creation.md
+          - 随机订单过滤与抽取细节: operations/orders/creation_detail.md
 """
     # Point branch labels at their new index pages while keeping the readable
     # mechanism/detail labels beneath them.
@@ -1125,6 +1331,12 @@ nav:
         "operations/generator/events.md",
         "operations/generator/events/index.md",
     )
+    # Material's navigation.indexes makes a section title a real link when
+    # its first child is the section's index document.  The old labels
+    # ("机制说明"/"总览") made every branch expand-only, so the reader could
+    # not open the mechanism page by clicking the tree node itself.
+    config = config.replace("机制说明: operations/", "operations/")
+    config = config.replace("总览: operations/", "operations/")
     (SITE / "mkdocs.yml").write_text(textwrap.dedent(config).lstrip(), encoding="utf-8")
     subprocess.run(["mkdocs", "build", "--clean", "--config-file", str(SITE / "mkdocs.yml")], cwd=SITE, check=True)
     print(f"built {SITE / 'site'}")

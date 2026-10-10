@@ -1,12 +1,20 @@
 # 一次性母体落点
 
-一次性只描述母体的生命周期，不等于“每次点击都随机落点”。玩家手动点击时，`_TrySpread → CheckSpreadPosAndAuto` 调用 `FindEmptyPositionInSpreadOrder`，以母体为中心按方形环扫描并取第一个空位；只有 `Spread_Auto==1` 的自动产出才会经过 `FindSpreadPosition → FindRandomPosition`，从全盘空位中抽取。
+这一页回答“一次性母体点击后，落点阶段先做什么、为什么这样做”。一次性描述的是耗尽后的生命周期，不是每次点击都随机找格子。正式点击链的顺序是：
 
-本页的配置级例子是 `main_t_chest_new_1`：没有 `Spread_ItemRecoveryDuration`，所以 `IsDisposable()==true`；开启时长 120 秒、可产出 7 次、储备 7 次，Decremental 权重为 `2401-2 / 2402-2 / 2501-2 / 2502-1`。这些字段决定状态和次数，不改变手动方形环扫描。
+1. `OnTap` 进入 `_TrySpread`，先过状态门槛；关闭、开启中、初始化中或次数为零时直接失败返回。
+2. `CheckSpreadPosAndAuto` 先判断是否为自动母体。手动一次性母体调用 `FindEmptyPositionInSpreadOrder(母体坐标)`，按固定方形环取第一个合法空格。
+3. 只有 `Spread_Auto == 1` 的自动路径才先调用 `FindSpreadPosition`；一次性母体在这里调用 `FindRandomPosition`，从当前全盘空位中均匀抽一个。自动路径已经找到位置时，手动点击不会再执行第二次扩散扫描。
+4. 找不到位置时，手动路径发送 `SpreadFailed(BoardFull)`，流程在能量检查之前结束；因此这次不生成产物、不扣能量、不扣次数。自动路径只会返回 false，另有满足条件的缓存分支。
+5. 找到位置后才进入能量检查、Lucky/普通产出、落子和次数扣除。一次性母体成功落子且剩余次数归零时，`TryRemoveSelf` 删除母体并派发 `CollapseItem`。
 
-手动入口找不到空格会立即发送 `SpreadFailed(BoardFull)`。自动入口找不到空格时，只有一次性、Decremental、存在缓存函数且 `AutoSpreadToCache` 服务端开关开启，才会把剩余代码放入缓存；否则自动循环停止。Lucky、产出代码和能量扣除属于后续页面。
+## 这一层要掌握的结论
 
-**源码**：`ItemSpread:_TrySpread`、`CheckSpreadPosAndAuto`、`_TryAutoSpread`、`MainBoardModel:FindSpreadPosition`、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`、`FindRandomPosition`。**证据**：入口分流、配置读取和候选构造为 `source-confirmed`；服务端自动缓存开关、账号棋盘和随机种子为 `runtime-pending`。
+- **手动点击位置是确定性的**：同一母体坐标和同一棋盘占用状态得到同一格，不调用随机数。
+- **自动位置是当前集合上的均匀抽样**：每次 `FindRandomPosition` 都重新扫描空位并重新抽样，不保存已经抽过的格子集合。因此抽样本身是有放回语义；只有某格真正写入棋盘后，它才从下一次候选集合消失。
+- **一次性判定由缺失字段实现**：`IsDisposable()` 等价于 `m_itemRecoveryDuration == nil`。它影响耗尽后的删除/缓存和 CD 恢复，不改变手动落点算法。
+
+**源码证据**：`ItemSpread:OnTap`、`_TrySpread`、`CheckSpreadState`、`CheckSpreadPosAndAuto`、`TryRemoveSelf`、`_TryAutoSpread`、`MainBoardModel:FindSpreadPosition`、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`、`BaseItemLayerModel:FindRandomPosition`。配置字段来自 `ItemModelConfig`。确定的代码分支标为 `source-confirmed`；服务端缓存开关、实际账号棋盘和运行时随机种子仍标为 `runtime-pending`，不能由静态代码假定。
 
 ---
 
