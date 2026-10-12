@@ -18,6 +18,19 @@ CosetRestNumber本身只改计数，没有UpdatePerSecond、事件或保存。�
 
 **来源**：ItemSpread GenerateItemCode、CosetRestNumber、_TrySpread、TryRemoveSelf；次数分值、Weight、TransformNumber及EnergyBoost循环来源见下方配表。
 
+<!-- reconciliation-persistence:start -->
+## 次数与剩余权重池怎样跨重载保留
+
+ItemManager:_FillDBTable用getter读取实际次数、储备和累计产出计数，同时把当前池编码成`Code-Weight;Code-Weight`。例如剩余池201×2、202×1保存为`201-2;202-1`；顺序保留。StringToCodeWeightPairs先按分号切分，再由GetCodeAndWeightPairs按连字符拆Code与Weight，Weight用tonumber转数值；空串或nil经StringUtil.Split得到空列表。解析器没有自动补齐到初始权重，也没有检查负权重或自动修复格式。
+
+CreateWithData在配置创建之后覆盖这个池。因此Decremental的已抽份额不会因重载恢复；Fixed池也保存当前实例值，不能在恢复时统一改回配表。已耗尽空池保存为空串，读取仍为空池。首次创建与存档恢复是两个不同路径。
+
+### 剩余池恢复的具体例子
+
+假设一次性Decremental母体初始池201×2、202×1，已抽出一个201；当前次数2、累计产出1、剩余池201×1和202×1。保存spreadItemRestNumber=2、spreadCount=1、spreadCodeWeightPairs="201-1;202-1"。重载按同一类型创建后，这些存档值覆盖初始3次与3份池；玩家仍只有2次产出机会，不能重新获得已抽走的201。池耗尽后保存空串，再次读取为空列表。
+
+<!-- reconciliation-persistence:end -->
+
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -36,9 +49,9 @@ CosetRestNumber本身只改计数，没有UpdatePerSecond、事件或保存。�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -70,8 +83,16 @@ CosetRestNumber本身只改计数，没有UpdatePerSecond、事件或保存。�
 
 ## 本逻辑使用的配表在哪里
 
-- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
-- [产物难度分与解锁配置](../../output/order/detail.md#configuration-order-item)：ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- 产物难度分与解锁配置：ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[ItemSpread.lua](../../../../assets/recovered-source/ItemSpread.lua)
+
+<!-- source-links:end -->

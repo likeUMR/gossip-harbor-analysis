@@ -1,6 +1,8 @@
 # 能量需求布尔值的具体来源
 
-`CheckEnergy` 首先调用 `CostEnergy()`；它返回初始化时读入的 `m_costEnergy`（来自 `Spread_CostEnergy == 1`），但教程可由 `TutorialBoardHelper.GetForcedCostEnergy()` 覆盖。随后 `CanSupportBoostDisco()` 若当前主棋盘的 Disco 支持该母体，就把局部变量 `costEnergy` 强制设为 false。这个布尔值只控制后续是否扣能量，不跳过状态和落点检查。
+`Init` 原样保存 `Spread_CostEnergy` 到 `m_costEnergy`，并不在读入时转成布尔值。`CheckEnergy` 首先调用 `CostEnergy()`：先读教程强制数据，只要结果不是 nil 就直接返回（包括 false）；没有强制值才判断 `m_costEnergy == 1`。因此正常配置数值1表示需能量，数值0、nil或布尔true都不等于数值1，不能把它改写成一般的非零判断。教程 getter 没有强制数据表时返回 nil，有表时返回其 CostEnergy 字段。
+
+随后 `CanSupportBoostDisco()` 取得 Disco 处理器；只有棋盘对象就是 `GM.MainBoardModel` 且处理器支持该母体类型，才把局部 `costEnergy` 覆盖为 false。它在教程强制值之后执行，因此也可覆盖教程要求扣能量的结果。免能量分支直接返回 `(true, 0, false)`，不读取余额、不设置缺能量弹窗标记；此前的状态和落点检查仍已执行。需能量时按最大可用档检查余额：不足先把 `popupBundleEnergyWindowForLackingEnergy` 写为 true，再发送棋盘 LackEnergy 事件并返回 false；充足写为 false，返回 `(true, 最大档指数, costEnergy)`。这里尚未消费能量，最终消费在产物代码确定以后。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
 ---
@@ -19,9 +21,9 @@
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -29,8 +31,8 @@
 
 ## 本逻辑使用的配表在哪里
 
-- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
-- [Generator Boost 母体替换配置](../../overrides/activity/detail.md#configuration-generator-boost)：GeneratorBoostActivityModel:GetItemModelConfig → ReloadItemModelConfig；按 Buff 选择 MoreLuckyProduce / ExtraProduce 并替换 ItemDataModel 中的母体配置。
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- Generator Boost 母体替换配置：GeneratorBoostActivityModel:GetItemModelConfig → ReloadItemModelConfig；按 Buff 选择 MoreLuckyProduce / ExtraProduce 并替换 ItemDataModel 中的母体配置。
 
 
 <!-- generator-configs:end -->

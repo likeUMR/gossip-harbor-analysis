@@ -1,0 +1,141 @@
+{
+  "cases": [
+    {
+      "case": "earlier_buff_remains_active",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "table_priority_with_both_active",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "ended_disables_accumulated_buff",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "zero_level_clear_is_noop",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "clear_order_before_config_restore",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "buff_skip_can_leave_storage_timer",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "buff_with_rest_does_not_skip",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "no_qualified_buff_no_notice",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "clear_state_order_and_progress_reset",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "round_increment_persists_and_logs",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "progress_add_caps_and_persists",
+      "mode": "bytecode",
+      "status": "failed",
+      "error": "GeneratorBoostActivityModel.lua:639: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\tGeneratorBoostActivityModel.lua:639: in method 'GetRoundNum'\n\tGeneratorBoostActivityModel.lua:212: in method '_OnProgressGain'\n\t[string \"<python>\"]:1: in main chunk"
+    },
+    {
+      "case": "progress_non_add_is_ignored",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "second_completed_task_levels_buff",
+      "mode": "bytecode",
+      "status": "failed",
+      "error": "GeneratorBoostActivityModel.lua:639: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\tGeneratorBoostActivityModel.lua:639: in method 'GetRoundNum'\n\tGeneratorBoostActivityModel.lua:212: in method '_OnProgressGain'\n\t[string \"<python>\"]:1: in main chunk"
+    },
+    {
+      "case": "earlier_buff_remains_active",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "table_priority_with_both_active",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "ended_disables_accumulated_buff",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "zero_level_clear_is_noop",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "clear_order_before_config_restore",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "buff_skip_can_leave_storage_timer",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "buff_with_rest_does_not_skip",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "no_qualified_buff_no_notice",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "clear_state_order_and_progress_reset",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "round_increment_persists_and_logs",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "progress_add_caps_and_persists",
+      "mode": "recovered-source",
+      "status": "failed",
+      "error": "[string \"<python>\"]:556: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\t[string \"<python>\"]:1: in main chunk\n\t[string \"<python>\"]:172: in method '_OnProgressGain'\n\t[string \"<python>\"]:556: in method 'GetRoundNum'"
+    },
+    {
+      "case": "progress_non_add_is_ignored",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "second_completed_task_levels_buff",
+      "mode": "recovered-source",
+      "status": "failed",
+      "error": "[string \"<python>\"]:556: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\t[string \"<python>\"]:1: in main chunk\n\t[string \"<python>\"]:172: in method '_OnProgressGain'\n\t[string \"<python>\"]:556: in method 'GetRoundNum'"
+    }
+  ],
+  "passed": 22,
+  "total": 26,
+  "limits": "Selected direct lifecycle contracts, controlled model eligibility, clock, DB and dispatch dependencies; not full listener or runtime verification."
+}

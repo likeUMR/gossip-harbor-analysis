@@ -1,0 +1,41 @@
+[
+  {
+    "module": "Data.Config.MergeItemScoreConfig",
+    "records": 159,
+    "displayed_records": 159,
+    "fields": [
+      "item_id",
+      "merge_score_race",
+      "bubble_score",
+      "shop_score"
+    ],
+    "bytecode_sha256": "002986232f5e7249354a5af1e29fdd6b3272c0e88fc81785f6fdb7b8e3b934bc",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MergeItemScoreConfig_extracust",
+    "records": 161,
+    "displayed_records": 161,
+    "fields": [
+      "item_id",
+      "merge_score_race",
+      "bubble_score",
+      "shop_score"
+    ],
+    "bytecode_sha256": "25d9b7787c6b974ba2b28b2374cbd9f42b58eec682c95bc430cd02be85ccb178",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MergeItemScoreConfig_shell",
+    "records": 166,
+    "displayed_records": 166,
+    "fields": [
+      "item_id",
+      "merge_score_race",
+      "bubble_score",
+      "shop_score"
+    ],
+    "bytecode_sha256": "fb141100cd4f6e7150c160295ae01a060a7a3a95ecae3521f3ce3c66667189c6",
+    "consumer_explanation_status": "pending-full-field-review"
+  }
+]

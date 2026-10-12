@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "name": "Boost",
+      "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+      "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+    },
+    {
+      "name": "Board",
+      "source": "analysis_data/logic_index/lua/decoded/c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e/decompiled.lua",
+      "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+    },
+    {
+      "name": "ItemModel",
+      "source": "analysis_data/logic_index/lua/decoded/fb8d36d654cec2246492dcadb68978c704d3e94c4d15fd4571c7d9959133451d/decompiled.lua",
+      "sha256": "15f6154c1975ce5095a3d89986d03cede658cff1e777b3b9a71d99640f970486"
+    },
+    {
+      "name": "BaseBoard",
+      "source": "analysis_data/logic_index/lua/decoded/014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce/decompiled.lua",
+      "sha256": "16506a7f62041132200665ce8db3b0b37fed0da5d01fbccb07cad74604c7cd1b"
+    },
+    {
+      "name": "Accelerate",
+      "source": "analysis_data/logic_index/lua/decoded/b7fd3d5b0e2dcd781c170cad2383a069bfad62536e6fe881e4e7a121cf933ceb/decompiled.lua",
+      "sha256": "43c8aa536a8449cd6045c15475c6aeb12c759e13cf0add9fbe56f64478ef2cee"
+    }
+  ],
+  "documents": [
+    {
+      "page": "operations/generator/lifecycle/cooldown/detail.md",
+      "sha256": "141b6e35ab8539c2d89f4e64da0a944f12cda5539b9c3cd18328a6d4218827a6"
+    },
+    {
+      "page": "operations/generator/output/preparation/detail.md",
+      "sha256": "59360ce184cbbaf9667c6b293ce7afb66846d63253ed4150a3a9394a4a5ea34a"
+    },
+    {
+      "page": "operations/generator/lucky/chance/load.md",
+      "sha256": "7a7fcd9462d2465fd3d743b65c1651539431c2c894cfccbaa0945bad1712c720"
+    }
+  ],
+  "resolved_rules": [
+    "Buff cumulative qualification and table priority",
+    "NoCD activation→dynamic board wrapper→qualified component dispatch→zero-rest skip",
+    "ClearBuff state/config sequence",
+    "MainBoard mode gate and unordered component iteration",
+    "acceleration activation/end direct flow"
+  ],
+  "open_edges": [
+    "ItemAccelerateTime.UpdateAccelerateTime actual scheduler",
+    "task progress and buff unlock all callers",
+    "ClearState daily/round lifecycle",
+    "state, cleared, ItemActivated, CollapseItem and component listeners",
+    "full configuration records and consumer mapping",
+    "scheduler and native DB commit"
+  ],
+  "full_acceptance": false
+}

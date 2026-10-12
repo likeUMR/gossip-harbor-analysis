@@ -4,16 +4,16 @@ CD 使用服务器时间字段 `m_startTimer`。加速费用按剩余时长比�
 
 **字段/配表**：`m_startTimer`、`m_itemRecoveryDuration`、`m_storageRecoveryDuration`、`Spread_ItemRecoveryDuration`、`Spread_StorageRecoveryDuration`。**源码**：`UpdatePerSecond`、CD Buff 处理。Buff 叠加顺序和离线补时 `runtime-pending`。
 
-点击结束后的系统通知见[入口与通知分支](../../entry/index.md)，它不改变冷却计时。
+点击结束后的系统通知见入口与通知分支，它不改变冷却计时。
 ---
 
 ## 贯穿案例：点击食品袋 105
 
-<div class="case-assets"><img src="../../../../../assets/cases/item-105.png" alt="食品袋 105" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
+<div class="case-assets"><img src="../../../../assets/cases/item-105.png" alt="食品袋 105" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例点击后食品袋进入短恢复，缺少的次数按配置逐步补回，储备次数同步支付。玩家看到母体暂时不能继续产出，恢复完成后才可再次点击。
+**本页发生什么**：一次点击使食品袋次数未满，就开始恢复计时；只要仍有次数，玩家可以继续点击，并非计时开始就全部禁用。下面的耗尽场景才会暂时无法产出，恢复到期后重新获得一轮次数，同时扣除储备。
 
 ### 代入本页的值
 
@@ -23,8 +23,8 @@ A 演示 `serverTime=T`、`m_startTimer=nil`：扣次至 79 后 UpdatePerSecond 
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>

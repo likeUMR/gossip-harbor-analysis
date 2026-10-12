@@ -1,0 +1,632 @@
+{
+  "kind": "structure-and-assets-only",
+  "pages": [
+    {
+      "page": "operations/orders/index.md",
+      "html_sha256": "23ba75e779020f7f1f759d5d2159b3f0a9c24d8d1bd64d23a4a4ff94e2b2ae6b",
+      "headings": 2,
+      "images": 2,
+      "tables": 1,
+      "paragraphs": 2
+    },
+    {
+      "page": "operations/orders/entry/index.md",
+      "html_sha256": "04e6e9b46d0c1c0cd1a0f4bbfc26cd3d53884dc32168f587621ac2d3a6a7991f",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 7
+    },
+    {
+      "page": "operations/orders/entry/button/index.md",
+      "html_sha256": "e44a7021017c7fd235c1739a13d34a4fb8fa2fda420854da5a968cb024b096b3",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/entry/button/detail.md",
+      "html_sha256": "7c72e155df0402a84833b6fef2029bc098bb5908d6051989c214175a81660691",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/entry/counts/index.md",
+      "html_sha256": "9dbdad61bc64d28b3f2c2d769910f7c945ae79985cdca8941c13a4cce04b02b4",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/entry/counts/detail.md",
+      "html_sha256": "37fd7cbc4593b619fd41352e65a9415facc70d487ecc87a6af84cd09cc257dea",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/entry/requirements/index.md",
+      "html_sha256": "6fe46fa8f28cf3287ba0dfea3df3434924de326f7d963a65a9d0d862d4ca65b7",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/entry/requirements/detail.md",
+      "html_sha256": "8b85c88f7d02142c4f3eb3114f5945453e31badcce235e863c56b785d90a5473",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/orders/entry/inventory/index.md",
+      "html_sha256": "7f8c4ad57b631a05e02feb7ad78031455490231e7986ee25f61ee3747b965813",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/entry/inventory/detail.md",
+      "html_sha256": "0e23cea1fe5644811c5b143a54835128aa581da25405242975ead4b358bc9407",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/entry/special_window/index.md",
+      "html_sha256": "10d7730e29c0029025fcd4fce1e50094360ed20e3856b406c094664487177a52",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/entry/special_window/detail.md",
+      "html_sha256": "ec2de4358b805af801146078cf9ee67add53f1f907403cd01659445bdbb3f7e4",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/orders/dispatch/index.md",
+      "html_sha256": "1df4522e920bda92c7ab387b5e696fbfaa5ffcde27f8640bb3b8c0d8b1687817",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/dispatch/type/index.md",
+      "html_sha256": "3ab61cc58daded74e3b919080d91b62af82119400d14a313b77730800e82d061",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/dispatch/type/detail.md",
+      "html_sha256": "ffa84f4640eccf939416951923af515c66e4402a9616e54efe374a24e0b372b3",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/dispatch/special/index.md",
+      "html_sha256": "6b79ac937728feb5ee93efaca073e446e23bcdec7a19e6dd064c6bb6f8527b42",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/dispatch/special/detail.md",
+      "html_sha256": "dfe6be31f1a5762c6ae99205c258d296d9c1434c99c2db34a882c4453142f2b5",
+      "headings": 3,
+      "images": 0,
+      "tables": 1,
+      "paragraphs": 9
+    },
+    {
+      "page": "operations/orders/dispatch/branch/index.md",
+      "html_sha256": "6f4ad8a2b482dd3e111decff28bc85aae8332ae80f0fb16230702341023ea5e4",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/dispatch/branch/detail.md",
+      "html_sha256": "e5bf07d632ce2613ac8aeb2751c3153acfacd5c3e6413d9c894b66018eb2a7bd",
+      "headings": 3,
+      "images": 0,
+      "tables": 1,
+      "paragraphs": 12
+    },
+    {
+      "page": "operations/orders/rewards/index.md",
+      "html_sha256": "23ee0f4553b30e0972fd7a88f078dbd2b059fc2f596d0d9929721c2feb144593",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 8
+    },
+    {
+      "page": "operations/orders/rewards/price/index.md",
+      "html_sha256": "aec9cbc0ea23ec7ef1a0f2dea21d4304a88b83648e9e01a144c98aec58f66db8",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/rewards/price/detail.md",
+      "html_sha256": "ee98fa8e5669e43db10796ece4ba6d3dda0a40ab86dcf153d0941ad2315ec219",
+      "headings": 3,
+      "images": 2,
+      "tables": 6,
+      "paragraphs": 11
+    },
+    {
+      "page": "operations/orders/rewards/activity/index.md",
+      "html_sha256": "b76b526fce13ebd58c0c4b14bd6a686695bc3716bc4112d1ac70e7d3d95745ab",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/rewards/activity/detail.md",
+      "html_sha256": "2e286601e10585baa9b2478cef294ffbd020f8f8ed0f962923430de1928bc86c",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/rewards/snapshot/index.md",
+      "html_sha256": "2048fbdd1ee080a04b39ca34340e0e2bbd66d28d62206f539e3ac2edd57341b3",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/rewards/snapshot/detail.md",
+      "html_sha256": "f66add083fd082e016d93a5e657a842f3244a0fb070ea16b126e4a921aa175f9",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/rewards/acquire/index.md",
+      "html_sha256": "441c33555531511db7bbb9bc073cf26d5c9e60416aee173d1037ca42395896c0",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/rewards/acquire/detail.md",
+      "html_sha256": "1a5d7b82a2b3fca3be0179935e091a7baf8cb2c3dded9e10461bbc68a10cc383",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/rewards/gift_buff/index.md",
+      "html_sha256": "0adfb53eb3473ae183b2b820e32c7bfbc6f66f94b344f8d95174640495c0eb52",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/rewards/gift_buff/detail.md",
+      "html_sha256": "4f6f81ae0892d48fadcc8df7083265e85989475c5906e8eacd215673aaa65d96",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/rewards/smile/index.md",
+      "html_sha256": "98de39b269d35ffe87ec84e4ff48987d4fa97606ecba2faaf9ddfe2b92cd67b6",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/rewards/smile/detail.md",
+      "html_sha256": "0dac9fc85830e7d6d7216499c326ab7f9d765e535de64b00b03bb823a7946ff4",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/consume/index.md",
+      "html_sha256": "5b916b518e7a2828e156ca5a4cae05e1ec8c5f0d623314356867c3a7ce48d908",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/consume/mark/index.md",
+      "html_sha256": "f1ea8067a424190c9e044fbe7c902ef86c3edeeeadec54133191484abc3e7d66",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/consume/mark/detail.md",
+      "html_sha256": "833461d145589a47353d55e1b47cb15a8513fbc290759219a26885fd9f514463",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 7
+    },
+    {
+      "page": "operations/orders/consume/board/index.md",
+      "html_sha256": "b03c14f8f95b5a68e37a09039bcd208ecf240ae6cd25ce75249ba290c5770455",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/consume/board/detail.md",
+      "html_sha256": "da177f8fe59a43a67f7a2af3f06ed08d09fbb55575ac288ba517fde9f6192c56",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/consume/store/index.md",
+      "html_sha256": "103675f01b99af0387d081baeff6a90418a7d48f9f2b25c81c8e0a47e697c7e3",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/consume/store/detail.md",
+      "html_sha256": "6414232c1549c3bff869e8c771753fd77d0bc3c73faa3c87e3a955f974a08fa6",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/consume/refresh_failure/index.md",
+      "html_sha256": "02fe417e1a5ea9173ee0b521a8c4d5838b56df2c5e30023b4032b247ada20a70",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/consume/refresh_failure/detail.md",
+      "html_sha256": "50e00e6b53c38098c763caec7298e27632e99f3cea160d111a8a67f6a14ddf6f",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/orders/after/index.md",
+      "html_sha256": "26f652f45a6af58a552613be002499e34dbf26a3155f104f53c3d01ea9c5e047",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/after/cooking/index.md",
+      "html_sha256": "062500e9210bcfb2441f58e753ee8bde9598b97302075d9e89928faa374a3b3f",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/after/cooking/detail.md",
+      "html_sha256": "e13148940629e5772de233d1497138ffceb1d1ef1cf734d991c9b5041a1cc92e",
+      "headings": 3,
+      "images": 0,
+      "tables": 6,
+      "paragraphs": 19
+    },
+    {
+      "page": "operations/orders/after/chest_delay/index.md",
+      "html_sha256": "f87178d1af926a3509d7aec1a894fe7c93c81f589ac8e455004d54b963439ab1",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/after/chest_delay/detail.md",
+      "html_sha256": "ef3e523c3b0cb8976a4fb60d8718914dee2d3bfd2eed2d30fa578705910a7cd6",
+      "headings": 3,
+      "images": 0,
+      "tables": 6,
+      "paragraphs": 19
+    },
+    {
+      "page": "operations/orders/refill/index.md",
+      "html_sha256": "c1eb7a02ecc8951adcf201bfc8c950b3f24a62fd44803fea10c6f4ae8c60a064",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 15
+    },
+    {
+      "page": "operations/orders/refill/owner_history/index.md",
+      "html_sha256": "6526e7df0d43446f37b618e22a92ee849b98ad5cf2f1aa6df03982f5d6d45409",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/owner_history/detail.md",
+      "html_sha256": "5149a4e883077bb4b59c3f435b3088eacd6b206097aa4f18ca86416ab702bf8f",
+      "headings": 3,
+      "images": 0,
+      "tables": 15,
+      "paragraphs": 27
+    },
+    {
+      "page": "operations/orders/refill/loop/index.md",
+      "html_sha256": "28457e80ca2a7d5bb66bf5012e82567702169ccd8e566f756b6e966c769a7142",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/loop/detail.md",
+      "html_sha256": "edffce08b02a9f03964e937e5fe518c953841a479618cb5a4e5527e40985d5d1",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/priority/index.md",
+      "html_sha256": "c4cf5839d835bd117bbe77abd95e3005b3d408486e5cc44f22f6909db8af717e",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/priority/detail.md",
+      "html_sha256": "6920bf6782ec0e8d0eb9a349004fa476ed7c00137cfddd1dc40498d531d412d9",
+      "headings": 3,
+      "images": 0,
+      "tables": 3,
+      "paragraphs": 13
+    },
+    {
+      "page": "operations/orders/refill/fixed_return/index.md",
+      "html_sha256": "7dfff443bcd7612f55c18b7e8dc5c62449b282a41728e8fdee5674c5c03c474e",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/fixed_return/detail.md",
+      "html_sha256": "577ae9af2fff46e07e55edcd35243603119ee7444c6a8d4428421300bae9fbdd",
+      "headings": 3,
+      "images": 0,
+      "tables": 1,
+      "paragraphs": 9
+    },
+    {
+      "page": "operations/orders/refill/tutorial/index.md",
+      "html_sha256": "7bdd7eac78bb61fde94d1e7b261af3dc5bf65f93bb5a097de80649df78b29bf0",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/tutorial/detail.md",
+      "html_sha256": "0030e420327fc8577bd2e1f48aa38bac828e281661850f9b5bd23e24597951e4",
+      "headings": 3,
+      "images": 0,
+      "tables": 2,
+      "paragraphs": 11
+    },
+    {
+      "page": "operations/orders/refill/continuous/index.md",
+      "html_sha256": "c85420b6a4b84027f4d19101fa125ef386a800840fb806b8bd647dd5525babd4",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/continuous/detail.md",
+      "html_sha256": "3c5c0bdd23fa7094aa34c2e0cdecc39dbd81eb2809eb9cd133a904bef865ee02",
+      "headings": 3,
+      "images": 0,
+      "tables": 6,
+      "paragraphs": 15
+    },
+    {
+      "page": "operations/orders/refill/extra/index.md",
+      "html_sha256": "6e9de32b58d9687fdf390e528e57d5f939e8851cf72308e48a5d9b8239a56195",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/extra/detail.md",
+      "html_sha256": "0713627cf1978678e50e0a579300186781093976ec5c60d8594ec7ee342a199a",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 7
+    },
+    {
+      "page": "operations/orders/refill/lucky/index.md",
+      "html_sha256": "14ca85f96623bcd626d75c8d2c9257bdea7366a4ba636afff5a539c8da0c5994",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/lucky/detail.md",
+      "html_sha256": "e5b2ee9bd0de276b698a156ebfd8e46db62f0b63e806d71c1601905efc1b0566",
+      "headings": 3,
+      "images": 0,
+      "tables": 7,
+      "paragraphs": 19
+    },
+    {
+      "page": "operations/orders/refill/random_gate/index.md",
+      "html_sha256": "36a9f688700e25befb8a356674cbce5da243bec9591dc5834f9605b12072c0ba",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/random_gate/detail.md",
+      "html_sha256": "e99b8b4c79e5aede168f291378df009983394fc51af56d1d856337694ce7a316",
+      "headings": 3,
+      "images": 0,
+      "tables": 15,
+      "paragraphs": 27
+    },
+    {
+      "page": "operations/orders/refill/candidates/index.md",
+      "html_sha256": "e7787242dc877dad1bbb033cd1b1d53d9ffd42bf646db0438f28605d69934927",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/candidates/detail.md",
+      "html_sha256": "c94f968accb9ea01491ca50b33702ba1ca8e0ef4486fffe56d55384babd5e0a2",
+      "headings": 3,
+      "images": 0,
+      "tables": 6,
+      "paragraphs": 17
+    },
+    {
+      "page": "operations/orders/refill/dynamic/index.md",
+      "html_sha256": "994592a5d6002cd60a96023dfc8f65524b168dab2539902c35b17dd34f68996a",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/dynamic/detail.md",
+      "html_sha256": "2980c7022321ba05953c97e482d85092c8065ac288e87e309c1e7d598f26b82d",
+      "headings": 3,
+      "images": 0,
+      "tables": 13,
+      "paragraphs": 19
+    },
+    {
+      "page": "operations/orders/refill/draw/index.md",
+      "html_sha256": "6f78f10bc217232b4aae8beabe8701a707d078bd4eb2b049bd635f3304f51c1d",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/draw/detail.md",
+      "html_sha256": "03f3e691996d7740b7a9364b84cb12a8231d1b2e2fc519750af8dc7985cf721f",
+      "headings": 3,
+      "images": 0,
+      "tables": 19,
+      "paragraphs": 33
+    },
+    {
+      "page": "operations/orders/refill/save/index.md",
+      "html_sha256": "f3cfdf68b24e60f43808ba7d129ca65f348f77361bc594d636a81ad905b502e8",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/refill/save/detail.md",
+      "html_sha256": "a33cfc4bedb2c6d24101d0f5f6aa9331552bbee5d49fa78a65d07f75f899f19f",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/orders/finish/index.md",
+      "html_sha256": "65fac1a2d9908d154584d91c17e2a1c1dd703c3faa117206912c5e87b0697b71",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/orders/finish/sync/index.md",
+      "html_sha256": "4349427ceb898c57249cfb8095971da8222faa006f5611b8b299a52254d2bd2b",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/finish/sync/detail.md",
+      "html_sha256": "63f78bd7a995befe368c5efff1d695b197216d7ca06b7df1332416e0b333986f",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/finish/animation/index.md",
+      "html_sha256": "9b2e28abbd8c32984ad61741434fe1bb3e2a11414f3c7615a91f366a20bb5188",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/orders/finish/animation/detail.md",
+      "html_sha256": "4018fe6bd03c601436d8b3954da7e8d26886a980757f2f01c955b55017dba40b",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 6
+    }
+  ],
+  "failures": [],
+  "status": "passed",
+  "limits": "Does not approve G1-G7 semantic or original-runtime gates; browser screenshots tracked separately."
+}

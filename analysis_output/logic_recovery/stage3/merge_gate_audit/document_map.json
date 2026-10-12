@@ -1,0 +1,312 @@
+[
+  {
+    "step": "release",
+    "mechanism": "movable",
+    "page": "operations/merge/release/movable/detail.md",
+    "source_modules": [
+      "Board.View.MainBoardView",
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Item.ItemSwallow"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "release",
+    "mechanism": "position",
+    "page": "operations/merge/release/position/detail.md",
+    "source_modules": [
+      "Board.View.MainBoardView",
+      "Board.Model.Base.BoardPosition"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "release",
+    "mechanism": "inventory",
+    "page": "operations/merge/release/inventory/detail.md",
+    "source_modules": [
+      "Board.View.MainBoardView",
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "release",
+    "mechanism": "identity",
+    "page": "operations/merge/release/identity/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Item.ItemModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "move",
+    "mechanism": "write",
+    "page": "operations/merge/move/write/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.MainBoardItemLayerModel",
+      "Board.Model.Item.ItemModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "move",
+    "mechanism": "accelerate",
+    "page": "operations/merge/move/accelerate/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Item.ItemTransform"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "special",
+    "mechanism": "eligibility",
+    "page": "operations/merge/special/eligibility/detail.md",
+    "source_modules": [
+      "Board.Model.Item.ItemModel",
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "special",
+    "mechanism": "upgrade",
+    "page": "operations/merge/special/upgrade/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Item.ItemModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "special",
+    "mechanism": "scissors",
+    "page": "operations/merge/special/scissors/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Item.ItemSplit"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "special",
+    "mechanism": "split",
+    "page": "operations/merge/special/split/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Item.ItemSplit"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "special",
+    "mechanism": "failure",
+    "page": "operations/merge/special/failure/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "eligibility",
+    "page": "operations/merge/normal/eligibility/detail.md",
+    "source_modules": [
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Item.ItemModel",
+      "Board.Model.Item.ItemSpread"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "replacement",
+    "page": "operations/merge/normal/replacement/detail.md",
+    "source_modules": [
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseActionBoardModel",
+      "Board.Model.ItemModelFactory"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "notify",
+    "page": "operations/merge/normal/notify/detail.md",
+    "source_modules": [
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Item.ItemPaperBox",
+      "Common.Event.PairEvent",
+      "Board.View.MainBoardView",
+      "Avenue.Model.AvenueModel",
+      "Road.Model.RoadModel",
+      "ExpedActivity.Model.ExpedModel",
+      "Upward.Model.UpwardModel",
+      "FloatRace.Model.FloatRaceModel",
+      "BattleActivity.Model.BattleActivityModel",
+      "TeamActivity.Model.TeamActivityModel",
+      "ComboActivity.Model.ComboActivityModel",
+      "PassActivity.Model.PassActivityModel",
+      "CardItem.CardItemModel",
+      "FarmboardActivity.Model.FarmboardActivityModel",
+      "Board.Model.Board.ItemGeneratorFactoryModel",
+      "Model.Activity.ActivityModule.TaskEventProgressGainModule",
+      "Board.Model.Order.TutorialOrderModel",
+      "Common.Platform.SDKHelper",
+      "Model.GooglePgsManager"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "score",
+    "page": "operations/merge/normal/score/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "ScoreRace.Model.ScoreRaceModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "temp",
+    "page": "operations/merge/normal/temp/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "TempItem.Model.TempItemModel",
+      "TempItem.Board.ItemTemp",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Base.BoardPosition",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "card",
+    "page": "operations/merge/normal/card/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "CardItem.CardItemModel",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Base.BoardPosition",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "energy",
+    "page": "operations/merge/normal/energy/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "EnergyBubble.Model.EnergyBubbleModel",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Base.BoardPosition",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "bubble",
+    "page": "operations/merge/normal/bubble/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "BubbleDecrease.Model.BubbleDecreaseModel",
+      "Common.Utility.MathUtil",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Base.BoardPosition",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "coin",
+    "page": "operations/merge/normal/coin/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Model.SystemConfigModel",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Board.Model.Base.BoardPosition",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "normal",
+    "mechanism": "finish",
+    "page": "operations/merge/normal/finish/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "swallow",
+    "mechanism": "target",
+    "page": "operations/merge/swallow/target/detail.md",
+    "source_modules": [
+      "Board.Model.Item.ItemSwallow",
+      "Board.Model.Board.ItemFixedSwallowModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "swallow",
+    "mechanism": "progress",
+    "page": "operations/merge/swallow/progress/detail.md",
+    "source_modules": [
+      "Board.Model.Item.ItemSwallow",
+      "Board.Model.Board.BaseActionBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "swallow",
+    "mechanism": "transform",
+    "page": "operations/merge/swallow/transform/detail.md",
+    "source_modules": [
+      "Board.Model.Item.ItemSwallow",
+      "Board.Model.Item.ItemTransform"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "swap",
+    "mechanism": "blocked",
+    "page": "operations/merge/swap/blocked/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "swap",
+    "mechanism": "exchange",
+    "page": "operations/merge/swap/exchange/detail.md",
+    "source_modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.MainBoardItemLayerModel"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  },
+  {
+    "step": "pointer",
+    "mechanism": "selection",
+    "page": "operations/merge/pointer/selection/detail.md",
+    "source_modules": [
+      "Board.View.MainBoardView",
+      "Board.View.BaseActionBoardView"
+    ],
+    "review_status": "documented-rule-scope; whole-branch-closure pending"
+  }
+]

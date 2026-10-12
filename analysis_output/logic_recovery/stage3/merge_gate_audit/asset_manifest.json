@@ -1,0 +1,38 @@
+[
+  {
+    "code": "203",
+    "image": "Flour03",
+    "address": "Assets/Board/ItemMain/Item/Flour03.png",
+    "path_id": 5300630747596259029,
+    "bundle_sha256": "370ef9a4e8985dede7472692f4c29990db9fbbe0ac336dece1dc5962638272d8",
+    "image_sha256": "837af669ff02f22d71c3b691c5cc04b9c7f669738e2ab0be7422900070339ac2",
+    "status": "extracted-original"
+  },
+  {
+    "code": "2401",
+    "image": "Coin01",
+    "address": "Assets/Board/ItemMain/Item/Coin01.png",
+    "path_id": -7347656611019235201,
+    "bundle_sha256": "370ef9a4e8985dede7472692f4c29990db9fbbe0ac336dece1dc5962638272d8",
+    "image_sha256": "06c36279d0e78efba8a8be37332121739eb9bdf2325b977c098d49da6b9df298",
+    "status": "extracted-original"
+  },
+  {
+    "code": "level_up_piece_1",
+    "image": "level_up_piece_1",
+    "address": "Assets/Board/ItemMain/Item/level_up_piece_1.png",
+    "path_id": -4141815654688426063,
+    "bundle_sha256": "370ef9a4e8985dede7472692f4c29990db9fbbe0ac336dece1dc5962638272d8",
+    "image_sha256": "d1244c31a8ac4d7640b8b10e744731992b0881423737b78a74ff3a3865005aa1",
+    "status": "extracted-original"
+  },
+  {
+    "code": "level_down_piece_1",
+    "image": "level_down_piece_1",
+    "address": "Assets/Board/ItemMain/Item/level_down_piece_1.png",
+    "path_id": 1874462593635924693,
+    "bundle_sha256": "370ef9a4e8985dede7472692f4c29990db9fbbe0ac336dece1dc5962638272d8",
+    "image_sha256": "34c8ad3024c652ac5ff61e34f61cc6a33713fac26370e512bdff633d61ec0f25",
+    "status": "extracted-original"
+  }
+]

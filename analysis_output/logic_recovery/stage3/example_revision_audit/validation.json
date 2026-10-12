@@ -1,0 +1,764 @@
+{
+  "status": "passed",
+  "pages": 140,
+  "mechanisms": 62,
+  "scenarios": 89,
+  "arithmetic_checks": {
+    "ordinary_order": true,
+    "gold_buff": true,
+    "bubble_three_corrections": true,
+    "bubble_floor": true,
+    "temp_new_equivalent_stock": true,
+    "candidate_multipliers": true,
+    "energy_bubble_timer": true,
+    "return_timer": true,
+    "chest_budget": true,
+    "finite_branch_pool": true
+  },
+  "executed_example_rules": [
+    {
+      "case": "chest_budget_5_cost_3",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "chest_old_budget_30_cost_19",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "chest_new_lack_16",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "temp_new_inventory_202",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "chest_budget_5_cost_3",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "chest_old_budget_30_cost_19",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "chest_new_lack_16",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "temp_new_inventory_202",
+      "mode": "recovered-source",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "records": [
+    {
+      "page": "merge\\index.md",
+      "scenarios": 34,
+      "url": "http://127.0.0.1:8000/operations/merge/#_3"
+    },
+    {
+      "page": "merge\\move\\accelerate\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/move/accelerate/detail/#_3"
+    },
+    {
+      "page": "merge\\move\\accelerate\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/move/accelerate/#_3"
+    },
+    {
+      "page": "merge\\move\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/move/#_3"
+    },
+    {
+      "page": "merge\\move\\write\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/move/write/detail/#_3"
+    },
+    {
+      "page": "merge\\move\\write\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/move/write/#_3"
+    },
+    {
+      "page": "merge\\normal\\bubble\\detail.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/bubble/detail/#_5"
+    },
+    {
+      "page": "merge\\normal\\bubble\\index.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/bubble/#_3"
+    },
+    {
+      "page": "merge\\normal\\card\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/card/detail/#_6"
+    },
+    {
+      "page": "merge\\normal\\card\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/card/#_3"
+    },
+    {
+      "page": "merge\\normal\\coin\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/coin/detail/#_5"
+    },
+    {
+      "page": "merge\\normal\\coin\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/coin/#_3"
+    },
+    {
+      "page": "merge\\normal\\eligibility\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/eligibility/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\eligibility\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/eligibility/#_3"
+    },
+    {
+      "page": "merge\\normal\\energy\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/energy/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\energy\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/energy/#_3"
+    },
+    {
+      "page": "merge\\normal\\finish\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/finish/detail/#_3"
+    },
+    {
+      "page": "merge\\normal\\finish\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/finish/#_3"
+    },
+    {
+      "page": "merge\\normal\\index.md",
+      "scenarios": 16,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/#_3"
+    },
+    {
+      "page": "merge\\normal\\notify\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/notify/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\notify\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/notify/#_3"
+    },
+    {
+      "page": "merge\\normal\\replacement\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/replacement/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\replacement\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/replacement/#_3"
+    },
+    {
+      "page": "merge\\normal\\score\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/score/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\score\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/score/#_3"
+    },
+    {
+      "page": "merge\\normal\\temp\\detail.md",
+      "scenarios": 3,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/temp/detail/#_4"
+    },
+    {
+      "page": "merge\\normal\\temp\\index.md",
+      "scenarios": 3,
+      "url": "http://127.0.0.1:8000/operations/merge/normal/temp/#_3"
+    },
+    {
+      "page": "merge\\pointer\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/pointer/#_3"
+    },
+    {
+      "page": "merge\\pointer\\selection\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/pointer/selection/detail/#_3"
+    },
+    {
+      "page": "merge\\pointer\\selection\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/pointer/selection/#_3"
+    },
+    {
+      "page": "merge\\release\\identity\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/identity/detail/#_3"
+    },
+    {
+      "page": "merge\\release\\identity\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/identity/#_3"
+    },
+    {
+      "page": "merge\\release\\index.md",
+      "scenarios": 5,
+      "url": "http://127.0.0.1:8000/operations/merge/release/#_3"
+    },
+    {
+      "page": "merge\\release\\inventory\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/inventory/detail/#_3"
+    },
+    {
+      "page": "merge\\release\\inventory\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/inventory/#_3"
+    },
+    {
+      "page": "merge\\release\\movable\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/movable/detail/#_3"
+    },
+    {
+      "page": "merge\\release\\movable\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/release/movable/#_3"
+    },
+    {
+      "page": "merge\\release\\position\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/release/position/detail/#_3"
+    },
+    {
+      "page": "merge\\release\\position\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/release/position/#_3"
+    },
+    {
+      "page": "merge\\special\\eligibility\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/eligibility/detail/#_4"
+    },
+    {
+      "page": "merge\\special\\eligibility\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/eligibility/#_3"
+    },
+    {
+      "page": "merge\\special\\failure\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/failure/detail/#_3"
+    },
+    {
+      "page": "merge\\special\\failure\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/failure/#_3"
+    },
+    {
+      "page": "merge\\special\\index.md",
+      "scenarios": 5,
+      "url": "http://127.0.0.1:8000/operations/merge/special/#_3"
+    },
+    {
+      "page": "merge\\special\\scissors\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/scissors/detail/#_4"
+    },
+    {
+      "page": "merge\\special\\scissors\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/scissors/#_3"
+    },
+    {
+      "page": "merge\\special\\split\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/split/detail/#_3"
+    },
+    {
+      "page": "merge\\special\\split\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/split/#_3"
+    },
+    {
+      "page": "merge\\special\\upgrade\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/upgrade/detail/#_3"
+    },
+    {
+      "page": "merge\\special\\upgrade\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/special/upgrade/#_3"
+    },
+    {
+      "page": "merge\\swallow\\index.md",
+      "scenarios": 3,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/#_3"
+    },
+    {
+      "page": "merge\\swallow\\progress\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/progress/detail/#_4"
+    },
+    {
+      "page": "merge\\swallow\\progress\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/progress/#_3"
+    },
+    {
+      "page": "merge\\swallow\\target\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/target/detail/#_4"
+    },
+    {
+      "page": "merge\\swallow\\target\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/target/#_3"
+    },
+    {
+      "page": "merge\\swallow\\transform\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/transform/detail/#_4"
+    },
+    {
+      "page": "merge\\swallow\\transform\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/transform/#_3"
+    },
+    {
+      "page": "merge\\swap\\blocked\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swap/blocked/detail/#_3"
+    },
+    {
+      "page": "merge\\swap\\blocked\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swap/blocked/#_3"
+    },
+    {
+      "page": "merge\\swap\\exchange\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swap/exchange/detail/#_3"
+    },
+    {
+      "page": "merge\\swap\\exchange\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/merge/swap/exchange/#_3"
+    },
+    {
+      "page": "merge\\swap\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/merge/swap/#_3"
+    },
+    {
+      "page": "orders\\after\\chest_delay\\detail.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/orders/after/chest_delay/detail/#_5"
+    },
+    {
+      "page": "orders\\after\\chest_delay\\index.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/orders/after/chest_delay/#_3"
+    },
+    {
+      "page": "orders\\after\\cooking\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/after/cooking/detail/#_4"
+    },
+    {
+      "page": "orders\\after\\cooking\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/after/cooking/#_3"
+    },
+    {
+      "page": "orders\\after\\index.md",
+      "scenarios": 6,
+      "url": "http://127.0.0.1:8000/operations/orders/after/#_3"
+    },
+    {
+      "page": "orders\\consume\\board\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/board/detail/#_3"
+    },
+    {
+      "page": "orders\\consume\\board\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/board/#_3"
+    },
+    {
+      "page": "orders\\consume\\index.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/#_3"
+    },
+    {
+      "page": "orders\\consume\\mark\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/mark/detail/#_3"
+    },
+    {
+      "page": "orders\\consume\\mark\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/mark/#_3"
+    },
+    {
+      "page": "orders\\consume\\refresh_failure\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/refresh_failure/detail/#_3"
+    },
+    {
+      "page": "orders\\consume\\refresh_failure\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/refresh_failure/#_3"
+    },
+    {
+      "page": "orders\\consume\\store\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/store/detail/#_3"
+    },
+    {
+      "page": "orders\\consume\\store\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/consume/store/#_3"
+    },
+    {
+      "page": "orders\\dispatch\\branch\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/branch/detail/#_4"
+    },
+    {
+      "page": "orders\\dispatch\\branch\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/branch/#_3"
+    },
+    {
+      "page": "orders\\dispatch\\index.md",
+      "scenarios": 3,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/#_3"
+    },
+    {
+      "page": "orders\\dispatch\\special\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/special/detail/#_4"
+    },
+    {
+      "page": "orders\\dispatch\\special\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/special/#_3"
+    },
+    {
+      "page": "orders\\dispatch\\type\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/type/detail/#_3"
+    },
+    {
+      "page": "orders\\dispatch\\type\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/type/#_3"
+    },
+    {
+      "page": "orders\\entry\\button\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/button/detail/#_3"
+    },
+    {
+      "page": "orders\\entry\\button\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/button/#_3"
+    },
+    {
+      "page": "orders\\entry\\counts\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/counts/detail/#_3"
+    },
+    {
+      "page": "orders\\entry\\counts\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/counts/#_3"
+    },
+    {
+      "page": "orders\\entry\\index.md",
+      "scenarios": 5,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/#_3"
+    },
+    {
+      "page": "orders\\entry\\inventory\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/inventory/detail/#_3"
+    },
+    {
+      "page": "orders\\entry\\inventory\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/inventory/#_3"
+    },
+    {
+      "page": "orders\\entry\\requirements\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/requirements/detail/#_3"
+    },
+    {
+      "page": "orders\\entry\\requirements\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/requirements/#_3"
+    },
+    {
+      "page": "orders\\entry\\special_window\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/special_window/detail/#_3"
+    },
+    {
+      "page": "orders\\entry\\special_window\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/entry/special_window/#_3"
+    },
+    {
+      "page": "orders\\finish\\animation\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/finish/animation/detail/#_3"
+    },
+    {
+      "page": "orders\\finish\\animation\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/finish/animation/#_3"
+    },
+    {
+      "page": "orders\\finish\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/finish/#_3"
+    },
+    {
+      "page": "orders\\finish\\sync\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/finish/sync/detail/#_3"
+    },
+    {
+      "page": "orders\\finish\\sync\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/finish/sync/#_3"
+    },
+    {
+      "page": "orders\\index.md",
+      "scenarios": 55,
+      "url": "http://127.0.0.1:8000/operations/orders/#_3"
+    },
+    {
+      "page": "orders\\refill\\candidates\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/candidates/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\candidates\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/candidates/#_3"
+    },
+    {
+      "page": "orders\\refill\\continuous\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/continuous/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\continuous\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/continuous/#_3"
+    },
+    {
+      "page": "orders\\refill\\draw\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/draw/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\draw\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/draw/#_3"
+    },
+    {
+      "page": "orders\\refill\\dynamic\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/dynamic/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\dynamic\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/dynamic/#_3"
+    },
+    {
+      "page": "orders\\refill\\extra\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/extra/detail/#_3"
+    },
+    {
+      "page": "orders\\refill\\extra\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/extra/#_3"
+    },
+    {
+      "page": "orders\\refill\\fixed_return\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/fixed_return/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\fixed_return\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/fixed_return/#_3"
+    },
+    {
+      "page": "orders\\refill\\index.md",
+      "scenarios": 18,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/#_3"
+    },
+    {
+      "page": "orders\\refill\\loop\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/loop/detail/#_3"
+    },
+    {
+      "page": "orders\\refill\\loop\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/loop/#_3"
+    },
+    {
+      "page": "orders\\refill\\lucky\\detail.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/lucky/detail/#_3"
+    },
+    {
+      "page": "orders\\refill\\lucky\\index.md",
+      "scenarios": 2,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/lucky/#_2"
+    },
+    {
+      "page": "orders\\refill\\owner_history\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/owner_history/detail/#_3"
+    },
+    {
+      "page": "orders\\refill\\owner_history\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/owner_history/#_2"
+    },
+    {
+      "page": "orders\\refill\\priority\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/priority/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\priority\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/priority/#_3"
+    },
+    {
+      "page": "orders\\refill\\random_gate\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/random_gate/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\random_gate\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/random_gate/#_3"
+    },
+    {
+      "page": "orders\\refill\\save\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/save/detail/#_3"
+    },
+    {
+      "page": "orders\\refill\\save\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/save/#_3"
+    },
+    {
+      "page": "orders\\refill\\tutorial\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/tutorial/detail/#_4"
+    },
+    {
+      "page": "orders\\refill\\tutorial\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/refill/tutorial/#_3"
+    },
+    {
+      "page": "orders\\rewards\\acquire\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/acquire/detail/#_3"
+    },
+    {
+      "page": "orders\\rewards\\acquire\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/acquire/#_3"
+    },
+    {
+      "page": "orders\\rewards\\activity\\detail.md",
+      "scenarios": 9,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/activity/detail/#_3"
+    },
+    {
+      "page": "orders\\rewards\\activity\\index.md",
+      "scenarios": 9,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/activity/#_3"
+    },
+    {
+      "page": "orders\\rewards\\gift_buff\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/gift_buff/detail/#_2"
+    },
+    {
+      "page": "orders\\rewards\\gift_buff\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/gift_buff/#_2"
+    },
+    {
+      "page": "orders\\rewards\\index.md",
+      "scenarios": 17,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/#_3"
+    },
+    {
+      "page": "orders\\rewards\\price\\detail.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/price/detail/#_4"
+    },
+    {
+      "page": "orders\\rewards\\price\\index.md",
+      "scenarios": 4,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/price/#_3"
+    },
+    {
+      "page": "orders\\rewards\\smile\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/smile/detail/#_3"
+    },
+    {
+      "page": "orders\\rewards\\smile\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/smile/#_3"
+    },
+    {
+      "page": "orders\\rewards\\snapshot\\detail.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/snapshot/detail/#_3"
+    },
+    {
+      "page": "orders\\rewards\\snapshot\\index.md",
+      "scenarios": 1,
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/snapshot/#_3"
+    }
+  ],
+  "limits": "Page/result presence, preserved specifications, assets, selected arithmetic and four selected rules against original converted bytecode and recovered source with controlled dependencies. Does not assert all internal subbranches covered or G1–G7 passed."
+}

@@ -1,0 +1,87 @@
+{
+  "cases": [
+    {
+      "case": "pool_round_trip",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "empty_and_nil_pool",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "no_negative_weight_repair",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "save_six_fields",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "clear_old_timer_after_batch",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "restore_overrides_initial_pool",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "missing_timer_and_count",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "creation_failure_returns_nil",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "pool_round_trip",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "empty_and_nil_pool",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "no_negative_weight_repair",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "save_six_fields",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "clear_old_timer_after_batch",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "restore_overrides_initial_pool",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "missing_timer_and_count",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "creation_failure_returns_nil",
+      "mode": "recovered-source",
+      "status": "passed"
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "limits": "Real encode, field fill, SetItem and restore executed. DB cache and configured object creation are substitutes; no native disk/server or complete creation validation."
+}

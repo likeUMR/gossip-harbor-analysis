@@ -1,0 +1,816 @@
+{
+  "passed": 86,
+  "total": 86,
+  "cases": [
+    {
+      "case": "duplicate_requirement_deficit",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "three_repeats_final_deficit",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "empty_requirements_pass_dormant",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "partial_state_and_time",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "finished_state_not_recomputed",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "window_cancel_no_delivery",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose"
+      ]
+    },
+    {
+      "case": "window_green_waits_close",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "finish"
+      ]
+    },
+    {
+      "case": "window_member_removed",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose"
+      ]
+    },
+    {
+      "case": "window_callback_overrides_membership",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "callback"
+      ]
+    },
+    {
+      "case": "window_no_material_revalidation",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "finish"
+      ]
+    },
+    {
+      "case": "price_and_diff_duplicate",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "baseline_recommended_price",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "missing_config_discards_sum",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "error",
+        "error"
+      ]
+    },
+    {
+      "case": "board_valid_row_order",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "board_first_store_fallback_sparse",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "remove:203",
+        "count",
+        "refresh",
+        "remove:203",
+        "count",
+        "refresh",
+        "storeRemove",
+        "removeProperty",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "missing_item_continues_later_requirement",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "count",
+        "refresh",
+        "error",
+        "remove:y",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "board_precedes_available_store",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "remove:x",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "slot_nonmember_no_effect",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "slot_completion_before_event",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "mark",
+        "log",
+        "fill",
+        "event:orderFinished"
+      ]
+    },
+    {
+      "case": "fill_retry_after_other_slot_success",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "save:2",
+        "save:1",
+        "refresh",
+        "unlock:2",
+        "unlock:1"
+      ]
+    },
+    {
+      "case": "random_qualification_consumes_point",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "db:Random1OrderPoints=0",
+        "db:timer=1000"
+      ]
+    },
+    {
+      "case": "random_cd_boundary",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "db:timer=0",
+        "db:Random1OrderPoints=4"
+      ]
+    },
+    {
+      "case": "filter_first_match_inclusive",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "filter_no_match_nil",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "repeat_weight_divisor_not_counter",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_uniform_budget_overshoot_repeat",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "uniformDraw",
+        "uniformDraw"
+      ]
+    },
+    {
+      "case": "chest_zero_budget_no_draw",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_inactive_no_work",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_old_pick_ceiling",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_new_pick_lack_stops_first",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "ordinary_finish_order_sequence",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "getRewards",
+        "acquire:Gold",
+        "mark",
+        "consume",
+        "cooking",
+        "acquire:delayed",
+        "ownerFinish",
+        "refresh",
+        "sync",
+        "localFinish"
+      ]
+    },
+    {
+      "case": "ordinary_nonmember_still_awards",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "getRewards",
+        "acquire:Gold",
+        "mark",
+        "consume",
+        "cooking",
+        "acquire:delayed",
+        "refresh",
+        "sync",
+        "localFinish"
+      ]
+    },
+    {
+      "case": "special_dispatch_early_return",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "special"
+      ]
+    },
+    {
+      "case": "branch_dispatch_early_return",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "branch"
+      ]
+    },
+    {
+      "case": "lucky_missing_config_still_consumes_trigger",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "closeTrigger"
+      ]
+    },
+    {
+      "case": "lucky_one_point_starts_cd_no_create",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "closeTrigger",
+        "db:LuckyOrderTimer=1000",
+        "db:LuckyOrderPoints=0"
+      ]
+    },
+    {
+      "case": "lucky_two_points_qualify_without_decrement",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "closeTrigger"
+      ]
+    },
+    {
+      "case": "lucky_cd_inclusive",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "branch_pool_all_six_cache",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "owner",
+        "batch",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "timeline",
+        "finish"
+      ]
+    },
+    {
+      "case": "empty_req_dormant_rejects_delivery",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "extra_cooldown_strict_and_remaining_hour",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "conti_gate_nil_flag_and_window",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "tutorial_completion_after_fill_same_slot",
+      "kind": "bytecode",
+      "status": "passed",
+      "trace": [
+        "db:TutorialOrderModel_CurTutorialID=2_1"
+      ]
+    },
+    {
+      "case": "duplicate_requirement_deficit",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "three_repeats_final_deficit",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "empty_requirements_pass_dormant",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "partial_state_and_time",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "finished_state_not_recomputed",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "window_cancel_no_delivery",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose"
+      ]
+    },
+    {
+      "case": "window_green_waits_close",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "finish"
+      ]
+    },
+    {
+      "case": "window_member_removed",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose"
+      ]
+    },
+    {
+      "case": "window_callback_overrides_membership",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "callback"
+      ]
+    },
+    {
+      "case": "window_no_material_revalidation",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "close",
+        "baseClose",
+        "finish"
+      ]
+    },
+    {
+      "case": "price_and_diff_duplicate",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "baseline_recommended_price",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "missing_config_discards_sum",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "error",
+        "error"
+      ]
+    },
+    {
+      "case": "board_valid_row_order",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "board_first_store_fallback_sparse",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "remove:203",
+        "count",
+        "refresh",
+        "remove:203",
+        "count",
+        "refresh",
+        "storeRemove",
+        "removeProperty",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "missing_item_continues_later_requirement",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "count",
+        "refresh",
+        "error",
+        "remove:y",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "board_precedes_available_store",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "remove:x",
+        "count",
+        "refresh"
+      ]
+    },
+    {
+      "case": "slot_nonmember_no_effect",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "slot_completion_before_event",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "mark",
+        "log",
+        "fill",
+        "event:orderFinished"
+      ]
+    },
+    {
+      "case": "fill_retry_after_other_slot_success",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "save:2",
+        "save:1",
+        "refresh",
+        "unlock:2",
+        "unlock:1"
+      ]
+    },
+    {
+      "case": "random_qualification_consumes_point",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "db:Random1OrderPoints=0",
+        "db:timer=1000"
+      ]
+    },
+    {
+      "case": "random_cd_boundary",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "db:timer=0",
+        "db:Random1OrderPoints=4"
+      ]
+    },
+    {
+      "case": "filter_first_match_inclusive",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "filter_no_match_nil",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "repeat_weight_divisor_not_counter",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_uniform_budget_overshoot_repeat",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "uniformDraw",
+        "uniformDraw"
+      ]
+    },
+    {
+      "case": "chest_zero_budget_no_draw",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_inactive_no_work",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_old_pick_ceiling",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "chest_new_pick_lack_stops_first",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "ordinary_finish_order_sequence",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "getRewards",
+        "acquire:Gold",
+        "mark",
+        "consume",
+        "cooking",
+        "acquire:delayed",
+        "ownerFinish",
+        "refresh",
+        "sync",
+        "localFinish"
+      ]
+    },
+    {
+      "case": "ordinary_nonmember_still_awards",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "getRewards",
+        "acquire:Gold",
+        "mark",
+        "consume",
+        "cooking",
+        "acquire:delayed",
+        "refresh",
+        "sync",
+        "localFinish"
+      ]
+    },
+    {
+      "case": "special_dispatch_early_return",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "special"
+      ]
+    },
+    {
+      "case": "branch_dispatch_early_return",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "branch"
+      ]
+    },
+    {
+      "case": "lucky_missing_config_still_consumes_trigger",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "closeTrigger"
+      ]
+    },
+    {
+      "case": "lucky_one_point_starts_cd_no_create",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "closeTrigger",
+        "db:LuckyOrderTimer=1000",
+        "db:LuckyOrderPoints=0"
+      ]
+    },
+    {
+      "case": "lucky_two_points_qualify_without_decrement",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "closeTrigger"
+      ]
+    },
+    {
+      "case": "lucky_cd_inclusive",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "branch_pool_all_six_cache",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "owner",
+        "batch",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "weightDraw",
+        "timeline",
+        "finish"
+      ]
+    },
+    {
+      "case": "empty_req_dormant_rejects_delivery",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "extra_cooldown_strict_and_remaining_hour",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "conti_gate_nil_flag_and_window",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": []
+    },
+    {
+      "case": "tutorial_completion_after_fill_same_slot",
+      "kind": "recovered-source",
+      "status": "passed",
+      "trace": [
+        "db:TutorialOrderModel_CurTutorialID=2_1"
+      ]
+    }
+  ],
+  "original_client_runtime_confirmed": false,
+  "limitations": "Selected real functions with explicit service doubles; not full operation closure or original runtime/native DB verification.",
+  "module_hashes": {
+    "Board.Model.Base.BoardPosition": {
+      "bytecode": "e49f85c6961fb40b20b3e8fefab16bd5eb9e1bdfe6f299faf9ef488cb04dd5b6",
+      "source": "0e77481597bb64cb691360c0dad947880174cf1eab97b5fe0bf8899f65fc0332"
+    },
+    "Board.Model.Board.BaseBoardModel": {
+      "bytecode": "014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce",
+      "source": "16506a7f62041132200665ce8db3b0b37fed0da5d01fbccb07cad74604c7cd1b"
+    },
+    "Board.Model.Board.BaseActionBoardModel": {
+      "bytecode": "b01cc1db109fdfdb7b0c2e89a65d58fbc44b23e2a459742ef77a2f64480d82e3",
+      "source": "362a62b39c30876ad8ecf73b02f086960c250058a14c1e56f8a68efa51584f68"
+    },
+    "Board.Model.Board.MainBoardModel": {
+      "bytecode": "c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e",
+      "source": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+    },
+    "Board.Model.Order.BaseOrder": {
+      "bytecode": "14a10034366560d0e2e5155219aec7e28ce9ab192ab0f01ad414a0cbbd348f9e",
+      "source": "12dea53333eb81560e0a91b5283a1b80aab2d94201140d2f56dd3cc1cc2e4d21"
+    },
+    "Board.Model.Order.SlotOrder": {
+      "bytecode": "29055f0fb75aafa5789f0792abdde442a8ecf9d9acf12dd423be77072e35bc48",
+      "source": "1c594f0c463d6d03607dd9bde81b1a448adf4730fe01aaf1f93e362a6f4e71e7"
+    },
+    "Board.Model.Order.MainOrderDefinition": {
+      "bytecode": "95c6d75d8726317a6e4a82aaa110efd179910309584d588d3046398cc81932f0",
+      "source": "9edfe29978d8f59d0bc82f30b1fd46c3fc17e6a9bb809708067a4b4124563e25"
+    },
+    "Board.Model.Order.MainOrder": {
+      "bytecode": "700a7c536dcd0f4f2db75f072182d2f1d5e538ae276f30702849fed98ed04400",
+      "source": "5fc565ba7d112b2cab920566f9062b5ea7f19e444972f4fe1b65c1ac266937e2"
+    },
+    "Board.Model.Order.SlotOrderModel": {
+      "bytecode": "2313d326b39d3f5f6a56c9f0ab812a4909b104e1f7590bbd7c4a8d8f85651426",
+      "source": "e5c6628f562d4b67d5a8b02e9dcfbcd3505a55b07ca249f915206e7c8477d422"
+    },
+    "Board.Model.Order.MainOrderCreator": {
+      "bytecode": "1619a883a50d06746fdc5419018be18c2d80950c09bd9500416cb95cf85245ef",
+      "source": "542cabae6ac530fef1f8691aa7e2f52002927c44c0f3acf8a78a72cbc74221cf"
+    },
+    "Board.Model.Order.MainOrderCreatorRandom": {
+      "bytecode": "641a49de161ca5d8568ab601eb957863b952a58f8cf950557fb4d485bc3e07bd",
+      "source": "16739731c61df7ba45d4d1b47cc4288e656837389f3d1aec81d77a248f4c1dba"
+    },
+    "UI.Window.Board.UseInventoryItemConfirmWindow": {
+      "bytecode": "5b05abde8e1edb860d57736a1a378031f250c25dc2eea0e446607485740e6234",
+      "source": "df96ae96ca9f47ad2b9aab661f5a20d750d1f6f9b28c7b5a3c76594361be1845"
+    },
+    "ChestCustomer.Model.ChestCustomerModel": {
+      "bytecode": "55571bcde9f8ca8b1ad45459baf6bb27654efdf94d39ae4b35cbf8b105fa55b3",
+      "source": "16ee3de2003c9b5c8a971fa8307e704427e66d816652cadc6fb08220281da344"
+    },
+    "Board.Model.RandomGenerateCodeHelper": {
+      "bytecode": "002f79b4871e2f15f6d5facf0115e14554ff57b91bc8da702212ec74878aebb4",
+      "source": "1d13ebe7bb372f506893bdb3faec7e6638035e7cb2d7ed3bb1c61fbee8a6426b"
+    },
+    "Board.Model.Order.EmptyReqOrder": {
+      "bytecode": "ad3bbdbdd404edeae67b000cc3a25fd097519419bf2573affac42f8f62eff1c5",
+      "source": "d13f8a91d9902eba877f8fa680843ff37e6a229cd1e510d594220061646bc39d"
+    },
+    "Board.Model.Order.TutorialOrderModel": {
+      "bytecode": "cfe541e34bc33864679e8f66e5f9de18bff7d53bc0d889214593066ff3796e18",
+      "source": "76b2439db95ac6ac026a421b88b549d2587839175e7b59393ca8bebc007ee475"
+    },
+    "Contiorders.Model.ContiordersModel": {
+      "bytecode": "684a043ffff369b2363317407434f49f0d09d905ff0edb89add5021b93bf92ca",
+      "source": "f295dc702c4078f6abc2afe35a5468dc6066e1d4d88cf9560edd5093397c5f0b"
+    },
+    "ExtraCustomerActivity.Model.ExtraCustomerActivityModel": {
+      "bytecode": "8630de4f320351c8f681a479932f28cffb38383d4cfd648b8920d3dca9eed118",
+      "source": "21213eca8995419347604357c86e17213861dab7c415e5723d8b5a0236a8b3d1"
+    }
+  }
+}

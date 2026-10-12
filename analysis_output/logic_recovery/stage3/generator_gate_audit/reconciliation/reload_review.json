@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "name": "Boost",
+      "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+      "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+    },
+    {
+      "name": "ItemData",
+      "source": "analysis_data/logic_index/lua/decoded/a0ad2195b6bcb12714dad2e37c1d07ba366d85ab9283aa3679b220e257ee3340/decompiled.lua",
+      "sha256": "16067c0e6431e063196de7f440b9cbd73b511870d9d2c89ef02fc4b86396368f"
+    },
+    {
+      "name": "AccelerateTime",
+      "source": "analysis_data/logic_index/lua/decoded/aa7c402120a0154e9f84c75888adc25ea2a8aa3d7a33dc14520e5640772205c8/decompiled.lua",
+      "sha256": "b01b610621554669fd0e0ee23eb224ff80fef93abe2045e4eaea0face6c2b2a0"
+    },
+    {
+      "name": "Lucky",
+      "source": "analysis_data/logic_index/lua/decoded/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505/decompiled.lua",
+      "sha256": "5cf34f62ac9d0bb9391f5cb4a038f7e4ad97722e477519dafef898be719bdcf3"
+    }
+  ],
+  "documents": [
+    {
+      "page": "operations/generator/output/preparation/detail.md",
+      "sha256": "5bcdafc5515f5354a0de2a96379dffa296a7c60973b797c36a994c3057ecf73a"
+    },
+    {
+      "page": "operations/generator/lifecycle/cooldown/detail.md",
+      "sha256": "842e13c63bde520dc12da05f23ac696a6923838a0085865588db624cbe2f24b3"
+    },
+    {
+      "page": "operations/generator/lucky/chance/load.md",
+      "sha256": "b64a3110bdfecb0da5c0acbea00c3d7ffa00781b759d61e9b92753bc76c88d37"
+    }
+  ],
+  "rules": [
+    "Boost configuration priority and retained changed-type set",
+    "ItemData mapping reload vs instance state",
+    "Lucky boolean transition controls bUpdate",
+    "cached-key-only clear and new-config-only generators",
+    "eight-neighbor acceleration max endpoint, save conditions and view notice"
+  ],
+  "open_edges": [
+    "IsBuffActive and transition lifecycle",
+    "config selection/FileReplace all variants and fields",
+    "new/rebuilt ItemModel component configuration",
+    "acceleration update scheduling and neighbor ItemAccelerate lifetime",
+    "component UpdateView consumers",
+    "DB clear/serialize/native commit"
+  ],
+  "full_acceptance": false
+}

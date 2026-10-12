@@ -1,0 +1,176 @@
+[
+  {
+    "module": "Data.Config.ChestOrderRandomConfig",
+    "records": 8,
+    "sha256": "e51f54c5e98a5c2aa73aa03bc6ad7dfc262af555bbf97c768741b6146624acd4",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.ChestOrderRandomConfig_hard",
+    "records": 8,
+    "sha256": "91bdfb784947243350560a8fdf7a965f8ed0512a6353a0c339b8b14977d4c0bb",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.ChestOrderRandomConfig_lessitem",
+    "records": 8,
+    "sha256": "c0f80ccccd25042a7ab1d97ea88d96d05a9489a11a8da80f0b85d999eab4911c",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.ChestOrderRandomConfig_lessitem2",
+    "records": 8,
+    "sha256": "c279d72c3c133b482ca4072b0d8b6d2c63ae2be22f470c0fa4e288294263969b",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.ChestOrderRandomConfig_lessitem3",
+    "records": 8,
+    "sha256": "3a72625a2782fe14bf792dde9f4e290b6cca30ad43f891c865ded37cc7448a2c",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.ChestOrderRandomRecallConfig",
+    "records": 8,
+    "sha256": "705afa7bf37d423fa1e62afe03f66c19152336020dc9cf1a3ca626c9ff3c55f8",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.NewItemOrderConfig",
+    "records": 0,
+    "sha256": "c76d54a77bd7bf1a98afa948ccaa5499506a385feaed58e978444f93811a6776",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.NewItemOrderConfig_test",
+    "records": 15,
+    "sha256": "f813380f67d6169a3fedfe538cc49138fe95265274a45e02a50a661d8e73b79e",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderAvatarConfig",
+    "records": 9,
+    "sha256": "43b1583b3db227005fc5c5396415f3e40b1360c01314db61ccb57cc511cfe25f",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderAvatarConfig_more",
+    "records": 9,
+    "sha256": "ad4b80ff14652a02a800535f77a8e4c3d0a1a4891abf7587fee9a21d65729ed2",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderBranchConfig",
+    "records": 1,
+    "sha256": "91162a672d685004528f58de63561b3c0063d70c0a227928b824d297b611def4",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderFixedConfig",
+    "records": 16,
+    "sha256": "e355f60810530cb4f3b7751d32fca450367a4e641fdd9c3d6d503c77db9e8ba7",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig",
+    "records": 74,
+    "sha256": "c47d554417a541970f2a888b57c504b08e9074ef02b5c82055cb686c281ddb04",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig_extracust",
+    "records": 76,
+    "sha256": "a9a9255e080e8124e326a0b722bf37851c011fdf35c53d6acc5518cf2852bdc0",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig_hard",
+    "records": 74,
+    "sha256": "4b3aa276f7775470dd7ef14eb6e96037b33fe5b6f124fab4f9567c490c8249fb",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig_nerf",
+    "records": 74,
+    "sha256": "4f16f6f38884e5a7303f8094a3faf5e08f6440cac664b558b1722308d10d60f8",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig_nerf_more",
+    "records": 74,
+    "sha256": "880456f7fca46f751961686b9718776e75d4136c23e31c8511c5b70ae386fd21",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemConfig_shell",
+    "records": 80,
+    "sha256": "f63fc1618c4563631e24f4b8dd936421c2ae50bb8febcac28be1f6f191d57fd3",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderItemNumberWeightConfig",
+    "records": 4,
+    "sha256": "bb20142dcaa32a8917fffc54eba3dc158e959472ad42c38f00ee6454e9893eef",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig",
+    "records": 9,
+    "sha256": "d05a86737536fc3ae52d0396aa80f4d52d1932501836f976b4a361b8e30ae663",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_dynamic",
+    "records": 9,
+    "sha256": "c4ed63b9816c65f99b00dac5a6ba2672788bad6a25613bd9f4c701d31b344e6e",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_hard",
+    "records": 9,
+    "sha256": "8e04e80c857334ac12cd7afcab022a03152535a79eb3c6bcea24eb63c8a9cfdd",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_lessitem",
+    "records": 8,
+    "sha256": "de2767c00032cb672f5759c222b39a08e91128774d6d0e3bcea88d7fa68bb4a1",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_lessitem2",
+    "records": 8,
+    "sha256": "1888fa77414839fd7cf7b4c05a05532c25df424a867c7edca48119063f16741f",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_lessitem3",
+    "records": 8,
+    "sha256": "06a364426be4a449718a3c3874ff1c4f44de2e2d30af15ca6940b7d45457ecb0",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomConfig_medium",
+    "records": 9,
+    "sha256": "24206b02677cb94a9a0dab274e1650c939eb1315f90b4af37ab0dc7029ae275f",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomRecallConfig",
+    "records": 9,
+    "sha256": "11c3336237458cb85abaa7bbed2d6371f157bc89d5870e4cbf6e1747a75f4908",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderRandomRecallConfig_easier",
+    "records": 9,
+    "sha256": "99758631acabddc241c50abc9fe0345ade2cd779c0356d83579f2f9218d6b1c4",
+    "status": "parsed-original-bytecode"
+  },
+  {
+    "module": "Data.Config.OrderSpecialConfig",
+    "records": 6,
+    "sha256": "6cfd4f6c559cb1ca99e5eb828d5c9aa28d046c163e726705847e780c6c23b86a",
+    "status": "parsed-original-bytecode"
+  }
+]

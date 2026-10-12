@@ -28,7 +28,73 @@ ShowCountDown 在仍有次数且非初始化/开启时隐藏；一次性次数0�
 
 **配表**：Spread_*Duration / SpeedUpCost；活动及测试开关独立读取。**源码**：UpdatePerSecond、_UpdateRecoveryState、GetTimerAmount、GetNextTimerAmount、_GetTimerAmount、GetTimerDuration、GetSpeedUpCost、OnSpeedUp、_SpeedUp、OnTimeSkip、TryUnlockCdByZroCd、TryUseCDBuff、各CanSupport资格、ShowCountDown、ShowCountdownAnimation、IsChestUsedOnce。恢复与判定为 source-confirmed，原版离线/重登、父类存档与实际活动为 runtime-pending。
 
+<!-- reconciliation-persistence:start -->
+## 冷却起点怎样保存、清除和恢复
+
+每次 SaveItemProperty 都重填该棋子的整组运行字段。ItemManager:SetItem先批量写字段，再检查本次spreadStartTimer是否为nil；若为nil，显式Remove(id,"spreadStartTimer")。Lua的pairs不会遍历nil字段，若只做批量更新，旧计时起点会残留，因此不能省略这条删除。没有计时的母体不是起点0，也不能将原有时间继续保留。
+
+DBTable批量写入会更新内存缓存，并将数据同步标记设false、缓存变化标记设true；非JSON模式另外排队数据库命令。Remove成功后同样标记变化，并在非JSON模式排队删行或单列更新。这里是请求保存与缓存变化，不能解释成此刻已经完成原生磁盘提交或服务器确认。
+
+重载时spreadStartTimer原样回写实例。恢复进度用当前服务器时间减保存的起点，当前配置决定阶段时长；不把重新登录的时间作为新的起点。有起点且加速生效时，先修正起点并保存；到期再恢复并保存。无起点分支新建计时后立即返回，所以第一次调用只开始计时，不在同一次调用里检查它是否已完成。
+
+### 保存与恢复的具体例子
+
+假设食品袋105当前Opened、次数0、储备10、起点1000，存档对应spreadState=3、spreadItemRestNumber=0、spreadStorageRestNumber=10、spreadStartTimer=1000。1030重载后仍是这组值；UpdatePerSecond按30秒单轮恢复补到80次，储备截为0，起点推进到1030。1090储备恢复结束，次数80、储备240，起点nil；SetItem显式移除spreadStartTimer列。再次重载时起点为nil，不会重复执行旧冷却。
+
+<!-- reconciliation-persistence:end -->
+
 ---
+
+<!-- reconciliation-reload:start -->
+## 邻近加速如何影响母体计时
+
+ItemAccelerateTime初始化m_time=0、m_lastUpdateTime=0。UpdateAccelerateTime扫描母体八个邻格，只取存在且已激活的ItemAccelerate，计算每个邻格的起点加时长，并取最晚结束时间；多枚加速物不会在这一步累加倍率。最晚结束时间不大于当前服务器时间，就改为0。
+
+旧m_time或新时间任一非0时，保存lastUpdateTime=当前时间、m_time=新时间并请求SaveItemProperty；两者都0不写这两个字段。无论是否保存，最后都发组件UpdateView。IsAccelerated仅比较m_time是否非0，不再比较当前时间；过期标记的清理依赖UpdateAccelerateTime调用，不能将这个getter自行改成时间比较。
+
+母体随后推进冷却时，以min(加速结束时间,当前时间)封顶修正计时起点，所以仅结算有效加速区间。例如起点990、当前1000、上次更新时间995、加速结束1005：新起点=990+995-1000=985；本次恢复进度按15秒而非10秒计算。加速结束与上次更新时间保存在accelerateTime、accelerateLastUpdateTime，恢复对象分别用存档值和原样字段覆盖；加速结束缺值时默认0。
+
+<!-- reconciliation-reload:end -->
+
+<!-- reconciliation-buff:start -->
+## NoCD解锁与本次点击末尾的跳时
+
+GeneratorBoost的IsBuffActive先要求活动GetState(false)==Started、已解锁等级大于0，再扫描1至当前等级，只要其中任何等级是所问Buff就为真。已解锁Buff累积保留，不是只看当前等级。BuffLevelUp有下一级配置时先保存等级，再记日志；解锁NoCD才发送GeneratorBoostBuffActiveLogic。之后无论是否存在下一级，都设置主窗口待弹标记和主动产出标记。
+
+主棋盘在初始化时为该全局事件注册包装回调：先确认存在已开始的GeneratorBoost活动，然后按棋盘有效格顺序扫描，取得ItemSpread并确认CanSupportGeneratorBoostCDBuff，才调用组件OnTimeSkipInZeroRestNumber。该方法再次要求生成器、需要能量、属于主棋盘；次数恰为0才调用OnTimeSkip(nil,Buff)，随后发StateChanged。不是所有棋子全部清CD，也不是每个合格母体都被扣掉当前恢复时间。
+
+本次点击成功落盘且没有变换或删除母体后，另由_TrySpread调用TryUseCDBuff；普通CD Buff、GeneratorBoost NoCD、测试免费CD任一资格成立，次数0才跳时，最后发状态事件。OnTimeSkip(nil)先把起点改为当前时间，再减当前阶段完整时长，保存、播放加速音效、调用UpdatePerSecond恢复；不能实现成简单“次数补满且清计时”，因为可能在恢复后进入储备阶段。
+
+### NoCD也可能接续储备恢复
+
+假设105次数0、储备10、次数上限80、单轮30秒、储备60秒、已有恢复起点；当前时间1000，NoCD成立。OnTimeSkip(nil)设起点970，随后恢复先补次数80、储备10-80截0，起点推进1000。此时储备阶段进度0，计时仍存在，并非全部恢复已经结束；玩家获得80次可用产出，储备仍0，后续恢复按储备阶段规则处理。
+
+## 活动结束怎样清除Buff
+
+_OnStateChanged在校验资源的状态Started时注册任务进度模块，Ended或Released时移除；不校验资源的状态Ended/Released时调用ClearBuff，最后发送活动状态事件。ClearBuff在当前等级0时直接返回，否则先删等级、额外产出总份额和剩余份额，再删两类额外产出缓存，恢复物品配置、重载Lucky配置、关闭主动产出并发送GeneratorBoostBuffCleared。这里没有把所有母体次数或计时字段统一重置。
+
+## 每秒更新与组件遍历
+
+MainBoardModel仅在其游戏模式等于当前场景模式时推进棋盘组件；订单模型仍在之后逐个更新。BaseBoardModel以pairs遍历全部棋子，再由ItemModel以pairs遍历组件，调用存在的UpdatePerSecond方法。不能假设棋子按坐标排序，或母体组件必定先于加速组件更新。
+
+邻格加速物已有起点时，到期先尝试Transform；没有变换组件才RemoveItem并发送CollapseItem。激活时写起点、立即检查到期、请求保存、发组件Activated，再发全局ItemActivated。ItemAccelerateTime的八邻格重新计算函数与这条每秒遍历并非同名方法；当前直接调用搜索尚未找到其调度入口，因此不能宣称它必定在每秒冷却推进之前执行。
+
+<!-- reconciliation-buff:end -->
+
+<!-- reconciliation-activity-lifecycle:start -->
+## 活动日刷新、进度清零与轮次递增
+
+GeneratorBoost 每秒更新先调用基础活动更新，然后只有资源检查后的状态是 `Started` 才继续。服务器时间达到 `GetRefreshTime()` 时，执行顺序固定为：`ClearState()` → `SetRefreshTime()` → 派发 `RefreshEvent` → 将首次弹窗标记写为 `false` → 将主窗口弹出标记写为 `true` → `AddRoundNum()`。因此刷新日不仅清空任务进度，也会清除当前增益；刷新时间写入的是当前服务器时间对应的当天 24 点时间戳，轮次在数据库中加一。
+
+`ClearState()` 先把当前进度和上次展示进度都重建为四个零，再分别保存两份 JSON，最后调用 `ClearBuff()`。`ClearBuff()` 在活动等级已经是 0 时提前返回；有增益时才删除等级、额外产出总数/剩余数和两类缓存，重载物品与 Lucky 配置，关闭主动产出并发送清除事件。它不会统一清除普通母体的次数或冷却字段。
+
+`AddRoundNum()` 先计算旧轮次加一并写入 `RoundNum`，随后 BI 记录读取到的 `GetRoundNum()` 和服务器配置组；如果底层读取仍返回旧值，BI 的 `r` 也会保持旧值，这两个写入/记录动作不能合并成“记录新轮次”。
+
+### 数值例子
+
+假设服务器时间已经达到刷新时间，当前轮次为 4，四项任务进度为 `[3, 8, 1, 0]`，活动等级为 2，额外产出剩余 5。刷新后先把两份进度都保存为 `[0, 0, 0, 0]`，再按 `ClearBuff` 顺序删除等级、额外份额和缓存、恢复默认配置；随后保存新的当天刷新时间，内存弹窗标记变为“需要弹出”，数据库轮次写为 5，并发送刷新事件。普通母体自身的 `m_itemRestNumber` 不因这次活动刷新自动归零。
+
+<!-- reconciliation-activity-lifecycle:end -->
 
 ## 贯穿案例：点击食品袋 105
 
@@ -46,9 +112,9 @@ ShowCountDown 在仍有次数且非初始化/开启时隐藏；一次性次数0�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -56,7 +122,15 @@ ShowCountDown 在仍有次数且非初始化/开启时隐藏；一次性次数0�
 
 ## 本逻辑使用的配表在哪里
 
-- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[ItemSpread.lua](../../../../assets/recovered-source/ItemSpread.lua)
+
+<!-- source-links:end -->

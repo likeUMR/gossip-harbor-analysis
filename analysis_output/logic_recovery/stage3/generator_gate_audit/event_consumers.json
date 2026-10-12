@@ -13808,7 +13808,14 @@
       ],
       "registration_line": 12,
       "callback": "_OnItemSpread",
-      "local_provider_candidates": [],
+      "local_provider_candidates": [
+        {
+          "identifier": "Executer:_OnItemSpread",
+          "line": 21,
+          "body_sha256": "535cbae22b9cfabd8eb8295d4a24329c97909e7cd4db35996689590e5d3d65cd",
+          "body": "  function Executer:_OnItemSpread(message)\n    self:_TryStart(message)\n  end\n  \n"
+        }
+      ],
       "status": "pending",
       "reason": "Registration is a candidate, not an active subscription; guard, callback dependencies, configs and downstream events require review."
     },
@@ -14153,7 +14160,14 @@
       ],
       "registration_line": 12,
       "callback": "_OnItemSpread",
-      "local_provider_candidates": [],
+      "local_provider_candidates": [
+        {
+          "identifier": "Executer:_OnItemSpread",
+          "line": 23,
+          "body_sha256": "8d4e70aa5222380df9ab72399134ff71d1daeec58b9bf2fa640703f4bbdddb1c",
+          "body": "  function Executer:_OnItemSpread(message)\n    self:_TryStart(message, true)\n  end\n  \n"
+        }
+      ],
       "status": "pending",
       "reason": "Registration is a candidate, not an active subscription; guard, callback dependencies, configs and downstream events require review."
     },
@@ -14256,7 +14270,14 @@
       ],
       "registration_line": 13,
       "callback": "_OnItemSpread",
-      "local_provider_candidates": [],
+      "local_provider_candidates": [
+        {
+          "identifier": "Executer:_OnItemSpread",
+          "line": 25,
+          "body_sha256": "8d4e70aa5222380df9ab72399134ff71d1daeec58b9bf2fa640703f4bbdddb1c",
+          "body": "  function Executer:_OnItemSpread(message)\n    self:_TryStart(message, true)\n  end\n  \n"
+        }
+      ],
       "status": "pending",
       "reason": "Registration is a candidate, not an active subscription; guard, callback dependencies, configs and downstream events require review."
     }

@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-12T03:25:29.154168+00:00",
+  "created_utc": "2026-10-12T04:11:19.748664+00:00",
   "version_scope": "GH 3.98.10 recovered client snapshot; actual server configuration unconfirmed",
   "status": "not_accepted",
   "scope_limitation": "Two core modules inventoried, not complete operation call closure. Regex candidates are not AST/bytecode semantic proof.",
@@ -12,12 +12,12 @@
     {
       "id": "G2",
       "status": "failed",
-      "finding": "审计原工具只选固定 12 模块。Super Lucky 已找到特效、音效、提示和 GeneratorBoost 消费者，尚未完成这些模块及其调用/监听闭包核销。"
+      "finding": "全库 3415 份恢复源码发现 28 个直接ItemSpread监听注册点；这些消费者的条件、配置、再派发及动态包装链未全核销。GeneratorBoost具体复制算法已补充，但不能据此证明完整闭包。"
     },
     {
       "id": "G3",
       "status": "pending",
-      "finding": "两核心模块的 114 个命名函数缺少持久化逐分支审核证据；名称匹配仅提供检索线索。"
+      "finding": "本轮 22 页选定规则有持久化哈希及说明证据；核心114函数的全量逐分支核销尚未完成。选定规则审核不等于整函数批准。失效证据0项。"
     },
     {
       "id": "G4",
@@ -36,8 +36,8 @@
     },
     {
       "id": "G7",
-      "status": "pending",
-      "finding": "当前审计输入未提供全分支受控案例、原版逐事件/状态/存档差分及差异关闭记录。静态演示不是原版运行证据。"
+      "status": "unavailable",
+      "finding": "恢复源码受控执行 63/63 通过，只验证选定规则；用户确认只有安装包和解包资源，原版事件/状态/存档差分缺少可运行原版环境。全分支验证也未齐备。"
     }
   ],
   "module_evidence": {
@@ -3680,7 +3680,6 @@
         "operations/generator/energy/boost/detail.md",
         "operations/generator/energy/consume/detail.md",
         "operations/generator/energy/cost/detail.md",
-        "operations/generator/events/side_effects/detail.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/chance/load.md",
@@ -4679,7 +4678,8 @@
       "body_sha256": "529b3c449bfa60ebc01f4c8f9ec95d3bef918e0386c587768da9255eee7aae52",
       "document_name_matches": [
         "operations/generator/energy/cost/detail.md",
-        "operations/generator/events/board/detail.md"
+        "operations/generator/events/board/detail.md",
+        "operations/generator/events/side_effects/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -7570,7 +7570,6 @@
         "operations/generator/energy/boost/detail.md",
         "operations/generator/energy/consume/detail.md",
         "operations/generator/energy/cost/detail.md",
-        "operations/generator/events/side_effects/detail.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/chance/load.md",
@@ -9847,85 +9846,1115 @@
       "review_reason": "No persistent per-branch approval with document and test evidence supplied."
     }
   ],
+  "selected_rule_review": {
+    "path": "analysis_output\\logic_recovery\\stage3\\generator_gate_audit\\reviewed_rules.json",
+    "stale_evidence": [],
+    "evidence": {
+      "status": "partial_review_not_acceptance",
+      "reviewed_rule_pages": [
+        {
+          "page": "operations/generator/output/fixed/index.md",
+          "page_sha256": "f98de14a8c2d53127af31e217016f4068cb879a6145c7682d1702e6352eacaaa",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "执行顺序",
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/output/fixed/detail.md",
+          "page_sha256": "e9f87779cbc129806a511311d3de759384868826105d8efe68b3a9e7f41ae117",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 决定使用哪个池",
+            "2. 加载、迁移与配置变化",
+            "3. 抽取及持久化",
+            "4. 随机与边界",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            },
+            {
+              "name": "ItemFixedSpreadModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/9155738fadf853bcd0d59504afdf21f00caad94271007fe8444d26a64d9bf93a/decompiled.lua",
+              "sha256": "5c23fb5fa659f12f2f6bef72b3e6af08de92afd4924621755482bda50d8db4dc"
+            },
+            {
+              "name": "RandomGenerateCodeHelper.lua",
+              "source": "analysis_data/logic_index/lua/decoded/f03d9253b57f82e37f0dea724e5603ea3a62cf5fade257eb08fa80c13e0d7570/decompiled.lua",
+              "sha256": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985"
+            },
+            {
+              "name": "BoardModelHelper.lua",
+              "source": "analysis_data/logic_index/lua/decoded/4908a8d707e3b24699810f84db8fa2a299914a0f6e1aa8ee8a13c6f70e49da67/decompiled.lua",
+              "sha256": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "1e3f3e872dfc7fb2b91b38bd62708b426028502e37307d16ce833647656cfd97"
+          ]
+        },
+        {
+          "page": "operations/generator/lucky/items/smart.md",
+          "page_sha256": "31d7061061da52a0d9677c5bb9165495e3098425053764b92ab5d8c15c78442d",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 开启条件",
+            "2. 决定哪些候选能帮助订单",
+            "3. 从原权重重新计算临时权重",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：Lucky Smart Produce 参数",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "LuckyProduceModel.lua",
+              "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+              "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "a807e266ceb268272dfa22af6172efdcf92c007283829fbc9efdfc39eb67265d"
+          ]
+        },
+        {
+          "page": "operations/generator/lucky/chance/load.md",
+          "page_sha256": "e9a55e454903cf03cc5e6068f62b14f5498b4c5eb939cc57da2415717339eb39",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 装载并建立母体索引",
+            "2. 本次点击选择适用记录",
+            "3. GeneratorBoost 与重新加载",
+            "4. 重装周期机会",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：Lucky 包内配置及活动变体",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "LuckyProduceModel.lua",
+              "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+              "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "79e4173d499d3f10c1b4dc90053dd354d099f466e3d08589216e88c05cd22473"
+          ]
+        },
+        {
+          "page": "operations/generator/lucky/free/generate.md",
+          "page_sha256": "69c239c6600422c95bc906961a3866642dc12e8566779136ddd8880fc5cb6891",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 载入能量段",
+            "2. 消费资源后检查跨段",
+            "3. 在每个新增段内抽取阈值",
+            "4. 按服务器日界重置",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：免费 Lucky 服务器字段",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "LuckyProduceModel.lua",
+              "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+              "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "77e032d6c01ad97d13e664cc830965237752f90505e45454af141d378f3783b6"
+          ]
+        },
+        {
+          "page": "operations/generator/energy/boost/detail.md",
+          "page_sha256": "b171883108ba0922998b341b12ef5b798860c206418e8fb0f3e5cace65f91862",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 预检查最大档",
+            "2. Lucky 路径的历史调整",
+            "3. 普通路径的订单截档",
+            "4. 真正扣能量与母体次数",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：能量增益适用母体",
+            "本逻辑使用的配表在哪里"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": [
+            "49cef9ff41724e32f83220f030afa93c694388043fc42170303dfc7abf456bdb"
+          ]
+        },
+        {
+          "page": "operations/generator/lifecycle/cooldown/detail.md",
+          "page_sha256": "a729b95cbe453a79419773a30f1cb3c9b25abfc9d8324a789d012d14439689f2",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 哪些条件启动计时",
+            "2. 比例与阶段",
+            "3. 到期如何补回",
+            "4. CD Buff 谁可用",
+            "5. 费用、表现与跳时",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "c287119b3c7227f83005aa54aabfe08b070ae0dac438e65e472c291f30cd872a"
+          ]
+        },
+        {
+          "page": "operations/generator/position/auto/detail.md",
+          "page_sha256": "867c4837d0d341c65111311bf3af3dd378bbc9c5ca515c13c8f0484b7ce4aef9",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "点击与自动更新的关系",
+            "无空位的特殊缓存",
+            "自动路径与手动的区别",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "c287119b3c7227f83005aa54aabfe08b070ae0dac438e65e472c291f30cd872a"
+          ]
+        },
+        {
+          "page": "operations/generator/events/board/detail.md",
+          "page_sha256": "1c9b42f21548f1cb4a9fe7bca614cc4d0bfbaaf65069c2e2dea9f1fe359e715d",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 创建与保存先于通知",
+            "2. 通知完成后才写本次日志",
+            "3. 空位与失败边界",
+            "贯穿案例：点击食品袋 105",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "BaseBoardModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce/decompiled.lua",
+              "sha256": "16506a7f62041132200665ce8db3b0b37fed0da5d01fbccb07cad74604c7cd1b"
+            },
+            {
+              "name": "MainBoardModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e/decompiled.lua",
+              "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+            },
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/events/resource/detail.md",
+          "page_sha256": "68c93381af0b7f791f28ae6fced5c1b1a1944dd50912da8daaa43be3d8a0497d",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 次数先处理，再扣实际能量",
+            "2. 属性消耗的实际分流",
+            "3. 请求量和实际量不能混用",
+            "贯穿案例：点击食品袋 105",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "PropertyDataManager.lua",
+              "source": "analysis_data/logic_index/lua/decoded/85cb427a1f2c143832b99c36dfda5efb0df187f4aa68e1566eabc165ea228160/decompiled.lua",
+              "sha256": "7826239807eb344e5c2ab6557b6bf5bcc2a8e2c27c01f47d04650c18561a2b94"
+            },
+            {
+              "name": "EnergyModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/0030230aa205488a410d3c4ff05d57c69ae5138a92c10ec91f0fe2d31966b7ae/decompiled.lua",
+              "sha256": "e2edf1ba0826f23fda910adb89cf6c5811430854055c320e73452dd6287cfddf"
+            },
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/overrides/activity/index.md",
+          "page_sha256": "85a107beae104ab858c43b390aed4107271e71cc29ab1291f1fcefc959730f7a",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "执行顺序",
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/overrides/activity/detail.md",
+          "page_sha256": "620b2fd5619e909376eaa296ee52260b78aa7ccdba13ea3e19a736836182384c",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 支持条件与优先级",
+            "2. 直接目标如何找",
+            "3. 直接目标的费用",
+            "4. 无直接目标：普通结果再降级",
+            "5. 结束与配置边界",
+            "6. 助力从哪里来，以及再次获得会发生什么",
+            "7. Disco 本身的配置字段",
+            "8. 两条路径的结算对照",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：Generator Boost 母体替换配置",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            },
+            {
+              "name": "BoostChargeDiscoBoostHandler.lua",
+              "source": "analysis_data/logic_index/lua/decoded/0632e1008f11ab0e482f1bcc4ae5f3aa1692ccec150be24f7c53c419d42e1fd8/decompiled.lua",
+              "sha256": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "77e0a19e4c73baa2d440354a9555eca8f1d95e4ea7627249b7310f6cc7d6424c"
+          ]
+        },
+        {
+          "page": "operations/generator/events/side_effects/index.md",
+          "page_sha256": "b04b548b39298439da7c72b5dac80659f0bf87357fc3de6365d70297ae336484",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "处理位置与含义",
+            "同一通知还可能推进什么",
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/output/chest/index.md",
+          "page_sha256": "278fb80f689953fb68586e8ae2d5eea836491baee112f073f4ae49da60f9ac73",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "执行顺序",
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/output/chest/detail.md",
+          "page_sha256": "5d15580e2d9f0358cd2fdabd71ba7a62e2d8a404f9a48be7305e34d2b75cd05e",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 输入和库存分配",
+            "2. 按预算处理订单",
+            "3. 不够买目标物品时如何降级",
+            "4. 订单后还有预算",
+            "5. 本次实际使用哪件、如何扣母体",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            },
+            {
+              "name": "RandomGenerateCodeHelper.lua",
+              "source": "analysis_data/logic_index/lua/decoded/f03d9253b57f82e37f0dea724e5603ea3a62cf5fade257eb08fa80c13e0d7570/decompiled.lua",
+              "sha256": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "5ee324f66fde28cf9bcd2dd17147145e1fa88a96d16bce4de6cba95a0424d02b"
+          ]
+        },
+        {
+          "page": "operations/generator/output/smart/index.md",
+          "page_sha256": "ca4eaaf663c07d0979a47faf08447fa3992fda40b670a5621ab52ecc874cff61",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "执行顺序",
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/output/smart/detail.md",
+          "page_sha256": "f45b787e9b77143dd25384db1bd2af05e6a3583a93f7c51736d6c7451fc02309",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 建立可发代码表",
+            "2. 先分库存，再算可合成缺口",
+            "3. 缺口怎样变成补齐分值",
+            "4. 正常补缺与10分宽限",
+            "5. 太贵的需求如何补发",
+            "6. 最后兜底与母体扣分",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            },
+            {
+              "name": "SmartRewardHelper.lua",
+              "source": "analysis_data/logic_index/lua/decoded/552b52a4f039d7bcd8c4590854906a4c840bd3a7492fcab4999a597fc475adcd/decompiled.lua",
+              "sha256": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6"
+            },
+            {
+              "name": "BoardModelHelper.lua",
+              "source": "analysis_data/logic_index/lua/decoded/4908a8d707e3b24699810f84db8fa2a299914a0f6e1aa8ee8a13c6f70e49da67/decompiled.lua",
+              "sha256": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "5ee324f66fde28cf9bcd2dd17147145e1fa88a96d16bce4de6cba95a0424d02b"
+          ]
+        },
+        {
+          "page": "operations/generator/overrides/boost/detail.md",
+          "page_sha256": "004edf36a75ee73646f7c06895f7dfac5dddab70a4c9eeed5a94c8b357bb6ce0",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 决定实际升级几级",
+            "2. FishNet 在升级后再检查",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：生鱼链智能升级开关",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "801f8eff535b17a1113cf7404decc28bc6c492965751d82eb76508728c2727b2"
+          ]
+        },
+        {
+          "page": "operations/generator/lifecycle/count/detail.md",
+          "page_sha256": "40c16cf533c8e006bb04d9081f83f11d9b6211e15bfe54b3e85f06739a84c650",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 本次是否进入扣除",
+            "2. 扣除的优先级",
+            "3. 何时更新计时与保存",
+            "4. 落子后先变换，再销毁，再CD Buff",
+            "贯穿案例：点击食品袋 105",
+            "本页涉及的配表：能量增益次数扣除配置",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "ItemSpread.lua",
+              "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+              "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "2c6483bf65725d6c334da7d9d262ac7b591fa8a5e256012a81c4b6024ab6eb62"
+          ]
+        },
+        {
+          "page": "operations/generator/events/side_effects/detail.md",
+          "page_sha256": "ee34315206e6bf73b9b6be0edc9eed645ad4aff25777fb1315f3d9eb49f8ab32",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "1. 普通双倍资格先算，复制后落",
+            "2. Lucky 追加复制",
+            "3. 记录信息与其它监听",
+            "4. 同一次产出如何计入其它活动",
+            "5. CardItem 的能量阈值与满盘积压",
+            "6. Room、教程与活动视图",
+            "7. 卡片：先检查库存，再决定续用旧链还是抽新链 {#card-flow}",
+            "8. 密室：同一次落子按当前锁定状态分流 {#room-flow}",
+            "9. 动态注册：点击还会给连锁礼包代币 {#token-flow}",
+            "卡片相关完整本地配表",
+            "贯穿案例：点击食品袋 105",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "GeneratorBoostActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+              "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+            },
+            {
+              "name": "MainBoardModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e/decompiled.lua",
+              "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+            },
+            {
+              "name": "ScoreRushModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/1bba4c2f554d666b8c7dce056d3b0ff65caef30d9365aacbb762d3e208a457fb/decompiled.lua",
+              "sha256": "8692388b5051d5e105240b8d852100959b3abf0da2177a78658132b03697fbb3"
+            },
+            {
+              "name": "TriggerPlaneModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/38a4598c59738177922821ee5b030d02b2f99139f0f21a8fbb615ac19520a9e9/decompiled.lua",
+              "sha256": "7ea68ecc803111eceb1f0c793fe4135117fb1b0c05f0ce1b6e5fb7e8375e7a4e"
+            },
+            {
+              "name": "TriggerBoostModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/7f763cdc9149705281060b550f02d212ba0c086407c309bf871f6bb4286473e1/decompiled.lua",
+              "sha256": "2da34e9cc86fcf98ac1a4ebd1555e36ef2bc36ed0e7501e879d569455e7ba8cc"
+            },
+            {
+              "name": "TriggerProgressActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/b930fd4f35600f57f8bebe14a9bf7da7c7e50f3c2143a8108d07e32fe88badfa/decompiled.lua",
+              "sha256": "d8e127eed57ff9bbad3749932af2393db0bfacd4b1ec79a2273da43013eee8d7"
+            },
+            {
+              "name": "HitBricksActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/283530fbb0d114efdd3466a2e9b53a04d5aaf1498617aa8029fb4a153b1aa4e2/decompiled.lua",
+              "sha256": "b7701cf62bb2d94308b8b92d68a94a375449b947bca5ba6ae7ece6ad0e9646d8"
+            },
+            {
+              "name": "AdventureActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/1bcaca42aa70f11ce0663f4ee2a4dcee52e5bc5289b76a18723dc9c89517e6af/decompiled.lua",
+              "sha256": "589b20d356387f53cd22f2ae950c353ad3d822d49d699e2997bff81bedc186ba"
+            },
+            {
+              "name": "ItemClickAcquireModule.lua",
+              "source": "analysis_data/logic_index/lua/decoded/9b77d3a2b7d80030bbc961d24980420a21993bc5b3b335648e53c532f9981f4d/decompiled.lua",
+              "sha256": "f2cad6ccd2ed576343fcbffc781f45c7e5855e9c637520fbcab957b10ca20551"
+            },
+            {
+              "name": "CardItemModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/cc281f0649d072a830a3b132ea60af33f2a2e59f7ffe521cb0ce8cb4bc52c1a6/decompiled.lua",
+              "sha256": "2033b240e2ddc3c38bc40adafc7b07dd705c4d0ef6454897a2f9714521b2a87f"
+            },
+            {
+              "name": "RoomModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/363aafacc07b4054b7974bf8d9ef8686fd65a3985b4c74af1febcf29fd556efc/decompiled.lua",
+              "sha256": "eb8f584602a82290cd21e3a85a1da5728c051697d51abf7187c8bec5345972d8"
+            },
+            {
+              "name": "TokenChainActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/21edf9e951ccd56a5a76abb1e1951565f1a195acf8cdf6e366fbaae2ad1a9861/decompiled.lua",
+              "sha256": "980005d5b661622ccd9f3d9077130056ff48819e2f54f55033091a2675f96a6c"
+            },
+            {
+              "name": "ActivityModuleManager.lua",
+              "source": "analysis_data/logic_index/lua/decoded/ab366a7559669e33e0e7e315033371a174d1e6f5f551a4d9835b9afe6299a7b9/decompiled.lua",
+              "sha256": "056fc5afbf45bf545400c8337d265ca3aa4593e039c317a85a335ebf5df666d4"
+            },
+            {
+              "name": "ConfigModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/338b600ea574dfe383694802831bb7b0c34cd95f752f9a29b4c5b9fcccc258e8/decompiled.lua",
+              "sha256": "4054213ec230882b82be3a3f2e3bb93ef30487b5fbc87e39e7048e219221dd1b"
+            },
+            {
+              "name": "BootRequire.lua",
+              "source": "analysis_data/logic_index/lua/decoded/e36873cda5eaf1b825bd873a199220a679e29f6697d0d0da1bedab302d6aaae0/decompiled.lua",
+              "sha256": "5abe69410c5f5c3b7862bc18e23970d4326a1981991710961e31060ec2f43da0"
+            }
+          ],
+          "preserved_config_block_sha256": []
+        },
+        {
+          "page": "operations/generator/lucky/items/type.md",
+          "page_sha256": "34a8c4c5b937993b6cc1b9d78b86541e6cc5ac0e79d9bfcfec06381dfd4ab753",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "这一步做什么，不会增加什么",
+            "贯穿案例：点击食品袋 105",
+            "本逻辑使用的配表在哪里",
+            "对应源码"
+          ],
+          "source_files": [
+            {
+              "name": "LuckyProduceModel.lua",
+              "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+              "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+            },
+            {
+              "name": "GeneratorBoostActivityModel.lua",
+              "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+              "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+            }
+          ],
+          "preserved_config_block_sha256": [
+            "f8163ee33e7624dfc1c4ff6d1255c81a821aae741b4ac71df8b843d9f0f80d91"
+          ]
+        },
+        {
+          "page": "operations/generator/overrides/boost/index.md",
+          "page_sha256": "ee639fbc5986a1976074ed43aad17b672f568ff19d9d0c85481d4cb5d9c2b431",
+          "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+          "status": "selected_rules_reviewed",
+          "sections": [
+            "贯穿案例：点击食品袋 105"
+          ],
+          "source_files": [],
+          "preserved_config_block_sha256": []
+        }
+      ],
+      "source_execution_evidence": {
+        "path": "source_rule_tests.json",
+        "sha256": "0fde5fa7a6cf31672b6cca08e7019764539d7b9c8c8e6b10e80318c01f2b102a",
+        "passed": 63,
+        "total": 63,
+        "ids": [
+          "random_integer_endpoints",
+          "weighted_boundaries",
+          "smart_disabled_fraction",
+          "smart_enabled_one",
+          "smart_chain_level_boost",
+          "smart_recomputed_no_compounding",
+          "super_no_extra_roll",
+          "free_super_classification",
+          "continuous_type_precedence",
+          "continuous_exact_expiry_allowed",
+          "continuous_other_generator_clears",
+          "continuous_consume_refresh",
+          "triple_skips_second_roll",
+          "double_after_triple_failure",
+          "free_threshold_consumed_once",
+          "daily_reset_preserves_continuous",
+          "boost_history_ceiling",
+          "disposable_times_cost",
+          "explicit_zero_cost_still_counts",
+          "times_clamp_zero",
+          "timer_not_lower_clamped",
+          "timer_zero_duration",
+          "timer_missing_duration_clears",
+          "recovery_storage_insufficient",
+          "recovery_full_storage",
+          "closed_priority",
+          "disposable_empty_silent",
+          "manual_gate_short_circuit",
+          "lucky_skips_ordinary_times",
+          "fixed_pool_depletes_and_refills",
+          "card_exact_multiple_not_enough_comparison",
+          "card_stack_finishes_then_allows_progress",
+          "card_new_chain_excludes_old_then_falls_back",
+          "card_energy_listener_has_no_source_board_filter",
+          "card_generate_notification_advances_tutorial_once",
+          "room_hit_does_not_decrement_total",
+          "room_unlock_rewards_only_one_round_per_event",
+          "room_token_event_precedes_db_write",
+          "click_acquire_consumes_one_chance_for_boost",
+          "token_callback_nil_and_missing_view",
+          "config_suffix_first_exact_filename",
+          "require_replacement_failure_falls_back_default",
+          "require_replacement_success_does_not_load_default",
+          "disco_max_level_right_shift",
+          "disco_zero_closes_before_final_save",
+          "disco_reduces_code_and_index_to_affordable",
+          "disco_energy_and_lucky_gates_skip_services",
+          "fishnet_only_lowers_and_preserves_index",
+          "fixed_same_type_shares_pool_between_instances",
+          "chest_tolerance_builds_more_than_first_item",
+          "chest_old_pick_ceil_overspends",
+          "smart_merge_inventory_not_double_used",
+          "smart_binary_one_result",
+          "smart_equivalent_split_power_of_two",
+          "smart_205_fallback_no_random_when_budget_small",
+          "smart_206_fallback_random_boundary",
+          "boost_finite_extra_pool",
+          "boost_no_space_caches_boolean_qualification",
+          "boost_lucky_listener_excludes_continuous",
+          "order_empty_unlock_fallback_is_uniform_codes",
+          "ordinary_state_saved_before_actual_landing",
+          "disco_acquire_adds_balance_changes_type_and_resets_max",
+          "disco_missing_reward_config_does_not_activate"
+        ],
+        "original_runtime_confirmed": false
+      },
+      "original_runtime_boundary": "User confirmed on 2026-10-12: only installation package and extracted resources; no original client/account traces provided.",
+      "remaining_gates": "Prototype mapping, complete event/call closure, per-branch state/config/doc review and original-client differences remain open."
+    }
+  },
+  "source_rule_execution": {
+    "path": "analysis_output\\logic_recovery\\stage3\\generator_gate_audit\\source_rule_tests.json",
+    "evidence": {
+      "verification_kind": "recovered-source-execution",
+      "original_client_runtime_confirmed": false,
+      "environment": "Lupa Lua 5.3; recovered modules; controlled RNG and explicitly mocked GM/DB services",
+      "source_hashes": {
+        "table": "3fd43bbbeac94f532aab72200ab6431046194f45a111a1cba86148471a45dc56",
+        "math": "6aa5a4af571731d94dbf5df36efbbec6df9573495b907999eceb34bb2e7b621f",
+        "spread": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f",
+        "lucky": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb",
+        "fixed": "5c23fb5fa659f12f2f6bef72b3e6af08de92afd4924621755482bda50d8db4dc",
+        "chest": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985",
+        "smart_reward": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6",
+        "board_helper": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f",
+        "generator_boost": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
+        "disco": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8",
+        "card": "2033b240e2ddc3c38bc40adafc7b07dd705c4d0ef6454897a2f9714521b2a87f",
+        "room": "eb8f584602a82290cd21e3a85a1da5728c051697d51abf7187c8bec5345972d8",
+        "click_acquire": "f2cad6ccd2ed576343fcbffc781f45c7e5855e9c637520fbcab957b10ca20551",
+        "token_chain": "980005d5b661622ccd9f3d9077130056ff48819e2f54f55033091a2675f96a6c",
+        "config_model": "4054213ec230882b82be3a3f2e3bb93ef30487b5fbc87e39e7048e219221dd1b",
+        "boot_require": "5abe69410c5f5c3b7862bc18e23970d4326a1981991710961e31060ec2f43da0"
+      },
+      "limitations": "Selected rules only; mocks do not verify original events, account configs, Unity or native persistence. Not all branches or full operation closure.",
+      "cases": [
+        {
+          "id": "random_integer_endpoints",
+          "status": "passed",
+          "input_and_assertions": "randoms({0,0.999999,0,0.999999}); assert(MathUtil.Random(42)==1); assert(MathUtil.Random(42)==42); assert(MathUtil.Random(3,7)==3); assert(MathUtil.Random(3,7)==7)"
+        },
+        {
+          "id": "weighted_boundaries",
+          "status": "passed",
+          "input_and_assertions": "local p={{Code='a',Weight=35},{Code='b',Weight=2},{Code='c',Weight=5}}; randoms({34/42,35/42,36/42,37/42}); assert(Table.ListWeightSelectOne(p).Code=='a'); assert(Table.ListWeightSelectOne(p).Code=='b'); assert(Table.ListWeightSelectOne(p).Code=='b'); assert(Table.ListWeightSelectOne(p).Code=='c')"
+        },
+        {
+          "id": "smart_disabled_fraction",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=0.25; assert(m:_UseSmartProduce()==false)"
+        },
+        {
+          "id": "smart_enabled_one",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=1; assert(m:_UseSmartProduce()==true)"
+        },
+        {
+          "id": "smart_chain_level_boost",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=3; local a={Item='a',Weight=66,ItemChainLevel=4}; local b={Item='b',Weight=7,ItemChainLevel=5}; local p={lucky_items={a,b},itemChainMap={food={a,b}}}; GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end}; GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {target=99} end; GM.EnergyBoostModel.CanEnergyBoost=function() return true end; GM.EnergyBoostModel.GetEnergyBoostPowerRatio=function() return 1 end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==198 and b.Weight_Smart==7); assert(a.Weight==66 and b.Weight==7)"
+        },
+        {
+          "id": "smart_recomputed_no_compounding",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=2; local a={Item='a',Weight=10,ItemChainLevel=1}; local p={lucky_items={a},itemChainMap={food={a}}}; GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 1 end}; GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {target=1} end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==20); m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==20); GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {} end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==10)"
+        },
+        {
+          "id": "super_no_extra_roll",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); local count=randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},false); assert(code=='205' and t=='SuperLucky' and count()==1)"
+        },
+        {
+          "id": "free_super_classification",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},true); assert(code=='205' and t=='FreeSuperLucky')"
+        },
+        {
+          "id": "continuous_type_precedence",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},true,'TripleLucky1'); assert(t=='TripleLucky1')"
+        },
+        {
+          "id": "continuous_exact_expiry_allowed",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); now=1010; assert(m:_CanContiLuckyProduce('105')==true); now=1011; assert(m:_CanContiLuckyProduce('105')==false); assert(m.m_dbTable:GetValue('clpit','value')==nil)"
+        },
+        {
+          "id": "continuous_other_generator_clears",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); assert(m:_CanContiLuckyProduce('106')==false); assert(m:_CanContiLuckyProduce('105')==false)"
+        },
+        {
+          "id": "continuous_consume_refresh",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); now=1005; assert(m:_PostProcessOnContiLuckyProduce()=='TripleLucky1'); assert(m.m_dbTable:GetValue('clpeet','value')==1015); assert(m:_PostProcessOnContiLuckyProduce()=='TripleLucky2'); assert(m:_CanContiLuckyProduce('105')==false)"
+        },
+        {
+          "id": "triple_skips_second_roll",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{triple_lucky_chance=1000,double_lucky_chance=3000}}; m.m_curLuckyProduceConfigIndex=1; local count=randoms({0.0799}); m:_Try2TriggerContiLuckyProduce('105'); assert(m.m_dbTable:GetValue('clpmc','value')==2 and count()==1)"
+        },
+        {
+          "id": "double_after_triple_failure",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{triple_lucky_chance=1000,double_lucky_chance=3000}}; m.m_curLuckyProduceConfigIndex=1; local count=randoms({0.4499,0.1199}); m:_Try2TriggerContiLuckyProduce('105'); assert(m.m_dbTable:GetValue('clpmc','value')==1 and count()==2)"
+        },
+        {
+          "id": "free_threshold_consumed_once",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_arrFreeLuckyProduceEnergyCostCount={50,80}; m.m_dbTable:Set('ecc','value',60); assert(m:_CanFreeLuckyProduce()); m:_PostProcessOnFreeLuckyProduce(); assert(not m:_CanFreeLuckyProduce()); assert(m.m_dbTable:GetValue('elpec','value')=='80')"
+        },
+        {
+          "id": "daily_reset_preserves_continuous",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{energy_cost={range_entry={0,100}}}}; m.m_dbTable:Set('ecc','value',80); m.m_dbTable:Set('elpec','value','50'); m:_TriggerContiLuckyProduce('105',2); m:_ResetEnergyCost(); assert(m:_GetEnergyCostCount()==0); assert(#m.m_arrFreeLuckyProduceEnergyCostCount==0); assert(m.m_dbTable:GetValue('clpit','value')=='105')"
+        },
+        {
+          "id": "boost_history_ceiling",
+          "status": "passed",
+          "input_and_assertions": "local m=lucky(); GM.ConfigModel.IsServerControlOpen=function() return true end; m.m_cachedBoostRatioAdjustData={0,1,2,2}; assert(m:GetAdjustedMaxEnergyBoostRatio(3)==2); m.m_cachedBoostRatioAdjustData={}; assert(m:GetAdjustedMaxEnergyBoostRatio(3)==3)"
+        },
+        {
+          "id": "disposable_times_cost",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_weightType=1; s:CosetRestNumber(nil,2,'201'); assert(s.m_itemRestNumber==76 and s.m_spreadCount==1)"
+        },
+        {
+          "id": "explicit_zero_cost_still_counts",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s:CosetRestNumber(0,3,'201'); assert(s.m_itemRestNumber==80 and s.m_spreadCount==1)"
+        },
+        {
+          "id": "times_clamp_zero",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_itemRestNumber=2; s:CosetRestNumber(10,0,'201'); assert(s.m_itemRestNumber==0)"
+        },
+        {
+          "id": "timer_not_lower_clamped",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_state=3; s.m_itemRecoveryDuration=30; s.m_startTimer=1010; assert(s:GetTimerAmount()==-1/3); assert(s:GetNextTimerAmount()==-0.3)"
+        },
+        {
+          "id": "timer_zero_duration",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_state=3; s.m_itemRecoveryDuration=0; s.m_startTimer=1000; assert(s:GetTimerAmount()==1)"
+        },
+        {
+          "id": "timer_missing_duration_clears",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_itemModel={GetType=function() return '105' end}; s.m_startTimer=1000; json={encode=function() return '' end}; assert(s:GetTimerAmount()==1 and s.m_startTimer==nil)"
+        },
+        {
+          "id": "recovery_storage_insufficient",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s.m_storageRestNumber=10; s.m_itemRecoveryDuration=30; s.m_startTimer=1000; s.UpdatePerSecond=function() end; s:_UpdateRecoveryState(); assert(s.m_itemRestNumber==80 and s.m_storageRestNumber==0 and s.m_startTimer==1030)"
+        },
+        {
+          "id": "recovery_full_storage",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s.m_storageRestNumber=0; s.m_startTimer=1000; s:_UpdateRecoveryState(); assert(s.m_itemRestNumber==80 and s.m_storageRestNumber==240 and s.m_startTimer==nil)"
+        },
+        {
+          "id": "closed_priority",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_state=1; s.m_itemRestNumber=0; s._NotifySpreadFailed=function(self,r) self.reason=r end; assert(not s:CheckSpreadState()); assert(s.reason==1)"
+        },
+        {
+          "id": "disposable_empty_silent",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s._NotifySpreadFailed=function() error('must not notify') end; assert(not s:CheckSpreadState())"
+        },
+        {
+          "id": "manual_gate_short_circuit",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.CheckSpreadState=function() return false end; s.CheckSpreadPosAndAuto=function() error('must not check position') end; assert(s:_TrySpread()==false)"
+        },
+        {
+          "id": "lucky_skips_ordinary_times",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.CheckLuckyProduce=function() return true,'205','Lucky' end; GM.ActivityManager={GetModel=function() return lucky() end}; GM.ItemDataModel={GetModelConfig=function() return {MergedType='206'} end}; local code,t,ratio=s:GenerateItemCode(1); assert(code=='206' and t=='Lucky' and ratio==1 and s.m_spreadCount==0 and s.m_itemRestNumber==80)"
+        },
+        {
+          "id": "fixed_pool_depletes_and_refills",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_dbTableOld=db(),m_mapFixedSpreadWeight={},m_mapLeftSpreadCount={}},ItemFixedSpreadModel)\n StringUtil={IsNilOrEmpty=function(v) return v==nil or v=='' end}\n ItemUtility={StringToCodeWeightPairs=function(str) local t={} for c,w in str:gmatch('([^,:]+):(%d+)') do t[#t+1]={Code=c,Weight=tonumber(w)} end return t end, CodeWeightPairsToString=function(p) local t={} for _,v in ipairs(p) do t[#t+1]=v.Code..':'..v.Weight end return table.concat(t,',') end}\n GM.ItemDataModel={GetModelConfig=function() return {Spread_Weight_Str='a:2,b:1'} end}\n randoms({0,0,0,0}); assert(m:GenerateItemCode('105')=='a'); assert(m.m_mapLeftSpreadCount['105']==2); assert(m:GenerateItemCode('105')=='a'); assert(m:GenerateItemCode('105')=='b'); assert(m.m_mapLeftSpreadCount['105']==3); assert(m:GenerateItemCode('105')=='a')"
+        },
+        {
+          "id": "card_exact_multiple_not_enough_comparison",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_cacheData={chain='card',isFinish=false}},CardItemModel); local count=4; GM.ItemDataModel={GetChainMaxLevel=function() return 3 end,GetChainId=function() return 'card' end,GetChainLevel=function() return 1 end}; ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; GM.MainBoardModel.GetCodeCountMap=function(_,a,b,c) assert(a and b and c); return {one=count} end; assert(m:CheckCanMergeMaxCardItem()==true); count=5; local ok,n=m:CheckCanMergeMaxCardItem(); assert(ok==false and n==5); count=8; assert(m:CheckCanMergeMaxCardItem()==true); count=0; assert(m:CheckCanMergeMaxCardItem()==false)"
+        },
+        {
+          "id": "card_stack_finishes_then_allows_progress",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_cacheData={chain='card',isFinish=false}},CardItemModel); m.GetState=function() return 'Started' end; m.SaveCacheData=function() end; GM.ConfigModel.GetGeneralConfByType=function() return 1 end; EGeneralConfType.cardItemStack='stack'; GM.ItemDataModel={GetChainMaxLevel=function() return 3 end,GetChainId=function() return 'card' end,GetChainLevel=function() return 1 end}; ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; GM.MainBoardModel.GetCodeCountMap=function() return {one=4} end; assert(m:CanGenerateCardItem()==true and m.m_cacheData.isFinish==true); m.m_cacheData.isFinish=false; GM.ConfigModel.GetGeneralConfByType=function() return 0 end; assert(m:CanGenerateCardItem()==false)"
+        },
+        {
+          "id": "card_new_chain_excludes_old_then_falls_back",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_cacheData={chain='old'},m_mapCardItemTypeConfig={old={ItemChain='old',UnlockLevel=25,Weight=600},new={ItemChain='new',UnlockLevel=25,Weight=1},locked={ItemChain='locked',UnlockLevel=30,Weight=9999}}},CardItemModel); GM.LevelModel={GetCurrentLevel=function() return 25 end}; randoms({0,0}); assert(m:TryGenerateNewChain()=='new'); m.m_mapCardItemTypeConfig.new=nil; assert(m:TryGenerateNewChain()=='old')"
+        },
+        {
+          "id": "card_energy_listener_has_no_source_board_filter",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_energyGenerateNum=10},CardItemModel); local n; m.AddEnergyNum=function(_,v) n=v end; m:OnItemSpread({CostEnergy=true,EnergyBoostRatio=2,Source={}}); assert(n==4); n=nil; m:OnItemSpread({CostEnergy=false,EnergyBoostRatio=2}); assert(n==nil)"
+        },
+        {
+          "id": "card_generate_notification_advances_tutorial_once",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db()},CardItemModel); local calls=0; EEventType={TutorialStartPop='tutorial'}; EventDispatcher={DispatchEvent=function() calls=calls+1 end}; m:OnCardItemGenerate({}); assert(m.m_dbTable:GetValue('isPlayFirstTutorial','value')=='1' and calls==1); m:PopCardItemTutorial(); m:OnCardItemGenerate({}); assert(calls==1)"
+        },
+        {
+          "id": "room_hit_does_not_decrement_total",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_curInfo={roomLockInfo={curClickNum=3,curAddScoreNum=1,chance={3,1}}}},RoomModel); m.SaveActivityData=function() end; local earned; m.AcquireKey=function(_,n) earned=n; return false end; m.event={Call=function() end}; randoms({1,3}); m:TryLockStartAddScore({GetType=function() return '105' end},2); assert(earned==4 and m.m_curInfo.roomLockInfo.curClickNum==3 and m.m_curInfo.roomLockInfo.curAddScoreNum==0); m:TryLockStartAddScore({},0); assert(m.m_curInfo.roomLockInfo.curClickNum==2)"
+        },
+        {
+          "id": "room_unlock_rewards_only_one_round_per_event",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_curInfo={roomUnLockInfo={acuqireTokenInfo={curEnergy=2,energy=3,reward={'first'},round=1}}},m_activityDefinition={BIGetReward='reward'}},RoomModel); m.SaveActivityData=function() end; m.GetRoomGetToolConfig=function() return {energy=2,tools={'next'}} end; m.event={Call=function() end}; local calls=0; RewardApi={AcquireRewardsLogic=function() calls=calls+1 end}; EPropertySource={Give='give'}; EGameMode={Main='main'}; CacheItemType={Type2='cache'}; m:TryUnlockActivityToken({},2); local info=m.m_curInfo.roomUnLockInfo.acuqireTokenInfo; assert(calls==1 and info.curEnergy==3 and info.round==2); m:TryUnlockActivityToken({},0); assert(calls==2 and info.curEnergy==2 and info.round==3)"
+        },
+        {
+          "id": "room_token_event_precedes_db_write",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_activityDefinition={TokenNumberChangedEvent='token'}},RoomModel); m.m_dbTable:Set('activityToken','value',4); EventDispatcher={DispatchEvent=function(_,delta) assert(delta==2 and m:GetTokenNum()==4) end}; m:SetTokenNum(6); assert(m:GetTokenNum()==6)"
+        },
+        {
+          "id": "click_acquire_consumes_one_chance_for_boost",
+          "status": "passed",
+          "input_and_assertions": "local d=db(); local m=setmetatable({},ItemClickAcquireModule); local info={rewardCount=3,conditionCount=1,DBKeys={GenerateRoundTotalCountKey='T',GenerateRoundValidCountKey='V'}}; local model={GetDBTable=function() return d end}; randoms({0,0.9}); assert(m:_GenerateItemType(model,info,2)==4); assert(d:GetValue('T','value')==2 and d:GetValue('V','value')==0); assert(m:_GenerateItemType(model,info,0)==nil and d:GetValue('T','value')==1)"
+        },
+        {
+          "id": "token_callback_nil_and_missing_view",
+          "status": "passed",
+          "input_and_assertions": "BaseActivityModel._OnStateChanged=function() end; EventDispatcher={DispatchEvent=function() end}; ActivityModuleManager={ModuleType={ClickAcquireProperty='click'}}; local callback,condition; GM.ActivityModuleManager={AddRegister=function(_,kind,model,total,valid,cb,keys,cond) assert(total==3 and valid==1 and keys.GenerateRoundTotalCountKey=='TotalClickTimes'); callback=cb; condition=cond end}; local m=setmetatable({m_dbTable=db(),m_tokenConfig={chance={3,1}},m_activityDefinition={StateChangedEvent='state',TokenNumChangedEvent='token'}},TokenChainActivityModel); m.GetState=function() return 'Started' end; m.CanGiveStartToken=function() return false end; m.IsFinished=function() return false end; m.LogActivity=function() end; EBIType={ActivityAddScore='add'}; GM.BIManager={TableToString=function() return '' end}; MainBoardView={GetInstance=function() return nil end}; m.m_dbTable:Set('TokenNum','value',10); m:_OnStateChanged(); assert(condition()); callback(nil,{}); assert(m:GetTokenNum()==10); callback(4,{}); assert(m:GetTokenNum()==14); m.IsFinished=function() return true end; assert(condition()==nil)"
+        },
+        {
+          "id": "config_suffix_first_exact_filename",
+          "status": "passed",
+          "input_and_assertions": "StringUtil.rFindChar=function(s,c) local last; for i=1,#s do if s:sub(i,i)==c then last=i end end; return last end; local m=setmetatable({},ConfigModel); m.GetServerConfig=function() return {{file='CardItemConfig',suffix='_more'},{file='CardItemConfig',suffix='_zero'},{file='CardItemProduceConfig',suffix='_zero'}} end; assert(m:GetReplacesFilePath('Data.Config.CardItemConfig','.')=='Data.Config.CardItemConfig_more'); assert(m:GetReplacesFilePath('Data.Config.CardItemProduceConfig','.')=='Data.Config.CardItemProduceConfig_zero'); assert(m:GetReplacesFilePath('Data.Config.ItemModelConfig','.')=='Data.Config.ItemModelConfig')"
+        },
+        {
+          "id": "require_replacement_failure_falls_back_default",
+          "status": "passed",
+          "input_and_assertions": "local calls={}; require=function(path) calls[#calls+1]=path; if path=='Data.Config.CardItemConfig_more' then error('missing') end; return 'default' end; GM.ConfigModel.GetReplacesFilePath=function(_,path) return path..'_more' end; assert(load(recoveredRequireChunk))(); assert(require('Data.Config.CardItemConfig')=='default'); assert(#calls==2 and calls[1]=='Data.Config.CardItemConfig_more' and calls[2]=='Data.Config.CardItemConfig')"
+        },
+        {
+          "id": "require_replacement_success_does_not_load_default",
+          "status": "passed",
+          "input_and_assertions": "local calls=0; require=function(path) calls=calls+1; assert(path=='Data.Config.CardItemConfig_more'); return 'more' end; GM.ConfigModel.GetReplacesFilePath=function(_,path) return path..'_more' end; assert(load(recoveredRequireChunk))(); assert(require('Data.Config.CardItemConfig')=='more' and calls==1)"
+        },
+        {
+          "id": "disco_max_level_right_shift",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({},BoostChargeDiscoBoostHandler); assert(m:GetMaxLevelByScore(18)==5); assert(m:GetMaxLevelByScore(16)==5); assert(m:GetMaxLevelByScore(15)==4)"
+        },
+        {
+          "id": "disco_zero_closes_before_final_save",
+          "status": "passed",
+          "input_and_assertions": "local trace={}; EEventType={TriggerBoostDiscoUpdate='update'}; EventDispatcher={DispatchEvent=function(_,v) trace[#trace+1]='update:'..v end}; local m=setmetatable({m_cacheData={boostChargeNum=10}},BoostChargeDiscoBoostHandler); m.CloseDisco=function(self) assert(self.m_cacheData.boostChargeNum==0); trace[#trace+1]='close'; self.m_cacheData=nil end; m.SaveCacheData=function() trace[#trace+1]='save' end; m:ReduceDiscoScore(16); assert(table.concat(trace,',')=='update:16,close,save')"
+        },
+        {
+          "id": "disco_reduces_code_and_index_to_affordable",
+          "status": "passed",
+          "input_and_assertions": "OrderModelType={Slot='Slot'}; local m=setmetatable({m_cacheData={boostChargeNum=1}},BoostChargeDiscoBoostHandler); m.CanSupportItem=function() return true end; m.ReduceDiscoScore=function(_,n) assert(n==8) end; GM.ItemDataModel={GetChainLevel=function(_,c) return tonumber(c) end,GetChainId=function() return 'food' end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; GM.MainBoardModel.GetOrderModel=function() return {GetItemCodeConfigMap=function() return {} end} end; local c,b=m:TryUseDiscoItem('105','5',3); assert(c=='4' and b==2)"
+        },
+        {
+          "id": "disco_energy_and_lucky_gates_skip_services",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s.CostEnergy=function() return true end; s.CanSupportBoostDisco=function() return true end; s.m_itemModel={GetBoardModel=function() return {BoardType='Main'} end}; local ok,b,cost=s:CheckEnergy(); assert(ok and b==0 and cost==false); assert(s:CheckLuckyProduce()==false)"
+        },
+        {
+          "id": "fishnet_only_lowers_and_preserves_index",
+          "status": "passed",
+          "input_and_assertions": "ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; ItemChain={RwaFish='fish'}; EGeneralConfType.FishNetProduceSmart='fishnet'; ELogSpreadExtScene={FishNetProduceSmart='scene'}; GM.ConfigModel.IsServerControlOpen=function(_,k) return k=='fishnet' end; GM.ItemDataModel={GetChainId=function() return 'fish' end,GetChainLevel=function(_,c) return tonumber(c) end,GetChainMaxLevel=function() return 6 end,GetChain=function() return {} end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end,GetModelConfig=function(_,c) return {MergedType=tostring(tonumber(c)+1)} end}; local board={GetOrderCodeLackCountMap=function() return {} end,GetCodeCountMap=function() return {['4']=3} end}; local s=spread(); s.m_itemModel={GetBoardModel=function() return board end}; local c,b,scene=s:SpreadCheckEnergyRatioAndCode('3',2,true); assert(c=='4' and b==2 and scene=='scene'); c,b,scene=s:SpreadCheckEnergyRatioAndCode('2',2,true); assert(c=='4' and b==2 and scene==nil)"
+        },
+        {
+          "id": "fixed_same_type_shares_pool_between_instances",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_dbTableOld=db(),m_mapFixedSpreadWeight={},m_mapLeftSpreadCount={}},ItemFixedSpreadModel); ItemUtility={StringToCodeWeightPairs=function(str) local t={} for c,w in str:gmatch('([^,:]+):(%d+)') do t[#t+1]={Code=c,Weight=tonumber(w)} end return t end,CodeWeightPairsToString=function(p) local t={} for _,v in ipairs(p) do t[#t+1]=v.Code..':'..v.Weight end return table.concat(t,',') end}; GM.ItemDataModel={GetModelConfig=function() return {Spread_Weight_Str='a:2,b:1'} end}; GM.ItemFixedSpreadModel=m; local a=spread(); local b=spread(); local item={GetType=function() return '105' end,GetComponent=function() return nil end}; a.m_itemModel=item; b.m_itemModel=item; randoms({0,0}); assert(a:_FixedGenerateItemCode()=='a'); assert(b:_FixedGenerateItemCode()=='a'); assert(m.m_mapLeftSpreadCount['105']==1)"
+        },
+        {
+          "id": "chest_tolerance_builds_more_than_first_item",
+          "status": "passed",
+          "input_and_assertions": "OrderState={Finished='Finished'} OrderModelType={Slot='Slot'}\n local cfg={a={DiffScore=8},b={DiffScore=18}}\n GM.MainBoardModel={GetCodeCountMap=function() return {} end, GetOrderModel=function() return {GetItemCodeConfigMap=function() return cfg end} end, GetOrders=function() return {{GetState=function() return 'Open' end,GetRequirements=function() return {'a','b'} end}} end}\n local codes=RandomGenerateCodeHelper.GenerateChestCustomCodeRule(20,1,false); assert(#codes==2 and codes[1]=='a' and codes[2]=='b')"
+        },
+        {
+          "id": "chest_old_pick_ceil_overspends",
+          "status": "passed",
+          "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end,GetTypeByChainAndLevel=function(_,chain,l) return tostring(l) end}; local cfg={['5']={DiffScore=30},['4']={DiffScore=8}}; local codes={}; local rest=RandomGenerateCodeHelper._PickItems_old({code='5'},cfg,10,codes,1,0,''); assert(rest==-6 and #codes==2 and codes[1]=='4')"
+        },
+        {
+          "id": "smart_merge_inventory_not_double_used",
+          "status": "passed",
+          "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end, GetChainLevel=function() return 5 end, GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local counts={['4']=1}; assert(BoardModelHelper.CalculateLackNumForMergeRequire('5',counts)==8); assert(counts['4']==0); assert(BoardModelHelper.CalculateLackNumForMergeRequire('5',counts)==16)"
+        },
+        {
+          "id": "smart_binary_one_result",
+          "status": "passed",
+          "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; GM.ItemDataModel={GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local data={resultCount=1,isNeedUpFind=true}; local res={}; local rest=SmartRewardHelper.CalculateRewardItems(res,10,'food',20,{['2']=2,['4']=8},{},1,data); assert(#res==1 and res[1]=='2' and rest==18 and data.resultCount==0)"
+        },
+        {
+          "id": "smart_equivalent_split_power_of_two",
+          "status": "passed",
+          "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local code,multi,score=SmartRewardHelper.GetEquivalentCode('5',{['3']=4},{}); assert(code=='3' and multi==4 and score==16)"
+        },
+        {
+          "id": "smart_205_fallback_no_random_when_budget_small",
+          "status": "passed",
+          "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; local calls=randoms({}); local res={}; local rest=SmartRewardHelper.DeliverRandom205_206(res,3,{['205']=8,['206']=16},{resultCount=1}); assert(res[1]=='205' and rest==-5 and calls()==0)"
+        },
+        {
+          "id": "smart_206_fallback_random_boundary",
+          "status": "passed",
+          "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; ItemChain={Bread='Bread'}; GM.ItemDataModel={GetTypeByChainAndLevel=function(_,c,l) return l==5 and '205' or '206' end}; randoms({0.5}); local res={}; local rest=SmartRewardHelper.DeliverRandom205_206(res,9,{['205']=8,['206']=16},{resultCount=1}); assert(res[1]=='206' and rest==-7)"
+        },
+        {
+          "id": "boost_finite_extra_pool",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_extraProduceChance={3,1}},GeneratorBoostActivityModel); randoms({0,0,0}); assert(m:_CanExtraProduceItem()==true); assert(m:_CanExtraProduceItem()==false); assert(m:_CanExtraProduceItem()==false); assert(m.m_dbTable:GetValue('ExtraProduceTotalSpreadCount','value')==0)"
+        },
+        {
+          "id": "boost_no_space_caches_boolean_qualification",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_dbTable=db()},GeneratorBoostActivityModel); GM.MainBoardModel.FindEmptyPositionInSpreadOrderWithNum=function() return {} end; local item={GetPosition=function() return 'P' end}; assert(m:_ExtraProduceItem(item,false)==false); assert(m:IsCachedExtraProduce()); GM.MainBoardModel.FindEmptyPositionInSpreadOrderWithNum=function() return {'P','Q'} end; assert(m:_ExtraProduceItem(item,true)==true); assert(not m:IsCachedExtraProduce())"
+        },
+        {
+          "id": "boost_lucky_listener_excludes_continuous",
+          "status": "passed",
+          "input_and_assertions": "local called=0; local m=setmetatable({},GeneratorBoostActivityModel); m.TryExtraLuckyProduceItem=function() called=called+1 end; local source={GetComponent=function() return {CanSupportGeneratorBoost=function() return true end} end}; m:_OnItemSpread({Source=source,BoardSpreadType='SuperLucky'}); assert(called==1); m:_OnItemSpread({Source=source,BoardSpreadType='TripleLucky1'}); m:_OnItemSpread({Source=source,BoardSpreadType='DoubleLucky'}); assert(called==1)"
+        },
+        {
+          "id": "order_empty_unlock_fallback_is_uniform_codes",
+          "status": "passed",
+          "input_and_assertions": "local s=spread(); s._Log=function() end; s.m_codeWeightPairs={{Code='a',Weight=100},{Code='b',Weight=1}}; GM.ItemDataModel={GetModelConfig=function() return nil end}; randoms({0.75}); assert(s:_TryGenerateItemCodeAll()=='b')"
+        },
+        {
+          "id": "ordinary_state_saved_before_actual_landing",
+          "status": "passed",
+          "input_and_assertions": "local order={}; local s=spread(); s.CheckLuckyProduce=function() return false end; s.CanSupportBoostDisco=function() return false end; s.SafeSpreadItem=function() end; s._GenerateItemCode=function() return 'a',false,1 end; s.SpreadCheckEnergyRatioAndCode=function() return 'a',0 end; s.DealActivityLimit=function(_,c,b,n) return c,b,n end; s.UpdatePerSecond=function() order[#order+1]='timer' end; s.event={Call=function() order[#order+1]='state' end}; s.m_itemModel={GetBoardModel=function() return {SaveItemProperty=function() order[#order+1]='save' end} end}; s:GenerateItemCode(0); assert(table.concat(order,',')=='timer,state,save'); assert(s.m_itemRestNumber==79 and s.m_spreadCount==1)"
+        },
+        {
+          "id": "disco_acquire_adds_balance_changes_type_and_resets_max",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_mapDiscoConfig={new={score=4}},m_cacheData={boostChargeNum=5,MaxChargeNum=20,curProperty='old',canPopUpWindow=false}},BoostChargeDiscoBoostHandler); PROPERTY_TYPE='type'; PROPERTY_COUNT='count'; EPropertySource={Give='give'}; EEventType={TriggerBoostDiscoStarted='start'}; EBIType={TriggerBoostBuffActivation='activation'}; local order={}; m.SaveCacheData=function() order[#order+1]='save' end; EventDispatcher={DispatchEvent=function(e) assert(e=='start'); order[#order+1]='event' end}; GM.ActivityManager={GetModel=function() return nil end}; GM.BIManager={LogAction=function() end,LogAcquire=function() end}; m:Acquire({type='new',count=3},{scene='test',source='give'}); assert(m.m_cacheData.boostChargeNum==17 and m.m_cacheData.MaxChargeNum==17 and m.m_cacheData.curProperty=='new' and m.m_cacheData.canPopUpWindow==true); assert(table.concat(order,',')=='save,event'); m:PopWindowFinished(); assert(m.m_cacheData.canPopUpWindow==false and m.m_cacheData.boostChargeNum==17 and m:IsDiscoDoing())"
+        },
+        {
+          "id": "disco_missing_reward_config_does_not_activate",
+          "status": "passed",
+          "input_and_assertions": "local m=setmetatable({m_mapDiscoConfig={}},BoostChargeDiscoBoostHandler); PROPERTY_TYPE='type'; PROPERTY_COUNT='count'; m.SaveCacheData=function() error('must not save') end; m:Acquire({type='missing',count=3},{}); assert(m.m_cacheData==nil)"
+        }
+      ],
+      "passed": 63,
+      "total": 63
+    }
+  },
+  "event_consumer_inventory": {
+    "path": "analysis_output\\logic_recovery\\stage3\\generator_gate_audit\\event_consumers.json",
+    "registrations": 28,
+    "limitation": "Direct registration candidates only; no complete dynamic closure certificate."
+  },
   "document_hashes": {
-    "operations/generator/index.md": "b659d564e7a4e09e2b140a51bd3bf2b6128432661120bf47d7dfaf72b3c7094a",
-    "operations/generator/energy/index.md": "72ec95af321b7536faa168b07c414e0595eb8cf08ac1e5dfa525fdd709f661e5",
-    "operations/generator/entry/detail.md": "25ec2cd2b92a91e6b8788c178c8402af88a0fabe90ca346c77d64aa5699c5b46",
-    "operations/generator/entry/index.md": "33b1f627fc6076019dfa1469734a4728402d9672db7656d027c54807863c9421",
-    "operations/generator/events/index.md": "f40656c8c85cf71b581bc2c1fb128fa00705b8d25ad7fa7d45099c30de8599f1",
-    "operations/generator/lifecycle/index.md": "17ec9f9d921301ee069173669d14683f246d6b4ac71dfdcac0353e0cf0f6fd55",
-    "operations/generator/lucky/index.md": "0d7241c095cfe66bf102320de6d4025b3ccbccb2d0660bd6c2809ad6978bda33",
-    "operations/generator/output/index.md": "81be886bbccad9dd93b4e3769a80d2fb8e18075bf9f5c3e42e04ed2d179c687f",
-    "operations/generator/overrides/index.md": "7044a899e26cdd0a7ca1d172eb2cba9f6b4d0ef676c5f30e43f39a8404c97ccf",
-    "operations/generator/position/index.md": "8eb99c5c3f2732e9f35cea1729574c840bda4adfe5c44c069397d8a00fdac329",
-    "operations/generator/state/index.md": "0995e6ce25e57c0c7d8b6dbfa689163c223e37824452e4402eb37c98ff34ba1b",
-    "operations/generator/energy/boost/detail.md": "7f152dfaafc41f317f5514b498509ff26a70d4d6603c780b09c313aa2a060917",
-    "operations/generator/energy/boost/index.md": "6a74ed519a133763dff11e9dd44914c29b376a7da0df8a3a4ee49d135299375e",
-    "operations/generator/energy/consume/detail.md": "e3ab90f8ae0e8d7d95bba9f95b2035f7f196a907f716d21e2c49f6ba0c49ebe0",
-    "operations/generator/energy/consume/index.md": "e96e26a04ebceadfee29a1d64e4955a6c3e6ae2110fab44e57569e182f3173ca",
-    "operations/generator/energy/cost/detail.md": "a8587669084eebe2a1f6c30323c399d6cbde4e05a59a84b768d1202e38e77cc2",
-    "operations/generator/energy/cost/index.md": "5797ff3803507e1118c66e0321454c14a86aea42f42f1773aed1c2489f1b728e",
-    "operations/generator/events/board/detail.md": "c1daa29159ed6af9df1236f89f9a0e9ca6fe05f848607152afbcdb130e80f2e8",
-    "operations/generator/events/board/index.md": "7d09c0fe34b95aa96b962e8beb563d30f881ae99ef8d4bf4db6c7fef1662840b",
-    "operations/generator/events/resource/detail.md": "a3be67a77e40eed2bc550e7827d6ace8c1b57c72e48cbf395f9f919a3a7b1b38",
-    "operations/generator/events/resource/index.md": "8a472240f7a93ba3d8fbcbe8b7f1c07e708294fc6f6ca88cded5ad57a28c4bde",
-    "operations/generator/events/side_effects/detail.md": "50a427821cb66a2d4c6941b67d60bf03135d7179c94c553af8c8fee1c45a5db7",
-    "operations/generator/events/side_effects/index.md": "f175a5566435db15f652d9935930926f97137c099f266491a400b8e23f5fbb58",
-    "operations/generator/lifecycle/cooldown/detail.md": "ec2fab091ef15b0a170e62fb5995588bcc9e46429b5c9225b1fd6d34caae8983",
-    "operations/generator/lifecycle/cooldown/index.md": "0bcce29ecd359f9a9abc1ef4a508c264e955d8b78587939030c926077a7061e0",
-    "operations/generator/lifecycle/count/detail.md": "00c77fd57521a328f58eb3a2e532d49592d0fe0c8ca9e17ebceb229f7c289a84",
-    "operations/generator/lifecycle/count/index.md": "cbc3f46780b2d99d6e30251d66a5ad9e8743d6f26b9bb12313b8009dc528355a",
-    "operations/generator/lucky/chance/commit.md": "dc960c678be46944e3b92061ec14bec49aa3fa5a916fa90b7c6ba0ee69dba957",
-    "operations/generator/lucky/chance/index.md": "84e49e060c395d16cac03aec1fea4814f01901420b1c09cb408f08fb64814db1",
-    "operations/generator/lucky/chance/load.md": "a92fe5c223256224176827d61e9a5b54295bef1e6301a97cc9b90754bc7e50b3",
-    "operations/generator/lucky/chance/roll.md": "af4bacfef962a3aa604a7b6094d8a9681b1cfb49e49cb4b55842a316222b7293",
-    "operations/generator/lucky/continuous/consume.md": "b6504550c7866501081e1e42d0ba9449d82d13e460c79110ff9304e6793d03af",
-    "operations/generator/lucky/continuous/index.md": "5040115dbab367451b0bcaf3a8a76426aada7e7633da2dba48f11618607669e7",
-    "operations/generator/lucky/continuous/state.md": "7c0ff3784f09f6b82909ecc71c800547458235e071fcf8231629a7c949b9afbd",
-    "operations/generator/lucky/continuous/trigger.md": "189b02674953d8c3645221292020376a603ae61c73471541892a9b092cc7cfc3",
-    "operations/generator/lucky/free/consume.md": "8f8dbe2b8d41477e74dbacf01e591f5b28c778eeef5d1b78950fbc16acee120b",
-    "operations/generator/lucky/free/generate.md": "329841c5572190fd8b7afb079dda0702ca8c8163d5ca30d64379db9ee7ec7208",
-    "operations/generator/lucky/free/index.md": "221408e70182b43fb907f7b8739c016452e1c64bb6a6c9dfcc20f8d92606fccd",
-    "operations/generator/lucky/items/index.md": "9c2a9b20a39936e18b2ee875f59aa110f6b767c12c4c1286519f3b82b2e4e4a5",
-    "operations/generator/lucky/items/select.md": "1bc7f0fde5f1e68be9276a100131a5b1a13a27271097bd0abb6a863c7e1241b6",
-    "operations/generator/lucky/items/smart.md": "9a7c2e45400fb73ecc19737f093e526e27668ec58877c534773569d2a029d502",
-    "operations/generator/lucky/items/type.md": "68cbe64bd8f11283fe90cae0a83384d94e2a42e5f7f01eca4540e06d28d80c5e",
-    "operations/generator/output/chest/detail.md": "2926f74620b38484bc05e9203370710b8d4e64a86fb1dd1ae1ee3b59b491db5a",
-    "operations/generator/output/chest/index.md": "48d80902549ea75207abc94b28606761ae5692881d54715c255cadc261bb67e3",
-    "operations/generator/output/decremental/detail.md": "0b80f718d594f968ef257651c2699df5292c35bc7da7e8315827468673c3764c",
-    "operations/generator/output/decremental/index.md": "a1e65d71e243f9aedf7a966b3cd6e1db08d9e125a5420eeab3830b44294e9831",
-    "operations/generator/output/fixed/detail.md": "48a062f362532cb9dcd30b2ce3823523f74cf46e5d688135bab433a96569bda2",
-    "operations/generator/output/fixed/index.md": "835427e397a2de68e9e04cafaac7116c6602ea8fe59b16ca6d505d232ef760b5",
-    "operations/generator/output/order/detail.md": "f871068ad61f82749fbc47aff3a732204eac13bbadeae88b1b2f3dc82bb3504a",
-    "operations/generator/output/order/index.md": "684276d054474e54af282c6afde578ee34c73971b5a85f28e55316e0bc79cc2a",
-    "operations/generator/output/smart/detail.md": "95ec144039d0579b4b220542f36f6b17107bd7d25177925a76f307bbd7e208b7",
-    "operations/generator/output/smart/index.md": "ab4f503daefc564c494707a069b797fa3ccd7f32eca66e073dccce16b51ea9a8",
-    "operations/generator/overrides/activity/detail.md": "1d5005ef47273d3e1e34c66e619e4414c307419d70e5b9d57d794f7d50fe30a0",
-    "operations/generator/overrides/activity/index.md": "7affba0c14301d38878bdf8bcb154599a428b4987e61ea2e38951f6db2589bee",
-    "operations/generator/overrides/boost/detail.md": "42443557afab11d54f6d4f5b260938807c625a1cfb636a91d25a77f07fc93c5f",
-    "operations/generator/overrides/boost/index.md": "a14ff7326f116eaf3c1857a46c16e324480c34a1544abe999654a57af62114a7",
-    "operations/generator/overrides/safety/detail.md": "688a9d097c19588d2aa55c7baf95ef1502d6b19b588ec03fa43f571650bf3cdc",
-    "operations/generator/overrides/safety/index.md": "de87b48d82910b87d098da19845c4341ba34674c4d038b9cae2b9cca08c48334",
-    "operations/generator/position/auto/detail.md": "5f6cac6db39bd61ea98b8a7a997f39f1d32eb51aade3d366cb3bde9e6a947ddb",
-    "operations/generator/position/auto/index.md": "5921c57273814a93565a2427d94cbfd93f6119a90837693a4e0833f00f96d587",
-    "operations/generator/position/disposable/detail.md": "7005e927aa19bf589461acc50d288d570eac3610200fba5e96b1333f84798d78",
-    "operations/generator/position/disposable/index.md": "86c0e2094cb117a26cdbea40439b60b3000459a9ace677b5904edea8d514e518",
-    "operations/generator/position/full/detail.md": "7f567eefc961fb46cd8482855b7a1125547f62771d20ec3b6f489eae43a2f00c",
-    "operations/generator/position/full/index.md": "0ff1eea659e3ff1cbf16da6b8f5b6dde3085b985f8b32f0007f956150706e30b",
-    "operations/generator/position/recoverable/detail.md": "f959d01e5e3f25e89d2c18707014038f4139a50ae866365456bd03099d8c68c4",
-    "operations/generator/position/recoverable/index.md": "7091083854467885fabc37e43074a06f25785118cab6d24bc4a9830b2bd52cf3",
-    "operations/generator/state/closed/detail.md": "b1556c091a96c955d115cf54e57380afcce8e2232d596b45b92fbf383099cd5b",
-    "operations/generator/state/closed/index.md": "08104d33faecdf1fc6c2bda5020be849fe456e7acd6b5a89b2cd2a4230bce78b",
-    "operations/generator/state/initializing/detail.md": "974dfac37978a193af30e07a27915015ffd868960a26563ade77ca1e3ad00947",
-    "operations/generator/state/initializing/index.md": "c39999efbd7654b7b0d9161eb1b6038598aa473b5f13a2ab004430b48b47e0b0",
-    "operations/generator/state/model/detail.md": "c20e2ecb627e6829fb33825f081a7b63a7224596827cf2f11f5e7446a3594e40",
-    "operations/generator/state/model/index.md": "d77bbd56e077cf8c4b1573dac8bf6501b263705e0008130bfe001c2e51aec9df",
-    "operations/generator/state/opened/detail.md": "7835ece6b6ae3f6c674885206f70baefaa29cb7712fa8b2411c8a19cd9da2d70",
-    "operations/generator/state/opened/index.md": "94677336fb1665a0df50e28037c71bf04208f10c55a47497c03521bcc00d7e71",
-    "operations/generator/state/opening/detail.md": "fbd0424316f252d94d44c033098430015a3232ed05460ab3db8eef8845705989",
-    "operations/generator/state/opening/index.md": "056910616088c83512a0262d8d9e3f0271f234146e6c76e21c10d78a6bf0f0e7",
-    "operations/generator/state/timing/detail.md": "ac2dddada49e479a787bdfe2a036e2896f40d8f369db2f25c0369ace732cbf2b",
-    "operations/generator/state/timing/index.md": "442ddbcfdc86621d6d12d84e804cc5750866e8eb13ba4465c5374497c12b8457"
+    "operations/generator/index.md": "8b80ec23b6ff2e6eb7fa2e245f6775af184eb60be472260a0eeae8969b1aabfa",
+    "operations/generator/energy/index.md": "fec87f2af888b89cf5b2c39606450fc4ed4bd5c203466cee4dc69a8154b8a6e8",
+    "operations/generator/entry/detail.md": "af9c81fafc0aa109dca99221b9401a3203b3db3b5fb7f4a42f3fde18d4655873",
+    "operations/generator/entry/index.md": "6505e5e883fb2648b18a82bef0b258f14847966238e34ec4d815cc8be453a2c4",
+    "operations/generator/events/index.md": "4bdfa583d4d0346bb15f7dab99a3975b8eacd9b7f07f08df4e468a4b7ef389cd",
+    "operations/generator/lifecycle/index.md": "6d6a23679665886a1bc72aeed9a591c6ff1a622dbaab8a4920b71eedc52b081e",
+    "operations/generator/lucky/index.md": "4caeaf57df608820ffed826fda1410bf6ea720c3f15509e9c3463bf1a7cd1036",
+    "operations/generator/output/index.md": "60a1d105c134cd1007933400cf4f9df4803e2571490cd8e26398a15b4f3f9db9",
+    "operations/generator/overrides/index.md": "565b78fa08b8de89781651fc1e7502ed388cda180df4b5b3438994c06147b7ce",
+    "operations/generator/position/index.md": "7bb62ffdae8e7d8d99ba67b6cf3db9792132faa72c51ccd46f831a2eb34ec377",
+    "operations/generator/state/index.md": "743e9a6dde38ae3ca4cb07f42740024f9c96b348a67a0c360221b3b043a2d4c5",
+    "operations/generator/energy/boost/detail.md": "b171883108ba0922998b341b12ef5b798860c206418e8fb0f3e5cace65f91862",
+    "operations/generator/energy/boost/index.md": "84b7145443ac9b96977ab4e2fa4b323dd876486caab180c0294b0def29651ad9",
+    "operations/generator/energy/consume/detail.md": "3ad317274c4aa3f8a79d93c8ac07616d43cec9d7da9e634190e8d6d14b91eb28",
+    "operations/generator/energy/consume/index.md": "d8dd5866264907a1f0298235c974c9e43889bd2d7fd6874d9618b83ff0fd21e5",
+    "operations/generator/energy/cost/detail.md": "3c243eb93ac45afbb4f5a6b64e3b9fdc55c13326e1530d9dee7a6154a233aa63",
+    "operations/generator/energy/cost/index.md": "905d447b9725624e97e9daf17d74d553cfa0a0c18cf627a6d3e1ade7d244c040",
+    "operations/generator/events/board/detail.md": "1c9b42f21548f1cb4a9fe7bca614cc4d0bfbaaf65069c2e2dea9f1fe359e715d",
+    "operations/generator/events/board/index.md": "bf57a1c053bc6d0998fef4a2a6c30625697532f4250a386e6c7d935b474fa67a",
+    "operations/generator/events/resource/detail.md": "68c93381af0b7f791f28ae6fced5c1b1a1944dd50912da8daaa43be3d8a0497d",
+    "operations/generator/events/resource/index.md": "1b14742610c25349680218f1cf65992f0d9c882738298a024cfec01c90674cb3",
+    "operations/generator/events/side_effects/detail.md": "ee34315206e6bf73b9b6be0edc9eed645ad4aff25777fb1315f3d9eb49f8ab32",
+    "operations/generator/events/side_effects/index.md": "b04b548b39298439da7c72b5dac80659f0bf87357fc3de6365d70297ae336484",
+    "operations/generator/lifecycle/cooldown/detail.md": "a729b95cbe453a79419773a30f1cb3c9b25abfc9d8324a789d012d14439689f2",
+    "operations/generator/lifecycle/cooldown/index.md": "5bc402b78f0928f712141a99f0dfcabd2525e4836fe52555c184dc7ddc2b6c9e",
+    "operations/generator/lifecycle/count/detail.md": "40c16cf533c8e006bb04d9081f83f11d9b6211e15bfe54b3e85f06739a84c650",
+    "operations/generator/lifecycle/count/index.md": "56d707af28849c71da125f7e5ba5ed017ad9720e73911366ed5fecbfbb5cb51e",
+    "operations/generator/lucky/chance/commit.md": "729168ecc90caf6c277a046edac5f0abe4af95b31ceebee0c6310b39bbfdb075",
+    "operations/generator/lucky/chance/index.md": "c26083e1b05a915e79cfbaf65bb28bd1467c096082c21469738724b78adbe027",
+    "operations/generator/lucky/chance/load.md": "e9a55e454903cf03cc5e6068f62b14f5498b4c5eb939cc57da2415717339eb39",
+    "operations/generator/lucky/chance/roll.md": "419379d3e66b15ba2a2fb96f87df9ddfca9a71c2308049adad46f6b8cf032f5b",
+    "operations/generator/lucky/continuous/consume.md": "e3522539ff01d51e86b0ae4712734e6b96fdcd5d2fb19e54ed607126b04a6358",
+    "operations/generator/lucky/continuous/index.md": "64126cc34bde4158ed266c4c1463e1f1bbcba6e526d9d360ee6f26ad8704b244",
+    "operations/generator/lucky/continuous/state.md": "c042ba466798ab3a46c8fe1b97bafe692853b6418d86aa9e7af071d383c9cb83",
+    "operations/generator/lucky/continuous/trigger.md": "8e54716a27d483302e2e9a71dad0e5b9798101e0fb9a9a6e6a842b5f742379fb",
+    "operations/generator/lucky/free/consume.md": "8a54e393766036df6f89f9f40404bd743f4a41e03941b01cb43af03abc544a15",
+    "operations/generator/lucky/free/generate.md": "69c239c6600422c95bc906961a3866642dc12e8566779136ddd8880fc5cb6891",
+    "operations/generator/lucky/free/index.md": "403a4503d2ffcb3214ce822849f7333bc6ebadd26e1d9a05db7cdf6c4d51660e",
+    "operations/generator/lucky/items/index.md": "252e33c7d1a554170e6ff391d1d3def142f46cce49956df8e2a53d0243d67d5f",
+    "operations/generator/lucky/items/select.md": "5bf0fba0f1eea7cb72d7151a42fdafb6d649b62f3863e187b74063d2a4776996",
+    "operations/generator/lucky/items/smart.md": "31d7061061da52a0d9677c5bb9165495e3098425053764b92ab5d8c15c78442d",
+    "operations/generator/lucky/items/type.md": "34a8c4c5b937993b6cc1b9d78b86541e6cc5ac0e79d9bfcfec06381dfd4ab753",
+    "operations/generator/output/chest/detail.md": "5d15580e2d9f0358cd2fdabd71ba7a62e2d8a404f9a48be7305e34d2b75cd05e",
+    "operations/generator/output/chest/index.md": "278fb80f689953fb68586e8ae2d5eea836491baee112f073f4ae49da60f9ac73",
+    "operations/generator/output/decremental/detail.md": "c305a11e0eaca45a156ed6f19ea10f29c4a51e68c7e539b190bded03602e630c",
+    "operations/generator/output/decremental/index.md": "49f6b33eda3c2ea2a1474634ca020c1a12456d6dd3f38a166623e47a4d55d4da",
+    "operations/generator/output/fixed/detail.md": "e9f87779cbc129806a511311d3de759384868826105d8efe68b3a9e7f41ae117",
+    "operations/generator/output/fixed/index.md": "f98de14a8c2d53127af31e217016f4068cb879a6145c7682d1702e6352eacaaa",
+    "operations/generator/output/order/detail.md": "07fd58d1a0019c6fcda2ff947ef9d9c8ad9a49517a0b3657849d2738109ed752",
+    "operations/generator/output/order/index.md": "5b97485d482ad3e7e508f70a1f2a7ed84cb43db9845814b5d56cbbadbac2d81c",
+    "operations/generator/output/smart/detail.md": "f45b787e9b77143dd25384db1bd2af05e6a3583a93f7c51736d6c7451fc02309",
+    "operations/generator/output/smart/index.md": "ca4eaaf663c07d0979a47faf08447fa3992fda40b670a5621ab52ecc874cff61",
+    "operations/generator/overrides/activity/detail.md": "620b2fd5619e909376eaa296ee52260b78aa7ccdba13ea3e19a736836182384c",
+    "operations/generator/overrides/activity/index.md": "85a107beae104ab858c43b390aed4107271e71cc29ab1291f1fcefc959730f7a",
+    "operations/generator/overrides/boost/detail.md": "004edf36a75ee73646f7c06895f7dfac5dddab70a4c9eeed5a94c8b357bb6ce0",
+    "operations/generator/overrides/boost/index.md": "ee639fbc5986a1976074ed43aad17b672f568ff19d9d0c85481d4cb5d9c2b431",
+    "operations/generator/overrides/safety/detail.md": "a0276da543511102738aad33e8c193d6ca27bb77cca9c10e22b5c5bc360d37b8",
+    "operations/generator/overrides/safety/index.md": "4e34595f256c0cd6fd0289b18b6c52aa711dcdf3af2f4a5d77cf764e75e3785b",
+    "operations/generator/position/auto/detail.md": "867c4837d0d341c65111311bf3af3dd378bbc9c5ca515c13c8f0484b7ce4aef9",
+    "operations/generator/position/auto/index.md": "99191406a1a4756a467086942a4d2b4f8d76419356648532d8f7a1015916f182",
+    "operations/generator/position/disposable/detail.md": "a92f17237aef9f5fe06fd515814cea61c3d6ad8975fdff983395169f154c3cb4",
+    "operations/generator/position/disposable/index.md": "8b5749eb3617545adbcf2e872d89ab686f9bfc8635528ce54462233545e4f023",
+    "operations/generator/position/full/detail.md": "d7ac87f0d4897f6dccd19edffeff7194b5f1502cee81df74bb56c94bd495c646",
+    "operations/generator/position/full/index.md": "e63648bf7042c0301132601738dc57fe4a71b278613847c118d2f5bc74ef220e",
+    "operations/generator/position/recoverable/detail.md": "b303106637274a2c5a67baf397959ec46a6b13ca3751af98a79169d1d808b077",
+    "operations/generator/position/recoverable/index.md": "4f521dbae540a1b24d4692932e8dc8067352a0352043edd515d89520995b1777",
+    "operations/generator/state/closed/detail.md": "aaef8f41bb83b08b712b046a3c8c3825d7c21f0d6b3fd3014507f46965ce6cbc",
+    "operations/generator/state/closed/index.md": "4df60c9d8fe208e11f270bb5d4effd81d9be5e96500bcbe547a3ea2b2eb6a542",
+    "operations/generator/state/initializing/detail.md": "51459c9c0ed4c10790b5dac11d721126dc342c3feadcc5b0be4ecb3ae5b9da17",
+    "operations/generator/state/initializing/index.md": "6138a6e44db93a2cdfde4f9658d4db5594ed6322bec6e9de63af57082815f052",
+    "operations/generator/state/model/detail.md": "2c3cece8c20330ef735fbd388fdd1a393e64102eeff8c760ae748c5a459f8ebf",
+    "operations/generator/state/model/index.md": "7569ead97c6892e0ab07fe750e6de21ed9c9cb9decb173dad1d5c41f5fd88ffc",
+    "operations/generator/state/opened/detail.md": "d7bc3f0bffdf88c2ae630eec69b345b90265e8299a2146ae81cba38615e31dc2",
+    "operations/generator/state/opened/index.md": "4bf1fd9c05e5a3acc3d0f5572c523248df7363dcb4d28418d6a7f1fe2c82511b",
+    "operations/generator/state/opening/detail.md": "d1a97bd633d82d0f84e30691bb65d5f1f5ee224a6ec0baf70b708df6cecb8660",
+    "operations/generator/state/opening/index.md": "1f96d56f83eea6da72d32f27915b7c68b087b4d08020b149a1ab8baf450e4b2c",
+    "operations/generator/state/timing/detail.md": "64a8d63661b0f9d8add6573b1bbd0aca5b28961f116e5a2d300c32e5f53771aa",
+    "operations/generator/state/timing/index.md": "9ac7a958dcc608b6cf852a68673f9a3d4b234239244a45c8026107fd647e7949"
   },
   "navigation": {
     "generator_pages": 78,

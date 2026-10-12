@@ -44,9 +44,9 @@ Init 注册 PropertyConsumed 监听；`_OnPropertyConsumed` 只在属性类型�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -63,7 +63,7 @@ Init 注册 PropertyConsumed 监听；`_OnPropertyConsumed` 只在属性类型�
 
 ### 本页服务器配置字段（2 条）
 
-来源：`LuckyProduceModel:_LoadOtherServerConfig`。这些字段不是 LuckyProduceConfig_triple 的包内字段；当前材料只确认读取结构，不能填写账号实际阈值。
+来源：`LuckyProduceModel:_LoadOtherServerConfig`。表中数值是为说明阈值生成而假设的服务器配置，不代表某个账号的真实配置。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 2 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>字段</th><th>用途</th><th>来源</th><th>本地值</th><th>完整记录</th></tr></thead><tbody><tr><td>energy_cost.range_entry</td><td>当前能量消耗区间 [下界,上界]，用于选段与生成阈值</td><td>活动服务器 luckyProduceConfig</td><td>未采集服务器生效配置</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;字段&quot;: &quot;energy_cost.range_entry&quot;,
@@ -79,3 +79,11 @@ Init 注册 PropertyConsumed 监听；`_OnPropertyConsumed` 只在属性类型�
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[LuckyProduceModel.lua](../../../../assets/recovered-source/LuckyProduceModel.lua)
+
+<!-- source-links:end -->

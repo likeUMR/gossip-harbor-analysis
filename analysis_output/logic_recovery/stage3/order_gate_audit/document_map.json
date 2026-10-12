@@ -1,0 +1,536 @@
+[
+  {
+    "id": "ORDER::entry::button",
+    "page": "operations/orders/entry/button/detail.md",
+    "modules": [
+      "Board.View.Order.BaseOrderCell",
+      "Board.View.Order.MainOrderCell"
+    ],
+    "method_selectors": [
+      "OnGoButtonClicked"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::entry::counts",
+    "page": "operations/orders/entry/counts/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Board.BaseActionBoardModel"
+    ],
+    "method_selectors": [
+      "GetCodeCountMap"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::entry::requirements",
+    "page": "operations/orders/entry/requirements/detail.md",
+    "modules": [
+      "Board.Model.Order.BaseOrder"
+    ],
+    "method_selectors": [
+      "Init",
+      "CanDeliver",
+      "UpdateState",
+      "_SetState"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::entry::inventory",
+    "page": "operations/orders/entry/inventory/detail.md",
+    "modules": [
+      "UI.Window.Board.UseInventoryItemConfirmWindow",
+      "Board.View.Order.BaseOrderCell"
+    ],
+    "method_selectors": [
+      "Init",
+      "OnGreenClick",
+      "OnRedClick",
+      "OnCloseFinish"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::entry::special_window",
+    "page": "operations/orders/entry/special_window/detail.md",
+    "modules": [
+      "UI.Window.Order.SpecialOrderItemWindow"
+    ],
+    "method_selectors": [
+      "Init",
+      "OnWindowMaskClicked"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::dispatch::type",
+    "page": "operations/orders/dispatch/type/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrder",
+      "Board.Model.Order.MainOrderDefinition"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "GetType"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::dispatch::special",
+    "page": "operations/orders/dispatch/special/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Order.MainOrderCreator"
+    ],
+    "method_selectors": [
+      "_FinishSpecialOrder",
+      "_BatchRemoveItems",
+      "IsInGeneratorChain",
+      "GetSpecialOrderConfig"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::dispatch::branch",
+    "page": "operations/orders/dispatch/branch/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.ItemModelFactory",
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Board.BaseItemLayerModel",
+      "Common.Utility.Table",
+      "Common.Utility.MathUtil"
+    ],
+    "method_selectors": [
+      "_FinishBranchOrder",
+      "GetCodeAndWeightPairs",
+      "ListWeightSelectOne",
+      "FindEmptyPositionInValidOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::price",
+    "page": "operations/orders/rewards/price/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrder"
+    ],
+    "method_selectors": [
+      "GetPrice",
+      "GetDiffScore",
+      "GetRewards",
+      "_HasGoldReward",
+      "GetFirstRewardPropertyType"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::activity",
+    "page": "operations/orders/rewards/activity/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrder",
+      "Model.Activity.ActivityModuleManager"
+    ],
+    "method_selectors": [
+      "GetRewards",
+      "CanSupportAlbumBuff",
+      "GetRewardsByOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::snapshot",
+    "page": "operations/orders/rewards/snapshot/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrder",
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "method_selectors": [
+      "GetOrderRewardByFinishOrder",
+      "FinishOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::acquire",
+    "page": "operations/orders/rewards/acquire/detail.md",
+    "modules": [
+      "Model.UserData.RewardApi",
+      "Model.RewardHandler.RewardCategoryHandler.ItemRewardCategoryHandler",
+      "Model.RewardHandler.RewardCategoryHandler.PropertyRewardCategoryHandler"
+    ],
+    "method_selectors": [
+      "AcquireRewardsLogic",
+      "SplitRewards",
+      "_AcquireRewardsLogic",
+      "LogicHandle"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::gift_buff",
+    "page": "operations/orders/rewards/gift_buff/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrder",
+      "Board.Model.Order.MainOrderModel"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "GetGiftRewards",
+      "GetBuffRewards",
+      "_AddGiftRewardInfo"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::rewards::smile",
+    "page": "operations/orders/rewards/smile/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "OrderBoost.Model.OrderBoostModel"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "GetAddSmileScoreBySlot",
+      "OnOrderFinished"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::consume::mark",
+    "page": "operations/orders/consume/mark/detail.md",
+    "modules": [
+      "Board.Model.Order.BaseOrder",
+      "Board.Model.Order.MainOrder",
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.SlotOrderModel"
+    ],
+    "method_selectors": [
+      "SetFinished",
+      "GetRewards"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::consume::board",
+    "page": "operations/orders/consume/board/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseBoardModel",
+      "Board.Model.Board.BaseItemLayerModel"
+    ],
+    "method_selectors": [
+      "RemoveOrderRequirementItems",
+      "GetValidPositionIterator",
+      "RemoveItem"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::consume::store",
+    "page": "operations/orders/consume/store/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Board.BaseBoardModel"
+    ],
+    "method_selectors": [
+      "RemoveOrderRequirementItems"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::consume::refresh_failure",
+    "page": "operations/orders/consume/refresh_failure/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.BaseOrder",
+      "Board.Model.Order.BaseOrderModel"
+    ],
+    "method_selectors": [
+      "RemoveOrderRequirementItems",
+      "UpdateOrderState",
+      "UpdateState"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::after::cooking",
+    "page": "operations/orders/after/cooking/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrder",
+      "CookingFrenzy.Model.CookingFrenzyModel",
+      "Common.Utility.Table",
+      "Common.Utility.MathUtil"
+    ],
+    "method_selectors": [
+      "TryAcquireCookingFrenzyReward",
+      "AcquireRandomRewards",
+      "GetCookingFrenzyItemCode",
+      "GetOptionalChessPieces",
+      "GetCurBuffConifgByOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::after::chest_delay",
+    "page": "operations/orders/after/chest_delay/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Model.RewardHandler.RewardCategoryHandler.ChestCustomOrderRewardCategoryHandler",
+      "ChestCustomer.Model.ChestCustomerModel",
+      "Board.Model.RandomGenerateCodeHelper"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "LogicHandle",
+      "AcquireChestCustomOrderReward",
+      "FindNormalRewardConfig",
+      "GenerateChestCustomCodeRule"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::owner_history",
+    "page": "operations/orders/refill/owner_history/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Order.SlotOrderModel",
+      "Common.Utility.MathUtil"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "ResetRepeatWeightDecreaseByChainId",
+      "Random"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::loop",
+    "page": "operations/orders/refill/loop/detail.md",
+    "modules": [
+      "Board.Model.Order.SlotOrderModel",
+      "Board.Model.Order.MainOrderModel"
+    ],
+    "method_selectors": [
+      "FinishOrder",
+      "_TryFillOrders",
+      "_TryCreateOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::priority",
+    "page": "operations/orders/refill/priority/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Order.MainOrderCreator",
+      "Board.Model.Order.MainOrderCreatorRandom"
+    ],
+    "method_selectors": [
+      "_TryCreateOrder",
+      "GetAvatarId",
+      "_AddGiftRewardInfo"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::fixed_return",
+    "page": "operations/orders/refill/fixed_return/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreator",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Board.MainBoardModel"
+    ],
+    "method_selectors": [
+      "MainOrderCreatorFixed.Create",
+      "MainOrderCreatorReturnFreeOrder.CanCreate",
+      "MainOrderCreatorReturnFreeOrder.Create",
+      "GetItemsOnBoard"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::tutorial",
+    "page": "operations/orders/refill/tutorial/detail.md",
+    "modules": [
+      "Board.Model.Order.TutorialOrderModel",
+      "Model.ConfigModel",
+      "Board.Model.Order.MainOrderModel"
+    ],
+    "method_selectors": [
+      "CanCreate",
+      "CreateOrder",
+      "OnOrderFinished",
+      "GetCurOrderAndState",
+      "SetCurOrderAndState",
+      "LateInit"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::continuous",
+    "page": "operations/orders/refill/continuous/detail.md",
+    "modules": [
+      "Contiorders.Model.ContiordersModel",
+      "Board.Model.Order.MainOrderCreatorRandom",
+      "Board.Model.Item.ItemDefinition"
+    ],
+    "method_selectors": [
+      "CanCreateOrder",
+      "CreateOrder",
+      "GetAvailableItems",
+      "FilterByLevel"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::extra",
+    "page": "operations/orders/refill/extra/detail.md",
+    "modules": [
+      "ExtraCustomerActivity.Model.ExtraCustomerActivityModel",
+      "Board.Model.Order.EmptyReqOrder",
+      "Board.Model.Order.MainOrderModel"
+    ],
+    "method_selectors": [
+      "CanCreateOrder",
+      "CreateOrder",
+      "SaveHasActiveOrder",
+      "SaveNeedBanner",
+      "SaveNeedAutoPopTip",
+      "SaveFirstAppear"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::lucky",
+    "page": "operations/orders/refill/lucky/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreator",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Order.MainOrderCreatorRandom",
+      "Common.Utility.Table",
+      "Common.Utility.MathUtil"
+    ],
+    "method_selectors": [
+      "MainOrderCreatorLuckyOrder.CanCreate",
+      "MainOrderCreatorLuckyOrder.Create",
+      "TryLuckyRandom",
+      "LuckRandomRemoveCode"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::random_gate",
+    "page": "operations/orders/refill/random_gate/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreatorRandom",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Order.MainOrderDefinition"
+    ],
+    "method_selectors": [
+      "CanCreate",
+      "GetRandomOrderConfig",
+      "GetRandomOrderConfigBySlot",
+      "GetBaselineAvailableItems"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::candidates",
+    "page": "operations/orders/refill/candidates/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreatorRandom",
+      "Board.Model.Order.MainOrderModel",
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.MainOrderDefinition"
+    ],
+    "method_selectors": [
+      "GetAvailableItems",
+      "_CheckItemCode",
+      "CheckItemCodeProgressUnlock",
+      "CalculateOrderCodeCountData"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::dynamic",
+    "page": "operations/orders/refill/dynamic/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreatorRandom"
+    ],
+    "method_selectors": [
+      "GetSelectedFilterConfig",
+      "GetDynamicMaxLevel",
+      "FilterByLevel"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::draw",
+    "page": "operations/orders/refill/draw/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderCreatorRandom",
+      "Board.Model.Order.MainOrderModel",
+      "Common.Utility.Table",
+      "Common.Utility.MathUtil"
+    ],
+    "method_selectors": [
+      "CreateNormalRandomOrder",
+      "RandomOrderHelper.Create",
+      "DecreaseItemWeight",
+      "MarkSelectedLine",
+      "UpdateMapInfo",
+      "ListWeightSelectOne"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::refill::save",
+    "page": "operations/orders/refill/save/detail.md",
+    "modules": [
+      "Board.Model.Order.MainOrderModel"
+    ],
+    "method_selectors": [
+      "_DBRemoveOrder",
+      "_DBAddOrder",
+      "_DBGetOrders",
+      "_DBGetLastFinishOrder",
+      "SaveRepeatWeightDecreaseInfo"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::finish::sync",
+    "page": "operations/orders/finish/sync/detail.md",
+    "modules": [
+      "Board.Model.Board.MainBoardModel",
+      "Board.Model.Order.SlotOrderModel"
+    ],
+    "method_selectors": [
+      "FinishOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  },
+  {
+    "id": "ORDER::finish::animation",
+    "page": "operations/orders/finish/animation/detail.md",
+    "modules": [
+      "Board.View.MainBoardView",
+      "Board.View.Order.BaseOrderAnimation"
+    ],
+    "method_selectors": [
+      "_OnFinishOrder",
+      "_OnFinishSpecialOrder",
+      "_OnFinishBranchOrder"
+    ],
+    "status": "documented-rules; full-closure-pending"
+  }
+]

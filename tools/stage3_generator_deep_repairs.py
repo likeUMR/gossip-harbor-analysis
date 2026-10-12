@@ -146,7 +146,7 @@ ItemSpread 调用 `GenerateChestCustomCodeRule(m_itemRestNumber,1,false)`。三�
 
 外层只取返回数组第一项；空列表/首项nil时记录错误并用205。再读取实际选中代码的 `DiffScore` 作为costCount；算法内其它候选并不在本次一起落子，也不按整个候选列表总分扣母体。普通后处理中的活动可能把costCount改为0；无活动改写时次数减该分并截到0。
 
-**证据**：ItemSpread `_GenerateItemCode` 的 ChestCustomItem 分支；RandomGenerateCodeHelper `GenerateChestCustomCodeRule` / `_PickItems_old`。本包存在同名模块变体，加载变体需按资源来源核销，不能仅按方法名认定为同一实现。配表完整记录保留在本页下方。
+**证据**：ItemSpread `_GenerateItemCode` 的 ChestCustomItem 分支；RandomGenerateCodeHelper `GenerateChestCustomCodeRule` / `_PickItems_old`。下方源码链接对应本页解释的实现；实际配表分组由配置装载决定。配表完整记录保留在本页下方。
 ''',
 'output/smart/index.md': '''# SmartItem：优先补齐便宜订单的一件物品
 
@@ -260,9 +260,74 @@ Fixed分支调用TryExtraProduceItem：ExtraProduce Buff有效且配置存在才
 
 主普通代码改写链可返回原始代码和FishNet扩展场景；落子日志使用eb、md、st、oriEle、sc等字段，GeneratorBoost活动文本为ab。不能仅凭“Lucky”就写成通用活动进度必加1，各活动消费者有自己的条件；气泡及其它活动监听必须另按实际注册方法追溯。
 
-**证据**：GeneratorBoostActivityModel Init、Destroy、_OnItemSpread、TryExtraProduceItem、_CanExtraProduceItem、_ExtraProduceItem、_ExtraProduceItemSpread、TryExtraLuckyProduceItem、HaveAndCanExtraLuckyProduce及缓存方法。活动配置由账号/活动来源决定，具体开关和周期数不能用假设数代替。
+## 4. 同一次产出如何计入其它活动
+
+以下都是独立监听的条件，不是GeneratorBoost结束后必然逐个执行的固定步骤。CostEnergy是事件中的标志，追加棋子通常不携带true，因此不能把“棋盘多了一件”都算作又消耗了一次Energy。
+
+| 消费者 | 进入条件 | 按最终产物/指数计算什么 |
+|---|---|---|
+| ScoreRush | 比赛未结束、在竞赛中、Source主棋盘且CostEnergy为真；产物链有配置且等级≥配置level | `floor(baseScore×2^(产物等级−level))`，加当前分，派发MyScoreChangedEvent，附Score和New |
+| TriggerPlane | 每日状态Activated、活动Started、CostEnergy为真；链配置存在、等级≥Level | `floor(BaseScore×2^(等级−Level)+0.5)`，调用AddScore；它的取整与ScoreRush不同 |
+| TriggerBoost | Source主棋盘且CostEnergy为真 | 先累计`2^指数`消耗进度，再在活动Started且CanAddScore时按链Level/BaseScore计分，使用`score // 1`，派发TriggerBoostScoreChange并保存 |
+| TriggerProgress | 触发进行中、score_type为chance、Source主棋盘且CostEnergy为真 | 当前点击机会耗尽才重装chance[总数,得分配额]；有配额时抽`1..剩余总数`，命中扣配额，每次总数减1；命中奖励`2^指数` |
+| HitBricks | Source主棋盘、CostEnergy为真、ruleType=0、活动Started、当前主场景且IsActivityOpen | 使用chance_new的有限机会/配额，命中给`2^指数`锤子、保存数量、记录获得并派发HammerGeneratedEvent；未命中返回nil |
+| Adventure | Source主棋盘、CostEnergy为真、活动Started、genByCostEnergy配置存在且genNum非0 | 用chance/genNum有限配额判资格，再按items权重抽Item；沿MergedType按指数升级，缓存到活动棋盘，派发AddAdventureActivityItem消息，不直接占主棋盘一个格 |
+| ItemClickAcquireModule | Source主棋盘、CostEnergy为真；遍历注册model且conditionFunction成立 | 各model自己的DB机会/配额按rewardCount/conditionCount重装；命中返回`2^指数`，未命中返回nil；两者都会传给该model的AddNumFunction，不能假设nil被所有消费者忽略 |
+
+这些字段来自不同活动的加载/注册配置，不能借用Lucky的60/1作为它们的周期参数。多个活动可以针对同一次通知各自成立，资格池、状态和取整规则互不共享。
+
+## 5. CardItem 的能量阈值与满盘积压
+
+CardItem只在CostEnergy严格等于true且m_energyGenerateNum存在时，把`2^指数`交给AddEnergyNum。CanGenerateCardItem要求活动Started，先CheckFinish；能合成最高卡片时停止生成。
+
+累积计数缺省0；本轮阈值未建时，在`当前累计+1..m_energyGenerateNum`之间均匀抽一个整数保存。新增累计记为nextNum。主棋盘满时直接保存nextNum并返回：不生成、不做取模、不重置本轮标记。
+
+有空位且nextNum达到阈值、m_generateByRound为false时，先把本轮生成标记设true；GenerateCardItem有未结束旧chain则复用一级卡片，否则TryGenerateNewChain选择新链、保存chain与isFinish=false，再取一级代码。从母体扩散找空位落卡，logSpread=false、来源CardItem，不携带CostEnergy=true；随后派发CardItemGenerate和卡片获得日志。
+
+nextNum达到周期长度时清本轮标记和阈值，累计保存为`nextNum % 周期长度`。一次AddEnergyNum只经过一次生成判断；即使一次跨过多轮，也不能自行改成while循环补发每轮所有卡片。满盘分支可积压到超出周期长度，再次有空间时依当前源码顺序处理。
+
+## 6. Room、教程与活动视图
+
+Room只有Source主棋盘且CostEnergy为真才响应；Started且m_curInfo存在时按roomState分流：0走锁定状态得钥匙/分数，1走解锁状态活动Token。锁定状态在curClickNum≤0时装填chance；失败分支让curClickNum减1并保存，命中分支只让curAddScoreNum减1，给`ceil(2^指数)`并发AddlockStateScore后保存。源码在该命中分支没有相同的总数减1，不能将所有活动统一复刻为同一套有限池。AcquireKey和解锁状态还各有后续条件。
+
+教程监听根据具体教程步进、目标棋子和活动场景响应：可能结束点击步骤、清强制位置、开始下一步，或仅记录产生Bubble/Temp的标记。活动棋盘视图会用New.GetCode更新自身等级，成功后更新进度、滚动、迷雾和解锁提示，附带延时回调、关闭/对象销毁检查与UI锁。它们不是一律增加主棋盘订单进度。
+
+**证据**：GeneratorBoostActivityModel的注册/复制/缓存方法；上述各模型_OnItemSpread（CardItem为OnItemSpread）、相应计分/产物辅助方法。各活动完整配置、动态注册回调和独立下游条件不能仅凭这份入口说明推定为统一生效；远端当前周期参数仍依账号活动配置。
 ''',
 }
+
+BODIES['overrides/activity/detail.md'] += '''
+## 6. 助力从哪里来，以及再次获得会发生什么
+
+获得Disco奖励时，Acquire先按奖励type查DiscoContentConfig；配置不存在则返回，不增加助力。获得分值=配置score×奖励数量。无缓存时建立boostChargeNum=0、canPopUpWindow=false、MaxChargeNum=0；随后把分值加到当前余额，将MaxChargeNum设为增加后的当前余额，余额大于0时开启弹窗资格，并将curProperty改为本次奖励类型。先保存，再发TriggerBoostDiscoStarted，最后记录激活及获得日志。
+
+因此再次获得不同类型Disco时，剩余助力与新奖励分值相加，但后续difficulty_level使用最新curProperty对应的配置；MaxChargeNum也不是永远累加的历史总收入。PopWindowFinished只清canPopUpWindow并保存，不清助力余额、不关闭玩法。不能把“已看过提示”当成“Disco已结束”。
+
+## 7. Disco 本身的配置字段
+
+| 来源与字段 | 具体含义 | 对本次点击的影响 |
+|---|---|---|
+| 服务器DiscoContentConfig.type | 奖励类型，按type建字典，同键后记录覆盖前记录 | 当前缓存curProperty决定读取哪条 |
+| score | 每单位奖励增加的助力分值 | 获得时乘奖励数量，加入余额；不直接作抽样权重 |
+| difficulty_level | 直接帮助订单的难度阈值 | 与目标DifficultyLevel比较，选择直给目标或特殊母体选物路径 |
+| 订单物品DifficultyLevel | 目标费用难度，缺省用链等级 | 费用为2^(难度−1)，降级后需重新查 |
+| 母体Spread_CostEnergy、Spread_Weight | 支持资格及可产出链 | 前者严格为1；后者用于确定能帮哪些订单链 |
+
+DiscoContentConfig来自服务器，当前资源没有账号生效记录；上表可以确定算法与字段含义，不能给score或difficulty_level填一个原版固定值。下方Generator Boost母体替换表是另一活动对普通母体配置的改写，**不是DiscoContentConfig，也不是Disco的助力费用表**。
+
+## 8. 两条路径的结算对照
+
+| 结算对象 | 找到直接订单目标 | 未找到目标，回退普通选择 |
+|---|---|---|
+| 普通候选池 | 不进入五种普通选择 | 进入实际模式；Fixed等池仍按自己的规则变化 |
+| 普通母体次数 | 不调用普通扣次 | costCount=0，次数不减 |
+| 点击累计 | 不调用CosetRestNumber | CosetRestNumber使累计+1 |
+| 普通Energy | costEnergy=false | costEnergy=false |
+| Disco助力 | 按直接目标DifficultyLevel扣 | 普通结果经降级后按最终难度扣 |
+| 普通状态更新/保存 | 不走普通GenerateItemCode尾部 | 扣次后更新计时、发状态通知并保存 |
+
+这解释了为何“次数没减”仍不足以判断抽样池有没有被消费。具体值对照见下面的食品袋案例：10分助力允许在8分选物宽限内直接产费用16的205，余额截0，普通池仍42；宽限只用于选物，不让助力形成负余额。
+'''
 
 CASES = {
 'lucky/items/type.md': ('主例B抽204，它不在本地Super名单中，因此显示普通Lucky。对照抽到名单中的205时，改用Super表现，物品不多抽、不多发。', '食品袋105本地super_items=[205,304,305]，Lucky权重为204×63、205×10、303×15、304×10、305×2。B整数点50选204，isFree=false且无连续类型→Lucky。独立对照点70选205→SuperLucky；isFree=true则同一205→FreeSuperLucky。有TripleLucky1自定义类型时仍保留TripleLucky1，不再按名单分类。Smart关闭且没有连续自定义类型时，取得Lucky资格后的Super占比(10+10+2)/100=22%；不是额外22%的第二次机会。'),

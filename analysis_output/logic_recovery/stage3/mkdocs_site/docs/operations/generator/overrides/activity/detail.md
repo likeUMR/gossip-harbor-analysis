@@ -32,6 +32,37 @@ CloseDisco记录将关闭的属性、清m_cacheData、保存、异步加载关�
 
 **证据**：ItemSpread CanSupportBoostDisco、CheckEnergy、CheckLuckyProduce、GenerateItemCode、TryGenerateDiscoItem、DealActivityLimit；BoostChargeDiscoBoostHandler LoadServerConfig、CanSupportItem、RefreshGenerateCodeCache、IsCurDiscoSpreadItem、GetMaxLevelByScore、TryGetSpreadItem、TryUseDiscoItem、ReduceDiscoScore、CloseDisco。
 
+## 6. 助力从哪里来，以及再次获得会发生什么
+
+获得Disco奖励时，Acquire先按奖励type查DiscoContentConfig；配置不存在则返回，不增加助力。获得分值=配置score×奖励数量。无缓存时建立boostChargeNum=0、canPopUpWindow=false、MaxChargeNum=0；随后把分值加到当前余额，将MaxChargeNum设为增加后的当前余额，余额大于0时开启弹窗资格，并将curProperty改为本次奖励类型。先保存，再发TriggerBoostDiscoStarted，最后记录激活及获得日志。
+
+因此再次获得不同类型Disco时，剩余助力与新奖励分值相加，但后续difficulty_level使用最新curProperty对应的配置；MaxChargeNum也不是永远累加的历史总收入。PopWindowFinished只清canPopUpWindow并保存，不清助力余额、不关闭玩法。不能把“已看过提示”当成“Disco已结束”。
+
+## 7. Disco 本身的配置字段
+
+| 来源与字段 | 具体含义 | 对本次点击的影响 |
+|---|---|---|
+| 服务器DiscoContentConfig.type | 奖励类型，按type建字典，同键后记录覆盖前记录 | 当前缓存curProperty决定读取哪条 |
+| score | 每单位奖励增加的助力分值 | 获得时乘奖励数量，加入余额；不直接作抽样权重 |
+| difficulty_level | 直接帮助订单的难度阈值 | 与目标DifficultyLevel比较，选择直给目标或特殊母体选物路径 |
+| 订单物品DifficultyLevel | 目标费用难度，缺省用链等级 | 费用为2^(难度−1)，降级后需重新查 |
+| 母体Spread_CostEnergy、Spread_Weight | 支持资格及可产出链 | 前者严格为1；后者用于确定能帮哪些订单链 |
+
+DiscoContentConfig来自服务器，当前资源没有账号生效记录；上表可以确定算法与字段含义，不能给score或difficulty_level填一个原版固定值。下方Generator Boost母体替换表是另一活动对普通母体配置的改写，**不是DiscoContentConfig，也不是Disco的助力费用表**。
+
+## 8. 两条路径的结算对照
+
+| 结算对象 | 找到直接订单目标 | 未找到目标，回退普通选择 |
+|---|---|---|
+| 普通候选池 | 不进入五种普通选择 | 进入实际模式；Fixed等池仍按自己的规则变化 |
+| 普通母体次数 | 不调用普通扣次 | costCount=0，次数不减 |
+| 点击累计 | 不调用CosetRestNumber | CosetRestNumber使累计+1 |
+| 普通Energy | costEnergy=false | costEnergy=false |
+| Disco助力 | 按直接目标DifficultyLevel扣 | 普通结果经降级后按最终难度扣 |
+| 普通状态更新/保存 | 不走普通GenerateItemCode尾部 | 扣次后更新计时、发状态通知并保存 |
+
+这解释了为何“次数没减”仍不足以判断抽样池有没有被消费。具体值对照见下面的食品袋案例：10分助力允许在8分选物宽限内直接产费用16的205，余额截0，普通池仍42；宽限只用于选物，不让助力形成负余额。
+
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -48,9 +79,9 @@ CloseDisco记录将关闭的属性、清m_cacheData、保存、异步加载关�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -2765,3 +2796,11 @@ CloseDisco记录将关闭的属性、清m_cacheData、保存、异步加载关�
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[ItemSpread.lua](../../../../assets/recovered-source/ItemSpread.lua) · [BoostChargeDiscoBoostHandler.lua](../../../../assets/recovered-source/BoostChargeDiscoBoostHandler.lua)
+
+<!-- source-links:end -->

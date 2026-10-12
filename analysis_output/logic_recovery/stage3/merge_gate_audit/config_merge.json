@@ -1,0 +1,58 @@
+[
+  {
+    "module": "Data.Config.ItemModelConfig",
+    "records": 548,
+    "displayed_records": 548,
+    "fields": [
+      "Type",
+      "MergedType",
+      "BubbleChance",
+      "StateCollectionType",
+      "StateCollectionIndex"
+    ],
+    "bytecode_sha256": "bba81572a3706b2fffa65e41af7a16b4304ae36236e72818149fe085b597495d",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_carditem2",
+    "records": 548,
+    "displayed_records": 548,
+    "fields": [
+      "Type",
+      "MergedType",
+      "BubbleChance",
+      "StateCollectionType",
+      "StateCollectionIndex"
+    ],
+    "bytecode_sha256": "e2a1ee82e46c53d133bd56c2f8958fabc6471bdbc7008702ac84d735788cabf6",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_extracust",
+    "records": 550,
+    "displayed_records": 550,
+    "fields": [
+      "Type",
+      "MergedType",
+      "BubbleChance",
+      "StateCollectionType",
+      "StateCollectionIndex"
+    ],
+    "bytecode_sha256": "ba0eb73f6b80d5f2baf864e80afcf90b43525c071327e036aa08dd06ea2f90fb",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_shell",
+    "records": 556,
+    "displayed_records": 556,
+    "fields": [
+      "Type",
+      "MergedType",
+      "BubbleChance",
+      "StateCollectionType",
+      "StateCollectionIndex"
+    ],
+    "bytecode_sha256": "8612d7006c534a7654d4ca659c8fb9740994e217e371da7cca385f7c9335cf6b",
+    "consumer_explanation_status": "pending-full-field-review"
+  }
+]

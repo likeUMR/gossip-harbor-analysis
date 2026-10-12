@@ -18,7 +18,7 @@ def main():
     for path in sorted((ROOT/'analysis_data/logic_index/lua/decoded').glob('*/decompiled.lua')):
         source=path.read_text(encoding='utf-8')
         corpus.append({'sha256':path.parent.name,'readable_sha256':hashlib.sha256(source.encode()).hexdigest()})
-        funcs=list(re.finditer(r'^function ([\w.:]+)\([^\n]*\)',source,re.M))
+        funcs=list(re.finditer(r'^[ \t]*function ([\w.:]+)\([^\n]*\)',source,re.M))
         for match in pattern.finditer(source):
             callback=match[1]
             providers=[]

@@ -1,0 +1,177 @@
+{
+  "cases": [
+    {
+      "case": "closed_before_zero",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "opening_before_zero",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_recoverable",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_disposable_silent",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "zero_recoverable",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "zero_disposable_silent",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "not_opened_whitelist",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "not_less_equal_zero",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "forced_false_overrides_one",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "forced_true_overrides_zero",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "numeric_one_only",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "zero_recovery_not_disposable",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "auto_numeric_one_only",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "free_preserves_popup_flag",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "disco_after_forced_cost",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "lack_flag_before_event",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "enough_returns_max_without_consumption",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "closed_before_zero",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "opening_before_zero",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_recoverable",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_disposable_silent",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "zero_recoverable",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "zero_disposable_silent",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "not_opened_whitelist",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "not_less_equal_zero",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "forced_false_overrides_one",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "forced_true_overrides_zero",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "numeric_one_only",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "zero_recovery_not_disposable",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "auto_numeric_one_only",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "free_preserves_popup_flag",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "disco_after_forced_cost",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "lack_flag_before_event",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "enough_returns_max_without_consumption",
+      "mode": "recovered-source",
+      "status": "passed"
+    }
+  ],
+  "passed": 34,
+  "total": 34,
+  "scope": "Local rules only; unusual-value cases describe exact comparisons, not claimed reachable normal gameplay. Controlled dependencies; not original runtime or persistence validation."
+}

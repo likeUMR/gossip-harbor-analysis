@@ -22,6 +22,26 @@
 
 ---
 
+<!-- reconciliation-reload:start -->
+## Buff切换何时真正清机会池
+
+GeneratorBoost重载Lucky前，要求Lucky模型存在且GetState(true)==Started，否则直接返回。取得当前Buff的Lucky配置后，比较“上次是否使用GeneratorBoost配置”和“当前配置是否非nil”，布尔状态不同才传bUpdate=true；先保存当前布尔标记，再调用Lucky的ReloadFileConfig。两个非nil的Buff配置互相切换时，这个布尔比较仍相同，因此本入口不必然清池。
+
+Lucky重载先_LoadFileConfig，再CalculateItemChainMap，最后仅在bUpdate为真时，遍历新表的generator，依次清幸运剩余份额和总剩余份额。清除方法仅在该类型的进程内键缓存已生成时删除DB行；未生成键时直接返回。新表没有列出的旧母体、免费机会和连续Lucky状态，不由此循环统一删除。
+
+### 两种切换的具体例子
+
+假设母体105当前机会池总剩余8、Lucky剩余2，两种键都已缓存。默认配置切入GeneratorBoost配置，旧标记false、新标记true，bUpdate=true；新表列出105则删除ll_105和tl_105，后续点击按新配置重新建立机会池。若从MoreLuckyProduce切为ExtraLuckyProduce，两份配置都非nil，旧新标记均true，则bUpdate=false；本入口不删除这两行，不能在复刻时无条件重置。若新表只列106，105旧行不在本次清除范围。
+
+<!-- reconciliation-reload:end -->
+
+<!-- reconciliation-buff:start -->
+## 接口切换例子与真实升级路线的区别
+
+上面的非nil配置互切例子用于演示ReloadLuckyProduceConfig的布尔判断，前提是假设两次GetLuckyProduceConfig确实返回不同非nil配置。真实IsBuffActive扫描全部已解锁等级；若MoreLuckyProduce与ExtraLuckyProduce同时生效，GetLuckyProduceConfig仍先选MoreLuckyProduce。因此“解锁ExtraLucky”不等于必定从MoreLucky表切走。默认切入Boost可重置机会池，而某个实际升级是否重置，要按累积Buff、取表优先级和上次布尔标记共同判断。
+
+<!-- reconciliation-buff:end -->
+
 ## 贯穿案例：点击食品袋 105
 
 <div class="case-assets"><img src="../../../../../assets/cases/lucky_item_1.png" alt="Lucky 标记" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
@@ -38,9 +58,9 @@
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -2162,3 +2182,11 @@
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[LuckyProduceModel.lua](../../../../assets/recovered-source/LuckyProduceModel.lua)
+
+<!-- source-links:end -->

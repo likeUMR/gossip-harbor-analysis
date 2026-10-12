@@ -1,0 +1,868 @@
+{
+  "kind": "built-artifact-structure-check",
+  "status": "passed",
+  "pages": [
+    {
+      "source": "operations/generator/energy/boost/detail.md",
+      "html_sha256": "7f1241bd88623549ad78cbf06b312c87f7ab67879ecaa346a4beb973069b5bd7",
+      "title": "能量档、Lucky 历史均值与最终扣费",
+      "paragraphs": 15,
+      "headings": 7,
+      "images": 38,
+      "tables": 2,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/boost/index.md",
+      "html_sha256": "f04416ff685c153cb01f484f254bf6abfca1baa3c7f3ed24115268c1fdd6849b",
+      "title": "基础消耗与增益",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/consume/detail.md",
+      "html_sha256": "1b6de684ec952b1921a6a7e07117d21d805f2635392281d62300db1393de004e",
+      "title": "能量余额比较与扣除",
+      "paragraphs": 13,
+      "headings": 7,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/consume/index.md",
+      "html_sha256": "6853ee0f53240cb961273442c92c4c31172127019e22bbc72ec7509e747a5264",
+      "title": "余额不足与实际扣除",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/cost/detail.md",
+      "html_sha256": "18e4fe80f52f31211da5f4c36ce7b062414a9b993fbe4de6157ab591451ca611",
+      "title": "能量需求布尔值的具体来源",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/cost/index.md",
+      "html_sha256": "1028d3ccc3f57d12cf929c42eb7006fe8cb2f324182835523f63801fe058613c",
+      "title": "是否需要能量",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/energy/index.md",
+      "html_sha256": "d250aa203cd6a82912e6fa8883bb7785f236e69f78fe3816315c2f3872e52b74",
+      "title": "能量检查",
+      "paragraphs": 5,
+      "headings": 1,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/entry/detail.md",
+      "html_sha256": "c5b6b8438be5c2571ac044340c6193358fc6b612cdc5fc362e747a614c4cbc3c",
+      "title": "OnTap、测试十连和通知判定",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/entry/index.md",
+      "html_sha256": "da01d837268250e28b933aa2b2a485b3f49ee94cd10b36d0a567b73bad08fcb6",
+      "title": "点击入口与测试循环",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/board/detail.md",
+      "html_sha256": "a09c2dbe55c5097ba17fb5c6ede36df1f819ff3539c6cdb4536be0a34ab21d51",
+      "title": "棋子创建、订单刷新和落子事件的先后",
+      "paragraphs": 10,
+      "headings": 5,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/board/index.md",
+      "html_sha256": "3fb75a0be97f71fb3edaa99e323aa8fb1b3b5ecfc0565ef8636cc8c0499fe16a",
+      "title": "棋盘事件",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/index.md",
+      "html_sha256": "f10beff0e15795ea2d429f3e410bc60daefe0321f9e0f3d6de9a0af900f7128d",
+      "title": "事件与后续影响",
+      "paragraphs": 7,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/resource/detail.md",
+      "html_sha256": "066a64cdb1141605f5cf6810a5a729540af07c3bc06928179176bec3865d78bd",
+      "title": "能量消耗、资源通知与免费 Lucky 进度",
+      "paragraphs": 11,
+      "headings": 5,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/resource/index.md",
+      "html_sha256": "25bf1e1a3c88721cdc94219b63406d91f3ca720ac1eda061ef79ab1f19edb7cb",
+      "title": "资源与属性事件",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/side_effects/detail.md",
+      "html_sha256": "b22baae82c3b35a7ec8c0a1587790bb1d25f003514a9cd7b20bbf99ed2eeddac",
+      "title": "落子后：追加产出、活动进度与奖励",
+      "paragraphs": 52,
+      "headings": 12,
+      "images": 0,
+      "tables": 7,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/events/side_effects/index.md",
+      "html_sha256": "b2b3400e89e4259bc4474024a4e1cc53b7fc522dacec053fd8521a470c03267f",
+      "title": "后续通知怎样影响下一件物品",
+      "paragraphs": 7,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/index.md",
+      "html_sha256": "1f3c26793465af52c7d7315018aac2d41edef4e3aa5e09325e9e3c2a4d5cc250",
+      "title": "母体点击",
+      "paragraphs": 7,
+      "headings": 3,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lifecycle/cooldown/detail.md",
+      "html_sha256": "aeef9ff44f750c7937cb5a0b9c507392cbe23cae940d651cc7d757eeafc33617",
+      "title": "CD、恢复计时与 Buff 资格",
+      "paragraphs": 13,
+      "headings": 8,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lifecycle/cooldown/index.md",
+      "html_sha256": "315ca2947ede5ab8f7fc036af494ebbc0e53abfeffac70ddaee173730d879453",
+      "title": "CD、加速与恢复",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lifecycle/count/detail.md",
+      "html_sha256": "0e003abedd8f991996ce050a25fc7717e2fc81b963107c845568263a4783ab87",
+      "title": "普通次数扣除、保存与落子后的收尾",
+      "paragraphs": 13,
+      "headings": 8,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lifecycle/count/index.md",
+      "html_sha256": "9d85462c97a4c12dbc208fceaf81e8cd9a0c03896480817f206ff6dda8e545f1",
+      "title": "次数扣除、变换与销毁",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lifecycle/index.md",
+      "html_sha256": "ea1e46c9b8ce5b20efcc8e1db1f92a8b30d3ff9a2eef1f5e690618a022fe0e59",
+      "title": "扣除次数与 CD 恢复",
+      "paragraphs": 3,
+      "headings": 1,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/chance/commit.md",
+      "html_sha256": "9c9930b6d4ad6e59cdad7e11db544fa7e15babd72eafc109d5933426b47ed669",
+      "title": "计数扣减与保存",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/chance/index.md",
+      "html_sha256": "c828b51a62b01fc27b92f477463263c516b15330c49ca1b02671fb9a2ba54988",
+      "title": "Lucky 机会池",
+      "paragraphs": 3,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/chance/load.md",
+      "html_sha256": "7a302ab8b189e462de966623370b15b2cbcad4dc94affba5aef3f79271a3ef7c",
+      "title": "配置选择、预处理与重载",
+      "paragraphs": 22,
+      "headings": 7,
+      "images": 796,
+      "tables": 9,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/chance/roll.md",
+      "html_sha256": "865d7cd1691eb81f51eee633e014a4d1f03ecdaaa653edb7778640770a56bc2e",
+      "title": "随机比较",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/continuous/consume.md",
+      "html_sha256": "0233bde30ab7d3a89f153213daae36d23d338508cab212c78ed54ae665ba14b6",
+      "title": "连续状态消费与失效",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/continuous/index.md",
+      "html_sha256": "f649f0604ecabe146cdc23fb07b3854ea9a6bdb058b6e6b4a9a740ef7e1d4300",
+      "title": "连续 Lucky",
+      "paragraphs": 3,
+      "headings": 1,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/continuous/state.md",
+      "html_sha256": "6ca4a33fdf9a3ca41b39a40e5868f5f5e60eb1008ea3179344d34301280b3b94",
+      "title": "连续状态写入",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/continuous/trigger.md",
+      "html_sha256": "1528af149423f6c9e00402d783023a6b7d4eb402d635c4471f9227ae1f336ea2",
+      "title": "三连/二连触发判断",
+      "paragraphs": 8,
+      "headings": 3,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/free/consume.md",
+      "html_sha256": "eaf7a83c15cb83599fcd8e0c2d9b93c8c4910d92bcd5eb6050e8aae0a3740a42",
+      "title": "阈值检查与消费",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/free/generate.md",
+      "html_sha256": "d77135a12e3a62afb577d2da226226d43109b5ace2ea6be47c7c9092999539bb",
+      "title": "免费阈值的生成、跨段与每日重置",
+      "paragraphs": 17,
+      "headings": 7,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/free/index.md",
+      "html_sha256": "6e84b5b4a7166415b230ffbf4b56accb84d303496721006169736748ba152ebb",
+      "title": "免费 Lucky",
+      "paragraphs": 3,
+      "headings": 1,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/index.md",
+      "html_sha256": "632c7f42552ef8d1140c65d573f627c512b4b1e1681e88018479124be25a92b9",
+      "title": "Lucky 判断",
+      "paragraphs": 9,
+      "headings": 4,
+      "images": 2,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/items/index.md",
+      "html_sha256": "38ed09a8486af8a572f536b34956249b30d9f1005d60b3aa763350b13856716b",
+      "title": "Lucky 物品权重",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/items/select.md",
+      "html_sha256": "eedce0e6033e193ea48a8ead96277886a395b59993b85b12ee85e675120f4aa0",
+      "title": "候选与累计权重选择",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/items/smart.md",
+      "html_sha256": "4273b9cf18e16e6778fcbef9c8180600f4a79fb6335e2208c439fc91a352fe6d",
+      "title": "Smart Produce 权重修正",
+      "paragraphs": 14,
+      "headings": 7,
+      "images": 1,
+      "tables": 2,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/lucky/items/type.md",
+      "html_sha256": "5091452e9bae984dfd15ccc262e61d9191ad3be01859879874e7c85cf798c6d4",
+      "title": "Super Lucky：奖励分类与表现",
+      "paragraphs": 13,
+      "headings": 4,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/chest/detail.md",
+      "html_sha256": "9d0934b253dd3ea7a5ecaa77c87f10c382dde8741ea4ad4198d40d4ebcf27877",
+      "title": "ChestCustomItem 的预算、订单选择和降级算法",
+      "paragraphs": 14,
+      "headings": 8,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/chest/index.md",
+      "html_sha256": "71c36f525cc1b2dffe51df7d9735e6139ec865c00686021b42411263491d4af5",
+      "title": "ChestCustomItem：用剩余分值帮助完成订单",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/decremental/detail.md",
+      "html_sha256": "3dc38f6ca5401327d48beeb512b8ac346cb11149e5cbd7be7f91bb877743d2a0",
+      "title": "Decremental 的具体选择",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/decremental/index.md",
+      "html_sha256": "a6a798fdd3bdc962910158fced16888d894890ebe6023579642f553cbf67be5c",
+      "title": "Decremental",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/disco/detail.md",
+      "html_sha256": "d9ef4072984e886fc8240bd221f143a55e3c9411bb7039e34a7539624e9afcd3",
+      "title": "Disco 的订单选择、助力分值与普通回退",
+      "paragraphs": 26,
+      "headings": 12,
+      "images": 526,
+      "tables": 6,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/disco/index.md",
+      "html_sha256": "b5b7e3846a07c822b568cc99a87c3f65624e09afbb20ae0097c90e5f065c15d9",
+      "title": "Disco：先直接帮助订单，否则改写普通产出",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/fixed/detail.md",
+      "html_sha256": "8457301057c6187bd3bc243b45f521410e6c49f617f1f6523cf209e5777ddcf0",
+      "title": "Fixed 的有限池、共享状态与重装",
+      "paragraphs": 13,
+      "headings": 7,
+      "images": 1,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/fixed/index.md",
+      "html_sha256": "b8a30f5fd6ffb5565ec859c83e7320f580df892cc8ffd98d548f0a4f18bf858e",
+      "title": "Fixed：按类型共享的有限产出池",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/index.md",
+      "html_sha256": "fe1821ddc1f858514d352a51c0f424d3b86ab0ec899466186fdbd6c26d45ba2b",
+      "title": "普通产出",
+      "paragraphs": 9,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/landing/detail.md",
+      "html_sha256": "2fb19b9e03066cb3343758702aecd020896d3e4b3433d49240649511e110256d",
+      "title": "棋子创建、订单刷新和落子事件的先后",
+      "paragraphs": 58,
+      "headings": 16,
+      "images": 0,
+      "tables": 7,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/landing/index.md",
+      "html_sha256": "c9fc7cd909d04866a4054607f075f9ead50bc75a0210bcd2a1ad14547f9c2212",
+      "title": "产物落子",
+      "paragraphs": 5,
+      "headings": 1,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/order/detail.md",
+      "html_sha256": "c9bb71f3d038822763f78a204b090cf853a0d9247a93a07188224b300131d9bd",
+      "title": "OrderItem 的具体选择",
+      "paragraphs": 18,
+      "headings": 4,
+      "images": 164,
+      "tables": 6,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/order/index.md",
+      "html_sha256": "461201de56ddad6db1732e983ba413052785bb85598b591343a8c139bc8bfbca",
+      "title": "OrderItem",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/preparation/detail.md",
+      "html_sha256": "229fabce0a426f9f420580fa07b097aacf1d94a52e02539cb6fd6f1fe8cd3d68",
+      "title": "次数与储备上限修正",
+      "paragraphs": 5,
+      "headings": 4,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/preparation/index.md",
+      "html_sha256": "59e4a522c922a7ad29a9e68b0514f9370319a03d4187c4160794c92a5a773640",
+      "title": "数值安全修正",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/smart/detail.md",
+      "html_sha256": "4cdf826ed83dbb555618bcc0900fc4969dadea3c19c1fddc8e7be017c3cd025d",
+      "title": "SmartItem 的订单缺口、预算与单件限制",
+      "paragraphs": 15,
+      "headings": 9,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/smart/index.md",
+      "html_sha256": "098ee939e0a5adeaed2bf2b109112ec2226fa4c8331788dd3452556072fd2d96",
+      "title": "SmartItem：优先补齐便宜订单的一件物品",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/upgrade/detail.md",
+      "html_sha256": "5d3abde62d07051719fd9cd7bc5b7b704e274aa17c976744243860cb8b74cf3b",
+      "title": "能量链升级与 FishNet 补缺算法",
+      "paragraphs": 15,
+      "headings": 6,
+      "images": 0,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/output/upgrade/index.md",
+      "html_sha256": "7aa7f530c291e85d679eb001fecdb3a9e526e9890a4a26aa4c31b127127dfca9",
+      "title": "能量增益与链升级",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/activity/detail.md",
+      "html_sha256": "96a7e2a23152c170b83646a21feffe8669352baad211f9e3a644c8a4c773c844",
+      "title": "Disco 的订单选择、助力分值与普通回退",
+      "paragraphs": 26,
+      "headings": 12,
+      "images": 526,
+      "tables": 6,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/activity/index.md",
+      "html_sha256": "5d9338b24d2448d03dd1d889f4f6e491bb42d3cd591a29bd5481d4d500496650",
+      "title": "Disco：先直接帮助订单，否则改写普通产出",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/boost/detail.md",
+      "html_sha256": "1d804a561dba40b8af686ddb0ee12991b2d8270a1e0feb0e07affb29b66f343e",
+      "title": "能量链升级与 FishNet 补缺算法",
+      "paragraphs": 15,
+      "headings": 6,
+      "images": 0,
+      "tables": 1,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/boost/index.md",
+      "html_sha256": "6c0a3280217fbb50487118578492e2ee9542ced890a6978597b2e55dc18cb412",
+      "title": "能量增益与链升级",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/index.md",
+      "html_sha256": "04598661578cb01ee5604d14c582c675fb32c1dbfa37937bc33c4e4c105d9898",
+      "title": "产出改写与安全边界",
+      "paragraphs": 4,
+      "headings": 1,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/safety/detail.md",
+      "html_sha256": "f21d79d08062d7630a18587998146bb6b2786cf0737767445e0de2c49293ef28",
+      "title": "次数与储备上限修正",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/overrides/safety/index.md",
+      "html_sha256": "89a135157d9e32678bc2d4750b13466cdc421b700ec7547821aea6e0ce7bcf21",
+      "title": "数值安全修正",
+      "paragraphs": 6,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/auto/detail.md",
+      "html_sha256": "6f31a3dfbc35c9fb168818b100e258817fb5c98d90167cfcccc09994a7de1fcc",
+      "title": "自动母体为何可能忽略点击，以及棋盘满如何缓存",
+      "paragraphs": 9,
+      "headings": 6,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/auto/index.md",
+      "html_sha256": "f83925491e3f4ceafb5b44519fd47eb3576e024b4f63f5b429c4e0220b7e93f7",
+      "title": "自动产出与缓存",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/disposable/detail.md",
+      "html_sha256": "3b2bf65da86a2372a989adb7e1d0a742e0f3145c13c597d810dd3428e3fc7627",
+      "title": "一次性落点的具体算法",
+      "paragraphs": 13,
+      "headings": 10,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/disposable/index.md",
+      "html_sha256": "4f9733234ed0f3749312054ce5b0eacaa287a6a281576a1aee4fe973eb2d24d8",
+      "title": "一次性母体落点",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/full/detail.md",
+      "html_sha256": "df9d2381c446507990be78671ef9419eba6daf6a12b096e5db7e5c5df3459971",
+      "title": "棋盘满失败的具体副作用",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/full/index.md",
+      "html_sha256": "1ccbd71ef22c400fe48dda777a2a46df6b031d46d9f7063385e13d374142e8ef",
+      "title": "棋盘满失败",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/index.md",
+      "html_sha256": "96f6f8815bbd49c82496d5acbd6d22cd4af85b8f61f5705fd0ee597664864869",
+      "title": "空位检查",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/recoverable/detail.md",
+      "html_sha256": "1cf3f1c17a470ce5b4ada495bd8ae896326e909d6d5d9ac0fb5f8b89ed491dda",
+      "title": "可恢复落点的具体算法",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/position/recoverable/index.md",
+      "html_sha256": "df2c47c159c58599ce79fd7b102dc87e2867ffe31c0b0f3caaa28ff065923c73",
+      "title": "可恢复母体落点",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/closed/detail.md",
+      "html_sha256": "b4d51e0e3cd55cba0aa191b26f30d7cbf5e53d2b8f0bb6b2da98201197dc5e65",
+      "title": "关闭状态的具体判定",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/closed/index.md",
+      "html_sha256": "81672df190ba6586c9b062b521faeec0fdd30d9aadaa0975f4fe98b49d8b9b05",
+      "title": "Closed：关闭",
+      "paragraphs": 3,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/index.md",
+      "html_sha256": "c5606a18b09fa969309aa5fb6c5793fb79d7f0f58868f8ecb8bff7a2d2a6ea58",
+      "title": "状态检查",
+      "paragraphs": 6,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/initializing/detail.md",
+      "html_sha256": "581535bd3e56e10bcfd7ebddd67ac6ea06a30fc34f9b46293f6d68655e59f869",
+      "title": "初始化计时的具体判定",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/initializing/index.md",
+      "html_sha256": "5b40a4682710394048edef6ad3c9f21024cb0781b9a68e1e20221b6597a20215",
+      "title": "Initializing：初始化中",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/model/detail.md",
+      "html_sha256": "f34aae8d4342cdd6df63db20b48e3661a03a28e3e21bf76fe2d5fd2bf17f1cb3",
+      "title": "初始化字段、进度公式和恢复重置",
+      "paragraphs": 12,
+      "headings": 3,
+      "images": 989,
+      "tables": 2,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/model/index.md",
+      "html_sha256": "8b0819f04285059c0281ed449a6de7e92b1ddbac58085d2535c7fa519c54c647",
+      "title": "状态字段与计时模型",
+      "paragraphs": 5,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/opened/detail.md",
+      "html_sha256": "7a6a9639f4c987b3edb61fe4f1a4a3ab13967c1c44127093f39df0545194ea58",
+      "title": "可产出状态的具体判定",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/opened/index.md",
+      "html_sha256": "0c7ecfb6ca13fff0410ddd55d934274eeec0faf748dec69c1cdb62f3e6f8602f",
+      "title": "Opened：可产出",
+      "paragraphs": 4,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/opening/detail.md",
+      "html_sha256": "203fe688a0aae9af9531723067bd7ad4d215acd63924fbaf4687aa58f375a971",
+      "title": "开启中状态的具体判定",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/opening/index.md",
+      "html_sha256": "e2e2476428086c9b9628485a51e1b7e5e77ea0227a00095b7389df547e2b371c",
+      "title": "Opening：开启中",
+      "paragraphs": 3,
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/timing/detail.md",
+      "html_sha256": "039e2fbd7e1ae2648be1152dc0ae92edb5f5af82921ce3f29660a2bbaa3057fe",
+      "title": "开启、加速和时间跳过的具体结算",
+      "paragraphs": 4,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    },
+    {
+      "source": "operations/generator/state/timing/index.md",
+      "html_sha256": "1bede05dfe2e90a4f76ccfd51aa4ff3e89400035f9677ce98ea190b74badba5c",
+      "title": "开启、加速与时间跳过",
+      "paragraphs": 5,
+      "headings": 3,
+      "images": 1,
+      "tables": 0,
+      "broken_targets": []
+    }
+  ],
+  "failures": [],
+  "limitations": "Does not validate semantic completeness, active browser state, original-client behavior, or rendering at all viewports."
+}

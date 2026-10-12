@@ -12,7 +12,13 @@
     "smart_reward": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6",
     "board_helper": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f",
     "generator_boost": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
-    "disco": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8"
+    "disco": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8",
+    "card": "2033b240e2ddc3c38bc40adafc7b07dd705c4d0ef6454897a2f9714521b2a87f",
+    "room": "eb8f584602a82290cd21e3a85a1da5728c051697d51abf7187c8bec5345972d8",
+    "click_acquire": "f2cad6ccd2ed576343fcbffc781f45c7e5855e9c637520fbcab957b10ca20551",
+    "token_chain": "980005d5b661622ccd9f3d9077130056ff48819e2f54f55033091a2675f96a6c",
+    "config_model": "4054213ec230882b82be3a3f2e3bb93ef30487b5fbc87e39e7048e219221dd1b",
+    "boot_require": "5abe69410c5f5c3b7862bc18e23970d4326a1981991710961e31060ec2f43da0"
   },
   "limitations": "Selected rules only; mocks do not verify original events, account configs, Unity or native persistence. Not all branches or full operation closure.",
   "cases": [
@@ -167,6 +173,71 @@
       "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_dbTableOld=db(),m_mapFixedSpreadWeight={},m_mapLeftSpreadCount={}},ItemFixedSpreadModel)\n StringUtil={IsNilOrEmpty=function(v) return v==nil or v=='' end}\n ItemUtility={StringToCodeWeightPairs=function(str) local t={} for c,w in str:gmatch('([^,:]+):(%d+)') do t[#t+1]={Code=c,Weight=tonumber(w)} end return t end, CodeWeightPairsToString=function(p) local t={} for _,v in ipairs(p) do t[#t+1]=v.Code..':'..v.Weight end return table.concat(t,',') end}\n GM.ItemDataModel={GetModelConfig=function() return {Spread_Weight_Str='a:2,b:1'} end}\n randoms({0,0,0,0}); assert(m:GenerateItemCode('105')=='a'); assert(m.m_mapLeftSpreadCount['105']==2); assert(m:GenerateItemCode('105')=='a'); assert(m:GenerateItemCode('105')=='b'); assert(m.m_mapLeftSpreadCount['105']==3); assert(m:GenerateItemCode('105')=='a')"
     },
     {
+      "id": "card_exact_multiple_not_enough_comparison",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_cacheData={chain='card',isFinish=false}},CardItemModel); local count=4; GM.ItemDataModel={GetChainMaxLevel=function() return 3 end,GetChainId=function() return 'card' end,GetChainLevel=function() return 1 end}; ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; GM.MainBoardModel.GetCodeCountMap=function(_,a,b,c) assert(a and b and c); return {one=count} end; assert(m:CheckCanMergeMaxCardItem()==true); count=5; local ok,n=m:CheckCanMergeMaxCardItem(); assert(ok==false and n==5); count=8; assert(m:CheckCanMergeMaxCardItem()==true); count=0; assert(m:CheckCanMergeMaxCardItem()==false)"
+    },
+    {
+      "id": "card_stack_finishes_then_allows_progress",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_cacheData={chain='card',isFinish=false}},CardItemModel); m.GetState=function() return 'Started' end; m.SaveCacheData=function() end; GM.ConfigModel.GetGeneralConfByType=function() return 1 end; EGeneralConfType.cardItemStack='stack'; GM.ItemDataModel={GetChainMaxLevel=function() return 3 end,GetChainId=function() return 'card' end,GetChainLevel=function() return 1 end}; ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; GM.MainBoardModel.GetCodeCountMap=function() return {one=4} end; assert(m:CanGenerateCardItem()==true and m.m_cacheData.isFinish==true); m.m_cacheData.isFinish=false; GM.ConfigModel.GetGeneralConfByType=function() return 0 end; assert(m:CanGenerateCardItem()==false)"
+    },
+    {
+      "id": "card_new_chain_excludes_old_then_falls_back",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_cacheData={chain='old'},m_mapCardItemTypeConfig={old={ItemChain='old',UnlockLevel=25,Weight=600},new={ItemChain='new',UnlockLevel=25,Weight=1},locked={ItemChain='locked',UnlockLevel=30,Weight=9999}}},CardItemModel); GM.LevelModel={GetCurrentLevel=function() return 25 end}; randoms({0,0}); assert(m:TryGenerateNewChain()=='new'); m.m_mapCardItemTypeConfig.new=nil; assert(m:TryGenerateNewChain()=='old')"
+    },
+    {
+      "id": "card_energy_listener_has_no_source_board_filter",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_energyGenerateNum=10},CardItemModel); local n; m.AddEnergyNum=function(_,v) n=v end; m:OnItemSpread({CostEnergy=true,EnergyBoostRatio=2,Source={}}); assert(n==4); n=nil; m:OnItemSpread({CostEnergy=false,EnergyBoostRatio=2}); assert(n==nil)"
+    },
+    {
+      "id": "card_generate_notification_advances_tutorial_once",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db()},CardItemModel); local calls=0; EEventType={TutorialStartPop='tutorial'}; EventDispatcher={DispatchEvent=function() calls=calls+1 end}; m:OnCardItemGenerate({}); assert(m.m_dbTable:GetValue('isPlayFirstTutorial','value')=='1' and calls==1); m:PopCardItemTutorial(); m:OnCardItemGenerate({}); assert(calls==1)"
+    },
+    {
+      "id": "room_hit_does_not_decrement_total",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_curInfo={roomLockInfo={curClickNum=3,curAddScoreNum=1,chance={3,1}}}},RoomModel); m.SaveActivityData=function() end; local earned; m.AcquireKey=function(_,n) earned=n; return false end; m.event={Call=function() end}; randoms({1,3}); m:TryLockStartAddScore({GetType=function() return '105' end},2); assert(earned==4 and m.m_curInfo.roomLockInfo.curClickNum==3 and m.m_curInfo.roomLockInfo.curAddScoreNum==0); m:TryLockStartAddScore({},0); assert(m.m_curInfo.roomLockInfo.curClickNum==2)"
+    },
+    {
+      "id": "room_unlock_rewards_only_one_round_per_event",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_curInfo={roomUnLockInfo={acuqireTokenInfo={curEnergy=2,energy=3,reward={'first'},round=1}}},m_activityDefinition={BIGetReward='reward'}},RoomModel); m.SaveActivityData=function() end; m.GetRoomGetToolConfig=function() return {energy=2,tools={'next'}} end; m.event={Call=function() end}; local calls=0; RewardApi={AcquireRewardsLogic=function() calls=calls+1 end}; EPropertySource={Give='give'}; EGameMode={Main='main'}; CacheItemType={Type2='cache'}; m:TryUnlockActivityToken({},2); local info=m.m_curInfo.roomUnLockInfo.acuqireTokenInfo; assert(calls==1 and info.curEnergy==3 and info.round==2); m:TryUnlockActivityToken({},0); assert(calls==2 and info.curEnergy==2 and info.round==3)"
+    },
+    {
+      "id": "room_token_event_precedes_db_write",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_activityDefinition={TokenNumberChangedEvent='token'}},RoomModel); m.m_dbTable:Set('activityToken','value',4); EventDispatcher={DispatchEvent=function(_,delta) assert(delta==2 and m:GetTokenNum()==4) end}; m:SetTokenNum(6); assert(m:GetTokenNum()==6)"
+    },
+    {
+      "id": "click_acquire_consumes_one_chance_for_boost",
+      "status": "passed",
+      "input_and_assertions": "local d=db(); local m=setmetatable({},ItemClickAcquireModule); local info={rewardCount=3,conditionCount=1,DBKeys={GenerateRoundTotalCountKey='T',GenerateRoundValidCountKey='V'}}; local model={GetDBTable=function() return d end}; randoms({0,0.9}); assert(m:_GenerateItemType(model,info,2)==4); assert(d:GetValue('T','value')==2 and d:GetValue('V','value')==0); assert(m:_GenerateItemType(model,info,0)==nil and d:GetValue('T','value')==1)"
+    },
+    {
+      "id": "token_callback_nil_and_missing_view",
+      "status": "passed",
+      "input_and_assertions": "BaseActivityModel._OnStateChanged=function() end; EventDispatcher={DispatchEvent=function() end}; ActivityModuleManager={ModuleType={ClickAcquireProperty='click'}}; local callback,condition; GM.ActivityModuleManager={AddRegister=function(_,kind,model,total,valid,cb,keys,cond) assert(total==3 and valid==1 and keys.GenerateRoundTotalCountKey=='TotalClickTimes'); callback=cb; condition=cond end}; local m=setmetatable({m_dbTable=db(),m_tokenConfig={chance={3,1}},m_activityDefinition={StateChangedEvent='state',TokenNumChangedEvent='token'}},TokenChainActivityModel); m.GetState=function() return 'Started' end; m.CanGiveStartToken=function() return false end; m.IsFinished=function() return false end; m.LogActivity=function() end; EBIType={ActivityAddScore='add'}; GM.BIManager={TableToString=function() return '' end}; MainBoardView={GetInstance=function() return nil end}; m.m_dbTable:Set('TokenNum','value',10); m:_OnStateChanged(); assert(condition()); callback(nil,{}); assert(m:GetTokenNum()==10); callback(4,{}); assert(m:GetTokenNum()==14); m.IsFinished=function() return true end; assert(condition()==nil)"
+    },
+    {
+      "id": "config_suffix_first_exact_filename",
+      "status": "passed",
+      "input_and_assertions": "StringUtil.rFindChar=function(s,c) local last; for i=1,#s do if s:sub(i,i)==c then last=i end end; return last end; local m=setmetatable({},ConfigModel); m.GetServerConfig=function() return {{file='CardItemConfig',suffix='_more'},{file='CardItemConfig',suffix='_zero'},{file='CardItemProduceConfig',suffix='_zero'}} end; assert(m:GetReplacesFilePath('Data.Config.CardItemConfig','.')=='Data.Config.CardItemConfig_more'); assert(m:GetReplacesFilePath('Data.Config.CardItemProduceConfig','.')=='Data.Config.CardItemProduceConfig_zero'); assert(m:GetReplacesFilePath('Data.Config.ItemModelConfig','.')=='Data.Config.ItemModelConfig')"
+    },
+    {
+      "id": "require_replacement_failure_falls_back_default",
+      "status": "passed",
+      "input_and_assertions": "local calls={}; require=function(path) calls[#calls+1]=path; if path=='Data.Config.CardItemConfig_more' then error('missing') end; return 'default' end; GM.ConfigModel.GetReplacesFilePath=function(_,path) return path..'_more' end; assert(load(recoveredRequireChunk))(); assert(require('Data.Config.CardItemConfig')=='default'); assert(#calls==2 and calls[1]=='Data.Config.CardItemConfig_more' and calls[2]=='Data.Config.CardItemConfig')"
+    },
+    {
+      "id": "require_replacement_success_does_not_load_default",
+      "status": "passed",
+      "input_and_assertions": "local calls=0; require=function(path) calls=calls+1; assert(path=='Data.Config.CardItemConfig_more'); return 'more' end; GM.ConfigModel.GetReplacesFilePath=function(_,path) return path..'_more' end; assert(load(recoveredRequireChunk))(); assert(require('Data.Config.CardItemConfig')=='more' and calls==1)"
+    },
+    {
       "id": "disco_max_level_right_shift",
       "status": "passed",
       "input_and_assertions": "local m=setmetatable({},BoostChargeDiscoBoostHandler); assert(m:GetMaxLevelByScore(18)==5); assert(m:GetMaxLevelByScore(16)==5); assert(m:GetMaxLevelByScore(15)==4)"
@@ -255,8 +326,18 @@
       "id": "ordinary_state_saved_before_actual_landing",
       "status": "passed",
       "input_and_assertions": "local order={}; local s=spread(); s.CheckLuckyProduce=function() return false end; s.CanSupportBoostDisco=function() return false end; s.SafeSpreadItem=function() end; s._GenerateItemCode=function() return 'a',false,1 end; s.SpreadCheckEnergyRatioAndCode=function() return 'a',0 end; s.DealActivityLimit=function(_,c,b,n) return c,b,n end; s.UpdatePerSecond=function() order[#order+1]='timer' end; s.event={Call=function() order[#order+1]='state' end}; s.m_itemModel={GetBoardModel=function() return {SaveItemProperty=function() order[#order+1]='save' end} end}; s:GenerateItemCode(0); assert(table.concat(order,',')=='timer,state,save'); assert(s.m_itemRestNumber==79 and s.m_spreadCount==1)"
+    },
+    {
+      "id": "disco_acquire_adds_balance_changes_type_and_resets_max",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_mapDiscoConfig={new={score=4}},m_cacheData={boostChargeNum=5,MaxChargeNum=20,curProperty='old',canPopUpWindow=false}},BoostChargeDiscoBoostHandler); PROPERTY_TYPE='type'; PROPERTY_COUNT='count'; EPropertySource={Give='give'}; EEventType={TriggerBoostDiscoStarted='start'}; EBIType={TriggerBoostBuffActivation='activation'}; local order={}; m.SaveCacheData=function() order[#order+1]='save' end; EventDispatcher={DispatchEvent=function(e) assert(e=='start'); order[#order+1]='event' end}; GM.ActivityManager={GetModel=function() return nil end}; GM.BIManager={LogAction=function() end,LogAcquire=function() end}; m:Acquire({type='new',count=3},{scene='test',source='give'}); assert(m.m_cacheData.boostChargeNum==17 and m.m_cacheData.MaxChargeNum==17 and m.m_cacheData.curProperty=='new' and m.m_cacheData.canPopUpWindow==true); assert(table.concat(order,',')=='save,event'); m:PopWindowFinished(); assert(m.m_cacheData.canPopUpWindow==false and m.m_cacheData.boostChargeNum==17 and m:IsDiscoDoing())"
+    },
+    {
+      "id": "disco_missing_reward_config_does_not_activate",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_mapDiscoConfig={}},BoostChargeDiscoBoostHandler); PROPERTY_TYPE='type'; PROPERTY_COUNT='count'; m.SaveCacheData=function() error('must not save') end; m:Acquire({type='missing',count=3},{}); assert(m.m_cacheData==nil)"
     }
   ],
-  "passed": 48,
-  "total": 48
+  "passed": 63,
+  "total": 63
 }

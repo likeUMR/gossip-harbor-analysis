@@ -3,6 +3,24 @@
 `Init` 先深拷贝 `Spread_Weight`，再把次数和储备初始化为各自最大值。`Spread_InitDuration` 非空时状态为 `Initializing` 并立即 `UpdatePerSecond`；否则 `Spread_OpenDuration` 非空时状态为 `Closed`；否则直接 `Opened`。教程强制时长只对原本存在的 init/open/item-recovery/storage-recovery 字段替换。计时进度由 `elapsed = serverTime - m_startTimer`、`amount=min(elapsed/duration,1)` 得到；没有 duration 时记录完整字段诊断并把起点清空，duration 为 0 直接视为完成。`GetTimerDuration` 在 Initializing/Opening 读取对应阶段时长，在 Opened 依据 `m_storageRestNumber==0` 选择储备恢复或单轮恢复。完成后 `_UpdateRecoveryState` 要么转为 Opened，要么补满次数并扣除储备；储备耗尽时把起点推进一个 item recovery duration 再递归重算。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
+<!-- reconciliation-persistence:start -->
+## 存档如何恢复当前母体
+
+主棋盘继承 BaseActionBoardModel；`SaveItemProperty` 调用 ItemManager:SetItem，不是 BaseBoardModel 的空实现。同步数据结束时，ItemManager 逐行读取 Item 表，经 ItemModelFactory.CreateWithData 重建母体。先 CreateWithCode 按当前配置创建对象和组件，再覆盖存档状态；不是只保存类型，重新登录就补满次数。
+
+| 实例字段 | 存档列 | 恢复方法 |
+| --- | --- | --- |
+| m_state | spreadState | 原样覆盖；无默认状态替代 |
+| m_startTimer | spreadStartTimer | 原样覆盖；缺字段成为nil |
+| m_itemRestNumber | spreadItemRestNumber | 原样覆盖，不自动补满 |
+| m_storageRestNumber | spreadStorageRestNumber | 原样覆盖，不自动补满 |
+| m_spreadCount | spreadCount | 缺值才用0 |
+| m_codeWeightPairs | spreadCodeWeightPairs | 解析存档字符串，覆盖配置初始池 |
+
+如果按代码创建对象失败，工厂返回nil；ItemManager记ItemNotFound并删除该存档行。主棋盘成功恢复后标记棋子类型已解锁。恢复函数本身没有重新推进冷却；时间推进由随后UpdatePerSecond处理。当前配置的上限、时长和权重模式仍来自创建过程，存档只恢复上表的运行值。
+
+<!-- reconciliation-persistence:end -->
+
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -21,9 +39,9 @@
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 

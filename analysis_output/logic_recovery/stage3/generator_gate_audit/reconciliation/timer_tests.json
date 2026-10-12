@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "case": "start_returns_before_expiry",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "full_no_timer",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "disposable_no_recovery_timer",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_disposable_does_time",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "negative_ratio_not_clamped",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "missing_duration_clears_start",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "opening_finishes_and_notifies",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "partial_recovery_debits_only_used",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "insufficient_storage_still_full_round",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "offline_completes_two_stages",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "accelerate_rewinds_start",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "start_returns_before_expiry",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "full_no_timer",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "disposable_no_recovery_timer",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "initializing_disposable_does_time",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "negative_ratio_not_clamped",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "missing_duration_clears_start",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "opening_finishes_and_notifies",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "partial_recovery_debits_only_used",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "insufficient_storage_still_full_round",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "offline_completes_two_stages",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "accelerate_rewinds_start",
+      "mode": "recovered-source",
+      "status": "passed"
+    }
+  ],
+  "passed": 22,
+  "total": 22,
+  "limits": "Controlled clock, acceleration and save/event substitutes; no scheduler, native DB or complete consumer verification."
+}

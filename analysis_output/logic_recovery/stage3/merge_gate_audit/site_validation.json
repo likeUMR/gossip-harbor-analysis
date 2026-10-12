@@ -1,0 +1,504 @@
+{
+  "kind": "structure-and-assets-only",
+  "pages": [
+    {
+      "page": "operations/merge/index.md",
+      "html_sha256": "66c74876b1c4b48c049f097d3bf4239e16b1fd0d0f2290414128cc4dba462507",
+      "headings": 2,
+      "images": 2,
+      "tables": 1,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/release/index.md",
+      "html_sha256": "496ca77c8b1a41ce62d6e927fe1c5bc1afeb6a84d01c13584644c449e589a089",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/release/movable/index.md",
+      "html_sha256": "9b4176b0ded96b27b6633fa3b135761b62e0cf3ad37d59c228f7d6542ac441b6",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/release/movable/detail.md",
+      "html_sha256": "d0107950f306f4453d691d32896b5a74b20c6b854d9cc7e1c81e091be0548370",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/release/position/index.md",
+      "html_sha256": "b5b7594e901ac0b714652aac4926089baf8df65a278473d66f33eaa737032e2a",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/release/position/detail.md",
+      "html_sha256": "c5bd9cdfa3710e53ee96dcee3a9c40a72513e5ff999e0321f1c57afa905b5ee1",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/release/inventory/index.md",
+      "html_sha256": "99c6449fa22e575346c810a82662409876806cbf8efc7ce9ec33ce2ee43970ba",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/release/inventory/detail.md",
+      "html_sha256": "1aefce027d2e950e3bce1c1d8e280a2fdeec31d50326b0818a53df438dd3a43e",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/release/identity/index.md",
+      "html_sha256": "f3cc77fbee97f2cf65d3e90368d1bbc7dab1d5b212bd27997098570a1aaf8342",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/release/identity/detail.md",
+      "html_sha256": "863c0a374aeb78bcf994485ec4185c009eea5be37213f95acc37657b512d3c2c",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/move/index.md",
+      "html_sha256": "f6d487065477c1207265ea257fb3ad1e0f5cbba6e8648a87a6ee25273e90c8dc",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/move/write/index.md",
+      "html_sha256": "fd1f102df357d3d65e530851cdfe6a40f6f90b121e78b6882de0a4287e7df63b",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/move/write/detail.md",
+      "html_sha256": "54e52e34db952a7b1d0911d23edad797320459c2713ce8f65f28e1ceaf4dae5c",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/merge/move/accelerate/index.md",
+      "html_sha256": "87a45b1b7fd11e6a52b0c428f8eed440d7d3de1a99369efab3d56f144d1b5ea0",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/move/accelerate/detail.md",
+      "html_sha256": "b3f4a550523c6ef70aaf5d22ff4a37c8992d387d884a7488b553bff1d3a48087",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/special/index.md",
+      "html_sha256": "a537899b2510c501cc9eddb4b9f33246df80cf61c53facb40929f509ca68ccf6",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/special/eligibility/index.md",
+      "html_sha256": "286efebcd6a51c07e17aaf93d853863f16582f965c5eb682101daa6685de7927",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/special/eligibility/detail.md",
+      "html_sha256": "718485d9c425a4fdb79daeb25a56da20c5325c760df9b740d73df64c0061cc99",
+      "headings": 3,
+      "images": 0,
+      "tables": 5,
+      "paragraphs": 9
+    },
+    {
+      "page": "operations/merge/special/upgrade/index.md",
+      "html_sha256": "e3d7360bad83d1939caf931b77a2112a47296cf29d4bea6da6d4d05d569598d7",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/special/upgrade/detail.md",
+      "html_sha256": "f042afa5bc3f946444cf26923c1bf9c21a6929a47f74ca244cb61a1176da9779",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/special/scissors/index.md",
+      "html_sha256": "c5aee55d4297184ac81aa67767f0ab562a599a3f2279553fe8655c0293403177",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/special/scissors/detail.md",
+      "html_sha256": "d7cc9595675a0991121747516dbe1343812c78c432df48ccd5a4fe2b1e1b9f07",
+      "headings": 3,
+      "images": 1,
+      "tables": 5,
+      "paragraphs": 10
+    },
+    {
+      "page": "operations/merge/special/split/index.md",
+      "html_sha256": "3248dab0897fe12d356b21d5b41cdb777292c52bfb962c65a4f1f545c51f0f44",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/special/split/detail.md",
+      "html_sha256": "dabf9fbefc6594c400361c07f9739e9cfa0d410c749ee3a166ba15c098c4572f",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/merge/special/failure/index.md",
+      "html_sha256": "822112fae03a6b7bf18375a75c2b632a2529b2bedebdacb95617fd9455f6b19c",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/special/failure/detail.md",
+      "html_sha256": "43fb81e338ffc2d1a3c65a3a667f946bdeba80e5f9c1056fdf454705e196211a",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/index.md",
+      "html_sha256": "68d9a8bd04815730318b226b292958f895b6b1b4cdb00e5336c5a420d1da87e7",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/normal/eligibility/index.md",
+      "html_sha256": "b8d3c53ce2f0996a03aec3b389a8d3d99d9b9a651652a9f6ef1c6dc2d2f15ddd",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/normal/eligibility/detail.md",
+      "html_sha256": "e4699cb532f75a736573549d52f0c9a15b706a7dfd0db8d1ec7332c1409e3376",
+      "headings": 3,
+      "images": 2,
+      "tables": 5,
+      "paragraphs": 11
+    },
+    {
+      "page": "operations/merge/normal/replacement/index.md",
+      "html_sha256": "77d14f66edcd87638f5f36c9c20e5f22d33877535d99cf63607a3f3dbf0325b6",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/normal/replacement/detail.md",
+      "html_sha256": "859ae5ea90cfe24ab162fe5769d2bdbb78995651fedf40d40e8358b9facc0077",
+      "headings": 3,
+      "images": 2,
+      "tables": 5,
+      "paragraphs": 12
+    },
+    {
+      "page": "operations/merge/normal/notify/index.md",
+      "html_sha256": "b8dd70ae45fe4edcc14ab60da3b896fbfb86f28ab8ef61236933a01ad3a2818e",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/notify/detail.md",
+      "html_sha256": "1fc27d66049d9e4d6071a6266b779a85aec4b2cf66d81d67884c474e0594f30f",
+      "headings": 4,
+      "images": 0,
+      "tables": 5,
+      "paragraphs": 11
+    },
+    {
+      "page": "operations/merge/normal/score/index.md",
+      "html_sha256": "a70bc734b4b1abe81aeb08e67f9f5e8ae0678af60732a0603d5574f81d9d0a99",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/score/detail.md",
+      "html_sha256": "91ff0f5a54923398ff10ea4e06230ee7035368ffde029432212f482c5d876ace",
+      "headings": 3,
+      "images": 0,
+      "tables": 4,
+      "paragraphs": 9
+    },
+    {
+      "page": "operations/merge/normal/temp/index.md",
+      "html_sha256": "266c0a0609b9b4799533be6da2b4ffed9f49091aa25800178cdfa0f42f9c97ed",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/temp/detail.md",
+      "html_sha256": "70701f84efa3d76849f4119b777f3a7e9c04f36118775b283eb7054dfc325a66",
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 10
+    },
+    {
+      "page": "operations/merge/normal/card/index.md",
+      "html_sha256": "9af940a3e4617562a13739c8e3e4f0f4c11e6aaa11c2eaad640d2b85d6a1b287",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/card/detail.md",
+      "html_sha256": "9a7bc4a90efc42e5add541d94bc7df76236b2b5454893b4762c4d931e2d165eb",
+      "headings": 5,
+      "images": 0,
+      "tables": 6,
+      "paragraphs": 19
+    },
+    {
+      "page": "operations/merge/normal/energy/index.md",
+      "html_sha256": "fca3387876ce35fe6380247f9bec2fba52a286c979d0abc2c5cdb6488b3a7f18",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/energy/detail.md",
+      "html_sha256": "ffedbdbccbaa8d8685cae7be3c168f3dd1cf760ff756310ef2fd17413f7efd21",
+      "headings": 3,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 10
+    },
+    {
+      "page": "operations/merge/normal/bubble/index.md",
+      "html_sha256": "0887bb6779be625c6880ada55c1c626a9355a62e301540653843f91063312b56",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/merge/normal/bubble/detail.md",
+      "html_sha256": "4556655f8492c26c5453a8b706ef5cd339aa57fe5bcd4a1bcb3ea1580db8a951",
+      "headings": 8,
+      "images": 2,
+      "tables": 5,
+      "paragraphs": 23
+    },
+    {
+      "page": "operations/merge/normal/coin/index.md",
+      "html_sha256": "306af1cc86ae49786f8a45b0c7f7590e9e9aee9d0e6cea60a1cf779266a72ff8",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/normal/coin/detail.md",
+      "html_sha256": "ab2362993dad080f9a7e49004a8618f6e77a1c0368953d5eb9d93c6c62b8522b",
+      "headings": 4,
+      "images": 1,
+      "tables": 2,
+      "paragraphs": 11
+    },
+    {
+      "page": "operations/merge/normal/finish/index.md",
+      "html_sha256": "601bc2d05c86f87e13a2b83640ee96ce0dbceeeba421b0cc7b4560980f40ac24",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/normal/finish/detail.md",
+      "html_sha256": "8752781fecee7fea26cf39226c7b8740119fed6ca9f2421724c4d6ea1d0e58cc",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/swallow/index.md",
+      "html_sha256": "fe2f4deaa137c894e25500669a00493477c9eb22b31652520d536142aeee6eae",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/swallow/target/index.md",
+      "html_sha256": "8fd18b735310fd1b01d6c815a699ccc9005621d5805d2c2969f502c7c4f3673b",
+      "headings": 2,
+      "images": 1,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/swallow/target/detail.md",
+      "html_sha256": "fdbd83ce55e36fe3fd1d5b03c5046ea68fd413435608f7be6c547de1a363f89d",
+      "headings": 3,
+      "images": 1,
+      "tables": 17,
+      "paragraphs": 25
+    },
+    {
+      "page": "operations/merge/swallow/progress/index.md",
+      "html_sha256": "6997ea287b254c7064cb190b3258a3ebd458d457e449c28a73b3985fc7b605b8",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/swallow/progress/detail.md",
+      "html_sha256": "d6d27e7f10c410ec4e20cf8f26b43db4d62596be3e1d13ceff1883f726ce23d2",
+      "headings": 3,
+      "images": 0,
+      "tables": 17,
+      "paragraphs": 24
+    },
+    {
+      "page": "operations/merge/swallow/transform/index.md",
+      "html_sha256": "241749274dd1ab52d9ab23acbf7563356b8328bfe6a7567ea086191c6bae5cac",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/swallow/transform/detail.md",
+      "html_sha256": "67b10a04c3b92955c29b5681c401ab9a9393caa49025c5461734f1614f70314f",
+      "headings": 4,
+      "images": 2,
+      "tables": 17,
+      "paragraphs": 25
+    },
+    {
+      "page": "operations/merge/swap/index.md",
+      "html_sha256": "3c90930e500bcf6fafb00217984e74836f801611a60bc21ec41e5b38c9a8853c",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 2
+    },
+    {
+      "page": "operations/merge/swap/blocked/index.md",
+      "html_sha256": "8cdce1424bd6bcfeda39324c01b8d6f4a02afc8506ae8b266b57f9d72c96d127",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/swap/blocked/detail.md",
+      "html_sha256": "ecb354cf16ab83afd01ddfbaa4f19a54090dbab0f7c5928d09913c74a1e95428",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 3
+    },
+    {
+      "page": "operations/merge/swap/exchange/index.md",
+      "html_sha256": "8212f2e4a33701134a78be081004701189374257a83599ade930a6e193f0076d",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 5
+    },
+    {
+      "page": "operations/merge/swap/exchange/detail.md",
+      "html_sha256": "ab96344e71cf6889e778ad444f3dc051c6a64ab8de95815a80f6492983ef7b01",
+      "headings": 2,
+      "images": 2,
+      "tables": 0,
+      "paragraphs": 6
+    },
+    {
+      "page": "operations/merge/pointer/index.md",
+      "html_sha256": "0310213af95aa9c21047cd786c20fb3fa800ae10178699817d92824d48736ebb",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 2
+    },
+    {
+      "page": "operations/merge/pointer/selection/index.md",
+      "html_sha256": "fd15c226cc6ed7b602a98d1d57ab7c24a73f7a0bc30a7c9aa1f870454bfed4c5",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 4
+    },
+    {
+      "page": "operations/merge/pointer/selection/detail.md",
+      "html_sha256": "bae7778786588a728b84a0ef2d337e17eaa479ccb22be0cf96a69e1baf83c8ce",
+      "headings": 2,
+      "images": 0,
+      "tables": 0,
+      "paragraphs": 5
+    }
+  ],
+  "failures": [],
+  "status": "passed",
+  "limits": "Does not approve G1-G7 semantic or original-runtime gates; browser screenshots tracked separately."
+}

@@ -4,20 +4,28 @@ Lucky 未命中（或 Lucky 活动不适用）后，先尝试 Disco 直接产出
 
 统一顺序是：
 
-1. [活动前置分支](../overrides/activity/index.md)：Disco 提供直接代码时立即返回，不执行下面的普通路径；否则继续。
-2. [次数与储备上限修正](../overrides/safety/index.md)，然后读取教程强制代码（有值时跳过五类候选选择，但仍继续后续处理）。
+1. Disco 前置产出：Disco 提供直接代码时立即返回，不执行下面的普通路径；否则继续。
+2. 次数与储备上限修正，然后读取教程强制代码（有值时跳过五类候选选择，但仍继续后续处理）。
 3. 按 `Fixed / Decremental / OrderItem / ChestCustomItem / SmartItem` 选择原始代码。
-4. [链升级与增益修正](../overrides/boost/index.md)：根据订单缺口、棋盘已有数量和链等级决定能量增益次数，并沿 `MergedType` 链升级代码。
-5. [活动后置改写](../overrides/activity/detail.md)：Disco 可再次改写代码与倍率，并把次数消耗设为 0。
-6. [扣除次数与更新状态](../lifecycle/count/index.md)，随后处理计时、状态通知与存档。这些发生在实际扣能量与落子之前。
+4. 链升级与增益修正：根据订单缺口、棋盘已有数量和链等级决定能量增益次数，并沿 `MergedType` 链升级代码。
+5. Disco 普通回退后的降级与扣分：Disco 可再次改写代码与倍率，并把次数消耗设为 0。
+6. 扣除次数与更新状态，随后处理计时、状态通知与存档。这些发生在实际扣能量与落子之前。
 
-分支页面：
+<!-- disco-tree:start -->
+## Disco 与五种普通候选如何衔接
 
-- [Fixed](fixed/index.md)
-- [Decremental](decremental/index.md)
-- [OrderItem](order/index.md)
-- [ChestCustomItem](chest/index.md)
-- [SmartItem](smart/index.md)
+左侧的Disco 专门说明对应上述第1步和第5步。它先尝试直接补订单，有合适目标便返回；没有目标才继续五种普通候选选择，随后可能再次降级改写。Disco有专用助力余额，既不是第六种Spread_WeightType，也不是所有普通点击都必经的生效分支。
+
+直接路径不消费普通池或母体次数；普通回退路径仍会消费对应候选池，但把母体次数消耗改成0、点击累计仍加1。两条路径都按Disco助力规则结算，详见底层算法。
+<!-- disco-tree:end -->
+
+五种原始候选选择：
+
+- Fixed
+- Decremental
+- OrderItem
+- ChestCustomItem
+- SmartItem
 
 能量升级、Lucky 产物和活动改写都可能使“原始候选”和“最终代码”不同；实现复刻时必须按上述顺序串接，不能只复刻五个候选池。
 
@@ -25,7 +33,7 @@ Lucky 未命中（或 Lucky 活动不适用）后，先尝试 Disco 直接产出
 
 ## 产出内部修正如何配合
 
-候选选择并不等于最终产物。各个修正仍在上述顺序中执行，[产出改写与数值边界](../overrides/index.md)集中说明它们分别嵌入哪个位置；这个说明页不增加新的点击阶段。
+候选选择并不等于最终产物。各个修正仍在上述顺序中执行，左侧依次列出Disco前置、次数上限检查、候选选择、链升级和产物落子；各页在本步骤内解释修正和结果。
 
 <!-- lucky-classification-explanation:end -->
 
@@ -41,8 +49,8 @@ Lucky 未命中（或 Lucky 活动不适用）后，先尝试 Disco 直接产出
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>

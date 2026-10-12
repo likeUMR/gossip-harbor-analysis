@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "pages": [
+    {
+      "page": "state/closed/detail.md",
+      "rendered_heading": "点击关闭母体后，界面如何响应",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "state/opening/detail.md",
+      "rendered_heading": "点击开启中的母体后，界面如何响应",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "state/initializing/detail.md",
+      "rendered_heading": "被初始化或零次数拦截后，界面如何响应",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "position/full/detail.md",
+      "rendered_heading": "满盘失败如何提示玩家",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "energy/consume/detail.md",
+      "rendered_heading": "缺能量后先显示什么窗口",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "state/model/detail.md",
+      "rendered_heading": "存档如何恢复当前母体",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "lifecycle/cooldown/detail.md",
+      "rendered_heading": "活动日刷新、进度清零与轮次递增",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "lifecycle/count/detail.md",
+      "rendered_heading": "次数与剩余权重池怎样跨重载保留",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "output/preparation/detail.md",
+      "rendered_heading": "累积Buff对配置选择的影响",
+      "supplement_not_in_code_block": true
+    },
+    {
+      "page": "lucky/chance/load.md",
+      "rendered_heading": "接口切换例子与真实升级路线的区别",
+      "supplement_not_in_code_block": true
+    }
+  ],
+  "source_and_document_hashes_current": true,
+  "scope": "Exact supplemented detail pages and evidence freshness only; no full semantic acceptance."
+}

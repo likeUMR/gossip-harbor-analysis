@@ -1,0 +1,689 @@
+{
+  "nodes": 76,
+  "changed_files": [
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\mkdocs.yml",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\move\\accelerate\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\move\\accelerate\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\move\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\move\\write\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\move\\write\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\bubble\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\bubble\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\card\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\card\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\coin\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\coin\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\eligibility\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\eligibility\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\energy\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\energy\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\finish\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\finish\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\notify\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\notify\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\replacement\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\replacement\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\score\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\score\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\temp\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\normal\\temp\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\pointer\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\pointer\\selection\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\pointer\\selection\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\identity\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\identity\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\inventory\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\inventory\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\movable\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\movable\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\position\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\release\\position\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\eligibility\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\eligibility\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\failure\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\failure\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\scissors\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\scissors\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\split\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\split\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\upgrade\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\special\\upgrade\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\progress\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\progress\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\target\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\target\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\transform\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swallow\\transform\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swap\\blocked\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swap\\blocked\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swap\\exchange\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swap\\exchange\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\merge\\swap\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\after\\chest_delay\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\after\\chest_delay\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\after\\cooking\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\after\\cooking\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\after\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\board\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\board\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\mark\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\mark\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\refresh_failure\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\refresh_failure\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\store\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\consume\\store\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\branch\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\branch\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\special\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\special\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\type\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\dispatch\\type\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\button\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\button\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\counts\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\counts\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\inventory\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\inventory\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\requirements\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\requirements\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\special_window\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\entry\\special_window\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\finish\\animation\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\finish\\animation\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\finish\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\finish\\sync\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\finish\\sync\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\candidates\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\candidates\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\continuous\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\continuous\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\draw\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\draw\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\dynamic\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\dynamic\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\extra\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\extra\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\fixed_return\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\fixed_return\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\loop\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\loop\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\lucky\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\lucky\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\owner_history\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\owner_history\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\priority\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\priority\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\random_gate\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\random_gate\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\save\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\save\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\tutorial\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\refill\\tutorial\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\acquire\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\acquire\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\activity\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\activity\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\gift_buff\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\gift_buff\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\price\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\price\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\smile\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\smile\\index.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\snapshot\\detail.md",
+    "analysis_output\\logic_recovery\\stage3\\mkdocs_site\\docs\\operations\\orders\\rewards\\snapshot\\index.md",
+    "tools\\stage3_merge_documents.py",
+    "tools\\stage3_order_documents.py"
+  ],
+  "names": [
+    {
+      "directory": "merge/release",
+      "old": "释放拖拽：确认落点与源对象",
+      "new": "拖拽检查",
+      "responsibility": "拖动中的图像位置只是预览。松手后，视图先把屏幕位置换成棋盘格，处理最近合成高亮的短暂吸附和教程指定落点，再检查拖入棋子能否移动。指针落在仓库上时先尝试存入；存入失败才回到棋盘处理。",
+      "url": "http://127.0.0.1:8000/operations/merge/release/"
+    },
+    {
+      "directory": "merge/release/movable",
+      "old": "开始拖动与移动资格",
+      "new": "拖动资格",
+      "responsibility": "先检查拖入棋子能否移动。纸箱、蜘蛛网、锁定物不能作为拖动源；吞噬物还取决于它是否允许点击。首次有效拖动通知教程和界面，之后图像跟随手指，棋盘模型尚未换格。",
+      "url": "http://127.0.0.1:8000/operations/merge/release/movable/"
+    },
+    {
+      "directory": "merge/release/position",
+      "old": "屏幕落点、吸附与教程限制",
+      "new": "落点吸附与教程限制",
+      "responsibility": "松手位置先转为格坐标。刚显示过的合成高亮可以在短时间内把落点吸到对应棋子；教程指定目标不满足时改成非法坐标。它们改变传给模型的落点，不改变普通合成的代码匹配规则。",
+      "url": "http://127.0.0.1:8000/operations/merge/release/position/"
+    },
+    {
+      "directory": "merge/release/inventory",
+      "old": "仓库落点的优先分流",
+      "new": "棋子入库",
+      "responsibility": "指针落在仓库按钮上时，先检查仓库是否开启、物品是否能存、仓库是否有容量。成功则从棋盘移入仓库，本次不进行棋盘合成；失败会提示原因，再按实际棋盘落点继续分派。",
+      "url": "http://127.0.0.1:8000/operations/merge/release/inventory/"
+    },
+    {
+      "directory": "merge/release/identity",
+      "old": "坐标与源身份的最后核对",
+      "new": "坐标与对象校验",
+      "responsibility": "先排除棋盘外落点，再核对源格对象。如果拖动期间源格被替换，旧棋子的拖动也会被拒绝。这两项先于读取目标棋子，防止过期输入继续执行。",
+      "url": "http://127.0.0.1:8000/operations/merge/release/identity/"
+    },
+    {
+      "directory": "merge/move",
+      "old": "空格或原格：移动后立即结束",
+      "new": "棋子移动",
+      "responsibility": "取得目标后，如果目标为空，或者目标就是拖入棋子本身，就走移动路径。先更新格层，再记录位置和刷新加速影响，发移动结束通知，随后返回。因此空格移动不会继续抽副产物，也不会把普通移动当成合成。",
+      "url": "http://127.0.0.1:8000/operations/merge/move/"
+    },
+    {
+      "directory": "merge/move/write",
+      "old": "写格、原格复位与位置日志",
+      "new": "位置更新",
+      "responsibility": "空位移动沿用原棋子对象，不新建物品或重置母体次数。回到原格时也会清格再写回，但省略移动日志，随后进入移动收尾。",
+      "url": "http://127.0.0.1:8000/operations/merge/move/write/"
+    },
+    {
+      "directory": "merge/move/accelerate",
+      "old": "移动后的加速刷新与通知",
+      "new": "加速刷新",
+      "responsibility": "移动可能改变加速棋子的覆盖，所以移动完成后立即刷新计时组件。随后通知移动结束并返回；这次拖动的合成、吞噬和交换均不会执行。",
+      "url": "http://127.0.0.1:8000/operations/merge/move/accelerate/"
+    },
+    {
+      "directory": "merge/special",
+      "old": "有目标：先尝试特殊作用",
+      "new": "升级与剪刀",
+      "responsibility": "有目标时，先判断拖入物能否对目标产生特殊作用。升级道具和普通剪刀通常弹确认窗；窗口已打开就结束当前拖拽，确认后再复核资格并执行。两把剪刀则直接合并剩余次数。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/"
+    },
+    {
+      "directory": "merge/special/eligibility",
+      "old": "目标资格与满盘限制",
+      "new": "道具目标资格",
+      "responsibility": "资格由目标配置决定：目标是否允许被升级或拆分。剪刀对普通目标还要求棋盘有空位；两把剪刀合并次数例外，不受这个满盘限制。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/eligibility/"
+    },
+    {
+      "directory": "merge/special/upgrade",
+      "old": "升级确认与目标替换",
+      "new": "道具升级",
+      "responsibility": "升级道具把目标替换为其配置下一等级，消耗一件升级道具。等待确认时道具回原位；取消不执行替换。该路径有合成通知和邻格震动，但不经过普通合成的副产物流水线。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/upgrade/"
+    },
+    {
+      "directory": "merge/special/scissors",
+      "old": "两把剪刀合并剩余次数",
+      "new": "剪刀次数合并",
+      "responsibility": "目标也是剪刀时，不打开拆分确认窗；两把剪刀合成一把，其次数为两者剩余次数之和。它保留使用量，不把次数恢复成默认值。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/scissors/"
+    },
+    {
+      "directory": "merge/special/split",
+      "old": "拆分确认、扣次数与第二落点",
+      "new": "剪刀拆分",
+      "responsibility": "剪刀作用普通目标时，将目标拆为两件同链前一级物品，消耗一次剪刀次数。第一件放在目标原格，第二件按周围空位顺序放下；剪刀次数耗尽才删除。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/split/"
+    },
+    {
+      "directory": "merge/special/failure",
+      "old": "失败提示后继续普通分派",
+      "new": "道具作用失败",
+      "responsibility": "特殊物不满足目标资格时显示原因，但仍继续合成资格检查。弹出确认窗与显示失败提示的控制流不同：前者接管拖拽，后者通常继续。",
+      "url": "http://127.0.0.1:8000/operations/merge/special/failure/"
+    },
+    {
+      "directory": "merge/normal",
+      "old": "普通合成：生成新物，再依次结算",
+      "new": "普通合成",
+      "responsibility": "特殊作用未接管，才判断普通合成。两边逻辑类型相同且有下一等级、没有已使用宝箱和工厂限制时，消耗两件输入，在目标格创建新物。随后发合成通知、震动四邻格，再进入主棋盘追加结算。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/"
+    },
+    {
+      "directory": "merge/normal/eligibility",
+      "old": "使用状态、内含类型与下一等级",
+      "new": "合成资格",
+      "responsibility": "先排除任一已用过的一次性宝箱，再取得两侧用于比较的类型。蜘蛛网和临时物使用内含物代码；普通物提供下一等级。最后排除工厂专用物，确认同类型且仍能升级。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/eligibility/"
+    },
+    {
+      "directory": "merge/normal/replacement",
+      "old": "移除输入、创建与保存结果",
+      "new": "合成结果生成",
+      "responsibility": "先删除拖入物，再用新物替换目标。新物按配置重新创建组件和状态，不沿用两件输入的次数、CD或对象身份；普通合成之后才通知其它系统。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/replacement/"
+    },
+    {
+      "directory": "merge/normal/notify",
+      "old": "合成通知与四邻格震动",
+      "new": "合成通知与邻格震动",
+      "responsibility": "新物已经写入棋盘后，先通知合成，再震动目标周围四个正交邻格。可解锁纸箱会在震动中消除，并可能腾出空间；这些变化发生在副产物判断之前。 合成通知还会让已开启的活动读取源物分数、更新任务，或检查新物解锁；这些响应发生在主棋盘后续副产物判断之前。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/notify/"
+    },
+    {
+      "directory": "merge/normal/score",
+      "old": "清气泡记忆，再处理竞速分数",
+      "new": "竞速计分",
+      "responsibility": "普通合成的基础处理完成后，清除上一购买气泡类型，再尝试竞速计分。计分查的是被拖入物类型，不是合成结果；竞速未开启或未入组则跳过，继续副产物。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/score/"
+    },
+    {
+      "directory": "merge/normal/temp",
+      "old": "优先尝试临时棋子",
+      "new": "临时棋子产出",
+      "responsibility": "副产物首先尝试临时物：活动、库存和资源条件通过后，按当前合成链的订单缺口选择帮助物。生成成功会占用本次主副产物名额，跳过卡片和两类气泡；未选出物品才继续。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/temp/"
+    },
+    {
+      "directory": "merge/normal/card",
+      "old": "临时物未生成，再尝试卡片",
+      "new": "卡片产出",
+      "responsibility": "没有临时物且仍有空位时，按拖入物类型、玩家等级和卡片活动条件判断是否生成卡片。命中后生成当前卡片链的一级物，通知卡片系统，并跳过后续气泡。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/card/"
+    },
+    {
+      "directory": "merge/normal/energy",
+      "old": "没有前两种副产物，再尝试能量气泡",
+      "new": "能量气泡产出",
+      "responsibility": "能量气泡根据活动时间、当前能量与购买价格门槛选择一条配置。成功时先更新活动下次可触发时间，再尝试落子；没有选到配置才进入普通气泡。它不按普通物品的BubbleChance抽取。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/energy/"
+    },
+    {
+      "directory": "merge/normal/bubble",
+      "old": "普通气泡：资格、加成、衰减与抽取",
+      "new": "普通气泡产出",
+      "responsibility": "前三类没有生成，才考虑普通气泡。先确认空间、功能、基础概率与同类气泡限制；满足特定加成时设为必出，否则按订单需要、高等级气泡存量和未购买天数依次衰减。最后一次独立阈值抽样决定是否落子。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/bubble/"
+    },
+    {
+      "directory": "merge/normal/coin",
+      "old": "主副产物之后，独立检查金币",
+      "new": "金币棋子产出",
+      "responsibility": "不论主副产物是哪一类，最后再检查是否还有空位以及新物链等级是否达到金币门槛。通过就多生成一枚一级金币。主副产物占满最后空格时，金币不会生成。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/coin/"
+    },
+    {
+      "directory": "merge/normal/finish",
+      "old": "同步检查、合成日志与返回",
+      "new": "合成记录与同步",
+      "responsibility": "所有副产物处理后，检查新物是否需要额外上传，汇总本次合成日志，返回拖拽入口。已经合成成功的拖动不会再进入吞噬或交换；界面释放收尾仍会继续。",
+      "url": "http://127.0.0.1:8000/operations/merge/normal/finish/"
+    },
+    {
+      "directory": "merge/swallow",
+      "old": "不能合成：再尝试目标吞噬",
+      "new": "棋子吞噬",
+      "responsibility": "只有普通合成失败才读取目标吞噬组件。目标需要这种物品且数量未满时，接收一件，保存进度并删除拖入物；所有需求都完成时变换成奖励物。吞噬成功立即结束，不再交换。",
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/"
+    },
+    {
+      "directory": "merge/swallow/target",
+      "old": "创建需求、固定池与拖入资格",
+      "new": "吞噬需求与资格",
+      "responsibility": "目标创建时为最多两项需求选代码和数量。玩家拖入时按完整物品代码检查需求是否尚缺；目标是否允许点击影响移动资格，但不是拖入吞噬的额外门槛。",
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/target/"
+    },
+    {
+      "directory": "merge/swallow/progress",
+      "old": "吞入、保存与进度通知",
+      "new": "吞噬进度",
+      "responsibility": "匹配后先更新目标进度并保存，再删除拖入物、通知吞噬与刷新进度。最后检查全部需求是否完成；未完成则保留目标等待下一件。",
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/progress/"
+    },
+    {
+      "directory": "merge/swallow/transform",
+      "old": "需求完成后的奖励变换",
+      "new": "吞噬完成变换",
+      "responsibility": "全部需求完成后，目标按变换权重选一个结果并原格替换。吞噬引起的变换不再额外消耗点击能量；不允许点击的吞噬物还会震动邻格，随后发全局吞噬完成通知。",
+      "url": "http://127.0.0.1:8000/operations/merge/swallow/transform/"
+    },
+    {
+      "directory": "merge/swap",
+      "old": "未被接收：拒绝或交换位置",
+      "new": "棋子交换",
+      "responsibility": "特殊作用、合成与吞噬都没接管，才检查目标可移动性。目标不能移动则拖入物复位；能移动则两件棋子交换位置，保留对象、类型和各自内部状态。最后处理移动加速，返回界面收尾。",
+      "url": "http://127.0.0.1:8000/operations/merge/swap/"
+    },
+    {
+      "directory": "merge/swap/blocked",
+      "old": "不可移动目标：复位结束",
+      "new": "交换资格",
+      "responsibility": "到最后兜底仍不能合成或吞噬，目标被纸箱、蜘蛛网、锁定或吞噬点击限制固定时，不允许交换。拖入物回原格，不消耗双方。",
+      "url": "http://127.0.0.1:8000/operations/merge/swap/blocked/"
+    },
+    {
+      "directory": "merge/swap/exchange",
+      "old": "交换写格、订单刷新与计时",
+      "new": "位置交换",
+      "responsibility": "目标可移动时，先交换格层，再分别更新位置和移动日志，刷新加速。棋子对象与组件不重建，因此不会重置母体次数或计时。",
+      "url": "http://127.0.0.1:8000/operations/merge/swap/exchange/"
+    },
+    {
+      "directory": "merge/pointer",
+      "old": "返回视图：更新选中与释放反馈",
+      "new": "拖拽收尾",
+      "responsibility": "模型处理结束后，松手函数仍会完成界面收尾：选中当前结果、刷新信息栏和可交付格，通知释放，清拖动缓存并重启提示。模型提前返回只是结束动作分派，不等于这一整次玩家输入已经不再触发任何界面逻辑。",
+      "url": "http://127.0.0.1:8000/operations/merge/pointer/"
+    },
+    {
+      "directory": "merge/pointer/selection",
+      "old": "选择结果、提示与释放通知",
+      "new": "选中与释放",
+      "responsibility": "空位移动通常继续选原对象；合成后原对象消失则选目标格结果。最后根据物品是否消失或位置是否变化决定收集提示，发送释放事件并清理拖拽状态。",
+      "url": "http://127.0.0.1:8000/operations/merge/pointer/selection/"
+    },
+    {
+      "directory": "orders/entry",
+      "old": "点击交付：检查按钮、需求与确认分流",
+      "new": "交付检查",
+      "responsibility": "先检查按钮是否禁用。普通订单读取棋盘中的可用代码数量，逐项核对需求；全部够用才直接提交，缺少时先询问是否使用仓库。特殊订单按钮另走展示窗口，玩家再次点击后才提交。这里的确认尚未发奖、扣物或补位。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/"
+    },
+    {
+      "directory": "orders/entry/button",
+      "old": "按钮门控与入口差异",
+      "new": "按钮资格",
+      "responsibility": "按钮禁用便结束；普通订单进入数量检查，特殊订单先展示需求。音效在门控之后播放，不能把音效当作交付成功。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/button/"
+    },
+    {
+      "directory": "orders/entry/counts",
+      "old": "首次计数只看棋盘",
+      "new": "棋盘物品计数",
+      "responsibility": "首次判断不含仓库和缓存。它回答“能否直接从棋盘交付”，不是判断所有持有物是否足够。包装物要按实际代码计数，不能把内含类型当裸物品。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/counts/"
+    },
+    {
+      "directory": "orders/entry/requirements",
+      "old": "重复需求按件数检查",
+      "new": "需求数量核对",
+      "responsibility": "逐项核对，同一种物品出现两次就需要两件。失败返回每种代码的缺口，窗口据此展示需要动用哪些仓库物。空需求会通过本方法，不能只依靠方法名假设它必定拒绝。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/requirements/"
+    },
+    {
+      "directory": "orders/entry/inventory",
+      "old": "仓库确认与关闭后的提交",
+      "new": "仓库补交",
+      "responsibility": "窗口重新算棋盘缺口并展示，确认只设置提交标记；真正提交在窗口关闭完成后。普通入口只检查订单还在不在槽位，没有再次核对库存，也不会先把仓库物移到棋盘。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/inventory/"
+    },
+    {
+      "directory": "orders/entry/special_window",
+      "old": "特殊订单展示后的再次点击",
+      "new": "特殊任务确认",
+      "responsibility": "特殊窗口先把最多三个需求图像聚到中央，动画初始化之后点击遮罩才提交。它先选独立棋盘对象，没有对象时用仓库图像表现；这一选择不是普通需求扣除算法。",
+      "url": "http://127.0.0.1:8000/operations/orders/entry/special_window/"
+    },
+    {
+      "directory": "orders/dispatch",
+      "old": "进入模型：先分流特殊与分支订单",
+      "new": "订单分流",
+      "responsibility": "进入FinishOrder后先按订单内部类型分流。特殊任务清理相关整条链并发配置奖励；分支任务清理链并把有限奖励池全部发完。这两条路径立即返回，普通订单才继续后面的价格、奖励、逐件扣除和补位顺序。",
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/"
+    },
+    {
+      "directory": "orders/dispatch/type",
+      "old": "内部类型决定执行路径",
+      "new": "订单类型判断",
+      "responsibility": "特殊与分支在普通奖励之前接管。订单对象的内部类型与用于显示/日志的Fixed、Random、Special大类不同，判断必须使用内部类型。",
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/type/"
+    },
+    {
+      "directory": "orders/dispatch/special",
+      "old": "特殊任务：完成模型、清整链、发奖",
+      "new": "特殊任务交付",
+      "responsibility": "先完成所属订单模型，再取当前特殊配置清理需求链和母体链。清理覆盖棋盘、仓库、缓存；气泡按内含物判断。然后发配置奖励、标记时间线并通知特殊完成。",
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/special/"
+    },
+    {
+      "directory": "orders/dispatch/branch",
+      "old": "分支任务：抽一份减一份直到耗尽",
+      "new": "分支任务交付",
+      "responsibility": "分支奖励的权重表示必须发出的份数，同时影响下一件出现概率。每次抽取减1，全部份数耗尽才结束；棋盘没有空位就进缓存。因此随机改变发放顺序，不改变最终配置总件数。",
+      "url": "http://127.0.0.1:8000/operations/orders/dispatch/branch/"
+    },
+    {
+      "directory": "orders/rewards",
+      "old": "普通交付：算奖励并先发即时奖励",
+      "new": "奖励结算",
+      "responsibility": "普通链先按需求算价格与难度，再按活动资格收集奖励，分出延迟奖励并保存快照。随后发即时奖励、亲密度礼物与Buff奖励，处理订单微笑分数。此时材料尚未扣除，不能把发奖与扣物理解成一个不可分割的事务。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/"
+    },
+    {
+      "directory": "orders/rewards/price",
+      "old": "价格、难度与金币类型",
+      "new": "订单价格与难度",
+      "responsibility": "价格和难度都逐项累加，重复需求重复计入。基准订单可使用推荐价格；金币Buff在最终价格上翻倍。BakeOut可把最后的基础奖励改成代币，亲密度随机订单可能没有这份基础奖励。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/price/"
+    },
+    {
+      "directory": "orders/rewards/activity",
+      "old": "按顺序收集活动奖励",
+      "new": "活动奖励收集",
+      "responsibility": "活动资格在本次读取时判断，按原调用顺序追加。限时订单提供的相册信息会影响普通相册奖励；宝箱顾客追加的是延迟领取标记。奖励列表顺序不等于分类处理器之间的执行顺序。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/activity/"
+    },
+    {
+      "directory": "orders/rewards/snapshot",
+      "old": "即时与延迟奖励分离、冻结快照",
+      "new": "奖励分组与快照",
+      "responsibility": "根据宝箱顾客前缀拆分奖励，普通部分马上发，标记部分稍后发。两份都复制，确保完成消息展示的是提交时的结果。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/snapshot/"
+    },
+    {
+      "directory": "orders/rewards/acquire",
+      "old": "奖励落账与棋子进入缓存",
+      "new": "即时奖励发放",
+      "responsibility": "奖励逻辑先转换动态奖励，再按类别交给处理器。货币更新资源，普通棋子奖励进入缓存；这不是统一把所有奖励直接放到棋盘。逻辑落账与飞行动画分别执行。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/acquire/"
+    },
+    {
+      "directory": "orders/rewards/gift_buff",
+      "old": "亲密度礼物与Buff奖励",
+      "new": "礼物与Buff奖励",
+      "responsibility": "即时奖励之后才处理礼物，再处理Buff。礼物须亲密度开放；Buff由订单提供的接口决定。它们与最后的金币翻倍是不同调用，不能简单把全部奖励再乘2。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/gift_buff/"
+    },
+    {
+      "directory": "orders/rewards/smile",
+      "old": "订单微笑分数与首轮提示",
+      "new": "微笑进度",
+      "responsibility": "材料扣除前处理订单微笑进度，更新该槽已完成次数并保存。首个普通微笑的提示要等普通链末尾才派发。它不是普通金币奖励，也不等于每张订单固定加1。",
+      "url": "http://127.0.0.1:8000/operations/orders/rewards/smile/"
+    },
+    {
+      "directory": "orders/consume",
+      "old": "标记完成，再逐项扣需求物品",
+      "new": "需求扣除",
+      "responsibility": "先缓存奖励并标完成，再按原需求顺序一件一件扣物。每项先找棋盘，再找仓库；每次都重新统计并刷新订单。两处没有就记错误并继续，源码没有撤销已经发放的奖励。",
+      "url": "http://127.0.0.1:8000/operations/orders/consume/"
+    },
+    {
+      "directory": "orders/consume/mark",
+      "old": "缓存奖励与完成状态",
+      "new": "订单完成标记",
+      "responsibility": "完成状态写在扣除之前。完成后的奖励读取走缓存，但缓存首次填充可能重新调用奖励计算，不能认为即时快照就是唯一一次计算。",
+      "url": "http://127.0.0.1:8000/operations/orders/consume/mark/"
+    },
+    {
+      "directory": "orders/consume/board",
+      "old": "按棋盘遍历序扣第一件匹配物",
+      "new": "棋盘扣物",
+      "responsibility": "逐项找裸代码相同的第一件棋盘物，不按最近距离或等级挑选。同code重复需求会在后一次扫描找到另一实例。",
+      "url": "http://127.0.0.1:8000/operations/orders/consume/board/"
+    },
+    {
+      "directory": "orders/consume/store",
+      "old": "棋盘未找到才扣仓库",
+      "new": "仓库扣物",
+      "responsibility": "同一需求只要棋盘已扣到，就不再扣仓库。棋盘找不到时扫描仓库索引，删除第一件匹配物并删除保存属性；缓存不在兜底范围。",
+      "url": "http://127.0.0.1:8000/operations/orders/consume/store/"
+    },
+    {
+      "directory": "orders/consume/refresh_failure",
+      "old": "逐件刷新与部分失败边界",
+      "new": "扣物刷新与缺物处理",
+      "responsibility": "每件尝试之后刷新真实数量和其它订单状态。某项没找到也继续处理后面的需求；先发奖再扣物的顺序必须保留，不能用“交付成功”概括所有异常。",
+      "url": "http://127.0.0.1:8000/operations/orders/consume/refresh_failure/"
+    },
+    {
+      "directory": "orders/after",
+      "old": "扣物之后：烹饪奖励、宝箱通知与延迟发奖",
+      "new": "烹饪与宝箱奖励",
+      "responsibility": "扣除完成后才尝试烹饪狂热奖励，因此刚腾出的格可能成为奖励落点。之后通知宝箱顾客完成，再发之前分离出的延迟奖励，最后才进入所属订单模型的完成与补位。",
+      "url": "http://127.0.0.1:8000/operations/orders/after/"
+    },
+    {
+      "directory": "orders/after/cooking",
+      "old": "烹饪狂热：选奖、选物与落点",
+      "new": "烹饪狂热奖励",
+      "responsibility": "先按订单难度匹配当前Buff。单奖模式先决定奖励类别，再在棋子奖内部优先帮助订单缺口；全奖模式遍历全部奖励。可放棋盘的直接生成，其余交奖励API；它有自己的候选与去重，不能套普通母体随机池。",
+      "url": "http://127.0.0.1:8000/operations/orders/after/cooking/"
+    },
+    {
+      "directory": "orders/after/chest_delay",
+      "old": "宝箱顾客通知，再发延迟奖励",
+      "new": "宝箱顾客奖励",
+      "responsibility": "先派宝箱顾客完成通知，然后发快照中各组延迟奖励。通知本身与奖励标记落账不同；两者都发生在槽位补位之前。",
+      "url": "http://127.0.0.1:8000/operations/orders/after/chest_delay/"
+    },
+    {
+      "directory": "orders/refill",
+      "old": "所属模型完成：更新历史，再补订单",
+      "new": "订单补位",
+      "responsibility": "普通交付寻找仍包含该订单的模型。主订单先更新亲密度、下一次Lucky资格、累计难度与重复链权重；槽位模型再写完成、日志，移除旧槽并按优先级补新订单。补位是多轮且含固定、教程、活动和随机分支，最后才派全局订单完成通知。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/"
+    },
+    {
+      "directory": "orders/refill/owner_history",
+      "old": "所属校验与下一单使用的状态",
+      "new": "完成历史与Lucky资格",
+      "responsibility": "寻找包含该对象的模型之后，更新影响下一单的状态。Lucky订单保持下一次触发资格，普通订单仅在配置提供机会时抽一次；该Lucky与母体产出Lucky是两个系统。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/owner_history/"
+    },
+    {
+      "directory": "orders/refill/loop",
+      "old": "完成日志与多轮补位",
+      "new": "补位循环",
+      "responsibility": "槽位模型先完成旧单并记日志，再扫描全部槽位。某个空槽本轮没补上，若其它槽成功创建，下一轮会再次尝试；一轮完全没有新订单才停止。全局完成通知在补位之后。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/loop/"
+    },
+    {
+      "directory": "orders/refill/priority",
+      "old": "新订单创建的优先级",
+      "new": "创建优先级",
+      "responsibility": "每个槽先试固定、回归免费、教程、连续活动、额外顾客、Lucky，最后才普通随机。前者成功就跳过后者。选择头像和保存礼物也发生在创建链里，不能理解为只随机几个需求。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/priority/"
+    },
+    {
+      "directory": "orders/refill/fixed_return",
+      "old": "固定与回归免费订单",
+      "new": "固定与回归订单",
+      "responsibility": "固定单按进度的下一Id和槽/等级门槛创建，不随机需求。回归免费单在指定槽与回归时间内取现有较高等级物；计时资格与选物是两个步骤，构造失败也可能已经改计时。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/fixed_return/"
+    },
+    {
+      "directory": "orders/refill/tutorial",
+      "old": "教程单：检查解锁、跳过旧教程、进入进行中",
+      "new": "教程订单",
+      "responsibility": "固定与回归没有建单时才检查教程。它按当前教程进度读预设需求，不走普通随机；已经不需要的教程会被跳过，资格查询可能推进进度。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/tutorial/"
+    },
+    {
+      "directory": "orders/refill/continuous",
+      "old": "连续订单：按本轮档位逐项抽需求",
+      "new": "连续订单",
+      "responsibility": "教程未建单才尝试槽18连续订单。活动状态、进度和界面门控都通过后，按本轮三个需求范围逐项抽物；需求项数来自配置，不另抽普通订单的一二三项权重。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/continuous/"
+    },
+    {
+      "directory": "orders/refill/extra",
+      "old": "额外顾客：创建空需求入口并保存活动标记",
+      "new": "额外顾客入口",
+      "responsibility": "连续订单未成功才检查槽19额外顾客。它先创建活动入口单，需求为空；不能套用普通随机需求或把空需求解释为已经可以完整领取活动奖励。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/extra/"
+    },
+    {
+      "directory": "orders/refill/lucky",
+      "old": "Lucky订单：资格、现有库存与有限连续次数",
+      "new": "Lucky订单",
+      "responsibility": "完成订单只提供一次触发资格，Lucky创建还要检查等级、次数与冷却。需求只从现有且不被其它订单占用的代码中选，重复需求不能超出现有件数；连续次数保存在元数据，不能把它当母体Lucky机会池。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/lucky/"
+    },
+    {
+      "directory": "orders/refill/random_gate",
+      "old": "普通随机：槽位、次数与冷却",
+      "new": "随机订单资格",
+      "responsibility": "随机创建首先选适用于槽位的创建器，再检查等级、批次次数和冷却。次数不足有活动强制补单例外；次数在资格通过时就扣，不能等创建成功后才扣。回归与宝箱顾客可选择不同配置。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/random_gate/"
+    },
+    {
+      "directory": "orders/refill/candidates",
+      "old": "重建候选：解锁、现有需求与权重修正",
+      "new": "候选筛选与权重",
+      "responsibility": "每个需求位置重新构建候选，排除尚不可用物和已被需求占用的代码，按库存情况修正权重。第一项可在特定活动条件下使用备用候选；不是每次都从完整物品表直接抽。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/candidates/"
+    },
+    {
+      "directory": "orders/refill/dynamic",
+      "old": "选过滤档，再调整难度上限",
+      "new": "订单难度调整",
+      "responsibility": "先按等级、累计难度和付费区间选第一条过滤档。常规等级上限可因库存有富余高阶物而提高，但只作用于符合条件的链；动态候选会被乘50增加机会。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/dynamic/"
+    },
+    {
+      "directory": "orders/refill/draw",
+      "old": "先选三个候选，再抽需求项数",
+      "new": "需求抽取与项数",
+      "responsibility": "普通随机先顺序选第一、第二、第三候选，之后才按权重决定保留几项。因此最终只有一项的单，也可能已经消耗了第二、第三候选选择的随机数与权重状态。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/draw/"
+    },
+    {
+      "directory": "orders/refill/save",
+      "old": "移除旧单、保存新单与重载",
+      "new": "订单存档与恢复",
+      "responsibility": "旧单删除时保存上一单需求，供下一次过滤；新单保存需求、类型、头像和独立的Lucky/基准/难度标记。重载从这些值重新构造对象，不应重新随机一份需求。",
+      "url": "http://127.0.0.1:8000/operations/orders/refill/save/"
+    },
+    {
+      "directory": "orders/finish",
+      "old": "模型收尾，再播放交付表现",
+      "new": "交付收尾",
+      "responsibility": "所属模型补位与全局完成通知返回后，主棋盘再刷新状态、按资格发首轮微笑提示，检查同步并派局部完成消息。视图收到消息播放棋子飞入、奖励表现和顾客离开；表现不能再次发放已经落账的奖励。",
+      "url": "http://127.0.0.1:8000/operations/orders/finish/"
+    },
+    {
+      "directory": "orders/finish/sync",
+      "old": "再次刷新、提示与同步消息",
+      "new": "状态刷新与同步",
+      "responsibility": "全局OrderFinished先于棋盘局部FinishOrder；同步上传检查夹在局部消息之前。首轮微笑提示只在先前资格满足时派发。",
+      "url": "http://127.0.0.1:8000/operations/orders/finish/sync/"
+    },
+    {
+      "directory": "orders/finish/animation",
+      "old": "扣物飞行、奖励表现与顾客离开",
+      "new": "交付动画",
+      "responsibility": "材料先在模型中删除，视图再播放飞行动画。普通奖励先表现，相册和礼物稍后表现，顾客最后离开并移除格子。特殊与分支则用各自完成动画。",
+      "url": "http://127.0.0.1:8000/operations/orders/finish/animation/"
+    }
+  ],
+  "structure_decision": "Retain existing four levels and real execution order. Labels require refinement; no evidence warrants moving nodes.",
+  "checks": {
+    "urls_and_order_preserved": true,
+    "generator_nav_preserved": true,
+    "label_substitutions_only": true,
+    "headings_consistent": true
+  },
+  "limits": "Naming and organization review only; semantic/runtime recovery gates retain existing status."
+}

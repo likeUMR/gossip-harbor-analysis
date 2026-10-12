@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "renamed_nodes": 76,
+  "rendered_titles": 138,
+  "url_membership_and_order_preserved": true,
+  "generator_navigation_preserved": true,
+  "only_audited_name_substitutions": true,
+  "limits": "Naming/rendering review only; existing logic recovery gate status retained."
+}

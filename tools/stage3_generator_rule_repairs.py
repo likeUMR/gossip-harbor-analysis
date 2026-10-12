@@ -233,6 +233,15 @@ def supplement_generator_rules(docs: Path):
             text=re.sub(r'(\*\*本页发生什么\*\*：).*?(?=\n\n)',lambda m:m.group(1)+qualitative,text,count=1,flags=re.S)
             text=re.sub(r'(### 代入本页的值\n\n).*?(?=\n\n<details>)',lambda m:m.group(1)+values,text,count=1,flags=re.S)
         p.write_text(text,encoding='utf-8')
+    from stage3_generator_downstream_repairs import supplement
+    supplement(docs)
+    from stage3_generator_source_links import supplement_source_links
+    supplement_source_links(docs)
+    from stage3_generator_disco_navigation import supplement as supplement_disco
+    supplement_disco(docs)
+    from stage3_generator_execution_structure import supplement as supplement_structure
+    supplement_structure(docs)
+    supplement_source_links(docs)
 
 
 if __name__=='__main__':

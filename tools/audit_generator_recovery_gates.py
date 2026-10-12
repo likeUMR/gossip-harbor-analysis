@@ -114,6 +114,22 @@ def main() -> None:
                 pending.append(target)
     snapshot_path = DOCS / 'assets/generator-config-source-snapshot.json'
     configs = json.loads(snapshot_path.read_text(encoding='utf-8'))
+    test_path=OUT/'source_rule_tests.json'
+    test_evidence=json.loads(test_path.read_text(encoding='utf-8')) if test_path.exists() else None
+    event_path=OUT/'event_consumers.json'
+    event_evidence=json.loads(event_path.read_text(encoding='utf-8')) if event_path.exists() else None
+    review_path=OUT/'reviewed_rules.json'
+    review_evidence=json.loads(review_path.read_text(encoding='utf-8')) if review_path.exists() else None
+    stale_reviews=[]
+    if review_evidence:
+        for row in review_evidence['reviewed_rule_pages']:
+            if digest(DOCS/row['page'])!=row['page_sha256']:
+                stale_reviews.append(row['page'])
+            for source in row['source_files']:
+                if digest(ROOT/source['source'])!=source['sha256']:
+                    stale_reviews.append(source['source'])
+        if test_path.exists() and digest(test_path)!=review_evidence['source_execution_evidence']['sha256']:
+            stale_reviews.append('source_rule_tests.json')
     def rows(value):
         if isinstance(value, list):
             return len(value)
@@ -129,6 +145,12 @@ def main() -> None:
         ('G6', 'pending', '自动检查相对 Markdown 链接与可达页面；尚无逻辑单元至具体段落的全量映射，四层深度与语义一致性仍需审核。'),
         ('G7', 'pending', '当前审计输入未提供全分支受控案例、原版逐事件/状态/存档差分及差异关闭记录。静态演示不是原版运行证据。'),
     ]
+    if event_evidence:
+        findings[1]=('G2','failed',f"全库 {event_evidence['corpus_count']} 份恢复源码发现 {len(event_evidence['registrations'])} 个直接ItemSpread监听注册点；这些消费者的条件、配置、再派发及动态包装链未全核销。GeneratorBoost具体复制算法已补充，但不能据此证明完整闭包。")
+    if review_evidence:
+        findings[2]=('G3','pending',f"本轮 {len(review_evidence['reviewed_rule_pages'])} 页选定规则有持久化哈希及说明证据；核心114函数的全量逐分支核销尚未完成。选定规则审核不等于整函数批准。失效证据{len(stale_reviews)}项。")
+    if test_evidence:
+        findings[6]=('G7','unavailable',f"恢复源码受控执行 {test_evidence['passed']}/{test_evidence['total']} 通过，只验证选定规则；用户确认只有安装包和解包资源，原版事件/状态/存档差分缺少可运行原版环境。全分支验证也未齐备。")
     if missing_links or set(pages)-reached:
         findings[5] = ('G6', 'failed', '发现缺失相对链接或不可达页面；详见 navigation。语义映射仍待完成。')
     payload = {
@@ -138,6 +160,11 @@ def main() -> None:
         'scope_limitation': 'Two core modules inventoried, not complete operation call closure. Regex candidates are not AST/bytecode semantic proof.',
         'gates': [{'id': g, 'status': s, 'finding': f} for g, s, f in findings],
         'module_evidence': evidence, 'summary': summary, 'functions': records,
+        'selected_rule_review':{'path':str(review_path.relative_to(ROOT)),'stale_evidence':stale_reviews,'evidence':review_evidence},
+        'source_rule_execution':{'path':str(test_path.relative_to(ROOT)),'evidence':test_evidence},
+        'event_consumer_inventory':{'path':str(event_path.relative_to(ROOT)),
+             'registrations':len(event_evidence['registrations']) if event_evidence else None,
+             'limitation':'Direct registration candidates only; no complete dynamic closure certificate.'},
         'document_hashes': {rel: digest(DOCS / rel) for rel in pages},
         'navigation': {'generator_pages': len(pages), 'reachable_by_nav_or_markdown_links': len(reached),
                        'unreachable': sorted(set(pages)-reached), 'missing_links': missing_links,
@@ -165,7 +192,8 @@ def main() -> None:
         md += [f'### {m}', '', '以下方法名尚未出现在母体文档；部分可能是工具或通用读取，需归属后决定解释深度：', '']
         md += [f'- `{name}`' for name in s['without_name_match']]
     md += ['', '## 修复及证据边界', '',
-           '本轮修正 Super Lucky 的因果说明与错误的“后续池”说法，并明确 GeneratorBoost 追加物品是独立 Buff 分支。源码分类可以确认，但消费者闭包及原版回放仍需核销，不能把“没有额外机会”扩大为“没有任何后续活动效果”。', '',
+           '已修正Fixed类型共享有限池、Lucky Smart整数倍率/等级条件、Super分类、宝箱预算与首项消费、SmartItem二进制缺口/补发、Disco助力分与回退、FishNet降级范围、免费计数重置、次数保存顺序、自动满盘缓存和GeneratorBoost追加复制。案例使用本地配置值并区分演示状态；选定规则的执行验证不能扩大为全操作已通过。', '',
+           '配套证据：reviewed_rules.json（页面/源码/配表块哈希与选定规则范围）、source_rule_tests.json（受控恢复源码执行）、EVENT_CONSUMERS.md / event_consumers.json（全库直接事件注册点）。工作记录不进入领导网站。', '',
            '后续优先：补齐配置装载/重载及重置生命周期；核销 GeneratorBoost、Disco、SmartReward、EnergyBoost 的依赖；逐分支绑定文档和案例；采集原版对照。']
     (OUT / 'REVIEW.md').write_text('\n'.join(md)+'\n', encoding='utf-8')
     print(json.dumps({'status': payload['status'], 'gates': {g:s for g,s,_ in findings},

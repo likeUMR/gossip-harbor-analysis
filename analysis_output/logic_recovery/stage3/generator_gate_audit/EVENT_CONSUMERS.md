@@ -12,7 +12,7 @@
 | AdventureActivity.View.AdventureActivityMainWindow | _OnUpdateContent | 42 | AdventureActivityMainWindow:_OnUpdateContent | pending |
 | ScoreRush.Model.ScoreRushModel | _OnItemSpread | 30 | ScoreRushModel:_OnItemSpread | pending |
 | AdventureActivity.Model.AdventureActivityModel | _OnItemSpread | 26 | AdventureActivityModel:_OnItemSpread | pending |
-| Model.Tutorial.Executer.TutorialExecuterActivityItemCreator | _OnItemSpread | 12 |  | pending |
+| Model.Tutorial.Executer.TutorialExecuterActivityItemCreator | _OnItemSpread | 12 | Executer:_OnItemSpread | pending |
 | Model.Vibrate.VibrateModel | _OnItemSpread | 18 | VibrateModel:_OnItemSpread | pending |
 | HitBricksActivity.Model.HitBricksActivityModel | _OnItemSpread | 21 | HitBricksActivityModel:_OnItemSpread | pending |
 | Room.Model.RoomModel | _OnItemSpread | 51 | RoomModel:_OnItemSpread | pending |
@@ -28,9 +28,9 @@
 | Model.Tutorial.Executer.TutorialExecuterItemDetail | OnItemSpread | 15 | Executer:OnItemSpread | pending |
 | TriggerProgressActivity.Model.TriggerProgressActivityModel | _OnItemSpread | 32 | TriggerProgressActivityModel:_OnItemSpread | pending |
 | Model.Tutorial.Executer.TutorialExecuterTemp | _OnItemSpread | 6 | Executer:_OnItemSpread | pending |
-| Model.Tutorial.Executer.TutorialExecuterShowBoardGeneral | _OnItemSpread | 12 |  | pending |
+| Model.Tutorial.Executer.TutorialExecuterShowBoardGeneral | _OnItemSpread | 12 | Executer:_OnItemSpread | pending |
 | CardItem.CardItemModel | OnItemSpread | 16 | CardItemModel:OnItemSpread | pending |
 | Model.Tutorial.Executer.TutorialExecuterClick1 | OnItemSpread | 31 | Executer:OnItemSpread | pending |
 | MapExploreActivity.View.MapExploreActivityBoardWindow | _OnUpdateContent | 36 | MapExploreActivityBoardWindow:_OnUpdateContent | pending |
 | GeneratorBoostActivity.Model.GeneratorBoostActivityModel | _OnItemSpread | 28 | GeneratorBoostActivityModel:_OnItemSpread | pending |
-| Model.Tutorial.Executer.TutorialExecuterShowBoard | _OnItemSpread | 13 |  | pending |
+| Model.Tutorial.Executer.TutorialExecuterShowBoard | _OnItemSpread | 13 | Executer:_OnItemSpread | pending |

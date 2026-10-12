@@ -1,0 +1,213 @@
+{
+  "expanded_function_candidates": [
+    {
+      "module": "MainBoardView",
+      "identifier": "MainBoardView:_OnSpreadFailed",
+      "source": "analysis_data/logic_index/lua/decoded/52680b5a4abed125a8dde2c711abed8c192485b98be02c575c5126f82cbd5298/decompiled.lua",
+      "source_sha256": "4970a97092600f33b180c56b5102c9d9b120dd516191246d01d5fd76682dbd6e",
+      "line": 2205,
+      "end_line": 2234,
+      "body": "function MainBoardView:_OnSpreadFailed(message)\n  local key\n  if message.Reason == SpreadFailedReason.ItemClosed then\n    key = \"hint_item_locked\"\n  elseif message.Reason == SpreadFailedReason.ItemOpening then\n    key = \"hint_item_opening\"\n  elseif message.Reason == SpreadFailedReason.ItemRecharging then\n    key = \"hint_item_recharging\"\n    GM.AudioModel:PlayEffect(AudioFileConfigName.SfxColdingClick)\n    local itemSpread = message.Item:GetComponent(ItemSpread)\n    if itemSpread ~= nil then\n      local restDuration = itemSpread:GetTimerDuration() + itemSpread:GetStartTimer() - GM.GameModel:GetServerTime()\n      if 1200 <= restDuration then\n        UIHelper.TryOpenWXSubscriptionWindow(SubscriptionType.CDRecover, true)\n      end\n    end\n  else\n    key = \"hint_board_full\"\n  end\n  local itemView = self:GetItemView(message.Item)\n  local targetPosition = (itemView and itemView.transform.position or V3Zero) + Vector3(0, 100, 0)\n  local screenPosition = self:ConvertWorldPositionToScreenPosition(targetPosition)\n  GM.UIManager:ShowPromptWithKey(key, screenPosition)\n  if message.Reason == SpreadFailedReason.ItemRecharging or message.Reason == SpreadFailedReason.ItemOpening then\n    self.m_infoBar:GetInfoContent():PlaySkipButtonEffect()\n  elseif message.Reason == SpreadFailedReason.ItemClosed and not self.m_model:HasOpeningItem() then\n    self.m_infoBar:GetInfoContent():PlayOpenButtonEffect()\n  end\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "MainBoardView",
+      "identifier": "MainBoardView:_OnLackEnergy",
+      "source": "analysis_data/logic_index/lua/decoded/52680b5a4abed125a8dde2c711abed8c192485b98be02c575c5126f82cbd5298/decompiled.lua",
+      "source_sha256": "4970a97092600f33b180c56b5102c9d9b120dd516191246d01d5fd76682dbd6e",
+      "line": 2201,
+      "end_line": 2204,
+      "body": "function MainBoardView:_OnLackEnergy(msg)\n  GM.EnergyModel:OnLackEnergy(EnergyType.Main)\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BaseUIBoardView",
+      "identifier": "BaseUIBoardView:_OnSpreadFailed",
+      "source": "analysis_data/logic_index/lua/decoded/c5a885bb08fb62bf8102322c24aafce1d9297795cf7421ca0115d68bc96bc99a/decompiled.lua",
+      "source_sha256": "3a54ee8dbf9d1a0cc5635ee6ca5c2d824fe0192c3f75b4fb5c77a68b3e4939ff",
+      "line": 299,
+      "end_line": 312,
+      "body": "function BaseUIBoardView:_OnSpreadFailed(message)\n  local key\n  if message.Reason == SpreadFailedReason.ItemRecharging then\n    key = \"hint_item_recharging\"\n    GM.AudioModel:PlayEffect(AudioFileConfigName.SfxColdingClick)\n  else\n    key = \"hint_board_full\"\n  end\n  local itemView = self:GetItemView(message.Item)\n  local targetPosition = (itemView and itemView.transform.position or V3Zero) + Vector3(0, 100, 0)\n  local screenPosition = self:ConvertWorldPositionToScreenPosition(targetPosition)\n  GM.UIManager:ShowPromptWithKey(key, screenPosition)\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "EnergyModel",
+      "identifier": "EnergyModel:OnLackEnergy",
+      "source": "analysis_data/logic_index/lua/decoded/0030230aa205488a410d3c4ff05d57c69ae5138a92c10ec91f0fe2d31966b7ae/decompiled.lua",
+      "source_sha256": "e2edf1ba0826f23fda910adb89cf6c5811430854055c320e73452dd6287cfddf",
+      "line": 232,
+      "end_line": 246,
+      "body": "function EnergyModel:OnLackEnergy(type)\n  if type == EnergyType.Main and not GM.TutorialModel:HasAnyStrongTutorialOngoing() then\n    local iapEnabled = GM.ConfigModel:IsIAPEnabled()\n    local bundleEnergyModel = GM.BundleManager:GetModel(EBundleType.EnergyBundle)\n    if iapEnabled and bundleEnergyModel ~= nil then\n      bundleEnergyModel:Try2TriggerEnergyBundle()\n      if bundleEnergyModel:GetCurBundleConfigData() ~= nil and not bundleEnergyModel:IsBundleWindowPopupAfterEnergyWindow() then\n        GM.UIManager:OpenView(UIPrefabConfigName.BundleEnergyWindow)\n        return\n      end\n    end\n  end\n  GM.ShopModel:OpenEnergyWindow(type, true)\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BundleEnergyModel",
+      "identifier": "BundleEnergyModel:Try2TriggerEnergyBundle",
+      "source": "analysis_data/logic_index/lua/decoded/61ed4d451148c140bbde2bbda56c90dd0e9374bb58f6448b5502332912b4c9bd/decompiled.lua",
+      "source_sha256": "c6c319f9f0315bee679402bfc2897c4d4770eb4f980e59e3acc028ac4fedc67f",
+      "line": 124,
+      "end_line": 151,
+      "body": "function BundleEnergyModel:Try2TriggerEnergyBundle()\n  if self:_CanTriggerEnergyBundle() then\n    if self:_GetCurState() == EBundleEnergyState.None then\n      self.m_metaDBTable:Set(EBundleMetaKey.EnergyGroupId, BundleMetaDBColumnValue, self.m_dataGroup:GetGroupId())\n      self.m_metaDBTable:Set(EBundleMetaKey.EnergyGroupState, BundleMetaDBColumnValue, EBundleEnergyState.Open)\n      self.m_metaDBTable:Set(EBundleMetaKey.EnergyNextStateTime, BundleMetaDBColumnValue, GM.GameModel:GetServerTime() + self.m_dataGroup:GetGroupLastDuration())\n    end\n    local curBundle = self:_GetNextTriggerBundleData()\n    if curBundle == nil then\n      curBundle = self.m_dataGroup:GetConfigData(self.m_dataGroup:GetBundleIds()[1])\n    end\n    self.m_manager:ClearBundleDatas(EBundleType.EnergyBundle)\n    local curTime = GM.GameModel:GetServerTime()\n    self.m_dbTable:BatchSet({\n      [curBundle:GetBundleId()] = {\n        [EBundleDBKey.DBColumnLeftCount] = 1,\n        [EBundleDBKey.DBColumnRefreshTime] = INVALID_TIME,\n        [EBundleDBKey.DBColumnLastTime] = GM.GameModel:GetServerTime() + self.m_dataGroup:GetBundleLastDuration(),\n        [EBundleDBKey.DBColumnBundleType] = EBundleType.EnergyBundle,\n        [EBundleDBKey.DBColumnPurchaseId] = curBundle:GetPurchaseId(),\n        [EBundleDBKey.DBColumnGroupId] = self.m_dataGroup:GetGroupId()\n      }\n    })\n    self.m_metaDBTable:Set(EBundleMetaKey.EnergyTriggerCount, BundleMetaDBColumnValue, self:_GetTriggerCount() + 1)\n    EventDispatcher.DispatchEvent(EEventType.BundleDataRefreshed)\n  end\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BundleEnergyModel",
+      "identifier": "BundleEnergyModel:IsBundleWindowPopupAfterEnergyWindow",
+      "source": "analysis_data/logic_index/lua/decoded/61ed4d451148c140bbde2bbda56c90dd0e9374bb58f6448b5502332912b4c9bd/decompiled.lua",
+      "source_sha256": "c6c319f9f0315bee679402bfc2897c4d4770eb4f980e59e3acc028ac4fedc67f",
+      "line": 102,
+      "end_line": 108,
+      "body": "function BundleEnergyModel:IsBundleWindowPopupAfterEnergyWindow()\n  if self.m_dataGroup == nil then\n    return false\n  end\n  return self.m_dataGroup:GetPopType() == 1\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BundleEnergyModel",
+      "identifier": "BundleEnergyModel:_GetNextTriggerBundleData",
+      "source": "analysis_data/logic_index/lua/decoded/61ed4d451148c140bbde2bbda56c90dd0e9374bb58f6448b5502332912b4c9bd/decompiled.lua",
+      "source_sha256": "c6c319f9f0315bee679402bfc2897c4d4770eb4f980e59e3acc028ac4fedc67f",
+      "line": 109,
+      "end_line": 123,
+      "body": "function BundleEnergyModel:_GetNextTriggerBundleData()\n  local curBundleIndex\n  local bundleIds = self.m_dataGroup:GetBundleIds()\n  for index, bundleId in ipairs(bundleIds) do\n    if self.m_dbTable:HasRow(bundleId) then\n      if self.m_dbTable:GetValue(bundleId, EBundleDBKey.DBColumnLeftCount, 0) == 0 then\n        curBundleIndex = index % #bundleIds + 1\n      else\n        curBundleIndex = index\n      end\n    end\n  end\n  return curBundleIndex ~= nil and self.m_dataGroup:GetConfigData(bundleIds[curBundleIndex]) or nil\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BundleEnergyModel",
+      "identifier": "BundleEnergyModel:_CanTriggerEnergyBundle",
+      "source": "analysis_data/logic_index/lua/decoded/61ed4d451148c140bbde2bbda56c90dd0e9374bb58f6448b5502332912b4c9bd/decompiled.lua",
+      "source_sha256": "c6c319f9f0315bee679402bfc2897c4d4770eb4f980e59e3acc028ac4fedc67f",
+      "line": 166,
+      "end_line": 197,
+      "body": "function BundleEnergyModel:_CanTriggerEnergyBundle()\n  if not self.m_bLateInited then\n    return false\n  end\n  self:_Try2UpdateTriggerCount()\n  if self.m_dataGroup == nil or self:_GetTriggerCount() >= self.m_dataGroup:GetTriggerMaxNum() then\n    return false\n  end\n  if self:_GetCurState() == EBundleEnergyState.CoolingDown then\n    return false\n  end\n  if GM.ShopModel:IsEnergyFreeRefill(EnergyType.Main) then\n    return false\n  end\n  if GM.ShopModel:GetBuyEnergyGemCost(EnergyType.Main, true) < self.m_dataGroup:GetTriggerPrice() then\n    return false\n  end\n  local bundleIds = self.m_dataGroup:GetBundleIds()\n  for i, bundleId in ipairs(bundleIds) do\n    if self.m_manager:IsBundleDataValid(bundleId) then\n      return false\n    end\n  end\n  if GM.EnergyModel:GetEnergy(EnergyType.Main) >= ItemSpread.GetCostEnergyNum() then\n    return false\n  end\n  if GM.ShopModel:IsChainEnergyOpen() then\n    return false\n  end\n  return true\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "BundleEnergyModel",
+      "identifier": "self._CanTriggerEnergyBundle",
+      "source": "analysis_data/logic_index/lua/decoded/61ed4d451148c140bbde2bbda56c90dd0e9374bb58f6448b5502332912b4c9bd/decompiled.lua",
+      "source_sha256": "c6c319f9f0315bee679402bfc2897c4d4770eb4f980e59e3acc028ac4fedc67f",
+      "line": 245,
+      "end_line": 251,
+      "body": "  function self._CanTriggerEnergyBundle()\n    return true\n  end\n  \n  self:Try2TriggerEnergyBundle()\n  self._CanTriggerEnergyBundle = cacheCanTriggerFunc\nend",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "ShopModel",
+      "identifier": "ShopModel:OpenEnergyWindow",
+      "source": "analysis_data/logic_index/lua/decoded/e51fade50aa50666fbecc7cd30ebeed3387aa9f1c66487bf4ece7a5c0d599bc9/decompiled.lua",
+      "source_sha256": "222d6295fc8d6303cdc29074721c8bd8f5cbe25acfd6811e03ba326474042a10",
+      "line": 265,
+      "end_line": 284,
+      "body": "function ShopModel:OpenEnergyWindow(energyType, popupForLackingEnergy, isWhenIdle)\n  local windowArgs\n  if self:IsChainEnergyOpen() then\n    windowArgs = {\n      self:GetChainEnergyPrefabName(),\n      popupForLackingEnergy\n    }\n  else\n    windowArgs = {\n      UIPrefabConfigName.BuyEnergyWindow,\n      popupForLackingEnergy\n    }\n  end\n  if isWhenIdle then\n    GM.UIManager:OpenViewWhenIdle(table.unpack(windowArgs))\n  else\n    GM.UIManager:OpenView(table.unpack(windowArgs))\n  end\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "ShopModel",
+      "identifier": "ShopModel:IsChainEnergyOpen",
+      "source": "analysis_data/logic_index/lua/decoded/e51fade50aa50666fbecc7cd30ebeed3387aa9f1c66487bf4ece7a5c0d599bc9/decompiled.lua",
+      "source_sha256": "222d6295fc8d6303cdc29074721c8bd8f5cbe25acfd6811e03ba326474042a10",
+      "line": 623,
+      "end_line": 637,
+      "body": "function ShopModel:IsChainEnergyOpen()\n  if Table.IsEmpty(self.m_chainEnergyConfig) then\n    return false\n  end\n  if GLOBAL_APP and not GM.DownloadManager:IsLabelDownloaded(AddressableLabel.ChainEnergy) then\n    return false\n  end\n  self:TryTriggerChainEnergy()\n  local endTime = self:GetChainEnergyEndTime()\n  if endTime <= GM.GameModel:GetServerTime() then\n    return false\n  end\n  return true\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "ShopModel",
+      "identifier": "ShopModel:GetChainEnergyPrefabName",
+      "source": "analysis_data/logic_index/lua/decoded/e51fade50aa50666fbecc7cd30ebeed3387aa9f1c66487bf4ece7a5c0d599bc9/decompiled.lua",
+      "source_sha256": "222d6295fc8d6303cdc29074721c8bd8f5cbe25acfd6811e03ba326474042a10",
+      "line": 701,
+      "end_line": 705,
+      "body": "function ShopModel:GetChainEnergyPrefabName()\n  local uicode = self.m_chainEnergyConfig.UICode or \"default\"\n  return ChainEnergyMainWindowPrefabName[uicode]\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "DiscoTutorial",
+      "identifier": "Executer:_OnItemSpread",
+      "source": "analysis_data/logic_index/lua/decoded/13c912ee38a04befa0356d7ef49b32b7e595490ef75dfa4049b66769971ceb0e/decompiled.lua",
+      "source_sha256": "b812dfd01b6e62483d82f59ddbb46d15de5fb58e103238c5764e58e947b977a8",
+      "line": 11,
+      "end_line": 18,
+      "body": "function Executer:_OnItemSpread(message)\n  if self.m_OnTapState then\n    self.m_model:SetForceSourceBoardPosition(nil)\n    self.m_model:SetForceTargetBoardPosition(nil)\n    self:StartTutorial3()\n  end\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "DiscoTutorial",
+      "identifier": "Executer:StartTutorial3",
+      "source": "analysis_data/logic_index/lua/decoded/13c912ee38a04befa0356d7ef49b32b7e595490ef75dfa4049b66769971ceb0e/decompiled.lua",
+      "source_sha256": "b812dfd01b6e62483d82f59ddbb46d15de5fb58e103238c5764e58e947b977a8",
+      "line": 56,
+      "end_line": 75,
+      "body": "function Executer:StartTutorial3()\n  TutorialHelper.HideGesture(self.m_gesture)\n  local progress = MainBoardView.GetInstance():GetTriggerBoostDiscoLuaTable()\n  if progress == nil then\n    self:Finish(self.m_gesture)\n    return\n  end\n  local trans = progress:GetTutorialRect1()\n  local size = trans.sizeDelta\n  local progressPosition = MainBoardView.GetInstance():ConvertWorldPositionToScreenPosition(trans.position)\n  progressPosition = PositionUtil.UICameraScreen2World(progressPosition)\n  TutorialHelper.UpdateMask(progressPosition, size, function()\n    self:Finish(self.m_gesture)\n  end, false)\n  TutorialHelper.ShowDialog(GM.GameTextModel:GetText(\"disco_buff_guide_1_3\"), 75, \"Quinn\")\nend\n\nreturn function(tutorialId, strDatas)\n  return TutorialExecuter.CreateExecuter(Executer, tutorialId, strDatas)\nend",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    },
+    {
+      "module": "DiscoTutorial",
+      "identifier": "Executer:OnStart",
+      "source": "analysis_data/logic_index/lua/decoded/13c912ee38a04befa0356d7ef49b32b7e595490ef75dfa4049b66769971ceb0e/decompiled.lua",
+      "source_sha256": "b812dfd01b6e62483d82f59ddbb46d15de5fb58e103238c5764e58e947b977a8",
+      "line": 4,
+      "end_line": 10,
+      "body": "function Executer:OnStart()\n  self.m_discoBoostHandler = GM.BoostChargeManager:GetHandler(EBoostChargeType.BoostCharge_disco)\n  EventDispatcher.AddListener(EEventType.CloseView, self, self._OnCloseView)\n  EventDispatcher.AddListener(EEventType.ItemSpread, self, self._OnItemSpread)\n  EventDispatcher.AddListener(EEventType.SpreadFailed, self, self._OnItemSpread)\nend\n",
+      "status": "待解决",
+      "local_review": "Direct logic inspected; branch-level approval and all dependencies not yet complete."
+    }
+  ],
+  "registration_helper": {
+    "source": "analysis_data/logic_index/lua/decoded/2e2dcfa5176ca1325d4fe47e36cdba5b4343edf1ec81015f1ac18ed69c8af7ce/decompiled.lua",
+    "sha256": "d99508e0a6ff34a24ae78a967e638d5ac8cebaf471681b410d83accb4e4aa354",
+    "line": 7,
+    "meaning": "eventName maps to BoardEventType[eventName], method maps to view[_On..eventName]; handler lookup honors view inheritance."
+  },
+  "new_edges": [
+    "SpreadFailed→MainBoardView._OnSpreadFailed→prompt/button/audio/subscription",
+    "SpreadFailed(global)→DiscoTutorial._OnItemSpread→clear forced positions→StartTutorial3",
+    "LackEnergy→MainBoardView._OnLackEnergy→EnergyModel.OnLackEnergy→BundleEnergyModel or ShopModel",
+    "BundleEnergyModel.Try2TriggerEnergyBundle→DB writes→BundleDataRefreshed"
+  ],
+  "open_edges": [
+    "AddHandlerAndRecordMap/PairEvent inherited registration and callback order",
+    "UIManager prompt/window initialization and asynchronous callbacks",
+    "Tutorial StartTutorial3 gesture/mask callbacks",
+    "BundleEnergyModel trigger qualification, group/cache/lifecycle",
+    "BundleDataRefreshed consumers",
+    "Shop chain-energy qualification/window selection lifecycle",
+    "WX/iOS platform subscription helpers"
+  ],
+  "document_pages": [
+    {
+      "page": "operations/generator/state/closed/detail.md",
+      "sha256": "0ee885915404046e8d9514728d5a3ef5b4ee4eb81c0492d7701f2693cb7269a0"
+    },
+    {
+      "page": "operations/generator/state/opening/detail.md",
+      "sha256": "231cc114705856b25ec29693154a85ac6fc91054a8214b56e538a94b63fb7c07"
+    },
+    {
+      "page": "operations/generator/state/initializing/detail.md",
+      "sha256": "f96573c3da6758fb49772cb7d3c2d96728d5fce04789d8eef8c791fbe4090228"
+    },
+    {
+      "page": "operations/generator/position/full/detail.md",
+      "sha256": "4b11e4cbb7bad175eca0b1394315508b366026b10f1e98e3196afa99daf0cff1"
+    },
+    {
+      "page": "operations/generator/energy/consume/detail.md",
+      "sha256": "9955c03fc6c5b37a5eb4a1500eaf83163296d74060addd6d76558856d1634801"
+    }
+  ],
+  "scope": "Expanded downstream candidates; not a complete listener inventory or full closure certificate."
+}

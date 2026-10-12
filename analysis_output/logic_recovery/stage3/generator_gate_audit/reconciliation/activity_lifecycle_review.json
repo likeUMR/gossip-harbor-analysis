@@ -1,0 +1,19 @@
+{
+  "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+  "source_sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
+  "document": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md",
+  "document_sha256": "ea526c6d3012d5b8681c5aee6ec9094bfdd1b1c89f5005144a20bfb50428d06f",
+  "resolved_rules": [
+    "Started gate",
+    "refresh order",
+    "ClearState progress persistence",
+    "ClearBuff level-zero early return",
+    "round increment and BI ordering"
+  ],
+  "open_edges": [
+    "all dynamic RefreshEvent consumers",
+    "native DB commit/reload",
+    "full activity configuration selection"
+  ],
+  "full_acceptance": false
+}

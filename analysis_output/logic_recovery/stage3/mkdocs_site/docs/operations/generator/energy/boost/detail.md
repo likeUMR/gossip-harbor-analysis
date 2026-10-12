@@ -14,7 +14,7 @@
 
 ## 3. 普通路径的订单截档
 
-`SpreadCheckEnergyRatioAndCode` 只有最大指数>0、算法允许增益且代码无特殊前缀时，先取最大档，再按 i=0..最大档扫描同链等级：目标等级存在订单缺口，或满足源码中的低等级正奇数剩余条件时，截为 i 并停止。奇数条件的等级限制是 `chainLevel+i < maxEnergyBoostRatio+1`，不能泛化成“所有等级有奇数就截档”。随后沿 MergedType 升级，生鱼专用逻辑见[链升级与 FishNet](../../overrides/boost/detail.md)。
+`SpreadCheckEnergyRatioAndCode` 只有最大指数>0、算法允许增益且代码无特殊前缀时，先取最大档，再按 i=0..最大档扫描同链等级：目标等级存在订单缺口，或满足源码中的低等级正奇数剩余条件时，截为 i 并停止。奇数条件的等级限制是 `chainLevel+i < maxEnergyBoostRatio+1`，不能泛化成“所有等级有奇数就截档”。随后沿 MergedType 升级，生鱼专用逻辑见链升级与 FishNet。
 
 ## 4. 真正扣能量与母体次数
 
@@ -38,9 +38,9 @@
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -151,7 +151,7 @@
 
 ## 本逻辑使用的配表在哪里
 
-- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
 
 
 <!-- generator-configs:end -->

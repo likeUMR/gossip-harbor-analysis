@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "config_table_rows": [
+    26,
+    26,
+    177,
+    177,
+    1
+  ],
+  "total_records": 407,
+  "source_exports_verified": 5,
+  "original_runtime": false,
+  "screenshot": "downstream-configs.png"
+}

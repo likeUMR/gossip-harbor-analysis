@@ -20,15 +20,15 @@ Lucky 判断的目的不是直接从 `lucky_items` 抽一个物品，而是先�
 
 左侧四个子节点是第三层机制；继续展开后才进入第四层的读取、判断、写回和抽样细节。
 
-**源码**：[LuckyProduceModel.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua)，主入口 `Try2ProduceLuckyItem`。
+**源码**：[LuckyProduceModel.lua](../../../assets/recovered-source/LuckyProduceModel.lua)，主入口 `Try2ProduceLuckyItem`。
 
-Disco 支持当前母体时会排除 Lucky，见[活动资格与执行优先级](../overrides/activity/index.md)。Lucky 成功路径提前返回，不走普通产出的次数扣除链。
+Disco 支持当前母体时会排除 Lucky，见活动资格与执行优先级。Lucky 成功路径提前返回，不走普通产出的次数扣除链。
 
 <!-- lucky-classification-explanation:start -->
 
 ## Super Lucky 是否多给一次机会？
 
-不会。机会判定回答“本次是否 Lucky”，物品抽取回答“得到哪个物品”；[Super Lucky 分类](items/type.md)发生在物品抽取之后，用来识别抽中的物品应采用普通还是 Super 表现。这里没有第三次“是否超级”的随机判定，也没有再送一次 Lucky 机会。
+不会。机会判定回答“本次是否 Lucky”，物品抽取回答“得到哪个物品”；Super Lucky 分类发生在物品抽取之后，用来识别抽中的物品应采用普通还是 Super 表现。这里没有第三次“是否超级”的随机判定，也没有再送一次 Lucky 机会。
 
 连续 Lucky 会使后续点击直接取得资格；GeneratorBoost 的额外 Lucky Buff 可以在另一个空格追加物品。这两种机制有各自的状态和条件，不能与 Super Lucky 的分类混为一谈。
 
@@ -47,7 +47,7 @@ Disco 支持当前母体时会排除 Lucky，见[活动资格与执行优先级]
 
 ## 贯穿案例：点击食品袋 105
 
-<div class="case-assets"><img src="../../../../assets/cases/lucky_item_1.png" alt="Lucky 标记" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"><img src="../../../../assets/cases/item-204.png" alt="Lucky 产物 204" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
+<div class="case-assets"><img src="../../../assets/cases/lucky_item_1.png" alt="Lucky 标记" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"><img src="../../../assets/cases/item-204.png" alt="Lucky 产物 204" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
@@ -57,8 +57,8 @@ Disco 支持当前母体时会排除 Lucky，见[活动资格与执行优先级]
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>

@@ -1,0 +1,642 @@
+[
+  {
+    "module": "Data.Config.AdventureItemModelConfig_bandgirl",
+    "records": 32,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "bf00c951b1fe825f1f4f54757176e44bd956c418578e2e34cc6d7271c31fe516",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_bandgirl_obs",
+    "records": 33,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "b6a1f6a6c7ec967fd3bb6c3b610c1af7c1bdf9fa7a551a2d3b29dbc5479d8f90",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_dogpark",
+    "records": 35,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "6ffb4de9c9033b96fc5fc83e46f0056107b48ae9eb70e2914d46c6ba85a5be67",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_dogpark_level",
+    "records": 34,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "eb89696ad9ec0e692e4c858f7ba82c4e01b30b486a66ccfe4a675d256a279707",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_dogpark_obs",
+    "records": 36,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "bf970f095ac67291305e31f3f3c08438ee0281357aae492e0c474de9e4e66650",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_dogparkpure",
+    "records": 35,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "e1b6158f5c1e56487b56002b2306f27dc8588a618810b9ee802701b05882f7a0",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.AdventureItemModelConfig_witch",
+    "records": 33,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "f1292dca88e360b4ecfb2ee9b50999d65e0329789f0c05e610812bef9837eef2",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.BreakItemModelConfig_Shopping",
+    "records": 320,
+    "displayed_records": 36,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "74330a454eece04a6f29f7492e385a9ec16779dbe3b938703ce60a992e8b0af4",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.Dig2ItemModelConfig",
+    "records": 134,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "1895994fe89fd7c29bfb671febba7098e3738960d3e61c8fa660063b55c08cec",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.Dig2ItemModelConfig_superweb",
+    "records": 132,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "3899959e10a022ff73b63d61f7878019b1b22aeb62e82d8e25de0c9bf10118ce",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.Dig2ItemModelConfig_wheel",
+    "records": 134,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "adb4ec5951fc5cbad6447fb181a4f7de8ea84317518249bed6b48cdfdacac123",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.DigItemModelConfig",
+    "records": 134,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "1ba22da8289cd6cb664f056e6a098bef6550ac02325189d4b073519944674026",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.DigItemModelConfig_super500",
+    "records": 132,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "7ca395375a4215cfee958a6555766b88ccc6c5f17e74e411fa515080b5ec396b",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ExploreItemModelConfig_lavamapexplore",
+    "records": 38,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "be00465a0b16dd0e854b840f4f9ce243a5fb3da3980ab4f872b221cea25e424e",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ExploreItemModelConfig_midfallmapexplore",
+    "records": 38,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "44628921882288eb8a8b752f0c71ac0d349b740f83ee113dff28fbc427e9dafe",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ExploreItemModelConfig_midfallmapexplore_test",
+    "records": 38,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "65aeb84cc59d4626cd9adf3f32dafdd7b59eb5a28fc6532f15a154347969c286",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_halloween26",
+    "records": 36,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "5c525d4959b2247bb407daaded066b36099f4e02959d03534094c55192a276af",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_halloween26_obs",
+    "records": 37,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "af62443eef9527ec818784c208fda5645efc93eb120210bd0dfb4cc1da1e67c2",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_rainforest",
+    "records": 36,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "fc9a4412aab807c83808ac2dc28dda1dd838c0e2ac161d443dd00750e784a1c5",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_rainforest_obs",
+    "records": 37,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "121b590f5111cf74042fb41ea30a434f8fcfb63d9e373d81eaa2b6e3d7f8a5a9",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_unicorn",
+    "records": 36,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "c16871b063047ae1b77a4d681807f6e977f842a5924e06c57306b5bcadc1596c",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FarmboardItemModelConfig_unicorn_faster",
+    "records": 36,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "d2226473d95d86810f972a77c93bb0153e9e8af5305bf26bb5d5975c908e6215",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FreefallItemModelConfig_monster",
+    "records": 27,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "d60461b350677f7620f936700b359137a94cf5a9a485210c7ad88750a9c2aeaf",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.FreefallItemModelConfig_ranger",
+    "records": 27,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "56f94f0303c4cb11dd1b4f8731d1852e7c9261f95cec627fb60da594e4716fa6",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig",
+    "records": 548,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "bba81572a3706b2fffa65e41af7a16b4304ae36236e72818149fe085b597495d",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_carditem2",
+    "records": 548,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "e2a1ee82e46c53d133bd56c2f8958fabc6471bdbc7008702ac84d735788cabf6",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_extracust",
+    "records": 550,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "ba0eb73f6b80d5f2baf864e80afcf90b43525c071327e036aa08dd06ea2f90fb",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.ItemModelConfig_shell",
+    "records": 556,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "8612d7006c534a7654d4ca659c8fb9740994e217e371da7cca385f7c9335cf6b",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_moon26",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "bce9f9ffe398cd5f4274e364a3abbde0bbe1325092bf3e55bc6f6fba668c00c9",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_moon26_morestage",
+    "records": 30,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "8496513c75d0fefb5cd034f15c877fea8ef4b6cfddfef9f887312c5017322bfe",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_moon26_wheel",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "9e4bcb4dad3ecdf8018de6091005c2aef8ffabc800bc813df2835185f0ff9474",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_sleepover",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "78ac1a98be64edda57da4cb56dc96f4da1435549421d9d49469f83bd990384e7",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_sleepover_morestage",
+    "records": 30,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "edea8e8ef21842c0fce187309acaed08281a55403aac907acd5bb93a5d29f56c",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_y2k",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "cf8c9acc5186226d92d1584391da678b17c2c80a5027805db163ee09d1b81d10",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_y2k_morestage",
+    "records": 30,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "b37ccfe00096408cc5d0dc8b2cd3b1147076f340371a5c233ec3abb709b3eaa9",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_y2k_web",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "017eb204c0b080b4fa841d6f3ba0ee53762226e581ff482699045e805130fe9d",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.MultiboardsItemModelConfig_y2k_wheel",
+    "records": 29,
+    "displayed_records": 0,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "193c60424bf5f451953f6740a22799cd6c4b5aa1340aa3e83dee0a8e0516b624",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.PureboardItemModelConfig_dogpark",
+    "records": 35,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "69c588ae54f10c1b3cfed86bc91d85fd15eb556781cb63de5fb258d7e7d8d95c",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.PureboardItemModelConfig_dogpark_cloud2",
+    "records": 35,
+    "displayed_records": 4,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "869c78fc635cd6f1c8432e9284fcb9ea1360fde7d08342bb6b7ab52e3be283c3",
+    "consumer_explanation_status": "pending-full-field-review"
+  },
+  {
+    "module": "Data.Config.StickerboardItemModelConfig_winter",
+    "records": 116,
+    "displayed_records": 2,
+    "fields": [
+      "Type",
+      "Swallow_Weight1",
+      "Swallow_Number1",
+      "Swallow_Weight2",
+      "Swallow_Number2",
+      "Swallow_AllowTap",
+      "Transform_Weight"
+    ],
+    "bytecode_sha256": "0cd29db76ce2624c5ed3f549972b80a103d84c42fc73a814e9e1c76e15fdfeeb",
+    "consumer_explanation_status": "pending-full-field-review"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "module": "Data.Config.SystemConfig",
+    "records": 4,
+    "displayed_records": 1,
+    "fields": [
+      "name",
+      "value"
+    ],
+    "bytecode_sha256": "0aaf6b47bad7e974be86870ab272fd6aea8b8614297a78bf30f2613bc8306432",
+    "consumer_explanation_status": "pending-full-field-review"
+  }
+]

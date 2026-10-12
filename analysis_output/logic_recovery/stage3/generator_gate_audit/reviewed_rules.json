@@ -1,0 +1,675 @@
+{
+  "status": "partial_review_not_acceptance",
+  "reviewed_rule_pages": [
+    {
+      "page": "operations/generator/output/fixed/index.md",
+      "page_sha256": "f98de14a8c2d53127af31e217016f4068cb879a6145c7682d1702e6352eacaaa",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "执行顺序",
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/output/fixed/detail.md",
+      "page_sha256": "e9f87779cbc129806a511311d3de759384868826105d8efe68b3a9e7f41ae117",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 决定使用哪个池",
+        "2. 加载、迁移与配置变化",
+        "3. 抽取及持久化",
+        "4. 随机与边界",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        },
+        {
+          "name": "ItemFixedSpreadModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/9155738fadf853bcd0d59504afdf21f00caad94271007fe8444d26a64d9bf93a/decompiled.lua",
+          "sha256": "5c23fb5fa659f12f2f6bef72b3e6af08de92afd4924621755482bda50d8db4dc"
+        },
+        {
+          "name": "RandomGenerateCodeHelper.lua",
+          "source": "analysis_data/logic_index/lua/decoded/f03d9253b57f82e37f0dea724e5603ea3a62cf5fade257eb08fa80c13e0d7570/decompiled.lua",
+          "sha256": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985"
+        },
+        {
+          "name": "BoardModelHelper.lua",
+          "source": "analysis_data/logic_index/lua/decoded/4908a8d707e3b24699810f84db8fa2a299914a0f6e1aa8ee8a13c6f70e49da67/decompiled.lua",
+          "sha256": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "1e3f3e872dfc7fb2b91b38bd62708b426028502e37307d16ce833647656cfd97"
+      ]
+    },
+    {
+      "page": "operations/generator/lucky/items/smart.md",
+      "page_sha256": "31d7061061da52a0d9677c5bb9165495e3098425053764b92ab5d8c15c78442d",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 开启条件",
+        "2. 决定哪些候选能帮助订单",
+        "3. 从原权重重新计算临时权重",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：Lucky Smart Produce 参数",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "LuckyProduceModel.lua",
+          "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+          "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "a807e266ceb268272dfa22af6172efdcf92c007283829fbc9efdfc39eb67265d"
+      ]
+    },
+    {
+      "page": "operations/generator/lucky/chance/load.md",
+      "page_sha256": "e9a55e454903cf03cc5e6068f62b14f5498b4c5eb939cc57da2415717339eb39",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 装载并建立母体索引",
+        "2. 本次点击选择适用记录",
+        "3. GeneratorBoost 与重新加载",
+        "4. 重装周期机会",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：Lucky 包内配置及活动变体",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "LuckyProduceModel.lua",
+          "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+          "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "79e4173d499d3f10c1b4dc90053dd354d099f466e3d08589216e88c05cd22473"
+      ]
+    },
+    {
+      "page": "operations/generator/lucky/free/generate.md",
+      "page_sha256": "69c239c6600422c95bc906961a3866642dc12e8566779136ddd8880fc5cb6891",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 载入能量段",
+        "2. 消费资源后检查跨段",
+        "3. 在每个新增段内抽取阈值",
+        "4. 按服务器日界重置",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：免费 Lucky 服务器字段",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "LuckyProduceModel.lua",
+          "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+          "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "77e032d6c01ad97d13e664cc830965237752f90505e45454af141d378f3783b6"
+      ]
+    },
+    {
+      "page": "operations/generator/energy/boost/detail.md",
+      "page_sha256": "b171883108ba0922998b341b12ef5b798860c206418e8fb0f3e5cace65f91862",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 预检查最大档",
+        "2. Lucky 路径的历史调整",
+        "3. 普通路径的订单截档",
+        "4. 真正扣能量与母体次数",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：能量增益适用母体",
+        "本逻辑使用的配表在哪里"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": [
+        "49cef9ff41724e32f83220f030afa93c694388043fc42170303dfc7abf456bdb"
+      ]
+    },
+    {
+      "page": "operations/generator/lifecycle/cooldown/detail.md",
+      "page_sha256": "a729b95cbe453a79419773a30f1cb3c9b25abfc9d8324a789d012d14439689f2",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 哪些条件启动计时",
+        "2. 比例与阶段",
+        "3. 到期如何补回",
+        "4. CD Buff 谁可用",
+        "5. 费用、表现与跳时",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "c287119b3c7227f83005aa54aabfe08b070ae0dac438e65e472c291f30cd872a"
+      ]
+    },
+    {
+      "page": "operations/generator/position/auto/detail.md",
+      "page_sha256": "867c4837d0d341c65111311bf3af3dd378bbc9c5ca515c13c8f0484b7ce4aef9",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "点击与自动更新的关系",
+        "无空位的特殊缓存",
+        "自动路径与手动的区别",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "c287119b3c7227f83005aa54aabfe08b070ae0dac438e65e472c291f30cd872a"
+      ]
+    },
+    {
+      "page": "operations/generator/events/board/detail.md",
+      "page_sha256": "1c9b42f21548f1cb4a9fe7bca614cc4d0bfbaaf65069c2e2dea9f1fe359e715d",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 创建与保存先于通知",
+        "2. 通知完成后才写本次日志",
+        "3. 空位与失败边界",
+        "贯穿案例：点击食品袋 105",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "BaseBoardModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce/decompiled.lua",
+          "sha256": "16506a7f62041132200665ce8db3b0b37fed0da5d01fbccb07cad74604c7cd1b"
+        },
+        {
+          "name": "MainBoardModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e/decompiled.lua",
+          "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+        },
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/events/resource/detail.md",
+      "page_sha256": "68c93381af0b7f791f28ae6fced5c1b1a1944dd50912da8daaa43be3d8a0497d",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 次数先处理，再扣实际能量",
+        "2. 属性消耗的实际分流",
+        "3. 请求量和实际量不能混用",
+        "贯穿案例：点击食品袋 105",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "PropertyDataManager.lua",
+          "source": "analysis_data/logic_index/lua/decoded/85cb427a1f2c143832b99c36dfda5efb0df187f4aa68e1566eabc165ea228160/decompiled.lua",
+          "sha256": "7826239807eb344e5c2ab6557b6bf5bcc2a8e2c27c01f47d04650c18561a2b94"
+        },
+        {
+          "name": "EnergyModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/0030230aa205488a410d3c4ff05d57c69ae5138a92c10ec91f0fe2d31966b7ae/decompiled.lua",
+          "sha256": "e2edf1ba0826f23fda910adb89cf6c5811430854055c320e73452dd6287cfddf"
+        },
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/overrides/activity/index.md",
+      "page_sha256": "85a107beae104ab858c43b390aed4107271e71cc29ab1291f1fcefc959730f7a",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "执行顺序",
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/overrides/activity/detail.md",
+      "page_sha256": "620b2fd5619e909376eaa296ee52260b78aa7ccdba13ea3e19a736836182384c",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 支持条件与优先级",
+        "2. 直接目标如何找",
+        "3. 直接目标的费用",
+        "4. 无直接目标：普通结果再降级",
+        "5. 结束与配置边界",
+        "6. 助力从哪里来，以及再次获得会发生什么",
+        "7. Disco 本身的配置字段",
+        "8. 两条路径的结算对照",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：Generator Boost 母体替换配置",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        },
+        {
+          "name": "BoostChargeDiscoBoostHandler.lua",
+          "source": "analysis_data/logic_index/lua/decoded/0632e1008f11ab0e482f1bcc4ae5f3aa1692ccec150be24f7c53c419d42e1fd8/decompiled.lua",
+          "sha256": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "77e0a19e4c73baa2d440354a9555eca8f1d95e4ea7627249b7310f6cc7d6424c"
+      ]
+    },
+    {
+      "page": "operations/generator/events/side_effects/index.md",
+      "page_sha256": "b04b548b39298439da7c72b5dac80659f0bf87357fc3de6365d70297ae336484",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "处理位置与含义",
+        "同一通知还可能推进什么",
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/output/chest/index.md",
+      "page_sha256": "278fb80f689953fb68586e8ae2d5eea836491baee112f073f4ae49da60f9ac73",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "执行顺序",
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/output/chest/detail.md",
+      "page_sha256": "5d15580e2d9f0358cd2fdabd71ba7a62e2d8a404f9a48be7305e34d2b75cd05e",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 输入和库存分配",
+        "2. 按预算处理订单",
+        "3. 不够买目标物品时如何降级",
+        "4. 订单后还有预算",
+        "5. 本次实际使用哪件、如何扣母体",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        },
+        {
+          "name": "RandomGenerateCodeHelper.lua",
+          "source": "analysis_data/logic_index/lua/decoded/f03d9253b57f82e37f0dea724e5603ea3a62cf5fade257eb08fa80c13e0d7570/decompiled.lua",
+          "sha256": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "5ee324f66fde28cf9bcd2dd17147145e1fa88a96d16bce4de6cba95a0424d02b"
+      ]
+    },
+    {
+      "page": "operations/generator/output/smart/index.md",
+      "page_sha256": "ca4eaaf663c07d0979a47faf08447fa3992fda40b670a5621ab52ecc874cff61",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "执行顺序",
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/output/smart/detail.md",
+      "page_sha256": "f45b787e9b77143dd25384db1bd2af05e6a3583a93f7c51736d6c7451fc02309",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 建立可发代码表",
+        "2. 先分库存，再算可合成缺口",
+        "3. 缺口怎样变成补齐分值",
+        "4. 正常补缺与10分宽限",
+        "5. 太贵的需求如何补发",
+        "6. 最后兜底与母体扣分",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        },
+        {
+          "name": "SmartRewardHelper.lua",
+          "source": "analysis_data/logic_index/lua/decoded/552b52a4f039d7bcd8c4590854906a4c840bd3a7492fcab4999a597fc475adcd/decompiled.lua",
+          "sha256": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6"
+        },
+        {
+          "name": "BoardModelHelper.lua",
+          "source": "analysis_data/logic_index/lua/decoded/4908a8d707e3b24699810f84db8fa2a299914a0f6e1aa8ee8a13c6f70e49da67/decompiled.lua",
+          "sha256": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "5ee324f66fde28cf9bcd2dd17147145e1fa88a96d16bce4de6cba95a0424d02b"
+      ]
+    },
+    {
+      "page": "operations/generator/overrides/boost/detail.md",
+      "page_sha256": "004edf36a75ee73646f7c06895f7dfac5dddab70a4c9eeed5a94c8b357bb6ce0",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 决定实际升级几级",
+        "2. FishNet 在升级后再检查",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：生鱼链智能升级开关",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "801f8eff535b17a1113cf7404decc28bc6c492965751d82eb76508728c2727b2"
+      ]
+    },
+    {
+      "page": "operations/generator/lifecycle/count/detail.md",
+      "page_sha256": "40c16cf533c8e006bb04d9081f83f11d9b6211e15bfe54b3e85f06739a84c650",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 本次是否进入扣除",
+        "2. 扣除的优先级",
+        "3. 何时更新计时与保存",
+        "4. 落子后先变换，再销毁，再CD Buff",
+        "贯穿案例：点击食品袋 105",
+        "本页涉及的配表：能量增益次数扣除配置",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "ItemSpread.lua",
+          "source": "analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua",
+          "sha256": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "2c6483bf65725d6c334da7d9d262ac7b591fa8a5e256012a81c4b6024ab6eb62"
+      ]
+    },
+    {
+      "page": "operations/generator/events/side_effects/detail.md",
+      "page_sha256": "ee34315206e6bf73b9b6be0edc9eed645ad4aff25777fb1315f3d9eb49f8ab32",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "1. 普通双倍资格先算，复制后落",
+        "2. Lucky 追加复制",
+        "3. 记录信息与其它监听",
+        "4. 同一次产出如何计入其它活动",
+        "5. CardItem 的能量阈值与满盘积压",
+        "6. Room、教程与活动视图",
+        "7. 卡片：先检查库存，再决定续用旧链还是抽新链 {#card-flow}",
+        "8. 密室：同一次落子按当前锁定状态分流 {#room-flow}",
+        "9. 动态注册：点击还会给连锁礼包代币 {#token-flow}",
+        "卡片相关完整本地配表",
+        "贯穿案例：点击食品袋 105",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "GeneratorBoostActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+          "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+        },
+        {
+          "name": "MainBoardModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e/decompiled.lua",
+          "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1"
+        },
+        {
+          "name": "ScoreRushModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/1bba4c2f554d666b8c7dce056d3b0ff65caef30d9365aacbb762d3e208a457fb/decompiled.lua",
+          "sha256": "8692388b5051d5e105240b8d852100959b3abf0da2177a78658132b03697fbb3"
+        },
+        {
+          "name": "TriggerPlaneModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/38a4598c59738177922821ee5b030d02b2f99139f0f21a8fbb615ac19520a9e9/decompiled.lua",
+          "sha256": "7ea68ecc803111eceb1f0c793fe4135117fb1b0c05f0ce1b6e5fb7e8375e7a4e"
+        },
+        {
+          "name": "TriggerBoostModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/7f763cdc9149705281060b550f02d212ba0c086407c309bf871f6bb4286473e1/decompiled.lua",
+          "sha256": "2da34e9cc86fcf98ac1a4ebd1555e36ef2bc36ed0e7501e879d569455e7ba8cc"
+        },
+        {
+          "name": "TriggerProgressActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/b930fd4f35600f57f8bebe14a9bf7da7c7e50f3c2143a8108d07e32fe88badfa/decompiled.lua",
+          "sha256": "d8e127eed57ff9bbad3749932af2393db0bfacd4b1ec79a2273da43013eee8d7"
+        },
+        {
+          "name": "HitBricksActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/283530fbb0d114efdd3466a2e9b53a04d5aaf1498617aa8029fb4a153b1aa4e2/decompiled.lua",
+          "sha256": "b7701cf62bb2d94308b8b92d68a94a375449b947bca5ba6ae7ece6ad0e9646d8"
+        },
+        {
+          "name": "AdventureActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/1bcaca42aa70f11ce0663f4ee2a4dcee52e5bc5289b76a18723dc9c89517e6af/decompiled.lua",
+          "sha256": "589b20d356387f53cd22f2ae950c353ad3d822d49d699e2997bff81bedc186ba"
+        },
+        {
+          "name": "ItemClickAcquireModule.lua",
+          "source": "analysis_data/logic_index/lua/decoded/9b77d3a2b7d80030bbc961d24980420a21993bc5b3b335648e53c532f9981f4d/decompiled.lua",
+          "sha256": "f2cad6ccd2ed576343fcbffc781f45c7e5855e9c637520fbcab957b10ca20551"
+        },
+        {
+          "name": "CardItemModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/cc281f0649d072a830a3b132ea60af33f2a2e59f7ffe521cb0ce8cb4bc52c1a6/decompiled.lua",
+          "sha256": "2033b240e2ddc3c38bc40adafc7b07dd705c4d0ef6454897a2f9714521b2a87f"
+        },
+        {
+          "name": "RoomModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/363aafacc07b4054b7974bf8d9ef8686fd65a3985b4c74af1febcf29fd556efc/decompiled.lua",
+          "sha256": "eb8f584602a82290cd21e3a85a1da5728c051697d51abf7187c8bec5345972d8"
+        },
+        {
+          "name": "TokenChainActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/21edf9e951ccd56a5a76abb1e1951565f1a195acf8cdf6e366fbaae2ad1a9861/decompiled.lua",
+          "sha256": "980005d5b661622ccd9f3d9077130056ff48819e2f54f55033091a2675f96a6c"
+        },
+        {
+          "name": "ActivityModuleManager.lua",
+          "source": "analysis_data/logic_index/lua/decoded/ab366a7559669e33e0e7e315033371a174d1e6f5f551a4d9835b9afe6299a7b9/decompiled.lua",
+          "sha256": "056fc5afbf45bf545400c8337d265ca3aa4593e039c317a85a335ebf5df666d4"
+        },
+        {
+          "name": "ConfigModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/338b600ea574dfe383694802831bb7b0c34cd95f752f9a29b4c5b9fcccc258e8/decompiled.lua",
+          "sha256": "4054213ec230882b82be3a3f2e3bb93ef30487b5fbc87e39e7048e219221dd1b"
+        },
+        {
+          "name": "BootRequire.lua",
+          "source": "analysis_data/logic_index/lua/decoded/e36873cda5eaf1b825bd873a199220a679e29f6697d0d0da1bedab302d6aaae0/decompiled.lua",
+          "sha256": "5abe69410c5f5c3b7862bc18e23970d4326a1981991710961e31060ec2f43da0"
+        }
+      ],
+      "preserved_config_block_sha256": []
+    },
+    {
+      "page": "operations/generator/lucky/items/type.md",
+      "page_sha256": "34a8c4c5b937993b6cc1b9d78b86541e6cc5ac0e79d9bfcfec06381dfd4ab753",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "这一步做什么，不会增加什么",
+        "贯穿案例：点击食品袋 105",
+        "本逻辑使用的配表在哪里",
+        "对应源码"
+      ],
+      "source_files": [
+        {
+          "name": "LuckyProduceModel.lua",
+          "source": "analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua",
+          "sha256": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb"
+        },
+        {
+          "name": "GeneratorBoostActivityModel.lua",
+          "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
+          "sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859"
+        }
+      ],
+      "preserved_config_block_sha256": [
+        "f8163ee33e7624dfc1c4ff6d1255c81a821aae741b4ac71df8b843d9f0f80d91"
+      ]
+    },
+    {
+      "page": "operations/generator/overrides/boost/index.md",
+      "page_sha256": "ee639fbc5986a1976074ed43aad17b672f568ff19d9d0c85481d4cb5d9c2b431",
+      "review_scope": "Selected source rules and examples; NOT full function/branch approval or complete event closure.",
+      "status": "selected_rules_reviewed",
+      "sections": [
+        "贯穿案例：点击食品袋 105"
+      ],
+      "source_files": [],
+      "preserved_config_block_sha256": []
+    }
+  ],
+  "source_execution_evidence": {
+    "path": "source_rule_tests.json",
+    "sha256": "0fde5fa7a6cf31672b6cca08e7019764539d7b9c8c8e6b10e80318c01f2b102a",
+    "passed": 63,
+    "total": 63,
+    "ids": [
+      "random_integer_endpoints",
+      "weighted_boundaries",
+      "smart_disabled_fraction",
+      "smart_enabled_one",
+      "smart_chain_level_boost",
+      "smart_recomputed_no_compounding",
+      "super_no_extra_roll",
+      "free_super_classification",
+      "continuous_type_precedence",
+      "continuous_exact_expiry_allowed",
+      "continuous_other_generator_clears",
+      "continuous_consume_refresh",
+      "triple_skips_second_roll",
+      "double_after_triple_failure",
+      "free_threshold_consumed_once",
+      "daily_reset_preserves_continuous",
+      "boost_history_ceiling",
+      "disposable_times_cost",
+      "explicit_zero_cost_still_counts",
+      "times_clamp_zero",
+      "timer_not_lower_clamped",
+      "timer_zero_duration",
+      "timer_missing_duration_clears",
+      "recovery_storage_insufficient",
+      "recovery_full_storage",
+      "closed_priority",
+      "disposable_empty_silent",
+      "manual_gate_short_circuit",
+      "lucky_skips_ordinary_times",
+      "fixed_pool_depletes_and_refills",
+      "card_exact_multiple_not_enough_comparison",
+      "card_stack_finishes_then_allows_progress",
+      "card_new_chain_excludes_old_then_falls_back",
+      "card_energy_listener_has_no_source_board_filter",
+      "card_generate_notification_advances_tutorial_once",
+      "room_hit_does_not_decrement_total",
+      "room_unlock_rewards_only_one_round_per_event",
+      "room_token_event_precedes_db_write",
+      "click_acquire_consumes_one_chance_for_boost",
+      "token_callback_nil_and_missing_view",
+      "config_suffix_first_exact_filename",
+      "require_replacement_failure_falls_back_default",
+      "require_replacement_success_does_not_load_default",
+      "disco_max_level_right_shift",
+      "disco_zero_closes_before_final_save",
+      "disco_reduces_code_and_index_to_affordable",
+      "disco_energy_and_lucky_gates_skip_services",
+      "fishnet_only_lowers_and_preserves_index",
+      "fixed_same_type_shares_pool_between_instances",
+      "chest_tolerance_builds_more_than_first_item",
+      "chest_old_pick_ceil_overspends",
+      "smart_merge_inventory_not_double_used",
+      "smart_binary_one_result",
+      "smart_equivalent_split_power_of_two",
+      "smart_205_fallback_no_random_when_budget_small",
+      "smart_206_fallback_random_boundary",
+      "boost_finite_extra_pool",
+      "boost_no_space_caches_boolean_qualification",
+      "boost_lucky_listener_excludes_continuous",
+      "order_empty_unlock_fallback_is_uniform_codes",
+      "ordinary_state_saved_before_actual_landing",
+      "disco_acquire_adds_balance_changes_type_and_resets_max",
+      "disco_missing_reward_config_does_not_activate"
+    ],
+    "original_runtime_confirmed": false
+  },
+  "original_runtime_boundary": "User confirmed on 2026-10-12: only installation package and extracted resources; no original client/account traces provided.",
+  "remaining_gates": "Prototype mapping, complete event/call closure, per-branch state/config/doc review and original-client differences remain open."
+}

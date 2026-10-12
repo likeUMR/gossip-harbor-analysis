@@ -38,6 +38,8 @@
 
 ## 贯穿案例：点击食品袋 105
 
+<div class="case-assets"><img src="../../../../../assets/cases/item-204.png" alt="本页分支对照中实际选中的四级产物204" class="case-icon" style="width:88px;height:88px;object-fit:contain;"></div>
+
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
 **本页发生什么**：105主例不是SmartItem。用实际main_smart_pot_a_1作对照，说明按合成缺口补一件，不是修改抽奖权重。
@@ -50,9 +52,9 @@
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
 
@@ -60,8 +62,16 @@
 
 ## 本逻辑使用的配表在哪里
 
-- [产物难度分与解锁配置](../order/detail.md#configuration-order-item)：ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。
-- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- 产物难度分与解锁配置：ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
 
 
 <!-- generator-configs:end -->
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[ItemSpread.lua](../../../../assets/recovered-source/ItemSpread.lua) · [SmartRewardHelper.lua](../../../../assets/recovered-source/SmartRewardHelper.lua) · [BoardModelHelper.lua](../../../../assets/recovered-source/BoardModelHelper.lua)
+
+<!-- source-links:end -->

@@ -1,0 +1,97 @@
+{
+  "state_columns": [
+    {
+      "field": "m_state",
+      "column": "spreadState",
+      "meaning": "当前开启阶段"
+    },
+    {
+      "field": "m_startTimer",
+      "column": "spreadStartTimer",
+      "meaning": "当前恢复阶段起点；nil表示没有计时"
+    },
+    {
+      "field": "m_itemRestNumber",
+      "column": "spreadItemRestNumber",
+      "meaning": "可用次数"
+    },
+    {
+      "field": "m_storageRestNumber",
+      "column": "spreadStorageRestNumber",
+      "meaning": "储备次数"
+    },
+    {
+      "field": "m_spreadCount",
+      "column": "spreadCount",
+      "meaning": "累计产出计数；读取缺省0"
+    },
+    {
+      "field": "m_codeWeightPairs",
+      "column": "spreadCodeWeightPairs",
+      "meaning": "当前剩余产出池，按原顺序编码"
+    }
+  ],
+  "sources": [
+    {
+      "module": "ItemManager",
+      "source": "analysis_data/logic_index/lua/decoded/373ce1d8ad86d04bc53d5a305c26f66bae571df054285890fc7bf2e88c9b911b/decompiled.lua",
+      "sha256": "af6ab2f1e1f2c0d6eb272f49fb59f1cf93caf87004cb1d68e98a81e12b913370"
+    },
+    {
+      "module": "ItemModelFactory",
+      "source": "analysis_data/logic_index/lua/decoded/6f396c8440b2e8701b86962bde4e8b920e62437ce0567bd65823b3edc3f71e54/decompiled.lua",
+      "sha256": "da3f9350735eb6859b41b58080c480a737fad4ba189c594d7762d4d1f8421325"
+    },
+    {
+      "module": "ItemUtility",
+      "source": "analysis_data/logic_index/lua/decoded/178ef2202c33886134428e8dc40c86f0f6a348fc4176f6492c06de352192b16d/decompiled.lua",
+      "sha256": "2480786d6b4b571332c83e9ecac212947b07226bdfc67aea2b1f6b2f2f113b1a"
+    },
+    {
+      "module": "StringUtil",
+      "source": "analysis_data/logic_index/lua/decoded/12944227f29b3c06a503b4af56d23950a964e0552c8ee746de5db7f419bbf7bf/decompiled.lua",
+      "sha256": "41f7ca15031fca25709636340a55e0d5b60a06f6fab1347488463a784393a838"
+    },
+    {
+      "module": "DBTable",
+      "source": "analysis_data/logic_index/lua/decoded/3805da595fff579e334b1d3147c735ca4df8a1d1429b82dcb9a05d321ec5e6d7/decompiled.lua",
+      "sha256": "3a60f197101842def59ea13e400ee720a5285bcef8f558bfe5a83bf5deef05a3"
+    },
+    {
+      "module": "ItemSchema",
+      "source": "analysis_data/logic_index/lua/decoded/2039d9cc5171967af7243f73d9b6ccebc893678c0a9e4a66140ef17e0ab5c703/decompiled.lua",
+      "sha256": "e8d633b4db09173959c5df20c552580324e12807dd9fec9a525c431923dd1c9b"
+    },
+    {
+      "module": "BaseActionBoardModel",
+      "source": "analysis_data/logic_index/lua/decoded/b01cc1db109fdfdb7b0c2e89a65d58fbc44b23e2a459742ef77a2f64480d82e3/decompiled.lua",
+      "sha256": "362a62b39c30876ad8ecf73b02f086960c250058a14c1e56f8a68efa51584f68"
+    }
+  ],
+  "documents": [
+    {
+      "page": "operations/generator/state/model/detail.md",
+      "sha256": "d06362019f05fa1003d494b9c63291ccc008b70b5d7ef05f70093950122ff3d3"
+    },
+    {
+      "page": "operations/generator/lifecycle/cooldown/detail.md",
+      "sha256": "522c3ee6029aadedd3db9b5f7e0f5fe9365dd1f709d25ecad6c8c27592ac6c73"
+    },
+    {
+      "page": "operations/generator/lifecycle/count/detail.md",
+      "sha256": "91e14b5d64bb2e16eda7038e12f62e0c502940cbac4734020e81d3d49f1f558e"
+    }
+  ],
+  "explained_edges": [
+    "MainBoardModel inheritance→BaseActionBoardModel.SaveItemProperty→ItemManager.SetItem→_FillDBTable→DBTable.BatchSet/Remove",
+    "ItemManager.OnSyncDataFinished→ItemModelFactory.CreateWithData→configured creation then saved field override",
+    "ItemUtility encode→StringUtil split→ItemModelFactory.GetCodeAndWeightPairs"
+  ],
+  "open_edges": [
+    "DBTable serialization, SQL queues, native commit and sync ingestion",
+    "ItemModelFactory creation components, configuration reload and repair",
+    "All timer/state event consumers and ItemAccelerateTime lifecycle",
+    "Initialization/update scheduling and authoritative server-time lifecycle"
+  ],
+  "scope": "Lua field save/restore contract, not complete native persistence or full generator closure."
+}

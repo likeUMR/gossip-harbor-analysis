@@ -1,0 +1,67 @@
+[
+  {
+    "module": "Data.Config.CardItemConfig",
+    "source": "analysis_data/logic_index/lua/decoded/1d9c2e9dd3a56fef39b0798e81b287a8cbf45c4921e6e7ff3c386ad6378a43c5/decompiled.lua",
+    "sha256": "60b52c43219d023605dba0dddcea487573b3556ea675586615cfa14e8e1a3fb7",
+    "records": 26,
+    "fields": [
+      "ItemChain",
+      "UnlockLevel",
+      "Weight",
+      "Rarity"
+    ],
+    "runtime_selection": "Lua require wrapper -> first exact FileReplace.file match -> append suffix -> replacement failure falls back default; account suffix unavailable"
+  },
+  {
+    "module": "Data.Config.CardItemConfig_more",
+    "source": "analysis_data/logic_index/lua/decoded/025fd81c346de3d6401321c3d99ec2f71fb3bb43bdb53302d7f8306b39862f10/decompiled.lua",
+    "sha256": "862d2d61b3b2841338c4b0a0af3698540cfe1fd54d6dbb512ed3c4c85f9e9b81",
+    "records": 26,
+    "fields": [
+      "ItemChain",
+      "UnlockLevel",
+      "Weight",
+      "Rarity"
+    ],
+    "runtime_selection": "Lua require wrapper -> first exact FileReplace.file match -> append suffix -> replacement failure falls back default; account suffix unavailable"
+  },
+  {
+    "module": "Data.Config.CardItemProduceConfig",
+    "source": "analysis_data/logic_index/lua/decoded/6e29eb88614dc9a436392f58480ee6e6ea52bed3e8d73ca95b7bfe9d87223885/decompiled.lua",
+    "sha256": "e756a41cd64afa05779873c1fa2385005a08ac48ee0477f531b97ddc899c034f",
+    "records": 177,
+    "fields": [
+      "ItemType",
+      "LevelMin",
+      "LevelMax",
+      "Chance"
+    ],
+    "runtime_selection": "Lua require wrapper -> first exact FileReplace.file match -> append suffix -> replacement failure falls back default; account suffix unavailable"
+  },
+  {
+    "module": "Data.Config.CardItemProduceConfig_more",
+    "source": "analysis_data/logic_index/lua/decoded/b53a4cd511275c4836d963c2e85ebed2607f7d0154a29dbdeae9397c5ede7fc5/decompiled.lua",
+    "sha256": "3c6a746aa13ba0e57448b418395ed3193a1e629927763e99b3e2748008b2b3ef",
+    "records": 177,
+    "fields": [
+      "ItemType",
+      "LevelMin",
+      "LevelMax",
+      "Chance"
+    ],
+    "runtime_selection": "Lua require wrapper -> first exact FileReplace.file match -> append suffix -> replacement failure falls back default; account suffix unavailable"
+  },
+  {
+    "module": "Data.Config.CardItemProduceConfig_zero",
+    "source": "analysis_data/logic_index/lua/decoded/0427928f933931a54694c505ead0c7c3ede1551c343a1a4a71361e8040f20d9b/decompiled.lua",
+    "sha256": "3093d22a2c2459c64a9c1aa47a6291e2099c39beb5de3861b60eda29384f7931",
+    "records": 1,
+    "fields": [
+      "ItemType",
+      "LevelMin",
+      "LevelMax",
+      "Chance"
+    ],
+    "runtime_selection": "Lua require wrapper -> first exact FileReplace.file match -> append suffix -> replacement failure falls back default; account suffix unavailable"
+  }
+]

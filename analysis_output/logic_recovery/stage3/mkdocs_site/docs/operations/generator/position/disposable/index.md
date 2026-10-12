@@ -19,7 +19,7 @@
 
 ## 贯穿案例：打开一次性测试宝箱 main_t_chest_new_1
 
-<div class="case-assets"><img src="../../../../../assets/cases/item-main_t_chest_new_1.png" alt="一次性测试宝箱 main_t_chest_new_1" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
+<div class="case-assets"><img src="../../../../assets/cases/item-main_t_chest_new_1.png" alt="一次性测试宝箱 main_t_chest_new_1" class="case-icon" style="width:88px;height:88px;object-fit:contain;margin:0 12px 0 0;vertical-align:middle;"></div>
 
 **目的**：观察一次性母体在开启、落点、Decremental 权重和耗尽销毁之间的完整链路。
 
@@ -33,8 +33,8 @@
 
 本地配表确认：`main_t_chest_new_1` 的开启时长 120 秒、可产出 7 次、储备 7 次，`Spread_WeightType=2`，权重为 `2401-2 / 2402-2 / 2501-2 / 2502-1`；没有 `Spread_ItemRecoveryDuration`，因此是一次性母体。素材为原版 Sprite 图标加说明性排布，不是运行时截图。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+演示输入：等级 10、活动 Sta
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>

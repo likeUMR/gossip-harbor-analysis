@@ -15,23 +15,23 @@
 
 本页只解释整条判断链；左侧子节点分别解释每个阶段。产出计算内部再分为 Lucky 判断和五种普通产出模式，不能概括成一个随机函数。
 
-**源码证据**：[Board_Model_Item_ItemSpread.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua)。入口及主调用顺序为 `source-confirmed`；服务端开关和动态对象身份为 `runtime-pending`。
+**源码证据**：[Board_Model_Item_ItemSpread.lua](../../assets/recovered-source/ItemSpread.lua)。入口及主调用顺序为 `source-confirmed`；服务端开关和动态对象身份为 `runtime-pending`。
 
 ## 如何阅读分支与后续影响
 
 活动改写属于产出计算内部，事件与存档则在各个执行点发生。相关说明在对应阶段提供链接，不额外增加执行步骤：
 
-- [Lucky 判断](lucky/index.md)：说明活动资格与优先级。
-- [普通产出](output/index.md)：按顺序说明上限修正、候选选择、升级、活动改写与次数处理。
-- [能量扣除](energy/consume/index.md)：同时说明资源通知。
-- [次数、变换与销毁](lifecycle/count/index.md)：同时说明状态保存和落子后的收尾。
+- Lucky 判断：说明活动资格与优先级。
+- 普通产出：按顺序说明上限修正、候选选择、升级、活动改写与次数处理。
+- 能量扣除：同时说明资源通知。
+- 次数、变换与销毁：同时说明状态保存和落子后的收尾。
 
-正常点击执行一次；测试十连和点击结束后的系统通知属于入口附加分支，见[点击入口与通知](entry/index.md)。跨阶段查阅可使用[事件与监听链](events/index.md)，其中每条事件均应以实际触发位置理解。
+正常点击执行一次；测试十连和点击结束后的系统通知属于入口附加分支，见点击入口与通知。落子通知与活动响应在产物落子步骤解释，资源通知在能量扣除步骤解释。
 ---
 
 ## 贯穿案例：点击食品袋 105
 
-<div class="case-assets"><img src="../../../assets/cases/generator.png" alt="母体点击的产出分支" class="case-composite" style="display:block;max-width:560px;width:100%;height:auto;"></div>
+<div class="case-assets"><img src="../../assets/cases/generator.png" alt="母体点击的产出分支" class="case-composite" style="display:block;max-width:560px;width:100%;height:auto;"></div>
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
@@ -43,8 +43,8 @@ A 产出 201（低阶面粉），B 产出 204（高阶面粉）；两个分支�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>

@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "case": "two_neighbors_use_max_not_sum",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "inactive_and_expired_ignored",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "old_active_is_cleared_and_saved",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "getter_not_time_comparison",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "boost_to_boost_keeps_pool_flag",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "default_to_boost_resets_flag",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "lucky_not_started_no_reload",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "new_generators_cached_keys_only",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "reload_false_no_clear",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "restore_only_changed_types",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "no_boost_model_no_replacement",
+      "mode": "bytecode",
+      "status": "passed"
+    },
+    {
+      "case": "two_neighbors_use_max_not_sum",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "inactive_and_expired_ignored",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "old_active_is_cleared_and_saved",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "getter_not_time_comparison",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "boost_to_boost_keeps_pool_flag",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "default_to_boost_resets_flag",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "lucky_not_started_no_reload",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "new_generators_cached_keys_only",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "reload_false_no_clear",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "restore_only_changed_types",
+      "mode": "recovered-source",
+      "status": "passed"
+    },
+    {
+      "case": "no_boost_model_no_replacement",
+      "mode": "recovered-source",
+      "status": "passed"
+    }
+  ],
+  "passed": 22,
+  "total": 22,
+  "limits": "Selected direct contracts only; model eligibility, full config preprocessing, event scheduling and native DB dependencies controlled."
+}

@@ -1,0 +1,507 @@
+[
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseActionBoardModel.disassembly.txt",
+    "sha256": "f21b7a2ff6bf285fa46081bf12ce75e9c04e2880a80c08af4f47bcc81936d90c",
+    "bytes": 61582
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseActionBoardModel.lua",
+    "sha256": "362a62b39c30876ad8ecf73b02f086960c250058a14c1e56f8a68efa51584f68",
+    "bytes": 16456
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseBoardModel.disassembly.txt",
+    "sha256": "67b58e268ea34b017fb1c9f37ee667f934d4065cdb96fd994378bbaee70f9540",
+    "bytes": 99734
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseBoardModel.lua",
+    "sha256": "16506a7f62041132200665ce8db3b0b37fed0da5d01fbccb07cad74604c7cd1b",
+    "bytes": 22943
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseItemLayerModel.disassembly.txt",
+    "sha256": "bb19996d5b11c083fe20180faffb5e0ec3f8790efdf0fee62e0102255246ab05",
+    "bytes": 17073
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.BaseItemLayerModel.lua",
+    "sha256": "3484156c1ceee2582d7adc5994a3d35447615e96760ba77ab03d33576837ec45",
+    "bytes": 3806
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.MainBoardModel.disassembly.txt",
+    "sha256": "c0e29966afc3502ca9a6d75d286881ff1c8eaeabd82aac66e879199d4487e585",
+    "bytes": 283496
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Board.MainBoardModel.lua",
+    "sha256": "a44df3fc69a1215c56f38db12e6036fcffd13b47ab0368d1a69aec2862096bd1",
+    "bytes": 67999
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Item.ItemDefinition.disassembly.txt",
+    "sha256": "401d80057ee8cad23437fb3f4984e13a71dce3e6ede61b8f615975a202184206",
+    "bytes": 311361
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Item.ItemDefinition.lua",
+    "sha256": "dd1b9e98af22a0fdf54543e02c13cb5204f575d631f70d8f6c2fc3d1c3b24856",
+    "bytes": 86413
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.ItemModelFactory.disassembly.txt",
+    "sha256": "0068b24e8434ab4d9836b12f95cd0225805f0983042cc4b2c552103bed7aa8d9",
+    "bytes": 50599
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.ItemModelFactory.lua",
+    "sha256": "da3f9350735eb6859b41b58080c480a737fad4ba189c594d7762d4d1f8421325",
+    "bytes": 13530
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.BaseOrder.disassembly.txt",
+    "sha256": "d52e0253e98b7c33152af4b80c495e4ed650cb3969fa844c471339b2194b1571",
+    "bytes": 25176
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.BaseOrder.lua",
+    "sha256": "12dea53333eb81560e0a91b5283a1b80aab2d94201140d2f56dd3cc1cc2e4d21",
+    "bytes": 4861
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.BaseOrderModel.disassembly.txt",
+    "sha256": "ccb78199294c4cff7168cb0ebc7c2d7cb5d60a561a252be9916e8fb22dadb9fe",
+    "bytes": 11770
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.BaseOrderModel.lua",
+    "sha256": "316cb891a93fc23dced44164a550dc2a7adb080cadf92649ac7d8926dc14d68b",
+    "bytes": 2328
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.EmptyReqOrder.disassembly.txt",
+    "sha256": "26970e791267307c02b02c0f95083a09fdd51955e0673d82b0504c44e43845c5",
+    "bytes": 14142
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.EmptyReqOrder.lua",
+    "sha256": "d13f8a91d9902eba877f8fa680843ff37e6a229cd1e510d594220061646bc39d",
+    "bytes": 2848
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrder.disassembly.txt",
+    "sha256": "5ae727fe38b0a9f3bebb1a6a22587b911bb397ee379913df4aefdfad973a3427",
+    "bytes": 59819
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrder.lua",
+    "sha256": "5fc565ba7d112b2cab920566f9062b5ea7f19e444972f4fe1b65c1ac266937e2",
+    "bytes": 13892
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderCreator.disassembly.txt",
+    "sha256": "59bc9d49e0ff4dfe09f0eefacdcf761583d96c728a92158e37c6d13124f19327",
+    "bytes": 53819
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderCreator.lua",
+    "sha256": "542cabae6ac530fef1f8691aa7e2f52002927c44c0f3acf8a78a72cbc74221cf",
+    "bytes": 15999
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderCreatorRandom.disassembly.txt",
+    "sha256": "02cc9317edcefed89e9e9a4919a7bb3bf658e368d08645ea026959ce89882527",
+    "bytes": 153039
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderCreatorRandom.lua",
+    "sha256": "16739731c61df7ba45d4d1b47cc4288e656837389f3d1aec81d77a248f4c1dba",
+    "bytes": 48495
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderDefinition.disassembly.txt",
+    "sha256": "0980e84a9529fbfff3e891891f0a65b8a6a19b9883708bcc58796423c26e03b3",
+    "bytes": 12711
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderDefinition.lua",
+    "sha256": "9edfe29978d8f59d0bc82f30b1fd46c3fc17e6a9bb809708067a4b4124563e25",
+    "bytes": 3438
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderModel.disassembly.txt",
+    "sha256": "164ad75621d4b1ada774f48e91502509423e1d9a9e4a5ecd918c5210152ce58c",
+    "bytes": 212432
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.MainOrderModel.lua",
+    "sha256": "76b2579dedff7548312eac8758746f2a29ce590a2746fbbd74d7bd495b229382",
+    "bytes": 55108
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.SlotOrderModel.disassembly.txt",
+    "sha256": "5ed6a2812265f89c94c6f0ddf88f947b3afbffdee79ad83ca0ac1b63671d445c",
+    "bytes": 10196
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.SlotOrderModel.lua",
+    "sha256": "e5c6628f562d4b67d5a8b02e9dcfbcd3505a55b07ca249f915206e7c8477d422",
+    "bytes": 2191
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.TutorialOrderModel.disassembly.txt",
+    "sha256": "c9c25b70bf748acd85e52b50cb620e933e163db2a0b0d6ac59c5f86ccf9f8492",
+    "bytes": 24651
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.Order.TutorialOrderModel.lua",
+    "sha256": "76b2439db95ac6ac026a421b88b549d2587839175e7b59393ca8bebc007ee475",
+    "bytes": 5971
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.RandomGenerateCodeHelper.disassembly.txt",
+    "sha256": "d3dc8889890a19708d65a6435cab742c95bbb2ad5ef1b740576e54ced2f9516d",
+    "bytes": 105673
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.Model.RandomGenerateCodeHelper.lua",
+    "sha256": "1d13ebe7bb372f506893bdb3faec7e6638035e7cb2d7ed3bb1c61fbee8a6426b",
+    "bytes": 32128
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.MainBoardView.disassembly.txt",
+    "sha256": "b2235826101b851d7f9d7ceb748cc206e74c75fed662ac0de43351d416194433",
+    "bytes": 435453
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.MainBoardView.lua",
+    "sha256": "4970a97092600f33b180c56b5102c9d9b120dd516191246d01d5fd76682dbd6e",
+    "bytes": 99989
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.BaseOrderAnimation.disassembly.txt",
+    "sha256": "5ce03215b2bb5104e51575b6fbac732c5cd5a58c124fbacfa8b41f8084ca591a",
+    "bytes": 9363
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.BaseOrderAnimation.lua",
+    "sha256": "e6b28830ac7a09c39351f4119aae1b44ca38d96cf8ead7e097a0916b2baa5110",
+    "bytes": 1930
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.BaseOrderCell.disassembly.txt",
+    "sha256": "d09f4c8d872ef7474ac33a2a6a8e8c9753c1b8b84681aef30760d08ac1c33c59",
+    "bytes": 102751
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.BaseOrderCell.lua",
+    "sha256": "0955dfb662c794ea0d0ac06c6f481c998183d224ef99e8a85fb02f8e32950a48",
+    "bytes": 24182
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.MainOrderCell.disassembly.txt",
+    "sha256": "47a0411acfb262cef027e6036b89c42dfeefe6c3e8c820efd54008a1d96e2af1",
+    "bytes": 84761
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Board.View.Order.MainOrderCell.lua",
+    "sha256": "8afb23dc4be004140e16ee62054be7b6a900d32ec634b7f2afaa0c9a93adcaa8",
+    "bytes": 19696
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestCustomer.Model.ChestCustomerModel.disassembly.txt",
+    "sha256": "efe66dbd039c509aada29e5c647dca333fb4fb8ba6308dc023e3b27cb2e10c43",
+    "bytes": 68935
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestCustomer.Model.ChestCustomerModel.lua",
+    "sha256": "16ee3de2003c9b5c8a971fa8307e704427e66d816652cadc6fb08220281da344",
+    "bytes": 15572
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomConfig.json",
+    "sha256": "98af12afb16bb58165728f5ce5d48d0031bf530057a5914dc31338da1c93d588",
+    "bytes": 4727
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomConfig_hard.json",
+    "sha256": "9fb1aaf111f56c007e9144744a8c2c0a4dc8a778b8ef2a2dd7018307f63a455a",
+    "bytes": 4730
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomConfig_lessitem.json",
+    "sha256": "98af12afb16bb58165728f5ce5d48d0031bf530057a5914dc31338da1c93d588",
+    "bytes": 4727
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomConfig_lessitem2.json",
+    "sha256": "4e7e0557df7b31ae099a64eb50807030327861152f1bd79b826719a3cc88a55f",
+    "bytes": 4727
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomConfig_lessitem3.json",
+    "sha256": "9fa40d758b8ac4333f759335d5d94452b601fa187c924b29742cc50a32c20eb3",
+    "bytes": 5026
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ChestOrderRandomRecallConfig.json",
+    "sha256": "a1c3b0fdc05cf93534cc8c2d1f61744791900480155fb8ed60efc30cd99a4f4a",
+    "bytes": 3692
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Common.Utility.MathUtil.disassembly.txt",
+    "sha256": "a9cd23347f0aa0a84efeb175eafb534099ab654fc4aa7b21a468373fa803a6cc",
+    "bytes": 20797
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Common.Utility.MathUtil.lua",
+    "sha256": "6aa5a4af571731d94dbf5df36efbbec6df9573495b907999eceb34bb2e7b621f",
+    "bytes": 4360
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Common.Utility.Table.disassembly.txt",
+    "sha256": "6967da128a37edcc46d637980de122fe8b503273d2d5eb9d7f811abd6c54902e",
+    "bytes": 32565
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Common.Utility.Table.lua",
+    "sha256": "3fd43bbbeac94f532aab72200ab6431046194f45a111a1cba86148471a45dc56",
+    "bytes": 6174
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Contiorders.Model.ContiordersModel.disassembly.txt",
+    "sha256": "7464d980046b59e52586dcba38bd8ea6bc928e0d9c3cfc83af391c02cf7fed46",
+    "bytes": 68552
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Contiorders.Model.ContiordersModel.lua",
+    "sha256": "f295dc702c4078f6abc2afe35a5468dc6066e1d4d88cf9560edd5093397c5f0b",
+    "bytes": 14580
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/CookingFrenzy.Model.CookingFrenzyModel.disassembly.txt",
+    "sha256": "3ce9311ce896efe6b45f4d6f2b402a19278622aeb93ffd9e5ee4acd0a20039b6",
+    "bytes": 127415
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/CookingFrenzy.Model.CookingFrenzyModel.lua",
+    "sha256": "b7bd6626438443ff807a14812a4a8ad3e48727ab0e80ba895985fa180b614f75",
+    "bytes": 34407
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ExtraCustomerActivity.Model.ExtraCustomerActivityModel.disassembly.txt",
+    "sha256": "b5ed73650e840876efc17bbd14e00c543e4d82b6dc75d3a5ab182ecd1d7e2020",
+    "bytes": 58848
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/ExtraCustomerActivity.Model.ExtraCustomerActivityModel.lua",
+    "sha256": "21213eca8995419347604357c86e17213861dab7c415e5723d8b5a0236a8b3d1",
+    "bytes": 11378
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.Activity.ActivityModuleManager.disassembly.txt",
+    "sha256": "98b968f3fe55f018301a0658f2913542e7e318652cf857455d8ff9d62185e1ec",
+    "bytes": 30328
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.Activity.ActivityModuleManager.lua",
+    "sha256": "056fc5afbf45bf545400c8337d265ca3aa4593e039c317a85a335ebf5df666d4",
+    "bytes": 6874
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.ConfigModel.disassembly.txt",
+    "sha256": "699c08253fe9bfd89ce2c93fd4392aa5077dfe3ac5df693a218e45614316b72b",
+    "bytes": 132472
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.ConfigModel.lua",
+    "sha256": "4054213ec230882b82be3a3f2e3bb93ef30487b5fbc87e39e7048e219221dd1b",
+    "bytes": 29632
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.ChestCustomOrderRewardCategoryHandler.disassembly.txt",
+    "sha256": "305ebd1eeb56b0ac39a530838a7c54d3bcf0749a5f73a849fe7d6bb045d5f240",
+    "bytes": 2924
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.ChestCustomOrderRewardCategoryHandler.lua",
+    "sha256": "946b294775e222cac8ed669f1d03790324ac244059d4e8c614241a516a970863",
+    "bytes": 589
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.ItemRewardCategoryHandler.disassembly.txt",
+    "sha256": "326719a15770bbb355faf076345869469b4c8f975b2b80858eb906f0d0810732",
+    "bytes": 9138
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.ItemRewardCategoryHandler.lua",
+    "sha256": "66943267f0bbf5b1a9e6fb802367ebfc1684a48205e37e84da83565186374fc6",
+    "bytes": 2184
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.PropertyRewardCategoryHandler.disassembly.txt",
+    "sha256": "933d5a0ab88a1e609a88f0143d19bb0f6711e9ba8a0e545f88cf7b181ec9a4c9",
+    "bytes": 30276
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.RewardHandler.RewardCategoryHandler.PropertyRewardCategoryHandler.lua",
+    "sha256": "fe8582b71915ac7b9117b1f3413fc3dc7cb6af42ddc44aa92abd14387f1d9430",
+    "bytes": 8207
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.UserData.RewardApi.disassembly.txt",
+    "sha256": "7f95115d5e83270830d0b3eda386775af392c07c10d9ea379d094bab454e8c04",
+    "bytes": 68434
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/Model.UserData.RewardApi.lua",
+    "sha256": "d1350af6bcfb9c367b947a1f4746cd68dfa2726cbfe299d99f08c6403ec34e0b",
+    "bytes": 17140
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/NewItemOrderConfig.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "bytes": 2
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/NewItemOrderConfig_test.json",
+    "sha256": "7a82f16015ce04805ccba8122ceda852661b8ee1f27ada4543694a5f80eae757",
+    "bytes": 1830
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderAvatarConfig.json",
+    "sha256": "efdad34a7fea3bba1f072c8e33f56607e9b4f48ecfe97cf35de12d942c348958",
+    "bytes": 1309
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderAvatarConfig_more.json",
+    "sha256": "cc98a14c649233044006ff4a374959eaa7b343320f8ad9c78a8a80a4f49be8e1",
+    "bytes": 2145
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderBoost.Model.OrderBoostModel.disassembly.txt",
+    "sha256": "c84603b7a7cb403140725d0be2d12c73ae51900b7da69851b5ef43ad0b9b84a8",
+    "bytes": 178654
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderBoost.Model.OrderBoostModel.lua",
+    "sha256": "acc8f0fea582a557ae7aafae28eec0b55941a6ba03cf7736ab45fdfa338d7957",
+    "bytes": 43912
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderBranchConfig.json",
+    "sha256": "0fff4d4842d324ecf4e1e89e1c5c4cc3c515131792095c04d9090ba19b805dfd",
+    "bytes": 280
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderFixedConfig.json",
+    "sha256": "f0daf34759c574dfe87caefe9d5337dbaad96dd2e8acd418a1fc2ce1f61225b3",
+    "bytes": 2072
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig.json",
+    "sha256": "d77b96879267e5ede73887c74d1b45385765b612a3f93fe11e9252693ca41d59",
+    "bytes": 15637
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig_extracust.json",
+    "sha256": "9f70bc2ef075b41cb59ce0c6fd1d61b914762a0be2060525a69ace3c60cf9ea7",
+    "bytes": 16176
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig_hard.json",
+    "sha256": "9eda3a1a848b54baf13e347ae51641029ebf7175d8436a579d700dfd37a9f452",
+    "bytes": 15634
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig_nerf.json",
+    "sha256": "4e12a7d9b22fd7e8dc8f55d1025dbc1cd75be06660241b09b859c8e4701d6c10",
+    "bytes": 15637
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig_nerf_more.json",
+    "sha256": "24b640d9d2a7a3f62aaf1f0e9c64a8341836449fae90aa70e1ab03fc913bef6a",
+    "bytes": 15634
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemConfig_shell.json",
+    "sha256": "005b21c63409852e147eeeff5087d3cc4695dac943f89ae079d66e19e4c854bc",
+    "bytes": 17129
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderItemNumberWeightConfig.json",
+    "sha256": "9d3d3baf8ac57e5b4858a093598e89a5c1ef88a45862e419ecacaad7c03b6f56",
+    "bytes": 440
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig.json",
+    "sha256": "25094cf03a80273c4257a786e43b83bac337fd50da956cf30e6e362521e7abc7",
+    "bytes": 5807
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_dynamic.json",
+    "sha256": "52184b54890e5c91d7145bd2d550b543a17b26dbc3f817092133f77480bb017a",
+    "bytes": 6377
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_hard.json",
+    "sha256": "b908274dffd5bdd81ce4f2845574fc37c14c78f44ce54d4272381371951b4969",
+    "bytes": 5977
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_lessitem.json",
+    "sha256": "e0bc230fbb9bc156acbd5425a96d8838247e87f7eecd1b17d7b2167985357955",
+    "bytes": 5471
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_lessitem2.json",
+    "sha256": "df2f7d50ec164662edf1bea4fe00781befa61cd2a8356debd0a18eef8e9d0e81",
+    "bytes": 5471
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_lessitem3.json",
+    "sha256": "09ac39646f6a1d1470e44100232a1c7e02d7ab529095d9994cb14550787c9b8f",
+    "bytes": 5870
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomConfig_medium.json",
+    "sha256": "be5c59e13d22876d9a7cb1faa3e5e35de9857855ff6e8d9b2184fb8b8b3f9674",
+    "bytes": 5976
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomRecallConfig.json",
+    "sha256": "7c8d3b27f6ed09920338b95d05f9e1ad4372f75713677c23ccfe75aab28e45d1",
+    "bytes": 4026
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderRandomRecallConfig_easier.json",
+    "sha256": "7c8d3b27f6ed09920338b95d05f9e1ad4372f75713677c23ccfe75aab28e45d1",
+    "bytes": 4026
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/OrderSpecialConfig.json",
+    "sha256": "afc8ef6a292b9ba206830cbbe89330ddede3d7581f2672a12cea109338d1562a",
+    "bytes": 3972
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/UI.Window.Board.UseInventoryItemConfirmWindow.disassembly.txt",
+    "sha256": "6e9a5493cf766bc711fcdd2b97c03965e1d772b44be05936cd5a52b82f76037a",
+    "bytes": 7805
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/UI.Window.Board.UseInventoryItemConfirmWindow.lua",
+    "sha256": "df96ae96ca9f47ad2b9aab661f5a20d750d1f6f9b28c7b5a3c76594361be1845",
+    "bytes": 1733
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/UI.Window.Order.SpecialOrderItemWindow.disassembly.txt",
+    "sha256": "4a0454a7aa2a923bd1d1dcfe57fde2704fcebf63c0fe5c7ffc90120a96dabef9",
+    "bytes": 20349
+  },
+  {
+    "path": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/order-evidence/UI.Window.Order.SpecialOrderItemWindow.lua",
+    "sha256": "5c22f027e9f7584e7877c95663d3d3c741246348e860ee90eb3da98bd61c6682",
+    "bytes": 4961
+  }
+]
