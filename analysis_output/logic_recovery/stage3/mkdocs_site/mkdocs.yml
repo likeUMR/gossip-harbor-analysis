@@ -34,6 +34,7 @@ nav:
 - 首页: index.md
 - 参考 PDF 覆盖核验: reference_pdf_coverage.md
 - Week9 PDF 覆盖核验: week9_pdf_coverage.md
+- Recovery Plan 结构验收记录: recovery_structure_audit.md
 - Git 历史版本覆盖审计: legacy_version_coverage.md
 - 付费项目:
   - operations/paid/index.md
@@ -207,7 +208,7 @@ nav:
     - CD、加速与恢复:
       - operations/generator/lifecycle/cooldown/index.md
       - CD、加速和恢复结算: operations/generator/lifecycle/cooldown/detail.md
-  - 完整机制与后续处理:
+  - 点击落地与后续事件:
     - 点击入口与测试循环:
       - operations/generator/entry/index.md
       - OnTap、测试十连和通知判定: operations/generator/entry/detail.md
@@ -255,7 +256,7 @@ nav:
     - 金币:
       - operations/merge/effects/coin/index.md
       - 合成等级与金币落点: operations/merge/effects/coin/detail.md
-  - 完整机制与后续处理:
+  - 移动、合成与副产物:
     - 棋子移动:
       - operations/merge/move/index.md
       - 加速刷新:
@@ -381,7 +382,7 @@ nav:
   - 订单创建与配置选择:
     - operations/orders/creation/index.md
     - 随机订单过滤与抽取细节: operations/orders/creation/detail.md
-    - 新订单生成详细算法:
+    - 订单补位与生成:
       - operations/orders/refill/index.md
       - 候选筛选: operations/orders/refill/candidates/index.md
       - 候选筛选细节: operations/orders/refill/candidates/detail.md
@@ -409,7 +410,7 @@ nav:
       - 额外顾客细节: operations/orders/refill/extra/detail.md
       - 补位循环: operations/orders/refill/loop/index.md
       - 补位循环细节: operations/orders/refill/loop/detail.md
-  - 完整机制与后续处理:
+  - 交付结算与后续同步:
     - 烹饪与宝箱奖励:
       - operations/orders/after/index.md
       - 宝箱顾客奖励:
