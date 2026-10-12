@@ -1,0 +1,518 @@
+
+main <MainBoardItemLayerModel.lua:0,0> (39 instructions at 00000206332FF000)
+0+ params, 3 slots, 1 upvalue, 0 locals, 15 constants, 10 functions
+	1	[9]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[9]	NEWTABLE 	1 0 0
+	3	[9]	GETTABUP 	2 0 -3	; _ENV "BaseItemLayerModel"
+	4	[9]	CALL     	0 3 2
+	5	[9]	SETTABUP 	0 -1 0	; _ENV "MainBoardItemLayerModel"
+	6	[10]	GETTABUP 	0 0 -1	; _ENV "MainBoardItemLayerModel"
+	7	[10]	GETTABUP 	1 0 -1	; _ENV "MainBoardItemLayerModel"
+	8	[10]	SETTABLE 	0 -4 1	; "__index" -
+	9	[18]	GETTABUP 	0 0 -1	; _ENV "MainBoardItemLayerModel"
+	10	[23]	CLOSURE  	1 0	; 00000206332FF3B0
+	11	[18]	SETTABLE 	0 -5 1	; "Create" -
+	12	[29]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	13	[37]	CLOSURE  	1 1	; 00000206333017A0
+	14	[29]	SETTABLE 	0 -7 1	; "Init" -
+	15	[39]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	16	[41]	CLOSURE  	1 2	; 00000206333018F0
+	17	[39]	SETTABLE 	0 -8 1	; "LoadFileConfig" -
+	18	[43]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	19	[82]	CLOSURE  	1 3	; 0000020633301970
+	20	[43]	SETTABLE 	0 -9 1	; "OnSyncDataFinished" -
+	21	[86]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	22	[93]	CLOSURE  	1 4	; 0000020633302950
+	23	[86]	SETTABLE 	0 -10 1	; "_OnItemChange" -
+	24	[100]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	25	[108]	CLOSURE  	1 5	; 0000020633302A40
+	26	[100]	SETTABLE 	0 -11 1	; "GetItem" -
+	27	[111]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	28	[123]	CLOSURE  	1 6	; 0000020633303350
+	29	[111]	SETTABLE 	0 -12 1	; "FilterItems" -
+	30	[127]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	31	[149]	CLOSURE  	1 7	; 0000020633303D50
+	32	[127]	SETTABLE 	0 -13 1	; "SetItem" -
+	33	[151]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	34	[153]	CLOSURE  	1 8	; 0000020633304050
+	35	[151]	SETTABLE 	0 -14 1	; "_GetEmptyPositionCount" -
+	36	[158]	GETTABUP 	0 0 -6	; _ENV "MainBoardItemLayerModel"
+	37	[160]	CLOSURE  	1 9	; 00000206333040D0
+	38	[158]	SETTABLE 	0 -15 1	; "GetAllItems" -
+	39	[160]	RETURN   	0 1
+constants (15) for 00000206332FF000:
+	1	"MainBoardItemLayerModel"
+	2	"setmetatable"
+	3	"BaseItemLayerModel"
+	4	"__index"
+	5	"Create"
+	6	"MainBoardItemLayerModel"
+	7	"Init"
+	8	"LoadFileConfig"
+	9	"OnSyncDataFinished"
+	10	"_OnItemChange"
+	11	"GetItem"
+	12	"FilterItems"
+	13	"SetItem"
+	14	"_GetEmptyPositionCount"
+	15	"GetAllItems"
+locals (0) for 00000206332FF000:
+upvalues (1) for 00000206332FF000:
+	0	_ENV	1	0
+
+function <MainBoardItemLayerModel.lua:18,23> (12 instructions at 00000206332FF3B0)
+4 params, 11 slots, 1 upvalue, 5 locals, 3 constants, 0 functions
+	1	[20]	GETTABUP 	4 0 -1	; _ENV "setmetatable"
+	2	[20]	NEWTABLE 	5 0 0
+	3	[20]	GETTABUP 	6 0 -2	; _ENV "MainBoardItemLayerModel"
+	4	[20]	CALL     	4 3 2
+	5	[21]	SELF     	5 4 -3	; "Init"
+	6	[21]	MOVE     	7 0
+	7	[21]	MOVE     	8 1
+	8	[21]	MOVE     	9 2
+	9	[21]	MOVE     	10 3
+	10	[21]	CALL     	5 6 1
+	11	[22]	RETURN   	4 2
+	12	[23]	RETURN   	0 1
+constants (3) for 00000206332FF3B0:
+	1	"setmetatable"
+	2	"MainBoardItemLayerModel"
+	3	"Init"
+locals (5) for 00000206332FF3B0:
+	0	boardModel	1	13
+	1	dbTable	1	13
+	2	itemManager	1	13
+	3	fileName	1	13
+	4	itemLayerModel	5	13
+upvalues (1) for 00000206332FF3B0:
+	0	_ENV	0	0
+
+function <MainBoardItemLayerModel.lua:29,37> (11 instructions at 00000206333017A0)
+5 params, 8 slots, 1 upvalue, 5 locals, 6 constants, 0 functions
+	1	[30]	GETTABUP 	5 0 -1	; _ENV "BaseItemLayerModel"
+	2	[30]	GETTABLE 	5 5 -2	; "Init"
+	3	[30]	MOVE     	6 0
+	4	[30]	MOVE     	7 1
+	5	[30]	CALL     	5 3 1
+	6	[31]	SETTABLE 	0 -3 2	; "m_dbTable" -
+	7	[32]	SETTABLE 	0 -4 3	; "m_itemManager" -
+	8	[33]	SETTABLE 	0 -5 4	; "m_fileName" -
+	9	[35]	NEWTABLE 	5 0 0
+	10	[35]	SETTABLE 	0 -6 5	; "m_mapItems" -
+	11	[37]	RETURN   	0 1
+constants (6) for 00000206333017A0:
+	1	"BaseItemLayerModel"
+	2	"Init"
+	3	"m_dbTable"
+	4	"m_itemManager"
+	5	"m_fileName"
+	6	"m_mapItems"
+locals (5) for 00000206333017A0:
+	0	self	1	12
+	1	boardModel	1	12
+	2	dbTable	1	12
+	3	itemManager	1	12
+	4	fileName	1	12
+upvalues (1) for 00000206333017A0:
+	0	_ENV	0	0
+
+function <MainBoardItemLayerModel.lua:39,41> (7 instructions at 00000206333018F0)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[40]	GETTABUP 	1 0 -2	; _ENV "require"
+	2	[40]	LOADK    	2 -3	; "Data.Config."
+	3	[40]	GETTABLE 	3 0 -4	; "m_fileName"
+	4	[40]	CONCAT   	2 2 3
+	5	[40]	CALL     	1 2 2
+	6	[40]	SETTABLE 	0 -1 1	; "m_initCodeMap" -
+	7	[41]	RETURN   	0 1
+constants (4) for 00000206333018F0:
+	1	"m_initCodeMap"
+	2	"require"
+	3	"Data.Config."
+	4	"m_fileName"
+locals (1) for 00000206333018F0:
+	0	self	1	8
+upvalues (1) for 00000206333018F0:
+	0	_ENV	0	0
+
+function <MainBoardItemLayerModel.lua:43,82> (110 instructions at 0000020633301970)
+1 param, 15 slots, 1 upvalue, 20 locals, 39 constants, 0 functions
+	1	[44]	GETTABLE 	1 0 -2	; "m_boardModel"
+	2	[44]	GETTABLE 	1 1 -3	; "HorizontalTiles"
+	3	[44]	GETTABLE 	2 0 -2	; "m_boardModel"
+	4	[44]	GETTABLE 	2 2 -4	; "VerticalTiles"
+	5	[44]	MUL      	1 1 2
+	6	[44]	SETTABLE 	0 -1 1	; "m_emptyCount" -
+	7	[47]	GETTABLE 	1 0 -5	; "m_dbTable"
+	8	[47]	SELF     	1 1 -6	; "IsEmpty"
+	9	[47]	CALL     	1 2 2
+	10	[47]	TEST     	1 0
+	11	[47]	JMP      	0 36	; to 48
+	12	[47]	GETTABLE 	1 0 -7	; "m_itemManager"
+	13	[47]	SELF     	1 1 -6	; "IsEmpty"
+	14	[47]	CALL     	1 2 2
+	15	[47]	TEST     	1 0
+	16	[47]	JMP      	0 31	; to 48
+	17	[49]	GETTABLE 	1 0 -2	; "m_boardModel"
+	18	[49]	SELF     	1 1 -8	; "GetValidPositionIterator"
+	19	[49]	CALL     	1 2 4
+	20	[49]	JMP      	0 24	; to 45
+	21	[50]	GETTABLE 	5 0 -9	; "m_initCodeMap"
+	22	[50]	SELF     	6 4 -10	; "GetY"
+	23	[50]	CALL     	6 2 2
+	24	[50]	GETTABLE 	5 5 6
+	25	[50]	SELF     	6 4 -11	; "GetX"
+	26	[50]	CALL     	6 2 2
+	27	[50]	GETTABLE 	5 5 6
+	28	[52]	GETTABUP 	6 0 -12	; _ENV "ItemModelFactory"
+	29	[52]	GETTABLE 	6 6 -13	; "CreateWithCode"
+	30	[52]	GETTABLE 	7 0 -2	; "m_boardModel"
+	31	[52]	MOVE     	8 4
+	32	[52]	MOVE     	9 5
+	33	[52]	LOADBOOL 	10 1 0
+	34	[52]	CALL     	6 5 2
+	35	[53]	EQ       	1 6 -14	; - nil
+	36	[53]	JMP      	0 8	; to 45
+	37	[54]	GETTABLE 	7 0 -7	; "m_itemManager"
+	38	[54]	SELF     	7 7 -15	; "SetItem"
+	39	[54]	MOVE     	9 6
+	40	[54]	CALL     	7 3 1
+	41	[55]	SELF     	7 0 -15	; "SetItem"
+	42	[55]	MOVE     	9 4
+	43	[55]	MOVE     	10 6
+	44	[55]	CALL     	7 4 1
+	45	[49]	TFORCALL 	1 1
+	46	[49]	TFORLOOP 	3 -26	; to 21
+	47	[57]	JMP      	0 62	; to 110
+	48	[60]	NEWTABLE 	1 0 0
+	49	[61]	GETTABUP 	2 0 -16	; _ENV "pairs"
+	50	[61]	GETTABLE 	3 0 -5	; "m_dbTable"
+	51	[61]	SELF     	3 3 -17	; "GetReadOnlyValues"
+	52	[61]	CALL     	3 2 0
+	53	[61]	CALL     	2 0 4
+	54	[61]	JMP      	0 53	; to 108
+	55	[62]	GETTABLE 	7 0 -7	; "m_itemManager"
+	56	[62]	SELF     	7 7 -18	; "GetItem"
+	57	[62]	GETTABLE 	9 6 -19	; "itemId"
+	58	[62]	CALL     	7 3 2
+	59	[63]	TEST     	7 0
+	60	[63]	JMP      	0 32	; to 93
+	61	[64]	LOADK    	8 -20	; 1
+	62	[66]	GETTABUP 	9 0 -21	; _ENV "string"
+	63	[66]	GETTABLE 	9 9 -22	; "gmatch"
+	64	[66]	MOVE     	10 5
+	65	[66]	LOADK    	11 -23	; "([^_]+)"
+	66	[66]	CALL     	9 3 4
+	67	[66]	JMP      	0 5	; to 73
+	68	[67]	GETTABUP 	13 0 -24	; _ENV "tonumber"
+	69	[67]	MOVE     	14 12
+	70	[67]	CALL     	13 2 2
+	71	[67]	SETTABLE 	1 8 13
+	72	[68]	ADD      	8 8 -20	; - 1
+	73	[66]	TFORCALL 	9 1
+	74	[66]	TFORLOOP 	11 -7	; to 68
+	75	[71]	GETTABUP 	9 0 -25	; _ENV "BoardPosition"
+	76	[71]	GETTABLE 	9 9 -26	; "Create"
+	77	[71]	GETTABLE 	10 1 -20	; 1
+	78	[71]	GETTABLE 	11 1 -27	; 2
+	79	[71]	CALL     	9 3 2
+	80	[72]	GETTABLE 	10 0 -28	; "m_items"
+	81	[72]	SELF     	10 10 -29	; "SetValueOnPosition"
+	82	[72]	MOVE     	12 9
+	83	[72]	GETTABLE 	13 6 -19	; "itemId"
+	84	[72]	CALL     	10 4 1
+	85	[73]	SELF     	10 7 -30	; "SetPosition"
+	86	[73]	MOVE     	12 9
+	87	[73]	CALL     	10 3 1
+	88	[75]	SELF     	10 0 -31	; "_OnItemChange"
+	89	[75]	MOVE     	12 7
+	90	[75]	LOADBOOL 	13 1 0
+	91	[75]	CALL     	10 4 1
+	92	[75]	JMP      	0 15	; to 108
+	93	[77]	GETTABUP 	8 0 -32	; _ENV "GM"
+	94	[77]	GETTABLE 	8 8 -33	; "BIManager"
+	95	[77]	SELF     	8 8 -34	; "LogAction"
+	96	[77]	GETTABUP 	10 0 -35	; _ENV "EBIType"
+	97	[77]	GETTABLE 	10 10 -36	; "ItemNotFound"
+	98	[77]	LOADK    	11 -37	; "SILM itemId:"
+	99	[77]	GETTABUP 	12 0 -38	; _ENV "tostring"
+	100	[77]	GETTABLE 	13 6 -19	; "itemId"
+	101	[77]	CALL     	12 2 2
+	102	[77]	CONCAT   	11 11 12
+	103	[77]	CALL     	8 4 1
+	104	[78]	GETTABLE 	8 0 -5	; "m_dbTable"
+	105	[78]	SELF     	8 8 -39	; "Remove"
+	106	[78]	MOVE     	10 5
+	107	[78]	CALL     	8 3 1
+	108	[61]	TFORCALL 	2 2
+	109	[61]	TFORLOOP 	4 -55	; to 55
+	110	[82]	RETURN   	0 1
+constants (39) for 0000020633301970:
+	1	"m_emptyCount"
+	2	"m_boardModel"
+	3	"HorizontalTiles"
+	4	"VerticalTiles"
+	5	"m_dbTable"
+	6	"IsEmpty"
+	7	"m_itemManager"
+	8	"GetValidPositionIterator"
+	9	"m_initCodeMap"
+	10	"GetY"
+	11	"GetX"
+	12	"ItemModelFactory"
+	13	"CreateWithCode"
+	14	nil
+	15	"SetItem"
+	16	"pairs"
+	17	"GetReadOnlyValues"
+	18	"GetItem"
+	19	"itemId"
+	20	1
+	21	"string"
+	22	"gmatch"
+	23	"([^_]+)"
+	24	"tonumber"
+	25	"BoardPosition"
+	26	"Create"
+	27	2
+	28	"m_items"
+	29	"SetValueOnPosition"
+	30	"SetPosition"
+	31	"_OnItemChange"
+	32	"GM"
+	33	"BIManager"
+	34	"LogAction"
+	35	"EBIType"
+	36	"ItemNotFound"
+	37	"SILM itemId:"
+	38	"tostring"
+	39	"Remove"
+locals (20) for 0000020633301970:
+	0	self	1	111
+	1	(for generator)	20	47
+	2	(for state)	20	47
+	3	(for control)	20	47
+	4	position	21	45
+	5	code	28	45
+	6	item	35	45
+	7	posArr	49	110
+	8	(for generator)	54	110
+	9	(for state)	54	110
+	10	(for control)	54	110
+	11	key	55	108
+	12	data	55	108
+	13	item	59	108
+	14	count	62	92
+	15	(for generator)	67	75
+	16	(for state)	67	75
+	17	(for control)	67	75
+	18	p	68	73
+	19	pos	80	92
+upvalues (1) for 0000020633301970:
+	0	_ENV	0	0
+
+function <MainBoardItemLayerModel.lua:86,93> (17 instructions at 0000020633302950)
+3 params, 5 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[87]	GETTABLE 	3 0 -1	; "m_emptyCount"
+	2	[87]	TEST     	2 0
+	3	[87]	JMP      	0 3	; to 7
+	4	[87]	LOADK    	4 -2	; -1
+	5	[87]	TEST     	4 1
+	6	[87]	JMP      	0 1	; to 8
+	7	[87]	LOADK    	4 -3	; 1
+	8	[87]	ADD      	3 3 4
+	9	[87]	SETTABLE 	0 -1 3	; "m_emptyCount" -
+	10	[88]	TEST     	2 0
+	11	[88]	JMP      	0 3	; to 15
+	12	[89]	GETTABLE 	3 0 -4	; "m_mapItems"
+	13	[89]	SETTABLE 	3 1 -5	; - true
+	14	[89]	JMP      	0 2	; to 17
+	15	[91]	GETTABLE 	3 0 -4	; "m_mapItems"
+	16	[91]	SETTABLE 	3 1 -6	; - nil
+	17	[93]	RETURN   	0 1
+constants (6) for 0000020633302950:
+	1	"m_emptyCount"
+	2	-1
+	3	1
+	4	"m_mapItems"
+	5	true
+	6	nil
+locals (3) for 0000020633302950:
+	0	self	1	18
+	1	itemModel	1	18
+	2	addItem	1	18
+upvalues (0) for 0000020633302950:
+
+function <MainBoardItemLayerModel.lua:100,108> (20 instructions at 0000020633302A40)
+2 params, 6 slots, 0 upvalues, 3 locals, 7 constants, 0 functions
+	1	[101]	EQ       	1 1 -1	; - nil
+	2	[101]	JMP      	0 6	; to 9
+	3	[101]	GETTABLE 	2 0 -2	; "m_boardModel"
+	4	[101]	SELF     	2 2 -3	; "PositionIsValid"
+	5	[101]	MOVE     	4 1
+	6	[101]	CALL     	2 3 2
+	7	[101]	TEST     	2 1
+	8	[101]	JMP      	0 2	; to 11
+	9	[102]	LOADNIL  	2 0
+	10	[102]	RETURN   	2 2
+	11	[106]	GETTABLE 	2 0 -4	; "m_items"
+	12	[106]	SELF     	2 2 -5	; "GetValueOnPosition"
+	13	[106]	MOVE     	4 1
+	14	[106]	CALL     	2 3 2
+	15	[107]	GETTABLE 	3 0 -6	; "m_itemManager"
+	16	[107]	SELF     	3 3 -7	; "GetItem"
+	17	[107]	MOVE     	5 2
+	18	[107]	TAILCALL 	3 3 0
+	19	[107]	RETURN   	3 0
+	20	[108]	RETURN   	0 1
+constants (7) for 0000020633302A40:
+	1	nil
+	2	"m_boardModel"
+	3	"PositionIsValid"
+	4	"m_items"
+	5	"GetValueOnPosition"
+	6	"m_itemManager"
+	7	"GetItem"
+locals (3) for 0000020633302A40:
+	0	self	1	21
+	1	position	1	21
+	2	itemId	15	21
+upvalues (0) for 0000020633302A40:
+
+function <MainBoardItemLayerModel.lua:111,123> (24 instructions at 0000020633303350)
+2 params, 11 slots, 1 upvalue, 8 locals, 6 constants, 0 functions
+	1	[113]	NEWTABLE 	2 0 0
+	2	[115]	GETTABLE 	3 0 -1	; "m_boardModel"
+	3	[115]	SELF     	3 3 -2	; "GetValidPositionIterator"
+	4	[115]	CALL     	3 2 4
+	5	[115]	JMP      	0 15	; to 21
+	6	[116]	SELF     	7 0 -3	; "GetItem"
+	7	[116]	MOVE     	9 6
+	8	[116]	CALL     	7 3 2
+	9	[117]	EQ       	1 7 -4	; - nil
+	10	[117]	JMP      	0 10	; to 21
+	11	[117]	MOVE     	8 1
+	12	[117]	MOVE     	9 7
+	13	[117]	CALL     	8 2 2
+	14	[117]	TEST     	8 0
+	15	[117]	JMP      	0 5	; to 21
+	16	[118]	GETTABUP 	8 0 -5	; _ENV "table"
+	17	[118]	GETTABLE 	8 8 -6	; "insert"
+	18	[118]	MOVE     	9 2
+	19	[118]	MOVE     	10 7
+	20	[118]	CALL     	8 3 1
+	21	[115]	TFORCALL 	3 1
+	22	[115]	TFORLOOP 	5 -17	; to 6
+	23	[122]	RETURN   	2 2
+	24	[123]	RETURN   	0 1
+constants (6) for 0000020633303350:
+	1	"m_boardModel"
+	2	"GetValidPositionIterator"
+	3	"GetItem"
+	4	nil
+	5	"table"
+	6	"insert"
+locals (8) for 0000020633303350:
+	0	self	1	25
+	1	filter	1	25
+	2	results	2	25
+	3	(for generator)	5	23
+	4	(for state)	5	23
+	5	(for control)	5	23
+	6	position	6	21
+	7	itemModel	9	21
+upvalues (1) for 0000020633303350:
+	0	_ENV	0	0
+
+function <MainBoardItemLayerModel.lua:127,149> (47 instructions at 0000020633303D50)
+3 params, 10 slots, 0 upvalues, 5 locals, 13 constants, 0 functions
+	1	[128]	GETTABLE 	3 0 -1	; "m_boardModel"
+	2	[128]	SELF     	3 3 -2	; "PositionIsValid"
+	3	[128]	MOVE     	5 1
+	4	[128]	CALL     	3 3 2
+	5	[128]	TEST     	3 1
+	6	[128]	JMP      	0 1	; to 8
+	7	[129]	RETURN   	0 1
+	8	[132]	SELF     	3 0 -3	; "GetItem"
+	9	[132]	MOVE     	5 1
+	10	[132]	CALL     	3 3 2
+	11	[133]	EQ       	1 3 -4	; - nil
+	12	[133]	JMP      	0 4	; to 17
+	13	[134]	SELF     	4 0 -5	; "_OnItemChange"
+	14	[134]	MOVE     	6 3
+	15	[134]	LOADBOOL 	7 0 0
+	16	[134]	CALL     	4 4 1
+	17	[138]	TESTSET  	4 2 0
+	18	[138]	JMP      	0 2	; to 21
+	19	[138]	SELF     	4 2 -6	; "GetId"
+	20	[138]	CALL     	4 2 2
+	21	[139]	EQ       	0 4 -4	; - nil
+	22	[139]	JMP      	0 6	; to 29
+	23	[140]	GETTABLE 	5 0 -7	; "m_dbTable"
+	24	[140]	SELF     	5 5 -8	; "Remove"
+	25	[140]	SELF     	7 1 -9	; "GetKey"
+	26	[140]	CALL     	7 2 0
+	27	[140]	CALL     	5 0 1
+	28	[140]	JMP      	0 7	; to 36
+	29	[142]	GETTABLE 	5 0 -7	; "m_dbTable"
+	30	[142]	SELF     	5 5 -10	; "Set"
+	31	[142]	SELF     	7 1 -9	; "GetKey"
+	32	[142]	CALL     	7 2 2
+	33	[142]	LOADK    	8 -11	; "itemId"
+	34	[142]	MOVE     	9 4
+	35	[142]	CALL     	5 5 1
+	36	[144]	GETTABLE 	5 0 -12	; "m_items"
+	37	[144]	SELF     	5 5 -13	; "SetValueOnPosition"
+	38	[144]	MOVE     	7 1
+	39	[144]	MOVE     	8 4
+	40	[144]	CALL     	5 4 1
+	41	[146]	EQ       	1 2 -4	; - nil
+	42	[146]	JMP      	0 4	; to 47
+	43	[147]	SELF     	5 0 -5	; "_OnItemChange"
+	44	[147]	MOVE     	7 2
+	45	[147]	LOADBOOL 	8 1 0
+	46	[147]	CALL     	5 4 1
+	47	[149]	RETURN   	0 1
+constants (13) for 0000020633303D50:
+	1	"m_boardModel"
+	2	"PositionIsValid"
+	3	"GetItem"
+	4	nil
+	5	"_OnItemChange"
+	6	"GetId"
+	7	"m_dbTable"
+	8	"Remove"
+	9	"GetKey"
+	10	"Set"
+	11	"itemId"
+	12	"m_items"
+	13	"SetValueOnPosition"
+locals (5) for 0000020633303D50:
+	0	self	1	48
+	1	position	1	48
+	2	item	1	48
+	3	originalItem	11	48
+	4	itemId	21	48
+upvalues (0) for 0000020633303D50:
+
+function <MainBoardItemLayerModel.lua:151,153> (3 instructions at 0000020633304050)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[152]	GETTABLE 	1 0 -1	; "m_emptyCount"
+	2	[152]	RETURN   	1 2
+	3	[153]	RETURN   	0 1
+constants (1) for 0000020633304050:
+	1	"m_emptyCount"
+locals (1) for 0000020633304050:
+	0	self	1	4
+upvalues (0) for 0000020633304050:
+
+function <MainBoardItemLayerModel.lua:158,160> (3 instructions at 00000206333040D0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[159]	GETTABLE 	1 0 -1	; "m_mapItems"
+	2	[159]	RETURN   	1 2
+	3	[160]	RETURN   	0 1
+constants (1) for 00000206333040D0:
+	1	"m_mapItems"
+locals (1) for 00000206333040D0:
+	0	self	1	4
+upvalues (0) for 00000206333040D0:

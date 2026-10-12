@@ -1,0 +1,311 @@
+
+main <PairEvent.lua:0,0> (24 instructions at 000002B24126EFA0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 10 constants, 7 functions
+	1	[11]	NEWTABLE 	0 0 0
+	2	[11]	SETTABUP 	0 -1 0	; _ENV "PairEvent"
+	3	[12]	GETTABUP 	0 0 -1	; _ENV "PairEvent"
+	4	[12]	GETTABUP 	1 0 -1	; _ENV "PairEvent"
+	5	[12]	SETTABLE 	0 -2 1	; "__index" -
+	6	[28]	CLOSURE  	0 0	; 000002B24126F2E0
+	7	[15]	SETTABUP 	0 -3 0	; _ENV "handler"
+	8	[30]	GETTABUP 	0 0 -1	; _ENV "PairEvent"
+	9	[35]	CLOSURE  	1 1	; 000002B241272030
+	10	[30]	SETTABLE 	0 -4 1	; "Create" -
+	11	[37]	GETTABUP 	0 0 -5	; _ENV "PairEvent"
+	12	[44]	CLOSURE  	1 2	; 000002B2412720B0
+	13	[37]	SETTABLE 	0 -6 1	; "AddHandler" -
+	14	[46]	GETTABUP 	0 0 -5	; _ENV "PairEvent"
+	15	[56]	CLOSURE  	1 3	; 000002B241272130
+	16	[46]	SETTABLE 	0 -7 1	; "RemoveHandler" -
+	17	[58]	GETTABUP 	0 0 -5	; _ENV "PairEvent"
+	18	[65]	CLOSURE  	1 4	; 000002B241272A60
+	19	[58]	SETTABLE 	0 -8 1	; "Call" -
+	20	[83]	CLOSURE  	0 5	; 000002B241272B70
+	21	[68]	SETTABUP 	0 -9 0	; _ENV "AddHandlerAndRecordMap"
+	22	[96]	CLOSURE  	0 6	; 000002B241272DA0
+	23	[85]	SETTABUP 	0 -10 0	; _ENV "RemoveAllHandlers"
+	24	[96]	RETURN   	0 1
+constants (10) for 000002B24126EFA0:
+	1	"PairEvent"
+	2	"__index"
+	3	"handler"
+	4	"Create"
+	5	"PairEvent"
+	6	"AddHandler"
+	7	"RemoveHandler"
+	8	"Call"
+	9	"AddHandlerAndRecordMap"
+	10	"RemoveAllHandlers"
+locals (0) for 000002B24126EFA0:
+upvalues (1) for 000002B24126EFA0:
+	0	_ENV	1	0
+
+function <PairEvent.lua:15,28> (14 instructions at 000002B24126F2E0)
+4 params, 5 slots, 1 upvalue, 4 locals, 4 constants, 1 function
+	1	[16]	TEST     	2 1
+	2	[16]	JMP      	0 1	; to 4
+	3	[16]	GETTABLE 	2 0 -1	; "gameObject"
+	4	[17]	EQ       	0 3 -2	; - nil
+	5	[17]	JMP      	0 6	; to 12
+	6	[18]	TEST     	2 0
+	7	[18]	JMP      	0 3	; to 11
+	8	[18]	GETTABLE 	4 2 -3	; "name"
+	9	[18]	TESTSET  	3 4 1
+	10	[18]	JMP      	0 1	; to 12
+	11	[18]	LOADK    	3 -4	; ""
+	12	[27]	CLOSURE  	4 0	; 000002B24126F360
+	13	[27]	RETURN   	4 2
+	14	[28]	RETURN   	0 1
+constants (4) for 000002B24126F2E0:
+	1	"gameObject"
+	2	nil
+	3	"name"
+	4	""
+locals (4) for 000002B24126F2E0:
+	0	obj	1	15
+	1	method	1	15
+	2	gameObject	1	15
+	3	name	1	15
+upvalues (1) for 000002B24126F2E0:
+	0	_ENV	0	0
+
+function <PairEvent.lua:21,27> (20 instructions at 000002B24126F360)
+0+ params, 3 slots, 5 upvalues, 0 locals, 4 constants, 0 functions
+	1	[22]	GETUPVAL 	0 0	; gameObject
+	2	[22]	TEST     	0 0
+	3	[22]	JMP      	0 12	; to 16
+	4	[22]	GETUPVAL 	0 0	; gameObject
+	5	[22]	SELF     	0 0 -1	; "IsNull"
+	6	[22]	CALL     	0 2 2
+	7	[22]	TEST     	0 0
+	8	[22]	JMP      	0 7	; to 16
+	9	[23]	GETTABUP 	0 1 -2	; _ENV "Log"
+	10	[23]	GETTABLE 	0 0 -3	; "Warning"
+	11	[23]	LOADK    	1 -4	; "pair event view has been destroyed, object name "
+	12	[23]	GETUPVAL 	2 2	; name
+	13	[23]	CONCAT   	1 1 2
+	14	[23]	CALL     	0 2 1
+	15	[24]	RETURN   	0 1
+	16	[26]	GETUPVAL 	0 3	; method
+	17	[26]	GETUPVAL 	1 4	; obj
+	18	[26]	VARARG   	2 0
+	19	[26]	CALL     	0 0 1
+	20	[27]	RETURN   	0 1
+constants (4) for 000002B24126F360:
+	1	"IsNull"
+	2	"Log"
+	3	"Warning"
+	4	"pair event view has been destroyed, object name "
+locals (0) for 000002B24126F360:
+upvalues (5) for 000002B24126F360:
+	0	gameObject	1	2
+	1	_ENV	0	0
+	2	name	1	3
+	3	method	1	1
+	4	obj	1	0
+
+function <PairEvent.lua:30,35> (9 instructions at 000002B241272030)
+1 param, 4 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[31]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[31]	NEWTABLE 	2 0 0
+	3	[31]	GETTABUP 	3 0 -2	; _ENV "PairEvent"
+	4	[31]	CALL     	1 3 2
+	5	[32]	SETTABLE 	1 -3 0	; "_source" -
+	6	[33]	NEWTABLE 	2 0 0
+	7	[33]	SETTABLE 	1 -4 2	; "_handlers" -
+	8	[34]	RETURN   	1 2
+	9	[35]	RETURN   	0 1
+constants (4) for 000002B241272030:
+	1	"setmetatable"
+	2	"PairEvent"
+	3	"_source"
+	4	"_handlers"
+locals (2) for 000002B241272030:
+	0	source	1	10
+	1	newEvent	5	10
+upvalues (1) for 000002B241272030:
+	0	_ENV	0	0
+
+function <PairEvent.lua:37,44> (12 instructions at 000002B2412720B0)
+3 params, 5 slots, 0 upvalues, 4 locals, 3 constants, 0 functions
+	1	[38]	GETTABLE 	3 0 -1	; "_handlers"
+	2	[38]	GETTABLE 	3 3 1
+	3	[39]	EQ       	0 3 -2	; - nil
+	4	[39]	JMP      	0 4	; to 9
+	5	[40]	NEWTABLE 	4 0 0
+	6	[40]	MOVE     	3 4
+	7	[41]	GETTABLE 	4 0 -1	; "_handlers"
+	8	[41]	SETTABLE 	4 1 3
+	9	[43]	LEN      	4 3
+	10	[43]	ADD      	4 4 -3	; - 1
+	11	[43]	SETTABLE 	3 4 2
+	12	[44]	RETURN   	0 1
+constants (3) for 000002B2412720B0:
+	1	"_handlers"
+	2	nil
+	3	1
+locals (4) for 000002B2412720B0:
+	0	self	1	13
+	1	evt	1	13
+	2	handler	1	13
+	3	handlers	3	13
+upvalues (0) for 000002B2412720B0:
+
+function <PairEvent.lua:46,56> (19 instructions at 000002B241272130)
+3 params, 12 slots, 1 upvalue, 9 locals, 4 constants, 0 functions
+	1	[47]	GETTABLE 	3 0 -1	; "_handlers"
+	2	[47]	GETTABLE 	3 3 1
+	3	[48]	TEST     	3 0
+	4	[48]	JMP      	0 14	; to 19
+	5	[49]	GETTABUP 	4 0 -2	; _ENV "ipairs"
+	6	[49]	MOVE     	5 3
+	7	[49]	CALL     	4 2 4
+	8	[49]	JMP      	0 8	; to 17
+	9	[50]	EQ       	0 8 2
+	10	[50]	JMP      	0 6	; to 17
+	11	[51]	GETTABUP 	9 0 -3	; _ENV "table"
+	12	[51]	GETTABLE 	9 9 -4	; "remove"
+	13	[51]	MOVE     	10 3
+	14	[51]	MOVE     	11 7
+	15	[51]	CALL     	9 3 1
+	16	[52]	RETURN   	0 1
+	17	[49]	TFORCALL 	4 2
+	18	[49]	TFORLOOP 	6 -10	; to 9
+	19	[56]	RETURN   	0 1
+constants (4) for 000002B241272130:
+	1	"_handlers"
+	2	"ipairs"
+	3	"table"
+	4	"remove"
+locals (9) for 000002B241272130:
+	0	self	1	20
+	1	evt	1	20
+	2	handler	1	20
+	3	handlers	3	20
+	4	(for generator)	8	19
+	5	(for state)	8	19
+	6	(for control)	8	19
+	7	i	9	17
+	8	v	9	17
+upvalues (1) for 000002B241272130:
+	0	_ENV	0	0
+
+function <PairEvent.lua:58,65> (13 instructions at 000002B241272A60)
+3 params, 10 slots, 0 upvalues, 8 locals, 2 constants, 0 functions
+	1	[59]	GETTABLE 	3 0 -1	; "_handlers"
+	2	[59]	GETTABLE 	3 3 1
+	3	[60]	TEST     	3 0
+	4	[60]	JMP      	0 8	; to 13
+	5	[61]	LOADK    	4 -2	; 1
+	6	[61]	LEN      	5 3
+	7	[61]	LOADK    	6 -2	; 1
+	8	[61]	FORPREP  	4 3	; to 12
+	9	[62]	GETTABLE 	8 3 7
+	10	[62]	MOVE     	9 2
+	11	[62]	CALL     	8 2 1
+	12	[61]	FORLOOP  	4 -4	; to 9
+	13	[65]	RETURN   	0 1
+constants (2) for 000002B241272A60:
+	1	"_handlers"
+	2	1
+locals (8) for 000002B241272A60:
+	0	self	1	14
+	1	evt	1	14
+	2	message	1	14
+	3	handlers	3	14
+	4	(for index)	8	13
+	5	(for limit)	8	13
+	6	(for step)	8	13
+	7	i	9	12
+upvalues (0) for 000002B241272A60:
+
+function <PairEvent.lua:68,83> (34 instructions at 000002B241272B70)
+3 params, 8 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[69]	EQ       	1 0 -1	; - nil
+	2	[69]	JMP      	0 10	; to 13
+	3	[70]	EQ       	1 1 -1	; - nil
+	4	[70]	JMP      	0 8	; to 13
+	5	[71]	EQ       	1 2 -1	; - nil
+	6	[71]	JMP      	0 6	; to 13
+	7	[72]	GETTABLE 	3 2 -2	; "obj"
+	8	[72]	EQ       	1 3 -1	; - nil
+	9	[72]	JMP      	0 3	; to 13
+	10	[73]	GETTABLE 	3 2 -3	; "method"
+	11	[73]	EQ       	0 3 -1	; - nil
+	12	[73]	JMP      	0 1	; to 14
+	13	[74]	RETURN   	0 1
+	14	[77]	GETTABUP 	3 0 -4	; _ENV "handler"
+	15	[77]	GETTABLE 	4 2 -2	; "obj"
+	16	[77]	GETTABLE 	5 2 -3	; "method"
+	17	[77]	GETTABLE 	6 2 -5	; "gameObject"
+	18	[77]	GETTABLE 	7 2 -6	; "name"
+	19	[77]	CALL     	3 5 2
+	20	[79]	SELF     	4 0 -7	; "AddHandler"
+	21	[79]	MOVE     	6 1
+	22	[79]	MOVE     	7 3
+	23	[79]	CALL     	4 4 1
+	24	[81]	GETTABLE 	4 2 -2	; "obj"
+	25	[81]	GETTABLE 	5 2 -2	; "obj"
+	26	[81]	GETTABLE 	5 5 -8	; "m_mapPairEventHandlers"
+	27	[81]	TEST     	5 1
+	28	[81]	JMP      	0 1	; to 30
+	29	[81]	NEWTABLE 	5 0 0
+	30	[81]	SETTABLE 	4 -8 5	; "m_mapPairEventHandlers" -
+	31	[82]	GETTABLE 	4 2 -2	; "obj"
+	32	[82]	GETTABLE 	4 4 -8	; "m_mapPairEventHandlers"
+	33	[82]	SETTABLE 	4 1 3
+	34	[83]	RETURN   	0 1
+constants (8) for 000002B241272B70:
+	1	nil
+	2	"obj"
+	3	"method"
+	4	"handler"
+	5	"gameObject"
+	6	"name"
+	7	"AddHandler"
+	8	"m_mapPairEventHandlers"
+locals (4) for 000002B241272B70:
+	0	pairEvent	1	35
+	1	evt	1	35
+	2	handlerArgs	1	35
+	3	handler	20	35
+upvalues (1) for 000002B241272B70:
+	0	_ENV	0	0
+
+function <PairEvent.lua:85,96> (20 instructions at 000002B241272DA0)
+2 params, 11 slots, 1 upvalue, 7 locals, 4 constants, 0 functions
+	1	[86]	EQ       	1 0 -1	; - nil
+	2	[86]	JMP      	0 5	; to 8
+	3	[87]	EQ       	1 1 -1	; - nil
+	4	[87]	JMP      	0 3	; to 8
+	5	[88]	GETTABLE 	2 1 -2	; "m_mapPairEventHandlers"
+	6	[88]	EQ       	0 2 -1	; - nil
+	7	[88]	JMP      	0 1	; to 9
+	8	[89]	RETURN   	0 1
+	9	[92]	GETTABUP 	2 0 -3	; _ENV "pairs"
+	10	[92]	GETTABLE 	3 1 -2	; "m_mapPairEventHandlers"
+	11	[92]	CALL     	2 2 4
+	12	[92]	JMP      	0 4	; to 17
+	13	[93]	SELF     	7 0 -4	; "RemoveHandler"
+	14	[93]	MOVE     	9 5
+	15	[93]	MOVE     	10 6
+	16	[93]	CALL     	7 4 1
+	17	[92]	TFORCALL 	2 2
+	18	[92]	TFORLOOP 	4 -6	; to 13
+	19	[95]	SETTABLE 	1 -2 -1	; "m_mapPairEventHandlers" nil
+	20	[96]	RETURN   	0 1
+constants (4) for 000002B241272DA0:
+	1	nil
+	2	"m_mapPairEventHandlers"
+	3	"pairs"
+	4	"RemoveHandler"
+locals (7) for 000002B241272DA0:
+	0	pairEvent	1	21
+	1	handlerObj	1	21
+	2	(for generator)	12	19
+	3	(for state)	12	19
+	4	(for control)	12	19
+	5	event	13	17
+	6	handler	13	17
+upvalues (1) for 000002B241272DA0:
+	0	_ENV	0	0

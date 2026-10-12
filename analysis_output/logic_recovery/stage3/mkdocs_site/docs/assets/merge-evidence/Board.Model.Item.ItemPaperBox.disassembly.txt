@@ -1,0 +1,151 @@
+
+main <ItemPaperBox.lua:0,0> (24 instructions at 000001AE65B2EFB0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 10 constants, 5 functions
+	1	[2]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[2]	NEWTABLE 	1 0 0
+	3	[2]	GETTABUP 	2 0 -3	; _ENV "BaseItemComponent"
+	4	[2]	CALL     	0 3 2
+	5	[2]	SETTABUP 	0 -1 0	; _ENV "ItemPaperBox"
+	6	[3]	GETTABUP 	0 0 -1	; _ENV "ItemPaperBox"
+	7	[3]	GETTABUP 	1 0 -1	; _ENV "ItemPaperBox"
+	8	[3]	SETTABLE 	0 -4 1	; "__index" -
+	9	[5]	GETTABUP 	0 0 -1	; _ENV "ItemPaperBox"
+	10	[9]	CLOSURE  	1 0	; 000001AE65B2F300
+	11	[5]	SETTABLE 	0 -5 1	; "Create" -
+	12	[11]	GETTABUP 	0 0 -6	; _ENV "ItemPaperBox"
+	13	[13]	CLOSURE  	1 1	; 000001AE65B2F380
+	14	[11]	SETTABLE 	0 -7 1	; "Init" -
+	15	[15]	GETTABUP 	0 0 -6	; _ENV "ItemPaperBox"
+	16	[17]	CLOSURE  	1 2	; 000001AE65B31710
+	17	[15]	SETTABLE 	0 -8 1	; "GetInnerItemCode" -
+	18	[19]	GETTABUP 	0 0 -6	; _ENV "ItemPaperBox"
+	19	[24]	CLOSURE  	1 3	; 000001AE65B31790
+	20	[19]	SETTABLE 	0 -9 1	; "Try2Unlock" -
+	21	[26]	GETTABUP 	0 0 -6	; _ENV "ItemPaperBox"
+	22	[30]	CLOSURE  	1 4	; 000001AE65B31970
+	23	[26]	SETTABLE 	0 -10 1	; "OnShock" -
+	24	[30]	RETURN   	0 1
+constants (10) for 000001AE65B2EFB0:
+	1	"ItemPaperBox"
+	2	"setmetatable"
+	3	"BaseItemComponent"
+	4	"__index"
+	5	"Create"
+	6	"ItemPaperBox"
+	7	"Init"
+	8	"GetInnerItemCode"
+	9	"Try2Unlock"
+	10	"OnShock"
+locals (0) for 000001AE65B2EFB0:
+upvalues (1) for 000001AE65B2EFB0:
+	0	_ENV	1	0
+
+function <ItemPaperBox.lua:5,9> (9 instructions at 000001AE65B2F300)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[6]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[6]	NEWTABLE 	2 0 0
+	3	[6]	GETTABUP 	3 0 -2	; _ENV "ItemPaperBox"
+	4	[6]	CALL     	1 3 2
+	5	[7]	SELF     	2 1 -3	; "Init"
+	6	[7]	MOVE     	4 0
+	7	[7]	CALL     	2 3 1
+	8	[8]	RETURN   	1 2
+	9	[9]	RETURN   	0 1
+constants (3) for 000001AE65B2F300:
+	1	"setmetatable"
+	2	"ItemPaperBox"
+	3	"Init"
+locals (2) for 000001AE65B2F300:
+	0	innerItemCode	1	10
+	1	itemPaperBox	5	10
+upvalues (1) for 000001AE65B2F300:
+	0	_ENV	0	0
+
+function <ItemPaperBox.lua:11,13> (2 instructions at 000001AE65B2F380)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[12]	SETTABLE 	0 -1 1	; "m_innerItemCode" -
+	2	[13]	RETURN   	0 1
+constants (1) for 000001AE65B2F380:
+	1	"m_innerItemCode"
+locals (2) for 000001AE65B2F380:
+	0	self	1	3
+	1	innerItemCode	1	3
+upvalues (0) for 000001AE65B2F380:
+
+function <ItemPaperBox.lua:15,17> (3 instructions at 000001AE65B31710)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[16]	GETTABLE 	1 0 -1	; "m_innerItemCode"
+	2	[16]	RETURN   	1 2
+	3	[17]	RETURN   	0 1
+constants (1) for 000001AE65B31710:
+	1	"m_innerItemCode"
+locals (1) for 000001AE65B31710:
+	0	self	1	4
+upvalues (0) for 000001AE65B31710:
+
+function <ItemPaperBox.lua:19,24> (23 instructions at 000001AE65B31790)
+1 param, 6 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[20]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[20]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[20]	CALL     	1 2 2
+	4	[21]	SELF     	2 1 -3	; "GetItemPaperBoxUnLockLevel"
+	5	[21]	GETTABLE 	4 0 -1	; "m_itemModel"
+	6	[21]	CALL     	2 3 2
+	7	[21]	LT       	0 -4 2	; 0 -
+	8	[21]	JMP      	0 14	; to 23
+	9	[21]	SELF     	2 1 -5	; "IsItemPaperBoxLocked"
+	10	[21]	GETTABLE 	4 0 -1	; "m_itemModel"
+	11	[21]	CALL     	2 3 2
+	12	[21]	TEST     	2 1
+	13	[21]	JMP      	0 9	; to 23
+	14	[22]	GETTABLE 	2 0 -1	; "m_itemModel"
+	15	[22]	SELF     	2 2 -2	; "GetBoardModel"
+	16	[22]	CALL     	2 2 2
+	17	[22]	SELF     	2 2 -6	; "CollapseItem"
+	18	[22]	GETTABLE 	4 0 -1	; "m_itemModel"
+	19	[22]	SELF     	4 4 -7	; "GetPosition"
+	20	[22]	CALL     	4 2 2
+	21	[22]	LOADBOOL 	5 1 0
+	22	[22]	CALL     	2 4 1
+	23	[24]	RETURN   	0 1
+constants (7) for 000001AE65B31790:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"GetItemPaperBoxUnLockLevel"
+	4	0
+	5	"IsItemPaperBoxLocked"
+	6	"CollapseItem"
+	7	"GetPosition"
+locals (2) for 000001AE65B31790:
+	0	self	1	24
+	1	boardModel	4	24
+upvalues (0) for 000001AE65B31790:
+
+function <ItemPaperBox.lua:26,30> (17 instructions at 000001AE65B31970)
+1 param, 5 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[27]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[27]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[27]	CALL     	1 2 2
+	4	[27]	SELF     	1 1 -3	; "IsItemPaperBoxLocked"
+	5	[27]	GETTABLE 	3 0 -1	; "m_itemModel"
+	6	[27]	CALL     	1 3 2
+	7	[27]	TEST     	1 1
+	8	[27]	JMP      	0 8	; to 17
+	9	[28]	GETTABLE 	1 0 -1	; "m_itemModel"
+	10	[28]	SELF     	1 1 -2	; "GetBoardModel"
+	11	[28]	CALL     	1 2 2
+	12	[28]	SELF     	1 1 -4	; "CollapseItem"
+	13	[28]	GETTABLE 	3 0 -1	; "m_itemModel"
+	14	[28]	SELF     	3 3 -5	; "GetPosition"
+	15	[28]	CALL     	3 2 0
+	16	[28]	CALL     	1 0 1
+	17	[30]	RETURN   	0 1
+constants (5) for 000001AE65B31970:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"IsItemPaperBoxLocked"
+	4	"CollapseItem"
+	5	"GetPosition"
+locals (1) for 000001AE65B31970:
+	0	self	1	18
+upvalues (0) for 000001AE65B31970:

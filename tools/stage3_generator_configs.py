@@ -55,7 +55,7 @@ OWNERS = {
 # the full records on the orchestration page.
 CONFIG_FILES = {
     'item': 'ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust',
-    'lucky': 'LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell',
+    'lucky': 'LuckyProduceConfig、LuckyProduceConfig_shell、LuckyProduceConfig_triple、LuckyProduceConfig_tripleshell、GeneratorBoostLuckyProduceConfig、GeneratorBoostLuckyProduceConfig_shell',
     'activity': 'GeneratorBoostItemModelConfig、GeneratorBoostItemModelConfig_shell',
     'energy': 'EnergyBoostItemConfig；服务器 EnergyBoostEight',
     'order': 'OrderItemConfig.json；OrderItemConfig_shell/hard/nerf/nerf_more/extracust',

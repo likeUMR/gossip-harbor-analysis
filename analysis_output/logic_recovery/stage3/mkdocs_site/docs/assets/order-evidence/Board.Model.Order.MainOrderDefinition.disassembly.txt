@@ -1,0 +1,328 @@
+
+main <MainOrderDefinition.lua:0,0> (238 instructions at 000001BA47ABF000)
+0+ params, 12 slots, 1 upvalue, 0 locals, 83 constants, 0 functions
+	1	[1]	NEWTABLE 	0 0 0
+	2	[1]	SETTABUP 	0 -1 0	; _ENV "MainOrderDefinition"
+	3	[4]	GETTABUP 	0 0 -1	; _ENV "MainOrderDefinition"
+	4	[4]	SETTABLE 	0 -2 -3	; "FirstOrderAvatarId" 6
+	5	[9]	NEWTABLE 	0 0 17
+	6	[10]	SETTABLE 	0 -5 -6	; "Slot1" 1
+	7	[11]	SETTABLE 	0 -7 -8	; "Slot2" 2
+	8	[12]	SETTABLE 	0 -9 -10	; "Slot3" 3
+	9	[13]	SETTABLE 	0 -11 -12	; "Slot4" 4
+	10	[14]	SETTABLE 	0 -13 -14	; "Slot5" 5
+	11	[15]	SETTABLE 	0 -15 -3	; "SpecialSlot" 6
+	12	[16]	SETTABLE 	0 -16 -17	; "BranchSlot" 7
+	13	[17]	SETTABLE 	0 -18 -19	; "Slot8" 8
+	14	[18]	SETTABLE 	0 -20 -21	; "MainDecorSlot" 9
+	15	[19]	SETTABLE 	0 -22 -23	; "CharacterIntimacySlot" 10
+	16	[22]	SETTABLE 	0 -24 -25	; "TutorialOrder" 11
+	17	[24]	SETTABLE 	0 -26 -27	; "TimedOrderSlot" 13
+	18	[26]	SETTABLE 	0 -28 -29	; "BaselineOrderSlot" 15
+	19	[29]	SETTABLE 	0 -30 -31	; "LuckyOrderSlot" 17
+	20	[30]	SETTABLE 	0 -32 -33	; "ContiorderSlot" 18
+	21	[31]	SETTABLE 	0 -34 -35	; "ExtraCustomerSlot" 19
+	22	[33]	SETTABLE 	0 -36 -35	; "SlotCount" 19
+	23	[34]	SETTABUP 	0 -4 0	; _ENV "MainOrderSlotDefinition"
+	24	[37]	NEWTABLE 	0 9 0
+	25	[38]	GETTABUP 	1 0 -38	; _ENV "tostring"
+	26	[38]	GETTABUP 	2 0 -4	; _ENV "MainOrderSlotDefinition"
+	27	[38]	GETTABLE 	2 2 -5	; "Slot1"
+	28	[38]	CALL     	1 2 2
+	29	[39]	GETTABUP 	2 0 -38	; _ENV "tostring"
+	30	[39]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	31	[39]	GETTABLE 	3 3 -7	; "Slot2"
+	32	[39]	CALL     	2 2 2
+	33	[40]	GETTABUP 	3 0 -38	; _ENV "tostring"
+	34	[40]	GETTABUP 	4 0 -4	; _ENV "MainOrderSlotDefinition"
+	35	[40]	GETTABLE 	4 4 -24	; "TutorialOrder"
+	36	[40]	CALL     	3 2 2
+	37	[41]	GETTABUP 	4 0 -38	; _ENV "tostring"
+	38	[41]	GETTABUP 	5 0 -4	; _ENV "MainOrderSlotDefinition"
+	39	[41]	GETTABLE 	5 5 -9	; "Slot3"
+	40	[41]	CALL     	4 2 2
+	41	[42]	GETTABUP 	5 0 -38	; _ENV "tostring"
+	42	[42]	GETTABUP 	6 0 -4	; _ENV "MainOrderSlotDefinition"
+	43	[42]	GETTABLE 	6 6 -18	; "Slot8"
+	44	[42]	CALL     	5 2 2
+	45	[43]	GETTABUP 	6 0 -38	; _ENV "tostring"
+	46	[43]	GETTABUP 	7 0 -4	; _ENV "MainOrderSlotDefinition"
+	47	[43]	GETTABLE 	7 7 -11	; "Slot4"
+	48	[43]	CALL     	6 2 2
+	49	[44]	GETTABUP 	7 0 -38	; _ENV "tostring"
+	50	[44]	GETTABUP 	8 0 -4	; _ENV "MainOrderSlotDefinition"
+	51	[44]	GETTABLE 	8 8 -13	; "Slot5"
+	52	[44]	CALL     	7 2 2
+	53	[45]	GETTABUP 	8 0 -38	; _ENV "tostring"
+	54	[45]	GETTABUP 	9 0 -4	; _ENV "MainOrderSlotDefinition"
+	55	[45]	GETTABLE 	9 9 -22	; "CharacterIntimacySlot"
+	56	[45]	CALL     	8 2 2
+	57	[46]	GETTABUP 	9 0 -38	; _ENV "tostring"
+	58	[46]	GETTABUP 	10 0 -4	; _ENV "MainOrderSlotDefinition"
+	59	[46]	GETTABLE 	10 10 -28	; "BaselineOrderSlot"
+	60	[46]	CALL     	9 2 2
+	61	[47]	GETTABUP 	10 0 -38	; _ENV "tostring"
+	62	[47]	GETTABUP 	11 0 -4	; _ENV "MainOrderSlotDefinition"
+	63	[47]	GETTABLE 	11 11 -34	; "ExtraCustomerSlot"
+	64	[47]	CALL     	10 2 0
+	65	[48]	SETLIST  	0 0 1	; 1
+	66	[48]	SETTABUP 	0 -37 0	; _ENV "MainOrderSlotPriority"
+	67	[52]	NEWTABLE 	0 0 17
+	68	[54]	SETTABLE 	0 -40 -41	; "Fixed" 0
+	69	[56]	SETTABLE 	0 -42 -6	; "Random1" 1
+	70	[57]	SETTABLE 	0 -43 -8	; "Random2" 2
+	71	[58]	SETTABLE 	0 -44 -10	; "Random3" 3
+	72	[59]	SETTABLE 	0 -45 -12	; "Random4" 4
+	73	[61]	SETTABLE 	0 -46 -14	; "Special" 5
+	74	[63]	SETTABLE 	0 -47 -3	; "Random5" 6
+	75	[65]	SETTABLE 	0 -48 -17	; "Branch" 7
+	76	[69]	SETTABLE 	0 -49 -21	; "Random5New" 9
+	77	[72]	SETTABLE 	0 -24 -25	; "TutorialOrder" 11
+	78	[74]	SETTABLE 	0 -50 -51	; "CharacterIntimacyRandom" 12
+	79	[76]	SETTABLE 	0 -52 -27	; "ReturnUserFree" 13
+	80	[78]	SETTABLE 	0 -53 -54	; "Lucky" 14
+	81	[80]	SETTABLE 	0 -55 -29	; "TimedCustomer" 15
+	82	[81]	SETTABLE 	0 -56 -57	; "TimedOrder" 16
+	83	[85]	SETTABLE 	0 -58 -33	; "BaselineOrder" 18
+	84	[89]	SETTABLE 	0 -59 -60	; "Contiorder" 20
+	85	[91]	SETTABLE 	0 -61 -62	; "ExtraCustomer" 21
+	86	[92]	SETTABUP 	0 -39 0	; _ENV "MainOrderType"
+	87	[95]	NEWTABLE 	0 0 12
+	88	[96]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	89	[96]	GETTABLE 	1 1 -40	; "Fixed"
+	90	[96]	SETTABLE 	0 1 -64	; - true
+	91	[97]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	92	[97]	GETTABLE 	1 1 -42	; "Random1"
+	93	[97]	SETTABLE 	0 1 -64	; - true
+	94	[98]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	95	[98]	GETTABLE 	1 1 -43	; "Random2"
+	96	[98]	SETTABLE 	0 1 -64	; - true
+	97	[99]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	98	[99]	GETTABLE 	1 1 -44	; "Random3"
+	99	[99]	SETTABLE 	0 1 -64	; - true
+	100	[100]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	101	[100]	GETTABLE 	1 1 -45	; "Random4"
+	102	[100]	SETTABLE 	0 1 -64	; - true
+	103	[101]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	104	[101]	GETTABLE 	1 1 -47	; "Random5"
+	105	[101]	SETTABLE 	0 1 -64	; - true
+	106	[102]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	107	[102]	GETTABLE 	1 1 -49	; "Random5New"
+	108	[102]	SETTABLE 	0 1 -64	; - true
+	109	[103]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	110	[103]	GETTABLE 	1 1 -52	; "ReturnUserFree"
+	111	[103]	SETTABLE 	0 1 -64	; - true
+	112	[104]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	113	[104]	GETTABLE 	1 1 -50	; "CharacterIntimacyRandom"
+	114	[104]	SETTABLE 	0 1 -64	; - true
+	115	[105]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	116	[105]	GETTABLE 	1 1 -53	; "Lucky"
+	117	[105]	SETTABLE 	0 1 -64	; - true
+	118	[106]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	119	[106]	GETTABLE 	1 1 -56	; "TimedOrder"
+	120	[106]	SETTABLE 	0 1 -64	; - true
+	121	[107]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	122	[107]	GETTABLE 	1 1 -58	; "BaselineOrder"
+	123	[107]	SETTABLE 	0 1 -64	; - true
+	124	[108]	SETTABUP 	0 -63 0	; _ENV "CanChangeToMainDecorTimeLimitOrder"
+	125	[110]	NEWTABLE 	0 0 6
+	126	[111]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	127	[111]	GETTABLE 	1 1 -5	; "Slot1"
+	128	[111]	SETTABLE 	0 1 -64	; - true
+	129	[112]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	130	[112]	GETTABLE 	1 1 -7	; "Slot2"
+	131	[112]	SETTABLE 	0 1 -64	; - true
+	132	[113]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	133	[113]	GETTABLE 	1 1 -9	; "Slot3"
+	134	[113]	SETTABLE 	0 1 -64	; - true
+	135	[114]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	136	[114]	GETTABLE 	1 1 -11	; "Slot4"
+	137	[114]	SETTABLE 	0 1 -64	; - true
+	138	[115]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	139	[115]	GETTABLE 	1 1 -13	; "Slot5"
+	140	[115]	SETTABLE 	0 1 -64	; - true
+	141	[116]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	142	[116]	GETTABLE 	1 1 -18	; "Slot8"
+	143	[116]	SETTABLE 	0 1 -64	; - true
+	144	[117]	SETTABUP 	0 -65 0	; _ENV "NormalOrderSlot"
+	145	[120]	NEWTABLE 	0 0 7
+	146	[121]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	147	[121]	GETTABLE 	1 1 -5	; "Slot1"
+	148	[121]	SETTABLE 	0 1 -67	; - "Random1StartTimer"
+	149	[122]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	150	[122]	GETTABLE 	1 1 -7	; "Slot2"
+	151	[122]	SETTABLE 	0 1 -67	; - "Random1StartTimer"
+	152	[123]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	153	[123]	GETTABLE 	1 1 -9	; "Slot3"
+	154	[123]	SETTABLE 	0 1 -68	; - "Random2StartTimer"
+	155	[124]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	156	[124]	GETTABLE 	1 1 -11	; "Slot4"
+	157	[124]	SETTABLE 	0 1 -69	; - "Random3StartTimer"
+	158	[125]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	159	[125]	GETTABLE 	1 1 -13	; "Slot5"
+	160	[125]	SETTABLE 	0 1 -70	; - "Random4StartTimer"
+	161	[126]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	162	[126]	GETTABLE 	1 1 -18	; "Slot8"
+	163	[126]	SETTABLE 	0 1 -71	; - "Random5StartTimer"
+	164	[127]	GETTABUP 	1 0 -4	; _ENV "MainOrderSlotDefinition"
+	165	[127]	GETTABLE 	1 1 -22	; "CharacterIntimacySlot"
+	166	[127]	SETTABLE 	0 1 -72	; - "RandomIntimacyStartTimer"
+	167	[128]	SETTABUP 	0 -66 0	; _ENV "MainOrderDBColumnRandomStartTimer"
+	168	[131]	NEWTABLE 	0 0 6
+	169	[132]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	170	[132]	GETTABLE 	1 1 -42	; "Random1"
+	171	[132]	SETTABLE 	0 1 -74	; - "Random1OrderPoints"
+	172	[133]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	173	[133]	GETTABLE 	1 1 -43	; "Random2"
+	174	[133]	SETTABLE 	0 1 -75	; - "Random2OrderPoints"
+	175	[134]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	176	[134]	GETTABLE 	1 1 -44	; "Random3"
+	177	[134]	SETTABLE 	0 1 -76	; - "Random3OrderPoints"
+	178	[135]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	179	[135]	GETTABLE 	1 1 -45	; "Random4"
+	180	[135]	SETTABLE 	0 1 -77	; - "Random4OrderPoints"
+	181	[136]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	182	[136]	GETTABLE 	1 1 -49	; "Random5New"
+	183	[136]	SETTABLE 	0 1 -78	; - "Random5NewOrderPoints"
+	184	[137]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	185	[137]	GETTABLE 	1 1 -50	; "CharacterIntimacyRandom"
+	186	[137]	SETTABLE 	0 1 -79	; - "CharacterIntimacyRandomOrderPoints"
+	187	[138]	SETTABUP 	0 -73 0	; _ENV "MainOrderDBRandomPoint"
+	188	[141]	NEWTABLE 	0 0 2
+	189	[142]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	190	[142]	GETTABLE 	1 1 -46	; "Special"
+	191	[142]	SETTABLE 	0 1 -64	; - true
+	192	[143]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	193	[143]	GETTABLE 	1 1 -61	; "ExtraCustomer"
+	194	[143]	SETTABLE 	0 1 -64	; - true
+	195	[144]	SETTABUP 	0 -80 0	; _ENV "MainOrderSlot3IgnoreCheckInnerType"
+	196	[147]	NEWTABLE 	0 0 5
+	197	[148]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	198	[148]	GETTABLE 	1 1 -42	; "Random1"
+	199	[148]	NEWTABLE 	2 2 0
+	200	[149]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	201	[149]	GETTABLE 	3 3 -5	; "Slot1"
+	202	[150]	GETTABUP 	4 0 -4	; _ENV "MainOrderSlotDefinition"
+	203	[151]	GETTABLE 	4 4 -7	; "Slot2"
+	204	[151]	SETLIST  	2 2 1	; 1
+	205	[151]	SETTABLE 	0 1 2
+	206	[152]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	207	[152]	GETTABLE 	1 1 -43	; "Random2"
+	208	[152]	NEWTABLE 	2 1 0
+	209	[153]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	210	[154]	GETTABLE 	3 3 -9	; "Slot3"
+	211	[154]	SETLIST  	2 1 1	; 1
+	212	[154]	SETTABLE 	0 1 2
+	213	[155]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	214	[155]	GETTABLE 	1 1 -44	; "Random3"
+	215	[155]	NEWTABLE 	2 1 0
+	216	[156]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	217	[157]	GETTABLE 	3 3 -11	; "Slot4"
+	218	[157]	SETLIST  	2 1 1	; 1
+	219	[157]	SETTABLE 	0 1 2
+	220	[158]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	221	[158]	GETTABLE 	1 1 -45	; "Random4"
+	222	[158]	NEWTABLE 	2 1 0
+	223	[159]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	224	[160]	GETTABLE 	3 3 -13	; "Slot5"
+	225	[160]	SETLIST  	2 1 1	; 1
+	226	[160]	SETTABLE 	0 1 2
+	227	[161]	GETTABUP 	1 0 -39	; _ENV "MainOrderType"
+	228	[161]	GETTABLE 	1 1 -49	; "Random5New"
+	229	[161]	NEWTABLE 	2 1 0
+	230	[162]	GETTABUP 	3 0 -4	; _ENV "MainOrderSlotDefinition"
+	231	[163]	GETTABLE 	3 3 -18	; "Slot8"
+	232	[163]	SETLIST  	2 1 1	; 1
+	233	[163]	SETTABLE 	0 1 2
+	234	[164]	SETTABUP 	0 -81 0	; _ENV "MainOrderTypeSlotMap"
+	235	[167]	NEWTABLE 	0 0 1
+	236	[168]	SETTABLE 	0 -83 -83	; "ChestCustomer" "ChestCustomer"
+	237	[169]	SETTABUP 	0 -82 0	; _ENV "MainOrderCellType"
+	238	[169]	RETURN   	0 1
+constants (83) for 000001BA47ABF000:
+	1	"MainOrderDefinition"
+	2	"FirstOrderAvatarId"
+	3	6
+	4	"MainOrderSlotDefinition"
+	5	"Slot1"
+	6	1
+	7	"Slot2"
+	8	2
+	9	"Slot3"
+	10	3
+	11	"Slot4"
+	12	4
+	13	"Slot5"
+	14	5
+	15	"SpecialSlot"
+	16	"BranchSlot"
+	17	7
+	18	"Slot8"
+	19	8
+	20	"MainDecorSlot"
+	21	9
+	22	"CharacterIntimacySlot"
+	23	10
+	24	"TutorialOrder"
+	25	11
+	26	"TimedOrderSlot"
+	27	13
+	28	"BaselineOrderSlot"
+	29	15
+	30	"LuckyOrderSlot"
+	31	17
+	32	"ContiorderSlot"
+	33	18
+	34	"ExtraCustomerSlot"
+	35	19
+	36	"SlotCount"
+	37	"MainOrderSlotPriority"
+	38	"tostring"
+	39	"MainOrderType"
+	40	"Fixed"
+	41	0
+	42	"Random1"
+	43	"Random2"
+	44	"Random3"
+	45	"Random4"
+	46	"Special"
+	47	"Random5"
+	48	"Branch"
+	49	"Random5New"
+	50	"CharacterIntimacyRandom"
+	51	12
+	52	"ReturnUserFree"
+	53	"Lucky"
+	54	14
+	55	"TimedCustomer"
+	56	"TimedOrder"
+	57	16
+	58	"BaselineOrder"
+	59	"Contiorder"
+	60	20
+	61	"ExtraCustomer"
+	62	21
+	63	"CanChangeToMainDecorTimeLimitOrder"
+	64	true
+	65	"NormalOrderSlot"
+	66	"MainOrderDBColumnRandomStartTimer"
+	67	"Random1StartTimer"
+	68	"Random2StartTimer"
+	69	"Random3StartTimer"
+	70	"Random4StartTimer"
+	71	"Random5StartTimer"
+	72	"RandomIntimacyStartTimer"
+	73	"MainOrderDBRandomPoint"
+	74	"Random1OrderPoints"
+	75	"Random2OrderPoints"
+	76	"Random3OrderPoints"
+	77	"Random4OrderPoints"
+	78	"Random5NewOrderPoints"
+	79	"CharacterIntimacyRandomOrderPoints"
+	80	"MainOrderSlot3IgnoreCheckInnerType"
+	81	"MainOrderTypeSlotMap"
+	82	"MainOrderCellType"
+	83	"ChestCustomer"
+locals (0) for 000001BA47ABF000:
+upvalues (1) for 000001BA47ABF000:
+	0	_ENV	1	0

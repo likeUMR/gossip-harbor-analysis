@@ -1,0 +1,468 @@
+
+main <BubbleDecreaseModel.lua:0,0> (35 instructions at 000001A5C72DF000)
+0+ params, 4 slots, 1 upvalue, 2 locals, 13 constants, 9 functions
+	1	[8]	GETTABUP 	0 0 -1	; _ENV "Sec2Day"
+	2	[9]	LOADK    	1 -2	; 100
+	3	[18]	NEWTABLE 	2 0 0
+	4	[18]	SETTABUP 	0 -3 2	; _ENV "BubbleDecreaseModel"
+	5	[19]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	6	[19]	GETTABUP 	3 0 -3	; _ENV "BubbleDecreaseModel"
+	7	[19]	SETTABLE 	2 -4 3	; "__index" -
+	8	[21]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	9	[24]	CLOSURE  	3 0	; 000001A5C72DF390
+	10	[21]	SETTABLE 	2 -5 3	; "Init" -
+	11	[26]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	12	[57]	CLOSURE  	3 1	; 000001A5C72E17C0
+	13	[26]	SETTABLE 	2 -6 3	; "LoadServerConfig" -
+	14	[59]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	15	[63]	CLOSURE  	3 2	; 000001A5C72E2590
+	16	[59]	SETTABLE 	2 -7 3	; "OnLoginFinished" -
+	17	[66]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	18	[68]	CLOSURE  	3 3	; 000001A5C72E2610
+	19	[66]	SETTABLE 	2 -8 3	; "OnSyncDataFinished" -
+	20	[70]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	21	[77]	CLOSURE  	3 4	; 000001A5C72E2690
+	22	[70]	SETTABLE 	2 -9 3	; "_Try2UpdateNoPurchaseBubbleLoginDays" -
+	23	[79]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	24	[83]	CLOSURE  	3 5	; 000001A5C72E28B0
+	25	[79]	SETTABLE 	2 -10 3	; "OnBubbleBroken" -
+	26	[85]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	27	[102]	CLOSURE  	3 6	; 000001A5C72E29A0
+	28	[85]	SETTABLE 	2 -11 3	; "GetBubbleDecreaseRatio" -
+	29	[104]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	30	[110]	CLOSURE  	3 7	; 000001A5C72E2CE0
+	31	[104]	SETTABLE 	2 -12 3	; "GetTestInfo" -
+	32	[112]	GETTABUP 	2 0 -3	; _ENV "BubbleDecreaseModel"
+	33	[114]	CLOSURE  	3 8	; 000001A5C72E3FF0
+	34	[112]	SETTABLE 	2 -13 3	; "RecordBubbleDecreaseInfo" -
+	35	[114]	RETURN   	0 1
+constants (13) for 000001A5C72DF000:
+	1	"Sec2Day"
+	2	100
+	3	"BubbleDecreaseModel"
+	4	"__index"
+	5	"Init"
+	6	"LoadServerConfig"
+	7	"OnLoginFinished"
+	8	"OnSyncDataFinished"
+	9	"_Try2UpdateNoPurchaseBubbleLoginDays"
+	10	"OnBubbleBroken"
+	11	"GetBubbleDecreaseRatio"
+	12	"GetTestInfo"
+	13	"RecordBubbleDecreaseInfo"
+locals (2) for 000001A5C72DF000:
+	0	Sec2Day	2	36
+	1	RatioPreciseScale	3	36
+upvalues (1) for 000001A5C72DF000:
+	0	_ENV	1	0
+
+function <BubbleDecreaseModel.lua:21,24> (15 instructions at 000001A5C72DF390)
+1 param, 5 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[22]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[22]	GETTABLE 	1 1 -2	; "AddListener"
+	3	[22]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[22]	GETTABLE 	2 2 -4	; "LoginFinished"
+	5	[22]	MOVE     	3 0
+	6	[22]	GETTABLE 	4 0 -5	; "OnLoginFinished"
+	7	[22]	CALL     	1 4 1
+	8	[23]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	9	[23]	GETTABLE 	1 1 -2	; "AddListener"
+	10	[23]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	11	[23]	GETTABLE 	2 2 -6	; "BubbleBroken"
+	12	[23]	MOVE     	3 0
+	13	[23]	GETTABLE 	4 0 -7	; "OnBubbleBroken"
+	14	[23]	CALL     	1 4 1
+	15	[24]	RETURN   	0 1
+constants (7) for 000001A5C72DF390:
+	1	"EventDispatcher"
+	2	"AddListener"
+	3	"EEventType"
+	4	"LoginFinished"
+	5	"OnLoginFinished"
+	6	"BubbleBroken"
+	7	"OnBubbleBroken"
+locals (1) for 000001A5C72DF390:
+	0	self	1	16
+upvalues (1) for 000001A5C72DF390:
+	0	_ENV	0	0
+
+function <BubbleDecreaseModel.lua:26,57> (82 instructions at 000001A5C72E17C0)
+1 param, 14 slots, 2 upvalues, 13 locals, 27 constants, 0 functions
+	1	[27]	GETTABUP 	1 0 -2	; _ENV "GM"
+	2	[27]	GETTABLE 	1 1 -3	; "ConfigModel"
+	3	[27]	SELF     	1 1 -4	; "IsServerControlOpen"
+	4	[27]	GETTABUP 	3 0 -5	; _ENV "EGeneralConfType"
+	5	[27]	GETTABLE 	3 3 -6	; "BubbleDecrease"
+	6	[27]	CALL     	1 3 2
+	7	[27]	SETTABLE 	0 -1 1	; "m_bGeneralConfEnabled" -
+	8	[29]	GETTABUP 	1 0 -2	; _ENV "GM"
+	9	[29]	GETTABLE 	1 1 -3	; "ConfigModel"
+	10	[29]	SELF     	1 1 -7	; "GetServerConfigMD5"
+	11	[29]	GETTABUP 	3 0 -8	; _ENV "ServerConfigKey"
+	12	[29]	GETTABLE 	3 3 -9	; "BubbleDecreaseConfig"
+	13	[29]	CALL     	1 3 2
+	14	[30]	GETTABLE 	2 0 -10	; "m_md5"
+	15	[30]	EQ       	0 1 2
+	16	[30]	JMP      	0 1	; to 18
+	17	[31]	RETURN   	0 1
+	18	[34]	SETTABLE 	0 -10 1	; "m_md5" -
+	19	[35]	GETTABUP 	2 0 -11	; _ENV "GameConfig"
+	20	[35]	GETTABLE 	2 2 -12	; "IsTestMode"
+	21	[35]	CALL     	2 1 2
+	22	[35]	TEST     	2 0
+	23	[35]	JMP      	0 1	; to 25
+	24	[36]	SETTABLE 	0 -13 -14	; "m_strTestConfig" ""
+	25	[40]	GETTABUP 	2 0 -2	; _ENV "GM"
+	26	[40]	GETTABLE 	2 2 -3	; "ConfigModel"
+	27	[40]	SELF     	2 2 -15	; "GetServerConfig"
+	28	[40]	GETTABUP 	4 0 -8	; _ENV "ServerConfigKey"
+	29	[40]	GETTABLE 	4 4 -9	; "BubbleDecreaseConfig"
+	30	[40]	CALL     	2 3 2
+	31	[42]	NEWTABLE 	3 0 0
+	32	[42]	SETTABLE 	0 -16 3	; "m_arrDays" -
+	33	[43]	NEWTABLE 	3 0 0
+	34	[43]	SETTABLE 	0 -17 3	; "m_mapDay2DecreaseRatio" -
+	35	[44]	GETTABUP 	3 0 -18	; _ENV "Table"
+	36	[44]	GETTABLE 	3 3 -19	; "IsEmpty"
+	37	[44]	MOVE     	4 2
+	38	[44]	CALL     	3 2 2
+	39	[44]	TEST     	3 1
+	40	[44]	JMP      	0 41	; to 82
+	41	[45]	GETTABUP 	3 0 -20	; _ENV "ipairs"
+	42	[45]	MOVE     	4 2
+	43	[45]	CALL     	3 2 4
+	44	[45]	JMP      	0 10	; to 55
+	45	[46]	GETTABLE 	8 0 -16	; "m_arrDays"
+	46	[46]	GETTABLE 	9 0 -16	; "m_arrDays"
+	47	[46]	LEN      	9 9
+	48	[46]	ADD      	9 9 -21	; - 1
+	49	[46]	GETTABLE 	10 7 -22	; "no_purchase_days"
+	50	[46]	SETTABLE 	8 9 10
+	51	[47]	GETTABLE 	8 0 -17	; "m_mapDay2DecreaseRatio"
+	52	[47]	GETTABLE 	9 7 -22	; "no_purchase_days"
+	53	[47]	GETTABLE 	10 7 -23	; "decrease_ratio"
+	54	[47]	SETTABLE 	8 9 10
+	55	[45]	TFORCALL 	3 2
+	56	[45]	TFORLOOP 	5 -12	; to 45
+	57	[49]	GETTABUP 	3 0 -24	; _ENV "table"
+	58	[49]	GETTABLE 	3 3 -25	; "sort"
+	59	[49]	GETTABLE 	4 0 -16	; "m_arrDays"
+	60	[49]	CALL     	3 2 1
+	61	[51]	GETTABUP 	3 0 -11	; _ENV "GameConfig"
+	62	[51]	GETTABLE 	3 3 -12	; "IsTestMode"
+	63	[51]	CALL     	3 1 2
+	64	[51]	TEST     	3 0
+	65	[51]	JMP      	0 16	; to 82
+	66	[52]	GETTABUP 	3 0 -20	; _ENV "ipairs"
+	67	[52]	GETTABLE 	4 0 -16	; "m_arrDays"
+	68	[52]	CALL     	3 2 4
+	69	[52]	JMP      	0 10	; to 80
+	70	[53]	GETTABLE 	8 0 -13	; "m_strTestConfig"
+	71	[53]	LOADK    	9 -26	; "\n"
+	72	[53]	MOVE     	10 7
+	73	[53]	LOADK    	11 -27	; ":"
+	74	[53]	GETTABLE 	12 0 -17	; "m_mapDay2DecreaseRatio"
+	75	[53]	GETTABLE 	12 12 7
+	76	[53]	GETUPVAL 	13 1	; RatioPreciseScale
+	77	[53]	DIV      	12 12 13
+	78	[53]	CONCAT   	8 8 12
+	79	[53]	SETTABLE 	0 -13 8	; "m_strTestConfig" -
+	80	[52]	TFORCALL 	3 2
+	81	[52]	TFORLOOP 	5 -12	; to 70
+	82	[57]	RETURN   	0 1
+constants (27) for 000001A5C72E17C0:
+	1	"m_bGeneralConfEnabled"
+	2	"GM"
+	3	"ConfigModel"
+	4	"IsServerControlOpen"
+	5	"EGeneralConfType"
+	6	"BubbleDecrease"
+	7	"GetServerConfigMD5"
+	8	"ServerConfigKey"
+	9	"BubbleDecreaseConfig"
+	10	"m_md5"
+	11	"GameConfig"
+	12	"IsTestMode"
+	13	"m_strTestConfig"
+	14	""
+	15	"GetServerConfig"
+	16	"m_arrDays"
+	17	"m_mapDay2DecreaseRatio"
+	18	"Table"
+	19	"IsEmpty"
+	20	"ipairs"
+	21	1
+	22	"no_purchase_days"
+	23	"decrease_ratio"
+	24	"table"
+	25	"sort"
+	26	"\n"
+	27	":"
+locals (13) for 000001A5C72E17C0:
+	0	self	1	83
+	1	md5	14	83
+	2	configs	31	83
+	3	(for generator)	44	57
+	4	(for state)	44	57
+	5	(for control)	44	57
+	6	_	45	55
+	7	config	45	55
+	8	(for generator)	69	82
+	9	(for state)	69	82
+	10	(for control)	69	82
+	11	_	70	80
+	12	day	70	80
+upvalues (2) for 000001A5C72E17C0:
+	0	_ENV	0	0
+	1	RatioPreciseScale	1	1
+
+function <BubbleDecreaseModel.lua:59,63> (6 instructions at 000001A5C72E2590)
+2 params, 4 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[60]	GETTABLE 	2 1 -1	; "bSuccess"
+	2	[60]	TEST     	2 0
+	3	[60]	JMP      	0 2	; to 6
+	4	[61]	SELF     	2 0 -2	; "_Try2UpdateNoPurchaseBubbleLoginDays"
+	5	[61]	CALL     	2 2 1
+	6	[63]	RETURN   	0 1
+constants (2) for 000001A5C72E2590:
+	1	"bSuccess"
+	2	"_Try2UpdateNoPurchaseBubbleLoginDays"
+locals (2) for 000001A5C72E2590:
+	0	self	1	7
+	1	msg	1	7
+upvalues (0) for 000001A5C72E2590:
+
+function <BubbleDecreaseModel.lua:66,68> (3 instructions at 000001A5C72E2610)
+1 param, 3 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[67]	SELF     	1 0 -1	; "_Try2UpdateNoPurchaseBubbleLoginDays"
+	2	[67]	CALL     	1 2 1
+	3	[68]	RETURN   	0 1
+constants (1) for 000001A5C72E2610:
+	1	"_Try2UpdateNoPurchaseBubbleLoginDays"
+locals (1) for 000001A5C72E2610:
+	0	self	1	4
+upvalues (0) for 000001A5C72E2610:
+
+function <BubbleDecreaseModel.lua:70,77> (29 instructions at 000001A5C72E2690)
+1 param, 7 slots, 2 upvalues, 3 locals, 9 constants, 0 functions
+	1	[71]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[71]	GETTABLE 	1 1 -2	; "GameModel"
+	3	[71]	SELF     	1 1 -3	; "GetServerTime"
+	4	[71]	CALL     	1 2 2
+	5	[72]	GETTABUP 	2 0 -1	; _ENV "GM"
+	6	[72]	GETTABLE 	2 2 -4	; "MiscModel"
+	7	[72]	SELF     	2 2 -5	; "GetBubbleNoPurchaseLastLoginTimeStampInNumber"
+	8	[72]	CALL     	2 2 2
+	9	[73]	GETUPVAL 	3 1	; Sec2Day
+	10	[73]	IDIV     	3 2 3
+	11	[73]	GETUPVAL 	4 1	; Sec2Day
+	12	[73]	IDIV     	4 1 4
+	13	[73]	EQ       	1 3 4
+	14	[73]	JMP      	0 14	; to 29
+	15	[74]	GETTABUP 	3 0 -1	; _ENV "GM"
+	16	[74]	GETTABLE 	3 3 -4	; "MiscModel"
+	17	[74]	SELF     	3 3 -6	; "SetBubbleNoPurchaseLastLoginTimeStamp"
+	18	[74]	MOVE     	5 1
+	19	[74]	CALL     	3 3 1
+	20	[75]	GETTABUP 	3 0 -1	; _ENV "GM"
+	21	[75]	GETTABLE 	3 3 -4	; "MiscModel"
+	22	[75]	SELF     	3 3 -7	; "SetBubbleNoPurchaseLoginDays"
+	23	[75]	GETTABUP 	5 0 -1	; _ENV "GM"
+	24	[75]	GETTABLE 	5 5 -4	; "MiscModel"
+	25	[75]	SELF     	5 5 -8	; "GetBubbleNoPurchaseLoginDaysInNumber"
+	26	[75]	CALL     	5 2 2
+	27	[75]	ADD      	5 5 -9	; - 1
+	28	[75]	CALL     	3 3 1
+	29	[77]	RETURN   	0 1
+constants (9) for 000001A5C72E2690:
+	1	"GM"
+	2	"GameModel"
+	3	"GetServerTime"
+	4	"MiscModel"
+	5	"GetBubbleNoPurchaseLastLoginTimeStampInNumber"
+	6	"SetBubbleNoPurchaseLastLoginTimeStamp"
+	7	"SetBubbleNoPurchaseLoginDays"
+	8	"GetBubbleNoPurchaseLoginDaysInNumber"
+	9	1
+locals (3) for 000001A5C72E2690:
+	0	self	1	30
+	1	serverTime	5	30
+	2	noPurchaseBubbleLastLoginTimeStamp	9	30
+upvalues (2) for 000001A5C72E2690:
+	0	_ENV	0	0
+	1	Sec2Day	1	0
+
+function <BubbleDecreaseModel.lua:79,83> (15 instructions at 000001A5C72E28B0)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[80]	GETTABLE 	2 1 -1	; "IsFree"
+	2	[80]	TEST     	2 1
+	3	[80]	JMP      	0 11	; to 15
+	4	[80]	GETTABLE 	2 1 -2	; "Cost"
+	5	[80]	TEST     	2 0
+	6	[80]	JMP      	0 8	; to 15
+	7	[80]	GETTABLE 	2 1 -2	; "Cost"
+	8	[80]	LT       	0 -3 2	; 0 -
+	9	[80]	JMP      	0 5	; to 15
+	10	[81]	GETTABUP 	2 0 -4	; _ENV "GM"
+	11	[81]	GETTABLE 	2 2 -5	; "MiscModel"
+	12	[81]	SELF     	2 2 -6	; "SetBubbleNoPurchaseLoginDays"
+	13	[81]	LOADK    	4 -3	; 0
+	14	[81]	CALL     	2 3 1
+	15	[83]	RETURN   	0 1
+constants (6) for 000001A5C72E28B0:
+	1	"IsFree"
+	2	"Cost"
+	3	0
+	4	"GM"
+	5	"MiscModel"
+	6	"SetBubbleNoPurchaseLoginDays"
+locals (2) for 000001A5C72E28B0:
+	0	self	1	16
+	1	msg	1	16
+upvalues (1) for 000001A5C72E28B0:
+	0	_ENV	0	0
+
+function <BubbleDecreaseModel.lua:85,102> (39 instructions at 000001A5C72E29A0)
+1 param, 9 slots, 2 upvalues, 8 locals, 12 constants, 0 functions
+	1	[86]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[86]	GETTABLE 	1 1 -2	; "MiscModel"
+	3	[86]	SELF     	1 1 -3	; "GetBubbleNoPurchaseLoginDaysInNumber"
+	4	[86]	CALL     	1 2 2
+	5	[87]	GETTABLE 	2 0 -4	; "m_bGeneralConfEnabled"
+	6	[87]	TEST     	2 0
+	7	[87]	JMP      	0 8	; to 16
+	8	[87]	GETTABUP 	2 0 -5	; _ENV "Table"
+	9	[87]	GETTABLE 	2 2 -6	; "IsEmpty"
+	10	[87]	GETTABLE 	3 0 -7	; "m_arrDays"
+	11	[87]	CALL     	2 2 2
+	12	[87]	TEST     	2 1
+	13	[87]	JMP      	0 2	; to 16
+	14	[87]	LE       	0 1 -8	; - 0
+	15	[87]	JMP      	0 2	; to 18
+	16	[88]	LOADK    	2 -9	; 1
+	17	[88]	RETURN   	2 2
+	18	[91]	LOADK    	2 -10	; -1
+	19	[92]	GETTABUP 	3 0 -11	; _ENV "ipairs"
+	20	[92]	GETTABLE 	4 0 -7	; "m_arrDays"
+	21	[92]	CALL     	3 2 4
+	22	[92]	JMP      	0 3	; to 26
+	23	[93]	LT       	0 7 1
+	24	[93]	JMP      	0 1	; to 26
+	25	[94]	MOVE     	2 6
+	26	[92]	TFORCALL 	3 2
+	27	[92]	TFORLOOP 	5 -5	; to 23
+	28	[97]	EQ       	0 2 -10	; - -1
+	29	[97]	JMP      	0 2	; to 32
+	30	[98]	LOADK    	3 -9	; 1
+	31	[98]	RETURN   	3 2
+	32	[101]	GETTABLE 	3 0 -12	; "m_mapDay2DecreaseRatio"
+	33	[101]	GETTABLE 	4 0 -7	; "m_arrDays"
+	34	[101]	GETTABLE 	4 4 2
+	35	[101]	GETTABLE 	3 3 4
+	36	[101]	GETUPVAL 	4 1	; RatioPreciseScale
+	37	[101]	DIV      	3 3 4
+	38	[101]	RETURN   	3 2
+	39	[102]	RETURN   	0 1
+constants (12) for 000001A5C72E29A0:
+	1	"GM"
+	2	"MiscModel"
+	3	"GetBubbleNoPurchaseLoginDaysInNumber"
+	4	"m_bGeneralConfEnabled"
+	5	"Table"
+	6	"IsEmpty"
+	7	"m_arrDays"
+	8	0
+	9	1
+	10	-1
+	11	"ipairs"
+	12	"m_mapDay2DecreaseRatio"
+locals (8) for 000001A5C72E29A0:
+	0	self	1	40
+	1	noPurchaseBubbleLoginDays	5	40
+	2	selectedDayIndex	19	40
+	3	(for generator)	22	28
+	4	(for state)	22	28
+	5	(for control)	22	28
+	6	i	23	26
+	7	day	23	26
+upvalues (2) for 000001A5C72E29A0:
+	0	_ENV	0	0
+	1	RatioPreciseScale	1	1
+
+function <BubbleDecreaseModel.lua:104,110> (42 instructions at 000001A5C72E2CE0)
+1 param, 11 slots, 1 upvalue, 1 local, 17 constants, 0 functions
+	1	[105]	LOADK    	1 -1	; "\233\133\141\231\189\174\230\152\175\229\144\166\229\188\128\229\144\175:"
+	2	[105]	GETTABUP 	2 0 -2	; _ENV "tostring"
+	3	[105]	GETTABLE 	3 0 -3	; "m_bGeneralConfEnabled"
+	4	[105]	CALL     	2 2 2
+	5	[106]	LOADK    	3 -4	; "\n\229\189\147\229\137\141\233\133\141\231\189\174\229\134\133\229\174\185:"
+	6	[106]	GETTABUP 	4 0 -5	; _ENV "StringUtil"
+	7	[106]	GETTABLE 	4 4 -6	; "IsNilOrEmpty"
+	8	[106]	GETTABLE 	5 0 -7	; "m_strTestConfig"
+	9	[106]	CALL     	4 2 2
+	10	[106]	TEST     	4 0
+	11	[106]	JMP      	0 3	; to 15
+	12	[106]	LOADK    	4 -8	; "\230\151\160"
+	13	[106]	TEST     	4 1
+	14	[106]	JMP      	0 1	; to 16
+	15	[106]	GETTABLE 	4 0 -7	; "m_strTestConfig"
+	16	[107]	LOADK    	5 -9	; "\n\229\189\147\229\137\141\230\156\170\232\180\173\228\185\176\230\179\161\230\179\161\231\154\132\231\180\175\231\167\175\231\153\187\229\189\149\229\164\169\230\149\176:"
+	17	[107]	GETTABUP 	6 0 -2	; _ENV "tostring"
+	18	[107]	GETTABUP 	7 0 -10	; _ENV "GM"
+	19	[107]	GETTABLE 	7 7 -11	; "MiscModel"
+	20	[107]	SELF     	7 7 -12	; "GetBubbleNoPurchaseLoginDaysInNumber"
+	21	[107]	CALL     	7 2 0
+	22	[107]	CALL     	6 0 2
+	23	[108]	LOADK    	7 -13	; "\n\229\189\147\229\137\141\232\161\176\229\135\143\230\175\148\228\190\139:"
+	24	[108]	GETTABUP 	8 0 -2	; _ENV "tostring"
+	25	[108]	SELF     	9 0 -14	; "GetBubbleDecreaseRatio"
+	26	[108]	CALL     	9 2 0
+	27	[108]	CALL     	8 0 2
+	28	[109]	GETTABUP 	9 0 -5	; _ENV "StringUtil"
+	29	[109]	GETTABLE 	9 9 -6	; "IsNilOrEmpty"
+	30	[109]	GETTABLE 	10 0 -15	; "m_lastMergeBubbleTestInfo"
+	31	[109]	CALL     	9 2 2
+	32	[109]	TEST     	9 1
+	33	[109]	JMP      	0 5	; to 39
+	34	[109]	LOADK    	9 -16	; "\n----------------\n"
+	35	[109]	GETTABLE 	10 0 -15	; "m_lastMergeBubbleTestInfo"
+	36	[109]	CONCAT   	9 9 10
+	37	[109]	TEST     	9 1
+	38	[109]	JMP      	0 1	; to 40
+	39	[109]	LOADK    	9 -17	; ""
+	40	[109]	CONCAT   	1 1 9
+	41	[109]	RETURN   	1 2
+	42	[110]	RETURN   	0 1
+constants (17) for 000001A5C72E2CE0:
+	1	"\233\133\141\231\189\174\230\152\175\229\144\166\229\188\128\229\144\175:"
+	2	"tostring"
+	3	"m_bGeneralConfEnabled"
+	4	"\n\229\189\147\229\137\141\233\133\141\231\189\174\229\134\133\229\174\185:"
+	5	"StringUtil"
+	6	"IsNilOrEmpty"
+	7	"m_strTestConfig"
+	8	"\230\151\160"
+	9	"\n\229\189\147\229\137\141\230\156\170\232\180\173\228\185\176\230\179\161\230\179\161\231\154\132\231\180\175\231\167\175\231\153\187\229\189\149\229\164\169\230\149\176:"
+	10	"GM"
+	11	"MiscModel"
+	12	"GetBubbleNoPurchaseLoginDaysInNumber"
+	13	"\n\229\189\147\229\137\141\232\161\176\229\135\143\230\175\148\228\190\139:"
+	14	"GetBubbleDecreaseRatio"
+	15	"m_lastMergeBubbleTestInfo"
+	16	"\n----------------\n"
+	17	""
+locals (1) for 000001A5C72E2CE0:
+	0	self	1	43
+upvalues (1) for 000001A5C72E2CE0:
+	0	_ENV	0	0
+
+function <BubbleDecreaseModel.lua:112,114> (2 instructions at 000001A5C72E3FF0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[113]	SETTABLE 	0 -1 1	; "m_lastMergeBubbleTestInfo" -
+	2	[114]	RETURN   	0 1
+constants (1) for 000001A5C72E3FF0:
+	1	"m_lastMergeBubbleTestInfo"
+locals (2) for 000001A5C72E3FF0:
+	0	self	1	3
+	1	info	1	3
+upvalues (0) for 000001A5C72E3FF0:

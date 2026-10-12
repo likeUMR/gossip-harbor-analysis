@@ -1,0 +1,17 @@
+[
+  {
+    "Requirement": "8313",
+    "Rewards": [
+      "2402-2",
+      "2405-1",
+      "2502-2",
+      "2503-1"
+    ],
+    "Id": 1,
+    "GeneratorChain": "82",
+    "Slot": 7,
+    "EndTimeline": "branch_order_finish",
+    "BranchType": 1,
+    "AvatarId": 401
+  }
+]

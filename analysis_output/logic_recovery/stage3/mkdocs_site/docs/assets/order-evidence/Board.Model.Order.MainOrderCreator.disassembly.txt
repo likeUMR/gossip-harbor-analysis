@@ -1,0 +1,1589 @@
+
+main <MainOrderCreator.lua:0,0> (59 instructions at 0000029673F6EFE0)
+0+ params, 8 slots, 1 upvalue, 6 locals, 26 constants, 14 functions
+	1	[3]	LOADK    	0 -1	; "CurrentFixedOrderId"
+	2	[4]	LOADK    	1 -2	; "CurrentSpecialOrderId"
+	3	[5]	LOADK    	2 -3	; "ReturnUserFreeOrderTimer"
+	4	[6]	LOADK    	3 -4	; "LuckyOrderPoints"
+	5	[7]	LOADK    	4 -5	; "LuckyOrderTimer"
+	6	[9]	NEWTABLE 	5 0 0
+	7	[9]	SETTABUP 	0 -6 5	; _ENV "MainOrderCreatorFixed"
+	8	[11]	GETTABUP 	5 0 -6	; _ENV "MainOrderCreatorFixed"
+	9	[32]	CLOSURE  	6 0	; 0000029673F6F380
+	10	[11]	SETTABLE 	5 -7 6	; "Create" -
+	11	[34]	NEWTABLE 	5 0 0
+	12	[34]	SETTABUP 	0 -8 5	; _ENV "MainOrderCreatorSpecial"
+	13	[36]	GETTABUP 	5 0 -8	; _ENV "MainOrderCreatorSpecial"
+	14	[42]	CLOSURE  	6 1	; 0000029673F71D10
+	15	[36]	SETTABLE 	5 -9 6	; "GetConfig" -
+	16	[44]	GETTABUP 	5 0 -8	; _ENV "MainOrderCreatorSpecial"
+	17	[53]	CLOSURE  	6 2	; 0000029673F72680
+	18	[44]	SETTABLE 	5 -10 6	; "CanCreate" -
+	19	[55]	GETTABUP 	5 0 -11	; _ENV "MainOrderCreatorSpecial"
+	20	[64]	CLOSURE  	6 3	; 0000029673F72910
+	21	[55]	SETTABLE 	5 -12 6	; "Create" -
+	22	[66]	GETTABUP 	5 0 -13	; _ENV "MainOrderCreatorSpecial"
+	23	[70]	CLOSURE  	6 4	; 0000029673F72C20
+	24	[66]	SETTABLE 	5 -14 6	; "IsCreated" -
+	25	[73]	GETTABUP 	5 0 -13	; _ENV "MainOrderCreatorSpecial"
+	26	[76]	CLOSURE  	6 5	; 0000029673F72CA0
+	27	[73]	SETTABLE 	5 -15 6	; "ResetCurrentSpecialOrderId" -
+	28	[78]	NEWTABLE 	5 0 0
+	29	[78]	SETTABUP 	0 -16 5	; _ENV "MainOrderCreatorBranch"
+	30	[80]	GETTABUP 	5 0 -16	; _ENV "MainOrderCreatorBranch"
+	31	[88]	CLOSURE  	6 6	; 0000029673F72D20
+	32	[80]	SETTABLE 	5 -12 6	; "Create" -
+	33	[90]	GETTABUP 	5 0 -17	; _ENV "MainOrderCreatorBranch"
+	34	[92]	CLOSURE  	6 7	; 0000029673F72F50
+	35	[90]	SETTABLE 	5 -18 6	; "CanCreate" -
+	36	[108]	NEWTABLE 	5 0 0
+	37	[108]	SETTABUP 	0 -19 5	; _ENV "MainOrderCreatorReturnFreeOrder"
+	38	[109]	LOADK    	5 -20	; 28800
+	39	[110]	GETTABUP 	6 0 -19	; _ENV "MainOrderCreatorReturnFreeOrder"
+	40	[139]	CLOSURE  	7 8	; 0000029673F72FD0
+	41	[110]	SETTABLE 	6 -18 7	; "CanCreate" -
+	42	[141]	GETTABUP 	6 0 -19	; _ENV "MainOrderCreatorReturnFreeOrder"
+	43	[183]	CLOSURE  	7 9	; 0000029673F75440
+	44	[141]	SETTABLE 	6 -21 7	; "Create" -
+	45	[191]	NEWTABLE 	6 0 0
+	46	[191]	SETTABUP 	0 -22 6	; _ENV "MainOrderCreatorLuckyOrder"
+	47	[192]	GETTABUP 	6 0 -22	; _ENV "MainOrderCreatorLuckyOrder"
+	48	[229]	CLOSURE  	7 10	; 0000029673F74DC0
+	49	[192]	SETTABLE 	6 -18 7	; "CanCreate" -
+	50	[232]	GETTABUP 	6 0 -22	; _ENV "MainOrderCreatorLuckyOrder"
+	51	[371]	CLOSURE  	7 11	; 0000029673F75540
+	52	[232]	SETTABLE 	6 -23 7	; "Create" -
+	53	[374]	GETTABUP 	6 0 -24	; _ENV "MainOrderCreatorLuckyOrder"
+	54	[432]	CLOSURE  	7 12	; 0000029673F752C0
+	55	[374]	SETTABLE 	6 -25 7	; "TryLuckyRandom" -
+	56	[435]	GETTABUP 	6 0 -24	; _ENV "MainOrderCreatorLuckyOrder"
+	57	[444]	CLOSURE  	7 13	; 0000029673F758C0
+	58	[435]	SETTABLE 	6 -26 7	; "LuckRandomRemoveCode" -
+	59	[444]	RETURN   	0 1
+constants (26) for 0000029673F6EFE0:
+	1	"CurrentFixedOrderId"
+	2	"CurrentSpecialOrderId"
+	3	"ReturnUserFreeOrderTimer"
+	4	"LuckyOrderPoints"
+	5	"LuckyOrderTimer"
+	6	"MainOrderCreatorFixed"
+	7	"Create"
+	8	"MainOrderCreatorSpecial"
+	9	"GetConfig"
+	10	"CanCreate"
+	11	"MainOrderCreatorSpecial"
+	12	"Create"
+	13	"MainOrderCreatorSpecial"
+	14	"IsCreated"
+	15	"ResetCurrentSpecialOrderId"
+	16	"MainOrderCreatorBranch"
+	17	"MainOrderCreatorBranch"
+	18	"CanCreate"
+	19	"MainOrderCreatorReturnFreeOrder"
+	20	28800
+	21	"Create"
+	22	"MainOrderCreatorLuckyOrder"
+	23	"Create"
+	24	"MainOrderCreatorLuckyOrder"
+	25	"TryLuckyRandom"
+	26	"LuckRandomRemoveCode"
+locals (6) for 0000029673F6EFE0:
+	0	DBColumnCurrentFixedOrderId	2	60
+	1	DBColumnCurrentSpecialOrderId	3	60
+	2	DBColumnReturnUserFreeOrderTimer	4	60
+	3	DBColumnLuckyOrderPoints	5	60
+	4	DBColumnLuckyOrderTimer	6	60
+	5	CreatorReturnFreeOrderRefreshTime	39	60
+upvalues (1) for 0000029673F6EFE0:
+	0	_ENV	1	0
+
+function <MainOrderCreator.lua:11,32> (59 instructions at 0000029673F6F380)
+2 params, 16 slots, 2 upvalues, 9 locals, 25 constants, 0 functions
+	1	[12]	SELF     	2 0 -1	; "GetMetaData"
+	2	[12]	CALL     	2 2 2
+	3	[13]	GETTABUP 	3 0 -2	; _ENV "tonumber"
+	4	[13]	SELF     	4 2 -3	; "GetValue"
+	5	[13]	GETUPVAL 	6 1	; DBColumnCurrentFixedOrderId
+	6	[13]	LOADK    	7 -4	; "value"
+	7	[13]	CALL     	4 4 0
+	8	[13]	CALL     	3 0 2
+	9	[13]	TEST     	3 1
+	10	[13]	JMP      	0 1	; to 12
+	11	[13]	LOADK    	3 -5	; 0
+	12	[15]	ADD      	4 3 -6	; - 1
+	13	[16]	SELF     	5 0 -7	; "GetFixedOrderConfig"
+	14	[16]	CALL     	5 2 2
+	15	[17]	GETTABLE 	6 5 4
+	16	[18]	EQ       	1 6 -8	; - nil
+	17	[18]	JMP      	0 14	; to 32
+	18	[19]	GETTABUP 	7 0 -9	; _ENV "Table"
+	19	[19]	GETTABLE 	7 7 -10	; "ListContain"
+	20	[19]	GETTABLE 	8 6 -11	; "Slots"
+	21	[19]	MOVE     	9 1
+	22	[19]	CALL     	7 3 2
+	23	[20]	TEST     	7 0
+	24	[20]	JMP      	0 7	; to 32
+	25	[20]	GETTABUP 	7 0 -12	; _ENV "GM"
+	26	[20]	GETTABLE 	7 7 -13	; "LevelModel"
+	27	[20]	SELF     	7 7 -14	; "GetCurrentLevel"
+	28	[20]	CALL     	7 2 2
+	29	[20]	GETTABLE 	8 6 -15	; "UnlockLevel"
+	30	[20]	LT       	0 7 8
+	31	[20]	JMP      	0 2	; to 34
+	32	[22]	LOADNIL  	7 0
+	33	[22]	RETURN   	7 2
+	34	[25]	SELF     	7 2 -16	; "Set"
+	35	[25]	GETUPVAL 	9 1	; DBColumnCurrentFixedOrderId
+	36	[25]	LOADK    	10 -4	; "value"
+	37	[25]	GETTABUP 	11 0 -17	; _ENV "tostring"
+	38	[25]	MOVE     	12 4
+	39	[25]	CALL     	11 2 0
+	40	[25]	CALL     	7 0 1
+	41	[27]	NEWTABLE 	7 3 0
+	42	[28]	GETTABLE 	8 6 -18	; "Requirement1"
+	43	[28]	GETTABLE 	9 6 -19	; "Requirement2"
+	44	[29]	GETTABLE 	10 6 -20	; "Requirement3"
+	45	[29]	SETLIST  	7 3 1	; 1
+	46	[30]	SELF     	8 0 -21	; "GetAvatarId"
+	47	[30]	CALL     	8 2 2
+	48	[31]	GETTABUP 	9 0 -22	; _ENV "MainOrder"
+	49	[31]	GETTABLE 	9 9 -23	; "Create"
+	50	[31]	MOVE     	10 0
+	51	[31]	MOVE     	11 1
+	52	[31]	MOVE     	12 4
+	53	[31]	MOVE     	13 7
+	54	[31]	GETTABUP 	14 0 -24	; _ENV "MainOrderType"
+	55	[31]	GETTABLE 	14 14 -25	; "Fixed"
+	56	[31]	MOVE     	15 8
+	57	[31]	TAILCALL 	9 7 0
+	58	[31]	RETURN   	9 0
+	59	[32]	RETURN   	0 1
+constants (25) for 0000029673F6F380:
+	1	"GetMetaData"
+	2	"tonumber"
+	3	"GetValue"
+	4	"value"
+	5	0
+	6	1
+	7	"GetFixedOrderConfig"
+	8	nil
+	9	"Table"
+	10	"ListContain"
+	11	"Slots"
+	12	"GM"
+	13	"LevelModel"
+	14	"GetCurrentLevel"
+	15	"UnlockLevel"
+	16	"Set"
+	17	"tostring"
+	18	"Requirement1"
+	19	"Requirement2"
+	20	"Requirement3"
+	21	"GetAvatarId"
+	22	"MainOrder"
+	23	"Create"
+	24	"MainOrderType"
+	25	"Fixed"
+locals (9) for 0000029673F6F380:
+	0	orderModel	1	60
+	1	slot	1	60
+	2	metaData	3	60
+	3	currentFixedOrderId	12	60
+	4	nextFixedOrderId	13	60
+	5	fixedOrderConfig	15	60
+	6	nextConfig	16	60
+	7	requirements	46	60
+	8	avatarId	48	60
+upvalues (2) for 0000029673F6F380:
+	0	_ENV	0	0
+	1	DBColumnCurrentFixedOrderId	1	0
+
+function <MainOrderCreator.lua:36,42> (18 instructions at 0000029673F71D10)
+2 params, 8 slots, 2 upvalues, 6 locals, 6 constants, 0 functions
+	1	[37]	SELF     	2 0 -1	; "GetMetaData"
+	2	[37]	CALL     	2 2 2
+	3	[38]	GETTABUP 	3 0 -2	; _ENV "tonumber"
+	4	[38]	SELF     	4 2 -3	; "GetValue"
+	5	[38]	GETUPVAL 	6 1	; DBColumnCurrentSpecialOrderId
+	6	[38]	LOADK    	7 -4	; "value"
+	7	[38]	CALL     	4 4 0
+	8	[38]	CALL     	3 0 2
+	9	[38]	TEST     	3 1
+	10	[38]	JMP      	0 1	; to 12
+	11	[38]	LOADK    	3 -5	; 0
+	12	[39]	ADD      	4 3 1
+	13	[40]	SELF     	5 0 -6	; "GetSpecialOrderConfig"
+	14	[40]	CALL     	5 2 2
+	15	[41]	GETTABLE 	6 5 4
+	16	[41]	MOVE     	7 4
+	17	[41]	RETURN   	6 3
+	18	[42]	RETURN   	0 1
+constants (6) for 0000029673F71D10:
+	1	"GetMetaData"
+	2	"tonumber"
+	3	"GetValue"
+	4	"value"
+	5	0
+	6	"GetSpecialOrderConfig"
+locals (6) for 0000029673F71D10:
+	0	orderModel	1	19
+	1	offset	1	19
+	2	metaData	3	19
+	3	currentSpecialOrderId	12	19
+	4	specialOrderId	13	19
+	5	specialOrderConfig	15	19
+upvalues (2) for 0000029673F71D10:
+	0	_ENV	0	0
+	1	DBColumnCurrentSpecialOrderId	1	1
+
+function <MainOrderCreator.lua:44,53> (31 instructions at 0000029673F72680)
+1 param, 9 slots, 1 upvalue, 4 locals, 14 constants, 0 functions
+	1	[45]	GETTABUP 	1 0 -1	; _ENV "MainOrderCreatorSpecial"
+	2	[45]	GETTABLE 	1 1 -2	; "GetConfig"
+	3	[45]	MOVE     	2 0
+	4	[45]	LOADK    	3 -3	; 1
+	5	[45]	CALL     	1 3 2
+	6	[46]	EQ       	0 1 -4	; - nil
+	7	[46]	JMP      	0 2	; to 10
+	8	[47]	LOADBOOL 	2 0 0
+	9	[47]	RETURN   	2 2
+	10	[50]	GETTABUP 	2 0 -5	; _ENV "StringUtil"
+	11	[50]	GETTABLE 	2 2 -6	; "Split"
+	12	[50]	GETTABLE 	3 1 -7	; "Trigger"
+	13	[50]	LOADK    	4 -8	; "-"
+	14	[50]	CALL     	2 3 2
+	15	[51]	GETTABUP 	3 0 -5	; _ENV "StringUtil"
+	16	[51]	GETTABLE 	3 3 -6	; "Split"
+	17	[51]	GETTABLE 	4 2 -9	; 2
+	18	[51]	LOADK    	5 -10	; "_"
+	19	[51]	CALL     	3 3 2
+	20	[52]	GETTABUP 	4 0 -11	; _ENV "GM"
+	21	[52]	GETTABLE 	4 4 -12	; "MainTaskModel"
+	22	[52]	SELF     	4 4 -13	; "IsTaskFinished"
+	23	[52]	GETTABUP 	6 0 -14	; _ENV "tonumber"
+	24	[52]	GETTABLE 	7 3 -3	; 1
+	25	[52]	CALL     	6 2 2
+	26	[52]	GETTABUP 	7 0 -14	; _ENV "tonumber"
+	27	[52]	GETTABLE 	8 3 -9	; 2
+	28	[52]	CALL     	7 2 0
+	29	[52]	TAILCALL 	4 0 0
+	30	[52]	RETURN   	4 0
+	31	[53]	RETURN   	0 1
+constants (14) for 0000029673F72680:
+	1	"MainOrderCreatorSpecial"
+	2	"GetConfig"
+	3	1
+	4	nil
+	5	"StringUtil"
+	6	"Split"
+	7	"Trigger"
+	8	"-"
+	9	2
+	10	"_"
+	11	"GM"
+	12	"MainTaskModel"
+	13	"IsTaskFinished"
+	14	"tonumber"
+locals (4) for 0000029673F72680:
+	0	orderModel	1	32
+	1	nextConfig	6	32
+	2	parts	15	32
+	3	dayId	20	32
+upvalues (1) for 0000029673F72680:
+	0	_ENV	0	0
+
+function <MainOrderCreator.lua:55,64> (31 instructions at 0000029673F72910)
+2 params, 13 slots, 2 upvalues, 6 locals, 15 constants, 0 functions
+	1	[56]	GETTABUP 	2 0 -1	; _ENV "MainOrderCreatorSpecial"
+	2	[56]	GETTABLE 	2 2 -2	; "GetConfig"
+	3	[56]	MOVE     	3 0
+	4	[56]	LOADK    	4 -3	; 1
+	5	[56]	CALL     	2 3 3
+	6	[57]	SELF     	4 0 -4	; "GetMetaData"
+	7	[57]	CALL     	4 2 2
+	8	[58]	SELF     	5 4 -5	; "Set"
+	9	[58]	GETUPVAL 	7 1	; DBColumnCurrentSpecialOrderId
+	10	[58]	LOADK    	8 -6	; "value"
+	11	[58]	GETTABUP 	9 0 -7	; _ENV "tostring"
+	12	[58]	MOVE     	10 3
+	13	[58]	CALL     	9 2 0
+	14	[58]	CALL     	5 0 1
+	15	[60]	NEWTABLE 	5 3 0
+	16	[61]	GETTABLE 	6 2 -8	; "Requirement1"
+	17	[61]	GETTABLE 	7 2 -9	; "Requirement2"
+	18	[62]	GETTABLE 	8 2 -10	; "Requirement3"
+	19	[62]	SETLIST  	5 3 1	; 1
+	20	[63]	GETTABUP 	6 0 -11	; _ENV "MainOrder"
+	21	[63]	GETTABLE 	6 6 -12	; "Create"
+	22	[63]	MOVE     	7 0
+	23	[63]	MOVE     	8 1
+	24	[63]	MOVE     	9 3
+	25	[63]	MOVE     	10 5
+	26	[63]	GETTABUP 	11 0 -13	; _ENV "MainOrderType"
+	27	[63]	GETTABLE 	11 11 -14	; "Special"
+	28	[63]	GETTABLE 	12 2 -15	; "AvatarId"
+	29	[63]	TAILCALL 	6 7 0
+	30	[63]	RETURN   	6 0
+	31	[64]	RETURN   	0 1
+constants (15) for 0000029673F72910:
+	1	"MainOrderCreatorSpecial"
+	2	"GetConfig"
+	3	1
+	4	"GetMetaData"
+	5	"Set"
+	6	"value"
+	7	"tostring"
+	8	"Requirement1"
+	9	"Requirement2"
+	10	"Requirement3"
+	11	"MainOrder"
+	12	"Create"
+	13	"MainOrderType"
+	14	"Special"
+	15	"AvatarId"
+locals (6) for 0000029673F72910:
+	0	orderModel	1	32
+	1	slot	1	32
+	2	nextConfig	6	32
+	3	nextSpecialOrderId	6	32
+	4	metaData	8	32
+	5	requirements	20	32
+upvalues (2) for 0000029673F72910:
+	0	_ENV	0	0
+	1	DBColumnCurrentSpecialOrderId	1	1
+
+function <MainOrderCreator.lua:66,70> (17 instructions at 0000029673F72C20)
+2 params, 8 slots, 2 upvalues, 4 locals, 5 constants, 0 functions
+	1	[67]	SELF     	2 0 -1	; "GetMetaData"
+	2	[67]	CALL     	2 2 2
+	3	[68]	GETTABUP 	3 0 -2	; _ENV "tonumber"
+	4	[68]	SELF     	4 2 -3	; "GetValue"
+	5	[68]	GETUPVAL 	6 1	; DBColumnCurrentSpecialOrderId
+	6	[68]	LOADK    	7 -4	; "value"
+	7	[68]	CALL     	4 4 0
+	8	[68]	CALL     	3 0 2
+	9	[68]	TEST     	3 1
+	10	[68]	JMP      	0 1	; to 12
+	11	[68]	LOADK    	3 -5	; 0
+	12	[69]	LE       	1 1 3
+	13	[69]	JMP      	0 1	; to 15
+	14	[69]	LOADBOOL 	4 0 1
+	15	[69]	LOADBOOL 	4 1 0
+	16	[69]	RETURN   	4 2
+	17	[70]	RETURN   	0 1
+constants (5) for 0000029673F72C20:
+	1	"GetMetaData"
+	2	"tonumber"
+	3	"GetValue"
+	4	"value"
+	5	0
+locals (4) for 0000029673F72C20:
+	0	orderModel	1	18
+	1	specialOrderId	1	18
+	2	metaData	3	18
+	3	currentSpecialOrderId	12	18
+upvalues (2) for 0000029673F72C20:
+	0	_ENV	0	0
+	1	DBColumnCurrentSpecialOrderId	1	1
+
+function <MainOrderCreator.lua:73,76> (10 instructions at 0000029673F72CA0)
+2 params, 9 slots, 2 upvalues, 3 locals, 4 constants, 0 functions
+	1	[74]	SELF     	2 0 -1	; "GetMetaData"
+	2	[74]	CALL     	2 2 2
+	3	[75]	SELF     	3 2 -2	; "Set"
+	4	[75]	GETUPVAL 	5 0	; DBColumnCurrentSpecialOrderId
+	5	[75]	LOADK    	6 -3	; "value"
+	6	[75]	GETTABUP 	7 1 -4	; _ENV "tostring"
+	7	[75]	MOVE     	8 1
+	8	[75]	CALL     	7 2 0
+	9	[75]	CALL     	3 0 1
+	10	[76]	RETURN   	0 1
+constants (4) for 0000029673F72CA0:
+	1	"GetMetaData"
+	2	"Set"
+	3	"value"
+	4	"tostring"
+locals (3) for 0000029673F72CA0:
+	0	orderModel	1	11
+	1	id	1	11
+	2	metaData	3	11
+upvalues (2) for 0000029673F72CA0:
+	0	DBColumnCurrentSpecialOrderId	1	1
+	1	_ENV	0	0
+
+function <MainOrderCreator.lua:80,88> (27 instructions at 0000029673F72D20)
+2 params, 11 slots, 1 upvalue, 4 locals, 10 constants, 0 functions
+	1	[81]	GETTABUP 	2 0 -1	; _ENV "MainOrderCreatorBranch"
+	2	[81]	GETTABLE 	2 2 -2	; "CanCreate"
+	3	[81]	MOVE     	3 0
+	4	[81]	MOVE     	4 1
+	5	[81]	CALL     	2 3 2
+	6	[81]	TEST     	2 1
+	7	[81]	JMP      	0 2	; to 10
+	8	[82]	LOADNIL  	2 0
+	9	[82]	RETURN   	2 2
+	10	[85]	SELF     	2 0 -3	; "GetBranchOrderConfig"
+	11	[85]	CALL     	2 2 2
+	12	[85]	GETTABLE 	2 2 1
+	13	[86]	NEWTABLE 	3 1 0
+	14	[86]	GETTABLE 	4 2 -4	; "Requirement"
+	15	[86]	SETLIST  	3 1 1	; 1
+	16	[87]	GETTABUP 	4 0 -5	; _ENV "MainOrder"
+	17	[87]	GETTABLE 	4 4 -6	; "Create"
+	18	[87]	MOVE     	5 0
+	19	[87]	MOVE     	6 1
+	20	[87]	GETTABLE 	7 2 -7	; "Id"
+	21	[87]	MOVE     	8 3
+	22	[87]	GETTABUP 	9 0 -8	; _ENV "MainOrderType"
+	23	[87]	GETTABLE 	9 9 -9	; "Branch"
+	24	[87]	GETTABLE 	10 2 -10	; "AvatarId"
+	25	[87]	TAILCALL 	4 7 0
+	26	[87]	RETURN   	4 0
+	27	[88]	RETURN   	0 1
+constants (10) for 0000029673F72D20:
+	1	"MainOrderCreatorBranch"
+	2	"CanCreate"
+	3	"GetBranchOrderConfig"
+	4	"Requirement"
+	5	"MainOrder"
+	6	"Create"
+	7	"Id"
+	8	"MainOrderType"
+	9	"Branch"
+	10	"AvatarId"
+locals (4) for 0000029673F72D20:
+	0	orderModel	1	28
+	1	slot	1	28
+	2	config	13	28
+	3	requirements	16	28
+upvalues (1) for 0000029673F72D20:
+	0	_ENV	0	0
+
+function <MainOrderCreator.lua:90,92> (3 instructions at 0000029673F72F50)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[91]	LOADBOOL 	2 0 0
+	2	[91]	RETURN   	2 2
+	3	[92]	RETURN   	0 1
+constants (0) for 0000029673F72F50:
+locals (2) for 0000029673F72F50:
+	0	orderModel	1	4
+	1	slot	1	4
+upvalues (0) for 0000029673F72F50:
+
+function <MainOrderCreator.lua:110,139> (76 instructions at 0000029673F72FD0)
+2 params, 10 slots, 3 upvalues, 4 locals, 19 constants, 0 functions
+	1	[111]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[111]	GETTABLE 	2 2 -2	; "Slot1"
+	3	[111]	EQ       	1 1 2
+	4	[111]	JMP      	0 10	; to 15
+	5	[112]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	6	[112]	GETTABLE 	2 2 -3	; "Slot2"
+	7	[112]	EQ       	1 1 2
+	8	[112]	JMP      	0 6	; to 15
+	9	[113]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	10	[113]	GETTABLE 	2 2 -4	; "Slot3"
+	11	[113]	EQ       	1 1 2
+	12	[113]	JMP      	0 2	; to 15
+	13	[114]	LOADBOOL 	2 0 0
+	14	[114]	RETURN   	2 2
+	15	[117]	GETTABUP 	2 0 -5	; _ENV "GM"
+	16	[117]	GETTABLE 	2 2 -6	; "ReturnUserModel"
+	17	[117]	SELF     	2 2 -7	; "IsOpen"
+	18	[117]	CALL     	2 2 2
+	19	[117]	TEST     	2 1
+	20	[117]	JMP      	0 2	; to 23
+	21	[118]	LOADBOOL 	2 0 0
+	22	[118]	RETURN   	2 2
+	23	[121]	GETTABUP 	2 0 -5	; _ENV "GM"
+	24	[121]	GETTABLE 	2 2 -6	; "ReturnUserModel"
+	25	[121]	SELF     	2 2 -8	; "IsInReturnRewardTime"
+	26	[121]	CALL     	2 2 2
+	27	[121]	TEST     	2 1
+	28	[121]	JMP      	0 2	; to 31
+	29	[122]	LOADBOOL 	2 0 0
+	30	[122]	RETURN   	2 2
+	31	[125]	SELF     	2 0 -9	; "GetMetaData"
+	32	[125]	CALL     	2 2 2
+	33	[126]	GETTABUP 	3 0 -10	; _ENV "tonumber"
+	34	[126]	SELF     	4 2 -11	; "GetValue"
+	35	[126]	GETUPVAL 	6 1	; DBColumnReturnUserFreeOrderTimer
+	36	[126]	LOADK    	7 -12	; "value"
+	37	[126]	CALL     	4 4 0
+	38	[126]	CALL     	3 0 2
+	39	[127]	EQ       	0 3 -13	; - 0
+	40	[127]	JMP      	0 15	; to 56
+	41	[128]	GETTABUP 	4 0 -5	; _ENV "GM"
+	42	[128]	GETTABLE 	4 4 -14	; "GameModel"
+	43	[128]	SELF     	4 4 -15	; "GetServerTime"
+	44	[128]	CALL     	4 2 2
+	45	[128]	MOVE     	3 4
+	46	[129]	SELF     	4 2 -16	; "Set"
+	47	[129]	GETUPVAL 	6 1	; DBColumnReturnUserFreeOrderTimer
+	48	[129]	LOADK    	7 -12	; "value"
+	49	[129]	GETTABUP 	8 0 -17	; _ENV "tostring"
+	50	[129]	MOVE     	9 3
+	51	[129]	CALL     	8 2 0
+	52	[129]	CALL     	4 0 1
+	53	[130]	LOADBOOL 	4 0 0
+	54	[130]	RETURN   	4 2
+	55	[130]	JMP      	0 20	; to 76
+	56	[132]	EQ       	1 3 -18	; - nil
+	57	[132]	JMP      	0 8	; to 66
+	58	[132]	GETTABUP 	4 0 -5	; _ENV "GM"
+	59	[132]	GETTABLE 	4 4 -14	; "GameModel"
+	60	[132]	SELF     	4 4 -15	; "GetServerTime"
+	61	[132]	CALL     	4 2 2
+	62	[132]	SUB      	4 4 3
+	63	[132]	GETUPVAL 	5 2	; CreatorReturnFreeOrderRefreshTime
+	64	[132]	LE       	0 5 4
+	65	[132]	JMP      	0 8	; to 74
+	66	[133]	SELF     	4 2 -16	; "Set"
+	67	[133]	GETUPVAL 	6 1	; DBColumnReturnUserFreeOrderTimer
+	68	[133]	LOADK    	7 -12	; "value"
+	69	[133]	LOADK    	8 -19	; "0"
+	70	[133]	CALL     	4 5 1
+	71	[134]	LOADBOOL 	4 1 0
+	72	[134]	RETURN   	4 2
+	73	[134]	JMP      	0 2	; to 76
+	74	[137]	LOADBOOL 	4 0 0
+	75	[137]	RETURN   	4 2
+	76	[139]	RETURN   	0 1
+constants (19) for 0000029673F72FD0:
+	1	"MainOrderSlotDefinition"
+	2	"Slot1"
+	3	"Slot2"
+	4	"Slot3"
+	5	"GM"
+	6	"ReturnUserModel"
+	7	"IsOpen"
+	8	"IsInReturnRewardTime"
+	9	"GetMetaData"
+	10	"tonumber"
+	11	"GetValue"
+	12	"value"
+	13	0
+	14	"GameModel"
+	15	"GetServerTime"
+	16	"Set"
+	17	"tostring"
+	18	nil
+	19	"0"
+locals (4) for 0000029673F72FD0:
+	0	orderModel	1	77
+	1	slot	1	77
+	2	metaData	33	77
+	3	startTimer	39	77
+upvalues (3) for 0000029673F72FD0:
+	0	_ENV	0	0
+	1	DBColumnReturnUserFreeOrderTimer	1	2
+	2	CreatorReturnFreeOrderRefreshTime	1	5
+
+function <MainOrderCreator.lua:141,183> (125 instructions at 0000029673F75440)
+2 params, 15 slots, 1 upvalue, 14 locals, 40 constants, 0 functions
+	1	[142]	LOADNIL  	2 0
+	2	[143]	GETTABUP 	3 0 -1	; _ENV "GM"
+	3	[143]	GETTABLE 	3 3 -2	; "MainBoardModel"
+	4	[143]	SELF     	3 3 -3	; "GetItemsOnBoard"
+	5	[143]	LOADBOOL 	5 1 0
+	6	[143]	CALL     	3 3 2
+	7	[144]	GETTABLE 	4 3 -4	; "levelList"
+	8	[144]	LEN      	4 4
+	9	[144]	LOADK    	5 -5	; 1
+	10	[144]	LOADK    	6 -6	; -1
+	11	[144]	FORPREP  	4 50	; to 62
+	12	[145]	GETTABLE 	8 3 -4	; "levelList"
+	13	[145]	GETTABLE 	8 8 7
+	14	[145]	LE       	0 8 -7	; - 7
+	15	[145]	JMP      	0 46	; to 62
+	16	[146]	GETTABLE 	8 3 -8	; "levelMap"
+	17	[146]	GETTABLE 	9 3 -4	; "levelList"
+	18	[146]	GETTABLE 	9 9 7
+	19	[146]	GETTABLE 	8 8 9
+	20	[147]	GETTABUP 	9 0 -9	; _ENV "GameConfig"
+	21	[147]	GETTABLE 	9 9 -10	; "IsTestMode"
+	22	[147]	CALL     	9 1 2
+	23	[147]	TEST     	9 0
+	24	[147]	JMP      	0 19	; to 44
+	25	[148]	GETTABUP 	9 0 -11	; _ENV "Log"
+	26	[148]	GETTABLE 	9 9 -12	; "Debug"
+	27	[148]	LOADK    	10 -13	; "[\229\155\158\229\189\146\231\148\168\230\136\183\232\174\162\229\141\149]\228\191\157\233\128\129\232\174\162\229\141\149\229\128\153\233\128\137\230\163\139\229\173\144\239\188\154"
+	28	[148]	GETTABUP 	11 0 -14	; _ENV "Table"
+	29	[148]	GETTABLE 	11 11 -15	; "IsEmpty"
+	30	[148]	MOVE     	12 8
+	31	[148]	CALL     	11 2 2
+	32	[148]	TEST     	11 0
+	33	[148]	JMP      	0 3	; to 37
+	34	[148]	LOADK    	11 -16	; "\231\169\186"
+	35	[148]	TEST     	11 1
+	36	[148]	JMP      	0 5	; to 42
+	37	[148]	GETTABUP 	11 0 -17	; _ENV "table"
+	38	[148]	GETTABLE 	11 11 -18	; "concat"
+	39	[148]	MOVE     	12 8
+	40	[148]	LOADK    	13 -19	; ","
+	41	[148]	CALL     	11 3 2
+	42	[148]	CONCAT   	10 10 11
+	43	[148]	CALL     	9 2 1
+	44	[150]	GETTABUP 	9 0 -20	; _ENV "MathUtil"
+	45	[150]	GETTABLE 	9 9 -21	; "Random"
+	46	[150]	LOADK    	10 -5	; 1
+	47	[150]	LEN      	11 8
+	48	[150]	CALL     	9 3 2
+	49	[151]	GETTABLE 	2 8 9
+	50	[152]	GETTABUP 	10 0 -9	; _ENV "GameConfig"
+	51	[152]	GETTABLE 	10 10 -10	; "IsTestMode"
+	52	[152]	CALL     	10 1 2
+	53	[152]	TEST     	10 0
+	54	[152]	JMP      	0 8	; to 63
+	55	[153]	GETTABUP 	10 0 -11	; _ENV "Log"
+	56	[153]	GETTABLE 	10 10 -12	; "Debug"
+	57	[153]	LOADK    	11 -22	; "[\229\155\158\229\189\146\231\148\168\230\136\183\232\174\162\229\141\149]\228\191\157\233\128\129\232\174\162\229\141\149\233\128\137\230\139\169\230\163\139\229\173\144\239\188\154"
+	58	[153]	MOVE     	12 2
+	59	[153]	CONCAT   	11 11 12
+	60	[153]	CALL     	10 2 1
+	61	[154]	JMP      	0 1	; to 63
+	62	[144]	FORLOOP  	4 -51	; to 12
+	63	[160]	TEST     	2 1
+	64	[160]	JMP      	0 1	; to 66
+	65	[161]	RETURN   	0 1
+	66	[169]	SELF     	4 0 -23	; "GetMetaData"
+	67	[169]	CALL     	4 2 2
+	68	[170]	SELF     	5 4 -24	; "GetValue"
+	69	[170]	GETTABUP 	7 0 -25	; _ENV "MainOrderDBColumnRandomStartTimer"
+	70	[170]	GETTABLE 	7 7 1
+	71	[170]	LOADK    	8 -26	; "value"
+	72	[170]	CALL     	5 4 2
+	73	[171]	TEST     	5 0
+	74	[171]	JMP      	0 4	; to 79
+	75	[171]	GETTABUP 	6 0 -27	; _ENV "tonumber"
+	76	[171]	MOVE     	7 5
+	77	[171]	CALL     	6 2 2
+	78	[171]	MOVE     	5 6
+	79	[172]	EQ       	0 5 -28	; - 0
+	80	[172]	JMP      	0 28	; to 109
+	81	[173]	GETTABUP 	6 0 -1	; _ENV "GM"
+	82	[173]	GETTABLE 	6 6 -29	; "GameModel"
+	83	[173]	SELF     	6 6 -30	; "GetServerTime"
+	84	[173]	CALL     	6 2 2
+	85	[173]	MOVE     	5 6
+	86	[174]	SELF     	6 4 -31	; "Set"
+	87	[174]	GETTABUP 	8 0 -25	; _ENV "MainOrderDBColumnRandomStartTimer"
+	88	[174]	GETTABLE 	8 8 1
+	89	[174]	LOADK    	9 -26	; "value"
+	90	[174]	GETTABUP 	10 0 -32	; _ENV "tostring"
+	91	[174]	MOVE     	11 5
+	92	[174]	CALL     	10 2 0
+	93	[174]	CALL     	6 0 1
+	94	[175]	GETTABUP 	6 0 -9	; _ENV "GameConfig"
+	95	[175]	GETTABLE 	6 6 -10	; "IsTestMode"
+	96	[175]	CALL     	6 1 2
+	97	[175]	TEST     	6 0
+	98	[175]	JMP      	0 10	; to 109
+	99	[176]	GETTABUP 	6 0 -11	; _ENV "Log"
+	100	[176]	GETTABLE 	6 6 -33	; "Info"
+	101	[176]	LOADK    	7 -34	; "[\233\154\143\230\156\186\232\174\162\229\141\149][Slot/Timer:"
+	102	[176]	MOVE     	8 1
+	103	[176]	LOADK    	9 -35	; "]\229\136\155\229\187\186\228\191\157\233\128\129\232\174\162\229\141\149\239\188\140\229\189\147\229\137\141\230\167\189\228\189\141\229\166\130\230\158\156\229\142\159\233\154\143\230\156\186\232\174\162\229\141\149CD\228\184\1860\239\188\140\229\136\153\231\155\180\230\142\165\232\191\155\229\133\165CD "
+	104	[176]	GETTABUP 	10 0 -32	; _ENV "tostring"
+	105	[176]	MOVE     	11 5
+	106	[176]	CALL     	10 2 2
+	107	[176]	CONCAT   	7 7 10
+	108	[176]	CALL     	6 2 1
+	109	[180]	NEWTABLE 	6 1 0
+	110	[180]	MOVE     	7 2
+	111	[180]	SETLIST  	6 1 1	; 1
+	112	[181]	SELF     	7 0 -36	; "GetAvatarId"
+	113	[181]	CALL     	7 2 2
+	114	[182]	GETTABUP 	8 0 -37	; _ENV "MainOrder"
+	115	[182]	GETTABLE 	8 8 -38	; "Create"
+	116	[182]	MOVE     	9 0
+	117	[182]	MOVE     	10 1
+	118	[182]	LOADNIL  	11 0
+	119	[182]	MOVE     	12 6
+	120	[182]	GETTABUP 	13 0 -39	; _ENV "MainOrderType"
+	121	[182]	GETTABLE 	13 13 -40	; "ReturnUserFree"
+	122	[182]	MOVE     	14 7
+	123	[182]	TAILCALL 	8 7 0
+	124	[182]	RETURN   	8 0
+	125	[183]	RETURN   	0 1
+constants (40) for 0000029673F75440:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"GetItemsOnBoard"
+	4	"levelList"
+	5	1
+	6	-1
+	7	7
+	8	"levelMap"
+	9	"GameConfig"
+	10	"IsTestMode"
+	11	"Log"
+	12	"Debug"
+	13	"[\229\155\158\229\189\146\231\148\168\230\136\183\232\174\162\229\141\149]\228\191\157\233\128\129\232\174\162\229\141\149\229\128\153\233\128\137\230\163\139\229\173\144\239\188\154"
+	14	"Table"
+	15	"IsEmpty"
+	16	"\231\169\186"
+	17	"table"
+	18	"concat"
+	19	","
+	20	"MathUtil"
+	21	"Random"
+	22	"[\229\155\158\229\189\146\231\148\168\230\136\183\232\174\162\229\141\149]\228\191\157\233\128\129\232\174\162\229\141\149\233\128\137\230\139\169\230\163\139\229\173\144\239\188\154"
+	23	"GetMetaData"
+	24	"GetValue"
+	25	"MainOrderDBColumnRandomStartTimer"
+	26	"value"
+	27	"tonumber"
+	28	0
+	29	"GameModel"
+	30	"GetServerTime"
+	31	"Set"
+	32	"tostring"
+	33	"Info"
+	34	"[\233\154\143\230\156\186\232\174\162\229\141\149][Slot/Timer:"
+	35	"]\229\136\155\229\187\186\228\191\157\233\128\129\232\174\162\229\141\149\239\188\140\229\189\147\229\137\141\230\167\189\228\189\141\229\166\130\230\158\156\229\142\159\233\154\143\230\156\186\232\174\162\229\141\149CD\228\184\1860\239\188\140\229\136\153\231\155\180\230\142\165\232\191\155\229\133\165CD "
+	36	"GetAvatarId"
+	37	"MainOrder"
+	38	"Create"
+	39	"MainOrderType"
+	40	"ReturnUserFree"
+locals (14) for 0000029673F75440:
+	0	orderModel	1	126
+	1	slot	1	126
+	2	selectItemCode	2	126
+	3	itemOnBoard	7	126
+	4	(for index)	11	63
+	5	(for limit)	11	63
+	6	(for step)	11	63
+	7	i	12	62
+	8	itemList	20	62
+	9	selectIdx	49	62
+	10	metaData	68	126
+	11	startTimer	73	126
+	12	requirements	112	126
+	13	avatarId	114	126
+upvalues (1) for 0000029673F75440:
+	0	_ENV	0	0
+
+function <MainOrderCreator.lua:192,229> (122 instructions at 0000029673F74DC0)
+2 params, 13 slots, 3 upvalues, 6 locals, 30 constants, 0 functions
+	1	[193]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[193]	GETTABLE 	2 2 -2	; "LuckyOrderSlot"
+	3	[193]	EQ       	0 1 2
+	4	[193]	JMP      	0 4	; to 9
+	5	[193]	SELF     	2 0 -3	; "CanTriggerLucky"
+	6	[193]	CALL     	2 2 2
+	7	[193]	TEST     	2 1
+	8	[193]	JMP      	0 2	; to 11
+	9	[194]	LOADBOOL 	2 0 0
+	10	[194]	RETURN   	2 2
+	11	[196]	SELF     	2 0 -4	; "CloseTriggerLucky"
+	12	[196]	CALL     	2 2 1
+	13	[198]	SELF     	2 0 -5	; "GetMetaData"
+	14	[198]	CALL     	2 2 2
+	15	[199]	GETTABUP 	3 0 -6	; _ENV "tonumber"
+	16	[199]	SELF     	4 2 -7	; "GetValue"
+	17	[199]	GETUPVAL 	6 1	; DBColumnLuckyOrderPoints
+	18	[199]	LOADK    	7 -8	; "value"
+	19	[199]	CALL     	4 4 0
+	20	[199]	CALL     	3 0 2
+	21	[199]	TEST     	3 1
+	22	[199]	JMP      	0 1	; to 24
+	23	[199]	LOADK    	3 -9	; 0
+	24	[200]	GETTABUP 	4 0 -6	; _ENV "tonumber"
+	25	[200]	SELF     	5 2 -7	; "GetValue"
+	26	[200]	GETUPVAL 	7 2	; DBColumnLuckyOrderTimer
+	27	[200]	LOADK    	8 -8	; "value"
+	28	[200]	CALL     	5 4 0
+	29	[200]	CALL     	4 0 2
+	30	[200]	TEST     	4 1
+	31	[200]	JMP      	0 1	; to 33
+	32	[200]	LOADK    	4 -9	; 0
+	33	[201]	SELF     	5 0 -10	; "GetLuckyOrderConfig"
+	34	[201]	CALL     	5 2 2
+	35	[202]	EQ       	0 5 -11	; - nil
+	36	[202]	JMP      	0 11	; to 48
+	37	[203]	GETTABUP 	6 0 -12	; _ENV "GameConfig"
+	38	[203]	GETTABLE 	6 6 -13	; "IsTestMode"
+	39	[203]	CALL     	6 1 2
+	40	[203]	TEST     	6 0
+	41	[203]	JMP      	0 4	; to 46
+	42	[204]	GETTABUP 	6 0 -14	; _ENV "Log"
+	43	[204]	GETTABLE 	6 6 -15	; "Info"
+	44	[204]	LOADK    	7 -16	; "\230\137\190\228\184\141\229\136\176\230\131\138\229\150\156\232\174\162\229\141\149\233\133\141\231\189\174\239\188\140\231\148\159\230\136\144\229\164\177\232\180\165"
+	45	[204]	CALL     	6 2 1
+	46	[206]	LOADBOOL 	6 0 0
+	47	[206]	RETURN   	6 2
+	48	[208]	GETTABUP 	6 0 -17	; _ENV "GM"
+	49	[208]	GETTABLE 	6 6 -18	; "LevelModel"
+	50	[208]	SELF     	6 6 -19	; "GetCurrentLevel"
+	51	[208]	CALL     	6 2 2
+	52	[208]	GETTABLE 	7 5 -20	; "UnlockLevel"
+	53	[208]	LT       	0 6 7
+	54	[208]	JMP      	0 2	; to 57
+	55	[209]	LOADBOOL 	6 0 0
+	56	[209]	RETURN   	6 2
+	57	[212]	LT       	0 -21 3	; 1 -
+	58	[212]	JMP      	0 3	; to 62
+	59	[213]	LOADBOOL 	6 1 0
+	60	[213]	RETURN   	6 2
+	61	[213]	JMP      	0 60	; to 122
+	62	[214]	EQ       	0 3 -21	; - 1
+	63	[214]	JMP      	0 27	; to 91
+	64	[215]	SELF     	6 2 -22	; "Set"
+	65	[215]	GETUPVAL 	8 2	; DBColumnLuckyOrderTimer
+	66	[215]	LOADK    	9 -8	; "value"
+	67	[215]	GETTABUP 	10 0 -23	; _ENV "tostring"
+	68	[215]	GETTABUP 	11 0 -17	; _ENV "GM"
+	69	[215]	GETTABLE 	11 11 -24	; "GameModel"
+	70	[215]	SELF     	11 11 -25	; "GetServerTime"
+	71	[215]	CALL     	11 2 0
+	72	[215]	CALL     	10 0 0
+	73	[215]	CALL     	6 0 1
+	74	[216]	SELF     	6 2 -22	; "Set"
+	75	[216]	GETUPVAL 	8 1	; DBColumnLuckyOrderPoints
+	76	[216]	LOADK    	9 -8	; "value"
+	77	[216]	LOADK    	10 -26	; "0"
+	78	[216]	CALL     	6 5 1
+	79	[217]	GETTABUP 	6 0 -12	; _ENV "GameConfig"
+	80	[217]	GETTABLE 	6 6 -13	; "IsTestMode"
+	81	[217]	CALL     	6 1 2
+	82	[217]	TEST     	6 0
+	83	[217]	JMP      	0 4	; to 88
+	84	[218]	GETTABUP 	6 0 -14	; _ENV "Log"
+	85	[218]	GETTABLE 	6 6 -15	; "Info"
+	86	[218]	LOADK    	7 -27	; "\230\131\138\229\150\156\232\174\162\229\141\149\232\191\158\231\187\173\231\148\159\230\136\144\231\130\185\230\149\176\232\128\151\229\176\189\239\188\140\232\191\155\229\133\165cd"
+	87	[218]	CALL     	6 2 1
+	88	[220]	LOADBOOL 	6 0 0
+	89	[220]	RETURN   	6 2
+	90	[220]	JMP      	0 31	; to 122
+	91	[221]	GETTABLE 	6 5 -28	; "RefreshTime"
+	92	[221]	ADD      	6 4 6
+	93	[221]	GETTABUP 	7 0 -17	; _ENV "GM"
+	94	[221]	GETTABLE 	7 7 -24	; "GameModel"
+	95	[221]	SELF     	7 7 -25	; "GetServerTime"
+	96	[221]	CALL     	7 2 2
+	97	[221]	LE       	0 6 7
+	98	[221]	JMP      	0 3	; to 102
+	99	[222]	LOADBOOL 	6 1 0
+	100	[222]	RETURN   	6 2
+	101	[222]	JMP      	0 20	; to 122
+	102	[224]	GETTABUP 	6 0 -12	; _ENV "GameConfig"
+	103	[224]	GETTABLE 	6 6 -13	; "IsTestMode"
+	104	[224]	CALL     	6 1 2
+	105	[224]	TEST     	6 0
+	106	[224]	JMP      	0 13	; to 120
+	107	[225]	GETTABUP 	6 0 -14	; _ENV "Log"
+	108	[225]	GETTABLE 	6 6 -15	; "Info"
+	109	[225]	LOADK    	7 -29	; "\230\131\138\229\150\156\232\174\162\229\141\149\229\134\183\229\141\180cd\228\184\173\239\188\140\231\148\159\230\136\144\229\164\177\232\180\165\239\188\140\232\191\152\229\137\169\239\188\154"
+	110	[225]	GETTABLE 	8 5 -28	; "RefreshTime"
+	111	[225]	ADD      	8 4 8
+	112	[225]	GETTABUP 	9 0 -17	; _ENV "GM"
+	113	[225]	GETTABLE 	9 9 -24	; "GameModel"
+	114	[225]	SELF     	9 9 -25	; "GetServerTime"
+	115	[225]	CALL     	9 2 2
+	116	[225]	SUB      	8 8 9
+	117	[225]	LOADK    	9 -30	; "\231\167\146"
+	118	[225]	CONCAT   	7 7 9
+	119	[225]	CALL     	6 2 1
+	120	[227]	LOADBOOL 	6 0 0
+	121	[227]	RETURN   	6 2
+	122	[229]	RETURN   	0 1
+constants (30) for 0000029673F74DC0:
+	1	"MainOrderSlotDefinition"
+	2	"LuckyOrderSlot"
+	3	"CanTriggerLucky"
+	4	"CloseTriggerLucky"
+	5	"GetMetaData"
+	6	"tonumber"
+	7	"GetValue"
+	8	"value"
+	9	0
+	10	"GetLuckyOrderConfig"
+	11	nil
+	12	"GameConfig"
+	13	"IsTestMode"
+	14	"Log"
+	15	"Info"
+	16	"\230\137\190\228\184\141\229\136\176\230\131\138\229\150\156\232\174\162\229\141\149\233\133\141\231\189\174\239\188\140\231\148\159\230\136\144\229\164\177\232\180\165"
+	17	"GM"
+	18	"LevelModel"
+	19	"GetCurrentLevel"
+	20	"UnlockLevel"
+	21	1
+	22	"Set"
+	23	"tostring"
+	24	"GameModel"
+	25	"GetServerTime"
+	26	"0"
+	27	"\230\131\138\229\150\156\232\174\162\229\141\149\232\191\158\231\187\173\231\148\159\230\136\144\231\130\185\230\149\176\232\128\151\229\176\189\239\188\140\232\191\155\229\133\165cd"
+	28	"RefreshTime"
+	29	"\230\131\138\229\150\156\232\174\162\229\141\149\229\134\183\229\141\180cd\228\184\173\239\188\140\231\148\159\230\136\144\229\164\177\232\180\165\239\188\140\232\191\152\229\137\169\239\188\154"
+	30	"\231\167\146"
+locals (6) for 0000029673F74DC0:
+	0	orderModel	1	123
+	1	slot	1	123
+	2	metaData	15	123
+	3	currentPoints	24	123
+	4	lastTime	33	123
+	5	luckyOrderConfig	35	123
+upvalues (3) for 0000029673F74DC0:
+	0	_ENV	0	0
+	1	DBColumnLuckyOrderPoints	1	3
+	2	DBColumnLuckyOrderTimer	1	4
+
+function <MainOrderCreator.lua:232,371> (324 instructions at 0000029673F75540)
+2 params, 27 slots, 3 upvalues, 26 locals, 71 constants, 1 function
+	1	[233]	SELF     	2 0 -1	; "GetLuckyOrderConfig"
+	2	[233]	CALL     	2 2 2
+	3	[234]	EQ       	0 2 -2	; - nil
+	4	[234]	JMP      	0 2	; to 7
+	5	[235]	LOADNIL  	3 0
+	6	[235]	RETURN   	3 2
+	7	[238]	SELF     	3 0 -3	; "GetMetaData"
+	8	[238]	CALL     	3 2 2
+	9	[239]	GETTABUP 	4 0 -4	; _ENV "tonumber"
+	10	[239]	SELF     	5 3 -5	; "GetValue"
+	11	[239]	GETUPVAL 	7 1	; DBColumnLuckyOrderPoints
+	12	[239]	LOADK    	8 -6	; "value"
+	13	[239]	CALL     	5 4 0
+	14	[239]	CALL     	4 0 2
+	15	[239]	TEST     	4 1
+	16	[239]	JMP      	0 1	; to 18
+	17	[239]	LOADK    	4 -7	; 0
+	18	[241]	GETTABUP 	5 0 -8	; _ENV "RandomOrderHelper"
+	19	[241]	GETTABLE 	5 5 -9	; "GetSelectedFilterConfig"
+	20	[241]	MOVE     	6 2
+	21	[241]	MOVE     	7 0
+	22	[241]	MOVE     	8 1
+	23	[241]	CALL     	5 4 2
+	24	[242]	GETTABUP 	6 0 -8	; _ENV "RandomOrderHelper"
+	25	[242]	GETTABLE 	6 6 -10	; "GetAvailableItems"
+	26	[242]	NEWTABLE 	7 0 3
+	27	[244]	SETTABLE 	7 -11 0	; "orderModel" -
+	28	[245]	SETTABLE 	7 -12 1	; "slot" -
+	29	[246]	SETTABLE 	7 -13 2	; "config" -
+	30	[242]	CALL     	6 2 2
+	31	[249]	GETTABUP 	7 0 -8	; _ENV "RandomOrderHelper"
+	32	[249]	GETTABLE 	7 7 -14	; "FilterByLevel"
+	33	[249]	MOVE     	8 6
+	34	[249]	GETTABLE 	9 5 -15	; "FirstMin"
+	35	[249]	GETTABLE 	10 5 -16	; "FirstMax"
+	36	[249]	MOVE     	11 0
+	37	[249]	CALL     	7 5 2
+	38	[250]	GETTABUP 	8 0 -8	; _ENV "RandomOrderHelper"
+	39	[250]	GETTABLE 	8 8 -14	; "FilterByLevel"
+	40	[250]	MOVE     	9 6
+	41	[250]	GETTABLE 	10 5 -17	; "SecondMin"
+	42	[250]	GETTABLE 	11 5 -18	; "SecondMax"
+	43	[250]	MOVE     	12 0
+	44	[250]	CALL     	8 5 2
+	45	[251]	GETTABUP 	9 0 -8	; _ENV "RandomOrderHelper"
+	46	[251]	GETTABLE 	9 9 -14	; "FilterByLevel"
+	47	[251]	MOVE     	10 6
+	48	[251]	GETTABLE 	11 5 -19	; "ThirdMin"
+	49	[251]	GETTABLE 	12 5 -20	; "ThirdMax"
+	50	[251]	MOVE     	13 0
+	51	[251]	CALL     	9 5 2
+	52	[253]	GETTABUP 	10 0 -21	; _ENV "MainOrderCreatorLuckyOrder"
+	53	[253]	GETTABLE 	10 10 -22	; "TryLuckyRandom"
+	54	[253]	MOVE     	11 0
+	55	[253]	MOVE     	12 1
+	56	[253]	MOVE     	13 7
+	57	[253]	MOVE     	14 8
+	58	[253]	MOVE     	15 9
+	59	[253]	CALL     	10 6 2
+	60	[254]	EQ       	1 10 -2	; - nil
+	61	[254]	JMP      	0 4	; to 66
+	62	[255]	GETTABLE 	7 10 -23	; "firstAvailableItems"
+	63	[256]	GETTABLE 	8 10 -24	; "secondAvailableItems"
+	64	[257]	GETTABLE 	9 10 -25	; "thirdAvailableItems"
+	65	[257]	JMP      	0 28	; to 94
+	66	[259]	GETTABUP 	11 0 -26	; _ENV "GameConfig"
+	67	[259]	GETTABLE 	11 11 -27	; "IsTestMode"
+	68	[259]	CALL     	11 1 2
+	69	[259]	TEST     	11 0
+	70	[259]	JMP      	0 4	; to 75
+	71	[260]	GETTABUP 	11 0 -28	; _ENV "Log"
+	72	[260]	GETTABLE 	11 11 -29	; "Info"
+	73	[260]	LOADK    	12 -30	; "\229\183\178\230\156\137\230\163\139\229\173\144\228\184\141\230\187\161\232\182\179\230\157\161\228\187\182\239\188\140\230\131\138\229\150\156\232\174\162\229\141\149\231\148\159\230\136\144\229\164\177\232\180\165"
+	74	[260]	CALL     	11 2 1
+	75	[263]	EQ       	1 4 -7	; - 0
+	76	[263]	JMP      	0 15	; to 92
+	77	[264]	SELF     	11 3 -31	; "Set"
+	78	[264]	GETUPVAL 	13 2	; DBColumnLuckyOrderTimer
+	79	[264]	LOADK    	14 -6	; "value"
+	80	[264]	GETTABUP 	15 0 -32	; _ENV "tostring"
+	81	[264]	GETTABUP 	16 0 -33	; _ENV "GM"
+	82	[264]	GETTABLE 	16 16 -34	; "GameModel"
+	83	[264]	SELF     	16 16 -35	; "GetServerTime"
+	84	[264]	CALL     	16 2 0
+	85	[264]	CALL     	15 0 0
+	86	[264]	CALL     	11 0 1
+	87	[265]	SELF     	11 3 -31	; "Set"
+	88	[265]	GETUPVAL 	13 1	; DBColumnLuckyOrderPoints
+	89	[265]	LOADK    	14 -6	; "value"
+	90	[265]	LOADK    	15 -36	; "0"
+	91	[265]	CALL     	11 5 1
+	92	[267]	LOADNIL  	11 0
+	93	[267]	RETURN   	11 2
+	94	[271]	SELF     	11 0 -37	; "GetItemNumberWeightConfig"
+	95	[271]	CALL     	11 2 2
+	96	[272]	GETTABUP 	12 0 -33	; _ENV "GM"
+	97	[272]	GETTABLE 	12 12 -38	; "LevelModel"
+	98	[272]	SELF     	12 12 -39	; "GetCurrentLevel"
+	99	[272]	CALL     	12 2 2
+	100	[273]	LOADNIL  	13 0
+	101	[275]	GETTABLE 	14 2 -40	; "ItemAmounts"
+	102	[275]	EQ       	1 14 -2	; - nil
+	103	[275]	JMP      	0 1	; to 105
+	104	[276]	GETTABLE 	13 2 -40	; "ItemAmounts"
+	105	[287]	CLOSURE  	14 0	; 0000029673F74CC0
+	106	[289]	GETTABUP 	15 0 -41	; _ENV "Table"
+	107	[289]	GETTABLE 	15 15 -42	; "IsEmpty"
+	108	[289]	MOVE     	16 13
+	109	[289]	CALL     	15 2 2
+	110	[289]	TEST     	15 1
+	111	[289]	JMP      	0 23	; to 135
+	112	[291]	MOVE     	15 14
+	113	[291]	MOVE     	16 13
+	114	[291]	LOADK    	17 -43	; "OneItemWeight"
+	115	[291]	CALL     	15 3 2
+	116	[292]	MOVE     	16 14
+	117	[292]	MOVE     	17 13
+	118	[292]	LOADK    	18 -44	; "TwoItemsWeight"
+	119	[292]	CALL     	16 3 2
+	120	[292]	TESTSET  	15 16 1
+	121	[292]	JMP      	0 0	; to 122
+	122	[293]	MOVE     	16 14
+	123	[293]	MOVE     	17 13
+	124	[293]	LOADK    	18 -45	; "ThreeItemsWeight"
+	125	[293]	CALL     	16 3 2
+	126	[293]	TESTSET  	15 16 1
+	127	[293]	JMP      	0 0	; to 128
+	128	[294]	EQ       	0 15 -46	; - false
+	129	[294]	JMP      	0 5	; to 135
+	130	[295]	LOADNIL  	13 0
+	131	[296]	GETTABUP 	16 0 -28	; _ENV "Log"
+	132	[296]	GETTABLE 	16 16 -47	; "Error"
+	133	[296]	LOADK    	17 -48	; "create random item num weight error!!!"
+	134	[296]	CALL     	16 2 1
+	135	[301]	GETTABUP 	15 0 -41	; _ENV "Table"
+	136	[301]	GETTABLE 	15 15 -42	; "IsEmpty"
+	137	[301]	MOVE     	16 13
+	138	[301]	CALL     	15 2 2
+	139	[301]	TEST     	15 0
+	140	[301]	JMP      	0 11	; to 152
+	141	[302]	LEN      	15 11
+	142	[302]	LOADK    	16 -49	; 1
+	143	[302]	LOADK    	17 -50	; -1
+	144	[302]	FORPREP  	15 6	; to 151
+	145	[303]	GETTABLE 	19 11 18
+	146	[304]	GETTABLE 	20 19 -51	; "Level"
+	147	[304]	LE       	0 20 12
+	148	[304]	JMP      	0 2	; to 151
+	149	[305]	MOVE     	13 19
+	150	[305]	JMP      	0 1	; to 152
+	151	[302]	FORLOOP  	15 -7	; to 145
+	152	[311]	GETTABUP 	15 0 -28	; _ENV "Log"
+	153	[311]	GETTABLE 	15 15 -52	; "Assert"
+	154	[311]	EQ       	0 13 -53	; - nil
+	155	[311]	JMP      	0 1	; to 157
+	156	[311]	LOADBOOL 	16 0 1
+	157	[311]	LOADBOOL 	16 1 0
+	158	[311]	LOADK    	17 -54	; "MainOrderCreatorLuckyOrder.Create"
+	159	[311]	CALL     	15 3 1
+	160	[315]	NEWTABLE 	15 0 0
+	161	[316]	LEN      	16 7
+	162	[316]	EQ       	1 16 -55	; - 0
+	163	[316]	JMP      	0 31	; to 195
+	164	[317]	GETTABUP 	16 0 -56	; _ENV "table"
+	165	[317]	GETTABLE 	16 16 -57	; "insert"
+	166	[317]	MOVE     	17 15
+	167	[317]	NEWTABLE 	18 0 2
+	168	[317]	SETTABLE 	18 -58 -49	; "Count" 1
+	169	[317]	GETTABLE 	19 13 -43	; "OneItemWeight"
+	170	[317]	SETTABLE 	18 -59 19	; "Weight" -
+	171	[317]	CALL     	16 3 1
+	172	[318]	LEN      	16 8
+	173	[318]	EQ       	1 16 -55	; - 0
+	174	[318]	JMP      	0 29	; to 204
+	175	[319]	GETTABUP 	16 0 -56	; _ENV "table"
+	176	[319]	GETTABLE 	16 16 -57	; "insert"
+	177	[319]	MOVE     	17 15
+	178	[319]	NEWTABLE 	18 0 2
+	179	[319]	SETTABLE 	18 -58 -60	; "Count" 2
+	180	[319]	GETTABLE 	19 13 -44	; "TwoItemsWeight"
+	181	[319]	SETTABLE 	18 -59 19	; "Weight" -
+	182	[319]	CALL     	16 3 1
+	183	[320]	LEN      	16 9
+	184	[320]	EQ       	1 16 -55	; - 0
+	185	[320]	JMP      	0 18	; to 204
+	186	[321]	GETTABUP 	16 0 -56	; _ENV "table"
+	187	[321]	GETTABLE 	16 16 -57	; "insert"
+	188	[321]	MOVE     	17 15
+	189	[321]	NEWTABLE 	18 0 2
+	190	[321]	SETTABLE 	18 -58 -61	; "Count" 3
+	191	[321]	GETTABLE 	19 13 -45	; "ThreeItemsWeight"
+	192	[321]	SETTABLE 	18 -59 19	; "Weight" -
+	193	[321]	CALL     	16 3 1
+	194	[323]	JMP      	0 9	; to 204
+	195	[325]	GETTABUP 	16 0 -26	; _ENV "GameConfig"
+	196	[325]	GETTABLE 	16 16 -27	; "IsTestMode"
+	197	[325]	CALL     	16 1 2
+	198	[325]	TEST     	16 0
+	199	[325]	JMP      	0 4	; to 204
+	200	[326]	GETTABUP 	16 0 -28	; _ENV "Log"
+	201	[326]	GETTABLE 	16 16 -29	; "Info"
+	202	[326]	LOADK    	17 -62	; "\229\185\184\232\191\144\232\174\162\229\141\149\231\172\172\228\184\128\228\184\170\233\156\128\230\177\130\230\163\139\229\173\144\229\143\175\233\128\137\229\136\151\232\161\168\228\184\186\231\169\186\239\188\140\230\151\160\230\179\149\229\136\155\229\187\186\232\174\162\229\141\149\239\188\140\232\175\183\230\159\165\231\156\139OrderRandomConfig\231\154\132Filters\233\133\141\231\189\174"
+	203	[326]	CALL     	16 2 1
+	204	[331]	GETTABUP 	16 0 -41	; _ENV "Table"
+	205	[331]	GETTABLE 	16 16 -63	; "ListWeightSelectOne"
+	206	[331]	MOVE     	17 15
+	207	[331]	CALL     	16 2 2
+	208	[331]	GETTABLE 	16 16 -58	; "Count"
+	209	[332]	NEWTABLE 	17 0 0
+	210	[333]	GETTABUP 	18 0 -56	; _ENV "table"
+	211	[333]	GETTABLE 	18 18 -57	; "insert"
+	212	[333]	MOVE     	19 17
+	213	[333]	GETTABUP 	20 0 -41	; _ENV "Table"
+	214	[333]	GETTABLE 	20 20 -63	; "ListWeightSelectOne"
+	215	[333]	MOVE     	21 7
+	216	[333]	CALL     	20 2 2
+	217	[333]	GETTABLE 	20 20 -64	; "Code"
+	218	[333]	CALL     	18 3 1
+	219	[334]	LE       	0 -60 16	; 2 -
+	220	[334]	JMP      	0 41	; to 262
+	221	[335]	GETTABUP 	18 0 -21	; _ENV "MainOrderCreatorLuckyOrder"
+	222	[335]	GETTABLE 	18 18 -65	; "LuckRandomRemoveCode"
+	223	[335]	MOVE     	19 8
+	224	[335]	GETTABLE 	20 17 -49	; 1
+	225	[335]	CALL     	18 3 1
+	226	[336]	GETTABUP 	18 0 -21	; _ENV "MainOrderCreatorLuckyOrder"
+	227	[336]	GETTABLE 	18 18 -65	; "LuckRandomRemoveCode"
+	228	[336]	MOVE     	19 9
+	229	[336]	GETTABLE 	20 17 -49	; 1
+	230	[336]	CALL     	18 3 1
+	231	[338]	LEN      	18 8
+	232	[338]	LT       	0 -55 18	; 0 -
+	233	[338]	JMP      	0 28	; to 262
+	234	[339]	GETTABUP 	18 0 -56	; _ENV "table"
+	235	[339]	GETTABLE 	18 18 -57	; "insert"
+	236	[339]	MOVE     	19 17
+	237	[339]	GETTABUP 	20 0 -41	; _ENV "Table"
+	238	[339]	GETTABLE 	20 20 -63	; "ListWeightSelectOne"
+	239	[339]	MOVE     	21 8
+	240	[339]	CALL     	20 2 2
+	241	[339]	GETTABLE 	20 20 -64	; "Code"
+	242	[339]	CALL     	18 3 1
+	243	[341]	LE       	0 -61 16	; 3 -
+	244	[341]	JMP      	0 17	; to 262
+	245	[342]	GETTABUP 	18 0 -21	; _ENV "MainOrderCreatorLuckyOrder"
+	246	[342]	GETTABLE 	18 18 -65	; "LuckRandomRemoveCode"
+	247	[342]	MOVE     	19 9
+	248	[342]	GETTABLE 	20 17 -60	; 2
+	249	[342]	CALL     	18 3 1
+	250	[344]	LEN      	18 9
+	251	[344]	LT       	0 -55 18	; 0 -
+	252	[344]	JMP      	0 9	; to 262
+	253	[345]	GETTABUP 	18 0 -56	; _ENV "table"
+	254	[345]	GETTABLE 	18 18 -57	; "insert"
+	255	[345]	MOVE     	19 17
+	256	[345]	GETTABUP 	20 0 -41	; _ENV "Table"
+	257	[345]	GETTABLE 	20 20 -63	; "ListWeightSelectOne"
+	258	[345]	MOVE     	21 9
+	259	[345]	CALL     	20 2 2
+	260	[345]	GETTABLE 	20 20 -64	; "Code"
+	261	[345]	CALL     	18 3 1
+	262	[351]	SELF     	18 0 -66	; "GetAvatarId"
+	263	[351]	CALL     	18 2 2
+	264	[352]	GETTABUP 	19 0 -67	; _ENV "MainOrder"
+	265	[352]	GETTABLE 	19 19 -68	; "Create"
+	266	[352]	MOVE     	20 0
+	267	[352]	MOVE     	21 1
+	268	[352]	LOADNIL  	22 0
+	269	[352]	MOVE     	23 17
+	270	[352]	GETTABUP 	24 0 -69	; _ENV "MainOrderType"
+	271	[352]	GETTABLE 	24 24 -70	; "Lucky"
+	272	[352]	MOVE     	25 18
+	273	[352]	LOADBOOL 	26 1 0
+	274	[352]	CALL     	19 8 2
+	275	[353]	EQ       	1 19 -53	; - nil
+	276	[353]	JMP      	0 19	; to 296
+	277	[354]	EQ       	1 4 -55	; - 0
+	278	[354]	JMP      	0 8	; to 287
+	279	[355]	SELF     	20 3 -31	; "Set"
+	280	[355]	GETUPVAL 	22 1	; DBColumnLuckyOrderPoints
+	281	[355]	LOADK    	23 -6	; "value"
+	282	[355]	GETTABUP 	24 0 -32	; _ENV "tostring"
+	283	[355]	SUB      	25 4 -49	; - 1
+	284	[355]	CALL     	24 2 0
+	285	[355]	CALL     	20 0 1
+	286	[355]	JMP      	0 7	; to 294
+	287	[357]	SELF     	20 3 -31	; "Set"
+	288	[357]	GETUPVAL 	22 1	; DBColumnLuckyOrderPoints
+	289	[357]	LOADK    	23 -6	; "value"
+	290	[357]	GETTABUP 	24 0 -32	; _ENV "tostring"
+	291	[357]	GETTABLE 	25 2 -71	; "Point"
+	292	[357]	CALL     	24 2 0
+	293	[357]	CALL     	20 0 1
+	294	[359]	RETURN   	19 2
+	295	[359]	JMP      	0 28	; to 324
+	296	[361]	GETTABUP 	20 0 -26	; _ENV "GameConfig"
+	297	[361]	GETTABLE 	20 20 -27	; "IsTestMode"
+	298	[361]	CALL     	20 1 2
+	299	[361]	TEST     	20 0
+	300	[361]	JMP      	0 4	; to 305
+	301	[362]	GETTABUP 	20 0 -28	; _ENV "Log"
+	302	[362]	GETTABLE 	20 20 -29	; "Info"
+	303	[362]	LOADK    	21 -30	; "\229\183\178\230\156\137\230\163\139\229\173\144\228\184\141\230\187\161\232\182\179\230\157\161\228\187\182\239\188\140\230\131\138\229\150\156\232\174\162\229\141\149\231\148\159\230\136\144\229\164\177\232\180\165"
+	304	[362]	CALL     	20 2 1
+	305	[365]	EQ       	1 4 -55	; - 0
+	306	[365]	JMP      	0 15	; to 322
+	307	[366]	SELF     	20 3 -31	; "Set"
+	308	[366]	GETUPVAL 	22 2	; DBColumnLuckyOrderTimer
+	309	[366]	LOADK    	23 -6	; "value"
+	310	[366]	GETTABUP 	24 0 -32	; _ENV "tostring"
+	311	[366]	GETTABUP 	25 0 -33	; _ENV "GM"
+	312	[366]	GETTABLE 	25 25 -34	; "GameModel"
+	313	[366]	SELF     	25 25 -35	; "GetServerTime"
+	314	[366]	CALL     	25 2 0
+	315	[366]	CALL     	24 0 0
+	316	[366]	CALL     	20 0 1
+	317	[367]	SELF     	20 3 -31	; "Set"
+	318	[367]	GETUPVAL 	22 1	; DBColumnLuckyOrderPoints
+	319	[367]	LOADK    	23 -6	; "value"
+	320	[367]	LOADK    	24 -36	; "0"
+	321	[367]	CALL     	20 5 1
+	322	[369]	LOADNIL  	20 0
+	323	[369]	RETURN   	20 2
+	324	[371]	RETURN   	0 1
+constants (71) for 0000029673F75540:
+	1	"GetLuckyOrderConfig"
+	2	nil
+	3	"GetMetaData"
+	4	"tonumber"
+	5	"GetValue"
+	6	"value"
+	7	0
+	8	"RandomOrderHelper"
+	9	"GetSelectedFilterConfig"
+	10	"GetAvailableItems"
+	11	"orderModel"
+	12	"slot"
+	13	"config"
+	14	"FilterByLevel"
+	15	"FirstMin"
+	16	"FirstMax"
+	17	"SecondMin"
+	18	"SecondMax"
+	19	"ThirdMin"
+	20	"ThirdMax"
+	21	"MainOrderCreatorLuckyOrder"
+	22	"TryLuckyRandom"
+	23	"firstAvailableItems"
+	24	"secondAvailableItems"
+	25	"thirdAvailableItems"
+	26	"GameConfig"
+	27	"IsTestMode"
+	28	"Log"
+	29	"Info"
+	30	"\229\183\178\230\156\137\230\163\139\229\173\144\228\184\141\230\187\161\232\182\179\230\157\161\228\187\182\239\188\140\230\131\138\229\150\156\232\174\162\229\141\149\231\148\159\230\136\144\229\164\177\232\180\165"
+	31	"Set"
+	32	"tostring"
+	33	"GM"
+	34	"GameModel"
+	35	"GetServerTime"
+	36	"0"
+	37	"GetItemNumberWeightConfig"
+	38	"LevelModel"
+	39	"GetCurrentLevel"
+	40	"ItemAmounts"
+	41	"Table"
+	42	"IsEmpty"
+	43	"OneItemWeight"
+	44	"TwoItemsWeight"
+	45	"ThreeItemsWeight"
+	46	false
+	47	"Error"
+	48	"create random item num weight error!!!"
+	49	1
+	50	-1
+	51	"Level"
+	52	"Assert"
+	53	nil
+	54	"MainOrderCreatorLuckyOrder.Create"
+	55	0
+	56	"table"
+	57	"insert"
+	58	"Count"
+	59	"Weight"
+	60	2
+	61	3
+	62	"\229\185\184\232\191\144\232\174\162\229\141\149\231\172\172\228\184\128\228\184\170\233\156\128\230\177\130\230\163\139\229\173\144\229\143\175\233\128\137\229\136\151\232\161\168\228\184\186\231\169\186\239\188\140\230\151\160\230\179\149\229\136\155\229\187\186\232\174\162\229\141\149\239\188\140\232\175\183\230\159\165\231\156\139OrderRandomConfig\231\154\132Filters\233\133\141\231\189\174"
+	63	"ListWeightSelectOne"
+	64	"Code"
+	65	"LuckRandomRemoveCode"
+	66	"GetAvatarId"
+	67	"MainOrder"
+	68	"Create"
+	69	"MainOrderType"
+	70	"Lucky"
+	71	"Point"
+locals (26) for 0000029673F75540:
+	0	orderModel	1	325
+	1	slot	1	325
+	2	luckyOrderConfig	3	325
+	3	metaData	9	325
+	4	currentPoints	18	325
+	5	selectedFilter	24	325
+	6	availableItems	31	325
+	7	firstAvailableItems	38	325
+	8	secondAvailableItems	45	325
+	9	thirdAvailableItems	52	325
+	10	LuckRandomAvailable	60	325
+	11	itemNumberWeightConfig	96	325
+	12	level	100	325
+	13	weightConfig	101	325
+	14	funcCheckKey	106	325
+	15	bCheckFinish	116	135
+	16	(for index)	144	152
+	17	(for limit)	144	152
+	18	(for step)	144	152
+	19	i	145	151
+	20	config	146	151
+	21	countWeightList	161	325
+	22	count	209	325
+	23	requirements	210	325
+	24	avatarId	264	325
+	25	order	275	325
+upvalues (3) for 0000029673F75540:
+	0	_ENV	0	0
+	1	DBColumnLuckyOrderPoints	1	3
+	2	DBColumnLuckyOrderTimer	1	4
+
+function <MainOrderCreator.lua:280,287> (9 instructions at 0000029673F74CC0)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[281]	GETTABLE 	2 0 1
+	2	[281]	EQ       	0 2 -1	; - nil
+	3	[281]	JMP      	0 3	; to 7
+	4	[282]	SETTABLE 	0 1 -2	; - 0
+	5	[283]	LOADBOOL 	2 0 0
+	6	[283]	RETURN   	2 2
+	7	[286]	LOADBOOL 	2 1 0
+	8	[286]	RETURN   	2 2
+	9	[287]	RETURN   	0 1
+constants (2) for 0000029673F74CC0:
+	1	nil
+	2	0
+locals (2) for 0000029673F74CC0:
+	0	weightConfig	1	10
+	1	key	1	10
+upvalues (0) for 0000029673F74CC0:
+
+function <MainOrderCreator.lua:374,432> (59 instructions at 0000029673F752C0)
+5 params, 21 slots, 1 upvalue, 24 locals, 13 constants, 1 function
+	1	[375]	NEWTABLE 	5 0 0
+	2	[378]	SELF     	6 0 -1	; "GetCodeCountMap"
+	3	[378]	CALL     	6 2 2
+	4	[381]	NEWTABLE 	7 0 0
+	5	[382]	GETTABUP 	8 0 -2	; _ENV "pairs"
+	6	[382]	SELF     	9 0 -3	; "GetOrders"
+	7	[382]	CALL     	9 2 0
+	8	[382]	CALL     	8 0 4
+	9	[382]	JMP      	0 25	; to 35
+	10	[384]	LOADBOOL 	13 1 0
+	11	[385]	GETTABUP 	14 0 -4	; _ENV "GameConfig"
+	12	[385]	GETTABLE 	14 14 -5	; "IsTestMode"
+	13	[385]	CALL     	14 1 2
+	14	[385]	TEST     	14 0
+	15	[385]	JMP      	0 8	; to 24
+	16	[386]	GETTABLE 	14 12 -6	; "GetSlot"
+	17	[386]	TEST     	14 0
+	18	[386]	JMP      	0 5	; to 24
+	19	[386]	SELF     	14 12 -6	; "GetSlot"
+	20	[386]	CALL     	14 2 2
+	21	[386]	EQ       	0 14 1
+	22	[386]	JMP      	0 1	; to 24
+	23	[387]	LOADBOOL 	13 0 0
+	24	[391]	TEST     	13 0
+	25	[391]	JMP      	0 9	; to 35
+	26	[393]	SELF     	14 12 -7	; "GetRequirements"
+	27	[393]	CALL     	14 2 2
+	28	[394]	GETTABUP 	15 0 -2	; _ENV "pairs"
+	29	[394]	MOVE     	16 14
+	30	[394]	CALL     	15 2 4
+	31	[394]	JMP      	0 1	; to 33
+	32	[395]	SETTABLE 	7 19 -8	; - true
+	33	[394]	TFORCALL 	15 2
+	34	[394]	TFORLOOP 	17 -3	; to 32
+	35	[382]	TFORCALL 	8 2
+	36	[382]	TFORLOOP 	10 -27	; to 10
+	37	[417]	CLOSURE  	8 0	; 0000029673F75040
+	38	[419]	MOVE     	9 8
+	39	[419]	MOVE     	10 2
+	40	[419]	CALL     	9 2 2
+	41	[420]	MOVE     	10 8
+	42	[420]	MOVE     	11 3
+	43	[420]	CALL     	10 2 2
+	44	[421]	MOVE     	11 8
+	45	[421]	MOVE     	12 4
+	46	[421]	CALL     	11 2 2
+	47	[422]	GETTABUP 	12 0 -9	; _ENV "Table"
+	48	[422]	GETTABLE 	12 12 -10	; "IsEmpty"
+	49	[422]	MOVE     	13 9
+	50	[422]	CALL     	12 2 2
+	51	[422]	TEST     	12 0
+	52	[422]	JMP      	0 2	; to 55
+	53	[423]	LOADNIL  	12 0
+	54	[423]	RETURN   	12 2
+	55	[426]	SETTABLE 	5 -11 9	; "firstAvailableItems" -
+	56	[427]	SETTABLE 	5 -12 10	; "secondAvailableItems" -
+	57	[428]	SETTABLE 	5 -13 11	; "thirdAvailableItems" -
+	58	[431]	RETURN   	5 2
+	59	[432]	RETURN   	0 1
+constants (13) for 0000029673F752C0:
+	1	"GetCodeCountMap"
+	2	"pairs"
+	3	"GetOrders"
+	4	"GameConfig"
+	5	"IsTestMode"
+	6	"GetSlot"
+	7	"GetRequirements"
+	8	true
+	9	"Table"
+	10	"IsEmpty"
+	11	"firstAvailableItems"
+	12	"secondAvailableItems"
+	13	"thirdAvailableItems"
+locals (24) for 0000029673F752C0:
+	0	orderModel	1	60
+	1	slot	1	60
+	2	firstAvailableItems	1	60
+	3	secondAvailableItems	1	60
+	4	thirdAvailableItems	1	60
+	5	targetLuckItems	2	60
+	6	itemCodeNumByMapAndInventory	4	60
+	7	itemOrderRequireCode	5	60
+	8	(for generator)	9	37
+	9	(for state)	9	37
+	10	(for control)	9	37
+	11	_	10	35
+	12	order	10	35
+	13	bFind	11	35
+	14	orderRequirements	28	35
+	15	(for generator)	31	35
+	16	(for state)	31	35
+	17	(for control)	31	35
+	18	k	32	33
+	19	itemCode	32	33
+	20	GetAvailAbleItems	38	60
+	21	newFirstAItems	41	60
+	22	newSecondAItems	44	60
+	23	newThirdIAItems	47	60
+upvalues (1) for 0000029673F752C0:
+	0	_ENV	0	0
+
+function <MainOrderCreator.lua:401,417> (30 instructions at 0000029673F75040)
+1 param, 13 slots, 3 upvalues, 9 locals, 8 constants, 0 functions
+	1	[402]	NEWTABLE 	1 0 0
+	2	[403]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	3	[403]	MOVE     	3 0
+	4	[403]	CALL     	2 2 4
+	5	[403]	JMP      	0 21	; to 27
+	6	[404]	GETTABLE 	7 6 -2	; "Code"
+	7	[405]	GETTABLE 	8 6 -3	; "Weight"
+	8	[406]	LT       	0 -4 8	; 0 -
+	9	[406]	JMP      	0 17	; to 27
+	10	[406]	GETTABUP 	9 1 7	; itemCodeNumByMapAndInventory
+	11	[406]	EQ       	1 9 -5	; - nil
+	12	[406]	JMP      	0 14	; to 27
+	13	[406]	GETTABUP 	9 2 7	; itemOrderRequireCode
+	14	[406]	EQ       	0 9 -5	; - nil
+	15	[406]	JMP      	0 11	; to 27
+	16	[407]	GETTABUP 	9 0 -6	; _ENV "table"
+	17	[407]	GETTABLE 	9 9 -7	; "insert"
+	18	[407]	MOVE     	10 1
+	19	[407]	NEWTABLE 	11 0 3
+	20	[409]	GETTABLE 	12 6 -2	; "Code"
+	21	[409]	SETTABLE 	11 -2 12	; "Code" -
+	22	[410]	GETTABLE 	12 6 -3	; "Weight"
+	23	[410]	SETTABLE 	11 -3 12	; "Weight" -
+	24	[411]	GETTABUP 	12 1 7	; itemCodeNumByMapAndInventory
+	25	[411]	SETTABLE 	11 -8 12	; "CurNum" -
+	26	[407]	CALL     	9 3 1
+	27	[403]	TFORCALL 	2 2
+	28	[403]	TFORLOOP 	4 -23	; to 6
+	29	[416]	RETURN   	1 2
+	30	[417]	RETURN   	0 1
+constants (8) for 0000029673F75040:
+	1	"pairs"
+	2	"Code"
+	3	"Weight"
+	4	0
+	5	nil
+	6	"table"
+	7	"insert"
+	8	"CurNum"
+locals (9) for 0000029673F75040:
+	0	listItems	1	31
+	1	target	2	31
+	2	(for generator)	5	29
+	3	(for state)	5	29
+	4	(for control)	5	29
+	5	_	6	27
+	6	ele	6	27
+	7	code	7	27
+	8	weight	8	27
+upvalues (3) for 0000029673F75040:
+	0	_ENV	0	0
+	1	itemCodeNumByMapAndInventory	1	6
+	2	itemOrderRequireCode	1	7
+
+function <MainOrderCreator.lua:435,444> (28 instructions at 0000029673F758C0)
+2 params, 9 slots, 1 upvalue, 6 locals, 8 constants, 0 functions
+	1	[436]	LEN      	2 0
+	2	[436]	LOADK    	3 -1	; 1
+	3	[436]	LOADK    	4 -2	; -1
+	4	[436]	FORPREP  	2 22	; to 27
+	5	[437]	GETTABLE 	6 0 5
+	6	[437]	GETTABLE 	6 6 -3	; "CurNum"
+	7	[437]	EQ       	1 6 -4	; - nil
+	8	[437]	JMP      	0 18	; to 27
+	9	[437]	GETTABLE 	6 0 5
+	10	[437]	GETTABLE 	6 6 -5	; "Code"
+	11	[437]	EQ       	0 6 1
+	12	[437]	JMP      	0 14	; to 27
+	13	[438]	GETTABLE 	6 0 5
+	14	[438]	GETTABLE 	7 0 5
+	15	[438]	GETTABLE 	7 7 -3	; "CurNum"
+	16	[438]	SUB      	7 7 -1	; - 1
+	17	[438]	SETTABLE 	6 -3 7	; "CurNum" -
+	18	[439]	GETTABLE 	6 0 5
+	19	[439]	GETTABLE 	6 6 -3	; "CurNum"
+	20	[439]	EQ       	0 6 -6	; - 0
+	21	[439]	JMP      	0 5	; to 27
+	22	[440]	GETTABUP 	6 0 -7	; _ENV "table"
+	23	[440]	GETTABLE 	6 6 -8	; "remove"
+	24	[440]	MOVE     	7 0
+	25	[440]	MOVE     	8 5
+	26	[440]	CALL     	6 3 1
+	27	[436]	FORLOOP  	2 -23	; to 5
+	28	[444]	RETURN   	0 1
+constants (8) for 0000029673F758C0:
+	1	1
+	2	-1
+	3	"CurNum"
+	4	nil
+	5	"Code"
+	6	0
+	7	"table"
+	8	"remove"
+locals (6) for 0000029673F758C0:
+	0	listItemCodes	1	29
+	1	Code	1	29
+	2	(for index)	4	28
+	3	(for limit)	4	28
+	4	(for step)	4	28
+	5	i	5	27
+upvalues (1) for 0000029673F758C0:
+	0	_ENV	0	0

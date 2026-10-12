@@ -1,0 +1,953 @@
+[
+  {
+    "Price": 2,
+    "UnlockLevel": 1,
+    "DiffScore": 2,
+    "Weight": 100,
+    "Code": "203"
+  },
+  {
+    "Price": 4,
+    "UnlockLevel": 1,
+    "DiffScore": 5,
+    "Weight": 100,
+    "Code": "204"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 1,
+    "DiffScore": 10,
+    "Weight": 100,
+    "Code": "205"
+  },
+  {
+    "Price": 12,
+    "UnlockLevel": 1,
+    "DiffScore": 19,
+    "Weight": 100,
+    "Code": "206"
+  },
+  {
+    "Price": 20,
+    "UnlockLevel": 1,
+    "DiffScore": 39,
+    "Weight": 100,
+    "Code": "207"
+  },
+  {
+    "Price": 32,
+    "UnlockLevel": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 78,
+    "WeightMultiple": 1,
+    "Code": "208"
+  },
+  {
+    "Price": 50,
+    "UnlockLevel": 1,
+    "RepeatWeightDecrease": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 146,
+    "WeightMultiple": 1,
+    "Code": "209"
+  },
+  {
+    "Price": 78,
+    "UnlockLevel": 1,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 293,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "WeightMultiple": 1,
+    "Code": "210"
+  },
+  {
+    "Price": 118,
+    "UnlockLevel": 1,
+    "RepeatWeightDecrease": 100,
+    "DiffScore": 585,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "WeightMultiple": 1,
+    "Code": "211"
+  },
+  {
+    "Price": 178,
+    "UnlockLevel": 1,
+    "RecommendedNumber": 1,
+    "DiffScore": 1170,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 178,
+    "WeightMultiple": 1,
+    "Code": "212"
+  },
+  {
+    "Price": 270,
+    "UnlockLevel": 1,
+    "RecommendedNumber": 1,
+    "DiffScore": 2000,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 270,
+    "WeightMultiple": 1,
+    "Code": "213"
+  },
+  {
+    "Price": 406,
+    "UnlockLevel": 1,
+    "RecommendedNumber": 1,
+    "DiffScore": 2500,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 406,
+    "WeightMultiple": 1,
+    "Code": "214"
+  },
+  {
+    "Price": 612,
+    "UnlockLevel": 1,
+    "RecommendedNumber": 1,
+    "DiffScore": 3000,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 612,
+    "WeightMultiple": 1,
+    "Code": "215"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 2,
+    "DiffScore": 11,
+    "Weight": 100,
+    "Code": "303"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 2,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 23,
+    "Weight": 100,
+    "Code": "304"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 5,
+    "RepeatWeightDecrease": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 46,
+    "WeightMultiple": 1,
+    "Code": "305"
+  },
+  {
+    "Price": 38,
+    "UnlockLevel": 15,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 92,
+    "DifficultyLevel": 7,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "306"
+  },
+  {
+    "Price": 58,
+    "UnlockLevel": 20,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 2,
+    "DiffScore": 184,
+    "DifficultyLevel": 8,
+    "Weight": 100,
+    "RecommendedPrice": 58,
+    "ForbiddenSlot": [
+      10
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "307"
+  },
+  {
+    "Price": 2,
+    "UnlockLevel": 3,
+    "DiffScore": 3,
+    "Weight": 100,
+    "Code": "503"
+  },
+  {
+    "Price": 4,
+    "UnlockLevel": 3,
+    "DiffScore": 5,
+    "Weight": 100,
+    "Code": "504"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 3,
+    "DiffScore": 10,
+    "Weight": 100,
+    "Code": "505"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 3,
+    "DiffScore": 21,
+    "Weight": 100,
+    "Code": "506"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 3,
+    "DiffScore": 42,
+    "Weight": 100,
+    "Code": "507"
+  },
+  {
+    "Price": 36,
+    "UnlockLevel": 3,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 84,
+    "WeightMultiple": 1,
+    "Code": "508"
+  },
+  {
+    "Price": 56,
+    "UnlockLevel": 3,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 154,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "WeightMultiple": 1,
+    "Code": "509"
+  },
+  {
+    "Price": 88,
+    "UnlockLevel": 3,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 307,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "WeightMultiple": 1,
+    "Code": "510"
+  },
+  {
+    "Price": 132,
+    "UnlockLevel": 3,
+    "RepeatWeightDecrease": 100,
+    "DiffScore": 617,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "WeightMultiple": 1,
+    "Code": "511"
+  },
+  {
+    "Price": 202,
+    "UnlockLevel": 3,
+    "RecommendedNumber": 1,
+    "DiffScore": 1229,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 202,
+    "WeightMultiple": 1,
+    "Code": "512"
+  },
+  {
+    "Price": 304,
+    "UnlockLevel": 3,
+    "RecommendedNumber": 1,
+    "DiffScore": 2000,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 304,
+    "WeightMultiple": 1,
+    "Code": "513"
+  },
+  {
+    "Price": 458,
+    "UnlockLevel": 3,
+    "RecommendedNumber": 1,
+    "DiffScore": 2500,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "RecommendedPrice": 458,
+    "WeightMultiple": 1,
+    "Code": "514"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 4,
+    "DiffScore": 14,
+    "Weight": 100,
+    "Code": "603"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 4,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 27,
+    "Weight": 100,
+    "Code": "604"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 6,
+    "RepeatWeightDecrease": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 55,
+    "WeightMultiple": 1,
+    "Code": "605"
+  },
+  {
+    "Price": 41,
+    "UnlockLevel": 15,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 110,
+    "DifficultyLevel": 7,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "606"
+  },
+  {
+    "Price": 62,
+    "UnlockLevel": 20,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 2,
+    "DiffScore": 220,
+    "DifficultyLevel": 8,
+    "Weight": 100,
+    "RecommendedPrice": 62,
+    "ForbiddenSlot": [
+      10
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "607"
+  },
+  {
+    "Price": 4,
+    "UnlockLevel": 6,
+    "Weight": 0,
+    "DiffScore": 3,
+    "DifficultyLevel": 3,
+    "Code": "902"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 6,
+    "Weight": 100,
+    "DiffScore": 7,
+    "DifficultyLevel": 4,
+    "Code": "903"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 6,
+    "Weight": 100,
+    "DiffScore": 15,
+    "DifficultyLevel": 5,
+    "Code": "904"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 7,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 30,
+    "DifficultyLevel": 6,
+    "Code": "905"
+  },
+  {
+    "Price": 36,
+    "UnlockLevel": 10,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 60,
+    "DifficultyLevel": 7,
+    "Code": "906"
+  },
+  {
+    "Price": 56,
+    "UnlockLevel": 15,
+    "DiffScore": 120,
+    "DifficultyLevel": 8,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "907"
+  },
+  {
+    "Price": 88,
+    "UnlockLevel": 21,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 239,
+    "DifficultyLevel": 9,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "908"
+  },
+  {
+    "Price": 132,
+    "UnlockLevel": 26,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 479,
+    "DifficultyLevel": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "909"
+  },
+  {
+    "Price": 202,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 1,
+    "DiffScore": 957,
+    "DifficultyLevel": 11,
+    "Weight": 100,
+    "RecommendedPrice": 202,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "910"
+  },
+  {
+    "Price": 4,
+    "UnlockLevel": 9,
+    "ForbiddenSlot": [
+      11,
+      18
+    ],
+    "DiffScore": 4,
+    "Weight": 100,
+    "Code": "1102"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 9,
+    "ForbiddenSlot": [
+      11,
+      18
+    ],
+    "DiffScore": 9,
+    "Weight": 100,
+    "Code": "1103"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 9,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      11,
+      18
+    ],
+    "DiffScore": 18,
+    "ProgressUnlock": 1,
+    "Code": "1104"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 9,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 35,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11,
+      18
+    ],
+    "WeightMultiple": 1,
+    "Code": "1105"
+  },
+  {
+    "Price": 36,
+    "UnlockLevel": 9,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 70,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11,
+      18
+    ],
+    "WeightMultiple": 1,
+    "Code": "1106"
+  },
+  {
+    "Price": 54,
+    "UnlockLevel": 25,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 2,
+    "DiffScore": 140,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11,
+      18
+    ],
+    "RecommendedPrice": 42,
+    "WeightMultiple": 1,
+    "Code": "1107"
+  },
+  {
+    "Price": 8,
+    "UnlockLevel": 9,
+    "DiffScore": 3,
+    "Weight": 100,
+    "Code": "1303"
+  },
+  {
+    "Price": 14,
+    "UnlockLevel": 9,
+    "DiffScore": 6,
+    "Weight": 100,
+    "Code": "1304"
+  },
+  {
+    "Price": 24,
+    "UnlockLevel": 9,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 13,
+    "ProgressUnlock": 1,
+    "Code": "1305"
+  },
+  {
+    "Price": 36,
+    "UnlockLevel": 9,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 26,
+    "ProgressUnlock": 1,
+    "Code": "1306"
+  },
+  {
+    "Price": 56,
+    "UnlockLevel": 18,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 52,
+    "WeightMultiple": 1,
+    "Code": "1307"
+  },
+  {
+    "Price": 88,
+    "UnlockLevel": 21,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 88,
+    "WeightMultiple": 1,
+    "Code": "1308"
+  },
+  {
+    "Price": 132,
+    "UnlockLevel": 26,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 176,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "WeightMultiple": 1,
+    "Code": "1309"
+  },
+  {
+    "Price": 202,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 352,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "WeightMultiple": 1,
+    "Code": "1310"
+  },
+  {
+    "Price": 318,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 1,
+    "DiffScore": 704,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "RecommendedPrice": 318,
+    "WeightMultiple": 1,
+    "Code": "1311"
+  },
+  {
+    "Price": 12,
+    "UnlockLevel": 9,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 12,
+    "DifficultyLevel": 4,
+    "Code": "1403"
+  },
+  {
+    "Price": 22,
+    "UnlockLevel": 15,
+    "DiffScore": 24,
+    "DifficultyLevel": 5,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "1404"
+  },
+  {
+    "Price": 34,
+    "UnlockLevel": 21,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 48,
+    "DifficultyLevel": 6,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "1405"
+  },
+  {
+    "Price": 54,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 97,
+    "DifficultyLevel": 7,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "1406"
+  },
+  {
+    "Price": 86,
+    "UnlockLevel": 41,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 1,
+    "DiffScore": 194,
+    "DifficultyLevel": 8,
+    "Weight": 100,
+    "RecommendedPrice": 86,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "1407"
+  },
+  {
+    "Price": 7,
+    "UnlockLevel": 10,
+    "DiffScore": 3,
+    "Weight": 100,
+    "Code": "1803"
+  },
+  {
+    "Price": 13,
+    "UnlockLevel": 10,
+    "DiffScore": 6,
+    "Weight": 100,
+    "Code": "1804"
+  },
+  {
+    "Price": 21,
+    "UnlockLevel": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10
+    ],
+    "DiffScore": 11,
+    "ProgressUnlock": 1,
+    "Code": "1805"
+  },
+  {
+    "Price": 32,
+    "UnlockLevel": 10,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 22,
+    "ProgressUnlock": 1,
+    "Code": "1806"
+  },
+  {
+    "Price": 50,
+    "UnlockLevel": 21,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 43,
+    "WeightMultiple": 1,
+    "Code": "1807"
+  },
+  {
+    "Price": 79,
+    "UnlockLevel": 26,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "DiffScore": 86,
+    "WeightMultiple": 1,
+    "Code": "1808"
+  },
+  {
+    "Price": 118,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 171,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "WeightMultiple": 1,
+    "Code": "1809"
+  },
+  {
+    "Price": 180,
+    "UnlockLevel": 36,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 341,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "WeightMultiple": 1,
+    "Code": "1810"
+  },
+  {
+    "Price": 271,
+    "UnlockLevel": 41,
+    "RepeatWeightDecrease": 100,
+    "DiffScore": 682,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "WeightMultiple": 1,
+    "Code": "1811"
+  },
+  {
+    "Price": 409,
+    "UnlockLevel": 41,
+    "RecommendedNumber": 1,
+    "DiffScore": 1364,
+    "ProgressUnlock": 1,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "RecommendedPrice": 409,
+    "WeightMultiple": 1,
+    "Code": "1812"
+  },
+  {
+    "Price": 13,
+    "UnlockLevel": 9,
+    "Weight": 100,
+    "DiffScore": 11,
+    "DifficultyLevel": 4,
+    "Code": "main_g_artifact_3"
+  },
+  {
+    "Price": 21,
+    "UnlockLevel": 15,
+    "Weight": 100,
+    "DiffScore": 22,
+    "DifficultyLevel": 5,
+    "Code": "main_g_artifact_4"
+  },
+  {
+    "Price": 32,
+    "UnlockLevel": 21,
+    "RepeatWeightDecrease": 10,
+    "DiffScore": 43,
+    "DifficultyLevel": 6,
+    "Weight": 100,
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "main_g_artifact_5"
+  },
+  {
+    "Price": 50,
+    "UnlockLevel": 31,
+    "RepeatWeightDecrease": 50,
+    "DiffScore": 86,
+    "DifficultyLevel": 7,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "main_g_artifact_6"
+  },
+  {
+    "Price": 79,
+    "UnlockLevel": 41,
+    "RepeatWeightDecrease": 100,
+    "DiffScore": 171,
+    "DifficultyLevel": 8,
+    "Weight": 100,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "main_g_artifact_7"
+  },
+  {
+    "Price": 118,
+    "UnlockLevel": 51,
+    "RepeatWeightDecrease": 100,
+    "RecommendedNumber": 2,
+    "DiffScore": 341,
+    "DifficultyLevel": 9,
+    "Weight": 100,
+    "RecommendedPrice": 118,
+    "ForbiddenSlot": [
+      10,
+      11
+    ],
+    "ProgressUnlock": 1,
+    "WeightMultiple": 1,
+    "Code": "main_g_artifact_8"
+  }
+]

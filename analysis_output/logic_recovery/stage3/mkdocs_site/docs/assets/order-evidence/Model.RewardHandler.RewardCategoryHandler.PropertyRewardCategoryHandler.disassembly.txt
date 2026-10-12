@@ -1,0 +1,829 @@
+
+main <PropertyRewardCategoryHandler.lua:0,0> (39 instructions at 00000138ECDBEF60)
+0+ params, 3 slots, 1 upvalue, 0 locals, 15 constants, 10 functions
+	1	[2]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[2]	NEWTABLE 	1 0 0
+	3	[2]	GETTABUP 	2 0 -3	; _ENV "BaseRewardCategoryHandler"
+	4	[2]	CALL     	0 3 2
+	5	[2]	SETTABUP 	0 -1 0	; _ENV "PropertyRewardCategoryHandler"
+	6	[3]	GETTABUP 	0 0 -1	; _ENV "PropertyRewardCategoryHandler"
+	7	[3]	GETTABUP 	1 0 -1	; _ENV "PropertyRewardCategoryHandler"
+	8	[3]	SETTABLE 	0 -4 1	; "__index" -
+	9	[5]	GETTABUP 	0 0 -1	; _ENV "PropertyRewardCategoryHandler"
+	10	[9]	CLOSURE  	1 0	; 00000138ECDBF460
+	11	[5]	SETTABLE 	0 -5 1	; "Create" -
+	12	[11]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	13	[61]	CLOSURE  	1 1	; 00000138ECDC17C0
+	14	[11]	SETTABLE 	0 -7 1	; "Init" -
+	15	[63]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	16	[65]	CLOSURE  	1 2	; 00000138ECDBEAF0
+	17	[63]	SETTABLE 	0 -8 1	; "_RegisterByPropertyType" -
+	18	[67]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	19	[71]	CLOSURE  	1 3	; 00000138ECDBEB70
+	20	[67]	SETTABLE 	0 -9 1	; "_RegisterByPropertyTypeList" -
+	21	[76]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	22	[94]	CLOSURE  	1 4	; 00000138ECDBEC80
+	23	[76]	SETTABLE 	0 -10 1	; "_RegisterByActivityDefinition" -
+	24	[97]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	25	[99]	CLOSURE  	1 5	; 00000138ECDC3880
+	26	[97]	SETTABLE 	0 -11 1	; "LogicHandle" -
+	27	[101]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	28	[135]	CLOSURE  	1 6	; 00000138ECDC3970
+	29	[101]	SETTABLE 	0 -12 1	; "InViewHandle" -
+	30	[137]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	31	[150]	CLOSURE  	1 7	; 00000138ECDC4F20
+	32	[137]	SETTABLE 	0 -13 1	; "GetRewardIconNameAndIsSetNativeSize" -
+	33	[152]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	34	[164]	CLOSURE  	1 8	; 00000138ECDC5970
+	35	[152]	SETTABLE 	0 -14 1	; "ConvertDynamicHandle" -
+	36	[166]	GETTABUP 	0 0 -6	; _ENV "PropertyRewardCategoryHandler"
+	37	[177]	CLOSURE  	1 9	; 00000138ECDC5EB0
+	38	[166]	SETTABLE 	0 -15 1	; "CanShowTipButton" -
+	39	[177]	RETURN   	0 1
+constants (15) for 00000138ECDBEF60:
+	1	"PropertyRewardCategoryHandler"
+	2	"setmetatable"
+	3	"BaseRewardCategoryHandler"
+	4	"__index"
+	5	"Create"
+	6	"PropertyRewardCategoryHandler"
+	7	"Init"
+	8	"_RegisterByPropertyType"
+	9	"_RegisterByPropertyTypeList"
+	10	"_RegisterByActivityDefinition"
+	11	"LogicHandle"
+	12	"InViewHandle"
+	13	"GetRewardIconNameAndIsSetNativeSize"
+	14	"ConvertDynamicHandle"
+	15	"CanShowTipButton"
+locals (0) for 00000138ECDBEF60:
+upvalues (1) for 00000138ECDBEF60:
+	0	_ENV	1	0
+
+function <PropertyRewardCategoryHandler.lua:5,9> (8 instructions at 00000138ECDBF460)
+0 params, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[6]	GETTABUP 	0 0 -1	; _ENV "setmetatable"
+	2	[6]	NEWTABLE 	1 0 0
+	3	[6]	GETTABUP 	2 0 -2	; _ENV "PropertyRewardCategoryHandler"
+	4	[6]	CALL     	0 3 2
+	5	[7]	SELF     	1 0 -3	; "Init"
+	6	[7]	CALL     	1 2 1
+	7	[8]	RETURN   	0 2
+	8	[9]	RETURN   	0 1
+constants (3) for 00000138ECDBF460:
+	1	"setmetatable"
+	2	"PropertyRewardCategoryHandler"
+	3	"Init"
+locals (1) for 00000138ECDBF460:
+	0	handler	5	9
+upvalues (1) for 00000138ECDBF460:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:11,61> (261 instructions at 00000138ECDC17C0)
+1 param, 11 slots, 1 upvalue, 10 locals, 80 constants, 0 functions
+	1	[12]	NEWTABLE 	1 0 0
+	2	[12]	SETTABLE 	0 -1 1	; "m_propertyHandlers" -
+	3	[13]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	4	[13]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	5	[13]	GETTABLE 	3 3 -4	; "BakeOutToken"
+	6	[13]	GETTABUP 	4 0 -5	; _ENV "PropertyRewardBakeOutHandler"
+	7	[13]	GETTABLE 	4 4 -6	; "Create"
+	8	[13]	CALL     	4 1 0
+	9	[13]	CALL     	1 0 1
+	10	[14]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	11	[14]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	12	[14]	GETTABLE 	3 3 -7	; "BingoBall"
+	13	[14]	GETTABUP 	4 0 -8	; _ENV "PropertyRewardBingoHandler"
+	14	[14]	GETTABLE 	4 4 -6	; "Create"
+	15	[14]	CALL     	4 1 0
+	16	[14]	CALL     	1 0 1
+	17	[15]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	18	[15]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	19	[15]	GETTABLE 	3 3 -9	; "CookingFrenzyScore"
+	20	[15]	GETTABUP 	4 0 -10	; _ENV "PropertyRewardCookingFrenzyHandler"
+	21	[15]	GETTABLE 	4 4 -6	; "Create"
+	22	[15]	CALL     	4 1 0
+	23	[15]	CALL     	1 0 1
+	24	[16]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	25	[16]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	26	[16]	GETTABLE 	3 3 -11	; "TriggerBoostScore"
+	27	[16]	GETTABUP 	4 0 -12	; _ENV "PropertyRewardTriggerBoostHandler"
+	28	[16]	GETTABLE 	4 4 -6	; "Create"
+	29	[16]	CALL     	4 1 0
+	30	[16]	CALL     	1 0 1
+	31	[17]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	32	[17]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	33	[17]	GETTABLE 	3 3 -13	; "BuyEnergyToken"
+	34	[17]	GETTABUP 	4 0 -14	; _ENV "PropertyRewardBuyEnergyHandler"
+	35	[17]	GETTABLE 	4 4 -6	; "Create"
+	36	[17]	CALL     	4 1 0
+	37	[17]	CALL     	1 0 1
+	38	[18]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	39	[18]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	40	[18]	GETTABLE 	3 3 -15	; "FloatRaceScore"
+	41	[18]	GETTABUP 	4 0 -16	; _ENV "PropertyRewardFloatRaceHandler"
+	42	[18]	GETTABLE 	4 4 -6	; "Create"
+	43	[18]	CALL     	4 1 0
+	44	[18]	CALL     	1 0 1
+	45	[19]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	46	[19]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	47	[19]	GETTABLE 	3 3 -17	; "MissionMedal"
+	48	[19]	GETTABUP 	4 0 -18	; _ENV "PropertyRewardMissionHandler"
+	49	[19]	GETTABLE 	4 4 -6	; "Create"
+	50	[19]	CALL     	4 1 0
+	51	[19]	CALL     	1 0 1
+	52	[20]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	53	[20]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	54	[20]	GETTABLE 	3 3 -19	; "BattlePassScore"
+	55	[20]	GETTABUP 	4 0 -20	; _ENV "PropertyRewardBattlePassHandler"
+	56	[20]	GETTABLE 	4 4 -6	; "Create"
+	57	[20]	CALL     	4 1 0
+	58	[20]	CALL     	1 0 1
+	59	[21]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	60	[21]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	61	[21]	GETTABLE 	3 3 -21	; "MapExploreKeyReward"
+	62	[21]	GETTABUP 	4 0 -22	; _ENV "PropertyRewardMapExploreHandler"
+	63	[21]	GETTABLE 	4 4 -6	; "Create"
+	64	[21]	CALL     	4 1 0
+	65	[21]	CALL     	1 0 1
+	66	[22]	SELF     	1 0 -2	; "_RegisterByPropertyType"
+	67	[22]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	68	[22]	GETTABLE 	3 3 -23	; "OrderBoostSmile"
+	69	[22]	GETTABUP 	4 0 -24	; _ENV "PropertyRewardSmileHandler"
+	70	[22]	GETTABLE 	4 4 -6	; "Create"
+	71	[22]	CALL     	4 1 0
+	72	[22]	CALL     	1 0 1
+	73	[24]	SELF     	1 0 -25	; "_RegisterByPropertyTypeList"
+	74	[24]	NEWTABLE 	3 2 0
+	75	[24]	GETTABUP 	4 0 -3	; _ENV "EPropertyType"
+	76	[24]	GETTABLE 	4 4 -26	; "JokerCommonCard"
+	77	[24]	GETTABUP 	5 0 -3	; _ENV "EPropertyType"
+	78	[24]	GETTABLE 	5 5 -27	; "JokerGoldenCard"
+	79	[24]	SETLIST  	3 2 1	; 1
+	80	[24]	GETTABUP 	4 0 -28	; _ENV "PropertyRewardJokerCardHandler"
+	81	[24]	GETTABLE 	4 4 -6	; "Create"
+	82	[24]	CALL     	4 1 0
+	83	[24]	CALL     	1 0 1
+	84	[25]	SELF     	1 0 -25	; "_RegisterByPropertyTypeList"
+	85	[25]	GETTABUP 	3 0 -29	; _ENV "AlbumActivityModel"
+	86	[25]	GETTABLE 	3 3 -30	; "GetCacheProperty"
+	87	[25]	CALL     	3 1 2
+	88	[25]	GETTABUP 	4 0 -31	; _ENV "PropertyRewardAlbumPackHandler"
+	89	[25]	GETTABLE 	4 4 -6	; "Create"
+	90	[25]	CALL     	4 1 0
+	91	[25]	CALL     	1 0 1
+	92	[27]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	93	[27]	GETTABUP 	3 0 -33	; _ENV "AvenueDefinition"
+	94	[27]	GETTABUP 	4 0 -34	; _ENV "PropertyRewardAvenueHandler"
+	95	[27]	GETTABLE 	4 4 -6	; "Create"
+	96	[27]	CALL     	4 1 0
+	97	[27]	CALL     	1 0 1
+	98	[28]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	99	[28]	GETTABUP 	3 0 -35	; _ENV "UpwardDefinition"
+	100	[28]	GETTABUP 	4 0 -36	; _ENV "PropertyRewardUpwardHandler"
+	101	[28]	GETTABLE 	4 4 -6	; "Create"
+	102	[28]	CALL     	4 1 0
+	103	[28]	CALL     	1 0 1
+	104	[29]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	105	[29]	GETTABUP 	3 0 -37	; _ENV "ExpedDefinition"
+	106	[29]	GETTABUP 	4 0 -38	; _ENV "PropertyRewardExpedHandler"
+	107	[29]	GETTABLE 	4 4 -6	; "Create"
+	108	[29]	CALL     	4 1 2
+	109	[29]	NEWTABLE 	5 1 0
+	110	[29]	LOADK    	6 -39	; "ScorePropertyType"
+	111	[29]	SETLIST  	5 1 1	; 1
+	112	[29]	CALL     	1 5 1
+	113	[30]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	114	[30]	GETTABUP 	3 0 -40	; _ENV "RoadDefinition"
+	115	[30]	GETTABUP 	4 0 -41	; _ENV "PropertyRewardRoadHandler"
+	116	[30]	GETTABLE 	4 4 -6	; "Create"
+	117	[30]	CALL     	4 1 0
+	118	[30]	CALL     	1 0 1
+	119	[31]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	120	[31]	GETTABUP 	3 0 -42	; _ENV "WheelDefinition"
+	121	[31]	GETTABUP 	4 0 -43	; _ENV "PropertyRewardWheelHandler"
+	122	[31]	GETTABLE 	4 4 -6	; "Create"
+	123	[31]	CALL     	4 1 0
+	124	[31]	CALL     	1 0 1
+	125	[32]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	126	[32]	GETTABUP 	3 0 -44	; _ENV "RingDefinition"
+	127	[32]	GETTABUP 	4 0 -45	; _ENV "PropertyRewardRingHandler"
+	128	[32]	GETTABLE 	4 4 -6	; "Create"
+	129	[32]	CALL     	4 1 0
+	130	[32]	CALL     	1 0 1
+	131	[33]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	132	[33]	GETTABUP 	3 0 -46	; _ENV "RoomDefinition"
+	133	[33]	GETTABUP 	4 0 -47	; _ENV "PropertyRewardRoomHandler"
+	134	[33]	GETTABLE 	4 4 -6	; "Create"
+	135	[33]	CALL     	4 1 2
+	136	[33]	NEWTABLE 	5 2 0
+	137	[33]	LOADK    	6 -48	; "ActivityTokenPropertyType"
+	138	[33]	LOADK    	7 -49	; "ActivityTokenPropertyKey"
+	139	[33]	SETLIST  	5 2 1	; 1
+	140	[33]	CALL     	1 5 1
+	141	[34]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	142	[34]	GETTABUP 	3 0 -50	; _ENV "FarmboardActivityDefinition"
+	143	[34]	GETTABUP 	4 0 -51	; _ENV "PropertyRewardFarmboardHandler"
+	144	[34]	GETTABLE 	4 4 -6	; "Create"
+	145	[34]	CALL     	4 1 2
+	146	[34]	NEWTABLE 	5 1 0
+	147	[34]	LOADK    	6 -52	; "TokenProperty"
+	148	[34]	SETLIST  	5 1 1	; 1
+	149	[34]	CALL     	1 5 1
+	150	[35]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	151	[35]	GETTABUP 	3 0 -53	; _ENV "BreakDefinition"
+	152	[35]	GETTABUP 	4 0 -54	; _ENV "PropertyRewardBreakHandler"
+	153	[35]	GETTABLE 	4 4 -6	; "Create"
+	154	[35]	CALL     	4 1 2
+	155	[35]	NEWTABLE 	5 1 0
+	156	[35]	LOADK    	6 -52	; "TokenProperty"
+	157	[35]	SETLIST  	5 1 1	; 1
+	158	[35]	CALL     	1 5 1
+	159	[36]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	160	[36]	GETTABUP 	3 0 -55	; _ENV "PairworkDefinition"
+	161	[36]	GETTABUP 	4 0 -56	; _ENV "PropertyRewardPairworkHandler"
+	162	[36]	GETTABLE 	4 4 -6	; "Create"
+	163	[36]	CALL     	4 1 2
+	164	[36]	NEWTABLE 	5 1 0
+	165	[36]	LOADK    	6 -52	; "TokenProperty"
+	166	[36]	SETLIST  	5 1 1	; 1
+	167	[36]	CALL     	1 5 1
+	168	[37]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	169	[37]	GETTABUP 	3 0 -57	; _ENV "StickerboardActivityDefinition"
+	170	[37]	GETTABUP 	4 0 -58	; _ENV "PropertyRewardStickerboardHandler"
+	171	[37]	GETTABLE 	4 4 -6	; "Create"
+	172	[37]	CALL     	4 1 0
+	173	[37]	CALL     	1 0 1
+	174	[38]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	175	[38]	GETTABUP 	3 0 -59	; _ENV "ComboActivityDefinition"
+	176	[38]	GETTABUP 	4 0 -60	; _ENV "PropertyRewardComboHandler"
+	177	[38]	GETTABLE 	4 4 -6	; "Create"
+	178	[38]	CALL     	4 1 0
+	179	[38]	CALL     	1 0 1
+	180	[39]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	181	[39]	GETTABUP 	3 0 -61	; _ENV "TokenChainActivityDefinition"
+	182	[39]	GETTABUP 	4 0 -62	; _ENV "PropertyRewardTokenChainHandler"
+	183	[39]	GETTABLE 	4 4 -6	; "Create"
+	184	[39]	CALL     	4 1 0
+	185	[39]	CALL     	1 0 1
+	186	[40]	SELF     	1 0 -32	; "_RegisterByActivityDefinition"
+	187	[40]	GETTABUP 	3 0 -63	; _ENV "DigActivityDefinition"
+	188	[40]	GETTABUP 	4 0 -64	; _ENV "PropertyRewardDigHandler"
+	189	[40]	GETTABLE 	4 4 -6	; "Create"
+	190	[40]	CALL     	4 1 0
+	191	[40]	CALL     	1 0 1
+	192	[42]	GETTABUP 	1 0 -65	; _ENV "PropertyRewardFreefallHandler"
+	193	[42]	GETTABLE 	1 1 -6	; "Create"
+	194	[42]	CALL     	1 1 2
+	195	[43]	GETTABUP 	2 0 -66	; _ENV "pairs"
+	196	[43]	GETTABUP 	3 0 -67	; _ENV "FreefallActivityDefinition"
+	197	[43]	CALL     	2 2 4
+	198	[43]	JMP      	0 4	; to 203
+	199	[44]	SELF     	7 0 -25	; "_RegisterByPropertyTypeList"
+	200	[44]	GETTABLE 	9 6 -68	; "HitTokenProperties"
+	201	[44]	MOVE     	10 1
+	202	[44]	CALL     	7 4 1
+	203	[43]	TFORCALL 	2 2
+	204	[43]	TFORLOOP 	4 -6	; to 199
+	205	[46]	SELF     	2 0 -32	; "_RegisterByActivityDefinition"
+	206	[46]	GETTABUP 	4 0 -67	; _ENV "FreefallActivityDefinition"
+	207	[46]	MOVE     	5 1
+	208	[46]	NEWTABLE 	6 1 0
+	209	[46]	LOADK    	7 -52	; "TokenProperty"
+	210	[46]	SETLIST  	6 1 1	; 1
+	211	[46]	CALL     	2 5 1
+	212	[48]	GETTABUP 	2 0 -69	; _ENV "PropertyRewardMainDecorNewHandler"
+	213	[48]	GETTABLE 	2 2 -6	; "Create"
+	214	[48]	CALL     	2 1 2
+	215	[49]	SELF     	3 0 -2	; "_RegisterByPropertyType"
+	216	[49]	GETTABUP 	5 0 -3	; _ENV "EPropertyType"
+	217	[49]	GETTABLE 	5 5 -70	; "MainDecorGeneralToken"
+	218	[49]	MOVE     	6 2
+	219	[49]	CALL     	3 4 1
+	220	[50]	SELF     	3 0 -32	; "_RegisterByActivityDefinition"
+	221	[50]	GETTABUP 	5 0 -71	; _ENV "MainDecorNewActivityDefinition"
+	222	[50]	MOVE     	6 2
+	223	[50]	CALL     	3 4 1
+	224	[52]	GETTABUP 	3 0 -72	; _ENV "PropertyRewardHitBricksHandler"
+	225	[52]	GETTABLE 	3 3 -6	; "Create"
+	226	[52]	CALL     	3 1 2
+	227	[53]	SELF     	4 0 -2	; "_RegisterByPropertyType"
+	228	[53]	GETTABUP 	6 0 -3	; _ENV "EPropertyType"
+	229	[53]	GETTABLE 	6 6 -73	; "HitBricksHammer"
+	230	[53]	MOVE     	7 3
+	231	[53]	CALL     	4 4 1
+	232	[54]	SELF     	4 0 -32	; "_RegisterByActivityDefinition"
+	233	[54]	GETTABUP 	6 0 -74	; _ENV "HitBricksActivityDefinition"
+	234	[54]	MOVE     	7 3
+	235	[54]	NEWTABLE 	8 1 0
+	236	[54]	LOADK    	9 -75	; "coinToken"
+	237	[54]	SETLIST  	8 1 1	; 1
+	238	[54]	CALL     	4 5 1
+	239	[56]	GETTABUP 	4 0 -76	; _ENV "PropertyRewardWeeklyActiveQuestHandler"
+	240	[56]	GETTABLE 	4 4 -6	; "Create"
+	241	[56]	CALL     	4 1 2
+	242	[57]	SELF     	5 0 -2	; "_RegisterByPropertyType"
+	243	[57]	GETTABUP 	7 0 -3	; _ENV "EPropertyType"
+	244	[57]	GETTABLE 	7 7 -77	; "WeeklyActiveQuestStar"
+	245	[57]	MOVE     	8 4
+	246	[57]	CALL     	5 4 1
+	247	[58]	SELF     	5 0 -32	; "_RegisterByActivityDefinition"
+	248	[58]	GETTABUP 	7 0 -78	; _ENV "WeeklyActiveQuestDefinition"
+	249	[58]	MOVE     	8 4
+	250	[58]	NEWTABLE 	9 1 0
+	251	[58]	LOADK    	10 -39	; "ScorePropertyType"
+	252	[58]	SETLIST  	9 1 1	; 1
+	253	[58]	CALL     	5 5 1
+	254	[60]	SELF     	5 0 -2	; "_RegisterByPropertyType"
+	255	[60]	GETTABUP 	7 0 -3	; _ENV "EPropertyType"
+	256	[60]	GETTABLE 	7 7 -79	; "noviceScore"
+	257	[60]	GETTABUP 	8 0 -80	; _ENV "PropertyRewardNoviceHandler"
+	258	[60]	GETTABLE 	8 8 -6	; "Create"
+	259	[60]	CALL     	8 1 0
+	260	[60]	CALL     	5 0 1
+	261	[61]	RETURN   	0 1
+constants (80) for 00000138ECDC17C0:
+	1	"m_propertyHandlers"
+	2	"_RegisterByPropertyType"
+	3	"EPropertyType"
+	4	"BakeOutToken"
+	5	"PropertyRewardBakeOutHandler"
+	6	"Create"
+	7	"BingoBall"
+	8	"PropertyRewardBingoHandler"
+	9	"CookingFrenzyScore"
+	10	"PropertyRewardCookingFrenzyHandler"
+	11	"TriggerBoostScore"
+	12	"PropertyRewardTriggerBoostHandler"
+	13	"BuyEnergyToken"
+	14	"PropertyRewardBuyEnergyHandler"
+	15	"FloatRaceScore"
+	16	"PropertyRewardFloatRaceHandler"
+	17	"MissionMedal"
+	18	"PropertyRewardMissionHandler"
+	19	"BattlePassScore"
+	20	"PropertyRewardBattlePassHandler"
+	21	"MapExploreKeyReward"
+	22	"PropertyRewardMapExploreHandler"
+	23	"OrderBoostSmile"
+	24	"PropertyRewardSmileHandler"
+	25	"_RegisterByPropertyTypeList"
+	26	"JokerCommonCard"
+	27	"JokerGoldenCard"
+	28	"PropertyRewardJokerCardHandler"
+	29	"AlbumActivityModel"
+	30	"GetCacheProperty"
+	31	"PropertyRewardAlbumPackHandler"
+	32	"_RegisterByActivityDefinition"
+	33	"AvenueDefinition"
+	34	"PropertyRewardAvenueHandler"
+	35	"UpwardDefinition"
+	36	"PropertyRewardUpwardHandler"
+	37	"ExpedDefinition"
+	38	"PropertyRewardExpedHandler"
+	39	"ScorePropertyType"
+	40	"RoadDefinition"
+	41	"PropertyRewardRoadHandler"
+	42	"WheelDefinition"
+	43	"PropertyRewardWheelHandler"
+	44	"RingDefinition"
+	45	"PropertyRewardRingHandler"
+	46	"RoomDefinition"
+	47	"PropertyRewardRoomHandler"
+	48	"ActivityTokenPropertyType"
+	49	"ActivityTokenPropertyKey"
+	50	"FarmboardActivityDefinition"
+	51	"PropertyRewardFarmboardHandler"
+	52	"TokenProperty"
+	53	"BreakDefinition"
+	54	"PropertyRewardBreakHandler"
+	55	"PairworkDefinition"
+	56	"PropertyRewardPairworkHandler"
+	57	"StickerboardActivityDefinition"
+	58	"PropertyRewardStickerboardHandler"
+	59	"ComboActivityDefinition"
+	60	"PropertyRewardComboHandler"
+	61	"TokenChainActivityDefinition"
+	62	"PropertyRewardTokenChainHandler"
+	63	"DigActivityDefinition"
+	64	"PropertyRewardDigHandler"
+	65	"PropertyRewardFreefallHandler"
+	66	"pairs"
+	67	"FreefallActivityDefinition"
+	68	"HitTokenProperties"
+	69	"PropertyRewardMainDecorNewHandler"
+	70	"MainDecorGeneralToken"
+	71	"MainDecorNewActivityDefinition"
+	72	"PropertyRewardHitBricksHandler"
+	73	"HitBricksHammer"
+	74	"HitBricksActivityDefinition"
+	75	"coinToken"
+	76	"PropertyRewardWeeklyActiveQuestHandler"
+	77	"WeeklyActiveQuestStar"
+	78	"WeeklyActiveQuestDefinition"
+	79	"noviceScore"
+	80	"PropertyRewardNoviceHandler"
+locals (10) for 00000138ECDC17C0:
+	0	self	1	262
+	1	freefallHandler	195	262
+	2	(for generator)	198	205
+	3	(for state)	198	205
+	4	(for control)	198	205
+	5	_	199	203
+	6	definition	199	203
+	7	mainDecorHandler	215	262
+	8	hitBricksHandler	227	262
+	9	weeklyHandler	242	262
+upvalues (1) for 00000138ECDC17C0:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:63,65> (3 instructions at 00000138ECDBEAF0)
+3 params, 4 slots, 0 upvalues, 3 locals, 1 constant, 0 functions
+	1	[64]	GETTABLE 	3 0 -1	; "m_propertyHandlers"
+	2	[64]	SETTABLE 	3 1 2
+	3	[65]	RETURN   	0 1
+constants (1) for 00000138ECDBEAF0:
+	1	"m_propertyHandlers"
+locals (3) for 00000138ECDBEAF0:
+	0	self	1	4
+	1	propertyType	1	4
+	2	handler	1	4
+upvalues (0) for 00000138ECDBEAF0:
+
+function <PropertyRewardCategoryHandler.lua:67,71> (9 instructions at 00000138ECDBEB70)
+3 params, 9 slots, 1 upvalue, 8 locals, 2 constants, 0 functions
+	1	[68]	GETTABUP 	3 0 -1	; _ENV "ipairs"
+	2	[68]	MOVE     	4 1
+	3	[68]	CALL     	3 2 4
+	4	[68]	JMP      	0 2	; to 7
+	5	[69]	GETTABLE 	8 0 -2	; "m_propertyHandlers"
+	6	[69]	SETTABLE 	8 7 2
+	7	[68]	TFORCALL 	3 2
+	8	[68]	TFORLOOP 	5 -4	; to 5
+	9	[71]	RETURN   	0 1
+constants (2) for 00000138ECDBEB70:
+	1	"ipairs"
+	2	"m_propertyHandlers"
+locals (8) for 00000138ECDBEB70:
+	0	self	1	10
+	1	propertyTypeList	1	10
+	2	handler	1	10
+	3	(for generator)	4	9
+	4	(for state)	4	9
+	5	(for control)	4	9
+	6	_	5	7
+	7	propertyType	5	7
+upvalues (1) for 00000138ECDBEB70:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:76,94> (42 instructions at 00000138ECDBEC80)
+4 params, 16 slots, 1 upvalue, 14 locals, 11 constants, 0 functions
+	1	[77]	GETTABUP 	4 0 -1	; _ENV "pairs"
+	2	[77]	MOVE     	5 1
+	3	[77]	CALL     	4 2 4
+	4	[77]	JMP      	0 35	; to 40
+	5	[78]	GETTABUP 	9 0 -2	; _ENV "Table"
+	6	[78]	GETTABLE 	9 9 -3	; "IsEmpty"
+	7	[78]	MOVE     	10 3
+	8	[78]	CALL     	9 2 2
+	9	[78]	TEST     	9 1
+	10	[78]	JMP      	0 18	; to 29
+	11	[79]	GETTABUP 	9 0 -4	; _ENV "ipairs"
+	12	[79]	MOVE     	10 3
+	13	[79]	CALL     	9 2 4
+	14	[79]	JMP      	0 11	; to 26
+	15	[80]	GETTABLE 	14 8 13
+	16	[80]	EQ       	1 14 -5	; - nil
+	17	[80]	JMP      	0 4	; to 22
+	18	[81]	GETTABLE 	14 0 -6	; "m_propertyHandlers"
+	19	[81]	GETTABLE 	15 8 13
+	20	[81]	SETTABLE 	14 15 2
+	21	[81]	JMP      	0 4	; to 26
+	22	[83]	GETTABUP 	14 0 -7	; _ENV "Log"
+	23	[83]	GETTABLE 	14 14 -8	; "Error"
+	24	[83]	LOADK    	15 -9	; "PropertyRewardCategoryHandler:_RegisterByActivityDefinition: PropertyType\230\156\137\232\175\175/\231\188\186\229\176\145"
+	25	[83]	CALL     	14 2 1
+	26	[79]	TFORCALL 	9 2
+	27	[79]	TFORLOOP 	11 -13	; to 15
+	28	[85]	JMP      	0 11	; to 40
+	29	[87]	GETTABLE 	9 8 -10	; "ActivityTokenPropertyType"
+	30	[87]	EQ       	0 9 -5	; - nil
+	31	[87]	JMP      	0 5	; to 37
+	32	[88]	GETTABUP 	9 0 -7	; _ENV "Log"
+	33	[88]	GETTABLE 	9 9 -8	; "Error"
+	34	[88]	LOADK    	10 -11	; "PropertyRewardCategoryHandler:_RegisterByActivityDefinition: \231\188\186\229\176\145ActivityTokenPropertyType"
+	35	[88]	CALL     	9 2 1
+	36	[89]	RETURN   	0 1
+	37	[91]	GETTABLE 	9 0 -6	; "m_propertyHandlers"
+	38	[91]	GETTABLE 	10 8 -10	; "ActivityTokenPropertyType"
+	39	[91]	SETTABLE 	9 10 2
+	40	[77]	TFORCALL 	4 2
+	41	[77]	TFORLOOP 	6 -37	; to 5
+	42	[94]	RETURN   	0 1
+constants (11) for 00000138ECDBEC80:
+	1	"pairs"
+	2	"Table"
+	3	"IsEmpty"
+	4	"ipairs"
+	5	nil
+	6	"m_propertyHandlers"
+	7	"Log"
+	8	"Error"
+	9	"PropertyRewardCategoryHandler:_RegisterByActivityDefinition: PropertyType\230\156\137\232\175\175/\231\188\186\229\176\145"
+	10	"ActivityTokenPropertyType"
+	11	"PropertyRewardCategoryHandler:_RegisterByActivityDefinition: \231\188\186\229\176\145ActivityTokenPropertyType"
+locals (14) for 00000138ECDBEC80:
+	0	self	1	43
+	1	definition	1	43
+	2	handler	1	43
+	3	propertyArgs	1	43
+	4	(for generator)	4	42
+	5	(for state)	4	42
+	6	(for control)	4	42
+	7	_	5	40
+	8	definition	5	40
+	9	(for generator)	14	28
+	10	(for state)	14	28
+	11	(for control)	14	28
+	12	_	15	26
+	13	arg	15	26
+upvalues (1) for 00000138ECDBEC80:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:97,99> (9 instructions at 00000138ECDC3880)
+3 params, 9 slots, 1 upvalue, 3 locals, 6 constants, 0 functions
+	1	[98]	GETTABUP 	3 0 -1	; _ENV "GM"
+	2	[98]	GETTABLE 	3 3 -2	; "PropertyDataManager"
+	3	[98]	SELF     	3 3 -3	; "Acquire"
+	4	[98]	MOVE     	5 1
+	5	[98]	GETTABLE 	6 2 -4	; "source"
+	6	[98]	GETTABLE 	7 2 -5	; "scene"
+	7	[98]	GETTABLE 	8 2 -6	; "boardType"
+	8	[98]	CALL     	3 6 1
+	9	[99]	RETURN   	0 1
+constants (6) for 00000138ECDC3880:
+	1	"GM"
+	2	"PropertyDataManager"
+	3	"Acquire"
+	4	"source"
+	5	"scene"
+	6	"boardType"
+locals (3) for 00000138ECDC3880:
+	0	self	1	10
+	1	rewardDatas	1	10
+	2	logicArgs	1	10
+upvalues (1) for 00000138ECDC3880:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:101,135> (89 instructions at 00000138ECDC3970)
+3 params, 13 slots, 1 upvalue, 8 locals, 26 constants, 0 functions
+	1	[102]	GETTABLE 	3 2 -1	; "viewData"
+	2	[104]	GETTABUP 	4 0 -2	; _ENV "PROPERTY_TYPE"
+	3	[104]	GETTABLE 	4 1 4
+	4	[105]	GETTABLE 	5 0 -3	; "m_propertyHandlers"
+	5	[105]	GETTABLE 	5 5 4
+	6	[106]	LOADBOOL 	6 0 0
+	7	[107]	TEST     	5 0
+	8	[107]	JMP      	0 8	; to 17
+	9	[107]	GETTABLE 	7 5 -4	; "InViewHandle"
+	10	[107]	TEST     	7 0
+	11	[107]	JMP      	0 5	; to 17
+	12	[108]	SELF     	7 5 -4	; "InViewHandle"
+	13	[108]	MOVE     	9 1
+	14	[108]	MOVE     	10 2
+	15	[108]	CALL     	7 4 1
+	16	[108]	JMP      	0 72	; to 89
+	17	[110]	GETTABUP 	7 0 -5	; _ENV "GM"
+	18	[110]	GETTABLE 	7 7 -6	; "ActivityModuleManager"
+	19	[110]	SELF     	7 7 -7	; "IsShowBoardAreaEntryReward"
+	20	[110]	MOVE     	9 4
+	21	[110]	MOVE     	10 2
+	22	[110]	CALL     	7 4 2
+	23	[110]	TEST     	7 0
+	24	[110]	JMP      	0 7	; to 32
+	25	[111]	GETTABUP 	7 0 -5	; _ENV "GM"
+	26	[111]	GETTABLE 	7 7 -6	; "ActivityModuleManager"
+	27	[111]	SELF     	7 7 -4	; "InViewHandle"
+	28	[111]	MOVE     	9 1
+	29	[111]	MOVE     	10 2
+	30	[111]	CALL     	7 4 1
+	31	[111]	JMP      	0 57	; to 89
+	32	[112]	GETTABUP 	7 0 -5	; _ENV "GM"
+	33	[112]	GETTABLE 	7 7 -6	; "ActivityModuleManager"
+	34	[112]	SELF     	7 7 -8	; "IsActivityModuleViewReward"
+	35	[112]	MOVE     	9 4
+	36	[112]	CALL     	7 3 2
+	37	[112]	TEST     	7 0
+	38	[112]	JMP      	0 5	; to 44
+	39	[113]	SELF     	7 0 -9	; "ModuleRewardInViewHandler"
+	40	[113]	MOVE     	9 1
+	41	[113]	MOVE     	10 2
+	42	[113]	CALL     	7 4 1
+	43	[113]	JMP      	0 45	; to 89
+	44	[114]	GETTABUP 	7 0 -10	; _ENV "EPropertyType"
+	45	[114]	GETTABLE 	7 7 -11	; "EnergyInfiniteTime"
+	46	[114]	EQ       	0 4 7
+	47	[114]	JMP      	0 9	; to 57
+	48	[116]	GETTABUP 	7 0 -12	; _ENV "EventDispatcher"
+	49	[116]	GETTABLE 	7 7 -13	; "DispatchEvent"
+	50	[116]	GETTABUP 	8 0 -14	; _ENV "EEventType"
+	51	[116]	GETTABLE 	8 8 -15	; "EnergyInfiniteAcquire"
+	52	[116]	NEWTABLE 	9 0 2
+	53	[117]	SETTABLE 	9 -16 1	; "rewardData" -
+	54	[118]	SETTABLE 	9 -17 2	; "showArgs" -
+	55	[116]	CALL     	7 3 1
+	56	[119]	JMP      	0 32	; to 89
+	57	[121]	NEWTABLE 	7 1 0
+	58	[121]	NEWTABLE 	8 0 4
+	59	[123]	GETTABLE 	9 2 -18	; "flyDelay"
+	60	[123]	SETTABLE 	8 -18 9	; "flyDelay" -
+	61	[124]	GETTABLE 	9 3 -19	; "eventLock"
+	62	[124]	SETTABLE 	8 -19 9	; "eventLock" -
+	63	[125]	GETTABLE 	9 3 -20	; "alwaysInMiddle"
+	64	[125]	SETTABLE 	8 -20 9	; "alwaysInMiddle" -
+	65	[126]	GETTABLE 	9 3 -21	; "spriteScale"
+	66	[126]	SETTABLE 	8 -21 9	; "spriteScale" -
+	67	[128]	SETLIST  	7 1 1	; 1
+	68	[129]	GETTABLE 	8 3 -22	; "simpleCollect"
+	69	[129]	TEST     	8 0
+	70	[129]	JMP      	0 9	; to 80
+	71	[130]	GETTABUP 	8 0 -5	; _ENV "GM"
+	72	[130]	GETTABLE 	8 8 -23	; "PropertyDataManager"
+	73	[130]	SELF     	8 8 -24	; "PlayAcquireAnimation"
+	74	[130]	NEWTABLE 	10 1 0
+	75	[130]	MOVE     	11 1
+	76	[130]	SETLIST  	10 1 1	; 1
+	77	[130]	MOVE     	11 7
+	78	[130]	CALL     	8 4 1
+	79	[130]	JMP      	0 9	; to 89
+	80	[132]	GETTABUP 	8 0 -5	; _ENV "GM"
+	81	[132]	GETTABLE 	8 8 -23	; "PropertyDataManager"
+	82	[132]	SELF     	8 8 -25	; "PlayCollectAnimation"
+	83	[132]	NEWTABLE 	10 1 0
+	84	[132]	MOVE     	11 1
+	85	[132]	SETLIST  	10 1 1	; 1
+	86	[132]	GETTABLE 	11 2 -26	; "uiWorldPosition"
+	87	[132]	MOVE     	12 7
+	88	[132]	CALL     	8 5 1
+	89	[135]	RETURN   	0 1
+constants (26) for 00000138ECDC3970:
+	1	"viewData"
+	2	"PROPERTY_TYPE"
+	3	"m_propertyHandlers"
+	4	"InViewHandle"
+	5	"GM"
+	6	"ActivityModuleManager"
+	7	"IsShowBoardAreaEntryReward"
+	8	"IsActivityModuleViewReward"
+	9	"ModuleRewardInViewHandler"
+	10	"EPropertyType"
+	11	"EnergyInfiniteTime"
+	12	"EventDispatcher"
+	13	"DispatchEvent"
+	14	"EEventType"
+	15	"EnergyInfiniteAcquire"
+	16	"rewardData"
+	17	"showArgs"
+	18	"flyDelay"
+	19	"eventLock"
+	20	"alwaysInMiddle"
+	21	"spriteScale"
+	22	"simpleCollect"
+	23	"PropertyDataManager"
+	24	"PlayAcquireAnimation"
+	25	"PlayCollectAnimation"
+	26	"uiWorldPosition"
+locals (8) for 00000138ECDC3970:
+	0	self	1	90
+	1	rewardData	1	90
+	2	showArgs	1	90
+	3	viewData	2	90
+	4	rewardType	4	90
+	5	handler	6	90
+	6	noViewHandle	7	90
+	7	customData	68	89
+upvalues (1) for 00000138ECDC3970:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:137,150> (24 instructions at 00000138ECDC4F20)
+2 params, 7 slots, 1 upvalue, 5 locals, 7 constants, 0 functions
+	1	[139]	GETTABLE 	2 0 -1	; "m_propertyHandlers"
+	2	[139]	GETTABLE 	2 2 1
+	3	[140]	TEST     	2 0
+	4	[140]	JMP      	0 5	; to 10
+	5	[141]	SELF     	3 2 -2	; "GetRewardIconNameAndIsSetNativeSize"
+	6	[141]	MOVE     	5 1
+	7	[141]	TAILCALL 	3 3 0
+	8	[141]	RETURN   	3 0
+	9	[141]	JMP      	0 10	; to 20
+	10	[143]	GETTABUP 	3 0 -3	; _ENV "GM"
+	11	[143]	GETTABLE 	3 3 -4	; "ActivityModuleManager"
+	12	[143]	SELF     	3 3 -5	; "GetRewardBigIconNameAndNativeSize"
+	13	[143]	MOVE     	5 1
+	14	[143]	CALL     	3 3 3
+	15	[144]	EQ       	1 3 -6	; - nil
+	16	[144]	JMP      	0 3	; to 20
+	17	[145]	MOVE     	5 3
+	18	[145]	MOVE     	6 4
+	19	[145]	RETURN   	5 3
+	20	[149]	GETTABUP 	3 0 -7	; _ENV "EPropertySpriteBig"
+	21	[149]	GETTABLE 	3 3 1
+	22	[149]	LOADBOOL 	4 1 0
+	23	[149]	RETURN   	3 3
+	24	[150]	RETURN   	0 1
+constants (7) for 00000138ECDC4F20:
+	1	"m_propertyHandlers"
+	2	"GetRewardIconNameAndIsSetNativeSize"
+	3	"GM"
+	4	"ActivityModuleManager"
+	5	"GetRewardBigIconNameAndNativeSize"
+	6	nil
+	7	"EPropertySpriteBig"
+locals (5) for 00000138ECDC4F20:
+	0	self	1	25
+	1	rewardType	1	25
+	2	handler	3	25
+	3	iconName	15	20
+	4	nativeSize	15	20
+upvalues (1) for 00000138ECDC4F20:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:152,164> (26 instructions at 00000138ECDC5970)
+3 params, 9 slots, 1 upvalue, 6 locals, 7 constants, 0 functions
+	1	[153]	GETTABUP 	3 0 -1	; _ENV "PROPERTY_TYPE"
+	2	[153]	GETTABLE 	3 1 3
+	3	[154]	GETTABLE 	4 0 -2	; "m_propertyHandlers"
+	4	[154]	GETTABLE 	4 4 3
+	5	[155]	TEST     	4 0
+	6	[155]	JMP      	0 9	; to 16
+	7	[156]	SELF     	5 4 -3	; "ConvertDynamicHandle"
+	8	[156]	MOVE     	7 1
+	9	[156]	MOVE     	8 2
+	10	[156]	CALL     	5 4 2
+	11	[156]	TEST     	5 1
+	12	[156]	JMP      	0 1	; to 14
+	13	[156]	MOVE     	5 1
+	14	[156]	RETURN   	5 2
+	15	[156]	JMP      	0 9	; to 25
+	16	[158]	GETTABUP 	5 0 -4	; _ENV "GM"
+	17	[158]	GETTABLE 	5 5 -5	; "ActivityModuleManager"
+	18	[158]	SELF     	5 5 -6	; "ConvertDynamicReward"
+	19	[158]	MOVE     	7 1
+	20	[158]	MOVE     	8 2
+	21	[158]	CALL     	5 4 2
+	22	[159]	EQ       	1 5 -7	; - nil
+	23	[159]	JMP      	0 1	; to 25
+	24	[160]	RETURN   	5 2
+	25	[163]	RETURN   	1 2
+	26	[164]	RETURN   	0 1
+constants (7) for 00000138ECDC5970:
+	1	"PROPERTY_TYPE"
+	2	"m_propertyHandlers"
+	3	"ConvertDynamicHandle"
+	4	"GM"
+	5	"ActivityModuleManager"
+	6	"ConvertDynamicReward"
+	7	nil
+locals (6) for 00000138ECDC5970:
+	0	self	1	27
+	1	reward	1	27
+	2	needBI	1	27
+	3	rewardType	3	27
+	4	handler	5	27
+	5	newReward	22	25
+upvalues (1) for 00000138ECDC5970:
+	0	_ENV	0	0
+
+function <PropertyRewardCategoryHandler.lua:166,177> (20 instructions at 00000138ECDC5EB0)
+2 params, 6 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[167]	GETTABLE 	2 0 -1	; "m_propertyHandlers"
+	2	[167]	GETTABLE 	2 2 1
+	3	[168]	TEST     	2 0
+	4	[168]	JMP      	0 4	; to 9
+	5	[169]	SELF     	3 2 -2	; "CanShowTipButton"
+	6	[169]	MOVE     	5 1
+	7	[169]	TAILCALL 	3 3 0
+	8	[169]	RETURN   	3 0
+	9	[172]	GETTABUP 	3 0 -3	; _ENV "GM"
+	10	[172]	GETTABLE 	3 3 -4	; "ActivityModuleManager"
+	11	[172]	SELF     	3 3 -2	; "CanShowTipButton"
+	12	[172]	MOVE     	5 1
+	13	[172]	CALL     	3 3 2
+	14	[172]	TEST     	3 0
+	15	[172]	JMP      	0 2	; to 18
+	16	[173]	LOADBOOL 	3 1 0
+	17	[173]	RETURN   	3 2
+	18	[176]	LOADBOOL 	3 0 0
+	19	[176]	RETURN   	3 2
+	20	[177]	RETURN   	0 1
+constants (4) for 00000138ECDC5EB0:
+	1	"m_propertyHandlers"
+	2	"CanShowTipButton"
+	3	"GM"
+	4	"ActivityModuleManager"
+locals (3) for 00000138ECDC5EB0:
+	0	self	1	21
+	1	rewardType	1	21
+	2	handler	3	21
+upvalues (1) for 00000138ECDC5EB0:
+	0	_ENV	0	0

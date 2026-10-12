@@ -15,7 +15,7 @@ analysis_data/logic_index/lua_functions.json
 apk_extract/
 tools/logic_vendor/
 analysis_output/logic_recovery/stage3/mkdocs_site/site/
-analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/
+analysis_output/logic_recovery/stage3/mkdocs_site/analysis_output/
 analysis_output/video_*.mp4
 analysis_output/*.npz
 _tmp_generator_decomp/
@@ -32,3 +32,7 @@ archived/
 *.png
 *.jpg
 luac.out
+
+# Documentation illustrations must accompany the published analysis.
+!analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/**/*.png
+!analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/**/*.jpg

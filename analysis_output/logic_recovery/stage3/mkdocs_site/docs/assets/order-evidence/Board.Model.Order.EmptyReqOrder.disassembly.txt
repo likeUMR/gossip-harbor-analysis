@@ -1,0 +1,456 @@
+
+main <EmptyReqOrder.lua:0,0> (42 instructions at 000002B721D4EFD0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 16 constants, 11 functions
+	1	[2]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[2]	NEWTABLE 	1 0 0
+	3	[2]	GETTABUP 	2 0 -3	; _ENV "MainOrder"
+	4	[2]	CALL     	0 3 2
+	5	[2]	SETTABUP 	0 -1 0	; _ENV "EmptyReqOrder"
+	6	[3]	GETTABUP 	0 0 -1	; _ENV "EmptyReqOrder"
+	7	[3]	GETTABUP 	1 0 -1	; _ENV "EmptyReqOrder"
+	8	[3]	SETTABLE 	0 -4 1	; "__index" -
+	9	[18]	GETTABUP 	0 0 -1	; _ENV "EmptyReqOrder"
+	10	[22]	CLOSURE  	1 0	; 000002B721D4F380
+	11	[18]	SETTABLE 	0 -5 1	; "Create" -
+	12	[24]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	13	[27]	CLOSURE  	1 1	; 000002B721D517C0
+	14	[24]	SETTABLE 	0 -7 1	; "Init" -
+	15	[29]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	16	[31]	CLOSURE  	1 2	; 000002B721D51950
+	17	[29]	SETTABLE 	0 -8 1	; "_SetState" -
+	18	[33]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	19	[38]	CLOSURE  	1 3	; 000002B721D519D0
+	20	[33]	SETTABLE 	0 -9 1	; "CanDeliver" -
+	21	[41]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	22	[60]	CLOSURE  	1 4	; 000002B721D51AB0
+	23	[41]	SETTABLE 	0 -10 1	; "TryRefreshMyRequirements" -
+	24	[63]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	25	[69]	CLOSURE  	1 5	; 000002B721D53D90
+	26	[63]	SETTABLE 	0 -11 1	; "GetRewards" -
+	27	[71]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	28	[77]	CLOSURE  	1 6	; 000002B721D53E90
+	29	[71]	SETTABLE 	0 -12 1	; "GetBuffRewards" -
+	30	[79]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	31	[85]	CLOSURE  	1 7	; 000002B721D53F10
+	32	[79]	SETTABLE 	0 -13 1	; "GetCookingFrenzyConfig" -
+	33	[88]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	34	[94]	CLOSURE  	1 8	; 000002B721D53F90
+	35	[88]	SETTABLE 	0 -14 1	; "GetScore" -
+	36	[96]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	37	[102]	CLOSURE  	1 9	; 000002B721D54080
+	38	[96]	SETTABLE 	0 -15 1	; "GetDiffScore" -
+	39	[104]	GETTABUP 	0 0 -6	; _ENV "EmptyReqOrder"
+	40	[110]	CLOSURE  	1 10	; 000002B721D54170
+	41	[104]	SETTABLE 	0 -16 1	; "GetTestDiffScore" -
+	42	[110]	RETURN   	0 1
+constants (16) for 000002B721D4EFD0:
+	1	"EmptyReqOrder"
+	2	"setmetatable"
+	3	"MainOrder"
+	4	"__index"
+	5	"Create"
+	6	"EmptyReqOrder"
+	7	"Init"
+	8	"_SetState"
+	9	"CanDeliver"
+	10	"TryRefreshMyRequirements"
+	11	"GetRewards"
+	12	"GetBuffRewards"
+	13	"GetCookingFrenzyConfig"
+	14	"GetScore"
+	15	"GetDiffScore"
+	16	"GetTestDiffScore"
+locals (0) for 000002B721D4EFD0:
+upvalues (1) for 000002B721D4EFD0:
+	0	_ENV	1	0
+
+function <EmptyReqOrder.lua:18,22> (17 instructions at 000002B721D4F380)
+9 params, 21 slots, 1 upvalue, 10 locals, 3 constants, 0 functions
+	1	[19]	GETTABUP 	9 0 -1	; _ENV "setmetatable"
+	2	[19]	NEWTABLE 	10 0 0
+	3	[19]	GETTABUP 	11 0 -2	; _ENV "EmptyReqOrder"
+	4	[19]	CALL     	9 3 2
+	5	[20]	SELF     	10 9 -3	; "Init"
+	6	[20]	MOVE     	12 0
+	7	[20]	MOVE     	13 1
+	8	[20]	MOVE     	14 2
+	9	[20]	MOVE     	15 3
+	10	[20]	MOVE     	16 4
+	11	[20]	MOVE     	17 5
+	12	[20]	MOVE     	18 6
+	13	[20]	MOVE     	19 7
+	14	[20]	MOVE     	20 8
+	15	[20]	CALL     	10 11 1
+	16	[21]	RETURN   	9 2
+	17	[22]	RETURN   	0 1
+constants (3) for 000002B721D4F380:
+	1	"setmetatable"
+	2	"EmptyReqOrder"
+	3	"Init"
+locals (10) for 000002B721D4F380:
+	0	orderModel	1	18
+	1	slot	1	18
+	2	id	1	18
+	3	requirements	1	18
+	4	innerType	1	18
+	5	avatarId	1	18
+	6	bIsLukcy	1	18
+	7	bIsBaseline	1	18
+	8	diffRange	1	18
+	9	order	5	18
+upvalues (1) for 000002B721D4F380:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:24,27> (18 instructions at 000002B721D517C0)
+10 params, 21 slots, 1 upvalue, 10 locals, 5 constants, 0 functions
+	1	[25]	GETTABUP 	10 0 -1	; _ENV "MainOrder"
+	2	[25]	GETTABLE 	10 10 -2	; "Init"
+	3	[25]	MOVE     	11 0
+	4	[25]	MOVE     	12 1
+	5	[25]	MOVE     	13 2
+	6	[25]	MOVE     	14 3
+	7	[25]	MOVE     	15 4
+	8	[25]	MOVE     	16 5
+	9	[25]	MOVE     	17 6
+	10	[25]	MOVE     	18 7
+	11	[25]	MOVE     	19 8
+	12	[25]	MOVE     	20 9
+	13	[25]	CALL     	10 11 1
+	14	[26]	SELF     	10 0 -3	; "_SetState"
+	15	[26]	GETTABUP 	12 0 -4	; _ENV "OrderState"
+	16	[26]	GETTABLE 	12 12 -5	; "Dormant"
+	17	[26]	CALL     	10 3 1
+	18	[27]	RETURN   	0 1
+constants (5) for 000002B721D517C0:
+	1	"MainOrder"
+	2	"Init"
+	3	"_SetState"
+	4	"OrderState"
+	5	"Dormant"
+locals (10) for 000002B721D517C0:
+	0	self	1	19
+	1	orderModel	1	19
+	2	slot	1	19
+	3	id	1	19
+	4	requirements	1	19
+	5	innerType	1	19
+	6	avatarId	1	19
+	7	bIsLukcy	1	19
+	8	bIsBaseline	1	19
+	9	diffRange	1	19
+upvalues (1) for 000002B721D517C0:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:29,31> (6 instructions at 000002B721D51950)
+2 params, 5 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[30]	GETTABUP 	2 0 -1	; _ENV "MainOrder"
+	2	[30]	GETTABLE 	2 2 -2	; "_SetState"
+	3	[30]	MOVE     	3 0
+	4	[30]	MOVE     	4 1
+	5	[30]	CALL     	2 3 1
+	6	[31]	RETURN   	0 1
+constants (2) for 000002B721D51950:
+	1	"MainOrder"
+	2	"_SetState"
+locals (2) for 000002B721D51950:
+	0	self	1	7
+	1	state	1	7
+upvalues (1) for 000002B721D51950:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:33,38> (14 instructions at 000002B721D519D0)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[34]	GETTABLE 	2 0 -1	; "m_state"
+	2	[34]	GETTABUP 	3 0 -2	; _ENV "OrderState"
+	3	[34]	GETTABLE 	3 3 -3	; "Dormant"
+	4	[34]	EQ       	0 2 3
+	5	[34]	JMP      	0 2	; to 8
+	6	[35]	LOADBOOL 	2 0 0
+	7	[35]	RETURN   	2 2
+	8	[37]	GETTABUP 	2 0 -4	; _ENV "MainOrder"
+	9	[37]	GETTABLE 	2 2 -5	; "CanDeliver"
+	10	[37]	MOVE     	3 0
+	11	[37]	MOVE     	4 1
+	12	[37]	TAILCALL 	2 3 0
+	13	[37]	RETURN   	2 0
+	14	[38]	RETURN   	0 1
+constants (5) for 000002B721D519D0:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	"MainOrder"
+	5	"CanDeliver"
+locals (2) for 000002B721D519D0:
+	0	self	1	15
+	1	codeCountMap	1	15
+upvalues (1) for 000002B721D519D0:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:41,60> (64 instructions at 000002B721D51AB0)
+2 params, 9 slots, 1 upvalue, 6 locals, 27 constants, 0 functions
+	1	[42]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[42]	GETTABLE 	2 2 -2	; "MainBoardModel"
+	3	[42]	SELF     	2 2 -3	; "GetOrderModel"
+	4	[42]	GETTABUP 	4 0 -4	; _ENV "OrderModelType"
+	5	[42]	GETTABLE 	4 4 -5	; "Slot"
+	6	[42]	CALL     	2 3 2
+	7	[43]	GETTABUP 	3 0 -6	; _ENV "RandomOrderHelper"
+	8	[43]	GETTABLE 	3 3 -7	; "CreateNormalRandomOrder"
+	9	[43]	MOVE     	4 2
+	10	[43]	GETTABLE 	5 0 -8	; "m_slot"
+	11	[43]	GETTABLE 	6 0 -9	; "m_innerType"
+	12	[43]	GETTABLE 	7 0 -10	; "m_avatarId"
+	13	[43]	CALL     	3 5 2
+	14	[44]	GETTABUP 	4 0 -11	; _ENV "GameConfig"
+	15	[44]	GETTABLE 	4 4 -12	; "IsTestMode"
+	16	[44]	CALL     	4 1 2
+	17	[44]	TEST     	4 0
+	18	[44]	JMP      	0 5	; to 24
+	19	[45]	GETTABUP 	4 0 -1	; _ENV "GM"
+	20	[45]	GETTABLE 	4 4 -13	; "TestModel"
+	21	[45]	SELF     	4 4 -14	; "ShowTestOrderLog"
+	22	[45]	MOVE     	6 3
+	23	[45]	CALL     	4 3 1
+	24	[47]	TEST     	3 0
+	25	[47]	JMP      	0 17	; to 43
+	26	[48]	SELF     	4 3 -15	; "GetRequirements"
+	27	[48]	CALL     	4 2 2
+	28	[49]	GETTABUP 	5 0 -16	; _ENV "Table"
+	29	[49]	GETTABLE 	5 5 -17	; "IsEmpty"
+	30	[49]	MOVE     	6 4
+	31	[49]	CALL     	5 2 2
+	32	[49]	TEST     	5 1
+	33	[49]	JMP      	0 30	; to 64
+	34	[50]	SELF     	5 2 -18	; "UpdateRequirements"
+	35	[50]	GETTABLE 	7 0 -8	; "m_slot"
+	36	[50]	MOVE     	8 4
+	37	[50]	CALL     	5 4 1
+	38	[51]	SELF     	5 2 -19	; "_LogOrderAction"
+	39	[51]	MOVE     	7 0
+	40	[51]	LOADK    	8 -20	; "refresh"
+	41	[51]	CALL     	5 4 1
+	42	[52]	JMP      	0 21	; to 64
+	43	[55]	TESTSET  	4 1 1
+	44	[55]	JMP      	0 4	; to 49
+	45	[55]	NEWTABLE 	4 1 0
+	46	[55]	GETTABUP 	5 0 -21	; _ENV "ItemType"
+	47	[55]	GETTABLE 	5 5 -22	; "Flour12"
+	48	[55]	SETLIST  	4 1 1	; 1
+	49	[56]	SELF     	5 2 -18	; "UpdateRequirements"
+	50	[56]	GETTABLE 	7 0 -8	; "m_slot"
+	51	[56]	MOVE     	8 4
+	52	[56]	CALL     	5 4 1
+	53	[57]	SELF     	5 2 -19	; "_LogOrderAction"
+	54	[57]	MOVE     	7 0
+	55	[57]	LOADK    	8 -20	; "refresh"
+	56	[57]	CALL     	5 4 1
+	57	[58]	GETTABUP 	5 0 -1	; _ENV "GM"
+	58	[58]	GETTABLE 	5 5 -23	; "BIManager"
+	59	[58]	SELF     	5 5 -24	; "LogErrorInfo"
+	60	[58]	GETTABUP 	7 0 -25	; _ENV "EBIType"
+	61	[58]	GETTABLE 	7 7 -26	; "EmptyReqOrderNoUpdateReqs"
+	62	[58]	LOADK    	8 -27	; "\230\178\161\230\137\190\229\136\176\228\187\187\228\189\149\229\143\175\231\148\168\230\163\139\229\173\144\239\188\140\228\189\191\231\148\168\229\133\156\229\186\149\230\163\139\229\173\144"
+	63	[58]	CALL     	5 4 1
+	64	[60]	RETURN   	0 1
+constants (27) for 000002B721D51AB0:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"GetOrderModel"
+	4	"OrderModelType"
+	5	"Slot"
+	6	"RandomOrderHelper"
+	7	"CreateNormalRandomOrder"
+	8	"m_slot"
+	9	"m_innerType"
+	10	"m_avatarId"
+	11	"GameConfig"
+	12	"IsTestMode"
+	13	"TestModel"
+	14	"ShowTestOrderLog"
+	15	"GetRequirements"
+	16	"Table"
+	17	"IsEmpty"
+	18	"UpdateRequirements"
+	19	"_LogOrderAction"
+	20	"refresh"
+	21	"ItemType"
+	22	"Flour12"
+	23	"BIManager"
+	24	"LogErrorInfo"
+	25	"EBIType"
+	26	"EmptyReqOrderNoUpdateReqs"
+	27	"\230\178\161\230\137\190\229\136\176\228\187\187\228\189\149\229\143\175\231\148\168\230\163\139\229\173\144\239\188\140\228\189\191\231\148\168\229\133\156\229\186\149\230\163\139\229\173\144"
+locals (6) for 000002B721D51AB0:
+	0	self	1	65
+	1	defaultReq	1	65
+	2	mainOrderModel	7	65
+	3	tempOrder	14	65
+	4	req	28	42
+	5	req	49	64
+upvalues (1) for 000002B721D51AB0:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:63,69> (14 instructions at 000002B721D53D90)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[64]	GETTABLE 	1 0 -1	; "m_state"
+	2	[64]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[64]	GETTABLE 	2 2 -3	; "Dormant"
+	4	[64]	EQ       	0 1 2
+	5	[64]	JMP      	0 3	; to 9
+	6	[65]	GETTABUP 	1 0 -4	; _ENV "Table"
+	7	[65]	GETTABLE 	1 1 -5	; "Empty"
+	8	[65]	RETURN   	1 2
+	9	[68]	GETTABUP 	1 0 -6	; _ENV "MainOrder"
+	10	[68]	GETTABLE 	1 1 -7	; "GetRewards"
+	11	[68]	MOVE     	2 0
+	12	[68]	TAILCALL 	1 2 0
+	13	[68]	RETURN   	1 0
+	14	[69]	RETURN   	0 1
+constants (7) for 000002B721D53D90:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	"Table"
+	5	"Empty"
+	6	"MainOrder"
+	7	"GetRewards"
+locals (1) for 000002B721D53D90:
+	0	self	1	15
+upvalues (1) for 000002B721D53D90:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:71,77> (13 instructions at 000002B721D53E90)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[72]	GETTABLE 	1 0 -1	; "m_state"
+	2	[72]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[72]	GETTABLE 	2 2 -3	; "Dormant"
+	4	[72]	EQ       	0 1 2
+	5	[72]	JMP      	0 2	; to 8
+	6	[73]	LOADNIL  	1 0
+	7	[73]	RETURN   	1 2
+	8	[76]	GETTABUP 	1 0 -4	; _ENV "MainOrder"
+	9	[76]	GETTABLE 	1 1 -5	; "GetBuffRewards"
+	10	[76]	MOVE     	2 0
+	11	[76]	TAILCALL 	1 2 0
+	12	[76]	RETURN   	1 0
+	13	[77]	RETURN   	0 1
+constants (5) for 000002B721D53E90:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	"MainOrder"
+	5	"GetBuffRewards"
+locals (1) for 000002B721D53E90:
+	0	self	1	14
+upvalues (1) for 000002B721D53E90:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:79,85> (13 instructions at 000002B721D53F10)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[80]	GETTABLE 	1 0 -1	; "m_state"
+	2	[80]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[80]	GETTABLE 	2 2 -3	; "Dormant"
+	4	[80]	EQ       	0 1 2
+	5	[80]	JMP      	0 2	; to 8
+	6	[81]	LOADNIL  	1 0
+	7	[81]	RETURN   	1 2
+	8	[84]	GETTABUP 	1 0 -4	; _ENV "MainOrder"
+	9	[84]	GETTABLE 	1 1 -5	; "GetCookingFrenzyConfig"
+	10	[84]	MOVE     	2 0
+	11	[84]	TAILCALL 	1 2 0
+	12	[84]	RETURN   	1 0
+	13	[85]	RETURN   	0 1
+constants (5) for 000002B721D53F10:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	"MainOrder"
+	5	"GetCookingFrenzyConfig"
+locals (1) for 000002B721D53F10:
+	0	self	1	14
+upvalues (1) for 000002B721D53F10:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:88,94> (14 instructions at 000002B721D53F90)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[89]	GETTABLE 	2 0 -1	; "m_state"
+	2	[89]	GETTABUP 	3 0 -2	; _ENV "OrderState"
+	3	[89]	GETTABLE 	3 3 -3	; "Dormant"
+	4	[89]	EQ       	0 2 3
+	5	[89]	JMP      	0 2	; to 8
+	6	[90]	LOADK    	2 -4	; 0
+	7	[90]	RETURN   	2 2
+	8	[93]	GETTABUP 	2 0 -5	; _ENV "MainOrder"
+	9	[93]	GETTABLE 	2 2 -6	; "GetScore"
+	10	[93]	MOVE     	3 0
+	11	[93]	MOVE     	4 1
+	12	[93]	TAILCALL 	2 3 0
+	13	[93]	RETURN   	2 0
+	14	[94]	RETURN   	0 1
+constants (6) for 000002B721D53F90:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	0
+	5	"MainOrder"
+	6	"GetScore"
+locals (2) for 000002B721D53F90:
+	0	self	1	15
+	1	includeGold	1	15
+upvalues (1) for 000002B721D53F90:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:96,102> (13 instructions at 000002B721D54080)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[97]	GETTABLE 	1 0 -1	; "m_state"
+	2	[97]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[97]	GETTABLE 	2 2 -3	; "Dormant"
+	4	[97]	EQ       	0 1 2
+	5	[97]	JMP      	0 2	; to 8
+	6	[98]	LOADK    	1 -4	; 0
+	7	[98]	RETURN   	1 2
+	8	[101]	GETTABUP 	1 0 -5	; _ENV "MainOrder"
+	9	[101]	GETTABLE 	1 1 -6	; "GetDiffScore"
+	10	[101]	MOVE     	2 0
+	11	[101]	TAILCALL 	1 2 0
+	12	[101]	RETURN   	1 0
+	13	[102]	RETURN   	0 1
+constants (6) for 000002B721D54080:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	0
+	5	"MainOrder"
+	6	"GetDiffScore"
+locals (1) for 000002B721D54080:
+	0	self	1	14
+upvalues (1) for 000002B721D54080:
+	0	_ENV	0	0
+
+function <EmptyReqOrder.lua:104,110> (14 instructions at 000002B721D54170)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[105]	GETTABLE 	1 0 -1	; "m_state"
+	2	[105]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[105]	GETTABLE 	2 2 -3	; "Dormant"
+	4	[105]	EQ       	0 1 2
+	5	[105]	JMP      	0 3	; to 9
+	6	[106]	LOADK    	1 -4	; 0
+	7	[106]	LOADK    	2 -4	; 0
+	8	[106]	RETURN   	1 3
+	9	[109]	GETTABUP 	1 0 -5	; _ENV "MainOrder"
+	10	[109]	GETTABLE 	1 1 -6	; "GetTestDiffScore"
+	11	[109]	MOVE     	2 0
+	12	[109]	TAILCALL 	1 2 0
+	13	[109]	RETURN   	1 0
+	14	[110]	RETURN   	0 1
+constants (6) for 000002B721D54170:
+	1	"m_state"
+	2	"OrderState"
+	3	"Dormant"
+	4	0
+	5	"MainOrder"
+	6	"GetTestDiffScore"
+locals (1) for 000002B721D54170:
+	0	self	1	15
+upvalues (1) for 000002B721D54170:
+	0	_ENV	0	0

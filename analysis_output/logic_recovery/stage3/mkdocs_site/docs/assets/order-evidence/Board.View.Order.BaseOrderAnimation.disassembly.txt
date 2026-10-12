@@ -1,0 +1,304 @@
+
+main <BaseOrderAnimation.lua:0,0> (30 instructions at 000002044EABF000)
+0+ params, 2 slots, 1 upvalue, 0 locals, 10 constants, 8 functions
+	1	[2]	NEWTABLE 	0 0 0
+	2	[2]	SETTABUP 	0 -1 0	; _ENV "BaseOrderAnimation"
+	3	[3]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	4	[3]	GETTABUP 	1 0 -1	; _ENV "BaseOrderAnimation"
+	5	[3]	SETTABLE 	0 -2 1	; "__index" -
+	6	[5]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	7	[13]	CLOSURE  	1 0	; 000002044EABF360
+	8	[5]	SETTABLE 	0 -3 1	; "Init" -
+	9	[16]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	10	[22]	CLOSURE  	1 1	; 000002044EAC1740
+	11	[16]	SETTABLE 	0 -4 1	; "SetTransparent" -
+	12	[24]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	13	[27]	CLOSURE  	1 2	; 000002044EAC17C0
+	14	[24]	SETTABLE 	0 -5 1	; "ClearTracks" -
+	15	[30]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	16	[51]	CLOSURE  	1 3	; 000002044EAC18A0
+	17	[30]	SETTABLE 	0 -6 1	; "SetAnimation" -
+	18	[53]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	19	[58]	CLOSURE  	1 4	; 000002044EAC1BB0
+	20	[53]	SETTABLE 	0 -7 1	; "_SetAnimation" -
+	21	[60]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	22	[63]	CLOSURE  	1 5	; 000002044EAC1CC0
+	23	[60]	SETTABLE 	0 -8 1	; "_AddRepeatAnimation" -
+	24	[65]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	25	[68]	CLOSURE  	1 6	; 000002044EAC1DA0
+	26	[65]	SETTABLE 	0 -9 1	; "_AddNoRepeatAnimation" -
+	27	[70]	GETTABUP 	0 0 -1	; _ENV "BaseOrderAnimation"
+	28	[73]	CLOSURE  	1 7	; 000002044EAC2630
+	29	[70]	SETTABLE 	0 -10 1	; "_GetAnimationName" -
+	30	[73]	RETURN   	0 1
+constants (10) for 000002044EABF000:
+	1	"BaseOrderAnimation"
+	2	"__index"
+	3	"Init"
+	4	"SetTransparent"
+	5	"ClearTracks"
+	6	"SetAnimation"
+	7	"_SetAnimation"
+	8	"_AddRepeatAnimation"
+	9	"_AddNoRepeatAnimation"
+	10	"_GetAnimationName"
+locals (0) for 000002044EABF000:
+upvalues (1) for 000002044EABF000:
+	0	_ENV	1	0
+
+function <BaseOrderAnimation.lua:5,13> (11 instructions at 000002044EABF360)
+2 params, 5 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[6]	SETTABLE 	0 -1 1	; "m_name" -
+	2	[7]	SETTABLE 	0 -2 -3	; "m_state" nil
+	3	[9]	GETTABLE 	2 0 -4	; "m_bAniInit"
+	4	[9]	TEST     	2 1
+	5	[9]	JMP      	0 5	; to 11
+	6	[10]	GETTABLE 	2 0 -5	; "m_animation"
+	7	[10]	SELF     	2 2 -6	; "Initialize"
+	8	[10]	LOADBOOL 	4 0 0
+	9	[10]	CALL     	2 3 1
+	10	[11]	SETTABLE 	0 -4 -7	; "m_bAniInit" true
+	11	[13]	RETURN   	0 1
+constants (7) for 000002044EABF360:
+	1	"m_name"
+	2	"m_state"
+	3	nil
+	4	"m_bAniInit"
+	5	"m_animation"
+	6	"Initialize"
+	7	true
+locals (2) for 000002044EABF360:
+	0	self	1	12
+	1	name	1	12
+upvalues (0) for 000002044EABF360:
+
+function <BaseOrderAnimation.lua:16,22> (14 instructions at 000002044EAC1740)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[17]	TEST     	1 0
+	2	[17]	JMP      	0 6	; to 9
+	3	[18]	GETTABUP 	2 0 -1	; _ENV "UIUtil"
+	4	[18]	GETTABLE 	2 2 -2	; "SetAlpha"
+	5	[18]	GETTABLE 	3 0 -3	; "m_animation"
+	6	[18]	LOADK    	4 -4	; 0
+	7	[18]	CALL     	2 3 1
+	8	[18]	JMP      	0 5	; to 14
+	9	[20]	GETTABUP 	2 0 -1	; _ENV "UIUtil"
+	10	[20]	GETTABLE 	2 2 -2	; "SetAlpha"
+	11	[20]	GETTABLE 	3 0 -3	; "m_animation"
+	12	[20]	LOADK    	4 -5	; 1
+	13	[20]	CALL     	2 3 1
+	14	[22]	RETURN   	0 1
+constants (5) for 000002044EAC1740:
+	1	"UIUtil"
+	2	"SetAlpha"
+	3	"m_animation"
+	4	0
+	5	1
+locals (2) for 000002044EAC1740:
+	0	self	1	15
+	1	transparent	1	15
+upvalues (1) for 000002044EAC1740:
+	0	_ENV	0	0
+
+function <BaseOrderAnimation.lua:24,27> (9 instructions at 000002044EAC17C0)
+1 param, 3 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[25]	GETTABLE 	1 0 -1	; "m_animation"
+	2	[25]	GETTABLE 	1 1 -2	; "AnimationState"
+	3	[25]	SELF     	1 1 -3	; "ClearTracks"
+	4	[25]	CALL     	1 2 1
+	5	[26]	GETTABLE 	1 0 -1	; "m_animation"
+	6	[26]	GETTABLE 	1 1 -4	; "Skeleton"
+	7	[26]	SELF     	1 1 -5	; "SetToSetupPose"
+	8	[26]	CALL     	1 2 1
+	9	[27]	RETURN   	0 1
+constants (5) for 000002044EAC17C0:
+	1	"m_animation"
+	2	"AnimationState"
+	3	"ClearTracks"
+	4	"Skeleton"
+	5	"SetToSetupPose"
+locals (1) for 000002044EAC17C0:
+	0	self	1	10
+upvalues (0) for 000002044EAC17C0:
+
+function <BaseOrderAnimation.lua:30,51> (41 instructions at 000002044EAC18A0)
+3 params, 12 slots, 1 upvalue, 8 locals, 9 constants, 0 functions
+	1	[32]	GETTABLE 	3 0 -1	; "m_bAniInit"
+	2	[32]	TEST     	3 1
+	3	[32]	JMP      	0 5	; to 9
+	4	[33]	GETTABLE 	3 0 -2	; "m_animation"
+	5	[33]	SELF     	3 3 -3	; "Initialize"
+	6	[33]	LOADBOOL 	5 0 0
+	7	[33]	CALL     	3 3 1
+	8	[34]	SETTABLE 	0 -1 -4	; "m_bAniInit" true
+	9	[36]	GETTABLE 	3 0 -5	; "m_state"
+	10	[36]	EQ       	0 3 -6	; - nil
+	11	[36]	JMP      	0 8	; to 20
+	12	[37]	SELF     	3 0 -7	; "_SetAnimation"
+	13	[37]	MOVE     	5 1
+	14	[37]	LOADBOOL 	6 0 0
+	15	[37]	CALL     	3 4 1
+	16	[38]	SELF     	3 0 -8	; "_AddRepeatAnimation"
+	17	[38]	MOVE     	5 1
+	18	[38]	CALL     	3 3 1
+	19	[39]	RETURN   	0 1
+	20	[42]	GETTABUP 	3 0 -9	; _ENV "ipairs"
+	21	[42]	MOVE     	4 2
+	22	[42]	CALL     	3 2 4
+	23	[42]	JMP      	0 11	; to 35
+	24	[43]	GETTABLE 	8 0 -5	; "m_state"
+	25	[43]	EQ       	0 8 7
+	26	[43]	JMP      	0 8	; to 35
+	27	[44]	SELF     	8 0 -7	; "_SetAnimation"
+	28	[44]	MOVE     	10 1
+	29	[44]	LOADBOOL 	11 0 0
+	30	[44]	CALL     	8 4 1
+	31	[45]	SELF     	8 0 -8	; "_AddRepeatAnimation"
+	32	[45]	MOVE     	10 1
+	33	[45]	CALL     	8 3 1
+	34	[46]	RETURN   	0 1
+	35	[42]	TFORCALL 	3 2
+	36	[42]	TFORLOOP 	5 -13	; to 24
+	37	[50]	SELF     	3 0 -7	; "_SetAnimation"
+	38	[50]	MOVE     	5 1
+	39	[50]	LOADBOOL 	6 1 0
+	40	[50]	CALL     	3 4 1
+	41	[51]	RETURN   	0 1
+constants (9) for 000002044EAC18A0:
+	1	"m_bAniInit"
+	2	"m_animation"
+	3	"Initialize"
+	4	true
+	5	"m_state"
+	6	nil
+	7	"_SetAnimation"
+	8	"_AddRepeatAnimation"
+	9	"ipairs"
+locals (8) for 000002044EAC18A0:
+	0	self	1	42
+	1	shortName	1	42
+	2	backStates	1	42
+	3	(for generator)	23	37
+	4	(for state)	23	37
+	5	(for control)	23	37
+	6	_	24	35
+	7	state	24	35
+upvalues (1) for 000002044EAC18A0:
+	0	_ENV	0	0
+
+function <BaseOrderAnimation.lua:53,58> (17 instructions at 000002044EAC1BB0)
+3 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[54]	GETTABUP 	3 0 -1	; _ENV "UIUtil"
+	2	[54]	GETTABLE 	3 3 -2	; "SetAlpha"
+	3	[54]	GETTABLE 	4 0 -3	; "m_animation"
+	4	[54]	LOADK    	5 -4	; 1
+	5	[54]	CALL     	3 3 1
+	6	[56]	SELF     	3 0 -5	; "_GetAnimationName"
+	7	[56]	MOVE     	5 1
+	8	[56]	MOVE     	6 2
+	9	[56]	CALL     	3 4 2
+	10	[57]	GETTABLE 	4 0 -3	; "m_animation"
+	11	[57]	GETTABLE 	4 4 -6	; "AnimationState"
+	12	[57]	SELF     	4 4 -7	; "SetAnimation"
+	13	[57]	LOADK    	6 -8	; 0
+	14	[57]	MOVE     	7 3
+	15	[57]	MOVE     	8 2
+	16	[57]	CALL     	4 5 1
+	17	[58]	RETURN   	0 1
+constants (8) for 000002044EAC1BB0:
+	1	"UIUtil"
+	2	"SetAlpha"
+	3	"m_animation"
+	4	1
+	5	"_GetAnimationName"
+	6	"AnimationState"
+	7	"SetAnimation"
+	8	0
+locals (4) for 000002044EAC1BB0:
+	0	self	1	18
+	1	shortName	1	18
+	2	isRepeat	1	18
+	3	animationName	10	18
+upvalues (1) for 000002044EAC1BB0:
+	0	_ENV	0	0
+
+function <BaseOrderAnimation.lua:60,63> (13 instructions at 000002044EAC1CC0)
+2 params, 9 slots, 0 upvalues, 3 locals, 5 constants, 0 functions
+	1	[61]	SELF     	2 0 -1	; "_GetAnimationName"
+	2	[61]	MOVE     	4 1
+	3	[61]	LOADBOOL 	5 1 0
+	4	[61]	CALL     	2 4 2
+	5	[62]	GETTABLE 	3 0 -2	; "m_animation"
+	6	[62]	GETTABLE 	3 3 -3	; "AnimationState"
+	7	[62]	SELF     	3 3 -4	; "AddAnimation"
+	8	[62]	LOADK    	5 -5	; 0
+	9	[62]	MOVE     	6 2
+	10	[62]	LOADBOOL 	7 1 0
+	11	[62]	LOADK    	8 -5	; 0
+	12	[62]	CALL     	3 6 1
+	13	[63]	RETURN   	0 1
+constants (5) for 000002044EAC1CC0:
+	1	"_GetAnimationName"
+	2	"m_animation"
+	3	"AnimationState"
+	4	"AddAnimation"
+	5	0
+locals (3) for 000002044EAC1CC0:
+	0	self	1	14
+	1	shortName	1	14
+	2	animationName	5	14
+upvalues (0) for 000002044EAC1CC0:
+
+function <BaseOrderAnimation.lua:65,68> (13 instructions at 000002044EAC1DA0)
+2 params, 9 slots, 0 upvalues, 3 locals, 5 constants, 0 functions
+	1	[66]	SELF     	2 0 -1	; "_GetAnimationName"
+	2	[66]	MOVE     	4 1
+	3	[66]	LOADBOOL 	5 0 0
+	4	[66]	CALL     	2 4 2
+	5	[67]	GETTABLE 	3 0 -2	; "m_animation"
+	6	[67]	GETTABLE 	3 3 -3	; "AnimationState"
+	7	[67]	SELF     	3 3 -4	; "AddAnimation"
+	8	[67]	LOADK    	5 -5	; 0
+	9	[67]	MOVE     	6 2
+	10	[67]	LOADBOOL 	7 0 0
+	11	[67]	LOADK    	8 -5	; 0
+	12	[67]	CALL     	3 6 1
+	13	[68]	RETURN   	0 1
+constants (5) for 000002044EAC1DA0:
+	1	"_GetAnimationName"
+	2	"m_animation"
+	3	"AnimationState"
+	4	"AddAnimation"
+	5	0
+locals (3) for 000002044EAC1DA0:
+	0	self	1	14
+	1	shortName	1	14
+	2	animationName	5	14
+upvalues (0) for 000002044EAC1DA0:
+
+function <BaseOrderAnimation.lua:70,73> (13 instructions at 000002044EAC2630)
+3 params, 8 slots, 0 upvalues, 4 locals, 4 constants, 0 functions
+	1	[71]	TEST     	2 0
+	2	[71]	JMP      	0 3	; to 6
+	3	[71]	LOADK    	3 -1	; "_repeat"
+	4	[71]	TEST     	3 1
+	5	[71]	JMP      	0 1	; to 7
+	6	[71]	LOADK    	3 -2	; ""
+	7	[72]	GETTABLE 	4 0 -3	; "m_name"
+	8	[72]	LOADK    	5 -4	; "_"
+	9	[72]	MOVE     	6 1
+	10	[72]	MOVE     	7 3
+	11	[72]	CONCAT   	4 4 7
+	12	[72]	RETURN   	4 2
+	13	[73]	RETURN   	0 1
+constants (4) for 000002044EAC2630:
+	1	"_repeat"
+	2	""
+	3	"m_name"
+	4	"_"
+locals (4) for 000002044EAC2630:
+	0	self	1	14
+	1	shortName	1	14
+	2	isRepeat	1	14
+	3	postfix	7	14
+upvalues (0) for 000002044EAC2630:

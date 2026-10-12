@@ -68,7 +68,7 @@ Disco 支持当前母体时会排除 Lucky，见活动资格与执行优先级�
 ## 本逻辑使用的配表在哪里
 
 - [母体配置与包内变体](../state/model/detail.md#configuration-item-model)：配表文件/字段：`ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust`；ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
-- [Lucky 包内配置及活动变体](chance/load.md#configuration-lucky)：配表文件/字段：`LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell`；LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
+- [Lucky 包内配置及活动变体](chance/load.md#configuration-lucky)：配表文件/字段：`LuckyProduceConfig、LuckyProduceConfig_shell、LuckyProduceConfig_triple、LuckyProduceConfig_tripleshell、GeneratorBoostLuckyProduceConfig、GeneratorBoostLuckyProduceConfig_shell`；LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
 - [Generator Boost 母体替换配置](../overrides/activity/detail.md#configuration-generator-boost)：配表文件/字段：`GeneratorBoostItemModelConfig、GeneratorBoostItemModelConfig_shell`；GeneratorBoostActivityModel:GetItemModelConfig → ReloadItemModelConfig；按 Buff 选择 MoreLuckyProduce / ExtraProduce 并替换 ItemDataModel 中的母体配置。
 - [免费 Lucky 服务器字段](free/generate.md#configuration-free-lucky)：配表文件/字段：`服务器 luckyProduceConfig（energy_cost.range_entry、extra_lucky）`；LuckyProduceModel:_LoadOtherServerConfig 载入 luckyProduceConfig；_AddFreeLuckyProduceEnergyCostCount 读取 energy_cost.range_entry 与 extra_lucky。
 - [连续 Lucky 服务器字段](continuous/trigger.md#configuration-continuous-lucky)：配表文件/字段：`服务器 luckyProduceConfig（energy_cost.range_entry、triple_lucky_chance、double_lucky_chance）`；_CalculateLuckyProduceConfigIndex 按 energy_cost.range_entry 选段；_Try2TriggerContiLuckyProduce 直接读取 triple_lucky_chance / double_lucky_chance。

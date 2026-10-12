@@ -1,0 +1,3190 @@
+
+main <BaseOrderCell.lua:0,0> (138 instructions at 000002984230EED0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 46 constants, 43 functions
+	1	[7]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[7]	NEWTABLE 	1 0 0
+	3	[7]	GETTABUP 	2 0 -3	; _ENV "AvatarCell"
+	4	[7]	CALL     	0 3 2
+	5	[7]	SETTABUP 	0 -1 0	; _ENV "BaseOrderCell"
+	6	[8]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	7	[8]	GETTABUP 	1 0 -1	; _ENV "BaseOrderCell"
+	8	[8]	SETTABLE 	0 -4 1	; "__index" -
+	9	[12]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	10	[14]	CLOSURE  	1 0	; 000002984230EF50
+	11	[12]	SETTABLE 	0 -5 1	; "GetDisplayRewards" -
+	12	[17]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	13	[19]	CLOSURE  	1 1	; 0000029842311C10
+	14	[17]	SETTABLE 	0 -6 1	; "GetDisplayTray" -
+	15	[22]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	16	[23]	CLOSURE  	1 2	; 0000029842311C90
+	17	[22]	SETTABLE 	0 -7 1	; "GetTestInfoStr" -
+	18	[26]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	19	[28]	CLOSURE  	1 3	; 0000029842311D10
+	20	[26]	SETTABLE 	0 -8 1	; "GetDeliverAudioEffectName" -
+	21	[31]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	22	[32]	CLOSURE  	1 4	; 0000029842311D90
+	23	[31]	SETTABLE 	0 -9 1	; "OnRewardCellInitFinish" -
+	24	[35]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	25	[49]	CLOSURE  	1 5	; 0000029842311E10
+	26	[35]	SETTABLE 	0 -10 1	; "OnGoButtonClicked" -
+	27	[52]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	28	[54]	CLOSURE  	1 6	; 0000029842312900
+	29	[52]	SETTABLE 	0 -11 1	; "OnAvatarClick" -
+	30	[57]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	31	[58]	CLOSURE  	1 7	; 0000029842312980
+	32	[57]	SETTABLE 	0 -12 1	; "GetCellType" -
+	33	[64]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	34	[95]	CLOSURE  	1 8	; 0000029842312A00
+	35	[64]	SETTABLE 	0 -13 1	; "Init" -
+	36	[97]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	37	[118]	CLOSURE  	1 9	; 000002984230EA20
+	38	[97]	SETTABLE 	0 -14 1	; "_UpdateAvatar" -
+	39	[121]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	40	[146]	CLOSURE  	1 10	; 0000029842314530
+	41	[121]	SETTABLE 	0 -15 1	; "_UpdateAvatarByName" -
+	42	[149]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	43	[174]	CLOSURE  	1 11	; 00000298423145B0
+	44	[149]	SETTABLE 	0 -15 1	; "_UpdateAvatarByName" -
+	45	[176]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	46	[198]	CLOSURE  	1 12	; 0000029842314230
+	47	[176]	SETTABLE 	0 -16 1	; "_UpdateRequirementIcons" -
+	48	[200]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	49	[233]	CLOSURE  	1 13	; 0000029842313EB0
+	50	[200]	SETTABLE 	0 -17 1	; "_UpdateReward" -
+	51	[237]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	52	[276]	CLOSURE  	1 14	; 00000298423142B0
+	53	[237]	SETTABLE 	0 -18 1	; "_SplitRewards" -
+	54	[279]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	55	[299]	CLOSURE  	1 15	; 0000029842313F30
+	56	[279]	SETTABLE 	0 -19 1	; "_UpdateActivitySpecialRewardView" -
+	57	[301]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	58	[303]	CLOSURE  	1 16	; 0000029842313830
+	59	[301]	SETTABLE 	0 -20 1	; "_AddSpecialRewards" -
+	60	[305]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	61	[341]	CLOSURE  	1 17	; 0000029842313FB0
+	62	[305]	SETTABLE 	0 -21 1	; "_AddOneSpecialReward" -
+	63	[344]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	64	[350]	CLOSURE  	1 18	; 0000029842314330
+	65	[344]	SETTABLE 	0 -22 1	; "GetSpecialRewardByKey" -
+	66	[352]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	67	[384]	CLOSURE  	1 19	; 0000029842313DB0
+	68	[352]	SETTABLE 	0 -23 1	; "_UpdateServeButtonPosition" -
+	69	[386]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	70	[389]	CLOSURE  	1 20	; 00000298423138B0
+	71	[386]	SETTABLE 	0 -24 1	; "_UpdateTray" -
+	72	[391]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	73	[513]	CLOSURE  	1 21	; 0000029842313E30
+	74	[391]	SETTABLE 	0 -25 1	; "_OnShowItemTestInfoChanged" -
+	75	[515]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	76	[534]	CLOSURE  	1 22	; 0000029842314630
+	77	[515]	SETTABLE 	0 -26 1	; "OnTestAddItemClicked" -
+	78	[536]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	79	[573]	CLOSURE  	1 23	; 0000029842313B30
+	80	[536]	SETTABLE 	0 -27 1	; "_OnTestFinishOrder" -
+	81	[577]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	82	[579]	CLOSURE  	1 24	; 0000029842313930
+	83	[577]	SETTABLE 	0 -28 1	; "OnDestroy" -
+	84	[582]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	85	[584]	CLOSURE  	1 25	; 00000298423143B0
+	86	[582]	SETTABLE 	0 -29 1	; "GetOrder" -
+	87	[586]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	88	[588]	CLOSURE  	1 26	; 0000029842314430
+	89	[586]	SETTABLE 	0 -30 1	; "GetIconArea" -
+	90	[592]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	91	[594]	CLOSURE  	1 27	; 00000298423144B0
+	92	[592]	SETTABLE 	0 -31 1	; "GetIcon" -
+	93	[596]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	94	[598]	CLOSURE  	1 28	; 00000298423139B0
+	95	[596]	SETTABLE 	0 -32 1	; "GetGoButton" -
+	96	[602]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	97	[606]	CLOSURE  	1 29	; 0000029842313A30
+	98	[602]	SETTABLE 	0 -33 1	; "SetOrderIconClickEnabled" -
+	99	[608]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	100	[610]	CLOSURE  	1 30	; 0000029842313C30
+	101	[608]	SETTABLE 	0 -34 1	; "SetGoButtonEnabled" -
+	102	[614]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	103	[640]	CLOSURE  	1 31	; 0000029842313D30
+	104	[614]	SETTABLE 	0 -35 1	; "CheckHaveFinshOrderInActivity" -
+	105	[642]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	106	[675]	CLOSURE  	1 32	; 00000298423201E0
+	107	[642]	SETTABLE 	0 -36 1	; "OnOrderStateChanged" -
+	108	[677]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	109	[679]	CLOSURE  	1 33	; 0000029842320860
+	110	[677]	SETTABLE 	0 -37 1	; "ScrollToOrder" -
+	111	[681]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	112	[685]	CLOSURE  	1 34	; 00000298423204E0
+	113	[681]	SETTABLE 	0 -38 1	; "ScrollToOrderIfNotInView" -
+	114	[688]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	115	[708]	CLOSURE  	1 35	; 0000029842322060
+	116	[688]	SETTABLE 	0 -39 1	; "PlayEnterAnimation" -
+	117	[710]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	118	[718]	CLOSURE  	1 36	; 0000029842320760
+	119	[710]	SETTABLE 	0 -40 1	; "PlayTrayAnimation" -
+	120	[720]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	121	[729]	CLOSURE  	1 37	; 0000029842320EE0
+	122	[720]	SETTABLE 	0 -41 1	; "PlayTrayAnimationHide" -
+	123	[731]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	124	[777]	CLOSURE  	1 38	; 0000029842320D60
+	125	[731]	SETTABLE 	0 -42 1	; "PlayEnterBoardAnimation" -
+	126	[779]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	127	[803]	CLOSURE  	1 39	; 0000029842320B60
+	128	[779]	SETTABLE 	0 -43 1	; "PlayCoinEffect" -
+	129	[805]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	130	[810]	CLOSURE  	1 40	; 00000298423202E0
+	131	[805]	SETTABLE 	0 -44 1	; "PlayLeaveAnimation" -
+	132	[812]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	133	[814]	CLOSURE  	1 41	; 0000029842320BE0
+	134	[812]	SETTABLE 	0 -45 1	; "SetHandEffectActive" -
+	135	[816]	GETTABUP 	0 0 -1	; _ENV "BaseOrderCell"
+	136	[818]	CLOSURE  	1 42	; 0000029842320DE0
+	137	[816]	SETTABLE 	0 -46 1	; "HideTrayTrans" -
+	138	[818]	RETURN   	0 1
+constants (46) for 000002984230EED0:
+	1	"BaseOrderCell"
+	2	"setmetatable"
+	3	"AvatarCell"
+	4	"__index"
+	5	"GetDisplayRewards"
+	6	"GetDisplayTray"
+	7	"GetTestInfoStr"
+	8	"GetDeliverAudioEffectName"
+	9	"OnRewardCellInitFinish"
+	10	"OnGoButtonClicked"
+	11	"OnAvatarClick"
+	12	"GetCellType"
+	13	"Init"
+	14	"_UpdateAvatar"
+	15	"_UpdateAvatarByName"
+	16	"_UpdateRequirementIcons"
+	17	"_UpdateReward"
+	18	"_SplitRewards"
+	19	"_UpdateActivitySpecialRewardView"
+	20	"_AddSpecialRewards"
+	21	"_AddOneSpecialReward"
+	22	"GetSpecialRewardByKey"
+	23	"_UpdateServeButtonPosition"
+	24	"_UpdateTray"
+	25	"_OnShowItemTestInfoChanged"
+	26	"OnTestAddItemClicked"
+	27	"_OnTestFinishOrder"
+	28	"OnDestroy"
+	29	"GetOrder"
+	30	"GetIconArea"
+	31	"GetIcon"
+	32	"GetGoButton"
+	33	"SetOrderIconClickEnabled"
+	34	"SetGoButtonEnabled"
+	35	"CheckHaveFinshOrderInActivity"
+	36	"OnOrderStateChanged"
+	37	"ScrollToOrder"
+	38	"ScrollToOrderIfNotInView"
+	39	"PlayEnterAnimation"
+	40	"PlayTrayAnimation"
+	41	"PlayTrayAnimationHide"
+	42	"PlayEnterBoardAnimation"
+	43	"PlayCoinEffect"
+	44	"PlayLeaveAnimation"
+	45	"SetHandEffectActive"
+	46	"HideTrayTrans"
+locals (0) for 000002984230EED0:
+upvalues (1) for 000002984230EED0:
+	0	_ENV	1	0
+
+function <BaseOrderCell.lua:12,14> (8 instructions at 000002984230EF50)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[13]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[13]	GETTABLE 	1 1 -2	; "ShallowCopy"
+	3	[13]	GETTABLE 	2 0 -3	; "m_order"
+	4	[13]	SELF     	2 2 -4	; "GetRewards"
+	5	[13]	CALL     	2 2 0
+	6	[13]	TAILCALL 	1 0 0
+	7	[13]	RETURN   	1 0
+	8	[14]	RETURN   	0 1
+constants (4) for 000002984230EF50:
+	1	"Table"
+	2	"ShallowCopy"
+	3	"m_order"
+	4	"GetRewards"
+locals (1) for 000002984230EF50:
+	0	self	1	9
+upvalues (1) for 000002984230EF50:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:17,19> (4 instructions at 0000029842311C10)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[18]	GETTABUP 	1 0 -1	; _ENV "ImageFileConfigName"
+	2	[18]	GETTABLE 	1 1 -2	; "order_tray"
+	3	[18]	RETURN   	1 2
+	4	[19]	RETURN   	0 1
+constants (2) for 0000029842311C10:
+	1	"ImageFileConfigName"
+	2	"order_tray"
+locals (1) for 0000029842311C10:
+	0	self	1	5
+upvalues (1) for 0000029842311C10:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:22,23> (1 instruction at 0000029842311C90)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[23]	RETURN   	0 1
+constants (0) for 0000029842311C90:
+locals (1) for 0000029842311C90:
+	0	self	1	2
+upvalues (0) for 0000029842311C90:
+
+function <BaseOrderCell.lua:26,28> (4 instructions at 0000029842311D10)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[27]	GETTABUP 	1 0 -1	; _ENV "AudioFileConfigName"
+	2	[27]	GETTABLE 	1 1 -2	; "sfxOrderCompleteNew"
+	3	[27]	RETURN   	1 2
+	4	[28]	RETURN   	0 1
+constants (2) for 0000029842311D10:
+	1	"AudioFileConfigName"
+	2	"sfxOrderCompleteNew"
+locals (1) for 0000029842311D10:
+	0	self	1	5
+upvalues (1) for 0000029842311D10:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:31,32> (1 instruction at 0000029842311D90)
+3 params, 3 slots, 0 upvalues, 3 locals, 0 constants, 0 functions
+	1	[32]	RETURN   	0 1
+constants (0) for 0000029842311D90:
+locals (3) for 0000029842311D90:
+	0	self	1	2
+	1	cell	1	2
+	2	reward	1	2
+upvalues (0) for 0000029842311D90:
+
+function <BaseOrderCell.lua:35,49> (37 instructions at 0000029842311E10)
+1 param, 9 slots, 1 upvalue, 2 locals, 17 constants, 0 functions
+	1	[36]	GETTABLE 	1 0 -1	; "m_bGoButtonEnabled"
+	2	[36]	EQ       	0 1 -2	; - false
+	3	[36]	JMP      	0 1	; to 5
+	4	[37]	RETURN   	0 1
+	5	[40]	GETTABUP 	1 0 -3	; _ENV "GM"
+	6	[40]	GETTABLE 	1 1 -4	; "AudioModel"
+	7	[40]	SELF     	1 1 -5	; "PlayEffect"
+	8	[40]	LOADK    	3 -6	; "sfxOrderServe"
+	9	[40]	CALL     	1 3 1
+	10	[43]	GETTABLE 	1 0 -7	; "m_orderArea"
+	11	[43]	SELF     	1 1 -8	; "GetBoardView"
+	12	[43]	CALL     	1 2 2
+	13	[43]	SELF     	1 1 -9	; "GetModel"
+	14	[43]	CALL     	1 2 2
+	15	[44]	GETTABLE 	2 0 -10	; "m_order"
+	16	[44]	SELF     	2 2 -11	; "CanDeliver"
+	17	[44]	SELF     	4 1 -12	; "GetCodeCountMap"
+	18	[44]	LOADBOOL 	6 1 0
+	19	[44]	LOADBOOL 	7 0 0
+	20	[44]	LOADBOOL 	8 0 0
+	21	[44]	CALL     	4 5 0
+	22	[44]	CALL     	2 0 2
+	23	[44]	TEST     	2 0
+	24	[44]	JMP      	0 4	; to 29
+	25	[45]	SELF     	2 1 -13	; "FinishOrder"
+	26	[45]	GETTABLE 	4 0 -10	; "m_order"
+	27	[45]	CALL     	2 3 1
+	28	[45]	JMP      	0 8	; to 37
+	29	[47]	GETTABUP 	2 0 -3	; _ENV "GM"
+	30	[47]	GETTABLE 	2 2 -14	; "UIManager"
+	31	[47]	SELF     	2 2 -15	; "OpenView"
+	32	[47]	GETTABUP 	4 0 -16	; _ENV "UIPrefabConfigName"
+	33	[47]	GETTABLE 	4 4 -17	; "UseInventoryItemConfirmWindow"
+	34	[47]	MOVE     	5 1
+	35	[47]	GETTABLE 	6 0 -10	; "m_order"
+	36	[47]	CALL     	2 5 1
+	37	[49]	RETURN   	0 1
+constants (17) for 0000029842311E10:
+	1	"m_bGoButtonEnabled"
+	2	false
+	3	"GM"
+	4	"AudioModel"
+	5	"PlayEffect"
+	6	"sfxOrderServe"
+	7	"m_orderArea"
+	8	"GetBoardView"
+	9	"GetModel"
+	10	"m_order"
+	11	"CanDeliver"
+	12	"GetCodeCountMap"
+	13	"FinishOrder"
+	14	"UIManager"
+	15	"OpenView"
+	16	"UIPrefabConfigName"
+	17	"UseInventoryItemConfirmWindow"
+locals (2) for 0000029842311E10:
+	0	self	1	38
+	1	boardModel	15	38
+upvalues (1) for 0000029842311E10:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:52,54> (1 instruction at 0000029842312900)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[54]	RETURN   	0 1
+constants (0) for 0000029842312900:
+locals (1) for 0000029842312900:
+	0	self	1	2
+upvalues (0) for 0000029842312900:
+
+function <BaseOrderCell.lua:57,58> (1 instruction at 0000029842312980)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[58]	RETURN   	0 1
+constants (0) for 0000029842312980:
+locals (1) for 0000029842312980:
+	0	self	1	2
+upvalues (0) for 0000029842312980:
+
+function <BaseOrderCell.lua:64,95> (47 instructions at 0000029842312A00)
+3 params, 5 slots, 1 upvalue, 3 locals, 21 constants, 0 functions
+	1	[65]	SETTABLE 	0 -1 1	; "m_order" -
+	2	[66]	SETTABLE 	0 -2 2	; "m_orderArea" -
+	3	[69]	SELF     	3 0 -3	; "_UpdateAvatar"
+	4	[69]	CALL     	3 2 1
+	5	[72]	SELF     	3 0 -4	; "_UpdateRequirementIcons"
+	6	[72]	CALL     	3 2 1
+	7	[75]	SELF     	3 0 -5	; "_UpdateReward"
+	8	[75]	CALL     	3 2 1
+	9	[78]	SELF     	3 0 -6	; "_UpdateServeButtonPosition"
+	10	[78]	CALL     	3 2 1
+	11	[81]	SELF     	3 0 -7	; "_UpdateTray"
+	12	[81]	CALL     	3 2 1
+	13	[82]	GETTABLE 	3 0 -8	; "m_inited"
+	14	[82]	TEST     	3 1
+	15	[82]	JMP      	0 28	; to 44
+	16	[84]	GETTABLE 	3 0 -1	; "m_order"
+	17	[84]	SELF     	3 3 -10	; "GetState"
+	18	[84]	CALL     	3 2 2
+	19	[84]	GETTABUP 	4 0 -11	; _ENV "OrderState"
+	20	[84]	GETTABLE 	4 4 -12	; "CanDeliver"
+	21	[84]	EQ       	0 3 4
+	22	[84]	JMP      	0 11	; to 34
+	23	[85]	GETTABLE 	3 0 -1	; "m_order"
+	24	[85]	GETTABLE 	3 3 -13	; "GetInnerType"
+	25	[85]	EQ       	1 3 -14	; - nil
+	26	[85]	JMP      	0 7	; to 34
+	27	[85]	GETTABLE 	3 0 -1	; "m_order"
+	28	[85]	SELF     	3 3 -13	; "GetInnerType"
+	29	[85]	CALL     	3 2 2
+	30	[85]	GETTABUP 	4 0 -15	; _ENV "MainOrderType"
+	31	[85]	GETTABLE 	4 4 -16	; "BaselineOrder"
+	32	[85]	EQ       	0 3 4
+	33	[85]	JMP      	0 1	; to 35
+	34	[85]	LOADBOOL 	3 0 1
+	35	[85]	LOADBOOL 	3 1 0
+	36	[85]	SETTABLE 	0 -9 3	; "m_showDeliver" -
+	37	[86]	SELF     	3 0 -17	; "PlayEnterAnimation"
+	38	[86]	CALL     	3 2 1
+	39	[87]	GETTABLE 	3 0 -2	; "m_orderArea"
+	40	[87]	GETTABLE 	3 3 -18	; "isFirstEnterMain"
+	41	[87]	TEST     	3 1
+	42	[87]	JMP      	0 1	; to 44
+	43	[89]	SETTABLE 	0 -19 -20	; "m_firstShowDeliver" true
+	44	[93]	SELF     	3 0 -21	; "_OnShowItemTestInfoChanged"
+	45	[93]	CALL     	3 2 1
+	46	[94]	SETTABLE 	0 -8 -20	; "m_inited" true
+	47	[95]	RETURN   	0 1
+constants (21) for 0000029842312A00:
+	1	"m_order"
+	2	"m_orderArea"
+	3	"_UpdateAvatar"
+	4	"_UpdateRequirementIcons"
+	5	"_UpdateReward"
+	6	"_UpdateServeButtonPosition"
+	7	"_UpdateTray"
+	8	"m_inited"
+	9	"m_showDeliver"
+	10	"GetState"
+	11	"OrderState"
+	12	"CanDeliver"
+	13	"GetInnerType"
+	14	nil
+	15	"MainOrderType"
+	16	"BaselineOrder"
+	17	"PlayEnterAnimation"
+	18	"isFirstEnterMain"
+	19	"m_firstShowDeliver"
+	20	true
+	21	"_OnShowItemTestInfoChanged"
+locals (3) for 0000029842312A00:
+	0	self	1	48
+	1	order	1	48
+	2	orderArea	1	48
+upvalues (1) for 0000029842312A00:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:97,118> (33 instructions at 000002984230EA20)
+1 param, 8 slots, 1 upvalue, 2 locals, 18 constants, 1 function
+	1	[98]	GETTABLE 	1 0 -1	; "m_order"
+	2	[98]	SELF     	1 1 -2	; "GetAvatarName"
+	3	[98]	CALL     	1 2 2
+	4	[98]	LOADK    	2 -3	; "_order"
+	5	[98]	CONCAT   	1 1 2
+	6	[99]	GETTABLE 	2 0 -4	; "m_avatarName"
+	7	[99]	EQ       	1 1 2
+	8	[99]	JMP      	0 24	; to 33
+	9	[100]	GETTABLE 	2 0 -5	; "m_avatar"
+	10	[100]	EQ       	1 2 -6	; - nil
+	11	[100]	JMP      	0 6	; to 18
+	12	[101]	GETTABUP 	2 0 -7	; _ENV "AddressableLoader"
+	13	[101]	GETTABLE 	2 2 -8	; "Destroy"
+	14	[101]	GETTABLE 	3 0 -5	; "m_avatar"
+	15	[101]	GETTABLE 	3 3 -9	; "gameObject"
+	16	[101]	CALL     	2 2 1
+	17	[103]	SETTABLE 	0 -5 -6	; "m_avatar" nil
+	18	[106]	SETTABLE 	0 -4 1	; "m_avatarName" -
+	19	[107]	GETTABUP 	2 0 -10	; _ENV "GM"
+	20	[107]	GETTABLE 	2 2 -11	; "ResourceLoader"
+	21	[107]	SELF     	2 2 -12	; "LoadPrefab"
+	22	[107]	GETTABUP 	4 0 -10	; _ENV "GM"
+	23	[107]	GETTABLE 	4 4 -13	; "DataResource"
+	24	[107]	GETTABLE 	4 4 -14	; "UIPrefabConfig"
+	25	[107]	SELF     	4 4 -15	; "GetConfig"
+	26	[107]	MOVE     	6 1
+	27	[107]	CALL     	4 3 2
+	28	[108]	GETTABLE 	5 0 -16	; "m_avatarTransform"
+	29	[108]	GETTABUP 	6 0 -17	; _ENV "Vector3"
+	30	[108]	GETTABLE 	6 6 -18	; "zero"
+	31	[116]	CLOSURE  	7 0	; 000002984230EC60
+	32	[107]	CALL     	2 6 1
+	33	[118]	RETURN   	0 1
+constants (18) for 000002984230EA20:
+	1	"m_order"
+	2	"GetAvatarName"
+	3	"_order"
+	4	"m_avatarName"
+	5	"m_avatar"
+	6	nil
+	7	"AddressableLoader"
+	8	"Destroy"
+	9	"gameObject"
+	10	"GM"
+	11	"ResourceLoader"
+	12	"LoadPrefab"
+	13	"DataResource"
+	14	"UIPrefabConfig"
+	15	"GetConfig"
+	16	"m_avatarTransform"
+	17	"Vector3"
+	18	"zero"
+locals (2) for 000002984230EA20:
+	0	self	1	34
+	1	avatarName	6	34
+upvalues (1) for 000002984230EA20:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:108,116> (15 instructions at 000002984230EC60)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[109]	SELF     	1 0 -2	; "GetLuaTable"
+	2	[109]	CALL     	1 2 2
+	3	[109]	SETTABUP 	0 -1 1	; self "m_avatar"
+	4	[110]	GETTABUP 	1 0 -1	; self "m_avatar"
+	5	[110]	SELF     	1 1 -3	; "Init"
+	6	[110]	GETTABUP 	3 0 -4	; self "m_order"
+	7	[110]	CALL     	1 3 1
+	8	[112]	GETTABUP 	1 0 -5	; self "m_bAvatarUpdateStateAfterLoad"
+	9	[112]	TEST     	1 0
+	10	[112]	JMP      	0 4	; to 15
+	11	[113]	SETTABUP 	0 -5 -6	; self "m_bAvatarUpdateStateAfterLoad" nil
+	12	[114]	GETUPVAL 	1 0	; self
+	13	[114]	SELF     	1 1 -7	; "OnOrderStateChanged"
+	14	[114]	CALL     	1 2 1
+	15	[116]	RETURN   	0 1
+constants (7) for 000002984230EC60:
+	1	"m_avatar"
+	2	"GetLuaTable"
+	3	"Init"
+	4	"m_order"
+	5	"m_bAvatarUpdateStateAfterLoad"
+	6	nil
+	7	"OnOrderStateChanged"
+locals (1) for 000002984230EC60:
+	0	gameObject	1	16
+upvalues (1) for 000002984230EC60:
+	0	self	1	0
+
+function <BaseOrderCell.lua:121,146> (34 instructions at 0000029842314530)
+2 params, 9 slots, 1 upvalue, 3 locals, 18 constants, 2 functions
+	1	[122]	GETTABLE 	2 0 -1	; "m_order"
+	2	[124]	CLOSURE  	3 0	; 0000029842314130
+	3	[124]	SETTABLE 	2 -2 3	; "GetAvatarName" -
+	4	[126]	MOVE     	2 1
+	5	[126]	LOADK    	3 -3	; "_order"
+	6	[126]	CONCAT   	2 2 3
+	7	[127]	GETTABLE 	3 0 -4	; "m_avatarName"
+	8	[127]	EQ       	1 2 3
+	9	[127]	JMP      	0 24	; to 34
+	10	[128]	GETTABLE 	3 0 -5	; "m_avatar"
+	11	[128]	EQ       	1 3 -6	; - nil
+	12	[128]	JMP      	0 6	; to 19
+	13	[129]	GETTABUP 	3 0 -7	; _ENV "AddressableLoader"
+	14	[129]	GETTABLE 	3 3 -8	; "Destroy"
+	15	[129]	GETTABLE 	4 0 -5	; "m_avatar"
+	16	[129]	GETTABLE 	4 4 -9	; "gameObject"
+	17	[129]	CALL     	3 2 1
+	18	[131]	SETTABLE 	0 -5 -6	; "m_avatar" nil
+	19	[134]	SETTABLE 	0 -4 2	; "m_avatarName" -
+	20	[135]	GETTABUP 	3 0 -10	; _ENV "GM"
+	21	[135]	GETTABLE 	3 3 -11	; "ResourceLoader"
+	22	[135]	SELF     	3 3 -12	; "LoadPrefab"
+	23	[135]	GETTABUP 	5 0 -10	; _ENV "GM"
+	24	[135]	GETTABLE 	5 5 -13	; "DataResource"
+	25	[135]	GETTABLE 	5 5 -14	; "UIPrefabConfig"
+	26	[135]	SELF     	5 5 -15	; "GetConfig"
+	27	[135]	MOVE     	7 2
+	28	[135]	CALL     	5 3 2
+	29	[136]	GETTABLE 	6 0 -16	; "m_avatarTransform"
+	30	[136]	GETTABUP 	7 0 -17	; _ENV "Vector3"
+	31	[136]	GETTABLE 	7 7 -18	; "zero"
+	32	[144]	CLOSURE  	8 1	; 00000298423146B0
+	33	[135]	CALL     	3 6 1
+	34	[146]	RETURN   	0 1
+constants (18) for 0000029842314530:
+	1	"m_order"
+	2	"GetAvatarName"
+	3	"_order"
+	4	"m_avatarName"
+	5	"m_avatar"
+	6	nil
+	7	"AddressableLoader"
+	8	"Destroy"
+	9	"gameObject"
+	10	"GM"
+	11	"ResourceLoader"
+	12	"LoadPrefab"
+	13	"DataResource"
+	14	"UIPrefabConfig"
+	15	"GetConfig"
+	16	"m_avatarTransform"
+	17	"Vector3"
+	18	"zero"
+locals (3) for 0000029842314530:
+	0	self	1	35
+	1	name	1	35
+	2	avatarName	7	35
+upvalues (1) for 0000029842314530:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:122,124> (3 instructions at 0000029842314130)
+0 params, 2 slots, 1 upvalue, 0 locals, 0 constants, 0 functions
+	1	[123]	GETUPVAL 	0 0	; name
+	2	[123]	RETURN   	0 2
+	3	[124]	RETURN   	0 1
+constants (0) for 0000029842314130:
+locals (0) for 0000029842314130:
+upvalues (1) for 0000029842314130:
+	0	name	1	1
+
+function <BaseOrderCell.lua:136,144> (15 instructions at 00000298423146B0)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[137]	SELF     	1 0 -2	; "GetLuaTable"
+	2	[137]	CALL     	1 2 2
+	3	[137]	SETTABUP 	0 -1 1	; self "m_avatar"
+	4	[138]	GETTABUP 	1 0 -1	; self "m_avatar"
+	5	[138]	SELF     	1 1 -3	; "Init"
+	6	[138]	GETTABUP 	3 0 -4	; self "m_order"
+	7	[138]	CALL     	1 3 1
+	8	[140]	GETTABUP 	1 0 -5	; self "m_bAvatarUpdateStateAfterLoad"
+	9	[140]	TEST     	1 0
+	10	[140]	JMP      	0 4	; to 15
+	11	[141]	SETTABUP 	0 -5 -6	; self "m_bAvatarUpdateStateAfterLoad" nil
+	12	[142]	GETUPVAL 	1 0	; self
+	13	[142]	SELF     	1 1 -7	; "OnOrderStateChanged"
+	14	[142]	CALL     	1 2 1
+	15	[144]	RETURN   	0 1
+constants (7) for 00000298423146B0:
+	1	"m_avatar"
+	2	"GetLuaTable"
+	3	"Init"
+	4	"m_order"
+	5	"m_bAvatarUpdateStateAfterLoad"
+	6	nil
+	7	"OnOrderStateChanged"
+locals (1) for 00000298423146B0:
+	0	gameObject	1	16
+upvalues (1) for 00000298423146B0:
+	0	self	1	0
+
+function <BaseOrderCell.lua:149,174> (34 instructions at 00000298423145B0)
+2 params, 9 slots, 1 upvalue, 3 locals, 18 constants, 2 functions
+	1	[150]	GETTABLE 	2 0 -1	; "m_order"
+	2	[152]	CLOSURE  	3 0	; 0000029842313CB0
+	3	[152]	SETTABLE 	2 -2 3	; "GetAvatarName" -
+	4	[154]	MOVE     	2 1
+	5	[154]	LOADK    	3 -3	; "_order"
+	6	[154]	CONCAT   	2 2 3
+	7	[155]	GETTABLE 	3 0 -4	; "m_avatarName"
+	8	[155]	EQ       	1 2 3
+	9	[155]	JMP      	0 24	; to 34
+	10	[156]	GETTABLE 	3 0 -5	; "m_avatar"
+	11	[156]	EQ       	1 3 -6	; - nil
+	12	[156]	JMP      	0 6	; to 19
+	13	[157]	GETTABUP 	3 0 -7	; _ENV "AddressableLoader"
+	14	[157]	GETTABLE 	3 3 -8	; "Destroy"
+	15	[157]	GETTABLE 	4 0 -5	; "m_avatar"
+	16	[157]	GETTABLE 	4 4 -9	; "gameObject"
+	17	[157]	CALL     	3 2 1
+	18	[159]	SETTABLE 	0 -5 -6	; "m_avatar" nil
+	19	[162]	SETTABLE 	0 -4 2	; "m_avatarName" -
+	20	[163]	GETTABUP 	3 0 -10	; _ENV "GM"
+	21	[163]	GETTABLE 	3 3 -11	; "ResourceLoader"
+	22	[163]	SELF     	3 3 -12	; "LoadPrefab"
+	23	[163]	GETTABUP 	5 0 -10	; _ENV "GM"
+	24	[163]	GETTABLE 	5 5 -13	; "DataResource"
+	25	[163]	GETTABLE 	5 5 -14	; "UIPrefabConfig"
+	26	[163]	SELF     	5 5 -15	; "GetConfig"
+	27	[163]	MOVE     	7 2
+	28	[163]	CALL     	5 3 2
+	29	[164]	GETTABLE 	6 0 -16	; "m_avatarTransform"
+	30	[164]	GETTABUP 	7 0 -17	; _ENV "Vector3"
+	31	[164]	GETTABLE 	7 7 -18	; "zero"
+	32	[172]	CLOSURE  	8 1	; 00000298423141B0
+	33	[163]	CALL     	3 6 1
+	34	[174]	RETURN   	0 1
+constants (18) for 00000298423145B0:
+	1	"m_order"
+	2	"GetAvatarName"
+	3	"_order"
+	4	"m_avatarName"
+	5	"m_avatar"
+	6	nil
+	7	"AddressableLoader"
+	8	"Destroy"
+	9	"gameObject"
+	10	"GM"
+	11	"ResourceLoader"
+	12	"LoadPrefab"
+	13	"DataResource"
+	14	"UIPrefabConfig"
+	15	"GetConfig"
+	16	"m_avatarTransform"
+	17	"Vector3"
+	18	"zero"
+locals (3) for 00000298423145B0:
+	0	self	1	35
+	1	name	1	35
+	2	avatarName	7	35
+upvalues (1) for 00000298423145B0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:150,152> (3 instructions at 0000029842313CB0)
+0 params, 2 slots, 1 upvalue, 0 locals, 0 constants, 0 functions
+	1	[151]	GETUPVAL 	0 0	; name
+	2	[151]	RETURN   	0 2
+	3	[152]	RETURN   	0 1
+constants (0) for 0000029842313CB0:
+locals (0) for 0000029842313CB0:
+upvalues (1) for 0000029842313CB0:
+	0	name	1	1
+
+function <BaseOrderCell.lua:164,172> (15 instructions at 00000298423141B0)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[165]	SELF     	1 0 -2	; "GetLuaTable"
+	2	[165]	CALL     	1 2 2
+	3	[165]	SETTABUP 	0 -1 1	; self "m_avatar"
+	4	[166]	GETTABUP 	1 0 -1	; self "m_avatar"
+	5	[166]	SELF     	1 1 -3	; "Init"
+	6	[166]	GETTABUP 	3 0 -4	; self "m_order"
+	7	[166]	CALL     	1 3 1
+	8	[168]	GETTABUP 	1 0 -5	; self "m_bAvatarUpdateStateAfterLoad"
+	9	[168]	TEST     	1 0
+	10	[168]	JMP      	0 4	; to 15
+	11	[169]	SETTABUP 	0 -5 -6	; self "m_bAvatarUpdateStateAfterLoad" nil
+	12	[170]	GETUPVAL 	1 0	; self
+	13	[170]	SELF     	1 1 -7	; "OnOrderStateChanged"
+	14	[170]	CALL     	1 2 1
+	15	[172]	RETURN   	0 1
+constants (7) for 00000298423141B0:
+	1	"m_avatar"
+	2	"GetLuaTable"
+	3	"Init"
+	4	"m_order"
+	5	"m_bAvatarUpdateStateAfterLoad"
+	6	nil
+	7	"OnOrderStateChanged"
+locals (1) for 00000298423141B0:
+	0	gameObject	1	16
+upvalues (1) for 00000298423141B0:
+	0	self	1	0
+
+function <BaseOrderCell.lua:176,198> (69 instructions at 0000029842314230)
+1 param, 10 slots, 1 upvalue, 13 locals, 24 constants, 0 functions
+	1	[177]	GETTABLE 	1 0 -1	; "m_icons"
+	2	[177]	TEST     	1 1
+	3	[177]	JMP      	0 1	; to 5
+	4	[177]	NEWTABLE 	1 0 0
+	5	[177]	SETTABLE 	0 -1 1	; "m_icons" -
+	6	[178]	GETTABUP 	1 0 -2	; _ENV "ipairs"
+	7	[178]	GETTABLE 	2 0 -1	; "m_icons"
+	8	[178]	CALL     	1 2 4
+	9	[178]	JMP      	0 4	; to 14
+	10	[179]	GETTABLE 	6 5 -3	; "gameObject"
+	11	[179]	SELF     	6 6 -4	; "SetActive"
+	12	[179]	LOADBOOL 	8 0 0
+	13	[179]	CALL     	6 3 1
+	14	[178]	TFORCALL 	1 2
+	15	[178]	TFORLOOP 	3 -6	; to 10
+	16	[182]	LOADK    	1 -5	; 1
+	17	[182]	GETTABLE 	2 0 -6	; "m_order"
+	18	[182]	SELF     	2 2 -7	; "GetRequirements"
+	19	[182]	CALL     	2 2 2
+	20	[182]	LEN      	2 2
+	21	[182]	LOADK    	3 -5	; 1
+	22	[182]	FORPREP  	1 29	; to 52
+	23	[183]	GETTABLE 	5 0 -1	; "m_icons"
+	24	[183]	GETTABLE 	5 5 4
+	25	[183]	EQ       	0 5 -8	; - nil
+	26	[183]	JMP      	0 13	; to 40
+	27	[184]	GETTABUP 	5 0 -9	; _ENV "Object"
+	28	[184]	GETTABLE 	5 5 -10	; "Instantiate"
+	29	[184]	GETTABLE 	6 0 -11	; "m_iconPrefab"
+	30	[184]	GETTABLE 	7 0 -12	; "m_iconArea"
+	31	[184]	GETTABLE 	7 7 -13	; "transform"
+	32	[184]	CALL     	5 3 2
+	33	[185]	SELF     	6 5 -14	; "GetLuaTable"
+	34	[185]	CALL     	6 2 2
+	35	[186]	GETTABUP 	7 0 -15	; _ENV "table"
+	36	[186]	GETTABLE 	7 7 -16	; "insert"
+	37	[186]	GETTABLE 	8 0 -1	; "m_icons"
+	38	[186]	MOVE     	9 6
+	39	[186]	CALL     	7 3 1
+	40	[189]	GETTABLE 	5 0 -1	; "m_icons"
+	41	[189]	GETTABLE 	5 5 4
+	42	[189]	GETTABLE 	5 5 -3	; "gameObject"
+	43	[189]	SELF     	5 5 -4	; "SetActive"
+	44	[189]	LOADBOOL 	7 1 0
+	45	[189]	CALL     	5 3 1
+	46	[190]	GETTABLE 	5 0 -1	; "m_icons"
+	47	[190]	GETTABLE 	5 5 4
+	48	[190]	SELF     	5 5 -17	; "Init"
+	49	[190]	GETTABLE 	7 0 -6	; "m_order"
+	50	[190]	MOVE     	8 4
+	51	[190]	CALL     	5 4 1
+	52	[182]	FORLOOP  	1 -30	; to 23
+	53	[194]	GETTABLE 	1 0 -6	; "m_order"
+	54	[194]	SELF     	1 1 -7	; "GetRequirements"
+	55	[194]	CALL     	1 2 2
+	56	[194]	LEN      	1 1
+	57	[194]	EQ       	0 1 -18	; - 2
+	58	[194]	JMP      	0 10	; to 69
+	59	[195]	GETTABUP 	1 0 -19	; _ENV "CS"
+	60	[195]	GETTABLE 	1 1 -20	; "UnityEngine"
+	61	[195]	GETTABLE 	1 1 -21	; "RectOffset"
+	62	[195]	LOADK    	2 -22	; 25
+	63	[195]	LOADK    	3 -22	; 25
+	64	[195]	LOADK    	4 -23	; 0
+	65	[195]	LOADK    	5 -23	; 0
+	66	[195]	CALL     	1 5 2
+	67	[196]	GETTABLE 	2 0 -12	; "m_iconArea"
+	68	[196]	SETTABLE 	2 -24 1	; "padding" -
+	69	[198]	RETURN   	0 1
+constants (24) for 0000029842314230:
+	1	"m_icons"
+	2	"ipairs"
+	3	"gameObject"
+	4	"SetActive"
+	5	1
+	6	"m_order"
+	7	"GetRequirements"
+	8	nil
+	9	"Object"
+	10	"Instantiate"
+	11	"m_iconPrefab"
+	12	"m_iconArea"
+	13	"transform"
+	14	"GetLuaTable"
+	15	"table"
+	16	"insert"
+	17	"Init"
+	18	2
+	19	"CS"
+	20	"UnityEngine"
+	21	"RectOffset"
+	22	25
+	23	0
+	24	"padding"
+locals (13) for 0000029842314230:
+	0	self	1	70
+	1	(for generator)	9	16
+	2	(for state)	9	16
+	3	(for control)	9	16
+	4	_	10	14
+	5	icon	10	14
+	6	(for index)	22	53
+	7	(for limit)	22	53
+	8	(for step)	22	53
+	9	i	23	52
+	10	iconObject	33	40
+	11	orderIcon	35	40
+	12	rectOffset	67	69
+upvalues (1) for 0000029842314230:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:200,233> (87 instructions at 0000029842313EB0)
+1 param, 14 slots, 1 upvalue, 15 locals, 20 constants, 0 functions
+	1	[201]	GETTABLE 	1 0 -1	; "m_rewardCells"
+	2	[201]	TEST     	1 1
+	3	[201]	JMP      	0 1	; to 5
+	4	[201]	NEWTABLE 	1 0 0
+	5	[201]	SETTABLE 	0 -1 1	; "m_rewardCells" -
+	6	[202]	GETTABUP 	1 0 -2	; _ENV "ipairs"
+	7	[202]	GETTABLE 	2 0 -1	; "m_rewardCells"
+	8	[202]	CALL     	1 2 4
+	9	[202]	JMP      	0 4	; to 14
+	10	[203]	GETTABLE 	6 5 -3	; "gameObject"
+	11	[203]	SELF     	6 6 -4	; "SetActive"
+	12	[203]	LOADBOOL 	8 0 0
+	13	[203]	CALL     	6 3 1
+	14	[202]	TFORCALL 	1 2
+	15	[202]	TFORLOOP 	3 -6	; to 10
+	16	[206]	SELF     	1 0 -5	; "GetDisplayRewards"
+	17	[206]	CALL     	1 2 2
+	18	[208]	GETTABUP 	2 0 -6	; _ENV "Table"
+	19	[208]	GETTABLE 	2 2 -7	; "IsEmpty"
+	20	[208]	MOVE     	3 1
+	21	[208]	CALL     	2 2 2
+	22	[208]	TEST     	2 0
+	23	[208]	JMP      	0 6	; to 30
+	24	[209]	GETTABLE 	2 0 -8	; "m_rewards"
+	25	[209]	GETTABLE 	2 2 -3	; "gameObject"
+	26	[209]	SELF     	2 2 -4	; "SetActive"
+	27	[209]	LOADBOOL 	4 0 0
+	28	[209]	CALL     	2 3 1
+	29	[210]	RETURN   	0 1
+	30	[213]	GETTABLE 	2 0 -8	; "m_rewards"
+	31	[213]	GETTABLE 	2 2 -3	; "gameObject"
+	32	[213]	SELF     	2 2 -4	; "SetActive"
+	33	[213]	LOADBOOL 	4 1 0
+	34	[213]	CALL     	2 3 1
+	35	[215]	SELF     	2 0 -9	; "_SplitRewards"
+	36	[215]	MOVE     	4 1
+	37	[215]	CALL     	2 3 3
+	38	[217]	LEN      	4 2
+	39	[217]	EQ       	0 4 -10	; - 0
+	40	[217]	JMP      	0 6	; to 47
+	41	[218]	GETTABLE 	4 0 -8	; "m_rewards"
+	42	[218]	GETTABLE 	4 4 -3	; "gameObject"
+	43	[218]	SELF     	4 4 -4	; "SetActive"
+	44	[218]	LOADBOOL 	6 0 0
+	45	[218]	CALL     	4 3 1
+	46	[218]	JMP      	0 37	; to 84
+	47	[220]	GETTABUP 	4 0 -2	; _ENV "ipairs"
+	48	[220]	MOVE     	5 2
+	49	[220]	CALL     	4 2 4
+	50	[220]	JMP      	0 31	; to 82
+	51	[221]	GETTABLE 	9 0 -1	; "m_rewardCells"
+	52	[221]	GETTABLE 	9 9 7
+	53	[221]	EQ       	0 9 -11	; - nil
+	54	[221]	JMP      	0 11	; to 66
+	55	[222]	GETTABUP 	9 0 -12	; _ENV "Object"
+	56	[222]	GETTABLE 	9 9 -13	; "Instantiate"
+	57	[222]	GETTABLE 	10 0 -14	; "m_rewardPrefab"
+	58	[222]	GETTABLE 	11 0 -8	; "m_rewards"
+	59	[222]	CALL     	9 3 2
+	60	[223]	GETTABUP 	10 0 -15	; _ENV "table"
+	61	[223]	GETTABLE 	10 10 -16	; "insert"
+	62	[223]	GETTABLE 	11 0 -1	; "m_rewardCells"
+	63	[223]	SELF     	12 9 -17	; "GetLuaTable"
+	64	[223]	CALL     	12 2 0
+	65	[223]	CALL     	10 0 1
+	66	[225]	GETTABLE 	9 0 -1	; "m_rewardCells"
+	67	[225]	GETTABLE 	9 9 7
+	68	[225]	GETTABLE 	9 9 -3	; "gameObject"
+	69	[225]	SELF     	9 9 -4	; "SetActive"
+	70	[225]	LOADBOOL 	11 1 0
+	71	[225]	CALL     	9 3 1
+	72	[226]	GETTABLE 	9 0 -1	; "m_rewardCells"
+	73	[226]	GETTABLE 	9 9 7
+	74	[226]	SELF     	9 9 -18	; "Init"
+	75	[226]	MOVE     	11 8
+	76	[226]	CALL     	9 3 1
+	77	[227]	SELF     	9 0 -19	; "OnRewardCellInitFinish"
+	78	[227]	GETTABLE 	11 0 -1	; "m_rewardCells"
+	79	[227]	GETTABLE 	11 11 7
+	80	[227]	MOVE     	12 8
+	81	[227]	CALL     	9 4 1
+	82	[220]	TFORCALL 	4 2
+	83	[220]	TFORLOOP 	6 -33	; to 51
+	84	[232]	SELF     	4 0 -20	; "_UpdateActivitySpecialRewardView"
+	85	[232]	MOVE     	6 3
+	86	[232]	CALL     	4 3 1
+	87	[233]	RETURN   	0 1
+constants (20) for 0000029842313EB0:
+	1	"m_rewardCells"
+	2	"ipairs"
+	3	"gameObject"
+	4	"SetActive"
+	5	"GetDisplayRewards"
+	6	"Table"
+	7	"IsEmpty"
+	8	"m_rewards"
+	9	"_SplitRewards"
+	10	0
+	11	nil
+	12	"Object"
+	13	"Instantiate"
+	14	"m_rewardPrefab"
+	15	"table"
+	16	"insert"
+	17	"GetLuaTable"
+	18	"Init"
+	19	"OnRewardCellInitFinish"
+	20	"_UpdateActivitySpecialRewardView"
+locals (15) for 0000029842313EB0:
+	0	self	1	88
+	1	(for generator)	9	16
+	2	(for state)	9	16
+	3	(for control)	9	16
+	4	_	10	14
+	5	reward	10	14
+	6	displayRewards	18	88
+	7	normalRewards	38	88
+	8	specialRewards	38	88
+	9	(for generator)	50	84
+	10	(for state)	50	84
+	11	(for control)	50	84
+	12	i	51	82
+	13	reward	51	82
+	14	orderRewardGo	60	66
+upvalues (1) for 0000029842313EB0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:237,276> (181 instructions at 00000298423142B0)
+2 params, 22 slots, 1 upvalue, 17 locals, 26 constants, 0 functions
+	1	[238]	NEWTABLE 	2 0 0
+	2	[239]	NEWTABLE 	3 0 0
+	3	[241]	EQ       	0 1 -1	; - nil
+	4	[241]	JMP      	0 3	; to 8
+	5	[242]	MOVE     	4 2
+	6	[242]	MOVE     	5 3
+	7	[242]	RETURN   	4 3
+	8	[245]	GETTABUP 	4 0 -2	; _ENV "GM"
+	9	[245]	GETTABLE 	4 4 -3	; "ActivityManager"
+	10	[245]	SELF     	4 4 -4	; "GetStartedAlbumActivity"
+	11	[245]	CALL     	4 2 2
+	12	[246]	GETTABUP 	5 0 -2	; _ENV "GM"
+	13	[246]	GETTABLE 	5 5 -3	; "ActivityManager"
+	14	[246]	SELF     	5 5 -5	; "GetStartedAvenueActivity"
+	15	[246]	CALL     	5 2 2
+	16	[247]	GETTABUP 	6 0 -2	; _ENV "GM"
+	17	[247]	GETTABLE 	6 6 -3	; "ActivityManager"
+	18	[247]	SELF     	6 6 -6	; "GetStartedRingActivity"
+	19	[247]	CALL     	6 2 2
+	20	[248]	GETTABUP 	7 0 -2	; _ENV "GM"
+	21	[248]	GETTABLE 	7 7 -3	; "ActivityManager"
+	22	[248]	SELF     	7 7 -7	; "GetModel"
+	23	[248]	GETTABUP 	9 0 -8	; _ENV "ActivityType"
+	24	[248]	GETTABLE 	9 9 -9	; "FloatRace"
+	25	[248]	CALL     	7 3 2
+	26	[249]	GETTABUP 	8 0 -2	; _ENV "GM"
+	27	[249]	GETTABLE 	8 8 -3	; "ActivityManager"
+	28	[249]	SELF     	8 8 -10	; "GetStartedRoadActivity"
+	29	[249]	CALL     	8 2 2
+	30	[250]	GETTABUP 	9 0 -2	; _ENV "GM"
+	31	[250]	GETTABLE 	9 9 -3	; "ActivityManager"
+	32	[250]	SELF     	9 9 -11	; "GetStartedUpwardActivity"
+	33	[250]	CALL     	9 2 2
+	34	[251]	GETTABUP 	10 0 -2	; _ENV "GM"
+	35	[251]	GETTABLE 	10 10 -3	; "ActivityManager"
+	36	[251]	SELF     	10 10 -12	; "GetStartedExpedActivity"
+	37	[251]	CALL     	10 2 2
+	38	[252]	GETTABUP 	11 0 -2	; _ENV "GM"
+	39	[252]	GETTABLE 	11 11 -3	; "ActivityManager"
+	40	[252]	SELF     	11 11 -13	; "GetStartedComboActivity"
+	41	[252]	CALL     	11 2 2
+	42	[253]	GETTABUP 	12 0 -14	; _ENV "ipairs"
+	43	[253]	MOVE     	13 1
+	44	[253]	CALL     	12 2 4
+	45	[253]	JMP      	0 130	; to 176
+	46	[254]	EQ       	1 4 -1	; - nil
+	47	[254]	JMP      	0 14	; to 62
+	48	[254]	GETTABUP 	17 0 -15	; _ENV "AlbumActivityModel"
+	49	[254]	GETTABLE 	17 17 -16	; "IsCacheProperty"
+	50	[254]	GETTABUP 	18 0 -17	; _ENV "PROPERTY_TYPE"
+	51	[254]	GETTABLE 	18 16 18
+	52	[254]	CALL     	17 2 2
+	53	[254]	TEST     	17 0
+	54	[254]	JMP      	0 7	; to 62
+	55	[255]	LEN      	17 3
+	56	[255]	ADD      	17 17 -18	; - 1
+	57	[255]	NEWTABLE 	18 0 2
+	58	[255]	SETTABLE 	18 -19 16	; "reward" -
+	59	[255]	SETTABLE 	18 -20 4	; "model" -
+	60	[255]	SETTABLE 	3 17 18
+	61	[255]	JMP      	0 114	; to 176
+	62	[256]	EQ       	1 5 -1	; - nil
+	63	[256]	JMP      	0 13	; to 77
+	64	[256]	SELF     	17 5 -21	; "IsTokenProperty"
+	65	[256]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	66	[256]	GETTABLE 	19 16 19
+	67	[256]	CALL     	17 3 2
+	68	[256]	TEST     	17 0
+	69	[256]	JMP      	0 7	; to 77
+	70	[257]	LEN      	17 3
+	71	[257]	ADD      	17 17 -18	; - 1
+	72	[257]	NEWTABLE 	18 0 2
+	73	[257]	SETTABLE 	18 -19 16	; "reward" -
+	74	[257]	SETTABLE 	18 -20 5	; "model" -
+	75	[257]	SETTABLE 	3 17 18
+	76	[257]	JMP      	0 99	; to 176
+	77	[258]	EQ       	1 8 -1	; - nil
+	78	[258]	JMP      	0 13	; to 92
+	79	[258]	SELF     	17 8 -21	; "IsTokenProperty"
+	80	[258]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	81	[258]	GETTABLE 	19 16 19
+	82	[258]	CALL     	17 3 2
+	83	[258]	TEST     	17 0
+	84	[258]	JMP      	0 7	; to 92
+	85	[259]	LEN      	17 3
+	86	[259]	ADD      	17 17 -18	; - 1
+	87	[259]	NEWTABLE 	18 0 2
+	88	[259]	SETTABLE 	18 -19 16	; "reward" -
+	89	[259]	SETTABLE 	18 -20 8	; "model" -
+	90	[259]	SETTABLE 	3 17 18
+	91	[259]	JMP      	0 84	; to 176
+	92	[260]	EQ       	1 6 -1	; - nil
+	93	[260]	JMP      	0 13	; to 107
+	94	[260]	SELF     	17 6 -21	; "IsTokenProperty"
+	95	[260]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	96	[260]	GETTABLE 	19 16 19
+	97	[260]	CALL     	17 3 2
+	98	[260]	TEST     	17 0
+	99	[260]	JMP      	0 7	; to 107
+	100	[261]	LEN      	17 3
+	101	[261]	ADD      	17 17 -18	; - 1
+	102	[261]	NEWTABLE 	18 0 2
+	103	[261]	SETTABLE 	18 -19 16	; "reward" -
+	104	[261]	SETTABLE 	18 -20 6	; "model" -
+	105	[261]	SETTABLE 	3 17 18
+	106	[261]	JMP      	0 69	; to 176
+	107	[262]	GETTABUP 	17 0 -2	; _ENV "GM"
+	108	[262]	GETTABLE 	17 17 -22	; "ActivityModuleManager"
+	109	[262]	SELF     	17 17 -23	; "IsOrderSpecialReward"
+	110	[262]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	111	[262]	GETTABLE 	19 16 19
+	112	[262]	CALL     	17 3 2
+	113	[262]	TEST     	17 0
+	114	[262]	JMP      	0 13	; to 128
+	115	[263]	LEN      	17 3
+	116	[263]	ADD      	17 17 -18	; - 1
+	117	[263]	NEWTABLE 	18 0 2
+	118	[263]	SETTABLE 	18 -19 16	; "reward" -
+	119	[263]	GETTABUP 	19 0 -2	; _ENV "GM"
+	120	[263]	GETTABLE 	19 19 -22	; "ActivityModuleManager"
+	121	[263]	SELF     	19 19 -24	; "GetActivityModelByType"
+	122	[263]	GETTABUP 	21 0 -17	; _ENV "PROPERTY_TYPE"
+	123	[263]	GETTABLE 	21 16 21
+	124	[263]	CALL     	19 3 2
+	125	[263]	SETTABLE 	18 -20 19	; "model" -
+	126	[263]	SETTABLE 	3 17 18
+	127	[263]	JMP      	0 48	; to 176
+	128	[264]	EQ       	1 7 -1	; - nil
+	129	[264]	JMP      	0 13	; to 143
+	130	[264]	GETTABUP 	17 0 -17	; _ENV "PROPERTY_TYPE"
+	131	[264]	GETTABLE 	17 16 17
+	132	[264]	GETTABUP 	18 0 -25	; _ENV "EPropertyType"
+	133	[264]	GETTABLE 	18 18 -26	; "FloatRaceScore"
+	134	[264]	EQ       	0 17 18
+	135	[264]	JMP      	0 7	; to 143
+	136	[265]	LEN      	17 3
+	137	[265]	ADD      	17 17 -18	; - 1
+	138	[265]	NEWTABLE 	18 0 2
+	139	[265]	SETTABLE 	18 -19 16	; "reward" -
+	140	[265]	SETTABLE 	18 -20 7	; "model" -
+	141	[265]	SETTABLE 	3 17 18
+	142	[265]	JMP      	0 33	; to 176
+	143	[266]	EQ       	1 9 -1	; - nil
+	144	[266]	JMP      	0 13	; to 158
+	145	[266]	SELF     	17 9 -21	; "IsTokenProperty"
+	146	[266]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	147	[266]	GETTABLE 	19 16 19
+	148	[266]	CALL     	17 3 2
+	149	[266]	TEST     	17 0
+	150	[266]	JMP      	0 7	; to 158
+	151	[267]	LEN      	17 3
+	152	[267]	ADD      	17 17 -18	; - 1
+	153	[267]	NEWTABLE 	18 0 2
+	154	[267]	SETTABLE 	18 -19 16	; "reward" -
+	155	[267]	SETTABLE 	18 -20 9	; "model" -
+	156	[267]	SETTABLE 	3 17 18
+	157	[267]	JMP      	0 18	; to 176
+	158	[268]	EQ       	1 11 -1	; - nil
+	159	[268]	JMP      	0 13	; to 173
+	160	[268]	SELF     	17 11 -21	; "IsTokenProperty"
+	161	[268]	GETTABUP 	19 0 -17	; _ENV "PROPERTY_TYPE"
+	162	[268]	GETTABLE 	19 16 19
+	163	[268]	CALL     	17 3 2
+	164	[268]	TEST     	17 0
+	165	[268]	JMP      	0 7	; to 173
+	166	[269]	LEN      	17 3
+	167	[269]	ADD      	17 17 -18	; - 1
+	168	[269]	NEWTABLE 	18 0 2
+	169	[269]	SETTABLE 	18 -19 16	; "reward" -
+	170	[269]	SETTABLE 	18 -20 11	; "model" -
+	171	[269]	SETTABLE 	3 17 18
+	172	[269]	JMP      	0 3	; to 176
+	173	[271]	LEN      	17 2
+	174	[271]	ADD      	17 17 -18	; - 1
+	175	[271]	SETTABLE 	2 17 16
+	176	[253]	TFORCALL 	12 2
+	177	[253]	TFORLOOP 	14 -132	; to 46
+	178	[275]	MOVE     	12 2
+	179	[275]	MOVE     	13 3
+	180	[275]	RETURN   	12 3
+	181	[276]	RETURN   	0 1
+constants (26) for 00000298423142B0:
+	1	nil
+	2	"GM"
+	3	"ActivityManager"
+	4	"GetStartedAlbumActivity"
+	5	"GetStartedAvenueActivity"
+	6	"GetStartedRingActivity"
+	7	"GetModel"
+	8	"ActivityType"
+	9	"FloatRace"
+	10	"GetStartedRoadActivity"
+	11	"GetStartedUpwardActivity"
+	12	"GetStartedExpedActivity"
+	13	"GetStartedComboActivity"
+	14	"ipairs"
+	15	"AlbumActivityModel"
+	16	"IsCacheProperty"
+	17	"PROPERTY_TYPE"
+	18	1
+	19	"reward"
+	20	"model"
+	21	"IsTokenProperty"
+	22	"ActivityModuleManager"
+	23	"IsOrderSpecialReward"
+	24	"GetActivityModelByType"
+	25	"EPropertyType"
+	26	"FloatRaceScore"
+locals (17) for 00000298423142B0:
+	0	self	1	182
+	1	rewards	1	182
+	2	normalRewards	2	182
+	3	specialRewards	3	182
+	4	albumModel	12	182
+	5	aveModel	16	182
+	6	ringModel	20	182
+	7	floatRaceModel	26	182
+	8	roadModel	30	182
+	9	upwardModel	34	182
+	10	expedModel	38	182
+	11	comboModel	42	182
+	12	(for generator)	45	178
+	13	(for state)	45	178
+	14	(for control)	45	178
+	15	_	46	176
+	16	reward	46	176
+upvalues (1) for 00000298423142B0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:279,299> (41 instructions at 0000029842313F30)
+2 params, 10 slots, 1 upvalue, 12 locals, 10 constants, 0 functions
+	1	[280]	GETTABLE 	2 0 -1	; "m_specialRewardNodeRectTrans"
+	2	[280]	EQ       	0 2 -2	; - nil
+	3	[280]	JMP      	0 1	; to 5
+	4	[281]	RETURN   	0 1
+	5	[284]	GETTABLE 	2 0 -3	; "m_specialRewardObjects"
+	6	[284]	TEST     	2 1
+	7	[284]	JMP      	0 1	; to 9
+	8	[284]	NEWTABLE 	2 0 0
+	9	[284]	SETTABLE 	0 -3 2	; "m_specialRewardObjects" -
+	10	[285]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	11	[285]	GETTABLE 	3 0 -3	; "m_specialRewardObjects"
+	12	[285]	CALL     	2 2 4
+	13	[285]	JMP      	0 7	; to 21
+	14	[286]	SELF     	7 6 -5	; "IsNull"
+	15	[286]	CALL     	7 2 2
+	16	[286]	TEST     	7 1
+	17	[286]	JMP      	0 3	; to 21
+	18	[287]	SELF     	7 6 -6	; "SetActive"
+	19	[287]	LOADBOOL 	9 0 0
+	20	[287]	CALL     	7 3 1
+	21	[285]	TFORCALL 	2 2
+	22	[285]	TFORLOOP 	4 -9	; to 14
+	23	[291]	SELF     	2 0 -7	; "_AddSpecialRewards"
+	24	[291]	MOVE     	4 1
+	25	[291]	CALL     	2 3 1
+	26	[293]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	27	[293]	GETTABLE 	3 0 -3	; "m_specialRewardObjects"
+	28	[293]	CALL     	2 2 4
+	29	[293]	JMP      	0 9	; to 39
+	30	[294]	GETTABLE 	7 6 -8	; "activeSelf"
+	31	[294]	TEST     	7 1
+	32	[294]	JMP      	0 6	; to 39
+	33	[295]	GETTABUP 	7 0 -9	; _ENV "AddressableLoader"
+	34	[295]	GETTABLE 	7 7 -10	; "Destroy"
+	35	[295]	MOVE     	8 6
+	36	[295]	CALL     	7 2 1
+	37	[296]	GETTABLE 	7 0 -3	; "m_specialRewardObjects"
+	38	[296]	SETTABLE 	7 5 -2	; - nil
+	39	[293]	TFORCALL 	2 2
+	40	[293]	TFORLOOP 	4 -11	; to 30
+	41	[299]	RETURN   	0 1
+constants (10) for 0000029842313F30:
+	1	"m_specialRewardNodeRectTrans"
+	2	nil
+	3	"m_specialRewardObjects"
+	4	"pairs"
+	5	"IsNull"
+	6	"SetActive"
+	7	"_AddSpecialRewards"
+	8	"activeSelf"
+	9	"AddressableLoader"
+	10	"Destroy"
+locals (12) for 0000029842313F30:
+	0	self	1	42
+	1	arrData	1	42
+	2	(for generator)	13	23
+	3	(for state)	13	23
+	4	(for control)	13	23
+	5	_	14	21
+	6	gameObject	14	21
+	7	(for generator)	29	41
+	8	(for state)	29	41
+	9	(for control)	29	41
+	10	key	30	39
+	11	gameObject	30	39
+upvalues (1) for 0000029842313F30:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:301,303> (1 instruction at 0000029842313830)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[303]	RETURN   	0 1
+constants (0) for 0000029842313830:
+locals (2) for 0000029842313830:
+	0	self	1	2
+	1	arrRewards	1	2
+upvalues (0) for 0000029842313830:
+
+function <BaseOrderCell.lua:305,341> (55 instructions at 0000029842313FB0)
+7 params, 15 slots, 1 upvalue, 10 locals, 25 constants, 1 function
+	1	[306]	TEST     	5 1
+	2	[306]	JMP      	0 1	; to 4
+	3	[306]	LOADK    	5 -1	; 1
+	4	[307]	GETTABLE 	7 0 -2	; "m_specialRewardObjects"
+	5	[307]	GETTABLE 	7 7 1
+	6	[307]	EQ       	0 7 -3	; - nil
+	7	[307]	JMP      	0 28	; to 36
+	8	[308]	GETTABUP 	7 0 -4	; _ENV "GM"
+	9	[308]	GETTABLE 	7 7 -5	; "DataResource"
+	10	[308]	GETTABLE 	7 7 -6	; "UIPrefabConfig"
+	11	[308]	SELF     	7 7 -7	; "GetConfig"
+	12	[308]	MOVE     	9 3
+	13	[308]	CALL     	7 3 2
+	14	[310]	GETTABLE 	8 0 -8	; "m_specialRewardObjectPosInfo"
+	15	[310]	TEST     	8 1
+	16	[310]	JMP      	0 1	; to 18
+	17	[310]	NEWTABLE 	8 0 0
+	18	[310]	SETTABLE 	0 -8 8	; "m_specialRewardObjectPosInfo" -
+	19	[311]	GETTABLE 	8 0 -8	; "m_specialRewardObjectPosInfo"
+	20	[311]	NEWTABLE 	9 0 3
+	21	[312]	SETTABLE 	9 -9 4	; "pos" -
+	22	[313]	SETTABLE 	9 -10 5	; "scale" -
+	23	[314]	SETTABLE 	9 -11 2	; "reward" -
+	24	[315]	SETTABLE 	8 1 9
+	25	[331]	CLOSURE  	8 0	; 0000029842314030
+	26	[332]	GETTABUP 	9 0 -4	; _ENV "GM"
+	27	[332]	GETTABLE 	9 9 -12	; "ResourceLoader"
+	28	[332]	SELF     	9 9 -13	; "LoadPrefab"
+	29	[332]	MOVE     	11 7
+	30	[332]	GETTABLE 	12 0 -14	; "m_specialRewardNodeRectTrans"
+	31	[332]	GETTABUP 	13 0 -15	; _ENV "Vector3"
+	32	[332]	GETTABLE 	13 13 -16	; "zero"
+	33	[332]	MOVE     	14 8
+	34	[332]	CALL     	9 6 1
+	35	[332]	JMP      	0 19	; to 55
+	36	[335]	GETTABLE 	7 0 -17	; "m_specialRewardObjects"
+	37	[335]	GETTABLE 	7 7 1
+	38	[336]	SELF     	8 7 -18	; "SetActive"
+	39	[336]	LOADBOOL 	10 1 0
+	40	[336]	CALL     	8 3 1
+	41	[337]	SELF     	8 7 -19	; "GetLuaTable"
+	42	[337]	CALL     	8 2 2
+	43	[337]	SELF     	8 8 -20	; "UpdateContent"
+	44	[337]	MOVE     	10 2
+	45	[337]	CALL     	8 3 1
+	46	[338]	GETTABLE 	8 7 -21	; "transform"
+	47	[338]	SETTABLE 	8 -22 4	; "localPosition" -
+	48	[339]	GETTABUP 	8 0 -23	; _ENV "UIUtil"
+	49	[339]	GETTABLE 	8 8 -24	; "SetLocalScale"
+	50	[339]	GETTABLE 	9 7 -21	; "transform"
+	51	[339]	MOVE     	10 5
+	52	[339]	MOVE     	11 5
+	53	[339]	LOADK    	12 -25	; 1
+	54	[339]	CALL     	8 5 1
+	55	[341]	RETURN   	0 1
+constants (25) for 0000029842313FB0:
+	1	1
+	2	"m_specialRewardObjects"
+	3	nil
+	4	"GM"
+	5	"DataResource"
+	6	"UIPrefabConfig"
+	7	"GetConfig"
+	8	"m_specialRewardObjectPosInfo"
+	9	"pos"
+	10	"scale"
+	11	"reward"
+	12	"ResourceLoader"
+	13	"LoadPrefab"
+	14	"m_specialRewardNodeRectTrans"
+	15	"Vector3"
+	16	"zero"
+	17	"m_specialRewardObjects"
+	18	"SetActive"
+	19	"GetLuaTable"
+	20	"UpdateContent"
+	21	"transform"
+	22	"localPosition"
+	23	"UIUtil"
+	24	"SetLocalScale"
+	25	1
+locals (10) for 0000029842313FB0:
+	0	self	1	56
+	1	key	1	56
+	2	reward	1	56
+	3	prefabName	1	56
+	4	position	1	56
+	5	scale	1	56
+	6	model	1	56
+	7	config	14	35
+	8	callback	26	35
+	9	gameObject	38	55
+upvalues (1) for 0000029842313FB0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:316,331> (52 instructions at 0000029842314030)
+1 param, 9 slots, 4 upvalues, 4 locals, 16 constants, 0 functions
+	1	[317]	GETTABUP 	1 0 -1	; self "m_specialRewardObjects"
+	2	[317]	GETUPVAL 	2 1	; key
+	3	[317]	GETTABLE 	1 1 2
+	4	[317]	EQ       	1 1 -2	; - nil
+	5	[317]	JMP      	0 6	; to 12
+	6	[318]	GETTABUP 	1 2 -3	; _ENV "AddressableLoader"
+	7	[318]	GETTABLE 	1 1 -4	; "Destroy"
+	8	[318]	GETTABUP 	2 0 -1	; self "m_specialRewardObjects"
+	9	[318]	GETUPVAL 	3 1	; key
+	10	[318]	GETTABLE 	2 2 3
+	11	[318]	CALL     	1 2 1
+	12	[320]	GETTABUP 	1 0 -5	; self "m_specialRewardObjectPosInfo"
+	13	[320]	GETUPVAL 	2 1	; key
+	14	[320]	GETTABLE 	1 1 2
+	15	[320]	GETTABLE 	1 1 -6	; "reward"
+	16	[321]	GETTABUP 	2 0 -5	; self "m_specialRewardObjectPosInfo"
+	17	[321]	GETUPVAL 	3 1	; key
+	18	[321]	GETTABLE 	2 2 3
+	19	[321]	GETTABLE 	2 2 -7	; "pos"
+	20	[322]	GETTABUP 	3 0 -5	; self "m_specialRewardObjectPosInfo"
+	21	[322]	GETUPVAL 	4 1	; key
+	22	[322]	GETTABLE 	3 3 4
+	23	[322]	GETTABLE 	3 3 -8	; "scale"
+	24	[324]	GETTABUP 	4 0 -1	; self "m_specialRewardObjects"
+	25	[324]	GETUPVAL 	5 1	; key
+	26	[324]	SETTABLE 	4 5 0
+	27	[325]	SELF     	4 0 -9	; "GetLuaTable"
+	28	[325]	CALL     	4 2 2
+	29	[325]	SELF     	4 4 -10	; "Init"
+	30	[325]	MOVE     	6 1
+	31	[325]	GETUPVAL 	7 3	; model
+	32	[325]	GETUPVAL 	8 0	; self
+	33	[325]	CALL     	4 5 1
+	34	[326]	GETTABLE 	4 0 -11	; "transform"
+	35	[326]	SETTABLE 	4 -12 2	; "localPosition" -
+	36	[327]	GETTABUP 	4 2 -13	; _ENV "UIUtil"
+	37	[327]	GETTABLE 	4 4 -14	; "SetLocalScale"
+	38	[327]	GETTABLE 	5 0 -11	; "transform"
+	39	[327]	MOVE     	6 3
+	40	[327]	MOVE     	7 3
+	41	[327]	LOADK    	8 -15	; 1
+	42	[327]	CALL     	4 5 1
+	43	[328]	SELF     	4 0 -9	; "GetLuaTable"
+	44	[328]	CALL     	4 2 2
+	45	[328]	GETTABLE 	4 4 -16	; "PlayShowAnimation"
+	46	[328]	EQ       	1 4 -2	; - nil
+	47	[328]	JMP      	0 4	; to 52
+	48	[329]	SELF     	4 0 -9	; "GetLuaTable"
+	49	[329]	CALL     	4 2 2
+	50	[329]	SELF     	4 4 -16	; "PlayShowAnimation"
+	51	[329]	CALL     	4 2 1
+	52	[331]	RETURN   	0 1
+constants (16) for 0000029842314030:
+	1	"m_specialRewardObjects"
+	2	nil
+	3	"AddressableLoader"
+	4	"Destroy"
+	5	"m_specialRewardObjectPosInfo"
+	6	"reward"
+	7	"pos"
+	8	"scale"
+	9	"GetLuaTable"
+	10	"Init"
+	11	"transform"
+	12	"localPosition"
+	13	"UIUtil"
+	14	"SetLocalScale"
+	15	1
+	16	"PlayShowAnimation"
+locals (4) for 0000029842314030:
+	0	gameObject	1	53
+	1	reward	16	53
+	2	position	20	53
+	3	scale	24	53
+upvalues (4) for 0000029842314030:
+	0	self	1	0
+	1	key	1	1
+	2	_ENV	0	0
+	3	model	1	6
+
+function <BaseOrderCell.lua:344,350> (9 instructions at 0000029842314330)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[345]	GETTABLE 	2 0 -1	; "m_specialRewardObjects"
+	2	[345]	EQ       	0 2 -2	; - nil
+	3	[345]	JMP      	0 2	; to 6
+	4	[346]	LOADNIL  	2 0
+	5	[346]	RETURN   	2 2
+	6	[349]	GETTABLE 	2 0 -1	; "m_specialRewardObjects"
+	7	[349]	GETTABLE 	2 2 1
+	8	[349]	RETURN   	2 2
+	9	[350]	RETURN   	0 1
+constants (2) for 0000029842314330:
+	1	"m_specialRewardObjects"
+	2	nil
+locals (2) for 0000029842314330:
+	0	self	1	10
+	1	key	1	10
+upvalues (0) for 0000029842314330:
+
+function <BaseOrderCell.lua:352,384> (53 instructions at 0000029842313DB0)
+1 param, 10 slots, 1 upvalue, 5 locals, 20 constants, 0 functions
+	1	[354]	GETTABLE 	1 0 -1	; "m_order"
+	2	[354]	SELF     	1 1 -2	; "GetMaxPossibleRewardNumber"
+	3	[354]	CALL     	1 2 2
+	4	[357]	LOADK    	2 -3	; 20
+	5	[358]	LOADK    	3 -4	; 1.3
+	6	[359]	LOADK    	4 -5	; 110
+	7	[361]	EQ       	0 1 -6	; - 2
+	8	[361]	JMP      	0 2	; to 11
+	9	[362]	LOADK    	2 -7	; 60
+	10	[362]	JMP      	0 11	; to 22
+	11	[363]	EQ       	0 1 -8	; - 3
+	12	[363]	JMP      	0 4	; to 17
+	13	[364]	LOADK    	2 -7	; 60
+	14	[365]	LOADK    	3 -9	; 1.1
+	15	[366]	LOADK    	4 -10	; 93
+	16	[366]	JMP      	0 5	; to 22
+	17	[367]	LT       	0 -8 1	; 3 -
+	18	[367]	JMP      	0 3	; to 22
+	19	[371]	LOADK    	2 -7	; 60
+	20	[372]	LOADK    	3 -9	; 1.1
+	21	[373]	LOADK    	4 -10	; 93
+	22	[376]	GETTABUP 	5 0 -11	; _ENV "UIHelper"
+	23	[376]	GETTABLE 	5 5 -12	; "IsUsingOrderButtonNewPositionType"
+	24	[376]	CALL     	5 1 2
+	25	[376]	TEST     	5 0
+	26	[376]	JMP      	0 5	; to 32
+	27	[377]	GETTABUP 	5 0 -11	; _ENV "UIHelper"
+	28	[377]	GETTABLE 	5 5 -13	; "UpdateOrderButtonOnNewPositionType"
+	29	[377]	GETTABLE 	6 0 -14	; "m_button"
+	30	[377]	CALL     	5 2 1
+	31	[377]	JMP      	0 7	; to 39
+	32	[379]	GETTABUP 	5 0 -15	; _ENV "UIUtil"
+	33	[379]	GETTABLE 	5 5 -16	; "SetAnchoredPosition"
+	34	[379]	GETTABLE 	6 0 -14	; "m_button"
+	35	[379]	LOADNIL  	7 0
+	36	[379]	MOVE     	8 2
+	37	[379]	LOADNIL  	9 0
+	38	[379]	CALL     	5 5 1
+	39	[382]	GETTABLE 	5 0 -17	; "m_rewards"
+	40	[382]	GETTABUP 	6 0 -19	; _ENV "Vector3"
+	41	[382]	MOVE     	7 3
+	42	[382]	MOVE     	8 3
+	43	[382]	LOADK    	9 -20	; 1
+	44	[382]	CALL     	6 4 2
+	45	[382]	SETTABLE 	5 -18 6	; "localScale" -
+	46	[383]	GETTABUP 	5 0 -15	; _ENV "UIUtil"
+	47	[383]	GETTABLE 	5 5 -16	; "SetAnchoredPosition"
+	48	[383]	GETTABLE 	6 0 -17	; "m_rewards"
+	49	[383]	LOADNIL  	7 0
+	50	[383]	MOVE     	8 4
+	51	[383]	LOADNIL  	9 0
+	52	[383]	CALL     	5 5 1
+	53	[384]	RETURN   	0 1
+constants (20) for 0000029842313DB0:
+	1	"m_order"
+	2	"GetMaxPossibleRewardNumber"
+	3	20
+	4	1.3
+	5	110
+	6	2
+	7	60
+	8	3
+	9	1.1
+	10	93
+	11	"UIHelper"
+	12	"IsUsingOrderButtonNewPositionType"
+	13	"UpdateOrderButtonOnNewPositionType"
+	14	"m_button"
+	15	"UIUtil"
+	16	"SetAnchoredPosition"
+	17	"m_rewards"
+	18	"localScale"
+	19	"Vector3"
+	20	1
+locals (5) for 0000029842313DB0:
+	0	self	1	54
+	1	maxNumber	4	54
+	2	buttonY	5	54
+	3	rewardNodeScale	6	54
+	4	rewardNodeY	7	54
+upvalues (1) for 0000029842313DB0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:386,389> (8 instructions at 00000298423138B0)
+1 param, 5 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[387]	SELF     	1 0 -1	; "GetDisplayTray"
+	2	[387]	CALL     	1 2 2
+	3	[388]	GETTABUP 	2 0 -2	; _ENV "SpriteUtil"
+	4	[388]	GETTABLE 	2 2 -3	; "SetImage"
+	5	[388]	GETTABLE 	3 0 -4	; "m_TrayImg"
+	6	[388]	MOVE     	4 1
+	7	[388]	CALL     	2 3 1
+	8	[389]	RETURN   	0 1
+constants (4) for 00000298423138B0:
+	1	"GetDisplayTray"
+	2	"SpriteUtil"
+	3	"SetImage"
+	4	"m_TrayImg"
+locals (2) for 00000298423138B0:
+	0	self	1	9
+	1	imageKey	3	9
+upvalues (1) for 00000298423138B0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:391,513> (195 instructions at 0000029842313E30)
+1 param, 32 slots, 1 upvalue, 32 locals, 51 constants, 1 function
+	1	[392]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[392]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[392]	CALL     	1 1 2
+	4	[392]	TEST     	1 1
+	5	[392]	JMP      	0 1	; to 7
+	6	[393]	RETURN   	0 1
+	7	[397]	GETTABLE 	1 0 -3	; "m_bUpdateTestInfoDisplay"
+	8	[397]	TEST     	1 1
+	9	[397]	JMP      	0 6	; to 16
+	10	[398]	SETTABLE 	0 -3 -4	; "m_bUpdateTestInfoDisplay" true
+	11	[399]	GETTABUP 	1 0 -5	; _ENV "DelayExecuteFuncInView"
+	12	[447]	CLOSURE  	2 0	; 00000298423140B0
+	13	[447]	LOADK    	3 -6	; 0.1
+	14	[447]	MOVE     	4 0
+	15	[399]	CALL     	1 4 1
+	16	[450]	LOADK    	1 -7	; "94261A"
+	17	[452]	SELF     	2 0 -8	; "GetTestInfoStr"
+	18	[452]	CALL     	2 2 2
+	19	[453]	GETTABUP 	3 0 -9	; _ENV "StringUtil"
+	20	[453]	GETTABLE 	3 3 -10	; "IsNilOrEmpty"
+	21	[453]	MOVE     	4 2
+	22	[453]	CALL     	3 2 2
+	23	[453]	TEST     	3 0
+	24	[453]	JMP      	0 44	; to 69
+	25	[454]	GETTABLE 	3 0 -11	; "m_testText"
+	26	[454]	GETTABLE 	3 3 -12	; "gameObject"
+	27	[454]	SELF     	3 3 -13	; "SetActive"
+	28	[454]	LOADBOOL 	5 1 0
+	29	[454]	CALL     	3 3 1
+	30	[455]	GETTABLE 	3 0 -14	; "m_order"
+	31	[455]	SELF     	3 3 -15	; "GetId"
+	32	[455]	CALL     	3 2 2
+	33	[456]	LOADK    	4 -16	; "Slot: "
+	34	[456]	GETTABUP 	5 0 -9	; _ENV "StringUtil"
+	35	[456]	GETTABLE 	5 5 -17	; "MakeColorFormat"
+	36	[456]	GETTABLE 	6 0 -14	; "m_order"
+	37	[456]	SELF     	6 6 -18	; "GetSlot"
+	38	[456]	CALL     	6 2 2
+	39	[456]	MOVE     	7 1
+	40	[456]	CALL     	5 3 2
+	41	[456]	LOADK    	6 -19	; "  "
+	42	[456]	CONCAT   	4 4 6
+	43	[457]	LOADK    	5 -20	; "Type: "
+	44	[457]	GETTABUP 	6 0 -9	; _ENV "StringUtil"
+	45	[457]	GETTABLE 	6 6 -17	; "MakeColorFormat"
+	46	[457]	GETTABUP 	7 0 -21	; _ENV "tostring"
+	47	[457]	GETTABLE 	8 0 -14	; "m_order"
+	48	[457]	SELF     	8 8 -22	; "GetType"
+	49	[457]	CALL     	8 2 0
+	50	[457]	CALL     	7 0 2
+	51	[457]	MOVE     	8 1
+	52	[457]	CALL     	6 3 2
+	53	[457]	LOADK    	7 -23	; "\n"
+	54	[457]	CONCAT   	5 5 7
+	55	[458]	LOADK    	6 -24	; "Id: "
+	56	[458]	GETTABUP 	7 0 -9	; _ENV "StringUtil"
+	57	[458]	GETTABLE 	7 7 -17	; "MakeColorFormat"
+	58	[458]	GETTABUP 	8 0 -21	; _ENV "tostring"
+	59	[458]	MOVE     	9 3
+	60	[458]	CALL     	8 2 2
+	61	[458]	MOVE     	9 1
+	62	[458]	CALL     	7 3 2
+	63	[458]	LOADK    	8 -19	; "  "
+	64	[458]	CONCAT   	6 6 8
+	65	[459]	MOVE     	7 4
+	66	[459]	MOVE     	8 5
+	67	[459]	MOVE     	9 6
+	68	[459]	CONCAT   	2 7 9
+	69	[462]	GETTABLE 	3 0 -14	; "m_order"
+	70	[462]	SELF     	3 3 -25	; "GetDiffRange"
+	71	[462]	CALL     	3 2 2
+	72	[463]	TEST     	3 0
+	73	[463]	JMP      	0 10	; to 84
+	74	[463]	EQ       	1 3 -26	; - ""
+	75	[463]	JMP      	0 8	; to 84
+	76	[464]	LOADK    	4 -27	; "DiffRange: "
+	77	[464]	GETTABUP 	5 0 -9	; _ENV "StringUtil"
+	78	[464]	GETTABLE 	5 5 -17	; "MakeColorFormat"
+	79	[464]	MOVE     	6 3
+	80	[464]	MOVE     	7 1
+	81	[464]	CALL     	5 3 2
+	82	[464]	CONCAT   	3 4 5
+	83	[464]	JMP      	0 1	; to 85
+	84	[466]	LOADK    	3 -26	; ""
+	85	[468]	MOVE     	4 2
+	86	[468]	MOVE     	5 3
+	87	[468]	CONCAT   	2 4 5
+	88	[470]	GETTABUP 	4 0 -28	; _ENV "GM"
+	89	[470]	GETTABLE 	4 4 -29	; "ActivityManager"
+	90	[470]	SELF     	4 4 -30	; "GetStartedAlbumActivity"
+	91	[470]	CALL     	4 2 2
+	92	[471]	EQ       	1 4 -31	; - nil
+	93	[471]	JMP      	0 99	; to 193
+	94	[472]	GETTABLE 	5 0 -14	; "m_order"
+	95	[472]	SELF     	5 5 -32	; "GetDiffScore"
+	96	[472]	CALL     	5 2 2
+	97	[473]	MOVE     	6 2
+	98	[473]	LOADK    	7 -33	; "\nDiffScore: "
+	99	[473]	MOVE     	8 5
+	100	[473]	CONCAT   	2 6 8
+	101	[474]	GETTABUP 	6 0 -28	; _ENV "GM"
+	102	[474]	GETTABLE 	6 6 -29	; "ActivityManager"
+	103	[474]	SELF     	6 6 -30	; "GetStartedAlbumActivity"
+	104	[474]	CALL     	6 2 2
+	105	[474]	SELF     	6 6 -34	; "GetOrderReward"
+	106	[474]	GETTABLE 	8 0 -14	; "m_order"
+	107	[474]	SELF     	8 8 -18	; "GetSlot"
+	108	[474]	CALL     	8 2 0
+	109	[474]	CALL     	6 0 2
+	110	[474]	EQ       	1 6 -31	; - nil
+	111	[474]	JMP      	0 81	; to 193
+	112	[475]	GETTABUP 	6 0 -35	; _ENV "ipairs"
+	113	[475]	GETTABLE 	7 4 -36	; "m_arrScore2RewardConfig"
+	114	[475]	CALL     	6 2 4
+	115	[475]	JMP      	0 60	; to 176
+	116	[476]	GETTABLE 	11 10 -37	; "scoreMin"
+	117	[477]	GETTABLE 	12 10 -38	; "scoreMax"
+	118	[478]	LE       	0 11 5
+	119	[478]	JMP      	0 56	; to 176
+	120	[478]	LE       	0 5 12
+	121	[478]	JMP      	0 54	; to 176
+	122	[479]	MOVE     	13 11
+	123	[479]	LOADK    	14 -39	; "_"
+	124	[479]	MOVE     	15 12
+	125	[479]	CONCAT   	13 13 15
+	126	[480]	GETTABLE 	14 10 -40	; "packReward"
+	127	[481]	GETTABLE 	15 4 -41	; "m_orderGenerateRights"
+	128	[481]	GETTABLE 	15 15 13
+	129	[482]	MOVE     	16 2
+	130	[482]	LOADK    	17 -23	; "\n"
+	131	[482]	CONCAT   	2 16 17
+	132	[483]	LOADBOOL 	16 0 0
+	133	[484]	GETTABUP 	17 0 -42	; _ENV "pairs"
+	134	[484]	MOVE     	18 14
+	135	[484]	CALL     	17 2 4
+	136	[484]	JMP      	0 36	; to 173
+	137	[485]	GETTABUP 	22 0 -43	; _ENV "Table"
+	138	[485]	GETTABLE 	22 22 -44	; "IsEmpty"
+	139	[485]	MOVE     	23 15
+	140	[485]	CALL     	22 2 2
+	141	[485]	TEST     	22 1
+	142	[485]	JMP      	0 21	; to 164
+	143	[486]	GETTABUP 	22 0 -42	; _ENV "pairs"
+	144	[486]	MOVE     	23 15
+	145	[486]	CALL     	22 2 4
+	146	[486]	JMP      	0 15	; to 162
+	147	[487]	GETTABUP 	27 0 -45	; _ENV "PROPERTY_TYPE"
+	148	[487]	GETTABLE 	27 26 27
+	149	[487]	GETTABUP 	28 0 -45	; _ENV "PROPERTY_TYPE"
+	150	[487]	GETTABLE 	28 21 28
+	151	[487]	EQ       	0 27 28
+	152	[487]	JMP      	0 9	; to 162
+	153	[488]	MOVE     	27 2
+	154	[488]	GETTABUP 	28 0 -45	; _ENV "PROPERTY_TYPE"
+	155	[488]	GETTABLE 	28 26 28
+	156	[488]	LOADK    	29 -46	; " Weight:"
+	157	[488]	GETTABUP 	30 0 -47	; _ENV "PROPERTY_WEIGHT"
+	158	[488]	GETTABLE 	30 26 30
+	159	[488]	LOADK    	31 -23	; "\n"
+	160	[488]	CONCAT   	2 27 31
+	161	[489]	LOADBOOL 	16 1 0
+	162	[486]	TFORCALL 	22 2
+	163	[486]	TFORLOOP 	24 -17	; to 147
+	164	[493]	TEST     	16 1
+	165	[493]	JMP      	0 6	; to 172
+	166	[494]	MOVE     	22 2
+	167	[494]	GETTABUP 	23 0 -45	; _ENV "PROPERTY_TYPE"
+	168	[494]	GETTABLE 	23 21 23
+	169	[494]	LOADK    	24 -48	; " Weight: 0"
+	170	[494]	LOADK    	25 -23	; "\n"
+	171	[494]	CONCAT   	2 22 25
+	172	[496]	LOADBOOL 	16 0 0
+	173	[484]	TFORCALL 	17 2
+	174	[484]	TFORLOOP 	19 -38	; to 137
+	175	[497]	JMP      	0 2	; to 178
+	176	[475]	TFORCALL 	6 2
+	177	[475]	TFORLOOP 	8 -62	; to 116
+	178	[501]	SELF     	6 4 -49	; "GetOrderOriRewardById"
+	179	[501]	GETTABUP 	8 0 -21	; _ENV "tostring"
+	180	[501]	GETTABLE 	9 0 -14	; "m_order"
+	181	[501]	SELF     	9 9 -18	; "GetSlot"
+	182	[501]	CALL     	9 2 0
+	183	[501]	CALL     	8 0 0
+	184	[501]	CALL     	6 0 2
+	185	[502]	EQ       	1 6 -31	; - nil
+	186	[502]	JMP      	0 6	; to 193
+	187	[504]	GETTABUP 	7 0 -45	; _ENV "PROPERTY_TYPE"
+	188	[504]	GETTABLE 	6 6 7
+	189	[505]	MOVE     	7 2
+	190	[505]	LOADK    	8 -50	; "oriRwd: "
+	191	[505]	MOVE     	9 6
+	192	[505]	CONCAT   	2 7 9
+	193	[512]	GETTABLE 	5 0 -11	; "m_testText"
+	194	[512]	SETTABLE 	5 -51 2	; "text" -
+	195	[513]	RETURN   	0 1
+constants (51) for 0000029842313E30:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_bUpdateTestInfoDisplay"
+	4	true
+	5	"DelayExecuteFuncInView"
+	6	0.1
+	7	"94261A"
+	8	"GetTestInfoStr"
+	9	"StringUtil"
+	10	"IsNilOrEmpty"
+	11	"m_testText"
+	12	"gameObject"
+	13	"SetActive"
+	14	"m_order"
+	15	"GetId"
+	16	"Slot: "
+	17	"MakeColorFormat"
+	18	"GetSlot"
+	19	"  "
+	20	"Type: "
+	21	"tostring"
+	22	"GetType"
+	23	"\n"
+	24	"Id: "
+	25	"GetDiffRange"
+	26	""
+	27	"DiffRange: "
+	28	"GM"
+	29	"ActivityManager"
+	30	"GetStartedAlbumActivity"
+	31	nil
+	32	"GetDiffScore"
+	33	"\nDiffScore: "
+	34	"GetOrderReward"
+	35	"ipairs"
+	36	"m_arrScore2RewardConfig"
+	37	"scoreMin"
+	38	"scoreMax"
+	39	"_"
+	40	"packReward"
+	41	"m_orderGenerateRights"
+	42	"pairs"
+	43	"Table"
+	44	"IsEmpty"
+	45	"PROPERTY_TYPE"
+	46	" Weight:"
+	47	"PROPERTY_WEIGHT"
+	48	" Weight: 0"
+	49	"GetOrderOriRewardById"
+	50	"oriRwd: "
+	51	"text"
+locals (32) for 0000029842313E30:
+	0	self	1	196
+	1	color	17	196
+	2	infoStr	19	196
+	3	id	33	69
+	4	slotInfo	43	69
+	5	typeInfo	55	69
+	6	idInfo	65	69
+	7	diffRange	72	196
+	8	albumModel	92	196
+	9	diffScore	97	193
+	10	(for generator)	115	178
+	11	(for state)	115	178
+	12	(for control)	115	178
+	13	i	116	176
+	14	v	116	176
+	15	scoreMin	117	176
+	16	scoreMax	118	176
+	17	scIndex	126	176
+	18	albumPackRewards	127	176
+	19	albumPackInfos	129	176
+	20	flag	133	176
+	21	(for generator)	136	175
+	22	(for state)	136	175
+	23	(for control)	136	175
+	24	i	137	173
+	25	rwdInfo	137	173
+	26	(for generator)	146	164
+	27	(for state)	146	164
+	28	(for control)	146	164
+	29	i	147	162
+	30	pinfo	147	162
+	31	oriRwd	185	193
+upvalues (1) for 0000029842313E30:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:399,447> (126 instructions at 00000298423140B0)
+0 params, 13 slots, 2 upvalues, 13 locals, 45 constants, 0 functions
+	1	[400]	GETTABUP 	0 0 -1	; self "transform"
+	2	[400]	SELF     	0 0 -2	; "Find"
+	3	[400]	LOADK    	2 -3	; "TestFinishButton"
+	4	[400]	CALL     	0 3 2
+	5	[401]	TEST     	0 0
+	6	[401]	JMP      	0 15	; to 22
+	7	[402]	SELF     	1 0 -2	; "Find"
+	8	[402]	LOADK    	3 -4	; "Image"
+	9	[402]	CALL     	1 3 2
+	10	[403]	TEST     	1 0
+	11	[403]	JMP      	0 10	; to 22
+	12	[404]	GETTABLE 	2 1 -5	; "gameObject"
+	13	[404]	SELF     	2 2 -6	; "GetComponent"
+	14	[404]	GETTABUP 	4 1 -7	; _ENV "typeof"
+	15	[404]	GETTABUP 	5 1 -8	; _ENV "CS"
+	16	[404]	GETTABLE 	5 5 -9	; "UnityEngine"
+	17	[404]	GETTABLE 	5 5 -10	; "UI"
+	18	[404]	GETTABLE 	5 5 -4	; "Image"
+	19	[404]	CALL     	4 2 0
+	20	[404]	CALL     	2 0 2
+	21	[405]	SETTABLE 	2 -11 -12	; "raycastTarget" false
+	22	[409]	LOADK    	1 -13	; 0
+	23	[410]	LOADNIL  	2 0
+	24	[412]	GETTABUP 	3 1 -14	; _ENV "GM"
+	25	[412]	GETTABLE 	3 3 -15	; "UIManager"
+	26	[412]	SELF     	3 3 -16	; "GetOpenedTopViewByType"
+	27	[412]	GETTABUP 	5 1 -17	; _ENV "EViewType"
+	28	[412]	GETTABLE 	5 5 -18	; "SceneView"
+	29	[412]	CALL     	3 3 2
+	30	[413]	TEST     	3 0
+	31	[413]	JMP      	0 47	; to 79
+	32	[414]	SELF     	4 3 -19	; "GetHud"
+	33	[414]	CALL     	4 2 2
+	34	[415]	TEST     	4 0
+	35	[415]	JMP      	0 43	; to 79
+	36	[416]	SELF     	5 4 -20	; "GetHudButton"
+	37	[416]	GETTABUP 	7 1 -21	; _ENV "ESceneViewHudButtonKey"
+	38	[416]	GETTABLE 	7 7 -22	; "Energy"
+	39	[416]	CALL     	5 3 2
+	40	[417]	GETTABUP 	6 1 -23	; _ENV "PositionUtil"
+	41	[417]	GETTABLE 	6 6 -24	; "UICameraWorld2Screen"
+	42	[417]	GETTABLE 	7 5 -1	; "transform"
+	43	[417]	SELF     	7 7 -25	; "TransformPoint"
+	44	[417]	GETTABUP 	9 1 -26	; _ENV "Vector3"
+	45	[417]	LOADK    	10 -13	; 0
+	46	[417]	GETTABLE 	11 5 -1	; "transform"
+	47	[417]	GETTABLE 	11 11 -27	; "sizeDelta"
+	48	[417]	GETTABLE 	11 11 -28	; "y"
+	49	[417]	UNM      	11 11
+	50	[417]	DIV      	11 11 -29	; - 2
+	51	[417]	LOADK    	12 -13	; 0
+	52	[417]	CALL     	9 4 0
+	53	[417]	CALL     	7 0 0
+	54	[417]	CALL     	6 0 2
+	55	[418]	GETTABUP 	7 0 -30	; self "m_orderArea"
+	56	[418]	SELF     	7 7 -31	; "GetBoardView"
+	57	[418]	CALL     	7 2 2
+	58	[418]	SELF     	7 7 -32	; "ConvertScreenPositionToWorldPosition"
+	59	[418]	MOVE     	9 6
+	60	[418]	CALL     	7 3 2
+	61	[420]	GETTABUP 	8 0 -1	; self "transform"
+	62	[420]	SELF     	8 8 -33	; "InverseTransformPoint"
+	63	[420]	MOVE     	10 7
+	64	[420]	CALL     	8 3 2
+	65	[420]	GETTABLE 	1 8 -28	; "y"
+	66	[421]	TEST     	0 0
+	67	[421]	JMP      	0 11	; to 79
+	68	[422]	GETTABLE 	8 0 -27	; "sizeDelta"
+	69	[422]	GETTABLE 	8 8 -28	; "y"
+	70	[422]	DIV      	8 8 -29	; - 2
+	71	[422]	SUB      	1 1 8
+	72	[423]	GETTABLE 	8 0 -34	; "localPosition"
+	73	[423]	GETTABLE 	8 8 -28	; "y"
+	74	[423]	LT       	0 1 8
+	75	[423]	JMP      	0 3	; to 79
+	76	[424]	GETTABLE 	8 0 -34	; "localPosition"
+	77	[424]	GETTABLE 	8 8 -28	; "y"
+	78	[424]	SUB      	2 1 8
+	79	[430]	EQ       	1 2 -35	; - nil
+	80	[430]	JMP      	0 45	; to 126
+	81	[431]	TEST     	0 0
+	82	[431]	JMP      	0 7	; to 90
+	83	[432]	GETTABUP 	4 1 -36	; _ENV "UIUtil"
+	84	[432]	GETTABLE 	4 4 -37	; "AddAnchoredPosition"
+	85	[432]	MOVE     	5 0
+	86	[432]	LOADNIL  	6 0
+	87	[432]	MOVE     	7 2
+	88	[432]	LOADNIL  	8 0
+	89	[432]	CALL     	4 5 1
+	90	[435]	GETTABUP 	4 0 -1	; self "transform"
+	91	[435]	SELF     	4 4 -2	; "Find"
+	92	[435]	LOADK    	6 -38	; "TestText"
+	93	[435]	CALL     	4 3 2
+	94	[436]	TEST     	4 0
+	95	[436]	JMP      	0 17	; to 113
+	96	[437]	GETTABUP 	5 1 -36	; _ENV "UIUtil"
+	97	[437]	GETTABLE 	5 5 -37	; "AddAnchoredPosition"
+	98	[437]	MOVE     	6 4
+	99	[437]	LOADNIL  	7 0
+	100	[437]	MOVE     	8 2
+	101	[437]	LOADNIL  	9 0
+	102	[437]	CALL     	5 5 1
+	103	[438]	GETTABLE 	5 4 -5	; "gameObject"
+	104	[438]	SELF     	5 5 -39	; "AddComponent"
+	105	[438]	GETTABUP 	7 1 -7	; _ENV "typeof"
+	106	[438]	GETTABUP 	8 1 -8	; _ENV "CS"
+	107	[438]	GETTABLE 	8 8 -9	; "UnityEngine"
+	108	[438]	GETTABLE 	8 8 -40	; "Canvas"
+	109	[438]	CALL     	7 2 0
+	110	[438]	CALL     	5 0 2
+	111	[439]	SETTABLE 	5 -41 -42	; "overrideSorting" true
+	112	[440]	SETTABLE 	5 -43 -44	; "sortingOrder" 5
+	113	[442]	GETTABUP 	5 0 -1	; self "transform"
+	114	[442]	SELF     	5 5 -2	; "Find"
+	115	[442]	LOADK    	7 -45	; "TestAddItemButton"
+	116	[442]	CALL     	5 3 2
+	117	[443]	TEST     	5 0
+	118	[443]	JMP      	0 7	; to 126
+	119	[444]	GETTABUP 	6 1 -36	; _ENV "UIUtil"
+	120	[444]	GETTABLE 	6 6 -37	; "AddAnchoredPosition"
+	121	[444]	MOVE     	7 5
+	122	[444]	LOADNIL  	8 0
+	123	[444]	MOVE     	9 2
+	124	[444]	LOADNIL  	10 0
+	125	[444]	CALL     	6 5 1
+	126	[447]	RETURN   	0 1
+constants (45) for 00000298423140B0:
+	1	"transform"
+	2	"Find"
+	3	"TestFinishButton"
+	4	"Image"
+	5	"gameObject"
+	6	"GetComponent"
+	7	"typeof"
+	8	"CS"
+	9	"UnityEngine"
+	10	"UI"
+	11	"raycastTarget"
+	12	false
+	13	0
+	14	"GM"
+	15	"UIManager"
+	16	"GetOpenedTopViewByType"
+	17	"EViewType"
+	18	"SceneView"
+	19	"GetHud"
+	20	"GetHudButton"
+	21	"ESceneViewHudButtonKey"
+	22	"Energy"
+	23	"PositionUtil"
+	24	"UICameraWorld2Screen"
+	25	"TransformPoint"
+	26	"Vector3"
+	27	"sizeDelta"
+	28	"y"
+	29	2
+	30	"m_orderArea"
+	31	"GetBoardView"
+	32	"ConvertScreenPositionToWorldPosition"
+	33	"InverseTransformPoint"
+	34	"localPosition"
+	35	nil
+	36	"UIUtil"
+	37	"AddAnchoredPosition"
+	38	"TestText"
+	39	"AddComponent"
+	40	"Canvas"
+	41	"overrideSorting"
+	42	true
+	43	"sortingOrder"
+	44	5
+	45	"TestAddItemButton"
+locals (13) for 00000298423140B0:
+	0	testFinishButtonTrans	5	127
+	1	testFinishButtonImageTrans	10	22
+	2	testFinishButtonImage	21	22
+	3	targetY	23	127
+	4	offsetY	24	127
+	5	baseSceneView	30	127
+	6	sceneViewHud	34	79
+	7	energyButton	40	79
+	8	screenPos	55	79
+	9	boardWorldPos	61	79
+	10	testTextTrans	94	126
+	11	canvasComponent	111	113
+	12	testAddItemButtonTrans	117	126
+upvalues (2) for 00000298423140B0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseOrderCell.lua:515,534> (55 instructions at 0000029842314630)
+1 param, 14 slots, 1 upvalue, 9 locals, 20 constants, 0 functions
+	1	[516]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[516]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[516]	CALL     	1 1 2
+	4	[516]	TEST     	1 1
+	5	[516]	JMP      	0 1	; to 7
+	6	[517]	RETURN   	0 1
+	7	[520]	GETTABLE 	1 0 -3	; "m_orderArea"
+	8	[520]	SELF     	1 1 -4	; "GetBoardView"
+	9	[520]	CALL     	1 2 2
+	10	[520]	SELF     	1 1 -5	; "GetModel"
+	11	[520]	CALL     	1 2 2
+	12	[521]	GETTABLE 	2 0 -6	; "m_order"
+	13	[521]	SELF     	2 2 -7	; "CanDeliver"
+	14	[521]	SELF     	4 1 -8	; "GetCodeCountMap"
+	15	[521]	LOADBOOL 	6 1 0
+	16	[521]	LOADBOOL 	7 0 0
+	17	[521]	LOADBOOL 	8 0 0
+	18	[521]	CALL     	4 5 0
+	19	[521]	CALL     	2 0 2
+	20	[521]	TEST     	2 1
+	21	[521]	JMP      	0 33	; to 55
+	22	[522]	GETTABLE 	2 0 -6	; "m_order"
+	23	[522]	SELF     	2 2 -9	; "GetRequirements"
+	24	[522]	CALL     	2 2 2
+	25	[523]	LOADK    	3 -10	; 1
+	26	[523]	LEN      	4 2
+	27	[523]	LOADK    	5 -10	; 1
+	28	[523]	FORPREP  	3 25	; to 54
+	29	[524]	GETTABLE 	7 2 6
+	30	[525]	SELF     	8 1 -11	; "FindEmptyPositionInValidOrder"
+	31	[525]	CALL     	8 2 2
+	32	[526]	TEST     	8 0
+	33	[526]	JMP      	0 8	; to 42
+	34	[527]	GETTABUP 	9 0 -12	; _ENV "GM"
+	35	[527]	GETTABLE 	9 9 -13	; "TestModel"
+	36	[527]	SELF     	9 9 -14	; "AddItemOnBoard"
+	37	[527]	MOVE     	11 1
+	38	[527]	MOVE     	12 8
+	39	[527]	MOVE     	13 7
+	40	[527]	CALL     	9 5 1
+	41	[527]	JMP      	0 12	; to 54
+	42	[529]	GETTABUP 	9 0 -12	; _ENV "GM"
+	43	[529]	GETTABLE 	9 9 -15	; "UIManager"
+	44	[529]	SELF     	9 9 -16	; "ShowPrompt"
+	45	[529]	LOADK    	11 -17	; "\230\163\139\231\155\152\229\183\178\230\187\161\239\188\140\230\183\187\229\138\160\229\136\176\231\188\147\229\173\152\233\152\159\229\136\151"
+	46	[529]	CALL     	9 3 1
+	47	[530]	SELF     	9 1 -18	; "CacheItems"
+	48	[530]	NEWTABLE 	11 1 0
+	49	[530]	MOVE     	12 7
+	50	[530]	SETLIST  	11 1 1	; 1
+	51	[530]	GETTABUP 	12 0 -19	; _ENV "CacheItemType"
+	52	[530]	GETTABLE 	12 12 -20	; "Type2"
+	53	[530]	CALL     	9 4 1
+	54	[523]	FORLOOP  	3 -26	; to 29
+	55	[534]	RETURN   	0 1
+constants (20) for 0000029842314630:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_orderArea"
+	4	"GetBoardView"
+	5	"GetModel"
+	6	"m_order"
+	7	"CanDeliver"
+	8	"GetCodeCountMap"
+	9	"GetRequirements"
+	10	1
+	11	"FindEmptyPositionInValidOrder"
+	12	"GM"
+	13	"TestModel"
+	14	"AddItemOnBoard"
+	15	"UIManager"
+	16	"ShowPrompt"
+	17	"\230\163\139\231\155\152\229\183\178\230\187\161\239\188\140\230\183\187\229\138\160\229\136\176\231\188\147\229\173\152\233\152\159\229\136\151"
+	18	"CacheItems"
+	19	"CacheItemType"
+	20	"Type2"
+locals (9) for 0000029842314630:
+	0	self	1	56
+	1	boardModel	12	56
+	2	requirements	25	55
+	3	(for index)	28	55
+	4	(for limit)	28	55
+	5	(for step)	28	55
+	6	i	29	54
+	7	code	30	54
+	8	position	32	54
+upvalues (1) for 0000029842314630:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:536,573> (79 instructions at 0000029842313B30)
+1 param, 14 slots, 1 upvalue, 10 locals, 31 constants, 0 functions
+	1	[537]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[537]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[537]	CALL     	1 1 2
+	4	[537]	TEST     	1 1
+	5	[537]	JMP      	0 1	; to 7
+	6	[538]	RETURN   	0 1
+	7	[541]	GETTABLE 	1 0 -3	; "m_testFinishingOrder"
+	8	[541]	TEST     	1 0
+	9	[541]	JMP      	0 1	; to 11
+	10	[542]	RETURN   	0 1
+	11	[545]	GETTABLE 	1 0 -4	; "m_order"
+	12	[545]	SELF     	1 1 -5	; "GetState"
+	13	[545]	CALL     	1 2 2
+	14	[545]	GETTABUP 	2 0 -6	; _ENV "OrderState"
+	15	[545]	GETTABLE 	2 2 -7	; "Finished"
+	16	[545]	EQ       	0 1 2
+	17	[545]	JMP      	0 1	; to 19
+	18	[546]	RETURN   	0 1
+	19	[549]	SETTABLE 	0 -3 -8	; "m_testFinishingOrder" true
+	20	[551]	GETTABLE 	1 0 -9	; "m_orderArea"
+	21	[551]	SELF     	1 1 -10	; "GetBoardView"
+	22	[551]	CALL     	1 2 2
+	23	[551]	SELF     	1 1 -11	; "GetModel"
+	24	[551]	CALL     	1 2 2
+	25	[552]	GETTABLE 	2 0 -4	; "m_order"
+	26	[552]	SELF     	2 2 -12	; "CanDeliver"
+	27	[552]	SELF     	4 1 -13	; "GetCodeCountMap"
+	28	[552]	LOADBOOL 	6 1 0
+	29	[552]	LOADBOOL 	7 0 0
+	30	[552]	LOADBOOL 	8 0 0
+	31	[552]	CALL     	4 5 0
+	32	[552]	CALL     	2 0 2
+	33	[552]	TEST     	2 1
+	34	[552]	JMP      	0 29	; to 64
+	35	[553]	GETTABLE 	2 0 -4	; "m_order"
+	36	[553]	SELF     	2 2 -14	; "GetRequirements"
+	37	[553]	CALL     	2 2 2
+	38	[554]	LOADK    	3 -15	; 1
+	39	[554]	LEN      	4 2
+	40	[554]	LOADK    	5 -15	; 1
+	41	[554]	FORPREP  	3 21	; to 63
+	42	[555]	GETTABLE 	7 2 6
+	43	[556]	SELF     	8 1 -16	; "FindEmptyPositionInValidOrder"
+	44	[556]	CALL     	8 2 2
+	45	[557]	TEST     	8 0
+	46	[557]	JMP      	0 8	; to 55
+	47	[558]	GETTABUP 	9 0 -17	; _ENV "GM"
+	48	[558]	GETTABLE 	9 9 -18	; "TestModel"
+	49	[558]	SELF     	9 9 -19	; "AddItemOnBoard"
+	50	[558]	MOVE     	11 1
+	51	[558]	MOVE     	12 8
+	52	[558]	MOVE     	13 7
+	53	[558]	CALL     	9 5 1
+	54	[558]	JMP      	0 8	; to 63
+	55	[560]	GETTABUP 	9 0 -17	; _ENV "GM"
+	56	[560]	GETTABLE 	9 9 -20	; "UIManager"
+	57	[560]	SELF     	9 9 -21	; "ShowPrompt"
+	58	[560]	LOADK    	11 -22	; "\230\163\139\231\155\152\229\183\178\230\187\161\239\188\140\230\151\160\230\179\149\231\171\139\229\141\179\229\174\140\230\136\144\232\174\162\229\141\149"
+	59	[560]	CALL     	9 3 1
+	60	[561]	SETTABUP 	0 -23 -24	; _ENV "canFinish" false
+	61	[562]	SETTABLE 	0 -3 -24	; "m_testFinishingOrder" false
+	62	[563]	RETURN   	0 1
+	63	[554]	FORLOOP  	3 -22	; to 42
+	64	[567]	GETTABLE 	2 0 -25	; "transform"
+	65	[567]	SELF     	2 2 -26	; "Find"
+	66	[567]	LOADK    	4 -27	; "TestFinishButton"
+	67	[567]	CALL     	2 3 2
+	68	[568]	TEST     	2 0
+	69	[568]	JMP      	0 4	; to 74
+	70	[569]	GETTABLE 	3 2 -28	; "gameObject"
+	71	[569]	SELF     	3 3 -29	; "SetActive"
+	72	[569]	LOADBOOL 	5 0 0
+	73	[569]	CALL     	3 3 1
+	74	[571]	SELF     	3 0 -30	; "SetGoButtonEnabled"
+	75	[571]	LOADBOOL 	5 1 0
+	76	[571]	CALL     	3 3 1
+	77	[572]	SELF     	3 0 -31	; "OnGoButtonClicked"
+	78	[572]	CALL     	3 2 1
+	79	[573]	RETURN   	0 1
+constants (31) for 0000029842313B30:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_testFinishingOrder"
+	4	"m_order"
+	5	"GetState"
+	6	"OrderState"
+	7	"Finished"
+	8	true
+	9	"m_orderArea"
+	10	"GetBoardView"
+	11	"GetModel"
+	12	"CanDeliver"
+	13	"GetCodeCountMap"
+	14	"GetRequirements"
+	15	1
+	16	"FindEmptyPositionInValidOrder"
+	17	"GM"
+	18	"TestModel"
+	19	"AddItemOnBoard"
+	20	"UIManager"
+	21	"ShowPrompt"
+	22	"\230\163\139\231\155\152\229\183\178\230\187\161\239\188\140\230\151\160\230\179\149\231\171\139\229\141\179\229\174\140\230\136\144\232\174\162\229\141\149"
+	23	"canFinish"
+	24	false
+	25	"transform"
+	26	"Find"
+	27	"TestFinishButton"
+	28	"gameObject"
+	29	"SetActive"
+	30	"SetGoButtonEnabled"
+	31	"OnGoButtonClicked"
+locals (10) for 0000029842313B30:
+	0	self	1	80
+	1	boardModel	25	80
+	2	requirements	38	64
+	3	(for index)	41	64
+	4	(for limit)	41	64
+	5	(for step)	41	64
+	6	i	42	63
+	7	code	43	63
+	8	position	45	63
+	9	testFinishButtonTrans	68	80
+upvalues (1) for 0000029842313B30:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:577,579> (5 instructions at 0000029842313930)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[578]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[578]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[578]	MOVE     	2 0
+	4	[578]	CALL     	1 2 1
+	5	[579]	RETURN   	0 1
+constants (2) for 0000029842313930:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 0000029842313930:
+	0	self	1	6
+upvalues (1) for 0000029842313930:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:582,584> (3 instructions at 00000298423143B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[583]	GETTABLE 	1 0 -1	; "m_order"
+	2	[583]	RETURN   	1 2
+	3	[584]	RETURN   	0 1
+constants (1) for 00000298423143B0:
+	1	"m_order"
+locals (1) for 00000298423143B0:
+	0	self	1	4
+upvalues (0) for 00000298423143B0:
+
+function <BaseOrderCell.lua:586,588> (3 instructions at 0000029842314430)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[587]	GETTABLE 	1 0 -1	; "m_iconArea"
+	2	[587]	RETURN   	1 2
+	3	[588]	RETURN   	0 1
+constants (1) for 0000029842314430:
+	1	"m_iconArea"
+locals (1) for 0000029842314430:
+	0	self	1	4
+upvalues (0) for 0000029842314430:
+
+function <BaseOrderCell.lua:592,594> (4 instructions at 00000298423144B0)
+2 params, 3 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[593]	GETTABLE 	2 0 -1	; "m_icons"
+	2	[593]	GETTABLE 	2 2 1
+	3	[593]	RETURN   	2 2
+	4	[594]	RETURN   	0 1
+constants (1) for 00000298423144B0:
+	1	"m_icons"
+locals (2) for 00000298423144B0:
+	0	self	1	5
+	1	index	1	5
+upvalues (0) for 00000298423144B0:
+
+function <BaseOrderCell.lua:596,598> (3 instructions at 00000298423139B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[597]	GETTABLE 	1 0 -1	; "m_button"
+	2	[597]	RETURN   	1 2
+	3	[598]	RETURN   	0 1
+constants (1) for 00000298423139B0:
+	1	"m_button"
+locals (1) for 00000298423139B0:
+	0	self	1	4
+upvalues (0) for 00000298423139B0:
+
+function <BaseOrderCell.lua:602,606> (10 instructions at 0000029842313A30)
+2 params, 10 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[603]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[603]	GETTABLE 	3 0 -2	; "m_icons"
+	3	[603]	CALL     	2 2 4
+	4	[603]	JMP      	0 3	; to 8
+	5	[604]	SELF     	7 6 -3	; "SetClickEnabled"
+	6	[604]	MOVE     	9 1
+	7	[604]	CALL     	7 3 1
+	8	[603]	TFORCALL 	2 2
+	9	[603]	TFORLOOP 	4 -5	; to 5
+	10	[606]	RETURN   	0 1
+constants (3) for 0000029842313A30:
+	1	"ipairs"
+	2	"m_icons"
+	3	"SetClickEnabled"
+locals (7) for 0000029842313A30:
+	0	self	1	11
+	1	enable	1	11
+	2	(for generator)	4	10
+	3	(for state)	4	10
+	4	(for control)	4	10
+	5	_	5	8
+	6	icon	5	8
+upvalues (1) for 0000029842313A30:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:608,610> (2 instructions at 0000029842313C30)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[609]	SETTABLE 	0 -1 1	; "m_bGoButtonEnabled" -
+	2	[610]	RETURN   	0 1
+constants (1) for 0000029842313C30:
+	1	"m_bGoButtonEnabled"
+locals (2) for 0000029842313C30:
+	0	self	1	3
+	1	enable	1	3
+upvalues (0) for 0000029842313C30:
+
+function <BaseOrderCell.lua:614,640> (92 instructions at 0000029842313D30)
+1 param, 14 slots, 1 upvalue, 15 locals, 24 constants, 0 functions
+	1	[616]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[616]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[616]	SELF     	1 1 -3	; "GetModel"
+	4	[616]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[616]	GETTABLE 	3 3 -5	; "CookingFrenzy"
+	6	[616]	CALL     	1 3 2
+	7	[617]	TESTSET  	2 1 0
+	8	[617]	JMP      	0 6	; to 15
+	9	[617]	SELF     	2 1 -6	; "GetCurDoingBuff"
+	10	[617]	CALL     	2 2 2
+	11	[617]	EQ       	0 2 -7	; - nil
+	12	[617]	JMP      	0 1	; to 14
+	13	[617]	LOADBOOL 	2 0 1
+	14	[617]	LOADBOOL 	2 1 0
+	15	[618]	GETTABUP 	3 0 -8	; _ENV "MainBoardView"
+	16	[618]	GETTABLE 	3 3 -9	; "GetInstance"
+	17	[618]	CALL     	3 1 2
+	18	[618]	SELF     	3 3 -10	; "GetOrderArea"
+	19	[618]	CALL     	3 2 2
+	20	[618]	SELF     	3 3 -11	; "GetCells"
+	21	[618]	GETTABUP 	5 0 -12	; _ENV "OrderModelType"
+	22	[618]	GETTABLE 	5 5 -13	; "Slot"
+	23	[618]	CALL     	3 3 2
+	24	[619]	TEST     	2 0
+	25	[619]	JMP      	0 21	; to 47
+	26	[619]	GETTABUP 	4 0 -8	; _ENV "MainBoardView"
+	27	[619]	GETTABLE 	4 4 -9	; "GetInstance"
+	28	[619]	CALL     	4 1 2
+	29	[619]	TEST     	4 0
+	30	[619]	JMP      	0 16	; to 47
+	31	[621]	GETTABUP 	4 0 -14	; _ENV "pairs"
+	32	[621]	MOVE     	5 3
+	33	[621]	CALL     	4 2 4
+	34	[621]	JMP      	0 10	; to 45
+	35	[622]	SELF     	9 8 -15	; "GetOrder"
+	36	[622]	CALL     	9 2 2
+	37	[622]	SELF     	9 9 -16	; "GetState"
+	38	[622]	CALL     	9 2 2
+	39	[622]	GETTABUP 	10 0 -17	; _ENV "OrderState"
+	40	[622]	GETTABLE 	10 10 -18	; "Finished"
+	41	[622]	EQ       	0 9 10
+	42	[622]	JMP      	0 2	; to 45
+	43	[623]	LOADBOOL 	9 1 0
+	44	[623]	RETURN   	9 2
+	45	[621]	TFORCALL 	4 2
+	46	[621]	TFORLOOP 	6 -12	; to 35
+	47	[629]	GETTABUP 	4 0 -1	; _ENV "GM"
+	48	[629]	GETTABLE 	4 4 -2	; "ActivityManager"
+	49	[629]	SELF     	4 4 -3	; "GetModel"
+	50	[629]	GETTABUP 	6 0 -4	; _ENV "ActivityType"
+	51	[629]	GETTABLE 	6 6 -19	; "ChestCustomer"
+	52	[629]	CALL     	4 3 2
+	53	[630]	SELF     	5 4 -16	; "GetState"
+	54	[630]	CALL     	5 2 2
+	55	[630]	GETTABUP 	6 0 -20	; _ENV "ActivityState"
+	56	[630]	GETTABLE 	6 6 -21	; "Started"
+	57	[630]	EQ       	0 5 6
+	58	[630]	JMP      	0 31	; to 90
+	59	[631]	GETTABUP 	5 0 -14	; _ENV "pairs"
+	60	[631]	MOVE     	6 3
+	61	[631]	CALL     	5 2 4
+	62	[631]	JMP      	0 25	; to 88
+	63	[633]	SELF     	10 9 -15	; "GetOrder"
+	64	[633]	CALL     	10 2 2
+	65	[633]	SELF     	10 10 -16	; "GetState"
+	66	[633]	CALL     	10 2 2
+	67	[633]	GETTABUP 	11 0 -17	; _ENV "OrderState"
+	68	[633]	GETTABLE 	11 11 -18	; "Finished"
+	69	[633]	EQ       	0 10 11
+	70	[633]	JMP      	0 17	; to 88
+	71	[633]	GETTABLE 	10 9 -22	; "IsPlayFinishRewardAnimation"
+	72	[633]	TEST     	10 0
+	73	[633]	JMP      	0 4	; to 78
+	74	[633]	SELF     	10 9 -22	; "IsPlayFinishRewardAnimation"
+	75	[633]	CALL     	10 2 2
+	76	[633]	TEST     	10 1
+	77	[633]	JMP      	0 8	; to 86
+	78	[633]	SELF     	10 4 -23	; "IsChestCustomerOrder"
+	79	[633]	SELF     	12 9 -15	; "GetOrder"
+	80	[633]	CALL     	12 2 2
+	81	[633]	SELF     	12 12 -24	; "GetSlot"
+	82	[633]	CALL     	12 2 0
+	83	[633]	CALL     	10 0 2
+	84	[633]	TEST     	10 0
+	85	[633]	JMP      	0 2	; to 88
+	86	[634]	LOADBOOL 	10 1 0
+	87	[634]	RETURN   	10 2
+	88	[631]	TFORCALL 	5 2
+	89	[631]	TFORLOOP 	7 -27	; to 63
+	90	[639]	LOADBOOL 	5 0 0
+	91	[639]	RETURN   	5 2
+	92	[640]	RETURN   	0 1
+constants (24) for 0000029842313D30:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"CookingFrenzy"
+	6	"GetCurDoingBuff"
+	7	nil
+	8	"MainBoardView"
+	9	"GetInstance"
+	10	"GetOrderArea"
+	11	"GetCells"
+	12	"OrderModelType"
+	13	"Slot"
+	14	"pairs"
+	15	"GetOrder"
+	16	"GetState"
+	17	"OrderState"
+	18	"Finished"
+	19	"ChestCustomer"
+	20	"ActivityState"
+	21	"Started"
+	22	"IsPlayFinishRewardAnimation"
+	23	"IsChestCustomerOrder"
+	24	"GetSlot"
+locals (15) for 0000029842313D30:
+	0	self	1	93
+	1	model	7	93
+	2	bAcivityCf	15	93
+	3	slotCells	24	93
+	4	(for generator)	34	47
+	5	(for state)	34	47
+	6	(for control)	34	47
+	7	_	35	45
+	8	cell	35	45
+	9	model	53	93
+	10	(for generator)	62	90
+	11	(for state)	62	90
+	12	(for control)	62	90
+	13	_	63	88
+	14	cell	63	88
+upvalues (1) for 0000029842313D30:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:642,675> (74 instructions at 00000298423201E0)
+1 param, 10 slots, 1 upvalue, 9 locals, 28 constants, 0 functions
+	1	[644]	GETTABLE 	1 0 -1	; "m_playingAnimation"
+	2	[644]	TEST     	1 0
+	3	[644]	JMP      	0 1	; to 5
+	4	[645]	RETURN   	0 1
+	5	[648]	GETTABLE 	1 0 -2	; "m_order"
+	6	[648]	SELF     	1 1 -3	; "GetState"
+	7	[648]	CALL     	1 2 2
+	8	[648]	GETTABUP 	2 0 -4	; _ENV "OrderState"
+	9	[648]	GETTABLE 	2 2 -5	; "CanDeliver"
+	10	[648]	EQ       	1 1 2
+	11	[648]	JMP      	0 1	; to 13
+	12	[648]	LOADBOOL 	1 0 1
+	13	[648]	LOADBOOL 	1 1 0
+	14	[649]	SELF     	2 0 -6	; "CheckHaveFinshOrderInActivity"
+	15	[649]	CALL     	2 2 2
+	16	[653]	TEST     	2 1
+	17	[653]	JMP      	0 28	; to 46
+	18	[653]	TEST     	1 0
+	19	[653]	JMP      	0 26	; to 46
+	20	[653]	GETTABLE 	3 0 -7	; "m_showDeliver"
+	21	[653]	TEST     	3 0
+	22	[653]	JMP      	0 3	; to 26
+	23	[653]	GETTABLE 	3 0 -8	; "m_firstShowDeliver"
+	24	[654]	TEST     	3 0
+	25	[654]	JMP      	0 20	; to 46
+	26	[654]	GETTABUP 	3 0 -9	; _ENV "GM"
+	27	[654]	GETTABLE 	3 3 -10	; "SceneManager"
+	28	[654]	SELF     	3 3 -11	; "GetGameMode"
+	29	[654]	CALL     	3 2 2
+	30	[654]	GETTABUP 	4 0 -12	; _ENV "EGameMode"
+	31	[654]	GETTABLE 	4 4 -13	; "Main"
+	32	[654]	EQ       	0 3 4
+	33	[654]	JMP      	0 12	; to 46
+	34	[655]	SELF     	3 0 -14	; "ScrollToOrder"
+	35	[655]	CALL     	3 2 1
+	36	[656]	SELF     	3 0 -15	; "GetDeliverAudioEffectName"
+	37	[656]	CALL     	3 2 2
+	38	[657]	EQ       	1 3 -16	; - nil
+	39	[657]	JMP      	0 5	; to 45
+	40	[658]	GETTABUP 	4 0 -9	; _ENV "GM"
+	41	[658]	GETTABLE 	4 4 -17	; "AudioModel"
+	42	[658]	SELF     	4 4 -18	; "PlayEffect"
+	43	[658]	MOVE     	6 3
+	44	[658]	CALL     	4 3 1
+	45	[660]	SETTABLE 	0 -8 -19	; "m_firstShowDeliver" false
+	46	[663]	GETTABLE 	3 0 -20	; "m_button"
+	47	[663]	GETTABLE 	3 3 -21	; "gameObject"
+	48	[663]	SELF     	3 3 -22	; "SetActive"
+	49	[663]	MOVE     	5 1
+	50	[663]	CALL     	3 3 1
+	51	[664]	GETTABLE 	3 0 -23	; "m_starEffectGo"
+	52	[664]	SELF     	3 3 -22	; "SetActive"
+	53	[664]	MOVE     	5 1
+	54	[664]	CALL     	3 3 1
+	55	[665]	GETTABLE 	3 0 -24	; "m_radianceGo"
+	56	[665]	SELF     	3 3 -22	; "SetActive"
+	57	[665]	MOVE     	5 1
+	58	[665]	CALL     	3 3 1
+	59	[666]	SETTABLE 	0 -7 1	; "m_showDeliver" -
+	60	[668]	GETTABLE 	3 0 -25	; "m_avatar"
+	61	[668]	EQ       	1 3 -16	; - nil
+	62	[668]	JMP      	0 3	; to 66
+	63	[669]	GETTABLE 	3 0 -25	; "m_avatar"
+	64	[669]	SELF     	3 3 -26	; "OnOrderStateChanged"
+	65	[669]	CALL     	3 2 1
+	66	[672]	GETTABUP 	3 0 -27	; _ENV "ipairs"
+	67	[672]	GETTABLE 	4 0 -28	; "m_icons"
+	68	[672]	CALL     	3 2 4
+	69	[672]	JMP      	0 2	; to 72
+	70	[673]	SELF     	8 7 -26	; "OnOrderStateChanged"
+	71	[673]	CALL     	8 2 1
+	72	[672]	TFORCALL 	3 2
+	73	[672]	TFORLOOP 	5 -4	; to 70
+	74	[675]	RETURN   	0 1
+constants (28) for 00000298423201E0:
+	1	"m_playingAnimation"
+	2	"m_order"
+	3	"GetState"
+	4	"OrderState"
+	5	"CanDeliver"
+	6	"CheckHaveFinshOrderInActivity"
+	7	"m_showDeliver"
+	8	"m_firstShowDeliver"
+	9	"GM"
+	10	"SceneManager"
+	11	"GetGameMode"
+	12	"EGameMode"
+	13	"Main"
+	14	"ScrollToOrder"
+	15	"GetDeliverAudioEffectName"
+	16	nil
+	17	"AudioModel"
+	18	"PlayEffect"
+	19	false
+	20	"m_button"
+	21	"gameObject"
+	22	"SetActive"
+	23	"m_starEffectGo"
+	24	"m_radianceGo"
+	25	"m_avatar"
+	26	"OnOrderStateChanged"
+	27	"ipairs"
+	28	"m_icons"
+locals (9) for 00000298423201E0:
+	0	self	1	75
+	1	canDeliverOrder	14	75
+	2	bHaveFinishOrder	16	75
+	3	soundName	38	46
+	4	(for generator)	69	74
+	5	(for state)	69	74
+	6	(for control)	69	74
+	7	_	70	72
+	8	icon	70	72
+upvalues (1) for 00000298423201E0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:677,679> (5 instructions at 0000029842320860)
+1 param, 4 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[678]	GETTABLE 	1 0 -1	; "m_orderArea"
+	2	[678]	SELF     	1 1 -2	; "ScrollToRectTransformMiddle"
+	3	[678]	GETTABLE 	3 0 -3	; "transform"
+	4	[678]	CALL     	1 3 1
+	5	[679]	RETURN   	0 1
+constants (3) for 0000029842320860:
+	1	"m_orderArea"
+	2	"ScrollToRectTransformMiddle"
+	3	"transform"
+locals (1) for 0000029842320860:
+	0	self	1	6
+upvalues (0) for 0000029842320860:
+
+function <BaseOrderCell.lua:681,685> (11 instructions at 00000298423204E0)
+1 param, 4 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[682]	GETTABLE 	1 0 -1	; "m_orderArea"
+	2	[682]	SELF     	1 1 -2	; "OrderIsInView"
+	3	[682]	GETTABLE 	3 0 -3	; "transform"
+	4	[682]	CALL     	1 3 2
+	5	[682]	TEST     	1 1
+	6	[682]	JMP      	0 4	; to 11
+	7	[683]	GETTABLE 	1 0 -1	; "m_orderArea"
+	8	[683]	SELF     	1 1 -4	; "ScrollToRectTransformMiddle"
+	9	[683]	GETTABLE 	3 0 -3	; "transform"
+	10	[683]	CALL     	1 3 1
+	11	[685]	RETURN   	0 1
+constants (4) for 00000298423204E0:
+	1	"m_orderArea"
+	2	"OrderIsInView"
+	3	"transform"
+	4	"ScrollToRectTransformMiddle"
+locals (1) for 00000298423204E0:
+	0	self	1	12
+upvalues (0) for 00000298423204E0:
+
+function <BaseOrderCell.lua:688,708> (24 instructions at 0000029842322060)
+1 param, 6 slots, 1 upvalue, 2 locals, 13 constants, 2 functions
+	1	[689]	SETTABLE 	0 -1 -2	; "m_playingAnimation" true
+	2	[691]	GETTABUP 	1 0 -3	; _ENV "DOTween"
+	3	[691]	GETTABLE 	1 1 -4	; "Sequence"
+	4	[691]	CALL     	1 1 2
+	5	[692]	GETTABLE 	2 0 -5	; "m_order"
+	6	[692]	SELF     	2 2 -6	; "GetState"
+	7	[692]	CALL     	2 2 2
+	8	[692]	GETTABUP 	3 0 -7	; _ENV "OrderState"
+	9	[692]	GETTABLE 	3 3 -8	; "Dormant"
+	10	[692]	EQ       	1 2 3
+	11	[692]	JMP      	0 4	; to 16
+	12	[694]	SELF     	2 1 -9	; "Append"
+	13	[694]	SELF     	4 0 -10	; "PlayTrayAnimation"
+	14	[694]	CALL     	4 2 0
+	15	[694]	CALL     	2 0 1
+	16	[696]	SELF     	2 1 -11	; "InsertCallback"
+	17	[696]	LOADK    	4 -12	; 0.2
+	18	[703]	CLOSURE  	5 0	; 00000298423211E0
+	19	[696]	CALL     	2 4 1
+	20	[704]	SELF     	2 1 -11	; "InsertCallback"
+	21	[704]	LOADK    	4 -13	; 1.1
+	22	[707]	CLOSURE  	5 1	; 00000298423212E0
+	23	[704]	CALL     	2 4 1
+	24	[708]	RETURN   	0 1
+constants (13) for 0000029842322060:
+	1	"m_playingAnimation"
+	2	true
+	3	"DOTween"
+	4	"Sequence"
+	5	"m_order"
+	6	"GetState"
+	7	"OrderState"
+	8	"Dormant"
+	9	"Append"
+	10	"PlayTrayAnimation"
+	11	"InsertCallback"
+	12	0.2
+	13	1.1
+locals (2) for 0000029842322060:
+	0	self	1	25
+	1	sequence	5	25
+upvalues (1) for 0000029842322060:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:696,703> (13 instructions at 00000298423211E0)
+0 params, 3 slots, 1 upvalue, 0 locals, 6 constants, 0 functions
+	1	[697]	GETTABUP 	0 0 -1	; self "m_avatar"
+	2	[697]	EQ       	1 0 -2	; - nil
+	3	[697]	JMP      	0 8	; to 12
+	4	[698]	GETTABUP 	0 0 -1	; self "m_avatar"
+	5	[698]	SELF     	0 0 -3	; "SetTransparent"
+	6	[698]	LOADBOOL 	2 0 0
+	7	[698]	CALL     	0 3 1
+	8	[699]	GETTABUP 	0 0 -1	; self "m_avatar"
+	9	[699]	SELF     	0 0 -4	; "PlayEnterAnimation"
+	10	[699]	CALL     	0 2 1
+	11	[699]	JMP      	0 1	; to 13
+	12	[701]	SETTABUP 	0 -5 -6	; self "m_bAvatarUpdateStateAfterLoad" true
+	13	[703]	RETURN   	0 1
+constants (6) for 00000298423211E0:
+	1	"m_avatar"
+	2	nil
+	3	"SetTransparent"
+	4	"PlayEnterAnimation"
+	5	"m_bAvatarUpdateStateAfterLoad"
+	6	true
+locals (0) for 00000298423211E0:
+upvalues (1) for 00000298423211E0:
+	0	self	1	0
+
+function <BaseOrderCell.lua:704,707> (5 instructions at 00000298423212E0)
+0 params, 2 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[705]	SETTABUP 	0 -1 -2	; self "m_playingAnimation" false
+	2	[706]	GETUPVAL 	0 0	; self
+	3	[706]	SELF     	0 0 -3	; "OnOrderStateChanged"
+	4	[706]	CALL     	0 2 1
+	5	[707]	RETURN   	0 1
+constants (3) for 00000298423212E0:
+	1	"m_playingAnimation"
+	2	false
+	3	"OnOrderStateChanged"
+locals (0) for 00000298423212E0:
+upvalues (1) for 00000298423212E0:
+	0	self	1	0
+
+function <BaseOrderCell.lua:710,718> (28 instructions at 0000029842320760)
+1 param, 8 slots, 1 upvalue, 2 locals, 14 constants, 0 functions
+	1	[711]	GETTABLE 	1 0 -1	; "m_tray"
+	2	[711]	GETTABUP 	2 0 -3	; _ENV "Vector3"
+	3	[711]	GETTABLE 	2 2 -4	; "zero"
+	4	[711]	SETTABLE 	1 -2 2	; "localScale" -
+	5	[712]	GETTABLE 	1 0 -1	; "m_tray"
+	6	[712]	GETTABLE 	1 1 -5	; "gameObject"
+	7	[712]	SELF     	1 1 -6	; "SetActive"
+	8	[712]	LOADBOOL 	3 1 0
+	9	[712]	CALL     	1 3 1
+	10	[714]	GETTABUP 	1 0 -7	; _ENV "DOTween"
+	11	[714]	GETTABLE 	1 1 -8	; "Sequence"
+	12	[714]	CALL     	1 1 2
+	13	[715]	SELF     	2 1 -9	; "Append"
+	14	[715]	GETTABLE 	4 0 -1	; "m_tray"
+	15	[715]	SELF     	4 4 -10	; "DOScale"
+	16	[715]	LOADK    	6 -11	; 1.1
+	17	[715]	LOADK    	7 -12	; 0.5
+	18	[715]	CALL     	4 4 0
+	19	[715]	CALL     	2 0 1
+	20	[716]	SELF     	2 1 -9	; "Append"
+	21	[716]	GETTABLE 	4 0 -1	; "m_tray"
+	22	[716]	SELF     	4 4 -10	; "DOScale"
+	23	[716]	LOADK    	6 -13	; 1.0
+	24	[716]	LOADK    	7 -14	; 0.2
+	25	[716]	CALL     	4 4 0
+	26	[716]	CALL     	2 0 1
+	27	[717]	RETURN   	1 2
+	28	[718]	RETURN   	0 1
+constants (14) for 0000029842320760:
+	1	"m_tray"
+	2	"localScale"
+	3	"Vector3"
+	4	"zero"
+	5	"gameObject"
+	6	"SetActive"
+	7	"DOTween"
+	8	"Sequence"
+	9	"Append"
+	10	"DOScale"
+	11	1.1
+	12	0.5
+	13	1.0
+	14	0.2
+locals (2) for 0000029842320760:
+	0	self	1	29
+	1	sequence	13	29
+upvalues (1) for 0000029842320760:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:720,729> (22 instructions at 0000029842320EE0)
+1 param, 8 slots, 1 upvalue, 2 locals, 10 constants, 1 function
+	1	[721]	GETTABUP 	1 0 -1	; _ENV "DOTween"
+	2	[721]	GETTABLE 	1 1 -2	; "Sequence"
+	3	[721]	CALL     	1 1 2
+	4	[722]	SELF     	2 1 -3	; "Append"
+	5	[722]	GETTABLE 	4 0 -4	; "m_tray"
+	6	[722]	SELF     	4 4 -5	; "DOScale"
+	7	[722]	LOADK    	6 -6	; 1.1
+	8	[722]	LOADK    	7 -7	; 0.2
+	9	[722]	CALL     	4 4 0
+	10	[722]	CALL     	2 0 1
+	11	[723]	SELF     	2 1 -3	; "Append"
+	12	[723]	GETTABLE 	4 0 -4	; "m_tray"
+	13	[723]	SELF     	4 4 -5	; "DOScale"
+	14	[723]	LOADK    	6 -8	; 0.0
+	15	[723]	LOADK    	7 -9	; 0.5
+	16	[723]	CALL     	4 4 0
+	17	[723]	CALL     	2 0 1
+	18	[724]	SELF     	2 1 -10	; "OnComplete"
+	19	[727]	CLOSURE  	4 0	; 00000298423219E0
+	20	[724]	CALL     	2 3 1
+	21	[728]	RETURN   	1 2
+	22	[729]	RETURN   	0 1
+constants (10) for 0000029842320EE0:
+	1	"DOTween"
+	2	"Sequence"
+	3	"Append"
+	4	"m_tray"
+	5	"DOScale"
+	6	1.1
+	7	0.2
+	8	0.0
+	9	0.5
+	10	"OnComplete"
+locals (2) for 0000029842320EE0:
+	0	self	1	23
+	1	sequence	4	23
+upvalues (1) for 0000029842320EE0:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:724,727> (10 instructions at 00000298423219E0)
+0 params, 3 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[725]	GETTABUP 	0 0 -1	; self "m_tray"
+	2	[725]	GETTABUP 	1 1 -3	; _ENV "Vector3"
+	3	[725]	GETTABLE 	1 1 -4	; "zero"
+	4	[725]	SETTABLE 	0 -2 1	; "localScale" -
+	5	[726]	GETTABUP 	0 0 -1	; self "m_tray"
+	6	[726]	GETTABLE 	0 0 -5	; "gameObject"
+	7	[726]	SELF     	0 0 -6	; "SetActive"
+	8	[726]	LOADBOOL 	2 0 0
+	9	[726]	CALL     	0 3 1
+	10	[727]	RETURN   	0 1
+constants (6) for 00000298423219E0:
+	1	"m_tray"
+	2	"localScale"
+	3	"Vector3"
+	4	"zero"
+	5	"gameObject"
+	6	"SetActive"
+locals (0) for 00000298423219E0:
+upvalues (2) for 00000298423219E0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseOrderCell.lua:731,777> (64 instructions at 0000029842320D60)
+3 params, 13 slots, 1 upvalue, 6 locals, 28 constants, 3 functions
+	1	[732]	SETTABLE 	0 -1 -2	; "m_playingAnimation" true
+	2	[735]	GETTABLE 	3 0 -3	; "m_avatar"
+	3	[735]	EQ       	0 3 -4	; - nil
+	4	[735]	JMP      	0 1	; to 6
+	5	[735]	LOADBOOL 	3 0 1
+	6	[735]	LOADBOOL 	3 1 0
+	7	[737]	TEST     	3 0
+	8	[737]	JMP      	0 5	; to 14
+	9	[738]	GETTABLE 	4 0 -3	; "m_avatar"
+	10	[738]	SELF     	4 4 -5	; "SetTransparent"
+	11	[738]	LOADBOOL 	6 1 0
+	12	[738]	CALL     	4 3 1
+	13	[738]	JMP      	0 1	; to 15
+	14	[740]	SETTABLE 	0 -6 -2	; "m_bAvatarUpdateStateAfterLoad" true
+	15	[743]	GETTABLE 	4 0 -7	; "m_radianceGo"
+	16	[743]	SELF     	4 4 -8	; "SetActive"
+	17	[743]	LOADBOOL 	6 0 0
+	18	[743]	CALL     	4 3 1
+	19	[744]	GETTABLE 	4 0 -9	; "m_starEffectGo"
+	20	[744]	SELF     	4 4 -8	; "SetActive"
+	21	[744]	LOADBOOL 	6 0 0
+	22	[744]	CALL     	4 3 1
+	23	[745]	GETTABLE 	4 0 -10	; "m_tray"
+	24	[745]	GETTABLE 	4 4 -11	; "gameObject"
+	25	[745]	SELF     	4 4 -8	; "SetActive"
+	26	[745]	LOADBOOL 	6 0 0
+	27	[745]	CALL     	4 3 1
+	28	[746]	GETTABLE 	4 0 -12	; "m_rewards"
+	29	[746]	GETTABLE 	4 4 -11	; "gameObject"
+	30	[746]	SELF     	4 4 -8	; "SetActive"
+	31	[746]	LOADBOOL 	6 0 0
+	32	[746]	CALL     	4 3 1
+	33	[748]	GETTABLE 	4 0 -13	; "m_button"
+	34	[748]	SELF     	4 4 -14	; "GetComponent"
+	35	[748]	GETTABUP 	6 0 -15	; _ENV "typeof"
+	36	[748]	GETTABUP 	7 0 -16	; _ENV "CS"
+	37	[748]	GETTABLE 	7 7 -17	; "UnityEngine"
+	38	[748]	GETTABLE 	7 7 -18	; "CanvasGroup"
+	39	[748]	CALL     	6 2 0
+	40	[748]	CALL     	4 0 2
+	41	[749]	SETTABLE 	4 -19 -20	; "alpha" 0
+	42	[751]	GETTABUP 	5 0 -21	; _ENV "DOTween"
+	43	[751]	GETTABLE 	5 5 -22	; "Sequence"
+	44	[751]	CALL     	5 1 2
+	45	[752]	SELF     	6 5 -23	; "InsertCallback"
+	46	[752]	MOVE     	8 1
+	47	[757]	CLOSURE  	9 0	; 0000029842321CE0
+	48	[752]	CALL     	6 4 1
+	49	[759]	SELF     	6 5 -23	; "InsertCallback"
+	50	[759]	MOVE     	8 2
+	51	[770]	CLOSURE  	9 1	; 0000029842320C60
+	52	[759]	CALL     	6 4 1
+	53	[772]	SELF     	6 5 -24	; "Insert"
+	54	[772]	ADD      	8 2 -25	; - 0.3
+	55	[772]	SELF     	9 4 -26	; "DOFade"
+	56	[772]	LOADK    	11 -27	; 1
+	57	[772]	LOADK    	12 -25	; 0.3
+	58	[772]	CALL     	9 4 0
+	59	[772]	CALL     	6 0 1
+	60	[773]	SELF     	6 5 -23	; "InsertCallback"
+	61	[773]	ADD      	8 2 -28	; - 0.7
+	62	[776]	CLOSURE  	9 2	; 0000029842320CE0
+	63	[773]	CALL     	6 4 1
+	64	[777]	RETURN   	0 1
+constants (28) for 0000029842320D60:
+	1	"m_playingAnimation"
+	2	true
+	3	"m_avatar"
+	4	nil
+	5	"SetTransparent"
+	6	"m_bAvatarUpdateStateAfterLoad"
+	7	"m_radianceGo"
+	8	"SetActive"
+	9	"m_starEffectGo"
+	10	"m_tray"
+	11	"gameObject"
+	12	"m_rewards"
+	13	"m_button"
+	14	"GetComponent"
+	15	"typeof"
+	16	"CS"
+	17	"UnityEngine"
+	18	"CanvasGroup"
+	19	"alpha"
+	20	0
+	21	"DOTween"
+	22	"Sequence"
+	23	"InsertCallback"
+	24	"Insert"
+	25	0.3
+	26	"DOFade"
+	27	1
+	28	0.7
+locals (6) for 0000029842320D60:
+	0	self	1	65
+	1	showUIDelay	1	65
+	2	showAvatarDelay	1	65
+	3	avatarExists	7	65
+	4	buttonGroup	41	65
+	5	sequence	45	65
+upvalues (1) for 0000029842320D60:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:752,757> (18 instructions at 0000029842321CE0)
+0 params, 3 slots, 2 upvalues, 0 locals, 8 constants, 0 functions
+	1	[753]	GETTABUP 	0 0 -1	; self "m_order"
+	2	[753]	SELF     	0 0 -2	; "GetState"
+	3	[753]	CALL     	0 2 2
+	4	[753]	GETTABUP 	1 1 -3	; _ENV "OrderState"
+	5	[753]	GETTABLE 	1 1 -4	; "Dormant"
+	6	[753]	EQ       	1 0 1
+	7	[753]	JMP      	0 10	; to 18
+	8	[754]	GETTABUP 	0 0 -5	; self "m_tray"
+	9	[754]	GETTABLE 	0 0 -6	; "gameObject"
+	10	[754]	SELF     	0 0 -7	; "SetActive"
+	11	[754]	LOADBOOL 	2 1 0
+	12	[754]	CALL     	0 3 1
+	13	[755]	GETTABUP 	0 0 -8	; self "m_rewards"
+	14	[755]	GETTABLE 	0 0 -6	; "gameObject"
+	15	[755]	SELF     	0 0 -7	; "SetActive"
+	16	[755]	LOADBOOL 	2 1 0
+	17	[755]	CALL     	0 3 1
+	18	[757]	RETURN   	0 1
+constants (8) for 0000029842321CE0:
+	1	"m_order"
+	2	"GetState"
+	3	"OrderState"
+	4	"Dormant"
+	5	"m_tray"
+	6	"gameObject"
+	7	"SetActive"
+	8	"m_rewards"
+locals (0) for 0000029842321CE0:
+upvalues (2) for 0000029842321CE0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseOrderCell.lua:759,770> (32 instructions at 0000029842320C60)
+0 params, 3 slots, 3 upvalues, 0 locals, 12 constants, 0 functions
+	1	[760]	GETUPVAL 	0 0	; avatarExists
+	2	[760]	TEST     	0 0
+	3	[760]	JMP      	0 13	; to 17
+	4	[760]	GETTABUP 	0 1 -1	; self "m_avatar"
+	5	[760]	EQ       	1 0 -2	; - nil
+	6	[760]	JMP      	0 10	; to 17
+	7	[761]	GETTABUP 	0 1 -1	; self "m_avatar"
+	8	[761]	SELF     	0 0 -3	; "SetTransparent"
+	9	[761]	LOADBOOL 	2 0 0
+	10	[761]	CALL     	0 3 1
+	11	[762]	GETTABUP 	0 1 -1	; self "m_avatar"
+	12	[762]	SELF     	0 0 -4	; "ClearTracks"
+	13	[762]	CALL     	0 2 1
+	14	[763]	GETTABUP 	0 1 -1	; self "m_avatar"
+	15	[763]	SELF     	0 0 -5	; "PlayEnterAnimation"
+	16	[763]	CALL     	0 2 1
+	17	[766]	GETTABUP 	0 1 -6	; self "m_order"
+	18	[766]	SELF     	0 0 -7	; "GetState"
+	19	[766]	CALL     	0 2 2
+	20	[766]	GETTABUP 	1 2 -8	; _ENV "OrderState"
+	21	[766]	GETTABLE 	1 1 -9	; "CanDeliver"
+	22	[766]	EQ       	0 0 1
+	23	[766]	JMP      	0 8	; to 32
+	24	[767]	GETTABUP 	0 1 -10	; self "m_radianceGo"
+	25	[767]	SELF     	0 0 -11	; "SetActive"
+	26	[767]	LOADBOOL 	2 1 0
+	27	[767]	CALL     	0 3 1
+	28	[768]	GETTABUP 	0 1 -12	; self "m_starEffectGo"
+	29	[768]	SELF     	0 0 -11	; "SetActive"
+	30	[768]	LOADBOOL 	2 1 0
+	31	[768]	CALL     	0 3 1
+	32	[770]	RETURN   	0 1
+constants (12) for 0000029842320C60:
+	1	"m_avatar"
+	2	nil
+	3	"SetTransparent"
+	4	"ClearTracks"
+	5	"PlayEnterAnimation"
+	6	"m_order"
+	7	"GetState"
+	8	"OrderState"
+	9	"CanDeliver"
+	10	"m_radianceGo"
+	11	"SetActive"
+	12	"m_starEffectGo"
+locals (0) for 0000029842320C60:
+upvalues (3) for 0000029842320C60:
+	0	avatarExists	1	3
+	1	self	1	0
+	2	_ENV	0	0
+
+function <BaseOrderCell.lua:773,776> (5 instructions at 0000029842320CE0)
+0 params, 2 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[774]	SETTABUP 	0 -1 -2	; self "m_playingAnimation" false
+	2	[775]	GETUPVAL 	0 0	; self
+	3	[775]	SELF     	0 0 -3	; "OnOrderStateChanged"
+	4	[775]	CALL     	0 2 1
+	5	[776]	RETURN   	0 1
+constants (3) for 0000029842320CE0:
+	1	"m_playingAnimation"
+	2	false
+	3	"OnOrderStateChanged"
+locals (0) for 0000029842320CE0:
+upvalues (1) for 0000029842320CE0:
+	0	self	1	0
+
+function <BaseOrderCell.lua:779,803> (47 instructions at 0000029842320B60)
+1 param, 9 slots, 1 upvalue, 6 locals, 18 constants, 0 functions
+	1	[780]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[780]	GETTABLE 	1 1 -2	; "AudioModel"
+	3	[780]	SELF     	1 1 -3	; "PlayEffect"
+	4	[780]	GETTABUP 	3 0 -4	; _ENV "AudioFileConfigName"
+	5	[780]	GETTABLE 	3 3 -5	; "SfxMergeCollectCoins"
+	6	[780]	CALL     	1 3 1
+	7	[783]	GETTABLE 	1 0 -6	; "m_SpecialRewardsRectTrans"
+	8	[783]	TEST     	1 0
+	9	[783]	JMP      	0 6	; to 16
+	10	[784]	GETTABUP 	1 0 -7	; _ENV "UIUtil"
+	11	[784]	GETTABLE 	1 1 -8	; "SetActive"
+	12	[784]	GETTABLE 	2 0 -6	; "m_SpecialRewardsRectTrans"
+	13	[784]	GETTABLE 	2 2 -9	; "gameObject"
+	14	[784]	LOADBOOL 	3 0 0
+	15	[784]	CALL     	1 3 1
+	16	[787]	GETTABLE 	1 0 -10	; "m_rewards"
+	17	[787]	GETTABLE 	1 1 -9	; "gameObject"
+	18	[787]	SELF     	1 1 -8	; "SetActive"
+	19	[787]	LOADBOOL 	3 0 0
+	20	[787]	CALL     	1 3 1
+	21	[791]	GETTABUP 	1 0 -11	; _ENV "pairs"
+	22	[791]	GETTABLE 	2 0 -12	; "m_specialRewardObjects"
+	23	[791]	CALL     	1 2 4
+	24	[791]	JMP      	0 15	; to 40
+	25	[792]	SELF     	6 5 -13	; "GetLuaTable"
+	26	[792]	CALL     	6 2 2
+	27	[792]	GETTABLE 	6 6 -14	; "PlayDestoryAnimation"
+	28	[792]	TEST     	6 1
+	29	[792]	JMP      	0 6	; to 36
+	30	[793]	GETTABUP 	6 0 -7	; _ENV "UIUtil"
+	31	[793]	GETTABLE 	6 6 -8	; "SetActive"
+	32	[793]	MOVE     	7 5
+	33	[793]	LOADBOOL 	8 0 0
+	34	[793]	CALL     	6 3 1
+	35	[793]	JMP      	0 4	; to 40
+	36	[795]	SELF     	6 5 -13	; "GetLuaTable"
+	37	[795]	CALL     	6 2 2
+	38	[795]	SELF     	6 6 -14	; "PlayDestoryAnimation"
+	39	[795]	CALL     	6 2 1
+	40	[791]	TFORCALL 	1 2
+	41	[791]	TFORLOOP 	3 -17	; to 25
+	42	[802]	GETTABUP 	1 0 -15	; _ENV "Object"
+	43	[802]	GETTABLE 	1 1 -16	; "Instantiate"
+	44	[802]	GETTABLE 	2 0 -17	; "m_coinEffectPrefab"
+	45	[802]	GETTABLE 	3 0 -18	; "m_tray"
+	46	[802]	CALL     	1 3 1
+	47	[803]	RETURN   	0 1
+constants (18) for 0000029842320B60:
+	1	"GM"
+	2	"AudioModel"
+	3	"PlayEffect"
+	4	"AudioFileConfigName"
+	5	"SfxMergeCollectCoins"
+	6	"m_SpecialRewardsRectTrans"
+	7	"UIUtil"
+	8	"SetActive"
+	9	"gameObject"
+	10	"m_rewards"
+	11	"pairs"
+	12	"m_specialRewardObjects"
+	13	"GetLuaTable"
+	14	"PlayDestoryAnimation"
+	15	"Object"
+	16	"Instantiate"
+	17	"m_coinEffectPrefab"
+	18	"m_tray"
+locals (6) for 0000029842320B60:
+	0	self	1	48
+	1	(for generator)	24	42
+	2	(for state)	24	42
+	3	(for control)	24	42
+	4	key	25	40
+	5	object	25	40
+upvalues (1) for 0000029842320B60:
+	0	_ENV	0	0
+
+function <BaseOrderCell.lua:805,810> (7 instructions at 00000298423202E0)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[807]	GETTABLE 	1 0 -1	; "m_avatar"
+	2	[807]	EQ       	1 1 -2	; - nil
+	3	[807]	JMP      	0 3	; to 7
+	4	[808]	GETTABLE 	1 0 -1	; "m_avatar"
+	5	[808]	SELF     	1 1 -3	; "PlayLeaveAnimation"
+	6	[808]	CALL     	1 2 1
+	7	[810]	RETURN   	0 1
+constants (3) for 00000298423202E0:
+	1	"m_avatar"
+	2	nil
+	3	"PlayLeaveAnimation"
+locals (1) for 00000298423202E0:
+	0	self	1	8
+upvalues (0) for 00000298423202E0:
+
+function <BaseOrderCell.lua:812,814> (5 instructions at 0000029842320BE0)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[813]	GETTABLE 	2 0 -1	; "m_handEffectGo"
+	2	[813]	SELF     	2 2 -2	; "SetActive"
+	3	[813]	MOVE     	4 1
+	4	[813]	CALL     	2 3 1
+	5	[814]	RETURN   	0 1
+constants (2) for 0000029842320BE0:
+	1	"m_handEffectGo"
+	2	"SetActive"
+locals (2) for 0000029842320BE0:
+	0	self	1	6
+	1	active	1	6
+upvalues (0) for 0000029842320BE0:
+
+function <BaseOrderCell.lua:816,818> (7 instructions at 0000029842320DE0)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[817]	GETTABUP 	1 0 -1	; _ENV "UIUtil"
+	2	[817]	GETTABLE 	1 1 -2	; "SetActive"
+	3	[817]	GETTABLE 	2 0 -3	; "m_tray"
+	4	[817]	GETTABLE 	2 2 -4	; "gameObject"
+	5	[817]	LOADBOOL 	3 0 0
+	6	[817]	CALL     	1 3 1
+	7	[818]	RETURN   	0 1
+constants (4) for 0000029842320DE0:
+	1	"UIUtil"
+	2	"SetActive"
+	3	"m_tray"
+	4	"gameObject"
+locals (1) for 0000029842320DE0:
+	0	self	1	8
+upvalues (1) for 0000029842320DE0:
+	0	_ENV	0	0

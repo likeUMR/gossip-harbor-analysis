@@ -1,0 +1,549 @@
+
+main <BaseItemLayerModel.lua:0,0> (42 instructions at 000001995CB7F000)
+0+ params, 2 slots, 1 upvalue, 0 locals, 14 constants, 12 functions
+	1	[4]	NEWTABLE 	0 0 0
+	2	[4]	SETTABUP 	0 -1 0	; _ENV "BaseItemLayerModel"
+	3	[5]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	4	[5]	GETTABUP 	1 0 -1	; _ENV "BaseItemLayerModel"
+	5	[5]	SETTABLE 	0 -2 1	; "__index" -
+	6	[8]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	7	[11]	CLOSURE  	1 0	; 000001995CB81740
+	8	[8]	SETTABLE 	0 -3 1	; "Init" -
+	9	[15]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	10	[17]	CLOSURE  	1 1	; 000001995CB817C0
+	11	[15]	SETTABLE 	0 -4 1	; "GetItem" -
+	12	[21]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	13	[23]	CLOSURE  	1 2	; 000001995CB81840
+	14	[21]	SETTABLE 	0 -5 1	; "SetItem" -
+	15	[26]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	16	[28]	CLOSURE  	1 3	; 000001995CB818C0
+	17	[26]	SETTABLE 	0 -6 1	; "_GetEmptyPositionCount" -
+	18	[30]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	19	[32]	CLOSURE  	1 4	; 000001995CB81940
+	20	[30]	SETTABLE 	0 -7 1	; "HasEmptyPosition" -
+	21	[36]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	22	[55]	CLOSURE  	1 5	; 000001995CB819C0
+	23	[36]	SETTABLE 	0 -8 1	; "FindEmptyPositionInSpreadOrder" -
+	24	[61]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	25	[95]	CLOSURE  	1 6	; 000001995CB82640
+	26	[61]	SETTABLE 	0 -9 1	; "FindEmptyPositionInSpreadOrderWithNum" -
+	27	[99]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	28	[108]	CLOSURE  	1 7	; 000001995CB82C20
+	29	[99]	SETTABLE 	0 -10 1	; "FindEmptyPositionInValidOrder" -
+	30	[111]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	31	[123]	CLOSURE  	1 8	; 000001995CB82CA0
+	32	[111]	SETTABLE 	0 -11 1	; "FindEmptyPositionInDiagonalOrderWithNum" -
+	33	[127]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	34	[135]	CLOSURE  	1 9	; 000001995CB82EE0
+	35	[127]	SETTABLE 	0 -12 1	; "FindEmptyPositionInCircleOrder" -
+	36	[137]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	37	[146]	CLOSURE  	1 10	; 000001995CB83900
+	38	[137]	SETTABLE 	0 -13 1	; "FindRandomPosition" -
+	39	[149]	GETTABUP 	0 0 -1	; _ENV "BaseItemLayerModel"
+	40	[151]	CLOSURE  	1 11	; 000001995CB84560
+	41	[149]	SETTABLE 	0 -14 1	; "GetAllItems" -
+	42	[151]	RETURN   	0 1
+constants (14) for 000001995CB7F000:
+	1	"BaseItemLayerModel"
+	2	"__index"
+	3	"Init"
+	4	"GetItem"
+	5	"SetItem"
+	6	"_GetEmptyPositionCount"
+	7	"HasEmptyPosition"
+	8	"FindEmptyPositionInSpreadOrder"
+	9	"FindEmptyPositionInSpreadOrderWithNum"
+	10	"FindEmptyPositionInValidOrder"
+	11	"FindEmptyPositionInDiagonalOrderWithNum"
+	12	"FindEmptyPositionInCircleOrder"
+	13	"FindRandomPosition"
+	14	"GetAllItems"
+locals (0) for 000001995CB7F000:
+upvalues (1) for 000001995CB7F000:
+	0	_ENV	1	0
+
+function <BaseItemLayerModel.lua:8,11> (5 instructions at 000001995CB81740)
+2 params, 4 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[9]	SETTABLE 	0 -1 1	; "m_boardModel" -
+	2	[10]	SELF     	2 1 -3	; "CreateMatrix"
+	3	[10]	CALL     	2 2 2
+	4	[10]	SETTABLE 	0 -2 2	; "m_items" -
+	5	[11]	RETURN   	0 1
+constants (3) for 000001995CB81740:
+	1	"m_boardModel"
+	2	"m_items"
+	3	"CreateMatrix"
+locals (2) for 000001995CB81740:
+	0	self	1	6
+	1	boardModel	1	6
+upvalues (0) for 000001995CB81740:
+
+function <BaseItemLayerModel.lua:15,17> (6 instructions at 000001995CB817C0)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[16]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[16]	GETTABLE 	2 2 -2	; "Assert"
+	3	[16]	LOADBOOL 	3 0 0
+	4	[16]	LOADK    	4 -3	; "GetItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[16]	CALL     	2 3 1
+	6	[17]	RETURN   	0 1
+constants (3) for 000001995CB817C0:
+	1	"Log"
+	2	"Assert"
+	3	"GetItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (2) for 000001995CB817C0:
+	0	self	1	7
+	1	position	1	7
+upvalues (1) for 000001995CB817C0:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:21,23> (6 instructions at 000001995CB81840)
+3 params, 6 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[22]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[22]	GETTABLE 	3 3 -2	; "Assert"
+	3	[22]	LOADBOOL 	4 0 0
+	4	[22]	LOADK    	5 -3	; "SetItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[22]	CALL     	3 3 1
+	6	[23]	RETURN   	0 1
+constants (3) for 000001995CB81840:
+	1	"Log"
+	2	"Assert"
+	3	"SetItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (3) for 000001995CB81840:
+	0	self	1	7
+	1	position	1	7
+	2	item	1	7
+upvalues (1) for 000001995CB81840:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:26,28> (6 instructions at 000001995CB818C0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[27]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[27]	GETTABLE 	1 1 -2	; "Assert"
+	3	[27]	LOADBOOL 	2 0 0
+	4	[27]	LOADK    	3 -3	; "_GetEmptyPositionCount()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[27]	CALL     	1 3 1
+	6	[28]	RETURN   	0 1
+constants (3) for 000001995CB818C0:
+	1	"Log"
+	2	"Assert"
+	3	"_GetEmptyPositionCount()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 000001995CB818C0:
+	0	self	1	7
+upvalues (1) for 000001995CB818C0:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:30,32> (8 instructions at 000001995CB81940)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[31]	SELF     	1 0 -1	; "_GetEmptyPositionCount"
+	2	[31]	CALL     	1 2 2
+	3	[31]	LT       	1 -2 1	; 0 -
+	4	[31]	JMP      	0 1	; to 6
+	5	[31]	LOADBOOL 	1 0 1
+	6	[31]	LOADBOOL 	1 1 0
+	7	[31]	RETURN   	1 2
+	8	[32]	RETURN   	0 1
+constants (2) for 000001995CB81940:
+	1	"_GetEmptyPositionCount"
+	2	0
+locals (1) for 000001995CB81940:
+	0	self	1	9
+upvalues (0) for 000001995CB81940:
+
+function <BaseItemLayerModel.lua:36,55> (51 instructions at 000001995CB819C0)
+3 params, 21 slots, 1 upvalue, 18 locals, 15 constants, 0 functions
+	1	[37]	MOVE     	3 1
+	2	[38]	GETTABUP 	4 0 -1	; _ENV "math"
+	3	[38]	GETTABLE 	4 4 -2	; "max"
+	4	[38]	GETTABLE 	5 0 -3	; "m_boardModel"
+	5	[38]	GETTABLE 	5 5 -4	; "HorizontalTiles"
+	6	[38]	GETTABLE 	6 0 -3	; "m_boardModel"
+	7	[38]	GETTABLE 	6 6 -5	; "VerticalTiles"
+	8	[38]	CALL     	4 3 2
+	9	[39]	LOADK    	5 -6	; 1
+	10	[39]	SUB      	6 4 -6	; - 1
+	11	[39]	LOADK    	7 -6	; 1
+	12	[39]	FORPREP  	5 36	; to 49
+	13	[41]	GETTABUP 	9 0 -7	; _ENV "BoardPosition"
+	14	[41]	GETTABLE 	9 9 -8	; "GetDirPosition"
+	15	[41]	MOVE     	10 3
+	16	[41]	LOADK    	11 -9	; -1
+	17	[41]	LOADK    	12 -9	; -1
+	18	[41]	CALL     	9 4 2
+	19	[41]	MOVE     	3 9
+	20	[43]	MUL      	9 -10 8	; 2 -
+	21	[44]	LOADK    	10 -6	; 1
+	22	[44]	LOADK    	11 -11	; 4
+	23	[44]	LOADK    	12 -6	; 1
+	24	[44]	FORPREP  	10 23	; to 48
+	25	[45]	LOADK    	14 -6	; 1
+	26	[45]	MOVE     	15 9
+	27	[45]	LOADK    	16 -6	; 1
+	28	[45]	FORPREP  	14 18	; to 47
+	29	[46]	GETTABUP 	18 0 -7	; _ENV "BoardPosition"
+	30	[46]	GETTABLE 	18 18 -12	; "GetDir4Position"
+	31	[46]	MOVE     	19 3
+	32	[46]	MOVE     	20 13
+	33	[46]	CALL     	18 3 2
+	34	[46]	MOVE     	3 18
+	35	[47]	GETTABLE 	18 0 -3	; "m_boardModel"
+	36	[47]	SELF     	18 18 -13	; "PositionIsValid"
+	37	[47]	MOVE     	20 3
+	38	[47]	CALL     	18 3 2
+	39	[47]	TEST     	18 0
+	40	[47]	JMP      	0 6	; to 47
+	41	[47]	SELF     	18 0 -14	; "GetItem"
+	42	[47]	MOVE     	20 3
+	43	[47]	CALL     	18 3 2
+	44	[47]	EQ       	0 18 -15	; - nil
+	45	[47]	JMP      	0 1	; to 47
+	46	[48]	RETURN   	3 2
+	47	[45]	FORLOOP  	14 -19	; to 29
+	48	[44]	FORLOOP  	10 -24	; to 25
+	49	[39]	FORLOOP  	5 -37	; to 13
+	50	[54]	RETURN   	2 2
+	51	[55]	RETURN   	0 1
+constants (15) for 000001995CB819C0:
+	1	"math"
+	2	"max"
+	3	"m_boardModel"
+	4	"HorizontalTiles"
+	5	"VerticalTiles"
+	6	1
+	7	"BoardPosition"
+	8	"GetDirPosition"
+	9	-1
+	10	2
+	11	4
+	12	"GetDir4Position"
+	13	"PositionIsValid"
+	14	"GetItem"
+	15	nil
+locals (18) for 000001995CB819C0:
+	0	self	1	52
+	1	centerPosition	1	52
+	2	openedPosition	1	52
+	3	currentPosition	2	52
+	4	maxTiles	9	52
+	5	(for index)	12	50
+	6	(for limit)	12	50
+	7	(for step)	12	50
+	8	i	13	49
+	9	stepLength	21	49
+	10	(for index)	24	49
+	11	(for limit)	24	49
+	12	(for step)	24	49
+	13	dir	25	48
+	14	(for index)	28	48
+	15	(for limit)	28	48
+	16	(for step)	28	48
+	17	_	29	47
+upvalues (1) for 000001995CB819C0:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:61,95> (83 instructions at 000001995CB82640)
+5 params, 25 slots, 1 upvalue, 22 locals, 18 constants, 0 functions
+	1	[62]	NEWTABLE 	5 0 0
+	2	[63]	LOADK    	6 -1	; 0
+	3	[64]	MOVE     	7 1
+	4	[65]	TEST     	4 0
+	5	[65]	JMP      	0 20	; to 26
+	6	[66]	GETTABLE 	8 0 -2	; "m_boardModel"
+	7	[66]	SELF     	8 8 -3	; "PositionIsValid"
+	8	[66]	MOVE     	10 7
+	9	[66]	CALL     	8 3 2
+	10	[66]	TEST     	8 0
+	11	[66]	JMP      	0 14	; to 26
+	12	[66]	SELF     	8 0 -4	; "GetItem"
+	13	[66]	MOVE     	10 7
+	14	[66]	CALL     	8 3 2
+	15	[66]	EQ       	0 8 -5	; - nil
+	16	[66]	JMP      	0 9	; to 26
+	17	[67]	GETTABUP 	8 0 -6	; _ENV "table"
+	18	[67]	GETTABLE 	8 8 -7	; "insert"
+	19	[67]	MOVE     	9 5
+	20	[67]	MOVE     	10 7
+	21	[67]	CALL     	8 3 1
+	22	[68]	ADD      	6 6 -8	; - 1
+	23	[69]	LE       	0 3 6
+	24	[69]	JMP      	0 1	; to 26
+	25	[70]	RETURN   	5 2
+	26	[75]	GETTABUP 	8 0 -9	; _ENV "math"
+	27	[75]	GETTABLE 	8 8 -10	; "max"
+	28	[75]	GETTABLE 	9 0 -2	; "m_boardModel"
+	29	[75]	GETTABLE 	9 9 -11	; "HorizontalTiles"
+	30	[75]	GETTABLE 	10 0 -2	; "m_boardModel"
+	31	[75]	GETTABLE 	10 10 -12	; "VerticalTiles"
+	32	[75]	CALL     	8 3 2
+	33	[76]	LOADK    	9 -8	; 1
+	34	[76]	SUB      	10 8 -8	; - 1
+	35	[76]	LOADK    	11 -8	; 1
+	36	[76]	FORPREP  	9 44	; to 81
+	37	[78]	GETTABUP 	13 0 -13	; _ENV "BoardPosition"
+	38	[78]	GETTABLE 	13 13 -14	; "GetDirPosition"
+	39	[78]	MOVE     	14 7
+	40	[78]	LOADK    	15 -15	; -1
+	41	[78]	LOADK    	16 -15	; -1
+	42	[78]	CALL     	13 4 2
+	43	[78]	MOVE     	7 13
+	44	[79]	MUL      	13 -16 12	; 2 -
+	45	[80]	LOADK    	14 -8	; 1
+	46	[80]	LOADK    	15 -17	; 4
+	47	[80]	LOADK    	16 -8	; 1
+	48	[80]	FORPREP  	14 31	; to 80
+	49	[81]	LOADK    	18 -8	; 1
+	50	[81]	MOVE     	19 13
+	51	[81]	LOADK    	20 -8	; 1
+	52	[81]	FORPREP  	18 26	; to 79
+	53	[82]	GETTABUP 	22 0 -13	; _ENV "BoardPosition"
+	54	[82]	GETTABLE 	22 22 -18	; "GetDir4Position"
+	55	[82]	MOVE     	23 7
+	56	[82]	MOVE     	24 17
+	57	[82]	CALL     	22 3 2
+	58	[82]	MOVE     	7 22
+	59	[83]	GETTABLE 	22 0 -2	; "m_boardModel"
+	60	[83]	SELF     	22 22 -3	; "PositionIsValid"
+	61	[83]	MOVE     	24 7
+	62	[83]	CALL     	22 3 2
+	63	[83]	TEST     	22 0
+	64	[83]	JMP      	0 14	; to 79
+	65	[83]	SELF     	22 0 -4	; "GetItem"
+	66	[83]	MOVE     	24 7
+	67	[83]	CALL     	22 3 2
+	68	[83]	EQ       	0 22 -5	; - nil
+	69	[83]	JMP      	0 9	; to 79
+	70	[84]	GETTABUP 	22 0 -6	; _ENV "table"
+	71	[84]	GETTABLE 	22 22 -7	; "insert"
+	72	[84]	MOVE     	23 5
+	73	[84]	MOVE     	24 7
+	74	[84]	CALL     	22 3 1
+	75	[85]	ADD      	6 6 -8	; - 1
+	76	[86]	LE       	0 3 6
+	77	[86]	JMP      	0 1	; to 79
+	78	[87]	RETURN   	5 2
+	79	[81]	FORLOOP  	18 -27	; to 53
+	80	[80]	FORLOOP  	14 -32	; to 49
+	81	[76]	FORLOOP  	9 -45	; to 37
+	82	[94]	RETURN   	5 2
+	83	[95]	RETURN   	0 1
+constants (18) for 000001995CB82640:
+	1	0
+	2	"m_boardModel"
+	3	"PositionIsValid"
+	4	"GetItem"
+	5	nil
+	6	"table"
+	7	"insert"
+	8	1
+	9	"math"
+	10	"max"
+	11	"HorizontalTiles"
+	12	"VerticalTiles"
+	13	"BoardPosition"
+	14	"GetDirPosition"
+	15	-1
+	16	2
+	17	4
+	18	"GetDir4Position"
+locals (22) for 000001995CB82640:
+	0	self	1	84
+	1	centerPosition	1	84
+	2	openedPosition	1	84
+	3	num	1	84
+	4	bIncldeCenter	1	84
+	5	target	2	84
+	6	index	3	84
+	7	currentPosition	4	84
+	8	maxTiles	33	84
+	9	(for index)	36	82
+	10	(for limit)	36	82
+	11	(for step)	36	82
+	12	i	37	81
+	13	stepLength	45	81
+	14	(for index)	48	81
+	15	(for limit)	48	81
+	16	(for step)	48	81
+	17	dir	49	80
+	18	(for index)	52	80
+	19	(for limit)	52	80
+	20	(for step)	52	80
+	21	_	53	79
+upvalues (1) for 000001995CB82640:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:99,108> (15 instructions at 000001995CB82C20)
+1 param, 8 slots, 0 upvalues, 5 locals, 4 constants, 0 functions
+	1	[101]	GETTABLE 	1 0 -1	; "m_boardModel"
+	2	[101]	SELF     	1 1 -2	; "GetValidPositionIterator"
+	3	[101]	CALL     	1 2 4
+	4	[101]	JMP      	0 6	; to 11
+	5	[102]	SELF     	5 0 -3	; "GetItem"
+	6	[102]	MOVE     	7 4
+	7	[102]	CALL     	5 3 2
+	8	[102]	EQ       	0 5 -4	; - nil
+	9	[102]	JMP      	0 1	; to 11
+	10	[103]	RETURN   	4 2
+	11	[101]	TFORCALL 	1 1
+	12	[101]	TFORLOOP 	3 -8	; to 5
+	13	[107]	LOADNIL  	1 0
+	14	[107]	RETURN   	1 2
+	15	[108]	RETURN   	0 1
+constants (4) for 000001995CB82C20:
+	1	"m_boardModel"
+	2	"GetValidPositionIterator"
+	3	"GetItem"
+	4	nil
+locals (5) for 000001995CB82C20:
+	0	self	1	16
+	1	(for generator)	4	13
+	2	(for state)	4	13
+	3	(for control)	4	13
+	4	position	5	11
+upvalues (0) for 000001995CB82C20:
+
+function <BaseItemLayerModel.lua:111,123> (24 instructions at 000001995CB82CA0)
+2 params, 10 slots, 0 upvalues, 7 locals, 5 constants, 0 functions
+	1	[112]	NEWTABLE 	2 0 0
+	2	[113]	TEST     	1 1
+	3	[113]	JMP      	0 1	; to 5
+	4	[113]	LOADK    	1 -1	; 1
+	5	[114]	GETTABLE 	3 0 -2	; "m_boardModel"
+	6	[114]	SELF     	3 3 -3	; "GetDiagonalValidPositionIterator"
+	7	[114]	CALL     	3 2 4
+	8	[114]	JMP      	0 12	; to 21
+	9	[115]	SELF     	7 0 -4	; "GetItem"
+	10	[115]	MOVE     	9 6
+	11	[115]	CALL     	7 3 2
+	12	[115]	EQ       	0 7 -5	; - nil
+	13	[115]	JMP      	0 7	; to 21
+	14	[116]	LEN      	7 2
+	15	[116]	ADD      	7 7 -1	; - 1
+	16	[116]	SETTABLE 	2 7 6
+	17	[117]	LEN      	7 2
+	18	[117]	EQ       	0 7 1
+	19	[117]	JMP      	0 1	; to 21
+	20	[118]	RETURN   	2 2
+	21	[114]	TFORCALL 	3 1
+	22	[114]	TFORLOOP 	5 -14	; to 9
+	23	[122]	RETURN   	2 2
+	24	[123]	RETURN   	0 1
+constants (5) for 000001995CB82CA0:
+	1	1
+	2	"m_boardModel"
+	3	"GetDiagonalValidPositionIterator"
+	4	"GetItem"
+	5	nil
+locals (7) for 000001995CB82CA0:
+	0	self	1	25
+	1	num	1	25
+	2	result	2	25
+	3	(for generator)	8	23
+	4	(for state)	8	23
+	5	(for control)	8	23
+	6	position	9	21
+upvalues (0) for 000001995CB82CA0:
+
+function <BaseItemLayerModel.lua:127,135> (25 instructions at 000001995CB82EE0)
+3 params, 11 slots, 1 upvalue, 8 locals, 8 constants, 0 functions
+	1	[128]	LOADK    	3 -1	; 1
+	2	[128]	LOADK    	4 -2	; 8
+	3	[128]	LOADK    	5 -1	; 1
+	4	[128]	FORPREP  	3 17	; to 22
+	5	[129]	GETTABUP 	7 0 -3	; _ENV "BoardPosition"
+	6	[129]	GETTABLE 	7 7 -4	; "GetDir8Position"
+	7	[129]	MOVE     	8 1
+	8	[129]	MOVE     	9 6
+	9	[129]	CALL     	7 3 2
+	10	[130]	GETTABLE 	8 0 -5	; "m_boardModel"
+	11	[130]	SELF     	8 8 -6	; "PositionIsValid"
+	12	[130]	MOVE     	10 7
+	13	[130]	CALL     	8 3 2
+	14	[130]	TEST     	8 0
+	15	[130]	JMP      	0 6	; to 22
+	16	[130]	SELF     	8 0 -7	; "GetItem"
+	17	[130]	MOVE     	10 7
+	18	[130]	CALL     	8 3 2
+	19	[130]	EQ       	0 8 -8	; - nil
+	20	[130]	JMP      	0 1	; to 22
+	21	[131]	RETURN   	7 2
+	22	[128]	FORLOOP  	3 -18	; to 5
+	23	[134]	LOADNIL  	3 0
+	24	[134]	RETURN   	3 2
+	25	[135]	RETURN   	0 1
+constants (8) for 000001995CB82EE0:
+	1	1
+	2	8
+	3	"BoardPosition"
+	4	"GetDir8Position"
+	5	"m_boardModel"
+	6	"PositionIsValid"
+	7	"GetItem"
+	8	nil
+locals (8) for 000001995CB82EE0:
+	0	self	1	26
+	1	position	1	26
+	2	boardModel	1	26
+	3	(for index)	4	23
+	4	(for limit)	4	23
+	5	(for step)	4	23
+	6	dir	5	22
+	7	tempPos	10	22
+upvalues (1) for 000001995CB82EE0:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:137,146> (23 instructions at 000001995CB83900)
+1 param, 9 slots, 1 upvalue, 6 locals, 8 constants, 0 functions
+	1	[139]	NEWTABLE 	1 0 0
+	2	[140]	GETTABLE 	2 0 -1	; "m_boardModel"
+	3	[140]	SELF     	2 2 -2	; "GetValidPositionIterator"
+	4	[140]	CALL     	2 2 4
+	5	[140]	JMP      	0 10	; to 16
+	6	[141]	SELF     	6 0 -3	; "GetItem"
+	7	[141]	MOVE     	8 5
+	8	[141]	CALL     	6 3 2
+	9	[141]	EQ       	0 6 -4	; - nil
+	10	[141]	JMP      	0 5	; to 16
+	11	[142]	GETTABUP 	6 0 -5	; _ENV "table"
+	12	[142]	GETTABLE 	6 6 -6	; "insert"
+	13	[142]	MOVE     	7 1
+	14	[142]	MOVE     	8 5
+	15	[142]	CALL     	6 3 1
+	16	[140]	TFORCALL 	2 1
+	17	[140]	TFORLOOP 	4 -12	; to 6
+	18	[145]	GETTABUP 	2 0 -7	; _ENV "Table"
+	19	[145]	GETTABLE 	2 2 -8	; "ListRandomSelectOne"
+	20	[145]	MOVE     	3 1
+	21	[145]	TAILCALL 	2 2 0
+	22	[145]	RETURN   	2 0
+	23	[146]	RETURN   	0 1
+constants (8) for 000001995CB83900:
+	1	"m_boardModel"
+	2	"GetValidPositionIterator"
+	3	"GetItem"
+	4	nil
+	5	"table"
+	6	"insert"
+	7	"Table"
+	8	"ListRandomSelectOne"
+locals (6) for 000001995CB83900:
+	0	self	1	24
+	1	positions	2	24
+	2	(for generator)	5	18
+	3	(for state)	5	18
+	4	(for control)	5	18
+	5	position	6	16
+upvalues (1) for 000001995CB83900:
+	0	_ENV	0	0
+
+function <BaseItemLayerModel.lua:149,151> (4 instructions at 000001995CB84560)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[150]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[150]	GETTABLE 	1 1 -2	; "Empty"
+	3	[150]	RETURN   	1 2
+	4	[151]	RETURN   	0 1
+constants (2) for 000001995CB84560:
+	1	"Table"
+	2	"Empty"
+locals (1) for 000001995CB84560:
+	0	self	1	5
+upvalues (1) for 000001995CB84560:
+	0	_ENV	0	0

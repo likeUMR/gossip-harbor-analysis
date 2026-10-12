@@ -1,0 +1,4546 @@
+
+main <ScoreRaceModel.lua:0,0> (311 instructions at 000002805513EFC0)
+0+ params, 23 slots, 1 upvalue, 1 local, 195 constants, 74 functions
+	1	[17]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[17]	NEWTABLE 	1 0 6
+	3	[18]	SETTABLE 	1 -3 -4	; "RequestFullRankDataApiFuncName" "GetScoreRaceRank"
+	4	[19]	SETTABLE 	1 -5 -6	; "HeartBeatReqGroupIdKey" "scoreGroupId"
+	5	[20]	SETTABLE 	1 -7 -8	; "HeartBeatReqTokenKey" "scoreToken"
+	6	[21]	SETTABLE 	1 -9 -10	; "HeartBeatRespRankKey" "scoreRank"
+	7	[22]	SETTABLE 	1 -11 -12	; "HeartBeatRespAckTokenKey" "ackScoreToken"
+	8	[23]	SETTABLE 	1 -13 -14	; "HeartBeatRespReachNumKey" "scoreReachedNum"
+	9	[24]	GETTABUP 	2 0 -15	; _ENV "BaseActivityModel"
+	10	[17]	CALL     	0 3 2
+	11	[24]	SETTABUP 	0 -1 0	; _ENV "ScoreRaceModel"
+	12	[25]	GETTABUP 	0 0 -1	; _ENV "ScoreRaceModel"
+	13	[25]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	14	[25]	SETTABLE 	0 -16 1	; "__index" -
+	15	[28]	NEWTABLE 	0 0 2
+	16	[29]	SETTABLE 	0 -18 -19	; "Merge" "merge"
+	17	[30]	SETTABLE 	0 -20 -21	; "Order" "order"
+	18	[31]	SETTABUP 	0 -17 0	; _ENV "EScoreRaceAddScoreScene"
+	19	[33]	NEWTABLE 	0 0 4
+	20	[34]	SETTABLE 	0 -22 -23	; 1 2
+	21	[35]	SETTABLE 	0 -23 -24	; 2 4
+	22	[36]	SETTABLE 	0 -25 -22	; 3 1
+	23	[37]	SETTABLE 	0 -24 -26	; 4 5
+	24	[40]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	25	[40]	SETTABLE 	1 -27 -28	; "Round" "round"
+	26	[41]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	27	[41]	SETTABLE 	1 -29 -30	; "Score" "score"
+	28	[42]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	29	[42]	SETTABLE 	1 -31 -32	; "GroupId" "groupId"
+	30	[43]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	31	[43]	SETTABLE 	1 -33 -34	; "RankList" "rankList"
+	32	[44]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	33	[44]	SETTABLE 	1 -35 -36	; "LastRankData" "lastRankData"
+	34	[45]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	35	[45]	SETTABLE 	1 -37 -38	; "ReqStop" "reqStop"
+	36	[46]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	37	[46]	SETTABLE 	1 -39 -40	; "HasPopReady" "hasPopReady"
+	38	[47]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	39	[47]	SETTABLE 	1 -41 -41	; "NewRoundFirstOpen" "NewRoundFirstOpen"
+	40	[48]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	41	[48]	SETTABLE 	1 -42 -43	; "RoundEntryTime" "roundEntryTime"
+	42	[49]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	43	[49]	SETTABLE 	1 -44 -44	; "PopEndWindow" "PopEndWindow"
+	44	[50]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	45	[50]	SETTABLE 	1 -45 -45	; "RequestLog" "RequestLog"
+	46	[51]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	47	[51]	SETTABLE 	1 -46 -46	; "NextRequestTime" "NextRequestTime"
+	48	[52]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	49	[52]	SETTABLE 	1 -47 -47	; "AlreadyDefeat" "AlreadyDefeat"
+	50	[53]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	51	[53]	SETTABLE 	1 -48 -48	; "DefeatTimes" "DefeatTimes"
+	52	[55]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	53	[55]	NEWTABLE 	2 18 0
+	54	[56]	LOADK    	3 -50	; "I"
+	55	[56]	LOADK    	4 -51	; "II"
+	56	[56]	LOADK    	5 -52	; "III"
+	57	[56]	LOADK    	6 -53	; "IV"
+	58	[56]	LOADK    	7 -54	; "V"
+	59	[56]	LOADK    	8 -55	; "VI"
+	60	[56]	LOADK    	9 -56	; "VII"
+	61	[56]	LOADK    	10 -57	; "VIII"
+	62	[56]	LOADK    	11 -58	; "IX"
+	63	[56]	LOADK    	12 -59	; "X"
+	64	[56]	LOADK    	13 -60	; "XI"
+	65	[56]	LOADK    	14 -61	; "XII"
+	66	[56]	LOADK    	15 -62	; "XIII"
+	67	[56]	LOADK    	16 -63	; "XIV"
+	68	[56]	LOADK    	17 -64	; "XV"
+	69	[56]	LOADK    	18 -65	; "XVI"
+	70	[56]	LOADK    	19 -66	; "XVII"
+	71	[56]	LOADK    	20 -67	; "XVIII"
+	72	[56]	LOADK    	21 -68	; "XIX"
+	73	[56]	LOADK    	22 -69	; "XX"
+	74	[56]	SETLIST  	2 20 1	; 1
+	75	[56]	SETTABLE 	1 -49 2	; "ArrRomanNumbers" -
+	76	[58]	GETTABUP 	1 0 -1	; _ENV "ScoreRaceModel"
+	77	[62]	CLOSURE  	2 0	; 000002805513F040
+	78	[58]	SETTABLE 	1 -70 2	; "Init" -
+	79	[64]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	80	[98]	CLOSURE  	2 1	; 000002805513ED30
+	81	[64]	SETTABLE 	1 -72 2	; "_LoadOtherServerConfig" -
+	82	[101]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	83	[107]	CLOSURE  	2 2	; 0000028055145B00
+	84	[101]	SETTABLE 	1 -73 2	; "_OnItemMerged" -
+	85	[111]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	86	[122]	CLOSURE  	2 3	; 0000028055145BE0
+	87	[111]	SETTABLE 	1 -74 2	; "_TryAddMergeScore" -
+	88	[124]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	89	[126]	CLOSURE  	2 4	; 0000028055145DB0
+	90	[124]	SETTABLE 	1 -75 2	; "AcquireActivityScore" -
+	91	[130]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	92	[170]	CLOSURE  	2 5	; 0000028055145E30
+	93	[130]	SETTABLE 	1 -76 2	; "GetGenerateItemByOrder" -
+	94	[172]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	95	[186]	CLOSURE  	2 6	; 0000028055143220
+	96	[172]	SETTABLE 	1 -77 2	; "_OnOrderFinished" -
+	97	[190]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	98	[212]	CLOSURE  	2 7	; 0000028055143550
+	99	[190]	SETTABLE 	1 -78 2	; "_AddScore" -
+	100	[215]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	101	[225]	CLOSURE  	2 8	; 0000028055148D40
+	102	[215]	SETTABLE 	1 -79 2	; "GetRewards" -
+	103	[227]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	104	[229]	CLOSURE  	2 9	; 0000028055149640
+	105	[227]	SETTABLE 	1 -80 2	; "IsAllRoundFinished" -
+	106	[231]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	107	[233]	CLOSURE  	2 10	; 00000280551493C0
+	108	[231]	SETTABLE 	1 -81 2	; "IsInGroup" -
+	109	[235]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	110	[240]	CLOSURE  	2 11	; 00000280551492C0
+	111	[235]	SETTABLE 	1 -82 2	; "CheckOpen" -
+	112	[242]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	113	[261]	CLOSURE  	2 12	; 0000028055149240
+	114	[242]	SETTABLE 	1 -83 2	; "GetHudEntryShowConfig" -
+	115	[263]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	116	[277]	CLOSURE  	2 13	; 0000028055148DC0
+	117	[263]	SETTABLE 	1 -84 2	; "GetBoardEntryShowConfig" -
+	118	[279]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	119	[282]	CLOSURE  	2 14	; 0000028055149040
+	120	[279]	SETTABLE 	1 -85 2	; "LateInit" -
+	121	[284]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	122	[289]	CLOSURE  	2 15	; 0000028055149440
+	123	[284]	SETTABLE 	1 -86 2	; "_OnStateChanged" -
+	124	[291]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	125	[299]	CLOSURE  	2 16	; 0000028055148F40
+	126	[291]	SETTABLE 	1 -87 2	; "_DropData" -
+	127	[301]	GETTABUP 	1 0 -71	; _ENV "ScoreRaceModel"
+	128	[304]	CLOSURE  	2 17	; 00000280551494C0
+	129	[301]	SETTABLE 	1 -88 2	; "DropGroup" -
+	130	[306]	GETTABUP 	1 0 -89	; _ENV "ScoreRaceModel"
+	131	[308]	CLOSURE  	2 18	; 0000028055149AC0
+	132	[306]	SETTABLE 	1 -90 2	; "GetResourceLabels" -
+	133	[310]	GETTABUP 	1 0 -89	; _ENV "ScoreRaceModel"
+	134	[312]	CLOSURE  	2 19	; 0000028055149140
+	135	[310]	SETTABLE 	1 -91 2	; "SetRoundEntryTime" -
+	136	[314]	GETTABUP 	1 0 -92	; _ENV "ScoreRaceModel"
+	137	[316]	CLOSURE  	2 20	; 0000028055148BC0
+	138	[314]	SETTABLE 	1 -93 2	; "GetRoundEntryTime" -
+	139	[318]	GETTABUP 	1 0 -94	; _ENV "ScoreRaceModel"
+	140	[320]	CLOSURE  	2 21	; 00000280551499C0
+	141	[318]	SETTABLE 	1 -95 2	; "GetScore" -
+	142	[322]	GETTABUP 	1 0 -96	; _ENV "ScoreRaceModel"
+	143	[324]	CLOSURE  	2 22	; 0000028055148EC0
+	144	[322]	SETTABLE 	1 -97 2	; "GetRound" -
+	145	[326]	GETTABUP 	1 0 -98	; _ENV "ScoreRaceModel"
+	146	[328]	CLOSURE  	2 23	; 0000028055149540
+	147	[326]	SETTABLE 	1 -99 2	; "GetRankList" -
+	148	[330]	GETTABUP 	1 0 -100	; _ENV "ScoreRaceModel"
+	149	[332]	CLOSURE  	2 24	; 00000280551495C0
+	150	[330]	SETTABLE 	1 -101 2	; "GetMaxRound" -
+	151	[335]	GETTABUP 	1 0 -100	; _ENV "ScoreRaceModel"
+	152	[343]	CLOSURE  	2 25	; 0000028055149940
+	153	[335]	SETTABLE 	1 -102 2	; "GetRoundReward" -
+	154	[345]	GETTABUP 	1 0 -100	; _ENV "ScoreRaceModel"
+	155	[350]	CLOSURE  	2 26	; 00000280551496C0
+	156	[345]	SETTABLE 	1 -103 2	; "GetTargetScore" -
+	157	[352]	GETTABUP 	1 0 -100	; _ENV "ScoreRaceModel"
+	158	[354]	CLOSURE  	2 27	; 0000028055149A40
+	159	[352]	SETTABLE 	1 -104 2	; "GetGroupId" -
+	160	[356]	GETTABUP 	1 0 -105	; _ENV "ScoreRaceModel"
+	161	[358]	CLOSURE  	2 28	; 0000028055149340
+	162	[356]	SETTABLE 	1 -106 2	; "GetRank" -
+	163	[360]	GETTABUP 	1 0 -105	; _ENV "ScoreRaceModel"
+	164	[365]	CLOSURE  	2 29	; 00000280551490C0
+	165	[360]	SETTABLE 	1 -107 2	; "UpdateRank" -
+	166	[367]	GETTABUP 	1 0 -105	; _ENV "ScoreRaceModel"
+	167	[370]	CLOSURE  	2 30	; 0000028055148C40
+	168	[367]	SETTABLE 	1 -108 2	; "ClearRankData" -
+	169	[372]	GETTABUP 	1 0 -109	; _ENV "ScoreRaceModel"
+	170	[374]	CLOSURE  	2 31	; 0000028055148CC0
+	171	[372]	SETTABLE 	1 -110 2	; "SaveRankData" -
+	172	[376]	GETTABUP 	1 0 -111	; _ENV "ScoreRaceModel"
+	173	[382]	CLOSURE  	2 32	; 0000028055149740
+	174	[376]	SETTABLE 	1 -112 2	; "GetPlayerType" -
+	175	[384]	GETTABUP 	1 0 -111	; _ENV "ScoreRaceModel"
+	176	[386]	CLOSURE  	2 33	; 0000028055149840
+	177	[384]	SETTABLE 	1 -113 2	; "IsReqStop" -
+	178	[388]	GETTABUP 	1 0 -114	; _ENV "ScoreRaceModel"
+	179	[408]	CLOSURE  	2 34	; 00000280551498C0
+	180	[388]	SETTABLE 	1 -115 2	; "_OnTokenChanged" -
+	181	[410]	GETTABUP 	1 0 -116	; _ENV "ScoreRaceModel"
+	182	[415]	CLOSURE  	2 35	; 00000280551500A0
+	183	[410]	SETTABLE 	1 -117 2	; "EndReq" -
+	184	[417]	GETTABUP 	1 0 -118	; _ENV "ScoreRaceModel"
+	185	[419]	CLOSURE  	2 36	; 0000028055150520
+	186	[417]	SETTABLE 	1 -119 2	; "CanHeartBeat" -
+	187	[421]	GETTABUP 	1 0 -118	; _ENV "ScoreRaceModel"
+	188	[429]	CLOSURE  	2 37	; 0000028055151720
+	189	[421]	SETTABLE 	1 -120 2	; "ToHeartBeat" -
+	190	[431]	GETTABUP 	1 0 -118	; _ENV "ScoreRaceModel"
+	191	[467]	CLOSURE  	2 38	; 0000028055150220
+	192	[431]	SETTABLE 	1 -121 2	; "FromHeartBeat" -
+	193	[470]	GETTABUP 	1 0 -118	; _ENV "ScoreRaceModel"
+	194	[500]	CLOSURE  	2 39	; 0000028055150020
+	195	[470]	SETTABLE 	1 -122 2	; "ResetAndRequestAgain" -
+	196	[502]	GETTABUP 	1 0 -123	; _ENV "ScoreRaceModel"
+	197	[502]	NEWTABLE 	2 0 10
+	198	[503]	SETTABLE 	2 -125 -126	; "VALID_STATUS" 0
+	199	[504]	SETTABLE 	2 -127 -128	; "EXPIRED_JOINTIME" 1
+	200	[505]	SETTABLE 	2 -129 -130	; "ROLLED_ROUND" 2
+	201	[506]	SETTABLE 	2 -131 -132	; "INVALID_CONFIG" 3
+	202	[507]	SETTABLE 	2 -133 -24	; "UNMATCH_GROUPID" 4
+	203	[508]	SETTABLE 	2 -134 -26	; "LOCKCHANNEL_FAILED" 5
+	204	[509]	SETTABLE 	2 -135 -136	; "UNMATCH_TYPE" 6
+	205	[510]	SETTABLE 	2 -137 -138	; "GROUPRESULT_INVALID" 7
+	206	[511]	SETTABLE 	2 -139 -140	; "CHEAT_USER" 16
+	207	[512]	SETTABLE 	2 -141 -142	; "OTHER_ERROR" 17
+	208	[513]	SETTABLE 	1 -124 2	; "ErrorStatus" -
+	209	[515]	GETTABUP 	1 0 -123	; _ENV "ScoreRaceModel"
+	210	[531]	CLOSURE  	2 40	; 00000280551516A0
+	211	[515]	SETTABLE 	1 -143 2	; "IsDefeatedRankData" -
+	212	[533]	GETTABUP 	1 0 -123	; _ENV "ScoreRaceModel"
+	213	[696]	CLOSURE  	2 41	; 000002805514FF20
+	214	[533]	SETTABLE 	1 -144 2	; "RequestFullRankData" -
+	215	[699]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	216	[727]	CLOSURE  	2 42	; 0000028055150F20
+	217	[699]	SETTABLE 	1 -146 2	; "SortRank" -
+	218	[729]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	219	[731]	CLOSURE  	2 43	; 00000280551502A0
+	220	[729]	SETTABLE 	1 -147 2	; "GetFullRankData" -
+	221	[733]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	222	[739]	CLOSURE  	2 44	; 0000028055150FA0
+	223	[733]	SETTABLE 	1 -148 2	; "GetNewViewController" -
+	224	[741]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	225	[743]	CLOSURE  	2 45	; 0000028055150720
+	226	[741]	SETTABLE 	1 -149 2	; "ViewControllerFinished" -
+	227	[745]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	228	[747]	CLOSURE  	2 46	; 0000028055150820
+	229	[745]	SETTABLE 	1 -150 2	; "HasViewController" -
+	230	[749]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	231	[757]	CLOSURE  	2 47	; 0000028055150120
+	232	[749]	SETTABLE 	1 -151 2	; "GetRanks" -
+	233	[759]	GETTABUP 	1 0 -145	; _ENV "ScoreRaceModel"
+	234	[761]	CLOSURE  	2 48	; 0000028055151E20
+	235	[759]	SETTABLE 	1 -152 2	; "GetDefeatTimes" -
+	236	[763]	GETTABUP 	1 0 -153	; _ENV "ScoreRaceModel"
+	237	[786]	CLOSURE  	2 49	; 00000280551501A0
+	238	[763]	SETTABLE 	1 -154 2	; "EndRound" -
+	239	[788]	GETTABUP 	1 0 -155	; _ENV "ScoreRaceModel"
+	240	[805]	CLOSURE  	2 50	; 00000280551507A0
+	241	[788]	SETTABLE 	1 -156 2	; "RestartRound" -
+	242	[807]	GETTABUP 	1 0 -157	; _ENV "ScoreRaceModel"
+	243	[811]	CLOSURE  	2 51	; 0000028055151420
+	244	[807]	SETTABLE 	1 -158 2	; "RecordRank" -
+	245	[813]	GETTABUP 	1 0 -159	; _ENV "ScoreRaceModel"
+	246	[820]	CLOSURE  	2 52	; 0000028055150A20
+	247	[813]	SETTABLE 	1 -160 2	; "GetTopPlayerInfo" -
+	248	[822]	GETTABUP 	1 0 -159	; _ENV "ScoreRaceModel"
+	249	[824]	CLOSURE  	2 53	; 000002805514FFA0
+	250	[822]	SETTABLE 	1 -161 2	; "CanPopReadyWindow" -
+	251	[826]	GETTABUP 	1 0 -162	; _ENV "ScoreRaceModel"
+	252	[828]	CLOSURE  	2 54	; 0000028055150920
+	253	[826]	SETTABLE 	1 -163 2	; "SetCanPop" -
+	254	[830]	GETTABUP 	1 0 -164	; _ENV "ScoreRaceModel"
+	255	[832]	CLOSURE  	2 55	; 00000280551509A0
+	256	[830]	SETTABLE 	1 -165 2	; "SetPoped" -
+	257	[834]	GETTABUP 	1 0 -166	; _ENV "ScoreRaceModel"
+	258	[836]	CLOSURE  	2 56	; 0000028055150320
+	259	[834]	SETTABLE 	1 -167 2	; "IsRoundFirstOpen" -
+	260	[839]	GETTABUP 	1 0 -168	; _ENV "ScoreRaceModel"
+	261	[841]	CLOSURE  	2 57	; 00000280551508A0
+	262	[839]	SETTABLE 	1 -169 2	; "SetRoundOpened" -
+	263	[843]	GETTABUP 	1 0 -170	; _ENV "ScoreRaceModel"
+	264	[848]	CLOSURE  	2 58	; 00000280551503A0
+	265	[843]	SETTABLE 	1 -171 2	; "CanApplyChoose" -
+	266	[853]	GETTABUP 	1 0 -170	; _ENV "ScoreRaceModel"
+	267	[886]	CLOSURE  	2 59	; 0000028055150C20
+	268	[853]	SETTABLE 	1 -172 2	; "GetChangedPlayer" -
+	269	[891]	GETTABUP 	1 0 -170	; _ENV "ScoreRaceModel"
+	270	[898]	CLOSURE  	2 60	; 0000028055150B20
+	271	[891]	SETTABLE 	1 -173 2	; "GetDataByTrack" -
+	272	[900]	GETTABUP 	1 0 -170	; _ENV "ScoreRaceModel"
+	273	[902]	CLOSURE  	2 61	; 00000280551519A0
+	274	[900]	SETTABLE 	1 -174 2	; "SetPopEndWindow" -
+	275	[904]	GETTABUP 	1 0 -175	; _ENV "ScoreRaceModel"
+	276	[906]	CLOSURE  	2 62	; 0000028055150DA0
+	277	[904]	SETTABLE 	1 -176 2	; "CanPopEndWindow" -
+	278	[908]	GETTABUP 	1 0 -177	; _ENV "ScoreRaceModel"
+	279	[914]	CLOSURE  	2 63	; 0000028055150E20
+	280	[908]	SETTABLE 	1 -178 2	; "RecordReq" -
+	281	[916]	GETTABUP 	1 0 -179	; _ENV "ScoreRaceModel"
+	282	[931]	CLOSURE  	2 64	; 0000028055150420
+	283	[916]	SETTABLE 	1 -180 2	; "RecordResp" -
+	284	[933]	GETTABUP 	1 0 -181	; _ENV "ScoreRaceModel"
+	285	[939]	CLOSURE  	2 65	; 0000028055151B20
+	286	[933]	SETTABLE 	1 -182 2	; "GetLog" -
+	287	[941]	GETTABUP 	1 0 -183	; _ENV "ScoreRaceModel"
+	288	[943]	CLOSURE  	2 66	; 0000028055151A20
+	289	[941]	SETTABLE 	1 -184 2	; "SetRequesting" -
+	290	[945]	GETTABUP 	1 0 -183	; _ENV "ScoreRaceModel"
+	291	[947]	CLOSURE  	2 67	; 00000280551504A0
+	292	[945]	SETTABLE 	1 -185 2	; "GetRequesting" -
+	293	[949]	GETTABUP 	1 0 -183	; _ENV "ScoreRaceModel"
+	294	[951]	CLOSURE  	2 68	; 0000028055150EA0
+	295	[949]	SETTABLE 	1 -186 2	; "SetRequestTime" -
+	296	[953]	GETTABUP 	1 0 -187	; _ENV "ScoreRaceModel"
+	297	[955]	CLOSURE  	2 69	; 0000028055151020
+	298	[953]	SETTABLE 	1 -188 2	; "GetRequestTime" -
+	299	[957]	GETTABUP 	1 0 -189	; _ENV "ScoreRaceModel"
+	300	[959]	CLOSURE  	2 70	; 0000028055151320
+	301	[957]	SETTABLE 	1 -190 2	; "SetDefeated" -
+	302	[961]	GETTABUP 	1 0 -191	; _ENV "ScoreRaceModel"
+	303	[963]	CLOSURE  	2 71	; 00000280551513A0
+	304	[961]	SETTABLE 	1 -192 2	; "IsDefeated" -
+	305	[965]	GETTABUP 	1 0 -193	; _ENV "ScoreRaceModel"
+	306	[967]	CLOSURE  	2 72	; 00000280551510A0
+	307	[965]	SETTABLE 	1 -194 2	; "GetDefeatpreRankData" -
+	308	[969]	GETTABUP 	1 0 -193	; _ENV "ScoreRaceModel"
+	309	[1005]	CLOSURE  	2 73	; 0000028055151120
+	310	[969]	SETTABLE 	1 -195 2	; "UpdatePerSecond" -
+	311	[1005]	RETURN   	0 1
+constants (195) for 000002805513EFC0:
+	1	"ScoreRaceModel"
+	2	"setmetatable"
+	3	"RequestFullRankDataApiFuncName"
+	4	"GetScoreRaceRank"
+	5	"HeartBeatReqGroupIdKey"
+	6	"scoreGroupId"
+	7	"HeartBeatReqTokenKey"
+	8	"scoreToken"
+	9	"HeartBeatRespRankKey"
+	10	"scoreRank"
+	11	"HeartBeatRespAckTokenKey"
+	12	"ackScoreToken"
+	13	"HeartBeatRespReachNumKey"
+	14	"scoreReachedNum"
+	15	"BaseActivityModel"
+	16	"__index"
+	17	"EScoreRaceAddScoreScene"
+	18	"Merge"
+	19	"merge"
+	20	"Order"
+	21	"order"
+	22	1
+	23	2
+	24	4
+	25	3
+	26	5
+	27	"Round"
+	28	"round"
+	29	"Score"
+	30	"score"
+	31	"GroupId"
+	32	"groupId"
+	33	"RankList"
+	34	"rankList"
+	35	"LastRankData"
+	36	"lastRankData"
+	37	"ReqStop"
+	38	"reqStop"
+	39	"HasPopReady"
+	40	"hasPopReady"
+	41	"NewRoundFirstOpen"
+	42	"RoundEntryTime"
+	43	"roundEntryTime"
+	44	"PopEndWindow"
+	45	"RequestLog"
+	46	"NextRequestTime"
+	47	"AlreadyDefeat"
+	48	"DefeatTimes"
+	49	"ArrRomanNumbers"
+	50	"I"
+	51	"II"
+	52	"III"
+	53	"IV"
+	54	"V"
+	55	"VI"
+	56	"VII"
+	57	"VIII"
+	58	"IX"
+	59	"X"
+	60	"XI"
+	61	"XII"
+	62	"XIII"
+	63	"XIV"
+	64	"XV"
+	65	"XVI"
+	66	"XVII"
+	67	"XVIII"
+	68	"XIX"
+	69	"XX"
+	70	"Init"
+	71	"ScoreRaceModel"
+	72	"_LoadOtherServerConfig"
+	73	"_OnItemMerged"
+	74	"_TryAddMergeScore"
+	75	"AcquireActivityScore"
+	76	"GetGenerateItemByOrder"
+	77	"_OnOrderFinished"
+	78	"_AddScore"
+	79	"GetRewards"
+	80	"IsAllRoundFinished"
+	81	"IsInGroup"
+	82	"CheckOpen"
+	83	"GetHudEntryShowConfig"
+	84	"GetBoardEntryShowConfig"
+	85	"LateInit"
+	86	"_OnStateChanged"
+	87	"_DropData"
+	88	"DropGroup"
+	89	"ScoreRaceModel"
+	90	"GetResourceLabels"
+	91	"SetRoundEntryTime"
+	92	"ScoreRaceModel"
+	93	"GetRoundEntryTime"
+	94	"ScoreRaceModel"
+	95	"GetScore"
+	96	"ScoreRaceModel"
+	97	"GetRound"
+	98	"ScoreRaceModel"
+	99	"GetRankList"
+	100	"ScoreRaceModel"
+	101	"GetMaxRound"
+	102	"GetRoundReward"
+	103	"GetTargetScore"
+	104	"GetGroupId"
+	105	"ScoreRaceModel"
+	106	"GetRank"
+	107	"UpdateRank"
+	108	"ClearRankData"
+	109	"ScoreRaceModel"
+	110	"SaveRankData"
+	111	"ScoreRaceModel"
+	112	"GetPlayerType"
+	113	"IsReqStop"
+	114	"ScoreRaceModel"
+	115	"_OnTokenChanged"
+	116	"ScoreRaceModel"
+	117	"EndReq"
+	118	"ScoreRaceModel"
+	119	"CanHeartBeat"
+	120	"ToHeartBeat"
+	121	"FromHeartBeat"
+	122	"ResetAndRequestAgain"
+	123	"ScoreRaceModel"
+	124	"ErrorStatus"
+	125	"VALID_STATUS"
+	126	0
+	127	"EXPIRED_JOINTIME"
+	128	1
+	129	"ROLLED_ROUND"
+	130	2
+	131	"INVALID_CONFIG"
+	132	3
+	133	"UNMATCH_GROUPID"
+	134	"LOCKCHANNEL_FAILED"
+	135	"UNMATCH_TYPE"
+	136	6
+	137	"GROUPRESULT_INVALID"
+	138	7
+	139	"CHEAT_USER"
+	140	16
+	141	"OTHER_ERROR"
+	142	17
+	143	"IsDefeatedRankData"
+	144	"RequestFullRankData"
+	145	"ScoreRaceModel"
+	146	"SortRank"
+	147	"GetFullRankData"
+	148	"GetNewViewController"
+	149	"ViewControllerFinished"
+	150	"HasViewController"
+	151	"GetRanks"
+	152	"GetDefeatTimes"
+	153	"ScoreRaceModel"
+	154	"EndRound"
+	155	"ScoreRaceModel"
+	156	"RestartRound"
+	157	"ScoreRaceModel"
+	158	"RecordRank"
+	159	"ScoreRaceModel"
+	160	"GetTopPlayerInfo"
+	161	"CanPopReadyWindow"
+	162	"ScoreRaceModel"
+	163	"SetCanPop"
+	164	"ScoreRaceModel"
+	165	"SetPoped"
+	166	"ScoreRaceModel"
+	167	"IsRoundFirstOpen"
+	168	"ScoreRaceModel"
+	169	"SetRoundOpened"
+	170	"ScoreRaceModel"
+	171	"CanApplyChoose"
+	172	"GetChangedPlayer"
+	173	"GetDataByTrack"
+	174	"SetPopEndWindow"
+	175	"ScoreRaceModel"
+	176	"CanPopEndWindow"
+	177	"ScoreRaceModel"
+	178	"RecordReq"
+	179	"ScoreRaceModel"
+	180	"RecordResp"
+	181	"ScoreRaceModel"
+	182	"GetLog"
+	183	"ScoreRaceModel"
+	184	"SetRequesting"
+	185	"GetRequesting"
+	186	"SetRequestTime"
+	187	"ScoreRaceModel"
+	188	"GetRequestTime"
+	189	"ScoreRaceModel"
+	190	"SetDefeated"
+	191	"ScoreRaceModel"
+	192	"IsDefeated"
+	193	"ScoreRaceModel"
+	194	"GetDefeatpreRankData"
+	195	"UpdatePerSecond"
+locals (1) for 000002805513EFC0:
+	0	rankTrackMap	24	312
+upvalues (1) for 000002805513EFC0:
+	0	_ENV	1	0
+
+function <ScoreRaceModel.lua:58,62> (31 instructions at 000002805513F040)
+2 params, 7 slots, 1 upvalue, 2 locals, 18 constants, 0 functions
+	1	[59]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[59]	GETTABLE 	2 2 -2	; "Init"
+	3	[59]	MOVE     	3 0
+	4	[59]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[59]	GETTABLE 	4 4 -4	; "ScoreRace"
+	6	[59]	MOVE     	5 1
+	7	[59]	CALL     	2 4 1
+	8	[60]	GETTABUP 	2 0 -6	; _ENV "json"
+	9	[60]	GETTABLE 	2 2 -7	; "decode"
+	10	[60]	GETTABLE 	3 0 -8	; "m_dbTable"
+	11	[60]	SELF     	3 3 -9	; "GetValue"
+	12	[60]	GETTABUP 	5 0 -10	; _ENV "ScoreRaceModel"
+	13	[60]	GETTABLE 	5 5 -11	; "LastRankData"
+	14	[60]	LOADK    	6 -12	; "value"
+	15	[60]	CALL     	3 4 2
+	16	[60]	TEST     	3 1
+	17	[60]	JMP      	0 1	; to 19
+	18	[60]	LOADK    	3 -13	; ""
+	19	[60]	CALL     	2 2 2
+	20	[60]	TEST     	2 1
+	21	[60]	JMP      	0 1	; to 23
+	22	[60]	NEWTABLE 	2 0 0
+	23	[60]	SETTABLE 	0 -5 2	; "m_fullRankData" -
+	24	[61]	GETTABUP 	2 0 -14	; _ENV "EventDispatcher"
+	25	[61]	GETTABLE 	2 2 -15	; "AddListener"
+	26	[61]	GETTABUP 	3 0 -16	; _ENV "EEventType"
+	27	[61]	GETTABLE 	3 3 -17	; "OrderFinished"
+	28	[61]	MOVE     	4 0
+	29	[61]	GETTABLE 	5 0 -18	; "_OnOrderFinished"
+	30	[61]	CALL     	2 4 1
+	31	[62]	RETURN   	0 1
+constants (18) for 000002805513F040:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"ScoreRace"
+	5	"m_fullRankData"
+	6	"json"
+	7	"decode"
+	8	"m_dbTable"
+	9	"GetValue"
+	10	"ScoreRaceModel"
+	11	"LastRankData"
+	12	"value"
+	13	""
+	14	"EventDispatcher"
+	15	"AddListener"
+	16	"EEventType"
+	17	"OrderFinished"
+	18	"_OnOrderFinished"
+locals (2) for 000002805513F040:
+	0	self	1	32
+	1	dbTable	1	32
+upvalues (1) for 000002805513F040:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:64,98> (79 instructions at 000002805513ED30)
+2 params, 14 slots, 1 upvalue, 14 locals, 21 constants, 4 functions
+	1	[65]	GETTABLE 	2 0 -1	; "m_config"
+	2	[65]	GETTABLE 	3 1 -3	; "scoreRacePlayer"
+	3	[65]	SETTABLE 	2 -2 3	; "m_playertype" -
+	4	[66]	GETTABUP 	2 0 -4	; _ENV "table"
+	5	[66]	GETTABLE 	2 2 -5	; "sort"
+	6	[66]	GETTABLE 	3 0 -1	; "m_config"
+	7	[66]	GETTABLE 	3 3 -2	; "m_playertype"
+	8	[66]	CLOSURE  	4 0	; 000002805513EDB0
+	9	[66]	CALL     	2 3 1
+	10	[67]	GETTABLE 	2 0 -1	; "m_config"
+	11	[67]	GETTABLE 	3 1 -7	; "scoreRaceReward"
+	12	[67]	SETTABLE 	2 -6 3	; "m_rewards" -
+	13	[68]	GETTABUP 	2 0 -4	; _ENV "table"
+	14	[68]	GETTABLE 	2 2 -5	; "sort"
+	15	[68]	GETTABLE 	3 0 -1	; "m_config"
+	16	[68]	GETTABLE 	3 3 -6	; "m_rewards"
+	17	[68]	CLOSURE  	4 1	; 0000028055144B30
+	18	[68]	CALL     	2 3 1
+	19	[71]	GETTABUP 	2 0 -8	; _ENV "require"
+	20	[71]	LOADK    	3 -9	; "Data.Config.MergeItemScoreConfig"
+	21	[71]	CALL     	2 2 2
+	22	[72]	GETTABLE 	3 0 -1	; "m_config"
+	23	[72]	NEWTABLE 	4 0 0
+	24	[72]	SETTABLE 	3 -10 4	; "mergeItemScore" -
+	25	[73]	GETTABUP 	3 0 -11	; _ENV "ipairs"
+	26	[73]	MOVE     	4 2
+	27	[73]	CALL     	3 2 4
+	28	[73]	JMP      	0 4	; to 33
+	29	[74]	GETTABLE 	8 0 -1	; "m_config"
+	30	[74]	GETTABLE 	8 8 -10	; "mergeItemScore"
+	31	[74]	GETTABLE 	9 7 -12	; "item_id"
+	32	[74]	SETTABLE 	8 9 7
+	33	[73]	TFORCALL 	3 2
+	34	[73]	TFORLOOP 	5 -6	; to 29
+	35	[78]	GETTABLE 	3 0 -1	; "m_config"
+	36	[78]	NEWTABLE 	4 0 0
+	37	[78]	SETTABLE 	3 -13 4	; "m_orderScore" -
+	38	[80]	LOADBOOL 	3 0 0
+	39	[81]	GETTABUP 	4 0 -14	; _ENV "pairs"
+	40	[81]	GETTABLE 	5 1 -15	; "eventOrderScore"
+	41	[81]	CALL     	4 2 4
+	42	[81]	JMP      	0 18	; to 61
+	43	[82]	GETTABUP 	9 0 -4	; _ENV "table"
+	44	[82]	GETTABLE 	9 9 -16	; "insert"
+	45	[82]	GETTABLE 	10 0 -1	; "m_config"
+	46	[82]	GETTABLE 	10 10 -13	; "m_orderScore"
+	47	[82]	GETTABUP 	11 0 -17	; _ENV "Table"
+	48	[82]	GETTABLE 	11 11 -18	; "DeepCopy"
+	49	[82]	MOVE     	12 8
+	50	[82]	LOADBOOL 	13 1 0
+	51	[82]	CALL     	11 3 0
+	52	[82]	CALL     	9 0 1
+	53	[83]	TEST     	3 1
+	54	[83]	JMP      	0 6	; to 61
+	55	[83]	GETTABUP 	9 0 -19	; _ENV "IsNumber"
+	56	[83]	GETTABLE 	10 8 -20	; "diff_score_min"
+	57	[83]	CALL     	9 2 2
+	58	[83]	TEST     	9 0
+	59	[83]	JMP      	0 1	; to 61
+	60	[84]	LOADBOOL 	3 1 0
+	61	[81]	TFORCALL 	4 2
+	62	[81]	TFORLOOP 	6 -20	; to 43
+	63	[87]	SETTABLE 	0 -21 3	; "m_addScoreUseDiff" -
+	64	[89]	TEST     	3 0
+	65	[89]	JMP      	0 7	; to 73
+	66	[90]	GETTABUP 	4 0 -4	; _ENV "table"
+	67	[90]	GETTABLE 	4 4 -5	; "sort"
+	68	[90]	GETTABLE 	5 0 -1	; "m_config"
+	69	[90]	GETTABLE 	5 5 -13	; "m_orderScore"
+	70	[92]	CLOSURE  	6 2	; 00000280551457C0
+	71	[90]	CALL     	4 3 1
+	72	[92]	JMP      	0 6	; to 79
+	73	[94]	GETTABUP 	4 0 -4	; _ENV "table"
+	74	[94]	GETTABLE 	4 4 -5	; "sort"
+	75	[94]	GETTABLE 	5 0 -1	; "m_config"
+	76	[94]	GETTABLE 	5 5 -13	; "m_orderScore"
+	77	[96]	CLOSURE  	6 3	; 0000028055145840
+	78	[94]	CALL     	4 3 1
+	79	[98]	RETURN   	0 1
+constants (21) for 000002805513ED30:
+	1	"m_config"
+	2	"m_playertype"
+	3	"scoreRacePlayer"
+	4	"table"
+	5	"sort"
+	6	"m_rewards"
+	7	"scoreRaceReward"
+	8	"require"
+	9	"Data.Config.MergeItemScoreConfig"
+	10	"mergeItemScore"
+	11	"ipairs"
+	12	"item_id"
+	13	"m_orderScore"
+	14	"pairs"
+	15	"eventOrderScore"
+	16	"insert"
+	17	"Table"
+	18	"DeepCopy"
+	19	"IsNumber"
+	20	"diff_score_min"
+	21	"m_addScoreUseDiff"
+locals (14) for 000002805513ED30:
+	0	self	1	80
+	1	config	1	80
+	2	mergeItemConfig	22	80
+	3	(for generator)	28	35
+	4	(for state)	28	35
+	5	(for control)	28	35
+	6	_	29	33
+	7	data	29	33
+	8	isUseDiff	39	80
+	9	(for generator)	42	63
+	10	(for state)	42	63
+	11	(for control)	42	63
+	12	_	43	61
+	13	cfg	43	61
+upvalues (1) for 000002805513ED30:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:66,66> (8 instructions at 000002805513EDB0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[66]	GETTABLE 	2 0 -1	; "round"
+	2	[66]	GETTABLE 	3 1 -1	; "round"
+	3	[66]	LT       	1 2 3
+	4	[66]	JMP      	0 1	; to 6
+	5	[66]	LOADBOOL 	2 0 1
+	6	[66]	LOADBOOL 	2 1 0
+	7	[66]	RETURN   	2 2
+	8	[66]	RETURN   	0 1
+constants (1) for 000002805513EDB0:
+	1	"round"
+locals (2) for 000002805513EDB0:
+	0	A	1	9
+	1	B	1	9
+upvalues (0) for 000002805513EDB0:
+
+function <ScoreRaceModel.lua:68,68> (8 instructions at 0000028055144B30)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[68]	GETTABLE 	2 0 -1	; "round"
+	2	[68]	GETTABLE 	3 1 -1	; "round"
+	3	[68]	LT       	1 2 3
+	4	[68]	JMP      	0 1	; to 6
+	5	[68]	LOADBOOL 	2 0 1
+	6	[68]	LOADBOOL 	2 1 0
+	7	[68]	RETURN   	2 2
+	8	[68]	RETURN   	0 1
+constants (1) for 0000028055144B30:
+	1	"round"
+locals (2) for 0000028055144B30:
+	0	A	1	9
+	1	B	1	9
+upvalues (0) for 0000028055144B30:
+
+function <ScoreRaceModel.lua:90,92> (8 instructions at 00000280551457C0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[91]	GETTABLE 	2 0 -1	; "diff_score_min"
+	2	[91]	GETTABLE 	3 1 -1	; "diff_score_min"
+	3	[91]	LT       	1 2 3
+	4	[91]	JMP      	0 1	; to 6
+	5	[91]	LOADBOOL 	2 0 1
+	6	[91]	LOADBOOL 	2 1 0
+	7	[91]	RETURN   	2 2
+	8	[92]	RETURN   	0 1
+constants (1) for 00000280551457C0:
+	1	"diff_score_min"
+locals (2) for 00000280551457C0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 00000280551457C0:
+
+function <ScoreRaceModel.lua:94,96> (8 instructions at 0000028055145840)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[95]	GETTABLE 	2 0 -1	; "gold_min"
+	2	[95]	GETTABLE 	3 1 -1	; "gold_min"
+	3	[95]	LT       	1 2 3
+	4	[95]	JMP      	0 1	; to 6
+	5	[95]	LOADBOOL 	2 0 1
+	6	[95]	LOADBOOL 	2 1 0
+	7	[95]	RETURN   	2 2
+	8	[96]	RETURN   	0 1
+constants (1) for 0000028055145840:
+	1	"gold_min"
+locals (2) for 0000028055145840:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000028055145840:
+
+function <ScoreRaceModel.lua:101,107> (17 instructions at 0000028055145B00)
+2 params, 5 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[102]	GETTABLE 	2 0 -1	; "m_config"
+	2	[102]	EQ       	1 2 -2	; - nil
+	3	[102]	JMP      	0 8	; to 12
+	4	[102]	SELF     	2 0 -3	; "CheckOpen"
+	5	[102]	CALL     	2 2 2
+	6	[102]	TEST     	2 0
+	7	[102]	JMP      	0 4	; to 12
+	8	[102]	SELF     	2 0 -4	; "IsInGroup"
+	9	[102]	CALL     	2 2 2
+	10	[102]	TEST     	2 1
+	11	[102]	JMP      	0 1	; to 13
+	12	[103]	RETURN   	0 1
+	13	[106]	SELF     	2 0 -5	; "_TryAddMergeScore"
+	14	[106]	MOVE     	4 1
+	15	[106]	TAILCALL 	2 3 0
+	16	[106]	RETURN   	2 0
+	17	[107]	RETURN   	0 1
+constants (5) for 0000028055145B00:
+	1	"m_config"
+	2	nil
+	3	"CheckOpen"
+	4	"IsInGroup"
+	5	"_TryAddMergeScore"
+locals (2) for 0000028055145B00:
+	0	self	1	18
+	1	item	1	18
+upvalues (0) for 0000028055145B00:
+
+function <ScoreRaceModel.lua:111,122> (22 instructions at 0000028055145BE0)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[112]	SELF     	2 1 -1	; "GetType"
+	2	[112]	CALL     	2 2 2
+	3	[113]	GETTABLE 	3 0 -2	; "m_config"
+	4	[113]	GETTABLE 	3 3 -3	; "mergeItemScore"
+	5	[113]	GETTABLE 	3 3 2
+	6	[113]	EQ       	0 3 -4	; - nil
+	7	[113]	JMP      	0 1	; to 9
+	8	[114]	RETURN   	0 1
+	9	[117]	GETTABLE 	3 0 -2	; "m_config"
+	10	[117]	GETTABLE 	3 3 -3	; "mergeItemScore"
+	11	[117]	GETTABLE 	3 3 2
+	12	[117]	GETTABLE 	3 3 -5	; "merge_score_race"
+	13	[118]	EQ       	1 3 -4	; - nil
+	14	[118]	JMP      	0 6	; to 21
+	15	[119]	SELF     	4 0 -6	; "_AddScore"
+	16	[119]	MOVE     	6 3
+	17	[119]	GETTABUP 	7 0 -7	; _ENV "EScoreRaceAddScoreScene"
+	18	[119]	GETTABLE 	7 7 -8	; "Merge"
+	19	[119]	MOVE     	8 1
+	20	[119]	CALL     	4 5 1
+	21	[121]	RETURN   	3 2
+	22	[122]	RETURN   	0 1
+constants (8) for 0000028055145BE0:
+	1	"GetType"
+	2	"m_config"
+	3	"mergeItemScore"
+	4	nil
+	5	"merge_score_race"
+	6	"_AddScore"
+	7	"EScoreRaceAddScoreScene"
+	8	"Merge"
+locals (4) for 0000028055145BE0:
+	0	self	1	23
+	1	itemModel	1	23
+	2	itemType	3	23
+	3	mergeScore	13	23
+upvalues (1) for 0000028055145BE0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:124,126> (6 instructions at 0000028055145DB0)
+2 params, 6 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[125]	SELF     	2 0 -1	; "_AddScore"
+	2	[125]	MOVE     	4 1
+	3	[125]	GETTABUP 	5 0 -2	; _ENV "EScoreRaceAddScoreScene"
+	4	[125]	GETTABLE 	5 5 -3	; "Order"
+	5	[125]	CALL     	2 4 1
+	6	[126]	RETURN   	0 1
+constants (3) for 0000028055145DB0:
+	1	"_AddScore"
+	2	"EScoreRaceAddScoreScene"
+	3	"Order"
+locals (2) for 0000028055145DB0:
+	0	self	1	7
+	1	num	1	7
+upvalues (1) for 0000028055145DB0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:130,170> (77 instructions at 0000028055145E30)
+2 params, 10 slots, 1 upvalue, 8 locals, 24 constants, 0 functions
+	1	[131]	GETTABLE 	2 0 -1	; "m_config"
+	2	[131]	EQ       	1 2 -2	; - nil
+	3	[131]	JMP      	0 8	; to 12
+	4	[131]	SELF     	2 0 -3	; "CheckOpen"
+	5	[131]	CALL     	2 2 2
+	6	[131]	TEST     	2 0
+	7	[131]	JMP      	0 4	; to 12
+	8	[131]	SELF     	2 0 -4	; "IsInGroup"
+	9	[131]	CALL     	2 2 2
+	10	[131]	TEST     	2 1
+	11	[131]	JMP      	0 1	; to 13
+	12	[132]	RETURN   	0 1
+	13	[135]	LOADNIL  	2 1
+	14	[137]	GETTABLE 	4 0 -5	; "m_addScoreUseDiff"
+	15	[137]	TEST     	4 0
+	16	[137]	JMP      	0 16	; to 33
+	17	[138]	SELF     	4 1 -6	; "GetDiffScore"
+	18	[138]	CALL     	4 2 2
+	19	[139]	EQ       	0 4 -7	; - 0
+	20	[139]	JMP      	0 1	; to 22
+	21	[140]	RETURN   	0 1
+	22	[143]	GETTABUP 	5 0 -8	; _ENV "Table"
+	23	[143]	GETTABLE 	5 5 -9	; "BinarySearch"
+	24	[143]	GETTABLE 	6 0 -1	; "m_config"
+	25	[143]	GETTABLE 	6 6 -10	; "m_orderScore"
+	26	[143]	MOVE     	7 4
+	27	[143]	LOADK    	8 -11	; "diff_score_min"
+	28	[143]	LOADK    	9 -12	; "diff_score_max"
+	29	[143]	CALL     	5 5 2
+	30	[143]	MOVE     	2 5
+	31	[144]	MOVE     	3 4
+	32	[144]	JMP      	0 15	; to 48
+	33	[146]	SELF     	4 1 -13	; "GetPrice"
+	34	[146]	CALL     	4 2 2
+	35	[147]	EQ       	0 4 -7	; - 0
+	36	[147]	JMP      	0 1	; to 38
+	37	[148]	RETURN   	0 1
+	38	[151]	GETTABUP 	5 0 -8	; _ENV "Table"
+	39	[151]	GETTABLE 	5 5 -9	; "BinarySearch"
+	40	[151]	GETTABLE 	6 0 -1	; "m_config"
+	41	[151]	GETTABLE 	6 6 -10	; "m_orderScore"
+	42	[151]	MOVE     	7 4
+	43	[151]	LOADK    	8 -14	; "gold_min"
+	44	[151]	LOADK    	9 -15	; "gold_max"
+	45	[151]	CALL     	5 5 2
+	46	[151]	MOVE     	2 5
+	47	[152]	MOVE     	3 4
+	48	[155]	EQ       	0 2 -2	; - nil
+	49	[155]	JMP      	0 1	; to 51
+	50	[156]	RETURN   	0 1
+	51	[159]	GETTABLE 	4 0 -1	; "m_config"
+	52	[159]	GETTABLE 	4 4 -10	; "m_orderScore"
+	53	[159]	GETTABLE 	4 4 2
+	54	[161]	GETTABLE 	5 4 -16	; "reward_num_percentage"
+	55	[161]	TEST     	5 0
+	56	[161]	JMP      	0 8	; to 65
+	57	[161]	GETTABUP 	5 0 -17	; _ENV "math"
+	58	[161]	GETTABLE 	5 5 -18	; "floor"
+	59	[161]	GETTABLE 	6 4 -16	; "reward_num_percentage"
+	60	[161]	MUL      	6 3 6
+	61	[161]	DIV      	6 6 -19	; - 10000
+	62	[161]	CALL     	5 2 2
+	63	[161]	TEST     	5 1
+	64	[161]	JMP      	0 1	; to 66
+	65	[161]	GETTABLE 	5 4 -20	; "reward_num_fix"
+	66	[162]	LE       	0 5 -7	; - 0
+	67	[162]	JMP      	0 1	; to 69
+	68	[163]	RETURN   	0 1
+	69	[166]	NEWTABLE 	6 0 2
+	70	[167]	GETTABUP 	7 0 -21	; _ENV "PROPERTY_TYPE"
+	71	[167]	GETTABUP 	8 0 -22	; _ENV "EPropertyType"
+	72	[167]	GETTABLE 	8 8 -23	; "ScoreRaceScore"
+	73	[167]	SETTABLE 	6 7 8
+	74	[168]	GETTABUP 	7 0 -24	; _ENV "PROPERTY_COUNT"
+	75	[168]	SETTABLE 	6 7 5
+	76	[169]	RETURN   	6 2
+	77	[170]	RETURN   	0 1
+constants (24) for 0000028055145E30:
+	1	"m_config"
+	2	nil
+	3	"CheckOpen"
+	4	"IsInGroup"
+	5	"m_addScoreUseDiff"
+	6	"GetDiffScore"
+	7	0
+	8	"Table"
+	9	"BinarySearch"
+	10	"m_orderScore"
+	11	"diff_score_min"
+	12	"diff_score_max"
+	13	"GetPrice"
+	14	"gold_min"
+	15	"gold_max"
+	16	"reward_num_percentage"
+	17	"math"
+	18	"floor"
+	19	10000
+	20	"reward_num_fix"
+	21	"PROPERTY_TYPE"
+	22	"EPropertyType"
+	23	"ScoreRaceScore"
+	24	"PROPERTY_COUNT"
+locals (8) for 0000028055145E30:
+	0	self	1	78
+	1	order	1	78
+	2	selectedIdx	14	78
+	3	score	14	78
+	4	diffScore	19	32
+	5	price	35	48
+	6	selected	54	78
+	7	count	66	78
+upvalues (1) for 0000028055145E30:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:172,186> (35 instructions at 0000028055143220)
+2 params, 9 slots, 1 upvalue, 4 locals, 22 constants, 0 functions
+	1	[173]	SELF     	2 0 -1	; "GetGenerateItemByOrder"
+	2	[173]	GETTABLE 	4 1 -2	; "order"
+	3	[173]	CALL     	2 3 2
+	4	[175]	EQ       	0 2 -3	; - nil
+	5	[175]	JMP      	0 1	; to 7
+	6	[176]	RETURN   	0 1
+	7	[179]	GETTABUP 	3 0 -4	; _ENV "RewardApi"
+	8	[179]	GETTABLE 	3 3 -5	; "AcquireRewardsLogic"
+	9	[179]	NEWTABLE 	4 1 0
+	10	[179]	MOVE     	5 2
+	11	[179]	SETLIST  	4 1 1	; 1
+	12	[179]	GETTABUP 	5 0 -6	; _ENV "EPropertySource"
+	13	[179]	GETTABLE 	5 5 -7	; "Give"
+	14	[179]	GETTABUP 	6 0 -8	; _ENV "EBIType"
+	15	[179]	GETTABLE 	6 6 -9	; "ScoreRaceFinishOrder"
+	16	[179]	GETTABUP 	7 0 -10	; _ENV "EGameMode"
+	17	[179]	GETTABLE 	7 7 -11	; "Main"
+	18	[179]	GETTABUP 	8 0 -12	; _ENV "CacheItemType"
+	19	[179]	GETTABLE 	8 8 -13	; "Type2"
+	20	[179]	CALL     	3 6 1
+	21	[181]	NEWTABLE 	3 0 2
+	22	[182]	GETTABLE 	4 1 -2	; "order"
+	23	[182]	SETTABLE 	3 -14 4	; "Order" -
+	24	[183]	GETTABUP 	4 0 -16	; _ENV "PROPERTY_COUNT"
+	25	[183]	GETTABLE 	4 2 4
+	26	[183]	SETTABLE 	3 -15 4	; "Number" -
+	27	[185]	GETTABUP 	4 0 -17	; _ENV "GM"
+	28	[185]	GETTABLE 	4 4 -18	; "MainBoardModel"
+	29	[185]	GETTABLE 	4 4 -19	; "event"
+	30	[185]	SELF     	4 4 -20	; "Call"
+	31	[185]	GETTABUP 	6 0 -21	; _ENV "BoardEventType"
+	32	[185]	GETTABLE 	6 6 -22	; "CollectScoreRaceToken"
+	33	[185]	MOVE     	7 3
+	34	[185]	CALL     	4 4 1
+	35	[186]	RETURN   	0 1
+constants (22) for 0000028055143220:
+	1	"GetGenerateItemByOrder"
+	2	"order"
+	3	nil
+	4	"RewardApi"
+	5	"AcquireRewardsLogic"
+	6	"EPropertySource"
+	7	"Give"
+	8	"EBIType"
+	9	"ScoreRaceFinishOrder"
+	10	"EGameMode"
+	11	"Main"
+	12	"CacheItemType"
+	13	"Type2"
+	14	"Order"
+	15	"Number"
+	16	"PROPERTY_COUNT"
+	17	"GM"
+	18	"MainBoardModel"
+	19	"event"
+	20	"Call"
+	21	"BoardEventType"
+	22	"CollectScoreRaceToken"
+locals (4) for 0000028055143220:
+	0	self	1	36
+	1	msg	1	36
+	2	score	4	36
+	3	message	27	36
+upvalues (1) for 0000028055143220:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:190,212> (65 instructions at 0000028055143550)
+4 params, 11 slots, 1 upvalue, 6 locals, 27 constants, 0 functions
+	1	[192]	SELF     	4 0 -1	; "GetScore"
+	2	[192]	CALL     	4 2 2
+	3	[192]	SELF     	5 0 -2	; "GetTargetScore"
+	4	[192]	CALL     	5 2 2
+	5	[192]	LE       	0 5 4
+	6	[192]	JMP      	0 1	; to 8
+	7	[193]	RETURN   	0 1
+	8	[196]	SELF     	4 0 -3	; "_OnTokenChanged"
+	9	[196]	MOVE     	6 1
+	10	[196]	SELF     	7 0 -1	; "GetScore"
+	11	[196]	CALL     	7 2 2
+	12	[196]	ADD      	7 7 1
+	13	[196]	SELF     	8 0 -2	; "GetTargetScore"
+	14	[196]	CALL     	8 2 2
+	15	[196]	LT       	0 7 8
+	16	[196]	JMP      	0 4	; to 21
+	17	[196]	GETTABUP 	7 0 -4	; _ENV "EScoreRaceAddScoreScene"
+	18	[196]	GETTABLE 	7 7 -5	; "Merge"
+	19	[196]	EQ       	1 2 7
+	20	[196]	JMP      	0 1	; to 22
+	21	[196]	LOADBOOL 	7 0 1
+	22	[196]	LOADBOOL 	7 1 0
+	23	[196]	CALL     	4 4 1
+	24	[197]	GETTABUP 	4 0 -6	; _ENV "EventDispatcher"
+	25	[197]	GETTABLE 	4 4 -7	; "DispatchEvent"
+	26	[197]	GETTABUP 	5 0 -8	; _ENV "EEventType"
+	27	[197]	GETTABLE 	5 5 -9	; "ScoreRaceScoreChanged"
+	28	[197]	NEWTABLE 	6 0 3
+	29	[197]	SETTABLE 	6 -10 1	; "Score" -
+	30	[197]	SETTABLE 	6 -11 2	; "Scene" -
+	31	[197]	SETTABLE 	6 -12 3	; "Source" -
+	32	[197]	CALL     	4 3 1
+	33	[200]	NEWTABLE 	4 0 4
+	34	[201]	SETTABLE 	4 -13 1	; "score" -
+	35	[202]	SELF     	5 0 -15	; "GetRound"
+	36	[202]	CALL     	5 2 2
+	37	[202]	SETTABLE 	4 -14 5	; "round" -
+	38	[203]	SELF     	5 0 -17	; "GetRoundEntryTime"
+	39	[203]	CALL     	5 2 2
+	40	[203]	SETTABLE 	4 -16 5	; "stime" -
+	41	[204]	SETTABLE 	4 -18 2	; "scene" -
+	42	[206]	SELF     	5 0 -19	; "LogActivity"
+	43	[206]	GETTABUP 	7 0 -20	; _ENV "EBIType"
+	44	[206]	GETTABLE 	7 7 -21	; "ActivityAddScore"
+	45	[206]	GETTABUP 	8 0 -22	; _ENV "GM"
+	46	[206]	GETTABLE 	8 8 -23	; "BIManager"
+	47	[206]	SELF     	8 8 -24	; "TableToString"
+	48	[206]	MOVE     	10 4
+	49	[206]	CALL     	8 3 0
+	50	[206]	CALL     	5 0 1
+	51	[208]	SELF     	5 0 -1	; "GetScore"
+	52	[208]	CALL     	5 2 2
+	53	[208]	SELF     	6 0 -2	; "GetTargetScore"
+	54	[208]	CALL     	6 2 2
+	55	[208]	LE       	0 6 5
+	56	[208]	JMP      	0 8	; to 65
+	57	[208]	SELF     	5 0 -25	; "HasViewController"
+	58	[208]	CALL     	5 2 2
+	59	[208]	TEST     	5 1
+	60	[208]	JMP      	0 4	; to 65
+	61	[209]	SELF     	5 0 -26	; "GetNewViewController"
+	62	[209]	CALL     	5 2 2
+	63	[210]	SELF     	6 5 -27	; "State0"
+	64	[210]	CALL     	6 2 1
+	65	[212]	RETURN   	0 1
+constants (27) for 0000028055143550:
+	1	"GetScore"
+	2	"GetTargetScore"
+	3	"_OnTokenChanged"
+	4	"EScoreRaceAddScoreScene"
+	5	"Merge"
+	6	"EventDispatcher"
+	7	"DispatchEvent"
+	8	"EEventType"
+	9	"ScoreRaceScoreChanged"
+	10	"Score"
+	11	"Scene"
+	12	"Source"
+	13	"score"
+	14	"round"
+	15	"GetRound"
+	16	"stime"
+	17	"GetRoundEntryTime"
+	18	"scene"
+	19	"LogActivity"
+	20	"EBIType"
+	21	"ActivityAddScore"
+	22	"GM"
+	23	"BIManager"
+	24	"TableToString"
+	25	"HasViewController"
+	26	"GetNewViewController"
+	27	"State0"
+locals (6) for 0000028055143550:
+	0	self	1	66
+	1	addScore	1	66
+	2	scene	1	66
+	3	itemModel	1	66
+	4	biInfo	42	66
+	5	viewController	63	65
+upvalues (1) for 0000028055143550:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:215,225> (35 instructions at 0000028055148D40)
+2 params, 6 slots, 1 upvalue, 3 locals, 15 constants, 0 functions
+	1	[216]	LT       	1 -1 1	; 3 -
+	2	[216]	JMP      	0 2	; to 5
+	3	[216]	LT       	0 1 -2	; - 1
+	4	[216]	JMP      	0 20	; to 25
+	5	[217]	GETTABUP 	2 0 -3	; _ENV "GameConfig"
+	6	[217]	GETTABLE 	2 2 -4	; "IsTestMode"
+	7	[217]	CALL     	2 1 2
+	8	[217]	TEST     	2 0
+	9	[217]	JMP      	0 13	; to 23
+	10	[218]	LOADK    	2 -5	; "\231\167\175\229\136\134\231\171\158\233\128\159\231\187\147\231\174\151\230\142\146\229\144\141\228\184\141\229\175\185:"
+	11	[218]	MOVE     	3 1
+	12	[218]	LOADK    	4 -6	; "???"
+	13	[218]	CONCAT   	2 2 4
+	14	[219]	GETTABUP 	3 0 -7	; _ENV "GM"
+	15	[219]	GETTABLE 	3 3 -8	; "UIManager"
+	16	[219]	SELF     	3 3 -9	; "ShowPrompt"
+	17	[219]	MOVE     	5 2
+	18	[219]	CALL     	3 3 1
+	19	[220]	GETTABUP 	3 0 -10	; _ENV "Log"
+	20	[220]	GETTABLE 	3 3 -11	; "Info"
+	21	[220]	MOVE     	4 2
+	22	[220]	CALL     	3 2 1
+	23	[222]	LOADNIL  	2 0
+	24	[222]	RETURN   	2 2
+	25	[224]	GETTABLE 	2 0 -12	; "m_config"
+	26	[224]	GETTABLE 	2 2 -13	; "m_rewards"
+	27	[224]	SELF     	3 0 -14	; "GetRound"
+	28	[224]	CALL     	3 2 2
+	29	[224]	GETTABLE 	2 2 3
+	30	[224]	LOADK    	3 -15	; "reward_"
+	31	[224]	MOVE     	4 1
+	32	[224]	CONCAT   	3 3 4
+	33	[224]	GETTABLE 	2 2 3
+	34	[224]	RETURN   	2 2
+	35	[225]	RETURN   	0 1
+constants (15) for 0000028055148D40:
+	1	3
+	2	1
+	3	"GameConfig"
+	4	"IsTestMode"
+	5	"\231\167\175\229\136\134\231\171\158\233\128\159\231\187\147\231\174\151\230\142\146\229\144\141\228\184\141\229\175\185:"
+	6	"???"
+	7	"GM"
+	8	"UIManager"
+	9	"ShowPrompt"
+	10	"Log"
+	11	"Info"
+	12	"m_config"
+	13	"m_rewards"
+	14	"GetRound"
+	15	"reward_"
+locals (3) for 0000028055148D40:
+	0	self	1	36
+	1	rk	1	36
+	2	info	14	23
+upvalues (1) for 0000028055148D40:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:227,229> (11 instructions at 0000028055149640)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[228]	SELF     	1 0 -1	; "GetRound"
+	2	[228]	CALL     	1 2 2
+	3	[228]	GETTABLE 	2 0 -2	; "m_config"
+	4	[228]	GETTABLE 	2 2 -3	; "m_rewards"
+	5	[228]	LEN      	2 2
+	6	[228]	LT       	1 2 1
+	7	[228]	JMP      	0 1	; to 9
+	8	[228]	LOADBOOL 	1 0 1
+	9	[228]	LOADBOOL 	1 1 0
+	10	[228]	RETURN   	1 2
+	11	[229]	RETURN   	0 1
+constants (3) for 0000028055149640:
+	1	"GetRound"
+	2	"m_config"
+	3	"m_rewards"
+locals (1) for 0000028055149640:
+	0	self	1	12
+upvalues (0) for 0000028055149640:
+
+function <ScoreRaceModel.lua:231,233> (12 instructions at 00000280551493C0)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[232]	SELF     	1 0 -1	; "GetScore"
+	2	[232]	CALL     	1 2 2
+	3	[232]	EQ       	1 1 -2	; - -1
+	4	[232]	JMP      	0 4	; to 9
+	5	[232]	SELF     	1 0 -3	; "GetGroupId"
+	6	[232]	CALL     	1 2 2
+	7	[232]	EQ       	0 1 -4	; - 0
+	8	[232]	JMP      	0 1	; to 10
+	9	[232]	LOADBOOL 	1 0 1
+	10	[232]	LOADBOOL 	1 1 0
+	11	[232]	RETURN   	1 2
+	12	[233]	RETURN   	0 1
+constants (4) for 00000280551493C0:
+	1	"GetScore"
+	2	-1
+	3	"GetGroupId"
+	4	0
+locals (1) for 00000280551493C0:
+	0	self	1	13
+upvalues (0) for 00000280551493C0:
+
+function <ScoreRaceModel.lua:235,240> (23 instructions at 00000280551492C0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[236]	GETTABLE 	1 0 -1	; "m_config"
+	2	[236]	EQ       	0 1 -2	; - nil
+	3	[236]	JMP      	0 2	; to 6
+	4	[237]	LOADBOOL 	1 0 0
+	5	[237]	RETURN   	1 2
+	6	[239]	SELF     	1 0 -3	; "GetState"
+	7	[239]	CALL     	1 2 2
+	8	[239]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	9	[239]	GETTABLE 	2 2 -5	; "Started"
+	10	[239]	EQ       	0 1 2
+	11	[239]	JMP      	0 8	; to 20
+	12	[239]	SELF     	1 0 -6	; "IsAllRoundFinished"
+	13	[239]	CALL     	1 2 2
+	14	[239]	TEST     	1 1
+	15	[239]	JMP      	0 4	; to 20
+	16	[239]	SELF     	1 0 -7	; "IsReqStop"
+	17	[239]	CALL     	1 2 2
+	18	[239]	NOT      	1 1
+	19	[239]	JMP      	0 2	; to 22
+	20	[239]	LOADBOOL 	1 0 1
+	21	[239]	LOADBOOL 	1 1 0
+	22	[239]	RETURN   	1 2
+	23	[240]	RETURN   	0 1
+constants (7) for 00000280551492C0:
+	1	"m_config"
+	2	nil
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"IsAllRoundFinished"
+	7	"IsReqStop"
+locals (1) for 00000280551492C0:
+	0	self	1	24
+upvalues (1) for 00000280551492C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:242,261> (37 instructions at 0000028055149240)
+1 param, 6 slots, 1 upvalue, 1 local, 25 constants, 1 function
+	1	[243]	NEWTABLE 	1 0 9
+	2	[244]	SETTABLE 	1 -1 -2	; "Type" "ScoreRace"
+	3	[245]	NEWTABLE 	2 3 0
+	4	[245]	GETTABUP 	3 0 -4	; _ENV "EEventType"
+	5	[245]	GETTABLE 	3 3 -5	; "ScoreRaceAllRoundFinished"
+	6	[245]	GETTABUP 	4 0 -4	; _ENV "EEventType"
+	7	[245]	GETTABLE 	4 4 -6	; "ScoreRaceStateChanged"
+	8	[245]	GETTABUP 	5 0 -4	; _ENV "EEventType"
+	9	[245]	GETTABLE 	5 5 -7	; "ScoreRaceDefeated"
+	10	[245]	SETLIST  	2 3 1	; 1
+	11	[245]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	12	[246]	GETTABUP 	2 0 -9	; _ENV "UIPrefabConfigName"
+	13	[246]	GETTABLE 	2 2 -10	; "ScoreRaceEntry"
+	14	[246]	SETTABLE 	1 -8 2	; "EntryPrefabConfigName" -
+	15	[250]	CLOSURE  	2 0	; 00000280551497C0
+	16	[250]	SETTABLE 	1 -11 2	; "CheckFunc" -
+	17	[251]	GETTABUP 	2 0 -13	; _ENV "EHudSideBarType"
+	18	[251]	GETTABLE 	2 2 -14	; "Left"
+	19	[251]	SETTABLE 	1 -12 2	; "HudSideBarType" -
+	20	[252]	GETTABUP 	2 0 -16	; _ENV "ESceneViewHudButtonKey"
+	21	[252]	GETTABLE 	2 2 -17	; "ScoreRace"
+	22	[252]	SETTABLE 	1 -15 2	; "EntryButtonKey" -
+	23	[253]	GETTABUP 	2 0 -19	; _ENV "ImageFileConfigName"
+	24	[253]	GETTABLE 	2 2 -20	; "icon_scorerace"
+	25	[253]	SETTABLE 	1 -18 2	; "EntryIconName" -
+	26	[254]	SETTABLE 	1 -21 -22	; "OnClickedFunc" nil
+	27	[255]	NEWTABLE 	2 3 0
+	28	[256]	GETTABUP 	3 0 -4	; _ENV "EEventType"
+	29	[256]	GETTABLE 	3 3 -24	; "ScoreRaceUpdateRank"
+	30	[257]	GETTABUP 	4 0 -4	; _ENV "EEventType"
+	31	[257]	GETTABLE 	4 4 -25	; "ScoreRaceScoreChanged"
+	32	[258]	GETTABUP 	5 0 -4	; _ENV "EEventType"
+	33	[259]	GETTABLE 	5 5 -6	; "ScoreRaceStateChanged"
+	34	[259]	SETLIST  	2 3 1	; 1
+	35	[259]	SETTABLE 	1 -23 2	; "ArrUpdateEntryContentEvent" -
+	36	[260]	RETURN   	1 2
+	37	[261]	RETURN   	0 1
+constants (25) for 0000028055149240:
+	1	"Type"
+	2	"ScoreRace"
+	3	"ArrCheckShowEvent"
+	4	"EEventType"
+	5	"ScoreRaceAllRoundFinished"
+	6	"ScoreRaceStateChanged"
+	7	"ScoreRaceDefeated"
+	8	"EntryPrefabConfigName"
+	9	"UIPrefabConfigName"
+	10	"ScoreRaceEntry"
+	11	"CheckFunc"
+	12	"HudSideBarType"
+	13	"EHudSideBarType"
+	14	"Left"
+	15	"EntryButtonKey"
+	16	"ESceneViewHudButtonKey"
+	17	"ScoreRace"
+	18	"EntryIconName"
+	19	"ImageFileConfigName"
+	20	"icon_scorerace"
+	21	"OnClickedFunc"
+	22	nil
+	23	"ArrUpdateEntryContentEvent"
+	24	"ScoreRaceUpdateRank"
+	25	"ScoreRaceScoreChanged"
+locals (1) for 0000028055149240:
+	0	self	1	38
+upvalues (1) for 0000028055149240:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:247,250> (19 instructions at 00000280551497C0)
+0 params, 3 slots, 1 upvalue, 1 local, 9 constants, 0 functions
+	1	[248]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[248]	GETTABLE 	0 0 -2	; "ActivityManager"
+	3	[248]	SELF     	0 0 -3	; "GetModel"
+	4	[248]	GETTABUP 	2 0 -4	; _ENV "ActivityType"
+	5	[248]	GETTABLE 	2 2 -5	; "ScoreRace"
+	6	[248]	CALL     	0 3 2
+	7	[249]	SELF     	1 0 -6	; "GetState"
+	8	[249]	CALL     	1 2 2
+	9	[249]	GETTABUP 	2 0 -7	; _ENV "ActivityState"
+	10	[249]	GETTABLE 	2 2 -8	; "Preparing"
+	11	[249]	EQ       	1 1 2
+	12	[249]	JMP      	0 4	; to 17
+	13	[249]	SELF     	1 0 -9	; "CheckOpen"
+	14	[249]	CALL     	1 2 2
+	15	[249]	JMP      	0 2	; to 18
+	16	[249]	LOADBOOL 	1 0 1
+	17	[249]	LOADBOOL 	1 1 0
+	18	[249]	RETURN   	1 2
+	19	[250]	RETURN   	0 1
+constants (9) for 00000280551497C0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"ScoreRace"
+	6	"GetState"
+	7	"ActivityState"
+	8	"Preparing"
+	9	"CheckOpen"
+locals (1) for 00000280551497C0:
+	0	model	7	20
+upvalues (1) for 00000280551497C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:263,277> (24 instructions at 0000028055148DC0)
+1 param, 6 slots, 1 upvalue, 1 local, 19 constants, 1 function
+	1	[264]	NEWTABLE 	1 0 8
+	2	[265]	NEWTABLE 	2 3 0
+	3	[265]	GETTABUP 	3 0 -2	; _ENV "EEventType"
+	4	[265]	GETTABLE 	3 3 -3	; "ScoreRaceAllRoundFinished"
+	5	[265]	GETTABUP 	4 0 -2	; _ENV "EEventType"
+	6	[265]	GETTABLE 	4 4 -4	; "ScoreRaceStateChanged"
+	7	[265]	GETTABUP 	5 0 -2	; _ENV "EEventType"
+	8	[265]	GETTABLE 	5 5 -5	; "ScoreRaceDefeated"
+	9	[265]	SETLIST  	2 3 1	; 1
+	10	[265]	SETTABLE 	1 -1 2	; "listeners" -
+	11	[266]	SETTABLE 	1 -6 -7	; "bubbleName" "m_scoreRaceBubble"
+	12	[267]	SETTABLE 	1 -8 -9	; "bubbleNodeName" "m_ScoreRaceBubbleNode"
+	13	[268]	GETTABUP 	2 0 -11	; _ENV "UIPrefabConfigName"
+	14	[268]	GETTABLE 	2 2 -12	; "ScoreRaceBoardEntry"
+	15	[268]	SETTABLE 	1 -10 2	; "entryPrefabName" -
+	16	[269]	SETTABLE 	1 -13 -14	; "bubbleCountName" "m_ScoreRaceBubbleCount"
+	17	[270]	SETTABLE 	1 -15 -16	; "scrollToFunName" "ScrollToScoreRaceBoardEntry"
+	18	[271]	SELF     	2 0 -18	; "GetType"
+	19	[271]	CALL     	2 2 2
+	20	[271]	SETTABLE 	1 -17 2	; "activityType" -
+	21	[275]	CLOSURE  	2 0	; 0000028055148FC0
+	22	[275]	SETTABLE 	1 -19 2	; "checkFun" -
+	23	[276]	RETURN   	1 2
+	24	[277]	RETURN   	0 1
+constants (19) for 0000028055148DC0:
+	1	"listeners"
+	2	"EEventType"
+	3	"ScoreRaceAllRoundFinished"
+	4	"ScoreRaceStateChanged"
+	5	"ScoreRaceDefeated"
+	6	"bubbleName"
+	7	"m_scoreRaceBubble"
+	8	"bubbleNodeName"
+	9	"m_ScoreRaceBubbleNode"
+	10	"entryPrefabName"
+	11	"UIPrefabConfigName"
+	12	"ScoreRaceBoardEntry"
+	13	"bubbleCountName"
+	14	"m_ScoreRaceBubbleCount"
+	15	"scrollToFunName"
+	16	"ScrollToScoreRaceBoardEntry"
+	17	"activityType"
+	18	"GetType"
+	19	"checkFun"
+locals (1) for 0000028055148DC0:
+	0	self	1	25
+upvalues (1) for 0000028055148DC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:272,275> (10 instructions at 0000028055148FC0)
+0 params, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[273]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[273]	GETTABLE 	0 0 -2	; "ActivityManager"
+	3	[273]	SELF     	0 0 -3	; "GetModel"
+	4	[273]	GETTABUP 	2 0 -4	; _ENV "ActivityType"
+	5	[273]	GETTABLE 	2 2 -5	; "ScoreRace"
+	6	[273]	CALL     	0 3 2
+	7	[274]	SELF     	1 0 -6	; "CheckOpen"
+	8	[274]	TAILCALL 	1 2 0
+	9	[274]	RETURN   	1 0
+	10	[275]	RETURN   	0 1
+constants (6) for 0000028055148FC0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"ScoreRace"
+	6	"CheckOpen"
+locals (1) for 0000028055148FC0:
+	0	model	7	11
+upvalues (1) for 0000028055148FC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:279,282> (6 instructions at 0000028055149040)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[280]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[280]	GETTABLE 	1 1 -2	; "LateInit"
+	3	[280]	MOVE     	2 0
+	4	[280]	CALL     	1 2 1
+	5	[281]	SETTABLE 	0 -3 -4	; "m_lateInit" true
+	6	[282]	RETURN   	0 1
+constants (4) for 0000028055149040:
+	1	"BaseActivityModel"
+	2	"LateInit"
+	3	"m_lateInit"
+	4	true
+locals (1) for 0000028055149040:
+	0	self	1	7
+upvalues (1) for 0000028055149040:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:284,289> (14 instructions at 0000028055149440)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[285]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[285]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[285]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[285]	GETTABLE 	2 2 -4	; "ScoreRaceStateChanged"
+	5	[285]	CALL     	1 2 1
+	6	[286]	GETTABLE 	1 0 -5	; "m_lateInit"
+	7	[286]	TEST     	1 0
+	8	[286]	JMP      	0 5	; to 14
+	9	[287]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	10	[287]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	11	[287]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	12	[287]	GETTABLE 	2 2 -6	; "OrderStatusChanged"
+	13	[287]	CALL     	1 2 1
+	14	[289]	RETURN   	0 1
+constants (6) for 0000028055149440:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"ScoreRaceStateChanged"
+	5	"m_lateInit"
+	6	"OrderStatusChanged"
+locals (1) for 0000028055149440:
+	0	self	1	15
+upvalues (1) for 0000028055149440:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:291,299> (19 instructions at 0000028055148F40)
+1 param, 3 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[292]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[292]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[292]	MOVE     	2 0
+	4	[292]	CALL     	1 2 1
+	5	[293]	SETTABLE 	0 -3 -4	; "m_fullRankData" nil
+	6	[294]	SETTABLE 	0 -5 -4	; "m_alreadyReset" nil
+	7	[295]	SETTABLE 	0 -6 -4	; "m_defeatpreRankData" nil
+	8	[296]	SETTABLE 	0 -7 -8	; "m_tempRank" 0
+	9	[297]	GETTABUP 	1 0 -9	; _ENV "EventDispatcher"
+	10	[297]	GETTABLE 	1 1 -10	; "DispatchEvent"
+	11	[297]	GETTABUP 	2 0 -11	; _ENV "EEventType"
+	12	[297]	GETTABLE 	2 2 -12	; "ScoreRaceUpdateRank"
+	13	[297]	CALL     	1 2 1
+	14	[298]	GETTABUP 	1 0 -9	; _ENV "EventDispatcher"
+	15	[298]	GETTABLE 	1 1 -10	; "DispatchEvent"
+	16	[298]	GETTABUP 	2 0 -11	; _ENV "EEventType"
+	17	[298]	GETTABLE 	2 2 -13	; "OrderStatusChanged"
+	18	[298]	CALL     	1 2 1
+	19	[299]	RETURN   	0 1
+constants (13) for 0000028055148F40:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_fullRankData"
+	4	nil
+	5	"m_alreadyReset"
+	6	"m_defeatpreRankData"
+	7	"m_tempRank"
+	8	0
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"ScoreRaceUpdateRank"
+	13	"OrderStatusChanged"
+locals (1) for 0000028055148F40:
+	0	self	1	20
+upvalues (1) for 0000028055148F40:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:301,304> (15 instructions at 00000280551494C0)
+1 param, 7 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[302]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[302]	SELF     	1 1 -2	; "Set"
+	3	[302]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[302]	GETTABLE 	3 3 -4	; "Round"
+	5	[302]	LOADK    	4 -5	; "value"
+	6	[302]	SELF     	5 0 -6	; "GetRound"
+	7	[302]	CALL     	5 2 2
+	8	[302]	EQ       	0 5 -7	; - 1
+	9	[302]	JMP      	0 3	; to 13
+	10	[302]	LOADK    	5 -8	; 2
+	11	[302]	TEST     	5 1
+	12	[302]	JMP      	0 1	; to 14
+	13	[302]	LOADK    	5 -7	; 1
+	14	[302]	CALL     	1 5 1
+	15	[304]	RETURN   	0 1
+constants (8) for 00000280551494C0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"Round"
+	5	"value"
+	6	"GetRound"
+	7	1
+	8	2
+locals (1) for 00000280551494C0:
+	0	self	1	16
+upvalues (1) for 00000280551494C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:306,308> (6 instructions at 0000028055149AC0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[307]	NEWTABLE 	1 1 0
+	2	[307]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[307]	GETTABLE 	2 2 -2	; "ScoreRace"
+	4	[307]	SETLIST  	1 1 1	; 1
+	5	[307]	RETURN   	1 2
+	6	[308]	RETURN   	0 1
+constants (2) for 0000028055149AC0:
+	1	"AddressableLabel"
+	2	"ScoreRace"
+locals (1) for 0000028055149AC0:
+	0	self	1	7
+upvalues (1) for 0000028055149AC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:310,312> (8 instructions at 0000028055149140)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[311]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[311]	SELF     	2 2 -2	; "Set"
+	3	[311]	GETTABUP 	4 0 -3	; _ENV "ScoreRaceModel"
+	4	[311]	GETTABLE 	4 4 -4	; "RoundEntryTime"
+	5	[311]	LOADK    	5 -5	; "value"
+	6	[311]	MOVE     	6 1
+	7	[311]	CALL     	2 5 1
+	8	[312]	RETURN   	0 1
+constants (5) for 0000028055149140:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"RoundEntryTime"
+	5	"value"
+locals (2) for 0000028055149140:
+	0	self	1	9
+	1	time	1	9
+upvalues (1) for 0000028055149140:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:314,316> (11 instructions at 0000028055148BC0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[315]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[315]	SELF     	1 1 -2	; "GetValue"
+	3	[315]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[315]	GETTABLE 	3 3 -4	; "RoundEntryTime"
+	5	[315]	LOADK    	4 -5	; "value"
+	6	[315]	CALL     	1 4 2
+	7	[315]	TEST     	1 1
+	8	[315]	JMP      	0 1	; to 10
+	9	[315]	LOADK    	1 -6	; 0
+	10	[315]	RETURN   	1 2
+	11	[316]	RETURN   	0 1
+constants (6) for 0000028055148BC0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"RoundEntryTime"
+	5	"value"
+	6	0
+locals (1) for 0000028055148BC0:
+	0	self	1	12
+upvalues (1) for 0000028055148BC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:318,320> (11 instructions at 00000280551499C0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[319]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[319]	SELF     	1 1 -2	; "GetValue"
+	3	[319]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[319]	GETTABLE 	3 3 -4	; "Score"
+	5	[319]	LOADK    	4 -5	; "value"
+	6	[319]	CALL     	1 4 2
+	7	[319]	TEST     	1 1
+	8	[319]	JMP      	0 1	; to 10
+	9	[319]	LOADK    	1 -6	; -1
+	10	[319]	RETURN   	1 2
+	11	[320]	RETURN   	0 1
+constants (6) for 00000280551499C0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"Score"
+	5	"value"
+	6	-1
+locals (1) for 00000280551499C0:
+	0	self	1	12
+upvalues (1) for 00000280551499C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:322,324> (11 instructions at 0000028055148EC0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[323]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[323]	SELF     	1 1 -2	; "GetValue"
+	3	[323]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[323]	GETTABLE 	3 3 -4	; "Round"
+	5	[323]	LOADK    	4 -5	; "value"
+	6	[323]	CALL     	1 4 2
+	7	[323]	TEST     	1 1
+	8	[323]	JMP      	0 1	; to 10
+	9	[323]	LOADK    	1 -6	; 1
+	10	[323]	RETURN   	1 2
+	11	[324]	RETURN   	0 1
+constants (6) for 0000028055148EC0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"Round"
+	5	"value"
+	6	1
+locals (1) for 0000028055148EC0:
+	0	self	1	12
+upvalues (1) for 0000028055148EC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:326,328> (11 instructions at 0000028055149540)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[327]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[327]	SELF     	1 1 -2	; "GetValue"
+	3	[327]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[327]	GETTABLE 	3 3 -4	; "RankList"
+	5	[327]	LOADK    	4 -5	; "value"
+	6	[327]	CALL     	1 4 2
+	7	[327]	TEST     	1 1
+	8	[327]	JMP      	0 1	; to 10
+	9	[327]	LOADK    	1 -6	; 0
+	10	[327]	RETURN   	1 2
+	11	[328]	RETURN   	0 1
+constants (6) for 0000028055149540:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"RankList"
+	5	"value"
+	6	0
+locals (1) for 0000028055149540:
+	0	self	1	12
+upvalues (1) for 0000028055149540:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:330,332> (5 instructions at 00000280551495C0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[331]	GETTABLE 	1 0 -1	; "m_config"
+	2	[331]	GETTABLE 	1 1 -2	; "m_rewards"
+	3	[331]	LEN      	1 1
+	4	[331]	RETURN   	1 2
+	5	[332]	RETURN   	0 1
+constants (2) for 00000280551495C0:
+	1	"m_config"
+	2	"m_rewards"
+locals (1) for 00000280551495C0:
+	0	self	1	6
+upvalues (0) for 00000280551495C0:
+
+function <ScoreRaceModel.lua:335,343> (18 instructions at 0000028055149940)
+1 param, 6 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[336]	SELF     	1 0 -1	; "GetRound"
+	2	[336]	CALL     	1 2 2
+	3	[337]	NEWTABLE 	2 3 0
+	4	[338]	GETTABLE 	3 0 -2	; "m_config"
+	5	[338]	GETTABLE 	3 3 -3	; "m_rewards"
+	6	[338]	GETTABLE 	3 3 1
+	7	[338]	GETTABLE 	3 3 -4	; "reward_1"
+	8	[339]	GETTABLE 	4 0 -2	; "m_config"
+	9	[339]	GETTABLE 	4 4 -3	; "m_rewards"
+	10	[339]	GETTABLE 	4 4 1
+	11	[339]	GETTABLE 	4 4 -5	; "reward_2"
+	12	[340]	GETTABLE 	5 0 -2	; "m_config"
+	13	[340]	GETTABLE 	5 5 -3	; "m_rewards"
+	14	[340]	GETTABLE 	5 5 1
+	15	[341]	GETTABLE 	5 5 -6	; "reward_3"
+	16	[341]	SETLIST  	2 3 1	; 1
+	17	[342]	RETURN   	2 2
+	18	[343]	RETURN   	0 1
+constants (6) for 0000028055149940:
+	1	"GetRound"
+	2	"m_config"
+	3	"m_rewards"
+	4	"reward_1"
+	5	"reward_2"
+	6	"reward_3"
+locals (3) for 0000028055149940:
+	0	self	1	19
+	1	curRound	3	19
+	2	rewards	17	19
+upvalues (0) for 0000028055149940:
+
+function <ScoreRaceModel.lua:345,350> (14 instructions at 00000280551496C0)
+1 param, 4 slots, 0 upvalues, 1 local, 6 constants, 0 functions
+	1	[346]	SELF     	1 0 -1	; "IsAllRoundFinished"
+	2	[346]	CALL     	1 2 2
+	3	[346]	TEST     	1 0
+	4	[346]	JMP      	0 2	; to 7
+	5	[347]	LOADK    	1 -2	; 0
+	6	[347]	RETURN   	1 2
+	7	[349]	GETTABLE 	1 0 -3	; "m_config"
+	8	[349]	GETTABLE 	1 1 -4	; "m_rewards"
+	9	[349]	SELF     	2 0 -5	; "GetRound"
+	10	[349]	CALL     	2 2 2
+	11	[349]	GETTABLE 	1 1 2
+	12	[349]	GETTABLE 	1 1 -6	; "target"
+	13	[349]	RETURN   	1 2
+	14	[350]	RETURN   	0 1
+constants (6) for 00000280551496C0:
+	1	"IsAllRoundFinished"
+	2	0
+	3	"m_config"
+	4	"m_rewards"
+	5	"GetRound"
+	6	"target"
+locals (1) for 00000280551496C0:
+	0	self	1	15
+upvalues (0) for 00000280551496C0:
+
+function <ScoreRaceModel.lua:352,354> (11 instructions at 0000028055149A40)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[353]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[353]	SELF     	1 1 -2	; "GetValue"
+	3	[353]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[353]	GETTABLE 	3 3 -4	; "GroupId"
+	5	[353]	LOADK    	4 -5	; "value"
+	6	[353]	CALL     	1 4 2
+	7	[353]	TEST     	1 1
+	8	[353]	JMP      	0 1	; to 10
+	9	[353]	LOADK    	1 -6	; 0
+	10	[353]	RETURN   	1 2
+	11	[354]	RETURN   	0 1
+constants (6) for 0000028055149A40:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"GroupId"
+	5	"value"
+	6	0
+locals (1) for 0000028055149A40:
+	0	self	1	12
+upvalues (1) for 0000028055149A40:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:356,358> (6 instructions at 0000028055149340)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[357]	GETTABLE 	1 0 -1	; "m_tempRank"
+	2	[357]	TEST     	1 1
+	3	[357]	JMP      	0 1	; to 5
+	4	[357]	LOADK    	1 -2	; 0
+	5	[357]	RETURN   	1 2
+	6	[358]	RETURN   	0 1
+constants (2) for 0000028055149340:
+	1	"m_tempRank"
+	2	0
+locals (1) for 0000028055149340:
+	0	self	1	7
+upvalues (0) for 0000028055149340:
+
+function <ScoreRaceModel.lua:360,365> (10 instructions at 00000280551490C0)
+2 params, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[361]	GETTABLE 	2 0 -1	; "m_tempRank"
+	2	[361]	EQ       	1 2 1
+	3	[361]	JMP      	0 6	; to 10
+	4	[362]	SETTABLE 	0 -1 1	; "m_tempRank" -
+	5	[363]	GETTABUP 	2 0 -2	; _ENV "EventDispatcher"
+	6	[363]	GETTABLE 	2 2 -3	; "DispatchEvent"
+	7	[363]	GETTABUP 	3 0 -4	; _ENV "EEventType"
+	8	[363]	GETTABLE 	3 3 -5	; "ScoreRaceUpdateRank"
+	9	[363]	CALL     	2 2 1
+	10	[365]	RETURN   	0 1
+constants (5) for 00000280551490C0:
+	1	"m_tempRank"
+	2	"EventDispatcher"
+	3	"DispatchEvent"
+	4	"EEventType"
+	5	"ScoreRaceUpdateRank"
+locals (2) for 00000280551490C0:
+	0	self	1	11
+	1	rank	1	11
+upvalues (1) for 00000280551490C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:367,370> (7 instructions at 0000028055148C40)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[368]	SETTABLE 	0 -1 -2	; "m_fullRankData" nil
+	2	[369]	GETTABLE 	1 0 -3	; "m_dbTable"
+	3	[369]	SELF     	1 1 -4	; "Remove"
+	4	[369]	GETTABUP 	3 0 -5	; _ENV "ScoreRaceModel"
+	5	[369]	GETTABLE 	3 3 -6	; "LastRankData"
+	6	[369]	CALL     	1 3 1
+	7	[370]	RETURN   	0 1
+constants (6) for 0000028055148C40:
+	1	"m_fullRankData"
+	2	nil
+	3	"m_dbTable"
+	4	"Remove"
+	5	"ScoreRaceModel"
+	6	"LastRankData"
+locals (1) for 0000028055148C40:
+	0	self	1	8
+upvalues (1) for 0000028055148C40:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:372,374> (11 instructions at 0000028055148CC0)
+1 param, 7 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[373]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[373]	SELF     	1 1 -2	; "Set"
+	3	[373]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[373]	GETTABLE 	3 3 -4	; "LastRankData"
+	5	[373]	LOADK    	4 -5	; "value"
+	6	[373]	GETTABUP 	5 0 -6	; _ENV "json"
+	7	[373]	GETTABLE 	5 5 -7	; "encode"
+	8	[373]	GETTABLE 	6 0 -8	; "m_fullRankData"
+	9	[373]	CALL     	5 2 0
+	10	[373]	CALL     	1 0 1
+	11	[374]	RETURN   	0 1
+constants (8) for 0000028055148CC0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"LastRankData"
+	5	"value"
+	6	"json"
+	7	"encode"
+	8	"m_fullRankData"
+locals (1) for 0000028055148CC0:
+	0	self	1	12
+upvalues (1) for 0000028055148CC0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:376,382> (14 instructions at 0000028055149740)
+1 param, 4 slots, 0 upvalues, 2 locals, 6 constants, 0 functions
+	1	[377]	SELF     	1 0 -1	; "GetRound"
+	2	[377]	CALL     	1 2 2
+	3	[378]	SELF     	2 0 -2	; "GetMaxRound"
+	4	[378]	CALL     	2 2 2
+	5	[378]	LT       	0 2 1
+	6	[378]	JMP      	0 2	; to 9
+	7	[379]	LOADK    	2 -3	; -1
+	8	[379]	RETURN   	2 2
+	9	[381]	GETTABLE 	2 0 -4	; "m_config"
+	10	[381]	GETTABLE 	2 2 -5	; "m_playertype"
+	11	[381]	GETTABLE 	2 2 1
+	12	[381]	GETTABLE 	2 2 -6	; "type"
+	13	[381]	RETURN   	2 2
+	14	[382]	RETURN   	0 1
+constants (6) for 0000028055149740:
+	1	"GetRound"
+	2	"GetMaxRound"
+	3	-1
+	4	"m_config"
+	5	"m_playertype"
+	6	"type"
+locals (2) for 0000028055149740:
+	0	self	1	15
+	1	rd	3	15
+upvalues (0) for 0000028055149740:
+
+function <ScoreRaceModel.lua:384,386> (12 instructions at 0000028055149840)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[385]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[385]	SELF     	1 1 -2	; "GetValue"
+	3	[385]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[385]	GETTABLE 	3 3 -4	; "ReqStop"
+	5	[385]	LOADK    	4 -5	; "value"
+	6	[385]	CALL     	1 4 2
+	7	[385]	EQ       	1 1 -6	; - "1"
+	8	[385]	JMP      	0 1	; to 10
+	9	[385]	LOADBOOL 	1 0 1
+	10	[385]	LOADBOOL 	1 1 0
+	11	[385]	RETURN   	1 2
+	12	[386]	RETURN   	0 1
+constants (6) for 0000028055149840:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"ReqStop"
+	5	"value"
+	6	"1"
+locals (1) for 0000028055149840:
+	0	self	1	13
+upvalues (1) for 0000028055149840:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:388,408> (39 instructions at 00000280551498C0)
+3 params, 11 slots, 1 upvalue, 3 locals, 21 constants, 1 function
+	1	[389]	SELF     	3 0 -1	; "IsInGroup"
+	2	[389]	CALL     	3 2 2
+	3	[389]	TEST     	3 0
+	4	[389]	JMP      	0 34	; to 39
+	5	[390]	GETTABLE 	3 0 -2	; "m_dbTable"
+	6	[390]	SELF     	3 3 -3	; "Set"
+	7	[390]	GETTABUP 	5 0 -4	; _ENV "ScoreRaceModel"
+	8	[390]	GETTABLE 	5 5 -5	; "Score"
+	9	[390]	LOADK    	6 -6	; "value"
+	10	[390]	GETTABUP 	7 0 -7	; _ENV "math"
+	11	[390]	GETTABLE 	7 7 -8	; "min"
+	12	[390]	SELF     	8 0 -9	; "GetTargetScore"
+	13	[390]	CALL     	8 2 2
+	14	[390]	SELF     	9 0 -10	; "GetScore"
+	15	[390]	CALL     	9 2 2
+	16	[390]	ADD      	9 9 1
+	17	[390]	CALL     	7 3 0
+	18	[390]	CALL     	3 0 1
+	19	[392]	TEST     	2 0
+	20	[392]	JMP      	0 12	; to 33
+	21	[394]	GETTABLE 	3 0 -11	; "m_waiting"
+	22	[394]	TEST     	3 1
+	23	[394]	JMP      	0 15	; to 39
+	24	[395]	SETTABLE 	0 -11 -12	; "m_waiting" true
+	25	[396]	GETTABUP 	3 0 -13	; _ENV "Scheduler"
+	26	[396]	GETTABLE 	3 3 -14	; "Schedule"
+	27	[401]	CLOSURE  	4 0	; 0000028055148E40
+	28	[401]	MOVE     	5 0
+	29	[401]	LOADK    	6 -15	; 20
+	30	[401]	LOADK    	7 -16	; 1
+	31	[396]	CALL     	3 5 1
+	32	[402]	JMP      	0 6	; to 39
+	33	[404]	GETTABUP 	3 0 -17	; _ENV "GM"
+	34	[404]	GETTABLE 	3 3 -18	; "HeartBeatManager"
+	35	[404]	SELF     	3 3 -19	; "HeartBeatOnNextFrame"
+	36	[404]	LOADBOOL 	5 0 0
+	37	[404]	CALL     	3 3 1
+	38	[405]	SETTABLE 	0 -20 -21	; "m_waiting" false
+	39	[408]	RETURN   	0 1
+constants (21) for 00000280551498C0:
+	1	"IsInGroup"
+	2	"m_dbTable"
+	3	"Set"
+	4	"ScoreRaceModel"
+	5	"Score"
+	6	"value"
+	7	"math"
+	8	"min"
+	9	"GetTargetScore"
+	10	"GetScore"
+	11	"m_waiting"
+	12	true
+	13	"Scheduler"
+	14	"Schedule"
+	15	20
+	16	1
+	17	"GM"
+	18	"HeartBeatManager"
+	19	"HeartBeatOnNextFrame"
+	20	"m_waiting"
+	21	false
+locals (3) for 00000280551498C0:
+	0	self	1	40
+	1	count	1	40
+	2	canWait	1	40
+upvalues (1) for 00000280551498C0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:396,401> (10 instructions at 0000028055148E40)
+0 params, 3 slots, 2 upvalues, 0 locals, 5 constants, 0 functions
+	1	[397]	GETTABUP 	0 0 -1	; self "m_waiting"
+	2	[397]	TEST     	0 0
+	3	[397]	JMP      	0 6	; to 10
+	4	[398]	GETTABUP 	0 1 -2	; _ENV "GM"
+	5	[398]	GETTABLE 	0 0 -3	; "HeartBeatManager"
+	6	[398]	SELF     	0 0 -4	; "HeartBeatOnNextFrame"
+	7	[398]	LOADBOOL 	2 0 0
+	8	[398]	CALL     	0 3 1
+	9	[399]	SETTABUP 	0 -1 -5	; self "m_waiting" false
+	10	[401]	RETURN   	0 1
+constants (5) for 0000028055148E40:
+	1	"m_waiting"
+	2	"GM"
+	3	"HeartBeatManager"
+	4	"HeartBeatOnNextFrame"
+	5	false
+locals (0) for 0000028055148E40:
+upvalues (2) for 0000028055148E40:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <ScoreRaceModel.lua:410,415> (21 instructions at 00000280551500A0)
+1 param, 6 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[411]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[411]	SELF     	1 1 -2	; "Set"
+	3	[411]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[411]	GETTABLE 	3 3 -4	; "ReqStop"
+	5	[411]	LOADK    	4 -5	; "value"
+	6	[411]	LOADK    	5 -6	; "1"
+	7	[411]	CALL     	1 5 1
+	8	[412]	SELF     	1 0 -7	; "UpdateRank"
+	9	[412]	LOADK    	3 -8	; 0
+	10	[412]	CALL     	1 3 1
+	11	[413]	GETTABUP 	1 0 -9	; _ENV "EventDispatcher"
+	12	[413]	GETTABLE 	1 1 -10	; "DispatchEvent"
+	13	[413]	GETTABUP 	2 0 -11	; _ENV "EEventType"
+	14	[413]	GETTABLE 	2 2 -12	; "ScoreRaceUpdateRank"
+	15	[413]	CALL     	1 2 1
+	16	[414]	GETTABUP 	1 0 -9	; _ENV "EventDispatcher"
+	17	[414]	GETTABLE 	1 1 -10	; "DispatchEvent"
+	18	[414]	GETTABUP 	2 0 -11	; _ENV "EEventType"
+	19	[414]	GETTABLE 	2 2 -13	; "OrderStatusChanged"
+	20	[414]	CALL     	1 2 1
+	21	[415]	RETURN   	0 1
+constants (13) for 00000280551500A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"ReqStop"
+	5	"value"
+	6	"1"
+	7	"UpdateRank"
+	8	0
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"ScoreRaceUpdateRank"
+	13	"OrderStatusChanged"
+locals (1) for 00000280551500A0:
+	0	self	1	22
+upvalues (1) for 00000280551500A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:417,419> (18 instructions at 0000028055150520)
+1 param, 4 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[418]	SELF     	1 0 -1	; "IsInGroup"
+	2	[418]	CALL     	1 2 2
+	3	[418]	TEST     	1 0
+	4	[418]	JMP      	0 12	; to 17
+	5	[418]	SELF     	1 0 -2	; "CheckOpen"
+	6	[418]	CALL     	1 2 2
+	7	[418]	TEST     	1 0
+	8	[418]	JMP      	0 8	; to 17
+	9	[418]	SELF     	1 0 -3	; "GetScore"
+	10	[418]	CALL     	1 2 2
+	11	[418]	SELF     	2 0 -4	; "GetTargetScore"
+	12	[418]	CALL     	2 2 2
+	13	[418]	EQ       	0 1 2
+	14	[418]	JMP      	0 1	; to 16
+	15	[418]	LOADBOOL 	1 0 1
+	16	[418]	LOADBOOL 	1 1 0
+	17	[418]	RETURN   	1 2
+	18	[419]	RETURN   	0 1
+constants (4) for 0000028055150520:
+	1	"IsInGroup"
+	2	"CheckOpen"
+	3	"GetScore"
+	4	"GetTargetScore"
+locals (1) for 0000028055150520:
+	0	self	1	19
+upvalues (0) for 0000028055150520:
+
+function <ScoreRaceModel.lua:421,429> (18 instructions at 0000028055151720)
+2 params, 5 slots, 0 upvalues, 2 locals, 6 constants, 0 functions
+	1	[422]	SELF     	2 0 -1	; "CanHeartBeat"
+	2	[422]	CALL     	2 2 2
+	3	[422]	TEST     	2 0
+	4	[422]	JMP      	0 9	; to 14
+	5	[423]	GETTABLE 	2 0 -2	; "HeartBeatReqGroupIdKey"
+	6	[423]	SELF     	3 0 -3	; "GetGroupId"
+	7	[423]	CALL     	3 2 2
+	8	[423]	SETTABLE 	1 2 3
+	9	[424]	GETTABLE 	2 0 -4	; "HeartBeatReqTokenKey"
+	10	[424]	SELF     	3 0 -5	; "GetScore"
+	11	[424]	CALL     	3 2 2
+	12	[424]	SETTABLE 	1 2 3
+	13	[424]	JMP      	0 4	; to 18
+	14	[426]	GETTABLE 	2 0 -2	; "HeartBeatReqGroupIdKey"
+	15	[426]	SETTABLE 	1 2 -6	; - 0
+	16	[427]	GETTABLE 	2 0 -4	; "HeartBeatReqTokenKey"
+	17	[427]	SETTABLE 	1 2 -6	; - 0
+	18	[429]	RETURN   	0 1
+constants (6) for 0000028055151720:
+	1	"CanHeartBeat"
+	2	"HeartBeatReqGroupIdKey"
+	3	"GetGroupId"
+	4	"HeartBeatReqTokenKey"
+	5	"GetScore"
+	6	0
+locals (2) for 0000028055151720:
+	0	self	1	19
+	1	request	1	19
+upvalues (0) for 0000028055151720:
+
+function <ScoreRaceModel.lua:431,467> (58 instructions at 0000028055150220)
+2 params, 7 slots, 1 upvalue, 3 locals, 26 constants, 1 function
+	1	[433]	SELF     	2 0 -1	; "CanHeartBeat"
+	2	[433]	CALL     	2 2 2
+	3	[433]	TEST     	2 1
+	4	[433]	JMP      	0 1	; to 6
+	5	[434]	RETURN   	0 1
+	6	[437]	SELF     	2 0 -2	; "HasViewController"
+	7	[437]	CALL     	2 2 2
+	8	[437]	TEST     	2 0
+	9	[437]	JMP      	0 1	; to 11
+	10	[438]	RETURN   	0 1
+	11	[441]	GETTABLE 	2 0 -3	; "HeartBeatRespReachNumKey"
+	12	[441]	GETTABLE 	2 1 2
+	13	[441]	LE       	0 -4 2	; 3 -
+	14	[441]	JMP      	0 15	; to 30
+	15	[442]	SELF     	2 0 -5	; "IsDefeated"
+	16	[442]	CALL     	2 2 2
+	17	[442]	TEST     	2 1
+	18	[442]	JMP      	0 10	; to 29
+	19	[443]	SELF     	2 0 -6	; "SetDefeated"
+	20	[443]	LOADBOOL 	4 1 0
+	21	[443]	CALL     	2 3 1
+	22	[444]	GETTABUP 	2 0 -7	; _ENV "EventDispatcher"
+	23	[444]	GETTABLE 	2 2 -8	; "DispatchEvent"
+	24	[444]	GETTABUP 	3 0 -9	; _ENV "EEventType"
+	25	[444]	GETTABLE 	3 3 -10	; "ScoreRaceDefeated"
+	26	[444]	CALL     	2 2 1
+	27	[445]	SELF     	2 0 -11	; "UpdatePerSecond"
+	28	[445]	CALL     	2 2 1
+	29	[448]	RETURN   	0 1
+	30	[451]	SELF     	2 0 -12	; "GetRank"
+	31	[451]	CALL     	2 2 2
+	32	[453]	SELF     	3 0 -13	; "UpdateRank"
+	33	[453]	GETTABLE 	5 0 -14	; "HeartBeatRespRankKey"
+	34	[453]	GETTABLE 	5 1 5
+	35	[453]	CALL     	3 3 1
+	36	[454]	LT       	0 -15 2	; 0 -
+	37	[454]	JMP      	0 20	; to 58
+	38	[454]	SELF     	3 0 -12	; "GetRank"
+	39	[454]	CALL     	3 2 2
+	40	[454]	LT       	0 2 3
+	41	[454]	JMP      	0 16	; to 58
+	42	[454]	GETTABUP 	3 0 -16	; _ENV "GM"
+	43	[454]	GETTABLE 	3 3 -17	; "ConfigModel"
+	44	[454]	SELF     	3 3 -18	; "IsServerControlOpen"
+	45	[454]	GETTABUP 	5 0 -19	; _ENV "EGeneralConfType"
+	46	[454]	GETTABLE 	5 5 -20	; "ScoreRaceHint"
+	47	[454]	CALL     	3 3 2
+	48	[454]	TEST     	3 0
+	49	[454]	JMP      	0 8	; to 58
+	50	[455]	GETTABUP 	3 0 -21	; _ENV "TopSliderManager"
+	51	[455]	GETTABLE 	3 3 -22	; "TrySlide"
+	52	[455]	GETTABUP 	4 0 -23	; _ENV "ActivityType"
+	53	[455]	GETTABLE 	4 4 -24	; "ScoreRace"
+	54	[455]	GETTABUP 	5 0 -25	; _ENV "UIPrefabConfigName"
+	55	[455]	GETTABLE 	5 5 -26	; "ScoreRaceFallBehindTip"
+	56	[465]	CLOSURE  	6 0	; 0000028055150620
+	57	[455]	CALL     	3 4 1
+	58	[467]	RETURN   	0 1
+constants (26) for 0000028055150220:
+	1	"CanHeartBeat"
+	2	"HasViewController"
+	3	"HeartBeatRespReachNumKey"
+	4	3
+	5	"IsDefeated"
+	6	"SetDefeated"
+	7	"EventDispatcher"
+	8	"DispatchEvent"
+	9	"EEventType"
+	10	"ScoreRaceDefeated"
+	11	"UpdatePerSecond"
+	12	"GetRank"
+	13	"UpdateRank"
+	14	"HeartBeatRespRankKey"
+	15	0
+	16	"GM"
+	17	"ConfigModel"
+	18	"IsServerControlOpen"
+	19	"EGeneralConfType"
+	20	"ScoreRaceHint"
+	21	"TopSliderManager"
+	22	"TrySlide"
+	23	"ActivityType"
+	24	"ScoreRace"
+	25	"UIPrefabConfigName"
+	26	"ScoreRaceFallBehindTip"
+locals (3) for 0000028055150220:
+	0	self	1	59
+	1	response	1	59
+	2	rk	32	59
+upvalues (1) for 0000028055150220:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:455,465> (19 instructions at 0000028055150620)
+1 param, 4 slots, 1 upvalue, 1 local, 9 constants, 1 function
+	1	[456]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[456]	GETTABLE 	1 1 -2	; "SceneManager"
+	3	[456]	SELF     	1 1 -3	; "GetGameMode"
+	4	[456]	CALL     	1 2 2
+	5	[456]	GETTABUP 	2 0 -4	; _ENV "EGameMode"
+	6	[456]	GETTABLE 	2 2 -5	; "Main"
+	7	[456]	EQ       	1 1 2
+	8	[456]	JMP      	0 5	; to 14
+	9	[457]	GETTABUP 	1 0 -6	; _ENV "GameObject"
+	10	[457]	GETTABLE 	1 1 -7	; "Destroy"
+	11	[457]	MOVE     	2 0
+	12	[457]	CALL     	1 2 1
+	13	[458]	RETURN   	0 1
+	14	[460]	GETTABUP 	1 0 -8	; _ENV "TopSliderManager"
+	15	[460]	GETTABLE 	1 1 -9	; "Appear"
+	16	[460]	MOVE     	2 0
+	17	[464]	CLOSURE  	3 0	; 00000280551505A0
+	18	[460]	CALL     	1 3 1
+	19	[465]	RETURN   	0 1
+constants (9) for 0000028055150620:
+	1	"GM"
+	2	"SceneManager"
+	3	"GetGameMode"
+	4	"EGameMode"
+	5	"Main"
+	6	"GameObject"
+	7	"Destroy"
+	8	"TopSliderManager"
+	9	"Appear"
+locals (1) for 0000028055150620:
+	0	go	1	20
+upvalues (1) for 0000028055150620:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:460,464> (5 instructions at 00000280551505A0)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 1 function
+	1	[461]	GETTABUP 	0 0 -1	; _ENV "DelayExecuteFunc"
+	2	[463]	CLOSURE  	1 0	; 00000280551506A0
+	3	[463]	LOADK    	2 -2	; 0.5
+	4	[461]	CALL     	0 3 1
+	5	[464]	RETURN   	0 1
+constants (2) for 00000280551505A0:
+	1	"DelayExecuteFunc"
+	2	0.5
+locals (0) for 00000280551505A0:
+upvalues (2) for 00000280551505A0:
+	0	_ENV	0	0
+	1	go	1	0
+
+function <ScoreRaceModel.lua:461,463> (5 instructions at 00000280551506A0)
+0 params, 2 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[462]	GETTABUP 	0 0 -1	; _ENV "TopSliderManager"
+	2	[462]	GETTABLE 	0 0 -2	; "Disappear"
+	3	[462]	GETUPVAL 	1 1	; go
+	4	[462]	CALL     	0 2 1
+	5	[463]	RETURN   	0 1
+constants (2) for 00000280551506A0:
+	1	"TopSliderManager"
+	2	"Disappear"
+locals (0) for 00000280551506A0:
+upvalues (2) for 00000280551506A0:
+	0	_ENV	0	0
+	1	go	0	1
+
+function <ScoreRaceModel.lua:470,500> (86 instructions at 0000028055150020)
+4 params, 10 slots, 1 upvalue, 6 locals, 31 constants, 0 functions
+	1	[471]	SELF     	4 0 -1	; "RecordResp"
+	2	[471]	LOADBOOL 	6 1 0
+	3	[471]	LOADBOOL 	7 0 0
+	4	[471]	MOVE     	8 1
+	5	[471]	MOVE     	9 3
+	6	[471]	CALL     	4 6 1
+	7	[472]	GETTABLE 	4 0 -2	; "m_alreadyReset"
+	8	[472]	TEST     	4 0
+	9	[472]	JMP      	0 25	; to 35
+	10	[473]	SELF     	4 0 -3	; "EndReq"
+	11	[473]	CALL     	4 2 1
+	12	[474]	MOVE     	4 2
+	13	[474]	LOADBOOL 	5 0 0
+	14	[474]	CALL     	4 2 1
+	15	[475]	GETTABUP 	4 0 -4	; _ENV "GameConfig"
+	16	[475]	GETTABLE 	4 4 -5	; "IsTestMode"
+	17	[475]	CALL     	4 1 2
+	18	[475]	TEST     	4 0
+	19	[475]	JMP      	0 13	; to 33
+	20	[476]	LOADK    	4 -6	; "\231\167\175\229\136\134\231\171\158\233\128\159\232\175\183\230\177\130\228\184\141\228\184\128\232\135\180"
+	21	[476]	GETTABLE 	5 1 -7	; "rcode"
+	22	[476]	LOADK    	6 -8	; "\239\188\140\232\175\183\230\177\130\232\191\155\229\133\165\229\190\170\231\142\175\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	23	[476]	CONCAT   	4 4 6
+	24	[477]	GETTABUP 	5 0 -9	; _ENV "GM"
+	25	[477]	GETTABLE 	5 5 -10	; "UIManager"
+	26	[477]	SELF     	5 5 -11	; "ShowPrompt"
+	27	[477]	MOVE     	7 4
+	28	[477]	CALL     	5 3 1
+	29	[478]	GETTABUP 	5 0 -12	; _ENV "Log"
+	30	[478]	GETTABLE 	5 5 -13	; "Info"
+	31	[478]	MOVE     	6 4
+	32	[478]	CALL     	5 2 1
+	33	[480]	RETURN   	0 1
+	34	[480]	JMP      	0 1	; to 36
+	35	[482]	SETTABLE 	0 -2 -14	; "m_alreadyReset" true
+	36	[485]	GETTABUP 	4 0 -4	; _ENV "GameConfig"
+	37	[485]	GETTABLE 	4 4 -5	; "IsTestMode"
+	38	[485]	CALL     	4 1 2
+	39	[485]	TEST     	4 0
+	40	[485]	JMP      	0 12	; to 53
+	41	[486]	LOADK    	4 -6	; "\231\167\175\229\136\134\231\171\158\233\128\159\232\175\183\230\177\130\228\184\141\228\184\128\232\135\180"
+	42	[486]	GETTABLE 	5 1 -7	; "rcode"
+	43	[486]	CONCAT   	4 4 5
+	44	[487]	GETTABUP 	5 0 -9	; _ENV "GM"
+	45	[487]	GETTABLE 	5 5 -10	; "UIManager"
+	46	[487]	SELF     	5 5 -11	; "ShowPrompt"
+	47	[487]	MOVE     	7 4
+	48	[487]	CALL     	5 3 1
+	49	[488]	GETTABUP 	5 0 -12	; _ENV "Log"
+	50	[488]	GETTABLE 	5 5 -13	; "Info"
+	51	[488]	MOVE     	6 4
+	52	[488]	CALL     	5 2 1
+	53	[491]	GETTABLE 	4 0 -15	; "m_dbTable"
+	54	[491]	SELF     	4 4 -16	; "Set"
+	55	[491]	GETTABUP 	6 0 -17	; _ENV "ScoreRaceModel"
+	56	[491]	GETTABLE 	6 6 -18	; "GroupId"
+	57	[491]	LOADK    	7 -19	; "value"
+	58	[491]	LOADK    	8 -20	; 0
+	59	[491]	CALL     	4 5 1
+	60	[492]	GETTABLE 	4 0 -15	; "m_dbTable"
+	61	[492]	SELF     	4 4 -16	; "Set"
+	62	[492]	GETTABUP 	6 0 -17	; _ENV "ScoreRaceModel"
+	63	[492]	GETTABLE 	6 6 -21	; "Score"
+	64	[492]	LOADK    	7 -19	; "value"
+	65	[492]	LOADK    	8 -20	; 0
+	66	[492]	CALL     	4 5 1
+	67	[493]	SELF     	4 0 -22	; "UpdateRank"
+	68	[493]	LOADK    	6 -20	; 0
+	69	[493]	CALL     	4 3 1
+	70	[494]	GETTABUP 	4 0 -23	; _ENV "EventDispatcher"
+	71	[494]	GETTABLE 	4 4 -24	; "DispatchEvent"
+	72	[494]	GETTABUP 	5 0 -25	; _ENV "EEventType"
+	73	[494]	GETTABLE 	5 5 -26	; "ScoreRaceUpdateRank"
+	74	[494]	CALL     	4 2 1
+	75	[495]	GETTABUP 	4 0 -23	; _ENV "EventDispatcher"
+	76	[495]	GETTABLE 	4 4 -24	; "DispatchEvent"
+	77	[495]	GETTABUP 	5 0 -25	; _ENV "EEventType"
+	78	[495]	GETTABLE 	5 5 -27	; "OrderStatusChanged"
+	79	[495]	CALL     	4 2 1
+	80	[496]	SETTABLE 	0 -28 -29	; "m_fullRankData" nil
+	81	[497]	SELF     	4 0 -30	; "SaveRankData"
+	82	[497]	CALL     	4 2 1
+	83	[499]	SELF     	4 0 -31	; "RequestFullRankData"
+	84	[499]	MOVE     	6 2
+	85	[499]	CALL     	4 3 1
+	86	[500]	RETURN   	0 1
+constants (31) for 0000028055150020:
+	1	"RecordResp"
+	2	"m_alreadyReset"
+	3	"EndReq"
+	4	"GameConfig"
+	5	"IsTestMode"
+	6	"\231\167\175\229\136\134\231\171\158\233\128\159\232\175\183\230\177\130\228\184\141\228\184\128\232\135\180"
+	7	"rcode"
+	8	"\239\188\140\232\175\183\230\177\130\232\191\155\229\133\165\229\190\170\231\142\175\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	9	"GM"
+	10	"UIManager"
+	11	"ShowPrompt"
+	12	"Log"
+	13	"Info"
+	14	true
+	15	"m_dbTable"
+	16	"Set"
+	17	"ScoreRaceModel"
+	18	"GroupId"
+	19	"value"
+	20	0
+	21	"Score"
+	22	"UpdateRank"
+	23	"EventDispatcher"
+	24	"DispatchEvent"
+	25	"EEventType"
+	26	"ScoreRaceUpdateRank"
+	27	"OrderStatusChanged"
+	28	"m_fullRankData"
+	29	nil
+	30	"SaveRankData"
+	31	"RequestFullRankData"
+locals (6) for 0000028055150020:
+	0	self	1	87
+	1	response	1	87
+	2	callback	1	87
+	3	info	1	87
+	4	info	24	33
+	5	info	44	53
+upvalues (1) for 0000028055150020:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:515,531> (39 instructions at 00000280551516A0)
+2 params, 12 slots, 1 upvalue, 11 locals, 14 constants, 0 functions
+	1	[516]	LOADK    	2 -1	; 0
+	2	[517]	LOADK    	3 -1	; 0
+	3	[518]	GETTABUP 	4 0 -2	; _ENV "Table"
+	4	[518]	GETTABLE 	4 4 -3	; "IsEmpty"
+	5	[518]	MOVE     	5 1
+	6	[518]	CALL     	4 2 2
+	7	[518]	TEST     	4 1
+	8	[518]	JMP      	0 23	; to 32
+	9	[519]	GETTABUP 	4 0 -4	; _ENV "GM"
+	10	[519]	GETTABLE 	4 4 -5	; "UserModel"
+	11	[519]	SELF     	4 4 -6	; "GetUserId"
+	12	[519]	CALL     	4 2 2
+	13	[520]	SELF     	5 0 -7	; "GetTargetScore"
+	14	[520]	CALL     	5 2 2
+	15	[521]	GETTABUP 	6 0 -8	; _ENV "pairs"
+	16	[521]	MOVE     	7 1
+	17	[521]	CALL     	6 2 4
+	18	[521]	JMP      	0 11	; to 30
+	19	[522]	GETTABLE 	11 10 -9	; "UserId"
+	20	[522]	EQ       	1 11 4
+	21	[522]	JMP      	0 4	; to 26
+	22	[522]	GETTABLE 	11 10 -10	; "Score"
+	23	[522]	LE       	0 5 11
+	24	[522]	JMP      	0 1	; to 26
+	25	[523]	ADD      	2 2 -11	; - 1
+	26	[525]	GETTABLE 	11 10 -9	; "UserId"
+	27	[525]	EQ       	0 11 4
+	28	[525]	JMP      	0 1	; to 30
+	29	[526]	GETTABLE 	3 10 -12	; "Rank"
+	30	[521]	TFORCALL 	6 2
+	31	[521]	TFORLOOP 	8 -13	; to 19
+	32	[530]	LE       	0 -13 2	; 3 -
+	33	[530]	JMP      	0 2	; to 36
+	34	[530]	LE       	1 -14 3	; 4 -
+	35	[530]	JMP      	0 1	; to 37
+	36	[530]	LOADBOOL 	4 0 1
+	37	[530]	LOADBOOL 	4 1 0
+	38	[530]	RETURN   	4 2
+	39	[531]	RETURN   	0 1
+constants (14) for 00000280551516A0:
+	1	0
+	2	"Table"
+	3	"IsEmpty"
+	4	"GM"
+	5	"UserModel"
+	6	"GetUserId"
+	7	"GetTargetScore"
+	8	"pairs"
+	9	"UserId"
+	10	"Score"
+	11	1
+	12	"Rank"
+	13	3
+	14	4
+locals (11) for 00000280551516A0:
+	0	self	1	40
+	1	RankData	1	40
+	2	num	2	40
+	3	rk	3	40
+	4	userId	13	32
+	5	targetscore	15	32
+	6	(for generator)	18	32
+	7	(for state)	18	32
+	8	(for control)	18	32
+	9	_	19	30
+	10	player	19	30
+upvalues (1) for 00000280551516A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:533,696> (35 instructions at 000002805514FF20)
+2 params, 12 slots, 2 upvalues, 4 locals, 12 constants, 1 function
+	1	[534]	SELF     	2 0 -1	; "IsReqStop"
+	2	[534]	CALL     	2 2 2
+	3	[534]	TEST     	2 0
+	4	[534]	JMP      	0 4	; to 9
+	5	[535]	MOVE     	2 1
+	6	[535]	LOADBOOL 	3 0 0
+	7	[535]	CALL     	2 2 1
+	8	[536]	RETURN   	0 1
+	9	[539]	GETTABLE 	2 0 -2	; "m_requestId"
+	10	[539]	EQ       	0 2 -3	; - nil
+	11	[539]	JMP      	0 2	; to 14
+	12	[540]	SETTABLE 	0 -2 -4	; "m_requestId" 1
+	13	[540]	JMP      	0 3	; to 17
+	14	[542]	GETTABLE 	2 0 -2	; "m_requestId"
+	15	[542]	ADD      	2 2 -4	; - 1
+	16	[542]	SETTABLE 	0 -2 2	; "m_requestId" -
+	17	[545]	GETTABLE 	2 0 -2	; "m_requestId"
+	18	[694]	CLOSURE  	3 0	; 00000280551518A0
+	19	[695]	GETTABUP 	4 0 -5	; _ENV "ApiMessage"
+	20	[695]	GETTABLE 	5 0 -6	; "RequestFullRankDataApiFuncName"
+	21	[695]	GETTABLE 	4 4 5
+	22	[695]	SELF     	5 0 -7	; "GetId"
+	23	[695]	CALL     	5 2 2
+	24	[695]	GETTABLE 	6 0 -8	; "m_type"
+	25	[695]	SELF     	7 0 -9	; "GetGroupId"
+	26	[695]	CALL     	7 2 2
+	27	[695]	SELF     	8 0 -10	; "GetScore"
+	28	[695]	CALL     	8 2 2
+	29	[695]	SELF     	9 0 -11	; "GetPlayerType"
+	30	[695]	CALL     	9 2 2
+	31	[695]	SELF     	10 0 -12	; "GetRound"
+	32	[695]	CALL     	10 2 2
+	33	[695]	MOVE     	11 3
+	34	[695]	CALL     	4 8 1
+	35	[696]	RETURN   	0 1
+constants (12) for 000002805514FF20:
+	1	"IsReqStop"
+	2	"m_requestId"
+	3	nil
+	4	1
+	5	"ApiMessage"
+	6	"RequestFullRankDataApiFuncName"
+	7	"GetId"
+	8	"m_type"
+	9	"GetGroupId"
+	10	"GetScore"
+	11	"GetPlayerType"
+	12	"GetRound"
+locals (4) for 000002805514FF20:
+	0	self	1	36
+	1	callback	1	36
+	2	curRequestId	18	36
+	3	wrapper	19	36
+upvalues (2) for 000002805514FF20:
+	0	_ENV	0	0
+	1	rankTrackMap	1	0
+
+function <ScoreRaceModel.lua:546,694> (380 instructions at 00000280551518A0)
+2 params, 17 slots, 5 upvalues, 26 locals, 101 constants, 0 functions
+	1	[547]	TEST     	0 0
+	2	[547]	JMP      	0 4	; to 7
+	3	[547]	GETUPVAL 	2 0	; curRequestId
+	4	[547]	GETTABUP 	3 1 -1	; self "m_requestId"
+	5	[547]	LT       	0 2 3
+	6	[547]	JMP      	0 8	; to 15
+	7	[548]	GETUPVAL 	2 1	; self
+	8	[548]	SELF     	2 2 -2	; "RecordResp"
+	9	[548]	LOADBOOL 	4 0 0
+	10	[548]	CALL     	2 3 1
+	11	[549]	GETUPVAL 	2 2	; callback
+	12	[549]	LOADBOOL 	3 0 0
+	13	[549]	CALL     	2 2 1
+	14	[550]	RETURN   	0 1
+	15	[553]	LOADNIL  	2 0
+	16	[554]	GETTABLE 	3 1 -3	; "rcode"
+	17	[554]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	18	[554]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	19	[554]	GETTABLE 	4 4 -6	; "INVALID_CONFIG"
+	20	[554]	EQ       	1 3 4
+	21	[554]	JMP      	0 6	; to 28
+	22	[555]	GETTABLE 	3 1 -3	; "rcode"
+	23	[555]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	24	[555]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	25	[555]	GETTABLE 	4 4 -7	; "UNMATCH_TYPE"
+	26	[555]	EQ       	0 3 4
+	27	[555]	JMP      	0 7	; to 35
+	28	[556]	GETUPVAL 	3 1	; self
+	29	[556]	SELF     	3 3 -8	; "EndReq"
+	30	[556]	CALL     	3 2 1
+	31	[557]	LOADK    	3 -9	; "\231\167\175\229\136\134\231\171\158\233\128\159\233\133\141\231\189\174\229\135\186\233\148\153\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	32	[557]	GETTABLE 	4 1 -3	; "rcode"
+	33	[557]	CONCAT   	2 3 4
+	34	[557]	JMP      	0 67	; to 102
+	35	[558]	GETTABLE 	3 1 -3	; "rcode"
+	36	[558]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	37	[558]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	38	[558]	GETTABLE 	4 4 -10	; "CHEAT_USER"
+	39	[558]	EQ       	0 3 4
+	40	[558]	JMP      	0 7	; to 48
+	41	[559]	GETUPVAL 	3 1	; self
+	42	[559]	SELF     	3 3 -8	; "EndReq"
+	43	[559]	CALL     	3 2 1
+	44	[560]	LOADK    	3 -11	; "\231\167\175\229\136\134\231\171\158\233\128\159\228\189\156\229\188\138\231\142\169\229\174\182\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	45	[560]	GETTABLE 	4 1 -3	; "rcode"
+	46	[560]	CONCAT   	2 3 4
+	47	[560]	JMP      	0 54	; to 102
+	48	[561]	GETTABLE 	3 1 -3	; "rcode"
+	49	[561]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	50	[561]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	51	[561]	GETTABLE 	4 4 -12	; "EXPIRED_JOINTIME"
+	52	[561]	EQ       	1 3 4
+	53	[561]	JMP      	0 6	; to 60
+	54	[562]	GETTABLE 	3 1 -3	; "rcode"
+	55	[562]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	56	[562]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	57	[562]	GETTABLE 	4 4 -13	; "LOCKCHANNEL_FAILED"
+	58	[562]	EQ       	0 3 4
+	59	[562]	JMP      	0 4	; to 64
+	60	[563]	LOADK    	3 -14	; "\231\167\175\229\136\134\231\171\158\233\128\159\232\175\183\230\177\130\229\164\177\232\180\165"
+	61	[563]	GETTABLE 	4 1 -3	; "rcode"
+	62	[563]	CONCAT   	2 3 4
+	63	[563]	JMP      	0 38	; to 102
+	64	[564]	GETTABLE 	3 1 -3	; "rcode"
+	65	[564]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	66	[564]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	67	[564]	GETTABLE 	4 4 -15	; "UNMATCH_GROUPID"
+	68	[564]	EQ       	1 3 4
+	69	[564]	JMP      	0 12	; to 82
+	70	[565]	GETTABLE 	3 1 -3	; "rcode"
+	71	[565]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	72	[565]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	73	[565]	GETTABLE 	4 4 -16	; "ROLLED_ROUND"
+	74	[565]	EQ       	1 3 4
+	75	[565]	JMP      	0 6	; to 82
+	76	[566]	GETTABLE 	3 1 -3	; "rcode"
+	77	[566]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	78	[566]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	79	[566]	GETTABLE 	4 4 -17	; "OTHER_ERROR"
+	80	[566]	EQ       	0 3 4
+	81	[566]	JMP      	0 8	; to 90
+	82	[567]	GETUPVAL 	3 1	; self
+	83	[567]	SELF     	3 3 -18	; "ResetAndRequestAgain"
+	84	[567]	MOVE     	5 1
+	85	[567]	GETUPVAL 	6 2	; callback
+	86	[567]	LOADK    	7 -19	; "\231\167\175\229\136\134\231\171\158\233\128\159rcode\229\188\130\229\184\184"
+	87	[567]	CALL     	3 5 1
+	88	[568]	RETURN   	0 1
+	89	[568]	JMP      	0 12	; to 102
+	90	[569]	GETTABLE 	3 1 -3	; "rcode"
+	91	[569]	GETTABUP 	4 3 -4	; _ENV "ScoreRaceModel"
+	92	[569]	GETTABLE 	4 4 -5	; "ErrorStatus"
+	93	[569]	GETTABLE 	4 4 -20	; "GROUPRESULT_INVALID"
+	94	[569]	EQ       	0 3 4
+	95	[569]	JMP      	0 6	; to 102
+	96	[570]	GETUPVAL 	3 1	; self
+	97	[570]	SELF     	3 3 -8	; "EndReq"
+	98	[570]	CALL     	3 2 1
+	99	[571]	LOADK    	3 -21	; "\231\167\175\229\136\134\231\171\158\233\128\159\230\156\141\229\138\161\229\153\168\230\151\182\233\151\180\229\183\178\231\187\147\230\157\159\230\180\187\229\138\168\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	100	[571]	GETTABLE 	4 1 -3	; "rcode"
+	101	[571]	CONCAT   	2 3 4
+	102	[574]	GETTABLE 	3 1 -22	; "ranks"
+	103	[574]	LEN      	3 3
+	104	[574]	LT       	0 -23 3	; 5 -
+	105	[574]	JMP      	0 4	; to 110
+	106	[575]	LOADK    	3 -24	; "\231\167\175\229\136\134\231\171\158\233\128\159\232\191\155\231\187\132\228\186\186\230\149\176\232\182\133\232\191\1355\239\188\159"
+	107	[575]	GETTABLE 	4 1 -22	; "ranks"
+	108	[575]	LEN      	4 4
+	109	[575]	CONCAT   	2 3 4
+	110	[578]	EQ       	1 2 -25	; - nil
+	111	[578]	JMP      	0 25	; to 137
+	112	[579]	GETTABUP 	3 3 -26	; _ENV "GameConfig"
+	113	[579]	GETTABLE 	3 3 -27	; "IsTestMode"
+	114	[579]	CALL     	3 1 2
+	115	[579]	TEST     	3 0
+	116	[579]	JMP      	0 9	; to 126
+	117	[580]	GETTABUP 	3 3 -28	; _ENV "GM"
+	118	[580]	GETTABLE 	3 3 -29	; "UIManager"
+	119	[580]	SELF     	3 3 -30	; "ShowPrompt"
+	120	[580]	MOVE     	5 2
+	121	[580]	CALL     	3 3 1
+	122	[581]	GETTABUP 	3 3 -31	; _ENV "Log"
+	123	[581]	GETTABLE 	3 3 -32	; "Info"
+	124	[581]	MOVE     	4 2
+	125	[581]	CALL     	3 2 1
+	126	[583]	GETUPVAL 	3 1	; self
+	127	[583]	SELF     	3 3 -2	; "RecordResp"
+	128	[583]	LOADBOOL 	5 1 0
+	129	[583]	LOADBOOL 	6 0 0
+	130	[583]	MOVE     	7 1
+	131	[583]	MOVE     	8 2
+	132	[583]	CALL     	3 6 1
+	133	[584]	GETUPVAL 	3 2	; callback
+	134	[584]	LOADBOOL 	4 0 0
+	135	[584]	CALL     	3 2 1
+	136	[585]	RETURN   	0 1
+	137	[588]	GETUPVAL 	3 1	; self
+	138	[588]	SELF     	3 3 -33	; "IsInGroup"
+	139	[588]	CALL     	3 2 2
+	140	[588]	TEST     	3 1
+	141	[588]	JMP      	0 86	; to 228
+	142	[590]	GETTABLE 	3 1 -34	; "group_id"
+	143	[590]	EQ       	0 3 -35	; - 0
+	144	[590]	JMP      	0 7	; to 152
+	145	[591]	GETUPVAL 	3 1	; self
+	146	[591]	SELF     	3 3 -18	; "ResetAndRequestAgain"
+	147	[591]	MOVE     	5 1
+	148	[591]	GETUPVAL 	6 2	; callback
+	149	[591]	LOADK    	7 -36	; "\231\167\175\229\136\134\231\171\158\233\128\159\231\187\132id\232\191\148\228\186\1340"
+	150	[591]	CALL     	3 5 1
+	151	[592]	RETURN   	0 1
+	152	[595]	GETUPVAL 	3 1	; self
+	153	[595]	SELF     	3 3 -37	; "SetRoundEntryTime"
+	154	[595]	GETTABUP 	5 3 -28	; _ENV "GM"
+	155	[595]	GETTABLE 	5 5 -38	; "GameModel"
+	156	[595]	SELF     	5 5 -39	; "GetServerTime"
+	157	[595]	CALL     	5 2 0
+	158	[595]	CALL     	3 0 1
+	159	[596]	GETTABUP 	3 1 -40	; self "m_dbTable"
+	160	[596]	SELF     	3 3 -41	; "Set"
+	161	[596]	GETTABUP 	5 3 -4	; _ENV "ScoreRaceModel"
+	162	[596]	GETTABLE 	5 5 -42	; "GroupId"
+	163	[596]	LOADK    	6 -43	; "value"
+	164	[596]	GETTABLE 	7 1 -34	; "group_id"
+	165	[596]	CALL     	3 5 1
+	166	[597]	GETTABUP 	3 1 -40	; self "m_dbTable"
+	167	[597]	SELF     	3 3 -41	; "Set"
+	168	[597]	GETTABUP 	5 3 -4	; _ENV "ScoreRaceModel"
+	169	[597]	GETTABLE 	5 5 -44	; "Score"
+	170	[597]	LOADK    	6 -43	; "value"
+	171	[597]	LOADK    	7 -35	; 0
+	172	[597]	CALL     	3 5 1
+	173	[598]	GETTABUP 	3 3 -28	; _ENV "GM"
+	174	[598]	GETTABLE 	3 3 -45	; "BIManager"
+	175	[598]	SELF     	3 3 -46	; "LogAction"
+	176	[598]	GETTABUP 	5 3 -47	; _ENV "EBIType"
+	177	[598]	GETTABLE 	5 5 -48	; "ScoreRaceNewRound"
+	178	[598]	NEWTABLE 	6 0 3
+	179	[598]	GETUPVAL 	7 1	; self
+	180	[598]	SELF     	7 7 -50	; "GetRound"
+	181	[598]	CALL     	7 2 2
+	182	[598]	SETTABLE 	6 -49 7	; "rd" -
+	183	[598]	GETUPVAL 	7 1	; self
+	184	[598]	SELF     	7 7 -52	; "GetDefeatTimes"
+	185	[598]	CALL     	7 2 2
+	186	[598]	ADD      	7 7 -53	; - 1
+	187	[598]	SETTABLE 	6 -51 7	; "times" -
+	188	[598]	GETUPVAL 	7 1	; self
+	189	[598]	SELF     	7 7 -55	; "GetPlayerType"
+	190	[598]	CALL     	7 2 2
+	191	[598]	SETTABLE 	6 -54 7	; "type" -
+	192	[598]	CALL     	3 4 1
+	193	[599]	SETTABUP 	1 -56 -25	; self "m_fullRankData" nil
+	194	[600]	GETUPVAL 	3 1	; self
+	195	[600]	SELF     	3 3 -57	; "SaveRankData"
+	196	[600]	CALL     	3 2 1
+	197	[603]	GETTABUP 	3 3 -28	; _ENV "GM"
+	198	[603]	GETTABLE 	3 3 -58	; "HeartBeatManager"
+	199	[603]	SELF     	3 3 -59	; "TrySchedule"
+	200	[603]	CALL     	3 2 1
+	201	[604]	GETUPVAL 	3 1	; self
+	202	[604]	SELF     	3 3 -60	; "SetRequestTime"
+	203	[604]	CALL     	3 2 1
+	204	[607]	GETUPVAL 	3 1	; self
+	205	[607]	SELF     	3 3 -61	; "SetDefeated"
+	206	[607]	LOADBOOL 	5 0 0
+	207	[607]	CALL     	3 3 1
+	208	[609]	GETTABUP 	3 3 -26	; _ENV "GameConfig"
+	209	[609]	GETTABLE 	3 3 -27	; "IsTestMode"
+	210	[609]	CALL     	3 1 2
+	211	[609]	TEST     	3 0
+	212	[609]	JMP      	0 10	; to 223
+	213	[610]	LOADK    	3 -62	; "\231\167\175\229\136\134\231\171\158\233\128\159\232\191\155\231\187\132\230\136\144\229\138\159"
+	214	[611]	GETTABUP 	4 3 -28	; _ENV "GM"
+	215	[611]	GETTABLE 	4 4 -29	; "UIManager"
+	216	[611]	SELF     	4 4 -30	; "ShowPrompt"
+	217	[611]	MOVE     	6 3
+	218	[611]	CALL     	4 3 1
+	219	[612]	GETTABUP 	4 3 -31	; _ENV "Log"
+	220	[612]	GETTABLE 	4 4 -32	; "Info"
+	221	[612]	MOVE     	5 3
+	222	[612]	CALL     	4 2 1
+	223	[615]	GETTABUP 	3 3 -63	; _ENV "EventDispatcher"
+	224	[615]	GETTABLE 	3 3 -64	; "DispatchEvent"
+	225	[615]	GETTABUP 	4 3 -65	; _ENV "EEventType"
+	226	[615]	GETTABLE 	4 4 -66	; "OrderStatusChanged"
+	227	[615]	CALL     	3 2 1
+	228	[618]	GETTABUP 	3 3 -28	; _ENV "GM"
+	229	[618]	GETTABLE 	3 3 -67	; "UserModel"
+	230	[618]	SELF     	3 3 -68	; "GetUserId"
+	231	[618]	CALL     	3 2 2
+	232	[619]	LOADK    	4 -35	; 0
+	233	[620]	NEWTABLE 	5 0 0
+	234	[621]	GETTABUP 	6 3 -69	; _ENV "Table"
+	235	[621]	GETTABLE 	6 6 -70	; "IsEmpty"
+	236	[621]	GETTABUP 	7 1 -56	; self "m_fullRankData"
+	237	[621]	CALL     	6 2 2
+	238	[621]	TEST     	6 1
+	239	[621]	JMP      	0 16	; to 256
+	240	[622]	GETTABUP 	6 3 -71	; _ENV "pairs"
+	241	[622]	GETTABUP 	7 1 -56	; self "m_fullRankData"
+	242	[622]	CALL     	6 2 4
+	243	[622]	JMP      	0 10	; to 254
+	244	[623]	GETTABLE 	11 10 -72	; "Track"
+	245	[623]	EQ       	1 11 -25	; - nil
+	246	[623]	JMP      	0 7	; to 254
+	247	[624]	GETTABLE 	11 10 -73	; "UserId"
+	248	[624]	GETTABLE 	12 10 -72	; "Track"
+	249	[624]	SETTABLE 	5 11 12
+	250	[625]	GETTABLE 	11 10 -73	; "UserId"
+	251	[625]	EQ       	1 11 3
+	252	[625]	JMP      	0 1	; to 254
+	253	[626]	ADD      	4 4 -53	; - 1
+	254	[622]	TFORCALL 	6 2
+	255	[622]	TFORLOOP 	8 -12	; to 244
+	256	[632]	GETTABUP 	6 3 -74	; _ENV "ipairs"
+	257	[632]	GETTABLE 	7 1 -22	; "ranks"
+	258	[632]	CALL     	6 2 4
+	259	[632]	JMP      	0 13	; to 273
+	260	[634]	GETTABLE 	11 10 -75	; "userid"
+	261	[634]	EQ       	0 11 3
+	262	[634]	JMP      	0 10	; to 273
+	263	[634]	GETTABLE 	11 10 -76	; "score"
+	264	[634]	GETUPVAL 	12 1	; self
+	265	[634]	SELF     	12 12 -77	; "GetScore"
+	266	[634]	CALL     	12 2 2
+	267	[634]	EQ       	1 11 12
+	268	[634]	JMP      	0 4	; to 273
+	269	[635]	GETUPVAL 	11 2	; callback
+	270	[635]	LOADBOOL 	12 0 0
+	271	[635]	CALL     	11 2 1
+	272	[636]	RETURN   	0 1
+	273	[632]	TFORCALL 	6 2
+	274	[632]	TFORLOOP 	8 -15	; to 260
+	275	[640]	GETTABUP 	6 3 -69	; _ENV "Table"
+	276	[640]	GETTABLE 	6 6 -78	; "DeepCopy"
+	277	[640]	GETTABUP 	7 1 -56	; self "m_fullRankData"
+	278	[640]	CALL     	6 2 2
+	279	[641]	NEWTABLE 	7 0 0
+	280	[641]	SETTABUP 	1 -56 7	; self "m_fullRankData"
+	281	[642]	SETTABUP 	1 -79 -80	; self "m_allZero" true
+	282	[643]	GETUPVAL 	7 1	; self
+	283	[643]	SELF     	7 7 -81	; "GetTargetScore"
+	284	[643]	CALL     	7 2 2
+	285	[644]	GETTABUP 	8 3 -74	; _ENV "ipairs"
+	286	[644]	GETTABLE 	9 1 -22	; "ranks"
+	287	[644]	CALL     	8 2 4
+	288	[644]	JMP      	0 49	; to 338
+	289	[646]	NEWTABLE 	13 0 6
+	290	[647]	GETTABLE 	14 12 -75	; "userid"
+	291	[647]	SETTABLE 	13 -73 14	; "UserId" -
+	292	[648]	GETTABLE 	14 12 -83	; "rank"
+	293	[648]	SETTABLE 	13 -82 14	; "Rank" -
+	294	[649]	GETTABLE 	14 12 -85	; "name"
+	295	[649]	SETTABLE 	13 -84 14	; "Name" -
+	296	[650]	GETTABLE 	14 12 -87	; "icon"
+	297	[650]	SETTABLE 	13 -86 14	; "Icon" -
+	298	[651]	GETTABLE 	14 12 -89	; "icon_frame"
+	299	[651]	SETTABLE 	13 -88 14	; "IconFrame" -
+	300	[652]	GETTABUP 	14 3 -90	; _ENV "math"
+	301	[652]	GETTABLE 	14 14 -91	; "min"
+	302	[652]	GETTABLE 	15 12 -76	; "score"
+	303	[652]	MOVE     	16 7
+	304	[652]	CALL     	14 3 2
+	305	[652]	SETTABLE 	13 -44 14	; "Score" -
+	306	[654]	GETTABLE 	14 12 -76	; "score"
+	307	[654]	LT       	0 -35 14	; 0 -
+	308	[654]	JMP      	0 1	; to 310
+	309	[655]	SETTABUP 	1 -79 -92	; self "m_allZero" false
+	310	[658]	GETTABLE 	14 12 -75	; "userid"
+	311	[658]	GETTABLE 	14 5 14
+	312	[658]	EQ       	1 14 -25	; - nil
+	313	[658]	JMP      	0 4	; to 318
+	314	[659]	GETTABLE 	14 12 -75	; "userid"
+	315	[659]	GETTABLE 	14 5 14
+	316	[659]	SETTABLE 	13 -72 14	; "Track" -
+	317	[659]	JMP      	0 8	; to 326
+	318	[661]	GETTABLE 	14 12 -75	; "userid"
+	319	[661]	EQ       	1 14 3
+	320	[661]	JMP      	0 4	; to 325
+	321	[662]	ADD      	4 4 -53	; - 1
+	322	[663]	GETTABUP 	14 4 4	; rankTrackMap
+	323	[663]	SETTABLE 	13 -72 14	; "Track" -
+	324	[663]	JMP      	0 1	; to 326
+	325	[666]	SETTABLE 	13 -72 -93	; "Track" 3
+	326	[670]	GETTABUP 	14 3 -94	; _ENV "table"
+	327	[670]	GETTABLE 	14 14 -95	; "insert"
+	328	[670]	GETTABUP 	15 1 -56	; self "m_fullRankData"
+	329	[670]	MOVE     	16 13
+	330	[670]	CALL     	14 3 1
+	331	[672]	GETTABLE 	14 12 -75	; "userid"
+	332	[672]	EQ       	0 14 3
+	333	[672]	JMP      	0 4	; to 338
+	334	[673]	GETUPVAL 	14 1	; self
+	335	[673]	SELF     	14 14 -96	; "UpdateRank"
+	336	[673]	GETTABLE 	16 12 -83	; "rank"
+	337	[673]	CALL     	14 3 1
+	338	[644]	TFORCALL 	8 2
+	339	[644]	TFORLOOP 	10 -51	; to 289
+	340	[676]	GETUPVAL 	8 1	; self
+	341	[676]	SELF     	8 8 -97	; "SortRank"
+	342	[676]	GETTABUP 	10 1 -56	; self "m_fullRankData"
+	343	[676]	CALL     	8 3 1
+	344	[677]	GETUPVAL 	8 1	; self
+	345	[677]	SELF     	8 8 -57	; "SaveRankData"
+	346	[677]	CALL     	8 2 1
+	347	[679]	LOADBOOL 	8 0 0
+	348	[680]	GETTABUP 	9 1 -98	; self "m_alreadyReset"
+	349	[680]	TEST     	9 0
+	350	[680]	JMP      	0 2	; to 353
+	351	[681]	LOADBOOL 	8 1 0
+	352	[682]	SETTABUP 	1 -98 -92	; self "m_alreadyReset" false
+	353	[685]	GETUPVAL 	9 1	; self
+	354	[685]	SELF     	9 9 -2	; "RecordResp"
+	355	[685]	LOADBOOL 	11 1 0
+	356	[685]	LOADBOOL 	12 1 0
+	357	[685]	MOVE     	13 1
+	358	[685]	GETTABUP 	14 1 -56	; self "m_fullRankData"
+	359	[685]	CALL     	9 6 1
+	360	[687]	GETUPVAL 	9 1	; self
+	361	[687]	SELF     	9 9 -99	; "IsDefeatedRankData"
+	362	[687]	GETTABUP 	11 1 -56	; self "m_fullRankData"
+	363	[687]	CALL     	9 3 2
+	364	[687]	TEST     	9 0
+	365	[687]	JMP      	0 10	; to 376
+	366	[688]	GETUPVAL 	9 1	; self
+	367	[688]	SELF     	9 9 -61	; "SetDefeated"
+	368	[688]	LOADBOOL 	11 1 0
+	369	[688]	CALL     	9 3 1
+	370	[689]	SETTABUP 	1 -100 6	; self "m_defeatpreRankData"
+	371	[690]	GETTABUP 	9 3 -63	; _ENV "EventDispatcher"
+	372	[690]	GETTABLE 	9 9 -64	; "DispatchEvent"
+	373	[690]	GETTABUP 	10 3 -65	; _ENV "EEventType"
+	374	[690]	GETTABLE 	10 10 -101	; "ScoreRaceDefeated"
+	375	[690]	CALL     	9 2 1
+	376	[693]	GETUPVAL 	9 2	; callback
+	377	[693]	LOADBOOL 	10 1 0
+	378	[693]	MOVE     	11 8
+	379	[693]	CALL     	9 3 1
+	380	[694]	RETURN   	0 1
+constants (101) for 00000280551518A0:
+	1	"m_requestId"
+	2	"RecordResp"
+	3	"rcode"
+	4	"ScoreRaceModel"
+	5	"ErrorStatus"
+	6	"INVALID_CONFIG"
+	7	"UNMATCH_TYPE"
+	8	"EndReq"
+	9	"\231\167\175\229\136\134\231\171\158\233\128\159\233\133\141\231\189\174\229\135\186\233\148\153\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	10	"CHEAT_USER"
+	11	"\231\167\175\229\136\134\231\171\158\233\128\159\228\189\156\229\188\138\231\142\169\229\174\182\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	12	"EXPIRED_JOINTIME"
+	13	"LOCKCHANNEL_FAILED"
+	14	"\231\167\175\229\136\134\231\171\158\233\128\159\232\175\183\230\177\130\229\164\177\232\180\165"
+	15	"UNMATCH_GROUPID"
+	16	"ROLLED_ROUND"
+	17	"OTHER_ERROR"
+	18	"ResetAndRequestAgain"
+	19	"\231\167\175\229\136\134\231\171\158\233\128\159rcode\229\188\130\229\184\184"
+	20	"GROUPRESULT_INVALID"
+	21	"\231\167\175\229\136\134\231\171\158\233\128\159\230\156\141\229\138\161\229\153\168\230\151\182\233\151\180\229\183\178\231\187\147\230\157\159\230\180\187\229\138\168\239\188\140\231\187\136\230\173\162\229\144\142\231\187\173\232\175\183\230\177\130"
+	22	"ranks"
+	23	5
+	24	"\231\167\175\229\136\134\231\171\158\233\128\159\232\191\155\231\187\132\228\186\186\230\149\176\232\182\133\232\191\1355\239\188\159"
+	25	nil
+	26	"GameConfig"
+	27	"IsTestMode"
+	28	"GM"
+	29	"UIManager"
+	30	"ShowPrompt"
+	31	"Log"
+	32	"Info"
+	33	"IsInGroup"
+	34	"group_id"
+	35	0
+	36	"\231\167\175\229\136\134\231\171\158\233\128\159\231\187\132id\232\191\148\228\186\1340"
+	37	"SetRoundEntryTime"
+	38	"GameModel"
+	39	"GetServerTime"
+	40	"m_dbTable"
+	41	"Set"
+	42	"GroupId"
+	43	"value"
+	44	"Score"
+	45	"BIManager"
+	46	"LogAction"
+	47	"EBIType"
+	48	"ScoreRaceNewRound"
+	49	"rd"
+	50	"GetRound"
+	51	"times"
+	52	"GetDefeatTimes"
+	53	1
+	54	"type"
+	55	"GetPlayerType"
+	56	"m_fullRankData"
+	57	"SaveRankData"
+	58	"HeartBeatManager"
+	59	"TrySchedule"
+	60	"SetRequestTime"
+	61	"SetDefeated"
+	62	"\231\167\175\229\136\134\231\171\158\233\128\159\232\191\155\231\187\132\230\136\144\229\138\159"
+	63	"EventDispatcher"
+	64	"DispatchEvent"
+	65	"EEventType"
+	66	"OrderStatusChanged"
+	67	"UserModel"
+	68	"GetUserId"
+	69	"Table"
+	70	"IsEmpty"
+	71	"pairs"
+	72	"Track"
+	73	"UserId"
+	74	"ipairs"
+	75	"userid"
+	76	"score"
+	77	"GetScore"
+	78	"DeepCopy"
+	79	"m_allZero"
+	80	true
+	81	"GetTargetScore"
+	82	"Rank"
+	83	"rank"
+	84	"Name"
+	85	"name"
+	86	"Icon"
+	87	"icon"
+	88	"IconFrame"
+	89	"icon_frame"
+	90	"math"
+	91	"min"
+	92	false
+	93	3
+	94	"table"
+	95	"insert"
+	96	"UpdateRank"
+	97	"SortRank"
+	98	"m_alreadyReset"
+	99	"IsDefeatedRankData"
+	100	"m_defeatpreRankData"
+	101	"ScoreRaceDefeated"
+locals (26) for 00000280551518A0:
+	0	success	1	381
+	1	response	1	381
+	2	info	16	381
+	3	info	214	223
+	4	userId	232	381
+	5	num	233	381
+	6	preTrack	234	381
+	7	(for generator)	243	256
+	8	(for state)	243	256
+	9	(for control)	243	256
+	10	_	244	254
+	11	player	244	254
+	12	(for generator)	259	275
+	13	(for state)	259	275
+	14	(for control)	259	275
+	15	_	260	273
+	16	data	260	273
+	17	temp	279	381
+	18	targetscore	285	381
+	19	(for generator)	288	340
+	20	(for state)	288	340
+	21	(for control)	288	340
+	22	_	289	338
+	23	data	289	338
+	24	rankData	306	338
+	25	reset	348	381
+upvalues (5) for 00000280551518A0:
+	0	curRequestId	1	2
+	1	self	1	0
+	2	callback	1	1
+	3	_ENV	0	0
+	4	rankTrackMap	0	1
+
+function <ScoreRaceModel.lua:699,727> (34 instructions at 0000028055150F20)
+2 params, 16 slots, 1 upvalue, 14 locals, 12 constants, 1 function
+	1	[700]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[700]	GETTABLE 	2 2 -2	; "DeepCopy"
+	3	[700]	MOVE     	3 1
+	4	[700]	CALL     	2 2 2
+	5	[702]	NEWTABLE 	3 0 5
+	6	[703]	SETTABLE 	3 -3 -4	; 3 1
+	7	[704]	SETTABLE 	3 -5 -5	; 2 2
+	8	[705]	SETTABLE 	3 -6 -3	; 4 3
+	9	[706]	SETTABLE 	3 -4 -6	; 1 4
+	10	[707]	SETTABLE 	3 -7 -7	; 5 5
+	11	[711]	GETTABUP 	4 0 -8	; _ENV "table"
+	12	[711]	GETTABLE 	4 4 -9	; "sort"
+	13	[711]	MOVE     	5 2
+	14	[717]	CLOSURE  	6 0	; 0000028055150BA0
+	15	[711]	CALL     	4 3 1
+	16	[719]	GETTABUP 	4 0 -10	; _ENV "ipairs"
+	17	[719]	MOVE     	5 1
+	18	[719]	CALL     	4 2 4
+	19	[719]	JMP      	0 12	; to 32
+	20	[720]	GETTABUP 	9 0 -10	; _ENV "ipairs"
+	21	[720]	MOVE     	10 2
+	22	[720]	CALL     	9 2 4
+	23	[720]	JMP      	0 6	; to 30
+	24	[721]	GETTABLE 	14 8 -11	; "UserId"
+	25	[721]	GETTABLE 	15 13 -11	; "UserId"
+	26	[721]	EQ       	0 14 15
+	27	[721]	JMP      	0 2	; to 30
+	28	[722]	SETTABLE 	8 -12 12	; "Rank" -
+	29	[722]	JMP      	0 2	; to 32
+	30	[720]	TFORCALL 	9 2
+	31	[720]	TFORLOOP 	11 -8	; to 24
+	32	[719]	TFORCALL 	4 2
+	33	[719]	TFORLOOP 	6 -14	; to 20
+	34	[727]	RETURN   	0 1
+constants (12) for 0000028055150F20:
+	1	"Table"
+	2	"DeepCopy"
+	3	3
+	4	1
+	5	2
+	6	4
+	7	5
+	8	"table"
+	9	"sort"
+	10	"ipairs"
+	11	"UserId"
+	12	"Rank"
+locals (14) for 0000028055150F20:
+	0	self	1	35
+	1	rankInfos	1	35
+	2	newRank	5	35
+	3	trackWeightMap	11	35
+	4	(for generator)	19	34
+	5	(for state)	19	34
+	6	(for control)	19	34
+	7	_	20	32
+	8	info	20	32
+	9	(for generator)	23	32
+	10	(for state)	23	32
+	11	(for control)	23	32
+	12	i	24	30
+	13	newInfo	24	30
+upvalues (1) for 0000028055150F20:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:711,717> (22 instructions at 0000028055150BA0)
+2 params, 4 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[712]	GETTABLE 	2 0 -1	; "Rank"
+	2	[712]	GETTABLE 	3 1 -1	; "Rank"
+	3	[712]	EQ       	1 2 3
+	4	[712]	JMP      	0 8	; to 13
+	5	[713]	GETTABLE 	2 0 -1	; "Rank"
+	6	[713]	GETTABLE 	3 1 -1	; "Rank"
+	7	[713]	LT       	1 2 3
+	8	[713]	JMP      	0 1	; to 10
+	9	[713]	LOADBOOL 	2 0 1
+	10	[713]	LOADBOOL 	2 1 0
+	11	[713]	RETURN   	2 2
+	12	[713]	JMP      	0 9	; to 22
+	13	[715]	GETTABLE 	2 0 -2	; "Track"
+	14	[715]	GETTABUP 	2 0 2	; trackWeightMap
+	15	[715]	GETTABLE 	3 1 -2	; "Track"
+	16	[715]	GETTABUP 	3 0 3	; trackWeightMap
+	17	[715]	LT       	1 2 3
+	18	[715]	JMP      	0 1	; to 20
+	19	[715]	LOADBOOL 	2 0 1
+	20	[715]	LOADBOOL 	2 1 0
+	21	[715]	RETURN   	2 2
+	22	[717]	RETURN   	0 1
+constants (2) for 0000028055150BA0:
+	1	"Rank"
+	2	"Track"
+locals (2) for 0000028055150BA0:
+	0	a	1	23
+	1	b	1	23
+upvalues (1) for 0000028055150BA0:
+	0	trackWeightMap	1	3
+
+function <ScoreRaceModel.lua:729,731> (3 instructions at 00000280551502A0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[730]	GETTABLE 	1 0 -1	; "m_fullRankData"
+	2	[730]	RETURN   	1 2
+	3	[731]	RETURN   	0 1
+constants (1) for 00000280551502A0:
+	1	"m_fullRankData"
+locals (1) for 00000280551502A0:
+	0	self	1	4
+upvalues (0) for 00000280551502A0:
+
+function <ScoreRaceModel.lua:733,739> (20 instructions at 0000028055150FA0)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[734]	GETTABLE 	1 0 -1	; "m_conCnt"
+	2	[734]	TEST     	1 1
+	3	[734]	JMP      	0 1	; to 5
+	4	[734]	LOADK    	1 -2	; 0
+	5	[734]	ADD      	1 1 -3	; - 1
+	6	[734]	SETTABLE 	0 -1 1	; "m_conCnt" -
+	7	[735]	GETTABUP 	1 0 -4	; _ENV "ScoreRaceViewController"
+	8	[735]	GETTABLE 	1 1 -5	; "Create"
+	9	[735]	GETTABLE 	2 0 -1	; "m_conCnt"
+	10	[735]	CALL     	1 2 2
+	11	[736]	GETTABLE 	2 0 -6	; "m_conArr"
+	12	[736]	TEST     	2 1
+	13	[736]	JMP      	0 1	; to 15
+	14	[736]	NEWTABLE 	2 0 0
+	15	[736]	SETTABLE 	0 -6 2	; "m_conArr" -
+	16	[737]	GETTABLE 	2 0 -6	; "m_conArr"
+	17	[737]	GETTABLE 	3 0 -1	; "m_conCnt"
+	18	[737]	SETTABLE 	2 3 1
+	19	[738]	RETURN   	1 2
+	20	[739]	RETURN   	0 1
+constants (6) for 0000028055150FA0:
+	1	"m_conCnt"
+	2	0
+	3	1
+	4	"ScoreRaceViewController"
+	5	"Create"
+	6	"m_conArr"
+locals (2) for 0000028055150FA0:
+	0	self	1	21
+	1	viewController	11	21
+upvalues (1) for 0000028055150FA0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:741,743> (3 instructions at 0000028055150720)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[742]	GETTABLE 	2 0 -1	; "m_conArr"
+	2	[742]	SETTABLE 	2 1 -2	; - nil
+	3	[743]	RETURN   	0 1
+constants (2) for 0000028055150720:
+	1	"m_conArr"
+	2	nil
+locals (2) for 0000028055150720:
+	0	self	1	4
+	1	id	1	4
+upvalues (0) for 0000028055150720:
+
+function <ScoreRaceModel.lua:745,747> (7 instructions at 0000028055150820)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[746]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[746]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[746]	GETTABLE 	2 0 -3	; "m_conArr"
+	4	[746]	CALL     	1 2 2
+	5	[746]	NOT      	1 1
+	6	[746]	RETURN   	1 2
+	7	[747]	RETURN   	0 1
+constants (3) for 0000028055150820:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_conArr"
+locals (1) for 0000028055150820:
+	0	self	1	8
+upvalues (1) for 0000028055150820:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:749,757> (14 instructions at 0000028055150120)
+1 param, 6 slots, 1 upvalue, 3 locals, 5 constants, 0 functions
+	1	[750]	SELF     	1 0 -1	; "GetRankList"
+	2	[750]	CALL     	1 2 2
+	3	[751]	NEWTABLE 	2 0 0
+	4	[752]	EQ       	1 1 -2	; - 0
+	5	[752]	JMP      	0 7	; to 13
+	6	[753]	GETTABUP 	3 0 -3	; _ENV "table"
+	7	[753]	GETTABLE 	3 3 -4	; "insert"
+	8	[753]	MOVE     	4 2
+	9	[753]	MOD      	5 1 -5	; - 4
+	10	[753]	CALL     	3 3 1
+	11	[754]	IDIV     	1 1 -5	; - 4
+	12	[754]	JMP      	0 -9	; to 4
+	13	[756]	RETURN   	2 2
+	14	[757]	RETURN   	0 1
+constants (5) for 0000028055150120:
+	1	"GetRankList"
+	2	0
+	3	"table"
+	4	"insert"
+	5	4
+locals (3) for 0000028055150120:
+	0	self	1	15
+	1	res	3	15
+	2	record	4	15
+upvalues (1) for 0000028055150120:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:759,761> (11 instructions at 0000028055151E20)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[760]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[760]	SELF     	1 1 -2	; "GetValue"
+	3	[760]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[760]	GETTABLE 	3 3 -4	; "DefeatTimes"
+	5	[760]	LOADK    	4 -5	; "value"
+	6	[760]	CALL     	1 4 2
+	7	[760]	TEST     	1 1
+	8	[760]	JMP      	0 1	; to 10
+	9	[760]	LOADK    	1 -6	; 0
+	10	[760]	RETURN   	1 2
+	11	[761]	RETURN   	0 1
+constants (6) for 0000028055151E20:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"DefeatTimes"
+	5	"value"
+	6	0
+locals (1) for 0000028055151E20:
+	0	self	1	12
+upvalues (1) for 0000028055151E20:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:763,786> (103 instructions at 00000280551501A0)
+2 params, 8 slots, 1 upvalue, 2 locals, 49 constants, 0 functions
+	1	[764]	GETTABUP 	2 0 -1	; _ENV "RewardApi"
+	2	[764]	GETTABLE 	2 2 -2	; "AcquireRewardsLogic"
+	3	[764]	MOVE     	3 1
+	4	[764]	GETTABUP 	4 0 -3	; _ENV "EPropertySource"
+	5	[764]	GETTABLE 	4 4 -4	; "Give"
+	6	[764]	GETTABUP 	5 0 -5	; _ENV "EBIType"
+	7	[764]	GETTABLE 	5 5 -6	; "ScoreRaceRankRewards"
+	8	[764]	GETTABUP 	6 0 -7	; _ENV "EGameMode"
+	9	[764]	GETTABLE 	6 6 -8	; "Main"
+	10	[764]	GETTABUP 	7 0 -9	; _ENV "CacheItemType"
+	11	[764]	GETTABLE 	7 7 -10	; "Type2"
+	12	[764]	CALL     	2 6 1
+	13	[765]	SELF     	2 0 -11	; "LogActivity"
+	14	[765]	GETTABUP 	4 0 -5	; _ENV "EBIType"
+	15	[765]	GETTABLE 	4 4 -12	; "ActivityRankUp"
+	16	[765]	SELF     	5 0 -13	; "GetRound"
+	17	[765]	CALL     	5 2 0
+	18	[765]	CALL     	2 0 1
+	19	[766]	SELF     	2 0 -11	; "LogActivity"
+	20	[766]	GETTABUP 	4 0 -5	; _ENV "EBIType"
+	21	[766]	GETTABLE 	4 4 -14	; "ActivityGetRewards"
+	22	[766]	SELF     	5 0 -13	; "GetRound"
+	23	[766]	CALL     	5 2 0
+	24	[766]	CALL     	2 0 1
+	25	[768]	GETTABUP 	2 0 -15	; _ENV "GM"
+	26	[768]	GETTABLE 	2 2 -16	; "BIManager"
+	27	[768]	SELF     	2 2 -17	; "LogAction"
+	28	[768]	GETTABUP 	4 0 -5	; _ENV "EBIType"
+	29	[768]	GETTABLE 	4 4 -18	; "ScoreRaceEndRound"
+	30	[768]	NEWTABLE 	5 0 6
+	31	[769]	SELF     	6 0 -13	; "GetRound"
+	32	[769]	CALL     	6 2 2
+	33	[769]	SETTABLE 	5 -19 6	; "rd" -
+	34	[769]	SELF     	6 0 -21	; "GetDefeatTimes"
+	35	[769]	CALL     	6 2 2
+	36	[769]	ADD      	6 6 -22	; - 1
+	37	[769]	SETTABLE 	5 -20 6	; "times" -
+	38	[769]	SELF     	6 0 -24	; "GetRank"
+	39	[769]	CALL     	6 2 2
+	40	[769]	SETTABLE 	5 -23 6	; "rk" -
+	41	[770]	SELF     	6 0 -26	; "GetScore"
+	42	[770]	CALL     	6 2 2
+	43	[770]	SETTABLE 	5 -25 6	; "sc" -
+	44	[770]	SETTABLE 	5 -27 -28	; "res" "success"
+	45	[770]	SELF     	6 0 -30	; "GetPlayerType"
+	46	[770]	CALL     	6 2 2
+	47	[770]	SETTABLE 	5 -29 6	; "type" -
+	48	[768]	CALL     	2 4 1
+	49	[773]	SELF     	2 0 -31	; "RecordRank"
+	50	[773]	CALL     	2 2 1
+	51	[774]	GETTABLE 	2 0 -32	; "m_dbTable"
+	52	[774]	SELF     	2 2 -33	; "Set"
+	53	[774]	GETTABUP 	4 0 -34	; _ENV "ScoreRaceModel"
+	54	[774]	GETTABLE 	4 4 -35	; "Round"
+	55	[774]	LOADK    	5 -36	; "value"
+	56	[774]	SELF     	6 0 -13	; "GetRound"
+	57	[774]	CALL     	6 2 2
+	58	[774]	ADD      	6 6 -22	; - 1
+	59	[774]	CALL     	2 5 1
+	60	[775]	GETTABLE 	2 0 -32	; "m_dbTable"
+	61	[775]	SELF     	2 2 -33	; "Set"
+	62	[775]	GETTABUP 	4 0 -34	; _ENV "ScoreRaceModel"
+	63	[775]	GETTABLE 	4 4 -37	; "GroupId"
+	64	[775]	LOADK    	5 -36	; "value"
+	65	[775]	LOADK    	6 -38	; 0
+	66	[775]	CALL     	2 5 1
+	67	[776]	GETTABLE 	2 0 -32	; "m_dbTable"
+	68	[776]	SELF     	2 2 -33	; "Set"
+	69	[776]	GETTABUP 	4 0 -34	; _ENV "ScoreRaceModel"
+	70	[776]	GETTABLE 	4 4 -39	; "Score"
+	71	[776]	LOADK    	5 -36	; "value"
+	72	[776]	LOADK    	6 -40	; -1
+	73	[776]	CALL     	2 5 1
+	74	[777]	GETTABLE 	2 0 -32	; "m_dbTable"
+	75	[777]	SELF     	2 2 -33	; "Set"
+	76	[777]	GETTABUP 	4 0 -34	; _ENV "ScoreRaceModel"
+	77	[777]	GETTABLE 	4 4 -41	; "DefeatTimes"
+	78	[777]	LOADK    	5 -36	; "value"
+	79	[777]	LOADK    	6 -38	; 0
+	80	[777]	CALL     	2 5 1
+	81	[779]	SELF     	2 0 -42	; "UpdateRank"
+	82	[779]	LOADK    	4 -38	; 0
+	83	[779]	CALL     	2 3 1
+	84	[780]	GETTABUP 	2 0 -43	; _ENV "EventDispatcher"
+	85	[780]	GETTABLE 	2 2 -44	; "DispatchEvent"
+	86	[780]	GETTABUP 	3 0 -45	; _ENV "EEventType"
+	87	[780]	GETTABLE 	3 3 -46	; "ScoreRaceUpdateRank"
+	88	[780]	CALL     	2 2 1
+	89	[781]	GETTABUP 	2 0 -43	; _ENV "EventDispatcher"
+	90	[781]	GETTABLE 	2 2 -44	; "DispatchEvent"
+	91	[781]	GETTABUP 	3 0 -45	; _ENV "EEventType"
+	92	[781]	GETTABLE 	3 3 -47	; "OrderStatusChanged"
+	93	[781]	CALL     	2 2 1
+	94	[783]	SELF     	2 0 -48	; "IsAllRoundFinished"
+	95	[783]	CALL     	2 2 2
+	96	[783]	TEST     	2 0
+	97	[783]	JMP      	0 5	; to 103
+	98	[784]	GETTABUP 	2 0 -43	; _ENV "EventDispatcher"
+	99	[784]	GETTABLE 	2 2 -44	; "DispatchEvent"
+	100	[784]	GETTABUP 	3 0 -45	; _ENV "EEventType"
+	101	[784]	GETTABLE 	3 3 -49	; "ScoreRaceAllRoundFinished"
+	102	[784]	CALL     	2 2 1
+	103	[786]	RETURN   	0 1
+constants (49) for 00000280551501A0:
+	1	"RewardApi"
+	2	"AcquireRewardsLogic"
+	3	"EPropertySource"
+	4	"Give"
+	5	"EBIType"
+	6	"ScoreRaceRankRewards"
+	7	"EGameMode"
+	8	"Main"
+	9	"CacheItemType"
+	10	"Type2"
+	11	"LogActivity"
+	12	"ActivityRankUp"
+	13	"GetRound"
+	14	"ActivityGetRewards"
+	15	"GM"
+	16	"BIManager"
+	17	"LogAction"
+	18	"ScoreRaceEndRound"
+	19	"rd"
+	20	"times"
+	21	"GetDefeatTimes"
+	22	1
+	23	"rk"
+	24	"GetRank"
+	25	"sc"
+	26	"GetScore"
+	27	"res"
+	28	"success"
+	29	"type"
+	30	"GetPlayerType"
+	31	"RecordRank"
+	32	"m_dbTable"
+	33	"Set"
+	34	"ScoreRaceModel"
+	35	"Round"
+	36	"value"
+	37	"GroupId"
+	38	0
+	39	"Score"
+	40	-1
+	41	"DefeatTimes"
+	42	"UpdateRank"
+	43	"EventDispatcher"
+	44	"DispatchEvent"
+	45	"EEventType"
+	46	"ScoreRaceUpdateRank"
+	47	"OrderStatusChanged"
+	48	"IsAllRoundFinished"
+	49	"ScoreRaceAllRoundFinished"
+locals (2) for 00000280551501A0:
+	0	self	1	104
+	1	rewards	1	104
+upvalues (1) for 00000280551501A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:788,805> (73 instructions at 00000280551507A0)
+1 param, 7 slots, 1 upvalue, 1 local, 37 constants, 0 functions
+	1	[789]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[789]	GETTABLE 	1 1 -2	; "BIManager"
+	3	[789]	SELF     	1 1 -3	; "LogAction"
+	4	[789]	GETTABUP 	3 0 -4	; _ENV "EBIType"
+	5	[789]	GETTABLE 	3 3 -5	; "ScoreRaceEndRound"
+	6	[789]	NEWTABLE 	4 0 6
+	7	[790]	SELF     	5 0 -7	; "GetRound"
+	8	[790]	CALL     	5 2 2
+	9	[790]	SETTABLE 	4 -6 5	; "rd" -
+	10	[790]	SELF     	5 0 -9	; "GetDefeatTimes"
+	11	[790]	CALL     	5 2 2
+	12	[790]	ADD      	5 5 -10	; - 1
+	13	[790]	SETTABLE 	4 -8 5	; "times" -
+	14	[790]	SELF     	5 0 -12	; "GetRank"
+	15	[790]	CALL     	5 2 2
+	16	[790]	SETTABLE 	4 -11 5	; "rk" -
+	17	[791]	SELF     	5 0 -14	; "GetScore"
+	18	[791]	CALL     	5 2 2
+	19	[791]	SETTABLE 	4 -13 5	; "sc" -
+	20	[791]	SETTABLE 	4 -15 -16	; "res" "fail"
+	21	[791]	SELF     	5 0 -18	; "GetPlayerType"
+	22	[791]	CALL     	5 2 2
+	23	[791]	SETTABLE 	4 -17 5	; "type" -
+	24	[789]	CALL     	1 4 1
+	25	[794]	GETTABLE 	1 0 -19	; "m_dbTable"
+	26	[794]	SELF     	1 1 -20	; "Set"
+	27	[794]	GETTABUP 	3 0 -21	; _ENV "ScoreRaceModel"
+	28	[794]	GETTABLE 	3 3 -22	; "Round"
+	29	[794]	LOADK    	4 -23	; "value"
+	30	[794]	SELF     	5 0 -7	; "GetRound"
+	31	[794]	CALL     	5 2 0
+	32	[794]	CALL     	1 0 1
+	33	[795]	GETTABLE 	1 0 -19	; "m_dbTable"
+	34	[795]	SELF     	1 1 -20	; "Set"
+	35	[795]	GETTABUP 	3 0 -21	; _ENV "ScoreRaceModel"
+	36	[795]	GETTABLE 	3 3 -24	; "GroupId"
+	37	[795]	LOADK    	4 -23	; "value"
+	38	[795]	LOADK    	5 -25	; 0
+	39	[795]	CALL     	1 5 1
+	40	[796]	GETTABLE 	1 0 -19	; "m_dbTable"
+	41	[796]	SELF     	1 1 -20	; "Set"
+	42	[796]	GETTABUP 	3 0 -21	; _ENV "ScoreRaceModel"
+	43	[796]	GETTABLE 	3 3 -26	; "Score"
+	44	[796]	LOADK    	4 -23	; "value"
+	45	[796]	LOADK    	5 -27	; -1
+	46	[796]	CALL     	1 5 1
+	47	[797]	GETTABLE 	1 0 -19	; "m_dbTable"
+	48	[797]	SELF     	1 1 -20	; "Set"
+	49	[797]	GETTABUP 	3 0 -21	; _ENV "ScoreRaceModel"
+	50	[797]	GETTABLE 	3 3 -28	; "DefeatTimes"
+	51	[797]	LOADK    	4 -23	; "value"
+	52	[797]	SELF     	5 0 -9	; "GetDefeatTimes"
+	53	[797]	CALL     	5 2 2
+	54	[797]	ADD      	5 5 -10	; - 1
+	55	[797]	CALL     	1 5 1
+	56	[799]	SELF     	1 0 -29	; "UpdateRank"
+	57	[799]	LOADK    	3 -25	; 0
+	58	[799]	CALL     	1 3 1
+	59	[800]	GETTABUP 	1 0 -30	; _ENV "EventDispatcher"
+	60	[800]	GETTABLE 	1 1 -31	; "DispatchEvent"
+	61	[800]	GETTABUP 	2 0 -32	; _ENV "EEventType"
+	62	[800]	GETTABLE 	2 2 -33	; "ScoreRaceUpdateRank"
+	63	[800]	CALL     	1 2 1
+	64	[801]	GETTABUP 	1 0 -30	; _ENV "EventDispatcher"
+	65	[801]	GETTABLE 	1 1 -31	; "DispatchEvent"
+	66	[801]	GETTABUP 	2 0 -32	; _ENV "EEventType"
+	67	[801]	GETTABLE 	2 2 -34	; "OrderStatusChanged"
+	68	[801]	CALL     	1 2 1
+	69	[803]	SELF     	1 0 -35	; "SetDefeated"
+	70	[803]	LOADBOOL 	3 0 0
+	71	[803]	CALL     	1 3 1
+	72	[804]	SETTABLE 	0 -36 -37	; "m_defeatpreRankData" nil
+	73	[805]	RETURN   	0 1
+constants (37) for 00000280551507A0:
+	1	"GM"
+	2	"BIManager"
+	3	"LogAction"
+	4	"EBIType"
+	5	"ScoreRaceEndRound"
+	6	"rd"
+	7	"GetRound"
+	8	"times"
+	9	"GetDefeatTimes"
+	10	1
+	11	"rk"
+	12	"GetRank"
+	13	"sc"
+	14	"GetScore"
+	15	"res"
+	16	"fail"
+	17	"type"
+	18	"GetPlayerType"
+	19	"m_dbTable"
+	20	"Set"
+	21	"ScoreRaceModel"
+	22	"Round"
+	23	"value"
+	24	"GroupId"
+	25	0
+	26	"Score"
+	27	-1
+	28	"DefeatTimes"
+	29	"UpdateRank"
+	30	"EventDispatcher"
+	31	"DispatchEvent"
+	32	"EEventType"
+	33	"ScoreRaceUpdateRank"
+	34	"OrderStatusChanged"
+	35	"SetDefeated"
+	36	"m_defeatpreRankData"
+	37	nil
+locals (1) for 00000280551507A0:
+	0	self	1	74
+upvalues (1) for 00000280551507A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:807,811> (19 instructions at 0000028055151420)
+1 param, 7 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[808]	SELF     	1 0 -1	; "GetRankList"
+	2	[808]	CALL     	1 2 2
+	3	[809]	SELF     	2 0 -2	; "GetRound"
+	4	[809]	CALL     	2 2 2
+	5	[809]	MUL      	2 2 -3	; - 2
+	6	[809]	SUB      	2 2 -3	; - 2
+	7	[809]	SHL      	2 -4 2	; 1 -
+	8	[809]	SELF     	3 0 -5	; "GetRank"
+	9	[809]	CALL     	3 2 2
+	10	[809]	MUL      	2 2 3
+	11	[809]	ADD      	1 1 2
+	12	[810]	GETTABLE 	2 0 -6	; "m_dbTable"
+	13	[810]	SELF     	2 2 -7	; "Set"
+	14	[810]	GETTABUP 	4 0 -8	; _ENV "ScoreRaceModel"
+	15	[810]	GETTABLE 	4 4 -9	; "RankList"
+	16	[810]	LOADK    	5 -10	; "value"
+	17	[810]	MOVE     	6 1
+	18	[810]	CALL     	2 5 1
+	19	[811]	RETURN   	0 1
+constants (10) for 0000028055151420:
+	1	"GetRankList"
+	2	"GetRound"
+	3	2
+	4	1
+	5	"GetRank"
+	6	"m_dbTable"
+	7	"Set"
+	8	"ScoreRaceModel"
+	9	"RankList"
+	10	"value"
+locals (2) for 0000028055151420:
+	0	self	1	20
+	1	res	3	20
+upvalues (1) for 0000028055151420:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:813,820> (14 instructions at 0000028055150A20)
+1 param, 7 slots, 0 upvalues, 6 locals, 3 constants, 0 functions
+	1	[814]	SELF     	1 0 -1	; "GetFullRankData"
+	2	[814]	CALL     	1 2 2
+	3	[815]	LOADK    	2 -2	; 1
+	4	[815]	LEN      	3 1
+	5	[815]	LOADK    	4 -2	; 1
+	6	[815]	FORPREP  	2 6	; to 13
+	7	[816]	GETTABLE 	6 1 5
+	8	[816]	GETTABLE 	6 6 -3	; "Rank"
+	9	[816]	EQ       	0 6 -2	; - 1
+	10	[816]	JMP      	0 2	; to 13
+	11	[817]	GETTABLE 	6 1 5
+	12	[817]	RETURN   	6 2
+	13	[815]	FORLOOP  	2 -7	; to 7
+	14	[820]	RETURN   	0 1
+constants (3) for 0000028055150A20:
+	1	"GetFullRankData"
+	2	1
+	3	"Rank"
+locals (6) for 0000028055150A20:
+	0	self	1	15
+	1	playersData	3	15
+	2	(for index)	6	14
+	3	(for limit)	6	14
+	4	(for step)	6	14
+	5	i	7	13
+upvalues (0) for 0000028055150A20:
+
+function <ScoreRaceModel.lua:822,824> (12 instructions at 000002805514FFA0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[823]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[823]	SELF     	1 1 -2	; "GetValue"
+	3	[823]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[823]	GETTABLE 	3 3 -4	; "HasPopReady"
+	5	[823]	LOADK    	4 -5	; "value"
+	6	[823]	CALL     	1 4 2
+	7	[823]	EQ       	0 1 -6	; - "1"
+	8	[823]	JMP      	0 1	; to 10
+	9	[823]	LOADBOOL 	1 0 1
+	10	[823]	LOADBOOL 	1 1 0
+	11	[823]	RETURN   	1 2
+	12	[824]	RETURN   	0 1
+constants (6) for 000002805514FFA0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"HasPopReady"
+	5	"value"
+	6	"1"
+locals (1) for 000002805514FFA0:
+	0	self	1	13
+upvalues (1) for 000002805514FFA0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:826,828> (8 instructions at 0000028055150920)
+1 param, 6 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[827]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[827]	SELF     	1 1 -2	; "Set"
+	3	[827]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[827]	GETTABLE 	3 3 -4	; "HasPopReady"
+	5	[827]	LOADK    	4 -5	; "value"
+	6	[827]	LOADK    	5 -6	; ""
+	7	[827]	CALL     	1 5 1
+	8	[828]	RETURN   	0 1
+constants (6) for 0000028055150920:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"HasPopReady"
+	5	"value"
+	6	""
+locals (1) for 0000028055150920:
+	0	self	1	9
+upvalues (1) for 0000028055150920:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:830,832> (8 instructions at 00000280551509A0)
+1 param, 6 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[831]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[831]	SELF     	1 1 -2	; "Set"
+	3	[831]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[831]	GETTABLE 	3 3 -4	; "HasPopReady"
+	5	[831]	LOADK    	4 -5	; "value"
+	6	[831]	LOADK    	5 -6	; "1"
+	7	[831]	CALL     	1 5 1
+	8	[832]	RETURN   	0 1
+constants (6) for 00000280551509A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"HasPopReady"
+	5	"value"
+	6	"1"
+locals (1) for 00000280551509A0:
+	0	self	1	9
+upvalues (1) for 00000280551509A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:834,836> (12 instructions at 0000028055150320)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[835]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[835]	SELF     	1 1 -2	; "GetValue"
+	3	[835]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[835]	GETTABLE 	3 3 -4	; "NewRoundFirstOpen"
+	5	[835]	LOADK    	4 -5	; "value"
+	6	[835]	CALL     	1 4 2
+	7	[835]	EQ       	0 1 -6	; - "1"
+	8	[835]	JMP      	0 1	; to 10
+	9	[835]	LOADBOOL 	1 0 1
+	10	[835]	LOADBOOL 	1 1 0
+	11	[835]	RETURN   	1 2
+	12	[836]	RETURN   	0 1
+constants (6) for 0000028055150320:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"NewRoundFirstOpen"
+	5	"value"
+	6	"1"
+locals (1) for 0000028055150320:
+	0	self	1	13
+upvalues (1) for 0000028055150320:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:839,841> (13 instructions at 00000280551508A0)
+2 params, 7 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[840]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[840]	SELF     	2 2 -2	; "Set"
+	3	[840]	GETTABUP 	4 0 -3	; _ENV "ScoreRaceModel"
+	4	[840]	GETTABLE 	4 4 -4	; "NewRoundFirstOpen"
+	5	[840]	LOADK    	5 -5	; "value"
+	6	[840]	TEST     	1 0
+	7	[840]	JMP      	0 3	; to 11
+	8	[840]	LOADK    	6 -6	; "1"
+	9	[840]	TEST     	6 1
+	10	[840]	JMP      	0 1	; to 12
+	11	[840]	LOADK    	6 -7	; ""
+	12	[840]	CALL     	2 5 1
+	13	[841]	RETURN   	0 1
+constants (7) for 00000280551508A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"NewRoundFirstOpen"
+	5	"value"
+	6	"1"
+	7	""
+locals (2) for 00000280551508A0:
+	0	self	1	14
+	1	bOpened	1	14
+upvalues (1) for 00000280551508A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:843,848> (22 instructions at 00000280551503A0)
+1 param, 4 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[844]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[844]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[844]	SELF     	1 1 -3	; "IsServerControlOpen"
+	4	[844]	GETTABUP 	3 0 -4	; _ENV "EGeneralConfType"
+	5	[844]	GETTABLE 	3 3 -5	; "ScoreRaceForce"
+	6	[844]	CALL     	1 3 2
+	7	[844]	TEST     	1 0
+	8	[844]	JMP      	0 2	; to 11
+	9	[845]	LOADBOOL 	1 0 0
+	10	[845]	RETURN   	1 2
+	11	[847]	SELF     	1 0 -6	; "GetRound"
+	12	[847]	CALL     	1 2 2
+	13	[847]	LT       	1 -7 1	; 1 -
+	14	[847]	JMP      	0 5	; to 20
+	15	[847]	SELF     	1 0 -8	; "IsRoundFirstOpen"
+	16	[847]	CALL     	1 2 2
+	17	[847]	NOT      	1 1
+	18	[847]	JMP      	0 2	; to 21
+	19	[847]	LOADBOOL 	1 0 1
+	20	[847]	LOADBOOL 	1 1 0
+	21	[847]	RETURN   	1 2
+	22	[848]	RETURN   	0 1
+constants (8) for 00000280551503A0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"ScoreRaceForce"
+	6	"GetRound"
+	7	1
+	8	"IsRoundFirstOpen"
+locals (1) for 00000280551503A0:
+	0	self	1	23
+upvalues (1) for 00000280551503A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:853,886> (73 instructions at 0000028055150C20)
+3 params, 15 slots, 1 upvalue, 17 locals, 12 constants, 1 function
+	1	[854]	NEWTABLE 	3 0 0
+	2	[855]	LOADBOOL 	4 0 0
+	3	[856]	SELF     	5 0 -1	; "GetFullRankData"
+	4	[856]	CALL     	5 2 2
+	5	[858]	NEWTABLE 	6 0 0
+	6	[859]	LOADK    	7 -2	; 1
+	7	[859]	LEN      	8 1
+	8	[859]	LOADK    	9 -2	; 1
+	9	[859]	FORPREP  	7 3	; to 13
+	10	[860]	GETTABLE 	11 1 10
+	11	[860]	GETTABLE 	11 11 -3	; "Track"
+	12	[860]	SETTABLE 	6 11 10
+	13	[859]	FORLOOP  	7 -4	; to 10
+	14	[863]	LOADK    	7 -2	; 1
+	15	[863]	LEN      	8 5
+	16	[863]	LOADK    	9 -2	; 1
+	17	[863]	FORPREP  	7 44	; to 62
+	18	[865]	GETTABLE 	11 5 10
+	19	[865]	GETTABLE 	11 11 -3	; "Track"
+	20	[865]	GETTABLE 	11 6 11
+	21	[865]	EQ       	0 11 -4	; - nil
+	22	[865]	JMP      	0 14	; to 37
+	23	[866]	GETTABUP 	11 0 -5	; _ENV "Table"
+	24	[866]	GETTABLE 	11 11 -6	; "DeepCopy"
+	25	[866]	GETTABLE 	12 5 10
+	26	[866]	CALL     	11 2 2
+	27	[867]	SETTABLE 	11 -7 -8	; "Score" 0
+	28	[868]	GETTABUP 	12 0 -9	; _ENV "table"
+	29	[868]	GETTABLE 	12 12 -10	; "insert"
+	30	[868]	MOVE     	13 1
+	31	[868]	MOVE     	14 11
+	32	[868]	CALL     	12 3 1
+	33	[869]	GETTABLE 	12 5 10
+	34	[869]	GETTABLE 	12 12 -3	; "Track"
+	35	[869]	LEN      	13 1
+	36	[869]	SETTABLE 	6 12 13
+	37	[871]	GETTABLE 	11 5 10
+	38	[871]	GETTABLE 	11 11 -3	; "Track"
+	39	[871]	GETTABLE 	11 6 11
+	40	[872]	GETTABLE 	12 1 11
+	41	[872]	GETTABLE 	12 12 -7	; "Score"
+	42	[872]	GETTABLE 	13 5 10
+	43	[872]	GETTABLE 	13 13 -7	; "Score"
+	44	[872]	EQ       	0 12 13
+	45	[872]	JMP      	0 6	; to 52
+	46	[872]	GETTABLE 	12 1 11
+	47	[872]	GETTABLE 	12 12 -11	; "Rank"
+	48	[872]	GETTABLE 	13 5 10
+	49	[872]	GETTABLE 	13 13 -11	; "Rank"
+	50	[872]	EQ       	1 12 13
+	51	[872]	JMP      	0 10	; to 62
+	52	[873]	GETTABUP 	12 0 -9	; _ENV "table"
+	53	[873]	GETTABLE 	12 12 -10	; "insert"
+	54	[873]	MOVE     	13 3
+	55	[873]	GETTABLE 	14 5 10
+	56	[873]	CALL     	12 3 1
+	57	[876]	GETTABLE 	12 5 10
+	58	[876]	GETTABLE 	12 12 -7	; "Score"
+	59	[876]	LE       	0 2 12
+	60	[876]	JMP      	0 1	; to 62
+	61	[877]	LOADBOOL 	4 1 0
+	62	[863]	FORLOOP  	7 -45	; to 18
+	63	[881]	TEST     	4 0
+	64	[881]	JMP      	0 5	; to 70
+	65	[882]	GETTABUP 	7 0 -9	; _ENV "table"
+	66	[882]	GETTABLE 	7 7 -12	; "sort"
+	67	[882]	MOVE     	8 3
+	68	[882]	CLOSURE  	9 0	; 0000028055150CA0
+	69	[882]	CALL     	7 3 1
+	70	[885]	MOVE     	7 4
+	71	[885]	MOVE     	8 3
+	72	[885]	RETURN   	7 3
+	73	[886]	RETURN   	0 1
+constants (12) for 0000028055150C20:
+	1	"GetFullRankData"
+	2	1
+	3	"Track"
+	4	nil
+	5	"Table"
+	6	"DeepCopy"
+	7	"Score"
+	8	0
+	9	"table"
+	10	"insert"
+	11	"Rank"
+	12	"sort"
+locals (17) for 0000028055150C20:
+	0	self	1	74
+	1	lastRankData	1	74
+	2	targetScore	1	74
+	3	res	2	74
+	4	bfinished	3	74
+	5	playersData	5	74
+	6	mapTrack	6	74
+	7	(for index)	9	14
+	8	(for limit)	9	14
+	9	(for step)	9	14
+	10	i	10	13
+	11	(for index)	17	63
+	12	(for limit)	17	63
+	13	(for step)	17	63
+	14	i	18	62
+	15	temp	27	37
+	16	xh	40	62
+upvalues (1) for 0000028055150C20:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:882,882> (8 instructions at 0000028055150CA0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[882]	GETTABLE 	2 0 -1	; "Rank"
+	2	[882]	GETTABLE 	3 1 -1	; "Rank"
+	3	[882]	LT       	1 2 3
+	4	[882]	JMP      	0 1	; to 6
+	5	[882]	LOADBOOL 	2 0 1
+	6	[882]	LOADBOOL 	2 1 0
+	7	[882]	RETURN   	2 2
+	8	[882]	RETURN   	0 1
+constants (1) for 0000028055150CA0:
+	1	"Rank"
+locals (2) for 0000028055150CA0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000028055150CA0:
+
+function <ScoreRaceModel.lua:891,898> (14 instructions at 0000028055150B20)
+2 params, 8 slots, 0 upvalues, 7 locals, 3 constants, 0 functions
+	1	[892]	SELF     	2 0 -1	; "GetFullRankData"
+	2	[892]	CALL     	2 2 2
+	3	[893]	LOADK    	3 -2	; 1
+	4	[893]	LEN      	4 2
+	5	[893]	LOADK    	5 -2	; 1
+	6	[893]	FORPREP  	3 6	; to 13
+	7	[894]	GETTABLE 	7 2 6
+	8	[894]	GETTABLE 	7 7 -3	; "Track"
+	9	[894]	EQ       	0 7 1
+	10	[894]	JMP      	0 2	; to 13
+	11	[895]	GETTABLE 	7 2 6
+	12	[895]	RETURN   	7 2
+	13	[893]	FORLOOP  	3 -7	; to 7
+	14	[898]	RETURN   	0 1
+constants (3) for 0000028055150B20:
+	1	"GetFullRankData"
+	2	1
+	3	"Track"
+locals (7) for 0000028055150B20:
+	0	self	1	15
+	1	track	1	15
+	2	playersData	3	15
+	3	(for index)	6	14
+	4	(for limit)	6	14
+	5	(for step)	6	14
+	6	i	7	13
+upvalues (0) for 0000028055150B20:
+
+function <ScoreRaceModel.lua:900,902> (8 instructions at 00000280551519A0)
+1 param, 6 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[901]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[901]	SELF     	1 1 -2	; "Set"
+	3	[901]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[901]	GETTABLE 	3 3 -4	; "PopEndWindow"
+	5	[901]	LOADK    	4 -5	; "value"
+	6	[901]	LOADK    	5 -6	; "1"
+	7	[901]	CALL     	1 5 1
+	8	[902]	RETURN   	0 1
+constants (6) for 00000280551519A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"PopEndWindow"
+	5	"value"
+	6	"1"
+locals (1) for 00000280551519A0:
+	0	self	1	9
+upvalues (1) for 00000280551519A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:904,906> (12 instructions at 0000028055150DA0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[905]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[905]	SELF     	1 1 -2	; "GetValue"
+	3	[905]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[905]	GETTABLE 	3 3 -4	; "PopEndWindow"
+	5	[905]	LOADK    	4 -5	; "value"
+	6	[905]	CALL     	1 4 2
+	7	[905]	EQ       	0 1 -6	; - "1"
+	8	[905]	JMP      	0 1	; to 10
+	9	[905]	LOADBOOL 	1 0 1
+	10	[905]	LOADBOOL 	1 1 0
+	11	[905]	RETURN   	1 2
+	12	[906]	RETURN   	0 1
+constants (6) for 0000028055150DA0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"PopEndWindow"
+	5	"value"
+	6	"1"
+locals (1) for 0000028055150DA0:
+	0	self	1	13
+upvalues (1) for 0000028055150DA0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:908,914> (32 instructions at 0000028055150E20)
+2 params, 12 slots, 1 upvalue, 3 locals, 17 constants, 0 functions
+	1	[909]	GETTABUP 	2 0 -1	; _ENV "GameConfig"
+	2	[909]	GETTABLE 	2 2 -2	; "IsTestMode"
+	3	[909]	CALL     	2 1 2
+	4	[909]	TEST     	2 0
+	5	[909]	JMP      	0 26	; to 32
+	6	[910]	GETTABLE 	2 0 -3	; "m_dbTable"
+	7	[910]	SELF     	2 2 -4	; "GetValue"
+	8	[910]	GETTABUP 	4 0 -5	; _ENV "ScoreRaceModel"
+	9	[910]	GETTABLE 	4 4 -6	; "RequestLog"
+	10	[910]	LOADK    	5 -7	; "value"
+	11	[910]	CALL     	2 4 2
+	12	[910]	TEST     	2 1
+	13	[910]	JMP      	0 1	; to 15
+	14	[910]	LOADK    	2 -8	; ""
+	15	[911]	MOVE     	3 2
+	16	[911]	LOADK    	4 -9	; "req--"
+	17	[911]	LOADK    	5 -10	; "gp:"
+	18	[911]	GETTABLE 	6 1 -11	; "scoreGroupId"
+	19	[911]	LOADK    	7 -12	; "-rd:"
+	20	[911]	GETTABLE 	8 1 -13	; "round"
+	21	[911]	LOADK    	9 -14	; "-sc:"
+	22	[911]	GETTABLE 	10 1 -15	; "scoreToken"
+	23	[911]	LOADK    	11 -16	; " \n"
+	24	[911]	CONCAT   	2 3 11
+	25	[912]	GETTABLE 	3 0 -3	; "m_dbTable"
+	26	[912]	SELF     	3 3 -17	; "Set"
+	27	[912]	GETTABUP 	5 0 -5	; _ENV "ScoreRaceModel"
+	28	[912]	GETTABLE 	5 5 -6	; "RequestLog"
+	29	[912]	LOADK    	6 -7	; "value"
+	30	[912]	MOVE     	7 2
+	31	[912]	CALL     	3 5 1
+	32	[914]	RETURN   	0 1
+constants (17) for 0000028055150E20:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"ScoreRaceModel"
+	6	"RequestLog"
+	7	"value"
+	8	""
+	9	"req--"
+	10	"gp:"
+	11	"scoreGroupId"
+	12	"-rd:"
+	13	"round"
+	14	"-sc:"
+	15	"scoreToken"
+	16	" \n"
+	17	"Set"
+locals (3) for 0000028055150E20:
+	0	self	1	33
+	1	request	1	33
+	2	str	15	32
+upvalues (1) for 0000028055150E20:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:916,931> (64 instructions at 0000028055150420)
+5 params, 23 slots, 1 upvalue, 11 locals, 25 constants, 0 functions
+	1	[917]	GETTABUP 	5 0 -1	; _ENV "GameConfig"
+	2	[917]	GETTABLE 	5 5 -2	; "IsTestMode"
+	3	[917]	CALL     	5 1 2
+	4	[917]	TEST     	5 0
+	5	[917]	JMP      	0 58	; to 64
+	6	[918]	GETTABLE 	5 0 -3	; "m_dbTable"
+	7	[918]	SELF     	5 5 -4	; "GetValue"
+	8	[918]	GETTABUP 	7 0 -5	; _ENV "ScoreRaceModel"
+	9	[918]	GETTABLE 	7 7 -6	; "RequestLog"
+	10	[918]	LOADK    	8 -7	; "value"
+	11	[918]	CALL     	5 4 2
+	12	[918]	TEST     	5 1
+	13	[918]	JMP      	0 1	; to 15
+	14	[918]	LOADK    	5 -8	; ""
+	15	[919]	TEST     	1 1
+	16	[919]	JMP      	0 4	; to 21
+	17	[920]	MOVE     	6 5
+	18	[920]	LOADK    	7 -9	; "resp--failed \n"
+	19	[920]	CONCAT   	5 6 7
+	20	[920]	JMP      	0 36	; to 57
+	21	[921]	TEST     	2 1
+	22	[921]	JMP      	0 9	; to 32
+	23	[922]	MOVE     	6 5
+	24	[922]	LOADK    	7 -10	; "resp--"
+	25	[922]	LOADK    	8 -11	; "-rc:"
+	26	[922]	GETTABLE 	9 3 -12	; "rcode"
+	27	[922]	LOADK    	10 -13	; "-if:"
+	28	[922]	MOVE     	11 4
+	29	[922]	LOADK    	12 -14	; " \n"
+	30	[922]	CONCAT   	5 6 12
+	31	[922]	JMP      	0 25	; to 57
+	32	[924]	MOVE     	6 5
+	33	[924]	LOADK    	7 -10	; "resp--"
+	34	[924]	LOADK    	8 -15	; "-gp:"
+	35	[924]	GETTABLE 	9 3 -16	; "group_id"
+	36	[924]	LOADK    	10 -17	; "- \n"
+	37	[924]	CONCAT   	5 6 10
+	38	[925]	GETTABUP 	6 0 -18	; _ENV "pairs"
+	39	[925]	MOVE     	7 4
+	40	[925]	CALL     	6 2 4
+	41	[925]	JMP      	0 13	; to 55
+	42	[926]	MOVE     	11 5
+	43	[926]	LOADK    	12 -19	; "-"
+	44	[926]	GETTABLE 	13 10 -20	; "UserId"
+	45	[926]	LOADK    	14 -19	; "-"
+	46	[926]	GETTABLE 	15 10 -21	; "Rank"
+	47	[926]	LOADK    	16 -19	; "-"
+	48	[926]	GETTABLE 	17 10 -22	; "Score"
+	49	[926]	LOADK    	18 -19	; "-"
+	50	[926]	GETTABLE 	19 10 -23	; "Track"
+	51	[926]	LOADK    	20 -19	; "-"
+	52	[926]	GETTABLE 	21 10 -24	; "IconFrame"
+	53	[926]	LOADK    	22 -17	; "- \n"
+	54	[926]	CONCAT   	5 11 22
+	55	[925]	TFORCALL 	6 2
+	56	[925]	TFORLOOP 	8 -15	; to 42
+	57	[929]	GETTABLE 	6 0 -3	; "m_dbTable"
+	58	[929]	SELF     	6 6 -25	; "Set"
+	59	[929]	GETTABUP 	8 0 -5	; _ENV "ScoreRaceModel"
+	60	[929]	GETTABLE 	8 8 -6	; "RequestLog"
+	61	[929]	LOADK    	9 -7	; "value"
+	62	[929]	MOVE     	10 5
+	63	[929]	CALL     	6 5 1
+	64	[931]	RETURN   	0 1
+constants (25) for 0000028055150420:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"ScoreRaceModel"
+	6	"RequestLog"
+	7	"value"
+	8	""
+	9	"resp--failed \n"
+	10	"resp--"
+	11	"-rc:"
+	12	"rcode"
+	13	"-if:"
+	14	" \n"
+	15	"-gp:"
+	16	"group_id"
+	17	"- \n"
+	18	"pairs"
+	19	"-"
+	20	"UserId"
+	21	"Rank"
+	22	"Score"
+	23	"Track"
+	24	"IconFrame"
+	25	"Set"
+locals (11) for 0000028055150420:
+	0	self	1	65
+	1	success	1	65
+	2	updated	1	65
+	3	response	1	65
+	4	info	1	65
+	5	str	15	64
+	6	(for generator)	41	57
+	7	(for state)	41	57
+	8	(for control)	41	57
+	9	_	42	55
+	10	data	42	55
+upvalues (1) for 0000028055150420:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:933,939> (23 instructions at 0000028055151B20)
+1 param, 7 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[934]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[934]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[934]	CALL     	1 1 2
+	4	[934]	TEST     	1 0
+	5	[934]	JMP      	0 17	; to 23
+	6	[935]	GETTABLE 	1 0 -3	; "m_dbTable"
+	7	[935]	SELF     	1 1 -4	; "GetValue"
+	8	[935]	GETTABUP 	3 0 -5	; _ENV "ScoreRaceModel"
+	9	[935]	GETTABLE 	3 3 -6	; "RequestLog"
+	10	[935]	LOADK    	4 -7	; "value"
+	11	[935]	CALL     	1 4 2
+	12	[935]	TEST     	1 1
+	13	[935]	JMP      	0 1	; to 15
+	14	[935]	LOADK    	1 -8	; ""
+	15	[936]	GETTABLE 	2 0 -3	; "m_dbTable"
+	16	[936]	SELF     	2 2 -9	; "Set"
+	17	[936]	GETTABUP 	4 0 -5	; _ENV "ScoreRaceModel"
+	18	[936]	GETTABLE 	4 4 -6	; "RequestLog"
+	19	[936]	LOADK    	5 -7	; "value"
+	20	[936]	LOADK    	6 -8	; ""
+	21	[936]	CALL     	2 5 1
+	22	[937]	RETURN   	1 2
+	23	[939]	RETURN   	0 1
+constants (9) for 0000028055151B20:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"ScoreRaceModel"
+	6	"RequestLog"
+	7	"value"
+	8	""
+	9	"Set"
+locals (2) for 0000028055151B20:
+	0	self	1	24
+	1	str	15	23
+upvalues (1) for 0000028055151B20:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:941,943> (2 instructions at 0000028055151A20)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[942]	SETTABLE 	0 -1 1	; "m_requesting" -
+	2	[943]	RETURN   	0 1
+constants (1) for 0000028055151A20:
+	1	"m_requesting"
+locals (2) for 0000028055151A20:
+	0	self	1	3
+	1	state	1	3
+upvalues (0) for 0000028055151A20:
+
+function <ScoreRaceModel.lua:945,947> (3 instructions at 00000280551504A0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[946]	GETTABLE 	1 0 -1	; "m_requesting"
+	2	[946]	RETURN   	1 2
+	3	[947]	RETURN   	0 1
+constants (1) for 00000280551504A0:
+	1	"m_requesting"
+locals (1) for 00000280551504A0:
+	0	self	1	4
+upvalues (0) for 00000280551504A0:
+
+function <ScoreRaceModel.lua:949,951> (12 instructions at 0000028055150EA0)
+1 param, 7 slots, 1 upvalue, 1 local, 9 constants, 0 functions
+	1	[950]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[950]	SELF     	1 1 -2	; "Set"
+	3	[950]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[950]	GETTABLE 	3 3 -4	; "NextRequestTime"
+	5	[950]	LOADK    	4 -5	; "value"
+	6	[950]	GETTABUP 	5 0 -6	; _ENV "GM"
+	7	[950]	GETTABLE 	5 5 -7	; "GameModel"
+	8	[950]	SELF     	5 5 -8	; "GetServerTime"
+	9	[950]	CALL     	5 2 2
+	10	[950]	ADD      	5 5 -9	; - 11
+	11	[950]	CALL     	1 5 1
+	12	[951]	RETURN   	0 1
+constants (9) for 0000028055150EA0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"NextRequestTime"
+	5	"value"
+	6	"GM"
+	7	"GameModel"
+	8	"GetServerTime"
+	9	11
+locals (1) for 0000028055150EA0:
+	0	self	1	13
+upvalues (1) for 0000028055150EA0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:953,955> (11 instructions at 0000028055151020)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[954]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[954]	SELF     	1 1 -2	; "GetValue"
+	3	[954]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[954]	GETTABLE 	3 3 -4	; "NextRequestTime"
+	5	[954]	LOADK    	4 -5	; "value"
+	6	[954]	CALL     	1 4 2
+	7	[954]	TEST     	1 1
+	8	[954]	JMP      	0 1	; to 10
+	9	[954]	LOADK    	1 -6	; -1
+	10	[954]	RETURN   	1 2
+	11	[955]	RETURN   	0 1
+constants (6) for 0000028055151020:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"NextRequestTime"
+	5	"value"
+	6	-1
+locals (1) for 0000028055151020:
+	0	self	1	12
+upvalues (1) for 0000028055151020:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:957,959> (8 instructions at 0000028055151320)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[958]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[958]	SELF     	2 2 -2	; "Set"
+	3	[958]	GETTABUP 	4 0 -3	; _ENV "ScoreRaceModel"
+	4	[958]	GETTABLE 	4 4 -4	; "AlreadyDefeat"
+	5	[958]	LOADK    	5 -5	; "value"
+	6	[958]	MOVE     	6 1
+	7	[958]	CALL     	2 5 1
+	8	[959]	RETURN   	0 1
+constants (5) for 0000028055151320:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ScoreRaceModel"
+	4	"AlreadyDefeat"
+	5	"value"
+locals (2) for 0000028055151320:
+	0	self	1	9
+	1	state	1	9
+upvalues (1) for 0000028055151320:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:961,963> (11 instructions at 00000280551513A0)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[962]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[962]	SELF     	1 1 -2	; "GetValue"
+	3	[962]	GETTABUP 	3 0 -3	; _ENV "ScoreRaceModel"
+	4	[962]	GETTABLE 	3 3 -4	; "AlreadyDefeat"
+	5	[962]	LOADK    	4 -5	; "value"
+	6	[962]	CALL     	1 4 2
+	7	[962]	TEST     	1 1
+	8	[962]	JMP      	0 1	; to 10
+	9	[962]	LOADBOOL 	1 0 0
+	10	[962]	RETURN   	1 2
+	11	[963]	RETURN   	0 1
+constants (5) for 00000280551513A0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ScoreRaceModel"
+	4	"AlreadyDefeat"
+	5	"value"
+locals (1) for 00000280551513A0:
+	0	self	1	12
+upvalues (1) for 00000280551513A0:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:965,967> (3 instructions at 00000280551510A0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[966]	GETTABLE 	1 0 -1	; "m_defeatpreRankData"
+	2	[966]	RETURN   	1 2
+	3	[967]	RETURN   	0 1
+constants (1) for 00000280551510A0:
+	1	"m_defeatpreRankData"
+locals (1) for 00000280551510A0:
+	0	self	1	4
+upvalues (0) for 00000280551510A0:
+
+function <ScoreRaceModel.lua:969,1005> (71 instructions at 0000028055151120)
+1 param, 7 slots, 1 upvalue, 3 locals, 26 constants, 2 functions
+	1	[970]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[970]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[970]	MOVE     	2 0
+	4	[970]	CALL     	1 2 1
+	5	[971]	SELF     	1 0 -3	; "GetRequesting"
+	6	[971]	CALL     	1 2 2
+	7	[971]	TEST     	1 1
+	8	[971]	JMP      	0 3	; to 12
+	9	[971]	GETTABLE 	1 0 -4	; "m_autoUpdate"
+	10	[971]	TEST     	1 0
+	11	[971]	JMP      	0 1	; to 13
+	12	[972]	RETURN   	0 1
+	13	[975]	SELF     	1 0 -5	; "IsDefeated"
+	14	[975]	CALL     	1 2 2
+	15	[975]	TEST     	1 0
+	16	[975]	JMP      	0 22	; to 39
+	17	[976]	GETTABLE 	1 0 -6	; "m_defeatpreRankData"
+	18	[976]	EQ       	0 1 -7	; - nil
+	19	[976]	JMP      	0 11	; to 31
+	20	[977]	GETTABUP 	1 0 -8	; _ENV "Table"
+	21	[977]	GETTABLE 	1 1 -9	; "DeepCopy"
+	22	[977]	GETTABLE 	2 0 -10	; "m_fullRankData"
+	23	[977]	CALL     	1 2 2
+	24	[978]	SELF     	2 0 -11	; "SetRequesting"
+	25	[978]	LOADBOOL 	4 1 0
+	26	[978]	CALL     	2 3 1
+	27	[979]	SELF     	2 0 -12	; "RequestFullRankData"
+	28	[985]	CLOSURE  	4 0	; 00000280551517A0
+	29	[979]	CALL     	2 3 1
+	30	[985]	JMP      	2 0	; to 31
+	31	[987]	GETTABLE 	1 0 -13	; "m_dbTable"
+	32	[987]	SELF     	1 1 -14	; "Set"
+	33	[987]	GETTABUP 	3 0 -15	; _ENV "ScoreRaceModel"
+	34	[987]	GETTABLE 	3 3 -16	; "NextRequestTime"
+	35	[987]	LOADK    	4 -17	; "value"
+	36	[987]	LOADK    	5 -18	; -1
+	37	[987]	CALL     	1 5 1
+	38	[988]	RETURN   	0 1
+	39	[991]	SELF     	1 0 -19	; "GetRequestTime"
+	40	[991]	CALL     	1 2 2
+	41	[992]	EQ       	1 1 -18	; - -1
+	42	[992]	JMP      	0 28	; to 71
+	43	[992]	GETTABUP 	2 0 -20	; _ENV "GM"
+	44	[992]	GETTABLE 	2 2 -21	; "GameModel"
+	45	[992]	SELF     	2 2 -22	; "GetServerTime"
+	46	[992]	CALL     	2 2 2
+	47	[992]	LE       	0 1 2
+	48	[992]	JMP      	0 22	; to 71
+	49	[993]	SELF     	2 0 -23	; "IsInGroup"
+	50	[993]	CALL     	2 2 2
+	51	[993]	TEST     	2 0
+	52	[993]	JMP      	0 6	; to 59
+	53	[993]	SELF     	2 0 -24	; "GetScore"
+	54	[993]	CALL     	2 2 2
+	55	[993]	SELF     	3 0 -25	; "GetTargetScore"
+	56	[993]	CALL     	3 2 2
+	57	[993]	LE       	0 3 2
+	58	[993]	JMP      	0 8	; to 67
+	59	[994]	GETTABLE 	2 0 -13	; "m_dbTable"
+	60	[994]	SELF     	2 2 -14	; "Set"
+	61	[994]	GETTABUP 	4 0 -15	; _ENV "ScoreRaceModel"
+	62	[994]	GETTABLE 	4 4 -16	; "NextRequestTime"
+	63	[994]	LOADK    	5 -17	; "value"
+	64	[994]	LOADK    	6 -18	; -1
+	65	[994]	CALL     	2 5 1
+	66	[994]	JMP      	0 4	; to 71
+	67	[996]	SETTABLE 	0 -4 -26	; "m_autoUpdate" true
+	68	[997]	SELF     	2 0 -12	; "RequestFullRankData"
+	69	[1002]	CLOSURE  	4 1	; 0000028055151AA0
+	70	[997]	CALL     	2 3 1
+	71	[1005]	RETURN   	0 1
+constants (26) for 0000028055151120:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"GetRequesting"
+	4	"m_autoUpdate"
+	5	"IsDefeated"
+	6	"m_defeatpreRankData"
+	7	nil
+	8	"Table"
+	9	"DeepCopy"
+	10	"m_fullRankData"
+	11	"SetRequesting"
+	12	"RequestFullRankData"
+	13	"m_dbTable"
+	14	"Set"
+	15	"ScoreRaceModel"
+	16	"NextRequestTime"
+	17	"value"
+	18	-1
+	19	"GetRequestTime"
+	20	"GM"
+	21	"GameModel"
+	22	"GetServerTime"
+	23	"IsInGroup"
+	24	"GetScore"
+	25	"GetTargetScore"
+	26	true
+locals (3) for 0000028055151120:
+	0	self	1	72
+	1	temp	24	31
+	2	reqtim	41	72
+upvalues (1) for 0000028055151120:
+	0	_ENV	0	0
+
+function <ScoreRaceModel.lua:979,985> (16 instructions at 00000280551517A0)
+2 params, 5 slots, 3 upvalues, 2 locals, 6 constants, 0 functions
+	1	[980]	GETUPVAL 	2 0	; self
+	2	[980]	SELF     	2 2 -1	; "SetRequesting"
+	3	[980]	LOADBOOL 	4 0 0
+	4	[980]	CALL     	2 3 1
+	5	[981]	TEST     	0 0
+	6	[981]	JMP      	0 9	; to 16
+	7	[981]	TEST     	1 1
+	8	[981]	JMP      	0 7	; to 16
+	9	[982]	GETUPVAL 	2 1	; temp
+	10	[982]	SETTABUP 	0 -2 2	; self "m_defeatpreRankData"
+	11	[983]	GETTABUP 	2 2 -3	; _ENV "EventDispatcher"
+	12	[983]	GETTABLE 	2 2 -4	; "DispatchEvent"
+	13	[983]	GETTABUP 	3 2 -5	; _ENV "EEventType"
+	14	[983]	GETTABLE 	3 3 -6	; "ScoreRaceDefeated"
+	15	[983]	CALL     	2 2 1
+	16	[985]	RETURN   	0 1
+constants (6) for 00000280551517A0:
+	1	"SetRequesting"
+	2	"m_defeatpreRankData"
+	3	"EventDispatcher"
+	4	"DispatchEvent"
+	5	"EEventType"
+	6	"ScoreRaceDefeated"
+locals (2) for 00000280551517A0:
+	0	success	1	17
+	1	reset	1	17
+upvalues (3) for 00000280551517A0:
+	0	self	1	0
+	1	temp	1	1
+	2	_ENV	0	0
+
+function <ScoreRaceModel.lua:997,1002> (13 instructions at 0000028055151AA0)
+2 params, 7 slots, 2 upvalues, 2 locals, 8 constants, 0 functions
+	1	[998]	SETTABUP 	0 -1 -2	; self "m_autoUpdate" false
+	2	[999]	TEST     	0 0
+	3	[999]	JMP      	0 9	; to 13
+	4	[999]	TEST     	1 1
+	5	[999]	JMP      	0 7	; to 13
+	6	[1000]	GETTABUP 	2 0 -3	; self "m_dbTable"
+	7	[1000]	SELF     	2 2 -4	; "Set"
+	8	[1000]	GETTABUP 	4 1 -5	; _ENV "ScoreRaceModel"
+	9	[1000]	GETTABLE 	4 4 -6	; "NextRequestTime"
+	10	[1000]	LOADK    	5 -7	; "value"
+	11	[1000]	LOADK    	6 -8	; -1
+	12	[1000]	CALL     	2 5 1
+	13	[1002]	RETURN   	0 1
+constants (8) for 0000028055151AA0:
+	1	"m_autoUpdate"
+	2	false
+	3	"m_dbTable"
+	4	"Set"
+	5	"ScoreRaceModel"
+	6	"NextRequestTime"
+	7	"value"
+	8	-1
+locals (2) for 0000028055151AA0:
+	0	success	1	14
+	1	reset	1	14
+upvalues (2) for 0000028055151AA0:
+	0	self	1	0
+	1	_ENV	0	0

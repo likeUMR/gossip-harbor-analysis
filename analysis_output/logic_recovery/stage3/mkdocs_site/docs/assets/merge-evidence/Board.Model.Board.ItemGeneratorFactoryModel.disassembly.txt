@@ -1,0 +1,1710 @@
+
+main <ItemGeneratorFactoryModel.lua:0,0> (90 instructions at 000001DDBDABEC90)
+0+ params, 7 slots, 1 upvalue, 0 locals, 35 constants, 25 functions
+	1	[13]	NEWTABLE 	0 0 0
+	2	[13]	SETTABUP 	0 -1 0	; _ENV "ItemGeneratorFactoryModel"
+	3	[14]	GETTABUP 	0 0 -1	; _ENV "ItemGeneratorFactoryModel"
+	4	[14]	GETTABUP 	1 0 -1	; _ENV "ItemGeneratorFactoryModel"
+	5	[14]	SETTABLE 	0 -2 1	; "__index" -
+	6	[17]	NEWTABLE 	0 6 0
+	7	[18]	LOADK    	1 -4	; "104"
+	8	[18]	LOADK    	2 -5	; "404"
+	9	[18]	LOADK    	3 -6	; "705"
+	10	[18]	LOADK    	4 -7	; "1006"
+	11	[18]	LOADK    	5 -8	; "1205"
+	12	[19]	LOADK    	6 -9	; "1705"
+	13	[19]	SETLIST  	0 6 1	; 1
+	14	[19]	SETTABUP 	0 -3 0	; _ENV "ItemGeneratorFactoryType"
+	15	[21]	GETTABUP 	0 0 -1	; _ENV "ItemGeneratorFactoryModel"
+	16	[25]	CLOSURE  	1 0	; 000001DDBDABF0C0
+	17	[21]	SETTABLE 	0 -10 1	; "Create" -
+	18	[27]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	19	[43]	CLOSURE  	1 1	; 000001DDBDABF140
+	20	[27]	SETTABLE 	0 -12 1	; "Init" -
+	21	[45]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	22	[49]	CLOSURE  	1 2	; 000001DDBDAC3540
+	23	[45]	SETTABLE 	0 -13 1	; "_OnGameModeChangeFinished" -
+	24	[51]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	25	[68]	CLOSURE  	1 3	; 000001DDBDAC3630
+	26	[51]	SETTABLE 	0 -14 1	; "LateInit" -
+	27	[70]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	28	[72]	CLOSURE  	1 4	; 000001DDBDAC3940
+	29	[70]	SETTABLE 	0 -15 1	; "OnSceneViewLoaded" -
+	30	[75]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	31	[83]	CLOSURE  	1 5	; 000001DDBDAC39C0
+	32	[75]	SETTABLE 	0 -16 1	; "_OnLoginFinished" -
+	33	[86]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	34	[101]	CLOSURE  	1 6	; 000001DDBDAC3A40
+	35	[86]	SETTABLE 	0 -17 1	; "_OnItemMerged" -
+	36	[103]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	37	[115]	CLOSURE  	1 7	; 000001DDBDABE700
+	38	[103]	SETTABLE 	0 -18 1	; "_LogStart" -
+	39	[117]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	40	[123]	CLOSURE  	1 8	; 000001DDBDAC49F0
+	41	[117]	SETTABLE 	0 -19 1	; "UpdateInventoryEntryRedTip" -
+	42	[126]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	43	[136]	CLOSURE  	1 9	; 000001DDBDAC48F0
+	44	[126]	SETTABLE 	0 -20 1	; "IsOpen" -
+	45	[138]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	46	[191]	CLOSURE  	1 10	; 000001DDBDAC45F0
+	47	[138]	SETTABLE 	0 -21 1	; "CheckCobweb" -
+	48	[194]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	49	[206]	CLOSURE  	1 11	; 000001DDBDAC4870
+	50	[194]	SETTABLE 	0 -22 1	; "_UpdateOpenState" -
+	51	[209]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	52	[218]	CLOSURE  	1 12	; 000001DDBDAC4C70
+	53	[209]	SETTABLE 	0 -23 1	; "IsGeneratorFactoryItem" -
+	54	[221]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	55	[240]	CLOSURE  	1 13	; 000001DDBDAC4670
+	56	[221]	SETTABLE 	0 -24 1	; "StoreItem" -
+	57	[242]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	58	[267]	CLOSURE  	1 14	; 000001DDBDAC47F0
+	59	[242]	SETTABLE 	0 -25 1	; "AddScore" -
+	60	[270]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	61	[287]	CLOSURE  	1 15	; 000001DDBDAC46F0
+	62	[270]	SETTABLE 	0 -26 1	; "CanMerge" -
+	63	[289]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	64	[304]	CLOSURE  	1 16	; 000001DDBDAC4F70
+	65	[289]	SETTABLE 	0 -27 1	; "_CanMerge" -
+	66	[306]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	67	[319]	CLOSURE  	1 17	; 000001DDBDAC4CF0
+	68	[306]	SETTABLE 	0 -28 1	; "TryReward" -
+	69	[322]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	70	[346]	CLOSURE  	1 18	; 000001DDBDAC5170
+	71	[322]	SETTABLE 	0 -29 1	; "GetDefaultIndex" -
+	72	[348]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	73	[354]	CLOSURE  	1 19	; 000001DDBDAC51F0
+	74	[348]	SETTABLE 	0 -30 1	; "GetGenDataByType" -
+	75	[356]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	76	[363]	CLOSURE  	1 20	; 000001DDBDAC44F0
+	77	[356]	SETTABLE 	0 -31 1	; "GetData" -
+	78	[365]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	79	[370]	CLOSURE  	1 21	; 000001DDBDAC4A70
+	80	[365]	SETTABLE 	0 -32 1	; "SaveData" -
+	81	[372]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	82	[374]	CLOSURE  	1 22	; 000001DDBDAC4970
+	83	[372]	SETTABLE 	0 -33 1	; "RemoveData" -
+	84	[377]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	85	[420]	CLOSURE  	1 23	; 000001DDBDAC5070
+	86	[377]	SETTABLE 	0 -34 1	; "_TryReturnItem" -
+	87	[422]	GETTABUP 	0 0 -11	; _ENV "ItemGeneratorFactoryModel"
+	88	[434]	CLOSURE  	1 24	; 000001DDBDAC4AF0
+	89	[422]	SETTABLE 	0 -35 1	; "_UpdateUnLockState" -
+	90	[434]	RETURN   	0 1
+constants (35) for 000001DDBDABEC90:
+	1	"ItemGeneratorFactoryModel"
+	2	"__index"
+	3	"ItemGeneratorFactoryType"
+	4	"104"
+	5	"404"
+	6	"705"
+	7	"1006"
+	8	"1205"
+	9	"1705"
+	10	"Create"
+	11	"ItemGeneratorFactoryModel"
+	12	"Init"
+	13	"_OnGameModeChangeFinished"
+	14	"LateInit"
+	15	"OnSceneViewLoaded"
+	16	"_OnLoginFinished"
+	17	"_OnItemMerged"
+	18	"_LogStart"
+	19	"UpdateInventoryEntryRedTip"
+	20	"IsOpen"
+	21	"CheckCobweb"
+	22	"_UpdateOpenState"
+	23	"IsGeneratorFactoryItem"
+	24	"StoreItem"
+	25	"AddScore"
+	26	"CanMerge"
+	27	"_CanMerge"
+	28	"TryReward"
+	29	"GetDefaultIndex"
+	30	"GetGenDataByType"
+	31	"GetData"
+	32	"SaveData"
+	33	"RemoveData"
+	34	"_TryReturnItem"
+	35	"_UpdateUnLockState"
+locals (0) for 000001DDBDABEC90:
+upvalues (1) for 000001DDBDABEC90:
+	0	_ENV	1	0
+
+function <ItemGeneratorFactoryModel.lua:21,25> (8 instructions at 000001DDBDABF0C0)
+0 params, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[22]	GETTABUP 	0 0 -1	; _ENV "setmetatable"
+	2	[22]	NEWTABLE 	1 0 0
+	3	[22]	GETTABUP 	2 0 -2	; _ENV "ItemGeneratorFactoryModel"
+	4	[22]	CALL     	0 3 2
+	5	[23]	SELF     	1 0 -3	; "Init"
+	6	[23]	CALL     	1 2 1
+	7	[24]	RETURN   	0 2
+	8	[25]	RETURN   	0 1
+constants (3) for 000001DDBDABF0C0:
+	1	"setmetatable"
+	2	"ItemGeneratorFactoryModel"
+	3	"Init"
+locals (1) for 000001DDBDABF0C0:
+	0	model	5	9
+upvalues (1) for 000001DDBDABF0C0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:27,43> (56 instructions at 000001DDBDABF140)
+1 param, 12 slots, 1 upvalue, 9 locals, 21 constants, 0 functions
+	1	[28]	LOADNIL  	1 0
+	2	[29]	NEWTABLE 	2 0 0
+	3	[29]	SETTABLE 	0 -1 2	; "m_mapChainId" -
+	4	[30]	NEWTABLE 	2 0 0
+	5	[30]	SETTABLE 	0 -2 2	; "m_mapMaxScore" -
+	6	[31]	LOADK    	2 -3	; 0
+	7	[32]	LOADK    	3 -4	; 1
+	8	[33]	GETTABUP 	4 0 -5	; _ENV "ipairs"
+	9	[33]	GETTABUP 	5 0 -6	; _ENV "ItemGeneratorFactoryType"
+	10	[33]	CALL     	4 2 4
+	11	[33]	JMP      	0 21	; to 33
+	12	[34]	GETTABUP 	9 0 -7	; _ENV "tostring"
+	13	[34]	GETTABUP 	10 0 -8	; _ENV "tonumber"
+	14	[34]	MOVE     	11 8
+	15	[34]	CALL     	10 2 2
+	16	[34]	IDIV     	10 10 -9	; - 100
+	17	[34]	CALL     	9 2 2
+	18	[34]	MOVE     	1 9
+	19	[35]	GETTABLE 	9 0 -1	; "m_mapChainId"
+	20	[35]	SETTABLE 	9 1 8
+	21	[36]	GETTABUP 	9 0 -8	; _ENV "tonumber"
+	22	[36]	MOVE     	10 8
+	23	[36]	CALL     	9 2 2
+	24	[36]	MOD      	3 9 -9	; - 100
+	25	[37]	SUB      	9 3 -4	; - 1
+	26	[37]	POW      	2 -10 9	; 2 -
+	27	[38]	GETTABLE 	9 0 -2	; "m_mapMaxScore"
+	28	[38]	GETTABUP 	10 0 -11	; _ENV "math"
+	29	[38]	GETTABLE 	10 10 -12	; "floor"
+	30	[38]	MOVE     	11 2
+	31	[38]	CALL     	10 2 2
+	32	[38]	SETTABLE 	9 8 10
+	33	[33]	TFORCALL 	4 2
+	34	[33]	TFORLOOP 	6 -23	; to 12
+	35	[40]	GETTABUP 	4 0 -13	; _ENV "EventDispatcher"
+	36	[40]	GETTABLE 	4 4 -14	; "AddListener"
+	37	[40]	GETTABUP 	5 0 -15	; _ENV "EEventType"
+	38	[40]	GETTABLE 	5 5 -16	; "LoginFinished"
+	39	[40]	MOVE     	6 0
+	40	[40]	GETTABLE 	7 0 -17	; "_OnLoginFinished"
+	41	[40]	CALL     	4 4 1
+	42	[41]	GETTABUP 	4 0 -13	; _ENV "EventDispatcher"
+	43	[41]	GETTABLE 	4 4 -14	; "AddListener"
+	44	[41]	GETTABUP 	5 0 -15	; _ENV "EEventType"
+	45	[41]	GETTABLE 	5 5 -18	; "ItemMerged"
+	46	[41]	MOVE     	6 0
+	47	[41]	GETTABLE 	7 0 -19	; "_OnItemMerged"
+	48	[41]	CALL     	4 4 1
+	49	[42]	GETTABUP 	4 0 -13	; _ENV "EventDispatcher"
+	50	[42]	GETTABLE 	4 4 -14	; "AddListener"
+	51	[42]	GETTABUP 	5 0 -15	; _ENV "EEventType"
+	52	[42]	GETTABLE 	5 5 -20	; "GameModeChangeFinished"
+	53	[42]	MOVE     	6 0
+	54	[42]	GETTABLE 	7 0 -21	; "_OnGameModeChangeFinished"
+	55	[42]	CALL     	4 4 1
+	56	[43]	RETURN   	0 1
+constants (21) for 000001DDBDABF140:
+	1	"m_mapChainId"
+	2	"m_mapMaxScore"
+	3	0
+	4	1
+	5	"ipairs"
+	6	"ItemGeneratorFactoryType"
+	7	"tostring"
+	8	"tonumber"
+	9	100
+	10	2
+	11	"math"
+	12	"floor"
+	13	"EventDispatcher"
+	14	"AddListener"
+	15	"EEventType"
+	16	"LoginFinished"
+	17	"_OnLoginFinished"
+	18	"ItemMerged"
+	19	"_OnItemMerged"
+	20	"GameModeChangeFinished"
+	21	"_OnGameModeChangeFinished"
+locals (9) for 000001DDBDABF140:
+	0	self	1	57
+	1	chainId	2	57
+	2	maxScore	7	57
+	3	n	8	57
+	4	(for generator)	11	35
+	5	(for state)	11	35
+	6	(for control)	11	35
+	7	_	12	33
+	8	type	12	33
+upvalues (1) for 000001DDBDABF140:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:45,49> (11 instructions at 000001DDBDAC3540)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[46]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[46]	GETTABLE 	1 1 -2	; "SceneManager"
+	3	[46]	SELF     	1 1 -3	; "GetGameMode"
+	4	[46]	CALL     	1 2 2
+	5	[46]	GETTABUP 	2 0 -4	; _ENV "EGameMode"
+	6	[46]	GETTABLE 	2 2 -5	; "Main"
+	7	[46]	EQ       	0 1 2
+	8	[46]	JMP      	0 2	; to 11
+	9	[47]	SELF     	1 0 -6	; "CheckCobweb"
+	10	[47]	CALL     	1 2 1
+	11	[49]	RETURN   	0 1
+constants (6) for 000001DDBDAC3540:
+	1	"GM"
+	2	"SceneManager"
+	3	"GetGameMode"
+	4	"EGameMode"
+	5	"Main"
+	6	"CheckCobweb"
+locals (1) for 000001DDBDAC3540:
+	0	self	1	12
+upvalues (1) for 000001DDBDAC3540:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:51,68> (32 instructions at 000001DDBDAC3630)
+1 param, 10 slots, 1 upvalue, 7 locals, 14 constants, 0 functions
+	1	[53]	SELF     	1 0 -1	; "_UpdateUnLockState"
+	2	[53]	CALL     	1 2 1
+	3	[55]	SELF     	1 0 -3	; "GetData"
+	4	[55]	CALL     	1 2 2
+	5	[55]	SETTABLE 	0 -2 1	; "m_data" -
+	6	[56]	GETTABLE 	1 0 -2	; "m_data"
+	7	[56]	GETTABLE 	1 1 -4	; "genData"
+	8	[57]	GETTABUP 	2 0 -5	; _ENV "Table"
+	9	[57]	GETTABLE 	2 2 -6	; "IsEmpty"
+	10	[57]	MOVE     	3 1
+	11	[57]	CALL     	2 2 2
+	12	[57]	TEST     	2 1
+	13	[57]	JMP      	0 9	; to 23
+	14	[59]	GETTABUP 	2 0 -7	; _ENV "pairs"
+	15	[59]	MOVE     	3 1
+	16	[59]	CALL     	2 2 4
+	17	[59]	JMP      	0 3	; to 21
+	18	[60]	SELF     	7 0 -8	; "TryReward"
+	19	[60]	MOVE     	9 5
+	20	[60]	CALL     	7 3 1
+	21	[59]	TFORCALL 	2 2
+	22	[59]	TFORLOOP 	4 -5	; to 18
+	23	[64]	SELF     	2 0 -9	; "_TryReturnItem"
+	24	[64]	CALL     	2 2 1
+	25	[65]	SELF     	2 0 -11	; "IsOpen"
+	26	[65]	CALL     	2 2 2
+	27	[65]	SETTABLE 	0 -10 2	; "m_bOpen" -
+	28	[66]	SELF     	2 0 -12	; "_LogStart"
+	29	[66]	GETTABLE 	4 0 -10	; "m_bOpen"
+	30	[66]	CALL     	2 3 1
+	31	[67]	SETTABLE 	0 -13 -14	; "m_bLateInit" true
+	32	[68]	RETURN   	0 1
+constants (14) for 000001DDBDAC3630:
+	1	"_UpdateUnLockState"
+	2	"m_data"
+	3	"GetData"
+	4	"genData"
+	5	"Table"
+	6	"IsEmpty"
+	7	"pairs"
+	8	"TryReward"
+	9	"_TryReturnItem"
+	10	"m_bOpen"
+	11	"IsOpen"
+	12	"_LogStart"
+	13	"m_bLateInit"
+	14	true
+locals (7) for 000001DDBDAC3630:
+	0	self	1	33
+	1	genData	8	33
+	2	(for generator)	17	23
+	3	(for state)	17	23
+	4	(for control)	17	23
+	5	genType	18	21
+	6	_	18	21
+upvalues (1) for 000001DDBDAC3630:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:70,72> (2 instructions at 000001DDBDAC3940)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[71]	SETTABLE 	0 -1 -2	; "m_bSceneViewLoaded" true
+	2	[72]	RETURN   	0 1
+constants (2) for 000001DDBDAC3940:
+	1	"m_bSceneViewLoaded"
+	2	true
+locals (1) for 000001DDBDAC3940:
+	0	self	1	3
+upvalues (0) for 000001DDBDAC3940:
+
+function <ItemGeneratorFactoryModel.lua:75,83> (12 instructions at 000001DDBDAC39C0)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[76]	GETTABLE 	1 0 -1	; "m_bLateInit"
+	2	[76]	TEST     	1 0
+	3	[76]	JMP      	0 3	; to 7
+	4	[76]	GETTABLE 	1 0 -2	; "m_bSceneViewLoaded"
+	5	[76]	TEST     	1 1
+	6	[76]	JMP      	0 1	; to 8
+	7	[77]	RETURN   	0 1
+	8	[80]	SELF     	1 0 -3	; "_UpdateOpenState"
+	9	[80]	CALL     	1 2 1
+	10	[82]	SELF     	1 0 -4	; "_TryReturnItem"
+	11	[82]	CALL     	1 2 1
+	12	[83]	RETURN   	0 1
+constants (4) for 000001DDBDAC39C0:
+	1	"m_bLateInit"
+	2	"m_bSceneViewLoaded"
+	3	"_UpdateOpenState"
+	4	"_TryReturnItem"
+locals (1) for 000001DDBDAC39C0:
+	0	self	1	13
+upvalues (0) for 000001DDBDAC39C0:
+
+function <ItemGeneratorFactoryModel.lua:86,101> (27 instructions at 000001DDBDAC3A40)
+2 params, 7 slots, 1 upvalue, 4 locals, 12 constants, 0 functions
+	1	[87]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[87]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[87]	SELF     	2 2 -3	; "IsServerControlOpen"
+	4	[87]	GETTABUP 	4 0 -4	; _ENV "EGeneralConfType"
+	5	[87]	GETTABLE 	4 4 -5	; "GeneratorFactory"
+	6	[87]	CALL     	2 3 2
+	7	[87]	TEST     	2 1
+	8	[87]	JMP      	0 2	; to 11
+	9	[88]	LOADBOOL 	2 0 0
+	10	[88]	RETURN   	2 2
+	11	[91]	GETTABLE 	2 0 -6	; "m_isAllUnlock"
+	12	[91]	TEST     	2 0
+	13	[91]	JMP      	0 1	; to 15
+	14	[92]	RETURN   	0 1
+	15	[95]	GETTABLE 	2 1 -7	; "New"
+	16	[96]	SELF     	3 2 -8	; "GetType"
+	17	[96]	CALL     	3 2 2
+	18	[97]	GETTABUP 	4 0 -9	; _ENV "Table"
+	19	[97]	GETTABLE 	4 4 -10	; "Contain"
+	20	[97]	GETTABUP 	5 0 -11	; _ENV "ItemGeneratorFactoryType"
+	21	[97]	MOVE     	6 3
+	22	[97]	CALL     	4 3 2
+	23	[97]	TEST     	4 0
+	24	[97]	JMP      	0 2	; to 27
+	25	[98]	SELF     	4 0 -12	; "_UpdateOpenState"
+	26	[98]	CALL     	4 2 1
+	27	[101]	RETURN   	0 1
+constants (12) for 000001DDBDAC3A40:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"GeneratorFactory"
+	6	"m_isAllUnlock"
+	7	"New"
+	8	"GetType"
+	9	"Table"
+	10	"Contain"
+	11	"ItemGeneratorFactoryType"
+	12	"_UpdateOpenState"
+locals (4) for 000001DDBDAC3A40:
+	0	self	1	28
+	1	msg	1	28
+	2	item	16	28
+	3	itemType	18	28
+upvalues (1) for 000001DDBDAC3A40:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:103,115> (27 instructions at 000001DDBDABE700)
+2 params, 7 slots, 1 upvalue, 4 locals, 10 constants, 0 functions
+	1	[104]	GETTABLE 	2 0 -1	; "m_data"
+	2	[104]	GETTABLE 	2 2 -2	; "state"
+	3	[104]	TEST     	2 1
+	4	[104]	JMP      	0 1	; to 6
+	5	[104]	LOADK    	2 -3	; 0
+	6	[105]	TEST     	1 0
+	7	[105]	JMP      	0 3	; to 11
+	8	[105]	LOADK    	3 -4	; 1
+	9	[105]	TEST     	3 1
+	10	[105]	JMP      	0 1	; to 12
+	11	[105]	LOADK    	3 -3	; 0
+	12	[106]	EQ       	0 2 3
+	13	[106]	JMP      	0 1	; to 15
+	14	[107]	RETURN   	0 1
+	15	[110]	GETTABLE 	4 0 -1	; "m_data"
+	16	[110]	SETTABLE 	4 -2 3	; "state" -
+	17	[111]	TEST     	1 0
+	18	[111]	JMP      	0 6	; to 25
+	19	[112]	GETTABUP 	4 0 -5	; _ENV "GM"
+	20	[112]	GETTABLE 	4 4 -6	; "BIManager"
+	21	[112]	SELF     	4 4 -7	; "LogAction"
+	22	[112]	GETTABUP 	6 0 -8	; _ENV "EBIType"
+	23	[112]	GETTABLE 	6 6 -9	; "GeneratorFactoryStart"
+	24	[112]	CALL     	4 3 1
+	25	[114]	SELF     	4 0 -10	; "SaveData"
+	26	[114]	CALL     	4 2 1
+	27	[115]	RETURN   	0 1
+constants (10) for 000001DDBDABE700:
+	1	"m_data"
+	2	"state"
+	3	0
+	4	1
+	5	"GM"
+	6	"BIManager"
+	7	"LogAction"
+	8	"EBIType"
+	9	"GeneratorFactoryStart"
+	10	"SaveData"
+locals (4) for 000001DDBDABE700:
+	0	self	1	28
+	1	bOpen	1	28
+	2	recordState	6	28
+	3	curState	12	28
+upvalues (1) for 000001DDBDABE700:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:117,123> (19 instructions at 000001DDBDAC49F0)
+1 param, 7 slots, 1 upvalue, 4 locals, 11 constants, 0 functions
+	1	[118]	SELF     	1 0 -1	; "CanMerge"
+	2	[118]	CALL     	1 2 2
+	3	[118]	TEST     	1 0
+	4	[118]	JMP      	0 1	; to 6
+	5	[118]	GETTABLE 	1 0 -2	; "m_bOpen"
+	6	[120]	GETTABUP 	2 0 -3	; _ENV "GM"
+	7	[120]	GETTABLE 	2 2 -4	; "UIManager"
+	8	[120]	SELF     	2 2 -5	; "GetOpenedTopViewByType"
+	9	[120]	GETTABUP 	4 0 -6	; _ENV "EViewType"
+	10	[120]	GETTABLE 	4 4 -7	; "SceneView"
+	11	[120]	CALL     	2 3 2
+	12	[121]	SELF     	3 2 -8	; "GetHudButton"
+	13	[121]	GETTABUP 	5 0 -9	; _ENV "ESceneViewHudButtonKey"
+	14	[121]	GETTABLE 	5 5 -10	; "Inventory"
+	15	[121]	CALL     	3 3 2
+	16	[122]	SELF     	4 3 -11	; "UpdateRedPoint"
+	17	[122]	MOVE     	6 1
+	18	[122]	CALL     	4 3 1
+	19	[123]	RETURN   	0 1
+constants (11) for 000001DDBDAC49F0:
+	1	"CanMerge"
+	2	"m_bOpen"
+	3	"GM"
+	4	"UIManager"
+	5	"GetOpenedTopViewByType"
+	6	"EViewType"
+	7	"SceneView"
+	8	"GetHudButton"
+	9	"ESceneViewHudButtonKey"
+	10	"Inventory"
+	11	"UpdateRedPoint"
+locals (4) for 000001DDBDAC49F0:
+	0	self	1	20
+	1	bRedTip	6	20
+	2	sceneView	12	20
+	3	inventoryBtn	16	20
+upvalues (1) for 000001DDBDAC49F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:126,136> (15 instructions at 000001DDBDAC48F0)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[128]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[128]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[128]	SELF     	1 1 -3	; "IsServerControlOpen"
+	4	[128]	GETTABUP 	3 0 -4	; _ENV "EGeneralConfType"
+	5	[128]	GETTABLE 	3 3 -5	; "GeneratorFactory"
+	6	[128]	CALL     	1 3 2
+	7	[128]	TEST     	1 1
+	8	[128]	JMP      	0 2	; to 11
+	9	[129]	LOADBOOL 	1 0 0
+	10	[129]	RETURN   	1 2
+	11	[132]	SELF     	1 0 -6	; "_UpdateUnLockState"
+	12	[132]	CALL     	1 2 1
+	13	[135]	GETTABLE 	1 0 -7	; "m_isAllUnlock"
+	14	[135]	RETURN   	1 2
+	15	[136]	RETURN   	0 1
+constants (7) for 000001DDBDAC48F0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"GeneratorFactory"
+	6	"_UpdateUnLockState"
+	7	"m_isAllUnlock"
+locals (1) for 000001DDBDAC48F0:
+	0	self	1	16
+upvalues (1) for 000001DDBDAC48F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:138,191> (140 instructions at 000001DDBDAC45F0)
+1 param, 19 slots, 1 upvalue, 14 locals, 43 constants, 0 functions
+	1	[140]	SELF     	1 0 -1	; "IsOpen"
+	2	[140]	CALL     	1 2 2
+	3	[140]	TEST     	1 1
+	4	[140]	JMP      	0 1	; to 6
+	5	[141]	RETURN   	0 1
+	6	[144]	GETTABUP 	1 0 -2	; _ENV "GM"
+	7	[144]	GETTABLE 	1 1 -3	; "MainBoardModel"
+	8	[145]	EQ       	1 1 -4	; - nil
+	9	[145]	JMP      	0 5	; to 15
+	10	[145]	GETTABUP 	2 0 -5	; _ENV "MainBoardView"
+	11	[145]	GETTABLE 	2 2 -6	; "GetInstance"
+	12	[145]	CALL     	2 1 2
+	13	[145]	EQ       	0 2 -4	; - nil
+	14	[145]	JMP      	0 1	; to 16
+	15	[146]	RETURN   	0 1
+	16	[149]	GETTABLE 	2 0 -7	; "m_data"
+	17	[149]	GETTABLE 	2 2 -8	; "CheckCobweb"
+	18	[149]	EQ       	0 2 -4	; - nil
+	19	[149]	JMP      	0 4	; to 24
+	20	[150]	GETTABLE 	2 0 -7	; "m_data"
+	21	[150]	SETTABLE 	2 -8 -9	; "CheckCobweb" true
+	22	[151]	SELF     	2 0 -10	; "SaveData"
+	23	[151]	CALL     	2 2 1
+	24	[154]	LOADBOOL 	2 0 0
+	25	[156]	SELF     	3 1 -11	; "GetValidPositionIterator"
+	26	[156]	CALL     	3 2 4
+	27	[156]	JMP      	0 104	; to 132
+	28	[157]	SELF     	7 1 -12	; "GetItem"
+	29	[157]	MOVE     	9 6
+	30	[157]	CALL     	7 3 2
+	31	[158]	EQ       	1 7 -4	; - nil
+	32	[158]	JMP      	0 99	; to 132
+	33	[159]	SELF     	8 7 -13	; "GetComponent"
+	34	[159]	GETTABUP 	10 0 -14	; _ENV "ItemCobweb"
+	35	[159]	CALL     	8 3 2
+	36	[160]	EQ       	1 8 -4	; - nil
+	37	[160]	JMP      	0 29	; to 67
+	38	[161]	SELF     	9 8 -15	; "GetInnerItemCode"
+	39	[161]	CALL     	9 2 2
+	40	[162]	SELF     	10 1 -16	; "IsGeneratorFactoryItem"
+	41	[162]	MOVE     	12 9
+	42	[162]	CALL     	10 3 2
+	43	[162]	TEST     	10 0
+	44	[162]	JMP      	0 87	; to 132
+	45	[163]	LOADBOOL 	2 1 0
+	46	[164]	SELF     	10 1 -17	; "ReplaceItem"
+	47	[164]	MOVE     	12 7
+	48	[164]	MOVE     	13 9
+	49	[164]	LOADBOOL 	14 0 0
+	50	[164]	CALL     	10 5 2
+	51	[165]	GETTABLE 	11 1 -18	; "event"
+	52	[165]	SELF     	11 11 -19	; "Call"
+	53	[165]	GETTABUP 	13 0 -20	; _ENV "BoardEventType"
+	54	[165]	GETTABLE 	13 13 -17	; "ReplaceItem"
+	55	[165]	NEWTABLE 	14 0 2
+	56	[165]	SETTABLE 	14 -21 7	; "oldItem" -
+	57	[165]	SETTABLE 	14 -22 10	; "newItem" -
+	58	[165]	CALL     	11 4 1
+	59	[166]	GETTABUP 	11 0 -2	; _ENV "GM"
+	60	[166]	GETTABLE 	11 11 -23	; "BIManager"
+	61	[166]	SELF     	11 11 -24	; "LogAction"
+	62	[166]	GETTABUP 	13 0 -25	; _ENV "EBIType"
+	63	[166]	GETTABLE 	13 13 -26	; "GeneratorFactoryCobwebChange"
+	64	[166]	MOVE     	14 9
+	65	[166]	CALL     	11 4 1
+	66	[167]	JMP      	0 65	; to 132
+	67	[168]	SELF     	9 7 -13	; "GetComponent"
+	68	[168]	GETTABUP 	11 0 -27	; _ENV "ItemPaperBox"
+	69	[168]	CALL     	9 3 2
+	70	[168]	TEST     	9 0
+	71	[168]	JMP      	0 60	; to 132
+	72	[169]	SELF     	9 7 -13	; "GetComponent"
+	73	[169]	GETTABUP 	11 0 -27	; _ENV "ItemPaperBox"
+	74	[169]	CALL     	9 3 2
+	75	[169]	SELF     	9 9 -15	; "GetInnerItemCode"
+	76	[169]	CALL     	9 2 2
+	77	[171]	SELF     	10 9 -28	; "match"
+	78	[171]	LOADK    	12 -29	; ".*#(.*)"
+	79	[171]	CALL     	10 3 2
+	80	[171]	TESTSET  	9 10 1
+	81	[171]	JMP      	0 0	; to 82
+	82	[172]	SELF     	10 1 -16	; "IsGeneratorFactoryItem"
+	83	[172]	MOVE     	12 9
+	84	[172]	CALL     	10 3 2
+	85	[172]	TEST     	10 0
+	86	[172]	JMP      	0 45	; to 132
+	87	[173]	LOADBOOL 	2 1 0
+	88	[174]	SELF     	10 1 -17	; "ReplaceItem"
+	89	[174]	MOVE     	12 7
+	90	[174]	MOVE     	13 9
+	91	[174]	LOADBOOL 	14 0 0
+	92	[174]	CALL     	10 5 2
+	93	[175]	GETTABLE 	11 1 -18	; "event"
+	94	[175]	SELF     	11 11 -19	; "Call"
+	95	[175]	GETTABUP 	13 0 -20	; _ENV "BoardEventType"
+	96	[175]	GETTABLE 	13 13 -17	; "ReplaceItem"
+	97	[175]	NEWTABLE 	14 0 2
+	98	[175]	SETTABLE 	14 -21 7	; "oldItem" -
+	99	[175]	SETTABLE 	14 -22 10	; "newItem" -
+	100	[175]	CALL     	11 4 1
+	101	[176]	SELF     	11 1 -30	; "GetPaperBoxExtraReward"
+	102	[176]	MOVE     	13 6
+	103	[176]	CALL     	11 3 2
+	104	[177]	GETTABUP 	12 0 -31	; _ENV "Table"
+	105	[177]	GETTABLE 	12 12 -32	; "IsEmpty"
+	106	[177]	MOVE     	13 11
+	107	[177]	CALL     	12 2 2
+	108	[177]	TEST     	12 1
+	109	[177]	JMP      	0 15	; to 125
+	110	[178]	GETTABUP 	12 0 -33	; _ENV "RewardApi"
+	111	[178]	GETTABLE 	12 12 -34	; "AcquireRewards"
+	112	[178]	NEWTABLE 	13 1 0
+	113	[178]	MOVE     	14 11
+	114	[178]	SETLIST  	13 1 1	; 1
+	115	[178]	GETTABUP 	14 0 -35	; _ENV "EPropertySource"
+	116	[178]	GETTABLE 	14 14 -36	; "Give"
+	117	[178]	GETTABUP 	15 0 -25	; _ENV "EBIType"
+	118	[178]	GETTABLE 	15 15 -37	; "GeneratorFactoryCobwebChangeReward"
+	119	[178]	LOADNIL  	16 0
+	120	[178]	GETTABUP 	17 0 -38	; _ENV "EGameMode"
+	121	[178]	GETTABLE 	17 17 -39	; "Main"
+	122	[178]	GETTABUP 	18 0 -40	; _ENV "CacheItemType"
+	123	[178]	GETTABLE 	18 18 -41	; "Type2"
+	124	[178]	CALL     	12 7 1
+	125	[180]	GETTABUP 	12 0 -2	; _ENV "GM"
+	126	[180]	GETTABLE 	12 12 -23	; "BIManager"
+	127	[180]	SELF     	12 12 -24	; "LogAction"
+	128	[180]	GETTABUP 	14 0 -25	; _ENV "EBIType"
+	129	[180]	GETTABLE 	14 14 -26	; "GeneratorFactoryCobwebChange"
+	130	[180]	MOVE     	15 9
+	131	[180]	CALL     	12 4 1
+	132	[156]	TFORCALL 	3 1
+	133	[156]	TFORLOOP 	5 -106	; to 28
+	134	[186]	TEST     	2 0
+	135	[186]	JMP      	0 4	; to 140
+	136	[187]	SELF     	3 1 -42	; "CountItemsCode"
+	137	[187]	CALL     	3 2 1
+	138	[188]	SELF     	3 1 -43	; "UpdateOrderState"
+	139	[188]	CALL     	3 2 1
+	140	[191]	RETURN   	0 1
+constants (43) for 000001DDBDAC45F0:
+	1	"IsOpen"
+	2	"GM"
+	3	"MainBoardModel"
+	4	nil
+	5	"MainBoardView"
+	6	"GetInstance"
+	7	"m_data"
+	8	"CheckCobweb"
+	9	true
+	10	"SaveData"
+	11	"GetValidPositionIterator"
+	12	"GetItem"
+	13	"GetComponent"
+	14	"ItemCobweb"
+	15	"GetInnerItemCode"
+	16	"IsGeneratorFactoryItem"
+	17	"ReplaceItem"
+	18	"event"
+	19	"Call"
+	20	"BoardEventType"
+	21	"oldItem"
+	22	"newItem"
+	23	"BIManager"
+	24	"LogAction"
+	25	"EBIType"
+	26	"GeneratorFactoryCobwebChange"
+	27	"ItemPaperBox"
+	28	"match"
+	29	".*#(.*)"
+	30	"GetPaperBoxExtraReward"
+	31	"Table"
+	32	"IsEmpty"
+	33	"RewardApi"
+	34	"AcquireRewards"
+	35	"EPropertySource"
+	36	"Give"
+	37	"GeneratorFactoryCobwebChangeReward"
+	38	"EGameMode"
+	39	"Main"
+	40	"CacheItemType"
+	41	"Type2"
+	42	"CountItemsCode"
+	43	"UpdateOrderState"
+locals (14) for 000001DDBDAC45F0:
+	0	self	1	141
+	1	boardModel	8	141
+	2	anyReplaced	25	141
+	3	(for generator)	27	134
+	4	(for state)	27	134
+	5	(for control)	27	134
+	6	position	28	132
+	7	item	31	132
+	8	itemCobweb	36	132
+	9	innerCode	40	66
+	10	new	51	66
+	11	innerCode	77	132
+	12	new	93	132
+	13	reward	104	132
+upvalues (1) for 000001DDBDAC45F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:194,206> (23 instructions at 000001DDBDAC4870)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[195]	SELF     	1 0 -1	; "IsOpen"
+	2	[195]	CALL     	1 2 2
+	3	[196]	GETTABLE 	2 0 -2	; "m_bOpen"
+	4	[196]	EQ       	1 2 1
+	5	[196]	JMP      	0 14	; to 20
+	6	[197]	SETTABLE 	0 -2 1	; "m_bOpen" -
+	7	[198]	GETTABLE 	2 0 -2	; "m_bOpen"
+	8	[198]	TEST     	2 0
+	9	[198]	JMP      	0 2	; to 12
+	10	[199]	SELF     	2 0 -3	; "CheckCobweb"
+	11	[199]	CALL     	2 2 1
+	12	[202]	GETTABUP 	2 0 -4	; _ENV "EventDispatcher"
+	13	[202]	GETTABLE 	2 2 -5	; "DispatchEvent"
+	14	[202]	GETTABUP 	3 0 -6	; _ENV "EEventType"
+	15	[202]	GETTABLE 	3 3 -7	; "GeneratorFactoryStateChanged"
+	16	[202]	GETTABLE 	4 0 -2	; "m_bOpen"
+	17	[202]	CALL     	2 3 1
+	18	[203]	SELF     	2 0 -8	; "UpdateInventoryEntryRedTip"
+	19	[203]	CALL     	2 2 1
+	20	[205]	SELF     	2 0 -9	; "_LogStart"
+	21	[205]	MOVE     	4 1
+	22	[205]	CALL     	2 3 1
+	23	[206]	RETURN   	0 1
+constants (9) for 000001DDBDAC4870:
+	1	"IsOpen"
+	2	"m_bOpen"
+	3	"CheckCobweb"
+	4	"EventDispatcher"
+	5	"DispatchEvent"
+	6	"EEventType"
+	7	"GeneratorFactoryStateChanged"
+	8	"UpdateInventoryEntryRedTip"
+	9	"_LogStart"
+locals (2) for 000001DDBDAC4870:
+	0	self	1	24
+	1	bOpen	3	24
+upvalues (1) for 000001DDBDAC4870:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:209,218> (33 instructions at 000001DDBDAC4C70)
+2 params, 7 slots, 1 upvalue, 4 locals, 7 constants, 0 functions
+	1	[210]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[210]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[210]	SELF     	2 2 -3	; "GetChainId"
+	4	[210]	MOVE     	4 1
+	5	[210]	CALL     	2 3 2
+	6	[211]	GETTABUP 	3 0 -4	; _ENV "StringUtil"
+	7	[211]	GETTABLE 	3 3 -5	; "IsNilOrEmpty"
+	8	[211]	MOVE     	4 2
+	9	[211]	CALL     	3 2 2
+	10	[211]	TEST     	3 1
+	11	[211]	JMP      	0 19	; to 31
+	12	[212]	GETTABLE 	3 0 -6	; "m_mapChainId"
+	13	[212]	GETTABLE 	3 3 2
+	14	[213]	GETTABUP 	4 0 -4	; _ENV "StringUtil"
+	15	[213]	GETTABLE 	4 4 -5	; "IsNilOrEmpty"
+	16	[213]	MOVE     	5 3
+	17	[213]	CALL     	4 2 2
+	18	[213]	TEST     	4 1
+	19	[213]	JMP      	0 11	; to 31
+	20	[214]	GETTABUP 	4 0 -7	; _ENV "tonumber"
+	21	[214]	MOVE     	5 3
+	22	[214]	CALL     	4 2 2
+	23	[214]	GETTABUP 	5 0 -7	; _ENV "tonumber"
+	24	[214]	MOVE     	6 1
+	25	[214]	CALL     	5 2 2
+	26	[214]	LT       	1 5 4
+	27	[214]	JMP      	0 1	; to 29
+	28	[214]	LOADBOOL 	4 0 1
+	29	[214]	LOADBOOL 	4 1 0
+	30	[214]	RETURN   	4 2
+	31	[217]	LOADBOOL 	3 0 0
+	32	[217]	RETURN   	3 2
+	33	[218]	RETURN   	0 1
+constants (7) for 000001DDBDAC4C70:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"StringUtil"
+	5	"IsNilOrEmpty"
+	6	"m_mapChainId"
+	7	"tonumber"
+locals (4) for 000001DDBDAC4C70:
+	0	self	1	34
+	1	type	1	34
+	2	chainId	6	34
+	3	genType	14	31
+upvalues (1) for 000001DDBDAC4C70:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:221,240> (68 instructions at 000001DDBDAC4670)
+2 params, 9 slots, 1 upvalue, 5 locals, 17 constants, 0 functions
+	1	[222]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[222]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[222]	SELF     	2 2 -3	; "GetChainId"
+	4	[222]	MOVE     	4 1
+	5	[222]	CALL     	2 3 2
+	6	[223]	GETTABUP 	3 0 -4	; _ENV "StringUtil"
+	7	[223]	GETTABLE 	3 3 -5	; "IsNilOrEmpty"
+	8	[223]	MOVE     	4 2
+	9	[223]	CALL     	3 2 2
+	10	[223]	TEST     	3 0
+	11	[223]	JMP      	0 1	; to 13
+	12	[224]	RETURN   	0 1
+	13	[226]	GETTABLE 	3 0 -6	; "m_mapChainId"
+	14	[226]	GETTABLE 	3 3 2
+	15	[227]	GETTABUP 	4 0 -4	; _ENV "StringUtil"
+	16	[227]	GETTABLE 	4 4 -5	; "IsNilOrEmpty"
+	17	[227]	MOVE     	5 3
+	18	[227]	CALL     	4 2 2
+	19	[227]	TEST     	4 0
+	20	[227]	JMP      	0 1	; to 22
+	21	[228]	RETURN   	0 1
+	22	[230]	GETTABLE 	4 0 -7	; "m_data"
+	23	[230]	GETTABLE 	4 4 -8	; "genData"
+	24	[230]	TEST     	4 1
+	25	[230]	JMP      	0 1	; to 27
+	26	[230]	NEWTABLE 	4 0 0
+	27	[232]	GETTABLE 	5 4 3
+	28	[232]	TEST     	5 1
+	29	[232]	JMP      	0 1	; to 31
+	30	[232]	NEWTABLE 	5 0 0
+	31	[232]	SETTABLE 	4 3 5
+	32	[233]	GETTABLE 	5 4 3
+	33	[233]	GETTABLE 	6 4 3
+	34	[233]	GETTABLE 	6 6 -9	; "items"
+	35	[233]	TEST     	6 1
+	36	[233]	JMP      	0 1	; to 38
+	37	[233]	NEWTABLE 	6 0 0
+	38	[233]	SETTABLE 	5 -9 6	; "items" -
+	39	[234]	GETTABLE 	5 4 3
+	40	[234]	GETTABLE 	5 5 -9	; "items"
+	41	[234]	GETTABLE 	6 4 3
+	42	[234]	GETTABLE 	6 6 -9	; "items"
+	43	[234]	GETTABLE 	6 6 1
+	44	[234]	TEST     	6 1
+	45	[234]	JMP      	0 1	; to 47
+	46	[234]	LOADK    	6 -10	; 0
+	47	[234]	SETTABLE 	5 1 6
+	48	[235]	GETTABLE 	5 4 3
+	49	[235]	GETTABLE 	5 5 -9	; "items"
+	50	[235]	GETTABLE 	6 4 3
+	51	[235]	GETTABLE 	6 6 -9	; "items"
+	52	[235]	GETTABLE 	6 6 1
+	53	[235]	ADD      	6 6 -11	; - 1
+	54	[235]	SETTABLE 	5 1 6
+	55	[236]	GETTABLE 	5 0 -7	; "m_data"
+	56	[236]	SETTABLE 	5 -8 4	; "genData" -
+	57	[237]	SELF     	5 0 -12	; "SaveData"
+	58	[237]	CALL     	5 2 1
+	59	[238]	SELF     	5 0 -13	; "UpdateInventoryEntryRedTip"
+	60	[238]	CALL     	5 2 1
+	61	[239]	GETTABUP 	5 0 -1	; _ENV "GM"
+	62	[239]	GETTABLE 	5 5 -14	; "BIManager"
+	63	[239]	SELF     	5 5 -15	; "LogAction"
+	64	[239]	GETTABUP 	7 0 -16	; _ENV "EBIType"
+	65	[239]	GETTABLE 	7 7 -17	; "GeneratorFactoryCollect"
+	66	[239]	MOVE     	8 1
+	67	[239]	CALL     	5 4 1
+	68	[240]	RETURN   	0 1
+constants (17) for 000001DDBDAC4670:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"StringUtil"
+	5	"IsNilOrEmpty"
+	6	"m_mapChainId"
+	7	"m_data"
+	8	"genData"
+	9	"items"
+	10	0
+	11	1
+	12	"SaveData"
+	13	"UpdateInventoryEntryRedTip"
+	14	"BIManager"
+	15	"LogAction"
+	16	"EBIType"
+	17	"GeneratorFactoryCollect"
+locals (5) for 000001DDBDAC4670:
+	0	self	1	69
+	1	type	1	69
+	2	chainId	6	69
+	3	genType	15	69
+	4	genData	27	69
+upvalues (1) for 000001DDBDAC4670:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:242,267> (88 instructions at 000001DDBDAC47F0)
+3 params, 15 slots, 1 upvalue, 7 locals, 24 constants, 0 functions
+	1	[243]	GETTABLE 	3 0 -1	; "m_data"
+	2	[243]	GETTABLE 	3 3 -2	; "genData"
+	3	[243]	TEST     	3 1
+	4	[243]	JMP      	0 1	; to 6
+	5	[243]	NEWTABLE 	3 0 0
+	6	[244]	GETTABLE 	4 3 1
+	7	[244]	EQ       	1 4 -3	; - nil
+	8	[244]	JMP      	0 77	; to 86
+	9	[245]	GETTABLE 	4 3 1
+	10	[245]	GETTABLE 	4 4 -4	; "items"
+	11	[245]	EQ       	1 4 -3	; - nil
+	12	[245]	JMP      	0 73	; to 86
+	13	[246]	GETTABLE 	4 3 1
+	14	[246]	GETTABLE 	4 4 -4	; "items"
+	15	[246]	GETTABLE 	4 4 2
+	16	[246]	LT       	0 -5 4	; 0 -
+	17	[246]	JMP      	0 68	; to 86
+	18	[247]	GETTABLE 	4 3 1
+	19	[247]	GETTABLE 	4 4 -4	; "items"
+	20	[247]	GETTABLE 	5 3 1
+	21	[247]	GETTABLE 	5 5 -4	; "items"
+	22	[247]	GETTABLE 	5 5 2
+	23	[247]	SUB      	5 5 -6	; - 1
+	24	[247]	SETTABLE 	4 2 5
+	25	[248]	GETTABUP 	4 0 -7	; _ENV "tonumber"
+	26	[248]	MOVE     	5 2
+	27	[248]	CALL     	4 2 2
+	28	[248]	MOD      	4 4 -8	; - 100
+	29	[249]	SUB      	5 4 -6	; - 1
+	30	[249]	POW      	5 -9 5	; 2 -
+	31	[251]	GETTABLE 	6 3 1
+	32	[251]	TEST     	6 1
+	33	[251]	JMP      	0 1	; to 35
+	34	[251]	NEWTABLE 	6 0 0
+	35	[251]	SETTABLE 	3 1 6
+	36	[252]	GETTABLE 	6 3 1
+	37	[252]	GETTABLE 	7 3 1
+	38	[252]	GETTABLE 	7 7 -10	; "score"
+	39	[252]	TEST     	7 1
+	40	[252]	JMP      	0 1	; to 42
+	41	[252]	LOADK    	7 -5	; 0
+	42	[252]	SETTABLE 	6 -10 7	; "score" -
+	43	[253]	GETTABLE 	6 3 1
+	44	[253]	GETTABLE 	7 3 1
+	45	[253]	GETTABLE 	7 7 -10	; "score"
+	46	[253]	ADD      	7 7 5
+	47	[253]	SETTABLE 	6 -10 7	; "score" -
+	48	[254]	GETTABLE 	6 0 -1	; "m_data"
+	49	[254]	SETTABLE 	6 -2 3	; "genData" -
+	50	[255]	SELF     	6 0 -11	; "SaveData"
+	51	[255]	CALL     	6 2 1
+	52	[256]	GETTABLE 	6 0 -12	; "m_mapMaxScore"
+	53	[256]	GETTABLE 	6 6 1
+	54	[258]	GETTABUP 	7 0 -13	; _ENV "GM"
+	55	[258]	GETTABLE 	7 7 -14	; "BIManager"
+	56	[258]	SELF     	7 7 -15	; "LogAction"
+	57	[258]	GETTABUP 	9 0 -16	; _ENV "EBIType"
+	58	[258]	GETTABLE 	9 9 -17	; "GeneratorFactoryAddScore"
+	59	[258]	NEWTABLE 	10 0 4
+	60	[259]	SETTABLE 	10 -18 1	; "targetType" -
+	61	[260]	SETTABLE 	10 -19 2	; "itemType" -
+	62	[261]	GETTABUP 	11 0 -21	; _ENV "string"
+	63	[261]	GETTABLE 	11 11 -22	; "format"
+	64	[261]	LOADK    	12 -23	; "%d/%d"
+	65	[261]	GETTABLE 	13 3 1
+	66	[261]	GETTABLE 	13 13 -10	; "score"
+	67	[261]	MOVE     	14 6
+	68	[261]	CALL     	11 4 2
+	69	[261]	SETTABLE 	10 -20 11	; "progress" -
+	70	[262]	GETTABLE 	11 3 1
+	71	[262]	GETTABLE 	11 11 -10	; "score"
+	72	[262]	LE       	1 6 11
+	73	[262]	JMP      	0 1	; to 75
+	74	[262]	LOADBOOL 	11 0 1
+	75	[262]	LOADBOOL 	11 1 0
+	76	[262]	SETTABLE 	10 -24 11	; "isComplete" -
+	77	[258]	CALL     	7 4 1
+	78	[264]	MOVE     	7 5
+	79	[264]	GETTABLE 	8 3 1
+	80	[264]	GETTABLE 	8 8 -10	; "score"
+	81	[264]	LE       	1 6 8
+	82	[264]	JMP      	0 1	; to 84
+	83	[264]	LOADBOOL 	8 0 1
+	84	[264]	LOADBOOL 	8 1 0
+	85	[264]	RETURN   	7 3
+	86	[266]	LOADNIL  	4 0
+	87	[266]	RETURN   	4 2
+	88	[267]	RETURN   	0 1
+constants (24) for 000001DDBDAC47F0:
+	1	"m_data"
+	2	"genData"
+	3	nil
+	4	"items"
+	5	0
+	6	1
+	7	"tonumber"
+	8	100
+	9	2
+	10	"score"
+	11	"SaveData"
+	12	"m_mapMaxScore"
+	13	"GM"
+	14	"BIManager"
+	15	"LogAction"
+	16	"EBIType"
+	17	"GeneratorFactoryAddScore"
+	18	"targetType"
+	19	"itemType"
+	20	"progress"
+	21	"string"
+	22	"format"
+	23	"%d/%d"
+	24	"isComplete"
+locals (7) for 000001DDBDAC47F0:
+	0	self	1	89
+	1	genType	1	89
+	2	itemType	1	89
+	3	genData	6	89
+	4	n	29	86
+	5	score	31	86
+	6	maxScore	54	86
+upvalues (1) for 000001DDBDAC47F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:270,287> (35 instructions at 000001DDBDAC46F0)
+1 param, 11 slots, 1 upvalue, 7 locals, 6 constants, 0 functions
+	1	[271]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[271]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[271]	GETTABLE 	2 0 -3	; "m_data"
+	4	[271]	CALL     	1 2 2
+	5	[271]	TEST     	1 0
+	6	[271]	JMP      	0 2	; to 9
+	7	[272]	LOADBOOL 	1 0 0
+	8	[272]	RETURN   	1 2
+	9	[275]	GETTABLE 	1 0 -3	; "m_data"
+	10	[275]	GETTABLE 	1 1 -4	; "genData"
+	11	[276]	GETTABUP 	2 0 -1	; _ENV "Table"
+	12	[276]	GETTABLE 	2 2 -2	; "IsEmpty"
+	13	[276]	MOVE     	3 1
+	14	[276]	CALL     	2 2 2
+	15	[276]	TEST     	2 0
+	16	[276]	JMP      	0 2	; to 19
+	17	[277]	LOADBOOL 	2 0 0
+	18	[277]	RETURN   	2 2
+	19	[280]	GETTABUP 	2 0 -5	; _ENV "pairs"
+	20	[280]	MOVE     	3 1
+	21	[280]	CALL     	2 2 4
+	22	[280]	JMP      	0 8	; to 31
+	23	[281]	SELF     	7 0 -6	; "_CanMerge"
+	24	[281]	MOVE     	9 5
+	25	[281]	MOVE     	10 6
+	26	[281]	CALL     	7 4 2
+	27	[281]	TEST     	7 0
+	28	[281]	JMP      	0 2	; to 31
+	29	[282]	LOADBOOL 	7 1 0
+	30	[282]	RETURN   	7 2
+	31	[280]	TFORCALL 	2 2
+	32	[280]	TFORLOOP 	4 -10	; to 23
+	33	[286]	LOADBOOL 	2 0 0
+	34	[286]	RETURN   	2 2
+	35	[287]	RETURN   	0 1
+constants (6) for 000001DDBDAC46F0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_data"
+	4	"genData"
+	5	"pairs"
+	6	"_CanMerge"
+locals (7) for 000001DDBDAC46F0:
+	0	self	1	36
+	1	genData	11	36
+	2	(for generator)	22	33
+	3	(for state)	22	33
+	4	(for control)	22	33
+	5	genType	23	31
+	6	tbData	23	31
+upvalues (1) for 000001DDBDAC46F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:289,304> (42 instructions at 000001DDBDAC4F70)
+3 params, 12 slots, 1 upvalue, 12 locals, 11 constants, 0 functions
+	1	[290]	GETTABUP 	3 0 -1	; _ENV "Table"
+	2	[290]	GETTABLE 	3 3 -2	; "IsEmpty"
+	3	[290]	MOVE     	4 2
+	4	[290]	CALL     	3 2 2
+	5	[290]	TEST     	3 0
+	6	[290]	JMP      	0 2	; to 9
+	7	[291]	LOADBOOL 	3 0 0
+	8	[291]	RETURN   	3 2
+	9	[294]	GETTABLE 	3 2 -3	; "score"
+	10	[294]	TEST     	3 1
+	11	[294]	JMP      	0 1	; to 13
+	12	[294]	LOADK    	3 -4	; 0
+	13	[295]	LOADK    	4 -4	; 0
+	14	[296]	GETTABUP 	5 0 -1	; _ENV "Table"
+	15	[296]	GETTABLE 	5 5 -2	; "IsEmpty"
+	16	[296]	GETTABLE 	6 2 -5	; "items"
+	17	[296]	CALL     	5 2 2
+	18	[296]	TEST     	5 1
+	19	[296]	JMP      	0 14	; to 34
+	20	[297]	GETTABUP 	5 0 -6	; _ENV "pairs"
+	21	[297]	GETTABLE 	6 2 -5	; "items"
+	22	[297]	CALL     	5 2 4
+	23	[297]	JMP      	0 8	; to 32
+	24	[298]	GETTABUP 	10 0 -7	; _ENV "tonumber"
+	25	[298]	MOVE     	11 8
+	26	[298]	CALL     	10 2 2
+	27	[298]	MOD      	10 10 -8	; - 100
+	28	[299]	SUB      	11 10 -9	; - 1
+	29	[299]	POW      	11 -10 11	; 2 -
+	30	[299]	MUL      	11 11 9
+	31	[299]	ADD      	4 4 11
+	32	[297]	TFORCALL 	5 2
+	33	[297]	TFORLOOP 	7 -10	; to 24
+	34	[302]	GETTABLE 	5 0 -11	; "m_mapMaxScore"
+	35	[302]	GETTABLE 	5 5 1
+	36	[303]	ADD      	6 3 4
+	37	[303]	LE       	1 5 6
+	38	[303]	JMP      	0 1	; to 40
+	39	[303]	LOADBOOL 	6 0 1
+	40	[303]	LOADBOOL 	6 1 0
+	41	[303]	RETURN   	6 2
+	42	[304]	RETURN   	0 1
+constants (11) for 000001DDBDAC4F70:
+	1	"Table"
+	2	"IsEmpty"
+	3	"score"
+	4	0
+	5	"items"
+	6	"pairs"
+	7	"tonumber"
+	8	100
+	9	1
+	10	2
+	11	"m_mapMaxScore"
+locals (12) for 000001DDBDAC4F70:
+	0	self	1	43
+	1	genType	1	43
+	2	tbData	1	43
+	3	score	13	43
+	4	itemScore	14	43
+	5	(for generator)	23	34
+	6	(for state)	23	34
+	7	(for control)	23	34
+	8	k	24	32
+	9	ct	24	32
+	10	n	28	32
+	11	maxScore	36	43
+upvalues (1) for 000001DDBDAC4F70:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:306,319> (51 instructions at 000001DDBDAC4CF0)
+2 params, 10 slots, 1 upvalue, 4 locals, 19 constants, 0 functions
+	1	[307]	GETTABLE 	2 0 -1	; "m_data"
+	2	[307]	GETTABLE 	2 2 -2	; "genData"
+	3	[307]	TEST     	2 1
+	4	[307]	JMP      	0 1	; to 6
+	5	[307]	NEWTABLE 	2 0 0
+	6	[308]	GETTABLE 	3 2 1
+	7	[308]	EQ       	1 3 -3	; - nil
+	8	[308]	JMP      	0 40	; to 49
+	9	[309]	GETTABLE 	3 2 1
+	10	[309]	GETTABLE 	3 3 -4	; "score"
+	11	[309]	EQ       	1 3 -3	; - nil
+	12	[309]	JMP      	0 36	; to 49
+	13	[310]	GETTABLE 	3 2 1
+	14	[310]	GETTABLE 	3 3 -4	; "score"
+	15	[310]	GETTABLE 	4 0 -5	; "m_mapMaxScore"
+	16	[310]	GETTABLE 	4 4 1
+	17	[310]	LE       	0 4 3
+	18	[310]	JMP      	0 30	; to 49
+	19	[312]	GETTABLE 	3 2 1
+	20	[312]	GETTABLE 	4 2 1
+	21	[312]	GETTABLE 	4 4 -4	; "score"
+	22	[312]	GETTABLE 	5 0 -5	; "m_mapMaxScore"
+	23	[312]	GETTABLE 	5 5 1
+	24	[312]	SUB      	4 4 5
+	25	[312]	SETTABLE 	3 -4 4	; "score" -
+	26	[313]	NEWTABLE 	3 1 0
+	27	[313]	NEWTABLE 	4 0 2
+	28	[313]	GETTABUP 	5 0 -6	; _ENV "PROPERTY_TYPE"
+	29	[313]	SETTABLE 	4 5 1
+	30	[313]	GETTABUP 	5 0 -7	; _ENV "PROPERTY_COUNT"
+	31	[313]	SETTABLE 	4 5 -8	; - 1
+	32	[313]	SETLIST  	3 1 1	; 1
+	33	[314]	GETTABUP 	4 0 -9	; _ENV "RewardApi"
+	34	[314]	GETTABLE 	4 4 -10	; "AcquireRewardsLogic"
+	35	[314]	MOVE     	5 3
+	36	[314]	GETTABUP 	6 0 -11	; _ENV "EPropertySource"
+	37	[314]	GETTABLE 	6 6 -12	; "Give"
+	38	[314]	GETTABUP 	7 0 -13	; _ENV "EBIType"
+	39	[314]	GETTABLE 	7 7 -14	; "GeneratorFactoryMergeReward"
+	40	[314]	GETTABUP 	8 0 -15	; _ENV "EGameMode"
+	41	[314]	GETTABLE 	8 8 -16	; "Main"
+	42	[314]	GETTABUP 	9 0 -17	; _ENV "CacheItemType"
+	43	[314]	GETTABLE 	9 9 -18	; "Type2"
+	44	[314]	CALL     	4 6 1
+	45	[315]	SELF     	4 0 -19	; "SaveData"
+	46	[315]	CALL     	4 2 1
+	47	[316]	LOADBOOL 	4 1 0
+	48	[316]	RETURN   	4 2
+	49	[318]	LOADBOOL 	3 0 0
+	50	[318]	RETURN   	3 2
+	51	[319]	RETURN   	0 1
+constants (19) for 000001DDBDAC4CF0:
+	1	"m_data"
+	2	"genData"
+	3	nil
+	4	"score"
+	5	"m_mapMaxScore"
+	6	"PROPERTY_TYPE"
+	7	"PROPERTY_COUNT"
+	8	1
+	9	"RewardApi"
+	10	"AcquireRewardsLogic"
+	11	"EPropertySource"
+	12	"Give"
+	13	"EBIType"
+	14	"GeneratorFactoryMergeReward"
+	15	"EGameMode"
+	16	"Main"
+	17	"CacheItemType"
+	18	"Type2"
+	19	"SaveData"
+locals (4) for 000001DDBDAC4CF0:
+	0	self	1	52
+	1	genType	1	52
+	2	genData	6	52
+	3	rewards	33	49
+upvalues (1) for 000001DDBDAC4CF0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:322,346> (51 instructions at 000001DDBDAC5170)
+1 param, 17 slots, 1 upvalue, 16 locals, 16 constants, 0 functions
+	1	[323]	LOADK    	1 -1	; 1
+	2	[324]	GETTABLE 	2 0 -2	; "m_data"
+	3	[324]	GETTABLE 	2 2 -3	; "genData"
+	4	[325]	GETTABUP 	3 0 -4	; _ENV "Table"
+	5	[325]	GETTABLE 	3 3 -5	; "IsEmpty"
+	6	[325]	MOVE     	4 2
+	7	[325]	CALL     	3 2 2
+	8	[325]	TEST     	3 0
+	9	[325]	JMP      	0 1	; to 11
+	10	[326]	RETURN   	1 2
+	11	[329]	GETTABUP 	3 0 -6	; _ENV "ipairs"
+	12	[329]	GETTABUP 	4 0 -7	; _ENV "ItemGeneratorFactoryType"
+	13	[329]	CALL     	3 2 4
+	14	[329]	JMP      	0 33	; to 48
+	15	[330]	GETTABLE 	8 0 -8	; "m_mapMaxScore"
+	16	[330]	GETTABLE 	8 8 7
+	17	[331]	GETTABLE 	9 2 7
+	18	[331]	EQ       	1 9 -9	; - nil
+	19	[331]	JMP      	0 28	; to 48
+	20	[332]	GETTABLE 	9 2 7
+	21	[332]	GETTABLE 	9 9 -10	; "score"
+	22	[332]	TEST     	9 1
+	23	[332]	JMP      	0 1	; to 25
+	24	[332]	LOADK    	9 -11	; 0
+	25	[333]	GETTABLE 	10 2 7
+	26	[333]	GETTABLE 	10 10 -12	; "items"
+	27	[333]	EQ       	1 10 -9	; - nil
+	28	[333]	JMP      	0 15	; to 44
+	29	[334]	GETTABUP 	10 0 -13	; _ENV "pairs"
+	30	[334]	GETTABLE 	11 2 7
+	31	[334]	GETTABLE 	11 11 -12	; "items"
+	32	[334]	CALL     	10 2 4
+	33	[334]	JMP      	0 8	; to 42
+	34	[335]	GETTABUP 	15 0 -14	; _ENV "tonumber"
+	35	[335]	MOVE     	16 13
+	36	[335]	CALL     	15 2 2
+	37	[335]	MOD      	15 15 -15	; - 100
+	38	[336]	SUB      	16 15 -1	; - 1
+	39	[336]	POW      	16 -16 16	; 2 -
+	40	[336]	MUL      	16 16 14
+	41	[336]	ADD      	9 9 16
+	42	[334]	TFORCALL 	10 2
+	43	[334]	TFORLOOP 	12 -10	; to 34
+	44	[339]	LE       	0 8 9
+	45	[339]	JMP      	0 2	; to 48
+	46	[340]	MOVE     	1 6
+	47	[340]	JMP      	0 2	; to 50
+	48	[329]	TFORCALL 	3 2
+	49	[329]	TFORLOOP 	5 -35	; to 15
+	50	[345]	RETURN   	1 2
+	51	[346]	RETURN   	0 1
+constants (16) for 000001DDBDAC5170:
+	1	1
+	2	"m_data"
+	3	"genData"
+	4	"Table"
+	5	"IsEmpty"
+	6	"ipairs"
+	7	"ItemGeneratorFactoryType"
+	8	"m_mapMaxScore"
+	9	nil
+	10	"score"
+	11	0
+	12	"items"
+	13	"pairs"
+	14	"tonumber"
+	15	100
+	16	2
+locals (16) for 000001DDBDAC5170:
+	0	self	1	52
+	1	defaultIndex	2	52
+	2	genData	4	52
+	3	(for generator)	14	50
+	4	(for state)	14	50
+	5	(for control)	14	50
+	6	idx	15	48
+	7	genType	15	48
+	8	maxScore	17	48
+	9	score	25	48
+	10	(for generator)	33	44
+	11	(for state)	33	44
+	12	(for control)	33	44
+	13	k	34	42
+	14	ct	34	42
+	15	n	38	42
+upvalues (1) for 000001DDBDAC5170:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:348,354> (13 instructions at 000001DDBDAC51F0)
+2 params, 5 slots, 0 upvalues, 3 locals, 5 constants, 0 functions
+	1	[349]	GETTABLE 	2 0 -1	; "m_data"
+	2	[349]	GETTABLE 	2 2 -2	; "genData"
+	3	[349]	TEST     	2 1
+	4	[349]	JMP      	0 1	; to 6
+	5	[349]	NEWTABLE 	2 0 0
+	6	[350]	NEWTABLE 	3 0 2
+	7	[351]	GETTABLE 	4 0 -4	; "m_mapMaxScore"
+	8	[351]	GETTABLE 	4 4 1
+	9	[351]	SETTABLE 	3 -3 4	; "maxScore" -
+	10	[352]	GETTABLE 	4 2 1
+	11	[352]	SETTABLE 	3 -5 4	; "data" -
+	12	[353]	RETURN   	3 2
+	13	[354]	RETURN   	0 1
+constants (5) for 000001DDBDAC51F0:
+	1	"m_data"
+	2	"genData"
+	3	"maxScore"
+	4	"m_mapMaxScore"
+	5	"data"
+locals (3) for 000001DDBDAC51F0:
+	0	self	1	14
+	1	type	1	14
+	2	genData	6	14
+upvalues (0) for 000001DDBDAC51F0:
+
+function <ItemGeneratorFactoryModel.lua:356,363> (25 instructions at 000001DDBDAC44F0)
+1 param, 6 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[357]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[357]	GETTABLE 	1 1 -2	; "MiscModel"
+	3	[357]	SELF     	1 1 -3	; "GetGeneratorFactoryData"
+	4	[357]	CALL     	1 2 2
+	5	[358]	GETTABUP 	2 0 -4	; _ENV "StringUtil"
+	6	[358]	GETTABLE 	2 2 -5	; "IsNilOrEmpty"
+	7	[358]	MOVE     	3 1
+	8	[358]	CALL     	2 2 2
+	9	[358]	TEST     	2 1
+	10	[358]	JMP      	0 12	; to 23
+	11	[359]	GETTABUP 	2 0 -4	; _ENV "StringUtil"
+	12	[359]	GETTABLE 	2 2 -6	; "Replace"
+	13	[359]	MOVE     	3 1
+	14	[359]	LOADK    	4 -7	; "@"
+	15	[359]	LOADK    	5 -8	; ","
+	16	[359]	CALL     	2 4 2
+	17	[359]	MOVE     	1 2
+	18	[360]	GETTABUP 	2 0 -9	; _ENV "json"
+	19	[360]	GETTABLE 	2 2 -10	; "decode"
+	20	[360]	MOVE     	3 1
+	21	[360]	TAILCALL 	2 2 0
+	22	[360]	RETURN   	2 0
+	23	[362]	NEWTABLE 	2 0 0
+	24	[362]	RETURN   	2 2
+	25	[363]	RETURN   	0 1
+constants (10) for 000001DDBDAC44F0:
+	1	"GM"
+	2	"MiscModel"
+	3	"GetGeneratorFactoryData"
+	4	"StringUtil"
+	5	"IsNilOrEmpty"
+	6	"Replace"
+	7	"@"
+	8	","
+	9	"json"
+	10	"decode"
+locals (2) for 000001DDBDAC44F0:
+	0	self	1	26
+	1	info	5	26
+upvalues (1) for 000001DDBDAC44F0:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:365,370> (21 instructions at 000001DDBDAC4A70)
+1 param, 7 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[366]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[366]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[366]	GETTABLE 	2 0 -3	; "m_data"
+	4	[366]	CALL     	1 2 2
+	5	[366]	TEST     	1 0
+	6	[366]	JMP      	0 1	; to 8
+	7	[367]	RETURN   	0 1
+	8	[369]	GETTABUP 	1 0 -4	; _ENV "GM"
+	9	[369]	GETTABLE 	1 1 -5	; "MiscModel"
+	10	[369]	SELF     	1 1 -6	; "SetGeneratorFactoryData"
+	11	[369]	GETTABUP 	3 0 -7	; _ENV "StringUtil"
+	12	[369]	GETTABLE 	3 3 -8	; "Replace"
+	13	[369]	GETTABUP 	4 0 -9	; _ENV "json"
+	14	[369]	GETTABLE 	4 4 -10	; "encode"
+	15	[369]	GETTABLE 	5 0 -3	; "m_data"
+	16	[369]	CALL     	4 2 2
+	17	[369]	LOADK    	5 -11	; ","
+	18	[369]	LOADK    	6 -12	; "@"
+	19	[369]	CALL     	3 4 0
+	20	[369]	CALL     	1 0 1
+	21	[370]	RETURN   	0 1
+constants (12) for 000001DDBDAC4A70:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_data"
+	4	"GM"
+	5	"MiscModel"
+	6	"SetGeneratorFactoryData"
+	7	"StringUtil"
+	8	"Replace"
+	9	"json"
+	10	"encode"
+	11	","
+	12	"@"
+locals (1) for 000001DDBDAC4A70:
+	0	self	1	22
+upvalues (1) for 000001DDBDAC4A70:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:372,374> (7 instructions at 000001DDBDAC4970)
+1 param, 4 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[373]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[373]	GETTABLE 	1 1 -2	; "MiscModel"
+	3	[373]	SELF     	1 1 -3	; "Clear"
+	4	[373]	GETTABUP 	3 0 -4	; _ENV "EMiscKey"
+	5	[373]	GETTABLE 	3 3 -5	; "GeneratorFactoryData"
+	6	[373]	CALL     	1 3 1
+	7	[374]	RETURN   	0 1
+constants (5) for 000001DDBDAC4970:
+	1	"GM"
+	2	"MiscModel"
+	3	"Clear"
+	4	"EMiscKey"
+	5	"GeneratorFactoryData"
+locals (1) for 000001DDBDAC4970:
+	0	self	1	8
+upvalues (1) for 000001DDBDAC4970:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:377,420> (124 instructions at 000001DDBDAC5070)
+1 param, 22 slots, 1 upvalue, 21 locals, 35 constants, 0 functions
+	1	[378]	SELF     	1 0 -1	; "IsOpen"
+	2	[378]	CALL     	1 2 2
+	3	[378]	TEST     	1 1
+	4	[378]	JMP      	0 6	; to 11
+	5	[378]	GETTABUP 	1 0 -2	; _ENV "Table"
+	6	[378]	GETTABLE 	1 1 -3	; "IsEmpty"
+	7	[378]	GETTABLE 	2 0 -4	; "m_data"
+	8	[378]	CALL     	1 2 2
+	9	[378]	TEST     	1 0
+	10	[378]	JMP      	0 1	; to 12
+	11	[379]	RETURN   	0 1
+	12	[382]	GETTABLE 	1 0 -4	; "m_data"
+	13	[382]	GETTABLE 	1 1 -5	; "genData"
+	14	[383]	GETTABUP 	2 0 -2	; _ENV "Table"
+	15	[383]	GETTABLE 	2 2 -3	; "IsEmpty"
+	16	[383]	MOVE     	3 1
+	17	[383]	CALL     	2 2 2
+	18	[383]	TEST     	2 0
+	19	[383]	JMP      	0 1	; to 21
+	20	[384]	RETURN   	0 1
+	21	[387]	NEWTABLE 	2 0 0
+	22	[389]	GETTABUP 	3 0 -6	; _ENV "pairs"
+	23	[389]	MOVE     	4 1
+	24	[389]	CALL     	3 2 4
+	25	[389]	JMP      	0 76	; to 102
+	26	[390]	GETTABUP 	8 0 -2	; _ENV "Table"
+	27	[390]	GETTABLE 	8 8 -3	; "IsEmpty"
+	28	[390]	GETTABLE 	9 7 -7	; "items"
+	29	[390]	CALL     	8 2 2
+	30	[390]	TEST     	8 1
+	31	[390]	JMP      	0 15	; to 47
+	32	[391]	GETTABUP 	8 0 -6	; _ENV "pairs"
+	33	[391]	GETTABLE 	9 7 -7	; "items"
+	34	[391]	CALL     	8 2 4
+	35	[391]	JMP      	0 9	; to 45
+	36	[392]	GETTABUP 	13 0 -8	; _ENV "table"
+	37	[392]	GETTABLE 	13 13 -9	; "insert"
+	38	[392]	MOVE     	14 2
+	39	[392]	NEWTABLE 	15 0 2
+	40	[392]	GETTABUP 	16 0 -10	; _ENV "PROPERTY_TYPE"
+	41	[392]	SETTABLE 	15 16 11
+	42	[392]	GETTABUP 	16 0 -11	; _ENV "PROPERTY_COUNT"
+	43	[392]	SETTABLE 	15 16 12
+	44	[392]	CALL     	13 3 1
+	45	[391]	TFORCALL 	8 2
+	46	[391]	TFORLOOP 	10 -11	; to 36
+	47	[395]	GETTABLE 	8 7 -12	; "score"
+	48	[395]	TEST     	8 1
+	49	[395]	JMP      	0 1	; to 51
+	50	[395]	LOADK    	8 -13	; 0
+	51	[396]	GETTABLE 	9 0 -14	; "m_mapMaxScore"
+	52	[396]	GETTABLE 	9 9 6
+	53	[396]	LE       	0 9 8
+	54	[396]	JMP      	0 17	; to 72
+	55	[397]	GETTABLE 	9 0 -14	; "m_mapMaxScore"
+	56	[397]	GETTABLE 	9 9 6
+	57	[397]	LE       	0 9 8
+	58	[397]	JMP      	0 13	; to 72
+	59	[398]	GETTABLE 	9 0 -14	; "m_mapMaxScore"
+	60	[398]	GETTABLE 	9 9 6
+	61	[398]	SUB      	8 8 9
+	62	[399]	GETTABUP 	9 0 -8	; _ENV "table"
+	63	[399]	GETTABLE 	9 9 -9	; "insert"
+	64	[399]	MOVE     	10 2
+	65	[399]	NEWTABLE 	11 0 2
+	66	[399]	GETTABUP 	12 0 -10	; _ENV "PROPERTY_TYPE"
+	67	[399]	SETTABLE 	11 12 6
+	68	[399]	GETTABUP 	12 0 -11	; _ENV "PROPERTY_COUNT"
+	69	[399]	SETTABLE 	11 12 -15	; - 1
+	70	[399]	CALL     	9 3 1
+	71	[399]	JMP      	0 -17	; to 55
+	72	[403]	LT       	0 -13 8	; 0 -
+	73	[403]	JMP      	0 28	; to 102
+	74	[404]	GETTABUP 	9 0 -16	; _ENV "tonumber"
+	75	[404]	MOVE     	10 6
+	76	[404]	CALL     	9 2 2
+	77	[405]	MOD      	10 9 -17	; - 100
+	78	[406]	SUB      	11 9 -15	; - 1
+	79	[406]	SUB      	12 9 10
+	80	[406]	ADD      	12 12 -15	; - 1
+	81	[406]	LOADK    	13 -18	; -1
+	82	[406]	FORPREP  	11 18	; to 101
+	83	[407]	MOD      	15 14 -17	; - 100
+	84	[407]	SUB      	15 15 -15	; - 1
+	85	[407]	POW      	15 -19 15	; 2 -
+	86	[408]	LE       	0 15 8
+	87	[408]	JMP      	0 13	; to 101
+	88	[409]	SUB      	8 8 15
+	89	[410]	GETTABUP 	16 0 -8	; _ENV "table"
+	90	[410]	GETTABLE 	16 16 -9	; "insert"
+	91	[410]	MOVE     	17 2
+	92	[410]	NEWTABLE 	18 0 2
+	93	[410]	GETTABUP 	19 0 -10	; _ENV "PROPERTY_TYPE"
+	94	[410]	GETTABUP 	20 0 -20	; _ENV "tostring"
+	95	[410]	MOVE     	21 14
+	96	[410]	CALL     	20 2 2
+	97	[410]	SETTABLE 	18 19 20
+	98	[410]	GETTABUP 	19 0 -11	; _ENV "PROPERTY_COUNT"
+	99	[410]	SETTABLE 	18 19 -15	; - 1
+	100	[410]	CALL     	16 3 1
+	101	[406]	FORLOOP  	11 -19	; to 83
+	102	[389]	TFORCALL 	3 2
+	103	[389]	TFORLOOP 	5 -78	; to 26
+	104	[416]	GETTABUP 	3 0 -21	; _ENV "RewardApi"
+	105	[416]	GETTABLE 	3 3 -22	; "AcquireRewardsLogic"
+	106	[416]	MOVE     	4 2
+	107	[416]	GETTABUP 	5 0 -23	; _ENV "EPropertySource"
+	108	[416]	GETTABLE 	5 5 -24	; "Give"
+	109	[416]	GETTABUP 	6 0 -25	; _ENV "EBIType"
+	110	[416]	GETTABLE 	6 6 -26	; "GeneratorFactoryReturnReward"
+	111	[416]	GETTABUP 	7 0 -27	; _ENV "EGameMode"
+	112	[416]	GETTABLE 	7 7 -28	; "Main"
+	113	[416]	GETTABUP 	8 0 -29	; _ENV "CacheItemType"
+	114	[416]	GETTABLE 	8 8 -30	; "Type2"
+	115	[416]	CALL     	3 6 1
+	116	[418]	NEWTABLE 	3 0 0
+	117	[418]	SETTABLE 	0 -4 3	; "m_data" -
+	118	[419]	GETTABUP 	3 0 -31	; _ENV "GM"
+	119	[419]	GETTABLE 	3 3 -32	; "MiscModel"
+	120	[419]	SELF     	3 3 -33	; "Clear"
+	121	[419]	GETTABUP 	5 0 -34	; _ENV "EMiscKey"
+	122	[419]	GETTABLE 	5 5 -35	; "GeneratorFactoryData"
+	123	[419]	CALL     	3 3 1
+	124	[420]	RETURN   	0 1
+constants (35) for 000001DDBDAC5070:
+	1	"IsOpen"
+	2	"Table"
+	3	"IsEmpty"
+	4	"m_data"
+	5	"genData"
+	6	"pairs"
+	7	"items"
+	8	"table"
+	9	"insert"
+	10	"PROPERTY_TYPE"
+	11	"PROPERTY_COUNT"
+	12	"score"
+	13	0
+	14	"m_mapMaxScore"
+	15	1
+	16	"tonumber"
+	17	100
+	18	-1
+	19	2
+	20	"tostring"
+	21	"RewardApi"
+	22	"AcquireRewardsLogic"
+	23	"EPropertySource"
+	24	"Give"
+	25	"EBIType"
+	26	"GeneratorFactoryReturnReward"
+	27	"EGameMode"
+	28	"Main"
+	29	"CacheItemType"
+	30	"Type2"
+	31	"GM"
+	32	"MiscModel"
+	33	"Clear"
+	34	"EMiscKey"
+	35	"GeneratorFactoryData"
+locals (21) for 000001DDBDAC5070:
+	0	self	1	125
+	1	tbGenData	14	125
+	2	rewards	22	125
+	3	(for generator)	25	104
+	4	(for state)	25	104
+	5	(for control)	25	104
+	6	genType	26	102
+	7	tbData	26	102
+	8	(for generator)	35	47
+	9	(for state)	35	47
+	10	(for control)	35	47
+	11	itemType	36	45
+	12	num	36	45
+	13	score	51	102
+	14	tmpNum	77	102
+	15	k	78	102
+	16	(for index)	82	102
+	17	(for limit)	82	102
+	18	(for step)	82	102
+	19	i	83	101
+	20	needScore	86	101
+upvalues (1) for 000001DDBDAC5070:
+	0	_ENV	0	0
+
+function <ItemGeneratorFactoryModel.lua:422,434> (22 instructions at 000001DDBDAC4AF0)
+1 param, 10 slots, 1 upvalue, 7 locals, 6 constants, 0 functions
+	1	[423]	GETTABLE 	1 0 -1	; "m_isAllUnlock"
+	2	[423]	TEST     	1 0
+	3	[423]	JMP      	0 1	; to 5
+	4	[424]	RETURN   	0 1
+	5	[426]	LOADBOOL 	1 1 0
+	6	[427]	GETTABUP 	2 0 -2	; _ENV "ipairs"
+	7	[427]	GETTABUP 	3 0 -3	; _ENV "ItemGeneratorFactoryType"
+	8	[427]	CALL     	2 2 4
+	9	[427]	JMP      	0 9	; to 19
+	10	[428]	GETTABUP 	7 0 -4	; _ENV "GM"
+	11	[428]	GETTABLE 	7 7 -5	; "ItemDataModel"
+	12	[428]	SELF     	7 7 -6	; "IsUnlocked"
+	13	[428]	MOVE     	9 6
+	14	[428]	CALL     	7 3 2
+	15	[428]	TEST     	7 1
+	16	[428]	JMP      	0 2	; to 19
+	17	[429]	LOADBOOL 	1 0 0
+	18	[429]	JMP      	0 2	; to 21
+	19	[427]	TFORCALL 	2 2
+	20	[427]	TFORLOOP 	4 -11	; to 10
+	21	[433]	SETTABLE 	0 -1 1	; "m_isAllUnlock" -
+	22	[434]	RETURN   	0 1
+constants (6) for 000001DDBDAC4AF0:
+	1	"m_isAllUnlock"
+	2	"ipairs"
+	3	"ItemGeneratorFactoryType"
+	4	"GM"
+	5	"ItemDataModel"
+	6	"IsUnlocked"
+locals (7) for 000001DDBDAC4AF0:
+	0	self	1	23
+	1	tmpUnlock	6	23
+	2	(for generator)	9	21
+	3	(for state)	9	21
+	4	(for control)	9	21
+	5	_	10	19
+	6	type	10	19
+upvalues (1) for 000001DDBDAC4AF0:
+	0	_ENV	0	0

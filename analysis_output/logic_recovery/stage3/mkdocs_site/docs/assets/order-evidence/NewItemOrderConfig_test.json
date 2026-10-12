@@ -1,0 +1,107 @@
+[
+  {
+    "UnlockItem": "705",
+    "id": 1,
+    "Requirement1": "904",
+    "Slot": 11,
+    "SkipItem": "907"
+  },
+  {
+    "UnlockItem": "705",
+    "id": 2,
+    "Requirement1": "905",
+    "Slot": 11,
+    "SkipItem": "907"
+  },
+  {
+    "UnlockItem": "705",
+    "id": 3,
+    "Requirement1": "906",
+    "Slot": 11,
+    "SkipItem": "907"
+  },
+  {
+    "UnlockItem": "1006",
+    "id": 4,
+    "Requirement1": "1103",
+    "Slot": 11,
+    "SkipItem": "1106"
+  },
+  {
+    "UnlockItem": "1006",
+    "id": 5,
+    "Requirement1": "1104",
+    "Slot": 11,
+    "SkipItem": "1106"
+  },
+  {
+    "UnlockItem": "1006",
+    "id": 6,
+    "Requirement1": "1105",
+    "Slot": 11,
+    "SkipItem": "1106"
+  },
+  {
+    "UnlockItem": "1205",
+    "id": 7,
+    "Requirement1": "1304",
+    "Slot": 11,
+    "SkipItem": "1308"
+  },
+  {
+    "UnlockItem": "1205",
+    "id": 8,
+    "Requirement1": "1305",
+    "Slot": 11,
+    "SkipItem": "1308"
+  },
+  {
+    "UnlockItem": "1205",
+    "id": 9,
+    "Requirement1": "1307",
+    "Slot": 11,
+    "SkipItem": "1308"
+  },
+  {
+    "UnlockItem": "1206",
+    "id": 10,
+    "Requirement1": "1403",
+    "Slot": 11,
+    "SkipItem": "1406"
+  },
+  {
+    "UnlockItem": "1206",
+    "id": 11,
+    "Requirement1": "1404",
+    "Slot": 11,
+    "SkipItem": "1406"
+  },
+  {
+    "UnlockItem": "1206",
+    "id": 12,
+    "Requirement1": "1405",
+    "Slot": 11,
+    "SkipItem": "1406"
+  },
+  {
+    "UnlockItem": "1705",
+    "id": 13,
+    "Requirement1": "1804",
+    "Slot": 11,
+    "SkipItem": "1808"
+  },
+  {
+    "UnlockItem": "1705",
+    "id": 14,
+    "Requirement1": "1805",
+    "Slot": 11,
+    "SkipItem": "1808"
+  },
+  {
+    "UnlockItem": "1705",
+    "id": 15,
+    "Requirement1": "1807",
+    "Slot": 11,
+    "SkipItem": "1808"
+  }
+]

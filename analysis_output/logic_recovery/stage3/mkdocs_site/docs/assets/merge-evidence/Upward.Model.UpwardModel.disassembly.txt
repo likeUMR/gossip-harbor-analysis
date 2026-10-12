@@ -1,0 +1,4270 @@
+
+main <UpwardModel.lua:0,0> (263 instructions at 0000011FFD960130)
+0+ params, 4 slots, 1 upvalue, 2 locals, 109 constants, 75 functions
+	1	[29]	NEWTABLE 	0 0 2
+	2	[30]	SETTABLE 	0 -2 -2	; "Merge" "Merge"
+	3	[31]	SETTABLE 	0 -3 -3	; "Order" "Order"
+	4	[32]	SETTABUP 	0 -1 0	; _ENV "EUpwardAddScoreScene"
+	5	[34]	NEWTABLE 	0 0 4
+	6	[35]	SETTABLE 	0 -5 -6	; "None" 0
+	7	[36]	SETTABLE 	0 -7 -8	; "Easy" 1
+	8	[37]	SETTABLE 	0 -9 -10	; "Normal" 2
+	9	[38]	SETTABLE 	0 -11 -12	; "Hard" 3
+	10	[39]	SETTABUP 	0 -4 0	; _ENV "EUpwardDifficultyMode"
+	11	[41]	NEWTABLE 	0 0 17
+	12	[43]	SETTABLE 	0 -13 -13	; "Round" "Round"
+	13	[45]	SETTABLE 	0 -14 -14	; "Level" "Level"
+	14	[47]	SETTABLE 	0 -15 -15	; "Score" "Score"
+	15	[49]	SETTABLE 	0 -16 -16	; "Difficulty" "Difficulty"
+	16	[51]	SETTABLE 	0 -17 -17	; "CurrentInfo" "CurrentInfo"
+	17	[53]	SETTABLE 	0 -18 -18	; "LastScore" "LastScore"
+	18	[55]	SETTABLE 	0 -19 -19	; "LastLevel" "LastLevel"
+	19	[57]	SETTABLE 	0 -20 -20	; "LevelFinishTime" "LevelFinishTime"
+	20	[60]	SETTABLE 	0 -21 -21	; "FinishWindowPop" "FinishWindowPop"
+	21	[61]	SETTABLE 	0 -22 -22	; "EndWindowPop" "EndWindowPop"
+	22	[63]	SETTABLE 	0 -23 -23	; "HalfTopTipPop" "HalfTopTipPop"
+	23	[64]	SETTABLE 	0 -24 -24	; "FiveTopTipPop" "FiveTopTipPop"
+	24	[65]	SETTABLE 	0 -25 -25	; "OneTopTipPop" "OneTopTipPop"
+	25	[67]	SETTABLE 	0 -26 -26	; "CurLevelTryTimes" "CurLevelTryTimes"
+	26	[69]	SETTABLE 	0 -27 -27	; "FailWindowPop" "FailWindowPop"
+	27	[71]	SETTABLE 	0 -28 -28	; "Rank" "Rank"
+	28	[73]	SETTABLE 	0 -29 -29	; "RecoverRewardsLevel" "RecoverRewardsLevel"
+	29	[77]	GETTABUP 	1 0 -31	; _ENV "setmetatable"
+	30	[77]	NEWTABLE 	2 0 0
+	31	[77]	GETTABUP 	3 0 -32	; _ENV "BaseActivityModel"
+	32	[77]	CALL     	1 3 2
+	33	[77]	SETTABUP 	0 -30 1	; _ENV "UpwardModel"
+	34	[78]	GETTABUP 	1 0 -30	; _ENV "UpwardModel"
+	35	[78]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	36	[78]	SETTABLE 	1 -33 2	; "__index" -
+	37	[80]	LOADK    	1 -34	; "value"
+	38	[82]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	39	[88]	CLOSURE  	3 0	; 0000011FFD9601B0
+	40	[82]	SETTABLE 	2 -35 3	; "Init" -
+	41	[90]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	42	[93]	CLOSURE  	3 1	; 0000011FFD95E970
+	43	[90]	SETTABLE 	2 -36 3	; "_OnStateChanged" -
+	44	[95]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	45	[97]	CLOSURE  	3 2	; 0000011FFD9647E0
+	46	[95]	SETTABLE 	2 -37 3	; "GetResourceLabels" -
+	47	[99]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	48	[104]	CLOSURE  	3 3	; 0000011FFD964860
+	49	[99]	SETTABLE 	2 -38 3	; "_DropData" -
+	50	[107]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	51	[115]	CLOSURE  	3 4	; 0000011FFD964940
+	52	[107]	SETTABLE 	2 -39 3	; "LogActivity" -
+	53	[119]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	54	[129]	CLOSURE  	3 5	; 0000011FFD965640
+	55	[119]	SETTABLE 	2 -40 3	; "LoadLocalConfig" -
+	56	[131]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	57	[242]	CLOSURE  	3 6	; 0000011FFD965860
+	58	[131]	SETTABLE 	2 -41 3	; "_LoadOtherServerConfig" -
+	59	[246]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	60	[277]	CLOSURE  	3 7	; 0000011FFD967780
+	61	[246]	SETTABLE 	2 -42 3	; "CanAddScore" -
+	62	[279]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	63	[283]	CLOSURE  	3 8	; 0000011FFD9637C0
+	64	[279]	SETTABLE 	2 -43 3	; "_OnItemMerged" -
+	65	[286]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	66	[299]	CLOSURE  	3 9	; 0000011FFD968A60
+	67	[286]	SETTABLE 	2 -44 3	; "_TryAddMergeScore" -
+	68	[302]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	69	[341]	CLOSURE  	3 10	; 0000011FFD968C60
+	70	[302]	SETTABLE 	2 -45 3	; "GetAddScoreByOrder" -
+	71	[343]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	72	[345]	CLOSURE  	3 11	; 0000011FFD969660
+	73	[343]	SETTABLE 	2 -46 3	; "AcquireActivityToken" -
+	74	[347]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	75	[349]	CLOSURE  	3 12	; 0000011FFD968DE0
+	76	[347]	SETTABLE 	2 -47 3	; "GetTokenPropertyType" -
+	77	[351]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	78	[353]	CLOSURE  	3 13	; 0000011FFD9696E0
+	79	[351]	SETTABLE 	2 -48 3	; "IsTokenProperty" -
+	80	[356]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	81	[391]	CLOSURE  	3 14	; 0000011FFD9689E0
+	82	[356]	SETTABLE 	2 -49 3	; "_AddScore" -
+	83	[394]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	84	[418]	CLOSURE  	3 15	; 0000011FFD968BE0
+	85	[394]	SETTABLE 	2 -50 3	; "_LevelUp" -
+	86	[420]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	87	[438]	CLOSURE  	3 16	; 0000011FFD9694E0
+	88	[420]	SETTABLE 	2 -51 3	; "LogLevelEnd" -
+	89	[440]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	90	[449]	CLOSURE  	3 17	; 0000011FFD9698E0
+	91	[440]	SETTABLE 	2 -52 3	; "LevelFail" -
+	92	[451]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	93	[453]	CLOSURE  	3 18	; 0000011FFD968B60
+	94	[451]	SETTABLE 	2 -53 3	; "CanFailWindowPop" -
+	95	[455]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	96	[457]	CLOSURE  	3 19	; 0000011FFD969260
+	97	[455]	SETTABLE 	2 -54 3	; "ClearFailWindowPop" -
+	98	[459]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	99	[463]	CLOSURE  	3 20	; 0000011FFD969060
+	100	[459]	SETTABLE 	2 -55 3	; "AcquireRewardsLogic" -
+	101	[465]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	102	[475]	CLOSURE  	3 21	; 0000011FFD968D60
+	103	[465]	SETTABLE 	2 -56 3	; "GetRecoverRewards" -
+	104	[477]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	105	[479]	CLOSURE  	3 22	; 0000011FFD969760
+	106	[477]	SETTABLE 	2 -57 3	; "SetRecoverRewardsLevel" -
+	107	[481]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	108	[491]	CLOSURE  	3 23	; 0000011FFD9690E0
+	109	[481]	SETTABLE 	2 -58 3	; "GetRewardCongfigByLevel" -
+	110	[496]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	111	[508]	CLOSURE  	3 24	; 0000011FFD9692E0
+	112	[496]	SETTABLE 	2 -59 3	; "CanSignUp" -
+	113	[510]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	114	[512]	CLOSURE  	3 25	; 0000011FFD969460
+	115	[510]	SETTABLE 	2 -60 3	; "CanSelectDifficulty" -
+	116	[514]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	117	[516]	CLOSURE  	3 26	; 0000011FFD968AE0
+	118	[514]	SETTABLE 	2 -61 3	; "GetRobotConfigByDiffAndLevel" -
+	119	[519]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	120	[523]	CLOSURE  	3 27	; 0000011FFD969360
+	121	[519]	SETTABLE 	2 -62 3	; "TrySignUp" -
+	122	[525]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	123	[608]	CLOSURE  	3 28	; 0000011FFD9693E0
+	124	[525]	SETTABLE 	2 -63 3	; "SignUp" -
+	125	[610]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	126	[622]	CLOSURE  	3 29	; 0000011FFD969860
+	127	[610]	SETTABLE 	2 -64 3	; "RandomDeleteAvatar" -
+	128	[626]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	129	[630]	CLOSURE  	3 30	; 0000011FFD968EE0
+	130	[626]	SETTABLE 	2 -65 3	; "ClearTopTipState" -
+	131	[632]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	132	[634]	CLOSURE  	3 31	; 0000011FFD969160
+	133	[632]	SETTABLE 	2 -66 3	; "PopTopTip" -
+	134	[636]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	135	[638]	CLOSURE  	3 32	; 0000011FFD9695E0
+	136	[636]	SETTABLE 	2 -67 3	; "CanPopTopTip" -
+	137	[640]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	138	[688]	CLOSURE  	3 33	; 0000011FFD968F60
+	139	[640]	SETTABLE 	2 -68 3	; "CheckTopTip" -
+	140	[690]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	141	[751]	CLOSURE  	3 34	; 0000011FFD96F860
+	142	[690]	SETTABLE 	2 -69 3	; "UpdatePerSecond" -
+	143	[756]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	144	[763]	CLOSURE  	3 35	; 0000011FFD970760
+	145	[756]	SETTABLE 	2 -70 3	; "GetMaxLevel" -
+	146	[765]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	147	[767]	CLOSURE  	3 36	; 0000011FFD970060
+	148	[765]	SETTABLE 	2 -71 3	; "SetRound" -
+	149	[769]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	150	[771]	CLOSURE  	3 37	; 0000011FFD96FF60
+	151	[769]	SETTABLE 	2 -72 3	; "GetRound" -
+	152	[773]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	153	[775]	CLOSURE  	3 38	; 0000011FFD970AE0
+	154	[773]	SETTABLE 	2 -73 3	; "GetLevel" -
+	155	[777]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	156	[779]	CLOSURE  	3 39	; 0000011FFD96FCE0
+	157	[777]	SETTABLE 	2 -74 3	; "SetLevel" -
+	158	[781]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	159	[783]	CLOSURE  	3 40	; 0000011FFD9707E0
+	160	[781]	SETTABLE 	2 -75 3	; "GetScore" -
+	161	[785]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	162	[787]	CLOSURE  	3 41	; 0000011FFD9706E0
+	163	[785]	SETTABLE 	2 -76 3	; "SetScore" -
+	164	[789]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	165	[791]	CLOSURE  	3 42	; 0000011FFD96FC60
+	166	[789]	SETTABLE 	2 -77 3	; "SetDifficultyMode" -
+	167	[793]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	168	[795]	CLOSURE  	3 43	; 0000011FFD96FE60
+	169	[793]	SETTABLE 	2 -78 3	; "GetDifficultyMode" -
+	170	[797]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	171	[799]	CLOSURE  	3 44	; 0000011FFD96EE60
+	172	[797]	SETTABLE 	2 -79 3	; "GetLastScore" -
+	173	[801]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	174	[803]	CLOSURE  	3 45	; 0000011FFD9708E0
+	175	[801]	SETTABLE 	2 -80 3	; "SetLastScore" -
+	176	[805]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	177	[807]	CLOSURE  	3 46	; 0000011FFD96F160
+	178	[805]	SETTABLE 	2 -81 3	; "GetLastLevel" -
+	179	[809]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	180	[811]	CLOSURE  	3 47	; 0000011FFD96F060
+	181	[809]	SETTABLE 	2 -82 3	; "SetLastLevel" -
+	182	[813]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	183	[819]	CLOSURE  	3 48	; 0000011FFD96F8E0
+	184	[813]	SETTABLE 	2 -83 3	; "IsAllRoundFinished" -
+	185	[821]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	186	[823]	CLOSURE  	3 49	; 0000011FFD96FEE0
+	187	[821]	SETTABLE 	2 -84 3	; "GetCurrentInfo" -
+	188	[825]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	189	[832]	CLOSURE  	3 50	; 0000011FFD9700E0
+	190	[825]	SETTABLE 	2 -85 3	; "SaveCurrentInfo" -
+	191	[834]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	192	[836]	CLOSURE  	3 51	; 0000011FFD96FAE0
+	193	[834]	SETTABLE 	2 -86 3	; "SetLevelFinishTime" -
+	194	[838]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	195	[840]	CLOSURE  	3 52	; 0000011FFD96F1E0
+	196	[838]	SETTABLE 	2 -87 3	; "GetLevelFinishTime" -
+	197	[842]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	198	[844]	CLOSURE  	3 53	; 0000011FFD970160
+	199	[842]	SETTABLE 	2 -88 3	; "GetAliveNum" -
+	200	[846]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	201	[853]	CLOSURE  	3 54	; 0000011FFD970860
+	202	[846]	SETTABLE 	2 -89 3	; "GetFinishAliveNum" -
+	203	[855]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	204	[866]	CLOSURE  	3 55	; 0000011FFD970260
+	205	[855]	SETTABLE 	2 -90 3	; "GetBigRewardByDiff" -
+	206	[868]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	207	[870]	CLOSURE  	3 56	; 0000011FFD9702E0
+	208	[868]	SETTABLE 	2 -91 3	; "GetRank" -
+	209	[872]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	210	[874]	CLOSURE  	3 57	; 0000011FFD970B60
+	211	[872]	SETTABLE 	2 -92 3	; "SetRank" -
+	212	[876]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	213	[878]	CLOSURE  	3 58	; 0000011FFD970360
+	214	[876]	SETTABLE 	2 -93 3	; "GetDeleteAvatarIndexs" -
+	215	[881]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	216	[894]	CLOSURE  	3 59	; 0000011FFD970BE0
+	217	[881]	SETTABLE 	2 -94 3	; "ClearCurrentPlayState" -
+	218	[896]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	219	[898]	CLOSURE  	3 60	; 0000011FFD970460
+	220	[896]	SETTABLE 	2 -95 3	; "PopFinishWindow" -
+	221	[900]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	222	[902]	CLOSURE  	3 61	; 0000011FFD9704E0
+	223	[900]	SETTABLE 	2 -96 3	; "CanPopFinishWindow" -
+	224	[904]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	225	[906]	CLOSURE  	3 62	; 0000011FFD96F760
+	226	[904]	SETTABLE 	2 -97 3	; "PopEndWindow" -
+	227	[908]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	228	[910]	CLOSURE  	3 63	; 0000011FFD970560
+	229	[908]	SETTABLE 	2 -98 3	; "CanPopEndWindow" -
+	230	[912]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	231	[916]	CLOSURE  	3 64	; 0000011FFD96F960
+	232	[912]	SETTABLE 	2 -99 3	; "CanPopSelectWindow" -
+	233	[918]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	234	[920]	CLOSURE  	3 65	; 0000011FFD9705E0
+	235	[918]	SETTABLE 	2 -100 3	; "PopSelectWindow" -
+	236	[922]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	237	[924]	CLOSURE  	3 66	; 0000011FFD96EF60
+	238	[922]	SETTABLE 	2 -101 3	; "SetCurLevelTryTimes" -
+	239	[926]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	240	[928]	CLOSURE  	3 67	; 0000011FFD96EDE0
+	241	[926]	SETTABLE 	2 -102 3	; "GetCurLevelTryTimes" -
+	242	[932]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	243	[934]	CLOSURE  	3 68	; 0000011FFD970660
+	244	[932]	SETTABLE 	2 -103 3	; "CanShowRedPoint" -
+	245	[937]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	246	[992]	CLOSURE  	3 69	; 0000011FFD9709E0
+	247	[937]	SETTABLE 	2 -104 3	; "GetHudEntryShowConfig" -
+	248	[995]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	249	[1011]	CLOSURE  	3 70	; 0000011FFD970C60
+	250	[995]	SETTABLE 	2 -105 3	; "GetBoardEntryShowConfig" -
+	251	[1016]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	252	[1018]	CLOSURE  	3 71	; 0000011FFD96EFE0
+	253	[1016]	SETTABLE 	2 -106 3	; "TestAddScore" -
+	254	[1020]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	255	[1028]	CLOSURE  	3 72	; 0000011FFD96FA60
+	256	[1020]	SETTABLE 	2 -107 3	; "TestLevelUp" -
+	257	[1030]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	258	[1037]	CLOSURE  	3 73	; 0000011FFD96F0E0
+	259	[1030]	SETTABLE 	2 -108 3	; "Test2LastLevel" -
+	260	[1039]	GETTABUP 	2 0 -30	; _ENV "UpwardModel"
+	261	[1104]	CLOSURE  	3 74	; 0000011FFD96F2E0
+	262	[1039]	SETTABLE 	2 -109 3	; "GetTestPopupWindowConfig" -
+	263	[1104]	RETURN   	0 1
+constants (109) for 0000011FFD960130:
+	1	"EUpwardAddScoreScene"
+	2	"Merge"
+	3	"Order"
+	4	"EUpwardDifficultyMode"
+	5	"None"
+	6	0
+	7	"Easy"
+	8	1
+	9	"Normal"
+	10	2
+	11	"Hard"
+	12	3
+	13	"Round"
+	14	"Level"
+	15	"Score"
+	16	"Difficulty"
+	17	"CurrentInfo"
+	18	"LastScore"
+	19	"LastLevel"
+	20	"LevelFinishTime"
+	21	"FinishWindowPop"
+	22	"EndWindowPop"
+	23	"HalfTopTipPop"
+	24	"FiveTopTipPop"
+	25	"OneTopTipPop"
+	26	"CurLevelTryTimes"
+	27	"FailWindowPop"
+	28	"Rank"
+	29	"RecoverRewardsLevel"
+	30	"UpwardModel"
+	31	"setmetatable"
+	32	"BaseActivityModel"
+	33	"__index"
+	34	"value"
+	35	"Init"
+	36	"_OnStateChanged"
+	37	"GetResourceLabels"
+	38	"_DropData"
+	39	"LogActivity"
+	40	"LoadLocalConfig"
+	41	"_LoadOtherServerConfig"
+	42	"CanAddScore"
+	43	"_OnItemMerged"
+	44	"_TryAddMergeScore"
+	45	"GetAddScoreByOrder"
+	46	"AcquireActivityToken"
+	47	"GetTokenPropertyType"
+	48	"IsTokenProperty"
+	49	"_AddScore"
+	50	"_LevelUp"
+	51	"LogLevelEnd"
+	52	"LevelFail"
+	53	"CanFailWindowPop"
+	54	"ClearFailWindowPop"
+	55	"AcquireRewardsLogic"
+	56	"GetRecoverRewards"
+	57	"SetRecoverRewardsLevel"
+	58	"GetRewardCongfigByLevel"
+	59	"CanSignUp"
+	60	"CanSelectDifficulty"
+	61	"GetRobotConfigByDiffAndLevel"
+	62	"TrySignUp"
+	63	"SignUp"
+	64	"RandomDeleteAvatar"
+	65	"ClearTopTipState"
+	66	"PopTopTip"
+	67	"CanPopTopTip"
+	68	"CheckTopTip"
+	69	"UpdatePerSecond"
+	70	"GetMaxLevel"
+	71	"SetRound"
+	72	"GetRound"
+	73	"GetLevel"
+	74	"SetLevel"
+	75	"GetScore"
+	76	"SetScore"
+	77	"SetDifficultyMode"
+	78	"GetDifficultyMode"
+	79	"GetLastScore"
+	80	"SetLastScore"
+	81	"GetLastLevel"
+	82	"SetLastLevel"
+	83	"IsAllRoundFinished"
+	84	"GetCurrentInfo"
+	85	"SaveCurrentInfo"
+	86	"SetLevelFinishTime"
+	87	"GetLevelFinishTime"
+	88	"GetAliveNum"
+	89	"GetFinishAliveNum"
+	90	"GetBigRewardByDiff"
+	91	"GetRank"
+	92	"SetRank"
+	93	"GetDeleteAvatarIndexs"
+	94	"ClearCurrentPlayState"
+	95	"PopFinishWindow"
+	96	"CanPopFinishWindow"
+	97	"PopEndWindow"
+	98	"CanPopEndWindow"
+	99	"CanPopSelectWindow"
+	100	"PopSelectWindow"
+	101	"SetCurLevelTryTimes"
+	102	"GetCurLevelTryTimes"
+	103	"CanShowRedPoint"
+	104	"GetHudEntryShowConfig"
+	105	"GetBoardEntryShowConfig"
+	106	"TestAddScore"
+	107	"TestLevelUp"
+	108	"Test2LastLevel"
+	109	"GetTestPopupWindowConfig"
+locals (2) for 0000011FFD960130:
+	0	EStrDBKeys	29	264
+	1	DBColumnValue	38	264
+upvalues (1) for 0000011FFD960130:
+	0	_ENV	1	0
+
+function <UpwardModel.lua:82,88> (19 instructions at 0000011FFD9601B0)
+3 params, 7 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[84]	GETTABUP 	3 0 -2	; _ENV "UpwardDefinition"
+	2	[84]	GETTABLE 	3 3 1
+	3	[84]	SETTABLE 	0 -1 3	; "m_definition" -
+	4	[85]	GETTABUP 	3 0 -3	; _ENV "BaseActivityModel"
+	5	[85]	GETTABLE 	3 3 -4	; "Init"
+	6	[85]	MOVE     	4 0
+	7	[85]	MOVE     	5 1
+	8	[85]	MOVE     	6 2
+	9	[85]	CALL     	3 4 1
+	10	[86]	SELF     	3 0 -5	; "LoadLocalConfig"
+	11	[86]	CALL     	3 2 1
+	12	[87]	GETTABUP 	3 0 -6	; _ENV "EventDispatcher"
+	13	[87]	GETTABLE 	3 3 -7	; "AddListener"
+	14	[87]	GETTABUP 	4 0 -8	; _ENV "EEventType"
+	15	[87]	GETTABLE 	4 4 -9	; "ItemMerged"
+	16	[87]	MOVE     	5 0
+	17	[87]	GETTABLE 	6 0 -10	; "_OnItemMerged"
+	18	[87]	CALL     	3 4 1
+	19	[88]	RETURN   	0 1
+constants (10) for 0000011FFD9601B0:
+	1	"m_definition"
+	2	"UpwardDefinition"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"LoadLocalConfig"
+	6	"EventDispatcher"
+	7	"AddListener"
+	8	"EEventType"
+	9	"ItemMerged"
+	10	"_OnItemMerged"
+locals (3) for 0000011FFD9601B0:
+	0	self	1	20
+	1	activityType	1	20
+	2	dbTable	1	20
+upvalues (1) for 0000011FFD9601B0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:90,93> (11 instructions at 0000011FFD95E970)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[91]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[91]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[91]	GETTABLE 	2 0 -3	; "m_definition"
+	4	[91]	GETTABLE 	2 2 -4	; "Event_StateChanged"
+	5	[91]	CALL     	1 2 1
+	6	[92]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	7	[92]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	8	[92]	GETTABUP 	2 0 -5	; _ENV "EEventType"
+	9	[92]	GETTABLE 	2 2 -6	; "OrderStatusChanged"
+	10	[92]	CALL     	1 2 1
+	11	[93]	RETURN   	0 1
+constants (6) for 0000011FFD95E970:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"m_definition"
+	4	"Event_StateChanged"
+	5	"EEventType"
+	6	"OrderStatusChanged"
+locals (1) for 0000011FFD95E970:
+	0	self	1	12
+upvalues (1) for 0000011FFD95E970:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:95,97> (6 instructions at 0000011FFD9647E0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[96]	NEWTABLE 	1 1 0
+	2	[96]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[96]	GETTABLE 	2 2 -2	; "UnderseaUpward"
+	4	[96]	SETLIST  	1 1 1	; 1
+	5	[96]	RETURN   	1 2
+	6	[97]	RETURN   	0 1
+constants (2) for 0000011FFD9647E0:
+	1	"AddressableLabel"
+	2	"UnderseaUpward"
+locals (1) for 0000011FFD9647E0:
+	0	self	1	7
+upvalues (1) for 0000011FFD9647E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:99,104> (7 instructions at 0000011FFD964860)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[100]	SETTABLE 	0 -1 -2	; "m_currentInfo" nil
+	2	[101]	SETTABLE 	0 -3 -2	; "m_selectWindowPop" nil
+	3	[103]	GETTABUP 	1 0 -4	; _ENV "BaseActivityModel"
+	4	[103]	GETTABLE 	1 1 -5	; "_DropData"
+	5	[103]	MOVE     	2 0
+	6	[103]	CALL     	1 2 1
+	7	[104]	RETURN   	0 1
+constants (5) for 0000011FFD964860:
+	1	"m_currentInfo"
+	2	nil
+	3	"m_selectWindowPop"
+	4	"BaseActivityModel"
+	5	"_DropData"
+locals (1) for 0000011FFD964860:
+	0	self	1	8
+upvalues (1) for 0000011FFD964860:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:107,115> (19 instructions at 0000011FFD964940)
+4 params, 12 slots, 1 upvalue, 6 locals, 8 constants, 0 functions
+	1	[108]	SELF     	4 0 -1	; "GetRound"
+	2	[108]	CALL     	4 2 2
+	3	[109]	TEST     	3 0
+	4	[109]	JMP      	0 1	; to 6
+	5	[111]	SUB      	4 4 -2	; - 1
+	6	[113]	GETTABLE 	5 0 -3	; "m_type"
+	7	[113]	LOADK    	6 -4	; "_"
+	8	[113]	MOVE     	7 4
+	9	[113]	CONCAT   	5 5 7
+	10	[114]	GETTABUP 	6 0 -5	; _ENV "GM"
+	11	[114]	GETTABLE 	6 6 -6	; "BIManager"
+	12	[114]	SELF     	6 6 -7	; "LogActivity"
+	13	[114]	MOVE     	8 5
+	14	[114]	SELF     	9 0 -8	; "GetId"
+	15	[114]	CALL     	9 2 2
+	16	[114]	MOVE     	10 1
+	17	[114]	MOVE     	11 2
+	18	[114]	CALL     	6 6 1
+	19	[115]	RETURN   	0 1
+constants (8) for 0000011FFD964940:
+	1	"GetRound"
+	2	1
+	3	"m_type"
+	4	"_"
+	5	"GM"
+	6	"BIManager"
+	7	"LogActivity"
+	8	"GetId"
+locals (6) for 0000011FFD964940:
+	0	self	1	20
+	1	scene	1	20
+	2	action	1	20
+	3	isFinalReward	1	20
+	4	round	3	20
+	5	biType	10	20
+upvalues (1) for 0000011FFD964940:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:119,129> (25 instructions at 0000011FFD965640)
+1 param, 5 slots, 3 upvalues, 2 locals, 11 constants, 0 functions
+	1	[120]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[120]	SELF     	1 1 -2	; "GetValue"
+	3	[120]	GETTABUP 	3 0 -3	; EStrDBKeys "CurrentInfo"
+	4	[120]	GETUPVAL 	4 1	; DBColumnValue
+	5	[120]	CALL     	1 4 2
+	6	[121]	EQ       	1 1 -4	; - nil
+	7	[121]	JMP      	0 17	; to 25
+	8	[122]	GETTABUP 	2 2 -6	; _ENV "json"
+	9	[122]	GETTABLE 	2 2 -7	; "decode"
+	10	[122]	MOVE     	3 1
+	11	[122]	CALL     	2 2 2
+	12	[122]	SETTABLE 	0 -5 2	; "m_currentInfo" -
+	13	[125]	GETTABLE 	2 0 -5	; "m_currentInfo"
+	14	[125]	GETTABLE 	2 2 -8	; "showIconFrameList"
+	15	[125]	EQ       	0 2 -4	; - nil
+	16	[125]	JMP      	0 8	; to 25
+	17	[126]	GETTABLE 	2 0 -5	; "m_currentInfo"
+	18	[126]	GETTABUP 	3 2 -9	; _ENV "UIHelper"
+	19	[126]	GETTABLE 	3 3 -10	; "GetRandomAvatarIconFrame"
+	20	[126]	GETTABLE 	4 0 -5	; "m_currentInfo"
+	21	[126]	GETTABLE 	4 4 -11	; "showIconList"
+	22	[126]	LEN      	4 4
+	23	[126]	CALL     	3 2 2
+	24	[126]	SETTABLE 	2 -8 3	; "showIconFrameList" -
+	25	[129]	RETURN   	0 1
+constants (11) for 0000011FFD965640:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurrentInfo"
+	4	nil
+	5	"m_currentInfo"
+	6	"json"
+	7	"decode"
+	8	"showIconFrameList"
+	9	"UIHelper"
+	10	"GetRandomAvatarIconFrame"
+	11	"showIconList"
+locals (2) for 0000011FFD965640:
+	0	self	1	26
+	1	strInfo	6	26
+upvalues (3) for 0000011FFD965640:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+	2	_ENV	0	0
+
+function <UpwardModel.lua:131,242> (221 instructions at 0000011FFD965860)
+2 params, 26 slots, 1 upvalue, 36 locals, 58 constants, 3 functions
+	1	[133]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[133]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[133]	SELF     	2 2 -3	; "GetLocalConfig"
+	4	[133]	GETTABUP 	4 0 -4	; _ENV "LocalConfigKey"
+	5	[133]	GETTABLE 	4 4 -5	; "MergeItemScoreConfig"
+	6	[133]	CALL     	2 3 2
+	7	[134]	NEWTABLE 	3 0 0
+	8	[134]	SETTABLE 	0 -6 3	; "m_mergeItemScoreConfig" -
+	9	[135]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	10	[135]	MOVE     	4 2
+	11	[135]	CALL     	3 2 4
+	12	[135]	JMP      	0 3	; to 16
+	13	[136]	GETTABLE 	8 0 -6	; "m_mergeItemScoreConfig"
+	14	[136]	GETTABLE 	9 7 -8	; "item_id"
+	15	[136]	SETTABLE 	8 9 7
+	16	[135]	TFORCALL 	3 2
+	17	[135]	TFORLOOP 	5 -5	; to 13
+	18	[140]	NEWTABLE 	3 0 0
+	19	[140]	SETTABLE 	0 -9 3	; "m_finishOrderScoreConfig" -
+	20	[141]	LOADBOOL 	3 0 0
+	21	[142]	GETTABUP 	4 0 -10	; _ENV "pairs"
+	22	[142]	GETTABLE 	5 1 -11	; "eventOrderScore"
+	23	[142]	CALL     	4 2 4
+	24	[142]	JMP      	0 17	; to 42
+	25	[143]	GETTABUP 	9 0 -12	; _ENV "table"
+	26	[143]	GETTABLE 	9 9 -13	; "insert"
+	27	[143]	GETTABLE 	10 0 -9	; "m_finishOrderScoreConfig"
+	28	[143]	GETTABUP 	11 0 -14	; _ENV "Table"
+	29	[143]	GETTABLE 	11 11 -15	; "DeepCopy"
+	30	[143]	MOVE     	12 8
+	31	[143]	LOADBOOL 	13 1 0
+	32	[143]	CALL     	11 3 0
+	33	[143]	CALL     	9 0 1
+	34	[144]	TEST     	3 1
+	35	[144]	JMP      	0 6	; to 42
+	36	[144]	GETTABUP 	9 0 -16	; _ENV "IsNumber"
+	37	[144]	GETTABLE 	10 8 -17	; "diff_score_min"
+	38	[144]	CALL     	9 2 2
+	39	[144]	TEST     	9 0
+	40	[144]	JMP      	0 1	; to 42
+	41	[145]	LOADBOOL 	3 1 0
+	42	[142]	TFORCALL 	4 2
+	43	[142]	TFORLOOP 	6 -19	; to 25
+	44	[148]	SETTABLE 	0 -18 3	; "m_bUseDiff" -
+	45	[149]	TEST     	3 0
+	46	[149]	JMP      	0 6	; to 53
+	47	[150]	GETTABUP 	4 0 -12	; _ENV "table"
+	48	[150]	GETTABLE 	4 4 -19	; "sort"
+	49	[150]	GETTABLE 	5 0 -9	; "m_finishOrderScoreConfig"
+	50	[152]	CLOSURE  	6 0	; 0000011FFD966820
+	51	[150]	CALL     	4 3 1
+	52	[152]	JMP      	0 5	; to 58
+	53	[154]	GETTABUP 	4 0 -12	; _ENV "table"
+	54	[154]	GETTABLE 	4 4 -19	; "sort"
+	55	[154]	GETTABLE 	5 0 -9	; "m_finishOrderScoreConfig"
+	56	[156]	CLOSURE  	6 1	; 0000011FFD9668A0
+	57	[154]	CALL     	4 3 1
+	58	[160]	GETTABLE 	4 1 -20	; "floatRaceConfig"
+	59	[160]	GETTABLE 	4 4 -21	; 1
+	60	[160]	GETTABLE 	4 4 -22	; "isDifficultySelect"
+	61	[160]	EQ       	0 4 -23	; - 0
+	62	[160]	JMP      	0 2	; to 65
+	63	[162]	SETTABLE 	0 -24 -25	; "m_bDifficultySelect" false
+	64	[162]	JMP      	0 6	; to 71
+	65	[163]	GETTABLE 	4 1 -20	; "floatRaceConfig"
+	66	[163]	GETTABLE 	4 4 -21	; 1
+	67	[163]	GETTABLE 	4 4 -22	; "isDifficultySelect"
+	68	[163]	EQ       	0 4 -21	; - 1
+	69	[163]	JMP      	0 1	; to 71
+	70	[164]	SETTABLE 	0 -24 -26	; "m_bDifficultySelect" true
+	71	[168]	GETTABLE 	4 1 -20	; "floatRaceConfig"
+	72	[168]	GETTABLE 	4 4 -21	; 1
+	73	[168]	GETTABLE 	4 4 -28	; "round"
+	74	[168]	SETTABLE 	0 -27 4	; "m_roundCount" -
+	75	[176]	CLOSURE  	4 2	; 0000011FFD966920
+	76	[180]	NEWTABLE 	5 0 0
+	77	[180]	SETTABLE 	0 -29 5	; "m_rewardConfigs" -
+	78	[181]	GETTABUP 	5 0 -14	; _ENV "Table"
+	79	[181]	GETTABLE 	5 5 -15	; "DeepCopy"
+	80	[181]	GETTABLE 	6 1 -30	; "floatRaceReward"
+	81	[181]	LOADBOOL 	7 1 0
+	82	[181]	CALL     	5 3 2
+	83	[182]	GETTABLE 	6 0 -24	; "m_bDifficultySelect"
+	84	[182]	TEST     	6 0
+	85	[182]	JMP      	0 5	; to 91
+	86	[183]	GETTABUP 	6 0 -12	; _ENV "table"
+	87	[183]	GETTABLE 	6 6 -19	; "sort"
+	88	[183]	MOVE     	7 5
+	89	[183]	MOVE     	8 4
+	90	[183]	CALL     	6 3 1
+	91	[186]	GETTABUP 	6 0 -7	; _ENV "ipairs"
+	92	[186]	MOVE     	7 5
+	93	[186]	CALL     	6 2 4
+	94	[186]	JMP      	0 25	; to 120
+	95	[187]	GETTABLE 	11 10 -31	; "difficultyMode"
+	96	[187]	EQ       	0 11 -32	; - nil
+	97	[187]	JMP      	0 3	; to 101
+	98	[188]	GETTABUP 	11 0 -33	; _ENV "EUpwardDifficultyMode"
+	99	[188]	GETTABLE 	11 11 -34	; "None"
+	100	[188]	SETTABLE 	10 -31 11	; "difficultyMode" -
+	101	[191]	GETTABLE 	11 0 -29	; "m_rewardConfigs"
+	102	[191]	GETTABLE 	12 10 -31	; "difficultyMode"
+	103	[191]	GETTABLE 	11 11 12
+	104	[191]	EQ       	0 11 -32	; - nil
+	105	[191]	JMP      	0 4	; to 110
+	106	[192]	GETTABLE 	11 0 -29	; "m_rewardConfigs"
+	107	[192]	GETTABLE 	12 10 -31	; "difficultyMode"
+	108	[192]	NEWTABLE 	13 0 0
+	109	[192]	SETTABLE 	11 12 13
+	110	[196]	NEWTABLE 	11 0 2
+	111	[197]	GETTABLE 	12 10 -35	; "target"
+	112	[197]	SETTABLE 	11 -35 12	; "target" -
+	113	[198]	GETTABLE 	12 10 -36	; "rewards"
+	114	[198]	SETTABLE 	11 -36 12	; "rewards" -
+	115	[200]	GETTABLE 	12 0 -29	; "m_rewardConfigs"
+	116	[200]	GETTABLE 	13 10 -31	; "difficultyMode"
+	117	[200]	GETTABLE 	12 12 13
+	118	[200]	GETTABLE 	13 10 -37	; "raceLevel"
+	119	[200]	SETTABLE 	12 13 11
+	120	[186]	TFORCALL 	6 2
+	121	[186]	TFORLOOP 	8 -27	; to 95
+	122	[204]	NEWTABLE 	6 0 0
+	123	[204]	SETTABLE 	0 -38 6	; "m_robotConfigs" -
+	124	[205]	GETTABUP 	6 0 -14	; _ENV "Table"
+	125	[205]	GETTABLE 	6 6 -15	; "DeepCopy"
+	126	[205]	GETTABLE 	7 1 -39	; "floatRaceRobot"
+	127	[205]	LOADBOOL 	8 1 0
+	128	[205]	CALL     	6 3 2
+	129	[206]	GETTABLE 	7 0 -24	; "m_bDifficultySelect"
+	130	[206]	TEST     	7 0
+	131	[206]	JMP      	0 5	; to 137
+	132	[207]	GETTABUP 	7 0 -12	; _ENV "table"
+	133	[207]	GETTABLE 	7 7 -19	; "sort"
+	134	[207]	MOVE     	8 6
+	135	[207]	MOVE     	9 4
+	136	[207]	CALL     	7 3 1
+	137	[210]	GETTABUP 	7 0 -7	; _ENV "ipairs"
+	138	[210]	MOVE     	8 6
+	139	[210]	CALL     	7 2 4
+	140	[210]	JMP      	0 78	; to 219
+	141	[211]	GETTABLE 	12 11 -31	; "difficultyMode"
+	142	[211]	EQ       	0 12 -32	; - nil
+	143	[211]	JMP      	0 1	; to 145
+	144	[212]	SETTABLE 	11 -31 -23	; "difficultyMode" 0
+	145	[215]	GETTABLE 	12 0 -38	; "m_robotConfigs"
+	146	[215]	GETTABLE 	13 11 -31	; "difficultyMode"
+	147	[215]	GETTABLE 	12 12 13
+	148	[215]	EQ       	0 12 -32	; - nil
+	149	[215]	JMP      	0 4	; to 154
+	150	[216]	GETTABLE 	12 0 -38	; "m_robotConfigs"
+	151	[216]	GETTABLE 	13 11 -31	; "difficultyMode"
+	152	[216]	NEWTABLE 	14 0 0
+	153	[216]	SETTABLE 	12 13 14
+	154	[219]	NEWTABLE 	12 0 3
+	155	[220]	GETTABLE 	13 11 -40	; "upgradeSlotsNum"
+	156	[220]	SETTABLE 	12 -40 13	; "upgradeSlotsNum" -
+	157	[221]	GETTABLE 	13 11 -41	; "maxRobotArriveTime"
+	158	[221]	SETTABLE 	12 -41 13	; "maxRobotArriveTime" -
+	159	[222]	NEWTABLE 	13 0 0
+	160	[222]	SETTABLE 	12 -42 13	; "robotSpeed" -
+	161	[225]	GETTABUP 	13 0 -7	; _ENV "ipairs"
+	162	[225]	GETTABLE 	14 11 -42	; "robotSpeed"
+	163	[225]	CALL     	13 2 4
+	164	[225]	JMP      	0 47	; to 212
+	165	[226]	GETTABUP 	18 0 -43	; _ENV "StringUtil"
+	166	[226]	GETTABLE 	18 18 -44	; "Split"
+	167	[226]	MOVE     	19 17
+	168	[226]	LOADK    	20 -45	; ","
+	169	[226]	CALL     	18 3 2
+	170	[228]	GETTABUP 	19 0 -46	; _ENV "tonumber"
+	171	[228]	GETTABLE 	20 18 -21	; 1
+	172	[228]	CALL     	19 2 2
+	173	[228]	EQ       	1 19 -23	; - 0
+	174	[228]	JMP      	0 9	; to 184
+	175	[228]	GETTABUP 	19 0 -46	; _ENV "tonumber"
+	176	[228]	GETTABLE 	20 18 -47	; 2
+	177	[228]	CALL     	19 2 2
+	178	[228]	EQ       	1 19 -23	; - 0
+	179	[228]	JMP      	0 4	; to 184
+	180	[228]	GETTABLE 	19 18 -21	; 1
+	181	[228]	GETTABLE 	20 18 -47	; 2
+	182	[228]	LE       	0 20 19
+	183	[228]	JMP      	0 12	; to 196
+	184	[229]	GETTABUP 	19 0 -1	; _ENV "GM"
+	185	[229]	GETTABLE 	19 19 -48	; "BIManager"
+	186	[229]	SELF     	19 19 -49	; "LogErrorInfo"
+	187	[229]	GETTABLE 	21 0 -50	; "m_definition"
+	188	[229]	GETTABLE 	21 21 -51	; "RobotConfigErrorBIType"
+	189	[230]	GETTABUP 	22 0 -52	; _ENV "string"
+	190	[230]	GETTABLE 	22 22 -53	; "format"
+	191	[230]	LOADK    	23 -54	; "robot config: min=%s, max=%s"
+	192	[230]	GETTABLE 	24 18 -21	; 1
+	193	[230]	GETTABLE 	25 18 -47	; 2
+	194	[230]	CALL     	22 4 0
+	195	[229]	CALL     	19 0 1
+	196	[232]	NEWTABLE 	19 0 3
+	197	[233]	GETTABLE 	20 18 -21	; 1
+	198	[233]	GETTABLE 	21 11 -41	; "maxRobotArriveTime"
+	199	[233]	MUL      	20 20 21
+	200	[233]	SETTABLE 	19 -55 20	; "minTime" -
+	201	[234]	GETTABLE 	20 18 -47	; 2
+	202	[234]	GETTABLE 	21 11 -41	; "maxRobotArriveTime"
+	203	[234]	MUL      	20 20 21
+	204	[234]	SETTABLE 	19 -56 20	; "maxTime" -
+	205	[235]	GETTABLE 	20 18 -58	; 3
+	206	[235]	SETTABLE 	19 -57 20	; "num" -
+	207	[237]	GETTABUP 	20 0 -12	; _ENV "table"
+	208	[237]	GETTABLE 	20 20 -13	; "insert"
+	209	[237]	GETTABLE 	21 12 -42	; "robotSpeed"
+	210	[237]	MOVE     	22 19
+	211	[237]	CALL     	20 3 1
+	212	[225]	TFORCALL 	13 2
+	213	[225]	TFORLOOP 	15 -49	; to 165
+	214	[240]	GETTABLE 	13 0 -38	; "m_robotConfigs"
+	215	[240]	GETTABLE 	14 11 -31	; "difficultyMode"
+	216	[240]	GETTABLE 	13 13 14
+	217	[240]	GETTABLE 	14 11 -37	; "raceLevel"
+	218	[240]	SETTABLE 	13 14 12
+	219	[210]	TFORCALL 	7 2
+	220	[210]	TFORLOOP 	9 -80	; to 141
+	221	[242]	RETURN   	0 1
+constants (58) for 0000011FFD965860:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetLocalConfig"
+	4	"LocalConfigKey"
+	5	"MergeItemScoreConfig"
+	6	"m_mergeItemScoreConfig"
+	7	"ipairs"
+	8	"item_id"
+	9	"m_finishOrderScoreConfig"
+	10	"pairs"
+	11	"eventOrderScore"
+	12	"table"
+	13	"insert"
+	14	"Table"
+	15	"DeepCopy"
+	16	"IsNumber"
+	17	"diff_score_min"
+	18	"m_bUseDiff"
+	19	"sort"
+	20	"floatRaceConfig"
+	21	1
+	22	"isDifficultySelect"
+	23	0
+	24	"m_bDifficultySelect"
+	25	false
+	26	true
+	27	"m_roundCount"
+	28	"round"
+	29	"m_rewardConfigs"
+	30	"floatRaceReward"
+	31	"difficultyMode"
+	32	nil
+	33	"EUpwardDifficultyMode"
+	34	"None"
+	35	"target"
+	36	"rewards"
+	37	"raceLevel"
+	38	"m_robotConfigs"
+	39	"floatRaceRobot"
+	40	"upgradeSlotsNum"
+	41	"maxRobotArriveTime"
+	42	"robotSpeed"
+	43	"StringUtil"
+	44	"Split"
+	45	","
+	46	"tonumber"
+	47	2
+	48	"BIManager"
+	49	"LogErrorInfo"
+	50	"m_definition"
+	51	"RobotConfigErrorBIType"
+	52	"string"
+	53	"format"
+	54	"robot config: min=%s, max=%s"
+	55	"minTime"
+	56	"maxTime"
+	57	"num"
+	58	3
+locals (36) for 0000011FFD965860:
+	0	self	1	222
+	1	config	1	222
+	2	mergeConfig	7	222
+	3	(for generator)	12	18
+	4	(for state)	12	18
+	5	(for control)	12	18
+	6	_	13	16
+	7	data	13	16
+	8	isUseDiff	21	222
+	9	(for generator)	24	44
+	10	(for state)	24	44
+	11	(for control)	24	44
+	12	_	25	42
+	13	cfg	25	42
+	14	sortFunc	76	222
+	15	rewardConfigs	83	222
+	16	(for generator)	94	122
+	17	(for state)	94	122
+	18	(for control)	94	122
+	19	_	95	120
+	20	cfg	95	120
+	21	rewardConfig	115	120
+	22	robotConfigs	129	222
+	23	(for generator)	140	221
+	24	(for state)	140	221
+	25	(for control)	140	221
+	26	_	141	219
+	27	cfg	141	219
+	28	robotConfig	161	219
+	29	(for generator)	164	214
+	30	(for state)	164	214
+	31	(for control)	164	214
+	32	_	165	212
+	33	spCfg	165	212
+	34	spConfig	170	212
+	35	speed	207	212
+upvalues (1) for 0000011FFD965860:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:150,152> (8 instructions at 0000011FFD966820)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[151]	GETTABLE 	2 0 -1	; "diff_score_min"
+	2	[151]	GETTABLE 	3 1 -1	; "diff_score_min"
+	3	[151]	LT       	1 2 3
+	4	[151]	JMP      	0 1	; to 6
+	5	[151]	LOADBOOL 	2 0 1
+	6	[151]	LOADBOOL 	2 1 0
+	7	[151]	RETURN   	2 2
+	8	[152]	RETURN   	0 1
+constants (1) for 0000011FFD966820:
+	1	"diff_score_min"
+locals (2) for 0000011FFD966820:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000011FFD966820:
+
+function <UpwardModel.lua:154,156> (8 instructions at 0000011FFD9668A0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[155]	GETTABLE 	2 0 -1	; "gold_min"
+	2	[155]	GETTABLE 	3 1 -1	; "gold_min"
+	3	[155]	LT       	1 2 3
+	4	[155]	JMP      	0 1	; to 6
+	5	[155]	LOADBOOL 	2 0 1
+	6	[155]	LOADBOOL 	2 1 0
+	7	[155]	RETURN   	2 2
+	8	[156]	RETURN   	0 1
+constants (1) for 0000011FFD9668A0:
+	1	"gold_min"
+locals (2) for 0000011FFD9668A0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000011FFD9668A0:
+
+function <UpwardModel.lua:170,176> (20 instructions at 0000011FFD966920)
+2 params, 4 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[171]	GETTABLE 	2 0 -1	; "difficultyMode"
+	2	[171]	GETTABLE 	3 1 -1	; "difficultyMode"
+	3	[171]	EQ       	0 2 3
+	4	[171]	JMP      	0 8	; to 13
+	5	[172]	GETTABLE 	2 0 -2	; "raceLevel"
+	6	[172]	GETTABLE 	3 1 -2	; "raceLevel"
+	7	[172]	LT       	1 2 3
+	8	[172]	JMP      	0 1	; to 10
+	9	[172]	LOADBOOL 	2 0 1
+	10	[172]	LOADBOOL 	2 1 0
+	11	[172]	RETURN   	2 2
+	12	[172]	JMP      	0 7	; to 20
+	13	[174]	GETTABLE 	2 0 -1	; "difficultyMode"
+	14	[174]	GETTABLE 	3 1 -1	; "difficultyMode"
+	15	[174]	LT       	1 2 3
+	16	[174]	JMP      	0 1	; to 18
+	17	[174]	LOADBOOL 	2 0 1
+	18	[174]	LOADBOOL 	2 1 0
+	19	[174]	RETURN   	2 2
+	20	[176]	RETURN   	0 1
+constants (2) for 0000011FFD966920:
+	1	"difficultyMode"
+	2	"raceLevel"
+locals (2) for 0000011FFD966920:
+	0	a	1	21
+	1	b	1	21
+upvalues (0) for 0000011FFD966920:
+
+function <UpwardModel.lua:246,277> (45 instructions at 0000011FFD967780)
+1 param, 4 slots, 1 upvalue, 1 local, 11 constants, 0 functions
+	1	[248]	SELF     	1 0 -1	; "GetState"
+	2	[248]	CALL     	1 2 2
+	3	[248]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[248]	GETTABLE 	2 2 -3	; "Started"
+	5	[248]	EQ       	1 1 2
+	6	[248]	JMP      	0 2	; to 9
+	7	[249]	LOADBOOL 	1 0 0
+	8	[249]	RETURN   	1 2
+	9	[253]	GETTABLE 	1 0 -4	; "m_currentInfo"
+	10	[253]	EQ       	0 1 -5	; - nil
+	11	[253]	JMP      	0 2	; to 14
+	12	[254]	LOADBOOL 	1 0 0
+	13	[254]	RETURN   	1 2
+	14	[258]	SELF     	1 0 -6	; "GetRound"
+	15	[258]	CALL     	1 2 2
+	16	[258]	GETTABLE 	2 0 -7	; "m_roundCount"
+	17	[258]	LT       	0 2 1
+	18	[258]	JMP      	0 2	; to 21
+	19	[259]	LOADBOOL 	1 0 0
+	20	[259]	RETURN   	1 2
+	21	[263]	SELF     	1 0 -8	; "GetLevel"
+	22	[263]	CALL     	1 2 2
+	23	[263]	SELF     	2 0 -9	; "GetMaxLevel"
+	24	[263]	CALL     	2 2 2
+	25	[263]	LT       	0 2 1
+	26	[263]	JMP      	0 2	; to 29
+	27	[264]	LOADBOOL 	1 0 0
+	28	[264]	RETURN   	1 2
+	29	[268]	SELF     	1 0 -8	; "GetLevel"
+	30	[268]	CALL     	1 2 2
+	31	[268]	SELF     	2 0 -10	; "GetLastLevel"
+	32	[268]	CALL     	2 2 2
+	33	[268]	LT       	0 2 1
+	34	[268]	JMP      	0 2	; to 37
+	35	[269]	LOADBOOL 	1 0 0
+	36	[269]	RETURN   	1 2
+	37	[273]	SELF     	1 0 -11	; "GetLevelFinishTime"
+	38	[273]	CALL     	1 2 2
+	39	[273]	EQ       	1 1 -5	; - nil
+	40	[273]	JMP      	0 2	; to 43
+	41	[274]	LOADBOOL 	1 0 0
+	42	[274]	RETURN   	1 2
+	43	[276]	LOADBOOL 	1 1 0
+	44	[276]	RETURN   	1 2
+	45	[277]	RETURN   	0 1
+constants (11) for 0000011FFD967780:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_currentInfo"
+	5	nil
+	6	"GetRound"
+	7	"m_roundCount"
+	8	"GetLevel"
+	9	"GetMaxLevel"
+	10	"GetLastLevel"
+	11	"GetLevelFinishTime"
+locals (1) for 0000011FFD967780:
+	0	self	1	46
+upvalues (1) for 0000011FFD967780:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:279,283> (11 instructions at 0000011FFD9637C0)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[280]	GETTABLE 	2 1 -1	; "Source"
+	2	[280]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[280]	CALL     	2 2 2
+	4	[280]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[280]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[280]	EQ       	0 2 3
+	7	[280]	JMP      	0 3	; to 11
+	8	[281]	SELF     	2 0 -5	; "_TryAddMergeScore"
+	9	[281]	GETTABLE 	4 1 -1	; "Source"
+	10	[281]	CALL     	2 3 1
+	11	[283]	RETURN   	0 1
+constants (5) for 0000011FFD9637C0:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddMergeScore"
+locals (2) for 0000011FFD9637C0:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 0000011FFD9637C0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:286,299> (24 instructions at 0000011FFD968A60)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[287]	SELF     	2 0 -1	; "CanAddScore"
+	2	[287]	CALL     	2 2 2
+	3	[287]	TEST     	2 1
+	4	[287]	JMP      	0 1	; to 6
+	5	[288]	RETURN   	0 1
+	6	[290]	SELF     	2 1 -2	; "GetType"
+	7	[290]	CALL     	2 2 2
+	8	[291]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	9	[291]	GETTABLE 	3 3 2
+	10	[291]	EQ       	0 3 -4	; - nil
+	11	[291]	JMP      	0 1	; to 13
+	12	[292]	RETURN   	0 1
+	13	[295]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	14	[295]	GETTABLE 	3 3 2
+	15	[295]	GETTABLE 	3 3 -5	; "merge_score"
+	16	[296]	EQ       	1 3 -4	; - nil
+	17	[296]	JMP      	0 6	; to 24
+	18	[297]	SELF     	4 0 -6	; "_AddScore"
+	19	[297]	MOVE     	6 3
+	20	[297]	GETTABUP 	7 0 -7	; _ENV "EUpwardAddScoreScene"
+	21	[297]	GETTABLE 	7 7 -8	; "Merge"
+	22	[297]	MOVE     	8 1
+	23	[297]	CALL     	4 5 1
+	24	[299]	RETURN   	0 1
+constants (8) for 0000011FFD968A60:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_mergeItemScoreConfig"
+	4	nil
+	5	"merge_score"
+	6	"_AddScore"
+	7	"EUpwardAddScoreScene"
+	8	"Merge"
+locals (4) for 0000011FFD968A60:
+	0	self	1	25
+	1	itemModel	1	25
+	2	itemType	8	25
+	3	mergeScore	16	25
+upvalues (1) for 0000011FFD968A60:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:302,341> (67 instructions at 0000011FFD968C60)
+2 params, 10 slots, 1 upvalue, 8 locals, 22 constants, 0 functions
+	1	[303]	SELF     	2 0 -1	; "CanAddScore"
+	2	[303]	CALL     	2 2 2
+	3	[303]	TEST     	2 1
+	4	[303]	JMP      	0 1	; to 6
+	5	[304]	RETURN   	0 1
+	6	[307]	LOADNIL  	2 1
+	7	[308]	GETTABLE 	4 0 -2	; "m_bUseDiff"
+	8	[308]	TEST     	4 0
+	9	[308]	JMP      	0 15	; to 25
+	10	[309]	SELF     	4 1 -3	; "GetDiffScore"
+	11	[309]	CALL     	4 2 2
+	12	[310]	EQ       	0 4 -4	; - 0
+	13	[310]	JMP      	0 1	; to 15
+	14	[311]	RETURN   	0 1
+	15	[314]	GETTABUP 	5 0 -5	; _ENV "Table"
+	16	[314]	GETTABLE 	5 5 -6	; "BinarySearch"
+	17	[314]	GETTABLE 	6 0 -7	; "m_finishOrderScoreConfig"
+	18	[314]	MOVE     	7 4
+	19	[314]	LOADK    	8 -8	; "diff_score_min"
+	20	[314]	LOADK    	9 -9	; "diff_score_max"
+	21	[314]	CALL     	5 5 2
+	22	[314]	MOVE     	2 5
+	23	[315]	MOVE     	3 4
+	24	[315]	JMP      	0 14	; to 39
+	25	[317]	SELF     	4 1 -10	; "GetPrice"
+	26	[317]	CALL     	4 2 2
+	27	[318]	EQ       	0 4 -4	; - 0
+	28	[318]	JMP      	0 1	; to 30
+	29	[319]	RETURN   	0 1
+	30	[322]	GETTABUP 	5 0 -5	; _ENV "Table"
+	31	[322]	GETTABLE 	5 5 -6	; "BinarySearch"
+	32	[322]	GETTABLE 	6 0 -7	; "m_finishOrderScoreConfig"
+	33	[322]	MOVE     	7 4
+	34	[322]	LOADK    	8 -11	; "gold_min"
+	35	[322]	LOADK    	9 -12	; "gold_max"
+	36	[322]	CALL     	5 5 2
+	37	[322]	MOVE     	2 5
+	38	[323]	MOVE     	3 4
+	39	[326]	EQ       	0 2 -13	; - nil
+	40	[326]	JMP      	0 1	; to 42
+	41	[327]	RETURN   	0 1
+	42	[330]	GETTABLE 	4 0 -7	; "m_finishOrderScoreConfig"
+	43	[330]	GETTABLE 	4 4 2
+	44	[332]	GETTABLE 	5 4 -14	; "reward_num_percentage"
+	45	[332]	TEST     	5 0
+	46	[332]	JMP      	0 8	; to 55
+	47	[332]	GETTABUP 	5 0 -15	; _ENV "math"
+	48	[332]	GETTABLE 	5 5 -16	; "floor"
+	49	[332]	GETTABLE 	6 4 -14	; "reward_num_percentage"
+	50	[332]	MUL      	6 3 6
+	51	[332]	DIV      	6 6 -17	; - 10000
+	52	[332]	CALL     	5 2 2
+	53	[332]	TEST     	5 1
+	54	[332]	JMP      	0 1	; to 56
+	55	[332]	GETTABLE 	5 4 -18	; "reward_num_fix"
+	56	[333]	LE       	0 5 -4	; - 0
+	57	[333]	JMP      	0 1	; to 59
+	58	[334]	RETURN   	0 1
+	59	[337]	NEWTABLE 	6 0 2
+	60	[338]	GETTABUP 	7 0 -19	; _ENV "PROPERTY_TYPE"
+	61	[338]	GETTABLE 	8 0 -20	; "m_definition"
+	62	[338]	GETTABLE 	8 8 -21	; "ActivityTokenPropertyType"
+	63	[338]	SETTABLE 	6 7 8
+	64	[339]	GETTABUP 	7 0 -22	; _ENV "PROPERTY_COUNT"
+	65	[339]	SETTABLE 	6 7 5
+	66	[340]	RETURN   	6 2
+	67	[341]	RETURN   	0 1
+constants (22) for 0000011FFD968C60:
+	1	"CanAddScore"
+	2	"m_bUseDiff"
+	3	"GetDiffScore"
+	4	0
+	5	"Table"
+	6	"BinarySearch"
+	7	"m_finishOrderScoreConfig"
+	8	"diff_score_min"
+	9	"diff_score_max"
+	10	"GetPrice"
+	11	"gold_min"
+	12	"gold_max"
+	13	nil
+	14	"reward_num_percentage"
+	15	"math"
+	16	"floor"
+	17	10000
+	18	"reward_num_fix"
+	19	"PROPERTY_TYPE"
+	20	"m_definition"
+	21	"ActivityTokenPropertyType"
+	22	"PROPERTY_COUNT"
+locals (8) for 0000011FFD968C60:
+	0	self	1	68
+	1	order	1	68
+	2	selectedIdx	7	68
+	3	score	7	68
+	4	diffScore	12	24
+	5	price	27	39
+	6	selected	44	68
+	7	count	56	68
+upvalues (1) for 0000011FFD968C60:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:343,345> (7 instructions at 0000011FFD969660)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[344]	SELF     	2 0 -1	; "_AddScore"
+	2	[344]	MOVE     	4 1
+	3	[344]	GETTABUP 	5 0 -2	; _ENV "EUpwardAddScoreScene"
+	4	[344]	GETTABLE 	5 5 -3	; "Order"
+	5	[344]	LOADNIL  	6 0
+	6	[344]	CALL     	2 5 1
+	7	[345]	RETURN   	0 1
+constants (3) for 0000011FFD969660:
+	1	"_AddScore"
+	2	"EUpwardAddScoreScene"
+	3	"Order"
+locals (2) for 0000011FFD969660:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000011FFD969660:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:347,349> (4 instructions at 0000011FFD968DE0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[348]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[348]	GETTABLE 	1 1 -2	; "ActivityTokenPropertyType"
+	3	[348]	RETURN   	1 2
+	4	[349]	RETURN   	0 1
+constants (2) for 0000011FFD968DE0:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (1) for 0000011FFD968DE0:
+	0	self	1	5
+upvalues (0) for 0000011FFD968DE0:
+
+function <UpwardModel.lua:351,353> (8 instructions at 0000011FFD9696E0)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[352]	GETTABLE 	2 0 -1	; "m_definition"
+	2	[352]	GETTABLE 	2 2 -2	; "ActivityTokenPropertyType"
+	3	[352]	EQ       	1 1 2
+	4	[352]	JMP      	0 1	; to 6
+	5	[352]	LOADBOOL 	2 0 1
+	6	[352]	LOADBOOL 	2 1 0
+	7	[352]	RETURN   	2 2
+	8	[353]	RETURN   	0 1
+constants (2) for 0000011FFD9696E0:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (2) for 0000011FFD9696E0:
+	0	self	1	9
+	1	propertyType	1	9
+upvalues (0) for 0000011FFD9696E0:
+
+function <UpwardModel.lua:356,391> (68 instructions at 0000011FFD9689E0)
+4 params, 13 slots, 1 upvalue, 7 locals, 31 constants, 0 functions
+	1	[357]	SELF     	4 0 -1	; "GetLevel"
+	2	[357]	CALL     	4 2 2
+	3	[358]	SELF     	5 0 -2	; "GetRewardCongfigByLevel"
+	4	[358]	MOVE     	7 4
+	5	[358]	CALL     	5 3 2
+	6	[359]	EQ       	0 5 -3	; - nil
+	7	[359]	JMP      	0 1	; to 9
+	8	[360]	RETURN   	0 1
+	9	[363]	SELF     	6 0 -4	; "GetScore"
+	10	[363]	CALL     	6 2 2
+	11	[363]	GETTABLE 	7 5 -5	; "target"
+	12	[363]	LE       	0 7 6
+	13	[363]	JMP      	0 1	; to 15
+	14	[364]	RETURN   	0 1
+	15	[367]	GETTABUP 	6 0 -6	; _ENV "math"
+	16	[367]	GETTABLE 	6 6 -7	; "min"
+	17	[367]	SELF     	7 0 -4	; "GetScore"
+	18	[367]	CALL     	7 2 2
+	19	[367]	ADD      	7 7 1
+	20	[367]	GETTABLE 	8 5 -5	; "target"
+	21	[367]	CALL     	6 3 2
+	22	[368]	SELF     	7 0 -8	; "SetScore"
+	23	[368]	MOVE     	9 6
+	24	[368]	CALL     	7 3 1
+	25	[369]	SELF     	7 0 -9	; "LogActivity"
+	26	[369]	GETTABUP 	9 0 -10	; _ENV "EBIType"
+	27	[369]	GETTABLE 	9 9 -11	; "ActivityAddScore"
+	28	[369]	GETTABUP 	10 0 -12	; _ENV "GM"
+	29	[369]	GETTABLE 	10 10 -13	; "BIManager"
+	30	[369]	SELF     	10 10 -14	; "TableToString"
+	31	[369]	NEWTABLE 	12 0 2
+	32	[370]	SETTABLE 	12 -15 1	; "num" -
+	33	[371]	SETTABLE 	12 -16 2	; "type" -
+	34	[369]	CALL     	10 3 0
+	35	[369]	CALL     	7 0 1
+	36	[374]	GETTABUP 	7 0 -17	; _ENV "EventDispatcher"
+	37	[374]	GETTABLE 	7 7 -18	; "DispatchEvent"
+	38	[374]	GETTABLE 	8 0 -19	; "m_definition"
+	39	[374]	GETTABLE 	8 8 -20	; "Event_ScoreChanged"
+	40	[374]	NEWTABLE 	9 0 3
+	41	[375]	SETTABLE 	9 -21 2	; "Scene" -
+	42	[376]	SETTABLE 	9 -22 3	; "Source" -
+	43	[377]	SETTABLE 	9 -23 1	; "TokenScore" -
+	44	[374]	CALL     	7 3 1
+	45	[381]	GETTABLE 	7 5 -5	; "target"
+	46	[381]	LE       	0 7 6
+	47	[381]	JMP      	0 20	; to 68
+	48	[383]	GETTABUP 	7 0 -24	; _ENV "ApplicationManager"
+	49	[383]	GETTABLE 	7 7 -25	; "Instance"
+	50	[383]	GETTABLE 	7 7 -26	; "isNetworkConnected"
+	51	[383]	TEST     	7 1
+	52	[383]	JMP      	0 12	; to 65
+	53	[384]	SELF     	7 0 -27	; "SetLevelFinishTime"
+	54	[384]	GETTABUP 	9 0 -12	; _ENV "GM"
+	55	[384]	GETTABLE 	9 9 -28	; "GameModel"
+	56	[384]	SELF     	9 9 -29	; "GetServerTime"
+	57	[384]	CALL     	9 2 0
+	58	[384]	CALL     	7 0 1
+	59	[385]	GETTABUP 	7 0 -17	; _ENV "EventDispatcher"
+	60	[385]	GETTABLE 	7 7 -18	; "DispatchEvent"
+	61	[385]	GETTABLE 	8 0 -19	; "m_definition"
+	62	[385]	GETTABLE 	8 8 -30	; "Event_FullScoreWithoutNet"
+	63	[385]	CALL     	7 2 1
+	64	[386]	RETURN   	0 1
+	65	[389]	SELF     	7 0 -31	; "_LevelUp"
+	66	[389]	MOVE     	9 4
+	67	[389]	CALL     	7 3 1
+	68	[391]	RETURN   	0 1
+constants (31) for 0000011FFD9689E0:
+	1	"GetLevel"
+	2	"GetRewardCongfigByLevel"
+	3	nil
+	4	"GetScore"
+	5	"target"
+	6	"math"
+	7	"min"
+	8	"SetScore"
+	9	"LogActivity"
+	10	"EBIType"
+	11	"ActivityAddScore"
+	12	"GM"
+	13	"BIManager"
+	14	"TableToString"
+	15	"num"
+	16	"type"
+	17	"EventDispatcher"
+	18	"DispatchEvent"
+	19	"m_definition"
+	20	"Event_ScoreChanged"
+	21	"Scene"
+	22	"Source"
+	23	"TokenScore"
+	24	"ApplicationManager"
+	25	"Instance"
+	26	"isNetworkConnected"
+	27	"SetLevelFinishTime"
+	28	"GameModel"
+	29	"GetServerTime"
+	30	"Event_FullScoreWithoutNet"
+	31	"_LevelUp"
+locals (7) for 0000011FFD9689E0:
+	0	self	1	69
+	1	addScore	1	69
+	2	scene	1	69
+	3	item	1	69
+	4	level	3	69
+	5	rewardConfig	6	69
+	6	score	22	69
+upvalues (1) for 0000011FFD9689E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:394,418> (62 instructions at 0000011FFD968BE0)
+2 params, 8 slots, 1 upvalue, 3 locals, 26 constants, 0 functions
+	1	[395]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	2	[395]	GETTABLE 	2 2 -2	; "finishAliveNum"
+	3	[395]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	4	[395]	GETTABLE 	3 3 -3	; "curAliveNum"
+	5	[395]	SUB      	2 2 3
+	6	[395]	ADD      	2 2 -4	; - 1
+	7	[396]	SELF     	3 0 -5	; "SetRank"
+	8	[396]	MOVE     	5 2
+	9	[396]	CALL     	3 3 1
+	10	[397]	SELF     	3 0 -6	; "LogLevelEnd"
+	11	[397]	LOADBOOL 	5 1 0
+	12	[397]	CALL     	3 3 1
+	13	[399]	SELF     	3 0 -7	; "SetLevel"
+	14	[399]	ADD      	5 1 -4	; - 1
+	15	[399]	CALL     	3 3 1
+	16	[400]	SELF     	3 0 -8	; "LogActivity"
+	17	[400]	GETTABUP 	5 0 -9	; _ENV "EBIType"
+	18	[400]	GETTABLE 	5 5 -10	; "ActivityRankUp"
+	19	[400]	SELF     	6 0 -11	; "GetMaxLevel"
+	20	[400]	CALL     	6 2 2
+	21	[400]	EQ       	0 1 6
+	22	[400]	JMP      	0 3	; to 26
+	23	[400]	LOADK    	6 -12	; 0
+	24	[400]	TEST     	6 1
+	25	[400]	JMP      	0 1	; to 27
+	26	[400]	MOVE     	6 1
+	27	[400]	CALL     	3 4 1
+	28	[402]	SELF     	3 0 -13	; "SetRecoverRewardsLevel"
+	29	[402]	MOVE     	5 1
+	30	[402]	CALL     	3 3 1
+	31	[404]	SELF     	3 0 -14	; "RandomDeleteAvatar"
+	32	[404]	CALL     	3 2 1
+	33	[405]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	34	[405]	SETTABLE 	3 -15 -16	; "arriveTimeList" nil
+	35	[406]	SELF     	3 0 -17	; "SaveCurrentInfo"
+	36	[406]	CALL     	3 2 1
+	37	[408]	GETTABUP 	3 0 -18	; _ENV "EventDispatcher"
+	38	[408]	GETTABLE 	3 3 -19	; "DispatchEvent"
+	39	[408]	GETTABUP 	4 0 -20	; _ENV "EEventType"
+	40	[408]	GETTABLE 	4 4 -21	; "OrderStatusChanged"
+	41	[408]	CALL     	3 2 1
+	42	[411]	ADD      	3 1 -4	; - 1
+	43	[411]	SELF     	4 0 -11	; "GetMaxLevel"
+	44	[411]	CALL     	4 2 2
+	45	[411]	LT       	0 4 3
+	46	[411]	JMP      	0 5	; to 52
+	47	[412]	SELF     	3 0 -22	; "SetRound"
+	48	[412]	SELF     	5 0 -23	; "GetRound"
+	49	[412]	CALL     	5 2 2
+	50	[412]	ADD      	5 5 -4	; - 1
+	51	[412]	CALL     	3 3 1
+	52	[415]	SELF     	3 0 -23	; "GetRound"
+	53	[415]	CALL     	3 2 2
+	54	[415]	GETTABLE 	4 0 -24	; "m_roundCount"
+	55	[415]	LT       	0 4 3
+	56	[415]	JMP      	0 5	; to 62
+	57	[416]	GETTABUP 	3 0 -18	; _ENV "EventDispatcher"
+	58	[416]	GETTABLE 	3 3 -19	; "DispatchEvent"
+	59	[416]	GETTABLE 	4 0 -25	; "m_definition"
+	60	[416]	GETTABLE 	4 4 -26	; "Event_FinishedAll"
+	61	[416]	CALL     	3 2 1
+	62	[418]	RETURN   	0 1
+constants (26) for 0000011FFD968BE0:
+	1	"m_currentInfo"
+	2	"finishAliveNum"
+	3	"curAliveNum"
+	4	1
+	5	"SetRank"
+	6	"LogLevelEnd"
+	7	"SetLevel"
+	8	"LogActivity"
+	9	"EBIType"
+	10	"ActivityRankUp"
+	11	"GetMaxLevel"
+	12	0
+	13	"SetRecoverRewardsLevel"
+	14	"RandomDeleteAvatar"
+	15	"arriveTimeList"
+	16	nil
+	17	"SaveCurrentInfo"
+	18	"EventDispatcher"
+	19	"DispatchEvent"
+	20	"EEventType"
+	21	"OrderStatusChanged"
+	22	"SetRound"
+	23	"GetRound"
+	24	"m_roundCount"
+	25	"m_definition"
+	26	"Event_FinishedAll"
+locals (3) for 0000011FFD968BE0:
+	0	self	1	63
+	1	level	1	63
+	2	rank	7	63
+upvalues (1) for 0000011FFD968BE0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:420,438> (41 instructions at 0000011FFD9694E0)
+2 params, 7 slots, 1 upvalue, 3 locals, 22 constants, 0 functions
+	1	[421]	NEWTABLE 	2 0 7
+	2	[422]	SELF     	3 0 -2	; "GetId"
+	3	[422]	CALL     	3 2 2
+	4	[422]	SETTABLE 	2 -1 3	; "id" -
+	5	[423]	SELF     	3 0 -4	; "GetRound"
+	6	[423]	CALL     	3 2 2
+	7	[423]	SETTABLE 	2 -3 3	; "r" -
+	8	[424]	SELF     	3 0 -6	; "GetLevel"
+	9	[424]	CALL     	3 2 2
+	10	[424]	SETTABLE 	2 -5 3	; "lv" -
+	11	[425]	SELF     	3 0 -8	; "GetDifficultyMode"
+	12	[425]	CALL     	3 2 2
+	13	[425]	SETTABLE 	2 -7 3	; "diff" -
+	14	[426]	SELF     	3 0 -10	; "GetCurLevelTryTimes"
+	15	[426]	CALL     	3 2 2
+	16	[426]	SETTABLE 	2 -9 3	; "tryNum" -
+	17	[427]	SETTABLE 	2 -11 1	; "isSuccess" -
+	18	[428]	SELF     	3 0 -13	; "GetScore"
+	19	[428]	CALL     	3 2 2
+	20	[428]	SETTABLE 	2 -12 3	; "score" -
+	21	[430]	TEST     	1 0
+	22	[430]	JMP      	0 7	; to 30
+	23	[431]	SELF     	3 0 -15	; "GetRank"
+	24	[431]	CALL     	3 2 2
+	25	[431]	SETTABLE 	2 -14 3	; "rank" -
+	26	[432]	SELF     	3 0 -16	; "SetCurLevelTryTimes"
+	27	[432]	LOADK    	5 -17	; 1
+	28	[432]	CALL     	3 3 1
+	29	[432]	JMP      	0 4	; to 34
+	30	[434]	SELF     	3 0 -16	; "SetCurLevelTryTimes"
+	31	[434]	GETTABLE 	5 2 -9	; "tryNum"
+	32	[434]	ADD      	5 5 -17	; - 1
+	33	[434]	CALL     	3 3 1
+	34	[437]	GETTABUP 	3 0 -18	; _ENV "GM"
+	35	[437]	GETTABLE 	3 3 -19	; "BIManager"
+	36	[437]	SELF     	3 3 -20	; "LogAction"
+	37	[437]	GETTABLE 	5 0 -21	; "m_definition"
+	38	[437]	GETTABLE 	5 5 -22	; "LevelEndBIType"
+	39	[437]	MOVE     	6 2
+	40	[437]	CALL     	3 4 1
+	41	[438]	RETURN   	0 1
+constants (22) for 0000011FFD9694E0:
+	1	"id"
+	2	"GetId"
+	3	"r"
+	4	"GetRound"
+	5	"lv"
+	6	"GetLevel"
+	7	"diff"
+	8	"GetDifficultyMode"
+	9	"tryNum"
+	10	"GetCurLevelTryTimes"
+	11	"isSuccess"
+	12	"score"
+	13	"GetScore"
+	14	"rank"
+	15	"GetRank"
+	16	"SetCurLevelTryTimes"
+	17	1
+	18	"GM"
+	19	"BIManager"
+	20	"LogAction"
+	21	"m_definition"
+	22	"LevelEndBIType"
+locals (3) for 0000011FFD9694E0:
+	0	self	1	42
+	1	bSuccess	1	42
+	2	biAction	21	42
+upvalues (1) for 0000011FFD9694E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:440,449> (26 instructions at 0000011FFD9698E0)
+1 param, 6 slots, 3 upvalues, 1 local, 16 constants, 0 functions
+	1	[441]	SELF     	1 0 -1	; "LogLevelEnd"
+	2	[441]	LOADBOOL 	3 0 0
+	3	[441]	CALL     	1 3 1
+	4	[443]	SETTABLE 	0 -2 -3	; "m_currentInfo" nil
+	5	[444]	SELF     	1 0 -4	; "SaveCurrentInfo"
+	6	[444]	CALL     	1 2 1
+	7	[445]	SELF     	1 0 -5	; "SetScore"
+	8	[445]	LOADK    	3 -6	; 0
+	9	[445]	CALL     	1 3 1
+	10	[446]	GETTABUP 	1 0 -7	; _ENV "EventDispatcher"
+	11	[446]	GETTABLE 	1 1 -8	; "DispatchEvent"
+	12	[446]	GETTABLE 	2 0 -9	; "m_definition"
+	13	[446]	GETTABLE 	2 2 -10	; "Event_Fail"
+	14	[446]	CALL     	1 2 1
+	15	[447]	GETTABLE 	1 0 -11	; "m_dbTable"
+	16	[447]	SELF     	1 1 -12	; "Set"
+	17	[447]	GETTABUP 	3 1 -13	; EStrDBKeys "FailWindowPop"
+	18	[447]	GETUPVAL 	4 2	; DBColumnValue
+	19	[447]	LOADK    	5 -14	; "1"
+	20	[447]	CALL     	1 5 1
+	21	[448]	GETTABUP 	1 0 -7	; _ENV "EventDispatcher"
+	22	[448]	GETTABLE 	1 1 -8	; "DispatchEvent"
+	23	[448]	GETTABUP 	2 0 -15	; _ENV "EEventType"
+	24	[448]	GETTABLE 	2 2 -16	; "OrderStatusChanged"
+	25	[448]	CALL     	1 2 1
+	26	[449]	RETURN   	0 1
+constants (16) for 0000011FFD9698E0:
+	1	"LogLevelEnd"
+	2	"m_currentInfo"
+	3	nil
+	4	"SaveCurrentInfo"
+	5	"SetScore"
+	6	0
+	7	"EventDispatcher"
+	8	"DispatchEvent"
+	9	"m_definition"
+	10	"Event_Fail"
+	11	"m_dbTable"
+	12	"Set"
+	13	"FailWindowPop"
+	14	"1"
+	15	"EEventType"
+	16	"OrderStatusChanged"
+locals (1) for 0000011FFD9698E0:
+	0	self	1	27
+upvalues (3) for 0000011FFD9698E0:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+	2	DBColumnValue	1	1
+
+function <UpwardModel.lua:451,453> (11 instructions at 0000011FFD968B60)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[452]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[452]	SELF     	1 1 -2	; "GetValue"
+	3	[452]	GETTABUP 	3 0 -3	; EStrDBKeys "FailWindowPop"
+	4	[452]	GETUPVAL 	4 1	; DBColumnValue
+	5	[452]	CALL     	1 4 2
+	6	[452]	EQ       	1 1 -4	; - "1"
+	7	[452]	JMP      	0 1	; to 9
+	8	[452]	LOADBOOL 	1 0 1
+	9	[452]	LOADBOOL 	1 1 0
+	10	[452]	RETURN   	1 2
+	11	[453]	RETURN   	0 1
+constants (4) for 0000011FFD968B60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FailWindowPop"
+	4	"1"
+locals (1) for 0000011FFD968B60:
+	0	self	1	12
+upvalues (2) for 0000011FFD968B60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:455,457> (7 instructions at 0000011FFD969260)
+1 param, 6 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[456]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[456]	SELF     	1 1 -2	; "Set"
+	3	[456]	GETTABUP 	3 0 -3	; EStrDBKeys "FailWindowPop"
+	4	[456]	GETUPVAL 	4 1	; DBColumnValue
+	5	[456]	LOADK    	5 -4	; "0"
+	6	[456]	CALL     	1 5 1
+	7	[457]	RETURN   	0 1
+constants (4) for 0000011FFD969260:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FailWindowPop"
+	4	"0"
+locals (1) for 0000011FFD969260:
+	0	self	1	8
+upvalues (2) for 0000011FFD969260:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:459,463> (32 instructions at 0000011FFD969060)
+3 params, 9 slots, 1 upvalue, 3 locals, 18 constants, 0 functions
+	1	[460]	SELF     	3 0 -1	; "SetRecoverRewardsLevel"
+	2	[460]	LOADK    	5 -2	; 0
+	3	[460]	CALL     	3 3 1
+	4	[461]	GETTABUP 	3 0 -3	; _ENV "RewardApi"
+	5	[461]	GETTABLE 	3 3 -4	; "AcquireRewardsLogic"
+	6	[461]	SELF     	4 0 -5	; "GetRewardCongfigByLevel"
+	7	[461]	MOVE     	6 1
+	8	[461]	CALL     	4 3 2
+	9	[461]	GETTABLE 	4 4 -6	; "rewards"
+	10	[461]	GETTABUP 	5 0 -7	; _ENV "EPropertySource"
+	11	[461]	GETTABLE 	5 5 -8	; "Give"
+	12	[461]	GETTABLE 	6 0 -9	; "m_definition"
+	13	[461]	GETTABLE 	6 6 -10	; "GetRewardsBIType"
+	14	[461]	GETTABUP 	7 0 -11	; _ENV "EGameMode"
+	15	[461]	GETTABLE 	7 7 -12	; "Main"
+	16	[461]	GETTABUP 	8 0 -13	; _ENV "CacheItemType"
+	17	[461]	GETTABLE 	8 8 -14	; "Type2"
+	18	[461]	CALL     	3 6 1
+	19	[462]	SELF     	3 0 -15	; "LogActivity"
+	20	[462]	GETTABUP 	5 0 -16	; _ENV "EBIType"
+	21	[462]	GETTABLE 	5 5 -17	; "ActivityGetRewards"
+	22	[462]	SELF     	6 0 -18	; "GetMaxLevel"
+	23	[462]	CALL     	6 2 2
+	24	[462]	EQ       	0 1 6
+	25	[462]	JMP      	0 3	; to 29
+	26	[462]	LOADK    	6 -2	; 0
+	27	[462]	TEST     	6 1
+	28	[462]	JMP      	0 1	; to 30
+	29	[462]	MOVE     	6 1
+	30	[462]	MOVE     	7 2
+	31	[462]	CALL     	3 5 1
+	32	[463]	RETURN   	0 1
+constants (18) for 0000011FFD969060:
+	1	"SetRecoverRewardsLevel"
+	2	0
+	3	"RewardApi"
+	4	"AcquireRewardsLogic"
+	5	"GetRewardCongfigByLevel"
+	6	"rewards"
+	7	"EPropertySource"
+	8	"Give"
+	9	"m_definition"
+	10	"GetRewardsBIType"
+	11	"EGameMode"
+	12	"Main"
+	13	"CacheItemType"
+	14	"Type2"
+	15	"LogActivity"
+	16	"EBIType"
+	17	"ActivityGetRewards"
+	18	"GetMaxLevel"
+locals (3) for 0000011FFD969060:
+	0	self	1	33
+	1	level	1	33
+	2	isFinalReward	1	33
+upvalues (1) for 0000011FFD969060:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:465,475> (20 instructions at 0000011FFD968D60)
+1 param, 5 slots, 2 upvalues, 3 locals, 7 constants, 0 functions
+	1	[466]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[466]	SELF     	1 1 -2	; "GetValue"
+	3	[466]	GETTABUP 	3 0 -3	; EStrDBKeys "RecoverRewardsLevel"
+	4	[466]	GETUPVAL 	4 1	; DBColumnValue
+	5	[466]	CALL     	1 4 2
+	6	[467]	EQ       	1 1 -4	; - nil
+	7	[467]	JMP      	0 2	; to 10
+	8	[467]	EQ       	0 1 -5	; - "0"
+	9	[467]	JMP      	0 3	; to 13
+	10	[468]	LOADNIL  	2 0
+	11	[468]	RETURN   	2 2
+	12	[468]	JMP      	0 7	; to 20
+	13	[470]	SELF     	2 0 -6	; "GetRewardCongfigByLevel"
+	14	[470]	MOVE     	4 1
+	15	[470]	CALL     	2 3 2
+	16	[471]	EQ       	1 2 -4	; - nil
+	17	[471]	JMP      	0 2	; to 20
+	18	[472]	GETTABLE 	3 2 -7	; "rewards"
+	19	[472]	RETURN   	3 2
+	20	[475]	RETURN   	0 1
+constants (7) for 0000011FFD968D60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"RecoverRewardsLevel"
+	4	nil
+	5	"0"
+	6	"GetRewardCongfigByLevel"
+	7	"rewards"
+locals (3) for 0000011FFD968D60:
+	0	self	1	21
+	1	level	6	21
+	2	rewardConfig	16	20
+upvalues (2) for 0000011FFD968D60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:477,479> (7 instructions at 0000011FFD969760)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[478]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[478]	SELF     	2 2 -2	; "Set"
+	3	[478]	GETTABUP 	4 0 -3	; EStrDBKeys "RecoverRewardsLevel"
+	4	[478]	GETUPVAL 	5 1	; DBColumnValue
+	5	[478]	MOVE     	6 1
+	6	[478]	CALL     	2 5 1
+	7	[479]	RETURN   	0 1
+constants (3) for 0000011FFD969760:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RecoverRewardsLevel"
+locals (2) for 0000011FFD969760:
+	0	self	1	8
+	1	level	1	8
+upvalues (2) for 0000011FFD969760:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:481,491> (20 instructions at 0000011FFD9690E0)
+2 params, 6 slots, 1 upvalue, 4 locals, 4 constants, 0 functions
+	1	[482]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[482]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[482]	GETTABLE 	3 0 -3	; "m_rewardConfigs"
+	4	[482]	CALL     	2 2 2
+	5	[482]	TEST     	2 0
+	6	[482]	JMP      	0 1	; to 8
+	7	[483]	RETURN   	0 1
+	8	[486]	SELF     	2 0 -4	; "GetDifficultyMode"
+	9	[486]	CALL     	2 2 2
+	10	[487]	GETTABLE 	3 0 -3	; "m_rewardConfigs"
+	11	[487]	GETTABLE 	3 3 2
+	12	[488]	GETTABUP 	4 0 -1	; _ENV "Table"
+	13	[488]	GETTABLE 	4 4 -2	; "IsEmpty"
+	14	[488]	MOVE     	5 3
+	15	[488]	CALL     	4 2 2
+	16	[488]	TEST     	4 1
+	17	[488]	JMP      	0 2	; to 20
+	18	[489]	GETTABLE 	4 3 1
+	19	[489]	RETURN   	4 2
+	20	[491]	RETURN   	0 1
+constants (4) for 0000011FFD9690E0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_rewardConfigs"
+	4	"GetDifficultyMode"
+locals (4) for 0000011FFD9690E0:
+	0	self	1	21
+	1	level	1	21
+	2	selectedDif	10	21
+	3	rewardConfig	12	21
+upvalues (1) for 0000011FFD9690E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:496,508> (21 instructions at 0000011FFD9692E0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[497]	SELF     	1 0 -1	; "GetState"
+	2	[497]	CALL     	1 2 2
+	3	[497]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[497]	GETTABLE 	2 2 -3	; "Started"
+	5	[497]	EQ       	1 1 2
+	6	[497]	JMP      	0 2	; to 9
+	7	[498]	LOADBOOL 	1 0 0
+	8	[498]	RETURN   	1 2
+	9	[501]	SELF     	1 0 -4	; "GetRound"
+	10	[501]	CALL     	1 2 2
+	11	[501]	GETTABLE 	2 0 -5	; "m_roundCount"
+	12	[501]	LT       	0 2 1
+	13	[501]	JMP      	0 2	; to 16
+	14	[502]	LOADBOOL 	1 0 0
+	15	[502]	RETURN   	1 2
+	16	[505]	GETTABLE 	1 0 -6	; "m_currentInfo"
+	17	[505]	EQ       	0 1 -7	; - nil
+	18	[505]	JMP      	0 2	; to 21
+	19	[506]	LOADBOOL 	1 1 0
+	20	[506]	RETURN   	1 2
+	21	[508]	RETURN   	0 1
+constants (7) for 0000011FFD9692E0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetRound"
+	5	"m_roundCount"
+	6	"m_currentInfo"
+	7	nil
+locals (1) for 0000011FFD9692E0:
+	0	self	1	22
+upvalues (1) for 0000011FFD9692E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:510,512> (3 instructions at 0000011FFD969460)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[511]	GETTABLE 	1 0 -1	; "m_bDifficultySelect"
+	2	[511]	RETURN   	1 2
+	3	[512]	RETURN   	0 1
+constants (1) for 0000011FFD969460:
+	1	"m_bDifficultySelect"
+locals (1) for 0000011FFD969460:
+	0	self	1	4
+upvalues (0) for 0000011FFD969460:
+
+function <UpwardModel.lua:514,516> (5 instructions at 0000011FFD968AE0)
+3 params, 4 slots, 0 upvalues, 3 locals, 1 constant, 0 functions
+	1	[515]	GETTABLE 	3 0 -1	; "m_robotConfigs"
+	2	[515]	GETTABLE 	3 3 1
+	3	[515]	GETTABLE 	3 3 2
+	4	[515]	RETURN   	3 2
+	5	[516]	RETURN   	0 1
+constants (1) for 0000011FFD968AE0:
+	1	"m_robotConfigs"
+locals (3) for 0000011FFD968AE0:
+	0	self	1	6
+	1	diff	1	6
+	2	level	1	6
+upvalues (0) for 0000011FFD968AE0:
+
+function <UpwardModel.lua:519,523> (15 instructions at 0000011FFD969360)
+1 param, 4 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[520]	GETTABLE 	1 0 -1	; "m_bDifficultySelect"
+	2	[520]	TEST     	1 1
+	3	[520]	JMP      	0 11	; to 15
+	4	[520]	SELF     	1 0 -2	; "GetLevel"
+	5	[520]	CALL     	1 2 2
+	6	[520]	EQ       	0 1 -3	; - 1
+	7	[520]	JMP      	0 7	; to 15
+	8	[520]	SELF     	1 0 -4	; "GetRound"
+	9	[520]	CALL     	1 2 2
+	10	[520]	EQ       	0 1 -3	; - 1
+	11	[520]	JMP      	0 3	; to 15
+	12	[521]	SELF     	1 0 -5	; "SignUp"
+	13	[521]	LOADBOOL 	3 1 0
+	14	[521]	CALL     	1 3 1
+	15	[523]	RETURN   	0 1
+constants (5) for 0000011FFD969360:
+	1	"m_bDifficultySelect"
+	2	"GetLevel"
+	3	1
+	4	"GetRound"
+	5	"SignUp"
+locals (1) for 0000011FFD969360:
+	0	self	1	16
+upvalues (0) for 0000011FFD969360:
+
+function <UpwardModel.lua:525,608> (191 instructions at 0000011FFD9693E0)
+3 params, 25 slots, 2 upvalues, 30 locals, 69 constants, 1 function
+	1	[526]	SELF     	3 0 -1	; "ClearTopTipState"
+	2	[526]	CALL     	3 2 1
+	3	[527]	LOADNIL  	3 0
+	4	[528]	TEST     	1 0
+	5	[528]	JMP      	0 10	; to 16
+	6	[529]	EQ       	1 2 -2	; - nil
+	7	[529]	JMP      	0 2	; to 10
+	8	[529]	TESTSET  	3 2 1
+	9	[529]	JMP      	0 2	; to 12
+	10	[529]	GETTABUP 	4 0 -3	; _ENV "EUpwardDifficultyMode"
+	11	[529]	GETTABLE 	3 4 -4	; "None"
+	12	[530]	SELF     	4 0 -5	; "SetDifficultyMode"
+	13	[530]	MOVE     	6 3
+	14	[530]	CALL     	4 3 1
+	15	[530]	JMP      	0 3	; to 19
+	16	[532]	SELF     	4 0 -6	; "GetDifficultyMode"
+	17	[532]	CALL     	4 2 2
+	18	[532]	MOVE     	3 4
+	19	[535]	NEWTABLE 	4 0 3
+	20	[536]	SELF     	5 0 -8	; "GetId"
+	21	[536]	CALL     	5 2 2
+	22	[536]	SETTABLE 	4 -7 5	; "id" -
+	23	[537]	SELF     	5 0 -10	; "GetRound"
+	24	[537]	CALL     	5 2 2
+	25	[537]	SETTABLE 	4 -9 5	; "r" -
+	26	[538]	SETTABLE 	4 -11 3	; "diff" -
+	27	[541]	SELF     	5 0 -12	; "GetLevel"
+	28	[541]	CALL     	5 2 2
+	29	[543]	EQ       	0 5 -13	; - 1
+	30	[543]	JMP      	0 7	; to 38
+	31	[544]	GETTABUP 	6 0 -14	; _ENV "GM"
+	32	[544]	GETTABLE 	6 6 -15	; "BIManager"
+	33	[544]	SELF     	6 6 -16	; "LogAction"
+	34	[544]	GETTABLE 	8 0 -17	; "m_definition"
+	35	[544]	GETTABLE 	8 8 -18	; "NewRoundBIType"
+	36	[544]	MOVE     	9 4
+	37	[544]	CALL     	6 4 1
+	38	[546]	SELF     	6 0 -19	; "SetScore"
+	39	[546]	LOADK    	8 -20	; 0
+	40	[546]	CALL     	6 3 1
+	41	[548]	SETTABLE 	4 -21 5	; "lv" -
+	42	[549]	SELF     	6 0 -23	; "GetCurLevelTryTimes"
+	43	[549]	CALL     	6 2 2
+	44	[549]	SETTABLE 	4 -22 6	; "trynum" -
+	45	[550]	GETTABUP 	6 0 -14	; _ENV "GM"
+	46	[550]	GETTABLE 	6 6 -15	; "BIManager"
+	47	[550]	SELF     	6 6 -16	; "LogAction"
+	48	[550]	GETTABLE 	8 0 -17	; "m_definition"
+	49	[550]	GETTABLE 	8 8 -24	; "LevelStartBIType"
+	50	[550]	MOVE     	9 4
+	51	[550]	CALL     	6 4 1
+	52	[552]	SELF     	6 0 -25	; "GetRobotConfigByDiffAndLevel"
+	53	[552]	MOVE     	8 3
+	54	[552]	MOVE     	9 5
+	55	[552]	CALL     	6 4 2
+	56	[555]	NEWTABLE 	7 0 0
+	57	[555]	SETTABLE 	0 -26 7	; "m_currentInfo" -
+	58	[558]	GETTABLE 	7 0 -26	; "m_currentInfo"
+	59	[558]	GETTABLE 	8 6 -28	; "upgradeSlotsNum"
+	60	[558]	SETTABLE 	7 -27 8	; "finishAliveNum" -
+	61	[560]	GETTABUP 	7 0 -29	; _ENV "math"
+	62	[560]	GETTABLE 	7 7 -30	; "ceil"
+	63	[560]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	64	[560]	GETTABLE 	8 8 -27	; "finishAliveNum"
+	65	[560]	MUL      	8 8 -31	; - 0.5
+	66	[560]	CALL     	7 2 2
+	67	[562]	SUB      	8 7 -13	; - 1
+	68	[562]	LE       	0 8 -32	; - 5
+	69	[562]	JMP      	0 3	; to 73
+	70	[563]	SELF     	8 0 -33	; "PopTopTip"
+	71	[563]	GETTABUP 	10 1 -34	; EStrDBKeys "HalfTopTipPop"
+	72	[563]	CALL     	8 3 1
+	73	[567]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	74	[567]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	75	[567]	GETTABLE 	9 9 -27	; "finishAliveNum"
+	76	[567]	SETTABLE 	8 -35 9	; "curAliveNum" -
+	77	[570]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	78	[570]	NEWTABLE 	9 0 0
+	79	[570]	SETTABLE 	8 -36 9	; "arriveTimeList" -
+	80	[571]	GETTABUP 	8 0 -14	; _ENV "GM"
+	81	[571]	GETTABLE 	8 8 -37	; "GameModel"
+	82	[571]	SELF     	8 8 -38	; "GetServerTime"
+	83	[571]	CALL     	8 2 2
+	84	[573]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	85	[573]	SETTABLE 	9 -39 8	; "levelStartTime" -
+	86	[576]	GETTABUP 	9 0 -40	; _ENV "ipairs"
+	87	[576]	GETTABLE 	10 6 -41	; "robotSpeed"
+	88	[576]	CALL     	9 2 4
+	89	[576]	JMP      	0 42	; to 132
+	90	[577]	LOADK    	14 -13	; 1
+	91	[577]	GETTABLE 	15 13 -42	; "num"
+	92	[577]	LOADK    	16 -13	; 1
+	93	[577]	FORPREP  	14 37	; to 131
+	94	[579]	GETTABLE 	18 13 -43	; "minTime"
+	95	[579]	EQ       	1 18 -20	; - 0
+	96	[579]	JMP      	0 7	; to 104
+	97	[579]	GETTABLE 	18 13 -43	; "minTime"
+	98	[579]	EQ       	1 18 -20	; - 0
+	99	[579]	JMP      	0 4	; to 104
+	100	[579]	GETTABLE 	18 13 -43	; "minTime"
+	101	[579]	GETTABLE 	19 13 -44	; "maxTime"
+	102	[579]	LE       	0 19 18
+	103	[579]	JMP      	0 12	; to 116
+	104	[580]	GETTABUP 	18 0 -14	; _ENV "GM"
+	105	[580]	GETTABLE 	18 18 -15	; "BIManager"
+	106	[580]	SELF     	18 18 -45	; "LogErrorInfo"
+	107	[580]	GETTABLE 	20 0 -17	; "m_definition"
+	108	[580]	GETTABLE 	20 20 -46	; "RobotConfigErrorBIType"
+	109	[581]	GETTABUP 	21 0 -47	; _ENV "string"
+	110	[581]	GETTABLE 	21 21 -48	; "format"
+	111	[581]	LOADK    	22 -49	; "robot sign up: min=%s, max=%s"
+	112	[581]	GETTABLE 	23 13 -43	; "minTime"
+	113	[581]	GETTABLE 	24 13 -44	; "maxTime"
+	114	[581]	CALL     	21 4 0
+	115	[580]	CALL     	18 0 1
+	116	[584]	GETTABUP 	18 0 -29	; _ENV "math"
+	117	[584]	GETTABLE 	18 18 -50	; "random"
+	118	[584]	GETTABLE 	19 13 -43	; "minTime"
+	119	[584]	MUL      	19 19 -51	; - 60
+	120	[584]	GETTABLE 	20 13 -44	; "maxTime"
+	121	[584]	MUL      	20 20 -51	; - 60
+	122	[584]	SUB      	20 20 -13	; - 1
+	123	[584]	CALL     	18 3 2
+	124	[584]	ADD      	18 8 18
+	125	[585]	GETTABUP 	19 0 -52	; _ENV "table"
+	126	[585]	GETTABLE 	19 19 -53	; "insert"
+	127	[585]	GETTABLE 	20 0 -26	; "m_currentInfo"
+	128	[585]	GETTABLE 	20 20 -36	; "arriveTimeList"
+	129	[585]	MOVE     	21 18
+	130	[585]	CALL     	19 3 1
+	131	[577]	FORLOOP  	14 -38	; to 94
+	132	[576]	TFORCALL 	9 2
+	133	[576]	TFORLOOP 	11 -44	; to 90
+	134	[589]	GETTABUP 	9 0 -52	; _ENV "table"
+	135	[589]	GETTABLE 	9 9 -54	; "sort"
+	136	[589]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	137	[589]	GETTABLE 	10 10 -36	; "arriveTimeList"
+	138	[589]	CLOSURE  	11 0	; 0000011FFD968CE0
+	139	[589]	CALL     	9 3 1
+	140	[592]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	141	[592]	NEWTABLE 	10 0 0
+	142	[592]	SETTABLE 	9 -55 10	; "showIconList" -
+	143	[593]	NEWTABLE 	9 0 0
+	144	[594]	GETTABUP 	10 0 -40	; _ENV "ipairs"
+	145	[594]	GETTABUP 	11 0 -56	; _ENV "AVATAR_IMAGE"
+	146	[594]	CALL     	10 2 4
+	147	[594]	JMP      	0 5	; to 153
+	148	[595]	GETTABUP 	15 0 -52	; _ENV "table"
+	149	[595]	GETTABLE 	15 15 -53	; "insert"
+	150	[595]	MOVE     	16 9
+	151	[595]	MOVE     	17 14
+	152	[595]	CALL     	15 3 1
+	153	[594]	TFORCALL 	10 2
+	154	[594]	TFORLOOP 	12 -7	; to 148
+	155	[598]	GETTABUP 	10 0 -40	; _ENV "ipairs"
+	156	[598]	GETTABUP 	11 0 -57	; _ENV "ACTIVITY_AVATAR_IMAGE"
+	157	[598]	CALL     	10 2 4
+	158	[598]	JMP      	0 5	; to 164
+	159	[599]	GETTABUP 	15 0 -52	; _ENV "table"
+	160	[599]	GETTABLE 	15 15 -53	; "insert"
+	161	[599]	MOVE     	16 9
+	162	[599]	MOVE     	17 14
+	163	[599]	CALL     	15 3 1
+	164	[598]	TFORCALL 	10 2
+	165	[598]	TFORLOOP 	12 -7	; to 159
+	166	[602]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	167	[602]	GETTABUP 	11 0 -58	; _ENV "Table"
+	168	[602]	GETTABLE 	11 11 -59	; "ListRandomSelectN"
+	169	[602]	MOVE     	12 9
+	170	[602]	LOADK    	13 -60	; 6
+	171	[602]	CALL     	11 3 2
+	172	[602]	SETTABLE 	10 -55 11	; "showIconList" -
+	173	[603]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	174	[603]	GETTABUP 	11 0 -62	; _ENV "UIHelper"
+	175	[603]	GETTABLE 	11 11 -63	; "GetRandomAvatarIconFrame"
+	176	[603]	LOADK    	12 -60	; 6
+	177	[603]	CALL     	11 2 2
+	178	[603]	SETTABLE 	10 -61 11	; "showIconFrameList" -
+	179	[605]	SELF     	10 0 -64	; "SaveCurrentInfo"
+	180	[605]	CALL     	10 2 1
+	181	[606]	GETTABUP 	10 0 -65	; _ENV "EventDispatcher"
+	182	[606]	GETTABLE 	10 10 -66	; "DispatchEvent"
+	183	[606]	GETTABLE 	11 0 -17	; "m_definition"
+	184	[606]	GETTABLE 	11 11 -67	; "Event_SignUp"
+	185	[606]	CALL     	10 2 1
+	186	[607]	GETTABUP 	10 0 -65	; _ENV "EventDispatcher"
+	187	[607]	GETTABLE 	10 10 -66	; "DispatchEvent"
+	188	[607]	GETTABUP 	11 0 -68	; _ENV "EEventType"
+	189	[607]	GETTABLE 	11 11 -69	; "OrderStatusChanged"
+	190	[607]	CALL     	10 2 1
+	191	[608]	RETURN   	0 1
+constants (69) for 0000011FFD9693E0:
+	1	"ClearTopTipState"
+	2	nil
+	3	"EUpwardDifficultyMode"
+	4	"None"
+	5	"SetDifficultyMode"
+	6	"GetDifficultyMode"
+	7	"id"
+	8	"GetId"
+	9	"r"
+	10	"GetRound"
+	11	"diff"
+	12	"GetLevel"
+	13	1
+	14	"GM"
+	15	"BIManager"
+	16	"LogAction"
+	17	"m_definition"
+	18	"NewRoundBIType"
+	19	"SetScore"
+	20	0
+	21	"lv"
+	22	"trynum"
+	23	"GetCurLevelTryTimes"
+	24	"LevelStartBIType"
+	25	"GetRobotConfigByDiffAndLevel"
+	26	"m_currentInfo"
+	27	"finishAliveNum"
+	28	"upgradeSlotsNum"
+	29	"math"
+	30	"ceil"
+	31	0.5
+	32	5
+	33	"PopTopTip"
+	34	"HalfTopTipPop"
+	35	"curAliveNum"
+	36	"arriveTimeList"
+	37	"GameModel"
+	38	"GetServerTime"
+	39	"levelStartTime"
+	40	"ipairs"
+	41	"robotSpeed"
+	42	"num"
+	43	"minTime"
+	44	"maxTime"
+	45	"LogErrorInfo"
+	46	"RobotConfigErrorBIType"
+	47	"string"
+	48	"format"
+	49	"robot sign up: min=%s, max=%s"
+	50	"random"
+	51	60
+	52	"table"
+	53	"insert"
+	54	"sort"
+	55	"showIconList"
+	56	"AVATAR_IMAGE"
+	57	"ACTIVITY_AVATAR_IMAGE"
+	58	"Table"
+	59	"ListRandomSelectN"
+	60	6
+	61	"showIconFrameList"
+	62	"UIHelper"
+	63	"GetRandomAvatarIconFrame"
+	64	"SaveCurrentInfo"
+	65	"EventDispatcher"
+	66	"DispatchEvent"
+	67	"Event_SignUp"
+	68	"EEventType"
+	69	"OrderStatusChanged"
+locals (30) for 0000011FFD9693E0:
+	0	self	1	192
+	1	bNewRound	1	192
+	2	difficultyMode	1	192
+	3	diff	4	192
+	4	biAction	27	192
+	5	level	29	192
+	6	robotConfig	56	192
+	7	half	67	192
+	8	time	84	192
+	9	(for generator)	89	134
+	10	(for state)	89	134
+	11	(for control)	89	134
+	12	_	90	132
+	13	cfg	90	132
+	14	(for index)	93	132
+	15	(for limit)	93	132
+	16	(for step)	93	132
+	17	i	94	131
+	18	arriveTime	125	131
+	19	randomAvatars	144	192
+	20	(for generator)	147	155
+	21	(for state)	147	155
+	22	(for control)	147	155
+	23	_	148	153
+	24	eleAvatad	148	153
+	25	(for generator)	158	166
+	26	(for state)	158	166
+	27	(for control)	158	166
+	28	_	159	164
+	29	eleAvatar	159	164
+upvalues (2) for 0000011FFD9693E0:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <UpwardModel.lua:589,589> (6 instructions at 0000011FFD968CE0)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[589]	LT       	1 1 0
+	2	[589]	JMP      	0 1	; to 4
+	3	[589]	LOADBOOL 	2 0 1
+	4	[589]	LOADBOOL 	2 1 0
+	5	[589]	RETURN   	2 2
+	6	[589]	RETURN   	0 1
+constants (0) for 0000011FFD968CE0:
+locals (2) for 0000011FFD968CE0:
+	0	a	1	7
+	1	b	1	7
+upvalues (0) for 0000011FFD968CE0:
+
+function <UpwardModel.lua:610,622> (42 instructions at 0000011FFD969860)
+1 param, 9 slots, 1 upvalue, 2 locals, 17 constants, 1 function
+	1	[611]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[611]	GETTABLE 	1 1 -2	; "showIconList"
+	3	[611]	TEST     	1 0
+	4	[611]	JMP      	0 37	; to 42
+	5	[613]	SELF     	1 0 -3	; "GetRank"
+	6	[613]	CALL     	1 2 2
+	7	[613]	EQ       	0 1 -4	; - 1
+	8	[613]	JMP      	0 11	; to 20
+	9	[614]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	10	[614]	NEWTABLE 	2 6 0
+	11	[614]	LOADK    	3 -6	; 6
+	12	[614]	LOADK    	4 -7	; 5
+	13	[614]	LOADK    	5 -8	; 4
+	14	[614]	LOADK    	6 -9	; 3
+	15	[614]	LOADK    	7 -10	; 2
+	16	[614]	LOADK    	8 -4	; 1
+	17	[614]	SETLIST  	2 6 1	; 1
+	18	[614]	SETTABLE 	1 -5 2	; "deleteIconIndex" -
+	19	[614]	JMP      	0 20	; to 40
+	20	[616]	GETTABUP 	1 0 -11	; _ENV "math"
+	21	[616]	GETTABLE 	1 1 -12	; "random"
+	22	[616]	LOADK    	2 -4	; 1
+	23	[616]	LOADK    	3 -10	; 2
+	24	[616]	CALL     	1 3 2
+	25	[617]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	26	[617]	GETTABUP 	3 0 -13	; _ENV "MathUtil"
+	27	[617]	GETTABLE 	3 3 -14	; "RandomN"
+	28	[617]	GETTABLE 	4 0 -1	; "m_currentInfo"
+	29	[617]	GETTABLE 	4 4 -2	; "showIconList"
+	30	[617]	LEN      	4 4
+	31	[617]	SUB      	5 -6 1	; 6 -
+	32	[617]	CALL     	3 3 2
+	33	[617]	SETTABLE 	2 -5 3	; "deleteIconIndex" -
+	34	[618]	GETTABUP 	2 0 -15	; _ENV "table"
+	35	[618]	GETTABLE 	2 2 -16	; "sort"
+	36	[618]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	37	[618]	GETTABLE 	3 3 -5	; "deleteIconIndex"
+	38	[618]	CLOSURE  	4 0	; 0000011FFD969560
+	39	[618]	CALL     	2 3 1
+	40	[620]	SELF     	1 0 -17	; "SaveCurrentInfo"
+	41	[620]	CALL     	1 2 1
+	42	[622]	RETURN   	0 1
+constants (17) for 0000011FFD969860:
+	1	"m_currentInfo"
+	2	"showIconList"
+	3	"GetRank"
+	4	1
+	5	"deleteIconIndex"
+	6	6
+	7	5
+	8	4
+	9	3
+	10	2
+	11	"math"
+	12	"random"
+	13	"MathUtil"
+	14	"RandomN"
+	15	"table"
+	16	"sort"
+	17	"SaveCurrentInfo"
+locals (2) for 0000011FFD969860:
+	0	self	1	43
+	1	upNum	25	40
+upvalues (1) for 0000011FFD969860:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:618,618> (6 instructions at 0000011FFD969560)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[618]	LT       	1 1 0
+	2	[618]	JMP      	0 1	; to 4
+	3	[618]	LOADBOOL 	2 0 1
+	4	[618]	LOADBOOL 	2 1 0
+	5	[618]	RETURN   	2 2
+	6	[618]	RETURN   	0 1
+constants (0) for 0000011FFD969560:
+locals (2) for 0000011FFD969560:
+	0	a	1	7
+	1	b	1	7
+upvalues (0) for 0000011FFD969560:
+
+function <UpwardModel.lua:626,630> (16 instructions at 0000011FFD968EE0)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[627]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[627]	SELF     	1 1 -2	; "Remove"
+	3	[627]	GETTABUP 	3 0 -3	; EStrDBKeys "OneTopTipPop"
+	4	[627]	GETUPVAL 	4 1	; DBColumnValue
+	5	[627]	CALL     	1 4 1
+	6	[628]	GETTABLE 	1 0 -1	; "m_dbTable"
+	7	[628]	SELF     	1 1 -2	; "Remove"
+	8	[628]	GETTABUP 	3 0 -4	; EStrDBKeys "FiveTopTipPop"
+	9	[628]	GETUPVAL 	4 1	; DBColumnValue
+	10	[628]	CALL     	1 4 1
+	11	[629]	GETTABLE 	1 0 -1	; "m_dbTable"
+	12	[629]	SELF     	1 1 -2	; "Remove"
+	13	[629]	GETTABUP 	3 0 -5	; EStrDBKeys "HalfTopTipPop"
+	14	[629]	GETUPVAL 	4 1	; DBColumnValue
+	15	[629]	CALL     	1 4 1
+	16	[630]	RETURN   	0 1
+constants (5) for 0000011FFD968EE0:
+	1	"m_dbTable"
+	2	"Remove"
+	3	"OneTopTipPop"
+	4	"FiveTopTipPop"
+	5	"HalfTopTipPop"
+locals (1) for 0000011FFD968EE0:
+	0	self	1	17
+upvalues (2) for 0000011FFD968EE0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:632,634> (7 instructions at 0000011FFD969160)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[633]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[633]	SELF     	2 2 -2	; "Set"
+	3	[633]	MOVE     	4 1
+	4	[633]	GETUPVAL 	5 0	; DBColumnValue
+	5	[633]	LOADK    	6 -3	; "1"
+	6	[633]	CALL     	2 5 1
+	7	[634]	RETURN   	0 1
+constants (3) for 0000011FFD969160:
+	1	"m_dbTable"
+	2	"Set"
+	3	"1"
+locals (2) for 0000011FFD969160:
+	0	self	1	8
+	1	type	1	8
+upvalues (1) for 0000011FFD969160:
+	0	DBColumnValue	1	1
+
+function <UpwardModel.lua:636,638> (11 instructions at 0000011FFD9695E0)
+2 params, 6 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[637]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[637]	SELF     	2 2 -2	; "GetValue"
+	3	[637]	MOVE     	4 1
+	4	[637]	GETUPVAL 	5 0	; DBColumnValue
+	5	[637]	CALL     	2 4 2
+	6	[637]	EQ       	0 2 -3	; - "1"
+	7	[637]	JMP      	0 1	; to 9
+	8	[637]	LOADBOOL 	2 0 1
+	9	[637]	LOADBOOL 	2 1 0
+	10	[637]	RETURN   	2 2
+	11	[638]	RETURN   	0 1
+constants (3) for 0000011FFD9695E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"1"
+locals (2) for 0000011FFD9695E0:
+	0	self	1	12
+	1	type	1	12
+upvalues (1) for 0000011FFD9695E0:
+	0	DBColumnValue	1	1
+
+function <UpwardModel.lua:640,688> (54 instructions at 0000011FFD968F60)
+1 param, 9 slots, 2 upvalues, 5 locals, 22 constants, 4 functions
+	1	[641]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[641]	GETTABLE 	1 1 -2	; "curAliveNum"
+	3	[641]	LE       	0 1 -3	; - 0
+	4	[641]	JMP      	0 1	; to 6
+	5	[642]	RETURN   	0 1
+	6	[645]	GETTABUP 	1 0 -4	; _ENV "math"
+	7	[645]	GETTABLE 	1 1 -5	; "floor"
+	8	[645]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	9	[645]	GETTABLE 	2 2 -6	; "finishAliveNum"
+	10	[645]	MUL      	2 2 -7	; - 0.5
+	11	[645]	CALL     	1 2 2
+	12	[646]	LOADNIL  	2 2
+	13	[648]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	14	[648]	GETTABLE 	5 5 -2	; "curAliveNum"
+	15	[648]	LE       	0 5 -8	; - 1
+	16	[648]	JMP      	0 5	; to 22
+	17	[649]	GETTABUP 	2 1 -9	; EStrDBKeys "OneTopTipPop"
+	18	[650]	LOADK    	3 -10	; "Upward_notice_3"
+	19	[654]	CLOSURE  	5 0	; 0000011FFD968FE0
+	20	[654]	MOVE     	4 5
+	21	[654]	JMP      	0 17	; to 39
+	22	[656]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	23	[656]	GETTABLE 	5 5 -2	; "curAliveNum"
+	24	[656]	LE       	0 5 -11	; - 5
+	25	[656]	JMP      	0 5	; to 31
+	26	[657]	GETTABUP 	2 1 -12	; EStrDBKeys "FiveTopTipPop"
+	27	[658]	LOADK    	3 -13	; "Upward_notice_2"
+	28	[661]	CLOSURE  	5 1	; 0000011FFD96EEE0
+	29	[661]	MOVE     	4 5
+	30	[661]	JMP      	0 8	; to 39
+	31	[663]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	32	[663]	GETTABLE 	5 5 -2	; "curAliveNum"
+	33	[663]	LT       	0 5 1
+	34	[663]	JMP      	0 4	; to 39
+	35	[664]	GETTABUP 	2 1 -14	; EStrDBKeys "HalfTopTipPop"
+	36	[665]	LOADK    	3 -15	; "Upward_notice_1"
+	37	[668]	CLOSURE  	5 2	; 0000011FFD9701E0
+	38	[668]	MOVE     	4 5
+	39	[671]	EQ       	1 2 -16	; - nil
+	40	[671]	JMP      	0 13	; to 54
+	41	[671]	SELF     	5 0 -17	; "CanPopTopTip"
+	42	[671]	MOVE     	7 2
+	43	[671]	CALL     	5 3 2
+	44	[671]	TEST     	5 0
+	45	[671]	JMP      	0 8	; to 54
+	46	[672]	GETTABUP 	5 0 -18	; _ENV "TopSliderManager"
+	47	[672]	GETTABLE 	5 5 -19	; "TrySlide"
+	48	[672]	SELF     	6 0 -20	; "GetType"
+	49	[672]	CALL     	6 2 2
+	50	[672]	GETTABLE 	7 0 -21	; "m_definition"
+	51	[672]	GETTABLE 	7 7 -22	; "TopTipPrefabName"
+	52	[686]	CLOSURE  	8 3	; 0000011FFD96F7E0
+	53	[672]	CALL     	5 4 1
+	54	[688]	RETURN   	0 1
+constants (22) for 0000011FFD968F60:
+	1	"m_currentInfo"
+	2	"curAliveNum"
+	3	0
+	4	"math"
+	5	"floor"
+	6	"finishAliveNum"
+	7	0.5
+	8	1
+	9	"OneTopTipPop"
+	10	"Upward_notice_3"
+	11	5
+	12	"FiveTopTipPop"
+	13	"Upward_notice_2"
+	14	"HalfTopTipPop"
+	15	"Upward_notice_1"
+	16	nil
+	17	"CanPopTopTip"
+	18	"TopSliderManager"
+	19	"TrySlide"
+	20	"GetType"
+	21	"m_definition"
+	22	"TopTipPrefabName"
+locals (5) for 0000011FFD968F60:
+	0	self	1	55
+	1	half	12	55
+	2	tipType	13	55
+	3	textKey	13	55
+	4	callBack	13	55
+upvalues (2) for 0000011FFD968F60:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <UpwardModel.lua:651,654> (9 instructions at 0000011FFD968FE0)
+0 params, 3 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[652]	GETUPVAL 	0 0	; self
+	2	[652]	SELF     	0 0 -1	; "PopTopTip"
+	3	[652]	GETTABUP 	2 1 -2	; EStrDBKeys "OneTopTipPop"
+	4	[652]	CALL     	0 3 1
+	5	[653]	GETUPVAL 	0 0	; self
+	6	[653]	SELF     	0 0 -1	; "PopTopTip"
+	7	[653]	GETTABUP 	2 1 -3	; EStrDBKeys "FiveTopTipPop"
+	8	[653]	CALL     	0 3 1
+	9	[654]	RETURN   	0 1
+constants (3) for 0000011FFD968FE0:
+	1	"PopTopTip"
+	2	"OneTopTipPop"
+	3	"FiveTopTipPop"
+locals (0) for 0000011FFD968FE0:
+upvalues (2) for 0000011FFD968FE0:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <UpwardModel.lua:659,661> (5 instructions at 0000011FFD96EEE0)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[660]	GETUPVAL 	0 0	; self
+	2	[660]	SELF     	0 0 -1	; "PopTopTip"
+	3	[660]	GETTABUP 	2 1 -2	; EStrDBKeys "FiveTopTipPop"
+	4	[660]	CALL     	0 3 1
+	5	[661]	RETURN   	0 1
+constants (2) for 0000011FFD96EEE0:
+	1	"PopTopTip"
+	2	"FiveTopTipPop"
+locals (0) for 0000011FFD96EEE0:
+upvalues (2) for 0000011FFD96EEE0:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <UpwardModel.lua:666,668> (5 instructions at 0000011FFD9701E0)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[667]	GETUPVAL 	0 0	; self
+	2	[667]	SELF     	0 0 -1	; "PopTopTip"
+	3	[667]	GETTABUP 	2 1 -2	; EStrDBKeys "HalfTopTipPop"
+	4	[667]	CALL     	0 3 1
+	5	[668]	RETURN   	0 1
+constants (2) for 0000011FFD9701E0:
+	1	"PopTopTip"
+	2	"HalfTopTipPop"
+locals (0) for 0000011FFD9701E0:
+upvalues (2) for 0000011FFD9701E0:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <UpwardModel.lua:672,686> (38 instructions at 0000011FFD96F7E0)
+1 param, 6 slots, 4 upvalues, 2 locals, 15 constants, 1 function
+	1	[673]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[673]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[673]	SELF     	1 1 -3	; "GetModel"
+	4	[673]	GETUPVAL 	3 1	; self
+	5	[673]	SELF     	3 3 -4	; "GetType"
+	6	[673]	CALL     	3 2 0
+	7	[673]	CALL     	1 0 2
+	8	[674]	EQ       	1 1 -5	; - nil
+	9	[674]	JMP      	0 10	; to 20
+	10	[674]	SELF     	2 1 -6	; "GetState"
+	11	[674]	CALL     	2 2 2
+	12	[674]	GETTABUP 	3 0 -7	; _ENV "ActivityState"
+	13	[674]	GETTABLE 	3 3 -8	; "Started"
+	14	[674]	EQ       	0 2 3
+	15	[674]	JMP      	0 4	; to 20
+	16	[674]	SELF     	2 1 -9	; "GetAliveNum"
+	17	[674]	CALL     	2 2 2
+	18	[674]	EQ       	0 2 -5	; - nil
+	19	[674]	JMP      	0 5	; to 25
+	20	[675]	GETTABUP 	2 0 -10	; _ENV "GameObject"
+	21	[675]	GETTABLE 	2 2 -11	; "Destroy"
+	22	[675]	MOVE     	3 0
+	23	[675]	CALL     	2 2 1
+	24	[676]	RETURN   	0 1
+	25	[678]	SELF     	2 0 -12	; "GetLuaTable"
+	26	[678]	CALL     	2 2 2
+	27	[678]	SELF     	2 2 -13	; "Init"
+	28	[678]	GETUPVAL 	4 1	; self
+	29	[678]	SELF     	4 4 -4	; "GetType"
+	30	[678]	CALL     	4 2 2
+	31	[678]	GETUPVAL 	5 2	; textKey
+	32	[678]	CALL     	2 4 1
+	33	[680]	GETTABUP 	2 0 -14	; _ENV "TopSliderManager"
+	34	[680]	GETTABLE 	2 2 -15	; "Appear"
+	35	[680]	MOVE     	3 0
+	36	[685]	CLOSURE  	4 0	; 0000011FFD96FFE0
+	37	[680]	CALL     	2 3 1
+	38	[686]	RETURN   	0 1
+constants (15) for 0000011FFD96F7E0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"GetType"
+	5	nil
+	6	"GetState"
+	7	"ActivityState"
+	8	"Started"
+	9	"GetAliveNum"
+	10	"GameObject"
+	11	"Destroy"
+	12	"GetLuaTable"
+	13	"Init"
+	14	"TopSliderManager"
+	15	"Appear"
+locals (2) for 0000011FFD96F7E0:
+	0	go	1	39
+	1	model	8	39
+upvalues (4) for 0000011FFD96F7E0:
+	0	_ENV	0	0
+	1	self	1	0
+	2	textKey	1	3
+	3	callBack	1	4
+
+function <UpwardModel.lua:680,685> (7 instructions at 0000011FFD96FFE0)
+0 params, 3 slots, 3 upvalues, 0 locals, 2 constants, 1 function
+	1	[681]	GETUPVAL 	0 0	; callBack
+	2	[681]	CALL     	0 1 1
+	3	[682]	GETTABUP 	0 1 -1	; _ENV "DelayExecuteFunc"
+	4	[684]	CLOSURE  	1 0	; 0000011FFD96FDE0
+	5	[684]	LOADK    	2 -2	; 2.0
+	6	[682]	CALL     	0 3 1
+	7	[685]	RETURN   	0 1
+constants (2) for 0000011FFD96FFE0:
+	1	"DelayExecuteFunc"
+	2	2.0
+locals (0) for 0000011FFD96FFE0:
+upvalues (3) for 0000011FFD96FFE0:
+	0	callBack	0	3
+	1	_ENV	0	0
+	2	go	1	0
+
+function <UpwardModel.lua:682,684> (5 instructions at 0000011FFD96FDE0)
+0 params, 2 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[683]	GETTABUP 	0 0 -1	; _ENV "TopSliderManager"
+	2	[683]	GETTABLE 	0 0 -2	; "Disappear"
+	3	[683]	GETUPVAL 	1 1	; go
+	4	[683]	CALL     	0 2 1
+	5	[684]	RETURN   	0 1
+constants (2) for 0000011FFD96FDE0:
+	1	"TopSliderManager"
+	2	"Disappear"
+locals (0) for 0000011FFD96FDE0:
+upvalues (2) for 0000011FFD96FDE0:
+	0	_ENV	0	1
+	1	go	0	2
+
+function <UpwardModel.lua:690,751> (124 instructions at 0000011FFD96F860)
+1 param, 11 slots, 3 upvalues, 13 locals, 33 constants, 0 functions
+	1	[691]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[691]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[691]	MOVE     	2 0
+	4	[691]	CALL     	1 2 1
+	5	[692]	GETTABLE 	1 0 -3	; "m_currentInfo"
+	6	[692]	EQ       	0 1 -4	; - nil
+	7	[692]	JMP      	0 1	; to 9
+	8	[693]	RETURN   	0 1
+	9	[697]	GETTABUP 	1 0 -5	; _ENV "ApplicationManager"
+	10	[697]	GETTABLE 	1 1 -6	; "Instance"
+	11	[697]	GETTABLE 	1 1 -7	; "isNetworkConnected"
+	12	[697]	TEST     	1 1
+	13	[697]	JMP      	0 1	; to 15
+	14	[698]	RETURN   	0 1
+	15	[702]	SELF     	1 0 -8	; "GetLevelFinishTime"
+	16	[702]	CALL     	1 2 2
+	17	[703]	EQ       	1 1 -4	; - nil
+	18	[703]	JMP      	0 52	; to 71
+	19	[704]	GETTABUP 	2 0 -9	; _ENV "Table"
+	20	[704]	GETTABLE 	2 2 -10	; "IsEmpty"
+	21	[704]	GETTABLE 	3 0 -3	; "m_currentInfo"
+	22	[704]	GETTABLE 	3 3 -11	; "arriveTimeList"
+	23	[704]	CALL     	2 2 2
+	24	[704]	TEST     	2 1
+	25	[704]	JMP      	0 45	; to 71
+	26	[705]	GETTABLE 	2 0 -12	; "m_dbTable"
+	27	[705]	SELF     	2 2 -13	; "Remove"
+	28	[705]	GETTABUP 	4 1 -14	; EStrDBKeys "LevelFinishTime"
+	29	[705]	GETUPVAL 	5 2	; DBColumnValue
+	30	[705]	CALL     	2 4 1
+	31	[706]	GETTABLE 	2 0 -3	; "m_currentInfo"
+	32	[706]	GETTABLE 	2 2 -11	; "arriveTimeList"
+	33	[706]	LEN      	2 2
+	34	[706]	LOADK    	3 -15	; 1
+	35	[706]	LOADK    	4 -16	; -1
+	36	[706]	FORPREP  	2 23	; to 60
+	37	[707]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	38	[707]	GETTABLE 	6 6 -11	; "arriveTimeList"
+	39	[707]	GETTABLE 	6 6 5
+	40	[707]	LT       	0 6 1
+	41	[707]	JMP      	0 18	; to 60
+	42	[708]	GETTABUP 	6 0 -17	; _ENV "table"
+	43	[708]	GETTABLE 	6 6 -18	; "remove"
+	44	[708]	GETTABLE 	7 0 -3	; "m_currentInfo"
+	45	[708]	GETTABLE 	7 7 -11	; "arriveTimeList"
+	46	[708]	MOVE     	8 5
+	47	[708]	CALL     	6 3 1
+	48	[710]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	49	[710]	GETTABLE 	7 0 -3	; "m_currentInfo"
+	50	[710]	GETTABLE 	7 7 -19	; "curAliveNum"
+	51	[710]	SUB      	7 7 -15	; - 1
+	52	[710]	SETTABLE 	6 -19 7	; "curAliveNum" -
+	53	[713]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	54	[713]	GETTABLE 	6 6 -19	; "curAliveNum"
+	55	[713]	LE       	0 6 -20	; - 0
+	56	[713]	JMP      	0 3	; to 60
+	57	[714]	SELF     	6 0 -21	; "LevelFail"
+	58	[714]	CALL     	6 2 1
+	59	[715]	RETURN   	0 1
+	60	[706]	FORLOOP  	2 -24	; to 37
+	61	[721]	SELF     	2 0 -22	; "GetLevel"
+	62	[721]	CALL     	2 2 2
+	63	[722]	SELF     	3 0 -23	; "_LevelUp"
+	64	[722]	MOVE     	5 2
+	65	[722]	CALL     	3 3 1
+	66	[723]	GETTABUP 	3 0 -24	; _ENV "EventDispatcher"
+	67	[723]	GETTABLE 	3 3 -25	; "DispatchEvent"
+	68	[723]	GETTABLE 	4 0 -26	; "m_definition"
+	69	[723]	GETTABLE 	4 4 -27	; "Event_LevelUp"
+	70	[723]	CALL     	3 2 1
+	71	[728]	GETTABUP 	2 0 -9	; _ENV "Table"
+	72	[728]	GETTABLE 	2 2 -10	; "IsEmpty"
+	73	[728]	GETTABLE 	3 0 -3	; "m_currentInfo"
+	74	[728]	GETTABLE 	3 3 -11	; "arriveTimeList"
+	75	[728]	CALL     	2 2 2
+	76	[728]	TEST     	2 1
+	77	[728]	JMP      	0 46	; to 124
+	78	[729]	GETTABUP 	2 0 -28	; _ENV "GM"
+	79	[729]	GETTABLE 	2 2 -29	; "GameModel"
+	80	[729]	SELF     	2 2 -30	; "GetServerTime"
+	81	[729]	CALL     	2 2 2
+	82	[730]	NEWTABLE 	3 0 0
+	83	[731]	GETTABLE 	4 0 -3	; "m_currentInfo"
+	84	[731]	GETTABLE 	4 4 -11	; "arriveTimeList"
+	85	[731]	LEN      	4 4
+	86	[731]	LOADK    	5 -15	; 1
+	87	[731]	LOADK    	6 -16	; -1
+	88	[731]	FORPREP  	4 32	; to 121
+	89	[733]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	90	[733]	GETTABLE 	8 8 -11	; "arriveTimeList"
+	91	[733]	GETTABLE 	8 8 7
+	92	[733]	LE       	0 8 2
+	93	[733]	JMP      	0 24	; to 118
+	94	[734]	GETTABUP 	8 0 -17	; _ENV "table"
+	95	[734]	GETTABLE 	8 8 -18	; "remove"
+	96	[734]	GETTABLE 	9 0 -3	; "m_currentInfo"
+	97	[734]	GETTABLE 	9 9 -11	; "arriveTimeList"
+	98	[734]	MOVE     	10 7
+	99	[734]	CALL     	8 3 1
+	100	[736]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	101	[736]	GETTABLE 	9 0 -3	; "m_currentInfo"
+	102	[736]	GETTABLE 	9 9 -19	; "curAliveNum"
+	103	[736]	SUB      	9 9 -15	; - 1
+	104	[736]	SETTABLE 	8 -19 9	; "curAliveNum" -
+	105	[737]	GETTABUP 	8 0 -24	; _ENV "EventDispatcher"
+	106	[737]	GETTABLE 	8 8 -25	; "DispatchEvent"
+	107	[737]	GETTABLE 	9 0 -26	; "m_definition"
+	108	[737]	GETTABLE 	9 9 -31	; "Event_RobotArrive"
+	109	[737]	CALL     	8 2 1
+	110	[740]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	111	[740]	GETTABLE 	8 8 -19	; "curAliveNum"
+	112	[740]	LE       	0 8 -20	; - 0
+	113	[740]	JMP      	0 7	; to 121
+	114	[741]	SELF     	8 0 -21	; "LevelFail"
+	115	[741]	CALL     	8 2 1
+	116	[742]	RETURN   	0 1
+	117	[743]	JMP      	0 3	; to 121
+	118	[745]	SELF     	8 0 -32	; "SaveCurrentInfo"
+	119	[745]	CALL     	8 2 1
+	120	[745]	JMP      	0 1	; to 122
+	121	[731]	FORLOOP  	4 -33	; to 89
+	122	[749]	SELF     	4 0 -33	; "CheckTopTip"
+	123	[749]	CALL     	4 2 1
+	124	[751]	RETURN   	0 1
+constants (33) for 0000011FFD96F860:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"m_currentInfo"
+	4	nil
+	5	"ApplicationManager"
+	6	"Instance"
+	7	"isNetworkConnected"
+	8	"GetLevelFinishTime"
+	9	"Table"
+	10	"IsEmpty"
+	11	"arriveTimeList"
+	12	"m_dbTable"
+	13	"Remove"
+	14	"LevelFinishTime"
+	15	1
+	16	-1
+	17	"table"
+	18	"remove"
+	19	"curAliveNum"
+	20	0
+	21	"LevelFail"
+	22	"GetLevel"
+	23	"_LevelUp"
+	24	"EventDispatcher"
+	25	"DispatchEvent"
+	26	"m_definition"
+	27	"Event_LevelUp"
+	28	"GM"
+	29	"GameModel"
+	30	"GetServerTime"
+	31	"Event_RobotArrive"
+	32	"SaveCurrentInfo"
+	33	"CheckTopTip"
+locals (13) for 0000011FFD96F860:
+	0	self	1	125
+	1	finishTime	17	125
+	2	(for index)	36	61
+	3	(for limit)	36	61
+	4	(for step)	36	61
+	5	i	37	60
+	6	level	63	71
+	7	time	82	124
+	8	removeList	83	124
+	9	(for index)	88	122
+	10	(for limit)	88	122
+	11	(for step)	88	122
+	12	i	89	121
+upvalues (3) for 0000011FFD96F860:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+	2	DBColumnValue	1	1
+
+function <UpwardModel.lua:756,763> (14 instructions at 0000011FFD970760)
+1 param, 3 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[757]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[757]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[757]	GETTABLE 	2 0 -3	; "m_rewardConfigs"
+	4	[757]	CALL     	1 2 2
+	5	[757]	TEST     	1 0
+	6	[757]	JMP      	0 1	; to 8
+	7	[758]	RETURN   	0 1
+	8	[761]	SELF     	1 0 -4	; "GetDifficultyMode"
+	9	[761]	CALL     	1 2 2
+	10	[762]	GETTABLE 	2 0 -3	; "m_rewardConfigs"
+	11	[762]	GETTABLE 	2 2 1
+	12	[762]	LEN      	2 2
+	13	[762]	RETURN   	2 2
+	14	[763]	RETURN   	0 1
+constants (4) for 0000011FFD970760:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_rewardConfigs"
+	4	"GetDifficultyMode"
+locals (2) for 0000011FFD970760:
+	0	self	1	15
+	1	selectedDif	10	15
+upvalues (1) for 0000011FFD970760:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:765,767> (7 instructions at 0000011FFD970060)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[766]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[766]	SELF     	2 2 -2	; "Set"
+	3	[766]	GETTABUP 	4 0 -3	; EStrDBKeys "Round"
+	4	[766]	GETUPVAL 	5 1	; DBColumnValue
+	5	[766]	MOVE     	6 1
+	6	[766]	CALL     	2 5 1
+	7	[767]	RETURN   	0 1
+constants (3) for 0000011FFD970060:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Round"
+locals (2) for 0000011FFD970060:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD970060:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:769,771> (10 instructions at 0000011FFD96FF60)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[770]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[770]	SELF     	1 1 -2	; "GetValue"
+	3	[770]	GETTABUP 	3 0 -3	; EStrDBKeys "Round"
+	4	[770]	GETUPVAL 	4 1	; DBColumnValue
+	5	[770]	CALL     	1 4 2
+	6	[770]	TEST     	1 1
+	7	[770]	JMP      	0 1	; to 9
+	8	[770]	LOADK    	1 -4	; 1
+	9	[770]	RETURN   	1 2
+	10	[771]	RETURN   	0 1
+constants (4) for 0000011FFD96FF60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Round"
+	4	1
+locals (1) for 0000011FFD96FF60:
+	0	self	1	11
+upvalues (2) for 0000011FFD96FF60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:773,775> (10 instructions at 0000011FFD970AE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[774]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[774]	SELF     	1 1 -2	; "GetValue"
+	3	[774]	GETTABUP 	3 0 -3	; EStrDBKeys "Level"
+	4	[774]	GETUPVAL 	4 1	; DBColumnValue
+	5	[774]	CALL     	1 4 2
+	6	[774]	TEST     	1 1
+	7	[774]	JMP      	0 1	; to 9
+	8	[774]	LOADK    	1 -4	; 1
+	9	[774]	RETURN   	1 2
+	10	[775]	RETURN   	0 1
+constants (4) for 0000011FFD970AE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Level"
+	4	1
+locals (1) for 0000011FFD970AE0:
+	0	self	1	11
+upvalues (2) for 0000011FFD970AE0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:777,779> (7 instructions at 0000011FFD96FCE0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[778]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[778]	SELF     	2 2 -2	; "Set"
+	3	[778]	GETTABUP 	4 0 -3	; EStrDBKeys "Level"
+	4	[778]	GETUPVAL 	5 1	; DBColumnValue
+	5	[778]	MOVE     	6 1
+	6	[778]	CALL     	2 5 1
+	7	[779]	RETURN   	0 1
+constants (3) for 0000011FFD96FCE0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Level"
+locals (2) for 0000011FFD96FCE0:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD96FCE0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:781,783> (10 instructions at 0000011FFD9707E0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[782]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[782]	SELF     	1 1 -2	; "GetValue"
+	3	[782]	GETTABUP 	3 0 -3	; EStrDBKeys "Score"
+	4	[782]	GETUPVAL 	4 1	; DBColumnValue
+	5	[782]	CALL     	1 4 2
+	6	[782]	TEST     	1 1
+	7	[782]	JMP      	0 1	; to 9
+	8	[782]	LOADK    	1 -4	; 0
+	9	[782]	RETURN   	1 2
+	10	[783]	RETURN   	0 1
+constants (4) for 0000011FFD9707E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Score"
+	4	0
+locals (1) for 0000011FFD9707E0:
+	0	self	1	11
+upvalues (2) for 0000011FFD9707E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:785,787> (7 instructions at 0000011FFD9706E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[786]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[786]	SELF     	2 2 -2	; "Set"
+	3	[786]	GETTABUP 	4 0 -3	; EStrDBKeys "Score"
+	4	[786]	GETUPVAL 	5 1	; DBColumnValue
+	5	[786]	MOVE     	6 1
+	6	[786]	CALL     	2 5 1
+	7	[787]	RETURN   	0 1
+constants (3) for 0000011FFD9706E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Score"
+locals (2) for 0000011FFD9706E0:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD9706E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:789,791> (7 instructions at 0000011FFD96FC60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[790]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[790]	SELF     	2 2 -2	; "Set"
+	3	[790]	GETTABUP 	4 0 -3	; EStrDBKeys "Difficulty"
+	4	[790]	GETUPVAL 	5 1	; DBColumnValue
+	5	[790]	MOVE     	6 1
+	6	[790]	CALL     	2 5 1
+	7	[791]	RETURN   	0 1
+constants (3) for 0000011FFD96FC60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Difficulty"
+locals (2) for 0000011FFD96FC60:
+	0	self	1	8
+	1	mode	1	8
+upvalues (2) for 0000011FFD96FC60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:793,795> (11 instructions at 0000011FFD96FE60)
+1 param, 5 slots, 3 upvalues, 1 local, 5 constants, 0 functions
+	1	[794]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[794]	SELF     	1 1 -2	; "GetValue"
+	3	[794]	GETTABUP 	3 0 -3	; EStrDBKeys "Difficulty"
+	4	[794]	GETUPVAL 	4 1	; DBColumnValue
+	5	[794]	CALL     	1 4 2
+	6	[794]	TEST     	1 1
+	7	[794]	JMP      	0 2	; to 10
+	8	[794]	GETTABUP 	1 2 -4	; _ENV "EUpwardDifficultyMode"
+	9	[794]	GETTABLE 	1 1 -5	; "None"
+	10	[794]	RETURN   	1 2
+	11	[795]	RETURN   	0 1
+constants (5) for 0000011FFD96FE60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Difficulty"
+	4	"EUpwardDifficultyMode"
+	5	"None"
+locals (1) for 0000011FFD96FE60:
+	0	self	1	12
+upvalues (3) for 0000011FFD96FE60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+	2	_ENV	0	0
+
+function <UpwardModel.lua:797,799> (10 instructions at 0000011FFD96EE60)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[798]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[798]	SELF     	1 1 -2	; "GetValue"
+	3	[798]	GETTABUP 	3 0 -3	; EStrDBKeys "LastScore"
+	4	[798]	GETUPVAL 	4 1	; DBColumnValue
+	5	[798]	CALL     	1 4 2
+	6	[798]	TEST     	1 1
+	7	[798]	JMP      	0 1	; to 9
+	8	[798]	LOADK    	1 -4	; 0
+	9	[798]	RETURN   	1 2
+	10	[799]	RETURN   	0 1
+constants (4) for 0000011FFD96EE60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastScore"
+	4	0
+locals (1) for 0000011FFD96EE60:
+	0	self	1	11
+upvalues (2) for 0000011FFD96EE60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:801,803> (7 instructions at 0000011FFD9708E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[802]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[802]	SELF     	2 2 -2	; "Set"
+	3	[802]	GETTABUP 	4 0 -3	; EStrDBKeys "LastScore"
+	4	[802]	GETUPVAL 	5 1	; DBColumnValue
+	5	[802]	MOVE     	6 1
+	6	[802]	CALL     	2 5 1
+	7	[803]	RETURN   	0 1
+constants (3) for 0000011FFD9708E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastScore"
+locals (2) for 0000011FFD9708E0:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD9708E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:805,807> (10 instructions at 0000011FFD96F160)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[806]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[806]	SELF     	1 1 -2	; "GetValue"
+	3	[806]	GETTABUP 	3 0 -3	; EStrDBKeys "LastLevel"
+	4	[806]	GETUPVAL 	4 1	; DBColumnValue
+	5	[806]	CALL     	1 4 2
+	6	[806]	TEST     	1 1
+	7	[806]	JMP      	0 1	; to 9
+	8	[806]	LOADK    	1 -4	; 1
+	9	[806]	RETURN   	1 2
+	10	[807]	RETURN   	0 1
+constants (4) for 0000011FFD96F160:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastLevel"
+	4	1
+locals (1) for 0000011FFD96F160:
+	0	self	1	11
+upvalues (2) for 0000011FFD96F160:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:809,811> (7 instructions at 0000011FFD96F060)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[810]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[810]	SELF     	2 2 -2	; "Set"
+	3	[810]	GETTABUP 	4 0 -3	; EStrDBKeys "LastLevel"
+	4	[810]	GETUPVAL 	5 1	; DBColumnValue
+	5	[810]	MOVE     	6 1
+	6	[810]	CALL     	2 5 1
+	7	[811]	RETURN   	0 1
+constants (3) for 0000011FFD96F060:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastLevel"
+locals (2) for 0000011FFD96F060:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD96F060:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:813,819> (15 instructions at 0000011FFD96F8E0)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[814]	GETTABLE 	1 0 -1	; "m_config"
+	2	[814]	EQ       	0 1 -2	; - nil
+	3	[814]	JMP      	0 3	; to 7
+	4	[815]	LOADBOOL 	1 0 0
+	5	[815]	RETURN   	1 2
+	6	[815]	JMP      	0 8	; to 15
+	7	[817]	SELF     	1 0 -3	; "GetRound"
+	8	[817]	CALL     	1 2 2
+	9	[817]	GETTABLE 	2 0 -4	; "m_roundCount"
+	10	[817]	LT       	1 2 1
+	11	[817]	JMP      	0 1	; to 13
+	12	[817]	LOADBOOL 	1 0 1
+	13	[817]	LOADBOOL 	1 1 0
+	14	[817]	RETURN   	1 2
+	15	[819]	RETURN   	0 1
+constants (4) for 0000011FFD96F8E0:
+	1	"m_config"
+	2	nil
+	3	"GetRound"
+	4	"m_roundCount"
+locals (1) for 0000011FFD96F8E0:
+	0	self	1	16
+upvalues (0) for 0000011FFD96F8E0:
+
+function <UpwardModel.lua:821,823> (6 instructions at 0000011FFD96FEE0)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[822]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[822]	GETTABLE 	1 1 -2	; "ShallowCopy"
+	3	[822]	GETTABLE 	2 0 -3	; "m_currentInfo"
+	4	[822]	TAILCALL 	1 2 0
+	5	[822]	RETURN   	1 0
+	6	[823]	RETURN   	0 1
+constants (3) for 0000011FFD96FEE0:
+	1	"Table"
+	2	"ShallowCopy"
+	3	"m_currentInfo"
+locals (1) for 0000011FFD96FEE0:
+	0	self	1	7
+upvalues (1) for 0000011FFD96FEE0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:825,832> (19 instructions at 0000011FFD9700E0)
+1 param, 7 slots, 3 upvalues, 1 local, 8 constants, 0 functions
+	1	[826]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[826]	EQ       	0 1 -2	; - nil
+	3	[826]	JMP      	0 6	; to 10
+	4	[827]	GETTABLE 	1 0 -3	; "m_dbTable"
+	5	[827]	SELF     	1 1 -4	; "Remove"
+	6	[827]	GETTABUP 	3 0 -5	; EStrDBKeys "CurrentInfo"
+	7	[827]	GETUPVAL 	4 1	; DBColumnValue
+	8	[827]	CALL     	1 4 1
+	9	[827]	JMP      	0 9	; to 19
+	10	[830]	GETTABLE 	1 0 -3	; "m_dbTable"
+	11	[830]	SELF     	1 1 -6	; "Set"
+	12	[830]	GETTABUP 	3 0 -5	; EStrDBKeys "CurrentInfo"
+	13	[830]	GETUPVAL 	4 1	; DBColumnValue
+	14	[830]	GETTABUP 	5 2 -7	; _ENV "json"
+	15	[830]	GETTABLE 	5 5 -8	; "encode"
+	16	[830]	GETTABLE 	6 0 -1	; "m_currentInfo"
+	17	[830]	CALL     	5 2 0
+	18	[830]	CALL     	1 0 1
+	19	[832]	RETURN   	0 1
+constants (8) for 0000011FFD9700E0:
+	1	"m_currentInfo"
+	2	nil
+	3	"m_dbTable"
+	4	"Remove"
+	5	"CurrentInfo"
+	6	"Set"
+	7	"json"
+	8	"encode"
+locals (1) for 0000011FFD9700E0:
+	0	self	1	20
+upvalues (3) for 0000011FFD9700E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+	2	_ENV	0	0
+
+function <UpwardModel.lua:834,836> (7 instructions at 0000011FFD96FAE0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[835]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[835]	SELF     	2 2 -2	; "Set"
+	3	[835]	GETTABUP 	4 0 -3	; EStrDBKeys "LevelFinishTime"
+	4	[835]	GETUPVAL 	5 1	; DBColumnValue
+	5	[835]	MOVE     	6 1
+	6	[835]	CALL     	2 5 1
+	7	[836]	RETURN   	0 1
+constants (3) for 0000011FFD96FAE0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LevelFinishTime"
+locals (2) for 0000011FFD96FAE0:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 0000011FFD96FAE0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:838,840> (7 instructions at 0000011FFD96F1E0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[839]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[839]	SELF     	1 1 -2	; "GetValue"
+	3	[839]	GETTABUP 	3 0 -3	; EStrDBKeys "LevelFinishTime"
+	4	[839]	GETUPVAL 	4 1	; DBColumnValue
+	5	[839]	TAILCALL 	1 4 0
+	6	[839]	RETURN   	1 0
+	7	[840]	RETURN   	0 1
+constants (3) for 0000011FFD96F1E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LevelFinishTime"
+locals (1) for 0000011FFD96F1E0:
+	0	self	1	8
+upvalues (2) for 0000011FFD96F1E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:842,844> (10 instructions at 0000011FFD970160)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[843]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[843]	TEST     	1 0
+	3	[843]	JMP      	0 4	; to 8
+	4	[843]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[843]	GETTABLE 	1 1 -2	; "curAliveNum"
+	6	[843]	TEST     	1 1
+	7	[843]	JMP      	0 1	; to 9
+	8	[843]	LOADNIL  	1 0
+	9	[843]	RETURN   	1 2
+	10	[844]	RETURN   	0 1
+constants (2) for 0000011FFD970160:
+	1	"m_currentInfo"
+	2	"curAliveNum"
+locals (1) for 0000011FFD970160:
+	0	self	1	11
+upvalues (0) for 0000011FFD970160:
+
+function <UpwardModel.lua:846,853> (16 instructions at 0000011FFD970860)
+1 param, 6 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[847]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[847]	EQ       	1 1 -2	; - nil
+	3	[847]	JMP      	0 4	; to 8
+	4	[848]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[848]	GETTABLE 	1 1 -3	; "finishAliveNum"
+	6	[848]	RETURN   	1 2
+	7	[848]	JMP      	0 8	; to 16
+	8	[850]	SELF     	1 0 -4	; "GetRobotConfigByDiffAndLevel"
+	9	[850]	SELF     	3 0 -5	; "GetDifficultyMode"
+	10	[850]	CALL     	3 2 2
+	11	[850]	SELF     	4 0 -6	; "GetLevel"
+	12	[850]	CALL     	4 2 0
+	13	[850]	CALL     	1 0 2
+	14	[851]	GETTABLE 	2 1 -7	; "upgradeSlotsNum"
+	15	[851]	RETURN   	2 2
+	16	[853]	RETURN   	0 1
+constants (7) for 0000011FFD970860:
+	1	"m_currentInfo"
+	2	nil
+	3	"finishAliveNum"
+	4	"GetRobotConfigByDiffAndLevel"
+	5	"GetDifficultyMode"
+	6	"GetLevel"
+	7	"upgradeSlotsNum"
+locals (2) for 0000011FFD970860:
+	0	self	1	17
+	1	robotConfig	14	16
+upvalues (0) for 0000011FFD970860:
+
+function <UpwardModel.lua:855,866> (21 instructions at 0000011FFD970260)
+2 params, 5 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[856]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[856]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[856]	GETTABLE 	3 0 -3	; "m_rewardConfigs"
+	4	[856]	CALL     	2 2 2
+	5	[856]	TEST     	2 0
+	6	[856]	JMP      	0 1	; to 8
+	7	[857]	RETURN   	0 1
+	8	[860]	GETTABLE 	2 0 -3	; "m_rewardConfigs"
+	9	[860]	GETTABLE 	2 2 1
+	10	[861]	GETTABUP 	3 0 -1	; _ENV "Table"
+	11	[861]	GETTABLE 	3 3 -2	; "IsEmpty"
+	12	[861]	GETTABLE 	4 0 -3	; "m_rewardConfigs"
+	13	[861]	CALL     	3 2 2
+	14	[861]	TEST     	3 0
+	15	[861]	JMP      	0 1	; to 17
+	16	[862]	RETURN   	0 1
+	17	[865]	LEN      	3 2
+	18	[865]	GETTABLE 	3 2 3
+	19	[865]	GETTABLE 	3 3 -4	; "rewards"
+	20	[865]	RETURN   	3 2
+	21	[866]	RETURN   	0 1
+constants (4) for 0000011FFD970260:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_rewardConfigs"
+	4	"rewards"
+locals (3) for 0000011FFD970260:
+	0	self	1	22
+	1	diff	1	22
+	2	rewardConfig	10	22
+upvalues (1) for 0000011FFD970260:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:868,870> (7 instructions at 0000011FFD9702E0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[869]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[869]	SELF     	1 1 -2	; "GetValue"
+	3	[869]	GETTABUP 	3 0 -3	; EStrDBKeys "Rank"
+	4	[869]	GETUPVAL 	4 1	; DBColumnValue
+	5	[869]	TAILCALL 	1 4 0
+	6	[869]	RETURN   	1 0
+	7	[870]	RETURN   	0 1
+constants (3) for 0000011FFD9702E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Rank"
+locals (1) for 0000011FFD9702E0:
+	0	self	1	8
+upvalues (2) for 0000011FFD9702E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:872,874> (7 instructions at 0000011FFD970B60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[873]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[873]	SELF     	2 2 -2	; "Set"
+	3	[873]	GETTABUP 	4 0 -3	; EStrDBKeys "Rank"
+	4	[873]	GETUPVAL 	5 1	; DBColumnValue
+	5	[873]	MOVE     	6 1
+	6	[873]	CALL     	2 5 1
+	7	[874]	RETURN   	0 1
+constants (3) for 0000011FFD970B60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Rank"
+locals (2) for 0000011FFD970B60:
+	0	self	1	8
+	1	rank	1	8
+upvalues (2) for 0000011FFD970B60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:876,878> (10 instructions at 0000011FFD970360)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[877]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[877]	TEST     	1 0
+	3	[877]	JMP      	0 4	; to 8
+	4	[877]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[877]	GETTABLE 	1 1 -2	; "deleteIconIndex"
+	6	[877]	TEST     	1 1
+	7	[877]	JMP      	0 1	; to 9
+	8	[877]	LOADNIL  	1 0
+	9	[877]	RETURN   	1 2
+	10	[878]	RETURN   	0 1
+constants (2) for 0000011FFD970360:
+	1	"m_currentInfo"
+	2	"deleteIconIndex"
+locals (1) for 0000011FFD970360:
+	0	self	1	11
+upvalues (0) for 0000011FFD970360:
+
+function <UpwardModel.lua:881,894> (30 instructions at 0000011FFD970BE0)
+1 param, 5 slots, 1 upvalue, 1 local, 14 constants, 0 functions
+	1	[882]	SELF     	1 0 -1	; "SetLastLevel"
+	2	[882]	SELF     	3 0 -2	; "GetLevel"
+	3	[882]	CALL     	3 2 0
+	4	[882]	CALL     	1 0 1
+	5	[883]	SELF     	1 0 -3	; "SetLastScore"
+	6	[883]	LOADK    	3 -4	; 0
+	7	[883]	CALL     	1 3 1
+	8	[884]	SELF     	1 0 -5	; "SetScore"
+	9	[884]	LOADK    	3 -4	; 0
+	10	[884]	CALL     	1 3 1
+	11	[886]	SETTABLE 	0 -6 -7	; "m_currentInfo" nil
+	12	[887]	SELF     	1 0 -8	; "SaveCurrentInfo"
+	13	[887]	CALL     	1 2 1
+	14	[889]	SELF     	1 0 -2	; "GetLevel"
+	15	[889]	CALL     	1 2 2
+	16	[889]	SELF     	2 0 -9	; "GetMaxLevel"
+	17	[889]	CALL     	2 2 2
+	18	[889]	LT       	0 2 1
+	19	[889]	JMP      	0 10	; to 30
+	20	[890]	SELF     	1 0 -10	; "SetDifficultyMode"
+	21	[890]	GETTABUP 	3 0 -11	; _ENV "EUpwardDifficultyMode"
+	22	[890]	GETTABLE 	3 3 -12	; "None"
+	23	[890]	CALL     	1 3 1
+	24	[891]	SELF     	1 0 -13	; "SetLevel"
+	25	[891]	LOADK    	3 -14	; 1
+	26	[891]	CALL     	1 3 1
+	27	[892]	SELF     	1 0 -1	; "SetLastLevel"
+	28	[892]	LOADK    	3 -14	; 1
+	29	[892]	CALL     	1 3 1
+	30	[894]	RETURN   	0 1
+constants (14) for 0000011FFD970BE0:
+	1	"SetLastLevel"
+	2	"GetLevel"
+	3	"SetLastScore"
+	4	0
+	5	"SetScore"
+	6	"m_currentInfo"
+	7	nil
+	8	"SaveCurrentInfo"
+	9	"GetMaxLevel"
+	10	"SetDifficultyMode"
+	11	"EUpwardDifficultyMode"
+	12	"None"
+	13	"SetLevel"
+	14	1
+locals (1) for 0000011FFD970BE0:
+	0	self	1	31
+upvalues (1) for 0000011FFD970BE0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:896,898> (7 instructions at 0000011FFD970460)
+1 param, 6 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[897]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[897]	SELF     	1 1 -2	; "Set"
+	3	[897]	GETTABUP 	3 0 -3	; EStrDBKeys "FinishWindowPop"
+	4	[897]	GETUPVAL 	4 1	; DBColumnValue
+	5	[897]	LOADK    	5 -4	; "1"
+	6	[897]	CALL     	1 5 1
+	7	[898]	RETURN   	0 1
+constants (4) for 0000011FFD970460:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FinishWindowPop"
+	4	"1"
+locals (1) for 0000011FFD970460:
+	0	self	1	8
+upvalues (2) for 0000011FFD970460:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:900,902> (11 instructions at 0000011FFD9704E0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[901]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[901]	SELF     	1 1 -2	; "GetValue"
+	3	[901]	GETTABUP 	3 0 -3	; EStrDBKeys "FinishWindowPop"
+	4	[901]	GETUPVAL 	4 1	; DBColumnValue
+	5	[901]	CALL     	1 4 2
+	6	[901]	EQ       	0 1 -4	; - "1"
+	7	[901]	JMP      	0 1	; to 9
+	8	[901]	LOADBOOL 	1 0 1
+	9	[901]	LOADBOOL 	1 1 0
+	10	[901]	RETURN   	1 2
+	11	[902]	RETURN   	0 1
+constants (4) for 0000011FFD9704E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FinishWindowPop"
+	4	"1"
+locals (1) for 0000011FFD9704E0:
+	0	self	1	12
+upvalues (2) for 0000011FFD9704E0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:904,906> (7 instructions at 0000011FFD96F760)
+1 param, 6 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[905]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[905]	SELF     	1 1 -2	; "Set"
+	3	[905]	GETTABUP 	3 0 -3	; EStrDBKeys "EndWindowPop"
+	4	[905]	GETUPVAL 	4 1	; DBColumnValue
+	5	[905]	LOADK    	5 -4	; "1"
+	6	[905]	CALL     	1 5 1
+	7	[906]	RETURN   	0 1
+constants (4) for 0000011FFD96F760:
+	1	"m_dbTable"
+	2	"Set"
+	3	"EndWindowPop"
+	4	"1"
+locals (1) for 0000011FFD96F760:
+	0	self	1	8
+upvalues (2) for 0000011FFD96F760:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:908,910> (11 instructions at 0000011FFD970560)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[909]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[909]	SELF     	1 1 -2	; "GetValue"
+	3	[909]	GETTABUP 	3 0 -3	; EStrDBKeys "EndWindowPop"
+	4	[909]	GETUPVAL 	4 1	; DBColumnValue
+	5	[909]	CALL     	1 4 2
+	6	[909]	EQ       	0 1 -4	; - "1"
+	7	[909]	JMP      	0 1	; to 9
+	8	[909]	LOADBOOL 	1 0 1
+	9	[909]	LOADBOOL 	1 1 0
+	10	[909]	RETURN   	1 2
+	11	[910]	RETURN   	0 1
+constants (4) for 0000011FFD970560:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"EndWindowPop"
+	4	"1"
+locals (1) for 0000011FFD970560:
+	0	self	1	12
+upvalues (2) for 0000011FFD970560:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:912,916> (17 instructions at 0000011FFD96F960)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[913]	SELF     	1 0 -1	; "CanSelectDifficulty"
+	2	[913]	CALL     	1 2 2
+	3	[914]	TEST     	1 0
+	4	[914]	JMP      	0 11	; to 16
+	5	[914]	SELF     	1 0 -2	; "GetDifficultyMode"
+	6	[914]	CALL     	1 2 2
+	7	[914]	GETTABUP 	2 0 -3	; _ENV "EUpwardDifficultyMode"
+	8	[914]	GETTABLE 	2 2 -4	; "None"
+	9	[914]	EQ       	0 1 2
+	10	[914]	JMP      	0 3	; to 14
+	11	[915]	GETTABLE 	1 0 -5	; "m_selectWindowPop"
+	12	[915]	EQ       	0 1 -6	; - true
+	13	[915]	JMP      	0 1	; to 15
+	14	[915]	LOADBOOL 	1 0 1
+	15	[915]	LOADBOOL 	1 1 0
+	16	[915]	RETURN   	1 2
+	17	[916]	RETURN   	0 1
+constants (6) for 0000011FFD96F960:
+	1	"CanSelectDifficulty"
+	2	"GetDifficultyMode"
+	3	"EUpwardDifficultyMode"
+	4	"None"
+	5	"m_selectWindowPop"
+	6	true
+locals (1) for 0000011FFD96F960:
+	0	self	1	18
+upvalues (1) for 0000011FFD96F960:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:918,920> (2 instructions at 0000011FFD9705E0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[919]	SETTABLE 	0 -1 -2	; "m_selectWindowPop" true
+	2	[920]	RETURN   	0 1
+constants (2) for 0000011FFD9705E0:
+	1	"m_selectWindowPop"
+	2	true
+locals (1) for 0000011FFD9705E0:
+	0	self	1	3
+upvalues (0) for 0000011FFD9705E0:
+
+function <UpwardModel.lua:922,924> (7 instructions at 0000011FFD96EF60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[923]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[923]	SELF     	2 2 -2	; "Set"
+	3	[923]	GETTABUP 	4 0 -3	; EStrDBKeys "CurLevelTryTimes"
+	4	[923]	GETUPVAL 	5 1	; DBColumnValue
+	5	[923]	MOVE     	6 1
+	6	[923]	CALL     	2 5 1
+	7	[924]	RETURN   	0 1
+constants (3) for 0000011FFD96EF60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurLevelTryTimes"
+locals (2) for 0000011FFD96EF60:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000011FFD96EF60:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:926,928> (10 instructions at 0000011FFD96EDE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[927]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[927]	SELF     	1 1 -2	; "GetValue"
+	3	[927]	GETTABUP 	3 0 -3	; EStrDBKeys "CurLevelTryTimes"
+	4	[927]	GETUPVAL 	4 1	; DBColumnValue
+	5	[927]	CALL     	1 4 2
+	6	[927]	TEST     	1 1
+	7	[927]	JMP      	0 1	; to 9
+	8	[927]	LOADK    	1 -4	; 1
+	9	[927]	RETURN   	1 2
+	10	[928]	RETURN   	0 1
+constants (4) for 0000011FFD96EDE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurLevelTryTimes"
+	4	1
+locals (1) for 0000011FFD96EDE0:
+	0	self	1	11
+upvalues (2) for 0000011FFD96EDE0:
+	0	EStrDBKeys	1	0
+	1	DBColumnValue	1	1
+
+function <UpwardModel.lua:932,934> (12 instructions at 0000011FFD970660)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[933]	SELF     	1 0 -1	; "CanSignUp"
+	2	[933]	CALL     	1 2 2
+	3	[933]	TEST     	1 1
+	4	[933]	JMP      	0 6	; to 11
+	5	[933]	SELF     	1 0 -2	; "GetLevelFinishTime"
+	6	[933]	CALL     	1 2 2
+	7	[933]	EQ       	0 1 -3	; - nil
+	8	[933]	JMP      	0 1	; to 10
+	9	[933]	LOADBOOL 	1 0 1
+	10	[933]	LOADBOOL 	1 1 0
+	11	[933]	RETURN   	1 2
+	12	[934]	RETURN   	0 1
+constants (3) for 0000011FFD970660:
+	1	"CanSignUp"
+	2	"GetLevelFinishTime"
+	3	nil
+locals (1) for 0000011FFD970660:
+	0	self	1	13
+upvalues (0) for 0000011FFD970660:
+
+function <UpwardModel.lua:937,992> (47 instructions at 0000011FFD9709E0)
+1 param, 9 slots, 1 upvalue, 1 local, 27 constants, 3 functions
+	1	[938]	NEWTABLE 	1 0 11
+	2	[939]	SETTABLE 	1 -1 -2	; "Type" "upward"
+	3	[940]	NEWTABLE 	2 2 0
+	4	[941]	GETTABLE 	3 0 -4	; "m_definition"
+	5	[941]	GETTABLE 	3 3 -5	; "Event_StateChanged"
+	6	[942]	GETTABLE 	4 0 -4	; "m_definition"
+	7	[943]	GETTABLE 	4 4 -6	; "Event_FinishedAll"
+	8	[943]	SETLIST  	2 2 1	; 1
+	9	[943]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	10	[944]	GETTABLE 	2 0 -4	; "m_definition"
+	11	[944]	GETTABLE 	2 2 -8	; "HudEntryPrefabName"
+	12	[944]	SETTABLE 	1 -7 2	; "EntryPrefabConfigName" -
+	13	[947]	CLOSURE  	2 0	; 0000011FFD96F260
+	14	[947]	SETTABLE 	1 -9 2	; "CheckFunc" -
+	15	[948]	GETTABUP 	2 0 -11	; _ENV "EHudSideBarType"
+	16	[948]	GETTABLE 	2 2 -12	; "Left"
+	17	[948]	SETTABLE 	1 -10 2	; "HudSideBarType" -
+	18	[949]	GETTABLE 	2 0 -4	; "m_definition"
+	19	[949]	GETTABLE 	2 2 -13	; "EntryButtonKey"
+	20	[949]	SETTABLE 	1 -13 2	; "EntryButtonKey" -
+	21	[950]	GETTABLE 	2 0 -4	; "m_definition"
+	22	[950]	GETTABLE 	2 2 -14	; "EntryIconName"
+	23	[950]	SETTABLE 	1 -14 2	; "EntryIconName" -
+	24	[978]	CLOSURE  	2 1	; 0000011FFD970A60
+	25	[978]	SETTABLE 	1 -15 2	; "OnClickedFunc" -
+	26	[979]	GETTABUP 	2 0 -17	; _ENV "EntryRedPointType"
+	27	[979]	GETTABLE 	2 2 -18	; "Exc"
+	28	[979]	SETTABLE 	1 -16 2	; "RedPointType" -
+	29	[982]	CLOSURE  	2 2	; 0000011FFD96F9E0
+	30	[982]	SETTABLE 	1 -19 2	; "GetRedPointNumFunc" -
+	31	[983]	NEWTABLE 	2 6 0
+	32	[984]	GETTABLE 	3 0 -21	; "m_definition"
+	33	[984]	GETTABLE 	3 3 -22	; "Event_SignUp"
+	34	[985]	GETTABLE 	4 0 -21	; "m_definition"
+	35	[985]	GETTABLE 	4 4 -23	; "Event_ScoreChanged"
+	36	[986]	GETTABLE 	5 0 -21	; "m_definition"
+	37	[986]	GETTABLE 	5 5 -24	; "Event_WaitSignUp"
+	38	[987]	GETTABLE 	6 0 -21	; "m_definition"
+	39	[987]	GETTABLE 	6 6 -25	; "Event_RobotArrive"
+	40	[988]	GETTABLE 	7 0 -21	; "m_definition"
+	41	[988]	GETTABLE 	7 7 -26	; "Event_Fail"
+	42	[989]	GETTABLE 	8 0 -21	; "m_definition"
+	43	[990]	GETTABLE 	8 8 -27	; "Event_FullScoreWithoutNet"
+	44	[990]	SETLIST  	2 6 1	; 1
+	45	[990]	SETTABLE 	1 -20 2	; "ArrUpdateEntryContentEvent" -
+	46	[991]	RETURN   	1 2
+	47	[992]	RETURN   	0 1
+constants (27) for 0000011FFD9709E0:
+	1	"Type"
+	2	"upward"
+	3	"ArrCheckShowEvent"
+	4	"m_definition"
+	5	"Event_StateChanged"
+	6	"Event_FinishedAll"
+	7	"EntryPrefabConfigName"
+	8	"HudEntryPrefabName"
+	9	"CheckFunc"
+	10	"HudSideBarType"
+	11	"EHudSideBarType"
+	12	"Left"
+	13	"EntryButtonKey"
+	14	"EntryIconName"
+	15	"OnClickedFunc"
+	16	"RedPointType"
+	17	"EntryRedPointType"
+	18	"Exc"
+	19	"GetRedPointNumFunc"
+	20	"ArrUpdateEntryContentEvent"
+	21	"m_definition"
+	22	"Event_SignUp"
+	23	"Event_ScoreChanged"
+	24	"Event_WaitSignUp"
+	25	"Event_RobotArrive"
+	26	"Event_Fail"
+	27	"Event_FullScoreWithoutNet"
+locals (1) for 0000011FFD9709E0:
+	0	self	1	48
+upvalues (1) for 0000011FFD9709E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:945,947> (23 instructions at 0000011FFD96F260)
+0 params, 2 slots, 2 upvalues, 0 locals, 5 constants, 0 functions
+	1	[946]	GETUPVAL 	0 0	; self
+	2	[946]	SELF     	0 0 -1	; "GetState"
+	3	[946]	CALL     	0 2 2
+	4	[946]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[946]	GETTABLE 	1 1 -3	; "Preparing"
+	6	[946]	EQ       	1 0 1
+	7	[946]	JMP      	0 13	; to 21
+	8	[946]	GETUPVAL 	0 0	; self
+	9	[946]	SELF     	0 0 -1	; "GetState"
+	10	[946]	CALL     	0 2 2
+	11	[946]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	12	[946]	GETTABLE 	1 1 -4	; "Started"
+	13	[946]	EQ       	0 0 1
+	14	[946]	JMP      	0 5	; to 20
+	15	[946]	GETUPVAL 	0 0	; self
+	16	[946]	SELF     	0 0 -5	; "IsAllRoundFinished"
+	17	[946]	CALL     	0 2 2
+	18	[946]	NOT      	0 0
+	19	[946]	JMP      	0 2	; to 22
+	20	[946]	LOADBOOL 	0 0 1
+	21	[946]	LOADBOOL 	0 1 0
+	22	[946]	RETURN   	0 2
+	23	[947]	RETURN   	0 1
+constants (5) for 0000011FFD96F260:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Preparing"
+	4	"Started"
+	5	"IsAllRoundFinished"
+locals (0) for 0000011FFD96F260:
+upvalues (2) for 0000011FFD96F260:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <UpwardModel.lua:951,978> (90 instructions at 0000011FFD970A60)
+0 params, 7 slots, 2 upvalues, 2 locals, 28 constants, 0 functions
+	1	[953]	GETTABUP 	0 0 -1	; _ENV "ApplicationManager"
+	2	[953]	GETTABLE 	0 0 -2	; "Instance"
+	3	[953]	GETTABLE 	0 0 -3	; "isNetworkConnected"
+	4	[953]	TEST     	0 1
+	5	[953]	JMP      	0 7	; to 13
+	6	[954]	GETTABUP 	0 0 -4	; _ENV "GM"
+	7	[954]	GETTABLE 	0 0 -5	; "UIManager"
+	8	[954]	SELF     	0 0 -6	; "OpenView"
+	9	[954]	GETTABUP 	2 0 -7	; _ENV "UIPrefabConfigName"
+	10	[954]	GETTABLE 	2 2 -8	; "NetworkErrorWindow"
+	11	[954]	CALL     	0 3 1
+	12	[955]	RETURN   	0 1
+	13	[958]	GETUPVAL 	0 1	; self
+	14	[958]	SELF     	0 0 -9	; "GetState"
+	15	[958]	CALL     	0 2 2
+	16	[959]	GETTABUP 	1 0 -10	; _ENV "ActivityState"
+	17	[959]	GETTABLE 	1 1 -11	; "Preparing"
+	18	[959]	EQ       	0 0 1
+	19	[959]	JMP      	0 9	; to 29
+	20	[960]	GETTABUP 	1 0 -4	; _ENV "GM"
+	21	[960]	GETTABLE 	1 1 -5	; "UIManager"
+	22	[960]	SELF     	1 1 -6	; "OpenView"
+	23	[960]	GETTABUP 	3 1 -12	; self "m_definition"
+	24	[960]	GETTABLE 	3 3 -13	; "NoticeWindowPrefabName"
+	25	[960]	GETUPVAL 	4 1	; self
+	26	[960]	SELF     	4 4 -14	; "GetType"
+	27	[960]	CALL     	4 2 0
+	28	[960]	CALL     	1 0 1
+	29	[963]	GETUPVAL 	1 1	; self
+	30	[963]	SELF     	1 1 -15	; "GetCurrentInfo"
+	31	[963]	CALL     	1 2 2
+	32	[964]	GETTABUP 	2 0 -10	; _ENV "ActivityState"
+	33	[964]	GETTABLE 	2 2 -16	; "Started"
+	34	[964]	EQ       	0 0 2
+	35	[964]	JMP      	0 54	; to 90
+	36	[965]	GETUPVAL 	2 1	; self
+	37	[965]	SELF     	2 2 -17	; "CanSelectDifficulty"
+	38	[965]	CALL     	2 2 2
+	39	[965]	TEST     	2 0
+	40	[965]	JMP      	0 18	; to 59
+	41	[965]	GETUPVAL 	2 1	; self
+	42	[965]	SELF     	2 2 -18	; "GetDifficultyMode"
+	43	[965]	CALL     	2 2 2
+	44	[965]	GETTABUP 	3 0 -19	; _ENV "EUpwardDifficultyMode"
+	45	[965]	GETTABLE 	3 3 -20	; "None"
+	46	[965]	EQ       	0 2 3
+	47	[965]	JMP      	0 11	; to 59
+	48	[966]	GETTABUP 	2 0 -4	; _ENV "GM"
+	49	[966]	GETTABLE 	2 2 -5	; "UIManager"
+	50	[966]	SELF     	2 2 -6	; "OpenView"
+	51	[966]	GETTABUP 	4 1 -12	; self "m_definition"
+	52	[966]	GETTABLE 	4 4 -21	; "SelectWindowPrefabName"
+	53	[966]	GETUPVAL 	5 1	; self
+	54	[966]	SELF     	5 5 -14	; "GetType"
+	55	[966]	CALL     	5 2 2
+	56	[966]	LOADBOOL 	6 0 0
+	57	[966]	CALL     	2 5 1
+	58	[966]	JMP      	0 31	; to 90
+	59	[968]	GETUPVAL 	2 1	; self
+	60	[968]	SELF     	2 2 -22	; "GetLevelFinishTime"
+	61	[968]	CALL     	2 2 2
+	62	[968]	TEST     	2 0
+	63	[968]	JMP      	0 16	; to 80
+	64	[969]	GETTABUP 	2 0 -4	; _ENV "GM"
+	65	[969]	GETTABLE 	2 2 -5	; "UIManager"
+	66	[969]	SELF     	2 2 -6	; "OpenView"
+	67	[969]	GETTABUP 	4 0 -7	; _ENV "UIPrefabConfigName"
+	68	[969]	GETTABLE 	4 4 -8	; "NetworkErrorWindow"
+	69	[969]	CALL     	2 3 1
+	70	[970]	GETTABUP 	2 0 -23	; _ENV "GameConfig"
+	71	[970]	GETTABLE 	2 2 -24	; "IsTestMode"
+	72	[970]	CALL     	2 1 2
+	73	[970]	TEST     	2 0
+	74	[970]	JMP      	0 4	; to 79
+	75	[971]	GETTABUP 	2 0 -25	; _ENV "Log"
+	76	[971]	GETTABLE 	2 2 -26	; "Info"
+	77	[971]	LOADK    	3 -27	; "\232\191\158\233\151\175\239\188\154\229\129\135\228\186\186\232\191\152\230\156\170\229\136\183\230\150\176\239\188\140\230\151\160\230\179\149\230\137\147\229\188\128\228\184\187\231\149\140\233\157\162"
+	78	[971]	CALL     	2 2 1
+	79	[973]	RETURN   	0 1
+	80	[975]	GETTABUP 	2 0 -4	; _ENV "GM"
+	81	[975]	GETTABLE 	2 2 -5	; "UIManager"
+	82	[975]	SELF     	2 2 -6	; "OpenView"
+	83	[975]	GETTABUP 	4 1 -12	; self "m_definition"
+	84	[975]	GETTABLE 	4 4 -28	; "MainWindowPrefabName"
+	85	[975]	GETUPVAL 	5 1	; self
+	86	[975]	SELF     	5 5 -14	; "GetType"
+	87	[975]	CALL     	5 2 2
+	88	[975]	LOADBOOL 	6 0 0
+	89	[975]	CALL     	2 5 1
+	90	[978]	RETURN   	0 1
+constants (28) for 0000011FFD970A60:
+	1	"ApplicationManager"
+	2	"Instance"
+	3	"isNetworkConnected"
+	4	"GM"
+	5	"UIManager"
+	6	"OpenView"
+	7	"UIPrefabConfigName"
+	8	"NetworkErrorWindow"
+	9	"GetState"
+	10	"ActivityState"
+	11	"Preparing"
+	12	"m_definition"
+	13	"NoticeWindowPrefabName"
+	14	"GetType"
+	15	"GetCurrentInfo"
+	16	"Started"
+	17	"CanSelectDifficulty"
+	18	"GetDifficultyMode"
+	19	"EUpwardDifficultyMode"
+	20	"None"
+	21	"SelectWindowPrefabName"
+	22	"GetLevelFinishTime"
+	23	"GameConfig"
+	24	"IsTestMode"
+	25	"Log"
+	26	"Info"
+	27	"\232\191\158\233\151\175\239\188\154\229\129\135\228\186\186\232\191\152\230\156\170\229\136\183\230\150\176\239\188\140\230\151\160\230\179\149\230\137\147\229\188\128\228\184\187\231\149\140\233\157\162"
+	28	"MainWindowPrefabName"
+locals (2) for 0000011FFD970A60:
+	0	state	16	91
+	1	currentInfo	32	91
+upvalues (2) for 0000011FFD970A60:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:980,982> (11 instructions at 0000011FFD96F9E0)
+0 params, 2 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[981]	GETUPVAL 	0 0	; self
+	2	[981]	SELF     	0 0 -1	; "CanShowRedPoint"
+	3	[981]	CALL     	0 2 2
+	4	[981]	TEST     	0 0
+	5	[981]	JMP      	0 3	; to 9
+	6	[981]	LOADK    	0 -2	; 1
+	7	[981]	TEST     	0 1
+	8	[981]	JMP      	0 1	; to 10
+	9	[981]	LOADK    	0 -3	; 0
+	10	[981]	RETURN   	0 2
+	11	[982]	RETURN   	0 1
+constants (3) for 0000011FFD96F9E0:
+	1	"CanShowRedPoint"
+	2	1
+	3	0
+locals (0) for 0000011FFD96F9E0:
+upvalues (1) for 0000011FFD96F9E0:
+	0	self	1	0
+
+function <UpwardModel.lua:995,1011> (26 instructions at 0000011FFD970C60)
+1 param, 5 slots, 1 upvalue, 1 local, 19 constants, 1 function
+	1	[996]	NEWTABLE 	1 0 8
+	2	[997]	NEWTABLE 	2 2 0
+	3	[998]	GETTABLE 	3 0 -2	; "m_definition"
+	4	[998]	GETTABLE 	3 3 -3	; "Event_FinishedAll"
+	5	[999]	GETTABLE 	4 0 -2	; "m_definition"
+	6	[1000]	GETTABLE 	4 4 -4	; "Event_StateChanged"
+	7	[1000]	SETLIST  	2 2 1	; 1
+	8	[1000]	SETTABLE 	1 -1 2	; "listeners" -
+	9	[1001]	LOADK    	2 -6	; "m_"
+	10	[1001]	GETTABLE 	3 0 -7	; "m_type"
+	11	[1001]	LOADK    	4 -8	; "Bubble"
+	12	[1001]	CONCAT   	2 2 4
+	13	[1001]	SETTABLE 	1 -5 2	; "bubbleName" -
+	14	[1002]	SETTABLE 	1 -9 -10	; "bubbleNodeName" "m_upwardEntryNode"
+	15	[1003]	SETTABLE 	1 -11 -12	; "bubbleCountName" "m_upwardBubbleCount"
+	16	[1004]	GETTABLE 	2 0 -2	; "m_definition"
+	17	[1004]	GETTABLE 	2 2 -14	; "BoardEntryPrefabName"
+	18	[1004]	SETTABLE 	1 -13 2	; "entryPrefabName" -
+	19	[1005]	SETTABLE 	1 -15 -16	; "scrollToFunName" "ScrollToUpwardBoardEntry"
+	20	[1006]	SELF     	2 0 -18	; "GetType"
+	21	[1006]	CALL     	2 2 2
+	22	[1006]	SETTABLE 	1 -17 2	; "activityType" -
+	23	[1009]	CLOSURE  	2 0	; 0000011FFD96ED60
+	24	[1009]	SETTABLE 	1 -19 2	; "checkFun" -
+	25	[1010]	RETURN   	1 2
+	26	[1011]	RETURN   	0 1
+constants (19) for 0000011FFD970C60:
+	1	"listeners"
+	2	"m_definition"
+	3	"Event_FinishedAll"
+	4	"Event_StateChanged"
+	5	"bubbleName"
+	6	"m_"
+	7	"m_type"
+	8	"Bubble"
+	9	"bubbleNodeName"
+	10	"m_upwardEntryNode"
+	11	"bubbleCountName"
+	12	"m_upwardBubbleCount"
+	13	"entryPrefabName"
+	14	"BoardEntryPrefabName"
+	15	"scrollToFunName"
+	16	"ScrollToUpwardBoardEntry"
+	17	"activityType"
+	18	"GetType"
+	19	"checkFun"
+locals (1) for 0000011FFD970C60:
+	0	self	1	27
+upvalues (1) for 0000011FFD970C60:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:1007,1009> (16 instructions at 0000011FFD96ED60)
+0 params, 2 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[1008]	GETUPVAL 	0 0	; self
+	2	[1008]	SELF     	0 0 -1	; "GetState"
+	3	[1008]	CALL     	0 2 2
+	4	[1008]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[1008]	GETTABLE 	1 1 -3	; "Started"
+	6	[1008]	EQ       	0 0 1
+	7	[1008]	JMP      	0 5	; to 13
+	8	[1008]	GETUPVAL 	0 0	; self
+	9	[1008]	SELF     	0 0 -4	; "IsAllRoundFinished"
+	10	[1008]	CALL     	0 2 2
+	11	[1008]	NOT      	0 0
+	12	[1008]	JMP      	0 2	; to 15
+	13	[1008]	LOADBOOL 	0 0 1
+	14	[1008]	LOADBOOL 	0 1 0
+	15	[1008]	RETURN   	0 2
+	16	[1009]	RETURN   	0 1
+constants (4) for 0000011FFD96ED60:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"IsAllRoundFinished"
+locals (0) for 0000011FFD96ED60:
+upvalues (2) for 0000011FFD96ED60:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <UpwardModel.lua:1016,1018> (5 instructions at 0000011FFD96EFE0)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[1017]	SELF     	2 0 -1	; "_AddScore"
+	2	[1017]	MOVE     	4 1
+	3	[1017]	LOADK    	5 -2	; "test"
+	4	[1017]	CALL     	2 4 1
+	5	[1018]	RETURN   	0 1
+constants (2) for 0000011FFD96EFE0:
+	1	"_AddScore"
+	2	"test"
+locals (2) for 0000011FFD96EFE0:
+	0	self	1	6
+	1	num	1	6
+upvalues (0) for 0000011FFD96EFE0:
+
+function <UpwardModel.lua:1020,1028> (13 instructions at 0000011FFD96FA60)
+1 param, 7 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[1021]	SELF     	1 0 -1	; "GetLevel"
+	2	[1021]	CALL     	1 2 2
+	3	[1022]	SELF     	2 0 -2	; "GetRewardCongfigByLevel"
+	4	[1022]	MOVE     	4 1
+	5	[1022]	CALL     	2 3 2
+	6	[1023]	EQ       	0 2 -3	; - nil
+	7	[1023]	JMP      	0 1	; to 9
+	8	[1024]	RETURN   	0 1
+	9	[1027]	SELF     	3 0 -4	; "_AddScore"
+	10	[1027]	GETTABLE 	5 2 -5	; "target"
+	11	[1027]	LOADK    	6 -6	; "test"
+	12	[1027]	CALL     	3 4 1
+	13	[1028]	RETURN   	0 1
+constants (6) for 0000011FFD96FA60:
+	1	"GetLevel"
+	2	"GetRewardCongfigByLevel"
+	3	nil
+	4	"_AddScore"
+	5	"target"
+	6	"test"
+locals (3) for 0000011FFD96FA60:
+	0	self	1	14
+	1	level	3	14
+	2	rewardConfig	6	14
+upvalues (0) for 0000011FFD96FA60:
+
+function <UpwardModel.lua:1030,1037> (18 instructions at 0000011FFD96F0E0)
+1 param, 5 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[1031]	SELF     	1 0 -1	; "GetMaxLevel"
+	2	[1031]	CALL     	1 2 2
+	3	[1032]	SELF     	2 0 -2	; "SetLevel"
+	4	[1032]	MOVE     	4 1
+	5	[1032]	CALL     	2 3 1
+	6	[1033]	SELF     	2 0 -3	; "SetLastLevel"
+	7	[1033]	MOVE     	4 1
+	8	[1033]	CALL     	2 3 1
+	9	[1034]	SELF     	2 0 -4	; "SetScore"
+	10	[1034]	LOADK    	4 -5	; 0
+	11	[1034]	CALL     	2 3 1
+	12	[1035]	SELF     	2 0 -6	; "SetLastScore"
+	13	[1035]	LOADK    	4 -5	; 0
+	14	[1035]	CALL     	2 3 1
+	15	[1036]	SELF     	2 0 -7	; "SignUp"
+	16	[1036]	LOADBOOL 	4 0 0
+	17	[1036]	CALL     	2 3 1
+	18	[1037]	RETURN   	0 1
+constants (7) for 0000011FFD96F0E0:
+	1	"GetMaxLevel"
+	2	"SetLevel"
+	3	"SetLastLevel"
+	4	"SetScore"
+	5	0
+	6	"SetLastScore"
+	7	"SignUp"
+locals (2) for 0000011FFD96F0E0:
+	0	self	1	19
+	1	maxLevel	3	19
+upvalues (0) for 0000011FFD96F0E0:
+
+function <UpwardModel.lua:1039,1104> (47 instructions at 0000011FFD96F2E0)
+1 param, 14 slots, 1 upvalue, 1 local, 16 constants, 10 functions
+	1	[1040]	NEWTABLE 	1 0 2
+	2	[1043]	CLOSURE  	2 0	; 0000011FFD96F360
+	3	[1043]	SETTABLE 	1 -1 2	; "CheckFunc" -
+	4	[1044]	NEWTABLE 	2 0 2
+	5	[1045]	SETTABLE 	2 -3 -4	; "GroupName" "\230\181\183\229\186\149\232\191\158\233\151\175(Upward)"
+	6	[1046]	NEWTABLE 	3 9 0
+	7	[1046]	NEWTABLE 	4 0 2
+	8	[1048]	SETTABLE 	4 -6 -7	; "BtnName" "end"
+	9	[1051]	CLOSURE  	5 1	; 0000011FFD96F4E0
+	10	[1051]	SETTABLE 	4 -8 5	; "BtnClickFunc" -
+	11	[1052]	NEWTABLE 	5 0 2
+	12	[1054]	SETTABLE 	5 -6 -9	; "BtnName" "fail"
+	13	[1057]	CLOSURE  	6 2	; 0000011FFD96F3E0
+	14	[1057]	SETTABLE 	5 -8 6	; "BtnClickFunc" -
+	15	[1058]	NEWTABLE 	6 0 2
+	16	[1060]	SETTABLE 	6 -6 -10	; "BtnName" "finish"
+	17	[1063]	CLOSURE  	7 3	; 0000011FFD96F560
+	18	[1063]	SETTABLE 	6 -8 7	; "BtnClickFunc" -
+	19	[1064]	NEWTABLE 	7 0 2
+	20	[1066]	SETTABLE 	7 -6 -11	; "BtnName" "help"
+	21	[1069]	CLOSURE  	8 4	; 0000011FFD96F5E0
+	22	[1069]	SETTABLE 	7 -8 8	; "BtnClickFunc" -
+	23	[1070]	NEWTABLE 	8 0 2
+	24	[1072]	SETTABLE 	8 -6 -12	; "BtnName" "newround"
+	25	[1075]	CLOSURE  	9 5	; 0000011FFD96F660
+	26	[1075]	SETTABLE 	8 -8 9	; "BtnClickFunc" -
+	27	[1076]	NEWTABLE 	9 0 2
+	28	[1078]	SETTABLE 	9 -6 -13	; "BtnName" "notice"
+	29	[1081]	CLOSURE  	10 6	; 0000011FFD96F6E0
+	30	[1081]	SETTABLE 	9 -8 10	; "BtnClickFunc" -
+	31	[1082]	NEWTABLE 	10 0 2
+	32	[1084]	SETTABLE 	10 -6 -14	; "BtnName" "ready"
+	33	[1087]	CLOSURE  	11 7	; 0000011FFD96FB60
+	34	[1087]	SETTABLE 	10 -8 11	; "BtnClickFunc" -
+	35	[1088]	NEWTABLE 	11 0 2
+	36	[1090]	SETTABLE 	11 -6 -15	; "BtnName" "select"
+	37	[1093]	CLOSURE  	12 8	; 0000011FFD96FBE0
+	38	[1093]	SETTABLE 	11 -8 12	; "BtnClickFunc" -
+	39	[1094]	NEWTABLE 	12 0 2
+	40	[1096]	SETTABLE 	12 -6 -16	; "BtnName" "main"
+	41	[1099]	CLOSURE  	13 9	; 0000011FFD9797B0
+	42	[1099]	SETTABLE 	12 -8 13	; "BtnClickFunc" -
+	43	[1101]	SETLIST  	3 9 1	; 1
+	44	[1101]	SETTABLE 	2 -5 3	; "WindowList" -
+	45	[1102]	SETTABLE 	1 -2 2	; "config" -
+	46	[1103]	RETURN   	1 2
+	47	[1104]	RETURN   	0 1
+constants (16) for 0000011FFD96F2E0:
+	1	"CheckFunc"
+	2	"config"
+	3	"GroupName"
+	4	"\230\181\183\229\186\149\232\191\158\233\151\175(Upward)"
+	5	"WindowList"
+	6	"BtnName"
+	7	"end"
+	8	"BtnClickFunc"
+	9	"fail"
+	10	"finish"
+	11	"help"
+	12	"newround"
+	13	"notice"
+	14	"ready"
+	15	"select"
+	16	"main"
+locals (1) for 0000011FFD96F2E0:
+	0	self	1	48
+upvalues (1) for 0000011FFD96F2E0:
+	0	_ENV	0	0
+
+function <UpwardModel.lua:1041,1043> (3 instructions at 0000011FFD96F360)
+0 params, 2 slots, 0 upvalues, 0 locals, 0 constants, 0 functions
+	1	[1042]	LOADBOOL 	0 1 0
+	2	[1042]	RETURN   	0 2
+	3	[1043]	RETURN   	0 1
+constants (0) for 0000011FFD96F360:
+locals (0) for 0000011FFD96F360:
+upvalues (0) for 0000011FFD96F360:
+
+function <UpwardModel.lua:1049,1051> (11 instructions at 0000011FFD96F4E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1050]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1050]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1050]	SELF     	0 0 -3	; "OpenView"
+	4	[1050]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1050]	GETTABLE 	2 2 -5	; "EndWindowPrefabName"
+	6	[1050]	GETUPVAL 	3 1	; self
+	7	[1050]	SELF     	3 3 -6	; "GetType"
+	8	[1050]	CALL     	3 2 2
+	9	[1050]	LOADBOOL 	4 0 0
+	10	[1050]	CALL     	0 5 1
+	11	[1051]	RETURN   	0 1
+constants (6) for 0000011FFD96F4E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"EndWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F4E0:
+upvalues (2) for 0000011FFD96F4E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1055,1057> (11 instructions at 0000011FFD96F3E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1056]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1056]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1056]	SELF     	0 0 -3	; "OpenView"
+	4	[1056]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1056]	GETTABLE 	2 2 -5	; "FailWindowPrefabName"
+	6	[1056]	GETUPVAL 	3 1	; self
+	7	[1056]	SELF     	3 3 -6	; "GetType"
+	8	[1056]	CALL     	3 2 2
+	9	[1056]	LOADBOOL 	4 0 0
+	10	[1056]	CALL     	0 5 1
+	11	[1057]	RETURN   	0 1
+constants (6) for 0000011FFD96F3E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"FailWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F3E0:
+upvalues (2) for 0000011FFD96F3E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1061,1063> (11 instructions at 0000011FFD96F560)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1062]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1062]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1062]	SELF     	0 0 -3	; "OpenView"
+	4	[1062]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1062]	GETTABLE 	2 2 -5	; "FinishWindowPrefabName"
+	6	[1062]	GETUPVAL 	3 1	; self
+	7	[1062]	SELF     	3 3 -6	; "GetType"
+	8	[1062]	CALL     	3 2 2
+	9	[1062]	LOADBOOL 	4 0 0
+	10	[1062]	CALL     	0 5 1
+	11	[1063]	RETURN   	0 1
+constants (6) for 0000011FFD96F560:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"FinishWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F560:
+upvalues (2) for 0000011FFD96F560:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1067,1069> (11 instructions at 0000011FFD96F5E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1068]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1068]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1068]	SELF     	0 0 -3	; "OpenView"
+	4	[1068]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1068]	GETTABLE 	2 2 -5	; "HelpWindowPrefabName"
+	6	[1068]	GETUPVAL 	3 1	; self
+	7	[1068]	SELF     	3 3 -6	; "GetType"
+	8	[1068]	CALL     	3 2 2
+	9	[1068]	LOADBOOL 	4 0 0
+	10	[1068]	CALL     	0 5 1
+	11	[1069]	RETURN   	0 1
+constants (6) for 0000011FFD96F5E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"HelpWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F5E0:
+upvalues (2) for 0000011FFD96F5E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1073,1075> (11 instructions at 0000011FFD96F660)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1074]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1074]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1074]	SELF     	0 0 -3	; "OpenView"
+	4	[1074]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1074]	GETTABLE 	2 2 -5	; "NewRoundWindowPrefabName"
+	6	[1074]	GETUPVAL 	3 1	; self
+	7	[1074]	SELF     	3 3 -6	; "GetType"
+	8	[1074]	CALL     	3 2 2
+	9	[1074]	LOADBOOL 	4 0 0
+	10	[1074]	CALL     	0 5 1
+	11	[1075]	RETURN   	0 1
+constants (6) for 0000011FFD96F660:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"NewRoundWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F660:
+upvalues (2) for 0000011FFD96F660:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1079,1081> (11 instructions at 0000011FFD96F6E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1080]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1080]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1080]	SELF     	0 0 -3	; "OpenView"
+	4	[1080]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1080]	GETTABLE 	2 2 -5	; "NoticeWindowPrefabName"
+	6	[1080]	GETUPVAL 	3 1	; self
+	7	[1080]	SELF     	3 3 -6	; "GetType"
+	8	[1080]	CALL     	3 2 2
+	9	[1080]	LOADBOOL 	4 0 0
+	10	[1080]	CALL     	0 5 1
+	11	[1081]	RETURN   	0 1
+constants (6) for 0000011FFD96F6E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"NoticeWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96F6E0:
+upvalues (2) for 0000011FFD96F6E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1085,1087> (11 instructions at 0000011FFD96FB60)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1086]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1086]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1086]	SELF     	0 0 -3	; "OpenView"
+	4	[1086]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1086]	GETTABLE 	2 2 -5	; "ReadyWindowPrefabName"
+	6	[1086]	GETUPVAL 	3 1	; self
+	7	[1086]	SELF     	3 3 -6	; "GetType"
+	8	[1086]	CALL     	3 2 2
+	9	[1086]	LOADBOOL 	4 0 0
+	10	[1086]	CALL     	0 5 1
+	11	[1087]	RETURN   	0 1
+constants (6) for 0000011FFD96FB60:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"ReadyWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96FB60:
+upvalues (2) for 0000011FFD96FB60:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1091,1093> (11 instructions at 0000011FFD96FBE0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1092]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1092]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1092]	SELF     	0 0 -3	; "OpenView"
+	4	[1092]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1092]	GETTABLE 	2 2 -5	; "SelectWindowPrefabName"
+	6	[1092]	GETUPVAL 	3 1	; self
+	7	[1092]	SELF     	3 3 -6	; "GetType"
+	8	[1092]	CALL     	3 2 2
+	9	[1092]	LOADBOOL 	4 0 0
+	10	[1092]	CALL     	0 5 1
+	11	[1093]	RETURN   	0 1
+constants (6) for 0000011FFD96FBE0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"SelectWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD96FBE0:
+upvalues (2) for 0000011FFD96FBE0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <UpwardModel.lua:1097,1099> (11 instructions at 0000011FFD9797B0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1098]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1098]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1098]	SELF     	0 0 -3	; "OpenView"
+	4	[1098]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[1098]	GETTABLE 	2 2 -5	; "MainWindowPrefabName"
+	6	[1098]	GETUPVAL 	3 1	; self
+	7	[1098]	SELF     	3 3 -6	; "GetType"
+	8	[1098]	CALL     	3 2 2
+	9	[1098]	LOADBOOL 	4 0 0
+	10	[1098]	CALL     	0 5 1
+	11	[1099]	RETURN   	0 1
+constants (6) for 0000011FFD9797B0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"MainWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000011FFD9797B0:
+upvalues (2) for 0000011FFD9797B0:
+	0	_ENV	0	0
+	1	self	1	0

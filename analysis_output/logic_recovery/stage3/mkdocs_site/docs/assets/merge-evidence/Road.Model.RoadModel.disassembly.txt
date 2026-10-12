@@ -1,0 +1,1435 @@
+
+main <RoadModel.lua:0,0> (107 instructions at 00000192A28CEFA0)
+0+ params, 5 slots, 1 upvalue, 2 locals, 45 constants, 29 functions
+	1	[1]	NEWTABLE 	0 0 4
+	2	[2]	SETTABLE 	0 -2 -2	; "merge" "merge"
+	3	[3]	SETTABLE 	0 -3 -3	; "bubble" "bubble"
+	4	[4]	SETTABLE 	0 -4 -4	; "shop" "shop"
+	5	[5]	SETTABLE 	0 -5 -5	; "order" "order"
+	6	[6]	SETTABUP 	0 -1 0	; _ENV "RoadAddScoreScene"
+	7	[8]	NEWTABLE 	0 0 3
+	8	[9]	SETTABLE 	0 -6 -7	; "Score" "score"
+	9	[10]	SETTABLE 	0 -8 -9	; "LastDisplayedLevel" "lastDisplayedLevel"
+	10	[11]	SETTABLE 	0 -10 -11	; "LastDisplayedScore" "lastDisplayedScore"
+	11	[14]	LOADK    	1 -12	; "value"
+	12	[17]	GETTABUP 	2 0 -14	; _ENV "setmetatable"
+	13	[17]	NEWTABLE 	3 0 0
+	14	[17]	GETTABUP 	4 0 -15	; _ENV "BaseActivityModel"
+	15	[17]	CALL     	2 3 2
+	16	[17]	SETTABUP 	0 -13 2	; _ENV "RoadModel"
+	17	[18]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	18	[18]	GETTABUP 	3 0 -13	; _ENV "RoadModel"
+	19	[18]	SETTABLE 	2 -16 3	; "__index" -
+	20	[20]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	21	[26]	CLOSURE  	3 0	; 00000192A28CF020
+	22	[20]	SETTABLE 	2 -17 3	; "Init" -
+	23	[28]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	24	[30]	CLOSURE  	3 1	; 00000192A28D24E0
+	25	[28]	SETTABLE 	2 -18 3	; "Destroy" -
+	26	[32]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	27	[37]	CLOSURE  	3 2	; 00000192A28D2560
+	28	[32]	SETTABLE 	2 -19 3	; "_DropData" -
+	29	[39]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	30	[69]	CLOSURE  	3 3	; 00000192A28D25E0
+	31	[39]	SETTABLE 	2 -20 3	; "_LoadOtherServerConfig" -
+	32	[71]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	33	[97]	CLOSURE  	3 4	; 00000192A28CED80
+	34	[71]	SETTABLE 	2 -21 3	; "UpdateContent" -
+	35	[99]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	36	[102]	CLOSURE  	3 5	; 00000192A28D3CF0
+	37	[99]	SETTABLE 	2 -22 3	; "_OnStateChanged" -
+	38	[104]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	39	[106]	CLOSURE  	3 6	; 00000192A28D3DE0
+	40	[104]	SETTABLE 	2 -23 3	; "CanAddScore" -
+	41	[108]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	42	[110]	CLOSURE  	3 7	; 00000192A28D3EC0
+	43	[108]	SETTABLE 	2 -24 3	; "GetEventTokenNum" -
+	44	[113]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	45	[126]	CLOSURE  	3 8	; 00000192A28D3F40
+	46	[113]	SETTABLE 	2 -25 3	; "_TryAddMergeScore" -
+	47	[129]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	48	[142]	CLOSURE  	3 9	; 00000192A28D4140
+	49	[129]	SETTABLE 	2 -26 3	; "_TryAddBubbleBroken" -
+	50	[145]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	51	[159]	CLOSURE  	3 10	; 00000192A28D5E50
+	52	[145]	SETTABLE 	2 -27 3	; "_TryAddBuyShopItemScore" -
+	53	[162]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	54	[208]	CLOSURE  	3 11	; 00000192A28D6820
+	55	[162]	SETTABLE 	2 -28 3	; "GetAddScoreByOrder" -
+	56	[211]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	57	[215]	CLOSURE  	3 12	; 00000192A28D68A0
+	58	[211]	SETTABLE 	2 -29 3	; "_OnItemMerged" -
+	59	[217]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	60	[221]	CLOSURE  	3 13	; 00000192A28D6920
+	61	[217]	SETTABLE 	2 -30 3	; "_OnBubbleBroken" -
+	62	[223]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	63	[228]	CLOSURE  	3 14	; 00000192A28D6B20
+	64	[223]	SETTABLE 	2 -31 3	; "_OnShopItemBought" -
+	65	[230]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	66	[232]	CLOSURE  	3 15	; 00000192A28D66A0
+	67	[230]	SETTABLE 	2 -32 3	; "AcquireActivityToken" -
+	68	[235]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	69	[282]	CLOSURE  	3 16	; 00000192A28D62A0
+	70	[235]	SETTABLE 	2 -33 3	; "_AddScore" -
+	71	[284]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	72	[286]	CLOSURE  	3 17	; 00000192A28D6420
+	73	[284]	SETTABLE 	2 -34 3	; "GetTotalScore" -
+	74	[288]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	75	[290]	CLOSURE  	3 18	; 00000192A28D6020
+	76	[288]	SETTABLE 	2 -35 3	; "GetScore" -
+	77	[292]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	78	[294]	CLOSURE  	3 19	; 00000192A28D60A0
+	79	[292]	SETTABLE 	2 -36 3	; "GetLevel" -
+	80	[296]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	81	[300]	CLOSURE  	3 20	; 00000192A28D63A0
+	82	[296]	SETTABLE 	2 -37 3	; "GetLastDisplayedLevelAndScore" -
+	83	[302]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	84	[305]	CLOSURE  	3 21	; 00000192A28D6320
+	85	[302]	SETTABLE 	2 -38 3	; "SetLastDisplayedLevelAndScore" -
+	86	[307]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	87	[313]	CLOSURE  	3 22	; 00000192A28D65A0
+	88	[307]	SETTABLE 	2 -39 3	; "GetLevelConfig" -
+	89	[315]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	90	[317]	CLOSURE  	3 23	; 00000192A28D6E20
+	91	[315]	SETTABLE 	2 -40 3	; "IsTokenProperty" -
+	92	[319]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	93	[321]	CLOSURE  	3 24	; 00000192A28D6BA0
+	94	[319]	SETTABLE 	2 -41 3	; "GetTokenPropertyType" -
+	95	[323]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	96	[337]	CLOSURE  	3 25	; 00000192A28D64A0
+	97	[323]	SETTABLE 	2 -42 3	; "GetHudEntryShowConfig" -
+	98	[339]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	99	[353]	CLOSURE  	3 26	; 00000192A28D69A0
+	100	[339]	SETTABLE 	2 -43 3	; "GetBoardEntryShowConfig" -
+	101	[355]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	102	[357]	CLOSURE  	3 27	; 00000192A28D6620
+	103	[355]	SETTABLE 	2 -44 3	; "GetResourceLabels" -
+	104	[359]	GETTABUP 	2 0 -13	; _ENV "RoadModel"
+	105	[361]	CLOSURE  	3 28	; 00000192A28D6AA0
+	106	[359]	SETTABLE 	2 -45 3	; "TestAddScore" -
+	107	[361]	RETURN   	0 1
+constants (45) for 00000192A28CEFA0:
+	1	"RoadAddScoreScene"
+	2	"merge"
+	3	"bubble"
+	4	"shop"
+	5	"order"
+	6	"Score"
+	7	"score"
+	8	"LastDisplayedLevel"
+	9	"lastDisplayedLevel"
+	10	"LastDisplayedScore"
+	11	"lastDisplayedScore"
+	12	"value"
+	13	"RoadModel"
+	14	"setmetatable"
+	15	"BaseActivityModel"
+	16	"__index"
+	17	"Init"
+	18	"Destroy"
+	19	"_DropData"
+	20	"_LoadOtherServerConfig"
+	21	"UpdateContent"
+	22	"_OnStateChanged"
+	23	"CanAddScore"
+	24	"GetEventTokenNum"
+	25	"_TryAddMergeScore"
+	26	"_TryAddBubbleBroken"
+	27	"_TryAddBuyShopItemScore"
+	28	"GetAddScoreByOrder"
+	29	"_OnItemMerged"
+	30	"_OnBubbleBroken"
+	31	"_OnShopItemBought"
+	32	"AcquireActivityToken"
+	33	"_AddScore"
+	34	"GetTotalScore"
+	35	"GetScore"
+	36	"GetLevel"
+	37	"GetLastDisplayedLevelAndScore"
+	38	"SetLastDisplayedLevelAndScore"
+	39	"GetLevelConfig"
+	40	"IsTokenProperty"
+	41	"GetTokenPropertyType"
+	42	"GetHudEntryShowConfig"
+	43	"GetBoardEntryShowConfig"
+	44	"GetResourceLabels"
+	45	"TestAddScore"
+locals (2) for 00000192A28CEFA0:
+	0	DBKey	11	108
+	1	DBColumnValue	12	108
+upvalues (1) for 00000192A28CEFA0:
+	0	_ENV	1	0
+
+function <RoadModel.lua:20,26> (31 instructions at 00000192A28CF020)
+3 params, 7 slots, 1 upvalue, 3 locals, 13 constants, 0 functions
+	1	[21]	GETTABUP 	3 0 -2	; _ENV "RoadDefinition"
+	2	[21]	GETTABLE 	3 3 1
+	3	[21]	SETTABLE 	0 -1 3	; "m_definition" -
+	4	[22]	GETTABUP 	3 0 -3	; _ENV "BaseActivityModel"
+	5	[22]	GETTABLE 	3 3 -4	; "Init"
+	6	[22]	MOVE     	4 0
+	7	[22]	MOVE     	5 1
+	8	[22]	MOVE     	6 2
+	9	[22]	CALL     	3 4 1
+	10	[23]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	11	[23]	GETTABLE 	3 3 -6	; "AddListener"
+	12	[23]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	13	[23]	GETTABLE 	4 4 -8	; "ItemMerged"
+	14	[23]	MOVE     	5 0
+	15	[23]	GETTABLE 	6 0 -9	; "_OnItemMerged"
+	16	[23]	CALL     	3 4 1
+	17	[24]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	18	[24]	GETTABLE 	3 3 -6	; "AddListener"
+	19	[24]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	20	[24]	GETTABLE 	4 4 -10	; "BubbleBroken"
+	21	[24]	MOVE     	5 0
+	22	[24]	GETTABLE 	6 0 -11	; "_OnBubbleBroken"
+	23	[24]	CALL     	3 4 1
+	24	[25]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	25	[25]	GETTABLE 	3 3 -6	; "AddListener"
+	26	[25]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	27	[25]	GETTABLE 	4 4 -12	; "ShopItemBaught"
+	28	[25]	MOVE     	5 0
+	29	[25]	GETTABLE 	6 0 -13	; "_OnShopItemBought"
+	30	[25]	CALL     	3 4 1
+	31	[26]	RETURN   	0 1
+constants (13) for 00000192A28CF020:
+	1	"m_definition"
+	2	"RoadDefinition"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"EventDispatcher"
+	6	"AddListener"
+	7	"EEventType"
+	8	"ItemMerged"
+	9	"_OnItemMerged"
+	10	"BubbleBroken"
+	11	"_OnBubbleBroken"
+	12	"ShopItemBaught"
+	13	"_OnShopItemBought"
+locals (3) for 00000192A28CF020:
+	0	self	1	32
+	1	activityType	1	32
+	2	virtualDBTable	1	32
+upvalues (1) for 00000192A28CF020:
+	0	_ENV	0	0
+
+function <RoadModel.lua:28,30> (5 instructions at 00000192A28D24E0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[29]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[29]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[29]	MOVE     	2 0
+	4	[29]	CALL     	1 2 1
+	5	[30]	RETURN   	0 1
+constants (2) for 00000192A28D24E0:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 00000192A28D24E0:
+	0	self	1	6
+upvalues (1) for 00000192A28D24E0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:32,37> (7 instructions at 00000192A28D2560)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[33]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[33]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[33]	MOVE     	2 0
+	4	[33]	CALL     	1 2 1
+	5	[36]	SELF     	1 0 -3	; "UpdateContent"
+	6	[36]	CALL     	1 2 1
+	7	[37]	RETURN   	0 1
+constants (3) for 00000192A28D2560:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"UpdateContent"
+locals (1) for 00000192A28D2560:
+	0	self	1	8
+upvalues (1) for 00000192A28D2560:
+	0	_ENV	0	0
+
+function <RoadModel.lua:39,69> (100 instructions at 00000192A28D25E0)
+2 params, 12 slots, 1 upvalue, 18 locals, 31 constants, 1 function
+	1	[40]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[40]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[40]	SELF     	2 2 -3	; "GetLocalConfig"
+	4	[40]	GETTABUP 	4 0 -4	; _ENV "LocalConfigKey"
+	5	[40]	GETTABLE 	4 4 -5	; "MergeItemScoreConfig"
+	6	[40]	CALL     	2 3 2
+	7	[41]	NEWTABLE 	3 0 0
+	8	[41]	SETTABLE 	0 -6 3	; "m_mergeItemScoreConfig" -
+	9	[42]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	10	[42]	MOVE     	4 2
+	11	[42]	CALL     	3 2 4
+	12	[42]	JMP      	0 3	; to 16
+	13	[43]	GETTABLE 	8 0 -6	; "m_mergeItemScoreConfig"
+	14	[43]	GETTABLE 	9 7 -8	; "item_id"
+	15	[43]	SETTABLE 	8 9 7
+	16	[42]	TFORCALL 	3 2
+	17	[42]	TFORLOOP 	5 -5	; to 13
+	18	[46]	SETTABLE 	0 -9 -10	; "m_eventTokenNum" 0
+	19	[47]	GETTABLE 	3 0 -11	; "m_config"
+	20	[47]	NEWTABLE 	4 0 0
+	21	[47]	SETTABLE 	3 -12 4	; "roadRewards" -
+	22	[48]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	23	[48]	GETTABLE 	4 1 -13	; "roadReward"
+	24	[48]	CALL     	3 2 4
+	25	[48]	JMP      	0 19	; to 45
+	26	[49]	GETTABUP 	8 0 -14	; _ENV "table"
+	27	[49]	GETTABLE 	8 8 -15	; "insert"
+	28	[49]	GETTABLE 	9 0 -11	; "m_config"
+	29	[49]	GETTABLE 	9 9 -12	; "roadRewards"
+	30	[49]	MOVE     	10 7
+	31	[49]	CALL     	8 3 1
+	32	[50]	GETTABLE 	8 7 -16	; "reward"
+	33	[50]	GETTABUP 	9 0 -17	; _ENV "PROPERTY_TYPE"
+	34	[50]	GETTABLE 	8 8 9
+	35	[50]	GETTABUP 	9 0 -18	; _ENV "EPropertyType"
+	36	[50]	GETTABLE 	9 9 -19	; "MainDecorGeneralToken"
+	37	[50]	EQ       	0 8 9
+	38	[50]	JMP      	0 6	; to 45
+	39	[51]	GETTABLE 	8 0 -9	; "m_eventTokenNum"
+	40	[51]	GETTABLE 	9 7 -16	; "reward"
+	41	[51]	GETTABUP 	10 0 -20	; _ENV "PROPERTY_COUNT"
+	42	[51]	GETTABLE 	9 9 10
+	43	[51]	ADD      	8 8 9
+	44	[51]	SETTABLE 	0 -9 8	; "m_eventTokenNum" -
+	45	[48]	TFORCALL 	3 2
+	46	[48]	TFORLOOP 	5 -21	; to 26
+	47	[55]	GETTABUP 	3 0 -14	; _ENV "table"
+	48	[55]	GETTABLE 	3 3 -21	; "sort"
+	49	[55]	GETTABLE 	4 0 -11	; "m_config"
+	50	[55]	GETTABLE 	4 4 -12	; "roadRewards"
+	51	[57]	CLOSURE  	5 0	; 00000192A28CEA30
+	52	[55]	CALL     	3 3 1
+	53	[59]	GETTABUP 	3 0 -22	; _ENV "Log"
+	54	[59]	GETTABLE 	3 3 -23	; "Assert"
+	55	[59]	GETTABLE 	4 0 -11	; "m_config"
+	56	[59]	GETTABLE 	4 4 -12	; "roadRewards"
+	57	[59]	LEN      	4 4
+	58	[59]	EQ       	1 4 -24	; - 10
+	59	[59]	JMP      	0 1	; to 61
+	60	[59]	LOADBOOL 	4 0 1
+	61	[59]	LOADBOOL 	4 1 0
+	62	[59]	LOADK    	5 -25	; "Road rewards config must have 10 items."
+	63	[59]	CALL     	3 3 1
+	64	[60]	GETTABUP 	3 0 -22	; _ENV "Log"
+	65	[60]	GETTABLE 	3 3 -23	; "Assert"
+	66	[60]	GETTABLE 	4 0 -11	; "m_config"
+	67	[60]	GETTABLE 	4 4 -12	; "roadRewards"
+	68	[60]	GETTABLE 	4 4 -24	; 10
+	69	[60]	GETTABLE 	4 4 -16	; "reward"
+	70	[60]	GETTABUP 	5 0 -17	; _ENV "PROPERTY_TYPE"
+	71	[60]	GETTABLE 	4 4 5
+	72	[60]	GETTABUP 	5 0 -18	; _ENV "EPropertyType"
+	73	[60]	GETTABLE 	5 5 -19	; "MainDecorGeneralToken"
+	74	[60]	EQ       	1 4 5
+	75	[60]	JMP      	0 1	; to 77
+	76	[60]	LOADBOOL 	4 0 1
+	77	[60]	LOADBOOL 	4 1 0
+	78	[60]	LOADK    	5 -26	; "The 10th road reward must be event token."
+	79	[60]	CALL     	3 3 1
+	80	[63]	GETTABLE 	3 0 -11	; "m_config"
+	81	[63]	NEWTABLE 	4 0 0
+	82	[63]	SETTABLE 	3 -27 4	; "finishOrderAddScoreConfig" -
+	83	[64]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	84	[64]	GETTABLE 	4 1 -28	; "merge_order_score"
+	85	[64]	CALL     	3 2 4
+	86	[64]	JMP      	0 9	; to 96
+	87	[65]	GETTABUP 	8 0 -14	; _ENV "table"
+	88	[65]	GETTABLE 	8 8 -15	; "insert"
+	89	[65]	GETTABLE 	9 0 -11	; "m_config"
+	90	[65]	GETTABLE 	9 9 -27	; "finishOrderAddScoreConfig"
+	91	[65]	GETTABUP 	10 0 -29	; _ENV "Table"
+	92	[65]	GETTABLE 	10 10 -30	; "ShallowCopy"
+	93	[65]	MOVE     	11 7
+	94	[65]	CALL     	10 2 0
+	95	[65]	CALL     	8 0 1
+	96	[64]	TFORCALL 	3 2
+	97	[64]	TFORLOOP 	5 -11	; to 87
+	98	[68]	SELF     	3 0 -31	; "UpdateContent"
+	99	[68]	CALL     	3 2 1
+	100	[69]	RETURN   	0 1
+constants (31) for 00000192A28D25E0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetLocalConfig"
+	4	"LocalConfigKey"
+	5	"MergeItemScoreConfig"
+	6	"m_mergeItemScoreConfig"
+	7	"ipairs"
+	8	"item_id"
+	9	"m_eventTokenNum"
+	10	0
+	11	"m_config"
+	12	"roadRewards"
+	13	"roadReward"
+	14	"table"
+	15	"insert"
+	16	"reward"
+	17	"PROPERTY_TYPE"
+	18	"EPropertyType"
+	19	"MainDecorGeneralToken"
+	20	"PROPERTY_COUNT"
+	21	"sort"
+	22	"Log"
+	23	"Assert"
+	24	10
+	25	"Road rewards config must have 10 items."
+	26	"The 10th road reward must be event token."
+	27	"finishOrderAddScoreConfig"
+	28	"merge_order_score"
+	29	"Table"
+	30	"ShallowCopy"
+	31	"UpdateContent"
+locals (18) for 00000192A28D25E0:
+	0	self	1	101
+	1	config	1	101
+	2	mergeConfig	7	101
+	3	(for generator)	12	18
+	4	(for state)	12	18
+	5	(for control)	12	18
+	6	_	13	16
+	7	data	13	16
+	8	(for generator)	25	47
+	9	(for state)	25	47
+	10	(for control)	25	47
+	11	_	26	45
+	12	data	26	45
+	13	(for generator)	86	98
+	14	(for state)	86	98
+	15	(for control)	86	98
+	16	_	87	96
+	17	data	87	96
+upvalues (1) for 00000192A28D25E0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:55,57> (8 instructions at 00000192A28CEA30)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[56]	GETTABLE 	2 0 -1	; "round"
+	2	[56]	GETTABLE 	3 1 -1	; "round"
+	3	[56]	LT       	1 2 3
+	4	[56]	JMP      	0 1	; to 6
+	5	[56]	LOADBOOL 	2 0 1
+	6	[56]	LOADBOOL 	2 1 0
+	7	[56]	RETURN   	2 2
+	8	[57]	RETURN   	0 1
+constants (1) for 00000192A28CEA30:
+	1	"round"
+locals (2) for 00000192A28CEA30:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 00000192A28CEA30:
+
+function <RoadModel.lua:71,97> (40 instructions at 00000192A28CED80)
+1 param, 9 slots, 1 upvalue, 8 locals, 13 constants, 0 functions
+	1	[72]	SETTABLE 	0 -1 -2	; "m_currentStep" 0
+	2	[73]	SETTABLE 	0 -3 -2	; "m_currentScore" 0
+	3	[74]	SETTABLE 	0 -4 -5	; "m_cacheState" nil
+	4	[75]	GETTABLE 	1 0 -6	; "m_config"
+	5	[75]	EQ       	0 1 -5	; - nil
+	6	[75]	JMP      	0 1	; to 8
+	7	[76]	RETURN   	0 1
+	8	[79]	SELF     	1 0 -7	; "GetTotalScore"
+	9	[79]	CALL     	1 2 2
+	10	[80]	LOADK    	2 -2	; 0
+	11	[82]	GETTABUP 	3 0 -8	; _ENV "ipairs"
+	12	[82]	GETTABLE 	4 0 -6	; "m_config"
+	13	[82]	GETTABLE 	4 4 -9	; "roadRewards"
+	14	[82]	CALL     	3 2 4
+	15	[82]	JMP      	0 12	; to 28
+	16	[83]	GETTABLE 	8 7 -10	; "score"
+	17	[83]	ADD      	2 2 8
+	18	[84]	GETTABLE 	8 0 -1	; "m_currentStep"
+	19	[84]	ADD      	8 8 -11	; - 1
+	20	[84]	SETTABLE 	0 -1 8	; "m_currentStep" -
+	21	[85]	LT       	0 1 2
+	22	[85]	JMP      	0 5	; to 28
+	23	[86]	GETTABLE 	8 7 -10	; "score"
+	24	[86]	SUB      	8 2 8
+	25	[86]	SUB      	8 1 8
+	26	[86]	SETTABLE 	0 -3 8	; "m_currentScore" -
+	27	[86]	JMP      	0 2	; to 30
+	28	[82]	TFORCALL 	3 2
+	29	[82]	TFORLOOP 	5 -14	; to 16
+	30	[92]	LE       	0 2 1
+	31	[92]	JMP      	0 8	; to 40
+	32	[93]	GETTABUP 	3 0 -12	; _ENV "ActivityState"
+	33	[93]	GETTABLE 	3 3 -13	; "Ended"
+	34	[93]	SETTABLE 	0 -4 3	; "m_cacheState" -
+	35	[94]	SUB      	3 1 2
+	36	[94]	SETTABLE 	0 -3 3	; "m_currentScore" -
+	37	[95]	GETTABLE 	3 0 -1	; "m_currentStep"
+	38	[95]	ADD      	3 3 -11	; - 1
+	39	[95]	SETTABLE 	0 -1 3	; "m_currentStep" -
+	40	[97]	RETURN   	0 1
+constants (13) for 00000192A28CED80:
+	1	"m_currentStep"
+	2	0
+	3	"m_currentScore"
+	4	"m_cacheState"
+	5	nil
+	6	"m_config"
+	7	"GetTotalScore"
+	8	"ipairs"
+	9	"roadRewards"
+	10	"score"
+	11	1
+	12	"ActivityState"
+	13	"Ended"
+locals (8) for 00000192A28CED80:
+	0	self	1	41
+	1	score	10	41
+	2	tmpScore	11	41
+	3	(for generator)	15	30
+	4	(for state)	15	30
+	5	(for control)	15	30
+	6	_	16	28
+	7	rewardConfig	16	28
+upvalues (1) for 00000192A28CED80:
+	0	_ENV	0	0
+
+function <RoadModel.lua:99,102> (11 instructions at 00000192A28D3CF0)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[100]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[100]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[100]	GETTABLE 	2 0 -3	; "m_definition"
+	4	[100]	GETTABLE 	2 2 -4	; "StateChangedEvent"
+	5	[100]	CALL     	1 2 1
+	6	[101]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	7	[101]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	8	[101]	GETTABUP 	2 0 -5	; _ENV "EEventType"
+	9	[101]	GETTABLE 	2 2 -6	; "OrderStatusChanged"
+	10	[101]	CALL     	1 2 1
+	11	[102]	RETURN   	0 1
+constants (6) for 00000192A28D3CF0:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"m_definition"
+	4	"StateChangedEvent"
+	5	"EEventType"
+	6	"OrderStatusChanged"
+locals (1) for 00000192A28D3CF0:
+	0	self	1	12
+upvalues (1) for 00000192A28D3CF0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:104,106> (15 instructions at 00000192A28D3DE0)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[105]	SELF     	1 0 -1	; "GetState"
+	2	[105]	CALL     	1 2 2
+	3	[105]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[105]	GETTABLE 	2 2 -3	; "Started"
+	5	[105]	EQ       	0 1 2
+	6	[105]	JMP      	0 5	; to 12
+	7	[105]	GETTABLE 	1 0 -4	; "m_cacheState"
+	8	[105]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	9	[105]	GETTABLE 	2 2 -5	; "Ended"
+	10	[105]	EQ       	0 1 2
+	11	[105]	JMP      	0 1	; to 13
+	12	[105]	LOADBOOL 	1 0 1
+	13	[105]	LOADBOOL 	1 1 0
+	14	[105]	RETURN   	1 2
+	15	[106]	RETURN   	0 1
+constants (5) for 00000192A28D3DE0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_cacheState"
+	5	"Ended"
+locals (1) for 00000192A28D3DE0:
+	0	self	1	16
+upvalues (1) for 00000192A28D3DE0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:108,110> (3 instructions at 00000192A28D3EC0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[109]	GETTABLE 	1 0 -1	; "m_eventTokenNum"
+	2	[109]	RETURN   	1 2
+	3	[110]	RETURN   	0 1
+constants (1) for 00000192A28D3EC0:
+	1	"m_eventTokenNum"
+locals (1) for 00000192A28D3EC0:
+	0	self	1	4
+upvalues (0) for 00000192A28D3EC0:
+
+function <RoadModel.lua:113,126> (24 instructions at 00000192A28D3F40)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[114]	SELF     	2 0 -1	; "CanAddScore"
+	2	[114]	CALL     	2 2 2
+	3	[114]	TEST     	2 1
+	4	[114]	JMP      	0 1	; to 6
+	5	[115]	RETURN   	0 1
+	6	[117]	SELF     	2 1 -2	; "GetType"
+	7	[117]	CALL     	2 2 2
+	8	[118]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	9	[118]	GETTABLE 	3 3 2
+	10	[118]	EQ       	0 3 -4	; - nil
+	11	[118]	JMP      	0 1	; to 13
+	12	[119]	RETURN   	0 1
+	13	[122]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	14	[122]	GETTABLE 	3 3 2
+	15	[122]	GETTABLE 	3 3 -5	; "merge_score"
+	16	[123]	EQ       	1 3 -4	; - nil
+	17	[123]	JMP      	0 6	; to 24
+	18	[124]	SELF     	4 0 -6	; "_AddScore"
+	19	[124]	MOVE     	6 3
+	20	[124]	GETTABUP 	7 0 -7	; _ENV "RoadAddScoreScene"
+	21	[124]	GETTABLE 	7 7 -8	; "merge"
+	22	[124]	MOVE     	8 1
+	23	[124]	CALL     	4 5 1
+	24	[126]	RETURN   	0 1
+constants (8) for 00000192A28D3F40:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_mergeItemScoreConfig"
+	4	nil
+	5	"merge_score"
+	6	"_AddScore"
+	7	"RoadAddScoreScene"
+	8	"merge"
+locals (4) for 00000192A28D3F40:
+	0	self	1	25
+	1	itemModel	1	25
+	2	itemType	8	25
+	3	mergeScore	16	25
+upvalues (1) for 00000192A28D3F40:
+	0	_ENV	0	0
+
+function <RoadModel.lua:129,142> (24 instructions at 00000192A28D4140)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[130]	SELF     	2 0 -1	; "CanAddScore"
+	2	[130]	CALL     	2 2 2
+	3	[130]	TEST     	2 1
+	4	[130]	JMP      	0 1	; to 6
+	5	[131]	RETURN   	0 1
+	6	[133]	SELF     	2 1 -2	; "GetType"
+	7	[133]	CALL     	2 2 2
+	8	[134]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	9	[134]	GETTABLE 	3 3 2
+	10	[134]	EQ       	0 3 -4	; - nil
+	11	[134]	JMP      	0 1	; to 13
+	12	[135]	RETURN   	0 1
+	13	[138]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	14	[138]	GETTABLE 	3 3 2
+	15	[138]	GETTABLE 	3 3 -5	; "bubble_score"
+	16	[139]	EQ       	1 3 -4	; - nil
+	17	[139]	JMP      	0 6	; to 24
+	18	[140]	SELF     	4 0 -6	; "_AddScore"
+	19	[140]	MOVE     	6 3
+	20	[140]	GETTABUP 	7 0 -7	; _ENV "RoadAddScoreScene"
+	21	[140]	GETTABLE 	7 7 -8	; "bubble"
+	22	[140]	MOVE     	8 1
+	23	[140]	CALL     	4 5 1
+	24	[142]	RETURN   	0 1
+constants (8) for 00000192A28D4140:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_mergeItemScoreConfig"
+	4	nil
+	5	"bubble_score"
+	6	"_AddScore"
+	7	"RoadAddScoreScene"
+	8	"bubble"
+locals (4) for 00000192A28D4140:
+	0	self	1	25
+	1	itemModel	1	25
+	2	itemType	8	25
+	3	bubbleScore	16	25
+upvalues (1) for 00000192A28D4140:
+	0	_ENV	0	0
+
+function <RoadModel.lua:145,159> (23 instructions at 00000192A28D5E50)
+2 params, 9 slots, 1 upvalue, 4 locals, 7 constants, 0 functions
+	1	[146]	SELF     	2 0 -1	; "CanAddScore"
+	2	[146]	CALL     	2 2 2
+	3	[146]	TEST     	2 1
+	4	[146]	JMP      	0 1	; to 6
+	5	[147]	RETURN   	0 1
+	6	[150]	MOVE     	2 1
+	7	[151]	GETTABLE 	3 0 -2	; "m_mergeItemScoreConfig"
+	8	[151]	GETTABLE 	3 3 2
+	9	[151]	EQ       	0 3 -3	; - nil
+	10	[151]	JMP      	0 1	; to 12
+	11	[152]	RETURN   	0 1
+	12	[155]	GETTABLE 	3 0 -2	; "m_mergeItemScoreConfig"
+	13	[155]	GETTABLE 	3 3 2
+	14	[155]	GETTABLE 	3 3 -4	; "shop_score"
+	15	[156]	EQ       	1 3 -3	; - nil
+	16	[156]	JMP      	0 6	; to 23
+	17	[157]	SELF     	4 0 -5	; "_AddScore"
+	18	[157]	MOVE     	6 3
+	19	[157]	GETTABUP 	7 0 -6	; _ENV "RoadAddScoreScene"
+	20	[157]	GETTABLE 	7 7 -7	; "shop"
+	21	[157]	MOVE     	8 2
+	22	[157]	CALL     	4 5 1
+	23	[159]	RETURN   	0 1
+constants (7) for 00000192A28D5E50:
+	1	"CanAddScore"
+	2	"m_mergeItemScoreConfig"
+	3	nil
+	4	"shop_score"
+	5	"_AddScore"
+	6	"RoadAddScoreScene"
+	7	"shop"
+locals (4) for 00000192A28D5E50:
+	0	self	1	24
+	1	itemCode	1	24
+	2	itemType	7	24
+	3	mergeScore	15	24
+upvalues (1) for 00000192A28D5E50:
+	0	_ENV	0	0
+
+function <RoadModel.lua:162,208> (88 instructions at 00000192A28D6820)
+2 params, 11 slots, 1 upvalue, 11 locals, 19 constants, 0 functions
+	1	[163]	SELF     	2 0 -1	; "CanAddScore"
+	2	[163]	CALL     	2 2 2
+	3	[163]	TEST     	2 1
+	4	[163]	JMP      	0 2	; to 7
+	5	[164]	LOADK    	2 -2	; 0
+	6	[164]	RETURN   	2 2
+	7	[167]	SELF     	2 1 -3	; "GetInnerType"
+	8	[167]	CALL     	2 2 2
+	9	[167]	GETTABUP 	3 0 -4	; _ENV "MainOrderType"
+	10	[167]	GETTABLE 	3 3 -5	; "Special"
+	11	[167]	EQ       	0 2 3
+	12	[167]	JMP      	0 2	; to 15
+	13	[168]	LOADK    	2 -2	; 0
+	14	[168]	RETURN   	2 2
+	15	[171]	SELF     	2 1 -6	; "GetDiffScore"
+	16	[171]	CALL     	2 2 2
+	17	[172]	SELF     	3 1 -7	; "GetPrice"
+	18	[172]	CALL     	3 2 2
+	19	[175]	LOADNIL  	4 0
+	20	[176]	GETTABUP 	5 0 -8	; _ENV "ipairs"
+	21	[176]	GETTABLE 	6 0 -9	; "m_config"
+	22	[176]	GETTABLE 	6 6 -10	; "finishOrderAddScoreConfig"
+	23	[176]	CALL     	5 2 4
+	24	[176]	JMP      	0 28	; to 53
+	25	[177]	GETTABLE 	10 9 -11	; "gold_min"
+	26	[177]	EQ       	1 10 -12	; - nil
+	27	[177]	JMP      	0 11	; to 39
+	28	[177]	GETTABLE 	10 9 -13	; "gold_max"
+	29	[177]	EQ       	1 10 -12	; - nil
+	30	[177]	JMP      	0 8	; to 39
+	31	[178]	GETTABLE 	10 9 -11	; "gold_min"
+	32	[178]	LE       	0 10 3
+	33	[178]	JMP      	0 5	; to 39
+	34	[178]	GETTABLE 	10 9 -13	; "gold_max"
+	35	[178]	LE       	0 3 10
+	36	[178]	JMP      	0 2	; to 39
+	37	[179]	MOVE     	4 9
+	38	[179]	JMP      	0 16	; to 55
+	39	[184]	GETTABLE 	10 9 -14	; "diff_score_min"
+	40	[184]	EQ       	1 10 -12	; - nil
+	41	[184]	JMP      	0 11	; to 53
+	42	[184]	GETTABLE 	10 9 -15	; "diff_score_max"
+	43	[184]	EQ       	1 10 -12	; - nil
+	44	[184]	JMP      	0 8	; to 53
+	45	[185]	GETTABLE 	10 9 -14	; "diff_score_min"
+	46	[185]	LE       	0 10 2
+	47	[185]	JMP      	0 5	; to 53
+	48	[185]	GETTABLE 	10 9 -15	; "diff_score_max"
+	49	[185]	LE       	0 2 10
+	50	[185]	JMP      	0 2	; to 53
+	51	[186]	MOVE     	4 9
+	52	[186]	JMP      	0 2	; to 55
+	53	[176]	TFORCALL 	5 2
+	54	[176]	TFORLOOP 	7 -30	; to 25
+	55	[192]	EQ       	0 4 -12	; - nil
+	56	[192]	JMP      	0 2	; to 59
+	57	[193]	LOADK    	5 -2	; 0
+	58	[193]	RETURN   	5 2
+	59	[196]	LOADK    	5 -2	; 0
+	60	[198]	GETTABLE 	6 4 -16	; "reward_num_fix"
+	61	[198]	EQ       	1 6 -12	; - nil
+	62	[198]	JMP      	0 2	; to 65
+	63	[199]	GETTABLE 	5 4 -16	; "reward_num_fix"
+	64	[199]	JMP      	0 22	; to 87
+	65	[200]	GETTABLE 	6 4 -17	; "reward_num_percentage"
+	66	[200]	EQ       	1 6 -12	; - nil
+	67	[200]	JMP      	0 19	; to 87
+	68	[201]	GETTABLE 	6 4 -11	; "gold_min"
+	69	[201]	EQ       	1 6 -12	; - nil
+	70	[201]	JMP      	0 10	; to 81
+	71	[201]	GETTABLE 	6 4 -13	; "gold_max"
+	72	[201]	EQ       	1 6 -12	; - nil
+	73	[201]	JMP      	0 7	; to 81
+	74	[202]	GETTABUP 	6 0 -18	; _ENV "math"
+	75	[202]	GETTABLE 	6 6 -19	; "ceil"
+	76	[202]	GETTABLE 	7 4 -17	; "reward_num_percentage"
+	77	[202]	MUL      	7 3 7
+	78	[202]	CALL     	6 2 2
+	79	[202]	MOVE     	5 6
+	80	[202]	JMP      	0 6	; to 87
+	81	[204]	GETTABUP 	6 0 -18	; _ENV "math"
+	82	[204]	GETTABLE 	6 6 -19	; "ceil"
+	83	[204]	GETTABLE 	7 4 -17	; "reward_num_percentage"
+	84	[204]	MUL      	7 2 7
+	85	[204]	CALL     	6 2 2
+	86	[204]	MOVE     	5 6
+	87	[207]	RETURN   	5 2
+	88	[208]	RETURN   	0 1
+constants (19) for 00000192A28D6820:
+	1	"CanAddScore"
+	2	0
+	3	"GetInnerType"
+	4	"MainOrderType"
+	5	"Special"
+	6	"GetDiffScore"
+	7	"GetPrice"
+	8	"ipairs"
+	9	"m_config"
+	10	"finishOrderAddScoreConfig"
+	11	"gold_min"
+	12	nil
+	13	"gold_max"
+	14	"diff_score_min"
+	15	"diff_score_max"
+	16	"reward_num_fix"
+	17	"reward_num_percentage"
+	18	"math"
+	19	"ceil"
+locals (11) for 00000192A28D6820:
+	0	self	1	89
+	1	order	1	89
+	2	diffscore	17	89
+	3	gold	19	89
+	4	targetConfig	20	89
+	5	(for generator)	24	55
+	6	(for state)	24	55
+	7	(for control)	24	55
+	8	_	25	53
+	9	config	25	53
+	10	score	60	89
+upvalues (1) for 00000192A28D6820:
+	0	_ENV	0	0
+
+function <RoadModel.lua:211,215> (11 instructions at 00000192A28D68A0)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[212]	GETTABLE 	2 1 -1	; "Source"
+	2	[212]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[212]	CALL     	2 2 2
+	4	[212]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[212]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[212]	EQ       	0 2 3
+	7	[212]	JMP      	0 3	; to 11
+	8	[213]	SELF     	2 0 -5	; "_TryAddMergeScore"
+	9	[213]	GETTABLE 	4 1 -1	; "Source"
+	10	[213]	CALL     	2 3 1
+	11	[215]	RETURN   	0 1
+constants (5) for 00000192A28D68A0:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddMergeScore"
+locals (2) for 00000192A28D68A0:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 00000192A28D68A0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:217,221> (11 instructions at 00000192A28D6920)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[218]	GETTABLE 	2 1 -1	; "Source"
+	2	[218]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[218]	CALL     	2 2 2
+	4	[218]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[218]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[218]	EQ       	0 2 3
+	7	[218]	JMP      	0 3	; to 11
+	8	[219]	SELF     	2 0 -5	; "_TryAddBubbleBroken"
+	9	[219]	GETTABLE 	4 1 -6	; "New"
+	10	[219]	CALL     	2 3 1
+	11	[221]	RETURN   	0 1
+constants (6) for 00000192A28D6920:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddBubbleBroken"
+	6	"New"
+locals (2) for 00000192A28D6920:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 00000192A28D6920:
+	0	_ENV	0	0
+
+function <RoadModel.lua:223,228> (11 instructions at 00000192A28D6B20)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[225]	GETTABLE 	2 1 -1	; "Data"
+	2	[225]	GETTABLE 	2 2 -2	; "shopType"
+	3	[225]	GETTABUP 	3 0 -3	; _ENV "EShopType"
+	4	[225]	GETTABLE 	3 3 -4	; "FlashSale"
+	5	[225]	EQ       	0 2 3
+	6	[225]	JMP      	0 4	; to 11
+	7	[226]	SELF     	2 0 -5	; "_TryAddBuyShopItemScore"
+	8	[226]	GETTABLE 	4 1 -1	; "Data"
+	9	[226]	GETTABLE 	4 4 -6	; "itemCode"
+	10	[226]	CALL     	2 3 1
+	11	[228]	RETURN   	0 1
+constants (6) for 00000192A28D6B20:
+	1	"Data"
+	2	"shopType"
+	3	"EShopType"
+	4	"FlashSale"
+	5	"_TryAddBuyShopItemScore"
+	6	"itemCode"
+locals (2) for 00000192A28D6B20:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 00000192A28D6B20:
+	0	_ENV	0	0
+
+function <RoadModel.lua:230,232> (7 instructions at 00000192A28D66A0)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[231]	SELF     	2 0 -1	; "_AddScore"
+	2	[231]	MOVE     	4 1
+	3	[231]	GETTABUP 	5 0 -2	; _ENV "RoadAddScoreScene"
+	4	[231]	GETTABLE 	5 5 -3	; "order"
+	5	[231]	LOADNIL  	6 0
+	6	[231]	CALL     	2 5 1
+	7	[232]	RETURN   	0 1
+constants (3) for 00000192A28D66A0:
+	1	"_AddScore"
+	2	"RoadAddScoreScene"
+	3	"order"
+locals (2) for 00000192A28D66A0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 00000192A28D66A0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:235,282> (110 instructions at 00000192A28D62A0)
+4 params, 17 slots, 3 upvalues, 14 locals, 52 constants, 0 functions
+	1	[236]	GETTABLE 	4 0 -1	; "m_currentStep"
+	2	[238]	SELF     	5 0 -2	; "GetTotalScore"
+	3	[238]	CALL     	5 2 2
+	4	[238]	ADD      	5 5 1
+	5	[239]	GETTABLE 	6 0 -3	; "m_dbTable"
+	6	[239]	SELF     	6 6 -4	; "Set"
+	7	[239]	GETTABUP 	8 0 -5	; DBKey "Score"
+	8	[239]	GETUPVAL 	9 1	; DBColumnValue
+	9	[239]	MOVE     	10 5
+	10	[239]	CALL     	6 5 1
+	11	[241]	SELF     	6 0 -6	; "LogActivity"
+	12	[241]	GETTABUP 	8 2 -7	; _ENV "EBIType"
+	13	[241]	GETTABLE 	8 8 -8	; "ActivityAddScore"
+	14	[241]	MOVE     	9 1
+	15	[241]	CALL     	6 4 1
+	16	[242]	GETTABUP 	6 2 -9	; _ENV "GM"
+	17	[242]	GETTABLE 	6 6 -10	; "BIManager"
+	18	[242]	SELF     	6 6 -11	; "LogAction"
+	19	[242]	GETTABLE 	8 0 -12	; "m_definition"
+	20	[242]	GETTABLE 	8 8 -13	; "GetScoreBIType"
+	21	[242]	NEWTABLE 	9 0 3
+	22	[243]	SETTABLE 	9 -14 1	; "score" -
+	23	[244]	SETTABLE 	9 -15 2	; "scene" -
+	24	[245]	SETTABLE 	9 -16 4	; "level" -
+	25	[242]	CALL     	6 4 1
+	26	[249]	SELF     	6 0 -17	; "UpdateContent"
+	27	[249]	CALL     	6 2 1
+	28	[250]	LOADK    	6 -18	; 0
+	29	[251]	NEWTABLE 	7 0 0
+	30	[252]	GETTABLE 	8 0 -1	; "m_currentStep"
+	31	[252]	LT       	0 4 8
+	32	[252]	JMP      	0 43	; to 76
+	33	[253]	GETTABUP 	8 2 -19	; _ENV "ipairs"
+	34	[253]	GETTABLE 	9 0 -20	; "m_config"
+	35	[253]	GETTABLE 	9 9 -21	; "roadRewards"
+	36	[253]	CALL     	8 2 4
+	37	[253]	JMP      	0 18	; to 56
+	38	[254]	ADD      	6 6 -22	; - 1
+	39	[255]	LE       	0 4 6
+	40	[255]	JMP      	0 15	; to 56
+	41	[255]	GETTABLE 	13 0 -1	; "m_currentStep"
+	42	[255]	LT       	0 6 13
+	43	[255]	JMP      	0 12	; to 56
+	44	[256]	GETTABUP 	13 2 -23	; _ENV "Table"
+	45	[256]	GETTABLE 	13 13 -24	; "ListAppend"
+	46	[256]	MOVE     	14 7
+	47	[256]	NEWTABLE 	15 1 0
+	48	[256]	GETTABLE 	16 12 -25	; "reward"
+	49	[256]	SETLIST  	15 1 1	; 1
+	50	[256]	CALL     	13 3 1
+	51	[257]	SELF     	13 0 -6	; "LogActivity"
+	52	[257]	GETTABUP 	15 2 -7	; _ENV "EBIType"
+	53	[257]	GETTABLE 	15 15 -26	; "ActivityRankUp"
+	54	[257]	MOVE     	16 6
+	55	[257]	CALL     	13 4 1
+	56	[253]	TFORCALL 	8 2
+	57	[253]	TFORLOOP 	10 -20	; to 38
+	58	[261]	GETTABUP 	8 2 -23	; _ENV "Table"
+	59	[261]	GETTABLE 	8 8 -27	; "IsEmpty"
+	60	[261]	MOVE     	9 7
+	61	[261]	CALL     	8 2 2
+	62	[261]	TEST     	8 1
+	63	[261]	JMP      	0 12	; to 76
+	64	[262]	GETTABUP 	8 2 -28	; _ENV "RewardApi"
+	65	[262]	GETTABLE 	8 8 -29	; "AcquireRewardsLogic"
+	66	[262]	MOVE     	9 7
+	67	[262]	GETTABUP 	10 2 -30	; _ENV "EPropertySource"
+	68	[262]	GETTABLE 	10 10 -31	; "Give"
+	69	[262]	GETTABLE 	11 0 -12	; "m_definition"
+	70	[262]	GETTABLE 	11 11 -32	; "GetRewardsBIType"
+	71	[262]	GETTABUP 	12 2 -33	; _ENV "EGameMode"
+	72	[262]	GETTABLE 	12 12 -34	; "Main"
+	73	[262]	GETTABUP 	13 2 -35	; _ENV "CacheItemType"
+	74	[262]	GETTABLE 	13 13 -36	; "Type2"
+	75	[262]	CALL     	8 6 1
+	76	[266]	NEWTABLE 	8 0 5
+	77	[267]	SETTABLE 	8 -37 2	; "Scene" -
+	78	[268]	SETTABLE 	8 -38 3	; "Source" -
+	79	[269]	SETTABLE 	8 -39 1	; "TokenScore" -
+	80	[270]	SETTABLE 	8 -40 7	; "Rewards" -
+	81	[271]	SELF     	9 0 -42	; "GetType"
+	82	[271]	CALL     	9 2 2
+	83	[271]	SETTABLE 	8 -41 9	; "activityType" -
+	84	[274]	GETTABLE 	9 0 -43	; "m_cacheState"
+	85	[274]	GETTABUP 	10 2 -44	; _ENV "ActivityState"
+	86	[274]	GETTABLE 	10 10 -45	; "Ended"
+	87	[274]	EQ       	0 9 10
+	88	[274]	JMP      	0 5	; to 94
+	89	[276]	GETTABUP 	9 2 -46	; _ENV "EventDispatcher"
+	90	[276]	GETTABLE 	9 9 -47	; "DispatchEvent"
+	91	[276]	GETTABUP 	10 2 -48	; _ENV "EEventType"
+	92	[276]	GETTABLE 	10 10 -49	; "OrderStatusChanged"
+	93	[276]	CALL     	9 2 1
+	94	[279]	GETTABLE 	9 8 -37	; "Scene"
+	95	[279]	GETTABUP 	10 2 -50	; _ENV "RoadAddScoreScene"
+	96	[279]	GETTABLE 	10 10 -51	; "order"
+	97	[279]	EQ       	0 9 10
+	98	[279]	JMP      	0 5	; to 104
+	99	[279]	GETTABLE 	9 0 -43	; "m_cacheState"
+	100	[279]	GETTABUP 	10 2 -44	; _ENV "ActivityState"
+	101	[279]	GETTABLE 	10 10 -45	; "Ended"
+	102	[279]	EQ       	0 9 10
+	103	[279]	JMP      	0 6	; to 110
+	104	[280]	GETTABUP 	9 2 -46	; _ENV "EventDispatcher"
+	105	[280]	GETTABLE 	9 9 -47	; "DispatchEvent"
+	106	[280]	GETTABLE 	10 0 -12	; "m_definition"
+	107	[280]	GETTABLE 	10 10 -52	; "ScoreChangedEvent"
+	108	[280]	MOVE     	11 8
+	109	[280]	CALL     	9 3 1
+	110	[282]	RETURN   	0 1
+constants (52) for 00000192A28D62A0:
+	1	"m_currentStep"
+	2	"GetTotalScore"
+	3	"m_dbTable"
+	4	"Set"
+	5	"Score"
+	6	"LogActivity"
+	7	"EBIType"
+	8	"ActivityAddScore"
+	9	"GM"
+	10	"BIManager"
+	11	"LogAction"
+	12	"m_definition"
+	13	"GetScoreBIType"
+	14	"score"
+	15	"scene"
+	16	"level"
+	17	"UpdateContent"
+	18	0
+	19	"ipairs"
+	20	"m_config"
+	21	"roadRewards"
+	22	1
+	23	"Table"
+	24	"ListAppend"
+	25	"reward"
+	26	"ActivityRankUp"
+	27	"IsEmpty"
+	28	"RewardApi"
+	29	"AcquireRewardsLogic"
+	30	"EPropertySource"
+	31	"Give"
+	32	"GetRewardsBIType"
+	33	"EGameMode"
+	34	"Main"
+	35	"CacheItemType"
+	36	"Type2"
+	37	"Scene"
+	38	"Source"
+	39	"TokenScore"
+	40	"Rewards"
+	41	"activityType"
+	42	"GetType"
+	43	"m_cacheState"
+	44	"ActivityState"
+	45	"Ended"
+	46	"EventDispatcher"
+	47	"DispatchEvent"
+	48	"EEventType"
+	49	"OrderStatusChanged"
+	50	"RoadAddScoreScene"
+	51	"order"
+	52	"ScoreChangedEvent"
+locals (14) for 00000192A28D62A0:
+	0	self	1	111
+	1	addScore	1	111
+	2	scene	1	111
+	3	message	1	111
+	4	lastStep	2	111
+	5	score	5	111
+	6	step	29	111
+	7	rewards	30	111
+	8	(for generator)	37	58
+	9	(for state)	37	58
+	10	(for control)	37	58
+	11	_	38	56
+	12	rewardConfig	38	56
+	13	msg	84	111
+upvalues (3) for 00000192A28D62A0:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+	2	_ENV	0	0
+
+function <RoadModel.lua:284,286> (10 instructions at 00000192A28D6420)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[285]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[285]	SELF     	1 1 -2	; "GetValue"
+	3	[285]	GETTABUP 	3 0 -3	; DBKey "Score"
+	4	[285]	GETUPVAL 	4 1	; DBColumnValue
+	5	[285]	CALL     	1 4 2
+	6	[285]	TEST     	1 1
+	7	[285]	JMP      	0 1	; to 9
+	8	[285]	LOADK    	1 -4	; 0
+	9	[285]	RETURN   	1 2
+	10	[286]	RETURN   	0 1
+constants (4) for 00000192A28D6420:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Score"
+	4	0
+locals (1) for 00000192A28D6420:
+	0	self	1	11
+upvalues (2) for 00000192A28D6420:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <RoadModel.lua:288,290> (3 instructions at 00000192A28D6020)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[289]	GETTABLE 	1 0 -1	; "m_currentScore"
+	2	[289]	RETURN   	1 2
+	3	[290]	RETURN   	0 1
+constants (1) for 00000192A28D6020:
+	1	"m_currentScore"
+locals (1) for 00000192A28D6020:
+	0	self	1	4
+upvalues (0) for 00000192A28D6020:
+
+function <RoadModel.lua:292,294> (3 instructions at 00000192A28D60A0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[293]	GETTABLE 	1 0 -1	; "m_currentStep"
+	2	[293]	RETURN   	1 2
+	3	[294]	RETURN   	0 1
+constants (1) for 00000192A28D60A0:
+	1	"m_currentStep"
+locals (1) for 00000192A28D60A0:
+	0	self	1	4
+upvalues (0) for 00000192A28D60A0:
+
+function <RoadModel.lua:296,300> (20 instructions at 00000192A28D63A0)
+1 param, 6 slots, 2 upvalues, 3 locals, 6 constants, 0 functions
+	1	[297]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[297]	SELF     	1 1 -2	; "GetValue"
+	3	[297]	GETTABUP 	3 0 -3	; DBKey "LastDisplayedLevel"
+	4	[297]	GETUPVAL 	4 1	; DBColumnValue
+	5	[297]	CALL     	1 4 2
+	6	[297]	TEST     	1 1
+	7	[297]	JMP      	0 1	; to 9
+	8	[297]	LOADK    	1 -4	; 1
+	9	[298]	GETTABLE 	2 0 -1	; "m_dbTable"
+	10	[298]	SELF     	2 2 -2	; "GetValue"
+	11	[298]	GETTABUP 	4 0 -5	; DBKey "LastDisplayedScore"
+	12	[298]	GETUPVAL 	5 1	; DBColumnValue
+	13	[298]	CALL     	2 4 2
+	14	[298]	TEST     	2 1
+	15	[298]	JMP      	0 1	; to 17
+	16	[298]	LOADK    	2 -6	; 0
+	17	[299]	MOVE     	3 1
+	18	[299]	MOVE     	4 2
+	19	[299]	RETURN   	3 3
+	20	[300]	RETURN   	0 1
+constants (6) for 00000192A28D63A0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastDisplayedLevel"
+	4	1
+	5	"LastDisplayedScore"
+	6	0
+locals (3) for 00000192A28D63A0:
+	0	self	1	21
+	1	lastDisplayedLevel	9	21
+	2	lastDisplayedScore	17	21
+upvalues (2) for 00000192A28D63A0:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <RoadModel.lua:302,305> (13 instructions at 00000192A28D6320)
+3 params, 8 slots, 2 upvalues, 3 locals, 4 constants, 0 functions
+	1	[303]	GETTABLE 	3 0 -1	; "m_dbTable"
+	2	[303]	SELF     	3 3 -2	; "Set"
+	3	[303]	GETTABUP 	5 0 -3	; DBKey "LastDisplayedLevel"
+	4	[303]	GETUPVAL 	6 1	; DBColumnValue
+	5	[303]	MOVE     	7 1
+	6	[303]	CALL     	3 5 1
+	7	[304]	GETTABLE 	3 0 -1	; "m_dbTable"
+	8	[304]	SELF     	3 3 -2	; "Set"
+	9	[304]	GETTABUP 	5 0 -4	; DBKey "LastDisplayedScore"
+	10	[304]	GETUPVAL 	6 1	; DBColumnValue
+	11	[304]	MOVE     	7 2
+	12	[304]	CALL     	3 5 1
+	13	[305]	RETURN   	0 1
+constants (4) for 00000192A28D6320:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastDisplayedLevel"
+	4	"LastDisplayedScore"
+locals (3) for 00000192A28D6320:
+	0	self	1	14
+	1	lastDisplayedLevel	1	14
+	2	lastDisplayedScore	1	14
+upvalues (2) for 00000192A28D6320:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <RoadModel.lua:307,313> (8 instructions at 00000192A28D65A0)
+2 params, 3 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[308]	LE       	0 1 -1	; - 0
+	2	[308]	JMP      	0 1	; to 4
+	3	[309]	RETURN   	0 1
+	4	[312]	GETTABLE 	2 0 -2	; "m_config"
+	5	[312]	GETTABLE 	2 2 -3	; "roadRewards"
+	6	[312]	GETTABLE 	2 2 1
+	7	[312]	RETURN   	2 2
+	8	[313]	RETURN   	0 1
+constants (3) for 00000192A28D65A0:
+	1	0
+	2	"m_config"
+	3	"roadRewards"
+locals (2) for 00000192A28D65A0:
+	0	self	1	9
+	1	level	1	9
+upvalues (0) for 00000192A28D65A0:
+
+function <RoadModel.lua:315,317> (8 instructions at 00000192A28D6E20)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[316]	GETTABLE 	2 0 -1	; "m_definition"
+	2	[316]	GETTABLE 	2 2 -2	; "ActivityTokenPropertyType"
+	3	[316]	EQ       	1 1 2
+	4	[316]	JMP      	0 1	; to 6
+	5	[316]	LOADBOOL 	2 0 1
+	6	[316]	LOADBOOL 	2 1 0
+	7	[316]	RETURN   	2 2
+	8	[317]	RETURN   	0 1
+constants (2) for 00000192A28D6E20:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (2) for 00000192A28D6E20:
+	0	self	1	9
+	1	propertyType	1	9
+upvalues (0) for 00000192A28D6E20:
+
+function <RoadModel.lua:319,321> (4 instructions at 00000192A28D6BA0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[320]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[320]	GETTABLE 	1 1 -2	; "ActivityTokenPropertyType"
+	3	[320]	RETURN   	1 2
+	4	[321]	RETURN   	0 1
+constants (2) for 00000192A28D6BA0:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (1) for 00000192A28D6BA0:
+	0	self	1	5
+upvalues (0) for 00000192A28D6BA0:
+
+function <RoadModel.lua:323,337> (30 instructions at 00000192A28D64A0)
+1 param, 5 slots, 1 upvalue, 1 local, 19 constants, 2 functions
+	1	[324]	NEWTABLE 	1 0 9
+	2	[325]	SETTABLE 	1 -1 -2	; "Type" "road"
+	3	[326]	NEWTABLE 	2 2 0
+	4	[326]	GETTABLE 	3 0 -4	; "m_definition"
+	5	[326]	GETTABLE 	3 3 -5	; "StateChangedEvent"
+	6	[326]	GETTABLE 	4 0 -4	; "m_definition"
+	7	[326]	GETTABLE 	4 4 -6	; "ScoreChangedEvent"
+	8	[326]	SETLIST  	2 2 1	; 1
+	9	[326]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	10	[327]	GETTABUP 	2 0 -8	; _ENV "UIPrefabConfigName"
+	11	[327]	GETTABLE 	2 2 -9	; "HudActivityEntry"
+	12	[327]	SETTABLE 	1 -7 2	; "EntryPrefabConfigName" -
+	13	[328]	CLOSURE  	2 0	; 00000192A28D6DA0
+	14	[328]	SETTABLE 	1 -10 2	; "CheckFunc" -
+	15	[329]	GETTABUP 	2 0 -12	; _ENV "EHudSideBarType"
+	16	[329]	GETTABLE 	2 2 -13	; "Left"
+	17	[329]	SETTABLE 	1 -11 2	; "HudSideBarType" -
+	18	[330]	GETTABLE 	2 0 -4	; "m_definition"
+	19	[330]	GETTABLE 	2 2 -14	; "EntryButtonKey"
+	20	[330]	SETTABLE 	1 -14 2	; "EntryButtonKey" -
+	21	[331]	GETTABLE 	2 0 -4	; "m_definition"
+	22	[331]	GETTABLE 	2 2 -15	; "EntryIconName"
+	23	[331]	SETTABLE 	1 -15 2	; "EntryIconName" -
+	24	[334]	CLOSURE  	2 1	; 00000192A28D67A0
+	25	[334]	SETTABLE 	1 -16 2	; "OnClickedFunc" -
+	26	[335]	GETTABUP 	2 0 -18	; _ENV "EntryRedPointType"
+	27	[335]	GETTABLE 	2 2 -19	; "None"
+	28	[335]	SETTABLE 	1 -17 2	; "RedPointType" -
+	29	[336]	RETURN   	1 2
+	30	[337]	RETURN   	0 1
+constants (19) for 00000192A28D64A0:
+	1	"Type"
+	2	"road"
+	3	"ArrCheckShowEvent"
+	4	"m_definition"
+	5	"StateChangedEvent"
+	6	"ScoreChangedEvent"
+	7	"EntryPrefabConfigName"
+	8	"UIPrefabConfigName"
+	9	"HudActivityEntry"
+	10	"CheckFunc"
+	11	"HudSideBarType"
+	12	"EHudSideBarType"
+	13	"Left"
+	14	"EntryButtonKey"
+	15	"EntryIconName"
+	16	"OnClickedFunc"
+	17	"RedPointType"
+	18	"EntryRedPointType"
+	19	"None"
+locals (1) for 00000192A28D64A0:
+	0	self	1	31
+upvalues (1) for 00000192A28D64A0:
+	0	_ENV	0	0
+
+function <RoadModel.lua:328,328> (5 instructions at 00000192A28D6DA0)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[328]	GETUPVAL 	0 0	; self
+	2	[328]	SELF     	0 0 -1	; "CanAddScore"
+	3	[328]	TAILCALL 	0 2 0
+	4	[328]	RETURN   	0 0
+	5	[328]	RETURN   	0 1
+constants (1) for 00000192A28D6DA0:
+	1	"CanAddScore"
+locals (0) for 00000192A28D6DA0:
+upvalues (1) for 00000192A28D6DA0:
+	0	self	1	0
+
+function <RoadModel.lua:332,334> (10 instructions at 00000192A28D67A0)
+0 params, 6 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[333]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[333]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[333]	SELF     	0 0 -3	; "OpenView"
+	4	[333]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[333]	GETTABLE 	2 2 -5	; "MainWindowPrefabName"
+	6	[333]	GETTABUP 	3 1 -6	; self "m_type"
+	7	[333]	LOADBOOL 	4 0 0
+	8	[333]	LOADBOOL 	5 0 0
+	9	[333]	CALL     	0 6 1
+	10	[334]	RETURN   	0 1
+constants (6) for 00000192A28D67A0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"MainWindowPrefabName"
+	6	"m_type"
+locals (0) for 00000192A28D67A0:
+upvalues (2) for 00000192A28D67A0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <RoadModel.lua:339,353> (25 instructions at 00000192A28D69A0)
+1 param, 5 slots, 0 upvalues, 1 local, 18 constants, 1 function
+	1	[340]	NEWTABLE 	1 0 8
+	2	[341]	NEWTABLE 	2 2 0
+	3	[342]	GETTABLE 	3 0 -2	; "m_definition"
+	4	[342]	GETTABLE 	3 3 -3	; "StateChangedEvent"
+	5	[343]	GETTABLE 	4 0 -2	; "m_definition"
+	6	[344]	GETTABLE 	4 4 -4	; "ScoreChangedEvent"
+	7	[344]	SETLIST  	2 2 1	; 1
+	8	[344]	SETTABLE 	1 -1 2	; "listeners" -
+	9	[345]	LOADK    	2 -6	; "m_"
+	10	[345]	GETTABLE 	3 0 -7	; "m_type"
+	11	[345]	LOADK    	4 -8	; "Bubble"
+	12	[345]	CONCAT   	2 2 4
+	13	[345]	SETTABLE 	1 -5 2	; "bubbleName" -
+	14	[346]	SETTABLE 	1 -9 -10	; "bubbleNodeName" "m_roadEntryNode"
+	15	[347]	SETTABLE 	1 -11 -12	; "bubbleCountName" "m_roadBubbleCount"
+	16	[348]	GETTABLE 	2 0 -2	; "m_definition"
+	17	[348]	GETTABLE 	2 2 -14	; "BoardEntryPrefabName"
+	18	[348]	SETTABLE 	1 -13 2	; "entryPrefabName" -
+	19	[349]	SETTABLE 	1 -15 -16	; "scrollToFunName" "ScrollToRoadBoardEntry"
+	20	[350]	GETTABLE 	2 0 -7	; "m_type"
+	21	[350]	SETTABLE 	1 -17 2	; "activityType" -
+	22	[351]	CLOSURE  	2 0	; 00000192A28D6A20
+	23	[351]	SETTABLE 	1 -18 2	; "checkFun" -
+	24	[352]	RETURN   	1 2
+	25	[353]	RETURN   	0 1
+constants (18) for 00000192A28D69A0:
+	1	"listeners"
+	2	"m_definition"
+	3	"StateChangedEvent"
+	4	"ScoreChangedEvent"
+	5	"bubbleName"
+	6	"m_"
+	7	"m_type"
+	8	"Bubble"
+	9	"bubbleNodeName"
+	10	"m_roadEntryNode"
+	11	"bubbleCountName"
+	12	"m_roadBubbleCount"
+	13	"entryPrefabName"
+	14	"BoardEntryPrefabName"
+	15	"scrollToFunName"
+	16	"ScrollToRoadBoardEntry"
+	17	"activityType"
+	18	"checkFun"
+locals (1) for 00000192A28D69A0:
+	0	self	1	26
+upvalues (0) for 00000192A28D69A0:
+
+function <RoadModel.lua:351,351> (5 instructions at 00000192A28D6A20)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[351]	GETUPVAL 	0 0	; self
+	2	[351]	SELF     	0 0 -1	; "CanAddScore"
+	3	[351]	TAILCALL 	0 2 0
+	4	[351]	RETURN   	0 0
+	5	[351]	RETURN   	0 1
+constants (1) for 00000192A28D6A20:
+	1	"CanAddScore"
+locals (0) for 00000192A28D6A20:
+upvalues (1) for 00000192A28D6A20:
+	0	self	1	0
+
+function <RoadModel.lua:355,357> (4 instructions at 00000192A28D6620)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[356]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[356]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[356]	RETURN   	1 2
+	4	[357]	RETURN   	0 1
+constants (2) for 00000192A28D6620:
+	1	"m_definition"
+	2	"ResourceLabels"
+locals (1) for 00000192A28D6620:
+	0	self	1	5
+upvalues (0) for 00000192A28D6620:
+
+function <RoadModel.lua:359,361> (7 instructions at 00000192A28D6AA0)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[360]	SELF     	2 0 -1	; "_AddScore"
+	2	[360]	MOVE     	4 1
+	3	[360]	GETTABUP 	5 0 -2	; _ENV "RoadAddScoreScene"
+	4	[360]	GETTABLE 	5 5 -3	; "shop"
+	5	[360]	LOADNIL  	6 0
+	6	[360]	CALL     	2 5 1
+	7	[361]	RETURN   	0 1
+constants (3) for 00000192A28D6AA0:
+	1	"_AddScore"
+	2	"RoadAddScoreScene"
+	3	"shop"
+locals (2) for 00000192A28D6AA0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 00000192A28D6AA0:
+	0	_ENV	0	0

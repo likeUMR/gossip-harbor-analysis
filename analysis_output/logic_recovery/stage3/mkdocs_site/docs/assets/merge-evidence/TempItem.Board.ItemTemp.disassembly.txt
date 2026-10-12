@@ -1,0 +1,333 @@
+
+main <ItemTemp.lua:0,0> (36 instructions at 0000015134B6EEA0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 14 constants, 9 functions
+	1	[5]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[5]	NEWTABLE 	1 0 0
+	3	[5]	GETTABUP 	2 0 -3	; _ENV "BaseItemComponent"
+	4	[5]	CALL     	0 3 2
+	5	[5]	SETTABUP 	0 -1 0	; _ENV "ItemTemp"
+	6	[6]	GETTABUP 	0 0 -1	; _ENV "ItemTemp"
+	7	[6]	GETTABUP 	1 0 -1	; _ENV "ItemTemp"
+	8	[6]	SETTABLE 	0 -4 1	; "__index" -
+	9	[8]	GETTABUP 	0 0 -1	; _ENV "ItemTemp"
+	10	[12]	CLOSURE  	1 0	; 0000015134B6F220
+	11	[8]	SETTABLE 	0 -5 1	; "Create" -
+	12	[14]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	13	[17]	CLOSURE  	1 1	; 0000015134B6F2A0
+	14	[14]	SETTABLE 	0 -7 1	; "Init" -
+	15	[19]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	16	[23]	CLOSURE  	1 2	; 0000015134B716D0
+	17	[19]	SETTABLE 	0 -8 1	; "UpdatePerSecond" -
+	18	[25]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	19	[27]	CLOSURE  	1 3	; 0000015134B71750
+	20	[25]	SETTABLE 	0 -9 1	; "OnSpeedUp" -
+	21	[29]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	22	[31]	CLOSURE  	1 4	; 0000015134B717D0
+	23	[29]	SETTABLE 	0 -10 1	; "GetInnerItemCode" -
+	24	[33]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	25	[41]	CLOSURE  	1 5	; 0000015134B71850
+	26	[33]	SETTABLE 	0 -11 1	; "GetTimerDuration" -
+	27	[43]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	28	[51]	CLOSURE  	1 6	; 0000015134B71970
+	29	[43]	SETTABLE 	0 -12 1	; "GetStartTimer" -
+	30	[53]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	31	[56]	CLOSURE  	1 7	; 0000015134B71AA0
+	32	[53]	SETTABLE 	0 -13 1	; "GetTimerAmount" -
+	33	[58]	GETTABUP 	0 0 -6	; _ENV "ItemTemp"
+	34	[81]	CLOSURE  	1 8	; 0000015134B723C0
+	35	[58]	SETTABLE 	0 -14 1	; "_Disappear" -
+	36	[81]	RETURN   	0 1
+constants (14) for 0000015134B6EEA0:
+	1	"ItemTemp"
+	2	"setmetatable"
+	3	"BaseItemComponent"
+	4	"__index"
+	5	"Create"
+	6	"ItemTemp"
+	7	"Init"
+	8	"UpdatePerSecond"
+	9	"OnSpeedUp"
+	10	"GetInnerItemCode"
+	11	"GetTimerDuration"
+	12	"GetStartTimer"
+	13	"GetTimerAmount"
+	14	"_Disappear"
+locals (0) for 0000015134B6EEA0:
+upvalues (1) for 0000015134B6EEA0:
+	0	_ENV	1	0
+
+function <ItemTemp.lua:8,12> (9 instructions at 0000015134B6F220)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[9]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[9]	NEWTABLE 	2 0 0
+	3	[9]	GETTABUP 	3 0 -2	; _ENV "ItemTemp"
+	4	[9]	CALL     	1 3 2
+	5	[10]	SELF     	2 1 -3	; "Init"
+	6	[10]	MOVE     	4 0
+	7	[10]	CALL     	2 3 1
+	8	[11]	RETURN   	1 2
+	9	[12]	RETURN   	0 1
+constants (3) for 0000015134B6F220:
+	1	"setmetatable"
+	2	"ItemTemp"
+	3	"Init"
+locals (2) for 0000015134B6F220:
+	0	innerItemCode	1	10
+	1	itemTemp	5	10
+upvalues (1) for 0000015134B6F220:
+	0	_ENV	0	0
+
+function <ItemTemp.lua:14,17> (6 instructions at 0000015134B6F2A0)
+2 params, 3 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[15]	SETTABLE 	0 -1 1	; "m_innerItemCode" -
+	2	[16]	GETTABUP 	2 0 -3	; _ENV "TutorialBoardHelper"
+	3	[16]	GETTABLE 	2 2 -4	; "GetForcedTimerDuration"
+	4	[16]	CALL     	2 1 2
+	5	[16]	SETTABLE 	0 -2 2	; "m_forcedDuration" -
+	6	[17]	RETURN   	0 1
+constants (4) for 0000015134B6F2A0:
+	1	"m_innerItemCode"
+	2	"m_forcedDuration"
+	3	"TutorialBoardHelper"
+	4	"GetForcedTimerDuration"
+locals (2) for 0000015134B6F2A0:
+	0	self	1	7
+	1	innerItemCode	1	7
+upvalues (1) for 0000015134B6F2A0:
+	0	_ENV	0	0
+
+function <ItemTemp.lua:19,23> (8 instructions at 0000015134B716D0)
+1 param, 4 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[20]	SELF     	1 0 -1	; "GetTimerAmount"
+	2	[20]	CALL     	1 2 2
+	3	[20]	EQ       	0 1 -2	; - 1
+	4	[20]	JMP      	0 3	; to 8
+	5	[21]	SELF     	1 0 -3	; "_Disappear"
+	6	[21]	LOADBOOL 	3 0 0
+	7	[21]	CALL     	1 3 1
+	8	[23]	RETURN   	0 1
+constants (3) for 0000015134B716D0:
+	1	"GetTimerAmount"
+	2	1
+	3	"_Disappear"
+locals (1) for 0000015134B716D0:
+	0	self	1	9
+upvalues (0) for 0000015134B716D0:
+
+function <ItemTemp.lua:25,27> (4 instructions at 0000015134B71750)
+1 param, 4 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[26]	SELF     	1 0 -1	; "_Disappear"
+	2	[26]	LOADBOOL 	3 1 0
+	3	[26]	CALL     	1 3 1
+	4	[27]	RETURN   	0 1
+constants (1) for 0000015134B71750:
+	1	"_Disappear"
+locals (1) for 0000015134B71750:
+	0	self	1	5
+upvalues (0) for 0000015134B71750:
+
+function <ItemTemp.lua:29,31> (3 instructions at 0000015134B717D0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[30]	GETTABLE 	1 0 -1	; "m_innerItemCode"
+	2	[30]	RETURN   	1 2
+	3	[31]	RETURN   	0 1
+constants (1) for 0000015134B717D0:
+	1	"m_innerItemCode"
+locals (1) for 0000015134B717D0:
+	0	self	1	4
+upvalues (0) for 0000015134B717D0:
+
+function <ItemTemp.lua:33,41> (16 instructions at 0000015134B71850)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[34]	GETTABLE 	1 0 -1	; "m_forcedDuration"
+	2	[34]	EQ       	1 1 -2	; - nil
+	3	[34]	JMP      	0 2	; to 6
+	4	[35]	GETTABLE 	1 0 -1	; "m_forcedDuration"
+	5	[35]	RETURN   	1 2
+	6	[39]	GETTABUP 	1 0 -3	; _ENV "GM"
+	7	[39]	GETTABLE 	1 1 -4	; "ActivityManager"
+	8	[39]	SELF     	1 1 -5	; "GetModel"
+	9	[39]	GETTABUP 	3 0 -6	; _ENV "ActivityType"
+	10	[39]	GETTABLE 	3 3 -7	; "TempItem"
+	11	[39]	CALL     	1 3 2
+	12	[40]	SELF     	2 1 -8	; "GetItemDuration"
+	13	[40]	GETTABLE 	4 0 -9	; "m_innerItemCode"
+	14	[40]	TAILCALL 	2 3 0
+	15	[40]	RETURN   	2 0
+	16	[41]	RETURN   	0 1
+constants (9) for 0000015134B71850:
+	1	"m_forcedDuration"
+	2	nil
+	3	"GM"
+	4	"ActivityManager"
+	5	"GetModel"
+	6	"ActivityType"
+	7	"TempItem"
+	8	"GetItemDuration"
+	9	"m_innerItemCode"
+locals (2) for 0000015134B71850:
+	0	self	1	17
+	1	model	12	17
+upvalues (1) for 0000015134B71850:
+	0	_ENV	0	0
+
+function <ItemTemp.lua:43,51> (18 instructions at 0000015134B71970)
+1 param, 4 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[45]	GETTABLE 	1 0 -1	; "m_forcedDuration"
+	2	[45]	EQ       	1 1 -2	; - nil
+	3	[45]	JMP      	0 5	; to 9
+	4	[46]	GETTABUP 	1 0 -3	; _ENV "GM"
+	5	[46]	GETTABLE 	1 1 -4	; "GameModel"
+	6	[46]	SELF     	1 1 -5	; "GetServerTime"
+	7	[46]	TAILCALL 	1 2 0
+	8	[46]	RETURN   	1 0
+	9	[49]	GETTABUP 	1 0 -3	; _ENV "GM"
+	10	[49]	GETTABLE 	1 1 -6	; "ActivityManager"
+	11	[49]	SELF     	1 1 -7	; "GetModel"
+	12	[49]	GETTABUP 	3 0 -8	; _ENV "ActivityType"
+	13	[49]	GETTABLE 	3 3 -9	; "TempItem"
+	14	[49]	CALL     	1 3 2
+	15	[50]	SELF     	2 1 -10	; "GetItemStartTimer"
+	16	[50]	TAILCALL 	2 2 0
+	17	[50]	RETURN   	2 0
+	18	[51]	RETURN   	0 1
+constants (10) for 0000015134B71970:
+	1	"m_forcedDuration"
+	2	nil
+	3	"GM"
+	4	"GameModel"
+	5	"GetServerTime"
+	6	"ActivityManager"
+	7	"GetModel"
+	8	"ActivityType"
+	9	"TempItem"
+	10	"GetItemStartTimer"
+locals (2) for 0000015134B71970:
+	0	self	1	19
+	1	model	15	19
+upvalues (1) for 0000015134B71970:
+	0	_ENV	0	0
+
+function <ItemTemp.lua:53,56> (16 instructions at 0000015134B71AA0)
+1 param, 5 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[54]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[54]	GETTABLE 	1 1 -2	; "GameModel"
+	3	[54]	SELF     	1 1 -3	; "GetServerTime"
+	4	[54]	CALL     	1 2 2
+	5	[54]	SELF     	2 0 -4	; "GetStartTimer"
+	6	[54]	CALL     	2 2 2
+	7	[54]	SUB      	1 1 2
+	8	[55]	GETTABUP 	2 0 -5	; _ENV "math"
+	9	[55]	GETTABLE 	2 2 -6	; "min"
+	10	[55]	SELF     	3 0 -7	; "GetTimerDuration"
+	11	[55]	CALL     	3 2 2
+	12	[55]	DIV      	3 1 3
+	13	[55]	LOADK    	4 -8	; 1
+	14	[55]	TAILCALL 	2 3 0
+	15	[55]	RETURN   	2 0
+	16	[56]	RETURN   	0 1
+constants (8) for 0000015134B71AA0:
+	1	"GM"
+	2	"GameModel"
+	3	"GetServerTime"
+	4	"GetStartTimer"
+	5	"math"
+	6	"min"
+	7	"GetTimerDuration"
+	8	1
+locals (2) for 0000015134B71AA0:
+	0	self	1	17
+	1	elapsedTime	8	17
+upvalues (1) for 0000015134B71AA0:
+	0	_ENV	0	0
+
+function <ItemTemp.lua:58,81> (48 instructions at 0000015134B723C0)
+2 params, 11 slots, 1 upvalue, 7 locals, 29 constants, 0 functions
+	1	[61]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[61]	GETTABLE 	2 2 -2	; "ActivityManager"
+	3	[61]	SELF     	2 2 -3	; "GetModel"
+	4	[61]	GETTABUP 	4 0 -4	; _ENV "ActivityType"
+	5	[61]	GETTABLE 	4 4 -5	; "TempItem"
+	6	[61]	CALL     	2 3 2
+	7	[62]	SELF     	3 2 -6	; "MarkRoundEnd"
+	8	[62]	CALL     	3 2 1
+	9	[64]	GETTABLE 	3 0 -7	; "m_itemModel"
+	10	[64]	SELF     	3 3 -8	; "GetBoardModel"
+	11	[64]	CALL     	3 2 2
+	12	[65]	SELF     	4 3 -9	; "ReplaceItem"
+	13	[65]	GETTABLE 	6 0 -7	; "m_itemModel"
+	14	[65]	SELF     	7 2 -10	; "GetTransformTargetType"
+	15	[65]	CALL     	7 2 0
+	16	[65]	CALL     	4 0 2
+	17	[67]	NEWTABLE 	5 0 3
+	18	[68]	GETTABLE 	6 0 -7	; "m_itemModel"
+	19	[68]	SETTABLE 	5 -11 6	; "Source" -
+	20	[69]	SETTABLE 	5 -12 4	; "New" -
+	21	[70]	SETTABLE 	5 -13 -14	; "CostEnergy" false
+	22	[72]	GETTABLE 	6 3 -15	; "event"
+	23	[72]	SELF     	6 6 -16	; "Call"
+	24	[72]	GETTABUP 	8 0 -17	; _ENV "BoardEventType"
+	25	[72]	GETTABLE 	8 8 -18	; "TempDisappear"
+	26	[72]	MOVE     	9 5
+	27	[72]	CALL     	6 4 1
+	28	[73]	GETTABUP 	6 0 -19	; _ENV "EventDispatcher"
+	29	[73]	GETTABLE 	6 6 -20	; "DispatchEvent"
+	30	[73]	GETTABUP 	7 0 -21	; _ENV "EEventType"
+	31	[73]	GETTABLE 	7 7 -18	; "TempDisappear"
+	32	[73]	MOVE     	8 5
+	33	[73]	CALL     	6 3 1
+	34	[75]	NEWTABLE 	6 0 3
+	35	[76]	GETTABLE 	7 0 -23	; "m_innerItemCode"
+	36	[76]	SETTABLE 	6 -22 7	; "innerType" -
+	37	[77]	SELF     	7 4 -25	; "GetType"
+	38	[77]	CALL     	7 2 2
+	39	[77]	SETTABLE 	6 -24 7	; "transformType" -
+	40	[78]	SETTABLE 	6 -26 1	; "forced" -
+	41	[80]	GETTABUP 	7 0 -1	; _ENV "GM"
+	42	[80]	GETTABLE 	7 7 -27	; "BIManager"
+	43	[80]	SELF     	7 7 -28	; "LogAction"
+	44	[80]	GETTABUP 	9 0 -29	; _ENV "EBIType"
+	45	[80]	GETTABLE 	9 9 -18	; "TempDisappear"
+	46	[80]	MOVE     	10 6
+	47	[80]	CALL     	7 4 1
+	48	[81]	RETURN   	0 1
+constants (29) for 0000015134B723C0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"TempItem"
+	6	"MarkRoundEnd"
+	7	"m_itemModel"
+	8	"GetBoardModel"
+	9	"ReplaceItem"
+	10	"GetTransformTargetType"
+	11	"Source"
+	12	"New"
+	13	"CostEnergy"
+	14	false
+	15	"event"
+	16	"Call"
+	17	"BoardEventType"
+	18	"TempDisappear"
+	19	"EventDispatcher"
+	20	"DispatchEvent"
+	21	"EEventType"
+	22	"innerType"
+	23	"m_innerItemCode"
+	24	"transformType"
+	25	"GetType"
+	26	"forced"
+	27	"BIManager"
+	28	"LogAction"
+	29	"EBIType"
+locals (7) for 0000015134B723C0:
+	0	self	1	49
+	1	forced	1	49
+	2	model	7	49
+	3	boardModel	12	49
+	4	newItem	17	49
+	5	message	22	49
+	6	action	41	49
+upvalues (1) for 0000015134B723C0:
+	0	_ENV	0	0

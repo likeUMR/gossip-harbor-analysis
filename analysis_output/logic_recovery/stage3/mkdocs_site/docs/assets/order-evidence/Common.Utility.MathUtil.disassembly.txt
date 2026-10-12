@@ -1,0 +1,713 @@
+
+main <MathUtil.lua:0,0> (33 instructions at 0000025B0F65EFA0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 12 constants, 10 functions
+	1	[2]	NEWTABLE 	0 0 0
+	2	[2]	SETTABUP 	0 -1 0	; _ENV "MathUtil"
+	3	[8]	GETTABUP 	0 0 -1	; _ENV "MathUtil"
+	4	[34]	CLOSURE  	1 0	; 0000025B0F65F360
+	5	[8]	SETTABLE 	0 -2 1	; "RandomN" -
+	6	[37]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	7	[66]	CLOSURE  	1 1	; 0000025B0F6619A0
+	8	[37]	SETTABLE 	0 -4 1	; "Random" -
+	9	[68]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	10	[86]	CLOSURE  	1 2	; 0000025B0F662640
+	11	[68]	SETTABLE 	0 -5 1	; "atan2" -
+	12	[88]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	13	[92]	CLOSURE  	1 3	; 0000025B0F6628C0
+	14	[88]	SETTABLE 	0 -6 1	; "Clamp" -
+	15	[95]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	16	[101]	CLOSURE  	1 4	; 0000025B0F662940
+	17	[95]	SETTABLE 	0 -7 1	; "IntPow" -
+	18	[103]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	19	[113]	CLOSURE  	1 5	; 0000025B0F662A40
+	20	[103]	SETTABLE 	0 -8 1	; "Dec2BinStr" -
+	21	[117]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	22	[123]	CLOSURE  	1 6	; 0000025B0F662C20
+	23	[117]	SETTABLE 	0 -9 1	; "IsPowerOfTwo" -
+	24	[126]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	25	[158]	CLOSURE  	1 7	; 0000025B0F663520
+	26	[126]	SETTABLE 	0 -10 1	; "ToRoman" -
+	27	[160]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	28	[185]	CLOSURE  	1 8	; 0000025B0F664350
+	29	[160]	SETTABLE 	0 -11 1	; "IsVersionGreater" -
+	30	[187]	GETTABUP 	0 0 -3	; _ENV "MathUtil"
+	31	[209]	CLOSURE  	1 9	; 0000025B0F649240
+	32	[187]	SETTABLE 	0 -12 1	; "FormatNumber" -
+	33	[209]	RETURN   	0 1
+constants (12) for 0000025B0F65EFA0:
+	1	"MathUtil"
+	2	"RandomN"
+	3	"MathUtil"
+	4	"Random"
+	5	"atan2"
+	6	"Clamp"
+	7	"IntPow"
+	8	"Dec2BinStr"
+	9	"IsPowerOfTwo"
+	10	"ToRoman"
+	11	"IsVersionGreater"
+	12	"FormatNumber"
+locals (0) for 0000025B0F65EFA0:
+upvalues (1) for 0000025B0F65EFA0:
+	0	_ENV	1	0
+
+function <MathUtil.lua:8,34> (37 instructions at 0000025B0F65F360)
+2 params, 15 slots, 1 upvalue, 14 locals, 6 constants, 0 functions
+	1	[9]	NEWTABLE 	2 0 0
+	2	[10]	NEWTABLE 	3 0 0
+	3	[11]	EQ       	0 0 -1	; - 0
+	4	[11]	JMP      	0 2	; to 7
+	5	[12]	NEWTABLE 	4 0 0
+	6	[12]	RETURN   	4 2
+	7	[15]	LOADK    	4 -2	; 1
+	8	[15]	MOVE     	5 1
+	9	[15]	LOADK    	6 -2	; 1
+	10	[15]	FORPREP  	4 24	; to 35
+	11	[17]	GETTABUP 	8 0 -3	; _ENV "MathUtil"
+	12	[17]	GETTABLE 	8 8 -4	; "Random"
+	13	[17]	LOADK    	9 -2	; 1
+	14	[17]	SUB      	10 0 7
+	15	[17]	ADD      	10 10 -2	; - 1
+	16	[17]	CALL     	8 3 2
+	17	[19]	GETTABUP 	9 0 -5	; _ENV "pairs"
+	18	[19]	MOVE     	10 2
+	19	[19]	CALL     	9 2 4
+	20	[19]	JMP      	0 3	; to 24
+	21	[20]	LT       	0 12 8
+	22	[20]	JMP      	0 1	; to 24
+	23	[21]	ADD      	8 8 -2	; - 1
+	24	[19]	TFORCALL 	9 2
+	25	[19]	TFORLOOP 	11 -5	; to 21
+	26	[26]	GETTABLE 	9 2 8
+	27	[26]	TEST     	9 0
+	28	[26]	JMP      	0 2	; to 31
+	29	[27]	ADD      	8 8 -2	; - 1
+	30	[27]	JMP      	0 -5	; to 26
+	31	[30]	SETTABLE 	2 8 -6	; - true
+	32	[31]	LEN      	9 3
+	33	[31]	ADD      	9 9 -2	; - 1
+	34	[31]	SETTABLE 	3 9 8
+	35	[15]	FORLOOP  	4 -25	; to 11
+	36	[33]	RETURN   	3 2
+	37	[34]	RETURN   	0 1
+constants (6) for 0000025B0F65F360:
+	1	0
+	2	1
+	3	"MathUtil"
+	4	"Random"
+	5	"pairs"
+	6	true
+locals (14) for 0000025B0F65F360:
+	0	n	1	38
+	1	selectCount	1	38
+	2	cacheMap	2	38
+	3	resultList	3	38
+	4	(for index)	10	36
+	5	(for limit)	10	36
+	6	(for step)	10	36
+	7	i	11	35
+	8	selectIdx	17	35
+	9	(for generator)	20	26
+	10	(for state)	20	26
+	11	(for control)	20	26
+	12	k	21	24
+	13	_	21	24
+upvalues (1) for 0000025B0F65F360:
+	0	_ENV	0	0
+
+function <MathUtil.lua:37,66> (80 instructions at 0000025B0F6619A0)
+2 params, 8 slots, 1 upvalue, 5 locals, 16 constants, 0 functions
+	1	[39]	LOADK    	2 -1	; 0
+	2	[40]	LOADK    	3 -2	; 1
+	3	[41]	GETTABUP 	4 0 -3	; _ENV "GameConfig"
+	4	[41]	GETTABLE 	4 4 -4	; "IsTestMode"
+	5	[41]	CALL     	4 1 2
+	6	[41]	TEST     	4 0
+	7	[41]	JMP      	0 6	; to 14
+	8	[42]	GETTABUP 	4 0 -5	; _ENV "GM"
+	9	[42]	GETTABLE 	4 4 -6	; "TestModel"
+	10	[42]	SELF     	4 4 -7	; "GetMathRandomNumber"
+	11	[42]	CALL     	4 2 3
+	12	[42]	MOVE     	3 5
+	13	[42]	MOVE     	2 4
+	14	[46]	GETTABUP 	4 0 -8	; _ENV "Log"
+	15	[46]	GETTABLE 	4 4 -9	; "Assert"
+	16	[46]	LE       	0 -1 2	; 0 -
+	17	[46]	JMP      	0 2	; to 20
+	18	[46]	LT       	1 2 -2	; - 1
+	19	[46]	JMP      	0 1	; to 21
+	20	[46]	LOADBOOL 	5 0 1
+	21	[46]	LOADBOOL 	5 1 0
+	22	[46]	LOADK    	6 -10	; "fCurLeft \229\191\133\233\161\187\229\156\168 [0, 1) \232\140\131\229\155\180\229\134\133"
+	23	[46]	CALL     	4 3 1
+	24	[47]	GETTABUP 	4 0 -8	; _ENV "Log"
+	25	[47]	GETTABLE 	4 4 -9	; "Assert"
+	26	[47]	LE       	0 2 3
+	27	[47]	JMP      	0 2	; to 30
+	28	[47]	LE       	1 3 -2	; - 1
+	29	[47]	JMP      	0 1	; to 31
+	30	[47]	LOADBOOL 	5 0 1
+	31	[47]	LOADBOOL 	5 1 0
+	32	[47]	LOADK    	6 -11	; "fCurRight \229\191\133\233\161\187\229\156\168 [fCurLeft, 1] \232\140\131\229\155\180\229\134\133"
+	33	[47]	CALL     	4 3 1
+	34	[49]	GETTABUP 	4 0 -12	; _ENV "math"
+	35	[49]	GETTABLE 	4 4 -13	; "random"
+	36	[49]	CALL     	4 1 2
+	37	[49]	SUB      	5 3 2
+	38	[49]	MUL      	4 4 5
+	39	[49]	ADD      	4 4 2
+	40	[51]	EQ       	0 0 -14	; - nil
+	41	[51]	JMP      	0 2	; to 44
+	42	[52]	RETURN   	4 2
+	43	[52]	JMP      	0 36	; to 80
+	44	[53]	EQ       	0 1 -14	; - nil
+	45	[53]	JMP      	0 15	; to 61
+	46	[54]	MOD      	5 0 -2	; - 1
+	47	[54]	EQ       	1 5 -1	; - 0
+	48	[54]	JMP      	0 5	; to 54
+	49	[55]	GETTABUP 	5 0 -8	; _ENV "Log"
+	50	[55]	GETTABLE 	5 5 -9	; "Assert"
+	51	[55]	LOADBOOL 	6 0 0
+	52	[55]	LOADK    	7 -15	; "\233\154\143\230\156\186\230\149\176\228\184\141\229\133\129\232\174\184\228\188\160\229\133\165\229\184\166\230\156\137\229\176\143\230\149\176\231\130\185\231\154\132\230\149\176"
+	53	[55]	CALL     	5 3 1
+	54	[58]	GETTABUP 	5 0 -12	; _ENV "math"
+	55	[58]	GETTABLE 	5 5 -16	; "floor"
+	56	[58]	MUL      	6 4 0
+	57	[58]	CALL     	5 2 2
+	58	[58]	ADD      	5 5 -2	; - 1
+	59	[58]	RETURN   	5 2
+	60	[58]	JMP      	0 19	; to 80
+	61	[60]	MOD      	5 0 -2	; - 1
+	62	[60]	EQ       	0 5 -1	; - 0
+	63	[60]	JMP      	0 3	; to 67
+	64	[60]	MOD      	5 1 -2	; - 1
+	65	[60]	EQ       	1 5 -1	; - 0
+	66	[60]	JMP      	0 5	; to 72
+	67	[61]	GETTABUP 	5 0 -8	; _ENV "Log"
+	68	[61]	GETTABLE 	5 5 -9	; "Assert"
+	69	[61]	LOADBOOL 	6 0 0
+	70	[61]	LOADK    	7 -15	; "\233\154\143\230\156\186\230\149\176\228\184\141\229\133\129\232\174\184\228\188\160\229\133\165\229\184\166\230\156\137\229\176\143\230\149\176\231\130\185\231\154\132\230\149\176"
+	71	[61]	CALL     	5 3 1
+	72	[64]	GETTABUP 	5 0 -12	; _ENV "math"
+	73	[64]	GETTABLE 	5 5 -16	; "floor"
+	74	[64]	SUB      	6 1 0
+	75	[64]	ADD      	6 6 -2	; - 1
+	76	[64]	MUL      	6 4 6
+	77	[64]	CALL     	5 2 2
+	78	[64]	ADD      	5 0 5
+	79	[64]	RETURN   	5 2
+	80	[66]	RETURN   	0 1
+constants (16) for 0000025B0F6619A0:
+	1	0
+	2	1
+	3	"GameConfig"
+	4	"IsTestMode"
+	5	"GM"
+	6	"TestModel"
+	7	"GetMathRandomNumber"
+	8	"Log"
+	9	"Assert"
+	10	"fCurLeft \229\191\133\233\161\187\229\156\168 [0, 1) \232\140\131\229\155\180\229\134\133"
+	11	"fCurRight \229\191\133\233\161\187\229\156\168 [fCurLeft, 1] \232\140\131\229\155\180\229\134\133"
+	12	"math"
+	13	"random"
+	14	nil
+	15	"\233\154\143\230\156\186\230\149\176\228\184\141\229\133\129\232\174\184\228\188\160\229\133\165\229\184\166\230\156\137\229\176\143\230\149\176\231\130\185\231\154\132\230\149\176"
+	16	"floor"
+locals (5) for 0000025B0F6619A0:
+	0	l	1	81
+	1	r	1	81
+	2	fCurLeft	2	81
+	3	fCurRight	3	81
+	4	CurRandom	40	81
+upvalues (1) for 0000025B0F6619A0:
+	0	_ENV	0	0
+
+function <MathUtil.lua:68,86> (48 instructions at 0000025B0F662640)
+2 params, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[69]	LT       	0 -1 1	; 0 -
+	2	[69]	JMP      	0 6	; to 9
+	3	[70]	GETTABUP 	2 0 -2	; _ENV "math"
+	4	[70]	GETTABLE 	2 2 -3	; "atan"
+	5	[70]	DIV      	3 0 1
+	6	[70]	TAILCALL 	2 2 0
+	7	[70]	RETURN   	2 0
+	8	[70]	JMP      	0 39	; to 48
+	9	[71]	LT       	0 1 -1	; - 0
+	10	[71]	JMP      	0 20	; to 31
+	11	[72]	LE       	0 -1 0	; 0 -
+	12	[72]	JMP      	0 9	; to 22
+	13	[73]	GETTABUP 	2 0 -2	; _ENV "math"
+	14	[73]	GETTABLE 	2 2 -3	; "atan"
+	15	[73]	DIV      	3 0 1
+	16	[73]	CALL     	2 2 2
+	17	[73]	GETTABUP 	3 0 -2	; _ENV "math"
+	18	[73]	GETTABLE 	3 3 -4	; "pi"
+	19	[73]	ADD      	2 2 3
+	20	[73]	RETURN   	2 2
+	21	[73]	JMP      	0 26	; to 48
+	22	[75]	GETTABUP 	2 0 -2	; _ENV "math"
+	23	[75]	GETTABLE 	2 2 -3	; "atan"
+	24	[75]	DIV      	3 0 1
+	25	[75]	CALL     	2 2 2
+	26	[75]	GETTABUP 	3 0 -2	; _ENV "math"
+	27	[75]	GETTABLE 	3 3 -4	; "pi"
+	28	[75]	SUB      	2 2 3
+	29	[75]	RETURN   	2 2
+	30	[76]	JMP      	0 17	; to 48
+	31	[78]	LT       	0 -1 0	; 0 -
+	32	[78]	JMP      	0 5	; to 38
+	33	[79]	GETTABUP 	2 0 -2	; _ENV "math"
+	34	[79]	GETTABLE 	2 2 -4	; "pi"
+	35	[79]	DIV      	2 2 -5	; - 2
+	36	[79]	RETURN   	2 2
+	37	[79]	JMP      	0 10	; to 48
+	38	[80]	LT       	0 0 -1	; - 0
+	39	[80]	JMP      	0 6	; to 46
+	40	[81]	GETTABUP 	2 0 -2	; _ENV "math"
+	41	[81]	GETTABLE 	2 2 -4	; "pi"
+	42	[81]	UNM      	2 2
+	43	[81]	DIV      	2 2 -5	; - 2
+	44	[81]	RETURN   	2 2
+	45	[81]	JMP      	0 2	; to 48
+	46	[83]	LOADK    	2 -1	; 0
+	47	[83]	RETURN   	2 2
+	48	[86]	RETURN   	0 1
+constants (5) for 0000025B0F662640:
+	1	0
+	2	"math"
+	3	"atan"
+	4	"pi"
+	5	2
+locals (2) for 0000025B0F662640:
+	0	y	1	49
+	1	x	1	49
+upvalues (1) for 0000025B0F662640:
+	0	_ENV	0	0
+
+function <MathUtil.lua:88,92> (14 instructions at 0000025B0F6628C0)
+3 params, 6 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[89]	GETTABUP 	3 0 -1	; _ENV "math"
+	2	[89]	GETTABLE 	3 3 -2	; "max"
+	3	[89]	MOVE     	4 0
+	4	[89]	MOVE     	5 2
+	5	[89]	CALL     	3 3 2
+	6	[89]	MOVE     	0 3
+	7	[90]	GETTABUP 	3 0 -1	; _ENV "math"
+	8	[90]	GETTABLE 	3 3 -3	; "min"
+	9	[90]	MOVE     	4 0
+	10	[90]	MOVE     	5 1
+	11	[90]	CALL     	3 3 2
+	12	[90]	MOVE     	0 3
+	13	[91]	RETURN   	0 2
+	14	[92]	RETURN   	0 1
+constants (3) for 0000025B0F6628C0:
+	1	"math"
+	2	"max"
+	3	"min"
+locals (3) for 0000025B0F6628C0:
+	0	value	1	15
+	1	upperBound	1	15
+	2	lowerBound	1	15
+upvalues (1) for 0000025B0F6628C0:
+	0	_ENV	0	0
+
+function <MathUtil.lua:95,101> (9 instructions at 0000025B0F662940)
+2 params, 7 slots, 0 upvalues, 7 locals, 1 constant, 0 functions
+	1	[96]	LOADK    	2 -1	; 1
+	2	[97]	LOADK    	3 -1	; 1
+	3	[97]	MOVE     	4 1
+	4	[97]	LOADK    	5 -1	; 1
+	5	[97]	FORPREP  	3 1	; to 7
+	6	[98]	MUL      	2 2 0
+	7	[97]	FORLOOP  	3 -2	; to 6
+	8	[100]	RETURN   	2 2
+	9	[101]	RETURN   	0 1
+constants (1) for 0000025B0F662940:
+	1	1
+locals (7) for 0000025B0F662940:
+	0	x	1	10
+	1	y	1	10
+	2	result	2	10
+	3	(for index)	5	8
+	4	(for limit)	5	8
+	5	(for step)	5	8
+	6	i	6	7
+upvalues (0) for 0000025B0F662940:
+
+function <MathUtil.lua:103,113> (23 instructions at 0000025B0F662A40)
+1 param, 7 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[104]	EQ       	0 0 -1	; - 0
+	2	[104]	JMP      	0 2	; to 5
+	3	[105]	LOADK    	1 -2	; "0"
+	4	[105]	RETURN   	1 2
+	5	[107]	NEWTABLE 	1 0 0
+	6	[108]	LT       	0 -1 0	; 0 -
+	7	[108]	JMP      	0 10	; to 18
+	8	[109]	GETTABUP 	2 0 -3	; _ENV "table"
+	9	[109]	GETTABLE 	2 2 -4	; "insert"
+	10	[109]	MOVE     	3 1
+	11	[109]	LOADK    	4 -5	; 1
+	12	[109]	GETTABUP 	5 0 -6	; _ENV "tostring"
+	13	[109]	BAND     	6 0 -5	; - 1
+	14	[109]	CALL     	5 2 0
+	15	[109]	CALL     	2 0 1
+	16	[110]	SHR      	0 0 -5	; - 1
+	17	[110]	JMP      	0 -12	; to 6
+	18	[112]	GETTABUP 	2 0 -3	; _ENV "table"
+	19	[112]	GETTABLE 	2 2 -7	; "concat"
+	20	[112]	MOVE     	3 1
+	21	[112]	TAILCALL 	2 2 0
+	22	[112]	RETURN   	2 0
+	23	[113]	RETURN   	0 1
+constants (7) for 0000025B0F662A40:
+	1	0
+	2	"0"
+	3	"table"
+	4	"insert"
+	5	1
+	6	"tostring"
+	7	"concat"
+locals (2) for 0000025B0F662A40:
+	0	num	1	24
+	1	result	6	24
+upvalues (1) for 0000025B0F662A40:
+	0	_ENV	0	0
+
+function <MathUtil.lua:117,123> (23 instructions at 0000025B0F662C20)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[119]	GETTABUP 	1 0 -1	; _ENV "type"
+	2	[119]	MOVE     	2 0
+	3	[119]	CALL     	1 2 2
+	4	[119]	EQ       	0 1 -2	; - "number"
+	5	[119]	JMP      	0 8	; to 14
+	6	[119]	LE       	1 0 -3	; - 0
+	7	[119]	JMP      	0 6	; to 14
+	8	[119]	GETTABUP 	1 0 -4	; _ENV "math"
+	9	[119]	GETTABLE 	1 1 -5	; "floor"
+	10	[119]	MOVE     	2 0
+	11	[119]	CALL     	1 2 2
+	12	[119]	EQ       	1 1 0
+	13	[119]	JMP      	0 2	; to 16
+	14	[120]	LOADBOOL 	1 0 0
+	15	[120]	RETURN   	1 2
+	16	[122]	SUB      	1 0 -6	; - 1
+	17	[122]	BAND     	1 0 1
+	18	[122]	EQ       	1 1 -3	; - 0
+	19	[122]	JMP      	0 1	; to 21
+	20	[122]	LOADBOOL 	1 0 1
+	21	[122]	LOADBOOL 	1 1 0
+	22	[122]	RETURN   	1 2
+	23	[123]	RETURN   	0 1
+constants (6) for 0000025B0F662C20:
+	1	"type"
+	2	"number"
+	3	0
+	4	"math"
+	5	"floor"
+	6	1
+locals (1) for 0000025B0F662C20:
+	0	num	1	24
+upvalues (1) for 0000025B0F662C20:
+	0	_ENV	0	0
+
+function <MathUtil.lua:126,158> (86 instructions at 0000025B0F663520)
+1 param, 17 slots, 1 upvalue, 10 locals, 34 constants, 0 functions
+	1	[127]	TEST     	0 0
+	2	[127]	JMP      	0 9	; to 12
+	3	[127]	GETTABUP 	1 0 -1	; _ENV "type"
+	4	[127]	MOVE     	2 0
+	5	[127]	CALL     	1 2 2
+	6	[127]	EQ       	0 1 -2	; - "number"
+	7	[127]	JMP      	0 4	; to 12
+	8	[127]	LE       	1 0 -3	; - 0
+	9	[127]	JMP      	0 2	; to 12
+	10	[127]	LT       	0 -4 0	; 3999 -
+	11	[127]	JMP      	0 3	; to 15
+	12	[128]	LOADNIL  	1 0
+	13	[128]	LOADK    	2 -5	; "\232\190\147\229\133\165\229\191\133\233\161\187\229\156\1681-3999\228\185\139\233\151\180"
+	14	[128]	RETURN   	1 3
+	15	[131]	NEWTABLE 	1 13 0
+	16	[131]	NEWTABLE 	2 2 0
+	17	[132]	LOADK    	3 -6	; 1000
+	18	[132]	LOADK    	4 -7	; "M"
+	19	[132]	SETLIST  	2 2 1	; 1
+	20	[132]	NEWTABLE 	3 2 0
+	21	[133]	LOADK    	4 -8	; 900
+	22	[133]	LOADK    	5 -9	; "CM"
+	23	[133]	SETLIST  	3 2 1	; 1
+	24	[133]	NEWTABLE 	4 2 0
+	25	[134]	LOADK    	5 -10	; 500
+	26	[134]	LOADK    	6 -11	; "D"
+	27	[134]	SETLIST  	4 2 1	; 1
+	28	[134]	NEWTABLE 	5 2 0
+	29	[135]	LOADK    	6 -12	; 400
+	30	[135]	LOADK    	7 -13	; "CD"
+	31	[135]	SETLIST  	5 2 1	; 1
+	32	[135]	NEWTABLE 	6 2 0
+	33	[136]	LOADK    	7 -14	; 100
+	34	[136]	LOADK    	8 -15	; "C"
+	35	[136]	SETLIST  	6 2 1	; 1
+	36	[136]	NEWTABLE 	7 2 0
+	37	[137]	LOADK    	8 -16	; 90
+	38	[137]	LOADK    	9 -17	; "XC"
+	39	[137]	SETLIST  	7 2 1	; 1
+	40	[137]	NEWTABLE 	8 2 0
+	41	[138]	LOADK    	9 -18	; 50
+	42	[138]	LOADK    	10 -19	; "L"
+	43	[138]	SETLIST  	8 2 1	; 1
+	44	[138]	NEWTABLE 	9 2 0
+	45	[139]	LOADK    	10 -20	; 40
+	46	[139]	LOADK    	11 -21	; "XL"
+	47	[139]	SETLIST  	9 2 1	; 1
+	48	[139]	NEWTABLE 	10 2 0
+	49	[140]	LOADK    	11 -22	; 10
+	50	[140]	LOADK    	12 -23	; "X"
+	51	[140]	SETLIST  	10 2 1	; 1
+	52	[140]	NEWTABLE 	11 2 0
+	53	[141]	LOADK    	12 -24	; 9
+	54	[141]	LOADK    	13 -25	; "IX"
+	55	[141]	SETLIST  	11 2 1	; 1
+	56	[141]	NEWTABLE 	12 2 0
+	57	[142]	LOADK    	13 -26	; 5
+	58	[142]	LOADK    	14 -27	; "V"
+	59	[142]	SETLIST  	12 2 1	; 1
+	60	[142]	NEWTABLE 	13 2 0
+	61	[143]	LOADK    	14 -28	; 4
+	62	[143]	LOADK    	15 -29	; "IV"
+	63	[143]	SETLIST  	13 2 1	; 1
+	64	[143]	NEWTABLE 	14 2 0
+	65	[144]	LOADK    	15 -30	; 1
+	66	[144]	LOADK    	16 -31	; "I"
+	67	[144]	SETLIST  	14 2 1	; 1
+	68	[145]	SETLIST  	1 13 1	; 1
+	69	[147]	LOADK    	2 -32	; ""
+	70	[149]	GETTABUP 	3 0 -33	; _ENV "ipairs"
+	71	[149]	MOVE     	4 1
+	72	[149]	CALL     	3 2 4
+	73	[149]	JMP      	0 9	; to 83
+	74	[150]	GETTABLE 	8 7 -30	; 1
+	75	[150]	GETTABLE 	9 7 -34	; 2
+	76	[151]	LE       	0 8 0
+	77	[151]	JMP      	0 5	; to 83
+	78	[152]	MOVE     	10 2
+	79	[152]	MOVE     	11 9
+	80	[152]	CONCAT   	2 10 11
+	81	[153]	SUB      	0 0 8
+	82	[153]	JMP      	0 -7	; to 76
+	83	[149]	TFORCALL 	3 2
+	84	[149]	TFORLOOP 	5 -11	; to 74
+	85	[157]	RETURN   	2 2
+	86	[158]	RETURN   	0 1
+constants (34) for 0000025B0F663520:
+	1	"type"
+	2	"number"
+	3	0
+	4	3999
+	5	"\232\190\147\229\133\165\229\191\133\233\161\187\229\156\1681-3999\228\185\139\233\151\180"
+	6	1000
+	7	"M"
+	8	900
+	9	"CM"
+	10	500
+	11	"D"
+	12	400
+	13	"CD"
+	14	100
+	15	"C"
+	16	90
+	17	"XC"
+	18	50
+	19	"L"
+	20	40
+	21	"XL"
+	22	10
+	23	"X"
+	24	9
+	25	"IX"
+	26	5
+	27	"V"
+	28	4
+	29	"IV"
+	30	1
+	31	"I"
+	32	""
+	33	"ipairs"
+	34	2
+locals (10) for 0000025B0F663520:
+	0	num	1	87
+	1	romanNumerals	69	87
+	2	result	70	87
+	3	(for generator)	73	85
+	4	(for state)	73	85
+	5	(for control)	73	85
+	6	_	74	83
+	7	pair	74	83
+	8	value	76	83
+	9	symbol	76	83
+upvalues (1) for 0000025B0F663520:
+	0	_ENV	0	0
+
+function <MathUtil.lua:160,185> (36 instructions at 0000025B0F664350)
+2 params, 12 slots, 1 upvalue, 11 locals, 4 constants, 1 function
+	1	[168]	CLOSURE  	2 0	; 0000025B0F664470
+	2	[170]	MOVE     	3 2
+	3	[170]	MOVE     	4 0
+	4	[170]	CALL     	3 2 2
+	5	[171]	MOVE     	4 2
+	6	[171]	MOVE     	5 1
+	7	[171]	CALL     	4 2 2
+	8	[173]	LOADK    	5 -1	; 1
+	9	[173]	GETTABUP 	6 0 -2	; _ENV "math"
+	10	[173]	GETTABLE 	6 6 -3	; "max"
+	11	[173]	LEN      	7 3
+	12	[173]	LEN      	8 4
+	13	[173]	CALL     	6 3 2
+	14	[173]	LOADK    	7 -1	; 1
+	15	[173]	FORPREP  	5 17	; to 33
+	16	[174]	GETTABLE 	9 3 8
+	17	[174]	TEST     	9 1
+	18	[174]	JMP      	0 1	; to 20
+	19	[174]	LOADK    	9 -4	; 0
+	20	[175]	GETTABLE 	10 4 8
+	21	[175]	TEST     	10 1
+	22	[175]	JMP      	0 1	; to 24
+	23	[175]	LOADK    	10 -4	; 0
+	24	[176]	LT       	0 10 9
+	25	[176]	JMP      	0 3	; to 29
+	26	[177]	LOADBOOL 	11 1 0
+	27	[177]	RETURN   	11 2
+	28	[177]	JMP      	0 4	; to 33
+	29	[178]	LT       	0 9 10
+	30	[178]	JMP      	0 2	; to 33
+	31	[179]	LOADBOOL 	11 0 0
+	32	[179]	RETURN   	11 2
+	33	[173]	FORLOOP  	5 -18	; to 16
+	34	[184]	LOADBOOL 	5 0 0
+	35	[184]	RETURN   	5 2
+	36	[185]	RETURN   	0 1
+constants (4) for 0000025B0F664350:
+	1	1
+	2	"math"
+	3	"max"
+	4	0
+locals (11) for 0000025B0F664350:
+	0	version	1	37
+	1	target	1	37
+	2	splitToNumbers	2	37
+	3	vParts	5	37
+	4	tParts	8	37
+	5	(for index)	15	34
+	6	(for limit)	15	34
+	7	(for step)	15	34
+	8	i	16	33
+	9	vNum	20	33
+	10	tNum	24	33
+upvalues (1) for 0000025B0F664350:
+	0	_ENV	0	0
+
+function <MathUtil.lua:162,168> (18 instructions at 0000025B0F664470)
+1 param, 10 slots, 1 upvalue, 6 locals, 6 constants, 0 functions
+	1	[163]	NEWTABLE 	1 0 0
+	2	[164]	GETTABUP 	2 0 -1	; _ENV "string"
+	3	[164]	GETTABLE 	2 2 -2	; "gmatch"
+	4	[164]	MOVE     	3 0
+	5	[164]	LOADK    	4 -3	; "%d+"
+	6	[164]	CALL     	2 3 4
+	7	[164]	JMP      	0 7	; to 15
+	8	[165]	GETTABUP 	6 0 -4	; _ENV "table"
+	9	[165]	GETTABLE 	6 6 -5	; "insert"
+	10	[165]	MOVE     	7 1
+	11	[165]	GETTABUP 	8 0 -6	; _ENV "tonumber"
+	12	[165]	MOVE     	9 5
+	13	[165]	CALL     	8 2 0
+	14	[165]	CALL     	6 0 1
+	15	[164]	TFORCALL 	2 1
+	16	[164]	TFORLOOP 	4 -9	; to 8
+	17	[167]	RETURN   	1 2
+	18	[168]	RETURN   	0 1
+constants (6) for 0000025B0F664470:
+	1	"string"
+	2	"gmatch"
+	3	"%d+"
+	4	"table"
+	5	"insert"
+	6	"tonumber"
+locals (6) for 0000025B0F664470:
+	0	v	1	19
+	1	parts	2	19
+	2	(for generator)	7	17
+	3	(for state)	7	17
+	4	(for control)	7	17
+	5	num	8	15
+upvalues (1) for 0000025B0F664470:
+	0	_ENV	0	0
+
+function <MathUtil.lua:187,209> (42 instructions at 0000025B0F649240)
+1 param, 10 slots, 1 upvalue, 5 locals, 15 constants, 0 functions
+	1	[188]	GETTABUP 	1 0 -1	; _ENV "type"
+	2	[188]	MOVE     	2 0
+	3	[188]	CALL     	1 2 2
+	4	[188]	EQ       	1 1 -2	; - "number"
+	5	[188]	JMP      	0 1	; to 7
+	6	[189]	RETURN   	0 2
+	7	[193]	GETTABUP 	1 0 -3	; _ENV "math"
+	8	[193]	GETTABLE 	1 1 -4	; "modf"
+	9	[193]	MOVE     	2 0
+	10	[193]	CALL     	1 2 3
+	11	[196]	GETTABUP 	3 0 -5	; _ENV "tostring"
+	12	[196]	MOVE     	4 1
+	13	[196]	CALL     	3 2 2
+	14	[197]	LOADNIL  	4 0
+	15	[199]	GETTABUP 	5 0 -6	; _ENV "string"
+	16	[199]	GETTABLE 	5 5 -7	; "gsub"
+	17	[199]	MOVE     	6 3
+	18	[199]	LOADK    	7 -8	; "^(-?%d+)(%d%d%d)"
+	19	[199]	LOADK    	8 -9	; "%1,%2"
+	20	[199]	CALL     	5 4 3
+	21	[199]	MOVE     	4 6
+	22	[199]	MOVE     	3 5
+	23	[200]	EQ       	1 4 -10	; - 0
+	24	[200]	JMP      	0 1	; to 26
+	25	[200]	JMP      	0 -11	; to 15
+	26	[204]	EQ       	1 2 -10	; - 0
+	27	[204]	JMP      	0 13	; to 41
+	28	[205]	MOVE     	5 3
+	29	[205]	GETTABUP 	6 0 -6	; _ENV "string"
+	30	[205]	GETTABLE 	6 6 -11	; "format"
+	31	[205]	LOADK    	7 -12	; "%.2f"
+	32	[205]	GETTABUP 	8 0 -3	; _ENV "math"
+	33	[205]	GETTABLE 	8 8 -13	; "abs"
+	34	[205]	MOVE     	9 2
+	35	[205]	CALL     	8 2 0
+	36	[205]	CALL     	6 0 2
+	37	[205]	SELF     	6 6 -14	; "sub"
+	38	[205]	LOADK    	8 -15	; 2
+	39	[205]	CALL     	6 3 2
+	40	[205]	CONCAT   	3 5 6
+	41	[208]	RETURN   	3 2
+	42	[209]	RETURN   	0 1
+constants (15) for 0000025B0F649240:
+	1	"type"
+	2	"number"
+	3	"math"
+	4	"modf"
+	5	"tostring"
+	6	"string"
+	7	"gsub"
+	8	"^(-?%d+)(%d%d%d)"
+	9	"%1,%2"
+	10	0
+	11	"format"
+	12	"%.2f"
+	13	"abs"
+	14	"sub"
+	15	2
+locals (5) for 0000025B0F649240:
+	0	num	1	43
+	1	intPart	11	43
+	2	decimalPart	11	43
+	3	formatted	14	43
+	4	k	15	43
+upvalues (1) for 0000025B0F649240:
+	0	_ENV	0	0

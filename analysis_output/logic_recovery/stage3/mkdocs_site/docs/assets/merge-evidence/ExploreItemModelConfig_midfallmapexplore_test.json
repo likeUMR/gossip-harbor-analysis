@@ -1,0 +1,347 @@
+[
+  {
+    "Spread_WeightType": 1,
+    "Type": "mpx_midfall_main_1",
+    "MergedType": "mpx_midfall_main_2",
+    "Spread_StorageMaxNumber": 1,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 1
+  },
+  {
+    "Type": "mpx_midfall_main_2",
+    "MergedType": "mpx_midfall_main_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_main_3",
+    "MergedType": "mpx_midfall_main_4",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_main_4",
+    "MergedType": "mpx_midfall_main_5",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_5",
+    "MergedType": "mpx_midfall_main_6",
+    "Spread_Weight": [
+      "main_super_gold_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 1,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 1
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_6",
+    "MergedType": "mpx_midfall_main_7",
+    "Spread_Weight": [
+      "main_super_gold_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 1,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 1
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_7",
+    "MergedType": "mpx_midfall_main_8",
+    "Spread_Weight": [
+      "main_super_energy_2-1",
+      "main_super_gold_2-1",
+      "main_gem_super_1-1",
+      "mpx_midfall_sub_1_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 4,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 4
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_8",
+    "MergedType": "mpx_midfall_main_9",
+    "Spread_Weight": [
+      "main_super_energy_2-1",
+      "main_super_gold_2-1",
+      "main_gem_super_1-1",
+      "mpx_midfall_sub_1_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 4,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 4
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_9",
+    "MergedType": "mpx_midfall_main_10",
+    "Spread_Weight": [
+      "main_super_energy_2-2",
+      "main_super_gold_2-1",
+      "main_gem_super_1-1",
+      "mpx_midfall_sub_1_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 5,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 5
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_10",
+    "MergedType": "mpx_midfall_main_11",
+    "Spread_Weight": [
+      "main_super_energy_3-2",
+      "main_super_gold_2-2",
+      "main_gem_super_2-1",
+      "mpx_midfall_sub_1_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_main_11",
+    "MergedType": "mpx_midfall_main_12",
+    "Spread_Weight": [
+      "main_super_energy_3-2",
+      "main_super_gold_2-3",
+      "main_gem_super_1-1",
+      "main_gem_super_2-1",
+      "mpx_midfall_sub_1_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 8,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 8
+  },
+  {
+    "Spread_Weight": [
+      "main_super_energy_3-4",
+      "main_super_gold_3-3",
+      "main_gem_super_3-2",
+      "main_gem_super_1-1",
+      "mpx_midfall_sub_1_1-3"
+    ],
+    "Type": "mpx_midfall_main_12",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 13,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 13
+  },
+  {
+    "MergedType": "mpx_midfall_sub_1_2",
+    "Type": "mpx_midfall_sub_1_1"
+  },
+  {
+    "Type": "mpx_midfall_sub_1_2",
+    "MergedType": "mpx_midfall_sub_1_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_1_3",
+    "MergedType": "mpx_midfall_sub_1_4",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_1_4",
+    "MergedType": "mpx_midfall_sub_1_5",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_sub_1_5",
+    "MergedType": "mpx_midfall_sub_1_6",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_3-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 3,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 3
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_sub_1_6",
+    "MergedType": "mpx_midfall_sub_1_7",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_gem_super_1-1",
+      "main_super_energy_3-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 4,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 4
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "mpx_midfall_sub_1_7",
+    "MergedType": "mpx_midfall_sub_1_8",
+    "Spread_Weight": [
+      "main_super_gold_3-1",
+      "main_gem_super_3-1",
+      "main_super_energy_3-4"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 6
+  },
+  {
+    "Spread_Weight": [
+      "main_super_gold_3-4",
+      "main_gem_super_3-4",
+      "main_super_energy_4-4"
+    ],
+    "Type": "mpx_midfall_sub_1_8",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 12,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 12
+  },
+  {
+    "MergedType": "mpx_midfall_sub_2_2",
+    "Type": "mpx_midfall_sub_2_1"
+  },
+  {
+    "Type": "mpx_midfall_sub_2_2",
+    "MergedType": "mpx_midfall_sub_2_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_2_3",
+    "MergedType": "mpx_midfall_sub_2_4",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_2_4",
+    "MergedType": "mpx_midfall_sub_2_5",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_Weight": [
+      "main_super_gold_3-3"
+    ],
+    "Type": "mpx_midfall_sub_2_5",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 3,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 3
+  },
+  {
+    "MergedType": "mpx_midfall_sub_3_2",
+    "Type": "mpx_midfall_sub_3_1"
+  },
+  {
+    "Type": "mpx_midfall_sub_3_2",
+    "MergedType": "mpx_midfall_sub_3_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_3_3",
+    "MergedType": "mpx_midfall_sub_3_4",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "mpx_midfall_sub_3_4",
+    "MergedType": "mpx_midfall_sub_3_5",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_Weight": [
+      "main_gem_super_3-6"
+    ],
+    "Type": "mpx_midfall_sub_3_5",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 6
+  },
+  {
+    "Type": "mpx_map_energy_super_1",
+    "MergedType": "mpx_map_energy_super_2",
+    "SpecialType": 3
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_2",
+    "MergedType": "mpx_map_energy_super_3",
+    "CollectRewards": [
+      "mapEnergy-2"
+    ]
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_3",
+    "MergedType": "mpx_map_energy_super_4",
+    "CollectRewards": [
+      "mapEnergy-5"
+    ]
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_4",
+    "MergedType": "mpx_map_energy_super_5",
+    "CollectRewards": [
+      "mapEnergy-12"
+    ]
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_5",
+    "MergedType": "mpx_map_energy_super_6",
+    "CollectRewards": [
+      "mapEnergy-25"
+    ]
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_6",
+    "MergedType": "mpx_map_energy_super_7",
+    "CollectRewards": [
+      "mapEnergy-55"
+    ]
+  },
+  {
+    "SpecialType": 3,
+    "Type": "mpx_map_energy_super_7",
+    "MergedType": "mpx_map_energy_super_8",
+    "CollectRewards": [
+      "mapEnergy-120"
+    ]
+  },
+  {
+    "Type": "mpx_map_energy_super_8",
+    "SpecialType": 3,
+    "CollectRewards": [
+      "mapEnergy-250"
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+
+main <SlotOrderModel.lua:0,0> (36 instructions at 000001F4DD8BEEE0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 13 constants, 9 functions
+	1	[3]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[3]	NEWTABLE 	1 0 0
+	3	[3]	GETTABUP 	2 0 -3	; _ENV "BaseOrderModel"
+	4	[3]	CALL     	0 3 2
+	5	[3]	SETTABUP 	0 -1 0	; _ENV "SlotOrderModel"
+	6	[4]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	7	[4]	GETTABUP 	1 0 -1	; _ENV "SlotOrderModel"
+	8	[4]	SETTABLE 	0 -4 1	; "__index" -
+	9	[7]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	10	[10]	CLOSURE  	1 0	; 000001F4DD8BF260
+	11	[7]	SETTABLE 	0 -5 1	; "Init" -
+	12	[12]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	13	[14]	CLOSURE  	1 1	; 000001F4DD8C16F0
+	14	[12]	SETTABLE 	0 -6 1	; "OnSyncDataFinished" -
+	15	[16]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	16	[18]	CLOSURE  	1 2	; 000001F4DD8C1770
+	17	[16]	SETTABLE 	0 -7 1	; "LateInit" -
+	18	[21]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	19	[23]	CLOSURE  	1 3	; 000001F4DD8C17F0
+	20	[21]	SETTABLE 	0 -8 1	; "_DBGetOrders" -
+	21	[26]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	22	[28]	CLOSURE  	1 4	; 000001F4DD8C1870
+	23	[26]	SETTABLE 	0 -9 1	; "_DBAddOrder" -
+	24	[31]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	25	[33]	CLOSURE  	1 5	; 000001F4DD8C18F0
+	26	[31]	SETTABLE 	0 -10 1	; "_DBRemoveOrder" -
+	27	[36]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	28	[72]	CLOSURE  	1 6	; 000001F4DD8C1970
+	29	[36]	SETTABLE 	0 -11 1	; "_TryFillOrders" -
+	30	[74]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	31	[76]	CLOSURE  	1 7	; 000001F4DD8C2620
+	32	[74]	SETTABLE 	0 -12 1	; "_TryCreateOrder" -
+	33	[78]	GETTABUP 	0 0 -1	; _ENV "SlotOrderModel"
+	34	[88]	CLOSURE  	1 8	; 000001F4DD8C26A0
+	35	[78]	SETTABLE 	0 -13 1	; "FinishOrder" -
+	36	[88]	RETURN   	0 1
+constants (13) for 000001F4DD8BEEE0:
+	1	"SlotOrderModel"
+	2	"setmetatable"
+	3	"BaseOrderModel"
+	4	"__index"
+	5	"Init"
+	6	"OnSyncDataFinished"
+	7	"LateInit"
+	8	"_DBGetOrders"
+	9	"_DBAddOrder"
+	10	"_DBRemoveOrder"
+	11	"_TryFillOrders"
+	12	"_TryCreateOrder"
+	13	"FinishOrder"
+locals (0) for 000001F4DD8BEEE0:
+upvalues (1) for 000001F4DD8BEEE0:
+	0	_ENV	1	0
+
+function <SlotOrderModel.lua:7,10> (7 instructions at 000001F4DD8BF260)
+3 params, 6 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[8]	SETTABLE 	0 -1 2	; "m_slotCount" -
+	2	[9]	GETTABUP 	3 0 -2	; _ENV "BaseOrderModel"
+	3	[9]	GETTABLE 	3 3 -3	; "Init"
+	4	[9]	MOVE     	4 0
+	5	[9]	MOVE     	5 1
+	6	[9]	CALL     	3 3 1
+	7	[10]	RETURN   	0 1
+constants (3) for 000001F4DD8BF260:
+	1	"m_slotCount"
+	2	"BaseOrderModel"
+	3	"Init"
+locals (3) for 000001F4DD8BF260:
+	0	self	1	8
+	1	boardModel	1	8
+	2	slotCount	1	8
+upvalues (1) for 000001F4DD8BF260:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:12,14> (4 instructions at 000001F4DD8C16F0)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[13]	SELF     	1 0 -2	; "_DBGetOrders"
+	2	[13]	CALL     	1 2 2
+	3	[13]	SETTABLE 	0 -1 1	; "m_orders" -
+	4	[14]	RETURN   	0 1
+constants (2) for 000001F4DD8C16F0:
+	1	"m_orders"
+	2	"_DBGetOrders"
+locals (1) for 000001F4DD8C16F0:
+	0	self	1	5
+upvalues (0) for 000001F4DD8C16F0:
+
+function <SlotOrderModel.lua:16,18> (3 instructions at 000001F4DD8C1770)
+1 param, 3 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[17]	SELF     	1 0 -1	; "_TryFillOrders"
+	2	[17]	CALL     	1 2 1
+	3	[18]	RETURN   	0 1
+constants (1) for 000001F4DD8C1770:
+	1	"_TryFillOrders"
+locals (1) for 000001F4DD8C1770:
+	0	self	1	4
+upvalues (0) for 000001F4DD8C1770:
+
+function <SlotOrderModel.lua:21,23> (6 instructions at 000001F4DD8C17F0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[22]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[22]	GETTABLE 	1 1 -2	; "Assert"
+	3	[22]	LOADBOOL 	2 0 0
+	4	[22]	LOADK    	3 -3	; "_DBGetOrders()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[22]	CALL     	1 3 1
+	6	[23]	RETURN   	0 1
+constants (3) for 000001F4DD8C17F0:
+	1	"Log"
+	2	"Assert"
+	3	"_DBGetOrders()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 000001F4DD8C17F0:
+	0	self	1	7
+upvalues (1) for 000001F4DD8C17F0:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:26,28> (6 instructions at 000001F4DD8C1870)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[27]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[27]	GETTABLE 	2 2 -2	; "Assert"
+	3	[27]	LOADBOOL 	3 0 0
+	4	[27]	LOADK    	4 -3	; "_DBAddOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[27]	CALL     	2 3 1
+	6	[28]	RETURN   	0 1
+constants (3) for 000001F4DD8C1870:
+	1	"Log"
+	2	"Assert"
+	3	"_DBAddOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (2) for 000001F4DD8C1870:
+	0	self	1	7
+	1	order	1	7
+upvalues (1) for 000001F4DD8C1870:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:31,33> (6 instructions at 000001F4DD8C18F0)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[32]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[32]	GETTABLE 	2 2 -2	; "Assert"
+	3	[32]	LOADBOOL 	3 0 0
+	4	[32]	LOADK    	4 -3	; "_DBRemoveOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[32]	CALL     	2 3 1
+	6	[33]	RETURN   	0 1
+constants (3) for 000001F4DD8C18F0:
+	1	"Log"
+	2	"Assert"
+	3	"_DBRemoveOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (2) for 000001F4DD8C18F0:
+	0	self	1	7
+	1	slot	1	7
+upvalues (1) for 000001F4DD8C18F0:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:36,72> (61 instructions at 000001F4DD8C1970)
+1 param, 13 slots, 1 upvalue, 15 locals, 17 constants, 0 functions
+	1	[37]	LOADBOOL 	1 0 0
+	2	[38]	LOADBOOL 	2 0 0
+	3	[39]	NEWTABLE 	3 0 0
+	4	[43]	LOADBOOL 	2 0 0
+	5	[45]	LOADK    	4 -1	; 1
+	6	[45]	GETTABLE 	5 0 -2	; "m_slotCount"
+	7	[45]	LOADK    	6 -1	; 1
+	8	[45]	FORPREP  	4 34	; to 43
+	9	[46]	GETTABLE 	8 0 -3	; "m_orders"
+	10	[46]	GETTABLE 	8 8 7
+	11	[47]	EQ       	1 8 -4	; - nil
+	12	[47]	JMP      	0 6	; to 19
+	13	[47]	SELF     	9 8 -5	; "GetState"
+	14	[47]	CALL     	9 2 2
+	15	[47]	GETTABUP 	10 0 -6	; _ENV "OrderState"
+	16	[47]	GETTABLE 	10 10 -7	; "Finished"
+	17	[47]	EQ       	0 9 10
+	18	[47]	JMP      	0 24	; to 43
+	19	[48]	EQ       	1 8 -4	; - nil
+	20	[48]	JMP      	0 5	; to 26
+	21	[49]	SELF     	9 0 -8	; "_RemoveOrder"
+	22	[49]	MOVE     	11 7
+	23	[49]	CALL     	9 3 1
+	24	[50]	GETTABLE 	9 0 -3	; "m_orders"
+	25	[50]	SETTABLE 	9 7 -4	; - nil
+	26	[53]	SELF     	9 0 -9	; "_TryCreateOrder"
+	27	[53]	MOVE     	11 7
+	28	[53]	CALL     	9 3 2
+	29	[54]	EQ       	1 9 -4	; - nil
+	30	[54]	JMP      	0 12	; to 43
+	31	[55]	LOADBOOL 	1 1 0
+	32	[56]	LOADBOOL 	2 1 0
+	33	[58]	SELF     	10 0 -10	; "_DBAddOrder"
+	34	[58]	MOVE     	12 9
+	35	[58]	CALL     	10 3 1
+	36	[59]	GETTABLE 	10 0 -3	; "m_orders"
+	37	[59]	SETTABLE 	10 7 9
+	38	[60]	GETTABUP 	10 0 -11	; _ENV "table"
+	39	[60]	GETTABLE 	10 10 -12	; "insert"
+	40	[60]	MOVE     	11 3
+	41	[60]	MOVE     	12 9
+	42	[60]	CALL     	10 3 1
+	43	[45]	FORLOOP  	4 -35	; to 9
+	44	[64]	TEST     	2 1
+	45	[64]	JMP      	0 -42	; to 4
+	46	[66]	TEST     	1 0
+	47	[66]	JMP      	0 13	; to 61
+	48	[67]	GETTABLE 	4 0 -13	; "m_boardModel"
+	49	[67]	SELF     	4 4 -14	; "UpdateOrderState"
+	50	[67]	CALL     	4 2 1
+	51	[68]	GETTABUP 	4 0 -15	; _ENV "ipairs"
+	52	[68]	MOVE     	5 3
+	53	[68]	CALL     	4 2 4
+	54	[68]	JMP      	0 4	; to 59
+	55	[69]	SELF     	9 0 -16	; "_LogOrderAction"
+	56	[69]	MOVE     	11 8
+	57	[69]	LOADK    	12 -17	; "unlock"
+	58	[69]	CALL     	9 4 1
+	59	[68]	TFORCALL 	4 2
+	60	[68]	TFORLOOP 	6 -6	; to 55
+	61	[72]	RETURN   	0 1
+constants (17) for 000001F4DD8C1970:
+	1	1
+	2	"m_slotCount"
+	3	"m_orders"
+	4	nil
+	5	"GetState"
+	6	"OrderState"
+	7	"Finished"
+	8	"_RemoveOrder"
+	9	"_TryCreateOrder"
+	10	"_DBAddOrder"
+	11	"table"
+	12	"insert"
+	13	"m_boardModel"
+	14	"UpdateOrderState"
+	15	"ipairs"
+	16	"_LogOrderAction"
+	17	"unlock"
+locals (15) for 000001F4DD8C1970:
+	0	self	1	62
+	1	hasFilledOrder	2	62
+	2	hasFilledOrderOnce	3	62
+	3	arrNewOrders	4	62
+	4	(for index)	8	44
+	5	(for limit)	8	44
+	6	(for step)	8	44
+	7	slot	9	43
+	8	order	11	43
+	9	newOrder	29	43
+	10	(for generator)	54	61
+	11	(for state)	54	61
+	12	(for control)	54	61
+	13	_	55	59
+	14	order	55	59
+upvalues (1) for 000001F4DD8C1970:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:74,76> (6 instructions at 000001F4DD8C2620)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[75]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[75]	GETTABLE 	2 2 -2	; "Assert"
+	3	[75]	LOADBOOL 	3 0 0
+	4	[75]	LOADK    	4 -3	; "_TryCreateNewOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[75]	CALL     	2 3 1
+	6	[76]	RETURN   	0 1
+constants (3) for 000001F4DD8C2620:
+	1	"Log"
+	2	"Assert"
+	3	"_TryCreateNewOrder()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (2) for 000001F4DD8C2620:
+	0	self	1	7
+	1	slot	1	7
+upvalues (1) for 000001F4DD8C2620:
+	0	_ENV	0	0
+
+function <SlotOrderModel.lua:78,88> (25 instructions at 000001F4DD8C26A0)
+2 params, 6 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[79]	SELF     	2 0 -1	; "ContainsOrder"
+	2	[79]	MOVE     	4 1
+	3	[79]	CALL     	2 3 2
+	4	[79]	TEST     	2 1
+	5	[79]	JMP      	0 2	; to 8
+	6	[80]	LOADBOOL 	2 0 0
+	7	[80]	RETURN   	2 2
+	8	[83]	SELF     	2 1 -2	; "SetFinished"
+	9	[83]	CALL     	2 2 1
+	10	[84]	SELF     	2 0 -3	; "_LogOrderAction"
+	11	[84]	MOVE     	4 1
+	12	[84]	LOADK    	5 -4	; "finish"
+	13	[84]	CALL     	2 4 1
+	14	[85]	SELF     	2 0 -5	; "_TryFillOrders"
+	15	[85]	CALL     	2 2 1
+	16	[86]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	17	[86]	GETTABLE 	2 2 -7	; "DispatchEvent"
+	18	[86]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	19	[86]	GETTABLE 	3 3 -9	; "OrderFinished"
+	20	[86]	NEWTABLE 	4 0 1
+	21	[86]	SETTABLE 	4 -10 1	; "order" -
+	22	[86]	CALL     	2 3 1
+	23	[87]	LOADBOOL 	2 1 0
+	24	[87]	RETURN   	2 2
+	25	[88]	RETURN   	0 1
+constants (10) for 000001F4DD8C26A0:
+	1	"ContainsOrder"
+	2	"SetFinished"
+	3	"_LogOrderAction"
+	4	"finish"
+	5	"_TryFillOrders"
+	6	"EventDispatcher"
+	7	"DispatchEvent"
+	8	"EEventType"
+	9	"OrderFinished"
+	10	"order"
+locals (2) for 000001F4DD8C26A0:
+	0	self	1	26
+	1	order	1	26
+upvalues (1) for 000001F4DD8C26A0:
+	0	_ENV	0	0

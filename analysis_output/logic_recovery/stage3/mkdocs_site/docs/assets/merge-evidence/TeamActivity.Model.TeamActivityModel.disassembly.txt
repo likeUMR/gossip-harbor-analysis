@@ -1,0 +1,5738 @@
+
+main <TeamActivityModel.lua:0,0> (302 instructions at 0000018BCD2FF000)
+0+ params, 4 slots, 1 upvalue, 2 locals, 124 constants, 86 functions
+	1	[50]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[50]	NEWTABLE 	1 0 0
+	3	[50]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	4	[50]	CALL     	0 3 2
+	5	[50]	SETTABUP 	0 -1 0	; _ENV "TeamActivityModel"
+	6	[51]	GETTABUP 	0 0 -1	; _ENV "TeamActivityModel"
+	7	[51]	GETTABUP 	1 0 -1	; _ENV "TeamActivityModel"
+	8	[51]	SETTABLE 	0 -4 1	; "__index" -
+	9	[53]	LOADK    	0 -5	; "value"
+	10	[55]	NEWTABLE 	1 0 4
+	11	[56]	SETTABLE 	1 -7 -7	; "Waiting" "Waiting"
+	12	[57]	SETTABLE 	1 -8 -8	; "HasTeamMate" "HasTeamMate"
+	13	[58]	SETTABLE 	1 -9 -9	; "HasRival" "HasRival"
+	14	[60]	SETTABLE 	1 -10 -10	; "OnGoing" "OnGoing"
+	15	[61]	SETTABUP 	0 -6 1	; _ENV "TeamActivityState"
+	16	[63]	NEWTABLE 	1 0 3
+	17	[64]	SETTABLE 	1 -12 -13	; "Merge" "merge"
+	18	[65]	SETTABLE 	1 -14 -15	; "Order" "order"
+	19	[66]	SETTABLE 	1 -16 -17	; "Buy" "buy"
+	20	[67]	SETTABUP 	0 -11 1	; _ENV "TeamActivityAddScoreScene"
+	21	[69]	NEWTABLE 	1 0 3
+	22	[70]	SETTABLE 	1 -19 -19	; "Leading" "Leading"
+	23	[71]	SETTABLE 	1 -20 -20	; "Lagging" "Lagging"
+	24	[72]	SETTABLE 	1 -21 -21	; "Tied" "Tied"
+	25	[73]	SETTABUP 	0 -18 1	; _ENV "TeamActivityRank"
+	26	[75]	NEWTABLE 	1 0 17
+	27	[76]	SETTABLE 	1 -22 -22	; "PopEndWindow" "PopEndWindow"
+	28	[77]	SETTABLE 	1 -23 -23	; "PopMatchWindow" "PopMatchWindow"
+	29	[78]	SETTABLE 	1 -24 -24	; "PopMainWindowWhenConnect" "PopMainWindowWhenConnect"
+	30	[80]	SETTABLE 	1 -25 -25	; "ClosedDueToNetworkUnconnected" "ClosedDueToNetworkUnconnected"
+	31	[83]	SETTABLE 	1 -26 -26	; "RobotAllData" "RobotAllData"
+	32	[85]	SETTABLE 	1 -27 -27	; "CurRoundStartTime" "CurRoundStartTime"
+	33	[86]	SETTABLE 	1 -28 -28	; "Round" "Round"
+	34	[87]	SETTABLE 	1 -29 -29	; "CurState" "CurState"
+	35	[88]	SETTABLE 	1 -30 -30	; "CurScore" "CurScore"
+	36	[89]	SETTABLE 	1 -31 -31	; "Token" "Token"
+	37	[91]	SETTABLE 	1 -32 -32	; "LastShownScores" "LastShownScores"
+	38	[92]	SETTABLE 	1 -33 -33	; "LastShownToken" "LastShownToken"
+	39	[93]	SETTABLE 	1 -34 -34	; "LastShownRound" "LastShownRound"
+	40	[95]	SETTABLE 	1 -35 -35	; "RecordedScore_player" "RecordedScore_player"
+	41	[96]	SETTABLE 	1 -36 -36	; "RecordedScore_rival" "RecordedScore_rival"
+	42	[97]	SETTABLE 	1 -37 -37	; "RecordedRank" "RecordedRank"
+	43	[99]	SETTABLE 	1 -38 -38	; "CurRoundNum" "CurRoundNum"
+	44	[103]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	45	[110]	CLOSURE  	3 0	; 0000018BCD2FF080
+	46	[103]	SETTABLE 	2 -39 3	; "Init" -
+	47	[112]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	48	[115]	CLOSURE  	3 1	; 0000018BCD2FF2B0
+	49	[112]	SETTABLE 	2 -40 3	; "LateInit" -
+	50	[117]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	51	[119]	CLOSURE  	3 2	; 0000018BCD2FF330
+	52	[117]	SETTABLE 	2 -41 3	; "Destroy" -
+	53	[121]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	54	[140]	CLOSURE  	3 3	; 0000018BCD2FF3B0
+	55	[121]	SETTABLE 	2 -42 3	; "_LoadOtherServerConfig" -
+	56	[142]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	57	[163]	CLOSURE  	3 4	; 0000018BCD303EE0
+	58	[142]	SETTABLE 	2 -43 3	; "LoadLocalConfig" -
+	59	[166]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	60	[178]	CLOSURE  	3 5	; 0000018BCD304B60
+	61	[166]	SETTABLE 	2 -44 3	; "_OnItemMerged" -
+	62	[180]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	63	[203]	CLOSURE  	3 6	; 0000018BCD305870
+	64	[180]	SETTABLE 	2 -45 3	; "AddScore" -
+	65	[205]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	66	[217]	CLOSURE  	3 7	; 0000018BCD3059F0
+	67	[205]	SETTABLE 	2 -46 3	; "GetCurStage" -
+	68	[219]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	69	[226]	CLOSURE  	3 8	; 0000018BCD305270
+	70	[219]	SETTABLE 	2 -47 3	; "CanAddScore" -
+	71	[228]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	72	[230]	CLOSURE  	3 9	; 0000018BCD304FF0
+	73	[228]	SETTABLE 	2 -48 3	; "OnCheckResourcesFinished" -
+	74	[232]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	75	[252]	CLOSURE  	3 10	; 0000018BCD305370
+	76	[232]	SETTABLE 	2 -49 3	; "UpdatePerSecond" -
+	77	[254]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	78	[256]	CLOSURE  	3 11	; 0000018BCD3051F0
+	79	[254]	SETTABLE 	2 -50 3	; "CanPopRaceEndWindow" -
+	80	[258]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	81	[260]	CLOSURE  	3 12	; 0000018BCD3053F0
+	82	[258]	SETTABLE 	2 -51 3	; "SetPopRaceEndWindow" -
+	83	[262]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	84	[303]	CLOSURE  	3 13	; 0000018BCD3058F0
+	85	[262]	SETTABLE 	2 -52 3	; "AcquireToken" -
+	86	[306]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	87	[315]	CLOSURE  	3 14	; 0000018BCD3050F0
+	88	[306]	SETTABLE 	2 -53 3	; "ClearCacheReward" -
+	89	[318]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	90	[480]	CLOSURE  	3 15	; 0000018BCD305970
+	91	[318]	SETTABLE 	2 -54 3	; "GetTimeScore" -
+	92	[483]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	93	[572]	CLOSURE  	3 16	; 0000018BCD305470
+	94	[483]	SETTABLE 	2 -55 3	; "CalculateCurScores" -
+	95	[576]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	96	[594]	CLOSURE  	3 17	; 0000018BCD305670
+	97	[576]	SETTABLE 	2 -56 3	; "LogRaceEnd" -
+	98	[598]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	99	[604]	CLOSURE  	3 18	; 0000018BCD305570
+	100	[598]	SETTABLE 	2 -57 3	; "BILogAction" -
+	101	[606]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	102	[659]	CLOSURE  	3 19	; 0000018BCD3054F0
+	103	[606]	SETTABLE 	2 -58 3	; "TryPopTopTip" -
+	104	[661]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	105	[706]	CLOSURE  	3 20	; 0000018BCD3057F0
+	106	[661]	SETTABLE 	2 -59 3	; "CanShowTopTip" -
+	107	[708]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	108	[715]	CLOSURE  	3 21	; 0000018BCD305AF0
+	109	[708]	SETTABLE 	2 -60 3	; "ScoreInPercentRange" -
+	110	[717]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	111	[728]	CLOSURE  	3 22	; 0000018BCD305B70
+	112	[717]	SETTABLE 	2 -61 3	; "TopTipHasCoolenDown" -
+	113	[731]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	114	[753]	CLOSURE  	3 23	; 0000018BCD305BF0
+	115	[731]	SETTABLE 	2 -62 3	; "ChooseRobot_TeamMate" -
+	116	[755]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	117	[787]	CLOSURE  	3 24	; 0000018BCD304F70
+	118	[755]	SETTABLE 	2 -63 3	; "ChooseRobot_Rival" -
+	119	[790]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	120	[802]	CLOSURE  	3 25	; 0000018BCD305170
+	121	[790]	SETTABLE 	2 -64 3	; "ConvertRobotSpeed" -
+	122	[804]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	123	[808]	CLOSURE  	3 26	; 0000018BCD304EF0
+	124	[804]	SETTABLE 	2 -65 3	; "_DropData" -
+	125	[810]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	126	[819]	CLOSURE  	3 27	; 0000018BCD305CF0
+	127	[810]	SETTABLE 	2 -66 3	; "ClearAllCache" -
+	128	[821]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	129	[869]	CLOSURE  	3 28	; 0000018BCD304DF0
+	130	[821]	SETTABLE 	2 -67 3	; "_OnStateChanged" -
+	131	[872]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	132	[874]	CLOSURE  	3 29	; 0000018BCD313A60
+	133	[872]	SETTABLE 	2 -68 3	; "GetStageRewards" -
+	134	[878]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	135	[880]	CLOSURE  	3 30	; 0000018BCD3142E0
+	136	[878]	SETTABLE 	2 -69 3	; "GetTokenRewards" -
+	137	[882]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	138	[916]	CLOSURE  	3 31	; 0000018BCD3144E0
+	139	[882]	SETTABLE 	2 -70 3	; "PickAvatarAndName" -
+	140	[918]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	141	[920]	CLOSURE  	3 32	; 0000018BCD313B60
+	142	[918]	SETTABLE 	2 -71 3	; "GetResourceLabels" -
+	143	[922]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	144	[924]	CLOSURE  	3 33	; 0000018BCD3139E0
+	145	[922]	SETTABLE 	2 -72 3	; "SetPopEndWindow" -
+	146	[926]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	147	[928]	CLOSURE  	3 34	; 0000018BCD312AE0
+	148	[926]	SETTABLE 	2 -73 3	; "CanPopEndWindow" -
+	149	[930]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	150	[934]	CLOSURE  	3 35	; 0000018BCD313FE0
+	151	[930]	SETTABLE 	2 -74 3	; "IsFinishedAll" -
+	152	[937]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	153	[968]	CLOSURE  	3 36	; 0000018BCD312B60
+	154	[937]	SETTABLE 	2 -75 3	; "GetHudEntryShowConfig" -
+	155	[971]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	156	[984]	CLOSURE  	3 37	; 0000018BCD313060
+	157	[971]	SETTABLE 	2 -76 3	; "GetBoardEntryShowConfig" -
+	158	[988]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	159	[990]	CLOSURE  	3 38	; 0000018BCD3140E0
+	160	[988]	SETTABLE 	2 -77 3	; "HasRobotData" -
+	161	[992]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	162	[994]	CLOSURE  	3 39	; 0000018BCD312960
+	163	[992]	SETTABLE 	2 -78 3	; "GetServerConfigGroupId" -
+	164	[996]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	165	[998]	CLOSURE  	3 40	; 0000018BCD313960
+	166	[996]	SETTABLE 	2 -79 3	; "SetCurRoundStartTime" -
+	167	[1000]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	168	[1002]	CLOSURE  	3 41	; 0000018BCD3133E0
+	169	[1000]	SETTABLE 	2 -80 3	; "GetCurRoundStartTime" -
+	170	[1004]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	171	[1006]	CLOSURE  	3 42	; 0000018BCD3127E0
+	172	[1004]	SETTABLE 	2 -81 3	; "SetRound" -
+	173	[1008]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	174	[1010]	CLOSURE  	3 43	; 0000018BCD314560
+	175	[1008]	SETTABLE 	2 -82 3	; "GetRound" -
+	176	[1012]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	177	[1014]	CLOSURE  	3 44	; 0000018BCD313AE0
+	178	[1012]	SETTABLE 	2 -83 3	; "SetCurRoundNum" -
+	179	[1016]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	180	[1018]	CLOSURE  	3 45	; 0000018BCD312F60
+	181	[1016]	SETTABLE 	2 -84 3	; "GetCurRoundNum" -
+	182	[1020]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	183	[1022]	CLOSURE  	3 46	; 0000018BCD313D60
+	184	[1020]	SETTABLE 	2 -85 3	; "SetLastShownRound" -
+	185	[1024]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	186	[1026]	CLOSURE  	3 47	; 0000018BCD313CE0
+	187	[1024]	SETTABLE 	2 -86 3	; "GetLastShownRound" -
+	188	[1028]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	189	[1030]	CLOSURE  	3 48	; 0000018BCD3126E0
+	190	[1028]	SETTABLE 	2 -87 3	; "SetToken" -
+	191	[1032]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	192	[1034]	CLOSURE  	3 49	; 0000018BCD312FE0
+	193	[1032]	SETTABLE 	2 -88 3	; "GetToken" -
+	194	[1036]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	195	[1038]	CLOSURE  	3 50	; 0000018BCD314160
+	196	[1036]	SETTABLE 	2 -89 3	; "SetLastShownToken" -
+	197	[1040]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	198	[1042]	CLOSURE  	3 51	; 0000018BCD314260
+	199	[1040]	SETTABLE 	2 -90 3	; "GetLastShownToken" -
+	200	[1044]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	201	[1053]	CLOSURE  	3 52	; 0000018BCD313EE0
+	202	[1044]	SETTABLE 	2 -91 3	; "SetCurState" -
+	203	[1055]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	204	[1057]	CLOSURE  	3 53	; 0000018BCD313BE0
+	205	[1055]	SETTABLE 	2 -92 3	; "GetCurState" -
+	206	[1059]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	207	[1061]	CLOSURE  	3 54	; 0000018BCD312860
+	208	[1059]	SETTABLE 	2 -93 3	; "SetCurScore" -
+	209	[1063]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	210	[1065]	CLOSURE  	3 55	; 0000018BCD313360
+	211	[1063]	SETTABLE 	2 -94 3	; "GetCurScore" -
+	212	[1067]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	213	[1076]	CLOSURE  	3 56	; 0000018BCD313760
+	214	[1067]	SETTABLE 	2 -95 3	; "ResetRobotAllData" -
+	215	[1078]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	216	[1080]	CLOSURE  	3 57	; 0000018BCD313F60
+	217	[1078]	SETTABLE 	2 -96 3	; "SaveRobotAllData" -
+	218	[1082]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	219	[1084]	CLOSURE  	3 58	; 0000018BCD3128E0
+	220	[1082]	SETTABLE 	2 -97 3	; "_LoadRobotAllData" -
+	221	[1087]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	222	[1089]	CLOSURE  	3 59	; 0000018BCD312CE0
+	223	[1087]	SETTABLE 	2 -98 3	; "GetRobotAllData" -
+	224	[1091]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	225	[1093]	CLOSURE  	3 60	; 0000018BCD313DE0
+	226	[1091]	SETTABLE 	2 -99 3	; "GetRank" -
+	227	[1095]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	228	[1099]	CLOSURE  	3 61	; 0000018BCD3134E0
+	229	[1095]	SETTABLE 	2 -100 3	; "GetTargetScore" -
+	230	[1101]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	231	[1103]	CLOSURE  	3 62	; 0000018BCD313460
+	232	[1101]	SETTABLE 	2 -101 3	; "GetCakeType" -
+	233	[1106]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	234	[1108]	CLOSURE  	3 63	; 0000018BCD313C60
+	235	[1106]	SETTABLE 	2 -102 3	; "SetLastShownScoreStruct" -
+	236	[1111]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	237	[1116]	CLOSURE  	3 64	; 0000018BCD314060
+	238	[1111]	SETTABLE 	2 -103 3	; "GetLastShownScoreStruct" -
+	239	[1118]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	240	[1124]	CLOSURE  	3 65	; 0000018BCD3136E0
+	241	[1118]	SETTABLE 	2 -104 3	; "ResetLastShownScoreStruct" -
+	242	[1126]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	243	[1128]	CLOSURE  	3 66	; 0000018BCD313560
+	244	[1126]	SETTABLE 	2 -105 3	; "SetRecordedScore_player" -
+	245	[1130]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	246	[1132]	CLOSURE  	3 67	; 0000018BCD313160
+	247	[1130]	SETTABLE 	2 -106 3	; "GetRecordedScore_player" -
+	248	[1134]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	249	[1136]	CLOSURE  	3 68	; 0000018BCD314360
+	250	[1134]	SETTABLE 	2 -107 3	; "SetRecordedScore_rival" -
+	251	[1138]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	252	[1140]	CLOSURE  	3 69	; 0000018BCD3143E0
+	253	[1138]	SETTABLE 	2 -108 3	; "GetRecordedScore_rival" -
+	254	[1142]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	255	[1144]	CLOSURE  	3 70	; 0000018BCD3141E0
+	256	[1142]	SETTABLE 	2 -109 3	; "SetRecordedRank" -
+	257	[1146]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	258	[1148]	CLOSURE  	3 71	; 0000018BCD313660
+	259	[1146]	SETTABLE 	2 -110 3	; "GetRecordedRank" -
+	260	[1150]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	261	[1152]	CLOSURE  	3 72	; 0000018BCD3137E0
+	262	[1150]	SETTABLE 	2 -111 3	; "SetPopMatchWindow" -
+	263	[1154]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	264	[1156]	CLOSURE  	3 73	; 0000018BCD3129E0
+	265	[1154]	SETTABLE 	2 -112 3	; "CanPopMatchWindow" -
+	266	[1158]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	267	[1160]	CLOSURE  	3 74	; 0000018BCD313860
+	268	[1158]	SETTABLE 	2 -113 3	; "GetActivityDefinition" -
+	269	[1162]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	270	[1164]	CLOSURE  	3 75	; 0000018BCD314460
+	271	[1162]	SETTABLE 	2 -114 3	; "SetPopMainWindowWhenConnect" -
+	272	[1166]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	273	[1168]	CLOSURE  	3 76	; 0000018BCD3145E0
+	274	[1166]	SETTABLE 	2 -115 3	; "GetPopMainWindowWhenConnect" -
+	275	[1170]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	276	[1172]	CLOSURE  	3 77	; 0000018BCD312A60
+	277	[1170]	SETTABLE 	2 -116 3	; "SetClosedDueToNetworkUnconnected" -
+	278	[1174]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	279	[1176]	CLOSURE  	3 78	; 0000018BCD312BE0
+	280	[1174]	SETTABLE 	2 -117 3	; "GetClosedDueToNetworkUnconnected" -
+	281	[1182]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	282	[1197]	CLOSURE  	3 79	; 0000018BCD312C60
+	283	[1182]	SETTABLE 	2 -118 3	; "TestRestart" -
+	284	[1199]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	285	[1211]	CLOSURE  	3 80	; 0000018BCD313E60
+	286	[1199]	SETTABLE 	2 -119 3	; "TestRival50" -
+	287	[1213]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	288	[1221]	CLOSURE  	3 81	; 0000018BCD312D60
+	289	[1213]	SETTABLE 	2 -120 3	; "TestTeamate50" -
+	290	[1223]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	291	[1274]	CLOSURE  	3 82	; 0000018BCD312DE0
+	292	[1223]	SETTABLE 	2 -121 3	; "GetTestPopupWindowConfig" -
+	293	[1276]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	294	[1278]	CLOSURE  	3 83	; 0000018BCD31F530
+	295	[1276]	SETTABLE 	2 -122 3	; "TestGetRaceInfo" -
+	296	[1280]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	297	[1282]	CLOSURE  	3 84	; 0000018BCD31E930
+	298	[1280]	SETTABLE 	2 -123 3	; "TestClearTopTipTime" -
+	299	[1284]	GETTABUP 	2 0 -1	; _ENV "TeamActivityModel"
+	300	[1313]	CLOSURE  	3 85	; 0000018BCD31E530
+	301	[1284]	SETTABLE 	2 -124 3	; "TestCheckRobotConfig" -
+	302	[1313]	RETURN   	0 1
+constants (124) for 0000018BCD2FF000:
+	1	"TeamActivityModel"
+	2	"setmetatable"
+	3	"BaseActivityModel"
+	4	"__index"
+	5	"value"
+	6	"TeamActivityState"
+	7	"Waiting"
+	8	"HasTeamMate"
+	9	"HasRival"
+	10	"OnGoing"
+	11	"TeamActivityAddScoreScene"
+	12	"Merge"
+	13	"merge"
+	14	"Order"
+	15	"order"
+	16	"Buy"
+	17	"buy"
+	18	"TeamActivityRank"
+	19	"Leading"
+	20	"Lagging"
+	21	"Tied"
+	22	"PopEndWindow"
+	23	"PopMatchWindow"
+	24	"PopMainWindowWhenConnect"
+	25	"ClosedDueToNetworkUnconnected"
+	26	"RobotAllData"
+	27	"CurRoundStartTime"
+	28	"Round"
+	29	"CurState"
+	30	"CurScore"
+	31	"Token"
+	32	"LastShownScores"
+	33	"LastShownToken"
+	34	"LastShownRound"
+	35	"RecordedScore_player"
+	36	"RecordedScore_rival"
+	37	"RecordedRank"
+	38	"CurRoundNum"
+	39	"Init"
+	40	"LateInit"
+	41	"Destroy"
+	42	"_LoadOtherServerConfig"
+	43	"LoadLocalConfig"
+	44	"_OnItemMerged"
+	45	"AddScore"
+	46	"GetCurStage"
+	47	"CanAddScore"
+	48	"OnCheckResourcesFinished"
+	49	"UpdatePerSecond"
+	50	"CanPopRaceEndWindow"
+	51	"SetPopRaceEndWindow"
+	52	"AcquireToken"
+	53	"ClearCacheReward"
+	54	"GetTimeScore"
+	55	"CalculateCurScores"
+	56	"LogRaceEnd"
+	57	"BILogAction"
+	58	"TryPopTopTip"
+	59	"CanShowTopTip"
+	60	"ScoreInPercentRange"
+	61	"TopTipHasCoolenDown"
+	62	"ChooseRobot_TeamMate"
+	63	"ChooseRobot_Rival"
+	64	"ConvertRobotSpeed"
+	65	"_DropData"
+	66	"ClearAllCache"
+	67	"_OnStateChanged"
+	68	"GetStageRewards"
+	69	"GetTokenRewards"
+	70	"PickAvatarAndName"
+	71	"GetResourceLabels"
+	72	"SetPopEndWindow"
+	73	"CanPopEndWindow"
+	74	"IsFinishedAll"
+	75	"GetHudEntryShowConfig"
+	76	"GetBoardEntryShowConfig"
+	77	"HasRobotData"
+	78	"GetServerConfigGroupId"
+	79	"SetCurRoundStartTime"
+	80	"GetCurRoundStartTime"
+	81	"SetRound"
+	82	"GetRound"
+	83	"SetCurRoundNum"
+	84	"GetCurRoundNum"
+	85	"SetLastShownRound"
+	86	"GetLastShownRound"
+	87	"SetToken"
+	88	"GetToken"
+	89	"SetLastShownToken"
+	90	"GetLastShownToken"
+	91	"SetCurState"
+	92	"GetCurState"
+	93	"SetCurScore"
+	94	"GetCurScore"
+	95	"ResetRobotAllData"
+	96	"SaveRobotAllData"
+	97	"_LoadRobotAllData"
+	98	"GetRobotAllData"
+	99	"GetRank"
+	100	"GetTargetScore"
+	101	"GetCakeType"
+	102	"SetLastShownScoreStruct"
+	103	"GetLastShownScoreStruct"
+	104	"ResetLastShownScoreStruct"
+	105	"SetRecordedScore_player"
+	106	"GetRecordedScore_player"
+	107	"SetRecordedScore_rival"
+	108	"GetRecordedScore_rival"
+	109	"SetRecordedRank"
+	110	"GetRecordedRank"
+	111	"SetPopMatchWindow"
+	112	"CanPopMatchWindow"
+	113	"GetActivityDefinition"
+	114	"SetPopMainWindowWhenConnect"
+	115	"GetPopMainWindowWhenConnect"
+	116	"SetClosedDueToNetworkUnconnected"
+	117	"GetClosedDueToNetworkUnconnected"
+	118	"TestRestart"
+	119	"TestRival50"
+	120	"TestTeamate50"
+	121	"GetTestPopupWindowConfig"
+	122	"TestGetRaceInfo"
+	123	"TestClearTopTipTime"
+	124	"TestCheckRobotConfig"
+locals (2) for 0000018BCD2FF000:
+	0	DBColumnValue	10	303
+	1	DBKeys	44	303
+upvalues (1) for 0000018BCD2FF000:
+	0	_ENV	1	0
+
+function <TeamActivityModel.lua:103,110> (19 instructions at 0000018BCD2FF080)
+3 params, 7 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[104]	GETTABUP 	3 0 -2	; _ENV "TeamActivityDefinition"
+	2	[104]	GETTABLE 	3 3 1
+	3	[104]	SETTABLE 	0 -1 3	; "m_activityDefinition" -
+	4	[106]	NEWTABLE 	3 0 0
+	5	[106]	SETTABLE 	0 -3 3	; "m_robotAllData" -
+	6	[107]	GETTABUP 	3 0 -4	; _ENV "BaseActivityModel"
+	7	[107]	GETTABLE 	3 3 -5	; "Init"
+	8	[107]	MOVE     	4 0
+	9	[107]	MOVE     	5 1
+	10	[107]	MOVE     	6 2
+	11	[107]	CALL     	3 4 1
+	12	[109]	GETTABUP 	3 0 -6	; _ENV "EventDispatcher"
+	13	[109]	GETTABLE 	3 3 -7	; "AddListener"
+	14	[109]	GETTABUP 	4 0 -8	; _ENV "EEventType"
+	15	[109]	GETTABLE 	4 4 -9	; "ItemMerged"
+	16	[109]	MOVE     	5 0
+	17	[109]	GETTABLE 	6 0 -10	; "_OnItemMerged"
+	18	[109]	CALL     	3 4 1
+	19	[110]	RETURN   	0 1
+constants (10) for 0000018BCD2FF080:
+	1	"m_activityDefinition"
+	2	"TeamActivityDefinition"
+	3	"m_robotAllData"
+	4	"BaseActivityModel"
+	5	"Init"
+	6	"EventDispatcher"
+	7	"AddListener"
+	8	"EEventType"
+	9	"ItemMerged"
+	10	"_OnItemMerged"
+locals (3) for 0000018BCD2FF080:
+	0	self	1	20
+	1	activityType	1	20
+	2	activityDataTable	1	20
+upvalues (1) for 0000018BCD2FF080:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:112,115> (6 instructions at 0000018BCD2FF2B0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[113]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[113]	GETTABLE 	1 1 -2	; "LateInit"
+	3	[113]	MOVE     	2 0
+	4	[113]	CALL     	1 2 1
+	5	[114]	SETTABLE 	0 -3 -4	; "m_lateInit" true
+	6	[115]	RETURN   	0 1
+constants (4) for 0000018BCD2FF2B0:
+	1	"BaseActivityModel"
+	2	"LateInit"
+	3	"m_lateInit"
+	4	true
+locals (1) for 0000018BCD2FF2B0:
+	0	self	1	7
+upvalues (1) for 0000018BCD2FF2B0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:117,119> (5 instructions at 0000018BCD2FF330)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[118]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[118]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[118]	MOVE     	2 0
+	4	[118]	CALL     	1 2 1
+	5	[119]	RETURN   	0 1
+constants (2) for 0000018BCD2FF330:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 0000018BCD2FF330:
+	0	self	1	6
+upvalues (1) for 0000018BCD2FF330:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:121,140> (30 instructions at 0000018BCD2FF3B0)
+2 params, 5 slots, 1 upvalue, 2 locals, 13 constants, 2 functions
+	1	[122]	GETTABLE 	2 1 -1	; "teamConfig"
+	2	[122]	EQ       	1 2 -2	; - nil
+	3	[122]	JMP      	0 3	; to 7
+	4	[122]	GETTABLE 	2 1 -3	; "teamRewardConfig"
+	5	[122]	EQ       	0 2 -2	; - nil
+	6	[122]	JMP      	0 1	; to 8
+	7	[123]	RETURN   	0 1
+	8	[126]	GETTABLE 	2 1 -3	; "teamRewardConfig"
+	9	[126]	SETTABLE 	0 -4 2	; "m_teamRewardConfig" -
+	10	[127]	GETTABUP 	2 0 -5	; _ENV "table"
+	11	[127]	GETTABLE 	2 2 -6	; "sort"
+	12	[127]	GETTABLE 	3 0 -4	; "m_teamRewardConfig"
+	13	[129]	CLOSURE  	4 0	; 0000018BCD303D60
+	14	[127]	CALL     	2 3 1
+	15	[130]	GETTABLE 	2 0 -4	; "m_teamRewardConfig"
+	16	[130]	GETTABLE 	2 2 -8	; 1
+	17	[130]	GETTABLE 	2 2 -9	; "groupId"
+	18	[130]	SETTABLE 	0 -7 2	; "m_groupId" -
+	19	[133]	GETTABLE 	2 1 -1	; "teamConfig"
+	20	[133]	SETTABLE 	0 -10 2	; "m_teamConfigArr" -
+	21	[134]	GETTABUP 	2 0 -5	; _ENV "table"
+	22	[134]	GETTABLE 	2 2 -6	; "sort"
+	23	[134]	GETTABLE 	3 0 -10	; "m_teamConfigArr"
+	24	[136]	CLOSURE  	4 1	; 0000018BCD303DE0
+	25	[134]	CALL     	2 3 1
+	26	[138]	GETTABLE 	2 1 -12	; "eventOrderScore"
+	27	[138]	SETTABLE 	0 -11 2	; "m_eventOrderScore" -
+	28	[139]	SELF     	2 0 -13	; "LoadLocalConfig"
+	29	[139]	CALL     	2 2 1
+	30	[140]	RETURN   	0 1
+constants (13) for 0000018BCD2FF3B0:
+	1	"teamConfig"
+	2	nil
+	3	"teamRewardConfig"
+	4	"m_teamRewardConfig"
+	5	"table"
+	6	"sort"
+	7	"m_groupId"
+	8	1
+	9	"groupId"
+	10	"m_teamConfigArr"
+	11	"m_eventOrderScore"
+	12	"eventOrderScore"
+	13	"LoadLocalConfig"
+locals (2) for 0000018BCD2FF3B0:
+	0	self	1	31
+	1	config	1	31
+upvalues (1) for 0000018BCD2FF3B0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:127,129> (8 instructions at 0000018BCD303D60)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[128]	GETTABLE 	2 0 -1	; "stage"
+	2	[128]	GETTABLE 	3 1 -1	; "stage"
+	3	[128]	LT       	1 2 3
+	4	[128]	JMP      	0 1	; to 6
+	5	[128]	LOADBOOL 	2 0 1
+	6	[128]	LOADBOOL 	2 1 0
+	7	[128]	RETURN   	2 2
+	8	[129]	RETURN   	0 1
+constants (1) for 0000018BCD303D60:
+	1	"stage"
+locals (2) for 0000018BCD303D60:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000018BCD303D60:
+
+function <TeamActivityModel.lua:134,136> (8 instructions at 0000018BCD303DE0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[135]	GETTABLE 	2 0 -1	; "round"
+	2	[135]	GETTABLE 	3 1 -1	; "round"
+	3	[135]	LT       	1 2 3
+	4	[135]	JMP      	0 1	; to 6
+	5	[135]	LOADBOOL 	2 0 1
+	6	[135]	LOADBOOL 	2 1 0
+	7	[135]	RETURN   	2 2
+	8	[136]	RETURN   	0 1
+constants (1) for 0000018BCD303DE0:
+	1	"round"
+locals (2) for 0000018BCD303DE0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000018BCD303DE0:
+
+function <TeamActivityModel.lua:142,163> (55 instructions at 0000018BCD303EE0)
+1 param, 12 slots, 1 upvalue, 13 locals, 18 constants, 0 functions
+	1	[144]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[144]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[144]	SELF     	1 1 -3	; "GetLocalConfig"
+	4	[144]	GETTABUP 	3 0 -4	; _ENV "LocalConfigKey"
+	5	[144]	GETTABLE 	3 3 -5	; "MergeItemScoreConfig"
+	6	[144]	CALL     	1 3 2
+	7	[145]	NEWTABLE 	2 0 0
+	8	[145]	SETTABLE 	0 -6 2	; "m_mergeItemScoreConfig" -
+	9	[146]	GETTABUP 	2 0 -7	; _ENV "ipairs"
+	10	[146]	MOVE     	3 1
+	11	[146]	CALL     	2 2 4
+	12	[146]	JMP      	0 3	; to 16
+	13	[147]	GETTABLE 	7 0 -6	; "m_mergeItemScoreConfig"
+	14	[147]	GETTABLE 	8 6 -8	; "item_id"
+	15	[147]	SETTABLE 	7 8 6
+	16	[146]	TFORCALL 	2 2
+	17	[146]	TFORLOOP 	4 -5	; to 13
+	18	[151]	GETTABUP 	2 0 -9	; _ENV "Table"
+	19	[151]	GETTABLE 	2 2 -10	; "DeepCopy"
+	20	[151]	GETTABUP 	3 0 -1	; _ENV "GM"
+	21	[151]	GETTABLE 	3 3 -2	; "ConfigModel"
+	22	[151]	SELF     	3 3 -3	; "GetLocalConfig"
+	23	[151]	GETTABUP 	5 0 -4	; _ENV "LocalConfigKey"
+	24	[151]	GETTABLE 	5 5 -11	; "TeamRobot"
+	25	[151]	CALL     	3 3 0
+	26	[151]	CALL     	2 0 2
+	27	[153]	NEWTABLE 	3 0 0
+	28	[153]	SETTABLE 	0 -12 3	; "m_robotConfig" -
+	29	[154]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	30	[154]	MOVE     	4 2
+	31	[154]	CALL     	3 2 4
+	32	[154]	JMP      	0 20	; to 53
+	33	[155]	GETTABLE 	8 0 -12	; "m_robotConfig"
+	34	[155]	GETTABLE 	9 7 -13	; "groupId"
+	35	[155]	GETTABLE 	8 8 9
+	36	[155]	EQ       	0 8 -14	; - nil
+	37	[155]	JMP      	0 4	; to 42
+	38	[156]	GETTABLE 	8 0 -12	; "m_robotConfig"
+	39	[156]	GETTABLE 	9 7 -13	; "groupId"
+	40	[156]	NEWTABLE 	10 0 0
+	41	[156]	SETTABLE 	8 9 10
+	42	[158]	GETTABUP 	8 0 -15	; _ENV "table"
+	43	[158]	GETTABLE 	8 8 -16	; "insert"
+	44	[158]	GETTABLE 	9 0 -12	; "m_robotConfig"
+	45	[158]	GETTABLE 	10 7 -13	; "groupId"
+	46	[158]	GETTABLE 	9 9 10
+	47	[158]	NEWTABLE 	10 0 2
+	48	[159]	GETTABLE 	11 7 -17	; "id"
+	49	[159]	SETTABLE 	10 -17 11	; "id" -
+	50	[160]	GETTABLE 	11 7 -18	; "speed"
+	51	[160]	SETTABLE 	10 -18 11	; "speed" -
+	52	[158]	CALL     	8 3 1
+	53	[154]	TFORCALL 	3 2
+	54	[154]	TFORLOOP 	5 -22	; to 33
+	55	[163]	RETURN   	0 1
+constants (18) for 0000018BCD303EE0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetLocalConfig"
+	4	"LocalConfigKey"
+	5	"MergeItemScoreConfig"
+	6	"m_mergeItemScoreConfig"
+	7	"ipairs"
+	8	"item_id"
+	9	"Table"
+	10	"DeepCopy"
+	11	"TeamRobot"
+	12	"m_robotConfig"
+	13	"groupId"
+	14	nil
+	15	"table"
+	16	"insert"
+	17	"id"
+	18	"speed"
+locals (13) for 0000018BCD303EE0:
+	0	self	1	56
+	1	mergeConfig	7	56
+	2	(for generator)	12	18
+	3	(for state)	12	18
+	4	(for control)	12	18
+	5	_	13	16
+	6	data	13	16
+	7	originRobotConfig	27	56
+	8	(for generator)	32	55
+	9	(for state)	32	55
+	10	(for control)	32	55
+	11	_	33	53
+	12	robot	33	53
+upvalues (1) for 0000018BCD303EE0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:166,178> (30 instructions at 0000018BCD304B60)
+2 params, 9 slots, 1 upvalue, 4 locals, 11 constants, 0 functions
+	1	[167]	GETTABLE 	2 1 -1	; "Source"
+	2	[167]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[167]	CALL     	2 2 2
+	4	[167]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[167]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[167]	EQ       	0 2 3
+	7	[167]	JMP      	0 22	; to 30
+	8	[168]	SELF     	2 0 -5	; "CanAddScore"
+	9	[168]	CALL     	2 2 2
+	10	[168]	TEST     	2 0
+	11	[168]	JMP      	0 18	; to 30
+	12	[169]	GETTABLE 	2 1 -1	; "Source"
+	13	[169]	SELF     	2 2 -6	; "GetType"
+	14	[169]	CALL     	2 2 2
+	15	[170]	GETTABLE 	3 0 -7	; "m_mergeItemScoreConfig"
+	16	[170]	GETTABLE 	3 3 2
+	17	[170]	TEST     	3 0
+	18	[170]	JMP      	0 11	; to 30
+	19	[171]	GETTABLE 	3 0 -7	; "m_mergeItemScoreConfig"
+	20	[171]	GETTABLE 	3 3 2
+	21	[171]	GETTABLE 	3 3 -8	; "merge_score_race"
+	22	[172]	TEST     	3 0
+	23	[172]	JMP      	0 6	; to 30
+	24	[173]	SELF     	4 0 -9	; "AddScore"
+	25	[173]	MOVE     	6 3
+	26	[173]	GETTABUP 	7 0 -10	; _ENV "TeamActivityAddScoreScene"
+	27	[173]	GETTABLE 	7 7 -11	; "Merge"
+	28	[173]	GETTABLE 	8 1 -1	; "Source"
+	29	[173]	CALL     	4 5 1
+	30	[178]	RETURN   	0 1
+constants (11) for 0000018BCD304B60:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"CanAddScore"
+	6	"GetType"
+	7	"m_mergeItemScoreConfig"
+	8	"merge_score_race"
+	9	"AddScore"
+	10	"TeamActivityAddScoreScene"
+	11	"Merge"
+locals (4) for 0000018BCD304B60:
+	0	self	1	31
+	1	message	1	31
+	2	itemType	15	30
+	3	score	22	30
+upvalues (1) for 0000018BCD304B60:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:180,203> (48 instructions at 0000018BCD305870)
+4 params, 14 slots, 1 upvalue, 6 locals, 23 constants, 0 functions
+	1	[181]	LT       	0 -1 1	; 0 -
+	2	[181]	JMP      	0 45	; to 48
+	3	[181]	SELF     	4 0 -2	; "CanAddScore"
+	4	[181]	CALL     	4 2 2
+	5	[181]	TEST     	4 0
+	6	[181]	JMP      	0 41	; to 48
+	7	[182]	SELF     	4 0 -3	; "GetTargetScore"
+	8	[182]	CALL     	4 2 2
+	9	[184]	GETTABLE 	5 0 -4	; "m_robotAllData"
+	10	[184]	GETTABLE 	5 5 -5	; "TeamMate"
+	11	[184]	GETTABLE 	5 5 -6	; "TeamScore"
+	12	[184]	LE       	0 4 5
+	13	[184]	JMP      	0 1	; to 15
+	14	[185]	RETURN   	0 1
+	15	[188]	GETTABLE 	5 0 -4	; "m_robotAllData"
+	16	[188]	GETTABLE 	5 5 -7	; "RivalA"
+	17	[188]	GETTABLE 	5 5 -6	; "TeamScore"
+	18	[188]	LE       	0 4 5
+	19	[188]	JMP      	0 1	; to 21
+	20	[189]	RETURN   	0 1
+	21	[192]	SELF     	5 0 -8	; "SetCurScore"
+	22	[192]	SELF     	7 0 -9	; "GetCurScore"
+	23	[192]	CALL     	7 2 2
+	24	[192]	ADD      	7 7 1
+	25	[192]	CALL     	5 3 1
+	26	[193]	SELF     	5 0 -10	; "GetCurStage"
+	27	[193]	CALL     	5 2 2
+	28	[196]	SELF     	6 0 -11	; "LogActivity"
+	29	[196]	GETTABUP 	8 0 -12	; _ENV "EBIType"
+	30	[196]	GETTABLE 	8 8 -13	; "ActivityAddScore"
+	31	[196]	GETTABUP 	9 0 -14	; _ENV "GM"
+	32	[196]	GETTABLE 	9 9 -15	; "BIManager"
+	33	[196]	SELF     	9 9 -16	; "TableToString"
+	34	[196]	NEWTABLE 	11 0 3
+	35	[197]	SELF     	12 0 -10	; "GetCurStage"
+	36	[197]	CALL     	12 2 2
+	37	[197]	SETTABLE 	11 -17 12	; "stage" -
+	38	[198]	SETTABLE 	11 -18 1	; "n" -
+	39	[199]	SETTABLE 	11 -19 2	; "s" -
+	40	[196]	CALL     	9 3 0
+	41	[196]	CALL     	6 0 1
+	42	[201]	SELF     	6 0 -20	; "CalculateCurScores"
+	43	[201]	NEWTABLE 	8 0 3
+	44	[201]	SETTABLE 	8 -21 1	; "TokenScore" -
+	45	[201]	SETTABLE 	8 -22 2	; "Scene" -
+	46	[201]	SETTABLE 	8 -23 3	; "Source" -
+	47	[201]	CALL     	6 3 1
+	48	[203]	RETURN   	0 1
+constants (23) for 0000018BCD305870:
+	1	0
+	2	"CanAddScore"
+	3	"GetTargetScore"
+	4	"m_robotAllData"
+	5	"TeamMate"
+	6	"TeamScore"
+	7	"RivalA"
+	8	"SetCurScore"
+	9	"GetCurScore"
+	10	"GetCurStage"
+	11	"LogActivity"
+	12	"EBIType"
+	13	"ActivityAddScore"
+	14	"GM"
+	15	"BIManager"
+	16	"TableToString"
+	17	"stage"
+	18	"n"
+	19	"s"
+	20	"CalculateCurScores"
+	21	"TokenScore"
+	22	"Scene"
+	23	"Source"
+locals (6) for 0000018BCD305870:
+	0	self	1	49
+	1	score	1	49
+	2	scene	1	49
+	3	itemModel	1	49
+	4	targetScore	9	48
+	5	stage	28	48
+upvalues (1) for 0000018BCD305870:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:205,217> (19 instructions at 0000018BCD3059F0)
+1 param, 10 slots, 1 upvalue, 9 locals, 6 constants, 0 functions
+	1	[206]	SELF     	1 0 -1	; "GetToken"
+	2	[206]	CALL     	1 2 2
+	3	[207]	SELF     	2 0 -2	; "GetStageRewards"
+	4	[207]	CALL     	2 2 2
+	5	[208]	LOADK    	3 -3	; 0
+	6	[209]	GETTABUP 	4 0 -4	; _ENV "ipairs"
+	7	[209]	MOVE     	5 2
+	8	[209]	CALL     	4 2 4
+	9	[209]	JMP      	0 6	; to 16
+	10	[210]	GETTABLE 	9 8 -5	; "score"
+	11	[210]	LE       	0 9 1
+	12	[210]	JMP      	0 5	; to 18
+	13	[211]	GETTABLE 	3 8 -6	; "stage"
+	14	[211]	JMP      	0 1	; to 16
+	15	[212]	JMP      	0 2	; to 18
+	16	[209]	TFORCALL 	4 2
+	17	[209]	TFORLOOP 	6 -8	; to 10
+	18	[216]	RETURN   	3 2
+	19	[217]	RETURN   	0 1
+constants (6) for 0000018BCD3059F0:
+	1	"GetToken"
+	2	"GetStageRewards"
+	3	0
+	4	"ipairs"
+	5	"score"
+	6	"stage"
+locals (9) for 0000018BCD3059F0:
+	0	self	1	20
+	1	tokenNum	3	20
+	2	stageRewards	5	20
+	3	stage	6	20
+	4	(for generator)	9	18
+	5	(for state)	9	18
+	6	(for control)	9	18
+	7	i	10	16
+	8	reward	10	16
+upvalues (1) for 0000018BCD3059F0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:219,226> (32 instructions at 0000018BCD305270)
+1 param, 4 slots, 1 upvalue, 1 local, 11 constants, 0 functions
+	1	[220]	SELF     	1 0 -1	; "GetState"
+	2	[220]	LOADBOOL 	3 0 0
+	3	[220]	CALL     	1 3 2
+	4	[220]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[220]	GETTABLE 	2 2 -3	; "Started"
+	6	[220]	EQ       	0 1 2
+	7	[220]	JMP      	0 22	; to 30
+	8	[220]	SELF     	1 0 -4	; "GetCurState"
+	9	[220]	CALL     	1 2 2
+	10	[220]	GETTABUP 	2 0 -5	; _ENV "TeamActivityState"
+	11	[220]	GETTABLE 	2 2 -6	; "OnGoing"
+	12	[220]	EQ       	0 1 2
+	13	[220]	JMP      	0 16	; to 30
+	14	[221]	GETTABLE 	1 0 -7	; "m_robotAllData"
+	15	[221]	GETTABLE 	1 1 -8	; "TeamMate"
+	16	[221]	GETTABLE 	1 1 -9	; "TeamScore"
+	17	[221]	SELF     	2 0 -10	; "GetTargetScore"
+	18	[221]	CALL     	2 2 2
+	19	[221]	LT       	0 1 2
+	20	[221]	JMP      	0 9	; to 30
+	21	[222]	GETTABLE 	1 0 -7	; "m_robotAllData"
+	22	[222]	GETTABLE 	1 1 -11	; "RivalA"
+	23	[222]	GETTABLE 	1 1 -9	; "TeamScore"
+	24	[222]	SELF     	2 0 -10	; "GetTargetScore"
+	25	[222]	CALL     	2 2 2
+	26	[222]	LT       	0 1 2
+	27	[222]	JMP      	0 2	; to 30
+	28	[223]	LOADBOOL 	1 1 0
+	29	[223]	RETURN   	1 2
+	30	[225]	LOADBOOL 	1 0 0
+	31	[225]	RETURN   	1 2
+	32	[226]	RETURN   	0 1
+constants (11) for 0000018BCD305270:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetCurState"
+	5	"TeamActivityState"
+	6	"OnGoing"
+	7	"m_robotAllData"
+	8	"TeamMate"
+	9	"TeamScore"
+	10	"GetTargetScore"
+	11	"RivalA"
+locals (1) for 0000018BCD305270:
+	0	self	1	33
+upvalues (1) for 0000018BCD305270:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:228,230> (2 instructions at 0000018BCD304FF0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[229]	SETTABLE 	0 -1 -2	; "m_resourceAllReady" true
+	2	[230]	RETURN   	0 1
+constants (2) for 0000018BCD304FF0:
+	1	"m_resourceAllReady"
+	2	true
+locals (1) for 0000018BCD304FF0:
+	0	self	1	3
+upvalues (0) for 0000018BCD304FF0:
+
+function <TeamActivityModel.lua:232,252> (54 instructions at 0000018BCD305370)
+1 param, 4 slots, 1 upvalue, 1 local, 23 constants, 0 functions
+	1	[233]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[233]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[233]	MOVE     	2 0
+	4	[233]	CALL     	1 2 1
+	5	[236]	GETTABUP 	1 0 -3	; _ENV "MINIGAME"
+	6	[236]	TEST     	1 0
+	7	[236]	JMP      	0 1	; to 9
+	8	[237]	SETTABLE 	0 -4 -5	; "m_resourceAllReady" true
+	9	[241]	SELF     	1 0 -6	; "GetState"
+	10	[241]	LOADBOOL 	3 1 0
+	11	[241]	CALL     	1 3 2
+	12	[241]	GETTABUP 	2 0 -7	; _ENV "ActivityState"
+	13	[241]	GETTABLE 	2 2 -8	; "Started"
+	14	[241]	EQ       	0 1 2
+	15	[241]	JMP      	0 38	; to 54
+	16	[241]	GETTABLE 	1 0 -4	; "m_resourceAllReady"
+	17	[241]	TEST     	1 0
+	18	[241]	JMP      	0 35	; to 54
+	19	[242]	SELF     	1 0 -9	; "GetCurState"
+	20	[242]	CALL     	1 2 2
+	21	[242]	GETTABUP 	2 0 -10	; _ENV "TeamActivityState"
+	22	[242]	GETTABLE 	2 2 -11	; "OnGoing"
+	23	[242]	EQ       	0 1 2
+	24	[242]	JMP      	0 2	; to 27
+	25	[243]	SELF     	1 0 -12	; "CalculateCurScores"
+	26	[243]	CALL     	1 2 1
+	27	[246]	GETTABUP 	1 0 -13	; _ENV "ApplicationManager"
+	28	[246]	GETTABLE 	1 1 -14	; "Instance"
+	29	[246]	GETTABLE 	1 1 -15	; "isNetworkConnected"
+	30	[246]	TEST     	1 0
+	31	[246]	JMP      	0 22	; to 54
+	32	[246]	SELF     	1 0 -16	; "GetClosedDueToNetworkUnconnected"
+	33	[246]	CALL     	1 2 2
+	34	[246]	TEST     	1 0
+	35	[246]	JMP      	0 18	; to 54
+	36	[246]	SELF     	1 0 -9	; "GetCurState"
+	37	[246]	CALL     	1 2 2
+	38	[246]	GETTABUP 	2 0 -10	; _ENV "TeamActivityState"
+	39	[246]	GETTABLE 	2 2 -17	; "HasRival"
+	40	[246]	EQ       	0 1 2
+	41	[246]	JMP      	0 12	; to 54
+	42	[247]	SELF     	1 0 -18	; "SetClosedDueToNetworkUnconnected"
+	43	[247]	LOADBOOL 	3 0 0
+	44	[247]	CALL     	1 3 1
+	45	[248]	SELF     	1 0 -19	; "SetCurState"
+	46	[248]	GETTABUP 	3 0 -10	; _ENV "TeamActivityState"
+	47	[248]	GETTABLE 	3 3 -11	; "OnGoing"
+	48	[248]	CALL     	1 3 1
+	49	[249]	GETTABUP 	1 0 -20	; _ENV "GM"
+	50	[249]	GETTABLE 	1 1 -21	; "TutorialModel"
+	51	[249]	SELF     	1 1 -22	; "SetTutorialFinished"
+	52	[249]	LOADK    	3 -23	; "tutorial_team_window"
+	53	[249]	CALL     	1 3 1
+	54	[252]	RETURN   	0 1
+constants (23) for 0000018BCD305370:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"MINIGAME"
+	4	"m_resourceAllReady"
+	5	true
+	6	"GetState"
+	7	"ActivityState"
+	8	"Started"
+	9	"GetCurState"
+	10	"TeamActivityState"
+	11	"OnGoing"
+	12	"CalculateCurScores"
+	13	"ApplicationManager"
+	14	"Instance"
+	15	"isNetworkConnected"
+	16	"GetClosedDueToNetworkUnconnected"
+	17	"HasRival"
+	18	"SetClosedDueToNetworkUnconnected"
+	19	"SetCurState"
+	20	"GM"
+	21	"TutorialModel"
+	22	"SetTutorialFinished"
+	23	"tutorial_team_window"
+locals (1) for 0000018BCD305370:
+	0	self	1	55
+upvalues (1) for 0000018BCD305370:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:254,256> (3 instructions at 0000018BCD3051F0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[255]	GETTABLE 	1 0 -1	; "m_bRaceEndWindowPop"
+	2	[255]	RETURN   	1 2
+	3	[256]	RETURN   	0 1
+constants (1) for 0000018BCD3051F0:
+	1	"m_bRaceEndWindowPop"
+locals (1) for 0000018BCD3051F0:
+	0	self	1	4
+upvalues (0) for 0000018BCD3051F0:
+
+function <TeamActivityModel.lua:258,260> (2 instructions at 0000018BCD3053F0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[259]	SETTABLE 	0 -1 1	; "m_bRaceEndWindowPop" -
+	2	[260]	RETURN   	0 1
+constants (1) for 0000018BCD3053F0:
+	1	"m_bRaceEndWindowPop"
+locals (2) for 0000018BCD3053F0:
+	0	self	1	3
+	1	bCanPop	1	3
+upvalues (0) for 0000018BCD3053F0:
+
+function <TeamActivityModel.lua:262,303> (114 instructions at 0000018BCD3058F0)
+1 param, 20 slots, 1 upvalue, 19 locals, 31 constants, 0 functions
+	1	[263]	SELF     	1 0 -1	; "GetToken"
+	2	[263]	CALL     	1 2 2
+	3	[264]	SELF     	2 0 -2	; "GetStageRewards"
+	4	[264]	CALL     	2 2 2
+	5	[265]	LEN      	3 2
+	6	[265]	GETTABLE 	3 2 3
+	7	[265]	GETTABLE 	3 3 -3	; "score"
+	8	[266]	LE       	0 3 1
+	9	[266]	JMP      	0 1	; to 11
+	10	[267]	RETURN   	0 1
+	11	[270]	NEWTABLE 	4 0 0
+	12	[270]	SETTABLE 	0 -4 4	; "m_rewardCache" -
+	13	[271]	SELF     	4 0 -5	; "GetTokenRewards"
+	14	[271]	SELF     	6 0 -6	; "GetRound"
+	15	[271]	CALL     	6 2 0
+	16	[271]	CALL     	4 0 3
+	17	[272]	GETTABUP 	6 0 -7	; _ENV "RewardApi"
+	18	[272]	GETTABLE 	6 6 -8	; "AcquireRewardsLogic"
+	19	[272]	MOVE     	7 4
+	20	[272]	GETTABUP 	8 0 -9	; _ENV "EPropertySource"
+	21	[272]	GETTABLE 	8 8 -10	; "Give"
+	22	[272]	GETTABLE 	9 0 -11	; "m_activityDefinition"
+	23	[272]	GETTABLE 	9 9 -12	; "AcquireRewardBIType"
+	24	[272]	GETTABUP 	10 0 -13	; _ENV "EGameMode"
+	25	[272]	GETTABLE 	10 10 -14	; "Main"
+	26	[272]	GETTABUP 	11 0 -15	; _ENV "CacheItemType"
+	27	[272]	GETTABLE 	11 11 -16	; "Type2"
+	28	[272]	CALL     	6 6 1
+	29	[273]	GETTABUP 	6 0 -17	; _ENV "table"
+	30	[273]	GETTABLE 	6 6 -18	; "insert"
+	31	[273]	GETTABLE 	7 0 -4	; "m_rewardCache"
+	32	[273]	MOVE     	8 4
+	33	[273]	CALL     	6 3 1
+	34	[274]	SELF     	6 0 -19	; "GetCurScore"
+	35	[274]	CALL     	6 2 2
+	36	[274]	GETTABLE 	7 0 -20	; "m_robotAllData"
+	37	[274]	GETTABLE 	7 7 -21	; "TeamMate"
+	38	[274]	GETTABLE 	7 7 -22	; "CurScore"
+	39	[274]	LE       	0 7 6
+	40	[274]	JMP      	0 17	; to 58
+	41	[276]	GETTABUP 	6 0 -7	; _ENV "RewardApi"
+	42	[276]	GETTABLE 	6 6 -8	; "AcquireRewardsLogic"
+	43	[276]	MOVE     	7 5
+	44	[276]	GETTABUP 	8 0 -9	; _ENV "EPropertySource"
+	45	[276]	GETTABLE 	8 8 -10	; "Give"
+	46	[276]	GETTABLE 	9 0 -11	; "m_activityDefinition"
+	47	[276]	GETTABLE 	9 9 -12	; "AcquireRewardBIType"
+	48	[276]	GETTABUP 	10 0 -13	; _ENV "EGameMode"
+	49	[276]	GETTABLE 	10 10 -14	; "Main"
+	50	[276]	GETTABUP 	11 0 -15	; _ENV "CacheItemType"
+	51	[276]	GETTABLE 	11 11 -16	; "Type2"
+	52	[276]	CALL     	6 6 1
+	53	[277]	GETTABUP 	6 0 -17	; _ENV "table"
+	54	[277]	GETTABLE 	6 6 -18	; "insert"
+	55	[277]	GETTABLE 	7 0 -4	; "m_rewardCache"
+	56	[277]	MOVE     	8 5
+	57	[277]	CALL     	6 3 1
+	58	[280]	SELF     	6 0 -1	; "GetToken"
+	59	[280]	CALL     	6 2 2
+	60	[281]	LOADK    	7 -23	; 0
+	61	[282]	LOADK    	8 -23	; 0
+	62	[283]	GETTABUP 	9 0 -24	; _ENV "ipairs"
+	63	[283]	MOVE     	10 2
+	64	[283]	CALL     	9 2 4
+	65	[283]	JMP      	0 10	; to 76
+	66	[284]	GETTABLE 	14 13 -3	; "score"
+	67	[284]	LE       	0 14 1
+	68	[284]	JMP      	0 1	; to 70
+	69	[285]	GETTABLE 	7 13 -25	; "stage"
+	70	[287]	GETTABLE 	14 13 -3	; "score"
+	71	[287]	LE       	0 14 6
+	72	[287]	JMP      	0 5	; to 78
+	73	[288]	GETTABLE 	8 13 -25	; "stage"
+	74	[288]	JMP      	0 1	; to 76
+	75	[289]	JMP      	0 2	; to 78
+	76	[283]	TFORCALL 	9 2
+	77	[283]	TFORLOOP 	11 -12	; to 66
+	78	[294]	EQ       	1 7 8
+	79	[294]	JMP      	0 34	; to 114
+	80	[295]	ADD      	9 7 -26	; - 1
+	81	[295]	MOVE     	10 8
+	82	[295]	LOADK    	11 -26	; 1
+	83	[295]	FORPREP  	9 29	; to 113
+	84	[296]	GETTABLE 	13 2 12
+	85	[296]	GETTABLE 	13 13 -27	; "reward"
+	86	[297]	SELF     	14 0 -28	; "LogActivity"
+	87	[297]	GETTABUP 	16 0 -29	; _ENV "EBIType"
+	88	[297]	GETTABLE 	16 16 -30	; "ActivityRankUp"
+	89	[297]	MOVE     	17 12
+	90	[297]	CALL     	14 4 1
+	91	[298]	GETTABUP 	14 0 -7	; _ENV "RewardApi"
+	92	[298]	GETTABLE 	14 14 -8	; "AcquireRewardsLogic"
+	93	[298]	MOVE     	15 13
+	94	[298]	GETTABUP 	16 0 -9	; _ENV "EPropertySource"
+	95	[298]	GETTABLE 	16 16 -10	; "Give"
+	96	[298]	GETTABLE 	17 0 -11	; "m_activityDefinition"
+	97	[298]	GETTABLE 	17 17 -12	; "AcquireRewardBIType"
+	98	[298]	GETTABUP 	18 0 -13	; _ENV "EGameMode"
+	99	[298]	GETTABLE 	18 18 -14	; "Main"
+	100	[298]	GETTABUP 	19 0 -15	; _ENV "CacheItemType"
+	101	[298]	GETTABLE 	19 19 -16	; "Type2"
+	102	[298]	CALL     	14 6 1
+	103	[299]	GETTABUP 	14 0 -17	; _ENV "table"
+	104	[299]	GETTABLE 	14 14 -18	; "insert"
+	105	[299]	GETTABLE 	15 0 -4	; "m_rewardCache"
+	106	[299]	MOVE     	16 13
+	107	[299]	CALL     	14 3 1
+	108	[300]	SELF     	14 0 -28	; "LogActivity"
+	109	[300]	GETTABUP 	16 0 -29	; _ENV "EBIType"
+	110	[300]	GETTABLE 	16 16 -31	; "ActivityGetRewards"
+	111	[300]	MOVE     	17 12
+	112	[300]	CALL     	14 4 1
+	113	[295]	FORLOOP  	9 -30	; to 84
+	114	[303]	RETURN   	0 1
+constants (31) for 0000018BCD3058F0:
+	1	"GetToken"
+	2	"GetStageRewards"
+	3	"score"
+	4	"m_rewardCache"
+	5	"GetTokenRewards"
+	6	"GetRound"
+	7	"RewardApi"
+	8	"AcquireRewardsLogic"
+	9	"EPropertySource"
+	10	"Give"
+	11	"m_activityDefinition"
+	12	"AcquireRewardBIType"
+	13	"EGameMode"
+	14	"Main"
+	15	"CacheItemType"
+	16	"Type2"
+	17	"table"
+	18	"insert"
+	19	"GetCurScore"
+	20	"m_robotAllData"
+	21	"TeamMate"
+	22	"CurScore"
+	23	0
+	24	"ipairs"
+	25	"stage"
+	26	1
+	27	"reward"
+	28	"LogActivity"
+	29	"EBIType"
+	30	"ActivityRankUp"
+	31	"ActivityGetRewards"
+locals (19) for 0000018BCD3058F0:
+	0	self	1	115
+	1	lastTokenNum	3	115
+	2	stageRewards	5	115
+	3	maxTokenNum	8	115
+	4	reward1	17	115
+	5	reward2	17	115
+	6	tokenNum	60	115
+	7	lastStage	61	115
+	8	stage	62	115
+	9	(for generator)	65	78
+	10	(for state)	65	78
+	11	(for control)	65	78
+	12	i	66	76
+	13	reward	66	76
+	14	(for index)	83	114
+	15	(for limit)	83	114
+	16	(for step)	83	114
+	17	i	84	113
+	18	reward	86	113
+upvalues (1) for 0000018BCD3058F0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:306,315> (20 instructions at 0000018BCD3050F0)
+2 params, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[307]	GETTABLE 	2 0 -1	; "m_rewardCache"
+	2	[307]	TEST     	2 0
+	3	[307]	JMP      	0 16	; to 20
+	4	[307]	GETTABUP 	2 0 -2	; _ENV "Table"
+	5	[307]	GETTABLE 	2 2 -3	; "IsEmpty"
+	6	[307]	GETTABLE 	3 0 -1	; "m_rewardCache"
+	7	[307]	CALL     	2 2 2
+	8	[307]	TEST     	2 1
+	9	[307]	JMP      	0 10	; to 20
+	10	[308]	TEST     	1 0
+	11	[308]	JMP      	0 6	; to 18
+	12	[309]	GETTABUP 	2 0 -4	; _ENV "RewardApi"
+	13	[309]	GETTABLE 	2 2 -5	; "AcquireRewardsInView"
+	14	[309]	GETTABLE 	3 0 -1	; "m_rewardCache"
+	15	[309]	NEWTABLE 	4 0 1
+	16	[310]	SETTABLE 	4 -6 -7	; "simpleCollect" true
+	17	[309]	CALL     	2 3 1
+	18	[313]	NEWTABLE 	2 0 0
+	19	[313]	SETTABLE 	0 -1 2	; "m_rewardCache" -
+	20	[315]	RETURN   	0 1
+constants (7) for 0000018BCD3050F0:
+	1	"m_rewardCache"
+	2	"Table"
+	3	"IsEmpty"
+	4	"RewardApi"
+	5	"AcquireRewardsInView"
+	6	"simpleCollect"
+	7	true
+locals (2) for 0000018BCD3050F0:
+	0	self	1	21
+	1	bRewardInView	1	21
+upvalues (1) for 0000018BCD3050F0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:318,480> (492 instructions at 0000018BCD305970)
+3 params, 26 slots, 1 upvalue, 44 locals, 59 constants, 0 functions
+	1	[319]	GETTABLE 	3 1 -1	; "StartingScore"
+	2	[319]	TEST     	3 1
+	3	[319]	JMP      	0 1	; to 5
+	4	[319]	LOADK    	3 -2	; 0
+	5	[319]	SETTABLE 	1 -1 3	; "StartingScore" -
+	6	[321]	EQ       	0 2 -2	; - 0
+	7	[321]	JMP      	0 4	; to 12
+	8	[322]	SETTABLE 	1 -3 -2	; "CurTime" 0
+	9	[323]	SETTABLE 	1 -4 -2	; "CurScore" 0
+	10	[324]	LOADK    	3 -2	; 0
+	11	[324]	RETURN   	3 2
+	12	[327]	GETTABLE 	3 1 -5	; "Speed"
+	13	[328]	GETTABUP 	4 0 -6	; _ENV "MathUtil"
+	14	[328]	GETTABLE 	4 4 -7	; "Clamp"
+	15	[328]	MOVE     	5 2
+	16	[328]	GETTABLE 	6 1 -5	; "Speed"
+	17	[328]	GETTABLE 	7 1 -5	; "Speed"
+	18	[328]	LEN      	7 7
+	19	[328]	GETTABLE 	6 6 7
+	20	[328]	GETTABLE 	6 6 -8	; "Time"
+	21	[328]	LOADK    	7 -9	; 1
+	22	[328]	CALL     	4 4 2
+	23	[328]	MOVE     	2 4
+	24	[329]	LOADK    	4 -9	; 1
+	25	[330]	LOADK    	5 -9	; 1
+	26	[330]	LEN      	6 3
+	27	[330]	LOADK    	7 -9	; 1
+	28	[330]	FORPREP  	5 16	; to 45
+	29	[331]	GETTABLE 	9 3 8
+	30	[331]	GETTABLE 	9 9 -8	; "Time"
+	31	[331]	LE       	0 2 9
+	32	[331]	JMP      	0 12	; to 45
+	33	[331]	LT       	0 -9 8	; 1 -
+	34	[331]	JMP      	0 5	; to 40
+	35	[331]	SUB      	9 8 -9	; - 1
+	36	[331]	GETTABLE 	9 3 9
+	37	[331]	GETTABLE 	9 9 -8	; "Time"
+	38	[331]	TEST     	9 1
+	39	[331]	JMP      	0 1	; to 41
+	40	[331]	LOADK    	9 -2	; 0
+	41	[331]	LT       	0 9 2
+	42	[331]	JMP      	0 2	; to 45
+	43	[332]	MOVE     	4 8
+	44	[332]	JMP      	0 1	; to 46
+	45	[330]	FORLOOP  	5 -17	; to 29
+	46	[337]	GETTABUP 	5 0 -10	; _ENV "GameConfig"
+	47	[337]	GETTABLE 	5 5 -11	; "IsTestMode"
+	48	[337]	CALL     	5 1 2
+	49	[337]	TEST     	5 0
+	50	[337]	JMP      	0 40	; to 91
+	51	[338]	GETTABLE 	5 0 -12	; "m_testInfo"
+	52	[338]	LOADK    	6 -13	; " -------------------\nID = "
+	53	[338]	GETTABLE 	7 1 -14	; "ID"
+	54	[338]	LOADK    	8 -15	; "\n"
+	55	[338]	CONCAT   	5 5 8
+	56	[338]	SETTABLE 	0 -12 5	; "m_testInfo" -
+	57	[339]	GETTABUP 	5 0 -16	; _ENV "ipairs"
+	58	[339]	MOVE     	6 3
+	59	[339]	CALL     	5 2 4
+	60	[339]	JMP      	0 24	; to 85
+	61	[340]	EQ       	0 8 4
+	62	[340]	JMP      	0 4	; to 67
+	63	[341]	GETTABLE 	10 0 -12	; "m_testInfo"
+	64	[341]	LOADK    	11 -17	; "["
+	65	[341]	CONCAT   	10 10 11
+	66	[341]	SETTABLE 	0 -12 10	; "m_testInfo" -
+	67	[343]	GETTABLE 	10 0 -12	; "m_testInfo"
+	68	[343]	GETTABLE 	11 9 -8	; "Time"
+	69	[343]	LOADK    	12 -18	; "-"
+	70	[343]	GETTABLE 	13 9 -19	; "Score"
+	71	[343]	LOADK    	14 -18	; "-"
+	72	[343]	GETTABLE 	15 9 -20	; "Type"
+	73	[343]	CONCAT   	10 10 15
+	74	[343]	SETTABLE 	0 -12 10	; "m_testInfo" -
+	75	[344]	EQ       	0 8 4
+	76	[344]	JMP      	0 4	; to 81
+	77	[345]	GETTABLE 	10 0 -12	; "m_testInfo"
+	78	[345]	LOADK    	11 -21	; "]"
+	79	[345]	CONCAT   	10 10 11
+	80	[345]	SETTABLE 	0 -12 10	; "m_testInfo" -
+	81	[347]	GETTABLE 	10 0 -12	; "m_testInfo"
+	82	[347]	LOADK    	11 -22	; " / "
+	83	[347]	CONCAT   	10 10 11
+	84	[347]	SETTABLE 	0 -12 10	; "m_testInfo" -
+	85	[339]	TFORCALL 	5 2
+	86	[339]	TFORLOOP 	7 -26	; to 61
+	87	[349]	GETTABLE 	5 0 -12	; "m_testInfo"
+	88	[349]	LOADK    	6 -15	; "\n"
+	89	[349]	CONCAT   	5 5 6
+	90	[349]	SETTABLE 	0 -12 5	; "m_testInfo" -
+	91	[352]	GETTABLE 	5 3 4
+	92	[352]	GETTABLE 	5 5 -19	; "Score"
+	93	[353]	GETTABLE 	6 3 4
+	94	[353]	GETTABLE 	6 6 -8	; "Time"
+	95	[354]	LT       	0 -9 4	; 1 -
+	96	[354]	JMP      	0 5	; to 102
+	97	[354]	SUB      	7 4 -9	; - 1
+	98	[354]	GETTABLE 	7 3 7
+	99	[354]	GETTABLE 	7 7 -19	; "Score"
+	100	[354]	TEST     	7 1
+	101	[354]	JMP      	0 1	; to 103
+	102	[354]	GETTABLE 	7 1 -1	; "StartingScore"
+	103	[355]	LT       	0 -9 4	; 1 -
+	104	[355]	JMP      	0 5	; to 110
+	105	[355]	SUB      	8 4 -9	; - 1
+	106	[355]	GETTABLE 	8 3 8
+	107	[355]	GETTABLE 	8 8 -8	; "Time"
+	108	[355]	TEST     	8 1
+	109	[355]	JMP      	0 1	; to 111
+	110	[355]	LOADK    	8 -2	; 0
+	111	[356]	SUB      	9 2 8
+	112	[357]	SUB      	10 6 8
+	113	[358]	SUB      	11 5 7
+	114	[359]	GETTABUP 	12 0 -10	; _ENV "GameConfig"
+	115	[359]	GETTABLE 	12 12 -11	; "IsTestMode"
+	116	[359]	CALL     	12 1 2
+	117	[359]	TEST     	12 0
+	118	[359]	JMP      	0 26	; to 145
+	119	[360]	GETTABLE 	12 0 -12	; "m_testInfo"
+	120	[360]	LOADK    	13 -23	; "\229\136\134\230\149\176\229\140\186\233\151\180:"
+	121	[360]	MOVE     	14 7
+	122	[360]	LOADK    	15 -18	; "-"
+	123	[360]	MOVE     	16 5
+	124	[360]	LOADK    	17 -24	; ", \230\151\182\233\151\180\229\140\186\233\151\180 "
+	125	[360]	MOVE     	18 8
+	126	[360]	LOADK    	19 -18	; "-"
+	127	[360]	MOVE     	20 6
+	128	[360]	CONCAT   	12 12 20
+	129	[360]	SETTABLE 	0 -12 12	; "m_testInfo" -
+	130	[361]	GETTABLE 	12 0 -12	; "m_testInfo"
+	131	[361]	LOADK    	13 -25	; ", \231\171\158\232\181\155\229\188\128\229\167\139\229\144\142\232\174\161\230\151\182: "
+	132	[361]	MOVE     	14 2
+	133	[361]	LOADK    	15 -26	; ", \231\155\184\229\175\185\230\156\172\233\152\182\230\174\181\229\188\128\229\167\139\232\174\161\230\151\182: "
+	134	[361]	MOVE     	16 9
+	135	[361]	CONCAT   	12 12 16
+	136	[361]	SETTABLE 	0 -12 12	; "m_testInfo" -
+	137	[362]	GETTABLE 	12 0 -12	; "m_testInfo"
+	138	[362]	LOADK    	13 -27	; ", \229\136\134\230\149\176\232\183\168\229\186\166: "
+	139	[362]	MOVE     	14 11
+	140	[362]	LOADK    	15 -28	; ", \230\151\182\233\151\180\232\183\168\229\186\166: "
+	141	[362]	MOVE     	16 10
+	142	[362]	LOADK    	17 -15	; "\n"
+	143	[362]	CONCAT   	12 12 17
+	144	[362]	SETTABLE 	0 -12 12	; "m_testInfo" -
+	145	[365]	GETTABLE 	12 1 -4	; "CurScore"
+	146	[365]	TEST     	12 1
+	147	[365]	JMP      	0 1	; to 149
+	148	[365]	LOADK    	12 -2	; 0
+	149	[366]	GETTABLE 	13 1 -4	; "CurScore"
+	150	[366]	TEST     	13 1
+	151	[366]	JMP      	0 1	; to 153
+	152	[366]	LOADK    	13 -2	; 0
+	153	[367]	GETTABLE 	14 1 -3	; "CurTime"
+	154	[367]	TEST     	14 1
+	155	[367]	JMP      	0 1	; to 157
+	156	[367]	LOADK    	14 -2	; 0
+	157	[368]	GETTABLE 	15 1 -4	; "CurScore"
+	158	[368]	TEST     	15 0
+	159	[368]	JMP      	0 15	; to 175
+	160	[368]	GETTABLE 	15 1 -4	; "CurScore"
+	161	[368]	LT       	0 15 7
+	162	[368]	JMP      	0 12	; to 175
+	163	[369]	MOVE     	12 7
+	164	[370]	MOVE     	13 7
+	165	[371]	MOVE     	14 8
+	166	[372]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	167	[372]	GETTABLE 	15 15 -11	; "IsTestMode"
+	168	[372]	CALL     	15 1 2
+	169	[372]	TEST     	15 0
+	170	[372]	JMP      	0 4	; to 175
+	171	[373]	GETTABLE 	15 0 -12	; "m_testInfo"
+	172	[373]	LOADK    	16 -29	; "\230\151\182\233\151\180\228\184\142\229\136\134\230\149\176\229\183\178\230\160\161\230\173\163, "
+	173	[373]	CONCAT   	15 15 16
+	174	[373]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	175	[376]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	176	[376]	GETTABLE 	15 15 -11	; "IsTestMode"
+	177	[376]	CALL     	15 1 2
+	178	[376]	TEST     	15 0
+	179	[376]	JMP      	0 8	; to 188
+	180	[377]	GETTABLE 	15 0 -12	; "m_testInfo"
+	181	[377]	LOADK    	16 -30	; "\228\184\138\230\172\161\232\174\176\229\189\149\231\154\132\230\151\182\233\151\180&\229\136\134\230\149\176: "
+	182	[377]	MOVE     	17 14
+	183	[377]	LOADK    	18 -31	; " "
+	184	[377]	MOVE     	19 13
+	185	[377]	LOADK    	20 -15	; "\n"
+	186	[377]	CONCAT   	15 15 20
+	187	[377]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	188	[379]	GETTABLE 	15 3 4
+	189	[379]	GETTABLE 	15 15 -20	; "Type"
+	190	[379]	EQ       	0 15 -2	; - 0
+	191	[379]	JMP      	0 38	; to 230
+	192	[380]	GETTABUP 	15 0 -32	; _ENV "EaseUtil"
+	193	[380]	GETTABLE 	15 15 -33	; "GetInterpolatedValue"
+	194	[380]	MOVE     	16 7
+	195	[380]	MOVE     	17 5
+	196	[380]	MOVE     	18 10
+	197	[380]	MOVE     	19 9
+	198	[380]	GETTABUP 	20 0 -34	; _ENV "Ease"
+	199	[380]	GETTABLE 	20 20 -35	; "InOutQuart"
+	200	[380]	CALL     	15 6 2
+	201	[381]	GETTABUP 	16 0 -36	; _ENV "math"
+	202	[381]	GETTABLE 	16 16 -37	; "ceil"
+	203	[381]	MOVE     	17 15
+	204	[381]	CALL     	16 2 2
+	205	[381]	MOVE     	12 16
+	206	[382]	GETTABUP 	16 0 -10	; _ENV "GameConfig"
+	207	[382]	GETTABLE 	16 16 -11	; "IsTestMode"
+	208	[382]	CALL     	16 1 2
+	209	[382]	TEST     	16 0
+	210	[382]	JMP      	0 266	; to 477
+	211	[383]	GETTABLE 	16 0 -12	; "m_testInfo"
+	212	[383]	LOADK    	17 -38	; "InOutQuart \229\136\134\230\149\176\229\140\186\233\151\180\239\188\154"
+	213	[383]	MOVE     	18 7
+	214	[383]	LOADK    	19 -18	; "-"
+	215	[383]	MOVE     	20 5
+	216	[383]	LOADK    	21 -39	; ", \230\151\182\233\151\180\229\140\186\233\151\180: "
+	217	[383]	MOVE     	22 10
+	218	[383]	LOADK    	23 -40	; ", \229\189\147\229\137\141\230\151\182\233\151\180: "
+	219	[383]	MOVE     	24 9
+	220	[383]	LOADK    	25 -15	; "\n"
+	221	[383]	CONCAT   	16 16 25
+	222	[383]	SETTABLE 	0 -12 16	; "m_testInfo" -
+	223	[384]	GETTABLE 	16 0 -12	; "m_testInfo"
+	224	[384]	LOADK    	17 -41	; "\229\136\134\230\149\176\231\178\190\231\161\174\229\128\188: "
+	225	[384]	MOVE     	18 15
+	226	[384]	LOADK    	19 -15	; "\n"
+	227	[384]	CONCAT   	16 16 19
+	228	[384]	SETTABLE 	0 -12 16	; "m_testInfo" -
+	229	[385]	JMP      	0 247	; to 477
+	230	[386]	GETTABLE 	15 3 4
+	231	[386]	GETTABLE 	15 15 -20	; "Type"
+	232	[386]	EQ       	0 15 -42	; - 2
+	233	[386]	JMP      	0 19	; to 253
+	234	[387]	EQ       	0 9 10
+	235	[387]	JMP      	0 2	; to 238
+	236	[387]	TESTSET  	12 5 1
+	237	[387]	JMP      	0 1	; to 239
+	238	[387]	MOVE     	12 7
+	239	[388]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	240	[388]	GETTABLE 	15 15 -11	; "IsTestMode"
+	241	[388]	CALL     	15 1 2
+	242	[388]	TEST     	15 0
+	243	[388]	JMP      	0 233	; to 477
+	244	[389]	GETTABLE 	15 0 -12	; "m_testInfo"
+	245	[389]	LOADK    	16 -43	; "\230\156\128\229\144\142\228\184\128\231\167\146\229\138\160\229\136\134 \230\156\128\229\144\142\228\184\128\231\167\146\239\188\154"
+	246	[389]	MOVE     	17 6
+	247	[389]	LOADK    	18 -44	; "\239\188\140 \229\189\147\229\137\141\231\167\146\239\188\154"
+	248	[389]	MOVE     	19 2
+	249	[389]	LOADK    	20 -15	; "\n"
+	250	[389]	CONCAT   	15 15 20
+	251	[389]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	252	[390]	JMP      	0 224	; to 477
+	253	[391]	GETTABLE 	15 3 4
+	254	[391]	GETTABLE 	15 15 -20	; "Type"
+	255	[391]	EQ       	0 15 -9	; - 1
+	256	[391]	JMP      	0 220	; to 477
+	257	[393]	MUL      	15 10 -42	; - 2
+	258	[393]	LT       	0 15 11
+	259	[393]	JMP      	0 72	; to 332
+	260	[394]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	261	[394]	GETTABLE 	15 15 -11	; "IsTestMode"
+	262	[394]	CALL     	15 1 2
+	263	[394]	TEST     	15 0
+	264	[394]	JMP      	0 5	; to 270
+	265	[395]	GETTABLE 	15 0 -12	; "m_testInfo"
+	266	[395]	LOADK    	16 -45	; "b > 2a"
+	267	[395]	LOADK    	17 -15	; "\n"
+	268	[395]	CONCAT   	15 15 17
+	269	[395]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	270	[397]	SUB      	15 13 7
+	271	[397]	SUB      	16 14 8
+	272	[397]	LT       	0 16 15
+	273	[397]	JMP      	0 15	; to 289
+	274	[398]	ADD      	15 13 2
+	275	[398]	SUB      	12 15 14
+	276	[399]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	277	[399]	GETTABLE 	15 15 -11	; "IsTestMode"
+	278	[399]	CALL     	15 1 2
+	279	[399]	TEST     	15 0
+	280	[399]	JMP      	0 196	; to 477
+	281	[400]	GETTABLE 	15 0 -12	; "m_testInfo"
+	282	[400]	LOADK    	16 -46	; "\231\170\129\229\143\152\229\136\134\230\149\176"
+	283	[400]	SUB      	17 11 10
+	284	[400]	ADD      	17 17 -9	; - 1
+	285	[400]	LOADK    	18 -47	; "\229\183\178\229\138\160\232\191\135\239\188\140\230\142\165\228\184\139\230\157\165\230\175\143\231\167\146\229\138\1601\229\136\134\n"
+	286	[400]	CONCAT   	15 15 18
+	287	[400]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	288	[401]	JMP      	0 188	; to 477
+	289	[403]	GETTABUP 	15 0 -6	; _ENV "MathUtil"
+	290	[403]	GETTABLE 	15 15 -48	; "RandomN"
+	291	[403]	SUB      	16 6 14
+	292	[403]	LOADK    	17 -9	; 1
+	293	[403]	CALL     	15 3 2
+	294	[404]	GETTABUP 	16 0 -10	; _ENV "GameConfig"
+	295	[404]	GETTABLE 	16 16 -11	; "IsTestMode"
+	296	[404]	CALL     	16 1 2
+	297	[404]	TEST     	16 0
+	298	[404]	JMP      	0 6	; to 305
+	299	[405]	GETTABLE 	16 0 -12	; "m_testInfo"
+	300	[405]	LOADK    	17 -49	; "trying to find 1 abnormal score out of "
+	301	[405]	SUB      	18 6 14
+	302	[405]	LOADK    	19 -15	; "\n"
+	303	[405]	CONCAT   	16 16 19
+	304	[405]	SETTABLE 	0 -12 16	; "m_testInfo" -
+	305	[407]	LOADK    	16 -9	; 1
+	306	[407]	SUB      	17 2 14
+	307	[407]	LOADK    	18 -9	; 1
+	308	[407]	FORPREP  	16 21	; to 330
+	309	[408]	GETTABUP 	20 0 -50	; _ENV "Table"
+	310	[408]	GETTABLE 	20 20 -51	; "Contain"
+	311	[408]	MOVE     	21 15
+	312	[408]	MOVE     	22 19
+	313	[408]	CALL     	20 3 2
+	314	[408]	TEST     	20 0
+	315	[408]	JMP      	0 13	; to 329
+	316	[409]	SUB      	20 11 10
+	317	[409]	ADD      	20 20 -9	; - 1
+	318	[409]	ADD      	12 12 20
+	319	[410]	GETTABUP 	20 0 -10	; _ENV "GameConfig"
+	320	[410]	GETTABLE 	20 20 -11	; "IsTestMode"
+	321	[410]	CALL     	20 1 2
+	322	[410]	TEST     	20 0
+	323	[410]	JMP      	0 6	; to 330
+	324	[411]	GETTABLE 	20 0 -12	; "m_testInfo"
+	325	[411]	LOADK    	21 -52	; "found 1\n"
+	326	[411]	CONCAT   	20 20 21
+	327	[411]	SETTABLE 	0 -12 20	; "m_testInfo" -
+	328	[412]	JMP      	0 1	; to 330
+	329	[414]	ADD      	12 12 -9	; - 1
+	330	[407]	FORLOOP  	16 -22	; to 309
+	331	[417]	JMP      	0 145	; to 477
+	332	[418]	LE       	0 10 11
+	333	[418]	JMP      	0 72	; to 406
+	334	[419]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	335	[419]	GETTABLE 	15 15 -11	; "IsTestMode"
+	336	[419]	CALL     	15 1 2
+	337	[419]	TEST     	15 0
+	338	[419]	JMP      	0 5	; to 344
+	339	[420]	GETTABLE 	15 0 -12	; "m_testInfo"
+	340	[420]	LOADK    	16 -53	; "2a >= b > a"
+	341	[420]	LOADK    	17 -15	; "\n"
+	342	[420]	CONCAT   	15 15 17
+	343	[420]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	344	[422]	SUB      	15 13 7
+	345	[422]	SUB      	16 14 8
+	346	[422]	SUB      	15 15 16
+	347	[423]	SUB      	16 11 10
+	348	[423]	SUB      	16 16 15
+	349	[424]	LE       	0 16 -2	; - 0
+	350	[424]	JMP      	0 12	; to 363
+	351	[425]	ADD      	17 13 2
+	352	[425]	SUB      	12 17 14
+	353	[426]	GETTABUP 	17 0 -10	; _ENV "GameConfig"
+	354	[426]	GETTABLE 	17 17 -11	; "IsTestMode"
+	355	[426]	CALL     	17 1 2
+	356	[426]	TEST     	17 0
+	357	[426]	JMP      	0 119	; to 477
+	358	[427]	GETTABLE 	17 0 -12	; "m_testInfo"
+	359	[427]	LOADK    	18 -54	; "\230\137\128\230\156\1372\229\136\134\229\183\178\230\183\187\229\138\160\232\191\135.\n"
+	360	[427]	CONCAT   	17 17 18
+	361	[427]	SETTABLE 	0 -12 17	; "m_testInfo" -
+	362	[428]	JMP      	0 114	; to 477
+	363	[430]	GETTABUP 	17 0 -6	; _ENV "MathUtil"
+	364	[430]	GETTABLE 	17 17 -48	; "RandomN"
+	365	[430]	SUB      	18 6 14
+	366	[430]	MOVE     	19 16
+	367	[430]	CALL     	17 3 2
+	368	[431]	GETTABUP 	18 0 -10	; _ENV "GameConfig"
+	369	[431]	GETTABLE 	18 18 -11	; "IsTestMode"
+	370	[431]	CALL     	18 1 2
+	371	[431]	TEST     	18 0
+	372	[431]	JMP      	0 8	; to 381
+	373	[432]	GETTABLE 	18 0 -12	; "m_testInfo"
+	374	[432]	LOADK    	19 -55	; "trying to find "
+	375	[432]	MOVE     	20 16
+	376	[432]	LOADK    	21 -56	; " abnormal score out of "
+	377	[432]	SUB      	22 6 14
+	378	[432]	LOADK    	23 -15	; "\n"
+	379	[432]	CONCAT   	18 18 23
+	380	[432]	SETTABLE 	0 -12 18	; "m_testInfo" -
+	381	[434]	LOADK    	18 -9	; 1
+	382	[434]	SUB      	19 2 14
+	383	[434]	LOADK    	20 -9	; 1
+	384	[434]	FORPREP  	18 19	; to 404
+	385	[435]	GETTABUP 	22 0 -50	; _ENV "Table"
+	386	[435]	GETTABLE 	22 22 -51	; "Contain"
+	387	[435]	MOVE     	23 17
+	388	[435]	MOVE     	24 21
+	389	[435]	CALL     	22 3 2
+	390	[435]	TEST     	22 0
+	391	[435]	JMP      	0 11	; to 403
+	392	[436]	ADD      	12 12 -42	; - 2
+	393	[437]	GETTABUP 	22 0 -10	; _ENV "GameConfig"
+	394	[437]	GETTABLE 	22 22 -11	; "IsTestMode"
+	395	[437]	CALL     	22 1 2
+	396	[437]	TEST     	22 0
+	397	[437]	JMP      	0 6	; to 404
+	398	[438]	GETTABLE 	22 0 -12	; "m_testInfo"
+	399	[438]	LOADK    	23 -52	; "found 1\n"
+	400	[438]	CONCAT   	22 22 23
+	401	[438]	SETTABLE 	0 -12 22	; "m_testInfo" -
+	402	[439]	JMP      	0 1	; to 404
+	403	[441]	ADD      	12 12 -9	; - 1
+	404	[434]	FORLOOP  	18 -20	; to 385
+	405	[444]	JMP      	0 71	; to 477
+	406	[447]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	407	[447]	GETTABLE 	15 15 -11	; "IsTestMode"
+	408	[447]	CALL     	15 1 2
+	409	[447]	TEST     	15 0
+	410	[447]	JMP      	0 5	; to 416
+	411	[448]	GETTABLE 	15 0 -12	; "m_testInfo"
+	412	[448]	LOADK    	16 -57	; "b < a"
+	413	[448]	LOADK    	17 -15	; "\n"
+	414	[448]	CONCAT   	15 15 17
+	415	[448]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	416	[450]	SUB      	15 14 8
+	417	[450]	SUB      	16 13 7
+	418	[450]	SUB      	15 15 16
+	419	[451]	SUB      	16 10 11
+	420	[451]	SUB      	16 16 15
+	421	[452]	LE       	0 16 -2	; - 0
+	422	[452]	JMP      	0 12	; to 435
+	423	[453]	ADD      	17 13 2
+	424	[453]	SUB      	12 17 14
+	425	[454]	GETTABUP 	17 0 -10	; _ENV "GameConfig"
+	426	[454]	GETTABLE 	17 17 -11	; "IsTestMode"
+	427	[454]	CALL     	17 1 2
+	428	[454]	TEST     	17 0
+	429	[454]	JMP      	0 47	; to 477
+	430	[455]	GETTABLE 	17 0 -12	; "m_testInfo"
+	431	[455]	LOADK    	18 -58	; "\230\137\128\230\156\1370\229\136\134\229\183\178\229\138\160\232\191\135.\n"
+	432	[455]	CONCAT   	17 17 18
+	433	[455]	SETTABLE 	0 -12 17	; "m_testInfo" -
+	434	[456]	JMP      	0 42	; to 477
+	435	[458]	GETTABUP 	17 0 -6	; _ENV "MathUtil"
+	436	[458]	GETTABLE 	17 17 -48	; "RandomN"
+	437	[458]	SUB      	18 6 14
+	438	[458]	MOVE     	19 16
+	439	[458]	CALL     	17 3 2
+	440	[459]	GETTABUP 	18 0 -10	; _ENV "GameConfig"
+	441	[459]	GETTABLE 	18 18 -11	; "IsTestMode"
+	442	[459]	CALL     	18 1 2
+	443	[459]	TEST     	18 0
+	444	[459]	JMP      	0 8	; to 453
+	445	[460]	GETTABLE 	18 0 -12	; "m_testInfo"
+	446	[460]	LOADK    	19 -55	; "trying to find "
+	447	[460]	MOVE     	20 16
+	448	[460]	LOADK    	21 -56	; " abnormal score out of "
+	449	[460]	SUB      	22 6 14
+	450	[460]	LOADK    	23 -15	; "\n"
+	451	[460]	CONCAT   	18 18 23
+	452	[460]	SETTABLE 	0 -12 18	; "m_testInfo" -
+	453	[462]	LOADK    	18 -9	; 1
+	454	[462]	SUB      	19 2 14
+	455	[462]	LOADK    	20 -9	; 1
+	456	[462]	FORPREP  	18 19	; to 476
+	457	[463]	GETTABUP 	22 0 -50	; _ENV "Table"
+	458	[463]	GETTABLE 	22 22 -51	; "Contain"
+	459	[463]	MOVE     	23 17
+	460	[463]	MOVE     	24 21
+	461	[463]	CALL     	22 3 2
+	462	[463]	TEST     	22 0
+	463	[463]	JMP      	0 11	; to 475
+	464	[464]	ADD      	12 12 -2	; - 0
+	465	[465]	GETTABUP 	22 0 -10	; _ENV "GameConfig"
+	466	[465]	GETTABLE 	22 22 -11	; "IsTestMode"
+	467	[465]	CALL     	22 1 2
+	468	[465]	TEST     	22 0
+	469	[465]	JMP      	0 6	; to 476
+	470	[466]	GETTABLE 	22 0 -12	; "m_testInfo"
+	471	[466]	LOADK    	23 -52	; "found 1\n"
+	472	[466]	CONCAT   	22 22 23
+	473	[466]	SETTABLE 	0 -12 22	; "m_testInfo" -
+	474	[467]	JMP      	0 1	; to 476
+	475	[469]	ADD      	12 12 -9	; - 1
+	476	[462]	FORLOOP  	18 -20	; to 457
+	477	[475]	SETTABLE 	1 -3 2	; "CurTime" -
+	478	[476]	GETTABUP 	15 0 -10	; _ENV "GameConfig"
+	479	[476]	GETTABLE 	15 15 -11	; "IsTestMode"
+	480	[476]	CALL     	15 1 2
+	481	[476]	TEST     	15 0
+	482	[476]	JMP      	0 8	; to 491
+	483	[477]	GETTABLE 	15 0 -12	; "m_testInfo"
+	484	[477]	LOADK    	16 -59	; "\229\189\147\229\137\141\230\151\182\233\151\180&\229\136\134\230\149\176: "
+	485	[477]	GETTABLE 	17 1 -3	; "CurTime"
+	486	[477]	LOADK    	18 -31	; " "
+	487	[477]	MOVE     	19 12
+	488	[477]	LOADK    	20 -15	; "\n"
+	489	[477]	CONCAT   	15 15 20
+	490	[477]	SETTABLE 	0 -12 15	; "m_testInfo" -
+	491	[479]	RETURN   	12 2
+	492	[480]	RETURN   	0 1
+constants (59) for 0000018BCD305970:
+	1	"StartingScore"
+	2	0
+	3	"CurTime"
+	4	"CurScore"
+	5	"Speed"
+	6	"MathUtil"
+	7	"Clamp"
+	8	"Time"
+	9	1
+	10	"GameConfig"
+	11	"IsTestMode"
+	12	"m_testInfo"
+	13	" -------------------\nID = "
+	14	"ID"
+	15	"\n"
+	16	"ipairs"
+	17	"["
+	18	"-"
+	19	"Score"
+	20	"Type"
+	21	"]"
+	22	" / "
+	23	"\229\136\134\230\149\176\229\140\186\233\151\180:"
+	24	", \230\151\182\233\151\180\229\140\186\233\151\180 "
+	25	", \231\171\158\232\181\155\229\188\128\229\167\139\229\144\142\232\174\161\230\151\182: "
+	26	", \231\155\184\229\175\185\230\156\172\233\152\182\230\174\181\229\188\128\229\167\139\232\174\161\230\151\182: "
+	27	", \229\136\134\230\149\176\232\183\168\229\186\166: "
+	28	", \230\151\182\233\151\180\232\183\168\229\186\166: "
+	29	"\230\151\182\233\151\180\228\184\142\229\136\134\230\149\176\229\183\178\230\160\161\230\173\163, "
+	30	"\228\184\138\230\172\161\232\174\176\229\189\149\231\154\132\230\151\182\233\151\180&\229\136\134\230\149\176: "
+	31	" "
+	32	"EaseUtil"
+	33	"GetInterpolatedValue"
+	34	"Ease"
+	35	"InOutQuart"
+	36	"math"
+	37	"ceil"
+	38	"InOutQuart \229\136\134\230\149\176\229\140\186\233\151\180\239\188\154"
+	39	", \230\151\182\233\151\180\229\140\186\233\151\180: "
+	40	", \229\189\147\229\137\141\230\151\182\233\151\180: "
+	41	"\229\136\134\230\149\176\231\178\190\231\161\174\229\128\188: "
+	42	2
+	43	"\230\156\128\229\144\142\228\184\128\231\167\146\229\138\160\229\136\134 \230\156\128\229\144\142\228\184\128\231\167\146\239\188\154"
+	44	"\239\188\140 \229\189\147\229\137\141\231\167\146\239\188\154"
+	45	"b > 2a"
+	46	"\231\170\129\229\143\152\229\136\134\230\149\176"
+	47	"\229\183\178\229\138\160\232\191\135\239\188\140\230\142\165\228\184\139\230\157\165\230\175\143\231\167\146\229\138\1601\229\136\134\n"
+	48	"RandomN"
+	49	"trying to find 1 abnormal score out of "
+	50	"Table"
+	51	"Contain"
+	52	"found 1\n"
+	53	"2a >= b > a"
+	54	"\230\137\128\230\156\1372\229\136\134\229\183\178\230\183\187\229\138\160\232\191\135.\n"
+	55	"trying to find "
+	56	" abnormal score out of "
+	57	"b < a"
+	58	"\230\137\128\230\156\1370\229\136\134\229\183\178\229\138\160\232\191\135.\n"
+	59	"\229\189\147\229\137\141\230\151\182\233\151\180&\229\136\134\230\149\176: "
+locals (44) for 0000018BCD305970:
+	0	self	1	493
+	1	data	1	493
+	2	relativeT	1	493
+	3	speed	13	493
+	4	curStage	25	493
+	5	(for index)	28	46
+	6	(for limit)	28	46
+	7	(for step)	28	46
+	8	i	29	45
+	9	(for generator)	60	87
+	10	(for state)	60	87
+	11	(for control)	60	87
+	12	i	61	85
+	13	sp	61	85
+	14	endScore	93	493
+	15	endTime	95	493
+	16	startScore	103	493
+	17	startTime	111	493
+	18	deltaT	112	493
+	19	spanT	113	493
+	20	spanS	114	493
+	21	res	149	493
+	22	lastS	153	493
+	23	lastT	157	493
+	24	temp	201	229
+	25	randomList	294	331
+	26	(for index)	308	331
+	27	(for limit)	308	331
+	28	(for step)	308	331
+	29	i	309	330
+	30	already2	347	405
+	31	left2	349	405
+	32	randomList	368	405
+	33	(for index)	384	405
+	34	(for limit)	384	405
+	35	(for step)	384	405
+	36	i	385	404
+	37	already0	419	477
+	38	left0	421	477
+	39	randomList	440	477
+	40	(for index)	456	477
+	41	(for limit)	456	477
+	42	(for step)	456	477
+	43	i	457	476
+upvalues (1) for 0000018BCD305970:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:483,572> (343 instructions at 0000018BCD305470)
+2 params, 12 slots, 1 upvalue, 8 locals, 64 constants, 0 functions
+	1	[484]	SELF     	2 0 -1	; "GetCurState"
+	2	[484]	CALL     	2 2 2
+	3	[484]	GETTABUP 	3 0 -2	; _ENV "TeamActivityState"
+	4	[484]	GETTABLE 	3 3 -3	; "OnGoing"
+	5	[484]	EQ       	0 2 3
+	6	[484]	JMP      	0 336	; to 343
+	7	[486]	SELF     	2 0 -4	; "GetCurRoundStartTime"
+	8	[486]	CALL     	2 2 2
+	9	[487]	GETTABUP 	3 0 -5	; _ENV "math"
+	10	[487]	GETTABLE 	3 3 -6	; "ceil"
+	11	[487]	GETTABUP 	4 0 -7	; _ENV "GM"
+	12	[487]	GETTABLE 	4 4 -8	; "GameModel"
+	13	[487]	SELF     	4 4 -9	; "GetServerTime"
+	14	[487]	CALL     	4 2 2
+	15	[487]	SUB      	4 4 2
+	16	[487]	CALL     	3 2 2
+	17	[489]	TEST     	1 0
+	18	[489]	JMP      	0 14	; to 33
+	19	[489]	GETTABLE 	4 1 -10	; "TokenScore"
+	20	[489]	EQ       	0 4 -11	; - nil
+	21	[489]	JMP      	0 11	; to 33
+	22	[489]	GETTABLE 	4 0 -12	; "m_robotAllData"
+	23	[489]	GETTABLE 	4 4 -13	; "TeamMate"
+	24	[489]	GETTABLE 	4 4 -14	; "CurTime"
+	25	[489]	TEST     	4 0
+	26	[489]	JMP      	0 6	; to 33
+	27	[489]	GETTABLE 	4 0 -12	; "m_robotAllData"
+	28	[489]	GETTABLE 	4 4 -13	; "TeamMate"
+	29	[489]	GETTABLE 	4 4 -14	; "CurTime"
+	30	[489]	EQ       	0 4 3
+	31	[489]	JMP      	0 1	; to 33
+	32	[490]	RETURN   	0 1
+	33	[492]	GETTABUP 	4 0 -15	; _ENV "GameConfig"
+	34	[492]	GETTABLE 	4 4 -16	; "IsTestMode"
+	35	[492]	CALL     	4 1 2
+	36	[492]	TEST     	4 0
+	37	[492]	JMP      	0 5	; to 43
+	38	[493]	LOADK    	4 -18	; "[2v2]"
+	39	[493]	MOVE     	5 3
+	40	[493]	LOADK    	6 -19	; "\n"
+	41	[493]	CONCAT   	4 4 6
+	42	[493]	SETTABLE 	0 -17 4	; "m_testInfo" -
+	43	[496]	SELF     	4 0 -20	; "GetCurScore"
+	44	[496]	CALL     	4 2 2
+	45	[497]	SELF     	5 0 -21	; "GetPopMainWindowWhenConnect"
+	46	[497]	CALL     	5 2 2
+	47	[497]	TEST     	5 0
+	48	[497]	JMP      	0 8	; to 57
+	49	[497]	GETTABLE 	5 0 -12	; "m_robotAllData"
+	50	[497]	GETTABLE 	5 5 -13	; "TeamMate"
+	51	[497]	GETTABLE 	5 5 -22	; "CurScore"
+	52	[497]	TEST     	5 1
+	53	[497]	JMP      	0 12	; to 66
+	54	[497]	LOADK    	5 -23	; 0
+	55	[497]	TEST     	5 1
+	56	[497]	JMP      	0 9	; to 66
+	57	[498]	SELF     	5 0 -24	; "GetTimeScore"
+	58	[498]	GETTABLE 	7 0 -12	; "m_robotAllData"
+	59	[498]	GETTABLE 	7 7 -13	; "TeamMate"
+	60	[498]	GETTABUP 	8 0 -7	; _ENV "GM"
+	61	[498]	GETTABLE 	8 8 -8	; "GameModel"
+	62	[498]	SELF     	8 8 -9	; "GetServerTime"
+	63	[498]	CALL     	8 2 2
+	64	[498]	SUB      	8 8 2
+	65	[498]	CALL     	5 4 2
+	66	[499]	TEST     	1 1
+	67	[499]	JMP      	0 2	; to 70
+	68	[499]	NEWTABLE 	6 0 0
+	69	[499]	MOVE     	1 6
+	70	[500]	GETTABLE 	6 1 -10	; "TokenScore"
+	71	[500]	TEST     	6 1
+	72	[500]	JMP      	0 1	; to 74
+	73	[500]	LOADK    	6 -23	; 0
+	74	[500]	SETTABLE 	1 -10 6	; "TokenScore" -
+	75	[501]	GETTABLE 	6 0 -12	; "m_robotAllData"
+	76	[501]	GETTABLE 	6 6 -13	; "TeamMate"
+	77	[501]	GETTABLE 	6 6 -22	; "CurScore"
+	78	[501]	TEST     	6 1
+	79	[501]	JMP      	0 1	; to 81
+	80	[501]	LOADK    	6 -23	; 0
+	81	[501]	SUB      	6 5 6
+	82	[501]	SETTABLE 	1 -25 6	; "TeamMateScoreAddition" -
+	83	[502]	SETTABLE 	1 -26 -23	; "RivalScoreAddition" 0
+	84	[503]	GETTABLE 	6 0 -12	; "m_robotAllData"
+	85	[503]	GETTABLE 	6 6 -13	; "TeamMate"
+	86	[503]	SETTABLE 	6 -22 5	; "CurScore" -
+	87	[504]	GETTABLE 	6 0 -12	; "m_robotAllData"
+	88	[504]	GETTABLE 	6 6 -13	; "TeamMate"
+	89	[504]	ADD      	7 4 5
+	90	[504]	SETTABLE 	6 -27 7	; "TeamScore" -
+	91	[505]	GETTABLE 	6 0 -12	; "m_robotAllData"
+	92	[505]	GETTABLE 	6 6 -13	; "TeamMate"
+	93	[505]	GETTABLE 	6 6 -27	; "TeamScore"
+	94	[505]	SETTABLE 	0 -28 6	; "m_playerTeamScore" -
+	95	[507]	GETTABLE 	6 0 -28	; "m_playerTeamScore"
+	96	[507]	SELF     	7 0 -29	; "GetTargetScore"
+	97	[507]	CALL     	7 2 2
+	98	[507]	LE       	0 7 6
+	99	[507]	JMP      	0 80	; to 180
+	100	[508]	GETTABUP 	6 0 -31	; _ENV "TeamActivityRank"
+	101	[508]	GETTABLE 	6 6 -32	; "Leading"
+	102	[508]	SETTABLE 	0 -30 6	; "m_rank" -
+	103	[510]	GETTABUP 	6 0 -33	; _ENV "ApplicationManager"
+	104	[510]	GETTABLE 	6 6 -34	; "Instance"
+	105	[510]	GETTABLE 	6 6 -35	; "isNetworkConnected"
+	106	[510]	TEST     	6 0
+	107	[510]	JMP      	0 46	; to 154
+	108	[511]	SELF     	6 0 -36	; "AcquireToken"
+	109	[511]	CALL     	6 2 1
+	110	[512]	SELF     	6 0 -37	; "LogRaceEnd"
+	111	[512]	LOADBOOL 	8 1 0
+	112	[512]	CALL     	6 3 1
+	113	[514]	SELF     	6 0 -38	; "SetRound"
+	114	[514]	SELF     	8 0 -39	; "GetRound"
+	115	[514]	CALL     	8 2 2
+	116	[514]	ADD      	8 8 -40	; - 1
+	117	[514]	CALL     	6 3 1
+	118	[515]	SELF     	6 0 -41	; "SetCurRoundNum"
+	119	[515]	LOADK    	8 -40	; 1
+	120	[515]	CALL     	6 3 1
+	121	[516]	SELF     	6 0 -42	; "SetCurState"
+	122	[516]	GETTABUP 	8 0 -2	; _ENV "TeamActivityState"
+	123	[516]	GETTABLE 	8 8 -43	; "HasTeamMate"
+	124	[516]	CALL     	6 3 1
+	125	[518]	GETTABUP 	6 0 -7	; _ENV "GM"
+	126	[518]	GETTABLE 	6 6 -44	; "SceneManager"
+	127	[518]	SELF     	6 6 -45	; "GetGameMode"
+	128	[518]	CALL     	6 2 2
+	129	[518]	GETTABUP 	7 0 -46	; _ENV "EGameMode"
+	130	[518]	GETTABLE 	7 7 -47	; "Map"
+	131	[518]	EQ       	1 6 7
+	132	[518]	JMP      	0 12	; to 145
+	133	[518]	GETTABUP 	6 0 -7	; _ENV "GM"
+	134	[518]	GETTABLE 	6 6 -44	; "SceneManager"
+	135	[518]	SELF     	6 6 -45	; "GetGameMode"
+	136	[518]	CALL     	6 2 2
+	137	[518]	GETTABUP 	7 0 -46	; _ENV "EGameMode"
+	138	[518]	GETTABLE 	7 7 -48	; "Loading"
+	139	[518]	EQ       	1 6 7
+	140	[518]	JMP      	0 4	; to 145
+	141	[518]	SELF     	6 0 -21	; "GetPopMainWindowWhenConnect"
+	142	[518]	CALL     	6 2 2
+	143	[518]	TEST     	6 0
+	144	[518]	JMP      	0 29	; to 174
+	145	[519]	SELF     	6 0 -49	; "SetPopRaceEndWindow"
+	146	[519]	LOADBOOL 	8 1 0
+	147	[519]	CALL     	6 3 1
+	148	[520]	GETTABUP 	6 0 -50	; _ENV "EventDispatcher"
+	149	[520]	GETTABLE 	6 6 -51	; "DispatchEvent"
+	150	[520]	GETTABUP 	7 0 -52	; _ENV "EEventType"
+	151	[520]	GETTABLE 	7 7 -53	; "TeamRaceEnd"
+	152	[520]	CALL     	6 2 1
+	153	[521]	JMP      	0 20	; to 174
+	154	[522]	SELF     	6 0 -21	; "GetPopMainWindowWhenConnect"
+	155	[522]	CALL     	6 2 2
+	156	[522]	TEST     	6 1
+	157	[522]	JMP      	0 16	; to 174
+	158	[523]	GETTABUP 	6 0 -7	; _ENV "GM"
+	159	[523]	GETTABLE 	6 6 -44	; "SceneManager"
+	160	[523]	SELF     	6 6 -45	; "GetGameMode"
+	161	[523]	CALL     	6 2 2
+	162	[523]	GETTABUP 	7 0 -46	; _ENV "EGameMode"
+	163	[523]	GETTABLE 	7 7 -47	; "Map"
+	164	[523]	EQ       	0 6 7
+	165	[523]	JMP      	0 8	; to 174
+	166	[524]	SELF     	6 0 -49	; "SetPopRaceEndWindow"
+	167	[524]	LOADBOOL 	8 1 0
+	168	[524]	CALL     	6 3 1
+	169	[525]	GETTABUP 	6 0 -50	; _ENV "EventDispatcher"
+	170	[525]	GETTABLE 	6 6 -51	; "DispatchEvent"
+	171	[525]	GETTABUP 	7 0 -52	; _ENV "EEventType"
+	172	[525]	GETTABLE 	7 7 -53	; "TeamRaceEnd"
+	173	[525]	CALL     	6 2 1
+	174	[528]	GETTABUP 	6 0 -50	; _ENV "EventDispatcher"
+	175	[528]	GETTABLE 	6 6 -51	; "DispatchEvent"
+	176	[528]	GETTABUP 	7 0 -52	; _ENV "EEventType"
+	177	[528]	GETTABLE 	7 7 -54	; "OrderStatusChanged"
+	178	[528]	CALL     	6 2 1
+	179	[528]	JMP      	0 146	; to 326
+	180	[530]	SELF     	6 0 -21	; "GetPopMainWindowWhenConnect"
+	181	[530]	CALL     	6 2 2
+	182	[530]	TEST     	6 0
+	183	[530]	JMP      	0 8	; to 192
+	184	[530]	GETTABLE 	6 0 -12	; "m_robotAllData"
+	185	[530]	GETTABLE 	6 6 -55	; "RivalA"
+	186	[530]	GETTABLE 	6 6 -22	; "CurScore"
+	187	[530]	TEST     	6 1
+	188	[530]	JMP      	0 12	; to 201
+	189	[530]	LOADK    	6 -23	; 0
+	190	[530]	TEST     	6 1
+	191	[530]	JMP      	0 9	; to 201
+	192	[531]	SELF     	6 0 -24	; "GetTimeScore"
+	193	[531]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	194	[531]	GETTABLE 	8 8 -55	; "RivalA"
+	195	[531]	GETTABUP 	9 0 -7	; _ENV "GM"
+	196	[531]	GETTABLE 	9 9 -8	; "GameModel"
+	197	[531]	SELF     	9 9 -9	; "GetServerTime"
+	198	[531]	CALL     	9 2 2
+	199	[531]	SUB      	9 9 2
+	200	[531]	CALL     	6 4 2
+	201	[532]	SELF     	7 0 -21	; "GetPopMainWindowWhenConnect"
+	202	[532]	CALL     	7 2 2
+	203	[532]	TEST     	7 0
+	204	[532]	JMP      	0 8	; to 213
+	205	[532]	GETTABLE 	7 0 -12	; "m_robotAllData"
+	206	[532]	GETTABLE 	7 7 -56	; "RivalB"
+	207	[532]	GETTABLE 	7 7 -22	; "CurScore"
+	208	[532]	TEST     	7 1
+	209	[532]	JMP      	0 12	; to 222
+	210	[532]	LOADK    	7 -23	; 0
+	211	[532]	TEST     	7 1
+	212	[532]	JMP      	0 9	; to 222
+	213	[533]	SELF     	7 0 -24	; "GetTimeScore"
+	214	[533]	GETTABLE 	9 0 -12	; "m_robotAllData"
+	215	[533]	GETTABLE 	9 9 -56	; "RivalB"
+	216	[533]	GETTABUP 	10 0 -7	; _ENV "GM"
+	217	[533]	GETTABLE 	10 10 -8	; "GameModel"
+	218	[533]	SELF     	10 10 -9	; "GetServerTime"
+	219	[533]	CALL     	10 2 2
+	220	[533]	SUB      	10 10 2
+	221	[533]	CALL     	7 4 2
+	222	[534]	ADD      	8 6 7
+	223	[534]	GETTABLE 	9 0 -12	; "m_robotAllData"
+	224	[534]	GETTABLE 	9 9 -55	; "RivalA"
+	225	[534]	GETTABLE 	9 9 -22	; "CurScore"
+	226	[534]	TEST     	9 1
+	227	[534]	JMP      	0 1	; to 229
+	228	[534]	LOADK    	9 -23	; 0
+	229	[534]	SUB      	8 8 9
+	230	[534]	GETTABLE 	9 0 -12	; "m_robotAllData"
+	231	[534]	GETTABLE 	9 9 -56	; "RivalB"
+	232	[534]	GETTABLE 	9 9 -22	; "CurScore"
+	233	[534]	TEST     	9 1
+	234	[534]	JMP      	0 1	; to 236
+	235	[534]	LOADK    	9 -23	; 0
+	236	[534]	SUB      	8 8 9
+	237	[534]	SETTABLE 	1 -26 8	; "RivalScoreAddition" -
+	238	[535]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	239	[535]	GETTABLE 	8 8 -55	; "RivalA"
+	240	[535]	SETTABLE 	8 -22 6	; "CurScore" -
+	241	[536]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	242	[536]	GETTABLE 	8 8 -56	; "RivalB"
+	243	[536]	SETTABLE 	8 -22 7	; "CurScore" -
+	244	[537]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	245	[537]	GETTABLE 	8 8 -55	; "RivalA"
+	246	[537]	ADD      	9 6 7
+	247	[537]	SETTABLE 	8 -27 9	; "TeamScore" -
+	248	[538]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	249	[538]	GETTABLE 	8 8 -56	; "RivalB"
+	250	[538]	ADD      	9 6 7
+	251	[538]	SETTABLE 	8 -27 9	; "TeamScore" -
+	252	[539]	GETTABLE 	8 0 -12	; "m_robotAllData"
+	253	[539]	GETTABLE 	8 8 -55	; "RivalA"
+	254	[539]	GETTABLE 	8 8 -27	; "TeamScore"
+	255	[539]	SETTABLE 	0 -57 8	; "m_rivalTeamScore" -
+	256	[541]	GETTABLE 	8 0 -28	; "m_playerTeamScore"
+	257	[541]	GETTABLE 	9 0 -57	; "m_rivalTeamScore"
+	258	[541]	LT       	0 9 8
+	259	[541]	JMP      	0 4	; to 264
+	260	[542]	GETTABUP 	8 0 -31	; _ENV "TeamActivityRank"
+	261	[542]	GETTABLE 	8 8 -32	; "Leading"
+	262	[542]	SETTABLE 	0 -30 8	; "m_rank" -
+	263	[542]	JMP      	0 11	; to 275
+	264	[543]	GETTABLE 	8 0 -28	; "m_playerTeamScore"
+	265	[543]	GETTABLE 	9 0 -57	; "m_rivalTeamScore"
+	266	[543]	LT       	0 8 9
+	267	[543]	JMP      	0 4	; to 272
+	268	[544]	GETTABUP 	8 0 -31	; _ENV "TeamActivityRank"
+	269	[544]	GETTABLE 	8 8 -58	; "Lagging"
+	270	[544]	SETTABLE 	0 -30 8	; "m_rank" -
+	271	[544]	JMP      	0 3	; to 275
+	272	[546]	GETTABUP 	8 0 -31	; _ENV "TeamActivityRank"
+	273	[546]	GETTABLE 	8 8 -59	; "Tied"
+	274	[546]	SETTABLE 	0 -30 8	; "m_rank" -
+	275	[549]	GETTABLE 	8 0 -57	; "m_rivalTeamScore"
+	276	[549]	SELF     	9 0 -29	; "GetTargetScore"
+	277	[549]	CALL     	9 2 2
+	278	[549]	LE       	0 9 8
+	279	[549]	JMP      	0 44	; to 324
+	280	[550]	GETTABUP 	8 0 -33	; _ENV "ApplicationManager"
+	281	[550]	GETTABLE 	8 8 -34	; "Instance"
+	282	[550]	GETTABLE 	8 8 -35	; "isNetworkConnected"
+	283	[550]	TEST     	8 0
+	284	[550]	JMP      	0 21	; to 306
+	285	[551]	SELF     	8 0 -37	; "LogRaceEnd"
+	286	[551]	LOADBOOL 	10 0 0
+	287	[551]	CALL     	8 3 1
+	288	[553]	SELF     	8 0 -41	; "SetCurRoundNum"
+	289	[553]	SELF     	10 0 -60	; "GetCurRoundNum"
+	290	[553]	CALL     	10 2 2
+	291	[553]	ADD      	10 10 -40	; - 1
+	292	[553]	CALL     	8 3 1
+	293	[554]	SELF     	8 0 -42	; "SetCurState"
+	294	[554]	GETTABUP 	10 0 -2	; _ENV "TeamActivityState"
+	295	[554]	GETTABLE 	10 10 -43	; "HasTeamMate"
+	296	[554]	CALL     	8 3 1
+	297	[555]	SELF     	8 0 -49	; "SetPopRaceEndWindow"
+	298	[555]	LOADBOOL 	10 1 0
+	299	[555]	CALL     	8 3 1
+	300	[556]	GETTABUP 	8 0 -50	; _ENV "EventDispatcher"
+	301	[556]	GETTABLE 	8 8 -51	; "DispatchEvent"
+	302	[556]	GETTABUP 	9 0 -52	; _ENV "EEventType"
+	303	[556]	GETTABLE 	9 9 -53	; "TeamRaceEnd"
+	304	[556]	CALL     	8 2 1
+	305	[556]	JMP      	0 12	; to 318
+	306	[557]	SELF     	8 0 -21	; "GetPopMainWindowWhenConnect"
+	307	[557]	CALL     	8 2 2
+	308	[557]	TEST     	8 1
+	309	[557]	JMP      	0 8	; to 318
+	310	[558]	SELF     	8 0 -49	; "SetPopRaceEndWindow"
+	311	[558]	LOADBOOL 	10 1 0
+	312	[558]	CALL     	8 3 1
+	313	[559]	GETTABUP 	8 0 -50	; _ENV "EventDispatcher"
+	314	[559]	GETTABLE 	8 8 -51	; "DispatchEvent"
+	315	[559]	GETTABUP 	9 0 -52	; _ENV "EEventType"
+	316	[559]	GETTABLE 	9 9 -53	; "TeamRaceEnd"
+	317	[559]	CALL     	8 2 1
+	318	[561]	GETTABUP 	8 0 -50	; _ENV "EventDispatcher"
+	319	[561]	GETTABLE 	8 8 -51	; "DispatchEvent"
+	320	[561]	GETTABUP 	9 0 -52	; _ENV "EEventType"
+	321	[561]	GETTABLE 	9 9 -54	; "OrderStatusChanged"
+	322	[561]	CALL     	8 2 1
+	323	[561]	JMP      	0 2	; to 326
+	324	[563]	SELF     	8 0 -61	; "TryPopTopTip"
+	325	[563]	CALL     	8 2 1
+	326	[567]	SELF     	6 0 -62	; "SaveRobotAllData"
+	327	[567]	CALL     	6 2 1
+	328	[568]	GETTABLE 	6 1 -10	; "TokenScore"
+	329	[568]	LT       	1 -23 6	; 0 -
+	330	[568]	JMP      	0 6	; to 337
+	331	[568]	GETTABLE 	6 1 -25	; "TeamMateScoreAddition"
+	332	[568]	LT       	1 -23 6	; 0 -
+	333	[568]	JMP      	0 3	; to 337
+	334	[568]	GETTABLE 	6 1 -26	; "RivalScoreAddition"
+	335	[568]	LT       	0 -23 6	; 0 -
+	336	[568]	JMP      	0 6	; to 343
+	337	[569]	GETTABUP 	6 0 -50	; _ENV "EventDispatcher"
+	338	[569]	GETTABLE 	6 6 -51	; "DispatchEvent"
+	339	[569]	GETTABLE 	7 0 -63	; "m_activityDefinition"
+	340	[569]	GETTABLE 	7 7 -64	; "ScoreChangedEvent"
+	341	[569]	MOVE     	8 1
+	342	[569]	CALL     	6 3 1
+	343	[572]	RETURN   	0 1
+constants (64) for 0000018BCD305470:
+	1	"GetCurState"
+	2	"TeamActivityState"
+	3	"OnGoing"
+	4	"GetCurRoundStartTime"
+	5	"math"
+	6	"ceil"
+	7	"GM"
+	8	"GameModel"
+	9	"GetServerTime"
+	10	"TokenScore"
+	11	nil
+	12	"m_robotAllData"
+	13	"TeamMate"
+	14	"CurTime"
+	15	"GameConfig"
+	16	"IsTestMode"
+	17	"m_testInfo"
+	18	"[2v2]"
+	19	"\n"
+	20	"GetCurScore"
+	21	"GetPopMainWindowWhenConnect"
+	22	"CurScore"
+	23	0
+	24	"GetTimeScore"
+	25	"TeamMateScoreAddition"
+	26	"RivalScoreAddition"
+	27	"TeamScore"
+	28	"m_playerTeamScore"
+	29	"GetTargetScore"
+	30	"m_rank"
+	31	"TeamActivityRank"
+	32	"Leading"
+	33	"ApplicationManager"
+	34	"Instance"
+	35	"isNetworkConnected"
+	36	"AcquireToken"
+	37	"LogRaceEnd"
+	38	"SetRound"
+	39	"GetRound"
+	40	1
+	41	"SetCurRoundNum"
+	42	"SetCurState"
+	43	"HasTeamMate"
+	44	"SceneManager"
+	45	"GetGameMode"
+	46	"EGameMode"
+	47	"Map"
+	48	"Loading"
+	49	"SetPopRaceEndWindow"
+	50	"EventDispatcher"
+	51	"DispatchEvent"
+	52	"EEventType"
+	53	"TeamRaceEnd"
+	54	"OrderStatusChanged"
+	55	"RivalA"
+	56	"RivalB"
+	57	"m_rivalTeamScore"
+	58	"Lagging"
+	59	"Tied"
+	60	"GetCurRoundNum"
+	61	"TryPopTopTip"
+	62	"SaveRobotAllData"
+	63	"m_activityDefinition"
+	64	"ScoreChangedEvent"
+locals (8) for 0000018BCD305470:
+	0	self	1	344
+	1	message	1	344
+	2	startTime	9	343
+	3	timeElapsed	17	343
+	4	playerScore	45	343
+	5	teamMateScore	66	343
+	6	rivalAScore	201	326
+	7	rivalBScore	222	326
+upvalues (1) for 0000018BCD305470:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:576,594> (67 instructions at 0000018BCD305670)
+2 params, 11 slots, 1 upvalue, 4 locals, 35 constants, 0 functions
+	1	[577]	SELF     	2 0 -1	; "GetRound"
+	2	[577]	CALL     	2 2 2
+	3	[578]	SELF     	3 0 -2	; "GetCurScore"
+	4	[578]	CALL     	3 2 2
+	5	[579]	GETTABUP 	4 0 -3	; _ENV "GM"
+	6	[579]	GETTABLE 	4 4 -4	; "BIManager"
+	7	[579]	SELF     	4 4 -5	; "LogAction"
+	8	[579]	GETTABLE 	6 0 -6	; "m_activityDefinition"
+	9	[579]	GETTABLE 	6 6 -7	; "RaceEndBIType"
+	10	[579]	NEWTABLE 	7 0 13
+	11	[580]	SELF     	8 0 -9	; "GetServerConfigGroupId"
+	12	[580]	CALL     	8 2 2
+	13	[580]	SETTABLE 	7 -8 8	; "g" -
+	14	[581]	SETTABLE 	7 -10 2	; "r" -
+	15	[582]	SELF     	8 0 -12	; "GetCurRoundNum"
+	16	[582]	CALL     	8 2 2
+	17	[582]	SETTABLE 	7 -11 8	; "n" -
+	18	[583]	SELF     	8 0 -14	; "GetTargetScore"
+	19	[583]	MOVE     	10 2
+	20	[583]	CALL     	8 3 2
+	21	[583]	SETTABLE 	7 -13 8	; "s_n" -
+	22	[584]	GETTABLE 	8 0 -16	; "m_playerTeamScore"
+	23	[584]	SETTABLE 	7 -15 8	; "s_pteam" -
+	24	[585]	GETTABLE 	8 0 -18	; "m_rivalTeamScore"
+	25	[585]	SETTABLE 	7 -17 8	; "s_rteam" -
+	26	[586]	SETTABLE 	7 -19 3	; "s_i" -
+	27	[587]	GETTABLE 	8 0 -21	; "m_robotAllData"
+	28	[587]	GETTABLE 	8 8 -22	; "TeamMate"
+	29	[587]	GETTABLE 	8 8 -23	; "CurScore"
+	30	[587]	SETTABLE 	7 -20 8	; "s_p" -
+	31	[588]	GETTABLE 	8 0 -21	; "m_robotAllData"
+	32	[588]	GETTABLE 	8 8 -25	; "RivalA"
+	33	[588]	GETTABLE 	8 8 -23	; "CurScore"
+	34	[588]	SETTABLE 	7 -24 8	; "s_r1" -
+	35	[589]	GETTABLE 	8 0 -21	; "m_robotAllData"
+	36	[589]	GETTABLE 	8 8 -27	; "RivalB"
+	37	[589]	GETTABLE 	8 8 -23	; "CurScore"
+	38	[589]	SETTABLE 	7 -26 8	; "s_r2" -
+	39	[590]	TEST     	1 0
+	40	[590]	JMP      	0 3	; to 44
+	41	[590]	LOADK    	8 -29	; 1
+	42	[590]	TEST     	8 1
+	43	[590]	JMP      	0 1	; to 45
+	44	[590]	LOADK    	8 -30	; 0
+	45	[590]	SETTABLE 	7 -28 8	; "win" -
+	46	[591]	TEST     	1 0
+	47	[591]	JMP      	0 8	; to 56
+	48	[591]	GETTABLE 	8 0 -21	; "m_robotAllData"
+	49	[591]	GETTABLE 	8 8 -22	; "TeamMate"
+	50	[591]	GETTABLE 	8 8 -23	; "CurScore"
+	51	[591]	LE       	0 8 3
+	52	[591]	JMP      	0 3	; to 56
+	53	[591]	LOADK    	8 -29	; 1
+	54	[591]	TEST     	8 1
+	55	[591]	JMP      	0 1	; to 57
+	56	[591]	LOADK    	8 -30	; 0
+	57	[591]	SETTABLE 	7 -31 8	; "mvp" -
+	58	[592]	GETTABUP 	8 0 -3	; _ENV "GM"
+	59	[592]	GETTABLE 	8 8 -33	; "GameModel"
+	60	[592]	SELF     	8 8 -34	; "GetServerTime"
+	61	[592]	CALL     	8 2 2
+	62	[592]	SELF     	9 0 -35	; "GetCurRoundStartTime"
+	63	[592]	CALL     	9 2 2
+	64	[592]	SUB      	8 8 9
+	65	[592]	SETTABLE 	7 -32 8	; "t" -
+	66	[579]	CALL     	4 4 1
+	67	[594]	RETURN   	0 1
+constants (35) for 0000018BCD305670:
+	1	"GetRound"
+	2	"GetCurScore"
+	3	"GM"
+	4	"BIManager"
+	5	"LogAction"
+	6	"m_activityDefinition"
+	7	"RaceEndBIType"
+	8	"g"
+	9	"GetServerConfigGroupId"
+	10	"r"
+	11	"n"
+	12	"GetCurRoundNum"
+	13	"s_n"
+	14	"GetTargetScore"
+	15	"s_pteam"
+	16	"m_playerTeamScore"
+	17	"s_rteam"
+	18	"m_rivalTeamScore"
+	19	"s_i"
+	20	"s_p"
+	21	"m_robotAllData"
+	22	"TeamMate"
+	23	"CurScore"
+	24	"s_r1"
+	25	"RivalA"
+	26	"s_r2"
+	27	"RivalB"
+	28	"win"
+	29	1
+	30	0
+	31	"mvp"
+	32	"t"
+	33	"GameModel"
+	34	"GetServerTime"
+	35	"GetCurRoundStartTime"
+locals (4) for 0000018BCD305670:
+	0	self	1	68
+	1	bWin	1	68
+	2	round	3	68
+	3	score	5	68
+upvalues (1) for 0000018BCD305670:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:598,604> (16 instructions at 0000018BCD305570)
+2 params, 8 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[599]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[599]	GETTABLE 	2 2 -2	; "BIManager"
+	3	[599]	SELF     	2 2 -3	; "LogAction"
+	4	[599]	MOVE     	4 1
+	5	[599]	NEWTABLE 	5 0 3
+	6	[600]	SELF     	6 0 -5	; "GetServerConfigGroupId"
+	7	[600]	CALL     	6 2 2
+	8	[600]	SETTABLE 	5 -4 6	; "g" -
+	9	[601]	SELF     	6 0 -7	; "GetRound"
+	10	[601]	CALL     	6 2 2
+	11	[601]	SETTABLE 	5 -6 6	; "r" -
+	12	[602]	SELF     	6 0 -9	; "GetCurRoundNum"
+	13	[602]	CALL     	6 2 2
+	14	[602]	SETTABLE 	5 -8 6	; "n" -
+	15	[599]	CALL     	2 4 1
+	16	[604]	RETURN   	0 1
+constants (9) for 0000018BCD305570:
+	1	"GM"
+	2	"BIManager"
+	3	"LogAction"
+	4	"g"
+	5	"GetServerConfigGroupId"
+	6	"r"
+	7	"GetRound"
+	8	"n"
+	9	"GetCurRoundNum"
+locals (2) for 0000018BCD305570:
+	0	self	1	17
+	1	scene	1	17
+upvalues (1) for 0000018BCD305570:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:606,659> (104 instructions at 0000018BCD3054F0)
+1 param, 8 slots, 1 upvalue, 4 locals, 27 constants, 1 function
+	1	[608]	SELF     	1 0 -1	; "GetRecordedRank"
+	2	[608]	CALL     	1 2 2
+	3	[609]	TEST     	1 0
+	4	[609]	JMP      	0 12	; to 17
+	5	[609]	GETTABUP 	2 0 -2	; _ENV "TeamActivityRank"
+	6	[609]	GETTABLE 	2 2 -3	; "Lagging"
+	7	[609]	EQ       	0 1 2
+	8	[609]	JMP      	0 8	; to 17
+	9	[609]	GETTABLE 	2 0 -4	; "m_rank"
+	10	[609]	GETTABUP 	3 0 -2	; _ENV "TeamActivityRank"
+	11	[609]	GETTABLE 	3 3 -5	; "Leading"
+	12	[609]	EQ       	0 2 3
+	13	[609]	JMP      	0 3	; to 17
+	14	[610]	SETTABLE 	0 -6 -7	; "m_increase" true
+	15	[611]	SETTABLE 	0 -8 -9	; "m_decrease" false
+	16	[611]	JMP      	0 16	; to 33
+	17	[612]	TEST     	1 0
+	18	[612]	JMP      	0 12	; to 31
+	19	[612]	GETTABUP 	2 0 -2	; _ENV "TeamActivityRank"
+	20	[612]	GETTABLE 	2 2 -5	; "Leading"
+	21	[612]	EQ       	0 1 2
+	22	[612]	JMP      	0 8	; to 31
+	23	[612]	GETTABLE 	2 0 -4	; "m_rank"
+	24	[612]	GETTABUP 	3 0 -2	; _ENV "TeamActivityRank"
+	25	[612]	GETTABLE 	3 3 -3	; "Lagging"
+	26	[612]	EQ       	0 2 3
+	27	[612]	JMP      	0 3	; to 31
+	28	[613]	SETTABLE 	0 -6 -9	; "m_increase" false
+	29	[614]	SETTABLE 	0 -8 -7	; "m_decrease" true
+	30	[614]	JMP      	0 2	; to 33
+	31	[616]	SETTABLE 	0 -6 -9	; "m_increase" false
+	32	[617]	SETTABLE 	0 -8 -9	; "m_decrease" false
+	33	[619]	GETTABLE 	2 0 -4	; "m_rank"
+	34	[619]	GETTABUP 	3 0 -2	; _ENV "TeamActivityRank"
+	35	[619]	GETTABLE 	3 3 -10	; "Tied"
+	36	[619]	EQ       	1 2 3
+	37	[619]	JMP      	0 3	; to 41
+	38	[620]	SELF     	2 0 -11	; "SetRecordedRank"
+	39	[620]	GETTABLE 	4 0 -4	; "m_rank"
+	40	[620]	CALL     	2 3 1
+	41	[623]	SELF     	2 0 -12	; "GetRecordedScore_player"
+	42	[623]	CALL     	2 2 2
+	43	[624]	SELF     	3 0 -13	; "GetRecordedScore_rival"
+	44	[624]	CALL     	3 2 2
+	45	[625]	GETTABLE 	4 0 -14	; "m_playerTeamScore"
+	46	[625]	SELF     	5 0 -15	; "GetTargetScore"
+	47	[625]	CALL     	5 2 2
+	48	[625]	MUL      	5 5 -16	; - 0.5
+	49	[625]	LE       	0 5 4
+	50	[625]	JMP      	0 14	; to 65
+	51	[625]	TEST     	2 0
+	52	[625]	JMP      	0 12	; to 65
+	53	[625]	SELF     	4 0 -15	; "GetTargetScore"
+	54	[625]	CALL     	4 2 2
+	55	[625]	MUL      	4 4 -16	; - 0.5
+	56	[625]	LT       	0 2 4
+	57	[625]	JMP      	0 7	; to 65
+	58	[626]	GETTABLE 	4 0 -4	; "m_rank"
+	59	[626]	GETTABUP 	5 0 -2	; _ENV "TeamActivityRank"
+	60	[626]	GETTABLE 	5 5 -5	; "Leading"
+	61	[626]	EQ       	0 4 5
+	62	[626]	JMP      	0 2	; to 65
+	63	[627]	SETTABLE 	0 -17 -7	; "m_topTipCondition4" true
+	64	[627]	JMP      	0 21	; to 86
+	65	[628]	GETTABLE 	4 0 -18	; "m_rivalTeamScore"
+	66	[628]	SELF     	5 0 -15	; "GetTargetScore"
+	67	[628]	CALL     	5 2 2
+	68	[628]	MUL      	5 5 -16	; - 0.5
+	69	[628]	LE       	0 5 4
+	70	[628]	JMP      	0 14	; to 85
+	71	[628]	TEST     	3 0
+	72	[628]	JMP      	0 12	; to 85
+	73	[628]	SELF     	4 0 -15	; "GetTargetScore"
+	74	[628]	CALL     	4 2 2
+	75	[628]	MUL      	4 4 -16	; - 0.5
+	76	[628]	LT       	0 3 4
+	77	[628]	JMP      	0 7	; to 85
+	78	[629]	GETTABLE 	4 0 -4	; "m_rank"
+	79	[629]	GETTABUP 	5 0 -2	; _ENV "TeamActivityRank"
+	80	[629]	GETTABLE 	5 5 -3	; "Lagging"
+	81	[629]	EQ       	0 4 5
+	82	[629]	JMP      	0 2	; to 85
+	83	[630]	SETTABLE 	0 -17 -7	; "m_topTipCondition4" true
+	84	[630]	JMP      	0 1	; to 86
+	85	[632]	SETTABLE 	0 -17 -9	; "m_topTipCondition4" false
+	86	[634]	SELF     	4 0 -19	; "SetRecordedScore_player"
+	87	[634]	GETTABLE 	6 0 -14	; "m_playerTeamScore"
+	88	[634]	CALL     	4 3 1
+	89	[635]	SELF     	4 0 -20	; "SetRecordedScore_rival"
+	90	[635]	GETTABLE 	6 0 -18	; "m_rivalTeamScore"
+	91	[635]	CALL     	4 3 1
+	92	[638]	SELF     	4 0 -21	; "CanShowTopTip"
+	93	[638]	CALL     	4 2 2
+	94	[638]	TEST     	4 0
+	95	[638]	JMP      	0 8	; to 104
+	96	[639]	GETTABUP 	4 0 -22	; _ENV "TopSliderManager"
+	97	[639]	GETTABLE 	4 4 -23	; "TrySlide"
+	98	[639]	GETTABUP 	5 0 -24	; _ENV "SliderType"
+	99	[639]	GETTABLE 	5 5 -25	; "Team"
+	100	[639]	GETTABLE 	6 0 -26	; "m_activityDefinition"
+	101	[639]	GETTABLE 	6 6 -27	; "TopTipPrefabName"
+	102	[657]	CLOSURE  	7 0	; 0000018BCD3055F0
+	103	[639]	CALL     	4 4 1
+	104	[659]	RETURN   	0 1
+constants (27) for 0000018BCD3054F0:
+	1	"GetRecordedRank"
+	2	"TeamActivityRank"
+	3	"Lagging"
+	4	"m_rank"
+	5	"Leading"
+	6	"m_increase"
+	7	true
+	8	"m_decrease"
+	9	false
+	10	"Tied"
+	11	"SetRecordedRank"
+	12	"GetRecordedScore_player"
+	13	"GetRecordedScore_rival"
+	14	"m_playerTeamScore"
+	15	"GetTargetScore"
+	16	0.5
+	17	"m_topTipCondition4"
+	18	"m_rivalTeamScore"
+	19	"SetRecordedScore_player"
+	20	"SetRecordedScore_rival"
+	21	"CanShowTopTip"
+	22	"TopSliderManager"
+	23	"TrySlide"
+	24	"SliderType"
+	25	"Team"
+	26	"m_activityDefinition"
+	27	"TopTipPrefabName"
+locals (4) for 0000018BCD3054F0:
+	0	self	1	105
+	1	lastRank	3	105
+	2	lastScore_player	43	105
+	3	lastScore_rival	45	105
+upvalues (1) for 0000018BCD3054F0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:639,657> (45 instructions at 0000018BCD3055F0)
+1 param, 6 slots, 2 upvalues, 3 locals, 21 constants, 1 function
+	1	[641]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[641]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[641]	SELF     	1 1 -3	; "GetModel"
+	4	[641]	GETUPVAL 	3 1	; self
+	5	[641]	SELF     	3 3 -4	; "GetType"
+	6	[641]	CALL     	3 2 0
+	7	[641]	CALL     	1 0 2
+	8	[642]	EQ       	1 1 -5	; - nil
+	9	[642]	JMP      	0 20	; to 30
+	10	[642]	SELF     	2 1 -6	; "GetState"
+	11	[642]	CALL     	2 2 2
+	12	[642]	GETTABUP 	3 0 -7	; _ENV "ActivityState"
+	13	[642]	GETTABLE 	3 3 -8	; "Started"
+	14	[642]	EQ       	0 2 3
+	15	[642]	JMP      	0 14	; to 30
+	16	[642]	SELF     	2 1 -9	; "GetCurState"
+	17	[642]	CALL     	2 2 2
+	18	[642]	GETTABUP 	3 0 -10	; _ENV "TeamActivityState"
+	19	[642]	GETTABLE 	3 3 -11	; "OnGoing"
+	20	[642]	EQ       	0 2 3
+	21	[642]	JMP      	0 8	; to 30
+	22	[643]	GETTABUP 	2 0 -1	; _ENV "GM"
+	23	[643]	GETTABLE 	2 2 -12	; "UIManager"
+	24	[643]	SELF     	2 2 -13	; "GetOpenedViewByName"
+	25	[643]	GETTABUP 	4 1 -14	; self "m_activityDefinition"
+	26	[643]	GETTABLE 	4 4 -15	; "MainWindowPrefabName"
+	27	[643]	CALL     	2 3 2
+	28	[643]	TEST     	2 0
+	29	[643]	JMP      	0 5	; to 35
+	30	[644]	GETTABUP 	2 0 -16	; _ENV "GameObject"
+	31	[644]	GETTABLE 	2 2 -17	; "Destroy"
+	32	[644]	MOVE     	3 0
+	33	[644]	CALL     	2 2 1
+	34	[645]	RETURN   	0 1
+	35	[648]	SELF     	2 0 -18	; "GetLuaTable"
+	36	[648]	CALL     	2 2 2
+	37	[649]	SELF     	3 2 -19	; "Init"
+	38	[649]	GETUPVAL 	5 1	; self
+	39	[649]	CALL     	3 3 1
+	40	[651]	GETTABUP 	3 0 -20	; _ENV "TopSliderManager"
+	41	[651]	GETTABLE 	3 3 -21	; "Appear"
+	42	[651]	MOVE     	4 0
+	43	[656]	CLOSURE  	5 0	; 0000018BCD3056F0
+	44	[651]	CALL     	3 3 1
+	45	[657]	RETURN   	0 1
+constants (21) for 0000018BCD3055F0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"GetType"
+	5	nil
+	6	"GetState"
+	7	"ActivityState"
+	8	"Started"
+	9	"GetCurState"
+	10	"TeamActivityState"
+	11	"OnGoing"
+	12	"UIManager"
+	13	"GetOpenedViewByName"
+	14	"m_activityDefinition"
+	15	"MainWindowPrefabName"
+	16	"GameObject"
+	17	"Destroy"
+	18	"GetLuaTable"
+	19	"Init"
+	20	"TopSliderManager"
+	21	"Appear"
+locals (3) for 0000018BCD3055F0:
+	0	go	1	46
+	1	model	8	46
+	2	topTip	37	46
+upvalues (2) for 0000018BCD3055F0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:651,656> (11 instructions at 0000018BCD3056F0)
+0 params, 3 slots, 3 upvalues, 0 locals, 7 constants, 1 function
+	1	[652]	GETTABUP 	0 1 -2	; _ENV "GM"
+	2	[652]	GETTABLE 	0 0 -3	; "GameModel"
+	3	[652]	SELF     	0 0 -4	; "GetServerTime"
+	4	[652]	CALL     	0 2 2
+	5	[652]	ADD      	0 0 -5	; - 2
+	6	[652]	SETTABUP 	0 -1 0	; self "m_lastTopTipTime"
+	7	[653]	GETTABUP 	0 1 -6	; _ENV "DelayExecuteFunc"
+	8	[655]	CLOSURE  	1 0	; 0000018BCD305770
+	9	[655]	LOADK    	2 -7	; 2.0
+	10	[653]	CALL     	0 3 1
+	11	[656]	RETURN   	0 1
+constants (7) for 0000018BCD3056F0:
+	1	"m_lastTopTipTime"
+	2	"GM"
+	3	"GameModel"
+	4	"GetServerTime"
+	5	2
+	6	"DelayExecuteFunc"
+	7	2.0
+locals (0) for 0000018BCD3056F0:
+upvalues (3) for 0000018BCD3056F0:
+	0	self	0	1
+	1	_ENV	0	0
+	2	go	1	0
+
+function <TeamActivityModel.lua:653,655> (5 instructions at 0000018BCD305770)
+0 params, 2 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[654]	GETTABUP 	0 0 -1	; _ENV "TopSliderManager"
+	2	[654]	GETTABLE 	0 0 -2	; "Disappear"
+	3	[654]	GETUPVAL 	1 1	; go
+	4	[654]	CALL     	0 2 1
+	5	[655]	RETURN   	0 1
+constants (2) for 0000018BCD305770:
+	1	"TopSliderManager"
+	2	"Disappear"
+locals (0) for 0000018BCD305770:
+upvalues (2) for 0000018BCD305770:
+	0	_ENV	0	1
+	1	go	0	2
+
+function <TeamActivityModel.lua:661,706> (180 instructions at 0000018BCD3057F0)
+1 param, 6 slots, 1 upvalue, 1 local, 29 constants, 0 functions
+	1	[663]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[663]	GETTABLE 	1 1 -2	; "SceneManager"
+	3	[663]	SELF     	1 1 -3	; "GetGameMode"
+	4	[663]	CALL     	1 2 2
+	5	[663]	GETTABUP 	2 0 -4	; _ENV "EGameMode"
+	6	[663]	GETTABLE 	2 2 -5	; "Main"
+	7	[663]	EQ       	1 1 2
+	8	[663]	JMP      	0 2	; to 11
+	9	[664]	LOADBOOL 	1 0 0
+	10	[664]	RETURN   	1 2
+	11	[667]	SELF     	1 0 -6	; "GetCurState"
+	12	[667]	CALL     	1 2 2
+	13	[667]	GETTABUP 	2 0 -7	; _ENV "TeamActivityState"
+	14	[667]	GETTABLE 	2 2 -8	; "OnGoing"
+	15	[667]	EQ       	1 1 2
+	16	[667]	JMP      	0 2	; to 19
+	17	[668]	LOADBOOL 	1 0 0
+	18	[668]	RETURN   	1 2
+	19	[672]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	20	[672]	GETTABLE 	3 0 -10	; "m_playerTeamScore"
+	21	[672]	LOADK    	4 -11	; 0
+	22	[672]	LOADK    	5 -12	; 0.5
+	23	[672]	CALL     	1 5 2
+	24	[672]	TEST     	1 0
+	25	[672]	JMP      	0 19	; to 45
+	26	[672]	GETTABLE 	1 0 -13	; "m_decrease"
+	27	[673]	TEST     	1 0
+	28	[673]	JMP      	0 16	; to 45
+	29	[673]	GETTABLE 	1 0 -14	; "m_rivalTeamScore"
+	30	[673]	GETTABLE 	2 0 -10	; "m_playerTeamScore"
+	31	[673]	SUB      	1 1 2
+	32	[673]	LE       	0 -15 1	; 10 -
+	33	[673]	JMP      	0 11	; to 45
+	34	[673]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	35	[673]	LOADK    	3 -17	; 60
+	36	[673]	CALL     	1 3 2
+	37	[673]	TEST     	1 0
+	38	[673]	JMP      	0 6	; to 45
+	39	[674]	GETTABUP 	1 0 -18	; _ENV "Log"
+	40	[674]	GETTABLE 	1 1 -19	; "Info"
+	41	[674]	LOADK    	2 -20	; "[2v2] \230\181\174\231\170\151 condition 1, rival win"
+	42	[674]	CALL     	1 2 1
+	43	[675]	LOADBOOL 	1 1 0
+	44	[675]	RETURN   	1 2
+	45	[677]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	46	[677]	GETTABLE 	3 0 -14	; "m_rivalTeamScore"
+	47	[677]	LOADK    	4 -11	; 0
+	48	[677]	LOADK    	5 -12	; 0.5
+	49	[677]	CALL     	1 5 2
+	50	[677]	TEST     	1 0
+	51	[677]	JMP      	0 19	; to 71
+	52	[677]	GETTABLE 	1 0 -21	; "m_increase"
+	53	[678]	TEST     	1 0
+	54	[678]	JMP      	0 16	; to 71
+	55	[678]	GETTABLE 	1 0 -10	; "m_playerTeamScore"
+	56	[678]	GETTABLE 	2 0 -14	; "m_rivalTeamScore"
+	57	[678]	SUB      	1 1 2
+	58	[678]	LE       	0 -15 1	; 10 -
+	59	[678]	JMP      	0 11	; to 71
+	60	[678]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	61	[678]	LOADK    	3 -17	; 60
+	62	[678]	CALL     	1 3 2
+	63	[678]	TEST     	1 0
+	64	[678]	JMP      	0 6	; to 71
+	65	[679]	GETTABUP 	1 0 -18	; _ENV "Log"
+	66	[679]	GETTABLE 	1 1 -19	; "Info"
+	67	[679]	LOADK    	2 -22	; "[2v2] \230\181\174\231\170\151 condition 1, player win"
+	68	[679]	CALL     	1 2 1
+	69	[680]	LOADBOOL 	1 1 0
+	70	[680]	RETURN   	1 2
+	71	[683]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	72	[683]	GETTABLE 	3 0 -10	; "m_playerTeamScore"
+	73	[683]	LOADK    	4 -12	; 0.5
+	74	[683]	LOADK    	5 -23	; 0.85
+	75	[683]	CALL     	1 5 2
+	76	[683]	TEST     	1 0
+	77	[683]	JMP      	0 19	; to 97
+	78	[683]	GETTABLE 	1 0 -13	; "m_decrease"
+	79	[684]	TEST     	1 0
+	80	[684]	JMP      	0 16	; to 97
+	81	[684]	GETTABLE 	1 0 -14	; "m_rivalTeamScore"
+	82	[684]	GETTABLE 	2 0 -10	; "m_playerTeamScore"
+	83	[684]	SUB      	1 1 2
+	84	[684]	LE       	0 -24 1	; 3 -
+	85	[684]	JMP      	0 11	; to 97
+	86	[684]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	87	[684]	LOADK    	3 -17	; 60
+	88	[684]	CALL     	1 3 2
+	89	[684]	TEST     	1 0
+	90	[684]	JMP      	0 6	; to 97
+	91	[685]	GETTABUP 	1 0 -18	; _ENV "Log"
+	92	[685]	GETTABLE 	1 1 -19	; "Info"
+	93	[685]	LOADK    	2 -25	; "[2v2] \230\181\174\231\170\151 condition 2, rival win"
+	94	[685]	CALL     	1 2 1
+	95	[686]	LOADBOOL 	1 1 0
+	96	[686]	RETURN   	1 2
+	97	[688]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	98	[688]	GETTABLE 	3 0 -14	; "m_rivalTeamScore"
+	99	[688]	LOADK    	4 -12	; 0.5
+	100	[688]	LOADK    	5 -23	; 0.85
+	101	[688]	CALL     	1 5 2
+	102	[688]	TEST     	1 0
+	103	[688]	JMP      	0 19	; to 123
+	104	[688]	GETTABLE 	1 0 -21	; "m_increase"
+	105	[689]	TEST     	1 0
+	106	[689]	JMP      	0 16	; to 123
+	107	[689]	GETTABLE 	1 0 -10	; "m_playerTeamScore"
+	108	[689]	GETTABLE 	2 0 -14	; "m_rivalTeamScore"
+	109	[689]	SUB      	1 1 2
+	110	[689]	LE       	0 -24 1	; 3 -
+	111	[689]	JMP      	0 11	; to 123
+	112	[689]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	113	[689]	LOADK    	3 -17	; 60
+	114	[689]	CALL     	1 3 2
+	115	[689]	TEST     	1 0
+	116	[689]	JMP      	0 6	; to 123
+	117	[690]	GETTABUP 	1 0 -18	; _ENV "Log"
+	118	[690]	GETTABLE 	1 1 -19	; "Info"
+	119	[690]	LOADK    	2 -22	; "[2v2] \230\181\174\231\170\151 condition 1, player win"
+	120	[690]	CALL     	1 2 1
+	121	[691]	LOADBOOL 	1 1 0
+	122	[691]	RETURN   	1 2
+	123	[694]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	124	[694]	GETTABLE 	3 0 -10	; "m_playerTeamScore"
+	125	[694]	LOADK    	4 -23	; 0.85
+	126	[694]	LOADK    	5 -26	; 1
+	127	[694]	CALL     	1 5 2
+	128	[694]	TEST     	1 0
+	129	[694]	JMP      	0 15	; to 145
+	130	[694]	GETTABLE 	1 0 -13	; "m_decrease"
+	131	[694]	TEST     	1 0
+	132	[694]	JMP      	0 12	; to 145
+	133	[694]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	134	[694]	LOADK    	3 -27	; 20
+	135	[694]	CALL     	1 3 2
+	136	[694]	TEST     	1 0
+	137	[694]	JMP      	0 7	; to 145
+	138	[695]	GETTABUP 	1 0 -18	; _ENV "Log"
+	139	[695]	GETTABLE 	1 1 -19	; "Info"
+	140	[695]	LOADK    	2 -20	; "[2v2] \230\181\174\231\170\151 condition 1, rival win"
+	141	[695]	CALL     	1 2 1
+	142	[696]	LOADBOOL 	1 1 0
+	143	[696]	RETURN   	1 2
+	144	[696]	JMP      	0 21	; to 166
+	145	[697]	SELF     	1 0 -9	; "ScoreInPercentRange"
+	146	[697]	GETTABLE 	3 0 -14	; "m_rivalTeamScore"
+	147	[697]	LOADK    	4 -23	; 0.85
+	148	[697]	LOADK    	5 -26	; 1
+	149	[697]	CALL     	1 5 2
+	150	[697]	TEST     	1 0
+	151	[697]	JMP      	0 14	; to 166
+	152	[697]	GETTABLE 	1 0 -21	; "m_increase"
+	153	[697]	TEST     	1 0
+	154	[697]	JMP      	0 11	; to 166
+	155	[697]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	156	[697]	LOADK    	3 -27	; 20
+	157	[697]	CALL     	1 3 2
+	158	[697]	TEST     	1 0
+	159	[697]	JMP      	0 6	; to 166
+	160	[698]	GETTABUP 	1 0 -18	; _ENV "Log"
+	161	[698]	GETTABLE 	1 1 -19	; "Info"
+	162	[698]	LOADK    	2 -22	; "[2v2] \230\181\174\231\170\151 condition 1, player win"
+	163	[698]	CALL     	1 2 1
+	164	[699]	LOADBOOL 	1 1 0
+	165	[699]	RETURN   	1 2
+	166	[702]	GETTABLE 	1 0 -28	; "m_topTipCondition4"
+	167	[702]	TEST     	1 0
+	168	[702]	JMP      	0 11	; to 180
+	169	[702]	SELF     	1 0 -16	; "TopTipHasCoolenDown"
+	170	[702]	LOADK    	3 -17	; 60
+	171	[702]	CALL     	1 3 2
+	172	[702]	TEST     	1 0
+	173	[702]	JMP      	0 6	; to 180
+	174	[703]	GETTABUP 	1 0 -18	; _ENV "Log"
+	175	[703]	GETTABLE 	1 1 -19	; "Info"
+	176	[703]	LOADK    	2 -29	; "[2v2] \230\181\174\231\170\151 condition 4"
+	177	[703]	CALL     	1 2 1
+	178	[704]	LOADBOOL 	1 1 0
+	179	[704]	RETURN   	1 2
+	180	[706]	RETURN   	0 1
+constants (29) for 0000018BCD3057F0:
+	1	"GM"
+	2	"SceneManager"
+	3	"GetGameMode"
+	4	"EGameMode"
+	5	"Main"
+	6	"GetCurState"
+	7	"TeamActivityState"
+	8	"OnGoing"
+	9	"ScoreInPercentRange"
+	10	"m_playerTeamScore"
+	11	0
+	12	0.5
+	13	"m_decrease"
+	14	"m_rivalTeamScore"
+	15	10
+	16	"TopTipHasCoolenDown"
+	17	60
+	18	"Log"
+	19	"Info"
+	20	"[2v2] \230\181\174\231\170\151 condition 1, rival win"
+	21	"m_increase"
+	22	"[2v2] \230\181\174\231\170\151 condition 1, player win"
+	23	0.85
+	24	3
+	25	"[2v2] \230\181\174\231\170\151 condition 2, rival win"
+	26	1
+	27	20
+	28	"m_topTipCondition4"
+	29	"[2v2] \230\181\174\231\170\151 condition 4"
+locals (1) for 0000018BCD3057F0:
+	0	self	1	181
+upvalues (1) for 0000018BCD3057F0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:708,715> (18 instructions at 0000018BCD305AF0)
+4 params, 7 slots, 0 upvalues, 5 locals, 1 constant, 0 functions
+	1	[709]	SELF     	4 0 -1	; "GetTargetScore"
+	2	[709]	CALL     	4 2 2
+	3	[710]	SELF     	5 0 -1	; "GetTargetScore"
+	4	[710]	CALL     	5 2 2
+	5	[710]	MUL      	5 5 2
+	6	[710]	LT       	0 5 1
+	7	[710]	JMP      	0 8	; to 16
+	8	[710]	SELF     	5 0 -1	; "GetTargetScore"
+	9	[710]	CALL     	5 2 2
+	10	[710]	MUL      	5 5 3
+	11	[710]	LE       	0 1 5
+	12	[710]	JMP      	0 3	; to 16
+	13	[711]	LOADBOOL 	5 1 0
+	14	[711]	RETURN   	5 2
+	15	[711]	JMP      	0 2	; to 18
+	16	[713]	LOADBOOL 	5 0 0
+	17	[713]	RETURN   	5 2
+	18	[715]	RETURN   	0 1
+constants (1) for 0000018BCD305AF0:
+	1	"GetTargetScore"
+locals (5) for 0000018BCD305AF0:
+	0	self	1	19
+	1	score	1	19
+	2	min	1	19
+	3	max	1	19
+	4	targetScore	3	19
+upvalues (0) for 0000018BCD305AF0:
+
+function <TeamActivityModel.lua:717,728> (18 instructions at 0000018BCD305B70)
+2 params, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[719]	GETTABLE 	2 0 -1	; "m_lastTopTipTime"
+	2	[719]	EQ       	0 2 -2	; - nil
+	3	[719]	JMP      	0 2	; to 6
+	4	[720]	LOADBOOL 	2 1 0
+	5	[720]	RETURN   	2 2
+	6	[723]	GETTABUP 	2 0 -3	; _ENV "GM"
+	7	[723]	GETTABLE 	2 2 -4	; "GameModel"
+	8	[723]	SELF     	2 2 -5	; "GetServerTime"
+	9	[723]	CALL     	2 2 2
+	10	[723]	GETTABLE 	3 0 -1	; "m_lastTopTipTime"
+	11	[723]	ADD      	3 3 1
+	12	[723]	LT       	0 3 2
+	13	[723]	JMP      	0 2	; to 16
+	14	[724]	LOADBOOL 	2 1 0
+	15	[724]	RETURN   	2 2
+	16	[727]	LOADBOOL 	2 0 0
+	17	[727]	RETURN   	2 2
+	18	[728]	RETURN   	0 1
+constants (5) for 0000018BCD305B70:
+	1	"m_lastTopTipTime"
+	2	nil
+	3	"GM"
+	4	"GameModel"
+	5	"GetServerTime"
+locals (2) for 0000018BCD305B70:
+	0	self	1	19
+	1	time	1	19
+upvalues (1) for 0000018BCD305B70:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:731,753> (55 instructions at 0000018BCD305BF0)
+2 params, 8 slots, 1 upvalue, 5 locals, 26 constants, 0 functions
+	1	[732]	SELF     	2 0 -1	; "ClearAllCache"
+	2	[732]	CALL     	2 2 1
+	3	[733]	SELF     	2 0 -2	; "ResetLastShownScoreStruct"
+	4	[733]	CALL     	2 2 1
+	5	[734]	SELF     	2 0 -3	; "SetCurScore"
+	6	[734]	LOADK    	4 -4	; 0
+	7	[734]	CALL     	2 3 1
+	8	[736]	SELF     	2 0 -5	; "ResetRobotAllData"
+	9	[736]	CALL     	2 2 1
+	10	[738]	SELF     	2 0 -6	; "GetRound"
+	11	[738]	CALL     	2 2 2
+	12	[738]	GETTABLE 	3 0 -7	; "m_teamConfigArr"
+	13	[738]	LEN      	3 3
+	14	[738]	LT       	0 3 2
+	15	[738]	JMP      	0 1	; to 17
+	16	[739]	RETURN   	0 1
+	17	[741]	GETTABLE 	2 0 -7	; "m_teamConfigArr"
+	18	[741]	SELF     	3 0 -6	; "GetRound"
+	19	[741]	CALL     	3 2 2
+	20	[741]	GETTABLE 	2 2 3
+	21	[741]	GETTABLE 	2 2 -8	; "teamRobot"
+	22	[742]	GETTABUP 	3 0 -9	; _ENV "Table"
+	23	[742]	GETTABLE 	3 3 -10	; "ListWeightSelectOne"
+	24	[742]	MOVE     	4 2
+	25	[742]	CALL     	3 2 2
+	26	[742]	GETTABLE 	3 3 -11	; "Items"
+	27	[743]	GETTABUP 	4 0 -9	; _ENV "Table"
+	28	[743]	GETTABLE 	4 4 -12	; "DeepCopy"
+	29	[743]	GETTABUP 	5 0 -9	; _ENV "Table"
+	30	[743]	GETTABLE 	5 5 -13	; "ListRandomSelectOne"
+	31	[743]	GETTABLE 	6 0 -14	; "m_robotConfig"
+	32	[743]	GETTABLE 	7 3 -15	; 1
+	33	[743]	GETTABLE 	6 6 7
+	34	[743]	CALL     	5 2 0
+	35	[743]	CALL     	4 0 2
+	36	[745]	SELF     	5 0 -16	; "ConvertRobotSpeed"
+	37	[745]	MOVE     	7 4
+	38	[745]	CALL     	5 3 1
+	39	[746]	GETTABLE 	5 0 -17	; "m_robotAllData"
+	40	[746]	GETTABLE 	5 5 -18	; "TeamMate"
+	41	[746]	GETTABLE 	6 4 -20	; "speed"
+	42	[746]	SETTABLE 	5 -19 6	; "Speed" -
+	43	[747]	GETTABLE 	5 0 -17	; "m_robotAllData"
+	44	[747]	GETTABLE 	5 5 -18	; "TeamMate"
+	45	[747]	GETTABLE 	6 4 -22	; "id"
+	46	[747]	SETTABLE 	5 -21 6	; "ID" -
+	47	[748]	SELF     	5 0 -23	; "SaveRobotAllData"
+	48	[748]	CALL     	5 2 1
+	49	[750]	TEST     	1 0
+	50	[750]	JMP      	0 4	; to 55
+	51	[751]	SELF     	5 0 -24	; "SetCurState"
+	52	[751]	GETTABUP 	7 0 -25	; _ENV "TeamActivityState"
+	53	[751]	GETTABLE 	7 7 -26	; "HasTeamMate"
+	54	[751]	CALL     	5 3 1
+	55	[753]	RETURN   	0 1
+constants (26) for 0000018BCD305BF0:
+	1	"ClearAllCache"
+	2	"ResetLastShownScoreStruct"
+	3	"SetCurScore"
+	4	0
+	5	"ResetRobotAllData"
+	6	"GetRound"
+	7	"m_teamConfigArr"
+	8	"teamRobot"
+	9	"Table"
+	10	"ListWeightSelectOne"
+	11	"Items"
+	12	"DeepCopy"
+	13	"ListRandomSelectOne"
+	14	"m_robotConfig"
+	15	1
+	16	"ConvertRobotSpeed"
+	17	"m_robotAllData"
+	18	"TeamMate"
+	19	"Speed"
+	20	"speed"
+	21	"ID"
+	22	"id"
+	23	"SaveRobotAllData"
+	24	"SetCurState"
+	25	"TeamActivityState"
+	26	"HasTeamMate"
+locals (5) for 0000018BCD305BF0:
+	0	self	1	56
+	1	instantSwitchState	1	56
+	2	robots	22	56
+	3	robotStrings	27	56
+	4	robot	36	56
+upvalues (1) for 0000018BCD305BF0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:755,787> (136 instructions at 0000018BCD304F70)
+2 params, 10 slots, 1 upvalue, 6 locals, 27 constants, 0 functions
+	1	[756]	SELF     	2 0 -1	; "BILogAction"
+	2	[756]	GETTABLE 	4 0 -2	; "m_activityDefinition"
+	3	[756]	GETTABLE 	4 4 -3	; "MatchRivalBIType"
+	4	[756]	CALL     	2 3 1
+	5	[758]	SELF     	2 0 -4	; "GetRound"
+	6	[758]	CALL     	2 2 2
+	7	[758]	GETTABLE 	3 0 -5	; "m_teamConfigArr"
+	8	[758]	LEN      	3 3
+	9	[758]	LT       	0 3 2
+	10	[758]	JMP      	0 1	; to 12
+	11	[759]	RETURN   	0 1
+	12	[761]	GETTABLE 	2 0 -5	; "m_teamConfigArr"
+	13	[761]	SELF     	3 0 -4	; "GetRound"
+	14	[761]	CALL     	3 2 2
+	15	[761]	GETTABLE 	2 2 3
+	16	[761]	GETTABLE 	2 2 -6	; "rivalRobot"
+	17	[762]	GETTABUP 	3 0 -7	; _ENV "Table"
+	18	[762]	GETTABLE 	3 3 -8	; "ListWeightSelectOne"
+	19	[762]	MOVE     	4 2
+	20	[762]	CALL     	3 2 2
+	21	[762]	GETTABLE 	3 3 -9	; "Items"
+	22	[764]	GETTABUP 	4 0 -7	; _ENV "Table"
+	23	[764]	GETTABLE 	4 4 -10	; "DeepCopy"
+	24	[764]	GETTABUP 	5 0 -7	; _ENV "Table"
+	25	[764]	GETTABLE 	5 5 -11	; "ListRandomSelectOne"
+	26	[764]	GETTABLE 	6 0 -12	; "m_robotConfig"
+	27	[764]	GETTABLE 	7 3 -13	; 1
+	28	[764]	GETTABLE 	6 6 7
+	29	[764]	CALL     	5 2 0
+	30	[764]	CALL     	4 0 2
+	31	[765]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	32	[765]	GETTABLE 	5 5 -15	; "TeamMate"
+	33	[765]	GETTABLE 	5 5 -16	; "ID"
+	34	[765]	TEST     	5 0
+	35	[765]	JMP      	0 6	; to 42
+	36	[765]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	37	[765]	GETTABLE 	5 5 -15	; "TeamMate"
+	38	[765]	GETTABLE 	5 5 -16	; "ID"
+	39	[765]	GETTABLE 	6 4 -17	; "id"
+	40	[765]	EQ       	1 5 6
+	41	[765]	JMP      	0 11	; to 53
+	42	[765]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	43	[765]	GETTABLE 	5 5 -18	; "RivalB"
+	44	[765]	GETTABLE 	5 5 -16	; "ID"
+	45	[765]	TEST     	5 0
+	46	[765]	JMP      	0 17	; to 64
+	47	[765]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	48	[765]	GETTABLE 	5 5 -18	; "RivalB"
+	49	[765]	GETTABLE 	5 5 -16	; "ID"
+	50	[765]	GETTABLE 	6 4 -17	; "id"
+	51	[765]	EQ       	0 5 6
+	52	[765]	JMP      	0 11	; to 64
+	53	[766]	GETTABUP 	5 0 -7	; _ENV "Table"
+	54	[766]	GETTABLE 	5 5 -10	; "DeepCopy"
+	55	[766]	GETTABUP 	6 0 -7	; _ENV "Table"
+	56	[766]	GETTABLE 	6 6 -11	; "ListRandomSelectOne"
+	57	[766]	GETTABLE 	7 0 -12	; "m_robotConfig"
+	58	[766]	GETTABLE 	8 3 -13	; 1
+	59	[766]	GETTABLE 	7 7 8
+	60	[766]	CALL     	6 2 0
+	61	[766]	CALL     	5 0 2
+	62	[766]	MOVE     	4 5
+	63	[766]	JMP      	0 -33	; to 31
+	64	[769]	SELF     	5 0 -19	; "ConvertRobotSpeed"
+	65	[769]	MOVE     	7 4
+	66	[769]	CALL     	5 3 1
+	67	[770]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	68	[770]	GETTABLE 	5 5 -20	; "RivalA"
+	69	[770]	GETTABLE 	6 4 -22	; "speed"
+	70	[770]	SETTABLE 	5 -21 6	; "Speed" -
+	71	[771]	GETTABLE 	5 0 -14	; "m_robotAllData"
+	72	[771]	GETTABLE 	5 5 -20	; "RivalA"
+	73	[771]	GETTABLE 	6 4 -17	; "id"
+	74	[771]	SETTABLE 	5 -16 6	; "ID" -
+	75	[773]	GETTABUP 	5 0 -7	; _ENV "Table"
+	76	[773]	GETTABLE 	5 5 -10	; "DeepCopy"
+	77	[773]	GETTABUP 	6 0 -7	; _ENV "Table"
+	78	[773]	GETTABLE 	6 6 -11	; "ListRandomSelectOne"
+	79	[773]	GETTABLE 	7 0 -12	; "m_robotConfig"
+	80	[773]	GETTABLE 	8 3 -23	; 2
+	81	[773]	GETTABLE 	7 7 8
+	82	[773]	CALL     	6 2 0
+	83	[773]	CALL     	5 0 2
+	84	[774]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	85	[774]	GETTABLE 	6 6 -15	; "TeamMate"
+	86	[774]	GETTABLE 	6 6 -16	; "ID"
+	87	[774]	TEST     	6 0
+	88	[774]	JMP      	0 6	; to 95
+	89	[774]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	90	[774]	GETTABLE 	6 6 -15	; "TeamMate"
+	91	[774]	GETTABLE 	6 6 -16	; "ID"
+	92	[774]	GETTABLE 	7 5 -17	; "id"
+	93	[774]	EQ       	1 6 7
+	94	[774]	JMP      	0 11	; to 106
+	95	[774]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	96	[774]	GETTABLE 	6 6 -20	; "RivalA"
+	97	[774]	GETTABLE 	6 6 -16	; "ID"
+	98	[774]	TEST     	6 0
+	99	[774]	JMP      	0 17	; to 117
+	100	[774]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	101	[774]	GETTABLE 	6 6 -20	; "RivalA"
+	102	[774]	GETTABLE 	6 6 -16	; "ID"
+	103	[774]	GETTABLE 	7 5 -17	; "id"
+	104	[774]	EQ       	0 6 7
+	105	[774]	JMP      	0 11	; to 117
+	106	[775]	GETTABUP 	6 0 -7	; _ENV "Table"
+	107	[775]	GETTABLE 	6 6 -10	; "DeepCopy"
+	108	[775]	GETTABUP 	7 0 -7	; _ENV "Table"
+	109	[775]	GETTABLE 	7 7 -11	; "ListRandomSelectOne"
+	110	[775]	GETTABLE 	8 0 -12	; "m_robotConfig"
+	111	[775]	GETTABLE 	9 3 -23	; 2
+	112	[775]	GETTABLE 	8 8 9
+	113	[775]	CALL     	7 2 0
+	114	[775]	CALL     	6 0 2
+	115	[775]	MOVE     	5 6
+	116	[775]	JMP      	0 -33	; to 84
+	117	[778]	SELF     	6 0 -19	; "ConvertRobotSpeed"
+	118	[778]	MOVE     	8 5
+	119	[778]	CALL     	6 3 1
+	120	[779]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	121	[779]	GETTABLE 	6 6 -18	; "RivalB"
+	122	[779]	GETTABLE 	7 5 -22	; "speed"
+	123	[779]	SETTABLE 	6 -21 7	; "Speed" -
+	124	[780]	GETTABLE 	6 0 -14	; "m_robotAllData"
+	125	[780]	GETTABLE 	6 6 -18	; "RivalB"
+	126	[780]	GETTABLE 	7 5 -17	; "id"
+	127	[780]	SETTABLE 	6 -16 7	; "ID" -
+	128	[782]	SELF     	6 0 -24	; "SaveRobotAllData"
+	129	[782]	CALL     	6 2 1
+	130	[784]	TEST     	1 0
+	131	[784]	JMP      	0 4	; to 136
+	132	[785]	SELF     	6 0 -25	; "SetCurState"
+	133	[785]	GETTABUP 	8 0 -26	; _ENV "TeamActivityState"
+	134	[785]	GETTABLE 	8 8 -27	; "HasRival"
+	135	[785]	CALL     	6 3 1
+	136	[787]	RETURN   	0 1
+constants (27) for 0000018BCD304F70:
+	1	"BILogAction"
+	2	"m_activityDefinition"
+	3	"MatchRivalBIType"
+	4	"GetRound"
+	5	"m_teamConfigArr"
+	6	"rivalRobot"
+	7	"Table"
+	8	"ListWeightSelectOne"
+	9	"Items"
+	10	"DeepCopy"
+	11	"ListRandomSelectOne"
+	12	"m_robotConfig"
+	13	1
+	14	"m_robotAllData"
+	15	"TeamMate"
+	16	"ID"
+	17	"id"
+	18	"RivalB"
+	19	"ConvertRobotSpeed"
+	20	"RivalA"
+	21	"Speed"
+	22	"speed"
+	23	2
+	24	"SaveRobotAllData"
+	25	"SetCurState"
+	26	"TeamActivityState"
+	27	"HasRival"
+locals (6) for 0000018BCD304F70:
+	0	self	1	137
+	1	instantSwitchState	1	137
+	2	robots	17	137
+	3	robotStrings	22	137
+	4	robotA	31	137
+	5	robotB	84	137
+upvalues (1) for 0000018BCD304F70:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:790,802> (32 instructions at 0000018BCD305170)
+2 params, 12 slots, 1 upvalue, 8 locals, 14 constants, 1 function
+	1	[791]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[791]	GETTABLE 	3 1 -2	; "speed"
+	3	[791]	CALL     	2 2 4
+	4	[791]	JMP      	0 20	; to 25
+	5	[792]	GETTABUP 	7 0 -3	; _ENV "StringUtil"
+	6	[792]	GETTABLE 	7 7 -4	; "Split"
+	7	[792]	MOVE     	8 6
+	8	[792]	LOADK    	9 -5	; "-"
+	9	[792]	CALL     	7 3 2
+	10	[793]	GETTABLE 	8 1 -2	; "speed"
+	11	[793]	NEWTABLE 	9 0 3
+	12	[794]	GETTABUP 	10 0 -7	; _ENV "tonumber"
+	13	[794]	GETTABLE 	11 7 -8	; 1
+	14	[794]	CALL     	10 2 2
+	15	[794]	SETTABLE 	9 -6 10	; "Time" -
+	16	[795]	GETTABUP 	10 0 -7	; _ENV "tonumber"
+	17	[795]	GETTABLE 	11 7 -10	; 2
+	18	[795]	CALL     	10 2 2
+	19	[795]	SETTABLE 	9 -9 10	; "Score" -
+	20	[796]	GETTABUP 	10 0 -7	; _ENV "tonumber"
+	21	[796]	GETTABLE 	11 7 -12	; 3
+	22	[796]	CALL     	10 2 2
+	23	[796]	SETTABLE 	9 -11 10	; "Type" -
+	24	[797]	SETTABLE 	8 5 9
+	25	[791]	TFORCALL 	2 2
+	26	[791]	TFORLOOP 	4 -22	; to 5
+	27	[799]	GETTABUP 	2 0 -13	; _ENV "table"
+	28	[799]	GETTABLE 	2 2 -14	; "sort"
+	29	[799]	GETTABLE 	3 1 -2	; "speed"
+	30	[801]	CLOSURE  	4 0	; 0000018BCD305C70
+	31	[799]	CALL     	2 3 1
+	32	[802]	RETURN   	0 1
+constants (14) for 0000018BCD305170:
+	1	"ipairs"
+	2	"speed"
+	3	"StringUtil"
+	4	"Split"
+	5	"-"
+	6	"Time"
+	7	"tonumber"
+	8	1
+	9	"Score"
+	10	2
+	11	"Type"
+	12	3
+	13	"table"
+	14	"sort"
+locals (8) for 0000018BCD305170:
+	0	self	1	33
+	1	robot	1	33
+	2	(for generator)	4	27
+	3	(for state)	4	27
+	4	(for control)	4	27
+	5	i	5	25
+	6	data	5	25
+	7	arr	10	25
+upvalues (1) for 0000018BCD305170:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:799,801> (8 instructions at 0000018BCD305C70)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[800]	GETTABLE 	2 0 -1	; "Time"
+	2	[800]	GETTABLE 	3 1 -1	; "Time"
+	3	[800]	LT       	1 2 3
+	4	[800]	JMP      	0 1	; to 6
+	5	[800]	LOADBOOL 	2 0 1
+	6	[800]	LOADBOOL 	2 1 0
+	7	[800]	RETURN   	2 2
+	8	[801]	RETURN   	0 1
+constants (1) for 0000018BCD305C70:
+	1	"Time"
+locals (2) for 0000018BCD305C70:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000018BCD305C70:
+
+function <TeamActivityModel.lua:804,808> (10 instructions at 0000018BCD304EF0)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[805]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[805]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[805]	MOVE     	2 0
+	4	[805]	CALL     	1 2 1
+	5	[806]	SELF     	1 0 -3	; "ClearAllCache"
+	6	[806]	CALL     	1 2 1
+	7	[807]	SELF     	1 0 -4	; "ClearCacheReward"
+	8	[807]	LOADBOOL 	3 1 0
+	9	[807]	CALL     	1 3 1
+	10	[808]	RETURN   	0 1
+constants (4) for 0000018BCD304EF0:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"ClearAllCache"
+	4	"ClearCacheReward"
+locals (1) for 0000018BCD304EF0:
+	0	self	1	11
+upvalues (1) for 0000018BCD304EF0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:810,819> (9 instructions at 0000018BCD305CF0)
+1 param, 2 slots, 0 upvalues, 1 local, 9 constants, 0 functions
+	1	[811]	SETTABLE 	0 -1 -2	; "m_rivalTeamScore" nil
+	2	[812]	SETTABLE 	0 -3 -2	; "m_playerTeamScore" nil
+	3	[813]	SETTABLE 	0 -4 -2	; "m_rank" nil
+	4	[814]	SETTABLE 	0 -5 -2	; "m_increase" nil
+	5	[815]	SETTABLE 	0 -6 -2	; "m_decrease" nil
+	6	[816]	SETTABLE 	0 -7 -2	; "m_topTipCondition4" nil
+	7	[817]	SETTABLE 	0 -8 -2	; "m_lastTopTipTime" nil
+	8	[818]	SETTABLE 	0 -9 -2	; "m_bRaceEndWindowPop" nil
+	9	[819]	RETURN   	0 1
+constants (9) for 0000018BCD305CF0:
+	1	"m_rivalTeamScore"
+	2	nil
+	3	"m_playerTeamScore"
+	4	"m_rank"
+	5	"m_increase"
+	6	"m_decrease"
+	7	"m_topTipCondition4"
+	8	"m_lastTopTipTime"
+	9	"m_bRaceEndWindowPop"
+locals (1) for 0000018BCD305CF0:
+	0	self	1	10
+upvalues (0) for 0000018BCD305CF0:
+
+function <TeamActivityModel.lua:821,869> (100 instructions at 0000018BCD304DF0)
+1 param, 12 slots, 1 upvalue, 2 locals, 38 constants, 3 functions
+	1	[822]	SELF     	1 0 -1	; "GetState"
+	2	[822]	LOADBOOL 	3 0 0
+	3	[822]	CALL     	1 3 2
+	4	[823]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[823]	GETTABLE 	2 2 -3	; "Started"
+	6	[823]	EQ       	0 1 2
+	7	[823]	JMP      	0 74	; to 82
+	8	[823]	GETTABLE 	2 0 -4	; "m_eventOrderScore"
+	9	[823]	EQ       	1 2 -5	; - nil
+	10	[823]	JMP      	0 71	; to 82
+	11	[824]	GETTABUP 	2 0 -6	; _ENV "GM"
+	12	[824]	GETTABLE 	2 2 -7	; "ActivityModuleManager"
+	13	[824]	SELF     	2 2 -8	; "AddRegister"
+	14	[824]	GETTABUP 	4 0 -7	; _ENV "ActivityModuleManager"
+	15	[824]	GETTABLE 	4 4 -9	; "ModuleType"
+	16	[824]	GETTABLE 	4 4 -10	; "EventScoreConfigAcquireProperty"
+	17	[825]	MOVE     	5 0
+	18	[826]	GETTABLE 	6 0 -4	; "m_eventOrderScore"
+	19	[827]	GETTABLE 	7 0 -11	; "m_activityDefinition"
+	20	[827]	GETTABLE 	7 7 -12	; "ScoreProperty"
+	21	[831]	CLOSURE  	8 0	; 0000018BCD305070
+	22	[834]	CLOSURE  	9 1	; 0000018BCD304E70
+	23	[835]	LOADNIL  	10 0
+	24	[837]	LOADBOOL 	11 1 0
+	25	[824]	CALL     	2 10 1
+	26	[838]	GETTABUP 	2 0 -6	; _ENV "GM"
+	27	[838]	GETTABLE 	2 2 -7	; "ActivityModuleManager"
+	28	[838]	SELF     	2 2 -8	; "AddRegister"
+	29	[838]	GETTABUP 	4 0 -7	; _ENV "ActivityModuleManager"
+	30	[838]	GETTABLE 	4 4 -9	; "ModuleType"
+	31	[838]	GETTABLE 	4 4 -13	; "LogicAcquireReward"
+	32	[838]	MOVE     	5 0
+	33	[838]	NEWTABLE 	6 0 1
+	34	[839]	GETTABLE 	7 0 -11	; "m_activityDefinition"
+	35	[839]	GETTABLE 	7 7 -14	; "TokenProperty"
+	36	[842]	CLOSURE  	8 2	; 0000018BCD312760
+	37	[842]	SETTABLE 	6 7 8
+	38	[838]	CALL     	2 5 1
+	39	[846]	SELF     	2 0 -15	; "SetLastShownRound"
+	40	[846]	SELF     	4 0 -16	; "GetRound"
+	41	[846]	CALL     	4 2 0
+	42	[846]	CALL     	2 0 1
+	43	[847]	SELF     	2 0 -17	; "SetLastShownToken"
+	44	[847]	SELF     	4 0 -18	; "GetToken"
+	45	[847]	CALL     	4 2 0
+	46	[847]	CALL     	2 0 1
+	47	[849]	SELF     	2 0 -20	; "_LoadRobotAllData"
+	48	[849]	CALL     	2 2 2
+	49	[849]	SETTABLE 	0 -19 2	; "m_robotAllData" -
+	50	[851]	SELF     	2 0 -21	; "GetCurState"
+	51	[851]	CALL     	2 2 2
+	52	[851]	GETTABUP 	3 0 -22	; _ENV "TeamActivityState"
+	53	[851]	GETTABLE 	3 3 -23	; "HasTeamMate"
+	54	[851]	EQ       	0 2 3
+	55	[851]	JMP      	0 9	; to 65
+	56	[852]	GETTABLE 	2 0 -19	; "m_robotAllData"
+	57	[852]	GETTABLE 	2 2 -24	; "RivalA"
+	58	[852]	GETTABLE 	2 2 -25	; "ID"
+	59	[852]	EQ       	1 2 -5	; - nil
+	60	[852]	JMP      	0 21	; to 82
+	61	[853]	SELF     	2 0 -26	; "ChooseRobot_TeamMate"
+	62	[853]	LOADBOOL 	4 1 0
+	63	[853]	CALL     	2 3 1
+	64	[854]	JMP      	0 17	; to 82
+	65	[855]	SELF     	2 0 -21	; "GetCurState"
+	66	[855]	CALL     	2 2 2
+	67	[855]	GETTABUP 	3 0 -22	; _ENV "TeamActivityState"
+	68	[855]	GETTABLE 	3 3 -27	; "HasRival"
+	69	[855]	EQ       	0 2 3
+	70	[855]	JMP      	0 11	; to 82
+	71	[856]	GETTABUP 	2 0 -6	; _ENV "GM"
+	72	[856]	GETTABLE 	2 2 -28	; "TutorialModel"
+	73	[856]	SELF     	2 2 -29	; "IsTutorialFinished"
+	74	[856]	LOADK    	4 -30	; "tutorial_team_window"
+	75	[856]	CALL     	2 3 2
+	76	[856]	TEST     	2 0
+	77	[856]	JMP      	0 4	; to 82
+	78	[857]	SELF     	2 0 -31	; "SetCurState"
+	79	[857]	GETTABUP 	4 0 -22	; _ENV "TeamActivityState"
+	80	[857]	GETTABLE 	4 4 -32	; "OnGoing"
+	81	[857]	CALL     	2 3 1
+	82	[862]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	83	[862]	GETTABLE 	2 2 -33	; "Ended"
+	84	[862]	EQ       	0 1 2
+	85	[862]	JMP      	0 4	; to 90
+	86	[864]	SELF     	2 0 -31	; "SetCurState"
+	87	[864]	GETTABUP 	4 0 -22	; _ENV "TeamActivityState"
+	88	[864]	GETTABLE 	4 4 -23	; "HasTeamMate"
+	89	[864]	CALL     	2 3 1
+	90	[867]	GETTABUP 	2 0 -34	; _ENV "EventDispatcher"
+	91	[867]	GETTABLE 	2 2 -35	; "DispatchEvent"
+	92	[867]	GETTABLE 	3 0 -11	; "m_activityDefinition"
+	93	[867]	GETTABLE 	3 3 -36	; "StateChangedEvent"
+	94	[867]	CALL     	2 2 1
+	95	[868]	GETTABUP 	2 0 -34	; _ENV "EventDispatcher"
+	96	[868]	GETTABLE 	2 2 -35	; "DispatchEvent"
+	97	[868]	GETTABUP 	3 0 -37	; _ENV "EEventType"
+	98	[868]	GETTABLE 	3 3 -38	; "OrderStatusChanged"
+	99	[868]	CALL     	2 2 1
+	100	[869]	RETURN   	0 1
+constants (38) for 0000018BCD304DF0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_eventOrderScore"
+	5	nil
+	6	"GM"
+	7	"ActivityModuleManager"
+	8	"AddRegister"
+	9	"ModuleType"
+	10	"EventScoreConfigAcquireProperty"
+	11	"m_activityDefinition"
+	12	"ScoreProperty"
+	13	"LogicAcquireReward"
+	14	"TokenProperty"
+	15	"SetLastShownRound"
+	16	"GetRound"
+	17	"SetLastShownToken"
+	18	"GetToken"
+	19	"m_robotAllData"
+	20	"_LoadRobotAllData"
+	21	"GetCurState"
+	22	"TeamActivityState"
+	23	"HasTeamMate"
+	24	"RivalA"
+	25	"ID"
+	26	"ChooseRobot_TeamMate"
+	27	"HasRival"
+	28	"TutorialModel"
+	29	"IsTutorialFinished"
+	30	"tutorial_team_window"
+	31	"SetCurState"
+	32	"OnGoing"
+	33	"Ended"
+	34	"EventDispatcher"
+	35	"DispatchEvent"
+	36	"StateChangedEvent"
+	37	"EEventType"
+	38	"OrderStatusChanged"
+locals (2) for 0000018BCD304DF0:
+	0	self	1	101
+	1	state	4	101
+upvalues (1) for 0000018BCD304DF0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:828,831> (17 instructions at 0000018BCD305070)
+2 params, 8 slots, 2 upvalues, 3 locals, 6 constants, 0 functions
+	1	[829]	GETTABUP 	2 0 -1	; _ENV "EBIType"
+	2	[829]	GETTABLE 	2 2 -2	; "FinishOrder"
+	3	[829]	EQ       	0 1 2
+	4	[829]	JMP      	0 4	; to 9
+	5	[829]	GETTABUP 	2 0 -3	; _ENV "TeamActivityAddScoreScene"
+	6	[829]	GETTABLE 	2 2 -4	; "Order"
+	7	[829]	TEST     	2 1
+	8	[829]	JMP      	0 2	; to 11
+	9	[829]	GETTABUP 	2 0 -3	; _ENV "TeamActivityAddScoreScene"
+	10	[829]	GETTABLE 	2 2 -5	; "Buy"
+	11	[830]	GETUPVAL 	3 1	; self
+	12	[830]	SELF     	3 3 -6	; "AddScore"
+	13	[830]	MOVE     	5 0
+	14	[830]	MOVE     	6 2
+	15	[830]	LOADNIL  	7 0
+	16	[830]	CALL     	3 5 1
+	17	[831]	RETURN   	0 1
+constants (6) for 0000018BCD305070:
+	1	"EBIType"
+	2	"FinishOrder"
+	3	"TeamActivityAddScoreScene"
+	4	"Order"
+	5	"Buy"
+	6	"AddScore"
+locals (3) for 0000018BCD305070:
+	0	num	1	18
+	1	scene	1	18
+	2	addScoreScene	11	18
+upvalues (2) for 0000018BCD305070:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:832,834> (5 instructions at 0000018BCD304E70)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[833]	GETUPVAL 	0 0	; self
+	2	[833]	SELF     	0 0 -1	; "CanAddScore"
+	3	[833]	TAILCALL 	0 2 0
+	4	[833]	RETURN   	0 0
+	5	[834]	RETURN   	0 1
+constants (1) for 0000018BCD304E70:
+	1	"CanAddScore"
+locals (0) for 0000018BCD304E70:
+upvalues (1) for 0000018BCD304E70:
+	0	self	1	0
+
+function <TeamActivityModel.lua:839,842> (21 instructions at 0000018BCD312760)
+2 params, 8 slots, 2 upvalues, 3 locals, 6 constants, 0 functions
+	1	[840]	GETUPVAL 	2 0	; self
+	2	[840]	SELF     	2 2 -1	; "GetStageRewards"
+	3	[840]	CALL     	2 2 2
+	4	[840]	GETUPVAL 	3 0	; self
+	5	[840]	SELF     	3 3 -1	; "GetStageRewards"
+	6	[840]	CALL     	3 2 2
+	7	[840]	LEN      	3 3
+	8	[840]	GETTABLE 	2 2 3
+	9	[840]	GETTABLE 	2 2 -2	; "score"
+	10	[841]	GETUPVAL 	3 0	; self
+	11	[841]	SELF     	3 3 -3	; "SetToken"
+	12	[841]	GETTABUP 	5 1 -4	; _ENV "math"
+	13	[841]	GETTABLE 	5 5 -5	; "min"
+	14	[841]	GETUPVAL 	6 0	; self
+	15	[841]	SELF     	6 6 -6	; "GetToken"
+	16	[841]	CALL     	6 2 2
+	17	[841]	ADD      	6 0 6
+	18	[841]	MOVE     	7 2
+	19	[841]	CALL     	5 3 0
+	20	[841]	CALL     	3 0 1
+	21	[842]	RETURN   	0 1
+constants (6) for 0000018BCD312760:
+	1	"GetStageRewards"
+	2	"score"
+	3	"SetToken"
+	4	"math"
+	5	"min"
+	6	"GetToken"
+locals (3) for 0000018BCD312760:
+	0	num	1	22
+	1	scene	1	22
+	2	maxTokenNum	10	22
+upvalues (2) for 0000018BCD312760:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:872,874> (3 instructions at 0000018BCD313A60)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[873]	GETTABLE 	1 0 -1	; "m_teamRewardConfig"
+	2	[873]	RETURN   	1 2
+	3	[874]	RETURN   	0 1
+constants (1) for 0000018BCD313A60:
+	1	"m_teamRewardConfig"
+locals (1) for 0000018BCD313A60:
+	0	self	1	4
+upvalues (0) for 0000018BCD313A60:
+
+function <TeamActivityModel.lua:878,880> (8 instructions at 0000018BCD3142E0)
+2 params, 4 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[879]	GETTABLE 	2 0 -1	; "m_teamConfigArr"
+	2	[879]	GETTABLE 	2 2 1
+	3	[879]	GETTABLE 	2 2 -2	; "reward_1"
+	4	[879]	GETTABLE 	3 0 -1	; "m_teamConfigArr"
+	5	[879]	GETTABLE 	3 3 1
+	6	[879]	GETTABLE 	3 3 -3	; "reward_2"
+	7	[879]	RETURN   	2 3
+	8	[880]	RETURN   	0 1
+constants (3) for 0000018BCD3142E0:
+	1	"m_teamConfigArr"
+	2	"reward_1"
+	3	"reward_2"
+locals (2) for 0000018BCD3142E0:
+	0	self	1	9
+	1	round	1	9
+upvalues (0) for 0000018BCD3142E0:
+
+function <TeamActivityModel.lua:882,916> (16 instructions at 0000018BCD3144E0)
+3 params, 8 slots, 1 upvalue, 5 locals, 5 constants, 1 function
+	1	[883]	GETTABUP 	3 0 -1	; _ENV "UIHelper"
+	2	[883]	GETTABLE 	3 3 -2	; "GetRandomAvatarIcon"
+	3	[883]	MOVE     	4 1
+	4	[883]	LOADBOOL 	5 1 0
+	5	[883]	CALL     	3 3 2
+	6	[884]	GETTABUP 	4 0 -1	; _ENV "UIHelper"
+	7	[884]	GETTABLE 	4 4 -3	; "GetRandomAvatarIconFrame"
+	8	[884]	MOVE     	5 1
+	9	[884]	LOADBOOL 	6 1 0
+	10	[884]	CALL     	4 3 2
+	11	[885]	GETTABUP 	5 0 -4	; _ENV "ApiMessage"
+	12	[885]	GETTABLE 	5 5 -5	; "GetRobotNameList"
+	13	[885]	MOVE     	6 1
+	14	[915]	CLOSURE  	7 0	; 0000018BCD313260
+	15	[885]	CALL     	5 3 1
+	16	[916]	RETURN   	0 1
+constants (5) for 0000018BCD3144E0:
+	1	"UIHelper"
+	2	"GetRandomAvatarIcon"
+	3	"GetRandomAvatarIconFrame"
+	4	"ApiMessage"
+	5	"GetRobotNameList"
+locals (5) for 0000018BCD3144E0:
+	0	self	1	17
+	1	num	1	17
+	2	callback	1	17
+	3	avatars	6	17
+	4	frames	11	17
+upvalues (1) for 0000018BCD3144E0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:885,915> (83 instructions at 0000018BCD313260)
+2 params, 7 slots, 6 upvalues, 3 locals, 20 constants, 0 functions
+	1	[886]	TEST     	0 0
+	2	[886]	JMP      	0 3	; to 6
+	3	[886]	GETTABLE 	2 1 -1	; "rcode"
+	4	[886]	EQ       	0 2 -2	; - 1
+	5	[886]	JMP      	0 1	; to 7
+	6	[887]	RETURN   	0 1
+	7	[890]	GETTABLE 	2 1 -3	; "robot_names"
+	8	[891]	GETTABUP 	3 0 -4	; _ENV "Table"
+	9	[891]	GETTABLE 	3 3 -5	; "IsEmpty"
+	10	[891]	MOVE     	4 2
+	11	[891]	CALL     	3 2 2
+	12	[891]	TEST     	3 1
+	13	[891]	JMP      	0 4	; to 18
+	14	[891]	LEN      	3 2
+	15	[891]	GETUPVAL 	4 1	; num
+	16	[891]	EQ       	1 3 4
+	17	[891]	JMP      	0 14	; to 32
+	18	[892]	GETTABUP 	3 0 -6	; _ENV "GameConfig"
+	19	[892]	GETTABLE 	3 3 -7	; "IsTestMode"
+	20	[892]	CALL     	3 1 2
+	21	[892]	TEST     	3 0
+	22	[892]	JMP      	0 8	; to 31
+	23	[893]	GETTABUP 	3 0 -8	; _ENV "Log"
+	24	[893]	GETTABLE 	3 3 -9	; "Error"
+	25	[893]	LOADK    	4 -10	; "[2v2]\230\138\165\229\144\141\232\142\183\229\143\150\229\129\135\228\186\186\229\144\141\229\173\151\228\184\186\231\169\186\230\136\150\230\149\176\233\135\143\228\184\141\229\175\185\239\188\140\230\149\176\233\135\143\239\188\154"
+	26	[893]	GETTABUP 	5 0 -11	; _ENV "tostring"
+	27	[893]	LEN      	6 2
+	28	[893]	CALL     	5 2 2
+	29	[893]	CONCAT   	4 4 5
+	30	[893]	CALL     	3 2 1
+	31	[895]	RETURN   	0 1
+	32	[898]	GETUPVAL 	3 1	; num
+	33	[898]	EQ       	0 3 -2	; - 1
+	34	[898]	JMP      	0 13	; to 48
+	35	[899]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	36	[899]	GETTABLE 	3 3 -13	; "TeamMate"
+	37	[899]	GETTABUP 	4 3 -2	; avatars 1
+	38	[899]	SETTABLE 	3 -14 4	; "Avatar" -
+	39	[900]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	40	[900]	GETTABLE 	3 3 -13	; "TeamMate"
+	41	[900]	GETTABUP 	4 4 -2	; frames 1
+	42	[900]	SETTABLE 	3 -15 4	; "Frame" -
+	43	[901]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	44	[901]	GETTABLE 	3 3 -13	; "TeamMate"
+	45	[901]	GETTABLE 	4 2 -2	; 1
+	46	[901]	SETTABLE 	3 -16 4	; "Name" -
+	47	[901]	JMP      	0 27	; to 75
+	48	[902]	GETUPVAL 	3 1	; num
+	49	[902]	EQ       	0 3 -17	; - 2
+	50	[902]	JMP      	0 24	; to 75
+	51	[903]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	52	[903]	GETTABLE 	3 3 -18	; "RivalA"
+	53	[903]	GETTABUP 	4 3 -2	; avatars 1
+	54	[903]	SETTABLE 	3 -14 4	; "Avatar" -
+	55	[904]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	56	[904]	GETTABLE 	3 3 -18	; "RivalA"
+	57	[904]	GETTABUP 	4 4 -2	; frames 1
+	58	[904]	SETTABLE 	3 -15 4	; "Frame" -
+	59	[905]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	60	[905]	GETTABLE 	3 3 -18	; "RivalA"
+	61	[905]	GETTABLE 	4 2 -2	; 1
+	62	[905]	SETTABLE 	3 -16 4	; "Name" -
+	63	[906]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	64	[906]	GETTABLE 	3 3 -19	; "RivalB"
+	65	[906]	GETTABUP 	4 3 -17	; avatars 2
+	66	[906]	SETTABLE 	3 -14 4	; "Avatar" -
+	67	[907]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	68	[907]	GETTABLE 	3 3 -19	; "RivalB"
+	69	[907]	GETTABUP 	4 4 -17	; frames 2
+	70	[907]	SETTABLE 	3 -15 4	; "Frame" -
+	71	[908]	GETTABUP 	3 2 -12	; self "m_robotAllData"
+	72	[908]	GETTABLE 	3 3 -19	; "RivalB"
+	73	[908]	GETTABLE 	4 2 -17	; 2
+	74	[908]	SETTABLE 	3 -16 4	; "Name" -
+	75	[910]	GETUPVAL 	3 2	; self
+	76	[910]	SELF     	3 3 -20	; "SaveRobotAllData"
+	77	[910]	CALL     	3 2 1
+	78	[912]	GETUPVAL 	3 5	; callback
+	79	[912]	TEST     	3 0
+	80	[912]	JMP      	0 2	; to 83
+	81	[913]	GETUPVAL 	3 5	; callback
+	82	[913]	CALL     	3 1 1
+	83	[915]	RETURN   	0 1
+constants (20) for 0000018BCD313260:
+	1	"rcode"
+	2	1
+	3	"robot_names"
+	4	"Table"
+	5	"IsEmpty"
+	6	"GameConfig"
+	7	"IsTestMode"
+	8	"Log"
+	9	"Error"
+	10	"[2v2]\230\138\165\229\144\141\232\142\183\229\143\150\229\129\135\228\186\186\229\144\141\229\173\151\228\184\186\231\169\186\230\136\150\230\149\176\233\135\143\228\184\141\229\175\185\239\188\140\230\149\176\233\135\143\239\188\154"
+	11	"tostring"
+	12	"m_robotAllData"
+	13	"TeamMate"
+	14	"Avatar"
+	15	"Frame"
+	16	"Name"
+	17	2
+	18	"RivalA"
+	19	"RivalB"
+	20	"SaveRobotAllData"
+locals (3) for 0000018BCD313260:
+	0	success	1	84
+	1	resp	1	84
+	2	names	8	84
+upvalues (6) for 0000018BCD313260:
+	0	_ENV	0	0
+	1	num	1	1
+	2	self	1	0
+	3	avatars	1	3
+	4	frames	1	4
+	5	callback	1	2
+
+function <TeamActivityModel.lua:918,920> (4 instructions at 0000018BCD313B60)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[919]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[919]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[919]	RETURN   	1 2
+	4	[920]	RETURN   	0 1
+constants (2) for 0000018BCD313B60:
+	1	"m_activityDefinition"
+	2	"ResourceLabels"
+locals (1) for 0000018BCD313B60:
+	0	self	1	5
+upvalues (0) for 0000018BCD313B60:
+
+function <TeamActivityModel.lua:922,924> (7 instructions at 0000018BCD3139E0)
+1 param, 6 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[923]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[923]	SELF     	1 1 -2	; "Set"
+	3	[923]	GETTABUP 	3 0 -3	; DBKeys "PopEndWindow"
+	4	[923]	GETUPVAL 	4 1	; DBColumnValue
+	5	[923]	LOADK    	5 -4	; "1"
+	6	[923]	CALL     	1 5 1
+	7	[924]	RETURN   	0 1
+constants (4) for 0000018BCD3139E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopEndWindow"
+	4	"1"
+locals (1) for 0000018BCD3139E0:
+	0	self	1	8
+upvalues (2) for 0000018BCD3139E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:926,928> (11 instructions at 0000018BCD312AE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[927]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[927]	SELF     	1 1 -2	; "GetValue"
+	3	[927]	GETTABUP 	3 0 -3	; DBKeys "PopEndWindow"
+	4	[927]	GETUPVAL 	4 1	; DBColumnValue
+	5	[927]	CALL     	1 4 2
+	6	[927]	EQ       	0 1 -4	; - "1"
+	7	[927]	JMP      	0 1	; to 9
+	8	[927]	LOADBOOL 	1 0 1
+	9	[927]	LOADBOOL 	1 1 0
+	10	[927]	RETURN   	1 2
+	11	[928]	RETURN   	0 1
+constants (4) for 0000018BCD312AE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PopEndWindow"
+	4	"1"
+locals (1) for 0000018BCD312AE0:
+	0	self	1	12
+upvalues (2) for 0000018BCD312AE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:930,934> (19 instructions at 0000018BCD313FE0)
+1 param, 4 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[931]	GETTABLE 	1 0 -1	; "m_teamRewardConfig"
+	2	[931]	TEST     	1 0
+	3	[931]	JMP      	0 15	; to 19
+	4	[931]	GETTABLE 	1 0 -2	; "m_teamConfigArr"
+	5	[931]	TEST     	1 0
+	6	[931]	JMP      	0 12	; to 19
+	7	[932]	SELF     	1 0 -3	; "GetToken"
+	8	[932]	CALL     	1 2 2
+	9	[932]	GETTABLE 	2 0 -1	; "m_teamRewardConfig"
+	10	[932]	GETTABLE 	3 0 -1	; "m_teamRewardConfig"
+	11	[932]	LEN      	3 3
+	12	[932]	GETTABLE 	2 2 3
+	13	[932]	GETTABLE 	2 2 -4	; "score"
+	14	[932]	LE       	1 2 1
+	15	[932]	JMP      	0 1	; to 17
+	16	[932]	LOADBOOL 	1 0 1
+	17	[932]	LOADBOOL 	1 1 0
+	18	[932]	RETURN   	1 2
+	19	[934]	RETURN   	0 1
+constants (4) for 0000018BCD313FE0:
+	1	"m_teamRewardConfig"
+	2	"m_teamConfigArr"
+	3	"GetToken"
+	4	"score"
+locals (1) for 0000018BCD313FE0:
+	0	self	1	20
+upvalues (0) for 0000018BCD313FE0:
+
+function <TeamActivityModel.lua:937,968> (37 instructions at 0000018BCD312B60)
+1 param, 5 slots, 1 upvalue, 1 local, 24 constants, 3 functions
+	1	[938]	NEWTABLE 	1 0 11
+	2	[939]	SETTABLE 	1 -1 -2	; "Type" "TeamActivity"
+	3	[940]	NEWTABLE 	2 2 0
+	4	[940]	GETTABLE 	3 0 -4	; "m_activityDefinition"
+	5	[940]	GETTABLE 	3 3 -5	; "StateChangedEvent"
+	6	[940]	GETTABLE 	4 0 -4	; "m_activityDefinition"
+	7	[940]	GETTABLE 	4 4 -6	; "FinishedAllRoundEvent"
+	8	[940]	SETLIST  	2 2 1	; 1
+	9	[940]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	10	[941]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	11	[941]	GETTABLE 	2 2 -8	; "HudEntryPrefabName"
+	12	[941]	SETTABLE 	1 -7 2	; "EntryPrefabConfigName" -
+	13	[944]	CLOSURE  	2 0	; 0000018BCD3135E0
+	14	[944]	SETTABLE 	1 -9 2	; "CheckFunc" -
+	15	[945]	GETTABUP 	2 0 -11	; _ENV "EHudSideBarType"
+	16	[945]	GETTABLE 	2 2 -12	; "Left"
+	17	[945]	SETTABLE 	1 -10 2	; "HudSideBarType" -
+	18	[946]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	19	[946]	GETTABLE 	2 2 -13	; "EntryButtonKey"
+	20	[946]	SETTABLE 	1 -13 2	; "EntryButtonKey" -
+	21	[947]	SETTABLE 	1 -14 -15	; "EntryIconName" nil
+	22	[958]	CLOSURE  	2 1	; 0000018BCD3138E0
+	23	[958]	SETTABLE 	1 -16 2	; "OnClickedFunc" -
+	24	[959]	GETTABUP 	2 0 -18	; _ENV "EntryRedPointType"
+	25	[959]	GETTABLE 	2 2 -19	; "Exc"
+	26	[959]	SETTABLE 	1 -17 2	; "RedPointType" -
+	27	[962]	CLOSURE  	2 2	; 0000018BCD312E60
+	28	[962]	SETTABLE 	1 -20 2	; "GetRedPointNumFunc" -
+	29	[963]	NEWTABLE 	2 2 0
+	30	[964]	GETTABLE 	3 0 -22	; "m_activityDefinition"
+	31	[964]	GETTABLE 	3 3 -23	; "CompetitionStateChangedEvent"
+	32	[965]	GETTABLE 	4 0 -22	; "m_activityDefinition"
+	33	[966]	GETTABLE 	4 4 -24	; "ScoreChangedEvent"
+	34	[966]	SETLIST  	2 2 1	; 1
+	35	[966]	SETTABLE 	1 -21 2	; "ArrUpdateEntryContentEvent" -
+	36	[967]	RETURN   	1 2
+	37	[968]	RETURN   	0 1
+constants (24) for 0000018BCD312B60:
+	1	"Type"
+	2	"TeamActivity"
+	3	"ArrCheckShowEvent"
+	4	"m_activityDefinition"
+	5	"StateChangedEvent"
+	6	"FinishedAllRoundEvent"
+	7	"EntryPrefabConfigName"
+	8	"HudEntryPrefabName"
+	9	"CheckFunc"
+	10	"HudSideBarType"
+	11	"EHudSideBarType"
+	12	"Left"
+	13	"EntryButtonKey"
+	14	"EntryIconName"
+	15	nil
+	16	"OnClickedFunc"
+	17	"RedPointType"
+	18	"EntryRedPointType"
+	19	"Exc"
+	20	"GetRedPointNumFunc"
+	21	"ArrUpdateEntryContentEvent"
+	22	"m_activityDefinition"
+	23	"CompetitionStateChangedEvent"
+	24	"ScoreChangedEvent"
+locals (1) for 0000018BCD312B60:
+	0	self	1	38
+upvalues (1) for 0000018BCD312B60:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:942,944> (25 instructions at 0000018BCD3135E0)
+0 params, 3 slots, 2 upvalues, 0 locals, 5 constants, 0 functions
+	1	[943]	GETUPVAL 	0 0	; self
+	2	[943]	SELF     	0 0 -1	; "GetState"
+	3	[943]	LOADBOOL 	2 0 0
+	4	[943]	CALL     	0 3 2
+	5	[943]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	6	[943]	GETTABLE 	1 1 -3	; "Started"
+	7	[943]	EQ       	1 0 1
+	8	[943]	JMP      	0 8	; to 17
+	9	[943]	GETUPVAL 	0 0	; self
+	10	[943]	SELF     	0 0 -1	; "GetState"
+	11	[943]	LOADBOOL 	2 0 0
+	12	[943]	CALL     	0 3 2
+	13	[943]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	14	[943]	GETTABLE 	1 1 -4	; "Preparing"
+	15	[943]	EQ       	0 0 1
+	16	[943]	JMP      	0 5	; to 22
+	17	[943]	GETUPVAL 	0 0	; self
+	18	[943]	SELF     	0 0 -5	; "IsFinishedAll"
+	19	[943]	CALL     	0 2 2
+	20	[943]	NOT      	0 0
+	21	[943]	JMP      	0 2	; to 24
+	22	[943]	LOADBOOL 	0 0 1
+	23	[943]	LOADBOOL 	0 1 0
+	24	[943]	RETURN   	0 2
+	25	[944]	RETURN   	0 1
+constants (5) for 0000018BCD3135E0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"Preparing"
+	5	"IsFinishedAll"
+locals (0) for 0000018BCD3135E0:
+upvalues (2) for 0000018BCD3135E0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:948,958> (42 instructions at 0000018BCD3138E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 15 constants, 0 functions
+	1	[949]	GETUPVAL 	0 0	; self
+	2	[949]	SELF     	0 0 -1	; "GetState"
+	3	[949]	LOADBOOL 	2 0 0
+	4	[949]	CALL     	0 3 2
+	5	[949]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	6	[949]	GETTABLE 	1 1 -3	; "Preparing"
+	7	[949]	EQ       	0 0 1
+	8	[949]	JMP      	0 11	; to 20
+	9	[950]	GETTABUP 	0 1 -4	; _ENV "GM"
+	10	[950]	GETTABLE 	0 0 -5	; "UIManager"
+	11	[950]	SELF     	0 0 -6	; "OpenView"
+	12	[950]	GETTABUP 	2 0 -7	; self "m_activityDefinition"
+	13	[950]	GETTABLE 	2 2 -8	; "NoticeWindowPrefabName"
+	14	[950]	GETUPVAL 	3 0	; self
+	15	[950]	SELF     	3 3 -9	; "GetType"
+	16	[950]	CALL     	3 2 2
+	17	[950]	LOADBOOL 	4 0 0
+	18	[950]	CALL     	0 5 1
+	19	[950]	JMP      	0 22	; to 42
+	20	[952]	GETTABUP 	0 1 -10	; _ENV "ApplicationManager"
+	21	[952]	GETTABLE 	0 0 -11	; "Instance"
+	22	[952]	GETTABLE 	0 0 -12	; "isNetworkConnected"
+	23	[952]	TEST     	0 1
+	24	[952]	JMP      	0 7	; to 32
+	25	[953]	GETTABUP 	0 1 -4	; _ENV "GM"
+	26	[953]	GETTABLE 	0 0 -5	; "UIManager"
+	27	[953]	SELF     	0 0 -6	; "OpenView"
+	28	[953]	GETTABUP 	2 1 -13	; _ENV "UIPrefabConfigName"
+	29	[953]	GETTABLE 	2 2 -14	; "NetworkErrorWindow"
+	30	[953]	CALL     	0 3 1
+	31	[954]	RETURN   	0 1
+	32	[956]	GETTABUP 	0 1 -4	; _ENV "GM"
+	33	[956]	GETTABLE 	0 0 -5	; "UIManager"
+	34	[956]	SELF     	0 0 -6	; "OpenView"
+	35	[956]	GETTABUP 	2 0 -7	; self "m_activityDefinition"
+	36	[956]	GETTABLE 	2 2 -15	; "MainWindowPrefabName"
+	37	[956]	GETUPVAL 	3 0	; self
+	38	[956]	SELF     	3 3 -9	; "GetType"
+	39	[956]	CALL     	3 2 2
+	40	[956]	LOADBOOL 	4 0 0
+	41	[956]	CALL     	0 5 1
+	42	[958]	RETURN   	0 1
+constants (15) for 0000018BCD3138E0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Preparing"
+	4	"GM"
+	5	"UIManager"
+	6	"OpenView"
+	7	"m_activityDefinition"
+	8	"NoticeWindowPrefabName"
+	9	"GetType"
+	10	"ApplicationManager"
+	11	"Instance"
+	12	"isNetworkConnected"
+	13	"UIPrefabConfigName"
+	14	"NetworkErrorWindow"
+	15	"MainWindowPrefabName"
+locals (0) for 0000018BCD3138E0:
+upvalues (2) for 0000018BCD3138E0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:960,962> (13 instructions at 0000018BCD312E60)
+0 params, 2 slots, 2 upvalues, 0 locals, 5 constants, 0 functions
+	1	[961]	GETUPVAL 	0 0	; self
+	2	[961]	SELF     	0 0 -1	; "GetCurState"
+	3	[961]	CALL     	0 2 2
+	4	[961]	GETTABUP 	1 1 -2	; _ENV "TeamActivityState"
+	5	[961]	GETTABLE 	1 1 -3	; "OnGoing"
+	6	[961]	EQ       	0 0 1
+	7	[961]	JMP      	0 3	; to 11
+	8	[961]	LOADK    	0 -4	; 0
+	9	[961]	TEST     	0 1
+	10	[961]	JMP      	0 1	; to 12
+	11	[961]	LOADK    	0 -5	; 1
+	12	[961]	RETURN   	0 2
+	13	[962]	RETURN   	0 1
+constants (5) for 0000018BCD312E60:
+	1	"GetCurState"
+	2	"TeamActivityState"
+	3	"OnGoing"
+	4	0
+	5	1
+locals (0) for 0000018BCD312E60:
+upvalues (2) for 0000018BCD312E60:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:971,984> (26 instructions at 0000018BCD313060)
+1 param, 5 slots, 1 upvalue, 1 local, 19 constants, 1 function
+	1	[972]	NEWTABLE 	1 0 8
+	2	[973]	NEWTABLE 	2 2 0
+	3	[973]	GETTABLE 	3 0 -2	; "m_activityDefinition"
+	4	[973]	GETTABLE 	3 3 -3	; "StateChangedEvent"
+	5	[973]	GETTABLE 	4 0 -2	; "m_activityDefinition"
+	6	[973]	GETTABLE 	4 4 -4	; "FinishedAllRoundEvent"
+	7	[973]	SETLIST  	2 2 1	; 1
+	8	[973]	SETTABLE 	1 -1 2	; "listeners" -
+	9	[974]	LOADK    	2 -6	; "m_"
+	10	[974]	GETTABLE 	3 0 -7	; "m_type"
+	11	[974]	LOADK    	4 -8	; "Bubble"
+	12	[974]	CONCAT   	2 2 4
+	13	[974]	SETTABLE 	1 -5 2	; "bubbleName" -
+	14	[975]	SETTABLE 	1 -9 -10	; "bubbleNodeName" "m_TeamctivityBubbleNode"
+	15	[976]	GETTABLE 	2 0 -2	; "m_activityDefinition"
+	16	[976]	GETTABLE 	2 2 -12	; "BoardEntryPrefabName"
+	17	[976]	SETTABLE 	1 -11 2	; "entryPrefabName" -
+	18	[977]	SETTABLE 	1 -13 -14	; "bubbleCountName" "m_TeamctivityBubbleCount"
+	19	[978]	SETTABLE 	1 -15 -16	; "scrollToFunName" "ScrollToTeamctivity"
+	20	[979]	SELF     	2 0 -18	; "GetType"
+	21	[979]	CALL     	2 2 2
+	22	[979]	SETTABLE 	1 -17 2	; "activityType" -
+	23	[982]	CLOSURE  	2 0	; 0000018BCD3132E0
+	24	[982]	SETTABLE 	1 -19 2	; "checkFun" -
+	25	[983]	RETURN   	1 2
+	26	[984]	RETURN   	0 1
+constants (19) for 0000018BCD313060:
+	1	"listeners"
+	2	"m_activityDefinition"
+	3	"StateChangedEvent"
+	4	"FinishedAllRoundEvent"
+	5	"bubbleName"
+	6	"m_"
+	7	"m_type"
+	8	"Bubble"
+	9	"bubbleNodeName"
+	10	"m_TeamctivityBubbleNode"
+	11	"entryPrefabName"
+	12	"BoardEntryPrefabName"
+	13	"bubbleCountName"
+	14	"m_TeamctivityBubbleCount"
+	15	"scrollToFunName"
+	16	"ScrollToTeamctivity"
+	17	"activityType"
+	18	"GetType"
+	19	"checkFun"
+locals (1) for 0000018BCD313060:
+	0	self	1	27
+upvalues (1) for 0000018BCD313060:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:980,982> (17 instructions at 0000018BCD3132E0)
+0 params, 3 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[981]	GETUPVAL 	0 0	; self
+	2	[981]	SELF     	0 0 -1	; "GetState"
+	3	[981]	LOADBOOL 	2 0 0
+	4	[981]	CALL     	0 3 2
+	5	[981]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	6	[981]	GETTABLE 	1 1 -3	; "Started"
+	7	[981]	EQ       	0 0 1
+	8	[981]	JMP      	0 5	; to 14
+	9	[981]	GETUPVAL 	0 0	; self
+	10	[981]	SELF     	0 0 -4	; "IsFinishedAll"
+	11	[981]	CALL     	0 2 2
+	12	[981]	NOT      	0 0
+	13	[981]	JMP      	0 2	; to 16
+	14	[981]	LOADBOOL 	0 0 1
+	15	[981]	LOADBOOL 	0 1 0
+	16	[981]	RETURN   	0 2
+	17	[982]	RETURN   	0 1
+constants (4) for 0000018BCD3132E0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"IsFinishedAll"
+locals (0) for 0000018BCD3132E0:
+upvalues (2) for 0000018BCD3132E0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:988,990> (19 instructions at 0000018BCD3140E0)
+1 param, 2 slots, 0 upvalues, 1 local, 6 constants, 0 functions
+	1	[989]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	2	[989]	GETTABLE 	1 1 -2	; "TeamMate"
+	3	[989]	GETTABLE 	1 1 -3	; "CurScore"
+	4	[989]	EQ       	1 1 -4	; - nil
+	5	[989]	JMP      	0 10	; to 16
+	6	[989]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	7	[989]	GETTABLE 	1 1 -5	; "RivalA"
+	8	[989]	GETTABLE 	1 1 -3	; "CurScore"
+	9	[989]	EQ       	1 1 -4	; - nil
+	10	[989]	JMP      	0 5	; to 16
+	11	[989]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	12	[989]	GETTABLE 	1 1 -6	; "RivalB"
+	13	[989]	GETTABLE 	1 1 -3	; "CurScore"
+	14	[989]	EQ       	0 1 -4	; - nil
+	15	[989]	JMP      	0 1	; to 17
+	16	[989]	LOADBOOL 	1 0 1
+	17	[989]	LOADBOOL 	1 1 0
+	18	[989]	RETURN   	1 2
+	19	[990]	RETURN   	0 1
+constants (6) for 0000018BCD3140E0:
+	1	"m_robotAllData"
+	2	"TeamMate"
+	3	"CurScore"
+	4	nil
+	5	"RivalA"
+	6	"RivalB"
+locals (1) for 0000018BCD3140E0:
+	0	self	1	20
+upvalues (0) for 0000018BCD3140E0:
+
+function <TeamActivityModel.lua:992,994> (3 instructions at 0000018BCD312960)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[993]	GETTABLE 	1 0 -1	; "m_groupId"
+	2	[993]	RETURN   	1 2
+	3	[994]	RETURN   	0 1
+constants (1) for 0000018BCD312960:
+	1	"m_groupId"
+locals (1) for 0000018BCD312960:
+	0	self	1	4
+upvalues (0) for 0000018BCD312960:
+
+function <TeamActivityModel.lua:996,998> (7 instructions at 0000018BCD313960)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[997]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[997]	SELF     	2 2 -2	; "Set"
+	3	[997]	GETTABUP 	4 0 -3	; DBKeys "CurRoundStartTime"
+	4	[997]	GETUPVAL 	5 1	; DBColumnValue
+	5	[997]	MOVE     	6 1
+	6	[997]	CALL     	2 5 1
+	7	[998]	RETURN   	0 1
+constants (3) for 0000018BCD313960:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurRoundStartTime"
+locals (2) for 0000018BCD313960:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 0000018BCD313960:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1000,1002> (10 instructions at 0000018BCD3133E0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1001]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1001]	SELF     	1 1 -2	; "GetValue"
+	3	[1001]	GETTABUP 	3 0 -3	; DBKeys "CurRoundStartTime"
+	4	[1001]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1001]	CALL     	1 4 2
+	6	[1001]	TEST     	1 1
+	7	[1001]	JMP      	0 1	; to 9
+	8	[1001]	LOADK    	1 -4	; -1
+	9	[1001]	RETURN   	1 2
+	10	[1002]	RETURN   	0 1
+constants (4) for 0000018BCD3133E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurRoundStartTime"
+	4	-1
+locals (1) for 0000018BCD3133E0:
+	0	self	1	11
+upvalues (2) for 0000018BCD3133E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1004,1006> (7 instructions at 0000018BCD3127E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1005]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1005]	SELF     	2 2 -2	; "Set"
+	3	[1005]	GETTABUP 	4 0 -3	; DBKeys "Round"
+	4	[1005]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1005]	MOVE     	6 1
+	6	[1005]	CALL     	2 5 1
+	7	[1006]	RETURN   	0 1
+constants (3) for 0000018BCD3127E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Round"
+locals (2) for 0000018BCD3127E0:
+	0	self	1	8
+	1	round	1	8
+upvalues (2) for 0000018BCD3127E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1008,1010> (10 instructions at 0000018BCD314560)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1009]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1009]	SELF     	1 1 -2	; "GetValue"
+	3	[1009]	GETTABUP 	3 0 -3	; DBKeys "Round"
+	4	[1009]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1009]	CALL     	1 4 2
+	6	[1009]	TEST     	1 1
+	7	[1009]	JMP      	0 1	; to 9
+	8	[1009]	LOADK    	1 -4	; 1
+	9	[1009]	RETURN   	1 2
+	10	[1010]	RETURN   	0 1
+constants (4) for 0000018BCD314560:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Round"
+	4	1
+locals (1) for 0000018BCD314560:
+	0	self	1	11
+upvalues (2) for 0000018BCD314560:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1012,1014> (7 instructions at 0000018BCD313AE0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1013]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1013]	SELF     	2 2 -2	; "Set"
+	3	[1013]	GETTABUP 	4 0 -3	; DBKeys "CurRoundNum"
+	4	[1013]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1013]	MOVE     	6 1
+	6	[1013]	CALL     	2 5 1
+	7	[1014]	RETURN   	0 1
+constants (3) for 0000018BCD313AE0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurRoundNum"
+locals (2) for 0000018BCD313AE0:
+	0	self	1	8
+	1	count	1	8
+upvalues (2) for 0000018BCD313AE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1016,1018> (10 instructions at 0000018BCD312F60)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1017]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1017]	SELF     	1 1 -2	; "GetValue"
+	3	[1017]	GETTABUP 	3 0 -3	; DBKeys "CurRoundNum"
+	4	[1017]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1017]	CALL     	1 4 2
+	6	[1017]	TEST     	1 1
+	7	[1017]	JMP      	0 1	; to 9
+	8	[1017]	LOADK    	1 -4	; 1
+	9	[1017]	RETURN   	1 2
+	10	[1018]	RETURN   	0 1
+constants (4) for 0000018BCD312F60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurRoundNum"
+	4	1
+locals (1) for 0000018BCD312F60:
+	0	self	1	11
+upvalues (2) for 0000018BCD312F60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1020,1022> (7 instructions at 0000018BCD313D60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1021]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1021]	SELF     	2 2 -2	; "Set"
+	3	[1021]	GETTABUP 	4 0 -3	; DBKeys "LastShownRound"
+	4	[1021]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1021]	MOVE     	6 1
+	6	[1021]	CALL     	2 5 1
+	7	[1022]	RETURN   	0 1
+constants (3) for 0000018BCD313D60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastShownRound"
+locals (2) for 0000018BCD313D60:
+	0	self	1	8
+	1	round	1	8
+upvalues (2) for 0000018BCD313D60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1024,1026> (10 instructions at 0000018BCD313CE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1025]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1025]	SELF     	1 1 -2	; "GetValue"
+	3	[1025]	GETTABUP 	3 0 -3	; DBKeys "LastShownRound"
+	4	[1025]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1025]	CALL     	1 4 2
+	6	[1025]	TEST     	1 1
+	7	[1025]	JMP      	0 1	; to 9
+	8	[1025]	LOADK    	1 -4	; 1
+	9	[1025]	RETURN   	1 2
+	10	[1026]	RETURN   	0 1
+constants (4) for 0000018BCD313CE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastShownRound"
+	4	1
+locals (1) for 0000018BCD313CE0:
+	0	self	1	11
+upvalues (2) for 0000018BCD313CE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1028,1030> (7 instructions at 0000018BCD3126E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1029]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1029]	SELF     	2 2 -2	; "Set"
+	3	[1029]	GETTABUP 	4 0 -3	; DBKeys "Token"
+	4	[1029]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1029]	MOVE     	6 1
+	6	[1029]	CALL     	2 5 1
+	7	[1030]	RETURN   	0 1
+constants (3) for 0000018BCD3126E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Token"
+locals (2) for 0000018BCD3126E0:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000018BCD3126E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1032,1034> (10 instructions at 0000018BCD312FE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1033]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1033]	SELF     	1 1 -2	; "GetValue"
+	3	[1033]	GETTABUP 	3 0 -3	; DBKeys "Token"
+	4	[1033]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1033]	CALL     	1 4 2
+	6	[1033]	TEST     	1 1
+	7	[1033]	JMP      	0 1	; to 9
+	8	[1033]	LOADK    	1 -4	; 0
+	9	[1033]	RETURN   	1 2
+	10	[1034]	RETURN   	0 1
+constants (4) for 0000018BCD312FE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Token"
+	4	0
+locals (1) for 0000018BCD312FE0:
+	0	self	1	11
+upvalues (2) for 0000018BCD312FE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1036,1038> (7 instructions at 0000018BCD314160)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1037]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1037]	SELF     	2 2 -2	; "Set"
+	3	[1037]	GETTABUP 	4 0 -3	; DBKeys "LastShownToken"
+	4	[1037]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1037]	MOVE     	6 1
+	6	[1037]	CALL     	2 5 1
+	7	[1038]	RETURN   	0 1
+constants (3) for 0000018BCD314160:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastShownToken"
+locals (2) for 0000018BCD314160:
+	0	self	1	8
+	1	num	1	8
+upvalues (2) for 0000018BCD314160:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1040,1042> (10 instructions at 0000018BCD314260)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1041]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1041]	SELF     	1 1 -2	; "GetValue"
+	3	[1041]	GETTABUP 	3 0 -3	; DBKeys "LastShownToken"
+	4	[1041]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1041]	CALL     	1 4 2
+	6	[1041]	TEST     	1 1
+	7	[1041]	JMP      	0 1	; to 9
+	8	[1041]	LOADK    	1 -4	; 0
+	9	[1041]	RETURN   	1 2
+	10	[1042]	RETURN   	0 1
+constants (4) for 0000018BCD314260:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastShownToken"
+	4	0
+locals (1) for 0000018BCD314260:
+	0	self	1	11
+upvalues (2) for 0000018BCD314260:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1044,1053> (33 instructions at 0000018BCD313EE0)
+2 params, 7 slots, 3 upvalues, 2 locals, 18 constants, 0 functions
+	1	[1045]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1045]	SELF     	2 2 -2	; "Set"
+	3	[1045]	GETTABUP 	4 0 -3	; DBKeys "CurState"
+	4	[1045]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1045]	MOVE     	6 1
+	6	[1045]	CALL     	2 5 1
+	7	[1046]	GETTABUP 	2 2 -4	; _ENV "TeamActivityState"
+	8	[1046]	GETTABLE 	2 2 -5	; "OnGoing"
+	9	[1046]	EQ       	0 1 2
+	10	[1046]	JMP      	0 12	; to 23
+	11	[1047]	SELF     	2 0 -6	; "BILogAction"
+	12	[1047]	GETTABLE 	4 0 -7	; "m_activityDefinition"
+	13	[1047]	GETTABLE 	4 4 -8	; "RaceStartBIType"
+	14	[1047]	CALL     	2 3 1
+	15	[1048]	SELF     	2 0 -9	; "SetCurRoundStartTime"
+	16	[1048]	GETTABUP 	4 2 -10	; _ENV "GM"
+	17	[1048]	GETTABLE 	4 4 -11	; "GameModel"
+	18	[1048]	SELF     	4 4 -12	; "GetServerTime"
+	19	[1048]	CALL     	4 2 0
+	20	[1048]	CALL     	2 0 1
+	21	[1049]	SELF     	2 0 -13	; "CalculateCurScores"
+	22	[1049]	CALL     	2 2 1
+	23	[1051]	GETTABUP 	2 2 -14	; _ENV "EventDispatcher"
+	24	[1051]	GETTABLE 	2 2 -15	; "DispatchEvent"
+	25	[1051]	GETTABLE 	3 0 -7	; "m_activityDefinition"
+	26	[1051]	GETTABLE 	3 3 -16	; "CompetitionStateChangedEvent"
+	27	[1051]	CALL     	2 2 1
+	28	[1052]	GETTABUP 	2 2 -14	; _ENV "EventDispatcher"
+	29	[1052]	GETTABLE 	2 2 -15	; "DispatchEvent"
+	30	[1052]	GETTABUP 	3 2 -17	; _ENV "EEventType"
+	31	[1052]	GETTABLE 	3 3 -18	; "OrderStatusChanged"
+	32	[1052]	CALL     	2 2 1
+	33	[1053]	RETURN   	0 1
+constants (18) for 0000018BCD313EE0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurState"
+	4	"TeamActivityState"
+	5	"OnGoing"
+	6	"BILogAction"
+	7	"m_activityDefinition"
+	8	"RaceStartBIType"
+	9	"SetCurRoundStartTime"
+	10	"GM"
+	11	"GameModel"
+	12	"GetServerTime"
+	13	"CalculateCurScores"
+	14	"EventDispatcher"
+	15	"DispatchEvent"
+	16	"CompetitionStateChangedEvent"
+	17	"EEventType"
+	18	"OrderStatusChanged"
+locals (2) for 0000018BCD313EE0:
+	0	self	1	34
+	1	state	1	34
+upvalues (3) for 0000018BCD313EE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+	2	_ENV	0	0
+
+function <TeamActivityModel.lua:1055,1057> (11 instructions at 0000018BCD313BE0)
+1 param, 5 slots, 3 upvalues, 1 local, 5 constants, 0 functions
+	1	[1056]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1056]	SELF     	1 1 -2	; "GetValue"
+	3	[1056]	GETTABUP 	3 0 -3	; DBKeys "CurState"
+	4	[1056]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1056]	CALL     	1 4 2
+	6	[1056]	TEST     	1 1
+	7	[1056]	JMP      	0 2	; to 10
+	8	[1056]	GETTABUP 	1 2 -4	; _ENV "TeamActivityState"
+	9	[1056]	GETTABLE 	1 1 -5	; "Waiting"
+	10	[1056]	RETURN   	1 2
+	11	[1057]	RETURN   	0 1
+constants (5) for 0000018BCD313BE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurState"
+	4	"TeamActivityState"
+	5	"Waiting"
+locals (1) for 0000018BCD313BE0:
+	0	self	1	12
+upvalues (3) for 0000018BCD313BE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+	2	_ENV	0	0
+
+function <TeamActivityModel.lua:1059,1061> (7 instructions at 0000018BCD312860)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1060]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1060]	SELF     	2 2 -2	; "Set"
+	3	[1060]	GETTABUP 	4 0 -3	; DBKeys "CurScore"
+	4	[1060]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1060]	MOVE     	6 1
+	6	[1060]	CALL     	2 5 1
+	7	[1061]	RETURN   	0 1
+constants (3) for 0000018BCD312860:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurScore"
+locals (2) for 0000018BCD312860:
+	0	self	1	8
+	1	score	1	8
+upvalues (2) for 0000018BCD312860:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1063,1065> (10 instructions at 0000018BCD313360)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1064]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1064]	SELF     	1 1 -2	; "GetValue"
+	3	[1064]	GETTABUP 	3 0 -3	; DBKeys "CurScore"
+	4	[1064]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1064]	CALL     	1 4 2
+	6	[1064]	TEST     	1 1
+	7	[1064]	JMP      	0 1	; to 9
+	8	[1064]	LOADK    	1 -4	; 0
+	9	[1064]	RETURN   	1 2
+	10	[1065]	RETURN   	0 1
+constants (4) for 0000018BCD313360:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurScore"
+	4	0
+locals (1) for 0000018BCD313360:
+	0	self	1	11
+upvalues (2) for 0000018BCD313360:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1067,1076> (45 instructions at 0000018BCD313760)
+1 param, 6 slots, 0 upvalues, 4 locals, 9 constants, 0 functions
+	1	[1068]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	2	[1068]	GETTABLE 	1 1 -2	; "TeamMate"
+	3	[1068]	TEST     	1 0
+	4	[1068]	JMP      	0 5	; to 10
+	5	[1068]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	6	[1068]	GETTABLE 	1 1 -2	; "TeamMate"
+	7	[1068]	GETTABLE 	1 1 -3	; "Avatar"
+	8	[1068]	TEST     	1 1
+	9	[1068]	JMP      	0 1	; to 11
+	10	[1068]	LOADK    	1 -4	; ""
+	11	[1069]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	12	[1069]	GETTABLE 	2 2 -2	; "TeamMate"
+	13	[1069]	TEST     	2 0
+	14	[1069]	JMP      	0 5	; to 20
+	15	[1069]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	16	[1069]	GETTABLE 	2 2 -2	; "TeamMate"
+	17	[1069]	GETTABLE 	2 2 -5	; "Frame"
+	18	[1069]	TEST     	2 1
+	19	[1069]	JMP      	0 1	; to 21
+	20	[1069]	LOADK    	2 -4	; ""
+	21	[1070]	GETTABLE 	3 0 -1	; "m_robotAllData"
+	22	[1070]	GETTABLE 	3 3 -2	; "TeamMate"
+	23	[1070]	TEST     	3 0
+	24	[1070]	JMP      	0 5	; to 30
+	25	[1070]	GETTABLE 	3 0 -1	; "m_robotAllData"
+	26	[1070]	GETTABLE 	3 3 -2	; "TeamMate"
+	27	[1070]	GETTABLE 	3 3 -6	; "Name"
+	28	[1070]	TEST     	3 1
+	29	[1070]	JMP      	0 1	; to 31
+	30	[1070]	LOADK    	3 -4	; ""
+	31	[1072]	GETTABLE 	4 0 -1	; "m_robotAllData"
+	32	[1072]	NEWTABLE 	5 0 3
+	33	[1072]	SETTABLE 	5 -3 1	; "Avatar" -
+	34	[1072]	SETTABLE 	5 -5 2	; "Frame" -
+	35	[1072]	SETTABLE 	5 -6 3	; "Name" -
+	36	[1072]	SETTABLE 	4 -2 5	; "TeamMate" -
+	37	[1073]	GETTABLE 	4 0 -1	; "m_robotAllData"
+	38	[1073]	NEWTABLE 	5 0 0
+	39	[1073]	SETTABLE 	4 -7 5	; "RivalA" -
+	40	[1074]	GETTABLE 	4 0 -1	; "m_robotAllData"
+	41	[1074]	NEWTABLE 	5 0 0
+	42	[1074]	SETTABLE 	4 -8 5	; "RivalB" -
+	43	[1075]	SELF     	4 0 -9	; "SaveRobotAllData"
+	44	[1075]	CALL     	4 2 1
+	45	[1076]	RETURN   	0 1
+constants (9) for 0000018BCD313760:
+	1	"m_robotAllData"
+	2	"TeamMate"
+	3	"Avatar"
+	4	""
+	5	"Frame"
+	6	"Name"
+	7	"RivalA"
+	8	"RivalB"
+	9	"SaveRobotAllData"
+locals (4) for 0000018BCD313760:
+	0	self	1	46
+	1	avatar	11	46
+	2	frame	21	46
+	3	name	31	46
+upvalues (0) for 0000018BCD313760:
+
+function <TeamActivityModel.lua:1078,1080> (10 instructions at 0000018BCD313F60)
+1 param, 7 slots, 3 upvalues, 1 local, 6 constants, 0 functions
+	1	[1079]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1079]	SELF     	1 1 -2	; "Set"
+	3	[1079]	GETTABUP 	3 0 -3	; DBKeys "RobotAllData"
+	4	[1079]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1079]	GETTABUP 	5 2 -4	; _ENV "json"
+	6	[1079]	GETTABLE 	5 5 -5	; "encode"
+	7	[1079]	GETTABLE 	6 0 -6	; "m_robotAllData"
+	8	[1079]	CALL     	5 2 0
+	9	[1079]	CALL     	1 0 1
+	10	[1080]	RETURN   	0 1
+constants (6) for 0000018BCD313F60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RobotAllData"
+	4	"json"
+	5	"encode"
+	6	"m_robotAllData"
+locals (1) for 0000018BCD313F60:
+	0	self	1	11
+upvalues (3) for 0000018BCD313F60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+	2	_ENV	0	0
+
+function <TeamActivityModel.lua:1082,1084> (16 instructions at 0000018BCD3128E0)
+1 param, 6 slots, 3 upvalues, 1 local, 6 constants, 0 functions
+	1	[1083]	GETTABUP 	1 0 -1	; _ENV "json"
+	2	[1083]	GETTABLE 	1 1 -2	; "decode"
+	3	[1083]	GETTABLE 	2 0 -3	; "m_dbTable"
+	4	[1083]	SELF     	2 2 -4	; "GetValue"
+	5	[1083]	GETTABUP 	4 1 -5	; DBKeys "RobotAllData"
+	6	[1083]	GETUPVAL 	5 2	; DBColumnValue
+	7	[1083]	CALL     	2 4 2
+	8	[1083]	TEST     	2 1
+	9	[1083]	JMP      	0 1	; to 11
+	10	[1083]	LOADK    	2 -6	; ""
+	11	[1083]	CALL     	1 2 2
+	12	[1083]	TEST     	1 1
+	13	[1083]	JMP      	0 1	; to 15
+	14	[1083]	NEWTABLE 	1 0 0
+	15	[1083]	RETURN   	1 2
+	16	[1084]	RETURN   	0 1
+constants (6) for 0000018BCD3128E0:
+	1	"json"
+	2	"decode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"RobotAllData"
+	6	""
+locals (1) for 0000018BCD3128E0:
+	0	self	1	17
+upvalues (3) for 0000018BCD3128E0:
+	0	_ENV	0	0
+	1	DBKeys	1	1
+	2	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1087,1089> (3 instructions at 0000018BCD312CE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1088]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	2	[1088]	RETURN   	1 2
+	3	[1089]	RETURN   	0 1
+constants (1) for 0000018BCD312CE0:
+	1	"m_robotAllData"
+locals (1) for 0000018BCD312CE0:
+	0	self	1	4
+upvalues (0) for 0000018BCD312CE0:
+
+function <TeamActivityModel.lua:1091,1093> (3 instructions at 0000018BCD313DE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1092]	GETTABLE 	1 0 -1	; "m_rank"
+	2	[1092]	RETURN   	1 2
+	3	[1093]	RETURN   	0 1
+constants (1) for 0000018BCD313DE0:
+	1	"m_rank"
+locals (1) for 0000018BCD313DE0:
+	0	self	1	4
+upvalues (0) for 0000018BCD313DE0:
+
+function <TeamActivityModel.lua:1095,1099> (10 instructions at 0000018BCD3134E0)
+2 params, 4 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1097]	TEST     	1 1
+	2	[1097]	JMP      	0 3	; to 6
+	3	[1097]	SELF     	2 0 -1	; "GetRound"
+	4	[1097]	CALL     	2 2 2
+	5	[1097]	MOVE     	1 2
+	6	[1098]	GETTABLE 	2 0 -2	; "m_teamConfigArr"
+	7	[1098]	GETTABLE 	2 2 1
+	8	[1098]	GETTABLE 	2 2 -3	; "score"
+	9	[1098]	RETURN   	2 2
+	10	[1099]	RETURN   	0 1
+constants (3) for 0000018BCD3134E0:
+	1	"GetRound"
+	2	"m_teamConfigArr"
+	3	"score"
+locals (2) for 0000018BCD3134E0:
+	0	self	1	11
+	1	round	1	11
+upvalues (0) for 0000018BCD3134E0:
+
+function <TeamActivityModel.lua:1101,1103> (5 instructions at 0000018BCD313460)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[1102]	GETTABLE 	2 0 -1	; "m_teamConfigArr"
+	2	[1102]	GETTABLE 	2 2 1
+	3	[1102]	GETTABLE 	2 2 -2	; "type"
+	4	[1102]	RETURN   	2 2
+	5	[1103]	RETURN   	0 1
+constants (2) for 0000018BCD313460:
+	1	"m_teamConfigArr"
+	2	"type"
+locals (2) for 0000018BCD313460:
+	0	self	1	6
+	1	round	1	6
+upvalues (0) for 0000018BCD313460:
+
+function <TeamActivityModel.lua:1106,1108> (10 instructions at 0000018BCD313C60)
+2 params, 8 slots, 3 upvalues, 2 locals, 5 constants, 0 functions
+	1	[1107]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1107]	SELF     	2 2 -2	; "Set"
+	3	[1107]	GETTABUP 	4 0 -3	; DBKeys "LastShownScores"
+	4	[1107]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1107]	GETTABUP 	6 2 -4	; _ENV "json"
+	6	[1107]	GETTABLE 	6 6 -5	; "encode"
+	7	[1107]	MOVE     	7 1
+	8	[1107]	CALL     	6 2 0
+	9	[1107]	CALL     	2 0 1
+	10	[1108]	RETURN   	0 1
+constants (5) for 0000018BCD313C60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastShownScores"
+	4	"json"
+	5	"encode"
+locals (2) for 0000018BCD313C60:
+	0	self	1	11
+	1	scoreStruct	1	11
+upvalues (3) for 0000018BCD313C60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+	2	_ENV	0	0
+
+function <TeamActivityModel.lua:1111,1116> (22 instructions at 0000018BCD314060)
+1 param, 6 slots, 3 upvalues, 1 local, 13 constants, 0 functions
+	1	[1112]	GETTABUP 	1 0 -1	; _ENV "json"
+	2	[1112]	GETTABLE 	1 1 -2	; "decode"
+	3	[1112]	GETTABLE 	2 0 -3	; "m_dbTable"
+	4	[1112]	SELF     	2 2 -4	; "GetValue"
+	5	[1112]	GETTABUP 	4 1 -5	; DBKeys "LastShownScores"
+	6	[1112]	GETUPVAL 	5 2	; DBColumnValue
+	7	[1112]	CALL     	2 4 2
+	8	[1112]	TEST     	2 1
+	9	[1112]	JMP      	0 1	; to 11
+	10	[1112]	LOADK    	2 -6	; ""
+	11	[1112]	CALL     	1 2 2
+	12	[1112]	TEST     	1 1
+	13	[1112]	JMP      	0 7	; to 21
+	14	[1112]	NEWTABLE 	1 0 6
+	15	[1113]	SETTABLE 	1 -7 -8	; "player_window" 0
+	16	[1113]	SETTABLE 	1 -9 -8	; "teammate_window" 0
+	17	[1113]	SETTABLE 	1 -10 -8	; "rivalA_window" 0
+	18	[1113]	SETTABLE 	1 -11 -8	; "rivalB_window" 0
+	19	[1114]	SETTABLE 	1 -12 -8	; "playerTeam_tip" 0
+	20	[1114]	SETTABLE 	1 -13 -8	; "rivalTeam_tip" 0
+	21	[1115]	RETURN   	1 2
+	22	[1116]	RETURN   	0 1
+constants (13) for 0000018BCD314060:
+	1	"json"
+	2	"decode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"LastShownScores"
+	6	""
+	7	"player_window"
+	8	0
+	9	"teammate_window"
+	10	"rivalA_window"
+	11	"rivalB_window"
+	12	"playerTeam_tip"
+	13	"rivalTeam_tip"
+locals (1) for 0000018BCD314060:
+	0	self	1	23
+upvalues (3) for 0000018BCD314060:
+	0	_ENV	0	0
+	1	DBKeys	1	1
+	2	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1118,1124> (11 instructions at 0000018BCD3136E0)
+1 param, 5 slots, 0 upvalues, 2 locals, 8 constants, 0 functions
+	1	[1119]	NEWTABLE 	1 0 6
+	2	[1120]	SETTABLE 	1 -1 -2	; "player_window" 0
+	3	[1120]	SETTABLE 	1 -3 -2	; "teammate_window" 0
+	4	[1120]	SETTABLE 	1 -4 -2	; "rivalA_window" 0
+	5	[1120]	SETTABLE 	1 -5 -2	; "rivalB_window" 0
+	6	[1121]	SETTABLE 	1 -6 -2	; "playerTeam_tip" 0
+	7	[1121]	SETTABLE 	1 -7 -2	; "rivalTeam_tip" 0
+	8	[1123]	SELF     	2 0 -8	; "SetLastShownScoreStruct"
+	9	[1123]	MOVE     	4 1
+	10	[1123]	CALL     	2 3 1
+	11	[1124]	RETURN   	0 1
+constants (8) for 0000018BCD3136E0:
+	1	"player_window"
+	2	0
+	3	"teammate_window"
+	4	"rivalA_window"
+	5	"rivalB_window"
+	6	"playerTeam_tip"
+	7	"rivalTeam_tip"
+	8	"SetLastShownScoreStruct"
+locals (2) for 0000018BCD3136E0:
+	0	self	1	12
+	1	temp	8	12
+upvalues (0) for 0000018BCD3136E0:
+
+function <TeamActivityModel.lua:1126,1128> (7 instructions at 0000018BCD313560)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1127]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1127]	SELF     	2 2 -2	; "Set"
+	3	[1127]	GETTABUP 	4 0 -3	; DBKeys "RecordedScore_player"
+	4	[1127]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1127]	MOVE     	6 1
+	6	[1127]	CALL     	2 5 1
+	7	[1128]	RETURN   	0 1
+constants (3) for 0000018BCD313560:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RecordedScore_player"
+locals (2) for 0000018BCD313560:
+	0	self	1	8
+	1	score	1	8
+upvalues (2) for 0000018BCD313560:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1130,1132> (7 instructions at 0000018BCD313160)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1131]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1131]	SELF     	1 1 -2	; "GetValue"
+	3	[1131]	GETTABUP 	3 0 -3	; DBKeys "RecordedScore_player"
+	4	[1131]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1131]	TAILCALL 	1 4 0
+	6	[1131]	RETURN   	1 0
+	7	[1132]	RETURN   	0 1
+constants (3) for 0000018BCD313160:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"RecordedScore_player"
+locals (1) for 0000018BCD313160:
+	0	self	1	8
+upvalues (2) for 0000018BCD313160:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1134,1136> (7 instructions at 0000018BCD314360)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1135]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1135]	SELF     	2 2 -2	; "Set"
+	3	[1135]	GETTABUP 	4 0 -3	; DBKeys "RecordedScore_rival"
+	4	[1135]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1135]	MOVE     	6 1
+	6	[1135]	CALL     	2 5 1
+	7	[1136]	RETURN   	0 1
+constants (3) for 0000018BCD314360:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RecordedScore_rival"
+locals (2) for 0000018BCD314360:
+	0	self	1	8
+	1	score	1	8
+upvalues (2) for 0000018BCD314360:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1138,1140> (7 instructions at 0000018BCD3143E0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1139]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1139]	SELF     	1 1 -2	; "GetValue"
+	3	[1139]	GETTABUP 	3 0 -3	; DBKeys "RecordedScore_rival"
+	4	[1139]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1139]	TAILCALL 	1 4 0
+	6	[1139]	RETURN   	1 0
+	7	[1140]	RETURN   	0 1
+constants (3) for 0000018BCD3143E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"RecordedScore_rival"
+locals (1) for 0000018BCD3143E0:
+	0	self	1	8
+upvalues (2) for 0000018BCD3143E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1142,1144> (7 instructions at 0000018BCD3141E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1143]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1143]	SELF     	2 2 -2	; "Set"
+	3	[1143]	GETTABUP 	4 0 -3	; DBKeys "RecordedRank"
+	4	[1143]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1143]	MOVE     	6 1
+	6	[1143]	CALL     	2 5 1
+	7	[1144]	RETURN   	0 1
+constants (3) for 0000018BCD3141E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RecordedRank"
+locals (2) for 0000018BCD3141E0:
+	0	self	1	8
+	1	rank	1	8
+upvalues (2) for 0000018BCD3141E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1146,1148> (7 instructions at 0000018BCD313660)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1147]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1147]	SELF     	1 1 -2	; "GetValue"
+	3	[1147]	GETTABUP 	3 0 -3	; DBKeys "RecordedRank"
+	4	[1147]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1147]	TAILCALL 	1 4 0
+	6	[1147]	RETURN   	1 0
+	7	[1148]	RETURN   	0 1
+constants (3) for 0000018BCD313660:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"RecordedRank"
+locals (1) for 0000018BCD313660:
+	0	self	1	8
+upvalues (2) for 0000018BCD313660:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1150,1152> (7 instructions at 0000018BCD3137E0)
+1 param, 6 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1151]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1151]	SELF     	1 1 -2	; "Set"
+	3	[1151]	GETTABUP 	3 0 -3	; DBKeys "PopMatchWindow"
+	4	[1151]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1151]	LOADK    	5 -4	; "1"
+	6	[1151]	CALL     	1 5 1
+	7	[1152]	RETURN   	0 1
+constants (4) for 0000018BCD3137E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopMatchWindow"
+	4	"1"
+locals (1) for 0000018BCD3137E0:
+	0	self	1	8
+upvalues (2) for 0000018BCD3137E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1154,1156> (11 instructions at 0000018BCD3129E0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[1155]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1155]	SELF     	1 1 -2	; "GetValue"
+	3	[1155]	GETTABUP 	3 0 -3	; DBKeys "PopMatchWindow"
+	4	[1155]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1155]	CALL     	1 4 2
+	6	[1155]	EQ       	0 1 -4	; - "1"
+	7	[1155]	JMP      	0 1	; to 9
+	8	[1155]	LOADBOOL 	1 0 1
+	9	[1155]	LOADBOOL 	1 1 0
+	10	[1155]	RETURN   	1 2
+	11	[1156]	RETURN   	0 1
+constants (4) for 0000018BCD3129E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PopMatchWindow"
+	4	"1"
+locals (1) for 0000018BCD3129E0:
+	0	self	1	12
+upvalues (2) for 0000018BCD3129E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1158,1160> (3 instructions at 0000018BCD313860)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1159]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[1159]	RETURN   	1 2
+	3	[1160]	RETURN   	0 1
+constants (1) for 0000018BCD313860:
+	1	"m_activityDefinition"
+locals (1) for 0000018BCD313860:
+	0	self	1	4
+upvalues (0) for 0000018BCD313860:
+
+function <TeamActivityModel.lua:1162,1164> (7 instructions at 0000018BCD314460)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1163]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1163]	SELF     	2 2 -2	; "Set"
+	3	[1163]	GETTABUP 	4 0 -3	; DBKeys "PopMainWindowWhenConnect"
+	4	[1163]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1163]	MOVE     	6 1
+	6	[1163]	CALL     	2 5 1
+	7	[1164]	RETURN   	0 1
+constants (3) for 0000018BCD314460:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopMainWindowWhenConnect"
+locals (2) for 0000018BCD314460:
+	0	self	1	8
+	1	status	1	8
+upvalues (2) for 0000018BCD314460:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1166,1168> (10 instructions at 0000018BCD3145E0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1167]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1167]	SELF     	1 1 -2	; "GetValue"
+	3	[1167]	GETTABUP 	3 0 -3	; DBKeys "PopMainWindowWhenConnect"
+	4	[1167]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1167]	CALL     	1 4 2
+	6	[1167]	TEST     	1 1
+	7	[1167]	JMP      	0 1	; to 9
+	8	[1167]	LOADBOOL 	1 0 0
+	9	[1167]	RETURN   	1 2
+	10	[1168]	RETURN   	0 1
+constants (3) for 0000018BCD3145E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PopMainWindowWhenConnect"
+locals (1) for 0000018BCD3145E0:
+	0	self	1	11
+upvalues (2) for 0000018BCD3145E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1170,1172> (7 instructions at 0000018BCD312A60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1171]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1171]	SELF     	2 2 -2	; "Set"
+	3	[1171]	GETTABUP 	4 0 -3	; DBKeys "ClosedDueToNetworkUnconnected"
+	4	[1171]	GETUPVAL 	5 1	; DBColumnValue
+	5	[1171]	MOVE     	6 1
+	6	[1171]	CALL     	2 5 1
+	7	[1172]	RETURN   	0 1
+constants (3) for 0000018BCD312A60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"ClosedDueToNetworkUnconnected"
+locals (2) for 0000018BCD312A60:
+	0	self	1	8
+	1	status	1	8
+upvalues (2) for 0000018BCD312A60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1174,1176> (10 instructions at 0000018BCD312BE0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[1175]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1175]	SELF     	1 1 -2	; "GetValue"
+	3	[1175]	GETTABUP 	3 0 -3	; DBKeys "ClosedDueToNetworkUnconnected"
+	4	[1175]	GETUPVAL 	4 1	; DBColumnValue
+	5	[1175]	CALL     	1 4 2
+	6	[1175]	TEST     	1 1
+	7	[1175]	JMP      	0 1	; to 9
+	8	[1175]	LOADBOOL 	1 0 0
+	9	[1175]	RETURN   	1 2
+	10	[1176]	RETURN   	0 1
+constants (3) for 0000018BCD312BE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ClosedDueToNetworkUnconnected"
+locals (1) for 0000018BCD312BE0:
+	0	self	1	11
+upvalues (2) for 0000018BCD312BE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1182,1197> (45 instructions at 0000018BCD312C60)
+1 param, 5 slots, 3 upvalues, 1 local, 19 constants, 0 functions
+	1	[1183]	SELF     	1 0 -1	; "ClearAllCache"
+	2	[1183]	CALL     	1 2 1
+	3	[1185]	SELF     	1 0 -2	; "SetCurScore"
+	4	[1185]	LOADK    	3 -3	; 0
+	5	[1185]	CALL     	1 3 1
+	6	[1186]	SELF     	1 0 -4	; "SetCurState"
+	7	[1186]	GETTABUP 	3 0 -5	; _ENV "TeamActivityState"
+	8	[1186]	GETTABLE 	3 3 -6	; "Waiting"
+	9	[1186]	CALL     	1 3 1
+	10	[1187]	SELF     	1 0 -7	; "SetCurRoundStartTime"
+	11	[1187]	LOADK    	3 -3	; 0
+	12	[1187]	CALL     	1 3 1
+	13	[1188]	SELF     	1 0 -8	; "SetToken"
+	14	[1188]	LOADK    	3 -3	; 0
+	15	[1188]	CALL     	1 3 1
+	16	[1189]	SELF     	1 0 -9	; "SetRound"
+	17	[1189]	LOADK    	3 -10	; 1
+	18	[1189]	CALL     	1 3 1
+	19	[1190]	SELF     	1 0 -11	; "ResetLastShownScoreStruct"
+	20	[1190]	CALL     	1 2 1
+	21	[1191]	SELF     	1 0 -12	; "SetLastShownToken"
+	22	[1191]	LOADK    	3 -3	; 0
+	23	[1191]	CALL     	1 3 1
+	24	[1192]	SELF     	1 0 -13	; "SetLastShownRound"
+	25	[1192]	LOADK    	3 -10	; 1
+	26	[1192]	CALL     	1 3 1
+	27	[1193]	SELF     	1 0 -14	; "SetPopMainWindowWhenConnect"
+	28	[1193]	LOADBOOL 	3 0 0
+	29	[1193]	CALL     	1 3 1
+	30	[1194]	GETTABLE 	1 0 -15	; "m_dbTable"
+	31	[1194]	SELF     	1 1 -16	; "Remove"
+	32	[1194]	GETTABUP 	3 1 -17	; DBKeys "RecordedRank"
+	33	[1194]	GETUPVAL 	4 2	; DBColumnValue
+	34	[1194]	CALL     	1 4 1
+	35	[1195]	GETTABLE 	1 0 -15	; "m_dbTable"
+	36	[1195]	SELF     	1 1 -16	; "Remove"
+	37	[1195]	GETTABUP 	3 1 -18	; DBKeys "RecordedScore_player"
+	38	[1195]	GETUPVAL 	4 2	; DBColumnValue
+	39	[1195]	CALL     	1 4 1
+	40	[1196]	GETTABLE 	1 0 -15	; "m_dbTable"
+	41	[1196]	SELF     	1 1 -16	; "Remove"
+	42	[1196]	GETTABUP 	3 1 -19	; DBKeys "RecordedScore_rival"
+	43	[1196]	GETUPVAL 	4 2	; DBColumnValue
+	44	[1196]	CALL     	1 4 1
+	45	[1197]	RETURN   	0 1
+constants (19) for 0000018BCD312C60:
+	1	"ClearAllCache"
+	2	"SetCurScore"
+	3	0
+	4	"SetCurState"
+	5	"TeamActivityState"
+	6	"Waiting"
+	7	"SetCurRoundStartTime"
+	8	"SetToken"
+	9	"SetRound"
+	10	1
+	11	"ResetLastShownScoreStruct"
+	12	"SetLastShownToken"
+	13	"SetLastShownRound"
+	14	"SetPopMainWindowWhenConnect"
+	15	"m_dbTable"
+	16	"Remove"
+	17	"RecordedRank"
+	18	"RecordedScore_player"
+	19	"RecordedScore_rival"
+locals (1) for 0000018BCD312C60:
+	0	self	1	46
+upvalues (3) for 0000018BCD312C60:
+	0	_ENV	0	0
+	1	DBKeys	1	1
+	2	DBColumnValue	1	0
+
+function <TeamActivityModel.lua:1199,1211> (71 instructions at 0000018BCD313E60)
+1 param, 7 slots, 0 upvalues, 9 locals, 9 constants, 0 functions
+	1	[1200]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	2	[1200]	GETTABLE 	1 1 -2	; "RivalA"
+	3	[1200]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	4	[1200]	GETTABLE 	2 2 -2	; "RivalA"
+	5	[1200]	GETTABLE 	2 2 -3	; "StartingScore"
+	6	[1200]	TEST     	2 1
+	7	[1200]	JMP      	0 1	; to 9
+	8	[1200]	LOADK    	2 -4	; 0
+	9	[1200]	SETTABLE 	1 -3 2	; "StartingScore" -
+	10	[1201]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	11	[1201]	GETTABLE 	1 1 -2	; "RivalA"
+	12	[1201]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	13	[1201]	GETTABLE 	2 2 -2	; "RivalA"
+	14	[1201]	GETTABLE 	2 2 -3	; "StartingScore"
+	15	[1201]	ADD      	2 2 -5	; - 25
+	16	[1201]	SETTABLE 	1 -3 2	; "StartingScore" -
+	17	[1202]	LOADK    	1 -6	; 1
+	18	[1202]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	19	[1202]	GETTABLE 	2 2 -2	; "RivalA"
+	20	[1202]	GETTABLE 	2 2 -7	; "Speed"
+	21	[1202]	LEN      	2 2
+	22	[1202]	LOADK    	3 -6	; 1
+	23	[1202]	FORPREP  	1 11	; to 35
+	24	[1203]	GETTABLE 	5 0 -1	; "m_robotAllData"
+	25	[1203]	GETTABLE 	5 5 -2	; "RivalA"
+	26	[1203]	GETTABLE 	5 5 -7	; "Speed"
+	27	[1203]	GETTABLE 	5 5 4
+	28	[1203]	GETTABLE 	6 0 -1	; "m_robotAllData"
+	29	[1203]	GETTABLE 	6 6 -2	; "RivalA"
+	30	[1203]	GETTABLE 	6 6 -7	; "Speed"
+	31	[1203]	GETTABLE 	6 6 4
+	32	[1203]	GETTABLE 	6 6 -8	; "Score"
+	33	[1203]	ADD      	6 6 -5	; - 25
+	34	[1203]	SETTABLE 	5 -8 6	; "Score" -
+	35	[1202]	FORLOOP  	1 -12	; to 24
+	36	[1206]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	37	[1206]	GETTABLE 	1 1 -9	; "RivalB"
+	38	[1206]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	39	[1206]	GETTABLE 	2 2 -9	; "RivalB"
+	40	[1206]	GETTABLE 	2 2 -3	; "StartingScore"
+	41	[1206]	TEST     	2 1
+	42	[1206]	JMP      	0 1	; to 44
+	43	[1206]	LOADK    	2 -4	; 0
+	44	[1206]	SETTABLE 	1 -3 2	; "StartingScore" -
+	45	[1207]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	46	[1207]	GETTABLE 	1 1 -9	; "RivalB"
+	47	[1207]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	48	[1207]	GETTABLE 	2 2 -9	; "RivalB"
+	49	[1207]	GETTABLE 	2 2 -3	; "StartingScore"
+	50	[1207]	ADD      	2 2 -5	; - 25
+	51	[1207]	SETTABLE 	1 -3 2	; "StartingScore" -
+	52	[1208]	LOADK    	1 -6	; 1
+	53	[1208]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	54	[1208]	GETTABLE 	2 2 -9	; "RivalB"
+	55	[1208]	GETTABLE 	2 2 -7	; "Speed"
+	56	[1208]	LEN      	2 2
+	57	[1208]	LOADK    	3 -6	; 1
+	58	[1208]	FORPREP  	1 11	; to 70
+	59	[1209]	GETTABLE 	5 0 -1	; "m_robotAllData"
+	60	[1209]	GETTABLE 	5 5 -9	; "RivalB"
+	61	[1209]	GETTABLE 	5 5 -7	; "Speed"
+	62	[1209]	GETTABLE 	5 5 4
+	63	[1209]	GETTABLE 	6 0 -1	; "m_robotAllData"
+	64	[1209]	GETTABLE 	6 6 -9	; "RivalB"
+	65	[1209]	GETTABLE 	6 6 -7	; "Speed"
+	66	[1209]	GETTABLE 	6 6 4
+	67	[1209]	GETTABLE 	6 6 -8	; "Score"
+	68	[1209]	ADD      	6 6 -5	; - 25
+	69	[1209]	SETTABLE 	5 -8 6	; "Score" -
+	70	[1208]	FORLOOP  	1 -12	; to 59
+	71	[1211]	RETURN   	0 1
+constants (9) for 0000018BCD313E60:
+	1	"m_robotAllData"
+	2	"RivalA"
+	3	"StartingScore"
+	4	0
+	5	25
+	6	1
+	7	"Speed"
+	8	"Score"
+	9	"RivalB"
+locals (9) for 0000018BCD313E60:
+	0	self	1	72
+	1	(for index)	23	36
+	2	(for limit)	23	36
+	3	(for step)	23	36
+	4	i	24	35
+	5	(for index)	58	71
+	6	(for limit)	58	71
+	7	(for step)	58	71
+	8	i	59	70
+upvalues (0) for 0000018BCD313E60:
+
+function <TeamActivityModel.lua:1213,1221> (36 instructions at 0000018BCD312D60)
+1 param, 7 slots, 0 upvalues, 5 locals, 8 constants, 0 functions
+	1	[1215]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	2	[1215]	GETTABLE 	1 1 -2	; "TeamMate"
+	3	[1215]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	4	[1215]	GETTABLE 	2 2 -2	; "TeamMate"
+	5	[1215]	GETTABLE 	2 2 -3	; "StartingScore"
+	6	[1215]	TEST     	2 1
+	7	[1215]	JMP      	0 1	; to 9
+	8	[1215]	LOADK    	2 -4	; 0
+	9	[1215]	SETTABLE 	1 -3 2	; "StartingScore" -
+	10	[1216]	GETTABLE 	1 0 -1	; "m_robotAllData"
+	11	[1216]	GETTABLE 	1 1 -2	; "TeamMate"
+	12	[1216]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	13	[1216]	GETTABLE 	2 2 -2	; "TeamMate"
+	14	[1216]	GETTABLE 	2 2 -3	; "StartingScore"
+	15	[1216]	ADD      	2 2 -5	; - 50
+	16	[1216]	SETTABLE 	1 -3 2	; "StartingScore" -
+	17	[1217]	LOADK    	1 -6	; 1
+	18	[1217]	GETTABLE 	2 0 -1	; "m_robotAllData"
+	19	[1217]	GETTABLE 	2 2 -2	; "TeamMate"
+	20	[1217]	GETTABLE 	2 2 -7	; "Speed"
+	21	[1217]	LEN      	2 2
+	22	[1217]	LOADK    	3 -6	; 1
+	23	[1217]	FORPREP  	1 11	; to 35
+	24	[1218]	GETTABLE 	5 0 -1	; "m_robotAllData"
+	25	[1218]	GETTABLE 	5 5 -2	; "TeamMate"
+	26	[1218]	GETTABLE 	5 5 -7	; "Speed"
+	27	[1218]	GETTABLE 	5 5 4
+	28	[1218]	GETTABLE 	6 0 -1	; "m_robotAllData"
+	29	[1218]	GETTABLE 	6 6 -2	; "TeamMate"
+	30	[1218]	GETTABLE 	6 6 -7	; "Speed"
+	31	[1218]	GETTABLE 	6 6 4
+	32	[1218]	GETTABLE 	6 6 -8	; "Score"
+	33	[1218]	ADD      	6 6 -5	; - 50
+	34	[1218]	SETTABLE 	5 -8 6	; "Score" -
+	35	[1217]	FORLOOP  	1 -12	; to 24
+	36	[1221]	RETURN   	0 1
+constants (8) for 0000018BCD312D60:
+	1	"m_robotAllData"
+	2	"TeamMate"
+	3	"StartingScore"
+	4	0
+	5	50
+	6	1
+	7	"Speed"
+	8	"Score"
+locals (5) for 0000018BCD312D60:
+	0	self	1	37
+	1	(for index)	23	36
+	2	(for limit)	23	36
+	3	(for step)	23	36
+	4	i	24	35
+upvalues (0) for 0000018BCD312D60:
+
+function <TeamActivityModel.lua:1223,1274> (31 instructions at 0000018BCD312DE0)
+1 param, 10 slots, 1 upvalue, 1 local, 12 constants, 6 functions
+	1	[1224]	NEWTABLE 	1 0 2
+	2	[1227]	CLOSURE  	2 0	; 0000018BCD312EE0
+	3	[1227]	SETTABLE 	1 -1 2	; "CheckFunc" -
+	4	[1228]	NEWTABLE 	2 0 2
+	5	[1229]	SETTABLE 	2 -3 -4	; "GroupName" "2v2\230\180\187\229\138\168(Team)"
+	6	[1230]	NEWTABLE 	3 5 0
+	7	[1230]	NEWTABLE 	4 0 2
+	8	[1232]	SETTABLE 	4 -6 -7	; "BtnName" "\233\162\132\229\145\138"
+	9	[1235]	CLOSURE  	5 1	; 0000018BCD3130E0
+	10	[1235]	SETTABLE 	4 -8 5	; "BtnClickFunc" -
+	11	[1236]	NEWTABLE 	5 0 2
+	12	[1238]	SETTABLE 	5 -6 -9	; "BtnName" "\229\188\128\229\167\139"
+	13	[1241]	CLOSURE  	6 2	; 0000018BCD3131E0
+	14	[1241]	SETTABLE 	5 -8 6	; "BtnClickFunc" -
+	15	[1242]	NEWTABLE 	6 0 2
+	16	[1244]	SETTABLE 	6 -6 -10	; "BtnName" "\231\187\147\230\157\159/\229\174\140\230\136\144"
+	17	[1247]	CLOSURE  	7 3	; 0000018BCD31F130
+	18	[1247]	SETTABLE 	6 -8 7	; "BtnClickFunc" -
+	19	[1248]	NEWTABLE 	7 0 2
+	20	[1250]	SETTABLE 	7 -6 -11	; "BtnName" "\229\184\174\229\138\169"
+	21	[1253]	CLOSURE  	8 4	; 0000018BCD31D9B0
+	22	[1253]	SETTABLE 	7 -8 8	; "BtnClickFunc" -
+	23	[1254]	NEWTABLE 	8 0 2
+	24	[1256]	SETTABLE 	8 -6 -12	; "BtnName" "MVP"
+	25	[1269]	CLOSURE  	9 5	; 0000018BCD31E330
+	26	[1269]	SETTABLE 	8 -8 9	; "BtnClickFunc" -
+	27	[1271]	SETLIST  	3 5 1	; 1
+	28	[1271]	SETTABLE 	2 -5 3	; "WindowList" -
+	29	[1272]	SETTABLE 	1 -2 2	; "config" -
+	30	[1273]	RETURN   	1 2
+	31	[1274]	RETURN   	0 1
+constants (12) for 0000018BCD312DE0:
+	1	"CheckFunc"
+	2	"config"
+	3	"GroupName"
+	4	"2v2\230\180\187\229\138\168(Team)"
+	5	"WindowList"
+	6	"BtnName"
+	7	"\233\162\132\229\145\138"
+	8	"BtnClickFunc"
+	9	"\229\188\128\229\167\139"
+	10	"\231\187\147\230\157\159/\229\174\140\230\136\144"
+	11	"\229\184\174\229\138\169"
+	12	"MVP"
+locals (1) for 0000018BCD312DE0:
+	0	self	1	32
+upvalues (1) for 0000018BCD312DE0:
+	0	_ENV	0	0
+
+function <TeamActivityModel.lua:1225,1227> (12 instructions at 0000018BCD312EE0)
+0 params, 3 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[1226]	GETUPVAL 	0 0	; self
+	2	[1226]	SELF     	0 0 -1	; "GetState"
+	3	[1226]	LOADBOOL 	2 0 0
+	4	[1226]	CALL     	0 3 2
+	5	[1226]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	6	[1226]	GETTABLE 	1 1 -3	; "Released"
+	7	[1226]	EQ       	0 0 1
+	8	[1226]	JMP      	0 1	; to 10
+	9	[1226]	LOADBOOL 	0 0 1
+	10	[1226]	LOADBOOL 	0 1 0
+	11	[1226]	RETURN   	0 2
+	12	[1227]	RETURN   	0 1
+constants (3) for 0000018BCD312EE0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Released"
+locals (0) for 0000018BCD312EE0:
+upvalues (2) for 0000018BCD312EE0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:1233,1235> (10 instructions at 0000018BCD3130E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1234]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1234]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1234]	SELF     	0 0 -3	; "OpenView"
+	4	[1234]	GETTABUP 	2 1 -4	; self "m_activityDefinition"
+	5	[1234]	GETTABLE 	2 2 -5	; "NoticeWindowPrefabName"
+	6	[1234]	GETUPVAL 	3 1	; self
+	7	[1234]	SELF     	3 3 -6	; "GetType"
+	8	[1234]	CALL     	3 2 0
+	9	[1234]	CALL     	0 0 1
+	10	[1235]	RETURN   	0 1
+constants (6) for 0000018BCD3130E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_activityDefinition"
+	5	"NoticeWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000018BCD3130E0:
+upvalues (2) for 0000018BCD3130E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:1239,1241> (10 instructions at 0000018BCD3131E0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1240]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1240]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1240]	SELF     	0 0 -3	; "OpenView"
+	4	[1240]	GETTABUP 	2 1 -4	; self "m_activityDefinition"
+	5	[1240]	GETTABLE 	2 2 -5	; "ReadyWindowPrefabName"
+	6	[1240]	GETUPVAL 	3 1	; self
+	7	[1240]	SELF     	3 3 -6	; "GetType"
+	8	[1240]	CALL     	3 2 0
+	9	[1240]	CALL     	0 0 1
+	10	[1241]	RETURN   	0 1
+constants (6) for 0000018BCD3131E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_activityDefinition"
+	5	"ReadyWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000018BCD3131E0:
+upvalues (2) for 0000018BCD3131E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:1245,1247> (10 instructions at 0000018BCD31F130)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1246]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1246]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1246]	SELF     	0 0 -3	; "OpenView"
+	4	[1246]	GETTABUP 	2 1 -4	; self "m_activityDefinition"
+	5	[1246]	GETTABLE 	2 2 -5	; "EndWindowPrefabName"
+	6	[1246]	GETUPVAL 	3 1	; self
+	7	[1246]	SELF     	3 3 -6	; "GetType"
+	8	[1246]	CALL     	3 2 0
+	9	[1246]	CALL     	0 0 1
+	10	[1247]	RETURN   	0 1
+constants (6) for 0000018BCD31F130:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_activityDefinition"
+	5	"EndWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000018BCD31F130:
+upvalues (2) for 0000018BCD31F130:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:1251,1253> (10 instructions at 0000018BCD31D9B0)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[1252]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[1252]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[1252]	SELF     	0 0 -3	; "OpenView"
+	4	[1252]	GETTABUP 	2 1 -4	; self "m_activityDefinition"
+	5	[1252]	GETTABLE 	2 2 -5	; "HelpWindowPrefabName"
+	6	[1252]	GETUPVAL 	3 1	; self
+	7	[1252]	SELF     	3 3 -6	; "GetType"
+	8	[1252]	CALL     	3 2 0
+	9	[1252]	CALL     	0 0 1
+	10	[1253]	RETURN   	0 1
+constants (6) for 0000018BCD31D9B0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_activityDefinition"
+	5	"HelpWindowPrefabName"
+	6	"GetType"
+locals (0) for 0000018BCD31D9B0:
+upvalues (2) for 0000018BCD31D9B0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <TeamActivityModel.lua:1257,1269> (41 instructions at 0000018BCD31E330)
+0 params, 8 slots, 2 upvalues, 1 local, 15 constants, 0 functions
+	1	[1258]	GETTABUP 	0 0 -1	; self "m_robotAllData"
+	2	[1258]	GETTABLE 	0 0 -2	; "TeamMate"
+	3	[1258]	TEST     	0 1
+	4	[1258]	JMP      	0 6	; to 11
+	5	[1259]	GETTABUP 	0 1 -3	; _ENV "GM"
+	6	[1259]	GETTABLE 	0 0 -4	; "UIManager"
+	7	[1259]	SELF     	0 0 -5	; "ShowPrompt"
+	8	[1259]	LOADK    	2 -6	; "\230\178\161\230\156\137\233\152\159\229\143\139"
+	9	[1259]	CALL     	0 3 1
+	10	[1260]	RETURN   	0 1
+	11	[1262]	GETTABUP 	0 1 -3	; _ENV "GM"
+	12	[1262]	GETTABLE 	0 0 -4	; "UIManager"
+	13	[1262]	SELF     	0 0 -7	; "GetOpenedViewByName"
+	14	[1262]	GETTABUP 	2 0 -8	; self "m_activityDefinition"
+	15	[1262]	GETTABLE 	2 2 -9	; "MainWindowPrefabName"
+	16	[1262]	CALL     	0 3 2
+	17	[1263]	TEST     	0 0
+	18	[1263]	JMP      	0 17	; to 36
+	19	[1264]	GETTABUP 	1 1 -3	; _ENV "GM"
+	20	[1264]	GETTABLE 	1 1 -4	; "UIManager"
+	21	[1264]	SELF     	1 1 -10	; "OpenView"
+	22	[1264]	GETTABUP 	3 0 -8	; self "m_activityDefinition"
+	23	[1264]	GETTABLE 	3 3 -11	; "MVPWindowPrefabName"
+	24	[1264]	GETUPVAL 	4 0	; self
+	25	[1264]	SELF     	4 4 -12	; "GetType"
+	26	[1264]	CALL     	4 2 2
+	27	[1264]	MOVE     	5 0
+	28	[1264]	GETUPVAL 	6 0	; self
+	29	[1264]	SELF     	6 6 -13	; "GetCurScore"
+	30	[1264]	CALL     	6 2 2
+	31	[1264]	GETTABUP 	7 0 -1	; self "m_robotAllData"
+	32	[1264]	GETTABLE 	7 7 -2	; "TeamMate"
+	33	[1264]	GETTABLE 	7 7 -14	; "CurScore"
+	34	[1264]	CALL     	1 7 1
+	35	[1264]	JMP      	0 5	; to 41
+	36	[1266]	GETTABUP 	1 1 -3	; _ENV "GM"
+	37	[1266]	GETTABLE 	1 1 -4	; "UIManager"
+	38	[1266]	SELF     	1 1 -5	; "ShowPrompt"
+	39	[1266]	LOADK    	3 -15	; "\229\133\136\230\137\147\229\188\128\228\184\187\233\161\181\233\157\162"
+	40	[1266]	CALL     	1 3 1
+	41	[1269]	RETURN   	0 1
+constants (15) for 0000018BCD31E330:
+	1	"m_robotAllData"
+	2	"TeamMate"
+	3	"GM"
+	4	"UIManager"
+	5	"ShowPrompt"
+	6	"\230\178\161\230\156\137\233\152\159\229\143\139"
+	7	"GetOpenedViewByName"
+	8	"m_activityDefinition"
+	9	"MainWindowPrefabName"
+	10	"OpenView"
+	11	"MVPWindowPrefabName"
+	12	"GetType"
+	13	"GetCurScore"
+	14	"CurScore"
+	15	"\229\133\136\230\137\147\229\188\128\228\184\187\233\161\181\233\157\162"
+locals (1) for 0000018BCD31E330:
+	0	mainWindow	17	42
+upvalues (2) for 0000018BCD31E330:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <TeamActivityModel.lua:1276,1278> (3 instructions at 0000018BCD31F530)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1277]	GETTABLE 	1 0 -1	; "m_testInfo"
+	2	[1277]	RETURN   	1 2
+	3	[1278]	RETURN   	0 1
+constants (1) for 0000018BCD31F530:
+	1	"m_testInfo"
+locals (1) for 0000018BCD31F530:
+	0	self	1	4
+upvalues (0) for 0000018BCD31F530:
+
+function <TeamActivityModel.lua:1280,1282> (2 instructions at 0000018BCD31E930)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[1281]	SETTABLE 	0 -1 -2	; "m_lastTopTipTime" 0
+	2	[1282]	RETURN   	0 1
+constants (2) for 0000018BCD31E930:
+	1	"m_lastTopTipTime"
+	2	0
+locals (1) for 0000018BCD31E930:
+	0	self	1	3
+upvalues (0) for 0000018BCD31E930:
+
+function <TeamActivityModel.lua:1284,1313> (118 instructions at 0000018BCD31E530)
+1 param, 25 slots, 1 upvalue, 15 locals, 27 constants, 0 functions
+	1	[1285]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[1285]	GETTABLE 	1 1 -2	; "DeepCopy"
+	3	[1285]	GETTABUP 	2 0 -3	; _ENV "GM"
+	4	[1285]	GETTABLE 	2 2 -4	; "ConfigModel"
+	5	[1285]	SELF     	2 2 -5	; "GetLocalConfig"
+	6	[1285]	GETTABUP 	4 0 -6	; _ENV "LocalConfigKey"
+	7	[1285]	GETTABLE 	4 4 -7	; "TeamRobot"
+	8	[1285]	CALL     	2 3 0
+	9	[1285]	CALL     	1 0 2
+	10	[1286]	GETTABUP 	2 0 -8	; _ENV "pairs"
+	11	[1286]	MOVE     	3 1
+	12	[1286]	CALL     	2 2 4
+	13	[1286]	JMP      	0 102	; to 116
+	14	[1287]	SELF     	7 0 -9	; "ConvertRobotSpeed"
+	15	[1287]	MOVE     	9 6
+	16	[1287]	CALL     	7 3 1
+	17	[1289]	LOADK    	7 -10	; 0
+	18	[1289]	LOADK    	8 -10	; 0
+	19	[1290]	LOADK    	9 -11	; 1
+	20	[1290]	GETTABLE 	10 6 -12	; "speed"
+	21	[1290]	LEN      	10 10
+	22	[1290]	LOADK    	11 -11	; 1
+	23	[1290]	FORPREP  	9 91	; to 115
+	24	[1291]	GETTABLE 	13 6 -12	; "speed"
+	25	[1291]	GETTABLE 	13 13 12
+	26	[1291]	GETTABLE 	13 13 -13	; "Type"
+	27	[1291]	EQ       	0 13 -11	; - 1
+	28	[1291]	JMP      	0 50	; to 79
+	29	[1292]	GETTABLE 	13 6 -12	; "speed"
+	30	[1292]	GETTABLE 	13 13 12
+	31	[1292]	GETTABLE 	13 13 -14	; "Time"
+	32	[1292]	SUB      	13 13 7
+	33	[1293]	GETTABLE 	14 6 -12	; "speed"
+	34	[1293]	GETTABLE 	14 14 12
+	35	[1293]	GETTABLE 	14 14 -15	; "Score"
+	36	[1293]	SUB      	14 14 8
+	37	[1295]	LT       	0 14 13
+	38	[1295]	JMP      	0 19	; to 58
+	39	[1296]	GETTABUP 	15 0 -16	; _ENV "Log"
+	40	[1296]	GETTABLE 	15 15 -17	; "Error"
+	41	[1296]	LOADK    	16 -18	; "[2v2]: \229\129\135\228\186\186id: "
+	42	[1296]	GETTABUP 	17 0 -19	; _ENV "tostring"
+	43	[1296]	GETTABLE 	18 6 -20	; "id"
+	44	[1296]	CALL     	17 2 2
+	45	[1296]	LOADK    	18 -21	; " \231\172\172"
+	46	[1296]	MOVE     	19 12
+	47	[1296]	LOADK    	20 -22	; "\230\157\161\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\230\151\182\233\151\180\233\151\180\233\154\148\229\164\167\228\186\142\229\162\158\229\138\160\229\136\134\230\149\176\239\188\140\233\151\180\233\154\148:"
+	48	[1296]	GETTABUP 	21 0 -19	; _ENV "tostring"
+	49	[1296]	MOVE     	22 13
+	50	[1296]	CALL     	21 2 2
+	51	[1296]	LOADK    	22 -23	; " \229\136\134\230\149\176:"
+	52	[1296]	GETTABUP 	23 0 -19	; _ENV "tostring"
+	53	[1296]	MOVE     	24 14
+	54	[1296]	CALL     	23 2 2
+	55	[1296]	CONCAT   	16 16 23
+	56	[1296]	CALL     	15 2 1
+	57	[1296]	JMP      	0 21	; to 79
+	58	[1297]	MUL      	15 -24 13	; 2 -
+	59	[1297]	LT       	0 15 14
+	60	[1297]	JMP      	0 18	; to 79
+	61	[1298]	GETTABUP 	15 0 -16	; _ENV "Log"
+	62	[1298]	GETTABLE 	15 15 -17	; "Error"
+	63	[1298]	LOADK    	16 -18	; "[2v2]: \229\129\135\228\186\186id: "
+	64	[1298]	GETTABUP 	17 0 -19	; _ENV "tostring"
+	65	[1298]	GETTABLE 	18 6 -20	; "id"
+	66	[1298]	CALL     	17 2 2
+	67	[1298]	LOADK    	18 -21	; " \231\172\172"
+	68	[1298]	MOVE     	19 12
+	69	[1298]	LOADK    	20 -25	; "\230\157\161\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\229\162\158\229\138\160\229\136\134\230\149\176\229\164\167\228\186\1422\229\128\141\230\151\182\233\151\180\233\151\180\233\154\148\239\188\140\233\151\180\233\154\148:"
+	70	[1298]	GETTABUP 	21 0 -19	; _ENV "tostring"
+	71	[1298]	MOVE     	22 13
+	72	[1298]	CALL     	21 2 2
+	73	[1298]	LOADK    	22 -23	; " \229\136\134\230\149\176:"
+	74	[1298]	GETTABUP 	23 0 -19	; _ENV "tostring"
+	75	[1298]	MOVE     	24 14
+	76	[1298]	CALL     	23 2 2
+	77	[1298]	CONCAT   	16 16 23
+	78	[1298]	CALL     	15 2 1
+	79	[1302]	GETTABLE 	13 6 -12	; "speed"
+	80	[1302]	GETTABLE 	13 13 12
+	81	[1302]	GETTABLE 	8 13 -15	; "Score"
+	82	[1303]	GETTABLE 	13 6 -12	; "speed"
+	83	[1303]	GETTABLE 	13 13 12
+	84	[1303]	GETTABLE 	7 13 -14	; "Time"
+	85	[1306]	LT       	0 -11 12	; 1 -
+	86	[1306]	JMP      	0 28	; to 115
+	87	[1307]	GETTABLE 	13 6 -12	; "speed"
+	88	[1307]	GETTABLE 	13 13 12
+	89	[1307]	GETTABLE 	13 13 -15	; "Score"
+	90	[1307]	GETTABLE 	14 6 -12	; "speed"
+	91	[1307]	SUB      	15 12 -11	; - 1
+	92	[1307]	GETTABLE 	14 14 15
+	93	[1307]	GETTABLE 	14 14 -15	; "Score"
+	94	[1307]	LE       	0 13 14
+	95	[1307]	JMP      	0 19	; to 115
+	96	[1308]	GETTABUP 	13 0 -16	; _ENV "Log"
+	97	[1308]	GETTABLE 	13 13 -17	; "Error"
+	98	[1308]	LOADK    	14 -18	; "[2v2]: \229\129\135\228\186\186id: "
+	99	[1308]	GETTABLE 	15 6 -20	; "id"
+	100	[1308]	LOADK    	16 -26	; " "
+	101	[1308]	GETTABUP 	17 0 -19	; _ENV "tostring"
+	102	[1308]	GETTABLE 	18 6 -12	; "speed"
+	103	[1308]	GETTABLE 	18 18 12
+	104	[1308]	GETTABLE 	18 18 -15	; "Score"
+	105	[1308]	CALL     	17 2 2
+	106	[1308]	LOADK    	18 -27	; " <= "
+	107	[1308]	GETTABUP 	19 0 -19	; _ENV "tostring"
+	108	[1308]	GETTABLE 	20 6 -12	; "speed"
+	109	[1308]	SUB      	21 12 -11	; - 1
+	110	[1308]	GETTABLE 	20 20 21
+	111	[1308]	GETTABLE 	20 20 -15	; "Score"
+	112	[1308]	CALL     	19 2 2
+	113	[1308]	CONCAT   	14 14 19
+	114	[1308]	CALL     	13 2 1
+	115	[1290]	FORLOOP  	9 -92	; to 24
+	116	[1286]	TFORCALL 	2 2
+	117	[1286]	TFORLOOP 	4 -104	; to 14
+	118	[1313]	RETURN   	0 1
+constants (27) for 0000018BCD31E530:
+	1	"Table"
+	2	"DeepCopy"
+	3	"GM"
+	4	"ConfigModel"
+	5	"GetLocalConfig"
+	6	"LocalConfigKey"
+	7	"TeamRobot"
+	8	"pairs"
+	9	"ConvertRobotSpeed"
+	10	0
+	11	1
+	12	"speed"
+	13	"Type"
+	14	"Time"
+	15	"Score"
+	16	"Log"
+	17	"Error"
+	18	"[2v2]: \229\129\135\228\186\186id: "
+	19	"tostring"
+	20	"id"
+	21	" \231\172\172"
+	22	"\230\157\161\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\230\151\182\233\151\180\233\151\180\233\154\148\229\164\167\228\186\142\229\162\158\229\138\160\229\136\134\230\149\176\239\188\140\233\151\180\233\154\148:"
+	23	" \229\136\134\230\149\176:"
+	24	2
+	25	"\230\157\161\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\229\162\158\229\138\160\229\136\134\230\149\176\229\164\167\228\186\1422\229\128\141\230\151\182\233\151\180\233\151\180\233\154\148\239\188\140\233\151\180\233\154\148:"
+	26	" "
+	27	" <= "
+locals (15) for 0000018BCD31E530:
+	0	self	1	119
+	1	originRobotConfig	10	119
+	2	(for generator)	13	118
+	3	(for state)	13	118
+	4	(for control)	13	118
+	5	_	14	116
+	6	config	14	116
+	7	lastTime	19	116
+	8	lastScore	19	116
+	9	(for index)	23	116
+	10	(for limit)	23	116
+	11	(for step)	23	116
+	12	i	24	115
+	13	duration	33	79
+	14	score	37	79
+upvalues (1) for 0000018BCD31E530:
+	0	_ENV	0	0

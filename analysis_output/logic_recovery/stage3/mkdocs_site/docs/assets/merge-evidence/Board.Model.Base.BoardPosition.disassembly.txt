@@ -1,0 +1,359 @@
+
+main <BoardPosition.lua:0,0> (79 instructions at 000002465F38EFC0)
+0+ params, 13 slots, 1 upvalue, 3 locals, 21 constants, 10 functions
+	1	[5]	NEWTABLE 	0 0 0
+	2	[5]	SETTABUP 	0 -1 0	; _ENV "BoardPosition"
+	3	[6]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	4	[6]	GETTABUP 	1 0 -1	; _ENV "BoardPosition"
+	5	[6]	SETTABLE 	0 -2 1	; "__index" -
+	6	[11]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	7	[15]	CLOSURE  	1 0	; 000002465F38F040
+	8	[11]	SETTABLE 	0 -3 1	; "Init" -
+	9	[17]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	10	[19]	CLOSURE  	1 1	; 000002465F391870
+	11	[17]	SETTABLE 	0 -4 1	; "GetX" -
+	12	[21]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	13	[23]	CLOSURE  	1 2	; 000002465F3918F0
+	14	[21]	SETTABLE 	0 -5 1	; "GetY" -
+	15	[25]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	16	[27]	CLOSURE  	1 3	; 000002465F391970
+	17	[25]	SETTABLE 	0 -6 1	; "GetKey" -
+	18	[29]	GETTABUP 	0 0 -1	; _ENV "BoardPosition"
+	19	[35]	CLOSURE  	1 4	; 000002465F3919F0
+	20	[29]	SETTABLE 	0 -7 1	; "__eq" -
+	21	[37]	NEWTABLE 	0 0 0
+	22	[39]	GETTABUP 	1 0 -8	; _ENV "BoardPosition"
+	23	[44]	CLOSURE  	2 5	; 000002465F391B70
+	24	[39]	SETTABLE 	1 -9 2	; "__tostring" -
+	25	[46]	NEWTABLE 	1 0 0
+	26	[47]	NEWTABLE 	2 0 0
+	27	[49]	GETTABUP 	3 0 -8	; _ENV "BoardPosition"
+	28	[63]	CLOSURE  	4 6	; 000002465F391D30
+	29	[49]	SETTABLE 	3 -10 4	; "Create" -
+	30	[66]	GETTABUP 	3 0 -11	; _ENV "BoardPosition"
+	31	[66]	NEWTABLE 	4 4 0
+	32	[66]	LOADK    	5 -13	; 1
+	33	[66]	LOADK    	6 -14	; 0
+	34	[66]	LOADK    	7 -15	; -1
+	35	[66]	LOADK    	8 -14	; 0
+	36	[66]	SETLIST  	4 4 1	; 1
+	37	[66]	SETTABLE 	3 -12 4	; "Dir4OffsetX" -
+	38	[67]	GETTABUP 	3 0 -11	; _ENV "BoardPosition"
+	39	[67]	NEWTABLE 	4 4 0
+	40	[67]	LOADK    	5 -14	; 0
+	41	[67]	LOADK    	6 -13	; 1
+	42	[67]	LOADK    	7 -14	; 0
+	43	[67]	LOADK    	8 -15	; -1
+	44	[67]	SETLIST  	4 4 1	; 1
+	45	[67]	SETTABLE 	3 -16 4	; "Dir4OffsetY" -
+	46	[69]	GETTABUP 	3 0 -11	; _ENV "BoardPosition"
+	47	[69]	NEWTABLE 	4 8 0
+	48	[69]	LOADK    	5 -14	; 0
+	49	[69]	LOADK    	6 -13	; 1
+	50	[69]	LOADK    	7 -13	; 1
+	51	[69]	LOADK    	8 -13	; 1
+	52	[69]	LOADK    	9 -14	; 0
+	53	[69]	LOADK    	10 -15	; -1
+	54	[69]	LOADK    	11 -15	; -1
+	55	[69]	LOADK    	12 -15	; -1
+	56	[69]	SETLIST  	4 8 1	; 1
+	57	[69]	SETTABLE 	3 -17 4	; "Dir8OffsetX" -
+	58	[70]	GETTABUP 	3 0 -11	; _ENV "BoardPosition"
+	59	[70]	NEWTABLE 	4 8 0
+	60	[70]	LOADK    	5 -15	; -1
+	61	[70]	LOADK    	6 -15	; -1
+	62	[70]	LOADK    	7 -14	; 0
+	63	[70]	LOADK    	8 -13	; 1
+	64	[70]	LOADK    	9 -13	; 1
+	65	[70]	LOADK    	10 -13	; 1
+	66	[70]	LOADK    	11 -14	; 0
+	67	[70]	LOADK    	12 -15	; -1
+	68	[70]	SETLIST  	4 8 1	; 1
+	69	[70]	SETTABLE 	3 -18 4	; "Dir8OffsetY" -
+	70	[73]	GETTABUP 	3 0 -11	; _ENV "BoardPosition"
+	71	[75]	CLOSURE  	4 7	; 000002465F392EF0
+	72	[73]	SETTABLE 	3 -19 4	; "GetDirPosition" -
+	73	[77]	GETTABUP 	3 0 -1	; _ENV "BoardPosition"
+	74	[79]	CLOSURE  	4 8	; 000002465F392F70
+	75	[77]	SETTABLE 	3 -20 4	; "GetDir8Position" -
+	76	[81]	GETTABUP 	3 0 -1	; _ENV "BoardPosition"
+	77	[83]	CLOSURE  	4 9	; 000002465F3932C0
+	78	[81]	SETTABLE 	3 -21 4	; "GetDir4Position" -
+	79	[83]	RETURN   	0 1
+constants (21) for 000002465F38EFC0:
+	1	"BoardPosition"
+	2	"__index"
+	3	"Init"
+	4	"GetX"
+	5	"GetY"
+	6	"GetKey"
+	7	"__eq"
+	8	"BoardPosition"
+	9	"__tostring"
+	10	"Create"
+	11	"BoardPosition"
+	12	"Dir4OffsetX"
+	13	1
+	14	0
+	15	-1
+	16	"Dir4OffsetY"
+	17	"Dir8OffsetX"
+	18	"Dir8OffsetY"
+	19	"GetDirPosition"
+	20	"GetDir8Position"
+	21	"GetDir4Position"
+locals (3) for 000002465F38EFC0:
+	0	BoardPositionStringCache	22	80
+	1	BoardPositionCache	26	80
+	2	BoardPositionKeyCache	27	80
+upvalues (1) for 000002465F38EFC0:
+	0	_ENV	1	0
+
+function <BoardPosition.lua:11,15> (4 instructions at 000002465F38F040)
+4 params, 4 slots, 0 upvalues, 4 locals, 3 constants, 0 functions
+	1	[12]	SETTABLE 	0 -1 1	; "m_x" -
+	2	[13]	SETTABLE 	0 -2 2	; "m_y" -
+	3	[14]	SETTABLE 	0 -3 3	; "m_key" -
+	4	[15]	RETURN   	0 1
+constants (3) for 000002465F38F040:
+	1	"m_x"
+	2	"m_y"
+	3	"m_key"
+locals (4) for 000002465F38F040:
+	0	self	1	5
+	1	x	1	5
+	2	y	1	5
+	3	key	1	5
+upvalues (0) for 000002465F38F040:
+
+function <BoardPosition.lua:17,19> (3 instructions at 000002465F391870)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[18]	GETTABLE 	1 0 -1	; "m_x"
+	2	[18]	RETURN   	1 2
+	3	[19]	RETURN   	0 1
+constants (1) for 000002465F391870:
+	1	"m_x"
+locals (1) for 000002465F391870:
+	0	self	1	4
+upvalues (0) for 000002465F391870:
+
+function <BoardPosition.lua:21,23> (3 instructions at 000002465F3918F0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[22]	GETTABLE 	1 0 -1	; "m_y"
+	2	[22]	RETURN   	1 2
+	3	[23]	RETURN   	0 1
+constants (1) for 000002465F3918F0:
+	1	"m_y"
+locals (1) for 000002465F3918F0:
+	0	self	1	4
+upvalues (0) for 000002465F3918F0:
+
+function <BoardPosition.lua:25,27> (3 instructions at 000002465F391970)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[26]	GETTABLE 	1 0 -1	; "m_key"
+	2	[26]	RETURN   	1 2
+	3	[27]	RETURN   	0 1
+constants (1) for 000002465F391970:
+	1	"m_key"
+locals (1) for 000002465F391970:
+	0	self	1	4
+upvalues (0) for 000002465F391970:
+
+function <BoardPosition.lua:29,35> (27 instructions at 000002465F3919F0)
+2 params, 4 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[30]	GETTABUP 	2 0 -1	; _ENV "getmetatable"
+	2	[30]	MOVE     	3 0
+	3	[30]	CALL     	2 2 2
+	4	[30]	GETTABUP 	3 0 -2	; _ENV "BoardPosition"
+	5	[30]	EQ       	0 2 3
+	6	[30]	JMP      	0 18	; to 25
+	7	[30]	GETTABUP 	2 0 -1	; _ENV "getmetatable"
+	8	[30]	MOVE     	3 1
+	9	[30]	CALL     	2 2 2
+	10	[30]	GETTABUP 	3 0 -2	; _ENV "BoardPosition"
+	11	[30]	EQ       	0 2 3
+	12	[30]	JMP      	0 12	; to 25
+	13	[31]	GETTABLE 	2 0 -3	; "m_x"
+	14	[31]	GETTABLE 	3 1 -3	; "m_x"
+	15	[31]	EQ       	0 2 3
+	16	[31]	JMP      	0 4	; to 21
+	17	[31]	GETTABLE 	2 0 -4	; "m_y"
+	18	[31]	GETTABLE 	3 1 -4	; "m_y"
+	19	[31]	EQ       	1 2 3
+	20	[31]	JMP      	0 1	; to 22
+	21	[31]	LOADBOOL 	2 0 1
+	22	[31]	LOADBOOL 	2 1 0
+	23	[31]	RETURN   	2 2
+	24	[31]	JMP      	0 2	; to 27
+	25	[33]	LOADBOOL 	2 0 0
+	26	[33]	RETURN   	2 2
+	27	[35]	RETURN   	0 1
+constants (4) for 000002465F3919F0:
+	1	"getmetatable"
+	2	"BoardPosition"
+	3	"m_x"
+	4	"m_y"
+locals (2) for 000002465F3919F0:
+	0	a	1	28
+	1	b	1	28
+upvalues (1) for 000002465F3919F0:
+	0	_ENV	0	0
+
+function <BoardPosition.lua:39,44> (19 instructions at 000002465F391B70)
+1 param, 7 slots, 2 upvalues, 1 local, 7 constants, 0 functions
+	1	[40]	GETTABUP 	1 0 0	; BoardPositionStringCache
+	2	[40]	EQ       	0 1 -1	; - nil
+	3	[40]	JMP      	0 13	; to 17
+	4	[41]	LOADK    	1 -2	; "(x:"
+	5	[41]	GETTABUP 	2 1 -3	; _ENV "tostring"
+	6	[41]	SELF     	3 0 -4	; "GetX"
+	7	[41]	CALL     	3 2 0
+	8	[41]	CALL     	2 0 2
+	9	[41]	LOADK    	3 -5	; ",y:"
+	10	[41]	GETTABUP 	4 1 -3	; _ENV "tostring"
+	11	[41]	SELF     	5 0 -6	; "GetY"
+	12	[41]	CALL     	5 2 0
+	13	[41]	CALL     	4 0 2
+	14	[41]	LOADK    	5 -7	; ")"
+	15	[41]	CONCAT   	1 1 5
+	16	[41]	SETTABUP 	0 0 1	; BoardPositionStringCache
+	17	[43]	GETTABUP 	1 0 0	; BoardPositionStringCache
+	18	[43]	RETURN   	1 2
+	19	[44]	RETURN   	0 1
+constants (7) for 000002465F391B70:
+	1	nil
+	2	"(x:"
+	3	"tostring"
+	4	"GetX"
+	5	",y:"
+	6	"GetY"
+	7	")"
+locals (1) for 000002465F391B70:
+	0	position	1	20
+upvalues (2) for 000002465F391B70:
+	0	BoardPositionStringCache	1	0
+	1	_ENV	0	0
+
+function <BoardPosition.lua:49,63> (33 instructions at 000002465F391D30)
+2 params, 9 slots, 3 upvalues, 4 locals, 5 constants, 0 functions
+	1	[50]	GETTABUP 	2 0 0	; BoardPositionKeyCache
+	2	[50]	EQ       	0 2 -1	; - nil
+	3	[50]	JMP      	0 2	; to 6
+	4	[51]	NEWTABLE 	2 0 0
+	5	[51]	SETTABUP 	0 0 2	; BoardPositionKeyCache
+	6	[53]	GETTABUP 	2 0 0	; BoardPositionKeyCache
+	7	[53]	GETTABLE 	2 2 1
+	8	[53]	EQ       	0 2 -1	; - nil
+	9	[53]	JMP      	0 6	; to 16
+	10	[54]	GETTABUP 	2 0 0	; BoardPositionKeyCache
+	11	[54]	MOVE     	3 0
+	12	[54]	LOADK    	4 -2	; "_"
+	13	[54]	MOVE     	5 1
+	14	[54]	CONCAT   	3 3 5
+	15	[54]	SETTABLE 	2 1 3
+	16	[56]	GETTABUP 	2 0 0	; BoardPositionKeyCache
+	17	[56]	GETTABLE 	2 2 1
+	18	[57]	GETTABUP 	3 1 2	; BoardPositionCache
+	19	[57]	EQ       	0 3 -1	; - nil
+	20	[57]	JMP      	0 10	; to 31
+	21	[58]	GETTABUP 	3 2 -3	; _ENV "setmetatable"
+	22	[58]	NEWTABLE 	4 0 0
+	23	[58]	GETTABUP 	5 2 -4	; _ENV "BoardPosition"
+	24	[58]	CALL     	3 3 2
+	25	[59]	SELF     	4 3 -5	; "Init"
+	26	[59]	MOVE     	6 0
+	27	[59]	MOVE     	7 1
+	28	[59]	MOVE     	8 2
+	29	[59]	CALL     	4 5 1
+	30	[60]	SETTABUP 	1 2 3	; BoardPositionCache
+	31	[62]	GETTABUP 	3 1 2	; BoardPositionCache
+	32	[62]	RETURN   	3 2
+	33	[63]	RETURN   	0 1
+constants (5) for 000002465F391D30:
+	1	nil
+	2	"_"
+	3	"setmetatable"
+	4	"BoardPosition"
+	5	"Init"
+locals (4) for 000002465F391D30:
+	0	x	1	34
+	1	y	1	34
+	2	key	18	34
+	3	pos	25	31
+upvalues (3) for 000002465F391D30:
+	0	BoardPositionKeyCache	1	2
+	1	BoardPositionCache	1	1
+	2	_ENV	0	0
+
+function <BoardPosition.lua:73,75> (9 instructions at 000002465F392EF0)
+3 params, 6 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[74]	GETTABUP 	3 0 -1	; _ENV "BoardPosition"
+	2	[74]	GETTABLE 	3 3 -2	; "Create"
+	3	[74]	GETTABLE 	4 0 -3	; "m_x"
+	4	[74]	ADD      	4 4 1
+	5	[74]	GETTABLE 	5 0 -4	; "m_y"
+	6	[74]	ADD      	5 5 2
+	7	[74]	TAILCALL 	3 3 0
+	8	[74]	RETURN   	3 0
+	9	[75]	RETURN   	0 1
+constants (4) for 000002465F392EF0:
+	1	"BoardPosition"
+	2	"Create"
+	3	"m_x"
+	4	"m_y"
+locals (3) for 000002465F392EF0:
+	0	position	1	10
+	1	x	1	10
+	2	y	1	10
+upvalues (1) for 000002465F392EF0:
+	0	_ENV	0	0
+
+function <BoardPosition.lua:77,79> (12 instructions at 000002465F392F70)
+2 params, 6 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[78]	GETTABUP 	2 0 -1	; _ENV "BoardPosition"
+	2	[78]	GETTABLE 	2 2 -2	; "GetDirPosition"
+	3	[78]	MOVE     	3 0
+	4	[78]	GETTABUP 	4 0 -1	; _ENV "BoardPosition"
+	5	[78]	GETTABLE 	4 4 -3	; "Dir8OffsetX"
+	6	[78]	GETTABLE 	4 4 1
+	7	[78]	GETTABUP 	5 0 -1	; _ENV "BoardPosition"
+	8	[78]	GETTABLE 	5 5 -4	; "Dir8OffsetY"
+	9	[78]	GETTABLE 	5 5 1
+	10	[78]	TAILCALL 	2 4 0
+	11	[78]	RETURN   	2 0
+	12	[79]	RETURN   	0 1
+constants (4) for 000002465F392F70:
+	1	"BoardPosition"
+	2	"GetDirPosition"
+	3	"Dir8OffsetX"
+	4	"Dir8OffsetY"
+locals (2) for 000002465F392F70:
+	0	position	1	13
+	1	dir	1	13
+upvalues (1) for 000002465F392F70:
+	0	_ENV	0	0
+
+function <BoardPosition.lua:81,83> (12 instructions at 000002465F3932C0)
+2 params, 6 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[82]	GETTABUP 	2 0 -1	; _ENV "BoardPosition"
+	2	[82]	GETTABLE 	2 2 -2	; "GetDirPosition"
+	3	[82]	MOVE     	3 0
+	4	[82]	GETTABUP 	4 0 -1	; _ENV "BoardPosition"
+	5	[82]	GETTABLE 	4 4 -3	; "Dir4OffsetX"
+	6	[82]	GETTABLE 	4 4 1
+	7	[82]	GETTABUP 	5 0 -1	; _ENV "BoardPosition"
+	8	[82]	GETTABLE 	5 5 -4	; "Dir4OffsetY"
+	9	[82]	GETTABLE 	5 5 1
+	10	[82]	TAILCALL 	2 4 0
+	11	[82]	RETURN   	2 0
+	12	[83]	RETURN   	0 1
+constants (4) for 000002465F3932C0:
+	1	"BoardPosition"
+	2	"GetDirPosition"
+	3	"Dir4OffsetX"
+	4	"Dir4OffsetY"
+locals (2) for 000002465F3932C0:
+	0	position	1	13
+	1	dir	1	13
+upvalues (1) for 000002465F3932C0:
+	0	_ENV	0	0

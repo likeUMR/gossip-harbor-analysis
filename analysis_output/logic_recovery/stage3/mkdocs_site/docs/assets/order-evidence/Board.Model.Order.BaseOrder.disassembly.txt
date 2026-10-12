@@ -1,0 +1,775 @@
+
+main <BaseOrder.lua:0,0> (97 instructions at 0000020DE478EFB0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 46 constants, 25 functions
+	1	[3]	NEWTABLE 	0 0 3
+	2	[4]	SETTABLE 	0 -2 -3	; "Fixed" 1
+	3	[5]	SETTABLE 	0 -4 -5	; "Random" 2
+	4	[7]	SETTABLE 	0 -6 -7	; "Special" 3
+	5	[8]	SETTABUP 	0 -1 0	; _ENV "OrderType"
+	6	[11]	NEWTABLE 	0 0 5
+	7	[12]	SETTABLE 	0 -9 -10	; "Dormant" 0
+	8	[13]	SETTABLE 	0 -11 -3	; "Init" 1
+	9	[14]	SETTABLE 	0 -12 -5	; "PartiallyFinished" 2
+	10	[15]	SETTABLE 	0 -13 -7	; "CanDeliver" 3
+	11	[16]	SETTABLE 	0 -14 -15	; "Finished" 4
+	12	[17]	SETTABUP 	0 -8 0	; _ENV "OrderState"
+	13	[20]	NEWTABLE 	0 0 2
+	14	[21]	SETTABLE 	0 -17 -3	; "Higher" 1
+	15	[22]	SETTABLE 	0 -18 -5	; "Lower" 2
+	16	[23]	SETTABUP 	0 -16 0	; _ENV "OrderStateChange"
+	17	[32]	NEWTABLE 	0 0 0
+	18	[32]	SETTABUP 	0 -19 0	; _ENV "BaseOrder"
+	19	[33]	GETTABUP 	0 0 -19	; _ENV "BaseOrder"
+	20	[33]	GETTABUP 	1 0 -19	; _ENV "BaseOrder"
+	21	[33]	SETTABLE 	0 -20 1	; "__index" -
+	22	[35]	GETTABUP 	0 0 -19	; _ENV "BaseOrder"
+	23	[39]	CLOSURE  	1 0	; 0000020DE478F030
+	24	[35]	SETTABLE 	0 -21 1	; "Create" -
+	25	[41]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	26	[60]	CLOSURE  	1 1	; 0000020DE47922E0
+	27	[41]	SETTABLE 	0 -23 1	; "Init" -
+	28	[62]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	29	[64]	CLOSURE  	1 2	; 0000020DE4792620
+	30	[62]	SETTABLE 	0 -24 1	; "GetId" -
+	31	[66]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	32	[68]	CLOSURE  	1 3	; 0000020DE47926A0
+	33	[66]	SETTABLE 	0 -25 1	; "UpdateId" -
+	34	[71]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	35	[73]	CLOSURE  	1 4	; 0000020DE4792720
+	36	[71]	SETTABLE 	0 -26 1	; "GetRequirements" -
+	37	[78]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	38	[80]	CLOSURE  	1 5	; 0000020DE47927A0
+	39	[78]	SETTABLE 	0 -27 1	; "UpdateRequirements" -
+	40	[82]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	41	[84]	CLOSURE  	1 6	; 0000020DE4792820
+	42	[82]	SETTABLE 	0 -28 1	; "GetRequirementFillStates" -
+	43	[87]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	44	[89]	CLOSURE  	1 7	; 0000020DE47928A0
+	45	[87]	SETTABLE 	0 -29 1	; "GetFilledRequirementCount" -
+	46	[91]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	47	[93]	CLOSURE  	1 8	; 0000020DE4792920
+	48	[91]	SETTABLE 	0 -30 1	; "GetState" -
+	49	[95]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	50	[109]	CLOSURE  	1 9	; 0000020DE47929A0
+	51	[95]	SETTABLE 	0 -31 1	; "_SetState" -
+	52	[112]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	53	[143]	CLOSURE  	1 10	; 0000020DE4792C40
+	54	[112]	SETTABLE 	0 -32 1	; "UpdateState" -
+	55	[149]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	56	[166]	CLOSURE  	1 11	; 0000020DE47939D0
+	57	[149]	SETTABLE 	0 -33 1	; "CanDeliver" -
+	58	[169]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	59	[175]	CLOSURE  	1 12	; 0000020DE4793ED0
+	60	[169]	SETTABLE 	0 -34 1	; "SetFinished" -
+	61	[177]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	62	[179]	CLOSURE  	1 13	; 0000020DE4793DD0
+	63	[177]	SETTABLE 	0 -35 1	; "GetStateChange" -
+	64	[181]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	65	[183]	CLOSURE  	1 14	; 0000020DE4793D50
+	66	[181]	SETTABLE 	0 -36 1	; "GetStateChangeTime" -
+	67	[186]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	68	[188]	CLOSURE  	1 15	; 0000020DE4793C50
+	69	[186]	SETTABLE 	0 -37 1	; "GetType" -
+	70	[191]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	71	[193]	CLOSURE  	1 16	; 0000020DE4793F50
+	72	[191]	SETTABLE 	0 -38 1	; "GetAvatarName" -
+	73	[196]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	74	[198]	CLOSURE  	1 17	; 0000020DE4793FD0
+	75	[196]	SETTABLE 	0 -39 1	; "GetMaxPossibleRewardNumber" -
+	76	[201]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	77	[203]	CLOSURE  	1 18	; 0000020DE4793950
+	78	[201]	SETTABLE 	0 -40 1	; "GetRewards" -
+	79	[205]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	80	[207]	CLOSURE  	1 19	; 0000020DE4794050
+	81	[205]	SETTABLE 	0 -41 1	; "GetScore" -
+	82	[209]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	83	[220]	CLOSURE  	1 20	; 0000020DE4793CD0
+	84	[209]	SETTABLE 	0 -42 1	; "_CalculateScore" -
+	85	[223]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	86	[225]	CLOSURE  	1 21	; 0000020DE47932D0
+	87	[223]	SETTABLE 	0 -43 1	; "GetGiftRewards" -
+	88	[227]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	89	[229]	CLOSURE  	1 22	; 0000020DE4793B50
+	90	[227]	SETTABLE 	0 -44 1	; "IsBuffGoldDouble" -
+	91	[231]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	92	[234]	CLOSURE  	1 23	; 0000020DE47931D0
+	93	[231]	SETTABLE 	0 -45 1	; "GetGameMode" -
+	94	[236]	GETTABUP 	0 0 -22	; _ENV "BaseOrder"
+	95	[238]	CLOSURE  	1 24	; 0000020DE4793A50
+	96	[236]	SETTABLE 	0 -46 1	; "GetDiffRange" -
+	97	[238]	RETURN   	0 1
+constants (46) for 0000020DE478EFB0:
+	1	"OrderType"
+	2	"Fixed"
+	3	1
+	4	"Random"
+	5	2
+	6	"Special"
+	7	3
+	8	"OrderState"
+	9	"Dormant"
+	10	0
+	11	"Init"
+	12	"PartiallyFinished"
+	13	"CanDeliver"
+	14	"Finished"
+	15	4
+	16	"OrderStateChange"
+	17	"Higher"
+	18	"Lower"
+	19	"BaseOrder"
+	20	"__index"
+	21	"Create"
+	22	"BaseOrder"
+	23	"Init"
+	24	"GetId"
+	25	"UpdateId"
+	26	"GetRequirements"
+	27	"UpdateRequirements"
+	28	"GetRequirementFillStates"
+	29	"GetFilledRequirementCount"
+	30	"GetState"
+	31	"_SetState"
+	32	"UpdateState"
+	33	"CanDeliver"
+	34	"SetFinished"
+	35	"GetStateChange"
+	36	"GetStateChangeTime"
+	37	"GetType"
+	38	"GetAvatarName"
+	39	"GetMaxPossibleRewardNumber"
+	40	"GetRewards"
+	41	"GetScore"
+	42	"_CalculateScore"
+	43	"GetGiftRewards"
+	44	"IsBuffGoldDouble"
+	45	"GetGameMode"
+	46	"GetDiffRange"
+locals (0) for 0000020DE478EFB0:
+upvalues (1) for 0000020DE478EFB0:
+	0	_ENV	1	0
+
+function <BaseOrder.lua:35,39> (10 instructions at 0000020DE478F030)
+2 params, 7 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[36]	GETTABUP 	2 0 -1	; _ENV "setmetatable"
+	2	[36]	NEWTABLE 	3 0 0
+	3	[36]	GETTABUP 	4 0 -2	; _ENV "BaseOrder"
+	4	[36]	CALL     	2 3 2
+	5	[37]	SELF     	3 2 -3	; "Init"
+	6	[37]	MOVE     	5 0
+	7	[37]	MOVE     	6 1
+	8	[37]	CALL     	3 4 1
+	9	[38]	RETURN   	2 2
+	10	[39]	RETURN   	0 1
+constants (3) for 0000020DE478F030:
+	1	"setmetatable"
+	2	"BaseOrder"
+	3	"Init"
+locals (3) for 0000020DE478F030:
+	0	id	1	11
+	1	requirements	1	11
+	2	order	5	11
+upvalues (1) for 0000020DE478F030:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:41,60> (42 instructions at 0000020DE47922E0)
+3 params, 10 slots, 1 upvalue, 7 locals, 13 constants, 0 functions
+	1	[42]	SETTABLE 	0 -1 1	; "m_id" -
+	2	[43]	NEWTABLE 	3 0 0
+	3	[43]	SETTABLE 	0 -2 3	; "m_requirements" -
+	4	[44]	NEWTABLE 	3 0 0
+	5	[44]	SETTABLE 	0 -3 3	; "m_requirementFillStates" -
+	6	[45]	LOADK    	3 -4	; 1
+	7	[45]	LEN      	4 2
+	8	[45]	LOADK    	5 -4	; 1
+	9	[45]	FORPREP  	3 17	; to 27
+	10	[47]	GETTABUP 	7 0 -5	; _ENV "StringUtil"
+	11	[47]	GETTABLE 	7 7 -6	; "IsNilOrEmpty"
+	12	[47]	GETTABLE 	8 2 6
+	13	[47]	CALL     	7 2 2
+	14	[47]	TEST     	7 1
+	15	[47]	JMP      	0 11	; to 27
+	16	[48]	GETTABLE 	7 0 -2	; "m_requirements"
+	17	[48]	GETTABLE 	8 0 -2	; "m_requirements"
+	18	[48]	LEN      	8 8
+	19	[48]	ADD      	8 8 -4	; - 1
+	20	[48]	GETTABLE 	9 2 6
+	21	[48]	SETTABLE 	7 8 9
+	22	[49]	GETTABLE 	7 0 -3	; "m_requirementFillStates"
+	23	[49]	GETTABLE 	8 0 -3	; "m_requirementFillStates"
+	24	[49]	LEN      	8 8
+	25	[49]	ADD      	8 8 -4	; - 1
+	26	[49]	SETTABLE 	7 8 -7	; - false
+	27	[45]	FORLOOP  	3 -18	; to 10
+	28	[53]	SETTABLE 	0 -8 -9	; "m_filledRequirementCount" 0
+	29	[55]	GETTABLE 	3 0 -2	; "m_requirements"
+	30	[55]	LEN      	3 3
+	31	[55]	EQ       	0 3 -9	; - 0
+	32	[55]	JMP      	0 5	; to 38
+	33	[56]	SELF     	3 0 -10	; "_SetState"
+	34	[56]	GETTABUP 	5 0 -11	; _ENV "OrderState"
+	35	[56]	GETTABLE 	5 5 -12	; "Dormant"
+	36	[56]	CALL     	3 3 1
+	37	[56]	JMP      	0 4	; to 42
+	38	[58]	SELF     	3 0 -10	; "_SetState"
+	39	[58]	GETTABUP 	5 0 -11	; _ENV "OrderState"
+	40	[58]	GETTABLE 	5 5 -13	; "Init"
+	41	[58]	CALL     	3 3 1
+	42	[60]	RETURN   	0 1
+constants (13) for 0000020DE47922E0:
+	1	"m_id"
+	2	"m_requirements"
+	3	"m_requirementFillStates"
+	4	1
+	5	"StringUtil"
+	6	"IsNilOrEmpty"
+	7	false
+	8	"m_filledRequirementCount"
+	9	0
+	10	"_SetState"
+	11	"OrderState"
+	12	"Dormant"
+	13	"Init"
+locals (7) for 0000020DE47922E0:
+	0	self	1	43
+	1	id	1	43
+	2	requirements	1	43
+	3	(for index)	9	28
+	4	(for limit)	9	28
+	5	(for step)	9	28
+	6	i	10	27
+upvalues (1) for 0000020DE47922E0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:62,64> (3 instructions at 0000020DE4792620)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[63]	GETTABLE 	1 0 -1	; "m_id"
+	2	[63]	RETURN   	1 2
+	3	[64]	RETURN   	0 1
+constants (1) for 0000020DE4792620:
+	1	"m_id"
+locals (1) for 0000020DE4792620:
+	0	self	1	4
+upvalues (0) for 0000020DE4792620:
+
+function <BaseOrder.lua:66,68> (2 instructions at 0000020DE47926A0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[67]	SETTABLE 	0 -1 1	; "m_id" -
+	2	[68]	RETURN   	0 1
+constants (1) for 0000020DE47926A0:
+	1	"m_id"
+locals (2) for 0000020DE47926A0:
+	0	self	1	3
+	1	id	1	3
+upvalues (0) for 0000020DE47926A0:
+
+function <BaseOrder.lua:71,73> (3 instructions at 0000020DE4792720)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[72]	GETTABLE 	1 0 -1	; "m_requirements"
+	2	[72]	RETURN   	1 2
+	3	[73]	RETURN   	0 1
+constants (1) for 0000020DE4792720:
+	1	"m_requirements"
+locals (1) for 0000020DE4792720:
+	0	self	1	4
+upvalues (0) for 0000020DE4792720:
+
+function <BaseOrder.lua:78,80> (2 instructions at 0000020DE47927A0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[79]	SETTABLE 	0 -1 1	; "m_requirements" -
+	2	[80]	RETURN   	0 1
+constants (1) for 0000020DE47927A0:
+	1	"m_requirements"
+locals (2) for 0000020DE47927A0:
+	0	self	1	3
+	1	requirements	1	3
+upvalues (0) for 0000020DE47927A0:
+
+function <BaseOrder.lua:82,84> (3 instructions at 0000020DE4792820)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[83]	GETTABLE 	1 0 -1	; "m_requirementFillStates"
+	2	[83]	RETURN   	1 2
+	3	[84]	RETURN   	0 1
+constants (1) for 0000020DE4792820:
+	1	"m_requirementFillStates"
+locals (1) for 0000020DE4792820:
+	0	self	1	4
+upvalues (0) for 0000020DE4792820:
+
+function <BaseOrder.lua:87,89> (3 instructions at 0000020DE47928A0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[88]	GETTABLE 	1 0 -1	; "m_filledRequirementCount"
+	2	[88]	RETURN   	1 2
+	3	[89]	RETURN   	0 1
+constants (1) for 0000020DE47928A0:
+	1	"m_filledRequirementCount"
+locals (1) for 0000020DE47928A0:
+	0	self	1	4
+upvalues (0) for 0000020DE47928A0:
+
+function <BaseOrder.lua:91,93> (3 instructions at 0000020DE4792920)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[92]	GETTABLE 	1 0 -1	; "m_state"
+	2	[92]	RETURN   	1 2
+	3	[93]	RETURN   	0 1
+constants (1) for 0000020DE4792920:
+	1	"m_state"
+locals (1) for 0000020DE4792920:
+	0	self	1	4
+upvalues (0) for 0000020DE4792920:
+
+function <BaseOrder.lua:95,109> (33 instructions at 0000020DE47929A0)
+2 params, 5 slots, 1 upvalue, 2 locals, 15 constants, 0 functions
+	1	[97]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[97]	GETTABLE 	2 2 -2	; "Assert"
+	3	[97]	GETTABUP 	3 0 -3	; _ENV "OrderState"
+	4	[97]	GETTABLE 	3 3 -4	; "Finished"
+	5	[97]	EQ       	0 1 3
+	6	[97]	JMP      	0 1	; to 8
+	7	[97]	LOADBOOL 	3 0 1
+	8	[97]	LOADBOOL 	3 1 0
+	9	[97]	LOADK    	4 -5	; "BaseOrder:_SetState"
+	10	[97]	CALL     	2 3 1
+	11	[99]	GETTABLE 	2 0 -6	; "m_state"
+	12	[99]	EQ       	1 2 1
+	13	[99]	JMP      	0 19	; to 33
+	14	[100]	GETTABLE 	2 0 -6	; "m_state"
+	15	[100]	EQ       	1 2 -7	; - nil
+	16	[100]	JMP      	0 3	; to 20
+	17	[100]	GETTABLE 	2 0 -6	; "m_state"
+	18	[100]	LT       	0 2 1
+	19	[100]	JMP      	0 4	; to 24
+	20	[101]	GETTABUP 	2 0 -9	; _ENV "OrderStateChange"
+	21	[101]	GETTABLE 	2 2 -10	; "Higher"
+	22	[101]	SETTABLE 	0 -8 2	; "m_stateChange" -
+	23	[101]	JMP      	0 3	; to 27
+	24	[103]	GETTABUP 	2 0 -9	; _ENV "OrderStateChange"
+	25	[103]	GETTABLE 	2 2 -11	; "Lower"
+	26	[103]	SETTABLE 	0 -8 2	; "m_stateChange" -
+	27	[106]	SETTABLE 	0 -6 1	; "m_state" -
+	28	[107]	GETTABUP 	2 0 -13	; _ENV "GM"
+	29	[107]	GETTABLE 	2 2 -14	; "GameModel"
+	30	[107]	SELF     	2 2 -15	; "GetServerTime"
+	31	[107]	CALL     	2 2 2
+	32	[107]	SETTABLE 	0 -12 2	; "m_stateChangeTime" -
+	33	[109]	RETURN   	0 1
+constants (15) for 0000020DE47929A0:
+	1	"Log"
+	2	"Assert"
+	3	"OrderState"
+	4	"Finished"
+	5	"BaseOrder:_SetState"
+	6	"m_state"
+	7	nil
+	8	"m_stateChange"
+	9	"OrderStateChange"
+	10	"Higher"
+	11	"Lower"
+	12	"m_stateChangeTime"
+	13	"GM"
+	14	"GameModel"
+	15	"GetServerTime"
+locals (2) for 0000020DE47929A0:
+	0	self	1	34
+	1	state	1	34
+upvalues (1) for 0000020DE47929A0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:112,143> (70 instructions at 0000020DE4792C40)
+2 params, 13 slots, 1 upvalue, 12 locals, 18 constants, 0 functions
+	1	[113]	GETTABLE 	2 0 -1	; "m_state"
+	2	[113]	GETTABUP 	3 0 -2	; _ENV "OrderState"
+	3	[113]	GETTABLE 	3 3 -3	; "Finished"
+	4	[113]	EQ       	0 2 3
+	5	[113]	JMP      	0 1	; to 7
+	6	[114]	RETURN   	0 1
+	7	[117]	SETTABLE 	0 -4 -5	; "m_filledRequirementCount" 0
+	8	[118]	GETTABUP 	2 0 -6	; _ENV "ipairs"
+	9	[118]	GETTABLE 	3 0 -7	; "m_requirements"
+	10	[118]	CALL     	2 2 4
+	11	[118]	JMP      	0 25	; to 37
+	12	[119]	LOADK    	7 -8	; 1
+	13	[120]	SUB      	8 5 -8	; - 1
+	14	[120]	LOADK    	9 -8	; 1
+	15	[120]	LOADK    	10 -9	; -1
+	16	[120]	FORPREP  	8 5	; to 22
+	17	[121]	GETTABLE 	12 0 -7	; "m_requirements"
+	18	[121]	GETTABLE 	12 12 11
+	19	[121]	EQ       	0 6 12
+	20	[121]	JMP      	0 1	; to 22
+	21	[122]	ADD      	7 7 -8	; - 1
+	22	[120]	FORLOOP  	8 -6	; to 17
+	23	[126]	GETTABLE 	8 1 6
+	24	[126]	EQ       	1 8 -10	; - nil
+	25	[126]	JMP      	0 9	; to 35
+	26	[126]	GETTABLE 	8 1 6
+	27	[126]	LE       	0 7 8
+	28	[126]	JMP      	0 6	; to 35
+	29	[127]	GETTABLE 	8 0 -11	; "m_requirementFillStates"
+	30	[127]	SETTABLE 	8 5 -12	; - true
+	31	[128]	GETTABLE 	8 0 -4	; "m_filledRequirementCount"
+	32	[128]	ADD      	8 8 -8	; - 1
+	33	[128]	SETTABLE 	0 -4 8	; "m_filledRequirementCount" -
+	34	[128]	JMP      	0 2	; to 37
+	35	[130]	GETTABLE 	8 0 -11	; "m_requirementFillStates"
+	36	[130]	SETTABLE 	8 5 -13	; - false
+	37	[118]	TFORCALL 	2 2
+	38	[118]	TFORLOOP 	4 -27	; to 12
+	39	[134]	GETTABLE 	2 0 -7	; "m_requirements"
+	40	[134]	LEN      	2 2
+	41	[134]	EQ       	0 2 -5	; - 0
+	42	[134]	JMP      	0 5	; to 48
+	43	[135]	SELF     	2 0 -14	; "_SetState"
+	44	[135]	GETTABUP 	4 0 -2	; _ENV "OrderState"
+	45	[135]	GETTABLE 	4 4 -15	; "Dormant"
+	46	[135]	CALL     	2 3 1
+	47	[135]	JMP      	0 22	; to 70
+	48	[136]	GETTABLE 	2 0 -4	; "m_filledRequirementCount"
+	49	[136]	EQ       	0 2 -5	; - 0
+	50	[136]	JMP      	0 5	; to 56
+	51	[137]	SELF     	2 0 -14	; "_SetState"
+	52	[137]	GETTABUP 	4 0 -2	; _ENV "OrderState"
+	53	[137]	GETTABLE 	4 4 -16	; "Init"
+	54	[137]	CALL     	2 3 1
+	55	[137]	JMP      	0 14	; to 70
+	56	[138]	GETTABLE 	2 0 -4	; "m_filledRequirementCount"
+	57	[138]	GETTABLE 	3 0 -7	; "m_requirements"
+	58	[138]	LEN      	3 3
+	59	[138]	EQ       	0 2 3
+	60	[138]	JMP      	0 5	; to 66
+	61	[139]	SELF     	2 0 -14	; "_SetState"
+	62	[139]	GETTABUP 	4 0 -2	; _ENV "OrderState"
+	63	[139]	GETTABLE 	4 4 -17	; "CanDeliver"
+	64	[139]	CALL     	2 3 1
+	65	[139]	JMP      	0 4	; to 70
+	66	[141]	SELF     	2 0 -14	; "_SetState"
+	67	[141]	GETTABUP 	4 0 -2	; _ENV "OrderState"
+	68	[141]	GETTABLE 	4 4 -18	; "PartiallyFinished"
+	69	[141]	CALL     	2 3 1
+	70	[143]	RETURN   	0 1
+constants (18) for 0000020DE4792C40:
+	1	"m_state"
+	2	"OrderState"
+	3	"Finished"
+	4	"m_filledRequirementCount"
+	5	0
+	6	"ipairs"
+	7	"m_requirements"
+	8	1
+	9	-1
+	10	nil
+	11	"m_requirementFillStates"
+	12	true
+	13	false
+	14	"_SetState"
+	15	"Dormant"
+	16	"Init"
+	17	"CanDeliver"
+	18	"PartiallyFinished"
+locals (12) for 0000020DE4792C40:
+	0	self	1	71
+	1	codeCountMap	1	71
+	2	(for generator)	11	39
+	3	(for state)	11	39
+	4	(for control)	11	39
+	5	i	12	37
+	6	requirement	12	37
+	7	count	13	37
+	8	(for index)	16	23
+	9	(for limit)	16	23
+	10	(for step)	16	23
+	11	k	17	22
+upvalues (1) for 0000020DE4792C40:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:149,166> (36 instructions at 0000020DE47939D0)
+2 params, 15 slots, 1 upvalue, 14 locals, 6 constants, 0 functions
+	1	[150]	LOADBOOL 	2 1 0
+	2	[151]	NEWTABLE 	3 0 0
+	3	[152]	GETTABUP 	4 0 -1	; _ENV "ipairs"
+	4	[152]	GETTABLE 	5 0 -2	; "m_requirements"
+	5	[152]	CALL     	4 2 4
+	6	[152]	JMP      	0 24	; to 31
+	7	[153]	LOADK    	9 -3	; 1
+	8	[154]	SUB      	10 7 -3	; - 1
+	9	[154]	LOADK    	11 -3	; 1
+	10	[154]	LOADK    	12 -4	; -1
+	11	[154]	FORPREP  	10 5	; to 17
+	12	[155]	GETTABLE 	14 0 -2	; "m_requirements"
+	13	[155]	GETTABLE 	14 14 13
+	14	[155]	EQ       	0 8 14
+	15	[155]	JMP      	0 1	; to 17
+	16	[156]	ADD      	9 9 -3	; - 1
+	17	[154]	FORLOOP  	10 -6	; to 12
+	18	[160]	GETTABLE 	10 1 8
+	19	[160]	EQ       	1 10 -5	; - nil
+	20	[160]	JMP      	0 3	; to 24
+	21	[160]	GETTABLE 	10 1 8
+	22	[160]	LT       	0 10 9
+	23	[160]	JMP      	0 7	; to 31
+	24	[161]	LOADBOOL 	2 0 0
+	25	[162]	GETTABLE 	10 1 8
+	26	[162]	TEST     	10 1
+	27	[162]	JMP      	0 1	; to 29
+	28	[162]	LOADK    	10 -6	; 0
+	29	[162]	SUB      	10 9 10
+	30	[162]	SETTABLE 	3 8 10
+	31	[152]	TFORCALL 	4 2
+	32	[152]	TFORLOOP 	6 -26	; to 7
+	33	[165]	MOVE     	4 2
+	34	[165]	MOVE     	5 3
+	35	[165]	RETURN   	4 3
+	36	[166]	RETURN   	0 1
+constants (6) for 0000020DE47939D0:
+	1	"ipairs"
+	2	"m_requirements"
+	3	1
+	4	-1
+	5	nil
+	6	0
+locals (14) for 0000020DE47939D0:
+	0	self	1	37
+	1	codeCountMap	1	37
+	2	canDeliver	2	37
+	3	lackedCodeCountMap	3	37
+	4	(for generator)	6	33
+	5	(for state)	6	33
+	6	(for control)	6	33
+	7	i	7	31
+	8	requirement	7	31
+	9	count	8	31
+	10	(for index)	11	18
+	11	(for limit)	11	18
+	12	(for step)	11	18
+	13	k	12	17
+upvalues (1) for 0000020DE47939D0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:169,175> (13 instructions at 0000020DE4793ED0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[170]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[170]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[170]	GETTABLE 	2 0 -3	; "m_cacheRewards"
+	4	[170]	CALL     	1 2 2
+	5	[170]	TEST     	1 0
+	6	[170]	JMP      	0 3	; to 10
+	7	[171]	SELF     	1 0 -4	; "GetRewards"
+	8	[171]	CALL     	1 2 2
+	9	[171]	SETTABLE 	0 -3 1	; "m_cacheRewards" -
+	10	[174]	GETTABUP 	1 0 -6	; _ENV "OrderState"
+	11	[174]	GETTABLE 	1 1 -7	; "Finished"
+	12	[174]	SETTABLE 	0 -5 1	; "m_state" -
+	13	[175]	RETURN   	0 1
+constants (7) for 0000020DE4793ED0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_cacheRewards"
+	4	"GetRewards"
+	5	"m_state"
+	6	"OrderState"
+	7	"Finished"
+locals (1) for 0000020DE4793ED0:
+	0	self	1	14
+upvalues (1) for 0000020DE4793ED0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:177,179> (3 instructions at 0000020DE4793DD0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[178]	GETTABLE 	1 0 -1	; "m_stateChange"
+	2	[178]	RETURN   	1 2
+	3	[179]	RETURN   	0 1
+constants (1) for 0000020DE4793DD0:
+	1	"m_stateChange"
+locals (1) for 0000020DE4793DD0:
+	0	self	1	4
+upvalues (0) for 0000020DE4793DD0:
+
+function <BaseOrder.lua:181,183> (3 instructions at 0000020DE4793D50)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[182]	GETTABLE 	1 0 -1	; "m_stateChangeTime"
+	2	[182]	RETURN   	1 2
+	3	[183]	RETURN   	0 1
+constants (1) for 0000020DE4793D50:
+	1	"m_stateChangeTime"
+locals (1) for 0000020DE4793D50:
+	0	self	1	4
+upvalues (0) for 0000020DE4793D50:
+
+function <BaseOrder.lua:186,188> (6 instructions at 0000020DE4793C50)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[187]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[187]	GETTABLE 	1 1 -2	; "Assert"
+	3	[187]	LOADBOOL 	2 0 0
+	4	[187]	LOADK    	3 -3	; "GetType()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[187]	CALL     	1 3 1
+	6	[188]	RETURN   	0 1
+constants (3) for 0000020DE4793C50:
+	1	"Log"
+	2	"Assert"
+	3	"GetType()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 0000020DE4793C50:
+	0	self	1	7
+upvalues (1) for 0000020DE4793C50:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:191,193> (6 instructions at 0000020DE4793F50)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[192]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[192]	GETTABLE 	1 1 -2	; "Assert"
+	3	[192]	LOADBOOL 	2 0 0
+	4	[192]	LOADK    	3 -3	; "GetAvatarName()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[192]	CALL     	1 3 1
+	6	[193]	RETURN   	0 1
+constants (3) for 0000020DE4793F50:
+	1	"Log"
+	2	"Assert"
+	3	"GetAvatarName()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 0000020DE4793F50:
+	0	self	1	7
+upvalues (1) for 0000020DE4793F50:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:196,198> (6 instructions at 0000020DE4793FD0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[197]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[197]	GETTABLE 	1 1 -2	; "Assert"
+	3	[197]	LOADBOOL 	2 0 0
+	4	[197]	LOADK    	3 -3	; "GetMaxPossibleRewardNumber()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[197]	CALL     	1 3 1
+	6	[198]	RETURN   	0 1
+constants (3) for 0000020DE4793FD0:
+	1	"Log"
+	2	"Assert"
+	3	"GetMaxPossibleRewardNumber()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 0000020DE4793FD0:
+	0	self	1	7
+upvalues (1) for 0000020DE4793FD0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:201,203> (6 instructions at 0000020DE4793950)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[202]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[202]	GETTABLE 	1 1 -2	; "Assert"
+	3	[202]	LOADBOOL 	2 0 0
+	4	[202]	LOADK    	3 -3	; "GetRewards()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[202]	CALL     	1 3 1
+	6	[203]	RETURN   	0 1
+constants (3) for 0000020DE4793950:
+	1	"Log"
+	2	"Assert"
+	3	"GetRewards()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 0000020DE4793950:
+	0	self	1	7
+upvalues (1) for 0000020DE4793950:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:205,207> (7 instructions at 0000020DE4794050)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[206]	SELF     	2 0 -1	; "_CalculateScore"
+	2	[206]	SELF     	4 0 -2	; "GetRewards"
+	3	[206]	CALL     	4 2 2
+	4	[206]	MOVE     	5 1
+	5	[206]	TAILCALL 	2 4 0
+	6	[206]	RETURN   	2 0
+	7	[207]	RETURN   	0 1
+constants (2) for 0000020DE4794050:
+	1	"_CalculateScore"
+	2	"GetRewards"
+locals (2) for 0000020DE4794050:
+	0	self	1	8
+	1	includeGold	1	8
+upvalues (0) for 0000020DE4794050:
+
+function <BaseOrder.lua:209,220> (28 instructions at 0000020DE4793CD0)
+3 params, 10 slots, 1 upvalue, 8 locals, 7 constants, 0 functions
+	1	[210]	LOADK    	3 -1	; 0
+	2	[211]	LOADK    	4 -2	; 1
+	3	[211]	LEN      	5 1
+	4	[211]	LOADK    	6 -2	; 1
+	5	[211]	FORPREP  	4 20	; to 26
+	6	[212]	TEST     	2 0
+	7	[212]	JMP      	0 7	; to 15
+	8	[212]	GETTABLE 	8 1 7
+	9	[212]	GETTABUP 	9 0 -3	; _ENV "PROPERTY_TYPE"
+	10	[212]	GETTABLE 	8 8 9
+	11	[212]	GETTABUP 	9 0 -4	; _ENV "EPropertyType"
+	12	[212]	GETTABLE 	9 9 -5	; "Gold"
+	13	[212]	EQ       	1 8 9
+	14	[212]	JMP      	0 7	; to 22
+	15	[213]	GETTABLE 	8 1 7
+	16	[213]	GETTABUP 	9 0 -3	; _ENV "PROPERTY_TYPE"
+	17	[213]	GETTABLE 	8 8 9
+	18	[213]	GETTABUP 	9 0 -4	; _ENV "EPropertyType"
+	19	[213]	GETTABLE 	9 9 -6	; "BakeOutToken"
+	20	[213]	EQ       	0 8 9
+	21	[213]	JMP      	0 4	; to 26
+	22	[215]	GETTABLE 	8 1 7
+	23	[215]	GETTABUP 	9 0 -7	; _ENV "PROPERTY_COUNT"
+	24	[215]	GETTABLE 	8 8 9
+	25	[215]	ADD      	3 3 8
+	26	[211]	FORLOOP  	4 -21	; to 6
+	27	[219]	RETURN   	3 2
+	28	[220]	RETURN   	0 1
+constants (7) for 0000020DE4793CD0:
+	1	0
+	2	1
+	3	"PROPERTY_TYPE"
+	4	"EPropertyType"
+	5	"Gold"
+	6	"BakeOutToken"
+	7	"PROPERTY_COUNT"
+locals (8) for 0000020DE4793CD0:
+	0	self	1	29
+	1	rewards	1	29
+	2	includeGold	1	29
+	3	score	2	29
+	4	(for index)	5	27
+	5	(for limit)	5	27
+	6	(for step)	5	27
+	7	i	6	26
+upvalues (1) for 0000020DE4793CD0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:223,225> (3 instructions at 0000020DE47932D0)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[224]	LOADNIL  	1 0
+	2	[224]	RETURN   	1 2
+	3	[225]	RETURN   	0 1
+constants (0) for 0000020DE47932D0:
+locals (1) for 0000020DE47932D0:
+	0	self	1	4
+upvalues (0) for 0000020DE47932D0:
+
+function <BaseOrder.lua:227,229> (3 instructions at 0000020DE4793B50)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[228]	LOADBOOL 	1 0 0
+	2	[228]	RETURN   	1 2
+	3	[229]	RETURN   	0 1
+constants (0) for 0000020DE4793B50:
+locals (1) for 0000020DE4793B50:
+	0	self	1	4
+upvalues (0) for 0000020DE4793B50:
+
+function <BaseOrder.lua:231,234> (4 instructions at 0000020DE47931D0)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[233]	GETTABUP 	1 0 -1	; _ENV "EGameMode"
+	2	[233]	GETTABLE 	1 1 -2	; "Main"
+	3	[233]	RETURN   	1 2
+	4	[234]	RETURN   	0 1
+constants (2) for 0000020DE47931D0:
+	1	"EGameMode"
+	2	"Main"
+locals (1) for 0000020DE47931D0:
+	0	self	1	5
+upvalues (1) for 0000020DE47931D0:
+	0	_ENV	0	0
+
+function <BaseOrder.lua:236,238> (3 instructions at 0000020DE4793A50)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[237]	LOADNIL  	1 0
+	2	[237]	RETURN   	1 2
+	3	[238]	RETURN   	0 1
+constants (0) for 0000020DE4793A50:
+locals (1) for 0000020DE4793A50:
+	0	self	1	4
+upvalues (0) for 0000020DE4793A50:

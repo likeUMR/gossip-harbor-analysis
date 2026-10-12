@@ -1,0 +1,148 @@
+{
+  "bundle_sha256": "370ef9a4e8985dede7472692f4c29990db9fbbe0ac336dece1dc5962638272d8",
+  "sprites": [
+    {
+      "code": "104",
+      "image": "GroceryBag04",
+      "address": "Assets/Board/ItemMain/Item/GroceryBag04.png",
+      "path_id": -8326935537270922532,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "8420425e3e3df928d0687e83c108fa823404d8253038722bffdf92fde1d51fb4",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "105",
+      "image": "GroceryBag05",
+      "address": "Assets/Board/ItemMain/Item/GroceryBag05.png",
+      "path_id": -4070234605313324039,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "5cbd4a1f1ed05c683850e5dbc77c73ef915ad02953de15c5076a50330919a73b",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "201",
+      "image": "Flour01",
+      "address": "Assets/Board/ItemMain/Item/Flour01.png",
+      "path_id": 5942478146542824120,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "24eb3b650b61ac22d5778be2112ad25d23ea94f4385732496acf222e763fabaf",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "202",
+      "image": "Flour02",
+      "address": "Assets/Board/ItemMain/Item/Flour02.png",
+      "path_id": 7001515343319629134,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "9c95c5acccc30c3a40184809d722776192e43d63ca2217660c779d397ab42ad7",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "204",
+      "image": "Flour04",
+      "address": "Assets/Board/ItemMain/Item/Flour04.png",
+      "path_id": -4613292626073120423,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "ffc76720a69d8a89aca9f88b9eff1c2a4474a2cbb0e11615a7a77ea2f424c562",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "205",
+      "image": "Flour05",
+      "address": "Assets/Board/ItemMain/Item/Flour05.png",
+      "path_id": 6914157247691453235,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "3c15924f257295e50c6e793f909e850cadc694fd6a49639ece4cd7bd062e6089",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "303",
+      "image": "Potato03",
+      "address": "Assets/Board/ItemMain/Item/Potato03.png",
+      "path_id": -4896440062686770266,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "7dac5c8f41dfb0c54739fe431632c94989ed16471179a32f7c402d8221c18e86",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "304",
+      "image": "Potato04",
+      "address": "Assets/Board/ItemMain/Item/Potato04.png",
+      "path_id": -7738763765540423338,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "afd562878ffa978e4e48dff1c381b7651451aca2235c24bbead9cbce973ad3eb",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "305",
+      "image": "Potato05",
+      "address": "Assets/Board/ItemMain/Item/Potato05.png",
+      "path_id": -2709141798961474793,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "17ba66477bf782d0cab3a890e1e01bd90629358a489c5e2ec76e87f34d3bcc47",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": "main_t_chest_new_1",
+      "image": "TutorialChest",
+      "address": "Assets/Board/ItemMain/Item/TutorialChest.png",
+      "path_id": 1073954810778716333,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "1dcc49cd35f0f50176a2ef8d0bedb2274789b1fe82fbc5da5cbf5db2813be1e4",
+      "mapping": "ItemViewConfig.Image",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": null,
+      "image": "lucky_item_1",
+      "address": "Assets/Board/Board/lucky_item_1.png",
+      "path_id": -2179791875071801693,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "1600004a0b9437c94e230589e3fcbd169a99fab94abe05a0b47476a1fe5a2bef",
+      "mapping": "Board Lucky visual",
+      "processing": "UnityPy Sprite extraction"
+    },
+    {
+      "code": null,
+      "image": "lucky_item_2",
+      "address": "Assets/Board/Board/lucky_item_2.png",
+      "path_id": 2161164995430880936,
+      "bundle": "analysis_data\\logic_index\\sources\\apk\\base\\assets\\aa\\android\\board_assets_all_a06cb7eb11e631b6dc558a459bb4a11f.bundle",
+      "sha256": "08df171ef813483390901d1fb0bce3aea9e9308fccf75742b5d4345f00aeec72",
+      "mapping": "Board Lucky visual",
+      "processing": "UnityPy Sprite extraction"
+    }
+  ],
+  "compositions": "Original sprites on explanatory backgrounds; not runtime screenshots",
+  "generator_config": {
+    "BubbleChance": 0,
+    "LevelDownPiece": 1,
+    "MergedType": "106",
+    "Rare": 1,
+    "SellingPrice": 3,
+    "Spread_Auto": 0,
+    "Spread_CostEnergy": 1,
+    "Spread_ItemMaxNumber": 80,
+    "Spread_ItemRecoveryDuration": 30,
+    "Spread_ItemSpeedUpCost": 1,
+    "Spread_StorageMaxNumber": 240,
+    "Spread_StorageRecoveryDuration": 60,
+    "Spread_StorageSpeedUpCost": 1,
+    "Spread_Weight": [
+      "201-35",
+      "202-2",
+      "301-5"
+    ],
+    "Spread_WeightType": 1,
+    "Type": "105"
+  }
+}

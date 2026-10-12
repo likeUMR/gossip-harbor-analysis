@@ -1,0 +1,1156 @@
+
+main <Table.lua:0,0> (97 instructions at 00000158FC72EEA0)
+0+ params, 5 slots, 1 upvalue, 0 locals, 34 constants, 29 functions
+	1	[1]	NEWTABLE 	0 0 0
+	2	[1]	SETTABUP 	0 -1 0	; _ENV "Table"
+	3	[2]	GETTABUP 	0 0 -1	; _ENV "Table"
+	4	[2]	GETTABUP 	1 0 -3	; _ENV "setmetatable"
+	5	[2]	NEWTABLE 	2 0 0
+	6	[2]	NEWTABLE 	3 0 2
+	7	[3]	NEWTABLE 	4 0 0
+	8	[3]	SETTABLE 	3 -4 4	; "__index" -
+	9	[6]	CLOSURE  	4 0	; 00000158FC72EF20
+	10	[6]	SETTABLE 	3 -5 4	; "__newindex" -
+	11	[2]	CALL     	1 3 2
+	12	[7]	SETTABLE 	0 -2 1	; "Empty" -
+	13	[9]	GETTABUP 	0 0 -1	; _ENV "Table"
+	14	[14]	CLOSURE  	1 1	; 00000158FC7319F0
+	15	[9]	SETTABLE 	0 -6 1	; "Clear" -
+	16	[17]	GETTABUP 	0 0 -1	; _ENV "Table"
+	17	[26]	CLOSURE  	1 2	; 00000158FC7322F0
+	18	[17]	SETTABLE 	0 -7 1	; "ShallowCopy" -
+	19	[29]	GETTABUP 	0 0 -1	; _ENV "Table"
+	20	[45]	CLOSURE  	1 3	; 00000158FC7323F0
+	21	[29]	SETTABLE 	0 -8 1	; "DeepCopy" -
+	22	[47]	GETTABUP 	0 0 -1	; _ENV "Table"
+	23	[55]	CLOSURE  	1 4	; 00000158FC7326D0
+	24	[47]	SETTABLE 	0 -9 1	; "GetMapSize" -
+	25	[58]	GETTABUP 	0 0 -1	; _ENV "Table"
+	26	[60]	CLOSURE  	1 5	; 00000158FC7327D0
+	27	[58]	SETTABLE 	0 -10 1	; "ListAppend" -
+	28	[63]	GETTABUP 	0 0 -1	; _ENV "Table"
+	29	[72]	CLOSURE  	1 6	; 00000158FC732850
+	30	[63]	SETTABLE 	0 -11 1	; "ListRemove" -
+	31	[75]	GETTABUP 	0 0 -1	; _ENV "Table"
+	32	[83]	CLOSURE  	1 7	; 00000158FC7331E0
+	33	[75]	SETTABLE 	0 -12 1	; "ListContain" -
+	34	[89]	GETTABUP 	0 0 -1	; _ENV "Table"
+	35	[102]	CLOSURE  	1 8	; 00000158FC733760
+	36	[89]	SETTABLE 	0 -13 1	; "ListRandomSelectN" -
+	37	[107]	GETTABUP 	0 0 -1	; _ENV "Table"
+	38	[114]	CLOSURE  	1 9	; 00000158FC732B60
+	39	[107]	SETTABLE 	0 -14 1	; "ListRandomSelectOne" -
+	40	[121]	GETTABUP 	0 0 -1	; _ENV "Table"
+	41	[149]	CLOSURE  	1 10	; 00000158FC732C60
+	42	[121]	SETTABLE 	0 -15 1	; "ListWeightSelectOne" -
+	43	[151]	GETTABUP 	0 0 -1	; _ENV "Table"
+	44	[165]	CLOSURE  	1 11	; 00000158FC732BE0
+	45	[151]	SETTABLE 	0 -16 1	; "ListRemoveDuplicate" -
+	46	[168]	GETTABUP 	0 0 -1	; _ENV "Table"
+	47	[175]	CLOSURE  	1 12	; 00000158FC733260
+	48	[168]	SETTABLE 	0 -17 1	; "Contain" -
+	49	[178]	GETTABUP 	0 0 -1	; _ENV "Table"
+	50	[186]	CLOSURE  	1 13	; 00000158FC7332E0
+	51	[178]	SETTABLE 	0 -18 1	; "GetIndex" -
+	52	[189]	GETTABUP 	0 0 -1	; _ENV "Table"
+	53	[197]	CLOSURE  	1 14	; 00000158FC7338E0
+	54	[189]	SETTABLE 	0 -19 1	; "GetIndexWithFilter" -
+	55	[200]	GETTABUP 	0 0 -1	; _ENV "Table"
+	56	[207]	CLOSURE  	1 15	; 00000158FC732EE0
+	57	[200]	SETTABLE 	0 -20 1	; "GetKey" -
+	58	[210]	GETTABUP 	0 0 -1	; _ENV "Table"
+	59	[216]	CLOSURE  	1 16	; 00000158FC7330E0
+	60	[210]	SETTABLE 	0 -21 1	; "MapSize" -
+	61	[218]	GETTABUP 	0 0 -1	; _ENV "Table"
+	62	[226]	CLOSURE  	1 17	; 00000158FC7337E0
+	63	[218]	SETTABLE 	0 -22 1	; "Select" -
+	64	[232]	GETTABUP 	0 0 -1	; _ENV "Table"
+	65	[243]	CLOSURE  	1 18	; 00000158FC733460
+	66	[232]	SETTABLE 	0 -23 1	; "ListSelect" -
+	67	[245]	GETTABUP 	0 0 -1	; _ENV "Table"
+	68	[249]	CLOSURE  	1 19	; 00000158FC732AE0
+	69	[245]	SETTABLE 	0 -24 1	; "Foreach" -
+	70	[251]	GETTABUP 	0 0 -1	; _ENV "Table"
+	71	[256]	CLOSURE  	1 20	; 00000158FC733360
+	72	[251]	SETTABLE 	0 -25 1	; "ListForeach" -
+	73	[258]	GETTABUP 	0 0 -1	; _ENV "Table"
+	74	[266]	CLOSURE  	1 21	; 00000158FC732FE0
+	75	[258]	SETTABLE 	0 -26 1	; "GetKeys" -
+	76	[268]	GETTABUP 	0 0 -1	; _ENV "Table"
+	77	[276]	CLOSURE  	1 22	; 00000158FC733060
+	78	[268]	SETTABLE 	0 -27 1	; "GetValueList" -
+	79	[278]	GETTABUP 	0 0 -1	; _ENV "Table"
+	80	[280]	CLOSURE  	1 23	; 00000158FC733160
+	81	[278]	SETTABLE 	0 -28 1	; "IsEmpty" -
+	82	[282]	GETTABUP 	0 0 -1	; _ENV "Table"
+	83	[288]	CLOSURE  	1 24	; 00000158FC7333E0
+	84	[282]	SETTABLE 	0 -29 1	; "Reverse" -
+	85	[290]	GETTABUP 	0 0 -1	; _ENV "Table"
+	86	[296]	CLOSURE  	1 25	; 00000158FC733560
+	87	[290]	SETTABLE 	0 -30 1	; "ListRep" -
+	88	[299]	GETTABUP 	0 0 -31	; _ENV "Table"
+	89	[313]	CLOSURE  	1 26	; 00000158FC732D60
+	90	[299]	SETTABLE 	0 -32 1	; "ListAlwaysRandomSelectN" -
+	91	[321]	GETTABUP 	0 0 -1	; _ENV "Table"
+	92	[342]	CLOSURE  	1 27	; 00000158FC732DE0
+	93	[321]	SETTABLE 	0 -33 1	; "BinarySearch" -
+	94	[345]	GETTABUP 	0 0 -1	; _ENV "Table"
+	95	[358]	CLOSURE  	1 28	; 00000158FC732E60
+	96	[345]	SETTABLE 	0 -34 1	; "ShuffleTable" -
+	97	[358]	RETURN   	0 1
+constants (34) for 00000158FC72EEA0:
+	1	"Table"
+	2	"Empty"
+	3	"setmetatable"
+	4	"__index"
+	5	"__newindex"
+	6	"Clear"
+	7	"ShallowCopy"
+	8	"DeepCopy"
+	9	"GetMapSize"
+	10	"ListAppend"
+	11	"ListRemove"
+	12	"ListContain"
+	13	"ListRandomSelectN"
+	14	"ListRandomSelectOne"
+	15	"ListWeightSelectOne"
+	16	"ListRemoveDuplicate"
+	17	"Contain"
+	18	"GetIndex"
+	19	"GetIndexWithFilter"
+	20	"GetKey"
+	21	"MapSize"
+	22	"Select"
+	23	"ListSelect"
+	24	"Foreach"
+	25	"ListForeach"
+	26	"GetKeys"
+	27	"GetValueList"
+	28	"IsEmpty"
+	29	"Reverse"
+	30	"ListRep"
+	31	"Table"
+	32	"ListAlwaysRandomSelectN"
+	33	"BinarySearch"
+	34	"ShuffleTable"
+locals (0) for 00000158FC72EEA0:
+upvalues (1) for 00000158FC72EEA0:
+	0	_ENV	1	0
+
+function <Table.lua:4,6> (5 instructions at 00000158FC72EF20)
+3 params, 5 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[5]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[5]	GETTABLE 	3 3 -2	; "Error"
+	3	[5]	LOADK    	4 -3	; "cannot set in Table.Empty"
+	4	[5]	CALL     	3 2 1
+	5	[6]	RETURN   	0 1
+constants (3) for 00000158FC72EF20:
+	1	"Log"
+	2	"Error"
+	3	"cannot set in Table.Empty"
+locals (3) for 00000158FC72EF20:
+	0	t	1	6
+	1	k	1	6
+	2	v	1	6
+upvalues (1) for 00000158FC72EF20:
+	0	_ENV	0	0
+
+function <Table.lua:9,14> (9 instructions at 00000158FC7319F0)
+1 param, 7 slots, 1 upvalue, 6 locals, 2 constants, 0 functions
+	1	[10]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[10]	MOVE     	2 0
+	3	[10]	CALL     	1 2 4
+	4	[10]	JMP      	0 1	; to 6
+	5	[11]	SETTABLE 	0 4 -2	; - nil
+	6	[10]	TFORCALL 	1 2
+	7	[10]	TFORLOOP 	3 -3	; to 5
+	8	[13]	RETURN   	0 2
+	9	[14]	RETURN   	0 1
+constants (2) for 00000158FC7319F0:
+	1	"pairs"
+	2	nil
+locals (6) for 00000158FC7319F0:
+	0	t	1	10
+	1	(for generator)	4	8
+	2	(for state)	4	8
+	3	(for control)	4	8
+	4	k	5	6
+	5	_	5	6
+upvalues (1) for 00000158FC7319F0:
+	0	_ENV	0	0
+
+function <Table.lua:17,26> (14 instructions at 00000158FC7322F0)
+1 param, 8 slots, 1 upvalue, 7 locals, 2 constants, 0 functions
+	1	[18]	EQ       	0 0 -1	; - nil
+	2	[18]	JMP      	0 2	; to 5
+	3	[19]	LOADNIL  	1 0
+	4	[19]	RETURN   	1 2
+	5	[21]	NEWTABLE 	1 0 0
+	6	[22]	GETTABUP 	2 0 -2	; _ENV "pairs"
+	7	[22]	MOVE     	3 0
+	8	[22]	CALL     	2 2 4
+	9	[22]	JMP      	0 1	; to 11
+	10	[23]	SETTABLE 	1 5 6
+	11	[22]	TFORCALL 	2 2
+	12	[22]	TFORLOOP 	4 -3	; to 10
+	13	[25]	RETURN   	1 2
+	14	[26]	RETURN   	0 1
+constants (2) for 00000158FC7322F0:
+	1	nil
+	2	"pairs"
+locals (7) for 00000158FC7322F0:
+	0	source	1	15
+	1	newTable	6	15
+	2	(for generator)	9	13
+	3	(for state)	9	13
+	4	(for control)	9	13
+	5	k	10	11
+	6	v	10	11
+upvalues (1) for 00000158FC7322F0:
+	0	_ENV	0	0
+
+function <Table.lua:29,45> (7 instructions at 00000158FC7323F0)
+2 params, 6 slots, 1 upvalue, 4 locals, 0 constants, 1 function
+	1	[30]	NEWTABLE 	2 0 0
+	2	[43]	CLOSURE  	3 0	; 00000158FC732470
+	3	[44]	MOVE     	4 3
+	4	[44]	MOVE     	5 0
+	5	[44]	TAILCALL 	4 2 0
+	6	[44]	RETURN   	4 0
+	7	[45]	RETURN   	0 1
+constants (0) for 00000158FC7323F0:
+locals (4) for 00000158FC7323F0:
+	0	object	1	8
+	1	ignoreMeta	1	8
+	2	lookup_table	2	8
+	3	_copy	3	8
+upvalues (1) for 00000158FC7323F0:
+	0	_ENV	0	0
+
+function <Table.lua:31,43> (40 instructions at 00000158FC732470)
+1 param, 10 slots, 4 upvalues, 7 locals, 5 constants, 0 functions
+	1	[32]	GETTABUP 	1 0 -1	; _ENV "type"
+	2	[32]	MOVE     	2 0
+	3	[32]	CALL     	1 2 2
+	4	[32]	EQ       	1 1 -2	; - "table"
+	5	[32]	JMP      	0 2	; to 8
+	6	[33]	RETURN   	0 2
+	7	[33]	JMP      	0 5	; to 13
+	8	[34]	GETTABUP 	1 1 0	; lookup_table
+	9	[34]	TEST     	1 0
+	10	[34]	JMP      	0 2	; to 13
+	11	[35]	GETTABUP 	1 1 0	; lookup_table
+	12	[35]	RETURN   	1 2
+	13	[37]	NEWTABLE 	1 0 0
+	14	[38]	SETTABUP 	1 0 1	; lookup_table
+	15	[39]	GETTABUP 	2 0 -3	; _ENV "pairs"
+	16	[39]	MOVE     	3 0
+	17	[39]	CALL     	2 2 4
+	18	[39]	JMP      	0 7	; to 26
+	19	[40]	GETUPVAL 	7 2	; _copy
+	20	[40]	MOVE     	8 5
+	21	[40]	CALL     	7 2 2
+	22	[40]	GETUPVAL 	8 2	; _copy
+	23	[40]	MOVE     	9 6
+	24	[40]	CALL     	8 2 2
+	25	[40]	SETTABLE 	1 7 8
+	26	[39]	TFORCALL 	2 2
+	27	[39]	TFORLOOP 	4 -9	; to 19
+	28	[42]	GETUPVAL 	2 3	; ignoreMeta
+	29	[42]	TEST     	2 0
+	30	[42]	JMP      	0 2	; to 33
+	31	[42]	TESTSET  	2 1 1
+	32	[42]	JMP      	0 6	; to 39
+	33	[42]	GETTABUP 	2 0 -4	; _ENV "setmetatable"
+	34	[42]	MOVE     	3 1
+	35	[42]	GETTABUP 	4 0 -5	; _ENV "getmetatable"
+	36	[42]	MOVE     	5 0
+	37	[42]	CALL     	4 2 0
+	38	[42]	CALL     	2 0 2
+	39	[42]	RETURN   	2 2
+	40	[43]	RETURN   	0 1
+constants (5) for 00000158FC732470:
+	1	"type"
+	2	"table"
+	3	"pairs"
+	4	"setmetatable"
+	5	"getmetatable"
+locals (7) for 00000158FC732470:
+	0	object	1	41
+	1	new_table	14	41
+	2	(for generator)	18	28
+	3	(for state)	18	28
+	4	(for control)	18	28
+	5	key	19	26
+	6	value	19	26
+upvalues (4) for 00000158FC732470:
+	0	_ENV	0	0
+	1	lookup_table	1	2
+	2	_copy	1	3
+	3	ignoreMeta	1	1
+
+function <Table.lua:47,55> (12 instructions at 00000158FC7326D0)
+1 param, 8 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[48]	LOADK    	1 -1	; 0
+	2	[49]	TEST     	0 0
+	3	[49]	JMP      	0 7	; to 11
+	4	[50]	GETTABUP 	2 0 -2	; _ENV "pairs"
+	5	[50]	MOVE     	3 0
+	6	[50]	CALL     	2 2 4
+	7	[50]	JMP      	0 1	; to 9
+	8	[51]	ADD      	1 1 -3	; - 1
+	9	[50]	TFORCALL 	2 2
+	10	[50]	TFORLOOP 	4 -3	; to 8
+	11	[54]	RETURN   	1 2
+	12	[55]	RETURN   	0 1
+constants (3) for 00000158FC7326D0:
+	1	0
+	2	"pairs"
+	3	1
+locals (7) for 00000158FC7326D0:
+	0	map	1	13
+	1	size	2	13
+	2	(for generator)	7	11
+	3	(for state)	7	11
+	4	(for control)	7	11
+	5	_	8	9
+	6	_	8	9
+upvalues (1) for 00000158FC7326D0:
+	0	_ENV	0	0
+
+function <Table.lua:58,60> (10 instructions at 00000158FC7327D0)
+2 params, 8 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[59]	GETTABUP 	2 0 -1	; _ENV "table"
+	2	[59]	GETTABLE 	2 2 -2	; "move"
+	3	[59]	MOVE     	3 1
+	4	[59]	LOADK    	4 -3	; 1
+	5	[59]	LEN      	5 1
+	6	[59]	LEN      	6 0
+	7	[59]	ADD      	6 6 -3	; - 1
+	8	[59]	MOVE     	7 0
+	9	[59]	CALL     	2 6 1
+	10	[60]	RETURN   	0 1
+constants (3) for 00000158FC7327D0:
+	1	"table"
+	2	"move"
+	3	1
+locals (2) for 00000158FC7327D0:
+	0	to	1	11
+	1	from	1	11
+upvalues (1) for 00000158FC7327D0:
+	0	_ENV	0	0
+
+function <Table.lua:63,72> (19 instructions at 00000158FC732850)
+2 params, 10 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[64]	LEN      	2 0
+	2	[65]	LOADK    	3 -1	; 1
+	3	[65]	MOVE     	4 2
+	4	[65]	LOADK    	5 -1	; 1
+	5	[65]	FORPREP  	3 10	; to 16
+	6	[66]	GETTABLE 	7 0 6
+	7	[66]	EQ       	0 7 1
+	8	[66]	JMP      	0 7	; to 16
+	9	[67]	GETTABUP 	7 0 -2	; _ENV "table"
+	10	[67]	GETTABLE 	7 7 -3	; "remove"
+	11	[67]	MOVE     	8 0
+	12	[67]	MOVE     	9 6
+	13	[67]	CALL     	7 3 1
+	14	[68]	LOADBOOL 	7 1 0
+	15	[68]	RETURN   	7 2
+	16	[65]	FORLOOP  	3 -11	; to 6
+	17	[71]	LOADBOOL 	3 0 0
+	18	[71]	RETURN   	3 2
+	19	[72]	RETURN   	0 1
+constants (3) for 00000158FC732850:
+	1	1
+	2	"table"
+	3	"remove"
+locals (7) for 00000158FC732850:
+	0	source	1	20
+	1	element	1	20
+	2	count	2	20
+	3	(for index)	5	17
+	4	(for limit)	5	17
+	5	(for step)	5	17
+	6	i	6	16
+upvalues (1) for 00000158FC732850:
+	0	_ENV	0	0
+
+function <Table.lua:75,83> (13 instructions at 00000158FC7331E0)
+2 params, 8 slots, 0 upvalues, 7 locals, 1 constant, 0 functions
+	1	[76]	LEN      	2 0
+	2	[77]	LOADK    	3 -1	; 1
+	3	[77]	MOVE     	4 2
+	4	[77]	LOADK    	5 -1	; 1
+	5	[77]	FORPREP  	3 4	; to 10
+	6	[78]	GETTABLE 	7 0 6
+	7	[78]	EQ       	0 7 1
+	8	[78]	JMP      	0 1	; to 10
+	9	[79]	RETURN   	6 2
+	10	[77]	FORLOOP  	3 -5	; to 6
+	11	[82]	LOADBOOL 	3 0 0
+	12	[82]	RETURN   	3 2
+	13	[83]	RETURN   	0 1
+constants (1) for 00000158FC7331E0:
+	1	1
+locals (7) for 00000158FC7331E0:
+	0	source	1	14
+	1	target	1	14
+	2	count	2	14
+	3	(for index)	5	11
+	4	(for limit)	5	11
+	5	(for step)	5	11
+	6	i	6	10
+upvalues (0) for 00000158FC7331E0:
+
+function <Table.lua:89,102> (26 instructions at 00000158FC733760)
+2 params, 11 slots, 1 upvalue, 8 locals, 6 constants, 0 functions
+	1	[90]	LEN      	2 0
+	2	[90]	LE       	0 2 1
+	3	[90]	JMP      	0 1	; to 5
+	4	[91]	RETURN   	0 2
+	5	[94]	NEWTABLE 	2 0 0
+	6	[95]	LOADK    	3 -1	; 1
+	7	[95]	MOVE     	4 1
+	8	[95]	LOADK    	5 -1	; 1
+	9	[95]	FORPREP  	3 14	; to 24
+	10	[96]	GETTABUP 	7 0 -2	; _ENV "MathUtil"
+	11	[96]	GETTABLE 	7 7 -3	; "Random"
+	12	[96]	LEN      	8 0
+	13	[96]	CALL     	7 2 2
+	14	[97]	GETTABUP 	8 0 -4	; _ENV "table"
+	15	[97]	GETTABLE 	8 8 -5	; "insert"
+	16	[97]	MOVE     	9 2
+	17	[97]	GETTABLE 	10 0 7
+	18	[97]	CALL     	8 3 1
+	19	[98]	GETTABUP 	8 0 -4	; _ENV "table"
+	20	[98]	GETTABLE 	8 8 -6	; "remove"
+	21	[98]	MOVE     	9 0
+	22	[98]	MOVE     	10 7
+	23	[98]	CALL     	8 3 1
+	24	[95]	FORLOOP  	3 -15	; to 10
+	25	[101]	RETURN   	2 2
+	26	[102]	RETURN   	0 1
+constants (6) for 00000158FC733760:
+	1	1
+	2	"MathUtil"
+	3	"Random"
+	4	"table"
+	5	"insert"
+	6	"remove"
+locals (8) for 00000158FC733760:
+	0	source	1	27
+	1	selectCount	1	27
+	2	results	6	27
+	3	(for index)	9	25
+	4	(for limit)	9	25
+	5	(for step)	9	25
+	6	i	10	24
+	7	index	14	24
+upvalues (1) for 00000158FC733760:
+	0	_ENV	0	0
+
+function <Table.lua:107,114> (12 instructions at 00000158FC732B60)
+1 param, 3 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[108]	LEN      	1 0
+	2	[108]	EQ       	0 1 -1	; - 0
+	3	[108]	JMP      	0 2	; to 6
+	4	[109]	LOADNIL  	1 0
+	5	[109]	RETURN   	1 2
+	6	[112]	GETTABUP 	1 0 -2	; _ENV "MathUtil"
+	7	[112]	GETTABLE 	1 1 -3	; "Random"
+	8	[112]	LEN      	2 0
+	9	[112]	CALL     	1 2 2
+	10	[113]	GETTABLE 	2 0 1
+	11	[113]	RETURN   	2 2
+	12	[114]	RETURN   	0 1
+constants (3) for 00000158FC732B60:
+	1	0
+	2	"MathUtil"
+	3	"Random"
+locals (2) for 00000158FC732B60:
+	0	source	1	13
+	1	randomIndex	10	13
+upvalues (1) for 00000158FC732B60:
+	0	_ENV	0	0
+
+function <Table.lua:121,149> (49 instructions at 00000158FC732C60)
+2 params, 10 slots, 1 upvalue, 14 locals, 10 constants, 0 functions
+	1	[122]	TEST     	1 1
+	2	[122]	JMP      	0 1	; to 4
+	3	[122]	LOADK    	1 -1	; "Weight"
+	4	[123]	LOADK    	2 -2	; 0
+	5	[124]	GETTABUP 	3 0 -3	; _ENV "ipairs"
+	6	[124]	MOVE     	4 0
+	7	[124]	CALL     	3 2 4
+	8	[124]	JMP      	0 2	; to 11
+	9	[125]	GETTABLE 	8 7 1
+	10	[125]	ADD      	2 2 8
+	11	[124]	TFORCALL 	3 2
+	12	[124]	TFORLOOP 	5 -4	; to 9
+	13	[128]	LE       	0 2 -2	; - 0
+	14	[128]	JMP      	0 5	; to 20
+	15	[129]	GETTABUP 	3 0 -4	; _ENV "Log"
+	16	[129]	GETTABLE 	3 3 -5	; "Assert"
+	17	[129]	LOADBOOL 	4 0 0
+	18	[129]	LOADK    	5 -6	; "\233\148\153\232\175\175\239\188\140\233\128\137\230\139\169\230\163\139\229\173\144\231\154\132\230\137\128\230\156\137\230\157\131\233\135\141 <= 0 \232\175\183\230\163\128\230\159\165 "
+	19	[129]	CALL     	3 3 1
+	20	[132]	GETTABUP 	3 0 -7	; _ENV "MathUtil"
+	21	[132]	GETTABLE 	3 3 -8	; "Random"
+	22	[132]	MOVE     	4 2
+	23	[132]	CALL     	3 2 2
+	24	[133]	GETTABUP 	4 0 -3	; _ENV "ipairs"
+	25	[133]	MOVE     	5 0
+	26	[133]	CALL     	4 2 4
+	27	[133]	JMP      	0 7	; to 35
+	28	[134]	GETTABLE 	9 8 1
+	29	[134]	LE       	0 3 9
+	30	[134]	JMP      	0 2	; to 33
+	31	[135]	RETURN   	8 2
+	32	[135]	JMP      	0 2	; to 35
+	33	[137]	GETTABLE 	9 8 1
+	34	[137]	SUB      	3 3 9
+	35	[133]	TFORCALL 	4 2
+	36	[133]	TFORLOOP 	6 -9	; to 28
+	37	[142]	LE       	0 2 -2	; - 0
+	38	[142]	JMP      	0 5	; to 44
+	39	[143]	LEN      	4 0
+	40	[143]	LT       	0 -2 4	; 0 -
+	41	[143]	JMP      	0 2	; to 44
+	42	[144]	GETTABLE 	4 0 -9	; 1
+	43	[144]	RETURN   	4 2
+	44	[148]	GETTABUP 	4 0 -4	; _ENV "Log"
+	45	[148]	GETTABLE 	4 4 -5	; "Assert"
+	46	[148]	LOADBOOL 	5 0 0
+	47	[148]	LOADK    	6 -10	; "Table.ListWeightSelectOne"
+	48	[148]	CALL     	4 3 1
+	49	[149]	RETURN   	0 1
+constants (10) for 00000158FC732C60:
+	1	"Weight"
+	2	0
+	3	"ipairs"
+	4	"Log"
+	5	"Assert"
+	6	"\233\148\153\232\175\175\239\188\140\233\128\137\230\139\169\230\163\139\229\173\144\231\154\132\230\137\128\230\156\137\230\157\131\233\135\141 <= 0 \232\175\183\230\163\128\230\159\165 "
+	7	"MathUtil"
+	8	"Random"
+	9	1
+	10	"Table.ListWeightSelectOne"
+locals (14) for 00000158FC732C60:
+	0	source	1	50
+	1	weightKey	1	50
+	2	sumWeight	5	50
+	3	(for generator)	8	13
+	4	(for state)	8	13
+	5	(for control)	8	13
+	6	_	9	11
+	7	item	9	11
+	8	randomIndex	24	50
+	9	(for generator)	27	37
+	10	(for state)	27	37
+	11	(for control)	27	37
+	12	_	28	35
+	13	item	28	35
+upvalues (1) for 00000158FC732C60:
+	0	_ENV	0	0
+
+function <Table.lua:151,165> (19 instructions at 00000158FC732BE0)
+1 param, 10 slots, 0 upvalues, 9 locals, 2 constants, 0 functions
+	1	[152]	NEWTABLE 	1 0 0
+	2	[153]	NEWTABLE 	2 0 0
+	3	[154]	LOADNIL  	3 0
+	4	[155]	LEN      	4 0
+	5	[156]	LOADK    	5 -1	; 1
+	6	[156]	MOVE     	6 4
+	7	[156]	LOADK    	7 -1	; 1
+	8	[156]	FORPREP  	5 8	; to 17
+	9	[157]	GETTABLE 	3 0 8
+	10	[158]	GETTABLE 	9 1 3
+	11	[158]	TEST     	9 1
+	12	[158]	JMP      	0 4	; to 17
+	13	[159]	SETTABLE 	1 3 -2	; - true
+	14	[161]	LEN      	9 2
+	15	[161]	ADD      	9 9 -1	; - 1
+	16	[161]	SETTABLE 	2 9 3
+	17	[156]	FORLOOP  	5 -9	; to 9
+	18	[164]	RETURN   	2 2
+	19	[165]	RETURN   	0 1
+constants (2) for 00000158FC732BE0:
+	1	1
+	2	true
+locals (9) for 00000158FC732BE0:
+	0	list	1	20
+	1	map	2	20
+	2	new	3	20
+	3	value	4	20
+	4	count	5	20
+	5	(for index)	8	18
+	6	(for limit)	8	18
+	7	(for step)	8	18
+	8	i	9	17
+upvalues (0) for 00000158FC732BE0:
+
+function <Table.lua:168,175> (13 instructions at 00000158FC733260)
+2 params, 8 slots, 1 upvalue, 7 locals, 1 constant, 0 functions
+	1	[169]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[169]	MOVE     	3 0
+	3	[169]	CALL     	2 2 4
+	4	[169]	JMP      	0 4	; to 9
+	5	[170]	EQ       	0 6 1
+	6	[170]	JMP      	0 2	; to 9
+	7	[171]	LOADBOOL 	7 1 0
+	8	[171]	RETURN   	7 2
+	9	[169]	TFORCALL 	2 2
+	10	[169]	TFORLOOP 	4 -6	; to 5
+	11	[174]	LOADBOOL 	2 0 0
+	12	[174]	RETURN   	2 2
+	13	[175]	RETURN   	0 1
+constants (1) for 00000158FC733260:
+	1	"pairs"
+locals (7) for 00000158FC733260:
+	0	source	1	14
+	1	target	1	14
+	2	(for generator)	4	11
+	3	(for state)	4	11
+	4	(for control)	4	11
+	5	_	5	9
+	6	value	5	9
+upvalues (1) for 00000158FC733260:
+	0	_ENV	0	0
+
+function <Table.lua:178,186> (13 instructions at 00000158FC7332E0)
+2 params, 8 slots, 0 upvalues, 7 locals, 2 constants, 0 functions
+	1	[179]	LEN      	2 0
+	2	[180]	LOADK    	3 -1	; 1
+	3	[180]	MOVE     	4 2
+	4	[180]	LOADK    	5 -1	; 1
+	5	[180]	FORPREP  	3 4	; to 10
+	6	[181]	GETTABLE 	7 0 6
+	7	[181]	EQ       	0 7 1
+	8	[181]	JMP      	0 1	; to 10
+	9	[182]	RETURN   	6 2
+	10	[180]	FORLOOP  	3 -5	; to 6
+	11	[185]	LOADK    	3 -2	; 0
+	12	[185]	RETURN   	3 2
+	13	[186]	RETURN   	0 1
+constants (2) for 00000158FC7332E0:
+	1	1
+	2	0
+locals (7) for 00000158FC7332E0:
+	0	list	1	14
+	1	target	1	14
+	2	count	2	14
+	3	(for index)	5	11
+	4	(for limit)	5	11
+	5	(for step)	5	11
+	6	i	6	10
+upvalues (0) for 00000158FC7332E0:
+
+function <Table.lua:189,197> (15 instructions at 00000158FC7338E0)
+2 params, 9 slots, 0 upvalues, 7 locals, 2 constants, 0 functions
+	1	[190]	LEN      	2 0
+	2	[191]	LOADK    	3 -1	; 1
+	3	[191]	MOVE     	4 2
+	4	[191]	LOADK    	5 -1	; 1
+	5	[191]	FORPREP  	3 6	; to 12
+	6	[192]	MOVE     	7 1
+	7	[192]	GETTABLE 	8 0 6
+	8	[192]	CALL     	7 2 2
+	9	[192]	TEST     	7 0
+	10	[192]	JMP      	0 1	; to 12
+	11	[193]	RETURN   	6 2
+	12	[191]	FORLOOP  	3 -7	; to 6
+	13	[196]	LOADK    	3 -2	; 0
+	14	[196]	RETURN   	3 2
+	15	[197]	RETURN   	0 1
+constants (2) for 00000158FC7338E0:
+	1	1
+	2	0
+locals (7) for 00000158FC7338E0:
+	0	list	1	16
+	1	filter	1	16
+	2	count	2	16
+	3	(for index)	5	13
+	4	(for limit)	5	13
+	5	(for step)	5	13
+	6	i	6	12
+upvalues (0) for 00000158FC7338E0:
+
+function <Table.lua:200,207> (12 instructions at 00000158FC732EE0)
+2 params, 8 slots, 1 upvalue, 7 locals, 1 constant, 0 functions
+	1	[201]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[201]	MOVE     	3 0
+	3	[201]	CALL     	2 2 4
+	4	[201]	JMP      	0 3	; to 8
+	5	[202]	EQ       	0 6 1
+	6	[202]	JMP      	0 1	; to 8
+	7	[203]	RETURN   	5 2
+	8	[201]	TFORCALL 	2 2
+	9	[201]	TFORLOOP 	4 -5	; to 5
+	10	[206]	LOADNIL  	2 0
+	11	[206]	RETURN   	2 2
+	12	[207]	RETURN   	0 1
+constants (1) for 00000158FC732EE0:
+	1	"pairs"
+locals (7) for 00000158FC732EE0:
+	0	map	1	13
+	1	target	1	13
+	2	(for generator)	4	10
+	3	(for state)	4	10
+	4	(for control)	4	10
+	5	key	5	8
+	6	value	5	8
+upvalues (1) for 00000158FC732EE0:
+	0	_ENV	0	0
+
+function <Table.lua:210,216> (10 instructions at 00000158FC7330E0)
+1 param, 8 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[211]	LOADK    	1 -1	; 0
+	2	[212]	GETTABUP 	2 0 -2	; _ENV "pairs"
+	3	[212]	MOVE     	3 0
+	4	[212]	CALL     	2 2 4
+	5	[212]	JMP      	0 1	; to 7
+	6	[213]	ADD      	1 1 -3	; - 1
+	7	[212]	TFORCALL 	2 2
+	8	[212]	TFORLOOP 	4 -3	; to 6
+	9	[215]	RETURN   	1 2
+	10	[216]	RETURN   	0 1
+constants (3) for 00000158FC7330E0:
+	1	0
+	2	"pairs"
+	3	1
+locals (7) for 00000158FC7330E0:
+	0	source	1	11
+	1	size	2	11
+	2	(for generator)	5	9
+	3	(for state)	5	9
+	4	(for control)	5	9
+	5	k	6	7
+	6	v	6	7
+upvalues (1) for 00000158FC7330E0:
+	0	_ENV	0	0
+
+function <Table.lua:218,226> (19 instructions at 00000158FC7337E0)
+2 params, 11 slots, 1 upvalue, 8 locals, 3 constants, 0 functions
+	1	[219]	NEWTABLE 	2 0 0
+	2	[220]	GETTABUP 	3 0 -1	; _ENV "pairs"
+	3	[220]	MOVE     	4 0
+	4	[220]	CALL     	3 2 4
+	5	[220]	JMP      	0 10	; to 16
+	6	[221]	MOVE     	8 1
+	7	[221]	MOVE     	9 7
+	8	[221]	CALL     	8 2 2
+	9	[221]	TEST     	8 0
+	10	[221]	JMP      	0 5	; to 16
+	11	[222]	GETTABUP 	8 0 -2	; _ENV "table"
+	12	[222]	GETTABLE 	8 8 -3	; "insert"
+	13	[222]	MOVE     	9 2
+	14	[222]	MOVE     	10 7
+	15	[222]	CALL     	8 3 1
+	16	[220]	TFORCALL 	3 2
+	17	[220]	TFORLOOP 	5 -12	; to 6
+	18	[225]	RETURN   	2 2
+	19	[226]	RETURN   	0 1
+constants (3) for 00000158FC7337E0:
+	1	"pairs"
+	2	"table"
+	3	"insert"
+locals (8) for 00000158FC7337E0:
+	0	source	1	20
+	1	filter	1	20
+	2	result	2	20
+	3	(for generator)	5	18
+	4	(for state)	5	18
+	5	(for control)	5	18
+	6	_	6	16
+	7	value	6	16
+upvalues (1) for 00000158FC7337E0:
+	0	_ENV	0	0
+
+function <Table.lua:232,243> (20 instructions at 00000158FC733460)
+2 params, 12 slots, 1 upvalue, 9 locals, 3 constants, 0 functions
+	1	[233]	NEWTABLE 	2 0 0
+	2	[234]	LEN      	3 0
+	3	[235]	LOADK    	4 -1	; 1
+	4	[235]	MOVE     	5 3
+	5	[235]	LOADK    	6 -1	; 1
+	6	[235]	FORPREP  	4 11	; to 18
+	7	[236]	GETTABLE 	8 0 7
+	8	[237]	MOVE     	9 1
+	9	[237]	MOVE     	10 8
+	10	[237]	CALL     	9 2 2
+	11	[237]	TEST     	9 0
+	12	[237]	JMP      	0 5	; to 18
+	13	[238]	GETTABUP 	9 0 -2	; _ENV "table"
+	14	[238]	GETTABLE 	9 9 -3	; "insert"
+	15	[238]	MOVE     	10 2
+	16	[238]	MOVE     	11 8
+	17	[238]	CALL     	9 3 1
+	18	[235]	FORLOOP  	4 -12	; to 7
+	19	[242]	RETURN   	2 2
+	20	[243]	RETURN   	0 1
+constants (3) for 00000158FC733460:
+	1	1
+	2	"table"
+	3	"insert"
+locals (9) for 00000158FC733460:
+	0	source	1	21
+	1	filter	1	21
+	2	result	2	21
+	3	count	3	21
+	4	(for index)	6	19
+	5	(for limit)	6	19
+	6	(for step)	6	19
+	7	i	7	18
+	8	value	8	18
+upvalues (1) for 00000158FC733460:
+	0	_ENV	0	0
+
+function <Table.lua:245,249> (10 instructions at 00000158FC732AE0)
+2 params, 9 slots, 1 upvalue, 7 locals, 1 constant, 0 functions
+	1	[246]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[246]	MOVE     	3 0
+	3	[246]	CALL     	2 2 4
+	4	[246]	JMP      	0 3	; to 8
+	5	[247]	MOVE     	7 1
+	6	[247]	MOVE     	8 6
+	7	[247]	CALL     	7 2 1
+	8	[246]	TFORCALL 	2 2
+	9	[246]	TFORLOOP 	4 -5	; to 5
+	10	[249]	RETURN   	0 1
+constants (1) for 00000158FC732AE0:
+	1	"pairs"
+locals (7) for 00000158FC732AE0:
+	0	source	1	11
+	1	func	1	11
+	2	(for generator)	4	10
+	3	(for state)	4	10
+	4	(for control)	4	10
+	5	_	5	8
+	6	value	5	8
+upvalues (1) for 00000158FC732AE0:
+	0	_ENV	0	0
+
+function <Table.lua:251,256> (11 instructions at 00000158FC733360)
+2 params, 10 slots, 0 upvalues, 7 locals, 1 constant, 0 functions
+	1	[252]	LEN      	2 0
+	2	[253]	LOADK    	3 -1	; 1
+	3	[253]	MOVE     	4 2
+	4	[253]	LOADK    	5 -1	; 1
+	5	[253]	FORPREP  	3 4	; to 10
+	6	[254]	MOVE     	7 1
+	7	[254]	MOVE     	8 6
+	8	[254]	GETTABLE 	9 0 6
+	9	[254]	CALL     	7 3 1
+	10	[253]	FORLOOP  	3 -5	; to 6
+	11	[256]	RETURN   	0 1
+constants (1) for 00000158FC733360:
+	1	1
+locals (7) for 00000158FC733360:
+	0	source	1	12
+	1	func	1	12
+	2	count	2	12
+	3	(for index)	5	11
+	4	(for limit)	5	11
+	5	(for step)	5	11
+	6	i	6	10
+upvalues (0) for 00000158FC733360:
+
+function <Table.lua:258,266> (12 instructions at 00000158FC732FE0)
+1 param, 9 slots, 1 upvalue, 8 locals, 3 constants, 0 functions
+	1	[259]	NEWTABLE 	1 0 0
+	2	[260]	LOADK    	2 -1	; 0
+	3	[261]	GETTABUP 	3 0 -2	; _ENV "pairs"
+	4	[261]	MOVE     	4 0
+	5	[261]	CALL     	3 2 4
+	6	[261]	JMP      	0 2	; to 9
+	7	[262]	ADD      	2 2 -3	; - 1
+	8	[263]	SETTABLE 	1 2 6
+	9	[261]	TFORCALL 	3 2
+	10	[261]	TFORLOOP 	5 -4	; to 7
+	11	[265]	RETURN   	1 2
+	12	[266]	RETURN   	0 1
+constants (3) for 00000158FC732FE0:
+	1	0
+	2	"pairs"
+	3	1
+locals (8) for 00000158FC732FE0:
+	0	source	1	13
+	1	keys	2	13
+	2	count	3	13
+	3	(for generator)	6	11
+	4	(for state)	6	11
+	5	(for control)	6	11
+	6	key	7	9
+	7	_	7	9
+upvalues (1) for 00000158FC732FE0:
+	0	_ENV	0	0
+
+function <Table.lua:268,276> (12 instructions at 00000158FC733060)
+1 param, 9 slots, 1 upvalue, 8 locals, 3 constants, 0 functions
+	1	[269]	NEWTABLE 	1 0 0
+	2	[270]	LOADK    	2 -1	; 0
+	3	[271]	GETTABUP 	3 0 -2	; _ENV "pairs"
+	4	[271]	MOVE     	4 0
+	5	[271]	CALL     	3 2 4
+	6	[271]	JMP      	0 2	; to 9
+	7	[272]	ADD      	2 2 -3	; - 1
+	8	[273]	SETTABLE 	1 2 7
+	9	[271]	TFORCALL 	3 2
+	10	[271]	TFORLOOP 	5 -4	; to 7
+	11	[275]	RETURN   	1 2
+	12	[276]	RETURN   	0 1
+constants (3) for 00000158FC733060:
+	1	0
+	2	"pairs"
+	3	1
+locals (8) for 00000158FC733060:
+	0	source	1	13
+	1	values	2	13
+	2	count	3	13
+	3	(for generator)	6	11
+	4	(for state)	6	11
+	5	(for control)	6	11
+	6	_	7	9
+	7	value	7	9
+upvalues (1) for 00000158FC733060:
+	0	_ENV	0	0
+
+function <Table.lua:278,280> (19 instructions at 00000158FC733160)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[279]	GETTABUP 	1 0 -1	; _ENV "IsNil"
+	2	[279]	MOVE     	2 0
+	3	[279]	CALL     	1 2 2
+	4	[279]	TEST     	1 1
+	5	[279]	JMP      	0 12	; to 18
+	6	[279]	GETTABUP 	1 0 -2	; _ENV "type"
+	7	[279]	MOVE     	2 0
+	8	[279]	CALL     	1 2 2
+	9	[279]	EQ       	0 1 -3	; - "table"
+	10	[279]	JMP      	0 6	; to 17
+	11	[279]	GETTABUP 	1 0 -4	; _ENV "next"
+	12	[279]	MOVE     	2 0
+	13	[279]	CALL     	1 2 2
+	14	[279]	EQ       	1 1 -5	; - nil
+	15	[279]	JMP      	0 1	; to 17
+	16	[279]	LOADBOOL 	1 0 1
+	17	[279]	LOADBOOL 	1 1 0
+	18	[279]	RETURN   	1 2
+	19	[280]	RETURN   	0 1
+constants (5) for 00000158FC733160:
+	1	"IsNil"
+	2	"type"
+	3	"table"
+	4	"next"
+	5	nil
+locals (1) for 00000158FC733160:
+	0	source	1	20
+upvalues (1) for 00000158FC733160:
+	0	_ENV	0	0
+
+function <Table.lua:282,288> (13 instructions at 00000158FC7333E0)
+1 param, 8 slots, 0 upvalues, 6 locals, 1 constant, 0 functions
+	1	[283]	NEWTABLE 	1 0 0
+	2	[284]	LOADK    	2 -1	; 1
+	3	[284]	LEN      	3 0
+	4	[284]	LOADK    	4 -1	; 1
+	5	[284]	FORPREP  	2 5	; to 11
+	6	[285]	LEN      	6 0
+	7	[285]	SUB      	6 6 5
+	8	[285]	ADD      	6 6 -1	; - 1
+	9	[285]	GETTABLE 	7 0 5
+	10	[285]	SETTABLE 	1 6 7
+	11	[284]	FORLOOP  	2 -6	; to 6
+	12	[287]	RETURN   	1 2
+	13	[288]	RETURN   	0 1
+constants (1) for 00000158FC7333E0:
+	1	1
+locals (6) for 00000158FC7333E0:
+	0	source	1	14
+	1	list	2	14
+	2	(for index)	5	12
+	3	(for limit)	5	12
+	4	(for step)	5	12
+	5	i	6	11
+upvalues (0) for 00000158FC7333E0:
+
+function <Table.lua:290,296> (20 instructions at 00000158FC733560)
+3 params, 11 slots, 1 upvalue, 8 locals, 3 constants, 0 functions
+	1	[291]	NEWTABLE 	3 0 0
+	2	[292]	LOADK    	4 -1	; 1
+	3	[292]	MOVE     	5 1
+	4	[292]	LOADK    	6 -1	; 1
+	5	[292]	FORPREP  	4 12	; to 18
+	6	[293]	LEN      	8 3
+	7	[293]	ADD      	8 8 -1	; - 1
+	8	[293]	TEST     	2 0
+	9	[293]	JMP      	0 6	; to 16
+	10	[293]	GETTABUP 	9 0 -2	; _ENV "Table"
+	11	[293]	GETTABLE 	9 9 -3	; "DeepCopy"
+	12	[293]	MOVE     	10 0
+	13	[293]	CALL     	9 2 2
+	14	[293]	TEST     	9 1
+	15	[293]	JMP      	0 1	; to 17
+	16	[293]	MOVE     	9 0
+	17	[293]	SETTABLE 	3 8 9
+	18	[292]	FORLOOP  	4 -13	; to 6
+	19	[295]	RETURN   	3 2
+	20	[296]	RETURN   	0 1
+constants (3) for 00000158FC733560:
+	1	1
+	2	"Table"
+	3	"DeepCopy"
+locals (8) for 00000158FC733560:
+	0	ele	1	21
+	1	repCount	1	21
+	2	deepCopy	1	21
+	3	list	2	21
+	4	(for index)	5	19
+	5	(for limit)	5	19
+	6	(for step)	5	19
+	7	i	6	18
+upvalues (1) for 00000158FC733560:
+	0	_ENV	0	0
+
+function <Table.lua:299,313> (36 instructions at 00000158FC732D60)
+2 params, 12 slots, 1 upvalue, 9 locals, 10 constants, 0 functions
+	1	[300]	NEWTABLE 	2 0 0
+	2	[301]	GETTABUP 	3 0 -1	; _ENV "Table"
+	3	[301]	GETTABLE 	3 3 -2	; "IsEmpty"
+	4	[301]	MOVE     	4 0
+	5	[301]	CALL     	3 2 2
+	6	[301]	TEST     	3 0
+	7	[301]	JMP      	0 1	; to 9
+	8	[302]	RETURN   	2 2
+	9	[305]	GETTABUP 	3 0 -1	; _ENV "Table"
+	10	[305]	GETTABLE 	3 3 -3	; "DeepCopy"
+	11	[305]	MOVE     	4 0
+	12	[305]	CALL     	3 2 2
+	13	[306]	LOADK    	4 -4	; 1
+	14	[306]	GETTABUP 	5 0 -5	; _ENV "math"
+	15	[306]	GETTABLE 	5 5 -6	; "min"
+	16	[306]	LEN      	6 3
+	17	[306]	MOVE     	7 1
+	18	[306]	CALL     	5 3 2
+	19	[306]	LOADK    	6 -4	; 1
+	20	[306]	FORPREP  	4 13	; to 34
+	21	[307]	GETTABUP 	8 0 -7	; _ENV "MathUtil"
+	22	[307]	GETTABLE 	8 8 -8	; "Random"
+	23	[307]	LEN      	9 3
+	24	[307]	CALL     	8 2 2
+	25	[308]	LEN      	9 2
+	26	[308]	ADD      	9 9 -4	; - 1
+	27	[308]	GETTABLE 	10 3 8
+	28	[308]	SETTABLE 	2 9 10
+	29	[309]	GETTABUP 	9 0 -9	; _ENV "table"
+	30	[309]	GETTABLE 	9 9 -10	; "remove"
+	31	[309]	MOVE     	10 3
+	32	[309]	MOVE     	11 8
+	33	[309]	CALL     	9 3 1
+	34	[306]	FORLOOP  	4 -14	; to 21
+	35	[312]	RETURN   	2 2
+	36	[313]	RETURN   	0 1
+constants (10) for 00000158FC732D60:
+	1	"Table"
+	2	"IsEmpty"
+	3	"DeepCopy"
+	4	1
+	5	"math"
+	6	"min"
+	7	"MathUtil"
+	8	"Random"
+	9	"table"
+	10	"remove"
+locals (9) for 00000158FC732D60:
+	0	source	1	37
+	1	selectCount	1	37
+	2	result	2	37
+	3	tb	13	37
+	4	(for index)	20	35
+	5	(for limit)	20	35
+	6	(for step)	20	35
+	7	i	21	34
+	8	index	25	34
+upvalues (1) for 00000158FC732D60:
+	0	_ENV	0	0
+
+function <Table.lua:321,342> (32 instructions at 00000158FC732DE0)
+4 params, 8 slots, 1 upvalue, 7 locals, 4 constants, 0 functions
+	1	[322]	GETTABUP 	4 0 -1	; _ENV "Table"
+	2	[322]	GETTABLE 	4 4 -2	; "IsEmpty"
+	3	[322]	MOVE     	5 0
+	4	[322]	CALL     	4 2 2
+	5	[322]	TEST     	4 0
+	6	[322]	JMP      	0 2	; to 9
+	7	[323]	LOADNIL  	4 0
+	8	[323]	RETURN   	4 2
+	9	[326]	LOADK    	4 -3	; 1
+	10	[327]	LEN      	5 0
+	11	[328]	LOADNIL  	6 0
+	12	[330]	LE       	0 4 5
+	13	[330]	JMP      	0 16	; to 30
+	14	[331]	ADD      	7 4 5
+	15	[331]	IDIV     	6 7 -4	; - 2
+	16	[332]	GETTABLE 	7 0 6
+	17	[332]	GETTABLE 	7 7 2
+	18	[332]	LT       	0 1 7
+	19	[332]	JMP      	0 2	; to 22
+	20	[333]	SUB      	5 6 -3	; - 1
+	21	[333]	JMP      	0 -10	; to 12
+	22	[334]	GETTABLE 	7 0 6
+	23	[334]	GETTABLE 	7 7 3
+	24	[334]	LT       	0 7 1
+	25	[334]	JMP      	0 2	; to 28
+	26	[335]	ADD      	4 6 -3	; - 1
+	27	[335]	JMP      	0 -16	; to 12
+	28	[337]	RETURN   	6 2
+	29	[338]	JMP      	0 -18	; to 12
+	30	[341]	LOADNIL  	7 0
+	31	[341]	RETURN   	7 2
+	32	[342]	RETURN   	0 1
+constants (4) for 00000158FC732DE0:
+	1	"Table"
+	2	"IsEmpty"
+	3	1
+	4	2
+locals (7) for 00000158FC732DE0:
+	0	searchTb	1	33
+	1	tarVal	1	33
+	2	minKey	1	33
+	3	maxKey	1	33
+	4	left	10	33
+	5	right	11	33
+	6	mid	12	33
+upvalues (1) for 00000158FC732DE0:
+	0	_ENV	0	0
+
+function <Table.lua:345,358> (17 instructions at 00000158FC732E60)
+1 param, 5 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[346]	EQ       	0 0 -1	; - nil
+	2	[346]	JMP      	0 1	; to 4
+	3	[347]	RETURN   	0 1
+	4	[350]	LEN      	1 0
+	5	[351]	LT       	0 -2 1	; 1 -
+	6	[351]	JMP      	0 10	; to 17
+	7	[353]	GETTABUP 	2 0 -3	; _ENV "math"
+	8	[353]	GETTABLE 	2 2 -4	; "random"
+	9	[353]	MOVE     	3 1
+	10	[353]	CALL     	2 2 2
+	11	[355]	GETTABLE 	3 0 2
+	12	[355]	GETTABLE 	4 0 1
+	13	[355]	SETTABLE 	0 2 4
+	14	[355]	SETTABLE 	0 1 3
+	15	[356]	SUB      	1 1 -2	; - 1
+	16	[356]	JMP      	0 -12	; to 5
+	17	[358]	RETURN   	0 1
+constants (4) for 00000158FC732E60:
+	1	nil
+	2	1
+	3	"math"
+	4	"random"
+locals (3) for 00000158FC732E60:
+	0	list	1	18
+	1	n	5	18
+	2	k	11	16
+upvalues (1) for 00000158FC732E60:
+	0	_ENV	0	0

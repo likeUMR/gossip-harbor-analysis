@@ -1,0 +1,3885 @@
+
+main <SDKHelper.lua:0,0> (115 instructions at 000001C8D35AEFA0)
+0+ params, 5 slots, 1 upvalue, 3 locals, 45 constants, 36 functions
+	1	[2]	NEWTABLE 	0 0 0
+	2	[2]	SETTABUP 	0 -1 0	; _ENV "SDKHelper"
+	3	[3]	GETTABUP 	0 0 -1	; _ENV "SDKHelper"
+	4	[3]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	5	[3]	SETTABLE 	0 -2 1	; "__index" -
+	6	[6]	NEWTABLE 	0 0 4
+	7	[7]	SETTABLE 	0 -3 -4	; "None" 0
+	8	[9]	SETTABLE 	0 -5 -6	; "DeviceInfo" 1
+	9	[10]	SETTABLE 	0 -7 -8	; "UserInfo" 2
+	10	[11]	SETTABLE 	0 -9 -10	; "GroupInfo" 3
+	11	[14]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	12	[52]	CLOSURE  	2 0	; 000001C8D35AF020
+	13	[14]	SETTABLE 	1 -11 2	; "Init" -
+	14	[54]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	15	[62]	CLOSURE  	2 1	; 000001C8D35B2A10
+	16	[54]	SETTABLE 	1 -12 2	; "Destroy" -
+	17	[64]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	18	[66]	CLOSURE  	2 2	; 000001C8D35B2B20
+	19	[64]	SETTABLE 	1 -13 2	; "GetAdManager" -
+	20	[68]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	21	[70]	CLOSURE  	2 3	; 000001C8D35B2BA0
+	22	[68]	SETTABLE 	1 -14 2	; "SetAppleClientSecret" -
+	23	[72]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	24	[76]	CLOSURE  	2 4	; 000001C8D35B2C20
+	25	[72]	SETTABLE 	1 -15 2	; "_RegisterHandlers" -
+	26	[78]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	27	[81]	CLOSURE  	2 5	; 000001C8D35AEA30
+	28	[78]	SETTABLE 	1 -16 2	; "_RemoveHandlers" -
+	29	[83]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	30	[106]	CLOSURE  	2 6	; 000001C8D35AEAB0
+	31	[83]	SETTABLE 	1 -17 2	; "_UpdateHandlers" -
+	32	[108]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	33	[114]	CLOSURE  	2 7	; 000001C8D35B3D20
+	34	[108]	SETTABLE 	1 -18 2	; "Purchase" -
+	35	[116]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	36	[121]	CLOSURE  	2 8	; 000001C8D35B3EA0
+	37	[116]	SETTABLE 	1 -19 2	; "PurchaseInit" -
+	38	[123]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	39	[130]	CLOSURE  	2 9	; 000001C8D35B40F0
+	40	[123]	SETTABLE 	1 -20 2	; "PurchaseRestore" -
+	41	[132]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	42	[137]	CLOSURE  	2 10	; 000001C8D35B4170
+	43	[132]	SETTABLE 	1 -21 2	; "PurchaseFinish" -
+	44	[140]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	45	[298]	CLOSURE  	2 11	; 000001C8D35B4C70
+	46	[140]	SETTABLE 	1 -22 2	; "_RegisterCSharpHandlers" -
+	47	[300]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	48	[354]	CLOSURE  	2 12	; 000001C8D35B48F0
+	49	[300]	SETTABLE 	1 -23 2	; "LoginHandler" -
+	50	[356]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	51	[393]	CLOSURE  	2 13	; 000001C8D35B4070
+	52	[356]	SETTABLE 	1 -24 2	; "AppleGenerateToken" -
+	53	[395]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	54	[401]	CLOSURE  	2 14	; 000001C8D35B4670
+	55	[395]	SETTABLE 	1 -25 2	; "LogOut" -
+	56	[403]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	57	[407]	CLOSURE  	2 15	; 000001C8D35B4370
+	58	[403]	SETTABLE 	1 -26 2	; "_RevokeLoginTokens" -
+	59	[409]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	60	[437]	CLOSURE  	2 16	; 000001C8D35B44F0
+	61	[409]	SETTABLE 	1 -27 2	; "_RevokeAppleToken" -
+	62	[439]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	63	[444]	CLOSURE  	2 17	; 000001C8D35B4970
+	64	[439]	SETTABLE 	1 -28 2	; "AiHelpUpdateUserInfoInScheduler" -
+	65	[446]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	66	[526]	CLOSURE  	2 18	; 000001C8D35B4BF0
+	67	[446]	SETTABLE 	1 -29 2	; "AiHelpUpdateUserInfo" -
+	68	[528]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	69	[538]	CLOSURE  	2 19	; 000001C8D35BFB30
+	70	[528]	SETTABLE 	1 -30 2	; "OpenCustomerCenter" -
+	71	[540]	GETTABUP 	1 0 -1	; _ENV "SDKHelper"
+	72	[542]	CLOSURE  	2 20	; 000001C8D35BF8B0
+	73	[540]	SETTABLE 	1 -31 2	; "HasUnreadCSMsg" -
+	74	[568]	CLOSURE  	1 21	; 000001C8D35BFAB0
+	75	[576]	CLOSURE  	2 22	; 000001C8D35BFBB0
+	76	[578]	GETTABUP 	3 0 -1	; _ENV "SDKHelper"
+	77	[586]	CLOSURE  	4 23	; 000001C8D35C0AB0
+	78	[578]	SETTABLE 	3 -32 4	; "SubMessage" -
+	79	[598]	GETTABUP 	3 0 -1	; _ENV "SDKHelper"
+	80	[625]	CLOSURE  	4 24	; 000001C8D35C0230
+	81	[598]	SETTABLE 	3 -33 4	; "GetUserInfo" -
+	82	[627]	GETTABUP 	3 0 -1	; _ENV "SDKHelper"
+	83	[663]	CLOSURE  	4 25	; 000001C8D35C0EB0
+	84	[627]	SETTABLE 	3 -34 4	; "TryRequestFeedSubscribe" -
+	85	[671]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	86	[677]	CLOSURE  	4 26	; 000001C8D35BFE30
+	87	[671]	SETTABLE 	3 -36 4	; "CheckFeedSubscribeStatus" -
+	88	[679]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	89	[689]	CLOSURE  	4 27	; 000001C8D35C14B0
+	90	[679]	SETTABLE 	3 -37 4	; "RequestFeedSubscribe" -
+	91	[691]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	92	[697]	CLOSURE  	4 28	; 000001C8D35BFEB0
+	93	[691]	SETTABLE 	3 -38 4	; "_OnLevelUp" -
+	94	[699]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	95	[702]	CLOSURE  	4 29	; 000001C8D35C11B0
+	96	[699]	SETTABLE 	3 -39 4	; "_OnOrderFinished" -
+	97	[704]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	98	[735]	CLOSURE  	4 30	; 000001C8D35C1230
+	99	[704]	SETTABLE 	3 -40 4	; "_OnItemMerged" -
+	100	[737]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	101	[797]	CLOSURE  	4 31	; 000001C8D35C0FB0
+	102	[737]	SETTABLE 	3 -41 4	; "_AlipayUploadAction" -
+	103	[799]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	104	[825]	CLOSURE  	4 32	; 000001C8D35C09B0
+	105	[799]	SETTABLE 	3 -42 4	; "_RetryAlipayUploadAction" -
+	106	[829]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	107	[863]	CLOSURE  	4 33	; 000001C8D35C1430
+	108	[829]	SETTABLE 	3 -43 4	; "RequestAddHomePage" -
+	109	[866]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	110	[885]	CLOSURE  	4 34	; 000001C8D35BFCB0
+	111	[866]	SETTABLE 	3 -44 4	; "IsDYDirectPlay" -
+	112	[888]	GETTABUP 	3 0 -35	; _ENV "SDKHelper"
+	113	[890]	CLOSURE  	4 35	; 000001C8D35C10B0
+	114	[888]	SETTABLE 	3 -45 4	; "IsDYNovelRead" -
+	115	[890]	RETURN   	0 1
+constants (45) for 000001C8D35AEFA0:
+	1	"SDKHelper"
+	2	"__index"
+	3	"None"
+	4	0
+	5	"DeviceInfo"
+	6	1
+	7	"UserInfo"
+	8	2
+	9	"GroupInfo"
+	10	3
+	11	"Init"
+	12	"Destroy"
+	13	"GetAdManager"
+	14	"SetAppleClientSecret"
+	15	"_RegisterHandlers"
+	16	"_RemoveHandlers"
+	17	"_UpdateHandlers"
+	18	"Purchase"
+	19	"PurchaseInit"
+	20	"PurchaseRestore"
+	21	"PurchaseFinish"
+	22	"_RegisterCSharpHandlers"
+	23	"LoginHandler"
+	24	"AppleGenerateToken"
+	25	"LogOut"
+	26	"_RevokeLoginTokens"
+	27	"_RevokeAppleToken"
+	28	"AiHelpUpdateUserInfoInScheduler"
+	29	"AiHelpUpdateUserInfo"
+	30	"OpenCustomerCenter"
+	31	"HasUnreadCSMsg"
+	32	"SubMessage"
+	33	"GetUserInfo"
+	34	"TryRequestFeedSubscribe"
+	35	"SDKHelper"
+	36	"CheckFeedSubscribeStatus"
+	37	"RequestFeedSubscribe"
+	38	"_OnLevelUp"
+	39	"_OnOrderFinished"
+	40	"_OnItemMerged"
+	41	"_AlipayUploadAction"
+	42	"_RetryAlipayUploadAction"
+	43	"RequestAddHomePage"
+	44	"IsDYDirectPlay"
+	45	"IsDYNovelRead"
+locals (3) for 000001C8D35AEFA0:
+	0	EUpdateInfoStep	11	116
+	1	getSubMessageIds	75	116
+	2	getDyPlaySubscribeIds	76	116
+upvalues (1) for 000001C8D35AEFA0:
+	0	_ENV	1	0
+
+function <SDKHelper.lua:14,52> (76 instructions at 000001C8D35AF020)
+1 param, 5 slots, 2 upvalues, 1 local, 41 constants, 1 function
+	1	[15]	GETTABUP 	1 0 -2	; _ENV "CS"
+	2	[15]	GETTABLE 	1 1 -3	; "OneSDK"
+	3	[15]	GETTABLE 	1 1 -4	; "SDKManager"
+	4	[15]	GETTABLE 	1 1 -5	; "Instance"
+	5	[15]	SETTABLE 	0 -1 1	; "m_SDKManager" -
+	6	[16]	GETTABLE 	1 0 -1	; "m_SDKManager"
+	7	[16]	GETTABLE 	1 1 -7	; "purchaseClient"
+	8	[16]	SETTABLE 	0 -6 1	; "m_purchaseClient" -
+	9	[17]	SETTABLE 	0 -8 -9	; "m_bHasUnreadCSMsg" false
+	10	[20]	NEWTABLE 	1 0 0
+	11	[20]	SETTABLE 	0 -10 1	; "m_purchaseTokens" -
+	12	[23]	GETTABUP 	1 0 -12	; _ENV "setmetatable"
+	13	[23]	NEWTABLE 	2 0 0
+	14	[23]	GETTABUP 	3 0 -13	; _ENV "SDKWechatHelper"
+	15	[23]	CALL     	1 3 2
+	16	[23]	SETTABLE 	0 -11 1	; "wechatHelper" -
+	17	[24]	GETTABLE 	1 0 -11	; "wechatHelper"
+	18	[24]	SELF     	1 1 -14	; "Init"
+	19	[24]	CALL     	1 2 1
+	20	[27]	GETTABUP 	1 0 -12	; _ENV "setmetatable"
+	21	[27]	NEWTABLE 	2 0 0
+	22	[27]	GETTABUP 	3 0 -16	; _ENV "SDKDouyinHelper"
+	23	[27]	CALL     	1 3 2
+	24	[27]	SETTABLE 	0 -15 1	; "douyinHelper" -
+	25	[28]	GETTABLE 	1 0 -15	; "douyinHelper"
+	26	[28]	SELF     	1 1 -14	; "Init"
+	27	[28]	CALL     	1 2 1
+	28	[31]	SELF     	1 0 -17	; "_RegisterCSharpHandlers"
+	29	[31]	CALL     	1 2 1
+	30	[32]	SELF     	1 0 -18	; "_RegisterHandlers"
+	31	[32]	CALL     	1 2 1
+	32	[36]	SETTABLE 	0 -19 -20	; "m_appleClientSecret" "eyJhbGciOiJFUzI1NiIsImtpZCI6Ijk5R0hCM044OFgifQ.eyJpc3MiOiJBUjhOWkNIM0dXIiwiaWF0IjoxNzg0NTE2NDAwLCJleHAiOjE4MDAyOTM0MDAsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ubWVyZ2VnYW1lLmljb29raWUifQ.L153o1EIJRTPCGWTQe28o9m5B0Ou5A3fe9ADKWBFjhXN5JVB8YStuk9gFjyrKRTvZPkTOF3aVcwpVCqlKclgvQ"
+	33	[38]	GETTABUP 	1 1 -22	; EUpdateInfoStep "None"
+	34	[38]	SETTABLE 	0 -21 1	; "m_updateInfoStep" -
+	35	[39]	GETTABUP 	1 0 -23	; _ENV "Scheduler"
+	36	[39]	GETTABLE 	1 1 -24	; "Schedule"
+	37	[39]	GETTABLE 	2 0 -25	; "AiHelpUpdateUserInfoInScheduler"
+	38	[39]	MOVE     	3 0
+	39	[39]	CALL     	1 3 1
+	40	[41]	GETTABUP 	1 0 -26	; _ENV "Log"
+	41	[41]	GETTABLE 	1 1 -27	; "Info"
+	42	[41]	LOADK    	2 -28	; "[Event] AddListener: EEventType.EnterMainScene"
+	43	[41]	CALL     	1 2 1
+	44	[42]	GETTABUP 	1 0 -29	; _ENV "MINIGAME_ALIPAY"
+	45	[42]	TEST     	1 0
+	46	[42]	JMP      	0 21	; to 68
+	47	[43]	GETTABUP 	1 0 -30	; _ENV "EventDispatcher"
+	48	[43]	GETTABLE 	1 1 -31	; "AddListener"
+	49	[43]	GETTABUP 	2 0 -32	; _ENV "EEventType"
+	50	[43]	GETTABLE 	2 2 -33	; "LevelUp"
+	51	[43]	MOVE     	3 0
+	52	[43]	GETTABLE 	4 0 -34	; "_OnLevelUp"
+	53	[43]	CALL     	1 4 1
+	54	[44]	GETTABUP 	1 0 -30	; _ENV "EventDispatcher"
+	55	[44]	GETTABLE 	1 1 -31	; "AddListener"
+	56	[44]	GETTABUP 	2 0 -32	; _ENV "EEventType"
+	57	[44]	GETTABLE 	2 2 -35	; "OrderFinished"
+	58	[44]	MOVE     	3 0
+	59	[44]	GETTABLE 	4 0 -36	; "_OnOrderFinished"
+	60	[44]	CALL     	1 4 1
+	61	[45]	GETTABUP 	1 0 -30	; _ENV "EventDispatcher"
+	62	[45]	GETTABLE 	1 1 -31	; "AddListener"
+	63	[45]	GETTABUP 	2 0 -32	; _ENV "EEventType"
+	64	[45]	GETTABLE 	2 2 -37	; "ItemMerged"
+	65	[45]	MOVE     	3 0
+	66	[45]	GETTABLE 	4 0 -38	; "_OnItemMerged"
+	67	[45]	CALL     	1 4 1
+	68	[47]	GETTABUP 	1 0 -39	; _ENV "MINIGAME_WECHAT"
+	69	[47]	TEST     	1 0
+	70	[47]	JMP      	0 5	; to 76
+	71	[48]	GETTABUP 	1 0 -40	; _ENV "XyxManager"
+	72	[48]	GETTABLE 	1 1 -5	; "Instance"
+	73	[48]	SELF     	1 1 -41	; "AddDirectAdStatusChangeCallback"
+	74	[50]	CLOSURE  	3 0	; 000001C8D35B2850
+	75	[48]	CALL     	1 3 1
+	76	[52]	RETURN   	0 1
+constants (41) for 000001C8D35AF020:
+	1	"m_SDKManager"
+	2	"CS"
+	3	"OneSDK"
+	4	"SDKManager"
+	5	"Instance"
+	6	"m_purchaseClient"
+	7	"purchaseClient"
+	8	"m_bHasUnreadCSMsg"
+	9	false
+	10	"m_purchaseTokens"
+	11	"wechatHelper"
+	12	"setmetatable"
+	13	"SDKWechatHelper"
+	14	"Init"
+	15	"douyinHelper"
+	16	"SDKDouyinHelper"
+	17	"_RegisterCSharpHandlers"
+	18	"_RegisterHandlers"
+	19	"m_appleClientSecret"
+	20	"eyJhbGciOiJFUzI1NiIsImtpZCI6Ijk5R0hCM044OFgifQ.eyJpc3MiOiJBUjhOWkNIM0dXIiwiaWF0IjoxNzg0NTE2NDAwLCJleHAiOjE4MDAyOTM0MDAsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ubWVyZ2VnYW1lLmljb29raWUifQ.L153o1EIJRTPCGWTQe28o9m5B0Ou5A3fe9ADKWBFjhXN5JVB8YStuk9gFjyrKRTvZPkTOF3aVcwpVCqlKclgvQ"
+	21	"m_updateInfoStep"
+	22	"None"
+	23	"Scheduler"
+	24	"Schedule"
+	25	"AiHelpUpdateUserInfoInScheduler"
+	26	"Log"
+	27	"Info"
+	28	"[Event] AddListener: EEventType.EnterMainScene"
+	29	"MINIGAME_ALIPAY"
+	30	"EventDispatcher"
+	31	"AddListener"
+	32	"EEventType"
+	33	"LevelUp"
+	34	"_OnLevelUp"
+	35	"OrderFinished"
+	36	"_OnOrderFinished"
+	37	"ItemMerged"
+	38	"_OnItemMerged"
+	39	"MINIGAME_WECHAT"
+	40	"XyxManager"
+	41	"AddDirectAdStatusChangeCallback"
+locals (1) for 000001C8D35AF020:
+	0	self	1	77
+upvalues (2) for 000001C8D35AF020:
+	0	_ENV	0	0
+	1	EUpdateInfoStep	1	0
+
+function <SDKHelper.lua:48,50> (9 instructions at 000001C8D35B2850)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[49]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[49]	GETTABLE 	1 1 -2	; "Info"
+	3	[49]	LOADK    	2 -3	; "AddDirectAdStatusChangeCallback:"
+	4	[49]	GETTABUP 	3 0 -4	; _ENV "tostring"
+	5	[49]	MOVE     	4 0
+	6	[49]	CALL     	3 2 2
+	7	[49]	CONCAT   	2 2 3
+	8	[49]	CALL     	1 2 1
+	9	[50]	RETURN   	0 1
+constants (4) for 000001C8D35B2850:
+	1	"Log"
+	2	"Info"
+	3	"AddDirectAdStatusChangeCallback:"
+	4	"tostring"
+locals (1) for 000001C8D35B2850:
+	0	json	1	10
+upvalues (1) for 000001C8D35B2850:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:54,62> (16 instructions at 000001C8D35B2A10)
+1 param, 3 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[55]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[55]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[55]	MOVE     	2 0
+	4	[55]	CALL     	1 2 1
+	5	[56]	SELF     	1 0 -3	; "_RemoveHandlers"
+	6	[56]	CALL     	1 2 1
+	7	[57]	SETTABLE 	0 -4 -5	; "m_purchaseClient" nil
+	8	[58]	GETTABLE 	1 0 -6	; "wechatHelper"
+	9	[58]	SELF     	1 1 -7	; "Destroy"
+	10	[58]	CALL     	1 2 1
+	11	[59]	SETTABLE 	0 -6 -5	; "wechatHelper" nil
+	12	[60]	GETTABLE 	1 0 -8	; "douyinHelper"
+	13	[60]	SELF     	1 1 -7	; "Destroy"
+	14	[60]	CALL     	1 2 1
+	15	[61]	SETTABLE 	0 -8 -5	; "douyinHelper" nil
+	16	[62]	RETURN   	0 1
+constants (8) for 000001C8D35B2A10:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+	3	"_RemoveHandlers"
+	4	"m_purchaseClient"
+	5	nil
+	6	"wechatHelper"
+	7	"Destroy"
+	8	"douyinHelper"
+locals (1) for 000001C8D35B2A10:
+	0	self	1	17
+upvalues (1) for 000001C8D35B2A10:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:64,66> (4 instructions at 000001C8D35B2B20)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[65]	GETTABLE 	1 0 -1	; "m_SDKManager"
+	2	[65]	GETTABLE 	1 1 -2	; "adManager"
+	3	[65]	RETURN   	1 2
+	4	[66]	RETURN   	0 1
+constants (2) for 000001C8D35B2B20:
+	1	"m_SDKManager"
+	2	"adManager"
+locals (1) for 000001C8D35B2B20:
+	0	self	1	5
+upvalues (0) for 000001C8D35B2B20:
+
+function <SDKHelper.lua:68,70> (2 instructions at 000001C8D35B2BA0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[69]	SETTABLE 	0 -1 1	; "m_appleClientSecret" -
+	2	[70]	RETURN   	0 1
+constants (1) for 000001C8D35B2BA0:
+	1	"m_appleClientSecret"
+locals (2) for 000001C8D35B2BA0:
+	0	self	1	3
+	1	clientSecret	1	3
+upvalues (0) for 000001C8D35B2BA0:
+
+function <SDKHelper.lua:72,76> (7 instructions at 000001C8D35B2C20)
+1 param, 5 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[73]	LOADK    	1 -1	; "+"
+	2	[74]	SELF     	2 0 -2	; "_UpdateHandlers"
+	3	[74]	MOVE     	4 1
+	4	[74]	CALL     	2 3 1
+	5	[75]	GETTABLE 	2 0 -3	; "m_SDKManager"
+	6	[75]	SETTABLE 	2 -4 -5	; "hasRegisterHandlers" true
+	7	[76]	RETURN   	0 1
+constants (5) for 000001C8D35B2C20:
+	1	"+"
+	2	"_UpdateHandlers"
+	3	"m_SDKManager"
+	4	"hasRegisterHandlers"
+	5	true
+locals (2) for 000001C8D35B2C20:
+	0	self	1	8
+	1	SYMBOL	2	8
+upvalues (0) for 000001C8D35B2C20:
+
+function <SDKHelper.lua:78,81> (5 instructions at 000001C8D35AEA30)
+1 param, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[79]	LOADK    	1 -1	; "-"
+	2	[80]	SELF     	2 0 -2	; "_UpdateHandlers"
+	3	[80]	MOVE     	4 1
+	4	[80]	CALL     	2 3 1
+	5	[81]	RETURN   	0 1
+constants (2) for 000001C8D35AEA30:
+	1	"-"
+	2	"_UpdateHandlers"
+locals (2) for 000001C8D35AEA30:
+	0	self	1	6
+	1	SYMBOL	2	6
+upvalues (0) for 000001C8D35AEA30:
+
+function <SDKHelper.lua:83,106> (49 instructions at 000001C8D35AEAB0)
+2 params, 6 slots, 1 upvalue, 2 locals, 20 constants, 0 functions
+	1	[85]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	2	[85]	SELF     	2 2 -2	; "LuaOnPurchased"
+	3	[85]	MOVE     	4 1
+	4	[85]	GETTABLE 	5 0 -3	; "m_funcPurchaseOnPurchasedCallback"
+	5	[85]	CALL     	2 4 1
+	6	[86]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	7	[86]	SELF     	2 2 -4	; "LuaOnRestored"
+	8	[86]	MOVE     	4 1
+	9	[86]	GETTABLE 	5 0 -5	; "m_funcOnRestoredCallback"
+	10	[86]	CALL     	2 4 1
+	11	[87]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	12	[87]	SELF     	2 2 -6	; "LuaOnPurchaseUpdated"
+	13	[87]	MOVE     	4 1
+	14	[87]	GETTABLE 	5 0 -7	; "m_funcPurchaseOnUpdatedCallback"
+	15	[87]	CALL     	2 4 1
+	16	[90]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	17	[90]	SELF     	2 2 -8	; "LuaOnLogin"
+	18	[90]	MOVE     	4 1
+	19	[90]	GETTABLE 	5 0 -9	; "m_funcOnLoginCallback"
+	20	[90]	CALL     	2 4 1
+	21	[93]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	22	[93]	SELF     	2 2 -10	; "LuaOnAdClose"
+	23	[93]	MOVE     	4 1
+	24	[93]	GETTABLE 	5 0 -11	; "m_funcOnAdCloseCallback"
+	25	[93]	CALL     	2 4 1
+	26	[94]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	27	[94]	SELF     	2 2 -12	; "LuaOnAdEarned"
+	28	[94]	MOVE     	4 1
+	29	[94]	GETTABLE 	5 0 -13	; "m_funcOnAdEarnedCallback"
+	30	[94]	CALL     	2 4 1
+	31	[97]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	32	[97]	SELF     	2 2 -14	; "LuaOnMessageCountArrived"
+	33	[97]	MOVE     	4 1
+	34	[97]	GETTABLE 	5 0 -15	; "m_funcOnAiHelpMessageCountArrivedCallback"
+	35	[97]	CALL     	2 4 1
+	36	[100]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	37	[100]	SELF     	2 2 -16	; "LuaOnInstallReferrerReceived"
+	38	[100]	MOVE     	4 1
+	39	[100]	GETTABLE 	5 0 -17	; "m_funcOnInstallReferrerReceivedCallback"
+	40	[100]	CALL     	2 4 1
+	41	[103]	GETTABUP 	2 0 -18	; _ENV "GLOBAL_APP"
+	42	[103]	TEST     	2 0
+	43	[103]	JMP      	0 5	; to 49
+	44	[104]	GETTABLE 	2 0 -1	; "m_SDKManager"
+	45	[104]	SELF     	2 2 -19	; "LuaOnDeepLinkReceived"
+	46	[104]	MOVE     	4 1
+	47	[104]	GETTABLE 	5 0 -20	; "m_funcOnDeepLinkCallback"
+	48	[104]	CALL     	2 4 1
+	49	[106]	RETURN   	0 1
+constants (20) for 000001C8D35AEAB0:
+	1	"m_SDKManager"
+	2	"LuaOnPurchased"
+	3	"m_funcPurchaseOnPurchasedCallback"
+	4	"LuaOnRestored"
+	5	"m_funcOnRestoredCallback"
+	6	"LuaOnPurchaseUpdated"
+	7	"m_funcPurchaseOnUpdatedCallback"
+	8	"LuaOnLogin"
+	9	"m_funcOnLoginCallback"
+	10	"LuaOnAdClose"
+	11	"m_funcOnAdCloseCallback"
+	12	"LuaOnAdEarned"
+	13	"m_funcOnAdEarnedCallback"
+	14	"LuaOnMessageCountArrived"
+	15	"m_funcOnAiHelpMessageCountArrivedCallback"
+	16	"LuaOnInstallReferrerReceived"
+	17	"m_funcOnInstallReferrerReceivedCallback"
+	18	"GLOBAL_APP"
+	19	"LuaOnDeepLinkReceived"
+	20	"m_funcOnDeepLinkCallback"
+locals (2) for 000001C8D35AEAB0:
+	0	self	1	50
+	1	SYMBOL	1	50
+upvalues (1) for 000001C8D35AEAB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:108,114> (6 instructions at 000001C8D35B3D20)
+3 params, 6 slots, 1 upvalue, 4 locals, 2 constants, 1 function
+	1	[109]	SETTABLE 	0 -1 2	; "m_funcPurchaseCallback" -
+	2	[112]	CLOSURE  	3 0	; 000001C8D35B3DA0
+	3	[113]	GETTABUP 	4 0 -2	; _ENV "SafeCall"
+	4	[113]	MOVE     	5 3
+	5	[113]	CALL     	4 2 1
+	6	[114]	RETURN   	0 1
+constants (2) for 000001C8D35B3D20:
+	1	"m_funcPurchaseCallback"
+	2	"SafeCall"
+locals (4) for 000001C8D35B3D20:
+	0	self	1	7
+	1	strParam	1	7
+	2	funcCallback	1	7
+	3	func	3	7
+upvalues (1) for 000001C8D35B3D20:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:110,112> (14 instructions at 000001C8D35B3DA0)
+0 params, 6 slots, 3 upvalues, 0 locals, 7 constants, 0 functions
+	1	[111]	GETTABUP 	0 0 -1	; self "m_purchaseClient"
+	2	[111]	SELF     	0 0 -2	; "Purchase"
+	3	[111]	GETUPVAL 	2 1	; strParam
+	4	[111]	TEST     	2 1
+	5	[111]	JMP      	0 1	; to 7
+	6	[111]	LOADK    	2 -3	; ""
+	7	[111]	GETTABUP 	3 2 -4	; _ENV "tostring"
+	8	[111]	GETTABUP 	4 2 -5	; _ENV "GM"
+	9	[111]	GETTABLE 	4 4 -6	; "UserModel"
+	10	[111]	SELF     	4 4 -7	; "GetUserId"
+	11	[111]	CALL     	4 2 0
+	12	[111]	CALL     	3 0 0
+	13	[111]	CALL     	0 0 1
+	14	[112]	RETURN   	0 1
+constants (7) for 000001C8D35B3DA0:
+	1	"m_purchaseClient"
+	2	"Purchase"
+	3	""
+	4	"tostring"
+	5	"GM"
+	6	"UserModel"
+	7	"GetUserId"
+locals (0) for 000001C8D35B3DA0:
+upvalues (3) for 000001C8D35B3DA0:
+	0	self	1	0
+	1	strParam	1	1
+	2	_ENV	0	0
+
+function <SDKHelper.lua:116,121> (5 instructions at 000001C8D35B3EA0)
+2 params, 5 slots, 1 upvalue, 3 locals, 1 constant, 1 function
+	1	[119]	CLOSURE  	2 0	; 000001C8D35B4AF0
+	2	[120]	GETTABUP 	3 0 -1	; _ENV "SafeCall"
+	3	[120]	MOVE     	4 2
+	4	[120]	CALL     	3 2 1
+	5	[121]	RETURN   	0 1
+constants (1) for 000001C8D35B3EA0:
+	1	"SafeCall"
+locals (3) for 000001C8D35B3EA0:
+	0	self	1	6
+	1	strParam	1	6
+	2	func	2	6
+upvalues (1) for 000001C8D35B3EA0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:117,119> (8 instructions at 000001C8D35B4AF0)
+0 params, 3 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[118]	GETTABUP 	0 0 -1	; self "m_purchaseClient"
+	2	[118]	SELF     	0 0 -2	; "Init"
+	3	[118]	GETUPVAL 	2 1	; strParam
+	4	[118]	TEST     	2 1
+	5	[118]	JMP      	0 1	; to 7
+	6	[118]	LOADK    	2 -3	; ""
+	7	[118]	CALL     	0 3 1
+	8	[119]	RETURN   	0 1
+constants (3) for 000001C8D35B4AF0:
+	1	"m_purchaseClient"
+	2	"Init"
+	3	""
+locals (0) for 000001C8D35B4AF0:
+upvalues (2) for 000001C8D35B4AF0:
+	0	self	1	0
+	1	strParam	1	1
+
+function <SDKHelper.lua:123,130> (7 instructions at 000001C8D35B40F0)
+3 params, 6 slots, 1 upvalue, 4 locals, 3 constants, 1 function
+	1	[124]	SETTABLE 	0 -1 1	; "m_funcRestoreCallback" -
+	2	[125]	SETTABLE 	0 -2 2	; "m_isUserTriggeredRestore" -
+	3	[128]	CLOSURE  	3 0	; 000001C8D35B49F0
+	4	[129]	GETTABUP 	4 0 -3	; _ENV "SafeCall"
+	5	[129]	MOVE     	5 3
+	6	[129]	CALL     	4 2 1
+	7	[130]	RETURN   	0 1
+constants (3) for 000001C8D35B40F0:
+	1	"m_funcRestoreCallback"
+	2	"m_isUserTriggeredRestore"
+	3	"SafeCall"
+locals (4) for 000001C8D35B40F0:
+	0	self	1	8
+	1	restoreCallBack	1	8
+	2	isUserTriggered	1	8
+	3	func	4	8
+upvalues (1) for 000001C8D35B40F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:126,128> (4 instructions at 000001C8D35B49F0)
+0 params, 2 slots, 1 upvalue, 0 locals, 2 constants, 0 functions
+	1	[127]	GETTABUP 	0 0 -1	; self "m_purchaseClient"
+	2	[127]	SELF     	0 0 -2	; "Restore"
+	3	[127]	CALL     	0 2 1
+	4	[128]	RETURN   	0 1
+constants (2) for 000001C8D35B49F0:
+	1	"m_purchaseClient"
+	2	"Restore"
+locals (0) for 000001C8D35B49F0:
+upvalues (1) for 000001C8D35B49F0:
+	0	self	1	0
+
+function <SDKHelper.lua:132,137> (5 instructions at 000001C8D35B4170)
+2 params, 5 slots, 1 upvalue, 3 locals, 1 constant, 1 function
+	1	[135]	CLOSURE  	2 0	; 000001C8D35B4270
+	2	[136]	GETTABUP 	3 0 -1	; _ENV "SafeCall"
+	3	[136]	MOVE     	4 2
+	4	[136]	CALL     	3 2 1
+	5	[137]	RETURN   	0 1
+constants (1) for 000001C8D35B4170:
+	1	"SafeCall"
+locals (3) for 000001C8D35B4170:
+	0	self	1	6
+	1	strParam	1	6
+	2	func	2	6
+upvalues (1) for 000001C8D35B4170:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:133,135> (5 instructions at 000001C8D35B4270)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[134]	GETTABUP 	0 0 -1	; self "m_purchaseClient"
+	2	[134]	SELF     	0 0 -2	; "Finish"
+	3	[134]	GETUPVAL 	2 1	; strParam
+	4	[134]	CALL     	0 3 1
+	5	[135]	RETURN   	0 1
+constants (2) for 000001C8D35B4270:
+	1	"m_purchaseClient"
+	2	"Finish"
+locals (0) for 000001C8D35B4270:
+upvalues (2) for 000001C8D35B4270:
+	0	self	1	0
+	1	strParam	1	1
+
+function <SDKHelper.lua:140,298> (19 instructions at 000001C8D35B4C70)
+1 param, 2 slots, 1 upvalue, 1 local, 9 constants, 9 functions
+	1	[183]	CLOSURE  	1 0	; 000001C8D35B4E70
+	2	[183]	SETTABLE 	0 -1 1	; "m_funcPurchaseOnPurchasedCallback" -
+	3	[212]	CLOSURE  	1 1	; 000001C8D35B4770
+	4	[212]	SETTABLE 	0 -2 1	; "m_funcOnRestoredCallback" -
+	5	[223]	CLOSURE  	1 2	; 000001C8D35B4A70
+	6	[223]	SETTABLE 	0 -3 1	; "m_funcPurchaseOnUpdatedCallback" -
+	7	[237]	CLOSURE  	1 3	; 000001C8D35B46F0
+	8	[237]	SETTABLE 	0 -4 1	; "m_funcOnLoginCallback" -
+	9	[256]	CLOSURE  	1 4	; 000001C8D35B4870
+	10	[256]	SETTABLE 	0 -5 1	; "m_funcOnAdCloseCallback" -
+	11	[270]	CLOSURE  	1 5	; 000001C8D35B47F0
+	12	[270]	SETTABLE 	0 -6 1	; "m_funcOnAdEarnedCallback" -
+	13	[275]	CLOSURE  	1 6	; 000001C8D35B42F0
+	14	[275]	SETTABLE 	0 -7 1	; "m_funcOnAiHelpMessageCountArrivedCallback" -
+	15	[279]	CLOSURE  	1 7	; 000001C8D35B3F70
+	16	[279]	SETTABLE 	0 -8 1	; "m_funcOnInstallReferrerReceivedCallback" -
+	17	[297]	CLOSURE  	1 8	; 000001C8D35B41F0
+	18	[297]	SETTABLE 	0 -9 1	; "m_funcOnDeepLinkCallback" -
+	19	[298]	RETURN   	0 1
+constants (9) for 000001C8D35B4C70:
+	1	"m_funcPurchaseOnPurchasedCallback"
+	2	"m_funcOnRestoredCallback"
+	3	"m_funcPurchaseOnUpdatedCallback"
+	4	"m_funcOnLoginCallback"
+	5	"m_funcOnAdCloseCallback"
+	6	"m_funcOnAdEarnedCallback"
+	7	"m_funcOnAiHelpMessageCountArrivedCallback"
+	8	"m_funcOnInstallReferrerReceivedCallback"
+	9	"m_funcOnDeepLinkCallback"
+locals (1) for 000001C8D35B4C70:
+	0	self	1	20
+upvalues (1) for 000001C8D35B4C70:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:141,183> (117 instructions at 000001C8D35B4E70)
+2 params, 16 slots, 2 upvalues, 5 locals, 44 constants, 0 functions
+	1	[142]	NEWTABLE 	2 13 0
+	2	[143]	LOADK    	3 -1	; "purchaseClient:OnPurchased"
+	3	[144]	LOADK    	4 -2	; "\nPurchaseStatus = "
+	4	[145]	GETTABLE 	5 1 -3	; "PurchaseStatus"
+	5	[145]	TEST     	5 1
+	6	[145]	JMP      	0 1	; to 8
+	7	[145]	LOADK    	5 -4	; "nil"
+	8	[146]	LOADK    	6 -5	; "\nProductId = "
+	9	[147]	GETTABLE 	7 1 -6	; "ProductId"
+	10	[147]	TEST     	7 1
+	11	[147]	JMP      	0 1	; to 13
+	12	[147]	LOADK    	7 -4	; "nil"
+	13	[148]	LOADK    	8 -7	; "\nMessage = "
+	14	[149]	GETTABLE 	9 1 -8	; "Message"
+	15	[149]	TEST     	9 1
+	16	[149]	JMP      	0 1	; to 18
+	17	[149]	LOADK    	9 -4	; "nil"
+	18	[150]	LOADK    	10 -9	; "\nData = "
+	19	[151]	GETTABLE 	11 1 -10	; "Data"
+	20	[151]	TEST     	11 1
+	21	[151]	JMP      	0 1	; to 23
+	22	[151]	LOADK    	11 -4	; "nil"
+	23	[152]	LOADK    	12 -11	; "\nSignature = "
+	24	[153]	GETTABLE 	13 1 -12	; "Signature"
+	25	[153]	TEST     	13 1
+	26	[153]	JMP      	0 1	; to 28
+	27	[153]	LOADK    	13 -4	; "nil"
+	28	[154]	LOADK    	14 -13	; "\nOrderId = "
+	29	[155]	GETTABLE 	15 1 -14	; "OrderId"
+	30	[155]	TEST     	15 1
+	31	[155]	JMP      	0 1	; to 33
+	32	[156]	LOADK    	15 -4	; "nil"
+	33	[156]	SETLIST  	2 13 1	; 1
+	34	[157]	GETTABUP 	3 0 -15	; _ENV "Log"
+	35	[157]	GETTABLE 	3 3 -16	; "Info"
+	36	[157]	GETTABUP 	4 0 -17	; _ENV "table"
+	37	[157]	GETTABLE 	4 4 -18	; "concat"
+	38	[157]	MOVE     	5 2
+	39	[157]	CALL     	4 2 2
+	40	[157]	GETTABUP 	5 0 -19	; _ENV "LogTag"
+	41	[157]	GETTABLE 	5 5 -20	; "Purchase"
+	42	[157]	CALL     	3 3 1
+	43	[159]	GETTABUP 	3 1 -21	; self "m_funcPurchaseCallback"
+	44	[159]	TEST     	3 0
+	45	[159]	JMP      	0 71	; to 117
+	46	[160]	GETTABUP 	3 0 -22	; _ENV "GameConfig"
+	47	[160]	GETTABLE 	3 3 -23	; "CURRENT_PLATFORM"
+	48	[160]	GETTABUP 	4 0 -24	; _ENV "Channels"
+	49	[160]	GETTABLE 	4 4 -25	; "GOOGLEPLAY"
+	50	[160]	SELF     	4 4 -26	; "GetValue"
+	51	[160]	CALL     	4 2 2
+	52	[160]	EQ       	0 3 4
+	53	[160]	JMP      	0 39	; to 93
+	54	[160]	GETTABLE 	3 1 -3	; "PurchaseStatus"
+	55	[160]	GETTABUP 	4 0 -27	; _ENV "EPurchaseResultStatus"
+	56	[160]	GETTABLE 	4 4 -28	; "Success"
+	57	[160]	EQ       	0 3 4
+	58	[160]	JMP      	0 34	; to 93
+	59	[164]	GETTABUP 	3 0 -29	; _ENV "json"
+	60	[164]	GETTABLE 	3 3 -30	; "decode"
+	61	[164]	GETTABLE 	4 1 -10	; "Data"
+	62	[164]	CALL     	3 2 2
+	63	[164]	TEST     	3 1
+	64	[164]	JMP      	0 1	; to 66
+	65	[164]	NEWTABLE 	3 0 0
+	66	[165]	GETTABLE 	4 3 -31	; "purchaseToken"
+	67	[166]	GETTABUP 	5 0 -32	; _ENV "StringUtil"
+	68	[166]	GETTABLE 	5 5 -33	; "IsNilOrEmpty"
+	69	[166]	MOVE     	6 4
+	70	[166]	CALL     	5 2 2
+	71	[166]	TEST     	5 1
+	72	[166]	JMP      	0 20	; to 93
+	73	[167]	GETTABUP 	5 0 -34	; _ENV "Table"
+	74	[167]	GETTABLE 	5 5 -35	; "Contain"
+	75	[167]	GETTABUP 	6 1 -36	; self "m_purchaseTokens"
+	76	[167]	MOVE     	7 4
+	77	[167]	CALL     	5 3 2
+	78	[167]	TEST     	5 0
+	79	[167]	JMP      	0 8	; to 88
+	80	[168]	GETTABUP 	5 0 -37	; _ENV "GM"
+	81	[168]	GETTABLE 	5 5 -38	; "BIManager"
+	82	[168]	SELF     	5 5 -39	; "LogAction"
+	83	[168]	GETTABUP 	7 0 -40	; _ENV "EBIType"
+	84	[168]	GETTABLE 	7 7 -41	; "IAPOrderUpdate"
+	85	[168]	MOVE     	8 3
+	86	[168]	CALL     	5 4 1
+	87	[169]	RETURN   	0 1
+	88	[171]	GETTABUP 	5 1 -36	; self "m_purchaseTokens"
+	89	[171]	GETTABUP 	6 1 -36	; self "m_purchaseTokens"
+	90	[171]	LEN      	6 6
+	91	[171]	ADD      	6 6 -42	; - 1
+	92	[171]	SETTABLE 	5 6 4
+	93	[175]	GETTABUP 	3 1 -21	; self "m_funcPurchaseCallback"
+	94	[175]	GETTABLE 	4 1 -3	; "PurchaseStatus"
+	95	[176]	GETTABLE 	5 1 -6	; "ProductId"
+	96	[176]	TEST     	5 1
+	97	[176]	JMP      	0 1	; to 99
+	98	[176]	LOADK    	5 -43	; ""
+	99	[177]	GETTABLE 	6 1 -8	; "Message"
+	100	[177]	TEST     	6 1
+	101	[177]	JMP      	0 1	; to 103
+	102	[177]	LOADK    	6 -43	; ""
+	103	[178]	GETTABLE 	7 1 -10	; "Data"
+	104	[178]	TEST     	7 1
+	105	[178]	JMP      	0 1	; to 107
+	106	[178]	LOADK    	7 -43	; ""
+	107	[179]	GETTABLE 	8 1 -12	; "Signature"
+	108	[179]	TEST     	8 1
+	109	[179]	JMP      	0 1	; to 111
+	110	[179]	LOADK    	8 -43	; ""
+	111	[180]	GETTABLE 	9 1 -14	; "OrderId"
+	112	[180]	TEST     	9 1
+	113	[180]	JMP      	0 1	; to 115
+	114	[180]	LOADK    	9 -43	; ""
+	115	[175]	CALL     	3 7 1
+	116	[181]	SETTABUP 	1 -21 -44	; self "m_funcPurchaseCallback" nil
+	117	[183]	RETURN   	0 1
+constants (44) for 000001C8D35B4E70:
+	1	"purchaseClient:OnPurchased"
+	2	"\nPurchaseStatus = "
+	3	"PurchaseStatus"
+	4	"nil"
+	5	"\nProductId = "
+	6	"ProductId"
+	7	"\nMessage = "
+	8	"Message"
+	9	"\nData = "
+	10	"Data"
+	11	"\nSignature = "
+	12	"Signature"
+	13	"\nOrderId = "
+	14	"OrderId"
+	15	"Log"
+	16	"Info"
+	17	"table"
+	18	"concat"
+	19	"LogTag"
+	20	"Purchase"
+	21	"m_funcPurchaseCallback"
+	22	"GameConfig"
+	23	"CURRENT_PLATFORM"
+	24	"Channels"
+	25	"GOOGLEPLAY"
+	26	"GetValue"
+	27	"EPurchaseResultStatus"
+	28	"Success"
+	29	"json"
+	30	"decode"
+	31	"purchaseToken"
+	32	"StringUtil"
+	33	"IsNilOrEmpty"
+	34	"Table"
+	35	"Contain"
+	36	"m_purchaseTokens"
+	37	"GM"
+	38	"BIManager"
+	39	"LogAction"
+	40	"EBIType"
+	41	"IAPOrderUpdate"
+	42	1
+	43	""
+	44	nil
+locals (5) for 000001C8D35B4E70:
+	0	client	1	118
+	1	PurchaseEventArgs	1	118
+	2	logMsg	34	118
+	3	tbData	66	93
+	4	purchaseToken	67	93
+upvalues (2) for 000001C8D35B4E70:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <SDKHelper.lua:185,212> (74 instructions at 000001C8D35B4770)
+2 params, 16 slots, 2 upvalues, 3 locals, 24 constants, 0 functions
+	1	[186]	NEWTABLE 	2 13 0
+	2	[187]	LOADK    	3 -1	; "purchaseClient:OnRestored"
+	3	[188]	LOADK    	4 -2	; "\nPurchaseStatus = "
+	4	[189]	GETTABLE 	5 1 -3	; "PurchaseStatus"
+	5	[189]	TEST     	5 1
+	6	[189]	JMP      	0 1	; to 8
+	7	[189]	LOADK    	5 -4	; "nil"
+	8	[190]	LOADK    	6 -5	; "\nProductId = "
+	9	[191]	GETTABLE 	7 1 -6	; "ProductId"
+	10	[191]	TEST     	7 1
+	11	[191]	JMP      	0 1	; to 13
+	12	[191]	LOADK    	7 -4	; "nil"
+	13	[192]	LOADK    	8 -7	; "\nMessage = "
+	14	[193]	GETTABLE 	9 1 -8	; "Message"
+	15	[193]	TEST     	9 1
+	16	[193]	JMP      	0 1	; to 18
+	17	[193]	LOADK    	9 -4	; "nil"
+	18	[194]	LOADK    	10 -9	; "\nData = "
+	19	[195]	GETTABLE 	11 1 -10	; "Data"
+	20	[195]	TEST     	11 1
+	21	[195]	JMP      	0 1	; to 23
+	22	[195]	LOADK    	11 -4	; "nil"
+	23	[196]	LOADK    	12 -11	; "\nSignature = "
+	24	[197]	GETTABLE 	13 1 -12	; "Signature"
+	25	[197]	TEST     	13 1
+	26	[197]	JMP      	0 1	; to 28
+	27	[197]	LOADK    	13 -4	; "nil"
+	28	[198]	LOADK    	14 -13	; "\nOrderId = "
+	29	[199]	GETTABLE 	15 1 -14	; "OrderId"
+	30	[199]	TEST     	15 1
+	31	[199]	JMP      	0 1	; to 33
+	32	[200]	LOADK    	15 -4	; "nil"
+	33	[200]	SETLIST  	2 13 1	; 1
+	34	[201]	GETTABUP 	3 0 -15	; _ENV "Log"
+	35	[201]	GETTABLE 	3 3 -16	; "Info"
+	36	[201]	GETTABUP 	4 0 -17	; _ENV "table"
+	37	[201]	GETTABLE 	4 4 -18	; "concat"
+	38	[201]	MOVE     	5 2
+	39	[201]	CALL     	4 2 2
+	40	[201]	GETTABUP 	5 0 -19	; _ENV "LogTag"
+	41	[201]	GETTABLE 	5 5 -20	; "Purchase"
+	42	[201]	CALL     	3 3 1
+	43	[202]	GETTABUP 	3 1 -21	; self "m_funcRestoreCallback"
+	44	[202]	TEST     	3 0
+	45	[202]	JMP      	0 28	; to 74
+	46	[203]	GETTABUP 	3 1 -21	; self "m_funcRestoreCallback"
+	47	[203]	GETTABLE 	4 1 -3	; "PurchaseStatus"
+	48	[204]	GETTABLE 	5 1 -6	; "ProductId"
+	49	[204]	TEST     	5 1
+	50	[204]	JMP      	0 1	; to 52
+	51	[204]	LOADK    	5 -22	; ""
+	52	[205]	GETTABLE 	6 1 -8	; "Message"
+	53	[205]	TEST     	6 1
+	54	[205]	JMP      	0 1	; to 56
+	55	[205]	LOADK    	6 -22	; ""
+	56	[206]	GETTABLE 	7 1 -10	; "Data"
+	57	[206]	TEST     	7 1
+	58	[206]	JMP      	0 1	; to 60
+	59	[206]	LOADK    	7 -22	; ""
+	60	[207]	GETTABLE 	8 1 -12	; "Signature"
+	61	[207]	TEST     	8 1
+	62	[207]	JMP      	0 1	; to 64
+	63	[207]	LOADK    	8 -22	; ""
+	64	[208]	GETTABLE 	9 1 -14	; "OrderId"
+	65	[208]	TEST     	9 1
+	66	[208]	JMP      	0 1	; to 68
+	67	[208]	LOADK    	9 -22	; ""
+	68	[209]	GETTABUP 	10 1 -23	; self "m_isUserTriggeredRestore"
+	69	[209]	TEST     	10 1
+	70	[209]	JMP      	0 1	; to 72
+	71	[209]	LOADBOOL 	10 0 0
+	72	[203]	CALL     	3 8 1
+	73	[210]	SETTABUP 	1 -23 -24	; self "m_isUserTriggeredRestore" nil
+	74	[212]	RETURN   	0 1
+constants (24) for 000001C8D35B4770:
+	1	"purchaseClient:OnRestored"
+	2	"\nPurchaseStatus = "
+	3	"PurchaseStatus"
+	4	"nil"
+	5	"\nProductId = "
+	6	"ProductId"
+	7	"\nMessage = "
+	8	"Message"
+	9	"\nData = "
+	10	"Data"
+	11	"\nSignature = "
+	12	"Signature"
+	13	"\nOrderId = "
+	14	"OrderId"
+	15	"Log"
+	16	"Info"
+	17	"table"
+	18	"concat"
+	19	"LogTag"
+	20	"Purchase"
+	21	"m_funcRestoreCallback"
+	22	""
+	23	"m_isUserTriggeredRestore"
+	24	nil
+locals (3) for 000001C8D35B4770:
+	0	client	1	75
+	1	PurchaseEventArgs	1	75
+	2	logMsg	34	75
+upvalues (2) for 000001C8D35B4770:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <SDKHelper.lua:214,223> (17 instructions at 000001C8D35B4A70)
+2 params, 6 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[215]	NEWTABLE 	2 3 0
+	2	[216]	LOADK    	3 -1	; "purchaseClient:OnUpdated"
+	3	[217]	LOADK    	4 -2	; "\nMessage = "
+	4	[218]	GETTABLE 	5 1 -3	; "Message"
+	5	[218]	TEST     	5 1
+	6	[218]	JMP      	0 1	; to 8
+	7	[219]	LOADK    	5 -4	; "nil"
+	8	[219]	SETLIST  	2 3 1	; 1
+	9	[222]	GETTABUP 	3 0 -5	; _ENV "GM"
+	10	[222]	GETTABLE 	3 3 -6	; "InAppPurchaseModel"
+	11	[222]	SELF     	3 3 -7	; "UpdateInAppPurchaseData"
+	12	[222]	GETTABLE 	5 1 -3	; "Message"
+	13	[222]	TEST     	5 1
+	14	[222]	JMP      	0 1	; to 16
+	15	[222]	LOADK    	5 -8	; ""
+	16	[222]	CALL     	3 3 1
+	17	[223]	RETURN   	0 1
+constants (8) for 000001C8D35B4A70:
+	1	"purchaseClient:OnUpdated"
+	2	"\nMessage = "
+	3	"Message"
+	4	"nil"
+	5	"GM"
+	6	"InAppPurchaseModel"
+	7	"UpdateInAppPurchaseData"
+	8	""
+locals (3) for 000001C8D35B4A70:
+	0	client	1	18
+	1	MessageEventArgs	1	18
+	2	logMsg	9	18
+upvalues (1) for 000001C8D35B4A70:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:225,237> (25 instructions at 000001C8D35B46F0)
+2 params, 7 slots, 2 upvalues, 4 locals, 8 constants, 0 functions
+	1	[226]	GETTABLE 	2 1 -1	; "Result"
+	2	[227]	GETTABUP 	3 0 -2	; _ENV "GM"
+	3	[227]	GETTABLE 	3 3 -3	; "AccountManager"
+	4	[227]	GETTABLE 	3 3 -4	; "eCurrentLoginSocialType"
+	5	[229]	TEST     	3 1
+	6	[229]	JMP      	0 1	; to 8
+	7	[230]	RETURN   	0 1
+	8	[232]	TEST     	2 0
+	9	[232]	JMP      	0 11	; to 21
+	10	[232]	TEST     	3 0
+	11	[232]	JMP      	0 9	; to 21
+	12	[232]	GETTABUP 	4 0 -5	; _ENV "ESsoSocialType"
+	13	[232]	GETTABLE 	4 4 -6	; "Apple"
+	14	[232]	EQ       	0 3 4
+	15	[232]	JMP      	0 5	; to 21
+	16	[233]	GETUPVAL 	4 1	; self
+	17	[233]	SELF     	4 4 -7	; "AppleGenerateToken"
+	18	[233]	MOVE     	6 1
+	19	[233]	CALL     	4 3 1
+	20	[233]	JMP      	0 4	; to 25
+	21	[235]	GETUPVAL 	4 1	; self
+	22	[235]	SELF     	4 4 -8	; "LoginHandler"
+	23	[235]	MOVE     	6 1
+	24	[235]	CALL     	4 3 1
+	25	[237]	RETURN   	0 1
+constants (8) for 000001C8D35B46F0:
+	1	"Result"
+	2	"GM"
+	3	"AccountManager"
+	4	"eCurrentLoginSocialType"
+	5	"ESsoSocialType"
+	6	"Apple"
+	7	"AppleGenerateToken"
+	8	"LoginHandler"
+locals (4) for 000001C8D35B46F0:
+	0	manager	1	26
+	1	LoginEventArgs	1	26
+	2	result	2	26
+	3	eSocialType	5	26
+upvalues (2) for 000001C8D35B46F0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <SDKHelper.lua:239,256> (58 instructions at 000001C8D35B4870)
+2 params, 8 slots, 2 upvalues, 3 locals, 30 constants, 2 functions
+	1	[240]	NEWTABLE 	2 5 0
+	2	[241]	LOADK    	3 -1	; "OnAdClose"
+	3	[242]	LOADK    	4 -2	; "\nReward = "
+	4	[243]	GETTABLE 	5 1 -3	; "Reward"
+	5	[243]	TEST     	5 0
+	6	[243]	JMP      	0 3	; to 10
+	7	[243]	LOADK    	5 -4	; "true"
+	8	[243]	TEST     	5 1
+	9	[243]	JMP      	0 1	; to 11
+	10	[243]	LOADK    	5 -5	; "false"
+	11	[244]	LOADK    	6 -6	; "\nMessage = "
+	12	[245]	GETTABLE 	7 1 -7	; "Message"
+	13	[245]	TEST     	7 1
+	14	[245]	JMP      	0 1	; to 16
+	15	[246]	LOADK    	7 -8	; "nil"
+	16	[246]	SETLIST  	2 5 1	; 1
+	17	[247]	GETTABUP 	3 0 -9	; _ENV "Log"
+	18	[247]	GETTABLE 	3 3 -10	; "Info"
+	19	[247]	GETTABUP 	4 0 -11	; _ENV "table"
+	20	[247]	GETTABLE 	4 4 -12	; "concat"
+	21	[247]	MOVE     	5 2
+	22	[247]	CALL     	4 2 0
+	23	[247]	CALL     	3 0 1
+	24	[249]	GETTABUP 	3 0 -13	; _ENV "GameConfig"
+	25	[249]	GETTABLE 	3 3 -14	; "IsTestMode"
+	26	[249]	CALL     	3 1 2
+	27	[249]	TEST     	3 0
+	28	[249]	JMP      	0 24	; to 53
+	29	[249]	GETTABUP 	3 0 -15	; _ENV "PlayerPrefs"
+	30	[249]	GETTABLE 	3 3 -16	; "GetInt"
+	31	[249]	GETTABUP 	4 0 -17	; _ENV "EPlayerPrefKey"
+	32	[249]	GETTABLE 	4 4 -18	; "TestDelayAdEnd"
+	33	[249]	LOADK    	5 -19	; 0
+	34	[249]	CALL     	3 3 2
+	35	[249]	EQ       	0 3 -20	; - 1
+	36	[249]	JMP      	0 16	; to 53
+	37	[250]	GETTABUP 	3 0 -21	; _ENV "GM"
+	38	[250]	GETTABLE 	3 3 -22	; "UIManager"
+	39	[250]	SELF     	3 3 -23	; "ShowPrompt"
+	40	[250]	LOADK    	5 -24	; "\232\167\166\229\143\145\229\185\191\229\145\138\230\136\144\229\138\159\229\155\158\232\176\131\229\187\182\230\151\182\230\137\167\232\161\140\239\188\14015\231\167\146\229\144\142\230\137\167\232\161\140"
+	41	[250]	CALL     	3 3 1
+	42	[251]	GETTABUP 	3 0 -25	; _ENV "DelayExecuteFunc"
+	43	[251]	CLOSURE  	4 0	; 000001C8D35B43F0
+	44	[251]	LOADK    	5 -26	; 10
+	45	[251]	GETUPVAL 	6 1	; self
+	46	[251]	CALL     	3 4 1
+	47	[252]	GETTABUP 	3 0 -25	; _ENV "DelayExecuteFunc"
+	48	[252]	CLOSURE  	4 1	; 000001C8D35B4470
+	49	[252]	LOADK    	5 -27	; 15
+	50	[252]	GETUPVAL 	6 1	; self
+	51	[252]	CALL     	3 4 1
+	52	[252]	JMP      	0 5	; to 58
+	53	[254]	GETTABUP 	3 0 -28	; _ENV "GM"
+	54	[254]	GETTABLE 	3 3 -29	; "AdModel"
+	55	[254]	SELF     	3 3 -30	; "OnAdEnd"
+	56	[254]	MOVE     	5 1
+	57	[254]	CALL     	3 3 1
+	58	[256]	RETURN   	0 1
+constants (30) for 000001C8D35B4870:
+	1	"OnAdClose"
+	2	"\nReward = "
+	3	"Reward"
+	4	"true"
+	5	"false"
+	6	"\nMessage = "
+	7	"Message"
+	8	"nil"
+	9	"Log"
+	10	"Info"
+	11	"table"
+	12	"concat"
+	13	"GameConfig"
+	14	"IsTestMode"
+	15	"PlayerPrefs"
+	16	"GetInt"
+	17	"EPlayerPrefKey"
+	18	"TestDelayAdEnd"
+	19	0
+	20	1
+	21	"GM"
+	22	"UIManager"
+	23	"ShowPrompt"
+	24	"\232\167\166\229\143\145\229\185\191\229\145\138\230\136\144\229\138\159\229\155\158\232\176\131\229\187\182\230\151\182\230\137\167\232\161\140\239\188\14015\231\167\146\229\144\142\230\137\167\232\161\140"
+	25	"DelayExecuteFunc"
+	26	10
+	27	15
+	28	"GM"
+	29	"AdModel"
+	30	"OnAdEnd"
+locals (3) for 000001C8D35B4870:
+	0	manager	1	59
+	1	adCloseEventArgs	1	59
+	2	logMsg	17	59
+upvalues (2) for 000001C8D35B4870:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <SDKHelper.lua:251,251> (6 instructions at 000001C8D35B43F0)
+0 params, 3 slots, 1 upvalue, 0 locals, 4 constants, 0 functions
+	1	[251]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[251]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[251]	SELF     	0 0 -3	; "ShowPrompt"
+	4	[251]	LOADK    	2 -4	; "\229\185\191\229\145\138\230\136\144\229\138\159\229\155\158\232\176\1315\231\167\146\229\144\142\230\137\167\232\161\140"
+	5	[251]	CALL     	0 3 1
+	6	[251]	RETURN   	0 1
+constants (4) for 000001C8D35B43F0:
+	1	"GM"
+	2	"UIManager"
+	3	"ShowPrompt"
+	4	"\229\185\191\229\145\138\230\136\144\229\138\159\229\155\158\232\176\1315\231\167\146\229\144\142\230\137\167\232\161\140"
+locals (0) for 000001C8D35B43F0:
+upvalues (1) for 000001C8D35B43F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:252,252> (6 instructions at 000001C8D35B4470)
+0 params, 3 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[252]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[252]	GETTABLE 	0 0 -2	; "AdModel"
+	3	[252]	SELF     	0 0 -3	; "OnAdEnd"
+	4	[252]	GETUPVAL 	2 1	; adCloseEventArgs
+	5	[252]	CALL     	0 3 1
+	6	[252]	RETURN   	0 1
+constants (3) for 000001C8D35B4470:
+	1	"GM"
+	2	"AdModel"
+	3	"OnAdEnd"
+locals (0) for 000001C8D35B4470:
+upvalues (2) for 000001C8D35B4470:
+	0	_ENV	0	0
+	1	adCloseEventArgs	1	1
+
+function <SDKHelper.lua:258,270> (28 instructions at 000001C8D35B47F0)
+2 params, 6 slots, 1 upvalue, 3 locals, 12 constants, 0 functions
+	1	[259]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[259]	EQ       	1 2 -2	; - nil
+	3	[259]	JMP      	0 6	; to 10
+	4	[259]	GETTABUP 	2 0 -1	; _ENV "GM"
+	5	[259]	GETTABLE 	2 2 -3	; "GameModel"
+	6	[259]	SELF     	2 2 -4	; "HasServerTime"
+	7	[259]	CALL     	2 2 2
+	8	[259]	TEST     	2 1
+	9	[259]	JMP      	0 1	; to 11
+	10	[260]	RETURN   	0 1
+	11	[263]	NEWTABLE 	2 3 0
+	12	[264]	LOADK    	3 -5	; "OnAdEarned"
+	13	[265]	LOADK    	4 -6	; "\nData = "
+	14	[267]	GETTABLE 	5 1 -7	; "data"
+	15	[267]	SETLIST  	2 3 1	; 1
+	16	[268]	GETTABUP 	3 0 -8	; _ENV "Log"
+	17	[268]	GETTABLE 	3 3 -9	; "Info"
+	18	[268]	GETTABUP 	4 0 -10	; _ENV "table"
+	19	[268]	GETTABLE 	4 4 -11	; "concat"
+	20	[268]	MOVE     	5 2
+	21	[268]	CALL     	4 2 0
+	22	[268]	CALL     	3 0 1
+	23	[269]	GETTABUP 	3 0 -1	; _ENV "GM"
+	24	[269]	GETTABLE 	3 3 -12	; "AdModel"
+	25	[269]	SELF     	3 3 -5	; "OnAdEarned"
+	26	[269]	MOVE     	5 1
+	27	[269]	CALL     	3 3 1
+	28	[270]	RETURN   	0 1
+constants (12) for 000001C8D35B47F0:
+	1	"GM"
+	2	nil
+	3	"GameModel"
+	4	"HasServerTime"
+	5	"OnAdEarned"
+	6	"\nData = "
+	7	"data"
+	8	"Log"
+	9	"Info"
+	10	"table"
+	11	"concat"
+	12	"AdModel"
+locals (3) for 000001C8D35B47F0:
+	0	manager	1	29
+	1	adEarnedEventArgs	1	29
+	2	logMsg	16	29
+upvalues (1) for 000001C8D35B47F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:272,275> (12 instructions at 000001C8D35B42F0)
+2 params, 4 slots, 2 upvalues, 2 locals, 7 constants, 0 functions
+	1	[273]	GETTABLE 	2 1 -2	; "Count"
+	2	[273]	LT       	1 -3 2	; 0 -
+	3	[273]	JMP      	0 1	; to 5
+	4	[273]	LOADBOOL 	2 0 1
+	5	[273]	LOADBOOL 	2 1 0
+	6	[273]	SETTABUP 	0 -1 2	; self "m_bHasUnreadCSMsg"
+	7	[274]	GETTABUP 	2 1 -4	; _ENV "EventDispatcher"
+	8	[274]	GETTABLE 	2 2 -5	; "DispatchEvent"
+	9	[274]	GETTABUP 	3 1 -6	; _ENV "EEventType"
+	10	[274]	GETTABLE 	3 3 -7	; "RefreshSettingStrongTip"
+	11	[274]	CALL     	2 2 1
+	12	[275]	RETURN   	0 1
+constants (7) for 000001C8D35B42F0:
+	1	"m_bHasUnreadCSMsg"
+	2	"Count"
+	3	0
+	4	"EventDispatcher"
+	5	"DispatchEvent"
+	6	"EEventType"
+	7	"RefreshSettingStrongTip"
+locals (2) for 000001C8D35B42F0:
+	0	manager	1	13
+	1	args	1	13
+upvalues (2) for 000001C8D35B42F0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <SDKHelper.lua:277,279> (5 instructions at 000001C8D35B3F70)
+2 params, 4 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[278]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[278]	GETTABLE 	2 2 -2	; "Info"
+	3	[278]	LOADK    	3 -3	; "InstallReferrer Callback"
+	4	[278]	CALL     	2 2 1
+	5	[279]	RETURN   	0 1
+constants (3) for 000001C8D35B3F70:
+	1	"Log"
+	2	"Info"
+	3	"InstallReferrer Callback"
+locals (2) for 000001C8D35B3F70:
+	0	manager	1	6
+	1	args	1	6
+upvalues (1) for 000001C8D35B3F70:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:282,297> (33 instructions at 000001C8D35B41F0)
+2 params, 7 slots, 1 upvalue, 4 locals, 15 constants, 0 functions
+	1	[283]	NEWTABLE 	2 3 0
+	2	[284]	LOADK    	3 -1	; "AppsFlyerManager OnDeepLinkCallback:"
+	3	[285]	LOADK    	4 -2	; "\ndeepLinkData = "
+	4	[286]	GETTABLE 	5 1 -3	; "deepLinkData"
+	5	[286]	TEST     	5 1
+	6	[286]	JMP      	0 1	; to 8
+	7	[287]	LOADK    	5 -4	; "nil"
+	8	[287]	SETLIST  	2 3 1	; 1
+	9	[288]	GETTABUP 	3 0 -5	; _ENV "Log"
+	10	[288]	GETTABLE 	3 3 -6	; "Info"
+	11	[288]	GETTABUP 	4 0 -7	; _ENV "table"
+	12	[288]	GETTABLE 	4 4 -8	; "concat"
+	13	[288]	MOVE     	5 2
+	14	[288]	CALL     	4 2 2
+	15	[288]	GETTABUP 	5 0 -9	; _ENV "LogTag"
+	16	[288]	GETTABLE 	5 5 -10	; "Default"
+	17	[288]	CALL     	3 3 1
+	18	[290]	EQ       	1 1 -11	; - nil
+	19	[290]	JMP      	0 6	; to 26
+	20	[291]	GETTABLE 	3 1 -3	; "deepLinkData"
+	21	[291]	EQ       	1 3 -11	; - nil
+	22	[291]	JMP      	0 3	; to 26
+	23	[292]	GETTABLE 	3 1 -3	; "deepLinkData"
+	24	[292]	EQ       	0 3 -12	; - "null"
+	25	[292]	JMP      	0 1	; to 27
+	26	[293]	RETURN   	0 1
+	27	[295]	GETTABLE 	3 1 -3	; "deepLinkData"
+	28	[296]	GETTABUP 	4 0 -13	; _ENV "GM"
+	29	[296]	GETTABLE 	4 4 -14	; "ShareLinkModel"
+	30	[296]	SELF     	4 4 -15	; "SetShareLinkData"
+	31	[296]	MOVE     	6 3
+	32	[296]	CALL     	4 3 1
+	33	[297]	RETURN   	0 1
+constants (15) for 000001C8D35B41F0:
+	1	"AppsFlyerManager OnDeepLinkCallback:"
+	2	"\ndeepLinkData = "
+	3	"deepLinkData"
+	4	"nil"
+	5	"Log"
+	6	"Info"
+	7	"table"
+	8	"concat"
+	9	"LogTag"
+	10	"Default"
+	11	nil
+	12	"null"
+	13	"GM"
+	14	"ShareLinkModel"
+	15	"SetShareLinkData"
+locals (4) for 000001C8D35B41F0:
+	0	manager	1	34
+	1	args	1	34
+	2	logMsg	9	34
+	3	data	28	34
+upvalues (1) for 000001C8D35B41F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:300,354> (121 instructions at 000001C8D35B48F0)
+3 params, 35 slots, 1 upvalue, 15 locals, 37 constants, 0 functions
+	1	[301]	GETTABLE 	3 1 -1	; "Result"
+	2	[302]	GETTABLE 	4 1 -2	; "UserId"
+	3	[303]	GETTABLE 	5 1 -3	; "AuthCode"
+	4	[304]	GETTABLE 	6 1 -4	; "AccessToken"
+	5	[305]	GETTABLE 	7 1 -5	; "Name"
+	6	[306]	GETTABLE 	8 1 -6	; "Email"
+	7	[307]	GETTABLE 	9 1 -7	; "Picture"
+	8	[308]	GETTABLE 	10 1 -8	; "RawResult"
+	9	[309]	GETTABLE 	11 1 -9	; "Log"
+	10	[310]	GETTABUP 	12 0 -10	; _ENV "GM"
+	11	[310]	GETTABLE 	12 12 -11	; "AccountManager"
+	12	[310]	GETTABLE 	12 12 -12	; "eCurrentLoginSocialType"
+	13	[312]	TEST     	12 1
+	14	[312]	JMP      	0 1	; to 16
+	15	[313]	RETURN   	0 1
+	16	[315]	NEWTABLE 	13 19 0
+	17	[316]	LOADK    	14 -13	; "SDKHelper:OnLoginCallback"
+	18	[317]	LOADK    	15 -14	; "\nResult = "
+	19	[318]	GETTABUP 	16 0 -15	; _ENV "tostring"
+	20	[318]	MOVE     	17 3
+	21	[318]	CALL     	16 2 2
+	22	[318]	TEST     	16 1
+	23	[318]	JMP      	0 1	; to 25
+	24	[318]	LOADK    	16 -16	; "nil"
+	25	[319]	LOADK    	17 -17	; "\nsocialType = "
+	26	[320]	TESTSET  	18 12 1
+	27	[320]	JMP      	0 1	; to 29
+	28	[320]	LOADK    	18 -16	; "nil"
+	29	[321]	LOADK    	19 -18	; "\nauthCode = "
+	30	[322]	TESTSET  	20 5 1
+	31	[322]	JMP      	0 1	; to 33
+	32	[322]	LOADK    	20 -16	; "nil"
+	33	[323]	LOADK    	21 -19	; "\nsocialID = "
+	34	[324]	TESTSET  	22 4 1
+	35	[324]	JMP      	0 1	; to 37
+	36	[324]	LOADK    	22 -16	; "nil"
+	37	[325]	LOADK    	23 -20	; "\nAccessToken = "
+	38	[326]	TESTSET  	24 6 1
+	39	[326]	JMP      	0 1	; to 41
+	40	[326]	LOADK    	24 -16	; "nil"
+	41	[327]	LOADK    	25 -21	; "\nName = "
+	42	[328]	TESTSET  	26 7 1
+	43	[328]	JMP      	0 1	; to 45
+	44	[328]	LOADK    	26 -16	; "nil"
+	45	[329]	LOADK    	27 -22	; "\nEmail = "
+	46	[330]	TESTSET  	28 8 1
+	47	[330]	JMP      	0 1	; to 49
+	48	[330]	LOADK    	28 -16	; "nil"
+	49	[331]	LOADK    	29 -23	; "\nPicture = "
+	50	[332]	TESTSET  	30 9 1
+	51	[332]	JMP      	0 1	; to 53
+	52	[332]	LOADK    	30 -16	; "nil"
+	53	[333]	LOADK    	31 -24	; "\nRawResult = "
+	54	[334]	TESTSET  	32 10 1
+	55	[334]	JMP      	0 1	; to 57
+	56	[334]	LOADK    	32 -16	; "nil"
+	57	[335]	LOADK    	33 -25	; "\nLog = "
+	58	[336]	TESTSET  	34 11 1
+	59	[336]	JMP      	0 1	; to 61
+	60	[337]	LOADK    	34 -16	; "nil"
+	61	[337]	SETLIST  	13 21 1	; 1
+	62	[338]	GETTABUP 	14 0 -9	; _ENV "Log"
+	63	[338]	GETTABLE 	14 14 -26	; "Info"
+	64	[338]	LOADK    	15 -27	; "logMsg:"
+	65	[338]	GETTABUP 	16 0 -28	; _ENV "table"
+	66	[338]	GETTABLE 	16 16 -29	; "concat"
+	67	[338]	MOVE     	17 13
+	68	[338]	CALL     	16 2 2
+	69	[338]	CONCAT   	15 15 16
+	70	[338]	CALL     	14 2 1
+	71	[339]	GETTABUP 	14 0 -10	; _ENV "GM"
+	72	[339]	GETTABLE 	14 14 -30	; "BIManager"
+	73	[339]	SELF     	14 14 -31	; "LogSDKLogin"
+	74	[339]	MOVE     	16 3
+	75	[339]	MOVE     	17 10
+	76	[339]	MOVE     	18 11
+	77	[339]	MOVE     	19 12
+	78	[339]	MOVE     	20 6
+	79	[339]	MOVE     	21 4
+	80	[339]	MOVE     	22 7
+	81	[339]	MOVE     	23 8
+	82	[339]	MOVE     	24 9
+	83	[339]	CALL     	14 11 1
+	84	[346]	LOADNIL  	14 0
+	85	[347]	GETTABUP 	15 0 -32	; _ENV "StringUtil"
+	86	[347]	GETTABLE 	15 15 -33	; "IsNilOrEmpty"
+	87	[347]	MOVE     	16 4
+	88	[347]	CALL     	15 2 2
+	89	[347]	TEST     	15 1
+	90	[347]	JMP      	0 17	; to 108
+	91	[347]	GETTABUP 	15 0 -32	; _ENV "StringUtil"
+	92	[347]	GETTABLE 	15 15 -33	; "IsNilOrEmpty"
+	93	[347]	MOVE     	16 6
+	94	[347]	CALL     	15 2 2
+	95	[347]	TEST     	15 1
+	96	[347]	JMP      	0 11	; to 108
+	97	[349]	LOADK    	15 -34	; "https://graph.facebook.com/"
+	98	[349]	MOVE     	16 4
+	99	[349]	LOADK    	17 -35	; "/picture?type=large&access_token="
+	100	[349]	MOVE     	18 6
+	101	[349]	CONCAT   	14 15 18
+	102	[350]	GETTABUP 	15 0 -9	; _ENV "Log"
+	103	[350]	GETTABLE 	15 15 -26	; "Info"
+	104	[350]	LOADK    	16 -36	; "[SDKHelper] \232\167\163\230\158\144\231\154\132url "
+	105	[350]	MOVE     	17 14
+	106	[350]	CONCAT   	16 16 17
+	107	[350]	CALL     	15 2 1
+	108	[353]	GETTABUP 	15 0 -10	; _ENV "GM"
+	109	[353]	GETTABLE 	15 15 -11	; "AccountManager"
+	110	[353]	SELF     	15 15 -37	; "OnSDKLoginFinished"
+	111	[353]	MOVE     	17 3
+	112	[353]	MOVE     	18 12
+	113	[353]	MOVE     	19 4
+	114	[353]	MOVE     	20 6
+	115	[353]	MOVE     	21 7
+	116	[353]	MOVE     	22 8
+	117	[353]	MOVE     	23 14
+	118	[353]	MOVE     	24 2
+	119	[353]	MOVE     	25 11
+	120	[353]	CALL     	15 11 1
+	121	[354]	RETURN   	0 1
+constants (37) for 000001C8D35B48F0:
+	1	"Result"
+	2	"UserId"
+	3	"AuthCode"
+	4	"AccessToken"
+	5	"Name"
+	6	"Email"
+	7	"Picture"
+	8	"RawResult"
+	9	"Log"
+	10	"GM"
+	11	"AccountManager"
+	12	"eCurrentLoginSocialType"
+	13	"SDKHelper:OnLoginCallback"
+	14	"\nResult = "
+	15	"tostring"
+	16	"nil"
+	17	"\nsocialType = "
+	18	"\nauthCode = "
+	19	"\nsocialID = "
+	20	"\nAccessToken = "
+	21	"\nName = "
+	22	"\nEmail = "
+	23	"\nPicture = "
+	24	"\nRawResult = "
+	25	"\nLog = "
+	26	"Info"
+	27	"logMsg:"
+	28	"table"
+	29	"concat"
+	30	"BIManager"
+	31	"LogSDKLogin"
+	32	"StringUtil"
+	33	"IsNilOrEmpty"
+	34	"https://graph.facebook.com/"
+	35	"/picture?type=large&access_token="
+	36	"[SDKHelper] \232\167\163\230\158\144\231\154\132url "
+	37	"OnSDKLoginFinished"
+locals (15) for 000001C8D35B48F0:
+	0	self	1	122
+	1	loginEventArgs	1	122
+	2	refreshToken	1	122
+	3	result	2	122
+	4	socialID	3	122
+	5	authCode	4	122
+	6	accessToken	5	122
+	7	name	6	122
+	8	email	7	122
+	9	picture	8	122
+	10	rawResult	9	122
+	11	log	10	122
+	12	eSocialType	13	122
+	13	logMsg	62	122
+	14	pictureUrl	85	122
+upvalues (1) for 000001C8D35B48F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:356,393> (41 instructions at 000001C8D35B4070)
+2 params, 8 slots, 1 upvalue, 4 locals, 22 constants, 1 function
+	1	[357]	GETTABUP 	2 0 -1	; _ENV "CSNetLibManager"
+	2	[357]	SELF     	2 2 -2	; "CreateGeneralHttpRequest"
+	3	[357]	LOADK    	4 -3	; "https://appleid.apple.com/auth/token"
+	4	[357]	LOADK    	5 -4	; "POST"
+	5	[357]	LOADK    	6 -5	; 5000
+	6	[357]	LOADK    	7 -6	; 0
+	7	[357]	CALL     	2 6 2
+	8	[360]	SELF     	3 2 -7	; "SetHeader"
+	9	[360]	LOADK    	5 -8	; "content-type"
+	10	[360]	LOADK    	6 -9	; "application/x-www-form-urlencoded"
+	11	[360]	CALL     	3 4 1
+	12	[363]	LOADK    	3 -10	; "client_id=com.mergegame.icookie"
+	13	[364]	MOVE     	4 3
+	14	[364]	LOADK    	5 -11	; "&client_secret="
+	15	[364]	GETTABLE 	6 0 -12	; "m_appleClientSecret"
+	16	[364]	CONCAT   	3 4 6
+	17	[365]	MOVE     	4 3
+	18	[365]	LOADK    	5 -13	; "&code="
+	19	[365]	GETTABLE 	6 1 -14	; "AuthCode"
+	20	[365]	TEST     	6 1
+	21	[365]	JMP      	0 1	; to 23
+	22	[365]	LOADK    	6 -15	; "nil"
+	23	[365]	CONCAT   	3 4 6
+	24	[366]	MOVE     	4 3
+	25	[366]	LOADK    	5 -16	; "&grant_type=authorization_code"
+	26	[366]	CONCAT   	3 4 5
+	27	[368]	GETTABUP 	4 0 -17	; _ENV "Log"
+	28	[368]	GETTABLE 	4 4 -18	; "Info"
+	29	[368]	LOADK    	5 -19	; "[SDKHelper] Apple Auth requst body: "
+	30	[368]	MOVE     	6 3
+	31	[368]	CONCAT   	5 5 6
+	32	[368]	CALL     	4 2 1
+	33	[370]	SELF     	4 2 -20	; "AppendBody"
+	34	[370]	MOVE     	6 3
+	35	[370]	CALL     	4 3 1
+	36	[372]	SELF     	4 2 -21	; "SetCallback"
+	37	[390]	CLOSURE  	6 0	; 000001C8D35B45F0
+	38	[372]	CALL     	4 3 1
+	39	[392]	SELF     	4 2 -22	; "Send"
+	40	[392]	CALL     	4 2 1
+	41	[393]	RETURN   	0 1
+constants (22) for 000001C8D35B4070:
+	1	"CSNetLibManager"
+	2	"CreateGeneralHttpRequest"
+	3	"https://appleid.apple.com/auth/token"
+	4	"POST"
+	5	5000
+	6	0
+	7	"SetHeader"
+	8	"content-type"
+	9	"application/x-www-form-urlencoded"
+	10	"client_id=com.mergegame.icookie"
+	11	"&client_secret="
+	12	"m_appleClientSecret"
+	13	"&code="
+	14	"AuthCode"
+	15	"nil"
+	16	"&grant_type=authorization_code"
+	17	"Log"
+	18	"Info"
+	19	"[SDKHelper] Apple Auth requst body: "
+	20	"AppendBody"
+	21	"SetCallback"
+	22	"Send"
+locals (4) for 000001C8D35B4070:
+	0	self	1	42
+	1	loginEventArgs	1	42
+	2	reqCtx	8	42
+	3	body	13	42
+upvalues (1) for 000001C8D35B4070:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:372,390> (57 instructions at 000001C8D35B45F0)
+0 params, 6 slots, 4 upvalues, 3 locals, 26 constants, 0 functions
+	1	[373]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[373]	EQ       	1 0 -2	; - nil
+	3	[373]	JMP      	0 53	; to 57
+	4	[374]	LOADNIL  	0 0
+	5	[375]	GETTABUP 	1 1 -3	; reqCtx "Rcode"
+	6	[375]	GETTABUP 	2 0 -4	; _ENV "ResultCode"
+	7	[375]	GETTABLE 	2 2 -5	; "Succeeded"
+	8	[375]	EQ       	0 1 2
+	9	[375]	JMP      	0 33	; to 43
+	10	[375]	GETTABUP 	1 1 -6	; reqCtx "RespBody"
+	11	[375]	GETTABLE 	1 1 -7	; "Bytes"
+	12	[375]	LT       	0 -8 1	; 0 -
+	13	[375]	JMP      	0 29	; to 43
+	14	[376]	GETUPVAL 	1 1	; reqCtx
+	15	[376]	SELF     	1 1 -9	; "GetResponseString"
+	16	[376]	CALL     	1 2 2
+	17	[377]	GETTABUP 	2 0 -10	; _ENV "Log"
+	18	[377]	GETTABLE 	2 2 -11	; "Info"
+	19	[377]	LOADK    	3 -12	; "Apple Auth Response: "
+	20	[377]	MOVE     	4 1
+	21	[377]	CONCAT   	3 3 4
+	22	[377]	GETTABUP 	4 0 -13	; _ENV "LogTag"
+	23	[377]	GETTABLE 	4 4 -14	; "Purchase"
+	24	[377]	CALL     	2 3 1
+	25	[378]	GETTABUP 	2 0 -15	; _ENV "json"
+	26	[378]	GETTABLE 	2 2 -16	; "decode"
+	27	[378]	MOVE     	3 1
+	28	[378]	CALL     	2 2 2
+	29	[378]	TEST     	2 1
+	30	[378]	JMP      	0 1	; to 32
+	31	[378]	NEWTABLE 	2 0 0
+	32	[379]	GETTABLE 	3 2 -17	; "refresh_token"
+	33	[379]	EQ       	1 3 -2	; - nil
+	34	[379]	JMP      	0 17	; to 52
+	35	[380]	GETTABLE 	0 2 -17	; "refresh_token"
+	36	[381]	GETTABUP 	3 0 -18	; _ENV "PlayerPrefs"
+	37	[381]	GETTABLE 	3 3 -19	; "SetString"
+	38	[381]	GETTABUP 	4 0 -20	; _ENV "EPlayerPrefKey"
+	39	[381]	GETTABLE 	4 4 -21	; "AppleSignInRefreshToken"
+	40	[381]	MOVE     	5 0
+	41	[381]	CALL     	3 3 1
+	42	[382]	JMP      	0 9	; to 52
+	43	[384]	GETTABUP 	1 0 -10	; _ENV "Log"
+	44	[384]	GETTABLE 	1 1 -22	; "Warning"
+	45	[384]	LOADK    	2 -23	; "[SDKHelper] Apple Auth response error: "
+	46	[384]	GETTABUP 	3 1 -24	; reqCtx "ErrorMsg"
+	47	[384]	TEST     	3 1
+	48	[384]	JMP      	0 1	; to 50
+	49	[384]	LOADK    	3 -25	; ""
+	50	[384]	CONCAT   	2 2 3
+	51	[384]	CALL     	1 2 1
+	52	[387]	GETUPVAL 	1 2	; self
+	53	[387]	SELF     	1 1 -26	; "LoginHandler"
+	54	[387]	GETUPVAL 	3 3	; loginEventArgs
+	55	[387]	MOVE     	4 0
+	56	[387]	CALL     	1 4 1
+	57	[390]	RETURN   	0 1
+constants (26) for 000001C8D35B45F0:
+	1	"GM"
+	2	nil
+	3	"Rcode"
+	4	"ResultCode"
+	5	"Succeeded"
+	6	"RespBody"
+	7	"Bytes"
+	8	0
+	9	"GetResponseString"
+	10	"Log"
+	11	"Info"
+	12	"Apple Auth Response: "
+	13	"LogTag"
+	14	"Purchase"
+	15	"json"
+	16	"decode"
+	17	"refresh_token"
+	18	"PlayerPrefs"
+	19	"SetString"
+	20	"EPlayerPrefKey"
+	21	"AppleSignInRefreshToken"
+	22	"Warning"
+	23	"[SDKHelper] Apple Auth response error: "
+	24	"ErrorMsg"
+	25	""
+	26	"LoginHandler"
+locals (3) for 000001C8D35B45F0:
+	0	refreshToken	5	57
+	1	respBody	17	42
+	2	tokens	32	42
+upvalues (4) for 000001C8D35B45F0:
+	0	_ENV	0	0
+	1	reqCtx	1	2
+	2	self	1	0
+	3	loginEventArgs	1	1
+
+function <SDKHelper.lua:395,401> (12 instructions at 000001C8D35B4670)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[396]	SELF     	1 0 -1	; "_RevokeLoginTokens"
+	2	[396]	CALL     	1 2 1
+	3	[397]	GETTABUP 	1 0 -2	; _ENV "GLOBAL_APP"
+	4	[397]	TEST     	1 0
+	5	[397]	JMP      	0 3	; to 9
+	6	[398]	GETTABUP 	1 0 -3	; _ENV "CSFacebookManager"
+	7	[398]	SELF     	1 1 -4	; "Logout"
+	8	[398]	CALL     	1 2 1
+	9	[400]	GETTABUP 	1 0 -5	; _ENV "CSLoginClient"
+	10	[400]	SELF     	1 1 -4	; "Logout"
+	11	[400]	CALL     	1 2 1
+	12	[401]	RETURN   	0 1
+constants (5) for 000001C8D35B4670:
+	1	"_RevokeLoginTokens"
+	2	"GLOBAL_APP"
+	3	"CSFacebookManager"
+	4	"Logout"
+	5	"CSLoginClient"
+locals (1) for 000001C8D35B4670:
+	0	self	1	13
+upvalues (1) for 000001C8D35B4670:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:403,407> (3 instructions at 000001C8D35B4370)
+1 param, 3 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[404]	SELF     	1 0 -1	; "_RevokeAppleToken"
+	2	[404]	CALL     	1 2 1
+	3	[407]	RETURN   	0 1
+constants (1) for 000001C8D35B4370:
+	1	"_RevokeAppleToken"
+locals (1) for 000001C8D35B4370:
+	0	self	1	4
+upvalues (0) for 000001C8D35B4370:
+
+function <SDKHelper.lua:409,437> (56 instructions at 000001C8D35B44F0)
+1 param, 8 slots, 1 upvalue, 4 locals, 28 constants, 1 function
+	1	[411]	GETTABUP 	1 0 -1	; _ENV "PlayerPrefs"
+	2	[411]	GETTABLE 	1 1 -2	; "GetString"
+	3	[411]	GETTABUP 	2 0 -3	; _ENV "EPlayerPrefKey"
+	4	[411]	GETTABLE 	2 2 -4	; "AppleSignInRefreshToken"
+	5	[411]	LOADK    	3 -5	; ""
+	6	[411]	CALL     	1 3 2
+	7	[412]	GETTABUP 	2 0 -6	; _ENV "DeviceInfo"
+	8	[412]	GETTABLE 	2 2 -7	; "IsSystemIOS"
+	9	[412]	CALL     	2 1 2
+	10	[412]	TEST     	2 0
+	11	[412]	JMP      	0 44	; to 56
+	12	[412]	EQ       	1 1 -5	; - ""
+	13	[412]	JMP      	0 42	; to 56
+	14	[413]	GETTABUP 	2 0 -1	; _ENV "PlayerPrefs"
+	15	[413]	GETTABLE 	2 2 -8	; "SetString"
+	16	[413]	GETTABUP 	3 0 -3	; _ENV "EPlayerPrefKey"
+	17	[413]	GETTABLE 	3 3 -4	; "AppleSignInRefreshToken"
+	18	[413]	LOADK    	4 -5	; ""
+	19	[413]	CALL     	2 3 1
+	20	[414]	GETTABUP 	2 0 -9	; _ENV "CSNetLibManager"
+	21	[414]	SELF     	2 2 -10	; "CreateGeneralHttpRequest"
+	22	[414]	LOADK    	4 -11	; "https://appleid.apple.com/auth/revoke"
+	23	[414]	LOADK    	5 -12	; "POST"
+	24	[414]	LOADK    	6 -13	; 1000
+	25	[414]	LOADK    	7 -14	; 0
+	26	[414]	CALL     	2 6 2
+	27	[416]	SELF     	3 2 -15	; "SetHeader"
+	28	[416]	LOADK    	5 -16	; "content-type"
+	29	[416]	LOADK    	6 -17	; "application/x-www-form-urlencoded"
+	30	[416]	CALL     	3 4 1
+	31	[418]	LOADK    	3 -18	; "client_id=com.mergegame.icookie"
+	32	[419]	MOVE     	4 3
+	33	[419]	LOADK    	5 -19	; "&client_secret="
+	34	[419]	GETTABLE 	6 0 -20	; "m_appleClientSecret"
+	35	[419]	CONCAT   	3 4 6
+	36	[420]	MOVE     	4 3
+	37	[420]	LOADK    	5 -21	; "&token="
+	38	[420]	MOVE     	6 1
+	39	[420]	CONCAT   	3 4 6
+	40	[421]	MOVE     	4 3
+	41	[421]	LOADK    	5 -22	; "&token_type_hint=refresh_token"
+	42	[421]	CONCAT   	3 4 5
+	43	[423]	SELF     	4 2 -23	; "AppendBody"
+	44	[423]	MOVE     	6 3
+	45	[423]	CALL     	4 3 1
+	46	[425]	SELF     	4 2 -24	; "SetCallback"
+	47	[433]	CLOSURE  	6 0	; 000001C8D35B4570
+	48	[425]	CALL     	4 3 1
+	49	[434]	GETTABUP 	4 0 -25	; _ENV "Log"
+	50	[434]	GETTABLE 	4 4 -26	; "Info"
+	51	[434]	LOADK    	5 -27	; "[SDKHelper] Send Revoke Apple Auth Request."
+	52	[434]	CALL     	4 2 1
+	53	[435]	SELF     	4 2 -28	; "Send"
+	54	[435]	CALL     	4 2 1
+	55	[435]	JMP      	3 0	; to 56
+	56	[437]	RETURN   	0 1
+constants (28) for 000001C8D35B44F0:
+	1	"PlayerPrefs"
+	2	"GetString"
+	3	"EPlayerPrefKey"
+	4	"AppleSignInRefreshToken"
+	5	""
+	6	"DeviceInfo"
+	7	"IsSystemIOS"
+	8	"SetString"
+	9	"CSNetLibManager"
+	10	"CreateGeneralHttpRequest"
+	11	"https://appleid.apple.com/auth/revoke"
+	12	"POST"
+	13	1000
+	14	0
+	15	"SetHeader"
+	16	"content-type"
+	17	"application/x-www-form-urlencoded"
+	18	"client_id=com.mergegame.icookie"
+	19	"&client_secret="
+	20	"m_appleClientSecret"
+	21	"&token="
+	22	"&token_type_hint=refresh_token"
+	23	"AppendBody"
+	24	"SetCallback"
+	25	"Log"
+	26	"Info"
+	27	"[SDKHelper] Send Revoke Apple Auth Request."
+	28	"Send"
+locals (4) for 000001C8D35B44F0:
+	0	self	1	57
+	1	appleToken	7	57
+	2	reqCtx	27	56
+	3	body	32	56
+upvalues (1) for 000001C8D35B44F0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:425,433> (22 instructions at 000001C8D35B4570)
+0 params, 3 slots, 2 upvalues, 0 locals, 11 constants, 0 functions
+	1	[426]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[426]	EQ       	1 0 -2	; - nil
+	3	[426]	JMP      	0 18	; to 22
+	4	[427]	GETTABUP 	0 1 -3	; reqCtx "Rcode"
+	5	[427]	GETTABUP 	1 0 -4	; _ENV "ResultCode"
+	6	[427]	GETTABLE 	1 1 -5	; "Succeeded"
+	7	[427]	EQ       	0 0 1
+	8	[427]	JMP      	0 7	; to 16
+	9	[428]	GETTABUP 	0 0 -6	; _ENV "Log"
+	10	[428]	GETTABLE 	0 0 -7	; "Info"
+	11	[428]	LOADK    	1 -8	; "Apple Auth Revoke Success."
+	12	[428]	GETTABUP 	2 0 -9	; _ENV "LogTag"
+	13	[428]	GETTABLE 	2 2 -10	; "Purchase"
+	14	[428]	CALL     	0 3 1
+	15	[428]	JMP      	0 6	; to 22
+	16	[430]	GETTABUP 	0 0 -6	; _ENV "Log"
+	17	[430]	GETTABLE 	0 0 -7	; "Info"
+	18	[430]	LOADK    	1 -11	; "Apple Auth Revoke Failed."
+	19	[430]	GETTABUP 	2 0 -9	; _ENV "LogTag"
+	20	[430]	GETTABLE 	2 2 -10	; "Purchase"
+	21	[430]	CALL     	0 3 1
+	22	[433]	RETURN   	0 1
+constants (11) for 000001C8D35B4570:
+	1	"GM"
+	2	nil
+	3	"Rcode"
+	4	"ResultCode"
+	5	"Succeeded"
+	6	"Log"
+	7	"Info"
+	8	"Apple Auth Revoke Success."
+	9	"LogTag"
+	10	"Purchase"
+	11	"Apple Auth Revoke Failed."
+locals (0) for 000001C8D35B4570:
+upvalues (2) for 000001C8D35B4570:
+	0	_ENV	0	0
+	1	reqCtx	1	2
+
+function <SDKHelper.lua:439,444> (10 instructions at 000001C8D35B4970)
+1 param, 5 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[440]	SELF     	1 0 -1	; "AiHelpUpdateUserInfo"
+	2	[440]	CALL     	1 2 2
+	3	[441]	TEST     	1 0
+	4	[441]	JMP      	0 5	; to 10
+	5	[442]	GETTABUP 	2 0 -2	; _ENV "Scheduler"
+	6	[442]	GETTABLE 	2 2 -3	; "Unschedule"
+	7	[442]	GETTABLE 	3 0 -4	; "AiHelpUpdateUserInfoInScheduler"
+	8	[442]	MOVE     	4 0
+	9	[442]	CALL     	2 3 1
+	10	[444]	RETURN   	0 1
+constants (4) for 000001C8D35B4970:
+	1	"AiHelpUpdateUserInfo"
+	2	"Scheduler"
+	3	"Unschedule"
+	4	"AiHelpUpdateUserInfoInScheduler"
+locals (2) for 000001C8D35B4970:
+	0	self	1	11
+	1	bUpdateCompleted	3	11
+upvalues (1) for 000001C8D35B4970:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:446,526> (53 instructions at 000001C8D35B4BF0)
+1 param, 5 slots, 2 upvalues, 5 locals, 15 constants, 3 functions
+	1	[447]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[447]	EQ       	0 1 -2	; - nil
+	3	[447]	JMP      	0 1	; to 5
+	4	[447]	RETURN   	0 1
+	5	[448]	GETTABUP 	1 0 -3	; _ENV "CSAiHelpManager"
+	6	[448]	GETTABLE 	1 1 -4	; "isInited"
+	7	[448]	TEST     	1 0
+	8	[448]	JMP      	0 42	; to 51
+	9	[449]	GETTABUP 	1 0 -1	; _ENV "GM"
+	10	[449]	GETTABLE 	1 1 -5	; "UserModel"
+	11	[449]	SELF     	1 1 -6	; "GetUserId"
+	12	[449]	CALL     	1 2 2
+	13	[450]	EQ       	0 1 -7	; - 0
+	14	[450]	JMP      	0 11	; to 26
+	15	[451]	GETTABLE 	2 0 -8	; "m_updateInfoStep"
+	16	[451]	GETTABUP 	3 1 -9	; EUpdateInfoStep "DeviceInfo"
+	17	[451]	LT       	0 2 3
+	18	[451]	JMP      	0 32	; to 51
+	19	[452]	GETTABUP 	2 1 -9	; EUpdateInfoStep "DeviceInfo"
+	20	[452]	SETTABLE 	0 -8 2	; "m_updateInfoStep" -
+	21	[475]	CLOSURE  	2 0	; 000001C8D35B4D70
+	22	[476]	GETTABUP 	3 0 -10	; _ENV "SafeCall"
+	23	[476]	MOVE     	4 2
+	24	[476]	CALL     	3 2 1
+	25	[477]	JMP      	0 25	; to 51
+	26	[478]	GETTABUP 	2 0 -11	; _ENV "GM"
+	27	[478]	GETTABLE 	2 2 -12	; "GameModel"
+	28	[478]	SELF     	2 2 -13	; "GetGroupName"
+	29	[478]	CALL     	2 2 2
+	30	[478]	EQ       	0 2 -2	; - nil
+	31	[478]	JMP      	0 11	; to 43
+	32	[479]	GETTABLE 	2 0 -8	; "m_updateInfoStep"
+	33	[479]	GETTABUP 	3 1 -14	; EUpdateInfoStep "UserInfo"
+	34	[479]	LT       	0 2 3
+	35	[479]	JMP      	0 15	; to 51
+	36	[480]	GETTABUP 	2 1 -14	; EUpdateInfoStep "UserInfo"
+	37	[480]	SETTABLE 	0 -8 2	; "m_updateInfoStep" -
+	38	[495]	CLOSURE  	2 1	; 000001C8D35B4DF0
+	39	[496]	GETTABUP 	3 0 -10	; _ENV "SafeCall"
+	40	[496]	MOVE     	4 2
+	41	[496]	CALL     	3 2 1
+	42	[497]	JMP      	0 8	; to 51
+	43	[499]	GETTABUP 	2 1 -15	; EUpdateInfoStep "GroupInfo"
+	44	[499]	SETTABLE 	0 -8 2	; "m_updateInfoStep" -
+	45	[519]	CLOSURE  	2 2	; 000001C8D35C0C30
+	46	[520]	GETTABUP 	3 0 -10	; _ENV "SafeCall"
+	47	[520]	MOVE     	4 2
+	48	[520]	CALL     	3 2 1
+	49	[522]	LOADBOOL 	3 1 0
+	50	[522]	RETURN   	3 2
+	51	[525]	LOADBOOL 	1 0 0
+	52	[525]	RETURN   	1 2
+	53	[526]	RETURN   	0 1
+constants (15) for 000001C8D35B4BF0:
+	1	"GM"
+	2	nil
+	3	"CSAiHelpManager"
+	4	"isInited"
+	5	"UserModel"
+	6	"GetUserId"
+	7	0
+	8	"m_updateInfoStep"
+	9	"DeviceInfo"
+	10	"SafeCall"
+	11	"GM"
+	12	"GameModel"
+	13	"GetGroupName"
+	14	"UserInfo"
+	15	"GroupInfo"
+locals (5) for 000001C8D35B4BF0:
+	0	self	1	54
+	1	userid	13	51
+	2	func	22	25
+	3	func	39	42
+	4	func	46	51
+upvalues (2) for 000001C8D35B4BF0:
+	0	_ENV	0	0
+	1	EUpdateInfoStep	1	0
+
+function <SDKHelper.lua:454,475> (72 instructions at 000001C8D35B4D70)
+0 params, 10 slots, 1 upvalue, 3 locals, 35 constants, 0 functions
+	1	[455]	LOADK    	0 -1	; "channel_"
+	2	[455]	GETTABUP 	1 0 -2	; _ENV "tostring"
+	3	[455]	GETTABUP 	2 0 -3	; _ENV "GameConfig"
+	4	[455]	GETTABLE 	2 2 -4	; "CURRENT_PLATFORM"
+	5	[455]	CALL     	1 2 2
+	6	[455]	CONCAT   	0 0 1
+	7	[456]	MOVE     	1 0
+	8	[456]	LOADK    	2 -5	; ",version_"
+	9	[456]	GETTABUP 	3 0 -3	; _ENV "GameConfig"
+	10	[456]	GETTABLE 	3 3 -6	; "GetCurrentVersion"
+	11	[456]	CALL     	3 1 2
+	12	[456]	CONCAT   	0 1 3
+	13	[457]	GETTABUP 	1 0 -7	; _ENV "GM"
+	14	[457]	GETTABLE 	1 1 -8	; "UserModel"
+	15	[457]	SELF     	1 1 -9	; "GetInstallUuid"
+	16	[457]	CALL     	1 2 2
+	17	[459]	NEWTABLE 	2 0 7
+	18	[460]	SETTABLE 	2 -10 1	; "installUuid" -
+	19	[461]	GETTABUP 	3 0 -2	; _ENV "tostring"
+	20	[461]	GETTABUP 	4 0 -12	; _ENV "DeviceInfo"
+	21	[461]	GETTABLE 	4 4 -13	; "GetAdvertisingIdentifier"
+	22	[461]	CALL     	4 1 0
+	23	[461]	CALL     	3 0 2
+	24	[461]	SETTABLE 	2 -11 3	; "idfa" -
+	25	[462]	GETTABUP 	3 0 -12	; _ENV "DeviceInfo"
+	26	[462]	GETTABLE 	3 3 -15	; "GetMacAddress"
+	27	[462]	CALL     	3 1 2
+	28	[462]	SETTABLE 	2 -14 3	; "wifiMAC" -
+	29	[463]	LOADK    	3 -17	; "::"
+	30	[463]	LOADK    	4 -18	; ""
+	31	[463]	CONCAT   	3 3 4
+	32	[463]	SETTABLE 	2 -16 3	; "adjust_id" -
+	33	[464]	GETTABUP 	3 0 -12	; _ENV "DeviceInfo"
+	34	[464]	GETTABLE 	3 3 -20	; "GetDeviceID"
+	35	[464]	CALL     	3 1 2
+	36	[464]	SETTABLE 	2 -19 3	; "deviceId" -
+	37	[465]	GETTABUP 	3 0 -12	; _ENV "DeviceInfo"
+	38	[465]	GETTABLE 	3 3 -22	; "GetVendorID"
+	39	[465]	CALL     	3 1 2
+	40	[465]	SETTABLE 	2 -21 3	; "vendorId" -
+	41	[466]	GETTABUP 	3 0 -12	; _ENV "DeviceInfo"
+	42	[466]	GETTABLE 	3 3 -24	; "GetOpenUDID"
+	43	[466]	CALL     	3 1 2
+	44	[466]	SETTABLE 	2 -23 3	; "openUDID" -
+	45	[468]	GETTABUP 	3 0 -25	; _ENV "GLOBAL_APP"
+	46	[468]	TEST     	3 0
+	47	[468]	JMP      	0 8	; to 56
+	48	[469]	LOADK    	3 -17	; "::"
+	49	[469]	GETTABUP 	4 0 -2	; _ENV "tostring"
+	50	[469]	GETTABUP 	5 0 -26	; _ENV "CSAppsFlyerManager"
+	51	[469]	SELF     	5 5 -27	; "GetAppsFlyerId"
+	52	[469]	CALL     	5 2 0
+	53	[469]	CALL     	4 0 2
+	54	[469]	CONCAT   	3 3 4
+	55	[469]	SETTABLE 	2 -16 3	; "adjust_id" -
+	56	[472]	GETTABUP 	3 0 -28	; _ENV "CSAiHelpManager"
+	57	[472]	SELF     	3 3 -29	; "UpdateUserInfo"
+	58	[472]	GETTABUP 	5 0 -2	; _ENV "tostring"
+	59	[472]	MOVE     	6 1
+	60	[472]	CALL     	5 2 2
+	61	[472]	LOADK    	6 -30	; "Before SSO User"
+	62	[472]	MOVE     	7 0
+	63	[472]	GETTABUP 	8 0 -31	; _ENV "json"
+	64	[472]	GETTABLE 	8 8 -32	; "encode"
+	65	[472]	MOVE     	9 2
+	66	[472]	CALL     	8 2 0
+	67	[472]	CALL     	3 0 1
+	68	[474]	GETTABUP 	3 0 -33	; _ENV "Log"
+	69	[474]	GETTABLE 	3 3 -34	; "Info"
+	70	[474]	LOADK    	4 -35	; "AiHelp Update Device Info Finished!!!"
+	71	[474]	CALL     	3 2 1
+	72	[475]	RETURN   	0 1
+constants (35) for 000001C8D35B4D70:
+	1	"channel_"
+	2	"tostring"
+	3	"GameConfig"
+	4	"CURRENT_PLATFORM"
+	5	",version_"
+	6	"GetCurrentVersion"
+	7	"GM"
+	8	"UserModel"
+	9	"GetInstallUuid"
+	10	"installUuid"
+	11	"idfa"
+	12	"DeviceInfo"
+	13	"GetAdvertisingIdentifier"
+	14	"wifiMAC"
+	15	"GetMacAddress"
+	16	"adjust_id"
+	17	"::"
+	18	""
+	19	"deviceId"
+	20	"GetDeviceID"
+	21	"vendorId"
+	22	"GetVendorID"
+	23	"openUDID"
+	24	"GetOpenUDID"
+	25	"GLOBAL_APP"
+	26	"CSAppsFlyerManager"
+	27	"GetAppsFlyerId"
+	28	"CSAiHelpManager"
+	29	"UpdateUserInfo"
+	30	"Before SSO User"
+	31	"json"
+	32	"encode"
+	33	"Log"
+	34	"Info"
+	35	"AiHelp Update Device Info Finished!!!"
+locals (3) for 000001C8D35B4D70:
+	0	tags	7	73
+	1	installUUID	17	73
+	2	customData	45	73
+upvalues (1) for 000001C8D35B4D70:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:481,495> (84 instructions at 000001C8D35B4DF0)
+0 params, 9 slots, 1 upvalue, 2 locals, 36 constants, 0 functions
+	1	[482]	LOADK    	0 -1	; "channel_"
+	2	[482]	GETTABUP 	1 0 -2	; _ENV "tostring"
+	3	[482]	GETTABUP 	2 0 -3	; _ENV "GameConfig"
+	4	[482]	GETTABLE 	2 2 -4	; "CURRENT_PLATFORM"
+	5	[482]	CALL     	1 2 2
+	6	[482]	CONCAT   	0 0 1
+	7	[483]	MOVE     	1 0
+	8	[483]	LOADK    	2 -5	; ",version_"
+	9	[483]	GETTABUP 	3 0 -3	; _ENV "GameConfig"
+	10	[483]	GETTABLE 	3 3 -6	; "GetCurrentVersion"
+	11	[483]	CALL     	3 1 2
+	12	[483]	CONCAT   	0 1 3
+	13	[484]	NEWTABLE 	1 0 7
+	14	[485]	GETTABUP 	2 0 -8	; _ENV "GM"
+	15	[485]	GETTABLE 	2 2 -9	; "UserModel"
+	16	[485]	SELF     	2 2 -10	; "GetInstallUuid"
+	17	[485]	CALL     	2 2 2
+	18	[485]	SETTABLE 	1 -7 2	; "installUuid" -
+	19	[486]	GETTABUP 	2 0 -8	; _ENV "GM"
+	20	[486]	GETTABLE 	2 2 -9	; "UserModel"
+	21	[486]	SELF     	2 2 -12	; "GetUserId"
+	22	[486]	CALL     	2 2 2
+	23	[486]	SETTABLE 	1 -11 2	; "uid" -
+	24	[487]	GETTABUP 	2 0 -8	; _ENV "GM"
+	25	[487]	GETTABLE 	2 2 -14	; "LevelModel"
+	26	[487]	SELF     	2 2 -15	; "GetCurrentLevel"
+	27	[487]	CALL     	2 2 2
+	28	[487]	SETTABLE 	1 -13 2	; "level" -
+	29	[488]	GETTABUP 	2 0 -8	; _ENV "GM"
+	30	[488]	GETTABLE 	2 2 -17	; "PropertyDataManager"
+	31	[488]	SELF     	2 2 -18	; "GetPropertyNum"
+	32	[488]	GETTABUP 	4 0 -19	; _ENV "EPropertyType"
+	33	[488]	GETTABLE 	4 4 -20	; "Gold"
+	34	[488]	CALL     	2 3 2
+	35	[488]	SETTABLE 	1 -16 2	; "gold" -
+	36	[489]	GETTABUP 	2 0 -8	; _ENV "GM"
+	37	[489]	GETTABLE 	2 2 -17	; "PropertyDataManager"
+	38	[489]	SELF     	2 2 -18	; "GetPropertyNum"
+	39	[489]	GETTABUP 	4 0 -19	; _ENV "EPropertyType"
+	40	[489]	GETTABLE 	4 4 -22	; "Gem"
+	41	[489]	CALL     	2 3 2
+	42	[489]	SETTABLE 	1 -21 2	; "gem" -
+	43	[490]	GETTABUP 	2 0 -8	; _ENV "GM"
+	44	[490]	GETTABLE 	2 2 -17	; "PropertyDataManager"
+	45	[490]	SELF     	2 2 -18	; "GetPropertyNum"
+	46	[490]	GETTABUP 	4 0 -19	; _ENV "EPropertyType"
+	47	[490]	GETTABLE 	4 4 -24	; "Experience"
+	48	[490]	CALL     	2 3 2
+	49	[490]	SETTABLE 	1 -23 2	; "exp" -
+	50	[491]	GETTABUP 	2 0 -8	; _ENV "GM"
+	51	[491]	GETTABLE 	2 2 -17	; "PropertyDataManager"
+	52	[491]	SELF     	2 2 -18	; "GetPropertyNum"
+	53	[491]	GETTABUP 	4 0 -19	; _ENV "EPropertyType"
+	54	[491]	GETTABLE 	4 4 -26	; "Energy"
+	55	[491]	CALL     	2 3 2
+	56	[491]	SETTABLE 	1 -25 2	; "energy" -
+	57	[493]	GETTABUP 	2 0 -27	; _ENV "CSAiHelpManager"
+	58	[493]	SELF     	2 2 -28	; "UpdateUserInfo"
+	59	[493]	GETTABUP 	4 0 -2	; _ENV "tostring"
+	60	[493]	GETTABUP 	5 0 -8	; _ENV "GM"
+	61	[493]	GETTABLE 	5 5 -9	; "UserModel"
+	62	[493]	SELF     	5 5 -12	; "GetUserId"
+	63	[493]	CALL     	5 2 0
+	64	[493]	CALL     	4 0 2
+	65	[493]	GETTABUP 	5 0 -2	; _ENV "tostring"
+	66	[493]	GETTABUP 	6 0 -8	; _ENV "GM"
+	67	[493]	GETTABLE 	6 6 -29	; "UserProfileModel"
+	68	[493]	SELF     	6 6 -30	; "GetName"
+	69	[493]	LOADBOOL 	8 1 0
+	70	[493]	CALL     	6 3 0
+	71	[493]	CALL     	5 0 2
+	72	[493]	LOADK    	6 -31	; "(Before Login)"
+	73	[493]	CONCAT   	5 5 6
+	74	[493]	MOVE     	6 0
+	75	[493]	GETTABUP 	7 0 -32	; _ENV "json"
+	76	[493]	GETTABLE 	7 7 -33	; "encode"
+	77	[493]	MOVE     	8 1
+	78	[493]	CALL     	7 2 0
+	79	[493]	CALL     	2 0 1
+	80	[494]	GETTABUP 	2 0 -34	; _ENV "Log"
+	81	[494]	GETTABLE 	2 2 -35	; "Info"
+	82	[494]	LOADK    	3 -36	; "AiHelp Update User Info Finished!!!"
+	83	[494]	CALL     	2 2 1
+	84	[495]	RETURN   	0 1
+constants (36) for 000001C8D35B4DF0:
+	1	"channel_"
+	2	"tostring"
+	3	"GameConfig"
+	4	"CURRENT_PLATFORM"
+	5	",version_"
+	6	"GetCurrentVersion"
+	7	"installUuid"
+	8	"GM"
+	9	"UserModel"
+	10	"GetInstallUuid"
+	11	"uid"
+	12	"GetUserId"
+	13	"level"
+	14	"LevelModel"
+	15	"GetCurrentLevel"
+	16	"gold"
+	17	"PropertyDataManager"
+	18	"GetPropertyNum"
+	19	"EPropertyType"
+	20	"Gold"
+	21	"gem"
+	22	"Gem"
+	23	"exp"
+	24	"Experience"
+	25	"energy"
+	26	"Energy"
+	27	"CSAiHelpManager"
+	28	"UpdateUserInfo"
+	29	"UserProfileModel"
+	30	"GetName"
+	31	"(Before Login)"
+	32	"json"
+	33	"encode"
+	34	"Log"
+	35	"Info"
+	36	"AiHelp Update User Info Finished!!!"
+locals (2) for 000001C8D35B4DF0:
+	0	tags	7	85
+	1	customData	57	85
+upvalues (1) for 000001C8D35B4DF0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:500,519> (105 instructions at 000001C8D35C0C30)
+0 params, 9 slots, 1 upvalue, 2 locals, 43 constants, 0 functions
+	1	[501]	LOADK    	0 -1	; "channel_"
+	2	[501]	GETTABUP 	1 0 -2	; _ENV "tostring"
+	3	[501]	GETTABUP 	2 0 -3	; _ENV "GameConfig"
+	4	[501]	GETTABLE 	2 2 -4	; "CURRENT_PLATFORM"
+	5	[501]	CALL     	1 2 2
+	6	[501]	CONCAT   	0 0 1
+	7	[502]	MOVE     	1 0
+	8	[502]	LOADK    	2 -5	; ",version_"
+	9	[502]	GETTABUP 	3 0 -3	; _ENV "GameConfig"
+	10	[502]	GETTABLE 	3 3 -6	; "GetCurrentVersion"
+	11	[502]	CALL     	3 1 2
+	12	[502]	CONCAT   	0 1 3
+	13	[503]	GETTABUP 	1 0 -7	; _ENV "GM"
+	14	[503]	GETTABLE 	1 1 -8	; "GameModel"
+	15	[503]	SELF     	1 1 -9	; "NeedChildProtection"
+	16	[503]	CALL     	1 2 2
+	17	[503]	TEST     	1 0
+	18	[503]	JMP      	0 7	; to 26
+	19	[504]	MOVE     	1 0
+	20	[504]	LOADK    	2 -10	; ","
+	21	[504]	GETTABUP 	3 0 -7	; _ENV "GM"
+	22	[504]	GETTABLE 	3 3 -8	; "GameModel"
+	23	[504]	SELF     	3 3 -11	; "GetChildProtectionState"
+	24	[504]	CALL     	3 2 2
+	25	[504]	CONCAT   	0 1 3
+	26	[506]	NEWTABLE 	1 0 9
+	27	[507]	GETTABUP 	2 0 -7	; _ENV "GM"
+	28	[507]	GETTABLE 	2 2 -13	; "UserModel"
+	29	[507]	SELF     	2 2 -14	; "GetInstallUuid"
+	30	[507]	CALL     	2 2 2
+	31	[507]	SETTABLE 	1 -12 2	; "installUuid" -
+	32	[508]	GETTABUP 	2 0 -7	; _ENV "GM"
+	33	[508]	GETTABLE 	2 2 -13	; "UserModel"
+	34	[508]	SELF     	2 2 -16	; "GetUserId"
+	35	[508]	CALL     	2 2 2
+	36	[508]	SETTABLE 	1 -15 2	; "uid" -
+	37	[509]	GETTABUP 	2 0 -7	; _ENV "GM"
+	38	[509]	GETTABLE 	2 2 -18	; "LevelModel"
+	39	[509]	SELF     	2 2 -19	; "GetCurrentLevel"
+	40	[509]	CALL     	2 2 2
+	41	[509]	SETTABLE 	1 -17 2	; "level" -
+	42	[510]	GETTABUP 	2 0 -7	; _ENV "GM"
+	43	[510]	GETTABLE 	2 2 -21	; "PropertyDataManager"
+	44	[510]	SELF     	2 2 -22	; "GetPropertyNum"
+	45	[510]	GETTABUP 	4 0 -23	; _ENV "EPropertyType"
+	46	[510]	GETTABLE 	4 4 -24	; "Gold"
+	47	[510]	CALL     	2 3 2
+	48	[510]	SETTABLE 	1 -20 2	; "gold" -
+	49	[511]	GETTABUP 	2 0 -7	; _ENV "GM"
+	50	[511]	GETTABLE 	2 2 -21	; "PropertyDataManager"
+	51	[511]	SELF     	2 2 -22	; "GetPropertyNum"
+	52	[511]	GETTABUP 	4 0 -23	; _ENV "EPropertyType"
+	53	[511]	GETTABLE 	4 4 -26	; "Gem"
+	54	[511]	CALL     	2 3 2
+	55	[511]	SETTABLE 	1 -25 2	; "gem" -
+	56	[512]	GETTABUP 	2 0 -7	; _ENV "GM"
+	57	[512]	GETTABLE 	2 2 -21	; "PropertyDataManager"
+	58	[512]	SELF     	2 2 -22	; "GetPropertyNum"
+	59	[512]	GETTABUP 	4 0 -23	; _ENV "EPropertyType"
+	60	[512]	GETTABLE 	4 4 -28	; "Experience"
+	61	[512]	CALL     	2 3 2
+	62	[512]	SETTABLE 	1 -27 2	; "exp" -
+	63	[513]	GETTABUP 	2 0 -7	; _ENV "GM"
+	64	[513]	GETTABLE 	2 2 -21	; "PropertyDataManager"
+	65	[513]	SELF     	2 2 -22	; "GetPropertyNum"
+	66	[513]	GETTABUP 	4 0 -23	; _ENV "EPropertyType"
+	67	[513]	GETTABLE 	4 4 -30	; "Energy"
+	68	[513]	CALL     	2 3 2
+	69	[513]	SETTABLE 	1 -29 2	; "energy" -
+	70	[514]	GETTABUP 	2 0 -7	; _ENV "GM"
+	71	[514]	GETTABLE 	2 2 -8	; "GameModel"
+	72	[514]	SELF     	2 2 -32	; "GetGroupName"
+	73	[514]	CALL     	2 2 2
+	74	[514]	SETTABLE 	1 -31 2	; "group" -
+	75	[515]	GETTABUP 	2 0 -7	; _ENV "GM"
+	76	[515]	GETTABLE 	2 2 -8	; "GameModel"
+	77	[515]	SELF     	2 2 -34	; "GetAllGroupName"
+	78	[515]	CALL     	2 2 2
+	79	[515]	SETTABLE 	1 -33 2	; "group_all" -
+	80	[517]	GETTABUP 	2 0 -35	; _ENV "CSAiHelpManager"
+	81	[517]	SELF     	2 2 -36	; "UpdateUserInfo"
+	82	[517]	GETTABUP 	4 0 -2	; _ENV "tostring"
+	83	[517]	GETTABUP 	5 0 -7	; _ENV "GM"
+	84	[517]	GETTABLE 	5 5 -13	; "UserModel"
+	85	[517]	SELF     	5 5 -16	; "GetUserId"
+	86	[517]	CALL     	5 2 0
+	87	[517]	CALL     	4 0 2
+	88	[517]	GETTABUP 	5 0 -2	; _ENV "tostring"
+	89	[517]	GETTABUP 	6 0 -7	; _ENV "GM"
+	90	[517]	GETTABLE 	6 6 -37	; "UserProfileModel"
+	91	[517]	SELF     	6 6 -38	; "GetName"
+	92	[517]	LOADBOOL 	8 1 0
+	93	[517]	CALL     	6 3 0
+	94	[517]	CALL     	5 0 2
+	95	[517]	MOVE     	6 0
+	96	[517]	GETTABUP 	7 0 -39	; _ENV "json"
+	97	[517]	GETTABLE 	7 7 -40	; "encode"
+	98	[517]	MOVE     	8 1
+	99	[517]	CALL     	7 2 0
+	100	[517]	CALL     	2 0 1
+	101	[518]	GETTABUP 	2 0 -41	; _ENV "Log"
+	102	[518]	GETTABLE 	2 2 -42	; "Info"
+	103	[518]	LOADK    	3 -43	; "AiHelp Update Group Info Finished!!!"
+	104	[518]	CALL     	2 2 1
+	105	[519]	RETURN   	0 1
+constants (43) for 000001C8D35C0C30:
+	1	"channel_"
+	2	"tostring"
+	3	"GameConfig"
+	4	"CURRENT_PLATFORM"
+	5	",version_"
+	6	"GetCurrentVersion"
+	7	"GM"
+	8	"GameModel"
+	9	"NeedChildProtection"
+	10	","
+	11	"GetChildProtectionState"
+	12	"installUuid"
+	13	"UserModel"
+	14	"GetInstallUuid"
+	15	"uid"
+	16	"GetUserId"
+	17	"level"
+	18	"LevelModel"
+	19	"GetCurrentLevel"
+	20	"gold"
+	21	"PropertyDataManager"
+	22	"GetPropertyNum"
+	23	"EPropertyType"
+	24	"Gold"
+	25	"gem"
+	26	"Gem"
+	27	"exp"
+	28	"Experience"
+	29	"energy"
+	30	"Energy"
+	31	"group"
+	32	"GetGroupName"
+	33	"group_all"
+	34	"GetAllGroupName"
+	35	"CSAiHelpManager"
+	36	"UpdateUserInfo"
+	37	"UserProfileModel"
+	38	"GetName"
+	39	"json"
+	40	"encode"
+	41	"Log"
+	42	"Info"
+	43	"AiHelp Update Group Info Finished!!!"
+locals (2) for 000001C8D35C0C30:
+	0	tags	7	106
+	1	customData	80	106
+upvalues (1) for 000001C8D35C0C30:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:528,538> (35 instructions at 000001C8D35BFB30)
+2 params, 5 slots, 1 upvalue, 2 locals, 14 constants, 0 functions
+	1	[529]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[529]	EQ       	0 2 -2	; - nil
+	3	[529]	JMP      	0 1	; to 5
+	4	[529]	RETURN   	0 1
+	5	[533]	GETTABUP 	2 0 -3	; _ENV "DeviceInfo"
+	6	[533]	GETTABLE 	2 2 -4	; "IsSystemIOS"
+	7	[533]	CALL     	2 1 2
+	8	[533]	TEST     	2 0
+	9	[533]	JMP      	0 14	; to 24
+	10	[533]	GETTABUP 	2 0 -5	; _ENV "MINIGAME_WECHAT"
+	11	[533]	TEST     	2 0
+	12	[533]	JMP      	0 11	; to 24
+	13	[533]	GETTABUP 	2 0 -1	; _ENV "GM"
+	14	[533]	TEST     	2 0
+	15	[533]	JMP      	0 8	; to 24
+	16	[533]	GETTABUP 	2 0 -1	; _ENV "GM"
+	17	[533]	GETTABLE 	2 2 -6	; "InAppPurchaseModel"
+	18	[533]	TEST     	2 0
+	19	[533]	JMP      	0 4	; to 24
+	20	[534]	GETTABUP 	2 0 -1	; _ENV "GM"
+	21	[534]	GETTABLE 	2 2 -6	; "InAppPurchaseModel"
+	22	[534]	SELF     	2 2 -7	; "IncreaseXyxCheckTimes"
+	23	[534]	CALL     	2 2 1
+	24	[536]	GETTABUP 	2 0 -8	; _ENV "CSAiHelpManager"
+	25	[536]	SELF     	2 2 -9	; "OpenCustomerCenter"
+	26	[536]	TESTSET  	4 1 1
+	27	[536]	JMP      	0 1	; to 29
+	28	[536]	LOADK    	4 -10	; ""
+	29	[536]	CALL     	2 3 1
+	30	[537]	GETTABUP 	2 0 -11	; _ENV "EventDispatcher"
+	31	[537]	GETTABLE 	2 2 -12	; "DispatchEvent"
+	32	[537]	GETTABUP 	3 0 -13	; _ENV "EEventType"
+	33	[537]	GETTABLE 	3 3 -14	; "RefreshSettingStrongTip"
+	34	[537]	CALL     	2 2 1
+	35	[538]	RETURN   	0 1
+constants (14) for 000001C8D35BFB30:
+	1	"GM"
+	2	nil
+	3	"DeviceInfo"
+	4	"IsSystemIOS"
+	5	"MINIGAME_WECHAT"
+	6	"InAppPurchaseModel"
+	7	"IncreaseXyxCheckTimes"
+	8	"CSAiHelpManager"
+	9	"OpenCustomerCenter"
+	10	""
+	11	"EventDispatcher"
+	12	"DispatchEvent"
+	13	"EEventType"
+	14	"RefreshSettingStrongTip"
+locals (2) for 000001C8D35BFB30:
+	0	self	1	36
+	1	entryId	1	36
+upvalues (1) for 000001C8D35BFB30:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:540,542> (3 instructions at 000001C8D35BF8B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[541]	GETTABLE 	1 0 -1	; "m_bHasUnreadCSMsg"
+	2	[541]	RETURN   	1 2
+	3	[542]	RETURN   	0 1
+constants (1) for 000001C8D35BF8B0:
+	1	"m_bHasUnreadCSMsg"
+locals (1) for 000001C8D35BF8B0:
+	0	self	1	4
+upvalues (0) for 000001C8D35BF8B0:
+
+function <SDKHelper.lua:552,568> (19 instructions at 000001C8D35BFAB0)
+0 params, 4 slots, 1 upvalue, 0 locals, 8 constants, 0 functions
+	1	[553]	GETTABUP 	0 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[553]	TEST     	0 0
+	3	[553]	JMP      	0 6	; to 10
+	4	[554]	NEWTABLE 	0 3 0
+	5	[555]	LOADK    	1 -2	; "MSG1587396137217280370789059168567"
+	6	[556]	LOADK    	2 -3	; "MSG1587396137187278468517597514042"
+	7	[558]	LOADK    	3 -4	; "MSG1587396137287278468517597497658"
+	8	[558]	SETLIST  	0 3 1	; 1
+	9	[558]	RETURN   	0 2
+	10	[561]	GETTABUP 	0 0 -5	; _ENV "MINIGAME_WECHAT"
+	11	[561]	TEST     	0 0
+	12	[561]	JMP      	0 6	; to 19
+	13	[562]	NEWTABLE 	0 3 0
+	14	[563]	LOADK    	1 -6	; "kvyK4KYtZHolSsmkv37IfsPw2SS3_jUEXOYzAB2giTw"
+	15	[564]	LOADK    	2 -7	; "9tfyNZwpWdL8UX183ZEmjhQw-HNWS68GUp4GbL56cVU"
+	16	[566]	LOADK    	3 -8	; "zpdE2eosKKVkOfkwudUeMNU5yZurzn6qsPGwi_0cbOw"
+	17	[566]	SETLIST  	0 3 1	; 1
+	18	[566]	RETURN   	0 2
+	19	[568]	RETURN   	0 1
+constants (8) for 000001C8D35BFAB0:
+	1	"MINIGAME_DOUYIN"
+	2	"MSG1587396137217280370789059168567"
+	3	"MSG1587396137187278468517597514042"
+	4	"MSG1587396137287278468517597497658"
+	5	"MINIGAME_WECHAT"
+	6	"kvyK4KYtZHolSsmkv37IfsPw2SS3_jUEXOYzAB2giTw"
+	7	"9tfyNZwpWdL8UX183ZEmjhQw-HNWS68GUp4GbL56cVU"
+	8	"zpdE2eosKKVkOfkwudUeMNU5yZurzn6qsPGwi_0cbOw"
+locals (0) for 000001C8D35BFAB0:
+upvalues (1) for 000001C8D35BFAB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:570,576> (8 instructions at 000001C8D35BFBB0)
+0 params, 2 slots, 1 upvalue, 0 locals, 2 constants, 0 functions
+	1	[571]	GETTABUP 	0 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[571]	TEST     	0 0
+	3	[571]	JMP      	0 4	; to 8
+	4	[572]	NEWTABLE 	0 1 0
+	5	[574]	LOADK    	1 -2	; "CONTENT12559565570"
+	6	[574]	SETLIST  	0 1 1	; 1
+	7	[574]	RETURN   	0 2
+	8	[576]	RETURN   	0 1
+constants (2) for 000001C8D35BFBB0:
+	1	"MINIGAME_DOUYIN"
+	2	"CONTENT12559565570"
+locals (0) for 000001C8D35BFBB0:
+upvalues (1) for 000001C8D35BFBB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:578,586> (17 instructions at 000001C8D35C0AB0)
+1 param, 5 slots, 2 upvalues, 1 local, 7 constants, 1 function
+	1	[579]	GETUPVAL 	1 0	; getSubMessageIds
+	2	[579]	CALL     	1 1 2
+	3	[579]	EQ       	0 1 -1	; - nil
+	4	[579]	JMP      	0 5	; to 10
+	5	[580]	GETTABUP 	1 1 -2	; _ENV "Log"
+	6	[580]	GETTABLE 	1 1 -3	; "Error"
+	7	[580]	LOADK    	2 -4	; "[SDKHelper]Wrong Subscription platform"
+	8	[580]	CALL     	1 2 1
+	9	[581]	RETURN   	0 1
+	10	[583]	GETTABUP 	1 1 -5	; _ENV "XyxManager"
+	11	[583]	GETTABLE 	1 1 -6	; "Instance"
+	12	[583]	SELF     	1 1 -7	; "SubMessage"
+	13	[583]	GETUPVAL 	3 0	; getSubMessageIds
+	14	[583]	CALL     	3 1 2
+	15	[585]	CLOSURE  	4 0	; 000001C8D35C0430
+	16	[583]	CALL     	1 4 1
+	17	[586]	RETURN   	0 1
+constants (7) for 000001C8D35C0AB0:
+	1	nil
+	2	"Log"
+	3	"Error"
+	4	"[SDKHelper]Wrong Subscription platform"
+	5	"XyxManager"
+	6	"Instance"
+	7	"SubMessage"
+locals (1) for 000001C8D35C0AB0:
+	0	self	1	18
+upvalues (2) for 000001C8D35C0AB0:
+	0	getSubMessageIds	1	1
+	1	_ENV	0	0
+
+function <SDKHelper.lua:583,585> (11 instructions at 000001C8D35C0430)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[584]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[584]	GETTABLE 	2 2 -2	; "Info"
+	3	[584]	LOADK    	3 -3	; "SubMessage result: code="
+	4	[584]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	5	[584]	MOVE     	5 0
+	6	[584]	CALL     	4 2 2
+	7	[584]	LOADK    	5 -5	; ", message="
+	8	[584]	MOVE     	6 1
+	9	[584]	CONCAT   	3 3 6
+	10	[584]	CALL     	2 2 1
+	11	[585]	RETURN   	0 1
+constants (5) for 000001C8D35C0430:
+	1	"Log"
+	2	"Info"
+	3	"SubMessage result: code="
+	4	"tostring"
+	5	", message="
+locals (2) for 000001C8D35C0430:
+	0	code	1	12
+	1	message	1	12
+upvalues (1) for 000001C8D35C0430:
+	0	_ENV	0	1
+
+function <SDKHelper.lua:598,625> (14 instructions at 000001C8D35C0230)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 1 function
+	1	[603]	GETTABUP 	1 0 -1	; _ENV "MINIGAME"
+	2	[603]	TEST     	1 1
+	3	[603]	JMP      	0 1	; to 5
+	4	[604]	RETURN   	0 1
+	5	[607]	GETTABUP 	1 0 -2	; _ENV "Log"
+	6	[607]	GETTABLE 	1 1 -3	; "Info"
+	7	[607]	LOADK    	2 -4	; "GetUserInfo start"
+	8	[607]	CALL     	1 2 1
+	9	[608]	GETTABUP 	1 0 -5	; _ENV "XyxManager"
+	10	[608]	GETTABLE 	1 1 -6	; "Instance"
+	11	[608]	SELF     	1 1 -7	; "GetUserInfo"
+	12	[624]	CLOSURE  	3 0	; 000001C8D35C0E30
+	13	[608]	CALL     	1 3 1
+	14	[625]	RETURN   	0 1
+constants (7) for 000001C8D35C0230:
+	1	"MINIGAME"
+	2	"Log"
+	3	"Info"
+	4	"GetUserInfo start"
+	5	"XyxManager"
+	6	"Instance"
+	7	"GetUserInfo"
+locals (1) for 000001C8D35C0230:
+	0	self	1	15
+upvalues (1) for 000001C8D35C0230:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:608,624> (62 instructions at 000001C8D35C0E30)
+2 params, 10 slots, 1 upvalue, 5 locals, 19 constants, 0 functions
+	1	[609]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[609]	GETTABLE 	2 2 -2	; "Info"
+	3	[609]	LOADK    	3 -3	; "GetUserInfo result: code="
+	4	[609]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	5	[609]	MOVE     	5 0
+	6	[609]	CALL     	4 2 2
+	7	[609]	LOADK    	5 -5	; ", data="
+	8	[609]	MOVE     	6 1
+	9	[609]	CONCAT   	3 3 6
+	10	[609]	CALL     	2 2 1
+	11	[610]	EQ       	0 0 -6	; - 0
+	12	[610]	JMP      	0 49	; to 62
+	13	[611]	GETTABUP 	2 0 -7	; _ENV "json"
+	14	[611]	GETTABLE 	2 2 -8	; "decode"
+	15	[611]	MOVE     	3 1
+	16	[611]	CALL     	2 2 2
+	17	[611]	TEST     	2 1
+	18	[611]	JMP      	0 1	; to 20
+	19	[611]	NEWTABLE 	2 0 0
+	20	[612]	GETTABLE 	3 2 -9	; "nickName"
+	21	[613]	GETTABLE 	4 2 -10	; "avatarUrl"
+	22	[614]	GETTABUP 	5 0 -11	; _ENV "StringUtil"
+	23	[614]	GETTABLE 	5 5 -12	; "IsNilOrEmpty"
+	24	[614]	MOVE     	6 3
+	25	[614]	CALL     	5 2 2
+	26	[614]	TEST     	5 1
+	27	[614]	JMP      	0 34	; to 62
+	28	[614]	GETTABUP 	5 0 -11	; _ENV "StringUtil"
+	29	[614]	GETTABLE 	5 5 -12	; "IsNilOrEmpty"
+	30	[614]	MOVE     	6 4
+	31	[614]	CALL     	5 2 2
+	32	[614]	TEST     	5 1
+	33	[614]	JMP      	0 28	; to 62
+	34	[616]	GETTABUP 	5 0 -11	; _ENV "StringUtil"
+	35	[616]	GETTABLE 	5 5 -12	; "IsNilOrEmpty"
+	36	[616]	GETTABUP 	6 0 -13	; _ENV "GM"
+	37	[616]	GETTABLE 	6 6 -14	; "AccountManager"
+	38	[616]	SELF     	6 6 -15	; "GetMiniGameIcon"
+	39	[616]	CALL     	6 2 0
+	40	[616]	CALL     	5 0 2
+	41	[616]	TEST     	5 0
+	42	[616]	JMP      	0 19	; to 62
+	43	[617]	GETTABUP 	5 0 -13	; _ENV "GM"
+	44	[617]	GETTABLE 	5 5 -14	; "AccountManager"
+	45	[617]	SELF     	5 5 -16	; "SetAccountNameIcon"
+	46	[617]	MOVE     	7 3
+	47	[617]	MOVE     	8 4
+	48	[617]	CALL     	5 4 1
+	49	[618]	GETTABUP 	5 0 -1	; _ENV "Log"
+	50	[618]	GETTABLE 	5 5 -2	; "Info"
+	51	[618]	LOADK    	6 -17	; "GetUserInfo set name icon: name="
+	52	[618]	MOVE     	7 3
+	53	[618]	LOADK    	8 -18	; ", icon="
+	54	[618]	MOVE     	9 4
+	55	[618]	CONCAT   	6 6 9
+	56	[618]	CALL     	5 2 1
+	57	[620]	GETTABUP 	5 0 -13	; _ENV "GM"
+	58	[620]	GETTABLE 	5 5 -14	; "AccountManager"
+	59	[620]	SELF     	5 5 -19	; "SetMiniGameIcon"
+	60	[620]	MOVE     	7 4
+	61	[620]	CALL     	5 3 1
+	62	[624]	RETURN   	0 1
+constants (19) for 000001C8D35C0E30:
+	1	"Log"
+	2	"Info"
+	3	"GetUserInfo result: code="
+	4	"tostring"
+	5	", data="
+	6	0
+	7	"json"
+	8	"decode"
+	9	"nickName"
+	10	"avatarUrl"
+	11	"StringUtil"
+	12	"IsNilOrEmpty"
+	13	"GM"
+	14	"AccountManager"
+	15	"GetMiniGameIcon"
+	16	"SetAccountNameIcon"
+	17	"GetUserInfo set name icon: name="
+	18	", icon="
+	19	"SetMiniGameIcon"
+locals (5) for 000001C8D35C0E30:
+	0	code	1	63
+	1	data	1	63
+	2	userInfo	20	62
+	3	name	21	62
+	4	icon	22	62
+upvalues (1) for 000001C8D35C0E30:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:627,663> (42 instructions at 000001C8D35C0EB0)
+1 param, 8 slots, 2 upvalues, 3 locals, 20 constants, 1 function
+	1	[628]	GETTABUP 	1 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[628]	TEST     	1 1
+	3	[628]	JMP      	0 1	; to 5
+	4	[629]	RETURN   	0 1
+	5	[631]	GETTABUP 	1 0 -2	; _ENV "GM"
+	6	[631]	GETTABLE 	1 1 -3	; "ConfigModel"
+	7	[631]	SELF     	1 1 -4	; "IsServerControlOpen"
+	8	[631]	GETTABUP 	3 0 -5	; _ENV "EGeneralConfType"
+	9	[631]	GETTABLE 	3 3 -6	; "DisableDouYinFeed"
+	10	[631]	CALL     	1 3 2
+	11	[631]	TEST     	1 0
+	12	[631]	JMP      	0 1	; to 14
+	13	[632]	RETURN   	0 1
+	14	[634]	GETTABUP 	1 0 -2	; _ENV "GM"
+	15	[634]	GETTABLE 	1 1 -7	; "SDKHelper"
+	16	[634]	SELF     	1 1 -8	; "IsDYNovelRead"
+	17	[634]	CALL     	1 2 2
+	18	[634]	TEST     	1 0
+	19	[634]	JMP      	0 1	; to 21
+	20	[635]	RETURN   	0 1
+	21	[637]	GETTABLE 	1 0 -9	; "m_bRequestFeed"
+	22	[637]	TEST     	1 1
+	23	[637]	JMP      	0 18	; to 42
+	24	[638]	SETTABLE 	0 -9 -10	; "m_bRequestFeed" true
+	25	[639]	LOADK    	1 -11	; "play"
+	26	[640]	LOADK    	2 -12	; 2
+	27	[641]	GETTABUP 	3 0 -2	; _ENV "GM"
+	28	[641]	GETTABLE 	3 3 -13	; "BIManager"
+	29	[641]	SELF     	3 3 -14	; "LogNet"
+	30	[641]	GETTABUP 	5 0 -15	; _ENV "EBIType"
+	31	[641]	GETTABLE 	5 5 -16	; "NetworkCheckAction"
+	32	[641]	GETTABLE 	5 5 -17	; "DouyinFeed"
+	33	[641]	CALL     	3 3 1
+	34	[642]	GETTABUP 	3 0 -18	; _ENV "XyxManager"
+	35	[642]	GETTABLE 	3 3 -19	; "Instance"
+	36	[642]	SELF     	3 3 -20	; "CheckFeedSubscribeStatus"
+	37	[642]	MOVE     	5 1
+	38	[642]	MOVE     	6 2
+	39	[661]	CLOSURE  	7 0	; 000001C8D35BFF30
+	40	[642]	CALL     	3 5 1
+	41	[661]	JMP      	2 0	; to 42
+	42	[663]	RETURN   	0 1
+constants (20) for 000001C8D35C0EB0:
+	1	"MINIGAME_DOUYIN"
+	2	"GM"
+	3	"ConfigModel"
+	4	"IsServerControlOpen"
+	5	"EGeneralConfType"
+	6	"DisableDouYinFeed"
+	7	"SDKHelper"
+	8	"IsDYNovelRead"
+	9	"m_bRequestFeed"
+	10	true
+	11	"play"
+	12	2
+	13	"BIManager"
+	14	"LogNet"
+	15	"EBIType"
+	16	"NetworkCheckAction"
+	17	"DouyinFeed"
+	18	"XyxManager"
+	19	"Instance"
+	20	"CheckFeedSubscribeStatus"
+locals (3) for 000001C8D35C0EB0:
+	0	self	1	43
+	1	type	26	42
+	2	scene	27	42
+upvalues (2) for 000001C8D35C0EB0:
+	0	_ENV	0	0
+	1	getDyPlaySubscribeIds	1	2
+
+function <SDKHelper.lua:642,661> (52 instructions at 000001C8D35BFF30)
+2 params, 9 slots, 4 upvalues, 3 locals, 23 constants, 1 function
+	1	[643]	LOADK    	2 -1	; "code="
+	2	[643]	GETTABUP 	3 0 -2	; _ENV "tostring"
+	3	[643]	MOVE     	4 0
+	4	[643]	CALL     	3 2 2
+	5	[643]	LOADK    	4 -3	; ", message="
+	6	[643]	MOVE     	5 1
+	7	[643]	CONCAT   	2 2 5
+	8	[644]	GETTABUP 	3 0 -4	; _ENV "Log"
+	9	[644]	GETTABLE 	3 3 -5	; "Info"
+	10	[644]	LOADK    	4 -6	; "CheckFeedSubscribeStatus result: "
+	11	[644]	MOVE     	5 2
+	12	[644]	CONCAT   	4 4 5
+	13	[644]	CALL     	3 2 1
+	14	[645]	GETTABUP 	3 0 -7	; _ENV "GM"
+	15	[645]	GETTABLE 	3 3 -8	; "BIManager"
+	16	[645]	SELF     	3 3 -9	; "LogNet"
+	17	[645]	GETTABUP 	5 0 -10	; _ENV "EBIType"
+	18	[645]	GETTABLE 	5 5 -11	; "NetworkCheckAction"
+	19	[645]	GETTABLE 	5 5 -12	; "DouyinFeed"
+	20	[645]	MOVE     	6 2
+	21	[645]	CALL     	3 4 1
+	22	[647]	EQ       	0 0 -13	; - 0
+	23	[647]	JMP      	0 28	; to 52
+	24	[648]	GETTABUP 	3 0 -14	; _ENV "json"
+	25	[648]	GETTABLE 	3 3 -15	; "decode"
+	26	[648]	MOVE     	4 1
+	27	[648]	CALL     	3 2 2
+	28	[648]	MOVE     	1 3
+	29	[649]	TEST     	1 0
+	30	[649]	JMP      	0 21	; to 52
+	31	[649]	GETTABLE 	3 1 -16	; "status"
+	32	[649]	EQ       	0 3 -17	; - false
+	33	[649]	JMP      	0 18	; to 52
+	34	[650]	GETUPVAL 	3 1	; getDyPlaySubscribeIds
+	35	[650]	CALL     	3 1 2
+	36	[650]	EQ       	0 3 -18	; - nil
+	37	[650]	JMP      	0 5	; to 43
+	38	[651]	GETTABUP 	3 0 -4	; _ENV "Log"
+	39	[651]	GETTABLE 	3 3 -19	; "Error"
+	40	[651]	LOADK    	4 -20	; "[SDKHelper]Wrong RequestFeedSubscribe"
+	41	[651]	CALL     	3 2 1
+	42	[652]	RETURN   	0 1
+	43	[654]	GETTABUP 	3 0 -21	; _ENV "XyxManager"
+	44	[654]	GETTABLE 	3 3 -22	; "Instance"
+	45	[654]	SELF     	3 3 -23	; "RequestFeedSubscribe"
+	46	[654]	GETUPVAL 	5 2	; type
+	47	[654]	GETUPVAL 	6 3	; scene
+	48	[654]	GETUPVAL 	7 1	; getDyPlaySubscribeIds
+	49	[654]	CALL     	7 1 2
+	50	[658]	CLOSURE  	8 0	; 000001C8D35C15B0
+	51	[654]	CALL     	3 6 1
+	52	[661]	RETURN   	0 1
+constants (23) for 000001C8D35BFF30:
+	1	"code="
+	2	"tostring"
+	3	", message="
+	4	"Log"
+	5	"Info"
+	6	"CheckFeedSubscribeStatus result: "
+	7	"GM"
+	8	"BIManager"
+	9	"LogNet"
+	10	"EBIType"
+	11	"NetworkCheckAction"
+	12	"DouyinFeed"
+	13	0
+	14	"json"
+	15	"decode"
+	16	"status"
+	17	false
+	18	nil
+	19	"Error"
+	20	"[SDKHelper]Wrong RequestFeedSubscribe"
+	21	"XyxManager"
+	22	"Instance"
+	23	"RequestFeedSubscribe"
+locals (3) for 000001C8D35BFF30:
+	0	code	1	53
+	1	message	1	53
+	2	strInfo	8	53
+upvalues (4) for 000001C8D35BFF30:
+	0	_ENV	0	0
+	1	getDyPlaySubscribeIds	0	1
+	2	type	1	1
+	3	scene	1	2
+
+function <SDKHelper.lua:654,658> (22 instructions at 000001C8D35C15B0)
+2 params, 7 slots, 1 upvalue, 3 locals, 12 constants, 0 functions
+	1	[655]	LOADK    	2 -1	; "code="
+	2	[655]	GETTABUP 	3 0 -2	; _ENV "tostring"
+	3	[655]	MOVE     	4 0
+	4	[655]	CALL     	3 2 2
+	5	[655]	LOADK    	4 -3	; ", message="
+	6	[655]	MOVE     	5 1
+	7	[655]	CONCAT   	2 2 5
+	8	[656]	GETTABUP 	3 0 -4	; _ENV "Log"
+	9	[656]	GETTABLE 	3 3 -5	; "Info"
+	10	[656]	LOADK    	4 -6	; "RequestFeedSubscribe result: "
+	11	[656]	MOVE     	5 2
+	12	[656]	CONCAT   	4 4 5
+	13	[656]	CALL     	3 2 1
+	14	[657]	GETTABUP 	3 0 -7	; _ENV "GM"
+	15	[657]	GETTABLE 	3 3 -8	; "BIManager"
+	16	[657]	SELF     	3 3 -9	; "LogNet"
+	17	[657]	GETTABUP 	5 0 -10	; _ENV "EBIType"
+	18	[657]	GETTABLE 	5 5 -11	; "NetworkCheckAction"
+	19	[657]	GETTABLE 	5 5 -12	; "DouyinFeed"
+	20	[657]	MOVE     	6 2
+	21	[657]	CALL     	3 4 1
+	22	[658]	RETURN   	0 1
+constants (12) for 000001C8D35C15B0:
+	1	"code="
+	2	"tostring"
+	3	", message="
+	4	"Log"
+	5	"Info"
+	6	"RequestFeedSubscribe result: "
+	7	"GM"
+	8	"BIManager"
+	9	"LogNet"
+	10	"EBIType"
+	11	"NetworkCheckAction"
+	12	"DouyinFeed"
+locals (3) for 000001C8D35C15B0:
+	0	code	1	23
+	1	message	1	23
+	2	strInfo	8	23
+upvalues (1) for 000001C8D35C15B0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:671,677> (10 instructions at 000001C8D35BFE30)
+1 param, 8 slots, 1 upvalue, 3 locals, 5 constants, 1 function
+	1	[672]	LOADK    	1 -1	; "play"
+	2	[673]	LOADK    	2 -2	; 2
+	3	[674]	GETTABUP 	3 0 -3	; _ENV "XyxManager"
+	4	[674]	GETTABLE 	3 3 -4	; "Instance"
+	5	[674]	SELF     	3 3 -5	; "CheckFeedSubscribeStatus"
+	6	[674]	MOVE     	5 1
+	7	[674]	MOVE     	6 2
+	8	[676]	CLOSURE  	7 0	; 000001C8D35C0930
+	9	[674]	CALL     	3 5 1
+	10	[677]	RETURN   	0 1
+constants (5) for 000001C8D35BFE30:
+	1	"play"
+	2	2
+	3	"XyxManager"
+	4	"Instance"
+	5	"CheckFeedSubscribeStatus"
+locals (3) for 000001C8D35BFE30:
+	0	self	1	11
+	1	type	2	11
+	2	scene	3	11
+upvalues (1) for 000001C8D35BFE30:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:674,676> (11 instructions at 000001C8D35C0930)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[675]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[675]	GETTABLE 	2 2 -2	; "Info"
+	3	[675]	LOADK    	3 -3	; "CheckFeedSubscribeStatus result: code="
+	4	[675]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	5	[675]	MOVE     	5 0
+	6	[675]	CALL     	4 2 2
+	7	[675]	LOADK    	5 -5	; ", message="
+	8	[675]	MOVE     	6 1
+	9	[675]	CONCAT   	3 3 6
+	10	[675]	CALL     	2 2 1
+	11	[676]	RETURN   	0 1
+constants (5) for 000001C8D35C0930:
+	1	"Log"
+	2	"Info"
+	3	"CheckFeedSubscribeStatus result: code="
+	4	"tostring"
+	5	", message="
+locals (2) for 000001C8D35C0930:
+	0	code	1	12
+	1	message	1	12
+upvalues (1) for 000001C8D35C0930:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:679,689> (21 instructions at 000001C8D35C14B0)
+1 param, 9 slots, 2 upvalues, 3 locals, 9 constants, 1 function
+	1	[680]	LOADK    	1 -1	; "play"
+	2	[681]	LOADK    	2 -2	; 2
+	3	[682]	GETUPVAL 	3 0	; getDyPlaySubscribeIds
+	4	[682]	CALL     	3 1 2
+	5	[682]	EQ       	0 3 -3	; - nil
+	6	[682]	JMP      	0 5	; to 12
+	7	[683]	GETTABUP 	3 1 -4	; _ENV "Log"
+	8	[683]	GETTABLE 	3 3 -5	; "Error"
+	9	[683]	LOADK    	4 -6	; "[SDKHelper]Wrong RequestFeedSubscribe"
+	10	[683]	CALL     	3 2 1
+	11	[684]	RETURN   	0 1
+	12	[686]	GETTABUP 	3 1 -7	; _ENV "XyxManager"
+	13	[686]	GETTABLE 	3 3 -8	; "Instance"
+	14	[686]	SELF     	3 3 -9	; "RequestFeedSubscribe"
+	15	[686]	MOVE     	5 1
+	16	[686]	MOVE     	6 2
+	17	[686]	GETUPVAL 	7 0	; getDyPlaySubscribeIds
+	18	[686]	CALL     	7 1 2
+	19	[688]	CLOSURE  	8 0	; 000001C8D35C07B0
+	20	[686]	CALL     	3 6 1
+	21	[689]	RETURN   	0 1
+constants (9) for 000001C8D35C14B0:
+	1	"play"
+	2	2
+	3	nil
+	4	"Log"
+	5	"Error"
+	6	"[SDKHelper]Wrong RequestFeedSubscribe"
+	7	"XyxManager"
+	8	"Instance"
+	9	"RequestFeedSubscribe"
+locals (3) for 000001C8D35C14B0:
+	0	self	1	22
+	1	type	2	22
+	2	scene	3	22
+upvalues (2) for 000001C8D35C14B0:
+	0	getDyPlaySubscribeIds	1	2
+	1	_ENV	0	0
+
+function <SDKHelper.lua:686,688> (11 instructions at 000001C8D35C07B0)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[687]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[687]	GETTABLE 	2 2 -2	; "Info"
+	3	[687]	LOADK    	3 -3	; "RequestFeedSubscribe result: code="
+	4	[687]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	5	[687]	MOVE     	5 0
+	6	[687]	CALL     	4 2 2
+	7	[687]	LOADK    	5 -5	; ", message="
+	8	[687]	MOVE     	6 1
+	9	[687]	CONCAT   	3 3 6
+	10	[687]	CALL     	2 2 1
+	11	[688]	RETURN   	0 1
+constants (5) for 000001C8D35C07B0:
+	1	"Log"
+	2	"Info"
+	3	"RequestFeedSubscribe result: code="
+	4	"tostring"
+	5	", message="
+locals (2) for 000001C8D35C07B0:
+	0	code	1	12
+	1	message	1	12
+upvalues (1) for 000001C8D35C07B0:
+	0	_ENV	0	1
+
+function <SDKHelper.lua:691,697> (20 instructions at 000001C8D35BFEB0)
+1 param, 5 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[692]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[692]	GETTABLE 	1 1 -2	; "Info"
+	3	[692]	LOADK    	2 -3	; "[SDKHelper] _OnLevelUp:"
+	4	[692]	CALL     	1 2 1
+	5	[693]	GETTABUP 	1 0 -4	; _ENV "MINIGAME_ALIPAY"
+	6	[693]	TEST     	1 0
+	7	[693]	JMP      	0 12	; to 20
+	8	[693]	GETTABUP 	1 0 -5	; _ENV "GM"
+	9	[693]	GETTABLE 	1 1 -6	; "LevelModel"
+	10	[693]	SELF     	1 1 -7	; "GetCurrentLevel"
+	11	[693]	CALL     	1 2 2
+	12	[693]	EQ       	0 1 -8	; - 3
+	13	[693]	JMP      	0 6	; to 20
+	14	[695]	GETTABUP 	1 0 -9	; _ENV "CSPlatform"
+	15	[695]	SELF     	1 1 -10	; "Attr_TrackEvent"
+	16	[695]	GETTABUP 	3 0 -11	; _ENV "AttrEventEnum"
+	17	[695]	GETTABLE 	3 3 -12	; "Ready21stPay"
+	18	[695]	LOADK    	4 -13	; ""
+	19	[695]	CALL     	1 4 1
+	20	[697]	RETURN   	0 1
+constants (13) for 000001C8D35BFEB0:
+	1	"Log"
+	2	"Info"
+	3	"[SDKHelper] _OnLevelUp:"
+	4	"MINIGAME_ALIPAY"
+	5	"GM"
+	6	"LevelModel"
+	7	"GetCurrentLevel"
+	8	3
+	9	"CSPlatform"
+	10	"Attr_TrackEvent"
+	11	"AttrEventEnum"
+	12	"Ready21stPay"
+	13	""
+locals (1) for 000001C8D35BFEB0:
+	0	self	1	21
+upvalues (1) for 000001C8D35BFEB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:699,702> (13 instructions at 000001C8D35C11B0)
+2 params, 6 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[700]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[700]	GETTABLE 	2 2 -2	; "Info"
+	3	[700]	LOADK    	3 -3	; "[SDKHelper] _OnOrderFinished:"
+	4	[700]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	5	[700]	MOVE     	5 1
+	6	[700]	CALL     	4 2 2
+	7	[700]	CONCAT   	3 3 4
+	8	[700]	CALL     	2 2 1
+	9	[701]	SELF     	2 0 -5	; "_AlipayUploadAction"
+	10	[701]	LOADK    	4 -6	; "lmct_game_order_every_1"
+	11	[701]	LOADK    	5 -7	; 1
+	12	[701]	CALL     	2 4 1
+	13	[702]	RETURN   	0 1
+constants (7) for 000001C8D35C11B0:
+	1	"Log"
+	2	"Info"
+	3	"[SDKHelper] _OnOrderFinished:"
+	4	"tostring"
+	5	"_AlipayUploadAction"
+	6	"lmct_game_order_every_1"
+	7	1
+locals (2) for 000001C8D35C11B0:
+	0	self	1	14
+	1	msg	1	14
+upvalues (1) for 000001C8D35C11B0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:704,735> (98 instructions at 000001C8D35C1230)
+2 params, 13 slots, 1 upvalue, 7 locals, 33 constants, 0 functions
+	1	[705]	LOADK    	2 -1	; 5
+	2	[706]	LOADK    	3 -2	; 40
+	3	[707]	GETTABUP 	4 0 -3	; _ENV "PlayerPrefs"
+	4	[707]	GETTABLE 	4 4 -4	; "GetString"
+	5	[707]	GETTABUP 	5 0 -5	; _ENV "EMiscKey"
+	6	[707]	GETTABLE 	5 5 -6	; "AlipayMergeDate"
+	7	[707]	LOADK    	6 -7	; ""
+	8	[707]	CALL     	4 3 2
+	9	[708]	GETTABUP 	5 0 -8	; _ENV "TimeUtil"
+	10	[708]	GETTABLE 	5 5 -9	; "ToDate"
+	11	[708]	GETTABUP 	6 0 -10	; _ENV "GM"
+	12	[708]	GETTABLE 	6 6 -11	; "GameModel"
+	13	[708]	SELF     	6 6 -12	; "GetServerTime"
+	14	[708]	CALL     	6 2 2
+	15	[708]	GETTABUP 	7 0 -13	; _ENV "ETimeFormat"
+	16	[708]	GETTABLE 	7 7 -14	; "YMD"
+	17	[708]	CALL     	5 3 2
+	18	[709]	GETTABUP 	6 0 -15	; _ENV "Log"
+	19	[709]	GETTABLE 	6 6 -16	; "Info"
+	20	[709]	LOADK    	7 -17	; "[SDKHelper] _OnItemMerged:"
+	21	[709]	LOADK    	8 -18	; ",mergeDate="
+	22	[709]	MOVE     	9 4
+	23	[709]	LOADK    	10 -19	; ",currentData="
+	24	[709]	MOVE     	11 5
+	25	[709]	CONCAT   	7 7 11
+	26	[709]	CALL     	6 2 1
+	27	[710]	EQ       	1 4 5
+	28	[710]	JMP      	0 13	; to 42
+	29	[711]	GETTABUP 	6 0 -3	; _ENV "PlayerPrefs"
+	30	[711]	GETTABLE 	6 6 -20	; "SetString"
+	31	[711]	GETTABUP 	7 0 -5	; _ENV "EMiscKey"
+	32	[711]	GETTABLE 	7 7 -6	; "AlipayMergeDate"
+	33	[711]	MOVE     	8 5
+	34	[711]	CALL     	6 3 1
+	35	[712]	GETTABUP 	6 0 -3	; _ENV "PlayerPrefs"
+	36	[712]	GETTABLE 	6 6 -21	; "SetInt"
+	37	[712]	GETTABUP 	7 0 -5	; _ENV "EMiscKey"
+	38	[712]	GETTABLE 	7 7 -22	; "AlipayMergeCount"
+	39	[712]	LOADK    	8 -23	; 0
+	40	[712]	CALL     	6 3 1
+	41	[713]	SETTABLE 	0 -24 -23	; "m_itemMergedCount" 0
+	42	[715]	GETTABUP 	6 0 -3	; _ENV "PlayerPrefs"
+	43	[715]	GETTABLE 	6 6 -25	; "GetInt"
+	44	[715]	GETTABUP 	7 0 -5	; _ENV "EMiscKey"
+	45	[715]	GETTABLE 	7 7 -22	; "AlipayMergeCount"
+	46	[715]	LOADK    	8 -23	; 0
+	47	[715]	CALL     	6 3 2
+	48	[716]	LE       	0 3 6
+	49	[716]	JMP      	0 5	; to 55
+	50	[717]	GETTABUP 	7 0 -15	; _ENV "Log"
+	51	[717]	GETTABLE 	7 7 -16	; "Info"
+	52	[717]	LOADK    	8 -26	; "Merge count > 40"
+	53	[717]	CALL     	7 2 1
+	54	[718]	RETURN   	0 1
+	55	[720]	GETTABUP 	7 0 -27	; _ENV "IsNil"
+	56	[720]	GETTABLE 	8 0 -24	; "m_itemMergedCount"
+	57	[720]	CALL     	7 2 2
+	58	[720]	TEST     	7 0
+	59	[720]	JMP      	0 6	; to 66
+	60	[721]	SETTABLE 	0 -24 -28	; "m_itemMergedCount" 1
+	61	[722]	GETTABUP 	7 0 -15	; _ENV "Log"
+	62	[722]	GETTABLE 	7 7 -16	; "Info"
+	63	[722]	LOADK    	8 -29	; "[SDKHelper] _OnItemMerged:self.m_itemMergedCount nil"
+	64	[722]	CALL     	7 2 1
+	65	[722]	JMP      	0 3	; to 69
+	66	[724]	GETTABLE 	7 0 -24	; "m_itemMergedCount"
+	67	[724]	ADD      	7 7 -28	; - 1
+	68	[724]	SETTABLE 	0 -24 7	; "m_itemMergedCount" -
+	69	[726]	GETTABUP 	7 0 -15	; _ENV "Log"
+	70	[726]	GETTABLE 	7 7 -16	; "Info"
+	71	[726]	LOADK    	8 -17	; "[SDKHelper] _OnItemMerged:"
+	72	[726]	GETTABUP 	9 0 -30	; _ENV "tostring"
+	73	[726]	GETTABLE 	10 0 -24	; "m_itemMergedCount"
+	74	[726]	CALL     	9 2 2
+	75	[726]	LOADK    	10 -31	; ",: "
+	76	[726]	GETTABUP 	11 0 -30	; _ENV "tostring"
+	77	[726]	MOVE     	12 1
+	78	[726]	CALL     	11 2 2
+	79	[726]	CONCAT   	8 8 11
+	80	[726]	CALL     	7 2 1
+	81	[727]	GETTABLE 	7 0 -24	; "m_itemMergedCount"
+	82	[727]	LE       	0 2 7
+	83	[727]	JMP      	0 9	; to 93
+	84	[728]	SETTABLE 	0 -24 -23	; "m_itemMergedCount" 0
+	85	[729]	ADD      	6 6 -28	; - 1
+	86	[730]	GETTABUP 	7 0 -3	; _ENV "PlayerPrefs"
+	87	[730]	GETTABLE 	7 7 -21	; "SetInt"
+	88	[730]	GETTABUP 	8 0 -5	; _ENV "EMiscKey"
+	89	[730]	GETTABLE 	8 8 -22	; "AlipayMergeCount"
+	90	[730]	MOVE     	9 6
+	91	[730]	CALL     	7 3 1
+	92	[730]	JMP      	0 1	; to 94
+	93	[732]	RETURN   	0 1
+	94	[734]	SELF     	7 0 -32	; "_AlipayUploadAction"
+	95	[734]	LOADK    	9 -33	; "lmct_game_merge_every_5"
+	96	[734]	LOADK    	10 -28	; 1
+	97	[734]	CALL     	7 4 1
+	98	[735]	RETURN   	0 1
+constants (33) for 000001C8D35C1230:
+	1	5
+	2	40
+	3	"PlayerPrefs"
+	4	"GetString"
+	5	"EMiscKey"
+	6	"AlipayMergeDate"
+	7	""
+	8	"TimeUtil"
+	9	"ToDate"
+	10	"GM"
+	11	"GameModel"
+	12	"GetServerTime"
+	13	"ETimeFormat"
+	14	"YMD"
+	15	"Log"
+	16	"Info"
+	17	"[SDKHelper] _OnItemMerged:"
+	18	",mergeDate="
+	19	",currentData="
+	20	"SetString"
+	21	"SetInt"
+	22	"AlipayMergeCount"
+	23	0
+	24	"m_itemMergedCount"
+	25	"GetInt"
+	26	"Merge count > 40"
+	27	"IsNil"
+	28	1
+	29	"[SDKHelper] _OnItemMerged:self.m_itemMergedCount nil"
+	30	"tostring"
+	31	",: "
+	32	"_AlipayUploadAction"
+	33	"lmct_game_merge_every_5"
+locals (7) for 000001C8D35C1230:
+	0	self	1	99
+	1	msg	1	99
+	2	EVERY_UPLOAD_COUNT	2	99
+	3	UPLOAD_TOTAL_COUNT	3	99
+	4	mergeDate	9	99
+	5	currentData	18	99
+	6	count	48	99
+upvalues (1) for 000001C8D35C1230:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:737,797> (136 instructions at 000001C8D35C0FB0)
+3 params, 17 slots, 1 upvalue, 12 locals, 59 constants, 1 function
+	1	[738]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[738]	GETTABLE 	3 3 -2	; "Info"
+	3	[738]	LOADK    	4 -3	; "[SDKHelper] _AlipayUploadAction:"
+	4	[738]	GETTABUP 	5 0 -4	; _ENV "tostring"
+	5	[738]	MOVE     	6 1
+	6	[738]	CALL     	5 2 2
+	7	[738]	CONCAT   	4 4 5
+	8	[738]	CALL     	3 2 1
+	9	[739]	GETTABUP 	3 0 -5	; _ENV "MINIGAME_ALIPAY"
+	10	[739]	TEST     	3 1
+	11	[739]	JMP      	0 5	; to 17
+	12	[740]	GETTABUP 	3 0 -1	; _ENV "Log"
+	13	[740]	GETTABLE 	3 3 -2	; "Info"
+	14	[740]	LOADK    	4 -6	; "[SDKHelper] _AlipayUploadAction:not minigame_alipay"
+	15	[740]	CALL     	3 2 1
+	16	[741]	RETURN   	0 1
+	17	[743]	GETTABUP 	3 0 -7	; _ENV "TimeUtil"
+	18	[743]	GETTABLE 	3 3 -8	; "ToDate"
+	19	[743]	GETTABUP 	4 0 -7	; _ENV "TimeUtil"
+	20	[743]	GETTABLE 	4 4 -9	; "GetTimeInSecond"
+	21	[743]	CALL     	4 1 2
+	22	[743]	GETTABUP 	5 0 -10	; _ENV "ETimeFormat"
+	23	[743]	GETTABLE 	5 5 -11	; "YMDHMS"
+	24	[743]	CALL     	3 3 2
+	25	[744]	GETTABUP 	4 0 -12	; _ENV "DeviceInfo"
+	26	[744]	GETTABLE 	4 4 -13	; "GetOpenID"
+	27	[744]	CALL     	4 1 2
+	28	[745]	LOADNIL  	5 0
+	29	[746]	GETTABUP 	6 0 -14	; _ENV "XyxManager"
+	30	[746]	GETTABLE 	6 6 -15	; "Instance"
+	31	[746]	SELF     	6 6 -16	; "GetLaunchInfo"
+	32	[746]	CALL     	6 2 2
+	33	[747]	GETTABUP 	7 0 -17	; _ENV "json"
+	34	[747]	GETTABLE 	7 7 -18	; "decode"
+	35	[747]	MOVE     	8 6
+	36	[747]	CALL     	7 2 2
+	37	[748]	GETTABUP 	8 0 -19	; _ENV "Table"
+	38	[748]	GETTABLE 	8 8 -20	; "IsEmpty"
+	39	[748]	MOVE     	9 7
+	40	[748]	CALL     	8 2 2
+	41	[748]	TEST     	8 0
+	42	[748]	JMP      	0 2	; to 45
+	43	[749]	LOADK    	5 -21	; "other"
+	44	[749]	JMP      	0 8	; to 53
+	45	[751]	GETTABLE 	8 7 -22	; "query"
+	46	[752]	GETTABUP 	9 0 -19	; _ENV "Table"
+	47	[752]	GETTABLE 	9 9 -20	; "IsEmpty"
+	48	[752]	MOVE     	10 8
+	49	[752]	CALL     	9 2 2
+	50	[752]	TEST     	9 1
+	51	[752]	JMP      	0 1	; to 53
+	52	[753]	GETTABLE 	5 8 -23	; "channel"
+	53	[756]	GETTABUP 	8 0 -24	; _ENV "StringUtil"
+	54	[756]	GETTABLE 	8 8 -25	; "IsNilOrEmpty"
+	55	[756]	MOVE     	9 5
+	56	[756]	CALL     	8 2 2
+	57	[756]	TEST     	8 0
+	58	[756]	JMP      	0 1	; to 60
+	59	[757]	LOADK    	5 -21	; "other"
+	60	[760]	GETTABUP 	8 0 -1	; _ENV "Log"
+	61	[760]	GETTABLE 	8 8 -2	; "Info"
+	62	[760]	LOADK    	9 -26	; "[SDKHelper] _AlipayUploadAction: action_finish_date="
+	63	[760]	MOVE     	10 3
+	64	[760]	LOADK    	11 -27	; ", open_id="
+	65	[760]	MOVE     	12 4
+	66	[760]	LOADK    	13 -28	; ", action_code="
+	67	[760]	MOVE     	14 1
+	68	[760]	LOADK    	15 -29	; ", action_finish_channel="
+	69	[760]	MOVE     	16 5
+	70	[760]	CONCAT   	9 9 16
+	71	[760]	CALL     	8 2 1
+	72	[761]	LOADK    	8 -30	; "https://xyx.cliapi.microfun.cn/zhifubao/uploadActionNew/"
+	73	[762]	GETTABUP 	9 0 -31	; _ENV "GameConfig"
+	74	[762]	GETTABLE 	9 9 -32	; "IsTestMode"
+	75	[762]	CALL     	9 1 2
+	76	[762]	TEST     	9 0
+	77	[762]	JMP      	0 1	; to 79
+	78	[763]	LOADK    	8 -33	; "https://ctrl-test.china.corp.microfun.cn/zhifubao/uploadActionNew/"
+	79	[765]	MOVE     	9 8
+	80	[765]	GETTABUP 	10 0 -31	; _ENV "GameConfig"
+	81	[765]	GETTABLE 	10 10 -34	; "GetGameToken"
+	82	[765]	CALL     	10 1 2
+	83	[765]	CONCAT   	8 9 10
+	84	[766]	GETTABUP 	9 0 -1	; _ENV "Log"
+	85	[766]	GETTABLE 	9 9 -2	; "Info"
+	86	[766]	LOADK    	10 -35	; "[SDKHelper] _AlipayUploadAction: url="
+	87	[766]	MOVE     	11 8
+	88	[766]	CONCAT   	10 10 11
+	89	[766]	CALL     	9 2 1
+	90	[767]	GETTABUP 	9 0 -36	; _ENV "CSNetLibManager"
+	91	[767]	SELF     	9 9 -37	; "CreateGeneralHttpRequest"
+	92	[767]	MOVE     	11 8
+	93	[767]	LOADK    	12 -38	; "POST"
+	94	[767]	LOADK    	13 -39	; 1000
+	95	[767]	LOADK    	14 -40	; 0
+	96	[767]	CALL     	9 6 2
+	97	[769]	SELF     	10 9 -41	; "SetHeader"
+	98	[769]	LOADK    	12 -42	; "content-type"
+	99	[769]	LOADK    	13 -43	; "application/x-www-form-urlencoded"
+	100	[769]	CALL     	10 4 1
+	101	[771]	LOADK    	10 -44	; "action_finish_date="
+	102	[771]	MOVE     	11 3
+	103	[771]	CONCAT   	10 10 11
+	104	[772]	MOVE     	11 10
+	105	[772]	LOADK    	12 -45	; "&open_id="
+	106	[772]	MOVE     	13 4
+	107	[772]	CONCAT   	10 11 13
+	108	[773]	MOVE     	11 10
+	109	[773]	LOADK    	12 -46	; "&action_code="
+	110	[773]	MOVE     	13 1
+	111	[773]	CONCAT   	10 11 13
+	112	[774]	MOVE     	11 10
+	113	[774]	LOADK    	12 -47	; "&action_finish_channel="
+	114	[774]	MOVE     	13 5
+	115	[774]	CONCAT   	10 11 13
+	116	[776]	SELF     	11 9 -48	; "AppendBody"
+	117	[776]	MOVE     	13 10
+	118	[776]	CALL     	11 3 1
+	119	[778]	GETTABUP 	11 0 -49	; _ENV "GM"
+	120	[778]	GETTABLE 	11 11 -50	; "BIManager"
+	121	[778]	SELF     	11 11 -51	; "LogNet"
+	122	[778]	GETTABUP 	13 0 -52	; _ENV "EBIType"
+	123	[778]	GETTABLE 	13 13 -53	; "NetworkCheckAction"
+	124	[778]	GETTABLE 	13 13 -54	; "AlipayOrderFinishedRequestStart"
+	125	[778]	MOVE     	14 10
+	126	[778]	CALL     	11 4 1
+	127	[779]	SELF     	11 9 -55	; "SetCallback"
+	128	[794]	CLOSURE  	13 0	; 000001C8D35C0330
+	129	[779]	CALL     	11 3 1
+	130	[795]	GETTABUP 	11 0 -56	; _ENV "Log"
+	131	[795]	GETTABLE 	11 11 -57	; "Info"
+	132	[795]	LOADK    	12 -58	; "[SDKHelper] al uploadAction Request."
+	133	[795]	CALL     	11 2 1
+	134	[796]	SELF     	11 9 -59	; "Send"
+	135	[796]	CALL     	11 2 1
+	136	[797]	RETURN   	0 1
+constants (59) for 000001C8D35C0FB0:
+	1	"Log"
+	2	"Info"
+	3	"[SDKHelper] _AlipayUploadAction:"
+	4	"tostring"
+	5	"MINIGAME_ALIPAY"
+	6	"[SDKHelper] _AlipayUploadAction:not minigame_alipay"
+	7	"TimeUtil"
+	8	"ToDate"
+	9	"GetTimeInSecond"
+	10	"ETimeFormat"
+	11	"YMDHMS"
+	12	"DeviceInfo"
+	13	"GetOpenID"
+	14	"XyxManager"
+	15	"Instance"
+	16	"GetLaunchInfo"
+	17	"json"
+	18	"decode"
+	19	"Table"
+	20	"IsEmpty"
+	21	"other"
+	22	"query"
+	23	"channel"
+	24	"StringUtil"
+	25	"IsNilOrEmpty"
+	26	"[SDKHelper] _AlipayUploadAction: action_finish_date="
+	27	", open_id="
+	28	", action_code="
+	29	", action_finish_channel="
+	30	"https://xyx.cliapi.microfun.cn/zhifubao/uploadActionNew/"
+	31	"GameConfig"
+	32	"IsTestMode"
+	33	"https://ctrl-test.china.corp.microfun.cn/zhifubao/uploadActionNew/"
+	34	"GetGameToken"
+	35	"[SDKHelper] _AlipayUploadAction: url="
+	36	"CSNetLibManager"
+	37	"CreateGeneralHttpRequest"
+	38	"POST"
+	39	1000
+	40	0
+	41	"SetHeader"
+	42	"content-type"
+	43	"application/x-www-form-urlencoded"
+	44	"action_finish_date="
+	45	"&open_id="
+	46	"&action_code="
+	47	"&action_finish_channel="
+	48	"AppendBody"
+	49	"GM"
+	50	"BIManager"
+	51	"LogNet"
+	52	"EBIType"
+	53	"NetworkCheckAction"
+	54	"AlipayOrderFinishedRequestStart"
+	55	"SetCallback"
+	56	"Log"
+	57	"Info"
+	58	"[SDKHelper] al uploadAction Request."
+	59	"Send"
+locals (12) for 000001C8D35C0FB0:
+	0	self	1	137
+	1	action_code	1	137
+	2	retryTime	1	137
+	3	action_finish_date	25	137
+	4	open_id	28	137
+	5	action_finish_channel	29	137
+	6	info	33	137
+	7	tbInfo	37	137
+	8	query	46	53
+	9	url	73	137
+	10	reqCtx	97	137
+	11	body	104	137
+upvalues (1) for 000001C8D35C0FB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:779,794> (70 instructions at 000001C8D35C0330)
+0 params, 7 slots, 5 upvalues, 3 locals, 27 constants, 0 functions
+	1	[780]	GETTABUP 	0 0 -1	; reqCtx "Rcode"
+	2	[780]	GETTABUP 	1 1 -2	; _ENV "ResultCode"
+	3	[780]	GETTABLE 	1 1 -3	; "Succeeded"
+	4	[780]	EQ       	0 0 1
+	5	[780]	JMP      	0 47	; to 53
+	6	[780]	GETTABUP 	0 0 -4	; reqCtx "RespBody"
+	7	[780]	GETTABLE 	0 0 -5	; "Bytes"
+	8	[780]	LT       	0 -6 0	; 0 -
+	9	[780]	JMP      	0 43	; to 53
+	10	[781]	GETUPVAL 	0 0	; reqCtx
+	11	[781]	SELF     	0 0 -7	; "GetResponseString"
+	12	[781]	CALL     	0 2 2
+	13	[782]	GETTABUP 	1 1 -8	; _ENV "Log"
+	14	[782]	GETTABLE 	1 1 -9	; "Info"
+	15	[782]	LOADK    	2 -10	; "[SDKHelper] al uploadAction Success: "
+	16	[782]	MOVE     	3 0
+	17	[782]	CONCAT   	2 2 3
+	18	[782]	CALL     	1 2 1
+	19	[783]	GETTABUP 	1 1 -11	; _ENV "GM"
+	20	[783]	GETTABLE 	1 1 -12	; "BIManager"
+	21	[783]	SELF     	1 1 -13	; "LogNet"
+	22	[783]	GETTABUP 	3 1 -14	; _ENV "EBIType"
+	23	[783]	GETTABLE 	3 3 -15	; "NetworkCheckAction"
+	24	[783]	GETTABLE 	3 3 -16	; "AlipayOrderFinishedRequestSuccess"
+	25	[783]	MOVE     	4 0
+	26	[783]	CALL     	1 4 1
+	27	[784]	GETTABUP 	1 1 -17	; _ENV "json"
+	28	[784]	GETTABLE 	1 1 -18	; "decode"
+	29	[784]	MOVE     	2 0
+	30	[784]	CALL     	1 2 2
+	31	[784]	TEST     	1 1
+	32	[784]	JMP      	0 1	; to 34
+	33	[784]	NEWTABLE 	1 0 0
+	34	[785]	GETTABLE 	2 1 -19	; "code"
+	35	[786]	GETTABUP 	3 1 -8	; _ENV "Log"
+	36	[786]	GETTABLE 	3 3 -9	; "Info"
+	37	[786]	LOADK    	4 -20	; "[SDKHelper] al uploadAction code: "
+	38	[786]	GETTABUP 	5 1 -21	; _ENV "tostring"
+	39	[786]	MOVE     	6 2
+	40	[786]	CALL     	5 2 2
+	41	[786]	CONCAT   	4 4 5
+	42	[786]	CALL     	3 2 1
+	43	[787]	EQ       	1 2 -22	; - "10000"
+	44	[787]	JMP      	0 25	; to 70
+	45	[787]	EQ       	1 2 -23	; - 10000
+	46	[787]	JMP      	0 23	; to 70
+	47	[788]	GETUPVAL 	3 2	; self
+	48	[788]	SELF     	3 3 -24	; "_RetryAlipayUploadAction"
+	49	[788]	GETUPVAL 	5 3	; action_code
+	50	[788]	GETUPVAL 	6 4	; retryTime
+	51	[788]	CALL     	3 4 1
+	52	[789]	JMP      	0 17	; to 70
+	53	[791]	GETTABUP 	0 1 -8	; _ENV "Log"
+	54	[791]	GETTABLE 	0 0 -9	; "Info"
+	55	[791]	LOADK    	1 -25	; "[SDKHelper] al uploadAction Failed:"
+	56	[791]	GETTABUP 	2 1 -21	; _ENV "tostring"
+	57	[791]	GETUPVAL 	3 0	; reqCtx
+	58	[791]	SELF     	3 3 -7	; "GetResponseString"
+	59	[791]	CALL     	3 2 0
+	60	[791]	CALL     	2 0 2
+	61	[791]	CONCAT   	1 1 2
+	62	[791]	GETTABUP 	2 1 -26	; _ENV "LogTag"
+	63	[791]	GETTABLE 	2 2 -27	; "Default"
+	64	[791]	CALL     	0 3 1
+	65	[792]	GETUPVAL 	0 2	; self
+	66	[792]	SELF     	0 0 -24	; "_RetryAlipayUploadAction"
+	67	[792]	GETUPVAL 	2 3	; action_code
+	68	[792]	GETUPVAL 	3 4	; retryTime
+	69	[792]	CALL     	0 4 1
+	70	[794]	RETURN   	0 1
+constants (27) for 000001C8D35C0330:
+	1	"Rcode"
+	2	"ResultCode"
+	3	"Succeeded"
+	4	"RespBody"
+	5	"Bytes"
+	6	0
+	7	"GetResponseString"
+	8	"Log"
+	9	"Info"
+	10	"[SDKHelper] al uploadAction Success: "
+	11	"GM"
+	12	"BIManager"
+	13	"LogNet"
+	14	"EBIType"
+	15	"NetworkCheckAction"
+	16	"AlipayOrderFinishedRequestSuccess"
+	17	"json"
+	18	"decode"
+	19	"code"
+	20	"[SDKHelper] al uploadAction code: "
+	21	"tostring"
+	22	"10000"
+	23	10000
+	24	"_RetryAlipayUploadAction"
+	25	"[SDKHelper] al uploadAction Failed:"
+	26	"LogTag"
+	27	"Default"
+locals (3) for 000001C8D35C0330:
+	0	respBody	13	52
+	1	resultData	34	52
+	2	code	35	52
+upvalues (5) for 000001C8D35C0330:
+	0	reqCtx	1	9
+	1	_ENV	0	0
+	2	self	1	0
+	3	action_code	1	1
+	4	retryTime	1	2
+
+function <SDKHelper.lua:799,825> (46 instructions at 000001C8D35C09B0)
+3 params, 7 slots, 1 upvalue, 3 locals, 13 constants, 1 function
+	1	[800]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[800]	GETTABLE 	3 3 -2	; "Info"
+	3	[800]	LOADK    	4 -3	; "SDKHelper:_RetryAlipayUploadAction"
+	4	[800]	CALL     	3 2 1
+	5	[801]	GETTABUP 	3 0 -4	; _ENV "MINIGAME_ALIPAY"
+	6	[801]	TEST     	3 1
+	7	[801]	JMP      	0 5	; to 13
+	8	[802]	GETTABUP 	3 0 -1	; _ENV "Log"
+	9	[802]	GETTABLE 	3 3 -2	; "Info"
+	10	[802]	LOADK    	4 -5	; "SDKHelper:_RetryAlipayUploadAction:not MINIGAME_ALIPAY"
+	11	[802]	CALL     	3 2 1
+	12	[803]	RETURN   	0 1
+	13	[805]	GETTABUP 	3 0 -6	; _ENV "IsNil"
+	14	[805]	MOVE     	4 0
+	15	[805]	CALL     	3 2 2
+	16	[805]	TEST     	3 0
+	17	[805]	JMP      	0 5	; to 23
+	18	[806]	GETTABUP 	3 0 -1	; _ENV "Log"
+	19	[806]	GETTABLE 	3 3 -2	; "Info"
+	20	[806]	LOADK    	4 -7	; "SDKHelper:_RetryAlipayUploadAction:self nil"
+	21	[806]	CALL     	3 2 1
+	22	[807]	RETURN   	0 1
+	23	[810]	GETTABUP 	3 0 -6	; _ENV "IsNil"
+	24	[810]	MOVE     	4 2
+	25	[810]	CALL     	3 2 2
+	26	[810]	TEST     	3 0
+	27	[810]	JMP      	0 5	; to 33
+	28	[811]	GETTABUP 	3 0 -1	; _ENV "Log"
+	29	[811]	GETTABLE 	3 3 -2	; "Info"
+	30	[811]	LOADK    	4 -8	; "retryTime nil"
+	31	[811]	CALL     	3 2 1
+	32	[812]	RETURN   	0 1
+	33	[815]	LT       	0 -9 2	; 3 -
+	34	[815]	JMP      	0 5	; to 40
+	35	[816]	GETTABUP 	3 0 -1	; _ENV "Log"
+	36	[816]	GETTABLE 	3 3 -2	; "Info"
+	37	[816]	LOADK    	4 -10	; "SDKHelper:_RetryAlipayUploadAction >3"
+	38	[816]	CALL     	3 2 1
+	39	[817]	RETURN   	0 1
+	40	[820]	ADD      	2 2 -11	; - 1
+	41	[821]	GETTABUP 	3 0 -12	; _ENV "DelayExecuteFunc"
+	42	[824]	CLOSURE  	4 0	; 000001C8D35C1630
+	43	[824]	MUL      	5 -13 2	; 2 -
+	44	[824]	MOVE     	6 0
+	45	[821]	CALL     	3 4 1
+	46	[825]	RETURN   	0 1
+constants (13) for 000001C8D35C09B0:
+	1	"Log"
+	2	"Info"
+	3	"SDKHelper:_RetryAlipayUploadAction"
+	4	"MINIGAME_ALIPAY"
+	5	"SDKHelper:_RetryAlipayUploadAction:not MINIGAME_ALIPAY"
+	6	"IsNil"
+	7	"SDKHelper:_RetryAlipayUploadAction:self nil"
+	8	"retryTime nil"
+	9	3
+	10	"SDKHelper:_RetryAlipayUploadAction >3"
+	11	1
+	12	"DelayExecuteFunc"
+	13	2
+locals (3) for 000001C8D35C09B0:
+	0	self	1	47
+	1	action_code	1	47
+	2	retryTime	1	47
+upvalues (1) for 000001C8D35C09B0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:821,824> (14 instructions at 000001C8D35C1630)
+0 params, 4 slots, 4 upvalues, 0 locals, 5 constants, 0 functions
+	1	[822]	GETTABUP 	0 0 -1	; _ENV "Log"
+	2	[822]	GETTABLE 	0 0 -2	; "Info"
+	3	[822]	LOADK    	1 -3	; "SDKHelper:_RetryAlipayUploadAction delay:"
+	4	[822]	GETTABUP 	2 0 -4	; _ENV "tostring"
+	5	[822]	GETUPVAL 	3 1	; retryTime
+	6	[822]	CALL     	2 2 2
+	7	[822]	CONCAT   	1 1 2
+	8	[822]	CALL     	0 2 1
+	9	[823]	GETUPVAL 	0 2	; self
+	10	[823]	SELF     	0 0 -5	; "_AlipayUploadAction"
+	11	[823]	GETUPVAL 	2 3	; action_code
+	12	[823]	GETUPVAL 	3 1	; retryTime
+	13	[823]	CALL     	0 4 1
+	14	[824]	RETURN   	0 1
+constants (5) for 000001C8D35C1630:
+	1	"Log"
+	2	"Info"
+	3	"SDKHelper:_RetryAlipayUploadAction delay:"
+	4	"tostring"
+	5	"_AlipayUploadAction"
+locals (0) for 000001C8D35C1630:
+upvalues (4) for 000001C8D35C1630:
+	0	_ENV	0	0
+	1	retryTime	1	2
+	2	self	1	0
+	3	action_code	1	1
+
+function <SDKHelper.lua:829,863> (42 instructions at 000001C8D35C1430)
+2 params, 10 slots, 1 upvalue, 6 locals, 23 constants, 1 function
+	1	[830]	TEST     	1 1
+	2	[830]	JMP      	0 1	; to 4
+	3	[831]	RETURN   	0 1
+	4	[834]	GETTABUP 	2 0 -1	; _ENV "DeviceInfo"
+	5	[834]	GETTABLE 	2 2 -2	; "GetOpenID"
+	6	[834]	CALL     	2 1 2
+	7	[835]	LOADK    	3 -3	; "https://xyx.cliapi.microfun.cn/zhifubao/addHomePageConsult/"
+	8	[835]	GETTABUP 	4 0 -4	; _ENV "GameConfig"
+	9	[835]	GETTABLE 	4 4 -5	; "GetGameToken"
+	10	[835]	CALL     	4 1 2
+	11	[835]	CONCAT   	3 3 4
+	12	[836]	GETTABUP 	4 0 -6	; _ENV "CSNetLibManager"
+	13	[836]	SELF     	4 4 -7	; "CreateGeneralHttpRequest"
+	14	[836]	MOVE     	6 3
+	15	[836]	LOADK    	7 -8	; "POST"
+	16	[836]	LOADK    	8 -9	; 1000
+	17	[836]	LOADK    	9 -10	; 0
+	18	[836]	CALL     	4 6 2
+	19	[838]	SELF     	5 4 -11	; "SetHeader"
+	20	[838]	LOADK    	7 -12	; "content-type"
+	21	[838]	LOADK    	8 -13	; "application/x-www-form-urlencoded"
+	22	[838]	CALL     	5 4 1
+	23	[840]	LOADK    	5 -14	; "open_id="
+	24	[840]	MOVE     	6 2
+	25	[840]	CONCAT   	5 5 6
+	26	[842]	SELF     	6 4 -15	; "AppendBody"
+	27	[842]	MOVE     	8 5
+	28	[842]	CALL     	6 3 1
+	29	[844]	GETTABUP 	6 0 -16	; _ENV "GM"
+	30	[844]	GETTABLE 	6 6 -17	; "BIManager"
+	31	[844]	SELF     	6 6 -18	; "LogNet"
+	32	[844]	GETTABUP 	8 0 -19	; _ENV "EBIType"
+	33	[844]	GETTABLE 	8 8 -20	; "NetworkCheckAction"
+	34	[844]	GETTABLE 	8 8 -21	; "AlipaySetHomeRequestStart"
+	35	[844]	MOVE     	9 5
+	36	[844]	CALL     	6 4 1
+	37	[845]	SELF     	6 4 -22	; "SetCallback"
+	38	[861]	CLOSURE  	8 0	; 000001C8D35BFC30
+	39	[845]	CALL     	6 3 1
+	40	[862]	SELF     	6 4 -23	; "Send"
+	41	[862]	CALL     	6 2 1
+	42	[863]	RETURN   	0 1
+constants (23) for 000001C8D35C1430:
+	1	"DeviceInfo"
+	2	"GetOpenID"
+	3	"https://xyx.cliapi.microfun.cn/zhifubao/addHomePageConsult/"
+	4	"GameConfig"
+	5	"GetGameToken"
+	6	"CSNetLibManager"
+	7	"CreateGeneralHttpRequest"
+	8	"POST"
+	9	1000
+	10	0
+	11	"SetHeader"
+	12	"content-type"
+	13	"application/x-www-form-urlencoded"
+	14	"open_id="
+	15	"AppendBody"
+	16	"GM"
+	17	"BIManager"
+	18	"LogNet"
+	19	"EBIType"
+	20	"NetworkCheckAction"
+	21	"AlipaySetHomeRequestStart"
+	22	"SetCallback"
+	23	"Send"
+locals (6) for 000001C8D35C1430:
+	0	self	1	43
+	1	callback	1	43
+	2	open_id	7	43
+	3	url	12	43
+	4	reqCtx	19	43
+	5	body	26	43
+upvalues (1) for 000001C8D35C1430:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:845,861> (59 instructions at 000001C8D35BFC30)
+0 params, 7 slots, 3 upvalues, 4 locals, 24 constants, 0 functions
+	1	[846]	GETTABUP 	0 0 -1	; reqCtx "Rcode"
+	2	[846]	GETTABUP 	1 1 -2	; _ENV "ResultCode"
+	3	[846]	GETTABLE 	1 1 -3	; "Succeeded"
+	4	[846]	EQ       	0 0 1
+	5	[846]	JMP      	0 50	; to 56
+	6	[846]	GETTABUP 	0 0 -4	; reqCtx "RespBody"
+	7	[846]	GETTABLE 	0 0 -5	; "Bytes"
+	8	[846]	LT       	0 -6 0	; 0 -
+	9	[846]	JMP      	0 46	; to 56
+	10	[847]	GETUPVAL 	0 0	; reqCtx
+	11	[847]	SELF     	0 0 -7	; "GetResponseString"
+	12	[847]	CALL     	0 2 2
+	13	[848]	GETTABUP 	1 1 -8	; _ENV "json"
+	14	[848]	GETTABLE 	1 1 -9	; "decode"
+	15	[848]	MOVE     	2 0
+	16	[848]	CALL     	1 2 2
+	17	[848]	TEST     	1 1
+	18	[848]	JMP      	0 1	; to 20
+	19	[848]	NEWTABLE 	1 0 0
+	20	[849]	GETTABUP 	2 1 -10	; _ENV "tonumber"
+	21	[849]	GETTABLE 	3 1 -11	; "code"
+	22	[849]	CALL     	2 2 2
+	23	[850]	GETTABUP 	3 1 -12	; _ENV "Log"
+	24	[850]	GETTABLE 	3 3 -13	; "Info"
+	25	[850]	LOADK    	4 -14	; "AddHome:"
+	26	[850]	MOVE     	5 0
+	27	[850]	CONCAT   	4 4 5
+	28	[850]	CALL     	3 2 1
+	29	[851]	GETTABUP 	3 1 -15	; _ENV "GM"
+	30	[851]	GETTABLE 	3 3 -16	; "BIManager"
+	31	[851]	SELF     	3 3 -17	; "LogNet"
+	32	[851]	GETTABUP 	5 1 -18	; _ENV "EBIType"
+	33	[851]	GETTABLE 	5 5 -19	; "NetworkCheckAction"
+	34	[851]	GETTABLE 	5 5 -20	; "AlipaySetHomeRequestSuccess"
+	35	[851]	MOVE     	6 0
+	36	[851]	CALL     	3 4 1
+	37	[852]	EQ       	0 2 -21	; - 10000
+	38	[852]	JMP      	0 13	; to 52
+	39	[853]	GETTABUP 	3 1 -8	; _ENV "json"
+	40	[853]	GETTABLE 	3 3 -9	; "decode"
+	41	[853]	GETTABLE 	4 1 -22	; "msg"
+	42	[853]	CALL     	3 2 2
+	43	[853]	TEST     	3 1
+	44	[853]	JMP      	0 1	; to 46
+	45	[853]	NEWTABLE 	3 0 0
+	46	[854]	GETUPVAL 	4 2	; callback
+	47	[854]	LOADBOOL 	5 1 0
+	48	[854]	GETTABLE 	6 3 -23	; "alipay_user_gamecenter_addhomepage_consult_response"
+	49	[854]	GETTABLE 	6 6 -24	; "consult_result"
+	50	[854]	CALL     	4 3 1
+	51	[854]	JMP      	0 7	; to 59
+	52	[856]	GETUPVAL 	3 2	; callback
+	53	[856]	LOADBOOL 	4 0 0
+	54	[856]	CALL     	3 2 1
+	55	[857]	JMP      	0 3	; to 59
+	56	[859]	GETUPVAL 	0 2	; callback
+	57	[859]	LOADBOOL 	1 0 0
+	58	[859]	CALL     	0 2 1
+	59	[861]	RETURN   	0 1
+constants (24) for 000001C8D35BFC30:
+	1	"Rcode"
+	2	"ResultCode"
+	3	"Succeeded"
+	4	"RespBody"
+	5	"Bytes"
+	6	0
+	7	"GetResponseString"
+	8	"json"
+	9	"decode"
+	10	"tonumber"
+	11	"code"
+	12	"Log"
+	13	"Info"
+	14	"AddHome:"
+	15	"GM"
+	16	"BIManager"
+	17	"LogNet"
+	18	"EBIType"
+	19	"NetworkCheckAction"
+	20	"AlipaySetHomeRequestSuccess"
+	21	10000
+	22	"msg"
+	23	"alipay_user_gamecenter_addhomepage_consult_response"
+	24	"consult_result"
+locals (4) for 000001C8D35BFC30:
+	0	respBody	13	55
+	1	resultData	20	55
+	2	code	23	55
+	3	tbMsg	46	51
+upvalues (3) for 000001C8D35BFC30:
+	0	reqCtx	1	4
+	1	_ENV	0	0
+	2	callback	1	1
+
+function <SDKHelper.lua:866,885> (51 instructions at 000001C8D35BFCB0)
+1 param, 6 slots, 1 upvalue, 4 locals, 17 constants, 0 functions
+	1	[867]	GETTABUP 	1 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[867]	TEST     	1 1
+	3	[867]	JMP      	0 2	; to 6
+	4	[868]	LOADBOOL 	1 0 0
+	5	[868]	RETURN   	1 2
+	6	[871]	GETTABUP 	1 0 -2	; _ENV "XyxManager"
+	7	[871]	GETTABLE 	1 1 -3	; "Instance"
+	8	[871]	SELF     	1 1 -4	; "GetLaunchInfo"
+	9	[871]	CALL     	1 2 2
+	10	[871]	TEST     	1 1
+	11	[871]	JMP      	0 1	; to 13
+	12	[871]	LOADK    	1 -5	; "{}"
+	13	[872]	GETTABUP 	2 0 -6	; _ENV "json"
+	14	[872]	GETTABLE 	2 2 -7	; "decode"
+	15	[872]	MOVE     	3 1
+	16	[872]	CALL     	2 2 2
+	17	[872]	MOVE     	1 2
+	18	[873]	TEST     	1 0
+	19	[873]	JMP      	0 29	; to 49
+	20	[874]	GETTABLE 	2 1 -8	; "Scene"
+	21	[875]	GETTABUP 	3 0 -9	; _ENV "StringUtil"
+	22	[875]	GETTABLE 	3 3 -10	; "IsNilOrEmpty"
+	23	[875]	MOVE     	4 2
+	24	[875]	CALL     	3 2 2
+	25	[875]	TEST     	3 1
+	26	[875]	JMP      	0 22	; to 49
+	27	[875]	GETTABUP 	3 0 -9	; _ENV "StringUtil"
+	28	[875]	GETTABLE 	3 3 -11	; "EndWith"
+	29	[875]	MOVE     	4 2
+	30	[875]	LOADK    	5 -12	; "3041"
+	31	[875]	CALL     	3 3 2
+	32	[875]	TEST     	3 0
+	33	[875]	JMP      	0 15	; to 49
+	34	[876]	GETTABLE 	3 1 -13	; "Query"
+	35	[876]	TEST     	3 1
+	36	[876]	JMP      	0 1	; to 38
+	37	[876]	NEWTABLE 	3 0 0
+	38	[878]	GETTABUP 	4 0 -14	; _ENV "Table"
+	39	[878]	GETTABLE 	4 4 -15	; "IsEmpty"
+	40	[878]	MOVE     	5 3
+	41	[878]	CALL     	4 2 2
+	42	[878]	TEST     	4 1
+	43	[878]	JMP      	0 5	; to 49
+	44	[878]	GETTABLE 	4 3 -16	; "feed_game_channel"
+	45	[878]	EQ       	0 4 -17	; - "2"
+	46	[878]	JMP      	0 2	; to 49
+	47	[879]	LOADBOOL 	4 1 0
+	48	[879]	RETURN   	4 2
+	49	[884]	LOADBOOL 	2 0 0
+	50	[884]	RETURN   	2 2
+	51	[885]	RETURN   	0 1
+constants (17) for 000001C8D35BFCB0:
+	1	"MINIGAME_DOUYIN"
+	2	"XyxManager"
+	3	"Instance"
+	4	"GetLaunchInfo"
+	5	"{}"
+	6	"json"
+	7	"decode"
+	8	"Scene"
+	9	"StringUtil"
+	10	"IsNilOrEmpty"
+	11	"EndWith"
+	12	"3041"
+	13	"Query"
+	14	"Table"
+	15	"IsEmpty"
+	16	"feed_game_channel"
+	17	"2"
+locals (4) for 000001C8D35BFCB0:
+	0	self	1	52
+	1	launchInfo	13	52
+	2	scene	21	49
+	3	query	38	49
+upvalues (1) for 000001C8D35BFCB0:
+	0	_ENV	0	0
+
+function <SDKHelper.lua:888,890> (10 instructions at 000001C8D35C10B0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[889]	GETTABUP 	1 0 -1	; _ENV "XyxManager"
+	2	[889]	GETTABLE 	1 1 -2	; "Instance"
+	3	[889]	SELF     	1 1 -3	; "GetHost"
+	4	[889]	CALL     	1 2 2
+	5	[889]	EQ       	1 1 -4	; - "novelread"
+	6	[889]	JMP      	0 1	; to 8
+	7	[889]	LOADBOOL 	1 0 1
+	8	[889]	LOADBOOL 	1 1 0
+	9	[889]	RETURN   	1 2
+	10	[890]	RETURN   	0 1
+constants (4) for 000001C8D35C10B0:
+	1	"XyxManager"
+	2	"Instance"
+	3	"GetHost"
+	4	"novelread"
+locals (1) for 000001C8D35C10B0:
+	0	self	1	11
+upvalues (1) for 000001C8D35C10B0:
+	0	_ENV	0	0

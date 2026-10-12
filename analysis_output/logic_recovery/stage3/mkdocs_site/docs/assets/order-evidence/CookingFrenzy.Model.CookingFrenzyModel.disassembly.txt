@@ -1,0 +1,3755 @@
+
+main <CookingFrenzyModel.lua:0,0> (146 instructions at 000002390182F000)
+0+ params, 4 slots, 1 upvalue, 2 locals, 66 constants, 40 functions
+	1	[34]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[34]	NEWTABLE 	1 0 0
+	3	[34]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	4	[34]	CALL     	0 3 2
+	5	[34]	SETTABUP 	0 -1 0	; _ENV "CookingFrenzyModel"
+	6	[35]	GETTABUP 	0 0 -1	; _ENV "CookingFrenzyModel"
+	7	[35]	GETTABUP 	1 0 -1	; _ENV "CookingFrenzyModel"
+	8	[35]	SETTABLE 	0 -4 1	; "__index" -
+	9	[36]	NEWTABLE 	0 0 4
+	10	[38]	SETTABLE 	0 -5 -6	; "orderBoostOrderLackItem" 1
+	11	[40]	SETTABLE 	0 -7 -8	; "orderLackItem" 2
+	12	[42]	SETTABLE 	0 -9 -10	; "orderBackItem" 3
+	13	[45]	SETTABLE 	0 -11 -12	; "orderRepeatItem" 12
+	14	[48]	NEWTABLE 	1 0 4
+	15	[49]	SETTABLE 	1 -13 -13	; "CookingFrenzyCurData" "CookingFrenzyCurData"
+	16	[50]	SETTABLE 	1 -14 -14	; "CookingFrenzyLastEndTime" "CookingFrenzyLastEndTime"
+	17	[53]	SETTABLE 	1 -15 -16	; "CookingFrenzyOpenWindowScore" "CookingFrenzyPopWindowScore"
+	18	[56]	SETTABLE 	1 -17 -17	; "CookingFrenzyTriggerCount" "CookingFrenzyTriggerCount"
+	19	[59]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	20	[59]	NEWTABLE 	3 0 4
+	21	[60]	SETTABLE 	3 -19 -20	; "copper" "1"
+	22	[61]	SETTABLE 	3 -21 -22	; "silver" "2"
+	23	[62]	SETTABLE 	3 -23 -24	; "gold" "3"
+	24	[63]	SETTABLE 	3 -25 -26	; "ruby" "4"
+	25	[64]	SETTABLE 	2 -18 3	; "SpineKeyAnimationMap" -
+	26	[66]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	27	[85]	CLOSURE  	3 0	; 000002390182F080
+	28	[66]	SETTABLE 	2 -27 3	; "Init" -
+	29	[87]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	30	[91]	CLOSURE  	3 1	; 00000239018328E0
+	31	[87]	SETTABLE 	2 -28 3	; "_OnLoginFinished" -
+	32	[93]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	33	[97]	CLOSURE  	3 2	; 0000023901832960
+	34	[93]	SETTABLE 	2 -29 3	; "LoadSaveData" -
+	35	[99]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	36	[105]	CLOSURE  	3 3	; 000002390182EAE0
+	37	[99]	SETTABLE 	2 -30 3	; "_OnGameModeChanged" -
+	38	[107]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	39	[130]	CLOSURE  	3 4	; 000002390182EC20
+	40	[107]	SETTABLE 	2 -31 3	; "_OnGoldScoreAcquired" -
+	41	[132]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	42	[167]	CLOSURE  	3 5	; 000002390182EDA0
+	43	[132]	SETTABLE 	2 -32 3	; "_OnBoardCollect" -
+	44	[169]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	45	[198]	CLOSURE  	3 6	; 0000023901834420
+	46	[169]	SETTABLE 	2 -33 3	; "_OnOrderFinished" -
+	47	[200]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	48	[213]	CLOSURE  	3 7	; 00000239018349B0
+	49	[200]	SETTABLE 	2 -34 3	; "CanAddScore" -
+	50	[215]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	51	[252]	CLOSURE  	3 8	; 0000023901835240
+	52	[215]	SETTABLE 	2 -35 3	; "AddScore" -
+	53	[255]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	54	[280]	CLOSURE  	3 9	; 0000023901836ED0
+	55	[255]	SETTABLE 	2 -36 3	; "GetCurDoingBuff" -
+	56	[283]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	57	[302]	CLOSURE  	3 10	; 0000023901836850
+	58	[283]	SETTABLE 	2 -37 3	; "GetCurBuffConifgByOrder" -
+	59	[305]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	60	[319]	CLOSURE  	3 11	; 00000239018365D0
+	61	[305]	SETTABLE 	2 -38 3	; "CanTrigger" -
+	62	[321]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	63	[337]	CLOSURE  	3 12	; 00000239018369D0
+	64	[321]	SETTABLE 	2 -39 3	; "_CanTriggerNecessary" -
+	65	[339]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	66	[347]	CLOSURE  	3 13	; 00000239018372D0
+	67	[339]	SETTABLE 	2 -40 3	; "TryTriggerLogin" -
+	68	[349]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	69	[395]	CLOSURE  	3 14	; 00000239018366D0
+	70	[349]	SETTABLE 	2 -41 3	; "TriggerData" -
+	71	[397]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	72	[423]	CLOSURE  	3 15	; 0000023901836A50
+	73	[397]	SETTABLE 	2 -42 3	; "TryCloseTrigger" -
+	74	[425]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	75	[432]	CLOSURE  	3 16	; 0000023901836F50
+	76	[425]	SETTABLE 	2 -43 3	; "SaveData" -
+	77	[434]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	78	[443]	CLOSURE  	3 17	; 0000023901836BD0
+	79	[434]	SETTABLE 	2 -44 3	; "_DropData" -
+	80	[445]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	81	[453]	CLOSURE  	3 18	; 00000239018368D0
+	82	[445]	SETTABLE 	2 -45 3	; "UpdatePerSecond" -
+	83	[455]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	84	[457]	CLOSURE  	3 19	; 0000023901836CD0
+	85	[455]	SETTABLE 	2 -46 3	; "_OnStateChanged" -
+	86	[459]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	87	[465]	CLOSURE  	3 20	; 0000023901837050
+	88	[459]	SETTABLE 	2 -47 3	; "IsShowEntry" -
+	89	[467]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	90	[481]	CLOSURE  	3 21	; 00000239018371D0
+	91	[467]	SETTABLE 	2 -48 3	; "_LoadOtherServerConfig" -
+	92	[486]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	93	[610]	CLOSURE  	3 22	; 0000023901836650
+	94	[486]	SETTABLE 	2 -49 3	; "AcquireRandomRewards" -
+	95	[613]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	96	[859]	CLOSURE  	3 23	; 0000023901836750
+	97	[613]	SETTABLE 	2 -50 3	; "GetCookingFrenzyItemCode" -
+	98	[863]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	99	[1025]	CLOSURE  	3 24	; 0000023901836D50
+	100	[863]	SETTABLE 	2 -51 3	; "GetOptionalChessPieces" -
+	101	[1027]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	102	[1035]	CLOSURE  	3 25	; 0000023901836C50
+	103	[1027]	SETTABLE 	2 -52 3	; "PopShowRewardByCfg" -
+	104	[1037]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	105	[1074]	CLOSURE  	3 26	; 0000023901836FD0
+	106	[1037]	SETTABLE 	2 -53 3	; "GetBIRewardByOrder" -
+	107	[1077]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	108	[1079]	CLOSURE  	3 27	; 0000023901836550
+	109	[1077]	SETTABLE 	2 -54 3	; "GetCurData" -
+	110	[1081]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	111	[1083]	CLOSURE  	3 28	; 00000239018370D0
+	112	[1081]	SETTABLE 	2 -55 3	; "GetWaitPopMainWindowState" -
+	113	[1085]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	114	[1087]	CLOSURE  	3 29	; 00000239018367D0
+	115	[1085]	SETTABLE 	2 -56 3	; "SetWaitPopMainWindowState" -
+	116	[1089]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	117	[1091]	CLOSURE  	3 30	; 0000023901837250
+	118	[1089]	SETTABLE 	2 -57 3	; "GetWaitPopLightWindowState" -
+	119	[1093]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	120	[1095]	CLOSURE  	3 31	; 0000023901836950
+	121	[1093]	SETTABLE 	2 -58 3	; "SetWaitPopLightWindowState" -
+	122	[1097]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	123	[1099]	CLOSURE  	3 32	; 0000023901837150
+	124	[1097]	SETTABLE 	2 -59 3	; "GetWaitOpenTriggerWindowState" -
+	125	[1101]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	126	[1103]	CLOSURE  	3 33	; 0000023901836AD0
+	127	[1101]	SETTABLE 	2 -60 3	; "SetWaitOpenTriggerWindowState" -
+	128	[1105]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	129	[1108]	CLOSURE  	3 34	; 0000023901837350
+	130	[1105]	SETTABLE 	2 -61 3	; "SaveOpenWindowScore" -
+	131	[1110]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	132	[1112]	CLOSURE  	3 35	; 00000239018450C0
+	133	[1110]	SETTABLE 	2 -62 3	; "GetLastOpenWindowScore" -
+	134	[1114]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	135	[1116]	CLOSURE  	3 36	; 00000239018442C0
+	136	[1114]	SETTABLE 	2 -63 3	; "GetResourceLabels" -
+	137	[1118]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	138	[1126]	CLOSURE  	3 37	; 00000239018452C0
+	139	[1118]	SETTABLE 	2 -64 3	; "IsActive" -
+	140	[1128]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	141	[1139]	CLOSURE  	3 38	; 0000023901844540
+	142	[1128]	SETTABLE 	2 -65 3	; "CanPopupNotificationWindow" -
+	143	[1142]	GETTABUP 	2 0 -1	; _ENV "CookingFrenzyModel"
+	144	[1152]	CLOSURE  	3 39	; 00000239018449C0
+	145	[1142]	SETTABLE 	2 -66 3	; "GetNotificationDelay" -
+	146	[1152]	RETURN   	0 1
+constants (66) for 000002390182F000:
+	1	"CookingFrenzyModel"
+	2	"setmetatable"
+	3	"BaseActivityModel"
+	4	"__index"
+	5	"orderBoostOrderLackItem"
+	6	1
+	7	"orderLackItem"
+	8	2
+	9	"orderBackItem"
+	10	3
+	11	"orderRepeatItem"
+	12	12
+	13	"CookingFrenzyCurData"
+	14	"CookingFrenzyLastEndTime"
+	15	"CookingFrenzyOpenWindowScore"
+	16	"CookingFrenzyPopWindowScore"
+	17	"CookingFrenzyTriggerCount"
+	18	"SpineKeyAnimationMap"
+	19	"copper"
+	20	"1"
+	21	"silver"
+	22	"2"
+	23	"gold"
+	24	"3"
+	25	"ruby"
+	26	"4"
+	27	"Init"
+	28	"_OnLoginFinished"
+	29	"LoadSaveData"
+	30	"_OnGameModeChanged"
+	31	"_OnGoldScoreAcquired"
+	32	"_OnBoardCollect"
+	33	"_OnOrderFinished"
+	34	"CanAddScore"
+	35	"AddScore"
+	36	"GetCurDoingBuff"
+	37	"GetCurBuffConifgByOrder"
+	38	"CanTrigger"
+	39	"_CanTriggerNecessary"
+	40	"TryTriggerLogin"
+	41	"TriggerData"
+	42	"TryCloseTrigger"
+	43	"SaveData"
+	44	"_DropData"
+	45	"UpdatePerSecond"
+	46	"_OnStateChanged"
+	47	"IsShowEntry"
+	48	"_LoadOtherServerConfig"
+	49	"AcquireRandomRewards"
+	50	"GetCookingFrenzyItemCode"
+	51	"GetOptionalChessPieces"
+	52	"PopShowRewardByCfg"
+	53	"GetBIRewardByOrder"
+	54	"GetCurData"
+	55	"GetWaitPopMainWindowState"
+	56	"SetWaitPopMainWindowState"
+	57	"GetWaitPopLightWindowState"
+	58	"SetWaitPopLightWindowState"
+	59	"GetWaitOpenTriggerWindowState"
+	60	"SetWaitOpenTriggerWindowState"
+	61	"SaveOpenWindowScore"
+	62	"GetLastOpenWindowScore"
+	63	"GetResourceLabels"
+	64	"IsActive"
+	65	"CanPopupNotificationWindow"
+	66	"GetNotificationDelay"
+locals (2) for 000002390182F000:
+	0	CookieFrenzyRewardItemState	14	147
+	1	strDBKeys	19	147
+upvalues (1) for 000002390182F000:
+	0	_ENV	1	0
+
+function <CookingFrenzyModel.lua:66,85> (50 instructions at 000002390182F080)
+2 params, 6 slots, 1 upvalue, 2 locals, 22 constants, 0 functions
+	1	[67]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[67]	GETTABLE 	2 2 -2	; "Init"
+	3	[67]	MOVE     	3 0
+	4	[67]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[67]	GETTABLE 	4 4 -4	; "CookingFrenzy"
+	6	[67]	MOVE     	5 1
+	7	[67]	CALL     	2 4 1
+	8	[68]	SELF     	2 0 -5	; "LoadSaveData"
+	9	[68]	CALL     	2 2 1
+	10	[70]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	11	[70]	GETTABLE 	2 2 -7	; "AddListener"
+	12	[70]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	13	[70]	GETTABLE 	3 3 -9	; "ChangeGameMode"
+	14	[70]	MOVE     	4 0
+	15	[70]	GETTABLE 	5 0 -10	; "_OnGameModeChanged"
+	16	[70]	CALL     	2 4 1
+	17	[72]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	18	[72]	GETTABLE 	2 2 -7	; "AddListener"
+	19	[72]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	20	[72]	GETTABLE 	3 3 -11	; "BoardCollect"
+	21	[72]	MOVE     	4 0
+	22	[72]	GETTABLE 	5 0 -12	; "_OnBoardCollect"
+	23	[72]	CALL     	2 4 1
+	24	[73]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	25	[73]	GETTABLE 	2 2 -7	; "AddListener"
+	26	[73]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	27	[73]	GETTABLE 	3 3 -13	; "OrderFinished"
+	28	[73]	MOVE     	4 0
+	29	[73]	GETTABLE 	5 0 -14	; "_OnOrderFinished"
+	30	[73]	CALL     	2 4 1
+	31	[75]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	32	[75]	GETTABLE 	2 2 -7	; "AddListener"
+	33	[75]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	34	[75]	GETTABLE 	3 3 -15	; "GoldScoreAcquired"
+	35	[75]	MOVE     	4 0
+	36	[75]	GETTABLE 	5 0 -16	; "_OnGoldScoreAcquired"
+	37	[75]	CALL     	2 4 1
+	38	[78]	NEWTABLE 	2 0 0
+	39	[78]	SETTABLE 	0 -17 2	; "m_mapCacheAcquireReward" -
+	40	[81]	NEWTABLE 	2 0 0
+	41	[81]	SETTABLE 	0 -18 2	; "m_mapShowPlayersItem" -
+	42	[83]	SETTABLE 	0 -19 -20	; "m_bLogin" true
+	43	[84]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	44	[84]	GETTABLE 	2 2 -7	; "AddListener"
+	45	[84]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	46	[84]	GETTABLE 	3 3 -21	; "LoginFinished"
+	47	[84]	MOVE     	4 0
+	48	[84]	GETTABLE 	5 0 -22	; "_OnLoginFinished"
+	49	[84]	CALL     	2 4 1
+	50	[85]	RETURN   	0 1
+constants (22) for 000002390182F080:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"CookingFrenzy"
+	5	"LoadSaveData"
+	6	"EventDispatcher"
+	7	"AddListener"
+	8	"EEventType"
+	9	"ChangeGameMode"
+	10	"_OnGameModeChanged"
+	11	"BoardCollect"
+	12	"_OnBoardCollect"
+	13	"OrderFinished"
+	14	"_OnOrderFinished"
+	15	"GoldScoreAcquired"
+	16	"_OnGoldScoreAcquired"
+	17	"m_mapCacheAcquireReward"
+	18	"m_mapShowPlayersItem"
+	19	"m_bLogin"
+	20	true
+	21	"LoginFinished"
+	22	"_OnLoginFinished"
+locals (2) for 000002390182F080:
+	0	self	1	51
+	1	dbTable	1	51
+upvalues (1) for 000002390182F080:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:87,91> (4 instructions at 00000239018328E0)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[89]	SELF     	1 0 -1	; "TryTriggerLogin"
+	2	[89]	CALL     	1 2 1
+	3	[90]	SETTABLE 	0 -2 -3	; "m_bLogin" true
+	4	[91]	RETURN   	0 1
+constants (3) for 00000239018328E0:
+	1	"TryTriggerLogin"
+	2	"m_bLogin"
+	3	true
+locals (1) for 00000239018328E0:
+	0	self	1	5
+upvalues (0) for 00000239018328E0:
+
+function <CookingFrenzyModel.lua:93,97> (24 instructions at 0000023901832960)
+1 param, 6 slots, 2 upvalues, 1 local, 12 constants, 0 functions
+	1	[95]	GETTABUP 	1 0 -2	; _ENV "json"
+	2	[95]	GETTABLE 	1 1 -3	; "decode"
+	3	[95]	GETTABLE 	2 0 -4	; "m_dbTable"
+	4	[95]	SELF     	2 2 -5	; "GetValue"
+	5	[95]	GETTABUP 	4 1 -6	; strDBKeys "CookingFrenzyCurData"
+	6	[95]	LOADK    	5 -7	; "value"
+	7	[95]	CALL     	2 4 2
+	8	[95]	TEST     	2 1
+	9	[95]	JMP      	0 1	; to 11
+	10	[95]	LOADK    	2 -8	; ""
+	11	[95]	CALL     	1 2 2
+	12	[95]	SETTABLE 	0 -1 1	; "m_curData" -
+	13	[96]	GETTABUP 	1 0 -10	; _ENV "tonumber"
+	14	[96]	GETTABLE 	2 0 -4	; "m_dbTable"
+	15	[96]	SELF     	2 2 -5	; "GetValue"
+	16	[96]	GETTABUP 	4 1 -11	; strDBKeys "CookingFrenzyLastEndTime"
+	17	[96]	LOADK    	5 -7	; "value"
+	18	[96]	CALL     	2 4 2
+	19	[96]	TEST     	2 1
+	20	[96]	JMP      	0 1	; to 22
+	21	[96]	LOADK    	2 -12	; 0
+	22	[96]	CALL     	1 2 2
+	23	[96]	SETTABLE 	0 -9 1	; "m_lastEndTime" -
+	24	[97]	RETURN   	0 1
+constants (12) for 0000023901832960:
+	1	"m_curData"
+	2	"json"
+	3	"decode"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"CookingFrenzyCurData"
+	7	"value"
+	8	""
+	9	"m_lastEndTime"
+	10	"tonumber"
+	11	"CookingFrenzyLastEndTime"
+	12	0
+locals (1) for 0000023901832960:
+	0	self	1	25
+upvalues (2) for 0000023901832960:
+	0	_ENV	0	0
+	1	strDBKeys	1	1
+
+function <CookingFrenzyModel.lua:99,105> (22 instructions at 000002390182EAE0)
+1 param, 7 slots, 1 upvalue, 1 local, 11 constants, 0 functions
+	1	[100]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[100]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[100]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[100]	GETTABLE 	2 2 -4	; "TestOutputTableInfo"
+	5	[100]	NEWTABLE 	3 1 0
+	6	[100]	LOADK    	4 -5	; "\229\136\135\229\156\186\230\153\175\229\176\157\232\175\149\232\167\166\229\143\145\232\174\162\229\141\149\231\139\130\231\131\173"
+	7	[100]	GETTABUP 	5 0 -6	; _ENV "GM"
+	8	[100]	GETTABLE 	5 5 -7	; "SceneManager"
+	9	[100]	SELF     	5 5 -8	; "GetGameMode"
+	10	[100]	CALL     	5 2 2
+	11	[100]	CONCAT   	4 4 5
+	12	[100]	SETLIST  	3 1 1	; 1
+	13	[100]	CALL     	1 3 1
+	14	[101]	SELF     	1 0 -9	; "TryCloseTrigger"
+	15	[101]	CALL     	1 2 1
+	16	[102]	SELF     	1 0 -10	; "CanTrigger"
+	17	[102]	CALL     	1 2 2
+	18	[102]	TEST     	1 0
+	19	[102]	JMP      	0 2	; to 22
+	20	[103]	SELF     	1 0 -11	; "TriggerData"
+	21	[103]	CALL     	1 2 1
+	22	[105]	RETURN   	0 1
+constants (11) for 000002390182EAE0:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"TestOutputTableInfo"
+	5	"\229\136\135\229\156\186\230\153\175\229\176\157\232\175\149\232\167\166\229\143\145\232\174\162\229\141\149\231\139\130\231\131\173"
+	6	"GM"
+	7	"SceneManager"
+	8	"GetGameMode"
+	9	"TryCloseTrigger"
+	10	"CanTrigger"
+	11	"TriggerData"
+locals (1) for 000002390182EAE0:
+	0	self	1	23
+upvalues (1) for 000002390182EAE0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:107,130> (62 instructions at 000002390182EC20)
+2 params, 8 slots, 1 upvalue, 3 locals, 23 constants, 0 functions
+	1	[109]	SELF     	2 0 -1	; "CanAddScore"
+	2	[109]	CALL     	2 2 2
+	3	[109]	TEST     	2 0
+	4	[109]	JMP      	0 5	; to 10
+	5	[109]	GETTABLE 	2 1 -2	; "scene"
+	6	[109]	GETTABUP 	3 0 -3	; _ENV "EBIType"
+	7	[109]	GETTABLE 	3 3 -4	; "ItemCollect"
+	8	[109]	EQ       	0 2 3
+	9	[109]	JMP      	0 1	; to 11
+	10	[110]	RETURN   	0 1
+	11	[113]	SELF     	2 0 -5	; "AddScore"
+	12	[113]	GETTABLE 	4 1 -6	; "count"
+	13	[113]	CALL     	2 3 1
+	14	[117]	GETTABLE 	2 1 -2	; "scene"
+	15	[117]	GETTABUP 	3 0 -3	; _ENV "EBIType"
+	16	[117]	GETTABLE 	3 3 -7	; "FinishOrder"
+	17	[117]	EQ       	0 2 3
+	18	[117]	JMP      	0 17	; to 36
+	19	[117]	GETTABUP 	2 0 -8	; _ENV "GM"
+	20	[117]	GETTABLE 	2 2 -9	; "SceneManager"
+	21	[117]	SELF     	2 2 -10	; "GetGameMode"
+	22	[117]	CALL     	2 2 2
+	23	[117]	GETTABUP 	3 0 -11	; _ENV "EGameMode"
+	24	[117]	GETTABLE 	3 3 -12	; "Main"
+	25	[117]	EQ       	0 2 3
+	26	[117]	JMP      	0 9	; to 36
+	27	[118]	GETTABLE 	2 0 -13	; "m_cacheOrderScore"
+	28	[118]	TEST     	2 1
+	29	[118]	JMP      	0 1	; to 31
+	30	[118]	LOADK    	2 -14	; 0
+	31	[118]	GETTABLE 	3 1 -6	; "count"
+	32	[118]	ADD      	2 2 3
+	33	[118]	SETTABLE 	0 -13 2	; "m_cacheOrderScore" -
+	34	[119]	RETURN   	0 1
+	35	[119]	JMP      	0 26	; to 62
+	36	[121]	GETTABUP 	2 0 -8	; _ENV "GM"
+	37	[121]	GETTABLE 	2 2 -15	; "UIManager"
+	38	[121]	SELF     	2 2 -16	; "GetOpenedViewByName"
+	39	[121]	GETTABUP 	4 0 -17	; _ENV "UIPrefabConfigName"
+	40	[121]	GETTABLE 	4 4 -18	; "BaseSceneView"
+	41	[121]	CALL     	2 3 2
+	42	[121]	EQ       	0 2 -19	; - nil
+	43	[121]	JMP      	0 1	; to 45
+	44	[122]	RETURN   	0 1
+	45	[125]	GETTABUP 	2 0 -8	; _ENV "GM"
+	46	[125]	GETTABLE 	2 2 -15	; "UIManager"
+	47	[125]	SELF     	2 2 -16	; "GetOpenedViewByName"
+	48	[125]	GETTABUP 	4 0 -17	; _ENV "UIPrefabConfigName"
+	49	[125]	GETTABLE 	4 4 -18	; "BaseSceneView"
+	50	[125]	CALL     	2 3 2
+	51	[125]	SELF     	2 2 -20	; "GetHudButton"
+	52	[125]	GETTABUP 	4 0 -21	; _ENV "ESceneViewHudButtonKey"
+	53	[125]	GETTABLE 	4 4 -22	; "CookingFrenzy"
+	54	[125]	CALL     	2 3 2
+	55	[126]	EQ       	1 2 -19	; - nil
+	56	[126]	JMP      	0 5	; to 62
+	57	[127]	SELF     	3 2 -23	; "UpdateTextAnimation"
+	58	[127]	LOADK    	5 -14	; 0
+	59	[127]	GETTABLE 	6 1 -6	; "count"
+	60	[127]	LOADBOOL 	7 0 0
+	61	[127]	CALL     	3 5 1
+	62	[130]	RETURN   	0 1
+constants (23) for 000002390182EC20:
+	1	"CanAddScore"
+	2	"scene"
+	3	"EBIType"
+	4	"ItemCollect"
+	5	"AddScore"
+	6	"count"
+	7	"FinishOrder"
+	8	"GM"
+	9	"SceneManager"
+	10	"GetGameMode"
+	11	"EGameMode"
+	12	"Main"
+	13	"m_cacheOrderScore"
+	14	0
+	15	"UIManager"
+	16	"GetOpenedViewByName"
+	17	"UIPrefabConfigName"
+	18	"BaseSceneView"
+	19	nil
+	20	"GetHudButton"
+	21	"ESceneViewHudButtonKey"
+	22	"CookingFrenzy"
+	23	"UpdateTextAnimation"
+locals (3) for 000002390182EC20:
+	0	self	1	63
+	1	message	1	63
+	2	entry	55	62
+upvalues (1) for 000002390182EC20:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:132,167> (93 instructions at 000002390182EDA0)
+2 params, 17 slots, 1 upvalue, 14 locals, 38 constants, 0 functions
+	1	[133]	GETTABLE 	2 0 -1	; "m_curData"
+	2	[133]	EQ       	0 2 -2	; - nil
+	3	[133]	JMP      	0 1	; to 5
+	4	[134]	RETURN   	0 1
+	5	[137]	GETTABUP 	2 0 -3	; _ENV "BoardModelHelper"
+	6	[137]	GETTABLE 	2 2 -4	; "GetActiveModel"
+	7	[137]	CALL     	2 1 3
+	8	[139]	GETTABLE 	4 1 -5	; "Rewards"
+	9	[139]	EQ       	1 4 -2	; - nil
+	10	[139]	JMP      	0 82	; to 93
+	11	[139]	SELF     	4 0 -6	; "CanAddScore"
+	12	[139]	CALL     	4 2 2
+	13	[139]	TEST     	4 0
+	14	[139]	JMP      	0 78	; to 93
+	15	[140]	GETTABUP 	4 0 -7	; _ENV "ipairs"
+	16	[140]	GETTABLE 	5 1 -5	; "Rewards"
+	17	[140]	CALL     	4 2 4
+	18	[140]	JMP      	0 72	; to 91
+	19	[141]	GETTABUP 	9 0 -8	; _ENV "PROPERTY_TYPE"
+	20	[141]	GETTABLE 	9 8 9
+	21	[141]	GETTABUP 	10 0 -9	; _ENV "EPropertyType"
+	22	[141]	GETTABLE 	10 10 -10	; "Gold"
+	23	[141]	EQ       	0 9 10
+	24	[141]	JMP      	0 66	; to 91
+	25	[142]	SELF     	9 0 -11	; "AddScore"
+	26	[142]	GETTABUP 	11 0 -12	; _ENV "PROPERTY_COUNT"
+	27	[142]	GETTABLE 	11 8 11
+	28	[142]	CALL     	9 3 1
+	29	[143]	GETTABUP 	9 0 -13	; _ENV "MainBoardView"
+	30	[143]	GETTABLE 	9 9 -14	; "GetInstance"
+	31	[143]	CALL     	9 1 2
+	32	[143]	EQ       	0 3 9
+	33	[143]	JMP      	0 38	; to 72
+	34	[145]	GETTABLE 	9 1 -15	; "item"
+	35	[146]	SELF     	10 3 -16	; "GetItemView"
+	36	[146]	MOVE     	12 9
+	37	[146]	CALL     	10 3 2
+	38	[147]	GETTABUP 	11 0 -17	; _ENV "Vector3"
+	39	[147]	GETTABLE 	11 11 -18	; "zero"
+	40	[148]	EQ       	1 10 -2	; - nil
+	41	[148]	JMP      	0 9	; to 51
+	42	[149]	SELF     	12 3 -19	; "ConvertBoardPositionToScreenPosition"
+	43	[149]	SELF     	14 9 -20	; "GetPosition"
+	44	[149]	CALL     	14 2 0
+	45	[149]	CALL     	12 0 2
+	46	[150]	GETTABUP 	13 0 -21	; _ENV "PositionUtil"
+	47	[150]	GETTABLE 	13 13 -22	; "UICameraScreen2World"
+	48	[150]	MOVE     	14 12
+	49	[150]	CALL     	13 2 2
+	50	[150]	MOVE     	11 13
+	51	[153]	GETTABUP 	12 0 -23	; _ENV "RewardApi"
+	52	[153]	GETTABLE 	12 12 -24	; "AcquireRewardsInView"
+	53	[153]	NEWTABLE 	13 1 0
+	54	[153]	NEWTABLE 	14 0 2
+	55	[153]	GETTABUP 	15 0 -8	; _ENV "PROPERTY_TYPE"
+	56	[153]	GETTABUP 	16 0 -9	; _ENV "EPropertyType"
+	57	[153]	GETTABLE 	16 16 -25	; "CookingFrenzyScore"
+	58	[153]	SETTABLE 	14 15 16
+	59	[153]	GETTABUP 	15 0 -12	; _ENV "PROPERTY_COUNT"
+	60	[153]	GETTABUP 	16 0 -12	; _ENV "PROPERTY_COUNT"
+	61	[153]	GETTABLE 	16 8 16
+	62	[153]	SETTABLE 	14 15 16
+	63	[153]	SETLIST  	13 1 1	; 1
+	64	[153]	NEWTABLE 	14 0 2
+	65	[154]	NEWTABLE 	15 1 0
+	66	[154]	MOVE     	16 11
+	67	[154]	SETLIST  	15 1 1	; 1
+	68	[154]	SETTABLE 	14 -26 15	; "arrWorldPos" -
+	69	[155]	SETTABLE 	14 -27 -28	; "noDelayTime" true
+	70	[153]	CALL     	12 3 1
+	71	[156]	JMP      	0 18	; to 90
+	72	[158]	GETTABUP 	9 0 -29	; _ENV "GM"
+	73	[158]	GETTABLE 	9 9 -30	; "UIManager"
+	74	[158]	SELF     	9 9 -31	; "GetOpenedViewByName"
+	75	[158]	GETTABUP 	11 0 -32	; _ENV "UIPrefabConfigName"
+	76	[158]	GETTABLE 	11 11 -33	; "BaseSceneView"
+	77	[158]	CALL     	9 3 2
+	78	[158]	SELF     	9 9 -34	; "GetHudButton"
+	79	[158]	GETTABUP 	11 0 -35	; _ENV "ESceneViewHudButtonKey"
+	80	[158]	GETTABLE 	11 11 -36	; "CookingFrenzy"
+	81	[158]	CALL     	9 3 2
+	82	[159]	EQ       	1 9 -2	; - nil
+	83	[159]	JMP      	0 6	; to 90
+	84	[160]	SELF     	10 9 -37	; "UpdateTextAnimation"
+	85	[160]	LOADK    	12 -38	; 0
+	86	[160]	GETTABUP 	13 0 -12	; _ENV "PROPERTY_COUNT"
+	87	[160]	GETTABLE 	13 8 13
+	88	[160]	LOADBOOL 	14 0 0
+	89	[160]	CALL     	10 5 1
+	90	[163]	RETURN   	0 1
+	91	[140]	TFORCALL 	4 2
+	92	[140]	TFORLOOP 	6 -74	; to 19
+	93	[167]	RETURN   	0 1
+constants (38) for 000002390182EDA0:
+	1	"m_curData"
+	2	nil
+	3	"BoardModelHelper"
+	4	"GetActiveModel"
+	5	"Rewards"
+	6	"CanAddScore"
+	7	"ipairs"
+	8	"PROPERTY_TYPE"
+	9	"EPropertyType"
+	10	"Gold"
+	11	"AddScore"
+	12	"PROPERTY_COUNT"
+	13	"MainBoardView"
+	14	"GetInstance"
+	15	"item"
+	16	"GetItemView"
+	17	"Vector3"
+	18	"zero"
+	19	"ConvertBoardPositionToScreenPosition"
+	20	"GetPosition"
+	21	"PositionUtil"
+	22	"UICameraScreen2World"
+	23	"RewardApi"
+	24	"AcquireRewardsInView"
+	25	"CookingFrenzyScore"
+	26	"arrWorldPos"
+	27	"noDelayTime"
+	28	true
+	29	"GM"
+	30	"UIManager"
+	31	"GetOpenedViewByName"
+	32	"UIPrefabConfigName"
+	33	"BaseSceneView"
+	34	"GetHudButton"
+	35	"ESceneViewHudButtonKey"
+	36	"CookingFrenzy"
+	37	"UpdateTextAnimation"
+	38	0
+locals (14) for 000002390182EDA0:
+	0	self	1	94
+	1	message	1	94
+	2	_	8	94
+	3	boardview	8	94
+	4	(for generator)	18	93
+	5	(for state)	18	93
+	6	(for control)	18	93
+	7	_	19	91
+	8	reward	19	91
+	9	itemModel	35	71
+	10	itemView	38	71
+	11	uiStartPos	40	71
+	12	screenPos	46	51
+	13	entry	82	90
+upvalues (1) for 000002390182EDA0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:169,198> (27 instructions at 0000023901834420)
+2 params, 8 slots, 1 upvalue, 5 locals, 11 constants, 1 function
+	1	[171]	GETTABLE 	2 0 -1	; "m_cacheOrderScore"
+	2	[171]	EQ       	1 2 -2	; - nil
+	3	[171]	JMP      	0 23	; to 27
+	4	[172]	GETTABLE 	2 0 -1	; "m_cacheOrderScore"
+	5	[173]	SETTABLE 	0 -1 -2	; "m_cacheOrderScore" nil
+	6	[174]	LT       	0 -3 2	; 0 -
+	7	[174]	JMP      	3 19	; to 27
+	8	[175]	GETTABLE 	3 1 -4	; "order"
+	9	[177]	GETTABUP 	4 0 -5	; _ENV "DOTween"
+	10	[177]	GETTABLE 	4 4 -6	; "Sequence"
+	11	[177]	CALL     	4 1 2
+	12	[178]	SELF     	5 4 -7	; "AppendInterval"
+	13	[178]	LOADK    	7 -8	; 0.5
+	14	[178]	CALL     	5 3 1
+	15	[179]	SELF     	5 3 -9	; "GetCookingFrenzyConfig"
+	16	[179]	CALL     	5 2 2
+	17	[179]	EQ       	1 5 -2	; - nil
+	18	[179]	JMP      	0 3	; to 22
+	19	[180]	SELF     	5 4 -7	; "AppendInterval"
+	20	[180]	LOADK    	7 -10	; 1
+	21	[180]	CALL     	5 3 1
+	22	[183]	SELF     	5 4 -11	; "AppendCallback"
+	23	[195]	CLOSURE  	7 0	; 00000239018345E0
+	24	[183]	CALL     	5 3 1
+	25	[195]	JMP      	3 1	; to 27
+	26	[196]	JMP      	3 0	; to 27
+	27	[198]	RETURN   	0 1
+constants (11) for 0000023901834420:
+	1	"m_cacheOrderScore"
+	2	nil
+	3	0
+	4	"order"
+	5	"DOTween"
+	6	"Sequence"
+	7	"AppendInterval"
+	8	0.5
+	9	"GetCookingFrenzyConfig"
+	10	1
+	11	"AppendCallback"
+locals (5) for 0000023901834420:
+	0	self	1	28
+	1	message	1	28
+	2	score	5	27
+	3	order	9	26
+	4	seq	12	26
+upvalues (1) for 0000023901834420:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:183,195> (44 instructions at 00000239018345E0)
+0 params, 9 slots, 3 upvalues, 4 locals, 20 constants, 0 functions
+	1	[184]	GETTABUP 	0 0 -1	; _ENV "MainBoardView"
+	2	[184]	GETTABLE 	0 0 -2	; "GetInstance"
+	3	[184]	CALL     	0 1 2
+	4	[184]	SELF     	0 0 -3	; "GetOrderArea"
+	5	[184]	CALL     	0 2 2
+	6	[184]	SELF     	0 0 -4	; "GetCell"
+	7	[184]	GETUPVAL 	2 1	; order
+	8	[184]	CALL     	0 3 2
+	9	[185]	EQ       	1 0 -5	; - nil
+	10	[185]	JMP      	0 33	; to 44
+	11	[186]	SELF     	1 0 -6	; "GetIconArea"
+	12	[186]	CALL     	1 2 2
+	13	[186]	GETTABLE 	1 1 -7	; "transform"
+	14	[186]	GETTABLE 	1 1 -8	; "position"
+	15	[187]	GETTABUP 	2 0 -1	; _ENV "MainBoardView"
+	16	[187]	GETTABLE 	2 2 -2	; "GetInstance"
+	17	[187]	CALL     	2 1 2
+	18	[187]	SELF     	2 2 -9	; "ConvertWorldPositionToScreenPosition"
+	19	[187]	MOVE     	4 1
+	20	[187]	CALL     	2 3 2
+	21	[188]	GETTABUP 	3 0 -10	; _ENV "PositionUtil"
+	22	[188]	GETTABLE 	3 3 -11	; "UICameraScreen2World"
+	23	[188]	MOVE     	4 2
+	24	[188]	CALL     	3 2 2
+	25	[190]	GETTABUP 	4 0 -12	; _ENV "RewardApi"
+	26	[190]	GETTABLE 	4 4 -13	; "AcquireRewardsInView"
+	27	[190]	NEWTABLE 	5 1 0
+	28	[190]	NEWTABLE 	6 0 2
+	29	[190]	GETTABUP 	7 0 -14	; _ENV "PROPERTY_TYPE"
+	30	[190]	GETTABUP 	8 0 -15	; _ENV "EPropertyType"
+	31	[190]	GETTABLE 	8 8 -16	; "CookingFrenzyScore"
+	32	[190]	SETTABLE 	6 7 8
+	33	[190]	GETTABUP 	7 0 -17	; _ENV "PROPERTY_COUNT"
+	34	[190]	GETUPVAL 	8 2	; score
+	35	[190]	SETTABLE 	6 7 8
+	36	[190]	SETLIST  	5 1 1	; 1
+	37	[190]	NEWTABLE 	6 0 2
+	38	[191]	NEWTABLE 	7 1 0
+	39	[191]	MOVE     	8 3
+	40	[191]	SETLIST  	7 1 1	; 1
+	41	[191]	SETTABLE 	6 -18 7	; "arrWorldPos" -
+	42	[192]	SETTABLE 	6 -19 -20	; "noDelayTime" true
+	43	[190]	CALL     	4 3 1
+	44	[195]	RETURN   	0 1
+constants (20) for 00000239018345E0:
+	1	"MainBoardView"
+	2	"GetInstance"
+	3	"GetOrderArea"
+	4	"GetCell"
+	5	nil
+	6	"GetIconArea"
+	7	"transform"
+	8	"position"
+	9	"ConvertWorldPositionToScreenPosition"
+	10	"PositionUtil"
+	11	"UICameraScreen2World"
+	12	"RewardApi"
+	13	"AcquireRewardsInView"
+	14	"PROPERTY_TYPE"
+	15	"EPropertyType"
+	16	"CookingFrenzyScore"
+	17	"PROPERTY_COUNT"
+	18	"arrWorldPos"
+	19	"noDelayTime"
+	20	true
+locals (4) for 00000239018345E0:
+	0	orderCell	9	45
+	1	worldPosition	15	44
+	2	screenPos	21	44
+	3	uiStartPos	25	44
+upvalues (3) for 00000239018345E0:
+	0	_ENV	0	0
+	1	order	1	3
+	2	score	1	2
+
+function <CookingFrenzyModel.lua:200,213> (19 instructions at 00000239018349B0)
+1 param, 5 slots, 0 upvalues, 3 locals, 5 constants, 0 functions
+	1	[201]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[201]	EQ       	0 1 -2	; - nil
+	3	[201]	JMP      	0 2	; to 6
+	4	[202]	LOADBOOL 	1 0 0
+	5	[202]	RETURN   	1 2
+	6	[206]	GETTABLE 	1 0 -1	; "m_curData"
+	7	[206]	GETTABLE 	1 1 -3	; "m_levelConfig"
+	8	[207]	LEN      	2 1
+	9	[207]	GETTABLE 	2 1 2
+	10	[208]	GETTABLE 	3 2 -4	; "score"
+	11	[208]	GETTABLE 	4 0 -1	; "m_curData"
+	12	[208]	GETTABLE 	4 4 -5	; "m_score"
+	13	[208]	LE       	0 3 4
+	14	[208]	JMP      	0 2	; to 17
+	15	[209]	LOADBOOL 	3 0 0
+	16	[209]	RETURN   	3 2
+	17	[212]	LOADBOOL 	3 1 0
+	18	[212]	RETURN   	3 2
+	19	[213]	RETURN   	0 1
+constants (5) for 00000239018349B0:
+	1	"m_curData"
+	2	nil
+	3	"m_levelConfig"
+	4	"score"
+	5	"m_score"
+locals (3) for 00000239018349B0:
+	0	self	1	20
+	1	levelConfigList	8	20
+	2	lastConfig	10	20
+upvalues (0) for 00000239018349B0:
+
+function <CookingFrenzyModel.lua:215,252> (88 instructions at 0000023901835240)
+2 params, 13 slots, 2 upvalues, 8 locals, 35 constants, 0 functions
+	1	[216]	GETTABLE 	2 0 -1	; "m_curData"
+	2	[216]	EQ       	0 2 -2	; - nil
+	3	[216]	JMP      	0 4	; to 8
+	4	[217]	GETTABUP 	2 0 -3	; _ENV "Log"
+	5	[217]	GETTABLE 	2 2 -4	; "Error"
+	6	[217]	LOADK    	3 -5	; "\232\174\162\229\141\149\231\139\130\231\131\173 \229\138\160\229\136\134\233\148\153\232\175\175"
+	7	[217]	CALL     	2 2 1
+	8	[221]	GETTABLE 	2 0 -1	; "m_curData"
+	9	[221]	GETTABLE 	2 2 -6	; "m_levelConfig"
+	10	[222]	LEN      	3 2
+	11	[222]	GETTABLE 	3 2 3
+	12	[224]	GETTABUP 	4 0 -7	; _ENV "math"
+	13	[224]	GETTABLE 	4 4 -8	; "min"
+	14	[224]	GETTABLE 	5 3 -9	; "score"
+	15	[224]	GETTABLE 	6 0 -1	; "m_curData"
+	16	[224]	GETTABLE 	6 6 -10	; "m_score"
+	17	[224]	SUB      	5 5 6
+	18	[224]	MOVE     	6 1
+	19	[224]	CALL     	4 3 2
+	20	[225]	GETTABUP 	5 0 -7	; _ENV "math"
+	21	[225]	GETTABLE 	5 5 -11	; "max"
+	22	[225]	MOVE     	6 4
+	23	[225]	LOADK    	7 -12	; 0
+	24	[225]	CALL     	5 3 2
+	25	[225]	MOVE     	4 5
+	26	[226]	SELF     	5 0 -13	; "GetCurDoingBuff"
+	27	[226]	CALL     	5 2 2
+	28	[227]	GETTABLE 	6 0 -1	; "m_curData"
+	29	[227]	GETTABLE 	7 0 -1	; "m_curData"
+	30	[227]	GETTABLE 	7 7 -10	; "m_score"
+	31	[227]	ADD      	7 7 4
+	32	[227]	SETTABLE 	6 -10 7	; "m_score" -
+	33	[228]	SELF     	6 0 -13	; "GetCurDoingBuff"
+	34	[228]	CALL     	6 2 2
+	35	[229]	GETTABUP 	7 0 -14	; _ENV "tonumber"
+	36	[229]	GETTABLE 	8 0 -15	; "m_dbTable"
+	37	[229]	SELF     	8 8 -16	; "GetValue"
+	38	[229]	GETTABUP 	10 1 -17	; strDBKeys "CookingFrenzyTriggerCount"
+	39	[229]	LOADK    	11 -18	; "value"
+	40	[229]	CALL     	8 4 2
+	41	[229]	TEST     	8 1
+	42	[229]	JMP      	0 1	; to 44
+	43	[229]	LOADK    	8 -19	; ""
+	44	[229]	CALL     	7 2 2
+	45	[229]	TEST     	7 1
+	46	[229]	JMP      	0 1	; to 48
+	47	[229]	LOADK    	7 -12	; 0
+	48	[230]	EQ       	1 5 6
+	49	[230]	JMP      	0 19	; to 69
+	50	[232]	SELF     	8 0 -20	; "SetWaitOpenTriggerWindowState"
+	51	[232]	LOADBOOL 	10 1 0
+	52	[232]	CALL     	8 3 1
+	53	[234]	GETTABUP 	8 0 -21	; _ENV "EventDispatcher"
+	54	[234]	GETTABLE 	8 8 -22	; "DispatchEvent"
+	55	[234]	GETTABUP 	9 0 -23	; _ENV "EEventType"
+	56	[234]	GETTABLE 	9 9 -24	; "CookingFrenzyBuffChanged"
+	57	[234]	NEWTABLE 	10 0 1
+	58	[234]	SETTABLE 	10 -25 6	; "buffId" -
+	59	[234]	CALL     	8 3 1
+	60	[236]	GETTABUP 	8 0 -26	; _ENV "GM"
+	61	[236]	GETTABLE 	8 8 -27	; "BIManager"
+	62	[236]	SELF     	8 8 -28	; "LogAction"
+	63	[236]	GETTABUP 	10 0 -29	; _ENV "EBIType"
+	64	[236]	GETTABLE 	10 10 -30	; "CookingFrenzyBuffTrigger"
+	65	[236]	NEWTABLE 	11 0 2
+	66	[237]	SETTABLE 	11 -25 6	; "buffId" -
+	67	[238]	SETTABLE 	11 -31 7	; "round" -
+	68	[236]	CALL     	8 4 1
+	69	[242]	SELF     	8 0 -32	; "SaveData"
+	70	[242]	CALL     	8 2 1
+	71	[244]	GETTABUP 	8 0 -21	; _ENV "EventDispatcher"
+	72	[244]	GETTABLE 	8 8 -22	; "DispatchEvent"
+	73	[244]	GETTABUP 	9 0 -23	; _ENV "EEventType"
+	74	[244]	GETTABLE 	9 9 -33	; "CookingFrenzyAddScore"
+	75	[244]	CALL     	8 2 1
+	76	[247]	GETTABUP 	8 0 -26	; _ENV "GM"
+	77	[247]	GETTABLE 	8 8 -27	; "BIManager"
+	78	[247]	SELF     	8 8 -28	; "LogAction"
+	79	[247]	GETTABUP 	10 0 -29	; _ENV "EBIType"
+	80	[247]	GETTABLE 	10 10 -34	; "CookingFrenzyScore"
+	81	[247]	NEWTABLE 	11 0 3
+	82	[248]	SETTABLE 	11 -31 7	; "round" -
+	83	[249]	GETTABLE 	12 0 -1	; "m_curData"
+	84	[249]	GETTABLE 	12 12 -10	; "m_score"
+	85	[249]	SETTABLE 	11 -9 12	; "score" -
+	86	[250]	SETTABLE 	11 -35 4	; "addScroe" -
+	87	[247]	CALL     	8 4 1
+	88	[252]	RETURN   	0 1
+constants (35) for 0000023901835240:
+	1	"m_curData"
+	2	nil
+	3	"Log"
+	4	"Error"
+	5	"\232\174\162\229\141\149\231\139\130\231\131\173 \229\138\160\229\136\134\233\148\153\232\175\175"
+	6	"m_levelConfig"
+	7	"math"
+	8	"min"
+	9	"score"
+	10	"m_score"
+	11	"max"
+	12	0
+	13	"GetCurDoingBuff"
+	14	"tonumber"
+	15	"m_dbTable"
+	16	"GetValue"
+	17	"CookingFrenzyTriggerCount"
+	18	"value"
+	19	""
+	20	"SetWaitOpenTriggerWindowState"
+	21	"EventDispatcher"
+	22	"DispatchEvent"
+	23	"EEventType"
+	24	"CookingFrenzyBuffChanged"
+	25	"buffId"
+	26	"GM"
+	27	"BIManager"
+	28	"LogAction"
+	29	"EBIType"
+	30	"CookingFrenzyBuffTrigger"
+	31	"round"
+	32	"SaveData"
+	33	"CookingFrenzyAddScore"
+	34	"CookingFrenzyScore"
+	35	"addScroe"
+locals (8) for 0000023901835240:
+	0	self	1	89
+	1	score	1	89
+	2	levelConfigList	10	89
+	3	lastConfig	12	89
+	4	addScore	20	89
+	5	buffId	28	89
+	6	newBuffId	35	89
+	7	curCount	48	89
+upvalues (2) for 0000023901835240:
+	0	_ENV	0	0
+	1	strDBKeys	1	1
+
+function <CookingFrenzyModel.lua:255,280> (37 instructions at 0000023901836ED0)
+2 params, 10 slots, 1 upvalue, 10 locals, 10 constants, 0 functions
+	1	[256]	GETTABLE 	2 0 -1	; "m_curData"
+	2	[256]	EQ       	0 2 -2	; - nil
+	3	[256]	JMP      	0 2	; to 6
+	4	[257]	LOADNIL  	2 0
+	5	[257]	RETURN   	2 2
+	6	[260]	EQ       	0 1 -2	; - nil
+	7	[260]	JMP      	0 2	; to 10
+	8	[261]	GETTABLE 	2 0 -1	; "m_curData"
+	9	[261]	GETTABLE 	1 2 -3	; "m_score"
+	10	[265]	LOADNIL  	2 0
+	11	[266]	LOADK    	3 -4	; 0
+	12	[267]	GETTABUP 	4 0 -5	; _ENV "ipairs"
+	13	[267]	GETTABLE 	5 0 -1	; "m_curData"
+	14	[267]	GETTABLE 	5 5 -6	; "m_levelConfig"
+	15	[267]	CALL     	4 2 4
+	16	[267]	JMP      	0 5	; to 22
+	17	[268]	GETTABLE 	9 8 -7	; "score"
+	18	[268]	LT       	1 1 9
+	19	[268]	JMP      	0 4	; to 24
+	20	[271]	GETTABLE 	2 8 -8	; "buff_id"
+	21	[272]	MOVE     	3 7
+	22	[267]	TFORCALL 	4 2
+	23	[267]	TFORLOOP 	6 -7	; to 17
+	24	[274]	MOVE     	4 3
+	25	[276]	GETTABLE 	5 0 -1	; "m_curData"
+	26	[276]	GETTABLE 	5 5 -6	; "m_levelConfig"
+	27	[276]	LEN      	5 5
+	28	[276]	EQ       	0 5 -9	; - 3
+	29	[276]	JMP      	0 3	; to 33
+	30	[276]	EQ       	1 2 -2	; - nil
+	31	[276]	JMP      	0 1	; to 33
+	32	[277]	ADD      	3 3 -10	; - 1
+	33	[279]	MOVE     	5 2
+	34	[279]	MOVE     	6 3
+	35	[279]	MOVE     	7 4
+	36	[279]	RETURN   	5 4
+	37	[280]	RETURN   	0 1
+constants (10) for 0000023901836ED0:
+	1	"m_curData"
+	2	nil
+	3	"m_score"
+	4	0
+	5	"ipairs"
+	6	"m_levelConfig"
+	7	"score"
+	8	"buff_id"
+	9	3
+	10	1
+locals (10) for 0000023901836ED0:
+	0	self	1	38
+	1	score	1	38
+	2	strBuffId	11	38
+	3	curIndex	12	38
+	4	(for generator)	16	24
+	5	(for state)	16	24
+	6	(for control)	16	24
+	7	index	17	22
+	8	levelConfig	17	22
+	9	relaIndex	25	38
+upvalues (1) for 0000023901836ED0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:283,302> (35 instructions at 0000023901836850)
+2 params, 10 slots, 1 upvalue, 8 locals, 9 constants, 0 functions
+	1	[284]	GETTABLE 	2 0 -1	; "m_curData"
+	2	[284]	EQ       	0 2 -2	; - nil
+	3	[284]	JMP      	0 2	; to 6
+	4	[285]	LOADNIL  	2 0
+	5	[285]	RETURN   	2 2
+	6	[288]	SELF     	2 0 -3	; "GetCurDoingBuff"
+	7	[288]	CALL     	2 2 2
+	8	[290]	EQ       	0 2 -2	; - nil
+	9	[290]	JMP      	0 2	; to 12
+	10	[291]	LOADNIL  	3 0
+	11	[291]	RETURN   	3 2
+	12	[295]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	13	[295]	GETTABLE 	4 0 -1	; "m_curData"
+	14	[295]	GETTABLE 	4 4 -5	; "m_buffConfig"
+	15	[295]	CALL     	3 2 4
+	16	[295]	JMP      	0 14	; to 31
+	17	[296]	GETTABLE 	8 7 -6	; "buff_id"
+	18	[296]	EQ       	0 8 2
+	19	[296]	JMP      	0 11	; to 31
+	20	[296]	SELF     	8 1 -7	; "GetDiffScore"
+	21	[296]	CALL     	8 2 2
+	22	[296]	GETTABLE 	9 7 -8	; "diff_score_min"
+	23	[296]	LE       	0 9 8
+	24	[296]	JMP      	0 6	; to 31
+	25	[296]	SELF     	8 1 -7	; "GetDiffScore"
+	26	[296]	CALL     	8 2 2
+	27	[296]	GETTABLE 	9 7 -9	; "diff_score_max"
+	28	[296]	LE       	0 8 9
+	29	[296]	JMP      	0 1	; to 31
+	30	[297]	RETURN   	7 2
+	31	[295]	TFORCALL 	3 2
+	32	[295]	TFORLOOP 	5 -16	; to 17
+	33	[301]	LOADNIL  	3 0
+	34	[301]	RETURN   	3 2
+	35	[302]	RETURN   	0 1
+constants (9) for 0000023901836850:
+	1	"m_curData"
+	2	nil
+	3	"GetCurDoingBuff"
+	4	"ipairs"
+	5	"m_buffConfig"
+	6	"buff_id"
+	7	"GetDiffScore"
+	8	"diff_score_min"
+	9	"diff_score_max"
+locals (8) for 0000023901836850:
+	0	self	1	36
+	1	order	1	36
+	2	strBuffId	8	36
+	3	(for generator)	16	33
+	4	(for state)	16	33
+	5	(for control)	16	33
+	6	_	17	31
+	7	buffConfig	17	31
+upvalues (1) for 0000023901836850:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:305,319> (24 instructions at 00000239018365D0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[306]	SELF     	1 0 -1	; "_CanTriggerNecessary"
+	2	[306]	CALL     	1 2 2
+	3	[306]	TEST     	1 1
+	4	[306]	JMP      	0 2	; to 7
+	5	[307]	LOADBOOL 	1 0 0
+	6	[307]	RETURN   	1 2
+	7	[310]	GETTABUP 	1 0 -2	; _ENV "GM"
+	8	[310]	GETTABLE 	1 1 -3	; "SceneManager"
+	9	[310]	SELF     	1 1 -4	; "GetGameMode"
+	10	[310]	CALL     	1 2 2
+	11	[310]	GETTABUP 	2 0 -5	; _ENV "EGameMode"
+	12	[310]	GETTABLE 	2 2 -6	; "Main"
+	13	[310]	EQ       	1 1 2
+	14	[310]	JMP      	0 2	; to 17
+	15	[311]	LOADBOOL 	1 0 0
+	16	[311]	RETURN   	1 2
+	17	[314]	GETTABLE 	1 0 -7	; "m_bLogin"
+	18	[314]	TEST     	1 1
+	19	[314]	JMP      	0 2	; to 22
+	20	[315]	LOADBOOL 	1 0 0
+	21	[315]	RETURN   	1 2
+	22	[318]	LOADBOOL 	1 1 0
+	23	[318]	RETURN   	1 2
+	24	[319]	RETURN   	0 1
+constants (7) for 00000239018365D0:
+	1	"_CanTriggerNecessary"
+	2	"GM"
+	3	"SceneManager"
+	4	"GetGameMode"
+	5	"EGameMode"
+	6	"Main"
+	7	"m_bLogin"
+locals (1) for 00000239018365D0:
+	0	self	1	25
+upvalues (1) for 00000239018365D0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:321,337> (33 instructions at 00000239018369D0)
+1 param, 4 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[322]	SELF     	1 0 -1	; "GetState"
+	2	[322]	CALL     	1 2 2
+	3	[322]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[322]	GETTABLE 	2 2 -3	; "Started"
+	5	[322]	EQ       	1 1 2
+	6	[322]	JMP      	0 2	; to 9
+	7	[323]	LOADBOOL 	1 0 0
+	8	[323]	RETURN   	1 2
+	9	[327]	GETTABLE 	1 0 -4	; "m_curData"
+	10	[327]	EQ       	1 1 -5	; - nil
+	11	[327]	JMP      	0 2	; to 14
+	12	[328]	LOADBOOL 	1 0 0
+	13	[328]	RETURN   	1 2
+	14	[332]	GETTABLE 	1 0 -6	; "m_lastEndTime"
+	15	[332]	EQ       	1 1 -5	; - nil
+	16	[332]	JMP      	0 14	; to 31
+	17	[332]	GETTABUP 	1 0 -7	; _ENV "GM"
+	18	[332]	GETTABLE 	1 1 -8	; "GameModel"
+	19	[332]	SELF     	1 1 -9	; "GetServerTime"
+	20	[332]	CALL     	1 2 2
+	21	[332]	GETTABLE 	2 0 -6	; "m_lastEndTime"
+	22	[332]	GETTABLE 	3 0 -10	; "m_CookingFrenzyconfig"
+	23	[332]	GETTABLE 	3 3 -11	; "m_generalConfig"
+	24	[332]	GETTABLE 	3 3 -12	; "cooldown"
+	25	[332]	MUL      	3 3 -13	; - 60
+	26	[332]	ADD      	2 2 3
+	27	[332]	LT       	0 1 2
+	28	[332]	JMP      	0 2	; to 31
+	29	[333]	LOADBOOL 	1 0 0
+	30	[333]	RETURN   	1 2
+	31	[336]	LOADBOOL 	1 1 0
+	32	[336]	RETURN   	1 2
+	33	[337]	RETURN   	0 1
+constants (13) for 00000239018369D0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_curData"
+	5	nil
+	6	"m_lastEndTime"
+	7	"GM"
+	8	"GameModel"
+	9	"GetServerTime"
+	10	"m_CookingFrenzyconfig"
+	11	"m_generalConfig"
+	12	"cooldown"
+	13	60
+locals (1) for 00000239018369D0:
+	0	self	1	34
+upvalues (1) for 00000239018369D0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:339,347> (21 instructions at 00000239018372D0)
+1 param, 3 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[340]	SELF     	1 0 -1	; "TryCloseTrigger"
+	2	[340]	CALL     	1 2 1
+	3	[341]	GETTABUP 	1 0 -2	; _ENV "GM"
+	4	[341]	GETTABLE 	1 1 -3	; "SceneManager"
+	5	[341]	SELF     	1 1 -4	; "GetGameMode"
+	6	[341]	CALL     	1 2 2
+	7	[341]	GETTABUP 	2 0 -5	; _ENV "EGameMode"
+	8	[341]	GETTABLE 	2 2 -6	; "Main"
+	9	[341]	EQ       	0 1 2
+	10	[341]	JMP      	0 4	; to 15
+	11	[342]	SELF     	1 0 -7	; "_CanTriggerNecessary"
+	12	[342]	CALL     	1 2 2
+	13	[342]	TEST     	1 1
+	14	[342]	JMP      	0 2	; to 17
+	15	[343]	LOADBOOL 	1 0 0
+	16	[343]	RETURN   	1 2
+	17	[345]	SELF     	1 0 -8	; "TriggerData"
+	18	[345]	CALL     	1 2 1
+	19	[346]	LOADBOOL 	1 1 0
+	20	[346]	RETURN   	1 2
+	21	[347]	RETURN   	0 1
+constants (8) for 00000239018372D0:
+	1	"TryCloseTrigger"
+	2	"GM"
+	3	"SceneManager"
+	4	"GetGameMode"
+	5	"EGameMode"
+	6	"Main"
+	7	"_CanTriggerNecessary"
+	8	"TriggerData"
+locals (1) for 00000239018372D0:
+	0	self	1	22
+upvalues (1) for 00000239018372D0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:349,395> (139 instructions at 00000239018366D0)
+1 param, 10 slots, 2 upvalues, 9 locals, 57 constants, 1 function
+	1	[350]	NEWTABLE 	1 0 0
+	2	[350]	SETTABLE 	0 -1 1	; "m_curData" -
+	3	[351]	GETTABLE 	1 0 -1	; "m_curData"
+	4	[351]	SETTABLE 	1 -2 -3	; "m_score" 0
+	5	[352]	GETTABLE 	1 0 -1	; "m_curData"
+	6	[352]	NEWTABLE 	2 0 0
+	7	[352]	SETTABLE 	1 -4 2	; "m_levelConfig" -
+	8	[354]	GETTABUP 	1 0 -5	; _ENV "GM"
+	9	[354]	GETTABLE 	1 1 -6	; "LevelModel"
+	10	[354]	SELF     	1 1 -7	; "GetCurrentLevel"
+	11	[354]	CALL     	1 2 2
+	12	[355]	GETTABUP 	2 0 -8	; _ENV "ipairs"
+	13	[355]	GETTABLE 	3 0 -9	; "m_CookingFrenzyconfig"
+	14	[355]	GETTABLE 	3 3 -4	; "m_levelConfig"
+	15	[355]	CALL     	2 2 4
+	16	[355]	JMP      	0 12	; to 29
+	17	[356]	GETTABLE 	7 6 -10	; "sLv"
+	18	[356]	LE       	0 7 1
+	19	[356]	JMP      	0 9	; to 29
+	20	[356]	GETTABLE 	7 6 -11	; "eLv"
+	21	[356]	LE       	0 1 7
+	22	[356]	JMP      	0 6	; to 29
+	23	[357]	GETTABUP 	7 0 -12	; _ENV "table"
+	24	[357]	GETTABLE 	7 7 -13	; "insert"
+	25	[357]	GETTABLE 	8 0 -1	; "m_curData"
+	26	[357]	GETTABLE 	8 8 -4	; "m_levelConfig"
+	27	[357]	MOVE     	9 6
+	28	[357]	CALL     	7 3 1
+	29	[355]	TFORCALL 	2 2
+	30	[355]	TFORLOOP 	4 -14	; to 17
+	31	[361]	GETTABUP 	2 0 -12	; _ENV "table"
+	32	[361]	GETTABLE 	2 2 -14	; "sort"
+	33	[361]	GETTABLE 	3 0 -1	; "m_curData"
+	34	[361]	GETTABLE 	3 3 -4	; "m_levelConfig"
+	35	[363]	CLOSURE  	4 0	; 0000023901836DD0
+	36	[361]	CALL     	2 3 1
+	37	[365]	LOADNIL  	2 0
+	38	[366]	GETTABUP 	3 0 -5	; _ENV "GM"
+	39	[366]	GETTABLE 	3 3 -15	; "ReturnUserModel"
+	40	[366]	SELF     	3 3 -16	; "IsInNewReturnExperienceTime"
+	41	[366]	CALL     	3 2 2
+	42	[366]	TEST     	3 0
+	43	[366]	JMP      	0 13	; to 57
+	44	[367]	SELF     	3 0 -17	; "SaveOpenWindowScore"
+	45	[367]	CALL     	3 2 1
+	46	[368]	GETTABLE 	3 0 -1	; "m_curData"
+	47	[368]	GETTABLE 	4 0 -1	; "m_curData"
+	48	[368]	GETTABLE 	4 4 -4	; "m_levelConfig"
+	49	[368]	GETTABLE 	4 4 -18	; 1
+	50	[368]	GETTABLE 	4 4 -19	; "score"
+	51	[368]	SETTABLE 	3 -2 4	; "m_score" -
+	52	[369]	SELF     	3 0 -20	; "SetWaitOpenTriggerWindowState"
+	53	[369]	LOADBOOL 	5 1 0
+	54	[369]	CALL     	3 3 1
+	55	[370]	LOADBOOL 	2 1 0
+	56	[370]	JMP      	0 11	; to 68
+	57	[373]	GETTABLE 	3 0 -21	; "m_lightMode"
+	58	[373]	EQ       	0 3 -18	; - 1
+	59	[373]	JMP      	0 4	; to 64
+	60	[374]	SELF     	3 0 -22	; "SetWaitPopLightWindowState"
+	61	[374]	LOADBOOL 	5 1 0
+	62	[374]	CALL     	3 3 1
+	63	[374]	JMP      	0 3	; to 67
+	64	[376]	SELF     	3 0 -23	; "SetWaitPopMainWindowState"
+	65	[376]	LOADBOOL 	5 1 0
+	66	[376]	CALL     	3 3 1
+	67	[378]	LOADBOOL 	2 0 0
+	68	[381]	GETTABLE 	3 0 -1	; "m_curData"
+	69	[381]	GETTABLE 	4 0 -9	; "m_CookingFrenzyconfig"
+	70	[381]	GETTABLE 	4 4 -24	; "m_buffConfig"
+	71	[381]	SETTABLE 	3 -24 4	; "m_buffConfig" -
+	72	[382]	GETTABLE 	3 0 -1	; "m_curData"
+	73	[382]	GETTABUP 	4 0 -26	; _ENV "math"
+	74	[382]	GETTABLE 	4 4 -27	; "min"
+	75	[382]	GETTABUP 	5 0 -5	; _ENV "GM"
+	76	[382]	GETTABLE 	5 5 -28	; "GameModel"
+	77	[382]	SELF     	5 5 -29	; "GetServerTime"
+	78	[382]	CALL     	5 2 2
+	79	[382]	GETTABLE 	6 0 -9	; "m_CookingFrenzyconfig"
+	80	[382]	GETTABLE 	6 6 -30	; "m_generalConfig"
+	81	[382]	GETTABLE 	6 6 -31	; "duration"
+	82	[382]	MUL      	6 6 -32	; - 60
+	83	[382]	ADD      	5 5 6
+	84	[382]	GETTABLE 	6 0 -33	; "m_config"
+	85	[382]	GETTABLE 	6 6 -34	; "rTime"
+	86	[382]	CALL     	4 3 2
+	87	[382]	SETTABLE 	3 -25 4	; "m_eTime" -
+	88	[383]	GETTABLE 	3 0 -1	; "m_curData"
+	89	[383]	GETTABUP 	4 0 -5	; _ENV "GM"
+	90	[383]	GETTABLE 	4 4 -28	; "GameModel"
+	91	[383]	SELF     	4 4 -29	; "GetServerTime"
+	92	[383]	CALL     	4 2 2
+	93	[383]	SETTABLE 	3 -35 4	; "m_sTime" -
+	94	[384]	GETTABLE 	3 0 -1	; "m_curData"
+	95	[384]	GETTABLE 	3 3 -25	; "m_eTime"
+	96	[384]	SETTABLE 	0 -36 3	; "m_lastEndTime" -
+	97	[386]	SETTABLE 	0 -37 -38	; "m_bLogin" false
+	98	[388]	GETTABUP 	3 0 -39	; _ENV "EventDispatcher"
+	99	[388]	GETTABLE 	3 3 -40	; "DispatchEvent"
+	100	[388]	GETTABUP 	4 0 -41	; _ENV "EEventType"
+	101	[388]	GETTABLE 	4 4 -42	; "CookingFrenzyTriggerChanged"
+	102	[388]	CALL     	3 2 1
+	103	[389]	SELF     	3 0 -43	; "SaveData"
+	104	[389]	CALL     	3 2 1
+	105	[391]	GETTABUP 	3 0 -44	; _ENV "tonumber"
+	106	[391]	GETTABLE 	4 0 -45	; "m_dbTable"
+	107	[391]	SELF     	4 4 -46	; "GetValue"
+	108	[391]	GETTABUP 	6 1 -47	; strDBKeys "CookingFrenzyTriggerCount"
+	109	[391]	LOADK    	7 -48	; "value"
+	110	[391]	CALL     	4 4 2
+	111	[391]	TEST     	4 1
+	112	[391]	JMP      	0 1	; to 114
+	113	[391]	LOADK    	4 -49	; ""
+	114	[391]	CALL     	3 2 2
+	115	[391]	TEST     	3 1
+	116	[391]	JMP      	0 1	; to 118
+	117	[391]	LOADK    	3 -3	; 0
+	118	[392]	ADD      	3 3 -18	; - 1
+	119	[393]	GETTABUP 	4 0 -5	; _ENV "GM"
+	120	[393]	GETTABLE 	4 4 -50	; "BIManager"
+	121	[393]	SELF     	4 4 -51	; "LogAction"
+	122	[393]	GETTABUP 	6 0 -52	; _ENV "EBIType"
+	123	[393]	GETTABLE 	6 6 -53	; "CookingFrenzyStart"
+	124	[393]	NEWTABLE 	7 0 2
+	125	[393]	SETTABLE 	7 -54 3	; "cnt" -
+	126	[393]	GETTABUP 	8 0 -56	; _ENV "tostring"
+	127	[393]	MOVE     	9 2
+	128	[393]	CALL     	8 2 2
+	129	[393]	SETTABLE 	7 -55 8	; "isReturn" -
+	130	[393]	CALL     	4 4 1
+	131	[394]	GETTABLE 	4 0 -45	; "m_dbTable"
+	132	[394]	SELF     	4 4 -57	; "Set"
+	133	[394]	GETTABUP 	6 1 -47	; strDBKeys "CookingFrenzyTriggerCount"
+	134	[394]	LOADK    	7 -48	; "value"
+	135	[394]	GETTABUP 	8 0 -56	; _ENV "tostring"
+	136	[394]	MOVE     	9 3
+	137	[394]	CALL     	8 2 0
+	138	[394]	CALL     	4 0 1
+	139	[395]	RETURN   	0 1
+constants (57) for 00000239018366D0:
+	1	"m_curData"
+	2	"m_score"
+	3	0
+	4	"m_levelConfig"
+	5	"GM"
+	6	"LevelModel"
+	7	"GetCurrentLevel"
+	8	"ipairs"
+	9	"m_CookingFrenzyconfig"
+	10	"sLv"
+	11	"eLv"
+	12	"table"
+	13	"insert"
+	14	"sort"
+	15	"ReturnUserModel"
+	16	"IsInNewReturnExperienceTime"
+	17	"SaveOpenWindowScore"
+	18	1
+	19	"score"
+	20	"SetWaitOpenTriggerWindowState"
+	21	"m_lightMode"
+	22	"SetWaitPopLightWindowState"
+	23	"SetWaitPopMainWindowState"
+	24	"m_buffConfig"
+	25	"m_eTime"
+	26	"math"
+	27	"min"
+	28	"GameModel"
+	29	"GetServerTime"
+	30	"m_generalConfig"
+	31	"duration"
+	32	60
+	33	"m_config"
+	34	"rTime"
+	35	"m_sTime"
+	36	"m_lastEndTime"
+	37	"m_bLogin"
+	38	false
+	39	"EventDispatcher"
+	40	"DispatchEvent"
+	41	"EEventType"
+	42	"CookingFrenzyTriggerChanged"
+	43	"SaveData"
+	44	"tonumber"
+	45	"m_dbTable"
+	46	"GetValue"
+	47	"CookingFrenzyTriggerCount"
+	48	"value"
+	49	""
+	50	"BIManager"
+	51	"LogAction"
+	52	"EBIType"
+	53	"CookingFrenzyStart"
+	54	"cnt"
+	55	"isReturn"
+	56	"tostring"
+	57	"Set"
+locals (9) for 00000239018366D0:
+	0	self	1	140
+	1	curLevel	12	140
+	2	(for generator)	16	31
+	3	(for state)	16	31
+	4	(for control)	16	31
+	5	_	17	29
+	6	levelConfig	17	29
+	7	isreturn	38	140
+	8	curCount	118	140
+upvalues (2) for 00000239018366D0:
+	0	_ENV	0	0
+	1	strDBKeys	1	1
+
+function <CookingFrenzyModel.lua:361,363> (8 instructions at 0000023901836DD0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[362]	GETTABLE 	2 0 -1	; "score"
+	2	[362]	GETTABLE 	3 1 -1	; "score"
+	3	[362]	LT       	1 2 3
+	4	[362]	JMP      	0 1	; to 6
+	5	[362]	LOADBOOL 	2 0 1
+	6	[362]	LOADBOOL 	2 1 0
+	7	[362]	RETURN   	2 2
+	8	[363]	RETURN   	0 1
+constants (1) for 0000023901836DD0:
+	1	"score"
+locals (2) for 0000023901836DD0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000023901836DD0:
+
+function <CookingFrenzyModel.lua:397,423> (67 instructions at 0000023901836A50)
+1 param, 10 slots, 2 upvalues, 5 locals, 33 constants, 0 functions
+	1	[398]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[398]	EQ       	0 1 -2	; - nil
+	3	[398]	JMP      	0 1	; to 5
+	4	[399]	RETURN   	0 1
+	5	[402]	GETTABLE 	1 0 -1	; "m_curData"
+	6	[402]	GETTABLE 	1 1 -3	; "m_eTime"
+	7	[402]	GETTABUP 	2 0 -4	; _ENV "GM"
+	8	[402]	GETTABLE 	2 2 -5	; "GameModel"
+	9	[402]	SELF     	2 2 -6	; "GetServerTime"
+	10	[402]	CALL     	2 2 2
+	11	[402]	LE       	0 1 2
+	12	[402]	JMP      	0 54	; to 67
+	13	[403]	SELF     	1 0 -7	; "GetCurDoingBuff"
+	14	[403]	CALL     	1 2 2
+	15	[404]	GETTABLE 	2 0 -1	; "m_curData"
+	16	[404]	GETTABLE 	2 2 -8	; "m_sTime"
+	17	[405]	GETTABLE 	3 0 -1	; "m_curData"
+	18	[405]	GETTABLE 	3 3 -3	; "m_eTime"
+	19	[406]	SETTABLE 	0 -1 -2	; "m_curData" nil
+	20	[407]	GETTABUP 	4 0 -9	; _ENV "EventDispatcher"
+	21	[407]	GETTABLE 	4 4 -10	; "DispatchEvent"
+	22	[407]	GETTABUP 	5 0 -11	; _ENV "EEventType"
+	23	[407]	GETTABLE 	5 5 -12	; "CookingFrenzyTriggerChanged"
+	24	[407]	CALL     	4 2 1
+	25	[408]	GETTABUP 	4 0 -9	; _ENV "EventDispatcher"
+	26	[408]	GETTABLE 	4 4 -10	; "DispatchEvent"
+	27	[408]	GETTABUP 	5 0 -11	; _ENV "EEventType"
+	28	[408]	GETTABLE 	5 5 -13	; "OrderStatusChanged"
+	29	[408]	CALL     	4 2 1
+	30	[409]	SELF     	4 0 -14	; "SetWaitOpenTriggerWindowState"
+	31	[409]	LOADBOOL 	6 0 0
+	32	[409]	CALL     	4 3 1
+	33	[410]	SELF     	4 0 -15	; "SetWaitPopMainWindowState"
+	34	[410]	LOADBOOL 	6 0 0
+	35	[410]	CALL     	4 3 1
+	36	[411]	SELF     	4 0 -16	; "SetWaitPopLightWindowState"
+	37	[411]	LOADBOOL 	6 0 0
+	38	[411]	CALL     	4 3 1
+	39	[412]	SELF     	4 0 -17	; "SaveData"
+	40	[412]	CALL     	4 2 1
+	41	[414]	GETTABUP 	4 0 -18	; _ENV "tonumber"
+	42	[414]	GETTABLE 	5 0 -19	; "m_dbTable"
+	43	[414]	SELF     	5 5 -20	; "GetValue"
+	44	[414]	GETTABUP 	7 1 -21	; strDBKeys "CookingFrenzyTriggerCount"
+	45	[414]	LOADK    	8 -22	; "value"
+	46	[414]	CALL     	5 4 2
+	47	[414]	TEST     	5 1
+	48	[414]	JMP      	0 1	; to 50
+	49	[414]	LOADK    	5 -23	; ""
+	50	[414]	CALL     	4 2 2
+	51	[414]	TEST     	4 1
+	52	[414]	JMP      	0 1	; to 54
+	53	[414]	LOADK    	4 -24	; 0
+	54	[415]	GETTABUP 	5 0 -4	; _ENV "GM"
+	55	[415]	GETTABLE 	5 5 -25	; "BIManager"
+	56	[415]	SELF     	5 5 -26	; "LogAction"
+	57	[415]	GETTABUP 	7 0 -27	; _ENV "EBIType"
+	58	[415]	GETTABLE 	7 7 -28	; "CookingFrenzyBuffEnded"
+	59	[415]	NEWTABLE 	8 0 5
+	60	[416]	SETTABLE 	8 -29 2	; "sTime" -
+	61	[417]	SETTABLE 	8 -30 3	; "eTime" -
+	62	[418]	SETTABLE 	8 -31 1	; "buffId" -
+	63	[419]	SUB      	9 3 2
+	64	[419]	SETTABLE 	8 -32 9	; "duration" -
+	65	[420]	SETTABLE 	8 -33 4	; "round" -
+	66	[415]	CALL     	5 4 1
+	67	[423]	RETURN   	0 1
+constants (33) for 0000023901836A50:
+	1	"m_curData"
+	2	nil
+	3	"m_eTime"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"GetCurDoingBuff"
+	8	"m_sTime"
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"CookingFrenzyTriggerChanged"
+	13	"OrderStatusChanged"
+	14	"SetWaitOpenTriggerWindowState"
+	15	"SetWaitPopMainWindowState"
+	16	"SetWaitPopLightWindowState"
+	17	"SaveData"
+	18	"tonumber"
+	19	"m_dbTable"
+	20	"GetValue"
+	21	"CookingFrenzyTriggerCount"
+	22	"value"
+	23	""
+	24	0
+	25	"BIManager"
+	26	"LogAction"
+	27	"EBIType"
+	28	"CookingFrenzyBuffEnded"
+	29	"sTime"
+	30	"eTime"
+	31	"buffId"
+	32	"duration"
+	33	"round"
+locals (5) for 0000023901836A50:
+	0	self	1	68
+	1	buffID	15	67
+	2	sTime	17	67
+	3	eTime	19	67
+	4	curCount	54	67
+upvalues (2) for 0000023901836A50:
+	0	_ENV	0	0
+	1	strDBKeys	1	1
+
+function <CookingFrenzyModel.lua:425,432> (26 instructions at 0000023901836F50)
+1 param, 7 slots, 2 upvalues, 1 local, 11 constants, 0 functions
+	1	[426]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[426]	EQ       	0 1 -2	; - nil
+	3	[426]	JMP      	0 6	; to 10
+	4	[427]	GETTABLE 	1 0 -3	; "m_dbTable"
+	5	[427]	SELF     	1 1 -4	; "Remove"
+	6	[427]	GETTABUP 	3 0 -5	; strDBKeys "CookingFrenzyCurData"
+	7	[427]	LOADK    	4 -6	; "value"
+	8	[427]	CALL     	1 4 1
+	9	[427]	JMP      	0 16	; to 26
+	10	[429]	GETTABLE 	1 0 -3	; "m_dbTable"
+	11	[429]	SELF     	1 1 -7	; "Set"
+	12	[429]	GETTABUP 	3 0 -5	; strDBKeys "CookingFrenzyCurData"
+	13	[429]	LOADK    	4 -6	; "value"
+	14	[429]	GETTABUP 	5 1 -8	; _ENV "json"
+	15	[429]	GETTABLE 	5 5 -9	; "encode"
+	16	[429]	GETTABLE 	6 0 -1	; "m_curData"
+	17	[429]	CALL     	5 2 0
+	18	[429]	CALL     	1 0 1
+	19	[430]	GETTABLE 	1 0 -3	; "m_dbTable"
+	20	[430]	SELF     	1 1 -7	; "Set"
+	21	[430]	GETTABUP 	3 0 -10	; strDBKeys "CookingFrenzyLastEndTime"
+	22	[430]	LOADK    	4 -6	; "value"
+	23	[430]	GETTABLE 	5 0 -1	; "m_curData"
+	24	[430]	GETTABLE 	5 5 -11	; "m_eTime"
+	25	[430]	CALL     	1 5 1
+	26	[432]	RETURN   	0 1
+constants (11) for 0000023901836F50:
+	1	"m_curData"
+	2	nil
+	3	"m_dbTable"
+	4	"Remove"
+	5	"CookingFrenzyCurData"
+	6	"value"
+	7	"Set"
+	8	"json"
+	9	"encode"
+	10	"CookingFrenzyLastEndTime"
+	11	"m_eTime"
+locals (1) for 0000023901836F50:
+	0	self	1	27
+upvalues (2) for 0000023901836F50:
+	0	strDBKeys	1	1
+	1	_ENV	0	0
+
+function <CookingFrenzyModel.lua:434,443> (21 instructions at 0000023901836BD0)
+1 param, 4 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[435]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[435]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[435]	MOVE     	2 0
+	4	[435]	CALL     	1 2 1
+	5	[437]	SETTABLE 	0 -3 -4	; "m_curData" nil
+	6	[438]	SETTABLE 	0 -5 -4	; "m_lastEndTime" nil
+	7	[439]	SELF     	1 0 -6	; "SetWaitOpenTriggerWindowState"
+	8	[439]	LOADBOOL 	3 0 0
+	9	[439]	CALL     	1 3 1
+	10	[440]	SELF     	1 0 -7	; "SetWaitPopMainWindowState"
+	11	[440]	LOADBOOL 	3 0 0
+	12	[440]	CALL     	1 3 1
+	13	[441]	SELF     	1 0 -8	; "SetWaitPopLightWindowState"
+	14	[441]	LOADBOOL 	3 0 0
+	15	[441]	CALL     	1 3 1
+	16	[442]	GETTABUP 	1 0 -9	; _ENV "EventDispatcher"
+	17	[442]	GETTABLE 	1 1 -10	; "DispatchEvent"
+	18	[442]	GETTABUP 	2 0 -11	; _ENV "EEventType"
+	19	[442]	GETTABLE 	2 2 -12	; "OrderStatusChanged"
+	20	[442]	CALL     	1 2 1
+	21	[443]	RETURN   	0 1
+constants (12) for 0000023901836BD0:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_curData"
+	4	nil
+	5	"m_lastEndTime"
+	6	"SetWaitOpenTriggerWindowState"
+	7	"SetWaitPopMainWindowState"
+	8	"SetWaitPopLightWindowState"
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"OrderStatusChanged"
+locals (1) for 0000023901836BD0:
+	0	self	1	22
+upvalues (1) for 0000023901836BD0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:445,453> (7 instructions at 00000239018368D0)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[446]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[446]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[446]	MOVE     	2 0
+	4	[446]	CALL     	1 2 1
+	5	[448]	SELF     	1 0 -3	; "TryCloseTrigger"
+	6	[448]	CALL     	1 2 1
+	7	[453]	RETURN   	0 1
+constants (3) for 00000239018368D0:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"TryCloseTrigger"
+locals (1) for 00000239018368D0:
+	0	self	1	8
+upvalues (1) for 00000239018368D0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:455,457> (6 instructions at 0000023901836CD0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[456]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[456]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[456]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[456]	GETTABLE 	2 2 -4	; "CookingFrenzyStateChanged"
+	5	[456]	CALL     	1 2 1
+	6	[457]	RETURN   	0 1
+constants (4) for 0000023901836CD0:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"CookingFrenzyStateChanged"
+locals (1) for 0000023901836CD0:
+	0	self	1	7
+upvalues (1) for 0000023901836CD0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:459,465> (8 instructions at 0000023901837050)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[460]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[460]	EQ       	1 1 -2	; - nil
+	3	[460]	JMP      	0 2	; to 6
+	4	[461]	LOADBOOL 	1 1 0
+	5	[461]	RETURN   	1 2
+	6	[464]	LOADBOOL 	1 0 0
+	7	[464]	RETURN   	1 2
+	8	[465]	RETURN   	0 1
+constants (2) for 0000023901837050:
+	1	"m_curData"
+	2	nil
+locals (1) for 0000023901837050:
+	0	self	1	9
+upvalues (0) for 0000023901837050:
+
+function <CookingFrenzyModel.lua:467,481> (33 instructions at 00000239018371D0)
+2 params, 7 slots, 1 upvalue, 2 locals, 20 constants, 1 function
+	1	[468]	NEWTABLE 	2 0 0
+	2	[468]	SETTABLE 	0 -1 2	; "m_CookingFrenzyconfig" -
+	3	[469]	GETTABLE 	2 0 -1	; "m_CookingFrenzyconfig"
+	4	[469]	GETTABLE 	3 1 -3	; "cookingFrenzyGeneralConfig"
+	5	[469]	GETTABLE 	3 3 -4	; 1
+	6	[469]	SETTABLE 	2 -2 3	; "m_generalConfig" -
+	7	[470]	GETTABLE 	2 0 -1	; "m_CookingFrenzyconfig"
+	8	[470]	GETTABLE 	3 1 -6	; "cookingFrenzyLevelConfig"
+	9	[470]	SETTABLE 	2 -5 3	; "m_levelConfig" -
+	10	[471]	GETTABLE 	2 0 -1	; "m_CookingFrenzyconfig"
+	11	[471]	GETTABLE 	3 1 -8	; "cookingFrenzyBuffConfig"
+	12	[471]	SETTABLE 	2 -7 3	; "m_buffConfig" -
+	13	[472]	GETTABLE 	2 0 -1	; "m_CookingFrenzyconfig"
+	14	[472]	GETTABLE 	3 1 -9	; "rTime"
+	15	[472]	SETTABLE 	2 -9 3	; "rTime" -
+	16	[475]	GETTABUP 	2 0 -10	; _ENV "table"
+	17	[475]	GETTABLE 	2 2 -11	; "sort"
+	18	[475]	GETTABLE 	3 0 -1	; "m_CookingFrenzyconfig"
+	19	[475]	GETTABLE 	3 3 -5	; "m_levelConfig"
+	20	[477]	CLOSURE  	4 0	; 00000239018364D0
+	21	[475]	CALL     	2 3 1
+	22	[480]	GETTABUP 	2 0 -13	; _ENV "GM"
+	23	[480]	GETTABLE 	2 2 -14	; "ConfigModel"
+	24	[480]	SELF     	2 2 -15	; "GetGeneralConfByType"
+	25	[480]	GETTABUP 	4 0 -16	; _ENV "EGeneralConfType"
+	26	[480]	GETTABLE 	4 4 -17	; "CookingFrenzyLight"
+	27	[480]	GETTABUP 	5 0 -14	; _ENV "ConfigModel"
+	28	[480]	GETTABLE 	5 5 -18	; "EGeneralConfigParam"
+	29	[480]	GETTABLE 	5 5 -19	; "Int"
+	30	[480]	LOADK    	6 -20	; 0
+	31	[480]	CALL     	2 5 2
+	32	[480]	SETTABLE 	0 -12 2	; "m_lightMode" -
+	33	[481]	RETURN   	0 1
+constants (20) for 00000239018371D0:
+	1	"m_CookingFrenzyconfig"
+	2	"m_generalConfig"
+	3	"cookingFrenzyGeneralConfig"
+	4	1
+	5	"m_levelConfig"
+	6	"cookingFrenzyLevelConfig"
+	7	"m_buffConfig"
+	8	"cookingFrenzyBuffConfig"
+	9	"rTime"
+	10	"table"
+	11	"sort"
+	12	"m_lightMode"
+	13	"GM"
+	14	"ConfigModel"
+	15	"GetGeneralConfByType"
+	16	"EGeneralConfType"
+	17	"CookingFrenzyLight"
+	18	"EGeneralConfigParam"
+	19	"Int"
+	20	0
+locals (2) for 00000239018371D0:
+	0	self	1	34
+	1	config	1	34
+upvalues (1) for 00000239018371D0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:475,477> (8 instructions at 00000239018364D0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[476]	GETTABLE 	2 0 -1	; "score"
+	2	[476]	GETTABLE 	3 1 -1	; "score"
+	3	[476]	LT       	1 2 3
+	4	[476]	JMP      	0 1	; to 6
+	5	[476]	LOADBOOL 	2 0 1
+	6	[476]	LOADBOOL 	2 1 0
+	7	[476]	RETURN   	2 2
+	8	[477]	RETURN   	0 1
+constants (1) for 00000239018364D0:
+	1	"score"
+locals (2) for 00000239018364D0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 00000239018364D0:
+
+function <CookingFrenzyModel.lua:486,610> (309 instructions at 0000023901836650)
+3 params, 25 slots, 2 upvalues, 51 locals, 58 constants, 0 functions
+	1	[487]	SELF     	3 0 -1	; "GetCookingFrenzyItemCode"
+	2	[487]	MOVE     	5 2
+	3	[487]	MOVE     	6 1
+	4	[487]	CALL     	3 4 2
+	5	[488]	NEWTABLE 	4 0 0
+	6	[489]	LOADK    	5 -2	; 1
+	7	[491]	GETTABLE 	6 1 -3	; "win_all"
+	8	[491]	EQ       	1 6 -2	; - 1
+	9	[491]	JMP      	0 162	; to 172
+	10	[493]	NEWTABLE 	6 0 0
+	11	[494]	LOADK    	7 -4	; 0
+	12	[495]	NEWTABLE 	8 0 0
+	13	[496]	LOADK    	9 -2	; 1
+	14	[497]	GETTABUP 	10 0 -5	; _ENV "ipairs"
+	15	[497]	GETTABLE 	11 1 -6	; "rewards"
+	16	[497]	CALL     	10 2 4
+	17	[497]	JMP      	0 22	; to 40
+	18	[498]	GETTABUP 	15 0 -7	; _ENV "PROPERTY_TYPE"
+	19	[498]	GETTABLE 	15 14 15
+	20	[498]	GETTABUP 	16 0 -8	; _ENV "EPropertyType"
+	21	[498]	GETTABLE 	16 16 -9	; "CookingFrenzyItem"
+	22	[498]	EQ       	0 15 16
+	23	[498]	JMP      	0 11	; to 35
+	24	[499]	GETTABLE 	15 14 -10	; "Weight"
+	25	[499]	ADD      	7 7 15
+	26	[500]	GETTABUP 	15 0 -11	; _ENV "table"
+	27	[500]	GETTABLE 	15 15 -12	; "insert"
+	28	[500]	MOVE     	16 8
+	29	[500]	NEWTABLE 	17 0 2
+	30	[501]	SETTABLE 	17 -13 14	; "reward" -
+	31	[502]	SETTABLE 	17 -14 9	; "index" -
+	32	[500]	CALL     	15 3 1
+	33	[504]	ADD      	9 9 -2	; - 1
+	34	[504]	JMP      	0 5	; to 40
+	35	[506]	GETTABUP 	15 0 -11	; _ENV "table"
+	36	[506]	GETTABLE 	15 15 -12	; "insert"
+	37	[506]	MOVE     	16 6
+	38	[506]	MOVE     	17 14
+	39	[506]	CALL     	15 3 1
+	40	[497]	TFORCALL 	10 2
+	41	[497]	TFORLOOP 	12 -24	; to 18
+	42	[510]	LT       	0 -4 7	; 0 -
+	43	[510]	JMP      	0 12	; to 56
+	44	[511]	GETTABUP 	10 0 -11	; _ENV "table"
+	45	[511]	GETTABLE 	10 10 -12	; "insert"
+	46	[511]	MOVE     	11 6
+	47	[511]	NEWTABLE 	12 0 3
+	48	[511]	GETTABUP 	13 0 -7	; _ENV "PROPERTY_TYPE"
+	49	[511]	GETTABUP 	14 0 -8	; _ENV "EPropertyType"
+	50	[511]	GETTABLE 	14 14 -9	; "CookingFrenzyItem"
+	51	[511]	SETTABLE 	12 13 14
+	52	[511]	SETTABLE 	12 -10 7	; "Weight" -
+	53	[511]	GETTABUP 	13 0 -15	; _ENV "PROPERTY_COUNT"
+	54	[511]	SETTABLE 	12 13 -2	; - 1
+	55	[511]	CALL     	10 3 1
+	56	[514]	GETTABUP 	10 0 -16	; _ENV "Table"
+	57	[514]	GETTABLE 	10 10 -17	; "ListWeightSelectOne"
+	58	[514]	MOVE     	11 6
+	59	[514]	CALL     	10 2 2
+	60	[515]	GETTABUP 	11 0 -7	; _ENV "PROPERTY_TYPE"
+	61	[515]	GETTABLE 	11 10 11
+	62	[515]	GETTABUP 	12 0 -8	; _ENV "EPropertyType"
+	63	[515]	GETTABLE 	12 12 -9	; "CookingFrenzyItem"
+	64	[515]	EQ       	0 11 12
+	65	[515]	JMP      	0 101	; to 167
+	66	[517]	SELF     	11 0 -1	; "GetCookingFrenzyItemCode"
+	67	[517]	MOVE     	13 2
+	68	[517]	MOVE     	14 1
+	69	[517]	CALL     	11 4 2
+	70	[518]	GETTABUP 	12 0 -5	; _ENV "ipairs"
+	71	[518]	MOVE     	13 8
+	72	[518]	CALL     	12 2 4
+	73	[518]	JMP      	0 37	; to 111
+	74	[519]	GETTABLE 	17 16 -14	; "index"
+	75	[519]	GETTABLE 	17 11 17
+	76	[519]	GETTABLE 	17 17 -18	; "state"
+	77	[519]	GETTABUP 	18 1 -19	; CookieFrenzyRewardItemState "orderBoostOrderLackItem"
+	78	[519]	EQ       	0 17 18
+	79	[519]	JMP      	0 9	; to 89
+	80	[520]	GETTABLE 	17 16 -14	; "index"
+	81	[520]	GETTABLE 	17 8 17
+	82	[520]	GETTABLE 	18 16 -14	; "index"
+	83	[520]	GETTABLE 	18 8 18
+	84	[520]	GETTABLE 	18 18 -13	; "reward"
+	85	[520]	GETTABLE 	18 18 -10	; "Weight"
+	86	[520]	MUL      	18 18 -20	; - 10000
+	87	[520]	SETTABLE 	17 -10 18	; "Weight" -
+	88	[520]	JMP      	0 22	; to 111
+	89	[521]	GETTABLE 	17 16 -14	; "index"
+	90	[521]	GETTABLE 	17 11 17
+	91	[521]	GETTABLE 	17 17 -18	; "state"
+	92	[521]	GETTABUP 	18 1 -21	; CookieFrenzyRewardItemState "orderLackItem"
+	93	[521]	EQ       	0 17 18
+	94	[521]	JMP      	0 9	; to 104
+	95	[522]	GETTABLE 	17 16 -14	; "index"
+	96	[522]	GETTABLE 	17 8 17
+	97	[522]	GETTABLE 	18 16 -14	; "index"
+	98	[522]	GETTABLE 	18 8 18
+	99	[522]	GETTABLE 	18 18 -13	; "reward"
+	100	[522]	GETTABLE 	18 18 -10	; "Weight"
+	101	[522]	MUL      	18 18 -22	; - 100
+	102	[522]	SETTABLE 	17 -10 18	; "Weight" -
+	103	[522]	JMP      	0 7	; to 111
+	104	[524]	GETTABLE 	17 16 -14	; "index"
+	105	[524]	GETTABLE 	17 8 17
+	106	[524]	GETTABLE 	18 16 -14	; "index"
+	107	[524]	GETTABLE 	18 8 18
+	108	[524]	GETTABLE 	18 18 -13	; "reward"
+	109	[524]	GETTABLE 	18 18 -10	; "Weight"
+	110	[524]	SETTABLE 	17 -10 18	; "Weight" -
+	111	[518]	TFORCALL 	12 2
+	112	[518]	TFORLOOP 	14 -39	; to 74
+	113	[528]	GETTABUP 	12 0 -23	; _ENV "GameConfig"
+	114	[528]	GETTABLE 	12 12 -24	; "IsTestMode"
+	115	[528]	CALL     	12 1 2
+	116	[528]	TEST     	12 0
+	117	[528]	JMP      	0 39	; to 157
+	118	[529]	LOADK    	12 -25	; ""
+	119	[530]	MOVE     	13 12
+	120	[530]	LOADK    	14 -26	; "\232\190\147\229\135\186\232\174\162\229\141\149\231\139\130\231\131\173\233\128\137\230\139\169\230\163\139\229\173\144\231\154\132\229\136\164\230\150\173\n"
+	121	[530]	CONCAT   	12 13 14
+	122	[531]	GETTABUP 	13 0 -27	; _ENV "pairs"
+	123	[531]	MOVE     	14 8
+	124	[531]	CALL     	13 2 4
+	125	[531]	JMP      	0 25	; to 151
+	126	[532]	MOVE     	18 12
+	127	[532]	LOADK    	19 -28	; "\231\172\172"
+	128	[532]	GETTABUP 	20 0 -29	; _ENV "tostring"
+	129	[532]	MOVE     	21 16
+	130	[532]	CALL     	20 2 2
+	131	[532]	LOADK    	21 -30	; "\228\184\170\229\165\150\229\138\177\n"
+	132	[532]	CONCAT   	12 18 21
+	133	[533]	MOVE     	18 12
+	134	[533]	GETTABUP 	19 0 -29	; _ENV "tostring"
+	135	[533]	LOADK    	20 -31	; "\230\157\131\233\135\141\239\188\154"
+	136	[533]	CALL     	19 2 2
+	137	[533]	GETTABUP 	20 0 -29	; _ENV "tostring"
+	138	[533]	GETTABLE 	21 17 -10	; "Weight"
+	139	[533]	CALL     	20 2 2
+	140	[533]	CONCAT   	12 18 20
+	141	[534]	MOVE     	18 12
+	142	[534]	GETTABUP 	19 0 -29	; _ENV "tostring"
+	143	[534]	LOADK    	20 -32	; "\230\163\139\229\173\144\239\188\154"
+	144	[534]	CALL     	19 2 2
+	145	[534]	GETTABUP 	20 0 -29	; _ENV "tostring"
+	146	[534]	GETTABLE 	21 17 -14	; "index"
+	147	[534]	GETTABLE 	21 11 21
+	148	[534]	GETTABLE 	21 21 -33	; "item"
+	149	[534]	CALL     	20 2 2
+	150	[534]	CONCAT   	12 18 20
+	151	[531]	TFORCALL 	13 2
+	152	[531]	TFORLOOP 	15 -27	; to 126
+	153	[537]	GETTABUP 	13 0 -34	; _ENV "Log"
+	154	[537]	GETTABLE 	13 13 -35	; "Info"
+	155	[537]	MOVE     	14 12
+	156	[537]	CALL     	13 2 1
+	157	[540]	GETTABUP 	12 0 -16	; _ENV "Table"
+	158	[540]	GETTABLE 	12 12 -17	; "ListWeightSelectOne"
+	159	[540]	MOVE     	13 8
+	160	[540]	CALL     	12 2 2
+	161	[541]	NEWTABLE 	13 1 0
+	162	[541]	GETTABLE 	14 12 -13	; "reward"
+	163	[541]	SETLIST  	13 1 1	; 1
+	164	[541]	MOVE     	4 13
+	165	[542]	GETTABLE 	5 12 -14	; "index"
+	166	[542]	JMP      	0 6	; to 173
+	167	[544]	NEWTABLE 	11 1 0
+	168	[544]	MOVE     	12 10
+	169	[544]	SETLIST  	11 1 1	; 1
+	170	[544]	MOVE     	4 11
+	171	[545]	JMP      	0 1	; to 173
+	172	[551]	GETTABLE 	4 1 -6	; "rewards"
+	173	[560]	LOADK    	6 -4	; 0
+	174	[561]	GETTABUP 	7 0 -5	; _ENV "ipairs"
+	175	[561]	MOVE     	8 4
+	176	[561]	CALL     	7 2 4
+	177	[561]	JMP      	0 11	; to 189
+	178	[562]	GETTABUP 	12 0 -36	; _ENV "GM"
+	179	[562]	GETTABLE 	12 12 -37	; "ItemDataModel"
+	180	[562]	SELF     	12 12 -38	; "GetModelConfig"
+	181	[562]	GETTABUP 	14 0 -7	; _ENV "PROPERTY_TYPE"
+	182	[562]	GETTABLE 	14 11 14
+	183	[562]	LOADBOOL 	15 1 0
+	184	[562]	CALL     	12 4 2
+	185	[562]	EQ       	1 12 -39	; - nil
+	186	[562]	JMP      	0 2	; to 189
+	187	[563]	GETTABLE 	12 11 -40	; "MaxNum"
+	188	[563]	ADD      	6 6 12
+	189	[561]	TFORCALL 	7 2
+	190	[561]	TFORLOOP 	9 -13	; to 178
+	191	[567]	GETTABUP 	7 0 -41	; _ENV "BoardPosition"
+	192	[567]	GETTABLE 	7 7 -42	; "Create"
+	193	[567]	LOADK    	8 -43	; 4
+	194	[567]	LOADK    	9 -44	; 9
+	195	[567]	CALL     	7 3 2
+	196	[568]	GETTABUP 	8 0 -36	; _ENV "GM"
+	197	[568]	GETTABLE 	8 8 -45	; "MainBoardModel"
+	198	[568]	SELF     	8 8 -46	; "FindEmptyPositionInSpreadOrderWithNum"
+	199	[568]	MOVE     	10 7
+	200	[568]	LOADNIL  	11 0
+	201	[568]	LEN      	12 3
+	202	[568]	ADD      	12 12 6
+	203	[568]	LOADBOOL 	13 1 0
+	204	[568]	CALL     	8 6 2
+	205	[569]	LOADK    	9 -2	; 1
+	206	[571]	GETTABUP 	10 0 -16	; _ENV "Table"
+	207	[571]	GETTABLE 	10 10 -47	; "DeepCopy"
+	208	[571]	MOVE     	11 4
+	209	[571]	CALL     	10 2 2
+	210	[571]	MOVE     	4 10
+	211	[572]	NEWTABLE 	10 0 0
+	212	[573]	GETTABUP 	11 0 -5	; _ENV "ipairs"
+	213	[573]	MOVE     	12 4
+	214	[573]	CALL     	11 2 4
+	215	[573]	JMP      	0 88	; to 304
+	216	[574]	GETTABUP 	16 0 -7	; _ENV "PROPERTY_TYPE"
+	217	[574]	GETTABLE 	16 15 16
+	218	[574]	GETTABUP 	17 0 -8	; _ENV "EPropertyType"
+	219	[574]	GETTABLE 	17 17 -9	; "CookingFrenzyItem"
+	220	[574]	EQ       	0 16 17
+	221	[574]	JMP      	0 21	; to 243
+	222	[576]	GETTABLE 	16 3 5
+	223	[576]	GETTABLE 	16 16 -33	; "item"
+	224	[577]	GETTABUP 	17 0 -7	; _ENV "PROPERTY_TYPE"
+	225	[577]	SETTABLE 	15 17 16
+	226	[578]	GETTABUP 	17 0 -15	; _ENV "PROPERTY_COUNT"
+	227	[578]	SETTABLE 	15 17 -2	; - 1
+	228	[579]	GETTABLE 	17 8 9
+	229	[579]	EQ       	1 17 -39	; - nil
+	230	[579]	JMP      	0 3	; to 234
+	231	[580]	GETTABLE 	17 8 9
+	232	[580]	SETTABLE 	15 -48 17	; "itemPos" -
+	233	[580]	JMP      	0 1	; to 235
+	234	[582]	SETTABLE 	15 -49 -50	; "isCookingFrenzyItem" true
+	235	[584]	ADD      	5 5 -2	; - 1
+	236	[585]	ADD      	9 9 -2	; - 1
+	237	[586]	GETTABUP 	17 0 -11	; _ENV "table"
+	238	[586]	GETTABLE 	17 17 -12	; "insert"
+	239	[586]	MOVE     	18 10
+	240	[586]	MOVE     	19 15
+	241	[586]	CALL     	17 3 1
+	242	[586]	JMP      	0 61	; to 304
+	243	[587]	GETTABUP 	16 0 -36	; _ENV "GM"
+	244	[587]	GETTABLE 	16 16 -37	; "ItemDataModel"
+	245	[587]	SELF     	16 16 -38	; "GetModelConfig"
+	246	[587]	GETTABUP 	18 0 -7	; _ENV "PROPERTY_TYPE"
+	247	[587]	GETTABLE 	18 15 18
+	248	[587]	LOADBOOL 	19 1 0
+	249	[587]	CALL     	16 4 2
+	250	[587]	EQ       	1 16 -39	; - nil
+	251	[587]	JMP      	0 34	; to 286
+	252	[588]	GETTABUP 	16 0 -51	; _ENV "math"
+	253	[588]	GETTABLE 	16 16 -52	; "ceil"
+	254	[588]	GETTABUP 	17 0 -53	; _ENV "MathUtil"
+	255	[588]	GETTABLE 	17 17 -54	; "Random"
+	256	[588]	GETTABLE 	18 15 -55	; "MinNum"
+	257	[588]	GETTABLE 	19 15 -40	; "MaxNum"
+	258	[588]	CALL     	17 3 0
+	259	[588]	CALL     	16 0 2
+	260	[589]	LOADK    	17 -2	; 1
+	261	[589]	MOVE     	18 16
+	262	[589]	LOADK    	19 -2	; 1
+	263	[589]	FORPREP  	17 20	; to 284
+	264	[590]	NEWTABLE 	21 0 0
+	265	[591]	GETTABUP 	22 0 -7	; _ENV "PROPERTY_TYPE"
+	266	[591]	GETTABUP 	23 0 -7	; _ENV "PROPERTY_TYPE"
+	267	[591]	GETTABLE 	23 15 23
+	268	[591]	SETTABLE 	21 22 23
+	269	[592]	GETTABUP 	22 0 -15	; _ENV "PROPERTY_COUNT"
+	270	[592]	SETTABLE 	21 22 -2	; - 1
+	271	[593]	GETTABLE 	22 8 9
+	272	[593]	EQ       	1 22 -39	; - nil
+	273	[593]	JMP      	0 3	; to 277
+	274	[594]	GETTABLE 	22 8 9
+	275	[594]	SETTABLE 	21 -48 22	; "itemPos" -
+	276	[594]	JMP      	0 1	; to 278
+	277	[596]	SETTABLE 	21 -49 -50	; "isCookingFrenzyItem" true
+	278	[598]	ADD      	9 9 -2	; - 1
+	279	[599]	GETTABUP 	22 0 -11	; _ENV "table"
+	280	[599]	GETTABLE 	22 22 -12	; "insert"
+	281	[599]	MOVE     	23 10
+	282	[599]	MOVE     	24 21
+	283	[599]	CALL     	22 3 1
+	284	[589]	FORLOOP  	17 -21	; to 264
+	285	[600]	JMP      	0 18	; to 304
+	286	[603]	GETTABUP 	16 0 -15	; _ENV "PROPERTY_COUNT"
+	287	[603]	GETTABUP 	17 0 -51	; _ENV "math"
+	288	[603]	GETTABLE 	17 17 -52	; "ceil"
+	289	[603]	GETTABUP 	18 0 -53	; _ENV "MathUtil"
+	290	[603]	GETTABLE 	18 18 -54	; "Random"
+	291	[603]	GETTABLE 	19 15 -55	; "MinNum"
+	292	[603]	GETTABLE 	20 15 -40	; "MaxNum"
+	293	[603]	CALL     	18 3 0
+	294	[603]	CALL     	17 0 2
+	295	[603]	SETTABLE 	15 16 17
+	296	[604]	GETTABUP 	16 0 -11	; _ENV "table"
+	297	[604]	GETTABLE 	16 16 -12	; "insert"
+	298	[604]	MOVE     	17 10
+	299	[604]	GETTABUP 	18 0 -56	; _ENV "RewardApi"
+	300	[604]	GETTABLE 	18 18 -57	; "ConvertDynamicReward"
+	301	[604]	MOVE     	19 15
+	302	[604]	CALL     	18 2 0
+	303	[604]	CALL     	16 0 1
+	304	[573]	TFORCALL 	11 2
+	305	[573]	TFORLOOP 	13 -90	; to 216
+	306	[608]	GETTABLE 	11 0 -58	; "m_mapCacheAcquireReward"
+	307	[608]	SETTABLE 	11 2 10
+	308	[609]	RETURN   	10 2
+	309	[610]	RETURN   	0 1
+constants (58) for 0000023901836650:
+	1	"GetCookingFrenzyItemCode"
+	2	1
+	3	"win_all"
+	4	0
+	5	"ipairs"
+	6	"rewards"
+	7	"PROPERTY_TYPE"
+	8	"EPropertyType"
+	9	"CookingFrenzyItem"
+	10	"Weight"
+	11	"table"
+	12	"insert"
+	13	"reward"
+	14	"index"
+	15	"PROPERTY_COUNT"
+	16	"Table"
+	17	"ListWeightSelectOne"
+	18	"state"
+	19	"orderBoostOrderLackItem"
+	20	10000
+	21	"orderLackItem"
+	22	100
+	23	"GameConfig"
+	24	"IsTestMode"
+	25	""
+	26	"\232\190\147\229\135\186\232\174\162\229\141\149\231\139\130\231\131\173\233\128\137\230\139\169\230\163\139\229\173\144\231\154\132\229\136\164\230\150\173\n"
+	27	"pairs"
+	28	"\231\172\172"
+	29	"tostring"
+	30	"\228\184\170\229\165\150\229\138\177\n"
+	31	"\230\157\131\233\135\141\239\188\154"
+	32	"\230\163\139\229\173\144\239\188\154"
+	33	"item"
+	34	"Log"
+	35	"Info"
+	36	"GM"
+	37	"ItemDataModel"
+	38	"GetModelConfig"
+	39	nil
+	40	"MaxNum"
+	41	"BoardPosition"
+	42	"Create"
+	43	4
+	44	9
+	45	"MainBoardModel"
+	46	"FindEmptyPositionInSpreadOrderWithNum"
+	47	"DeepCopy"
+	48	"itemPos"
+	49	"isCookingFrenzyItem"
+	50	true
+	51	"math"
+	52	"ceil"
+	53	"MathUtil"
+	54	"Random"
+	55	"MinNum"
+	56	"RewardApi"
+	57	"ConvertDynamicReward"
+	58	"m_mapCacheAcquireReward"
+locals (51) for 0000023901836650:
+	0	self	1	310
+	1	cfg	1	310
+	2	order	1	310
+	3	itemRandomCodes	5	310
+	4	rewards	6	310
+	5	randomIndex	7	310
+	6	curRandomRange	11	171
+	7	itemNumWeight	12	171
+	8	randomItemReward	13	171
+	9	index	14	171
+	10	(for generator)	17	42
+	11	(for state)	17	42
+	12	(for control)	17	42
+	13	curRewardIndex	18	40
+	14	reward	18	40
+	15	optionReward	60	171
+	16	itemRandomCodes	70	166
+	17	(for generator)	73	113
+	18	(for state)	73	113
+	19	(for control)	73	113
+	20	index	74	111
+	21	reward	74	111
+	22	strTest	119	157
+	23	(for generator)	125	153
+	24	(for state)	125	153
+	25	(for control)	125	153
+	26	index	126	151
+	27	info	126	151
+	28	targetReward	161	166
+	29	fixedMaxNum	174	310
+	30	(for generator)	177	191
+	31	(for state)	177	191
+	32	(for control)	177	191
+	33	_	178	189
+	34	reward	178	189
+	35	boarNewPos	196	310
+	36	listItemEmptyPos	205	310
+	37	posIndex	206	310
+	38	targetRewards	212	310
+	39	(for generator)	215	306
+	40	(for state)	215	306
+	41	(for control)	215	306
+	42	_	216	304
+	43	reward	216	304
+	44	newItem	224	242
+	45	num	260	285
+	46	(for index)	263	285
+	47	(for limit)	263	285
+	48	(for step)	263	285
+	49	i	264	284
+	50	newReward	265	284
+upvalues (2) for 0000023901836650:
+	0	_ENV	0	0
+	1	CookieFrenzyRewardItemState	1	0
+
+function <CookingFrenzyModel.lua:613,859> (435 instructions at 0000023901836750)
+3 params, 33 slots, 2 upvalues, 94 locals, 60 constants, 1 function
+	1	[614]	LOADBOOL 	3 0 0
+	2	[615]	GETTABLE 	4 0 -1	; "m_mapShowPlayersItem"
+	3	[615]	EQ       	0 4 -2	; - nil
+	4	[615]	JMP      	0 2	; to 7
+	5	[616]	NEWTABLE 	4 0 0
+	6	[616]	SETTABLE 	0 -1 4	; "m_mapShowPlayersItem" -
+	7	[619]	GETTABUP 	4 0 -3	; _ENV "GameConfig"
+	8	[619]	GETTABLE 	4 4 -4	; "IsTestMode"
+	9	[619]	CALL     	4 1 2
+	10	[620]	LOADK    	5 -5	; ""
+	11	[621]	TEST     	4 0
+	12	[621]	JMP      	0 19	; to 32
+	13	[622]	MOVE     	6 5
+	14	[622]	LOADK    	7 -6	; "\232\174\162\229\141\149\231\139\130\231\131\173\229\188\128\229\167\139\229\149\166 \n \229\189\147\229\137\141\233\154\143\230\156\186\231\154\132\232\174\162\229\141\149\230\167\189\228\189\141"
+	15	[622]	GETTABUP 	8 0 -7	; _ENV "tostring"
+	16	[622]	SELF     	9 1 -8	; "GetSlot"
+	17	[622]	CALL     	9 2 0
+	18	[622]	CALL     	8 0 2
+	19	[622]	LOADK    	9 -9	; "\n"
+	20	[622]	CONCAT   	5 6 9
+	21	[623]	MOVE     	6 5
+	22	[623]	LOADK    	7 -10	; "\229\189\147\229\137\141\232\174\162\229\141\149\231\154\132\233\154\190\229\186\166\229\136\134: "
+	23	[623]	SELF     	8 1 -11	; "GetDiffScore"
+	24	[623]	CALL     	8 2 2
+	25	[623]	LOADK    	9 -12	; " \n"
+	26	[623]	CONCAT   	5 6 9
+	27	[624]	MOVE     	6 5
+	28	[624]	LOADK    	7 -13	; "\229\189\147\229\137\141\232\174\162\229\141\149\231\139\130\231\131\173\231\154\132buffID : "
+	29	[624]	GETTABLE 	8 2 -14	; "buff_id"
+	30	[624]	LOADK    	9 -12	; " \n"
+	31	[624]	CONCAT   	5 6 9
+	32	[627]	LOADK    	6 -5	; ""
+	33	[628]	GETTABLE 	7 0 -1	; "m_mapShowPlayersItem"
+	34	[628]	GETTABLE 	7 7 1
+	35	[628]	EQ       	0 7 -2	; - nil
+	36	[628]	JMP      	0 2	; to 39
+	37	[629]	LOADBOOL 	3 1 0
+	38	[629]	JMP      	0 114	; to 153
+	39	[632]	GETTABLE 	7 0 -1	; "m_mapShowPlayersItem"
+	40	[632]	GETTABLE 	7 7 1
+	41	[633]	LOADK    	8 -15	; 1
+	42	[634]	LOADK    	9 -16	; 0
+	43	[635]	GETTABUP 	10 0 -17	; _ENV "ipairs"
+	44	[635]	GETTABLE 	11 2 -18	; "rewards"
+	45	[635]	CALL     	10 2 4
+	46	[635]	JMP      	0 7	; to 54
+	47	[636]	GETTABUP 	15 0 -19	; _ENV "PROPERTY_TYPE"
+	48	[636]	GETTABLE 	15 14 15
+	49	[636]	GETTABUP 	16 0 -20	; _ENV "EPropertyType"
+	50	[636]	GETTABLE 	16 16 -21	; "CookingFrenzyItem"
+	51	[636]	EQ       	0 15 16
+	52	[636]	JMP      	0 1	; to 54
+	53	[637]	ADD      	9 9 -15	; - 1
+	54	[635]	TFORCALL 	10 2
+	55	[635]	TFORLOOP 	12 -9	; to 47
+	56	[640]	LEN      	10 7
+	57	[640]	EQ       	1 10 9
+	58	[640]	JMP      	0 2	; to 61
+	59	[641]	LOADBOOL 	3 1 0
+	60	[641]	JMP      	0 92	; to 153
+	61	[643]	GETTABUP 	10 0 -17	; _ENV "ipairs"
+	62	[643]	GETTABLE 	11 2 -18	; "rewards"
+	63	[643]	CALL     	10 2 4
+	64	[643]	JMP      	0 86	; to 151
+	65	[644]	GETTABUP 	15 0 -19	; _ENV "PROPERTY_TYPE"
+	66	[644]	GETTABLE 	15 14 15
+	67	[644]	GETTABUP 	16 0 -20	; _ENV "EPropertyType"
+	68	[644]	GETTABLE 	16 16 -21	; "CookingFrenzyItem"
+	69	[644]	EQ       	0 15 16
+	70	[644]	JMP      	0 80	; to 151
+	71	[645]	GETTABUP 	15 0 -3	; _ENV "GameConfig"
+	72	[645]	GETTABLE 	15 15 -4	; "IsTestMode"
+	73	[645]	CALL     	15 1 2
+	74	[645]	TEST     	15 0
+	75	[645]	JMP      	0 7	; to 83
+	76	[646]	MOVE     	15 6
+	77	[646]	LOADK    	16 -22	; "\n\229\189\147\229\137\141\231\172\172 "
+	78	[646]	GETTABUP 	17 0 -7	; _ENV "tostring"
+	79	[646]	MOVE     	18 8
+	80	[646]	CALL     	17 2 2
+	81	[646]	LOADK    	18 -23	; "\228\184\170\230\163\139\229\173\144\229\165\150\229\138\177 \n"
+	82	[646]	CONCAT   	6 15 18
+	83	[648]	GETTABLE 	15 7 8
+	84	[648]	GETTABLE 	15 15 -24	; "item"
+	85	[649]	ADD      	8 8 -15	; - 1
+	86	[650]	SELF     	16 0 -25	; "GetOptionalChessPieces"
+	87	[650]	MOVE     	18 1
+	88	[650]	MOVE     	19 14
+	89	[650]	CALL     	16 4 3
+	90	[651]	MOVE     	18 6
+	91	[651]	MOVE     	19 17
+	92	[651]	CONCAT   	6 18 19
+	93	[657]	NEWTABLE 	18 0 0
+	94	[658]	GETTABUP 	19 0 -17	; _ENV "ipairs"
+	95	[658]	MOVE     	20 16
+	96	[658]	CALL     	19 2 4
+	97	[658]	JMP      	0 5	; to 103
+	98	[659]	LEN      	24 23
+	99	[659]	LT       	0 -16 24	; 0 -
+	100	[659]	JMP      	0 2	; to 103
+	101	[660]	MOVE     	18 23
+	102	[660]	JMP      	0 2	; to 105
+	103	[658]	TFORCALL 	19 2
+	104	[658]	TFORLOOP 	21 -7	; to 98
+	105	[666]	NEWTABLE 	19 0 0
+	106	[667]	LOADK    	20 -15	; 1
+	107	[667]	LEN      	21 18
+	108	[667]	LOADK    	22 -15	; 1
+	109	[667]	FORPREP  	20 20	; to 130
+	110	[668]	LOADBOOL 	24 0 0
+	111	[669]	LOADK    	25 -15	; 1
+	112	[669]	LEN      	26 7
+	113	[669]	LOADK    	27 -15	; 1
+	114	[669]	FORPREP  	25 7	; to 122
+	115	[670]	GETTABLE 	29 7 28
+	116	[670]	GETTABLE 	29 29 -24	; "item"
+	117	[670]	GETTABLE 	30 18 23
+	118	[670]	EQ       	0 29 30
+	119	[670]	JMP      	0 2	; to 122
+	120	[671]	LOADBOOL 	24 1 0
+	121	[671]	JMP      	0 1	; to 123
+	122	[669]	FORLOOP  	25 -8	; to 115
+	123	[676]	TEST     	24 1
+	124	[676]	JMP      	0 5	; to 130
+	125	[677]	GETTABUP 	25 0 -26	; _ENV "table"
+	126	[677]	GETTABLE 	25 25 -27	; "insert"
+	127	[677]	MOVE     	26 19
+	128	[677]	GETTABLE 	27 18 23
+	129	[677]	CALL     	25 3 1
+	130	[667]	FORLOOP  	20 -21	; to 110
+	131	[681]	LOADBOOL 	20 0 0
+	132	[683]	LEN      	21 19
+	133	[683]	EQ       	0 21 -16	; - 0
+	134	[683]	JMP      	0 2	; to 137
+	135	[684]	LOADBOOL 	20 1 0
+	136	[684]	JMP      	0 10	; to 147
+	137	[687]	LOADK    	21 -15	; 1
+	138	[687]	LEN      	22 18
+	139	[687]	LOADK    	23 -15	; 1
+	140	[687]	FORPREP  	21 5	; to 146
+	141	[688]	GETTABLE 	25 18 24
+	142	[688]	EQ       	0 15 25
+	143	[688]	JMP      	0 2	; to 146
+	144	[689]	LOADBOOL 	20 1 0
+	145	[689]	JMP      	0 1	; to 147
+	146	[687]	FORLOOP  	21 -6	; to 141
+	147	[695]	TEST     	20 1
+	148	[695]	JMP      	0 2	; to 151
+	149	[696]	LOADBOOL 	3 1 0
+	150	[696]	JMP      	0 2	; to 153
+	151	[643]	TFORCALL 	10 2
+	152	[643]	TFORLOOP 	12 -88	; to 65
+	153	[704]	EQ       	0 3 -28	; - true
+	154	[704]	JMP      	0 216	; to 371
+	155	[705]	GETTABUP 	7 0 -3	; _ENV "GameConfig"
+	156	[705]	GETTABLE 	7 7 -4	; "IsTestMode"
+	157	[705]	CALL     	7 1 2
+	158	[705]	TEST     	7 0
+	159	[705]	JMP      	0 3	; to 163
+	160	[706]	MOVE     	7 5
+	161	[706]	LOADK    	8 -29	; " \n  \n \229\136\183\230\150\176\228\186\134\229\165\150\229\138\177 \n \n"
+	162	[706]	CONCAT   	5 7 8
+	163	[708]	GETTABLE 	7 0 -1	; "m_mapShowPlayersItem"
+	164	[708]	NEWTABLE 	8 0 0
+	165	[708]	SETTABLE 	7 1 8
+	166	[709]	LOADK    	7 -15	; 1
+	167	[711]	NEWTABLE 	8 0 0
+	168	[712]	GETTABUP 	9 0 -17	; _ENV "ipairs"
+	169	[712]	GETTABLE 	10 2 -18	; "rewards"
+	170	[712]	CALL     	9 2 4
+	171	[712]	JMP      	0 60	; to 232
+	172	[713]	GETTABUP 	14 0 -19	; _ENV "PROPERTY_TYPE"
+	173	[713]	GETTABLE 	14 13 14
+	174	[713]	GETTABUP 	15 0 -20	; _ENV "EPropertyType"
+	175	[713]	GETTABLE 	15 15 -21	; "CookingFrenzyItem"
+	176	[713]	EQ       	0 14 15
+	177	[713]	JMP      	0 54	; to 232
+	178	[714]	GETTABUP 	14 0 -3	; _ENV "GameConfig"
+	179	[714]	GETTABLE 	14 14 -4	; "IsTestMode"
+	180	[714]	CALL     	14 1 2
+	181	[714]	TEST     	14 0
+	182	[714]	JMP      	0 7	; to 190
+	183	[715]	MOVE     	14 5
+	184	[715]	LOADK    	15 -22	; "\n\229\189\147\229\137\141\231\172\172 "
+	185	[715]	GETTABUP 	16 0 -7	; _ENV "tostring"
+	186	[715]	MOVE     	17 7
+	187	[715]	CALL     	16 2 2
+	188	[715]	LOADK    	17 -23	; "\228\184\170\230\163\139\229\173\144\229\165\150\229\138\177 \n"
+	189	[715]	CONCAT   	5 14 17
+	190	[717]	SELF     	14 0 -25	; "GetOptionalChessPieces"
+	191	[717]	MOVE     	16 1
+	192	[717]	MOVE     	17 13
+	193	[717]	CALL     	14 4 3
+	194	[718]	MOVE     	16 5
+	195	[718]	MOVE     	17 15
+	196	[718]	CONCAT   	5 16 17
+	197	[719]	NEWTABLE 	16 0 0
+	198	[720]	LOADK    	17 -15	; 1
+	199	[720]	LEN      	18 14
+	200	[720]	LOADK    	19 -15	; 1
+	201	[720]	FORPREP  	17 12	; to 214
+	202	[721]	LOADK    	21 -15	; 1
+	203	[721]	GETTABLE 	22 14 20
+	204	[721]	LEN      	22 22
+	205	[721]	LOADK    	23 -15	; 1
+	206	[721]	FORPREP  	21 6	; to 213
+	207	[722]	GETTABUP 	25 0 -26	; _ENV "table"
+	208	[722]	GETTABLE 	25 25 -27	; "insert"
+	209	[722]	MOVE     	26 16
+	210	[722]	GETTABLE 	27 14 20
+	211	[722]	GETTABLE 	27 27 24
+	212	[722]	CALL     	25 3 1
+	213	[721]	FORLOOP  	21 -7	; to 207
+	214	[720]	FORLOOP  	17 -13	; to 202
+	215	[726]	GETTABUP 	17 0 -26	; _ENV "table"
+	216	[726]	GETTABLE 	17 17 -27	; "insert"
+	217	[726]	MOVE     	18 8
+	218	[726]	NEWTABLE 	19 0 3
+	219	[729]	GETTABUP 	20 0 -31	; _ENV "Table"
+	220	[729]	GETTABLE 	20 20 -32	; "DeepCopy"
+	221	[729]	MOVE     	21 14
+	222	[729]	CALL     	20 2 2
+	223	[729]	SETTABLE 	19 -30 20	; "items" -
+	224	[730]	SETTABLE 	19 -33 7	; "index" -
+	225	[732]	GETTABUP 	20 0 -31	; _ENV "Table"
+	226	[732]	GETTABLE 	20 20 -32	; "DeepCopy"
+	227	[732]	MOVE     	21 16
+	228	[732]	CALL     	20 2 2
+	229	[732]	SETTABLE 	19 -34 20	; "realItems" -
+	230	[726]	CALL     	17 3 1
+	231	[734]	ADD      	7 7 -15	; - 1
+	232	[712]	TFORCALL 	9 2
+	233	[712]	TFORLOOP 	11 -62	; to 172
+	234	[738]	GETTABUP 	9 0 -35	; _ENV "GM"
+	235	[738]	GETTABLE 	9 9 -36	; "MainBoardModel"
+	236	[738]	SELF     	9 9 -37	; "GetOrderBoostOrderCodeLackMap"
+	237	[738]	CALL     	9 2 2
+	238	[739]	GETTABUP 	10 0 -3	; _ENV "GameConfig"
+	239	[739]	GETTABLE 	10 10 -4	; "IsTestMode"
+	240	[739]	CALL     	10 1 2
+	241	[739]	TEST     	10 0
+	242	[739]	JMP      	0 3	; to 246
+	243	[740]	MOVE     	10 5
+	244	[740]	LOADK    	11 -38	; "\229\188\128\229\167\139\229\176\189\233\135\143\228\191\157\232\175\129\228\184\141\233\135\141\229\164\141 \228\188\152\229\133\136\229\136\134\233\133\141\233\156\128\230\177\130\229\176\145\231\154\132\239\188\140 \233\156\128\230\177\130\229\176\145\231\154\132\229\136\134\233\133\141\229\174\140\229\136\183\230\150\176\229\144\142\229\156\168\229\136\134\233\133\141\233\156\128\230\177\130\229\164\154\231\154\132\n"
+	245	[740]	CONCAT   	5 10 11
+	246	[743]	NEWTABLE 	10 0 0
+	247	[746]	LEN      	11 8
+	248	[746]	EQ       	1 11 -16	; - 0
+	249	[746]	JMP      	0 118	; to 368
+	250	[752]	GETTABUP 	11 0 -26	; _ENV "table"
+	251	[752]	GETTABLE 	11 11 -39	; "sort"
+	252	[752]	MOVE     	12 8
+	253	[775]	CLOSURE  	13 0	; 0000023901836E50
+	254	[752]	CALL     	11 3 1
+	255	[777]	GETTABUP 	11 0 -26	; _ENV "table"
+	256	[777]	GETTABLE 	11 11 -40	; "remove"
+	257	[777]	MOVE     	12 8
+	258	[777]	LOADK    	13 -41	; 1
+	259	[777]	CALL     	11 3 2
+	260	[779]	GETTABLE 	12 11 -42	; "items"
+	261	[780]	GETTABLE 	13 11 -33	; "index"
+	262	[782]	NEWTABLE 	14 0 0
+	263	[783]	LOADK    	15 -43	; 0
+	264	[785]	LOADK    	16 -41	; 1
+	265	[785]	LEN      	17 12
+	266	[785]	LOADK    	18 -41	; 1
+	267	[785]	FORPREP  	16 7	; to 275
+	268	[786]	GETTABLE 	20 12 19
+	269	[786]	LEN      	20 20
+	270	[786]	LT       	0 -43 20	; 0 -
+	271	[786]	JMP      	0 3	; to 275
+	272	[787]	MOVE     	15 19
+	273	[788]	GETTABLE 	14 12 19
+	274	[788]	JMP      	0 1	; to 276
+	275	[785]	FORLOOP  	16 -8	; to 268
+	276	[793]	LEN      	16 14
+	277	[793]	EQ       	0 16 -43	; - 0
+	278	[793]	JMP      	0 2	; to 281
+	279	[794]	GETTABLE 	14 11 -34	; "realItems"
+	280	[796]	GETTABUP 	15 1 -44	; CookieFrenzyRewardItemState "orderRepeatItem"
+	281	[799]	GETTABUP 	16 0 -31	; _ENV "Table"
+	282	[799]	GETTABLE 	16 16 -45	; "ListRandomSelectOne"
+	283	[799]	MOVE     	17 14
+	284	[799]	CALL     	16 2 2
+	285	[802]	NEWTABLE 	17 0 2
+	286	[803]	SETTABLE 	17 -24 16	; "item" -
+	287	[804]	SETTABLE 	17 -46 15	; "state" -
+	288	[805]	SETTABLE 	10 13 17
+	289	[807]	GETTABUP 	17 0 -3	; _ENV "GameConfig"
+	290	[807]	GETTABLE 	17 17 -4	; "IsTestMode"
+	291	[807]	CALL     	17 1 2
+	292	[807]	TEST     	17 0
+	293	[807]	JMP      	0 38	; to 332
+	294	[808]	MOVE     	17 5
+	295	[808]	LOADK    	18 -47	; "\231\172\172"
+	296	[808]	GETTABUP 	19 0 -7	; _ENV "tostring"
+	297	[808]	MOVE     	20 13
+	298	[808]	CALL     	19 2 2
+	299	[808]	LOADK    	20 -48	; "\229\165\150\229\138\177\239\188\140 \230\163\139\229\173\144\230\152\175"
+	300	[808]	GETTABUP 	21 0 -7	; _ENV "tostring"
+	301	[808]	GETTABLE 	22 10 13
+	302	[808]	GETTABLE 	22 22 -24	; "item"
+	303	[808]	CALL     	21 2 2
+	304	[808]	CONCAT   	5 17 21
+	305	[809]	GETTABUP 	17 1 -49	; CookieFrenzyRewardItemState "orderBackItem"
+	306	[809]	EQ       	0 15 17
+	307	[809]	JMP      	0 4	; to 312
+	308	[810]	MOVE     	17 5
+	309	[810]	LOADK    	18 -50	; "\229\164\135\233\128\137\230\163\139\229\173\144 \n"
+	310	[810]	CONCAT   	5 17 18
+	311	[810]	JMP      	0 20	; to 332
+	312	[811]	GETTABUP 	17 1 -51	; CookieFrenzyRewardItemState "orderBoostOrderLackItem"
+	313	[811]	EQ       	0 15 17
+	314	[811]	JMP      	0 4	; to 319
+	315	[812]	MOVE     	17 5
+	316	[812]	LOADK    	18 -52	; "\232\174\162\229\141\149boost\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	317	[812]	CONCAT   	5 17 18
+	318	[812]	JMP      	0 13	; to 332
+	319	[813]	GETTABUP 	17 1 -53	; CookieFrenzyRewardItemState "orderLackItem"
+	320	[813]	EQ       	0 15 17
+	321	[813]	JMP      	0 4	; to 326
+	322	[814]	MOVE     	17 5
+	323	[814]	LOADK    	18 -54	; "\230\153\174\233\128\154\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	324	[814]	CONCAT   	5 17 18
+	325	[814]	JMP      	0 6	; to 332
+	326	[815]	GETTABUP 	17 1 -44	; CookieFrenzyRewardItemState "orderRepeatItem"
+	327	[815]	EQ       	0 15 17
+	328	[815]	JMP      	0 3	; to 332
+	329	[816]	MOVE     	17 5
+	330	[816]	LOADK    	18 -55	; "\233\135\141\229\164\141\231\154\132\230\163\139\229\173\144 \n"
+	331	[816]	CONCAT   	5 17 18
+	332	[819]	GETTABLE 	17 10 13
+	333	[819]	GETTABLE 	17 17 -24	; "item"
+	334	[822]	LOADK    	18 -41	; 1
+	335	[822]	LEN      	19 8
+	336	[822]	LOADK    	20 -41	; 1
+	337	[822]	FORPREP  	18 28	; to 366
+	338	[823]	GETTABLE 	22 8 21
+	339	[823]	GETTABLE 	22 22 -42	; "items"
+	340	[823]	LEN      	22 22
+	341	[823]	LOADK    	23 -41	; 1
+	342	[823]	LOADK    	24 -56	; -1
+	343	[823]	FORPREP  	22 21	; to 365
+	344	[824]	GETTABLE 	26 8 21
+	345	[824]	GETTABLE 	26 26 -42	; "items"
+	346	[824]	GETTABLE 	26 26 25
+	347	[824]	LEN      	26 26
+	348	[824]	LOADK    	27 -41	; 1
+	349	[824]	LOADK    	28 -56	; -1
+	350	[824]	FORPREP  	26 13	; to 364
+	351	[825]	GETTABLE 	30 8 21
+	352	[825]	GETTABLE 	30 30 -42	; "items"
+	353	[825]	GETTABLE 	30 30 25
+	354	[825]	GETTABLE 	30 30 29
+	355	[825]	EQ       	0 30 17
+	356	[825]	JMP      	0 7	; to 364
+	357	[826]	GETTABUP 	30 0 -26	; _ENV "table"
+	358	[826]	GETTABLE 	30 30 -40	; "remove"
+	359	[826]	GETTABLE 	31 8 21
+	360	[826]	GETTABLE 	31 31 -42	; "items"
+	361	[826]	GETTABLE 	31 31 25
+	362	[826]	MOVE     	32 29
+	363	[826]	CALL     	30 3 1
+	364	[824]	FORLOOP  	26 -14	; to 351
+	365	[823]	FORLOOP  	22 -22	; to 344
+	366	[822]	FORLOOP  	18 -29	; to 338
+	367	[830]	JMP      	0 -121	; to 247
+	368	[834]	GETTABLE 	11 0 -1	; "m_mapShowPlayersItem"
+	369	[834]	SETTABLE 	11 1 10
+	370	[834]	JMP      	0 52	; to 423
+	371	[836]	GETTABLE 	7 0 -1	; "m_mapShowPlayersItem"
+	372	[836]	GETTABLE 	7 7 1
+	373	[837]	MOVE     	8 5
+	374	[837]	MOVE     	9 6
+	375	[837]	CONCAT   	5 8 9
+	376	[838]	MOVE     	8 5
+	377	[838]	LOADK    	9 -57	; " \n \n \230\156\170\229\136\183\230\150\176\229\165\150\229\138\177 \n \n"
+	378	[838]	CONCAT   	5 8 9
+	379	[839]	GETTABUP 	8 0 -58	; _ENV "pairs"
+	380	[839]	MOVE     	9 7
+	381	[839]	CALL     	8 2 4
+	382	[839]	JMP      	0 38	; to 421
+	383	[840]	MOVE     	13 5
+	384	[840]	LOADK    	14 -47	; "\231\172\172"
+	385	[840]	GETTABUP 	15 0 -7	; _ENV "tostring"
+	386	[840]	MOVE     	16 11
+	387	[840]	CALL     	15 2 2
+	388	[840]	LOADK    	16 -48	; "\229\165\150\229\138\177\239\188\140 \230\163\139\229\173\144\230\152\175"
+	389	[840]	GETTABUP 	17 0 -7	; _ENV "tostring"
+	390	[840]	GETTABLE 	18 12 -24	; "item"
+	391	[840]	CALL     	17 2 2
+	392	[840]	CONCAT   	5 13 17
+	393	[841]	GETTABLE 	13 12 -46	; "state"
+	394	[842]	GETTABUP 	14 1 -49	; CookieFrenzyRewardItemState "orderBackItem"
+	395	[842]	EQ       	0 13 14
+	396	[842]	JMP      	0 4	; to 401
+	397	[843]	MOVE     	14 5
+	398	[843]	LOADK    	15 -50	; "\229\164\135\233\128\137\230\163\139\229\173\144 \n"
+	399	[843]	CONCAT   	5 14 15
+	400	[843]	JMP      	0 20	; to 421
+	401	[844]	GETTABUP 	14 1 -51	; CookieFrenzyRewardItemState "orderBoostOrderLackItem"
+	402	[844]	EQ       	0 13 14
+	403	[844]	JMP      	0 4	; to 408
+	404	[845]	MOVE     	14 5
+	405	[845]	LOADK    	15 -52	; "\232\174\162\229\141\149boost\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	406	[845]	CONCAT   	5 14 15
+	407	[845]	JMP      	0 13	; to 421
+	408	[846]	GETTABUP 	14 1 -53	; CookieFrenzyRewardItemState "orderLackItem"
+	409	[846]	EQ       	0 13 14
+	410	[846]	JMP      	0 4	; to 415
+	411	[847]	MOVE     	14 5
+	412	[847]	LOADK    	15 -54	; "\230\153\174\233\128\154\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	413	[847]	CONCAT   	5 14 15
+	414	[847]	JMP      	0 6	; to 421
+	415	[848]	GETTABUP 	14 1 -44	; CookieFrenzyRewardItemState "orderRepeatItem"
+	416	[848]	EQ       	0 13 14
+	417	[848]	JMP      	0 3	; to 421
+	418	[849]	MOVE     	14 5
+	419	[849]	LOADK    	15 -55	; "\233\135\141\229\164\141\231\154\132\230\163\139\229\173\144 \n"
+	420	[849]	CONCAT   	5 14 15
+	421	[839]	TFORCALL 	8 2
+	422	[839]	TFORLOOP 	10 -40	; to 383
+	423	[854]	GETTABUP 	7 0 -3	; _ENV "GameConfig"
+	424	[854]	GETTABLE 	7 7 -4	; "IsTestMode"
+	425	[854]	CALL     	7 1 2
+	426	[854]	TEST     	7 0
+	427	[854]	JMP      	0 4	; to 432
+	428	[855]	GETTABUP 	7 0 -59	; _ENV "Log"
+	429	[855]	GETTABLE 	7 7 -60	; "Info"
+	430	[855]	MOVE     	8 5
+	431	[855]	CALL     	7 2 1
+	432	[858]	GETTABLE 	7 0 -1	; "m_mapShowPlayersItem"
+	433	[858]	GETTABLE 	7 7 1
+	434	[858]	RETURN   	7 2
+	435	[859]	RETURN   	0 1
+constants (60) for 0000023901836750:
+	1	"m_mapShowPlayersItem"
+	2	nil
+	3	"GameConfig"
+	4	"IsTestMode"
+	5	""
+	6	"\232\174\162\229\141\149\231\139\130\231\131\173\229\188\128\229\167\139\229\149\166 \n \229\189\147\229\137\141\233\154\143\230\156\186\231\154\132\232\174\162\229\141\149\230\167\189\228\189\141"
+	7	"tostring"
+	8	"GetSlot"
+	9	"\n"
+	10	"\229\189\147\229\137\141\232\174\162\229\141\149\231\154\132\233\154\190\229\186\166\229\136\134: "
+	11	"GetDiffScore"
+	12	" \n"
+	13	"\229\189\147\229\137\141\232\174\162\229\141\149\231\139\130\231\131\173\231\154\132buffID : "
+	14	"buff_id"
+	15	1
+	16	0
+	17	"ipairs"
+	18	"rewards"
+	19	"PROPERTY_TYPE"
+	20	"EPropertyType"
+	21	"CookingFrenzyItem"
+	22	"\n\229\189\147\229\137\141\231\172\172 "
+	23	"\228\184\170\230\163\139\229\173\144\229\165\150\229\138\177 \n"
+	24	"item"
+	25	"GetOptionalChessPieces"
+	26	"table"
+	27	"insert"
+	28	true
+	29	" \n  \n \229\136\183\230\150\176\228\186\134\229\165\150\229\138\177 \n \n"
+	30	"items"
+	31	"Table"
+	32	"DeepCopy"
+	33	"index"
+	34	"realItems"
+	35	"GM"
+	36	"MainBoardModel"
+	37	"GetOrderBoostOrderCodeLackMap"
+	38	"\229\188\128\229\167\139\229\176\189\233\135\143\228\191\157\232\175\129\228\184\141\233\135\141\229\164\141 \228\188\152\229\133\136\229\136\134\233\133\141\233\156\128\230\177\130\229\176\145\231\154\132\239\188\140 \233\156\128\230\177\130\229\176\145\231\154\132\229\136\134\233\133\141\229\174\140\229\136\183\230\150\176\229\144\142\229\156\168\229\136\134\233\133\141\233\156\128\230\177\130\229\164\154\231\154\132\n"
+	39	"sort"
+	40	"remove"
+	41	1
+	42	"items"
+	43	0
+	44	"orderRepeatItem"
+	45	"ListRandomSelectOne"
+	46	"state"
+	47	"\231\172\172"
+	48	"\229\165\150\229\138\177\239\188\140 \230\163\139\229\173\144\230\152\175"
+	49	"orderBackItem"
+	50	"\229\164\135\233\128\137\230\163\139\229\173\144 \n"
+	51	"orderBoostOrderLackItem"
+	52	"\232\174\162\229\141\149boost\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	53	"orderLackItem"
+	54	"\230\153\174\233\128\154\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144 \n"
+	55	"\233\135\141\229\164\141\231\154\132\230\163\139\229\173\144 \n"
+	56	-1
+	57	" \n \n \230\156\170\229\136\183\230\150\176\229\165\150\229\138\177 \n \n"
+	58	"pairs"
+	59	"Log"
+	60	"Info"
+locals (94) for 0000023901836750:
+	0	self	1	436
+	1	order	1	436
+	2	cfg	1	436
+	3	bRefresh	2	436
+	4	isTestLog	10	436
+	5	strTest	11	436
+	6	strTempTest	33	436
+	7	listCodes	41	153
+	8	randomIndex	42	153
+	9	cfgItemNum	43	153
+	10	(for generator)	46	56
+	11	(for state)	46	56
+	12	(for control)	46	56
+	13	_	47	54
+	14	reward	47	54
+	15	(for generator)	64	153
+	16	(for state)	64	153
+	17	(for control)	64	153
+	18	_	65	151
+	19	reward	65	151
+	20	curCode	85	151
+	21	ListtargetItems	90	151
+	22	streleTest	90	151
+	23	targetItems	94	151
+	24	(for generator)	97	105
+	25	(for state)	97	105
+	26	(for control)	97	105
+	27	_	98	103
+	28	listItem	98	103
+	29	newTargetItems	106	151
+	30	(for index)	109	131
+	31	(for limit)	109	131
+	32	(for step)	109	131
+	33	i	110	130
+	34	bFind	111	130
+	35	(for index)	114	123
+	36	(for limit)	114	123
+	37	(for step)	114	123
+	38	j	115	122
+	39	bFind	132	151
+	40	(for index)	140	147
+	41	(for limit)	140	147
+	42	(for step)	140	147
+	43	i	141	146
+	44	index	167	370
+	45	listCacheItemIndex	168	370
+	46	(for generator)	171	234
+	47	(for state)	171	234
+	48	(for control)	171	234
+	49	_	172	232
+	50	reward	172	232
+	51	targetItems	194	232
+	52	testLog	194	232
+	53	allTargetItem	198	232
+	54	(for index)	201	215
+	55	(for limit)	201	215
+	56	(for step)	201	215
+	57	i	202	214
+	58	(for index)	206	214
+	59	(for limit)	206	214
+	60	(for step)	206	214
+	61	j	207	213
+	62	orderBoostOrderLackMap	238	370
+	63	targetFindItems	247	370
+	64	curItem	260	367
+	65	curList	261	367
+	66	curIndex	262	367
+	67	targetList	263	367
+	68	itemState	264	367
+	69	(for index)	267	276
+	70	(for limit)	267	276
+	71	(for step)	267	276
+	72	i	268	275
+	73	item	285	367
+	74	itemCode	334	367
+	75	(for index)	337	367
+	76	(for limit)	337	367
+	77	(for step)	337	367
+	78	i	338	366
+	79	(for index)	343	366
+	80	(for limit)	343	366
+	81	(for step)	343	366
+	82	j	344	365
+	83	(for index)	350	365
+	84	(for limit)	350	365
+	85	(for step)	350	365
+	86	z	351	364
+	87	listCodes	373	423
+	88	(for generator)	382	423
+	89	(for state)	382	423
+	90	(for control)	382	423
+	91	inedex	383	421
+	92	itemInfo	383	421
+	93	itemState	394	421
+upvalues (2) for 0000023901836750:
+	0	_ENV	0	0
+	1	CookieFrenzyRewardItemState	1	0
+
+function <CookingFrenzyModel.lua:752,775> (87 instructions at 0000023901836E50)
+2 params, 8 slots, 0 upvalues, 6 locals, 4 constants, 0 functions
+	1	[753]	GETTABLE 	2 0 -1	; "items"
+	2	[753]	LEN      	2 2
+	3	[753]	EQ       	1 2 -2	; - 0
+	4	[753]	JMP      	0 66	; to 71
+	5	[753]	GETTABLE 	2 1 -1	; "items"
+	6	[753]	LEN      	2 2
+	7	[753]	EQ       	1 2 -2	; - 0
+	8	[753]	JMP      	0 62	; to 71
+	9	[755]	LOADK    	2 -3	; 1
+	10	[755]	GETTABLE 	3 0 -1	; "items"
+	11	[755]	LEN      	3 3
+	12	[755]	LOADK    	4 -3	; 1
+	13	[755]	FORPREP  	2 53	; to 67
+	14	[756]	GETTABLE 	6 1 -1	; "items"
+	15	[756]	GETTABLE 	6 6 5
+	16	[756]	LEN      	6 6
+	17	[756]	EQ       	0 6 -4	; - nil
+	18	[756]	JMP      	0 3	; to 22
+	19	[757]	LOADBOOL 	6 1 0
+	20	[757]	RETURN   	6 2
+	21	[757]	JMP      	0 45	; to 67
+	22	[758]	GETTABLE 	6 0 -1	; "items"
+	23	[758]	GETTABLE 	6 6 5
+	24	[758]	LEN      	6 6
+	25	[758]	EQ       	0 6 -2	; - 0
+	26	[758]	JMP      	0 8	; to 35
+	27	[758]	GETTABLE 	6 1 -1	; "items"
+	28	[758]	GETTABLE 	6 6 5
+	29	[758]	LEN      	6 6
+	30	[758]	EQ       	1 6 -2	; - 0
+	31	[758]	JMP      	0 3	; to 35
+	32	[759]	LOADBOOL 	6 0 0
+	33	[759]	RETURN   	6 2
+	34	[759]	JMP      	0 32	; to 67
+	35	[760]	GETTABLE 	6 0 -1	; "items"
+	36	[760]	GETTABLE 	6 6 5
+	37	[760]	LEN      	6 6
+	38	[760]	EQ       	1 6 -2	; - 0
+	39	[760]	JMP      	0 8	; to 48
+	40	[760]	GETTABLE 	6 1 -1	; "items"
+	41	[760]	GETTABLE 	6 6 5
+	42	[760]	LEN      	6 6
+	43	[760]	EQ       	0 6 -2	; - 0
+	44	[760]	JMP      	0 3	; to 48
+	45	[761]	LOADBOOL 	6 1 0
+	46	[761]	RETURN   	6 2
+	47	[761]	JMP      	0 19	; to 67
+	48	[762]	GETTABLE 	6 0 -1	; "items"
+	49	[762]	GETTABLE 	6 6 5
+	50	[762]	LEN      	6 6
+	51	[762]	GETTABLE 	7 1 -1	; "items"
+	52	[762]	GETTABLE 	7 7 5
+	53	[762]	LEN      	7 7
+	54	[762]	EQ       	1 6 7
+	55	[762]	JMP      	0 11	; to 67
+	56	[763]	GETTABLE 	6 0 -1	; "items"
+	57	[763]	GETTABLE 	6 6 5
+	58	[763]	LEN      	6 6
+	59	[763]	GETTABLE 	7 1 -1	; "items"
+	60	[763]	GETTABLE 	7 7 5
+	61	[763]	LEN      	7 7
+	62	[763]	LT       	1 6 7
+	63	[763]	JMP      	0 1	; to 65
+	64	[763]	LOADBOOL 	6 0 1
+	65	[763]	LOADBOOL 	6 1 0
+	66	[763]	RETURN   	6 2
+	67	[755]	FORLOOP  	2 -54	; to 14
+	68	[767]	LOADBOOL 	2 1 0
+	69	[767]	RETURN   	2 2
+	70	[767]	JMP      	0 16	; to 87
+	71	[768]	GETTABLE 	2 0 -1	; "items"
+	72	[768]	LEN      	2 2
+	73	[768]	EQ       	1 2 -2	; - 0
+	74	[768]	JMP      	0 3	; to 78
+	75	[769]	LOADBOOL 	2 1 0
+	76	[769]	RETURN   	2 2
+	77	[769]	JMP      	0 9	; to 87
+	78	[770]	GETTABLE 	2 1 -1	; "items"
+	79	[770]	LEN      	2 2
+	80	[770]	EQ       	1 2 -2	; - 0
+	81	[770]	JMP      	0 3	; to 85
+	82	[771]	LOADBOOL 	2 0 0
+	83	[771]	RETURN   	2 2
+	84	[771]	JMP      	0 2	; to 87
+	85	[773]	LOADBOOL 	2 1 0
+	86	[773]	RETURN   	2 2
+	87	[775]	RETURN   	0 1
+constants (4) for 0000023901836E50:
+	1	"items"
+	2	0
+	3	1
+	4	nil
+locals (6) for 0000023901836E50:
+	0	a	1	88
+	1	b	1	88
+	2	(for index)	13	68
+	3	(for limit)	13	68
+	4	(for step)	13	68
+	5	i	14	67
+upvalues (0) for 0000023901836E50:
+
+function <CookingFrenzyModel.lua:863,1025> (320 instructions at 0000023901836D50)
+3 params, 32 slots, 2 upvalues, 92 locals, 51 constants, 0 functions
+	1	[864]	LOADK    	3 -1	; ""
+	2	[865]	GETTABUP 	4 0 -2	; _ENV "GameConfig"
+	3	[865]	GETTABLE 	4 4 -3	; "IsTestMode"
+	4	[865]	CALL     	4 1 2
+	5	[867]	GETTABLE 	5 2 -4	; "MinNum"
+	6	[868]	GETTABLE 	6 2 -5	; "MaxNum"
+	7	[871]	GETTABUP 	7 0 -6	; _ENV "GM"
+	8	[871]	GETTABLE 	7 7 -7	; "MainBoardModel"
+	9	[871]	SELF     	7 7 -8	; "GetOrderModel"
+	10	[871]	GETTABUP 	9 0 -9	; _ENV "OrderModelType"
+	11	[871]	GETTABLE 	9 9 -10	; "Slot"
+	12	[871]	CALL     	7 3 2
+	13	[871]	SELF     	7 7 -11	; "GetItemCodeConfigMap"
+	14	[871]	CALL     	7 2 2
+	15	[874]	GETTABUP 	8 0 -12	; _ENV "Table"
+	16	[874]	GETTABLE 	8 8 -13	; "DeepCopy"
+	17	[874]	GETTABUP 	9 0 -6	; _ENV "GM"
+	18	[874]	GETTABLE 	9 9 -7	; "MainBoardModel"
+	19	[874]	SELF     	9 9 -14	; "GetOrderCodeLackCountMap"
+	20	[874]	CALL     	9 2 0
+	21	[874]	CALL     	8 0 2
+	22	[877]	SELF     	9 1 -15	; "GetRequirements"
+	23	[877]	CALL     	9 2 2
+	24	[878]	GETTABUP 	10 0 -16	; _ENV "ipairs"
+	25	[878]	MOVE     	11 9
+	26	[878]	CALL     	10 2 4
+	27	[878]	JMP      	0 10	; to 38
+	28	[879]	GETTABLE 	15 8 14
+	29	[879]	EQ       	1 15 -17	; - nil
+	30	[879]	JMP      	0 7	; to 38
+	31	[880]	GETTABLE 	15 8 14
+	32	[880]	SUB      	15 15 -18	; - 1
+	33	[880]	SETTABLE 	8 14 15
+	34	[881]	GETTABLE 	15 8 14
+	35	[881]	EQ       	0 15 -19	; - 0
+	36	[881]	JMP      	0 1	; to 38
+	37	[882]	SETTABLE 	8 14 -17	; - nil
+	38	[878]	TFORCALL 	10 2
+	39	[878]	TFORLOOP 	12 -12	; to 28
+	40	[887]	NEWTABLE 	10 0 0
+	41	[888]	GETTABUP 	11 0 -20	; _ENV "pairs"
+	42	[888]	MOVE     	12 8
+	43	[888]	CALL     	11 2 4
+	44	[888]	JMP      	0 25	; to 70
+	45	[889]	GETTABUP 	16 0 -6	; _ENV "GM"
+	46	[889]	GETTABLE 	16 16 -21	; "ItemDataModel"
+	47	[889]	SELF     	16 16 -22	; "GetChainId"
+	48	[889]	MOVE     	18 14
+	49	[889]	CALL     	16 3 2
+	50	[890]	GETTABLE 	17 10 16
+	51	[890]	EQ       	0 17 -17	; - nil
+	52	[890]	JMP      	0 7	; to 60
+	53	[891]	GETTABUP 	17 0 -6	; _ENV "GM"
+	54	[891]	GETTABLE 	17 17 -21	; "ItemDataModel"
+	55	[891]	SELF     	17 17 -23	; "GetChainLevel"
+	56	[891]	MOVE     	19 14
+	57	[891]	CALL     	17 3 2
+	58	[891]	SETTABLE 	10 16 17
+	59	[891]	JMP      	0 10	; to 70
+	60	[893]	GETTABUP 	17 0 -24	; _ENV "math"
+	61	[893]	GETTABLE 	17 17 -25	; "max"
+	62	[893]	GETTABLE 	18 10 16
+	63	[893]	GETTABUP 	19 0 -6	; _ENV "GM"
+	64	[893]	GETTABLE 	19 19 -21	; "ItemDataModel"
+	65	[893]	SELF     	19 19 -23	; "GetChainLevel"
+	66	[893]	MOVE     	21 14
+	67	[893]	CALL     	19 3 0
+	68	[893]	CALL     	17 0 2
+	69	[893]	SETTABLE 	10 16 17
+	70	[888]	TFORCALL 	11 2
+	71	[888]	TFORLOOP 	13 -27	; to 45
+	72	[898]	GETTABUP 	11 0 -12	; _ENV "Table"
+	73	[898]	GETTABLE 	11 11 -13	; "DeepCopy"
+	74	[898]	GETTABUP 	12 0 -6	; _ENV "GM"
+	75	[898]	GETTABLE 	12 12 -7	; "MainBoardModel"
+	76	[898]	SELF     	12 12 -26	; "GetOrderBoostOrderCodeLackMap"
+	77	[898]	CALL     	12 2 0
+	78	[898]	CALL     	11 0 2
+	79	[900]	SELF     	12 1 -15	; "GetRequirements"
+	80	[900]	CALL     	12 2 2
+	81	[901]	GETTABUP 	13 0 -16	; _ENV "ipairs"
+	82	[901]	MOVE     	14 12
+	83	[901]	CALL     	13 2 4
+	84	[901]	JMP      	0 6	; to 91
+	85	[902]	GETTABLE 	18 11 17
+	86	[902]	EQ       	1 18 -17	; - nil
+	87	[902]	JMP      	0 3	; to 91
+	88	[903]	GETTABLE 	18 11 17
+	89	[903]	SUB      	18 18 -18	; - 1
+	90	[903]	SETTABLE 	11 17 18
+	91	[901]	TFORCALL 	13 2
+	92	[901]	TFORLOOP 	15 -8	; to 85
+	93	[908]	NEWTABLE 	13 0 0
+	94	[909]	NEWTABLE 	14 0 0
+	95	[911]	GETTABUP 	15 0 -20	; _ENV "pairs"
+	96	[911]	MOVE     	16 10
+	97	[911]	CALL     	15 2 4
+	98	[911]	JMP      	0 12	; to 111
+	99	[912]	LOADK    	20 -18	; 1
+	100	[912]	MOVE     	21 19
+	101	[912]	LOADK    	22 -18	; 1
+	102	[912]	FORPREP  	20 7	; to 110
+	103	[913]	GETTABUP 	24 0 -6	; _ENV "GM"
+	104	[913]	GETTABLE 	24 24 -21	; "ItemDataModel"
+	105	[913]	SELF     	24 24 -27	; "GetTypeByChainAndLevel"
+	106	[913]	MOVE     	26 18
+	107	[913]	MOVE     	27 23
+	108	[913]	CALL     	24 4 2
+	109	[914]	SETTABLE 	13 24 -28	; - true
+	110	[912]	FORLOOP  	20 -8	; to 103
+	111	[911]	TFORCALL 	15 2
+	112	[911]	TFORLOOP 	17 -14	; to 99
+	113	[918]	GETTABUP 	15 0 -20	; _ENV "pairs"
+	114	[918]	MOVE     	16 11
+	115	[918]	CALL     	15 2 4
+	116	[918]	JMP      	0 24	; to 141
+	117	[919]	LT       	0 -19 19	; 0 -
+	118	[919]	JMP      	0 22	; to 141
+	119	[920]	GETTABUP 	20 0 -6	; _ENV "GM"
+	120	[920]	GETTABLE 	20 20 -21	; "ItemDataModel"
+	121	[920]	SELF     	20 20 -23	; "GetChainLevel"
+	122	[920]	MOVE     	22 18
+	123	[920]	CALL     	20 3 2
+	124	[921]	GETTABUP 	21 0 -6	; _ENV "GM"
+	125	[921]	GETTABLE 	21 21 -21	; "ItemDataModel"
+	126	[921]	SELF     	21 21 -22	; "GetChainId"
+	127	[921]	MOVE     	23 18
+	128	[921]	CALL     	21 3 2
+	129	[922]	LOADK    	22 -18	; 1
+	130	[922]	MOVE     	23 20
+	131	[922]	LOADK    	24 -18	; 1
+	132	[922]	FORPREP  	22 7	; to 140
+	133	[923]	GETTABUP 	26 0 -6	; _ENV "GM"
+	134	[923]	GETTABLE 	26 26 -21	; "ItemDataModel"
+	135	[923]	SELF     	26 26 -27	; "GetTypeByChainAndLevel"
+	136	[923]	MOVE     	28 21
+	137	[923]	MOVE     	29 25
+	138	[923]	CALL     	26 4 2
+	139	[924]	SETTABLE 	14 26 -28	; - true
+	140	[922]	FORLOOP  	22 -8	; to 133
+	141	[918]	TFORCALL 	15 2
+	142	[918]	TFORLOOP 	17 -26	; to 117
+	143	[930]	NEWTABLE 	15 0 0
+	144	[932]	GETTABUP 	16 1 -29	; CookieFrenzyRewardItemState "orderBoostOrderLackItem"
+	145	[932]	NEWTABLE 	17 0 0
+	146	[932]	SETTABLE 	15 16 17
+	147	[934]	GETTABUP 	16 1 -30	; CookieFrenzyRewardItemState "orderLackItem"
+	148	[934]	NEWTABLE 	17 0 0
+	149	[934]	SETTABLE 	15 16 17
+	150	[936]	GETTABUP 	16 1 -31	; CookieFrenzyRewardItemState "orderBackItem"
+	151	[936]	NEWTABLE 	17 0 0
+	152	[936]	SETTABLE 	15 16 17
+	153	[938]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	154	[938]	MOVE     	17 7
+	155	[938]	CALL     	16 2 4
+	156	[938]	JMP      	0 70	; to 227
+	157	[941]	LOADBOOL 	21 0 0
+	158	[942]	GETTABUP 	22 0 -6	; _ENV "GM"
+	159	[942]	GETTABLE 	22 22 -21	; "ItemDataModel"
+	160	[942]	SELF     	22 22 -22	; "GetChainId"
+	161	[942]	MOVE     	24 19
+	162	[942]	CALL     	22 3 2
+	163	[943]	GETTABUP 	23 0 -6	; _ENV "GM"
+	164	[943]	GETTABLE 	23 23 -21	; "ItemDataModel"
+	165	[943]	SELF     	23 23 -32	; "GetChainGenerators"
+	166	[943]	MOVE     	25 22
+	167	[943]	CALL     	23 3 2
+	168	[944]	GETTABUP 	24 0 -16	; _ENV "ipairs"
+	169	[944]	MOVE     	25 23
+	170	[944]	CALL     	24 2 4
+	171	[944]	JMP      	0 9	; to 181
+	172	[945]	GETTABUP 	29 0 -6	; _ENV "GM"
+	173	[945]	GETTABLE 	29 29 -21	; "ItemDataModel"
+	174	[945]	SELF     	29 29 -33	; "IsUnlocked"
+	175	[945]	MOVE     	31 28
+	176	[945]	CALL     	29 3 2
+	177	[945]	TEST     	29 0
+	178	[945]	JMP      	0 2	; to 181
+	179	[946]	LOADBOOL 	21 1 0
+	180	[946]	JMP      	0 2	; to 183
+	181	[944]	TFORCALL 	24 2
+	182	[944]	TFORLOOP 	26 -11	; to 172
+	183	[953]	GETTABLE 	24 7 19
+	184	[953]	GETTABLE 	24 24 -34	; "DiffScore"
+	185	[953]	EQ       	1 24 -17	; - nil
+	186	[953]	JMP      	0 40	; to 227
+	187	[954]	GETTABLE 	24 7 19
+	188	[954]	GETTABLE 	24 24 -34	; "DiffScore"
+	189	[954]	LE       	0 5 24
+	190	[954]	JMP      	0 36	; to 227
+	191	[955]	GETTABLE 	24 7 19
+	192	[955]	GETTABLE 	24 24 -34	; "DiffScore"
+	193	[955]	LE       	0 24 6
+	194	[955]	JMP      	0 32	; to 227
+	195	[956]	GETTABLE 	24 7 19
+	196	[956]	GETTABLE 	24 24 -35	; "UnlockLevel"
+	197	[956]	GETTABUP 	25 0 -6	; _ENV "GM"
+	198	[956]	GETTABLE 	25 25 -36	; "LevelModel"
+	199	[956]	SELF     	25 25 -37	; "GetCurrentLevel"
+	200	[956]	CALL     	25 2 2
+	201	[956]	LE       	0 24 25
+	202	[956]	JMP      	0 24	; to 227
+	203	[957]	TEST     	21 0
+	204	[957]	JMP      	0 22	; to 227
+	205	[959]	GETTABLE 	24 14 19
+	206	[959]	EQ       	1 24 -17	; - nil
+	207	[959]	JMP      	0 6	; to 214
+	208	[960]	GETTABUP 	24 0 -38	; _ENV "table"
+	209	[960]	GETTABLE 	24 24 -39	; "insert"
+	210	[960]	GETTABLE 	25 15 -18	; 1
+	211	[960]	MOVE     	26 19
+	212	[960]	CALL     	24 3 1
+	213	[960]	JMP      	0 8	; to 222
+	214	[962]	GETTABLE 	24 13 19
+	215	[962]	EQ       	1 24 -17	; - nil
+	216	[962]	JMP      	0 5	; to 222
+	217	[963]	GETTABUP 	24 0 -38	; _ENV "table"
+	218	[963]	GETTABLE 	24 24 -39	; "insert"
+	219	[963]	GETTABLE 	25 15 -40	; 2
+	220	[963]	MOVE     	26 19
+	221	[963]	CALL     	24 3 1
+	222	[965]	GETTABUP 	24 0 -38	; _ENV "table"
+	223	[965]	GETTABLE 	24 24 -39	; "insert"
+	224	[965]	GETTABLE 	25 15 -41	; 3
+	225	[965]	MOVE     	26 19
+	226	[965]	CALL     	24 3 1
+	227	[938]	TFORCALL 	16 2
+	228	[938]	TFORLOOP 	18 -72	; to 157
+	229	[969]	GETTABUP 	16 0 -2	; _ENV "GameConfig"
+	230	[969]	GETTABLE 	16 16 -3	; "IsTestMode"
+	231	[969]	CALL     	16 1 2
+	232	[969]	TEST     	16 0
+	233	[969]	JMP      	0 83	; to 317
+	234	[970]	MOVE     	16 3
+	235	[970]	LOADK    	17 -42	; "\229\189\147\229\137\141\229\165\150\229\138\177\230\163\139\229\173\144\231\154\132\233\154\190\229\186\166\229\136\134 "
+	236	[970]	GETTABUP 	18 0 -43	; _ENV "tostring"
+	237	[970]	MOVE     	19 5
+	238	[970]	CALL     	18 2 2
+	239	[970]	LOADK    	19 -44	; " - "
+	240	[970]	GETTABUP 	20 0 -43	; _ENV "tostring"
+	241	[970]	MOVE     	21 6
+	242	[970]	CALL     	20 2 2
+	243	[970]	LOADK    	21 -45	; "\n"
+	244	[970]	CONCAT   	3 16 21
+	245	[971]	MOVE     	16 3
+	246	[971]	LOADK    	17 -46	; "\231\172\166\229\144\136\233\154\190\229\186\166\229\136\134\239\188\140\231\173\137\231\186\167\229\144\136\233\128\130\239\188\140\228\184\148\230\175\141\228\189\147\230\163\139\229\173\144\232\167\163\233\148\129\231\154\132\230\163\139\229\173\144\239\188\154\n"
+	247	[971]	CONCAT   	3 16 17
+	248	[972]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	249	[972]	GETTABLE 	17 15 -41	; 3
+	250	[972]	CALL     	16 2 4
+	251	[972]	JMP      	0 4	; to 256
+	252	[973]	MOVE     	21 3
+	253	[973]	MOVE     	22 20
+	254	[973]	LOADK    	23 -47	; " "
+	255	[973]	CONCAT   	3 21 23
+	256	[972]	TFORCALL 	16 2
+	257	[972]	TFORLOOP 	18 -6	; to 252
+	258	[975]	MOVE     	16 3
+	259	[975]	LOADK    	17 -45	; "\n"
+	260	[975]	CONCAT   	3 16 17
+	261	[976]	MOVE     	16 3
+	262	[976]	LOADK    	17 -48	; "\229\133\182\228\187\150\232\174\162\229\141\149\228\184\173\231\188\186\229\176\145\230\163\139\229\173\144\231\154\132\228\184\170\230\149\176\239\188\154\n"
+	263	[976]	CONCAT   	3 16 17
+	264	[977]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	265	[977]	MOVE     	17 8
+	266	[977]	CALL     	16 2 4
+	267	[977]	JMP      	0 8	; to 276
+	268	[978]	MOVE     	21 3
+	269	[978]	MOVE     	22 19
+	270	[978]	LOADK    	23 -49	; " : "
+	271	[978]	GETTABUP 	24 0 -43	; _ENV "tostring"
+	272	[978]	MOVE     	25 20
+	273	[978]	CALL     	24 2 2
+	274	[978]	LOADK    	25 -45	; "\n"
+	275	[978]	CONCAT   	3 21 25
+	276	[977]	TFORCALL 	16 2
+	277	[977]	TFORLOOP 	18 -10	; to 268
+	278	[981]	MOVE     	16 3
+	279	[981]	LOADK    	17 -50	; "\231\172\166\229\144\136\239\188\136\233\154\190\229\186\166\229\136\134\232\140\131\229\155\180\239\188\137&\239\188\136\229\133\182\228\187\150\232\174\162\229\141\149\231\188\186\229\176\145\230\163\139\229\173\144\229\143\138\229\144\136\230\136\144\231\186\191\228\184\138\228\189\142\231\186\167\230\163\139\229\173\144\239\188\137\228\186\164\233\155\134\231\154\132\230\163\139\229\173\144:\n"
+	280	[981]	CONCAT   	3 16 17
+	281	[982]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	282	[982]	GETTABLE 	17 15 -18	; 1
+	283	[982]	CALL     	16 2 4
+	284	[982]	JMP      	0 4	; to 289
+	285	[983]	MOVE     	21 3
+	286	[983]	MOVE     	22 20
+	287	[983]	LOADK    	23 -47	; " "
+	288	[983]	CONCAT   	3 21 23
+	289	[982]	TFORCALL 	16 2
+	290	[982]	TFORLOOP 	18 -6	; to 285
+	291	[985]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	292	[985]	GETTABLE 	17 15 -40	; 2
+	293	[985]	CALL     	16 2 4
+	294	[985]	JMP      	0 4	; to 299
+	295	[986]	MOVE     	21 3
+	296	[986]	MOVE     	22 20
+	297	[986]	LOADK    	23 -47	; " "
+	298	[986]	CONCAT   	3 21 23
+	299	[985]	TFORCALL 	16 2
+	300	[985]	TFORLOOP 	18 -6	; to 295
+	301	[988]	MOVE     	16 3
+	302	[988]	LOADK    	17 -45	; "\n"
+	303	[988]	CONCAT   	3 16 17
+	304	[990]	MOVE     	16 3
+	305	[990]	LOADK    	17 -51	; "\228\186\164\233\155\134\230\163\139\229\173\144\228\184\173\229\177\158\228\186\142\231\172\145\232\132\184\232\174\162\229\141\149\231\154\132\230\152\175:\n"
+	306	[990]	CONCAT   	3 16 17
+	307	[991]	GETTABUP 	16 0 -20	; _ENV "pairs"
+	308	[991]	GETTABLE 	17 15 -18	; 1
+	309	[991]	CALL     	16 2 4
+	310	[991]	JMP      	0 4	; to 315
+	311	[992]	MOVE     	21 3
+	312	[992]	MOVE     	22 20
+	313	[992]	LOADK    	23 -47	; " "
+	314	[992]	CONCAT   	3 21 23
+	315	[991]	TFORCALL 	16 2
+	316	[991]	TFORLOOP 	18 -6	; to 311
+	317	[1024]	MOVE     	16 15
+	318	[1024]	MOVE     	17 3
+	319	[1024]	RETURN   	16 3
+	320	[1025]	RETURN   	0 1
+constants (51) for 0000023901836D50:
+	1	""
+	2	"GameConfig"
+	3	"IsTestMode"
+	4	"MinNum"
+	5	"MaxNum"
+	6	"GM"
+	7	"MainBoardModel"
+	8	"GetOrderModel"
+	9	"OrderModelType"
+	10	"Slot"
+	11	"GetItemCodeConfigMap"
+	12	"Table"
+	13	"DeepCopy"
+	14	"GetOrderCodeLackCountMap"
+	15	"GetRequirements"
+	16	"ipairs"
+	17	nil
+	18	1
+	19	0
+	20	"pairs"
+	21	"ItemDataModel"
+	22	"GetChainId"
+	23	"GetChainLevel"
+	24	"math"
+	25	"max"
+	26	"GetOrderBoostOrderCodeLackMap"
+	27	"GetTypeByChainAndLevel"
+	28	true
+	29	"orderBoostOrderLackItem"
+	30	"orderLackItem"
+	31	"orderBackItem"
+	32	"GetChainGenerators"
+	33	"IsUnlocked"
+	34	"DiffScore"
+	35	"UnlockLevel"
+	36	"LevelModel"
+	37	"GetCurrentLevel"
+	38	"table"
+	39	"insert"
+	40	2
+	41	3
+	42	"\229\189\147\229\137\141\229\165\150\229\138\177\230\163\139\229\173\144\231\154\132\233\154\190\229\186\166\229\136\134 "
+	43	"tostring"
+	44	" - "
+	45	"\n"
+	46	"\231\172\166\229\144\136\233\154\190\229\186\166\229\136\134\239\188\140\231\173\137\231\186\167\229\144\136\233\128\130\239\188\140\228\184\148\230\175\141\228\189\147\230\163\139\229\173\144\232\167\163\233\148\129\231\154\132\230\163\139\229\173\144\239\188\154\n"
+	47	" "
+	48	"\229\133\182\228\187\150\232\174\162\229\141\149\228\184\173\231\188\186\229\176\145\230\163\139\229\173\144\231\154\132\228\184\170\230\149\176\239\188\154\n"
+	49	" : "
+	50	"\231\172\166\229\144\136\239\188\136\233\154\190\229\186\166\229\136\134\232\140\131\229\155\180\239\188\137&\239\188\136\229\133\182\228\187\150\232\174\162\229\141\149\231\188\186\229\176\145\230\163\139\229\173\144\229\143\138\229\144\136\230\136\144\231\186\191\228\184\138\228\189\142\231\186\167\230\163\139\229\173\144\239\188\137\228\186\164\233\155\134\231\154\132\230\163\139\229\173\144:\n"
+	51	"\228\186\164\233\155\134\230\163\139\229\173\144\228\184\173\229\177\158\228\186\142\231\172\145\232\132\184\232\174\162\229\141\149\231\154\132\230\152\175:\n"
+locals (92) for 0000023901836D50:
+	0	self	1	321
+	1	order	1	321
+	2	reward	1	321
+	3	strTest	2	321
+	4	isTestLog	5	321
+	5	minScore	6	321
+	6	maxScore	7	321
+	7	orderItemsConfig	15	321
+	8	mapLackItems	22	321
+	9	curOrderRequirements	24	321
+	10	(for generator)	27	40
+	11	(for state)	27	40
+	12	(for control)	27	40
+	13	_	28	38
+	14	item	28	38
+	15	missing_requested_chain_maxLevel	41	321
+	16	(for generator)	44	72
+	17	(for state)	44	72
+	18	(for control)	44	72
+	19	item	45	70
+	20	_	45	70
+	21	chainId	50	70
+	22	orderboostLackMap	79	321
+	23	curOrderRequirements	81	321
+	24	(for generator)	84	93
+	25	(for state)	84	93
+	26	(for control)	84	93
+	27	_	85	91
+	28	item	85	91
+	29	curSelcetableItems	94	321
+	30	curOrderBoostSeleceedItems	95	321
+	31	(for generator)	98	113
+	32	(for state)	98	113
+	33	(for control)	98	113
+	34	chainId	99	111
+	35	maxLevel	99	111
+	36	(for index)	102	111
+	37	(for limit)	102	111
+	38	(for step)	102	111
+	39	level	103	110
+	40	item	109	110
+	41	(for generator)	116	143
+	42	(for state)	116	143
+	43	(for control)	116	143
+	44	itemCode	117	141
+	45	num	117	141
+	46	maxLevel	124	141
+	47	chainId	129	141
+	48	(for index)	132	141
+	49	(for limit)	132	141
+	50	(for step)	132	141
+	51	level	133	140
+	52	item	139	140
+	53	targetItems	144	321
+	54	(for generator)	156	229
+	55	(for state)	156	229
+	56	(for control)	156	229
+	57	itemCode	157	227
+	58	_	157	227
+	59	isUnLockProduct	158	227
+	60	chainId	163	227
+	61	generators	168	227
+	62	(for generator)	171	183
+	63	(for state)	171	183
+	64	(for control)	171	183
+	65	_	172	181
+	66	generator	172	181
+	67	(for generator)	251	258
+	68	(for state)	251	258
+	69	(for control)	251	258
+	70	_	252	256
+	71	itemCode	252	256
+	72	(for generator)	267	278
+	73	(for state)	267	278
+	74	(for control)	267	278
+	75	item	268	276
+	76	num	268	276
+	77	(for generator)	284	291
+	78	(for state)	284	291
+	79	(for control)	284	291
+	80	_	285	289
+	81	itemCode	285	289
+	82	(for generator)	294	301
+	83	(for state)	294	301
+	84	(for control)	294	301
+	85	_	295	299
+	86	itemCode	295	299
+	87	(for generator)	310	317
+	88	(for state)	310	317
+	89	(for control)	310	317
+	90	_	311	315
+	91	itemCode	311	315
+upvalues (2) for 0000023901836D50:
+	0	_ENV	0	0
+	1	CookieFrenzyRewardItemState	1	0
+
+function <CookingFrenzyModel.lua:1027,1035> (12 instructions at 0000023901836C50)
+2 params, 4 slots, 0 upvalues, 3 locals, 2 constants, 0 functions
+	1	[1028]	GETTABLE 	2 0 -1	; "m_mapCacheAcquireReward"
+	2	[1028]	GETTABLE 	2 2 1
+	3	[1028]	EQ       	0 2 -2	; - nil
+	4	[1028]	JMP      	0 2	; to 7
+	5	[1029]	LOADNIL  	2 0
+	6	[1029]	RETURN   	2 2
+	7	[1031]	GETTABLE 	2 0 -1	; "m_mapCacheAcquireReward"
+	8	[1031]	GETTABLE 	2 2 1
+	9	[1032]	GETTABLE 	3 0 -1	; "m_mapCacheAcquireReward"
+	10	[1032]	SETTABLE 	3 1 -2	; - nil
+	11	[1034]	RETURN   	2 2
+	12	[1035]	RETURN   	0 1
+constants (2) for 0000023901836C50:
+	1	"m_mapCacheAcquireReward"
+	2	nil
+locals (3) for 0000023901836C50:
+	0	self	1	13
+	1	order	1	13
+	2	target	9	13
+upvalues (0) for 0000023901836C50:
+
+function <CookingFrenzyModel.lua:1037,1074> (70 instructions at 0000023901836FD0)
+2 params, 12 slots, 1 upvalue, 11 locals, 23 constants, 0 functions
+	1	[1038]	GETTABLE 	2 0 -1	; "m_mapCacheAcquireReward"
+	2	[1038]	GETTABLE 	2 2 1
+	3	[1038]	EQ       	0 2 -2	; - nil
+	4	[1038]	JMP      	0 2	; to 7
+	5	[1039]	LOADNIL  	2 0
+	6	[1039]	RETURN   	2 2
+	7	[1043]	LOADNIL  	2 0
+	8	[1044]	GETTABLE 	3 0 -1	; "m_mapCacheAcquireReward"
+	9	[1044]	GETTABLE 	3 3 1
+	10	[1044]	EQ       	1 3 -2	; - nil
+	11	[1044]	JMP      	0 57	; to 69
+	12	[1045]	GETTABUP 	3 0 -3	; _ENV "Table"
+	13	[1045]	GETTABLE 	3 3 -4	; "DeepCopy"
+	14	[1045]	GETTABLE 	4 0 -1	; "m_mapCacheAcquireReward"
+	15	[1045]	GETTABLE 	4 4 1
+	16	[1045]	CALL     	3 2 2
+	17	[1045]	MOVE     	2 3
+	18	[1046]	GETTABUP 	3 0 -5	; _ENV "ipairs"
+	19	[1046]	MOVE     	4 2
+	20	[1046]	CALL     	3 2 4
+	21	[1046]	JMP      	0 45	; to 67
+	22	[1047]	GETTABLE 	8 7 -6	; "itemPos"
+	23	[1047]	EQ       	1 8 -2	; - nil
+	24	[1047]	JMP      	0 41	; to 66
+	25	[1048]	SETTABLE 	2 6 7
+	26	[1049]	GETTABLE 	8 2 6
+	27	[1049]	GETTABUP 	9 0 -7	; _ENV "tostring"
+	28	[1049]	GETTABLE 	10 7 -6	; "itemPos"
+	29	[1049]	CALL     	9 2 2
+	30	[1049]	SETTABLE 	8 -6 9	; "itemPos" -
+	31	[1050]	GETTABUP 	8 0 -8	; _ENV "GM"
+	32	[1050]	GETTABLE 	8 8 -9	; "MainBoardModel"
+	33	[1050]	SELF     	8 8 -10	; "GetOrderModel"
+	34	[1050]	GETTABUP 	10 0 -11	; _ENV "OrderModelType"
+	35	[1050]	GETTABLE 	10 10 -12	; "Slot"
+	36	[1050]	CALL     	8 3 2
+	37	[1050]	SELF     	8 8 -13	; "GetItemCodeConfigMap"
+	38	[1050]	CALL     	8 2 2
+	39	[1052]	LOADK    	9 -14	; 0
+	40	[1053]	GETTABUP 	10 0 -15	; _ENV "PROPERTY_TYPE"
+	41	[1053]	GETTABLE 	10 7 10
+	42	[1053]	GETTABLE 	10 8 10
+	43	[1053]	EQ       	1 10 -2	; - nil
+	44	[1053]	JMP      	0 6	; to 51
+	45	[1054]	GETTABUP 	10 0 -15	; _ENV "PROPERTY_TYPE"
+	46	[1054]	GETTABLE 	10 7 10
+	47	[1054]	GETTABLE 	10 8 10
+	48	[1054]	GETTABLE 	10 10 -16	; "DiffScore"
+	49	[1054]	TESTSET  	9 10 1
+	50	[1054]	JMP      	0 0	; to 51
+	51	[1057]	LOADK    	10 -14	; 0
+	52	[1058]	LE       	0 -17 9	; 126 -
+	53	[1058]	JMP      	0 2	; to 56
+	54	[1059]	LOADK    	10 -18	; 3
+	55	[1059]	JMP      	0 7	; to 63
+	56	[1060]	LE       	0 -19 9	; 61 -
+	57	[1060]	JMP      	0 2	; to 60
+	58	[1061]	LOADK    	10 -20	; 2
+	59	[1061]	JMP      	0 3	; to 63
+	60	[1062]	LE       	0 -21 9	; 31 -
+	61	[1062]	JMP      	0 1	; to 63
+	62	[1063]	LOADK    	10 -22	; 1
+	63	[1066]	GETTABLE 	11 2 6
+	64	[1066]	SETTABLE 	11 -23 10	; "itemLevel" -
+	65	[1066]	JMP      	0 1	; to 67
+	66	[1068]	SETTABLE 	2 6 7
+	67	[1046]	TFORCALL 	3 2
+	68	[1046]	TFORLOOP 	5 -47	; to 22
+	69	[1073]	RETURN   	2 2
+	70	[1074]	RETURN   	0 1
+constants (23) for 0000023901836FD0:
+	1	"m_mapCacheAcquireReward"
+	2	nil
+	3	"Table"
+	4	"DeepCopy"
+	5	"ipairs"
+	6	"itemPos"
+	7	"tostring"
+	8	"GM"
+	9	"MainBoardModel"
+	10	"GetOrderModel"
+	11	"OrderModelType"
+	12	"Slot"
+	13	"GetItemCodeConfigMap"
+	14	0
+	15	"PROPERTY_TYPE"
+	16	"DiffScore"
+	17	126
+	18	3
+	19	61
+	20	2
+	21	31
+	22	1
+	23	"itemLevel"
+locals (11) for 0000023901836FD0:
+	0	self	1	71
+	1	order	1	71
+	2	biReward	8	71
+	3	(for generator)	21	69
+	4	(for state)	21	69
+	5	(for control)	21	69
+	6	k	22	67
+	7	reward	22	67
+	8	itemCodeConfigMap	39	65
+	9	score	40	65
+	10	itemLevel	52	65
+upvalues (1) for 0000023901836FD0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:1077,1079> (3 instructions at 0000023901836550)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1078]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[1078]	RETURN   	1 2
+	3	[1079]	RETURN   	0 1
+constants (1) for 0000023901836550:
+	1	"m_curData"
+locals (1) for 0000023901836550:
+	0	self	1	4
+upvalues (0) for 0000023901836550:
+
+function <CookingFrenzyModel.lua:1081,1083> (3 instructions at 00000239018370D0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1082]	GETTABLE 	1 0 -1	; "m_waitOpenMainWindow"
+	2	[1082]	RETURN   	1 2
+	3	[1083]	RETURN   	0 1
+constants (1) for 00000239018370D0:
+	1	"m_waitOpenMainWindow"
+locals (1) for 00000239018370D0:
+	0	self	1	4
+upvalues (0) for 00000239018370D0:
+
+function <CookingFrenzyModel.lua:1085,1087> (2 instructions at 00000239018367D0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[1086]	SETTABLE 	0 -1 1	; "m_waitOpenMainWindow" -
+	2	[1087]	RETURN   	0 1
+constants (1) for 00000239018367D0:
+	1	"m_waitOpenMainWindow"
+locals (2) for 00000239018367D0:
+	0	self	1	3
+	1	bState	1	3
+upvalues (0) for 00000239018367D0:
+
+function <CookingFrenzyModel.lua:1089,1091> (3 instructions at 0000023901837250)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1090]	GETTABLE 	1 0 -1	; "m_waitOpenLightWindow"
+	2	[1090]	RETURN   	1 2
+	3	[1091]	RETURN   	0 1
+constants (1) for 0000023901837250:
+	1	"m_waitOpenLightWindow"
+locals (1) for 0000023901837250:
+	0	self	1	4
+upvalues (0) for 0000023901837250:
+
+function <CookingFrenzyModel.lua:1093,1095> (2 instructions at 0000023901836950)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[1094]	SETTABLE 	0 -1 1	; "m_waitOpenLightWindow" -
+	2	[1095]	RETURN   	0 1
+constants (1) for 0000023901836950:
+	1	"m_waitOpenLightWindow"
+locals (2) for 0000023901836950:
+	0	self	1	3
+	1	bState	1	3
+upvalues (0) for 0000023901836950:
+
+function <CookingFrenzyModel.lua:1097,1099> (3 instructions at 0000023901837150)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1098]	GETTABLE 	1 0 -1	; "m_bWaitOpenTriggerWindow"
+	2	[1098]	RETURN   	1 2
+	3	[1099]	RETURN   	0 1
+constants (1) for 0000023901837150:
+	1	"m_bWaitOpenTriggerWindow"
+locals (1) for 0000023901837150:
+	0	self	1	4
+upvalues (0) for 0000023901837150:
+
+function <CookingFrenzyModel.lua:1101,1103> (2 instructions at 0000023901836AD0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[1102]	SETTABLE 	0 -1 1	; "m_bWaitOpenTriggerWindow" -
+	2	[1103]	RETURN   	0 1
+constants (1) for 0000023901836AD0:
+	1	"m_bWaitOpenTriggerWindow"
+locals (2) for 0000023901836AD0:
+	0	self	1	3
+	1	bState	1	3
+upvalues (0) for 0000023901836AD0:
+
+function <CookingFrenzyModel.lua:1105,1108> (10 instructions at 0000023901837350)
+1 param, 7 slots, 2 upvalues, 1 local, 7 constants, 0 functions
+	1	[1107]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1107]	SELF     	1 1 -2	; "Set"
+	3	[1107]	GETTABUP 	3 0 -3	; strDBKeys "CookingFrenzyOpenWindowScore"
+	4	[1107]	LOADK    	4 -4	; "value"
+	5	[1107]	GETTABUP 	5 1 -5	; _ENV "tostring"
+	6	[1107]	GETTABLE 	6 0 -6	; "m_curData"
+	7	[1107]	GETTABLE 	6 6 -7	; "m_score"
+	8	[1107]	CALL     	5 2 0
+	9	[1107]	CALL     	1 0 1
+	10	[1108]	RETURN   	0 1
+constants (7) for 0000023901837350:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CookingFrenzyOpenWindowScore"
+	4	"value"
+	5	"tostring"
+	6	"m_curData"
+	7	"m_score"
+locals (1) for 0000023901837350:
+	0	self	1	11
+upvalues (2) for 0000023901837350:
+	0	strDBKeys	1	1
+	1	_ENV	0	0
+
+function <CookingFrenzyModel.lua:1110,1112> (15 instructions at 00000239018450C0)
+1 param, 6 slots, 2 upvalues, 1 local, 7 constants, 0 functions
+	1	[1111]	GETTABUP 	1 0 -1	; _ENV "tonumber"
+	2	[1111]	GETTABLE 	2 0 -2	; "m_dbTable"
+	3	[1111]	SELF     	2 2 -3	; "GetValue"
+	4	[1111]	GETTABUP 	4 1 -4	; strDBKeys "CookingFrenzyOpenWindowScore"
+	5	[1111]	LOADK    	5 -5	; "value"
+	6	[1111]	CALL     	2 4 2
+	7	[1111]	TEST     	2 1
+	8	[1111]	JMP      	0 1	; to 10
+	9	[1111]	LOADK    	2 -6	; ""
+	10	[1111]	CALL     	1 2 2
+	11	[1111]	TEST     	1 1
+	12	[1111]	JMP      	0 1	; to 14
+	13	[1111]	LOADK    	1 -7	; 0
+	14	[1111]	RETURN   	1 2
+	15	[1112]	RETURN   	0 1
+constants (7) for 00000239018450C0:
+	1	"tonumber"
+	2	"m_dbTable"
+	3	"GetValue"
+	4	"CookingFrenzyOpenWindowScore"
+	5	"value"
+	6	""
+	7	0
+locals (1) for 00000239018450C0:
+	0	self	1	16
+upvalues (2) for 00000239018450C0:
+	0	_ENV	0	0
+	1	strDBKeys	1	1
+
+function <CookingFrenzyModel.lua:1114,1116> (6 instructions at 00000239018442C0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[1115]	NEWTABLE 	1 1 0
+	2	[1115]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[1115]	GETTABLE 	2 2 -2	; "CookingFrenzy"
+	4	[1115]	SETLIST  	1 1 1	; 1
+	5	[1115]	RETURN   	1 2
+	6	[1116]	RETURN   	0 1
+constants (2) for 00000239018442C0:
+	1	"AddressableLabel"
+	2	"CookingFrenzy"
+locals (1) for 00000239018442C0:
+	0	self	1	7
+upvalues (1) for 00000239018442C0:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:1118,1126> (16 instructions at 00000239018452C0)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[1119]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[1119]	EQ       	1 1 -2	; - nil
+	3	[1119]	JMP      	0 3	; to 7
+	4	[1120]	LOADBOOL 	1 1 0
+	5	[1120]	RETURN   	1 2
+	6	[1120]	JMP      	0 9	; to 16
+	7	[1121]	SELF     	1 0 -3	; "CanTrigger"
+	8	[1121]	CALL     	1 2 2
+	9	[1121]	TEST     	1 0
+	10	[1121]	JMP      	0 3	; to 14
+	11	[1122]	LOADBOOL 	1 1 0
+	12	[1122]	RETURN   	1 2
+	13	[1122]	JMP      	0 2	; to 16
+	14	[1124]	LOADBOOL 	1 0 0
+	15	[1124]	RETURN   	1 2
+	16	[1126]	RETURN   	0 1
+constants (3) for 00000239018452C0:
+	1	"m_curData"
+	2	nil
+	3	"CanTrigger"
+locals (1) for 00000239018452C0:
+	0	self	1	17
+upvalues (0) for 00000239018452C0:
+
+function <CookingFrenzyModel.lua:1128,1139> (24 instructions at 0000023901844540)
+1 param, 7 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[1129]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[1129]	EQ       	0 1 -2	; - nil
+	3	[1129]	JMP      	0 2	; to 6
+	4	[1130]	LOADBOOL 	1 0 0
+	5	[1130]	RETURN   	1 2
+	6	[1133]	SELF     	1 0 -3	; "GetCurDoingBuff"
+	7	[1133]	CALL     	1 2 4
+	8	[1134]	EQ       	1 3 -4	; - 1
+	9	[1134]	JMP      	0 2	; to 12
+	10	[1135]	LOADBOOL 	4 0 0
+	11	[1135]	RETURN   	4 2
+	12	[1138]	GETTABLE 	4 0 -1	; "m_curData"
+	13	[1138]	GETTABLE 	4 4 -5	; "m_eTime"
+	14	[1138]	GETTABUP 	5 0 -6	; _ENV "GM"
+	15	[1138]	GETTABLE 	5 5 -7	; "GameModel"
+	16	[1138]	SELF     	5 5 -8	; "GetServerTime"
+	17	[1138]	CALL     	5 2 2
+	18	[1138]	SUB      	4 4 5
+	19	[1138]	LT       	1 -9 4	; 7200 -
+	20	[1138]	JMP      	0 1	; to 22
+	21	[1138]	LOADBOOL 	4 0 1
+	22	[1138]	LOADBOOL 	4 1 0
+	23	[1138]	RETURN   	4 2
+	24	[1139]	RETURN   	0 1
+constants (9) for 0000023901844540:
+	1	"m_curData"
+	2	nil
+	3	"GetCurDoingBuff"
+	4	1
+	5	"m_eTime"
+	6	"GM"
+	7	"GameModel"
+	8	"GetServerTime"
+	9	7200
+locals (4) for 0000023901844540:
+	0	self	1	25
+	1	_	8	25
+	2	__	8	25
+	3	id	8	25
+upvalues (1) for 0000023901844540:
+	0	_ENV	0	0
+
+function <CookingFrenzyModel.lua:1142,1152> (21 instructions at 00000239018449C0)
+1 param, 7 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[1143]	GETTABLE 	1 0 -1	; "m_curData"
+	2	[1143]	EQ       	0 1 -2	; - nil
+	3	[1143]	JMP      	0 2	; to 6
+	4	[1144]	LOADK    	1 -3	; 0
+	5	[1144]	RETURN   	1 2
+	6	[1146]	SELF     	1 0 -4	; "GetCurDoingBuff"
+	7	[1146]	CALL     	1 2 4
+	8	[1148]	EQ       	0 3 -3	; - 0
+	9	[1148]	JMP      	0 2	; to 12
+	10	[1149]	LOADK    	4 -3	; 0
+	11	[1149]	RETURN   	4 2
+	12	[1151]	GETTABLE 	4 0 -1	; "m_curData"
+	13	[1151]	GETTABLE 	4 4 -5	; "m_eTime"
+	14	[1151]	GETTABUP 	5 0 -6	; _ENV "GM"
+	15	[1151]	GETTABLE 	5 5 -7	; "GameModel"
+	16	[1151]	SELF     	5 5 -8	; "GetServerTime"
+	17	[1151]	CALL     	5 2 2
+	18	[1151]	SUB      	4 4 5
+	19	[1151]	SUB      	4 4 -9	; - 3600
+	20	[1151]	RETURN   	4 2
+	21	[1152]	RETURN   	0 1
+constants (9) for 00000239018449C0:
+	1	"m_curData"
+	2	nil
+	3	0
+	4	"GetCurDoingBuff"
+	5	"m_eTime"
+	6	"GM"
+	7	"GameModel"
+	8	"GetServerTime"
+	9	3600
+locals (4) for 00000239018449C0:
+	0	self	1	22
+	1	_	8	22
+	2	__	8	22
+	3	id	8	22
+upvalues (1) for 00000239018449C0:
+	0	_ENV	0	0

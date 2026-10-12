@@ -1,0 +1,5214 @@
+
+main <OrderBoostModel.lua:0,0> (263 instructions at 000002375D9EEFD0)
+0+ params, 3 slots, 1 upvalue, 1 local, 110 constants, 75 functions
+	1	[36]	NEWTABLE 	0 0 3
+	2	[38]	SETTABLE 	0 -2 -3	; "Normal" 0
+	3	[40]	SETTABLE 	0 -4 -5	; "Super" 1
+	4	[42]	SETTABLE 	0 -6 -7	; "FailedSuper" 2
+	5	[43]	SETTABUP 	0 -1 0	; _ENV "EOrderBoostType"
+	6	[46]	GETTABUP 	0 0 -9	; _ENV "setmetatable"
+	7	[46]	NEWTABLE 	1 0 0
+	8	[46]	GETTABUP 	2 0 -10	; _ENV "BaseActivityModel"
+	9	[46]	CALL     	0 3 2
+	10	[46]	SETTABUP 	0 -8 0	; _ENV "OrderBoostModel"
+	11	[47]	GETTABUP 	0 0 -8	; _ENV "OrderBoostModel"
+	12	[47]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	13	[47]	SETTABLE 	0 -11 1	; "__index" -
+	14	[49]	NEWTABLE 	0 0 20
+	15	[51]	SETTABLE 	0 -12 -12	; "CurConfigs" "CurConfigs"
+	16	[53]	SETTABLE 	0 -13 -13	; "CurLevelRewardConfig" "CurLevelRewardConfig"
+	17	[55]	SETTABLE 	0 -14 -14	; "CurInfo" "CurInfo"
+	18	[57]	SETTABLE 	0 -15 -15	; "FinishSmile" "FinishSmile"
+	19	[60]	SETTABLE 	0 -16 -16	; "FirstPopup" "FirstPopup"
+	20	[61]	SETTABLE 	0 -17 -17	; "FirstHint" "FirstHint"
+	21	[64]	SETTABLE 	0 -18 -18	; "BubbleHint" "BubbleHint"
+	22	[66]	SETTABLE 	0 -19 -20	; "LastBubbleHintTime" "LastBubbleHint"
+	23	[69]	SETTABLE 	0 -21 -21	; "FinishedNormalCount" "FinishedNormalCount"
+	24	[71]	SETTABLE 	0 -22 -22	; "IsProConfig" "IsProConfig"
+	25	[73]	SETTABLE 	0 -23 -23	; "CurLogicType" "CurLogicType"
+	26	[75]	SETTABLE 	0 -24 -24	; "LastLogicType" "LastLogicType"
+	27	[77]	SETTABLE 	0 -25 -25	; "ProEndTime" "ProEndTime"
+	28	[79]	SETTABLE 	0 -26 -26	; "PopCountdownTip" "PopCountdownTip"
+	29	[81]	SETTABLE 	0 -27 -27	; "ProTrigNum" "ProTrigNum"
+	30	[83]	SETTABLE 	0 -28 -28	; "FirstProPopup" "FirstProPopup"
+	31	[85]	SETTABLE 	0 -29 -29	; "LessScoreRound" "LessScoreRound"
+	32	[87]	SETTABLE 	0 -30 -30	; "TutorialGestureNum" "TutorialGestureNum"
+	33	[90]	SETTABLE 	0 -31 -31	; "CannonBoosterRound" "CannonBoosterRound"
+	34	[92]	SETTABLE 	0 -32 -32	; "CannonBoosterIsOpen" "CannonBoosterIsOpen"
+	35	[94]	SETTABLE 	0 -33 -33	; "CannonBoosterShownRound" "CannonBoosterShownRound"
+	36	[96]	SETTABLE 	0 -34 -34	; "CannonBoosterRewardTimes" "CannonBoosterRewardTimes"
+	37	[99]	SETTABLE 	0 -35 -35	; "SavedIncludeConfig" "SavedIncludeConfig"
+	38	[109]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	39	[115]	CLOSURE  	2 0	; 000002375D9EF050
+	40	[109]	SETTABLE 	1 -36 2	; "Init" -
+	41	[118]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	42	[133]	CLOSURE  	2 1	; 000002375D9EED50
+	43	[118]	SETTABLE 	1 -37 2	; "LoadLocalConfig" -
+	44	[135]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	45	[151]	CLOSURE  	2 2	; 000002375D9EEDD0
+	46	[135]	SETTABLE 	1 -38 2	; "SaveMetaData" -
+	47	[154]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	48	[164]	CLOSURE  	2 3	; 000002375D9F3FA0
+	49	[154]	SETTABLE 	1 -39 2	; "_OnStateChanged" -
+	50	[167]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	51	[176]	CLOSURE  	2 4	; 000002375D9F4200
+	52	[167]	SETTABLE 	1 -40 2	; "_DropData" -
+	53	[178]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	54	[186]	CLOSURE  	2 5	; 000002375D9F4360
+	55	[178]	SETTABLE 	1 -41 2	; "_OnGameModeChanged" -
+	56	[189]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	57	[230]	CLOSURE  	2 6	; 000002375D9F4460
+	58	[189]	SETTABLE 	1 -42 2	; "OnOrderFinished" -
+	59	[233]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	60	[258]	CLOSURE  	2 7	; 000002375D9F5550
+	61	[233]	SETTABLE 	1 -43 2	; "AcquireSmileLogic" -
+	62	[261]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	63	[357]	CLOSURE  	2 8	; 000002375D9F6070
+	64	[261]	SETTABLE 	1 -44 2	; "OnFinishRoundSmile" -
+	65	[359]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	66	[401]	CLOSURE  	2 9	; 000002375D9F6770
+	67	[359]	SETTABLE 	1 -45 2	; "IntelligentGenerateSmileItem" -
+	68	[403]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	69	[543]	CLOSURE  	2 10	; 000002375D9F6270
+	70	[403]	SETTABLE 	1 -46 2	; "ClassicGenerateSmileItem" -
+	71	[545]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	72	[557]	CLOSURE  	2 11	; 000002375D9F64F0
+	73	[545]	SETTABLE 	1 -47 2	; "TryGenerateSmileItem" -
+	74	[559]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	75	[594]	CLOSURE  	2 12	; 000002375D9F69F0
+	76	[559]	SETTABLE 	1 -48 2	; "FindPositionForItems" -
+	77	[598]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	78	[617]	CLOSURE  	2 13	; 000002375D9F5AF0
+	79	[598]	SETTABLE 	1 -49 2	; "TryGenerateCannonRewardItem" -
+	80	[622]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	81	[636]	CLOSURE  	2 14	; 000002375D9F5C70
+	82	[622]	SETTABLE 	1 -50 2	; "RandomChooseUnlockItems" -
+	83	[638]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	84	[677]	CLOSURE  	2 15	; 000002375D9F62F0
+	85	[638]	SETTABLE 	1 -51 2	; "MakeUpTestInfos" -
+	86	[679]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	87	[682]	CLOSURE  	2 16	; 000002375D9F5EF0
+	88	[679]	SETTABLE 	1 -52 2	; "RewardStockCountOn" -
+	89	[684]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	90	[693]	CLOSURE  	2 17	; 000002375D9F5D70
+	91	[684]	SETTABLE 	1 -53 2	; "CanSendSmile" -
+	92	[695]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	93	[697]	CLOSURE  	2 18	; 000002375D9F65F0
+	94	[695]	SETTABLE 	1 -54 2	; "GetCurScore" -
+	95	[699]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	96	[701]	CLOSURE  	2 19	; 000002375D9F5BF0
+	97	[699]	SETTABLE 	1 -55 2	; "GetMaxScore" -
+	98	[704]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	99	[706]	CLOSURE  	2 20	; 000002375D9F5FF0
+	100	[704]	SETTABLE 	1 -56 2	; "GetFinishRound" -
+	101	[708]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	102	[725]	CLOSURE  	2 21	; 000002375D9F5F70
+	103	[708]	SETTABLE 	1 -57 2	; "LoadProServerConfig" -
+	104	[727]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	105	[735]	CLOSURE  	2 22	; 000002375D9F6670
+	106	[727]	SETTABLE 	1 -58 2	; "LoadServerConfig" -
+	107	[737]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	108	[753]	CLOSURE  	2 23	; 000002375D9F68F0
+	109	[737]	SETTABLE 	1 -59 2	; "NewRoundUseNewConfig" -
+	110	[755]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	111	[802]	CLOSURE  	2 24	; 000002375D9F6170
+	112	[755]	SETTABLE 	1 -60 2	; "_LoadOtherServerConfig" -
+	113	[804]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	114	[807]	CLOSURE  	2 25	; 000002375D9F61F0
+	115	[804]	SETTABLE 	1 -61 2	; "LateInit" -
+	116	[809]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	117	[812]	CLOSURE  	2 26	; 000002375D9F63F0
+	118	[809]	SETTABLE 	1 -62 2	; "SetCannonStart" -
+	119	[814]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	120	[916]	CLOSURE  	2 27	; 000002375D9F6370
+	121	[814]	SETTABLE 	1 -63 2	; "TryCreateNewSmile" -
+	122	[921]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	123	[938]	CLOSURE  	2 28	; 000002375D9F6870
+	124	[921]	SETTABLE 	1 -64 2	; "GetAddOrderBoostScoreByOrder" -
+	125	[940]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	126	[942]	CLOSURE  	2 29	; 000002375DA02190
+	127	[940]	SETTABLE 	1 -65 2	; "SmileCompleted" -
+	128	[944]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	129	[982]	CLOSURE  	2 30	; 000002375DA02210
+	130	[944]	SETTABLE 	1 -66 2	; "GetAddSmileScoreBySlot" -
+	131	[986]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	132	[999]	CLOSURE  	2 31	; 000002375DA03390
+	133	[986]	SETTABLE 	1 -67 2	; "CanPopOrderBoostWindow" -
+	134	[1001]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	135	[1003]	CLOSURE  	2 32	; 000002375DA02910
+	136	[1001]	SETTABLE 	1 -68 2	; "PopOrderBoostWindow" -
+	137	[1005]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	138	[1007]	CLOSURE  	2 33	; 000002375DA03410
+	139	[1005]	SETTABLE 	1 -69 2	; "IsFirstOpenWindow" -
+	140	[1009]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	141	[1011]	CLOSURE  	2 34	; 000002375DA02A90
+	142	[1009]	SETTABLE 	1 -70 2	; "GetFirstHint" -
+	143	[1013]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	144	[1015]	CLOSURE  	2 35	; 000002375DA03310
+	145	[1013]	SETTABLE 	1 -71 2	; "SetFirstHint" -
+	146	[1017]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	147	[1019]	CLOSURE  	2 36	; 000002375DA02D10
+	148	[1017]	SETTABLE 	1 -72 2	; "ClearFirstHint" -
+	149	[1022]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	150	[1032]	CLOSURE  	2 37	; 000002375DA03210
+	151	[1022]	SETTABLE 	1 -73 2	; "CanPopBubble" -
+	152	[1034]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	153	[1039]	CLOSURE  	2 38	; 000002375DA03490
+	154	[1034]	SETTABLE 	1 -74 2	; "PopBubble" -
+	155	[1041]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	156	[1100]	CLOSURE  	2 39	; 000002375DA02C90
+	157	[1041]	SETTABLE 	1 -75 2	; "UpdatePerSecond" -
+	158	[1103]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	159	[1115]	CLOSURE  	2 40	; 000002375DA03590
+	160	[1103]	SETTABLE 	1 -76 2	; "ChangeProToOtherType" -
+	161	[1118]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	162	[1120]	CLOSURE  	2 41	; 000002375DA03A90
+	163	[1118]	SETTABLE 	1 -77 2	; "GetCurInfo" -
+	164	[1122]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	165	[1124]	CLOSURE  	2 42	; 000002375DA02F90
+	166	[1122]	SETTABLE 	1 -78 2	; "GetOrderEntryCanHint" -
+	167	[1126]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	168	[1128]	CLOSURE  	2 43	; 000002375DA03A10
+	169	[1126]	SETTABLE 	1 -79 2	; "GetResourceLabels" -
+	170	[1131]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	171	[1133]	CLOSURE  	2 44	; 000002375DA03790
+	172	[1131]	SETTABLE 	1 -80 2	; "GetUIType" -
+	173	[1135]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	174	[1137]	CLOSURE  	2 45	; 000002375DA02790
+	175	[1135]	SETTABLE 	1 -81 2	; "GetLogicType" -
+	176	[1139]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	177	[1141]	CLOSURE  	2 46	; 000002375DA02310
+	178	[1139]	SETTABLE 	1 -82 2	; "GetLastLogicType" -
+	179	[1143]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	180	[1145]	CLOSURE  	2 47	; 000002375DA03510
+	181	[1143]	SETTABLE 	1 -83 2	; "GetFinishedNormalCount" -
+	182	[1147]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	183	[1149]	CLOSURE  	2 48	; 000002375DA03B10
+	184	[1147]	SETTABLE 	1 -84 2	; "SetFinishedNormalCount" -
+	185	[1151]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	186	[1153]	CLOSURE  	2 49	; 000002375DA03C90
+	187	[1151]	SETTABLE 	1 -85 2	; "GetFinishedRoundWhenCannonOpen" -
+	188	[1155]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	189	[1157]	CLOSURE  	2 50	; 000002375DA03610
+	190	[1155]	SETTABLE 	1 -86 2	; "SetFinishedRoundWhenCannonOpen" -
+	191	[1159]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	192	[1161]	CLOSURE  	2 51	; 000002375DA03690
+	193	[1159]	SETTABLE 	1 -87 2	; "IsProConfig" -
+	194	[1163]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	195	[1165]	CLOSURE  	2 52	; 000002375DA02D90
+	196	[1163]	SETTABLE 	1 -88 2	; "SetProConfig" -
+	197	[1167]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	198	[1169]	CLOSURE  	2 53	; 000002375DA03710
+	199	[1167]	SETTABLE 	1 -89 2	; "SetLessScoreRound" -
+	200	[1171]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	201	[1173]	CLOSURE  	2 54	; 000002375DA03810
+	202	[1171]	SETTABLE 	1 -90 2	; "GetLessScoreRound" -
+	203	[1175]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	204	[1183]	CLOSURE  	2 55	; 000002375DA03D90
+	205	[1175]	SETTABLE 	1 -91 2	; "TrySetProEndTime" -
+	206	[1185]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	207	[1187]	CLOSURE  	2 56	; 000002375DA02290
+	208	[1185]	SETTABLE 	1 -92 2	; "GetProEndTime" -
+	209	[1189]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	210	[1191]	CLOSURE  	2 57	; 000002375DA02A10
+	211	[1189]	SETTABLE 	1 -93 2	; "RemoveProEndTime" -
+	212	[1193]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	213	[1195]	CLOSURE  	2 58	; 000002375DA02B90
+	214	[1193]	SETTABLE 	1 -94 2	; "SetTutorialGestureNum" -
+	215	[1197]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	216	[1199]	CLOSURE  	2 59	; 000002375DA03990
+	217	[1197]	SETTABLE 	1 -95 2	; "GetTutorialGestureNum" -
+	218	[1202]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	219	[1207]	CLOSURE  	2 60	; 000002375DA03190
+	220	[1202]	SETTABLE 	1 -96 2	; "IsProStart" -
+	221	[1210]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	222	[1212]	CLOSURE  	2 61	; 000002375DA03B90
+	223	[1210]	SETTABLE 	1 -97 2	; "IsProConfigOpen" -
+	224	[1214]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	225	[1216]	CLOSURE  	2 62	; 000002375DA02490
+	226	[1214]	SETTABLE 	1 -98 2	; "SetCountdownTipPop" -
+	227	[1218]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	228	[1220]	CLOSURE  	2 63	; 000002375DA03D10
+	229	[1218]	SETTABLE 	1 -99 2	; "CanPopCountdownTip" -
+	230	[1222]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	231	[1224]	CLOSURE  	2 64	; 000002375DA03290
+	232	[1222]	SETTABLE 	1 -100 2	; "GetLastTime" -
+	233	[1226]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	234	[1228]	CLOSURE  	2 65	; 000002375DA03E10
+	235	[1226]	SETTABLE 	1 -101 2	; "CanRefreshEntry" -
+	236	[1231]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	237	[1243]	CLOSURE  	2 66	; 000002375DA03E90
+	238	[1231]	SETTABLE 	1 -102 2	; "CanPopOrderBoostProWindow" -
+	239	[1245]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	240	[1247]	CLOSURE  	2 67	; 000002375DA03F10
+	241	[1245]	SETTABLE 	1 -103 2	; "PopOrderBoostProWindow" -
+	242	[1249]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	243	[1251]	CLOSURE  	2 68	; 000002375DA02B10
+	244	[1249]	SETTABLE 	1 -104 2	; "IsProReward" -
+	245	[1253]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	246	[1256]	CLOSURE  	2 69	; 000002375DA02E10
+	247	[1253]	SETTABLE 	1 -105 2	; "IsCannonRewardOpen" -
+	248	[1259]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	249	[1275]	CLOSURE  	2 70	; 000002375DA02E90
+	250	[1259]	SETTABLE 	1 -106 2	; "TestFinishCurRound" -
+	251	[1277]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	252	[1303]	CLOSURE  	2 71	; 000002375DA02C10
+	253	[1277]	SETTABLE 	1 -107 2	; "TestForceToPro" -
+	254	[1305]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	255	[1313]	CLOSURE  	2 72	; 000002375DA03F90
+	256	[1305]	SETTABLE 	1 -108 2	; "TestForceProClose" -
+	257	[1315]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	258	[1317]	CLOSURE  	2 73	; 000002375DA04010
+	259	[1315]	SETTABLE 	1 -109 2	; "SetShownCannonProgress" -
+	260	[1319]	GETTABUP 	1 0 -8	; _ENV "OrderBoostModel"
+	261	[1321]	CLOSURE  	2 74	; 000002375DA02510
+	262	[1319]	SETTABLE 	1 -110 2	; "GetShownCannonProgress" -
+	263	[1321]	RETURN   	0 1
+constants (110) for 000002375D9EEFD0:
+	1	"EOrderBoostType"
+	2	"Normal"
+	3	0
+	4	"Super"
+	5	1
+	6	"FailedSuper"
+	7	2
+	8	"OrderBoostModel"
+	9	"setmetatable"
+	10	"BaseActivityModel"
+	11	"__index"
+	12	"CurConfigs"
+	13	"CurLevelRewardConfig"
+	14	"CurInfo"
+	15	"FinishSmile"
+	16	"FirstPopup"
+	17	"FirstHint"
+	18	"BubbleHint"
+	19	"LastBubbleHintTime"
+	20	"LastBubbleHint"
+	21	"FinishedNormalCount"
+	22	"IsProConfig"
+	23	"CurLogicType"
+	24	"LastLogicType"
+	25	"ProEndTime"
+	26	"PopCountdownTip"
+	27	"ProTrigNum"
+	28	"FirstProPopup"
+	29	"LessScoreRound"
+	30	"TutorialGestureNum"
+	31	"CannonBoosterRound"
+	32	"CannonBoosterIsOpen"
+	33	"CannonBoosterShownRound"
+	34	"CannonBoosterRewardTimes"
+	35	"SavedIncludeConfig"
+	36	"Init"
+	37	"LoadLocalConfig"
+	38	"SaveMetaData"
+	39	"_OnStateChanged"
+	40	"_DropData"
+	41	"_OnGameModeChanged"
+	42	"OnOrderFinished"
+	43	"AcquireSmileLogic"
+	44	"OnFinishRoundSmile"
+	45	"IntelligentGenerateSmileItem"
+	46	"ClassicGenerateSmileItem"
+	47	"TryGenerateSmileItem"
+	48	"FindPositionForItems"
+	49	"TryGenerateCannonRewardItem"
+	50	"RandomChooseUnlockItems"
+	51	"MakeUpTestInfos"
+	52	"RewardStockCountOn"
+	53	"CanSendSmile"
+	54	"GetCurScore"
+	55	"GetMaxScore"
+	56	"GetFinishRound"
+	57	"LoadProServerConfig"
+	58	"LoadServerConfig"
+	59	"NewRoundUseNewConfig"
+	60	"_LoadOtherServerConfig"
+	61	"LateInit"
+	62	"SetCannonStart"
+	63	"TryCreateNewSmile"
+	64	"GetAddOrderBoostScoreByOrder"
+	65	"SmileCompleted"
+	66	"GetAddSmileScoreBySlot"
+	67	"CanPopOrderBoostWindow"
+	68	"PopOrderBoostWindow"
+	69	"IsFirstOpenWindow"
+	70	"GetFirstHint"
+	71	"SetFirstHint"
+	72	"ClearFirstHint"
+	73	"CanPopBubble"
+	74	"PopBubble"
+	75	"UpdatePerSecond"
+	76	"ChangeProToOtherType"
+	77	"GetCurInfo"
+	78	"GetOrderEntryCanHint"
+	79	"GetResourceLabels"
+	80	"GetUIType"
+	81	"GetLogicType"
+	82	"GetLastLogicType"
+	83	"GetFinishedNormalCount"
+	84	"SetFinishedNormalCount"
+	85	"GetFinishedRoundWhenCannonOpen"
+	86	"SetFinishedRoundWhenCannonOpen"
+	87	"IsProConfig"
+	88	"SetProConfig"
+	89	"SetLessScoreRound"
+	90	"GetLessScoreRound"
+	91	"TrySetProEndTime"
+	92	"GetProEndTime"
+	93	"RemoveProEndTime"
+	94	"SetTutorialGestureNum"
+	95	"GetTutorialGestureNum"
+	96	"IsProStart"
+	97	"IsProConfigOpen"
+	98	"SetCountdownTipPop"
+	99	"CanPopCountdownTip"
+	100	"GetLastTime"
+	101	"CanRefreshEntry"
+	102	"CanPopOrderBoostProWindow"
+	103	"PopOrderBoostProWindow"
+	104	"IsProReward"
+	105	"IsCannonRewardOpen"
+	106	"TestFinishCurRound"
+	107	"TestForceToPro"
+	108	"TestForceProClose"
+	109	"SetShownCannonProgress"
+	110	"GetShownCannonProgress"
+locals (1) for 000002375D9EEFD0:
+	0	strDBKeys	38	264
+upvalues (1) for 000002375D9EEFD0:
+	0	_ENV	1	0
+
+function <OrderBoostModel.lua:109,115> (17 instructions at 000002375D9EF050)
+2 params, 6 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[110]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[110]	GETTABLE 	2 2 -2	; "Init"
+	3	[110]	MOVE     	3 0
+	4	[110]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[110]	GETTABLE 	4 4 -4	; "OrderBoost"
+	6	[110]	MOVE     	5 1
+	7	[110]	CALL     	2 4 1
+	8	[111]	SELF     	2 0 -5	; "LoadLocalConfig"
+	9	[111]	CALL     	2 2 1
+	10	[114]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	11	[114]	GETTABLE 	2 2 -7	; "AddListener"
+	12	[114]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	13	[114]	GETTABLE 	3 3 -9	; "ChangeGameMode"
+	14	[114]	MOVE     	4 0
+	15	[114]	GETTABLE 	5 0 -10	; "_OnGameModeChanged"
+	16	[114]	CALL     	2 4 1
+	17	[115]	RETURN   	0 1
+constants (10) for 000002375D9EF050:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"OrderBoost"
+	5	"LoadLocalConfig"
+	6	"EventDispatcher"
+	7	"AddListener"
+	8	"EEventType"
+	9	"ChangeGameMode"
+	10	"_OnGameModeChanged"
+locals (2) for 000002375D9EF050:
+	0	self	1	18
+	1	dbtable	1	18
+upvalues (1) for 000002375D9EF050:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:118,133> (80 instructions at 000002375D9EED50)
+1 param, 6 slots, 2 upvalues, 1 local, 20 constants, 0 functions
+	1	[120]	GETTABUP 	1 0 -2	; _ENV "json"
+	2	[120]	GETTABLE 	1 1 -3	; "decode"
+	3	[120]	GETTABLE 	2 0 -4	; "m_dbTable"
+	4	[120]	SELF     	2 2 -5	; "GetValue"
+	5	[120]	GETTABUP 	4 1 -6	; strDBKeys "CurConfigs"
+	6	[120]	LOADK    	5 -7	; "value"
+	7	[120]	CALL     	2 4 2
+	8	[120]	TEST     	2 1
+	9	[120]	JMP      	0 1	; to 11
+	10	[120]	LOADK    	2 -8	; ""
+	11	[120]	CALL     	1 2 2
+	12	[120]	TEST     	1 1
+	13	[120]	JMP      	0 1	; to 15
+	14	[120]	NEWTABLE 	1 0 0
+	15	[120]	SETTABLE 	0 -1 1	; "m_curOrderConfigs" -
+	16	[122]	GETTABUP 	1 0 -2	; _ENV "json"
+	17	[122]	GETTABLE 	1 1 -3	; "decode"
+	18	[122]	GETTABLE 	2 0 -4	; "m_dbTable"
+	19	[122]	SELF     	2 2 -5	; "GetValue"
+	20	[122]	GETTABUP 	4 1 -10	; strDBKeys "CurLevelRewardConfig"
+	21	[122]	LOADK    	5 -7	; "value"
+	22	[122]	CALL     	2 4 2
+	23	[122]	TEST     	2 1
+	24	[122]	JMP      	0 1	; to 26
+	25	[122]	LOADK    	2 -8	; ""
+	26	[122]	CALL     	1 2 2
+	27	[122]	TEST     	1 1
+	28	[122]	JMP      	0 1	; to 30
+	29	[122]	NEWTABLE 	1 0 0
+	30	[122]	SETTABLE 	0 -9 1	; "m_rewardConfig" -
+	31	[124]	GETTABUP 	1 0 -2	; _ENV "json"
+	32	[124]	GETTABLE 	1 1 -3	; "decode"
+	33	[124]	GETTABLE 	2 0 -4	; "m_dbTable"
+	34	[124]	SELF     	2 2 -5	; "GetValue"
+	35	[124]	GETTABUP 	4 1 -12	; strDBKeys "CurInfo"
+	36	[124]	LOADK    	5 -7	; "value"
+	37	[124]	CALL     	2 4 2
+	38	[124]	TEST     	2 1
+	39	[124]	JMP      	0 1	; to 41
+	40	[124]	LOADK    	2 -8	; ""
+	41	[124]	CALL     	1 2 2
+	42	[124]	TEST     	1 1
+	43	[124]	JMP      	0 1	; to 45
+	44	[124]	LOADNIL  	1 0
+	45	[124]	SETTABLE 	0 -11 1	; "m_curInfo" -
+	46	[126]	GETTABUP 	1 0 -14	; _ENV "tonumber"
+	47	[126]	GETTABLE 	2 0 -4	; "m_dbTable"
+	48	[126]	SELF     	2 2 -5	; "GetValue"
+	49	[126]	GETTABUP 	4 1 -15	; strDBKeys "FinishSmile"
+	50	[126]	LOADK    	5 -7	; "value"
+	51	[126]	CALL     	2 4 2
+	52	[126]	TEST     	2 1
+	53	[126]	JMP      	0 1	; to 55
+	54	[126]	LOADK    	2 -16	; 0
+	55	[126]	CALL     	1 2 2
+	56	[126]	TEST     	1 1
+	57	[126]	JMP      	0 1	; to 59
+	58	[126]	LOADK    	1 -16	; 0
+	59	[126]	SETTABLE 	0 -13 1	; "m_FinishSmile" -
+	60	[129]	GETTABUP 	1 0 -14	; _ENV "tonumber"
+	61	[129]	GETTABLE 	2 0 -4	; "m_dbTable"
+	62	[129]	SELF     	2 2 -5	; "GetValue"
+	63	[129]	GETTABUP 	4 1 -18	; strDBKeys "BubbleHint"
+	64	[129]	LOADK    	5 -7	; "value"
+	65	[129]	CALL     	2 4 2
+	66	[129]	TEST     	2 1
+	67	[129]	JMP      	0 1	; to 69
+	68	[129]	LOADK    	2 -16	; 0
+	69	[129]	CALL     	1 2 2
+	70	[129]	SETTABLE 	0 -17 1	; "m_BubbleHint" -
+	71	[132]	GETTABLE 	1 0 -4	; "m_dbTable"
+	72	[132]	SELF     	1 1 -5	; "GetValue"
+	73	[132]	GETTABUP 	3 1 -20	; strDBKeys "ProTrigNum"
+	74	[132]	LOADK    	4 -7	; "value"
+	75	[132]	CALL     	1 4 2
+	76	[132]	TEST     	1 1
+	77	[132]	JMP      	0 1	; to 79
+	78	[132]	LOADNIL  	1 0
+	79	[132]	SETTABLE 	0 -19 1	; "m_proTrigNum" -
+	80	[133]	RETURN   	0 1
+constants (20) for 000002375D9EED50:
+	1	"m_curOrderConfigs"
+	2	"json"
+	3	"decode"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"CurConfigs"
+	7	"value"
+	8	""
+	9	"m_rewardConfig"
+	10	"CurLevelRewardConfig"
+	11	"m_curInfo"
+	12	"CurInfo"
+	13	"m_FinishSmile"
+	14	"tonumber"
+	15	"FinishSmile"
+	16	0
+	17	"m_BubbleHint"
+	18	"BubbleHint"
+	19	"m_proTrigNum"
+	20	"ProTrigNum"
+locals (1) for 000002375D9EED50:
+	0	self	1	81
+upvalues (2) for 000002375D9EED50:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:135,151> (48 instructions at 000002375D9EEDD0)
+1 param, 7 slots, 2 upvalues, 1 local, 15 constants, 0 functions
+	1	[136]	GETTABLE 	1 0 -1	; "m_curOrderConfigs"
+	2	[136]	EQ       	1 1 -2	; - nil
+	3	[136]	JMP      	0 9	; to 13
+	4	[137]	GETTABLE 	1 0 -3	; "m_dbTable"
+	5	[137]	SELF     	1 1 -4	; "Set"
+	6	[137]	GETTABUP 	3 0 -5	; strDBKeys "CurConfigs"
+	7	[137]	LOADK    	4 -6	; "value"
+	8	[137]	GETTABUP 	5 1 -7	; _ENV "json"
+	9	[137]	GETTABLE 	5 5 -8	; "encode"
+	10	[137]	GETTABLE 	6 0 -1	; "m_curOrderConfigs"
+	11	[137]	CALL     	5 2 0
+	12	[137]	CALL     	1 0 1
+	13	[140]	GETTABLE 	1 0 -9	; "m_rewardConfig"
+	14	[140]	EQ       	1 1 -2	; - nil
+	15	[140]	JMP      	0 9	; to 25
+	16	[141]	GETTABLE 	1 0 -3	; "m_dbTable"
+	17	[141]	SELF     	1 1 -4	; "Set"
+	18	[141]	GETTABUP 	3 0 -10	; strDBKeys "CurLevelRewardConfig"
+	19	[141]	LOADK    	4 -6	; "value"
+	20	[141]	GETTABUP 	5 1 -7	; _ENV "json"
+	21	[141]	GETTABLE 	5 5 -8	; "encode"
+	22	[141]	GETTABLE 	6 0 -9	; "m_rewardConfig"
+	23	[141]	CALL     	5 2 0
+	24	[141]	CALL     	1 0 1
+	25	[144]	GETTABLE 	1 0 -11	; "m_curInfo"
+	26	[144]	EQ       	1 1 -2	; - nil
+	27	[144]	JMP      	0 9	; to 37
+	28	[145]	GETTABLE 	1 0 -3	; "m_dbTable"
+	29	[145]	SELF     	1 1 -4	; "Set"
+	30	[145]	GETTABUP 	3 0 -12	; strDBKeys "CurInfo"
+	31	[145]	LOADK    	4 -6	; "value"
+	32	[145]	GETTABUP 	5 1 -7	; _ENV "json"
+	33	[145]	GETTABLE 	5 5 -8	; "encode"
+	34	[145]	GETTABLE 	6 0 -11	; "m_curInfo"
+	35	[145]	CALL     	5 2 0
+	36	[145]	CALL     	1 0 1
+	37	[148]	GETTABLE 	1 0 -13	; "m_FinishSmile"
+	38	[148]	EQ       	1 1 -2	; - nil
+	39	[148]	JMP      	0 8	; to 48
+	40	[149]	GETTABLE 	1 0 -3	; "m_dbTable"
+	41	[149]	SELF     	1 1 -4	; "Set"
+	42	[149]	GETTABUP 	3 0 -14	; strDBKeys "FinishSmile"
+	43	[149]	LOADK    	4 -6	; "value"
+	44	[149]	GETTABUP 	5 1 -15	; _ENV "tostring"
+	45	[149]	GETTABLE 	6 0 -13	; "m_FinishSmile"
+	46	[149]	CALL     	5 2 0
+	47	[149]	CALL     	1 0 1
+	48	[151]	RETURN   	0 1
+constants (15) for 000002375D9EEDD0:
+	1	"m_curOrderConfigs"
+	2	nil
+	3	"m_dbTable"
+	4	"Set"
+	5	"CurConfigs"
+	6	"value"
+	7	"json"
+	8	"encode"
+	9	"m_rewardConfig"
+	10	"CurLevelRewardConfig"
+	11	"m_curInfo"
+	12	"CurInfo"
+	13	"m_FinishSmile"
+	14	"FinishSmile"
+	15	"tostring"
+locals (1) for 000002375D9EEDD0:
+	0	self	1	49
+upvalues (2) for 000002375D9EEDD0:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:154,164> (29 instructions at 000002375D9F3FA0)
+1 param, 3 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[155]	SELF     	1 0 -1	; "GetState"
+	2	[155]	CALL     	1 2 2
+	3	[155]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[155]	GETTABLE 	2 2 -3	; "Started"
+	5	[155]	EQ       	0 1 2
+	6	[155]	JMP      	0 5	; to 12
+	7	[155]	GETTABLE 	1 0 -4	; "m_bLateInited"
+	8	[155]	TEST     	1 0
+	9	[155]	JMP      	0 2	; to 12
+	10	[156]	SELF     	1 0 -5	; "TryCreateNewSmile"
+	11	[156]	CALL     	1 2 1
+	12	[158]	GETTABUP 	1 0 -6	; _ENV "EventDispatcher"
+	13	[158]	GETTABLE 	1 1 -7	; "DispatchEvent"
+	14	[158]	GETTABUP 	2 0 -8	; _ENV "EEventType"
+	15	[158]	GETTABLE 	2 2 -9	; "OrderBoostStateChanged"
+	16	[158]	CALL     	1 2 1
+	17	[159]	GETTABUP 	1 0 -6	; _ENV "EventDispatcher"
+	18	[159]	GETTABLE 	1 1 -7	; "DispatchEvent"
+	19	[159]	GETTABUP 	2 0 -8	; _ENV "EEventType"
+	20	[159]	GETTABLE 	2 2 -10	; "OrderStatusChanged"
+	21	[159]	CALL     	1 2 1
+	22	[161]	GETTABLE 	1 0 -4	; "m_bLateInited"
+	23	[161]	TEST     	1 0
+	24	[161]	JMP      	0 4	; to 29
+	25	[162]	GETTABUP 	1 0 -11	; _ENV "GM"
+	26	[162]	GETTABLE 	1 1 -12	; "MainBoardModel"
+	27	[162]	SELF     	1 1 -13	; "UpdateOrderState"
+	28	[162]	CALL     	1 2 1
+	29	[164]	RETURN   	0 1
+constants (13) for 000002375D9F3FA0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_bLateInited"
+	5	"TryCreateNewSmile"
+	6	"EventDispatcher"
+	7	"DispatchEvent"
+	8	"EEventType"
+	9	"OrderBoostStateChanged"
+	10	"OrderStatusChanged"
+	11	"GM"
+	12	"MainBoardModel"
+	13	"UpdateOrderState"
+locals (1) for 000002375D9F3FA0:
+	0	self	1	30
+upvalues (1) for 000002375D9F3FA0:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:167,176> (17 instructions at 000002375D9F4200)
+1 param, 3 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[168]	NEWTABLE 	1 0 0
+	2	[168]	SETTABLE 	0 -1 1	; "m_curOrderConfigs" -
+	3	[169]	NEWTABLE 	1 0 0
+	4	[169]	SETTABLE 	0 -2 1	; "m_rewardConfig" -
+	5	[170]	SETTABLE 	0 -3 -4	; "m_curInfo" nil
+	6	[171]	SETTABLE 	0 -5 -6	; "m_FinishSmile" 0
+	7	[172]	SETTABLE 	0 -7 -4	; "m_proTrigNum" nil
+	8	[174]	GETTABUP 	1 0 -8	; _ENV "BaseActivityModel"
+	9	[174]	GETTABLE 	1 1 -9	; "_DropData"
+	10	[174]	MOVE     	2 0
+	11	[174]	CALL     	1 2 1
+	12	[175]	GETTABUP 	1 0 -10	; _ENV "EventDispatcher"
+	13	[175]	GETTABLE 	1 1 -11	; "DispatchEvent"
+	14	[175]	GETTABUP 	2 0 -12	; _ENV "EEventType"
+	15	[175]	GETTABLE 	2 2 -13	; "OrderStatusChanged"
+	16	[175]	CALL     	1 2 1
+	17	[176]	RETURN   	0 1
+constants (13) for 000002375D9F4200:
+	1	"m_curOrderConfigs"
+	2	"m_rewardConfig"
+	3	"m_curInfo"
+	4	nil
+	5	"m_FinishSmile"
+	6	0
+	7	"m_proTrigNum"
+	8	"BaseActivityModel"
+	9	"_DropData"
+	10	"EventDispatcher"
+	11	"DispatchEvent"
+	12	"EEventType"
+	13	"OrderStatusChanged"
+locals (1) for 000002375D9F4200:
+	0	self	1	18
+upvalues (1) for 000002375D9F4200:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:178,186> (16 instructions at 000002375D9F4360)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[179]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[179]	GETTABLE 	1 1 -2	; "SceneManager"
+	3	[179]	SELF     	1 1 -3	; "GetGameMode"
+	4	[179]	CALL     	1 2 2
+	5	[179]	GETTABUP 	2 0 -4	; _ENV "EGameMode"
+	6	[179]	GETTABLE 	2 2 -5	; "Main"
+	7	[179]	EQ       	1 1 2
+	8	[179]	JMP      	0 1	; to 10
+	9	[180]	RETURN   	0 1
+	10	[183]	SELF     	1 0 -6	; "CanPopOrderBoostProWindow"
+	11	[183]	CALL     	1 2 2
+	12	[183]	TEST     	1 1
+	13	[183]	JMP      	0 2	; to 16
+	14	[184]	SELF     	1 0 -7	; "TrySetProEndTime"
+	15	[184]	CALL     	1 2 1
+	16	[186]	RETURN   	0 1
+constants (7) for 000002375D9F4360:
+	1	"GM"
+	2	"SceneManager"
+	3	"GetGameMode"
+	4	"EGameMode"
+	5	"Main"
+	6	"CanPopOrderBoostProWindow"
+	7	"TrySetProEndTime"
+locals (1) for 000002375D9F4360:
+	0	self	1	17
+upvalues (1) for 000002375D9F4360:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:189,230> (135 instructions at 000002375D9F4460)
+2 params, 11 slots, 1 upvalue, 7 locals, 55 constants, 0 functions
+	1	[190]	SELF     	2 0 -1	; "GetState"
+	2	[190]	CALL     	2 2 2
+	3	[190]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	4	[190]	GETTABLE 	3 3 -3	; "Started"
+	5	[190]	EQ       	0 2 3
+	6	[190]	JMP      	0 6	; to 13
+	7	[190]	SELF     	2 1 -4	; "GetGameMode"
+	8	[190]	CALL     	2 2 2
+	9	[190]	GETTABUP 	3 0 -5	; _ENV "EGameMode"
+	10	[190]	GETTABLE 	3 3 -6	; "Main"
+	11	[190]	EQ       	1 2 3
+	12	[190]	JMP      	0 1	; to 14
+	13	[191]	RETURN   	0 1
+	14	[194]	SELF     	2 0 -7	; "GetAddOrderBoostScoreByOrder"
+	15	[194]	MOVE     	4 1
+	16	[194]	CALL     	2 3 2
+	17	[194]	LT       	0 -8 2	; 0 -
+	18	[194]	JMP      	0 116	; to 135
+	19	[195]	SELF     	2 0 -7	; "GetAddOrderBoostScoreByOrder"
+	20	[195]	MOVE     	4 1
+	21	[195]	CALL     	2 3 2
+	22	[197]	GETTABLE 	3 0 -9	; "m_curInfo"
+	23	[197]	GETTABUP 	4 0 -11	; _ENV "math"
+	24	[197]	GETTABLE 	4 4 -12	; "min"
+	25	[197]	GETTABLE 	5 0 -9	; "m_curInfo"
+	26	[197]	GETTABLE 	5 5 -10	; "curScore"
+	27	[197]	ADD      	5 5 2
+	28	[197]	GETTABLE 	6 0 -9	; "m_curInfo"
+	29	[197]	GETTABLE 	6 6 -13	; "MaxScore"
+	30	[197]	CALL     	4 3 2
+	31	[197]	SETTABLE 	3 -10 4	; "curScore" -
+	32	[199]	GETTABUP 	3 0 -14	; _ENV "tostring"
+	33	[199]	SELF     	4 1 -15	; "GetSlot"
+	34	[199]	CALL     	4 2 0
+	35	[199]	CALL     	3 0 2
+	36	[200]	GETTABLE 	4 0 -9	; "m_curInfo"
+	37	[200]	GETTABLE 	4 4 -16	; "orderFinishInfo"
+	38	[200]	GETTABLE 	4 4 3
+	39	[200]	EQ       	0 4 -17	; - nil
+	40	[200]	JMP      	0 3	; to 44
+	41	[201]	GETTABLE 	4 0 -9	; "m_curInfo"
+	42	[201]	GETTABLE 	4 4 -16	; "orderFinishInfo"
+	43	[201]	SETTABLE 	4 3 -8	; - 0
+	44	[204]	SELF     	4 0 -18	; "LogActivity"
+	45	[204]	GETTABUP 	6 0 -19	; _ENV "EBIType"
+	46	[204]	GETTABLE 	6 6 -20	; "ActivityAddScore"
+	47	[204]	MOVE     	7 2
+	48	[204]	CALL     	4 4 1
+	49	[205]	GETTABLE 	4 0 -9	; "m_curInfo"
+	50	[205]	GETTABLE 	4 4 -16	; "orderFinishInfo"
+	51	[205]	GETTABLE 	5 0 -9	; "m_curInfo"
+	52	[205]	GETTABLE 	5 5 -16	; "orderFinishInfo"
+	53	[205]	GETTABLE 	5 5 3
+	54	[205]	ADD      	5 5 -21	; - 1
+	55	[205]	SETTABLE 	4 3 5
+	56	[207]	GETTABLE 	4 0 -9	; "m_curInfo"
+	57	[207]	GETTABLE 	4 4 -10	; "curScore"
+	58	[207]	GETTABLE 	5 0 -9	; "m_curInfo"
+	59	[207]	GETTABLE 	5 5 -13	; "MaxScore"
+	60	[207]	LE       	0 5 4
+	61	[207]	JMP      	0 40	; to 102
+	62	[208]	SELF     	4 0 -18	; "LogActivity"
+	63	[208]	GETTABUP 	6 0 -19	; _ENV "EBIType"
+	64	[208]	GETTABLE 	6 6 -22	; "ActivityRankUp"
+	65	[208]	GETTABLE 	7 0 -23	; "m_FinishSmile"
+	66	[208]	ADD      	7 7 -21	; - 1
+	67	[208]	CALL     	4 4 1
+	68	[209]	SELF     	4 0 -24	; "GetLogicType"
+	69	[209]	CALL     	4 2 2
+	70	[209]	GETTABUP 	5 0 -25	; _ENV "EOrderBoostType"
+	71	[209]	GETTABLE 	5 5 -26	; "Super"
+	72	[209]	EQ       	0 4 5
+	73	[209]	JMP      	0 18	; to 92
+	74	[210]	GETTABUP 	4 0 -27	; _ENV "GM"
+	75	[210]	GETTABLE 	4 4 -28	; "BIManager"
+	76	[210]	SELF     	4 4 -29	; "LogAction"
+	77	[210]	GETTABUP 	6 0 -19	; _ENV "EBIType"
+	78	[210]	GETTABLE 	6 6 -30	; "OrderBoostProFinish"
+	79	[210]	NEWTABLE 	7 0 2
+	80	[210]	SELF     	8 0 -32	; "GetProEndTime"
+	81	[210]	CALL     	8 2 2
+	82	[210]	GETTABUP 	9 0 -27	; _ENV "GM"
+	83	[210]	GETTABLE 	9 9 -33	; "GameModel"
+	84	[210]	SELF     	9 9 -34	; "GetServerTime"
+	85	[210]	CALL     	9 2 2
+	86	[210]	SUB      	8 8 9
+	87	[210]	SETTABLE 	7 -31 8	; "t" -
+	88	[210]	GETTABLE 	8 0 -23	; "m_FinishSmile"
+	89	[210]	ADD      	8 8 -21	; - 1
+	90	[210]	SETTABLE 	7 -35 8	; "r" -
+	91	[210]	CALL     	4 4 1
+	92	[214]	GETTABUP 	4 0 -27	; _ENV "GM"
+	93	[214]	GETTABLE 	4 4 -36	; "ActivityManager"
+	94	[214]	SELF     	4 4 -37	; "GetModel"
+	95	[214]	GETTABUP 	6 0 -38	; _ENV "ActivityType"
+	96	[214]	GETTABLE 	6 6 -39	; "ReviewRace"
+	97	[214]	CALL     	4 3 2
+	98	[215]	TEST     	4 0
+	99	[215]	JMP      	0 2	; to 102
+	100	[216]	SELF     	5 4 -40	; "FinishRace"
+	101	[216]	CALL     	5 2 1
+	102	[220]	GETTABUP 	4 0 -41	; _ENV "MainBoardView"
+	103	[220]	GETTABLE 	4 4 -42	; "GetInstance"
+	104	[220]	CALL     	4 1 2
+	105	[220]	SELF     	4 4 -43	; "GetOrderArea"
+	106	[220]	CALL     	4 2 2
+	107	[220]	SELF     	4 4 -44	; "GetCell"
+	108	[220]	MOVE     	6 1
+	109	[220]	CALL     	4 3 2
+	110	[221]	EQ       	1 4 -17	; - nil
+	111	[221]	JMP      	0 15	; to 127
+	112	[222]	SELF     	5 4 -45	; "GetOrderSmileRewardBox"
+	113	[222]	CALL     	5 2 2
+	114	[223]	TEST     	5 0
+	115	[223]	JMP      	0 11	; to 127
+	116	[223]	GETTABLE 	6 5 -46	; "gameObject"
+	117	[223]	SELF     	6 6 -47	; "IsNull"
+	118	[223]	CALL     	6 2 2
+	119	[223]	TEST     	6 1
+	120	[223]	JMP      	0 6	; to 127
+	121	[224]	GETTABUP 	6 0 -48	; _ENV "OrderBoostAnimationManager"
+	122	[224]	GETTABLE 	6 6 -49	; "PlayFlySmileAnimation"
+	123	[224]	SELF     	7 5 -50	; "GetSmileTrans"
+	124	[224]	CALL     	7 2 2
+	125	[224]	MOVE     	8 2
+	126	[224]	CALL     	6 3 1
+	127	[227]	SELF     	5 0 -51	; "SaveMetaData"
+	128	[227]	CALL     	5 2 1
+	129	[228]	GETTABUP 	5 0 -52	; _ENV "EventDispatcher"
+	130	[228]	GETTABLE 	5 5 -53	; "DispatchEvent"
+	131	[228]	GETTABUP 	6 0 -54	; _ENV "EEventType"
+	132	[228]	GETTABLE 	6 6 -55	; "OrderBoostSmileAddScore"
+	133	[228]	MOVE     	7 2
+	134	[228]	CALL     	5 3 1
+	135	[230]	RETURN   	0 1
+constants (55) for 000002375D9F4460:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetGameMode"
+	5	"EGameMode"
+	6	"Main"
+	7	"GetAddOrderBoostScoreByOrder"
+	8	0
+	9	"m_curInfo"
+	10	"curScore"
+	11	"math"
+	12	"min"
+	13	"MaxScore"
+	14	"tostring"
+	15	"GetSlot"
+	16	"orderFinishInfo"
+	17	nil
+	18	"LogActivity"
+	19	"EBIType"
+	20	"ActivityAddScore"
+	21	1
+	22	"ActivityRankUp"
+	23	"m_FinishSmile"
+	24	"GetLogicType"
+	25	"EOrderBoostType"
+	26	"Super"
+	27	"GM"
+	28	"BIManager"
+	29	"LogAction"
+	30	"OrderBoostProFinish"
+	31	"t"
+	32	"GetProEndTime"
+	33	"GameModel"
+	34	"GetServerTime"
+	35	"r"
+	36	"ActivityManager"
+	37	"GetModel"
+	38	"ActivityType"
+	39	"ReviewRace"
+	40	"FinishRace"
+	41	"MainBoardView"
+	42	"GetInstance"
+	43	"GetOrderArea"
+	44	"GetCell"
+	45	"GetOrderSmileRewardBox"
+	46	"gameObject"
+	47	"IsNull"
+	48	"OrderBoostAnimationManager"
+	49	"PlayFlySmileAnimation"
+	50	"GetSmileTrans"
+	51	"SaveMetaData"
+	52	"EventDispatcher"
+	53	"DispatchEvent"
+	54	"EEventType"
+	55	"OrderBoostSmileAddScore"
+locals (7) for 000002375D9F4460:
+	0	self	1	136
+	1	order	1	136
+	2	addScore	22	135
+	3	strSlot	36	135
+	4	reviewRaceModel	98	102
+	5	orderCell	110	135
+	6	rewardBox	114	127
+upvalues (1) for 000002375D9F4460:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:233,258> (77 instructions at 000002375D9F5550)
+2 params, 9 slots, 1 upvalue, 3 locals, 36 constants, 0 functions
+	1	[234]	SELF     	2 0 -1	; "GetState"
+	2	[234]	CALL     	2 2 2
+	3	[234]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	4	[234]	GETTABLE 	3 3 -3	; "Started"
+	5	[234]	EQ       	1 2 3
+	6	[234]	JMP      	0 1	; to 8
+	7	[235]	RETURN   	0 1
+	8	[239]	GETTABLE 	2 0 -4	; "m_curInfo"
+	9	[239]	GETTABUP 	3 0 -6	; _ENV "math"
+	10	[239]	GETTABLE 	3 3 -7	; "min"
+	11	[239]	GETTABLE 	4 0 -4	; "m_curInfo"
+	12	[239]	GETTABLE 	4 4 -5	; "curScore"
+	13	[239]	ADD      	4 4 1
+	14	[239]	GETTABLE 	5 0 -4	; "m_curInfo"
+	15	[239]	GETTABLE 	5 5 -8	; "MaxScore"
+	16	[239]	CALL     	3 3 2
+	17	[239]	SETTABLE 	2 -5 3	; "curScore" -
+	18	[241]	SELF     	2 0 -9	; "LogActivity"
+	19	[241]	GETTABUP 	4 0 -10	; _ENV "EBIType"
+	20	[241]	GETTABLE 	4 4 -11	; "ActivityAddScore"
+	21	[241]	MOVE     	5 1
+	22	[241]	CALL     	2 4 1
+	23	[243]	GETTABLE 	2 0 -4	; "m_curInfo"
+	24	[243]	GETTABLE 	2 2 -5	; "curScore"
+	25	[243]	GETTABLE 	3 0 -4	; "m_curInfo"
+	26	[243]	GETTABLE 	3 3 -8	; "MaxScore"
+	27	[243]	LE       	0 3 2
+	28	[243]	JMP      	0 40	; to 69
+	29	[244]	SELF     	2 0 -9	; "LogActivity"
+	30	[244]	GETTABUP 	4 0 -10	; _ENV "EBIType"
+	31	[244]	GETTABLE 	4 4 -12	; "ActivityRankUp"
+	32	[244]	GETTABLE 	5 0 -13	; "m_FinishSmile"
+	33	[244]	ADD      	5 5 -14	; - 1
+	34	[244]	CALL     	2 4 1
+	35	[245]	SELF     	2 0 -15	; "GetLogicType"
+	36	[245]	CALL     	2 2 2
+	37	[245]	GETTABUP 	3 0 -16	; _ENV "EOrderBoostType"
+	38	[245]	GETTABLE 	3 3 -17	; "Super"
+	39	[245]	EQ       	0 2 3
+	40	[245]	JMP      	0 18	; to 59
+	41	[246]	GETTABUP 	2 0 -18	; _ENV "GM"
+	42	[246]	GETTABLE 	2 2 -19	; "BIManager"
+	43	[246]	SELF     	2 2 -20	; "LogAction"
+	44	[246]	GETTABUP 	4 0 -10	; _ENV "EBIType"
+	45	[246]	GETTABLE 	4 4 -21	; "OrderBoostProFinish"
+	46	[246]	NEWTABLE 	5 0 2
+	47	[246]	SELF     	6 0 -23	; "GetProEndTime"
+	48	[246]	CALL     	6 2 2
+	49	[246]	GETTABUP 	7 0 -18	; _ENV "GM"
+	50	[246]	GETTABLE 	7 7 -24	; "GameModel"
+	51	[246]	SELF     	7 7 -25	; "GetServerTime"
+	52	[246]	CALL     	7 2 2
+	53	[246]	SUB      	6 6 7
+	54	[246]	SETTABLE 	5 -22 6	; "t" -
+	55	[246]	GETTABLE 	6 0 -13	; "m_FinishSmile"
+	56	[246]	ADD      	6 6 -14	; - 1
+	57	[246]	SETTABLE 	5 -26 6	; "r" -
+	58	[246]	CALL     	2 4 1
+	59	[250]	GETTABUP 	2 0 -18	; _ENV "GM"
+	60	[250]	GETTABLE 	2 2 -27	; "ActivityManager"
+	61	[250]	SELF     	2 2 -28	; "GetModel"
+	62	[250]	GETTABUP 	4 0 -29	; _ENV "ActivityType"
+	63	[250]	GETTABLE 	4 4 -30	; "ReviewRace"
+	64	[250]	CALL     	2 3 2
+	65	[251]	TEST     	2 0
+	66	[251]	JMP      	0 2	; to 69
+	67	[252]	SELF     	3 2 -31	; "FinishRace"
+	68	[252]	CALL     	3 2 1
+	69	[256]	SELF     	2 0 -32	; "SaveMetaData"
+	70	[256]	CALL     	2 2 1
+	71	[257]	GETTABUP 	2 0 -33	; _ENV "EventDispatcher"
+	72	[257]	GETTABLE 	2 2 -34	; "DispatchEvent"
+	73	[257]	GETTABUP 	3 0 -35	; _ENV "EEventType"
+	74	[257]	GETTABLE 	3 3 -36	; "OrderBoostSmileAddScore"
+	75	[257]	MOVE     	4 1
+	76	[257]	CALL     	2 3 1
+	77	[258]	RETURN   	0 1
+constants (36) for 000002375D9F5550:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_curInfo"
+	5	"curScore"
+	6	"math"
+	7	"min"
+	8	"MaxScore"
+	9	"LogActivity"
+	10	"EBIType"
+	11	"ActivityAddScore"
+	12	"ActivityRankUp"
+	13	"m_FinishSmile"
+	14	1
+	15	"GetLogicType"
+	16	"EOrderBoostType"
+	17	"Super"
+	18	"GM"
+	19	"BIManager"
+	20	"LogAction"
+	21	"OrderBoostProFinish"
+	22	"t"
+	23	"GetProEndTime"
+	24	"GameModel"
+	25	"GetServerTime"
+	26	"r"
+	27	"ActivityManager"
+	28	"GetModel"
+	29	"ActivityType"
+	30	"ReviewRace"
+	31	"FinishRace"
+	32	"SaveMetaData"
+	33	"EventDispatcher"
+	34	"DispatchEvent"
+	35	"EEventType"
+	36	"OrderBoostSmileAddScore"
+locals (3) for 000002375D9F5550:
+	0	self	1	78
+	1	addScore	1	78
+	2	reviewRaceModel	65	69
+upvalues (1) for 000002375D9F5550:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:261,357> (231 instructions at 000002375D9F6070)
+1 param, 14 slots, 2 upvalues, 12 locals, 77 constants, 0 functions
+	1	[262]	SELF     	1 0 -1	; "GetState"
+	2	[262]	CALL     	1 2 2
+	3	[262]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[262]	GETTABLE 	2 2 -3	; "Started"
+	5	[262]	EQ       	1 1 2
+	6	[262]	JMP      	0 1	; to 8
+	7	[263]	RETURN   	0 1
+	8	[266]	GETTABLE 	1 0 -4	; "m_curInfo"
+	9	[266]	EQ       	0 1 -5	; - nil
+	10	[266]	JMP      	0 1	; to 12
+	11	[267]	RETURN   	0 1
+	12	[270]	GETTABLE 	1 0 -4	; "m_curInfo"
+	13	[270]	GETTABLE 	1 1 -6	; "curScore"
+	14	[270]	GETTABLE 	2 0 -4	; "m_curInfo"
+	15	[270]	GETTABLE 	2 2 -7	; "MaxScore"
+	16	[270]	LE       	0 2 1
+	17	[270]	JMP      	0 212	; to 230
+	18	[271]	LOADBOOL 	1 0 0
+	19	[273]	SELF     	2 0 -8	; "IsProConfig"
+	20	[273]	CALL     	2 2 2
+	21	[273]	TEST     	2 0
+	22	[273]	JMP      	0 94	; to 117
+	23	[273]	SELF     	2 0 -9	; "IsProStart"
+	24	[273]	CALL     	2 2 2
+	25	[273]	TEST     	2 0
+	26	[273]	JMP      	0 90	; to 117
+	27	[273]	GETTABUP 	2 0 -10	; _ENV "Table"
+	28	[273]	GETTABLE 	2 2 -11	; "IsEmpty"
+	29	[273]	GETTABLE 	3 0 -12	; "m_orderBoostProRewardConfig"
+	30	[273]	CALL     	2 2 2
+	31	[273]	TEST     	2 1
+	32	[273]	JMP      	0 84	; to 117
+	33	[274]	GETTABLE 	2 0 -13	; "m_proTrigNum"
+	34	[274]	EQ       	0 2 -5	; - nil
+	35	[274]	JMP      	0 47	; to 83
+	36	[275]	GETTABUP 	2 0 -14	; _ENV "math"
+	37	[275]	GETTABLE 	2 2 -15	; "random"
+	38	[275]	GETTABLE 	3 0 -16	; "m_rewardConfig"
+	39	[275]	GETTABLE 	3 3 -17	; "pro_trig_num"
+	40	[275]	GETTABLE 	3 3 -18	; 1
+	41	[275]	GETTABLE 	4 0 -16	; "m_rewardConfig"
+	42	[275]	GETTABLE 	4 4 -17	; "pro_trig_num"
+	43	[275]	GETTABLE 	4 4 -19	; 2
+	44	[275]	CALL     	2 3 2
+	45	[275]	SETTABLE 	0 -13 2	; "m_proTrigNum" -
+	46	[276]	GETTABLE 	2 0 -20	; "m_dbTable"
+	47	[276]	SELF     	2 2 -21	; "Set"
+	48	[276]	GETTABUP 	4 1 -22	; strDBKeys "ProTrigNum"
+	49	[276]	LOADK    	5 -23	; "value"
+	50	[276]	GETTABLE 	6 0 -13	; "m_proTrigNum"
+	51	[276]	CALL     	2 5 1
+	52	[277]	SELF     	2 0 -24	; "GetLogicType"
+	53	[277]	CALL     	2 2 2
+	54	[277]	GETTABUP 	3 0 -25	; _ENV "EOrderBoostType"
+	55	[277]	GETTABLE 	3 3 -26	; "Super"
+	56	[277]	EQ       	0 2 3
+	57	[277]	JMP      	0 6	; to 64
+	58	[278]	SELF     	2 0 -27	; "SetLessScoreRound"
+	59	[278]	GETTABLE 	4 0 -16	; "m_rewardConfig"
+	60	[278]	GETTABLE 	4 4 -17	; "pro_trig_num"
+	61	[278]	GETTABLE 	4 4 -18	; 1
+	62	[278]	CALL     	2 3 1
+	63	[278]	JMP      	0 3	; to 67
+	64	[280]	SELF     	2 0 -27	; "SetLessScoreRound"
+	65	[280]	LOADK    	4 -28	; -1
+	66	[280]	CALL     	2 3 1
+	67	[282]	GETTABUP 	2 0 -29	; _ENV "GameConfig"
+	68	[282]	GETTABLE 	2 2 -30	; "IsTestMode"
+	69	[282]	CALL     	2 1 2
+	70	[282]	TEST     	2 0
+	71	[282]	JMP      	0 11	; to 83
+	72	[283]	GETTABUP 	2 0 -31	; _ENV "Log"
+	73	[283]	GETTABLE 	2 2 -32	; "Info"
+	74	[283]	LOADK    	3 -33	; "\232\182\133\231\186\167\231\172\145\232\132\184\233\154\143\230\156\186\229\136\176\233\156\128\232\166\129\231\154\132\230\153\174\233\128\154boost\230\149\176\233\135\143\239\188\154"
+	75	[283]	GETTABUP 	4 0 -34	; _ENV "tostring"
+	76	[283]	GETTABLE 	5 0 -13	; "m_proTrigNum"
+	77	[283]	CALL     	4 2 2
+	78	[283]	LOADK    	5 -35	; "\n Score_less \232\189\174\230\149\176\239\188\154"
+	79	[283]	SELF     	6 0 -36	; "GetLessScoreRound"
+	80	[283]	CALL     	6 2 2
+	81	[283]	CONCAT   	3 3 6
+	82	[283]	CALL     	2 2 1
+	83	[287]	SELF     	2 0 -37	; "GetFinishedNormalCount"
+	84	[287]	CALL     	2 2 2
+	85	[288]	SELF     	3 0 -24	; "GetLogicType"
+	86	[288]	CALL     	3 2 2
+	87	[288]	GETTABUP 	4 0 -25	; _ENV "EOrderBoostType"
+	88	[288]	GETTABLE 	4 4 -38	; "Normal"
+	89	[288]	EQ       	0 3 4
+	90	[288]	JMP      	0 4	; to 95
+	91	[289]	ADD      	2 2 -18	; - 1
+	92	[290]	SELF     	3 0 -39	; "SetFinishedNormalCount"
+	93	[290]	MOVE     	5 2
+	94	[290]	CALL     	3 3 1
+	95	[294]	GETTABUP 	3 0 -31	; _ENV "Log"
+	96	[294]	GETTABLE 	3 3 -32	; "Info"
+	97	[294]	LOADK    	4 -40	; "[\232\182\133\231\186\167\231\172\145\232\132\184]\232\183\157\231\166\187\232\167\166\229\143\145\232\191\152\230\156\137"
+	98	[294]	GETTABLE 	5 0 -13	; "m_proTrigNum"
+	99	[294]	SUB      	5 5 2
+	100	[294]	CONCAT   	4 4 5
+	101	[294]	CALL     	3 2 1
+	102	[295]	GETTABLE 	3 0 -13	; "m_proTrigNum"
+	103	[295]	LE       	0 3 2
+	104	[295]	JMP      	0 12	; to 117
+	105	[296]	LOADBOOL 	1 1 0
+	106	[297]	SELF     	3 0 -39	; "SetFinishedNormalCount"
+	107	[297]	LOADK    	5 -41	; 0
+	108	[297]	CALL     	3 3 1
+	109	[298]	SELF     	3 0 -42	; "ClearFirstHint"
+	110	[298]	CALL     	3 2 1
+	111	[299]	GETTABLE 	3 0 -20	; "m_dbTable"
+	112	[299]	SELF     	3 3 -43	; "Remove"
+	113	[299]	GETTABUP 	5 1 -22	; strDBKeys "ProTrigNum"
+	114	[299]	LOADK    	6 -23	; "value"
+	115	[299]	CALL     	3 4 1
+	116	[300]	SETTABLE 	0 -13 -5	; "m_proTrigNum" nil
+	117	[303]	SELF     	2 0 -24	; "GetLogicType"
+	118	[303]	CALL     	2 2 2
+	119	[304]	GETTABLE 	3 0 -20	; "m_dbTable"
+	120	[304]	SELF     	3 3 -21	; "Set"
+	121	[304]	GETTABUP 	5 1 -44	; strDBKeys "LastLogicType"
+	122	[304]	LOADK    	6 -23	; "value"
+	123	[304]	MOVE     	7 2
+	124	[304]	CALL     	3 5 1
+	125	[305]	SELF     	3 0 -45	; "GetUIType"
+	126	[305]	CALL     	3 2 2
+	127	[306]	SETTABLE 	0 -46 -47	; "m_bProReward" false
+	128	[307]	GETTABUP 	4 0 -25	; _ENV "EOrderBoostType"
+	129	[307]	GETTABLE 	4 4 -26	; "Super"
+	130	[307]	EQ       	0 2 4
+	131	[307]	JMP      	0 6	; to 138
+	132	[308]	SELF     	4 0 -48	; "RemoveProEndTime"
+	133	[308]	CALL     	4 2 1
+	134	[309]	SELF     	4 0 -49	; "SetCountdownTipPop"
+	135	[309]	LOADBOOL 	6 0 0
+	136	[309]	CALL     	4 3 1
+	137	[310]	SETTABLE 	0 -46 -50	; "m_bProReward" true
+	138	[312]	GETTABLE 	4 0 -20	; "m_dbTable"
+	139	[312]	SELF     	4 4 -21	; "Set"
+	140	[312]	GETTABUP 	6 1 -51	; strDBKeys "CurLogicType"
+	141	[312]	LOADK    	7 -23	; "value"
+	142	[312]	TEST     	1 0
+	143	[312]	JMP      	0 4	; to 148
+	144	[312]	GETTABUP 	8 0 -25	; _ENV "EOrderBoostType"
+	145	[312]	GETTABLE 	8 8 -26	; "Super"
+	146	[312]	TEST     	8 1
+	147	[312]	JMP      	0 2	; to 150
+	148	[312]	GETTABUP 	8 0 -25	; _ENV "EOrderBoostType"
+	149	[312]	GETTABLE 	8 8 -38	; "Normal"
+	150	[312]	CALL     	4 5 1
+	151	[315]	GETTABUP 	4 0 -52	; _ENV "GM"
+	152	[315]	GETTABLE 	4 4 -53	; "ActivityManager"
+	153	[315]	SELF     	4 4 -54	; "GetModel"
+	154	[315]	GETTABUP 	6 0 -55	; _ENV "ActivityType"
+	155	[315]	GETTABLE 	6 6 -56	; "ReviewRace"
+	156	[315]	CALL     	4 3 2
+	157	[316]	TEST     	4 0
+	158	[316]	JMP      	0 2	; to 161
+	159	[317]	SELF     	5 4 -57	; "TryTriggerRace"
+	160	[317]	CALL     	5 2 1
+	161	[320]	GETTABUP 	5 0 -10	; _ENV "Table"
+	162	[320]	GETTABLE 	5 5 -58	; "DeepCopy"
+	163	[320]	GETTABLE 	6 0 -16	; "m_rewardConfig"
+	164	[320]	CALL     	5 2 2
+	165	[321]	GETTABUP 	6 0 -10	; _ENV "Table"
+	166	[321]	GETTABLE 	6 6 -58	; "DeepCopy"
+	167	[321]	GETTABLE 	7 0 -59	; "m_curOrderConfigs"
+	168	[321]	CALL     	6 2 2
+	169	[322]	SELF     	7 0 -45	; "GetUIType"
+	170	[322]	CALL     	7 2 2
+	171	[322]	EQ       	0 3 7
+	172	[322]	JMP      	0 1	; to 174
+	173	[322]	LOADBOOL 	7 0 1
+	174	[322]	LOADBOOL 	7 1 0
+	175	[322]	SETTABLE 	0 -60 7	; "m_bTypeChanged" -
+	176	[323]	GETTABLE 	7 0 -61	; "m_FinishSmile"
+	177	[323]	ADD      	7 7 -18	; - 1
+	178	[323]	SETTABLE 	0 -61 7	; "m_FinishSmile" -
+	179	[325]	SETTABLE 	0 -4 -5	; "m_curInfo" nil
+	180	[327]	LOADNIL  	7 0
+	181	[328]	SELF     	8 0 -62	; "IsCannonRewardOpen"
+	182	[328]	CALL     	8 2 2
+	183	[328]	TEST     	8 0
+	184	[328]	JMP      	0 13	; to 198
+	185	[329]	SELF     	8 0 -63	; "GetFinishedRoundWhenCannonOpen"
+	186	[329]	CALL     	8 2 2
+	187	[330]	ADD      	8 8 -18	; - 1
+	188	[331]	EQ       	0 8 -64	; - 3
+	189	[331]	JMP      	0 5	; to 195
+	190	[332]	LOADBOOL 	7 1 0
+	191	[333]	SELF     	9 0 -65	; "SetFinishedRoundWhenCannonOpen"
+	192	[333]	LOADK    	11 -41	; 0
+	193	[333]	CALL     	9 3 1
+	194	[333]	JMP      	0 3	; to 198
+	195	[335]	SELF     	9 0 -65	; "SetFinishedRoundWhenCannonOpen"
+	196	[335]	MOVE     	11 8
+	197	[335]	CALL     	9 3 1
+	198	[340]	SELF     	8 0 -66	; "TryCreateNewSmile"
+	199	[340]	CALL     	8 2 1
+	200	[341]	SELF     	8 0 -67	; "SetTutorialGestureNum"
+	201	[341]	SELF     	10 0 -68	; "GetTutorialGestureNum"
+	202	[341]	CALL     	10 2 2
+	203	[341]	ADD      	10 10 -18	; - 1
+	204	[341]	CALL     	8 3 1
+	205	[342]	GETTABUP 	8 0 -69	; _ENV "EventDispatcher"
+	206	[342]	GETTABLE 	8 8 -70	; "DispatchEvent"
+	207	[342]	GETTABUP 	9 0 -71	; _ENV "EEventType"
+	208	[342]	GETTABLE 	9 9 -72	; "OrderBoostFillOrder"
+	209	[342]	MOVE     	10 0
+	210	[342]	CALL     	8 3 1
+	211	[344]	SELF     	8 0 -73	; "TryGenerateSmileItem"
+	212	[344]	MOVE     	10 5
+	213	[344]	MOVE     	11 6
+	214	[344]	MOVE     	12 2
+	215	[344]	CALL     	8 5 2
+	216	[346]	LOADNIL  	9 0
+	217	[347]	TEST     	7 0
+	218	[347]	JMP      	0 3	; to 222
+	219	[348]	SELF     	10 0 -74	; "TryGenerateCannonRewardItem"
+	220	[348]	CALL     	10 2 2
+	221	[348]	MOVE     	9 10
+	222	[351]	SELF     	10 0 -75	; "LogActivity"
+	223	[351]	GETTABUP 	12 0 -76	; _ENV "EBIType"
+	224	[351]	GETTABLE 	12 12 -77	; "ActivityGetRewards"
+	225	[351]	GETTABLE 	13 0 -61	; "m_FinishSmile"
+	226	[351]	CALL     	10 4 1
+	227	[353]	MOVE     	10 8
+	228	[353]	MOVE     	11 9
+	229	[353]	RETURN   	10 3
+	230	[356]	RETURN   	0 1
+	231	[357]	RETURN   	0 1
+constants (77) for 000002375D9F6070:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_curInfo"
+	5	nil
+	6	"curScore"
+	7	"MaxScore"
+	8	"IsProConfig"
+	9	"IsProStart"
+	10	"Table"
+	11	"IsEmpty"
+	12	"m_orderBoostProRewardConfig"
+	13	"m_proTrigNum"
+	14	"math"
+	15	"random"
+	16	"m_rewardConfig"
+	17	"pro_trig_num"
+	18	1
+	19	2
+	20	"m_dbTable"
+	21	"Set"
+	22	"ProTrigNum"
+	23	"value"
+	24	"GetLogicType"
+	25	"EOrderBoostType"
+	26	"Super"
+	27	"SetLessScoreRound"
+	28	-1
+	29	"GameConfig"
+	30	"IsTestMode"
+	31	"Log"
+	32	"Info"
+	33	"\232\182\133\231\186\167\231\172\145\232\132\184\233\154\143\230\156\186\229\136\176\233\156\128\232\166\129\231\154\132\230\153\174\233\128\154boost\230\149\176\233\135\143\239\188\154"
+	34	"tostring"
+	35	"\n Score_less \232\189\174\230\149\176\239\188\154"
+	36	"GetLessScoreRound"
+	37	"GetFinishedNormalCount"
+	38	"Normal"
+	39	"SetFinishedNormalCount"
+	40	"[\232\182\133\231\186\167\231\172\145\232\132\184]\232\183\157\231\166\187\232\167\166\229\143\145\232\191\152\230\156\137"
+	41	0
+	42	"ClearFirstHint"
+	43	"Remove"
+	44	"LastLogicType"
+	45	"GetUIType"
+	46	"m_bProReward"
+	47	false
+	48	"RemoveProEndTime"
+	49	"SetCountdownTipPop"
+	50	true
+	51	"CurLogicType"
+	52	"GM"
+	53	"ActivityManager"
+	54	"GetModel"
+	55	"ActivityType"
+	56	"ReviewRace"
+	57	"TryTriggerRace"
+	58	"DeepCopy"
+	59	"m_curOrderConfigs"
+	60	"m_bTypeChanged"
+	61	"m_FinishSmile"
+	62	"IsCannonRewardOpen"
+	63	"GetFinishedRoundWhenCannonOpen"
+	64	3
+	65	"SetFinishedRoundWhenCannonOpen"
+	66	"TryCreateNewSmile"
+	67	"SetTutorialGestureNum"
+	68	"GetTutorialGestureNum"
+	69	"EventDispatcher"
+	70	"DispatchEvent"
+	71	"EEventType"
+	72	"OrderBoostFillOrder"
+	73	"TryGenerateSmileItem"
+	74	"TryGenerateCannonRewardItem"
+	75	"LogActivity"
+	76	"EBIType"
+	77	"ActivityGetRewards"
+locals (12) for 000002375D9F6070:
+	0	self	1	232
+	1	bPro	19	230
+	2	count	85	117
+	3	oldType	119	230
+	4	oldUIType	127	230
+	5	reviewRaceModel	157	230
+	6	oldRewardConfig	165	230
+	7	oldOrderConfig	169	230
+	8	needCannonReward	181	230
+	9	round	187	198
+	10	target	216	230
+	11	cannonReward	217	230
+upvalues (2) for 000002375D9F6070:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:359,401> (130 instructions at 000002375D9F6770)
+6 params, 23 slots, 1 upvalue, 30 locals, 44 constants, 0 functions
+	1	[360]	NEWTABLE 	6 0 0
+	2	[361]	NEWTABLE 	7 0 0
+	3	[362]	GETTABUP 	8 0 -1	; _ENV "pairs"
+	4	[362]	GETTABLE 	9 0 -2	; "m_orderBoostItemConfigsaved"
+	5	[362]	CALL     	8 2 4
+	6	[362]	JMP      	0 33	; to 40
+	7	[364]	GETTABUP 	13 0 -3	; _ENV "GM"
+	8	[364]	GETTABLE 	13 13 -4	; "ItemDataModel"
+	9	[364]	SELF     	13 13 -5	; "GetModelConfig"
+	10	[364]	GETTABLE 	15 12 -6	; "item_type"
+	11	[364]	LOADBOOL 	16 1 0
+	12	[364]	CALL     	13 4 2
+	13	[364]	EQ       	1 13 -7	; - nil
+	14	[364]	JMP      	0 25	; to 40
+	15	[365]	GETTABLE 	13 12 -8	; "level_min"
+	16	[366]	GETTABLE 	14 12 -9	; "level_max"
+	17	[367]	GETTABUP 	15 0 -3	; _ENV "GM"
+	18	[367]	GETTABLE 	15 15 -10	; "LevelModel"
+	19	[367]	SELF     	15 15 -11	; "GetCurrentLevel"
+	20	[367]	CALL     	15 2 2
+	21	[368]	EQ       	1 13 -7	; - nil
+	22	[368]	JMP      	0 2	; to 25
+	23	[368]	LE       	0 13 15
+	24	[368]	JMP      	0 15	; to 40
+	25	[368]	EQ       	1 14 -7	; - nil
+	26	[368]	JMP      	0 2	; to 29
+	27	[368]	LE       	0 15 14
+	28	[368]	JMP      	0 11	; to 40
+	29	[369]	GETTABLE 	16 12 -6	; "item_type"
+	30	[369]	GETTABLE 	17 12 -12	; "score"
+	31	[369]	SETTABLE 	6 16 17
+	32	[370]	LEN      	16 7
+	33	[370]	ADD      	16 16 -13	; - 1
+	34	[370]	NEWTABLE 	17 0 2
+	35	[371]	GETTABLE 	18 12 -6	; "item_type"
+	36	[371]	SETTABLE 	17 -14 18	; "Code" -
+	37	[372]	GETTABLE 	18 12 -16	; "weight"
+	38	[372]	SETTABLE 	17 -15 18	; "Weight" -
+	39	[373]	SETTABLE 	7 16 17
+	40	[362]	TFORCALL 	8 2
+	41	[362]	TFORLOOP 	10 -35	; to 7
+	42	[378]	GETTABUP 	8 0 -17	; _ENV "EOrderBoostType"
+	43	[378]	GETTABLE 	8 8 -18	; "Super"
+	44	[378]	EQ       	0 5 8
+	45	[378]	JMP      	0 3	; to 49
+	46	[378]	GETTABLE 	8 3 -19	; "score_pro_sum"
+	47	[378]	TEST     	8 1
+	48	[378]	JMP      	0 1	; to 50
+	49	[378]	GETTABLE 	8 3 -20	; "score_sum"
+	50	[380]	NEWTABLE 	9 0 0
+	51	[381]	SELF     	10 0 -22	; "GetFinishRound"
+	52	[381]	CALL     	10 2 2
+	53	[381]	SETTABLE 	9 -21 10	; "boostround" -
+	54	[382]	GETTABUP 	10 0 -17	; _ENV "EOrderBoostType"
+	55	[382]	GETTABLE 	10 10 -18	; "Super"
+	56	[382]	EQ       	1 5 10
+	57	[382]	JMP      	0 1	; to 59
+	58	[382]	LOADBOOL 	10 0 1
+	59	[382]	LOADBOOL 	10 1 0
+	60	[382]	SETTABLE 	9 -23 10	; "ispro" -
+	61	[383]	TEST     	4 0
+	62	[383]	JMP      	0 14	; to 77
+	63	[383]	GETTABLE 	10 4 -13	; 1
+	64	[383]	TEST     	10 0
+	65	[383]	JMP      	0 11	; to 77
+	66	[384]	GETTABUP 	10 0 -25	; _ENV "tostring"
+	67	[384]	GETTABLE 	11 4 -13	; 1
+	68	[384]	GETTABLE 	11 11 -8	; "level_min"
+	69	[384]	CALL     	10 2 2
+	70	[384]	LOADK    	11 -26	; "_"
+	71	[384]	GETTABUP 	12 0 -25	; _ENV "tostring"
+	72	[384]	GETTABLE 	13 4 -13	; 1
+	73	[384]	GETTABLE 	13 13 -9	; "level_max"
+	74	[384]	CALL     	12 2 2
+	75	[384]	CONCAT   	10 10 12
+	76	[384]	SETTABLE 	9 -24 10	; "groupid" -
+	77	[387]	GETTABUP 	10 0 -27	; _ENV "SmartRewardHelper"
+	78	[387]	GETTABLE 	10 10 -28	; "GetCodesForOrderBoost"
+	79	[387]	MOVE     	11 6
+	80	[387]	MOVE     	12 7
+	81	[387]	MOVE     	13 8
+	82	[387]	LOADK    	14 -29	; "boost"
+	83	[387]	MOVE     	15 9
+	84	[387]	CALL     	10 6 2
+	85	[388]	GETTABUP 	11 0 -30	; _ENV "ipairs"
+	86	[388]	MOVE     	12 10
+	87	[388]	CALL     	11 2 4
+	88	[388]	JMP      	0 6	; to 95
+	89	[389]	GETTABUP 	16 0 -31	; _ENV "table"
+	90	[389]	GETTABLE 	16 16 -32	; "insert"
+	91	[389]	MOVE     	17 1
+	92	[389]	NEWTABLE 	18 0 1
+	93	[389]	SETTABLE 	18 -6 15	; "item_type" -
+	94	[389]	CALL     	16 3 1
+	95	[388]	TFORCALL 	11 2
+	96	[388]	TFORLOOP 	13 -8	; to 89
+	97	[392]	SELF     	11 0 -33	; "FindPositionForItems"
+	98	[392]	MOVE     	13 2
+	99	[392]	MOVE     	14 1
+	100	[392]	MOVE     	15 5
+	101	[392]	CALL     	11 5 1
+	102	[394]	GETTABUP 	11 0 -34	; _ENV "GameConfig"
+	103	[394]	GETTABLE 	11 11 -35	; "IsTestMode"
+	104	[394]	CALL     	11 1 2
+	105	[394]	TEST     	11 0
+	106	[394]	JMP      	0 23	; to 130
+	107	[395]	LOADK    	11 -36	; "\230\153\186\232\131\189\229\143\145\229\165\150 \231\172\145\232\132\184 \230\156\128\231\187\136\231\154\132\230\163\139\229\173\144\231\154\132\228\189\141\231\189\174\229\146\140\228\191\161\230\129\175\n"
+	108	[396]	GETTABUP 	12 0 -30	; _ENV "ipairs"
+	109	[396]	MOVE     	13 2
+	110	[396]	CALL     	12 2 4
+	111	[396]	JMP      	0 12	; to 124
+	112	[397]	MOVE     	17 11
+	113	[397]	LOADK    	18 -37	; "itemType: "
+	114	[397]	GETTABLE 	19 16 -38	; "itemType"
+	115	[397]	LOADK    	20 -39	; ",   pos: "
+	116	[397]	GETTABUP 	21 0 -25	; _ENV "tostring"
+	117	[397]	GETTABLE 	22 16 -40	; "Pos"
+	118	[397]	TEST     	22 1
+	119	[397]	JMP      	0 1	; to 121
+	120	[397]	LOADK    	22 -41	; "\231\188\147\229\173\152\233\152\159\229\136\151"
+	121	[397]	CALL     	21 2 2
+	122	[397]	LOADK    	22 -42	; "\n"
+	123	[397]	CONCAT   	11 17 22
+	124	[396]	TFORCALL 	12 2
+	125	[396]	TFORLOOP 	14 -14	; to 112
+	126	[399]	GETTABUP 	12 0 -43	; _ENV "Log"
+	127	[399]	GETTABLE 	12 12 -44	; "Info"
+	128	[399]	MOVE     	13 11
+	129	[399]	CALL     	12 2 1
+	130	[401]	RETURN   	0 1
+constants (44) for 000002375D9F6770:
+	1	"pairs"
+	2	"m_orderBoostItemConfigsaved"
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetModelConfig"
+	6	"item_type"
+	7	nil
+	8	"level_min"
+	9	"level_max"
+	10	"LevelModel"
+	11	"GetCurrentLevel"
+	12	"score"
+	13	1
+	14	"Code"
+	15	"Weight"
+	16	"weight"
+	17	"EOrderBoostType"
+	18	"Super"
+	19	"score_pro_sum"
+	20	"score_sum"
+	21	"boostround"
+	22	"GetFinishRound"
+	23	"ispro"
+	24	"groupid"
+	25	"tostring"
+	26	"_"
+	27	"SmartRewardHelper"
+	28	"GetCodesForOrderBoost"
+	29	"boost"
+	30	"ipairs"
+	31	"table"
+	32	"insert"
+	33	"FindPositionForItems"
+	34	"GameConfig"
+	35	"IsTestMode"
+	36	"\230\153\186\232\131\189\229\143\145\229\165\150 \231\172\145\232\132\184 \230\156\128\231\187\136\231\154\132\230\163\139\229\173\144\231\154\132\228\189\141\231\189\174\229\146\140\228\191\161\230\129\175\n"
+	37	"itemType: "
+	38	"itemType"
+	39	",   pos: "
+	40	"Pos"
+	41	"\231\188\147\229\173\152\233\152\159\229\136\151"
+	42	"\n"
+	43	"Log"
+	44	"Info"
+locals (30) for 000002375D9F6770:
+	0	self	1	131
+	1	targetItems	1	131
+	2	FindItemsAndPos	1	131
+	3	oldRewardConfig	1	131
+	4	oldOrderConfig	1	131
+	5	oldType	1	131
+	6	itemScoreMapCfg	2	131
+	7	itemWeightMapCfg	3	131
+	8	(for generator)	6	42
+	9	(for state)	6	42
+	10	(for control)	6	42
+	11	_	7	40
+	12	itemConfig	7	40
+	13	minLevel	16	40
+	14	maxLevel	17	40
+	15	currentLevel	21	40
+	16	totalScore	50	131
+	17	biInfo	51	131
+	18	res	85	131
+	19	(for generator)	88	97
+	20	(for state)	88	97
+	21	(for control)	88	97
+	22	_	89	95
+	23	code	89	95
+	24	str	108	130
+	25	(for generator)	111	126
+	26	(for state)	111	126
+	27	(for control)	111	126
+	28	_	112	124
+	29	item	112	124
+upvalues (1) for 000002375D9F6770:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:403,543> (394 instructions at 000002375D9F6270)
+6 params, 34 slots, 1 upvalue, 64 locals, 66 constants, 0 functions
+	1	[405]	GETTABUP 	6 0 -1	; _ENV "GM"
+	2	[405]	GETTABLE 	6 6 -2	; "MainBoardModel"
+	3	[405]	SELF     	6 6 -3	; "GetOrders"
+	4	[405]	CALL     	6 2 2
+	5	[407]	NEWTABLE 	7 0 0
+	6	[408]	NEWTABLE 	8 0 0
+	7	[409]	LOADK    	9 -4	; "\230\137\128\230\156\137\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\229\143\138\231\188\186\229\164\177\230\149\176\233\135\143\239\188\136\231\173\137\230\149\1361\231\186\167\230\163\139\229\173\144\239\188\137\239\188\154\n"
+	8	[410]	SELF     	10 0 -5	; "RewardStockCountOn"
+	9	[410]	CALL     	10 2 2
+	10	[410]	TEST     	10 0
+	11	[410]	JMP      	0 27	; to 39
+	12	[411]	GETTABUP 	10 0 -1	; _ENV "GM"
+	13	[411]	GETTABLE 	10 10 -2	; "MainBoardModel"
+	14	[411]	SELF     	10 10 -6	; "CalculateOrderCodeLackNumMap"
+	15	[411]	LOADBOOL 	12 0 0
+	16	[411]	LOADBOOL 	13 1 0
+	17	[411]	LOADBOOL 	14 0 0
+	18	[411]	CALL     	10 5 2
+	19	[411]	MOVE     	8 10
+	20	[412]	GETTABUP 	10 0 -7	; _ENV "pairs"
+	21	[412]	MOVE     	11 8
+	22	[412]	CALL     	10 2 4
+	23	[412]	JMP      	0 12	; to 36
+	24	[413]	SETTABLE 	7 13 -8	; - 1
+	25	[414]	GETTABUP 	15 0 -9	; _ENV "GameConfig"
+	26	[414]	GETTABLE 	15 15 -10	; "IsTestMode"
+	27	[414]	CALL     	15 1 2
+	28	[414]	TEST     	15 0
+	29	[414]	JMP      	0 6	; to 36
+	30	[415]	MOVE     	15 9
+	31	[415]	MOVE     	16 13
+	32	[415]	LOADK    	17 -11	; " : "
+	33	[415]	MOVE     	18 14
+	34	[415]	LOADK    	19 -12	; "\n"
+	35	[415]	CONCAT   	9 15 19
+	36	[412]	TFORCALL 	10 2
+	37	[412]	TFORLOOP 	12 -14	; to 24
+	38	[417]	JMP      	0 25	; to 64
+	39	[420]	GETTABUP 	10 0 -1	; _ENV "GM"
+	40	[420]	GETTABLE 	10 10 -2	; "MainBoardModel"
+	41	[420]	SELF     	10 10 -13	; "GetCodeCountMap"
+	42	[420]	LOADBOOL 	12 1 0
+	43	[420]	LOADBOOL 	13 0 0
+	44	[420]	LOADBOOL 	14 1 0
+	45	[420]	CALL     	10 5 2
+	46	[421]	GETTABUP 	11 0 -7	; _ENV "pairs"
+	47	[421]	MOVE     	12 6
+	48	[421]	CALL     	11 2 4
+	49	[421]	JMP      	0 12	; to 62
+	50	[422]	SELF     	16 15 -14	; "GetRequirements"
+	51	[422]	CALL     	16 2 2
+	52	[423]	GETTABUP 	17 0 -7	; _ENV "pairs"
+	53	[423]	MOVE     	18 16
+	54	[423]	CALL     	17 2 4
+	55	[423]	JMP      	0 4	; to 60
+	56	[424]	GETTABLE 	22 10 21
+	57	[424]	EQ       	0 22 -15	; - nil
+	58	[424]	JMP      	0 1	; to 60
+	59	[425]	SETTABLE 	7 21 -8	; - 1
+	60	[423]	TFORCALL 	17 2
+	61	[423]	TFORLOOP 	19 -6	; to 56
+	62	[421]	TFORCALL 	11 2
+	63	[421]	TFORLOOP 	13 -14	; to 50
+	64	[432]	NEWTABLE 	10 0 0
+	65	[433]	NEWTABLE 	11 0 0
+	66	[436]	NEWTABLE 	12 0 0
+	67	[439]	NEWTABLE 	13 0 0
+	68	[441]	GETTABUP 	14 0 -7	; _ENV "pairs"
+	69	[441]	GETTABLE 	15 0 -16	; "m_orderBoostItemConfigsaved"
+	70	[441]	CALL     	14 2 4
+	71	[441]	JMP      	0 104	; to 176
+	72	[443]	GETTABUP 	19 0 -1	; _ENV "GM"
+	73	[443]	GETTABLE 	19 19 -17	; "ItemDataModel"
+	74	[443]	SELF     	19 19 -18	; "GetModelConfig"
+	75	[443]	GETTABLE 	21 18 -19	; "item_type"
+	76	[443]	LOADBOOL 	22 1 0
+	77	[443]	CALL     	19 4 2
+	78	[443]	EQ       	1 19 -15	; - nil
+	79	[443]	JMP      	0 96	; to 176
+	80	[444]	GETTABLE 	19 18 -20	; "level_min"
+	81	[445]	GETTABLE 	20 18 -21	; "level_max"
+	82	[446]	GETTABUP 	21 0 -1	; _ENV "GM"
+	83	[446]	GETTABLE 	21 21 -22	; "LevelModel"
+	84	[446]	SELF     	21 21 -23	; "GetCurrentLevel"
+	85	[446]	CALL     	21 2 2
+	86	[447]	EQ       	1 19 -15	; - nil
+	87	[447]	JMP      	0 6	; to 94
+	88	[447]	EQ       	1 20 -15	; - nil
+	89	[447]	JMP      	0 4	; to 94
+	90	[447]	LE       	0 19 21
+	91	[447]	JMP      	0 84	; to 176
+	92	[447]	LE       	0 21 20
+	93	[447]	JMP      	0 82	; to 176
+	94	[448]	GETTABUP 	22 0 -7	; _ENV "pairs"
+	95	[448]	MOVE     	23 7
+	96	[448]	CALL     	22 2 4
+	97	[448]	JMP      	0 64	; to 162
+	98	[449]	GETTABUP 	27 0 -1	; _ENV "GM"
+	99	[449]	GETTABLE 	27 27 -17	; "ItemDataModel"
+	100	[449]	SELF     	27 27 -24	; "GetChainId"
+	101	[449]	MOVE     	29 25
+	102	[449]	CALL     	27 3 2
+	103	[449]	GETTABUP 	28 0 -1	; _ENV "GM"
+	104	[449]	GETTABLE 	28 28 -17	; "ItemDataModel"
+	105	[449]	SELF     	28 28 -24	; "GetChainId"
+	106	[449]	GETTABLE 	30 18 -19	; "item_type"
+	107	[449]	CALL     	28 3 2
+	108	[449]	EQ       	0 27 28
+	109	[449]	JMP      	0 52	; to 162
+	110	[450]	GETTABUP 	27 0 -1	; _ENV "GM"
+	111	[450]	GETTABLE 	27 27 -17	; "ItemDataModel"
+	112	[450]	SELF     	27 27 -25	; "GetChainLevel"
+	113	[450]	MOVE     	29 25
+	114	[450]	CALL     	27 3 2
+	115	[450]	GETTABUP 	28 0 -1	; _ENV "GM"
+	116	[450]	GETTABLE 	28 28 -17	; "ItemDataModel"
+	117	[450]	SELF     	28 28 -25	; "GetChainLevel"
+	118	[450]	GETTABLE 	30 18 -19	; "item_type"
+	119	[450]	CALL     	28 3 2
+	120	[450]	LT       	0 28 27
+	121	[450]	JMP      	0 40	; to 162
+	122	[451]	GETTABUP 	27 0 -26	; _ENV "Mathf"
+	123	[451]	GETTABLE 	27 27 -27	; "Pow"
+	124	[451]	LOADK    	28 -28	; 2
+	125	[451]	GETTABUP 	29 0 -29	; _ENV "math"
+	126	[451]	GETTABLE 	29 29 -30	; "max"
+	127	[451]	LOADK    	30 -8	; 1
+	128	[451]	GETTABUP 	31 0 -1	; _ENV "GM"
+	129	[451]	GETTABLE 	31 31 -17	; "ItemDataModel"
+	130	[451]	SELF     	31 31 -25	; "GetChainLevel"
+	131	[451]	MOVE     	33 25
+	132	[451]	CALL     	31 3 2
+	133	[451]	SUB      	31 31 -31	; - 3
+	134	[451]	CALL     	29 3 0
+	135	[451]	CALL     	27 0 2
+	136	[452]	GETTABUP 	28 0 -29	; _ENV "math"
+	137	[452]	GETTABLE 	28 28 -32	; "min"
+	138	[452]	MOVE     	29 27
+	139	[452]	LOADK    	30 -33	; 100
+	140	[452]	CALL     	28 3 2
+	141	[452]	MOVE     	27 28
+	142	[453]	GETTABUP 	28 0 -29	; _ENV "math"
+	143	[453]	GETTABLE 	28 28 -30	; "max"
+	144	[453]	MOVE     	29 27
+	145	[453]	LOADK    	30 -34	; 5
+	146	[453]	CALL     	28 3 2
+	147	[453]	MOVE     	27 28
+	148	[455]	GETTABLE 	28 11 25
+	149	[455]	EQ       	0 28 -15	; - nil
+	150	[455]	JMP      	0 1	; to 152
+	151	[456]	SETTABLE 	11 25 27
+	152	[459]	GETTABLE 	28 13 25
+	153	[459]	EQ       	0 28 -15	; - nil
+	154	[459]	JMP      	0 2	; to 157
+	155	[460]	NEWTABLE 	28 0 0
+	156	[460]	SETTABLE 	13 25 28
+	157	[462]	GETTABUP 	28 0 -35	; _ENV "table"
+	158	[462]	GETTABLE 	28 28 -36	; "insert"
+	159	[462]	GETTABLE 	29 13 25
+	160	[462]	MOVE     	30 18
+	161	[462]	CALL     	28 3 1
+	162	[448]	TFORCALL 	22 2
+	163	[448]	TFORLOOP 	24 -66	; to 98
+	164	[466]	GETTABUP 	22 0 -1	; _ENV "GM"
+	165	[466]	GETTABLE 	22 22 -17	; "ItemDataModel"
+	166	[466]	SELF     	22 22 -37	; "IsUnlocked"
+	167	[466]	GETTABLE 	24 18 -19	; "item_type"
+	168	[466]	CALL     	22 3 2
+	169	[466]	TEST     	22 0
+	170	[466]	JMP      	0 5	; to 176
+	171	[467]	GETTABUP 	22 0 -35	; _ENV "table"
+	172	[467]	GETTABLE 	22 22 -36	; "insert"
+	173	[467]	MOVE     	23 12
+	174	[467]	MOVE     	24 18
+	175	[467]	CALL     	22 3 1
+	176	[441]	TFORCALL 	14 2
+	177	[441]	TFORLOOP 	16 -106	; to 72
+	178	[473]	GETTABUP 	14 0 -7	; _ENV "pairs"
+	179	[473]	MOVE     	15 11
+	180	[473]	CALL     	14 2 4
+	181	[473]	JMP      	0 7	; to 189
+	182	[474]	GETTABUP 	19 0 -35	; _ENV "table"
+	183	[474]	GETTABLE 	19 19 -36	; "insert"
+	184	[474]	MOVE     	20 10
+	185	[474]	NEWTABLE 	21 0 2
+	186	[474]	SETTABLE 	21 -38 17	; "ItemType" -
+	187	[474]	SETTABLE 	21 -39 18	; "Weight" -
+	188	[474]	CALL     	19 3 1
+	189	[473]	TFORCALL 	14 2
+	190	[473]	TFORLOOP 	16 -9	; to 182
+	191	[476]	GETTABUP 	14 0 -40	; _ENV "Table"
+	192	[476]	GETTABLE 	14 14 -41	; "DeepCopy"
+	193	[476]	MOVE     	15 10
+	194	[476]	CALL     	14 2 2
+	195	[479]	LOADNIL  	15 0
+	196	[481]	LOADK    	16 -42	; ""
+	197	[481]	MOVE     	17 9
+	198	[481]	CONCAT   	16 16 17
+	199	[483]	GETTABUP 	17 0 -43	; _ENV "EOrderBoostType"
+	200	[483]	GETTABLE 	17 17 -44	; "Super"
+	201	[483]	EQ       	0 5 17
+	202	[483]	JMP      	0 3	; to 206
+	203	[483]	GETTABLE 	17 3 -45	; "score_pro_sum"
+	204	[483]	TEST     	17 1
+	205	[483]	JMP      	0 1	; to 207
+	206	[483]	GETTABLE 	17 3 -46	; "score_sum"
+	207	[485]	LEN      	18 10
+	208	[485]	EQ       	0 18 -47	; - 0
+	209	[485]	JMP      	0 18	; to 228
+	210	[487]	LOADK    	18 -47	; 0
+	211	[488]	GETTABUP 	19 0 -9	; _ENV "GameConfig"
+	212	[488]	GETTABLE 	19 19 -10	; "IsTestMode"
+	213	[488]	CALL     	19 1 2
+	214	[488]	TEST     	19 0
+	215	[488]	JMP      	0 3	; to 219
+	216	[489]	MOVE     	19 16
+	217	[489]	LOADK    	20 -48	; "\226\128\148\226\128\148\232\174\162\229\141\149\230\163\139\229\173\144\229\157\135\229\183\178\232\142\183\229\190\151 / \230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\228\184\141\229\173\152\229\156\168\229\175\185\229\186\148\233\133\141\231\189\174\227\128\130\233\154\143\230\156\186\233\128\137\229\143\150\229\183\178\232\167\163\233\148\129\230\163\139\229\173\144\226\128\148\226\128\148\n"
+	218	[489]	CONCAT   	16 19 20
+	219	[491]	SELF     	19 0 -49	; "RandomChooseUnlockItems"
+	220	[491]	LOADK    	21 -47	; 0
+	221	[491]	MOVE     	22 17
+	222	[491]	MOVE     	23 12
+	223	[491]	MOVE     	24 1
+	224	[491]	MOVE     	25 16
+	225	[491]	CALL     	19 7 2
+	226	[491]	MOVE     	16 19
+	227	[491]	JMP      	0 146	; to 374
+	228	[493]	GETTABUP 	18 0 -9	; _ENV "GameConfig"
+	229	[493]	GETTABLE 	18 18 -10	; "IsTestMode"
+	230	[493]	CALL     	18 1 2
+	231	[493]	TEST     	18 0
+	232	[493]	JMP      	0 5	; to 238
+	233	[494]	MOVE     	18 16
+	234	[494]	LOADK    	19 -50	; "\226\128\148\226\128\148\232\174\162\229\141\149\230\163\139\229\173\144\230\156\170\229\133\168\233\131\168\232\142\183\229\190\151\239\188\140\228\184\148\229\173\152\229\156\168\229\175\185\229\186\148\233\133\141\231\189\174\227\128\130\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\230\149\176\233\135\143 = "
+	235	[494]	LEN      	20 10
+	236	[494]	LOADK    	21 -12	; "\n"
+	237	[494]	CONCAT   	16 18 21
+	238	[496]	LOADK    	18 -47	; 0
+	239	[497]	LT       	0 18 17
+	240	[497]	JMP      	0 119	; to 360
+	241	[498]	LEN      	19 10
+	242	[498]	LT       	0 -47 19	; 0 -
+	243	[498]	JMP      	0 116	; to 360
+	244	[499]	GETTABUP 	19 0 -40	; _ENV "Table"
+	245	[499]	GETTABLE 	19 19 -51	; "ListWeightSelectOne"
+	246	[499]	MOVE     	20 10
+	247	[499]	CALL     	19 2 2
+	248	[499]	MOVE     	15 19
+	249	[500]	GETTABLE 	19 15 -38	; "ItemType"
+	250	[500]	GETTABLE 	19 13 19
+	251	[501]	GETTABUP 	20 0 -40	; _ENV "Table"
+	252	[501]	GETTABLE 	20 20 -51	; "ListWeightSelectOne"
+	253	[501]	MOVE     	21 19
+	254	[501]	LOADK    	22 -52	; "weight"
+	255	[501]	CALL     	20 3 2
+	256	[502]	GETTABLE 	21 20 -53	; "score"
+	257	[502]	ADD      	18 18 21
+	258	[503]	GETTABUP 	21 0 -35	; _ENV "table"
+	259	[503]	GETTABLE 	21 21 -36	; "insert"
+	260	[503]	MOVE     	22 1
+	261	[503]	MOVE     	23 20
+	262	[503]	CALL     	21 3 1
+	263	[504]	GETTABUP 	21 0 -9	; _ENV "GameConfig"
+	264	[504]	GETTABLE 	21 21 -10	; "IsTestMode"
+	265	[504]	CALL     	21 1 2
+	266	[504]	TEST     	21 0
+	267	[504]	JMP      	0 20	; to 288
+	268	[505]	MOVE     	21 16
+	269	[505]	GETTABUP 	22 0 -54	; _ENV "tostring"
+	270	[505]	GETTABLE 	23 15 -38	; "ItemType"
+	271	[505]	CALL     	22 2 2
+	272	[505]	LOADK    	23 -55	; "("
+	273	[505]	GETTABUP 	24 0 -54	; _ENV "tostring"
+	274	[505]	GETTABLE 	25 20 -19	; "item_type"
+	275	[505]	CALL     	24 2 2
+	276	[505]	LOADK    	25 -56	; ")"
+	277	[505]	CONCAT   	16 21 25
+	278	[506]	MOVE     	21 16
+	279	[506]	SELF     	22 0 -5	; "RewardStockCountOn"
+	280	[506]	CALL     	22 2 2
+	281	[506]	TEST     	22 0
+	282	[506]	JMP      	0 3	; to 286
+	283	[506]	LOADK    	22 -57	; " \231\188\186\229\164\177\230\149\176\233\135\143\229\143\152\229\140\150\239\188\154"
+	284	[506]	TEST     	22 1
+	285	[506]	JMP      	0 1	; to 287
+	286	[506]	LOADK    	22 -12	; "\n"
+	287	[506]	CONCAT   	16 21 22
+	288	[508]	SELF     	21 0 -5	; "RewardStockCountOn"
+	289	[508]	CALL     	21 2 2
+	290	[508]	TEST     	21 0
+	291	[508]	JMP      	0 -53	; to 239
+	292	[509]	GETTABUP 	21 0 -1	; _ENV "GM"
+	293	[509]	GETTABLE 	21 21 -17	; "ItemDataModel"
+	294	[509]	SELF     	21 21 -25	; "GetChainLevel"
+	295	[509]	GETTABLE 	23 20 -19	; "item_type"
+	296	[509]	CALL     	21 3 2
+	297	[510]	GETTABUP 	22 0 -9	; _ENV "GameConfig"
+	298	[510]	GETTABLE 	22 22 -10	; "IsTestMode"
+	299	[510]	CALL     	22 1 2
+	300	[510]	TEST     	22 0
+	301	[510]	JMP      	0 11	; to 313
+	302	[511]	MOVE     	22 16
+	303	[511]	GETTABLE 	23 15 -38	; "ItemType"
+	304	[511]	GETTABLE 	23 8 23
+	305	[511]	LOADK    	24 -58	; " minus "
+	306	[511]	GETTABUP 	25 0 -59	; _ENV "MathUtil"
+	307	[511]	GETTABLE 	25 25 -60	; "IntPow"
+	308	[511]	LOADK    	26 -28	; 2
+	309	[511]	SUB      	27 21 -8	; - 1
+	310	[511]	CALL     	25 3 2
+	311	[511]	LOADK    	26 -12	; "\n"
+	312	[511]	CONCAT   	16 22 26
+	313	[513]	GETTABLE 	22 15 -38	; "ItemType"
+	314	[513]	GETTABLE 	23 15 -38	; "ItemType"
+	315	[513]	GETTABLE 	23 8 23
+	316	[513]	GETTABUP 	24 0 -59	; _ENV "MathUtil"
+	317	[513]	GETTABLE 	24 24 -60	; "IntPow"
+	318	[513]	LOADK    	25 -28	; 2
+	319	[513]	SUB      	26 21 -8	; - 1
+	320	[513]	CALL     	24 3 2
+	321	[513]	SUB      	23 23 24
+	322	[513]	SETTABLE 	8 22 23
+	323	[514]	GETTABLE 	22 15 -38	; "ItemType"
+	324	[514]	GETTABLE 	22 8 22
+	325	[514]	LE       	0 22 -47	; - 0
+	326	[514]	JMP      	0 -88	; to 239
+	327	[515]	GETTABLE 	22 15 -38	; "ItemType"
+	328	[515]	SETTABLE 	8 22 -47	; - 0
+	329	[516]	GETTABUP 	22 0 -61	; _ENV "ipairs"
+	330	[516]	MOVE     	23 10
+	331	[516]	CALL     	22 2 4
+	332	[516]	JMP      	0 22	; to 355
+	333	[517]	GETTABLE 	27 26 -38	; "ItemType"
+	334	[517]	GETTABLE 	28 15 -38	; "ItemType"
+	335	[517]	EQ       	0 27 28
+	336	[517]	JMP      	0 18	; to 355
+	337	[518]	GETTABUP 	27 0 -35	; _ENV "table"
+	338	[518]	GETTABLE 	27 27 -62	; "remove"
+	339	[518]	MOVE     	28 10
+	340	[518]	MOVE     	29 25
+	341	[518]	CALL     	27 3 1
+	342	[519]	GETTABUP 	27 0 -9	; _ENV "GameConfig"
+	343	[519]	GETTABLE 	27 27 -10	; "IsTestMode"
+	344	[519]	CALL     	27 1 2
+	345	[519]	TEST     	27 0
+	346	[519]	JMP      	0 -108	; to 239
+	347	[520]	MOVE     	27 16
+	348	[520]	GETTABLE 	28 26 -38	; "ItemType"
+	349	[520]	LOADK    	29 -63	; " \231\188\186\229\164\177\230\149\176\233\135\143\228\184\1860, \231\167\187\233\153\164\227\128\130"
+	350	[520]	LOADK    	30 -64	; "\229\137\169\228\189\153\229\143\175\233\128\137\230\163\139\229\173\144\230\149\176\233\135\143 = "
+	351	[520]	LEN      	31 10
+	352	[520]	LOADK    	32 -12	; "\n"
+	353	[520]	CONCAT   	16 27 32
+	354	[521]	JMP      	0 -116	; to 239
+	355	[516]	TFORCALL 	22 2
+	356	[516]	TFORLOOP 	24 -24	; to 333
+	357	[526]	JMP      	0 -119	; to 239
+	358	[527]	JMP      	0 1	; to 360
+	359	[529]	JMP      	0 -121	; to 239
+	360	[532]	SELF     	19 0 -5	; "RewardStockCountOn"
+	361	[532]	CALL     	19 2 2
+	362	[532]	TEST     	19 0
+	363	[532]	JMP      	0 10	; to 374
+	364	[532]	LT       	0 18 17
+	365	[532]	JMP      	0 8	; to 374
+	366	[533]	SELF     	19 0 -49	; "RandomChooseUnlockItems"
+	367	[533]	MOVE     	21 18
+	368	[533]	MOVE     	22 17
+	369	[533]	MOVE     	23 12
+	370	[533]	MOVE     	24 1
+	371	[533]	MOVE     	25 16
+	372	[533]	CALL     	19 7 2
+	373	[533]	MOVE     	16 19
+	374	[537]	SELF     	18 0 -65	; "FindPositionForItems"
+	375	[537]	MOVE     	20 2
+	376	[537]	MOVE     	21 1
+	377	[537]	MOVE     	22 5
+	378	[537]	CALL     	18 5 1
+	379	[540]	GETTABUP 	18 0 -9	; _ENV "GameConfig"
+	380	[540]	GETTABLE 	18 18 -10	; "IsTestMode"
+	381	[540]	CALL     	18 1 2
+	382	[540]	TEST     	18 0
+	383	[540]	JMP      	0 10	; to 394
+	384	[541]	SELF     	18 0 -66	; "MakeUpTestInfos"
+	385	[541]	MOVE     	20 16
+	386	[541]	MOVE     	21 5
+	387	[541]	MOVE     	22 17
+	388	[541]	MOVE     	23 7
+	389	[541]	MOVE     	24 14
+	390	[541]	MOVE     	25 13
+	391	[541]	MOVE     	26 12
+	392	[541]	MOVE     	27 2
+	393	[541]	CALL     	18 10 1
+	394	[543]	RETURN   	0 1
+constants (66) for 000002375D9F6270:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"GetOrders"
+	4	"\230\137\128\230\156\137\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\229\143\138\231\188\186\229\164\177\230\149\176\233\135\143\239\188\136\231\173\137\230\149\1361\231\186\167\230\163\139\229\173\144\239\188\137\239\188\154\n"
+	5	"RewardStockCountOn"
+	6	"CalculateOrderCodeLackNumMap"
+	7	"pairs"
+	8	1
+	9	"GameConfig"
+	10	"IsTestMode"
+	11	" : "
+	12	"\n"
+	13	"GetCodeCountMap"
+	14	"GetRequirements"
+	15	nil
+	16	"m_orderBoostItemConfigsaved"
+	17	"ItemDataModel"
+	18	"GetModelConfig"
+	19	"item_type"
+	20	"level_min"
+	21	"level_max"
+	22	"LevelModel"
+	23	"GetCurrentLevel"
+	24	"GetChainId"
+	25	"GetChainLevel"
+	26	"Mathf"
+	27	"Pow"
+	28	2
+	29	"math"
+	30	"max"
+	31	3
+	32	"min"
+	33	100
+	34	5
+	35	"table"
+	36	"insert"
+	37	"IsUnlocked"
+	38	"ItemType"
+	39	"Weight"
+	40	"Table"
+	41	"DeepCopy"
+	42	""
+	43	"EOrderBoostType"
+	44	"Super"
+	45	"score_pro_sum"
+	46	"score_sum"
+	47	0
+	48	"\226\128\148\226\128\148\232\174\162\229\141\149\230\163\139\229\173\144\229\157\135\229\183\178\232\142\183\229\190\151 / \230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\228\184\141\229\173\152\229\156\168\229\175\185\229\186\148\233\133\141\231\189\174\227\128\130\233\154\143\230\156\186\233\128\137\229\143\150\229\183\178\232\167\163\233\148\129\230\163\139\229\173\144\226\128\148\226\128\148\n"
+	49	"RandomChooseUnlockItems"
+	50	"\226\128\148\226\128\148\232\174\162\229\141\149\230\163\139\229\173\144\230\156\170\229\133\168\233\131\168\232\142\183\229\190\151\239\188\140\228\184\148\229\173\152\229\156\168\229\175\185\229\186\148\233\133\141\231\189\174\227\128\130\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\230\149\176\233\135\143 = "
+	51	"ListWeightSelectOne"
+	52	"weight"
+	53	"score"
+	54	"tostring"
+	55	"("
+	56	")"
+	57	" \231\188\186\229\164\177\230\149\176\233\135\143\229\143\152\229\140\150\239\188\154"
+	58	" minus "
+	59	"MathUtil"
+	60	"IntPow"
+	61	"ipairs"
+	62	"remove"
+	63	" \231\188\186\229\164\177\230\149\176\233\135\143\228\184\1860, \231\167\187\233\153\164\227\128\130"
+	64	"\229\137\169\228\189\153\229\143\175\233\128\137\230\163\139\229\173\144\230\149\176\233\135\143 = "
+	65	"FindPositionForItems"
+	66	"MakeUpTestInfos"
+locals (64) for 000002375D9F6270:
+	0	self	1	395
+	1	targetItems	1	395
+	2	FindItemsAndPos	1	395
+	3	oldRewardConfig	1	395
+	4	oldOrderConfig	1	395
+	5	oldType	1	395
+	6	currentOrders	5	395
+	7	missing_requested_items	6	395
+	8	mapItemLackNum	7	395
+	9	lackInfo	8	395
+	10	(for generator)	23	38
+	11	(for state)	23	38
+	12	(for control)	23	38
+	13	code	24	36
+	14	lack	24	36
+	15	currentItems	46	64
+	16	(for generator)	49	64
+	17	(for state)	49	64
+	18	(for control)	49	64
+	19	_	50	62
+	20	order	50	62
+	21	requireItems	52	62
+	22	(for generator)	55	62
+	23	(for state)	55	62
+	24	(for control)	55	62
+	25	_	56	60
+	26	item	56	60
+	27	randomChainByType	65	395
+	28	mapRandomChainByType	66	395
+	29	unLockItems	67	395
+	30	itemsRandomType	68	395
+	31	(for generator)	71	178
+	32	(for state)	71	178
+	33	(for control)	71	178
+	34	_	72	176
+	35	itemConfig	72	176
+	36	minLevel	81	176
+	37	maxLevel	82	176
+	38	currentLevel	86	176
+	39	(for generator)	97	164
+	40	(for state)	97	164
+	41	(for control)	97	164
+	42	waitItem	98	162
+	43	_	98	162
+	44	weight	136	162
+	45	(for generator)	181	191
+	46	(for state)	181	191
+	47	(for control)	181	191
+	48	type	182	189
+	49	weight	182	189
+	50	randomChainByTypeCache	195	395
+	51	RandomChainTarget	196	395
+	52	testInfo	199	395
+	53	totalScore	207	395
+	54	curScore	211	227
+	55	curScore	239	374
+	56	curRandomItems	251	357
+	57	targetOne	256	357
+	58	tempLevel	297	357
+	59	(for generator)	332	357
+	60	(for state)	332	357
+	61	(for control)	332	357
+	62	i	333	355
+	63	data	333	355
+upvalues (1) for 000002375D9F6270:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:545,557> (27 instructions at 000002375D9F64F0)
+4 params, 13 slots, 1 upvalue, 6 locals, 7 constants, 0 functions
+	1	[547]	NEWTABLE 	4 0 0
+	2	[548]	NEWTABLE 	5 0 0
+	3	[550]	GETTABUP 	6 0 -1	; _ENV "GM"
+	4	[550]	GETTABLE 	6 6 -2	; "ConfigModel"
+	5	[550]	SELF     	6 6 -3	; "IsServerControlOpen"
+	6	[550]	GETTABUP 	8 0 -4	; _ENV "EGeneralConfType"
+	7	[550]	GETTABLE 	8 8 -5	; "ItemRewardIntelligent"
+	8	[550]	CALL     	6 3 2
+	9	[550]	TEST     	6 0
+	10	[550]	JMP      	0 8	; to 19
+	11	[551]	SELF     	6 0 -6	; "IntelligentGenerateSmileItem"
+	12	[551]	MOVE     	8 4
+	13	[551]	MOVE     	9 5
+	14	[551]	MOVE     	10 1
+	15	[551]	MOVE     	11 2
+	16	[551]	MOVE     	12 3
+	17	[551]	CALL     	6 7 1
+	18	[551]	JMP      	0 7	; to 26
+	19	[553]	SELF     	6 0 -7	; "ClassicGenerateSmileItem"
+	20	[553]	MOVE     	8 4
+	21	[553]	MOVE     	9 5
+	22	[553]	MOVE     	10 1
+	23	[553]	MOVE     	11 2
+	24	[553]	MOVE     	12 3
+	25	[553]	CALL     	6 7 1
+	26	[556]	RETURN   	5 2
+	27	[557]	RETURN   	0 1
+constants (7) for 000002375D9F64F0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"ItemRewardIntelligent"
+	6	"IntelligentGenerateSmileItem"
+	7	"ClassicGenerateSmileItem"
+locals (6) for 000002375D9F64F0:
+	0	self	1	28
+	1	oldRewardConfig	1	28
+	2	oldOrderConfig	1	28
+	3	oldType	1	28
+	4	targetItems	2	28
+	5	FindItemsAndPos	3	28
+upvalues (1) for 000002375D9F64F0:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:559,594> (85 instructions at 000002375D9F69F0)
+4 params, 21 slots, 1 upvalue, 21 locals, 28 constants, 0 functions
+	1	[561]	GETTABUP 	4 0 -1	; _ENV "BoardPosition"
+	2	[561]	GETTABLE 	4 4 -2	; "Create"
+	3	[561]	LOADK    	5 -3	; 7
+	4	[561]	LOADK    	6 -4	; 1
+	5	[561]	CALL     	4 3 2
+	6	[563]	GETTABUP 	5 0 -5	; _ENV "GM"
+	7	[563]	GETTABLE 	5 5 -6	; "MainBoardModel"
+	8	[563]	SELF     	5 5 -7	; "FindEmptyPositionInSpreadOrderWithNum"
+	9	[563]	MOVE     	7 4
+	10	[563]	LOADNIL  	8 0
+	11	[563]	LEN      	9 2
+	12	[563]	LOADBOOL 	10 1 0
+	13	[563]	CALL     	5 6 2
+	14	[565]	NEWTABLE 	6 0 0
+	15	[566]	GETTABUP 	7 0 -8	; _ENV "ipairs"
+	16	[566]	MOVE     	8 5
+	17	[566]	CALL     	7 2 4
+	18	[566]	JMP      	0 9	; to 28
+	19	[567]	GETTABUP 	12 0 -9	; _ENV "table"
+	20	[567]	GETTABLE 	12 12 -10	; "insert"
+	21	[567]	MOVE     	13 6
+	22	[567]	NEWTABLE 	14 0 2
+	23	[568]	SETTABLE 	14 -11 11	; "position" -
+	24	[569]	GETTABLE 	15 2 10
+	25	[569]	GETTABLE 	15 15 -13	; "item_type"
+	26	[569]	SETTABLE 	14 -12 15	; "code" -
+	27	[567]	CALL     	12 3 1
+	28	[566]	TFORCALL 	7 2
+	29	[566]	TFORLOOP 	9 -11	; to 19
+	30	[573]	GETTABUP 	7 0 -5	; _ENV "GM"
+	31	[573]	GETTABLE 	7 7 -6	; "MainBoardModel"
+	32	[573]	SELF     	7 7 -14	; "GenerateItems"
+	33	[573]	MOVE     	9 6
+	34	[573]	CALL     	7 3 2
+	35	[575]	NEWTABLE 	8 0 0
+	36	[576]	GETTABUP 	9 0 -8	; _ENV "ipairs"
+	37	[576]	MOVE     	10 2
+	38	[576]	CALL     	9 2 4
+	39	[576]	JMP      	0 36	; to 76
+	40	[577]	GETTABLE 	14 5 12
+	41	[579]	LOADNIL  	15 0
+	42	[580]	EQ       	1 14 -15	; - nil
+	43	[580]	JMP      	0 2	; to 46
+	44	[581]	GETTABLE 	15 7 12
+	45	[581]	JMP      	0 5	; to 51
+	46	[583]	GETTABUP 	16 0 -9	; _ENV "table"
+	47	[583]	GETTABLE 	16 16 -10	; "insert"
+	48	[583]	MOVE     	17 8
+	49	[583]	GETTABLE 	18 13 -13	; "item_type"
+	50	[583]	CALL     	16 3 1
+	51	[586]	GETTABUP 	16 0 -5	; _ENV "GM"
+	52	[586]	GETTABLE 	16 16 -16	; "BIManager"
+	53	[586]	SELF     	16 16 -17	; "LogAcquire"
+	54	[586]	GETTABLE 	18 13 -13	; "item_type"
+	55	[586]	LOADK    	19 -4	; 1
+	56	[586]	GETTABUP 	20 0 -18	; _ENV "EOrderBoostType"
+	57	[586]	GETTABLE 	20 20 -19	; "Super"
+	58	[586]	EQ       	0 3 20
+	59	[586]	JMP      	0 4	; to 64
+	60	[586]	GETTABUP 	20 0 -20	; _ENV "EBIType"
+	61	[586]	GETTABLE 	20 20 -21	; "OrderBoostProAcquireItems"
+	62	[586]	TEST     	20 1
+	63	[586]	JMP      	0 2	; to 66
+	64	[586]	GETTABUP 	20 0 -20	; _ENV "EBIType"
+	65	[586]	GETTABLE 	20 20 -22	; "OrderBoostAcquireItems"
+	66	[586]	CALL     	16 5 1
+	67	[587]	GETTABUP 	16 0 -9	; _ENV "table"
+	68	[587]	GETTABLE 	16 16 -10	; "insert"
+	69	[587]	MOVE     	17 1
+	70	[587]	NEWTABLE 	18 0 3
+	71	[588]	SETTABLE 	18 -23 14	; "Pos" -
+	72	[589]	GETTABLE 	19 13 -13	; "item_type"
+	73	[589]	SETTABLE 	18 -24 19	; "itemType" -
+	74	[590]	SETTABLE 	18 -25 15	; "itemModel" -
+	75	[587]	CALL     	16 3 1
+	76	[576]	TFORCALL 	9 2
+	77	[576]	TFORLOOP 	11 -38	; to 40
+	78	[593]	GETTABUP 	9 0 -5	; _ENV "GM"
+	79	[593]	GETTABLE 	9 9 -6	; "MainBoardModel"
+	80	[593]	SELF     	9 9 -26	; "CacheItems"
+	81	[593]	MOVE     	11 8
+	82	[593]	GETTABUP 	12 0 -27	; _ENV "CacheItemType"
+	83	[593]	GETTABLE 	12 12 -28	; "Type2"
+	84	[593]	CALL     	9 4 1
+	85	[594]	RETURN   	0 1
+constants (28) for 000002375D9F69F0:
+	1	"BoardPosition"
+	2	"Create"
+	3	7
+	4	1
+	5	"GM"
+	6	"MainBoardModel"
+	7	"FindEmptyPositionInSpreadOrderWithNum"
+	8	"ipairs"
+	9	"table"
+	10	"insert"
+	11	"position"
+	12	"code"
+	13	"item_type"
+	14	"GenerateItems"
+	15	nil
+	16	"BIManager"
+	17	"LogAcquire"
+	18	"EOrderBoostType"
+	19	"Super"
+	20	"EBIType"
+	21	"OrderBoostProAcquireItems"
+	22	"OrderBoostAcquireItems"
+	23	"Pos"
+	24	"itemType"
+	25	"itemModel"
+	26	"CacheItems"
+	27	"CacheItemType"
+	28	"Type2"
+locals (21) for 000002375D9F69F0:
+	0	self	1	86
+	1	FindItemsAndPos	1	86
+	2	targetItems	1	86
+	3	oldType	1	86
+	4	boarNewPos	6	86
+	5	targetPos	14	86
+	6	AddItems	15	86
+	7	(for generator)	18	30
+	8	(for state)	18	30
+	9	(for control)	18	30
+	10	index	19	28
+	11	Pos	19	28
+	12	listItemModel	35	86
+	13	cacheItems	36	86
+	14	(for generator)	39	78
+	15	(for state)	39	78
+	16	(for control)	39	78
+	17	index	40	76
+	18	itemType	40	76
+	19	Pos	41	76
+	20	itemModel	42	76
+upvalues (1) for 000002375D9F69F0:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:598,617> (42 instructions at 000002375D9F5AF0)
+1 param, 11 slots, 2 upvalues, 10 locals, 17 constants, 0 functions
+	1	[599]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[599]	SELF     	1 1 -2	; "GetValue"
+	3	[599]	GETTABUP 	3 0 -3	; strDBKeys "CannonBoosterRewardTimes"
+	4	[599]	LOADK    	4 -4	; "value"
+	5	[599]	CALL     	1 4 2
+	6	[599]	TEST     	1 1
+	7	[599]	JMP      	0 1	; to 9
+	8	[599]	LOADK    	1 -5	; 0
+	9	[600]	ADD      	1 1 -6	; - 1
+	10	[601]	GETTABLE 	2 0 -1	; "m_dbTable"
+	11	[601]	SELF     	2 2 -7	; "Set"
+	12	[601]	GETTABUP 	4 0 -3	; strDBKeys "CannonBoosterRewardTimes"
+	13	[601]	LOADK    	5 -4	; "value"
+	14	[601]	MOVE     	6 1
+	15	[601]	CALL     	2 5 1
+	16	[603]	GETTABUP 	2 1 -8	; _ENV "GM"
+	17	[603]	GETTABLE 	2 2 -9	; "LevelModel"
+	18	[603]	SELF     	2 2 -10	; "GetCurrentLevel"
+	19	[603]	CALL     	2 2 2
+	20	[604]	LOADNIL  	3 0
+	21	[605]	NEWTABLE 	4 0 0
+	22	[608]	GETTABUP 	5 1 -11	; _ENV "ipairs"
+	23	[608]	GETTABLE 	6 0 -12	; "m_orderBoostExtraRewardConfig"
+	24	[608]	CALL     	5 2 4
+	25	[608]	JMP      	0 8	; to 34
+	26	[609]	GETTABLE 	10 9 -13	; "level_min"
+	27	[609]	LE       	0 10 2
+	28	[609]	JMP      	0 5	; to 34
+	29	[609]	GETTABLE 	10 9 -14	; "level_max"
+	30	[609]	LE       	0 2 10
+	31	[609]	JMP      	0 2	; to 34
+	32	[611]	GETTABLE 	3 9 -15	; "score"
+	33	[611]	JMP      	0 2	; to 36
+	34	[608]	TFORCALL 	5 2
+	35	[608]	TFORLOOP 	7 -10	; to 26
+	36	[616]	GETTABUP 	5 1 -16	; _ENV "RandomGenerateCodeHelper"
+	37	[616]	GETTABLE 	5 5 -17	; "GetCannonReward"
+	38	[616]	MOVE     	6 1
+	39	[616]	MOVE     	7 3
+	40	[616]	TAILCALL 	5 3 0
+	41	[616]	RETURN   	5 0
+	42	[617]	RETURN   	0 1
+constants (17) for 000002375D9F5AF0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CannonBoosterRewardTimes"
+	4	"value"
+	5	0
+	6	1
+	7	"Set"
+	8	"GM"
+	9	"LevelModel"
+	10	"GetCurrentLevel"
+	11	"ipairs"
+	12	"m_orderBoostExtraRewardConfig"
+	13	"level_min"
+	14	"level_max"
+	15	"score"
+	16	"RandomGenerateCodeHelper"
+	17	"GetCannonReward"
+locals (10) for 000002375D9F5AF0:
+	0	self	1	43
+	1	rewardTimes	9	43
+	2	currentLevel	20	43
+	3	cannonScore	21	43
+	4	FindItemsAndPos	22	43
+	5	(for generator)	25	36
+	6	(for state)	25	36
+	7	(for control)	25	36
+	8	_	26	34
+	9	config	26	34
+upvalues (2) for 000002375D9F5AF0:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:622,636> (40 instructions at 000002375D9F5C70)
+6 params, 12 slots, 1 upvalue, 7 locals, 14 constants, 0 functions
+	1	[623]	GETTABUP 	6 0 -1	; _ENV "GameConfig"
+	2	[623]	GETTABLE 	6 6 -2	; "IsTestMode"
+	3	[623]	CALL     	6 1 2
+	4	[623]	TEST     	6 0
+	5	[623]	JMP      	0 7	; to 13
+	6	[624]	MOVE     	6 5
+	7	[624]	LOADK    	7 -3	; "\233\154\143\230\156\186\230\138\189\229\143\150\230\163\139\229\173\144, \229\189\147\229\137\141\229\136\134\230\149\176 / \231\172\145\232\132\184\230\128\187\229\136\134\230\149\176 = "
+	8	[624]	MOVE     	8 1
+	9	[624]	LOADK    	9 -4	; " / "
+	10	[624]	MOVE     	10 2
+	11	[624]	LOADK    	11 -5	; "\n"
+	12	[624]	CONCAT   	5 6 11
+	13	[626]	LT       	0 1 2
+	14	[626]	JMP      	0 24	; to 39
+	15	[627]	GETTABUP 	6 0 -6	; _ENV "Table"
+	16	[627]	GETTABLE 	6 6 -7	; "ListWeightSelectOne"
+	17	[627]	MOVE     	7 3
+	18	[627]	LOADK    	8 -8	; "weight"
+	19	[627]	CALL     	6 3 2
+	20	[628]	GETTABLE 	7 6 -9	; "score"
+	21	[628]	ADD      	1 1 7
+	22	[629]	GETTABUP 	7 0 -10	; _ENV "table"
+	23	[629]	GETTABLE 	7 7 -11	; "insert"
+	24	[629]	MOVE     	8 4
+	25	[629]	MOVE     	9 6
+	26	[629]	CALL     	7 3 1
+	27	[631]	GETTABUP 	7 0 -1	; _ENV "GameConfig"
+	28	[631]	GETTABLE 	7 7 -2	; "IsTestMode"
+	29	[631]	CALL     	7 1 2
+	30	[631]	TEST     	7 0
+	31	[631]	JMP      	0 -19	; to 13
+	32	[632]	MOVE     	7 5
+	33	[632]	GETTABUP 	8 0 -12	; _ENV "tostring"
+	34	[632]	GETTABLE 	9 6 -13	; "item_type"
+	35	[632]	CALL     	8 2 2
+	36	[632]	LOADK    	9 -14	; " "
+	37	[632]	CONCAT   	5 7 9
+	38	[633]	JMP      	0 -26	; to 13
+	39	[635]	RETURN   	5 2
+	40	[636]	RETURN   	0 1
+constants (14) for 000002375D9F5C70:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"\233\154\143\230\156\186\230\138\189\229\143\150\230\163\139\229\173\144, \229\189\147\229\137\141\229\136\134\230\149\176 / \231\172\145\232\132\184\230\128\187\229\136\134\230\149\176 = "
+	4	" / "
+	5	"\n"
+	6	"Table"
+	7	"ListWeightSelectOne"
+	8	"weight"
+	9	"score"
+	10	"table"
+	11	"insert"
+	12	"tostring"
+	13	"item_type"
+	14	" "
+locals (7) for 000002375D9F5C70:
+	0	self	1	41
+	1	curScore	1	41
+	2	totalScore	1	41
+	3	unlockItems	1	41
+	4	targetItems	1	41
+	5	testInfo	1	41
+	6	targetOne	20	38
+upvalues (1) for 000002375D9F5C70:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:638,677> (136 instructions at 000002375D9F62F0)
+9 params, 23 slots, 1 upvalue, 35 locals, 36 constants, 0 functions
+	1	[639]	LOADK    	9 -1	; ""
+	2	[640]	MOVE     	10 9
+	3	[640]	LOADK    	11 -2	; "\229\189\147\229\137\141\231\177\187\229\158\139\239\188\154"
+	4	[640]	GETTABUP 	12 0 -3	; _ENV "tostring"
+	5	[640]	GETTABUP 	13 0 -4	; _ENV "EOrderBoostType"
+	6	[640]	GETTABLE 	13 13 -5	; "Super"
+	7	[640]	EQ       	0 2 13
+	8	[640]	JMP      	0 3	; to 12
+	9	[640]	LOADK    	13 -6	; "\232\182\133\231\186\167\231\172\145\232\132\184"
+	10	[640]	TEST     	13 1
+	11	[640]	JMP      	0 1	; to 13
+	12	[640]	LOADK    	13 -7	; "\230\153\174\233\128\154\231\172\145\232\132\184"
+	13	[640]	CALL     	12 2 2
+	14	[640]	LOADK    	13 -8	; "\n"
+	15	[640]	CONCAT   	9 10 13
+	16	[641]	SELF     	10 0 -9	; "RewardStockCountOn"
+	17	[641]	CALL     	10 2 2
+	18	[641]	TEST     	10 0
+	19	[641]	JMP      	0 3	; to 23
+	20	[642]	MOVE     	10 9
+	21	[642]	LOADK    	11 -10	; "\230\150\176\229\143\145\229\165\150\233\128\187\232\190\145\229\183\178\231\148\159\230\149\136\239\188\136v3.88\239\188\137\n"
+	22	[642]	CONCAT   	9 10 11
+	23	[644]	MOVE     	10 9
+	24	[644]	LOADK    	11 -11	; "\229\165\150\229\138\177\230\163\139\229\173\144\230\128\187\229\136\134\230\149\176\239\188\154"
+	25	[644]	GETTABUP 	12 0 -3	; _ENV "tostring"
+	26	[644]	MOVE     	13 3
+	27	[644]	CALL     	12 2 2
+	28	[644]	LOADK    	13 -8	; "\n"
+	29	[644]	CONCAT   	9 10 13
+	30	[646]	MOVE     	10 9
+	31	[646]	LOADK    	11 -8	; "\n"
+	32	[646]	CONCAT   	9 10 11
+	33	[647]	MOVE     	10 9
+	34	[647]	LOADK    	11 -12	; "\229\189\147\229\137\141\232\174\162\229\141\149\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\229\136\151\232\161\168"
+	35	[647]	SELF     	12 0 -9	; "RewardStockCountOn"
+	36	[647]	CALL     	12 2 2
+	37	[647]	TEST     	12 0
+	38	[647]	JMP      	0 3	; to 42
+	39	[647]	LOADK    	12 -13	; "(\228\189\142\231\173\137\231\186\167\230\163\139\229\173\144\229\144\136\230\136\144\232\174\161\231\174\151)"
+	40	[647]	TEST     	12 1
+	41	[647]	JMP      	0 1	; to 43
+	42	[647]	LOADK    	12 -1	; ""
+	43	[647]	LOADK    	13 -14	; "\239\188\154\n"
+	44	[647]	CONCAT   	9 10 13
+	45	[648]	GETTABUP 	10 0 -15	; _ENV "pairs"
+	46	[648]	MOVE     	11 4
+	47	[648]	CALL     	10 2 4
+	48	[648]	JMP      	0 4	; to 53
+	49	[649]	MOVE     	15 9
+	50	[649]	MOVE     	16 13
+	51	[649]	LOADK    	17 -16	; " "
+	52	[649]	CONCAT   	9 15 17
+	53	[648]	TFORCALL 	10 2
+	54	[648]	TFORLOOP 	12 -6	; to 49
+	55	[652]	MOVE     	10 9
+	56	[652]	LOADK    	11 -17	; "\n\n"
+	57	[652]	CONCAT   	9 10 11
+	58	[653]	MOVE     	10 9
+	59	[653]	LOADK    	11 -18	; "\229\189\147\229\137\141\230\178\161\230\156\137\233\128\137\228\184\173\231\154\132\230\163\139\229\173\144 \229\143\175\233\128\137\230\139\169\231\154\132\231\148\159\230\136\144\231\154\132\230\163\139\229\173\144 \n"
+	60	[653]	CONCAT   	9 10 11
+	61	[654]	GETTABUP 	10 0 -15	; _ENV "pairs"
+	62	[654]	MOVE     	11 5
+	63	[654]	CALL     	10 2 4
+	64	[654]	JMP      	0 20	; to 85
+	65	[655]	MOVE     	15 9
+	66	[655]	GETTABLE 	16 14 -19	; "ItemType"
+	67	[655]	LOADK    	17 -20	; " \230\157\131\233\135\141 = "
+	68	[655]	GETTABLE 	18 14 -21	; "Weight"
+	69	[655]	LOADK    	19 -22	; " \229\143\175\233\128\137\233\133\141\231\189\174:\n    "
+	70	[655]	CONCAT   	9 15 19
+	71	[657]	GETTABUP 	15 0 -15	; _ENV "pairs"
+	72	[657]	GETTABLE 	16 14 -19	; "ItemType"
+	73	[657]	GETTABLE 	16 6 16
+	74	[657]	CALL     	15 2 4
+	75	[657]	JMP      	0 4	; to 80
+	76	[658]	MOVE     	20 9
+	77	[658]	GETTABLE 	21 19 -23	; "item_type"
+	78	[658]	LOADK    	22 -24	; " / "
+	79	[658]	CONCAT   	9 20 22
+	80	[657]	TFORCALL 	15 2
+	81	[657]	TFORLOOP 	17 -6	; to 76
+	82	[660]	MOVE     	15 9
+	83	[660]	LOADK    	16 -8	; "\n"
+	84	[660]	CONCAT   	9 15 16
+	85	[654]	TFORCALL 	10 2
+	86	[654]	TFORLOOP 	12 -22	; to 65
+	87	[663]	MOVE     	10 9
+	88	[663]	LOADK    	11 -8	; "\n"
+	89	[663]	CONCAT   	9 10 11
+	90	[664]	MOVE     	10 9
+	91	[664]	LOADK    	11 -25	; "\231\142\169\229\174\182\229\183\178\231\187\143\232\167\163\233\148\129\231\154\132\229\143\175\233\128\137\230\139\169\230\163\139\229\173\144\233\133\141\231\189\174\239\188\136\229\186\148\231\148\168\228\186\142\233\154\143\230\156\186\229\143\145\230\148\190\230\181\129\231\168\139\239\188\137 \n"
+	92	[664]	CONCAT   	9 10 11
+	93	[665]	GETTABUP 	10 0 -15	; _ENV "pairs"
+	94	[665]	MOVE     	11 7
+	95	[665]	CALL     	10 2 4
+	96	[665]	JMP      	0 7	; to 104
+	97	[666]	MOVE     	15 9
+	98	[666]	GETTABUP 	16 0 -26	; _ENV "json"
+	99	[666]	GETTABLE 	16 16 -27	; "encode"
+	100	[666]	MOVE     	17 14
+	101	[666]	CALL     	16 2 2
+	102	[666]	LOADK    	17 -8	; "\n"
+	103	[666]	CONCAT   	9 15 17
+	104	[665]	TFORCALL 	10 2
+	105	[665]	TFORLOOP 	12 -9	; to 97
+	106	[669]	MOVE     	10 9
+	107	[669]	LOADK    	11 -8	; "\n"
+	108	[669]	MOVE     	12 1
+	109	[669]	LOADK    	13 -8	; "\n"
+	110	[669]	CONCAT   	9 10 13
+	111	[672]	MOVE     	10 9
+	112	[672]	LOADK    	11 -28	; "\230\156\128\231\187\136\231\154\132\230\163\139\229\173\144\231\154\132\228\189\141\231\189\174\229\146\140\228\191\161\230\129\175\n"
+	113	[672]	CONCAT   	9 10 11
+	114	[673]	GETTABUP 	10 0 -29	; _ENV "ipairs"
+	115	[673]	MOVE     	11 8
+	116	[673]	CALL     	10 2 4
+	117	[673]	JMP      	0 12	; to 130
+	118	[674]	MOVE     	15 9
+	119	[674]	LOADK    	16 -30	; "itemType: "
+	120	[674]	GETTABLE 	17 14 -31	; "itemType"
+	121	[674]	LOADK    	18 -32	; ",   pos: "
+	122	[674]	GETTABUP 	19 0 -3	; _ENV "tostring"
+	123	[674]	GETTABLE 	20 14 -33	; "Pos"
+	124	[674]	TEST     	20 1
+	125	[674]	JMP      	0 1	; to 127
+	126	[674]	LOADK    	20 -34	; "\231\188\147\229\173\152\233\152\159\229\136\151"
+	127	[674]	CALL     	19 2 2
+	128	[674]	LOADK    	20 -8	; "\n"
+	129	[674]	CONCAT   	9 15 20
+	130	[673]	TFORCALL 	10 2
+	131	[673]	TFORLOOP 	12 -14	; to 118
+	132	[676]	GETTABUP 	10 0 -35	; _ENV "Log"
+	133	[676]	GETTABLE 	10 10 -36	; "Info"
+	134	[676]	MOVE     	11 9
+	135	[676]	CALL     	10 2 1
+	136	[677]	RETURN   	0 1
+constants (36) for 000002375D9F62F0:
+	1	""
+	2	"\229\189\147\229\137\141\231\177\187\229\158\139\239\188\154"
+	3	"tostring"
+	4	"EOrderBoostType"
+	5	"Super"
+	6	"\232\182\133\231\186\167\231\172\145\232\132\184"
+	7	"\230\153\174\233\128\154\231\172\145\232\132\184"
+	8	"\n"
+	9	"RewardStockCountOn"
+	10	"\230\150\176\229\143\145\229\165\150\233\128\187\232\190\145\229\183\178\231\148\159\230\149\136\239\188\136v3.88\239\188\137\n"
+	11	"\229\165\150\229\138\177\230\163\139\229\173\144\230\128\187\229\136\134\230\149\176\239\188\154"
+	12	"\229\189\147\229\137\141\232\174\162\229\141\149\230\156\170\232\142\183\229\190\151\230\163\139\229\173\144\229\136\151\232\161\168"
+	13	"(\228\189\142\231\173\137\231\186\167\230\163\139\229\173\144\229\144\136\230\136\144\232\174\161\231\174\151)"
+	14	"\239\188\154\n"
+	15	"pairs"
+	16	" "
+	17	"\n\n"
+	18	"\229\189\147\229\137\141\230\178\161\230\156\137\233\128\137\228\184\173\231\154\132\230\163\139\229\173\144 \229\143\175\233\128\137\230\139\169\231\154\132\231\148\159\230\136\144\231\154\132\230\163\139\229\173\144 \n"
+	19	"ItemType"
+	20	" \230\157\131\233\135\141 = "
+	21	"Weight"
+	22	" \229\143\175\233\128\137\233\133\141\231\189\174:\n    "
+	23	"item_type"
+	24	" / "
+	25	"\231\142\169\229\174\182\229\183\178\231\187\143\232\167\163\233\148\129\231\154\132\229\143\175\233\128\137\230\139\169\230\163\139\229\173\144\233\133\141\231\189\174\239\188\136\229\186\148\231\148\168\228\186\142\233\154\143\230\156\186\229\143\145\230\148\190\230\181\129\231\168\139\239\188\137 \n"
+	26	"json"
+	27	"encode"
+	28	"\230\156\128\231\187\136\231\154\132\230\163\139\229\173\144\231\154\132\228\189\141\231\189\174\229\146\140\228\191\161\230\129\175\n"
+	29	"ipairs"
+	30	"itemType: "
+	31	"itemType"
+	32	",   pos: "
+	33	"Pos"
+	34	"\231\188\147\229\173\152\233\152\159\229\136\151"
+	35	"Log"
+	36	"Info"
+locals (35) for 000002375D9F62F0:
+	0	self	1	137
+	1	testInfo	1	137
+	2	oldType	1	137
+	3	totalScore	1	137
+	4	missing_requested_items	1	137
+	5	randomChainByType	1	137
+	6	itemsRandomType	1	137
+	7	unLockItems	1	137
+	8	FindItemsAndPos	1	137
+	9	str	2	137
+	10	(for generator)	48	55
+	11	(for state)	48	55
+	12	(for control)	48	55
+	13	waitItem	49	53
+	14	_	49	53
+	15	(for generator)	64	87
+	16	(for state)	64	87
+	17	(for control)	64	87
+	18	itemType	65	85
+	19	itemConfig	65	85
+	20	(for generator)	75	82
+	21	(for state)	75	82
+	22	(for control)	75	82
+	23	_	76	80
+	24	item	76	80
+	25	(for generator)	96	106
+	26	(for state)	96	106
+	27	(for control)	96	106
+	28	_	97	104
+	29	itemConfig	97	104
+	30	(for generator)	117	132
+	31	(for state)	117	132
+	32	(for control)	117	132
+	33	_	118	130
+	34	item	118	130
+upvalues (1) for 000002375D9F62F0:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:679,682> (8 instructions at 000002375D9F5EF0)
+1 param, 4 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[680]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[680]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[680]	SELF     	1 1 -3	; "IsServerControlOpen"
+	4	[680]	GETTABUP 	3 0 -4	; _ENV "EGeneralConfType"
+	5	[680]	GETTABLE 	3 3 -5	; "RewardStockCount"
+	6	[680]	TAILCALL 	1 3 0
+	7	[680]	RETURN   	1 0
+	8	[682]	RETURN   	0 1
+constants (5) for 000002375D9F5EF0:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"RewardStockCount"
+locals (1) for 000002375D9F5EF0:
+	0	self	1	9
+upvalues (1) for 000002375D9F5EF0:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:684,693> (23 instructions at 000002375D9F5D70)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[685]	SELF     	1 0 -1	; "GetState"
+	2	[685]	CALL     	1 2 2
+	3	[685]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[685]	GETTABLE 	2 2 -3	; "Started"
+	5	[685]	EQ       	1 1 2
+	6	[685]	JMP      	0 2	; to 9
+	7	[686]	LOADBOOL 	1 0 0
+	8	[686]	RETURN   	1 2
+	9	[689]	GETTABLE 	1 0 -4	; "m_curInfo"
+	10	[689]	EQ       	0 1 -5	; - nil
+	11	[689]	JMP      	0 2	; to 14
+	12	[690]	LOADBOOL 	1 0 0
+	13	[690]	RETURN   	1 2
+	14	[692]	GETTABLE 	1 0 -4	; "m_curInfo"
+	15	[692]	GETTABLE 	1 1 -6	; "curScore"
+	16	[692]	GETTABLE 	2 0 -4	; "m_curInfo"
+	17	[692]	GETTABLE 	2 2 -7	; "MaxScore"
+	18	[692]	LE       	1 2 1
+	19	[692]	JMP      	0 1	; to 21
+	20	[692]	LOADBOOL 	1 0 1
+	21	[692]	LOADBOOL 	1 1 0
+	22	[692]	RETURN   	1 2
+	23	[693]	RETURN   	0 1
+constants (7) for 000002375D9F5D70:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_curInfo"
+	5	nil
+	6	"curScore"
+	7	"MaxScore"
+locals (1) for 000002375D9F5D70:
+	0	self	1	24
+upvalues (1) for 000002375D9F5D70:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:695,697> (4 instructions at 000002375D9F65F0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[696]	GETTABLE 	1 0 -1	; "m_curInfo"
+	2	[696]	GETTABLE 	1 1 -2	; "curScore"
+	3	[696]	RETURN   	1 2
+	4	[697]	RETURN   	0 1
+constants (2) for 000002375D9F65F0:
+	1	"m_curInfo"
+	2	"curScore"
+locals (1) for 000002375D9F65F0:
+	0	self	1	5
+upvalues (0) for 000002375D9F65F0:
+
+function <OrderBoostModel.lua:699,701> (4 instructions at 000002375D9F5BF0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[700]	GETTABLE 	1 0 -1	; "m_curInfo"
+	2	[700]	GETTABLE 	1 1 -2	; "MaxScore"
+	3	[700]	RETURN   	1 2
+	4	[701]	RETURN   	0 1
+constants (2) for 000002375D9F5BF0:
+	1	"m_curInfo"
+	2	"MaxScore"
+locals (1) for 000002375D9F5BF0:
+	0	self	1	5
+upvalues (0) for 000002375D9F5BF0:
+
+function <OrderBoostModel.lua:704,706> (3 instructions at 000002375D9F5FF0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[705]	GETTABLE 	1 0 -1	; "m_FinishSmile"
+	2	[705]	RETURN   	1 2
+	3	[706]	RETURN   	0 1
+constants (1) for 000002375D9F5FF0:
+	1	"m_FinishSmile"
+locals (1) for 000002375D9F5FF0:
+	0	self	1	4
+upvalues (0) for 000002375D9F5FF0:
+
+function <OrderBoostModel.lua:708,725> (45 instructions at 000002375D9F5F70)
+1 param, 11 slots, 1 upvalue, 8 locals, 16 constants, 0 functions
+	1	[709]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[709]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[709]	SELF     	1 1 -3	; "GetServerConfigMD5"
+	4	[709]	GETTABUP 	3 0 -4	; _ENV "ServerConfigKey"
+	5	[709]	GETTABLE 	3 3 -5	; "OrderBoostProRewardConfig"
+	6	[709]	CALL     	1 3 2
+	7	[710]	GETTABLE 	2 0 -6	; "m_md5Pro"
+	8	[710]	EQ       	0 1 2
+	9	[710]	JMP      	0 1	; to 11
+	10	[711]	RETURN   	0 1
+	11	[714]	SETTABLE 	0 -6 1	; "m_md5Pro" -
+	12	[715]	GETTABUP 	2 0 -1	; _ENV "GM"
+	13	[715]	GETTABLE 	2 2 -2	; "ConfigModel"
+	14	[715]	SELF     	2 2 -7	; "GetServerConfig"
+	15	[715]	GETTABUP 	4 0 -4	; _ENV "ServerConfigKey"
+	16	[715]	GETTABLE 	4 4 -5	; "OrderBoostProRewardConfig"
+	17	[715]	CALL     	2 3 2
+	18	[717]	NEWTABLE 	3 0 0
+	19	[717]	SETTABLE 	0 -8 3	; "m_orderBoostProRewardConfig" -
+	20	[718]	GETTABUP 	3 0 -9	; _ENV "Table"
+	21	[718]	GETTABLE 	3 3 -10	; "IsEmpty"
+	22	[718]	MOVE     	4 2
+	23	[718]	CALL     	3 2 2
+	24	[718]	TEST     	3 1
+	25	[718]	JMP      	0 19	; to 45
+	26	[719]	GETTABUP 	3 0 -11	; _ENV "ipairs"
+	27	[719]	MOVE     	4 2
+	28	[719]	CALL     	3 2 4
+	29	[719]	JMP      	0 13	; to 43
+	30	[720]	GETTABUP 	8 0 -1	; _ENV "GM"
+	31	[720]	GETTABLE 	8 8 -2	; "ConfigModel"
+	32	[720]	SELF     	8 8 -12	; "GetOrderBoostProConfig"
+	33	[720]	CALL     	8 2 2
+	34	[720]	GETTABLE 	8 8 -13	; "tag"
+	35	[720]	GETTABLE 	9 7 -14	; "order_tag"
+	36	[720]	EQ       	0 8 9
+	37	[720]	JMP      	0 5	; to 43
+	38	[721]	GETTABUP 	8 0 -15	; _ENV "table"
+	39	[721]	GETTABLE 	8 8 -16	; "insert"
+	40	[721]	GETTABLE 	9 0 -8	; "m_orderBoostProRewardConfig"
+	41	[721]	MOVE     	10 7
+	42	[721]	CALL     	8 3 1
+	43	[719]	TFORCALL 	3 2
+	44	[719]	TFORLOOP 	5 -15	; to 30
+	45	[725]	RETURN   	0 1
+constants (16) for 000002375D9F5F70:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetServerConfigMD5"
+	4	"ServerConfigKey"
+	5	"OrderBoostProRewardConfig"
+	6	"m_md5Pro"
+	7	"GetServerConfig"
+	8	"m_orderBoostProRewardConfig"
+	9	"Table"
+	10	"IsEmpty"
+	11	"ipairs"
+	12	"GetOrderBoostProConfig"
+	13	"tag"
+	14	"order_tag"
+	15	"table"
+	16	"insert"
+locals (8) for 000002375D9F5F70:
+	0	self	1	46
+	1	md5	7	46
+	2	configs	18	46
+	3	(for generator)	29	45
+	4	(for state)	29	45
+	5	(for control)	29	45
+	6	_	30	43
+	7	config	30	43
+upvalues (1) for 000002375D9F5F70:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:727,735> (13 instructions at 000002375D9F6670)
+1 param, 3 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[728]	SELF     	1 0 -1	; "_LoadServerConfig"
+	2	[728]	CALL     	1 2 1
+	3	[730]	SELF     	1 0 -2	; "IsProConfigOpen"
+	4	[730]	CALL     	1 2 2
+	5	[730]	TEST     	1 0
+	6	[730]	JMP      	0 2	; to 9
+	7	[731]	SELF     	1 0 -3	; "LoadProServerConfig"
+	8	[731]	CALL     	1 2 1
+	9	[733]	SELF     	1 0 -4	; "_CheckId"
+	10	[733]	CALL     	1 2 1
+	11	[734]	SELF     	1 0 -5	; "_UpdateState"
+	12	[734]	CALL     	1 2 1
+	13	[735]	RETURN   	0 1
+constants (5) for 000002375D9F6670:
+	1	"_LoadServerConfig"
+	2	"IsProConfigOpen"
+	3	"LoadProServerConfig"
+	4	"_CheckId"
+	5	"_UpdateState"
+locals (1) for 000002375D9F6670:
+	0	self	1	14
+upvalues (0) for 000002375D9F6670:
+
+function <OrderBoostModel.lua:737,753> (30 instructions at 000002375D9F68F0)
+1 param, 8 slots, 2 upvalues, 2 locals, 17 constants, 0 functions
+	1	[738]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[738]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[738]	GETTABLE 	2 0 -3	; "m_orderBoostSlotConfigstemp"
+	4	[738]	CALL     	1 2 2
+	5	[738]	TEST     	1 0
+	6	[738]	JMP      	0 1	; to 8
+	7	[739]	RETURN   	0 1
+	8	[742]	NEWTABLE 	1 0 3
+	9	[743]	GETTABLE 	2 0 -3	; "m_orderBoostSlotConfigstemp"
+	10	[743]	SETTABLE 	1 -4 2	; "orderBoostSlotConfig2" -
+	11	[744]	GETTABLE 	2 0 -6	; "m_orderBoostRewardConfigtemp"
+	12	[744]	SETTABLE 	1 -5 2	; "orderBoostRewardConfig2" -
+	13	[745]	GETTABLE 	2 0 -8	; "m_orderBoostItemConfigtemp"
+	14	[745]	SETTABLE 	1 -7 2	; "orderBoostItemConfig2" -
+	15	[748]	GETTABLE 	2 0 -3	; "m_orderBoostSlotConfigstemp"
+	16	[748]	SETTABLE 	0 -9 2	; "m_orderBoostSlotConfigssaved" -
+	17	[749]	GETTABLE 	2 0 -6	; "m_orderBoostRewardConfigtemp"
+	18	[749]	SETTABLE 	0 -10 2	; "m_orderBoostRewardConfigsaved" -
+	19	[750]	GETTABLE 	2 0 -8	; "m_orderBoostItemConfigtemp"
+	20	[750]	SETTABLE 	0 -11 2	; "m_orderBoostItemConfigsaved" -
+	21	[752]	GETTABLE 	2 0 -12	; "m_dbTable"
+	22	[752]	SELF     	2 2 -13	; "Set"
+	23	[752]	GETTABUP 	4 1 -14	; strDBKeys "SavedIncludeConfig"
+	24	[752]	LOADK    	5 -15	; "value"
+	25	[752]	GETTABUP 	6 0 -16	; _ENV "json"
+	26	[752]	GETTABLE 	6 6 -17	; "encode"
+	27	[752]	MOVE     	7 1
+	28	[752]	CALL     	6 2 0
+	29	[752]	CALL     	2 0 1
+	30	[753]	RETURN   	0 1
+constants (17) for 000002375D9F68F0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_orderBoostSlotConfigstemp"
+	4	"orderBoostSlotConfig2"
+	5	"orderBoostRewardConfig2"
+	6	"m_orderBoostRewardConfigtemp"
+	7	"orderBoostItemConfig2"
+	8	"m_orderBoostItemConfigtemp"
+	9	"m_orderBoostSlotConfigssaved"
+	10	"m_orderBoostRewardConfigsaved"
+	11	"m_orderBoostItemConfigsaved"
+	12	"m_dbTable"
+	13	"Set"
+	14	"SavedIncludeConfig"
+	15	"value"
+	16	"json"
+	17	"encode"
+locals (2) for 000002375D9F68F0:
+	0	self	1	31
+	1	savedIncludeConfig	15	31
+upvalues (2) for 000002375D9F68F0:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:755,802> (61 instructions at 000002375D9F6170)
+2 params, 7 slots, 2 upvalues, 3 locals, 31 constants, 0 functions
+	1	[756]	GETTABUP 	2 0 -1	; _ENV "json"
+	2	[756]	GETTABLE 	2 2 -2	; "decode"
+	3	[756]	GETTABLE 	3 0 -3	; "m_dbTable"
+	4	[756]	SELF     	3 3 -4	; "GetValue"
+	5	[756]	GETTABUP 	5 1 -5	; strDBKeys "SavedIncludeConfig"
+	6	[756]	LOADK    	6 -6	; "value"
+	7	[756]	CALL     	3 4 2
+	8	[756]	TEST     	3 1
+	9	[756]	JMP      	0 1	; to 11
+	10	[756]	LOADK    	3 -7	; ""
+	11	[756]	CALL     	2 2 2
+	12	[756]	TEST     	2 1
+	13	[756]	JMP      	0 1	; to 15
+	14	[756]	NEWTABLE 	2 0 0
+	15	[757]	GETTABUP 	3 0 -8	; _ENV "Table"
+	16	[757]	GETTABLE 	3 3 -9	; "IsEmpty"
+	17	[757]	MOVE     	4 2
+	18	[757]	CALL     	3 2 2
+	19	[757]	TEST     	3 0
+	20	[757]	JMP      	0 7	; to 28
+	21	[759]	GETTABLE 	3 1 -11	; "orderBoostSlotConfig"
+	22	[759]	SETTABLE 	0 -10 3	; "m_orderBoostSlotConfigssaved" -
+	23	[762]	GETTABLE 	3 1 -13	; "orderBoostRewardConfig"
+	24	[762]	SETTABLE 	0 -12 3	; "m_orderBoostRewardConfigsaved" -
+	25	[765]	GETTABLE 	3 1 -15	; "orderBoostItemConfig"
+	26	[765]	SETTABLE 	0 -14 3	; "m_orderBoostItemConfigsaved" -
+	27	[765]	JMP      	0 6	; to 34
+	28	[769]	GETTABLE 	3 2 -16	; "orderBoostSlotConfig2"
+	29	[769]	SETTABLE 	0 -10 3	; "m_orderBoostSlotConfigssaved" -
+	30	[772]	GETTABLE 	3 2 -17	; "orderBoostRewardConfig2"
+	31	[772]	SETTABLE 	0 -12 3	; "m_orderBoostRewardConfigsaved" -
+	32	[775]	GETTABLE 	3 2 -18	; "orderBoostItemConfig2"
+	33	[775]	SETTABLE 	0 -14 3	; "m_orderBoostItemConfigsaved" -
+	34	[779]	GETTABLE 	3 1 -16	; "orderBoostSlotConfig2"
+	35	[779]	SETTABLE 	0 -19 3	; "m_orderBoostSlotConfigstemp" -
+	36	[782]	GETTABLE 	3 1 -17	; "orderBoostRewardConfig2"
+	37	[782]	SETTABLE 	0 -20 3	; "m_orderBoostRewardConfigtemp" -
+	38	[785]	GETTABLE 	3 1 -18	; "orderBoostItemConfig2"
+	39	[785]	SETTABLE 	0 -21 3	; "m_orderBoostItemConfigtemp" -
+	40	[787]	SETTABLE 	0 -22 -23	; "m_orderBoostHint" false
+	41	[792]	GETTABLE 	3 1 -25	; "orderBoostExtraRewardConfig"
+	42	[792]	SETTABLE 	0 -24 3	; "m_orderBoostExtraRewardConfig" -
+	43	[794]	GETTABLE 	3 0 -24	; "m_orderBoostExtraRewardConfig"
+	44	[794]	EQ       	0 3 -26	; - nil
+	45	[794]	JMP      	0 10	; to 56
+	46	[795]	GETTABLE 	3 0 -3	; "m_dbTable"
+	47	[795]	SELF     	3 3 -27	; "Remove"
+	48	[795]	GETTABUP 	5 1 -28	; strDBKeys "CannonBoosterRound"
+	49	[795]	LOADK    	6 -6	; "value"
+	50	[795]	CALL     	3 4 1
+	51	[796]	GETTABLE 	3 0 -3	; "m_dbTable"
+	52	[796]	SELF     	3 3 -27	; "Remove"
+	53	[796]	GETTABUP 	5 1 -29	; strDBKeys "CannonBoosterIsOpen"
+	54	[796]	LOADK    	6 -6	; "value"
+	55	[796]	CALL     	3 4 1
+	56	[799]	GETTABLE 	3 0 -30	; "m_bLateInited"
+	57	[799]	TEST     	3 0
+	58	[799]	JMP      	0 2	; to 61
+	59	[800]	SELF     	3 0 -31	; "TryCreateNewSmile"
+	60	[800]	CALL     	3 2 1
+	61	[802]	RETURN   	0 1
+constants (31) for 000002375D9F6170:
+	1	"json"
+	2	"decode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"SavedIncludeConfig"
+	6	"value"
+	7	""
+	8	"Table"
+	9	"IsEmpty"
+	10	"m_orderBoostSlotConfigssaved"
+	11	"orderBoostSlotConfig"
+	12	"m_orderBoostRewardConfigsaved"
+	13	"orderBoostRewardConfig"
+	14	"m_orderBoostItemConfigsaved"
+	15	"orderBoostItemConfig"
+	16	"orderBoostSlotConfig2"
+	17	"orderBoostRewardConfig2"
+	18	"orderBoostItemConfig2"
+	19	"m_orderBoostSlotConfigstemp"
+	20	"m_orderBoostRewardConfigtemp"
+	21	"m_orderBoostItemConfigtemp"
+	22	"m_orderBoostHint"
+	23	false
+	24	"m_orderBoostExtraRewardConfig"
+	25	"orderBoostExtraRewardConfig"
+	26	nil
+	27	"Remove"
+	28	"CannonBoosterRound"
+	29	"CannonBoosterIsOpen"
+	30	"m_bLateInited"
+	31	"TryCreateNewSmile"
+locals (3) for 000002375D9F6170:
+	0	self	1	62
+	1	config	1	62
+	2	savedIncludeConfig	15	62
+upvalues (2) for 000002375D9F6170:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:804,807> (4 instructions at 000002375D9F61F0)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[805]	SETTABLE 	0 -1 -2	; "m_bLateInited" true
+	2	[806]	SELF     	1 0 -3	; "TryCreateNewSmile"
+	3	[806]	CALL     	1 2 1
+	4	[807]	RETURN   	0 1
+constants (3) for 000002375D9F61F0:
+	1	"m_bLateInited"
+	2	true
+	3	"TryCreateNewSmile"
+locals (1) for 000002375D9F61F0:
+	0	self	1	5
+upvalues (0) for 000002375D9F61F0:
+
+function <OrderBoostModel.lua:809,812> (13 instructions at 000002375D9F63F0)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[810]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[810]	SELF     	1 1 -2	; "Set"
+	3	[810]	GETTABUP 	3 0 -3	; strDBKeys "CannonBoosterIsOpen"
+	4	[810]	LOADK    	4 -4	; "value"
+	5	[810]	LOADK    	5 -5	; "1"
+	6	[810]	CALL     	1 5 1
+	7	[811]	GETTABLE 	1 0 -1	; "m_dbTable"
+	8	[811]	SELF     	1 1 -2	; "Set"
+	9	[811]	GETTABUP 	3 0 -6	; strDBKeys "CannonBoosterShownRound"
+	10	[811]	LOADK    	4 -4	; "value"
+	11	[811]	LOADK    	5 -7	; 0
+	12	[811]	CALL     	1 5 1
+	13	[812]	RETURN   	0 1
+constants (7) for 000002375D9F63F0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CannonBoosterIsOpen"
+	4	"value"
+	5	"1"
+	6	"CannonBoosterShownRound"
+	7	0
+locals (1) for 000002375D9F63F0:
+	0	self	1	14
+upvalues (1) for 000002375D9F63F0:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:814,916> (270 instructions at 000002375D9F6370)
+1 param, 18 slots, 2 upvalues, 27 locals, 90 constants, 0 functions
+	1	[816]	SELF     	1 0 -1	; "GetState"
+	2	[816]	CALL     	1 2 2
+	3	[816]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[816]	GETTABLE 	2 2 -3	; "Started"
+	5	[816]	EQ       	1 1 2
+	6	[816]	JMP      	0 1	; to 8
+	7	[817]	RETURN   	0 1
+	8	[821]	GETTABLE 	1 0 -4	; "m_curInfo"
+	9	[821]	EQ       	1 1 -5	; - nil
+	10	[821]	JMP      	0 1	; to 12
+	11	[822]	RETURN   	0 1
+	12	[826]	GETTABLE 	1 0 -6	; "m_orderBoostExtraRewardConfig"
+	13	[826]	EQ       	0 1 -5	; - nil
+	14	[826]	JMP      	0 11	; to 26
+	15	[827]	GETTABLE 	1 0 -7	; "m_dbTable"
+	16	[827]	SELF     	1 1 -8	; "Remove"
+	17	[827]	GETTABUP 	3 1 -9	; strDBKeys "CannonBoosterRound"
+	18	[827]	LOADK    	4 -10	; "value"
+	19	[827]	CALL     	1 4 1
+	20	[828]	GETTABLE 	1 0 -7	; "m_dbTable"
+	21	[828]	SELF     	1 1 -8	; "Remove"
+	22	[828]	GETTABUP 	3 1 -11	; strDBKeys "CannonBoosterIsOpen"
+	23	[828]	LOADK    	4 -10	; "value"
+	24	[828]	CALL     	1 4 1
+	25	[828]	JMP      	0 15	; to 41
+	26	[829]	GETTABUP 	1 0 -12	; _ENV "GM"
+	27	[829]	GETTABLE 	1 1 -13	; "LevelModel"
+	28	[829]	SELF     	1 1 -14	; "GetCurrentLevel"
+	29	[829]	CALL     	1 2 2
+	30	[829]	GETTABLE 	2 0 -6	; "m_orderBoostExtraRewardConfig"
+	31	[829]	GETTABLE 	2 2 -15	; 1
+	32	[829]	GETTABLE 	2 2 -16	; "sLevel"
+	33	[829]	LE       	0 2 1
+	34	[829]	JMP      	0 6	; to 41
+	35	[829]	SELF     	1 0 -17	; "GetFinishedRoundWhenCannonOpen"
+	36	[829]	CALL     	1 2 2
+	37	[829]	EQ       	0 1 -18	; - 0
+	38	[829]	JMP      	0 2	; to 41
+	39	[831]	SELF     	1 0 -19	; "SetCannonStart"
+	40	[831]	CALL     	1 2 1
+	41	[834]	SELF     	1 0 -20	; "NewRoundUseNewConfig"
+	42	[834]	CALL     	1 2 1
+	43	[837]	GETTABUP 	1 0 -12	; _ENV "GM"
+	44	[837]	GETTABLE 	1 1 -13	; "LevelModel"
+	45	[837]	SELF     	1 1 -14	; "GetCurrentLevel"
+	46	[837]	CALL     	1 2 2
+	47	[838]	NEWTABLE 	2 0 0
+	48	[838]	SETTABLE 	0 -21 2	; "m_curOrderConfigs" -
+	49	[839]	GETTABUP 	2 0 -22	; _ENV "ipairs"
+	50	[839]	GETTABLE 	3 0 -23	; "m_orderBoostSlotConfigssaved"
+	51	[839]	CALL     	2 2 4
+	52	[839]	JMP      	0 15	; to 68
+	53	[840]	GETTABLE 	7 6 -24	; "level_min"
+	54	[840]	LE       	0 7 1
+	55	[840]	JMP      	0 12	; to 68
+	56	[840]	GETTABLE 	7 6 -25	; "level_max"
+	57	[840]	LE       	0 1 7
+	58	[840]	JMP      	0 9	; to 68
+	59	[841]	GETTABLE 	7 0 -21	; "m_curOrderConfigs"
+	60	[841]	GETTABLE 	8 0 -21	; "m_curOrderConfigs"
+	61	[841]	LEN      	8 8
+	62	[841]	ADD      	8 8 -15	; - 1
+	63	[841]	GETTABUP 	9 0 -26	; _ENV "Table"
+	64	[841]	GETTABLE 	9 9 -27	; "DeepCopy"
+	65	[841]	MOVE     	10 6
+	66	[841]	CALL     	9 2 2
+	67	[841]	SETTABLE 	7 8 9
+	68	[839]	TFORCALL 	2 2
+	69	[839]	TFORLOOP 	4 -17	; to 53
+	70	[846]	SETTABLE 	0 -28 -5	; "m_rewardConfig" nil
+	71	[847]	GETTABLE 	2 0 -29	; "m_orderBoostRewardConfigsaved"
+	72	[848]	SELF     	3 0 -30	; "IsProConfigOpen"
+	73	[848]	CALL     	3 2 2
+	74	[848]	TEST     	3 0
+	75	[848]	JMP      	0 9	; to 85
+	76	[848]	GETTABUP 	3 0 -26	; _ENV "Table"
+	77	[848]	GETTABLE 	3 3 -31	; "IsEmpty"
+	78	[848]	GETTABLE 	4 0 -32	; "m_orderBoostProRewardConfig"
+	79	[848]	CALL     	3 2 2
+	80	[848]	TEST     	3 1
+	81	[848]	JMP      	0 3	; to 85
+	82	[849]	GETTABLE 	2 0 -32	; "m_orderBoostProRewardConfig"
+	83	[851]	SELF     	3 0 -33	; "SetProConfig"
+	84	[851]	CALL     	3 2 1
+	85	[853]	GETTABUP 	3 0 -22	; _ENV "ipairs"
+	86	[853]	MOVE     	4 2
+	87	[853]	CALL     	3 2 4
+	88	[853]	JMP      	0 11	; to 100
+	89	[854]	GETTABLE 	8 7 -24	; "level_min"
+	90	[854]	LE       	0 8 1
+	91	[854]	JMP      	0 8	; to 100
+	92	[854]	GETTABLE 	8 7 -25	; "level_max"
+	93	[854]	LE       	0 1 8
+	94	[854]	JMP      	0 5	; to 100
+	95	[855]	GETTABUP 	8 0 -26	; _ENV "Table"
+	96	[855]	GETTABLE 	8 8 -27	; "DeepCopy"
+	97	[855]	MOVE     	9 7
+	98	[855]	CALL     	8 2 2
+	99	[855]	SETTABLE 	0 -28 8	; "m_rewardConfig" -
+	100	[853]	TFORCALL 	3 2
+	101	[853]	TFORLOOP 	5 -13	; to 89
+	102	[858]	SELF     	3 0 -34	; "IsProConfig"
+	103	[858]	CALL     	3 2 2
+	104	[858]	TEST     	3 0
+	105	[858]	JMP      	0 38	; to 144
+	106	[858]	SELF     	3 0 -35	; "IsProStart"
+	107	[858]	CALL     	3 2 2
+	108	[858]	TEST     	3 0
+	109	[858]	JMP      	0 34	; to 144
+	110	[858]	SELF     	3 0 -36	; "GetLogicType"
+	111	[858]	CALL     	3 2 2
+	112	[858]	GETTABUP 	4 0 -37	; _ENV "EOrderBoostType"
+	113	[858]	GETTABLE 	4 4 -38	; "Normal"
+	114	[858]	EQ       	0 3 4
+	115	[858]	JMP      	0 28	; to 144
+	116	[859]	SELF     	3 0 -39	; "GetFinishedNormalCount"
+	117	[859]	CALL     	3 2 2
+	118	[859]	SELF     	4 0 -40	; "GetLessScoreRound"
+	119	[859]	CALL     	4 2 2
+	120	[859]	LT       	0 3 4
+	121	[859]	JMP      	0 22	; to 144
+	122	[860]	GETTABUP 	3 0 -41	; _ENV "GameConfig"
+	123	[860]	GETTABLE 	3 3 -42	; "IsTestMode"
+	124	[860]	CALL     	3 1 2
+	125	[860]	TEST     	3 0
+	126	[860]	JMP      	0 13	; to 140
+	127	[861]	GETTABUP 	3 0 -43	; _ENV "Log"
+	128	[861]	GETTABLE 	3 3 -44	; "Info"
+	129	[861]	LOADK    	4 -45	; "Creating \230\153\174\233\128\154\231\172\145\232\132\184 round "
+	130	[861]	SELF     	5 0 -39	; "GetFinishedNormalCount"
+	131	[861]	CALL     	5 2 2
+	132	[862]	LOADK    	6 -46	; ",\nScore_less \233\133\141\231\189\174\232\166\134\231\155\150 "
+	133	[862]	GETTABLE 	7 0 -28	; "m_rewardConfig"
+	134	[862]	GETTABLE 	7 7 -47	; "score_sum"
+	135	[862]	LOADK    	8 -48	; "->"
+	136	[862]	GETTABLE 	9 0 -28	; "m_rewardConfig"
+	137	[862]	GETTABLE 	9 9 -49	; "score_sum_less"
+	138	[862]	CONCAT   	4 4 9
+	139	[861]	CALL     	3 2 1
+	140	[864]	GETTABLE 	3 0 -28	; "m_rewardConfig"
+	141	[864]	GETTABLE 	4 0 -28	; "m_rewardConfig"
+	142	[864]	GETTABLE 	4 4 -49	; "score_sum_less"
+	143	[864]	SETTABLE 	3 -47 4	; "score_sum" -
+	144	[868]	NEWTABLE 	3 0 0
+	145	[868]	SETTABLE 	0 -4 3	; "m_curInfo" -
+	146	[869]	GETTABLE 	3 0 -4	; "m_curInfo"
+	147	[869]	SETTABLE 	3 -50 -18	; "curScore" 0
+	148	[870]	GETTABLE 	3 0 -4	; "m_curInfo"
+	149	[870]	GETTABLE 	4 0 -28	; "m_rewardConfig"
+	150	[870]	GETTABLE 	4 4 -52	; "smile_sum"
+	151	[870]	SETTABLE 	3 -51 4	; "MaxScore" -
+	152	[871]	GETTABLE 	3 0 -4	; "m_curInfo"
+	153	[871]	NEWTABLE 	4 0 0
+	154	[871]	SETTABLE 	3 -53 4	; "orderFinishInfo" -
+	155	[872]	SELF     	3 0 -54	; "SaveMetaData"
+	156	[872]	CALL     	3 2 1
+	157	[874]	SETTABLE 	0 -55 -18	; "m_BubbleHint" 0
+	158	[875]	GETTABLE 	3 0 -7	; "m_dbTable"
+	159	[875]	SELF     	3 3 -56	; "Set"
+	160	[875]	GETTABUP 	5 1 -57	; strDBKeys "BubbleHint"
+	161	[875]	LOADK    	6 -10	; "value"
+	162	[875]	GETTABUP 	7 0 -58	; _ENV "tostring"
+	163	[875]	GETTABLE 	8 0 -55	; "m_BubbleHint"
+	164	[875]	CALL     	7 2 0
+	165	[875]	CALL     	3 0 1
+	166	[877]	GETTABUP 	3 0 -12	; _ENV "GM"
+	167	[877]	GETTABLE 	3 3 -59	; "MainBoardModel"
+	168	[877]	SELF     	3 3 -60	; "GetOrderModel"
+	169	[877]	GETTABUP 	5 0 -61	; _ENV "OrderModelType"
+	170	[877]	GETTABLE 	5 5 -62	; "Slot"
+	171	[877]	CALL     	3 3 2
+	172	[877]	SELF     	3 3 -63	; "GetOrders"
+	173	[877]	CALL     	3 2 2
+	174	[880]	NEWTABLE 	4 0 0
+	175	[881]	NEWTABLE 	5 0 0
+	176	[881]	SETTABLE 	4 -64 5	; "order" -
+	177	[882]	SELF     	5 0 -66	; "GetFinishRound"
+	178	[882]	CALL     	5 2 2
+	179	[882]	ADD      	5 5 -15	; - 1
+	180	[882]	SETTABLE 	4 -65 5	; "oboostround" -
+	181	[883]	SELF     	5 0 -36	; "GetLogicType"
+	182	[883]	CALL     	5 2 2
+	183	[883]	GETTABUP 	6 0 -37	; _ENV "EOrderBoostType"
+	184	[883]	GETTABLE 	6 6 -68	; "Super"
+	185	[883]	EQ       	1 5 6
+	186	[883]	JMP      	0 1	; to 188
+	187	[883]	LOADBOOL 	5 0 1
+	188	[883]	LOADBOOL 	5 1 0
+	189	[883]	SETTABLE 	4 -67 5	; "ispro" -
+	190	[884]	GETTABUP 	5 0 -69	; _ENV "pairs"
+	191	[884]	MOVE     	6 3
+	192	[884]	CALL     	5 2 4
+	193	[884]	JMP      	0 39	; to 233
+	194	[885]	SELF     	10 0 -70	; "GetAddOrderBoostScoreByOrder"
+	195	[885]	MOVE     	12 9
+	196	[885]	CALL     	10 3 2
+	197	[885]	EQ       	1 10 -18	; - 0
+	198	[885]	JMP      	0 34	; to 233
+	199	[886]	NEWTABLE 	10 0 0
+	200	[887]	NEWTABLE 	11 0 0
+	201	[888]	GETTABUP 	12 0 -22	; _ENV "ipairs"
+	202	[888]	SELF     	13 9 -71	; "GetRequirements"
+	203	[888]	CALL     	13 2 0
+	204	[888]	CALL     	12 0 4
+	205	[888]	JMP      	0 7	; to 213
+	206	[889]	GETTABLE 	17 11 16
+	207	[889]	EQ       	0 17 -5	; - nil
+	208	[889]	JMP      	0 1	; to 210
+	209	[890]	SETTABLE 	11 16 -18	; - 0
+	210	[893]	GETTABLE 	17 11 16
+	211	[893]	ADD      	17 17 -15	; - 1
+	212	[893]	SETTABLE 	11 16 17
+	213	[888]	TFORCALL 	12 2
+	214	[888]	TFORLOOP 	14 -9	; to 206
+	215	[896]	GETTABUP 	12 0 -12	; _ENV "GM"
+	216	[896]	GETTABLE 	12 12 -73	; "BIManager"
+	217	[896]	SELF     	12 12 -74	; "TableToString"
+	218	[896]	MOVE     	14 11
+	219	[896]	CALL     	12 3 2
+	220	[896]	SETTABLE 	10 -72 12	; "code" -
+	221	[897]	SELF     	12 9 -76	; "GetSlot"
+	222	[897]	CALL     	12 2 2
+	223	[897]	SETTABLE 	10 -75 12	; "slot" -
+	224	[898]	SELF     	12 0 -70	; "GetAddOrderBoostScoreByOrder"
+	225	[898]	MOVE     	14 9
+	226	[898]	CALL     	12 3 2
+	227	[898]	SETTABLE 	10 -77 12	; "facenum" -
+	228	[899]	GETTABUP 	12 0 -78	; _ENV "table"
+	229	[899]	GETTABLE 	12 12 -79	; "insert"
+	230	[899]	GETTABLE 	13 4 -64	; "order"
+	231	[899]	MOVE     	14 10
+	232	[899]	CALL     	12 3 1
+	233	[884]	TFORCALL 	5 2
+	234	[884]	TFORLOOP 	7 -41	; to 194
+	235	[904]	GETTABUP 	5 0 -12	; _ENV "GM"
+	236	[904]	GETTABLE 	5 5 -73	; "BIManager"
+	237	[904]	SELF     	5 5 -80	; "LogAction"
+	238	[904]	GETTABUP 	7 0 -81	; _ENV "EBIType"
+	239	[904]	GETTABLE 	7 7 -82	; "OrderBoostRefresh"
+	240	[904]	MOVE     	8 4
+	241	[904]	CALL     	5 4 1
+	242	[906]	GETTABUP 	5 0 -12	; _ENV "GM"
+	243	[906]	GETTABLE 	5 5 -73	; "BIManager"
+	244	[906]	SELF     	5 5 -80	; "LogAction"
+	245	[906]	GETTABUP 	7 0 -81	; _ENV "EBIType"
+	246	[906]	GETTABLE 	7 7 -83	; "OrderBoostRefresh2"
+	247	[906]	NEWTABLE 	8 0 2
+	248	[906]	GETTABLE 	9 4 -65	; "oboostround"
+	249	[906]	SETTABLE 	8 -65 9	; "oboostround" -
+	250	[906]	GETTABLE 	9 4 -67	; "ispro"
+	251	[906]	SETTABLE 	8 -67 9	; "ispro" -
+	252	[906]	CALL     	5 4 1
+	253	[908]	GETTABUP 	5 0 -84	; _ENV "EventDispatcher"
+	254	[908]	GETTABLE 	5 5 -85	; "DispatchEvent"
+	255	[908]	GETTABUP 	6 0 -86	; _ENV "EEventType"
+	256	[908]	GETTABLE 	6 6 -87	; "OrderStatusChanged"
+	257	[908]	CALL     	5 2 1
+	258	[910]	GETTABLE 	5 0 -88	; "m_bTypeChanged"
+	259	[910]	TEST     	5 1
+	260	[910]	JMP      	0 5	; to 266
+	261	[911]	GETTABUP 	5 0 -84	; _ENV "EventDispatcher"
+	262	[911]	GETTABLE 	5 5 -85	; "DispatchEvent"
+	263	[911]	GETTABUP 	6 0 -86	; _ENV "EEventType"
+	264	[911]	GETTABLE 	6 6 -89	; "OrderBoostSmileChanged"
+	265	[911]	CALL     	5 2 1
+	266	[915]	GETTABUP 	5 0 -12	; _ENV "GM"
+	267	[915]	GETTABLE 	5 5 -59	; "MainBoardModel"
+	268	[915]	SELF     	5 5 -90	; "UpdateOrderState"
+	269	[915]	CALL     	5 2 1
+	270	[916]	RETURN   	0 1
+constants (90) for 000002375D9F6370:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_curInfo"
+	5	nil
+	6	"m_orderBoostExtraRewardConfig"
+	7	"m_dbTable"
+	8	"Remove"
+	9	"CannonBoosterRound"
+	10	"value"
+	11	"CannonBoosterIsOpen"
+	12	"GM"
+	13	"LevelModel"
+	14	"GetCurrentLevel"
+	15	1
+	16	"sLevel"
+	17	"GetFinishedRoundWhenCannonOpen"
+	18	0
+	19	"SetCannonStart"
+	20	"NewRoundUseNewConfig"
+	21	"m_curOrderConfigs"
+	22	"ipairs"
+	23	"m_orderBoostSlotConfigssaved"
+	24	"level_min"
+	25	"level_max"
+	26	"Table"
+	27	"DeepCopy"
+	28	"m_rewardConfig"
+	29	"m_orderBoostRewardConfigsaved"
+	30	"IsProConfigOpen"
+	31	"IsEmpty"
+	32	"m_orderBoostProRewardConfig"
+	33	"SetProConfig"
+	34	"IsProConfig"
+	35	"IsProStart"
+	36	"GetLogicType"
+	37	"EOrderBoostType"
+	38	"Normal"
+	39	"GetFinishedNormalCount"
+	40	"GetLessScoreRound"
+	41	"GameConfig"
+	42	"IsTestMode"
+	43	"Log"
+	44	"Info"
+	45	"Creating \230\153\174\233\128\154\231\172\145\232\132\184 round "
+	46	",\nScore_less \233\133\141\231\189\174\232\166\134\231\155\150 "
+	47	"score_sum"
+	48	"->"
+	49	"score_sum_less"
+	50	"curScore"
+	51	"MaxScore"
+	52	"smile_sum"
+	53	"orderFinishInfo"
+	54	"SaveMetaData"
+	55	"m_BubbleHint"
+	56	"Set"
+	57	"BubbleHint"
+	58	"tostring"
+	59	"MainBoardModel"
+	60	"GetOrderModel"
+	61	"OrderModelType"
+	62	"Slot"
+	63	"GetOrders"
+	64	"order"
+	65	"oboostround"
+	66	"GetFinishRound"
+	67	"ispro"
+	68	"Super"
+	69	"pairs"
+	70	"GetAddOrderBoostScoreByOrder"
+	71	"GetRequirements"
+	72	"code"
+	73	"BIManager"
+	74	"TableToString"
+	75	"slot"
+	76	"GetSlot"
+	77	"facenum"
+	78	"table"
+	79	"insert"
+	80	"LogAction"
+	81	"EBIType"
+	82	"OrderBoostRefresh"
+	83	"OrderBoostRefresh2"
+	84	"EventDispatcher"
+	85	"DispatchEvent"
+	86	"EEventType"
+	87	"OrderStatusChanged"
+	88	"m_bTypeChanged"
+	89	"OrderBoostSmileChanged"
+	90	"UpdateOrderState"
+locals (27) for 000002375D9F6370:
+	0	self	1	271
+	1	curLevel	47	271
+	2	(for generator)	52	70
+	3	(for state)	52	70
+	4	(for control)	52	70
+	5	_	53	68
+	6	slotConfig	53	68
+	7	rewardConfigs	72	271
+	8	(for generator)	88	102
+	9	(for state)	88	102
+	10	(for control)	88	102
+	11	_	89	100
+	12	rewardConfig	89	100
+	13	orders	174	271
+	14	biInfo	175	271
+	15	(for generator)	193	235
+	16	(for state)	193	235
+	17	(for control)	193	235
+	18	_	194	233
+	19	order	194	233
+	20	cueInfo	200	233
+	21	content	201	233
+	22	(for generator)	205	215
+	23	(for state)	205	215
+	24	(for control)	205	215
+	25	_	206	213
+	26	requirement	206	213
+upvalues (2) for 000002375D9F6370:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:921,938> (24 instructions at 000002375D9F6870)
+2 params, 6 slots, 1 upvalue, 3 locals, 7 constants, 0 functions
+	1	[922]	EQ       	0 1 -1	; - nil
+	2	[922]	JMP      	0 2	; to 5
+	3	[923]	LOADK    	2 -2	; 0
+	4	[923]	RETURN   	2 2
+	5	[926]	GETTABLE 	2 1 -3	; "GetSlot"
+	6	[926]	EQ       	0 2 -1	; - nil
+	7	[926]	JMP      	0 2	; to 10
+	8	[927]	LOADK    	2 -2	; 0
+	9	[927]	RETURN   	2 2
+	10	[930]	SELF     	2 0 -4	; "GetState"
+	11	[930]	CALL     	2 2 2
+	12	[930]	GETTABUP 	3 0 -5	; _ENV "ActivityState"
+	13	[930]	GETTABLE 	3 3 -6	; "Started"
+	14	[930]	EQ       	1 2 3
+	15	[930]	JMP      	0 2	; to 18
+	16	[931]	LOADK    	2 -2	; 0
+	17	[931]	RETURN   	2 2
+	18	[934]	SELF     	2 1 -3	; "GetSlot"
+	19	[934]	CALL     	2 2 2
+	20	[936]	SELF     	3 0 -7	; "GetAddSmileScoreBySlot"
+	21	[936]	MOVE     	5 2
+	22	[936]	TAILCALL 	3 3 0
+	23	[936]	RETURN   	3 0
+	24	[938]	RETURN   	0 1
+constants (7) for 000002375D9F6870:
+	1	nil
+	2	0
+	3	"GetSlot"
+	4	"GetState"
+	5	"ActivityState"
+	6	"Started"
+	7	"GetAddSmileScoreBySlot"
+locals (3) for 000002375D9F6870:
+	0	self	1	25
+	1	order	1	25
+	2	slot	20	25
+upvalues (1) for 000002375D9F6870:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:940,942> (10 instructions at 000002375DA02190)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[941]	GETTABLE 	1 0 -1	; "m_curInfo"
+	2	[941]	GETTABLE 	1 1 -2	; "curScore"
+	3	[941]	GETTABLE 	2 0 -1	; "m_curInfo"
+	4	[941]	GETTABLE 	2 2 -3	; "MaxScore"
+	5	[941]	LE       	1 2 1
+	6	[941]	JMP      	0 1	; to 8
+	7	[941]	LOADBOOL 	1 0 1
+	8	[941]	LOADBOOL 	1 1 0
+	9	[941]	RETURN   	1 2
+	10	[942]	RETURN   	0 1
+constants (3) for 000002375DA02190:
+	1	"m_curInfo"
+	2	"curScore"
+	3	"MaxScore"
+locals (1) for 000002375DA02190:
+	0	self	1	11
+upvalues (0) for 000002375DA02190:
+
+function <OrderBoostModel.lua:944,982> (69 instructions at 000002375DA02210)
+2 params, 11 slots, 1 upvalue, 11 locals, 22 constants, 0 functions
+	1	[945]	SELF     	2 0 -1	; "GetState"
+	2	[945]	CALL     	2 2 2
+	3	[945]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	4	[945]	GETTABLE 	3 3 -3	; "Started"
+	5	[945]	EQ       	1 2 3
+	6	[945]	JMP      	0 2	; to 9
+	7	[946]	LOADK    	2 -4	; 0
+	8	[946]	RETURN   	2 2
+	9	[949]	GETTABLE 	2 0 -5	; "m_curInfo"
+	10	[949]	EQ       	0 2 -6	; - nil
+	11	[949]	JMP      	0 2	; to 14
+	12	[950]	LOADK    	2 -4	; 0
+	13	[950]	RETURN   	2 2
+	14	[953]	GETTABUP 	2 0 -7	; _ENV "MainOrderSlotDefinition"
+	15	[953]	GETTABLE 	2 2 -8	; "TimedOrderSlot"
+	16	[953]	EQ       	0 1 2
+	17	[953]	JMP      	0 3	; to 21
+	18	[955]	LOADK    	2 -9	; 2
+	19	[955]	RETURN   	2 2
+	20	[955]	JMP      	0 20	; to 41
+	21	[956]	GETTABUP 	2 0 -7	; _ENV "MainOrderSlotDefinition"
+	22	[956]	GETTABLE 	2 2 -10	; "ExtraCustomerSlot"
+	23	[956]	EQ       	0 1 2
+	24	[956]	JMP      	0 3	; to 28
+	25	[958]	LOADK    	2 -4	; 0
+	26	[958]	RETURN   	2 2
+	27	[958]	JMP      	0 13	; to 41
+	28	[959]	GETTABUP 	2 0 -7	; _ENV "MainOrderSlotDefinition"
+	29	[959]	GETTABLE 	2 2 -11	; "ContiorderSlot"
+	30	[959]	EQ       	0 1 2
+	31	[959]	JMP      	0 9	; to 41
+	32	[961]	GETTABUP 	2 0 -12	; _ENV "GM"
+	33	[961]	GETTABLE 	2 2 -13	; "ActivityManager"
+	34	[961]	SELF     	2 2 -14	; "GetStartedContiorders"
+	35	[961]	CALL     	2 2 2
+	36	[962]	TEST     	2 0
+	37	[962]	JMP      	0 3	; to 41
+	38	[963]	SELF     	3 2 -15	; "GetSmileCount"
+	39	[963]	TAILCALL 	3 2 0
+	40	[963]	RETURN   	3 0
+	41	[967]	GETTABLE 	2 0 -5	; "m_curInfo"
+	42	[967]	GETTABLE 	2 2 -16	; "orderFinishInfo"
+	43	[967]	GETTABUP 	3 0 -17	; _ENV "tostring"
+	44	[967]	MOVE     	4 1
+	45	[967]	CALL     	3 2 2
+	46	[967]	GETTABLE 	2 2 3
+	47	[967]	TEST     	2 1
+	48	[967]	JMP      	0 1	; to 50
+	49	[967]	LOADK    	2 -4	; 0
+	50	[968]	LOADK    	3 -4	; 0
+	51	[969]	LOADNIL  	4 0
+	52	[970]	GETTABUP 	5 0 -18	; _ENV "ipairs"
+	53	[970]	GETTABLE 	6 0 -19	; "m_curOrderConfigs"
+	54	[970]	CALL     	5 2 4
+	55	[970]	JMP      	0 5	; to 61
+	56	[971]	GETTABLE 	10 9 -20	; "order_slot"
+	57	[971]	EQ       	0 10 1
+	58	[971]	JMP      	0 2	; to 61
+	59	[972]	GETTABLE 	3 9 -21	; "order_num"
+	60	[973]	MOVE     	4 9
+	61	[970]	TFORCALL 	5 2
+	62	[970]	TFORLOOP 	7 -7	; to 56
+	63	[977]	LE       	0 3 2
+	64	[977]	JMP      	0 2	; to 67
+	65	[978]	LOADK    	5 -4	; 0
+	66	[978]	RETURN   	5 2
+	67	[981]	GETTABLE 	5 4 -22	; "reward_num"
+	68	[981]	RETURN   	5 2
+	69	[982]	RETURN   	0 1
+constants (22) for 000002375DA02210:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	0
+	5	"m_curInfo"
+	6	nil
+	7	"MainOrderSlotDefinition"
+	8	"TimedOrderSlot"
+	9	2
+	10	"ExtraCustomerSlot"
+	11	"ContiorderSlot"
+	12	"GM"
+	13	"ActivityManager"
+	14	"GetStartedContiorders"
+	15	"GetSmileCount"
+	16	"orderFinishInfo"
+	17	"tostring"
+	18	"ipairs"
+	19	"m_curOrderConfigs"
+	20	"order_slot"
+	21	"order_num"
+	22	"reward_num"
+locals (11) for 000002375DA02210:
+	0	self	1	70
+	1	slot	1	70
+	2	contiModel	36	41
+	3	finishSlot	50	70
+	4	MaxFinishSlot	51	70
+	5	findConfig	52	70
+	6	(for generator)	55	63
+	7	(for state)	55	63
+	8	(for control)	55	63
+	9	_	56	61
+	10	slotConfig	56	61
+upvalues (1) for 000002375DA02210:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:986,999> (23 instructions at 000002375DA03390)
+1 param, 5 slots, 2 upvalues, 1 local, 10 constants, 0 functions
+	1	[987]	SELF     	1 0 -1	; "GetState"
+	2	[987]	CALL     	1 2 2
+	3	[987]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[987]	GETTABLE 	2 2 -3	; "Started"
+	5	[987]	EQ       	1 1 2
+	6	[987]	JMP      	0 2	; to 9
+	7	[988]	LOADBOOL 	1 0 0
+	8	[988]	RETURN   	1 2
+	9	[991]	GETTABLE 	1 0 -4	; "m_dbTable"
+	10	[991]	SELF     	1 1 -5	; "GetValue"
+	11	[991]	GETTABUP 	3 1 -6	; strDBKeys "FirstPopup"
+	12	[991]	LOADK    	4 -7	; "value"
+	13	[991]	CALL     	1 4 2
+	14	[991]	EQ       	0 1 -8	; - "1"
+	15	[991]	JMP      	0 2	; to 18
+	16	[992]	LOADBOOL 	1 0 0
+	17	[992]	RETURN   	1 2
+	18	[996]	GETTABLE 	1 0 -9	; "m_curInfo"
+	19	[996]	EQ       	1 1 -10	; - nil
+	20	[996]	JMP      	0 2	; to 23
+	21	[997]	LOADBOOL 	1 1 0
+	22	[997]	RETURN   	1 2
+	23	[999]	RETURN   	0 1
+constants (10) for 000002375DA03390:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"FirstPopup"
+	7	"value"
+	8	"1"
+	9	"m_curInfo"
+	10	nil
+locals (1) for 000002375DA03390:
+	0	self	1	24
+upvalues (2) for 000002375DA03390:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1001,1003> (7 instructions at 000002375DA02910)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1002]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1002]	SELF     	1 1 -2	; "Set"
+	3	[1002]	GETTABUP 	3 0 -3	; strDBKeys "FirstPopup"
+	4	[1002]	LOADK    	4 -4	; "value"
+	5	[1002]	LOADK    	5 -5	; "1"
+	6	[1002]	CALL     	1 5 1
+	7	[1003]	RETURN   	0 1
+constants (5) for 000002375DA02910:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstPopup"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA02910:
+	0	self	1	8
+upvalues (1) for 000002375DA02910:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1005,1007> (11 instructions at 000002375DA03410)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1006]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1006]	SELF     	1 1 -2	; "GetValue"
+	3	[1006]	GETTABUP 	3 0 -3	; strDBKeys "FirstPopup"
+	4	[1006]	LOADK    	4 -4	; "value"
+	5	[1006]	CALL     	1 4 2
+	6	[1006]	EQ       	0 1 -5	; - "1"
+	7	[1006]	JMP      	0 1	; to 9
+	8	[1006]	LOADBOOL 	1 0 1
+	9	[1006]	LOADBOOL 	1 1 0
+	10	[1006]	RETURN   	1 2
+	11	[1007]	RETURN   	0 1
+constants (5) for 000002375DA03410:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FirstPopup"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA03410:
+	0	self	1	12
+upvalues (1) for 000002375DA03410:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1009,1011> (11 instructions at 000002375DA02A90)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1010]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1010]	SELF     	1 1 -2	; "GetValue"
+	3	[1010]	GETTABUP 	3 0 -3	; strDBKeys "FirstHint"
+	4	[1010]	LOADK    	4 -4	; "value"
+	5	[1010]	CALL     	1 4 2
+	6	[1010]	EQ       	0 1 -5	; - "1"
+	7	[1010]	JMP      	0 1	; to 9
+	8	[1010]	LOADBOOL 	1 0 1
+	9	[1010]	LOADBOOL 	1 1 0
+	10	[1010]	RETURN   	1 2
+	11	[1011]	RETURN   	0 1
+constants (5) for 000002375DA02A90:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FirstHint"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA02A90:
+	0	self	1	12
+upvalues (1) for 000002375DA02A90:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1013,1015> (7 instructions at 000002375DA03310)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1014]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1014]	SELF     	1 1 -2	; "Set"
+	3	[1014]	GETTABUP 	3 0 -3	; strDBKeys "FirstHint"
+	4	[1014]	LOADK    	4 -4	; "value"
+	5	[1014]	LOADK    	5 -5	; "1"
+	6	[1014]	CALL     	1 5 1
+	7	[1015]	RETURN   	0 1
+constants (5) for 000002375DA03310:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstHint"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA03310:
+	0	self	1	8
+upvalues (1) for 000002375DA03310:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1017,1019> (7 instructions at 000002375DA02D10)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1018]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1018]	SELF     	1 1 -2	; "Set"
+	3	[1018]	GETTABUP 	3 0 -3	; strDBKeys "FirstHint"
+	4	[1018]	LOADK    	4 -4	; "value"
+	5	[1018]	LOADK    	5 -5	; "-1"
+	6	[1018]	CALL     	1 5 1
+	7	[1019]	RETURN   	0 1
+constants (5) for 000002375DA02D10:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstHint"
+	4	"value"
+	5	"-1"
+locals (1) for 000002375DA02D10:
+	0	self	1	8
+upvalues (1) for 000002375DA02D10:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1022,1032> (10 instructions at 000002375DA03210)
+2 params, 4 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[1027]	SHL      	2 -1 1	; 1 -
+	2	[1027]	GETTABLE 	3 0 -2	; "m_BubbleHint"
+	3	[1027]	BAND     	2 2 3
+	4	[1027]	EQ       	1 2 -3	; - 0
+	5	[1027]	JMP      	0 2	; to 8
+	6	[1028]	LOADBOOL 	2 0 0
+	7	[1028]	RETURN   	2 2
+	8	[1031]	LOADBOOL 	2 1 0
+	9	[1031]	RETURN   	2 2
+	10	[1032]	RETURN   	0 1
+constants (3) for 000002375DA03210:
+	1	1
+	2	"m_BubbleHint"
+	3	0
+locals (2) for 000002375DA03210:
+	0	self	1	11
+	1	index	1	11
+upvalues (0) for 000002375DA03210:
+
+function <OrderBoostModel.lua:1034,1039> (24 instructions at 000002375DA03490)
+2 params, 9 slots, 2 upvalues, 2 locals, 11 constants, 0 functions
+	1	[1035]	GETTABLE 	2 0 -1	; "m_BubbleHint"
+	2	[1035]	SHL      	3 -2 1	; 1 -
+	3	[1035]	BOR      	2 2 3
+	4	[1035]	SETTABLE 	0 -1 2	; "m_BubbleHint" -
+	5	[1036]	GETTABLE 	2 0 -3	; "m_dbTable"
+	6	[1036]	SELF     	2 2 -4	; "Set"
+	7	[1036]	GETTABUP 	4 0 -5	; strDBKeys "BubbleHint"
+	8	[1036]	LOADK    	5 -6	; "value"
+	9	[1036]	GETTABUP 	6 1 -7	; _ENV "tostring"
+	10	[1036]	GETTABLE 	7 0 -1	; "m_BubbleHint"
+	11	[1036]	CALL     	6 2 0
+	12	[1036]	CALL     	2 0 1
+	13	[1038]	GETTABLE 	2 0 -3	; "m_dbTable"
+	14	[1038]	SELF     	2 2 -4	; "Set"
+	15	[1038]	GETTABUP 	4 0 -8	; strDBKeys "LastBubbleHintTime"
+	16	[1038]	LOADK    	5 -6	; "value"
+	17	[1038]	GETTABUP 	6 1 -7	; _ENV "tostring"
+	18	[1038]	GETTABUP 	7 1 -9	; _ENV "GM"
+	19	[1038]	GETTABLE 	7 7 -10	; "GameModel"
+	20	[1038]	SELF     	7 7 -11	; "GetServerTime"
+	21	[1038]	CALL     	7 2 0
+	22	[1038]	CALL     	6 0 0
+	23	[1038]	CALL     	2 0 1
+	24	[1039]	RETURN   	0 1
+constants (11) for 000002375DA03490:
+	1	"m_BubbleHint"
+	2	1
+	3	"m_dbTable"
+	4	"Set"
+	5	"BubbleHint"
+	6	"value"
+	7	"tostring"
+	8	"LastBubbleHintTime"
+	9	"GM"
+	10	"GameModel"
+	11	"GetServerTime"
+locals (2) for 000002375DA03490:
+	0	self	1	25
+	1	index	1	25
+upvalues (2) for 000002375DA03490:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:1041,1100> (164 instructions at 000002375DA02C90)
+1 param, 11 slots, 2 upvalues, 10 locals, 54 constants, 0 functions
+	1	[1042]	SELF     	1 0 -1	; "GetState"
+	2	[1042]	CALL     	1 2 2
+	3	[1043]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[1043]	GETTABLE 	2 2 -3	; "Started"
+	5	[1043]	EQ       	0 1 2
+	6	[1043]	JMP      	0 43	; to 50
+	7	[1043]	GETTABUP 	2 0 -4	; _ENV "tonumber"
+	8	[1043]	GETTABLE 	3 0 -5	; "m_dbTable"
+	9	[1043]	SELF     	3 3 -6	; "GetValue"
+	10	[1043]	GETTABUP 	5 1 -7	; strDBKeys "LastBubbleHintTime"
+	11	[1043]	LOADK    	6 -8	; "value"
+	12	[1043]	CALL     	3 4 2
+	13	[1043]	TEST     	3 1
+	14	[1043]	JMP      	0 1	; to 16
+	15	[1043]	LOADK    	3 -9	; ""
+	16	[1043]	CALL     	2 2 2
+	17	[1043]	EQ       	1 2 -10	; - nil
+	18	[1043]	JMP      	0 31	; to 50
+	19	[1044]	GETTABUP 	2 0 -4	; _ENV "tonumber"
+	20	[1044]	GETTABLE 	3 0 -5	; "m_dbTable"
+	21	[1044]	SELF     	3 3 -6	; "GetValue"
+	22	[1044]	GETTABUP 	5 1 -7	; strDBKeys "LastBubbleHintTime"
+	23	[1044]	LOADK    	6 -8	; "value"
+	24	[1044]	CALL     	3 4 2
+	25	[1044]	TEST     	3 1
+	26	[1044]	JMP      	0 1	; to 28
+	27	[1044]	LOADK    	3 -9	; ""
+	28	[1044]	CALL     	2 2 2
+	29	[1044]	GETTABUP 	3 0 -11	; _ENV "Sec2Day"
+	30	[1044]	IDIV     	2 2 3
+	31	[1044]	GETTABUP 	3 0 -12	; _ENV "GM"
+	32	[1044]	GETTABLE 	3 3 -13	; "GameModel"
+	33	[1044]	SELF     	3 3 -14	; "GetServerTime"
+	34	[1044]	CALL     	3 2 2
+	35	[1044]	GETTABUP 	4 0 -11	; _ENV "Sec2Day"
+	36	[1044]	IDIV     	3 3 4
+	37	[1044]	EQ       	1 2 3
+	38	[1044]	JMP      	0 11	; to 50
+	39	[1045]	GETTABLE 	2 0 -15	; "m_BubbleHint"
+	40	[1045]	BAND     	2 2 -16	; - 1
+	41	[1045]	SETTABLE 	0 -15 2	; "m_BubbleHint" -
+	42	[1046]	GETTABLE 	2 0 -5	; "m_dbTable"
+	43	[1046]	SELF     	2 2 -17	; "Set"
+	44	[1046]	GETTABUP 	4 1 -18	; strDBKeys "BubbleHint"
+	45	[1046]	LOADK    	5 -8	; "value"
+	46	[1046]	GETTABUP 	6 0 -19	; _ENV "tostring"
+	47	[1046]	GETTABLE 	7 0 -15	; "m_BubbleHint"
+	48	[1046]	CALL     	6 2 0
+	49	[1046]	CALL     	2 0 1
+	50	[1050]	GETTABUP 	2 0 -12	; _ENV "GM"
+	51	[1050]	GETTABLE 	2 2 -13	; "GameModel"
+	52	[1050]	SELF     	2 2 -14	; "GetServerTime"
+	53	[1050]	CALL     	2 2 2
+	54	[1051]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	55	[1051]	GETTABLE 	3 3 -3	; "Started"
+	56	[1051]	EQ       	0 1 3
+	57	[1051]	JMP      	0 102	; to 160
+	58	[1052]	SELF     	3 0 -20	; "IsProConfigOpen"
+	59	[1052]	CALL     	3 2 2
+	60	[1052]	TEST     	3 0
+	61	[1052]	JMP      	0 38	; to 100
+	62	[1054]	SELF     	3 0 -21	; "GetLogicType"
+	63	[1054]	CALL     	3 2 2
+	64	[1054]	GETTABUP 	4 0 -22	; _ENV "EOrderBoostType"
+	65	[1054]	GETTABLE 	4 4 -23	; "Super"
+	66	[1054]	EQ       	0 3 4
+	67	[1054]	JMP      	0 92	; to 160
+	68	[1055]	SELF     	3 0 -24	; "GetProEndTime"
+	69	[1055]	CALL     	3 2 2
+	70	[1056]	EQ       	1 3 -10	; - nil
+	71	[1056]	JMP      	0 88	; to 160
+	72	[1056]	GETTABLE 	4 0 -25	; "m_curInfo"
+	73	[1056]	GETTABLE 	4 4 -26	; "curScore"
+	74	[1056]	GETTABLE 	5 0 -25	; "m_curInfo"
+	75	[1056]	GETTABLE 	5 5 -27	; "MaxScore"
+	76	[1056]	LT       	0 4 5
+	77	[1056]	JMP      	0 82	; to 160
+	78	[1057]	SELF     	4 0 -28	; "CanPopCountdownTip"
+	79	[1057]	CALL     	4 2 2
+	80	[1057]	TEST     	4 0
+	81	[1057]	JMP      	0 11	; to 93
+	82	[1059]	SUB      	4 3 2
+	83	[1059]	LE       	0 4 -29	; - 3600
+	84	[1059]	JMP      	0 8	; to 93
+	85	[1059]	SUB      	4 3 2
+	86	[1059]	LT       	0 -30 4	; 3 -
+	87	[1059]	JMP      	0 5	; to 93
+	88	[1060]	GETTABUP 	4 0 -31	; _ENV "EventDispatcher"
+	89	[1060]	GETTABLE 	4 4 -32	; "DispatchEvent"
+	90	[1060]	GETTABUP 	5 0 -33	; _ENV "EEventType"
+	91	[1060]	GETTABLE 	5 5 -34	; "OrderBoostProCountdownTip"
+	92	[1060]	CALL     	4 2 1
+	93	[1065]	LE       	0 3 2
+	94	[1065]	JMP      	0 65	; to 160
+	95	[1067]	SELF     	4 0 -35	; "ChangeProToOtherType"
+	96	[1067]	GETTABUP 	6 0 -22	; _ENV "EOrderBoostType"
+	97	[1067]	GETTABLE 	6 6 -36	; "FailedSuper"
+	98	[1067]	CALL     	4 3 1
+	99	[1070]	JMP      	0 60	; to 160
+	100	[1072]	SELF     	3 0 -37	; "IsProConfig"
+	101	[1072]	CALL     	3 2 2
+	102	[1072]	TEST     	3 0
+	103	[1072]	JMP      	0 56	; to 160
+	104	[1074]	GETTABUP 	3 0 -12	; _ENV "GM"
+	105	[1074]	GETTABLE 	3 3 -38	; "LevelModel"
+	106	[1074]	SELF     	3 3 -39	; "GetCurrentLevel"
+	107	[1074]	CALL     	3 2 2
+	108	[1075]	SETTABLE 	0 -40 -10	; "m_rewardConfig" nil
+	109	[1076]	GETTABUP 	4 0 -41	; _ENV "ipairs"
+	110	[1076]	GETTABLE 	5 0 -42	; "m_orderBoostRewardConfigsaved"
+	111	[1076]	CALL     	4 2 4
+	112	[1076]	JMP      	0 11	; to 124
+	113	[1077]	GETTABLE 	9 8 -43	; "level_min"
+	114	[1077]	LE       	0 9 3
+	115	[1077]	JMP      	0 8	; to 124
+	116	[1077]	GETTABLE 	9 8 -44	; "level_max"
+	117	[1077]	LE       	0 3 9
+	118	[1077]	JMP      	0 5	; to 124
+	119	[1078]	GETTABUP 	9 0 -45	; _ENV "Table"
+	120	[1078]	GETTABLE 	9 9 -46	; "DeepCopy"
+	121	[1078]	MOVE     	10 8
+	122	[1078]	CALL     	9 2 2
+	123	[1078]	SETTABLE 	0 -40 9	; "m_rewardConfig" -
+	124	[1076]	TFORCALL 	4 2
+	125	[1076]	TFORLOOP 	6 -13	; to 113
+	126	[1082]	GETTABLE 	4 0 -25	; "m_curInfo"
+	127	[1082]	GETTABLE 	4 4 -26	; "curScore"
+	128	[1082]	GETTABLE 	5 0 -25	; "m_curInfo"
+	129	[1082]	GETTABLE 	5 5 -27	; "MaxScore"
+	130	[1082]	LE       	0 5 4
+	131	[1082]	JMP      	0 4	; to 136
+	132	[1083]	GETTABLE 	4 0 -25	; "m_curInfo"
+	133	[1083]	GETTABLE 	5 0 -40	; "m_rewardConfig"
+	134	[1083]	GETTABLE 	5 5 -47	; "smile_sum"
+	135	[1083]	SETTABLE 	4 -26 5	; "curScore" -
+	136	[1085]	GETTABLE 	4 0 -25	; "m_curInfo"
+	137	[1085]	GETTABLE 	5 0 -40	; "m_rewardConfig"
+	138	[1085]	GETTABLE 	5 5 -47	; "smile_sum"
+	139	[1085]	SETTABLE 	4 -27 5	; "MaxScore" -
+	140	[1087]	SELF     	4 0 -48	; "SaveMetaData"
+	141	[1087]	CALL     	4 2 1
+	142	[1088]	GETTABLE 	4 0 -5	; "m_dbTable"
+	143	[1088]	SELF     	4 4 -49	; "Remove"
+	144	[1088]	GETTABUP 	6 1 -37	; strDBKeys "IsProConfig"
+	145	[1088]	LOADK    	7 -8	; "value"
+	146	[1088]	CALL     	4 4 1
+	147	[1089]	SELF     	4 0 -50	; "SetFinishedNormalCount"
+	148	[1089]	LOADK    	6 -51	; 0
+	149	[1089]	CALL     	4 3 1
+	150	[1092]	SELF     	4 0 -21	; "GetLogicType"
+	151	[1092]	CALL     	4 2 2
+	152	[1092]	GETTABUP 	5 0 -22	; _ENV "EOrderBoostType"
+	153	[1092]	GETTABLE 	5 5 -23	; "Super"
+	154	[1092]	EQ       	0 4 5
+	155	[1092]	JMP      	0 4	; to 160
+	156	[1093]	SELF     	4 0 -35	; "ChangeProToOtherType"
+	157	[1093]	GETTABUP 	6 0 -22	; _ENV "EOrderBoostType"
+	158	[1093]	GETTABLE 	6 6 -52	; "Normal"
+	159	[1093]	CALL     	4 3 1
+	160	[1099]	GETTABUP 	3 0 -53	; _ENV "BaseActivityModel"
+	161	[1099]	GETTABLE 	3 3 -54	; "UpdatePerSecond"
+	162	[1099]	MOVE     	4 0
+	163	[1099]	CALL     	3 2 1
+	164	[1100]	RETURN   	0 1
+constants (54) for 000002375DA02C90:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"tonumber"
+	5	"m_dbTable"
+	6	"GetValue"
+	7	"LastBubbleHintTime"
+	8	"value"
+	9	""
+	10	nil
+	11	"Sec2Day"
+	12	"GM"
+	13	"GameModel"
+	14	"GetServerTime"
+	15	"m_BubbleHint"
+	16	1
+	17	"Set"
+	18	"BubbleHint"
+	19	"tostring"
+	20	"IsProConfigOpen"
+	21	"GetLogicType"
+	22	"EOrderBoostType"
+	23	"Super"
+	24	"GetProEndTime"
+	25	"m_curInfo"
+	26	"curScore"
+	27	"MaxScore"
+	28	"CanPopCountdownTip"
+	29	3600
+	30	3
+	31	"EventDispatcher"
+	32	"DispatchEvent"
+	33	"EEventType"
+	34	"OrderBoostProCountdownTip"
+	35	"ChangeProToOtherType"
+	36	"FailedSuper"
+	37	"IsProConfig"
+	38	"LevelModel"
+	39	"GetCurrentLevel"
+	40	"m_rewardConfig"
+	41	"ipairs"
+	42	"m_orderBoostRewardConfigsaved"
+	43	"level_min"
+	44	"level_max"
+	45	"Table"
+	46	"DeepCopy"
+	47	"smile_sum"
+	48	"SaveMetaData"
+	49	"Remove"
+	50	"SetFinishedNormalCount"
+	51	0
+	52	"Normal"
+	53	"BaseActivityModel"
+	54	"UpdatePerSecond"
+locals (10) for 000002375DA02C90:
+	0	self	1	165
+	1	state	3	165
+	2	time	54	165
+	3	endTime	70	99
+	4	curLevel	108	160
+	5	(for generator)	112	126
+	6	(for state)	112	126
+	7	(for control)	112	126
+	8	_	113	124
+	9	rewardConfig	113	124
+upvalues (2) for 000002375DA02C90:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1103,1115> (28 instructions at 000002375DA03590)
+2 params, 7 slots, 2 upvalues, 2 locals, 14 constants, 0 functions
+	1	[1104]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1104]	SELF     	2 2 -2	; "Set"
+	3	[1104]	GETTABUP 	4 0 -3	; strDBKeys "CurLogicType"
+	4	[1104]	LOADK    	5 -4	; "value"
+	5	[1104]	MOVE     	6 1
+	6	[1104]	CALL     	2 5 1
+	7	[1105]	SELF     	2 0 -5	; "RemoveProEndTime"
+	8	[1105]	CALL     	2 2 1
+	9	[1106]	SELF     	2 0 -6	; "SetCountdownTipPop"
+	10	[1106]	LOADBOOL 	4 0 0
+	11	[1106]	CALL     	2 3 1
+	12	[1107]	SETTABLE 	0 -7 -8	; "m_bTypeChanged" true
+	13	[1110]	GETTABUP 	2 1 -9	; _ENV "EventDispatcher"
+	14	[1110]	GETTABLE 	2 2 -10	; "DispatchEvent"
+	15	[1110]	GETTABUP 	3 1 -11	; _ENV "EEventType"
+	16	[1110]	GETTABLE 	3 3 -12	; "OrderBoostProEnd"
+	17	[1110]	CALL     	2 2 1
+	18	[1112]	GETTABUP 	2 1 -9	; _ENV "EventDispatcher"
+	19	[1112]	GETTABLE 	2 2 -10	; "DispatchEvent"
+	20	[1112]	GETTABUP 	3 1 -11	; _ENV "EEventType"
+	21	[1112]	GETTABLE 	3 3 -13	; "OrderStatusChanged"
+	22	[1112]	CALL     	2 2 1
+	23	[1114]	GETTABUP 	2 1 -9	; _ENV "EventDispatcher"
+	24	[1114]	GETTABLE 	2 2 -10	; "DispatchEvent"
+	25	[1114]	GETTABUP 	3 1 -11	; _ENV "EEventType"
+	26	[1114]	GETTABLE 	3 3 -14	; "OrderBoostRefreshEntry"
+	27	[1114]	CALL     	2 2 1
+	28	[1115]	RETURN   	0 1
+constants (14) for 000002375DA03590:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurLogicType"
+	4	"value"
+	5	"RemoveProEndTime"
+	6	"SetCountdownTipPop"
+	7	"m_bTypeChanged"
+	8	true
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"OrderBoostProEnd"
+	13	"OrderStatusChanged"
+	14	"OrderBoostRefreshEntry"
+locals (2) for 000002375DA03590:
+	0	self	1	29
+	1	type	1	29
+upvalues (2) for 000002375DA03590:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:1118,1120> (3 instructions at 000002375DA03A90)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1119]	GETTABLE 	1 0 -1	; "m_curInfo"
+	2	[1119]	RETURN   	1 2
+	3	[1120]	RETURN   	0 1
+constants (1) for 000002375DA03A90:
+	1	"m_curInfo"
+locals (1) for 000002375DA03A90:
+	0	self	1	4
+upvalues (0) for 000002375DA03A90:
+
+function <OrderBoostModel.lua:1122,1124> (12 instructions at 000002375DA02F90)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[1123]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[1123]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[1123]	SELF     	1 1 -3	; "GetGeneralConfByType"
+	4	[1123]	GETTABUP 	3 0 -4	; _ENV "EGeneralConfType"
+	5	[1123]	GETTABLE 	3 3 -5	; "OrderBoostHint"
+	6	[1123]	CALL     	1 3 2
+	7	[1123]	EQ       	1 1 -6	; - 1
+	8	[1123]	JMP      	0 1	; to 10
+	9	[1123]	LOADBOOL 	1 0 1
+	10	[1123]	LOADBOOL 	1 1 0
+	11	[1123]	RETURN   	1 2
+	12	[1124]	RETURN   	0 1
+constants (6) for 000002375DA02F90:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetGeneralConfByType"
+	4	"EGeneralConfType"
+	5	"OrderBoostHint"
+	6	1
+locals (1) for 000002375DA02F90:
+	0	self	1	13
+upvalues (1) for 000002375DA02F90:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1126,1128> (12 instructions at 000002375DA03A10)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1127]	NEWTABLE 	1 4 0
+	2	[1127]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[1127]	GETTABLE 	2 2 -2	; "OrderBoost"
+	4	[1127]	GETTABUP 	3 0 -1	; _ENV "AddressableLabel"
+	5	[1127]	GETTABLE 	3 3 -3	; "OrderBoostPro"
+	6	[1127]	GETTABUP 	4 0 -1	; _ENV "AddressableLabel"
+	7	[1127]	GETTABLE 	4 4 -4	; "OrderBoostCommon"
+	8	[1127]	GETTABUP 	5 0 -1	; _ENV "AddressableLabel"
+	9	[1127]	GETTABLE 	5 5 -5	; "Cannon"
+	10	[1127]	SETLIST  	1 4 1	; 1
+	11	[1127]	RETURN   	1 2
+	12	[1128]	RETURN   	0 1
+constants (5) for 000002375DA03A10:
+	1	"AddressableLabel"
+	2	"OrderBoost"
+	3	"OrderBoostPro"
+	4	"OrderBoostCommon"
+	5	"Cannon"
+locals (1) for 000002375DA03A10:
+	0	self	1	13
+upvalues (1) for 000002375DA03A10:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1131,1133> (14 instructions at 000002375DA03790)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[1132]	SELF     	1 0 -1	; "GetLogicType"
+	2	[1132]	CALL     	1 2 2
+	3	[1132]	GETTABUP 	2 0 -2	; _ENV "EOrderBoostType"
+	4	[1132]	GETTABLE 	2 2 -3	; "Super"
+	5	[1132]	EQ       	0 1 2
+	6	[1132]	JMP      	0 4	; to 11
+	7	[1132]	GETTABUP 	1 0 -2	; _ENV "EOrderBoostType"
+	8	[1132]	GETTABLE 	1 1 -3	; "Super"
+	9	[1132]	TEST     	1 1
+	10	[1132]	JMP      	0 2	; to 13
+	11	[1132]	GETTABUP 	1 0 -2	; _ENV "EOrderBoostType"
+	12	[1132]	GETTABLE 	1 1 -4	; "Normal"
+	13	[1132]	RETURN   	1 2
+	14	[1133]	RETURN   	0 1
+constants (4) for 000002375DA03790:
+	1	"GetLogicType"
+	2	"EOrderBoostType"
+	3	"Super"
+	4	"Normal"
+locals (1) for 000002375DA03790:
+	0	self	1	15
+upvalues (1) for 000002375DA03790:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1135,1137> (11 instructions at 000002375DA02790)
+1 param, 5 slots, 2 upvalues, 1 local, 6 constants, 0 functions
+	1	[1136]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1136]	SELF     	1 1 -2	; "GetValue"
+	3	[1136]	GETTABUP 	3 0 -3	; strDBKeys "CurLogicType"
+	4	[1136]	LOADK    	4 -4	; "value"
+	5	[1136]	CALL     	1 4 2
+	6	[1136]	TEST     	1 1
+	7	[1136]	JMP      	0 2	; to 10
+	8	[1136]	GETTABUP 	1 1 -5	; _ENV "EOrderBoostType"
+	9	[1136]	GETTABLE 	1 1 -6	; "Normal"
+	10	[1136]	RETURN   	1 2
+	11	[1137]	RETURN   	0 1
+constants (6) for 000002375DA02790:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurLogicType"
+	4	"value"
+	5	"EOrderBoostType"
+	6	"Normal"
+locals (1) for 000002375DA02790:
+	0	self	1	12
+upvalues (2) for 000002375DA02790:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:1139,1141> (11 instructions at 000002375DA02310)
+1 param, 5 slots, 2 upvalues, 1 local, 6 constants, 0 functions
+	1	[1140]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1140]	SELF     	1 1 -2	; "GetValue"
+	3	[1140]	GETTABUP 	3 0 -3	; strDBKeys "LastLogicType"
+	4	[1140]	LOADK    	4 -4	; "value"
+	5	[1140]	CALL     	1 4 2
+	6	[1140]	TEST     	1 1
+	7	[1140]	JMP      	0 2	; to 10
+	8	[1140]	GETTABUP 	1 1 -5	; _ENV "EOrderBoostType"
+	9	[1140]	GETTABLE 	1 1 -6	; "Normal"
+	10	[1140]	RETURN   	1 2
+	11	[1141]	RETURN   	0 1
+constants (6) for 000002375DA02310:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastLogicType"
+	4	"value"
+	5	"EOrderBoostType"
+	6	"Normal"
+locals (1) for 000002375DA02310:
+	0	self	1	12
+upvalues (2) for 000002375DA02310:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:1143,1145> (10 instructions at 000002375DA03510)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1144]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1144]	SELF     	1 1 -2	; "GetValue"
+	3	[1144]	GETTABUP 	3 0 -3	; strDBKeys "FinishedNormalCount"
+	4	[1144]	LOADK    	4 -4	; "value"
+	5	[1144]	CALL     	1 4 2
+	6	[1144]	TEST     	1 1
+	7	[1144]	JMP      	0 1	; to 9
+	8	[1144]	LOADK    	1 -5	; 0
+	9	[1144]	RETURN   	1 2
+	10	[1145]	RETURN   	0 1
+constants (5) for 000002375DA03510:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FinishedNormalCount"
+	4	"value"
+	5	0
+locals (1) for 000002375DA03510:
+	0	self	1	11
+upvalues (1) for 000002375DA03510:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1147,1149> (7 instructions at 000002375DA03B10)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[1148]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1148]	SELF     	2 2 -2	; "Set"
+	3	[1148]	GETTABUP 	4 0 -3	; strDBKeys "FinishedNormalCount"
+	4	[1148]	LOADK    	5 -4	; "value"
+	5	[1148]	MOVE     	6 1
+	6	[1148]	CALL     	2 5 1
+	7	[1149]	RETURN   	0 1
+constants (4) for 000002375DA03B10:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FinishedNormalCount"
+	4	"value"
+locals (2) for 000002375DA03B10:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 000002375DA03B10:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1151,1153> (10 instructions at 000002375DA03C90)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1152]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1152]	SELF     	1 1 -2	; "GetValue"
+	3	[1152]	GETTABUP 	3 0 -3	; strDBKeys "CannonBoosterRound"
+	4	[1152]	LOADK    	4 -4	; "value"
+	5	[1152]	CALL     	1 4 2
+	6	[1152]	TEST     	1 1
+	7	[1152]	JMP      	0 1	; to 9
+	8	[1152]	LOADK    	1 -5	; 0
+	9	[1152]	RETURN   	1 2
+	10	[1153]	RETURN   	0 1
+constants (5) for 000002375DA03C90:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CannonBoosterRound"
+	4	"value"
+	5	0
+locals (1) for 000002375DA03C90:
+	0	self	1	11
+upvalues (1) for 000002375DA03C90:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1155,1157> (7 instructions at 000002375DA03610)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[1156]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1156]	SELF     	2 2 -2	; "Set"
+	3	[1156]	GETTABUP 	4 0 -3	; strDBKeys "CannonBoosterRound"
+	4	[1156]	LOADK    	5 -4	; "value"
+	5	[1156]	MOVE     	6 1
+	6	[1156]	CALL     	2 5 1
+	7	[1157]	RETURN   	0 1
+constants (4) for 000002375DA03610:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CannonBoosterRound"
+	4	"value"
+locals (2) for 000002375DA03610:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 000002375DA03610:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1159,1161> (11 instructions at 000002375DA03690)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1160]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1160]	SELF     	1 1 -2	; "GetValue"
+	3	[1160]	GETTABUP 	3 0 -3	; strDBKeys "IsProConfig"
+	4	[1160]	LOADK    	4 -4	; "value"
+	5	[1160]	CALL     	1 4 2
+	6	[1160]	EQ       	1 1 -5	; - "1"
+	7	[1160]	JMP      	0 1	; to 9
+	8	[1160]	LOADBOOL 	1 0 1
+	9	[1160]	LOADBOOL 	1 1 0
+	10	[1160]	RETURN   	1 2
+	11	[1161]	RETURN   	0 1
+constants (5) for 000002375DA03690:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"IsProConfig"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA03690:
+	0	self	1	12
+upvalues (1) for 000002375DA03690:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1163,1165> (7 instructions at 000002375DA02D90)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1164]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1164]	SELF     	1 1 -2	; "Set"
+	3	[1164]	GETTABUP 	3 0 -3	; strDBKeys "IsProConfig"
+	4	[1164]	LOADK    	4 -4	; "value"
+	5	[1164]	LOADK    	5 -5	; "1"
+	6	[1164]	CALL     	1 5 1
+	7	[1165]	RETURN   	0 1
+constants (5) for 000002375DA02D90:
+	1	"m_dbTable"
+	2	"Set"
+	3	"IsProConfig"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA02D90:
+	0	self	1	8
+upvalues (1) for 000002375DA02D90:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1167,1169> (7 instructions at 000002375DA03710)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[1168]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1168]	SELF     	2 2 -2	; "Set"
+	3	[1168]	GETTABUP 	4 0 -3	; strDBKeys "LessScoreRound"
+	4	[1168]	LOADK    	5 -4	; "value"
+	5	[1168]	MOVE     	6 1
+	6	[1168]	CALL     	2 5 1
+	7	[1169]	RETURN   	0 1
+constants (4) for 000002375DA03710:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LessScoreRound"
+	4	"value"
+locals (2) for 000002375DA03710:
+	0	self	1	8
+	1	value	1	8
+upvalues (1) for 000002375DA03710:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1171,1173> (10 instructions at 000002375DA03810)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1172]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1172]	SELF     	1 1 -2	; "GetValue"
+	3	[1172]	GETTABUP 	3 0 -3	; strDBKeys "LessScoreRound"
+	4	[1172]	LOADK    	4 -4	; "value"
+	5	[1172]	CALL     	1 4 2
+	6	[1172]	TEST     	1 1
+	7	[1172]	JMP      	0 1	; to 9
+	8	[1172]	LOADK    	1 -5	; 0
+	9	[1172]	RETURN   	1 2
+	10	[1173]	RETURN   	0 1
+constants (5) for 000002375DA03810:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LessScoreRound"
+	4	"value"
+	5	0
+locals (1) for 000002375DA03810:
+	0	self	1	11
+upvalues (1) for 000002375DA03810:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1175,1183> (38 instructions at 000002375DA03D90)
+1 param, 7 slots, 2 upvalues, 2 locals, 23 constants, 0 functions
+	1	[1176]	SELF     	1 0 -1	; "GetState"
+	2	[1176]	CALL     	1 2 2
+	3	[1176]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[1176]	GETTABLE 	2 2 -3	; "Started"
+	5	[1176]	EQ       	0 1 2
+	6	[1176]	JMP      	0 31	; to 38
+	7	[1176]	SELF     	1 0 -4	; "GetLogicType"
+	8	[1176]	CALL     	1 2 2
+	9	[1176]	GETTABUP 	2 0 -5	; _ENV "EOrderBoostType"
+	10	[1176]	GETTABLE 	2 2 -6	; "Super"
+	11	[1176]	EQ       	0 1 2
+	12	[1176]	JMP      	0 25	; to 38
+	13	[1176]	SELF     	1 0 -7	; "GetProEndTime"
+	14	[1176]	CALL     	1 2 2
+	15	[1176]	EQ       	0 1 -8	; - nil
+	16	[1176]	JMP      	0 21	; to 38
+	17	[1177]	GETTABUP 	1 0 -9	; _ENV "GM"
+	18	[1177]	GETTABLE 	1 1 -10	; "GameModel"
+	19	[1177]	SELF     	1 1 -11	; "GetServerTime"
+	20	[1177]	CALL     	1 2 2
+	21	[1177]	GETTABLE 	2 0 -12	; "m_rewardConfig"
+	22	[1177]	GETTABLE 	2 2 -13	; "last_time"
+	23	[1177]	MUL      	2 2 -14	; - 60
+	24	[1177]	ADD      	1 1 2
+	25	[1178]	GETTABLE 	2 0 -15	; "m_dbTable"
+	26	[1178]	SELF     	2 2 -16	; "Set"
+	27	[1178]	GETTABUP 	4 1 -17	; strDBKeys "ProEndTime"
+	28	[1178]	LOADK    	5 -18	; "value"
+	29	[1178]	MOVE     	6 1
+	30	[1178]	CALL     	2 5 1
+	31	[1179]	GETTABUP 	2 0 -19	; _ENV "EventDispatcher"
+	32	[1179]	GETTABLE 	2 2 -20	; "DispatchEvent"
+	33	[1179]	GETTABUP 	3 0 -21	; _ENV "EEventType"
+	34	[1179]	GETTABLE 	3 3 -22	; "OrderBoostProStart"
+	35	[1179]	CALL     	2 2 1
+	36	[1181]	SELF     	2 0 -23	; "SetFirstHint"
+	37	[1181]	CALL     	2 2 1
+	38	[1183]	RETURN   	0 1
+constants (23) for 000002375DA03D90:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetLogicType"
+	5	"EOrderBoostType"
+	6	"Super"
+	7	"GetProEndTime"
+	8	nil
+	9	"GM"
+	10	"GameModel"
+	11	"GetServerTime"
+	12	"m_rewardConfig"
+	13	"last_time"
+	14	60
+	15	"m_dbTable"
+	16	"Set"
+	17	"ProEndTime"
+	18	"value"
+	19	"EventDispatcher"
+	20	"DispatchEvent"
+	21	"EEventType"
+	22	"OrderBoostProStart"
+	23	"SetFirstHint"
+locals (2) for 000002375DA03D90:
+	0	self	1	39
+	1	time	25	38
+upvalues (2) for 000002375DA03D90:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1185,1187> (7 instructions at 000002375DA02290)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[1186]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1186]	SELF     	1 1 -2	; "GetValue"
+	3	[1186]	GETTABUP 	3 0 -3	; strDBKeys "ProEndTime"
+	4	[1186]	LOADK    	4 -4	; "value"
+	5	[1186]	TAILCALL 	1 4 0
+	6	[1186]	RETURN   	1 0
+	7	[1187]	RETURN   	0 1
+constants (4) for 000002375DA02290:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"ProEndTime"
+	4	"value"
+locals (1) for 000002375DA02290:
+	0	self	1	8
+upvalues (1) for 000002375DA02290:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1189,1191> (6 instructions at 000002375DA02A10)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[1190]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1190]	SELF     	1 1 -2	; "Remove"
+	3	[1190]	GETTABUP 	3 0 -3	; strDBKeys "ProEndTime"
+	4	[1190]	LOADK    	4 -4	; "value"
+	5	[1190]	CALL     	1 4 1
+	6	[1191]	RETURN   	0 1
+constants (4) for 000002375DA02A10:
+	1	"m_dbTable"
+	2	"Remove"
+	3	"ProEndTime"
+	4	"value"
+locals (1) for 000002375DA02A10:
+	0	self	1	7
+upvalues (1) for 000002375DA02A10:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1193,1195> (7 instructions at 000002375DA02B90)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[1194]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1194]	SELF     	2 2 -2	; "Set"
+	3	[1194]	GETTABUP 	4 0 -3	; strDBKeys "TutorialGestureNum"
+	4	[1194]	LOADK    	5 -4	; "value"
+	5	[1194]	MOVE     	6 1
+	6	[1194]	CALL     	2 5 1
+	7	[1195]	RETURN   	0 1
+constants (4) for 000002375DA02B90:
+	1	"m_dbTable"
+	2	"Set"
+	3	"TutorialGestureNum"
+	4	"value"
+locals (2) for 000002375DA02B90:
+	0	self	1	8
+	1	value	1	8
+upvalues (1) for 000002375DA02B90:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1197,1199> (10 instructions at 000002375DA03990)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1198]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1198]	SELF     	1 1 -2	; "GetValue"
+	3	[1198]	GETTABUP 	3 0 -3	; strDBKeys "TutorialGestureNum"
+	4	[1198]	LOADK    	4 -4	; "value"
+	5	[1198]	CALL     	1 4 2
+	6	[1198]	TEST     	1 1
+	7	[1198]	JMP      	0 1	; to 9
+	8	[1198]	LOADK    	1 -5	; 0
+	9	[1198]	RETURN   	1 2
+	10	[1199]	RETURN   	0 1
+constants (5) for 000002375DA03990:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"TutorialGestureNum"
+	4	"value"
+	5	0
+locals (1) for 000002375DA03990:
+	0	self	1	11
+upvalues (1) for 000002375DA03990:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1202,1207> (27 instructions at 000002375DA03190)
+1 param, 4 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[1203]	GETTABLE 	1 0 -1	; "m_forceProClose"
+	2	[1203]	TEST     	1 0
+	3	[1203]	JMP      	0 2	; to 6
+	4	[1204]	LOADBOOL 	1 0 0
+	5	[1204]	RETURN   	1 2
+	6	[1206]	GETTABUP 	1 0 -2	; _ENV "GM"
+	7	[1206]	GETTABLE 	1 1 -3	; "ConfigModel"
+	8	[1206]	SELF     	1 1 -4	; "GetOrderBoostProConfig"
+	9	[1206]	CALL     	1 2 2
+	10	[1206]	GETTABLE 	1 1 -5	; "IsOpen"
+	11	[1206]	TEST     	1 0
+	12	[1206]	JMP      	0 13	; to 26
+	13	[1206]	GETTABUP 	1 0 -2	; _ENV "GM"
+	14	[1206]	GETTABLE 	1 1 -6	; "GameModel"
+	15	[1206]	SELF     	1 1 -7	; "GetServerTime"
+	16	[1206]	CALL     	1 2 2
+	17	[1206]	GETTABUP 	2 0 -2	; _ENV "GM"
+	18	[1206]	GETTABLE 	2 2 -3	; "ConfigModel"
+	19	[1206]	SELF     	2 2 -4	; "GetOrderBoostProConfig"
+	20	[1206]	CALL     	2 2 2
+	21	[1206]	GETTABLE 	2 2 -8	; "eTime"
+	22	[1206]	LT       	1 1 2
+	23	[1206]	JMP      	0 1	; to 25
+	24	[1206]	LOADBOOL 	1 0 1
+	25	[1206]	LOADBOOL 	1 1 0
+	26	[1206]	RETURN   	1 2
+	27	[1207]	RETURN   	0 1
+constants (8) for 000002375DA03190:
+	1	"m_forceProClose"
+	2	"GM"
+	3	"ConfigModel"
+	4	"GetOrderBoostProConfig"
+	5	"IsOpen"
+	6	"GameModel"
+	7	"GetServerTime"
+	8	"eTime"
+locals (1) for 000002375DA03190:
+	0	self	1	28
+upvalues (1) for 000002375DA03190:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1210,1212> (22 instructions at 000002375DA03B90)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[1211]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[1211]	GETTABLE 	1 1 -2	; "ConfigModel"
+	3	[1211]	SELF     	1 1 -3	; "GetOrderBoostProConfig"
+	4	[1211]	CALL     	1 2 2
+	5	[1211]	GETTABLE 	1 1 -4	; "IsOpen"
+	6	[1211]	TEST     	1 0
+	7	[1211]	JMP      	0 13	; to 21
+	8	[1211]	GETTABUP 	1 0 -1	; _ENV "GM"
+	9	[1211]	GETTABLE 	1 1 -5	; "GameModel"
+	10	[1211]	SELF     	1 1 -6	; "GetServerTime"
+	11	[1211]	CALL     	1 2 2
+	12	[1211]	GETTABUP 	2 0 -1	; _ENV "GM"
+	13	[1211]	GETTABLE 	2 2 -2	; "ConfigModel"
+	14	[1211]	SELF     	2 2 -3	; "GetOrderBoostProConfig"
+	15	[1211]	CALL     	2 2 2
+	16	[1211]	GETTABLE 	2 2 -7	; "rTime"
+	17	[1211]	LT       	1 1 2
+	18	[1211]	JMP      	0 1	; to 20
+	19	[1211]	LOADBOOL 	1 0 1
+	20	[1211]	LOADBOOL 	1 1 0
+	21	[1211]	RETURN   	1 2
+	22	[1212]	RETURN   	0 1
+constants (7) for 000002375DA03B90:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetOrderBoostProConfig"
+	4	"IsOpen"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"rTime"
+locals (1) for 000002375DA03B90:
+	0	self	1	23
+upvalues (1) for 000002375DA03B90:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1214,1216> (12 instructions at 000002375DA02490)
+2 params, 7 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[1215]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1215]	SELF     	2 2 -2	; "Set"
+	3	[1215]	GETTABUP 	4 0 -3	; strDBKeys "PopCountdownTip"
+	4	[1215]	LOADK    	5 -4	; "value"
+	5	[1215]	TEST     	1 0
+	6	[1215]	JMP      	0 3	; to 10
+	7	[1215]	LOADK    	6 -5	; "1"
+	8	[1215]	TEST     	6 1
+	9	[1215]	JMP      	0 1	; to 11
+	10	[1215]	LOADK    	6 -6	; "0"
+	11	[1215]	CALL     	2 5 1
+	12	[1216]	RETURN   	0 1
+constants (6) for 000002375DA02490:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopCountdownTip"
+	4	"value"
+	5	"1"
+	6	"0"
+locals (2) for 000002375DA02490:
+	0	self	1	13
+	1	bPop	1	13
+upvalues (1) for 000002375DA02490:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1218,1220> (17 instructions at 000002375DA03D10)
+1 param, 5 slots, 2 upvalues, 1 local, 8 constants, 0 functions
+	1	[1219]	SELF     	1 0 -1	; "GetLogicType"
+	2	[1219]	CALL     	1 2 2
+	3	[1219]	GETTABUP 	2 0 -2	; _ENV "EOrderBoostType"
+	4	[1219]	GETTABLE 	2 2 -3	; "Super"
+	5	[1219]	EQ       	0 1 2
+	6	[1219]	JMP      	0 7	; to 14
+	7	[1219]	GETTABLE 	1 0 -4	; "m_dbTable"
+	8	[1219]	SELF     	1 1 -5	; "GetValue"
+	9	[1219]	GETTABUP 	3 1 -6	; strDBKeys "PopCountdownTip"
+	10	[1219]	LOADK    	4 -7	; "value"
+	11	[1219]	CALL     	1 4 2
+	12	[1219]	EQ       	0 1 -8	; - "1"
+	13	[1219]	JMP      	0 1	; to 15
+	14	[1219]	LOADBOOL 	1 0 1
+	15	[1219]	LOADBOOL 	1 1 0
+	16	[1219]	RETURN   	1 2
+	17	[1220]	RETURN   	0 1
+constants (8) for 000002375DA03D10:
+	1	"GetLogicType"
+	2	"EOrderBoostType"
+	3	"Super"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"PopCountdownTip"
+	7	"value"
+	8	"1"
+locals (1) for 000002375DA03D10:
+	0	self	1	18
+upvalues (2) for 000002375DA03D10:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1222,1224> (5 instructions at 000002375DA03290)
+1 param, 2 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[1223]	GETTABLE 	1 0 -1	; "m_rewardConfig"
+	2	[1223]	GETTABLE 	1 1 -2	; "last_time"
+	3	[1223]	MUL      	1 1 -3	; - 60
+	4	[1223]	RETURN   	1 2
+	5	[1224]	RETURN   	0 1
+constants (3) for 000002375DA03290:
+	1	"m_rewardConfig"
+	2	"last_time"
+	3	60
+locals (1) for 000002375DA03290:
+	0	self	1	6
+upvalues (0) for 000002375DA03290:
+
+function <OrderBoostModel.lua:1226,1228> (3 instructions at 000002375DA03E10)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1227]	GETTABLE 	1 0 -1	; "m_bTypeChanged"
+	2	[1227]	RETURN   	1 2
+	3	[1228]	RETURN   	0 1
+constants (1) for 000002375DA03E10:
+	1	"m_bTypeChanged"
+locals (1) for 000002375DA03E10:
+	0	self	1	4
+upvalues (0) for 000002375DA03E10:
+
+function <OrderBoostModel.lua:1231,1243> (37 instructions at 000002375DA03E90)
+1 param, 5 slots, 2 upvalues, 1 local, 15 constants, 0 functions
+	1	[1232]	SELF     	1 0 -1	; "GetState"
+	2	[1232]	CALL     	1 2 2
+	3	[1232]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[1232]	GETTABLE 	2 2 -3	; "Started"
+	5	[1232]	EQ       	1 1 2
+	6	[1232]	JMP      	0 2	; to 9
+	7	[1233]	LOADBOOL 	1 0 0
+	8	[1233]	RETURN   	1 2
+	9	[1236]	GETTABLE 	1 0 -4	; "m_dbTable"
+	10	[1236]	SELF     	1 1 -5	; "GetValue"
+	11	[1236]	GETTABUP 	3 1 -6	; strDBKeys "FirstProPopup"
+	12	[1236]	LOADK    	4 -7	; "value"
+	13	[1236]	CALL     	1 4 2
+	14	[1236]	EQ       	0 1 -8	; - "1"
+	15	[1236]	JMP      	0 2	; to 18
+	16	[1237]	LOADBOOL 	1 0 0
+	17	[1237]	RETURN   	1 2
+	18	[1240]	GETTABLE 	1 0 -9	; "m_curInfo"
+	19	[1240]	EQ       	1 1 -10	; - nil
+	20	[1240]	JMP      	0 16	; to 37
+	21	[1240]	SELF     	1 0 -11	; "IsProConfig"
+	22	[1240]	CALL     	1 2 2
+	23	[1240]	TEST     	1 0
+	24	[1240]	JMP      	0 12	; to 37
+	25	[1240]	SELF     	1 0 -12	; "IsProStart"
+	26	[1240]	CALL     	1 2 2
+	27	[1240]	TEST     	1 0
+	28	[1240]	JMP      	0 8	; to 37
+	29	[1240]	GETTABUP 	1 0 -13	; _ENV "Table"
+	30	[1240]	GETTABLE 	1 1 -14	; "IsEmpty"
+	31	[1240]	GETTABLE 	2 0 -15	; "m_orderBoostProRewardConfig"
+	32	[1240]	CALL     	1 2 2
+	33	[1240]	TEST     	1 1
+	34	[1240]	JMP      	0 2	; to 37
+	35	[1241]	LOADBOOL 	1 1 0
+	36	[1241]	RETURN   	1 2
+	37	[1243]	RETURN   	0 1
+constants (15) for 000002375DA03E90:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"FirstProPopup"
+	7	"value"
+	8	"1"
+	9	"m_curInfo"
+	10	nil
+	11	"IsProConfig"
+	12	"IsProStart"
+	13	"Table"
+	14	"IsEmpty"
+	15	"m_orderBoostProRewardConfig"
+locals (1) for 000002375DA03E90:
+	0	self	1	38
+upvalues (2) for 000002375DA03E90:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1245,1247> (7 instructions at 000002375DA03F10)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1246]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1246]	SELF     	1 1 -2	; "Set"
+	3	[1246]	GETTABUP 	3 0 -3	; strDBKeys "FirstProPopup"
+	4	[1246]	LOADK    	4 -4	; "value"
+	5	[1246]	LOADK    	5 -5	; "1"
+	6	[1246]	CALL     	1 5 1
+	7	[1247]	RETURN   	0 1
+constants (5) for 000002375DA03F10:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstProPopup"
+	4	"value"
+	5	"1"
+locals (1) for 000002375DA03F10:
+	0	self	1	8
+upvalues (1) for 000002375DA03F10:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1249,1251> (3 instructions at 000002375DA02B10)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1250]	GETTABLE 	1 0 -1	; "m_bProReward"
+	2	[1250]	RETURN   	1 2
+	3	[1251]	RETURN   	0 1
+constants (1) for 000002375DA02B10:
+	1	"m_bProReward"
+locals (1) for 000002375DA02B10:
+	0	self	1	4
+upvalues (0) for 000002375DA02B10:
+
+function <OrderBoostModel.lua:1253,1256> (23 instructions at 000002375DA02E10)
+1 param, 5 slots, 2 upvalues, 1 local, 12 constants, 0 functions
+	1	[1254]	GETTABLE 	1 0 -1	; "m_orderBoostExtraRewardConfig"
+	2	[1254]	EQ       	1 1 -2	; - nil
+	3	[1254]	JMP      	0 16	; to 20
+	4	[1254]	GETTABLE 	1 0 -3	; "m_dbTable"
+	5	[1254]	SELF     	1 1 -4	; "GetValue"
+	6	[1254]	GETTABUP 	3 0 -5	; strDBKeys "CannonBoosterIsOpen"
+	7	[1254]	LOADK    	4 -6	; "value"
+	8	[1254]	CALL     	1 4 2
+	9	[1254]	EQ       	0 1 -7	; - "1"
+	10	[1254]	JMP      	0 9	; to 20
+	11	[1255]	GETTABUP 	1 1 -8	; _ENV "GM"
+	12	[1255]	GETTABLE 	1 1 -9	; "LevelModel"
+	13	[1255]	SELF     	1 1 -10	; "GetCurrentLevel"
+	14	[1255]	CALL     	1 2 2
+	15	[1255]	GETTABLE 	2 0 -1	; "m_orderBoostExtraRewardConfig"
+	16	[1255]	GETTABLE 	2 2 -11	; 1
+	17	[1255]	GETTABLE 	2 2 -12	; "sLevel"
+	18	[1255]	LE       	1 2 1
+	19	[1255]	JMP      	0 1	; to 21
+	20	[1255]	LOADBOOL 	1 0 1
+	21	[1255]	LOADBOOL 	1 1 0
+	22	[1255]	RETURN   	1 2
+	23	[1256]	RETURN   	0 1
+constants (12) for 000002375DA02E10:
+	1	"m_orderBoostExtraRewardConfig"
+	2	nil
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"CannonBoosterIsOpen"
+	6	"value"
+	7	"1"
+	8	"GM"
+	9	"LevelModel"
+	10	"GetCurrentLevel"
+	11	1
+	12	"sLevel"
+locals (1) for 000002375DA02E10:
+	0	self	1	24
+upvalues (2) for 000002375DA02E10:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <OrderBoostModel.lua:1259,1275> (51 instructions at 000002375DA02E90)
+1 param, 10 slots, 1 upvalue, 8 locals, 22 constants, 0 functions
+	1	[1260]	GETTABLE 	1 0 -1	; "m_curInfo"
+	2	[1260]	GETTABLE 	1 1 -2	; "MaxScore"
+	3	[1260]	GETTABLE 	2 0 -1	; "m_curInfo"
+	4	[1260]	GETTABLE 	2 2 -3	; "curScore"
+	5	[1260]	SUB      	1 1 2
+	6	[1261]	GETTABLE 	2 0 -1	; "m_curInfo"
+	7	[1261]	GETTABLE 	3 0 -1	; "m_curInfo"
+	8	[1261]	GETTABLE 	3 3 -2	; "MaxScore"
+	9	[1261]	SETTABLE 	2 -3 3	; "curScore" -
+	10	[1263]	GETTABUP 	2 0 -4	; _ENV "ipairs"
+	11	[1263]	GETTABLE 	3 0 -5	; "m_curOrderConfigs"
+	12	[1263]	CALL     	2 2 4
+	13	[1263]	JMP      	0 7	; to 21
+	14	[1264]	GETTABLE 	7 0 -1	; "m_curInfo"
+	15	[1264]	GETTABLE 	7 7 -6	; "orderFinishInfo"
+	16	[1264]	GETTABUP 	8 0 -7	; _ENV "tostring"
+	17	[1264]	GETTABLE 	9 6 -8	; "order_slot"
+	18	[1264]	CALL     	8 2 2
+	19	[1264]	GETTABLE 	9 6 -9	; "order_num"
+	20	[1264]	SETTABLE 	7 8 9
+	21	[1263]	TFORCALL 	2 2
+	22	[1263]	TFORLOOP 	4 -9	; to 14
+	23	[1266]	SELF     	2 0 -10	; "SaveMetaData"
+	24	[1266]	CALL     	2 2 1
+	25	[1267]	GETTABUP 	2 0 -11	; _ENV "EventDispatcher"
+	26	[1267]	GETTABLE 	2 2 -12	; "DispatchEvent"
+	27	[1267]	GETTABUP 	3 0 -13	; _ENV "EEventType"
+	28	[1267]	GETTABLE 	3 3 -14	; "OrderStatusChanged"
+	29	[1267]	CALL     	2 2 1
+	30	[1268]	GETTABUP 	2 0 -11	; _ENV "EventDispatcher"
+	31	[1268]	GETTABLE 	2 2 -12	; "DispatchEvent"
+	32	[1268]	GETTABUP 	3 0 -13	; _ENV "EEventType"
+	33	[1268]	GETTABLE 	3 3 -15	; "OrderBoostSmileChanged"
+	34	[1268]	CALL     	2 2 1
+	35	[1269]	GETTABUP 	2 0 -11	; _ENV "EventDispatcher"
+	36	[1269]	GETTABLE 	2 2 -12	; "DispatchEvent"
+	37	[1269]	GETTABUP 	3 0 -13	; _ENV "EEventType"
+	38	[1269]	GETTABLE 	3 3 -16	; "OrderBoostSmileAddScore"
+	39	[1269]	MOVE     	4 1
+	40	[1269]	CALL     	2 3 1
+	41	[1271]	GETTABUP 	2 0 -17	; _ENV "GM"
+	42	[1271]	GETTABLE 	2 2 -18	; "ActivityManager"
+	43	[1271]	SELF     	2 2 -19	; "GetModel"
+	44	[1271]	GETTABUP 	4 0 -20	; _ENV "ActivityType"
+	45	[1271]	GETTABLE 	4 4 -21	; "ReviewRace"
+	46	[1271]	CALL     	2 3 2
+	47	[1272]	TEST     	2 0
+	48	[1272]	JMP      	0 2	; to 51
+	49	[1273]	SELF     	3 2 -22	; "FinishRace"
+	50	[1273]	CALL     	3 2 1
+	51	[1275]	RETURN   	0 1
+constants (22) for 000002375DA02E90:
+	1	"m_curInfo"
+	2	"MaxScore"
+	3	"curScore"
+	4	"ipairs"
+	5	"m_curOrderConfigs"
+	6	"orderFinishInfo"
+	7	"tostring"
+	8	"order_slot"
+	9	"order_num"
+	10	"SaveMetaData"
+	11	"EventDispatcher"
+	12	"DispatchEvent"
+	13	"EEventType"
+	14	"OrderStatusChanged"
+	15	"OrderBoostSmileChanged"
+	16	"OrderBoostSmileAddScore"
+	17	"GM"
+	18	"ActivityManager"
+	19	"GetModel"
+	20	"ActivityType"
+	21	"ReviewRace"
+	22	"FinishRace"
+locals (8) for 000002375DA02E90:
+	0	self	1	52
+	1	addScore	6	52
+	2	(for generator)	13	23
+	3	(for state)	13	23
+	4	(for control)	13	23
+	5	_	14	21
+	6	slotConfig	14	21
+	7	reviewRaceModel	47	52
+upvalues (1) for 000002375DA02E90:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1277,1303> (96 instructions at 000002375DA02C10)
+1 param, 10 slots, 2 upvalues, 8 locals, 45 constants, 0 functions
+	1	[1278]	SELF     	1 0 -1	; "IsProStart"
+	2	[1278]	CALL     	1 2 2
+	3	[1278]	TEST     	1 0
+	4	[1278]	JMP      	0 86	; to 91
+	5	[1278]	GETTABUP 	1 0 -2	; _ENV "Table"
+	6	[1278]	GETTABLE 	1 1 -3	; "IsEmpty"
+	7	[1278]	GETTABLE 	2 0 -4	; "m_orderBoostProRewardConfig"
+	8	[1278]	CALL     	1 2 2
+	9	[1278]	TEST     	1 1
+	10	[1278]	JMP      	0 80	; to 91
+	11	[1278]	GETTABUP 	1 0 -5	; _ENV "GM"
+	12	[1278]	GETTABLE 	1 1 -6	; "TutorialModel"
+	13	[1278]	SELF     	1 1 -7	; "IsTutorialFinished"
+	14	[1278]	LOADK    	3 -8	; "tutorial_order_boost_end"
+	15	[1278]	CALL     	1 3 2
+	16	[1278]	TEST     	1 0
+	17	[1278]	JMP      	0 73	; to 91
+	18	[1279]	GETTABLE 	1 0 -9	; "m_proTrigNum"
+	19	[1279]	EQ       	0 1 -10	; - nil
+	20	[1279]	JMP      	0 16	; to 37
+	21	[1280]	GETTABUP 	1 0 -11	; _ENV "math"
+	22	[1280]	GETTABLE 	1 1 -12	; "random"
+	23	[1280]	GETTABLE 	2 0 -13	; "m_rewardConfig"
+	24	[1280]	GETTABLE 	2 2 -14	; "pro_trig_num"
+	25	[1280]	GETTABLE 	2 2 -15	; 1
+	26	[1280]	GETTABLE 	3 0 -13	; "m_rewardConfig"
+	27	[1280]	GETTABLE 	3 3 -14	; "pro_trig_num"
+	28	[1280]	GETTABLE 	3 3 -16	; 2
+	29	[1280]	CALL     	1 3 2
+	30	[1280]	SETTABLE 	0 -9 1	; "m_proTrigNum" -
+	31	[1281]	GETTABLE 	1 0 -17	; "m_dbTable"
+	32	[1281]	SELF     	1 1 -18	; "Set"
+	33	[1281]	GETTABUP 	3 1 -19	; strDBKeys "ProTrigNum"
+	34	[1281]	LOADK    	4 -20	; "value"
+	35	[1281]	GETTABLE 	5 0 -9	; "m_proTrigNum"
+	36	[1281]	CALL     	1 5 1
+	37	[1284]	GETTABLE 	1 0 -21	; "m_curInfo"
+	38	[1284]	GETTABLE 	1 1 -22	; "MaxScore"
+	39	[1284]	GETTABLE 	2 0 -21	; "m_curInfo"
+	40	[1284]	GETTABLE 	2 2 -23	; "curScore"
+	41	[1284]	SUB      	1 1 2
+	42	[1285]	GETTABLE 	2 0 -21	; "m_curInfo"
+	43	[1285]	GETTABLE 	3 0 -21	; "m_curInfo"
+	44	[1285]	GETTABLE 	3 3 -22	; "MaxScore"
+	45	[1285]	SETTABLE 	2 -23 3	; "curScore" -
+	46	[1286]	GETTABUP 	2 0 -24	; _ENV "ipairs"
+	47	[1286]	GETTABLE 	3 0 -25	; "m_curOrderConfigs"
+	48	[1286]	CALL     	2 2 4
+	49	[1286]	JMP      	0 7	; to 57
+	50	[1287]	GETTABLE 	7 0 -21	; "m_curInfo"
+	51	[1287]	GETTABLE 	7 7 -26	; "orderFinishInfo"
+	52	[1287]	GETTABUP 	8 0 -27	; _ENV "tostring"
+	53	[1287]	GETTABLE 	9 6 -28	; "order_slot"
+	54	[1287]	CALL     	8 2 2
+	55	[1287]	GETTABLE 	9 6 -29	; "order_num"
+	56	[1287]	SETTABLE 	7 8 9
+	57	[1286]	TFORCALL 	2 2
+	58	[1286]	TFORLOOP 	4 -9	; to 50
+	59	[1289]	GETTABUP 	2 0 -30	; _ENV "EventDispatcher"
+	60	[1289]	GETTABLE 	2 2 -31	; "DispatchEvent"
+	61	[1289]	GETTABUP 	3 0 -32	; _ENV "EEventType"
+	62	[1289]	GETTABLE 	3 3 -33	; "OrderStatusChanged"
+	63	[1289]	CALL     	2 2 1
+	64	[1290]	GETTABUP 	2 0 -30	; _ENV "EventDispatcher"
+	65	[1290]	GETTABLE 	2 2 -31	; "DispatchEvent"
+	66	[1290]	GETTABUP 	3 0 -32	; _ENV "EEventType"
+	67	[1290]	GETTABLE 	3 3 -34	; "OrderBoostSmileChanged"
+	68	[1290]	CALL     	2 2 1
+	69	[1291]	GETTABUP 	2 0 -30	; _ENV "EventDispatcher"
+	70	[1291]	GETTABLE 	2 2 -31	; "DispatchEvent"
+	71	[1291]	GETTABUP 	3 0 -32	; _ENV "EEventType"
+	72	[1291]	GETTABLE 	3 3 -35	; "OrderBoostSmileAddScore"
+	73	[1291]	MOVE     	4 1
+	74	[1291]	CALL     	2 3 1
+	75	[1292]	SELF     	2 0 -36	; "SetFinishedNormalCount"
+	76	[1292]	GETTABLE 	4 0 -9	; "m_proTrigNum"
+	77	[1292]	CALL     	2 3 1
+	78	[1293]	SELF     	2 0 -37	; "SaveMetaData"
+	79	[1293]	CALL     	2 2 1
+	80	[1296]	GETTABUP 	2 0 -5	; _ENV "GM"
+	81	[1296]	GETTABLE 	2 2 -38	; "ActivityManager"
+	82	[1296]	SELF     	2 2 -39	; "GetModel"
+	83	[1296]	GETTABUP 	4 0 -40	; _ENV "ActivityType"
+	84	[1296]	GETTABLE 	4 4 -41	; "ReviewRace"
+	85	[1296]	CALL     	2 3 2
+	86	[1297]	TEST     	2 0
+	87	[1297]	JMP      	0 8	; to 96
+	88	[1298]	SELF     	3 2 -42	; "FinishRace"
+	89	[1298]	CALL     	3 2 1
+	90	[1299]	JMP      	0 5	; to 96
+	91	[1301]	GETTABUP 	1 0 -5	; _ENV "GM"
+	92	[1301]	GETTABLE 	1 1 -43	; "UIManager"
+	93	[1301]	SELF     	1 1 -44	; "ShowPrompt"
+	94	[1301]	LOADK    	3 -45	; "\230\151\160\230\179\149\229\188\128\229\144\175\232\182\133\231\186\167\231\172\145\232\132\184\232\174\162\229\141\149\239\188\154\230\163\128\230\159\165\233\133\141\231\189\174\230\152\175\229\144\166\229\188\128\229\144\175\227\128\129eTime\228\185\139\229\137\141\227\128\129\230\156\137\230\151\160\229\165\150\229\138\177\233\133\141\231\189\174\227\128\129\230\153\174\233\128\154\229\188\149\229\175\188\230\152\175\229\144\166\229\174\140\230\136\144"
+	95	[1301]	CALL     	1 3 1
+	96	[1303]	RETURN   	0 1
+constants (45) for 000002375DA02C10:
+	1	"IsProStart"
+	2	"Table"
+	3	"IsEmpty"
+	4	"m_orderBoostProRewardConfig"
+	5	"GM"
+	6	"TutorialModel"
+	7	"IsTutorialFinished"
+	8	"tutorial_order_boost_end"
+	9	"m_proTrigNum"
+	10	nil
+	11	"math"
+	12	"random"
+	13	"m_rewardConfig"
+	14	"pro_trig_num"
+	15	1
+	16	2
+	17	"m_dbTable"
+	18	"Set"
+	19	"ProTrigNum"
+	20	"value"
+	21	"m_curInfo"
+	22	"MaxScore"
+	23	"curScore"
+	24	"ipairs"
+	25	"m_curOrderConfigs"
+	26	"orderFinishInfo"
+	27	"tostring"
+	28	"order_slot"
+	29	"order_num"
+	30	"EventDispatcher"
+	31	"DispatchEvent"
+	32	"EEventType"
+	33	"OrderStatusChanged"
+	34	"OrderBoostSmileChanged"
+	35	"OrderBoostSmileAddScore"
+	36	"SetFinishedNormalCount"
+	37	"SaveMetaData"
+	38	"ActivityManager"
+	39	"GetModel"
+	40	"ActivityType"
+	41	"ReviewRace"
+	42	"FinishRace"
+	43	"UIManager"
+	44	"ShowPrompt"
+	45	"\230\151\160\230\179\149\229\188\128\229\144\175\232\182\133\231\186\167\231\172\145\232\132\184\232\174\162\229\141\149\239\188\154\230\163\128\230\159\165\233\133\141\231\189\174\230\152\175\229\144\166\229\188\128\229\144\175\227\128\129eTime\228\185\139\229\137\141\227\128\129\230\156\137\230\151\160\229\165\150\229\138\177\233\133\141\231\189\174\227\128\129\230\153\174\233\128\154\229\188\149\229\175\188\230\152\175\229\144\166\229\174\140\230\136\144"
+locals (8) for 000002375DA02C10:
+	0	self	1	97
+	1	addScore	42	90
+	2	(for generator)	49	59
+	3	(for state)	49	59
+	4	(for control)	49	59
+	5	_	50	57
+	6	slotConfig	50	57
+	7	reviewRaceModel	86	90
+upvalues (2) for 000002375DA02C10:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1305,1313> (18 instructions at 000002375DA03F90)
+1 param, 3 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[1306]	GETTABLE 	1 0 -1	; "m_forceProClose"
+	2	[1306]	TEST     	1 0
+	3	[1306]	JMP      	0 3	; to 7
+	4	[1306]	GETTABLE 	1 0 -1	; "m_forceProClose"
+	5	[1306]	EQ       	0 1 -2	; - nil
+	6	[1306]	JMP      	0 6	; to 13
+	7	[1307]	SETTABLE 	0 -1 -3	; "m_forceProClose" true
+	8	[1308]	GETTABUP 	1 0 -4	; _ENV "Log"
+	9	[1308]	GETTABLE 	1 1 -5	; "Info"
+	10	[1308]	LOADK    	2 -6	; "[\232\182\133\231\186\167\231\172\145\232\132\184] \232\182\133\231\186\167\229\183\178\229\133\179\233\151\173"
+	11	[1308]	CALL     	1 2 1
+	12	[1308]	JMP      	0 5	; to 18
+	13	[1310]	SETTABLE 	0 -1 -7	; "m_forceProClose" false
+	14	[1311]	GETTABUP 	1 0 -4	; _ENV "Log"
+	15	[1311]	GETTABLE 	1 1 -5	; "Info"
+	16	[1311]	LOADK    	2 -8	; "[\232\182\133\231\186\167\231\172\145\232\132\184] \232\182\133\231\186\167\229\183\178\229\188\128\229\144\175"
+	17	[1311]	CALL     	1 2 1
+	18	[1313]	RETURN   	0 1
+constants (8) for 000002375DA03F90:
+	1	"m_forceProClose"
+	2	nil
+	3	true
+	4	"Log"
+	5	"Info"
+	6	"[\232\182\133\231\186\167\231\172\145\232\132\184] \232\182\133\231\186\167\229\183\178\229\133\179\233\151\173"
+	7	false
+	8	"[\232\182\133\231\186\167\231\172\145\232\132\184] \232\182\133\231\186\167\229\183\178\229\188\128\229\144\175"
+locals (1) for 000002375DA03F90:
+	0	self	1	19
+upvalues (1) for 000002375DA03F90:
+	0	_ENV	0	0
+
+function <OrderBoostModel.lua:1315,1317> (7 instructions at 000002375DA04010)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[1316]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[1316]	SELF     	2 2 -2	; "Set"
+	3	[1316]	GETTABUP 	4 0 -3	; strDBKeys "CannonBoosterShownRound"
+	4	[1316]	LOADK    	5 -4	; "value"
+	5	[1316]	MOVE     	6 1
+	6	[1316]	CALL     	2 5 1
+	7	[1317]	RETURN   	0 1
+constants (4) for 000002375DA04010:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CannonBoosterShownRound"
+	4	"value"
+locals (2) for 000002375DA04010:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 000002375DA04010:
+	0	strDBKeys	1	0
+
+function <OrderBoostModel.lua:1319,1321> (7 instructions at 000002375DA02510)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[1320]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1320]	SELF     	1 1 -2	; "GetValue"
+	3	[1320]	GETTABUP 	3 0 -3	; strDBKeys "CannonBoosterShownRound"
+	4	[1320]	LOADK    	4 -4	; "value"
+	5	[1320]	TAILCALL 	1 4 0
+	6	[1320]	RETURN   	1 0
+	7	[1321]	RETURN   	0 1
+constants (4) for 000002375DA02510:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CannonBoosterShownRound"
+	4	"value"
+locals (1) for 000002375DA02510:
+	0	self	1	8
+upvalues (1) for 000002375DA02510:
+	0	strDBKeys	1	0

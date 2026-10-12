@@ -1,0 +1,288 @@
+
+main <ItemRewardCategoryHandler.lua:0,0> (21 instructions at 000001ACDEFDEEE0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 9 constants, 4 functions
+	1	[2]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[2]	NEWTABLE 	1 0 0
+	3	[2]	GETTABUP 	2 0 -3	; _ENV "BaseRewardCategoryHandler"
+	4	[2]	CALL     	0 3 2
+	5	[2]	SETTABUP 	0 -1 0	; _ENV "ItemRewardCategoryHandler"
+	6	[3]	GETTABUP 	0 0 -1	; _ENV "ItemRewardCategoryHandler"
+	7	[3]	GETTABUP 	1 0 -1	; _ENV "ItemRewardCategoryHandler"
+	8	[3]	SETTABLE 	0 -4 1	; "__index" -
+	9	[5]	GETTABUP 	0 0 -1	; _ENV "ItemRewardCategoryHandler"
+	10	[8]	CLOSURE  	1 0	; 000001ACDEFDF040
+	11	[5]	SETTABLE 	0 -5 1	; "Create" -
+	12	[10]	GETTABUP 	0 0 -6	; _ENV "ItemRewardCategoryHandler"
+	13	[24]	CLOSURE  	1 1	; 000001ACDEFDF0C0
+	14	[10]	SETTABLE 	0 -7 1	; "LogicHandle" -
+	15	[26]	GETTABUP 	0 0 -6	; _ENV "ItemRewardCategoryHandler"
+	16	[47]	CLOSURE  	1 2	; 000001ACDEFDF140
+	17	[26]	SETTABLE 	0 -8 1	; "InViewHandle" -
+	18	[49]	GETTABUP 	0 0 -6	; _ENV "ItemRewardCategoryHandler"
+	19	[68]	CLOSURE  	1 3	; 000001ACDEFE26D0
+	20	[49]	SETTABLE 	0 -9 1	; "CanShowTipButton" -
+	21	[68]	RETURN   	0 1
+constants (9) for 000001ACDEFDEEE0:
+	1	"ItemRewardCategoryHandler"
+	2	"setmetatable"
+	3	"BaseRewardCategoryHandler"
+	4	"__index"
+	5	"Create"
+	6	"ItemRewardCategoryHandler"
+	7	"LogicHandle"
+	8	"InViewHandle"
+	9	"CanShowTipButton"
+locals (0) for 000001ACDEFDEEE0:
+upvalues (1) for 000001ACDEFDEEE0:
+	0	_ENV	1	0
+
+function <ItemRewardCategoryHandler.lua:5,8> (6 instructions at 000001ACDEFDF040)
+0 params, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[6]	GETTABUP 	0 0 -1	; _ENV "setmetatable"
+	2	[6]	NEWTABLE 	1 0 0
+	3	[6]	GETTABUP 	2 0 -2	; _ENV "ItemRewardCategoryHandler"
+	4	[6]	CALL     	0 3 2
+	5	[7]	RETURN   	0 2
+	6	[8]	RETURN   	0 1
+constants (2) for 000001ACDEFDF040:
+	1	"setmetatable"
+	2	"ItemRewardCategoryHandler"
+locals (1) for 000001ACDEFDF040:
+	0	handler	5	7
+upvalues (1) for 000001ACDEFDF040:
+	0	_ENV	0	0
+
+function <ItemRewardCategoryHandler.lua:10,24> (50 instructions at 000001ACDEFDF0C0)
+3 params, 17 slots, 1 upvalue, 19 locals, 17 constants, 0 functions
+	1	[11]	NEWTABLE 	3 0 0
+	2	[12]	GETTABUP 	4 0 -1	; _ENV "ipairs"
+	3	[12]	MOVE     	5 1
+	4	[12]	CALL     	4 2 4
+	5	[12]	JMP      	0 11	; to 17
+	6	[13]	LOADK    	9 -2	; 1
+	7	[13]	GETTABUP 	10 0 -3	; _ENV "PROPERTY_COUNT"
+	8	[13]	GETTABLE 	10 8 10
+	9	[13]	LOADK    	11 -2	; 1
+	10	[13]	FORPREP  	9 5	; to 16
+	11	[14]	LEN      	13 3
+	12	[14]	ADD      	13 13 -2	; - 1
+	13	[14]	GETTABUP 	14 0 -4	; _ENV "PROPERTY_TYPE"
+	14	[14]	GETTABLE 	14 8 14
+	15	[14]	SETTABLE 	3 13 14
+	16	[13]	FORLOOP  	9 -6	; to 11
+	17	[12]	TFORCALL 	4 2
+	18	[12]	TFORLOOP 	6 -13	; to 6
+	19	[18]	GETTABUP 	4 0 -5	; _ENV "BoardModelHelper"
+	20	[18]	GETTABLE 	4 4 -6	; "GetModelByGameMode"
+	21	[18]	GETTABLE 	5 2 -7	; "targetGameMode"
+	22	[18]	CALL     	4 2 2
+	23	[19]	SELF     	5 4 -8	; "CacheItems"
+	24	[19]	MOVE     	7 3
+	25	[19]	GETTABLE 	8 2 -9	; "cacheItemType"
+	26	[19]	CALL     	5 4 1
+	27	[21]	GETTABUP 	5 0 -1	; _ENV "ipairs"
+	28	[21]	MOVE     	6 1
+	29	[21]	CALL     	5 2 4
+	30	[21]	JMP      	0 17	; to 48
+	31	[22]	GETTABUP 	10 0 -10	; _ENV "GM"
+	32	[22]	GETTABLE 	10 10 -11	; "BIManager"
+	33	[22]	SELF     	10 10 -12	; "LogAcquire"
+	34	[22]	GETTABUP 	12 0 -4	; _ENV "PROPERTY_TYPE"
+	35	[22]	GETTABLE 	12 9 12
+	36	[22]	GETTABUP 	13 0 -3	; _ENV "PROPERTY_COUNT"
+	37	[22]	GETTABLE 	13 9 13
+	38	[22]	GETTABLE 	14 2 -13	; "scene"
+	39	[22]	GETTABLE 	15 2 -14	; "source"
+	40	[22]	GETTABUP 	16 0 -15	; _ENV "EPropertySource"
+	41	[22]	GETTABLE 	16 16 -16	; "Give"
+	42	[22]	EQ       	1 15 16
+	43	[22]	JMP      	0 1	; to 45
+	44	[22]	LOADBOOL 	15 0 1
+	45	[22]	LOADBOOL 	15 1 0
+	46	[22]	GETTABLE 	16 2 -17	; "boardType"
+	47	[22]	CALL     	10 7 1
+	48	[21]	TFORCALL 	5 2
+	49	[21]	TFORLOOP 	7 -19	; to 31
+	50	[24]	RETURN   	0 1
+constants (17) for 000001ACDEFDF0C0:
+	1	"ipairs"
+	2	1
+	3	"PROPERTY_COUNT"
+	4	"PROPERTY_TYPE"
+	5	"BoardModelHelper"
+	6	"GetModelByGameMode"
+	7	"targetGameMode"
+	8	"CacheItems"
+	9	"cacheItemType"
+	10	"GM"
+	11	"BIManager"
+	12	"LogAcquire"
+	13	"scene"
+	14	"source"
+	15	"EPropertySource"
+	16	"Give"
+	17	"boardType"
+locals (19) for 000001ACDEFDF0C0:
+	0	self	1	51
+	1	rewardDatas	1	51
+	2	logicArgs	1	51
+	3	arrItems	2	51
+	4	(for generator)	5	19
+	5	(for state)	5	19
+	6	(for control)	5	19
+	7	_	6	17
+	8	itemData	6	17
+	9	(for index)	10	17
+	10	(for limit)	10	17
+	11	(for step)	10	17
+	12	i	11	16
+	13	boardModel	23	51
+	14	(for generator)	30	50
+	15	(for state)	30	50
+	16	(for control)	30	50
+	17	_	31	48
+	18	itemData	31	48
+upvalues (1) for 000001ACDEFDF0C0:
+	0	_ENV	0	0
+
+function <ItemRewardCategoryHandler.lua:26,47> (41 instructions at 000001ACDEFDF140)
+3 params, 11 slots, 1 upvalue, 6 locals, 20 constants, 0 functions
+	1	[27]	GETTABLE 	3 2 -1	; "viewData"
+	2	[28]	GETTABLE 	4 3 -2	; "simpleCollect"
+	3	[28]	TEST     	4 0
+	4	[28]	JMP      	0 1	; to 6
+	5	[29]	RETURN   	0 1
+	6	[32]	GETTABUP 	4 0 -3	; _ENV "PROPERTY_TYPE"
+	7	[32]	GETTABLE 	4 1 4
+	8	[33]	GETTABUP 	5 0 -4	; _ENV "ItemType"
+	9	[33]	GETTABLE 	5 5 -5	; "Lollipop01"
+	10	[33]	EQ       	1 4 5
+	11	[33]	JMP      	0 29	; to 41
+	12	[34]	NEWTABLE 	5 1 0
+	13	[34]	NEWTABLE 	6 0 7
+	14	[36]	GETTABLE 	7 2 -7	; "endPosition"
+	15	[36]	SETTABLE 	6 -6 7	; "endPos" -
+	16	[37]	SETTABLE 	6 -8 -9	; "flyCount" 1
+	17	[38]	GETTABUP 	7 0 -11	; _ENV "GM"
+	18	[38]	GETTABLE 	7 7 -12	; "ItemDataModel"
+	19	[38]	SELF     	7 7 -13	; "GetSpriteName"
+	20	[38]	MOVE     	9 4
+	21	[38]	CALL     	7 3 2
+	22	[38]	SETTABLE 	6 -10 7	; "spriteKey" -
+	23	[39]	GETTABLE 	7 2 -14	; "flyDelay"
+	24	[39]	SETTABLE 	6 -14 7	; "flyDelay" -
+	25	[40]	GETTABLE 	7 3 -15	; "eventLock"
+	26	[40]	SETTABLE 	6 -15 7	; "eventLock" -
+	27	[41]	GETTABLE 	7 3 -16	; "targetButton"
+	28	[41]	SETTABLE 	6 -16 7	; "targetButton" -
+	29	[42]	GETTABLE 	7 3 -17	; "spriteScale"
+	30	[42]	SETTABLE 	6 -17 7	; "spriteScale" -
+	31	[44]	SETLIST  	5 1 1	; 1
+	32	[45]	GETTABUP 	6 0 -11	; _ENV "GM"
+	33	[45]	GETTABLE 	6 6 -18	; "PropertyDataManager"
+	34	[45]	SELF     	6 6 -19	; "PlayCollectAnimation"
+	35	[45]	NEWTABLE 	8 1 0
+	36	[45]	MOVE     	9 1
+	37	[45]	SETLIST  	8 1 1	; 1
+	38	[45]	GETTABLE 	9 2 -20	; "uiWorldPosition"
+	39	[45]	MOVE     	10 5
+	40	[45]	CALL     	6 5 1
+	41	[47]	RETURN   	0 1
+constants (20) for 000001ACDEFDF140:
+	1	"viewData"
+	2	"simpleCollect"
+	3	"PROPERTY_TYPE"
+	4	"ItemType"
+	5	"Lollipop01"
+	6	"endPos"
+	7	"endPosition"
+	8	"flyCount"
+	9	1
+	10	"spriteKey"
+	11	"GM"
+	12	"ItemDataModel"
+	13	"GetSpriteName"
+	14	"flyDelay"
+	15	"eventLock"
+	16	"targetButton"
+	17	"spriteScale"
+	18	"PropertyDataManager"
+	19	"PlayCollectAnimation"
+	20	"uiWorldPosition"
+locals (6) for 000001ACDEFDF140:
+	0	self	1	42
+	1	rewardData	1	42
+	2	showArgs	1	42
+	3	viewData	2	42
+	4	rewardType	8	42
+	5	customData	32	41
+upvalues (1) for 000001ACDEFDF140:
+	0	_ENV	0	0
+
+function <ItemRewardCategoryHandler.lua:49,68> (43 instructions at 000001ACDEFE26D0)
+2 params, 5 slots, 1 upvalue, 3 locals, 15 constants, 0 functions
+	1	[51]	GETTABUP 	2 0 -1	; _ENV "ItemType"
+	2	[51]	GETTABLE 	2 2 -2	; "level_up_piece_1"
+	3	[51]	EQ       	1 1 2
+	4	[51]	JMP      	0 4	; to 9
+	5	[51]	GETTABUP 	2 0 -1	; _ENV "ItemType"
+	6	[51]	GETTABLE 	2 2 -3	; "level_down_piece_1"
+	7	[51]	EQ       	0 1 2
+	8	[51]	JMP      	0 2	; to 11
+	9	[52]	LOADBOOL 	2 1 0
+	10	[52]	RETURN   	2 2
+	11	[55]	GETTABUP 	2 0 -4	; _ENV "RewardApi"
+	12	[55]	GETTABLE 	2 2 -5	; "CheckRewardCategoryType"
+	13	[55]	MOVE     	3 1
+	14	[55]	GETTABUP 	4 0 -6	; _ENV "ERewardCategoryType"
+	15	[55]	GETTABLE 	4 4 -7	; "Item"
+	16	[55]	CALL     	2 3 2
+	17	[55]	TEST     	2 0
+	18	[55]	JMP      	0 22	; to 41
+	19	[56]	GETTABUP 	2 0 -8	; _ENV "GM"
+	20	[56]	GETTABLE 	2 2 -9	; "ItemDataModel"
+	21	[56]	SELF     	2 2 -10	; "GetModelConfig"
+	22	[56]	MOVE     	4 1
+	23	[56]	CALL     	2 3 2
+	24	[57]	EQ       	1 2 -11	; - nil
+	25	[57]	JMP      	0 15	; to 41
+	26	[58]	GETTABLE 	3 2 -12	; "Spread_WeightType"
+	27	[58]	EQ       	1 3 -11	; - nil
+	28	[58]	JMP      	0 12	; to 41
+	29	[59]	GETTABLE 	3 2 -12	; "Spread_WeightType"
+	30	[59]	GETTABUP 	4 0 -13	; _ENV "ItemSpreadWeightType"
+	31	[59]	GETTABLE 	4 4 -14	; "ChestCustomItem"
+	32	[59]	EQ       	1 3 4
+	33	[59]	JMP      	0 5	; to 39
+	34	[60]	GETTABLE 	3 2 -12	; "Spread_WeightType"
+	35	[60]	GETTABUP 	4 0 -13	; _ENV "ItemSpreadWeightType"
+	36	[60]	GETTABLE 	4 4 -15	; "SmartItem"
+	37	[60]	EQ       	0 3 4
+	38	[60]	JMP      	0 2	; to 41
+	39	[61]	LOADBOOL 	3 1 0
+	40	[61]	RETURN   	3 2
+	41	[67]	LOADBOOL 	2 0 0
+	42	[67]	RETURN   	2 2
+	43	[68]	RETURN   	0 1
+constants (15) for 000001ACDEFE26D0:
+	1	"ItemType"
+	2	"level_up_piece_1"
+	3	"level_down_piece_1"
+	4	"RewardApi"
+	5	"CheckRewardCategoryType"
+	6	"ERewardCategoryType"
+	7	"Item"
+	8	"GM"
+	9	"ItemDataModel"
+	10	"GetModelConfig"
+	11	nil
+	12	"Spread_WeightType"
+	13	"ItemSpreadWeightType"
+	14	"ChestCustomItem"
+	15	"SmartItem"
+locals (3) for 000001ACDEFE26D0:
+	0	self	1	44
+	1	rewardType	1	44
+	2	itemModelConfig	24	41
+upvalues (1) for 000001ACDEFE26D0:
+	0	_ENV	0	0

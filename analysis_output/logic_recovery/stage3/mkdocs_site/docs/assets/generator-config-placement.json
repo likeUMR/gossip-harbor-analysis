@@ -1,0 +1,62 @@
+{
+  "item": {
+    "page": "state/model/detail.md",
+    "anchor": "configuration-item-model",
+    "title": "母体配置与包内变体",
+    "reader": "ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。"
+  },
+  "lucky": {
+    "page": "lucky/chance/load.md",
+    "anchor": "configuration-lucky",
+    "title": "Lucky 包内配置及活动变体",
+    "reader": "LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。"
+  },
+  "activity": {
+    "page": "overrides/activity/detail.md",
+    "anchor": "configuration-generator-boost",
+    "title": "Generator Boost 母体替换配置",
+    "reader": "GeneratorBoostActivityModel:GetItemModelConfig → ReloadItemModelConfig；按 Buff 选择 MoreLuckyProduce / ExtraProduce 并替换 ItemDataModel 中的母体配置。"
+  },
+  "energy": {
+    "page": "energy/boost/detail.md",
+    "anchor": "configuration-energy-boost",
+    "title": "能量增益适用母体",
+    "reader": "EnergyBoostModel:OnSyncDataFinished 直接 require EnergyBoostItemConfig，建立 m_mapTargetItemType；CanEnergyBoost 读取此适用集合。"
+  },
+  "order": {
+    "page": "output/order/detail.md",
+    "anchor": "configuration-order-item",
+    "title": "产物难度分与解锁配置",
+    "reader": "ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。"
+  },
+  "free": {
+    "page": "lucky/free/generate.md",
+    "anchor": "configuration-free-lucky",
+    "title": "免费 Lucky 服务器字段",
+    "reader": "LuckyProduceModel:_LoadOtherServerConfig 载入 luckyProduceConfig；_AddFreeLuckyProduceEnergyCostCount 读取 energy_cost.range_entry 与 extra_lucky。"
+  },
+  "continuous": {
+    "page": "lucky/continuous/trigger.md",
+    "anchor": "configuration-continuous-lucky",
+    "title": "连续 Lucky 服务器字段",
+    "reader": "_CalculateLuckyProduceConfigIndex 按 energy_cost.range_entry 选段；_Try2TriggerContiLuckyProduce 直接读取 triple_lucky_chance / double_lucky_chance。"
+  },
+  "smart": {
+    "page": "lucky/items/smart.md",
+    "anchor": "configuration-lucky-smart",
+    "title": "Lucky Smart Produce 参数",
+    "reader": "_LoadOtherServerConfig 用 MiscConfigReader:GetInteger(MiscConfKey.LuckyProduceSmart) 载入倍率；_UpdateSpreadConfigSmartWeight 使用原始物品池计算临时权重。"
+  },
+  "energy_cost": {
+    "page": "lifecycle/count/detail.md",
+    "anchor": "configuration-energy-cost",
+    "title": "能量增益次数扣除配置",
+    "reader": "EnergyBoostModel:LoadServerConfig 读取 EnergyBoostCost.boost_num / cost；ItemSpread:CosetRestNumber → NextEnergyBoostCostIndex 消费循环次数序列。"
+  },
+  "fish": {
+    "page": "overrides/boost/detail.md",
+    "anchor": "configuration-fish-smart",
+    "title": "生鱼链智能升级开关",
+    "reader": "ItemSpread:SpreadCheckEnergyRatioAndCode 读取服务器通用开关 FishNetProduceSmart，再沿 ItemDataModel 的合成链计算升级。"
+  }
+}

@@ -1,0 +1,708 @@
+
+main <EnergyBubbleModel.lua:0,0> (52 instructions at 0000020D2E95EF80)
+0+ params, 4 slots, 1 upvalue, 1 local, 20 constants, 13 functions
+	1	[9]	NEWTABLE 	0 0 3
+	2	[11]	SETTABLE 	0 -1 -1	; "TriggerTime" "TriggerTime"
+	3	[13]	SETTABLE 	0 -2 -2	; "StartBIRecord" "StartBIRecord"
+	4	[15]	SETTABLE 	0 -3 -3	; "GroupId" "GroupId"
+	5	[19]	GETTABUP 	1 0 -5	; _ENV "setmetatable"
+	6	[19]	NEWTABLE 	2 0 0
+	7	[19]	GETTABUP 	3 0 -6	; _ENV "BaseActivityModel"
+	8	[19]	CALL     	1 3 2
+	9	[19]	SETTABUP 	0 -4 1	; _ENV "EnergyBubbleModel"
+	10	[20]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	11	[20]	GETTABUP 	2 0 -4	; _ENV "EnergyBubbleModel"
+	12	[20]	SETTABLE 	1 -7 2	; "__index" -
+	13	[22]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	14	[24]	CLOSURE  	2 0	; 0000020D2E95F310
+	15	[22]	SETTABLE 	1 -8 2	; "Init" -
+	16	[26]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	17	[34]	CLOSURE  	2 1	; 0000020D2E961870
+	18	[26]	SETTABLE 	1 -9 2	; "_OnStateChanged" -
+	19	[36]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	20	[40]	CLOSURE  	2 2	; 0000020D2E962360
+	21	[36]	SETTABLE 	1 -10 2	; "GetServerConfigGroupId" -
+	22	[42]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	23	[53]	CLOSURE  	2 3	; 0000020D2E9623E0
+	24	[42]	SETTABLE 	1 -11 2	; "_LoadOtherServerConfig" -
+	25	[55]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	26	[83]	CLOSURE  	2 4	; 0000020D2E962540
+	27	[55]	SETTABLE 	1 -12 2	; "GetTriggerConfig" -
+	28	[85]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	29	[91]	CLOSURE  	2 5	; 0000020D2E962950
+	30	[85]	SETTABLE 	1 -13 2	; "CanSpreadEnergyBubble" -
+	31	[93]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	32	[106]	CLOSURE  	2 6	; 0000020D2E9632C0
+	33	[93]	SETTABLE 	1 -14 2	; "GetBubbleInfo" -
+	34	[108]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	35	[111]	CLOSURE  	2 7	; 0000020D2E95EA80
+	36	[108]	SETTABLE 	1 -15 2	; "SetTriggerTime" -
+	37	[113]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	38	[115]	CLOSURE  	2 8	; 0000020D2E95EB00
+	39	[113]	SETTABLE 	1 -16 2	; "GetTriggerTime" -
+	40	[117]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	41	[119]	CLOSURE  	2 9	; 0000020D2E95EB80
+	42	[117]	SETTABLE 	1 -17 2	; "SetGroupId" -
+	43	[121]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	44	[123]	CLOSURE  	2 10	; 0000020D2E9664E0
+	45	[121]	SETTABLE 	1 -18 2	; "GetGroupId" -
+	46	[125]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	47	[127]	CLOSURE  	2 11	; 0000020D2E9661E0
+	48	[125]	SETTABLE 	1 -19 2	; "RemoveGroupId" -
+	49	[130]	GETTABUP 	1 0 -4	; _ENV "EnergyBubbleModel"
+	50	[188]	CLOSURE  	2 12	; 0000020D2E966860
+	51	[130]	SETTABLE 	1 -20 2	; "GetTestInfo" -
+	52	[188]	RETURN   	0 1
+constants (20) for 0000020D2E95EF80:
+	1	"TriggerTime"
+	2	"StartBIRecord"
+	3	"GroupId"
+	4	"EnergyBubbleModel"
+	5	"setmetatable"
+	6	"BaseActivityModel"
+	7	"__index"
+	8	"Init"
+	9	"_OnStateChanged"
+	10	"GetServerConfigGroupId"
+	11	"_LoadOtherServerConfig"
+	12	"GetTriggerConfig"
+	13	"CanSpreadEnergyBubble"
+	14	"GetBubbleInfo"
+	15	"SetTriggerTime"
+	16	"GetTriggerTime"
+	17	"SetGroupId"
+	18	"GetGroupId"
+	19	"RemoveGroupId"
+	20	"GetTestInfo"
+locals (1) for 0000020D2E95EF80:
+	0	EStrDBKeys	5	53
+upvalues (1) for 0000020D2E95EF80:
+	0	_ENV	1	0
+
+function <EnergyBubbleModel.lua:22,24> (8 instructions at 0000020D2E95F310)
+2 params, 6 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[23]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[23]	GETTABLE 	2 2 -2	; "Init"
+	3	[23]	MOVE     	3 0
+	4	[23]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[23]	GETTABLE 	4 4 -4	; "EnergyBubble"
+	6	[23]	MOVE     	5 1
+	7	[23]	CALL     	2 4 1
+	8	[24]	RETURN   	0 1
+constants (4) for 0000020D2E95F310:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"EnergyBubble"
+locals (2) for 0000020D2E95F310:
+	0	self	1	9
+	1	virtualDBTable	1	9
+upvalues (1) for 0000020D2E95F310:
+	0	_ENV	0	0
+
+function <EnergyBubbleModel.lua:26,34> (34 instructions at 0000020D2E961870)
+1 param, 6 slots, 2 upvalues, 1 local, 19 constants, 0 functions
+	1	[27]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[27]	GETTABLE 	1 1 -2	; "_OnStateChanged"
+	3	[27]	MOVE     	2 0
+	4	[27]	CALL     	1 2 1
+	5	[28]	GETTABUP 	1 0 -3	; _ENV "EventDispatcher"
+	6	[28]	GETTABLE 	1 1 -4	; "DispatchEvent"
+	7	[28]	GETTABUP 	2 0 -5	; _ENV "EEventType"
+	8	[28]	GETTABLE 	2 2 -6	; "EnergyBubbleStateChanged"
+	9	[28]	CALL     	1 2 1
+	10	[30]	SELF     	1 0 -7	; "GetState"
+	11	[30]	CALL     	1 2 2
+	12	[30]	GETTABUP 	2 0 -8	; _ENV "ActivityState"
+	13	[30]	GETTABLE 	2 2 -9	; "Started"
+	14	[30]	EQ       	0 1 2
+	15	[30]	JMP      	0 18	; to 34
+	16	[30]	GETTABLE 	1 0 -10	; "m_dbTable"
+	17	[30]	SELF     	1 1 -11	; "GetValue"
+	18	[30]	GETTABUP 	3 1 -12	; EStrDBKeys "StartBIRecord"
+	19	[30]	LOADK    	4 -13	; "value"
+	20	[30]	CALL     	1 4 2
+	21	[30]	EQ       	0 1 -14	; - nil
+	22	[30]	JMP      	0 11	; to 34
+	23	[31]	SELF     	1 0 -15	; "LogActivity"
+	24	[31]	GETTABUP 	3 0 -16	; _ENV "EBIType"
+	25	[31]	GETTABLE 	3 3 -17	; "ActivityStarted"
+	26	[31]	LOADK    	4 -18	; ""
+	27	[31]	CALL     	1 4 1
+	28	[32]	GETTABLE 	1 0 -10	; "m_dbTable"
+	29	[32]	SELF     	1 1 -19	; "Set"
+	30	[32]	GETTABUP 	3 1 -12	; EStrDBKeys "StartBIRecord"
+	31	[32]	LOADK    	4 -13	; "value"
+	32	[32]	LOADBOOL 	5 1 0
+	33	[32]	CALL     	1 5 1
+	34	[34]	RETURN   	0 1
+constants (19) for 0000020D2E961870:
+	1	"BaseActivityModel"
+	2	"_OnStateChanged"
+	3	"EventDispatcher"
+	4	"DispatchEvent"
+	5	"EEventType"
+	6	"EnergyBubbleStateChanged"
+	7	"GetState"
+	8	"ActivityState"
+	9	"Started"
+	10	"m_dbTable"
+	11	"GetValue"
+	12	"StartBIRecord"
+	13	"value"
+	14	nil
+	15	"LogActivity"
+	16	"EBIType"
+	17	"ActivityStarted"
+	18	""
+	19	"Set"
+locals (1) for 0000020D2E961870:
+	0	self	1	35
+upvalues (2) for 0000020D2E961870:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:36,40> (8 instructions at 0000020D2E962360)
+1 param, 2 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[37]	GETTABLE 	1 0 -1	; "m_energyBubbleConfig"
+	2	[37]	EQ       	1 1 -2	; - nil
+	3	[37]	JMP      	0 4	; to 8
+	4	[38]	GETTABLE 	1 0 -1	; "m_energyBubbleConfig"
+	5	[38]	GETTABLE 	1 1 -3	; 1
+	6	[38]	GETTABLE 	1 1 -4	; "groupId"
+	7	[38]	RETURN   	1 2
+	8	[40]	RETURN   	0 1
+constants (4) for 0000020D2E962360:
+	1	"m_energyBubbleConfig"
+	2	nil
+	3	1
+	4	"groupId"
+locals (1) for 0000020D2E962360:
+	0	self	1	9
+upvalues (0) for 0000020D2E962360:
+
+function <EnergyBubbleModel.lua:42,53> (8 instructions at 0000020D2E9623E0)
+2 params, 5 slots, 1 upvalue, 2 locals, 4 constants, 1 function
+	1	[44]	GETTABLE 	2 1 -2	; "energyBubbleConfig"
+	2	[44]	SETTABLE 	0 -1 2	; "m_energyBubbleConfig" -
+	3	[46]	GETTABUP 	2 0 -3	; _ENV "table"
+	4	[46]	GETTABLE 	2 2 -4	; "sort"
+	5	[46]	GETTABLE 	3 0 -1	; "m_energyBubbleConfig"
+	6	[52]	CLOSURE  	4 0	; 0000020D2E962460
+	7	[46]	CALL     	2 3 1
+	8	[53]	RETURN   	0 1
+constants (4) for 0000020D2E9623E0:
+	1	"m_energyBubbleConfig"
+	2	"energyBubbleConfig"
+	3	"table"
+	4	"sort"
+locals (2) for 0000020D2E9623E0:
+	0	self	1	9
+	1	config	1	9
+upvalues (1) for 0000020D2E9623E0:
+	0	_ENV	0	0
+
+function <EnergyBubbleModel.lua:46,52> (20 instructions at 0000020D2E962460)
+2 params, 4 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[47]	GETTABLE 	2 0 -1	; "trigger_energy"
+	2	[47]	GETTABLE 	3 1 -1	; "trigger_energy"
+	3	[47]	EQ       	0 2 3
+	4	[47]	JMP      	0 8	; to 13
+	5	[48]	GETTABLE 	2 0 -2	; "trigger_gem"
+	6	[48]	GETTABLE 	3 1 -2	; "trigger_gem"
+	7	[48]	LT       	1 3 2
+	8	[48]	JMP      	0 1	; to 10
+	9	[48]	LOADBOOL 	2 0 1
+	10	[48]	LOADBOOL 	2 1 0
+	11	[48]	RETURN   	2 2
+	12	[48]	JMP      	0 7	; to 20
+	13	[50]	GETTABLE 	2 0 -1	; "trigger_energy"
+	14	[50]	GETTABLE 	3 1 -1	; "trigger_energy"
+	15	[50]	LT       	1 2 3
+	16	[50]	JMP      	0 1	; to 18
+	17	[50]	LOADBOOL 	2 0 1
+	18	[50]	LOADBOOL 	2 1 0
+	19	[50]	RETURN   	2 2
+	20	[52]	RETURN   	0 1
+constants (2) for 0000020D2E962460:
+	1	"trigger_energy"
+	2	"trigger_gem"
+locals (2) for 0000020D2E962460:
+	0	a	1	21
+	1	b	1	21
+upvalues (0) for 0000020D2E962460:
+
+function <EnergyBubbleModel.lua:55,83> (54 instructions at 0000020D2E962540)
+1 param, 10 slots, 1 upvalue, 9 locals, 18 constants, 0 functions
+	1	[56]	GETTABUP 	1 0 -1	; _ENV "ipairs"
+	2	[56]	GETTABLE 	2 0 -2	; "m_energyBubbleConfig"
+	3	[56]	CALL     	1 2 4
+	4	[56]	JMP      	0 47	; to 52
+	5	[58]	GETTABUP 	6 0 -3	; _ENV "GM"
+	6	[58]	GETTABLE 	6 6 -4	; "EnergyModel"
+	7	[58]	SELF     	6 6 -5	; "GetEnergy"
+	8	[58]	GETTABUP 	8 0 -6	; _ENV "EnergyType"
+	9	[58]	GETTABLE 	8 8 -7	; "Main"
+	10	[58]	CALL     	6 3 2
+	11	[58]	GETTABLE 	7 5 -8	; "trigger_energy"
+	12	[58]	LE       	0 6 7
+	13	[58]	JMP      	0 38	; to 52
+	14	[59]	LOADNIL  	6 0
+	15	[62]	GETTABUP 	7 0 -3	; _ENV "GM"
+	16	[62]	GETTABLE 	7 7 -9	; "ShopModel"
+	17	[62]	SELF     	7 7 -10	; "IsChainEnergyOpen"
+	18	[62]	CALL     	7 2 2
+	19	[62]	TEST     	7 0
+	20	[62]	JMP      	0 20	; to 41
+	21	[63]	GETTABUP 	7 0 -3	; _ENV "GM"
+	22	[63]	GETTABLE 	7 7 -9	; "ShopModel"
+	23	[63]	SELF     	7 7 -11	; "GetChainEnergyConfig"
+	24	[63]	CALL     	7 2 2
+	25	[64]	GETTABUP 	8 0 -3	; _ENV "GM"
+	26	[64]	GETTABLE 	8 8 -9	; "ShopModel"
+	27	[64]	SELF     	8 8 -12	; "GetCurChainEnergyStep"
+	28	[64]	CALL     	8 2 2
+	29	[65]	GETTABLE 	9 7 8
+	30	[65]	GETTABLE 	6 9 -13	; "price"
+	31	[66]	EQ       	0 6 -14	; - 0
+	32	[66]	JMP      	0 15	; to 48
+	33	[67]	ADD      	8 8 -15	; - 1
+	34	[68]	LEN      	9 7
+	35	[68]	LT       	1 9 8
+	36	[68]	JMP      	0 11	; to 48
+	37	[71]	GETTABLE 	9 7 8
+	38	[71]	GETTABLE 	6 9 -13	; "price"
+	39	[71]	JMP      	0 -9	; to 31
+	40	[72]	JMP      	0 7	; to 48
+	41	[75]	GETTABUP 	7 0 -3	; _ENV "GM"
+	42	[75]	GETTABLE 	7 7 -9	; "ShopModel"
+	43	[75]	SELF     	7 7 -16	; "GetEnergyData"
+	44	[75]	GETTABUP 	9 0 -6	; _ENV "EnergyType"
+	45	[75]	GETTABLE 	9 9 -7	; "Main"
+	46	[75]	CALL     	7 3 2
+	47	[75]	GETTABLE 	6 7 -17	; "costNum"
+	48	[78]	GETTABLE 	7 5 -18	; "trigger_gem"
+	49	[78]	LE       	0 7 6
+	50	[78]	JMP      	0 1	; to 52
+	51	[79]	RETURN   	5 2
+	52	[56]	TFORCALL 	1 2
+	53	[56]	TFORLOOP 	3 -49	; to 5
+	54	[83]	RETURN   	0 1
+constants (18) for 0000020D2E962540:
+	1	"ipairs"
+	2	"m_energyBubbleConfig"
+	3	"GM"
+	4	"EnergyModel"
+	5	"GetEnergy"
+	6	"EnergyType"
+	7	"Main"
+	8	"trigger_energy"
+	9	"ShopModel"
+	10	"IsChainEnergyOpen"
+	11	"GetChainEnergyConfig"
+	12	"GetCurChainEnergyStep"
+	13	"price"
+	14	0
+	15	1
+	16	"GetEnergyData"
+	17	"costNum"
+	18	"trigger_gem"
+locals (9) for 0000020D2E962540:
+	0	self	1	55
+	1	(for generator)	4	54
+	2	(for state)	4	54
+	3	(for control)	4	54
+	4	_	5	52
+	5	cfg	5	52
+	6	cost	15	52
+	7	configList	25	40
+	8	curStep	29	40
+upvalues (1) for 0000020D2E962540:
+	0	_ENV	0	0
+
+function <EnergyBubbleModel.lua:85,91> (19 instructions at 0000020D2E962950)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[86]	SELF     	1 0 -1	; "GetState"
+	2	[86]	CALL     	1 2 2
+	3	[86]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[86]	GETTABLE 	2 2 -3	; "Started"
+	5	[86]	EQ       	0 1 2
+	6	[86]	JMP      	0 10	; to 17
+	7	[86]	GETTABUP 	1 0 -4	; _ENV "GM"
+	8	[86]	GETTABLE 	1 1 -5	; "GameModel"
+	9	[86]	SELF     	1 1 -6	; "GetServerTime"
+	10	[86]	CALL     	1 2 2
+	11	[86]	SELF     	2 0 -7	; "GetTriggerTime"
+	12	[86]	CALL     	2 2 2
+	13	[86]	LT       	0 2 1
+	14	[86]	JMP      	0 2	; to 17
+	15	[87]	LOADBOOL 	1 1 0
+	16	[87]	RETURN   	1 2
+	17	[90]	LOADBOOL 	1 0 0
+	18	[90]	RETURN   	1 2
+	19	[91]	RETURN   	0 1
+constants (7) for 0000020D2E962950:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"GetTriggerTime"
+locals (1) for 0000020D2E962950:
+	0	self	1	20
+upvalues (1) for 0000020D2E962950:
+	0	_ENV	0	0
+
+function <EnergyBubbleModel.lua:93,106> (31 instructions at 0000020D2E9632C0)
+1 param, 9 slots, 1 upvalue, 3 locals, 16 constants, 0 functions
+	1	[94]	SELF     	1 0 -1	; "GetTriggerConfig"
+	2	[94]	CALL     	1 2 2
+	3	[95]	GETTABUP 	2 0 -2	; _ENV "Table"
+	4	[95]	GETTABLE 	2 2 -3	; "IsEmpty"
+	5	[95]	MOVE     	3 1
+	6	[95]	CALL     	2 2 2
+	7	[95]	TEST     	2 0
+	8	[95]	JMP      	0 2	; to 11
+	9	[96]	LOADNIL  	2 0
+	10	[96]	RETURN   	2 2
+	11	[99]	NEWTABLE 	2 0 2
+	12	[100]	GETTABUP 	3 0 -5	; _ENV "ItemCodePrefix"
+	13	[100]	GETTABLE 	3 3 -6	; "PropertyBubble"
+	14	[100]	GETTABUP 	4 0 -7	; _ENV "EPropertyType"
+	15	[100]	GETTABLE 	4 4 -8	; "Energy"
+	16	[100]	LOADK    	5 -9	; "-"
+	17	[100]	GETTABLE 	6 1 -10	; "energy"
+	18	[100]	LOADK    	7 -9	; "-"
+	19	[100]	GETTABLE 	8 1 -11	; "gem"
+	20	[100]	CONCAT   	3 3 8
+	21	[100]	SETTABLE 	2 -4 3	; "Code" -
+	22	[101]	GETTABLE 	3 1 -13	; "groupId"
+	23	[101]	SETTABLE 	2 -12 3	; "Group" -
+	24	[103]	SELF     	3 0 -14	; "SetTriggerTime"
+	25	[103]	GETTABLE 	5 1 -15	; "interval"
+	26	[103]	CALL     	3 3 1
+	27	[104]	SELF     	3 0 -16	; "SetGroupId"
+	28	[104]	GETTABLE 	5 1 -13	; "groupId"
+	29	[104]	CALL     	3 3 1
+	30	[105]	RETURN   	2 2
+	31	[106]	RETURN   	0 1
+constants (16) for 0000020D2E9632C0:
+	1	"GetTriggerConfig"
+	2	"Table"
+	3	"IsEmpty"
+	4	"Code"
+	5	"ItemCodePrefix"
+	6	"PropertyBubble"
+	7	"EPropertyType"
+	8	"Energy"
+	9	"-"
+	10	"energy"
+	11	"gem"
+	12	"Group"
+	13	"groupId"
+	14	"SetTriggerTime"
+	15	"interval"
+	16	"SetGroupId"
+locals (3) for 0000020D2E9632C0:
+	0	self	1	32
+	1	selectConfig	3	32
+	2	bubbleInfo	24	32
+upvalues (1) for 0000020D2E9632C0:
+	0	_ENV	0	0
+
+function <EnergyBubbleModel.lua:108,111> (13 instructions at 0000020D2E95EA80)
+2 params, 8 slots, 2 upvalues, 3 locals, 8 constants, 0 functions
+	1	[109]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[109]	GETTABLE 	2 2 -2	; "GameModel"
+	3	[109]	SELF     	2 2 -3	; "GetServerTime"
+	4	[109]	CALL     	2 2 2
+	5	[109]	MUL      	3 1 -4	; - 60
+	6	[109]	ADD      	2 2 3
+	7	[110]	GETTABLE 	3 0 -5	; "m_dbTable"
+	8	[110]	SELF     	3 3 -6	; "Set"
+	9	[110]	GETTABUP 	5 1 -7	; EStrDBKeys "TriggerTime"
+	10	[110]	LOADK    	6 -8	; "value"
+	11	[110]	MOVE     	7 2
+	12	[110]	CALL     	3 5 1
+	13	[111]	RETURN   	0 1
+constants (8) for 0000020D2E95EA80:
+	1	"GM"
+	2	"GameModel"
+	3	"GetServerTime"
+	4	60
+	5	"m_dbTable"
+	6	"Set"
+	7	"TriggerTime"
+	8	"value"
+locals (3) for 0000020D2E95EA80:
+	0	self	1	14
+	1	interval	1	14
+	2	time	7	14
+upvalues (2) for 0000020D2E95EA80:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:113,115> (10 instructions at 0000020D2E95EB00)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[114]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[114]	SELF     	1 1 -2	; "GetValue"
+	3	[114]	GETTABUP 	3 0 -3	; EStrDBKeys "TriggerTime"
+	4	[114]	LOADK    	4 -4	; "value"
+	5	[114]	CALL     	1 4 2
+	6	[114]	TEST     	1 1
+	7	[114]	JMP      	0 1	; to 9
+	8	[114]	LOADK    	1 -5	; 0
+	9	[114]	RETURN   	1 2
+	10	[115]	RETURN   	0 1
+constants (5) for 0000020D2E95EB00:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"TriggerTime"
+	4	"value"
+	5	0
+locals (1) for 0000020D2E95EB00:
+	0	self	1	11
+upvalues (1) for 0000020D2E95EB00:
+	0	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:117,119> (7 instructions at 0000020D2E95EB80)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[118]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[118]	SELF     	2 2 -2	; "Set"
+	3	[118]	GETTABUP 	4 0 -3	; EStrDBKeys "GroupId"
+	4	[118]	LOADK    	5 -4	; "value"
+	5	[118]	MOVE     	6 1
+	6	[118]	CALL     	2 5 1
+	7	[119]	RETURN   	0 1
+constants (4) for 0000020D2E95EB80:
+	1	"m_dbTable"
+	2	"Set"
+	3	"GroupId"
+	4	"value"
+locals (2) for 0000020D2E95EB80:
+	0	self	1	8
+	1	id	1	8
+upvalues (1) for 0000020D2E95EB80:
+	0	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:121,123> (7 instructions at 0000020D2E9664E0)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[122]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[122]	SELF     	1 1 -2	; "GetValue"
+	3	[122]	GETTABUP 	3 0 -3	; EStrDBKeys "GroupId"
+	4	[122]	LOADK    	4 -4	; "value"
+	5	[122]	TAILCALL 	1 4 0
+	6	[122]	RETURN   	1 0
+	7	[123]	RETURN   	0 1
+constants (4) for 0000020D2E9664E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"GroupId"
+	4	"value"
+locals (1) for 0000020D2E9664E0:
+	0	self	1	8
+upvalues (1) for 0000020D2E9664E0:
+	0	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:125,127> (6 instructions at 0000020D2E9661E0)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[126]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[126]	SELF     	1 1 -2	; "Remove"
+	3	[126]	GETTABUP 	3 0 -3	; EStrDBKeys "GroupId"
+	4	[126]	LOADK    	4 -4	; "value"
+	5	[126]	CALL     	1 4 1
+	6	[127]	RETURN   	0 1
+constants (4) for 0000020D2E9661E0:
+	1	"m_dbTable"
+	2	"Remove"
+	3	"GroupId"
+	4	"value"
+locals (1) for 0000020D2E9661E0:
+	0	self	1	7
+upvalues (1) for 0000020D2E9661E0:
+	0	EStrDBKeys	1	0
+
+function <EnergyBubbleModel.lua:130,188> (121 instructions at 0000020D2E966860)
+1 param, 15 slots, 1 upvalue, 15 locals, 41 constants, 0 functions
+	1	[131]	GETTABLE 	1 0 -1	; "m_state"
+	2	[131]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	3	[131]	GETTABLE 	2 2 -3	; "Started"
+	4	[131]	EQ       	1 1 2
+	5	[131]	JMP      	0 1	; to 7
+	6	[131]	LOADBOOL 	1 0 1
+	7	[131]	LOADBOOL 	1 1 0
+	8	[132]	LOADK    	2 -4	; "\230\180\187\229\138\168\230\152\175\229\144\166\230\156\137\230\149\136:"
+	9	[132]	GETTABUP 	3 0 -5	; _ENV "tostring"
+	10	[132]	MOVE     	4 1
+	11	[132]	CALL     	3 2 2
+	12	[132]	CONCAT   	2 2 3
+	13	[134]	TEST     	1 1
+	14	[134]	JMP      	0 1	; to 16
+	15	[135]	RETURN   	2 2
+	16	[138]	LOADNIL  	3 1
+	17	[141]	GETTABUP 	5 0 -6	; _ENV "Table"
+	18	[141]	GETTABLE 	5 5 -7	; "IsEmpty"
+	19	[141]	GETTABLE 	6 0 -8	; "m_energyBubbleConfig"
+	20	[141]	CALL     	5 2 2
+	21	[141]	TEST     	5 1
+	22	[141]	JMP      	0 55	; to 78
+	23	[142]	GETTABUP 	5 0 -9	; _ENV "ipairs"
+	24	[142]	GETTABLE 	6 0 -8	; "m_energyBubbleConfig"
+	25	[142]	CALL     	5 2 4
+	26	[142]	JMP      	0 49	; to 76
+	27	[144]	GETTABUP 	10 0 -10	; _ENV "GM"
+	28	[144]	GETTABLE 	10 10 -11	; "EnergyModel"
+	29	[144]	SELF     	10 10 -12	; "GetEnergy"
+	30	[144]	GETTABUP 	12 0 -13	; _ENV "EnergyType"
+	31	[144]	GETTABLE 	12 12 -14	; "Main"
+	32	[144]	CALL     	10 3 2
+	33	[144]	GETTABLE 	11 9 -15	; "trigger_energy"
+	34	[144]	LE       	0 10 11
+	35	[144]	JMP      	0 40	; to 76
+	36	[145]	GETTABLE 	3 9 -15	; "trigger_energy"
+	37	[147]	LOADNIL  	10 0
+	38	[150]	GETTABUP 	11 0 -10	; _ENV "GM"
+	39	[150]	GETTABLE 	11 11 -16	; "ShopModel"
+	40	[150]	SELF     	11 11 -17	; "IsChainEnergyOpen"
+	41	[150]	CALL     	11 2 2
+	42	[150]	TEST     	11 0
+	43	[150]	JMP      	0 20	; to 64
+	44	[151]	GETTABUP 	11 0 -10	; _ENV "GM"
+	45	[151]	GETTABLE 	11 11 -16	; "ShopModel"
+	46	[151]	SELF     	11 11 -18	; "GetChainEnergyConfig"
+	47	[151]	CALL     	11 2 2
+	48	[152]	GETTABUP 	12 0 -10	; _ENV "GM"
+	49	[152]	GETTABLE 	12 12 -16	; "ShopModel"
+	50	[152]	SELF     	12 12 -19	; "GetCurChainEnergyStep"
+	51	[152]	CALL     	12 2 2
+	52	[153]	GETTABLE 	13 11 12
+	53	[153]	GETTABLE 	10 13 -20	; "price"
+	54	[154]	EQ       	0 10 -21	; - 0
+	55	[154]	JMP      	0 15	; to 71
+	56	[155]	ADD      	12 12 -22	; - 1
+	57	[156]	LEN      	13 11
+	58	[156]	LT       	1 13 12
+	59	[156]	JMP      	0 11	; to 71
+	60	[159]	GETTABLE 	13 11 12
+	61	[159]	GETTABLE 	10 13 -20	; "price"
+	62	[159]	JMP      	0 -9	; to 54
+	63	[160]	JMP      	0 7	; to 71
+	64	[163]	GETTABUP 	11 0 -10	; _ENV "GM"
+	65	[163]	GETTABLE 	11 11 -16	; "ShopModel"
+	66	[163]	SELF     	11 11 -23	; "GetEnergyData"
+	67	[163]	GETTABUP 	13 0 -13	; _ENV "EnergyType"
+	68	[163]	GETTABLE 	13 13 -14	; "Main"
+	69	[163]	CALL     	11 3 2
+	70	[163]	GETTABLE 	10 11 -24	; "costNum"
+	71	[166]	GETTABLE 	11 9 -25	; "trigger_gem"
+	72	[166]	LE       	0 11 10
+	73	[166]	JMP      	0 2	; to 76
+	74	[167]	GETTABLE 	4 9 -25	; "trigger_gem"
+	75	[167]	JMP      	0 2	; to 78
+	76	[142]	TFORCALL 	5 2
+	77	[142]	TFORLOOP 	7 -51	; to 27
+	78	[174]	TEST     	1 0
+	79	[174]	JMP      	0 40	; to 120
+	80	[175]	LOADK    	5 -26	; ""
+	81	[176]	SELF     	6 0 -27	; "GetNextStateTime"
+	82	[176]	CALL     	6 2 2
+	83	[176]	EQ       	1 6 -28	; - nil
+	84	[176]	JMP      	0 15	; to 100
+	85	[177]	SELF     	6 0 -27	; "GetNextStateTime"
+	86	[177]	CALL     	6 2 2
+	87	[177]	GETTABUP 	7 0 -10	; _ENV "GM"
+	88	[177]	GETTABLE 	7 7 -29	; "GameModel"
+	89	[177]	SELF     	7 7 -30	; "GetServerTime"
+	90	[177]	CALL     	7 2 2
+	91	[177]	SUB      	6 6 7
+	92	[178]	GETTABUP 	7 0 -31	; _ENV "TimeUtil"
+	93	[178]	GETTABLE 	7 7 -32	; "ParseTimeDescription"
+	94	[178]	MOVE     	8 6
+	95	[178]	LOADK    	9 -33	; 2
+	96	[178]	LOADBOOL 	10 0 0
+	97	[178]	LOADBOOL 	11 0 0
+	98	[178]	CALL     	7 5 2
+	99	[178]	MOVE     	5 7
+	100	[181]	MOVE     	6 2
+	101	[182]	LOADK    	7 -34	; "\n\230\187\161\232\182\179\231\154\132\232\167\166\229\143\145\228\189\147\229\138\155:"
+	102	[182]	GETTABUP 	8 0 -5	; _ENV "tostring"
+	103	[182]	MOVE     	9 3
+	104	[182]	CALL     	8 2 2
+	105	[183]	LOADK    	9 -35	; "\n\230\187\161\232\182\179\231\154\132\232\167\166\229\143\145\233\146\187\231\159\179\230\161\163\228\189\141: "
+	106	[183]	GETTABUP 	10 0 -5	; _ENV "tostring"
+	107	[183]	MOVE     	11 4
+	108	[183]	CALL     	10 2 2
+	109	[184]	LOADK    	11 -36	; "\n\229\134\183\229\141\180\230\129\162\229\164\141\230\151\182\233\151\180\231\130\185UTC:"
+	110	[184]	GETTABUP 	12 0 -31	; _ENV "TimeUtil"
+	111	[184]	GETTABLE 	12 12 -37	; "ToDate"
+	112	[184]	SELF     	13 0 -38	; "GetTriggerTime"
+	113	[184]	CALL     	13 2 2
+	114	[184]	GETTABUP 	14 0 -39	; _ENV "ETimeFormat"
+	115	[184]	GETTABLE 	14 14 -40	; "UTCYMDHMS"
+	116	[184]	CALL     	12 3 2
+	117	[185]	LOADK    	13 -41	; "\n\229\128\146\232\174\161\230\151\182:"
+	118	[185]	MOVE     	14 5
+	119	[185]	CONCAT   	2 6 14
+	120	[187]	RETURN   	2 2
+	121	[188]	RETURN   	0 1
+constants (41) for 0000020D2E966860:
+	1	"m_state"
+	2	"ActivityState"
+	3	"Started"
+	4	"\230\180\187\229\138\168\230\152\175\229\144\166\230\156\137\230\149\136:"
+	5	"tostring"
+	6	"Table"
+	7	"IsEmpty"
+	8	"m_energyBubbleConfig"
+	9	"ipairs"
+	10	"GM"
+	11	"EnergyModel"
+	12	"GetEnergy"
+	13	"EnergyType"
+	14	"Main"
+	15	"trigger_energy"
+	16	"ShopModel"
+	17	"IsChainEnergyOpen"
+	18	"GetChainEnergyConfig"
+	19	"GetCurChainEnergyStep"
+	20	"price"
+	21	0
+	22	1
+	23	"GetEnergyData"
+	24	"costNum"
+	25	"trigger_gem"
+	26	""
+	27	"GetNextStateTime"
+	28	nil
+	29	"GameModel"
+	30	"GetServerTime"
+	31	"TimeUtil"
+	32	"ParseTimeDescription"
+	33	2
+	34	"\n\230\187\161\232\182\179\231\154\132\232\167\166\229\143\145\228\189\147\229\138\155:"
+	35	"\n\230\187\161\232\182\179\231\154\132\232\167\166\229\143\145\233\146\187\231\159\179\230\161\163\228\189\141: "
+	36	"\n\229\134\183\229\141\180\230\129\162\229\164\141\230\151\182\233\151\180\231\130\185UTC:"
+	37	"ToDate"
+	38	"GetTriggerTime"
+	39	"ETimeFormat"
+	40	"UTCYMDHMS"
+	41	"\n\229\128\146\232\174\161\230\151\182:"
+locals (15) for 0000020D2E966860:
+	0	self	1	122
+	1	bOpen	8	122
+	2	str	13	122
+	3	energy	17	122
+	4	gem	17	122
+	5	(for generator)	26	78
+	6	(for state)	26	78
+	7	(for control)	26	78
+	8	_	27	76
+	9	cfg	27	76
+	10	cost	38	76
+	11	configList	48	63
+	12	curStep	52	63
+	13	countdown	81	120
+	14	delta	92	100
+upvalues (1) for 0000020D2E966860:
+	0	_ENV	0	0

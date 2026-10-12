@@ -1,0 +1,374 @@
+
+main <BaseOrderModel.lua:0,0> (43 instructions at 00000196F721EFD0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 18 constants, 11 functions
+	1	[2]	NEWTABLE 	0 0 2
+	2	[3]	SETTABLE 	0 -2 -3	; "Slot" 1
+	3	[4]	SETTABLE 	0 -4 -5	; "Host" 2
+	4	[5]	SETTABUP 	0 -1 0	; _ENV "OrderModelType"
+	5	[8]	NEWTABLE 	0 0 0
+	6	[8]	SETTABUP 	0 -6 0	; _ENV "BaseOrderModel"
+	7	[9]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	8	[9]	GETTABUP 	1 0 -6	; _ENV "BaseOrderModel"
+	9	[9]	SETTABLE 	0 -7 1	; "__index" -
+	10	[11]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	11	[13]	CLOSURE  	1 0	; 00000196F721F050
+	12	[11]	SETTABLE 	0 -8 1	; "Init" -
+	13	[15]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	14	[17]	CLOSURE  	1 1	; 00000196F721F330
+	15	[15]	SETTABLE 	0 -9 1	; "LoadFileConfig" -
+	16	[19]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	17	[23]	CLOSURE  	1 2	; 00000196F721F3B0
+	18	[19]	SETTABLE 	0 -10 1	; "OnSyncDataFinished" -
+	19	[25]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	20	[27]	CLOSURE  	1 3	; 00000196F7221840
+	21	[25]	SETTABLE 	0 -11 1	; "LateInit" -
+	22	[29]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	23	[31]	CLOSURE  	1 4	; 00000196F72218C0
+	24	[29]	SETTABLE 	0 -12 1	; "UpdatePerSecond" -
+	25	[33]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	26	[35]	CLOSURE  	1 5	; 00000196F7221940
+	27	[33]	SETTABLE 	0 -13 1	; "ContainsOrder" -
+	28	[38]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	29	[60]	CLOSURE  	1 6	; 00000196F72219C0
+	30	[38]	SETTABLE 	0 -14 1	; "UpdateState" -
+	31	[63]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	32	[65]	CLOSURE  	1 7	; 00000196F72225E0
+	33	[63]	SETTABLE 	0 -15 1	; "_LogOrder" -
+	34	[67]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	35	[75]	CLOSURE  	1 8	; 00000196F72226C0
+	36	[67]	SETTABLE 	0 -16 1	; "_GetLogOrderActionOrderType" -
+	37	[77]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	38	[89]	CLOSURE  	1 9	; 00000196F7223030
+	39	[77]	SETTABLE 	0 -17 1	; "_LogOrderAction" -
+	40	[93]	GETTABUP 	0 0 -6	; _ENV "BaseOrderModel"
+	41	[95]	CLOSURE  	1 10	; 00000196F7223810
+	42	[93]	SETTABLE 	0 -18 1	; "GetOrders" -
+	43	[95]	RETURN   	0 1
+constants (18) for 00000196F721EFD0:
+	1	"OrderModelType"
+	2	"Slot"
+	3	1
+	4	"Host"
+	5	2
+	6	"BaseOrderModel"
+	7	"__index"
+	8	"Init"
+	9	"LoadFileConfig"
+	10	"OnSyncDataFinished"
+	11	"LateInit"
+	12	"UpdatePerSecond"
+	13	"ContainsOrder"
+	14	"UpdateState"
+	15	"_LogOrder"
+	16	"_GetLogOrderActionOrderType"
+	17	"_LogOrderAction"
+	18	"GetOrders"
+locals (0) for 00000196F721EFD0:
+upvalues (1) for 00000196F721EFD0:
+	0	_ENV	1	0
+
+function <BaseOrderModel.lua:11,13> (2 instructions at 00000196F721F050)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[12]	SETTABLE 	0 -1 1	; "m_boardModel" -
+	2	[13]	RETURN   	0 1
+constants (1) for 00000196F721F050:
+	1	"m_boardModel"
+locals (2) for 00000196F721F050:
+	0	self	1	3
+	1	boardModel	1	3
+upvalues (0) for 00000196F721F050:
+
+function <BaseOrderModel.lua:15,17> (6 instructions at 00000196F721F330)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[16]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[16]	GETTABLE 	1 1 -2	; "Assert"
+	3	[16]	LOADBOOL 	2 0 0
+	4	[16]	LOADK    	3 -3	; "LoadFileConfig()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[16]	CALL     	1 3 1
+	6	[17]	RETURN   	0 1
+constants (3) for 00000196F721F330:
+	1	"Log"
+	2	"Assert"
+	3	"LoadFileConfig()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 00000196F721F330:
+	0	self	1	7
+upvalues (1) for 00000196F721F330:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:19,23> (8 instructions at 00000196F721F3B0)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[21]	NEWTABLE 	1 0 0
+	2	[21]	SETTABLE 	0 -1 1	; "m_orders" -
+	3	[22]	GETTABUP 	1 0 -2	; _ENV "Log"
+	4	[22]	GETTABLE 	1 1 -3	; "Assert"
+	5	[22]	LOADBOOL 	2 0 0
+	6	[22]	LOADK    	3 -4	; "OnSyncDataFinished()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	7	[22]	CALL     	1 3 1
+	8	[23]	RETURN   	0 1
+constants (4) for 00000196F721F3B0:
+	1	"m_orders"
+	2	"Log"
+	3	"Assert"
+	4	"OnSyncDataFinished()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 00000196F721F3B0:
+	0	self	1	9
+upvalues (1) for 00000196F721F3B0:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:25,27> (6 instructions at 00000196F7221840)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[26]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[26]	GETTABLE 	1 1 -2	; "Assert"
+	3	[26]	LOADBOOL 	2 0 0
+	4	[26]	LOADK    	3 -3	; "LateInit()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[26]	CALL     	1 3 1
+	6	[27]	RETURN   	0 1
+constants (3) for 00000196F7221840:
+	1	"Log"
+	2	"Assert"
+	3	"LateInit()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 00000196F7221840:
+	0	self	1	7
+upvalues (1) for 00000196F7221840:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:29,31> (6 instructions at 00000196F72218C0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[30]	GETTABUP 	1 0 -1	; _ENV "Log"
+	2	[30]	GETTABLE 	1 1 -2	; "Assert"
+	3	[30]	LOADBOOL 	2 0 0
+	4	[30]	LOADK    	3 -3	; "UpdatePerSecond()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[30]	CALL     	1 3 1
+	6	[31]	RETURN   	0 1
+constants (3) for 00000196F72218C0:
+	1	"Log"
+	2	"Assert"
+	3	"UpdatePerSecond()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (1) for 00000196F72218C0:
+	0	self	1	7
+upvalues (1) for 00000196F72218C0:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:33,35> (7 instructions at 00000196F7221940)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[34]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[34]	GETTABLE 	2 2 -2	; "Contain"
+	3	[34]	GETTABLE 	3 0 -3	; "m_orders"
+	4	[34]	MOVE     	4 1
+	5	[34]	TAILCALL 	2 3 0
+	6	[34]	RETURN   	2 0
+	7	[35]	RETURN   	0 1
+constants (3) for 00000196F7221940:
+	1	"Table"
+	2	"Contain"
+	3	"m_orders"
+locals (2) for 00000196F7221940:
+	0	self	1	8
+	1	order	1	8
+upvalues (1) for 00000196F7221940:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:38,60> (44 instructions at 00000196F72219C0)
+3 params, 16 slots, 1 upvalue, 20 locals, 11 constants, 0 functions
+	1	[39]	GETTABUP 	3 0 -1	; _ENV "pairs"
+	2	[39]	GETTABLE 	4 0 -2	; "m_orders"
+	3	[39]	CALL     	3 2 4
+	4	[39]	JMP      	0 3	; to 8
+	5	[40]	SELF     	8 7 -3	; "UpdateState"
+	6	[40]	MOVE     	10 1
+	7	[40]	CALL     	8 3 1
+	8	[39]	TFORCALL 	3 2
+	9	[39]	TFORLOOP 	5 -5	; to 5
+	10	[43]	GETTABUP 	3 0 -1	; _ENV "pairs"
+	11	[43]	GETTABLE 	4 0 -2	; "m_orders"
+	12	[43]	CALL     	3 2 4
+	13	[43]	JMP      	0 28	; to 42
+	14	[44]	SELF     	8 7 -4	; "GetState"
+	15	[44]	CALL     	8 2 2
+	16	[45]	SELF     	9 7 -5	; "GetRequirementFillStates"
+	17	[45]	CALL     	9 2 2
+	18	[47]	GETTABUP 	10 0 -6	; _ENV "ipairs"
+	19	[47]	SELF     	11 7 -7	; "GetRequirements"
+	20	[47]	CALL     	11 2 0
+	21	[47]	CALL     	10 0 4
+	22	[47]	JMP      	0 17	; to 40
+	23	[48]	GETTABLE 	15 9 13
+	24	[48]	TEST     	15 0
+	25	[48]	JMP      	0 14	; to 40
+	26	[49]	GETTABUP 	15 0 -8	; _ENV "OrderState"
+	27	[49]	GETTABLE 	15 15 -9	; "Finished"
+	28	[49]	EQ       	1 8 15
+	29	[49]	JMP      	0 10	; to 40
+	30	[50]	GETTABLE 	15 2 14
+	31	[50]	EQ       	0 15 -10	; - nil
+	32	[50]	JMP      	0 3	; to 36
+	33	[51]	GETTABUP 	15 0 -8	; _ENV "OrderState"
+	34	[51]	GETTABLE 	15 15 -11	; "Init"
+	35	[51]	SETTABLE 	2 14 15
+	36	[53]	GETTABLE 	15 2 14
+	37	[53]	LT       	0 15 8
+	38	[53]	JMP      	0 1	; to 40
+	39	[54]	SETTABLE 	2 14 8
+	40	[47]	TFORCALL 	10 2
+	41	[47]	TFORLOOP 	12 -19	; to 23
+	42	[43]	TFORCALL 	3 2
+	43	[43]	TFORLOOP 	5 -30	; to 14
+	44	[60]	RETURN   	0 1
+constants (11) for 00000196F72219C0:
+	1	"pairs"
+	2	"m_orders"
+	3	"UpdateState"
+	4	"GetState"
+	5	"GetRequirementFillStates"
+	6	"ipairs"
+	7	"GetRequirements"
+	8	"OrderState"
+	9	"Finished"
+	10	nil
+	11	"Init"
+locals (20) for 00000196F72219C0:
+	0	self	1	45
+	1	codeCountMap	1	45
+	2	codeStateMap	1	45
+	3	(for generator)	4	10
+	4	(for state)	4	10
+	5	(for control)	4	10
+	6	_	5	8
+	7	order	5	8
+	8	(for generator)	13	44
+	9	(for state)	13	44
+	10	(for control)	13	44
+	11	_	14	42
+	12	order	14	42
+	13	orderState	16	42
+	14	fillStates	18	42
+	15	(for generator)	22	42
+	16	(for state)	22	42
+	17	(for control)	22	42
+	18	index	23	40
+	19	code	23	40
+upvalues (1) for 00000196F72219C0:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:63,65> (10 instructions at 00000196F72225E0)
+5 params, 11 slots, 1 upvalue, 5 locals, 4 constants, 0 functions
+	1	[64]	GETTABUP 	5 0 -1	; _ENV "GM"
+	2	[64]	GETTABLE 	5 5 -2	; "BIManager"
+	3	[64]	SELF     	5 5 -3	; "LogOrder"
+	4	[64]	SELF     	7 1 -4	; "GetId"
+	5	[64]	CALL     	7 2 2
+	6	[64]	MOVE     	8 2
+	7	[64]	MOVE     	9 3
+	8	[64]	MOVE     	10 4
+	9	[64]	CALL     	5 6 1
+	10	[65]	RETURN   	0 1
+constants (4) for 00000196F72225E0:
+	1	"GM"
+	2	"BIManager"
+	3	"LogOrder"
+	4	"GetId"
+locals (5) for 00000196F72225E0:
+	0	self	1	11
+	1	order	1	11
+	2	type	1	11
+	3	content	1	11
+	4	action	1	11
+upvalues (1) for 00000196F72225E0:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:67,75> (21 instructions at 00000196F72226C0)
+2 params, 4 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[68]	SELF     	2 1 -1	; "GetType"
+	2	[68]	CALL     	2 2 2
+	3	[68]	GETTABUP 	3 0 -2	; _ENV "OrderType"
+	4	[68]	GETTABLE 	3 3 -3	; "Fixed"
+	5	[68]	EQ       	0 2 3
+	6	[68]	JMP      	0 3	; to 10
+	7	[69]	LOADK    	2 -4	; "fixed"
+	8	[69]	RETURN   	2 2
+	9	[69]	JMP      	0 11	; to 21
+	10	[70]	SELF     	2 1 -1	; "GetType"
+	11	[70]	CALL     	2 2 2
+	12	[70]	GETTABUP 	3 0 -2	; _ENV "OrderType"
+	13	[70]	GETTABLE 	3 3 -5	; "Special"
+	14	[70]	EQ       	0 2 3
+	15	[70]	JMP      	0 3	; to 19
+	16	[71]	LOADK    	2 -6	; "special"
+	17	[71]	RETURN   	2 2
+	18	[71]	JMP      	0 2	; to 21
+	19	[73]	LOADK    	2 -7	; "random"
+	20	[73]	RETURN   	2 2
+	21	[75]	RETURN   	0 1
+constants (7) for 00000196F72226C0:
+	1	"GetType"
+	2	"OrderType"
+	3	"Fixed"
+	4	"fixed"
+	5	"Special"
+	6	"special"
+	7	"random"
+locals (2) for 00000196F72226C0:
+	0	self	1	22
+	1	order	1	22
+upvalues (1) for 00000196F72226C0:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:77,89> (25 instructions at 00000196F7223030)
+3 params, 11 slots, 1 upvalue, 10 locals, 7 constants, 0 functions
+	1	[78]	SELF     	3 0 -1	; "_GetLogOrderActionOrderType"
+	2	[78]	MOVE     	5 1
+	3	[78]	CALL     	3 3 2
+	4	[79]	NEWTABLE 	4 0 0
+	5	[80]	GETTABUP 	5 0 -2	; _ENV "ipairs"
+	6	[80]	SELF     	6 1 -3	; "GetRequirements"
+	7	[80]	CALL     	6 2 0
+	8	[80]	CALL     	5 0 4
+	9	[80]	JMP      	0 7	; to 17
+	10	[81]	GETTABLE 	10 4 9
+	11	[81]	EQ       	0 10 -4	; - nil
+	12	[81]	JMP      	0 1	; to 14
+	13	[82]	SETTABLE 	4 9 -5	; - 0
+	14	[85]	GETTABLE 	10 4 9
+	15	[85]	ADD      	10 10 -6	; - 1
+	16	[85]	SETTABLE 	4 9 10
+	17	[80]	TFORCALL 	5 2
+	18	[80]	TFORLOOP 	7 -9	; to 10
+	19	[88]	SELF     	5 0 -7	; "_LogOrder"
+	20	[88]	MOVE     	7 1
+	21	[88]	MOVE     	8 3
+	22	[88]	MOVE     	9 4
+	23	[88]	MOVE     	10 2
+	24	[88]	CALL     	5 6 1
+	25	[89]	RETURN   	0 1
+constants (7) for 00000196F7223030:
+	1	"_GetLogOrderActionOrderType"
+	2	"ipairs"
+	3	"GetRequirements"
+	4	nil
+	5	0
+	6	1
+	7	"_LogOrder"
+locals (10) for 00000196F7223030:
+	0	self	1	26
+	1	order	1	26
+	2	action	1	26
+	3	type	4	26
+	4	content	5	26
+	5	(for generator)	9	19
+	6	(for state)	9	19
+	7	(for control)	9	19
+	8	_	10	17
+	9	requirement	10	17
+upvalues (1) for 00000196F7223030:
+	0	_ENV	0	0
+
+function <BaseOrderModel.lua:93,95> (3 instructions at 00000196F7223810)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[94]	GETTABLE 	1 0 -1	; "m_orders"
+	2	[94]	RETURN   	1 2
+	3	[95]	RETURN   	0 1
+constants (1) for 00000196F7223810:
+	1	"m_orders"
+locals (1) for 00000196F7223810:
+	0	self	1	4
+upvalues (0) for 00000196F7223810:

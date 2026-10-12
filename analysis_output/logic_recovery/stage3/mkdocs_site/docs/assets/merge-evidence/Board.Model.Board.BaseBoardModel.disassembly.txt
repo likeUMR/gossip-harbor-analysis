@@ -1,0 +1,3098 @@
+
+main <BaseBoardModel.lua:0,0> (202 instructions at 0000028D3354EFD0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 75 constants, 61 functions
+	1	[7]	CLOSURE  	0 0	; 0000028D3354F050
+	2	[7]	SETTABUP 	0 -1 0	; _ENV "DEFINE_ITEM_EVENT"
+	3	[25]	NEWTABLE 	0 0 3
+	4	[26]	GETTABUP 	1 0 -4	; _ENV "EBoardType"
+	5	[26]	GETTABLE 	1 1 -5	; "Empty"
+	6	[26]	SETTABLE 	0 -3 1	; "BoardType" -
+	7	[28]	SETTABLE 	0 -6 -7	; "Freefall" false
+	8	[30]	SETTABLE 	0 -8 -7	; "IgnoreBI" false
+	9	[32]	SETTABUP 	0 -2 0	; _ENV "BaseBoardModel"
+	10	[33]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	11	[33]	GETTABUP 	1 0 -2	; _ENV "BaseBoardModel"
+	12	[33]	SETTABLE 	0 -9 1	; "__index" -
+	13	[35]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	14	[35]	SETTABLE 	0 -10 -11	; "TileSize" 145
+	15	[37]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	16	[37]	SETTABLE 	0 -12 -13	; "HorizontalTiles" nil
+	17	[39]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	18	[39]	SETTABLE 	0 -14 -13	; "VerticalTiles" nil
+	19	[41]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	20	[41]	NEWTABLE 	1 0 0
+	21	[41]	SETTABLE 	0 -15 1	; "ModelTypeInstances" -
+	22	[42]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	23	[44]	CLOSURE  	1 1	; 0000028D3354F2F0
+	24	[42]	SETTABLE 	0 -16 1	; "GetModelInstance" -
+	25	[45]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	26	[47]	CLOSURE  	1 2	; 0000028D3354F370
+	27	[45]	SETTABLE 	0 -17 1	; "_SetInstance" -
+	28	[50]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	29	[55]	CLOSURE  	1 3	; 0000028D3354EA40
+	30	[50]	SETTABLE 	0 -18 1	; "Init" -
+	31	[57]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	32	[61]	CLOSURE  	1 4	; 0000028D3354EB40
+	33	[57]	SETTABLE 	0 -19 1	; "UpdatePerSecond" -
+	34	[65]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	35	[70]	CLOSURE  	1 5	; 0000028D3354EC30
+	36	[65]	SETTABLE 	0 -20 1	; "CreateMatrix" -
+	37	[75]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	38	[79]	CLOSURE  	1 6	; 0000028D3354ECB0
+	39	[75]	SETTABLE 	0 -21 1	; "CreatePositionFromLocalPosition" -
+	40	[82]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	41	[84]	CLOSURE  	1 7	; 0000028D33553170
+	42	[82]	SETTABLE 	0 -22 1	; "GetValidPositionIterator" -
+	43	[87]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	44	[107]	CLOSURE  	1 8	; 0000028D335531F0
+	45	[87]	SETTABLE 	0 -23 1	; "_ValidPositionIterator" -
+	46	[109]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	47	[111]	CLOSURE  	1 9	; 0000028D33554100
+	48	[109]	SETTABLE 	0 -24 1	; "GetInverseYValidPositionIterator" -
+	49	[115]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	50	[135]	CLOSURE  	1 10	; 0000028D33553F80
+	51	[115]	SETTABLE 	0 -25 1	; "_InverseYValidPositionIterator" -
+	52	[138]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	53	[140]	CLOSURE  	1 11	; 0000028D33554200
+	54	[138]	SETTABLE 	0 -26 1	; "GetDiagonalValidPositionIterator" -
+	55	[142]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	56	[163]	CLOSURE  	1 12	; 0000028D33554580
+	57	[142]	SETTABLE 	0 -27 1	; "_DiagonalValidPositionIterator" -
+	58	[166]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	59	[168]	CLOSURE  	1 13	; 0000028D33554300
+	60	[166]	SETTABLE 	0 -28 1	; "PositionIsValid" -
+	61	[171]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	62	[175]	CLOSURE  	1 14	; 0000028D33553F00
+	63	[171]	SETTABLE 	0 -29 1	; "ToLocalPosition" -
+	64	[180]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	65	[184]	CLOSURE  	1 15	; 0000028D33554B00
+	66	[180]	SETTABLE 	0 -30 1	; "ToLocalPositionSetZ" -
+	67	[187]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	68	[189]	CLOSURE  	1 16	; 0000028D33554400
+	69	[187]	SETTABLE 	0 -31 1	; "IsPositionInteractable" -
+	70	[200]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	71	[211]	CLOSURE  	1 17	; 0000028D33554380
+	72	[200]	SETTABLE 	0 -32 1	; "GenerateItem" -
+	73	[218]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	74	[221]	CLOSURE  	1 18	; 0000028D33554980
+	75	[218]	SETTABLE 	0 -33 1	; "ReplaceItem" -
+	76	[225]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	77	[235]	CLOSURE  	1 19	; 0000028D33554500
+	78	[225]	SETTABLE 	0 -34 1	; "RemoveItem" -
+	79	[250]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	80	[261]	CLOSURE  	1 20	; 0000028D33553C80
+	81	[250]	SETTABLE 	0 -35 1	; "SpreadItem" -
+	82	[264]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	83	[272]	CLOSURE  	1 21	; 0000028D33554880
+	84	[264]	SETTABLE 	0 -36 1	; "ShockNeighborItems" -
+	85	[277]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	86	[307]	CLOSURE  	1 22	; 0000028D33554600
+	87	[277]	SETTABLE 	0 -37 1	; "CollapseItem" -
+	88	[311]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	89	[313]	CLOSURE  	1 23	; 0000028D33554680
+	90	[311]	SETTABLE 	0 -38 1	; "_PostProcessCollapseItem" -
+	91	[317]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	92	[319]	CLOSURE  	1 24	; 0000028D33554000
+	93	[317]	SETTABLE 	0 -39 1	; "SkipItems" -
+	94	[323]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	95	[325]	CLOSURE  	1 25	; 0000028D33554800
+	96	[323]	SETTABLE 	0 -40 1	; "DragItem" -
+	97	[327]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	98	[329]	CLOSURE  	1 26	; 0000028D33553E00
+	99	[327]	SETTABLE 	0 -41 1	; "_MergeItem" -
+	100	[331]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	101	[366]	CLOSURE  	1 27	; 0000028D33554900
+	102	[331]	SETTABLE 	0 -42 1	; "_DoMergeItem" -
+	103	[368]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	104	[422]	CLOSURE  	1 28	; 0000028D33553E80
+	105	[368]	SETTABLE 	0 -43 1	; "MergeAll" -
+	106	[426]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	107	[428]	CLOSURE  	1 29	; 0000028D33554A00
+	108	[426]	SETTABLE 	0 -44 1	; "GetDistanceInBoard" -
+	109	[434]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	110	[451]	CLOSURE  	1 30	; 0000028D33554A80
+	111	[434]	SETTABLE 	0 -45 1	; "CanItemMove" -
+	112	[454]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	113	[456]	CLOSURE  	1 31	; 0000028D3355DD70
+	114	[454]	SETTABLE 	0 -46 1	; "CanItemFall" -
+	115	[458]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	116	[497]	CLOSURE  	1 32	; 0000028D3355CC70
+	117	[458]	SETTABLE 	0 -47 1	; "CanItemMerge" -
+	118	[503]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	119	[505]	CLOSURE  	1 33	; 0000028D3355CAF0
+	120	[503]	SETTABLE 	0 -48 1	; "IsItemPaperBoxLocked" -
+	121	[509]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	122	[511]	CLOSURE  	1 34	; 0000028D3355C870
+	123	[509]	SETTABLE 	0 -49 1	; "GetItemPaperBoxUnLockLevel" -
+	124	[514]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	125	[516]	CLOSURE  	1 35	; 0000028D3355C970
+	126	[514]	SETTABLE 	0 -50 1	; "GetCurrentPaperBoxLevel" -
+	127	[518]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	128	[528]	CLOSURE  	1 36	; 0000028D3355CFF0
+	129	[518]	SETTABLE 	0 -51 1	; "Try2UnlockPaperBoxItem" -
+	130	[535]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	131	[537]	CLOSURE  	1 37	; 0000028D3355C3F0
+	132	[535]	SETTABLE 	0 -52 1	; "FindEmptyPositionInCircleOrder" -
+	133	[540]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	134	[542]	CLOSURE  	1 38	; 0000028D3355D070
+	135	[540]	SETTABLE 	0 -53 1	; "FindRandomPosition" -
+	136	[545]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	137	[547]	CLOSURE  	1 39	; 0000028D3355D270
+	138	[545]	SETTABLE 	0 -54 1	; "GetItem" -
+	139	[552]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	140	[554]	CLOSURE  	1 40	; 0000028D3355D170
+	141	[552]	SETTABLE 	0 -55 1	; "_SetItem" -
+	142	[556]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	143	[558]	CLOSURE  	1 41	; 0000028D3355D1F0
+	144	[556]	SETTABLE 	0 -56 1	; "IsBoardFull" -
+	145	[560]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	146	[562]	CLOSURE  	1 42	; 0000028D3355DC70
+	147	[560]	SETTABLE 	0 -57 1	; "FindEmptyPositionInValidOrder" -
+	148	[566]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	149	[568]	CLOSURE  	1 43	; 0000028D3355D870
+	150	[566]	SETTABLE 	0 -58 1	; "FindEmptyPositionInSpreadOrder" -
+	151	[574]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	152	[651]	CLOSURE  	1 44	; 0000028D3355DE70
+	153	[574]	SETTABLE 	0 -59 1	; "FindEmptySpreadPosition" -
+	154	[657]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	155	[659]	CLOSURE  	1 45	; 0000028D3355C7F0
+	156	[657]	SETTABLE 	0 -60 1	; "FindEmptyPositionInSpreadOrderWithNum" -
+	157	[662]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	158	[664]	CLOSURE  	1 46	; 0000028D3355D570
+	159	[662]	SETTABLE 	0 -61 1	; "FindEmptyPositionInDiagonalOrderWithNum" -
+	160	[668]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	161	[674]	CLOSURE  	1 47	; 0000028D3355E0F0
+	162	[668]	SETTABLE 	0 -62 1	; "GetAllBoardItems" -
+	163	[677]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	164	[679]	CLOSURE  	1 48	; 0000028D3355C2F0
+	165	[677]	SETTABLE 	0 -63 1	; "FilterItems" -
+	166	[686]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	167	[688]	CLOSURE  	1 49	; 0000028D3355CBF0
+	168	[686]	SETTABLE 	0 -64 1	; "GetCostEnergyType" -
+	169	[691]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	170	[693]	CLOSURE  	1 50	; 0000028D3355DA70
+	171	[691]	SETTABLE 	0 -65 1	; "GetOrderCodeStateMap" -
+	172	[700]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	173	[714]	CLOSURE  	1 51	; 0000028D3355CE70
+	174	[700]	SETTABLE 	0 -66 1	; "GetCodeCountMap" -
+	175	[717]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	176	[727]	CLOSURE  	1 52	; 0000028D3355C6F0
+	177	[717]	SETTABLE 	0 -67 1	; "CountItemsCode" -
+	178	[734]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	179	[804]	CLOSURE  	1 53	; 0000028D3355C4F0
+	180	[734]	SETTABLE 	0 -68 1	; "_FillMergePairGroup" -
+	181	[811]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	182	[885]	CLOSURE  	1 54	; 0000028D3355DF70
+	183	[811]	SETTABLE 	0 -69 1	; "FindMergePair" -
+	184	[888]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	185	[890]	CLOSURE  	1 55	; 0000028D3355DEF0
+	186	[888]	SETTABLE 	0 -70 1	; "ResetLogNearestTouchedMergeItem" -
+	187	[895]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	188	[897]	CLOSURE  	1 56	; 0000028D3355C8F0
+	189	[895]	SETTABLE 	0 -71 1	; "CheckNearestTouchedMergeItem" -
+	190	[902]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	191	[929]	CLOSURE  	1 57	; 0000028D3355DAF0
+	192	[902]	SETTABLE 	0 -72 1	; "_GetNearestTouchedMergeItem" -
+	193	[933]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	194	[935]	CLOSURE  	1 58	; 0000028D3355C570
+	195	[933]	SETTABLE 	0 -73 1	; "HasOpeningItem" -
+	196	[942]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	197	[944]	CLOSURE  	1 59	; 0000028D3355C9F0
+	198	[942]	SETTABLE 	0 -74 1	; "SaveItemProperty" -
+	199	[947]	GETTABUP 	0 0 -2	; _ENV "BaseBoardModel"
+	200	[949]	CLOSURE  	1 60	; 0000028D3355D3F0
+	201	[947]	SETTABLE 	0 -75 1	; "_RemoveItemProperty" -
+	202	[949]	RETURN   	0 1
+constants (75) for 0000028D3354EFD0:
+	1	"DEFINE_ITEM_EVENT"
+	2	"BaseBoardModel"
+	3	"BoardType"
+	4	"EBoardType"
+	5	"Empty"
+	6	"Freefall"
+	7	false
+	8	"IgnoreBI"
+	9	"__index"
+	10	"TileSize"
+	11	145
+	12	"HorizontalTiles"
+	13	nil
+	14	"VerticalTiles"
+	15	"ModelTypeInstances"
+	16	"GetModelInstance"
+	17	"_SetInstance"
+	18	"Init"
+	19	"UpdatePerSecond"
+	20	"CreateMatrix"
+	21	"CreatePositionFromLocalPosition"
+	22	"GetValidPositionIterator"
+	23	"_ValidPositionIterator"
+	24	"GetInverseYValidPositionIterator"
+	25	"_InverseYValidPositionIterator"
+	26	"GetDiagonalValidPositionIterator"
+	27	"_DiagonalValidPositionIterator"
+	28	"PositionIsValid"
+	29	"ToLocalPosition"
+	30	"ToLocalPositionSetZ"
+	31	"IsPositionInteractable"
+	32	"GenerateItem"
+	33	"ReplaceItem"
+	34	"RemoveItem"
+	35	"SpreadItem"
+	36	"ShockNeighborItems"
+	37	"CollapseItem"
+	38	"_PostProcessCollapseItem"
+	39	"SkipItems"
+	40	"DragItem"
+	41	"_MergeItem"
+	42	"_DoMergeItem"
+	43	"MergeAll"
+	44	"GetDistanceInBoard"
+	45	"CanItemMove"
+	46	"CanItemFall"
+	47	"CanItemMerge"
+	48	"IsItemPaperBoxLocked"
+	49	"GetItemPaperBoxUnLockLevel"
+	50	"GetCurrentPaperBoxLevel"
+	51	"Try2UnlockPaperBoxItem"
+	52	"FindEmptyPositionInCircleOrder"
+	53	"FindRandomPosition"
+	54	"GetItem"
+	55	"_SetItem"
+	56	"IsBoardFull"
+	57	"FindEmptyPositionInValidOrder"
+	58	"FindEmptyPositionInSpreadOrder"
+	59	"FindEmptySpreadPosition"
+	60	"FindEmptyPositionInSpreadOrderWithNum"
+	61	"FindEmptyPositionInDiagonalOrderWithNum"
+	62	"GetAllBoardItems"
+	63	"FilterItems"
+	64	"GetCostEnergyType"
+	65	"GetOrderCodeStateMap"
+	66	"GetCodeCountMap"
+	67	"CountItemsCode"
+	68	"_FillMergePairGroup"
+	69	"FindMergePair"
+	70	"ResetLogNearestTouchedMergeItem"
+	71	"CheckNearestTouchedMergeItem"
+	72	"_GetNearestTouchedMergeItem"
+	73	"HasOpeningItem"
+	74	"SaveItemProperty"
+	75	"_RemoveItemProperty"
+locals (0) for 0000028D3354EFD0:
+upvalues (1) for 0000028D3354EFD0:
+	0	_ENV	1	0
+
+function <BaseBoardModel.lua:1,7> (9 instructions at 0000028D3354F050)
+2 params, 5 slots, 0 upvalues, 4 locals, 2 constants, 1 function
+	1	[2]	MOVE     	2 1
+	2	[2]	LOADK    	3 -1	; "Item"
+	3	[2]	CONCAT   	2 2 3
+	4	[3]	LOADK    	3 -2	; "On"
+	5	[3]	MOVE     	4 1
+	6	[3]	CONCAT   	3 3 4
+	7	[6]	CLOSURE  	4 0	; 0000028D3354F270
+	8	[6]	SETTABLE 	0 2 4
+	9	[7]	RETURN   	0 1
+constants (2) for 0000028D3354F050:
+	1	"Item"
+	2	"On"
+locals (4) for 0000028D3354F050:
+	0	model	1	10
+	1	eventName	1	10
+	2	functionName	4	10
+	3	dispatchFunctionName	7	10
+upvalues (0) for 0000028D3354F050:
+
+function <BaseBoardModel.lua:4,6> (5 instructions at 0000028D3354F270)
+2+ params, 6 slots, 1 upvalue, 2 locals, 1 constant, 0 functions
+	1	[5]	SELF     	2 1 -1	; "DispatchComponentEvent"
+	2	[5]	GETUPVAL 	4 0	; dispatchFunctionName
+	3	[5]	VARARG   	5 0
+	4	[5]	CALL     	2 0 1
+	5	[6]	RETURN   	0 1
+constants (1) for 0000028D3354F270:
+	1	"DispatchComponentEvent"
+locals (2) for 0000028D3354F270:
+	0	model	1	6
+	1	item	1	6
+upvalues (1) for 0000028D3354F270:
+	0	dispatchFunctionName	1	3
+
+function <BaseBoardModel.lua:42,44> (4 instructions at 0000028D3354F2F0)
+2 params, 3 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[43]	GETTABLE 	2 0 -1	; "ModelTypeInstances"
+	2	[43]	GETTABLE 	2 2 1
+	3	[43]	RETURN   	2 2
+	4	[44]	RETURN   	0 1
+constants (1) for 0000028D3354F2F0:
+	1	"ModelTypeInstances"
+locals (2) for 0000028D3354F2F0:
+	0	self	1	5
+	1	boardType	1	5
+upvalues (0) for 0000028D3354F2F0:
+
+function <BaseBoardModel.lua:45,47> (4 instructions at 0000028D3354F370)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[46]	GETTABLE 	1 0 -1	; "ModelTypeInstances"
+	2	[46]	GETTABLE 	2 0 -2	; "BoardType"
+	3	[46]	SETTABLE 	1 2 0
+	4	[47]	RETURN   	0 1
+constants (2) for 0000028D3354F370:
+	1	"ModelTypeInstances"
+	2	"BoardType"
+locals (1) for 0000028D3354F370:
+	0	self	1	5
+upvalues (0) for 0000028D3354F370:
+
+function <BaseBoardModel.lua:50,55> (13 instructions at 0000028D3354EA40)
+2 params, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[51]	GETTABUP 	2 0 -2	; _ENV "PairEvent"
+	2	[51]	GETTABLE 	2 2 -3	; "Create"
+	3	[51]	MOVE     	3 0
+	4	[51]	CALL     	2 2 2
+	5	[51]	SETTABLE 	0 -1 2	; "event" -
+	6	[52]	SETTABLE 	0 -4 1	; "m_itemLayerModel" -
+	7	[53]	SELF     	2 0 -5	; "_SetInstance"
+	8	[53]	CALL     	2 2 1
+	9	[54]	GETTABUP 	2 0 -6	; _ENV "DEFINE_ITEM_EVENT"
+	10	[54]	MOVE     	3 0
+	11	[54]	LOADK    	4 -7	; "Tap"
+	12	[54]	CALL     	2 3 1
+	13	[55]	RETURN   	0 1
+constants (7) for 0000028D3354EA40:
+	1	"event"
+	2	"PairEvent"
+	3	"Create"
+	4	"m_itemLayerModel"
+	5	"_SetInstance"
+	6	"DEFINE_ITEM_EVENT"
+	7	"Tap"
+locals (2) for 0000028D3354EA40:
+	0	self	1	14
+	1	itemLayerModel	1	14
+upvalues (1) for 0000028D3354EA40:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:57,61> (12 instructions at 0000028D3354EB40)
+1 param, 9 slots, 1 upvalue, 6 locals, 4 constants, 0 functions
+	1	[58]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[58]	SELF     	2 0 -2	; "GetAllBoardItems"
+	3	[58]	LOADBOOL 	4 1 0
+	4	[58]	CALL     	2 3 0
+	5	[58]	CALL     	1 0 4
+	6	[58]	JMP      	0 3	; to 10
+	7	[59]	SELF     	6 4 -3	; "DispatchComponentEvent"
+	8	[59]	LOADK    	8 -4	; "UpdatePerSecond"
+	9	[59]	CALL     	6 3 1
+	10	[58]	TFORCALL 	1 2
+	11	[58]	TFORLOOP 	3 -5	; to 7
+	12	[61]	RETURN   	0 1
+constants (4) for 0000028D3354EB40:
+	1	"pairs"
+	2	"GetAllBoardItems"
+	3	"DispatchComponentEvent"
+	4	"UpdatePerSecond"
+locals (6) for 0000028D3354EB40:
+	0	self	1	13
+	1	(for generator)	6	12
+	2	(for state)	6	12
+	3	(for control)	6	12
+	4	model	7	10
+	5	_	7	10
+upvalues (1) for 0000028D3354EB40:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:65,70> (9 instructions at 0000028D3354EC30)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[67]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[67]	NEWTABLE 	2 0 0
+	3	[67]	GETTABUP 	3 0 -2	; _ENV "Matrix"
+	4	[67]	CALL     	1 3 2
+	5	[68]	SELF     	2 1 -3	; "Init"
+	6	[68]	MOVE     	4 0
+	7	[68]	CALL     	2 3 1
+	8	[69]	RETURN   	1 2
+	9	[70]	RETURN   	0 1
+constants (3) for 0000028D3354EC30:
+	1	"setmetatable"
+	2	"Matrix"
+	3	"Init"
+locals (2) for 0000028D3354EC30:
+	0	self	1	10
+	1	matrix	5	10
+upvalues (1) for 0000028D3354EC30:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:75,79> (22 instructions at 0000028D3354ECB0)
+3 params, 8 slots, 1 upvalue, 5 locals, 7 constants, 0 functions
+	1	[76]	GETTABUP 	3 0 -1	; _ENV "math"
+	2	[76]	GETTABLE 	3 3 -2	; "floor"
+	3	[76]	MOVE     	4 1
+	4	[76]	CALL     	3 2 2
+	5	[76]	GETTABLE 	4 0 -3	; "TileSize"
+	6	[76]	IDIV     	3 3 4
+	7	[76]	ADD      	3 3 -4	; - 1
+	8	[77]	GETTABLE 	4 0 -5	; "VerticalTiles"
+	9	[77]	GETTABUP 	5 0 -1	; _ENV "math"
+	10	[77]	GETTABLE 	5 5 -2	; "floor"
+	11	[77]	MOVE     	6 2
+	12	[77]	CALL     	5 2 2
+	13	[77]	GETTABLE 	6 0 -3	; "TileSize"
+	14	[77]	IDIV     	5 5 6
+	15	[77]	SUB      	4 4 5
+	16	[78]	GETTABUP 	5 0 -6	; _ENV "BoardPosition"
+	17	[78]	GETTABLE 	5 5 -7	; "Create"
+	18	[78]	MOVE     	6 3
+	19	[78]	MOVE     	7 4
+	20	[78]	TAILCALL 	5 3 0
+	21	[78]	RETURN   	5 0
+	22	[79]	RETURN   	0 1
+constants (7) for 0000028D3354ECB0:
+	1	"math"
+	2	"floor"
+	3	"TileSize"
+	4	1
+	5	"VerticalTiles"
+	6	"BoardPosition"
+	7	"Create"
+locals (5) for 0000028D3354ECB0:
+	0	self	1	23
+	1	localPositionX	1	23
+	2	localPositionY	1	23
+	3	x	8	23
+	4	y	16	23
+upvalues (1) for 0000028D3354ECB0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:82,84> (5 instructions at 0000028D33553170)
+1 param, 4 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[83]	GETTABLE 	1 0 -1	; "_ValidPositionIterator"
+	2	[83]	MOVE     	2 0
+	3	[83]	LOADNIL  	3 0
+	4	[83]	RETURN   	1 4
+	5	[84]	RETURN   	0 1
+constants (1) for 0000028D33553170:
+	1	"_ValidPositionIterator"
+locals (1) for 0000028D33553170:
+	0	self	1	6
+upvalues (0) for 0000028D33553170:
+
+function <BaseBoardModel.lua:87,107> (32 instructions at 0000028D335531F0)
+2 params, 7 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[88]	EQ       	0 1 -1	; - nil
+	2	[88]	JMP      	0 6	; to 9
+	3	[89]	GETTABUP 	2 0 -2	; _ENV "BoardPosition"
+	4	[89]	GETTABLE 	2 2 -3	; "Create"
+	5	[89]	LOADK    	3 -4	; 1
+	6	[89]	LOADK    	4 -4	; 1
+	7	[89]	TAILCALL 	2 3 0
+	8	[89]	RETURN   	2 0
+	9	[92]	SELF     	2 1 -5	; "GetX"
+	10	[92]	CALL     	2 2 2
+	11	[93]	SELF     	3 1 -6	; "GetY"
+	12	[93]	CALL     	3 2 2
+	13	[95]	GETTABLE 	4 0 -7	; "HorizontalTiles"
+	14	[95]	EQ       	1 2 4
+	15	[95]	JMP      	0 2	; to 18
+	16	[96]	ADD      	2 2 -4	; - 1
+	17	[96]	JMP      	0 2	; to 20
+	18	[98]	LOADK    	2 -4	; 1
+	19	[99]	ADD      	3 3 -4	; - 1
+	20	[102]	GETTABLE 	4 0 -8	; "VerticalTiles"
+	21	[102]	LT       	0 4 3
+	22	[102]	JMP      	0 3	; to 26
+	23	[103]	LOADNIL  	4 0
+	24	[103]	RETURN   	4 2
+	25	[103]	JMP      	0 6	; to 32
+	26	[105]	GETTABUP 	4 0 -2	; _ENV "BoardPosition"
+	27	[105]	GETTABLE 	4 4 -3	; "Create"
+	28	[105]	MOVE     	5 2
+	29	[105]	MOVE     	6 3
+	30	[105]	TAILCALL 	4 3 0
+	31	[105]	RETURN   	4 0
+	32	[107]	RETURN   	0 1
+constants (8) for 0000028D335531F0:
+	1	nil
+	2	"BoardPosition"
+	3	"Create"
+	4	1
+	5	"GetX"
+	6	"GetY"
+	7	"HorizontalTiles"
+	8	"VerticalTiles"
+locals (4) for 0000028D335531F0:
+	0	self	1	33
+	1	position	1	33
+	2	x	11	33
+	3	y	13	33
+upvalues (1) for 0000028D335531F0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:109,111> (5 instructions at 0000028D33554100)
+1 param, 4 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[110]	GETTABLE 	1 0 -1	; "_InverseYValidPositionIterator"
+	2	[110]	MOVE     	2 0
+	3	[110]	LOADNIL  	3 0
+	4	[110]	RETURN   	1 4
+	5	[111]	RETURN   	0 1
+constants (1) for 0000028D33554100:
+	1	"_InverseYValidPositionIterator"
+locals (1) for 0000028D33554100:
+	0	self	1	6
+upvalues (0) for 0000028D33554100:
+
+function <BaseBoardModel.lua:115,135> (31 instructions at 0000028D33553F80)
+2 params, 7 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[116]	EQ       	0 1 -1	; - nil
+	2	[116]	JMP      	0 6	; to 9
+	3	[117]	GETTABUP 	2 0 -2	; _ENV "BoardPosition"
+	4	[117]	GETTABLE 	2 2 -3	; "Create"
+	5	[117]	LOADK    	3 -4	; 1
+	6	[117]	GETTABLE 	4 0 -5	; "VerticalTiles"
+	7	[117]	TAILCALL 	2 3 0
+	8	[117]	RETURN   	2 0
+	9	[120]	SELF     	2 1 -6	; "GetX"
+	10	[120]	CALL     	2 2 2
+	11	[121]	SELF     	3 1 -7	; "GetY"
+	12	[121]	CALL     	3 2 2
+	13	[123]	GETTABLE 	4 0 -8	; "HorizontalTiles"
+	14	[123]	EQ       	1 2 4
+	15	[123]	JMP      	0 2	; to 18
+	16	[124]	ADD      	2 2 -4	; - 1
+	17	[124]	JMP      	0 2	; to 20
+	18	[126]	LOADK    	2 -4	; 1
+	19	[127]	SUB      	3 3 -4	; - 1
+	20	[130]	LT       	0 3 -4	; - 1
+	21	[130]	JMP      	0 3	; to 25
+	22	[131]	LOADNIL  	4 0
+	23	[131]	RETURN   	4 2
+	24	[131]	JMP      	0 6	; to 31
+	25	[133]	GETTABUP 	4 0 -2	; _ENV "BoardPosition"
+	26	[133]	GETTABLE 	4 4 -3	; "Create"
+	27	[133]	MOVE     	5 2
+	28	[133]	MOVE     	6 3
+	29	[133]	TAILCALL 	4 3 0
+	30	[133]	RETURN   	4 0
+	31	[135]	RETURN   	0 1
+constants (8) for 0000028D33553F80:
+	1	nil
+	2	"BoardPosition"
+	3	"Create"
+	4	1
+	5	"VerticalTiles"
+	6	"GetX"
+	7	"GetY"
+	8	"HorizontalTiles"
+locals (4) for 0000028D33553F80:
+	0	self	1	32
+	1	position	1	32
+	2	x	11	32
+	3	y	13	32
+upvalues (1) for 0000028D33553F80:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:138,140> (5 instructions at 0000028D33554200)
+1 param, 4 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[139]	GETTABLE 	1 0 -1	; "_DiagonalValidPositionIterator"
+	2	[139]	MOVE     	2 0
+	3	[139]	LOADNIL  	3 0
+	4	[139]	RETURN   	1 4
+	5	[140]	RETURN   	0 1
+constants (1) for 0000028D33554200:
+	1	"_DiagonalValidPositionIterator"
+locals (1) for 0000028D33554200:
+	0	self	1	6
+upvalues (0) for 0000028D33554200:
+
+function <BaseBoardModel.lua:142,163> (43 instructions at 0000028D33554580)
+2 params, 8 slots, 1 upvalue, 5 locals, 10 constants, 0 functions
+	1	[143]	EQ       	0 1 -1	; - nil
+	2	[143]	JMP      	0 6	; to 9
+	3	[144]	GETTABUP 	2 0 -2	; _ENV "BoardPosition"
+	4	[144]	GETTABLE 	2 2 -3	; "Create"
+	5	[144]	LOADK    	3 -4	; 1
+	6	[144]	LOADK    	4 -4	; 1
+	7	[144]	TAILCALL 	2 3 0
+	8	[144]	RETURN   	2 0
+	9	[147]	SELF     	2 1 -5	; "GetX"
+	10	[147]	CALL     	2 2 2
+	11	[148]	SELF     	3 1 -6	; "GetY"
+	12	[148]	CALL     	3 2 2
+	13	[150]	ADD      	2 2 -4	; - 1
+	14	[151]	SUB      	3 3 -4	; - 1
+	15	[153]	LT       	1 3 -4	; - 1
+	16	[153]	JMP      	0 3	; to 20
+	17	[153]	GETTABLE 	4 0 -7	; "HorizontalTiles"
+	18	[153]	LT       	0 4 2
+	19	[153]	JMP      	0 17	; to 37
+	20	[154]	ADD      	4 2 3
+	21	[154]	GETTABLE 	5 0 -7	; "HorizontalTiles"
+	22	[154]	GETTABLE 	6 0 -8	; "VerticalTiles"
+	23	[154]	ADD      	5 5 6
+	24	[154]	EQ       	0 4 5
+	25	[154]	JMP      	0 2	; to 28
+	26	[155]	LOADNIL  	4 0
+	27	[155]	RETURN   	4 2
+	28	[157]	ADD      	4 2 3
+	29	[157]	ADD      	4 4 -4	; - 1
+	30	[158]	GETTABUP 	5 0 -9	; _ENV "math"
+	31	[158]	GETTABLE 	5 5 -10	; "min"
+	32	[158]	ADD      	6 2 3
+	33	[158]	GETTABLE 	7 0 -8	; "VerticalTiles"
+	34	[158]	CALL     	5 3 2
+	35	[158]	MOVE     	3 5
+	36	[159]	SUB      	2 4 3
+	37	[162]	GETTABUP 	4 0 -2	; _ENV "BoardPosition"
+	38	[162]	GETTABLE 	4 4 -3	; "Create"
+	39	[162]	MOVE     	5 2
+	40	[162]	MOVE     	6 3
+	41	[162]	TAILCALL 	4 3 0
+	42	[162]	RETURN   	4 0
+	43	[163]	RETURN   	0 1
+constants (10) for 0000028D33554580:
+	1	nil
+	2	"BoardPosition"
+	3	"Create"
+	4	1
+	5	"GetX"
+	6	"GetY"
+	7	"HorizontalTiles"
+	8	"VerticalTiles"
+	9	"math"
+	10	"min"
+locals (5) for 0000028D33554580:
+	0	self	1	44
+	1	position	1	44
+	2	x	11	44
+	3	y	13	44
+	4	sumxy	30	37
+upvalues (1) for 0000028D33554580:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:166,168> (22 instructions at 0000028D33554300)
+2 params, 4 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[167]	SELF     	2 1 -1	; "GetX"
+	2	[167]	CALL     	2 2 2
+	3	[167]	LE       	0 -2 2	; 1 -
+	4	[167]	JMP      	0 14	; to 19
+	5	[167]	SELF     	2 1 -1	; "GetX"
+	6	[167]	CALL     	2 2 2
+	7	[167]	GETTABLE 	3 0 -3	; "HorizontalTiles"
+	8	[167]	LE       	0 2 3
+	9	[167]	JMP      	0 9	; to 19
+	10	[167]	SELF     	2 1 -4	; "GetY"
+	11	[167]	CALL     	2 2 2
+	12	[167]	LE       	0 -2 2	; 1 -
+	13	[167]	JMP      	0 5	; to 19
+	14	[167]	SELF     	2 1 -4	; "GetY"
+	15	[167]	CALL     	2 2 2
+	16	[167]	GETTABLE 	3 0 -5	; "VerticalTiles"
+	17	[167]	LE       	1 2 3
+	18	[167]	JMP      	0 1	; to 20
+	19	[167]	LOADBOOL 	2 0 1
+	20	[167]	LOADBOOL 	2 1 0
+	21	[167]	RETURN   	2 2
+	22	[168]	RETURN   	0 1
+constants (5) for 0000028D33554300:
+	1	"GetX"
+	2	1
+	3	"HorizontalTiles"
+	4	"GetY"
+	5	"VerticalTiles"
+locals (2) for 0000028D33554300:
+	0	self	1	23
+	1	position	1	23
+upvalues (0) for 0000028D33554300:
+
+function <BaseBoardModel.lua:171,175> (17 instructions at 0000028D33553F00)
+2 params, 7 slots, 1 upvalue, 4 locals, 6 constants, 0 functions
+	1	[172]	SELF     	2 1 -1	; "GetX"
+	2	[172]	CALL     	2 2 2
+	3	[172]	SUB      	2 2 -2	; - 1
+	4	[172]	GETTABLE 	3 0 -3	; "TileSize"
+	5	[172]	MUL      	2 2 3
+	6	[173]	GETTABLE 	3 0 -4	; "VerticalTiles"
+	7	[173]	SELF     	4 1 -5	; "GetY"
+	8	[173]	CALL     	4 2 2
+	9	[173]	SUB      	3 3 4
+	10	[173]	GETTABLE 	4 0 -3	; "TileSize"
+	11	[173]	MUL      	3 3 4
+	12	[174]	GETTABUP 	4 0 -6	; _ENV "Vector2"
+	13	[174]	MOVE     	5 2
+	14	[174]	MOVE     	6 3
+	15	[174]	TAILCALL 	4 3 0
+	16	[174]	RETURN   	4 0
+	17	[175]	RETURN   	0 1
+constants (6) for 0000028D33553F00:
+	1	"GetX"
+	2	1
+	3	"TileSize"
+	4	"VerticalTiles"
+	5	"GetY"
+	6	"Vector2"
+locals (4) for 0000028D33553F00:
+	0	self	1	18
+	1	position	1	18
+	2	x	6	18
+	3	y	12	18
+upvalues (1) for 0000028D33553F00:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:180,184> (19 instructions at 0000028D33554B00)
+3 params, 9 slots, 1 upvalue, 5 locals, 6 constants, 0 functions
+	1	[181]	SELF     	3 1 -1	; "GetX"
+	2	[181]	CALL     	3 2 2
+	3	[181]	SUB      	3 3 -2	; - 0.5
+	4	[181]	GETTABLE 	4 0 -3	; "TileSize"
+	5	[181]	MUL      	3 3 4
+	6	[182]	GETTABLE 	4 0 -4	; "VerticalTiles"
+	7	[182]	SELF     	5 1 -5	; "GetY"
+	8	[182]	CALL     	5 2 2
+	9	[182]	SUB      	4 4 5
+	10	[182]	ADD      	4 4 -2	; - 0.5
+	11	[182]	GETTABLE 	5 0 -3	; "TileSize"
+	12	[182]	MUL      	4 4 5
+	13	[183]	GETTABUP 	5 0 -6	; _ENV "Vector3"
+	14	[183]	MOVE     	6 3
+	15	[183]	MOVE     	7 4
+	16	[183]	MOVE     	8 2
+	17	[183]	TAILCALL 	5 4 0
+	18	[183]	RETURN   	5 0
+	19	[184]	RETURN   	0 1
+constants (6) for 0000028D33554B00:
+	1	"GetX"
+	2	0.5
+	3	"TileSize"
+	4	"VerticalTiles"
+	5	"GetY"
+	6	"Vector3"
+locals (5) for 0000028D33554B00:
+	0	self	1	20
+	1	position	1	20
+	2	z	1	20
+	3	x	6	20
+	4	y	13	20
+upvalues (1) for 0000028D33554B00:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:187,189> (5 instructions at 0000028D33554400)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[188]	SELF     	2 0 -1	; "PositionIsValid"
+	2	[188]	MOVE     	4 1
+	3	[188]	TAILCALL 	2 3 0
+	4	[188]	RETURN   	2 0
+	5	[189]	RETURN   	0 1
+constants (1) for 0000028D33554400:
+	1	"PositionIsValid"
+locals (2) for 0000028D33554400:
+	0	self	1	6
+	1	position	1	6
+upvalues (0) for 0000028D33554400:
+
+function <BaseBoardModel.lua:200,211> (27 instructions at 0000028D33554380)
+5 params, 11 slots, 1 upvalue, 6 locals, 8 constants, 0 functions
+	1	[202]	GETTABUP 	5 0 -1	; _ENV "ItemModelFactory"
+	2	[202]	GETTABLE 	5 5 -2	; "CreateWithCode"
+	3	[202]	MOVE     	6 0
+	4	[202]	MOVE     	7 1
+	5	[202]	MOVE     	8 2
+	6	[202]	EQ       	0 4 -3	; - false
+	7	[202]	JMP      	0 1	; to 9
+	8	[202]	LOADBOOL 	9 0 1
+	9	[202]	LOADBOOL 	9 1 0
+	10	[202]	CALL     	5 5 2
+	11	[203]	SELF     	6 0 -4	; "SaveItemProperty"
+	12	[203]	MOVE     	8 5
+	13	[203]	CALL     	6 3 1
+	14	[204]	EQ       	1 1 -5	; - nil
+	15	[204]	JMP      	0 5	; to 21
+	16	[205]	SELF     	6 0 -6	; "_SetItem"
+	17	[205]	MOVE     	8 1
+	18	[205]	MOVE     	9 5
+	19	[205]	MOVE     	10 3
+	20	[205]	CALL     	6 5 1
+	21	[207]	GETTABLE 	6 0 -7	; "m_mergeAllIgnoredItems"
+	22	[207]	EQ       	1 6 -5	; - nil
+	23	[207]	JMP      	0 2	; to 26
+	24	[208]	GETTABLE 	6 0 -7	; "m_mergeAllIgnoredItems"
+	25	[208]	SETTABLE 	6 5 -8	; - true
+	26	[210]	RETURN   	5 2
+	27	[211]	RETURN   	0 1
+constants (8) for 0000028D33554380:
+	1	"ItemModelFactory"
+	2	"CreateWithCode"
+	3	false
+	4	"SaveItemProperty"
+	5	nil
+	6	"_SetItem"
+	7	"m_mergeAllIgnoredItems"
+	8	true
+locals (6) for 0000028D33554380:
+	0	self	1	28
+	1	position	1	28
+	2	code	1	28
+	3	autoUpdateOrderState	1	28
+	4	needUnlockType	1	28
+	5	newItem	11	28
+upvalues (1) for 0000028D33554380:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:218,221> (12 instructions at 0000028D33554980)
+4 params, 9 slots, 0 upvalues, 4 locals, 3 constants, 0 functions
+	1	[219]	SELF     	4 0 -1	; "RemoveItem"
+	2	[219]	MOVE     	6 1
+	3	[219]	LOADBOOL 	7 0 0
+	4	[219]	CALL     	4 4 1
+	5	[220]	SELF     	4 0 -2	; "GenerateItem"
+	6	[220]	SELF     	6 1 -3	; "GetPosition"
+	7	[220]	CALL     	6 2 2
+	8	[220]	MOVE     	7 2
+	9	[220]	MOVE     	8 3
+	10	[220]	TAILCALL 	4 5 0
+	11	[220]	RETURN   	4 0
+	12	[221]	RETURN   	0 1
+constants (3) for 0000028D33554980:
+	1	"RemoveItem"
+	2	"GenerateItem"
+	3	"GetPosition"
+locals (4) for 0000028D33554980:
+	0	self	1	13
+	1	sourceItem	1	13
+	2	newItemCode	1	13
+	3	autoUpdateOrderState	1	13
+upvalues (0) for 0000028D33554980:
+
+function <BaseBoardModel.lua:225,235> (30 instructions at 0000028D33554500)
+3 params, 10 slots, 1 upvalue, 5 locals, 10 constants, 0 functions
+	1	[227]	SELF     	3 1 -1	; "GetComponent"
+	2	[227]	GETTABUP 	5 0 -2	; _ENV "ItemSpread"
+	3	[227]	CALL     	3 3 2
+	4	[228]	EQ       	1 3 -3	; - nil
+	5	[228]	JMP      	0 6	; to 12
+	6	[228]	SELF     	4 3 -4	; "GetState"
+	7	[228]	CALL     	4 2 2
+	8	[228]	GETTABUP 	5 0 -5	; _ENV "ItemSpreadState"
+	9	[228]	GETTABLE 	5 5 -6	; "Opening"
+	10	[228]	EQ       	1 4 5
+	11	[228]	JMP      	0 1	; to 13
+	12	[228]	LOADBOOL 	4 0 1
+	13	[228]	LOADBOOL 	4 1 0
+	14	[229]	SELF     	5 0 -7	; "_SetItem"
+	15	[229]	SELF     	7 1 -8	; "GetPosition"
+	16	[229]	CALL     	7 2 2
+	17	[229]	LOADNIL  	8 0
+	18	[229]	MOVE     	9 2
+	19	[229]	CALL     	5 5 1
+	20	[230]	SELF     	5 0 -9	; "_RemoveItemProperty"
+	21	[230]	MOVE     	7 1
+	22	[230]	CALL     	5 3 1
+	23	[232]	TEST     	4 0
+	24	[232]	JMP      	0 5	; to 30
+	25	[232]	GETTABLE 	5 0 -10	; "UpdateOpeningItem"
+	26	[232]	TEST     	5 0
+	27	[232]	JMP      	0 2	; to 30
+	28	[233]	SELF     	5 0 -10	; "UpdateOpeningItem"
+	29	[233]	CALL     	5 2 1
+	30	[235]	RETURN   	0 1
+constants (10) for 0000028D33554500:
+	1	"GetComponent"
+	2	"ItemSpread"
+	3	nil
+	4	"GetState"
+	5	"ItemSpreadState"
+	6	"Opening"
+	7	"_SetItem"
+	8	"GetPosition"
+	9	"_RemoveItemProperty"
+	10	"UpdateOpeningItem"
+locals (5) for 0000028D33554500:
+	0	self	1	31
+	1	item	1	31
+	2	autoUpdateOrderState	1	31
+	3	spreadCmp	4	31
+	4	isOpeningBox	14	31
+upvalues (1) for 0000028D33554500:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:250,261> (27 instructions at 0000028D33553C80)
+5 params, 12 slots, 1 upvalue, 7 locals, 16 constants, 0 functions
+	1	[251]	SELF     	5 0 -1	; "GenerateItem"
+	2	[251]	MOVE     	7 2
+	3	[251]	MOVE     	8 3
+	4	[251]	GETTABLE 	9 4 -2	; "autoUpdateOrderState"
+	5	[251]	LOADNIL  	10 0
+	6	[251]	GETTABLE 	11 4 -3	; "generateItemState"
+	7	[251]	CALL     	5 7 2
+	8	[252]	NEWTABLE 	6 0 5
+	9	[253]	SETTABLE 	6 -4 1	; "Source" -
+	10	[254]	SETTABLE 	6 -5 5	; "New" -
+	11	[255]	GETTABLE 	7 4 -7	; "energyBoostRatio"
+	12	[255]	TEST     	7 1
+	13	[255]	JMP      	0 1	; to 15
+	14	[255]	LOADK    	7 -8	; 0
+	15	[255]	SETTABLE 	6 -6 7	; "EnergyBoostRatio" -
+	16	[256]	GETTABLE 	7 4 -10	; "costEnergy"
+	17	[256]	SETTABLE 	6 -9 7	; "CostEnergy" -
+	18	[257]	GETTABLE 	7 4 -12	; "spreadType"
+	19	[257]	SETTABLE 	6 -11 7	; "BoardSpreadType" -
+	20	[259]	GETTABLE 	7 0 -13	; "event"
+	21	[259]	SELF     	7 7 -14	; "Call"
+	22	[259]	GETTABUP 	9 0 -15	; _ENV "BoardEventType"
+	23	[259]	GETTABLE 	9 9 -16	; "SpreadItem"
+	24	[259]	MOVE     	10 6
+	25	[259]	CALL     	7 4 1
+	26	[260]	RETURN   	6 2
+	27	[261]	RETURN   	0 1
+constants (16) for 0000028D33553C80:
+	1	"GenerateItem"
+	2	"autoUpdateOrderState"
+	3	"generateItemState"
+	4	"Source"
+	5	"New"
+	6	"EnergyBoostRatio"
+	7	"energyBoostRatio"
+	8	0
+	9	"CostEnergy"
+	10	"costEnergy"
+	11	"BoardSpreadType"
+	12	"spreadType"
+	13	"event"
+	14	"Call"
+	15	"BoardEventType"
+	16	"SpreadItem"
+locals (7) for 0000028D33553C80:
+	0	self	1	28
+	1	sourceItem	1	28
+	2	newItemPosition	1	28
+	3	newItemCode	1	28
+	4	args	1	28
+	5	newItem	8	28
+	6	message	20	28
+upvalues (1) for 0000028D33553C80:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:264,272> (19 instructions at 0000028D33554880)
+2 params, 11 slots, 1 upvalue, 8 locals, 8 constants, 0 functions
+	1	[265]	LOADK    	2 -1	; 1
+	2	[265]	LOADK    	3 -2	; 4
+	3	[265]	LOADK    	4 -1	; 1
+	4	[265]	FORPREP  	2 13	; to 18
+	5	[266]	GETTABUP 	6 0 -3	; _ENV "BoardPosition"
+	6	[266]	GETTABLE 	6 6 -4	; "GetDir4Position"
+	7	[266]	MOVE     	7 1
+	8	[266]	MOVE     	8 5
+	9	[266]	CALL     	6 3 2
+	10	[267]	SELF     	7 0 -5	; "GetItem"
+	11	[267]	MOVE     	9 6
+	12	[267]	CALL     	7 3 2
+	13	[268]	EQ       	1 7 -6	; - nil
+	14	[268]	JMP      	0 3	; to 18
+	15	[269]	SELF     	8 7 -7	; "DispatchComponentEvent"
+	16	[269]	LOADK    	10 -8	; "OnShock"
+	17	[269]	CALL     	8 3 1
+	18	[265]	FORLOOP  	2 -14	; to 5
+	19	[272]	RETURN   	0 1
+constants (8) for 0000028D33554880:
+	1	1
+	2	4
+	3	"BoardPosition"
+	4	"GetDir4Position"
+	5	"GetItem"
+	6	nil
+	7	"DispatchComponentEvent"
+	8	"OnShock"
+locals (8) for 0000028D33554880:
+	0	self	1	20
+	1	centerPosition	1	20
+	2	(for index)	4	19
+	3	(for limit)	4	19
+	4	(for step)	4	19
+	5	dir	5	18
+	6	testPosition	10	18
+	7	testItem	13	18
+upvalues (1) for 0000028D33554880:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:277,307> (71 instructions at 0000028D33554600)
+3 params, 13 slots, 1 upvalue, 7 locals, 31 constants, 0 functions
+	1	[278]	SELF     	3 0 -1	; "GetItem"
+	2	[278]	MOVE     	5 1
+	3	[278]	CALL     	3 3 2
+	4	[279]	EQ       	0 3 -2	; - nil
+	5	[279]	JMP      	0 1	; to 7
+	6	[280]	RETURN   	0 1
+	7	[282]	SELF     	4 3 -3	; "GetComponent"
+	8	[282]	GETTABUP 	6 0 -4	; _ENV "ItemPaperBox"
+	9	[282]	CALL     	4 3 2
+	10	[283]	EQ       	0 4 -2	; - nil
+	11	[283]	JMP      	0 1	; to 13
+	12	[284]	RETURN   	0 1
+	13	[287]	SELF     	5 0 -5	; "ReplaceItem"
+	14	[287]	MOVE     	7 3
+	15	[287]	SELF     	8 4 -6	; "GetInnerItemCode"
+	16	[287]	CALL     	8 2 2
+	17	[287]	LOADBOOL 	9 0 0
+	18	[287]	CALL     	5 5 2
+	19	[289]	SELF     	6 0 -7	; "CanItemMove"
+	20	[289]	MOVE     	8 5
+	21	[289]	CALL     	6 3 2
+	22	[289]	TEST     	6 0
+	23	[289]	JMP      	0 5	; to 29
+	24	[289]	TEST     	2 1
+	25	[289]	JMP      	0 3	; to 29
+	26	[290]	SELF     	6 0 -8	; "ShockNeighborItems"
+	27	[290]	MOVE     	8 1
+	28	[290]	CALL     	6 3 1
+	29	[293]	NEWTABLE 	6 0 3
+	30	[294]	SETTABLE 	6 -9 3	; "Source" -
+	31	[295]	SETTABLE 	6 -10 5	; "New" -
+	32	[296]	SETTABLE 	6 -11 2	; "UnlockShocked" -
+	33	[299]	SELF     	7 0 -12	; "_PostProcessCollapseItem"
+	34	[299]	MOVE     	9 1
+	35	[299]	MOVE     	10 6
+	36	[299]	CALL     	7 4 1
+	37	[300]	GETTABLE 	7 0 -13	; "event"
+	38	[300]	SELF     	7 7 -14	; "Call"
+	39	[300]	GETTABUP 	9 0 -15	; _ENV "BoardEventType"
+	40	[300]	GETTABLE 	9 9 -16	; "CollapseItem"
+	41	[300]	MOVE     	10 6
+	42	[300]	CALL     	7 4 1
+	43	[301]	GETTABUP 	7 0 -17	; _ENV "GM"
+	44	[301]	GETTABLE 	7 7 -18	; "BIManager"
+	45	[301]	SELF     	7 7 -19	; "LogAction"
+	46	[301]	GETTABUP 	9 0 -20	; _ENV "EBIType"
+	47	[301]	GETTABLE 	9 9 -16	; "CollapseItem"
+	48	[301]	NEWTABLE 	10 0 3
+	49	[302]	SELF     	11 3 -22	; "GetCode"
+	50	[302]	CALL     	11 2 2
+	51	[302]	SETTABLE 	10 -21 11	; "c" -
+	52	[303]	SETTABLE 	10 -23 2	; "us" -
+	53	[304]	GETTABLE 	11 6 -25	; "CollapseReward"
+	54	[304]	TEST     	11 0
+	55	[304]	JMP      	0 6	; to 62
+	56	[304]	GETTABUP 	11 0 -26	; _ENV "ConfigUtil"
+	57	[304]	GETTABLE 	11 11 -27	; "GetCurrencyStr"
+	58	[304]	GETTABLE 	12 6 -25	; "CollapseReward"
+	59	[304]	CALL     	11 2 2
+	60	[304]	TEST     	11 1
+	61	[304]	JMP      	0 1	; to 63
+	62	[304]	LOADNIL  	11 0
+	63	[304]	SETTABLE 	10 -24 11	; "rwd" -
+	64	[301]	CALL     	7 4 1
+	65	[306]	GETTABUP 	7 0 -28	; _ENV "EventDispatcher"
+	66	[306]	GETTABLE 	7 7 -29	; "DispatchEvent"
+	67	[306]	GETTABUP 	8 0 -30	; _ENV "EEventType"
+	68	[306]	GETTABLE 	8 8 -31	; "PaperboxDisappear"
+	69	[306]	MOVE     	9 6
+	70	[306]	CALL     	7 3 1
+	71	[307]	RETURN   	0 1
+constants (31) for 0000028D33554600:
+	1	"GetItem"
+	2	nil
+	3	"GetComponent"
+	4	"ItemPaperBox"
+	5	"ReplaceItem"
+	6	"GetInnerItemCode"
+	7	"CanItemMove"
+	8	"ShockNeighborItems"
+	9	"Source"
+	10	"New"
+	11	"UnlockShocked"
+	12	"_PostProcessCollapseItem"
+	13	"event"
+	14	"Call"
+	15	"BoardEventType"
+	16	"CollapseItem"
+	17	"GM"
+	18	"BIManager"
+	19	"LogAction"
+	20	"EBIType"
+	21	"c"
+	22	"GetCode"
+	23	"us"
+	24	"rwd"
+	25	"CollapseReward"
+	26	"ConfigUtil"
+	27	"GetCurrencyStr"
+	28	"EventDispatcher"
+	29	"DispatchEvent"
+	30	"EEventType"
+	31	"PaperboxDisappear"
+locals (7) for 0000028D33554600:
+	0	self	1	72
+	1	boardPos	1	72
+	2	unlockShocked	1	72
+	3	sourceItem	4	72
+	4	itemPaperBox	10	72
+	5	newItem	19	72
+	6	message	33	72
+upvalues (1) for 0000028D33554600:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:311,313> (1 instruction at 0000028D33554680)
+3 params, 3 slots, 0 upvalues, 3 locals, 0 constants, 0 functions
+	1	[313]	RETURN   	0 1
+constants (0) for 0000028D33554680:
+locals (3) for 0000028D33554680:
+	0	self	1	2
+	1	boardPos	1	2
+	2	msg	1	2
+upvalues (0) for 0000028D33554680:
+
+function <BaseBoardModel.lua:317,319> (6 instructions at 0000028D33554000)
+3 params, 6 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[318]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[318]	GETTABLE 	3 3 -2	; "Assert"
+	3	[318]	LOADBOOL 	4 0 0
+	4	[318]	LOADK    	5 -3	; "SkipItems()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[318]	CALL     	3 3 1
+	6	[319]	RETURN   	0 1
+constants (3) for 0000028D33554000:
+	1	"Log"
+	2	"Assert"
+	3	"SkipItems()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (3) for 0000028D33554000:
+	0	self	1	7
+	1	sourceItem	1	7
+	2	duration	1	7
+upvalues (1) for 0000028D33554000:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:323,325> (6 instructions at 0000028D33554800)
+3 params, 6 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[324]	GETTABUP 	3 0 -1	; _ENV "Log"
+	2	[324]	GETTABLE 	3 3 -2	; "Assert"
+	3	[324]	LOADBOOL 	4 0 0
+	4	[324]	LOADK    	5 -3	; "DragItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+	5	[324]	CALL     	3 3 1
+	6	[325]	RETURN   	0 1
+constants (3) for 0000028D33554800:
+	1	"Log"
+	2	"Assert"
+	3	"DragItem()\230\152\175\230\138\189\232\177\161\230\142\165\229\143\163"
+locals (3) for 0000028D33554800:
+	0	self	1	7
+	1	item	1	7
+	2	targetPosition	1	7
+upvalues (1) for 0000028D33554800:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:327,329> (6 instructions at 0000028D33553E00)
+4 params, 9 slots, 0 upvalues, 4 locals, 1 constant, 0 functions
+	1	[328]	SELF     	4 0 -1	; "_DoMergeItem"
+	2	[328]	MOVE     	6 1
+	3	[328]	MOVE     	7 2
+	4	[328]	MOVE     	8 3
+	5	[328]	CALL     	4 5 1
+	6	[329]	RETURN   	0 1
+constants (1) for 0000028D33553E00:
+	1	"_DoMergeItem"
+locals (4) for 0000028D33553E00:
+	0	self	1	7
+	1	item	1	7
+	2	targetItem	1	7
+	3	targetPosition	1	7
+upvalues (0) for 0000028D33553E00:
+
+function <BaseBoardModel.lua:331,366> (65 instructions at 0000028D33554900)
+5 params, 14 slots, 1 upvalue, 10 locals, 25 constants, 0 functions
+	1	[333]	SELF     	5 0 -1	; "RemoveItem"
+	2	[333]	MOVE     	7 1
+	3	[333]	LOADBOOL 	8 0 0
+	4	[333]	CALL     	5 4 1
+	5	[335]	LOADNIL  	5 1
+	6	[338]	SELF     	7 1 -2	; "GetComponent"
+	7	[338]	GETTABUP 	9 0 -3	; _ENV "ItemTemp"
+	8	[338]	CALL     	7 3 2
+	9	[338]	EQ       	0 7 -4	; - nil
+	10	[338]	JMP      	0 7	; to 18
+	11	[339]	SELF     	7 1 -5	; "GetMergedType"
+	12	[339]	CALL     	7 2 2
+	13	[339]	MOVE     	5 7
+	14	[340]	SELF     	7 1 -6	; "GetType"
+	15	[340]	CALL     	7 2 2
+	16	[340]	MOVE     	6 7
+	17	[340]	JMP      	0 6	; to 24
+	18	[342]	SELF     	7 2 -5	; "GetMergedType"
+	19	[342]	CALL     	7 2 2
+	20	[342]	MOVE     	5 7
+	21	[343]	SELF     	7 1 -6	; "GetType"
+	22	[343]	CALL     	7 2 2
+	23	[343]	MOVE     	6 7
+	24	[346]	GETTABUP 	7 0 -7	; _ENV "GM"
+	25	[346]	GETTABLE 	7 7 -8	; "ItemDataModel"
+	26	[346]	SELF     	7 7 -9	; "IsUnlocked"
+	27	[346]	MOVE     	9 5
+	28	[346]	CALL     	7 3 2
+	29	[348]	SELF     	8 0 -10	; "ReplaceItem"
+	30	[348]	MOVE     	10 2
+	31	[348]	MOVE     	11 5
+	32	[348]	MOVE     	12 4
+	33	[348]	CALL     	8 5 2
+	34	[349]	NEWTABLE 	9 0 5
+	35	[350]	SETTABLE 	9 -11 1	; "Source" -
+	36	[351]	SETTABLE 	9 -12 2	; "Target" -
+	37	[352]	SETTABLE 	9 -13 8	; "New" -
+	38	[354]	SETTABLE 	9 -14 6	; "itemType" -
+	39	[356]	EQ       	1 7 -4	; - nil
+	40	[356]	JMP      	0 1	; to 42
+	41	[356]	LOADBOOL 	10 0 1
+	42	[356]	LOADBOOL 	10 1 0
+	43	[356]	SETTABLE 	9 -15 10	; "isFirstUnlock" -
+	44	[358]	GETTABLE 	10 0 -16	; "event"
+	45	[358]	SELF     	10 10 -17	; "Call"
+	46	[358]	GETTABUP 	12 0 -18	; _ENV "BoardEventType"
+	47	[358]	GETTABLE 	12 12 -19	; "MergeItem"
+	48	[358]	MOVE     	13 9
+	49	[358]	CALL     	10 4 1
+	50	[360]	GETTABUP 	10 0 -20	; _ENV "EventDispatcher"
+	51	[360]	GETTABLE 	10 10 -21	; "DispatchEvent"
+	52	[360]	GETTABUP 	11 0 -22	; _ENV "EEventType"
+	53	[360]	GETTABLE 	11 11 -23	; "ItemMerged"
+	54	[360]	MOVE     	12 9
+	55	[360]	CALL     	10 3 1
+	56	[362]	SELF     	10 0 -24	; "ShockNeighborItems"
+	57	[362]	MOVE     	12 3
+	58	[362]	CALL     	10 3 1
+	59	[363]	GETTABUP 	10 0 -20	; _ENV "EventDispatcher"
+	60	[363]	GETTABLE 	10 10 -21	; "DispatchEvent"
+	61	[363]	GETTABUP 	11 0 -22	; _ENV "EEventType"
+	62	[363]	GETTABLE 	11 11 -25	; "ItemShocked"
+	63	[363]	CALL     	10 2 1
+	64	[365]	RETURN   	9 2
+	65	[366]	RETURN   	0 1
+constants (25) for 0000028D33554900:
+	1	"RemoveItem"
+	2	"GetComponent"
+	3	"ItemTemp"
+	4	nil
+	5	"GetMergedType"
+	6	"GetType"
+	7	"GM"
+	8	"ItemDataModel"
+	9	"IsUnlocked"
+	10	"ReplaceItem"
+	11	"Source"
+	12	"Target"
+	13	"New"
+	14	"itemType"
+	15	"isFirstUnlock"
+	16	"event"
+	17	"Call"
+	18	"BoardEventType"
+	19	"MergeItem"
+	20	"EventDispatcher"
+	21	"DispatchEvent"
+	22	"EEventType"
+	23	"ItemMerged"
+	24	"ShockNeighborItems"
+	25	"ItemShocked"
+locals (10) for 0000028D33554900:
+	0	self	1	66
+	1	item	1	66
+	2	targetItem	1	66
+	3	targetPosition	1	66
+	4	autoUpdateOrderState	1	66
+	5	mergedType	6	66
+	6	itemType	6	66
+	7	isUnlock	29	66
+	8	newItem	34	66
+	9	message	44	66
+upvalues (1) for 0000028D33554900:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:368,422> (166 instructions at 0000028D33553E80)
+1 param, 12 slots, 1 upvalue, 12 locals, 35 constants, 0 functions
+	1	[369]	NEWTABLE 	1 0 0
+	2	[369]	SETTABLE 	0 -1 1	; "m_mergeAllIgnoredItems" -
+	3	[372]	GETTABUP 	1 0 -2	; _ENV "PlayerPrefs"
+	4	[372]	GETTABLE 	1 1 -3	; "GetInt"
+	5	[372]	GETTABUP 	2 0 -4	; _ENV "EPlayerPrefKey"
+	6	[372]	GETTABLE 	2 2 -5	; "TestMergeAllIgnoreCobweb"
+	7	[372]	LOADK    	3 -6	; 0
+	8	[372]	CALL     	1 3 2
+	9	[372]	EQ       	1 1 -7	; - 1
+	10	[372]	JMP      	0 1	; to 12
+	11	[372]	LOADBOOL 	1 0 1
+	12	[372]	LOADBOOL 	1 1 0
+	13	[374]	GETTABUP 	2 0 -2	; _ENV "PlayerPrefs"
+	14	[374]	GETTABLE 	2 2 -3	; "GetInt"
+	15	[374]	GETTABUP 	3 0 -4	; _ENV "EPlayerPrefKey"
+	16	[374]	GETTABLE 	3 3 -8	; "TestMergeAllIgnoreCanSpread"
+	17	[374]	LOADK    	4 -6	; 0
+	18	[374]	CALL     	2 3 2
+	19	[374]	EQ       	1 2 -7	; - 1
+	20	[374]	JMP      	0 1	; to 22
+	21	[374]	LOADBOOL 	2 0 1
+	22	[374]	LOADBOOL 	2 1 0
+	23	[375]	GETTABUP 	3 0 -9	; _ENV "GameConfig"
+	24	[375]	GETTABLE 	3 3 -10	; "IsTestMode"
+	25	[375]	CALL     	3 1 2
+	26	[375]	TEST     	3 0
+	27	[375]	JMP      	0 70	; to 98
+	28	[375]	TEST     	1 1
+	29	[375]	JMP      	0 2	; to 32
+	30	[375]	TEST     	2 0
+	31	[375]	JMP      	0 66	; to 98
+	32	[376]	LOADBOOL 	3 0 0
+	33	[377]	SELF     	4 0 -11	; "GetValidPositionIterator"
+	34	[377]	CALL     	4 2 4
+	35	[377]	JMP      	0 32	; to 68
+	36	[378]	SELF     	8 0 -12	; "GetItem"
+	37	[378]	MOVE     	10 7
+	38	[378]	CALL     	8 3 2
+	39	[379]	EQ       	1 8 -13	; - nil
+	40	[379]	JMP      	0 27	; to 68
+	41	[380]	TEST     	1 0
+	42	[380]	JMP      	0 8	; to 51
+	43	[380]	SELF     	9 8 -14	; "GetComponent"
+	44	[380]	GETTABUP 	11 0 -15	; _ENV "ItemCobweb"
+	45	[380]	CALL     	9 3 2
+	46	[380]	TEST     	9 0
+	47	[380]	JMP      	0 3	; to 51
+	48	[381]	GETTABLE 	9 0 -1	; "m_mergeAllIgnoredItems"
+	49	[381]	SETTABLE 	9 8 -16	; - true
+	50	[382]	LOADBOOL 	3 1 0
+	51	[384]	TEST     	2 0
+	52	[384]	JMP      	0 15	; to 68
+	53	[384]	SELF     	9 8 -14	; "GetComponent"
+	54	[384]	GETTABUP 	11 0 -17	; _ENV "ItemSpread"
+	55	[384]	CALL     	9 3 2
+	56	[384]	TEST     	9 0
+	57	[384]	JMP      	0 10	; to 68
+	58	[386]	SELF     	9 8 -14	; "GetComponent"
+	59	[386]	GETTABUP 	11 0 -17	; _ENV "ItemSpread"
+	60	[386]	CALL     	9 3 2
+	61	[387]	SELF     	10 9 -18	; "GetItemRestNumber"
+	62	[387]	CALL     	10 2 2
+	63	[387]	LT       	0 -6 10	; 0 -
+	64	[387]	JMP      	0 3	; to 68
+	65	[388]	GETTABLE 	10 0 -1	; "m_mergeAllIgnoredItems"
+	66	[388]	SETTABLE 	10 8 -16	; - true
+	67	[389]	LOADBOOL 	3 1 0
+	68	[377]	TFORCALL 	4 1
+	69	[377]	TFORLOOP 	6 -34	; to 36
+	70	[395]	TEST     	3 0
+	71	[395]	JMP      	0 26	; to 98
+	72	[396]	GETTABUP 	4 0 -19	; _ENV "GM"
+	73	[396]	GETTABLE 	4 4 -20	; "UIManager"
+	74	[396]	SELF     	4 4 -21	; "ShowPrompt"
+	75	[396]	LOADK    	6 -22	; "\227\128\144\230\181\139\232\175\149\231\142\175\229\162\131\227\128\145\229\183\178\229\191\189\231\149\165"
+	76	[396]	TEST     	1 0
+	77	[396]	JMP      	0 3	; to 81
+	78	[396]	LOADK    	7 -23	; "\232\155\155\231\189\145\230\163\139\229\173\144"
+	79	[396]	TEST     	7 1
+	80	[396]	JMP      	0 1	; to 82
+	81	[396]	LOADK    	7 -24	; ""
+	82	[396]	TEST     	1 0
+	83	[396]	JMP      	0 5	; to 89
+	84	[396]	TEST     	2 0
+	85	[396]	JMP      	0 3	; to 89
+	86	[396]	LOADK    	8 -25	; "\227\128\129"
+	87	[396]	TEST     	8 1
+	88	[396]	JMP      	0 1	; to 90
+	89	[396]	LOADK    	8 -24	; ""
+	90	[396]	TEST     	2 0
+	91	[396]	JMP      	0 3	; to 95
+	92	[396]	LOADK    	9 -26	; "\229\143\175\229\150\183\229\143\145\230\163\139\229\173\144"
+	93	[396]	TEST     	9 1
+	94	[396]	JMP      	0 1	; to 96
+	95	[396]	LOADK    	9 -24	; ""
+	96	[396]	CONCAT   	6 6 9
+	97	[396]	CALL     	4 3 1
+	98	[400]	LOADNIL  	3 0
+	99	[401]	GETTABLE 	4 0 -27	; "GetOrderCodeRequireCountMap"
+	100	[401]	TEST     	4 0
+	101	[401]	JMP      	0 14	; to 116
+	102	[402]	GETTABUP 	4 0 -2	; _ENV "PlayerPrefs"
+	103	[402]	GETTABLE 	4 4 -3	; "GetInt"
+	104	[402]	GETTABUP 	5 0 -4	; _ENV "EPlayerPrefKey"
+	105	[402]	GETTABLE 	5 5 -28	; "TestMergeAllKeepOrderNeed"
+	106	[402]	LOADK    	6 -6	; 0
+	107	[402]	CALL     	4 3 2
+	108	[402]	EQ       	0 4 -7	; - 1
+	109	[402]	JMP      	0 6	; to 116
+	110	[403]	GETTABUP 	4 0 -29	; _ENV "Table"
+	111	[403]	GETTABLE 	4 4 -30	; "ShallowCopy"
+	112	[403]	SELF     	5 0 -27	; "GetOrderCodeRequireCountMap"
+	113	[403]	CALL     	5 2 0
+	114	[403]	CALL     	4 0 2
+	115	[403]	MOVE     	3 4
+	116	[407]	SELF     	4 0 -31	; "FindMergePair"
+	117	[407]	GETTABLE 	6 0 -1	; "m_mergeAllIgnoredItems"
+	118	[407]	MOVE     	7 3
+	119	[407]	CALL     	4 4 2
+	120	[408]	EQ       	0 4 -13	; - nil
+	121	[408]	JMP      	0 11	; to 133
+	122	[408]	GETTABUP 	5 0 -9	; _ENV "GameConfig"
+	123	[408]	GETTABLE 	5 5 -10	; "IsTestMode"
+	124	[408]	CALL     	5 1 2
+	125	[408]	TEST     	5 0
+	126	[408]	JMP      	0 6	; to 133
+	127	[409]	GETTABUP 	5 0 -19	; _ENV "GM"
+	128	[409]	GETTABLE 	5 5 -20	; "UIManager"
+	129	[409]	SELF     	5 5 -21	; "ShowPrompt"
+	130	[409]	LOADK    	7 -32	; "\230\137\190\228\184\141\229\136\176\229\143\175\229\144\136\229\185\182\231\154\132\230\163\139\229\173\144"
+	131	[409]	CALL     	5 3 1
+	132	[410]	RETURN   	0 1
+	133	[412]	EQ       	1 4 -13	; - nil
+	134	[412]	JMP      	0 31	; to 166
+	135	[413]	SELF     	5 0 -33	; "_MergeItem"
+	136	[413]	GETTABLE 	7 4 -7	; 1
+	137	[413]	GETTABLE 	8 4 -34	; 2
+	138	[413]	GETTABLE 	9 4 -34	; 2
+	139	[413]	SELF     	9 9 -35	; "GetPosition"
+	140	[413]	CALL     	9 2 0
+	141	[413]	CALL     	5 0 1
+	142	[414]	LOADNIL  	3 0
+	143	[415]	GETTABLE 	5 0 -27	; "GetOrderCodeRequireCountMap"
+	144	[415]	TEST     	5 0
+	145	[415]	JMP      	0 14	; to 160
+	146	[416]	GETTABUP 	5 0 -2	; _ENV "PlayerPrefs"
+	147	[416]	GETTABLE 	5 5 -3	; "GetInt"
+	148	[416]	GETTABUP 	6 0 -4	; _ENV "EPlayerPrefKey"
+	149	[416]	GETTABLE 	6 6 -28	; "TestMergeAllKeepOrderNeed"
+	150	[416]	LOADK    	7 -6	; 0
+	151	[416]	CALL     	5 3 2
+	152	[416]	EQ       	0 5 -7	; - 1
+	153	[416]	JMP      	0 6	; to 160
+	154	[417]	GETTABUP 	5 0 -29	; _ENV "Table"
+	155	[417]	GETTABLE 	5 5 -30	; "ShallowCopy"
+	156	[417]	SELF     	6 0 -27	; "GetOrderCodeRequireCountMap"
+	157	[417]	CALL     	6 2 0
+	158	[417]	CALL     	5 0 2
+	159	[417]	MOVE     	3 5
+	160	[420]	SELF     	5 0 -31	; "FindMergePair"
+	161	[420]	GETTABLE 	7 0 -1	; "m_mergeAllIgnoredItems"
+	162	[420]	MOVE     	8 3
+	163	[420]	CALL     	5 4 2
+	164	[420]	MOVE     	4 5
+	165	[420]	JMP      	0 -33	; to 133
+	166	[422]	RETURN   	0 1
+constants (35) for 0000028D33553E80:
+	1	"m_mergeAllIgnoredItems"
+	2	"PlayerPrefs"
+	3	"GetInt"
+	4	"EPlayerPrefKey"
+	5	"TestMergeAllIgnoreCobweb"
+	6	0
+	7	1
+	8	"TestMergeAllIgnoreCanSpread"
+	9	"GameConfig"
+	10	"IsTestMode"
+	11	"GetValidPositionIterator"
+	12	"GetItem"
+	13	nil
+	14	"GetComponent"
+	15	"ItemCobweb"
+	16	true
+	17	"ItemSpread"
+	18	"GetItemRestNumber"
+	19	"GM"
+	20	"UIManager"
+	21	"ShowPrompt"
+	22	"\227\128\144\230\181\139\232\175\149\231\142\175\229\162\131\227\128\145\229\183\178\229\191\189\231\149\165"
+	23	"\232\155\155\231\189\145\230\163\139\229\173\144"
+	24	""
+	25	"\227\128\129"
+	26	"\229\143\175\229\150\183\229\143\145\230\163\139\229\173\144"
+	27	"GetOrderCodeRequireCountMap"
+	28	"TestMergeAllKeepOrderNeed"
+	29	"Table"
+	30	"ShallowCopy"
+	31	"FindMergePair"
+	32	"\230\137\190\228\184\141\229\136\176\229\143\175\229\144\136\229\185\182\231\154\132\230\163\139\229\173\144"
+	33	"_MergeItem"
+	34	2
+	35	"GetPosition"
+locals (12) for 0000028D33553E80:
+	0	self	1	167
+	1	ignoreCobweb	13	167
+	2	ignoreCanSpread	23	167
+	3	find	33	98
+	4	(for generator)	35	70
+	5	(for state)	35	70
+	6	(for control)	35	70
+	7	position	36	68
+	8	item	39	68
+	9	itemSpread	61	68
+	10	orderNeedItemCountMap	99	167
+	11	pair	120	167
+upvalues (1) for 0000028D33553E80:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:426,428> (19 instructions at 0000028D33554A00)
+3 params, 8 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[427]	GETTABUP 	3 0 -1	; _ENV "math"
+	2	[427]	GETTABLE 	3 3 -2	; "abs"
+	3	[427]	SELF     	4 1 -3	; "GetX"
+	4	[427]	CALL     	4 2 2
+	5	[427]	SELF     	5 2 -3	; "GetX"
+	6	[427]	CALL     	5 2 2
+	7	[427]	SUB      	4 4 5
+	8	[427]	CALL     	3 2 2
+	9	[427]	GETTABUP 	4 0 -1	; _ENV "math"
+	10	[427]	GETTABLE 	4 4 -2	; "abs"
+	11	[427]	SELF     	5 1 -4	; "GetY"
+	12	[427]	CALL     	5 2 2
+	13	[427]	SELF     	6 2 -4	; "GetY"
+	14	[427]	CALL     	6 2 2
+	15	[427]	SUB      	5 5 6
+	16	[427]	CALL     	4 2 2
+	17	[427]	ADD      	3 3 4
+	18	[427]	RETURN   	3 2
+	19	[428]	RETURN   	0 1
+constants (4) for 0000028D33554A00:
+	1	"math"
+	2	"abs"
+	3	"GetX"
+	4	"GetY"
+locals (3) for 0000028D33554A00:
+	0	self	1	20
+	1	positionA	1	20
+	2	positionB	1	20
+upvalues (1) for 0000028D33554A00:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:434,451> (30 instructions at 0000028D33554A80)
+2 params, 5 slots, 1 upvalue, 3 locals, 7 constants, 0 functions
+	1	[435]	SELF     	2 1 -1	; "GetComponent"
+	2	[435]	GETTABUP 	4 0 -2	; _ENV "ItemPaperBox"
+	3	[435]	CALL     	2 3 2
+	4	[435]	EQ       	0 2 -3	; - nil
+	5	[435]	JMP      	0 5	; to 11
+	6	[435]	SELF     	2 1 -1	; "GetComponent"
+	7	[435]	GETTABUP 	4 0 -4	; _ENV "ItemCobweb"
+	8	[435]	CALL     	2 3 2
+	9	[435]	EQ       	1 2 -3	; - nil
+	10	[435]	JMP      	0 2	; to 13
+	11	[436]	LOADBOOL 	2 0 0
+	12	[436]	RETURN   	2 2
+	13	[440]	SELF     	2 1 -1	; "GetComponent"
+	14	[440]	GETTABUP 	4 0 -5	; _ENV "ItemLocked"
+	15	[440]	CALL     	2 3 2
+	16	[440]	EQ       	1 2 -3	; - nil
+	17	[440]	JMP      	0 2	; to 20
+	18	[441]	LOADBOOL 	2 0 0
+	19	[441]	RETURN   	2 2
+	20	[444]	SELF     	2 1 -1	; "GetComponent"
+	21	[444]	GETTABUP 	4 0 -6	; _ENV "ItemSwallow"
+	22	[444]	CALL     	2 3 2
+	23	[445]	EQ       	0 2 -3	; - nil
+	24	[445]	JMP      	0 2	; to 27
+	25	[446]	LOADBOOL 	3 1 0
+	26	[446]	RETURN   	3 2
+	27	[450]	SELF     	3 2 -7	; "AllowTap"
+	28	[450]	TAILCALL 	3 2 0
+	29	[450]	RETURN   	3 0
+	30	[451]	RETURN   	0 1
+constants (7) for 0000028D33554A80:
+	1	"GetComponent"
+	2	"ItemPaperBox"
+	3	nil
+	4	"ItemCobweb"
+	5	"ItemLocked"
+	6	"ItemSwallow"
+	7	"AllowTap"
+locals (3) for 0000028D33554A80:
+	0	self	1	31
+	1	item	1	31
+	2	itemSwallow	23	31
+upvalues (1) for 0000028D33554A80:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:454,456> (5 instructions at 0000028D3355DD70)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[455]	SELF     	2 0 -1	; "CanItemMove"
+	2	[455]	MOVE     	4 1
+	3	[455]	TAILCALL 	2 3 0
+	4	[455]	RETURN   	2 0
+	5	[456]	RETURN   	0 1
+constants (1) for 0000028D3355DD70:
+	1	"CanItemMove"
+locals (2) for 0000028D3355DD70:
+	0	self	1	6
+	1	item	1	6
+upvalues (0) for 0000028D3355DD70:
+
+function <BaseBoardModel.lua:458,497> (88 instructions at 0000028D3355CC70)
+3 params, 13 slots, 1 upvalue, 10 locals, 11 constants, 0 functions
+	1	[459]	SELF     	3 1 -1	; "GetComponent"
+	2	[459]	GETTABUP 	5 0 -2	; _ENV "ItemSpread"
+	3	[459]	CALL     	3 3 2
+	4	[460]	EQ       	1 3 -3	; - nil
+	5	[460]	JMP      	0 6	; to 12
+	6	[460]	SELF     	4 3 -4	; "IsChestUsedOnce"
+	7	[460]	CALL     	4 2 2
+	8	[460]	TEST     	4 0
+	9	[460]	JMP      	0 2	; to 12
+	10	[461]	LOADBOOL 	4 0 0
+	11	[461]	RETURN   	4 2
+	12	[464]	SELF     	4 2 -1	; "GetComponent"
+	13	[464]	GETTABUP 	6 0 -2	; _ENV "ItemSpread"
+	14	[464]	CALL     	4 3 2
+	15	[465]	EQ       	1 4 -3	; - nil
+	16	[465]	JMP      	0 6	; to 23
+	17	[465]	SELF     	5 4 -4	; "IsChestUsedOnce"
+	18	[465]	CALL     	5 2 2
+	19	[465]	TEST     	5 0
+	20	[465]	JMP      	0 2	; to 23
+	21	[466]	LOADBOOL 	5 0 0
+	22	[466]	RETURN   	5 2
+	23	[470]	LOADNIL  	5 2
+	24	[474]	SELF     	8 1 -1	; "GetComponent"
+	25	[474]	GETTABUP 	10 0 -5	; _ENV "ItemCobweb"
+	26	[474]	CALL     	8 3 2
+	27	[474]	TEST     	8 1
+	28	[474]	JMP      	0 3	; to 32
+	29	[474]	SELF     	8 1 -1	; "GetComponent"
+	30	[474]	GETTABUP 	10 0 -6	; _ENV "ItemTemp"
+	31	[474]	CALL     	8 3 2
+	32	[475]	EQ       	1 8 -3	; - nil
+	33	[475]	JMP      	0 4	; to 38
+	34	[476]	SELF     	9 8 -7	; "GetInnerItemCode"
+	35	[476]	CALL     	9 2 2
+	36	[476]	MOVE     	5 9
+	37	[476]	JMP      	0 6	; to 44
+	38	[478]	SELF     	9 1 -8	; "GetType"
+	39	[478]	CALL     	9 2 2
+	40	[478]	MOVE     	5 9
+	41	[479]	SELF     	9 1 -9	; "GetMergedType"
+	42	[479]	CALL     	9 2 2
+	43	[479]	MOVE     	7 9
+	44	[482]	SELF     	9 2 -1	; "GetComponent"
+	45	[482]	GETTABUP 	11 0 -5	; _ENV "ItemCobweb"
+	46	[482]	CALL     	9 3 2
+	47	[482]	TEST     	9 1
+	48	[482]	JMP      	0 3	; to 52
+	49	[482]	SELF     	9 2 -1	; "GetComponent"
+	50	[482]	GETTABUP 	11 0 -6	; _ENV "ItemTemp"
+	51	[482]	CALL     	9 3 2
+	52	[483]	EQ       	1 9 -3	; - nil
+	53	[483]	JMP      	0 4	; to 58
+	54	[484]	SELF     	10 9 -7	; "GetInnerItemCode"
+	55	[484]	CALL     	10 2 2
+	56	[484]	MOVE     	6 10
+	57	[484]	JMP      	0 6	; to 64
+	58	[486]	SELF     	10 2 -8	; "GetType"
+	59	[486]	CALL     	10 2 2
+	60	[486]	MOVE     	6 10
+	61	[487]	SELF     	10 2 -9	; "GetMergedType"
+	62	[487]	CALL     	10 2 2
+	63	[487]	MOVE     	7 10
+	64	[491]	GETTABLE 	10 0 -10	; "IsGeneratorFactoryOpen"
+	65	[491]	TEST     	10 0
+	66	[491]	JMP      	0 14	; to 81
+	67	[491]	SELF     	10 0 -10	; "IsGeneratorFactoryOpen"
+	68	[491]	CALL     	10 2 2
+	69	[492]	TEST     	10 0
+	70	[492]	JMP      	0 10	; to 81
+	71	[492]	GETTABLE 	10 0 -11	; "IsGeneratorFactoryItem"
+	72	[492]	TEST     	10 0
+	73	[492]	JMP      	0 7	; to 81
+	74	[492]	SELF     	10 0 -11	; "IsGeneratorFactoryItem"
+	75	[492]	MOVE     	12 5
+	76	[492]	CALL     	10 3 2
+	77	[492]	TEST     	10 0
+	78	[492]	JMP      	0 2	; to 81
+	79	[493]	LOADBOOL 	10 0 0
+	80	[493]	RETURN   	10 2
+	81	[496]	EQ       	0 5 6
+	82	[496]	JMP      	0 2	; to 85
+	83	[496]	EQ       	0 7 -3	; - nil
+	84	[496]	JMP      	0 1	; to 86
+	85	[496]	LOADBOOL 	10 0 1
+	86	[496]	LOADBOOL 	10 1 0
+	87	[496]	RETURN   	10 2
+	88	[497]	RETURN   	0 1
+constants (11) for 0000028D3355CC70:
+	1	"GetComponent"
+	2	"ItemSpread"
+	3	nil
+	4	"IsChestUsedOnce"
+	5	"ItemCobweb"
+	6	"ItemTemp"
+	7	"GetInnerItemCode"
+	8	"GetType"
+	9	"GetMergedType"
+	10	"IsGeneratorFactoryOpen"
+	11	"IsGeneratorFactoryItem"
+locals (10) for 0000028D3355CC70:
+	0	self	1	89
+	1	item1	1	89
+	2	item2	1	89
+	3	itemSpread1	4	89
+	4	itemSpread2	15	89
+	5	itemType1	24	89
+	6	itemType2	24	89
+	7	mergedType	24	89
+	8	itemSpecial1	32	89
+	9	itemSpecial2	52	89
+upvalues (1) for 0000028D3355CC70:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:503,505> (11 instructions at 0000028D3355CAF0)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[504]	SELF     	2 0 -1	; "GetCurrentPaperBoxLevel"
+	2	[504]	CALL     	2 2 2
+	3	[504]	SELF     	3 0 -2	; "GetItemPaperBoxUnLockLevel"
+	4	[504]	MOVE     	5 1
+	5	[504]	CALL     	3 3 2
+	6	[504]	LT       	1 2 3
+	7	[504]	JMP      	0 1	; to 9
+	8	[504]	LOADBOOL 	2 0 1
+	9	[504]	LOADBOOL 	2 1 0
+	10	[504]	RETURN   	2 2
+	11	[505]	RETURN   	0 1
+constants (2) for 0000028D3355CAF0:
+	1	"GetCurrentPaperBoxLevel"
+	2	"GetItemPaperBoxUnLockLevel"
+locals (2) for 0000028D3355CAF0:
+	0	self	1	12
+	1	item	1	12
+upvalues (0) for 0000028D3355CAF0:
+
+function <BaseBoardModel.lua:509,511> (3 instructions at 0000028D3355C870)
+2 params, 3 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[510]	LOADK    	2 -1	; 0
+	2	[510]	RETURN   	2 2
+	3	[511]	RETURN   	0 1
+constants (1) for 0000028D3355C870:
+	1	0
+locals (2) for 0000028D3355C870:
+	0	self	1	4
+	1	item	1	4
+upvalues (0) for 0000028D3355C870:
+
+function <BaseBoardModel.lua:514,516> (3 instructions at 0000028D3355C970)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[515]	LOADK    	1 -1	; 0
+	2	[515]	RETURN   	1 2
+	3	[516]	RETURN   	0 1
+constants (1) for 0000028D3355C970:
+	1	0
+locals (1) for 0000028D3355C970:
+	0	self	1	4
+upvalues (0) for 0000028D3355C970:
+
+function <BaseBoardModel.lua:518,528> (18 instructions at 0000028D3355CFF0)
+1 param, 9 slots, 1 upvalue, 7 locals, 6 constants, 0 functions
+	1	[519]	SELF     	1 0 -1	; "GetValidPositionIterator"
+	2	[519]	CALL     	1 2 4
+	3	[519]	JMP      	0 12	; to 16
+	4	[520]	SELF     	5 0 -2	; "GetItem"
+	5	[520]	MOVE     	7 4
+	6	[520]	CALL     	5 3 2
+	7	[521]	EQ       	1 5 -3	; - nil
+	8	[521]	JMP      	0 7	; to 16
+	9	[522]	SELF     	6 5 -4	; "GetComponent"
+	10	[522]	GETTABUP 	8 0 -5	; _ENV "ItemPaperBox"
+	11	[522]	CALL     	6 3 2
+	12	[523]	EQ       	1 6 -3	; - nil
+	13	[523]	JMP      	0 2	; to 16
+	14	[524]	SELF     	7 6 -6	; "Try2Unlock"
+	15	[524]	CALL     	7 2 1
+	16	[519]	TFORCALL 	1 1
+	17	[519]	TFORLOOP 	3 -14	; to 4
+	18	[528]	RETURN   	0 1
+constants (6) for 0000028D3355CFF0:
+	1	"GetValidPositionIterator"
+	2	"GetItem"
+	3	nil
+	4	"GetComponent"
+	5	"ItemPaperBox"
+	6	"Try2Unlock"
+locals (7) for 0000028D3355CFF0:
+	0	self	1	19
+	1	(for generator)	3	18
+	2	(for state)	3	18
+	3	(for control)	3	18
+	4	position	4	16
+	5	item	7	16
+	6	itemPaperBox	12	16
+upvalues (1) for 0000028D3355CFF0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:535,537> (7 instructions at 0000028D3355C3F0)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[536]	GETTABLE 	2 0 -1	; "m_itemLayerModel"
+	2	[536]	SELF     	2 2 -2	; "FindEmptyPositionInCircleOrder"
+	3	[536]	MOVE     	4 1
+	4	[536]	MOVE     	5 0
+	5	[536]	TAILCALL 	2 4 0
+	6	[536]	RETURN   	2 0
+	7	[537]	RETURN   	0 1
+constants (2) for 0000028D3355C3F0:
+	1	"m_itemLayerModel"
+	2	"FindEmptyPositionInCircleOrder"
+locals (2) for 0000028D3355C3F0:
+	0	self	1	8
+	1	centerPosition	1	8
+upvalues (0) for 0000028D3355C3F0:
+
+function <BaseBoardModel.lua:540,542> (5 instructions at 0000028D3355D070)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[541]	GETTABLE 	1 0 -1	; "m_itemLayerModel"
+	2	[541]	SELF     	1 1 -2	; "FindRandomPosition"
+	3	[541]	TAILCALL 	1 2 0
+	4	[541]	RETURN   	1 0
+	5	[542]	RETURN   	0 1
+constants (2) for 0000028D3355D070:
+	1	"m_itemLayerModel"
+	2	"FindRandomPosition"
+locals (1) for 0000028D3355D070:
+	0	self	1	6
+upvalues (0) for 0000028D3355D070:
+
+function <BaseBoardModel.lua:545,547> (6 instructions at 0000028D3355D270)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[546]	GETTABLE 	2 0 -1	; "m_itemLayerModel"
+	2	[546]	SELF     	2 2 -2	; "GetItem"
+	3	[546]	MOVE     	4 1
+	4	[546]	TAILCALL 	2 3 0
+	5	[546]	RETURN   	2 0
+	6	[547]	RETURN   	0 1
+constants (2) for 0000028D3355D270:
+	1	"m_itemLayerModel"
+	2	"GetItem"
+locals (2) for 0000028D3355D270:
+	0	self	1	7
+	1	position	1	7
+upvalues (0) for 0000028D3355D270:
+
+function <BaseBoardModel.lua:552,554> (6 instructions at 0000028D3355D170)
+4 params, 8 slots, 0 upvalues, 4 locals, 2 constants, 0 functions
+	1	[553]	GETTABLE 	4 0 -1	; "m_itemLayerModel"
+	2	[553]	SELF     	4 4 -2	; "SetItem"
+	3	[553]	MOVE     	6 1
+	4	[553]	MOVE     	7 2
+	5	[553]	CALL     	4 4 1
+	6	[554]	RETURN   	0 1
+constants (2) for 0000028D3355D170:
+	1	"m_itemLayerModel"
+	2	"SetItem"
+locals (4) for 0000028D3355D170:
+	0	self	1	7
+	1	position	1	7
+	2	item	1	7
+	3	autoUpdateOrderState	1	7
+upvalues (0) for 0000028D3355D170:
+
+function <BaseBoardModel.lua:556,558> (6 instructions at 0000028D3355D1F0)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[557]	GETTABLE 	1 0 -1	; "m_itemLayerModel"
+	2	[557]	SELF     	1 1 -2	; "HasEmptyPosition"
+	3	[557]	CALL     	1 2 2
+	4	[557]	NOT      	1 1
+	5	[557]	RETURN   	1 2
+	6	[558]	RETURN   	0 1
+constants (2) for 0000028D3355D1F0:
+	1	"m_itemLayerModel"
+	2	"HasEmptyPosition"
+locals (1) for 0000028D3355D1F0:
+	0	self	1	7
+upvalues (0) for 0000028D3355D1F0:
+
+function <BaseBoardModel.lua:560,562> (5 instructions at 0000028D3355DC70)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[561]	GETTABLE 	1 0 -1	; "m_itemLayerModel"
+	2	[561]	SELF     	1 1 -2	; "FindEmptyPositionInValidOrder"
+	3	[561]	TAILCALL 	1 2 0
+	4	[561]	RETURN   	1 0
+	5	[562]	RETURN   	0 1
+constants (2) for 0000028D3355DC70:
+	1	"m_itemLayerModel"
+	2	"FindEmptyPositionInValidOrder"
+locals (1) for 0000028D3355DC70:
+	0	self	1	6
+upvalues (0) for 0000028D3355DC70:
+
+function <BaseBoardModel.lua:566,568> (7 instructions at 0000028D3355D870)
+3 params, 7 slots, 0 upvalues, 3 locals, 2 constants, 0 functions
+	1	[567]	GETTABLE 	3 0 -1	; "m_itemLayerModel"
+	2	[567]	SELF     	3 3 -2	; "FindEmptyPositionInSpreadOrder"
+	3	[567]	MOVE     	5 1
+	4	[567]	MOVE     	6 2
+	5	[567]	TAILCALL 	3 4 0
+	6	[567]	RETURN   	3 0
+	7	[568]	RETURN   	0 1
+constants (2) for 0000028D3355D870:
+	1	"m_itemLayerModel"
+	2	"FindEmptyPositionInSpreadOrder"
+locals (3) for 0000028D3355D870:
+	0	self	1	8
+	1	centerPosition	1	8
+	2	openedPosition	1	8
+upvalues (0) for 0000028D3355D870:
+
+function <BaseBoardModel.lua:574,651> (138 instructions at 0000028D3355DE70)
+3 params, 22 slots, 1 upvalue, 29 locals, 29 constants, 4 functions
+	1	[576]	TEST     	1 0
+	2	[576]	JMP      	0 6	; to 9
+	3	[576]	GETTABUP 	3 0 -1	; _ENV "ItemModelFactory"
+	4	[576]	GETTABLE 	3 3 -2	; "GetCodePrefixTargetType"
+	5	[576]	MOVE     	4 1
+	6	[576]	CALL     	3 2 2
+	7	[576]	EQ       	1 3 -3	; - nil
+	8	[576]	JMP      	0 1	; to 10
+	9	[577]	RETURN   	0 1
+	10	[580]	EQ       	1 2 -3	; - nil
+	11	[580]	JMP      	0 1	; to 13
+	12	[580]	LOADBOOL 	3 0 1
+	13	[580]	LOADBOOL 	3 1 0
+	14	[583]	NEWTABLE 	4 8 0
+	15	[583]	LOADK    	5 -4	; 7
+	16	[583]	LOADK    	6 -5	; 3
+	17	[583]	LOADK    	7 -6	; 1
+	18	[583]	LOADK    	8 -7	; 5
+	19	[583]	LOADK    	9 -8	; 8
+	20	[583]	LOADK    	10 -9	; 2
+	21	[583]	LOADK    	11 -10	; 6
+	22	[583]	LOADK    	12 -11	; 4
+	23	[583]	SETLIST  	4 8 1	; 1
+	24	[584]	LOADNIL  	5 0
+	25	[588]	SELF     	6 0 -12	; "FilterItems"
+	26	[594]	CLOSURE  	8 0	; 0000028D3355C270
+	27	[588]	CALL     	6 3 2
+	28	[595]	LEN      	7 6
+	29	[595]	LT       	0 -13 7	; 0 -
+	30	[595]	JMP      	0 44	; to 75
+	31	[596]	TEST     	2 1
+	32	[596]	JMP      	0 6	; to 39
+	33	[596]	GETTABUP 	7 0 -14	; _ENV "BoardPosition"
+	34	[596]	GETTABLE 	7 7 -15	; "Create"
+	35	[596]	LOADK    	8 -6	; 1
+	36	[596]	LOADK    	9 -6	; 1
+	37	[596]	CALL     	7 3 2
+	38	[596]	MOVE     	2 7
+	39	[598]	GETTABUP 	7 0 -16	; _ENV "table"
+	40	[598]	GETTABLE 	7 7 -17	; "sort"
+	41	[598]	MOVE     	8 6
+	42	[606]	CLOSURE  	9 1	; 0000028D3355D0F0
+	43	[598]	CALL     	7 3 1
+	44	[609]	GETTABUP 	7 0 -18	; _ENV "ipairs"
+	45	[609]	MOVE     	8 4
+	46	[609]	CALL     	7 2 4
+	47	[609]	JMP      	0 25	; to 73
+	48	[610]	GETTABUP 	12 0 -18	; _ENV "ipairs"
+	49	[610]	MOVE     	13 6
+	50	[610]	CALL     	12 2 4
+	51	[610]	JMP      	0 19	; to 71
+	52	[611]	GETTABUP 	17 0 -14	; _ENV "BoardPosition"
+	53	[611]	GETTABLE 	17 17 -19	; "GetDir8Position"
+	54	[611]	SELF     	18 16 -20	; "GetPosition"
+	55	[611]	CALL     	18 2 2
+	56	[611]	MOVE     	19 11
+	57	[611]	CALL     	17 3 2
+	58	[611]	MOVE     	5 17
+	59	[612]	SELF     	17 0 -21	; "PositionIsValid"
+	60	[612]	MOVE     	19 5
+	61	[612]	CALL     	17 3 2
+	62	[612]	TEST     	17 0
+	63	[612]	JMP      	0 7	; to 71
+	64	[612]	GETTABLE 	17 0 -22	; "m_itemLayerModel"
+	65	[612]	SELF     	17 17 -23	; "GetItem"
+	66	[612]	MOVE     	19 5
+	67	[612]	CALL     	17 3 2
+	68	[612]	EQ       	0 17 -3	; - nil
+	69	[612]	JMP      	0 1	; to 71
+	70	[613]	RETURN   	5 2
+	71	[610]	TFORCALL 	12 2
+	72	[610]	TFORLOOP 	14 -21	; to 52
+	73	[609]	TFORCALL 	7 2
+	74	[609]	TFORLOOP 	9 -27	; to 48
+	75	[620]	GETTABUP 	7 0 -24	; _ENV "GM"
+	76	[620]	GETTABLE 	7 7 -25	; "ItemDataModel"
+	77	[620]	SELF     	7 7 -26	; "GetChainId"
+	78	[620]	MOVE     	9 1
+	79	[620]	CALL     	7 3 2
+	80	[621]	GETTABUP 	8 0 -24	; _ENV "GM"
+	81	[621]	GETTABLE 	8 8 -25	; "ItemDataModel"
+	82	[621]	SELF     	8 8 -27	; "GetChainLevel"
+	83	[621]	MOVE     	10 1
+	84	[621]	CALL     	8 3 2
+	85	[622]	SELF     	9 0 -12	; "FilterItems"
+	86	[624]	CLOSURE  	11 2	; 0000028D3355E170
+	87	[622]	CALL     	9 3 2
+	88	[624]	MOVE     	6 9
+	89	[625]	LEN      	9 6
+	90	[625]	LT       	0 -13 9	; 0 -
+	91	[625]	JMP      	0 36	; to 128
+	92	[627]	GETTABUP 	9 0 -16	; _ENV "table"
+	93	[627]	GETTABLE 	9 9 -17	; "sort"
+	94	[627]	MOVE     	10 6
+	95	[632]	CLOSURE  	11 3	; 0000028D3355C370
+	96	[627]	CALL     	9 3 1
+	97	[635]	GETTABUP 	9 0 -18	; _ENV "ipairs"
+	98	[635]	MOVE     	10 6
+	99	[635]	CALL     	9 2 4
+	100	[635]	JMP      	0 25	; to 126
+	101	[636]	GETTABUP 	14 0 -18	; _ENV "ipairs"
+	102	[636]	MOVE     	15 4
+	103	[636]	CALL     	14 2 4
+	104	[636]	JMP      	0 19	; to 124
+	105	[637]	GETTABUP 	19 0 -14	; _ENV "BoardPosition"
+	106	[637]	GETTABLE 	19 19 -19	; "GetDir8Position"
+	107	[637]	SELF     	20 13 -20	; "GetPosition"
+	108	[637]	CALL     	20 2 2
+	109	[637]	MOVE     	21 18
+	110	[637]	CALL     	19 3 2
+	111	[637]	MOVE     	5 19
+	112	[638]	SELF     	19 0 -21	; "PositionIsValid"
+	113	[638]	MOVE     	21 5
+	114	[638]	CALL     	19 3 2
+	115	[638]	TEST     	19 0
+	116	[638]	JMP      	0 7	; to 124
+	117	[638]	GETTABLE 	19 0 -22	; "m_itemLayerModel"
+	118	[638]	SELF     	19 19 -23	; "GetItem"
+	119	[638]	MOVE     	21 5
+	120	[638]	CALL     	19 3 2
+	121	[638]	EQ       	0 19 -3	; - nil
+	122	[638]	JMP      	0 1	; to 124
+	123	[639]	RETURN   	5 2
+	124	[636]	TFORCALL 	14 2
+	125	[636]	TFORLOOP 	16 -21	; to 105
+	126	[635]	TFORCALL 	9 2
+	127	[635]	TFORLOOP 	11 -27	; to 101
+	128	[646]	TEST     	3 0
+	129	[646]	JMP      	0 4	; to 134
+	130	[647]	SELF     	9 0 -28	; "FindEmptyPositionInValidOrder"
+	131	[647]	TAILCALL 	9 2 0
+	132	[647]	RETURN   	9 0
+	133	[647]	JMP      	0 4	; to 138
+	134	[649]	SELF     	9 0 -29	; "FindEmptyPositionInSpreadOrder"
+	135	[649]	MOVE     	11 2
+	136	[649]	TAILCALL 	9 3 0
+	137	[649]	RETURN   	9 0
+	138	[651]	RETURN   	0 1
+constants (29) for 0000028D3355DE70:
+	1	"ItemModelFactory"
+	2	"GetCodePrefixTargetType"
+	3	nil
+	4	7
+	5	3
+	6	1
+	7	5
+	8	8
+	9	2
+	10	6
+	11	4
+	12	"FilterItems"
+	13	0
+	14	"BoardPosition"
+	15	"Create"
+	16	"table"
+	17	"sort"
+	18	"ipairs"
+	19	"GetDir8Position"
+	20	"GetPosition"
+	21	"PositionIsValid"
+	22	"m_itemLayerModel"
+	23	"GetItem"
+	24	"GM"
+	25	"ItemDataModel"
+	26	"GetChainId"
+	27	"GetChainLevel"
+	28	"FindEmptyPositionInValidOrder"
+	29	"FindEmptyPositionInSpreadOrder"
+locals (29) for 0000028D3355DE70:
+	0	self	1	139
+	1	itemType	1	139
+	2	centerPosition	1	139
+	3	isPopCacheItem	14	139
+	4	dirs	24	139
+	5	curPos	25	139
+	6	itemModels	28	139
+	7	(for generator)	47	75
+	8	(for state)	47	75
+	9	(for control)	47	75
+	10	_	48	73
+	11	dir	48	73
+	12	(for generator)	51	73
+	13	(for state)	51	73
+	14	(for control)	51	73
+	15	_	52	71
+	16	itemModel	52	71
+	17	targetChainId	80	139
+	18	targetChainLevel	85	139
+	19	(for generator)	100	128
+	20	(for state)	100	128
+	21	(for control)	100	128
+	22	_	101	126
+	23	itemModel	101	126
+	24	(for generator)	104	126
+	25	(for state)	104	126
+	26	(for control)	104	126
+	27	_	105	124
+	28	dir	105	124
+upvalues (1) for 0000028D3355DE70:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:588,594> (19 instructions at 0000028D3355C270)
+1 param, 4 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[589]	SELF     	1 0 -1	; "GetComponent"
+	2	[589]	GETTABUP 	3 0 -2	; _ENV "ItemCobweb"
+	3	[589]	CALL     	1 3 2
+	4	[591]	SELF     	2 0 -3	; "GetType"
+	5	[591]	CALL     	2 2 2
+	6	[591]	GETUPVAL 	3 1	; itemType
+	7	[591]	EQ       	1 2 3
+	8	[591]	JMP      	0 8	; to 17
+	9	[592]	TESTSET  	2 1 0
+	10	[592]	JMP      	0 7	; to 18
+	11	[592]	SELF     	2 1 -4	; "GetInnerItemCode"
+	12	[592]	CALL     	2 2 2
+	13	[592]	GETUPVAL 	3 1	; itemType
+	14	[592]	EQ       	1 2 3
+	15	[592]	JMP      	0 1	; to 17
+	16	[593]	LOADBOOL 	2 0 1
+	17	[593]	LOADBOOL 	2 1 0
+	18	[593]	RETURN   	2 2
+	19	[594]	RETURN   	0 1
+constants (4) for 0000028D3355C270:
+	1	"GetComponent"
+	2	"ItemCobweb"
+	3	"GetType"
+	4	"GetInnerItemCode"
+locals (2) for 0000028D3355C270:
+	0	itemModel	1	20
+	1	itemCobweb	4	20
+upvalues (2) for 0000028D3355C270:
+	0	_ENV	0	0
+	1	itemType	1	1
+
+function <BaseBoardModel.lua:598,606> (68 instructions at 0000028D3355D0F0)
+2 params, 8 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[599]	GETUPVAL 	2 0	; self
+	2	[599]	SELF     	2 2 -1	; "GetDistanceInBoard"
+	3	[599]	GETUPVAL 	4 1	; centerPosition
+	4	[599]	SELF     	5 0 -2	; "GetPosition"
+	5	[599]	CALL     	5 2 0
+	6	[599]	CALL     	2 0 2
+	7	[599]	GETUPVAL 	3 0	; self
+	8	[599]	SELF     	3 3 -1	; "GetDistanceInBoard"
+	9	[599]	GETUPVAL 	5 1	; centerPosition
+	10	[599]	SELF     	6 1 -2	; "GetPosition"
+	11	[599]	CALL     	6 2 0
+	12	[599]	CALL     	3 0 2
+	13	[599]	EQ       	0 2 3
+	14	[599]	JMP      	0 36	; to 51
+	15	[600]	SELF     	2 0 -2	; "GetPosition"
+	16	[600]	CALL     	2 2 2
+	17	[600]	SELF     	2 2 -3	; "GetX"
+	18	[600]	CALL     	2 2 2
+	19	[600]	SELF     	3 1 -2	; "GetPosition"
+	20	[600]	CALL     	3 2 2
+	21	[600]	SELF     	3 3 -3	; "GetX"
+	22	[600]	CALL     	3 2 2
+	23	[600]	EQ       	0 2 3
+	24	[600]	JMP      	0 13	; to 38
+	25	[601]	SELF     	2 0 -2	; "GetPosition"
+	26	[601]	CALL     	2 2 2
+	27	[601]	SELF     	2 2 -4	; "GetY"
+	28	[601]	CALL     	2 2 2
+	29	[601]	SELF     	3 1 -2	; "GetPosition"
+	30	[601]	CALL     	3 2 2
+	31	[601]	SELF     	3 3 -4	; "GetY"
+	32	[601]	CALL     	3 2 2
+	33	[601]	LT       	1 2 3
+	34	[601]	JMP      	0 1	; to 36
+	35	[601]	LOADBOOL 	2 0 1
+	36	[601]	LOADBOOL 	2 1 0
+	37	[601]	RETURN   	2 2
+	38	[603]	SELF     	2 0 -2	; "GetPosition"
+	39	[603]	CALL     	2 2 2
+	40	[603]	SELF     	2 2 -3	; "GetX"
+	41	[603]	CALL     	2 2 2
+	42	[603]	SELF     	3 1 -2	; "GetPosition"
+	43	[603]	CALL     	3 2 2
+	44	[603]	SELF     	3 3 -3	; "GetX"
+	45	[603]	CALL     	3 2 2
+	46	[603]	LT       	1 2 3
+	47	[603]	JMP      	0 1	; to 49
+	48	[603]	LOADBOOL 	2 0 1
+	49	[603]	LOADBOOL 	2 1 0
+	50	[603]	RETURN   	2 2
+	51	[605]	GETUPVAL 	2 0	; self
+	52	[605]	SELF     	2 2 -1	; "GetDistanceInBoard"
+	53	[605]	GETUPVAL 	4 1	; centerPosition
+	54	[605]	SELF     	5 0 -2	; "GetPosition"
+	55	[605]	CALL     	5 2 0
+	56	[605]	CALL     	2 0 2
+	57	[605]	GETUPVAL 	3 0	; self
+	58	[605]	SELF     	3 3 -1	; "GetDistanceInBoard"
+	59	[605]	GETUPVAL 	5 1	; centerPosition
+	60	[605]	SELF     	6 1 -2	; "GetPosition"
+	61	[605]	CALL     	6 2 0
+	62	[605]	CALL     	3 0 2
+	63	[605]	LT       	1 2 3
+	64	[605]	JMP      	0 1	; to 66
+	65	[605]	LOADBOOL 	2 0 1
+	66	[605]	LOADBOOL 	2 1 0
+	67	[605]	RETURN   	2 2
+	68	[606]	RETURN   	0 1
+constants (4) for 0000028D3355D0F0:
+	1	"GetDistanceInBoard"
+	2	"GetPosition"
+	3	"GetX"
+	4	"GetY"
+locals (2) for 0000028D3355D0F0:
+	0	itemModelA	1	69
+	1	itemModelB	1	69
+upvalues (2) for 0000028D3355D0F0:
+	0	self	1	0
+	1	centerPosition	1	2
+
+function <BaseBoardModel.lua:622,624> (13 instructions at 0000028D3355E170)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[623]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[623]	GETTABLE 	1 1 -2	; "ItemDataModel"
+	3	[623]	SELF     	1 1 -3	; "GetChainId"
+	4	[623]	SELF     	3 0 -4	; "GetType"
+	5	[623]	CALL     	3 2 0
+	6	[623]	CALL     	1 0 2
+	7	[623]	GETUPVAL 	2 1	; targetChainId
+	8	[623]	EQ       	1 1 2
+	9	[623]	JMP      	0 1	; to 11
+	10	[623]	LOADBOOL 	1 0 1
+	11	[623]	LOADBOOL 	1 1 0
+	12	[623]	RETURN   	1 2
+	13	[624]	RETURN   	0 1
+constants (4) for 0000028D3355E170:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"GetType"
+locals (1) for 0000028D3355E170:
+	0	itemModel	1	14
+upvalues (2) for 0000028D3355E170:
+	0	_ENV	0	0
+	1	targetChainId	1	7
+
+function <BaseBoardModel.lua:627,632> (69 instructions at 0000028D3355C370)
+2 params, 9 slots, 2 upvalues, 2 locals, 6 constants, 0 functions
+	1	[628]	GETTABUP 	2 0 -1	; _ENV "math"
+	2	[628]	GETTABLE 	2 2 -2	; "abs"
+	3	[628]	GETUPVAL 	3 1	; targetChainLevel
+	4	[628]	GETTABUP 	4 0 -3	; _ENV "GM"
+	5	[628]	GETTABLE 	4 4 -4	; "ItemDataModel"
+	6	[628]	SELF     	4 4 -5	; "GetChainLevel"
+	7	[628]	SELF     	6 0 -6	; "GetType"
+	8	[628]	CALL     	6 2 0
+	9	[628]	CALL     	4 0 2
+	10	[628]	SUB      	3 3 4
+	11	[628]	CALL     	2 2 2
+	12	[628]	GETTABUP 	3 0 -1	; _ENV "math"
+	13	[628]	GETTABLE 	3 3 -2	; "abs"
+	14	[628]	GETUPVAL 	4 1	; targetChainLevel
+	15	[628]	GETTABUP 	5 0 -3	; _ENV "GM"
+	16	[628]	GETTABLE 	5 5 -4	; "ItemDataModel"
+	17	[628]	SELF     	5 5 -5	; "GetChainLevel"
+	18	[628]	SELF     	7 1 -6	; "GetType"
+	19	[628]	CALL     	7 2 0
+	20	[628]	CALL     	5 0 2
+	21	[628]	SUB      	4 4 5
+	22	[628]	CALL     	3 2 2
+	23	[628]	EQ       	0 2 3
+	24	[628]	JMP      	0 17	; to 42
+	25	[629]	GETTABUP 	2 0 -3	; _ENV "GM"
+	26	[629]	GETTABLE 	2 2 -4	; "ItemDataModel"
+	27	[629]	SELF     	2 2 -5	; "GetChainLevel"
+	28	[629]	SELF     	4 0 -6	; "GetType"
+	29	[629]	CALL     	4 2 0
+	30	[629]	CALL     	2 0 2
+	31	[629]	GETTABUP 	3 0 -3	; _ENV "GM"
+	32	[629]	GETTABLE 	3 3 -4	; "ItemDataModel"
+	33	[629]	SELF     	3 3 -5	; "GetChainLevel"
+	34	[629]	SELF     	5 1 -6	; "GetType"
+	35	[629]	CALL     	5 2 0
+	36	[629]	CALL     	3 0 2
+	37	[629]	LT       	1 2 3
+	38	[629]	JMP      	0 1	; to 40
+	39	[629]	LOADBOOL 	2 0 1
+	40	[629]	LOADBOOL 	2 1 0
+	41	[629]	RETURN   	2 2
+	42	[631]	GETTABUP 	2 0 -1	; _ENV "math"
+	43	[631]	GETTABLE 	2 2 -2	; "abs"
+	44	[631]	GETUPVAL 	3 1	; targetChainLevel
+	45	[631]	GETTABUP 	4 0 -3	; _ENV "GM"
+	46	[631]	GETTABLE 	4 4 -4	; "ItemDataModel"
+	47	[631]	SELF     	4 4 -5	; "GetChainLevel"
+	48	[631]	SELF     	6 0 -6	; "GetType"
+	49	[631]	CALL     	6 2 0
+	50	[631]	CALL     	4 0 2
+	51	[631]	SUB      	3 3 4
+	52	[631]	CALL     	2 2 2
+	53	[631]	GETTABUP 	3 0 -1	; _ENV "math"
+	54	[631]	GETTABLE 	3 3 -2	; "abs"
+	55	[631]	GETUPVAL 	4 1	; targetChainLevel
+	56	[631]	GETTABUP 	5 0 -3	; _ENV "GM"
+	57	[631]	GETTABLE 	5 5 -4	; "ItemDataModel"
+	58	[631]	SELF     	5 5 -5	; "GetChainLevel"
+	59	[631]	SELF     	7 1 -6	; "GetType"
+	60	[631]	CALL     	7 2 0
+	61	[631]	CALL     	5 0 2
+	62	[631]	SUB      	4 4 5
+	63	[631]	CALL     	3 2 2
+	64	[631]	LT       	1 2 3
+	65	[631]	JMP      	0 1	; to 67
+	66	[631]	LOADBOOL 	2 0 1
+	67	[631]	LOADBOOL 	2 1 0
+	68	[631]	RETURN   	2 2
+	69	[632]	RETURN   	0 1
+constants (6) for 0000028D3355C370:
+	1	"math"
+	2	"abs"
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetChainLevel"
+	6	"GetType"
+locals (2) for 0000028D3355C370:
+	0	itemModelA	1	70
+	1	itemModelB	1	70
+upvalues (2) for 0000028D3355C370:
+	0	_ENV	0	0
+	1	targetChainLevel	1	8
+
+function <BaseBoardModel.lua:657,659> (9 instructions at 0000028D3355C7F0)
+5 params, 11 slots, 0 upvalues, 5 locals, 2 constants, 0 functions
+	1	[658]	GETTABLE 	5 0 -1	; "m_itemLayerModel"
+	2	[658]	SELF     	5 5 -2	; "FindEmptyPositionInSpreadOrderWithNum"
+	3	[658]	MOVE     	7 1
+	4	[658]	MOVE     	8 2
+	5	[658]	MOVE     	9 3
+	6	[658]	MOVE     	10 4
+	7	[658]	TAILCALL 	5 6 0
+	8	[658]	RETURN   	5 0
+	9	[659]	RETURN   	0 1
+constants (2) for 0000028D3355C7F0:
+	1	"m_itemLayerModel"
+	2	"FindEmptyPositionInSpreadOrderWithNum"
+locals (5) for 0000028D3355C7F0:
+	0	self	1	10
+	1	centerPosition	1	10
+	2	openedPosition	1	10
+	3	num	1	10
+	4	bInCludeCenter	1	10
+upvalues (0) for 0000028D3355C7F0:
+
+function <BaseBoardModel.lua:662,664> (6 instructions at 0000028D3355D570)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[663]	GETTABLE 	2 0 -1	; "m_itemLayerModel"
+	2	[663]	SELF     	2 2 -2	; "FindEmptyPositionInDiagonalOrderWithNum"
+	3	[663]	MOVE     	4 1
+	4	[663]	TAILCALL 	2 3 0
+	5	[663]	RETURN   	2 0
+	6	[664]	RETURN   	0 1
+constants (2) for 0000028D3355D570:
+	1	"m_itemLayerModel"
+	2	"FindEmptyPositionInDiagonalOrderWithNum"
+locals (2) for 0000028D3355D570:
+	0	self	1	7
+	1	num	1	7
+upvalues (0) for 0000028D3355D570:
+
+function <BaseBoardModel.lua:668,674> (12 instructions at 0000028D3355E0F0)
+2 params, 5 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[669]	GETTABLE 	2 0 -1	; "m_itemLayerModel"
+	2	[669]	SELF     	2 2 -2	; "GetAllItems"
+	3	[669]	CALL     	2 2 2
+	4	[670]	TEST     	1 0
+	5	[670]	JMP      	0 5	; to 11
+	6	[671]	GETTABUP 	3 0 -3	; _ENV "Table"
+	7	[671]	GETTABLE 	3 3 -4	; "ShallowCopy"
+	8	[671]	MOVE     	4 2
+	9	[671]	TAILCALL 	3 2 0
+	10	[671]	RETURN   	3 0
+	11	[673]	RETURN   	2 2
+	12	[674]	RETURN   	0 1
+constants (4) for 0000028D3355E0F0:
+	1	"m_itemLayerModel"
+	2	"GetAllItems"
+	3	"Table"
+	4	"ShallowCopy"
+locals (3) for 0000028D3355E0F0:
+	0	self	1	13
+	1	copy	1	13
+	2	items	4	13
+upvalues (1) for 0000028D3355E0F0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:677,679> (6 instructions at 0000028D3355C2F0)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[678]	GETTABLE 	2 0 -1	; "m_itemLayerModel"
+	2	[678]	SELF     	2 2 -2	; "FilterItems"
+	3	[678]	MOVE     	4 1
+	4	[678]	TAILCALL 	2 3 0
+	5	[678]	RETURN   	2 0
+	6	[679]	RETURN   	0 1
+constants (2) for 0000028D3355C2F0:
+	1	"m_itemLayerModel"
+	2	"FilterItems"
+locals (2) for 0000028D3355C2F0:
+	0	self	1	7
+	1	filter	1	7
+upvalues (0) for 0000028D3355C2F0:
+
+function <BaseBoardModel.lua:686,688> (4 instructions at 0000028D3355CBF0)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[687]	GETTABUP 	1 0 -1	; _ENV "EnergyType"
+	2	[687]	GETTABLE 	1 1 -2	; "Main"
+	3	[687]	RETURN   	1 2
+	4	[688]	RETURN   	0 1
+constants (2) for 0000028D3355CBF0:
+	1	"EnergyType"
+	2	"Main"
+locals (1) for 0000028D3355CBF0:
+	0	self	1	5
+upvalues (1) for 0000028D3355CBF0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:691,693> (4 instructions at 0000028D3355DA70)
+1 param, 2 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[692]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[692]	GETTABLE 	1 1 -2	; "Empty"
+	3	[692]	RETURN   	1 2
+	4	[693]	RETURN   	0 1
+constants (2) for 0000028D3355DA70:
+	1	"Table"
+	2	"Empty"
+locals (1) for 0000028D3355DA70:
+	0	self	1	5
+upvalues (1) for 0000028D3355DA70:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:700,714> (21 instructions at 0000028D3355CE70)
+4 params, 11 slots, 1 upvalue, 10 locals, 4 constants, 0 functions
+	1	[701]	NEWTABLE 	4 0 0
+	2	[703]	EQ       	0 1 -1	; - false
+	3	[703]	JMP      	0 1	; to 5
+	4	[703]	LOADBOOL 	1 0 1
+	5	[703]	LOADBOOL 	1 1 0
+	6	[704]	TEST     	1 0
+	7	[704]	JMP      	0 12	; to 20
+	8	[705]	GETTABLE 	5 0 -2	; "m_codeCountMap"
+	9	[705]	TEST     	5 1
+	10	[705]	JMP      	0 2	; to 13
+	11	[706]	SELF     	5 0 -3	; "CountItemsCode"
+	12	[706]	CALL     	5 2 1
+	13	[708]	GETTABUP 	5 0 -4	; _ENV "pairs"
+	14	[708]	GETTABLE 	6 0 -2	; "m_codeCountMap"
+	15	[708]	CALL     	5 2 4
+	16	[708]	JMP      	0 1	; to 18
+	17	[709]	SETTABLE 	4 8 9
+	18	[708]	TFORCALL 	5 2
+	19	[708]	TFORLOOP 	7 -3	; to 17
+	20	[713]	RETURN   	4 2
+	21	[714]	RETURN   	0 1
+constants (4) for 0000028D3355CE70:
+	1	false
+	2	"m_codeCountMap"
+	3	"CountItemsCode"
+	4	"pairs"
+locals (10) for 0000028D3355CE70:
+	0	self	1	22
+	1	includeBoard	1	22
+	2	includeCache	1	22
+	3	includeStore	1	22
+	4	codeCountMap	2	22
+	5	(for generator)	16	20
+	6	(for state)	16	20
+	7	(for control)	16	20
+	8	k	17	18
+	9	v	17	18
+upvalues (1) for 0000028D3355CE70:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:717,727> (23 instructions at 0000028D3355C6F0)
+1 param, 9 slots, 1 upvalue, 7 locals, 7 constants, 0 functions
+	1	[718]	NEWTABLE 	1 0 0
+	2	[718]	SETTABLE 	0 -1 1	; "m_codeCountMap" -
+	3	[719]	GETTABUP 	1 0 -2	; _ENV "pairs"
+	4	[719]	SELF     	2 0 -3	; "GetAllBoardItems"
+	5	[719]	CALL     	2 2 0
+	6	[719]	CALL     	1 0 4
+	7	[719]	JMP      	0 13	; to 21
+	8	[720]	SELF     	6 4 -4	; "GetCode"
+	9	[720]	CALL     	6 2 2
+	10	[721]	GETTABLE 	7 0 -1	; "m_codeCountMap"
+	11	[721]	GETTABLE 	7 7 6
+	12	[721]	EQ       	0 7 -5	; - nil
+	13	[721]	JMP      	0 2	; to 16
+	14	[722]	GETTABLE 	7 0 -1	; "m_codeCountMap"
+	15	[722]	SETTABLE 	7 6 -6	; - 0
+	16	[725]	GETTABLE 	7 0 -1	; "m_codeCountMap"
+	17	[725]	GETTABLE 	8 0 -1	; "m_codeCountMap"
+	18	[725]	GETTABLE 	8 8 6
+	19	[725]	ADD      	8 8 -7	; - 1
+	20	[725]	SETTABLE 	7 6 8
+	21	[719]	TFORCALL 	1 2
+	22	[719]	TFORLOOP 	3 -15	; to 8
+	23	[727]	RETURN   	0 1
+constants (7) for 0000028D3355C6F0:
+	1	"m_codeCountMap"
+	2	"pairs"
+	3	"GetAllBoardItems"
+	4	"GetCode"
+	5	nil
+	6	0
+	7	1
+locals (7) for 0000028D3355C6F0:
+	0	self	1	24
+	1	(for generator)	7	23
+	2	(for state)	7	23
+	3	(for control)	7	23
+	4	model	8	21
+	5	_	8	21
+	6	code	10	21
+upvalues (1) for 0000028D3355C6F0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:734,804> (117 instructions at 0000028D3355C4F0)
+5 params, 17 slots, 1 upvalue, 14 locals, 20 constants, 0 functions
+	1	[735]	SELF     	5 0 -1	; "IsPositionInteractable"
+	2	[735]	MOVE     	7 2
+	3	[735]	CALL     	5 3 2
+	4	[735]	TEST     	5 1
+	5	[735]	JMP      	0 1	; to 7
+	6	[736]	RETURN   	0 1
+	7	[739]	SELF     	5 0 -2	; "GetItem"
+	8	[739]	MOVE     	7 2
+	9	[739]	CALL     	5 3 2
+	10	[740]	EQ       	1 5 -3	; - nil
+	11	[740]	JMP      	0 3	; to 15
+	12	[740]	GETTABLE 	6 3 5
+	13	[740]	EQ       	1 6 -3	; - nil
+	14	[740]	JMP      	0 1	; to 16
+	15	[741]	RETURN   	0 1
+	16	[746]	SELF     	6 5 -4	; "GetComponent"
+	17	[746]	GETTABUP 	8 0 -5	; _ENV "ItemSpread"
+	18	[746]	CALL     	6 3 2
+	19	[747]	EQ       	1 6 -3	; - nil
+	20	[747]	JMP      	0 5	; to 26
+	21	[747]	SELF     	7 6 -6	; "IsChestUsedOnce"
+	22	[747]	CALL     	7 2 2
+	23	[747]	TEST     	7 0
+	24	[747]	JMP      	0 1	; to 26
+	25	[748]	RETURN   	0 1
+	26	[753]	SELF     	7 5 -4	; "GetComponent"
+	27	[753]	GETTABUP 	9 0 -7	; _ENV "ItemCobweb"
+	28	[753]	CALL     	7 3 2
+	29	[755]	SELF     	8 5 -4	; "GetComponent"
+	30	[755]	GETTABUP 	10 0 -8	; _ENV "ItemTemp"
+	31	[755]	CALL     	8 3 2
+	32	[756]	LOADNIL  	9 0
+	33	[757]	LOADBOOL 	10 0 0
+	34	[758]	LOADBOOL 	11 0 0
+	35	[759]	EQ       	1 7 -3	; - nil
+	36	[759]	JMP      	0 5	; to 42
+	37	[760]	SELF     	12 7 -9	; "GetInnerItemCode"
+	38	[760]	CALL     	12 2 2
+	39	[760]	MOVE     	9 12
+	40	[761]	LOADBOOL 	10 1 0
+	41	[761]	JMP      	0 14	; to 56
+	42	[762]	EQ       	1 8 -3	; - nil
+	43	[762]	JMP      	0 5	; to 49
+	44	[763]	SELF     	12 8 -9	; "GetInnerItemCode"
+	45	[763]	CALL     	12 2 2
+	46	[763]	MOVE     	9 12
+	47	[764]	LOADBOOL 	11 1 0
+	48	[764]	JMP      	0 7	; to 56
+	49	[765]	SELF     	12 5 -10	; "GetMergedType"
+	50	[765]	CALL     	12 2 2
+	51	[765]	EQ       	1 12 -3	; - nil
+	52	[765]	JMP      	0 3	; to 56
+	53	[766]	SELF     	12 5 -11	; "GetType"
+	54	[766]	CALL     	12 2 2
+	55	[766]	MOVE     	9 12
+	56	[769]	EQ       	0 9 -3	; - nil
+	57	[769]	JMP      	0 1	; to 59
+	58	[770]	RETURN   	0 1
+	59	[774]	GETTABLE 	12 0 -12	; "IsGeneratorFactoryOpen"
+	60	[774]	TEST     	12 0
+	61	[774]	JMP      	0 13	; to 75
+	62	[774]	SELF     	12 0 -12	; "IsGeneratorFactoryOpen"
+	63	[774]	CALL     	12 2 2
+	64	[775]	TEST     	12 0
+	65	[775]	JMP      	0 9	; to 75
+	66	[775]	GETTABLE 	12 0 -13	; "IsGeneratorFactoryItem"
+	67	[775]	TEST     	12 0
+	68	[775]	JMP      	0 6	; to 75
+	69	[775]	SELF     	12 0 -13	; "IsGeneratorFactoryItem"
+	70	[775]	MOVE     	14 9
+	71	[775]	CALL     	12 3 2
+	72	[775]	TEST     	12 0
+	73	[775]	JMP      	0 1	; to 75
+	74	[776]	RETURN   	0 1
+	75	[780]	GETTABLE 	12 4 9
+	76	[781]	EQ       	1 12 -3	; - nil
+	77	[781]	JMP      	0 10	; to 88
+	78	[781]	LT       	0 -14 12	; 0 -
+	79	[781]	JMP      	0 8	; to 88
+	80	[781]	TEST     	10 1
+	81	[781]	JMP      	0 6	; to 88
+	82	[781]	TEST     	11 1
+	83	[781]	JMP      	0 4	; to 88
+	84	[782]	GETTABLE 	13 4 9
+	85	[782]	SUB      	13 13 -15	; - 1
+	86	[782]	SETTABLE 	4 9 13
+	87	[783]	RETURN   	0 1
+	88	[786]	GETTABLE 	13 1 9
+	89	[786]	EQ       	0 13 -3	; - nil
+	90	[786]	JMP      	0 8	; to 99
+	91	[787]	NEWTABLE 	13 0 3
+	92	[788]	NEWTABLE 	14 0 0
+	93	[788]	SETTABLE 	13 -16 14	; "Cobweb" -
+	94	[789]	NEWTABLE 	14 0 0
+	95	[789]	SETTABLE 	13 -17 14	; "Temp" -
+	96	[790]	NEWTABLE 	14 0 0
+	97	[790]	SETTABLE 	13 -18 14	; "Normal" -
+	98	[791]	SETTABLE 	1 9 13
+	99	[794]	LOADNIL  	13 0
+	100	[795]	TEST     	10 0
+	101	[795]	JMP      	0 3	; to 105
+	102	[796]	GETTABLE 	14 1 9
+	103	[796]	GETTABLE 	13 14 -16	; "Cobweb"
+	104	[796]	JMP      	0 7	; to 112
+	105	[797]	TEST     	11 0
+	106	[797]	JMP      	0 3	; to 110
+	107	[798]	GETTABLE 	14 1 9
+	108	[798]	GETTABLE 	13 14 -17	; "Temp"
+	109	[798]	JMP      	0 2	; to 112
+	110	[800]	GETTABLE 	14 1 9
+	111	[800]	GETTABLE 	13 14 -18	; "Normal"
+	112	[803]	GETTABUP 	14 0 -19	; _ENV "table"
+	113	[803]	GETTABLE 	14 14 -20	; "insert"
+	114	[803]	MOVE     	15 13
+	115	[803]	MOVE     	16 5
+	116	[803]	CALL     	14 3 1
+	117	[804]	RETURN   	0 1
+constants (20) for 0000028D3355C4F0:
+	1	"IsPositionInteractable"
+	2	"GetItem"
+	3	nil
+	4	"GetComponent"
+	5	"ItemSpread"
+	6	"IsChestUsedOnce"
+	7	"ItemCobweb"
+	8	"ItemTemp"
+	9	"GetInnerItemCode"
+	10	"GetMergedType"
+	11	"GetType"
+	12	"IsGeneratorFactoryOpen"
+	13	"IsGeneratorFactoryItem"
+	14	0
+	15	1
+	16	"Cobweb"
+	17	"Temp"
+	18	"Normal"
+	19	"table"
+	20	"insert"
+locals (14) for 0000028D3355C4F0:
+	0	self	1	118
+	1	mapGroups	1	118
+	2	position	1	118
+	3	ignoredItems	1	118
+	4	ignoredItemsWithCounts	1	118
+	5	itemModel	10	118
+	6	itemSpread	19	118
+	7	itemCobweb	29	118
+	8	itemTemp	32	118
+	9	itemType	33	118
+	10	isCobweb	34	118
+	11	isTemp	35	118
+	12	ignoredCount	76	118
+	13	targetGroup	100	118
+upvalues (1) for 0000028D3355C4F0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:811,885> (185 instructions at 0000028D3355DF70)
+4 params, 20 slots, 1 upvalue, 19 locals, 27 constants, 0 functions
+	1	[812]	TEST     	1 1
+	2	[812]	JMP      	0 2	; to 5
+	3	[812]	NEWTABLE 	4 0 0
+	4	[812]	MOVE     	1 4
+	5	[813]	TEST     	2 1
+	6	[813]	JMP      	0 2	; to 9
+	7	[813]	NEWTABLE 	4 0 0
+	8	[813]	MOVE     	2 4
+	9	[816]	NEWTABLE 	4 0 0
+	10	[818]	SELF     	5 0 -1	; "GetValidPositionIterator"
+	11	[818]	CALL     	5 2 4
+	12	[818]	JMP      	0 6	; to 19
+	13	[819]	SELF     	9 0 -2	; "_FillMergePairGroup"
+	14	[819]	MOVE     	11 4
+	15	[819]	MOVE     	12 8
+	16	[819]	MOVE     	13 1
+	17	[819]	MOVE     	14 2
+	18	[819]	CALL     	9 6 1
+	19	[818]	TFORCALL 	5 1
+	20	[818]	TFORLOOP 	7 -8	; to 13
+	21	[823]	NEWTABLE 	5 0 0
+	22	[825]	NEWTABLE 	6 0 0
+	23	[827]	NEWTABLE 	7 0 0
+	24	[829]	NEWTABLE 	8 0 0
+	25	[833]	TEST     	3 0
+	26	[833]	JMP      	0 30	; to 57
+	27	[833]	SELF     	9 3 -3	; "GetType"
+	28	[833]	CALL     	9 2 2
+	29	[833]	GETTABLE 	9 4 9
+	30	[834]	TEST     	9 0
+	31	[834]	JMP      	0 25	; to 57
+	32	[834]	SELF     	9 3 -4	; "GetComponent"
+	33	[834]	GETTABUP 	11 0 -5	; _ENV "ItemTemp"
+	34	[834]	CALL     	9 3 2
+	35	[834]	EQ       	0 9 -6	; - nil
+	36	[834]	JMP      	0 20	; to 57
+	37	[835]	SELF     	9 3 -4	; "GetComponent"
+	38	[835]	GETTABUP 	11 0 -7	; _ENV "ItemCobweb"
+	39	[835]	CALL     	9 3 2
+	40	[835]	EQ       	0 9 -6	; - nil
+	41	[835]	JMP      	0 15	; to 57
+	42	[837]	SELF     	9 0 -8	; "_GetNearestTouchedMergeItem"
+	43	[837]	MOVE     	11 3
+	44	[837]	MOVE     	12 4
+	45	[837]	CALL     	9 4 2
+	46	[838]	EQ       	1 9 -6	; - nil
+	47	[838]	JMP      	0 9	; to 57
+	48	[840]	NEWTABLE 	10 0 2
+	49	[841]	SETTABLE 	10 3 -10	; - true
+	50	[842]	SETTABLE 	10 9 -10	; - true
+	51	[843]	SETTABLE 	0 -9 10	; "m_logNearestTouchedMergeItem" -
+	52	[845]	NEWTABLE 	10 2 0
+	53	[845]	MOVE     	11 3
+	54	[845]	MOVE     	12 9
+	55	[845]	SETLIST  	10 2 1	; 1
+	56	[845]	RETURN   	10 2
+	57	[849]	GETTABUP 	9 0 -11	; _ENV "pairs"
+	58	[849]	MOVE     	10 4
+	59	[849]	CALL     	9 2 4
+	60	[849]	JMP      	0 85	; to 146
+	61	[850]	GETTABLE 	14 13 -12	; "Normal"
+	62	[850]	LEN      	14 14
+	63	[850]	LT       	0 -13 14	; 0 -
+	64	[850]	JMP      	0 81	; to 146
+	65	[851]	GETTABLE 	14 13 -14	; "Cobweb"
+	66	[851]	LEN      	14 14
+	67	[851]	LT       	0 -13 14	; 0 -
+	68	[851]	JMP      	0 15	; to 84
+	69	[852]	GETTABUP 	14 0 -15	; _ENV "table"
+	70	[852]	GETTABLE 	14 14 -16	; "insert"
+	71	[852]	MOVE     	15 5
+	72	[852]	NEWTABLE 	16 1 0
+	73	[854]	GETTABUP 	17 0 -17	; _ENV "Table"
+	74	[854]	GETTABLE 	17 17 -18	; "ListRandomSelectOne"
+	75	[854]	GETTABLE 	18 13 -12	; "Normal"
+	76	[854]	CALL     	17 2 2
+	77	[855]	GETTABUP 	18 0 -17	; _ENV "Table"
+	78	[855]	GETTABLE 	18 18 -18	; "ListRandomSelectOne"
+	79	[855]	GETTABLE 	19 13 -14	; "Cobweb"
+	80	[855]	CALL     	18 2 0
+	81	[856]	SETLIST  	16 0 1	; 1
+	82	[852]	CALL     	14 3 1
+	83	[856]	JMP      	0 62	; to 146
+	84	[857]	GETTABLE 	14 13 -19	; "Temp"
+	85	[857]	LEN      	14 14
+	86	[857]	LT       	0 -13 14	; 0 -
+	87	[857]	JMP      	0 15	; to 103
+	88	[858]	GETTABUP 	14 0 -15	; _ENV "table"
+	89	[858]	GETTABLE 	14 14 -16	; "insert"
+	90	[858]	MOVE     	15 6
+	91	[858]	NEWTABLE 	16 1 0
+	92	[859]	GETTABUP 	17 0 -17	; _ENV "Table"
+	93	[859]	GETTABLE 	17 17 -18	; "ListRandomSelectOne"
+	94	[859]	GETTABLE 	18 13 -12	; "Normal"
+	95	[859]	CALL     	17 2 2
+	96	[860]	GETTABUP 	18 0 -17	; _ENV "Table"
+	97	[860]	GETTABLE 	18 18 -18	; "ListRandomSelectOne"
+	98	[860]	GETTABLE 	19 13 -19	; "Temp"
+	99	[860]	CALL     	18 2 0
+	100	[861]	SETLIST  	16 0 1	; 1
+	101	[858]	CALL     	14 3 1
+	102	[861]	JMP      	0 43	; to 146
+	103	[862]	GETTABLE 	14 13 -12	; "Normal"
+	104	[862]	LEN      	14 14
+	105	[862]	LE       	0 -20 14	; 2 -
+	106	[862]	JMP      	0 39	; to 146
+	107	[864]	GETTABUP 	14 0 -21	; _ENV "ItemType"
+	108	[864]	GETTABLE 	14 14 -22	; "OrangeTree06"
+	109	[864]	EQ       	1 12 14
+	110	[864]	JMP      	0 16	; to 127
+	111	[864]	GETTABUP 	14 0 -21	; _ENV "ItemType"
+	112	[864]	GETTABLE 	14 14 -23	; "OrangeTree07"
+	113	[864]	EQ       	1 12 14
+	114	[864]	JMP      	0 12	; to 127
+	115	[864]	GETTABUP 	14 0 -21	; _ENV "ItemType"
+	116	[864]	GETTABLE 	14 14 -24	; "OrangeTree08"
+	117	[864]	EQ       	1 12 14
+	118	[864]	JMP      	0 8	; to 127
+	119	[864]	GETTABUP 	14 0 -21	; _ENV "ItemType"
+	120	[864]	GETTABLE 	14 14 -25	; "OrangeTree09"
+	121	[864]	EQ       	1 12 14
+	122	[864]	JMP      	0 4	; to 127
+	123	[864]	GETTABUP 	14 0 -21	; _ENV "ItemType"
+	124	[864]	GETTABLE 	14 14 -26	; "OrangeTree10"
+	125	[864]	EQ       	0 12 14
+	126	[864]	JMP      	0 10	; to 137
+	127	[865]	GETTABUP 	14 0 -15	; _ENV "table"
+	128	[865]	GETTABLE 	14 14 -16	; "insert"
+	129	[865]	MOVE     	15 8
+	130	[865]	GETTABUP 	16 0 -17	; _ENV "Table"
+	131	[865]	GETTABLE 	16 16 -27	; "ListRandomSelectN"
+	132	[865]	GETTABLE 	17 13 -12	; "Normal"
+	133	[865]	LOADK    	18 -20	; 2
+	134	[865]	CALL     	16 3 0
+	135	[865]	CALL     	14 0 1
+	136	[865]	JMP      	0 9	; to 146
+	137	[867]	GETTABUP 	14 0 -15	; _ENV "table"
+	138	[867]	GETTABLE 	14 14 -16	; "insert"
+	139	[867]	MOVE     	15 7
+	140	[867]	GETTABUP 	16 0 -17	; _ENV "Table"
+	141	[867]	GETTABLE 	16 16 -27	; "ListRandomSelectN"
+	142	[867]	GETTABLE 	17 13 -12	; "Normal"
+	143	[867]	LOADK    	18 -20	; 2
+	144	[867]	CALL     	16 3 0
+	145	[867]	CALL     	14 0 1
+	146	[849]	TFORCALL 	9 2
+	147	[849]	TFORLOOP 	11 -87	; to 61
+	148	[874]	LEN      	9 5
+	149	[874]	LT       	0 -13 9	; 0 -
+	150	[874]	JMP      	0 6	; to 157
+	151	[875]	GETTABUP 	9 0 -17	; _ENV "Table"
+	152	[875]	GETTABLE 	9 9 -18	; "ListRandomSelectOne"
+	153	[875]	MOVE     	10 5
+	154	[875]	TAILCALL 	9 2 0
+	155	[875]	RETURN   	9 0
+	156	[875]	JMP      	0 26	; to 183
+	157	[876]	LEN      	9 6
+	158	[876]	LT       	0 -13 9	; 0 -
+	159	[876]	JMP      	0 6	; to 166
+	160	[877]	GETTABUP 	9 0 -17	; _ENV "Table"
+	161	[877]	GETTABLE 	9 9 -18	; "ListRandomSelectOne"
+	162	[877]	MOVE     	10 6
+	163	[877]	TAILCALL 	9 2 0
+	164	[877]	RETURN   	9 0
+	165	[877]	JMP      	0 17	; to 183
+	166	[878]	LEN      	9 7
+	167	[878]	LT       	0 -13 9	; 0 -
+	168	[878]	JMP      	0 6	; to 175
+	169	[879]	GETTABUP 	9 0 -17	; _ENV "Table"
+	170	[879]	GETTABLE 	9 9 -18	; "ListRandomSelectOne"
+	171	[879]	MOVE     	10 7
+	172	[879]	TAILCALL 	9 2 0
+	173	[879]	RETURN   	9 0
+	174	[879]	JMP      	0 8	; to 183
+	175	[880]	LEN      	9 8
+	176	[880]	LT       	0 -13 9	; 0 -
+	177	[880]	JMP      	0 5	; to 183
+	178	[881]	GETTABUP 	9 0 -17	; _ENV "Table"
+	179	[881]	GETTABLE 	9 9 -18	; "ListRandomSelectOne"
+	180	[881]	MOVE     	10 8
+	181	[881]	TAILCALL 	9 2 0
+	182	[881]	RETURN   	9 0
+	183	[884]	LOADNIL  	9 0
+	184	[884]	RETURN   	9 2
+	185	[885]	RETURN   	0 1
+constants (27) for 0000028D3355DF70:
+	1	"GetValidPositionIterator"
+	2	"_FillMergePairGroup"
+	3	"GetType"
+	4	"GetComponent"
+	5	"ItemTemp"
+	6	nil
+	7	"ItemCobweb"
+	8	"_GetNearestTouchedMergeItem"
+	9	"m_logNearestTouchedMergeItem"
+	10	true
+	11	"pairs"
+	12	"Normal"
+	13	0
+	14	"Cobweb"
+	15	"table"
+	16	"insert"
+	17	"Table"
+	18	"ListRandomSelectOne"
+	19	"Temp"
+	20	2
+	21	"ItemType"
+	22	"OrangeTree06"
+	23	"OrangeTree07"
+	24	"OrangeTree08"
+	25	"OrangeTree09"
+	26	"OrangeTree10"
+	27	"ListRandomSelectN"
+locals (19) for 0000028D3355DF70:
+	0	self	1	186
+	1	ignoredItems	1	186
+	2	ignoredItemsWithCounts	1	186
+	3	lastTouchedItem	1	186
+	4	mapGroups	10	186
+	5	(for generator)	12	21
+	6	(for state)	12	21
+	7	(for control)	12	21
+	8	position	13	19
+	9	arrayWithCobweb	22	186
+	10	arrayWithTemp	23	186
+	11	arrayNormal	24	186
+	12	arrayOrangeTree	25	186
+	13	nearestItemModel	46	57
+	14	(for generator)	60	148
+	15	(for state)	60	148
+	16	(for control)	60	148
+	17	type	61	146
+	18	group	61	146
+upvalues (1) for 0000028D3355DF70:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:888,890> (2 instructions at 0000028D3355DEF0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[889]	SETTABLE 	0 -1 -2	; "m_logNearestTouchedMergeItem" nil
+	2	[890]	RETURN   	0 1
+constants (2) for 0000028D3355DEF0:
+	1	"m_logNearestTouchedMergeItem"
+	2	nil
+locals (1) for 0000028D3355DEF0:
+	0	self	1	3
+upvalues (0) for 0000028D3355DEF0:
+
+function <BaseBoardModel.lua:895,897> (15 instructions at 0000028D3355C8F0)
+3 params, 4 slots, 0 upvalues, 3 locals, 1 constant, 0 functions
+	1	[896]	TESTSET  	3 1 0
+	2	[896]	JMP      	0 11	; to 14
+	3	[896]	TESTSET  	3 2 0
+	4	[896]	JMP      	0 9	; to 14
+	5	[896]	GETTABLE 	3 0 -1	; "m_logNearestTouchedMergeItem"
+	6	[896]	TEST     	3 0
+	7	[896]	JMP      	0 6	; to 14
+	8	[896]	GETTABLE 	3 0 -1	; "m_logNearestTouchedMergeItem"
+	9	[896]	GETTABLE 	3 3 1
+	10	[896]	TEST     	3 0
+	11	[896]	JMP      	0 2	; to 14
+	12	[896]	GETTABLE 	3 0 -1	; "m_logNearestTouchedMergeItem"
+	13	[896]	GETTABLE 	3 3 2
+	14	[896]	RETURN   	3 2
+	15	[897]	RETURN   	0 1
+constants (1) for 0000028D3355C8F0:
+	1	"m_logNearestTouchedMergeItem"
+locals (3) for 0000028D3355C8F0:
+	0	self	1	16
+	1	itemModelA	1	16
+	2	itemModelB	1	16
+upvalues (0) for 0000028D3355C8F0:
+
+function <BaseBoardModel.lua:902,929> (56 instructions at 0000028D3355DAF0)
+3 params, 17 slots, 1 upvalue, 13 locals, 12 constants, 0 functions
+	1	[903]	SELF     	3 1 -1	; "GetType"
+	2	[903]	CALL     	3 2 2
+	3	[903]	GETTABLE 	3 2 3
+	4	[905]	NEWTABLE 	4 0 0
+	5	[906]	GETTABLE 	5 3 -2	; "Cobweb"
+	6	[906]	LEN      	5 5
+	7	[906]	LT       	0 -3 5	; 0 -
+	8	[906]	JMP      	0 5	; to 14
+	9	[907]	GETTABUP 	5 0 -4	; _ENV "Table"
+	10	[907]	GETTABLE 	5 5 -5	; "ListAppend"
+	11	[907]	MOVE     	6 4
+	12	[907]	GETTABLE 	7 3 -2	; "Cobweb"
+	13	[907]	CALL     	5 3 1
+	14	[909]	GETTABLE 	5 3 -6	; "Temp"
+	15	[909]	LEN      	5 5
+	16	[909]	LT       	0 -3 5	; 0 -
+	17	[909]	JMP      	0 5	; to 23
+	18	[910]	GETTABUP 	5 0 -4	; _ENV "Table"
+	19	[910]	GETTABLE 	5 5 -5	; "ListAppend"
+	20	[910]	MOVE     	6 4
+	21	[910]	GETTABLE 	7 3 -6	; "Temp"
+	22	[910]	CALL     	5 3 1
+	23	[912]	GETTABLE 	5 3 -7	; "Normal"
+	24	[912]	LEN      	5 5
+	25	[912]	LT       	0 -3 5	; 0 -
+	26	[912]	JMP      	0 5	; to 32
+	27	[913]	GETTABUP 	5 0 -4	; _ENV "Table"
+	28	[913]	GETTABLE 	5 5 -5	; "ListAppend"
+	29	[913]	MOVE     	6 4
+	30	[913]	GETTABLE 	7 3 -7	; "Normal"
+	31	[913]	CALL     	5 3 1
+	32	[915]	LOADNIL  	5 0
+	33	[916]	LOADK    	6 -8	; 99999
+	34	[917]	LEN      	7 4
+	35	[917]	LE       	0 -9 7	; 2 -
+	36	[917]	JMP      	0 18	; to 55
+	37	[918]	GETTABUP 	7 0 -10	; _ENV "ipairs"
+	38	[918]	MOVE     	8 4
+	39	[918]	CALL     	7 2 4
+	40	[918]	JMP      	0 12	; to 53
+	41	[919]	EQ       	1 1 11
+	42	[919]	JMP      	0 10	; to 53
+	43	[920]	SELF     	12 0 -11	; "GetDistanceInBoard"
+	44	[920]	SELF     	14 1 -12	; "GetPosition"
+	45	[920]	CALL     	14 2 2
+	46	[920]	SELF     	15 11 -12	; "GetPosition"
+	47	[920]	CALL     	15 2 0
+	48	[920]	CALL     	12 0 2
+	49	[921]	LT       	0 12 6
+	50	[921]	JMP      	0 2	; to 53
+	51	[922]	MOVE     	6 12
+	52	[923]	MOVE     	5 11
+	53	[918]	TFORCALL 	7 2
+	54	[918]	TFORLOOP 	9 -14	; to 41
+	55	[928]	RETURN   	5 2
+	56	[929]	RETURN   	0 1
+constants (12) for 0000028D3355DAF0:
+	1	"GetType"
+	2	"Cobweb"
+	3	0
+	4	"Table"
+	5	"ListAppend"
+	6	"Temp"
+	7	"Normal"
+	8	99999
+	9	2
+	10	"ipairs"
+	11	"GetDistanceInBoard"
+	12	"GetPosition"
+locals (13) for 0000028D3355DAF0:
+	0	self	1	57
+	1	lastTouchedItem	1	57
+	2	mapGroups	1	57
+	3	group	4	57
+	4	allItems	5	57
+	5	nearestItemModel	33	57
+	6	nearestDis	34	57
+	7	(for generator)	40	55
+	8	(for state)	40	55
+	9	(for control)	40	55
+	10	_	41	53
+	11	itemModel	41	53
+	12	dis	49	53
+upvalues (1) for 0000028D3355DAF0:
+	0	_ENV	0	0
+
+function <BaseBoardModel.lua:933,935> (3 instructions at 0000028D3355C570)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[934]	LOADBOOL 	1 1 0
+	2	[934]	RETURN   	1 2
+	3	[935]	RETURN   	0 1
+constants (0) for 0000028D3355C570:
+locals (1) for 0000028D3355C570:
+	0	self	1	4
+upvalues (0) for 0000028D3355C570:
+
+function <BaseBoardModel.lua:942,944> (1 instruction at 0000028D3355C9F0)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[944]	RETURN   	0 1
+constants (0) for 0000028D3355C9F0:
+locals (2) for 0000028D3355C9F0:
+	0	self	1	2
+	1	item	1	2
+upvalues (0) for 0000028D3355C9F0:
+
+function <BaseBoardModel.lua:947,949> (1 instruction at 0000028D3355D3F0)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[949]	RETURN   	0 1
+constants (0) for 0000028D3355D3F0:
+locals (2) for 0000028D3355D3F0:
+	0	self	1	2
+	1	item	1	2
+upvalues (0) for 0000028D3355D3F0:

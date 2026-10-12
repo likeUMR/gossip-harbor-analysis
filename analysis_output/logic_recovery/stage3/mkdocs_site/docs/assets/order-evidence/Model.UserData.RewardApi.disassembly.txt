@@ -1,0 +1,2071 @@
+
+main <RewardApi.lua:0,0> (122 instructions at 000002467277EFA0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 96 constants, 24 functions
+	1	[1]	NEWTABLE 	0 0 0
+	2	[1]	SETTABUP 	0 -1 0	; _ENV "RewardApi"
+	3	[3]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	4	[3]	NEWTABLE 	1 0 3
+	5	[4]	NEWTABLE 	2 0 0
+	6	[4]	SETTABLE 	1 -3 2	; "arrWorldPos" -
+	7	[5]	SETTABLE 	1 -4 -5	; "eventLock" true
+	8	[6]	SETTABLE 	1 -6 -7	; "noDelayTime" false
+	9	[7]	SETTABLE 	0 -2 1	; "DefaultViewData" -
+	10	[9]	NEWTABLE 	0 0 19
+	11	[10]	SETTABLE 	0 -9 -9	; "Unknown" "Unknown"
+	12	[11]	SETTABLE 	0 -10 -10	; "Property" "Property"
+	13	[12]	SETTABLE 	0 -11 -11	; "Skin" "Skin"
+	14	[13]	SETTABLE 	0 -12 -12	; "Item" "Item"
+	15	[14]	SETTABLE 	0 -13 -13	; "Avatar" "Avatar"
+	16	[15]	SETTABLE 	0 -14 -14	; "AvatarFrame" "AvatarFrame"
+	17	[16]	SETTABLE 	0 -15 -15	; "BuffProperty" "BuffProperty"
+	18	[17]	SETTABLE 	0 -16 -16	; "RandomReward" "RandomReward"
+	19	[18]	SETTABLE 	0 -17 -17	; "AdventureToolItem" "AdventureToolItem"
+	20	[19]	SETTABLE 	0 -18 -18	; "OrderBuffBox" "OrderBuffBox"
+	21	[20]	SETTABLE 	0 -19 -19	; "MultiboardsMergeLineItem" "MultiboardsMergeLineItem"
+	22	[21]	SETTABLE 	0 -20 -20	; "AlbumNewCard" "AlbumNewCard"
+	23	[22]	SETTABLE 	0 -21 -21	; "PlaneReward" "PlaneReward"
+	24	[23]	SETTABLE 	0 -22 -22	; "RaccoonReward" "RaccoonReward"
+	25	[24]	SETTABLE 	0 -23 -23	; "NChooseOneReward" "NChooseOneReward"
+	26	[25]	SETTABLE 	0 -24 -24	; "CustomBoardItem" "CustomBoardItem"
+	27	[26]	SETTABLE 	0 -25 -25	; "ChestCustomOrderReward" "ChestCustomOrderReward"
+	28	[27]	SETTABLE 	0 -26 -26	; "BoostCharge" "BoostCharge"
+	29	[28]	SETTABLE 	0 -27 -27	; "SpinRandomReward" "SpinRandomReward"
+	30	[29]	SETTABLE 	0 -28 -28	; "CustomerUpgradeReward" "CustomerUpgradeReward"
+	31	[30]	SETTABLE 	0 -29 -29	; "CannonReward" "CannonReward"
+	32	[31]	SETTABLE 	0 -30 -30	; "PureBoardMergeLineItem" "PureBoardMergeLineItem"
+	33	[32]	SETTABUP 	0 -8 0	; _ENV "ERewardCategoryType"
+	34	[35]	SETTABUP 	0 -31 -32	; _ENV "SKIN_REWARD_PREFIX" "skin_rwd_"
+	35	[37]	SETTABUP 	0 -33 -34	; _ENV "AVATAR_REWARD_PREFIX" "ar_"
+	36	[39]	SETTABUP 	0 -35 -36	; _ENV "AVATAR_FRAME_REWARD_PREFIX" "arfm_"
+	37	[41]	SETTABUP 	0 -37 -38	; _ENV "BUFF_REWARD_PREFIX" "buff"
+	38	[43]	SETTABUP 	0 -39 -40	; _ENV "RANDOM_REWARD_PREFIX" "rdm_rwd_"
+	39	[45]	SETTABUP 	0 -41 -42	; _ENV "ORDER_BUFF_BOX_PREFIX" "bf_chest_"
+	40	[47]	SETTABUP 	0 -43 -44	; _ENV "ALBUM_NEW_CARD_PREFIX" "album_nc"
+	41	[49]	SETTABUP 	0 -45 -46	; _ENV "PLANE_REWARD_PREFIX" "plane_"
+	42	[51]	SETTABUP 	0 -47 -48	; _ENV "RACCOON_REWARD_PREFIX" "raccoon_"
+	43	[53]	SETTABUP 	0 -49 -50	; _ENV "CUSTOM_BOARD_ITEM_PREFIX" "cbitm_"
+	44	[55]	SETTABUP 	0 -51 -52	; _ENV "BOOST_CHARGE_PREFIX" "boostcharge_"
+	45	[57]	SETTABUP 	0 -53 -54	; _ENV "SPIN_RANDOM_PREFIX" "spin_rdm_rwd_"
+	46	[59]	SETTABUP 	0 -55 -56	; _ENV "CUSTOMER_UPGRADE_PREFIX" "customer_upgrade"
+	47	[61]	SETTABUP 	0 -57 -58	; _ENV "N_CHOOSE_ONE_PREFIX" "n_choose_one"
+	48	[63]	SETTABUP 	0 -59 -60	; _ENV "ORDER_BOOST_SMILE_PREFIX" "orderBoostSmile"
+	49	[65]	SETTABUP 	0 -61 -62	; _ENV "CANNON_REWARD_PREFIX" "cannon_"
+	50	[67]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	51	[89]	CLOSURE  	1 0	; 000002467277F020
+	52	[67]	SETTABLE 	0 -63 1	; "SplitRewards" -
+	53	[97]	GETTABUP 	0 0 -64	; _ENV "RewardApi"
+	54	[104]	CLOSURE  	1 1	; 0000024672782F50
+	55	[97]	SETTABLE 	0 -65 1	; "AcquireRewards" -
+	56	[113]	GETTABUP 	0 0 -66	; _ENV "RewardApi"
+	57	[134]	CLOSURE  	1 2	; 000002467277EBF0
+	58	[113]	SETTABLE 	0 -67 1	; "AcquireRewardsLogic" -
+	59	[140]	GETTABUP 	0 0 -68	; _ENV "RewardApi"
+	60	[157]	CLOSURE  	1 3	; 0000024672783180
+	61	[140]	SETTABLE 	0 -69 1	; "_AcquireRewardsLogic" -
+	62	[188]	GETTABUP 	0 0 -68	; _ENV "RewardApi"
+	63	[305]	CLOSURE  	1 4	; 0000024672783CC0
+	64	[188]	SETTABLE 	0 -70 1	; "AcquireRewardsInView" -
+	65	[307]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	66	[314]	CLOSURE  	1 5	; 0000024672784B30
+	67	[307]	SETTABLE 	0 -71 1	; "GetRewardIconNameAndIsSetNativeSize" -
+	68	[318]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	69	[328]	CLOSURE  	1 6	; 0000024672784D30
+	70	[318]	SETTABLE 	0 -72 1	; "CheckRewardPrefix" -
+	71	[331]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	72	[333]	CLOSURE  	1 7	; 0000024672785680
+	73	[331]	SETTABLE 	0 -73 1	; "SkinRewardToSkinId" -
+	74	[336]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	75	[341]	CLOSURE  	1 8	; 00000246727864D0
+	76	[336]	SETTABLE 	0 -74 1	; "SkinIdToSkinReward" -
+	77	[343]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	78	[350]	CLOSURE  	1 9	; 0000024672785FD0
+	79	[343]	SETTABLE 	0 -75 1	; "CheckIsAdventureToolItem" -
+	80	[352]	GETTABUP 	0 0 -76	; _ENV "RewardApi"
+	81	[359]	CLOSURE  	1 10	; 0000024672786150
+	82	[352]	SETTABLE 	0 -77 1	; "CheckIsPureBoardMergeLineItem" -
+	83	[361]	GETTABUP 	0 0 -78	; _ENV "RewardApi"
+	84	[368]	CLOSURE  	1 11	; 0000024672785ED0
+	85	[361]	SETTABLE 	0 -79 1	; "CheckIsMultiboardsMergeLineItem" -
+	86	[370]	GETTABUP 	0 0 -80	; _ENV "RewardApi"
+	87	[372]	CLOSURE  	1 12	; 0000024672786650
+	88	[370]	SETTABLE 	0 -81 1	; "CheckRewardCategoryType" -
+	89	[374]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	90	[426]	CLOSURE  	1 13	; 0000024672785CD0
+	91	[374]	SETTABLE 	0 -82 1	; "GetRewardCategoryType" -
+	92	[428]	GETTABUP 	0 0 -83	; _ENV "RewardApi"
+	93	[430]	CLOSURE  	1 14	; 0000024672786050
+	94	[428]	SETTABLE 	0 -84 1	; "IsJokekRewardCard" -
+	95	[432]	GETTABUP 	0 0 -83	; _ENV "RewardApi"
+	96	[443]	CLOSURE  	1 15	; 00000246727865D0
+	97	[432]	SETTABLE 	0 -85 1	; "CanShowTipButton" -
+	98	[448]	GETTABUP 	0 0 -86	; _ENV "RewardApi"
+	99	[470]	CLOSURE  	1 16	; 0000024672786350
+	100	[448]	SETTABLE 	0 -87 1	; "IsRewardsEqual" -
+	101	[479]	GETTABUP 	0 0 -86	; _ENV "RewardApi"
+	102	[488]	CLOSURE  	1 17	; 0000024672786550
+	103	[479]	SETTABLE 	0 -88 1	; "ConvertDynamicReward" -
+	104	[494]	GETTABUP 	0 0 -89	; _ENV "RewardApi"
+	105	[516]	CLOSURE  	1 18	; 0000024672785C50
+	106	[494]	SETTABLE 	0 -90 1	; "MergeRewards" -
+	107	[518]	GETTABUP 	0 0 -89	; _ENV "RewardApi"
+	108	[521]	CLOSURE  	1 19	; 00000246727859D0
+	109	[518]	SETTABLE 	0 -91 1	; "CustomBoardItem2BoardTypeAndRealItemCode" -
+	110	[524]	GETTABUP 	0 0 -89	; _ENV "RewardApi"
+	111	[564]	CLOSURE  	1 20	; 0000024672785AD0
+	112	[524]	SETTABLE 	0 -92 1	; "_InitHighlightInfo" -
+	113	[568]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	114	[587]	CLOSURE  	1 21	; 0000024672785D50
+	115	[568]	SETTABLE 	0 -93 1	; "HighlightHud" -
+	116	[591]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	117	[616]	CLOSURE  	1 22	; 00000246727863D0
+	118	[591]	SETTABLE 	0 -94 1	; "_GetHighlightHudKeys" -
+	119	[619]	GETTABUP 	0 0 -95	; _ENV "RewardApi"
+	120	[622]	CLOSURE  	1 23	; 0000024672785850
+	121	[619]	SETTABLE 	0 -96 1	; "IsPackReward" -
+	122	[622]	RETURN   	0 1
+constants (96) for 000002467277EFA0:
+	1	"RewardApi"
+	2	"DefaultViewData"
+	3	"arrWorldPos"
+	4	"eventLock"
+	5	true
+	6	"noDelayTime"
+	7	false
+	8	"ERewardCategoryType"
+	9	"Unknown"
+	10	"Property"
+	11	"Skin"
+	12	"Item"
+	13	"Avatar"
+	14	"AvatarFrame"
+	15	"BuffProperty"
+	16	"RandomReward"
+	17	"AdventureToolItem"
+	18	"OrderBuffBox"
+	19	"MultiboardsMergeLineItem"
+	20	"AlbumNewCard"
+	21	"PlaneReward"
+	22	"RaccoonReward"
+	23	"NChooseOneReward"
+	24	"CustomBoardItem"
+	25	"ChestCustomOrderReward"
+	26	"BoostCharge"
+	27	"SpinRandomReward"
+	28	"CustomerUpgradeReward"
+	29	"CannonReward"
+	30	"PureBoardMergeLineItem"
+	31	"SKIN_REWARD_PREFIX"
+	32	"skin_rwd_"
+	33	"AVATAR_REWARD_PREFIX"
+	34	"ar_"
+	35	"AVATAR_FRAME_REWARD_PREFIX"
+	36	"arfm_"
+	37	"BUFF_REWARD_PREFIX"
+	38	"buff"
+	39	"RANDOM_REWARD_PREFIX"
+	40	"rdm_rwd_"
+	41	"ORDER_BUFF_BOX_PREFIX"
+	42	"bf_chest_"
+	43	"ALBUM_NEW_CARD_PREFIX"
+	44	"album_nc"
+	45	"PLANE_REWARD_PREFIX"
+	46	"plane_"
+	47	"RACCOON_REWARD_PREFIX"
+	48	"raccoon_"
+	49	"CUSTOM_BOARD_ITEM_PREFIX"
+	50	"cbitm_"
+	51	"BOOST_CHARGE_PREFIX"
+	52	"boostcharge_"
+	53	"SPIN_RANDOM_PREFIX"
+	54	"spin_rdm_rwd_"
+	55	"CUSTOMER_UPGRADE_PREFIX"
+	56	"customer_upgrade"
+	57	"N_CHOOSE_ONE_PREFIX"
+	58	"n_choose_one"
+	59	"ORDER_BOOST_SMILE_PREFIX"
+	60	"orderBoostSmile"
+	61	"CANNON_REWARD_PREFIX"
+	62	"cannon_"
+	63	"SplitRewards"
+	64	"RewardApi"
+	65	"AcquireRewards"
+	66	"RewardApi"
+	67	"AcquireRewardsLogic"
+	68	"RewardApi"
+	69	"_AcquireRewardsLogic"
+	70	"AcquireRewardsInView"
+	71	"GetRewardIconNameAndIsSetNativeSize"
+	72	"CheckRewardPrefix"
+	73	"SkinRewardToSkinId"
+	74	"SkinIdToSkinReward"
+	75	"CheckIsAdventureToolItem"
+	76	"RewardApi"
+	77	"CheckIsPureBoardMergeLineItem"
+	78	"RewardApi"
+	79	"CheckIsMultiboardsMergeLineItem"
+	80	"RewardApi"
+	81	"CheckRewardCategoryType"
+	82	"GetRewardCategoryType"
+	83	"RewardApi"
+	84	"IsJokekRewardCard"
+	85	"CanShowTipButton"
+	86	"RewardApi"
+	87	"IsRewardsEqual"
+	88	"ConvertDynamicReward"
+	89	"RewardApi"
+	90	"MergeRewards"
+	91	"CustomBoardItem2BoardTypeAndRealItemCode"
+	92	"_InitHighlightInfo"
+	93	"HighlightHud"
+	94	"_GetHighlightHudKeys"
+	95	"RewardApi"
+	96	"IsPackReward"
+locals (0) for 000002467277EFA0:
+upvalues (1) for 000002467277EFA0:
+	0	_ENV	1	0
+
+function <RewardApi.lua:67,89> (42 instructions at 000002467277F020)
+1 param, 10 slots, 1 upvalue, 8 locals, 9 constants, 0 functions
+	1	[69]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[69]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[69]	MOVE     	2 0
+	4	[69]	CALL     	1 2 2
+	5	[69]	TEST     	1 0
+	6	[69]	JMP      	0 3	; to 10
+	7	[70]	GETTABUP 	1 0 -1	; _ENV "Table"
+	8	[70]	GETTABLE 	1 1 -3	; "Empty"
+	9	[70]	RETURN   	1 2
+	10	[73]	NEWTABLE 	1 0 0
+	11	[76]	TEST     	0 0
+	12	[76]	JMP      	0 7	; to 20
+	13	[76]	GETTABLE 	2 0 -4	; 1
+	14	[76]	TEST     	2 1
+	15	[76]	JMP      	0 4	; to 20
+	16	[77]	NEWTABLE 	2 1 0
+	17	[77]	MOVE     	3 0
+	18	[77]	SETLIST  	2 1 1	; 1
+	19	[77]	MOVE     	0 2
+	20	[80]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	21	[80]	MOVE     	3 0
+	22	[80]	CALL     	2 2 4
+	23	[80]	JMP      	0 15	; to 39
+	24	[81]	GETTABUP 	7 0 -6	; _ENV "RewardApi"
+	25	[81]	GETTABLE 	7 7 -7	; "GetRewardCategoryType"
+	26	[81]	GETTABUP 	8 0 -8	; _ENV "PROPERTY_TYPE"
+	27	[81]	GETTABLE 	8 6 8
+	28	[81]	CALL     	7 2 2
+	29	[82]	GETTABLE 	8 1 7
+	30	[82]	EQ       	0 8 -9	; - nil
+	31	[82]	JMP      	0 2	; to 34
+	32	[83]	NEWTABLE 	8 0 0
+	33	[83]	SETTABLE 	1 7 8
+	34	[85]	GETTABLE 	8 1 7
+	35	[85]	GETTABLE 	9 1 7
+	36	[85]	LEN      	9 9
+	37	[85]	ADD      	9 9 -4	; - 1
+	38	[85]	SETTABLE 	8 9 6
+	39	[80]	TFORCALL 	2 2
+	40	[80]	TFORLOOP 	4 -17	; to 24
+	41	[88]	RETURN   	1 2
+	42	[89]	RETURN   	0 1
+constants (9) for 000002467277F020:
+	1	"Table"
+	2	"IsEmpty"
+	3	"Empty"
+	4	1
+	5	"ipairs"
+	6	"RewardApi"
+	7	"GetRewardCategoryType"
+	8	"PROPERTY_TYPE"
+	9	nil
+locals (8) for 000002467277F020:
+	0	arrRewards	1	43
+	1	splitedRewardDatas	11	43
+	2	(for generator)	23	41
+	3	(for state)	23	41
+	4	(for control)	23	41
+	5	_	24	39
+	6	reward	24	39
+	7	categoryType	29	39
+upvalues (1) for 000002467277F020:
+	0	_ENV	0	0
+
+function <RewardApi.lua:97,104> (18 instructions at 0000024672782F50)
+7 params, 14 slots, 1 upvalue, 7 locals, 4 constants, 0 functions
+	1	[98]	EQ       	0 0 -1	; - nil
+	2	[98]	JMP      	0 1	; to 4
+	3	[99]	RETURN   	0 1
+	4	[102]	GETTABUP 	7 0 -2	; _ENV "RewardApi"
+	5	[102]	GETTABLE 	7 7 -3	; "AcquireRewardsLogic"
+	6	[102]	MOVE     	8 0
+	7	[102]	MOVE     	9 1
+	8	[102]	MOVE     	10 2
+	9	[102]	MOVE     	11 4
+	10	[102]	MOVE     	12 5
+	11	[102]	MOVE     	13 6
+	12	[102]	CALL     	7 7 1
+	13	[103]	GETTABUP 	7 0 -2	; _ENV "RewardApi"
+	14	[103]	GETTABLE 	7 7 -4	; "AcquireRewardsInView"
+	15	[103]	MOVE     	8 0
+	16	[103]	MOVE     	9 3
+	17	[103]	CALL     	7 3 1
+	18	[104]	RETURN   	0 1
+constants (4) for 0000024672782F50:
+	1	nil
+	2	"RewardApi"
+	3	"AcquireRewardsLogic"
+	4	"AcquireRewardsInView"
+locals (7) for 0000024672782F50:
+	0	formattedRewards	1	19
+	1	source	1	19
+	2	scene	1	19
+	3	viewData	1	19
+	4	targetGameMode	1	19
+	5	cacheItemType	1	19
+	6	boardType	1	19
+upvalues (1) for 0000024672782F50:
+	0	_ENV	0	0
+
+function <RewardApi.lua:113,134> (54 instructions at 000002467277EBF0)
+6 params, 15 slots, 1 upvalue, 12 locals, 13 constants, 0 functions
+	1	[115]	GETTABUP 	6 0 -1	; _ENV "Table"
+	2	[115]	GETTABLE 	6 6 -2	; "IsEmpty"
+	3	[115]	MOVE     	7 0
+	4	[115]	CALL     	6 2 2
+	5	[115]	TEST     	6 0
+	6	[115]	JMP      	0 1	; to 8
+	7	[116]	RETURN   	0 1
+	8	[120]	TEST     	0 0
+	9	[120]	JMP      	0 7	; to 17
+	10	[120]	GETTABLE 	6 0 -3	; 1
+	11	[120]	TEST     	6 1
+	12	[120]	JMP      	0 4	; to 17
+	13	[121]	NEWTABLE 	6 1 0
+	14	[121]	MOVE     	7 0
+	15	[121]	SETLIST  	6 1 1	; 1
+	16	[121]	MOVE     	0 6
+	17	[124]	NEWTABLE 	6 0 0
+	18	[125]	LOADK    	7 -3	; 1
+	19	[125]	LEN      	8 0
+	20	[125]	LOADK    	9 -3	; 1
+	21	[125]	FORPREP  	7 7	; to 29
+	22	[126]	LEN      	11 6
+	23	[126]	ADD      	11 11 -3	; - 1
+	24	[126]	GETTABUP 	12 0 -4	; _ENV "RewardApi"
+	25	[126]	GETTABLE 	12 12 -5	; "ConvertDynamicReward"
+	26	[126]	GETTABLE 	13 0 10
+	27	[126]	CALL     	12 2 2
+	28	[126]	SETTABLE 	6 11 12
+	29	[125]	FORLOOP  	7 -8	; to 22
+	30	[128]	GETTABUP 	7 0 -4	; _ENV "RewardApi"
+	31	[128]	GETTABLE 	7 7 -6	; "SplitRewards"
+	32	[128]	MOVE     	8 6
+	33	[128]	CALL     	7 2 2
+	34	[129]	GETTABUP 	8 0 -4	; _ENV "RewardApi"
+	35	[129]	GETTABLE 	8 8 -7	; "_AcquireRewardsLogic"
+	36	[129]	MOVE     	9 7
+	37	[129]	MOVE     	10 1
+	38	[129]	MOVE     	11 2
+	39	[129]	MOVE     	12 3
+	40	[129]	MOVE     	13 4
+	41	[129]	MOVE     	14 5
+	42	[129]	CALL     	8 7 1
+	43	[131]	GETTABUP 	8 0 -8	; _ENV "GameConfig"
+	44	[131]	GETTABLE 	8 8 -9	; "IsTestMode"
+	45	[131]	CALL     	8 1 2
+	46	[131]	TEST     	8 0
+	47	[131]	JMP      	0 6	; to 54
+	48	[132]	GETTABUP 	8 0 -10	; _ENV "EventDispatcher"
+	49	[132]	GETTABLE 	8 8 -11	; "DispatchEvent"
+	50	[132]	GETTABUP 	9 0 -12	; _ENV "EEventType"
+	51	[132]	GETTABLE 	9 9 -13	; "TestPropertyMonitorRewardsLogic"
+	52	[132]	MOVE     	10 6
+	53	[132]	CALL     	8 3 1
+	54	[134]	RETURN   	0 1
+constants (13) for 000002467277EBF0:
+	1	"Table"
+	2	"IsEmpty"
+	3	1
+	4	"RewardApi"
+	5	"ConvertDynamicReward"
+	6	"SplitRewards"
+	7	"_AcquireRewardsLogic"
+	8	"GameConfig"
+	9	"IsTestMode"
+	10	"EventDispatcher"
+	11	"DispatchEvent"
+	12	"EEventType"
+	13	"TestPropertyMonitorRewardsLogic"
+locals (12) for 000002467277EBF0:
+	0	formattedRewards	1	55
+	1	source	1	55
+	2	scene	1	55
+	3	targetGameMode	1	55
+	4	cacheItemType	1	55
+	5	boardType	1	55
+	6	convertedRewards	18	55
+	7	(for index)	21	30
+	8	(for limit)	21	30
+	9	(for step)	21	30
+	10	i	22	29
+	11	splitedRewardDatas	34	55
+upvalues (1) for 000002467277EBF0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:140,157> (27 instructions at 0000024672783180)
+6 params, 17 slots, 1 upvalue, 13 locals, 12 constants, 0 functions
+	1	[142]	GETTABUP 	6 0 -1	; _ENV "GM"
+	2	[142]	GETTABLE 	6 6 -2	; "RewardHandlerManager"
+	3	[142]	SELF     	6 6 -3	; "GetAllHandlers"
+	4	[142]	CALL     	6 2 2
+	5	[144]	NEWTABLE 	7 0 5
+	6	[145]	SETTABLE 	7 -4 1	; "source" -
+	7	[146]	SETTABLE 	7 -5 2	; "scene" -
+	8	[147]	SETTABLE 	7 -6 3	; "targetGameMode" -
+	9	[148]	SETTABLE 	7 -7 4	; "cacheItemType" -
+	10	[149]	SETTABLE 	7 -8 5	; "boardType" -
+	11	[152]	GETTABUP 	8 0 -9	; _ENV "pairs"
+	12	[152]	MOVE     	9 6
+	13	[152]	CALL     	8 2 4
+	14	[152]	JMP      	0 10	; to 25
+	15	[153]	GETTABUP 	13 0 -10	; _ENV "Table"
+	16	[153]	GETTABLE 	13 13 -11	; "IsEmpty"
+	17	[153]	GETTABLE 	14 0 11
+	18	[153]	CALL     	13 2 2
+	19	[153]	TEST     	13 1
+	20	[153]	JMP      	0 4	; to 25
+	21	[154]	SELF     	13 12 -12	; "LogicHandle"
+	22	[154]	GETTABLE 	15 0 11
+	23	[154]	MOVE     	16 7
+	24	[154]	CALL     	13 4 1
+	25	[152]	TFORCALL 	8 2
+	26	[152]	TFORLOOP 	10 -12	; to 15
+	27	[157]	RETURN   	0 1
+constants (12) for 0000024672783180:
+	1	"GM"
+	2	"RewardHandlerManager"
+	3	"GetAllHandlers"
+	4	"source"
+	5	"scene"
+	6	"targetGameMode"
+	7	"cacheItemType"
+	8	"boardType"
+	9	"pairs"
+	10	"Table"
+	11	"IsEmpty"
+	12	"LogicHandle"
+locals (13) for 0000024672783180:
+	0	splitedRewardDatas	1	28
+	1	source	1	28
+	2	scene	1	28
+	3	targetGameMode	1	28
+	4	cacheItemType	1	28
+	5	boardType	1	28
+	6	handlers	5	28
+	7	arrConfig	11	28
+	8	(for generator)	14	27
+	9	(for state)	14	27
+	10	(for control)	14	27
+	11	type	15	25
+	12	handler	15	25
+upvalues (1) for 0000024672783180:
+	0	_ENV	0	0
+
+function <RewardApi.lua:188,305> (188 instructions at 0000024672783CC0)
+2 params, 26 slots, 1 upvalue, 25 locals, 58 constants, 1 function
+	1	[189]	TEST     	1 1
+	2	[189]	JMP      	0 2	; to 5
+	3	[189]	GETTABUP 	2 0 -1	; _ENV "RewardApi"
+	4	[189]	GETTABLE 	1 2 -2	; "DefaultViewData"
+	5	[190]	GETTABLE 	2 1 -3	; "arrWorldPos"
+	6	[190]	TEST     	2 1
+	7	[190]	JMP      	0 2	; to 10
+	8	[190]	GETTABUP 	2 0 -4	; _ENV "Table"
+	9	[190]	GETTABLE 	2 2 -5	; "Empty"
+	10	[190]	SETTABLE 	1 -3 2	; "arrWorldPos" -
+	11	[191]	GETTABLE 	2 1 -6	; "targetGameMode"
+	12	[191]	TEST     	2 1
+	13	[191]	JMP      	0 2	; to 16
+	14	[191]	GETTABUP 	2 0 -4	; _ENV "Table"
+	15	[191]	GETTABLE 	2 2 -5	; "Empty"
+	16	[191]	SETTABLE 	1 -6 2	; "targetGameMode" -
+	17	[193]	GETTABLE 	2 1 -7	; "alwaysInMiddle"
+	18	[193]	EQ       	0 2 -8	; - nil
+	19	[193]	JMP      	0 3	; to 23
+	20	[193]	LOADBOOL 	2 1 0
+	21	[193]	TEST     	2 1
+	22	[193]	JMP      	0 1	; to 24
+	23	[193]	GETTABLE 	2 1 -7	; "alwaysInMiddle"
+	24	[193]	SETTABLE 	1 -7 2	; "alwaysInMiddle" -
+	25	[195]	GETTABUP 	2 0 -9	; _ENV "GM"
+	26	[195]	GETTABLE 	2 2 -10	; "UIManager"
+	27	[195]	SELF     	2 2 -11	; "GetOpenedViewByName"
+	28	[195]	GETTABUP 	4 0 -12	; _ENV "UIPrefabConfigName"
+	29	[195]	GETTABLE 	4 4 -13	; "BaseSceneView"
+	30	[195]	CALL     	2 3 2
+	31	[196]	SELF     	3 2 -14	; "GetFlyCachedItemTargetPosition"
+	32	[196]	CALL     	3 2 2
+	33	[197]	SELF     	4 2 -14	; "GetFlyCachedItemTargetPosition"
+	34	[197]	LOADBOOL 	6 0 0
+	35	[197]	CALL     	4 3 2
+	36	[198]	GETTABUP 	5 0 -9	; _ENV "GM"
+	37	[198]	GETTABLE 	5 5 -15	; "SceneManager"
+	38	[198]	SELF     	5 5 -16	; "GetGameMode"
+	39	[198]	CALL     	5 2 2
+	40	[201]	GETTABUP 	6 0 -4	; _ENV "Table"
+	41	[201]	GETTABLE 	6 6 -17	; "IsEmpty"
+	42	[201]	GETTABLE 	7 1 -18	; "highlightHudArgs"
+	43	[201]	CALL     	6 2 2
+	44	[201]	TEST     	6 1
+	45	[201]	JMP      	0 5	; to 51
+	46	[202]	GETTABUP 	6 0 -1	; _ENV "RewardApi"
+	47	[202]	GETTABLE 	6 6 -19	; "HighlightHud"
+	48	[202]	MOVE     	7 0
+	49	[202]	GETTABLE 	8 1 -18	; "highlightHudArgs"
+	50	[202]	CALL     	6 3 1
+	51	[205]	LOADBOOL 	6 0 0
+	52	[206]	LOADBOOL 	7 0 0
+	53	[207]	LOADBOOL 	8 0 0
+	54	[209]	GETTABUP 	9 0 -20	; _ENV "ipairs"
+	55	[209]	MOVE     	10 0
+	56	[209]	CALL     	9 2 4
+	57	[209]	JMP      	0 119	; to 177
+	58	[210]	GETTABUP 	14 0 -1	; _ENV "RewardApi"
+	59	[210]	GETTABLE 	14 14 -21	; "ConvertDynamicReward"
+	60	[210]	MOVE     	15 13
+	61	[210]	CALL     	14 2 2
+	62	[210]	MOVE     	13 14
+	63	[211]	LOADK    	14 -22	; 0
+	64	[212]	GETTABLE 	15 1 -23	; "noDelayTime"
+	65	[212]	TEST     	15 1
+	66	[212]	JMP      	0 7	; to 74
+	67	[213]	GETTABLE 	15 1 -24	; "interval"
+	68	[213]	TEST     	15 1
+	69	[213]	JMP      	0 1	; to 71
+	70	[213]	LOADK    	15 -25	; 0.3
+	71	[214]	SUB      	16 12 -26	; - 1
+	72	[214]	MUL      	16 15 16
+	73	[214]	ADD      	14 -27 16	; 0.5 -
+	74	[217]	GETTABLE 	15 1 -3	; "arrWorldPos"
+	75	[217]	GETTABLE 	15 15 12
+	76	[217]	TEST     	15 1
+	77	[217]	JMP      	0 1	; to 79
+	78	[217]	GETTABUP 	15 0 -28	; _ENV "V3Zero"
+	79	[219]	LOADNIL  	16 0
+	80	[221]	GETTABLE 	17 1 -29	; "targetButton"
+	81	[221]	EQ       	0 17 -8	; - nil
+	82	[221]	JMP      	0 16	; to 99
+	83	[222]	GETTABLE 	17 1 -30	; "itemAlwaysFlytoOther"
+	84	[222]	TEST     	17 0
+	85	[222]	JMP      	0 2	; to 88
+	86	[223]	MOVE     	16 4
+	87	[223]	JMP      	0 11	; to 99
+	88	[224]	GETTABLE 	17 1 -6	; "targetGameMode"
+	89	[224]	GETTABLE 	17 17 12
+	90	[224]	EQ       	1 17 -8	; - nil
+	91	[224]	JMP      	0 4	; to 96
+	92	[224]	GETTABLE 	17 1 -6	; "targetGameMode"
+	93	[224]	GETTABLE 	17 17 12
+	94	[224]	EQ       	0 17 5
+	95	[224]	JMP      	0 2	; to 98
+	96	[225]	MOVE     	16 3
+	97	[225]	JMP      	0 1	; to 99
+	98	[227]	MOVE     	16 4
+	99	[231]	GETTABUP 	17 0 -31	; _ENV "PROPERTY_TYPE"
+	100	[231]	GETTABLE 	17 13 17
+	101	[232]	GETTABUP 	18 0 -1	; _ENV "RewardApi"
+	102	[232]	GETTABLE 	18 18 -32	; "GetRewardCategoryType"
+	103	[232]	MOVE     	19 17
+	104	[232]	CALL     	18 2 2
+	105	[234]	GETTABLE 	19 1 -33	; "floatUp"
+	106	[234]	TEST     	19 0
+	107	[234]	JMP      	0 34	; to 142
+	108	[235]	GETTABUP 	19 0 -34	; _ENV "ERewardCategoryType"
+	109	[235]	GETTABLE 	19 19 -35	; "RandomReward"
+	110	[235]	EQ       	0 18 19
+	111	[235]	JMP      	0 1	; to 113
+	112	[236]	SETTABLE 	1 -36 -37	; "eventLock" true
+	113	[238]	SETTABLE 	1 -38 -37	; "simpleCollect" true
+	114	[239]	SETTABLE 	1 -39 -37	; "waitingForFloatUp" true
+	115	[240]	GETTABLE 	19 1 -24	; "interval"
+	116	[240]	TEST     	19 1
+	117	[240]	JMP      	0 1	; to 119
+	118	[240]	LOADK    	19 -40	; 0.25
+	119	[242]	NEWTABLE 	20 1 0
+	120	[242]	NEWTABLE 	21 0 5
+	121	[244]	SUB      	22 12 -26	; - 1
+	122	[244]	MUL      	22 19 22
+	123	[244]	SETTABLE 	21 -41 22	; "flyDelay" -
+	124	[245]	GETTABLE 	22 1 -36	; "eventLock"
+	125	[245]	SETTABLE 	21 -36 22	; "eventLock" -
+	126	[246]	GETTABLE 	22 1 -42	; "spriteScale"
+	127	[246]	SETTABLE 	21 -42 22	; "spriteScale" -
+	128	[247]	GETTABLE 	22 1 -43	; "floatUpMovePosY"
+	129	[247]	SETTABLE 	21 -43 22	; "floatUpMovePosY" -
+	130	[248]	GETTABLE 	22 1 -44	; "floatUpMoveTime"
+	131	[248]	SETTABLE 	21 -44 22	; "floatUpMoveTime" -
+	132	[250]	SETLIST  	20 1 1	; 1
+	133	[252]	GETTABUP 	21 0 -9	; _ENV "GM"
+	134	[252]	GETTABLE 	21 21 -45	; "PropertyDataManager"
+	135	[252]	SELF     	21 21 -46	; "PlayFloatUpAnimation"
+	136	[252]	NEWTABLE 	23 1 0
+	137	[252]	MOVE     	24 13
+	138	[252]	SETLIST  	23 1 1	; 1
+	139	[252]	MOVE     	24 15
+	140	[252]	MOVE     	25 20
+	141	[252]	CALL     	21 5 1
+	142	[255]	GETTABUP 	19 0 -9	; _ENV "GM"
+	143	[255]	GETTABLE 	19 19 -47	; "RewardHandlerManager"
+	144	[255]	SELF     	19 19 -48	; "GetHandler"
+	145	[255]	MOVE     	21 18
+	146	[255]	CALL     	19 3 2
+	147	[256]	TEST     	19 0
+	148	[256]	JMP      	0 13	; to 162
+	149	[256]	GETTABLE 	20 19 -49	; "InViewHandle"
+	150	[256]	TEST     	20 0
+	151	[256]	JMP      	0 10	; to 162
+	152	[257]	NEWTABLE 	20 0 5
+	153	[258]	SETTABLE 	20 -50 1	; "viewData" -
+	154	[259]	SETTABLE 	20 -41 14	; "flyDelay" -
+	155	[260]	SETTABLE 	20 -51 15	; "uiWorldPosition" -
+	156	[261]	SETTABLE 	20 -52 16	; "endPosition" -
+	157	[262]	SETTABLE 	20 -53 12	; "index" -
+	158	[264]	SELF     	21 19 -49	; "InViewHandle"
+	159	[264]	MOVE     	23 13
+	160	[264]	MOVE     	24 20
+	161	[264]	CALL     	21 4 1
+	162	[267]	GETTABUP 	20 0 -34	; _ENV "ERewardCategoryType"
+	163	[267]	GETTABLE 	20 20 -35	; "RandomReward"
+	164	[267]	EQ       	0 18 20
+	165	[267]	JMP      	0 1	; to 167
+	166	[268]	LOADBOOL 	6 1 0
+	167	[271]	GETTABUP 	20 0 -34	; _ENV "ERewardCategoryType"
+	168	[271]	GETTABLE 	20 20 -54	; "AvatarFrame"
+	169	[271]	EQ       	0 18 20
+	170	[271]	JMP      	0 1	; to 172
+	171	[272]	LOADBOOL 	7 1 0
+	172	[275]	GETTABUP 	20 0 -34	; _ENV "ERewardCategoryType"
+	173	[275]	GETTABLE 	20 20 -55	; "NChooseOneReward"
+	174	[275]	EQ       	0 18 20
+	175	[275]	JMP      	0 1	; to 177
+	176	[276]	LOADBOOL 	8 1 0
+	177	[209]	TFORCALL 	9 2
+	178	[209]	TFORLOOP 	11 -121	; to 58
+	179	[283]	GETTABLE 	9 1 -56	; "onFinish"
+	180	[283]	EQ       	1 9 -8	; - nil
+	181	[283]	JMP      	0 6	; to 188
+	182	[302]	CLOSURE  	9 0	; 00000246727843F0
+	183	[303]	GETTABUP 	10 0 -57	; _ENV "Scheduler"
+	184	[303]	GETTABLE 	10 10 -58	; "Schedule"
+	185	[303]	MOVE     	11 9
+	186	[303]	CALL     	10 2 1
+	187	[303]	JMP      	10 0	; to 188
+	188	[305]	RETURN   	0 1
+constants (58) for 0000024672783CC0:
+	1	"RewardApi"
+	2	"DefaultViewData"
+	3	"arrWorldPos"
+	4	"Table"
+	5	"Empty"
+	6	"targetGameMode"
+	7	"alwaysInMiddle"
+	8	nil
+	9	"GM"
+	10	"UIManager"
+	11	"GetOpenedViewByName"
+	12	"UIPrefabConfigName"
+	13	"BaseSceneView"
+	14	"GetFlyCachedItemTargetPosition"
+	15	"SceneManager"
+	16	"GetGameMode"
+	17	"IsEmpty"
+	18	"highlightHudArgs"
+	19	"HighlightHud"
+	20	"ipairs"
+	21	"ConvertDynamicReward"
+	22	0
+	23	"noDelayTime"
+	24	"interval"
+	25	0.3
+	26	1
+	27	0.5
+	28	"V3Zero"
+	29	"targetButton"
+	30	"itemAlwaysFlytoOther"
+	31	"PROPERTY_TYPE"
+	32	"GetRewardCategoryType"
+	33	"floatUp"
+	34	"ERewardCategoryType"
+	35	"RandomReward"
+	36	"eventLock"
+	37	true
+	38	"simpleCollect"
+	39	"waitingForFloatUp"
+	40	0.25
+	41	"flyDelay"
+	42	"spriteScale"
+	43	"floatUpMovePosY"
+	44	"floatUpMoveTime"
+	45	"PropertyDataManager"
+	46	"PlayFloatUpAnimation"
+	47	"RewardHandlerManager"
+	48	"GetHandler"
+	49	"InViewHandle"
+	50	"viewData"
+	51	"uiWorldPosition"
+	52	"endPosition"
+	53	"index"
+	54	"AvatarFrame"
+	55	"NChooseOneReward"
+	56	"onFinish"
+	57	"Scheduler"
+	58	"Schedule"
+locals (25) for 0000024672783CC0:
+	0	arrRewards	1	189
+	1	viewData	1	189
+	2	baseSceneView	31	189
+	3	itemFlyEndPosition	33	189
+	4	itemFlyEndPositionInOtherGameMode	36	189
+	5	curGameMode	40	189
+	6	hasRandomReward	52	189
+	7	hasAvatarFrameReward	53	189
+	8	hasNChooseOneReward	54	189
+	9	(for generator)	57	179
+	10	(for state)	57	179
+	11	(for control)	57	179
+	12	i	58	177
+	13	rewardData	58	177
+	14	flyDelay	64	177
+	15	interval	71	74
+	16	uiWorldPosition	79	177
+	17	endPosition	80	177
+	18	rewardType	101	177
+	19	categoryType	105	177
+	20	interval	119	142
+	21	customData	133	142
+	22	handler	147	177
+	23	arrConfig	158	162
+	24	onUpdate	183	188
+upvalues (1) for 0000024672783CC0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:284,302> (32 instructions at 00000246727843F0)
+0 params, 2 slots, 5 upvalues, 0 locals, 9 constants, 0 functions
+	1	[286]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[286]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[286]	SELF     	0 0 -3	; "IsEventLock"
+	4	[286]	CALL     	0 2 2
+	5	[286]	TEST     	0 0
+	6	[286]	JMP      	0 1	; to 8
+	7	[287]	RETURN   	0 1
+	8	[291]	GETUPVAL 	0 1	; hasRandomReward
+	9	[291]	TEST     	0 0
+	10	[291]	JMP      	0 6	; to 17
+	11	[291]	GETTABUP 	0 0 -4	; _ENV "RandomRewardWindow"
+	12	[291]	GETTABLE 	0 0 -5	; "IsFinished"
+	13	[291]	CALL     	0 1 2
+	14	[291]	TEST     	0 1
+	15	[291]	JMP      	0 1	; to 17
+	16	[292]	RETURN   	0 1
+	17	[296]	GETUPVAL 	0 2	; hasAvatarFrameReward
+	18	[296]	TEST     	0 0
+	19	[296]	JMP      	0 6	; to 26
+	20	[296]	GETTABUP 	0 0 -6	; _ENV "AvatarFrameRewardWindow"
+	21	[296]	GETTABLE 	0 0 -5	; "IsFinished"
+	22	[296]	CALL     	0 1 2
+	23	[296]	TEST     	0 1
+	24	[296]	JMP      	0 1	; to 26
+	25	[297]	RETURN   	0 1
+	26	[300]	GETTABUP 	0 0 -7	; _ENV "Scheduler"
+	27	[300]	GETTABLE 	0 0 -8	; "Unschedule"
+	28	[300]	GETUPVAL 	1 3	; onUpdate
+	29	[300]	CALL     	0 2 1
+	30	[301]	GETTABUP 	0 4 -9	; viewData "onFinish"
+	31	[301]	CALL     	0 1 1
+	32	[302]	RETURN   	0 1
+constants (9) for 00000246727843F0:
+	1	"GM"
+	2	"UIManager"
+	3	"IsEventLock"
+	4	"RandomRewardWindow"
+	5	"IsFinished"
+	6	"AvatarFrameRewardWindow"
+	7	"Scheduler"
+	8	"Unschedule"
+	9	"onFinish"
+locals (0) for 00000246727843F0:
+upvalues (5) for 00000246727843F0:
+	0	_ENV	0	0
+	1	hasRandomReward	1	6
+	2	hasAvatarFrameReward	1	7
+	3	onUpdate	1	9
+	4	viewData	1	1
+
+function <RewardApi.lua:307,314> (23 instructions at 0000024672784B30)
+1 param, 6 slots, 1 upvalue, 3 locals, 9 constants, 0 functions
+	1	[308]	GETTABUP 	1 0 -1	; _ENV "RewardApi"
+	2	[308]	GETTABLE 	1 1 -2	; "GetRewardCategoryType"
+	3	[308]	MOVE     	2 0
+	4	[308]	CALL     	1 2 2
+	5	[309]	GETTABUP 	2 0 -3	; _ENV "GM"
+	6	[309]	GETTABLE 	2 2 -4	; "RewardHandlerManager"
+	7	[309]	SELF     	2 2 -5	; "GetHandler"
+	8	[309]	MOVE     	4 1
+	9	[309]	CALL     	2 3 2
+	10	[310]	EQ       	1 2 -6	; - nil
+	11	[310]	JMP      	0 4	; to 16
+	12	[311]	SELF     	3 2 -7	; "GetRewardIconNameAndIsSetNativeSize"
+	13	[311]	MOVE     	5 0
+	14	[311]	TAILCALL 	3 3 0
+	15	[311]	RETURN   	3 0
+	16	[313]	GETTABUP 	3 0 -3	; _ENV "GM"
+	17	[313]	GETTABLE 	3 3 -8	; "ItemDataModel"
+	18	[313]	SELF     	3 3 -9	; "GetSpriteName"
+	19	[313]	MOVE     	5 0
+	20	[313]	CALL     	3 3 2
+	21	[313]	LOADBOOL 	4 1 0
+	22	[313]	RETURN   	3 3
+	23	[314]	RETURN   	0 1
+constants (9) for 0000024672784B30:
+	1	"RewardApi"
+	2	"GetRewardCategoryType"
+	3	"GM"
+	4	"RewardHandlerManager"
+	5	"GetHandler"
+	6	nil
+	7	"GetRewardIconNameAndIsSetNativeSize"
+	8	"ItemDataModel"
+	9	"GetSpriteName"
+locals (3) for 0000024672784B30:
+	0	rewardType	1	24
+	1	categoryType	5	24
+	2	handler	10	24
+upvalues (1) for 0000024672784B30:
+	0	_ENV	0	0
+
+function <RewardApi.lua:318,328> (21 instructions at 0000024672784D30)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[319]	TEST     	0 0
+	2	[319]	JMP      	0 5	; to 8
+	3	[319]	GETTABUP 	2 0 -1	; _ENV "IsString"
+	4	[319]	MOVE     	3 0
+	5	[319]	CALL     	2 2 2
+	6	[319]	TEST     	2 1
+	7	[319]	JMP      	0 2	; to 10
+	8	[320]	LOADBOOL 	2 0 0
+	9	[320]	RETURN   	2 2
+	10	[323]	GETTABUP 	2 0 -2	; _ENV "StringUtil"
+	11	[323]	GETTABLE 	2 2 -3	; "StartWith"
+	12	[323]	MOVE     	3 0
+	13	[323]	MOVE     	4 1
+	14	[323]	CALL     	2 3 2
+	15	[323]	TEST     	2 1
+	16	[323]	JMP      	0 2	; to 19
+	17	[324]	LOADBOOL 	2 0 0
+	18	[324]	RETURN   	2 2
+	19	[327]	LOADBOOL 	2 1 0
+	20	[327]	RETURN   	2 2
+	21	[328]	RETURN   	0 1
+constants (3) for 0000024672784D30:
+	1	"IsString"
+	2	"StringUtil"
+	3	"StartWith"
+locals (2) for 0000024672784D30:
+	0	rewardType	1	22
+	1	prefix	1	22
+upvalues (1) for 0000024672784D30:
+	0	_ENV	0	0
+
+function <RewardApi.lua:331,333> (9 instructions at 0000024672785680)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[332]	GETTABUP 	1 0 -1	; _ENV "string"
+	2	[332]	GETTABLE 	1 1 -2	; "sub"
+	3	[332]	MOVE     	2 0
+	4	[332]	GETTABUP 	3 0 -3	; _ENV "SKIN_REWARD_PREFIX"
+	5	[332]	LEN      	3 3
+	6	[332]	ADD      	3 3 -4	; - 1
+	7	[332]	TAILCALL 	1 3 0
+	8	[332]	RETURN   	1 0
+	9	[333]	RETURN   	0 1
+constants (4) for 0000024672785680:
+	1	"string"
+	2	"sub"
+	3	"SKIN_REWARD_PREFIX"
+	4	1
+locals (1) for 0000024672785680:
+	0	rewardType	1	10
+upvalues (1) for 0000024672785680:
+	0	_ENV	0	0
+
+function <RewardApi.lua:336,341> (10 instructions at 00000246727864D0)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[337]	NEWTABLE 	1 0 2
+	2	[338]	GETTABUP 	2 0 -1	; _ENV "PROPERTY_TYPE"
+	3	[338]	GETTABUP 	3 0 -2	; _ENV "SKIN_REWARD_PREFIX"
+	4	[338]	MOVE     	4 0
+	5	[338]	CONCAT   	3 3 4
+	6	[338]	SETTABLE 	1 2 3
+	7	[339]	GETTABUP 	2 0 -3	; _ENV "PROPERTY_COUNT"
+	8	[339]	SETTABLE 	1 2 -4	; - 1
+	9	[340]	RETURN   	1 2
+	10	[341]	RETURN   	0 1
+constants (4) for 00000246727864D0:
+	1	"PROPERTY_TYPE"
+	2	"SKIN_REWARD_PREFIX"
+	3	"PROPERTY_COUNT"
+	4	1
+locals (1) for 00000246727864D0:
+	0	skinId	1	11
+upvalues (1) for 00000246727864D0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:343,350> (18 instructions at 0000024672785FD0)
+1 param, 9 slots, 1 upvalue, 6 locals, 5 constants, 0 functions
+	1	[344]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[344]	GETTABUP 	2 0 -2	; _ENV "AdventureActivityDefinition"
+	3	[344]	CALL     	1 2 4
+	4	[344]	JMP      	0 9	; to 14
+	5	[345]	GETTABUP 	6 0 -3	; _ENV "RewardApi"
+	6	[345]	GETTABLE 	6 6 -4	; "CheckRewardPrefix"
+	7	[345]	MOVE     	7 0
+	8	[345]	GETTABLE 	8 5 -5	; "ToolItemChain"
+	9	[345]	CALL     	6 3 2
+	10	[345]	TEST     	6 0
+	11	[345]	JMP      	0 2	; to 14
+	12	[346]	LOADBOOL 	6 1 0
+	13	[346]	RETURN   	6 2
+	14	[344]	TFORCALL 	1 2
+	15	[344]	TFORLOOP 	3 -11	; to 5
+	16	[349]	LOADBOOL 	1 0 0
+	17	[349]	RETURN   	1 2
+	18	[350]	RETURN   	0 1
+constants (5) for 0000024672785FD0:
+	1	"pairs"
+	2	"AdventureActivityDefinition"
+	3	"RewardApi"
+	4	"CheckRewardPrefix"
+	5	"ToolItemChain"
+locals (6) for 0000024672785FD0:
+	0	rewardType	1	19
+	1	(for generator)	4	16
+	2	(for state)	4	16
+	3	(for control)	4	16
+	4	_	5	14
+	5	definition	5	14
+upvalues (1) for 0000024672785FD0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:352,359> (18 instructions at 0000024672786150)
+1 param, 9 slots, 1 upvalue, 6 locals, 5 constants, 0 functions
+	1	[353]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[353]	GETTABUP 	2 0 -2	; _ENV "PureBoardActivityDefinition"
+	3	[353]	CALL     	1 2 4
+	4	[353]	JMP      	0 9	; to 14
+	5	[354]	GETTABUP 	6 0 -3	; _ENV "RewardApi"
+	6	[354]	GETTABLE 	6 6 -4	; "CheckRewardPrefix"
+	7	[354]	MOVE     	7 0
+	8	[354]	GETTABLE 	8 5 -5	; "ItemChainPrefix"
+	9	[354]	CALL     	6 3 2
+	10	[354]	TEST     	6 0
+	11	[354]	JMP      	0 2	; to 14
+	12	[355]	LOADBOOL 	6 1 0
+	13	[355]	RETURN   	6 2
+	14	[353]	TFORCALL 	1 2
+	15	[353]	TFORLOOP 	3 -11	; to 5
+	16	[358]	LOADBOOL 	1 0 0
+	17	[358]	RETURN   	1 2
+	18	[359]	RETURN   	0 1
+constants (5) for 0000024672786150:
+	1	"pairs"
+	2	"PureBoardActivityDefinition"
+	3	"RewardApi"
+	4	"CheckRewardPrefix"
+	5	"ItemChainPrefix"
+locals (6) for 0000024672786150:
+	0	rewardType	1	19
+	1	(for generator)	4	16
+	2	(for state)	4	16
+	3	(for control)	4	16
+	4	_	5	14
+	5	definition	5	14
+upvalues (1) for 0000024672786150:
+	0	_ENV	0	0
+
+function <RewardApi.lua:361,368> (18 instructions at 0000024672785ED0)
+1 param, 9 slots, 1 upvalue, 6 locals, 5 constants, 0 functions
+	1	[362]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[362]	GETTABUP 	2 0 -2	; _ENV "MultiboardsActivityDefinition"
+	3	[362]	CALL     	1 2 4
+	4	[362]	JMP      	0 9	; to 14
+	5	[363]	GETTABUP 	6 0 -3	; _ENV "RewardApi"
+	6	[363]	GETTABLE 	6 6 -4	; "CheckRewardPrefix"
+	7	[363]	MOVE     	7 0
+	8	[363]	GETTABLE 	8 5 -5	; "ItemChain"
+	9	[363]	CALL     	6 3 2
+	10	[363]	TEST     	6 0
+	11	[363]	JMP      	0 2	; to 14
+	12	[364]	LOADBOOL 	6 1 0
+	13	[364]	RETURN   	6 2
+	14	[362]	TFORCALL 	1 2
+	15	[362]	TFORLOOP 	3 -11	; to 5
+	16	[367]	LOADBOOL 	1 0 0
+	17	[367]	RETURN   	1 2
+	18	[368]	RETURN   	0 1
+constants (5) for 0000024672785ED0:
+	1	"pairs"
+	2	"MultiboardsActivityDefinition"
+	3	"RewardApi"
+	4	"CheckRewardPrefix"
+	5	"ItemChain"
+locals (6) for 0000024672785ED0:
+	0	rewardType	1	19
+	1	(for generator)	4	16
+	2	(for state)	4	16
+	3	(for control)	4	16
+	4	_	5	14
+	5	definition	5	14
+upvalues (1) for 0000024672785ED0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:370,372> (10 instructions at 0000024672786650)
+2 params, 4 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[371]	GETTABUP 	2 0 -1	; _ENV "RewardApi"
+	2	[371]	GETTABLE 	2 2 -2	; "GetRewardCategoryType"
+	3	[371]	MOVE     	3 0
+	4	[371]	CALL     	2 2 2
+	5	[371]	EQ       	1 2 1
+	6	[371]	JMP      	0 1	; to 8
+	7	[371]	LOADBOOL 	2 0 1
+	8	[371]	LOADBOOL 	2 1 0
+	9	[371]	RETURN   	2 2
+	10	[372]	RETURN   	0 1
+constants (2) for 0000024672786650:
+	1	"RewardApi"
+	2	"GetRewardCategoryType"
+locals (2) for 0000024672786650:
+	0	rewardType	1	11
+	1	categoryType	1	11
+upvalues (1) for 0000024672786650:
+	0	_ENV	0	0
+
+function <RewardApi.lua:374,426> (250 instructions at 0000024672785CD0)
+2 params, 7 slots, 1 upvalue, 2 locals, 59 constants, 0 functions
+	1	[375]	GETTABUP 	2 0 -1	; _ENV "Log"
+	2	[375]	GETTABLE 	2 2 -2	; "Assert"
+	3	[375]	GETTABUP 	3 0 -3	; _ENV "StringUtil"
+	4	[375]	GETTABLE 	3 3 -4	; "IsNilOrEmpty"
+	5	[375]	MOVE     	4 0
+	6	[375]	CALL     	3 2 2
+	7	[375]	NOT      	3 3
+	8	[375]	LOADK    	4 -5	; "[RewardApi] reward is nil or not have type"
+	9	[375]	CALL     	2 3 1
+	10	[376]	GETTABUP 	2 0 -6	; _ENV "GM"
+	11	[376]	GETTABLE 	2 2 -7	; "PropertyDataManager"
+	12	[376]	SELF     	2 2 -8	; "IsPropertyType"
+	13	[376]	MOVE     	4 0
+	14	[376]	CALL     	2 3 2
+	15	[376]	TEST     	2 0
+	16	[376]	JMP      	0 4	; to 21
+	17	[377]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	18	[377]	GETTABLE 	2 2 -10	; "Property"
+	19	[377]	RETURN   	2 2
+	20	[377]	JMP      	0 229	; to 250
+	21	[378]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	22	[378]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	23	[378]	MOVE     	3 0
+	24	[378]	GETTABUP 	4 0 -13	; _ENV "SKIN_REWARD_PREFIX"
+	25	[378]	CALL     	2 3 2
+	26	[378]	TEST     	2 0
+	27	[378]	JMP      	0 4	; to 32
+	28	[379]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	29	[379]	GETTABLE 	2 2 -14	; "Skin"
+	30	[379]	RETURN   	2 2
+	31	[379]	JMP      	0 218	; to 250
+	32	[380]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	33	[380]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	34	[380]	MOVE     	3 0
+	35	[380]	GETTABUP 	4 0 -15	; _ENV "AVATAR_REWARD_PREFIX"
+	36	[380]	CALL     	2 3 2
+	37	[380]	TEST     	2 0
+	38	[380]	JMP      	0 4	; to 43
+	39	[381]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	40	[381]	GETTABLE 	2 2 -16	; "Avatar"
+	41	[381]	RETURN   	2 2
+	42	[381]	JMP      	0 207	; to 250
+	43	[382]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	44	[382]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	45	[382]	MOVE     	3 0
+	46	[382]	GETTABUP 	4 0 -17	; _ENV "AVATAR_FRAME_REWARD_PREFIX"
+	47	[382]	CALL     	2 3 2
+	48	[382]	TEST     	2 0
+	49	[382]	JMP      	0 4	; to 54
+	50	[383]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	51	[383]	GETTABLE 	2 2 -18	; "AvatarFrame"
+	52	[383]	RETURN   	2 2
+	53	[383]	JMP      	0 196	; to 250
+	54	[384]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	55	[384]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	56	[384]	MOVE     	3 0
+	57	[384]	GETTABUP 	4 0 -19	; _ENV "BUFF_REWARD_PREFIX"
+	58	[384]	CALL     	2 3 2
+	59	[384]	TEST     	2 0
+	60	[384]	JMP      	0 4	; to 65
+	61	[385]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	62	[385]	GETTABLE 	2 2 -20	; "BuffProperty"
+	63	[385]	RETURN   	2 2
+	64	[385]	JMP      	0 185	; to 250
+	65	[386]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	66	[386]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	67	[386]	MOVE     	3 0
+	68	[386]	GETTABUP 	4 0 -21	; _ENV "RANDOM_REWARD_PREFIX"
+	69	[386]	CALL     	2 3 2
+	70	[386]	TEST     	2 0
+	71	[386]	JMP      	0 4	; to 76
+	72	[387]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	73	[387]	GETTABLE 	2 2 -22	; "RandomReward"
+	74	[387]	RETURN   	2 2
+	75	[387]	JMP      	0 174	; to 250
+	76	[388]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	77	[388]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	78	[388]	MOVE     	3 0
+	79	[388]	GETTABUP 	4 0 -23	; _ENV "ORDER_BUFF_BOX_PREFIX"
+	80	[388]	CALL     	2 3 2
+	81	[388]	TEST     	2 0
+	82	[388]	JMP      	0 4	; to 87
+	83	[389]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	84	[389]	GETTABLE 	2 2 -24	; "OrderBuffBox"
+	85	[389]	RETURN   	2 2
+	86	[389]	JMP      	0 163	; to 250
+	87	[390]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	88	[390]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	89	[390]	MOVE     	3 0
+	90	[390]	GETTABUP 	4 0 -25	; _ENV "ALBUM_NEW_CARD_PREFIX"
+	91	[390]	CALL     	2 3 2
+	92	[390]	TEST     	2 0
+	93	[390]	JMP      	0 4	; to 98
+	94	[391]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	95	[391]	GETTABLE 	2 2 -26	; "AlbumNewCard"
+	96	[391]	RETURN   	2 2
+	97	[391]	JMP      	0 152	; to 250
+	98	[392]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	99	[392]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	100	[392]	MOVE     	3 0
+	101	[392]	GETTABUP 	4 0 -27	; _ENV "PLANE_REWARD_PREFIX"
+	102	[392]	CALL     	2 3 2
+	103	[392]	TEST     	2 0
+	104	[392]	JMP      	0 4	; to 109
+	105	[393]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	106	[393]	GETTABLE 	2 2 -28	; "PlaneReward"
+	107	[393]	RETURN   	2 2
+	108	[393]	JMP      	0 141	; to 250
+	109	[394]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	110	[394]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	111	[394]	MOVE     	3 0
+	112	[394]	GETTABUP 	4 0 -29	; _ENV "RACCOON_REWARD_PREFIX"
+	113	[394]	CALL     	2 3 2
+	114	[394]	TEST     	2 0
+	115	[394]	JMP      	0 4	; to 120
+	116	[395]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	117	[395]	GETTABLE 	2 2 -30	; "RaccoonReward"
+	118	[395]	RETURN   	2 2
+	119	[395]	JMP      	0 130	; to 250
+	120	[396]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	121	[396]	GETTABLE 	2 2 -31	; "CheckIsAdventureToolItem"
+	122	[396]	MOVE     	3 0
+	123	[396]	CALL     	2 2 2
+	124	[396]	TEST     	2 0
+	125	[396]	JMP      	0 4	; to 130
+	126	[397]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	127	[397]	GETTABLE 	2 2 -32	; "AdventureToolItem"
+	128	[397]	RETURN   	2 2
+	129	[397]	JMP      	0 120	; to 250
+	130	[398]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	131	[398]	GETTABLE 	2 2 -33	; "CheckIsMultiboardsMergeLineItem"
+	132	[398]	MOVE     	3 0
+	133	[398]	CALL     	2 2 2
+	134	[398]	TEST     	2 0
+	135	[398]	JMP      	0 4	; to 140
+	136	[399]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	137	[399]	GETTABLE 	2 2 -34	; "MultiboardsMergeLineItem"
+	138	[399]	RETURN   	2 2
+	139	[399]	JMP      	0 110	; to 250
+	140	[400]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	141	[400]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	142	[400]	MOVE     	3 0
+	143	[400]	GETTABUP 	4 0 -35	; _ENV "CUSTOM_BOARD_ITEM_PREFIX"
+	144	[400]	CALL     	2 3 2
+	145	[400]	TEST     	2 0
+	146	[400]	JMP      	0 4	; to 151
+	147	[401]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	148	[401]	GETTABLE 	2 2 -36	; "CustomBoardItem"
+	149	[401]	RETURN   	2 2
+	150	[401]	JMP      	0 99	; to 250
+	151	[402]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	152	[402]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	153	[402]	MOVE     	3 0
+	154	[402]	GETTABUP 	4 0 -37	; _ENV "ChestCustomerModel"
+	155	[402]	GETTABLE 	4 4 -38	; "RewardKey"
+	156	[402]	CALL     	2 3 2
+	157	[402]	TEST     	2 0
+	158	[402]	JMP      	0 4	; to 163
+	159	[403]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	160	[403]	GETTABLE 	2 2 -39	; "ChestCustomOrderReward"
+	161	[403]	RETURN   	2 2
+	162	[403]	JMP      	0 87	; to 250
+	163	[404]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	164	[404]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	165	[404]	MOVE     	3 0
+	166	[404]	GETTABUP 	4 0 -40	; _ENV "BOOST_CHARGE_PREFIX"
+	167	[404]	CALL     	2 3 2
+	168	[404]	TEST     	2 0
+	169	[404]	JMP      	0 4	; to 174
+	170	[405]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	171	[405]	GETTABLE 	2 2 -41	; "BoostCharge"
+	172	[405]	RETURN   	2 2
+	173	[405]	JMP      	0 76	; to 250
+	174	[406]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	175	[406]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	176	[406]	MOVE     	3 0
+	177	[406]	GETTABUP 	4 0 -42	; _ENV "SPIN_RANDOM_PREFIX"
+	178	[406]	CALL     	2 3 2
+	179	[406]	TEST     	2 0
+	180	[406]	JMP      	0 4	; to 185
+	181	[407]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	182	[407]	GETTABLE 	2 2 -43	; "SpinRandomReward"
+	183	[407]	RETURN   	2 2
+	184	[407]	JMP      	0 65	; to 250
+	185	[408]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	186	[408]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	187	[408]	MOVE     	3 0
+	188	[408]	GETTABUP 	4 0 -44	; _ENV "CUSTOMER_UPGRADE_PREFIX"
+	189	[408]	CALL     	2 3 2
+	190	[408]	TEST     	2 0
+	191	[408]	JMP      	0 4	; to 196
+	192	[409]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	193	[409]	GETTABLE 	2 2 -45	; "CustomerUpgradeReward"
+	194	[409]	RETURN   	2 2
+	195	[409]	JMP      	0 54	; to 250
+	196	[410]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	197	[410]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	198	[410]	MOVE     	3 0
+	199	[410]	GETTABUP 	4 0 -46	; _ENV "N_CHOOSE_ONE_PREFIX"
+	200	[410]	CALL     	2 3 2
+	201	[410]	TEST     	2 0
+	202	[410]	JMP      	0 4	; to 207
+	203	[411]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	204	[411]	GETTABLE 	2 2 -47	; "NChooseOneReward"
+	205	[411]	RETURN   	2 2
+	206	[411]	JMP      	0 43	; to 250
+	207	[412]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	208	[412]	GETTABLE 	2 2 -12	; "CheckRewardPrefix"
+	209	[412]	MOVE     	3 0
+	210	[412]	GETTABUP 	4 0 -48	; _ENV "CANNON_REWARD_PREFIX"
+	211	[412]	CALL     	2 3 2
+	212	[412]	TEST     	2 0
+	213	[412]	JMP      	0 4	; to 218
+	214	[413]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	215	[413]	GETTABLE 	2 2 -49	; "CannonReward"
+	216	[413]	RETURN   	2 2
+	217	[413]	JMP      	0 32	; to 250
+	218	[414]	GETTABUP 	2 0 -11	; _ENV "RewardApi"
+	219	[414]	GETTABLE 	2 2 -50	; "CheckIsPureBoardMergeLineItem"
+	220	[414]	MOVE     	3 0
+	221	[414]	CALL     	2 2 2
+	222	[414]	TEST     	2 0
+	223	[414]	JMP      	0 4	; to 228
+	224	[415]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	225	[415]	GETTABLE 	2 2 -51	; "PureBoardMergeLineItem"
+	226	[415]	RETURN   	2 2
+	227	[415]	JMP      	0 22	; to 250
+	228	[416]	GETTABUP 	2 0 -52	; _ENV "ItemTypeMap"
+	229	[416]	GETTABLE 	2 2 0
+	230	[416]	TEST     	2 0
+	231	[416]	JMP      	0 4	; to 236
+	232	[418]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	233	[418]	GETTABLE 	2 2 -53	; "Item"
+	234	[418]	RETURN   	2 2
+	235	[418]	JMP      	0 14	; to 250
+	236	[420]	TEST     	1 1
+	237	[420]	JMP      	0 9	; to 247
+	238	[421]	GETTABUP 	2 0 -6	; _ENV "GM"
+	239	[421]	GETTABLE 	2 2 -54	; "BIManager"
+	240	[421]	SELF     	2 2 -55	; "LogErrorInfo"
+	241	[421]	GETTABUP 	4 0 -56	; _ENV "EBIType"
+	242	[421]	GETTABLE 	4 4 -57	; "UnknownRewardType"
+	243	[421]	GETTABUP 	5 0 -58	; _ENV "tostring"
+	244	[421]	MOVE     	6 0
+	245	[421]	CALL     	5 2 0
+	246	[421]	CALL     	2 0 1
+	247	[424]	GETTABUP 	2 0 -9	; _ENV "ERewardCategoryType"
+	248	[424]	GETTABLE 	2 2 -59	; "Unknown"
+	249	[424]	RETURN   	2 2
+	250	[426]	RETURN   	0 1
+constants (59) for 0000024672785CD0:
+	1	"Log"
+	2	"Assert"
+	3	"StringUtil"
+	4	"IsNilOrEmpty"
+	5	"[RewardApi] reward is nil or not have type"
+	6	"GM"
+	7	"PropertyDataManager"
+	8	"IsPropertyType"
+	9	"ERewardCategoryType"
+	10	"Property"
+	11	"RewardApi"
+	12	"CheckRewardPrefix"
+	13	"SKIN_REWARD_PREFIX"
+	14	"Skin"
+	15	"AVATAR_REWARD_PREFIX"
+	16	"Avatar"
+	17	"AVATAR_FRAME_REWARD_PREFIX"
+	18	"AvatarFrame"
+	19	"BUFF_REWARD_PREFIX"
+	20	"BuffProperty"
+	21	"RANDOM_REWARD_PREFIX"
+	22	"RandomReward"
+	23	"ORDER_BUFF_BOX_PREFIX"
+	24	"OrderBuffBox"
+	25	"ALBUM_NEW_CARD_PREFIX"
+	26	"AlbumNewCard"
+	27	"PLANE_REWARD_PREFIX"
+	28	"PlaneReward"
+	29	"RACCOON_REWARD_PREFIX"
+	30	"RaccoonReward"
+	31	"CheckIsAdventureToolItem"
+	32	"AdventureToolItem"
+	33	"CheckIsMultiboardsMergeLineItem"
+	34	"MultiboardsMergeLineItem"
+	35	"CUSTOM_BOARD_ITEM_PREFIX"
+	36	"CustomBoardItem"
+	37	"ChestCustomerModel"
+	38	"RewardKey"
+	39	"ChestCustomOrderReward"
+	40	"BOOST_CHARGE_PREFIX"
+	41	"BoostCharge"
+	42	"SPIN_RANDOM_PREFIX"
+	43	"SpinRandomReward"
+	44	"CUSTOMER_UPGRADE_PREFIX"
+	45	"CustomerUpgradeReward"
+	46	"N_CHOOSE_ONE_PREFIX"
+	47	"NChooseOneReward"
+	48	"CANNON_REWARD_PREFIX"
+	49	"CannonReward"
+	50	"CheckIsPureBoardMergeLineItem"
+	51	"PureBoardMergeLineItem"
+	52	"ItemTypeMap"
+	53	"Item"
+	54	"BIManager"
+	55	"LogErrorInfo"
+	56	"EBIType"
+	57	"UnknownRewardType"
+	58	"tostring"
+	59	"Unknown"
+locals (2) for 0000024672785CD0:
+	0	rewardType	1	251
+	1	ignoreError	1	251
+upvalues (1) for 0000024672785CD0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:428,430> (12 instructions at 0000024672786050)
+1 param, 2 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[429]	GETTABUP 	1 0 -1	; _ENV "EPropertyType"
+	2	[429]	GETTABLE 	1 1 -2	; "JokerCommonCard"
+	3	[429]	EQ       	1 0 1
+	4	[429]	JMP      	0 5	; to 10
+	5	[429]	GETTABUP 	1 0 -1	; _ENV "EPropertyType"
+	6	[429]	GETTABLE 	1 1 -3	; "JokerGoldenCard"
+	7	[429]	EQ       	1 0 1
+	8	[429]	JMP      	0 1	; to 10
+	9	[429]	LOADBOOL 	1 0 1
+	10	[429]	LOADBOOL 	1 1 0
+	11	[429]	RETURN   	1 2
+	12	[430]	RETURN   	0 1
+constants (3) for 0000024672786050:
+	1	"EPropertyType"
+	2	"JokerCommonCard"
+	3	"JokerGoldenCard"
+locals (1) for 0000024672786050:
+	0	rewardType	1	13
+upvalues (1) for 0000024672786050:
+	0	_ENV	0	0
+
+function <RewardApi.lua:432,443> (31 instructions at 00000246727865D0)
+1 param, 6 slots, 1 upvalue, 3 locals, 15 constants, 0 functions
+	1	[434]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[434]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[434]	CALL     	1 1 2
+	4	[434]	TEST     	1 0
+	5	[434]	JMP      	0 10	; to 16
+	6	[434]	GETTABUP 	1 0 -3	; _ENV "PlayerPrefs"
+	7	[434]	GETTABLE 	1 1 -4	; "GetInt"
+	8	[434]	GETTABUP 	2 0 -5	; _ENV "EPlayerPrefKey"
+	9	[434]	GETTABLE 	2 2 -6	; "TestShowAllRewardItemTip"
+	10	[434]	LOADK    	3 -7	; 0
+	11	[434]	CALL     	1 3 2
+	12	[434]	EQ       	0 1 -8	; - 1
+	13	[434]	JMP      	0 2	; to 16
+	14	[435]	LOADBOOL 	1 1 0
+	15	[435]	RETURN   	1 2
+	16	[438]	GETTABUP 	1 0 -9	; _ENV "RewardApi"
+	17	[438]	GETTABLE 	1 1 -10	; "GetRewardCategoryType"
+	18	[438]	MOVE     	2 0
+	19	[438]	CALL     	1 2 2
+	20	[439]	GETTABUP 	2 0 -11	; _ENV "GM"
+	21	[439]	GETTABLE 	2 2 -12	; "RewardHandlerManager"
+	22	[439]	SELF     	2 2 -13	; "GetHandler"
+	23	[439]	MOVE     	4 1
+	24	[439]	CALL     	2 3 2
+	25	[440]	EQ       	1 2 -14	; - nil
+	26	[440]	JMP      	0 4	; to 31
+	27	[441]	SELF     	3 2 -15	; "CanShowTipButton"
+	28	[441]	MOVE     	5 0
+	29	[441]	TAILCALL 	3 3 0
+	30	[441]	RETURN   	3 0
+	31	[443]	RETURN   	0 1
+constants (15) for 00000246727865D0:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"PlayerPrefs"
+	4	"GetInt"
+	5	"EPlayerPrefKey"
+	6	"TestShowAllRewardItemTip"
+	7	0
+	8	1
+	9	"RewardApi"
+	10	"GetRewardCategoryType"
+	11	"GM"
+	12	"RewardHandlerManager"
+	13	"GetHandler"
+	14	nil
+	15	"CanShowTipButton"
+locals (3) for 00000246727865D0:
+	0	rewardType	1	32
+	1	categoryType	20	32
+	2	handler	25	32
+upvalues (1) for 00000246727865D0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:448,470> (53 instructions at 0000024672786350)
+2 params, 10 slots, 1 upvalue, 7 locals, 7 constants, 1 function
+	1	[449]	LEN      	2 0
+	2	[449]	LEN      	3 1
+	3	[449]	EQ       	1 2 3
+	4	[449]	JMP      	0 2	; to 7
+	5	[450]	LOADBOOL 	2 0 0
+	6	[450]	RETURN   	2 2
+	7	[452]	GETTABUP 	2 0 -1	; _ENV "Table"
+	8	[452]	GETTABLE 	2 2 -2	; "DeepCopy"
+	9	[452]	MOVE     	3 0
+	10	[452]	CALL     	2 2 2
+	11	[452]	MOVE     	0 2
+	12	[453]	GETTABUP 	2 0 -1	; _ENV "Table"
+	13	[453]	GETTABLE 	2 2 -2	; "DeepCopy"
+	14	[453]	MOVE     	3 1
+	15	[453]	CALL     	2 2 2
+	16	[453]	MOVE     	1 2
+	17	[460]	CLOSURE  	2 0	; 0000024672785750
+	18	[461]	GETTABUP 	3 0 -3	; _ENV "table"
+	19	[461]	GETTABLE 	3 3 -4	; "sort"
+	20	[461]	MOVE     	4 0
+	21	[461]	MOVE     	5 2
+	22	[461]	CALL     	3 3 1
+	23	[462]	GETTABUP 	3 0 -3	; _ENV "table"
+	24	[462]	GETTABLE 	3 3 -4	; "sort"
+	25	[462]	MOVE     	4 1
+	26	[462]	MOVE     	5 2
+	27	[462]	CALL     	3 3 1
+	28	[463]	LOADK    	3 -5	; 1
+	29	[463]	LEN      	4 0
+	30	[463]	LOADK    	5 -5	; 1
+	31	[463]	FORPREP  	3 18	; to 50
+	32	[464]	GETTABLE 	7 0 6
+	33	[464]	GETTABUP 	8 0 -6	; _ENV "PROPERTY_TYPE"
+	34	[464]	GETTABLE 	7 7 8
+	35	[464]	GETTABLE 	8 1 6
+	36	[464]	GETTABUP 	9 0 -6	; _ENV "PROPERTY_TYPE"
+	37	[464]	GETTABLE 	8 8 9
+	38	[464]	EQ       	0 7 8
+	39	[464]	JMP      	0 8	; to 48
+	40	[465]	GETTABLE 	7 0 6
+	41	[465]	GETTABUP 	8 0 -7	; _ENV "PROPERTY_COUNT"
+	42	[465]	GETTABLE 	7 7 8
+	43	[465]	GETTABLE 	8 1 6
+	44	[465]	GETTABUP 	9 0 -7	; _ENV "PROPERTY_COUNT"
+	45	[465]	GETTABLE 	8 8 9
+	46	[465]	EQ       	1 7 8
+	47	[465]	JMP      	0 2	; to 50
+	48	[466]	LOADBOOL 	7 0 0
+	49	[466]	RETURN   	7 2
+	50	[463]	FORLOOP  	3 -19	; to 32
+	51	[469]	LOADBOOL 	3 1 0
+	52	[469]	RETURN   	3 2
+	53	[470]	RETURN   	0 1
+constants (7) for 0000024672786350:
+	1	"Table"
+	2	"DeepCopy"
+	3	"table"
+	4	"sort"
+	5	1
+	6	"PROPERTY_TYPE"
+	7	"PROPERTY_COUNT"
+locals (7) for 0000024672786350:
+	0	rewards1	1	54
+	1	rewards2	1	54
+	2	sortReward	18	54
+	3	(for index)	31	51
+	4	(for limit)	31	51
+	5	(for step)	31	51
+	6	i	32	50
+upvalues (1) for 0000024672786350:
+	0	_ENV	0	0
+
+function <RewardApi.lua:454,460> (26 instructions at 0000024672785750)
+2 params, 4 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[455]	GETTABUP 	2 0 -1	; _ENV "PROPERTY_TYPE"
+	2	[455]	GETTABLE 	2 0 2
+	3	[455]	GETTABUP 	3 0 -1	; _ENV "PROPERTY_TYPE"
+	4	[455]	GETTABLE 	3 1 3
+	5	[455]	EQ       	1 2 3
+	6	[455]	JMP      	0 10	; to 17
+	7	[456]	GETTABUP 	2 0 -1	; _ENV "PROPERTY_TYPE"
+	8	[456]	GETTABLE 	2 0 2
+	9	[456]	GETTABUP 	3 0 -1	; _ENV "PROPERTY_TYPE"
+	10	[456]	GETTABLE 	3 1 3
+	11	[456]	LT       	1 2 3
+	12	[456]	JMP      	0 1	; to 14
+	13	[456]	LOADBOOL 	2 0 1
+	14	[456]	LOADBOOL 	2 1 0
+	15	[456]	RETURN   	2 2
+	16	[456]	JMP      	0 9	; to 26
+	17	[458]	GETTABUP 	2 0 -2	; _ENV "PROPERTY_COUNT"
+	18	[458]	GETTABLE 	2 0 2
+	19	[458]	GETTABUP 	3 0 -2	; _ENV "PROPERTY_COUNT"
+	20	[458]	GETTABLE 	3 1 3
+	21	[458]	LT       	1 2 3
+	22	[458]	JMP      	0 1	; to 24
+	23	[458]	LOADBOOL 	2 0 1
+	24	[458]	LOADBOOL 	2 1 0
+	25	[458]	RETURN   	2 2
+	26	[460]	RETURN   	0 1
+constants (2) for 0000024672785750:
+	1	"PROPERTY_TYPE"
+	2	"PROPERTY_COUNT"
+locals (2) for 0000024672785750:
+	0	a	1	27
+	1	b	1	27
+upvalues (1) for 0000024672785750:
+	0	_ENV	0	0
+
+function <RewardApi.lua:479,488> (20 instructions at 0000024672786550)
+2 params, 9 slots, 1 upvalue, 5 locals, 8 constants, 0 functions
+	1	[480]	GETTABUP 	2 0 -1	; _ENV "PROPERTY_TYPE"
+	2	[480]	GETTABLE 	2 0 2
+	3	[481]	GETTABUP 	3 0 -2	; _ENV "RewardApi"
+	4	[481]	GETTABLE 	3 3 -3	; "GetRewardCategoryType"
+	5	[481]	MOVE     	4 2
+	6	[481]	CALL     	3 2 2
+	7	[483]	GETTABUP 	4 0 -4	; _ENV "GM"
+	8	[483]	GETTABLE 	4 4 -5	; "RewardHandlerManager"
+	9	[483]	SELF     	4 4 -6	; "GetHandler"
+	10	[483]	MOVE     	6 3
+	11	[483]	CALL     	4 3 2
+	12	[484]	EQ       	1 4 -7	; - nil
+	13	[484]	JMP      	0 5	; to 19
+	14	[485]	SELF     	5 4 -8	; "ConvertDynamicHandle"
+	15	[485]	MOVE     	7 0
+	16	[485]	MOVE     	8 1
+	17	[485]	TAILCALL 	5 4 0
+	18	[485]	RETURN   	5 0
+	19	[487]	RETURN   	0 2
+	20	[488]	RETURN   	0 1
+constants (8) for 0000024672786550:
+	1	"PROPERTY_TYPE"
+	2	"RewardApi"
+	3	"GetRewardCategoryType"
+	4	"GM"
+	5	"RewardHandlerManager"
+	6	"GetHandler"
+	7	nil
+	8	"ConvertDynamicHandle"
+locals (5) for 0000024672786550:
+	0	reward	1	21
+	1	needBI	1	21
+	2	rewardType	3	21
+	3	categoryType	7	21
+	4	handler	12	21
+upvalues (1) for 0000024672786550:
+	0	_ENV	0	0
+
+function <RewardApi.lua:494,516> (53 instructions at 0000024672785C50)
+2 params, 16 slots, 1 upvalue, 13 locals, 7 constants, 0 functions
+	1	[495]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[495]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[495]	MOVE     	3 0
+	4	[495]	CALL     	2 2 2
+	5	[495]	TEST     	2 0
+	6	[495]	JMP      	0 7	; to 14
+	7	[496]	GETTABUP 	2 0 -1	; _ENV "Table"
+	8	[496]	GETTABLE 	2 2 -3	; "DeepCopy"
+	9	[496]	MOVE     	3 1
+	10	[496]	LOADBOOL 	4 1 0
+	11	[496]	CALL     	2 3 2
+	12	[496]	MOVE     	0 2
+	13	[497]	RETURN   	0 2
+	14	[500]	GETTABUP 	2 0 -4	; _ENV "ipairs"
+	15	[500]	MOVE     	3 1
+	16	[500]	CALL     	2 2 4
+	17	[500]	JMP      	0 32	; to 50
+	18	[501]	LOADBOOL 	7 0 0
+	19	[502]	GETTABUP 	8 0 -4	; _ENV "ipairs"
+	20	[502]	MOVE     	9 0
+	21	[502]	CALL     	8 2 4
+	22	[502]	JMP      	0 15	; to 38
+	23	[503]	GETTABUP 	13 0 -5	; _ENV "PROPERTY_TYPE"
+	24	[503]	GETTABLE 	13 12 13
+	25	[503]	GETTABUP 	14 0 -5	; _ENV "PROPERTY_TYPE"
+	26	[503]	GETTABLE 	14 6 14
+	27	[503]	EQ       	0 13 14
+	28	[503]	JMP      	0 9	; to 38
+	29	[504]	GETTABUP 	13 0 -6	; _ENV "PROPERTY_COUNT"
+	30	[504]	GETTABUP 	14 0 -6	; _ENV "PROPERTY_COUNT"
+	31	[504]	GETTABLE 	14 12 14
+	32	[504]	GETTABUP 	15 0 -6	; _ENV "PROPERTY_COUNT"
+	33	[504]	GETTABLE 	15 6 15
+	34	[504]	ADD      	14 14 15
+	35	[504]	SETTABLE 	12 13 14
+	36	[505]	LOADBOOL 	7 1 0
+	37	[505]	JMP      	0 2	; to 40
+	38	[502]	TFORCALL 	8 2
+	39	[502]	TFORLOOP 	10 -17	; to 23
+	40	[510]	TEST     	7 1
+	41	[510]	JMP      	0 8	; to 50
+	42	[511]	LEN      	8 0
+	43	[511]	ADD      	8 8 -7	; - 1
+	44	[511]	GETTABUP 	9 0 -1	; _ENV "Table"
+	45	[511]	GETTABLE 	9 9 -3	; "DeepCopy"
+	46	[511]	MOVE     	10 6
+	47	[511]	LOADBOOL 	11 1 0
+	48	[511]	CALL     	9 3 2
+	49	[511]	SETTABLE 	0 8 9
+	50	[500]	TFORCALL 	2 2
+	51	[500]	TFORLOOP 	4 -34	; to 18
+	52	[515]	RETURN   	0 2
+	53	[516]	RETURN   	0 1
+constants (7) for 0000024672785C50:
+	1	"Table"
+	2	"IsEmpty"
+	3	"DeepCopy"
+	4	"ipairs"
+	5	"PROPERTY_TYPE"
+	6	"PROPERTY_COUNT"
+	7	1
+locals (13) for 0000024672785C50:
+	0	arrSrc	1	54
+	1	arrNew	1	54
+	2	(for generator)	17	52
+	3	(for state)	17	52
+	4	(for control)	17	52
+	5	i	18	50
+	6	v	18	50
+	7	bMerge	19	50
+	8	(for generator)	22	40
+	9	(for state)	22	40
+	10	(for control)	22	40
+	11	j	23	38
+	12	v1	23	38
+upvalues (1) for 0000024672785C50:
+	0	_ENV	0	0
+
+function <RewardApi.lua:518,521> (14 instructions at 00000246727859D0)
+1 param, 7 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[519]	GETTABUP 	1 0 -1	; _ENV "StringUtil"
+	2	[519]	GETTABLE 	1 1 -2	; "Split"
+	3	[519]	MOVE     	2 0
+	4	[519]	LOADK    	3 -3	; "_"
+	5	[519]	CALL     	1 3 2
+	6	[520]	GETTABLE 	2 1 -4	; 2
+	7	[520]	GETTABUP 	3 0 -5	; _ENV "table"
+	8	[520]	GETTABLE 	3 3 -6	; "concat"
+	9	[520]	MOVE     	4 1
+	10	[520]	LOADK    	5 -3	; "_"
+	11	[520]	LOADK    	6 -7	; 3
+	12	[520]	CALL     	3 4 0
+	13	[520]	RETURN   	2 0
+	14	[521]	RETURN   	0 1
+constants (7) for 00000246727859D0:
+	1	"StringUtil"
+	2	"Split"
+	3	"_"
+	4	2
+	5	"table"
+	6	"concat"
+	7	3
+locals (2) for 00000246727859D0:
+	0	rewardType	1	15
+	1	strs	6	15
+upvalues (1) for 00000246727859D0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:524,564> (91 instructions at 0000024672785AD0)
+0 params, 8 slots, 1 upvalue, 5 locals, 25 constants, 0 functions
+	1	[525]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	2	[525]	GETTABLE 	0 0 -2	; "_highlightPropertyHudKeys"
+	3	[525]	TEST     	0 1
+	4	[525]	JMP      	0 10	; to 15
+	5	[526]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	6	[526]	NEWTABLE 	1 3 0
+	7	[527]	GETTABUP 	2 0 -3	; _ENV "ESceneViewHudButtonKey"
+	8	[527]	GETTABLE 	2 2 -4	; "Energy"
+	9	[528]	GETTABUP 	3 0 -3	; _ENV "ESceneViewHudButtonKey"
+	10	[528]	GETTABLE 	3 3 -5	; "Coin"
+	11	[529]	GETTABUP 	4 0 -3	; _ENV "ESceneViewHudButtonKey"
+	12	[530]	GETTABLE 	4 4 -6	; "Gem"
+	13	[530]	SETLIST  	1 3 1	; 1
+	14	[530]	SETTABLE 	0 -2 1	; "_highlightPropertyHudKeys" -
+	15	[532]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	16	[532]	GETTABLE 	0 0 -7	; "_highlightBoardHudKeys"
+	17	[532]	TEST     	0 1
+	18	[532]	JMP      	0 6	; to 25
+	19	[533]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	20	[533]	NEWTABLE 	1 1 0
+	21	[534]	GETTABUP 	2 0 -3	; _ENV "ESceneViewHudButtonKey"
+	22	[535]	GETTABLE 	2 2 -8	; "MainBoard"
+	23	[535]	SETLIST  	1 1 1	; 1
+	24	[535]	SETTABLE 	0 -7 1	; "_highlightBoardHudKeys" -
+	25	[537]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	26	[537]	GETTABLE 	0 0 -9	; "_highlightHudKeys"
+	27	[537]	TEST     	0 1
+	28	[537]	JMP      	0 12	; to 41
+	29	[538]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	30	[538]	NEWTABLE 	1 4 0
+	31	[539]	GETTABUP 	2 0 -3	; _ENV "ESceneViewHudButtonKey"
+	32	[539]	GETTABLE 	2 2 -4	; "Energy"
+	33	[540]	GETTABUP 	3 0 -3	; _ENV "ESceneViewHudButtonKey"
+	34	[540]	GETTABLE 	3 3 -5	; "Coin"
+	35	[541]	GETTABUP 	4 0 -3	; _ENV "ESceneViewHudButtonKey"
+	36	[541]	GETTABLE 	4 4 -6	; "Gem"
+	37	[542]	GETTABUP 	5 0 -3	; _ENV "ESceneViewHudButtonKey"
+	38	[543]	GETTABLE 	5 5 -8	; "MainBoard"
+	39	[543]	SETLIST  	1 4 1	; 1
+	40	[543]	SETTABLE 	0 -9 1	; "_highlightHudKeys" -
+	41	[545]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	42	[545]	GETTABLE 	0 0 -10	; "_highlightHudAnchorType"
+	43	[545]	TEST     	0 1
+	44	[545]	JMP      	0 16	; to 61
+	45	[546]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	46	[546]	NEWTABLE 	1 6 0
+	47	[547]	GETTABUP 	2 0 -11	; _ENV "EHudAnchorType"
+	48	[547]	GETTABLE 	2 2 -12	; "CenterLeft"
+	49	[548]	GETTABUP 	3 0 -11	; _ENV "EHudAnchorType"
+	50	[548]	GETTABLE 	3 3 -13	; "Center"
+	51	[549]	GETTABUP 	4 0 -11	; _ENV "EHudAnchorType"
+	52	[549]	GETTABLE 	4 4 -14	; "CenterRight"
+	53	[550]	GETTABUP 	5 0 -11	; _ENV "EHudAnchorType"
+	54	[550]	GETTABLE 	5 5 -15	; "BottomLeft"
+	55	[551]	GETTABUP 	6 0 -11	; _ENV "EHudAnchorType"
+	56	[551]	GETTABLE 	6 6 -16	; "BottomCenter"
+	57	[552]	GETTABUP 	7 0 -11	; _ENV "EHudAnchorType"
+	58	[553]	GETTABLE 	7 7 -17	; "BottomRight"
+	59	[553]	SETLIST  	1 6 1	; 1
+	60	[553]	SETTABLE 	0 -10 1	; "_highlightHudAnchorType" -
+	61	[556]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	62	[556]	GETTABLE 	0 0 -18	; "_mapPackType"
+	63	[556]	TEST     	0 1
+	64	[556]	JMP      	0 26	; to 91
+	65	[557]	GETTABUP 	0 0 -1	; _ENV "RewardApi"
+	66	[557]	NEWTABLE 	1 0 0
+	67	[557]	SETTABLE 	0 -18 1	; "_mapPackType" -
+	68	[558]	GETTABUP 	0 0 -19	; _ENV "pairs"
+	69	[558]	GETTABUP 	1 0 -20	; _ENV "EPropertyType"
+	70	[558]	CALL     	0 2 4
+	71	[558]	JMP      	0 17	; to 89
+	72	[559]	GETTABUP 	5 0 -21	; _ENV "string"
+	73	[559]	GETTABLE 	5 5 -22	; "find"
+	74	[559]	MOVE     	6 4
+	75	[559]	LOADK    	7 -23	; "card"
+	76	[559]	CALL     	5 3 2
+	77	[559]	TEST     	5 1
+	78	[559]	JMP      	0 7	; to 86
+	79	[559]	GETTABUP 	5 0 -21	; _ENV "string"
+	80	[559]	GETTABLE 	5 5 -22	; "find"
+	81	[559]	MOVE     	6 4
+	82	[559]	LOADK    	7 -24	; "pack"
+	83	[559]	CALL     	5 3 2
+	84	[559]	TEST     	5 0
+	85	[559]	JMP      	0 3	; to 89
+	86	[560]	GETTABUP 	5 0 -1	; _ENV "RewardApi"
+	87	[560]	GETTABLE 	5 5 -18	; "_mapPackType"
+	88	[560]	SETTABLE 	5 4 -25	; - true
+	89	[558]	TFORCALL 	0 2
+	90	[558]	TFORLOOP 	2 -19	; to 72
+	91	[564]	RETURN   	0 1
+constants (25) for 0000024672785AD0:
+	1	"RewardApi"
+	2	"_highlightPropertyHudKeys"
+	3	"ESceneViewHudButtonKey"
+	4	"Energy"
+	5	"Coin"
+	6	"Gem"
+	7	"_highlightBoardHudKeys"
+	8	"MainBoard"
+	9	"_highlightHudKeys"
+	10	"_highlightHudAnchorType"
+	11	"EHudAnchorType"
+	12	"CenterLeft"
+	13	"Center"
+	14	"CenterRight"
+	15	"BottomLeft"
+	16	"BottomCenter"
+	17	"BottomRight"
+	18	"_mapPackType"
+	19	"pairs"
+	20	"EPropertyType"
+	21	"string"
+	22	"find"
+	23	"card"
+	24	"pack"
+	25	true
+locals (5) for 0000024672785AD0:
+	0	(for generator)	71	91
+	1	(for state)	71	91
+	2	(for control)	71	91
+	3	_	72	89
+	4	v	72	89
+upvalues (1) for 0000024672785AD0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:568,587> (39 instructions at 0000024672785D50)
+2 params, 7 slots, 1 upvalue, 4 locals, 19 constants, 1 function
+	1	[569]	GETTABUP 	2 0 -1	; _ENV "RewardApi"
+	2	[569]	GETTABLE 	2 2 -2	; "_InitHighlightInfo"
+	3	[569]	CALL     	2 1 1
+	4	[570]	GETTABLE 	2 1 -3	; "duration"
+	5	[570]	EQ       	0 2 -4	; - nil
+	6	[570]	JMP      	0 5	; to 12
+	7	[571]	GETTABUP 	2 0 -5	; _ENV "Log"
+	8	[571]	GETTABLE 	2 2 -6	; "Error"
+	9	[571]	LOADK    	3 -7	; "highlightHudArgs\230\156\170\228\188\160duration"
+	10	[571]	CALL     	2 2 1
+	11	[572]	RETURN   	0 1
+	12	[574]	GETTABLE 	2 1 -8	; "showHudAnchorType"
+	13	[574]	TEST     	2 1
+	14	[574]	JMP      	0 2	; to 17
+	15	[574]	GETTABUP 	2 0 -1	; _ENV "RewardApi"
+	16	[574]	GETTABLE 	2 2 -9	; "_highlightHudAnchorType"
+	17	[575]	GETTABLE 	3 1 -10	; "highlightHudKeys"
+	18	[575]	TEST     	3 1
+	19	[575]	JMP      	0 4	; to 24
+	20	[575]	GETTABUP 	3 0 -1	; _ENV "RewardApi"
+	21	[575]	GETTABLE 	3 3 -11	; "_GetHighlightHudKeys"
+	22	[575]	MOVE     	4 0
+	23	[575]	CALL     	3 2 2
+	24	[576]	TEST     	3 1
+	25	[576]	JMP      	0 1	; to 27
+	26	[577]	RETURN   	0 1
+	27	[579]	GETTABUP 	4 0 -12	; _ENV "EventDispatcher"
+	28	[579]	GETTABLE 	4 4 -13	; "DispatchEvent"
+	29	[579]	GETTABUP 	5 0 -14	; _ENV "EEventType"
+	30	[579]	GETTABLE 	5 5 -15	; "HighlightHud"
+	31	[579]	NEWTABLE 	6 0 2
+	32	[579]	SETTABLE 	6 -16 -17	; "highlight" true
+	33	[579]	SETTABLE 	6 -18 3	; "arrHudKey" -
+	34	[579]	CALL     	4 3 1
+	35	[581]	GETTABUP 	4 0 -19	; _ENV "DelayExecuteFunc"
+	36	[586]	CLOSURE  	5 0	; 0000024672785B50
+	37	[586]	GETTABLE 	6 1 -3	; "duration"
+	38	[581]	CALL     	4 3 1
+	39	[587]	RETURN   	0 1
+constants (19) for 0000024672785D50:
+	1	"RewardApi"
+	2	"_InitHighlightInfo"
+	3	"duration"
+	4	nil
+	5	"Log"
+	6	"Error"
+	7	"highlightHudArgs\230\156\170\228\188\160duration"
+	8	"showHudAnchorType"
+	9	"_highlightHudAnchorType"
+	10	"highlightHudKeys"
+	11	"_GetHighlightHudKeys"
+	12	"EventDispatcher"
+	13	"DispatchEvent"
+	14	"EEventType"
+	15	"HighlightHud"
+	16	"highlight"
+	17	true
+	18	"arrHudKey"
+	19	"DelayExecuteFunc"
+locals (4) for 0000024672785D50:
+	0	arrRewards	1	40
+	1	highlightHudArgs	1	40
+	2	showHudAnchorType	17	40
+	3	HighlightHudKeys	24	40
+upvalues (1) for 0000024672785D50:
+	0	_ENV	0	0
+
+function <RewardApi.lua:581,586> (15 instructions at 0000024672785B50)
+0 params, 4 slots, 3 upvalues, 0 locals, 8 constants, 0 functions
+	1	[582]	GETTABUP 	0 0 -1	; _ENV "EventDispatcher"
+	2	[582]	GETTABLE 	0 0 -2	; "DispatchEvent"
+	3	[582]	GETTABUP 	1 0 -3	; _ENV "EEventType"
+	4	[582]	GETTABLE 	1 1 -4	; "HighlightHud"
+	5	[582]	NEWTABLE 	2 0 2
+	6	[582]	SETTABLE 	2 -5 -6	; "highlight" false
+	7	[582]	GETUPVAL 	3 1	; HighlightHudKeys
+	8	[582]	SETTABLE 	2 -7 3	; "arrHudKey" -
+	9	[582]	CALL     	0 3 1
+	10	[583]	GETTABUP 	0 2 -8	; highlightHudArgs "func"
+	11	[583]	TEST     	0 0
+	12	[583]	JMP      	0 2	; to 15
+	13	[584]	GETTABUP 	0 2 -8	; highlightHudArgs "func"
+	14	[584]	CALL     	0 1 1
+	15	[586]	RETURN   	0 1
+constants (8) for 0000024672785B50:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"HighlightHud"
+	5	"highlight"
+	6	false
+	7	"arrHudKey"
+	8	"func"
+locals (0) for 0000024672785B50:
+upvalues (3) for 0000024672785B50:
+	0	_ENV	0	0
+	1	HighlightHudKeys	1	3
+	2	highlightHudArgs	1	1
+
+function <RewardApi.lua:591,616> (83 instructions at 00000246727863D0)
+1 param, 11 slots, 1 upvalue, 9 locals, 17 constants, 0 functions
+	1	[592]	LOADNIL  	1 1
+	2	[594]	GETTABUP 	3 0 -1	; _ENV "ipairs"
+	3	[594]	MOVE     	4 0
+	4	[594]	CALL     	3 2 4
+	5	[594]	JMP      	0 52	; to 58
+	6	[595]	GETTABUP 	8 0 -2	; _ENV "RewardApi"
+	7	[595]	GETTABLE 	8 8 -3	; "ConvertDynamicReward"
+	8	[595]	MOVE     	9 7
+	9	[595]	CALL     	8 2 2
+	10	[595]	MOVE     	7 8
+	11	[596]	GETTABUP 	8 0 -2	; _ENV "RewardApi"
+	12	[596]	GETTABLE 	8 8 -4	; "GetRewardCategoryType"
+	13	[596]	GETTABUP 	9 0 -5	; _ENV "PROPERTY_TYPE"
+	14	[596]	GETTABLE 	9 7 9
+	15	[596]	CALL     	8 2 2
+	16	[597]	GETTABUP 	9 0 -6	; _ENV "ERewardCategoryType"
+	17	[597]	GETTABLE 	9 9 -7	; "Property"
+	18	[597]	EQ       	0 8 9
+	19	[597]	JMP      	0 29	; to 49
+	20	[599]	GETTABUP 	9 0 -5	; _ENV "PROPERTY_TYPE"
+	21	[599]	GETTABLE 	9 7 9
+	22	[599]	GETTABUP 	10 0 -8	; _ENV "EPropertyType"
+	23	[599]	GETTABLE 	10 10 -9	; "Energy"
+	24	[599]	EQ       	1 9 10
+	25	[599]	JMP      	0 12	; to 38
+	26	[599]	GETTABUP 	9 0 -5	; _ENV "PROPERTY_TYPE"
+	27	[599]	GETTABLE 	9 7 9
+	28	[599]	GETTABUP 	10 0 -8	; _ENV "EPropertyType"
+	29	[599]	GETTABLE 	10 10 -10	; "Gem"
+	30	[599]	EQ       	1 9 10
+	31	[599]	JMP      	0 6	; to 38
+	32	[599]	GETTABUP 	9 0 -5	; _ENV "PROPERTY_TYPE"
+	33	[599]	GETTABLE 	9 7 9
+	34	[599]	GETTABUP 	10 0 -8	; _ENV "EPropertyType"
+	35	[599]	GETTABLE 	10 10 -11	; "Gold"
+	36	[599]	EQ       	0 9 10
+	37	[599]	JMP      	0 2	; to 40
+	38	[600]	LOADBOOL 	2 1 0
+	39	[600]	JMP      	0 18	; to 58
+	40	[602]	GETTABUP 	9 0 -2	; _ENV "RewardApi"
+	41	[602]	GETTABLE 	9 9 -12	; "IsPackReward"
+	42	[602]	GETTABUP 	10 0 -5	; _ENV "PROPERTY_TYPE"
+	43	[602]	GETTABLE 	10 7 10
+	44	[602]	CALL     	9 2 2
+	45	[602]	TEST     	9 0
+	46	[602]	JMP      	0 11	; to 58
+	47	[603]	LOADBOOL 	1 1 0
+	48	[604]	JMP      	0 9	; to 58
+	49	[605]	GETTABUP 	9 0 -6	; _ENV "ERewardCategoryType"
+	50	[605]	GETTABLE 	9 9 -13	; "Item"
+	51	[605]	EQ       	1 8 9
+	52	[605]	JMP      	0 4	; to 57
+	53	[605]	GETTABUP 	9 0 -6	; _ENV "ERewardCategoryType"
+	54	[605]	GETTABLE 	9 9 -14	; "AlbumNewCard"
+	55	[605]	EQ       	0 8 9
+	56	[605]	JMP      	0 1	; to 58
+	57	[606]	LOADBOOL 	1 1 0
+	58	[594]	TFORCALL 	3 2
+	59	[594]	TFORLOOP 	5 -54	; to 6
+	60	[609]	TEST     	1 0
+	61	[609]	JMP      	0 6	; to 68
+	62	[609]	TEST     	2 1
+	63	[609]	JMP      	0 4	; to 68
+	64	[610]	GETTABUP 	3 0 -2	; _ENV "RewardApi"
+	65	[610]	GETTABLE 	3 3 -15	; "_highlightBoardHudKeys"
+	66	[610]	RETURN   	3 2
+	67	[610]	JMP      	0 15	; to 83
+	68	[611]	TEST     	2 0
+	69	[611]	JMP      	0 6	; to 76
+	70	[611]	TEST     	1 1
+	71	[611]	JMP      	0 4	; to 76
+	72	[612]	GETTABUP 	3 0 -2	; _ENV "RewardApi"
+	73	[612]	GETTABLE 	3 3 -16	; "_highlightPropertyHudKeys"
+	74	[612]	RETURN   	3 2
+	75	[612]	JMP      	0 7	; to 83
+	76	[613]	TEST     	2 0
+	77	[613]	JMP      	0 5	; to 83
+	78	[613]	TEST     	1 0
+	79	[613]	JMP      	0 3	; to 83
+	80	[614]	GETTABUP 	3 0 -2	; _ENV "RewardApi"
+	81	[614]	GETTABLE 	3 3 -17	; "_highlightHudKeys"
+	82	[614]	RETURN   	3 2
+	83	[616]	RETURN   	0 1
+constants (17) for 00000246727863D0:
+	1	"ipairs"
+	2	"RewardApi"
+	3	"ConvertDynamicReward"
+	4	"GetRewardCategoryType"
+	5	"PROPERTY_TYPE"
+	6	"ERewardCategoryType"
+	7	"Property"
+	8	"EPropertyType"
+	9	"Energy"
+	10	"Gem"
+	11	"Gold"
+	12	"IsPackReward"
+	13	"Item"
+	14	"AlbumNewCard"
+	15	"_highlightBoardHudKeys"
+	16	"_highlightPropertyHudKeys"
+	17	"_highlightHudKeys"
+locals (9) for 00000246727863D0:
+	0	arrRewards	1	84
+	1	hasBoard	2	84
+	2	hasProperty	2	84
+	3	(for generator)	5	60
+	4	(for state)	5	60
+	5	(for control)	5	60
+	6	_	6	58
+	7	rewardData	6	58
+	8	categoryType	16	58
+upvalues (1) for 00000246727863D0:
+	0	_ENV	0	0
+
+function <RewardApi.lua:619,622> (8 instructions at 0000024672785850)
+1 param, 2 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[620]	GETTABUP 	1 0 -1	; _ENV "RewardApi"
+	2	[620]	GETTABLE 	1 1 -2	; "_InitHighlightInfo"
+	3	[620]	CALL     	1 1 1
+	4	[621]	GETTABUP 	1 0 -1	; _ENV "RewardApi"
+	5	[621]	GETTABLE 	1 1 -3	; "_mapPackType"
+	6	[621]	GETTABLE 	1 1 0
+	7	[621]	RETURN   	1 2
+	8	[622]	RETURN   	0 1
+constants (3) for 0000024672785850:
+	1	"RewardApi"
+	2	"_InitHighlightInfo"
+	3	"_mapPackType"
+locals (1) for 0000024672785850:
+	0	propertyType	1	9
+upvalues (1) for 0000024672785850:
+	0	_ENV	0	0

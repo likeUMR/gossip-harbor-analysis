@@ -1,0 +1,891 @@
+
+main <ActivityModuleManager.lua:0,0> (101 instructions at 0000022F01C7F000)
+0+ params, 5 slots, 1 upvalue, 2 locals, 46 constants, 22 functions
+	1	[2]	NEWTABLE 	0 0 0
+	2	[2]	SETTABUP 	0 -1 0	; _ENV "ActivityModuleManager"
+	3	[3]	GETTABUP 	0 0 -1	; _ENV "ActivityModuleManager"
+	4	[3]	GETTABUP 	1 0 -1	; _ENV "ActivityModuleManager"
+	5	[3]	SETTABLE 	0 -2 1	; "__index" -
+	6	[5]	LOADK    	0 -3	; 0
+	7	[9]	CLOSURE  	1 0	; 0000022F01C81A30
+	8	[12]	GETTABUP 	2 0 -1	; _ENV "ActivityModuleManager"
+	9	[12]	NEWTABLE 	3 0 9
+	10	[15]	MOVE     	4 1
+	11	[15]	CALL     	4 1 2
+	12	[15]	SETTABLE 	3 -5 4	; "ClickAcquireProperty" -
+	13	[17]	MOVE     	4 1
+	14	[17]	CALL     	4 1 2
+	15	[17]	SETTABLE 	3 -6 4	; "EventScoreConfigAcquireProperty" -
+	16	[19]	MOVE     	4 1
+	17	[19]	CALL     	4 1 2
+	18	[19]	SETTABLE 	3 -7 4	; "TaskEventProgressGain" -
+	19	[21]	MOVE     	4 1
+	20	[21]	CALL     	4 1 2
+	21	[21]	SETTABLE 	3 -8 4	; "LogicAcquireReward" -
+	22	[23]	MOVE     	4 1
+	23	[23]	CALL     	4 1 2
+	24	[23]	SETTABLE 	3 -9 4	; "FlyIconPropertyReward" -
+	25	[25]	MOVE     	4 1
+	26	[25]	CALL     	4 1 2
+	27	[25]	SETTABLE 	3 -10 4	; "ConvertDynamicReward" -
+	28	[27]	MOVE     	4 1
+	29	[27]	CALL     	4 1 2
+	30	[27]	SETTABLE 	3 -11 4	; "SmallChessboardProgress" -
+	31	[29]	MOVE     	4 1
+	32	[29]	CALL     	4 1 2
+	33	[29]	SETTABLE 	3 -12 4	; "RewardItemTipButton" -
+	34	[31]	MOVE     	4 1
+	35	[31]	CALL     	4 1 2
+	36	[31]	SETTABLE 	3 -13 4	; "GetRewardIconNameAndNativeSize" -
+	37	[32]	SETTABLE 	2 -4 3	; "ModuleType" -
+	38	[34]	GETTABUP 	2 0 -1	; _ENV "ActivityModuleManager"
+	39	[47]	CLOSURE  	3 1	; 0000022F01C81AB0
+	40	[34]	SETTABLE 	2 -14 3	; "Init" -
+	41	[50]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	42	[52]	CLOSURE  	3 2	; 0000022F01C82DC0
+	43	[50]	SETTABLE 	2 -16 3	; "Update" -
+	44	[54]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	45	[56]	CLOSURE  	3 3	; 0000022F01C82E40
+	46	[54]	SETTABLE 	2 -17 3	; "UpdatePerSecond" -
+	47	[59]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	48	[63]	CLOSURE  	3 4	; 0000022F01C82EC0
+	49	[59]	SETTABLE 	2 -18 3	; "AddRegister" -
+	50	[66]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	51	[70]	CLOSURE  	3 5	; 0000022F01C82F40
+	52	[66]	SETTABLE 	2 -19 3	; "RemoveRegister" -
+	53	[73]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	54	[77]	CLOSURE  	3 6	; 0000022F01C82FD0
+	55	[73]	SETTABLE 	2 -20 3	; "RemoveAllRegister" -
+	56	[80]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	57	[91]	CLOSURE  	3 7	; 0000022F01C830D0
+	58	[80]	SETTABLE 	2 -21 3	; "GetRewardsByOrder" -
+	59	[94]	GETTABUP 	2 0 -15	; _ENV "ActivityModuleManager"
+	60	[100]	CLOSURE  	3 8	; 0000022F01C83340
+	61	[94]	SETTABLE 	2 -22 3	; "IsOrderSpecialReward" -
+	62	[103]	GETTABUP 	2 0 -23	; _ENV "ActivityModuleManager"
+	63	[109]	CLOSURE  	3 9	; 0000022F01C83500
+	64	[103]	SETTABLE 	2 -24 3	; "IsActivityModuleLogicReward" -
+	65	[112]	GETTABUP 	2 0 -25	; _ENV "ActivityModuleManager"
+	66	[118]	CLOSURE  	3 10	; 0000022F01C83F60
+	67	[112]	SETTABLE 	2 -26 3	; "IsActivityModuleViewReward" -
+	68	[121]	GETTABUP 	2 0 -27	; _ENV "ActivityModuleManager"
+	69	[126]	CLOSURE  	3 11	; 0000022F01C849E0
+	70	[121]	SETTABLE 	2 -28 3	; "ConvertDynamicReward" -
+	71	[129]	GETTABUP 	2 0 -29	; _ENV "ActivityModuleManager"
+	72	[135]	CLOSURE  	3 12	; 0000022F01C845E0
+	73	[129]	SETTABLE 	2 -30 3	; "AcquireModuleLogicReward" -
+	74	[139]	GETTABUP 	2 0 -31	; _ENV "ActivityModuleManager"
+	75	[155]	CLOSURE  	3 13	; 0000022F01C843E0
+	76	[139]	SETTABLE 	2 -32 3	; "GetActivityEntryByType" -
+	77	[157]	GETTABUP 	2 0 -1	; _ENV "ActivityModuleManager"
+	78	[168]	CLOSURE  	3 14	; 0000022F01C84A60
+	79	[157]	SETTABLE 	2 -33 3	; "GetActivityModelByType" -
+	80	[170]	GETTABUP 	2 0 -1	; _ENV "ActivityModuleManager"
+	81	[176]	CLOSURE  	3 15	; 0000022F01C83EE0
+	82	[170]	SETTABLE 	2 -34 3	; "IsFlyScoreAnimationByType" -
+	83	[179]	GETTABUP 	2 0 -35	; _ENV "ActivityModuleManager"
+	84	[182]	CLOSURE  	3 16	; 0000022F01C84B60
+	85	[179]	SETTABLE 	2 -36 3	; "CanShowTipButton" -
+	86	[184]	GETTABUP 	2 0 -37	; _ENV "ActivityModuleManager"
+	87	[187]	CLOSURE  	3 17	; 0000022F01C84BE0
+	88	[184]	SETTABLE 	2 -38 3	; "OnItemTipButton" -
+	89	[189]	GETTABUP 	2 0 -39	; _ENV "ActivityModuleManager"
+	90	[192]	CLOSURE  	3 18	; 0000022F01C84360
+	91	[189]	SETTABLE 	2 -40 3	; "IsShowBoardAreaEntryReward" -
+	92	[194]	GETTABUP 	2 0 -41	; _ENV "ActivityModuleManager"
+	93	[197]	CLOSURE  	3 19	; 0000022F01C84860
+	94	[194]	SETTABLE 	2 -42 3	; "InViewHandle" -
+	95	[199]	GETTABUP 	2 0 -43	; _ENV "ActivityModuleManager"
+	96	[202]	CLOSURE  	3 20	; 0000022F01C84CE0
+	97	[199]	SETTABLE 	2 -44 3	; "GetRewardBigIconNameAndNativeSize" -
+	98	[204]	GETTABUP 	2 0 -45	; _ENV "ActivityModuleManager"
+	99	[207]	CLOSURE  	3 21	; 0000022F01C84460
+	100	[204]	SETTABLE 	2 -46 3	; "GetRewardIconNameAndNativeSize" -
+	101	[207]	RETURN   	0 1
+constants (46) for 0000022F01C7F000:
+	1	"ActivityModuleManager"
+	2	"__index"
+	3	0
+	4	"ModuleType"
+	5	"ClickAcquireProperty"
+	6	"EventScoreConfigAcquireProperty"
+	7	"TaskEventProgressGain"
+	8	"LogicAcquireReward"
+	9	"FlyIconPropertyReward"
+	10	"ConvertDynamicReward"
+	11	"SmallChessboardProgress"
+	12	"RewardItemTipButton"
+	13	"GetRewardIconNameAndNativeSize"
+	14	"Init"
+	15	"ActivityModuleManager"
+	16	"Update"
+	17	"UpdatePerSecond"
+	18	"AddRegister"
+	19	"RemoveRegister"
+	20	"RemoveAllRegister"
+	21	"GetRewardsByOrder"
+	22	"IsOrderSpecialReward"
+	23	"ActivityModuleManager"
+	24	"IsActivityModuleLogicReward"
+	25	"ActivityModuleManager"
+	26	"IsActivityModuleViewReward"
+	27	"ActivityModuleManager"
+	28	"ConvertDynamicReward"
+	29	"ActivityModuleManager"
+	30	"AcquireModuleLogicReward"
+	31	"ActivityModuleManager"
+	32	"GetActivityEntryByType"
+	33	"GetActivityModelByType"
+	34	"IsFlyScoreAnimationByType"
+	35	"ActivityModuleManager"
+	36	"CanShowTipButton"
+	37	"ActivityModuleManager"
+	38	"OnItemTipButton"
+	39	"ActivityModuleManager"
+	40	"IsShowBoardAreaEntryReward"
+	41	"ActivityModuleManager"
+	42	"InViewHandle"
+	43	"ActivityModuleManager"
+	44	"GetRewardBigIconNameAndNativeSize"
+	45	"ActivityModuleManager"
+	46	"GetRewardIconNameAndNativeSize"
+locals (2) for 0000022F01C7F000:
+	0	nStart	7	102
+	1	autoIncrease	8	102
+upvalues (1) for 0000022F01C7F000:
+	0	_ENV	1	0
+
+function <ActivityModuleManager.lua:6,9> (6 instructions at 0000022F01C81A30)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[7]	GETUPVAL 	0 0	; nStart
+	2	[7]	ADD      	0 0 -1	; - 1
+	3	[7]	SETUPVAL 	0 0	; nStart
+	4	[8]	GETUPVAL 	0 0	; nStart
+	5	[8]	RETURN   	0 2
+	6	[9]	RETURN   	0 1
+constants (1) for 0000022F01C81A30:
+	1	1
+locals (0) for 0000022F01C81A30:
+upvalues (1) for 0000022F01C81A30:
+	0	nStart	1	0
+
+function <ActivityModuleManager.lua:34,47> (66 instructions at 0000022F01C81AB0)
+1 param, 4 slots, 1 upvalue, 1 local, 22 constants, 0 functions
+	1	[36]	NEWTABLE 	1 0 9
+	2	[37]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	3	[37]	GETTABLE 	2 2 -3	; "ModuleType"
+	4	[37]	GETTABLE 	2 2 -4	; "ClickAcquireProperty"
+	5	[37]	GETTABUP 	3 0 -5	; _ENV "ItemClickAcquireModule"
+	6	[37]	GETTABLE 	3 3 -6	; "Create"
+	7	[37]	CALL     	3 1 2
+	8	[37]	SETTABLE 	1 2 3
+	9	[38]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	10	[38]	GETTABLE 	2 2 -3	; "ModuleType"
+	11	[38]	GETTABLE 	2 2 -7	; "EventScoreConfigAcquireProperty"
+	12	[38]	GETTABUP 	3 0 -8	; _ENV "EventOrderScoreModule"
+	13	[38]	GETTABLE 	3 3 -6	; "Create"
+	14	[38]	CALL     	3 1 2
+	15	[38]	SETTABLE 	1 2 3
+	16	[39]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	17	[39]	GETTABLE 	2 2 -3	; "ModuleType"
+	18	[39]	GETTABLE 	2 2 -9	; "TaskEventProgressGain"
+	19	[39]	GETTABUP 	3 0 -10	; _ENV "TaskEventProgressGainModule"
+	20	[39]	GETTABLE 	3 3 -6	; "Create"
+	21	[39]	CALL     	3 1 2
+	22	[39]	SETTABLE 	1 2 3
+	23	[40]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	24	[40]	GETTABLE 	2 2 -3	; "ModuleType"
+	25	[40]	GETTABLE 	2 2 -11	; "LogicAcquireReward"
+	26	[40]	GETTABUP 	3 0 -12	; _ENV "ActivityAcquirePropertyLogicModule"
+	27	[40]	GETTABLE 	3 3 -6	; "Create"
+	28	[40]	CALL     	3 1 2
+	29	[40]	SETTABLE 	1 2 3
+	30	[41]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	31	[41]	GETTABLE 	2 2 -3	; "ModuleType"
+	32	[41]	GETTABLE 	2 2 -13	; "FlyIconPropertyReward"
+	33	[41]	GETTABUP 	3 0 -14	; _ENV "ActivityAcquirePropertyFlyIconViewModule"
+	34	[41]	GETTABLE 	3 3 -6	; "Create"
+	35	[41]	CALL     	3 1 2
+	36	[41]	SETTABLE 	1 2 3
+	37	[42]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	38	[42]	GETTABLE 	2 2 -3	; "ModuleType"
+	39	[42]	GETTABLE 	2 2 -15	; "ConvertDynamicReward"
+	40	[42]	GETTABUP 	3 0 -16	; _ENV "ConvertDynamicRewardModule"
+	41	[42]	GETTABLE 	3 3 -6	; "Create"
+	42	[42]	CALL     	3 1 2
+	43	[42]	SETTABLE 	1 2 3
+	44	[43]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	45	[43]	GETTABLE 	2 2 -3	; "ModuleType"
+	46	[43]	GETTABLE 	2 2 -17	; "SmallChessboardProgress"
+	47	[43]	GETTABUP 	3 0 -18	; _ENV "ActivitySmallBoardItemProgressModule"
+	48	[43]	GETTABLE 	3 3 -6	; "Create"
+	49	[43]	CALL     	3 1 2
+	50	[43]	SETTABLE 	1 2 3
+	51	[44]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	52	[44]	GETTABLE 	2 2 -3	; "ModuleType"
+	53	[44]	GETTABLE 	2 2 -19	; "RewardItemTipButton"
+	54	[44]	GETTABUP 	3 0 -20	; _ENV "ActivityRewardItemTipButtonModule"
+	55	[44]	GETTABLE 	3 3 -6	; "Create"
+	56	[44]	CALL     	3 1 2
+	57	[44]	SETTABLE 	1 2 3
+	58	[45]	GETTABUP 	2 0 -2	; _ENV "ActivityModuleManager"
+	59	[45]	GETTABLE 	2 2 -3	; "ModuleType"
+	60	[45]	GETTABLE 	2 2 -21	; "GetRewardIconNameAndNativeSize"
+	61	[45]	GETTABUP 	3 0 -22	; _ENV "ActivityGetPropertyIconNameAndNativeModule"
+	62	[45]	GETTABLE 	3 3 -6	; "Create"
+	63	[45]	CALL     	3 1 2
+	64	[45]	SETTABLE 	1 2 3
+	65	[46]	SETTABLE 	0 -1 1	; "m_mapTypeModule" -
+	66	[47]	RETURN   	0 1
+constants (22) for 0000022F01C81AB0:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"ClickAcquireProperty"
+	5	"ItemClickAcquireModule"
+	6	"Create"
+	7	"EventScoreConfigAcquireProperty"
+	8	"EventOrderScoreModule"
+	9	"TaskEventProgressGain"
+	10	"TaskEventProgressGainModule"
+	11	"LogicAcquireReward"
+	12	"ActivityAcquirePropertyLogicModule"
+	13	"FlyIconPropertyReward"
+	14	"ActivityAcquirePropertyFlyIconViewModule"
+	15	"ConvertDynamicReward"
+	16	"ConvertDynamicRewardModule"
+	17	"SmallChessboardProgress"
+	18	"ActivitySmallBoardItemProgressModule"
+	19	"RewardItemTipButton"
+	20	"ActivityRewardItemTipButtonModule"
+	21	"GetRewardIconNameAndNativeSize"
+	22	"ActivityGetPropertyIconNameAndNativeModule"
+locals (1) for 0000022F01C81AB0:
+	0	self	1	67
+upvalues (1) for 0000022F01C81AB0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:50,52> (1 instruction at 0000022F01C82DC0)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[52]	RETURN   	0 1
+constants (0) for 0000022F01C82DC0:
+locals (1) for 0000022F01C82DC0:
+	0	self	1	2
+upvalues (0) for 0000022F01C82DC0:
+
+function <ActivityModuleManager.lua:54,56> (1 instruction at 0000022F01C82E40)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[56]	RETURN   	0 1
+constants (0) for 0000022F01C82E40:
+locals (1) for 0000022F01C82E40:
+	0	self	1	2
+upvalues (0) for 0000022F01C82E40:
+
+function <ActivityModuleManager.lua:59,63> (11 instructions at 0000022F01C82EC0)
+3+ params, 7 slots, 0 upvalues, 3 locals, 3 constants, 0 functions
+	1	[60]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[60]	GETTABLE 	3 3 1
+	3	[60]	EQ       	1 3 -2	; - nil
+	4	[60]	JMP      	0 6	; to 11
+	5	[61]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	6	[61]	GETTABLE 	3 3 1
+	7	[61]	SELF     	3 3 -3	; "AddRegister"
+	8	[61]	MOVE     	5 2
+	9	[61]	VARARG   	6 0
+	10	[61]	CALL     	3 0 1
+	11	[63]	RETURN   	0 1
+constants (3) for 0000022F01C82EC0:
+	1	"m_mapTypeModule"
+	2	nil
+	3	"AddRegister"
+locals (3) for 0000022F01C82EC0:
+	0	self	1	12
+	1	module	1	12
+	2	model	1	12
+upvalues (0) for 0000022F01C82EC0:
+
+function <ActivityModuleManager.lua:66,70> (10 instructions at 0000022F01C82F40)
+3 params, 6 slots, 0 upvalues, 3 locals, 3 constants, 0 functions
+	1	[67]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[67]	GETTABLE 	3 3 1
+	3	[67]	EQ       	1 3 -2	; - nil
+	4	[67]	JMP      	0 5	; to 10
+	5	[68]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	6	[68]	GETTABLE 	3 3 1
+	7	[68]	SELF     	3 3 -3	; "RemoveRegister"
+	8	[68]	MOVE     	5 2
+	9	[68]	CALL     	3 3 1
+	10	[70]	RETURN   	0 1
+constants (3) for 0000022F01C82F40:
+	1	"m_mapTypeModule"
+	2	nil
+	3	"RemoveRegister"
+locals (3) for 0000022F01C82F40:
+	0	self	1	11
+	1	module	1	11
+	2	model	1	11
+upvalues (0) for 0000022F01C82F40:
+
+function <ActivityModuleManager.lua:73,77> (10 instructions at 0000022F01C82FD0)
+2 params, 10 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[74]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[74]	GETTABLE 	3 0 -2	; "m_mapTypeModule"
+	3	[74]	CALL     	2 2 4
+	4	[74]	JMP      	0 3	; to 8
+	5	[75]	SELF     	7 6 -3	; "RemoveRegister"
+	6	[75]	MOVE     	9 1
+	7	[75]	CALL     	7 3 1
+	8	[74]	TFORCALL 	2 2
+	9	[74]	TFORLOOP 	4 -5	; to 5
+	10	[77]	RETURN   	0 1
+constants (3) for 0000022F01C82FD0:
+	1	"pairs"
+	2	"m_mapTypeModule"
+	3	"RemoveRegister"
+locals (7) for 0000022F01C82FD0:
+	0	self	1	11
+	1	model	1	11
+	2	(for generator)	4	10
+	3	(for state)	4	10
+	4	(for control)	4	10
+	5	_	5	8
+	6	Module	5	8
+upvalues (1) for 0000022F01C82FD0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:80,91> (26 instructions at 0000022F01C830D0)
+2 params, 12 slots, 1 upvalue, 9 locals, 6 constants, 0 functions
+	1	[81]	NEWTABLE 	2 0 0
+	2	[82]	GETTABUP 	3 0 -1	; _ENV "pairs"
+	3	[82]	GETTABLE 	4 0 -2	; "m_mapTypeModule"
+	4	[82]	CALL     	3 2 4
+	5	[82]	JMP      	0 17	; to 23
+	6	[83]	GETTABLE 	8 7 -3	; "GetRewardsByOrder"
+	7	[83]	TEST     	8 0
+	8	[83]	JMP      	0 14	; to 23
+	9	[84]	SELF     	8 7 -3	; "GetRewardsByOrder"
+	10	[84]	MOVE     	10 1
+	11	[84]	CALL     	8 3 2
+	12	[85]	GETTABUP 	9 0 -4	; _ENV "Table"
+	13	[85]	GETTABLE 	9 9 -5	; "IsEmpty"
+	14	[85]	MOVE     	10 8
+	15	[85]	CALL     	9 2 2
+	16	[85]	TEST     	9 1
+	17	[85]	JMP      	0 5	; to 23
+	18	[86]	GETTABUP 	9 0 -4	; _ENV "Table"
+	19	[86]	GETTABLE 	9 9 -6	; "ListAppend"
+	20	[86]	MOVE     	10 2
+	21	[86]	MOVE     	11 8
+	22	[86]	CALL     	9 3 1
+	23	[82]	TFORCALL 	3 2
+	24	[82]	TFORLOOP 	5 -19	; to 6
+	25	[90]	RETURN   	2 2
+	26	[91]	RETURN   	0 1
+constants (6) for 0000022F01C830D0:
+	1	"pairs"
+	2	"m_mapTypeModule"
+	3	"GetRewardsByOrder"
+	4	"Table"
+	5	"IsEmpty"
+	6	"ListAppend"
+locals (9) for 0000022F01C830D0:
+	0	self	1	27
+	1	order	1	27
+	2	target	2	27
+	3	(for generator)	5	25
+	4	(for state)	5	25
+	5	(for control)	5	25
+	6	_	6	23
+	7	model	6	23
+	8	rewards	12	23
+upvalues (1) for 0000022F01C830D0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:94,100> (22 instructions at 0000022F01C83340)
+2 params, 10 slots, 1 upvalue, 7 locals, 5 constants, 0 functions
+	1	[95]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[95]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[95]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[95]	CALL     	2 2 4
+	5	[95]	JMP      	0 14	; to 20
+	6	[96]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	7	[96]	GETTABLE 	7 7 6
+	8	[96]	GETTABLE 	7 7 -5	; "IsOrderSpecialReward"
+	9	[96]	TEST     	7 0
+	10	[96]	JMP      	0 9	; to 20
+	11	[96]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	12	[96]	GETTABLE 	7 7 6
+	13	[96]	SELF     	7 7 -5	; "IsOrderSpecialReward"
+	14	[96]	MOVE     	9 1
+	15	[96]	CALL     	7 3 2
+	16	[96]	TEST     	7 0
+	17	[96]	JMP      	0 2	; to 20
+	18	[97]	LOADBOOL 	7 1 0
+	19	[97]	RETURN   	7 2
+	20	[95]	TFORCALL 	2 2
+	21	[95]	TFORLOOP 	4 -16	; to 6
+	22	[100]	RETURN   	0 1
+constants (5) for 0000022F01C83340:
+	1	"pairs"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"m_mapTypeModule"
+	5	"IsOrderSpecialReward"
+locals (7) for 0000022F01C83340:
+	0	self	1	23
+	1	type	1	23
+	2	(for generator)	5	22
+	3	(for state)	5	22
+	4	(for control)	5	22
+	5	_	6	20
+	6	state	6	20
+upvalues (1) for 0000022F01C83340:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:103,109> (22 instructions at 0000022F01C83500)
+2 params, 10 slots, 1 upvalue, 7 locals, 5 constants, 0 functions
+	1	[104]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[104]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[104]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[104]	CALL     	2 2 4
+	5	[104]	JMP      	0 14	; to 20
+	6	[105]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	7	[105]	GETTABLE 	7 7 6
+	8	[105]	GETTABLE 	7 7 -5	; "IsActivityModuleLogicReward"
+	9	[105]	TEST     	7 0
+	10	[105]	JMP      	0 9	; to 20
+	11	[105]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	12	[105]	GETTABLE 	7 7 6
+	13	[105]	SELF     	7 7 -5	; "IsActivityModuleLogicReward"
+	14	[105]	MOVE     	9 1
+	15	[105]	CALL     	7 3 2
+	16	[105]	TEST     	7 0
+	17	[105]	JMP      	0 2	; to 20
+	18	[106]	LOADBOOL 	7 1 0
+	19	[106]	RETURN   	7 2
+	20	[104]	TFORCALL 	2 2
+	21	[104]	TFORLOOP 	4 -16	; to 6
+	22	[109]	RETURN   	0 1
+constants (5) for 0000022F01C83500:
+	1	"pairs"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"m_mapTypeModule"
+	5	"IsActivityModuleLogicReward"
+locals (7) for 0000022F01C83500:
+	0	self	1	23
+	1	type	1	23
+	2	(for generator)	5	22
+	3	(for state)	5	22
+	4	(for control)	5	22
+	5	_	6	20
+	6	state	6	20
+upvalues (1) for 0000022F01C83500:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:112,118> (22 instructions at 0000022F01C83F60)
+2 params, 10 slots, 1 upvalue, 7 locals, 5 constants, 0 functions
+	1	[113]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[113]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[113]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[113]	CALL     	2 2 4
+	5	[113]	JMP      	0 14	; to 20
+	6	[114]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	7	[114]	GETTABLE 	7 7 6
+	8	[114]	GETTABLE 	7 7 -5	; "IsActivityModuleViewReward"
+	9	[114]	TEST     	7 0
+	10	[114]	JMP      	0 9	; to 20
+	11	[114]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	12	[114]	GETTABLE 	7 7 6
+	13	[114]	SELF     	7 7 -5	; "IsActivityModuleViewReward"
+	14	[114]	MOVE     	9 1
+	15	[114]	CALL     	7 3 2
+	16	[114]	TEST     	7 0
+	17	[114]	JMP      	0 2	; to 20
+	18	[115]	LOADBOOL 	7 1 0
+	19	[115]	RETURN   	7 2
+	20	[113]	TFORCALL 	2 2
+	21	[113]	TFORLOOP 	4 -16	; to 6
+	22	[118]	RETURN   	0 1
+constants (5) for 0000022F01C83F60:
+	1	"pairs"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"m_mapTypeModule"
+	5	"IsActivityModuleViewReward"
+locals (7) for 0000022F01C83F60:
+	0	self	1	23
+	1	type	1	23
+	2	(for generator)	5	22
+	3	(for state)	5	22
+	4	(for control)	5	22
+	5	_	6	20
+	6	state	6	20
+upvalues (1) for 0000022F01C83F60:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:121,126> (13 instructions at 0000022F01C849E0)
+3 params, 8 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[122]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[122]	GETTABUP 	4 0 -2	; _ENV "ActivityModuleManager"
+	3	[122]	GETTABLE 	4 4 -3	; "ModuleType"
+	4	[122]	GETTABLE 	4 4 -4	; "ConvertDynamicReward"
+	5	[122]	GETTABLE 	3 3 4
+	6	[123]	TEST     	3 0
+	7	[123]	JMP      	0 5	; to 13
+	8	[124]	SELF     	4 3 -5	; "GetConvertDynamicFunction"
+	9	[124]	MOVE     	6 1
+	10	[124]	MOVE     	7 2
+	11	[124]	TAILCALL 	4 4 0
+	12	[124]	RETURN   	4 0
+	13	[126]	RETURN   	0 1
+constants (5) for 0000022F01C849E0:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"ConvertDynamicReward"
+	5	"GetConvertDynamicFunction"
+locals (4) for 0000022F01C849E0:
+	0	self	1	14
+	1	reward	1	14
+	2	needBI	1	14
+	3	ConvertDynamicRewardModule	6	14
+upvalues (1) for 0000022F01C849E0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:129,135> (21 instructions at 0000022F01C845E0)
+4 params, 11 slots, 1 upvalue, 6 locals, 6 constants, 0 functions
+	1	[130]	GETTABLE 	4 0 -1	; "m_mapTypeModule"
+	2	[130]	GETTABUP 	5 0 -2	; _ENV "ActivityModuleManager"
+	3	[130]	GETTABLE 	5 5 -3	; "ModuleType"
+	4	[130]	GETTABLE 	5 5 -4	; "EventScoreConfigAcquireProperty"
+	5	[130]	GETTABLE 	4 4 5
+	6	[131]	SELF     	5 4 -5	; "AcquireModuleLogicReward"
+	7	[131]	MOVE     	7 1
+	8	[131]	MOVE     	8 2
+	9	[131]	MOVE     	9 3
+	10	[131]	CALL     	5 5 1
+	11	[133]	GETTABLE 	5 0 -1	; "m_mapTypeModule"
+	12	[133]	GETTABUP 	6 0 -2	; _ENV "ActivityModuleManager"
+	13	[133]	GETTABLE 	6 6 -3	; "ModuleType"
+	14	[133]	GETTABLE 	6 6 -6	; "LogicAcquireReward"
+	15	[133]	GETTABLE 	5 5 6
+	16	[134]	SELF     	6 5 -5	; "AcquireModuleLogicReward"
+	17	[134]	MOVE     	8 1
+	18	[134]	MOVE     	9 2
+	19	[134]	MOVE     	10 3
+	20	[134]	CALL     	6 5 1
+	21	[135]	RETURN   	0 1
+constants (6) for 0000022F01C845E0:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"EventScoreConfigAcquireProperty"
+	5	"AcquireModuleLogicReward"
+	6	"LogicAcquireReward"
+locals (6) for 0000022F01C845E0:
+	0	self	1	22
+	1	type	1	22
+	2	count	1	22
+	3	scene	1	22
+	4	EventOrderScoreModule	6	22
+	5	logicScoreModule	16	22
+upvalues (1) for 0000022F01C845E0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:139,155> (30 instructions at 0000022F01C843E0)
+2 params, 14 slots, 1 upvalue, 11 locals, 8 constants, 0 functions
+	1	[141]	NEWTABLE 	2 2 0
+	2	[142]	GETTABUP 	3 0 -1	; _ENV "ActivityModuleManager"
+	3	[142]	GETTABLE 	3 3 -2	; "ModuleType"
+	4	[142]	GETTABLE 	3 3 -3	; "EventScoreConfigAcquireProperty"
+	5	[143]	GETTABUP 	4 0 -1	; _ENV "ActivityModuleManager"
+	6	[143]	GETTABLE 	4 4 -2	; "ModuleType"
+	7	[144]	GETTABLE 	4 4 -4	; "FlyIconPropertyReward"
+	8	[144]	SETLIST  	2 2 1	; 1
+	9	[145]	GETTABUP 	3 0 -5	; _ENV "ipairs"
+	10	[145]	MOVE     	4 2
+	11	[145]	CALL     	3 2 4
+	12	[145]	JMP      	0 13	; to 26
+	13	[149]	GETTABLE 	8 0 -6	; "m_mapTypeModule"
+	14	[149]	GETTABLE 	8 8 7
+	15	[149]	SELF     	8 8 -7	; "GetActivityEntryByType"
+	16	[149]	MOVE     	10 1
+	17	[149]	CALL     	8 3 4
+	18	[150]	EQ       	0 8 -8	; - nil
+	19	[150]	JMP      	0 2	; to 22
+	20	[150]	EQ       	1 9 -8	; - nil
+	21	[150]	JMP      	0 4	; to 26
+	22	[151]	MOVE     	11 8
+	23	[151]	MOVE     	12 9
+	24	[151]	MOVE     	13 10
+	25	[151]	RETURN   	11 4
+	26	[145]	TFORCALL 	3 2
+	27	[145]	TFORLOOP 	5 -15	; to 13
+	28	[154]	LOADNIL  	3 0
+	29	[154]	RETURN   	3 2
+	30	[155]	RETURN   	0 1
+constants (8) for 0000022F01C843E0:
+	1	"ActivityModuleManager"
+	2	"ModuleType"
+	3	"EventScoreConfigAcquireProperty"
+	4	"FlyIconPropertyReward"
+	5	"ipairs"
+	6	"m_mapTypeModule"
+	7	"GetActivityEntryByType"
+	8	nil
+locals (11) for 0000022F01C843E0:
+	0	self	1	31
+	1	type	1	31
+	2	ListSupportOrderModule	9	31
+	3	(for generator)	12	28
+	4	(for state)	12	28
+	5	(for control)	12	28
+	6	_	13	26
+	7	state	13	26
+	8	windowbutton	18	26
+	9	activityType	18	26
+	10	flyEndPos	18	26
+upvalues (1) for 0000022F01C843E0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:157,168> (22 instructions at 0000022F01C84A60)
+2 params, 11 slots, 1 upvalue, 9 locals, 7 constants, 0 functions
+	1	[158]	NEWTABLE 	2 1 0
+	2	[159]	GETTABUP 	3 0 -1	; _ENV "ActivityModuleManager"
+	3	[159]	GETTABLE 	3 3 -2	; "ModuleType"
+	4	[160]	GETTABLE 	3 3 -3	; "EventScoreConfigAcquireProperty"
+	5	[160]	SETLIST  	2 1 1	; 1
+	6	[161]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	7	[161]	MOVE     	4 2
+	8	[161]	CALL     	3 2 4
+	9	[161]	JMP      	0 8	; to 18
+	10	[162]	GETTABLE 	8 0 -5	; "m_mapTypeModule"
+	11	[162]	GETTABLE 	8 8 7
+	12	[162]	SELF     	8 8 -6	; "GetActivityModelByType"
+	13	[162]	MOVE     	10 1
+	14	[162]	CALL     	8 3 2
+	15	[163]	EQ       	1 8 -7	; - nil
+	16	[163]	JMP      	0 1	; to 18
+	17	[164]	RETURN   	8 2
+	18	[161]	TFORCALL 	3 2
+	19	[161]	TFORLOOP 	5 -10	; to 10
+	20	[167]	LOADNIL  	3 0
+	21	[167]	RETURN   	3 2
+	22	[168]	RETURN   	0 1
+constants (7) for 0000022F01C84A60:
+	1	"ActivityModuleManager"
+	2	"ModuleType"
+	3	"EventScoreConfigAcquireProperty"
+	4	"ipairs"
+	5	"m_mapTypeModule"
+	6	"GetActivityModelByType"
+	7	nil
+locals (9) for 0000022F01C84A60:
+	0	self	1	23
+	1	type	1	23
+	2	ListSupportOrderModule	6	23
+	3	(for generator)	9	20
+	4	(for state)	9	20
+	5	(for control)	9	20
+	6	_	10	18
+	7	state	10	18
+	8	model	15	18
+upvalues (1) for 0000022F01C84A60:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:170,176> (22 instructions at 0000022F01C83EE0)
+2 params, 10 slots, 1 upvalue, 7 locals, 5 constants, 0 functions
+	1	[171]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[171]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[171]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[171]	CALL     	2 2 4
+	5	[171]	JMP      	0 14	; to 20
+	6	[172]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	7	[172]	GETTABLE 	7 7 6
+	8	[172]	GETTABLE 	7 7 -5	; "IsFlyScoreAnimationByType"
+	9	[172]	TEST     	7 0
+	10	[172]	JMP      	0 9	; to 20
+	11	[172]	GETTABLE 	7 0 -4	; "m_mapTypeModule"
+	12	[172]	GETTABLE 	7 7 6
+	13	[172]	SELF     	7 7 -5	; "IsFlyScoreAnimationByType"
+	14	[172]	MOVE     	9 1
+	15	[172]	CALL     	7 3 2
+	16	[172]	TEST     	7 0
+	17	[172]	JMP      	0 2	; to 20
+	18	[173]	LOADBOOL 	7 1 0
+	19	[173]	RETURN   	7 2
+	20	[171]	TFORCALL 	2 2
+	21	[171]	TFORLOOP 	4 -16	; to 6
+	22	[176]	RETURN   	0 1
+constants (5) for 0000022F01C83EE0:
+	1	"pairs"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"m_mapTypeModule"
+	5	"IsFlyScoreAnimationByType"
+locals (7) for 0000022F01C83EE0:
+	0	self	1	23
+	1	type	1	23
+	2	(for generator)	5	22
+	3	(for state)	5	22
+	4	(for control)	5	22
+	5	_	6	20
+	6	state	6	20
+upvalues (1) for 0000022F01C83EE0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:179,182> (10 instructions at 0000022F01C84B60)
+2 params, 6 slots, 1 upvalue, 3 locals, 5 constants, 0 functions
+	1	[180]	GETTABLE 	2 0 -1	; "m_mapTypeModule"
+	2	[180]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[180]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[180]	GETTABLE 	3 3 -4	; "RewardItemTipButton"
+	5	[180]	GETTABLE 	2 2 3
+	6	[181]	SELF     	3 2 -5	; "CanShowTipButton"
+	7	[181]	MOVE     	5 1
+	8	[181]	TAILCALL 	3 3 0
+	9	[181]	RETURN   	3 0
+	10	[182]	RETURN   	0 1
+constants (5) for 0000022F01C84B60:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"RewardItemTipButton"
+	5	"CanShowTipButton"
+locals (3) for 0000022F01C84B60:
+	0	self	1	11
+	1	rewardType	1	11
+	2	showTipModule	6	11
+upvalues (1) for 0000022F01C84B60:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:184,187> (11 instructions at 0000022F01C84BE0)
+3 params, 8 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[185]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[185]	GETTABUP 	4 0 -2	; _ENV "ActivityModuleManager"
+	3	[185]	GETTABLE 	4 4 -3	; "ModuleType"
+	4	[185]	GETTABLE 	4 4 -4	; "RewardItemTipButton"
+	5	[185]	GETTABLE 	3 3 4
+	6	[186]	SELF     	4 3 -5	; "OnItemTipButton"
+	7	[186]	MOVE     	6 1
+	8	[186]	MOVE     	7 2
+	9	[186]	TAILCALL 	4 4 0
+	10	[186]	RETURN   	4 0
+	11	[187]	RETURN   	0 1
+constants (5) for 0000022F01C84BE0:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"RewardItemTipButton"
+	5	"OnItemTipButton"
+locals (4) for 0000022F01C84BE0:
+	0	self	1	12
+	1	rewardType	1	12
+	2	defaultArgs	1	12
+	3	showTipModule	6	12
+upvalues (1) for 0000022F01C84BE0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:189,192> (11 instructions at 0000022F01C84360)
+3 params, 8 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[190]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[190]	GETTABUP 	4 0 -2	; _ENV "ActivityModuleManager"
+	3	[190]	GETTABLE 	4 4 -3	; "ModuleType"
+	4	[190]	GETTABLE 	4 4 -4	; "FlyIconPropertyReward"
+	5	[190]	GETTABLE 	3 3 4
+	6	[191]	SELF     	4 3 -5	; "IsShowBoardAreaEntryReward"
+	7	[191]	MOVE     	6 1
+	8	[191]	MOVE     	7 2
+	9	[191]	TAILCALL 	4 4 0
+	10	[191]	RETURN   	4 0
+	11	[192]	RETURN   	0 1
+constants (5) for 0000022F01C84360:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"FlyIconPropertyReward"
+	5	"IsShowBoardAreaEntryReward"
+locals (4) for 0000022F01C84360:
+	0	self	1	12
+	1	rewardType	1	12
+	2	showArgs	1	12
+	3	flyIconModule	6	12
+upvalues (1) for 0000022F01C84360:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:194,197> (11 instructions at 0000022F01C84860)
+3 params, 8 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[195]	GETTABLE 	3 0 -1	; "m_mapTypeModule"
+	2	[195]	GETTABUP 	4 0 -2	; _ENV "ActivityModuleManager"
+	3	[195]	GETTABLE 	4 4 -3	; "ModuleType"
+	4	[195]	GETTABLE 	4 4 -4	; "FlyIconPropertyReward"
+	5	[195]	GETTABLE 	3 3 4
+	6	[196]	SELF     	4 3 -5	; "InViewHandle"
+	7	[196]	MOVE     	6 1
+	8	[196]	MOVE     	7 2
+	9	[196]	TAILCALL 	4 4 0
+	10	[196]	RETURN   	4 0
+	11	[197]	RETURN   	0 1
+constants (5) for 0000022F01C84860:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"FlyIconPropertyReward"
+	5	"InViewHandle"
+locals (4) for 0000022F01C84860:
+	0	self	1	12
+	1	rewardData	1	12
+	2	showArgs	1	12
+	3	flyIconModule	6	12
+upvalues (1) for 0000022F01C84860:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:199,202> (10 instructions at 0000022F01C84CE0)
+2 params, 6 slots, 1 upvalue, 3 locals, 5 constants, 0 functions
+	1	[200]	GETTABLE 	2 0 -1	; "m_mapTypeModule"
+	2	[200]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[200]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[200]	GETTABLE 	3 3 -4	; "GetRewardIconNameAndNativeSize"
+	5	[200]	GETTABLE 	2 2 3
+	6	[201]	SELF     	3 2 -5	; "GetRewardBigIconNameAndNativeSize"
+	7	[201]	MOVE     	5 1
+	8	[201]	TAILCALL 	3 3 0
+	9	[201]	RETURN   	3 0
+	10	[202]	RETURN   	0 1
+constants (5) for 0000022F01C84CE0:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"GetRewardIconNameAndNativeSize"
+	5	"GetRewardBigIconNameAndNativeSize"
+locals (3) for 0000022F01C84CE0:
+	0	self	1	11
+	1	rewardType	1	11
+	2	GetRewardIconNameModule	6	11
+upvalues (1) for 0000022F01C84CE0:
+	0	_ENV	0	0
+
+function <ActivityModuleManager.lua:204,207> (10 instructions at 0000022F01C84460)
+2 params, 6 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[205]	GETTABLE 	2 0 -1	; "m_mapTypeModule"
+	2	[205]	GETTABUP 	3 0 -2	; _ENV "ActivityModuleManager"
+	3	[205]	GETTABLE 	3 3 -3	; "ModuleType"
+	4	[205]	GETTABLE 	3 3 -4	; "GetRewardIconNameAndNativeSize"
+	5	[205]	GETTABLE 	2 2 3
+	6	[206]	SELF     	3 2 -4	; "GetRewardIconNameAndNativeSize"
+	7	[206]	MOVE     	5 1
+	8	[206]	TAILCALL 	3 3 0
+	9	[206]	RETURN   	3 0
+	10	[207]	RETURN   	0 1
+constants (4) for 0000022F01C84460:
+	1	"m_mapTypeModule"
+	2	"ActivityModuleManager"
+	3	"ModuleType"
+	4	"GetRewardIconNameAndNativeSize"
+locals (3) for 0000022F01C84460:
+	0	self	1	11
+	1	rewardType	1	11
+	2	GetRewardIconNameModule	6	11
+upvalues (1) for 0000022F01C84460:
+	0	_ENV	0	0

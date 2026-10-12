@@ -1,0 +1,2091 @@
+
+main <ContiordersModel.lua:0,0> (130 instructions at 0000015FB92FEFE0)
+0+ params, 3 slots, 1 upvalue, 1 local, 51 constants, 38 functions
+	1	[13]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[13]	NEWTABLE 	1 0 0
+	3	[13]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	4	[13]	CALL     	0 3 2
+	5	[13]	SETTABUP 	0 -1 0	; _ENV "ContiordersModel"
+	6	[14]	GETTABUP 	0 0 -1	; _ENV "ContiordersModel"
+	7	[14]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	8	[14]	SETTABLE 	0 -4 1	; "__index" -
+	9	[16]	SETTABUP 	0 -5 -6	; _ENV "DBColumnValue" "value"
+	10	[17]	NEWTABLE 	0 0 7
+	11	[18]	SETTABLE 	0 -7 -7	; "PopEndWindow" "PopEndWindow"
+	12	[19]	SETTABLE 	0 -8 -8	; "CurrentIndex" "CurrentIndex"
+	13	[20]	SETTABLE 	0 -9 -9	; "CurrentStartTime" "CurrentStartTime"
+	14	[21]	SETTABLE 	0 -10 -10	; "CurrentEndTime" "CurrentEndTime"
+	15	[22]	SETTABLE 	0 -11 -11	; "Started" "Started"
+	16	[23]	SETTABLE 	0 -12 -12	; "LastOpenMainwindowIndex" "LastOpenMainwindowIndex"
+	17	[24]	SETTABLE 	0 -13 -13	; "LastReturnSmileCount" "LastReturnSmileCount"
+	18	[27]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	19	[33]	CLOSURE  	2 0	; 0000015FB92FF3C0
+	20	[27]	SETTABLE 	1 -14 2	; "Init" -
+	21	[35]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	22	[42]	CLOSURE  	2 1	; 0000015FB92FF060
+	23	[35]	SETTABLE 	1 -15 2	; "LateInit" -
+	24	[44]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	25	[74]	CLOSURE  	2 2	; 0000015FB93025B0
+	26	[44]	SETTABLE 	1 -16 2	; "CanCreateOrder" -
+	27	[76]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	28	[190]	CLOSURE  	2 3	; 0000015FB93029B0
+	29	[76]	SETTABLE 	1 -17 2	; "CreateOrder" -
+	30	[192]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	31	[198]	CLOSURE  	2 4	; 0000015FB9304790
+	32	[192]	SETTABLE 	1 -18 2	; "GetExtraReward" -
+	33	[200]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	34	[213]	CLOSURE  	2 5	; 0000015FB9304870
+	35	[200]	SETTABLE 	1 -19 2	; "GetSmileCount" -
+	36	[215]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	37	[217]	CLOSURE  	2 6	; 0000015FB9304B70
+	38	[215]	SETTABLE 	1 -20 2	; "GetFinalReward" -
+	39	[219]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	40	[221]	CLOSURE  	2 7	; 0000015FB9304BF0
+	41	[219]	SETTABLE 	1 -21 2	; "Destroy" -
+	42	[223]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	43	[245]	CLOSURE  	2 8	; 0000015FB9304C70
+	44	[223]	SETTABLE 	1 -22 2	; "_LoadOtherServerConfig" -
+	45	[247]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	46	[253]	CLOSURE  	2 9	; 0000015FB9306280
+	47	[247]	SETTABLE 	1 -23 2	; "_DropData" -
+	48	[255]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	49	[265]	CLOSURE  	2 10	; 0000015FB9306800
+	50	[255]	SETTABLE 	1 -24 2	; "_OnStateChanged" -
+	51	[267]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	52	[288]	CLOSURE  	2 11	; 0000015FB9305D80
+	53	[267]	SETTABLE 	1 -25 2	; "_RemoveOrder" -
+	54	[290]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	55	[309]	CLOSURE  	2 12	; 0000015FB9305B80
+	56	[290]	SETTABLE 	1 -26 2	; "UpdatePerSecond" -
+	57	[311]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	58	[323]	CLOSURE  	2 13	; 0000015FB9306500
+	59	[311]	SETTABLE 	1 -27 2	; "UnlockFirstOrder" -
+	60	[325]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	61	[346]	CLOSURE  	2 14	; 0000015FB9305E00
+	62	[325]	SETTABLE 	1 -28 2	; "UnlockNextOrder" -
+	63	[348]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	64	[350]	CLOSURE  	2 15	; 0000015FB9306300
+	65	[348]	SETTABLE 	1 -29 2	; "GetResourceLabels" -
+	66	[352]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	67	[354]	CLOSURE  	2 16	; 0000015FB9306400
+	68	[352]	SETTABLE 	1 -30 2	; "SetPopEndWindow" -
+	69	[356]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	70	[358]	CLOSURE  	2 17	; 0000015FB9305E80
+	71	[356]	SETTABLE 	1 -31 2	; "ResetPopEndWindow" -
+	72	[360]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	73	[362]	CLOSURE  	2 18	; 0000015FB9306680
+	74	[360]	SETTABLE 	1 -32 2	; "CanPopEndWindow" -
+	75	[365]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	76	[367]	CLOSURE  	2 19	; 0000015FB9306480
+	77	[365]	SETTABLE 	1 -33 2	; "GetServerConfigGroupId" -
+	78	[370]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	79	[372]	CLOSURE  	2 20	; 0000015FB9306780
+	80	[370]	SETTABLE 	1 -34 2	; "GetIndex" -
+	81	[374]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	82	[376]	CLOSURE  	2 21	; 0000015FB9305C00
+	83	[374]	SETTABLE 	1 -35 2	; "SetIndex" -
+	84	[378]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	85	[380]	CLOSURE  	2 22	; 0000015FB9306580
+	86	[378]	SETTABLE 	1 -36 2	; "GetStartTime" -
+	87	[382]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	88	[384]	CLOSURE  	2 23	; 0000015FB9306600
+	89	[382]	SETTABLE 	1 -37 2	; "SetStartTime" -
+	90	[386]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	91	[388]	CLOSURE  	2 24	; 0000015FB9305C80
+	92	[386]	SETTABLE 	1 -38 2	; "GetEndTime" -
+	93	[390]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	94	[392]	CLOSURE  	2 25	; 0000015FB9306200
+	95	[390]	SETTABLE 	1 -39 2	; "SetEndTime" -
+	96	[394]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	97	[396]	CLOSURE  	2 26	; 0000015FB9306180
+	98	[394]	SETTABLE 	1 -40 2	; "GetTotalOrderCount" -
+	99	[398]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	100	[400]	CLOSURE  	2 27	; 0000015FB9305D00
+	101	[398]	SETTABLE 	1 -41 2	; "SetStarted" -
+	102	[402]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	103	[404]	CLOSURE  	2 28	; 0000015FB9306700
+	104	[402]	SETTABLE 	1 -42 2	; "GetStarted" -
+	105	[406]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	106	[408]	CLOSURE  	2 29	; 0000015FB9305900
+	107	[406]	SETTABLE 	1 -43 2	; "SetLastOpenMainwindowIndex" -
+	108	[410]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	109	[412]	CLOSURE  	2 30	; 0000015FB9305980
+	110	[410]	SETTABLE 	1 -44 2	; "GetLastOpenMainwindowIndex" -
+	111	[414]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	112	[416]	CLOSURE  	2 31	; 0000015FB9305B00
+	113	[414]	SETTABLE 	1 -45 2	; "SetLastReturnSmileCount" -
+	114	[418]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	115	[420]	CLOSURE  	2 32	; 0000015FB9306380
+	116	[418]	SETTABLE 	1 -46 2	; "GetLastReturnSmileCount" -
+	117	[422]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	118	[427]	CLOSURE  	2 33	; 0000015FB9305A00
+	119	[422]	SETTABLE 	1 -47 2	; "OnCloseView" -
+	120	[429]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	121	[431]	CLOSURE  	2 34	; 0000015FB9305A80
+	122	[429]	SETTABLE 	1 -48 2	; "SetFlag" -
+	123	[437]	GETTABUP 	1 0 -1	; _ENV "ContiordersModel"
+	124	[466]	CLOSURE  	2 35	; 0000015FB9305F00
+	125	[437]	SETTABLE 	1 -49 2	; "GetTestPopupWindowConfig" -
+	126	[481]	CLOSURE  	1 36	; 0000015FB930E9C0
+	127	[471]	SETTABUP 	0 -50 1	; _ENV "ContiConcatenate"
+	128	[488]	CLOSURE  	1 37	; 0000015FB930EAC0
+	129	[482]	SETTABUP 	0 -51 1	; _ENV "PrintContiInfo"
+	130	[488]	RETURN   	0 1
+constants (51) for 0000015FB92FEFE0:
+	1	"ContiordersModel"
+	2	"setmetatable"
+	3	"BaseActivityModel"
+	4	"__index"
+	5	"DBColumnValue"
+	6	"value"
+	7	"PopEndWindow"
+	8	"CurrentIndex"
+	9	"CurrentStartTime"
+	10	"CurrentEndTime"
+	11	"Started"
+	12	"LastOpenMainwindowIndex"
+	13	"LastReturnSmileCount"
+	14	"Init"
+	15	"LateInit"
+	16	"CanCreateOrder"
+	17	"CreateOrder"
+	18	"GetExtraReward"
+	19	"GetSmileCount"
+	20	"GetFinalReward"
+	21	"Destroy"
+	22	"_LoadOtherServerConfig"
+	23	"_DropData"
+	24	"_OnStateChanged"
+	25	"_RemoveOrder"
+	26	"UpdatePerSecond"
+	27	"UnlockFirstOrder"
+	28	"UnlockNextOrder"
+	29	"GetResourceLabels"
+	30	"SetPopEndWindow"
+	31	"ResetPopEndWindow"
+	32	"CanPopEndWindow"
+	33	"GetServerConfigGroupId"
+	34	"GetIndex"
+	35	"SetIndex"
+	36	"GetStartTime"
+	37	"SetStartTime"
+	38	"GetEndTime"
+	39	"SetEndTime"
+	40	"GetTotalOrderCount"
+	41	"SetStarted"
+	42	"GetStarted"
+	43	"SetLastOpenMainwindowIndex"
+	44	"GetLastOpenMainwindowIndex"
+	45	"SetLastReturnSmileCount"
+	46	"GetLastReturnSmileCount"
+	47	"OnCloseView"
+	48	"SetFlag"
+	49	"GetTestPopupWindowConfig"
+	50	"ContiConcatenate"
+	51	"PrintContiInfo"
+locals (1) for 0000015FB92FEFE0:
+	0	DBKey	18	131
+upvalues (1) for 0000015FB92FEFE0:
+	0	_ENV	1	0
+
+function <ContiordersModel.lua:27,33> (18 instructions at 0000015FB92FF3C0)
+3 params, 7 slots, 1 upvalue, 3 locals, 11 constants, 0 functions
+	1	[28]	GETTABUP 	3 0 -2	; _ENV "ContiordersDefinition"
+	2	[28]	GETTABLE 	3 3 1
+	3	[28]	SETTABLE 	0 -1 3	; "m_definition" -
+	4	[29]	GETTABUP 	3 0 -3	; _ENV "BaseActivityModel"
+	5	[29]	GETTABLE 	3 3 -4	; "Init"
+	6	[29]	MOVE     	4 0
+	7	[29]	MOVE     	5 1
+	8	[29]	MOVE     	6 2
+	9	[29]	CALL     	3 4 1
+	10	[30]	SETTABLE 	0 -5 -6	; "m_canCreateOrderFlag" true
+	11	[32]	GETTABUP 	3 0 -7	; _ENV "EventDispatcher"
+	12	[32]	GETTABLE 	3 3 -8	; "AddListener"
+	13	[32]	GETTABUP 	4 0 -9	; _ENV "EEventType"
+	14	[32]	GETTABLE 	4 4 -10	; "CloseView"
+	15	[32]	MOVE     	5 0
+	16	[32]	GETTABLE 	6 0 -11	; "OnCloseView"
+	17	[32]	CALL     	3 4 1
+	18	[33]	RETURN   	0 1
+constants (11) for 0000015FB92FF3C0:
+	1	"m_definition"
+	2	"ContiordersDefinition"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"m_canCreateOrderFlag"
+	6	true
+	7	"EventDispatcher"
+	8	"AddListener"
+	9	"EEventType"
+	10	"CloseView"
+	11	"OnCloseView"
+locals (3) for 0000015FB92FF3C0:
+	0	self	1	19
+	1	activityType	1	19
+	2	activityDataTable	1	19
+upvalues (1) for 0000015FB92FF3C0:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:35,42> (11 instructions at 0000015FB92FF060)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[36]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[36]	GETTABLE 	1 1 -2	; "LateInit"
+	3	[36]	MOVE     	2 0
+	4	[36]	CALL     	1 2 1
+	5	[37]	SETTABLE 	0 -3 -4	; "m_lateInit" true
+	6	[39]	GETTABLE 	1 0 -5	; "m_needRemoveOrder"
+	7	[39]	TEST     	1 0
+	8	[39]	JMP      	0 2	; to 11
+	9	[40]	SELF     	1 0 -6	; "_RemoveOrder"
+	10	[40]	CALL     	1 2 1
+	11	[42]	RETURN   	0 1
+constants (6) for 0000015FB92FF060:
+	1	"BaseActivityModel"
+	2	"LateInit"
+	3	"m_lateInit"
+	4	true
+	5	"m_needRemoveOrder"
+	6	"_RemoveOrder"
+locals (1) for 0000015FB92FF060:
+	0	self	1	12
+upvalues (1) for 0000015FB92FF060:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:44,74> (71 instructions at 0000015FB93025B0)
+2 params, 5 slots, 1 upvalue, 2 locals, 17 constants, 0 functions
+	1	[45]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[45]	GETTABLE 	2 2 -2	; "ContiorderSlot"
+	3	[45]	EQ       	1 1 2
+	4	[45]	JMP      	0 2	; to 7
+	5	[46]	LOADBOOL 	2 0 0
+	6	[46]	RETURN   	2 2
+	7	[49]	SELF     	2 0 -3	; "GetState"
+	8	[49]	LOADBOOL 	4 0 0
+	9	[49]	CALL     	2 3 2
+	10	[49]	GETTABUP 	3 0 -4	; _ENV "ActivityState"
+	11	[49]	GETTABLE 	3 3 -5	; "Started"
+	12	[49]	EQ       	1 2 3
+	13	[49]	JMP      	0 9	; to 23
+	14	[49]	SELF     	2 0 -3	; "GetState"
+	15	[49]	LOADBOOL 	4 0 0
+	16	[49]	CALL     	2 3 2
+	17	[49]	GETTABUP 	3 0 -4	; _ENV "ActivityState"
+	18	[49]	GETTABLE 	3 3 -6	; "Ended"
+	19	[49]	EQ       	1 2 3
+	20	[49]	JMP      	0 2	; to 23
+	21	[50]	LOADBOOL 	2 0 0
+	22	[50]	RETURN   	2 2
+	23	[53]	SELF     	2 0 -3	; "GetState"
+	24	[53]	LOADBOOL 	4 0 0
+	25	[53]	CALL     	2 3 2
+	26	[53]	GETTABUP 	3 0 -4	; _ENV "ActivityState"
+	27	[53]	GETTABLE 	3 3 -6	; "Ended"
+	28	[53]	EQ       	0 2 3
+	29	[53]	JMP      	0 6	; to 36
+	30	[53]	SELF     	2 0 -7	; "GetStarted"
+	31	[53]	CALL     	2 2 2
+	32	[53]	TEST     	2 1
+	33	[53]	JMP      	0 2	; to 36
+	34	[54]	LOADBOOL 	2 0 0
+	35	[54]	RETURN   	2 2
+	36	[57]	SELF     	2 0 -8	; "GetIndex"
+	37	[57]	CALL     	2 2 2
+	38	[57]	LT       	1 2 -9	; - 0
+	39	[57]	JMP      	0 6	; to 46
+	40	[57]	SELF     	2 0 -8	; "GetIndex"
+	41	[57]	CALL     	2 2 2
+	42	[57]	SELF     	3 0 -10	; "GetTotalOrderCount"
+	43	[57]	CALL     	3 2 2
+	44	[57]	LT       	0 3 2
+	45	[57]	JMP      	0 2	; to 48
+	46	[58]	LOADBOOL 	2 0 0
+	47	[58]	RETURN   	2 2
+	48	[61]	SELF     	2 0 -7	; "GetStarted"
+	49	[61]	CALL     	2 2 2
+	50	[61]	TEST     	2 1
+	51	[61]	JMP      	0 2	; to 54
+	52	[62]	LOADBOOL 	2 0 0
+	53	[62]	RETURN   	2 2
+	54	[65]	GETTABUP 	2 0 -11	; _ENV "GM"
+	55	[65]	GETTABLE 	2 2 -12	; "UIManager"
+	56	[65]	SELF     	2 2 -13	; "GetOpenedViewByName"
+	57	[65]	GETTABLE 	4 0 -14	; "m_definition"
+	58	[65]	GETTABLE 	4 4 -15	; "MainWindowPrefabName"
+	59	[65]	CALL     	2 3 2
+	60	[65]	TEST     	2 0
+	61	[65]	JMP      	0 2	; to 64
+	62	[66]	LOADBOOL 	2 0 0
+	63	[66]	RETURN   	2 2
+	64	[69]	GETTABLE 	2 0 -16	; "m_canCreateOrderFlag"
+	65	[69]	EQ       	0 2 -17	; - false
+	66	[69]	JMP      	0 2	; to 69
+	67	[70]	LOADBOOL 	2 0 0
+	68	[70]	RETURN   	2 2
+	69	[73]	LOADBOOL 	2 1 0
+	70	[73]	RETURN   	2 2
+	71	[74]	RETURN   	0 1
+constants (17) for 0000015FB93025B0:
+	1	"MainOrderSlotDefinition"
+	2	"ContiorderSlot"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"Ended"
+	7	"GetStarted"
+	8	"GetIndex"
+	9	0
+	10	"GetTotalOrderCount"
+	11	"GM"
+	12	"UIManager"
+	13	"GetOpenedViewByName"
+	14	"m_definition"
+	15	"MainWindowPrefabName"
+	16	"m_canCreateOrderFlag"
+	17	false
+locals (2) for 0000015FB93025B0:
+	0	self	1	72
+	1	slot	1	72
+upvalues (1) for 0000015FB93025B0:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:76,190> (203 instructions at 0000015FB93029B0)
+3 params, 16 slots, 1 upvalue, 10 locals, 62 constants, 1 function
+	1	[77]	GETTABUP 	3 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[77]	GETTABLE 	3 3 -2	; "ContiorderSlot"
+	3	[77]	EQ       	1 2 3
+	4	[77]	JMP      	0 1	; to 6
+	5	[78]	RETURN   	0 1
+	6	[82]	GETTABUP 	3 0 -3	; _ENV "RepeatWeightDecreaseHelper"
+	7	[82]	GETTABLE 	3 3 -4	; "InitMapInfo"
+	8	[82]	GETTABUP 	4 0 -5	; _ENV "MainOrderType"
+	9	[82]	GETTABLE 	4 4 -6	; "Contiorder"
+	10	[82]	MOVE     	5 1
+	11	[82]	CALL     	3 3 2
+	12	[84]	NEWTABLE 	4 0 0
+	13	[128]	CLOSURE  	5 0	; 0000015FB92FEAC0
+	14	[130]	SELF     	6 0 -7	; "GetIndex"
+	15	[130]	CALL     	6 2 2
+	16	[131]	NEWTABLE 	7 0 0
+	17	[132]	MOVE     	8 5
+	18	[132]	GETTABLE 	9 0 -9	; "m_ordersConfig"
+	19	[132]	GETTABLE 	9 9 6
+	20	[132]	GETTABLE 	9 9 -10	; "item1"
+	21	[132]	GETTABLE 	9 9 -11	; "range_entry"
+	22	[132]	GETTABLE 	9 9 -8	; 1
+	23	[132]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	24	[132]	GETTABLE 	10 10 6
+	25	[132]	GETTABLE 	10 10 -10	; "item1"
+	26	[132]	GETTABLE 	10 10 -11	; "range_entry"
+	27	[132]	GETTABLE 	10 10 -12	; 2
+	28	[132]	CALL     	8 3 2
+	29	[132]	SETTABLE 	7 -8 8	; 1 -
+	30	[133]	GETTABLE 	8 7 -8	; 1
+	31	[133]	TEST     	8 0
+	32	[133]	JMP      	0 18	; to 51
+	33	[133]	GETTABLE 	8 0 -9	; "m_ordersConfig"
+	34	[133]	GETTABLE 	8 8 6
+	35	[133]	GETTABLE 	8 8 -13	; "item2"
+	36	[133]	TEST     	8 0
+	37	[133]	JMP      	0 13	; to 51
+	38	[134]	MOVE     	8 5
+	39	[134]	GETTABLE 	9 0 -9	; "m_ordersConfig"
+	40	[134]	GETTABLE 	9 9 6
+	41	[134]	GETTABLE 	9 9 -13	; "item2"
+	42	[134]	GETTABLE 	9 9 -11	; "range_entry"
+	43	[134]	GETTABLE 	9 9 -8	; 1
+	44	[134]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	45	[134]	GETTABLE 	10 10 6
+	46	[134]	GETTABLE 	10 10 -13	; "item2"
+	47	[134]	GETTABLE 	10 10 -11	; "range_entry"
+	48	[134]	GETTABLE 	10 10 -12	; 2
+	49	[134]	CALL     	8 3 2
+	50	[134]	SETTABLE 	7 -12 8	; 2 -
+	51	[136]	GETTABLE 	8 7 -12	; 2
+	52	[136]	TEST     	8 0
+	53	[136]	JMP      	0 18	; to 72
+	54	[136]	GETTABLE 	8 0 -9	; "m_ordersConfig"
+	55	[136]	GETTABLE 	8 8 6
+	56	[136]	GETTABLE 	8 8 -14	; "item3"
+	57	[136]	TEST     	8 0
+	58	[136]	JMP      	0 13	; to 72
+	59	[137]	MOVE     	8 5
+	60	[137]	GETTABLE 	9 0 -9	; "m_ordersConfig"
+	61	[137]	GETTABLE 	9 9 6
+	62	[137]	GETTABLE 	9 9 -14	; "item3"
+	63	[137]	GETTABLE 	9 9 -11	; "range_entry"
+	64	[137]	GETTABLE 	9 9 -8	; 1
+	65	[137]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	66	[137]	GETTABLE 	10 10 6
+	67	[137]	GETTABLE 	10 10 -14	; "item3"
+	68	[137]	GETTABLE 	10 10 -11	; "range_entry"
+	69	[137]	GETTABLE 	10 10 -12	; 2
+	70	[137]	CALL     	8 3 2
+	71	[137]	SETTABLE 	7 -15 8	; 3 -
+	72	[140]	GETTABLE 	8 7 -8	; 1
+	73	[140]	EQ       	0 8 -16	; - nil
+	74	[140]	JMP      	0 10	; to 85
+	75	[141]	GETTABUP 	8 0 -17	; _ENV "ItemType"
+	76	[141]	GETTABLE 	8 8 -18	; "Flour09"
+	77	[141]	SETTABLE 	7 -8 8	; 1 -
+	78	[142]	GETTABUP 	8 0 -19	; _ENV "GM"
+	79	[142]	GETTABLE 	8 8 -20	; "BIManager"
+	80	[142]	SELF     	8 8 -21	; "LogErrorInfo"
+	81	[142]	GETTABLE 	10 0 -22	; "m_definition"
+	82	[142]	GETTABLE 	10 10 -23	; "ErrorNoItemBIType"
+	83	[142]	LOADK    	11 -24	; "\230\178\161\230\137\190\229\136\176\228\187\187\228\189\149\229\143\175\231\148\168\230\163\139\229\173\144\239\188\140\228\189\191\231\148\168\229\133\156\229\186\149\230\163\139\229\173\144 ItemType.Flour09"
+	84	[142]	CALL     	8 4 1
+	85	[145]	GETTABUP 	8 0 -25	; _ENV "GameConfig"
+	86	[145]	GETTABLE 	8 8 -26	; "IsTestMode"
+	87	[145]	CALL     	8 1 2
+	88	[145]	TEST     	8 0
+	89	[145]	JMP      	0 95	; to 185
+	90	[146]	NEWTABLE 	8 0 5
+	91	[147]	GETTABUP 	9 0 -5	; _ENV "MainOrderType"
+	92	[147]	GETTABLE 	9 9 -6	; "Contiorder"
+	93	[147]	SETTABLE 	8 -27 9	; "Type" -
+	94	[148]	SETTABLE 	8 -28 -29	; "RefreshTime" 9999
+	95	[149]	SETTABLE 	8 -30 -29	; "UnlockLevel" 9999
+	96	[150]	SETTABLE 	8 -31 -29	; "Point" 9999
+	97	[151]	NEWTABLE 	9 1 0
+	98	[151]	NEWTABLE 	10 0 2
+	99	[153]	GETTABLE 	11 0 -9	; "m_ordersConfig"
+	100	[153]	GETTABLE 	11 11 6
+	101	[153]	GETTABLE 	11 11 -10	; "item1"
+	102	[153]	GETTABLE 	11 11 -11	; "range_entry"
+	103	[153]	GETTABLE 	11 11 -8	; 1
+	104	[153]	SETTABLE 	10 -33 11	; "FirstMin" -
+	105	[154]	GETTABLE 	11 0 -9	; "m_ordersConfig"
+	106	[154]	GETTABLE 	11 11 6
+	107	[154]	GETTABLE 	11 11 -10	; "item1"
+	108	[154]	GETTABLE 	11 11 -11	; "range_entry"
+	109	[154]	GETTABLE 	11 11 -12	; 2
+	110	[154]	SETTABLE 	10 -34 11	; "FirstMax" -
+	111	[156]	SETLIST  	9 1 1	; 1
+	112	[156]	SETTABLE 	8 -32 9	; "Filters" -
+	113	[158]	GETTABLE 	9 0 -9	; "m_ordersConfig"
+	114	[158]	GETTABLE 	9 9 6
+	115	[158]	GETTABLE 	9 9 -13	; "item2"
+	116	[158]	TEST     	9 0
+	117	[158]	JMP      	0 16	; to 134
+	118	[159]	GETTABLE 	9 8 -32	; "Filters"
+	119	[159]	GETTABLE 	9 9 -8	; 1
+	120	[159]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	121	[159]	GETTABLE 	10 10 6
+	122	[159]	GETTABLE 	10 10 -13	; "item2"
+	123	[159]	GETTABLE 	10 10 -11	; "range_entry"
+	124	[159]	GETTABLE 	10 10 -8	; 1
+	125	[159]	SETTABLE 	9 -35 10	; "SecondMin" -
+	126	[160]	GETTABLE 	9 8 -32	; "Filters"
+	127	[160]	GETTABLE 	9 9 -8	; 1
+	128	[160]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	129	[160]	GETTABLE 	10 10 6
+	130	[160]	GETTABLE 	10 10 -13	; "item2"
+	131	[160]	GETTABLE 	10 10 -11	; "range_entry"
+	132	[160]	GETTABLE 	10 10 -12	; 2
+	133	[160]	SETTABLE 	9 -36 10	; "SecondMax" -
+	134	[162]	GETTABLE 	9 0 -9	; "m_ordersConfig"
+	135	[162]	GETTABLE 	9 9 6
+	136	[162]	GETTABLE 	9 9 -14	; "item3"
+	137	[162]	TEST     	9 0
+	138	[162]	JMP      	0 16	; to 155
+	139	[163]	GETTABLE 	9 8 -32	; "Filters"
+	140	[163]	GETTABLE 	9 9 -8	; 1
+	141	[163]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	142	[163]	GETTABLE 	10 10 6
+	143	[163]	GETTABLE 	10 10 -14	; "item3"
+	144	[163]	GETTABLE 	10 10 -11	; "range_entry"
+	145	[163]	GETTABLE 	10 10 -8	; 1
+	146	[163]	SETTABLE 	9 -37 10	; "ThirdMin" -
+	147	[164]	GETTABLE 	9 8 -32	; "Filters"
+	148	[164]	GETTABLE 	9 9 -8	; 1
+	149	[164]	GETTABLE 	10 0 -9	; "m_ordersConfig"
+	150	[164]	GETTABLE 	10 10 6
+	151	[164]	GETTABLE 	10 10 -14	; "item3"
+	152	[164]	GETTABLE 	10 10 -11	; "range_entry"
+	153	[164]	GETTABLE 	10 10 -12	; 2
+	154	[164]	SETTABLE 	9 -38 10	; "ThirdMax" -
+	155	[167]	GETTABUP 	9 0 -39	; _ENV "TestOrderLogInfo"
+	156	[167]	GETTABLE 	9 9 -40	; "TestPrintOrderChosenItemsInfo"
+	157	[167]	NEWTABLE 	10 0 10
+	158	[169]	GETTABUP 	11 0 -5	; _ENV "MainOrderType"
+	159	[169]	GETTABLE 	11 11 -6	; "Contiorder"
+	160	[169]	SETTABLE 	10 -41 11	; "innerType" -
+	161	[170]	SETTABLE 	10 -42 -16	; "weightConfig" nil
+	162	[171]	GETTABLE 	11 4 -8	; 1
+	163	[171]	SETTABLE 	10 -43 11	; "firstSelectedItem" -
+	164	[172]	GETTABLE 	11 4 -12	; 2
+	165	[172]	SETTABLE 	10 -44 11	; "secondSelectedItem" -
+	166	[173]	GETTABLE 	11 4 -15	; 3
+	167	[173]	SETTABLE 	10 -45 11	; "thirdSelectedItem" -
+	168	[174]	SETTABLE 	10 -46 4	; "requirements" -
+	169	[175]	SETTABLE 	10 -47 2	; "slot" -
+	170	[176]	SETTABLE 	10 -48 1	; "orderModel" -
+	171	[177]	SETTABLE 	10 -49 8	; "randomConfig" -
+	172	[178]	SETTABLE 	10 -50 3	; "mapRepeatWeightDecreaseInfo" -
+	173	[167]	CALL     	9 2 1
+	174	[181]	GETTABUP 	9 0 -39	; _ENV "TestOrderLogInfo"
+	175	[181]	GETTABLE 	9 9 -51	; "strCreateOrderTestLog"
+	176	[182]	GETTABUP 	10 0 -39	; _ENV "TestOrderLogInfo"
+	177	[182]	GETTABLE 	10 10 -52	; "Clear"
+	178	[182]	CALL     	10 1 1
+	179	[183]	GETTABUP 	10 0 -53	; _ENV "Log"
+	180	[183]	GETTABLE 	10 10 -54	; "Info"
+	181	[183]	LOADK    	11 -55	; "\232\174\162\229\141\149\232\191\158\232\191\158-\232\174\162\229\141\149\231\148\159\230\136\144\230\151\165\229\191\151\n"
+	182	[183]	MOVE     	12 9
+	183	[183]	CONCAT   	11 11 12
+	184	[183]	CALL     	10 2 1
+	185	[186]	GETTABUP 	8 0 -56	; _ENV "RepeatWeightDecreaseHelper"
+	186	[186]	GETTABLE 	8 8 -57	; "UpdateMapInfo"
+	187	[186]	MOVE     	9 3
+	188	[186]	MOVE     	10 1
+	189	[186]	CALL     	8 3 1
+	190	[188]	GETTABUP 	8 0 -58	; _ENV "MainOrder"
+	191	[188]	GETTABLE 	8 8 -59	; "Create"
+	192	[188]	MOVE     	9 1
+	193	[188]	GETTABUP 	10 0 -60	; _ENV "MainOrderSlotDefinition"
+	194	[188]	GETTABLE 	10 10 -61	; "ContiorderSlot"
+	195	[188]	MOVE     	11 6
+	196	[189]	MOVE     	12 7
+	197	[189]	GETTABUP 	13 0 -5	; _ENV "MainOrderType"
+	198	[189]	GETTABLE 	13 13 -6	; "Contiorder"
+	199	[189]	LOADK    	14 -62	; 2001
+	200	[189]	LOADBOOL 	15 0 0
+	201	[188]	TAILCALL 	8 8 0
+	202	[189]	RETURN   	8 0
+	203	[190]	RETURN   	0 1
+constants (62) for 0000015FB93029B0:
+	1	"MainOrderSlotDefinition"
+	2	"ContiorderSlot"
+	3	"RepeatWeightDecreaseHelper"
+	4	"InitMapInfo"
+	5	"MainOrderType"
+	6	"Contiorder"
+	7	"GetIndex"
+	8	1
+	9	"m_ordersConfig"
+	10	"item1"
+	11	"range_entry"
+	12	2
+	13	"item2"
+	14	"item3"
+	15	3
+	16	nil
+	17	"ItemType"
+	18	"Flour09"
+	19	"GM"
+	20	"BIManager"
+	21	"LogErrorInfo"
+	22	"m_definition"
+	23	"ErrorNoItemBIType"
+	24	"\230\178\161\230\137\190\229\136\176\228\187\187\228\189\149\229\143\175\231\148\168\230\163\139\229\173\144\239\188\140\228\189\191\231\148\168\229\133\156\229\186\149\230\163\139\229\173\144 ItemType.Flour09"
+	25	"GameConfig"
+	26	"IsTestMode"
+	27	"Type"
+	28	"RefreshTime"
+	29	9999
+	30	"UnlockLevel"
+	31	"Point"
+	32	"Filters"
+	33	"FirstMin"
+	34	"FirstMax"
+	35	"SecondMin"
+	36	"SecondMax"
+	37	"ThirdMin"
+	38	"ThirdMax"
+	39	"TestOrderLogInfo"
+	40	"TestPrintOrderChosenItemsInfo"
+	41	"innerType"
+	42	"weightConfig"
+	43	"firstSelectedItem"
+	44	"secondSelectedItem"
+	45	"thirdSelectedItem"
+	46	"requirements"
+	47	"slot"
+	48	"orderModel"
+	49	"randomConfig"
+	50	"mapRepeatWeightDecreaseInfo"
+	51	"strCreateOrderTestLog"
+	52	"Clear"
+	53	"Log"
+	54	"Info"
+	55	"\232\174\162\229\141\149\232\191\158\232\191\158-\232\174\162\229\141\149\231\148\159\230\136\144\230\151\165\229\191\151\n"
+	56	"RepeatWeightDecreaseHelper"
+	57	"UpdateMapInfo"
+	58	"MainOrder"
+	59	"Create"
+	60	"MainOrderSlotDefinition"
+	61	"ContiorderSlot"
+	62	2001
+locals (10) for 0000015FB93029B0:
+	0	self	1	204
+	1	orderModel	1	204
+	2	slot	1	204
+	3	mapRepeatWeightDecreaseInfo	12	204
+	4	alreadyRequiredItems	13	204
+	5	selectItem	14	204
+	6	curIndex	16	204
+	7	req	17	204
+	8	randomConfig	113	185
+	9	log	176	185
+upvalues (1) for 0000015FB93029B0:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:85,128> (92 instructions at 0000015FB92FEAC0)
+2 params, 9 slots, 5 upvalues, 5 locals, 27 constants, 0 functions
+	1	[86]	GETTABUP 	2 0 -1	; _ENV "RandomOrderHelper"
+	2	[86]	GETTABLE 	2 2 -2	; "GetAvailableItems"
+	3	[86]	NEWTABLE 	3 0 3
+	4	[88]	GETUPVAL 	4 1	; orderModel
+	5	[88]	SETTABLE 	3 -3 4	; "orderModel" -
+	6	[89]	GETTABUP 	4 0 -5	; _ENV "MainOrderSlotDefinition"
+	7	[89]	GETTABLE 	4 4 -6	; "ContiorderSlot"
+	8	[89]	SETTABLE 	3 -4 4	; "slot" -
+	9	[90]	GETUPVAL 	4 2	; alreadyRequiredItems
+	10	[90]	SETTABLE 	3 -7 4	; "alreadyRequiredItems" -
+	11	[86]	CALL     	2 2 3
+	12	[92]	GETTABUP 	4 0 -1	; _ENV "RandomOrderHelper"
+	13	[92]	GETTABLE 	4 4 -8	; "FilterByLevel"
+	14	[92]	MOVE     	5 2
+	15	[92]	MOVE     	6 0
+	16	[92]	MOVE     	7 1
+	17	[92]	GETUPVAL 	8 1	; orderModel
+	18	[92]	CALL     	4 5 2
+	19	[92]	MOVE     	2 4
+	20	[93]	GETTABUP 	4 0 -1	; _ENV "RandomOrderHelper"
+	21	[93]	GETTABLE 	4 4 -8	; "FilterByLevel"
+	22	[93]	MOVE     	5 3
+	23	[93]	MOVE     	6 0
+	24	[93]	MOVE     	7 1
+	25	[93]	GETUPVAL 	8 1	; orderModel
+	26	[93]	CALL     	4 5 2
+	27	[93]	MOVE     	3 4
+	28	[95]	LOADNIL  	4 0
+	29	[96]	LEN      	5 2
+	30	[96]	EQ       	1 5 -9	; - 0
+	31	[96]	JMP      	0 13	; to 45
+	32	[97]	GETTABUP 	5 0 -10	; _ENV "RepeatWeightDecreaseHelper"
+	33	[97]	GETTABLE 	5 5 -11	; "DecreaseItemWeight"
+	34	[97]	MOVE     	6 2
+	35	[97]	GETUPVAL 	7 3	; mapRepeatWeightDecreaseInfo
+	36	[97]	GETUPVAL 	8 1	; orderModel
+	37	[97]	CALL     	5 4 1
+	38	[98]	GETTABUP 	5 0 -12	; _ENV "Table"
+	39	[98]	GETTABLE 	5 5 -13	; "ListWeightSelectOne"
+	40	[98]	MOVE     	6 2
+	41	[98]	CALL     	5 2 2
+	42	[98]	GETTABLE 	4 5 -14	; "Code"
+	43	[99]	LOADNIL  	3 0
+	44	[99]	JMP      	0 17	; to 62
+	45	[101]	LEN      	5 3
+	46	[101]	EQ       	0 5 -9	; - 0
+	47	[101]	JMP      	0 3	; to 51
+	48	[102]	LOADNIL  	5 0
+	49	[102]	RETURN   	5 2
+	50	[102]	JMP      	0 11	; to 62
+	51	[104]	GETTABUP 	5 0 -10	; _ENV "RepeatWeightDecreaseHelper"
+	52	[104]	GETTABLE 	5 5 -11	; "DecreaseItemWeight"
+	53	[104]	MOVE     	6 3
+	54	[104]	GETUPVAL 	7 3	; mapRepeatWeightDecreaseInfo
+	55	[104]	GETUPVAL 	8 1	; orderModel
+	56	[104]	CALL     	5 4 1
+	57	[105]	GETTABUP 	5 0 -12	; _ENV "Table"
+	58	[105]	GETTABLE 	5 5 -13	; "ListWeightSelectOne"
+	59	[105]	MOVE     	6 3
+	60	[105]	CALL     	5 2 2
+	61	[105]	GETTABLE 	4 5 -14	; "Code"
+	62	[109]	GETTABUP 	5 0 -15	; _ENV "table"
+	63	[109]	GETTABLE 	5 5 -16	; "insert"
+	64	[109]	GETUPVAL 	6 2	; alreadyRequiredItems
+	65	[109]	MOVE     	7 4
+	66	[109]	CALL     	5 3 1
+	67	[111]	GETTABUP 	5 0 -17	; _ENV "GameConfig"
+	68	[111]	GETTABLE 	5 5 -18	; "IsTestMode"
+	69	[111]	CALL     	5 1 2
+	70	[111]	TEST     	5 0
+	71	[111]	JMP      	0 13	; to 85
+	72	[113]	GETTABUP 	5 0 -19	; _ENV "TestOrderLogInfo"
+	73	[113]	GETTABLE 	5 5 -20	; "TestPrintBackItemsInfo"
+	74	[113]	NEWTABLE 	6 0 7
+	75	[115]	GETUPVAL 	7 4	; slot
+	76	[115]	SETTABLE 	6 -4 7	; "slot" -
+	77	[116]	SETTABLE 	6 -21 2	; "availableItems" -
+	78	[117]	SETTABLE 	6 -22 3	; "backavailableItems" -
+	79	[118]	SETTABLE 	6 -23 4	; "selectedItem" -
+	80	[119]	SETTABLE 	6 -24 0	; "minLevel" -
+	81	[120]	SETTABLE 	6 -25 1	; "maxLevel" -
+	82	[121]	GETUPVAL 	7 3	; mapRepeatWeightDecreaseInfo
+	83	[121]	SETTABLE 	6 -26 7	; "mapRepeatWeightDecreaseInfo" -
+	84	[113]	CALL     	5 2 1
+	85	[125]	GETTABUP 	5 0 -10	; _ENV "RepeatWeightDecreaseHelper"
+	86	[125]	GETTABLE 	5 5 -27	; "MarkSelectedLine"
+	87	[125]	MOVE     	6 4
+	88	[125]	GETUPVAL 	7 3	; mapRepeatWeightDecreaseInfo
+	89	[125]	GETUPVAL 	8 1	; orderModel
+	90	[125]	CALL     	5 4 1
+	91	[127]	RETURN   	4 2
+	92	[128]	RETURN   	0 1
+constants (27) for 0000015FB92FEAC0:
+	1	"RandomOrderHelper"
+	2	"GetAvailableItems"
+	3	"orderModel"
+	4	"slot"
+	5	"MainOrderSlotDefinition"
+	6	"ContiorderSlot"
+	7	"alreadyRequiredItems"
+	8	"FilterByLevel"
+	9	0
+	10	"RepeatWeightDecreaseHelper"
+	11	"DecreaseItemWeight"
+	12	"Table"
+	13	"ListWeightSelectOne"
+	14	"Code"
+	15	"table"
+	16	"insert"
+	17	"GameConfig"
+	18	"IsTestMode"
+	19	"TestOrderLogInfo"
+	20	"TestPrintBackItemsInfo"
+	21	"availableItems"
+	22	"backavailableItems"
+	23	"selectedItem"
+	24	"minLevel"
+	25	"maxLevel"
+	26	"mapRepeatWeightDecreaseInfo"
+	27	"MarkSelectedLine"
+locals (5) for 0000015FB92FEAC0:
+	0	minLevel	1	93
+	1	maxLevel	1	93
+	2	availableItems	12	93
+	3	backAvailableItems	12	93
+	4	selectedItem	29	93
+upvalues (5) for 0000015FB92FEAC0:
+	0	_ENV	0	0
+	1	orderModel	1	1
+	2	alreadyRequiredItems	1	4
+	3	mapRepeatWeightDecreaseInfo	1	3
+	4	slot	1	2
+
+function <ContiordersModel.lua:192,198> (15 instructions at 0000015FB9304790)
+1 param, 4 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[193]	SELF     	1 0 -1	; "GetIndex"
+	2	[193]	CALL     	1 2 2
+	3	[194]	LT       	1 1 -2	; - 0
+	4	[194]	JMP      	0 4	; to 9
+	5	[194]	SELF     	2 0 -3	; "GetTotalOrderCount"
+	6	[194]	CALL     	2 2 2
+	7	[194]	LT       	0 2 1
+	8	[194]	JMP      	0 2	; to 11
+	9	[195]	LOADNIL  	2 0
+	10	[195]	RETURN   	2 2
+	11	[197]	GETTABLE 	2 0 -4	; "m_ordersConfig"
+	12	[197]	GETTABLE 	2 2 1
+	13	[197]	GETTABLE 	2 2 -5	; "reward"
+	14	[197]	RETURN   	2 2
+	15	[198]	RETURN   	0 1
+constants (5) for 0000015FB9304790:
+	1	"GetIndex"
+	2	0
+	3	"GetTotalOrderCount"
+	4	"m_ordersConfig"
+	5	"reward"
+locals (2) for 0000015FB9304790:
+	0	self	1	16
+	1	index	3	16
+upvalues (0) for 0000015FB9304790:
+
+function <ContiordersModel.lua:200,213> (44 instructions at 0000015FB9304870)
+1 param, 7 slots, 1 upvalue, 3 locals, 15 constants, 0 functions
+	1	[201]	SELF     	1 0 -1	; "GetIndex"
+	2	[201]	CALL     	1 2 2
+	3	[202]	LT       	1 1 -2	; - 0
+	4	[202]	JMP      	0 4	; to 9
+	5	[202]	SELF     	2 0 -3	; "GetTotalOrderCount"
+	6	[202]	CALL     	2 2 2
+	7	[202]	LT       	0 2 1
+	8	[202]	JMP      	0 2	; to 11
+	9	[203]	LOADK    	2 -2	; 0
+	10	[203]	RETURN   	2 2
+	11	[206]	GETTABUP 	2 0 -4	; _ENV "GM"
+	12	[206]	GETTABLE 	2 2 -5	; "ActivityManager"
+	13	[206]	SELF     	2 2 -6	; "GetModel"
+	14	[206]	GETTABUP 	4 0 -7	; _ENV "ActivityType"
+	15	[206]	GETTABLE 	4 4 -8	; "OrderBoost"
+	16	[206]	CALL     	2 3 2
+	17	[207]	SELF     	3 2 -9	; "SmileCompleted"
+	18	[207]	CALL     	3 2 2
+	19	[207]	TEST     	3 0
+	20	[207]	JMP      	0 8	; to 29
+	21	[208]	GETTABUP 	3 0 -10	; _ENV "math"
+	22	[208]	GETTABLE 	3 3 -11	; "max"
+	23	[208]	LOADK    	4 -2	; 0
+	24	[208]	SELF     	5 0 -12	; "GetLastReturnSmileCount"
+	25	[208]	CALL     	5 2 0
+	26	[208]	TAILCALL 	3 0 0
+	27	[208]	RETURN   	3 0
+	28	[208]	JMP      	0 15	; to 44
+	29	[210]	SELF     	3 0 -13	; "SetLastReturnSmileCount"
+	30	[210]	GETTABLE 	5 0 -14	; "m_ordersConfig"
+	31	[210]	GETTABLE 	5 5 1
+	32	[210]	GETTABLE 	5 5 -15	; "boost"
+	33	[210]	TEST     	5 1
+	34	[210]	JMP      	0 1	; to 36
+	35	[210]	LOADK    	5 -2	; 0
+	36	[210]	CALL     	3 3 1
+	37	[211]	GETTABLE 	3 0 -14	; "m_ordersConfig"
+	38	[211]	GETTABLE 	3 3 1
+	39	[211]	GETTABLE 	3 3 -15	; "boost"
+	40	[211]	TEST     	3 1
+	41	[211]	JMP      	0 1	; to 43
+	42	[211]	LOADK    	3 -2	; 0
+	43	[211]	RETURN   	3 2
+	44	[213]	RETURN   	0 1
+constants (15) for 0000015FB9304870:
+	1	"GetIndex"
+	2	0
+	3	"GetTotalOrderCount"
+	4	"GM"
+	5	"ActivityManager"
+	6	"GetModel"
+	7	"ActivityType"
+	8	"OrderBoost"
+	9	"SmileCompleted"
+	10	"math"
+	11	"max"
+	12	"GetLastReturnSmileCount"
+	13	"SetLastReturnSmileCount"
+	14	"m_ordersConfig"
+	15	"boost"
+locals (3) for 0000015FB9304870:
+	0	self	1	45
+	1	index	3	45
+	2	boostModel	17	45
+upvalues (1) for 0000015FB9304870:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:215,217> (6 instructions at 0000015FB9304B70)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[216]	NEWTABLE 	1 1 0
+	2	[216]	GETTABLE 	2 0 -1	; "m_finalOrderConfig"
+	3	[216]	GETTABLE 	2 2 -2	; "reward"
+	4	[216]	SETLIST  	1 1 1	; 1
+	5	[216]	RETURN   	1 2
+	6	[217]	RETURN   	0 1
+constants (2) for 0000015FB9304B70:
+	1	"m_finalOrderConfig"
+	2	"reward"
+locals (1) for 0000015FB9304B70:
+	0	self	1	7
+upvalues (0) for 0000015FB9304B70:
+
+function <ContiordersModel.lua:219,221> (5 instructions at 0000015FB9304BF0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[220]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[220]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[220]	MOVE     	2 0
+	4	[220]	CALL     	1 2 1
+	5	[221]	RETURN   	0 1
+constants (2) for 0000015FB9304BF0:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 0000015FB9304BF0:
+	0	self	1	6
+upvalues (1) for 0000015FB9304BF0:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:223,245> (46 instructions at 0000015FB9304C70)
+2 params, 10 slots, 1 upvalue, 7 locals, 18 constants, 1 function
+	1	[224]	GETTABLE 	2 1 -1	; "contiordersConfig"
+	2	[224]	EQ       	0 2 -2	; - nil
+	3	[224]	JMP      	0 5	; to 9
+	4	[225]	GETTABUP 	2 0 -3	; _ENV "Log"
+	5	[225]	GETTABLE 	2 2 -4	; "Error"
+	6	[225]	LOADK    	3 -5	; "failed to read database contiordersConfig"
+	7	[225]	CALL     	2 2 1
+	8	[226]	RETURN   	0 1
+	9	[229]	NEWTABLE 	2 0 0
+	10	[229]	SETTABLE 	0 -6 2	; "m_ordersConfig" -
+	11	[231]	SETTABLE 	0 -7 -2	; "m_finalOrderConfig" nil
+	12	[232]	GETTABUP 	2 0 -8	; _ENV "ipairs"
+	13	[232]	GETTABLE 	3 1 -1	; "contiordersConfig"
+	14	[232]	CALL     	2 2 4
+	15	[232]	JMP      	0 23	; to 39
+	16	[233]	GETTABLE 	7 6 -9	; "index"
+	17	[233]	EQ       	0 7 -10	; - 0
+	18	[233]	JMP      	0 4	; to 23
+	19	[234]	SETTABLE 	0 -7 6	; "m_finalOrderConfig" -
+	20	[235]	GETTABLE 	7 6 -12	; "groupId"
+	21	[235]	SETTABLE 	0 -11 7	; "m_groupId" -
+	22	[235]	JMP      	0 16	; to 39
+	23	[237]	GETTABUP 	7 0 -13	; _ENV "table"
+	24	[237]	GETTABLE 	7 7 -14	; "insert"
+	25	[237]	GETTABLE 	8 0 -6	; "m_ordersConfig"
+	26	[237]	MOVE     	9 6
+	27	[237]	CALL     	7 3 1
+	28	[238]	GETTABLE 	7 0 -6	; "m_ordersConfig"
+	29	[238]	GETTABLE 	8 0 -6	; "m_ordersConfig"
+	30	[238]	LEN      	8 8
+	31	[238]	GETTABLE 	7 7 8
+	32	[238]	GETTABLE 	8 0 -6	; "m_ordersConfig"
+	33	[238]	GETTABLE 	9 0 -6	; "m_ordersConfig"
+	34	[238]	LEN      	9 9
+	35	[238]	GETTABLE 	8 8 9
+	36	[238]	GETTABLE 	8 8 -16	; "time"
+	37	[238]	MUL      	8 8 -17	; - 60
+	38	[238]	SETTABLE 	7 -15 8	; "timeInSecond" -
+	39	[232]	TFORCALL 	2 2
+	40	[232]	TFORLOOP 	4 -25	; to 16
+	41	[242]	GETTABUP 	2 0 -13	; _ENV "table"
+	42	[242]	GETTABLE 	2 2 -18	; "sort"
+	43	[242]	GETTABLE 	3 0 -6	; "m_ordersConfig"
+	44	[244]	CLOSURE  	4 0	; 0000015FB93056F0
+	45	[242]	CALL     	2 3 1
+	46	[245]	RETURN   	0 1
+constants (18) for 0000015FB9304C70:
+	1	"contiordersConfig"
+	2	nil
+	3	"Log"
+	4	"Error"
+	5	"failed to read database contiordersConfig"
+	6	"m_ordersConfig"
+	7	"m_finalOrderConfig"
+	8	"ipairs"
+	9	"index"
+	10	0
+	11	"m_groupId"
+	12	"groupId"
+	13	"table"
+	14	"insert"
+	15	"timeInSecond"
+	16	"time"
+	17	60
+	18	"sort"
+locals (7) for 0000015FB9304C70:
+	0	self	1	47
+	1	config	1	47
+	2	(for generator)	15	41
+	3	(for state)	15	41
+	4	(for control)	15	41
+	5	_	16	39
+	6	config	16	39
+upvalues (1) for 0000015FB9304C70:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:242,244> (8 instructions at 0000015FB93056F0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[243]	GETTABLE 	2 0 -1	; "index"
+	2	[243]	GETTABLE 	3 1 -1	; "index"
+	3	[243]	LT       	1 2 3
+	4	[243]	JMP      	0 1	; to 6
+	5	[243]	LOADBOOL 	2 0 1
+	6	[243]	LOADBOOL 	2 1 0
+	7	[243]	RETURN   	2 2
+	8	[244]	RETURN   	0 1
+constants (1) for 0000015FB93056F0:
+	1	"index"
+locals (2) for 0000015FB93056F0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000015FB93056F0:
+
+function <ContiordersModel.lua:247,253> (11 instructions at 0000015FB9306280)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[248]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[248]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[248]	MOVE     	2 0
+	4	[248]	CALL     	1 2 1
+	5	[249]	SETTABLE 	0 -3 -4	; "m_needRemoveOrder" true
+	6	[250]	GETTABLE 	1 0 -5	; "m_lateInit"
+	7	[250]	TEST     	1 0
+	8	[250]	JMP      	0 2	; to 11
+	9	[251]	SELF     	1 0 -6	; "_RemoveOrder"
+	10	[251]	CALL     	1 2 1
+	11	[253]	RETURN   	0 1
+constants (6) for 0000015FB9306280:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_needRemoveOrder"
+	4	true
+	5	"m_lateInit"
+	6	"_RemoveOrder"
+locals (1) for 0000015FB9306280:
+	0	self	1	12
+upvalues (1) for 0000015FB9306280:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:255,265> (37 instructions at 0000015FB9306800)
+1 param, 4 slots, 1 upvalue, 1 local, 14 constants, 0 functions
+	1	[256]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[256]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[256]	GETTABLE 	2 0 -3	; "m_definition"
+	4	[256]	GETTABLE 	2 2 -4	; "StateChangedEvent"
+	5	[256]	CALL     	1 2 1
+	6	[258]	SELF     	1 0 -5	; "GetState"
+	7	[258]	LOADBOOL 	3 0 0
+	8	[258]	CALL     	1 3 2
+	9	[258]	GETTABUP 	2 0 -6	; _ENV "ActivityState"
+	10	[258]	GETTABLE 	2 2 -7	; "Started"
+	11	[258]	EQ       	1 1 2
+	12	[258]	JMP      	0 7	; to 20
+	13	[258]	SELF     	1 0 -5	; "GetState"
+	14	[258]	LOADBOOL 	3 0 0
+	15	[258]	CALL     	1 3 2
+	16	[258]	GETTABUP 	2 0 -6	; _ENV "ActivityState"
+	17	[258]	GETTABLE 	2 2 -8	; "Ended"
+	18	[258]	EQ       	0 1 2
+	19	[258]	JMP      	0 11	; to 31
+	20	[259]	SELF     	1 0 -5	; "GetState"
+	21	[259]	LOADBOOL 	3 0 0
+	22	[259]	CALL     	1 3 2
+	23	[259]	GETTABUP 	2 0 -6	; _ENV "ActivityState"
+	24	[259]	GETTABLE 	2 2 -7	; "Started"
+	25	[259]	EQ       	1 1 2
+	26	[259]	JMP      	0 10	; to 37
+	27	[259]	SELF     	1 0 -9	; "GetStarted"
+	28	[259]	CALL     	1 2 2
+	29	[259]	EQ       	0 1 -10	; - false
+	30	[259]	JMP      	0 6	; to 37
+	31	[260]	SETTABLE 	0 -11 -12	; "m_needRemoveOrder" true
+	32	[261]	GETTABLE 	1 0 -13	; "m_lateInit"
+	33	[261]	TEST     	1 0
+	34	[261]	JMP      	0 2	; to 37
+	35	[262]	SELF     	1 0 -14	; "_RemoveOrder"
+	36	[262]	CALL     	1 2 1
+	37	[265]	RETURN   	0 1
+constants (14) for 0000015FB9306800:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"m_definition"
+	4	"StateChangedEvent"
+	5	"GetState"
+	6	"ActivityState"
+	7	"Started"
+	8	"Ended"
+	9	"GetStarted"
+	10	false
+	11	"m_needRemoveOrder"
+	12	true
+	13	"m_lateInit"
+	14	"_RemoveOrder"
+locals (1) for 0000015FB9306800:
+	0	self	1	38
+upvalues (1) for 0000015FB9306800:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:267,288> (74 instructions at 0000015FB9305D80)
+1 param, 11 slots, 1 upvalue, 10 locals, 23 constants, 0 functions
+	1	[269]	LOADNIL  	1 0
+	2	[271]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	3	[271]	GETTABUP 	3 0 -2	; _ENV "ContiordersDefinition"
+	4	[271]	CALL     	2 2 4
+	5	[271]	JMP      	0 23	; to 29
+	6	[272]	GETTABUP 	7 0 -3	; _ENV "GM"
+	7	[272]	GETTABLE 	7 7 -4	; "ActivityManager"
+	8	[272]	SELF     	7 7 -5	; "GetModel"
+	9	[272]	MOVE     	9 5
+	10	[272]	CALL     	7 3 2
+	11	[273]	TEST     	7 0
+	12	[273]	JMP      	0 16	; to 29
+	13	[273]	SELF     	8 7 -6	; "GetState"
+	14	[273]	LOADBOOL 	10 0 0
+	15	[273]	CALL     	8 3 2
+	16	[273]	GETTABUP 	9 0 -7	; _ENV "ActivityState"
+	17	[273]	GETTABLE 	9 9 -8	; "Started"
+	18	[273]	EQ       	1 8 9
+	19	[273]	JMP      	0 7	; to 27
+	20	[273]	SELF     	8 7 -6	; "GetState"
+	21	[273]	LOADBOOL 	10 0 0
+	22	[273]	CALL     	8 3 2
+	23	[273]	GETTABUP 	9 0 -7	; _ENV "ActivityState"
+	24	[273]	GETTABLE 	9 9 -9	; "Ended"
+	25	[273]	EQ       	0 8 9
+	26	[273]	JMP      	0 2	; to 29
+	27	[274]	MOVE     	1 7
+	28	[274]	JMP      	0 2	; to 31
+	29	[271]	TFORCALL 	2 2
+	30	[271]	TFORLOOP 	4 -25	; to 6
+	31	[279]	EQ       	1 1 -10	; - nil
+	32	[279]	JMP      	0 4	; to 37
+	33	[279]	SELF     	2 1 -11	; "GetIndex"
+	34	[279]	CALL     	2 2 2
+	35	[279]	LT       	0 2 -12	; - 0
+	36	[279]	JMP      	0 10	; to 47
+	37	[280]	GETTABUP 	2 0 -3	; _ENV "GM"
+	38	[280]	GETTABLE 	2 2 -13	; "MainBoardModel"
+	39	[280]	SELF     	2 2 -14	; "GetOrderModel"
+	40	[280]	GETTABUP 	4 0 -15	; _ENV "OrderModelType"
+	41	[280]	GETTABLE 	4 4 -16	; "Slot"
+	42	[280]	CALL     	2 3 2
+	43	[280]	SELF     	2 2 -17	; "RemoveOrder"
+	44	[280]	GETTABUP 	4 0 -18	; _ENV "MainOrderSlotDefinition"
+	45	[280]	GETTABLE 	4 4 -19	; "ContiorderSlot"
+	46	[280]	CALL     	2 3 1
+	47	[283]	GETTABUP 	2 0 -3	; _ENV "GM"
+	48	[283]	GETTABLE 	2 2 -13	; "MainBoardModel"
+	49	[283]	SELF     	2 2 -20	; "GetOrders"
+	50	[283]	GETTABUP 	4 0 -15	; _ENV "OrderModelType"
+	51	[283]	GETTABLE 	4 4 -16	; "Slot"
+	52	[283]	CALL     	2 3 2
+	53	[284]	GETTABUP 	3 0 -18	; _ENV "MainOrderSlotDefinition"
+	54	[284]	GETTABLE 	3 3 -19	; "ContiorderSlot"
+	55	[284]	GETTABLE 	3 2 3
+	56	[285]	TEST     	3 0
+	57	[285]	JMP      	0 16	; to 74
+	58	[285]	SELF     	4 3 -21	; "GetAvatarName"
+	59	[285]	CALL     	4 2 2
+	60	[285]	GETTABLE 	5 0 -22	; "m_definition"
+	61	[285]	GETTABLE 	5 5 -23	; "OrderAvatarName"
+	62	[285]	EQ       	0 4 5
+	63	[285]	JMP      	0 10	; to 74
+	64	[286]	GETTABUP 	4 0 -3	; _ENV "GM"
+	65	[286]	GETTABLE 	4 4 -13	; "MainBoardModel"
+	66	[286]	SELF     	4 4 -14	; "GetOrderModel"
+	67	[286]	GETTABUP 	6 0 -15	; _ENV "OrderModelType"
+	68	[286]	GETTABLE 	6 6 -16	; "Slot"
+	69	[286]	CALL     	4 3 2
+	70	[286]	SELF     	4 4 -17	; "RemoveOrder"
+	71	[286]	GETTABUP 	6 0 -18	; _ENV "MainOrderSlotDefinition"
+	72	[286]	GETTABLE 	6 6 -19	; "ContiorderSlot"
+	73	[286]	CALL     	4 3 1
+	74	[288]	RETURN   	0 1
+constants (23) for 0000015FB9305D80:
+	1	"pairs"
+	2	"ContiordersDefinition"
+	3	"GM"
+	4	"ActivityManager"
+	5	"GetModel"
+	6	"GetState"
+	7	"ActivityState"
+	8	"Started"
+	9	"Ended"
+	10	nil
+	11	"GetIndex"
+	12	0
+	13	"MainBoardModel"
+	14	"GetOrderModel"
+	15	"OrderModelType"
+	16	"Slot"
+	17	"RemoveOrder"
+	18	"MainOrderSlotDefinition"
+	19	"ContiorderSlot"
+	20	"GetOrders"
+	21	"GetAvatarName"
+	22	"m_definition"
+	23	"OrderAvatarName"
+locals (10) for 0000015FB9305D80:
+	0	self	1	75
+	1	startedContiModel	2	75
+	2	(for generator)	5	31
+	3	(for state)	5	31
+	4	(for control)	5	31
+	5	activityType	6	29
+	6	definition	6	29
+	7	model	11	29
+	8	orders	53	75
+	9	order	56	75
+upvalues (1) for 0000015FB9305D80:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:290,309> (58 instructions at 0000015FB9305B80)
+1 param, 4 slots, 1 upvalue, 1 local, 24 constants, 0 functions
+	1	[291]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[291]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[291]	MOVE     	2 0
+	4	[291]	CALL     	1 2 1
+	5	[293]	SELF     	1 0 -3	; "GetState"
+	6	[293]	LOADBOOL 	3 0 0
+	7	[293]	CALL     	1 3 2
+	8	[293]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	9	[293]	GETTABLE 	2 2 -5	; "Started"
+	10	[293]	EQ       	1 1 2
+	11	[293]	JMP      	0 8	; to 20
+	12	[293]	SELF     	1 0 -3	; "GetState"
+	13	[293]	LOADBOOL 	3 0 0
+	14	[293]	CALL     	1 3 2
+	15	[293]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	16	[293]	GETTABLE 	2 2 -6	; "Ended"
+	17	[293]	EQ       	1 1 2
+	18	[293]	JMP      	0 1	; to 20
+	19	[294]	RETURN   	0 1
+	20	[296]	SELF     	1 0 -7	; "GetIndex"
+	21	[296]	CALL     	1 2 2
+	22	[296]	LT       	1 1 -8	; - 0
+	23	[296]	JMP      	0 10	; to 34
+	24	[296]	SELF     	1 0 -7	; "GetIndex"
+	25	[296]	CALL     	1 2 2
+	26	[296]	SELF     	2 0 -9	; "GetTotalOrderCount"
+	27	[296]	CALL     	2 2 2
+	28	[296]	LT       	1 2 1
+	29	[296]	JMP      	0 4	; to 34
+	30	[296]	SELF     	1 0 -10	; "GetStarted"
+	31	[296]	CALL     	1 2 2
+	32	[296]	TEST     	1 1
+	33	[296]	JMP      	0 1	; to 35
+	34	[297]	RETURN   	0 1
+	35	[300]	GETTABUP 	1 0 -11	; _ENV "GM"
+	36	[300]	GETTABLE 	1 1 -12	; "GameModel"
+	37	[300]	SELF     	1 1 -13	; "GetServerTime"
+	38	[300]	CALL     	1 2 2
+	39	[300]	SELF     	2 0 -14	; "GetEndTime"
+	40	[300]	CALL     	2 2 2
+	41	[300]	LE       	0 2 1
+	42	[300]	JMP      	0 15	; to 58
+	43	[301]	SELF     	1 0 -15	; "SetIndex"
+	44	[301]	LOADK    	3 -16	; -2
+	45	[301]	CALL     	1 3 1
+	46	[302]	SETTABLE 	0 -17 -18	; "m_needRemoveOrder" true
+	47	[303]	GETTABLE 	1 0 -19	; "m_lateInit"
+	48	[303]	TEST     	1 0
+	49	[303]	JMP      	0 2	; to 52
+	50	[304]	SELF     	1 0 -20	; "_RemoveOrder"
+	51	[304]	CALL     	1 2 1
+	52	[306]	GETTABUP 	1 0 -21	; _ENV "EventDispatcher"
+	53	[306]	GETTABLE 	1 1 -22	; "DispatchEvent"
+	54	[306]	GETTABLE 	2 0 -23	; "m_definition"
+	55	[306]	GETTABLE 	2 2 -24	; "OrderFailedEvent"
+	56	[306]	CALL     	1 2 1
+	57	[307]	RETURN   	0 1
+	58	[309]	RETURN   	0 1
+constants (24) for 0000015FB9305B80:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"Ended"
+	7	"GetIndex"
+	8	0
+	9	"GetTotalOrderCount"
+	10	"GetStarted"
+	11	"GM"
+	12	"GameModel"
+	13	"GetServerTime"
+	14	"GetEndTime"
+	15	"SetIndex"
+	16	-2
+	17	"m_needRemoveOrder"
+	18	true
+	19	"m_lateInit"
+	20	"_RemoveOrder"
+	21	"EventDispatcher"
+	22	"DispatchEvent"
+	23	"m_definition"
+	24	"OrderFailedEvent"
+locals (1) for 0000015FB9305B80:
+	0	self	1	59
+upvalues (1) for 0000015FB9305B80:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:311,323> (38 instructions at 0000015FB9306500)
+1 param, 5 slots, 1 upvalue, 1 local, 19 constants, 0 functions
+	1	[312]	SELF     	1 0 -1	; "GetState"
+	2	[312]	LOADBOOL 	3 0 0
+	3	[312]	CALL     	1 3 2
+	4	[312]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[312]	GETTABLE 	2 2 -3	; "Started"
+	6	[312]	EQ       	1 1 2
+	7	[312]	JMP      	0 1	; to 9
+	8	[313]	RETURN   	0 1
+	9	[316]	GETTABUP 	1 0 -4	; _ENV "PrintContiInfo"
+	10	[316]	LOADK    	2 -5	; "unlock first order"
+	11	[316]	CALL     	1 2 1
+	12	[317]	SELF     	1 0 -6	; "SetIndex"
+	13	[317]	LOADK    	3 -7	; 1
+	14	[317]	CALL     	1 3 1
+	15	[318]	SELF     	1 0 -8	; "SetStartTime"
+	16	[318]	GETTABUP 	3 0 -9	; _ENV "GM"
+	17	[318]	GETTABLE 	3 3 -10	; "GameModel"
+	18	[318]	SELF     	3 3 -11	; "GetServerTime"
+	19	[318]	CALL     	3 2 0
+	20	[318]	CALL     	1 0 1
+	21	[319]	SELF     	1 0 -12	; "SetEndTime"
+	22	[319]	SELF     	3 0 -13	; "GetStartTime"
+	23	[319]	CALL     	3 2 2
+	24	[319]	GETTABLE 	4 0 -14	; "m_ordersConfig"
+	25	[319]	GETTABLE 	4 4 -7	; 1
+	26	[319]	GETTABLE 	4 4 -15	; "timeInSecond"
+	27	[319]	ADD      	3 3 4
+	28	[319]	CALL     	1 3 1
+	29	[320]	SELF     	1 0 -16	; "SetStarted"
+	30	[320]	LOADBOOL 	3 1 0
+	31	[320]	CALL     	1 3 1
+	32	[321]	SELF     	1 0 -17	; "ResetPopEndWindow"
+	33	[321]	LOADBOOL 	3 0 0
+	34	[321]	CALL     	1 3 1
+	35	[322]	SELF     	1 0 -18	; "SetLastReturnSmileCount"
+	36	[322]	LOADK    	3 -19	; 0
+	37	[322]	CALL     	1 3 1
+	38	[323]	RETURN   	0 1
+constants (19) for 0000015FB9306500:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"PrintContiInfo"
+	5	"unlock first order"
+	6	"SetIndex"
+	7	1
+	8	"SetStartTime"
+	9	"GM"
+	10	"GameModel"
+	11	"GetServerTime"
+	12	"SetEndTime"
+	13	"GetStartTime"
+	14	"m_ordersConfig"
+	15	"timeInSecond"
+	16	"SetStarted"
+	17	"ResetPopEndWindow"
+	18	"SetLastReturnSmileCount"
+	19	0
+locals (1) for 0000015FB9306500:
+	0	self	1	39
+upvalues (1) for 0000015FB9306500:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:325,346> (83 instructions at 0000015FB9305E00)
+1 param, 11 slots, 1 upvalue, 3 locals, 39 constants, 0 functions
+	1	[326]	SELF     	1 0 -1	; "GetState"
+	2	[326]	LOADBOOL 	3 0 0
+	3	[326]	CALL     	1 3 2
+	4	[326]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[326]	GETTABLE 	2 2 -3	; "Started"
+	6	[326]	EQ       	1 1 2
+	7	[326]	JMP      	0 8	; to 16
+	8	[326]	SELF     	1 0 -1	; "GetState"
+	9	[326]	LOADBOOL 	3 0 0
+	10	[326]	CALL     	1 3 2
+	11	[326]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	12	[326]	GETTABLE 	2 2 -4	; "Ended"
+	13	[326]	EQ       	1 1 2
+	14	[326]	JMP      	0 1	; to 16
+	15	[327]	RETURN   	0 1
+	16	[330]	GETTABUP 	1 0 -5	; _ENV "GM"
+	17	[330]	GETTABLE 	1 1 -6	; "GameModel"
+	18	[330]	SELF     	1 1 -7	; "GetServerTime"
+	19	[330]	CALL     	1 2 2
+	20	[330]	SELF     	2 0 -8	; "GetEndTime"
+	21	[330]	CALL     	2 2 2
+	22	[330]	LT       	0 2 1
+	23	[330]	JMP      	0 1	; to 25
+	24	[331]	RETURN   	0 1
+	25	[334]	SELF     	1 0 -9	; "GetIndex"
+	26	[334]	CALL     	1 2 2
+	27	[335]	ADD      	2 1 -10	; - 1
+	28	[336]	SELF     	3 0 -11	; "SetIndex"
+	29	[336]	MOVE     	5 2
+	30	[336]	CALL     	3 3 1
+	31	[337]	SELF     	3 0 -12	; "GetTotalOrderCount"
+	32	[337]	CALL     	3 2 2
+	33	[337]	LE       	0 2 3
+	34	[337]	JMP      	0 19	; to 54
+	35	[338]	GETTABUP 	3 0 -13	; _ENV "PrintContiInfo"
+	36	[338]	LOADK    	4 -14	; "unlock next order, index = "
+	37	[338]	MOVE     	5 2
+	38	[338]	CALL     	3 3 1
+	39	[339]	SELF     	3 0 -15	; "SetStartTime"
+	40	[339]	GETTABUP 	5 0 -5	; _ENV "GM"
+	41	[339]	GETTABLE 	5 5 -6	; "GameModel"
+	42	[339]	SELF     	5 5 -7	; "GetServerTime"
+	43	[339]	CALL     	5 2 0
+	44	[339]	CALL     	3 0 1
+	45	[340]	SELF     	3 0 -16	; "SetEndTime"
+	46	[340]	SELF     	5 0 -17	; "GetStartTime"
+	47	[340]	CALL     	5 2 2
+	48	[340]	GETTABLE 	6 0 -18	; "m_ordersConfig"
+	49	[340]	GETTABLE 	6 6 2
+	50	[340]	GETTABLE 	6 6 -19	; "timeInSecond"
+	51	[340]	ADD      	5 5 6
+	52	[340]	CALL     	3 3 1
+	53	[340]	JMP      	0 26	; to 80
+	54	[342]	GETTABUP 	3 0 -20	; _ENV "RewardApi"
+	55	[342]	GETTABLE 	3 3 -21	; "AcquireRewardsLogic"
+	56	[342]	SELF     	4 0 -22	; "GetFinalReward"
+	57	[342]	CALL     	4 2 2
+	58	[342]	GETTABUP 	5 0 -23	; _ENV "EPropertySource"
+	59	[342]	GETTABLE 	5 5 -24	; "Give"
+	60	[342]	GETTABLE 	6 0 -25	; "m_definition"
+	61	[342]	GETTABLE 	6 6 -26	; "RewardBIType"
+	62	[342]	GETTABUP 	7 0 -27	; _ENV "EGameMode"
+	63	[342]	GETTABLE 	7 7 -28	; "Main"
+	64	[342]	GETTABUP 	8 0 -29	; _ENV "CacheItemType"
+	65	[342]	GETTABLE 	8 8 -30	; "Type2"
+	66	[342]	CALL     	3 6 1
+	67	[343]	GETTABUP 	3 0 -5	; _ENV "GM"
+	68	[343]	GETTABLE 	3 3 -31	; "BIManager"
+	69	[343]	SELF     	3 3 -32	; "LogActivity"
+	70	[343]	SELF     	5 0 -33	; "GetType"
+	71	[343]	CALL     	5 2 2
+	72	[343]	SELF     	6 0 -34	; "GetId"
+	73	[343]	CALL     	6 2 2
+	74	[343]	GETTABUP 	7 0 -35	; _ENV "EBIType"
+	75	[343]	GETTABLE 	7 7 -36	; "ActivityGetRewards"
+	76	[343]	LOADK    	8 -37	; 0
+	77	[343]	SELF     	9 0 -38	; "GetServerConfigGroupId"
+	78	[343]	CALL     	9 2 0
+	79	[343]	CALL     	3 0 1
+	80	[345]	SELF     	3 0 -39	; "SetLastReturnSmileCount"
+	81	[345]	LOADK    	5 -37	; 0
+	82	[345]	CALL     	3 3 1
+	83	[346]	RETURN   	0 1
+constants (39) for 0000015FB9305E00:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"Ended"
+	5	"GM"
+	6	"GameModel"
+	7	"GetServerTime"
+	8	"GetEndTime"
+	9	"GetIndex"
+	10	1
+	11	"SetIndex"
+	12	"GetTotalOrderCount"
+	13	"PrintContiInfo"
+	14	"unlock next order, index = "
+	15	"SetStartTime"
+	16	"SetEndTime"
+	17	"GetStartTime"
+	18	"m_ordersConfig"
+	19	"timeInSecond"
+	20	"RewardApi"
+	21	"AcquireRewardsLogic"
+	22	"GetFinalReward"
+	23	"EPropertySource"
+	24	"Give"
+	25	"m_definition"
+	26	"RewardBIType"
+	27	"EGameMode"
+	28	"Main"
+	29	"CacheItemType"
+	30	"Type2"
+	31	"BIManager"
+	32	"LogActivity"
+	33	"GetType"
+	34	"GetId"
+	35	"EBIType"
+	36	"ActivityGetRewards"
+	37	0
+	38	"GetServerConfigGroupId"
+	39	"SetLastReturnSmileCount"
+locals (3) for 0000015FB9305E00:
+	0	self	1	84
+	1	curIndex	27	84
+	2	nextIndex	28	84
+upvalues (1) for 0000015FB9305E00:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:348,350> (4 instructions at 0000015FB9306300)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[349]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[349]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[349]	RETURN   	1 2
+	4	[350]	RETURN   	0 1
+constants (2) for 0000015FB9306300:
+	1	"m_definition"
+	2	"ResourceLabels"
+locals (1) for 0000015FB9306300:
+	0	self	1	5
+upvalues (0) for 0000015FB9306300:
+
+function <ContiordersModel.lua:352,354> (7 instructions at 0000015FB9306400)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[353]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[353]	SELF     	1 1 -2	; "Set"
+	3	[353]	GETTABUP 	3 0 -3	; DBKey "PopEndWindow"
+	4	[353]	LOADK    	4 -4	; "value"
+	5	[353]	LOADK    	5 -5	; "1"
+	6	[353]	CALL     	1 5 1
+	7	[354]	RETURN   	0 1
+constants (5) for 0000015FB9306400:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopEndWindow"
+	4	"value"
+	5	"1"
+locals (1) for 0000015FB9306400:
+	0	self	1	8
+upvalues (1) for 0000015FB9306400:
+	0	DBKey	1	0
+
+function <ContiordersModel.lua:356,358> (7 instructions at 0000015FB9305E80)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[357]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[357]	SELF     	1 1 -2	; "Set"
+	3	[357]	GETTABUP 	3 0 -3	; DBKey "PopEndWindow"
+	4	[357]	LOADK    	4 -4	; "value"
+	5	[357]	LOADK    	5 -5	; "0"
+	6	[357]	CALL     	1 5 1
+	7	[358]	RETURN   	0 1
+constants (5) for 0000015FB9305E80:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PopEndWindow"
+	4	"value"
+	5	"0"
+locals (1) for 0000015FB9305E80:
+	0	self	1	8
+upvalues (1) for 0000015FB9305E80:
+	0	DBKey	1	0
+
+function <ContiordersModel.lua:360,362> (11 instructions at 0000015FB9306680)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[361]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[361]	SELF     	1 1 -2	; "GetValue"
+	3	[361]	GETTABUP 	3 0 -3	; DBKey "PopEndWindow"
+	4	[361]	LOADK    	4 -4	; "value"
+	5	[361]	CALL     	1 4 2
+	6	[361]	EQ       	0 1 -5	; - "1"
+	7	[361]	JMP      	0 1	; to 9
+	8	[361]	LOADBOOL 	1 0 1
+	9	[361]	LOADBOOL 	1 1 0
+	10	[361]	RETURN   	1 2
+	11	[362]	RETURN   	0 1
+constants (5) for 0000015FB9306680:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PopEndWindow"
+	4	"value"
+	5	"1"
+locals (1) for 0000015FB9306680:
+	0	self	1	12
+upvalues (1) for 0000015FB9306680:
+	0	DBKey	1	0
+
+function <ContiordersModel.lua:365,367> (3 instructions at 0000015FB9306480)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[366]	GETTABLE 	1 0 -1	; "m_groupId"
+	2	[366]	RETURN   	1 2
+	3	[367]	RETURN   	0 1
+constants (1) for 0000015FB9306480:
+	1	"m_groupId"
+locals (1) for 0000015FB9306480:
+	0	self	1	4
+upvalues (0) for 0000015FB9306480:
+
+function <ContiordersModel.lua:370,372> (10 instructions at 0000015FB9306780)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[371]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[371]	SELF     	1 1 -2	; "GetValue"
+	3	[371]	GETTABUP 	3 0 -3	; DBKey "CurrentIndex"
+	4	[371]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[371]	CALL     	1 4 2
+	6	[371]	TEST     	1 1
+	7	[371]	JMP      	0 1	; to 9
+	8	[371]	LOADK    	1 -5	; 1
+	9	[371]	RETURN   	1 2
+	10	[372]	RETURN   	0 1
+constants (5) for 0000015FB9306780:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurrentIndex"
+	4	"DBColumnValue"
+	5	1
+locals (1) for 0000015FB9306780:
+	0	self	1	11
+upvalues (2) for 0000015FB9306780:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:374,376> (7 instructions at 0000015FB9305C00)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[375]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[375]	SELF     	2 2 -2	; "Set"
+	3	[375]	GETTABUP 	4 0 -3	; DBKey "CurrentIndex"
+	4	[375]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[375]	MOVE     	6 1
+	6	[375]	CALL     	2 5 1
+	7	[376]	RETURN   	0 1
+constants (4) for 0000015FB9305C00:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurrentIndex"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9305C00:
+	0	self	1	8
+	1	index	1	8
+upvalues (2) for 0000015FB9305C00:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:378,380> (10 instructions at 0000015FB9306580)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[379]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[379]	SELF     	1 1 -2	; "GetValue"
+	3	[379]	GETTABUP 	3 0 -3	; DBKey "CurrentStartTime"
+	4	[379]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[379]	CALL     	1 4 2
+	6	[379]	TEST     	1 1
+	7	[379]	JMP      	0 1	; to 9
+	8	[379]	LOADK    	1 -5	; 0
+	9	[379]	RETURN   	1 2
+	10	[380]	RETURN   	0 1
+constants (5) for 0000015FB9306580:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurrentStartTime"
+	4	"DBColumnValue"
+	5	0
+locals (1) for 0000015FB9306580:
+	0	self	1	11
+upvalues (2) for 0000015FB9306580:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:382,384> (7 instructions at 0000015FB9306600)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[383]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[383]	SELF     	2 2 -2	; "Set"
+	3	[383]	GETTABUP 	4 0 -3	; DBKey "CurrentStartTime"
+	4	[383]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[383]	MOVE     	6 1
+	6	[383]	CALL     	2 5 1
+	7	[384]	RETURN   	0 1
+constants (4) for 0000015FB9306600:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurrentStartTime"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9306600:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 0000015FB9306600:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:386,388> (10 instructions at 0000015FB9305C80)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[387]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[387]	SELF     	1 1 -2	; "GetValue"
+	3	[387]	GETTABUP 	3 0 -3	; DBKey "CurrentEndTime"
+	4	[387]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[387]	CALL     	1 4 2
+	6	[387]	TEST     	1 1
+	7	[387]	JMP      	0 1	; to 9
+	8	[387]	LOADK    	1 -5	; 0
+	9	[387]	RETURN   	1 2
+	10	[388]	RETURN   	0 1
+constants (5) for 0000015FB9305C80:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurrentEndTime"
+	4	"DBColumnValue"
+	5	0
+locals (1) for 0000015FB9305C80:
+	0	self	1	11
+upvalues (2) for 0000015FB9305C80:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:390,392> (7 instructions at 0000015FB9306200)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[391]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[391]	SELF     	2 2 -2	; "Set"
+	3	[391]	GETTABUP 	4 0 -3	; DBKey "CurrentEndTime"
+	4	[391]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[391]	MOVE     	6 1
+	6	[391]	CALL     	2 5 1
+	7	[392]	RETURN   	0 1
+constants (4) for 0000015FB9306200:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurrentEndTime"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9306200:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 0000015FB9306200:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:394,396> (4 instructions at 0000015FB9306180)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[395]	GETTABLE 	1 0 -1	; "m_ordersConfig"
+	2	[395]	LEN      	1 1
+	3	[395]	RETURN   	1 2
+	4	[396]	RETURN   	0 1
+constants (1) for 0000015FB9306180:
+	1	"m_ordersConfig"
+locals (1) for 0000015FB9306180:
+	0	self	1	5
+upvalues (0) for 0000015FB9306180:
+
+function <ContiordersModel.lua:398,400> (7 instructions at 0000015FB9305D00)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[399]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[399]	SELF     	2 2 -2	; "Set"
+	3	[399]	GETTABUP 	4 0 -3	; DBKey "Started"
+	4	[399]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[399]	MOVE     	6 1
+	6	[399]	CALL     	2 5 1
+	7	[400]	RETURN   	0 1
+constants (4) for 0000015FB9305D00:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Started"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9305D00:
+	0	self	1	8
+	1	status	1	8
+upvalues (2) for 0000015FB9305D00:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:402,404> (10 instructions at 0000015FB9306700)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[403]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[403]	SELF     	1 1 -2	; "GetValue"
+	3	[403]	GETTABUP 	3 0 -3	; DBKey "Started"
+	4	[403]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[403]	CALL     	1 4 2
+	6	[403]	TEST     	1 1
+	7	[403]	JMP      	0 1	; to 9
+	8	[403]	LOADBOOL 	1 0 0
+	9	[403]	RETURN   	1 2
+	10	[404]	RETURN   	0 1
+constants (4) for 0000015FB9306700:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Started"
+	4	"DBColumnValue"
+locals (1) for 0000015FB9306700:
+	0	self	1	11
+upvalues (2) for 0000015FB9306700:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:406,408> (7 instructions at 0000015FB9305900)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[407]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[407]	SELF     	2 2 -2	; "Set"
+	3	[407]	GETTABUP 	4 0 -3	; DBKey "LastOpenMainwindowIndex"
+	4	[407]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[407]	MOVE     	6 1
+	6	[407]	CALL     	2 5 1
+	7	[408]	RETURN   	0 1
+constants (4) for 0000015FB9305900:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastOpenMainwindowIndex"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9305900:
+	0	self	1	8
+	1	index	1	8
+upvalues (2) for 0000015FB9305900:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:410,412> (10 instructions at 0000015FB9305980)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[411]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[411]	SELF     	1 1 -2	; "GetValue"
+	3	[411]	GETTABUP 	3 0 -3	; DBKey "LastOpenMainwindowIndex"
+	4	[411]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[411]	CALL     	1 4 2
+	6	[411]	TEST     	1 1
+	7	[411]	JMP      	0 1	; to 9
+	8	[411]	LOADK    	1 -5	; 1
+	9	[411]	RETURN   	1 2
+	10	[412]	RETURN   	0 1
+constants (5) for 0000015FB9305980:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastOpenMainwindowIndex"
+	4	"DBColumnValue"
+	5	1
+locals (1) for 0000015FB9305980:
+	0	self	1	11
+upvalues (2) for 0000015FB9305980:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:414,416> (7 instructions at 0000015FB9305B00)
+2 params, 7 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[415]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[415]	SELF     	2 2 -2	; "Set"
+	3	[415]	GETTABUP 	4 0 -3	; DBKey "LastReturnSmileCount"
+	4	[415]	GETTABUP 	5 1 -4	; _ENV "DBColumnValue"
+	5	[415]	MOVE     	6 1
+	6	[415]	CALL     	2 5 1
+	7	[416]	RETURN   	0 1
+constants (4) for 0000015FB9305B00:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastReturnSmileCount"
+	4	"DBColumnValue"
+locals (2) for 0000015FB9305B00:
+	0	self	1	8
+	1	index	1	8
+upvalues (2) for 0000015FB9305B00:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:418,420> (10 instructions at 0000015FB9306380)
+1 param, 5 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[419]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[419]	SELF     	1 1 -2	; "GetValue"
+	3	[419]	GETTABUP 	3 0 -3	; DBKey "LastReturnSmileCount"
+	4	[419]	GETTABUP 	4 1 -4	; _ENV "DBColumnValue"
+	5	[419]	CALL     	1 4 2
+	6	[419]	TEST     	1 1
+	7	[419]	JMP      	0 1	; to 9
+	8	[419]	LOADK    	1 -5	; 0
+	9	[419]	RETURN   	1 2
+	10	[420]	RETURN   	0 1
+constants (5) for 0000015FB9306380:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastReturnSmileCount"
+	4	"DBColumnValue"
+	5	0
+locals (1) for 0000015FB9306380:
+	0	self	1	11
+upvalues (2) for 0000015FB9306380:
+	0	DBKey	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:422,427> (15 instructions at 0000015FB9305A00)
+2 params, 5 slots, 1 upvalue, 2 locals, 11 constants, 0 functions
+	1	[423]	GETTABLE 	2 1 -1	; "name"
+	2	[423]	GETTABLE 	3 0 -2	; "m_definition"
+	3	[423]	GETTABLE 	3 3 -3	; "MainWindowPrefabName"
+	4	[423]	EQ       	0 2 3
+	5	[423]	JMP      	0 9	; to 15
+	6	[424]	SETTABLE 	0 -4 -5	; "m_canCreateOrderFlag" true
+	7	[425]	GETTABUP 	2 0 -6	; _ENV "GM"
+	8	[425]	GETTABLE 	2 2 -7	; "MainBoardModel"
+	9	[425]	SELF     	2 2 -8	; "GetOrderModel"
+	10	[425]	GETTABUP 	4 0 -9	; _ENV "OrderModelType"
+	11	[425]	GETTABLE 	4 4 -10	; "Slot"
+	12	[425]	CALL     	2 3 2
+	13	[425]	SELF     	2 2 -11	; "UpdatePerSecond"
+	14	[425]	CALL     	2 2 1
+	15	[427]	RETURN   	0 1
+constants (11) for 0000015FB9305A00:
+	1	"name"
+	2	"m_definition"
+	3	"MainWindowPrefabName"
+	4	"m_canCreateOrderFlag"
+	5	true
+	6	"GM"
+	7	"MainBoardModel"
+	8	"GetOrderModel"
+	9	"OrderModelType"
+	10	"Slot"
+	11	"UpdatePerSecond"
+locals (2) for 0000015FB9305A00:
+	0	self	1	16
+	1	msg	1	16
+upvalues (1) for 0000015FB9305A00:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:429,431> (2 instructions at 0000015FB9305A80)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[430]	SETTABLE 	0 -1 1	; "m_canCreateOrderFlag" -
+	2	[431]	RETURN   	0 1
+constants (1) for 0000015FB9305A80:
+	1	"m_canCreateOrderFlag"
+locals (2) for 0000015FB9305A80:
+	0	self	1	3
+	1	flag	1	3
+upvalues (0) for 0000015FB9305A80:
+
+function <ContiordersModel.lua:437,466> (23 instructions at 0000015FB9305F00)
+1 param, 8 slots, 1 upvalue, 1 local, 10 constants, 4 functions
+	1	[438]	NEWTABLE 	1 0 2
+	2	[441]	CLOSURE  	2 0	; 0000015FB9305F80
+	3	[441]	SETTABLE 	1 -1 2	; "CheckFunc" -
+	4	[442]	NEWTABLE 	2 0 2
+	5	[443]	SETTABLE 	2 -3 -4	; "GroupName" "\232\174\162\229\141\149\232\191\158\232\191\158(contiorder)"
+	6	[444]	NEWTABLE 	3 3 0
+	7	[444]	NEWTABLE 	4 0 2
+	8	[446]	SETTABLE 	4 -6 -7	; "BtnName" "main"
+	9	[449]	CLOSURE  	5 1	; 0000015FB9306000
+	10	[449]	SETTABLE 	4 -8 5	; "BtnClickFunc" -
+	11	[450]	NEWTABLE 	5 0 2
+	12	[452]	SETTABLE 	5 -6 -9	; "BtnName" "suc"
+	13	[455]	CLOSURE  	6 2	; 0000015FB9306080
+	14	[455]	SETTABLE 	5 -8 6	; "BtnClickFunc" -
+	15	[456]	NEWTABLE 	6 0 2
+	16	[458]	SETTABLE 	6 -6 -10	; "BtnName" "end"
+	17	[461]	CLOSURE  	7 3	; 0000015FB9306100
+	18	[461]	SETTABLE 	6 -8 7	; "BtnClickFunc" -
+	19	[463]	SETLIST  	3 3 1	; 1
+	20	[463]	SETTABLE 	2 -5 3	; "WindowList" -
+	21	[464]	SETTABLE 	1 -2 2	; "config" -
+	22	[465]	RETURN   	1 2
+	23	[466]	RETURN   	0 1
+constants (10) for 0000015FB9305F00:
+	1	"CheckFunc"
+	2	"config"
+	3	"GroupName"
+	4	"\232\174\162\229\141\149\232\191\158\232\191\158(contiorder)"
+	5	"WindowList"
+	6	"BtnName"
+	7	"main"
+	8	"BtnClickFunc"
+	9	"suc"
+	10	"end"
+locals (1) for 0000015FB9305F00:
+	0	self	1	24
+upvalues (1) for 0000015FB9305F00:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:439,441> (11 instructions at 0000015FB9305F80)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[440]	GETUPVAL 	0 0	; self
+	2	[440]	SELF     	0 0 -1	; "GetState"
+	3	[440]	CALL     	0 2 2
+	4	[440]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[440]	GETTABLE 	1 1 -3	; "Started"
+	6	[440]	EQ       	1 0 1
+	7	[440]	JMP      	0 1	; to 9
+	8	[440]	LOADBOOL 	0 0 1
+	9	[440]	LOADBOOL 	0 1 0
+	10	[440]	RETURN   	0 2
+	11	[441]	RETURN   	0 1
+constants (3) for 0000015FB9305F80:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+locals (0) for 0000015FB9305F80:
+upvalues (2) for 0000015FB9305F80:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <ContiordersModel.lua:447,449> (11 instructions at 0000015FB9306000)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[448]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[448]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[448]	SELF     	0 0 -3	; "OpenView"
+	4	[448]	GETTABUP 	2 0 -4	; _ENV "UIPrefabConfigName"
+	5	[448]	GETTABLE 	2 2 -5	; "PalaceContiordersMainWindow"
+	6	[448]	GETUPVAL 	3 1	; self
+	7	[448]	SELF     	3 3 -6	; "GetType"
+	8	[448]	CALL     	3 2 2
+	9	[448]	LOADBOOL 	4 0 0
+	10	[448]	CALL     	0 5 1
+	11	[449]	RETURN   	0 1
+constants (6) for 0000015FB9306000:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"UIPrefabConfigName"
+	5	"PalaceContiordersMainWindow"
+	6	"GetType"
+locals (0) for 0000015FB9306000:
+upvalues (2) for 0000015FB9306000:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <ContiordersModel.lua:453,455> (11 instructions at 0000015FB9306080)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[454]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[454]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[454]	SELF     	0 0 -3	; "OpenView"
+	4	[454]	GETTABUP 	2 0 -4	; _ENV "UIPrefabConfigName"
+	5	[454]	GETTABLE 	2 2 -5	; "PalaceContiordersSucWindow"
+	6	[454]	GETUPVAL 	3 1	; self
+	7	[454]	SELF     	3 3 -6	; "GetType"
+	8	[454]	CALL     	3 2 2
+	9	[454]	LOADBOOL 	4 0 0
+	10	[454]	CALL     	0 5 1
+	11	[455]	RETURN   	0 1
+constants (6) for 0000015FB9306080:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"UIPrefabConfigName"
+	5	"PalaceContiordersSucWindow"
+	6	"GetType"
+locals (0) for 0000015FB9306080:
+upvalues (2) for 0000015FB9306080:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <ContiordersModel.lua:459,461> (10 instructions at 0000015FB9306100)
+0 params, 5 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[460]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[460]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[460]	SELF     	0 0 -3	; "OpenView"
+	4	[460]	GETTABUP 	2 0 -4	; _ENV "UIPrefabConfigName"
+	5	[460]	GETTABLE 	2 2 -5	; "PalaceContiordersEndWindow"
+	6	[460]	GETUPVAL 	3 1	; self
+	7	[460]	SELF     	3 3 -6	; "GetType"
+	8	[460]	CALL     	3 2 0
+	9	[460]	CALL     	0 0 1
+	10	[461]	RETURN   	0 1
+constants (6) for 0000015FB9306100:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"UIPrefabConfigName"
+	5	"PalaceContiordersEndWindow"
+	6	"GetType"
+locals (0) for 0000015FB9306100:
+upvalues (2) for 0000015FB9306100:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <ContiordersModel.lua:471,481> (21 instructions at 0000015FB930E9C0)
+0+ params, 9 slots, 1 upvalue, 6 locals, 6 constants, 0 functions
+	1	[472]	LOADK    	0 -1	; "[conti]"
+	2	[473]	NEWTABLE 	1 0 0
+	3	[473]	VARARG   	2 0
+	4	[473]	SETLIST  	1 0 1	; 1
+	5	[474]	LOADK    	2 -2	; 1
+	6	[474]	LEN      	3 1
+	7	[474]	LOADK    	4 -2	; 1
+	8	[474]	FORPREP  	2 10	; to 19
+	9	[475]	GETTABLE 	6 1 5
+	10	[475]	EQ       	0 6 -3	; - nil
+	11	[475]	JMP      	0 1	; to 13
+	12	[476]	SETTABLE 	1 5 -4	; - "nil"
+	13	[478]	MOVE     	6 0
+	14	[478]	GETTABUP 	7 0 -5	; _ENV "tostring"
+	15	[478]	GETTABLE 	8 1 5
+	16	[478]	CALL     	7 2 2
+	17	[478]	LOADK    	8 -6	; " "
+	18	[478]	CONCAT   	0 6 8
+	19	[474]	FORLOOP  	2 -11	; to 9
+	20	[480]	RETURN   	0 2
+	21	[481]	RETURN   	0 1
+constants (6) for 0000015FB930E9C0:
+	1	"[conti]"
+	2	1
+	3	nil
+	4	"nil"
+	5	"tostring"
+	6	" "
+locals (6) for 0000015FB930E9C0:
+	0	info	2	22
+	1	t	5	22
+	2	(for index)	8	20
+	3	(for limit)	8	20
+	4	(for step)	8	20
+	5	i	9	19
+upvalues (1) for 0000015FB930E9C0:
+	0	_ENV	0	0
+
+function <ContiordersModel.lua:482,488> (13 instructions at 0000015FB930EAC0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 5 constants, 0 functions
+	1	[483]	GETTABUP 	0 0 -1	; _ENV "GameConfig"
+	2	[483]	GETTABLE 	0 0 -2	; "IsTestMode"
+	3	[483]	CALL     	0 1 2
+	4	[483]	TEST     	0 1
+	5	[483]	JMP      	0 1	; to 7
+	6	[484]	RETURN   	0 1
+	7	[487]	GETTABUP 	0 0 -3	; _ENV "Log"
+	8	[487]	GETTABLE 	0 0 -4	; "Info"
+	9	[487]	GETTABUP 	1 0 -5	; _ENV "ContiConcatenate"
+	10	[487]	VARARG   	2 0
+	11	[487]	CALL     	1 0 0
+	12	[487]	CALL     	0 0 1
+	13	[488]	RETURN   	0 1
+constants (5) for 0000015FB930EAC0:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"Log"
+	4	"Info"
+	5	"ContiConcatenate"
+locals (0) for 0000015FB930EAC0:
+upvalues (1) for 0000015FB930EAC0:
+	0	_ENV	0	0

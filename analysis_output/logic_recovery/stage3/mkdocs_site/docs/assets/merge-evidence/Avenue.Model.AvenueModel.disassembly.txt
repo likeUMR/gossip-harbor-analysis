@@ -1,0 +1,2101 @@
+
+main <AvenueModel.lua:0,0> (147 instructions at 0000020E8D06EEA0)
+0+ params, 5 slots, 1 upvalue, 2 locals, 60 constants, 42 functions
+	1	[8]	NEWTABLE 	0 0 4
+	2	[9]	SETTABLE 	0 -2 -2	; "merge" "merge"
+	3	[10]	SETTABLE 	0 -3 -3	; "bubble" "bubble"
+	4	[11]	SETTABLE 	0 -4 -4	; "shop" "shop"
+	5	[12]	SETTABLE 	0 -5 -5	; "order" "order"
+	6	[13]	SETTABUP 	0 -1 0	; _ENV "AvenueAddScoreScene"
+	7	[15]	NEWTABLE 	0 0 4
+	8	[16]	SETTABLE 	0 -6 -7	; "Score" "score"
+	9	[17]	SETTABLE 	0 -8 -9	; "LastDisplayedLevel" "lastDisplayedLevel"
+	10	[18]	SETTABLE 	0 -10 -11	; "LastDisplayedScore" "lastDisplayedScore"
+	11	[19]	SETTABLE 	0 -12 -13	; "LastDisplayedStage" "lastDisplayedStage"
+	12	[22]	LOADK    	1 -14	; "value"
+	13	[24]	GETTABUP 	2 0 -16	; _ENV "setmetatable"
+	14	[24]	NEWTABLE 	3 0 0
+	15	[24]	GETTABUP 	4 0 -17	; _ENV "BaseActivityModel"
+	16	[24]	CALL     	2 3 2
+	17	[24]	SETTABUP 	0 -15 2	; _ENV "AvenueModel"
+	18	[25]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	19	[25]	GETTABUP 	3 0 -15	; _ENV "AvenueModel"
+	20	[25]	SETTABLE 	2 -18 3	; "__index" -
+	21	[27]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	22	[33]	CLOSURE  	3 0	; 0000020E8D06F290
+	23	[27]	SETTABLE 	2 -19 3	; "Init" -
+	24	[35]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	25	[37]	CLOSURE  	3 1	; 0000020E8D072680
+	26	[35]	SETTABLE 	2 -20 3	; "Destroy" -
+	27	[39]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	28	[42]	CLOSURE  	3 2	; 0000020E8D072700
+	29	[39]	SETTABLE 	2 -21 3	; "_DropData" -
+	30	[44]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	31	[97]	CLOSURE  	3 3	; 0000020E8D072780
+	32	[44]	SETTABLE 	2 -22 3	; "_LoadOtherServerConfig" -
+	33	[99]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	34	[103]	CLOSURE  	3 4	; 0000020E8D06ECA0
+	35	[99]	SETTABLE 	2 -23 3	; "GetStageConfigGroupId" -
+	36	[106]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	37	[162]	CLOSURE  	3 5	; 0000020E8D073D70
+	38	[106]	SETTABLE 	2 -24 3	; "UpdateContent" -
+	39	[164]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	40	[167]	CLOSURE  	3 6	; 0000020E8D0743B0
+	41	[164]	SETTABLE 	2 -25 3	; "_OnStateChanged" -
+	42	[170]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	43	[172]	CLOSURE  	3 7	; 0000020E8D0744A0
+	44	[170]	SETTABLE 	2 -26 3	; "IsLoopAvenue" -
+	45	[174]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	46	[176]	CLOSURE  	3 8	; 0000020E8D074520
+	47	[174]	SETTABLE 	2 -27 3	; "CanAddScore" -
+	48	[179]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	49	[192]	CLOSURE  	3 9	; 0000020E8D075250
+	50	[179]	SETTABLE 	2 -28 3	; "_TryAddMergeScore" -
+	51	[195]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	52	[208]	CLOSURE  	3 10	; 0000020E8D074A50
+	53	[195]	SETTABLE 	2 -29 3	; "_TryAddBubbleBroken" -
+	54	[211]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	55	[225]	CLOSURE  	3 11	; 0000020E8D0751D0
+	56	[211]	SETTABLE 	2 -30 3	; "_TryAddBuyShopItemScore" -
+	57	[228]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	58	[274]	CLOSURE  	3 12	; 0000020E8D075350
+	59	[228]	SETTABLE 	2 -31 3	; "GetAddScoreByOrder" -
+	60	[275]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	61	[280]	CLOSURE  	3 13	; 0000020E8D0746D0
+	62	[275]	SETTABLE 	2 -32 3	; "GetStageData" -
+	63	[282]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	64	[284]	CLOSURE  	3 14	; 0000020E8D074E50
+	65	[282]	SETTABLE 	2 -33 3	; "GetCurrStage" -
+	66	[286]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	67	[289]	CLOSURE  	3 15	; 0000020E8D074FD0
+	68	[286]	SETTABLE 	2 -34 3	; "IsStageRewardMode" -
+	69	[291]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	70	[296]	CLOSURE  	3 16	; 0000020E8D074750
+	71	[291]	SETTABLE 	2 -35 3	; "GetMaxStage" -
+	72	[298]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	73	[300]	CLOSURE  	3 17	; 0000020E8D0747D0
+	74	[298]	SETTABLE 	2 -36 3	; "GetTotalRequiredLevel" -
+	75	[302]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	76	[308]	CLOSURE  	3 18	; 0000020E8D074950
+	77	[302]	SETTABLE 	2 -37 3	; "IsFinishedStageReward" -
+	78	[310]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	79	[321]	CLOSURE  	3 19	; 0000020E8D074850
+	80	[310]	SETTABLE 	2 -38 3	; "CalStageByLevel" -
+	81	[324]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	82	[328]	CLOSURE  	3 20	; 0000020E8D0749D0
+	83	[324]	SETTABLE 	2 -39 3	; "_OnItemMerged" -
+	84	[330]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	85	[334]	CLOSURE  	3 21	; 0000020E8D0748D0
+	86	[330]	SETTABLE 	2 -40 3	; "_OnBubbleBroken" -
+	87	[336]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	88	[341]	CLOSURE  	3 22	; 0000020E8D074B50
+	89	[336]	SETTABLE 	2 -41 3	; "_OnShopItemBaught" -
+	90	[343]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	91	[345]	CLOSURE  	3 23	; 0000020E8D074AD0
+	92	[343]	SETTABLE 	2 -42 3	; "AcquireActivityToken" -
+	93	[348]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	94	[356]	CLOSURE  	3 24	; 0000020E8D074DD0
+	95	[348]	SETTABLE 	2 -43 3	; "ClearCacheStageReward" -
+	96	[358]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	97	[363]	CLOSURE  	3 25	; 0000020E8D074CD0
+	98	[358]	SETTABLE 	2 -44 3	; "ClearCacheNormalRewards" -
+	99	[365]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	100	[451]	CLOSURE  	3 26	; 0000020E8D074BD0
+	101	[365]	SETTABLE 	2 -45 3	; "_AddScore" -
+	102	[453]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	103	[455]	CLOSURE  	3 27	; 0000020E8D074C50
+	104	[453]	SETTABLE 	2 -46 3	; "GetTotalScore" -
+	105	[457]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	106	[459]	CLOSURE  	3 28	; 0000020E8D074D50
+	107	[457]	SETTABLE 	2 -47 3	; "GetScore" -
+	108	[461]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	109	[463]	CLOSURE  	3 29	; 0000020E8D074F50
+	110	[461]	SETTABLE 	2 -48 3	; "GetLevel" -
+	111	[465]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	112	[469]	CLOSURE  	3 30	; 0000020E8D075050
+	113	[465]	SETTABLE 	2 -49 3	; "GetLastDipslayedLevelAndScore" -
+	114	[471]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	115	[474]	CLOSURE  	3 31	; 0000020E8D0750D0
+	116	[471]	SETTABLE 	2 -50 3	; "SetLastDisplayedLevelAndScore" -
+	117	[476]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	118	[479]	CLOSURE  	3 32	; 0000020E8D075150
+	119	[476]	SETTABLE 	2 -51 3	; "GetLastDisplayedStage" -
+	120	[481]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	121	[483]	CLOSURE  	3 33	; 0000020E8D0753D0
+	122	[481]	SETTABLE 	2 -52 3	; "SetLastDisplayedStage" -
+	123	[486]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	124	[503]	CLOSURE  	3 34	; 0000020E8D075450
+	125	[486]	SETTABLE 	2 -53 3	; "GetLevelConfig" -
+	126	[507]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	127	[509]	CLOSURE  	3 35	; 0000020E8D0754D0
+	128	[507]	SETTABLE 	2 -54 3	; "GetNonLoopFinalLevelConfig" -
+	129	[511]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	130	[513]	CLOSURE  	3 36	; 0000020E8D075550
+	131	[511]	SETTABLE 	2 -55 3	; "IsTokenProperty" -
+	132	[515]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	133	[517]	CLOSURE  	3 37	; 0000020E8D074650
+	134	[515]	SETTABLE 	2 -56 3	; "GetTokenPropertyType" -
+	135	[519]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	136	[533]	CLOSURE  	3 38	; 0000020E8D07CFE0
+	137	[519]	SETTABLE 	2 -57 3	; "GetHudEntryShowConfig" -
+	138	[535]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	139	[549]	CLOSURE  	3 39	; 0000020E8D07DF60
+	140	[535]	SETTABLE 	2 -58 3	; "GetBoardEntryShowConfig" -
+	141	[551]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	142	[553]	CLOSURE  	3 40	; 0000020E8D07D7E0
+	143	[551]	SETTABLE 	2 -59 3	; "GetResourceLabels" -
+	144	[555]	GETTABUP 	2 0 -15	; _ENV "AvenueModel"
+	145	[557]	CLOSURE  	3 41	; 0000020E8D07D560
+	146	[555]	SETTABLE 	2 -60 3	; "TestAddScore" -
+	147	[557]	RETURN   	0 1
+constants (60) for 0000020E8D06EEA0:
+	1	"AvenueAddScoreScene"
+	2	"merge"
+	3	"bubble"
+	4	"shop"
+	5	"order"
+	6	"Score"
+	7	"score"
+	8	"LastDisplayedLevel"
+	9	"lastDisplayedLevel"
+	10	"LastDisplayedScore"
+	11	"lastDisplayedScore"
+	12	"LastDisplayedStage"
+	13	"lastDisplayedStage"
+	14	"value"
+	15	"AvenueModel"
+	16	"setmetatable"
+	17	"BaseActivityModel"
+	18	"__index"
+	19	"Init"
+	20	"Destroy"
+	21	"_DropData"
+	22	"_LoadOtherServerConfig"
+	23	"GetStageConfigGroupId"
+	24	"UpdateContent"
+	25	"_OnStateChanged"
+	26	"IsLoopAvenue"
+	27	"CanAddScore"
+	28	"_TryAddMergeScore"
+	29	"_TryAddBubbleBroken"
+	30	"_TryAddBuyShopItemScore"
+	31	"GetAddScoreByOrder"
+	32	"GetStageData"
+	33	"GetCurrStage"
+	34	"IsStageRewardMode"
+	35	"GetMaxStage"
+	36	"GetTotalRequiredLevel"
+	37	"IsFinishedStageReward"
+	38	"CalStageByLevel"
+	39	"_OnItemMerged"
+	40	"_OnBubbleBroken"
+	41	"_OnShopItemBaught"
+	42	"AcquireActivityToken"
+	43	"ClearCacheStageReward"
+	44	"ClearCacheNormalRewards"
+	45	"_AddScore"
+	46	"GetTotalScore"
+	47	"GetScore"
+	48	"GetLevel"
+	49	"GetLastDipslayedLevelAndScore"
+	50	"SetLastDisplayedLevelAndScore"
+	51	"GetLastDisplayedStage"
+	52	"SetLastDisplayedStage"
+	53	"GetLevelConfig"
+	54	"GetNonLoopFinalLevelConfig"
+	55	"IsTokenProperty"
+	56	"GetTokenPropertyType"
+	57	"GetHudEntryShowConfig"
+	58	"GetBoardEntryShowConfig"
+	59	"GetResourceLabels"
+	60	"TestAddScore"
+locals (2) for 0000020E8D06EEA0:
+	0	DBKey	12	148
+	1	DBColumnValue	13	148
+upvalues (1) for 0000020E8D06EEA0:
+	0	_ENV	1	0
+
+function <AvenueModel.lua:27,33> (31 instructions at 0000020E8D06F290)
+3 params, 7 slots, 1 upvalue, 3 locals, 13 constants, 0 functions
+	1	[28]	GETTABUP 	3 0 -2	; _ENV "AvenueDefinition"
+	2	[28]	GETTABLE 	3 3 1
+	3	[28]	SETTABLE 	0 -1 3	; "m_definition" -
+	4	[29]	GETTABUP 	3 0 -3	; _ENV "BaseActivityModel"
+	5	[29]	GETTABLE 	3 3 -4	; "Init"
+	6	[29]	MOVE     	4 0
+	7	[29]	MOVE     	5 1
+	8	[29]	MOVE     	6 2
+	9	[29]	CALL     	3 4 1
+	10	[30]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	11	[30]	GETTABLE 	3 3 -6	; "AddListener"
+	12	[30]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	13	[30]	GETTABLE 	4 4 -8	; "ItemMerged"
+	14	[30]	MOVE     	5 0
+	15	[30]	GETTABLE 	6 0 -9	; "_OnItemMerged"
+	16	[30]	CALL     	3 4 1
+	17	[31]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	18	[31]	GETTABLE 	3 3 -6	; "AddListener"
+	19	[31]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	20	[31]	GETTABLE 	4 4 -10	; "BubbleBroken"
+	21	[31]	MOVE     	5 0
+	22	[31]	GETTABLE 	6 0 -11	; "_OnBubbleBroken"
+	23	[31]	CALL     	3 4 1
+	24	[32]	GETTABUP 	3 0 -5	; _ENV "EventDispatcher"
+	25	[32]	GETTABLE 	3 3 -6	; "AddListener"
+	26	[32]	GETTABUP 	4 0 -7	; _ENV "EEventType"
+	27	[32]	GETTABLE 	4 4 -12	; "ShopItemBaught"
+	28	[32]	MOVE     	5 0
+	29	[32]	GETTABLE 	6 0 -13	; "_OnShopItemBaught"
+	30	[32]	CALL     	3 4 1
+	31	[33]	RETURN   	0 1
+constants (13) for 0000020E8D06F290:
+	1	"m_definition"
+	2	"AvenueDefinition"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"EventDispatcher"
+	6	"AddListener"
+	7	"EEventType"
+	8	"ItemMerged"
+	9	"_OnItemMerged"
+	10	"BubbleBroken"
+	11	"_OnBubbleBroken"
+	12	"ShopItemBaught"
+	13	"_OnShopItemBaught"
+locals (3) for 0000020E8D06F290:
+	0	self	1	32
+	1	activityType	1	32
+	2	dbTable	1	32
+upvalues (1) for 0000020E8D06F290:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:35,37> (5 instructions at 0000020E8D072680)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[36]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[36]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[36]	MOVE     	2 0
+	4	[36]	CALL     	1 2 1
+	5	[37]	RETURN   	0 1
+constants (2) for 0000020E8D072680:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 0000020E8D072680:
+	0	self	1	6
+upvalues (1) for 0000020E8D072680:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:39,42> (7 instructions at 0000020E8D072700)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[40]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[40]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[40]	MOVE     	2 0
+	4	[40]	CALL     	1 2 1
+	5	[41]	SELF     	1 0 -3	; "UpdateContent"
+	6	[41]	CALL     	1 2 1
+	7	[42]	RETURN   	0 1
+constants (3) for 0000020E8D072700:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"UpdateContent"
+locals (1) for 0000020E8D072700:
+	0	self	1	8
+upvalues (1) for 0000020E8D072700:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:44,97> (122 instructions at 0000020E8D072780)
+2 params, 12 slots, 1 upvalue, 23 locals, 29 constants, 3 functions
+	1	[45]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[45]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[45]	SELF     	2 2 -3	; "GetLocalConfig"
+	4	[45]	GETTABUP 	4 0 -4	; _ENV "LocalConfigKey"
+	5	[45]	GETTABLE 	4 4 -5	; "MergeItemScoreConfig"
+	6	[45]	CALL     	2 3 2
+	7	[46]	NEWTABLE 	3 0 0
+	8	[46]	SETTABLE 	0 -6 3	; "m_mergeItemScoreConfig" -
+	9	[47]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	10	[47]	MOVE     	4 2
+	11	[47]	CALL     	3 2 4
+	12	[47]	JMP      	0 3	; to 16
+	13	[48]	GETTABLE 	8 0 -6	; "m_mergeItemScoreConfig"
+	14	[48]	GETTABLE 	9 7 -8	; "item_id"
+	15	[48]	SETTABLE 	8 9 7
+	16	[47]	TFORCALL 	3 2
+	17	[47]	TFORLOOP 	5 -5	; to 13
+	18	[53]	GETTABLE 	3 0 -9	; "m_config"
+	19	[53]	NEWTABLE 	4 0 0
+	20	[53]	SETTABLE 	3 -10 4	; "nonLoopAvenueRewards" -
+	21	[55]	GETTABLE 	3 0 -9	; "m_config"
+	22	[55]	NEWTABLE 	4 0 0
+	23	[55]	SETTABLE 	3 -11 4	; "loopAvenueRewards" -
+	24	[57]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	25	[57]	GETTABLE 	4 1 -12	; "avenueReward"
+	26	[57]	CALL     	3 2 4
+	27	[57]	JMP      	0 16	; to 44
+	28	[58]	GETTABLE 	8 7 -13	; "isCyclic"
+	29	[58]	EQ       	0 8 -14	; - 0
+	30	[58]	JMP      	0 7	; to 38
+	31	[59]	GETTABUP 	8 0 -15	; _ENV "table"
+	32	[59]	GETTABLE 	8 8 -16	; "insert"
+	33	[59]	GETTABLE 	9 0 -9	; "m_config"
+	34	[59]	GETTABLE 	9 9 -10	; "nonLoopAvenueRewards"
+	35	[59]	MOVE     	10 7
+	36	[59]	CALL     	8 3 1
+	37	[59]	JMP      	0 6	; to 44
+	38	[61]	GETTABUP 	8 0 -15	; _ENV "table"
+	39	[61]	GETTABLE 	8 8 -16	; "insert"
+	40	[61]	GETTABLE 	9 0 -9	; "m_config"
+	41	[61]	GETTABLE 	9 9 -11	; "loopAvenueRewards"
+	42	[61]	MOVE     	10 7
+	43	[61]	CALL     	8 3 1
+	44	[57]	TFORCALL 	3 2
+	45	[57]	TFORLOOP 	5 -18	; to 28
+	46	[65]	GETTABUP 	3 0 -15	; _ENV "table"
+	47	[65]	GETTABLE 	3 3 -17	; "sort"
+	48	[65]	GETTABLE 	4 0 -9	; "m_config"
+	49	[65]	GETTABLE 	4 4 -10	; "nonLoopAvenueRewards"
+	50	[67]	CLOSURE  	5 0	; 0000020E8D06E930
+	51	[65]	CALL     	3 3 1
+	52	[69]	GETTABUP 	3 0 -18	; _ENV "Table"
+	53	[69]	GETTABLE 	3 3 -19	; "IsEmpty"
+	54	[69]	GETTABLE 	4 0 -9	; "m_config"
+	55	[69]	GETTABLE 	4 4 -11	; "loopAvenueRewards"
+	56	[69]	CALL     	3 2 2
+	57	[69]	TEST     	3 1
+	58	[69]	JMP      	0 6	; to 65
+	59	[70]	GETTABUP 	3 0 -15	; _ENV "table"
+	60	[70]	GETTABLE 	3 3 -17	; "sort"
+	61	[70]	GETTABLE 	4 0 -9	; "m_config"
+	62	[70]	GETTABLE 	4 4 -11	; "loopAvenueRewards"
+	63	[72]	CLOSURE  	5 1	; 0000020E8D06E9B0
+	64	[70]	CALL     	3 3 1
+	65	[76]	GETTABLE 	3 0 -9	; "m_config"
+	66	[76]	NEWTABLE 	4 0 0
+	67	[76]	SETTABLE 	3 -20 4	; "finishOrderAddScoreConfig" -
+	68	[77]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	69	[77]	GETTABLE 	4 1 -21	; "merge_order_score"
+	70	[77]	CALL     	3 2 4
+	71	[77]	JMP      	0 9	; to 81
+	72	[78]	GETTABUP 	8 0 -15	; _ENV "table"
+	73	[78]	GETTABLE 	8 8 -16	; "insert"
+	74	[78]	GETTABLE 	9 0 -9	; "m_config"
+	75	[78]	GETTABLE 	9 9 -20	; "finishOrderAddScoreConfig"
+	76	[78]	GETTABUP 	10 0 -18	; _ENV "Table"
+	77	[78]	GETTABLE 	10 10 -22	; "ShallowCopy"
+	78	[78]	MOVE     	11 7
+	79	[78]	CALL     	10 2 0
+	80	[78]	CALL     	8 0 1
+	81	[77]	TFORCALL 	3 2
+	82	[77]	TFORLOOP 	5 -11	; to 72
+	83	[81]	SETTABLE 	0 -23 -14	; "m_totalRequiredLevel" 0
+	84	[83]	GETTABUP 	3 0 -18	; _ENV "Table"
+	85	[83]	GETTABLE 	3 3 -19	; "IsEmpty"
+	86	[83]	GETTABLE 	4 1 -24	; "avenueStageReward"
+	87	[83]	CALL     	3 2 2
+	88	[83]	TEST     	3 1
+	89	[83]	JMP      	0 22	; to 112
+	90	[84]	GETTABUP 	3 0 -15	; _ENV "table"
+	91	[84]	GETTABLE 	3 3 -17	; "sort"
+	92	[84]	GETTABLE 	4 1 -24	; "avenueStageReward"
+	93	[86]	CLOSURE  	5 2	; 0000020E8D06EA30
+	94	[84]	CALL     	3 3 1
+	95	[87]	GETTABLE 	3 0 -9	; "m_config"
+	96	[87]	NEWTABLE 	4 0 0
+	97	[87]	SETTABLE 	3 -24 4	; "avenueStageReward" -
+	98	[88]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	99	[88]	GETTABLE 	4 1 -24	; "avenueStageReward"
+	100	[88]	CALL     	3 2 4
+	101	[88]	JMP      	0 8	; to 110
+	102	[89]	GETTABUP 	8 0 -15	; _ENV "table"
+	103	[89]	GETTABLE 	8 8 -16	; "insert"
+	104	[89]	GETTABLE 	9 0 -9	; "m_config"
+	105	[89]	GETTABLE 	9 9 -24	; "avenueStageReward"
+	106	[89]	MOVE     	10 7
+	107	[89]	CALL     	8 3 1
+	108	[90]	GETTABLE 	8 7 -25	; "num"
+	109	[90]	SETTABLE 	0 -23 8	; "m_totalRequiredLevel" -
+	110	[88]	TFORCALL 	3 2
+	111	[88]	TFORLOOP 	5 -10	; to 102
+	112	[93]	SELF     	3 0 -26	; "UpdateContent"
+	113	[93]	CALL     	3 2 1
+	114	[94]	SELF     	3 0 -27	; "IsStageRewardMode"
+	115	[94]	CALL     	3 2 2
+	116	[94]	TEST     	3 0
+	117	[94]	JMP      	0 4	; to 122
+	118	[95]	SELF     	3 0 -28	; "SetLastDisplayedStage"
+	119	[95]	SELF     	5 0 -29	; "GetCurrStage"
+	120	[95]	CALL     	5 2 0
+	121	[95]	CALL     	3 0 1
+	122	[97]	RETURN   	0 1
+constants (29) for 0000020E8D072780:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetLocalConfig"
+	4	"LocalConfigKey"
+	5	"MergeItemScoreConfig"
+	6	"m_mergeItemScoreConfig"
+	7	"ipairs"
+	8	"item_id"
+	9	"m_config"
+	10	"nonLoopAvenueRewards"
+	11	"loopAvenueRewards"
+	12	"avenueReward"
+	13	"isCyclic"
+	14	0
+	15	"table"
+	16	"insert"
+	17	"sort"
+	18	"Table"
+	19	"IsEmpty"
+	20	"finishOrderAddScoreConfig"
+	21	"merge_order_score"
+	22	"ShallowCopy"
+	23	"m_totalRequiredLevel"
+	24	"avenueStageReward"
+	25	"num"
+	26	"UpdateContent"
+	27	"IsStageRewardMode"
+	28	"SetLastDisplayedStage"
+	29	"GetCurrStage"
+locals (23) for 0000020E8D072780:
+	0	self	1	123
+	1	config	1	123
+	2	mergeConfig	7	123
+	3	(for generator)	12	18
+	4	(for state)	12	18
+	5	(for control)	12	18
+	6	_	13	16
+	7	data	13	16
+	8	(for generator)	27	46
+	9	(for state)	27	46
+	10	(for control)	27	46
+	11	_	28	44
+	12	data	28	44
+	13	(for generator)	71	83
+	14	(for state)	71	83
+	15	(for control)	71	83
+	16	_	72	81
+	17	data	72	81
+	18	(for generator)	101	112
+	19	(for state)	101	112
+	20	(for control)	101	112
+	21	_	102	110
+	22	data	102	110
+upvalues (1) for 0000020E8D072780:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:65,67> (8 instructions at 0000020E8D06E930)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[66]	GETTABLE 	2 0 -1	; "round"
+	2	[66]	GETTABLE 	3 1 -1	; "round"
+	3	[66]	LT       	1 2 3
+	4	[66]	JMP      	0 1	; to 6
+	5	[66]	LOADBOOL 	2 0 1
+	6	[66]	LOADBOOL 	2 1 0
+	7	[66]	RETURN   	2 2
+	8	[67]	RETURN   	0 1
+constants (1) for 0000020E8D06E930:
+	1	"round"
+locals (2) for 0000020E8D06E930:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000020E8D06E930:
+
+function <AvenueModel.lua:70,72> (8 instructions at 0000020E8D06E9B0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[71]	GETTABLE 	2 0 -1	; "round"
+	2	[71]	GETTABLE 	3 1 -1	; "round"
+	3	[71]	LT       	1 2 3
+	4	[71]	JMP      	0 1	; to 6
+	5	[71]	LOADBOOL 	2 0 1
+	6	[71]	LOADBOOL 	2 1 0
+	7	[71]	RETURN   	2 2
+	8	[72]	RETURN   	0 1
+constants (1) for 0000020E8D06E9B0:
+	1	"round"
+locals (2) for 0000020E8D06E9B0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000020E8D06E9B0:
+
+function <AvenueModel.lua:84,86> (8 instructions at 0000020E8D06EA30)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[85]	GETTABLE 	2 0 -1	; "stage"
+	2	[85]	GETTABLE 	3 1 -1	; "stage"
+	3	[85]	LT       	1 2 3
+	4	[85]	JMP      	0 1	; to 6
+	5	[85]	LOADBOOL 	2 0 1
+	6	[85]	LOADBOOL 	2 1 0
+	7	[85]	RETURN   	2 2
+	8	[86]	RETURN   	0 1
+constants (1) for 0000020E8D06EA30:
+	1	"stage"
+locals (2) for 0000020E8D06EA30:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000020E8D06EA30:
+
+function <AvenueModel.lua:99,103> (10 instructions at 0000020E8D06ECA0)
+1 param, 2 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[100]	GETTABLE 	1 0 -1	; "m_config"
+	2	[100]	GETTABLE 	1 1 -2	; "avenueStageReward"
+	3	[100]	TEST     	1 0
+	4	[100]	JMP      	0 5	; to 10
+	5	[101]	GETTABLE 	1 0 -1	; "m_config"
+	6	[101]	GETTABLE 	1 1 -2	; "avenueStageReward"
+	7	[101]	GETTABLE 	1 1 -3	; 1
+	8	[101]	GETTABLE 	1 1 -4	; "groupId"
+	9	[101]	RETURN   	1 2
+	10	[103]	RETURN   	0 1
+constants (4) for 0000020E8D06ECA0:
+	1	"m_config"
+	2	"avenueStageReward"
+	3	1
+	4	"groupId"
+locals (1) for 0000020E8D06ECA0:
+	0	self	1	11
+upvalues (0) for 0000020E8D06ECA0:
+
+function <AvenueModel.lua:106,162> (102 instructions at 0000020E8D073D70)
+1 param, 10 slots, 1 upvalue, 17 locals, 21 constants, 0 functions
+	1	[107]	SETTABLE 	0 -1 -2	; "m_currentStep" 0
+	2	[108]	SETTABLE 	0 -3 -2	; "m_currentScore" 0
+	3	[109]	SETTABLE 	0 -4 -5	; "m_cacheState" nil
+	4	[110]	GETTABLE 	1 0 -6	; "m_config"
+	5	[110]	EQ       	0 1 -5	; - nil
+	6	[110]	JMP      	0 1	; to 8
+	7	[111]	RETURN   	0 1
+	8	[114]	SELF     	1 0 -7	; "GetTotalScore"
+	9	[114]	CALL     	1 2 2
+	10	[115]	LOADK    	2 -2	; 0
+	11	[117]	GETTABUP 	3 0 -8	; _ENV "ipairs"
+	12	[117]	GETTABLE 	4 0 -6	; "m_config"
+	13	[117]	GETTABLE 	4 4 -9	; "nonLoopAvenueRewards"
+	14	[117]	CALL     	3 2 4
+	15	[117]	JMP      	0 12	; to 28
+	16	[118]	GETTABLE 	8 7 -10	; "score"
+	17	[118]	ADD      	2 2 8
+	18	[119]	GETTABLE 	8 0 -1	; "m_currentStep"
+	19	[119]	ADD      	8 8 -11	; - 1
+	20	[119]	SETTABLE 	0 -1 8	; "m_currentStep" -
+	21	[120]	LT       	0 1 2
+	22	[120]	JMP      	0 5	; to 28
+	23	[121]	GETTABLE 	8 7 -10	; "score"
+	24	[121]	SUB      	8 2 8
+	25	[121]	SUB      	8 1 8
+	26	[121]	SETTABLE 	0 -3 8	; "m_currentScore" -
+	27	[121]	JMP      	0 2	; to 30
+	28	[117]	TFORCALL 	3 2
+	29	[117]	TFORLOOP 	5 -14	; to 16
+	30	[127]	LE       	0 2 1
+	31	[127]	JMP      	0 38	; to 70
+	32	[128]	GETTABUP 	3 0 -12	; _ENV "Table"
+	33	[128]	GETTABLE 	3 3 -13	; "IsEmpty"
+	34	[128]	GETTABLE 	4 0 -6	; "m_config"
+	35	[128]	GETTABLE 	4 4 -14	; "loopAvenueRewards"
+	36	[128]	CALL     	3 2 2
+	37	[128]	TEST     	3 1
+	38	[128]	JMP      	0 23	; to 62
+	39	[129]	LE       	0 2 1
+	40	[129]	JMP      	0 29	; to 70
+	41	[130]	GETTABUP 	3 0 -8	; _ENV "ipairs"
+	42	[130]	GETTABLE 	4 0 -6	; "m_config"
+	43	[130]	GETTABLE 	4 4 -14	; "loopAvenueRewards"
+	44	[130]	CALL     	3 2 4
+	45	[130]	JMP      	0 12	; to 58
+	46	[131]	GETTABLE 	8 7 -10	; "score"
+	47	[131]	ADD      	2 2 8
+	48	[132]	GETTABLE 	8 0 -1	; "m_currentStep"
+	49	[132]	ADD      	8 8 -11	; - 1
+	50	[132]	SETTABLE 	0 -1 8	; "m_currentStep" -
+	51	[133]	LT       	0 1 2
+	52	[133]	JMP      	0 5	; to 58
+	53	[134]	GETTABLE 	8 7 -10	; "score"
+	54	[134]	SUB      	8 2 8
+	55	[134]	SUB      	8 1 8
+	56	[134]	SETTABLE 	0 -3 8	; "m_currentScore" -
+	57	[134]	JMP      	0 -19	; to 39
+	58	[130]	TFORCALL 	3 2
+	59	[130]	TFORLOOP 	5 -14	; to 46
+	60	[137]	JMP      	0 -22	; to 39
+	61	[138]	JMP      	0 8	; to 70
+	62	[141]	GETTABUP 	3 0 -15	; _ENV "ActivityState"
+	63	[141]	GETTABLE 	3 3 -16	; "Ended"
+	64	[141]	SETTABLE 	0 -4 3	; "m_cacheState" -
+	65	[142]	SUB      	3 1 2
+	66	[142]	SETTABLE 	0 -3 3	; "m_currentScore" -
+	67	[143]	GETTABLE 	3 0 -1	; "m_currentStep"
+	68	[143]	ADD      	3 3 -11	; - 1
+	69	[143]	SETTABLE 	0 -1 3	; "m_currentStep" -
+	70	[147]	SETTABLE 	0 -17 -2	; "m_currStage" 0
+	71	[148]	SELF     	3 0 -18	; "IsStageRewardMode"
+	72	[148]	CALL     	3 2 2
+	73	[148]	TEST     	3 0
+	74	[148]	JMP      	0 27	; to 102
+	75	[149]	LOADK    	3 -11	; 1
+	76	[149]	SELF     	4 0 -19	; "GetMaxStage"
+	77	[149]	CALL     	4 2 2
+	78	[149]	LOADK    	5 -11	; 1
+	79	[149]	FORPREP  	3 21	; to 101
+	80	[150]	SELF     	7 0 -20	; "GetStageData"
+	81	[150]	MOVE     	9 6
+	82	[150]	CALL     	7 3 2
+	83	[150]	GETTABLE 	7 7 -21	; "num"
+	84	[150]	GETTABLE 	8 0 -1	; "m_currentStep"
+	85	[150]	SUB      	8 8 -11	; - 1
+	86	[150]	LE       	0 7 8
+	87	[150]	JMP      	0 2	; to 90
+	88	[151]	SETTABLE 	0 -17 6	; "m_currStage" -
+	89	[151]	JMP      	0 11	; to 101
+	90	[154]	SELF     	7 0 -20	; "GetStageData"
+	91	[154]	MOVE     	9 6
+	92	[154]	CALL     	7 3 2
+	93	[154]	GETTABLE 	7 7 -21	; "num"
+	94	[154]	GETTABLE 	8 0 -1	; "m_currentStep"
+	95	[154]	LE       	0 7 8
+	96	[154]	JMP      	0 5	; to 102
+	97	[154]	LE       	0 2 1
+	98	[154]	JMP      	0 3	; to 102
+	99	[156]	SETTABLE 	0 -17 6	; "m_currStage" -
+	100	[157]	JMP      	0 1	; to 102
+	101	[149]	FORLOOP  	3 -22	; to 80
+	102	[162]	RETURN   	0 1
+constants (21) for 0000020E8D073D70:
+	1	"m_currentStep"
+	2	0
+	3	"m_currentScore"
+	4	"m_cacheState"
+	5	nil
+	6	"m_config"
+	7	"GetTotalScore"
+	8	"ipairs"
+	9	"nonLoopAvenueRewards"
+	10	"score"
+	11	1
+	12	"Table"
+	13	"IsEmpty"
+	14	"loopAvenueRewards"
+	15	"ActivityState"
+	16	"Ended"
+	17	"m_currStage"
+	18	"IsStageRewardMode"
+	19	"GetMaxStage"
+	20	"GetStageData"
+	21	"num"
+locals (17) for 0000020E8D073D70:
+	0	self	1	103
+	1	score	10	103
+	2	tmpScore	11	103
+	3	(for generator)	15	30
+	4	(for state)	15	30
+	5	(for control)	15	30
+	6	_	16	28
+	7	rewardConfig	16	28
+	8	(for generator)	45	60
+	9	(for state)	45	60
+	10	(for control)	45	60
+	11	_	46	58
+	12	rewardConfig	46	58
+	13	(for index)	79	102
+	14	(for limit)	79	102
+	15	(for step)	79	102
+	16	i	80	101
+upvalues (1) for 0000020E8D073D70:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:164,167> (11 instructions at 0000020E8D0743B0)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[165]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[165]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[165]	GETTABLE 	2 0 -3	; "m_definition"
+	4	[165]	GETTABLE 	2 2 -4	; "StateChangedEvent"
+	5	[165]	CALL     	1 2 1
+	6	[166]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	7	[166]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	8	[166]	GETTABUP 	2 0 -5	; _ENV "EEventType"
+	9	[166]	GETTABLE 	2 2 -6	; "OrderStatusChanged"
+	10	[166]	CALL     	1 2 1
+	11	[167]	RETURN   	0 1
+constants (6) for 0000020E8D0743B0:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"m_definition"
+	4	"StateChangedEvent"
+	5	"EEventType"
+	6	"OrderStatusChanged"
+locals (1) for 0000020E8D0743B0:
+	0	self	1	12
+upvalues (1) for 0000020E8D0743B0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:170,172> (8 instructions at 0000020E8D0744A0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[171]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[171]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[171]	GETTABLE 	2 0 -3	; "m_config"
+	4	[171]	GETTABLE 	2 2 -4	; "loopAvenueRewards"
+	5	[171]	CALL     	1 2 2
+	6	[171]	NOT      	1 1
+	7	[171]	RETURN   	1 2
+	8	[172]	RETURN   	0 1
+constants (4) for 0000020E8D0744A0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_config"
+	4	"loopAvenueRewards"
+locals (1) for 0000020E8D0744A0:
+	0	self	1	9
+upvalues (1) for 0000020E8D0744A0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:174,176> (15 instructions at 0000020E8D074520)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[175]	SELF     	1 0 -1	; "GetState"
+	2	[175]	CALL     	1 2 2
+	3	[175]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[175]	GETTABLE 	2 2 -3	; "Started"
+	5	[175]	EQ       	0 1 2
+	6	[175]	JMP      	0 5	; to 12
+	7	[175]	GETTABLE 	1 0 -4	; "m_cacheState"
+	8	[175]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	9	[175]	GETTABLE 	2 2 -5	; "Ended"
+	10	[175]	EQ       	0 1 2
+	11	[175]	JMP      	0 1	; to 13
+	12	[175]	LOADBOOL 	1 0 1
+	13	[175]	LOADBOOL 	1 1 0
+	14	[175]	RETURN   	1 2
+	15	[176]	RETURN   	0 1
+constants (5) for 0000020E8D074520:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_cacheState"
+	5	"Ended"
+locals (1) for 0000020E8D074520:
+	0	self	1	16
+upvalues (1) for 0000020E8D074520:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:179,192> (24 instructions at 0000020E8D075250)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[180]	SELF     	2 0 -1	; "CanAddScore"
+	2	[180]	CALL     	2 2 2
+	3	[180]	TEST     	2 1
+	4	[180]	JMP      	0 1	; to 6
+	5	[181]	RETURN   	0 1
+	6	[183]	SELF     	2 1 -2	; "GetType"
+	7	[183]	CALL     	2 2 2
+	8	[184]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	9	[184]	GETTABLE 	3 3 2
+	10	[184]	EQ       	0 3 -4	; - nil
+	11	[184]	JMP      	0 1	; to 13
+	12	[185]	RETURN   	0 1
+	13	[188]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	14	[188]	GETTABLE 	3 3 2
+	15	[188]	GETTABLE 	3 3 -5	; "merge_score"
+	16	[189]	EQ       	1 3 -4	; - nil
+	17	[189]	JMP      	0 6	; to 24
+	18	[190]	SELF     	4 0 -6	; "_AddScore"
+	19	[190]	MOVE     	6 3
+	20	[190]	GETTABUP 	7 0 -7	; _ENV "AvenueAddScoreScene"
+	21	[190]	GETTABLE 	7 7 -8	; "merge"
+	22	[190]	MOVE     	8 1
+	23	[190]	CALL     	4 5 1
+	24	[192]	RETURN   	0 1
+constants (8) for 0000020E8D075250:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_mergeItemScoreConfig"
+	4	nil
+	5	"merge_score"
+	6	"_AddScore"
+	7	"AvenueAddScoreScene"
+	8	"merge"
+locals (4) for 0000020E8D075250:
+	0	self	1	25
+	1	itemModel	1	25
+	2	itemType	8	25
+	3	mergeScore	16	25
+upvalues (1) for 0000020E8D075250:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:195,208> (24 instructions at 0000020E8D074A50)
+2 params, 9 slots, 1 upvalue, 4 locals, 8 constants, 0 functions
+	1	[196]	SELF     	2 0 -1	; "CanAddScore"
+	2	[196]	CALL     	2 2 2
+	3	[196]	TEST     	2 1
+	4	[196]	JMP      	0 1	; to 6
+	5	[197]	RETURN   	0 1
+	6	[199]	SELF     	2 1 -2	; "GetType"
+	7	[199]	CALL     	2 2 2
+	8	[200]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	9	[200]	GETTABLE 	3 3 2
+	10	[200]	EQ       	0 3 -4	; - nil
+	11	[200]	JMP      	0 1	; to 13
+	12	[201]	RETURN   	0 1
+	13	[204]	GETTABLE 	3 0 -3	; "m_mergeItemScoreConfig"
+	14	[204]	GETTABLE 	3 3 2
+	15	[204]	GETTABLE 	3 3 -5	; "bubble_score"
+	16	[205]	EQ       	1 3 -4	; - nil
+	17	[205]	JMP      	0 6	; to 24
+	18	[206]	SELF     	4 0 -6	; "_AddScore"
+	19	[206]	MOVE     	6 3
+	20	[206]	GETTABUP 	7 0 -7	; _ENV "AvenueAddScoreScene"
+	21	[206]	GETTABLE 	7 7 -8	; "bubble"
+	22	[206]	MOVE     	8 1
+	23	[206]	CALL     	4 5 1
+	24	[208]	RETURN   	0 1
+constants (8) for 0000020E8D074A50:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_mergeItemScoreConfig"
+	4	nil
+	5	"bubble_score"
+	6	"_AddScore"
+	7	"AvenueAddScoreScene"
+	8	"bubble"
+locals (4) for 0000020E8D074A50:
+	0	self	1	25
+	1	itemModel	1	25
+	2	itemType	8	25
+	3	bubbleScore	16	25
+upvalues (1) for 0000020E8D074A50:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:211,225> (23 instructions at 0000020E8D0751D0)
+2 params, 9 slots, 1 upvalue, 4 locals, 7 constants, 0 functions
+	1	[212]	SELF     	2 0 -1	; "CanAddScore"
+	2	[212]	CALL     	2 2 2
+	3	[212]	TEST     	2 1
+	4	[212]	JMP      	0 1	; to 6
+	5	[213]	RETURN   	0 1
+	6	[216]	MOVE     	2 1
+	7	[217]	GETTABLE 	3 0 -2	; "m_mergeItemScoreConfig"
+	8	[217]	GETTABLE 	3 3 2
+	9	[217]	EQ       	0 3 -3	; - nil
+	10	[217]	JMP      	0 1	; to 12
+	11	[218]	RETURN   	0 1
+	12	[221]	GETTABLE 	3 0 -2	; "m_mergeItemScoreConfig"
+	13	[221]	GETTABLE 	3 3 2
+	14	[221]	GETTABLE 	3 3 -4	; "shop_score"
+	15	[222]	EQ       	1 3 -3	; - nil
+	16	[222]	JMP      	0 6	; to 23
+	17	[223]	SELF     	4 0 -5	; "_AddScore"
+	18	[223]	MOVE     	6 3
+	19	[223]	GETTABUP 	7 0 -6	; _ENV "AvenueAddScoreScene"
+	20	[223]	GETTABLE 	7 7 -7	; "shop"
+	21	[223]	MOVE     	8 2
+	22	[223]	CALL     	4 5 1
+	23	[225]	RETURN   	0 1
+constants (7) for 0000020E8D0751D0:
+	1	"CanAddScore"
+	2	"m_mergeItemScoreConfig"
+	3	nil
+	4	"shop_score"
+	5	"_AddScore"
+	6	"AvenueAddScoreScene"
+	7	"shop"
+locals (4) for 0000020E8D0751D0:
+	0	self	1	24
+	1	itemCode	1	24
+	2	itemType	7	24
+	3	mergeScore	15	24
+upvalues (1) for 0000020E8D0751D0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:228,274> (88 instructions at 0000020E8D075350)
+2 params, 11 slots, 1 upvalue, 11 locals, 19 constants, 0 functions
+	1	[229]	SELF     	2 0 -1	; "CanAddScore"
+	2	[229]	CALL     	2 2 2
+	3	[229]	TEST     	2 1
+	4	[229]	JMP      	0 2	; to 7
+	5	[230]	LOADK    	2 -2	; 0
+	6	[230]	RETURN   	2 2
+	7	[233]	SELF     	2 1 -3	; "GetInnerType"
+	8	[233]	CALL     	2 2 2
+	9	[233]	GETTABUP 	3 0 -4	; _ENV "MainOrderType"
+	10	[233]	GETTABLE 	3 3 -5	; "Special"
+	11	[233]	EQ       	0 2 3
+	12	[233]	JMP      	0 2	; to 15
+	13	[234]	LOADK    	2 -2	; 0
+	14	[234]	RETURN   	2 2
+	15	[237]	SELF     	2 1 -6	; "GetDiffScore"
+	16	[237]	CALL     	2 2 2
+	17	[238]	SELF     	3 1 -7	; "GetPrice"
+	18	[238]	CALL     	3 2 2
+	19	[241]	LOADNIL  	4 0
+	20	[242]	GETTABUP 	5 0 -8	; _ENV "ipairs"
+	21	[242]	GETTABLE 	6 0 -9	; "m_config"
+	22	[242]	GETTABLE 	6 6 -10	; "finishOrderAddScoreConfig"
+	23	[242]	CALL     	5 2 4
+	24	[242]	JMP      	0 28	; to 53
+	25	[243]	GETTABLE 	10 9 -11	; "gold_min"
+	26	[243]	EQ       	1 10 -12	; - nil
+	27	[243]	JMP      	0 11	; to 39
+	28	[243]	GETTABLE 	10 9 -13	; "gold_max"
+	29	[243]	EQ       	1 10 -12	; - nil
+	30	[243]	JMP      	0 8	; to 39
+	31	[244]	GETTABLE 	10 9 -11	; "gold_min"
+	32	[244]	LE       	0 10 3
+	33	[244]	JMP      	0 5	; to 39
+	34	[244]	GETTABLE 	10 9 -13	; "gold_max"
+	35	[244]	LE       	0 3 10
+	36	[244]	JMP      	0 2	; to 39
+	37	[245]	MOVE     	4 9
+	38	[245]	JMP      	0 16	; to 55
+	39	[250]	GETTABLE 	10 9 -14	; "diff_score_min"
+	40	[250]	EQ       	1 10 -12	; - nil
+	41	[250]	JMP      	0 11	; to 53
+	42	[250]	GETTABLE 	10 9 -15	; "diff_score_max"
+	43	[250]	EQ       	1 10 -12	; - nil
+	44	[250]	JMP      	0 8	; to 53
+	45	[251]	GETTABLE 	10 9 -14	; "diff_score_min"
+	46	[251]	LE       	0 10 2
+	47	[251]	JMP      	0 5	; to 53
+	48	[251]	GETTABLE 	10 9 -15	; "diff_score_max"
+	49	[251]	LE       	0 2 10
+	50	[251]	JMP      	0 2	; to 53
+	51	[252]	MOVE     	4 9
+	52	[252]	JMP      	0 2	; to 55
+	53	[242]	TFORCALL 	5 2
+	54	[242]	TFORLOOP 	7 -30	; to 25
+	55	[258]	EQ       	0 4 -12	; - nil
+	56	[258]	JMP      	0 2	; to 59
+	57	[259]	LOADK    	5 -2	; 0
+	58	[259]	RETURN   	5 2
+	59	[262]	LOADK    	5 -2	; 0
+	60	[264]	GETTABLE 	6 4 -16	; "reward_num_fix"
+	61	[264]	EQ       	1 6 -12	; - nil
+	62	[264]	JMP      	0 2	; to 65
+	63	[265]	GETTABLE 	5 4 -16	; "reward_num_fix"
+	64	[265]	JMP      	0 22	; to 87
+	65	[266]	GETTABLE 	6 4 -17	; "reward_num_percentage"
+	66	[266]	EQ       	1 6 -12	; - nil
+	67	[266]	JMP      	0 19	; to 87
+	68	[267]	GETTABLE 	6 4 -11	; "gold_min"
+	69	[267]	EQ       	1 6 -12	; - nil
+	70	[267]	JMP      	0 10	; to 81
+	71	[267]	GETTABLE 	6 4 -13	; "gold_max"
+	72	[267]	EQ       	1 6 -12	; - nil
+	73	[267]	JMP      	0 7	; to 81
+	74	[268]	GETTABUP 	6 0 -18	; _ENV "math"
+	75	[268]	GETTABLE 	6 6 -19	; "ceil"
+	76	[268]	GETTABLE 	7 4 -17	; "reward_num_percentage"
+	77	[268]	MUL      	7 3 7
+	78	[268]	CALL     	6 2 2
+	79	[268]	MOVE     	5 6
+	80	[268]	JMP      	0 6	; to 87
+	81	[270]	GETTABUP 	6 0 -18	; _ENV "math"
+	82	[270]	GETTABLE 	6 6 -19	; "ceil"
+	83	[270]	GETTABLE 	7 4 -17	; "reward_num_percentage"
+	84	[270]	MUL      	7 2 7
+	85	[270]	CALL     	6 2 2
+	86	[270]	MOVE     	5 6
+	87	[273]	RETURN   	5 2
+	88	[274]	RETURN   	0 1
+constants (19) for 0000020E8D075350:
+	1	"CanAddScore"
+	2	0
+	3	"GetInnerType"
+	4	"MainOrderType"
+	5	"Special"
+	6	"GetDiffScore"
+	7	"GetPrice"
+	8	"ipairs"
+	9	"m_config"
+	10	"finishOrderAddScoreConfig"
+	11	"gold_min"
+	12	nil
+	13	"gold_max"
+	14	"diff_score_min"
+	15	"diff_score_max"
+	16	"reward_num_fix"
+	17	"reward_num_percentage"
+	18	"math"
+	19	"ceil"
+locals (11) for 0000020E8D075350:
+	0	self	1	89
+	1	order	1	89
+	2	diffscore	17	89
+	3	gold	19	89
+	4	targetConfig	20	89
+	5	(for generator)	24	55
+	6	(for state)	24	55
+	7	(for control)	24	55
+	8	_	25	53
+	9	config	25	53
+	10	score	60	89
+upvalues (1) for 0000020E8D075350:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:275,280> (9 instructions at 0000020E8D0746D0)
+2 params, 4 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[277]	SELF     	2 0 -1	; "IsStageRewardMode"
+	2	[277]	CALL     	2 2 2
+	3	[277]	TEST     	2 0
+	4	[277]	JMP      	0 4	; to 9
+	5	[278]	GETTABLE 	2 0 -2	; "m_config"
+	6	[278]	GETTABLE 	2 2 -3	; "avenueStageReward"
+	7	[278]	GETTABLE 	2 2 1
+	8	[278]	RETURN   	2 2
+	9	[280]	RETURN   	0 1
+constants (3) for 0000020E8D0746D0:
+	1	"IsStageRewardMode"
+	2	"m_config"
+	3	"avenueStageReward"
+locals (2) for 0000020E8D0746D0:
+	0	self	1	10
+	1	stage	1	10
+upvalues (0) for 0000020E8D0746D0:
+
+function <AvenueModel.lua:282,284> (3 instructions at 0000020E8D074E50)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[283]	GETTABLE 	1 0 -1	; "m_currStage"
+	2	[283]	RETURN   	1 2
+	3	[284]	RETURN   	0 1
+constants (1) for 0000020E8D074E50:
+	1	"m_currStage"
+locals (1) for 0000020E8D074E50:
+	0	self	1	4
+upvalues (0) for 0000020E8D074E50:
+
+function <AvenueModel.lua:286,289> (17 instructions at 0000020E8D074FD0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[288]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[288]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[288]	GETTABLE 	2 0 -3	; "m_config"
+	4	[288]	CALL     	1 2 2
+	5	[288]	TEST     	1 1
+	6	[288]	JMP      	0 7	; to 14
+	7	[288]	GETTABUP 	1 0 -1	; _ENV "Table"
+	8	[288]	GETTABLE 	1 1 -2	; "IsEmpty"
+	9	[288]	GETTABLE 	2 0 -3	; "m_config"
+	10	[288]	GETTABLE 	2 2 -4	; "avenueStageReward"
+	11	[288]	CALL     	1 2 2
+	12	[288]	NOT      	1 1
+	13	[288]	JMP      	0 2	; to 16
+	14	[288]	LOADBOOL 	1 0 1
+	15	[288]	LOADBOOL 	1 1 0
+	16	[288]	RETURN   	1 2
+	17	[289]	RETURN   	0 1
+constants (4) for 0000020E8D074FD0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_config"
+	4	"avenueStageReward"
+locals (1) for 0000020E8D074FD0:
+	0	self	1	18
+upvalues (1) for 0000020E8D074FD0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:291,296> (11 instructions at 0000020E8D074750)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[293]	SELF     	1 0 -1	; "IsStageRewardMode"
+	2	[293]	CALL     	1 2 2
+	3	[293]	TEST     	1 0
+	4	[293]	JMP      	0 6	; to 11
+	5	[294]	GETTABUP 	1 0 -2	; _ENV "Table"
+	6	[294]	GETTABLE 	1 1 -3	; "MapSize"
+	7	[294]	GETTABLE 	2 0 -4	; "m_config"
+	8	[294]	GETTABLE 	2 2 -5	; "avenueStageReward"
+	9	[294]	TAILCALL 	1 2 0
+	10	[294]	RETURN   	1 0
+	11	[296]	RETURN   	0 1
+constants (5) for 0000020E8D074750:
+	1	"IsStageRewardMode"
+	2	"Table"
+	3	"MapSize"
+	4	"m_config"
+	5	"avenueStageReward"
+locals (1) for 0000020E8D074750:
+	0	self	1	12
+upvalues (1) for 0000020E8D074750:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:298,300> (3 instructions at 0000020E8D0747D0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[299]	GETTABLE 	1 0 -1	; "m_totalRequiredLevel"
+	2	[299]	RETURN   	1 2
+	3	[300]	RETURN   	0 1
+constants (1) for 0000020E8D0747D0:
+	1	"m_totalRequiredLevel"
+locals (1) for 0000020E8D0747D0:
+	0	self	1	4
+upvalues (0) for 0000020E8D0747D0:
+
+function <AvenueModel.lua:302,308> (16 instructions at 0000020E8D074950)
+1 param, 4 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[303]	SELF     	1 0 -1	; "IsStageRewardMode"
+	2	[303]	CALL     	1 2 2
+	3	[303]	TEST     	1 0
+	4	[303]	JMP      	0 9	; to 14
+	5	[304]	GETTABLE 	1 0 -2	; "m_currStage"
+	6	[304]	SELF     	2 0 -3	; "GetMaxStage"
+	7	[304]	CALL     	2 2 2
+	8	[304]	LE       	1 2 1
+	9	[304]	JMP      	0 1	; to 11
+	10	[304]	LOADBOOL 	1 0 1
+	11	[304]	LOADBOOL 	1 1 0
+	12	[304]	RETURN   	1 2
+	13	[304]	JMP      	0 2	; to 16
+	14	[306]	LOADBOOL 	1 0 0
+	15	[306]	RETURN   	1 2
+	16	[308]	RETURN   	0 1
+constants (3) for 0000020E8D074950:
+	1	"IsStageRewardMode"
+	2	"m_currStage"
+	3	"GetMaxStage"
+locals (1) for 0000020E8D074950:
+	0	self	1	17
+upvalues (0) for 0000020E8D074950:
+
+function <AvenueModel.lua:310,321> (20 instructions at 0000020E8D074850)
+2 params, 10 slots, 0 upvalues, 7 locals, 6 constants, 0 functions
+	1	[312]	SELF     	2 0 -1	; "IsStageRewardMode"
+	2	[312]	CALL     	2 2 2
+	3	[312]	TEST     	2 0
+	4	[312]	JMP      	0 15	; to 20
+	5	[313]	LOADK    	2 -2	; 0
+	6	[314]	LOADK    	3 -3	; 1
+	7	[314]	SELF     	4 0 -4	; "GetMaxStage"
+	8	[314]	CALL     	4 2 2
+	9	[314]	LOADK    	5 -3	; 1
+	10	[314]	FORPREP  	3 7	; to 18
+	11	[315]	SELF     	7 0 -5	; "GetStageData"
+	12	[315]	MOVE     	9 6
+	13	[315]	CALL     	7 3 2
+	14	[315]	GETTABLE 	7 7 -6	; "num"
+	15	[315]	LE       	0 7 1
+	16	[315]	JMP      	0 1	; to 18
+	17	[316]	MOVE     	2 6
+	18	[314]	FORLOOP  	3 -8	; to 11
+	19	[319]	RETURN   	2 2
+	20	[321]	RETURN   	0 1
+constants (6) for 0000020E8D074850:
+	1	"IsStageRewardMode"
+	2	0
+	3	1
+	4	"GetMaxStage"
+	5	"GetStageData"
+	6	"num"
+locals (7) for 0000020E8D074850:
+	0	self	1	21
+	1	level	1	21
+	2	stage	6	20
+	3	(for index)	10	19
+	4	(for limit)	10	19
+	5	(for step)	10	19
+	6	i	11	18
+upvalues (0) for 0000020E8D074850:
+
+function <AvenueModel.lua:324,328> (11 instructions at 0000020E8D0749D0)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[325]	GETTABLE 	2 1 -1	; "Source"
+	2	[325]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[325]	CALL     	2 2 2
+	4	[325]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[325]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[325]	EQ       	0 2 3
+	7	[325]	JMP      	0 3	; to 11
+	8	[326]	SELF     	2 0 -5	; "_TryAddMergeScore"
+	9	[326]	GETTABLE 	4 1 -1	; "Source"
+	10	[326]	CALL     	2 3 1
+	11	[328]	RETURN   	0 1
+constants (5) for 0000020E8D0749D0:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddMergeScore"
+locals (2) for 0000020E8D0749D0:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 0000020E8D0749D0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:330,334> (11 instructions at 0000020E8D0748D0)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[331]	GETTABLE 	2 1 -1	; "Source"
+	2	[331]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[331]	CALL     	2 2 2
+	4	[331]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[331]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[331]	EQ       	0 2 3
+	7	[331]	JMP      	0 3	; to 11
+	8	[332]	SELF     	2 0 -5	; "_TryAddBubbleBroken"
+	9	[332]	GETTABLE 	4 1 -6	; "New"
+	10	[332]	CALL     	2 3 1
+	11	[334]	RETURN   	0 1
+constants (6) for 0000020E8D0748D0:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddBubbleBroken"
+	6	"New"
+locals (2) for 0000020E8D0748D0:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 0000020E8D0748D0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:336,341> (11 instructions at 0000020E8D074B50)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[338]	GETTABLE 	2 1 -1	; "Data"
+	2	[338]	GETTABLE 	2 2 -2	; "shopType"
+	3	[338]	GETTABUP 	3 0 -3	; _ENV "EShopType"
+	4	[338]	GETTABLE 	3 3 -4	; "FlashSale"
+	5	[338]	EQ       	0 2 3
+	6	[338]	JMP      	0 4	; to 11
+	7	[339]	SELF     	2 0 -5	; "_TryAddBuyShopItemScore"
+	8	[339]	GETTABLE 	4 1 -1	; "Data"
+	9	[339]	GETTABLE 	4 4 -6	; "itemCode"
+	10	[339]	CALL     	2 3 1
+	11	[341]	RETURN   	0 1
+constants (6) for 0000020E8D074B50:
+	1	"Data"
+	2	"shopType"
+	3	"EShopType"
+	4	"FlashSale"
+	5	"_TryAddBuyShopItemScore"
+	6	"itemCode"
+locals (2) for 0000020E8D074B50:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 0000020E8D074B50:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:343,345> (7 instructions at 0000020E8D074AD0)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[344]	SELF     	2 0 -1	; "_AddScore"
+	2	[344]	MOVE     	4 1
+	3	[344]	GETTABUP 	5 0 -2	; _ENV "AvenueAddScoreScene"
+	4	[344]	GETTABLE 	5 5 -3	; "order"
+	5	[344]	LOADNIL  	6 0
+	6	[344]	CALL     	2 5 1
+	7	[345]	RETURN   	0 1
+constants (3) for 0000020E8D074AD0:
+	1	"_AddScore"
+	2	"AvenueAddScoreScene"
+	3	"order"
+locals (2) for 0000020E8D074AD0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000020E8D074AD0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:348,356> (15 instructions at 0000020E8D074DD0)
+1 param, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[349]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[349]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[349]	GETTABLE 	2 0 -3	; "cacheStageRewards"
+	4	[349]	CALL     	1 2 2
+	5	[349]	TEST     	1 1
+	6	[349]	JMP      	0 8	; to 15
+	7	[350]	NEWTABLE 	1 0 0
+	8	[353]	GETTABUP 	2 0 -4	; _ENV "RewardApi"
+	9	[353]	GETTABLE 	2 2 -5	; "AcquireRewardsInView"
+	10	[353]	GETTABLE 	3 0 -3	; "cacheStageRewards"
+	11	[353]	MOVE     	4 1
+	12	[353]	CALL     	2 3 1
+	13	[354]	NEWTABLE 	2 0 0
+	14	[354]	SETTABLE 	0 -3 2	; "cacheStageRewards" -
+	15	[356]	RETURN   	0 1
+constants (5) for 0000020E8D074DD0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"cacheStageRewards"
+	4	"RewardApi"
+	5	"AcquireRewardsInView"
+locals (2) for 0000020E8D074DD0:
+	0	self	1	16
+	1	viewData	8	15
+upvalues (1) for 0000020E8D074DD0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:358,363> (14 instructions at 0000020E8D074CD0)
+1 param, 4 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[359]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[359]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[359]	GETTABLE 	2 0 -3	; "cacheNormalRewards"
+	4	[359]	CALL     	1 2 2
+	5	[359]	TEST     	1 1
+	6	[359]	JMP      	0 7	; to 14
+	7	[360]	GETTABUP 	1 0 -4	; _ENV "RewardApi"
+	8	[360]	GETTABLE 	1 1 -5	; "AcquireRewardsInView"
+	9	[360]	GETTABLE 	2 0 -3	; "cacheNormalRewards"
+	10	[360]	NEWTABLE 	3 0 0
+	11	[360]	CALL     	1 3 1
+	12	[361]	NEWTABLE 	1 0 0
+	13	[361]	SETTABLE 	0 -3 1	; "cacheNormalRewards" -
+	14	[363]	RETURN   	0 1
+constants (5) for 0000020E8D074CD0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"cacheNormalRewards"
+	4	"RewardApi"
+	5	"AcquireRewardsInView"
+locals (1) for 0000020E8D074CD0:
+	0	self	1	15
+upvalues (1) for 0000020E8D074CD0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:365,451> (217 instructions at 0000020E8D074BD0)
+4 params, 22 slots, 3 upvalues, 27 locals, 64 constants, 0 functions
+	1	[366]	GETTABLE 	4 0 -1	; "m_currentStep"
+	2	[367]	GETTABLE 	5 0 -2	; "m_currStage"
+	3	[367]	TEST     	5 1
+	4	[367]	JMP      	0 1	; to 6
+	5	[367]	LOADK    	5 -3	; 0
+	6	[368]	SELF     	6 0 -4	; "GetTotalScore"
+	7	[368]	CALL     	6 2 2
+	8	[368]	ADD      	6 6 1
+	9	[369]	GETTABLE 	7 0 -5	; "m_dbTable"
+	10	[369]	SELF     	7 7 -6	; "Set"
+	11	[369]	GETTABUP 	9 0 -7	; DBKey "Score"
+	12	[369]	GETUPVAL 	10 1	; DBColumnValue
+	13	[369]	MOVE     	11 6
+	14	[369]	CALL     	7 5 1
+	15	[371]	SELF     	7 0 -8	; "LogActivity"
+	16	[371]	GETTABUP 	9 2 -9	; _ENV "EBIType"
+	17	[371]	GETTABLE 	9 9 -10	; "ActivityAddScore"
+	18	[371]	MOVE     	10 1
+	19	[371]	CALL     	7 4 1
+	20	[372]	GETTABUP 	7 2 -11	; _ENV "GM"
+	21	[372]	GETTABLE 	7 7 -12	; "BIManager"
+	22	[372]	SELF     	7 7 -13	; "LogAction"
+	23	[372]	GETTABLE 	9 0 -14	; "m_definition"
+	24	[372]	GETTABLE 	9 9 -15	; "GetScoreBIType"
+	25	[372]	NEWTABLE 	10 0 3
+	26	[373]	SETTABLE 	10 -16 1	; "score" -
+	27	[374]	SETTABLE 	10 -17 2	; "scene" -
+	28	[375]	SETTABLE 	10 -18 4	; "level" -
+	29	[372]	CALL     	7 4 1
+	30	[379]	SELF     	7 0 -19	; "UpdateContent"
+	31	[379]	CALL     	7 2 1
+	32	[380]	SELF     	7 0 -20	; "IsStageRewardMode"
+	33	[380]	CALL     	7 2 2
+	34	[380]	TEST     	7 0
+	35	[380]	JMP      	0 12	; to 48
+	36	[381]	GETTABUP 	7 2 -11	; _ENV "GM"
+	37	[381]	GETTABLE 	7 7 -12	; "BIManager"
+	38	[381]	SELF     	7 7 -13	; "LogAction"
+	39	[381]	GETTABLE 	9 0 -14	; "m_definition"
+	40	[381]	GETTABLE 	9 9 -21	; "CompleteStage"
+	41	[381]	NEWTABLE 	10 0 2
+	42	[382]	GETTABLE 	11 0 -2	; "m_currStage"
+	43	[382]	SETTABLE 	10 -22 11	; "id" -
+	44	[383]	SELF     	11 0 -24	; "GetStageConfigGroupId"
+	45	[383]	CALL     	11 2 2
+	46	[383]	SETTABLE 	10 -23 11	; "groupid" -
+	47	[381]	CALL     	7 4 1
+	48	[386]	LOADK    	7 -3	; 0
+	49	[387]	NEWTABLE 	8 0 0
+	50	[388]	GETTABLE 	9 0 -1	; "m_currentStep"
+	51	[388]	LT       	0 4 9
+	52	[388]	JMP      	0 71	; to 124
+	53	[389]	GETTABUP 	9 2 -25	; _ENV "ipairs"
+	54	[389]	GETTABLE 	10 0 -26	; "m_config"
+	55	[389]	GETTABLE 	10 10 -27	; "nonLoopAvenueRewards"
+	56	[389]	CALL     	9 2 4
+	57	[389]	JMP      	0 16	; to 74
+	58	[390]	ADD      	7 7 -28	; - 1
+	59	[391]	LE       	0 4 7
+	60	[391]	JMP      	0 13	; to 74
+	61	[391]	GETTABLE 	14 0 -1	; "m_currentStep"
+	62	[391]	LT       	0 7 14
+	63	[391]	JMP      	0 10	; to 74
+	64	[392]	GETTABUP 	14 2 -29	; _ENV "Table"
+	65	[392]	GETTABLE 	14 14 -30	; "ListAppend"
+	66	[392]	MOVE     	15 8
+	67	[392]	GETTABLE 	16 13 -31	; "rewards"
+	68	[392]	CALL     	14 3 1
+	69	[393]	SELF     	14 0 -8	; "LogActivity"
+	70	[393]	GETTABUP 	16 2 -9	; _ENV "EBIType"
+	71	[393]	GETTABLE 	16 16 -32	; "ActivityRankUp"
+	72	[393]	MOVE     	17 7
+	73	[393]	CALL     	14 4 1
+	74	[389]	TFORCALL 	9 2
+	75	[389]	TFORLOOP 	11 -18	; to 58
+	76	[397]	GETTABUP 	9 2 -29	; _ENV "Table"
+	77	[397]	GETTABLE 	9 9 -33	; "IsEmpty"
+	78	[397]	GETTABLE 	10 0 -26	; "m_config"
+	79	[397]	GETTABLE 	10 10 -34	; "loopAvenueRewards"
+	80	[397]	CALL     	9 2 2
+	81	[397]	TEST     	9 1
+	82	[397]	JMP      	0 22	; to 105
+	83	[398]	GETTABLE 	9 0 -1	; "m_currentStep"
+	84	[398]	LT       	0 7 9
+	85	[398]	JMP      	0 19	; to 105
+	86	[399]	GETTABUP 	9 2 -25	; _ENV "ipairs"
+	87	[399]	GETTABLE 	10 0 -26	; "m_config"
+	88	[399]	GETTABLE 	10 10 -34	; "loopAvenueRewards"
+	89	[399]	CALL     	9 2 4
+	90	[399]	JMP      	0 11	; to 102
+	91	[400]	ADD      	7 7 -28	; - 1
+	92	[401]	LE       	0 4 7
+	93	[401]	JMP      	0 8	; to 102
+	94	[401]	GETTABLE 	14 0 -1	; "m_currentStep"
+	95	[401]	LT       	0 7 14
+	96	[401]	JMP      	0 5	; to 102
+	97	[402]	GETTABUP 	14 2 -29	; _ENV "Table"
+	98	[402]	GETTABLE 	14 14 -30	; "ListAppend"
+	99	[402]	MOVE     	15 8
+	100	[402]	GETTABLE 	16 13 -31	; "rewards"
+	101	[402]	CALL     	14 3 1
+	102	[399]	TFORCALL 	9 2
+	103	[399]	TFORLOOP 	11 -13	; to 91
+	104	[404]	JMP      	0 -22	; to 83
+	105	[408]	GETTABUP 	9 2 -29	; _ENV "Table"
+	106	[408]	GETTABLE 	9 9 -33	; "IsEmpty"
+	107	[408]	MOVE     	10 8
+	108	[408]	CALL     	9 2 2
+	109	[408]	TEST     	9 1
+	110	[408]	JMP      	0 12	; to 123
+	111	[409]	GETTABUP 	9 2 -35	; _ENV "RewardApi"
+	112	[409]	GETTABLE 	9 9 -36	; "AcquireRewardsLogic"
+	113	[409]	MOVE     	10 8
+	114	[409]	GETTABUP 	11 2 -37	; _ENV "EPropertySource"
+	115	[409]	GETTABLE 	11 11 -38	; "Give"
+	116	[409]	GETTABLE 	12 0 -14	; "m_definition"
+	117	[409]	GETTABLE 	12 12 -39	; "GetRewardsBIType"
+	118	[409]	GETTABUP 	13 2 -40	; _ENV "EGameMode"
+	119	[409]	GETTABLE 	13 13 -41	; "Main"
+	120	[409]	GETTABUP 	14 2 -42	; _ENV "CacheItemType"
+	121	[409]	GETTABLE 	14 14 -43	; "Type2"
+	122	[409]	CALL     	9 6 1
+	123	[411]	SETTABLE 	0 -44 8	; "cacheNormalRewards" -
+	124	[413]	SELF     	9 0 -20	; "IsStageRewardMode"
+	125	[413]	CALL     	9 2 2
+	126	[413]	TEST     	9 0
+	127	[413]	JMP      	0 55	; to 183
+	128	[415]	LOADK    	9 -3	; 0
+	129	[416]	NEWTABLE 	10 0 0
+	130	[417]	GETTABLE 	11 0 -2	; "m_currStage"
+	131	[417]	LT       	0 5 11
+	132	[417]	JMP      	0 50	; to 183
+	133	[418]	GETTABUP 	11 2 -25	; _ENV "ipairs"
+	134	[418]	GETTABLE 	12 0 -26	; "m_config"
+	135	[418]	GETTABLE 	12 12 -45	; "avenueStageReward"
+	136	[418]	CALL     	11 2 4
+	137	[418]	JMP      	0 24	; to 162
+	138	[419]	ADD      	9 9 -28	; - 1
+	139	[420]	LT       	0 5 9
+	140	[420]	JMP      	0 21	; to 162
+	141	[420]	GETTABLE 	16 0 -2	; "m_currStage"
+	142	[420]	LE       	0 9 16
+	143	[420]	JMP      	0 18	; to 162
+	144	[421]	GETTABUP 	16 2 -29	; _ENV "Table"
+	145	[421]	GETTABLE 	16 16 -30	; "ListAppend"
+	146	[421]	MOVE     	17 10
+	147	[421]	NEWTABLE 	18 1 0
+	148	[421]	GETTABLE 	19 15 -46	; "reward"
+	149	[421]	SETLIST  	18 1 1	; 1
+	150	[421]	CALL     	16 3 1
+	151	[422]	GETTABUP 	16 2 -11	; _ENV "GM"
+	152	[422]	GETTABLE 	16 16 -12	; "BIManager"
+	153	[422]	SELF     	16 16 -13	; "LogAction"
+	154	[422]	GETTABLE 	18 0 -14	; "m_definition"
+	155	[422]	GETTABLE 	18 18 -47	; "GetStageReward"
+	156	[422]	NEWTABLE 	19 0 2
+	157	[423]	SELF     	20 0 -24	; "GetStageConfigGroupId"
+	158	[423]	CALL     	20 2 2
+	159	[423]	SETTABLE 	19 -23 20	; "groupid" -
+	160	[424]	SETTABLE 	19 -22 9	; "id" -
+	161	[422]	CALL     	16 4 1
+	162	[418]	TFORCALL 	11 2
+	163	[418]	TFORLOOP 	13 -26	; to 138
+	164	[428]	GETTABUP 	11 2 -29	; _ENV "Table"
+	165	[428]	GETTABLE 	11 11 -33	; "IsEmpty"
+	166	[428]	MOVE     	12 10
+	167	[428]	CALL     	11 2 2
+	168	[428]	TEST     	11 1
+	169	[428]	JMP      	0 12	; to 182
+	170	[429]	GETTABUP 	11 2 -35	; _ENV "RewardApi"
+	171	[429]	GETTABLE 	11 11 -36	; "AcquireRewardsLogic"
+	172	[429]	MOVE     	12 10
+	173	[429]	GETTABUP 	13 2 -37	; _ENV "EPropertySource"
+	174	[429]	GETTABLE 	13 13 -38	; "Give"
+	175	[429]	GETTABLE 	14 0 -14	; "m_definition"
+	176	[429]	GETTABLE 	14 14 -47	; "GetStageReward"
+	177	[429]	GETTABUP 	15 2 -40	; _ENV "EGameMode"
+	178	[429]	GETTABLE 	15 15 -41	; "Main"
+	179	[429]	GETTABUP 	16 2 -42	; _ENV "CacheItemType"
+	180	[429]	GETTABLE 	16 16 -43	; "Type2"
+	181	[429]	CALL     	11 6 1
+	182	[431]	SETTABLE 	0 -48 10	; "cacheStageRewards" -
+	183	[435]	NEWTABLE 	9 0 5
+	184	[436]	SETTABLE 	9 -49 2	; "Scene" -
+	185	[437]	SETTABLE 	9 -50 3	; "Source" -
+	186	[438]	SETTABLE 	9 -51 1	; "TokenScore" -
+	187	[439]	SETTABLE 	9 -52 8	; "Rewards" -
+	188	[440]	SELF     	10 0 -54	; "GetType"
+	189	[440]	CALL     	10 2 2
+	190	[440]	SETTABLE 	9 -53 10	; "activityType" -
+	191	[443]	GETTABLE 	10 0 -55	; "m_cacheState"
+	192	[443]	GETTABUP 	11 2 -56	; _ENV "ActivityState"
+	193	[443]	GETTABLE 	11 11 -57	; "Ended"
+	194	[443]	EQ       	0 10 11
+	195	[443]	JMP      	0 5	; to 201
+	196	[445]	GETTABUP 	10 2 -58	; _ENV "EventDispatcher"
+	197	[445]	GETTABLE 	10 10 -59	; "DispatchEvent"
+	198	[445]	GETTABUP 	11 2 -60	; _ENV "EEventType"
+	199	[445]	GETTABLE 	11 11 -61	; "OrderStatusChanged"
+	200	[445]	CALL     	10 2 1
+	201	[448]	GETTABLE 	10 9 -49	; "Scene"
+	202	[448]	GETTABUP 	11 2 -62	; _ENV "AvenueAddScoreScene"
+	203	[448]	GETTABLE 	11 11 -63	; "order"
+	204	[448]	EQ       	0 10 11
+	205	[448]	JMP      	0 5	; to 211
+	206	[448]	GETTABLE 	10 0 -55	; "m_cacheState"
+	207	[448]	GETTABUP 	11 2 -56	; _ENV "ActivityState"
+	208	[448]	GETTABLE 	11 11 -57	; "Ended"
+	209	[448]	EQ       	0 10 11
+	210	[448]	JMP      	0 6	; to 217
+	211	[449]	GETTABUP 	10 2 -58	; _ENV "EventDispatcher"
+	212	[449]	GETTABLE 	10 10 -59	; "DispatchEvent"
+	213	[449]	GETTABLE 	11 0 -14	; "m_definition"
+	214	[449]	GETTABLE 	11 11 -64	; "ScoreChangedEvent"
+	215	[449]	MOVE     	12 9
+	216	[449]	CALL     	10 3 1
+	217	[451]	RETURN   	0 1
+constants (64) for 0000020E8D074BD0:
+	1	"m_currentStep"
+	2	"m_currStage"
+	3	0
+	4	"GetTotalScore"
+	5	"m_dbTable"
+	6	"Set"
+	7	"Score"
+	8	"LogActivity"
+	9	"EBIType"
+	10	"ActivityAddScore"
+	11	"GM"
+	12	"BIManager"
+	13	"LogAction"
+	14	"m_definition"
+	15	"GetScoreBIType"
+	16	"score"
+	17	"scene"
+	18	"level"
+	19	"UpdateContent"
+	20	"IsStageRewardMode"
+	21	"CompleteStage"
+	22	"id"
+	23	"groupid"
+	24	"GetStageConfigGroupId"
+	25	"ipairs"
+	26	"m_config"
+	27	"nonLoopAvenueRewards"
+	28	1
+	29	"Table"
+	30	"ListAppend"
+	31	"rewards"
+	32	"ActivityRankUp"
+	33	"IsEmpty"
+	34	"loopAvenueRewards"
+	35	"RewardApi"
+	36	"AcquireRewardsLogic"
+	37	"EPropertySource"
+	38	"Give"
+	39	"GetRewardsBIType"
+	40	"EGameMode"
+	41	"Main"
+	42	"CacheItemType"
+	43	"Type2"
+	44	"cacheNormalRewards"
+	45	"avenueStageReward"
+	46	"reward"
+	47	"GetStageReward"
+	48	"cacheStageRewards"
+	49	"Scene"
+	50	"Source"
+	51	"TokenScore"
+	52	"Rewards"
+	53	"activityType"
+	54	"GetType"
+	55	"m_cacheState"
+	56	"ActivityState"
+	57	"Ended"
+	58	"EventDispatcher"
+	59	"DispatchEvent"
+	60	"EEventType"
+	61	"OrderStatusChanged"
+	62	"AvenueAddScoreScene"
+	63	"order"
+	64	"ScoreChangedEvent"
+locals (27) for 0000020E8D074BD0:
+	0	self	1	218
+	1	addScore	1	218
+	2	scene	1	218
+	3	message	1	218
+	4	lastStep	2	218
+	5	lastStage	6	218
+	6	score	9	218
+	7	step	49	218
+	8	rewards	50	218
+	9	(for generator)	57	76
+	10	(for state)	57	76
+	11	(for control)	57	76
+	12	_	58	74
+	13	rewardConfig	58	74
+	14	(for generator)	90	104
+	15	(for state)	90	104
+	16	(for control)	90	104
+	17	_	91	102
+	18	rewardConfig	91	102
+	19	stage	129	183
+	20	stageRewards	130	183
+	21	(for generator)	137	164
+	22	(for state)	137	164
+	23	(for control)	137	164
+	24	_	138	162
+	25	rewardConfig	138	162
+	26	msg	191	218
+upvalues (3) for 0000020E8D074BD0:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+	2	_ENV	0	0
+
+function <AvenueModel.lua:453,455> (10 instructions at 0000020E8D074C50)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[454]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[454]	SELF     	1 1 -2	; "GetValue"
+	3	[454]	GETTABUP 	3 0 -3	; DBKey "Score"
+	4	[454]	GETUPVAL 	4 1	; DBColumnValue
+	5	[454]	CALL     	1 4 2
+	6	[454]	TEST     	1 1
+	7	[454]	JMP      	0 1	; to 9
+	8	[454]	LOADK    	1 -4	; 0
+	9	[454]	RETURN   	1 2
+	10	[455]	RETURN   	0 1
+constants (4) for 0000020E8D074C50:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Score"
+	4	0
+locals (1) for 0000020E8D074C50:
+	0	self	1	11
+upvalues (2) for 0000020E8D074C50:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <AvenueModel.lua:457,459> (3 instructions at 0000020E8D074D50)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[458]	GETTABLE 	1 0 -1	; "m_currentScore"
+	2	[458]	RETURN   	1 2
+	3	[459]	RETURN   	0 1
+constants (1) for 0000020E8D074D50:
+	1	"m_currentScore"
+locals (1) for 0000020E8D074D50:
+	0	self	1	4
+upvalues (0) for 0000020E8D074D50:
+
+function <AvenueModel.lua:461,463> (3 instructions at 0000020E8D074F50)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[462]	GETTABLE 	1 0 -1	; "m_currentStep"
+	2	[462]	RETURN   	1 2
+	3	[463]	RETURN   	0 1
+constants (1) for 0000020E8D074F50:
+	1	"m_currentStep"
+locals (1) for 0000020E8D074F50:
+	0	self	1	4
+upvalues (0) for 0000020E8D074F50:
+
+function <AvenueModel.lua:465,469> (20 instructions at 0000020E8D075050)
+1 param, 6 slots, 2 upvalues, 3 locals, 6 constants, 0 functions
+	1	[466]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[466]	SELF     	1 1 -2	; "GetValue"
+	3	[466]	GETTABUP 	3 0 -3	; DBKey "LastDisplayedLevel"
+	4	[466]	GETUPVAL 	4 1	; DBColumnValue
+	5	[466]	CALL     	1 4 2
+	6	[466]	TEST     	1 1
+	7	[466]	JMP      	0 1	; to 9
+	8	[466]	LOADK    	1 -4	; 1
+	9	[467]	GETTABLE 	2 0 -1	; "m_dbTable"
+	10	[467]	SELF     	2 2 -2	; "GetValue"
+	11	[467]	GETTABUP 	4 0 -5	; DBKey "LastDisplayedScore"
+	12	[467]	GETUPVAL 	5 1	; DBColumnValue
+	13	[467]	CALL     	2 4 2
+	14	[467]	TEST     	2 1
+	15	[467]	JMP      	0 1	; to 17
+	16	[467]	LOADK    	2 -6	; 0
+	17	[468]	MOVE     	3 1
+	18	[468]	MOVE     	4 2
+	19	[468]	RETURN   	3 3
+	20	[469]	RETURN   	0 1
+constants (6) for 0000020E8D075050:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastDisplayedLevel"
+	4	1
+	5	"LastDisplayedScore"
+	6	0
+locals (3) for 0000020E8D075050:
+	0	self	1	21
+	1	lastDisplayedLevel	9	21
+	2	lastDisplayedScore	17	21
+upvalues (2) for 0000020E8D075050:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <AvenueModel.lua:471,474> (13 instructions at 0000020E8D0750D0)
+3 params, 8 slots, 2 upvalues, 3 locals, 4 constants, 0 functions
+	1	[472]	GETTABLE 	3 0 -1	; "m_dbTable"
+	2	[472]	SELF     	3 3 -2	; "Set"
+	3	[472]	GETTABUP 	5 0 -3	; DBKey "LastDisplayedLevel"
+	4	[472]	GETUPVAL 	6 1	; DBColumnValue
+	5	[472]	MOVE     	7 1
+	6	[472]	CALL     	3 5 1
+	7	[473]	GETTABLE 	3 0 -1	; "m_dbTable"
+	8	[473]	SELF     	3 3 -2	; "Set"
+	9	[473]	GETTABUP 	5 0 -4	; DBKey "LastDisplayedScore"
+	10	[473]	GETUPVAL 	6 1	; DBColumnValue
+	11	[473]	MOVE     	7 2
+	12	[473]	CALL     	3 5 1
+	13	[474]	RETURN   	0 1
+constants (4) for 0000020E8D0750D0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastDisplayedLevel"
+	4	"LastDisplayedScore"
+locals (3) for 0000020E8D0750D0:
+	0	self	1	14
+	1	lastDisplayedLevel	1	14
+	2	lastDisplayedScore	1	14
+upvalues (2) for 0000020E8D0750D0:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <AvenueModel.lua:476,479> (10 instructions at 0000020E8D075150)
+1 param, 5 slots, 2 upvalues, 2 locals, 4 constants, 0 functions
+	1	[477]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[477]	SELF     	1 1 -2	; "GetValue"
+	3	[477]	GETTABUP 	3 0 -3	; DBKey "LastDisplayedStage"
+	4	[477]	GETUPVAL 	4 1	; DBColumnValue
+	5	[477]	CALL     	1 4 2
+	6	[477]	TEST     	1 1
+	7	[477]	JMP      	0 1	; to 9
+	8	[477]	LOADK    	1 -4	; 0
+	9	[478]	RETURN   	1 2
+	10	[479]	RETURN   	0 1
+constants (4) for 0000020E8D075150:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastDisplayedStage"
+	4	0
+locals (2) for 0000020E8D075150:
+	0	self	1	11
+	1	LastDisplayedStage	9	11
+upvalues (2) for 0000020E8D075150:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <AvenueModel.lua:481,483> (7 instructions at 0000020E8D0753D0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[482]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[482]	SELF     	2 2 -2	; "Set"
+	3	[482]	GETTABUP 	4 0 -3	; DBKey "LastDisplayedStage"
+	4	[482]	GETUPVAL 	5 1	; DBColumnValue
+	5	[482]	MOVE     	6 1
+	6	[482]	CALL     	2 5 1
+	7	[483]	RETURN   	0 1
+constants (3) for 0000020E8D0753D0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastDisplayedStage"
+locals (2) for 0000020E8D0753D0:
+	0	self	1	8
+	1	lastDisplayedStage	1	8
+upvalues (2) for 0000020E8D0753D0:
+	0	DBKey	1	0
+	1	DBColumnValue	1	1
+
+function <AvenueModel.lua:486,503> (37 instructions at 0000020E8D075450)
+2 params, 4 slots, 1 upvalue, 3 locals, 6 constants, 0 functions
+	1	[487]	LE       	0 1 -1	; - 0
+	2	[487]	JMP      	0 1	; to 4
+	3	[488]	RETURN   	0 1
+	4	[491]	GETTABLE 	2 0 -2	; "m_config"
+	5	[491]	GETTABLE 	2 2 -3	; "nonLoopAvenueRewards"
+	6	[491]	LEN      	2 2
+	7	[491]	LE       	0 1 2
+	8	[491]	JMP      	0 4	; to 13
+	9	[493]	GETTABLE 	2 0 -2	; "m_config"
+	10	[493]	GETTABLE 	2 2 -3	; "nonLoopAvenueRewards"
+	11	[493]	GETTABLE 	2 2 1
+	12	[493]	RETURN   	2 2
+	13	[496]	GETTABUP 	2 0 -4	; _ENV "Table"
+	14	[496]	GETTABLE 	2 2 -5	; "IsEmpty"
+	15	[496]	GETTABLE 	3 0 -2	; "m_config"
+	16	[496]	GETTABLE 	3 3 -6	; "loopAvenueRewards"
+	17	[496]	CALL     	2 2 2
+	18	[496]	TEST     	2 1
+	19	[496]	JMP      	0 17	; to 37
+	20	[497]	GETTABLE 	2 0 -2	; "m_config"
+	21	[497]	GETTABLE 	2 2 -3	; "nonLoopAvenueRewards"
+	22	[497]	LEN      	2 2
+	23	[497]	SUB      	2 1 2
+	24	[497]	GETTABLE 	3 0 -2	; "m_config"
+	25	[497]	GETTABLE 	3 3 -6	; "loopAvenueRewards"
+	26	[497]	LEN      	3 3
+	27	[497]	MOD      	2 2 3
+	28	[498]	EQ       	0 2 -1	; - 0
+	29	[498]	JMP      	0 3	; to 33
+	30	[499]	GETTABLE 	3 0 -2	; "m_config"
+	31	[499]	GETTABLE 	3 3 -6	; "loopAvenueRewards"
+	32	[499]	LEN      	2 3
+	33	[501]	GETTABLE 	3 0 -2	; "m_config"
+	34	[501]	GETTABLE 	3 3 -6	; "loopAvenueRewards"
+	35	[501]	GETTABLE 	3 3 2
+	36	[501]	RETURN   	3 2
+	37	[503]	RETURN   	0 1
+constants (6) for 0000020E8D075450:
+	1	0
+	2	"m_config"
+	3	"nonLoopAvenueRewards"
+	4	"Table"
+	5	"IsEmpty"
+	6	"loopAvenueRewards"
+locals (3) for 0000020E8D075450:
+	0	self	1	38
+	1	level	1	38
+	2	loopIdx	28	37
+upvalues (1) for 0000020E8D075450:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:507,509> (8 instructions at 0000020E8D0754D0)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[508]	GETTABLE 	1 0 -1	; "m_config"
+	2	[508]	GETTABLE 	1 1 -2	; "nonLoopAvenueRewards"
+	3	[508]	GETTABLE 	2 0 -1	; "m_config"
+	4	[508]	GETTABLE 	2 2 -2	; "nonLoopAvenueRewards"
+	5	[508]	LEN      	2 2
+	6	[508]	GETTABLE 	1 1 2
+	7	[508]	RETURN   	1 2
+	8	[509]	RETURN   	0 1
+constants (2) for 0000020E8D0754D0:
+	1	"m_config"
+	2	"nonLoopAvenueRewards"
+locals (1) for 0000020E8D0754D0:
+	0	self	1	9
+upvalues (0) for 0000020E8D0754D0:
+
+function <AvenueModel.lua:511,513> (8 instructions at 0000020E8D075550)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[512]	GETTABLE 	2 0 -1	; "m_definition"
+	2	[512]	GETTABLE 	2 2 -2	; "ActivityTokenPropertyType"
+	3	[512]	EQ       	1 1 2
+	4	[512]	JMP      	0 1	; to 6
+	5	[512]	LOADBOOL 	2 0 1
+	6	[512]	LOADBOOL 	2 1 0
+	7	[512]	RETURN   	2 2
+	8	[513]	RETURN   	0 1
+constants (2) for 0000020E8D075550:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (2) for 0000020E8D075550:
+	0	self	1	9
+	1	propertyType	1	9
+upvalues (0) for 0000020E8D075550:
+
+function <AvenueModel.lua:515,517> (4 instructions at 0000020E8D074650)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[516]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[516]	GETTABLE 	1 1 -2	; "ActivityTokenPropertyType"
+	3	[516]	RETURN   	1 2
+	4	[517]	RETURN   	0 1
+constants (2) for 0000020E8D074650:
+	1	"m_definition"
+	2	"ActivityTokenPropertyType"
+locals (1) for 0000020E8D074650:
+	0	self	1	5
+upvalues (0) for 0000020E8D074650:
+
+function <AvenueModel.lua:519,533> (30 instructions at 0000020E8D07CFE0)
+1 param, 5 slots, 1 upvalue, 1 local, 19 constants, 2 functions
+	1	[520]	NEWTABLE 	1 0 9
+	2	[521]	SETTABLE 	1 -1 -2	; "Type" "avenue"
+	3	[522]	NEWTABLE 	2 2 0
+	4	[522]	GETTABLE 	3 0 -4	; "m_definition"
+	5	[522]	GETTABLE 	3 3 -5	; "StateChangedEvent"
+	6	[522]	GETTABLE 	4 0 -4	; "m_definition"
+	7	[522]	GETTABLE 	4 4 -6	; "ScoreChangedEvent"
+	8	[522]	SETLIST  	2 2 1	; 1
+	9	[522]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	10	[523]	GETTABUP 	2 0 -8	; _ENV "UIPrefabConfigName"
+	11	[523]	GETTABLE 	2 2 -9	; "HudActivityEntry"
+	12	[523]	SETTABLE 	1 -7 2	; "EntryPrefabConfigName" -
+	13	[524]	CLOSURE  	2 0	; 0000020E8D07D8E0
+	14	[524]	SETTABLE 	1 -10 2	; "CheckFunc" -
+	15	[525]	GETTABUP 	2 0 -12	; _ENV "EHudSideBarType"
+	16	[525]	GETTABLE 	2 2 -13	; "Left"
+	17	[525]	SETTABLE 	1 -11 2	; "HudSideBarType" -
+	18	[526]	GETTABLE 	2 0 -4	; "m_definition"
+	19	[526]	GETTABLE 	2 2 -14	; "EntryButtonKey"
+	20	[526]	SETTABLE 	1 -14 2	; "EntryButtonKey" -
+	21	[527]	GETTABLE 	2 0 -4	; "m_definition"
+	22	[527]	GETTABLE 	2 2 -15	; "EntryIconName"
+	23	[527]	SETTABLE 	1 -15 2	; "EntryIconName" -
+	24	[530]	CLOSURE  	2 1	; 0000020E8D07D5E0
+	25	[530]	SETTABLE 	1 -16 2	; "OnClickedFunc" -
+	26	[531]	GETTABUP 	2 0 -18	; _ENV "EntryRedPointType"
+	27	[531]	GETTABLE 	2 2 -19	; "None"
+	28	[531]	SETTABLE 	1 -17 2	; "RedPointType" -
+	29	[532]	RETURN   	1 2
+	30	[533]	RETURN   	0 1
+constants (19) for 0000020E8D07CFE0:
+	1	"Type"
+	2	"avenue"
+	3	"ArrCheckShowEvent"
+	4	"m_definition"
+	5	"StateChangedEvent"
+	6	"ScoreChangedEvent"
+	7	"EntryPrefabConfigName"
+	8	"UIPrefabConfigName"
+	9	"HudActivityEntry"
+	10	"CheckFunc"
+	11	"HudSideBarType"
+	12	"EHudSideBarType"
+	13	"Left"
+	14	"EntryButtonKey"
+	15	"EntryIconName"
+	16	"OnClickedFunc"
+	17	"RedPointType"
+	18	"EntryRedPointType"
+	19	"None"
+locals (1) for 0000020E8D07CFE0:
+	0	self	1	31
+upvalues (1) for 0000020E8D07CFE0:
+	0	_ENV	0	0
+
+function <AvenueModel.lua:524,524> (5 instructions at 0000020E8D07D8E0)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[524]	GETUPVAL 	0 0	; self
+	2	[524]	SELF     	0 0 -1	; "CanAddScore"
+	3	[524]	TAILCALL 	0 2 0
+	4	[524]	RETURN   	0 0
+	5	[524]	RETURN   	0 1
+constants (1) for 0000020E8D07D8E0:
+	1	"CanAddScore"
+locals (0) for 0000020E8D07D8E0:
+upvalues (1) for 0000020E8D07D8E0:
+	0	self	1	0
+
+function <AvenueModel.lua:528,530> (10 instructions at 0000020E8D07D5E0)
+0 params, 6 slots, 2 upvalues, 0 locals, 6 constants, 0 functions
+	1	[529]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[529]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[529]	SELF     	0 0 -3	; "OpenView"
+	4	[529]	GETTABUP 	2 1 -4	; self "m_definition"
+	5	[529]	GETTABLE 	2 2 -5	; "MainWindowPrefabName"
+	6	[529]	GETTABUP 	3 1 -6	; self "m_type"
+	7	[529]	LOADBOOL 	4 0 0
+	8	[529]	LOADBOOL 	5 0 0
+	9	[529]	CALL     	0 6 1
+	10	[530]	RETURN   	0 1
+constants (6) for 0000020E8D07D5E0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenView"
+	4	"m_definition"
+	5	"MainWindowPrefabName"
+	6	"m_type"
+locals (0) for 0000020E8D07D5E0:
+upvalues (2) for 0000020E8D07D5E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <AvenueModel.lua:535,549> (25 instructions at 0000020E8D07DF60)
+1 param, 5 slots, 0 upvalues, 1 local, 18 constants, 1 function
+	1	[536]	NEWTABLE 	1 0 8
+	2	[537]	NEWTABLE 	2 2 0
+	3	[538]	GETTABLE 	3 0 -2	; "m_definition"
+	4	[538]	GETTABLE 	3 3 -3	; "StateChangedEvent"
+	5	[539]	GETTABLE 	4 0 -2	; "m_definition"
+	6	[540]	GETTABLE 	4 4 -4	; "ScoreChangedEvent"
+	7	[540]	SETLIST  	2 2 1	; 1
+	8	[540]	SETTABLE 	1 -1 2	; "listeners" -
+	9	[541]	LOADK    	2 -6	; "m_"
+	10	[541]	GETTABLE 	3 0 -7	; "m_type"
+	11	[541]	LOADK    	4 -8	; "Bubble"
+	12	[541]	CONCAT   	2 2 4
+	13	[541]	SETTABLE 	1 -5 2	; "bubbleName" -
+	14	[542]	SETTABLE 	1 -9 -10	; "bubbleNodeName" "m_avenueEntryNode"
+	15	[543]	SETTABLE 	1 -11 -12	; "bubbleCountName" "m_avenueBubbleCount"
+	16	[544]	GETTABLE 	2 0 -2	; "m_definition"
+	17	[544]	GETTABLE 	2 2 -14	; "BoardEntryPrefabName"
+	18	[544]	SETTABLE 	1 -13 2	; "entryPrefabName" -
+	19	[545]	SETTABLE 	1 -15 -16	; "scrollToFunName" "ScrollToAvenueBoardEntry"
+	20	[546]	GETTABLE 	2 0 -7	; "m_type"
+	21	[546]	SETTABLE 	1 -17 2	; "activityType" -
+	22	[547]	CLOSURE  	2 0	; 0000020E8D07DE60
+	23	[547]	SETTABLE 	1 -18 2	; "checkFun" -
+	24	[548]	RETURN   	1 2
+	25	[549]	RETURN   	0 1
+constants (18) for 0000020E8D07DF60:
+	1	"listeners"
+	2	"m_definition"
+	3	"StateChangedEvent"
+	4	"ScoreChangedEvent"
+	5	"bubbleName"
+	6	"m_"
+	7	"m_type"
+	8	"Bubble"
+	9	"bubbleNodeName"
+	10	"m_avenueEntryNode"
+	11	"bubbleCountName"
+	12	"m_avenueBubbleCount"
+	13	"entryPrefabName"
+	14	"BoardEntryPrefabName"
+	15	"scrollToFunName"
+	16	"ScrollToAvenueBoardEntry"
+	17	"activityType"
+	18	"checkFun"
+locals (1) for 0000020E8D07DF60:
+	0	self	1	26
+upvalues (0) for 0000020E8D07DF60:
+
+function <AvenueModel.lua:547,547> (5 instructions at 0000020E8D07DE60)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[547]	GETUPVAL 	0 0	; self
+	2	[547]	SELF     	0 0 -1	; "CanAddScore"
+	3	[547]	TAILCALL 	0 2 0
+	4	[547]	RETURN   	0 0
+	5	[547]	RETURN   	0 1
+constants (1) for 0000020E8D07DE60:
+	1	"CanAddScore"
+locals (0) for 0000020E8D07DE60:
+upvalues (1) for 0000020E8D07DE60:
+	0	self	1	0
+
+function <AvenueModel.lua:551,553> (4 instructions at 0000020E8D07D7E0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[552]	GETTABLE 	1 0 -1	; "m_definition"
+	2	[552]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[552]	RETURN   	1 2
+	4	[553]	RETURN   	0 1
+constants (2) for 0000020E8D07D7E0:
+	1	"m_definition"
+	2	"ResourceLabels"
+locals (1) for 0000020E8D07D7E0:
+	0	self	1	5
+upvalues (0) for 0000020E8D07D7E0:
+
+function <AvenueModel.lua:555,557> (7 instructions at 0000020E8D07D560)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[556]	SELF     	2 0 -1	; "_AddScore"
+	2	[556]	MOVE     	4 1
+	3	[556]	GETTABUP 	5 0 -2	; _ENV "AvenueAddScoreScene"
+	4	[556]	GETTABLE 	5 5 -3	; "shop"
+	5	[556]	LOADNIL  	6 0
+	6	[556]	CALL     	2 5 1
+	7	[557]	RETURN   	0 1
+constants (3) for 0000020E8D07D560:
+	1	"_AddScore"
+	2	"AvenueAddScoreScene"
+	3	"shop"
+locals (2) for 0000020E8D07D560:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000020E8D07D560:
+	0	_ENV	0	0

@@ -1,0 +1,76 @@
+{
+  "ChestCustomerAvatars": {
+    "1004": "ChestRaccoon4",
+    "1001": "ChestRaccoon1",
+    "1002": "ChestRaccoon2",
+    "1003": "ChestRaccoon3"
+  },
+  "NormalAvatars": [
+    {
+      "Avatar": "Lily",
+      "UnlockLevel": 2,
+      "Id": 1
+    },
+    {
+      "Avatar": "Lucy",
+      "UnlockLevel": 5,
+      "Id": 2
+    },
+    {
+      "Id": 3,
+      "Avatar": "Harry"
+    },
+    {
+      "Avatar": "Mark",
+      "UnlockLevel": 3,
+      "Id": 4
+    },
+    {
+      "Avatar": "Norman",
+      "UnlockLevel": 4,
+      "Id": 5
+    },
+    {
+      "Avatar": "Olivia",
+      "UnlockLevel": 999,
+      "Id": 6
+    },
+    {
+      "Id": 7,
+      "Avatar": "Amala"
+    },
+    {
+      "Id": 8,
+      "Avatar": "Karla"
+    }
+  ],
+  "TimedOrderAvatars": {
+    "802": "Banana",
+    "801": "Raccoon2"
+  },
+  "SpecialAvatars": {
+    "104": "Carmen",
+    "105": "Olivia",
+    "106": "Coconut",
+    "101": "Sam",
+    "102": "Olivia",
+    "103": "Harrison"
+  },
+  "CharacterIntimacyAvatars": {
+    "601": "Gerald"
+  },
+  "BranchAvatars": {
+    "401": "Quinn"
+  },
+  "ExtraCustomerAvatars": {
+    "3001": "panda"
+  },
+  "BakeOutAvatars": {
+    "201": "Colby",
+    "202": "Poppy",
+    "203": "Ruben"
+  },
+  "ContiorderAvatars": {
+    "2001": "contiorders"
+  }
+}

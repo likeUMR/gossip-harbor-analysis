@@ -1,0 +1,786 @@
+
+main <TutorialOrderModel.lua:0,0> (53 instructions at 000001ADF327F000)
+0+ params, 4 slots, 1 upvalue, 2 locals, 23 constants, 14 functions
+	1	[14]	NEWTABLE 	0 0 0
+	2	[14]	SETTABUP 	0 -1 0	; _ENV "TutorialOrderModel"
+	3	[15]	GETTABUP 	0 0 -1	; _ENV "TutorialOrderModel"
+	4	[15]	GETTABUP 	1 0 -1	; _ENV "TutorialOrderModel"
+	5	[15]	SETTABLE 	0 -2 1	; "__index" -
+	6	[18]	NEWTABLE 	0 0 1
+	7	[20]	SETTABLE 	0 -3 -4	; "CurTutorialID" "TutorialOrderModel_CurTutorialID"
+	8	[23]	NEWTABLE 	1 0 2
+	9	[25]	SETTABLE 	1 -5 -6	; "Ready" "1"
+	10	[26]	SETTABLE 	1 -7 -8	; "Doing" "2"
+	11	[29]	GETTABUP 	2 0 -1	; _ENV "TutorialOrderModel"
+	12	[33]	CLOSURE  	3 0	; 000001ADF327F390
+	13	[29]	SETTABLE 	2 -9 3	; "Create" -
+	14	[35]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	15	[41]	CLOSURE  	3 1	; 000001ADF32818C0
+	16	[35]	SETTABLE 	2 -11 3	; "Init" -
+	17	[43]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	18	[45]	CLOSURE  	3 2	; 000001ADF3281940
+	19	[43]	SETTABLE 	2 -12 3	; "OnSyncDataFinished" -
+	20	[47]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	21	[62]	CLOSURE  	3 3	; 000001ADF3281A30
+	22	[47]	SETTABLE 	2 -13 3	; "LateInit" -
+	23	[64]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	24	[82]	CLOSURE  	3 4	; 000001ADF3282520
+	25	[64]	SETTABLE 	2 -14 3	; "OnOrderFinished" -
+	26	[84]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	27	[105]	CLOSURE  	3 5	; 000001ADF32827B0
+	28	[84]	SETTABLE 	2 -15 3	; "OnItemMerged" -
+	29	[107]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	30	[143]	CLOSURE  	3 6	; 000001ADF3282B60
+	31	[107]	SETTABLE 	2 -16 3	; "CanCreate" -
+	32	[145]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	33	[163]	CLOSURE  	3 7	; 000001ADF3282FF0
+	34	[145]	SETTABLE 	2 -17 3	; "CreateOrder" -
+	35	[165]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	36	[175]	CLOSURE  	3 8	; 000001ADF3283D00
+	37	[165]	SETTABLE 	2 -18 3	; "GetCurOrderAndState" -
+	38	[178]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	39	[181]	CLOSURE  	3 9	; 000001ADF3284A00
+	40	[178]	SETTABLE 	2 -19 3	; "SetCurOrderAndState" -
+	41	[184]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	42	[192]	CLOSURE  	3 10	; 000001ADF3284A80
+	43	[184]	SETTABLE 	2 -20 3	; "GetTutorialInfoById" -
+	44	[196]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	45	[235]	CLOSURE  	3 11	; 000001ADF3284080
+	46	[196]	SETTABLE 	2 -21 3	; "IsForceTutorial" -
+	47	[237]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	48	[242]	CLOSURE  	3 12	; 000001ADF3284680
+	49	[237]	SETTABLE 	2 -22 3	; "IsPlaySeafoodTutorial2" -
+	50	[244]	GETTABUP 	2 0 -10	; _ENV "TutorialOrderModel"
+	51	[246]	CLOSURE  	3 13	; 000001ADF3283E80
+	52	[244]	SETTABLE 	2 -23 3	; "PopPlaySeafoodTutorial2" -
+	53	[246]	RETURN   	0 1
+constants (23) for 000001ADF327F000:
+	1	"TutorialOrderModel"
+	2	"__index"
+	3	"CurTutorialID"
+	4	"TutorialOrderModel_CurTutorialID"
+	5	"Ready"
+	6	"1"
+	7	"Doing"
+	8	"2"
+	9	"Create"
+	10	"TutorialOrderModel"
+	11	"Init"
+	12	"OnSyncDataFinished"
+	13	"LateInit"
+	14	"OnOrderFinished"
+	15	"OnItemMerged"
+	16	"CanCreate"
+	17	"CreateOrder"
+	18	"GetCurOrderAndState"
+	19	"SetCurOrderAndState"
+	20	"GetTutorialInfoById"
+	21	"IsForceTutorial"
+	22	"IsPlaySeafoodTutorial2"
+	23	"PopPlaySeafoodTutorial2"
+locals (2) for 000001ADF327F000:
+	0	strDBKeys	8	54
+	1	tutorialOrderState	11	54
+upvalues (1) for 000001ADF327F000:
+	0	_ENV	1	0
+
+function <TutorialOrderModel.lua:29,33> (10 instructions at 000001ADF327F390)
+2 params, 7 slots, 1 upvalue, 3 locals, 3 constants, 0 functions
+	1	[30]	GETTABUP 	2 0 -1	; _ENV "setmetatable"
+	2	[30]	NEWTABLE 	3 0 0
+	3	[30]	GETTABUP 	4 0 -2	; _ENV "TutorialOrderModel"
+	4	[30]	CALL     	2 3 2
+	5	[31]	SELF     	3 2 -3	; "Init"
+	6	[31]	MOVE     	5 0
+	7	[31]	MOVE     	6 1
+	8	[31]	CALL     	3 4 1
+	9	[32]	RETURN   	2 2
+	10	[33]	RETURN   	0 1
+constants (3) for 000001ADF327F390:
+	1	"setmetatable"
+	2	"TutorialOrderModel"
+	3	"Init"
+locals (3) for 000001ADF327F390:
+	0	orderModel	1	11
+	1	dbMetaTable	1	11
+	2	ele	5	11
+upvalues (1) for 000001ADF327F390:
+	0	_ENV	0	0
+
+function <TutorialOrderModel.lua:35,41> (3 instructions at 000001ADF32818C0)
+3 params, 3 slots, 0 upvalues, 3 locals, 2 constants, 0 functions
+	1	[37]	SETTABLE 	0 -1 1	; "m_orderModel" -
+	2	[40]	SETTABLE 	0 -2 2	; "m_dbTable" -
+	3	[41]	RETURN   	0 1
+constants (2) for 000001ADF32818C0:
+	1	"m_orderModel"
+	2	"m_dbTable"
+locals (3) for 000001ADF32818C0:
+	0	self	1	4
+	1	orderModel	1	4
+	2	dbMetaTable	1	4
+upvalues (0) for 000001ADF32818C0:
+
+function <TutorialOrderModel.lua:43,45> (8 instructions at 000001ADF3281940)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[44]	GETTABUP 	1 0 -2	; _ENV "GM"
+	2	[44]	GETTABLE 	1 1 -3	; "ConfigModel"
+	3	[44]	SELF     	1 1 -4	; "GetLocalConfig"
+	4	[44]	GETTABUP 	3 0 -5	; _ENV "LocalConfigKey"
+	5	[44]	GETTABLE 	3 3 -6	; "TutoriaiOrderConfig"
+	6	[44]	CALL     	1 3 2
+	7	[44]	SETTABLE 	0 -1 1	; "m_tutorialOrderConfig" -
+	8	[45]	RETURN   	0 1
+constants (6) for 000001ADF3281940:
+	1	"m_tutorialOrderConfig"
+	2	"GM"
+	3	"ConfigModel"
+	4	"GetLocalConfig"
+	5	"LocalConfigKey"
+	6	"TutoriaiOrderConfig"
+locals (1) for 000001ADF3281940:
+	0	self	1	9
+upvalues (1) for 000001ADF3281940:
+	0	_ENV	0	0
+
+function <TutorialOrderModel.lua:47,62> (36 instructions at 000001ADF3281A30)
+1 param, 9 slots, 2 upvalues, 5 locals, 17 constants, 0 functions
+	1	[49]	SELF     	1 0 -1	; "GetCurOrderAndState"
+	2	[49]	CALL     	1 2 3
+	3	[50]	SELF     	3 0 -2	; "GetTutorialInfoById"
+	4	[50]	MOVE     	5 1
+	5	[50]	CALL     	3 3 2
+	6	[52]	GETTABUP 	4 0 -3	; tutorialOrderState "Doing"
+	7	[52]	EQ       	0 2 4
+	8	[52]	JMP      	0 13	; to 22
+	9	[52]	EQ       	1 3 -4	; - nil
+	10	[52]	JMP      	0 11	; to 22
+	11	[53]	GETTABLE 	4 0 -5	; "m_orderModel"
+	12	[53]	SELF     	4 4 -6	; "GetOrders"
+	13	[53]	CALL     	4 2 2
+	14	[53]	GETTABLE 	5 3 -7	; "Slot"
+	15	[53]	GETTABLE 	4 4 5
+	16	[54]	EQ       	0 4 -4	; - nil
+	17	[54]	JMP      	0 4	; to 22
+	18	[56]	SELF     	5 0 -8	; "SetCurOrderAndState"
+	19	[56]	ADD      	7 1 -9	; - 1
+	20	[56]	GETTABUP 	8 0 -10	; tutorialOrderState "Ready"
+	21	[56]	CALL     	5 4 1
+	22	[60]	GETTABUP 	4 1 -11	; _ENV "EventDispatcher"
+	23	[60]	GETTABLE 	4 4 -12	; "AddListener"
+	24	[60]	GETTABUP 	5 1 -13	; _ENV "EEventType"
+	25	[60]	GETTABLE 	5 5 -14	; "OrderFinished"
+	26	[60]	MOVE     	6 0
+	27	[60]	GETTABLE 	7 0 -15	; "OnOrderFinished"
+	28	[60]	CALL     	4 4 1
+	29	[61]	GETTABUP 	4 1 -11	; _ENV "EventDispatcher"
+	30	[61]	GETTABLE 	4 4 -12	; "AddListener"
+	31	[61]	GETTABUP 	5 1 -13	; _ENV "EEventType"
+	32	[61]	GETTABLE 	5 5 -16	; "ItemMerged"
+	33	[61]	MOVE     	6 0
+	34	[61]	GETTABLE 	7 0 -17	; "OnItemMerged"
+	35	[61]	CALL     	4 4 1
+	36	[62]	RETURN   	0 1
+constants (17) for 000001ADF3281A30:
+	1	"GetCurOrderAndState"
+	2	"GetTutorialInfoById"
+	3	"Doing"
+	4	nil
+	5	"m_orderModel"
+	6	"GetOrders"
+	7	"Slot"
+	8	"SetCurOrderAndState"
+	9	1
+	10	"Ready"
+	11	"EventDispatcher"
+	12	"AddListener"
+	13	"EEventType"
+	14	"OrderFinished"
+	15	"OnOrderFinished"
+	16	"ItemMerged"
+	17	"OnItemMerged"
+locals (5) for 000001ADF3281A30:
+	0	self	1	37
+	1	tutorialID	3	37
+	2	state	3	37
+	3	tutorialInfo	6	37
+	4	order	16	22
+upvalues (2) for 000001ADF3281A30:
+	0	tutorialOrderState	1	1
+	1	_ENV	0	0
+
+function <TutorialOrderModel.lua:64,82> (23 instructions at 000001ADF3282520)
+2 params, 11 slots, 1 upvalue, 7 locals, 10 constants, 0 functions
+	1	[65]	GETTABLE 	2 1 -1	; "order"
+	2	[66]	SELF     	3 2 -2	; "GetSlot"
+	3	[66]	CALL     	3 2 2
+	4	[68]	SELF     	4 0 -3	; "GetCurOrderAndState"
+	5	[68]	CALL     	4 2 3
+	6	[69]	SELF     	6 0 -4	; "GetTutorialInfoById"
+	7	[69]	MOVE     	8 4
+	8	[69]	CALL     	6 3 2
+	9	[71]	EQ       	0 6 -5	; - nil
+	10	[71]	JMP      	0 1	; to 12
+	11	[72]	RETURN   	0 1
+	12	[75]	GETTABLE 	7 6 -6	; "Slot"
+	13	[75]	EQ       	1 7 3
+	14	[75]	JMP      	0 1	; to 16
+	15	[76]	RETURN   	0 1
+	16	[79]	GETTABUP 	7 0 -7	; tutorialOrderState "Doing"
+	17	[79]	EQ       	0 5 7
+	18	[79]	JMP      	0 4	; to 23
+	19	[80]	SELF     	7 0 -8	; "SetCurOrderAndState"
+	20	[80]	ADD      	9 4 -9	; - 1
+	21	[80]	GETTABUP 	10 0 -10	; tutorialOrderState "Ready"
+	22	[80]	CALL     	7 4 1
+	23	[82]	RETURN   	0 1
+constants (10) for 000001ADF3282520:
+	1	"order"
+	2	"GetSlot"
+	3	"GetCurOrderAndState"
+	4	"GetTutorialInfoById"
+	5	nil
+	6	"Slot"
+	7	"Doing"
+	8	"SetCurOrderAndState"
+	9	1
+	10	"Ready"
+locals (7) for 000001ADF3282520:
+	0	self	1	24
+	1	message	1	24
+	2	order	2	24
+	3	slot	4	24
+	4	tutorialID	6	24
+	5	state	6	24
+	6	tutorialInfo	9	24
+upvalues (1) for 000001ADF3282520:
+	0	tutorialOrderState	1	1
+
+function <TutorialOrderModel.lua:84,105> (40 instructions at 000001ADF32827B0)
+2 params, 9 slots, 2 upvalues, 6 locals, 21 constants, 0 functions
+	1	[85]	GETTABLE 	2 1 -1	; "New"
+	2	[86]	SELF     	3 0 -2	; "GetCurOrderAndState"
+	3	[86]	CALL     	3 2 3
+	4	[87]	SELF     	5 0 -3	; "GetTutorialInfoById"
+	5	[87]	MOVE     	7 3
+	6	[87]	CALL     	5 3 2
+	7	[89]	EQ       	0 5 -4	; - nil
+	8	[89]	JMP      	0 1	; to 10
+	9	[90]	RETURN   	0 1
+	10	[93]	GETTABUP 	6 0 -5	; tutorialOrderState "Doing"
+	11	[93]	EQ       	1 4 6
+	12	[93]	JMP      	0 1	; to 14
+	13	[94]	RETURN   	0 1
+	14	[97]	GETTABLE 	6 5 -6	; "UnlockItem"
+	15	[97]	GETTABUP 	7 1 -7	; _ENV "ItemType"
+	16	[97]	GETTABLE 	7 7 -8	; "Fishing05"
+	17	[97]	EQ       	1 6 7
+	18	[97]	JMP      	0 1	; to 20
+	19	[98]	RETURN   	0 1
+	20	[101]	GETTABUP 	6 1 -9	; _ENV "GM"
+	21	[101]	GETTABLE 	6 6 -10	; "TutorialModel"
+	22	[101]	SELF     	6 6 -11	; "IsTutorialFinished"
+	23	[101]	GETTABUP 	8 1 -12	; _ENV "ETutorialId"
+	24	[101]	GETTABLE 	8 8 -13	; "SeaFoodUnlockTutorial2"
+	25	[101]	CALL     	6 3 2
+	26	[101]	TEST     	6 1
+	27	[101]	JMP      	0 12	; to 40
+	28	[101]	SELF     	6 2 -14	; "GetType"
+	29	[101]	CALL     	6 2 2
+	30	[101]	GETTABUP 	7 1 -7	; _ENV "ItemType"
+	31	[101]	GETTABLE 	7 7 -15	; "RawFish05"
+	32	[101]	EQ       	0 6 7
+	33	[101]	JMP      	0 6	; to 40
+	34	[102]	SETTABLE 	0 -16 -17	; "m_startSeafoodTutorial2" true
+	35	[103]	GETTABUP 	6 1 -18	; _ENV "EventDispatcher"
+	36	[103]	GETTABLE 	6 6 -19	; "DispatchEvent"
+	37	[103]	GETTABUP 	7 1 -20	; _ENV "EEventType"
+	38	[103]	GETTABLE 	7 7 -21	; "TutorialStartPop"
+	39	[103]	CALL     	6 2 1
+	40	[105]	RETURN   	0 1
+constants (21) for 000001ADF32827B0:
+	1	"New"
+	2	"GetCurOrderAndState"
+	3	"GetTutorialInfoById"
+	4	nil
+	5	"Doing"
+	6	"UnlockItem"
+	7	"ItemType"
+	8	"Fishing05"
+	9	"GM"
+	10	"TutorialModel"
+	11	"IsTutorialFinished"
+	12	"ETutorialId"
+	13	"SeaFoodUnlockTutorial2"
+	14	"GetType"
+	15	"RawFish05"
+	16	"m_startSeafoodTutorial2"
+	17	true
+	18	"EventDispatcher"
+	19	"DispatchEvent"
+	20	"EEventType"
+	21	"TutorialStartPop"
+locals (6) for 000001ADF32827B0:
+	0	self	1	41
+	1	message	1	41
+	2	newItem	2	41
+	3	tutorialID	4	41
+	4	state	4	41
+	5	tutorialInfo	7	41
+upvalues (2) for 000001ADF32827B0:
+	0	tutorialOrderState	1	1
+	1	_ENV	0	0
+
+function <TutorialOrderModel.lua:107,143> (67 instructions at 000001ADF3282B60)
+2 params, 10 slots, 2 upvalues, 7 locals, 20 constants, 0 functions
+	1	[108]	SELF     	2 0 -1	; "GetCurOrderAndState"
+	2	[108]	CALL     	2 2 3
+	3	[109]	SELF     	4 0 -2	; "GetTutorialInfoById"
+	4	[109]	MOVE     	6 2
+	5	[109]	CALL     	4 3 2
+	6	[111]	EQ       	0 4 -3	; - nil
+	7	[111]	JMP      	0 2	; to 10
+	8	[112]	LOADBOOL 	5 0 0
+	9	[112]	RETURN   	5 2
+	10	[115]	GETTABLE 	5 4 -4	; "Slot"
+	11	[115]	EQ       	1 5 1
+	12	[115]	JMP      	0 2	; to 15
+	13	[116]	LOADBOOL 	5 0 0
+	14	[116]	RETURN   	5 2
+	15	[119]	GETTABUP 	5 0 -5	; tutorialOrderState "Ready"
+	16	[119]	EQ       	1 3 5
+	17	[119]	JMP      	0 2	; to 20
+	18	[120]	LOADBOOL 	5 0 0
+	19	[120]	RETURN   	5 2
+	20	[124]	GETTABLE 	5 4 -6	; "SkipItem"
+	21	[127]	EQ       	1 5 -3	; - nil
+	22	[127]	JMP      	0 32	; to 55
+	23	[127]	GETTABUP 	6 1 -7	; _ENV "GM"
+	24	[127]	GETTABLE 	6 6 -8	; "ItemDataModel"
+	25	[127]	SELF     	6 6 -9	; "IsUnlocked"
+	26	[127]	MOVE     	8 5
+	27	[127]	CALL     	6 3 2
+	28	[127]	TEST     	6 0
+	29	[127]	JMP      	0 25	; to 55
+	30	[128]	GETTABLE 	6 4 -10	; "UnlockItem"
+	31	[128]	GETTABUP 	7 1 -11	; _ENV "ItemType"
+	32	[128]	GETTABLE 	7 7 -12	; "Fishing05"
+	33	[128]	EQ       	0 6 7
+	34	[128]	JMP      	0 12	; to 47
+	35	[129]	GETTABUP 	6 1 -7	; _ENV "GM"
+	36	[129]	GETTABLE 	6 6 -13	; "TutorialModel"
+	37	[129]	SELF     	6 6 -14	; "SetTutorialFinished"
+	38	[129]	GETTABUP 	8 1 -15	; _ENV "ETutorialId"
+	39	[129]	GETTABLE 	8 8 -16	; "SeaFoodUnlcokTutorial"
+	40	[129]	CALL     	6 3 1
+	41	[130]	GETTABUP 	6 1 -7	; _ENV "GM"
+	42	[130]	GETTABLE 	6 6 -13	; "TutorialModel"
+	43	[130]	SELF     	6 6 -14	; "SetTutorialFinished"
+	44	[130]	GETTABUP 	8 1 -15	; _ENV "ETutorialId"
+	45	[130]	GETTABLE 	8 8 -17	; "SeaFoodUnlockTutorial2"
+	46	[130]	CALL     	6 3 1
+	47	[133]	SELF     	6 0 -18	; "SetCurOrderAndState"
+	48	[133]	ADD      	8 2 -19	; - 1
+	49	[133]	GETTABUP 	9 0 -5	; tutorialOrderState "Ready"
+	50	[133]	CALL     	6 4 1
+	51	[134]	SELF     	6 0 -20	; "CanCreate"
+	52	[134]	MOVE     	8 1
+	53	[134]	TAILCALL 	6 3 0
+	54	[134]	RETURN   	6 0
+	55	[138]	GETTABLE 	6 4 -10	; "UnlockItem"
+	56	[139]	GETTABUP 	7 1 -7	; _ENV "GM"
+	57	[139]	GETTABLE 	7 7 -8	; "ItemDataModel"
+	58	[139]	SELF     	7 7 -9	; "IsUnlocked"
+	59	[139]	MOVE     	9 6
+	60	[139]	CALL     	7 3 2
+	61	[139]	TEST     	7 1
+	62	[139]	JMP      	0 2	; to 65
+	63	[140]	LOADBOOL 	7 0 0
+	64	[140]	RETURN   	7 2
+	65	[142]	LOADBOOL 	7 1 0
+	66	[142]	RETURN   	7 2
+	67	[143]	RETURN   	0 1
+constants (20) for 000001ADF3282B60:
+	1	"GetCurOrderAndState"
+	2	"GetTutorialInfoById"
+	3	nil
+	4	"Slot"
+	5	"Ready"
+	6	"SkipItem"
+	7	"GM"
+	8	"ItemDataModel"
+	9	"IsUnlocked"
+	10	"UnlockItem"
+	11	"ItemType"
+	12	"Fishing05"
+	13	"TutorialModel"
+	14	"SetTutorialFinished"
+	15	"ETutorialId"
+	16	"SeaFoodUnlcokTutorial"
+	17	"SeaFoodUnlockTutorial2"
+	18	"SetCurOrderAndState"
+	19	1
+	20	"CanCreate"
+locals (7) for 000001ADF3282B60:
+	0	self	1	68
+	1	slot	1	68
+	2	tutorialID	3	68
+	3	state	3	68
+	4	tutorialInfo	6	68
+	5	skipItem	21	68
+	6	unlockItem	56	68
+upvalues (2) for 000001ADF3282B60:
+	0	tutorialOrderState	1	1
+	1	_ENV	0	0
+
+function <TutorialOrderModel.lua:145,163> (49 instructions at 000001ADF3282FF0)
+2 params, 14 slots, 2 upvalues, 7 locals, 16 constants, 0 functions
+	1	[146]	SELF     	2 0 -1	; "GetCurOrderAndState"
+	2	[146]	CALL     	2 2 3
+	3	[147]	SELF     	4 0 -2	; "GetTutorialInfoById"
+	4	[147]	MOVE     	6 2
+	5	[147]	CALL     	4 3 2
+	6	[149]	GETTABLE 	5 0 -3	; "m_orderModel"
+	7	[149]	SELF     	5 5 -4	; "GetAvatarId"
+	8	[149]	CALL     	5 2 2
+	9	[150]	NEWTABLE 	6 0 0
+	10	[151]	GETTABLE 	7 4 -5	; "Requirement1"
+	11	[151]	EQ       	1 7 -6	; - nil
+	12	[151]	JMP      	0 5	; to 18
+	13	[152]	GETTABUP 	7 0 -7	; _ENV "table"
+	14	[152]	GETTABLE 	7 7 -8	; "insert"
+	15	[152]	MOVE     	8 6
+	16	[152]	GETTABLE 	9 4 -5	; "Requirement1"
+	17	[152]	CALL     	7 3 1
+	18	[154]	GETTABLE 	7 4 -9	; "Requirement2"
+	19	[154]	EQ       	1 7 -6	; - nil
+	20	[154]	JMP      	0 5	; to 26
+	21	[155]	GETTABUP 	7 0 -7	; _ENV "table"
+	22	[155]	GETTABLE 	7 7 -8	; "insert"
+	23	[155]	MOVE     	8 6
+	24	[155]	GETTABLE 	9 4 -9	; "Requirement2"
+	25	[155]	CALL     	7 3 1
+	26	[157]	GETTABLE 	7 4 -10	; "Requirement3"
+	27	[157]	EQ       	1 7 -6	; - nil
+	28	[157]	JMP      	0 5	; to 34
+	29	[158]	GETTABUP 	7 0 -7	; _ENV "table"
+	30	[158]	GETTABLE 	7 7 -8	; "insert"
+	31	[158]	MOVE     	8 6
+	32	[158]	GETTABLE 	9 4 -10	; "Requirement3"
+	33	[158]	CALL     	7 3 1
+	34	[161]	SELF     	7 0 -11	; "SetCurOrderAndState"
+	35	[161]	MOVE     	9 2
+	36	[161]	GETTABUP 	10 1 -12	; tutorialOrderState "Doing"
+	37	[161]	CALL     	7 4 1
+	38	[162]	GETTABUP 	7 0 -13	; _ENV "MainOrder"
+	39	[162]	GETTABLE 	7 7 -14	; "Create"
+	40	[162]	GETTABLE 	8 0 -3	; "m_orderModel"
+	41	[162]	MOVE     	9 1
+	42	[162]	MOVE     	10 2
+	43	[162]	MOVE     	11 6
+	44	[162]	GETTABUP 	12 0 -15	; _ENV "MainOrderType"
+	45	[162]	GETTABLE 	12 12 -16	; "TutorialOrder"
+	46	[162]	MOVE     	13 5
+	47	[162]	TAILCALL 	7 7 0
+	48	[162]	RETURN   	7 0
+	49	[163]	RETURN   	0 1
+constants (16) for 000001ADF3282FF0:
+	1	"GetCurOrderAndState"
+	2	"GetTutorialInfoById"
+	3	"m_orderModel"
+	4	"GetAvatarId"
+	5	"Requirement1"
+	6	nil
+	7	"table"
+	8	"insert"
+	9	"Requirement2"
+	10	"Requirement3"
+	11	"SetCurOrderAndState"
+	12	"Doing"
+	13	"MainOrder"
+	14	"Create"
+	15	"MainOrderType"
+	16	"TutorialOrder"
+locals (7) for 000001ADF3282FF0:
+	0	self	1	50
+	1	slot	1	50
+	2	tutorialID	3	50
+	3	state	3	50
+	4	tutorialInfo	6	50
+	5	avatarId	9	50
+	6	requirements	10	50
+upvalues (2) for 000001ADF3282FF0:
+	0	_ENV	0	0
+	1	tutorialOrderState	1	1
+
+function <TutorialOrderModel.lua:165,175> (23 instructions at 000001ADF3283D00)
+1 param, 7 slots, 2 upvalues, 5 locals, 13 constants, 0 functions
+	1	[166]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[166]	SELF     	1 1 -2	; "GetValue"
+	3	[166]	GETTABUP 	3 0 -3	; strDBKeys "CurTutorialID"
+	4	[166]	LOADK    	4 -4	; "value"
+	5	[166]	CALL     	1 4 2
+	6	[167]	EQ       	1 1 -5	; - ""
+	7	[167]	JMP      	0 2	; to 10
+	8	[167]	EQ       	0 1 -6	; - nil
+	9	[167]	JMP      	0 1	; to 11
+	10	[168]	LOADK    	1 -7	; "1_1"
+	11	[171]	GETTABUP 	2 1 -8	; _ENV "StringUtil"
+	12	[171]	GETTABLE 	2 2 -9	; "Split"
+	13	[171]	MOVE     	3 1
+	14	[171]	LOADK    	4 -10	; "_"
+	15	[171]	CALL     	2 3 2
+	16	[172]	GETTABUP 	3 1 -11	; _ENV "tonumber"
+	17	[172]	GETTABLE 	4 2 -12	; 1
+	18	[172]	CALL     	3 2 2
+	19	[173]	GETTABLE 	4 2 -13	; 2
+	20	[174]	MOVE     	5 3
+	21	[174]	MOVE     	6 4
+	22	[174]	RETURN   	5 3
+	23	[175]	RETURN   	0 1
+constants (13) for 000001ADF3283D00:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurTutorialID"
+	4	"value"
+	5	""
+	6	nil
+	7	"1_1"
+	8	"StringUtil"
+	9	"Split"
+	10	"_"
+	11	"tonumber"
+	12	1
+	13	2
+locals (5) for 000001ADF3283D00:
+	0	self	1	24
+	1	str	6	24
+	2	arr	16	24
+	3	tutorialID	19	24
+	4	state	20	24
+upvalues (2) for 000001ADF3283D00:
+	0	strDBKeys	1	0
+	1	_ENV	0	0
+
+function <TutorialOrderModel.lua:178,181> (13 instructions at 000001ADF3284A00)
+3 params, 9 slots, 2 upvalues, 4 locals, 6 constants, 0 functions
+	1	[179]	GETTABUP 	3 0 -1	; _ENV "tostring"
+	2	[179]	MOVE     	4 1
+	3	[179]	CALL     	3 2 2
+	4	[179]	LOADK    	4 -2	; "_"
+	5	[179]	MOVE     	5 2
+	6	[179]	CONCAT   	3 3 5
+	7	[180]	GETTABLE 	4 0 -3	; "m_dbTable"
+	8	[180]	SELF     	4 4 -4	; "Set"
+	9	[180]	GETTABUP 	6 1 -5	; strDBKeys "CurTutorialID"
+	10	[180]	LOADK    	7 -6	; "value"
+	11	[180]	MOVE     	8 3
+	12	[180]	CALL     	4 5 1
+	13	[181]	RETURN   	0 1
+constants (6) for 000001ADF3284A00:
+	1	"tostring"
+	2	"_"
+	3	"m_dbTable"
+	4	"Set"
+	5	"CurTutorialID"
+	6	"value"
+locals (4) for 000001ADF3284A00:
+	0	self	1	14
+	1	tutorialID	1	14
+	2	state	1	14
+	3	saveStr	7	14
+upvalues (2) for 000001ADF3284A00:
+	0	_ENV	0	0
+	1	strDBKeys	1	0
+
+function <TutorialOrderModel.lua:184,192> (13 instructions at 000001ADF3284A80)
+2 params, 8 slots, 1 upvalue, 7 locals, 3 constants, 0 functions
+	1	[185]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	2	[185]	GETTABLE 	3 0 -2	; "m_tutorialOrderConfig"
+	3	[185]	CALL     	2 2 4
+	4	[185]	JMP      	0 4	; to 9
+	5	[186]	GETTABLE 	7 6 -3	; "id"
+	6	[186]	EQ       	0 7 1
+	7	[186]	JMP      	0 1	; to 9
+	8	[187]	RETURN   	6 2
+	9	[185]	TFORCALL 	2 2
+	10	[185]	TFORLOOP 	4 -6	; to 5
+	11	[190]	LOADNIL  	2 0
+	12	[190]	RETURN   	2 2
+	13	[192]	RETURN   	0 1
+constants (3) for 000001ADF3284A80:
+	1	"pairs"
+	2	"m_tutorialOrderConfig"
+	3	"id"
+locals (7) for 000001ADF3284A80:
+	0	self	1	14
+	1	id	1	14
+	2	(for generator)	4	11
+	3	(for state)	4	11
+	4	(for control)	4	11
+	5	_	5	9
+	6	info	5	9
+upvalues (1) for 000001ADF3284A80:
+	0	_ENV	0	0
+
+function <TutorialOrderModel.lua:196,235> (79 instructions at 000001ADF3284080)
+1 param, 14 slots, 2 upvalues, 12 locals, 25 constants, 0 functions
+	1	[197]	SELF     	1 0 -1	; "GetCurOrderAndState"
+	2	[197]	CALL     	1 2 3
+	3	[198]	SELF     	3 0 -2	; "GetTutorialInfoById"
+	4	[198]	MOVE     	5 1
+	5	[198]	CALL     	3 3 2
+	6	[200]	EQ       	0 3 -3	; - nil
+	7	[200]	JMP      	0 2	; to 10
+	8	[201]	LOADBOOL 	4 0 0
+	9	[201]	RETURN   	4 2
+	10	[204]	GETTABUP 	4 0 -4	; tutorialOrderState "Doing"
+	11	[204]	EQ       	1 2 4
+	12	[204]	JMP      	0 2	; to 15
+	13	[205]	LOADBOOL 	4 0 0
+	14	[205]	RETURN   	4 2
+	15	[208]	GETTABLE 	4 3 -5	; "UnlockItem"
+	16	[208]	GETTABUP 	5 1 -6	; _ENV "ItemType"
+	17	[208]	GETTABLE 	5 5 -7	; "Fishing05"
+	18	[208]	EQ       	1 4 5
+	19	[208]	JMP      	0 2	; to 22
+	20	[209]	LOADBOOL 	4 0 0
+	21	[209]	RETURN   	4 2
+	22	[212]	GETTABUP 	4 1 -8	; _ENV "GM"
+	23	[212]	GETTABLE 	4 4 -9	; "TutorialModel"
+	24	[212]	SELF     	4 4 -10	; "IsTutorialFinished"
+	25	[212]	GETTABUP 	6 1 -11	; _ENV "ETutorialId"
+	26	[212]	GETTABLE 	6 6 -12	; "SeaFoodUnlcokTutorial"
+	27	[212]	CALL     	4 3 2
+	28	[212]	TEST     	4 0
+	29	[212]	JMP      	0 2	; to 32
+	30	[213]	LOADBOOL 	4 0 0
+	31	[213]	RETURN   	4 2
+	32	[216]	LOADBOOL 	4 0 0
+	33	[217]	GETTABUP 	5 1 -8	; _ENV "GM"
+	34	[217]	GETTABLE 	5 5 -13	; "MainBoardModel"
+	35	[217]	SELF     	5 5 -14	; "GetValidPositionIterator"
+	36	[217]	CALL     	5 2 4
+	37	[217]	JMP      	0 33	; to 71
+	38	[218]	GETTABUP 	9 1 -8	; _ENV "GM"
+	39	[218]	GETTABLE 	9 9 -13	; "MainBoardModel"
+	40	[218]	SELF     	9 9 -15	; "GetItem"
+	41	[218]	MOVE     	11 8
+	42	[218]	CALL     	9 3 2
+	43	[219]	EQ       	1 9 -3	; - nil
+	44	[219]	JMP      	0 26	; to 71
+	45	[220]	SELF     	10 9 -16	; "GetType"
+	46	[220]	CALL     	10 2 2
+	47	[221]	GETTABUP 	11 1 -8	; _ENV "GM"
+	48	[221]	GETTABLE 	11 11 -17	; "ItemDataModel"
+	49	[221]	SELF     	11 11 -18	; "GetChainId"
+	50	[221]	MOVE     	13 10
+	51	[221]	CALL     	11 3 2
+	52	[221]	EQ       	0 11 -19	; - "7"
+	53	[221]	JMP      	0 17	; to 71
+	54	[221]	GETTABUP 	11 1 -8	; _ENV "GM"
+	55	[221]	GETTABLE 	11 11 -17	; "ItemDataModel"
+	56	[221]	SELF     	11 11 -20	; "GetChainLevel"
+	57	[221]	MOVE     	13 10
+	58	[221]	CALL     	11 3 2
+	59	[221]	LE       	0 -21 11	; 5 -
+	60	[221]	JMP      	0 10	; to 71
+	61	[222]	SELF     	11 9 -22	; "GetComponent"
+	62	[222]	GETTABUP 	13 1 -23	; _ENV "ItemSpread"
+	63	[222]	CALL     	11 3 2
+	64	[223]	EQ       	1 11 -3	; - nil
+	65	[223]	JMP      	0 5	; to 71
+	66	[223]	SELF     	12 11 -24	; "GetItemRestNumber"
+	67	[223]	CALL     	12 2 2
+	68	[223]	LT       	0 -25 12	; 0 -
+	69	[223]	JMP      	0 1	; to 71
+	70	[224]	LOADBOOL 	4 1 0
+	71	[217]	TFORCALL 	5 1
+	72	[217]	TFORLOOP 	7 -35	; to 38
+	73	[230]	TEST     	4 1
+	74	[230]	JMP      	0 2	; to 77
+	75	[231]	LOADBOOL 	5 0 0
+	76	[231]	RETURN   	5 2
+	77	[234]	LOADBOOL 	5 1 0
+	78	[234]	RETURN   	5 2
+	79	[235]	RETURN   	0 1
+constants (25) for 000001ADF3284080:
+	1	"GetCurOrderAndState"
+	2	"GetTutorialInfoById"
+	3	nil
+	4	"Doing"
+	5	"UnlockItem"
+	6	"ItemType"
+	7	"Fishing05"
+	8	"GM"
+	9	"TutorialModel"
+	10	"IsTutorialFinished"
+	11	"ETutorialId"
+	12	"SeaFoodUnlcokTutorial"
+	13	"MainBoardModel"
+	14	"GetValidPositionIterator"
+	15	"GetItem"
+	16	"GetType"
+	17	"ItemDataModel"
+	18	"GetChainId"
+	19	"7"
+	20	"GetChainLevel"
+	21	5
+	22	"GetComponent"
+	23	"ItemSpread"
+	24	"GetItemRestNumber"
+	25	0
+locals (12) for 000001ADF3284080:
+	0	self	1	80
+	1	tutorialID	3	80
+	2	state	3	80
+	3	tutorialInfo	6	80
+	4	bFind	33	80
+	5	(for generator)	37	73
+	6	(for state)	37	73
+	7	(for control)	37	73
+	8	position	38	71
+	9	itemModel	43	71
+	10	type	47	71
+	11	itemSpread	64	71
+upvalues (2) for 000001ADF3284080:
+	0	tutorialOrderState	1	1
+	1	_ENV	0	0
+
+function <TutorialOrderModel.lua:237,242> (13 instructions at 000001ADF3284680)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[238]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[238]	GETTABLE 	1 1 -2	; "TutorialModel"
+	3	[238]	SELF     	1 1 -3	; "IsTutorialFinished"
+	4	[238]	GETTABUP 	3 0 -4	; _ENV "ETutorialId"
+	5	[238]	GETTABLE 	3 3 -5	; "SeaFoodUnlockTutorial2"
+	6	[238]	CALL     	1 3 2
+	7	[238]	TEST     	1 0
+	8	[238]	JMP      	0 2	; to 11
+	9	[239]	LOADBOOL 	1 0 0
+	10	[239]	RETURN   	1 2
+	11	[241]	GETTABLE 	1 0 -6	; "m_startSeafoodTutorial2"
+	12	[241]	RETURN   	1 2
+	13	[242]	RETURN   	0 1
+constants (6) for 000001ADF3284680:
+	1	"GM"
+	2	"TutorialModel"
+	3	"IsTutorialFinished"
+	4	"ETutorialId"
+	5	"SeaFoodUnlockTutorial2"
+	6	"m_startSeafoodTutorial2"
+locals (1) for 000001ADF3284680:
+	0	self	1	14
+upvalues (1) for 000001ADF3284680:
+	0	_ENV	0	0
+
+function <TutorialOrderModel.lua:244,246> (2 instructions at 000001ADF3283E80)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[245]	SETTABLE 	0 -1 -2	; "m_startSeafoodTutorial2" false
+	2	[246]	RETURN   	0 1
+constants (2) for 000001ADF3283E80:
+	1	"m_startSeafoodTutorial2"
+	2	false
+locals (1) for 000001ADF3283E80:
+	0	self	1	3
+upvalues (0) for 000001ADF3283E80:

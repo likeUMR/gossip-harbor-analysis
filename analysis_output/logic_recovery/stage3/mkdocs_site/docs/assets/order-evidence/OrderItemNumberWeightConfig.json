@@ -1,0 +1,26 @@
+[
+  {
+    "OneItemWeight": 60,
+    "Level": 1,
+    "ThreeItemsWeight": 20,
+    "TwoItemsWeight": 20
+  },
+  {
+    "OneItemWeight": 40,
+    "Level": 4,
+    "ThreeItemsWeight": 30,
+    "TwoItemsWeight": 30
+  },
+  {
+    "OneItemWeight": 33,
+    "Level": 8,
+    "ThreeItemsWeight": 34,
+    "TwoItemsWeight": 33
+  },
+  {
+    "OneItemWeight": 30,
+    "Level": 11,
+    "ThreeItemsWeight": 40,
+    "TwoItemsWeight": 30
+  }
+]

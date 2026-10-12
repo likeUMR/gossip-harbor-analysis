@@ -1,0 +1,12 @@
+/* CSS owns the desktop layout even when file:// blocks theme initialization. */
+.md-container{min-height:calc(100vh - 2.4rem);}
+.md-main{flex:1;min-height:calc(100vh - 2.4rem);}
+.md-footer{display:none;}
+@media screen and (min-width:60em){
+  .md-sidebar--primary{position:sticky!important;top:3rem!important;align-self:flex-start;}
+  .md-sidebar--primary .md-sidebar__scrollwrap{height:calc(100vh - 4rem)!important;max-height:calc(100vh - 4rem)!important;overflow-y:auto!important;overscroll-behavior:contain;}
+}
+@media screen and (min-width:76.25em){
+  .md-sidebar--secondary{position:sticky!important;top:3rem!important;align-self:flex-start;}
+  .md-sidebar--secondary .md-sidebar__scrollwrap{height:calc(100vh - 4rem)!important;max-height:calc(100vh - 4rem)!important;overflow-y:auto!important;overscroll-behavior:contain;}
+}

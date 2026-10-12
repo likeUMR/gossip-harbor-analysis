@@ -1,0 +1,2372 @@
+
+main <CardItemModel.lua:0,0> (105 instructions at 00000201CCECEEA0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 44 constants, 30 functions
+	1	[24]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[24]	NEWTABLE 	1 0 0
+	3	[24]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	4	[24]	CALL     	0 3 2
+	5	[24]	SETTABUP 	0 -1 0	; _ENV "CardItemModel"
+	6	[25]	GETTABUP 	0 0 -1	; _ENV "CardItemModel"
+	7	[25]	GETTABUP 	1 0 -1	; _ENV "CardItemModel"
+	8	[25]	SETTABLE 	0 -4 1	; "__index" -
+	9	[27]	GETTABUP 	0 0 -1	; _ENV "CardItemModel"
+	10	[27]	NEWTABLE 	1 0 3
+	11	[29]	SETTABLE 	1 -6 -7	; "CacheData" "CardItemCacheData"
+	12	[30]	SETTABLE 	1 -8 -8	; "isPopFirstMergeWindow" "isPopFirstMergeWindow"
+	13	[32]	SETTABLE 	1 -9 -9	; "isPlayFirstTutorial" "isPlayFirstTutorial"
+	14	[33]	SETTABLE 	0 -5 1	; "StrKeys" -
+	15	[35]	GETTABUP 	0 0 -1	; _ENV "CardItemModel"
+	16	[48]	CLOSURE  	1 0	; 00000201CCECEF20
+	17	[35]	SETTABLE 	0 -10 1	; "Init" -
+	18	[50]	GETTABUP 	0 0 -1	; _ENV "CardItemModel"
+	19	[55]	CLOSURE  	1 1	; 00000201CCED1D20
+	20	[50]	SETTABLE 	0 -11 1	; "LoadCacheData" -
+	21	[57]	GETTABUP 	0 0 -12	; _ENV "CardItemModel"
+	22	[60]	CLOSURE  	1 2	; 00000201CCED2790
+	23	[57]	SETTABLE 	0 -13 1	; "SaveCacheData" -
+	24	[62]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	25	[81]	CLOSURE  	1 3	; 00000201CCED29B0
+	26	[62]	SETTABLE 	0 -15 1	; "OnItemUsed" -
+	27	[85]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	28	[101]	CLOSURE  	1 4	; 00000201CCED2D00
+	29	[85]	SETTABLE 	0 -16 1	; "IsCardItemByLevel" -
+	30	[104]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	31	[181]	CLOSURE  	1 5	; 00000201CCECE9C0
+	32	[104]	SETTABLE 	0 -17 1	; "TryRemoveItem" -
+	33	[183]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	34	[186]	CLOSURE  	1 6	; 00000201CCED5740
+	35	[183]	SETTABLE 	0 -18 1	; "LateInit" -
+	36	[188]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	37	[213]	CLOSURE  	1 7	; 00000201CCED57C0
+	38	[188]	SETTABLE 	0 -19 1	; "_OnStateChanged" -
+	39	[215]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	40	[223]	CLOSURE  	1 8	; 00000201CCED67B0
+	41	[215]	SETTABLE 	0 -20 1	; "_LoadOtherServerConfig" -
+	42	[225]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	43	[229]	CLOSURE  	1 9	; 00000201CCED6CB0
+	44	[225]	SETTABLE 	0 -21 1	; "_DropData" -
+	45	[232]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	46	[244]	CLOSURE  	1 10	; 00000201CCED6730
+	47	[232]	SETTABLE 	0 -22 1	; "CheckFinish" -
+	48	[246]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	49	[251]	CLOSURE  	1 11	; 00000201CCED7030
+	50	[246]	SETTABLE 	0 -23 1	; "OnItemSpread" -
+	51	[253]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	52	[280]	CLOSURE  	1 12	; 00000201CCED6FB0
+	53	[253]	SETTABLE 	0 -24 1	; "OnItemMerge" -
+	54	[282]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	55	[285]	CLOSURE  	1 13	; 00000201CCED6BB0
+	56	[282]	SETTABLE 	0 -25 1	; "CanPopFirstMergeWindow" -
+	57	[287]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	58	[291]	CLOSURE  	1 14	; 00000201CCED7530
+	59	[287]	SETTABLE 	0 -26 1	; "PopFirstMergeWindow" -
+	60	[293]	GETTABUP 	0 0 -14	; _ENV "CardItemModel"
+	61	[300]	CLOSURE  	1 15	; 00000201CCED69B0
+	62	[293]	SETTABLE 	0 -27 1	; "OnCardItemGenerate" -
+	63	[303]	GETTABUP 	0 0 -28	; _ENV "CardItemModel"
+	64	[309]	CLOSURE  	1 16	; 00000201CCED75B0
+	65	[303]	SETTABLE 	0 -29 1	; "CanPopCardItemTutorial" -
+	66	[311]	GETTABUP 	0 0 -30	; _ENV "CardItemModel"
+	67	[313]	CLOSURE  	1 17	; 00000201CCED66B0
+	68	[311]	SETTABLE 	0 -31 1	; "PopCardItemTutorial" -
+	69	[316]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	70	[330]	CLOSURE  	1 18	; 00000201CCED7130
+	71	[316]	SETTABLE 	0 -33 1	; "LoadCardItemConfig" -
+	72	[334]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	73	[346]	CLOSURE  	1 19	; 00000201CCED73B0
+	74	[334]	SETTABLE 	0 -34 1	; "CanGenerateCardItem" -
+	75	[350]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	76	[362]	CLOSURE  	1 20	; 00000201CCED6930
+	77	[350]	SETTABLE 	0 -35 1	; "GenerateCardItem" -
+	78	[365]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	79	[412]	CLOSURE  	1 21	; 00000201CCED70B0
+	80	[365]	SETTABLE 	0 -36 1	; "AddEnergyNum" -
+	81	[414]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	82	[457]	CLOSURE  	1 22	; 00000201CCED6A30
+	83	[414]	SETTABLE 	0 -37 1	; "TryGenerateItem" -
+	84	[460]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	85	[491]	CLOSURE  	1 23	; 00000201CCED74B0
+	86	[460]	SETTABLE 	0 -38 1	; "CheckCanMergeMaxCardItem" -
+	87	[494]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	88	[519]	CLOSURE  	1 24	; 00000201CCED71B0
+	89	[494]	SETTABLE 	0 -39 1	; "TryGenerateNewChain" -
+	90	[521]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	91	[537]	CLOSURE  	1 25	; 00000201CCED68B0
+	92	[521]	SETTABLE 	0 -40 1	; "IsCardItem" -
+	93	[539]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	94	[551]	CLOSURE  	1 26	; 00000201CCED6E30
+	95	[539]	SETTABLE 	0 -41 1	; "IsCardItemAndMaxLevel" -
+	96	[554]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	97	[557]	CLOSURE  	1 27	; 00000201CCEDBDA0
+	98	[554]	SETTABLE 	0 -42 1	; "GetCardItemConfig" -
+	99	[559]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	100	[561]	CLOSURE  	1 28	; 00000201CCEDC920
+	101	[559]	SETTABLE 	0 -43 1	; "GetResourceLabels" -
+	102	[565]	GETTABUP 	0 0 -32	; _ENV "CardItemModel"
+	103	[643]	CLOSURE  	1 29	; 00000201CCEDD4A0
+	104	[565]	SETTABLE 	0 -44 1	; "GetTestInfo" -
+	105	[643]	RETURN   	0 1
+constants (44) for 00000201CCECEEA0:
+	1	"CardItemModel"
+	2	"setmetatable"
+	3	"BaseActivityModel"
+	4	"__index"
+	5	"StrKeys"
+	6	"CacheData"
+	7	"CardItemCacheData"
+	8	"isPopFirstMergeWindow"
+	9	"isPlayFirstTutorial"
+	10	"Init"
+	11	"LoadCacheData"
+	12	"CardItemModel"
+	13	"SaveCacheData"
+	14	"CardItemModel"
+	15	"OnItemUsed"
+	16	"IsCardItemByLevel"
+	17	"TryRemoveItem"
+	18	"LateInit"
+	19	"_OnStateChanged"
+	20	"_LoadOtherServerConfig"
+	21	"_DropData"
+	22	"CheckFinish"
+	23	"OnItemSpread"
+	24	"OnItemMerge"
+	25	"CanPopFirstMergeWindow"
+	26	"PopFirstMergeWindow"
+	27	"OnCardItemGenerate"
+	28	"CardItemModel"
+	29	"CanPopCardItemTutorial"
+	30	"CardItemModel"
+	31	"PopCardItemTutorial"
+	32	"CardItemModel"
+	33	"LoadCardItemConfig"
+	34	"CanGenerateCardItem"
+	35	"GenerateCardItem"
+	36	"AddEnergyNum"
+	37	"TryGenerateItem"
+	38	"CheckCanMergeMaxCardItem"
+	39	"TryGenerateNewChain"
+	40	"IsCardItem"
+	41	"IsCardItemAndMaxLevel"
+	42	"GetCardItemConfig"
+	43	"GetResourceLabels"
+	44	"GetTestInfo"
+locals (0) for 00000201CCECEEA0:
+upvalues (1) for 00000201CCECEEA0:
+	0	_ENV	1	0
+
+function <CardItemModel.lua:35,48> (41 instructions at 00000201CCECEF20)
+2 params, 6 slots, 1 upvalue, 2 locals, 17 constants, 0 functions
+	1	[37]	SELF     	2 0 -1	; "LoadCacheData"
+	2	[37]	MOVE     	4 1
+	3	[37]	CALL     	2 3 1
+	4	[39]	SELF     	2 0 -2	; "LoadCardItemConfig"
+	5	[39]	CALL     	2 2 1
+	6	[40]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	7	[40]	GETTABLE 	2 2 -4	; "Init"
+	8	[40]	MOVE     	3 0
+	9	[40]	GETTABUP 	4 0 -5	; _ENV "ActivityType"
+	10	[40]	GETTABLE 	4 4 -6	; "CardItem"
+	11	[40]	MOVE     	5 1
+	12	[40]	CALL     	2 4 1
+	13	[43]	GETTABUP 	2 0 -7	; _ENV "EventDispatcher"
+	14	[43]	GETTABLE 	2 2 -8	; "AddListener"
+	15	[43]	GETTABUP 	3 0 -9	; _ENV "EEventType"
+	16	[43]	GETTABLE 	3 3 -10	; "ItemMerged"
+	17	[43]	MOVE     	4 0
+	18	[43]	GETTABLE 	5 0 -11	; "OnItemMerge"
+	19	[43]	CALL     	2 4 1
+	20	[44]	GETTABUP 	2 0 -7	; _ENV "EventDispatcher"
+	21	[44]	GETTABLE 	2 2 -8	; "AddListener"
+	22	[44]	GETTABUP 	3 0 -9	; _ENV "EEventType"
+	23	[44]	GETTABLE 	3 3 -12	; "CardItemUsed"
+	24	[44]	MOVE     	4 0
+	25	[44]	GETTABLE 	5 0 -13	; "OnItemUsed"
+	26	[44]	CALL     	2 4 1
+	27	[45]	GETTABUP 	2 0 -7	; _ENV "EventDispatcher"
+	28	[45]	GETTABLE 	2 2 -8	; "AddListener"
+	29	[45]	GETTABUP 	3 0 -9	; _ENV "EEventType"
+	30	[45]	GETTABLE 	3 3 -14	; "CardItemGenerate"
+	31	[45]	MOVE     	4 0
+	32	[45]	GETTABLE 	5 0 -15	; "OnCardItemGenerate"
+	33	[45]	CALL     	2 4 1
+	34	[47]	GETTABUP 	2 0 -7	; _ENV "EventDispatcher"
+	35	[47]	GETTABLE 	2 2 -8	; "AddListener"
+	36	[47]	GETTABUP 	3 0 -9	; _ENV "EEventType"
+	37	[47]	GETTABLE 	3 3 -16	; "ItemSpread"
+	38	[47]	MOVE     	4 0
+	39	[47]	GETTABLE 	5 0 -17	; "OnItemSpread"
+	40	[47]	CALL     	2 4 1
+	41	[48]	RETURN   	0 1
+constants (17) for 00000201CCECEF20:
+	1	"LoadCacheData"
+	2	"LoadCardItemConfig"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"ActivityType"
+	6	"CardItem"
+	7	"EventDispatcher"
+	8	"AddListener"
+	9	"EEventType"
+	10	"ItemMerged"
+	11	"OnItemMerge"
+	12	"CardItemUsed"
+	13	"OnItemUsed"
+	14	"CardItemGenerate"
+	15	"OnCardItemGenerate"
+	16	"ItemSpread"
+	17	"OnItemSpread"
+locals (2) for 00000201CCECEF20:
+	0	self	1	42
+	1	dbTable	1	42
+upvalues (1) for 00000201CCECEF20:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:50,55> (33 instructions at 00000201CCED1D20)
+2 params, 7 slots, 1 upvalue, 2 locals, 11 constants, 0 functions
+	1	[51]	GETTABUP 	2 0 -2	; _ENV "json"
+	2	[51]	GETTABLE 	2 2 -3	; "decode"
+	3	[51]	SELF     	3 1 -4	; "GetValue"
+	4	[51]	GETTABUP 	5 0 -5	; _ENV "CardItemModel"
+	5	[51]	GETTABLE 	5 5 -6	; "StrKeys"
+	6	[51]	GETTABLE 	5 5 -7	; "CacheData"
+	7	[51]	LOADK    	6 -8	; "value"
+	8	[51]	CALL     	3 4 2
+	9	[51]	TEST     	3 1
+	10	[51]	JMP      	0 1	; to 12
+	11	[51]	LOADK    	3 -9	; ""
+	12	[51]	CALL     	2 2 2
+	13	[51]	TEST     	2 1
+	14	[51]	JMP      	0 1	; to 16
+	15	[51]	NEWTABLE 	2 0 0
+	16	[51]	SETTABLE 	0 -1 2	; "m_cacheData" -
+	17	[54]	GETTABUP 	2 0 -2	; _ENV "json"
+	18	[54]	GETTABLE 	2 2 -3	; "decode"
+	19	[54]	SELF     	3 1 -4	; "GetValue"
+	20	[54]	GETTABUP 	5 0 -5	; _ENV "CardItemModel"
+	21	[54]	GETTABLE 	5 5 -6	; "StrKeys"
+	22	[54]	GETTABLE 	5 5 -11	; "isPopFirstMergeWindow"
+	23	[54]	LOADK    	6 -8	; "value"
+	24	[54]	CALL     	3 4 2
+	25	[54]	TEST     	3 1
+	26	[54]	JMP      	0 1	; to 28
+	27	[54]	LOADK    	3 -9	; ""
+	28	[54]	CALL     	2 2 2
+	29	[54]	TEST     	2 1
+	30	[54]	JMP      	0 1	; to 32
+	31	[54]	NEWTABLE 	2 0 0
+	32	[54]	SETTABLE 	0 -10 2	; "m_mapPopChain" -
+	33	[55]	RETURN   	0 1
+constants (11) for 00000201CCED1D20:
+	1	"m_cacheData"
+	2	"json"
+	3	"decode"
+	4	"GetValue"
+	5	"CardItemModel"
+	6	"StrKeys"
+	7	"CacheData"
+	8	"value"
+	9	""
+	10	"m_mapPopChain"
+	11	"isPopFirstMergeWindow"
+locals (2) for 00000201CCED1D20:
+	0	self	1	34
+	1	dbTable	1	34
+upvalues (1) for 00000201CCED1D20:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:57,60> (23 instructions at 00000201CCED2790)
+1 param, 7 slots, 1 upvalue, 1 local, 11 constants, 0 functions
+	1	[58]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[58]	SELF     	1 1 -2	; "Set"
+	3	[58]	GETTABUP 	3 0 -3	; _ENV "CardItemModel"
+	4	[58]	GETTABLE 	3 3 -4	; "StrKeys"
+	5	[58]	GETTABLE 	3 3 -5	; "CacheData"
+	6	[58]	LOADK    	4 -6	; "value"
+	7	[58]	GETTABUP 	5 0 -7	; _ENV "json"
+	8	[58]	GETTABLE 	5 5 -8	; "encode"
+	9	[58]	GETTABLE 	6 0 -9	; "m_cacheData"
+	10	[58]	CALL     	5 2 0
+	11	[58]	CALL     	1 0 1
+	12	[59]	GETTABLE 	1 0 -1	; "m_dbTable"
+	13	[59]	SELF     	1 1 -2	; "Set"
+	14	[59]	GETTABUP 	3 0 -3	; _ENV "CardItemModel"
+	15	[59]	GETTABLE 	3 3 -4	; "StrKeys"
+	16	[59]	GETTABLE 	3 3 -10	; "isPopFirstMergeWindow"
+	17	[59]	LOADK    	4 -6	; "value"
+	18	[59]	GETTABUP 	5 0 -7	; _ENV "json"
+	19	[59]	GETTABLE 	5 5 -8	; "encode"
+	20	[59]	GETTABLE 	6 0 -11	; "m_mapPopChain"
+	21	[59]	CALL     	5 2 0
+	22	[59]	CALL     	1 0 1
+	23	[60]	RETURN   	0 1
+constants (11) for 00000201CCED2790:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CardItemModel"
+	4	"StrKeys"
+	5	"CacheData"
+	6	"value"
+	7	"json"
+	8	"encode"
+	9	"m_cacheData"
+	10	"isPopFirstMergeWindow"
+	11	"m_mapPopChain"
+locals (1) for 00000201CCED2790:
+	0	self	1	24
+upvalues (1) for 00000201CCED2790:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:62,81> (37 instructions at 00000201CCED29B0)
+2 params, 8 slots, 1 upvalue, 6 locals, 17 constants, 0 functions
+	1	[63]	GETTABLE 	2 1 -1	; "ItemModel"
+	2	[64]	GETTABUP 	3 0 -2	; _ENV "GM"
+	3	[64]	GETTABLE 	3 3 -3	; "ItemDataModel"
+	4	[64]	SELF     	3 3 -4	; "GetChainId"
+	5	[64]	SELF     	5 2 -5	; "GetType"
+	6	[64]	CALL     	5 2 0
+	7	[64]	CALL     	3 0 2
+	8	[66]	GETTABUP 	4 0 -2	; _ENV "GM"
+	9	[66]	GETTABLE 	4 4 -6	; "ConfigModel"
+	10	[66]	SELF     	4 4 -7	; "GetGeneralConfByType"
+	11	[66]	GETTABUP 	6 0 -8	; _ENV "EGeneralConfType"
+	12	[66]	GETTABLE 	6 6 -9	; "cardItemStack"
+	13	[66]	CALL     	4 3 2
+	14	[66]	EQ       	0 4 -10	; - 1
+	15	[66]	JMP      	0 13	; to 29
+	16	[67]	GETTABLE 	4 0 -11	; "m_cacheData"
+	17	[67]	GETTABLE 	4 4 -12	; "chain"
+	18	[67]	EQ       	0 3 4
+	19	[67]	JMP      	0 8	; to 28
+	20	[68]	SELF     	4 0 -13	; "CheckCanMergeMaxCardItem"
+	21	[68]	CALL     	4 2 3
+	22	[69]	EQ       	0 5 -14	; - 0
+	23	[69]	JMP      	0 4	; to 28
+	24	[70]	GETTABLE 	6 0 -11	; "m_cacheData"
+	25	[70]	SETTABLE 	6 -15 -16	; "isFinish" true
+	26	[71]	SELF     	6 0 -17	; "SaveCacheData"
+	27	[71]	CALL     	6 2 1
+	28	[74]	RETURN   	0 1
+	29	[77]	GETTABLE 	4 0 -11	; "m_cacheData"
+	30	[77]	GETTABLE 	4 4 -12	; "chain"
+	31	[77]	EQ       	0 3 4
+	32	[77]	JMP      	0 4	; to 37
+	33	[78]	GETTABLE 	4 0 -11	; "m_cacheData"
+	34	[78]	SETTABLE 	4 -15 -16	; "isFinish" true
+	35	[79]	SELF     	4 0 -17	; "SaveCacheData"
+	36	[79]	CALL     	4 2 1
+	37	[81]	RETURN   	0 1
+constants (17) for 00000201CCED29B0:
+	1	"ItemModel"
+	2	"GM"
+	3	"ItemDataModel"
+	4	"GetChainId"
+	5	"GetType"
+	6	"ConfigModel"
+	7	"GetGeneralConfByType"
+	8	"EGeneralConfType"
+	9	"cardItemStack"
+	10	1
+	11	"m_cacheData"
+	12	"chain"
+	13	"CheckCanMergeMaxCardItem"
+	14	0
+	15	"isFinish"
+	16	true
+	17	"SaveCacheData"
+locals (6) for 00000201CCED29B0:
+	0	self	1	38
+	1	message	1	38
+	2	itemModel	2	38
+	3	chainId	8	38
+	4	_	22	28
+	5	num	22	28
+upvalues (1) for 00000201CCED29B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:85,101> (34 instructions at 00000201CCED2D00)
+2 params, 11 slots, 1 upvalue, 8 locals, 11 constants, 0 functions
+	1	[90]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[90]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[90]	GETTABLE 	3 0 -3	; "m_mapCardItemTypeConfig"
+	4	[90]	CALL     	2 2 2
+	5	[90]	TEST     	2 0
+	6	[90]	JMP      	0 2	; to 9
+	7	[91]	LOADBOOL 	2 0 0
+	8	[91]	RETURN   	2 2
+	9	[94]	GETTABUP 	2 0 -4	; _ENV "GM"
+	10	[94]	GETTABLE 	2 2 -5	; "ItemDataModel"
+	11	[94]	SELF     	2 2 -6	; "GetChainId"
+	12	[94]	MOVE     	4 1
+	13	[94]	CALL     	2 3 2
+	14	[95]	GETTABUP 	3 0 -7	; _ENV "pairs"
+	15	[95]	GETTABLE 	4 0 -3	; "m_mapCardItemTypeConfig"
+	16	[95]	CALL     	3 2 4
+	17	[95]	JMP      	0 12	; to 30
+	18	[96]	GETTABLE 	8 7 -8	; "ItemChain"
+	19	[96]	EQ       	0 8 2
+	20	[96]	JMP      	0 9	; to 30
+	21	[96]	GETTABLE 	8 7 -9	; "UnlockLevel"
+	22	[96]	GETTABUP 	9 0 -4	; _ENV "GM"
+	23	[96]	GETTABLE 	9 9 -10	; "LevelModel"
+	24	[96]	SELF     	9 9 -11	; "GetCurrentLevel"
+	25	[96]	CALL     	9 2 2
+	26	[96]	LE       	0 8 9
+	27	[96]	JMP      	0 2	; to 30
+	28	[97]	LOADBOOL 	8 1 0
+	29	[97]	RETURN   	8 2
+	30	[95]	TFORCALL 	3 2
+	31	[95]	TFORLOOP 	5 -14	; to 18
+	32	[100]	LOADBOOL 	3 0 0
+	33	[100]	RETURN   	3 2
+	34	[101]	RETURN   	0 1
+constants (11) for 00000201CCED2D00:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_mapCardItemTypeConfig"
+	4	"GM"
+	5	"ItemDataModel"
+	6	"GetChainId"
+	7	"pairs"
+	8	"ItemChain"
+	9	"UnlockLevel"
+	10	"LevelModel"
+	11	"GetCurrentLevel"
+locals (8) for 00000201CCED2D00:
+	0	self	1	35
+	1	itemType	1	35
+	2	itemChain	14	35
+	3	(for generator)	17	32
+	4	(for state)	17	32
+	5	(for control)	17	32
+	6	_	18	30
+	7	cardItemConfig	18	30
+upvalues (1) for 00000201CCED2D00:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:104,181> (156 instructions at 00000201CCECE9C0)
+1 param, 15 slots, 1 upvalue, 26 locals, 38 constants, 2 functions
+	1	[105]	GETTABLE 	1 0 -1	; "m_bLateInit"
+	2	[105]	TEST     	1 1
+	3	[105]	JMP      	0 1	; to 5
+	4	[106]	RETURN   	0 1
+	5	[109]	SELF     	1 0 -2	; "GetState"
+	6	[109]	LOADBOOL 	3 0 0
+	7	[109]	CALL     	1 3 2
+	8	[109]	GETTABUP 	2 0 -3	; _ENV "ActivityState"
+	9	[109]	GETTABLE 	2 2 -4	; "Started"
+	10	[109]	EQ       	0 1 2
+	11	[109]	JMP      	0 79	; to 91
+	12	[116]	CLOSURE  	1 0	; 00000201CCECECC0
+	13	[118]	GETTABUP 	2 0 -5	; _ENV "GM"
+	14	[118]	GETTABLE 	2 2 -6	; "MainBoardModel"
+	15	[118]	SELF     	2 2 -7	; "TransformItems"
+	16	[118]	MOVE     	4 1
+	17	[118]	LOADBOOL 	5 1 0
+	18	[118]	CALL     	2 4 3
+	19	[119]	NEWTABLE 	4 0 0
+	20	[120]	GETTABUP 	5 0 -8	; _ENV "ipairs"
+	21	[120]	MOVE     	6 2
+	22	[120]	CALL     	5 2 4
+	23	[120]	JMP      	0 6	; to 30
+	24	[121]	GETTABUP 	10 0 -9	; _ENV "table"
+	25	[121]	GETTABLE 	10 10 -10	; "insert"
+	26	[121]	MOVE     	11 4
+	27	[121]	SELF     	12 9 -11	; "GetType"
+	28	[121]	CALL     	12 2 0
+	29	[121]	CALL     	10 0 1
+	30	[120]	TFORCALL 	5 2
+	31	[120]	TFORLOOP 	7 -8	; to 24
+	32	[123]	GETTABUP 	5 0 -5	; _ENV "GM"
+	33	[123]	GETTABLE 	5 5 -12	; "BIManager"
+	34	[123]	SELF     	5 5 -13	; "LogAction"
+	35	[123]	GETTABUP 	7 0 -14	; _ENV "EBIType"
+	36	[123]	GETTABLE 	7 7 -15	; "CardItemRemoved"
+	37	[123]	NEWTABLE 	8 0 3
+	38	[124]	SETTABLE 	8 -16 -17	; "chain" ""
+	39	[125]	SETTABLE 	8 -18 4	; "removeItems" -
+	40	[126]	SETTABLE 	8 -19 3	; "removeStoreItems" -
+	41	[123]	CALL     	5 4 1
+	42	[128]	LEN      	5 2
+	43	[128]	LEN      	6 3
+	44	[128]	ADD      	5 5 6
+	45	[128]	LT       	0 -20 5	; 0 -
+	46	[128]	JMP      	0 14	; to 61
+	47	[129]	GETTABUP 	5 0 -5	; _ENV "GM"
+	48	[129]	GETTABLE 	5 5 -12	; "BIManager"
+	49	[129]	SELF     	5 5 -21	; "LogAcquire"
+	50	[129]	GETTABUP 	7 0 -22	; _ENV "ItemType"
+	51	[129]	GETTABLE 	7 7 -23	; "Energy04"
+	52	[129]	LEN      	8 2
+	53	[129]	LEN      	9 3
+	54	[129]	ADD      	8 8 9
+	55	[129]	GETTABUP 	9 0 -14	; _ENV "EBIType"
+	56	[129]	GETTABLE 	9 9 -24	; "CardItemChangeReward"
+	57	[129]	LOADBOOL 	10 1 0
+	58	[129]	GETTABUP 	11 0 -25	; _ENV "EBoardType"
+	59	[129]	GETTABLE 	11 11 -26	; "Main"
+	60	[129]	CALL     	5 7 1
+	61	[133]	GETTABUP 	5 0 -27	; _ENV "Table"
+	62	[133]	GETTABLE 	5 5 -28	; "IsEmpty"
+	63	[133]	GETTABLE 	6 0 -29	; "m_cacheData"
+	64	[133]	CALL     	5 2 2
+	65	[133]	TEST     	5 1
+	66	[133]	JMP      	0 23	; to 90
+	67	[133]	GETTABLE 	5 0 -29	; "m_cacheData"
+	68	[133]	GETTABLE 	5 5 -16	; "chain"
+	69	[133]	EQ       	1 5 -30	; - nil
+	70	[133]	JMP      	0 19	; to 90
+	71	[134]	LOADBOOL 	5 0 0
+	72	[135]	GETTABUP 	6 0 -31	; _ENV "pairs"
+	73	[135]	GETTABLE 	7 0 -32	; "m_mapCardItemTypeConfig"
+	74	[135]	CALL     	6 2 4
+	75	[135]	JMP      	0 6	; to 82
+	76	[136]	GETTABLE 	11 10 -33	; "ItemChain"
+	77	[136]	GETTABLE 	12 0 -29	; "m_cacheData"
+	78	[136]	GETTABLE 	12 12 -16	; "chain"
+	79	[136]	EQ       	0 11 12
+	80	[136]	JMP      	0 1	; to 82
+	81	[137]	LOADBOOL 	5 1 0
+	82	[135]	TFORCALL 	6 2
+	83	[135]	TFORLOOP 	8 -8	; to 76
+	84	[141]	TEST     	5 1
+	85	[141]	JMP      	0 4	; to 90
+	86	[142]	NEWTABLE 	6 0 0
+	87	[142]	SETTABLE 	0 -29 6	; "m_cacheData" -
+	88	[143]	SELF     	6 0 -34	; "SaveCacheData"
+	89	[143]	CALL     	6 2 1
+	90	[147]	RETURN   	0 1
+	91	[150]	GETTABUP 	1 0 -27	; _ENV "Table"
+	92	[150]	GETTABLE 	1 1 -28	; "IsEmpty"
+	93	[150]	GETTABLE 	2 0 -29	; "m_cacheData"
+	94	[150]	CALL     	1 2 2
+	95	[150]	TEST     	1 1
+	96	[150]	JMP      	0 8	; to 105
+	97	[150]	GETTABLE 	1 0 -29	; "m_cacheData"
+	98	[150]	GETTABLE 	1 1 -35	; "isFinish"
+	99	[150]	EQ       	1 1 -30	; - nil
+	100	[150]	JMP      	0 4	; to 105
+	101	[151]	GETTABLE 	1 0 -29	; "m_cacheData"
+	102	[151]	SETTABLE 	1 -35 -36	; "isFinish" true
+	103	[152]	SELF     	1 0 -34	; "SaveCacheData"
+	104	[152]	CALL     	1 2 1
+	105	[156]	GETTABLE 	1 0 -29	; "m_cacheData"
+	106	[156]	GETTABLE 	1 1 -16	; "chain"
+	107	[163]	CLOSURE  	2 1	; 00000201CCED5290
+	108	[165]	GETTABUP 	3 0 -5	; _ENV "GM"
+	109	[165]	GETTABLE 	3 3 -6	; "MainBoardModel"
+	110	[165]	SELF     	3 3 -7	; "TransformItems"
+	111	[165]	MOVE     	5 2
+	112	[165]	LOADBOOL 	6 1 0
+	113	[165]	CALL     	3 4 3
+	114	[166]	NEWTABLE 	5 0 0
+	115	[167]	GETTABUP 	6 0 -8	; _ENV "ipairs"
+	116	[167]	MOVE     	7 3
+	117	[167]	CALL     	6 2 4
+	118	[167]	JMP      	0 6	; to 125
+	119	[168]	GETTABUP 	11 0 -9	; _ENV "table"
+	120	[168]	GETTABLE 	11 11 -10	; "insert"
+	121	[168]	MOVE     	12 5
+	122	[168]	SELF     	13 10 -11	; "GetType"
+	123	[168]	CALL     	13 2 0
+	124	[168]	CALL     	11 0 1
+	125	[167]	TFORCALL 	6 2
+	126	[167]	TFORLOOP 	8 -8	; to 119
+	127	[172]	LEN      	6 3
+	128	[172]	LEN      	7 4
+	129	[172]	ADD      	6 6 7
+	130	[172]	LT       	0 -20 6	; 0 -
+	131	[172]	JMP      	0 24	; to 156
+	132	[173]	GETTABUP 	6 0 -5	; _ENV "GM"
+	133	[173]	GETTABLE 	6 6 -12	; "BIManager"
+	134	[173]	SELF     	6 6 -21	; "LogAcquire"
+	135	[173]	GETTABUP 	8 0 -37	; _ENV "ItemType"
+	136	[173]	GETTABLE 	8 8 -38	; "Energy04"
+	137	[173]	LEN      	9 3
+	138	[173]	LEN      	10 4
+	139	[173]	ADD      	9 9 10
+	140	[173]	GETTABUP 	10 0 -14	; _ENV "EBIType"
+	141	[173]	GETTABLE 	10 10 -24	; "CardItemChangeReward"
+	142	[173]	LOADBOOL 	11 1 0
+	143	[173]	GETTABUP 	12 0 -25	; _ENV "EBoardType"
+	144	[173]	GETTABLE 	12 12 -26	; "Main"
+	145	[173]	CALL     	6 7 1
+	146	[174]	GETTABUP 	6 0 -5	; _ENV "GM"
+	147	[174]	GETTABLE 	6 6 -12	; "BIManager"
+	148	[174]	SELF     	6 6 -13	; "LogAction"
+	149	[174]	GETTABUP 	8 0 -14	; _ENV "EBIType"
+	150	[174]	GETTABLE 	8 8 -15	; "CardItemRemoved"
+	151	[174]	NEWTABLE 	9 0 3
+	152	[175]	SETTABLE 	9 -16 1	; "chain" -
+	153	[176]	SETTABLE 	9 -18 5	; "removeItems" -
+	154	[177]	SETTABLE 	9 -19 4	; "removeStoreItems" -
+	155	[174]	CALL     	6 4 1
+	156	[181]	RETURN   	0 1
+constants (38) for 00000201CCECE9C0:
+	1	"m_bLateInit"
+	2	"GetState"
+	3	"ActivityState"
+	4	"Started"
+	5	"GM"
+	6	"MainBoardModel"
+	7	"TransformItems"
+	8	"ipairs"
+	9	"table"
+	10	"insert"
+	11	"GetType"
+	12	"BIManager"
+	13	"LogAction"
+	14	"EBIType"
+	15	"CardItemRemoved"
+	16	"chain"
+	17	""
+	18	"removeItems"
+	19	"removeStoreItems"
+	20	0
+	21	"LogAcquire"
+	22	"ItemType"
+	23	"Energy04"
+	24	"CardItemChangeReward"
+	25	"EBoardType"
+	26	"Main"
+	27	"Table"
+	28	"IsEmpty"
+	29	"m_cacheData"
+	30	nil
+	31	"pairs"
+	32	"m_mapCardItemTypeConfig"
+	33	"ItemChain"
+	34	"SaveCacheData"
+	35	"isFinish"
+	36	true
+	37	"ItemType"
+	38	"Energy04"
+locals (26) for 00000201CCECE9C0:
+	0	self	1	157
+	1	transformFunc	13	91
+	2	removeItems	19	91
+	3	removeStoreItems	19	91
+	4	BIRemoveItems	20	91
+	5	(for generator)	23	32
+	6	(for state)	23	32
+	7	(for control)	23	32
+	8	_	24	30
+	9	item	24	30
+	10	bFind	72	90
+	11	(for generator)	75	84
+	12	(for state)	75	84
+	13	(for control)	75	84
+	14	_	76	82
+	15	cardItemConfig	76	82
+	16	chain	107	157
+	17	transformFunc	108	157
+	18	removeItems	114	157
+	19	removeStoreItems	114	157
+	20	BIRemoveItems	115	157
+	21	(for generator)	118	127
+	22	(for state)	118	127
+	23	(for control)	118	127
+	24	_	119	125
+	25	item	119	125
+upvalues (1) for 00000201CCECE9C0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:110,116> (19 instructions at 00000201CCECECC0)
+1 param, 4 slots, 2 upvalues, 1 local, 5 constants, 0 functions
+	1	[111]	GETUPVAL 	1 0	; self
+	2	[111]	SELF     	1 1 -1	; "IsCardItem"
+	3	[111]	MOVE     	3 0
+	4	[111]	CALL     	1 3 2
+	5	[111]	TEST     	1 1
+	6	[111]	JMP      	0 10	; to 17
+	7	[111]	GETTABUP 	1 1 -2	; _ENV "StringUtil"
+	8	[111]	GETTABLE 	1 1 -3	; "StartWith"
+	9	[111]	MOVE     	2 0
+	10	[111]	LOADK    	3 -4	; "main_card_"
+	11	[111]	CALL     	1 3 2
+	12	[111]	TEST     	1 0
+	13	[111]	JMP      	0 3	; to 17
+	14	[112]	LOADBOOL 	1 1 0
+	15	[112]	GETTABLE 	2 0 -5	; "Energy04"
+	16	[112]	RETURN   	1 3
+	17	[115]	LOADBOOL 	1 0 0
+	18	[115]	RETURN   	1 2
+	19	[116]	RETURN   	0 1
+constants (5) for 00000201CCECECC0:
+	1	"IsCardItem"
+	2	"StringUtil"
+	3	"StartWith"
+	4	"main_card_"
+	5	"Energy04"
+locals (1) for 00000201CCECECC0:
+	0	itemType	1	20
+upvalues (2) for 00000201CCECECC0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <CardItemModel.lua:158,163> (13 instructions at 00000201CCED5290)
+1 param, 4 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[159]	GETUPVAL 	1 0	; self
+	2	[159]	SELF     	1 1 -1	; "IsCardItem"
+	3	[159]	MOVE     	3 0
+	4	[159]	CALL     	1 3 2
+	5	[159]	TEST     	1 0
+	6	[159]	JMP      	0 4	; to 11
+	7	[160]	LOADBOOL 	1 1 0
+	8	[160]	GETTABUP 	2 1 -2	; _ENV "ItemType"
+	9	[160]	GETTABLE 	2 2 -3	; "Energy04"
+	10	[160]	RETURN   	1 3
+	11	[162]	LOADBOOL 	1 0 0
+	12	[162]	RETURN   	1 2
+	13	[163]	RETURN   	0 1
+constants (3) for 00000201CCED5290:
+	1	"IsCardItem"
+	2	"ItemType"
+	3	"Energy04"
+locals (1) for 00000201CCED5290:
+	0	itemType	1	14
+upvalues (2) for 00000201CCED5290:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <CardItemModel.lua:183,186> (4 instructions at 00000201CCED5740)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[184]	SETTABLE 	0 -1 -2	; "m_bLateInit" true
+	2	[185]	SELF     	1 0 -3	; "TryRemoveItem"
+	3	[185]	CALL     	1 2 1
+	4	[186]	RETURN   	0 1
+constants (3) for 00000201CCED5740:
+	1	"m_bLateInit"
+	2	true
+	3	"TryRemoveItem"
+locals (1) for 00000201CCED5740:
+	0	self	1	5
+upvalues (0) for 00000201CCED5740:
+
+function <CardItemModel.lua:188,213> (30 instructions at 00000201CCED57C0)
+1 param, 8 slots, 1 upvalue, 1 local, 16 constants, 2 functions
+	1	[189]	SELF     	1 0 -1	; "TryRemoveItem"
+	2	[189]	CALL     	1 2 1
+	3	[192]	SELF     	1 0 -2	; "GetState"
+	4	[192]	CALL     	1 2 2
+	5	[192]	GETTABUP 	2 0 -3	; _ENV "ActivityState"
+	6	[192]	GETTABLE 	2 2 -4	; "Started"
+	7	[192]	EQ       	0 1 2
+	8	[192]	JMP      	0 2	; to 11
+	9	[193]	SELF     	1 0 -5	; "SetWindowOpened"
+	10	[193]	CALL     	1 2 1
+	11	[197]	GETTABUP 	1 0 -6	; _ENV "GM"
+	12	[197]	GETTABLE 	1 1 -7	; "ActivityModuleManager"
+	13	[197]	SELF     	1 1 -8	; "AddRegister"
+	14	[197]	GETTABUP 	3 0 -7	; _ENV "ActivityModuleManager"
+	15	[197]	GETTABLE 	3 3 -9	; "ModuleType"
+	16	[197]	GETTABLE 	3 3 -10	; "ConvertDynamicReward"
+	17	[197]	MOVE     	4 0
+	18	[197]	NEWTABLE 	5 0 0
+	19	[197]	NEWTABLE 	6 0 2
+	20	[202]	CLOSURE  	7 0	; 00000201CCED59D0
+	21	[202]	SETTABLE 	6 -11 7	; "isPropertyFunc" -
+	22	[210]	CLOSURE  	7 1	; 00000201CCED6B30
+	23	[210]	SETTABLE 	6 -12 7	; "getPropertyFunc" -
+	24	[197]	CALL     	1 6 1
+	25	[212]	GETTABUP 	1 0 -13	; _ENV "EventDispatcher"
+	26	[212]	GETTABLE 	1 1 -14	; "DispatchEvent"
+	27	[212]	GETTABUP 	2 0 -15	; _ENV "EEventType"
+	28	[212]	GETTABLE 	2 2 -16	; "CardItemStateChanged"
+	29	[212]	CALL     	1 2 1
+	30	[213]	RETURN   	0 1
+constants (16) for 00000201CCED57C0:
+	1	"TryRemoveItem"
+	2	"GetState"
+	3	"ActivityState"
+	4	"Started"
+	5	"SetWindowOpened"
+	6	"GM"
+	7	"ActivityModuleManager"
+	8	"AddRegister"
+	9	"ModuleType"
+	10	"ConvertDynamicReward"
+	11	"isPropertyFunc"
+	12	"getPropertyFunc"
+	13	"EventDispatcher"
+	14	"DispatchEvent"
+	15	"EEventType"
+	16	"CardItemStateChanged"
+locals (1) for 00000201CCED57C0:
+	0	self	1	31
+upvalues (1) for 00000201CCED57C0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:199,202> (17 instructions at 00000201CCED59D0)
+1 param, 5 slots, 2 upvalues, 2 locals, 5 constants, 0 functions
+	1	[200]	GETTABUP 	1 0 -1	; _ENV "RewardApi"
+	2	[200]	GETTABLE 	1 1 -2	; "GetRewardCategoryType"
+	3	[200]	MOVE     	2 0
+	4	[200]	CALL     	1 2 2
+	5	[201]	GETTABUP 	2 0 -3	; _ENV "ERewardCategoryType"
+	6	[201]	GETTABLE 	2 2 -4	; "Item"
+	7	[201]	EQ       	0 1 2
+	8	[201]	JMP      	0 5	; to 14
+	9	[201]	GETUPVAL 	2 1	; self
+	10	[201]	SELF     	2 2 -5	; "IsCardItem"
+	11	[201]	MOVE     	4 0
+	12	[201]	CALL     	2 3 2
+	13	[201]	JMP      	0 2	; to 16
+	14	[201]	LOADBOOL 	2 0 1
+	15	[201]	LOADBOOL 	2 1 0
+	16	[201]	RETURN   	2 2
+	17	[202]	RETURN   	0 1
+constants (5) for 00000201CCED59D0:
+	1	"RewardApi"
+	2	"GetRewardCategoryType"
+	3	"ERewardCategoryType"
+	4	"Item"
+	5	"IsCardItem"
+locals (2) for 00000201CCED59D0:
+	0	type	1	18
+	1	cateType	5	18
+upvalues (2) for 00000201CCED59D0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <CardItemModel.lua:203,210> (19 instructions at 00000201CCED6B30)
+2 params, 5 slots, 2 upvalues, 3 locals, 7 constants, 0 functions
+	1	[204]	GETUPVAL 	2 0	; self
+	2	[204]	SELF     	2 2 -1	; "GetState"
+	3	[204]	LOADBOOL 	4 0 0
+	4	[204]	CALL     	2 3 2
+	5	[204]	GETTABUP 	3 1 -2	; _ENV "ActivityState"
+	6	[204]	GETTABLE 	3 3 -3	; "Started"
+	7	[204]	EQ       	1 2 3
+	8	[204]	JMP      	0 10	; to 19
+	9	[205]	NEWTABLE 	2 0 0
+	10	[206]	GETTABUP 	3 1 -4	; _ENV "PROPERTY_TYPE"
+	11	[206]	GETTABUP 	4 1 -5	; _ENV "ItemType"
+	12	[206]	GETTABLE 	4 4 -6	; "Energy01"
+	13	[206]	SETTABLE 	2 3 4
+	14	[207]	GETTABUP 	3 1 -7	; _ENV "PROPERTY_COUNT"
+	15	[207]	GETTABUP 	4 1 -7	; _ENV "PROPERTY_COUNT"
+	16	[207]	GETTABLE 	4 0 4
+	17	[207]	SETTABLE 	2 3 4
+	18	[208]	RETURN   	2 2
+	19	[210]	RETURN   	0 1
+constants (7) for 00000201CCED6B30:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"PROPERTY_TYPE"
+	5	"ItemType"
+	6	"Energy01"
+	7	"PROPERTY_COUNT"
+locals (3) for 00000201CCED6B30:
+	0	reward	1	20
+	1	needBi	1	20
+	2	newReward	10	19
+upvalues (2) for 00000201CCED6B30:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <CardItemModel.lua:215,223> (18 instructions at 00000201CCED67B0)
+2 params, 5 slots, 1 upvalue, 3 locals, 7 constants, 1 function
+	1	[216]	SETTABLE 	0 -1 -2	; "m_energyGenerateNum" nil
+	2	[217]	GETTABLE 	2 1 -3	; "misc_conf_new"
+	3	[217]	TEST     	2 0
+	4	[217]	JMP      	0 13	; to 18
+	5	[218]	GETTABUP 	2 0 -4	; _ENV "Table"
+	6	[218]	GETTABLE 	2 2 -5	; "ListSelect"
+	7	[218]	GETTABLE 	3 1 -3	; "misc_conf_new"
+	8	[218]	CLOSURE  	4 0	; 00000201CCED7330
+	9	[218]	CALL     	2 3 2
+	10	[219]	EQ       	1 2 -2	; - nil
+	11	[219]	JMP      	0 6	; to 18
+	12	[219]	GETTABLE 	3 2 -6	; 1
+	13	[219]	EQ       	1 3 -2	; - nil
+	14	[219]	JMP      	0 3	; to 18
+	15	[220]	GETTABLE 	3 2 -6	; 1
+	16	[220]	GETTABLE 	3 3 -7	; "param_int"
+	17	[220]	SETTABLE 	0 -1 3	; "m_energyGenerateNum" -
+	18	[223]	RETURN   	0 1
+constants (7) for 00000201CCED67B0:
+	1	"m_energyGenerateNum"
+	2	nil
+	3	"misc_conf_new"
+	4	"Table"
+	5	"ListSelect"
+	6	1
+	7	"param_int"
+locals (3) for 00000201CCED67B0:
+	0	self	1	19
+	1	config	1	19
+	2	energyConfig	10	18
+upvalues (1) for 00000201CCED67B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:218,218> (7 instructions at 00000201CCED7330)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[218]	GETTABLE 	1 0 -1	; "confType"
+	2	[218]	EQ       	1 1 -2	; - "card_item_energy"
+	3	[218]	JMP      	0 1	; to 5
+	4	[218]	LOADBOOL 	1 0 1
+	5	[218]	LOADBOOL 	1 1 0
+	6	[218]	RETURN   	1 2
+	7	[218]	RETURN   	0 1
+constants (2) for 00000201CCED7330:
+	1	"confType"
+	2	"card_item_energy"
+locals (1) for 00000201CCED7330:
+	0	data	1	8
+upvalues (0) for 00000201CCED7330:
+
+function <CardItemModel.lua:225,229> (9 instructions at 00000201CCED6CB0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[226]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[226]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[226]	MOVE     	2 0
+	4	[226]	CALL     	1 2 1
+	5	[227]	NEWTABLE 	1 0 0
+	6	[227]	SETTABLE 	0 -3 1	; "m_cacheData" -
+	7	[228]	SELF     	1 0 -4	; "TryRemoveItem"
+	8	[228]	CALL     	1 2 1
+	9	[229]	RETURN   	0 1
+constants (4) for 00000201CCED6CB0:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_cacheData"
+	4	"TryRemoveItem"
+locals (1) for 00000201CCED6CB0:
+	0	self	1	10
+upvalues (1) for 00000201CCED6CB0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:232,244> (29 instructions at 00000201CCED6730)
+1 param, 4 slots, 1 upvalue, 2 locals, 14 constants, 0 functions
+	1	[233]	SELF     	1 0 -1	; "GetState"
+	2	[233]	LOADBOOL 	3 0 0
+	3	[233]	CALL     	1 3 2
+	4	[233]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[233]	GETTABLE 	2 2 -3	; "Started"
+	6	[233]	EQ       	1 1 2
+	7	[233]	JMP      	0 1	; to 9
+	8	[234]	RETURN   	0 1
+	9	[237]	GETTABUP 	1 0 -4	; _ENV "GM"
+	10	[237]	GETTABLE 	1 1 -5	; "ConfigModel"
+	11	[237]	SELF     	1 1 -6	; "GetGeneralConfByType"
+	12	[237]	GETTABUP 	3 0 -7	; _ENV "EGeneralConfType"
+	13	[237]	GETTABLE 	3 3 -8	; "cardItemStack"
+	14	[237]	CALL     	1 3 2
+	15	[237]	EQ       	1 1 -9	; - 1
+	16	[237]	JMP      	0 1	; to 18
+	17	[237]	LOADBOOL 	1 0 1
+	18	[237]	LOADBOOL 	1 1 0
+	19	[238]	TEST     	1 0
+	20	[238]	JMP      	0 8	; to 29
+	21	[239]	SELF     	2 0 -10	; "CheckCanMergeMaxCardItem"
+	22	[239]	CALL     	2 2 2
+	23	[239]	TEST     	2 0
+	24	[239]	JMP      	0 4	; to 29
+	25	[240]	GETTABLE 	2 0 -11	; "m_cacheData"
+	26	[240]	SETTABLE 	2 -12 -13	; "isFinish" true
+	27	[241]	SELF     	2 0 -14	; "SaveCacheData"
+	28	[241]	CALL     	2 2 1
+	29	[244]	RETURN   	0 1
+constants (14) for 00000201CCED6730:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GM"
+	5	"ConfigModel"
+	6	"GetGeneralConfByType"
+	7	"EGeneralConfType"
+	8	"cardItemStack"
+	9	1
+	10	"CheckCanMergeMaxCardItem"
+	11	"m_cacheData"
+	12	"isFinish"
+	13	true
+	14	"SaveCacheData"
+locals (2) for 00000201CCED6730:
+	0	self	1	30
+	1	isStack	19	30
+upvalues (1) for 00000201CCED6730:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:246,251> (16 instructions at 00000201CCED7030)
+2 params, 7 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[247]	GETTABLE 	2 1 -1	; "CostEnergy"
+	2	[247]	EQ       	0 2 -2	; - true
+	3	[247]	JMP      	0 12	; to 16
+	4	[247]	GETTABLE 	2 0 -3	; "m_energyGenerateNum"
+	5	[247]	EQ       	1 2 -4	; - nil
+	6	[247]	JMP      	0 9	; to 16
+	7	[248]	GETTABUP 	2 0 -5	; _ENV "MathUtil"
+	8	[248]	GETTABLE 	2 2 -6	; "IntPow"
+	9	[248]	LOADK    	3 -7	; 2
+	10	[248]	GETTABLE 	4 1 -8	; "EnergyBoostRatio"
+	11	[248]	CALL     	2 3 2
+	12	[249]	SELF     	3 0 -9	; "AddEnergyNum"
+	13	[249]	MOVE     	5 2
+	14	[249]	GETTABLE 	6 1 -10	; "Source"
+	15	[249]	CALL     	3 4 1
+	16	[251]	RETURN   	0 1
+constants (10) for 00000201CCED7030:
+	1	"CostEnergy"
+	2	true
+	3	"m_energyGenerateNum"
+	4	nil
+	5	"MathUtil"
+	6	"IntPow"
+	7	2
+	8	"EnergyBoostRatio"
+	9	"AddEnergyNum"
+	10	"Source"
+locals (3) for 00000201CCED7030:
+	0	self	1	17
+	1	message	1	17
+	2	costEnergy	12	16
+upvalues (1) for 00000201CCED7030:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:253,280> (55 instructions at 00000201CCED6FB0)
+2 params, 9 slots, 1 upvalue, 6 locals, 21 constants, 0 functions
+	1	[254]	SELF     	2 0 -1	; "GetState"
+	2	[254]	LOADBOOL 	4 0 0
+	3	[254]	CALL     	2 3 2
+	4	[254]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	5	[254]	GETTABLE 	3 3 -3	; "Started"
+	6	[254]	EQ       	1 2 3
+	7	[254]	JMP      	0 1	; to 9
+	8	[255]	RETURN   	0 1
+	9	[258]	GETTABLE 	2 1 -4	; "New"
+	10	[258]	SELF     	2 2 -5	; "GetType"
+	11	[258]	CALL     	2 2 2
+	12	[260]	SELF     	3 0 -6	; "IsCardItemAndMaxLevel"
+	13	[260]	MOVE     	5 2
+	14	[260]	CALL     	3 3 2
+	15	[260]	TEST     	3 1
+	16	[260]	JMP      	0 1	; to 18
+	17	[261]	RETURN   	0 1
+	18	[264]	GETTABUP 	3 0 -7	; _ENV "GM"
+	19	[264]	GETTABLE 	3 3 -8	; "ItemDataModel"
+	20	[264]	SELF     	3 3 -9	; "GetChainId"
+	21	[264]	MOVE     	5 2
+	22	[264]	CALL     	3 3 2
+	23	[265]	GETTABLE 	4 0 -10	; "m_mapPopChain"
+	24	[265]	GETTABLE 	4 4 3
+	25	[265]	EQ       	0 4 -11	; - 1
+	26	[265]	JMP      	0 1	; to 28
+	27	[266]	RETURN   	0 1
+	28	[269]	GETTABLE 	4 0 -10	; "m_mapPopChain"
+	29	[269]	SETTABLE 	4 3 -12	; - 0
+	30	[270]	SELF     	4 0 -13	; "SaveCacheData"
+	31	[270]	CALL     	4 2 1
+	32	[272]	GETTABUP 	4 0 -7	; _ENV "GM"
+	33	[272]	GETTABLE 	4 4 -8	; "ItemDataModel"
+	34	[272]	SELF     	4 4 -9	; "GetChainId"
+	35	[272]	MOVE     	6 2
+	36	[272]	CALL     	4 3 2
+	37	[274]	GETTABLE 	5 0 -14	; "m_mapCardItemTypeConfig"
+	38	[274]	GETTABLE 	5 5 4
+	39	[274]	TEST     	5 0
+	40	[274]	JMP      	0 5	; to 46
+	41	[274]	GETTABLE 	5 0 -14	; "m_mapCardItemTypeConfig"
+	42	[274]	GETTABLE 	5 5 4
+	43	[274]	GETTABLE 	5 5 -15	; "Rarity"
+	44	[274]	TEST     	5 1
+	45	[274]	JMP      	0 1	; to 47
+	46	[274]	LOADK    	5 -11	; 1
+	47	[276]	GETTABUP 	6 0 -16	; _ENV "EventDispatcher"
+	48	[276]	GETTABLE 	6 6 -17	; "DispatchEvent"
+	49	[276]	GETTABUP 	7 0 -18	; _ENV "EEventType"
+	50	[276]	GETTABLE 	7 7 -19	; "CardItemFirstPopWindow"
+	51	[276]	NEWTABLE 	8 0 2
+	52	[277]	SETTABLE 	8 -20 2	; "itemType" -
+	53	[278]	SETTABLE 	8 -21 5	; "rarity" -
+	54	[276]	CALL     	6 3 1
+	55	[280]	RETURN   	0 1
+constants (21) for 00000201CCED6FB0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"New"
+	5	"GetType"
+	6	"IsCardItemAndMaxLevel"
+	7	"GM"
+	8	"ItemDataModel"
+	9	"GetChainId"
+	10	"m_mapPopChain"
+	11	1
+	12	0
+	13	"SaveCacheData"
+	14	"m_mapCardItemTypeConfig"
+	15	"Rarity"
+	16	"EventDispatcher"
+	17	"DispatchEvent"
+	18	"EEventType"
+	19	"CardItemFirstPopWindow"
+	20	"itemType"
+	21	"rarity"
+locals (6) for 00000201CCED6FB0:
+	0	self	1	56
+	1	message	1	56
+	2	itemType	12	56
+	3	chain	23	56
+	4	chain	37	56
+	5	rarity	47	56
+upvalues (1) for 00000201CCED6FB0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:282,285> (13 instructions at 00000201CCED6BB0)
+2 params, 5 slots, 1 upvalue, 3 locals, 5 constants, 0 functions
+	1	[283]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[283]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[283]	SELF     	2 2 -3	; "GetChainId"
+	4	[283]	MOVE     	4 1
+	5	[283]	CALL     	2 3 2
+	6	[284]	GETTABLE 	3 0 -4	; "m_mapPopChain"
+	7	[284]	GETTABLE 	3 3 2
+	8	[284]	EQ       	1 3 -5	; - 0
+	9	[284]	JMP      	0 1	; to 11
+	10	[284]	LOADBOOL 	3 0 1
+	11	[284]	LOADBOOL 	3 1 0
+	12	[284]	RETURN   	3 2
+	13	[285]	RETURN   	0 1
+constants (5) for 00000201CCED6BB0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"m_mapPopChain"
+	5	0
+locals (3) for 00000201CCED6BB0:
+	0	self	1	14
+	1	itemType	1	14
+	2	chain	6	14
+upvalues (1) for 00000201CCED6BB0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:287,291> (10 instructions at 00000201CCED7530)
+2 params, 5 slots, 1 upvalue, 3 locals, 6 constants, 0 functions
+	1	[288]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[288]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[288]	SELF     	2 2 -3	; "GetChainId"
+	4	[288]	MOVE     	4 1
+	5	[288]	CALL     	2 3 2
+	6	[289]	GETTABLE 	3 0 -4	; "m_mapPopChain"
+	7	[289]	SETTABLE 	3 2 -5	; - 1
+	8	[290]	SELF     	3 0 -6	; "SaveCacheData"
+	9	[290]	CALL     	3 2 1
+	10	[291]	RETURN   	0 1
+constants (6) for 00000201CCED7530:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"m_mapPopChain"
+	5	1
+	6	"SaveCacheData"
+locals (3) for 00000201CCED7530:
+	0	self	1	11
+	1	itemType	1	11
+	2	chain	6	11
+upvalues (1) for 00000201CCED7530:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:293,300> (24 instructions at 00000201CCED69B0)
+2 params, 7 slots, 1 upvalue, 2 locals, 13 constants, 0 functions
+	1	[294]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[294]	SELF     	2 2 -2	; "GetValue"
+	3	[294]	GETTABUP 	4 0 -3	; _ENV "CardItemModel"
+	4	[294]	GETTABLE 	4 4 -4	; "StrKeys"
+	5	[294]	GETTABLE 	4 4 -5	; "isPlayFirstTutorial"
+	6	[294]	LOADK    	5 -6	; "value"
+	7	[294]	CALL     	2 4 2
+	8	[294]	EQ       	0 2 -7	; - "2"
+	9	[294]	JMP      	0 1	; to 11
+	10	[295]	RETURN   	0 1
+	11	[298]	GETTABLE 	2 0 -1	; "m_dbTable"
+	12	[298]	SELF     	2 2 -8	; "Set"
+	13	[298]	GETTABUP 	4 0 -3	; _ENV "CardItemModel"
+	14	[298]	GETTABLE 	4 4 -4	; "StrKeys"
+	15	[298]	GETTABLE 	4 4 -5	; "isPlayFirstTutorial"
+	16	[298]	LOADK    	5 -6	; "value"
+	17	[298]	LOADK    	6 -9	; "1"
+	18	[298]	CALL     	2 5 1
+	19	[299]	GETTABUP 	2 0 -10	; _ENV "EventDispatcher"
+	20	[299]	GETTABLE 	2 2 -11	; "DispatchEvent"
+	21	[299]	GETTABUP 	3 0 -12	; _ENV "EEventType"
+	22	[299]	GETTABLE 	3 3 -13	; "TutorialStartPop"
+	23	[299]	CALL     	2 2 1
+	24	[300]	RETURN   	0 1
+constants (13) for 00000201CCED69B0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CardItemModel"
+	4	"StrKeys"
+	5	"isPlayFirstTutorial"
+	6	"value"
+	7	"2"
+	8	"Set"
+	9	"1"
+	10	"EventDispatcher"
+	11	"DispatchEvent"
+	12	"EEventType"
+	13	"TutorialStartPop"
+locals (2) for 00000201CCED69B0:
+	0	self	1	25
+	1	item	1	25
+upvalues (1) for 00000201CCED69B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:303,309> (22 instructions at 00000201CCED75B0)
+1 param, 5 slots, 1 upvalue, 1 local, 10 constants, 0 functions
+	1	[304]	SELF     	1 0 -1	; "GetState"
+	2	[304]	LOADBOOL 	3 0 0
+	3	[304]	CALL     	1 3 2
+	4	[304]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[304]	GETTABLE 	2 2 -3	; "Started"
+	6	[304]	EQ       	1 1 2
+	7	[304]	JMP      	0 2	; to 10
+	8	[305]	LOADBOOL 	1 0 0
+	9	[305]	RETURN   	1 2
+	10	[308]	GETTABLE 	1 0 -4	; "m_dbTable"
+	11	[308]	SELF     	1 1 -5	; "GetValue"
+	12	[308]	GETTABUP 	3 0 -6	; _ENV "CardItemModel"
+	13	[308]	GETTABLE 	3 3 -7	; "StrKeys"
+	14	[308]	GETTABLE 	3 3 -8	; "isPlayFirstTutorial"
+	15	[308]	LOADK    	4 -9	; "value"
+	16	[308]	CALL     	1 4 2
+	17	[308]	EQ       	1 1 -10	; - "1"
+	18	[308]	JMP      	0 1	; to 20
+	19	[308]	LOADBOOL 	1 0 1
+	20	[308]	LOADBOOL 	1 1 0
+	21	[308]	RETURN   	1 2
+	22	[309]	RETURN   	0 1
+constants (10) for 00000201CCED75B0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"CardItemModel"
+	7	"StrKeys"
+	8	"isPlayFirstTutorial"
+	9	"value"
+	10	"1"
+locals (1) for 00000201CCED75B0:
+	0	self	1	23
+upvalues (1) for 00000201CCED75B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:311,313> (9 instructions at 00000201CCED66B0)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[312]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[312]	SELF     	1 1 -2	; "Set"
+	3	[312]	GETTABUP 	3 0 -3	; _ENV "CardItemModel"
+	4	[312]	GETTABLE 	3 3 -4	; "StrKeys"
+	5	[312]	GETTABLE 	3 3 -5	; "isPlayFirstTutorial"
+	6	[312]	LOADK    	4 -6	; "value"
+	7	[312]	LOADK    	5 -7	; "2"
+	8	[312]	CALL     	1 5 1
+	9	[313]	RETURN   	0 1
+constants (7) for 00000201CCED66B0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CardItemModel"
+	4	"StrKeys"
+	5	"isPlayFirstTutorial"
+	6	"value"
+	7	"2"
+locals (1) for 00000201CCED66B0:
+	0	self	1	10
+upvalues (1) for 00000201CCED66B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:316,330> (42 instructions at 00000201CCED7130)
+1 param, 12 slots, 1 upvalue, 13 locals, 10 constants, 0 functions
+	1	[317]	GETTABUP 	1 0 -1	; _ENV "require"
+	2	[317]	LOADK    	2 -2	; "Data.Config.CardItemConfig"
+	3	[317]	CALL     	1 2 2
+	4	[319]	NEWTABLE 	2 0 0
+	5	[319]	SETTABLE 	0 -3 2	; "m_mapCardItemTypeConfig" -
+	6	[320]	GETTABUP 	2 0 -4	; _ENV "ipairs"
+	7	[320]	MOVE     	3 1
+	8	[320]	CALL     	2 2 4
+	9	[320]	JMP      	0 3	; to 13
+	10	[321]	GETTABLE 	7 0 -3	; "m_mapCardItemTypeConfig"
+	11	[321]	GETTABLE 	8 6 -5	; "ItemChain"
+	12	[321]	SETTABLE 	7 8 6
+	13	[320]	TFORCALL 	2 2
+	14	[320]	TFORLOOP 	4 -5	; to 10
+	15	[324]	GETTABUP 	2 0 -1	; _ENV "require"
+	16	[324]	LOADK    	3 -6	; "Data.Config.CardItemProduceConfig"
+	17	[324]	CALL     	2 2 2
+	18	[325]	NEWTABLE 	3 0 0
+	19	[325]	SETTABLE 	0 -7 3	; "m_mapCardItemProduceConfig" -
+	20	[326]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	21	[326]	MOVE     	4 2
+	22	[326]	CALL     	3 2 4
+	23	[326]	JMP      	0 16	; to 40
+	24	[327]	GETTABLE 	8 0 -7	; "m_mapCardItemProduceConfig"
+	25	[327]	GETTABLE 	9 7 -8	; "ItemType"
+	26	[327]	GETTABLE 	10 0 -7	; "m_mapCardItemProduceConfig"
+	27	[327]	GETTABLE 	11 7 -8	; "ItemType"
+	28	[327]	GETTABLE 	10 10 11
+	29	[327]	TEST     	10 1
+	30	[327]	JMP      	0 1	; to 32
+	31	[327]	NEWTABLE 	10 0 0
+	32	[327]	SETTABLE 	8 9 10
+	33	[328]	GETTABUP 	8 0 -9	; _ENV "table"
+	34	[328]	GETTABLE 	8 8 -10	; "insert"
+	35	[328]	GETTABLE 	9 0 -7	; "m_mapCardItemProduceConfig"
+	36	[328]	GETTABLE 	10 7 -8	; "ItemType"
+	37	[328]	GETTABLE 	9 9 10
+	38	[328]	MOVE     	10 7
+	39	[328]	CALL     	8 3 1
+	40	[326]	TFORCALL 	3 2
+	41	[326]	TFORLOOP 	5 -18	; to 24
+	42	[330]	RETURN   	0 1
+constants (10) for 00000201CCED7130:
+	1	"require"
+	2	"Data.Config.CardItemConfig"
+	3	"m_mapCardItemTypeConfig"
+	4	"ipairs"
+	5	"ItemChain"
+	6	"Data.Config.CardItemProduceConfig"
+	7	"m_mapCardItemProduceConfig"
+	8	"ItemType"
+	9	"table"
+	10	"insert"
+locals (13) for 00000201CCED7130:
+	0	self	1	43
+	1	cardItemConfig	4	43
+	2	(for generator)	9	15
+	3	(for state)	9	15
+	4	(for control)	9	15
+	5	_	10	13
+	6	config	10	13
+	7	cardItemProduceConfig	18	43
+	8	(for generator)	23	42
+	9	(for state)	23	42
+	10	(for control)	23	42
+	11	_	24	40
+	12	config	24	40
+upvalues (1) for 00000201CCED7130:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:334,346> (19 instructions at 00000201CCED73B0)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[335]	SELF     	1 0 -1	; "GetState"
+	2	[335]	CALL     	1 2 2
+	3	[335]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[335]	GETTABLE 	2 2 -3	; "Started"
+	5	[335]	EQ       	1 1 2
+	6	[335]	JMP      	0 2	; to 9
+	7	[336]	LOADBOOL 	1 0 0
+	8	[336]	RETURN   	1 2
+	9	[339]	SELF     	1 0 -4	; "CheckFinish"
+	10	[339]	CALL     	1 2 1
+	11	[341]	SELF     	1 0 -5	; "CheckCanMergeMaxCardItem"
+	12	[341]	CALL     	1 2 2
+	13	[341]	TEST     	1 0
+	14	[341]	JMP      	0 2	; to 17
+	15	[342]	LOADBOOL 	1 0 0
+	16	[342]	RETURN   	1 2
+	17	[345]	LOADBOOL 	1 1 0
+	18	[345]	RETURN   	1 2
+	19	[346]	RETURN   	0 1
+constants (5) for 00000201CCED73B0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"CheckFinish"
+	5	"CheckCanMergeMaxCardItem"
+locals (1) for 00000201CCED73B0:
+	0	self	1	20
+upvalues (1) for 00000201CCED73B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:350,362> (33 instructions at 00000201CCED6930)
+1 param, 6 slots, 1 upvalue, 2 locals, 11 constants, 0 functions
+	1	[352]	GETTABLE 	1 0 -1	; "m_cacheData"
+	2	[352]	GETTABLE 	1 1 -2	; "chain"
+	3	[352]	EQ       	1 1 -3	; - nil
+	4	[352]	JMP      	0 13	; to 18
+	5	[352]	GETTABLE 	1 0 -1	; "m_cacheData"
+	6	[352]	GETTABLE 	1 1 -4	; "isFinish"
+	7	[352]	EQ       	0 1 -5	; - false
+	8	[352]	JMP      	0 9	; to 18
+	9	[354]	GETTABUP 	1 0 -6	; _ENV "GM"
+	10	[354]	GETTABLE 	1 1 -7	; "ItemDataModel"
+	11	[354]	SELF     	1 1 -8	; "GetTypeByChainAndLevel"
+	12	[354]	GETTABLE 	3 0 -1	; "m_cacheData"
+	13	[354]	GETTABLE 	3 3 -2	; "chain"
+	14	[354]	LOADK    	4 -9	; 1
+	15	[354]	TAILCALL 	1 4 0
+	16	[354]	RETURN   	1 0
+	17	[354]	JMP      	0 15	; to 33
+	18	[356]	SELF     	1 0 -10	; "TryGenerateNewChain"
+	19	[356]	CALL     	1 2 2
+	20	[357]	GETTABLE 	2 0 -1	; "m_cacheData"
+	21	[357]	SETTABLE 	2 -2 1	; "chain" -
+	22	[358]	GETTABLE 	2 0 -1	; "m_cacheData"
+	23	[358]	SETTABLE 	2 -4 -5	; "isFinish" false
+	24	[359]	SELF     	2 0 -11	; "SaveCacheData"
+	25	[359]	CALL     	2 2 1
+	26	[360]	GETTABUP 	2 0 -6	; _ENV "GM"
+	27	[360]	GETTABLE 	2 2 -7	; "ItemDataModel"
+	28	[360]	SELF     	2 2 -8	; "GetTypeByChainAndLevel"
+	29	[360]	MOVE     	4 1
+	30	[360]	LOADK    	5 -9	; 1
+	31	[360]	TAILCALL 	2 4 0
+	32	[360]	RETURN   	2 0
+	33	[362]	RETURN   	0 1
+constants (11) for 00000201CCED6930:
+	1	"m_cacheData"
+	2	"chain"
+	3	nil
+	4	"isFinish"
+	5	false
+	6	"GM"
+	7	"ItemDataModel"
+	8	"GetTypeByChainAndLevel"
+	9	1
+	10	"TryGenerateNewChain"
+	11	"SaveCacheData"
+locals (2) for 00000201CCED6930:
+	0	self	1	34
+	1	curChain	20	33
+upvalues (1) for 00000201CCED6930:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:365,412> (111 instructions at 00000201CCED70B0)
+3 params, 13 slots, 1 upvalue, 6 locals, 41 constants, 0 functions
+	1	[367]	SELF     	3 0 -1	; "CanGenerateCardItem"
+	2	[367]	CALL     	3 2 2
+	3	[367]	TEST     	3 1
+	4	[367]	JMP      	0 1	; to 6
+	5	[368]	RETURN   	0 1
+	6	[371]	GETTABLE 	3 0 -2	; "m_cacheData"
+	7	[371]	GETTABLE 	4 0 -2	; "m_cacheData"
+	8	[371]	GETTABLE 	4 4 -3	; "m_curCostEnergy"
+	9	[371]	TEST     	4 1
+	10	[371]	JMP      	0 1	; to 12
+	11	[371]	LOADK    	4 -4	; 0
+	12	[371]	SETTABLE 	3 -3 4	; "m_curCostEnergy" -
+	13	[373]	GETTABLE 	3 0 -2	; "m_cacheData"
+	14	[373]	GETTABLE 	3 3 -5	; "m_generateEnergy"
+	15	[373]	EQ       	0 3 -6	; - nil
+	16	[373]	JMP      	0 9	; to 26
+	17	[374]	GETTABLE 	3 0 -2	; "m_cacheData"
+	18	[374]	GETTABUP 	4 0 -7	; _ENV "MathUtil"
+	19	[374]	GETTABLE 	4 4 -8	; "Random"
+	20	[374]	GETTABLE 	5 0 -2	; "m_cacheData"
+	21	[374]	GETTABLE 	5 5 -3	; "m_curCostEnergy"
+	22	[374]	ADD      	5 5 -9	; - 1
+	23	[374]	GETTABLE 	6 0 -10	; "m_energyGenerateNum"
+	24	[374]	CALL     	4 3 2
+	25	[374]	SETTABLE 	3 -5 4	; "m_generateEnergy" -
+	26	[377]	GETTABLE 	3 0 -2	; "m_cacheData"
+	27	[377]	GETTABLE 	3 3 -3	; "m_curCostEnergy"
+	28	[377]	ADD      	3 3 1
+	29	[379]	GETTABUP 	4 0 -11	; _ENV "GM"
+	30	[379]	GETTABLE 	4 4 -12	; "MainBoardModel"
+	31	[379]	SELF     	4 4 -13	; "IsBoardFull"
+	32	[379]	CALL     	4 2 2
+	33	[379]	TEST     	4 0
+	34	[379]	JMP      	0 5	; to 40
+	35	[380]	GETTABLE 	4 0 -2	; "m_cacheData"
+	36	[380]	SETTABLE 	4 -3 3	; "m_curCostEnergy" -
+	37	[381]	SELF     	4 0 -14	; "SaveCacheData"
+	38	[381]	CALL     	4 2 1
+	39	[382]	RETURN   	0 1
+	40	[385]	GETTABLE 	4 0 -2	; "m_cacheData"
+	41	[385]	GETTABLE 	4 4 -5	; "m_generateEnergy"
+	42	[385]	LE       	0 4 3
+	43	[385]	JMP      	0 54	; to 98
+	44	[385]	GETTABLE 	4 0 -2	; "m_cacheData"
+	45	[385]	GETTABLE 	4 4 -15	; "m_generateByRound"
+	46	[385]	TEST     	4 1
+	47	[385]	JMP      	0 50	; to 98
+	48	[386]	GETTABLE 	4 0 -2	; "m_cacheData"
+	49	[386]	SETTABLE 	4 -15 -16	; "m_generateByRound" true
+	50	[387]	SELF     	4 0 -17	; "GenerateCardItem"
+	51	[387]	CALL     	4 2 2
+	52	[388]	GETTABUP 	5 0 -11	; _ENV "GM"
+	53	[388]	GETTABLE 	5 5 -12	; "MainBoardModel"
+	54	[388]	SELF     	5 5 -18	; "FindEmptyPositionInSpreadOrder"
+	55	[388]	SELF     	7 2 -19	; "GetPosition"
+	56	[388]	CALL     	7 2 0
+	57	[388]	CALL     	5 0 2
+	58	[389]	GETTABUP 	6 0 -11	; _ENV "GM"
+	59	[389]	GETTABLE 	6 6 -12	; "MainBoardModel"
+	60	[389]	SELF     	6 6 -20	; "SpreadItem"
+	61	[389]	MOVE     	8 2
+	62	[389]	MOVE     	9 5
+	63	[389]	MOVE     	10 4
+	64	[389]	NEWTABLE 	11 0 2
+	65	[389]	SETTABLE 	11 -21 -22	; "logSpread" false
+	66	[389]	GETTABUP 	12 0 -24	; _ENV "BoardSpreadType"
+	67	[389]	GETTABLE 	12 12 -25	; "CardItem"
+	68	[389]	SETTABLE 	11 -23 12	; "spreadType" -
+	69	[389]	CALL     	6 6 1
+	70	[390]	GETTABUP 	6 0 -26	; _ENV "EventDispatcher"
+	71	[390]	GETTABLE 	6 6 -27	; "DispatchEvent"
+	72	[390]	GETTABUP 	7 0 -28	; _ENV "EEventType"
+	73	[390]	GETTABLE 	7 7 -29	; "CardItemGenerate"
+	74	[390]	NEWTABLE 	8 0 1
+	75	[390]	GETTABUP 	9 0 -11	; _ENV "GM"
+	76	[390]	GETTABLE 	9 9 -12	; "MainBoardModel"
+	77	[390]	SELF     	9 9 -31	; "GetItem"
+	78	[390]	MOVE     	11 5
+	79	[390]	CALL     	9 3 2
+	80	[390]	SETTABLE 	8 -30 9	; "item" -
+	81	[390]	CALL     	6 3 1
+	82	[392]	GETTABUP 	6 0 -11	; _ENV "GM"
+	83	[392]	GETTABLE 	6 6 -32	; "BIManager"
+	84	[392]	SELF     	6 6 -33	; "LogAction"
+	85	[392]	GETTABUP 	8 0 -34	; _ENV "EBIType"
+	86	[392]	GETTABLE 	8 8 -35	; "CardItemGenerateByEnergy"
+	87	[392]	NEWTABLE 	9 0 5
+	88	[393]	SETTABLE 	9 -36 4	; "code" -
+	89	[394]	SETTABLE 	9 -37 1	; "costEnergy" -
+	90	[395]	GETTABLE 	10 0 -2	; "m_cacheData"
+	91	[395]	GETTABLE 	10 10 -5	; "m_generateEnergy"
+	92	[395]	SETTABLE 	9 -38 10	; "generateEnergy" -
+	93	[396]	SETTABLE 	9 -39 3	; "curAlreadyEnergy" -
+	94	[397]	SELF     	10 2 -41	; "GetType"
+	95	[397]	CALL     	10 2 2
+	96	[397]	SETTABLE 	9 -40 10	; "src" -
+	97	[392]	CALL     	6 4 1
+	98	[403]	GETTABLE 	4 0 -10	; "m_energyGenerateNum"
+	99	[403]	LE       	0 4 3
+	100	[403]	JMP      	0 4	; to 105
+	101	[404]	GETTABLE 	4 0 -2	; "m_cacheData"
+	102	[404]	SETTABLE 	4 -15 -22	; "m_generateByRound" false
+	103	[405]	GETTABLE 	4 0 -2	; "m_cacheData"
+	104	[405]	SETTABLE 	4 -5 -6	; "m_generateEnergy" nil
+	105	[408]	GETTABLE 	4 0 -2	; "m_cacheData"
+	106	[408]	GETTABLE 	5 0 -10	; "m_energyGenerateNum"
+	107	[408]	MOD      	5 3 5
+	108	[408]	SETTABLE 	4 -3 5	; "m_curCostEnergy" -
+	109	[411]	SELF     	4 0 -14	; "SaveCacheData"
+	110	[411]	CALL     	4 2 1
+	111	[412]	RETURN   	0 1
+constants (41) for 00000201CCED70B0:
+	1	"CanGenerateCardItem"
+	2	"m_cacheData"
+	3	"m_curCostEnergy"
+	4	0
+	5	"m_generateEnergy"
+	6	nil
+	7	"MathUtil"
+	8	"Random"
+	9	1
+	10	"m_energyGenerateNum"
+	11	"GM"
+	12	"MainBoardModel"
+	13	"IsBoardFull"
+	14	"SaveCacheData"
+	15	"m_generateByRound"
+	16	true
+	17	"GenerateCardItem"
+	18	"FindEmptyPositionInSpreadOrder"
+	19	"GetPosition"
+	20	"SpreadItem"
+	21	"logSpread"
+	22	false
+	23	"spreadType"
+	24	"BoardSpreadType"
+	25	"CardItem"
+	26	"EventDispatcher"
+	27	"DispatchEvent"
+	28	"EEventType"
+	29	"CardItemGenerate"
+	30	"item"
+	31	"GetItem"
+	32	"BIManager"
+	33	"LogAction"
+	34	"EBIType"
+	35	"CardItemGenerateByEnergy"
+	36	"code"
+	37	"costEnergy"
+	38	"generateEnergy"
+	39	"curAlreadyEnergy"
+	40	"src"
+	41	"GetType"
+locals (6) for 00000201CCED70B0:
+	0	self	1	112
+	1	num	1	112
+	2	source	1	112
+	3	nextNum	29	112
+	4	cardItemCode	52	98
+	5	position	58	98
+upvalues (1) for 00000201CCED70B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:414,457> (80 instructions at 00000201CCED6A30)
+2 params, 12 slots, 1 upvalue, 17 locals, 24 constants, 0 functions
+	1	[415]	SELF     	2 0 -1	; "CanGenerateCardItem"
+	2	[415]	CALL     	2 2 2
+	3	[415]	TEST     	2 1
+	4	[415]	JMP      	0 2	; to 7
+	5	[416]	LOADNIL  	2 0
+	6	[416]	RETURN   	2 2
+	7	[419]	GETTABLE 	2 0 -2	; "m_mapCardItemProduceConfig"
+	8	[419]	GETTABLE 	2 2 1
+	9	[420]	TEST     	2 1
+	10	[420]	JMP      	0 2	; to 13
+	11	[421]	LOADNIL  	3 0
+	12	[421]	RETURN   	3 2
+	13	[425]	GETTABUP 	3 0 -3	; _ENV "GM"
+	14	[425]	GETTABLE 	3 3 -4	; "LevelModel"
+	15	[425]	SELF     	3 3 -5	; "GetCurrentLevel"
+	16	[425]	CALL     	3 2 2
+	17	[426]	LOADNIL  	4 0
+	18	[427]	GETTABUP 	5 0 -6	; _ENV "ipairs"
+	19	[427]	MOVE     	6 2
+	20	[427]	CALL     	5 2 4
+	21	[427]	JMP      	0 11	; to 33
+	22	[428]	GETTABLE 	10 9 -7	; "LevelMin"
+	23	[428]	LE       	0 10 3
+	24	[428]	JMP      	0 8	; to 33
+	25	[428]	GETTABLE 	10 9 -8	; "LevelMax"
+	26	[428]	EQ       	1 10 -9	; - nil
+	27	[428]	JMP      	0 3	; to 31
+	28	[428]	GETTABLE 	10 9 -8	; "LevelMax"
+	29	[428]	LE       	0 3 10
+	30	[428]	JMP      	0 2	; to 33
+	31	[429]	MOVE     	4 9
+	32	[429]	JMP      	0 2	; to 35
+	33	[427]	TFORCALL 	5 2
+	34	[427]	TFORLOOP 	7 -13	; to 22
+	35	[434]	TEST     	4 1
+	36	[434]	JMP      	0 2	; to 39
+	37	[435]	LOADNIL  	5 0
+	38	[435]	RETURN   	5 2
+	39	[437]	LOADBOOL 	5 1 0
+	40	[439]	GETTABUP 	6 0 -6	; _ENV "ipairs"
+	41	[439]	GETTABLE 	7 0 -10	; "m_mapCardItemTypeConfig"
+	42	[439]	CALL     	6 2 4
+	43	[439]	JMP      	0 5	; to 49
+	44	[440]	GETTABLE 	11 10 -11	; "UnlockLevel"
+	45	[440]	LE       	0 11 3
+	46	[440]	JMP      	0 2	; to 49
+	47	[441]	LOADBOOL 	5 0 0
+	48	[441]	JMP      	0 2	; to 51
+	49	[439]	TFORCALL 	6 2
+	50	[439]	TFORLOOP 	8 -7	; to 44
+	51	[447]	TEST     	5 1
+	52	[447]	JMP      	0 2	; to 55
+	53	[448]	LOADNIL  	6 0
+	54	[448]	RETURN   	6 2
+	55	[451]	GETTABUP 	6 0 -12	; _ENV "math"
+	56	[451]	GETTABLE 	6 6 -13	; "random"
+	57	[451]	LOADK    	7 -14	; 10000
+	58	[451]	CALL     	6 2 2
+	59	[452]	GETTABLE 	7 4 -15	; "Chance"
+	60	[452]	LE       	1 6 7
+	61	[452]	JMP      	0 13	; to 75
+	62	[452]	GETTABUP 	7 0 -16	; _ENV "GameConfig"
+	63	[452]	GETTABLE 	7 7 -17	; "IsTestMode"
+	64	[452]	CALL     	7 1 2
+	65	[452]	TEST     	7 0
+	66	[452]	JMP      	0 11	; to 78
+	67	[452]	GETTABUP 	7 0 -18	; _ENV "PlayerPrefs"
+	68	[452]	GETTABLE 	7 7 -19	; "GetInt"
+	69	[452]	GETTABUP 	8 0 -20	; _ENV "EPlayerPrefKey"
+	70	[452]	GETTABLE 	8 8 -21	; "TestForceCreateCard"
+	71	[452]	LOADK    	9 -22	; 0
+	72	[452]	CALL     	7 3 2
+	73	[452]	EQ       	0 7 -23	; - 1
+	74	[452]	JMP      	0 3	; to 78
+	75	[453]	SELF     	7 0 -24	; "GenerateCardItem"
+	76	[453]	TAILCALL 	7 2 0
+	77	[453]	RETURN   	7 0
+	78	[456]	LOADNIL  	7 0
+	79	[456]	RETURN   	7 2
+	80	[457]	RETURN   	0 1
+constants (24) for 00000201CCED6A30:
+	1	"CanGenerateCardItem"
+	2	"m_mapCardItemProduceConfig"
+	3	"GM"
+	4	"LevelModel"
+	5	"GetCurrentLevel"
+	6	"ipairs"
+	7	"LevelMin"
+	8	"LevelMax"
+	9	nil
+	10	"m_mapCardItemTypeConfig"
+	11	"UnlockLevel"
+	12	"math"
+	13	"random"
+	14	10000
+	15	"Chance"
+	16	"GameConfig"
+	17	"IsTestMode"
+	18	"PlayerPrefs"
+	19	"GetInt"
+	20	"EPlayerPrefKey"
+	21	"TestForceCreateCard"
+	22	0
+	23	1
+	24	"GenerateCardItem"
+locals (17) for 00000201CCED6A30:
+	0	self	1	81
+	1	itemType	1	81
+	2	listProduceConfig	9	81
+	3	level	17	81
+	4	supportConfig	18	81
+	5	(for generator)	21	35
+	6	(for state)	21	35
+	7	(for control)	21	35
+	8	_	22	33
+	9	config	22	33
+	10	isLevelLock	40	81
+	11	(for generator)	43	51
+	12	(for state)	43	51
+	13	(for control)	43	51
+	14	_	44	49
+	15	cardConfig	44	49
+	16	random	59	81
+upvalues (1) for 00000201CCED6A30:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:460,491> (72 instructions at 00000201CCED74B0)
+1 param, 16 slots, 1 upvalue, 13 locals, 20 constants, 0 functions
+	1	[462]	GETTABLE 	1 0 -1	; "m_cacheData"
+	2	[462]	GETTABLE 	1 1 -2	; "isFinish"
+	3	[462]	EQ       	1 1 -3	; - nil
+	4	[462]	JMP      	0 4	; to 9
+	5	[462]	GETTABLE 	1 0 -1	; "m_cacheData"
+	6	[462]	GETTABLE 	1 1 -2	; "isFinish"
+	7	[462]	EQ       	0 1 -4	; - true
+	8	[462]	JMP      	0 2	; to 11
+	9	[463]	LOADBOOL 	1 0 0
+	10	[463]	RETURN   	1 2
+	11	[466]	GETTABLE 	1 0 -1	; "m_cacheData"
+	12	[466]	GETTABLE 	1 1 -5	; "chain"
+	13	[468]	GETTABUP 	2 0 -6	; _ENV "GM"
+	14	[468]	GETTABLE 	2 2 -7	; "ItemDataModel"
+	15	[468]	SELF     	2 2 -8	; "GetChainMaxLevel"
+	16	[468]	MOVE     	4 1
+	17	[468]	CALL     	2 3 2
+	18	[470]	GETTABUP 	3 0 -9	; _ENV "MathUtil"
+	19	[470]	GETTABLE 	3 3 -10	; "IntPow"
+	20	[470]	LOADK    	4 -11	; 2
+	21	[470]	SUB      	5 2 -12	; - 1
+	22	[470]	CALL     	3 3 2
+	23	[473]	GETTABUP 	4 0 -6	; _ENV "GM"
+	24	[473]	GETTABLE 	4 4 -13	; "MainBoardModel"
+	25	[473]	SELF     	4 4 -14	; "GetCodeCountMap"
+	26	[473]	LOADBOOL 	6 1 0
+	27	[473]	LOADBOOL 	7 1 0
+	28	[473]	LOADBOOL 	8 1 0
+	29	[473]	CALL     	4 5 2
+	30	[475]	LOADK    	5 -15	; 0
+	31	[476]	GETTABUP 	6 0 -16	; _ENV "pairs"
+	32	[476]	MOVE     	7 4
+	33	[476]	CALL     	6 2 4
+	34	[476]	JMP      	0 25	; to 60
+	35	[477]	GETTABUP 	11 0 -17	; _ENV "ItemModelFactory"
+	36	[477]	GETTABLE 	11 11 -18	; "GetCodePrefixTargetType"
+	37	[477]	MOVE     	12 9
+	38	[477]	CALL     	11 2 2
+	39	[477]	EQ       	0 11 -3	; - nil
+	40	[477]	JMP      	0 19	; to 60
+	41	[478]	GETTABUP 	11 0 -6	; _ENV "GM"
+	42	[478]	GETTABLE 	11 11 -7	; "ItemDataModel"
+	43	[478]	SELF     	11 11 -19	; "GetChainId"
+	44	[478]	MOVE     	13 9
+	45	[478]	CALL     	11 3 2
+	46	[479]	EQ       	0 11 1
+	47	[479]	JMP      	0 12	; to 60
+	48	[480]	GETTABUP 	12 0 -6	; _ENV "GM"
+	49	[480]	GETTABLE 	12 12 -7	; "ItemDataModel"
+	50	[480]	SELF     	12 12 -20	; "GetChainLevel"
+	51	[480]	MOVE     	14 9
+	52	[480]	CALL     	12 3 2
+	53	[481]	GETTABUP 	13 0 -9	; _ENV "MathUtil"
+	54	[481]	GETTABLE 	13 13 -10	; "IntPow"
+	55	[481]	LOADK    	14 -11	; 2
+	56	[481]	SUB      	15 12 -12	; - 1
+	57	[481]	CALL     	13 3 2
+	58	[481]	MUL      	13 13 10
+	59	[481]	ADD      	5 5 13
+	60	[476]	TFORCALL 	6 2
+	61	[476]	TFORLOOP 	8 -27	; to 35
+	62	[486]	EQ       	1 5 -15	; - 0
+	63	[486]	JMP      	0 5	; to 69
+	64	[486]	MOD      	6 5 3
+	65	[486]	EQ       	0 6 -15	; - 0
+	66	[486]	JMP      	0 2	; to 69
+	67	[487]	LOADBOOL 	6 1 0
+	68	[487]	RETURN   	6 2
+	69	[490]	LOADBOOL 	6 0 0
+	70	[490]	MOVE     	7 5
+	71	[490]	RETURN   	6 3
+	72	[491]	RETURN   	0 1
+constants (20) for 00000201CCED74B0:
+	1	"m_cacheData"
+	2	"isFinish"
+	3	nil
+	4	true
+	5	"chain"
+	6	"GM"
+	7	"ItemDataModel"
+	8	"GetChainMaxLevel"
+	9	"MathUtil"
+	10	"IntPow"
+	11	2
+	12	1
+	13	"MainBoardModel"
+	14	"GetCodeCountMap"
+	15	0
+	16	"pairs"
+	17	"ItemModelFactory"
+	18	"GetCodePrefixTargetType"
+	19	"GetChainId"
+	20	"GetChainLevel"
+locals (13) for 00000201CCED74B0:
+	0	self	1	73
+	1	curChain	13	73
+	2	maxLevel	18	73
+	3	needOneLevelNum	23	73
+	4	mapItemNum	30	73
+	5	curNum	31	73
+	6	(for generator)	34	62
+	7	(for state)	34	62
+	8	(for control)	34	62
+	9	code	35	60
+	10	num	35	60
+	11	chain	46	60
+	12	level	53	60
+upvalues (1) for 00000201CCED74B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:494,519> (42 instructions at 00000201CCED71B0)
+1 param, 13 slots, 1 upvalue, 11 locals, 14 constants, 0 functions
+	1	[495]	NEWTABLE 	1 0 0
+	2	[496]	NEWTABLE 	2 0 0
+	3	[497]	GETTABLE 	3 0 -1	; "m_cacheData"
+	4	[497]	GETTABLE 	3 3 -2	; "chain"
+	5	[499]	GETTABUP 	4 0 -3	; _ENV "GM"
+	6	[499]	GETTABLE 	4 4 -4	; "LevelModel"
+	7	[499]	SELF     	4 4 -5	; "GetCurrentLevel"
+	8	[499]	CALL     	4 2 2
+	9	[500]	GETTABUP 	5 0 -6	; _ENV "pairs"
+	10	[500]	GETTABLE 	6 0 -7	; "m_mapCardItemTypeConfig"
+	11	[500]	CALL     	5 2 4
+	12	[500]	JMP      	0 17	; to 30
+	13	[501]	GETTABLE 	10 9 -8	; "UnlockLevel"
+	14	[501]	LE       	0 10 4
+	15	[501]	JMP      	0 14	; to 30
+	16	[502]	GETTABLE 	10 9 -9	; "ItemChain"
+	17	[502]	EQ       	1 3 10
+	18	[502]	JMP      	0 6	; to 25
+	19	[503]	GETTABUP 	10 0 -10	; _ENV "table"
+	20	[503]	GETTABLE 	10 10 -11	; "insert"
+	21	[503]	MOVE     	11 1
+	22	[503]	MOVE     	12 9
+	23	[503]	CALL     	10 3 1
+	24	[503]	JMP      	0 5	; to 30
+	25	[505]	GETTABUP 	10 0 -10	; _ENV "table"
+	26	[505]	GETTABLE 	10 10 -11	; "insert"
+	27	[505]	MOVE     	11 2
+	28	[505]	MOVE     	12 9
+	29	[505]	CALL     	10 3 1
+	30	[500]	TFORCALL 	5 2
+	31	[500]	TFORLOOP 	7 -19	; to 13
+	32	[510]	LEN      	5 1
+	33	[510]	EQ       	0 5 -12	; - 0
+	34	[510]	JMP      	0 1	; to 36
+	35	[511]	MOVE     	1 2
+	36	[516]	GETTABUP 	5 0 -13	; _ENV "Table"
+	37	[516]	GETTABLE 	5 5 -14	; "ListWeightSelectOne"
+	38	[516]	MOVE     	6 1
+	39	[516]	CALL     	5 2 2
+	40	[518]	GETTABLE 	6 5 -9	; "ItemChain"
+	41	[518]	RETURN   	6 2
+	42	[519]	RETURN   	0 1
+constants (14) for 00000201CCED71B0:
+	1	"m_cacheData"
+	2	"chain"
+	3	"GM"
+	4	"LevelModel"
+	5	"GetCurrentLevel"
+	6	"pairs"
+	7	"m_mapCardItemTypeConfig"
+	8	"UnlockLevel"
+	9	"ItemChain"
+	10	"table"
+	11	"insert"
+	12	0
+	13	"Table"
+	14	"ListWeightSelectOne"
+locals (11) for 00000201CCED71B0:
+	0	self	1	43
+	1	listChain	2	43
+	2	backListChain	3	43
+	3	oldChain	5	43
+	4	level	9	43
+	5	(for generator)	12	32
+	6	(for state)	12	32
+	7	(for control)	12	32
+	8	_	13	30
+	9	cardItemConfig	13	30
+	10	targetConfig	40	43
+upvalues (1) for 00000201CCED71B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:521,537> (27 instructions at 00000201CCED68B0)
+2 params, 9 slots, 1 upvalue, 8 locals, 8 constants, 0 functions
+	1	[526]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[526]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[526]	GETTABLE 	3 0 -3	; "m_mapCardItemTypeConfig"
+	4	[526]	CALL     	2 2 2
+	5	[526]	TEST     	2 0
+	6	[526]	JMP      	0 2	; to 9
+	7	[527]	LOADBOOL 	2 0 0
+	8	[527]	RETURN   	2 2
+	9	[530]	GETTABUP 	2 0 -4	; _ENV "GM"
+	10	[530]	GETTABLE 	2 2 -5	; "ItemDataModel"
+	11	[530]	SELF     	2 2 -6	; "GetChainId"
+	12	[530]	MOVE     	4 1
+	13	[530]	CALL     	2 3 2
+	14	[531]	GETTABUP 	3 0 -7	; _ENV "pairs"
+	15	[531]	GETTABLE 	4 0 -3	; "m_mapCardItemTypeConfig"
+	16	[531]	CALL     	3 2 4
+	17	[531]	JMP      	0 5	; to 23
+	18	[532]	GETTABLE 	8 7 -8	; "ItemChain"
+	19	[532]	EQ       	0 8 2
+	20	[532]	JMP      	0 2	; to 23
+	21	[533]	LOADBOOL 	8 1 0
+	22	[533]	RETURN   	8 2
+	23	[531]	TFORCALL 	3 2
+	24	[531]	TFORLOOP 	5 -7	; to 18
+	25	[536]	LOADBOOL 	3 0 0
+	26	[536]	RETURN   	3 2
+	27	[537]	RETURN   	0 1
+constants (8) for 00000201CCED68B0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_mapCardItemTypeConfig"
+	4	"GM"
+	5	"ItemDataModel"
+	6	"GetChainId"
+	7	"pairs"
+	8	"ItemChain"
+locals (8) for 00000201CCED68B0:
+	0	self	1	28
+	1	itemType	1	28
+	2	itemChain	14	28
+	3	(for generator)	17	25
+	4	(for state)	17	25
+	5	(for control)	17	25
+	6	_	18	23
+	7	cardItemConfig	18	23
+upvalues (1) for 00000201CCED68B0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:539,551> (29 instructions at 00000201CCED6E30)
+2 params, 7 slots, 1 upvalue, 5 locals, 7 constants, 0 functions
+	1	[540]	SELF     	2 0 -1	; "IsCardItem"
+	2	[540]	MOVE     	4 1
+	3	[540]	CALL     	2 3 2
+	4	[540]	EQ       	1 2 -2	; - true
+	5	[540]	JMP      	0 2	; to 8
+	6	[541]	LOADBOOL 	2 0 0
+	7	[541]	RETURN   	2 2
+	8	[543]	GETTABUP 	2 0 -3	; _ENV "GM"
+	9	[543]	GETTABLE 	2 2 -4	; "ItemDataModel"
+	10	[543]	SELF     	2 2 -5	; "GetChainId"
+	11	[543]	MOVE     	4 1
+	12	[543]	CALL     	2 3 2
+	13	[544]	GETTABUP 	3 0 -3	; _ENV "GM"
+	14	[544]	GETTABLE 	3 3 -4	; "ItemDataModel"
+	15	[544]	SELF     	3 3 -6	; "GetChainMaxLevel"
+	16	[544]	MOVE     	5 2
+	17	[544]	CALL     	3 3 2
+	18	[545]	GETTABUP 	4 0 -3	; _ENV "GM"
+	19	[545]	GETTABLE 	4 4 -4	; "ItemDataModel"
+	20	[545]	SELF     	4 4 -7	; "GetChainLevel"
+	21	[545]	MOVE     	6 1
+	22	[545]	CALL     	4 3 2
+	23	[546]	EQ       	0 4 3
+	24	[546]	JMP      	0 2	; to 27
+	25	[547]	LOADBOOL 	5 1 0
+	26	[547]	RETURN   	5 2
+	27	[550]	LOADBOOL 	5 0 0
+	28	[550]	RETURN   	5 2
+	29	[551]	RETURN   	0 1
+constants (7) for 00000201CCED6E30:
+	1	"IsCardItem"
+	2	true
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetChainId"
+	6	"GetChainMaxLevel"
+	7	"GetChainLevel"
+locals (5) for 00000201CCED6E30:
+	0	self	1	30
+	1	itemType	1	30
+	2	itemChain	13	30
+	3	maxLevel	18	30
+	4	curLevel	23	30
+upvalues (1) for 00000201CCED6E30:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:554,557> (12 instructions at 00000201CCEDBDA0)
+2 params, 5 slots, 1 upvalue, 3 locals, 4 constants, 0 functions
+	1	[555]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[555]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[555]	SELF     	2 2 -3	; "GetChainId"
+	4	[555]	MOVE     	4 1
+	5	[555]	CALL     	2 3 2
+	6	[556]	GETTABLE 	3 0 -4	; "m_mapCardItemTypeConfig"
+	7	[556]	TEST     	3 0
+	8	[556]	JMP      	0 2	; to 11
+	9	[556]	GETTABLE 	3 0 -4	; "m_mapCardItemTypeConfig"
+	10	[556]	GETTABLE 	3 3 2
+	11	[556]	RETURN   	3 2
+	12	[557]	RETURN   	0 1
+constants (4) for 00000201CCEDBDA0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"m_mapCardItemTypeConfig"
+locals (3) for 00000201CCEDBDA0:
+	0	self	1	13
+	1	itemType	1	13
+	2	chain	6	13
+upvalues (1) for 00000201CCEDBDA0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:559,561> (6 instructions at 00000201CCEDC920)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[560]	NEWTABLE 	1 1 0
+	2	[560]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[560]	GETTABLE 	2 2 -2	; "CardItem"
+	4	[560]	SETLIST  	1 1 1	; 1
+	5	[560]	RETURN   	1 2
+	6	[561]	RETURN   	0 1
+constants (2) for 00000201CCEDC920:
+	1	"AddressableLabel"
+	2	"CardItem"
+locals (1) for 00000201CCEDC920:
+	0	self	1	7
+upvalues (1) for 00000201CCEDC920:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:565,643> (185 instructions at 00000201CCEDD4A0)
+1 param, 21 slots, 1 upvalue, 31 locals, 37 constants, 1 function
+	1	[566]	LOADK    	1 -1	; "\229\189\147\229\137\141\231\173\137\231\186\167\232\131\189\228\186\167\231\148\159\229\141\161\231\137\140\239\188\154\n"
+	2	[567]	GETTABUP 	2 0 -2	; _ENV "GM"
+	3	[567]	GETTABLE 	2 2 -3	; "LevelModel"
+	4	[567]	SELF     	2 2 -4	; "GetCurrentLevel"
+	5	[567]	CALL     	2 2 2
+	6	[568]	GETTABUP 	3 0 -5	; _ENV "pairs"
+	7	[568]	GETTABLE 	4 0 -6	; "m_mapCardItemTypeConfig"
+	8	[568]	CALL     	3 2 4
+	9	[568]	JMP      	0 9	; to 19
+	10	[569]	GETTABLE 	8 7 -7	; "UnlockLevel"
+	11	[569]	LE       	0 8 2
+	12	[569]	JMP      	0 6	; to 19
+	13	[570]	MOVE     	8 1
+	14	[570]	GETTABLE 	9 7 -8	; "ItemChain"
+	15	[570]	LOADK    	10 -9	; ":"
+	16	[570]	GETTABLE 	11 7 -10	; "Weight"
+	17	[570]	LOADK    	12 -11	; ";  "
+	18	[570]	CONCAT   	1 8 12
+	19	[568]	TFORCALL 	3 2
+	20	[568]	TFORLOOP 	5 -11	; to 10
+	21	[574]	MOVE     	3 1
+	22	[574]	LOADK    	4 -12	; "\n"
+	23	[574]	CONCAT   	1 3 4
+	24	[576]	NEWTABLE 	3 0 0
+	25	[577]	GETTABUP 	4 0 -5	; _ENV "pairs"
+	26	[577]	GETTABLE 	5 0 -13	; "m_mapCardItemProduceConfig"
+	27	[577]	CALL     	4 2 4
+	28	[577]	JMP      	0 21	; to 50
+	29	[578]	GETTABUP 	9 0 -14	; _ENV "ipairs"
+	30	[578]	MOVE     	10 8
+	31	[578]	CALL     	9 2 4
+	32	[578]	JMP      	0 15	; to 48
+	33	[579]	GETTABLE 	14 13 -15	; "LevelMin"
+	34	[579]	LE       	0 14 2
+	35	[579]	JMP      	0 12	; to 48
+	36	[579]	GETTABLE 	14 13 -16	; "LevelMax"
+	37	[579]	EQ       	1 14 -17	; - nil
+	38	[579]	JMP      	0 3	; to 42
+	39	[579]	GETTABLE 	14 13 -16	; "LevelMax"
+	40	[579]	LE       	0 2 14
+	41	[579]	JMP      	0 6	; to 48
+	42	[580]	GETTABUP 	14 0 -18	; _ENV "table"
+	43	[580]	GETTABLE 	14 14 -19	; "insert"
+	44	[580]	MOVE     	15 3
+	45	[580]	MOVE     	16 13
+	46	[580]	CALL     	14 3 1
+	47	[580]	JMP      	0 2	; to 50
+	48	[578]	TFORCALL 	9 2
+	49	[578]	TFORLOOP 	11 -17	; to 33
+	50	[577]	TFORCALL 	4 2
+	51	[577]	TFORLOOP 	6 -23	; to 29
+	52	[586]	GETTABUP 	4 0 -18	; _ENV "table"
+	53	[586]	GETTABLE 	4 4 -20	; "sort"
+	54	[586]	MOVE     	5 3
+	55	[598]	CLOSURE  	6 0	; 00000201CCEDD620
+	56	[586]	CALL     	4 3 1
+	57	[600]	MOVE     	4 1
+	58	[600]	LOADK    	5 -21	; "\229\143\175\232\167\166\229\143\145\231\154\132\230\163\139\229\173\144:"
+	59	[600]	CONCAT   	1 4 5
+	60	[602]	LOADNIL  	4 2
+	61	[606]	GETTABUP 	7 0 -14	; _ENV "ipairs"
+	62	[606]	MOVE     	8 3
+	63	[606]	CALL     	7 2 4
+	64	[606]	JMP      	0 73	; to 138
+	65	[607]	EQ       	0 6 -17	; - nil
+	66	[607]	JMP      	0 14	; to 81
+	67	[608]	GETTABUP 	12 0 -2	; _ENV "GM"
+	68	[608]	GETTABLE 	12 12 -22	; "ItemDataModel"
+	69	[608]	SELF     	12 12 -23	; "GetChainId"
+	70	[608]	GETTABLE 	14 11 -24	; "ItemType"
+	71	[608]	CALL     	12 3 2
+	72	[608]	MOVE     	6 12
+	73	[609]	GETTABUP 	12 0 -2	; _ENV "GM"
+	74	[609]	GETTABLE 	12 12 -22	; "ItemDataModel"
+	75	[609]	SELF     	12 12 -25	; "GetChainLevel"
+	76	[609]	GETTABLE 	14 11 -24	; "ItemType"
+	77	[609]	CALL     	12 3 2
+	78	[609]	MOVE     	5 12
+	79	[610]	MOVE     	4 5
+	80	[610]	JMP      	0 57	; to 138
+	81	[612]	GETTABUP 	12 0 -2	; _ENV "GM"
+	82	[612]	GETTABLE 	12 12 -22	; "ItemDataModel"
+	83	[612]	SELF     	12 12 -23	; "GetChainId"
+	84	[612]	GETTABLE 	14 11 -24	; "ItemType"
+	85	[612]	CALL     	12 3 2
+	86	[613]	GETTABUP 	13 0 -2	; _ENV "GM"
+	87	[613]	GETTABLE 	13 13 -22	; "ItemDataModel"
+	88	[613]	SELF     	13 13 -25	; "GetChainLevel"
+	89	[613]	GETTABLE 	15 11 -24	; "ItemType"
+	90	[613]	CALL     	13 3 2
+	91	[614]	EQ       	1 6 12
+	92	[614]	JMP      	0 20	; to 113
+	93	[615]	MOVE     	14 1
+	94	[615]	GETTABUP 	15 0 -2	; _ENV "GM"
+	95	[615]	GETTABLE 	15 15 -22	; "ItemDataModel"
+	96	[615]	SELF     	15 15 -26	; "GetTypeByChainAndLevel"
+	97	[615]	MOVE     	17 6
+	98	[615]	MOVE     	18 5
+	99	[615]	CALL     	15 4 2
+	100	[615]	LOADK    	16 -27	; "-"
+	101	[615]	GETTABUP 	17 0 -2	; _ENV "GM"
+	102	[615]	GETTABLE 	17 17 -22	; "ItemDataModel"
+	103	[615]	SELF     	17 17 -26	; "GetTypeByChainAndLevel"
+	104	[615]	MOVE     	19 6
+	105	[615]	MOVE     	20 4
+	106	[615]	CALL     	17 4 2
+	107	[615]	LOADK    	18 -12	; "\n"
+	108	[615]	CONCAT   	1 14 18
+	109	[616]	MOVE     	6 12
+	110	[617]	MOVE     	5 13
+	111	[618]	MOVE     	4 13
+	112	[618]	JMP      	0 25	; to 138
+	113	[619]	EQ       	0 6 12
+	114	[619]	JMP      	0 23	; to 138
+	115	[620]	ADD      	14 4 -28	; - 1
+	116	[620]	EQ       	0 14 13
+	117	[620]	JMP      	0 2	; to 120
+	118	[621]	MOVE     	4 13
+	119	[621]	JMP      	0 18	; to 138
+	120	[623]	MOVE     	14 1
+	121	[623]	GETTABUP 	15 0 -2	; _ENV "GM"
+	122	[623]	GETTABLE 	15 15 -22	; "ItemDataModel"
+	123	[623]	SELF     	15 15 -26	; "GetTypeByChainAndLevel"
+	124	[623]	MOVE     	17 6
+	125	[623]	MOVE     	18 5
+	126	[623]	CALL     	15 4 2
+	127	[623]	LOADK    	16 -27	; "-"
+	128	[623]	GETTABUP 	17 0 -2	; _ENV "GM"
+	129	[623]	GETTABLE 	17 17 -22	; "ItemDataModel"
+	130	[623]	SELF     	17 17 -26	; "GetTypeByChainAndLevel"
+	131	[623]	MOVE     	19 6
+	132	[623]	MOVE     	20 4
+	133	[623]	CALL     	17 4 2
+	134	[623]	LOADK    	18 -12	; "\n"
+	135	[623]	CONCAT   	1 14 18
+	136	[624]	MOVE     	5 13
+	137	[625]	MOVE     	4 13
+	138	[606]	TFORCALL 	7 2
+	139	[606]	TFORLOOP 	9 -75	; to 65
+	140	[631]	EQ       	1 6 -17	; - nil
+	141	[631]	JMP      	0 16	; to 158
+	142	[632]	MOVE     	7 1
+	143	[632]	GETTABUP 	8 0 -2	; _ENV "GM"
+	144	[632]	GETTABLE 	8 8 -22	; "ItemDataModel"
+	145	[632]	SELF     	8 8 -26	; "GetTypeByChainAndLevel"
+	146	[632]	MOVE     	10 6
+	147	[632]	MOVE     	11 5
+	148	[632]	CALL     	8 4 2
+	149	[632]	LOADK    	9 -27	; "-"
+	150	[632]	GETTABUP 	10 0 -2	; _ENV "GM"
+	151	[632]	GETTABLE 	10 10 -22	; "ItemDataModel"
+	152	[632]	SELF     	10 10 -26	; "GetTypeByChainAndLevel"
+	153	[632]	MOVE     	12 6
+	154	[632]	MOVE     	13 4
+	155	[632]	CALL     	10 4 2
+	156	[632]	LOADK    	11 -12	; "\n"
+	157	[632]	CONCAT   	1 7 11
+	158	[635]	GETTABLE 	7 0 -29	; "m_energyGenerateNum"
+	159	[635]	EQ       	1 7 -17	; - nil
+	160	[635]	JMP      	0 23	; to 184
+	161	[636]	MOVE     	7 1
+	162	[636]	LOADK    	8 -30	; "\228\189\147\229\138\155\231\155\184\229\133\179\228\191\161\230\129\175:"
+	163	[636]	LOADK    	9 -31	; "\229\190\170\231\142\175\230\149\176"
+	164	[636]	GETTABLE 	10 0 -29	; "m_energyGenerateNum"
+	165	[636]	LOADK    	11 -12	; "\n"
+	166	[636]	CONCAT   	1 7 11
+	167	[637]	GETTABLE 	7 0 -32	; "m_cacheData"
+	168	[637]	GETTABLE 	7 7 -33	; "m_curCostEnergy"
+	169	[637]	TEST     	7 1
+	170	[637]	JMP      	0 1	; to 172
+	171	[637]	LOADK    	7 -34	; "0"
+	172	[638]	GETTABLE 	8 0 -32	; "m_cacheData"
+	173	[638]	GETTABLE 	8 8 -35	; "m_generateEnergy"
+	174	[638]	TEST     	8 1
+	175	[638]	JMP      	0 1	; to 177
+	176	[638]	LOADK    	8 -34	; "0"
+	177	[639]	MOVE     	9 1
+	178	[639]	LOADK    	10 -36	; "\229\189\147\229\137\141\232\174\161\230\149\176:"
+	179	[639]	MOVE     	11 7
+	180	[639]	LOADK    	12 -37	; " \231\148\159\230\136\144\232\174\161\230\149\176"
+	181	[639]	MOVE     	13 8
+	182	[639]	LOADK    	14 -12	; "\n"
+	183	[639]	CONCAT   	1 9 14
+	184	[642]	RETURN   	1 2
+	185	[643]	RETURN   	0 1
+constants (37) for 00000201CCEDD4A0:
+	1	"\229\189\147\229\137\141\231\173\137\231\186\167\232\131\189\228\186\167\231\148\159\229\141\161\231\137\140\239\188\154\n"
+	2	"GM"
+	3	"LevelModel"
+	4	"GetCurrentLevel"
+	5	"pairs"
+	6	"m_mapCardItemTypeConfig"
+	7	"UnlockLevel"
+	8	"ItemChain"
+	9	":"
+	10	"Weight"
+	11	";  "
+	12	"\n"
+	13	"m_mapCardItemProduceConfig"
+	14	"ipairs"
+	15	"LevelMin"
+	16	"LevelMax"
+	17	nil
+	18	"table"
+	19	"insert"
+	20	"sort"
+	21	"\229\143\175\232\167\166\229\143\145\231\154\132\230\163\139\229\173\144:"
+	22	"ItemDataModel"
+	23	"GetChainId"
+	24	"ItemType"
+	25	"GetChainLevel"
+	26	"GetTypeByChainAndLevel"
+	27	"-"
+	28	1
+	29	"m_energyGenerateNum"
+	30	"\228\189\147\229\138\155\231\155\184\229\133\179\228\191\161\230\129\175:"
+	31	"\229\190\170\231\142\175\230\149\176"
+	32	"m_cacheData"
+	33	"m_curCostEnergy"
+	34	"0"
+	35	"m_generateEnergy"
+	36	"\229\189\147\229\137\141\232\174\161\230\149\176:"
+	37	" \231\148\159\230\136\144\232\174\161\230\149\176"
+locals (31) for 00000201CCEDD4A0:
+	0	self	1	186
+	1	str	2	186
+	2	level	6	186
+	3	(for generator)	9	21
+	4	(for state)	9	21
+	5	(for control)	9	21
+	6	_	10	19
+	7	cardItemConfig	10	19
+	8	listItemConfig	25	186
+	9	(for generator)	28	52
+	10	(for state)	28	52
+	11	(for control)	28	52
+	12	itemType	29	50
+	13	listConfig	29	50
+	14	(for generator)	32	50
+	15	(for state)	32	50
+	16	(for control)	32	50
+	17	_	33	48
+	18	config	33	48
+	19	finishIndex	61	186
+	20	startIndex	61	186
+	21	curChain	61	186
+	22	(for generator)	64	140
+	23	(for state)	64	140
+	24	(for control)	64	140
+	25	_	65	138
+	26	config	65	138
+	27	chain	86	138
+	28	level	91	138
+	29	curCostEnergy	172	184
+	30	curGenEnergy	177	184
+upvalues (1) for 00000201CCEDD4A0:
+	0	_ENV	0	0
+
+function <CardItemModel.lua:586,598> (36 instructions at 00000201CCEDD620)
+2 params, 10 slots, 1 upvalue, 8 locals, 5 constants, 0 functions
+	1	[587]	GETTABLE 	2 0 -1	; "ItemType"
+	2	[588]	GETTABLE 	3 1 -1	; "ItemType"
+	3	[589]	GETTABUP 	4 0 -2	; _ENV "GM"
+	4	[589]	GETTABLE 	4 4 -3	; "ItemDataModel"
+	5	[589]	SELF     	4 4 -4	; "GetChainId"
+	6	[589]	MOVE     	6 2
+	7	[589]	CALL     	4 3 2
+	8	[590]	GETTABUP 	5 0 -2	; _ENV "GM"
+	9	[590]	GETTABLE 	5 5 -3	; "ItemDataModel"
+	10	[590]	SELF     	5 5 -4	; "GetChainId"
+	11	[590]	MOVE     	7 3
+	12	[590]	CALL     	5 3 2
+	13	[591]	GETTABUP 	6 0 -2	; _ENV "GM"
+	14	[591]	GETTABLE 	6 6 -3	; "ItemDataModel"
+	15	[591]	SELF     	6 6 -5	; "GetChainLevel"
+	16	[591]	MOVE     	8 2
+	17	[591]	CALL     	6 3 2
+	18	[592]	GETTABUP 	7 0 -2	; _ENV "GM"
+	19	[592]	GETTABLE 	7 7 -3	; "ItemDataModel"
+	20	[592]	SELF     	7 7 -5	; "GetChainLevel"
+	21	[592]	MOVE     	9 3
+	22	[592]	CALL     	7 3 2
+	23	[593]	EQ       	0 4 5
+	24	[593]	JMP      	0 6	; to 31
+	25	[594]	LT       	1 6 7
+	26	[594]	JMP      	0 1	; to 28
+	27	[594]	LOADBOOL 	8 0 1
+	28	[594]	LOADBOOL 	8 1 0
+	29	[594]	RETURN   	8 2
+	30	[594]	JMP      	0 5	; to 36
+	31	[596]	LT       	1 4 5
+	32	[596]	JMP      	0 1	; to 34
+	33	[596]	LOADBOOL 	8 0 1
+	34	[596]	LOADBOOL 	8 1 0
+	35	[596]	RETURN   	8 2
+	36	[598]	RETURN   	0 1
+constants (5) for 00000201CCEDD620:
+	1	"ItemType"
+	2	"GM"
+	3	"ItemDataModel"
+	4	"GetChainId"
+	5	"GetChainLevel"
+locals (8) for 00000201CCEDD620:
+	0	a	1	37
+	1	b	1	37
+	2	aType	2	37
+	3	bType	3	37
+	4	aChain	8	37
+	5	bChain	13	37
+	6	aLevel	18	37
+	7	bLevel	23	37
+upvalues (1) for 00000201CCEDD620:
+	0	_ENV	0	0

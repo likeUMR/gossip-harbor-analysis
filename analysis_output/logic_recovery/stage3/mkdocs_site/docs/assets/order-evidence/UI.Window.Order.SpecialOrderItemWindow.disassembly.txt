@@ -1,0 +1,659 @@
+
+main <SpecialOrderItemWindow.lua:0,0> (18 instructions at 000001D55663F000)
+0+ params, 3 slots, 1 upvalue, 0 locals, 11 constants, 2 functions
+	1	[3]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[3]	NEWTABLE 	1 0 3
+	3	[4]	SETTABLE 	1 -3 -4	; "canClickWindowMask" true
+	4	[5]	SETTABLE 	1 -5 -6	; "needBlurEffect" false
+	5	[6]	SETTABLE 	1 -7 -6	; "canCloseByAndroidBack" false
+	6	[7]	GETTABUP 	2 0 -8	; _ENV "BaseWindow"
+	7	[3]	CALL     	0 3 2
+	8	[7]	SETTABUP 	0 -1 0	; _ENV "SpecialOrderItemWindow"
+	9	[8]	GETTABUP 	0 0 -1	; _ENV "SpecialOrderItemWindow"
+	10	[8]	GETTABUP 	1 0 -1	; _ENV "SpecialOrderItemWindow"
+	11	[8]	SETTABLE 	0 -9 1	; "__index" -
+	12	[10]	GETTABUP 	0 0 -1	; _ENV "SpecialOrderItemWindow"
+	13	[104]	CLOSURE  	1 0	; 000001D55663F2B0
+	14	[10]	SETTABLE 	0 -10 1	; "Init" -
+	15	[106]	GETTABUP 	0 0 -1	; _ENV "SpecialOrderItemWindow"
+	16	[140]	CLOSURE  	1 1	; 000001D55663EA70
+	17	[106]	SETTABLE 	0 -11 1	; "OnWindowMaskClicked" -
+	18	[140]	RETURN   	0 1
+constants (11) for 000001D55663F000:
+	1	"SpecialOrderItemWindow"
+	2	"setmetatable"
+	3	"canClickWindowMask"
+	4	true
+	5	"needBlurEffect"
+	6	false
+	7	"canCloseByAndroidBack"
+	8	"BaseWindow"
+	9	"__index"
+	10	"Init"
+	11	"OnWindowMaskClicked"
+locals (0) for 000001D55663F000:
+upvalues (1) for 000001D55663F000:
+	0	_ENV	1	0
+
+function <SpecialOrderItemWindow.lua:10,104> (202 instructions at 000001D55663F2B0)
+2 params, 26 slots, 1 upvalue, 27 locals, 67 constants, 5 functions
+	1	[11]	SETTABLE 	0 -1 1	; "m_order" -
+	2	[14]	GETTABUP 	2 0 -2	; _ENV "DOTween"
+	3	[14]	GETTABLE 	2 2 -3	; "Sequence"
+	4	[14]	CALL     	2 1 2
+	5	[15]	SELF     	3 2 -4	; "InsertCallback"
+	6	[15]	LOADK    	5 -5	; 1
+	7	[19]	CLOSURE  	6 0	; 000001D55663F330
+	8	[15]	CALL     	3 4 1
+	9	[21]	SELF     	3 1 -6	; "GetRequirements"
+	10	[21]	CALL     	3 2 2
+	11	[22]	LOADNIL  	4 1
+	12	[24]	LOADK    	6 -7	; 0
+	13	[25]	LOADK    	7 -5	; 1
+	14	[25]	LOADK    	8 -8	; 3
+	15	[25]	LOADK    	9 -5	; 1
+	16	[25]	FORPREP  	7 21	; to 38
+	17	[26]	LOADK    	11 -9	; "m_itemGo"
+	18	[26]	MOVE     	12 10
+	19	[26]	CONCAT   	11 11 12
+	20	[26]	GETTABLE 	4 0 11
+	21	[27]	GETTABUP 	11 0 -10	; _ENV "UIUtil"
+	22	[27]	GETTABLE 	11 11 -11	; "SetActive"
+	23	[27]	GETTABLE 	12 4 -12	; "gameObject"
+	24	[27]	GETTABLE 	13 3 10
+	25	[27]	EQ       	0 13 -13	; - nil
+	26	[27]	JMP      	0 1	; to 28
+	27	[27]	LOADBOOL 	13 0 1
+	28	[27]	LOADBOOL 	13 1 0
+	29	[27]	CALL     	11 3 1
+	30	[28]	GETTABLE 	11 3 10
+	31	[28]	EQ       	1 11 -13	; - nil
+	32	[28]	JMP      	0 3	; to 36
+	33	[28]	LOADK    	11 -5	; 1
+	34	[28]	TEST     	11 1
+	35	[28]	JMP      	0 1	; to 37
+	36	[28]	LOADK    	11 -7	; 0
+	37	[28]	ADD      	6 6 11
+	38	[25]	FORLOOP  	7 -22	; to 17
+	39	[30]	GETTABUP 	7 0 -14	; _ENV "LayoutRebuilder"
+	40	[30]	GETTABLE 	7 7 -15	; "ForceRebuildLayoutImmediate"
+	41	[30]	GETTABLE 	8 0 -16	; "m_layoutRectTrans"
+	42	[30]	CALL     	7 2 1
+	43	[32]	GETTABUP 	7 0 -17	; _ENV "MainBoardView"
+	44	[32]	GETTABLE 	7 7 -18	; "GetInstance"
+	45	[32]	CALL     	7 1 2
+	46	[33]	NEWTABLE 	8 0 0
+	47	[34]	NEWTABLE 	9 0 0
+	48	[34]	SETTABLE 	0 -19 9	; "m_inventoryItemMap" -
+	49	[35]	LOADK    	9 -5	; 1
+	50	[35]	LOADK    	10 -8	; 3
+	51	[35]	LOADK    	11 -5	; 1
+	52	[35]	FORPREP  	9 148	; to 201
+	53	[36]	GETTABLE 	13 3 12
+	54	[36]	EQ       	1 13 -13	; - nil
+	55	[36]	JMP      	13 145	; to 201
+	56	[39]	CLOSURE  	13 1	; 000001D5566426C0
+	57	[40]	GETTABUP 	14 0 -20	; _ENV "GM"
+	58	[40]	GETTABLE 	14 14 -21	; "MainBoardModel"
+	59	[40]	SELF     	14 14 -22	; "FilterItems"
+	60	[40]	MOVE     	16 13
+	61	[40]	CALL     	14 3 2
+	62	[40]	GETTABLE 	14 14 -5	; 1
+	63	[42]	EQ       	1 14 -23	; - nil
+	64	[42]	JMP      	0 72	; to 137
+	65	[43]	SETTABLE 	8 14 -24	; - true
+	66	[44]	SELF     	15 7 -25	; "UpdateCompleteTileDisplay"
+	67	[44]	SELF     	17 14 -26	; "GetPosition"
+	68	[44]	CALL     	17 2 2
+	69	[44]	LOADBOOL 	18 0 0
+	70	[44]	LOADBOOL 	19 1 0
+	71	[44]	CALL     	15 5 1
+	72	[46]	LOADK    	15 -27	; "m_itemImage"
+	73	[46]	MOVE     	16 12
+	74	[46]	CONCAT   	15 15 16
+	75	[46]	GETTABLE 	4 0 15
+	76	[49]	SELF     	15 7 -28	; "GetItemView"
+	77	[49]	MOVE     	17 14
+	78	[49]	CALL     	15 3 2
+	79	[50]	LOADK    	16 -29	; "m_targetItemView"
+	80	[50]	MOVE     	17 12
+	81	[50]	CONCAT   	16 16 17
+	82	[50]	SETTABLE 	0 16 15
+	83	[51]	GETTABLE 	16 15 -12	; "gameObject"
+	84	[51]	SELF     	16 16 -11	; "SetActive"
+	85	[51]	LOADBOOL 	18 0 0
+	86	[51]	CALL     	16 3 1
+	87	[54]	SELF     	16 15 -31	; "GetSpriteRenderer"
+	88	[54]	CALL     	16 2 2
+	89	[54]	GETTABLE 	16 16 -30	; "sprite"
+	90	[54]	SETTABLE 	4 -30 16	; "sprite" -
+	91	[55]	GETTABUP 	16 0 -32	; _ENV "SpriteUtil"
+	92	[55]	GETTABLE 	16 16 -33	; "SetNativeSize"
+	93	[55]	MOVE     	17 4
+	94	[55]	CALL     	16 2 1
+	95	[57]	GETTABLE 	16 4 -34	; "transform"
+	96	[58]	SELF     	17 7 -35	; "ConvertWorldPositionToScreenPosition"
+	97	[58]	GETTABLE 	19 15 -34	; "transform"
+	98	[58]	GETTABLE 	19 19 -36	; "position"
+	99	[58]	CALL     	17 3 2
+	100	[59]	GETTABUP 	18 0 -37	; _ENV "PositionUtil"
+	101	[59]	GETTABLE 	18 18 -38	; "UICameraScreen2World"
+	102	[59]	MOVE     	19 17
+	103	[59]	CALL     	18 2 2
+	104	[60]	GETTABUP 	19 0 -39	; _ENV "Vector3"
+	105	[60]	GETTABLE 	20 18 -40	; "x"
+	106	[60]	GETTABLE 	21 18 -41	; "y"
+	107	[60]	GETTABLE 	22 16 -36	; "position"
+	108	[60]	GETTABLE 	22 22 -42	; "z"
+	109	[60]	CALL     	19 4 2
+	110	[60]	SETTABLE 	16 -36 19	; "position" -
+	111	[62]	SELF     	19 2 -43	; "Insert"
+	112	[62]	LOADK    	21 -7	; 0
+	113	[62]	SELF     	22 16 -44	; "DOAnchorPos"
+	114	[62]	GETTABUP 	24 0 -45	; _ENV "Vector2"
+	115	[62]	GETTABLE 	24 24 -46	; "zero"
+	116	[62]	LOADK    	25 -5	; 1
+	117	[62]	CALL     	22 4 0
+	118	[62]	CALL     	19 0 1
+	119	[63]	SELF     	19 2 -43	; "Insert"
+	120	[63]	LOADK    	21 -7	; 0
+	121	[63]	SELF     	22 16 -47	; "DOScale"
+	122	[63]	LT       	0 -5 6	; 1 -
+	123	[63]	JMP      	0 3	; to 127
+	124	[63]	LOADK    	24 -48	; 2
+	125	[63]	TEST     	24 1
+	126	[63]	JMP      	0 1	; to 128
+	127	[63]	LOADK    	24 -8	; 3
+	128	[63]	LOADK    	25 -5	; 1
+	129	[63]	CALL     	22 4 0
+	130	[63]	CALL     	19 0 1
+	131	[65]	SELF     	19 2 -4	; "InsertCallback"
+	132	[65]	LOADK    	21 -5	; 1
+	133	[71]	CLOSURE  	22 2	; 000001D556642740
+	134	[65]	CALL     	19 4 1
+	135	[71]	JMP      	13 65	; to 201
+	136	[71]	JMP      	13 64	; to 201
+	137	[74]	GETTABLE 	15 0 -19	; "m_inventoryItemMap"
+	138	[74]	GETTABLE 	16 3 12
+	139	[74]	SETTABLE 	15 12 16
+	140	[77]	LOADK    	15 -27	; "m_itemImage"
+	141	[77]	MOVE     	16 12
+	142	[77]	CONCAT   	15 15 16
+	143	[77]	GETTABLE 	15 0 15
+	144	[78]	SETTABLE 	15 -49 -50	; "enabled" false
+	145	[79]	GETTABUP 	16 0 -32	; _ENV "SpriteUtil"
+	146	[79]	GETTABLE 	16 16 -51	; "SetImage"
+	147	[79]	MOVE     	17 15
+	148	[79]	GETTABUP 	18 0 -20	; _ENV "GM"
+	149	[79]	GETTABLE 	18 18 -52	; "ItemDataModel"
+	150	[79]	SELF     	18 18 -53	; "GetSpriteName"
+	151	[79]	GETTABLE 	20 3 12
+	152	[79]	CALL     	18 3 2
+	153	[79]	LOADBOOL 	19 1 0
+	154	[83]	CLOSURE  	20 3	; 000001D5566429E0
+	155	[79]	CALL     	16 5 1
+	156	[85]	GETTABUP 	16 0 -20	; _ENV "GM"
+	157	[85]	GETTABLE 	16 16 -54	; "UIManager"
+	158	[85]	SELF     	16 16 -55	; "GetOpenedTopViewByType"
+	159	[85]	GETTABUP 	18 0 -56	; _ENV "EViewType"
+	160	[85]	GETTABLE 	18 18 -57	; "SceneView"
+	161	[85]	CALL     	16 3 2
+	162	[86]	SELF     	17 16 -58	; "GetHudButton"
+	163	[86]	GETTABUP 	19 0 -59	; _ENV "ESceneViewHudButtonKey"
+	164	[86]	GETTABLE 	19 19 -60	; "Inventory"
+	165	[86]	CALL     	17 3 2
+	166	[86]	GETTABLE 	17 17 -34	; "transform"
+	167	[86]	GETTABLE 	17 17 -36	; "position"
+	168	[87]	GETTABLE 	18 15 -34	; "transform"
+	169	[88]	GETTABUP 	19 0 -10	; _ENV "UIUtil"
+	170	[88]	GETTABLE 	19 19 -61	; "SetPosition"
+	171	[88]	MOVE     	20 18
+	172	[88]	GETTABLE 	21 17 -40	; "x"
+	173	[88]	GETTABLE 	22 17 -41	; "y"
+	174	[88]	CALL     	19 4 1
+	175	[90]	SELF     	19 2 -43	; "Insert"
+	176	[90]	LOADK    	21 -62	; 0
+	177	[90]	SELF     	22 18 -63	; "DOAnchorPos"
+	178	[90]	GETTABUP 	24 0 -64	; _ENV "Vector2"
+	179	[90]	GETTABLE 	24 24 -65	; "zero"
+	180	[90]	LOADK    	25 -66	; 1
+	181	[90]	CALL     	22 4 0
+	182	[90]	CALL     	19 0 1
+	183	[91]	SELF     	19 2 -43	; "Insert"
+	184	[91]	LOADK    	21 -62	; 0
+	185	[91]	SELF     	22 18 -47	; "DOScale"
+	186	[91]	LT       	0 -66 6	; 1 -
+	187	[91]	JMP      	0 3	; to 191
+	188	[91]	LOADK    	24 -67	; 2
+	189	[91]	TEST     	24 1
+	190	[91]	JMP      	0 1	; to 192
+	191	[91]	LOADK    	24 -8	; 3
+	192	[91]	LOADK    	25 -66	; 1
+	193	[91]	CALL     	22 4 0
+	194	[91]	CALL     	19 0 1
+	195	[93]	SELF     	19 2 -4	; "InsertCallback"
+	196	[93]	LOADK    	21 -66	; 1
+	197	[99]	CLOSURE  	22 4	; 000001D556642A60
+	198	[93]	CALL     	19 4 1
+	199	[99]	JMP      	13 1	; to 201
+	200	[102]	JMP      	13 0	; to 201
+	201	[35]	FORLOOP  	9 -149	; to 53
+	202	[104]	RETURN   	0 1
+constants (67) for 000001D55663F2B0:
+	1	"m_order"
+	2	"DOTween"
+	3	"Sequence"
+	4	"InsertCallback"
+	5	1
+	6	"GetRequirements"
+	7	0
+	8	3
+	9	"m_itemGo"
+	10	"UIUtil"
+	11	"SetActive"
+	12	"gameObject"
+	13	nil
+	14	"LayoutRebuilder"
+	15	"ForceRebuildLayoutImmediate"
+	16	"m_layoutRectTrans"
+	17	"MainBoardView"
+	18	"GetInstance"
+	19	"m_inventoryItemMap"
+	20	"GM"
+	21	"MainBoardModel"
+	22	"FilterItems"
+	23	nil
+	24	true
+	25	"UpdateCompleteTileDisplay"
+	26	"GetPosition"
+	27	"m_itemImage"
+	28	"GetItemView"
+	29	"m_targetItemView"
+	30	"sprite"
+	31	"GetSpriteRenderer"
+	32	"SpriteUtil"
+	33	"SetNativeSize"
+	34	"transform"
+	35	"ConvertWorldPositionToScreenPosition"
+	36	"position"
+	37	"PositionUtil"
+	38	"UICameraScreen2World"
+	39	"Vector3"
+	40	"x"
+	41	"y"
+	42	"z"
+	43	"Insert"
+	44	"DOAnchorPos"
+	45	"Vector2"
+	46	"zero"
+	47	"DOScale"
+	48	2
+	49	"enabled"
+	50	false
+	51	"SetImage"
+	52	"ItemDataModel"
+	53	"GetSpriteName"
+	54	"UIManager"
+	55	"GetOpenedTopViewByType"
+	56	"EViewType"
+	57	"SceneView"
+	58	"GetHudButton"
+	59	"ESceneViewHudButtonKey"
+	60	"Inventory"
+	61	"SetPosition"
+	62	0
+	63	"DOAnchorPos"
+	64	"Vector2"
+	65	"zero"
+	66	1
+	67	2
+locals (27) for 000001D55663F2B0:
+	0	self	1	203
+	1	order	1	203
+	2	sequence	5	203
+	3	requirements	11	203
+	4	itemImage	12	203
+	5	targetItemView	12	203
+	6	itemCount	13	203
+	7	(for index)	16	39
+	8	(for limit)	16	39
+	9	(for step)	16	39
+	10	i	17	38
+	11	boardView	46	203
+	12	mapSelectedItem	47	203
+	13	(for index)	52	202
+	14	(for limit)	52	202
+	15	(for step)	52	202
+	16	i	53	201
+	17	filter	57	200
+	18	targetItem	63	200
+	19	targetItemView	79	136
+	20	imageTransform	96	136
+	21	screenPosition	100	136
+	22	uiWorldPosition	104	136
+	23	img	144	200
+	24	sceneView	162	200
+	25	sourceWorldPos	168	200
+	26	imageTransform	169	200
+upvalues (1) for 000001D55663F2B0:
+	0	_ENV	0	0
+
+function <SpecialOrderItemWindow.lua:15,19> (13 instructions at 000001D55663F330)
+0 params, 4 slots, 2 upvalues, 0 locals, 7 constants, 0 functions
+	1	[16]	SETTABUP 	0 -1 -2	; self "m_initialized" true
+	2	[17]	GETTABUP 	0 1 -3	; _ENV "UIUtil"
+	3	[17]	GETTABLE 	0 0 -4	; "UpdateSortingOrder"
+	4	[17]	GETTABUP 	1 0 -5	; self "m_effectGo"
+	5	[17]	GETUPVAL 	2 0	; self
+	6	[17]	SELF     	2 2 -6	; "GetSortingOrder"
+	7	[17]	CALL     	2 2 0
+	8	[17]	CALL     	0 0 1
+	9	[18]	GETTABUP 	0 0 -5	; self "m_effectGo"
+	10	[18]	SELF     	0 0 -7	; "SetActive"
+	11	[18]	LOADBOOL 	2 1 0
+	12	[18]	CALL     	0 3 1
+	13	[19]	RETURN   	0 1
+constants (7) for 000001D55663F330:
+	1	"m_initialized"
+	2	true
+	3	"UIUtil"
+	4	"UpdateSortingOrder"
+	5	"m_effectGo"
+	6	"GetSortingOrder"
+	7	"SetActive"
+locals (0) for 000001D55663F330:
+upvalues (2) for 000001D55663F330:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <SpecialOrderItemWindow.lua:37,39> (13 instructions at 000001D5566426C0)
+1 param, 3 slots, 3 upvalues, 1 local, 2 constants, 0 functions
+	1	[38]	SELF     	1 0 -1	; "GetType"
+	2	[38]	CALL     	1 2 2
+	3	[38]	GETUPVAL 	2 1	; i
+	4	[38]	GETTABUP 	2 0 2	; requirements
+	5	[38]	EQ       	0 1 2
+	6	[38]	JMP      	0 3	; to 10
+	7	[38]	GETTABUP 	1 2 0	; mapSelectedItem
+	8	[38]	EQ       	1 1 -2	; - nil
+	9	[38]	JMP      	0 1	; to 11
+	10	[38]	LOADBOOL 	1 0 1
+	11	[38]	LOADBOOL 	1 1 0
+	12	[38]	RETURN   	1 2
+	13	[39]	RETURN   	0 1
+constants (2) for 000001D5566426C0:
+	1	"GetType"
+	2	nil
+locals (1) for 000001D5566426C0:
+	0	itemModel	1	14
+upvalues (3) for 000001D5566426C0:
+	0	requirements	1	3
+	1	i	1	12
+	2	mapSelectedItem	1	8
+
+function <SpecialOrderItemWindow.lua:65,71> (35 instructions at 000001D556642740)
+0 params, 8 slots, 2 upvalues, 1 local, 13 constants, 0 functions
+	1	[66]	GETTABUP 	0 0 -1	; _ENV "DOTween"
+	2	[66]	GETTABLE 	0 0 -2	; "Sequence"
+	3	[66]	CALL     	0 1 2
+	4	[67]	SELF     	1 0 -3	; "Append"
+	5	[67]	GETUPVAL 	3 1	; imageTransform
+	6	[67]	SELF     	3 3 -4	; "DOAnchorPos"
+	7	[67]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	8	[67]	LOADK    	6 -6	; 0
+	9	[67]	LOADK    	7 -7	; -10
+	10	[67]	CALL     	5 3 2
+	11	[67]	LOADK    	6 -8	; 1
+	12	[67]	CALL     	3 4 0
+	13	[67]	CALL     	1 0 1
+	14	[68]	SELF     	1 0 -3	; "Append"
+	15	[68]	GETUPVAL 	3 1	; imageTransform
+	16	[68]	SELF     	3 3 -4	; "DOAnchorPos"
+	17	[68]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	18	[68]	LOADK    	6 -6	; 0
+	19	[68]	LOADK    	7 -9	; 10
+	20	[68]	CALL     	5 3 2
+	21	[68]	LOADK    	6 -10	; 2
+	22	[68]	CALL     	3 4 0
+	23	[68]	CALL     	1 0 1
+	24	[69]	SELF     	1 0 -3	; "Append"
+	25	[69]	GETUPVAL 	3 1	; imageTransform
+	26	[69]	SELF     	3 3 -4	; "DOAnchorPos"
+	27	[69]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	28	[69]	GETTABLE 	5 5 -11	; "zero"
+	29	[69]	LOADK    	6 -8	; 1
+	30	[69]	CALL     	3 4 0
+	31	[69]	CALL     	1 0 1
+	32	[70]	SELF     	1 0 -12	; "SetLoops"
+	33	[70]	LOADK    	3 -13	; -1
+	34	[70]	CALL     	1 3 1
+	35	[71]	RETURN   	0 1
+constants (13) for 000001D556642740:
+	1	"DOTween"
+	2	"Sequence"
+	3	"Append"
+	4	"DOAnchorPos"
+	5	"Vector2"
+	6	0
+	7	-10
+	8	1
+	9	10
+	10	2
+	11	"zero"
+	12	"SetLoops"
+	13	-1
+locals (1) for 000001D556642740:
+	0	shakeSequence	4	36
+upvalues (2) for 000001D556642740:
+	0	_ENV	0	0
+	1	imageTransform	1	16
+
+function <SpecialOrderItemWindow.lua:79,83> (7 instructions at 000001D5566429E0)
+0 params, 2 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[80]	GETUPVAL 	0 0	; img
+	2	[80]	SELF     	0 0 -1	; "IsNull"
+	3	[80]	CALL     	0 2 2
+	4	[80]	TEST     	0 1
+	5	[80]	JMP      	0 1	; to 7
+	6	[81]	SETTABUP 	0 -2 -3	; img "enabled" true
+	7	[83]	RETURN   	0 1
+constants (3) for 000001D5566429E0:
+	1	"IsNull"
+	2	"enabled"
+	3	true
+locals (0) for 000001D5566429E0:
+upvalues (1) for 000001D5566429E0:
+	0	img	1	15
+
+function <SpecialOrderItemWindow.lua:93,99> (35 instructions at 000001D556642A60)
+0 params, 8 slots, 2 upvalues, 1 local, 13 constants, 0 functions
+	1	[94]	GETTABUP 	0 0 -1	; _ENV "DOTween"
+	2	[94]	GETTABLE 	0 0 -2	; "Sequence"
+	3	[94]	CALL     	0 1 2
+	4	[95]	SELF     	1 0 -3	; "Append"
+	5	[95]	GETUPVAL 	3 1	; imageTransform
+	6	[95]	SELF     	3 3 -4	; "DOAnchorPos"
+	7	[95]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	8	[95]	LOADK    	6 -6	; 0
+	9	[95]	LOADK    	7 -7	; -10
+	10	[95]	CALL     	5 3 2
+	11	[95]	LOADK    	6 -8	; 1
+	12	[95]	CALL     	3 4 0
+	13	[95]	CALL     	1 0 1
+	14	[96]	SELF     	1 0 -3	; "Append"
+	15	[96]	GETUPVAL 	3 1	; imageTransform
+	16	[96]	SELF     	3 3 -4	; "DOAnchorPos"
+	17	[96]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	18	[96]	LOADK    	6 -6	; 0
+	19	[96]	LOADK    	7 -9	; 10
+	20	[96]	CALL     	5 3 2
+	21	[96]	LOADK    	6 -10	; 2
+	22	[96]	CALL     	3 4 0
+	23	[96]	CALL     	1 0 1
+	24	[97]	SELF     	1 0 -3	; "Append"
+	25	[97]	GETUPVAL 	3 1	; imageTransform
+	26	[97]	SELF     	3 3 -4	; "DOAnchorPos"
+	27	[97]	GETTABUP 	5 0 -5	; _ENV "Vector2"
+	28	[97]	GETTABLE 	5 5 -11	; "zero"
+	29	[97]	LOADK    	6 -8	; 1
+	30	[97]	CALL     	3 4 0
+	31	[97]	CALL     	1 0 1
+	32	[98]	SELF     	1 0 -12	; "SetLoops"
+	33	[98]	LOADK    	3 -13	; -1
+	34	[98]	CALL     	1 3 1
+	35	[99]	RETURN   	0 1
+constants (13) for 000001D556642A60:
+	1	"DOTween"
+	2	"Sequence"
+	3	"Append"
+	4	"DOAnchorPos"
+	5	"Vector2"
+	6	0
+	7	-10
+	8	1
+	9	10
+	10	2
+	11	"zero"
+	12	"SetLoops"
+	13	-1
+locals (1) for 000001D556642A60:
+	0	shakeSequence	4	36
+upvalues (2) for 000001D556642A60:
+	0	_ENV	0	0
+	1	imageTransform	1	18
+
+function <SpecialOrderItemWindow.lua:106,140> (86 instructions at 000001D55663EA70)
+1 param, 18 slots, 1 upvalue, 16 locals, 27 constants, 0 functions
+	1	[107]	GETTABLE 	1 0 -1	; "m_initialized"
+	2	[107]	TEST     	1 1
+	3	[107]	JMP      	0 1	; to 5
+	4	[108]	RETURN   	0 1
+	5	[111]	LOADNIL  	1 1
+	6	[112]	LOADK    	3 -2	; 1
+	7	[112]	LOADK    	4 -3	; 3
+	8	[112]	LOADK    	5 -2	; 1
+	9	[112]	FORPREP  	3 35	; to 45
+	10	[113]	LOADK    	7 -4	; "m_targetItemView"
+	11	[113]	MOVE     	8 6
+	12	[113]	CONCAT   	7 7 8
+	13	[113]	GETTABLE 	1 0 7
+	14	[114]	EQ       	1 1 -5	; - nil
+	15	[114]	JMP      	0 29	; to 45
+	16	[114]	GETTABLE 	7 1 -6	; "gameObject"
+	17	[114]	SELF     	7 7 -7	; "IsNull"
+	18	[114]	CALL     	7 2 2
+	19	[114]	TEST     	7 1
+	20	[114]	JMP      	0 24	; to 45
+	21	[115]	LOADK    	7 -8	; "m_itemImage"
+	22	[115]	MOVE     	8 6
+	23	[115]	CONCAT   	7 7 8
+	24	[115]	GETTABLE 	2 0 7
+	25	[117]	GETTABLE 	7 1 -6	; "gameObject"
+	26	[117]	SELF     	7 7 -9	; "SetActive"
+	27	[117]	LOADBOOL 	9 1 0
+	28	[117]	CALL     	7 3 1
+	29	[118]	GETTABLE 	7 1 -10	; "transform"
+	30	[119]	GETTABLE 	8 2 -10	; "transform"
+	31	[119]	GETTABLE 	8 8 -11	; "localScale"
+	32	[119]	SETTABLE 	7 -11 8	; "localScale" -
+	33	[121]	GETTABUP 	8 0 -12	; _ENV "PositionUtil"
+	34	[121]	GETTABLE 	8 8 -13	; "UICameraWorld2Screen"
+	35	[121]	GETTABLE 	9 2 -10	; "transform"
+	36	[121]	GETTABLE 	9 9 -14	; "position"
+	37	[121]	CALL     	8 2 2
+	38	[122]	GETTABUP 	9 0 -15	; _ENV "MainBoardView"
+	39	[122]	GETTABLE 	9 9 -16	; "GetInstance"
+	40	[122]	CALL     	9 1 2
+	41	[122]	SELF     	9 9 -17	; "ConvertScreenPositionToWorldPosition"
+	42	[122]	MOVE     	11 8
+	43	[122]	CALL     	9 3 2
+	44	[122]	SETTABLE 	7 -14 9	; "position" -
+	45	[112]	FORLOOP  	3 -36	; to 10
+	46	[127]	GETTABUP 	3 0 -18	; _ENV "GM"
+	47	[127]	GETTABLE 	3 3 -19	; "MainBoardModel"
+	48	[127]	SELF     	3 3 -20	; "FinishOrder"
+	49	[127]	GETTABLE 	5 0 -21	; "m_order"
+	50	[127]	CALL     	3 3 1
+	51	[130]	GETTABUP 	3 0 -15	; _ENV "MainBoardView"
+	52	[130]	GETTABLE 	3 3 -16	; "GetInstance"
+	53	[130]	CALL     	3 1 2
+	54	[131]	SELF     	4 3 -22	; "GetOrderArea"
+	55	[131]	CALL     	4 2 2
+	56	[131]	SELF     	4 4 -23	; "GetCell"
+	57	[131]	GETTABLE 	6 0 -21	; "m_order"
+	58	[131]	CALL     	4 3 2
+	59	[132]	EQ       	1 4 -5	; - nil
+	60	[132]	JMP      	0 23	; to 84
+	61	[133]	GETTABUP 	5 0 -24	; _ENV "pairs"
+	62	[133]	GETTABLE 	6 0 -25	; "m_inventoryItemMap"
+	63	[133]	CALL     	5 2 4
+	64	[133]	JMP      	0 17	; to 82
+	65	[135]	SELF     	10 3 -26	; "PlayItemFly2OrderItemAnimation"
+	66	[135]	MOVE     	12 4
+	67	[135]	LOADK    	13 -2	; 1
+	68	[135]	MOVE     	14 9
+	69	[135]	LOADK    	15 -8	; "m_itemImage"
+	70	[135]	MOVE     	16 8
+	71	[135]	CONCAT   	15 15 16
+	72	[135]	GETTABLE 	15 0 15
+	73	[135]	GETTABLE 	15 15 -10	; "transform"
+	74	[135]	GETTABLE 	15 15 -14	; "position"
+	75	[135]	LOADK    	16 -8	; "m_itemImage"
+	76	[135]	MOVE     	17 8
+	77	[135]	CONCAT   	16 16 17
+	78	[135]	GETTABLE 	16 0 16
+	79	[135]	GETTABLE 	16 16 -10	; "transform"
+	80	[135]	GETTABLE 	16 16 -11	; "localScale"
+	81	[135]	CALL     	10 7 1
+	82	[133]	TFORCALL 	5 2
+	83	[133]	TFORLOOP 	7 -19	; to 65
+	84	[139]	SELF     	5 0 -27	; "Close"
+	85	[139]	CALL     	5 2 1
+	86	[140]	RETURN   	0 1
+constants (27) for 000001D55663EA70:
+	1	"m_initialized"
+	2	1
+	3	3
+	4	"m_targetItemView"
+	5	nil
+	6	"gameObject"
+	7	"IsNull"
+	8	"m_itemImage"
+	9	"SetActive"
+	10	"transform"
+	11	"localScale"
+	12	"PositionUtil"
+	13	"UICameraWorld2Screen"
+	14	"position"
+	15	"MainBoardView"
+	16	"GetInstance"
+	17	"ConvertScreenPositionToWorldPosition"
+	18	"GM"
+	19	"MainBoardModel"
+	20	"FinishOrder"
+	21	"m_order"
+	22	"GetOrderArea"
+	23	"GetCell"
+	24	"pairs"
+	25	"m_inventoryItemMap"
+	26	"PlayItemFly2OrderItemAnimation"
+	27	"Close"
+locals (16) for 000001D55663EA70:
+	0	self	1	87
+	1	targetItemView	6	87
+	2	itemImage	6	87
+	3	(for index)	9	46
+	4	(for limit)	9	46
+	5	(for step)	9	46
+	6	i	10	45
+	7	itemViewTransform	30	45
+	8	screenPosition	38	45
+	9	boardView	54	87
+	10	orderCell	59	87
+	11	(for generator)	64	84
+	12	(for state)	64	84
+	13	(for control)	64	84
+	14	i	65	82
+	15	type	65	82
+upvalues (1) for 000001D55663EA70:
+	0	_ENV	0	0

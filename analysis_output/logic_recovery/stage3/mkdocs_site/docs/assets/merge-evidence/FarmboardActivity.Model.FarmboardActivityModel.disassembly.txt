@@ -1,0 +1,2485 @@
+
+main <FarmboardActivityModel.lua:0,0> (165 instructions at 000001E3140EED00)
+0+ params, 3 slots, 1 upvalue, 1 local, 81 constants, 45 functions
+	1	[3]	NEWTABLE 	0 0 3
+	2	[4]	SETTABLE 	0 -2 -3	; "Success" 0
+	3	[5]	SETTABLE 	0 -4 -5	; "NoItem" 1
+	4	[6]	SETTABLE 	0 -6 -7	; "AnimalActive" 2
+	5	[7]	SETTABUP 	0 -1 0	; _ENV "FarmboardActivityActivateAnimalResult"
+	6	[10]	NEWTABLE 	0 0 2
+	7	[11]	SETTABLE 	0 -9 -5	; "MergeItem" 1
+	8	[12]	SETTABLE 	0 -10 -7	; "BlockProduce" 2
+	9	[13]	SETTABUP 	0 -8 0	; _ENV "FarmboardActivityUpdateLevelFrom"
+	10	[15]	SETTABUP 	0 -11 -12	; _ENV "FarmboardActivityBlockMaxCount" 4
+	11	[24]	GETTABUP 	0 0 -14	; _ENV "setmetatable"
+	12	[24]	NEWTABLE 	1 0 0
+	13	[24]	GETTABUP 	2 0 -15	; _ENV "BaseActivityModel"
+	14	[24]	CALL     	0 3 2
+	15	[24]	SETTABUP 	0 -13 0	; _ENV "FarmboardActivityModel"
+	16	[25]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	17	[25]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	18	[25]	SETTABLE 	0 -16 1	; "__index" -
+	19	[27]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	20	[27]	SETTABLE 	0 -17 -18	; "TokenNumberKey" "TokenNumber"
+	21	[28]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	22	[28]	SETTABLE 	0 -19 -20	; "BoardEverFulledKey" "BoardEverFulled"
+	23	[29]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	24	[29]	SETTABLE 	0 -21 -22	; "LevelKey" "Level"
+	25	[30]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	26	[30]	SETTABLE 	0 -23 -24	; "BlockProduceMultipleRateKey" "BlockRate"
+	27	[31]	GETTABUP 	0 0 -13	; _ENV "FarmboardActivityModel"
+	28	[31]	SETTABLE 	0 -25 -25	; "PopEndWindow" "PopEndWindow"
+	29	[34]	LOADK    	0 -26	; 10
+	30	[36]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	31	[47]	CLOSURE  	2 0	; 000001E3140EF260
+	32	[36]	SETTABLE 	1 -27 2	; "Init" -
+	33	[49]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	34	[52]	CLOSURE  	2 1	; 000001E3140EE760
+	35	[49]	SETTABLE 	1 -28 2	; "LateInit" -
+	36	[54]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	37	[56]	CLOSURE  	2 2	; 000001E3140EE7E0
+	38	[54]	SETTABLE 	1 -29 2	; "OnDestroy" -
+	39	[58]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	40	[60]	CLOSURE  	2 3	; 000001E3140EE860
+	41	[58]	SETTABLE 	1 -30 2	; "GetResourceLabels" -
+	42	[62]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	43	[100]	CLOSURE  	2 4	; 000001E3140EE8E0
+	44	[62]	SETTABLE 	1 -31 2	; "_LoadOtherServerConfig" -
+	45	[102]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	46	[115]	CLOSURE  	2 5	; 000001E3140F4EA0
+	47	[102]	SETTABLE 	1 -32 2	; "_DropData" -
+	48	[117]	GETTABUP 	1 0 -13	; _ENV "FarmboardActivityModel"
+	49	[165]	CLOSURE  	2 6	; 000001E3140F5850
+	50	[117]	SETTABLE 	1 -33 2	; "_OnStateChanged" -
+	51	[167]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	52	[193]	CLOSURE  	2 7	; 000001E3140F5E50
+	53	[167]	SETTABLE 	1 -35 2	; "GetHudEntryShowConfig" -
+	54	[195]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	55	[207]	CLOSURE  	2 8	; 000001E3140F5950
+	56	[195]	SETTABLE 	1 -36 2	; "GetBoardEntryShowConfig" -
+	57	[209]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	58	[215]	CLOSURE  	2 9	; 000001E3140F5D50
+	59	[209]	SETTABLE 	1 -37 2	; "GetGenerateItemByOrder" -
+	60	[217]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	61	[232]	CLOSURE  	2 10	; 000001E3140F5450
+	62	[217]	SETTABLE 	1 -38 2	; "_OnOrderFinished" -
+	63	[234]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	64	[238]	CLOSURE  	2 11	; 000001E3140F5ED0
+	65	[234]	SETTABLE 	1 -39 2	; "_OnItemMerged" -
+	66	[240]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	67	[242]	CLOSURE  	2 12	; 000001E3140F5F50
+	68	[240]	SETTABLE 	1 -40 2	; "GetDefinition" -
+	69	[244]	GETTABUP 	1 0 -34	; _ENV "FarmboardActivityModel"
+	70	[246]	CLOSURE  	2 13	; 000001E3140F5FD0
+	71	[244]	SETTABLE 	1 -41 2	; "GetTokenNumber" -
+	72	[248]	GETTABUP 	1 0 -42	; _ENV "FarmboardActivityModel"
+	73	[250]	CLOSURE  	2 14	; 000001E3140F5150
+	74	[248]	SETTABLE 	1 -43 2	; "SetPopEndWindow" -
+	75	[252]	GETTABUP 	1 0 -44	; _ENV "FarmboardActivityModel"
+	76	[254]	CLOSURE  	2 15	; 000001E3140F56D0
+	77	[252]	SETTABLE 	1 -45 2	; "CanPopEndWindow" -
+	78	[256]	GETTABUP 	1 0 -46	; _ENV "FarmboardActivityModel"
+	79	[260]	CLOSURE  	2 16	; 000001E3140F5C50
+	80	[256]	SETTABLE 	1 -47 2	; "_ChangeTokenNumber" -
+	81	[262]	GETTABUP 	1 0 -48	; _ENV "FarmboardActivityModel"
+	82	[264]	CLOSURE  	2 17	; 000001E3140F51D0
+	83	[262]	SETTABLE 	1 -49 2	; "AcquireToken" -
+	84	[266]	GETTABUP 	1 0 -48	; _ENV "FarmboardActivityModel"
+	85	[268]	CLOSURE  	2 18	; 000001E3140F5BD0
+	86	[266]	SETTABLE 	1 -50 2	; "GetLevel" -
+	87	[277]	GETTABUP 	1 0 -51	; _ENV "FarmboardActivityModel"
+	88	[296]	CLOSURE  	2 19	; 000001E3140F5250
+	89	[277]	SETTABLE 	1 -52 2	; "_UpdateLevel" -
+	90	[298]	GETTABUP 	1 0 -53	; _ENV "FarmboardActivityModel"
+	91	[300]	CLOSURE  	2 20	; 000001E3140F6050
+	92	[298]	SETTABLE 	1 -54 2	; "GetMaxLevel" -
+	93	[302]	GETTABUP 	1 0 -53	; _ENV "FarmboardActivityModel"
+	94	[304]	CLOSURE  	2 21	; 000001E3140F52D0
+	95	[302]	SETTABLE 	1 -55 2	; "GetItemCodeByLevel" -
+	96	[306]	GETTABUP 	1 0 -53	; _ENV "FarmboardActivityModel"
+	97	[308]	CLOSURE  	2 22	; 000001E3140F59D0
+	98	[306]	SETTABLE 	1 -56 2	; "GetBoardModel" -
+	99	[310]	GETTABUP 	1 0 -53	; _ENV "FarmboardActivityModel"
+	100	[312]	CLOSURE  	2 23	; 000001E3140F5350
+	101	[310]	SETTABLE 	1 -57 2	; "HasBoardEverFulled" -
+	102	[314]	GETTABUP 	1 0 -58	; _ENV "FarmboardActivityModel"
+	103	[316]	CLOSURE  	2 24	; 000001E3140F5550
+	104	[314]	SETTABLE 	1 -59 2	; "SetBoardFulled" -
+	105	[318]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	106	[327]	CLOSURE  	2 25	; 000001E3140F55D0
+	107	[318]	SETTABLE 	1 -61 2	; "GetMinFogLevel" -
+	108	[329]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	109	[331]	CLOSURE  	2 26	; 000001E3140F5A50
+	110	[329]	SETTABLE 	1 -62 2	; "GetUnlockedBlockCount" -
+	111	[333]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	112	[335]	CLOSURE  	2 27	; 000001E3140F5AD0
+	113	[333]	SETTABLE 	1 -63 2	; "SetNeedPlayChangeTextAni" -
+	114	[337]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	115	[339]	CLOSURE  	2 28	; 000001E3140F5650
+	116	[337]	SETTABLE 	1 -64 2	; "GetNeedPlayChangeTextAni" -
+	117	[343]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	118	[363]	CLOSURE  	2 29	; 000001E3140F57D0
+	119	[343]	SETTABLE 	1 -65 2	; "UnlockBlock" -
+	120	[366]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	121	[430]	CLOSURE  	2 30	; 000001E3140FF080
+	122	[366]	SETTABLE 	1 -10 2	; "BlockProduce" -
+	123	[432]	GETTABUP 	1 0 -60	; _ENV "FarmboardActivityModel"
+	124	[435]	CLOSURE  	2 31	; 000001E3140FF500
+	125	[432]	SETTABLE 	1 -66 2	; "GetBlockProduceMultipleRate" -
+	126	[437]	GETTABUP 	1 0 -67	; _ENV "FarmboardActivityModel"
+	127	[439]	CLOSURE  	2 32	; 000001E3140FDD00
+	128	[437]	SETTABLE 	1 -68 2	; "GetBlockProduceTokenCount" -
+	129	[441]	GETTABUP 	1 0 -67	; _ENV "FarmboardActivityModel"
+	130	[443]	CLOSURE  	2 33	; 000001E3140FE080
+	131	[441]	SETTABLE 	1 -69 2	; "CanShowBlockProduceMultiple" -
+	132	[446]	GETTABUP 	1 0 -67	; _ENV "FarmboardActivityModel"
+	133	[455]	CLOSURE  	2 34	; 000001E3140FE700
+	134	[446]	SETTABLE 	1 -70 2	; "GetUnlockProduceMultipleRate" -
+	135	[457]	GETTABUP 	1 0 -67	; _ENV "FarmboardActivityModel"
+	136	[465]	CLOSURE  	2 35	; 000001E3140FD900
+	137	[457]	SETTABLE 	1 -71 2	; "SwitchBlockProduceMultipleRate" -
+	138	[467]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	139	[476]	CLOSURE  	2 36	; 000001E3140FEF80
+	140	[467]	SETTABLE 	1 -73 2	; "OnAddCacheItem" -
+	141	[480]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	142	[500]	CLOSURE  	2 37	; 000001E3140FDF80
+	143	[480]	SETTABLE 	1 -74 2	; "ActivateAnimal" -
+	144	[502]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	145	[504]	CLOSURE  	2 38	; 000001E3140FEC00
+	146	[502]	SETTABLE 	1 -75 2	; "CanAnimalProduce" -
+	147	[507]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	148	[523]	CLOSURE  	2 39	; 000001E3140FDE00
+	149	[507]	SETTABLE 	1 -76 2	; "AnimalProduce" -
+	150	[525]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	151	[527]	CLOSURE  	2 40	; 000001E3140FE000
+	152	[525]	SETTABLE 	1 -77 2	; "GetEndRewards" -
+	153	[529]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	154	[537]	CLOSURE  	2 41	; 000001E3140FF580
+	155	[529]	SETTABLE 	1 -78 2	; "IsActivityTokenType" -
+	156	[539]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	157	[549]	CLOSURE  	2 42	; 000001E3140FE780
+	158	[539]	SETTABLE 	1 -79 2	; "_ToCodeWeightPairList" -
+	159	[551]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	160	[560]	CLOSURE  	2 43	; 000001E3140FE100
+	161	[551]	SETTABLE 	1 -80 2	; "GetTestInfo" -
+	162	[562]	GETTABUP 	1 0 -72	; _ENV "FarmboardActivityModel"
+	163	[573]	CLOSURE  	2 44	; 000001E3140FED80
+	164	[562]	SETTABLE 	1 -81 2	; "_GetTestBlockData" -
+	165	[573]	RETURN   	0 1
+constants (81) for 000001E3140EED00:
+	1	"FarmboardActivityActivateAnimalResult"
+	2	"Success"
+	3	0
+	4	"NoItem"
+	5	1
+	6	"AnimalActive"
+	7	2
+	8	"FarmboardActivityUpdateLevelFrom"
+	9	"MergeItem"
+	10	"BlockProduce"
+	11	"FarmboardActivityBlockMaxCount"
+	12	4
+	13	"FarmboardActivityModel"
+	14	"setmetatable"
+	15	"BaseActivityModel"
+	16	"__index"
+	17	"TokenNumberKey"
+	18	"TokenNumber"
+	19	"BoardEverFulledKey"
+	20	"BoardEverFulled"
+	21	"LevelKey"
+	22	"Level"
+	23	"BlockProduceMultipleRateKey"
+	24	"BlockRate"
+	25	"PopEndWindow"
+	26	10
+	27	"Init"
+	28	"LateInit"
+	29	"OnDestroy"
+	30	"GetResourceLabels"
+	31	"_LoadOtherServerConfig"
+	32	"_DropData"
+	33	"_OnStateChanged"
+	34	"FarmboardActivityModel"
+	35	"GetHudEntryShowConfig"
+	36	"GetBoardEntryShowConfig"
+	37	"GetGenerateItemByOrder"
+	38	"_OnOrderFinished"
+	39	"_OnItemMerged"
+	40	"GetDefinition"
+	41	"GetTokenNumber"
+	42	"FarmboardActivityModel"
+	43	"SetPopEndWindow"
+	44	"FarmboardActivityModel"
+	45	"CanPopEndWindow"
+	46	"FarmboardActivityModel"
+	47	"_ChangeTokenNumber"
+	48	"FarmboardActivityModel"
+	49	"AcquireToken"
+	50	"GetLevel"
+	51	"FarmboardActivityModel"
+	52	"_UpdateLevel"
+	53	"FarmboardActivityModel"
+	54	"GetMaxLevel"
+	55	"GetItemCodeByLevel"
+	56	"GetBoardModel"
+	57	"HasBoardEverFulled"
+	58	"FarmboardActivityModel"
+	59	"SetBoardFulled"
+	60	"FarmboardActivityModel"
+	61	"GetMinFogLevel"
+	62	"GetUnlockedBlockCount"
+	63	"SetNeedPlayChangeTextAni"
+	64	"GetNeedPlayChangeTextAni"
+	65	"UnlockBlock"
+	66	"GetBlockProduceMultipleRate"
+	67	"FarmboardActivityModel"
+	68	"GetBlockProduceTokenCount"
+	69	"CanShowBlockProduceMultiple"
+	70	"GetUnlockProduceMultipleRate"
+	71	"SwitchBlockProduceMultipleRate"
+	72	"FarmboardActivityModel"
+	73	"OnAddCacheItem"
+	74	"ActivateAnimal"
+	75	"CanAnimalProduce"
+	76	"AnimalProduce"
+	77	"GetEndRewards"
+	78	"IsActivityTokenType"
+	79	"_ToCodeWeightPairList"
+	80	"GetTestInfo"
+	81	"_GetTestBlockData"
+locals (1) for 000001E3140EED00:
+	0	unlockRateItemLevel	30	166
+upvalues (1) for 000001E3140EED00:
+	0	_ENV	1	0
+
+function <FarmboardActivityModel.lua:36,47> (28 instructions at 000001E3140EF260)
+7 params, 11 slots, 1 upvalue, 7 locals, 15 constants, 0 functions
+	1	[37]	SETTABLE 	0 -1 3	; "m_itemDataTable" -
+	2	[38]	SETTABLE 	0 -2 4	; "m_itemLayerDataTable" -
+	3	[39]	SETTABLE 	0 -3 5	; "m_itemCacheDataTable" -
+	4	[40]	SETTABLE 	0 -4 6	; "m_boardDataTable" -
+	5	[42]	GETTABUP 	7 0 -6	; _ENV "FarmboardActivityDefinition"
+	6	[42]	GETTABLE 	7 7 1
+	7	[42]	SETTABLE 	0 -5 7	; "m_activityDefinition" -
+	8	[43]	GETTABUP 	7 0 -7	; _ENV "BaseActivityModel"
+	9	[43]	GETTABLE 	7 7 -8	; "Init"
+	10	[43]	MOVE     	8 0
+	11	[43]	MOVE     	9 1
+	12	[43]	MOVE     	10 2
+	13	[43]	CALL     	7 4 1
+	14	[45]	GETTABUP 	7 0 -9	; _ENV "EventDispatcher"
+	15	[45]	GETTABLE 	7 7 -10	; "AddListener"
+	16	[45]	GETTABUP 	8 0 -11	; _ENV "EEventType"
+	17	[45]	GETTABLE 	8 8 -12	; "OrderFinished"
+	18	[45]	MOVE     	9 0
+	19	[45]	GETTABLE 	10 0 -13	; "_OnOrderFinished"
+	20	[45]	CALL     	7 4 1
+	21	[46]	GETTABUP 	7 0 -9	; _ENV "EventDispatcher"
+	22	[46]	GETTABLE 	7 7 -10	; "AddListener"
+	23	[46]	GETTABUP 	8 0 -11	; _ENV "EEventType"
+	24	[46]	GETTABLE 	8 8 -14	; "ItemMerged"
+	25	[46]	MOVE     	9 0
+	26	[46]	GETTABLE 	10 0 -15	; "_OnItemMerged"
+	27	[46]	CALL     	7 4 1
+	28	[47]	RETURN   	0 1
+constants (15) for 000001E3140EF260:
+	1	"m_itemDataTable"
+	2	"m_itemLayerDataTable"
+	3	"m_itemCacheDataTable"
+	4	"m_boardDataTable"
+	5	"m_activityDefinition"
+	6	"FarmboardActivityDefinition"
+	7	"BaseActivityModel"
+	8	"Init"
+	9	"EventDispatcher"
+	10	"AddListener"
+	11	"EEventType"
+	12	"OrderFinished"
+	13	"_OnOrderFinished"
+	14	"ItemMerged"
+	15	"_OnItemMerged"
+locals (7) for 000001E3140EF260:
+	0	self	1	29
+	1	activityType	1	29
+	2	activityDataTable	1	29
+	3	itemDataTable	1	29
+	4	itemLayerDataTable	1	29
+	5	itemCacheDataTable	1	29
+	6	boardDataTable	1	29
+upvalues (1) for 000001E3140EF260:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:49,52> (6 instructions at 000001E3140EE760)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[50]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[50]	GETTABLE 	1 1 -2	; "LateInit"
+	3	[50]	MOVE     	2 0
+	4	[50]	CALL     	1 2 1
+	5	[51]	SETTABLE 	0 -3 -4	; "m_lateInit" true
+	6	[52]	RETURN   	0 1
+constants (4) for 000001E3140EE760:
+	1	"BaseActivityModel"
+	2	"LateInit"
+	3	"m_lateInit"
+	4	true
+locals (1) for 000001E3140EE760:
+	0	self	1	7
+upvalues (1) for 000001E3140EE760:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:54,56> (5 instructions at 000001E3140EE7E0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[55]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[55]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[55]	MOVE     	2 0
+	4	[55]	CALL     	1 2 1
+	5	[56]	RETURN   	0 1
+constants (2) for 000001E3140EE7E0:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 000001E3140EE7E0:
+	0	self	1	6
+upvalues (1) for 000001E3140EE7E0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:58,60> (4 instructions at 000001E3140EE860)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[59]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[59]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[59]	RETURN   	1 2
+	4	[60]	RETURN   	0 1
+constants (2) for 000001E3140EE860:
+	1	"m_activityDefinition"
+	2	"ResourceLabels"
+locals (1) for 000001E3140EE860:
+	0	self	1	5
+upvalues (0) for 000001E3140EE860:
+
+function <FarmboardActivityModel.lua:62,100> (97 instructions at 000001E3140EE8E0)
+2 params, 14 slots, 1 upvalue, 21 locals, 38 constants, 1 function
+	1	[63]	GETTABLE 	2 0 -1	; "m_config"
+	2	[63]	GETTABUP 	3 0 -3	; _ENV "EventOrderScoreConfig"
+	3	[63]	GETTABLE 	3 3 -4	; "Create"
+	4	[63]	MOVE     	4 1
+	5	[63]	GETTABLE 	5 0 -5	; "m_activityDefinition"
+	6	[63]	GETTABLE 	5 5 -6	; "TokenProperty"
+	7	[63]	CALL     	3 3 2
+	8	[63]	SETTABLE 	2 -2 3	; "OrderScore" -
+	9	[66]	NEWTABLE 	2 0 0
+	10	[67]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	11	[67]	GETTABLE 	4 1 -8	; "farmboardProduceConfig"
+	12	[67]	CALL     	3 2 4
+	13	[67]	JMP      	0 17	; to 31
+	14	[68]	GETTABUP 	8 0 -9	; _ENV "table"
+	15	[68]	GETTABLE 	8 8 -10	; "insert"
+	16	[68]	MOVE     	9 2
+	17	[68]	NEWTABLE 	10 0 4
+	18	[69]	GETTABLE 	11 7 -12	; "index"
+	19	[69]	SETTABLE 	10 -11 11	; "Index" -
+	20	[70]	GETTABLE 	11 7 -14	; "chance"
+	21	[70]	GETTABLE 	11 11 -15	; 1
+	22	[70]	SETTABLE 	10 -13 11	; "RoundClickNumber" -
+	23	[71]	GETTABLE 	11 7 -14	; "chance"
+	24	[71]	GETTABLE 	11 11 -17	; 2
+	25	[71]	SETTABLE 	10 -16 11	; "RoundSpreadNumber" -
+	26	[72]	SELF     	11 0 -19	; "_ToCodeWeightPairList"
+	27	[72]	GETTABLE 	13 7 -20	; "item"
+	28	[72]	CALL     	11 3 2
+	29	[72]	SETTABLE 	10 -18 11	; "SpreadWeight" -
+	30	[68]	CALL     	8 3 1
+	31	[67]	TFORCALL 	3 2
+	32	[67]	TFORLOOP 	5 -19	; to 14
+	33	[76]	GETTABUP 	3 0 -9	; _ENV "table"
+	34	[76]	GETTABLE 	3 3 -21	; "sort"
+	35	[76]	MOVE     	4 2
+	36	[76]	CLOSURE  	5 0	; 000001E3140F4B30
+	37	[76]	CALL     	3 3 1
+	38	[77]	GETTABLE 	3 0 -1	; "m_config"
+	39	[77]	SETTABLE 	3 -22 2	; "Block" -
+	40	[80]	NEWTABLE 	3 0 0
+	41	[81]	GETTABUP 	4 0 -7	; _ENV "ipairs"
+	42	[81]	GETTABLE 	5 1 -23	; "farmboardAnimalConfig"
+	43	[81]	CALL     	4 2 4
+	44	[81]	JMP      	0 7	; to 52
+	45	[82]	GETTABUP 	9 0 -9	; _ENV "table"
+	46	[82]	GETTABLE 	9 9 -10	; "insert"
+	47	[82]	MOVE     	10 3
+	48	[82]	SELF     	11 0 -19	; "_ToCodeWeightPairList"
+	49	[82]	GETTABLE 	13 8 -20	; "item"
+	50	[82]	CALL     	11 3 0
+	51	[82]	CALL     	9 0 1
+	52	[81]	TFORCALL 	4 2
+	53	[81]	TFORLOOP 	6 -9	; to 45
+	54	[84]	GETTABLE 	4 0 -1	; "m_config"
+	55	[84]	SETTABLE 	4 -24 3	; "Animal" -
+	56	[87]	NEWTABLE 	4 0 0
+	57	[88]	GETTABUP 	5 0 -7	; _ENV "ipairs"
+	58	[88]	GETTABLE 	6 1 -25	; "farmboardItems"
+	59	[88]	CALL     	5 2 4
+	60	[88]	JMP      	0 3	; to 64
+	61	[89]	GETTABLE 	10 9 -12	; "index"
+	62	[89]	GETTABLE 	11 9 -26	; "itemID"
+	63	[89]	SETTABLE 	4 10 11
+	64	[88]	TFORCALL 	5 2
+	65	[88]	TFORLOOP 	7 -5	; to 61
+	66	[91]	GETTABLE 	5 0 -1	; "m_config"
+	67	[91]	SETTABLE 	5 -27 4	; "Item" -
+	68	[93]	GETTABUP 	5 0 -28	; _ENV "MiscConfigReader"
+	69	[93]	GETTABLE 	5 5 -4	; "Create"
+	70	[93]	MOVE     	6 1
+	71	[93]	CALL     	5 2 2
+	72	[94]	GETTABLE 	6 0 -1	; "m_config"
+	73	[94]	SELF     	7 5 -30	; "GetInteger"
+	74	[94]	LOADK    	9 -31	; "farm_tool_boost"
+	75	[94]	CALL     	7 3 2
+	76	[94]	EQ       	1 7 -15	; - 1
+	77	[94]	JMP      	0 1	; to 79
+	78	[94]	LOADBOOL 	7 0 1
+	79	[94]	LOADBOOL 	7 1 0
+	80	[94]	SETTABLE 	6 -29 7	; "BlockBoostEnabled" -
+	81	[96]	GETTABLE 	6 1 -33	; "eventBookContents"
+	82	[96]	SETTABLE 	0 -32 6	; "m_itemBookConifg" -
+	83	[97]	GETTABUP 	6 0 -34	; _ENV "GameConfig"
+	84	[97]	GETTABLE 	6 6 -35	; "IsTestMode"
+	85	[97]	CALL     	6 1 2
+	86	[97]	TEST     	6 0
+	87	[97]	JMP      	0 9	; to 97
+	88	[97]	GETTABLE 	6 1 -25	; "farmboardItems"
+	89	[97]	LEN      	6 6
+	90	[97]	LEN      	7 4
+	91	[97]	EQ       	1 6 7
+	92	[97]	JMP      	0 4	; to 97
+	93	[98]	GETTABUP 	6 0 -36	; _ENV "Log"
+	94	[98]	GETTABLE 	6 6 -37	; "Error"
+	95	[98]	LOADK    	7 -38	; "FarmboardActivityModel:Init() farmboardItems\233\133\141\231\189\174index\228\184\141\232\191\158\231\187\173"
+	96	[98]	CALL     	6 2 1
+	97	[100]	RETURN   	0 1
+constants (38) for 000001E3140EE8E0:
+	1	"m_config"
+	2	"OrderScore"
+	3	"EventOrderScoreConfig"
+	4	"Create"
+	5	"m_activityDefinition"
+	6	"TokenProperty"
+	7	"ipairs"
+	8	"farmboardProduceConfig"
+	9	"table"
+	10	"insert"
+	11	"Index"
+	12	"index"
+	13	"RoundClickNumber"
+	14	"chance"
+	15	1
+	16	"RoundSpreadNumber"
+	17	2
+	18	"SpreadWeight"
+	19	"_ToCodeWeightPairList"
+	20	"item"
+	21	"sort"
+	22	"Block"
+	23	"farmboardAnimalConfig"
+	24	"Animal"
+	25	"farmboardItems"
+	26	"itemID"
+	27	"Item"
+	28	"MiscConfigReader"
+	29	"BlockBoostEnabled"
+	30	"GetInteger"
+	31	"farm_tool_boost"
+	32	"m_itemBookConifg"
+	33	"eventBookContents"
+	34	"GameConfig"
+	35	"IsTestMode"
+	36	"Log"
+	37	"Error"
+	38	"FarmboardActivityModel:Init() farmboardItems\233\133\141\231\189\174index\228\184\141\232\191\158\231\187\173"
+locals (21) for 000001E3140EE8E0:
+	0	self	1	98
+	1	config	1	98
+	2	blockConifg	10	98
+	3	(for generator)	13	33
+	4	(for state)	13	33
+	5	(for control)	13	33
+	6	_	14	31
+	7	item	14	31
+	8	animalConfig	41	98
+	9	(for generator)	44	54
+	10	(for state)	44	54
+	11	(for control)	44	54
+	12	_	45	52
+	13	item	45	52
+	14	itemConfig	57	98
+	15	(for generator)	60	66
+	16	(for state)	60	66
+	17	(for control)	60	66
+	18	_	61	64
+	19	item	61	64
+	20	miscConfigReader	72	98
+upvalues (1) for 000001E3140EE8E0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:76,76> (8 instructions at 000001E3140F4B30)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[76]	GETTABLE 	2 0 -1	; "Index"
+	2	[76]	GETTABLE 	3 1 -1	; "Index"
+	3	[76]	LT       	1 2 3
+	4	[76]	JMP      	0 1	; to 6
+	5	[76]	LOADBOOL 	2 0 1
+	6	[76]	LOADBOOL 	2 1 0
+	7	[76]	RETURN   	2 2
+	8	[76]	RETURN   	0 1
+constants (1) for 000001E3140F4B30:
+	1	"Index"
+locals (2) for 000001E3140F4B30:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 000001E3140F4B30:
+
+function <FarmboardActivityModel.lua:102,115> (28 instructions at 000001E3140F4EA0)
+1 param, 4 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[103]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[103]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[103]	MOVE     	2 0
+	4	[103]	CALL     	1 2 1
+	5	[104]	GETTABLE 	1 0 -3	; "m_boardModel"
+	6	[104]	EQ       	1 1 -4	; - nil
+	7	[104]	JMP      	0 8	; to 16
+	8	[105]	GETTABLE 	1 0 -3	; "m_boardModel"
+	9	[105]	SELF     	1 1 -5	; "DropData"
+	10	[105]	GETTABLE 	3 0 -6	; "m_lateInit"
+	11	[105]	CALL     	1 3 1
+	12	[106]	SETTABLE 	0 -3 -4	; "m_boardModel" nil
+	13	[107]	SETTABLE 	0 -7 -4	; "m_blockModel" nil
+	14	[108]	SETTABLE 	0 -8 -4	; "m_animalModel" nil
+	15	[108]	JMP      	0 12	; to 28
+	16	[110]	GETTABLE 	1 0 -9	; "m_itemDataTable"
+	17	[110]	SELF     	1 1 -10	; "Drop"
+	18	[110]	CALL     	1 2 1
+	19	[111]	GETTABLE 	1 0 -11	; "m_itemLayerDataTable"
+	20	[111]	SELF     	1 1 -10	; "Drop"
+	21	[111]	CALL     	1 2 1
+	22	[112]	GETTABLE 	1 0 -12	; "m_itemCacheDataTable"
+	23	[112]	SELF     	1 1 -10	; "Drop"
+	24	[112]	CALL     	1 2 1
+	25	[113]	GETTABLE 	1 0 -13	; "m_boardDataTable"
+	26	[113]	SELF     	1 1 -10	; "Drop"
+	27	[113]	CALL     	1 2 1
+	28	[115]	RETURN   	0 1
+constants (13) for 000001E3140F4EA0:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_boardModel"
+	4	nil
+	5	"DropData"
+	6	"m_lateInit"
+	7	"m_blockModel"
+	8	"m_animalModel"
+	9	"m_itemDataTable"
+	10	"Drop"
+	11	"m_itemLayerDataTable"
+	12	"m_itemCacheDataTable"
+	13	"m_boardDataTable"
+locals (1) for 000001E3140F4EA0:
+	0	self	1	29
+upvalues (1) for 000001E3140F4EA0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:117,165> (127 instructions at 000001E3140F5850)
+1 param, 8 slots, 1 upvalue, 3 locals, 67 constants, 0 functions
+	1	[118]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[118]	GETTABLE 	1 1 -2	; "_OnStateChanged"
+	3	[118]	MOVE     	2 0
+	4	[118]	CALL     	1 2 1
+	5	[120]	SELF     	1 0 -3	; "GetState"
+	6	[120]	LOADBOOL 	3 0 0
+	7	[120]	CALL     	1 3 2
+	8	[121]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	9	[121]	GETTABLE 	2 2 -5	; "Started"
+	10	[121]	EQ       	0 1 2
+	11	[121]	JMP      	0 23	; to 35
+	12	[122]	GETTABLE 	2 0 -6	; "m_dbTable"
+	13	[122]	SELF     	2 2 -7	; "GetValue"
+	14	[122]	GETTABUP 	4 0 -8	; _ENV "FarmboardActivityModel"
+	15	[122]	GETTABLE 	4 4 -9	; "TokenNumberKey"
+	16	[122]	LOADK    	5 -10	; "value"
+	17	[122]	CALL     	2 4 2
+	18	[122]	EQ       	0 2 -11	; - nil
+	19	[122]	JMP      	0 15	; to 35
+	20	[124]	SELF     	2 0 -12	; "_ChangeTokenNumber"
+	21	[124]	LOADK    	4 -13	; 1
+	22	[124]	GETTABLE 	5 0 -14	; "m_activityDefinition"
+	23	[124]	GETTABLE 	5 5 -15	; "BIAddTokenFree"
+	24	[124]	CALL     	2 4 1
+	25	[125]	GETTABUP 	2 0 -16	; _ENV "GM"
+	26	[125]	GETTABLE 	2 2 -17	; "BIManager"
+	27	[125]	SELF     	2 2 -18	; "LogAcquire"
+	28	[125]	GETTABLE 	4 0 -14	; "m_activityDefinition"
+	29	[125]	GETTABLE 	4 4 -19	; "TokenProperty"
+	30	[125]	LOADK    	5 -13	; 1
+	31	[125]	GETTABLE 	6 0 -14	; "m_activityDefinition"
+	32	[125]	GETTABLE 	6 6 -15	; "BIAddTokenFree"
+	33	[125]	LOADBOOL 	7 1 0
+	34	[125]	CALL     	2 6 1
+	35	[128]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	36	[128]	GETTABLE 	2 2 -5	; "Started"
+	37	[128]	EQ       	1 1 2
+	38	[128]	JMP      	0 4	; to 43
+	39	[128]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	40	[128]	GETTABLE 	2 2 -20	; "Ended"
+	41	[128]	EQ       	0 1 2
+	42	[128]	JMP      	0 67	; to 110
+	43	[129]	GETTABLE 	2 0 -21	; "m_boardModel"
+	44	[129]	EQ       	0 2 -11	; - nil
+	45	[129]	JMP      	0 68	; to 114
+	46	[131]	NEWTABLE 	2 0 11
+	47	[132]	GETTABLE 	3 0 -23	; "m_itemDataTable"
+	48	[132]	SETTABLE 	2 -22 3	; "itemDataTable" -
+	49	[133]	GETTABLE 	3 0 -25	; "m_itemLayerDataTable"
+	50	[133]	SETTABLE 	2 -24 3	; "itemLayerDataTable" -
+	51	[134]	GETTABLE 	3 0 -27	; "m_itemCacheDataTable"
+	52	[134]	SETTABLE 	2 -26 3	; "itemCacheDataTable" -
+	53	[135]	GETTABLE 	3 0 -29	; "m_boardDataTable"
+	54	[135]	SETTABLE 	2 -28 3	; "boardDataTable" -
+	55	[136]	GETTABLE 	3 0 -14	; "m_activityDefinition"
+	56	[136]	GETTABLE 	3 3 -31	; "BoardModelConfigName"
+	57	[136]	SETTABLE 	2 -30 3	; "boardInitFileName" -
+	58	[137]	GETTABLE 	3 0 -14	; "m_activityDefinition"
+	59	[137]	GETTABLE 	3 3 -33	; "FogConfigName"
+	60	[137]	SETTABLE 	2 -32 3	; "fogConfigFileName" -
+	61	[138]	SELF     	3 0 -35	; "GetLevel"
+	62	[138]	CALL     	3 2 2
+	63	[138]	SETTABLE 	2 -34 3	; "activityLevel" -
+	64	[139]	GETTABLE 	3 0 -6	; "m_dbTable"
+	65	[139]	SETTABLE 	2 -36 3	; "activityDBTable" -
+	66	[140]	GETTABLE 	3 0 -38	; "m_itemBookConifg"
+	67	[140]	SETTABLE 	2 -37 3	; "itemIllustrated" -
+	68	[141]	SELF     	3 0 -40	; "GetType"
+	69	[141]	CALL     	3 2 2
+	70	[141]	SETTABLE 	2 -39 3	; "activityType" -
+	71	[142]	GETTABLE 	3 0 -14	; "m_activityDefinition"
+	72	[142]	GETTABLE 	3 3 -42	; "BoardObstacleConfigName"
+	73	[142]	SETTABLE 	2 -41 3	; "obstacleConfigFileName" -
+	74	[144]	GETTABUP 	3 0 -43	; _ENV "FarmboardActivityBoardModel"
+	75	[144]	GETTABLE 	3 3 -44	; "Create"
+	76	[144]	MOVE     	4 2
+	77	[144]	CALL     	3 2 2
+	78	[144]	SETTABLE 	0 -21 3	; "m_boardModel" -
+	79	[145]	GETTABUP 	3 0 -46	; _ENV "FarmboardActivityBlockModel"
+	80	[145]	GETTABLE 	3 3 -44	; "Create"
+	81	[145]	GETTABLE 	4 0 -6	; "m_dbTable"
+	82	[145]	GETTABLE 	5 0 -47	; "m_config"
+	83	[145]	GETTABLE 	5 5 -48	; "Block"
+	84	[145]	CALL     	3 3 2
+	85	[145]	SETTABLE 	0 -45 3	; "m_blockModel" -
+	86	[146]	GETTABUP 	3 0 -50	; _ENV "FarmboardActivityAnimalModel"
+	87	[146]	GETTABLE 	3 3 -44	; "Create"
+	88	[146]	GETTABLE 	4 0 -6	; "m_dbTable"
+	89	[146]	GETTABLE 	5 0 -47	; "m_config"
+	90	[146]	GETTABLE 	5 5 -51	; "Animal"
+	91	[146]	CALL     	3 3 2
+	92	[146]	SETTABLE 	0 -49 3	; "m_animalModel" -
+	93	[147]	GETTABLE 	3 0 -21	; "m_boardModel"
+	94	[147]	SELF     	3 3 -53	; "GetItemIllustratedBook"
+	95	[147]	CALL     	3 2 2
+	96	[147]	SETTABLE 	0 -52 3	; "m_bookModel" -
+	97	[149]	GETTABUP 	3 0 -54	; _ENV "AddHandlerAndRecordMap"
+	98	[149]	GETTABLE 	4 0 -52	; "m_bookModel"
+	99	[149]	SELF     	4 4 -55	; "GetEvent"
+	100	[149]	CALL     	4 2 2
+	101	[149]	GETTABUP 	5 0 -56	; _ENV "BaseUIItemIllustratedBookModel"
+	102	[149]	GETTABLE 	5 5 -57	; "EventType"
+	103	[149]	GETTABLE 	5 5 -58	; "AddCacheItem"
+	104	[149]	NEWTABLE 	6 0 2
+	105	[150]	SETTABLE 	6 -59 0	; "obj" -
+	106	[150]	GETTABLE 	7 0 -61	; "OnAddCacheItem"
+	107	[150]	SETTABLE 	6 -60 7	; "method" -
+	108	[149]	CALL     	3 4 1
+	109	[152]	JMP      	0 4	; to 114
+	110	[154]	SETTABLE 	0 -21 -11	; "m_boardModel" nil
+	111	[155]	SETTABLE 	0 -45 -11	; "m_blockModel" nil
+	112	[156]	SETTABLE 	0 -49 -11	; "m_animalModel" nil
+	113	[157]	SETTABLE 	0 -52 -11	; "m_bookModel" nil
+	114	[160]	GETTABUP 	2 0 -62	; _ENV "EventDispatcher"
+	115	[160]	GETTABLE 	2 2 -63	; "DispatchEvent"
+	116	[160]	GETTABLE 	3 0 -14	; "m_activityDefinition"
+	117	[160]	GETTABLE 	3 3 -64	; "StateChangedEvent"
+	118	[160]	CALL     	2 2 1
+	119	[162]	GETTABLE 	2 0 -65	; "m_lateInit"
+	120	[162]	TEST     	2 0
+	121	[162]	JMP      	0 5	; to 127
+	122	[163]	GETTABUP 	2 0 -62	; _ENV "EventDispatcher"
+	123	[163]	GETTABLE 	2 2 -63	; "DispatchEvent"
+	124	[163]	GETTABUP 	3 0 -66	; _ENV "EEventType"
+	125	[163]	GETTABLE 	3 3 -67	; "OrderStatusChanged"
+	126	[163]	CALL     	2 2 1
+	127	[165]	RETURN   	0 1
+constants (67) for 000001E3140F5850:
+	1	"BaseActivityModel"
+	2	"_OnStateChanged"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"m_dbTable"
+	7	"GetValue"
+	8	"FarmboardActivityModel"
+	9	"TokenNumberKey"
+	10	"value"
+	11	nil
+	12	"_ChangeTokenNumber"
+	13	1
+	14	"m_activityDefinition"
+	15	"BIAddTokenFree"
+	16	"GM"
+	17	"BIManager"
+	18	"LogAcquire"
+	19	"TokenProperty"
+	20	"Ended"
+	21	"m_boardModel"
+	22	"itemDataTable"
+	23	"m_itemDataTable"
+	24	"itemLayerDataTable"
+	25	"m_itemLayerDataTable"
+	26	"itemCacheDataTable"
+	27	"m_itemCacheDataTable"
+	28	"boardDataTable"
+	29	"m_boardDataTable"
+	30	"boardInitFileName"
+	31	"BoardModelConfigName"
+	32	"fogConfigFileName"
+	33	"FogConfigName"
+	34	"activityLevel"
+	35	"GetLevel"
+	36	"activityDBTable"
+	37	"itemIllustrated"
+	38	"m_itemBookConifg"
+	39	"activityType"
+	40	"GetType"
+	41	"obstacleConfigFileName"
+	42	"BoardObstacleConfigName"
+	43	"FarmboardActivityBoardModel"
+	44	"Create"
+	45	"m_blockModel"
+	46	"FarmboardActivityBlockModel"
+	47	"m_config"
+	48	"Block"
+	49	"m_animalModel"
+	50	"FarmboardActivityAnimalModel"
+	51	"Animal"
+	52	"m_bookModel"
+	53	"GetItemIllustratedBook"
+	54	"AddHandlerAndRecordMap"
+	55	"GetEvent"
+	56	"BaseUIItemIllustratedBookModel"
+	57	"EventType"
+	58	"AddCacheItem"
+	59	"obj"
+	60	"method"
+	61	"OnAddCacheItem"
+	62	"EventDispatcher"
+	63	"DispatchEvent"
+	64	"StateChangedEvent"
+	65	"m_lateInit"
+	66	"EEventType"
+	67	"OrderStatusChanged"
+locals (3) for 000001E3140F5850:
+	0	self	1	128
+	1	state	8	128
+	2	args	74	109
+upvalues (1) for 000001E3140F5850:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:167,193> (35 instructions at 000001E3140F5E50)
+1 param, 4 slots, 1 upvalue, 1 local, 23 constants, 3 functions
+	1	[168]	NEWTABLE 	1 0 11
+	2	[169]	SETTABLE 	1 -1 -2	; "Type" "farmboardActivity"
+	3	[170]	NEWTABLE 	2 1 0
+	4	[170]	GETTABLE 	3 0 -4	; "m_activityDefinition"
+	5	[170]	GETTABLE 	3 3 -5	; "StateChangedEvent"
+	6	[170]	SETLIST  	2 1 1	; 1
+	7	[170]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	8	[171]	GETTABUP 	2 0 -7	; _ENV "UIPrefabConfigName"
+	9	[171]	GETTABLE 	2 2 -8	; "HudActivityEntry"
+	10	[171]	SETTABLE 	1 -6 2	; "EntryPrefabConfigName" -
+	11	[174]	CLOSURE  	2 0	; 000001E3140F5CD0
+	12	[174]	SETTABLE 	1 -9 2	; "CheckFunc" -
+	13	[175]	GETTABUP 	2 0 -11	; _ENV "EHudSideBarType"
+	14	[175]	GETTABLE 	2 2 -12	; "Left"
+	15	[175]	SETTABLE 	1 -10 2	; "HudSideBarType" -
+	16	[176]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	17	[176]	GETTABLE 	2 2 -13	; "EntryButtonKey"
+	18	[176]	SETTABLE 	1 -13 2	; "EntryButtonKey" -
+	19	[177]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	20	[177]	GETTABLE 	2 2 -15	; "EntryImageName"
+	21	[177]	SETTABLE 	1 -14 2	; "EntryIconName" -
+	22	[184]	CLOSURE  	2 1	; 000001E3140F5750
+	23	[184]	SETTABLE 	1 -16 2	; "OnClickedFunc" -
+	24	[185]	GETTABUP 	2 0 -18	; _ENV "EntryRedPointType"
+	25	[185]	GETTABLE 	2 2 -19	; "Num"
+	26	[185]	SETTABLE 	1 -17 2	; "RedPointType" -
+	27	[188]	CLOSURE  	2 2	; 000001E3140F58D0
+	28	[188]	SETTABLE 	1 -20 2	; "GetRedPointNumFunc" -
+	29	[189]	NEWTABLE 	2 1 0
+	30	[190]	GETTABLE 	3 0 -22	; "m_activityDefinition"
+	31	[191]	GETTABLE 	3 3 -23	; "TokenNumberChangedEvent"
+	32	[191]	SETLIST  	2 1 1	; 1
+	33	[191]	SETTABLE 	1 -21 2	; "ArrUpdateEntryContentEvent" -
+	34	[192]	RETURN   	1 2
+	35	[193]	RETURN   	0 1
+constants (23) for 000001E3140F5E50:
+	1	"Type"
+	2	"farmboardActivity"
+	3	"ArrCheckShowEvent"
+	4	"m_activityDefinition"
+	5	"StateChangedEvent"
+	6	"EntryPrefabConfigName"
+	7	"UIPrefabConfigName"
+	8	"HudActivityEntry"
+	9	"CheckFunc"
+	10	"HudSideBarType"
+	11	"EHudSideBarType"
+	12	"Left"
+	13	"EntryButtonKey"
+	14	"EntryIconName"
+	15	"EntryImageName"
+	16	"OnClickedFunc"
+	17	"RedPointType"
+	18	"EntryRedPointType"
+	19	"Num"
+	20	"GetRedPointNumFunc"
+	21	"ArrUpdateEntryContentEvent"
+	22	"m_activityDefinition"
+	23	"TokenNumberChangedEvent"
+locals (1) for 000001E3140F5E50:
+	0	self	1	36
+upvalues (1) for 000001E3140F5E50:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:172,174> (18 instructions at 000001E3140F5CD0)
+0 params, 2 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[173]	GETUPVAL 	0 0	; self
+	2	[173]	SELF     	0 0 -1	; "GetState"
+	3	[173]	CALL     	0 2 2
+	4	[173]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[173]	GETTABLE 	1 1 -3	; "Preparing"
+	6	[173]	EQ       	1 0 1
+	7	[173]	JMP      	0 8	; to 16
+	8	[173]	GETUPVAL 	0 0	; self
+	9	[173]	SELF     	0 0 -1	; "GetState"
+	10	[173]	CALL     	0 2 2
+	11	[173]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	12	[173]	GETTABLE 	1 1 -4	; "Started"
+	13	[173]	EQ       	1 0 1
+	14	[173]	JMP      	0 1	; to 16
+	15	[173]	LOADBOOL 	0 0 1
+	16	[173]	LOADBOOL 	0 1 0
+	17	[173]	RETURN   	0 2
+	18	[174]	RETURN   	0 1
+constants (4) for 000001E3140F5CD0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Preparing"
+	4	"Started"
+locals (0) for 000001E3140F5CD0:
+upvalues (2) for 000001E3140F5CD0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <FarmboardActivityModel.lua:178,184> (27 instructions at 000001E3140F5750)
+0 params, 5 slots, 2 upvalues, 0 locals, 10 constants, 0 functions
+	1	[179]	GETUPVAL 	0 0	; self
+	2	[179]	SELF     	0 0 -1	; "GetState"
+	3	[179]	CALL     	0 2 2
+	4	[179]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[179]	GETTABLE 	1 1 -3	; "Preparing"
+	6	[179]	EQ       	0 0 1
+	7	[179]	JMP      	0 10	; to 18
+	8	[180]	GETTABUP 	0 1 -4	; _ENV "GM"
+	9	[180]	GETTABLE 	0 0 -5	; "UIManager"
+	10	[180]	SELF     	0 0 -6	; "OpenView"
+	11	[180]	GETTABUP 	2 0 -7	; self "m_activityDefinition"
+	12	[180]	GETTABLE 	2 2 -8	; "NoticeWindowPrefabName"
+	13	[180]	GETUPVAL 	3 0	; self
+	14	[180]	SELF     	3 3 -9	; "GetType"
+	15	[180]	CALL     	3 2 0
+	16	[180]	CALL     	0 0 1
+	17	[180]	JMP      	0 9	; to 27
+	18	[182]	GETTABUP 	0 1 -4	; _ENV "GM"
+	19	[182]	GETTABLE 	0 0 -5	; "UIManager"
+	20	[182]	SELF     	0 0 -6	; "OpenView"
+	21	[182]	GETTABUP 	2 0 -7	; self "m_activityDefinition"
+	22	[182]	GETTABLE 	2 2 -10	; "MainWindowPrefabName"
+	23	[182]	GETUPVAL 	3 0	; self
+	24	[182]	SELF     	3 3 -9	; "GetType"
+	25	[182]	CALL     	3 2 0
+	26	[182]	CALL     	0 0 1
+	27	[184]	RETURN   	0 1
+constants (10) for 000001E3140F5750:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Preparing"
+	4	"GM"
+	5	"UIManager"
+	6	"OpenView"
+	7	"m_activityDefinition"
+	8	"NoticeWindowPrefabName"
+	9	"GetType"
+	10	"MainWindowPrefabName"
+locals (0) for 000001E3140F5750:
+upvalues (2) for 000001E3140F5750:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <FarmboardActivityModel.lua:186,188> (5 instructions at 000001E3140F58D0)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[187]	GETUPVAL 	0 0	; self
+	2	[187]	SELF     	0 0 -1	; "GetTokenNumber"
+	3	[187]	TAILCALL 	0 2 0
+	4	[187]	RETURN   	0 0
+	5	[188]	RETURN   	0 1
+constants (1) for 000001E3140F58D0:
+	1	"GetTokenNumber"
+locals (0) for 000001E3140F58D0:
+upvalues (1) for 000001E3140F58D0:
+	0	self	1	0
+
+function <FarmboardActivityModel.lua:195,207> (22 instructions at 000001E3140F5950)
+1 param, 5 slots, 1 upvalue, 1 local, 15 constants, 1 function
+	1	[196]	NEWTABLE 	1 0 7
+	2	[197]	NEWTABLE 	2 1 0
+	3	[197]	GETTABLE 	3 0 -2	; "m_activityDefinition"
+	4	[197]	GETTABLE 	3 3 -3	; "StateChangedEvent"
+	5	[197]	SETLIST  	2 1 1	; 1
+	6	[197]	SETTABLE 	1 -1 2	; "listeners" -
+	7	[198]	LOADK    	2 -5	; "m_"
+	8	[198]	GETTABLE 	3 0 -6	; "m_type"
+	9	[198]	LOADK    	4 -7	; "Bubble"
+	10	[198]	CONCAT   	2 2 4
+	11	[198]	SETTABLE 	1 -4 2	; "bubbleName" -
+	12	[199]	SETTABLE 	1 -8 -9	; "bubbleNodeName" "m_farmboardActivityBubbleNode"
+	13	[200]	GETTABLE 	2 0 -2	; "m_activityDefinition"
+	14	[200]	GETTABLE 	2 2 -11	; "BoardEntryPrefabName"
+	15	[200]	SETTABLE 	1 -10 2	; "entryPrefabName" -
+	16	[201]	SETTABLE 	1 -12 -13	; "bubbleCountName" "m_farmboardActivityBubbleCount"
+	17	[202]	GETTABLE 	2 0 -6	; "m_type"
+	18	[202]	SETTABLE 	1 -14 2	; "activityType" -
+	19	[205]	CLOSURE  	2 0	; 000001E3140F53D0
+	20	[205]	SETTABLE 	1 -15 2	; "checkFun" -
+	21	[206]	RETURN   	1 2
+	22	[207]	RETURN   	0 1
+constants (15) for 000001E3140F5950:
+	1	"listeners"
+	2	"m_activityDefinition"
+	3	"StateChangedEvent"
+	4	"bubbleName"
+	5	"m_"
+	6	"m_type"
+	7	"Bubble"
+	8	"bubbleNodeName"
+	9	"m_farmboardActivityBubbleNode"
+	10	"entryPrefabName"
+	11	"BoardEntryPrefabName"
+	12	"bubbleCountName"
+	13	"m_farmboardActivityBubbleCount"
+	14	"activityType"
+	15	"checkFun"
+locals (1) for 000001E3140F5950:
+	0	self	1	23
+upvalues (1) for 000001E3140F5950:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:203,205> (11 instructions at 000001E3140F53D0)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[204]	GETUPVAL 	0 0	; self
+	2	[204]	SELF     	0 0 -1	; "GetState"
+	3	[204]	CALL     	0 2 2
+	4	[204]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[204]	GETTABLE 	1 1 -3	; "Started"
+	6	[204]	EQ       	1 0 1
+	7	[204]	JMP      	0 1	; to 9
+	8	[204]	LOADBOOL 	0 0 1
+	9	[204]	LOADBOOL 	0 1 0
+	10	[204]	RETURN   	0 2
+	11	[205]	RETURN   	0 1
+constants (3) for 000001E3140F53D0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+locals (0) for 000001E3140F53D0:
+upvalues (2) for 000001E3140F53D0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <FarmboardActivityModel.lua:209,215> (15 instructions at 000001E3140F5D50)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[210]	SELF     	2 0 -1	; "GetState"
+	2	[210]	CALL     	2 2 2
+	3	[210]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	4	[210]	GETTABLE 	3 3 -3	; "Started"
+	5	[210]	EQ       	1 2 3
+	6	[210]	JMP      	0 2	; to 9
+	7	[211]	LOADNIL  	2 0
+	8	[211]	RETURN   	2 2
+	9	[214]	GETTABLE 	2 0 -4	; "m_config"
+	10	[214]	GETTABLE 	2 2 -5	; "OrderScore"
+	11	[214]	SELF     	2 2 -6	; "TryGenerateRewardItem"
+	12	[214]	MOVE     	4 1
+	13	[214]	TAILCALL 	2 3 0
+	14	[214]	RETURN   	2 0
+	15	[215]	RETURN   	0 1
+constants (6) for 000001E3140F5D50:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_config"
+	5	"OrderScore"
+	6	"TryGenerateRewardItem"
+locals (2) for 000001E3140F5D50:
+	0	self	1	16
+	1	order	1	16
+upvalues (1) for 000001E3140F5D50:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:217,232> (36 instructions at 000001E3140F5450)
+2 params, 9 slots, 1 upvalue, 4 locals, 20 constants, 0 functions
+	1	[218]	SELF     	2 0 -1	; "GetGenerateItemByOrder"
+	2	[218]	GETTABLE 	4 1 -2	; "order"
+	3	[218]	CALL     	2 3 2
+	4	[219]	EQ       	0 2 -3	; - nil
+	5	[219]	JMP      	0 1	; to 7
+	6	[220]	RETURN   	0 1
+	7	[223]	SELF     	3 0 -4	; "_ChangeTokenNumber"
+	8	[223]	GETTABUP 	5 0 -5	; _ENV "PROPERTY_COUNT"
+	9	[223]	GETTABLE 	5 2 5
+	10	[223]	CALL     	3 3 1
+	11	[224]	GETTABUP 	3 0 -6	; _ENV "GM"
+	12	[224]	GETTABLE 	3 3 -7	; "BIManager"
+	13	[224]	SELF     	3 3 -8	; "LogAcquire"
+	14	[224]	GETTABLE 	5 0 -9	; "m_activityDefinition"
+	15	[224]	GETTABLE 	5 5 -10	; "TokenProperty"
+	16	[224]	GETTABUP 	6 0 -5	; _ENV "PROPERTY_COUNT"
+	17	[224]	GETTABLE 	6 2 6
+	18	[224]	GETTABLE 	7 0 -9	; "m_activityDefinition"
+	19	[224]	GETTABLE 	7 7 -11	; "BIAddTokenOrder"
+	20	[224]	LOADBOOL 	8 1 0
+	21	[224]	CALL     	3 6 1
+	22	[226]	NEWTABLE 	3 0 3
+	23	[227]	GETTABLE 	4 0 -13	; "m_type"
+	24	[227]	SETTABLE 	3 -12 4	; "ActivityType" -
+	25	[228]	GETTABLE 	4 1 -2	; "order"
+	26	[228]	SETTABLE 	3 -14 4	; "Order" -
+	27	[229]	SETTABLE 	3 -15 2	; "RewardItem" -
+	28	[231]	GETTABUP 	4 0 -6	; _ENV "GM"
+	29	[231]	GETTABLE 	4 4 -16	; "MainBoardModel"
+	30	[231]	GETTABLE 	4 4 -17	; "event"
+	31	[231]	SELF     	4 4 -18	; "Call"
+	32	[231]	GETTABUP 	6 0 -19	; _ENV "BoardEventType"
+	33	[231]	GETTABLE 	6 6 -20	; "CollectFarmboardToken"
+	34	[231]	MOVE     	7 3
+	35	[231]	CALL     	4 4 1
+	36	[232]	RETURN   	0 1
+constants (20) for 000001E3140F5450:
+	1	"GetGenerateItemByOrder"
+	2	"order"
+	3	nil
+	4	"_ChangeTokenNumber"
+	5	"PROPERTY_COUNT"
+	6	"GM"
+	7	"BIManager"
+	8	"LogAcquire"
+	9	"m_activityDefinition"
+	10	"TokenProperty"
+	11	"BIAddTokenOrder"
+	12	"ActivityType"
+	13	"m_type"
+	14	"Order"
+	15	"RewardItem"
+	16	"MainBoardModel"
+	17	"event"
+	18	"Call"
+	19	"BoardEventType"
+	20	"CollectFarmboardToken"
+locals (4) for 000001E3140F5450:
+	0	self	1	37
+	1	message	1	37
+	2	rewardItem	4	37
+	3	eventMessage	28	37
+upvalues (1) for 000001E3140F5450:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:234,238> (14 instructions at 000001E3140F5ED0)
+2 params, 7 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[235]	GETTABLE 	2 0 -1	; "m_state"
+	2	[235]	GETTABUP 	3 0 -2	; _ENV "ActivityState"
+	3	[235]	GETTABLE 	3 3 -3	; "Started"
+	4	[235]	EQ       	0 2 3
+	5	[235]	JMP      	0 8	; to 14
+	6	[236]	SELF     	2 0 -4	; "_UpdateLevel"
+	7	[236]	GETTABLE 	4 1 -5	; "New"
+	8	[236]	SELF     	4 4 -6	; "GetType"
+	9	[236]	CALL     	4 2 2
+	10	[236]	GETTABUP 	5 0 -7	; _ENV "FarmboardActivityUpdateLevelFrom"
+	11	[236]	GETTABLE 	5 5 -8	; "MergeItem"
+	12	[236]	GETTABLE 	6 1 -5	; "New"
+	13	[236]	CALL     	2 5 1
+	14	[238]	RETURN   	0 1
+constants (8) for 000001E3140F5ED0:
+	1	"m_state"
+	2	"ActivityState"
+	3	"Started"
+	4	"_UpdateLevel"
+	5	"New"
+	6	"GetType"
+	7	"FarmboardActivityUpdateLevelFrom"
+	8	"MergeItem"
+locals (2) for 000001E3140F5ED0:
+	0	self	1	15
+	1	message	1	15
+upvalues (1) for 000001E3140F5ED0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:240,242> (3 instructions at 000001E3140F5F50)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[241]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[241]	RETURN   	1 2
+	3	[242]	RETURN   	0 1
+constants (1) for 000001E3140F5F50:
+	1	"m_activityDefinition"
+locals (1) for 000001E3140F5F50:
+	0	self	1	4
+upvalues (0) for 000001E3140F5F50:
+
+function <FarmboardActivityModel.lua:244,246> (11 instructions at 000001E3140F5FD0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[245]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[245]	SELF     	1 1 -2	; "GetValue"
+	3	[245]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[245]	GETTABLE 	3 3 -4	; "TokenNumberKey"
+	5	[245]	LOADK    	4 -5	; "value"
+	6	[245]	CALL     	1 4 2
+	7	[245]	TEST     	1 1
+	8	[245]	JMP      	0 1	; to 10
+	9	[245]	LOADK    	1 -6	; 0
+	10	[245]	RETURN   	1 2
+	11	[246]	RETURN   	0 1
+constants (6) for 000001E3140F5FD0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FarmboardActivityModel"
+	4	"TokenNumberKey"
+	5	"value"
+	6	0
+locals (1) for 000001E3140F5FD0:
+	0	self	1	12
+upvalues (1) for 000001E3140F5FD0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:248,250> (8 instructions at 000001E3140F5150)
+1 param, 6 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[249]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[249]	SELF     	1 1 -2	; "Set"
+	3	[249]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[249]	GETTABLE 	3 3 -4	; "PopEndWindow"
+	5	[249]	LOADK    	4 -5	; "value"
+	6	[249]	LOADK    	5 -6	; "1"
+	7	[249]	CALL     	1 5 1
+	8	[250]	RETURN   	0 1
+constants (6) for 000001E3140F5150:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FarmboardActivityModel"
+	4	"PopEndWindow"
+	5	"value"
+	6	"1"
+locals (1) for 000001E3140F5150:
+	0	self	1	9
+upvalues (1) for 000001E3140F5150:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:252,254> (12 instructions at 000001E3140F56D0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[253]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[253]	SELF     	1 1 -2	; "GetValue"
+	3	[253]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[253]	GETTABLE 	3 3 -4	; "PopEndWindow"
+	5	[253]	LOADK    	4 -5	; "value"
+	6	[253]	CALL     	1 4 2
+	7	[253]	EQ       	0 1 -6	; - "1"
+	8	[253]	JMP      	0 1	; to 10
+	9	[253]	LOADBOOL 	1 0 1
+	10	[253]	LOADBOOL 	1 1 0
+	11	[253]	RETURN   	1 2
+	12	[254]	RETURN   	0 1
+constants (6) for 000001E3140F56D0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FarmboardActivityModel"
+	4	"PopEndWindow"
+	5	"value"
+	6	"1"
+locals (1) for 000001E3140F56D0:
+	0	self	1	13
+upvalues (1) for 000001E3140F56D0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:256,260> (15 instructions at 000001E3140F5C50)
+2 params, 8 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[257]	SELF     	2 0 -1	; "GetTokenNumber"
+	2	[257]	CALL     	2 2 2
+	3	[258]	GETTABLE 	3 0 -2	; "m_dbTable"
+	4	[258]	SELF     	3 3 -3	; "Set"
+	5	[258]	GETTABUP 	5 0 -4	; _ENV "FarmboardActivityModel"
+	6	[258]	GETTABLE 	5 5 -5	; "TokenNumberKey"
+	7	[258]	LOADK    	6 -6	; "value"
+	8	[258]	ADD      	7 2 1
+	9	[258]	CALL     	3 5 1
+	10	[259]	GETTABUP 	3 0 -7	; _ENV "EventDispatcher"
+	11	[259]	GETTABLE 	3 3 -8	; "DispatchEvent"
+	12	[259]	GETTABLE 	4 0 -9	; "m_activityDefinition"
+	13	[259]	GETTABLE 	4 4 -10	; "TokenNumberChangedEvent"
+	14	[259]	CALL     	3 2 1
+	15	[260]	RETURN   	0 1
+constants (10) for 000001E3140F5C50:
+	1	"GetTokenNumber"
+	2	"m_dbTable"
+	3	"Set"
+	4	"FarmboardActivityModel"
+	5	"TokenNumberKey"
+	6	"value"
+	7	"EventDispatcher"
+	8	"DispatchEvent"
+	9	"m_activityDefinition"
+	10	"TokenNumberChangedEvent"
+locals (3) for 000001E3140F5C50:
+	0	self	1	16
+	1	delta	1	16
+	2	tokenNumber	3	16
+upvalues (1) for 000001E3140F5C50:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:262,264> (4 instructions at 000001E3140F51D0)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[263]	SELF     	2 0 -1	; "_ChangeTokenNumber"
+	2	[263]	MOVE     	4 1
+	3	[263]	CALL     	2 3 1
+	4	[264]	RETURN   	0 1
+constants (1) for 000001E3140F51D0:
+	1	"_ChangeTokenNumber"
+locals (2) for 000001E3140F51D0:
+	0	self	1	5
+	1	count	1	5
+upvalues (0) for 000001E3140F51D0:
+
+function <FarmboardActivityModel.lua:266,268> (11 instructions at 000001E3140F5BD0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[267]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[267]	SELF     	1 1 -2	; "GetValue"
+	3	[267]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[267]	GETTABLE 	3 3 -4	; "LevelKey"
+	5	[267]	LOADK    	4 -5	; "value"
+	6	[267]	CALL     	1 4 2
+	7	[267]	TEST     	1 1
+	8	[267]	JMP      	0 1	; to 10
+	9	[267]	LOADK    	1 -6	; 0
+	10	[267]	RETURN   	1 2
+	11	[268]	RETURN   	0 1
+constants (6) for 000001E3140F5BD0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FarmboardActivityModel"
+	4	"LevelKey"
+	5	"value"
+	6	0
+locals (1) for 000001E3140F5BD0:
+	0	self	1	12
+upvalues (1) for 000001E3140F5BD0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:277,296> (46 instructions at 000001E3140F5250)
+4 params, 12 slots, 1 upvalue, 13 locals, 23 constants, 0 functions
+	1	[278]	SELF     	4 0 -1	; "GetLevel"
+	2	[278]	CALL     	4 2 2
+	3	[279]	LOADK    	5 -2	; 0
+	4	[280]	GETTABUP 	6 0 -3	; _ENV "ipairs"
+	5	[280]	GETTABLE 	7 0 -4	; "m_config"
+	6	[280]	GETTABLE 	7 7 -5	; "Item"
+	7	[280]	CALL     	6 2 4
+	8	[280]	JMP      	0 4	; to 13
+	9	[281]	EQ       	0 1 10
+	10	[281]	JMP      	0 2	; to 13
+	11	[282]	MOVE     	5 9
+	12	[282]	JMP      	0 2	; to 15
+	13	[280]	TFORCALL 	6 2
+	14	[280]	TFORLOOP 	8 -6	; to 9
+	15	[287]	LE       	0 5 4
+	16	[287]	JMP      	0 1	; to 18
+	17	[288]	RETURN   	0 1
+	18	[291]	GETTABLE 	6 0 -6	; "m_dbTable"
+	19	[291]	SELF     	6 6 -7	; "Set"
+	20	[291]	GETTABUP 	8 0 -8	; _ENV "FarmboardActivityModel"
+	21	[291]	GETTABLE 	8 8 -9	; "LevelKey"
+	22	[291]	LOADK    	9 -10	; "value"
+	23	[291]	MOVE     	10 5
+	24	[291]	CALL     	6 5 1
+	25	[292]	SELF     	6 0 -11	; "LogActivity"
+	26	[292]	GETTABUP 	8 0 -12	; _ENV "EBIType"
+	27	[292]	GETTABLE 	8 8 -13	; "ActivityRankUp"
+	28	[292]	MOVE     	9 5
+	29	[292]	CALL     	6 4 1
+	30	[293]	GETTABLE 	6 0 -14	; "m_boardModel"
+	31	[293]	SELF     	6 6 -15	; "TryUnlockFogByLevel"
+	32	[293]	MOVE     	8 5
+	33	[293]	MOVE     	9 3
+	34	[293]	CALL     	6 4 2
+	35	[294]	NEWTABLE 	7 0 4
+	36	[294]	SETTABLE 	7 -16 6	; "UnlockedFog" -
+	37	[294]	SETTABLE 	7 -17 1	; "Code" -
+	38	[294]	SETTABLE 	7 -18 5	; "Level" -
+	39	[294]	SETTABLE 	7 -19 2	; "From" -
+	40	[295]	GETTABUP 	8 0 -20	; _ENV "EventDispatcher"
+	41	[295]	GETTABLE 	8 8 -21	; "DispatchEvent"
+	42	[295]	GETTABLE 	9 0 -22	; "m_activityDefinition"
+	43	[295]	GETTABLE 	9 9 -23	; "LevelChangedEvent"
+	44	[295]	MOVE     	10 7
+	45	[295]	CALL     	8 3 1
+	46	[296]	RETURN   	0 1
+constants (23) for 000001E3140F5250:
+	1	"GetLevel"
+	2	0
+	3	"ipairs"
+	4	"m_config"
+	5	"Item"
+	6	"m_dbTable"
+	7	"Set"
+	8	"FarmboardActivityModel"
+	9	"LevelKey"
+	10	"value"
+	11	"LogActivity"
+	12	"EBIType"
+	13	"ActivityRankUp"
+	14	"m_boardModel"
+	15	"TryUnlockFogByLevel"
+	16	"UnlockedFog"
+	17	"Code"
+	18	"Level"
+	19	"From"
+	20	"EventDispatcher"
+	21	"DispatchEvent"
+	22	"m_activityDefinition"
+	23	"LevelChangedEvent"
+locals (13) for 000001E3140F5250:
+	0	self	1	47
+	1	itemCode	1	47
+	2	from	1	47
+	3	itemModel	1	47
+	4	currentLevel	3	47
+	5	targetLevel	4	47
+	6	(for generator)	8	15
+	7	(for state)	8	15
+	8	(for control)	8	15
+	9	level	9	13
+	10	code	9	13
+	11	unlockedFog	35	47
+	12	message	40	47
+upvalues (1) for 000001E3140F5250:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:298,300> (5 instructions at 000001E3140F6050)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[299]	GETTABLE 	1 0 -1	; "m_config"
+	2	[299]	GETTABLE 	1 1 -2	; "Item"
+	3	[299]	LEN      	1 1
+	4	[299]	RETURN   	1 2
+	5	[300]	RETURN   	0 1
+constants (2) for 000001E3140F6050:
+	1	"m_config"
+	2	"Item"
+locals (1) for 000001E3140F6050:
+	0	self	1	6
+upvalues (0) for 000001E3140F6050:
+
+function <FarmboardActivityModel.lua:302,304> (5 instructions at 000001E3140F52D0)
+2 params, 3 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[303]	GETTABLE 	2 0 -1	; "m_config"
+	2	[303]	GETTABLE 	2 2 -2	; "Item"
+	3	[303]	GETTABLE 	2 2 1
+	4	[303]	RETURN   	2 2
+	5	[304]	RETURN   	0 1
+constants (2) for 000001E3140F52D0:
+	1	"m_config"
+	2	"Item"
+locals (2) for 000001E3140F52D0:
+	0	self	1	6
+	1	level	1	6
+upvalues (0) for 000001E3140F52D0:
+
+function <FarmboardActivityModel.lua:306,308> (3 instructions at 000001E3140F59D0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[307]	GETTABLE 	1 0 -1	; "m_boardModel"
+	2	[307]	RETURN   	1 2
+	3	[308]	RETURN   	0 1
+constants (1) for 000001E3140F59D0:
+	1	"m_boardModel"
+locals (1) for 000001E3140F59D0:
+	0	self	1	4
+upvalues (0) for 000001E3140F59D0:
+
+function <FarmboardActivityModel.lua:310,312> (11 instructions at 000001E3140F5350)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[311]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[311]	SELF     	1 1 -2	; "GetValue"
+	3	[311]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[311]	GETTABLE 	3 3 -4	; "BoardEverFulledKey"
+	5	[311]	LOADK    	4 -5	; "value"
+	6	[311]	CALL     	1 4 2
+	7	[311]	TEST     	1 1
+	8	[311]	JMP      	0 1	; to 10
+	9	[311]	LOADBOOL 	1 0 0
+	10	[311]	RETURN   	1 2
+	11	[312]	RETURN   	0 1
+constants (5) for 000001E3140F5350:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FarmboardActivityModel"
+	4	"BoardEverFulledKey"
+	5	"value"
+locals (1) for 000001E3140F5350:
+	0	self	1	12
+upvalues (1) for 000001E3140F5350:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:314,316> (8 instructions at 000001E3140F5550)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[315]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[315]	SELF     	1 1 -2	; "Set"
+	3	[315]	GETTABUP 	3 0 -3	; _ENV "FarmboardActivityModel"
+	4	[315]	GETTABLE 	3 3 -4	; "BoardEverFulledKey"
+	5	[315]	LOADK    	4 -5	; "value"
+	6	[315]	LOADBOOL 	5 1 0
+	7	[315]	CALL     	1 5 1
+	8	[316]	RETURN   	0 1
+constants (5) for 000001E3140F5550:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FarmboardActivityModel"
+	4	"BoardEverFulledKey"
+	5	"value"
+locals (1) for 000001E3140F5550:
+	0	self	1	9
+upvalues (1) for 000001E3140F5550:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:318,327> (15 instructions at 000001E3140F55D0)
+1 param, 6 slots, 0 upvalues, 4 locals, 6 constants, 0 functions
+	1	[319]	GETTABLE 	1 0 -1	; "m_boardModel"
+	2	[319]	SELF     	1 1 -2	; "GetFogModel"
+	3	[319]	CALL     	1 2 2
+	4	[320]	SELF     	2 1 -3	; "GetMinLevelFogId"
+	5	[320]	CALL     	2 2 2
+	6	[321]	TEST     	2 1
+	7	[321]	JMP      	0 2	; to 10
+	8	[322]	LOADK    	3 -4	; -1
+	9	[322]	RETURN   	3 2
+	10	[325]	SELF     	3 1 -5	; "GetFogConfigById"
+	11	[325]	MOVE     	5 2
+	12	[325]	CALL     	3 3 2
+	13	[326]	GETTABLE 	4 3 -6	; "unlockByLevel"
+	14	[326]	RETURN   	4 2
+	15	[327]	RETURN   	0 1
+constants (6) for 000001E3140F55D0:
+	1	"m_boardModel"
+	2	"GetFogModel"
+	3	"GetMinLevelFogId"
+	4	-1
+	5	"GetFogConfigById"
+	6	"unlockByLevel"
+locals (4) for 000001E3140F55D0:
+	0	self	1	16
+	1	fogModel	4	16
+	2	fogId	6	16
+	3	config	13	16
+upvalues (0) for 000001E3140F55D0:
+
+function <FarmboardActivityModel.lua:329,331> (5 instructions at 000001E3140F5A50)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[330]	GETTABLE 	1 0 -1	; "m_blockModel"
+	2	[330]	SELF     	1 1 -2	; "GetUnlockedCount"
+	3	[330]	TAILCALL 	1 2 0
+	4	[330]	RETURN   	1 0
+	5	[331]	RETURN   	0 1
+constants (2) for 000001E3140F5A50:
+	1	"m_blockModel"
+	2	"GetUnlockedCount"
+locals (1) for 000001E3140F5A50:
+	0	self	1	6
+upvalues (0) for 000001E3140F5A50:
+
+function <FarmboardActivityModel.lua:333,335> (2 instructions at 000001E3140F5AD0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[334]	SETTABLE 	0 -1 1	; "m_needPlayChangeTextAni" -
+	2	[335]	RETURN   	0 1
+constants (1) for 000001E3140F5AD0:
+	1	"m_needPlayChangeTextAni"
+locals (2) for 000001E3140F5AD0:
+	0	self	1	3
+	1	needPlay	1	3
+upvalues (0) for 000001E3140F5AD0:
+
+function <FarmboardActivityModel.lua:337,339> (3 instructions at 000001E3140F5650)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[338]	GETTABLE 	1 0 -1	; "m_needPlayChangeTextAni"
+	2	[338]	RETURN   	1 2
+	3	[339]	RETURN   	0 1
+constants (1) for 000001E3140F5650:
+	1	"m_needPlayChangeTextAni"
+locals (1) for 000001E3140F5650:
+	0	self	1	4
+upvalues (0) for 000001E3140F5650:
+
+function <FarmboardActivityModel.lua:343,363> (57 instructions at 000001E3140F57D0)
+2 params, 12 slots, 1 upvalue, 5 locals, 26 constants, 0 functions
+	1	[344]	SELF     	2 0 -1	; "GetUnlockedBlockCount"
+	2	[344]	CALL     	2 2 2
+	3	[344]	GETTABUP 	3 0 -2	; _ENV "FarmboardActivityBlockMaxCount"
+	4	[344]	LE       	0 3 2
+	5	[344]	JMP      	0 5	; to 11
+	6	[345]	GETTABUP 	2 0 -3	; _ENV "Log"
+	7	[345]	GETTABLE 	2 2 -4	; "Error"
+	8	[345]	LOADK    	3 -5	; "[\229\134\156\229\156\186\230\163\139\231\155\152]\229\183\178\232\190\190\229\136\176\229\156\176\229\157\151\230\156\128\229\164\167\232\167\163\233\148\129\230\149\176\233\135\143\239\188\140\232\175\183\230\163\128\230\159\165\232\175\165\231\167\141\229\173\144\230\163\139\229\173\144\230\157\165\230\186\144"
+	9	[345]	CALL     	2 2 1
+	10	[346]	RETURN   	0 1
+	11	[348]	SELF     	2 0 -6	; "GetUnlockProduceMultipleRate"
+	12	[348]	CALL     	2 2 2
+	13	[349]	GETTABLE 	3 0 -7	; "m_boardModel"
+	14	[349]	SELF     	3 3 -8	; "RemoveItem"
+	15	[349]	MOVE     	5 1
+	16	[349]	CALL     	3 3 1
+	17	[350]	GETTABLE 	3 0 -9	; "m_blockModel"
+	18	[350]	SELF     	3 3 -10	; "Unlock"
+	19	[350]	CALL     	3 2 1
+	20	[351]	GETTABUP 	3 0 -11	; _ENV "GM"
+	21	[351]	GETTABLE 	3 3 -12	; "BIManager"
+	22	[351]	SELF     	3 3 -13	; "LogAction"
+	23	[351]	GETTABLE 	5 0 -14	; "m_activityDefinition"
+	24	[351]	GETTABLE 	5 5 -15	; "BIBlockUnlock"
+	25	[351]	SELF     	6 0 -1	; "GetUnlockedBlockCount"
+	26	[351]	CALL     	6 2 0
+	27	[351]	CALL     	3 0 1
+	28	[353]	SELF     	3 0 -6	; "GetUnlockProduceMultipleRate"
+	29	[353]	CALL     	3 2 2
+	30	[354]	EQ       	1 2 3
+	31	[354]	JMP      	0 17	; to 49
+	32	[355]	GETTABUP 	4 0 -11	; _ENV "GM"
+	33	[355]	GETTABLE 	4 4 -12	; "BIManager"
+	34	[355]	SELF     	4 4 -13	; "LogAction"
+	35	[355]	GETTABLE 	6 0 -14	; "m_activityDefinition"
+	36	[355]	GETTABLE 	6 6 -16	; "BIBlockMultipleShow"
+	37	[355]	NEWTABLE 	7 0 2
+	38	[356]	SELF     	8 0 -18	; "GetId"
+	39	[356]	CALL     	8 2 2
+	40	[356]	SETTABLE 	7 -17 8	; "id" -
+	41	[357]	GETTABUP 	8 0 -20	; _ENV "MathUtil"
+	42	[357]	GETTABLE 	8 8 -21	; "IntPow"
+	43	[357]	LOADK    	9 -22	; 2
+	44	[357]	SELF     	10 0 -6	; "GetUnlockProduceMultipleRate"
+	45	[357]	CALL     	10 2 0
+	46	[357]	CALL     	8 0 2
+	47	[357]	SETTABLE 	7 -19 8	; "rate" -
+	48	[355]	CALL     	4 4 1
+	49	[361]	NEWTABLE 	4 0 1
+	50	[361]	SETTABLE 	4 -23 1	; "Source" -
+	51	[362]	GETTABUP 	5 0 -24	; _ENV "EventDispatcher"
+	52	[362]	GETTABLE 	5 5 -25	; "DispatchEvent"
+	53	[362]	GETTABLE 	6 0 -14	; "m_activityDefinition"
+	54	[362]	GETTABLE 	6 6 -26	; "BlockUnlockedEvent"
+	55	[362]	MOVE     	7 4
+	56	[362]	CALL     	5 3 1
+	57	[363]	RETURN   	0 1
+constants (26) for 000001E3140F57D0:
+	1	"GetUnlockedBlockCount"
+	2	"FarmboardActivityBlockMaxCount"
+	3	"Log"
+	4	"Error"
+	5	"[\229\134\156\229\156\186\230\163\139\231\155\152]\229\183\178\232\190\190\229\136\176\229\156\176\229\157\151\230\156\128\229\164\167\232\167\163\233\148\129\230\149\176\233\135\143\239\188\140\232\175\183\230\163\128\230\159\165\232\175\165\231\167\141\229\173\144\230\163\139\229\173\144\230\157\165\230\186\144"
+	6	"GetUnlockProduceMultipleRate"
+	7	"m_boardModel"
+	8	"RemoveItem"
+	9	"m_blockModel"
+	10	"Unlock"
+	11	"GM"
+	12	"BIManager"
+	13	"LogAction"
+	14	"m_activityDefinition"
+	15	"BIBlockUnlock"
+	16	"BIBlockMultipleShow"
+	17	"id"
+	18	"GetId"
+	19	"rate"
+	20	"MathUtil"
+	21	"IntPow"
+	22	2
+	23	"Source"
+	24	"EventDispatcher"
+	25	"DispatchEvent"
+	26	"BlockUnlockedEvent"
+locals (5) for 000001E3140F57D0:
+	0	self	1	58
+	1	item	1	58
+	2	prevUnlockMultiple	13	58
+	3	curUnlockMultiple	30	58
+	4	message	51	58
+upvalues (1) for 000001E3140F57D0:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:366,430> (131 instructions at 000001E3140FF080)
+1 param, 28 slots, 1 upvalue, 35 locals, 42 constants, 0 functions
+	1	[367]	SELF     	1 0 -1	; "GetBlockProduceTokenCount"
+	2	[367]	CALL     	1 2 2
+	3	[368]	SELF     	2 0 -2	; "GetTokenNumber"
+	4	[368]	CALL     	2 2 2
+	5	[368]	LT       	0 2 1
+	6	[368]	JMP      	0 1	; to 8
+	7	[369]	RETURN   	0 1
+	8	[372]	SELF     	2 0 -3	; "_ChangeTokenNumber"
+	9	[372]	UNM      	4 1
+	10	[372]	CALL     	2 3 1
+	11	[373]	GETTABUP 	2 0 -4	; _ENV "EventDispatcher"
+	12	[373]	GETTABLE 	2 2 -5	; "DispatchEvent"
+	13	[373]	GETTABUP 	3 0 -6	; _ENV "EEventType"
+	14	[373]	GETTABLE 	3 3 -7	; "FarmPropUsed"
+	15	[373]	NEWTABLE 	4 0 1
+	16	[373]	SETTABLE 	4 -8 1	; "num" -
+	17	[373]	CALL     	2 3 1
+	18	[374]	SELF     	2 0 -9	; "GetBlockProduceMultipleRate"
+	19	[374]	CALL     	2 2 2
+	20	[375]	GETTABLE 	3 0 -10	; "m_blockModel"
+	21	[375]	SELF     	3 3 -11	; "Produce"
+	22	[375]	MOVE     	5 2
+	23	[375]	CALL     	3 3 2
+	24	[376]	SELF     	4 0 -12	; "GetUnlockedBlockCount"
+	25	[376]	CALL     	4 2 2
+	26	[377]	GETTABUP 	5 0 -13	; _ENV "GM"
+	27	[377]	GETTABLE 	5 5 -14	; "BIManager"
+	28	[377]	SELF     	5 5 -15	; "LogAction"
+	29	[377]	GETTABLE 	7 0 -16	; "m_activityDefinition"
+	30	[377]	GETTABLE 	7 7 -17	; "BIUseToken"
+	31	[377]	NEWTABLE 	8 0 3
+	32	[378]	SETTABLE 	8 -18 1	; "u" -
+	33	[379]	SETTABLE 	8 -19 4	; "b" -
+	34	[380]	SETTABLE 	8 -20 3	; "r" -
+	35	[377]	CALL     	5 4 1
+	36	[383]	NEWTABLE 	5 0 0
+	37	[384]	GETTABUP 	6 0 -21	; _ENV "ipairs"
+	38	[384]	MOVE     	7 3
+	39	[384]	CALL     	6 2 4
+	40	[384]	JMP      	0 24	; to 65
+	41	[385]	LOADK    	11 -22	; 1
+	42	[385]	MOVE     	12 4
+	43	[385]	LOADK    	13 -22	; 1
+	44	[385]	FORPREP  	11 19	; to 64
+	45	[386]	GETTABLE 	15 5 14
+	46	[386]	EQ       	0 15 -23	; - nil
+	47	[386]	JMP      	0 2	; to 50
+	48	[387]	NEWTABLE 	15 0 0
+	49	[387]	SETTABLE 	5 14 15
+	50	[389]	GETTABUP 	15 0 -24	; _ENV "table"
+	51	[389]	GETTABLE 	15 15 -25	; "insert"
+	52	[389]	GETTABLE 	16 5 14
+	53	[389]	NEWTABLE 	17 0 2
+	54	[390]	GETTABUP 	18 0 -26	; _ENV "PROPERTY_TYPE"
+	55	[390]	GETTABUP 	19 0 -26	; _ENV "PROPERTY_TYPE"
+	56	[390]	GETTABLE 	19 10 19
+	57	[390]	SETTABLE 	17 18 19
+	58	[391]	GETTABUP 	18 0 -27	; _ENV "PROPERTY_COUNT"
+	59	[391]	GETTABUP 	19 0 -27	; _ENV "PROPERTY_COUNT"
+	60	[391]	GETTABLE 	19 10 19
+	61	[391]	IDIV     	19 19 4
+	62	[391]	SETTABLE 	17 18 19
+	63	[389]	CALL     	15 3 1
+	64	[385]	FORLOOP  	11 -20	; to 45
+	65	[384]	TFORCALL 	6 2
+	66	[384]	TFORLOOP 	8 -26	; to 41
+	67	[396]	GETTABUP 	6 0 -21	; _ENV "ipairs"
+	68	[396]	MOVE     	7 5
+	69	[396]	CALL     	6 2 4
+	70	[396]	JMP      	0 58	; to 129
+	71	[397]	LOADK    	11 -28	; 0
+	72	[398]	GETTABUP 	12 0 -21	; _ENV "ipairs"
+	73	[398]	MOVE     	13 10
+	74	[398]	CALL     	12 2 4
+	75	[398]	JMP      	0 51	; to 127
+	76	[399]	GETTABUP 	17 0 -26	; _ENV "PROPERTY_TYPE"
+	77	[399]	GETTABLE 	17 16 17
+	78	[400]	LOADNIL  	18 0
+	79	[401]	LOADK    	19 -22	; 1
+	80	[401]	GETTABUP 	20 0 -27	; _ENV "PROPERTY_COUNT"
+	81	[401]	GETTABLE 	20 16 20
+	82	[401]	LOADK    	21 -22	; 1
+	83	[401]	FORPREP  	19 36	; to 120
+	84	[402]	GETTABLE 	23 0 -29	; "m_boardModel"
+	85	[402]	SELF     	23 23 -30	; "BlockDispatchItem"
+	86	[402]	MOVE     	25 17
+	87	[402]	CALL     	23 3 2
+	88	[403]	ADD      	11 11 -22	; - 1
+	89	[404]	TEST     	23 0
+	90	[404]	JMP      	0 18	; to 109
+	91	[405]	NEWTABLE 	24 0 5
+	92	[406]	SELF     	25 23 -32	; "GetPosition"
+	93	[406]	CALL     	25 2 2
+	94	[406]	SETTABLE 	24 -31 25	; "Pos" -
+	95	[407]	SETTABLE 	24 -33 -34	; "ToCache" false
+	96	[408]	SETTABLE 	24 -35 9	; "BlockIndex" -
+	97	[409]	SETTABLE 	24 -36 11	; "Index" -
+	98	[410]	SETTABLE 	24 -37 23	; "Source" -
+	99	[412]	GETTABUP 	25 0 -4	; _ENV "EventDispatcher"
+	100	[412]	GETTABLE 	25 25 -5	; "DispatchEvent"
+	101	[412]	GETTABUP 	26 0 -6	; _ENV "EEventType"
+	102	[412]	GETTABLE 	26 26 -38	; "FarmboardBlockProduced"
+	103	[412]	MOVE     	27 24
+	104	[412]	CALL     	25 3 1
+	105	[413]	EQ       	0 18 -23	; - nil
+	106	[413]	JMP      	0 13	; to 120
+	107	[414]	MOVE     	18 23
+	108	[415]	JMP      	0 11	; to 120
+	109	[417]	NEWTABLE 	24 0 4
+	110	[418]	SETTABLE 	24 -33 -39	; "ToCache" true
+	111	[419]	SETTABLE 	24 -35 9	; "BlockIndex" -
+	112	[420]	SETTABLE 	24 -36 11	; "Index" -
+	113	[421]	SETTABLE 	24 -37 17	; "Source" -
+	114	[423]	GETTABUP 	25 0 -4	; _ENV "EventDispatcher"
+	115	[423]	GETTABLE 	25 25 -5	; "DispatchEvent"
+	116	[423]	GETTABUP 	26 0 -6	; _ENV "EEventType"
+	117	[423]	GETTABLE 	26 26 -38	; "FarmboardBlockProduced"
+	118	[423]	MOVE     	27 24
+	119	[423]	CALL     	25 3 1
+	120	[401]	FORLOOP  	19 -37	; to 84
+	121	[426]	SELF     	19 0 -40	; "_UpdateLevel"
+	122	[426]	MOVE     	21 17
+	123	[426]	GETTABUP 	22 0 -41	; _ENV "FarmboardActivityUpdateLevelFrom"
+	124	[426]	GETTABLE 	22 22 -42	; "BlockProduce"
+	125	[426]	MOVE     	23 18
+	126	[426]	CALL     	19 5 1
+	127	[398]	TFORCALL 	12 2
+	128	[398]	TFORLOOP 	14 -53	; to 76
+	129	[396]	TFORCALL 	6 2
+	130	[396]	TFORLOOP 	8 -60	; to 71
+	131	[430]	RETURN   	0 1
+constants (42) for 000001E3140FF080:
+	1	"GetBlockProduceTokenCount"
+	2	"GetTokenNumber"
+	3	"_ChangeTokenNumber"
+	4	"EventDispatcher"
+	5	"DispatchEvent"
+	6	"EEventType"
+	7	"FarmPropUsed"
+	8	"num"
+	9	"GetBlockProduceMultipleRate"
+	10	"m_blockModel"
+	11	"Produce"
+	12	"GetUnlockedBlockCount"
+	13	"GM"
+	14	"BIManager"
+	15	"LogAction"
+	16	"m_activityDefinition"
+	17	"BIUseToken"
+	18	"u"
+	19	"b"
+	20	"r"
+	21	"ipairs"
+	22	1
+	23	nil
+	24	"table"
+	25	"insert"
+	26	"PROPERTY_TYPE"
+	27	"PROPERTY_COUNT"
+	28	0
+	29	"m_boardModel"
+	30	"BlockDispatchItem"
+	31	"Pos"
+	32	"GetPosition"
+	33	"ToCache"
+	34	false
+	35	"BlockIndex"
+	36	"Index"
+	37	"Source"
+	38	"FarmboardBlockProduced"
+	39	true
+	40	"_UpdateLevel"
+	41	"FarmboardActivityUpdateLevelFrom"
+	42	"BlockProduce"
+locals (35) for 000001E3140FF080:
+	0	self	1	132
+	1	tokenCount	3	132
+	2	rate	20	132
+	3	rewards	24	132
+	4	count	26	132
+	5	splitRewards	37	132
+	6	(for generator)	40	67
+	7	(for state)	40	67
+	8	(for control)	40	67
+	9	_	41	65
+	10	reward	41	65
+	11	(for index)	44	65
+	12	(for limit)	44	65
+	13	(for step)	44	65
+	14	i	45	64
+	15	(for generator)	70	131
+	16	(for state)	70	131
+	17	(for control)	70	131
+	18	blockIndex	71	129
+	19	rewardList	71	129
+	20	itemIndex	72	129
+	21	(for generator)	75	129
+	22	(for state)	75	129
+	23	(for control)	75	129
+	24	_	76	127
+	25	reward	76	127
+	26	code	78	127
+	27	firstItem	79	127
+	28	(for index)	83	121
+	29	(for limit)	83	121
+	30	(for step)	83	121
+	31	i	84	120
+	32	newItem	88	120
+	33	message	99	108
+	34	message	114	120
+upvalues (1) for 000001E3140FF080:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:432,435> (19 instructions at 000001E3140FF500)
+1 param, 9 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[433]	SELF     	1 0 -1	; "GetUnlockProduceMultipleRate"
+	2	[433]	CALL     	1 2 2
+	3	[434]	GETTABUP 	2 0 -2	; _ENV "math"
+	4	[434]	GETTABLE 	2 2 -3	; "min"
+	5	[434]	MOVE     	3 1
+	6	[434]	GETTABUP 	4 0 -4	; _ENV "tonumber"
+	7	[434]	GETTABLE 	5 0 -5	; "m_dbTable"
+	8	[434]	SELF     	5 5 -6	; "GetValue"
+	9	[434]	GETTABUP 	7 0 -7	; _ENV "FarmboardActivityModel"
+	10	[434]	GETTABLE 	7 7 -8	; "BlockProduceMultipleRateKey"
+	11	[434]	LOADK    	8 -9	; "value"
+	12	[434]	CALL     	5 4 0
+	13	[434]	CALL     	4 0 2
+	14	[434]	TEST     	4 1
+	15	[434]	JMP      	0 1	; to 17
+	16	[434]	LOADK    	4 -10	; 0
+	17	[434]	TAILCALL 	2 3 0
+	18	[434]	RETURN   	2 0
+	19	[435]	RETURN   	0 1
+constants (10) for 000001E3140FF500:
+	1	"GetUnlockProduceMultipleRate"
+	2	"math"
+	3	"min"
+	4	"tonumber"
+	5	"m_dbTable"
+	6	"GetValue"
+	7	"FarmboardActivityModel"
+	8	"BlockProduceMultipleRateKey"
+	9	"value"
+	10	0
+locals (2) for 000001E3140FF500:
+	0	self	1	20
+	1	unlockProduceMultipleRate	3	20
+upvalues (1) for 000001E3140FF500:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:437,439> (8 instructions at 000001E3140FDD00)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[438]	GETTABUP 	1 0 -1	; _ENV "MathUtil"
+	2	[438]	GETTABLE 	1 1 -2	; "IntPow"
+	3	[438]	LOADK    	2 -3	; 2
+	4	[438]	SELF     	3 0 -4	; "GetBlockProduceMultipleRate"
+	5	[438]	CALL     	3 2 0
+	6	[438]	TAILCALL 	1 0 0
+	7	[438]	RETURN   	1 0
+	8	[439]	RETURN   	0 1
+constants (4) for 000001E3140FDD00:
+	1	"MathUtil"
+	2	"IntPow"
+	3	2
+	4	"GetBlockProduceMultipleRate"
+locals (1) for 000001E3140FDD00:
+	0	self	1	9
+upvalues (1) for 000001E3140FDD00:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:441,443> (8 instructions at 000001E3140FE080)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[442]	SELF     	1 0 -1	; "GetUnlockProduceMultipleRate"
+	2	[442]	CALL     	1 2 2
+	3	[442]	LT       	1 -2 1	; 0 -
+	4	[442]	JMP      	0 1	; to 6
+	5	[442]	LOADBOOL 	1 0 1
+	6	[442]	LOADBOOL 	1 1 0
+	7	[442]	RETURN   	1 2
+	8	[443]	RETURN   	0 1
+constants (2) for 000001E3140FE080:
+	1	"GetUnlockProduceMultipleRate"
+	2	0
+locals (1) for 000001E3140FE080:
+	0	self	1	9
+upvalues (0) for 000001E3140FE080:
+
+function <FarmboardActivityModel.lua:446,455> (29 instructions at 000001E3140FE700)
+1 param, 7 slots, 1 upvalue, 3 locals, 9 constants, 0 functions
+	1	[447]	GETTABLE 	1 0 -1	; "m_config"
+	2	[447]	GETTABLE 	1 1 -2	; "BlockBoostEnabled"
+	3	[447]	TEST     	1 1
+	4	[447]	JMP      	0 2	; to 7
+	5	[448]	LOADK    	1 -3	; 0
+	6	[448]	RETURN   	1 2
+	7	[451]	SELF     	1 0 -4	; "GetUnlockedBlockCount"
+	8	[451]	CALL     	1 2 2
+	9	[451]	LE       	0 -5 1	; 3 -
+	10	[451]	JMP      	0 3	; to 14
+	11	[451]	LOADK    	1 -6	; 1
+	12	[451]	TEST     	1 1
+	13	[451]	JMP      	0 1	; to 15
+	14	[451]	LOADK    	1 -3	; 0
+	15	[453]	GETTABLE 	2 0 -7	; "m_bookModel"
+	16	[453]	SELF     	2 2 -8	; "CheckItemCodeNoLock"
+	17	[453]	SELF     	4 0 -9	; "GetItemCodeByLevel"
+	18	[453]	GETUPVAL 	6 0	; unlockRateItemLevel
+	19	[453]	CALL     	4 3 0
+	20	[453]	CALL     	2 0 2
+	21	[453]	TEST     	2 0
+	22	[453]	JMP      	0 3	; to 26
+	23	[453]	LOADK    	2 -6	; 1
+	24	[453]	TEST     	2 1
+	25	[453]	JMP      	0 1	; to 27
+	26	[453]	LOADK    	2 -3	; 0
+	27	[454]	ADD      	3 1 2
+	28	[454]	RETURN   	3 2
+	29	[455]	RETURN   	0 1
+constants (9) for 000001E3140FE700:
+	1	"m_config"
+	2	"BlockBoostEnabled"
+	3	0
+	4	"GetUnlockedBlockCount"
+	5	3
+	6	1
+	7	"m_bookModel"
+	8	"CheckItemCodeNoLock"
+	9	"GetItemCodeByLevel"
+locals (3) for 000001E3140FE700:
+	0	self	1	30
+	1	unlockCondition1	15	30
+	2	unlockCondition2	27	30
+upvalues (1) for 000001E3140FE700:
+	0	unlockRateItemLevel	1	0
+
+function <FarmboardActivityModel.lua:457,465> (28 instructions at 000001E3140FD900)
+1 param, 8 slots, 1 upvalue, 3 locals, 18 constants, 0 functions
+	1	[458]	SELF     	1 0 -1	; "GetBlockProduceMultipleRate"
+	2	[458]	CALL     	1 2 2
+	3	[459]	SELF     	2 0 -2	; "GetUnlockProduceMultipleRate"
+	4	[459]	CALL     	2 2 2
+	5	[460]	ADD      	3 1 -3	; - 1
+	6	[460]	ADD      	4 2 -3	; - 1
+	7	[460]	MOD      	1 3 4
+	8	[461]	GETTABLE 	3 0 -4	; "m_dbTable"
+	9	[461]	SELF     	3 3 -5	; "Set"
+	10	[461]	GETTABUP 	5 0 -6	; _ENV "FarmboardActivityModel"
+	11	[461]	GETTABLE 	5 5 -7	; "BlockProduceMultipleRateKey"
+	12	[461]	LOADK    	6 -8	; "value"
+	13	[461]	MOVE     	7 1
+	14	[461]	CALL     	3 5 1
+	15	[463]	GETTABUP 	3 0 -9	; _ENV "GM"
+	16	[463]	GETTABLE 	3 3 -10	; "BIManager"
+	17	[463]	SELF     	3 3 -11	; "LogAction"
+	18	[463]	GETTABLE 	5 0 -12	; "m_activityDefinition"
+	19	[463]	GETTABLE 	5 5 -13	; "BIBlockMultipleClick"
+	20	[463]	SELF     	6 0 -14	; "GetBlockProduceTokenCount"
+	21	[463]	CALL     	6 2 0
+	22	[463]	CALL     	3 0 1
+	23	[464]	GETTABUP 	3 0 -15	; _ENV "EventDispatcher"
+	24	[464]	GETTABLE 	3 3 -16	; "DispatchEvent"
+	25	[464]	GETTABUP 	4 0 -17	; _ENV "EEventType"
+	26	[464]	GETTABLE 	4 4 -18	; "FarmboardSwitchBlockMultiple"
+	27	[464]	CALL     	3 2 1
+	28	[465]	RETURN   	0 1
+constants (18) for 000001E3140FD900:
+	1	"GetBlockProduceMultipleRate"
+	2	"GetUnlockProduceMultipleRate"
+	3	1
+	4	"m_dbTable"
+	5	"Set"
+	6	"FarmboardActivityModel"
+	7	"BlockProduceMultipleRateKey"
+	8	"value"
+	9	"GM"
+	10	"BIManager"
+	11	"LogAction"
+	12	"m_activityDefinition"
+	13	"BIBlockMultipleClick"
+	14	"GetBlockProduceTokenCount"
+	15	"EventDispatcher"
+	16	"DispatchEvent"
+	17	"EEventType"
+	18	"FarmboardSwitchBlockMultiple"
+locals (3) for 000001E3140FD900:
+	0	self	1	29
+	1	rate	3	29
+	2	unlock	5	29
+upvalues (1) for 000001E3140FD900:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:467,476> (31 instructions at 000001E3140FEF80)
+2 params, 10 slots, 2 upvalues, 2 locals, 18 constants, 0 functions
+	1	[469]	TEST     	1 0
+	2	[469]	JMP      	0 28	; to 31
+	3	[469]	GETTABLE 	2 1 -1	; "itemCode"
+	4	[469]	SELF     	3 0 -2	; "GetItemCodeByLevel"
+	5	[469]	GETUPVAL 	5 0	; unlockRateItemLevel
+	6	[469]	CALL     	3 3 2
+	7	[469]	EQ       	0 2 3
+	8	[469]	JMP      	0 22	; to 31
+	9	[470]	GETTABUP 	2 1 -3	; _ENV "EventDispatcher"
+	10	[470]	GETTABLE 	2 2 -4	; "DispatchEvent"
+	11	[470]	GETTABUP 	3 1 -5	; _ENV "EEventType"
+	12	[470]	GETTABLE 	3 3 -6	; "FarmboardUnlockBlockMultiple"
+	13	[470]	CALL     	2 2 1
+	14	[471]	GETTABUP 	2 1 -7	; _ENV "GM"
+	15	[471]	GETTABLE 	2 2 -8	; "BIManager"
+	16	[471]	SELF     	2 2 -9	; "LogAction"
+	17	[471]	GETTABLE 	4 0 -10	; "m_activityDefinition"
+	18	[471]	GETTABLE 	4 4 -11	; "BIBlockMultipleShow"
+	19	[471]	NEWTABLE 	5 0 2
+	20	[472]	SELF     	6 0 -13	; "GetId"
+	21	[472]	CALL     	6 2 2
+	22	[472]	SETTABLE 	5 -12 6	; "id" -
+	23	[473]	GETTABUP 	6 1 -15	; _ENV "MathUtil"
+	24	[473]	GETTABLE 	6 6 -16	; "IntPow"
+	25	[473]	LOADK    	7 -17	; 2
+	26	[473]	SELF     	8 0 -18	; "GetUnlockProduceMultipleRate"
+	27	[473]	CALL     	8 2 0
+	28	[473]	CALL     	6 0 2
+	29	[473]	SETTABLE 	5 -14 6	; "rate" -
+	30	[471]	CALL     	2 4 1
+	31	[476]	RETURN   	0 1
+constants (18) for 000001E3140FEF80:
+	1	"itemCode"
+	2	"GetItemCodeByLevel"
+	3	"EventDispatcher"
+	4	"DispatchEvent"
+	5	"EEventType"
+	6	"FarmboardUnlockBlockMultiple"
+	7	"GM"
+	8	"BIManager"
+	9	"LogAction"
+	10	"m_activityDefinition"
+	11	"BIBlockMultipleShow"
+	12	"id"
+	13	"GetId"
+	14	"rate"
+	15	"MathUtil"
+	16	"IntPow"
+	17	2
+	18	"GetUnlockProduceMultipleRate"
+locals (2) for 000001E3140FEF80:
+	0	self	1	32
+	1	message	1	32
+upvalues (2) for 000001E3140FEF80:
+	0	unlockRateItemLevel	1	0
+	1	_ENV	0	0
+
+function <FarmboardActivityModel.lua:480,500> (47 instructions at 000001E3140FDF80)
+2 params, 8 slots, 1 upvalue, 4 locals, 22 constants, 0 functions
+	1	[481]	TEST     	1 1
+	2	[481]	JMP      	0 4	; to 7
+	3	[481]	GETTABLE 	2 0 -1	; "m_boardModel"
+	4	[481]	SELF     	2 2 -2	; "GetAnimalActivateItem"
+	5	[481]	CALL     	2 2 2
+	6	[481]	MOVE     	1 2
+	7	[483]	LOADNIL  	2 0
+	8	[484]	EQ       	0 1 -3	; - nil
+	9	[484]	JMP      	0 3	; to 13
+	10	[485]	GETTABUP 	3 0 -4	; _ENV "FarmboardActivityActivateAnimalResult"
+	11	[485]	GETTABLE 	2 3 -5	; "NoItem"
+	12	[485]	JMP      	0 25	; to 38
+	13	[486]	GETTABLE 	3 0 -6	; "m_animalModel"
+	14	[486]	SELF     	3 3 -7	; "CanProduce"
+	15	[486]	CALL     	3 2 2
+	16	[486]	TEST     	3 0
+	17	[486]	JMP      	0 3	; to 21
+	18	[487]	GETTABUP 	3 0 -4	; _ENV "FarmboardActivityActivateAnimalResult"
+	19	[487]	GETTABLE 	2 3 -8	; "AnimalActive"
+	20	[487]	JMP      	0 17	; to 38
+	21	[489]	GETTABUP 	3 0 -4	; _ENV "FarmboardActivityActivateAnimalResult"
+	22	[489]	GETTABLE 	2 3 -9	; "Success"
+	23	[490]	GETTABLE 	3 0 -1	; "m_boardModel"
+	24	[490]	SELF     	3 3 -10	; "RemoveItem"
+	25	[490]	MOVE     	5 1
+	26	[490]	CALL     	3 3 1
+	27	[491]	GETTABLE 	3 0 -6	; "m_animalModel"
+	28	[491]	SELF     	3 3 -11	; "Activate"
+	29	[491]	CALL     	3 2 1
+	30	[492]	GETTABUP 	3 0 -12	; _ENV "GM"
+	31	[492]	GETTABLE 	3 3 -13	; "BIManager"
+	32	[492]	SELF     	3 3 -14	; "LogAction"
+	33	[492]	GETTABLE 	5 0 -15	; "m_activityDefinition"
+	34	[492]	GETTABLE 	5 5 -16	; "BIAnimalActivate"
+	35	[492]	SELF     	6 1 -17	; "GetType"
+	36	[492]	CALL     	6 2 0
+	37	[492]	CALL     	3 0 1
+	38	[495]	NEWTABLE 	3 0 2
+	39	[496]	SETTABLE 	3 -18 2	; "Result" -
+	40	[497]	SETTABLE 	3 -19 1	; "Source" -
+	41	[499]	GETTABUP 	4 0 -20	; _ENV "EventDispatcher"
+	42	[499]	GETTABLE 	4 4 -21	; "DispatchEvent"
+	43	[499]	GETTABLE 	5 0 -15	; "m_activityDefinition"
+	44	[499]	GETTABLE 	5 5 -22	; "AnimalActivatedEvent"
+	45	[499]	MOVE     	6 3
+	46	[499]	CALL     	4 3 1
+	47	[500]	RETURN   	0 1
+constants (22) for 000001E3140FDF80:
+	1	"m_boardModel"
+	2	"GetAnimalActivateItem"
+	3	nil
+	4	"FarmboardActivityActivateAnimalResult"
+	5	"NoItem"
+	6	"m_animalModel"
+	7	"CanProduce"
+	8	"AnimalActive"
+	9	"Success"
+	10	"RemoveItem"
+	11	"Activate"
+	12	"GM"
+	13	"BIManager"
+	14	"LogAction"
+	15	"m_activityDefinition"
+	16	"BIAnimalActivate"
+	17	"GetType"
+	18	"Result"
+	19	"Source"
+	20	"EventDispatcher"
+	21	"DispatchEvent"
+	22	"AnimalActivatedEvent"
+locals (4) for 000001E3140FDF80:
+	0	self	1	48
+	1	item	1	48
+	2	result	8	48
+	3	message	41	48
+upvalues (1) for 000001E3140FDF80:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:502,504> (5 instructions at 000001E3140FEC00)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[503]	GETTABLE 	1 0 -1	; "m_animalModel"
+	2	[503]	SELF     	1 1 -2	; "CanProduce"
+	3	[503]	TAILCALL 	1 2 0
+	4	[503]	RETURN   	1 0
+	5	[504]	RETURN   	0 1
+constants (2) for 000001E3140FEC00:
+	1	"m_animalModel"
+	2	"CanProduce"
+locals (1) for 000001E3140FEC00:
+	0	self	1	6
+upvalues (0) for 000001E3140FEC00:
+
+function <FarmboardActivityModel.lua:507,523> (35 instructions at 000001E3140FDE00)
+2 params, 10 slots, 1 upvalue, 5 locals, 24 constants, 0 functions
+	1	[508]	GETTABLE 	2 0 -1	; "m_animalModel"
+	2	[508]	SELF     	2 2 -2	; "Produce"
+	3	[508]	CALL     	2 2 2
+	4	[509]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[509]	GETTABLE 	3 3 -4	; "BIManager"
+	6	[509]	SELF     	3 3 -5	; "LogAction"
+	7	[509]	GETTABLE 	5 0 -6	; "m_activityDefinition"
+	8	[509]	GETTABLE 	5 5 -7	; "BIAnimalProduce"
+	9	[509]	NEWTABLE 	6 0 2
+	10	[510]	SETTABLE 	6 -8 2	; "c" -
+	11	[511]	SETTABLE 	6 -9 -10	; "n" 1
+	12	[509]	CALL     	3 4 1
+	13	[513]	GETTABLE 	3 0 -11	; "m_boardModel"
+	14	[513]	SELF     	3 3 -12	; "GenerateItem"
+	15	[513]	MOVE     	5 1
+	16	[513]	MOVE     	6 2
+	17	[513]	LOADNIL  	7 1
+	18	[513]	GETTABUP 	9 0 -13	; _ENV "BaseUIBoardModel"
+	19	[513]	GETTABLE 	9 9 -14	; "EGenerateItemState"
+	20	[513]	GETTABLE 	9 9 -15	; "FarmBoardAnimal"
+	21	[513]	CALL     	3 7 2
+	22	[514]	NEWTABLE 	4 0 4
+	23	[515]	SETTABLE 	4 -16 1	; "Pos" -
+	24	[516]	SETTABLE 	4 -17 -18	; "ToCache" false
+	25	[517]	SETTABLE 	4 -19 -10	; "Index" 1
+	26	[518]	SETTABLE 	4 -20 3	; "Source" -
+	27	[520]	GETTABUP 	5 0 -21	; _ENV "EventDispatcher"
+	28	[520]	GETTABLE 	5 5 -22	; "DispatchEvent"
+	29	[520]	GETTABUP 	6 0 -23	; _ENV "EEventType"
+	30	[520]	GETTABLE 	6 6 -24	; "FarmboardAnimalProduced"
+	31	[520]	MOVE     	7 4
+	32	[520]	CALL     	5 3 1
+	33	[522]	LOADBOOL 	5 1 0
+	34	[522]	RETURN   	5 2
+	35	[523]	RETURN   	0 1
+constants (24) for 000001E3140FDE00:
+	1	"m_animalModel"
+	2	"Produce"
+	3	"GM"
+	4	"BIManager"
+	5	"LogAction"
+	6	"m_activityDefinition"
+	7	"BIAnimalProduce"
+	8	"c"
+	9	"n"
+	10	1
+	11	"m_boardModel"
+	12	"GenerateItem"
+	13	"BaseUIBoardModel"
+	14	"EGenerateItemState"
+	15	"FarmBoardAnimal"
+	16	"Pos"
+	17	"ToCache"
+	18	false
+	19	"Index"
+	20	"Source"
+	21	"EventDispatcher"
+	22	"DispatchEvent"
+	23	"EEventType"
+	24	"FarmboardAnimalProduced"
+locals (5) for 000001E3140FDE00:
+	0	self	1	36
+	1	boardPosition	1	36
+	2	code	4	36
+	3	newItem	22	36
+	4	message	27	36
+upvalues (1) for 000001E3140FDE00:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:525,527> (5 instructions at 000001E3140FE000)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[526]	GETTABLE 	1 0 -1	; "m_boardModel"
+	2	[526]	SELF     	1 1 -2	; "CollectCacheAndBoardPropertyRewardsWithoutConvert"
+	3	[526]	TAILCALL 	1 2 0
+	4	[526]	RETURN   	1 0
+	5	[527]	RETURN   	0 1
+constants (2) for 000001E3140FE000:
+	1	"m_boardModel"
+	2	"CollectCacheAndBoardPropertyRewardsWithoutConvert"
+locals (1) for 000001E3140FE000:
+	0	self	1	6
+upvalues (0) for 000001E3140FE000:
+
+function <FarmboardActivityModel.lua:529,537> (14 instructions at 000001E3140FF580)
+1 param, 7 slots, 1 upvalue, 6 locals, 3 constants, 0 functions
+	1	[530]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[530]	GETTABUP 	2 0 -2	; _ENV "FarmboardActivityDefinition"
+	3	[530]	CALL     	1 2 4
+	4	[530]	JMP      	0 5	; to 10
+	5	[531]	GETTABLE 	6 5 -3	; "TokenProperty"
+	6	[531]	EQ       	0 6 0
+	7	[531]	JMP      	0 2	; to 10
+	8	[532]	LOADBOOL 	6 1 0
+	9	[532]	RETURN   	6 2
+	10	[530]	TFORCALL 	1 2
+	11	[530]	TFORLOOP 	3 -7	; to 5
+	12	[536]	LOADBOOL 	1 0 0
+	13	[536]	RETURN   	1 2
+	14	[537]	RETURN   	0 1
+constants (3) for 000001E3140FF580:
+	1	"pairs"
+	2	"FarmboardActivityDefinition"
+	3	"TokenProperty"
+locals (6) for 000001E3140FF580:
+	0	propertyType	1	15
+	1	(for generator)	4	12
+	2	(for state)	4	12
+	3	(for control)	4	12
+	4	_	5	10
+	5	activityDefinition	5	10
+upvalues (1) for 000001E3140FF580:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:539,549> (18 instructions at 000001E3140FE780)
+2 params, 12 slots, 1 upvalue, 8 locals, 6 constants, 0 functions
+	1	[540]	NEWTABLE 	2 0 0
+	2	[541]	GETTABUP 	3 0 -1	; _ENV "ipairs"
+	3	[541]	MOVE     	4 1
+	4	[541]	CALL     	3 2 4
+	5	[541]	JMP      	0 9	; to 15
+	6	[542]	GETTABUP 	8 0 -2	; _ENV "table"
+	7	[542]	GETTABLE 	8 8 -3	; "insert"
+	8	[542]	MOVE     	9 2
+	9	[542]	NEWTABLE 	10 0 2
+	10	[543]	GETTABLE 	11 7 -5	; "Item"
+	11	[543]	SETTABLE 	10 -4 11	; "Code" -
+	12	[544]	GETTABLE 	11 7 -6	; "Weight"
+	13	[544]	SETTABLE 	10 -6 11	; "Weight" -
+	14	[542]	CALL     	8 3 1
+	15	[541]	TFORCALL 	3 2
+	16	[541]	TFORLOOP 	5 -11	; to 6
+	17	[548]	RETURN   	2 2
+	18	[549]	RETURN   	0 1
+constants (6) for 000001E3140FE780:
+	1	"ipairs"
+	2	"table"
+	3	"insert"
+	4	"Code"
+	5	"Item"
+	6	"Weight"
+locals (8) for 000001E3140FE780:
+	0	self	1	19
+	1	itemWeightPairList	1	19
+	2	codeWeightPairList	2	19
+	3	(for generator)	5	17
+	4	(for state)	5	17
+	5	(for control)	5	17
+	6	_	6	15
+	7	pair	6	15
+upvalues (1) for 000001E3140FE780:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:551,560> (51 instructions at 000001E3140FE100)
+1 param, 11 slots, 1 upvalue, 2 locals, 14 constants, 0 functions
+	1	[552]	SELF     	1 0 -1	; "GetState"
+	2	[552]	LOADBOOL 	3 1 0
+	3	[552]	CALL     	1 3 2
+	4	[552]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	5	[552]	GETTABLE 	2 2 -3	; "Started"
+	6	[552]	EQ       	1 1 2
+	7	[552]	JMP      	0 2	; to 10
+	8	[553]	LOADK    	1 -4	; "\230\180\187\229\138\168\229\188\128\229\144\175:\230\151\160"
+	9	[553]	RETURN   	1 2
+	10	[555]	LOADK    	1 -5	; "\229\137\169\228\189\153\231\130\185\229\135\187\230\172\161\230\149\176-\229\137\169\228\189\153\229\150\183\229\143\145\230\172\161\230\149\176\n"
+	11	[556]	MOVE     	2 1
+	12	[556]	LOADK    	3 -6	; "\230\161\163\228\189\141:\228\184\128   \228\186\140   \229\155\155\n"
+	13	[556]	CONCAT   	1 2 3
+	14	[557]	MOVE     	2 1
+	15	[557]	GETTABUP 	3 0 -7	; _ENV "string"
+	16	[557]	GETTABLE 	3 3 -8	; "format"
+	17	[557]	LOADK    	4 -9	; "\228\184\187\231\186\191:%s  %s  %s\n"
+	18	[557]	SELF     	5 0 -10	; "_GetTestBlockData"
+	19	[557]	LOADK    	7 -11	; 1
+	20	[557]	LOADK    	8 -12	; 0
+	21	[557]	CALL     	5 4 2
+	22	[557]	SELF     	6 0 -10	; "_GetTestBlockData"
+	23	[557]	LOADK    	8 -11	; 1
+	24	[557]	LOADK    	9 -11	; 1
+	25	[557]	CALL     	6 4 2
+	26	[557]	SELF     	7 0 -10	; "_GetTestBlockData"
+	27	[557]	LOADK    	9 -11	; 1
+	28	[557]	LOADK    	10 -13	; 2
+	29	[557]	CALL     	7 4 0
+	30	[557]	CALL     	3 0 2
+	31	[557]	CONCAT   	1 2 3
+	32	[558]	MOVE     	2 1
+	33	[558]	GETTABUP 	3 0 -7	; _ENV "string"
+	34	[558]	GETTABLE 	3 3 -8	; "format"
+	35	[558]	LOADK    	4 -14	; "\229\137\175\231\186\191:%s  %s  %s\n"
+	36	[558]	SELF     	5 0 -10	; "_GetTestBlockData"
+	37	[558]	LOADK    	7 -13	; 2
+	38	[558]	LOADK    	8 -12	; 0
+	39	[558]	CALL     	5 4 2
+	40	[558]	SELF     	6 0 -10	; "_GetTestBlockData"
+	41	[558]	LOADK    	8 -13	; 2
+	42	[558]	LOADK    	9 -11	; 1
+	43	[558]	CALL     	6 4 2
+	44	[558]	SELF     	7 0 -10	; "_GetTestBlockData"
+	45	[558]	LOADK    	9 -13	; 2
+	46	[558]	LOADK    	10 -13	; 2
+	47	[558]	CALL     	7 4 0
+	48	[558]	CALL     	3 0 2
+	49	[558]	CONCAT   	1 2 3
+	50	[559]	RETURN   	1 2
+	51	[560]	RETURN   	0 1
+constants (14) for 000001E3140FE100:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"\230\180\187\229\138\168\229\188\128\229\144\175:\230\151\160"
+	5	"\229\137\169\228\189\153\231\130\185\229\135\187\230\172\161\230\149\176-\229\137\169\228\189\153\229\150\183\229\143\145\230\172\161\230\149\176\n"
+	6	"\230\161\163\228\189\141:\228\184\128   \228\186\140   \229\155\155\n"
+	7	"string"
+	8	"format"
+	9	"\228\184\187\231\186\191:%s  %s  %s\n"
+	10	"_GetTestBlockData"
+	11	1
+	12	0
+	13	2
+	14	"\229\137\175\231\186\191:%s  %s  %s\n"
+locals (2) for 000001E3140FE100:
+	0	self	1	52
+	1	str	11	52
+upvalues (1) for 000001E3140FE100:
+	0	_ENV	0	0
+
+function <FarmboardActivityModel.lua:562,573> (48 instructions at 000001E3140FED80)
+3 params, 11 slots, 1 upvalue, 7 locals, 16 constants, 0 functions
+	1	[563]	GETTABUP 	3 0 -1	; _ENV "string"
+	2	[563]	GETTABLE 	3 3 -2	; "format"
+	3	[563]	GETTABUP 	4 0 -3	; _ENV "FarmboardActivityBlockModel"
+	4	[563]	GETTABLE 	4 4 -4	; "BlockRoundRestClickNumberKey"
+	5	[563]	MOVE     	5 1
+	6	[563]	MOVE     	6 2
+	7	[563]	CALL     	3 4 2
+	8	[564]	GETTABUP 	4 0 -1	; _ENV "string"
+	9	[564]	GETTABLE 	4 4 -2	; "format"
+	10	[564]	GETTABUP 	5 0 -3	; _ENV "FarmboardActivityBlockModel"
+	11	[564]	GETTABLE 	5 5 -5	; "BlockRoundRestSpreadNumberKey"
+	12	[564]	MOVE     	6 1
+	13	[564]	MOVE     	7 2
+	14	[564]	CALL     	4 4 2
+	15	[565]	GETTABLE 	5 0 -6	; "m_blockModel"
+	16	[565]	GETTABLE 	5 5 -7	; "m_dbTable"
+	17	[565]	SELF     	5 5 -8	; "GetValue"
+	18	[565]	MOVE     	7 3
+	19	[565]	LOADK    	8 -9	; "value"
+	20	[565]	CALL     	5 4 2
+	21	[566]	GETTABLE 	6 0 -6	; "m_blockModel"
+	22	[566]	GETTABLE 	6 6 -7	; "m_dbTable"
+	23	[566]	SELF     	6 6 -8	; "GetValue"
+	24	[566]	MOVE     	8 4
+	25	[566]	LOADK    	9 -9	; "value"
+	26	[566]	CALL     	6 4 2
+	27	[567]	EQ       	1 5 -10	; - nil
+	28	[567]	JMP      	0 2	; to 31
+	29	[567]	EQ       	0 5 -11	; - 0
+	30	[567]	JMP      	0 8	; to 39
+	31	[568]	GETTABLE 	7 0 -6	; "m_blockModel"
+	32	[568]	GETTABLE 	7 7 -12	; "m_config"
+	33	[568]	GETTABLE 	7 7 1
+	34	[568]	GETTABLE 	5 7 -13	; "RoundClickNumber"
+	35	[569]	GETTABLE 	7 0 -6	; "m_blockModel"
+	36	[569]	GETTABLE 	7 7 -12	; "m_config"
+	37	[569]	GETTABLE 	7 7 1
+	38	[569]	GETTABLE 	6 7 -14	; "RoundSpreadNumber"
+	39	[572]	GETTABUP 	7 0 -15	; _ENV "tostring"
+	40	[572]	MOVE     	8 5
+	41	[572]	CALL     	7 2 2
+	42	[572]	LOADK    	8 -16	; "-"
+	43	[572]	GETTABUP 	9 0 -15	; _ENV "tostring"
+	44	[572]	MOVE     	10 6
+	45	[572]	CALL     	9 2 2
+	46	[572]	CONCAT   	7 7 9
+	47	[572]	RETURN   	7 2
+	48	[573]	RETURN   	0 1
+constants (16) for 000001E3140FED80:
+	1	"string"
+	2	"format"
+	3	"FarmboardActivityBlockModel"
+	4	"BlockRoundRestClickNumberKey"
+	5	"BlockRoundRestSpreadNumberKey"
+	6	"m_blockModel"
+	7	"m_dbTable"
+	8	"GetValue"
+	9	"value"
+	10	nil
+	11	0
+	12	"m_config"
+	13	"RoundClickNumber"
+	14	"RoundSpreadNumber"
+	15	"tostring"
+	16	"-"
+locals (7) for 000001E3140FED80:
+	0	self	1	49
+	1	index	1	49
+	2	rate	1	49
+	3	roundRestClickNumberKey	8	49
+	4	roundRestSpreadNumberKey	15	49
+	5	roundRestClickNumber	21	49
+	6	roundRestSpreadNumber	27	49
+upvalues (1) for 000001E3140FED80:
+	0	_ENV	0	0

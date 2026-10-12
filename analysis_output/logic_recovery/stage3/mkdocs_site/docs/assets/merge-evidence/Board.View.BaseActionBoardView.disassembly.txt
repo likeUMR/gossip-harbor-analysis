@@ -1,0 +1,3374 @@
+
+main <BaseActionBoardView.lua:0,0> (129 instructions at 000001162CE1EED0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 44 constants, 40 functions
+	1	[19]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[19]	NEWTABLE 	1 0 0
+	3	[19]	GETTABUP 	2 0 -3	; _ENV "BaseBoardView"
+	4	[19]	CALL     	0 3 2
+	5	[19]	SETTABUP 	0 -1 0	; _ENV "BaseActionBoardView"
+	6	[20]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	7	[20]	GETTABUP 	1 0 -1	; _ENV "BaseActionBoardView"
+	8	[20]	SETTABLE 	0 -4 1	; "__index" -
+	9	[22]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	10	[26]	CLOSURE  	1 0	; 000001162CE1F2C0
+	11	[22]	SETTABLE 	0 -5 1	; "Init" -
+	12	[28]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	13	[37]	CLOSURE  	1 1	; 000001162CE21BD0
+	14	[28]	SETTABLE 	0 -6 1	; "Update" -
+	15	[39]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	16	[47]	CLOSURE  	1 2	; 000001162CE21CF0
+	17	[39]	SETTABLE 	0 -7 1	; "OnDestroy" -
+	18	[51]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	19	[53]	CLOSURE  	1 3	; 000001162CE21EB0
+	20	[51]	SETTABLE 	0 -8 1	; "GetSelectedItemModel" -
+	21	[59]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	22	[61]	CLOSURE  	1 4	; 000001162CE21F30
+	23	[59]	SETTABLE 	0 -9 1	; "UpdateSwallowIndicator" -
+	24	[65]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	25	[76]	CLOSURE  	1 5	; 000001162CE21FB0
+	26	[65]	SETTABLE 	0 -10 1	; "_UpdateIndicator" -
+	27	[78]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	28	[120]	CLOSURE  	1 6	; 000001162CE231A0
+	29	[78]	SETTABLE 	0 -11 1	; "_UpdateItemCollectableTip" -
+	30	[123]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	31	[130]	CLOSURE  	1 7	; 000001162CE23F10
+	32	[123]	SETTABLE 	0 -12 1	; "_CanShowItemCollectableTip" -
+	33	[132]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	34	[134]	CLOSURE  	1 8	; 000001162CE24190
+	35	[132]	SETTABLE 	0 -13 1	; "_HasItemTypeCollectableTipShownFromMerge" -
+	36	[136]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	37	[138]	CLOSURE  	1 9	; 000001162CE24E60
+	38	[136]	SETTABLE 	0 -14 1	; "_SetItemTypeCollectableTipShownFromMerge" -
+	39	[140]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	40	[144]	CLOSURE  	1 10	; 000001162CE24760
+	41	[140]	SETTABLE 	0 -15 1	; "ClearIndicator" -
+	42	[150]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	43	[174]	CLOSURE  	1 11	; 000001162CE24DE0
+	44	[150]	SETTABLE 	0 -16 1	; "_DoStartPrompt" -
+	45	[176]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	46	[198]	CLOSURE  	1 12	; 000001162CE24D60
+	47	[176]	SETTABLE 	0 -17 1	; "_DoSelectPrompt" -
+	48	[200]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	49	[210]	CLOSURE  	1 13	; 000001162CE24960
+	50	[200]	SETTABLE 	0 -18 1	; "_CancelPrompt" -
+	51	[212]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	52	[216]	CLOSURE  	1 14	; 000001162CE244E0
+	53	[212]	SETTABLE 	0 -19 1	; "ShowHandTapEffect" -
+	54	[218]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	55	[220]	CLOSURE  	1 15	; 000001162CE242E0
+	56	[218]	SETTABLE 	0 -20 1	; "HideHandTapEffect" -
+	57	[222]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	58	[263]	CLOSURE  	1 16	; 000001162CE24360
+	59	[222]	SETTABLE 	0 -21 1	; "ShowHandDragEffect" -
+	60	[265]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	61	[271]	CLOSURE  	1 17	; 000001162CE24660
+	62	[265]	SETTABLE 	0 -22 1	; "HideHandDragEffect" -
+	63	[277]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	64	[284]	CLOSURE  	1 18	; 000001162CE24FE0
+	65	[277]	SETTABLE 	0 -23 1	; "_CanShowMergeLight" -
+	66	[286]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	67	[308]	CLOSURE  	1 19	; 000001162CE250E0
+	68	[286]	SETTABLE 	0 -24 1	; "_TryShowMergeLight" -
+	69	[310]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	70	[313]	CLOSURE  	1 20	; 000001162CE24C60
+	71	[310]	SETTABLE 	0 -25 1	; "_ShowMergeLight" -
+	72	[315]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	73	[322]	CLOSURE  	1 21	; 000001162CE25060
+	74	[315]	SETTABLE 	0 -26 1	; "_ClearMergeLight" -
+	75	[324]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	76	[347]	CLOSURE  	1 22	; 000001162CE24460
+	77	[324]	SETTABLE 	0 -27 1	; "_PlayParabolaAnimation" -
+	78	[349]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	79	[432]	CLOSURE  	1 23	; 000001162CE245E0
+	80	[349]	SETTABLE 	0 -28 1	; "_PlayJumpAnimation" -
+	81	[438]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	82	[443]	CLOSURE  	1 24	; 000001162CE24A60
+	83	[438]	SETTABLE 	0 -29 1	; "GetMergeAudioSfx" -
+	84	[445]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	85	[447]	CLOSURE  	1 25	; 000001162CE2F340
+	86	[445]	SETTABLE 	0 -30 1	; "_OnMergeItem" -
+	87	[449]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	88	[532]	CLOSURE  	1 26	; 000001162CE2FBC0
+	89	[449]	SETTABLE 	0 -31 1	; "PlayMergeAnimation" -
+	90	[534]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	91	[542]	CLOSURE  	1 27	; 000001162CE2E740
+	92	[534]	SETTABLE 	0 -32 1	; "_OnCostItem" -
+	93	[544]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	94	[554]	CLOSURE  	1 28	; 000001162CE2EEC0
+	95	[544]	SETTABLE 	0 -33 1	; "_OnPopCachedItem" -
+	96	[556]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	97	[605]	CLOSURE  	1 29	; 000001162CE2EB40
+	98	[556]	SETTABLE 	0 -34 1	; "_OnCollectItem" -
+	99	[607]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	100	[627]	CLOSURE  	1 30	; 000001162CE2EBC0
+	101	[607]	SETTABLE 	0 -35 1	; "_OnCacheItemFromSpread" -
+	102	[629]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	103	[631]	CLOSURE  	1 31	; 000001162CE2EC40
+	104	[629]	SETTABLE 	0 -36 1	; "_HandleCollectItemViewData" -
+	105	[633]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	106	[642]	CLOSURE  	1 32	; 000001162CE2F940
+	107	[633]	SETTABLE 	0 -37 1	; "_PlayCollectItemTextAnimation" -
+	108	[644]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	109	[654]	CLOSURE  	1 33	; 000001162CE2F840
+	110	[644]	SETTABLE 	0 -38 1	; "_OnBatchSwallowItem" -
+	111	[660]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	112	[662]	CLOSURE  	1 34	; 000001162CE2EF40
+	113	[660]	SETTABLE 	0 -39 1	; "IsPaperBoxExtraRewardAnimationPlaying" -
+	114	[664]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	115	[692]	CLOSURE  	1 35	; 000001162CE2E7C0
+	116	[664]	SETTABLE 	0 -40 1	; "_InitPaperBoxExtraRewards" -
+	117	[694]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	118	[696]	CLOSURE  	1 36	; 000001162CE2FC40
+	119	[694]	SETTABLE 	0 -41 1	; "SetPaperBoxAreaPosition" -
+	120	[698]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	121	[703]	CLOSURE  	1 37	; 000001162CE2FB40
+	122	[698]	SETTABLE 	0 -42 1	; "_UpdatePaperBoxReward" -
+	123	[706]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	124	[741]	CLOSURE  	1 38	; 000001162CE2E2C0
+	125	[706]	SETTABLE 	0 -43 1	; "_PlayPaperboxExtraRewardAnimation" -
+	126	[743]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardView"
+	127	[745]	CLOSURE  	1 39	; 000001162CE2E8C0
+	128	[743]	SETTABLE 	0 -44 1	; "_ShowRewardWindowWhenIdle" -
+	129	[745]	RETURN   	0 1
+constants (44) for 000001162CE1EED0:
+	1	"BaseActionBoardView"
+	2	"setmetatable"
+	3	"BaseBoardView"
+	4	"__index"
+	5	"Init"
+	6	"Update"
+	7	"OnDestroy"
+	8	"GetSelectedItemModel"
+	9	"UpdateSwallowIndicator"
+	10	"_UpdateIndicator"
+	11	"_UpdateItemCollectableTip"
+	12	"_CanShowItemCollectableTip"
+	13	"_HasItemTypeCollectableTipShownFromMerge"
+	14	"_SetItemTypeCollectableTipShownFromMerge"
+	15	"ClearIndicator"
+	16	"_DoStartPrompt"
+	17	"_DoSelectPrompt"
+	18	"_CancelPrompt"
+	19	"ShowHandTapEffect"
+	20	"HideHandTapEffect"
+	21	"ShowHandDragEffect"
+	22	"HideHandDragEffect"
+	23	"_CanShowMergeLight"
+	24	"_TryShowMergeLight"
+	25	"_ShowMergeLight"
+	26	"_ClearMergeLight"
+	27	"_PlayParabolaAnimation"
+	28	"_PlayJumpAnimation"
+	29	"GetMergeAudioSfx"
+	30	"_OnMergeItem"
+	31	"PlayMergeAnimation"
+	32	"_OnCostItem"
+	33	"_OnPopCachedItem"
+	34	"_OnCollectItem"
+	35	"_OnCacheItemFromSpread"
+	36	"_HandleCollectItemViewData"
+	37	"_PlayCollectItemTextAnimation"
+	38	"_OnBatchSwallowItem"
+	39	"IsPaperBoxExtraRewardAnimationPlaying"
+	40	"_InitPaperBoxExtraRewards"
+	41	"SetPaperBoxAreaPosition"
+	42	"_UpdatePaperBoxReward"
+	43	"_PlayPaperboxExtraRewardAnimation"
+	44	"_ShowRewardWindowWhenIdle"
+locals (0) for 000001162CE1EED0:
+upvalues (1) for 000001162CE1EED0:
+	0	_ENV	1	0
+
+function <BaseActionBoardView.lua:22,26> (14 instructions at 000001162CE1F2C0)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[23]	GETTABUP 	2 0 -1	; _ENV "BaseBoardView"
+	2	[23]	GETTABLE 	2 2 -2	; "Init"
+	3	[23]	MOVE     	3 0
+	4	[23]	MOVE     	4 1
+	5	[23]	CALL     	2 3 1
+	6	[24]	GETTABUP 	2 0 -3	; _ENV "REGISTER_BOARD_EVENT_HANDLER"
+	7	[24]	MOVE     	3 0
+	8	[24]	LOADK    	4 -4	; "CollectItem"
+	9	[24]	CALL     	2 3 1
+	10	[25]	GETTABUP 	2 0 -3	; _ENV "REGISTER_BOARD_EVENT_HANDLER"
+	11	[25]	MOVE     	3 0
+	12	[25]	LOADK    	4 -5	; "CacheItemFromSpread"
+	13	[25]	CALL     	2 3 1
+	14	[26]	RETURN   	0 1
+constants (5) for 000001162CE1F2C0:
+	1	"BaseBoardView"
+	2	"Init"
+	3	"REGISTER_BOARD_EVENT_HANDLER"
+	4	"CollectItem"
+	5	"CacheItemFromSpread"
+locals (2) for 000001162CE1F2C0:
+	0	self	1	15
+	1	boardModel	1	15
+upvalues (1) for 000001162CE1F2C0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:28,37> (15 instructions at 000001162CE21BD0)
+1 param, 4 slots, 1 upvalue, 1 local, 9 constants, 0 functions
+	1	[29]	GETTABLE 	1 0 -1	; "m_model"
+	2	[29]	EQ       	0 1 -2	; - nil
+	3	[29]	JMP      	0 1	; to 5
+	4	[30]	RETURN   	0 1
+	5	[33]	GETTABLE 	1 0 -3	; "m_hasCollapsedPaperBox"
+	6	[33]	TEST     	1 0
+	7	[33]	JMP      	0 6	; to 14
+	8	[34]	GETTABUP 	1 0 -4	; _ENV "GM"
+	9	[34]	GETTABLE 	1 1 -5	; "AudioModel"
+	10	[34]	SELF     	1 1 -6	; "PlayEffect"
+	11	[34]	GETTABUP 	3 0 -7	; _ENV "AudioFileConfigName"
+	12	[34]	GETTABLE 	3 3 -8	; "sfxSandBreak"
+	13	[34]	CALL     	1 3 1
+	14	[36]	SETTABLE 	0 -3 -9	; "m_hasCollapsedPaperBox" false
+	15	[37]	RETURN   	0 1
+constants (9) for 000001162CE21BD0:
+	1	"m_model"
+	2	nil
+	3	"m_hasCollapsedPaperBox"
+	4	"GM"
+	5	"AudioModel"
+	6	"PlayEffect"
+	7	"AudioFileConfigName"
+	8	"sfxSandBreak"
+	9	false
+locals (1) for 000001162CE21BD0:
+	0	self	1	16
+upvalues (1) for 000001162CE21BD0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:39,47> (20 instructions at 000001162CE21CF0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[40]	GETTABUP 	1 0 -1	; _ENV "BaseBoardView"
+	2	[40]	GETTABLE 	1 1 -2	; "OnDestroy"
+	3	[40]	MOVE     	2 0
+	4	[40]	CALL     	1 2 1
+	5	[41]	GETTABLE 	1 0 -3	; "m_cachedItemCollectableTip"
+	6	[41]	EQ       	1 1 -4	; - nil
+	7	[41]	JMP      	0 12	; to 20
+	8	[42]	GETTABLE 	1 0 -3	; "m_cachedItemCollectableTip"
+	9	[42]	EQ       	1 1 -5	; - true
+	10	[42]	JMP      	0 8	; to 19
+	11	[42]	GETTABLE 	1 0 -3	; "m_cachedItemCollectableTip"
+	12	[42]	GETTABLE 	1 1 -6	; "gameObject"
+	13	[42]	EQ       	1 1 -4	; - nil
+	14	[42]	JMP      	0 4	; to 19
+	15	[43]	GETTABLE 	1 0 -3	; "m_cachedItemCollectableTip"
+	16	[43]	GETTABLE 	1 1 -6	; "gameObject"
+	17	[43]	SELF     	1 1 -7	; "RemoveSelf"
+	18	[43]	CALL     	1 2 1
+	19	[45]	SETTABLE 	0 -3 -4	; "m_cachedItemCollectableTip" nil
+	20	[47]	RETURN   	0 1
+constants (7) for 000001162CE21CF0:
+	1	"BaseBoardView"
+	2	"OnDestroy"
+	3	"m_cachedItemCollectableTip"
+	4	nil
+	5	true
+	6	"gameObject"
+	7	"RemoveSelf"
+locals (1) for 000001162CE21CF0:
+	0	self	1	21
+upvalues (1) for 000001162CE21CF0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:51,53> (9 instructions at 000001162CE21EB0)
+1 param, 4 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[52]	GETTABLE 	1 0 -1	; "m_selectedBoardPosition"
+	2	[52]	TEST     	1 0
+	3	[52]	JMP      	0 4	; to 8
+	4	[52]	GETTABLE 	1 0 -2	; "m_model"
+	5	[52]	SELF     	1 1 -3	; "GetItem"
+	6	[52]	GETTABLE 	3 0 -1	; "m_selectedBoardPosition"
+	7	[52]	CALL     	1 3 2
+	8	[52]	RETURN   	1 2
+	9	[53]	RETURN   	0 1
+constants (3) for 000001162CE21EB0:
+	1	"m_selectedBoardPosition"
+	2	"m_model"
+	3	"GetItem"
+locals (1) for 000001162CE21EB0:
+	0	self	1	10
+upvalues (0) for 000001162CE21EB0:
+
+function <BaseActionBoardView.lua:59,61> (5 instructions at 000001162CE21F30)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[60]	GETTABLE 	2 0 -1	; "m_swallowItemIndicator"
+	2	[60]	SELF     	2 2 -2	; "UpdateIndicator"
+	3	[60]	MOVE     	4 1
+	4	[60]	CALL     	2 3 1
+	5	[61]	RETURN   	0 1
+constants (2) for 000001162CE21F30:
+	1	"m_swallowItemIndicator"
+	2	"UpdateIndicator"
+locals (2) for 000001162CE21F30:
+	0	self	1	6
+	1	item	1	6
+upvalues (0) for 000001162CE21F30:
+
+function <BaseActionBoardView.lua:65,76> (26 instructions at 000001162CE21FB0)
+5 params, 9 slots, 0 upvalues, 5 locals, 6 constants, 0 functions
+	1	[66]	TESTSET  	5 1 0
+	2	[66]	JMP      	0 2	; to 5
+	3	[66]	SELF     	5 1 -2	; "GetPosition"
+	4	[66]	CALL     	5 2 2
+	5	[66]	SETTABLE 	0 -1 5	; "m_selectedBoardPosition" -
+	6	[67]	GETTABLE 	5 0 -3	; "m_indicator"
+	7	[67]	SELF     	5 5 -4	; "UpdateIndicator"
+	8	[67]	MOVE     	7 1
+	9	[67]	MOVE     	8 2
+	10	[67]	CALL     	5 4 1
+	11	[69]	TEST     	3 0
+	12	[69]	JMP      	0 5	; to 18
+	13	[70]	GETTABLE 	5 0 -5	; "m_swallowItemIndicator"
+	14	[70]	SELF     	5 5 -4	; "UpdateIndicator"
+	15	[70]	MOVE     	7 1
+	16	[70]	CALL     	5 3 1
+	17	[70]	JMP      	0 4	; to 22
+	18	[72]	GETTABLE 	5 0 -5	; "m_swallowItemIndicator"
+	19	[72]	SELF     	5 5 -4	; "UpdateIndicator"
+	20	[72]	LOADNIL  	7 0
+	21	[72]	CALL     	5 3 1
+	22	[75]	SELF     	5 0 -6	; "_UpdateItemCollectableTip"
+	23	[75]	MOVE     	7 1
+	24	[75]	MOVE     	8 4
+	25	[75]	CALL     	5 4 1
+	26	[76]	RETURN   	0 1
+constants (6) for 000001162CE21FB0:
+	1	"m_selectedBoardPosition"
+	2	"GetPosition"
+	3	"m_indicator"
+	4	"UpdateIndicator"
+	5	"m_swallowItemIndicator"
+	6	"_UpdateItemCollectableTip"
+locals (5) for 000001162CE21FB0:
+	0	self	1	27
+	1	item	1	27
+	2	playAnimation	1	27
+	3	showSwallowItemIndicator	1	27
+	4	itemCollectableTipShowStatus	1	27
+upvalues (0) for 000001162CE21FB0:
+
+function <BaseActionBoardView.lua:78,120> (90 instructions at 000001162CE231A0)
+3 params, 12 slots, 1 upvalue, 7 locals, 33 constants, 1 function
+	1	[79]	GETTABUP 	3 0 -1	; _ENV "ItemCollectableTipShowStatus"
+	2	[79]	GETTABLE 	3 3 -2	; "SelectItem"
+	3	[79]	EQ       	1 2 3
+	4	[79]	JMP      	0 5	; to 10
+	5	[79]	GETTABUP 	3 0 -1	; _ENV "ItemCollectableTipShowStatus"
+	6	[79]	GETTABLE 	3 3 -3	; "MergeItem"
+	7	[79]	EQ       	1 2 3
+	8	[79]	JMP      	0 1	; to 10
+	9	[79]	LOADBOOL 	3 0 1
+	10	[79]	LOADBOOL 	3 1 0
+	11	[81]	GETTABLE 	4 0 -4	; "m_itemCollectableTipItem"
+	12	[81]	EQ       	0 4 1
+	13	[81]	JMP      	0 1	; to 15
+	14	[81]	LOADBOOL 	4 0 1
+	15	[81]	LOADBOOL 	4 1 0
+	16	[82]	TEST     	3 0
+	17	[82]	JMP      	0 1	; to 19
+	18	[83]	SETTABLE 	0 -4 1	; "m_itemCollectableTipItem" -
+	19	[85]	SELF     	5 0 -5	; "_CanShowItemCollectableTip"
+	20	[85]	MOVE     	7 2
+	21	[85]	CALL     	5 3 2
+	22	[85]	TEST     	5 0
+	23	[85]	JMP      	0 57	; to 81
+	24	[85]	TEST     	3 0
+	25	[85]	JMP      	0 55	; to 81
+	26	[86]	GETTABLE 	5 0 -6	; "m_cachedItemCollectableTip"
+	27	[86]	EQ       	0 5 -7	; - nil
+	28	[86]	JMP      	0 21	; to 50
+	29	[87]	GETTABUP 	5 0 -8	; _ENV "GM"
+	30	[87]	GETTABLE 	5 5 -9	; "DataResource"
+	31	[87]	GETTABLE 	5 5 -10	; "UIPrefabConfig"
+	32	[87]	SELF     	5 5 -11	; "GetConfig"
+	33	[87]	GETTABUP 	7 0 -12	; _ENV "UIPrefabConfigName"
+	34	[87]	GETTABLE 	7 7 -13	; "ItemCollectableTip"
+	35	[87]	CALL     	5 3 2
+	36	[89]	SETTABLE 	0 -6 -14	; "m_cachedItemCollectableTip" true
+	37	[90]	GETTABUP 	6 0 -8	; _ENV "GM"
+	38	[90]	GETTABLE 	6 6 -15	; "ResourceLoader"
+	39	[90]	SELF     	6 6 -16	; "LoadPrefab"
+	40	[90]	MOVE     	8 5
+	41	[90]	GETTABUP 	9 0 -8	; _ENV "GM"
+	42	[90]	GETTABLE 	9 9 -17	; "UIManager"
+	43	[90]	SELF     	9 9 -18	; "GetCanvasRoot"
+	44	[90]	CALL     	9 2 2
+	45	[90]	GETTABUP 	10 0 -19	; _ENV "Vector3"
+	46	[90]	GETTABLE 	10 10 -20	; "zero"
+	47	[107]	CLOSURE  	11 0	; 000001162CE23DC0
+	48	[90]	CALL     	6 6 1
+	49	[107]	JMP      	0 40	; to 90
+	50	[108]	GETTABLE 	5 0 -21	; "m_cachedItemCollectableTip"
+	51	[108]	EQ       	1 5 -7	; - nil
+	52	[108]	JMP      	0 37	; to 90
+	53	[108]	GETTABLE 	5 0 -21	; "m_cachedItemCollectableTip"
+	54	[108]	EQ       	1 5 -14	; - true
+	55	[108]	JMP      	0 34	; to 90
+	56	[108]	TEST     	4 0
+	57	[108]	JMP      	0 32	; to 90
+	58	[109]	SELF     	5 1 -22	; "GetComponent"
+	59	[109]	GETTABUP 	7 0 -23	; _ENV "ItemCollectable"
+	60	[109]	CALL     	5 3 2
+	61	[109]	SELF     	5 5 -24	; "GetRewards"
+	62	[109]	CALL     	5 2 2
+	63	[109]	GETTABLE 	5 5 -25	; 1
+	64	[110]	GETTABLE 	6 0 -21	; "m_cachedItemCollectableTip"
+	65	[110]	SELF     	6 6 -26	; "Show"
+	66	[110]	SELF     	8 0 -27	; "ConvertBoardPositionToScreenPosition"
+	67	[110]	SELF     	10 1 -28	; "GetPosition"
+	68	[110]	CALL     	10 2 0
+	69	[110]	CALL     	8 0 2
+	70	[110]	MOVE     	9 5
+	71	[110]	CALL     	6 4 1
+	72	[111]	GETTABUP 	6 0 -29	; _ENV "ItemCollectableTipShowStatus"
+	73	[111]	GETTABLE 	6 6 -30	; "MergeItem"
+	74	[111]	EQ       	0 2 6
+	75	[111]	JMP      	0 14	; to 90
+	76	[112]	SELF     	6 0 -31	; "_SetItemTypeCollectableTipShownFromMerge"
+	77	[112]	SELF     	8 1 -32	; "GetType"
+	78	[112]	CALL     	8 2 0
+	79	[112]	CALL     	6 0 1
+	80	[114]	JMP      	0 9	; to 90
+	81	[116]	GETTABLE 	5 0 -21	; "m_cachedItemCollectableTip"
+	82	[116]	EQ       	1 5 -7	; - nil
+	83	[116]	JMP      	0 6	; to 90
+	84	[116]	GETTABLE 	5 0 -21	; "m_cachedItemCollectableTip"
+	85	[116]	EQ       	1 5 -14	; - true
+	86	[116]	JMP      	0 3	; to 90
+	87	[117]	GETTABLE 	5 0 -21	; "m_cachedItemCollectableTip"
+	88	[117]	SELF     	5 5 -33	; "Hide"
+	89	[117]	CALL     	5 2 1
+	90	[120]	RETURN   	0 1
+constants (33) for 000001162CE231A0:
+	1	"ItemCollectableTipShowStatus"
+	2	"SelectItem"
+	3	"MergeItem"
+	4	"m_itemCollectableTipItem"
+	5	"_CanShowItemCollectableTip"
+	6	"m_cachedItemCollectableTip"
+	7	nil
+	8	"GM"
+	9	"DataResource"
+	10	"UIPrefabConfig"
+	11	"GetConfig"
+	12	"UIPrefabConfigName"
+	13	"ItemCollectableTip"
+	14	true
+	15	"ResourceLoader"
+	16	"LoadPrefab"
+	17	"UIManager"
+	18	"GetCanvasRoot"
+	19	"Vector3"
+	20	"zero"
+	21	"m_cachedItemCollectableTip"
+	22	"GetComponent"
+	23	"ItemCollectable"
+	24	"GetRewards"
+	25	1
+	26	"Show"
+	27	"ConvertBoardPositionToScreenPosition"
+	28	"GetPosition"
+	29	"ItemCollectableTipShowStatus"
+	30	"MergeItem"
+	31	"_SetItemTypeCollectableTipShownFromMerge"
+	32	"GetType"
+	33	"Hide"
+locals (7) for 000001162CE231A0:
+	0	self	1	91
+	1	item	1	91
+	2	itemCollectableTipShowStatus	1	91
+	3	showItemCollectableTip	11	91
+	4	bTapItemDiffer	16	91
+	5	prefabConfig	36	49
+	6	reward	64	80
+upvalues (1) for 000001162CE231A0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:90,107> (49 instructions at 000001162CE23DC0)
+1 param, 8 slots, 4 upvalues, 2 locals, 18 constants, 0 functions
+	1	[91]	GETTABUP 	1 0 -1	; self "gameObject"
+	2	[91]	SELF     	1 1 -2	; "IsNull"
+	3	[91]	CALL     	1 2 2
+	4	[91]	TEST     	1 0
+	5	[91]	JMP      	0 3	; to 9
+	6	[92]	SELF     	1 0 -3	; "RemoveSelf"
+	7	[92]	CALL     	1 2 1
+	8	[93]	RETURN   	0 1
+	9	[96]	SELF     	1 0 -5	; "GetLuaTable"
+	10	[96]	CALL     	1 2 2
+	11	[96]	SETTABUP 	0 -4 1	; self "m_cachedItemCollectableTip"
+	12	[97]	GETUPVAL 	1 0	; self
+	13	[97]	SELF     	1 1 -6	; "_CanShowItemCollectableTip"
+	14	[97]	CALL     	1 2 2
+	15	[97]	TEST     	1 1
+	16	[97]	JMP      	0 4	; to 21
+	17	[98]	GETTABUP 	1 0 -4	; self "m_cachedItemCollectableTip"
+	18	[98]	SELF     	1 1 -7	; "Hide"
+	19	[98]	CALL     	1 2 1
+	20	[99]	RETURN   	0 1
+	21	[102]	GETUPVAL 	1 1	; item
+	22	[102]	SELF     	1 1 -8	; "GetComponent"
+	23	[102]	GETTABUP 	3 2 -9	; _ENV "ItemCollectable"
+	24	[102]	CALL     	1 3 2
+	25	[102]	SELF     	1 1 -10	; "GetRewards"
+	26	[102]	CALL     	1 2 2
+	27	[102]	GETTABLE 	1 1 -11	; 1
+	28	[103]	GETTABUP 	2 0 -4	; self "m_cachedItemCollectableTip"
+	29	[103]	SELF     	2 2 -12	; "Show"
+	30	[103]	GETUPVAL 	4 0	; self
+	31	[103]	SELF     	4 4 -13	; "ConvertBoardPositionToScreenPosition"
+	32	[103]	GETUPVAL 	6 1	; item
+	33	[103]	SELF     	6 6 -14	; "GetPosition"
+	34	[103]	CALL     	6 2 0
+	35	[103]	CALL     	4 0 2
+	36	[103]	MOVE     	5 1
+	37	[103]	CALL     	2 4 1
+	38	[104]	GETUPVAL 	2 3	; itemCollectableTipShowStatus
+	39	[104]	GETTABUP 	3 2 -15	; _ENV "ItemCollectableTipShowStatus"
+	40	[104]	GETTABLE 	3 3 -16	; "MergeItem"
+	41	[104]	EQ       	0 2 3
+	42	[104]	JMP      	0 6	; to 49
+	43	[105]	GETUPVAL 	2 0	; self
+	44	[105]	SELF     	2 2 -17	; "_SetItemTypeCollectableTipShownFromMerge"
+	45	[105]	GETUPVAL 	4 1	; item
+	46	[105]	SELF     	4 4 -18	; "GetType"
+	47	[105]	CALL     	4 2 0
+	48	[105]	CALL     	2 0 1
+	49	[107]	RETURN   	0 1
+constants (18) for 000001162CE23DC0:
+	1	"gameObject"
+	2	"IsNull"
+	3	"RemoveSelf"
+	4	"m_cachedItemCollectableTip"
+	5	"GetLuaTable"
+	6	"_CanShowItemCollectableTip"
+	7	"Hide"
+	8	"GetComponent"
+	9	"ItemCollectable"
+	10	"GetRewards"
+	11	1
+	12	"Show"
+	13	"ConvertBoardPositionToScreenPosition"
+	14	"GetPosition"
+	15	"ItemCollectableTipShowStatus"
+	16	"MergeItem"
+	17	"_SetItemTypeCollectableTipShownFromMerge"
+	18	"GetType"
+locals (2) for 000001162CE23DC0:
+	0	object	1	50
+	1	reward	28	50
+upvalues (4) for 000001162CE23DC0:
+	0	self	1	0
+	1	item	1	1
+	2	_ENV	0	0
+	3	itemCollectableTipShowStatus	1	2
+
+function <BaseActionBoardView.lua:123,130> (36 instructions at 000001162CE23F10)
+2 params, 7 slots, 1 upvalue, 4 locals, 11 constants, 0 functions
+	1	[124]	SELF     	2 0 -1	; "GetSelectedItemModel"
+	2	[124]	CALL     	2 2 2
+	3	[124]	TEST     	2 1
+	4	[124]	JMP      	0 2	; to 7
+	5	[125]	LOADBOOL 	2 0 0
+	6	[125]	RETURN   	2 2
+	7	[127]	SELF     	2 0 -1	; "GetSelectedItemModel"
+	8	[127]	CALL     	2 2 2
+	9	[128]	GETTABUP 	3 0 -2	; _ENV "ItemCollectableTipShowStatus"
+	10	[128]	GETTABLE 	3 3 -3	; "MergeItem"
+	11	[128]	EQ       	0 1 3
+	12	[128]	JMP      	0 5	; to 18
+	13	[128]	SELF     	3 0 -4	; "_HasItemTypeCollectableTipShownFromMerge"
+	14	[128]	SELF     	5 2 -5	; "GetType"
+	15	[128]	CALL     	5 2 0
+	16	[128]	CALL     	3 0 2
+	17	[128]	JMP      	0 2	; to 20
+	18	[128]	LOADBOOL 	3 0 1
+	19	[128]	LOADBOOL 	3 1 0
+	20	[129]	SELF     	4 2 -6	; "GetComponent"
+	21	[129]	GETTABUP 	6 0 -7	; _ENV "ItemCollectable"
+	22	[129]	CALL     	4 3 2
+	23	[129]	EQ       	1 4 -8	; - nil
+	24	[129]	JMP      	0 8	; to 33
+	25	[129]	SELF     	4 2 -9	; "GetSpecialType"
+	26	[129]	CALL     	4 2 2
+	27	[129]	GETTABUP 	5 0 -10	; _ENV "ItemSpecialType"
+	28	[129]	GETTABLE 	5 5 -11	; "TipCollectable"
+	29	[129]	EQ       	0 4 5
+	30	[129]	JMP      	0 2	; to 33
+	31	[129]	NOT      	4 3
+	32	[129]	JMP      	0 2	; to 35
+	33	[129]	LOADBOOL 	4 0 1
+	34	[129]	LOADBOOL 	4 1 0
+	35	[129]	RETURN   	4 2
+	36	[130]	RETURN   	0 1
+constants (11) for 000001162CE23F10:
+	1	"GetSelectedItemModel"
+	2	"ItemCollectableTipShowStatus"
+	3	"MergeItem"
+	4	"_HasItemTypeCollectableTipShownFromMerge"
+	5	"GetType"
+	6	"GetComponent"
+	7	"ItemCollectable"
+	8	nil
+	9	"GetSpecialType"
+	10	"ItemSpecialType"
+	11	"TipCollectable"
+locals (4) for 000001162CE23F10:
+	0	self	1	37
+	1	itemCollectableTipShowStatus	1	37
+	2	item	9	37
+	3	hasShownTipFromMerge	20	37
+upvalues (1) for 000001162CE23F10:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:132,134> (3 instructions at 000001162CE24190)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[133]	LOADBOOL 	2 0 0
+	2	[133]	RETURN   	2 2
+	3	[134]	RETURN   	0 1
+constants (0) for 000001162CE24190:
+locals (2) for 000001162CE24190:
+	0	self	1	4
+	1	itemType	1	4
+upvalues (0) for 000001162CE24190:
+
+function <BaseActionBoardView.lua:136,138> (1 instruction at 000001162CE24E60)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[138]	RETURN   	0 1
+constants (0) for 000001162CE24E60:
+locals (2) for 000001162CE24E60:
+	0	self	1	2
+	1	itemType	1	2
+upvalues (0) for 000001162CE24E60:
+
+function <BaseActionBoardView.lua:140,144> (7 instructions at 000001162CE24760)
+1 param, 3 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[141]	SETTABLE 	0 -1 -2	; "m_selectedBoardPosition" nil
+	2	[142]	GETTABLE 	1 0 -3	; "m_indicator"
+	3	[142]	SELF     	1 1 -4	; "UpdateIndicator"
+	4	[142]	CALL     	1 2 1
+	5	[143]	SELF     	1 0 -5	; "_UpdateItemCollectableTip"
+	6	[143]	CALL     	1 2 1
+	7	[144]	RETURN   	0 1
+constants (5) for 000001162CE24760:
+	1	"m_selectedBoardPosition"
+	2	nil
+	3	"m_indicator"
+	4	"UpdateIndicator"
+	5	"_UpdateItemCollectableTip"
+locals (1) for 000001162CE24760:
+	0	self	1	8
+upvalues (0) for 000001162CE24760:
+
+function <BaseActionBoardView.lua:150,174> (18 instructions at 000001162CE24DE0)
+2 params, 8 slots, 1 upvalue, 2 locals, 8 constants, 1 function
+	1	[151]	SELF     	2 0 -1	; "_CancelPrompt"
+	2	[151]	CALL     	2 2 1
+	3	[153]	GETTABLE 	2 0 -2	; "m_promptSchedulerOrigin"
+	4	[153]	EQ       	0 2 -3	; - nil
+	5	[153]	JMP      	0 2	; to 8
+	6	[169]	CLOSURE  	2 0	; 000001162CE24B60
+	7	[169]	SETTABLE 	0 -2 2	; "m_promptSchedulerOrigin" -
+	8	[172]	GETTABLE 	2 0 -2	; "m_promptSchedulerOrigin"
+	9	[172]	SETTABLE 	0 -4 2	; "m_promptScheduler" -
+	10	[173]	GETTABUP 	2 0 -5	; _ENV "Scheduler"
+	11	[173]	GETTABLE 	2 2 -6	; "Schedule"
+	12	[173]	GETTABLE 	3 0 -4	; "m_promptScheduler"
+	13	[173]	MOVE     	4 0
+	14	[173]	LOADK    	5 -7	; 0
+	15	[173]	LOADK    	6 -8	; 1
+	16	[173]	MOVE     	7 1
+	17	[173]	CALL     	2 6 1
+	18	[174]	RETURN   	0 1
+constants (8) for 000001162CE24DE0:
+	1	"_CancelPrompt"
+	2	"m_promptSchedulerOrigin"
+	3	nil
+	4	"m_promptScheduler"
+	5	"Scheduler"
+	6	"Schedule"
+	7	0
+	8	1
+locals (2) for 000001162CE24DE0:
+	0	self	1	19
+	1	interval	1	19
+upvalues (1) for 000001162CE24DE0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:154,169> (28 instructions at 000001162CE24B60)
+0 params, 3 slots, 2 upvalues, 0 locals, 9 constants, 0 functions
+	1	[155]	GETTABUP 	0 0 -1	; self "m_promptScheduler"
+	2	[155]	TEST     	0 0
+	3	[155]	JMP      	0 6	; to 10
+	4	[156]	GETTABUP 	0 1 -2	; _ENV "Scheduler"
+	5	[156]	GETTABLE 	0 0 -3	; "Unschedule"
+	6	[156]	GETTABUP 	1 0 -1	; self "m_promptScheduler"
+	7	[156]	GETUPVAL 	2 0	; self
+	8	[156]	CALL     	0 3 1
+	9	[157]	SETTABUP 	0 -1 -4	; self "m_promptScheduler" nil
+	10	[161]	GETTABUP 	0 0 -5	; self "m_model"
+	11	[161]	GETTABLE 	0 0 -6	; "ResetLogNearestTouchedMergeItem"
+	12	[161]	TEST     	0 0
+	13	[161]	JMP      	0 3	; to 17
+	14	[162]	GETTABUP 	0 0 -5	; self "m_model"
+	15	[162]	SELF     	0 0 -6	; "ResetLogNearestTouchedMergeItem"
+	16	[162]	CALL     	0 2 1
+	17	[165]	GETUPVAL 	0 0	; self
+	18	[165]	SELF     	0 0 -8	; "_SelectPrompt"
+	19	[165]	CALL     	0 2 2
+	20	[165]	SETTABUP 	0 -7 0	; self "m_prompt"
+	21	[166]	GETTABUP 	0 0 -7	; self "m_prompt"
+	22	[166]	EQ       	1 0 -4	; - nil
+	23	[166]	JMP      	0 4	; to 28
+	24	[167]	GETTABUP 	0 0 -7	; self "m_prompt"
+	25	[167]	SELF     	0 0 -9	; "Start"
+	26	[167]	GETUPVAL 	2 0	; self
+	27	[167]	CALL     	0 3 1
+	28	[169]	RETURN   	0 1
+constants (9) for 000001162CE24B60:
+	1	"m_promptScheduler"
+	2	"Scheduler"
+	3	"Unschedule"
+	4	nil
+	5	"m_model"
+	6	"ResetLogNearestTouchedMergeItem"
+	7	"m_prompt"
+	8	"_SelectPrompt"
+	9	"Start"
+locals (0) for 000001162CE24B60:
+upvalues (2) for 000001162CE24B60:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:176,198> (41 instructions at 000001162CE24D60)
+2 params, 13 slots, 1 upvalue, 10 locals, 11 constants, 1 function
+	1	[177]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[177]	GETTABLE 	2 2 -2	; "TutorialModel"
+	3	[177]	SELF     	2 2 -3	; "HasAnyStrongTutorialOngoing"
+	4	[177]	CALL     	2 2 2
+	5	[177]	TEST     	2 0
+	6	[177]	JMP      	0 2	; to 9
+	7	[178]	LOADNIL  	2 0
+	8	[178]	RETURN   	2 2
+	9	[181]	SELF     	2 0 -4	; "_GetPrompts"
+	10	[181]	CALL     	2 2 2
+	11	[183]	GETTABLE 	3 0 -5	; "m_model"
+	12	[183]	SELF     	3 3 -6	; "GetPromptConfig"
+	13	[183]	CALL     	3 2 2
+	14	[188]	CLOSURE  	4 0	; 000001162CE24260
+	15	[189]	GETTABUP 	5 0 -7	; _ENV "table"
+	16	[189]	GETTABLE 	5 5 -8	; "sort"
+	17	[189]	MOVE     	6 2
+	18	[189]	MOVE     	7 4
+	19	[189]	CALL     	5 3 1
+	20	[191]	GETTABUP 	5 0 -9	; _ENV "ipairs"
+	21	[191]	MOVE     	6 2
+	22	[191]	CALL     	5 2 4
+	23	[191]	JMP      	0 13	; to 37
+	24	[192]	EQ       	1 1 -10	; - nil
+	25	[192]	JMP      	0 5	; to 31
+	26	[192]	MOVE     	10 1
+	27	[192]	MOVE     	11 9
+	28	[192]	CALL     	10 2 2
+	29	[192]	TEST     	10 0
+	30	[192]	JMP      	0 6	; to 37
+	31	[192]	SELF     	10 9 -11	; "CanStart"
+	32	[192]	MOVE     	12 0
+	33	[192]	CALL     	10 3 2
+	34	[192]	TEST     	10 0
+	35	[192]	JMP      	0 1	; to 37
+	36	[193]	RETURN   	9 2
+	37	[191]	TFORCALL 	5 2
+	38	[191]	TFORLOOP 	7 -15	; to 24
+	39	[197]	LOADNIL  	5 0
+	40	[197]	RETURN   	5 2
+	41	[198]	RETURN   	0 1
+constants (11) for 000001162CE24D60:
+	1	"GM"
+	2	"TutorialModel"
+	3	"HasAnyStrongTutorialOngoing"
+	4	"_GetPrompts"
+	5	"m_model"
+	6	"GetPromptConfig"
+	7	"table"
+	8	"sort"
+	9	"ipairs"
+	10	nil
+	11	"CanStart"
+locals (10) for 000001162CE24D60:
+	0	self	1	42
+	1	checkFunc	1	42
+	2	prompts	11	42
+	3	promptConfig	14	42
+	4	comparer	15	42
+	5	(for generator)	23	39
+	6	(for state)	23	39
+	7	(for control)	23	39
+	8	_	24	37
+	9	prompt	24	37
+upvalues (1) for 000001162CE24D60:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:184,188> (14 instructions at 000001162CE24260)
+2 params, 5 slots, 1 upvalue, 4 locals, 2 constants, 0 functions
+	1	[185]	SELF     	2 0 -1	; "GetType"
+	2	[185]	CALL     	2 2 2
+	3	[185]	GETTABUP 	2 0 2	; promptConfig
+	4	[185]	GETTABLE 	2 2 -2	; "Priority"
+	5	[186]	SELF     	3 1 -1	; "GetType"
+	6	[186]	CALL     	3 2 2
+	7	[186]	GETTABUP 	3 0 3	; promptConfig
+	8	[186]	GETTABLE 	3 3 -2	; "Priority"
+	9	[187]	LT       	1 2 3
+	10	[187]	JMP      	0 1	; to 12
+	11	[187]	LOADBOOL 	4 0 1
+	12	[187]	LOADBOOL 	4 1 0
+	13	[187]	RETURN   	4 2
+	14	[188]	RETURN   	0 1
+constants (2) for 000001162CE24260:
+	1	"GetType"
+	2	"Priority"
+locals (4) for 000001162CE24260:
+	0	prompt1	1	15
+	1	prompt2	1	15
+	2	priority1	5	15
+	3	priority2	9	15
+upvalues (1) for 000001162CE24260:
+	0	promptConfig	1	3
+
+function <BaseActionBoardView.lua:200,210> (18 instructions at 000001162CE24960)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[201]	GETTABLE 	1 0 -1	; "m_promptScheduler"
+	2	[201]	EQ       	1 1 -2	; - nil
+	3	[201]	JMP      	0 6	; to 10
+	4	[202]	GETTABUP 	1 0 -3	; _ENV "Scheduler"
+	5	[202]	GETTABLE 	1 1 -4	; "Unschedule"
+	6	[202]	GETTABLE 	2 0 -1	; "m_promptScheduler"
+	7	[202]	MOVE     	3 0
+	8	[202]	CALL     	1 3 1
+	9	[203]	SETTABLE 	0 -1 -2	; "m_promptScheduler" nil
+	10	[206]	GETTABLE 	1 0 -5	; "m_prompt"
+	11	[206]	EQ       	1 1 -2	; - nil
+	12	[206]	JMP      	0 5	; to 18
+	13	[207]	GETTABLE 	1 0 -5	; "m_prompt"
+	14	[207]	SELF     	1 1 -6	; "Stop"
+	15	[207]	MOVE     	3 0
+	16	[207]	CALL     	1 3 1
+	17	[208]	SETTABLE 	0 -5 -2	; "m_prompt" nil
+	18	[210]	RETURN   	0 1
+constants (6) for 000001162CE24960:
+	1	"m_promptScheduler"
+	2	nil
+	3	"Scheduler"
+	4	"Unschedule"
+	5	"m_prompt"
+	6	"Stop"
+locals (1) for 000001162CE24960:
+	0	self	1	19
+upvalues (1) for 000001162CE24960:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:212,216> (16 instructions at 000001162CE244E0)
+2 params, 6 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[213]	GETTABLE 	2 0 -1	; "m_handTapEffectGo"
+	2	[213]	SELF     	2 2 -2	; "SetActive"
+	3	[213]	LOADBOOL 	4 1 0
+	4	[213]	CALL     	2 3 1
+	5	[214]	GETTABUP 	2 0 -3	; _ENV "Vector3"
+	6	[214]	GETTABLE 	3 1 -4	; "x"
+	7	[214]	ADD      	3 3 -5	; - 40
+	8	[214]	GETTABLE 	4 1 -6	; "y"
+	9	[214]	SUB      	4 4 -7	; - 65
+	10	[214]	LOADK    	5 -8	; 0
+	11	[214]	CALL     	2 4 2
+	12	[214]	MOVE     	1 2
+	13	[215]	GETTABLE 	2 0 -1	; "m_handTapEffectGo"
+	14	[215]	GETTABLE 	2 2 -9	; "transform"
+	15	[215]	SETTABLE 	2 -10 1	; "position" -
+	16	[216]	RETURN   	0 1
+constants (10) for 000001162CE244E0:
+	1	"m_handTapEffectGo"
+	2	"SetActive"
+	3	"Vector3"
+	4	"x"
+	5	40
+	6	"y"
+	7	65
+	8	0
+	9	"transform"
+	10	"position"
+locals (2) for 000001162CE244E0:
+	0	self	1	17
+	1	targetPosition	1	17
+upvalues (1) for 000001162CE244E0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:218,220> (5 instructions at 000001162CE242E0)
+1 param, 4 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[219]	GETTABLE 	1 0 -1	; "m_handTapEffectGo"
+	2	[219]	SELF     	1 1 -2	; "SetActive"
+	3	[219]	LOADBOOL 	3 0 0
+	4	[219]	CALL     	1 3 1
+	5	[220]	RETURN   	0 1
+constants (2) for 000001162CE242E0:
+	1	"m_handTapEffectGo"
+	2	"SetActive"
+locals (1) for 000001162CE242E0:
+	0	self	1	6
+upvalues (0) for 000001162CE242E0:
+
+function <BaseActionBoardView.lua:222,263> (77 instructions at 000001162CE24360)
+3 params, 12 slots, 1 upvalue, 4 locals, 30 constants, 2 functions
+	1	[223]	GETTABLE 	3 0 -1	; "m_dragTween"
+	2	[223]	EQ       	1 3 -2	; - nil
+	3	[223]	JMP      	0 4	; to 8
+	4	[224]	GETTABLE 	3 0 -1	; "m_dragTween"
+	5	[224]	SELF     	3 3 -3	; "Kill"
+	6	[224]	CALL     	3 2 1
+	7	[225]	SETTABLE 	0 -1 -2	; "m_dragTween" nil
+	8	[228]	GETTABLE 	3 1 -4	; "x"
+	9	[228]	ADD      	3 3 -5	; - 60
+	10	[228]	SETTABLE 	1 -4 3	; "x" -
+	11	[229]	GETTABLE 	3 1 -6	; "y"
+	12	[229]	SUB      	3 3 -7	; - 65
+	13	[229]	SETTABLE 	1 -6 3	; "y" -
+	14	[230]	SETTABLE 	1 -8 -9	; "z" 0
+	15	[231]	GETTABLE 	3 2 -4	; "x"
+	16	[231]	ADD      	3 3 -5	; - 60
+	17	[231]	SETTABLE 	2 -4 3	; "x" -
+	18	[232]	GETTABLE 	3 2 -6	; "y"
+	19	[232]	SUB      	3 3 -7	; - 65
+	20	[232]	SETTABLE 	2 -6 3	; "y" -
+	21	[233]	SETTABLE 	2 -8 -9	; "z" 0
+	22	[234]	GETTABLE 	3 0 -10	; "m_handDragEffectGo"
+	23	[234]	GETTABLE 	3 3 -11	; "transform"
+	24	[234]	SETTABLE 	3 -12 1	; "position" -
+	25	[236]	GETTABLE 	3 0 -10	; "m_handDragEffectGo"
+	26	[236]	SELF     	3 3 -13	; "SetActive"
+	27	[236]	LOADBOOL 	5 1 0
+	28	[236]	CALL     	3 3 1
+	29	[238]	GETTABLE 	3 0 -14	; "m_dragInCallback"
+	30	[238]	EQ       	0 3 -2	; - nil
+	31	[238]	JMP      	0 2	; to 34
+	32	[243]	CLOSURE  	3 0	; 000001162CE24EE0
+	33	[243]	SETTABLE 	0 -14 3	; "m_dragInCallback" -
+	34	[245]	GETTABLE 	3 0 -15	; "m_dragOutCallback"
+	35	[245]	EQ       	0 3 -2	; - nil
+	36	[245]	JMP      	0 2	; to 39
+	37	[250]	CLOSURE  	3 1	; 000001162CE24BE0
+	38	[250]	SETTABLE 	0 -15 3	; "m_dragOutCallback" -
+	39	[253]	GETTABUP 	3 0 -16	; _ENV "DOTween"
+	40	[253]	GETTABLE 	3 3 -17	; "Sequence"
+	41	[253]	CALL     	3 1 2
+	42	[253]	SELF     	3 3 -18	; "SetLoops"
+	43	[253]	LOADK    	5 -19	; -1
+	44	[253]	CALL     	3 3 2
+	45	[254]	SELF     	4 3 -20	; "AppendInterval"
+	46	[254]	LOADK    	6 -21	; 1.0
+	47	[254]	CALL     	4 3 1
+	48	[255]	SELF     	4 3 -22	; "AppendCallback"
+	49	[255]	GETTABLE 	6 0 -14	; "m_dragInCallback"
+	50	[255]	CALL     	4 3 1
+	51	[256]	SELF     	4 3 -20	; "AppendInterval"
+	52	[256]	LOADK    	6 -23	; 0.6
+	53	[256]	CALL     	4 3 1
+	54	[257]	SELF     	4 3 -24	; "Append"
+	55	[257]	GETTABLE 	6 0 -10	; "m_handDragEffectGo"
+	56	[257]	GETTABLE 	6 6 -11	; "transform"
+	57	[257]	SELF     	6 6 -25	; "DOMove"
+	58	[257]	MOVE     	8 2
+	59	[257]	GETTABUP 	9 0 -26	; _ENV "Vector3"
+	60	[257]	GETTABLE 	9 9 -27	; "Distance"
+	61	[257]	MOVE     	10 1
+	62	[257]	MOVE     	11 2
+	63	[257]	CALL     	9 3 2
+	64	[257]	DIV      	9 9 -28	; - 530
+	65	[257]	CALL     	6 4 0
+	66	[257]	CALL     	4 0 1
+	67	[258]	SELF     	4 3 -20	; "AppendInterval"
+	68	[258]	LOADK    	6 -29	; 0.2
+	69	[258]	CALL     	4 3 1
+	70	[259]	SELF     	4 3 -22	; "AppendCallback"
+	71	[259]	GETTABLE 	6 0 -15	; "m_dragOutCallback"
+	72	[259]	CALL     	4 3 1
+	73	[260]	SELF     	4 3 -20	; "AppendInterval"
+	74	[260]	LOADK    	6 -30	; 0.4
+	75	[260]	CALL     	4 3 1
+	76	[262]	SETTABLE 	0 -1 3	; "m_dragTween" -
+	77	[263]	RETURN   	0 1
+constants (30) for 000001162CE24360:
+	1	"m_dragTween"
+	2	nil
+	3	"Kill"
+	4	"x"
+	5	60
+	6	"y"
+	7	65
+	8	"z"
+	9	0
+	10	"m_handDragEffectGo"
+	11	"transform"
+	12	"position"
+	13	"SetActive"
+	14	"m_dragInCallback"
+	15	"m_dragOutCallback"
+	16	"DOTween"
+	17	"Sequence"
+	18	"SetLoops"
+	19	-1
+	20	"AppendInterval"
+	21	1.0
+	22	"AppendCallback"
+	23	0.6
+	24	"Append"
+	25	"DOMove"
+	26	"Vector3"
+	27	"Distance"
+	28	530
+	29	0.2
+	30	0.4
+locals (4) for 000001162CE24360:
+	0	self	1	78
+	1	sourcePosition	1	78
+	2	targetPosition	1	78
+	3	sequence	45	78
+upvalues (1) for 000001162CE24360:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:239,243> (9 instructions at 000001162CE24EE0)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 1 function
+	1	[240]	GETTABUP 	0 0 -1	; self "m_handDragEffectAnimator"
+	2	[240]	SELF     	0 0 -2	; "IsNull"
+	3	[240]	CALL     	0 2 2
+	4	[240]	TEST     	0 1
+	5	[240]	JMP      	0 3	; to 9
+	6	[241]	GETTABUP 	0 1 -3	; _ENV "SafeCall"
+	7	[241]	CLOSURE  	1 0	; 000001162CE24F60
+	8	[241]	CALL     	0 2 1
+	9	[243]	RETURN   	0 1
+constants (3) for 000001162CE24EE0:
+	1	"m_handDragEffectAnimator"
+	2	"IsNull"
+	3	"SafeCall"
+locals (0) for 000001162CE24EE0:
+upvalues (2) for 000001162CE24EE0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:241,241> (5 instructions at 000001162CE24F60)
+0 params, 3 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[241]	GETTABUP 	0 0 -1	; self "m_handDragEffectAnimator"
+	2	[241]	SELF     	0 0 -2	; "Play"
+	3	[241]	LOADK    	2 -3	; "am_shouzhi_huadong_in"
+	4	[241]	CALL     	0 3 1
+	5	[241]	RETURN   	0 1
+constants (3) for 000001162CE24F60:
+	1	"m_handDragEffectAnimator"
+	2	"Play"
+	3	"am_shouzhi_huadong_in"
+locals (0) for 000001162CE24F60:
+upvalues (1) for 000001162CE24F60:
+	0	self	0	0
+
+function <BaseActionBoardView.lua:246,250> (9 instructions at 000001162CE24BE0)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 1 function
+	1	[247]	GETTABUP 	0 0 -1	; self "m_handDragEffectAnimator"
+	2	[247]	SELF     	0 0 -2	; "IsNull"
+	3	[247]	CALL     	0 2 2
+	4	[247]	TEST     	0 1
+	5	[247]	JMP      	0 3	; to 9
+	6	[248]	GETTABUP 	0 1 -3	; _ENV "SafeCall"
+	7	[248]	CLOSURE  	1 0	; 000001162CE243E0
+	8	[248]	CALL     	0 2 1
+	9	[250]	RETURN   	0 1
+constants (3) for 000001162CE24BE0:
+	1	"m_handDragEffectAnimator"
+	2	"IsNull"
+	3	"SafeCall"
+locals (0) for 000001162CE24BE0:
+upvalues (2) for 000001162CE24BE0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:248,248> (5 instructions at 000001162CE243E0)
+0 params, 3 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[248]	GETTABUP 	0 0 -1	; self "m_handDragEffectAnimator"
+	2	[248]	SELF     	0 0 -2	; "Play"
+	3	[248]	LOADK    	2 -3	; "am_shouzhi_huadong_out"
+	4	[248]	CALL     	0 3 1
+	5	[248]	RETURN   	0 1
+constants (3) for 000001162CE243E0:
+	1	"m_handDragEffectAnimator"
+	2	"Play"
+	3	"am_shouzhi_huadong_out"
+locals (0) for 000001162CE243E0:
+upvalues (1) for 000001162CE243E0:
+	0	self	0	0
+
+function <BaseActionBoardView.lua:265,271> (12 instructions at 000001162CE24660)
+1 param, 4 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[266]	GETTABLE 	1 0 -1	; "m_handDragEffectGo"
+	2	[266]	SELF     	1 1 -2	; "SetActive"
+	3	[266]	LOADBOOL 	3 0 0
+	4	[266]	CALL     	1 3 1
+	5	[267]	GETTABLE 	1 0 -3	; "m_dragTween"
+	6	[267]	EQ       	1 1 -4	; - nil
+	7	[267]	JMP      	0 4	; to 12
+	8	[268]	GETTABLE 	1 0 -3	; "m_dragTween"
+	9	[268]	SELF     	1 1 -5	; "Kill"
+	10	[268]	CALL     	1 2 1
+	11	[269]	SETTABLE 	0 -3 -4	; "m_dragTween" nil
+	12	[271]	RETURN   	0 1
+constants (5) for 000001162CE24660:
+	1	"m_handDragEffectGo"
+	2	"SetActive"
+	3	"m_dragTween"
+	4	nil
+	5	"Kill"
+locals (1) for 000001162CE24660:
+	0	self	1	13
+upvalues (0) for 000001162CE24660:
+
+function <BaseActionBoardView.lua:277,284> (22 instructions at 000001162CE24FE0)
+3 params, 7 slots, 1 upvalue, 4 locals, 6 constants, 0 functions
+	1	[278]	GETTABLE 	3 0 -1	; "m_model"
+	2	[278]	SELF     	3 3 -2	; "CanItemMerge"
+	3	[278]	MOVE     	5 1
+	4	[278]	MOVE     	6 2
+	5	[278]	CALL     	3 4 2
+	6	[278]	TEST     	3 0
+	7	[278]	JMP      	0 2	; to 10
+	8	[279]	LOADBOOL 	3 1 0
+	9	[279]	RETURN   	3 2
+	10	[282]	SELF     	3 1 -3	; "GetComponent"
+	11	[282]	GETTABUP 	5 0 -4	; _ENV "ItemSwallow"
+	12	[282]	CALL     	3 3 2
+	13	[283]	EQ       	1 3 -5	; - nil
+	14	[283]	JMP      	0 4	; to 19
+	15	[283]	SELF     	4 3 -6	; "CanSwallow"
+	16	[283]	MOVE     	6 2
+	17	[283]	CALL     	4 3 2
+	18	[283]	JMP      	0 2	; to 21
+	19	[283]	LOADBOOL 	4 0 1
+	20	[283]	LOADBOOL 	4 1 0
+	21	[283]	RETURN   	4 2
+	22	[284]	RETURN   	0 1
+constants (6) for 000001162CE24FE0:
+	1	"m_model"
+	2	"CanItemMerge"
+	3	"GetComponent"
+	4	"ItemSwallow"
+	5	nil
+	6	"CanSwallow"
+locals (4) for 000001162CE24FE0:
+	0	self	1	23
+	1	itemModel	1	23
+	2	lastItemModel	1	23
+	3	itemSwallow	13	23
+upvalues (1) for 000001162CE24FE0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:286,308> (42 instructions at 000001162CE250E0)
+2 params, 10 slots, 0 upvalues, 6 locals, 12 constants, 0 functions
+	1	[287]	SELF     	2 0 -1	; "_GetBoardPosition"
+	2	[287]	MOVE     	4 1
+	3	[287]	CALL     	2 3 2
+	4	[288]	LOADNIL  	3 0
+	5	[289]	GETTABLE 	4 0 -2	; "m_model"
+	6	[289]	SELF     	4 4 -3	; "IsPositionInteractable"
+	7	[289]	MOVE     	6 2
+	8	[289]	CALL     	4 3 2
+	9	[289]	TEST     	4 0
+	10	[289]	JMP      	0 5	; to 16
+	11	[290]	GETTABLE 	4 0 -2	; "m_model"
+	12	[290]	SELF     	4 4 -4	; "GetItem"
+	13	[290]	MOVE     	6 2
+	14	[290]	CALL     	4 3 2
+	15	[290]	MOVE     	3 4
+	16	[293]	SELF     	4 0 -5	; "GetItemView"
+	17	[293]	MOVE     	6 3
+	18	[293]	CALL     	4 3 2
+	19	[294]	GETTABLE 	5 0 -6	; "m_lastMergeLightItem"
+	20	[294]	EQ       	0 4 5
+	21	[294]	JMP      	0 1	; to 23
+	22	[295]	RETURN   	0 1
+	23	[298]	SELF     	5 0 -7	; "_ClearMergeLight"
+	24	[298]	CALL     	5 2 1
+	25	[300]	GETTABLE 	5 0 -8	; "m_lastTouchedItem"
+	26	[300]	SELF     	5 5 -9	; "GetModel"
+	27	[300]	CALL     	5 2 2
+	28	[301]	EQ       	1 3 -10	; - nil
+	29	[301]	JMP      	0 2	; to 32
+	30	[301]	EQ       	0 3 5
+	31	[301]	JMP      	0 1	; to 33
+	32	[302]	RETURN   	0 1
+	33	[305]	SELF     	6 0 -11	; "_CanShowMergeLight"
+	34	[305]	MOVE     	8 3
+	35	[305]	MOVE     	9 5
+	36	[305]	CALL     	6 4 2
+	37	[305]	TEST     	6 0
+	38	[305]	JMP      	0 3	; to 42
+	39	[306]	SELF     	6 0 -12	; "_ShowMergeLight"
+	40	[306]	MOVE     	8 4
+	41	[306]	CALL     	6 3 1
+	42	[308]	RETURN   	0 1
+constants (12) for 000001162CE250E0:
+	1	"_GetBoardPosition"
+	2	"m_model"
+	3	"IsPositionInteractable"
+	4	"GetItem"
+	5	"GetItemView"
+	6	"m_lastMergeLightItem"
+	7	"_ClearMergeLight"
+	8	"m_lastTouchedItem"
+	9	"GetModel"
+	10	nil
+	11	"_CanShowMergeLight"
+	12	"_ShowMergeLight"
+locals (6) for 000001162CE250E0:
+	0	self	1	43
+	1	worldPosition	1	43
+	2	boardPosition	4	43
+	3	itemModel	5	43
+	4	itemView	19	43
+	5	lastItemModel	28	43
+upvalues (0) for 000001162CE250E0:
+
+function <BaseActionBoardView.lua:310,313> (4 instructions at 000001162CE24C60)
+2 params, 4 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[311]	SELF     	2 1 -1	; "MergeLightAppear"
+	2	[311]	CALL     	2 2 1
+	3	[312]	SETTABLE 	0 -2 1	; "m_lastMergeLightItem" -
+	4	[313]	RETURN   	0 1
+constants (2) for 000001162CE24C60:
+	1	"MergeLightAppear"
+	2	"m_lastMergeLightItem"
+locals (2) for 000001162CE24C60:
+	0	self	1	5
+	1	itemView	1	5
+upvalues (0) for 000001162CE24C60:
+
+function <BaseActionBoardView.lua:315,322> (14 instructions at 000001162CE25060)
+1 param, 3 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[316]	GETTABLE 	1 0 -1	; "m_lastMergeLightItem"
+	2	[316]	EQ       	1 1 -2	; - nil
+	3	[316]	JMP      	0 10	; to 14
+	4	[317]	GETTABLE 	1 0 -1	; "m_lastMergeLightItem"
+	5	[317]	GETTABLE 	1 1 -3	; "gameObject"
+	6	[317]	SELF     	1 1 -4	; "IsNull"
+	7	[317]	CALL     	1 2 2
+	8	[317]	TEST     	1 1
+	9	[317]	JMP      	0 3	; to 13
+	10	[318]	GETTABLE 	1 0 -1	; "m_lastMergeLightItem"
+	11	[318]	SELF     	1 1 -5	; "MergeLightDisappear"
+	12	[318]	CALL     	1 2 1
+	13	[320]	SETTABLE 	0 -1 -2	; "m_lastMergeLightItem" nil
+	14	[322]	RETURN   	0 1
+constants (5) for 000001162CE25060:
+	1	"m_lastMergeLightItem"
+	2	nil
+	3	"gameObject"
+	4	"IsNull"
+	5	"MergeLightDisappear"
+locals (1) for 000001162CE25060:
+	0	self	1	15
+upvalues (0) for 000001162CE25060:
+
+function <BaseActionBoardView.lua:324,347> (105 instructions at 000001162CE24460)
+7 params, 23 slots, 1 upvalue, 14 locals, 27 constants, 1 function
+	1	[325]	GETTABUP 	7 0 -1	; _ENV "Vector3"
+	2	[325]	GETTABLE 	8 2 -2	; "x"
+	3	[325]	GETTABLE 	9 2 -3	; "y"
+	4	[325]	LOADK    	10 -4	; 0
+	5	[325]	CALL     	7 4 2
+	6	[325]	MOVE     	2 7
+	7	[326]	GETTABUP 	7 0 -1	; _ENV "Vector3"
+	8	[326]	GETTABLE 	8 3 -2	; "x"
+	9	[326]	GETTABLE 	9 3 -3	; "y"
+	10	[326]	LOADK    	10 -4	; 0
+	11	[326]	CALL     	7 4 2
+	12	[326]	MOVE     	3 7
+	13	[327]	MOVE     	7 4
+	14	[328]	GETTABLE 	8 2 -3	; "y"
+	15	[328]	ADD      	8 8 4
+	16	[328]	GETTABLE 	9 3 -3	; "y"
+	17	[328]	SUB      	8 8 9
+	18	[329]	GETTABUP 	9 0 -5	; _ENV "math"
+	19	[329]	GETTABLE 	9 9 -6	; "sqrt"
+	20	[329]	MUL      	10 8 -7	; - 1.0
+	21	[329]	DIV      	10 10 7
+	22	[329]	CALL     	9 2 2
+	23	[329]	ADD      	9 -8 9	; 1 -
+	24	[329]	DIV      	9 -8 9	; 1 -
+	25	[329]	MUL      	9 9 5
+	26	[330]	SUB      	10 5 9
+	27	[331]	GETTABLE 	11 3 -2	; "x"
+	28	[331]	GETTABLE 	12 2 -2	; "x"
+	29	[331]	SUB      	11 11 12
+	30	[331]	MUL      	11 11 9
+	31	[331]	DIV      	11 11 5
+	32	[332]	GETTABUP 	12 0 -9	; _ENV "DOTween"
+	33	[332]	GETTABLE 	12 12 -10	; "Sequence"
+	34	[332]	CALL     	12 1 2
+	35	[333]	SELF     	13 1 -11	; "SetJumpTween"
+	36	[333]	MOVE     	15 12
+	37	[333]	CALL     	13 3 1
+	38	[335]	GETTABLE 	13 1 -12	; "gameObject"
+	39	[335]	GETTABLE 	13 13 -13	; "transform"
+	40	[336]	SETTABLE 	13 -14 2	; "localPosition" -
+	41	[337]	GETTABUP 	14 0 -1	; _ENV "Vector3"
+	42	[337]	GETTABLE 	14 14 -16	; "zero"
+	43	[337]	SETTABLE 	13 -15 14	; "localScale" -
+	44	[338]	SELF     	14 12 -17	; "Insert"
+	45	[338]	LOADK    	16 -4	; 0
+	46	[338]	SELF     	17 13 -18	; "DOLocalMoveY"
+	47	[338]	GETTABLE 	19 2 -3	; "y"
+	48	[338]	ADD      	19 19 7
+	49	[338]	MOVE     	20 9
+	50	[338]	CALL     	17 4 2
+	51	[338]	SELF     	17 17 -19	; "SetEase"
+	52	[338]	GETTABUP 	19 0 -20	; _ENV "Ease"
+	53	[338]	GETTABLE 	19 19 -21	; "OutQuart"
+	54	[338]	CALL     	17 3 0
+	55	[338]	CALL     	14 0 1
+	56	[339]	SELF     	14 12 -17	; "Insert"
+	57	[339]	LOADK    	16 -4	; 0
+	58	[339]	SELF     	17 13 -22	; "DOScale"
+	59	[339]	GETTABUP 	19 0 -1	; _ENV "Vector3"
+	60	[339]	MOVE     	20 6
+	61	[339]	MOVE     	21 6
+	62	[339]	LOADK    	22 -8	; 1
+	63	[339]	CALL     	19 4 2
+	64	[339]	MOVE     	20 9
+	65	[339]	CALL     	17 4 2
+	66	[339]	SELF     	17 17 -19	; "SetEase"
+	67	[339]	GETTABUP 	19 0 -20	; _ENV "Ease"
+	68	[339]	GETTABLE 	19 19 -21	; "OutQuart"
+	69	[339]	CALL     	17 3 0
+	70	[339]	CALL     	14 0 1
+	71	[340]	SELF     	14 12 -17	; "Insert"
+	72	[340]	LOADK    	16 -4	; 0
+	73	[340]	SELF     	17 13 -23	; "DOLocalMoveX"
+	74	[340]	GETTABLE 	19 3 -2	; "x"
+	75	[340]	MOVE     	20 5
+	76	[340]	CALL     	17 4 0
+	77	[340]	CALL     	14 0 1
+	78	[341]	SELF     	14 12 -17	; "Insert"
+	79	[341]	MOVE     	16 9
+	80	[341]	SELF     	17 13 -18	; "DOLocalMoveY"
+	81	[341]	GETTABLE 	19 3 -3	; "y"
+	82	[341]	MOVE     	20 10
+	83	[341]	CALL     	17 4 2
+	84	[341]	SELF     	17 17 -19	; "SetEase"
+	85	[341]	GETTABUP 	19 0 -20	; _ENV "Ease"
+	86	[341]	GETTABLE 	19 19 -24	; "InQuad"
+	87	[341]	CALL     	17 3 0
+	88	[341]	CALL     	14 0 1
+	89	[342]	SELF     	14 12 -17	; "Insert"
+	90	[342]	MOVE     	16 9
+	91	[342]	SELF     	17 13 -22	; "DOScale"
+	92	[342]	GETTABUP 	19 0 -1	; _ENV "Vector3"
+	93	[342]	GETTABLE 	19 19 -25	; "one"
+	94	[342]	MOVE     	20 10
+	95	[342]	CALL     	17 4 2
+	96	[342]	SELF     	17 17 -19	; "SetEase"
+	97	[342]	GETTABUP 	19 0 -20	; _ENV "Ease"
+	98	[342]	GETTABLE 	19 19 -24	; "InQuad"
+	99	[342]	CALL     	17 3 0
+	100	[342]	CALL     	14 0 1
+	101	[344]	SELF     	14 12 -26	; "InsertCallback"
+	102	[344]	SUB      	16 5 -27	; - 0.1
+	103	[346]	CLOSURE  	17 0	; 000001162CE24560
+	104	[344]	CALL     	14 4 1
+	105	[347]	RETURN   	0 1
+constants (27) for 000001162CE24460:
+	1	"Vector3"
+	2	"x"
+	3	"y"
+	4	0
+	5	"math"
+	6	"sqrt"
+	7	1.0
+	8	1
+	9	"DOTween"
+	10	"Sequence"
+	11	"SetJumpTween"
+	12	"gameObject"
+	13	"transform"
+	14	"localPosition"
+	15	"localScale"
+	16	"zero"
+	17	"Insert"
+	18	"DOLocalMoveY"
+	19	"SetEase"
+	20	"Ease"
+	21	"OutQuart"
+	22	"DOScale"
+	23	"DOLocalMoveX"
+	24	"InQuad"
+	25	"one"
+	26	"InsertCallback"
+	27	0.1
+locals (14) for 000001162CE24460:
+	0	self	1	106
+	1	itemView	1	106
+	2	sourcePosition	1	106
+	3	targetPosition	1	106
+	4	height	1	106
+	5	totaltim	1	106
+	6	scl	1	106
+	7	h1	14	106
+	8	h2	18	106
+	9	tim1	26	106
+	10	tim2	27	106
+	11	dx1	32	106
+	12	sequence	35	106
+	13	transform	40	106
+upvalues (1) for 000001162CE24460:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:344,346> (5 instructions at 000001162CE24560)
+0 params, 3 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[345]	GETUPVAL 	0 0	; itemView
+	2	[345]	SELF     	0 0 -1	; "ShowSpreadLight"
+	3	[345]	LOADBOOL 	2 0 0
+	4	[345]	CALL     	0 3 1
+	5	[346]	RETURN   	0 1
+constants (1) for 000001162CE24560:
+	1	"ShowSpreadLight"
+locals (0) for 000001162CE24560:
+upvalues (1) for 000001162CE24560:
+	0	itemView	1	1
+
+function <BaseActionBoardView.lua:349,432> (183 instructions at 000001162CE245E0)
+6 params, 27 slots, 1 upvalue, 19 locals, 55 constants, 5 functions
+	1	[350]	GETTABUP 	6 0 -1	; _ENV "BoardSpreadType"
+	2	[350]	GETTABLE 	6 6 -2	; "IsLuckySpread"
+	3	[350]	MOVE     	7 5
+	4	[350]	CALL     	6 2 2
+	5	[351]	GETTABUP 	7 0 -1	; _ENV "BoardSpreadType"
+	6	[351]	GETTABLE 	7 7 -3	; "Dig"
+	7	[351]	EQ       	1 5 7
+	8	[351]	JMP      	0 5	; to 14
+	9	[351]	GETTABUP 	7 0 -1	; _ENV "BoardSpreadType"
+	10	[351]	GETTABLE 	7 7 -4	; "Disco"
+	11	[351]	EQ       	1 5 7
+	12	[351]	JMP      	0 1	; to 14
+	13	[351]	LOADBOOL 	7 0 1
+	14	[351]	LOADBOOL 	7 1 0
+	15	[352]	GETTABUP 	8 0 -1	; _ENV "BoardSpreadType"
+	16	[352]	GETTABLE 	8 8 -5	; "GeneratorBoostExtraLucky"
+	17	[352]	EQ       	1 5 8
+	18	[352]	JMP      	0 1	; to 20
+	19	[352]	LOADBOOL 	8 0 1
+	20	[352]	LOADBOOL 	8 1 0
+	21	[353]	GETTABUP 	9 0 -1	; _ENV "BoardSpreadType"
+	22	[353]	GETTABLE 	9 9 -6	; "TripleLucky1"
+	23	[353]	EQ       	1 5 9
+	24	[353]	JMP      	0 5	; to 30
+	25	[353]	GETTABUP 	9 0 -1	; _ENV "BoardSpreadType"
+	26	[353]	GETTABLE 	9 9 -7	; "DoubleLucky"
+	27	[353]	EQ       	1 5 9
+	28	[353]	JMP      	0 1	; to 30
+	29	[353]	LOADBOOL 	9 0 1
+	30	[353]	LOADBOOL 	9 1 0
+	31	[354]	GETTABUP 	10 0 -1	; _ENV "BoardSpreadType"
+	32	[354]	GETTABLE 	10 10 -8	; "TripleLucky2"
+	33	[354]	EQ       	1 5 10
+	34	[354]	JMP      	0 1	; to 36
+	35	[354]	LOADBOOL 	10 0 1
+	36	[354]	LOADBOOL 	10 1 0
+	37	[355]	SELF     	11 1 -9	; "GetModel"
+	38	[355]	CALL     	11 2 2
+	39	[355]	SELF     	11 11 -10	; "GetType"
+	40	[355]	CALL     	11 2 2
+	41	[355]	GETTABUP 	12 0 -11	; _ENV "ItemType"
+	42	[355]	GETTABLE 	12 12 -12	; "Temp"
+	43	[355]	EQ       	1 11 12
+	44	[355]	JMP      	0 1	; to 46
+	45	[355]	LOADBOOL 	11 0 1
+	46	[355]	LOADBOOL 	11 1 0
+	47	[357]	GETTABUP 	12 0 -13	; _ENV "Vector3"
+	48	[357]	GETTABLE 	13 2 -14	; "x"
+	49	[357]	GETTABLE 	14 2 -15	; "y"
+	50	[357]	LOADK    	15 -16	; -1
+	51	[357]	CALL     	12 4 2
+	52	[358]	GETTABUP 	13 0 -13	; _ENV "Vector3"
+	53	[358]	GETTABLE 	14 3 -14	; "x"
+	54	[358]	GETTABLE 	15 3 -15	; "y"
+	55	[358]	LOADK    	16 -17	; 0
+	56	[358]	CALL     	13 4 2
+	57	[359]	SUB      	14 13 12
+	58	[361]	GETTABLE 	15 1 -18	; "gameObject"
+	59	[361]	GETTABLE 	15 15 -19	; "transform"
+	60	[362]	SETTABLE 	15 -20 12	; "localPosition" -
+	61	[363]	GETTABUP 	16 0 -13	; _ENV "Vector3"
+	62	[363]	GETTABLE 	16 16 -22	; "zero"
+	63	[363]	SETTABLE 	15 -21 16	; "localScale" -
+	64	[365]	SELF     	16 1 -23	; "ShowTail"
+	65	[365]	MOVE     	18 4
+	66	[365]	MOVE     	19 5
+	67	[365]	CALL     	16 4 2
+	68	[367]	GETTABUP 	17 0 -24	; _ENV "DOTween"
+	69	[367]	GETTABLE 	17 17 -25	; "Sequence"
+	70	[367]	CALL     	17 1 2
+	71	[368]	SELF     	18 1 -26	; "SetJumpTween"
+	72	[368]	MOVE     	20 17
+	73	[368]	CALL     	18 3 1
+	74	[371]	SELF     	18 17 -27	; "Insert"
+	75	[371]	LOADK    	20 -28	; 0.05
+	76	[371]	SELF     	21 15 -29	; "DOLocalJump"
+	77	[371]	MUL      	23 14 -30	; - 0.9
+	78	[371]	ADD      	23 12 23
+	79	[371]	LOADK    	24 -31	; 60
+	80	[371]	LOADK    	25 -32	; 1
+	81	[371]	LOADK    	26 -33	; 0.6
+	82	[371]	CALL     	21 6 0
+	83	[371]	CALL     	18 0 1
+	84	[372]	SELF     	18 17 -27	; "Insert"
+	85	[372]	LOADK    	20 -34	; 0.65
+	86	[372]	SELF     	21 15 -35	; "DOLocalMove"
+	87	[372]	MOVE     	23 3
+	88	[372]	LOADK    	24 -36	; 0.25
+	89	[372]	CALL     	21 4 2
+	90	[372]	SELF     	21 21 -37	; "SetEase"
+	91	[372]	GETTABUP 	23 0 -38	; _ENV "Ease"
+	92	[372]	GETTABLE 	23 23 -39	; "OutQuad"
+	93	[372]	CALL     	21 3 0
+	94	[372]	CALL     	18 0 1
+	95	[375]	SELF     	18 17 -40	; "InsertCallback"
+	96	[375]	LOADK    	20 -33	; 0.6
+	97	[402]	CLOSURE  	21 0	; 000001162CE25160
+	98	[375]	CALL     	18 4 1
+	99	[405]	SELF     	18 17 -27	; "Insert"
+	100	[405]	LOADK    	20 -28	; 0.05
+	101	[405]	SELF     	21 15 -41	; "DOScale"
+	102	[405]	GETTABUP 	23 0 -13	; _ENV "Vector3"
+	103	[405]	LOADK    	24 -42	; 0.8
+	104	[405]	LOADK    	25 -42	; 0.8
+	105	[405]	LOADK    	26 -32	; 1
+	106	[405]	CALL     	23 4 2
+	107	[405]	LOADK    	24 -43	; 0.1
+	108	[405]	CALL     	21 4 0
+	109	[405]	CALL     	18 0 1
+	110	[406]	SELF     	18 17 -27	; "Insert"
+	111	[406]	LOADK    	20 -44	; 0.15
+	112	[406]	SELF     	21 15 -41	; "DOScale"
+	113	[406]	GETTABUP 	23 0 -13	; _ENV "Vector3"
+	114	[406]	LOADK    	24 -45	; 1.5
+	115	[406]	LOADK    	25 -45	; 1.5
+	116	[406]	LOADK    	26 -32	; 1
+	117	[406]	CALL     	23 4 2
+	118	[406]	LOADK    	24 -46	; 0.2
+	119	[406]	CALL     	21 4 0
+	120	[406]	CALL     	18 0 1
+	121	[407]	SELF     	18 17 -27	; "Insert"
+	122	[407]	LOADK    	20 -47	; 0.35
+	123	[407]	SELF     	21 15 -41	; "DOScale"
+	124	[407]	GETTABUP 	23 0 -13	; _ENV "Vector3"
+	125	[407]	LOADK    	24 -32	; 1
+	126	[407]	LOADK    	25 -32	; 1
+	127	[407]	LOADK    	26 -32	; 1
+	128	[407]	CALL     	23 4 2
+	129	[407]	LOADK    	24 -48	; 0.3
+	130	[407]	CALL     	21 4 0
+	131	[407]	CALL     	18 0 1
+	132	[408]	SELF     	18 17 -27	; "Insert"
+	133	[408]	LOADK    	20 -34	; 0.65
+	134	[408]	SELF     	21 15 -41	; "DOScale"
+	135	[408]	GETTABUP 	23 0 -49	; _ENV "V3One"
+	136	[408]	LOADK    	24 -46	; 0.2
+	137	[408]	CALL     	21 4 0
+	138	[408]	CALL     	18 0 1
+	139	[410]	TEST     	6 1
+	140	[410]	JMP      	0 2	; to 143
+	141	[410]	TEST     	8 0
+	142	[410]	JMP      	0 6	; to 149
+	143	[411]	SELF     	18 1 -50	; "ShowLuckySpreadEffect"
+	144	[411]	CALL     	18 2 1
+	145	[412]	SELF     	18 17 -40	; "InsertCallback"
+	146	[412]	LOADK    	20 -34	; 0.65
+	147	[412]	CLOSURE  	21 1	; 000001162CE24860
+	148	[412]	CALL     	18 4 1
+	149	[414]	SELF     	18 1 -51	; "ShowSpreadFlyEffect"
+	150	[414]	MOVE     	20 5
+	151	[414]	CALL     	18 3 1
+	152	[415]	SELF     	18 17 -40	; "InsertCallback"
+	153	[415]	LOADK    	20 -34	; 0.65
+	154	[415]	CLOSURE  	21 2	; 000001162CE24CE0
+	155	[415]	CALL     	18 4 1
+	156	[418]	TEST     	9 1
+	157	[418]	JMP      	0 2	; to 160
+	158	[418]	TEST     	10 0
+	159	[418]	JMP      	0 16	; to 176
+	160	[419]	GETTABUP 	18 0 -52	; _ENV "GM"
+	161	[419]	GETTABLE 	18 18 -53	; "UIManager"
+	162	[419]	SELF     	18 18 -54	; "SetEventLock"
+	163	[419]	LOADBOOL 	20 1 0
+	164	[419]	MOVE     	21 0
+	165	[419]	CALL     	18 4 1
+	166	[420]	TEST     	9 0
+	167	[420]	JMP      	0 3	; to 171
+	168	[420]	LOADK    	18 -48	; 0.3
+	169	[420]	TEST     	18 1
+	170	[420]	JMP      	0 1	; to 172
+	171	[420]	LOADK    	18 -55	; 0.5
+	172	[421]	SELF     	19 17 -40	; "InsertCallback"
+	173	[421]	MOVE     	21 18
+	174	[421]	CLOSURE  	22 3	; 000001162CE249E0
+	175	[421]	CALL     	19 4 1
+	176	[425]	TEST     	10 0
+	177	[425]	JMP      	0 4	; to 182
+	178	[426]	SELF     	18 17 -40	; "InsertCallback"
+	179	[426]	LOADK    	20 -34	; 0.65
+	180	[428]	CLOSURE  	21 4	; 000001162CE248E0
+	181	[426]	CALL     	18 4 1
+	182	[431]	RETURN   	17 2
+	183	[432]	RETURN   	0 1
+constants (55) for 000001162CE245E0:
+	1	"BoardSpreadType"
+	2	"IsLuckySpread"
+	3	"Dig"
+	4	"Disco"
+	5	"GeneratorBoostExtraLucky"
+	6	"TripleLucky1"
+	7	"DoubleLucky"
+	8	"TripleLucky2"
+	9	"GetModel"
+	10	"GetType"
+	11	"ItemType"
+	12	"Temp"
+	13	"Vector3"
+	14	"x"
+	15	"y"
+	16	-1
+	17	0
+	18	"gameObject"
+	19	"transform"
+	20	"localPosition"
+	21	"localScale"
+	22	"zero"
+	23	"ShowTail"
+	24	"DOTween"
+	25	"Sequence"
+	26	"SetJumpTween"
+	27	"Insert"
+	28	0.05
+	29	"DOLocalJump"
+	30	0.9
+	31	60
+	32	1
+	33	0.6
+	34	0.65
+	35	"DOLocalMove"
+	36	0.25
+	37	"SetEase"
+	38	"Ease"
+	39	"OutQuad"
+	40	"InsertCallback"
+	41	"DOScale"
+	42	0.8
+	43	0.1
+	44	0.15
+	45	1.5
+	46	0.2
+	47	0.35
+	48	0.3
+	49	"V3One"
+	50	"ShowLuckySpreadEffect"
+	51	"ShowSpreadFlyEffect"
+	52	"GM"
+	53	"UIManager"
+	54	"SetEventLock"
+	55	0.5
+locals (19) for 000001162CE245E0:
+	0	self	1	184
+	1	itemView	1	184
+	2	sourcePosition	1	184
+	3	targetPosition	1	184
+	4	energyBoost	1	184
+	5	spreadEffectType	1	184
+	6	luckySpread	5	184
+	7	digSpread	15	184
+	8	generatorBoostExtraLuckySpread	21	184
+	9	conti1LuckySpread	31	184
+	10	conti2LuckySpread	37	184
+	11	tempItemSpread	47	184
+	12	sourcePositionZero	52	184
+	13	targetPositionZero	57	184
+	14	deltaPosition	58	184
+	15	transform	60	184
+	16	bTailShown	68	184
+	17	sequence	71	184
+	18	delay	172	176
+upvalues (1) for 000001162CE245E0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:375,402> (65 instructions at 000001162CE25160)
+0 params, 6 slots, 9 upvalues, 0 locals, 21 constants, 1 function
+	1	[376]	GETUPVAL 	0 0	; itemView
+	2	[376]	SELF     	0 0 -1	; "ShowSpreadLight"
+	3	[376]	GETUPVAL 	2 1	; energyBoost
+	4	[376]	GETUPVAL 	3 2	; spreadEffectType
+	5	[376]	CALL     	0 4 1
+	6	[377]	GETUPVAL 	0 3	; self
+	7	[377]	SELF     	0 0 -2	; "_PlayItemSpreadPrompt"
+	8	[377]	GETUPVAL 	2 0	; itemView
+	9	[377]	GETUPVAL 	3 2	; spreadEffectType
+	10	[377]	CALL     	0 4 1
+	11	[378]	GETUPVAL 	0 4	; bTailShown
+	12	[378]	TEST     	0 0
+	13	[378]	JMP      	0 3	; to 17
+	14	[379]	GETUPVAL 	0 0	; itemView
+	15	[379]	SELF     	0 0 -3	; "RemoveTail"
+	16	[379]	CALL     	0 2 1
+	17	[381]	GETUPVAL 	0 2	; spreadEffectType
+	18	[381]	GETTABUP 	1 5 -4	; _ENV "BoardSpreadType"
+	19	[381]	GETTABLE 	1 1 -5	; "CardItem"
+	20	[381]	EQ       	0 0 1
+	21	[381]	JMP      	0 5	; to 27
+	22	[382]	GETTABUP 	0 5 -6	; _ENV "EventDispatcher"
+	23	[382]	GETTABLE 	0 0 -7	; "DispatchEvent"
+	24	[382]	GETTABUP 	1 5 -8	; _ENV "EEventType"
+	25	[382]	GETTABLE 	1 1 -9	; "VibrationLight"
+	26	[382]	CALL     	0 2 1
+	27	[386]	GETUPVAL 	0 6	; conti1LuckySpread
+	28	[386]	TEST     	0 1
+	29	[386]	JMP      	0 3	; to 33
+	30	[386]	GETUPVAL 	0 7	; conti2LuckySpread
+	31	[386]	TEST     	0 0
+	32	[386]	JMP      	0 5	; to 38
+	33	[387]	GETTABUP 	0 5 -6	; _ENV "EventDispatcher"
+	34	[387]	GETTABLE 	0 0 -7	; "DispatchEvent"
+	35	[387]	GETTABUP 	1 5 -8	; _ENV "EEventType"
+	36	[387]	GETTABLE 	1 1 -10	; "VibrationMedium"
+	37	[387]	CALL     	0 2 1
+	38	[391]	GETUPVAL 	0 2	; spreadEffectType
+	39	[391]	GETTABUP 	1 5 -4	; _ENV "BoardSpreadType"
+	40	[391]	GETTABLE 	1 1 -11	; "ObstacleReward"
+	41	[391]	EQ       	0 0 1
+	42	[391]	JMP      	0 11	; to 54
+	43	[392]	GETTABUP 	0 5 -12	; _ENV "GM"
+	44	[392]	GETTABLE 	0 0 -13	; "AudioModel"
+	45	[392]	SELF     	0 0 -14	; "PlayEffect"
+	46	[392]	GETTABUP 	2 5 -15	; _ENV "AudioFileConfigName"
+	47	[392]	GETTABLE 	2 2 -16	; "SfxBoardObstacleFly1"
+	48	[392]	CALL     	0 3 1
+	49	[393]	GETTABUP 	0 5 -6	; _ENV "EventDispatcher"
+	50	[393]	GETTABLE 	0 0 -7	; "DispatchEvent"
+	51	[393]	GETTABUP 	1 5 -8	; _ENV "EEventType"
+	52	[393]	GETTABLE 	1 1 -10	; "VibrationMedium"
+	53	[393]	CALL     	0 2 1
+	54	[396]	GETUPVAL 	0 8	; tempItemSpread
+	55	[396]	TEST     	0 0
+	56	[396]	JMP      	0 8	; to 65
+	57	[398]	GETTABUP 	0 5 -17	; _ENV "Scheduler"
+	58	[398]	GETTABLE 	0 0 -18	; "Schedule"
+	59	[400]	CLOSURE  	1 0	; 000001162CE246E0
+	60	[400]	GETUPVAL 	2 3	; self
+	61	[400]	LOADK    	3 -19	; 0.1
+	62	[400]	LOADK    	4 -20	; 3
+	63	[400]	LOADK    	5 -21	; 0
+	64	[398]	CALL     	0 6 1
+	65	[402]	RETURN   	0 1
+constants (21) for 000001162CE25160:
+	1	"ShowSpreadLight"
+	2	"_PlayItemSpreadPrompt"
+	3	"RemoveTail"
+	4	"BoardSpreadType"
+	5	"CardItem"
+	6	"EventDispatcher"
+	7	"DispatchEvent"
+	8	"EEventType"
+	9	"VibrationLight"
+	10	"VibrationMedium"
+	11	"ObstacleReward"
+	12	"GM"
+	13	"AudioModel"
+	14	"PlayEffect"
+	15	"AudioFileConfigName"
+	16	"SfxBoardObstacleFly1"
+	17	"Scheduler"
+	18	"Schedule"
+	19	0.1
+	20	3
+	21	0
+locals (0) for 000001162CE25160:
+upvalues (9) for 000001162CE25160:
+	0	itemView	1	1
+	1	energyBoost	1	4
+	2	spreadEffectType	1	5
+	3	self	1	0
+	4	bTailShown	1	16
+	5	_ENV	0	0
+	6	conti1LuckySpread	1	9
+	7	conti2LuckySpread	1	10
+	8	tempItemSpread	1	11
+
+function <BaseActionBoardView.lua:398,400> (6 instructions at 000001162CE246E0)
+0 params, 2 slots, 1 upvalue, 0 locals, 4 constants, 0 functions
+	1	[399]	GETTABUP 	0 0 -1	; _ENV "EventDispatcher"
+	2	[399]	GETTABLE 	0 0 -2	; "DispatchEvent"
+	3	[399]	GETTABUP 	1 0 -3	; _ENV "EEventType"
+	4	[399]	GETTABLE 	1 1 -4	; "VibrationMedium"
+	5	[399]	CALL     	0 2 1
+	6	[400]	RETURN   	0 1
+constants (4) for 000001162CE246E0:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"VibrationMedium"
+locals (0) for 000001162CE246E0:
+upvalues (1) for 000001162CE246E0:
+	0	_ENV	0	5
+
+function <BaseActionBoardView.lua:412,412> (4 instructions at 000001162CE24860)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[412]	GETUPVAL 	0 0	; itemView
+	2	[412]	SELF     	0 0 -1	; "RemoveLuckySpreadEffect"
+	3	[412]	CALL     	0 2 1
+	4	[412]	RETURN   	0 1
+constants (1) for 000001162CE24860:
+	1	"RemoveLuckySpreadEffect"
+locals (0) for 000001162CE24860:
+upvalues (1) for 000001162CE24860:
+	0	itemView	1	1
+
+function <BaseActionBoardView.lua:415,415> (4 instructions at 000001162CE24CE0)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[415]	GETUPVAL 	0 0	; itemView
+	2	[415]	SELF     	0 0 -1	; "RemoveSpreadFlyEffect"
+	3	[415]	CALL     	0 2 1
+	4	[415]	RETURN   	0 1
+constants (1) for 000001162CE24CE0:
+	1	"RemoveSpreadFlyEffect"
+locals (0) for 000001162CE24CE0:
+upvalues (1) for 000001162CE24CE0:
+	0	itemView	1	1
+
+function <BaseActionBoardView.lua:421,421> (7 instructions at 000001162CE249E0)
+0 params, 4 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[421]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[421]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[421]	SELF     	0 0 -3	; "SetEventLock"
+	4	[421]	LOADBOOL 	2 0 0
+	5	[421]	GETUPVAL 	3 1	; self
+	6	[421]	CALL     	0 4 1
+	7	[421]	RETURN   	0 1
+constants (3) for 000001162CE249E0:
+	1	"GM"
+	2	"UIManager"
+	3	"SetEventLock"
+locals (0) for 000001162CE249E0:
+upvalues (2) for 000001162CE249E0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <BaseActionBoardView.lua:426,428> (20 instructions at 000001162CE248E0)
+0 params, 6 slots, 1 upvalue, 0 locals, 14 constants, 0 functions
+	1	[427]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[427]	GETTABLE 	0 0 -2	; "ResourceLoader"
+	3	[427]	SELF     	0 0 -3	; "LoadPrefab"
+	4	[427]	GETTABUP 	2 0 -1	; _ENV "GM"
+	5	[427]	GETTABLE 	2 2 -4	; "DataResource"
+	6	[427]	GETTABLE 	2 2 -5	; "UIPrefabConfig"
+	7	[427]	SELF     	2 2 -6	; "GetConfig"
+	8	[427]	GETTABUP 	4 0 -7	; _ENV "UIPrefabConfigName"
+	9	[427]	GETTABLE 	4 4 -8	; "effect_Flash_magic_3_large"
+	10	[427]	CALL     	2 3 2
+	11	[427]	GETTABUP 	3 0 -1	; _ENV "GM"
+	12	[427]	GETTABLE 	3 3 -9	; "UIManager"
+	13	[427]	SELF     	3 3 -10	; "GetCanvasRoot"
+	14	[427]	CALL     	3 2 2
+	15	[427]	GETTABUP 	4 0 -11	; _ENV "Vector3"
+	16	[427]	GETTABLE 	4 4 -12	; "zero"
+	17	[427]	GETTABUP 	5 0 -13	; _ENV "Function"
+	18	[427]	GETTABLE 	5 5 -14	; "Void"
+	19	[427]	CALL     	0 6 1
+	20	[428]	RETURN   	0 1
+constants (14) for 000001162CE248E0:
+	1	"GM"
+	2	"ResourceLoader"
+	3	"LoadPrefab"
+	4	"DataResource"
+	5	"UIPrefabConfig"
+	6	"GetConfig"
+	7	"UIPrefabConfigName"
+	8	"effect_Flash_magic_3_large"
+	9	"UIManager"
+	10	"GetCanvasRoot"
+	11	"Vector3"
+	12	"zero"
+	13	"Function"
+	14	"Void"
+locals (0) for 000001162CE248E0:
+upvalues (1) for 000001162CE248E0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:438,443> (14 instructions at 000001162CE24A60)
+2 params, 6 slots, 1 upvalue, 5 locals, 7 constants, 0 functions
+	1	[439]	GETTABLE 	2 1 -1	; "New"
+	2	[439]	SELF     	2 2 -2	; "GetType"
+	3	[439]	CALL     	2 2 2
+	4	[440]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[440]	GETTABLE 	3 3 -4	; "ItemDataModel"
+	6	[440]	SELF     	3 3 -5	; "GetChainLevel"
+	7	[440]	MOVE     	5 2
+	8	[440]	CALL     	3 3 2
+	9	[441]	GETTABUP 	4 0 -6	; _ENV "AudioUtil"
+	10	[441]	GETTABLE 	4 4 -7	; "GetMergeAudioConfigFileName"
+	11	[441]	MOVE     	5 3
+	12	[441]	CALL     	4 2 2
+	13	[442]	RETURN   	4 2
+	14	[443]	RETURN   	0 1
+constants (7) for 000001162CE24A60:
+	1	"New"
+	2	"GetType"
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetChainLevel"
+	6	"AudioUtil"
+	7	"GetMergeAudioConfigFileName"
+locals (5) for 000001162CE24A60:
+	0	self	1	15
+	1	message	1	15
+	2	newItemType	4	15
+	3	level	9	15
+	4	sfx	13	15
+upvalues (1) for 000001162CE24A60:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:445,447> (4 instructions at 000001162CE2F340)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[446]	SELF     	2 0 -1	; "PlayMergeAnimation"
+	2	[446]	MOVE     	4 1
+	3	[446]	CALL     	2 3 1
+	4	[447]	RETURN   	0 1
+constants (1) for 000001162CE2F340:
+	1	"PlayMergeAnimation"
+locals (2) for 000001162CE2F340:
+	0	self	1	5
+	1	message	1	5
+upvalues (0) for 000001162CE2F340:
+
+function <BaseActionBoardView.lua:449,532> (171 instructions at 000001162CE2FBC0)
+2 params, 15 slots, 1 upvalue, 11 locals, 47 constants, 6 functions
+	1	[450]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[450]	GETTABLE 	2 2 -2	; "AudioModel"
+	3	[450]	SELF     	2 2 -3	; "PlayEffect"
+	4	[450]	SELF     	4 0 -4	; "GetMergeAudioSfx"
+	5	[450]	MOVE     	6 1
+	6	[450]	CALL     	4 3 0
+	7	[450]	CALL     	2 0 1
+	8	[453]	SELF     	2 0 -5	; "GetItemView"
+	9	[453]	GETTABLE 	4 1 -6	; "Source"
+	10	[453]	CALL     	2 3 2
+	11	[454]	SETTABLE 	2 -7 -8	; "toBeRemoved" true
+	12	[456]	SELF     	3 0 -5	; "GetItemView"
+	13	[456]	GETTABLE 	5 1 -9	; "Target"
+	14	[456]	CALL     	3 3 2
+	15	[457]	SETTABLE 	3 -7 -8	; "toBeRemoved" true
+	16	[459]	SELF     	4 0 -10	; "_AddItemView"
+	17	[459]	GETTABLE 	6 1 -11	; "New"
+	18	[459]	CALL     	4 3 2
+	19	[460]	EQ       	1 2 -12	; - nil
+	20	[460]	JMP      	0 2	; to 23
+	21	[460]	EQ       	0 3 -12	; - nil
+	22	[460]	JMP      	0 7	; to 30
+	23	[461]	SELF     	5 0 -13	; "_RemoveItemView"
+	24	[461]	MOVE     	7 2
+	25	[461]	CALL     	5 3 1
+	26	[462]	SELF     	5 0 -13	; "_RemoveItemView"
+	27	[462]	MOVE     	7 3
+	28	[462]	CALL     	5 3 1
+	29	[463]	RETURN   	0 1
+	30	[466]	GETTABUP 	5 0 -1	; _ENV "GM"
+	31	[466]	GETTABLE 	5 5 -14	; "ConfigModel"
+	32	[466]	SELF     	5 5 -15	; "IsServerControlOpen"
+	33	[466]	GETTABUP 	7 0 -16	; _ENV "EGeneralConfType"
+	34	[466]	GETTABLE 	7 7 -17	; "ConfNewGenerator"
+	35	[466]	CALL     	5 3 2
+	36	[467]	TEST     	5 0
+	37	[467]	JMP      	0 18	; to 56
+	38	[467]	EQ       	1 4 -12	; - nil
+	39	[467]	JMP      	0 14	; to 54
+	40	[468]	GETTABLE 	5 1 -18	; "isFirstUnlock"
+	41	[469]	TEST     	5 0
+	42	[469]	JMP      	0 13	; to 56
+	43	[469]	GETTABLE 	5 0 -19	; "m_model"
+	44	[469]	GETTABLE 	5 5 -20	; "IsFirstUnlockGeneratorItemTipType"
+	45	[470]	TEST     	5 0
+	46	[470]	JMP      	0 9	; to 56
+	47	[470]	GETTABLE 	5 0 -19	; "m_model"
+	48	[470]	SELF     	5 5 -20	; "IsFirstUnlockGeneratorItemTipType"
+	49	[470]	GETTABLE 	7 1 -11	; "New"
+	50	[470]	SELF     	7 7 -21	; "GetType"
+	51	[470]	CALL     	7 2 0
+	52	[470]	CALL     	5 0 2
+	53	[470]	JMP      	0 2	; to 56
+	54	[470]	LOADBOOL 	5 0 1
+	55	[470]	LOADBOOL 	5 1 0
+	56	[472]	TEST     	5 0
+	57	[472]	JMP      	0 5	; to 63
+	58	[474]	GETTABUP 	6 0 -1	; _ENV "GM"
+	59	[474]	GETTABLE 	6 6 -22	; "UIManager"
+	60	[474]	SELF     	6 6 -23	; "SetEventLock"
+	61	[474]	LOADBOOL 	8 1 0
+	62	[474]	CALL     	6 3 1
+	63	[477]	GETTABLE 	6 3 -24	; "transform"
+	64	[477]	GETTABLE 	6 6 -25	; "localPosition"
+	65	[478]	GETTABUP 	7 0 -26	; _ENV "DOTween"
+	66	[478]	GETTABLE 	7 7 -27	; "Sequence"
+	67	[478]	CALL     	7 1 2
+	68	[481]	SELF     	8 7 -28	; "Insert"
+	69	[481]	LOADK    	10 -29	; 0
+	70	[481]	GETTABLE 	11 2 -24	; "transform"
+	71	[481]	SELF     	11 11 -30	; "DOLocalMove"
+	72	[481]	MOVE     	13 6
+	73	[481]	LOADK    	14 -31	; 0.1
+	74	[481]	CALL     	11 4 0
+	75	[481]	CALL     	8 0 1
+	76	[482]	SELF     	8 7 -28	; "Insert"
+	77	[482]	LOADK    	10 -29	; 0
+	78	[482]	GETTABLE 	11 2 -24	; "transform"
+	79	[482]	SELF     	11 11 -32	; "DOScale"
+	80	[482]	LOADK    	13 -33	; 0.3
+	81	[482]	LOADK    	14 -31	; 0.1
+	82	[482]	CALL     	11 4 0
+	83	[482]	CALL     	8 0 1
+	84	[483]	SELF     	8 7 -34	; "InsertCallback"
+	85	[483]	LOADK    	10 -31	; 0.1
+	86	[483]	CLOSURE  	11 0	; 000001162CE2E640
+	87	[483]	CALL     	8 4 1
+	88	[486]	SELF     	8 3 -35	; "MergeLightDisappear"
+	89	[486]	CALL     	8 2 1
+	90	[487]	SELF     	8 7 -28	; "Insert"
+	91	[487]	LOADK    	10 -29	; 0
+	92	[487]	GETTABLE 	11 3 -24	; "transform"
+	93	[487]	SELF     	11 11 -32	; "DOScale"
+	94	[487]	LOADK    	13 -33	; 0.3
+	95	[487]	LOADK    	14 -31	; 0.1
+	96	[487]	CALL     	11 4 0
+	97	[487]	CALL     	8 0 1
+	98	[488]	SELF     	8 7 -34	; "InsertCallback"
+	99	[488]	LOADK    	10 -31	; 0.1
+	100	[488]	CLOSURE  	11 1	; 000001162CE30140
+	101	[488]	CALL     	8 4 1
+	102	[491]	EQ       	1 4 -12	; - nil
+	103	[491]	JMP      	0 34	; to 138
+	104	[492]	GETTABLE 	8 4 -24	; "transform"
+	105	[492]	GETTABUP 	9 0 -37	; _ENV "Vector3"
+	106	[492]	GETTABLE 	9 9 -38	; "zero"
+	107	[492]	SETTABLE 	8 -36 9	; "localScale" -
+	108	[493]	SELF     	8 7 -34	; "InsertCallback"
+	109	[493]	LOADK    	10 -31	; 0.1
+	110	[495]	CLOSURE  	11 2	; 000001162CE2FAC0
+	111	[493]	CALL     	8 4 1
+	112	[496]	SELF     	8 7 -28	; "Insert"
+	113	[496]	LOADK    	10 -31	; 0.1
+	114	[496]	GETTABLE 	11 4 -39	; "transform"
+	115	[496]	SELF     	11 11 -32	; "DOScale"
+	116	[496]	LOADK    	13 -40	; 1.3
+	117	[496]	LOADK    	14 -41	; 0.2
+	118	[496]	CALL     	11 4 0
+	119	[496]	CALL     	8 0 1
+	120	[497]	SELF     	8 7 -28	; "Insert"
+	121	[497]	LOADK    	10 -42	; 0.3
+	122	[497]	GETTABLE 	11 4 -39	; "transform"
+	123	[497]	SELF     	11 11 -32	; "DOScale"
+	124	[497]	LOADK    	13 -43	; 1
+	125	[497]	LOADK    	14 -31	; 0.1
+	126	[497]	CALL     	11 4 0
+	127	[497]	CALL     	8 0 1
+	128	[499]	TEST     	5 0
+	129	[499]	JMP      	0 8	; to 138
+	130	[500]	GETTABLE 	8 1 -11	; "New"
+	131	[500]	SELF     	8 8 -21	; "GetType"
+	132	[500]	CALL     	8 2 2
+	133	[501]	SELF     	9 7 -34	; "InsertCallback"
+	134	[502]	LOADK    	11 -42	; 0.3
+	135	[510]	CLOSURE  	12 3	; 000001162CE2EFC0
+	136	[501]	CALL     	9 4 1
+	137	[511]	JMP      	9 0	; to 138
+	138	[515]	GETTABLE 	8 1 -6	; "Source"
+	139	[515]	SELF     	8 8 -44	; "GetComponent"
+	140	[515]	GETTABUP 	10 0 -45	; _ENV "ItemTemp"
+	141	[515]	CALL     	8 3 2
+	142	[515]	EQ       	0 8 -12	; - nil
+	143	[515]	JMP      	0 7	; to 151
+	144	[515]	GETTABLE 	8 1 -9	; "Target"
+	145	[515]	SELF     	8 8 -44	; "GetComponent"
+	146	[515]	GETTABUP 	10 0 -45	; _ENV "ItemTemp"
+	147	[515]	CALL     	8 3 2
+	148	[515]	EQ       	0 8 -12	; - nil
+	149	[515]	JMP      	0 1	; to 151
+	150	[515]	LOADBOOL 	8 0 1
+	151	[515]	LOADBOOL 	8 1 0
+	152	[517]	TEST     	8 0
+	153	[517]	JMP      	0 5	; to 159
+	154	[518]	SELF     	9 7 -34	; "InsertCallback"
+	155	[518]	LOADK    	11 -29	; 0
+	156	[521]	CLOSURE  	12 4	; 000001162CE2E6C0
+	157	[518]	CALL     	9 4 1
+	158	[521]	JMP      	0 12	; to 171
+	159	[523]	GETTABUP 	9 0 -1	; _ENV "GM"
+	160	[523]	GETTABLE 	9 9 -46	; "ItemDataModel"
+	161	[523]	SELF     	9 9 -47	; "GetChainLevel"
+	162	[523]	GETTABLE 	11 1 -11	; "New"
+	163	[523]	SELF     	11 11 -21	; "GetType"
+	164	[523]	CALL     	11 2 0
+	165	[523]	CALL     	9 0 2
+	166	[524]	SELF     	10 7 -34	; "InsertCallback"
+	167	[524]	LOADK    	12 -31	; 0.1
+	168	[530]	CLOSURE  	13 5	; 000001162CE2FA40
+	169	[524]	CALL     	10 4 1
+	170	[530]	JMP      	10 0	; to 171
+	171	[532]	RETURN   	0 1
+constants (47) for 000001162CE2FBC0:
+	1	"GM"
+	2	"AudioModel"
+	3	"PlayEffect"
+	4	"GetMergeAudioSfx"
+	5	"GetItemView"
+	6	"Source"
+	7	"toBeRemoved"
+	8	true
+	9	"Target"
+	10	"_AddItemView"
+	11	"New"
+	12	nil
+	13	"_RemoveItemView"
+	14	"ConfigModel"
+	15	"IsServerControlOpen"
+	16	"EGeneralConfType"
+	17	"ConfNewGenerator"
+	18	"isFirstUnlock"
+	19	"m_model"
+	20	"IsFirstUnlockGeneratorItemTipType"
+	21	"GetType"
+	22	"UIManager"
+	23	"SetEventLock"
+	24	"transform"
+	25	"localPosition"
+	26	"DOTween"
+	27	"Sequence"
+	28	"Insert"
+	29	0
+	30	"DOLocalMove"
+	31	0.1
+	32	"DOScale"
+	33	0.3
+	34	"InsertCallback"
+	35	"MergeLightDisappear"
+	36	"localScale"
+	37	"Vector3"
+	38	"zero"
+	39	"transform"
+	40	1.3
+	41	0.2
+	42	0.3
+	43	1
+	44	"GetComponent"
+	45	"ItemTemp"
+	46	"ItemDataModel"
+	47	"GetChainLevel"
+locals (11) for 000001162CE2FBC0:
+	0	self	1	172
+	1	message	1	172
+	2	sourceItemView	11	172
+	3	targetItemView	15	172
+	4	newItemView	19	172
+	5	bMergeTip	56	172
+	6	targetPosition	65	172
+	7	sequence	68	172
+	8	newType	133	138
+	9	hasTempItem	152	172
+	10	level	166	171
+upvalues (1) for 000001162CE2FBC0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:483,483> (5 instructions at 000001162CE2E640)
+0 params, 3 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[483]	GETUPVAL 	0 0	; self
+	2	[483]	SELF     	0 0 -1	; "_RemoveItemView"
+	3	[483]	GETUPVAL 	2 1	; sourceItemView
+	4	[483]	CALL     	0 3 1
+	5	[483]	RETURN   	0 1
+constants (1) for 000001162CE2E640:
+	1	"_RemoveItemView"
+locals (0) for 000001162CE2E640:
+upvalues (2) for 000001162CE2E640:
+	0	self	1	0
+	1	sourceItemView	1	2
+
+function <BaseActionBoardView.lua:488,488> (5 instructions at 000001162CE30140)
+0 params, 3 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[488]	GETUPVAL 	0 0	; self
+	2	[488]	SELF     	0 0 -1	; "_RemoveItemView"
+	3	[488]	GETUPVAL 	2 1	; targetItemView
+	4	[488]	CALL     	0 3 1
+	5	[488]	RETURN   	0 1
+constants (1) for 000001162CE30140:
+	1	"_RemoveItemView"
+locals (0) for 000001162CE30140:
+upvalues (2) for 000001162CE30140:
+	0	self	1	0
+	1	targetItemView	1	3
+
+function <BaseActionBoardView.lua:493,495> (5 instructions at 000001162CE2FAC0)
+0 params, 2 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[494]	GETTABUP 	0 0 -1	; newItemView "transform"
+	2	[494]	GETTABUP 	1 1 -3	; _ENV "V3One"
+	3	[494]	MUL      	1 -4 1	; 0.3 -
+	4	[494]	SETTABLE 	0 -2 1	; "localScale" -
+	5	[495]	RETURN   	0 1
+constants (4) for 000001162CE2FAC0:
+	1	"transform"
+	2	"localScale"
+	3	"V3One"
+	4	0.3
+locals (0) for 000001162CE2FAC0:
+upvalues (2) for 000001162CE2FAC0:
+	0	newItemView	1	4
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:503,510> (16 instructions at 000001162CE2EFC0)
+0 params, 7 slots, 4 upvalues, 1 local, 9 constants, 1 function
+	1	[504]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[504]	GETTABLE 	0 0 -2	; "DataResource"
+	3	[504]	GETTABLE 	0 0 -3	; "UIPrefabConfig"
+	4	[504]	SELF     	0 0 -4	; "GetConfig"
+	5	[504]	GETTABUP 	2 0 -5	; _ENV "UIPrefabConfigName"
+	6	[504]	GETTABLE 	2 2 -6	; "ItemGeneratorMergeTip"
+	7	[504]	CALL     	0 3 2
+	8	[505]	GETTABUP 	1 0 -1	; _ENV "GM"
+	9	[505]	GETTABLE 	1 1 -7	; "ResourceLoader"
+	10	[505]	SELF     	1 1 -8	; "LoadPrefab"
+	11	[505]	MOVE     	3 0
+	12	[505]	GETTABUP 	4 1 -9	; self "m_itemsTransform"
+	13	[505]	GETUPVAL 	5 2	; targetPosition
+	14	[509]	CLOSURE  	6 0	; 000001162CE2EE40
+	15	[505]	CALL     	1 6 1
+	16	[510]	RETURN   	0 1
+constants (9) for 000001162CE2EFC0:
+	1	"GM"
+	2	"DataResource"
+	3	"UIPrefabConfig"
+	4	"GetConfig"
+	5	"UIPrefabConfigName"
+	6	"ItemGeneratorMergeTip"
+	7	"ResourceLoader"
+	8	"LoadPrefab"
+	9	"m_itemsTransform"
+locals (1) for 000001162CE2EFC0:
+	0	config	8	17
+upvalues (4) for 000001162CE2EFC0:
+	0	_ENV	0	0
+	1	self	1	0
+	2	targetPosition	1	6
+	3	newType	1	8
+
+function <BaseActionBoardView.lua:505,509> (8 instructions at 000001162CE2EE40)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[506]	SELF     	1 0 -1	; "GetLuaTable"
+	2	[506]	CALL     	1 2 2
+	3	[507]	SELF     	2 1 -2	; "Init"
+	4	[507]	GETUPVAL 	4 0	; newType
+	5	[507]	CALL     	2 3 1
+	6	[508]	SELF     	2 1 -3	; "Play"
+	7	[508]	CALL     	2 2 1
+	8	[509]	RETURN   	0 1
+constants (3) for 000001162CE2EE40:
+	1	"GetLuaTable"
+	2	"Init"
+	3	"Play"
+locals (2) for 000001162CE2EE40:
+	0	go	1	9
+	1	tb	3	9
+upvalues (1) for 000001162CE2EE40:
+	0	newType	0	3
+
+function <BaseActionBoardView.lua:518,521> (16 instructions at 000001162CE2E6C0)
+0 params, 7 slots, 3 upvalues, 1 local, 9 constants, 1 function
+	1	[519]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[519]	GETTABLE 	0 0 -2	; "DataResource"
+	3	[519]	GETTABLE 	0 0 -3	; "ScenePrefabConfig"
+	4	[519]	SELF     	0 0 -4	; "GetConfig"
+	5	[519]	GETTABUP 	2 0 -5	; _ENV "ScenePrefabConfigName"
+	6	[519]	GETTABLE 	2 2 -6	; "effect_temp_merge"
+	7	[519]	CALL     	0 3 2
+	8	[520]	GETTABUP 	1 0 -1	; _ENV "GM"
+	9	[520]	GETTABLE 	1 1 -7	; "ResourceLoader"
+	10	[520]	SELF     	1 1 -8	; "LoadPrefab"
+	11	[520]	MOVE     	3 0
+	12	[520]	GETTABUP 	4 1 -9	; self "m_itemsTransform"
+	13	[520]	GETUPVAL 	5 2	; targetPosition
+	14	[520]	CLOSURE  	6 0	; 000001162CE2E940
+	15	[520]	CALL     	1 6 1
+	16	[521]	RETURN   	0 1
+constants (9) for 000001162CE2E6C0:
+	1	"GM"
+	2	"DataResource"
+	3	"ScenePrefabConfig"
+	4	"GetConfig"
+	5	"ScenePrefabConfigName"
+	6	"effect_temp_merge"
+	7	"ResourceLoader"
+	8	"LoadPrefab"
+	9	"m_itemsTransform"
+locals (1) for 000001162CE2E6C0:
+	0	config	8	17
+upvalues (3) for 000001162CE2E6C0:
+	0	_ENV	0	0
+	1	self	1	0
+	2	targetPosition	1	6
+
+function <BaseActionBoardView.lua:520,520> (1 instruction at 000001162CE2E940)
+0 params, 2 slots, 0 upvalues, 0 locals, 0 constants, 0 functions
+	1	[520]	RETURN   	0 1
+constants (0) for 000001162CE2E940:
+locals (0) for 000001162CE2E940:
+upvalues (0) for 000001162CE2E940:
+
+function <BaseActionBoardView.lua:524,530> (22 instructions at 000001162CE2FA40)
+0 params, 6 slots, 4 upvalues, 2 locals, 13 constants, 1 function
+	1	[525]	GETTABUP 	0 0 -1	; self "m_mergeEffectManager"
+	2	[525]	SELF     	0 0 -2	; "GetPrefab"
+	3	[525]	GETUPVAL 	2 1	; level
+	4	[525]	CALL     	0 3 2
+	5	[526]	EQ       	1 0 -3	; - nil
+	6	[526]	JMP      	0 15	; to 22
+	7	[527]	GETTABUP 	1 2 -4	; _ENV "Object"
+	8	[527]	GETTABLE 	1 1 -5	; "Instantiate"
+	9	[527]	MOVE     	2 0
+	10	[527]	GETTABUP 	3 3 -6	; targetItemView "transform"
+	11	[527]	GETTABLE 	3 3 -7	; "position"
+	12	[527]	GETTABUP 	4 2 -8	; _ENV "Quaternion"
+	13	[527]	GETTABLE 	4 4 -9	; "identity"
+	14	[527]	GETTABUP 	5 0 -10	; self "m_itemsTransform"
+	15	[527]	CALL     	1 5 2
+	16	[528]	GETTABUP 	2 2 -11	; _ENV "DOVirtual"
+	17	[528]	GETTABLE 	2 2 -12	; "DelayedCall"
+	18	[528]	LOADK    	3 -13	; 1
+	19	[528]	CLOSURE  	4 0	; 000001162CE2F5C0
+	20	[528]	CALL     	2 3 1
+	21	[528]	JMP      	2 0	; to 22
+	22	[530]	RETURN   	0 1
+constants (13) for 000001162CE2FA40:
+	1	"m_mergeEffectManager"
+	2	"GetPrefab"
+	3	nil
+	4	"Object"
+	5	"Instantiate"
+	6	"transform"
+	7	"position"
+	8	"Quaternion"
+	9	"identity"
+	10	"m_itemsTransform"
+	11	"DOVirtual"
+	12	"DelayedCall"
+	13	1
+locals (2) for 000001162CE2FA40:
+	0	mergeEffectPrefab	5	23
+	1	gameObject	16	22
+upvalues (4) for 000001162CE2FA40:
+	0	self	1	0
+	1	level	1	9
+	2	_ENV	0	0
+	3	targetItemView	1	3
+
+function <BaseActionBoardView.lua:528,528> (4 instructions at 000001162CE2F5C0)
+0 params, 2 slots, 1 upvalue, 0 locals, 1 constant, 0 functions
+	1	[528]	GETUPVAL 	0 0	; gameObject
+	2	[528]	SELF     	0 0 -1	; "RemoveSelf"
+	3	[528]	CALL     	0 2 1
+	4	[528]	RETURN   	0 1
+constants (1) for 000001162CE2F5C0:
+	1	"RemoveSelf"
+locals (0) for 000001162CE2F5C0:
+upvalues (1) for 000001162CE2F5C0:
+	0	gameObject	1	1
+
+function <BaseActionBoardView.lua:534,542> (15 instructions at 000001162CE2E740)
+2 params, 6 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[535]	SELF     	2 0 -1	; "GetItemView"
+	2	[535]	GETTABLE 	4 1 -2	; "Source"
+	3	[535]	CALL     	2 3 2
+	4	[536]	SELF     	3 0 -3	; "_RemoveItemView"
+	5	[536]	MOVE     	5 2
+	6	[536]	CALL     	3 3 1
+	7	[539]	GETTABLE 	3 0 -4	; "m_selectedBoardPosition"
+	8	[539]	GETTABLE 	4 1 -2	; "Source"
+	9	[539]	SELF     	4 4 -5	; "GetPosition"
+	10	[539]	CALL     	4 2 2
+	11	[539]	EQ       	0 3 4
+	12	[539]	JMP      	0 2	; to 15
+	13	[540]	SELF     	3 0 -6	; "_UpdateIndicator"
+	14	[540]	CALL     	3 2 1
+	15	[542]	RETURN   	0 1
+constants (6) for 000001162CE2E740:
+	1	"GetItemView"
+	2	"Source"
+	3	"_RemoveItemView"
+	4	"m_selectedBoardPosition"
+	5	"GetPosition"
+	6	"_UpdateIndicator"
+locals (3) for 000001162CE2E740:
+	0	self	1	16
+	1	message	1	16
+	2	itemView	4	16
+upvalues (0) for 000001162CE2E740:
+
+function <BaseActionBoardView.lua:544,554> (27 instructions at 000001162CE2EEC0)
+2 params, 11 slots, 1 upvalue, 6 locals, 14 constants, 0 functions
+	1	[545]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[545]	GETTABLE 	2 2 -2	; "AudioModel"
+	3	[545]	SELF     	2 2 -3	; "PlayEffect"
+	4	[545]	GETTABUP 	4 0 -4	; _ENV "AudioFileConfigName"
+	5	[545]	GETTABLE 	4 4 -5	; "SfxMergeSpawnManual"
+	6	[545]	CALL     	2 3 1
+	7	[547]	SELF     	2 0 -6	; "_AddItemView"
+	8	[547]	GETTABLE 	4 1 -7	; "New"
+	9	[547]	CALL     	2 3 2
+	10	[548]	EQ       	1 2 -8	; - nil
+	11	[548]	JMP      	0 15	; to 27
+	12	[549]	SELF     	3 0 -9	; "GetCacheRoot"
+	13	[549]	CALL     	3 2 2
+	14	[549]	SELF     	3 3 -10	; "GetCachedItemWorldPos"
+	15	[549]	CALL     	3 2 2
+	16	[550]	GETTABLE 	4 0 -11	; "transform"
+	17	[550]	SELF     	4 4 -12	; "InverseTransformPoint"
+	18	[550]	MOVE     	6 3
+	19	[550]	CALL     	4 3 2
+	20	[551]	GETTABLE 	5 2 -11	; "transform"
+	21	[551]	GETTABLE 	5 5 -13	; "localPosition"
+	22	[552]	SELF     	6 0 -14	; "_PlayJumpAnimation"
+	23	[552]	MOVE     	8 2
+	24	[552]	MOVE     	9 4
+	25	[552]	MOVE     	10 5
+	26	[552]	CALL     	6 5 1
+	27	[554]	RETURN   	0 1
+constants (14) for 000001162CE2EEC0:
+	1	"GM"
+	2	"AudioModel"
+	3	"PlayEffect"
+	4	"AudioFileConfigName"
+	5	"SfxMergeSpawnManual"
+	6	"_AddItemView"
+	7	"New"
+	8	nil
+	9	"GetCacheRoot"
+	10	"GetCachedItemWorldPos"
+	11	"transform"
+	12	"InverseTransformPoint"
+	13	"localPosition"
+	14	"_PlayJumpAnimation"
+locals (6) for 000001162CE2EEC0:
+	0	self	1	28
+	1	message	1	28
+	2	itemView	10	28
+	3	worldPosition	16	27
+	4	sourcePosition	20	27
+	5	targetPosition	22	27
+upvalues (1) for 000001162CE2EEC0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:556,605> (127 instructions at 000001162CE2EB40)
+2 params, 14 slots, 1 upvalue, 12 locals, 55 constants, 1 function
+	1	[557]	GETTABLE 	2 1 -1	; "Source"
+	2	[557]	SELF     	2 2 -2	; "GetComponent"
+	3	[557]	GETTABUP 	4 0 -3	; _ENV "ItemCollectable"
+	4	[557]	CALL     	2 3 2
+	5	[557]	SELF     	2 2 -4	; "GetRewards"
+	6	[557]	CALL     	2 2 2
+	7	[560]	GETTABLE 	3 1 -5	; "generateItemModel"
+	8	[560]	EQ       	1 3 -6	; - nil
+	9	[560]	JMP      	0 27	; to 37
+	10	[561]	GETTABUP 	3 0 -7	; _ENV "Log"
+	11	[561]	GETTABLE 	3 3 -8	; "Error"
+	12	[561]	LOADK    	4 -9	; "\230\140\137\231\144\134\232\175\180\229\143\170\230\156\137\229\141\161\231\137\140\230\163\139\229\173\144\229\143\175\228\187\165\231\154\132\239\188\140\229\166\130\230\158\156\229\186\134\230\157\176\228\189\160\231\156\159\232\166\129\232\191\153\228\185\136\233\133\141\231\189\174\231\154\132\232\175\157\239\188\140\232\166\129\232\181\176\228\184\128\233\129\141\230\181\139\232\175\149\239\188\140\231\132\182\229\144\142\232\174\169\231\168\139\229\186\143\229\136\160\233\153\164\232\191\153\228\184\170\230\143\144\233\134\146\229\147\166"
+	13	[561]	CALL     	3 2 1
+	14	[562]	SELF     	3 0 -10	; "GetItemView"
+	15	[562]	GETTABLE 	5 1 -1	; "Source"
+	16	[562]	CALL     	3 3 2
+	17	[563]	SELF     	4 0 -11	; "_AddItemView"
+	18	[563]	GETTABLE 	6 1 -5	; "generateItemModel"
+	19	[563]	CALL     	4 3 2
+	20	[564]	GETTABLE 	5 4 -12	; "transform"
+	21	[564]	GETTABLE 	6 1 -5	; "generateItemModel"
+	22	[564]	SELF     	6 6 -14	; "GetLocalPosition"
+	23	[564]	CALL     	6 2 2
+	24	[564]	SETTABLE 	5 -13 6	; "localPosition" -
+	25	[565]	SELF     	5 0 -15	; "_PlayJumpAnimation"
+	26	[565]	MOVE     	7 4
+	27	[565]	GETTABLE 	8 3 -12	; "transform"
+	28	[565]	GETTABLE 	8 8 -13	; "localPosition"
+	29	[565]	GETTABLE 	9 4 -12	; "transform"
+	30	[565]	GETTABLE 	9 9 -13	; "localPosition"
+	31	[565]	LOADNIL  	10 1
+	32	[565]	CALL     	5 7 1
+	33	[566]	SELF     	5 0 -16	; "_RemoveItemView"
+	34	[566]	MOVE     	7 3
+	35	[566]	CALL     	5 3 1
+	36	[567]	RETURN   	0 1
+	37	[571]	NEWTABLE 	3 0 5
+	38	[572]	GETTABUP 	4 0 -17	; _ENV "EPropertyType"
+	39	[572]	GETTABLE 	4 4 -18	; "Gold"
+	40	[572]	GETTABUP 	5 0 -19	; _ENV "AudioFileConfigName"
+	41	[572]	GETTABLE 	5 5 -20	; "SfxMergeCollectCoins"
+	42	[572]	SETTABLE 	3 4 5
+	43	[573]	GETTABUP 	4 0 -17	; _ENV "EPropertyType"
+	44	[573]	GETTABLE 	4 4 -21	; "Gem"
+	45	[573]	GETTABUP 	5 0 -19	; _ENV "AudioFileConfigName"
+	46	[573]	GETTABLE 	5 5 -22	; "SfxMergeCollectDiamond"
+	47	[573]	SETTABLE 	3 4 5
+	48	[574]	GETTABUP 	4 0 -17	; _ENV "EPropertyType"
+	49	[574]	GETTABLE 	4 4 -23	; "Experience"
+	50	[574]	GETTABUP 	5 0 -19	; _ENV "AudioFileConfigName"
+	51	[574]	GETTABLE 	5 5 -24	; "SfxMergeCollectExperience"
+	52	[574]	SETTABLE 	3 4 5
+	53	[575]	GETTABUP 	4 0 -17	; _ENV "EPropertyType"
+	54	[575]	GETTABLE 	4 4 -25	; "Energy"
+	55	[575]	GETTABUP 	5 0 -19	; _ENV "AudioFileConfigName"
+	56	[575]	GETTABLE 	5 5 -26	; "SfxMergeCollectEnergy"
+	57	[575]	SETTABLE 	3 4 5
+	58	[576]	GETTABUP 	4 0 -17	; _ENV "EPropertyType"
+	59	[576]	GETTABLE 	4 4 -27	; "EnergyInfiniteTime"
+	60	[576]	GETTABUP 	5 0 -19	; _ENV "AudioFileConfigName"
+	61	[576]	GETTABLE 	5 5 -26	; "SfxMergeCollectEnergy"
+	62	[576]	SETTABLE 	3 4 5
+	63	[578]	GETTABLE 	4 2 -28	; 1
+	64	[578]	GETTABUP 	5 0 -29	; _ENV "PROPERTY_TYPE"
+	65	[578]	GETTABLE 	4 4 5
+	66	[578]	GETTABLE 	4 3 4
+	67	[579]	EQ       	1 4 -6	; - nil
+	68	[579]	JMP      	0 5	; to 74
+	69	[580]	GETTABUP 	5 0 -30	; _ENV "GM"
+	70	[580]	GETTABLE 	5 5 -31	; "AudioModel"
+	71	[580]	SELF     	5 5 -32	; "PlayEffect"
+	72	[580]	MOVE     	7 4
+	73	[580]	CALL     	5 3 1
+	74	[584]	SELF     	5 0 -10	; "GetItemView"
+	75	[584]	GETTABLE 	7 1 -1	; "Source"
+	76	[584]	CALL     	5 3 2
+	77	[585]	GETTABLE 	6 5 -12	; "transform"
+	78	[585]	GETTABLE 	6 6 -33	; "position"
+	79	[586]	SELF     	7 0 -34	; "ConvertWorldPositionToScreenPosition"
+	80	[586]	MOVE     	9 6
+	81	[586]	CALL     	7 3 2
+	82	[587]	GETTABUP 	8 0 -35	; _ENV "PositionUtil"
+	83	[587]	GETTABLE 	8 8 -36	; "UICameraScreen2World"
+	84	[587]	MOVE     	9 7
+	85	[587]	CALL     	8 2 2
+	86	[588]	NEWTABLE 	9 0 2
+	87	[589]	GETTABUP 	10 0 -38	; _ENV "Table"
+	88	[589]	GETTABLE 	10 10 -39	; "ListRep"
+	89	[589]	MOVE     	11 8
+	90	[589]	LEN      	12 2
+	91	[589]	CALL     	10 3 2
+	92	[589]	SETTABLE 	9 -37 10	; "arrWorldPos" -
+	93	[590]	SETTABLE 	9 -40 -41	; "noDelayTime" true
+	94	[592]	SELF     	10 0 -42	; "_HandleCollectItemViewData"
+	95	[592]	MOVE     	12 9
+	96	[592]	MOVE     	13 1
+	97	[592]	CALL     	10 4 1
+	98	[593]	GETTABUP 	10 0 -43	; _ENV "RewardApi"
+	99	[593]	GETTABLE 	10 10 -44	; "AcquireRewardsInView"
+	100	[593]	MOVE     	11 2
+	101	[593]	MOVE     	12 9
+	102	[593]	CALL     	10 3 1
+	103	[595]	GETTABLE 	10 1 -1	; "Source"
+	104	[595]	SELF     	10 10 -45	; "GetSpecialType"
+	105	[595]	CALL     	10 2 2
+	106	[595]	GETTABUP 	11 0 -46	; _ENV "ItemSpecialType"
+	107	[595]	GETTABLE 	11 11 -47	; "TipCollectable"
+	108	[595]	EQ       	0 10 11
+	109	[595]	JMP      	0 7	; to 117
+	110	[596]	SELF     	10 0 -48	; "_PlayCollectItemTextAnimation"
+	111	[596]	GETTABLE 	12 1 -1	; "Source"
+	112	[596]	CALL     	10 3 1
+	113	[598]	SELF     	10 0 -49	; "_UpdateIndicator"
+	114	[598]	LOADNIL  	12 0
+	115	[598]	LOADBOOL 	13 0 0
+	116	[598]	CALL     	10 4 1
+	117	[601]	SETTABLE 	5 -50 -41	; "toBeRemoved" true
+	118	[602]	GETTABLE 	10 5 -12	; "transform"
+	119	[602]	SELF     	10 10 -51	; "DOScale"
+	120	[602]	GETTABUP 	12 0 -52	; _ENV "Vector3"
+	121	[602]	GETTABLE 	12 12 -53	; "zero"
+	122	[602]	LOADK    	13 -54	; 0.2
+	123	[602]	CALL     	10 4 2
+	124	[602]	SELF     	10 10 -55	; "OnComplete"
+	125	[604]	CLOSURE  	12 0	; 000001162CE2F8C0
+	126	[602]	CALL     	10 3 1
+	127	[605]	RETURN   	0 1
+constants (55) for 000001162CE2EB40:
+	1	"Source"
+	2	"GetComponent"
+	3	"ItemCollectable"
+	4	"GetRewards"
+	5	"generateItemModel"
+	6	nil
+	7	"Log"
+	8	"Error"
+	9	"\230\140\137\231\144\134\232\175\180\229\143\170\230\156\137\229\141\161\231\137\140\230\163\139\229\173\144\229\143\175\228\187\165\231\154\132\239\188\140\229\166\130\230\158\156\229\186\134\230\157\176\228\189\160\231\156\159\232\166\129\232\191\153\228\185\136\233\133\141\231\189\174\231\154\132\232\175\157\239\188\140\232\166\129\232\181\176\228\184\128\233\129\141\230\181\139\232\175\149\239\188\140\231\132\182\229\144\142\232\174\169\231\168\139\229\186\143\229\136\160\233\153\164\232\191\153\228\184\170\230\143\144\233\134\146\229\147\166"
+	10	"GetItemView"
+	11	"_AddItemView"
+	12	"transform"
+	13	"localPosition"
+	14	"GetLocalPosition"
+	15	"_PlayJumpAnimation"
+	16	"_RemoveItemView"
+	17	"EPropertyType"
+	18	"Gold"
+	19	"AudioFileConfigName"
+	20	"SfxMergeCollectCoins"
+	21	"Gem"
+	22	"SfxMergeCollectDiamond"
+	23	"Experience"
+	24	"SfxMergeCollectExperience"
+	25	"Energy"
+	26	"SfxMergeCollectEnergy"
+	27	"EnergyInfiniteTime"
+	28	1
+	29	"PROPERTY_TYPE"
+	30	"GM"
+	31	"AudioModel"
+	32	"PlayEffect"
+	33	"position"
+	34	"ConvertWorldPositionToScreenPosition"
+	35	"PositionUtil"
+	36	"UICameraScreen2World"
+	37	"arrWorldPos"
+	38	"Table"
+	39	"ListRep"
+	40	"noDelayTime"
+	41	true
+	42	"_HandleCollectItemViewData"
+	43	"RewardApi"
+	44	"AcquireRewardsInView"
+	45	"GetSpecialType"
+	46	"ItemSpecialType"
+	47	"TipCollectable"
+	48	"_PlayCollectItemTextAnimation"
+	49	"_UpdateIndicator"
+	50	"toBeRemoved"
+	51	"DOScale"
+	52	"Vector3"
+	53	"zero"
+	54	0.2
+	55	"OnComplete"
+locals (12) for 000001162CE2EB40:
+	0	self	1	128
+	1	message	1	128
+	2	rewards	7	128
+	3	ItemView	17	37
+	4	item	20	37
+	5	sfxs	63	128
+	6	sfx	67	128
+	7	itemView	77	128
+	8	worldPosition	79	128
+	9	screenPosition	82	128
+	10	uiWorldPosition	86	128
+	11	viewData	94	128
+upvalues (1) for 000001162CE2EB40:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:602,604> (5 instructions at 000001162CE2F8C0)
+0 params, 3 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[603]	GETUPVAL 	0 0	; self
+	2	[603]	SELF     	0 0 -1	; "_RemoveItemView"
+	3	[603]	GETUPVAL 	2 1	; itemView
+	4	[603]	CALL     	0 3 1
+	5	[604]	RETURN   	0 1
+constants (1) for 000001162CE2F8C0:
+	1	"_RemoveItemView"
+locals (0) for 000001162CE2F8C0:
+upvalues (2) for 000001162CE2F8C0:
+	0	self	1	0
+	1	itemView	1	5
+
+function <BaseActionBoardView.lua:607,627> (34 instructions at 000001162CE2EBC0)
+2 params, 17 slots, 1 upvalue, 13 locals, 17 constants, 1 function
+	1	[608]	SELF     	2 0 -1	; "GetItemView"
+	2	[608]	GETTABLE 	4 1 -2	; "Source"
+	3	[608]	CALL     	2 3 2
+	4	[609]	GETTABLE 	3 2 -3	; "transform"
+	5	[609]	GETTABLE 	3 3 -4	; "position"
+	6	[610]	LOADK    	4 -5	; 0.1
+	7	[611]	GETTABUP 	5 0 -6	; _ENV "DOTween"
+	8	[611]	GETTABLE 	5 5 -7	; "Sequence"
+	9	[611]	CALL     	5 1 2
+	10	[612]	GETTABLE 	6 0 -8	; "GetCacheRoot"
+	11	[612]	EQ       	1 6 -9	; - nil
+	12	[612]	JMP      	0 6	; to 19
+	13	[612]	SELF     	6 0 -8	; "GetCacheRoot"
+	14	[612]	CALL     	6 2 2
+	15	[612]	SELF     	6 6 -10	; "GetOriginalPosition"
+	16	[612]	CALL     	6 2 2
+	17	[612]	TEST     	6 1
+	18	[612]	JMP      	0 1	; to 20
+	19	[612]	GETTABUP 	6 0 -11	; _ENV "V3Zero"
+	20	[613]	SETTABLE 	6 -12 -13	; "z" 0
+	21	[614]	GETTABUP 	7 0 -14	; _ENV "ipairs"
+	22	[614]	GETTABLE 	8 1 -15	; "CachedItems"
+	23	[614]	CALL     	7 2 4
+	24	[614]	JMP      	0 7	; to 32
+	25	[615]	SUB      	12 10 -16	; - 1
+	26	[615]	MUL      	12 4 12
+	27	[616]	SELF     	13 5 -17	; "InsertCallback"
+	28	[616]	MOVE     	15 12
+	29	[625]	CLOSURE  	16 0	; 000001162CE2E9C0
+	30	[616]	CALL     	13 4 1
+	31	[625]	JMP      	11 0	; to 32
+	32	[614]	TFORCALL 	7 2
+	33	[614]	TFORLOOP 	9 -9	; to 25
+	34	[627]	RETURN   	0 1
+constants (17) for 000001162CE2EBC0:
+	1	"GetItemView"
+	2	"Source"
+	3	"transform"
+	4	"position"
+	5	0.1
+	6	"DOTween"
+	7	"Sequence"
+	8	"GetCacheRoot"
+	9	nil
+	10	"GetOriginalPosition"
+	11	"V3Zero"
+	12	"z"
+	13	0
+	14	"ipairs"
+	15	"CachedItems"
+	16	1
+	17	"InsertCallback"
+locals (13) for 000001162CE2EBC0:
+	0	self	1	35
+	1	message	1	35
+	2	itemView	4	35
+	3	startPos	6	35
+	4	interval	7	35
+	5	seq	10	35
+	6	targetPosition	20	35
+	7	(for generator)	24	34
+	8	(for state)	24	34
+	9	(for control)	24	34
+	10	i	25	32
+	11	itemType	25	32
+	12	delay	27	31
+upvalues (1) for 000001162CE2EBC0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:616,625> (41 instructions at 000001162CE2E9C0)
+0 params, 6 slots, 5 upvalues, 1 local, 16 constants, 0 functions
+	1	[617]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	2	[617]	GETTABLE 	0 0 -2	; "GetCodePrefixTargetType"
+	3	[617]	GETUPVAL 	1 1	; itemType
+	4	[617]	CALL     	0 2 2
+	5	[617]	GETTABUP 	1 0 -3	; _ENV "ItemType"
+	6	[617]	GETTABLE 	1 1 -4	; "RewardBubble"
+	7	[617]	EQ       	0 0 1
+	8	[617]	JMP      	0 5	; to 14
+	9	[618]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	10	[618]	GETTABLE 	0 0 -5	; "GetInnerType"
+	11	[618]	GETUPVAL 	1 1	; itemType
+	12	[618]	CALL     	0 2 2
+	13	[618]	SETUPVAL 	0 1	; itemType
+	14	[620]	GETTABUP 	0 2 -6	; self "m_itemViewFactory"
+	15	[620]	SELF     	0 0 -7	; "CreateFlyItem"
+	16	[620]	GETUPVAL 	2 2	; self
+	17	[620]	GETUPVAL 	3 1	; itemType
+	18	[620]	CALL     	0 4 2
+	19	[621]	SELF     	1 0 -8	; "UpdateEffect"
+	20	[621]	LOADBOOL 	3 0 0
+	21	[621]	CALL     	1 3 1
+	22	[622]	SELF     	1 0 -9	; "UpdateNumText"
+	23	[622]	LOADBOOL 	3 0 0
+	24	[622]	CALL     	1 3 1
+	25	[623]	GETTABLE 	1 0 -10	; "transform"
+	26	[623]	GETTABUP 	2 0 -12	; _ENV "Vector3"
+	27	[623]	GETTABUP 	3 3 -10	; itemView "transform"
+	28	[623]	GETTABLE 	3 3 -11	; "position"
+	29	[623]	GETTABLE 	3 3 -13	; "x"
+	30	[623]	GETTABUP 	4 3 -10	; itemView "transform"
+	31	[623]	GETTABLE 	4 4 -11	; "position"
+	32	[623]	GETTABLE 	4 4 -14	; "y"
+	33	[623]	GETTABUP 	5 3 -10	; itemView "transform"
+	34	[623]	GETTABLE 	5 5 -11	; "position"
+	35	[623]	GETTABLE 	5 5 -15	; "z"
+	36	[623]	CALL     	2 4 2
+	37	[623]	SETTABLE 	1 -11 2	; "position" -
+	38	[624]	SELF     	1 0 -16	; "Move2Target"
+	39	[624]	GETUPVAL 	3 4	; targetPosition
+	40	[624]	CALL     	1 3 1
+	41	[625]	RETURN   	0 1
+constants (16) for 000001162CE2E9C0:
+	1	"ItemModelFactory"
+	2	"GetCodePrefixTargetType"
+	3	"ItemType"
+	4	"RewardBubble"
+	5	"GetInnerType"
+	6	"m_itemViewFactory"
+	7	"CreateFlyItem"
+	8	"UpdateEffect"
+	9	"UpdateNumText"
+	10	"transform"
+	11	"position"
+	12	"Vector3"
+	13	"x"
+	14	"y"
+	15	"z"
+	16	"Move2Target"
+locals (1) for 000001162CE2E9C0:
+	0	flyItem	19	42
+upvalues (5) for 000001162CE2E9C0:
+	0	_ENV	0	0
+	1	itemType	1	11
+	2	self	1	0
+	3	itemView	1	2
+	4	targetPosition	1	6
+
+function <BaseActionBoardView.lua:629,631> (1 instruction at 000001162CE2EC40)
+3 params, 3 slots, 0 upvalues, 3 locals, 0 constants, 0 functions
+	1	[631]	RETURN   	0 1
+constants (0) for 000001162CE2EC40:
+locals (3) for 000001162CE2EC40:
+	0	self	1	2
+	1	viewData	1	2
+	2	message	1	2
+upvalues (0) for 000001162CE2EC40:
+
+function <BaseActionBoardView.lua:633,642> (32 instructions at 000001162CE2F940)
+2 params, 10 slots, 1 upvalue, 4 locals, 20 constants, 1 function
+	1	[634]	SELF     	2 1 -1	; "GetComponent"
+	2	[634]	GETTABUP 	4 0 -2	; _ENV "ItemCollectable"
+	3	[634]	CALL     	2 3 2
+	4	[634]	SELF     	2 2 -3	; "GetRewards"
+	5	[634]	CALL     	2 2 2
+	6	[634]	GETTABLE 	2 2 -4	; 1
+	7	[636]	GETTABUP 	3 0 -5	; _ENV "PositionUtil"
+	8	[636]	GETTABLE 	3 3 -6	; "UICameraScreen2World"
+	9	[636]	SELF     	4 0 -7	; "ConvertBoardPositionToScreenPosition"
+	10	[636]	SELF     	6 1 -8	; "GetPosition"
+	11	[636]	CALL     	6 2 0
+	12	[636]	CALL     	4 0 0
+	13	[636]	CALL     	3 0 2
+	14	[637]	SETTABLE 	3 -9 -10	; "z" 0
+	15	[638]	GETTABUP 	4 0 -11	; _ENV "GM"
+	16	[638]	GETTABLE 	4 4 -12	; "ResourceLoader"
+	17	[638]	SELF     	4 4 -13	; "LoadPrefab"
+	18	[638]	GETTABUP 	6 0 -11	; _ENV "GM"
+	19	[638]	GETTABLE 	6 6 -14	; "DataResource"
+	20	[638]	GETTABLE 	6 6 -15	; "UIPrefabConfig"
+	21	[638]	SELF     	6 6 -16	; "GetConfig"
+	22	[638]	GETTABUP 	8 0 -17	; _ENV "UIPrefabConfigName"
+	23	[638]	GETTABLE 	8 8 -18	; "ItemCollectablePrompt"
+	24	[638]	CALL     	6 3 2
+	25	[638]	GETTABUP 	7 0 -11	; _ENV "GM"
+	26	[638]	GETTABLE 	7 7 -19	; "UIManager"
+	27	[638]	SELF     	7 7 -20	; "GetCanvasRoot"
+	28	[638]	CALL     	7 2 2
+	29	[638]	MOVE     	8 3
+	30	[641]	CLOSURE  	9 0	; 000001162CE2F9C0
+	31	[638]	CALL     	4 6 1
+	32	[642]	RETURN   	0 1
+constants (20) for 000001162CE2F940:
+	1	"GetComponent"
+	2	"ItemCollectable"
+	3	"GetRewards"
+	4	1
+	5	"PositionUtil"
+	6	"UICameraScreen2World"
+	7	"ConvertBoardPositionToScreenPosition"
+	8	"GetPosition"
+	9	"z"
+	10	0
+	11	"GM"
+	12	"ResourceLoader"
+	13	"LoadPrefab"
+	14	"DataResource"
+	15	"UIPrefabConfig"
+	16	"GetConfig"
+	17	"UIPrefabConfigName"
+	18	"ItemCollectablePrompt"
+	19	"UIManager"
+	20	"GetCanvasRoot"
+locals (4) for 000001162CE2F940:
+	0	self	1	33
+	1	itemModel	1	33
+	2	reward	7	33
+	3	position	14	33
+upvalues (1) for 000001162CE2F940:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:638,641> (6 instructions at 000001162CE2F9C0)
+1 param, 5 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[639]	SELF     	1 0 -1	; "GetLuaTable"
+	2	[639]	CALL     	1 2 2
+	3	[640]	SELF     	2 1 -2	; "Init"
+	4	[640]	GETUPVAL 	4 0	; reward
+	5	[640]	CALL     	2 3 1
+	6	[641]	RETURN   	0 1
+constants (2) for 000001162CE2F9C0:
+	1	"GetLuaTable"
+	2	"Init"
+locals (2) for 000001162CE2F9C0:
+	0	go	1	7
+	1	prompt	3	7
+upvalues (1) for 000001162CE2F9C0:
+	0	reward	1	2
+
+function <BaseActionBoardView.lua:644,654> (8 instructions at 000001162CE2F840)
+2 params, 9 slots, 1 upvalue, 4 locals, 1 constant, 2 functions
+	1	[649]	CLOSURE  	2 0	; 000001162CE2E240
+	2	[652]	CLOSURE  	3 1	; 000001162CE2E5C0
+	3	[653]	SELF     	4 0 -1	; "_DoBatchSwallowItem"
+	4	[653]	MOVE     	6 1
+	5	[653]	MOVE     	7 2
+	6	[653]	MOVE     	8 3
+	7	[653]	CALL     	4 5 1
+	8	[654]	RETURN   	0 1
+constants (1) for 000001162CE2F840:
+	1	"_DoBatchSwallowItem"
+locals (4) for 000001162CE2F840:
+	0	self	1	9
+	1	message	1	9
+	2	onBegin	2	9
+	3	onEnd	3	9
+upvalues (1) for 000001162CE2F840:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:645,649> (11 instructions at 000001162CE2E240)
+0 params, 4 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[647]	GETUPVAL 	0 0	; self
+	2	[647]	SELF     	0 0 -1	; "_UpdateIndicator"
+	3	[647]	LOADNIL  	2 0
+	4	[647]	LOADBOOL 	3 0 0
+	5	[647]	CALL     	0 4 1
+	6	[648]	GETTABUP 	0 1 -2	; _ENV "GM"
+	7	[648]	GETTABLE 	0 0 -3	; "UIManager"
+	8	[648]	SELF     	0 0 -4	; "SetEventLock"
+	9	[648]	LOADBOOL 	2 1 0
+	10	[648]	CALL     	0 3 1
+	11	[649]	RETURN   	0 1
+constants (4) for 000001162CE2E240:
+	1	"_UpdateIndicator"
+	2	"GM"
+	3	"UIManager"
+	4	"SetEventLock"
+locals (0) for 000001162CE2E240:
+upvalues (2) for 000001162CE2E240:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:650,652> (6 instructions at 000001162CE2E5C0)
+0 params, 3 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[651]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[651]	GETTABLE 	0 0 -2	; "UIManager"
+	3	[651]	SELF     	0 0 -3	; "SetEventLock"
+	4	[651]	LOADBOOL 	2 0 0
+	5	[651]	CALL     	0 3 1
+	6	[652]	RETURN   	0 1
+constants (3) for 000001162CE2E5C0:
+	1	"GM"
+	2	"UIManager"
+	3	"SetEventLock"
+locals (0) for 000001162CE2E5C0:
+upvalues (1) for 000001162CE2E5C0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:660,662> (10 instructions at 000001162CE2EF40)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[661]	GETTABLE 	1 0 -1	; "m_paperBoxExtraRewardPlayingAnimationCount"
+	2	[661]	TEST     	1 0
+	3	[661]	JMP      	0 5	; to 9
+	4	[661]	GETTABLE 	1 0 -1	; "m_paperBoxExtraRewardPlayingAnimationCount"
+	5	[661]	LT       	1 -2 1	; 0 -
+	6	[661]	JMP      	0 1	; to 8
+	7	[661]	LOADBOOL 	1 0 1
+	8	[661]	LOADBOOL 	1 1 0
+	9	[661]	RETURN   	1 2
+	10	[662]	RETURN   	0 1
+constants (2) for 000001162CE2EF40:
+	1	"m_paperBoxExtraRewardPlayingAnimationCount"
+	2	0
+locals (1) for 000001162CE2EF40:
+	0	self	1	11
+upvalues (0) for 000001162CE2EF40:
+
+function <BaseActionBoardView.lua:664,692> (82 instructions at 000001162CE2E7C0)
+1 param, 16 slots, 1 upvalue, 8 locals, 34 constants, 1 function
+	1	[665]	SELF     	1 0 -1	; "SetPaperBoxAreaPosition"
+	2	[665]	CALL     	1 2 1
+	3	[666]	NEWTABLE 	1 0 0
+	4	[666]	SETTABLE 	0 -2 1	; "m_mapPaperBoxExtraReward" -
+	5	[667]	SETTABLE 	0 -3 -4	; "m_paperBoxExtraRewardPlayingAnimationCount" 0
+	6	[668]	GETTABLE 	1 0 -5	; "m_model"
+	7	[668]	SELF     	1 1 -6	; "GetValidPositionIterator"
+	8	[668]	CALL     	1 2 4
+	9	[668]	JMP      	0 70	; to 80
+	10	[669]	GETTABLE 	5 0 -5	; "m_model"
+	11	[669]	SELF     	5 5 -7	; "GetPaperBoxExtraReward"
+	12	[669]	MOVE     	7 4
+	13	[669]	CALL     	5 3 2
+	14	[670]	EQ       	1 5 -8	; - nil
+	15	[670]	JMP      	0 64	; to 80
+	16	[671]	GETTABLE 	6 0 -5	; "m_model"
+	17	[671]	SELF     	6 6 -9	; "GetItem"
+	18	[671]	MOVE     	8 4
+	19	[671]	CALL     	6 3 2
+	20	[672]	TEST     	6 0
+	21	[672]	JMP      	0 58	; to 80
+	22	[672]	SELF     	7 6 -10	; "GetType"
+	23	[672]	CALL     	7 2 2
+	24	[672]	GETTABUP 	8 0 -11	; _ENV "ItemType"
+	25	[672]	GETTABLE 	8 8 -12	; "PaperBox"
+	26	[672]	EQ       	0 7 8
+	27	[672]	JMP      	0 52	; to 80
+	28	[673]	GETTABUP 	7 0 -13	; _ENV "Object"
+	29	[673]	GETTABLE 	7 7 -14	; "Instantiate"
+	30	[673]	GETTABLE 	8 0 -15	; "m_paperboxExtraRewardPrefab"
+	31	[673]	GETTABLE 	9 0 -16	; "m_paperboxExtraRewardArea"
+	32	[673]	CALL     	7 3 2
+	33	[674]	GETTABLE 	8 0 -2	; "m_mapPaperBoxExtraReward"
+	34	[674]	SELF     	9 7 -17	; "GetLuaTable"
+	35	[674]	CALL     	9 2 2
+	36	[674]	SETTABLE 	8 4 9
+	37	[675]	GETTABLE 	8 0 -2	; "m_mapPaperBoxExtraReward"
+	38	[675]	GETTABLE 	8 8 4
+	39	[675]	SELF     	8 8 -18	; "Init"
+	40	[675]	GETTABLE 	10 0 -5	; "m_model"
+	41	[675]	MOVE     	11 4
+	42	[675]	CALL     	8 4 1
+	43	[676]	GETTABLE 	8 0 -2	; "m_mapPaperBoxExtraReward"
+	44	[676]	GETTABLE 	8 8 4
+	45	[676]	SELF     	8 8 -19	; "SetTransformFunction"
+	46	[679]	CLOSURE  	10 0	; 000001162CE30040
+	47	[676]	CALL     	8 3 1
+	48	[681]	GETTABLE 	8 0 -5	; "m_model"
+	49	[681]	SELF     	8 8 -20	; "IsPaperBoxExtraRewardFirstAppear"
+	50	[681]	MOVE     	10 4
+	51	[681]	CALL     	8 3 2
+	52	[681]	TEST     	8 0
+	53	[681]	JMP      	0 26	; to 80
+	54	[682]	GETTABLE 	8 0 -5	; "m_model"
+	55	[682]	SELF     	8 8 -21	; "SetPaperBoxExtraRewardAppeared"
+	56	[682]	MOVE     	10 4
+	57	[682]	CALL     	8 3 1
+	58	[683]	GETTABUP 	8 0 -22	; _ENV "GM"
+	59	[683]	GETTABLE 	8 8 -23	; "BIManager"
+	60	[683]	SELF     	8 8 -24	; "LogAction"
+	61	[683]	GETTABUP 	10 0 -25	; _ENV "EBIType"
+	62	[683]	GETTABLE 	10 10 -26	; "PaperBoxExtraItemShowInBoard"
+	63	[683]	NEWTABLE 	11 0 3
+	64	[684]	GETTABUP 	12 0 -28	; _ENV "tostring"
+	65	[684]	GETTABLE 	13 0 -5	; "m_model"
+	66	[684]	SELF     	13 13 -29	; "GetPaperBoxRewardPosition"
+	67	[684]	MOVE     	15 4
+	68	[684]	CALL     	13 3 0
+	69	[684]	CALL     	12 0 2
+	70	[684]	SETTABLE 	11 -27 12	; "pos" -
+	71	[685]	GETTABUP 	12 0 -31	; _ENV "ConfigUtil"
+	72	[685]	GETTABLE 	12 12 -32	; "GetCurrencyStr"
+	73	[685]	MOVE     	13 5
+	74	[685]	CALL     	12 2 2
+	75	[685]	SETTABLE 	11 -30 12	; "rwd" -
+	76	[686]	GETTABLE 	12 0 -5	; "m_model"
+	77	[686]	GETTABLE 	12 12 -34	; "BoardType"
+	78	[686]	SETTABLE 	11 -33 12	; "boardType" -
+	79	[683]	CALL     	8 4 1
+	80	[668]	TFORCALL 	1 1
+	81	[668]	TFORLOOP 	3 -72	; to 10
+	82	[692]	RETURN   	0 1
+constants (34) for 000001162CE2E7C0:
+	1	"SetPaperBoxAreaPosition"
+	2	"m_mapPaperBoxExtraReward"
+	3	"m_paperBoxExtraRewardPlayingAnimationCount"
+	4	0
+	5	"m_model"
+	6	"GetValidPositionIterator"
+	7	"GetPaperBoxExtraReward"
+	8	nil
+	9	"GetItem"
+	10	"GetType"
+	11	"ItemType"
+	12	"PaperBox"
+	13	"Object"
+	14	"Instantiate"
+	15	"m_paperboxExtraRewardPrefab"
+	16	"m_paperboxExtraRewardArea"
+	17	"GetLuaTable"
+	18	"Init"
+	19	"SetTransformFunction"
+	20	"IsPaperBoxExtraRewardFirstAppear"
+	21	"SetPaperBoxExtraRewardAppeared"
+	22	"GM"
+	23	"BIManager"
+	24	"LogAction"
+	25	"EBIType"
+	26	"PaperBoxExtraItemShowInBoard"
+	27	"pos"
+	28	"tostring"
+	29	"GetPaperBoxRewardPosition"
+	30	"rwd"
+	31	"ConfigUtil"
+	32	"GetCurrencyStr"
+	33	"boardType"
+	34	"BoardType"
+locals (8) for 000001162CE2E7C0:
+	0	self	1	83
+	1	(for generator)	9	82
+	2	(for state)	9	82
+	3	(for control)	9	82
+	4	pos	10	80
+	5	reward	14	80
+	6	itemModel	20	80
+	7	extraReward	33	80
+upvalues (1) for 000001162CE2E7C0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:676,679> (10 instructions at 000001162CE30040)
+1 param, 4 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[677]	GETUPVAL 	1 0	; self
+	2	[677]	SELF     	1 1 -1	; "ConvertWorldPositionToScreenPosition"
+	3	[677]	MOVE     	3 0
+	4	[677]	CALL     	1 3 2
+	5	[678]	GETTABUP 	2 1 -2	; _ENV "PositionUtil"
+	6	[678]	GETTABLE 	2 2 -3	; "UICameraScreen2World"
+	7	[678]	MOVE     	3 1
+	8	[678]	TAILCALL 	2 2 0
+	9	[678]	RETURN   	2 0
+	10	[679]	RETURN   	0 1
+constants (3) for 000001162CE30040:
+	1	"ConvertWorldPositionToScreenPosition"
+	2	"PositionUtil"
+	3	"UICameraScreen2World"
+locals (2) for 000001162CE30040:
+	0	pos	1	11
+	1	screenPos	5	11
+upvalues (2) for 000001162CE30040:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <BaseActionBoardView.lua:694,696> (1 instruction at 000001162CE2FC40)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[696]	RETURN   	0 1
+constants (0) for 000001162CE2FC40:
+locals (1) for 000001162CE2FC40:
+	0	self	1	2
+upvalues (0) for 000001162CE2FC40:
+
+function <BaseActionBoardView.lua:698,703> (12 instructions at 000001162CE2FB40)
+1 param, 8 slots, 1 upvalue, 6 locals, 5 constants, 0 functions
+	1	[699]	GETTABUP 	1 0 -1	; _ENV "pairs"
+	2	[699]	GETTABLE 	2 0 -2	; "m_mapPaperBoxExtraReward"
+	3	[699]	CALL     	1 2 4
+	4	[699]	JMP      	0 3	; to 8
+	5	[700]	GETTABLE 	6 5 -3	; "gameObject"
+	6	[700]	SELF     	6 6 -4	; "RemoveSelf"
+	7	[700]	CALL     	6 2 1
+	8	[699]	TFORCALL 	1 2
+	9	[699]	TFORLOOP 	3 -5	; to 5
+	10	[702]	SELF     	1 0 -5	; "_InitPaperBoxExtraRewards"
+	11	[702]	CALL     	1 2 1
+	12	[703]	RETURN   	0 1
+constants (5) for 000001162CE2FB40:
+	1	"pairs"
+	2	"m_mapPaperBoxExtraReward"
+	3	"gameObject"
+	4	"RemoveSelf"
+	5	"_InitPaperBoxExtraRewards"
+locals (6) for 000001162CE2FB40:
+	0	self	1	13
+	1	(for generator)	4	10
+	2	(for state)	4	10
+	3	(for control)	4	10
+	4	_	5	8
+	5	extraReward	5	8
+upvalues (1) for 000001162CE2FB40:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:706,741> (29 instructions at 000001162CE2E2C0)
+3 params, 10 slots, 1 upvalue, 6 locals, 12 constants, 2 functions
+	1	[707]	GETTABUP 	3 0 -1	; _ENV "GM"
+	2	[707]	GETTABLE 	3 3 -2	; "UIManager"
+	3	[707]	SELF     	3 3 -3	; "SetEventLock"
+	4	[707]	LOADBOOL 	5 1 0
+	5	[707]	CALL     	3 3 1
+	6	[708]	GETTABLE 	3 0 -4	; "m_paperBoxExtraRewardPlayingAnimationCount"
+	7	[708]	ADD      	3 3 -5	; - 1
+	8	[708]	SETTABLE 	0 -4 3	; "m_paperBoxExtraRewardPlayingAnimationCount" -
+	9	[709]	GETTABUP 	3 0 -6	; _ENV "DOTween"
+	10	[709]	GETTABLE 	3 3 -7	; "Sequence"
+	11	[709]	CALL     	3 1 2
+	12	[710]	GETTABLE 	4 0 -8	; "m_mapPaperBoxExtraReward"
+	13	[710]	GETTABLE 	5 1 -9	; "Source"
+	14	[710]	SELF     	5 5 -10	; "GetPosition"
+	15	[710]	CALL     	5 2 2
+	16	[710]	GETTABLE 	4 4 5
+	17	[710]	SELF     	4 4 -11	; "PlayRewardAnimation"
+	18	[710]	MOVE     	6 3
+	19	[710]	MOVE     	7 1
+	20	[710]	CALL     	4 4 3
+	21	[711]	SELF     	6 3 -12	; "InsertCallback"
+	22	[711]	MOVE     	8 4
+	23	[713]	CLOSURE  	9 0	; 000001162CE2FCC0
+	24	[711]	CALL     	6 4 1
+	25	[714]	SELF     	6 3 -12	; "InsertCallback"
+	26	[714]	MOVE     	8 5
+	27	[740]	CLOSURE  	9 1	; 000001162CE2F0C0
+	28	[714]	CALL     	6 4 1
+	29	[741]	RETURN   	0 1
+constants (12) for 000001162CE2E2C0:
+	1	"GM"
+	2	"UIManager"
+	3	"SetEventLock"
+	4	"m_paperBoxExtraRewardPlayingAnimationCount"
+	5	1
+	6	"DOTween"
+	7	"Sequence"
+	8	"m_mapPaperBoxExtraReward"
+	9	"Source"
+	10	"GetPosition"
+	11	"PlayRewardAnimation"
+	12	"InsertCallback"
+locals (6) for 000001162CE2E2C0:
+	0	self	1	30
+	1	message	1	30
+	2	callback	1	30
+	3	sequence	12	30
+	4	collapseDelay	21	30
+	5	removeDelay	21	30
+upvalues (1) for 000001162CE2E2C0:
+	0	_ENV	0	0
+
+function <BaseActionBoardView.lua:711,713> (5 instructions at 000001162CE2FCC0)
+0 params, 3 slots, 2 upvalues, 0 locals, 1 constant, 0 functions
+	1	[712]	GETUPVAL 	0 0	; self
+	2	[712]	SELF     	0 0 -1	; "_DOCollapseItem"
+	3	[712]	GETUPVAL 	2 1	; message
+	4	[712]	CALL     	0 3 1
+	5	[713]	RETURN   	0 1
+constants (1) for 000001162CE2FCC0:
+	1	"_DOCollapseItem"
+locals (0) for 000001162CE2FCC0:
+upvalues (2) for 000001162CE2FCC0:
+	0	self	1	0
+	1	message	1	1
+
+function <BaseActionBoardView.lua:714,740> (58 instructions at 000001162CE2F0C0)
+0 params, 4 slots, 4 upvalues, 1 local, 22 constants, 0 functions
+	1	[715]	GETTABUP 	0 0 -1	; self "m_mapPaperBoxExtraReward"
+	2	[715]	GETTABUP 	1 1 -2	; message "Source"
+	3	[715]	SELF     	1 1 -3	; "GetPosition"
+	4	[715]	CALL     	1 2 2
+	5	[715]	GETTABLE 	0 0 1
+	6	[715]	GETTABLE 	0 0 -4	; "gameObject"
+	7	[715]	SELF     	0 0 -5	; "RemoveSelf"
+	8	[715]	CALL     	0 2 1
+	9	[716]	GETTABUP 	0 0 -1	; self "m_mapPaperBoxExtraReward"
+	10	[716]	GETTABUP 	1 1 -2	; message "Source"
+	11	[716]	SELF     	1 1 -3	; "GetPosition"
+	12	[716]	CALL     	1 2 2
+	13	[716]	SETTABLE 	0 1 -6	; - nil
+	14	[717]	GETTABUP 	0 2 -7	; _ENV "GM"
+	15	[717]	GETTABLE 	0 0 -8	; "UIManager"
+	16	[717]	SELF     	0 0 -9	; "SetEventLock"
+	17	[717]	LOADBOOL 	2 0 0
+	18	[717]	CALL     	0 3 1
+	19	[718]	GETTABUP 	0 0 -10	; self "m_paperBoxExtraRewardPlayingAnimationCount"
+	20	[718]	SUB      	0 0 -11	; - 1
+	21	[718]	SETTABUP 	0 -10 0	; self "m_paperBoxExtraRewardPlayingAnimationCount"
+	22	[721]	GETTABUP 	0 1 -12	; message "isPropReward"
+	23	[721]	TEST     	0 1
+	24	[721]	JMP      	0 8	; to 33
+	25	[722]	GETTABUP 	0 2 -14	; _ENV "RewardApi"
+	26	[722]	GETTABLE 	0 0 -15	; "MergeRewards"
+	27	[722]	GETTABUP 	1 0 -13	; self "m_paperBoxRewardCache"
+	28	[722]	NEWTABLE 	2 1 0
+	29	[722]	GETTABUP 	3 1 -16	; message "CollapseReward"
+	30	[722]	SETLIST  	2 1 1	; 1
+	31	[722]	CALL     	0 3 2
+	32	[722]	SETTABUP 	0 -13 0	; self "m_paperBoxRewardCache"
+	33	[725]	GETTABUP 	0 0 -10	; self "m_paperBoxExtraRewardPlayingAnimationCount"
+	34	[725]	EQ       	0 0 -17	; - 0
+	35	[725]	JMP      	0 22	; to 58
+	36	[726]	GETTABUP 	0 2 -18	; _ENV "Table"
+	37	[726]	GETTABLE 	0 0 -19	; "IsEmpty"
+	38	[726]	GETTABUP 	1 0 -13	; self "m_paperBoxRewardCache"
+	39	[726]	CALL     	0 2 2
+	40	[726]	TEST     	0 1
+	41	[726]	JMP      	0 11	; to 53
+	42	[728]	NEWTABLE 	0 0 2
+	43	[729]	GETTABUP 	1 0 -13	; self "m_paperBoxRewardCache"
+	44	[729]	SETTABLE 	0 -20 1	; "arrRewards" -
+	45	[730]	GETUPVAL 	1 3	; callback
+	46	[730]	SETTABLE 	0 -21 1	; "closeCallback" -
+	47	[732]	GETUPVAL 	1 0	; self
+	48	[732]	SELF     	1 1 -22	; "_ShowRewardWindowWhenIdle"
+	49	[732]	MOVE     	3 0
+	50	[732]	CALL     	1 3 1
+	51	[733]	SETTABUP 	0 -13 -6	; self "m_paperBoxRewardCache" nil
+	52	[733]	JMP      	0 5	; to 58
+	53	[735]	GETUPVAL 	0 3	; callback
+	54	[735]	EQ       	1 0 -6	; - nil
+	55	[735]	JMP      	0 2	; to 58
+	56	[736]	GETUPVAL 	0 3	; callback
+	57	[736]	CALL     	0 1 1
+	58	[740]	RETURN   	0 1
+constants (22) for 000001162CE2F0C0:
+	1	"m_mapPaperBoxExtraReward"
+	2	"Source"
+	3	"GetPosition"
+	4	"gameObject"
+	5	"RemoveSelf"
+	6	nil
+	7	"GM"
+	8	"UIManager"
+	9	"SetEventLock"
+	10	"m_paperBoxExtraRewardPlayingAnimationCount"
+	11	1
+	12	"isPropReward"
+	13	"m_paperBoxRewardCache"
+	14	"RewardApi"
+	15	"MergeRewards"
+	16	"CollapseReward"
+	17	0
+	18	"Table"
+	19	"IsEmpty"
+	20	"arrRewards"
+	21	"closeCallback"
+	22	"_ShowRewardWindowWhenIdle"
+locals (1) for 000001162CE2F0C0:
+	0	rewardWindowArgs	47	52
+upvalues (4) for 000001162CE2F0C0:
+	0	self	1	0
+	1	message	1	1
+	2	_ENV	0	0
+	3	callback	1	2
+
+function <BaseActionBoardView.lua:743,745> (8 instructions at 000001162CE2E8C0)
+2 params, 6 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[744]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[744]	GETTABLE 	2 2 -2	; "UIManager"
+	3	[744]	SELF     	2 2 -3	; "OpenViewWhenIdle"
+	4	[744]	GETTABUP 	4 0 -4	; _ENV "UIPrefabConfigName"
+	5	[744]	GETTABLE 	4 4 -5	; "RewardWindow"
+	6	[744]	MOVE     	5 1
+	7	[744]	CALL     	2 4 1
+	8	[745]	RETURN   	0 1
+constants (5) for 000001162CE2E8C0:
+	1	"GM"
+	2	"UIManager"
+	3	"OpenViewWhenIdle"
+	4	"UIPrefabConfigName"
+	5	"RewardWindow"
+locals (2) for 000001162CE2E8C0:
+	0	self	1	9
+	1	rewardWindowArgs	1	9
+upvalues (1) for 000001162CE2E8C0:
+	0	_ENV	0	0

@@ -1,0 +1,1855 @@
+
+main <MainOrder.lua:0,0> (108 instructions at 000002CDCCF2EFB0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 38 constants, 33 functions
+	1	[3]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[3]	NEWTABLE 	1 0 0
+	3	[3]	GETTABUP 	2 0 -3	; _ENV "SlotOrder"
+	4	[3]	CALL     	0 3 2
+	5	[3]	SETTABUP 	0 -1 0	; _ENV "MainOrder"
+	6	[4]	GETTABUP 	0 0 -1	; _ENV "MainOrder"
+	7	[4]	GETTABUP 	1 0 -1	; _ENV "MainOrder"
+	8	[4]	SETTABLE 	0 -4 1	; "__index" -
+	9	[19]	GETTABUP 	0 0 -1	; _ENV "MainOrder"
+	10	[23]	CLOSURE  	1 0	; 000002CDCCF2F030
+	11	[19]	SETTABLE 	0 -5 1	; "Create" -
+	12	[25]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	13	[34]	CLOSURE  	1 1	; 000002CDCCF31B40
+	14	[25]	SETTABLE 	0 -7 1	; "Init" -
+	15	[36]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	16	[46]	CLOSURE  	1 2	; 000002CDCCF32510
+	17	[36]	SETTABLE 	0 -8 1	; "UpdateRequirements" -
+	18	[48]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	19	[50]	CLOSURE  	1 3	; 000002CDCCF327E0
+	20	[48]	SETTABLE 	0 -9 1	; "SetGiftRewardInfo" -
+	21	[53]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	22	[55]	CLOSURE  	1 4	; 000002CDCCF32860
+	23	[53]	SETTABLE 	0 -10 1	; "GetInnerType" -
+	24	[57]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	25	[65]	CLOSURE  	1 5	; 000002CDCCF328E0
+	26	[57]	SETTABLE 	0 -11 1	; "GetType" -
+	27	[67]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	28	[69]	CLOSURE  	1 6	; 000002CDCCF32AE0
+	29	[67]	SETTABLE 	0 -12 1	; "GetAvatarId" -
+	30	[71]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	31	[73]	CLOSURE  	1 7	; 000002CDCCF33030
+	32	[71]	SETTABLE 	0 -13 1	; "UpdateAvatarId" -
+	33	[77]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	34	[104]	CLOSURE  	1 8	; 000002CDCCF332B0
+	35	[77]	SETTABLE 	0 -14 1	; "GetAvatarName" -
+	36	[106]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	37	[129]	CLOSURE  	1 9	; 000002CDCCF32EB0
+	38	[106]	SETTABLE 	0 -15 1	; "GetMaxPossibleRewardNumber" -
+	39	[132]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	40	[134]	CLOSURE  	1 10	; 000002CDCCF338B0
+	41	[132]	SETTABLE 	0 -16 1	; "_HasGoldReward" -
+	42	[136]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	43	[153]	CLOSURE  	1 11	; 000002CDCCF32DB0
+	44	[136]	SETTABLE 	0 -17 1	; "GetPrice" -
+	45	[156]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	46	[163]	CLOSURE  	1 12	; 000002CDCCF32E30
+	47	[156]	SETTABLE 	0 -18 1	; "CanSupportAlbumBuff" -
+	48	[165]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	49	[318]	CLOSURE  	1 13	; 000002CDCCF32F30
+	50	[165]	SETTABLE 	0 -19 1	; "GetRewards" -
+	51	[321]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	52	[337]	CLOSURE  	1 14	; 000002CDCCF32CB0
+	53	[321]	SETTABLE 	0 -20 1	; "GetOrderRewardByFinishOrder" -
+	54	[339]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	55	[342]	CLOSURE  	1 15	; 000002CDCCF33930
+	56	[339]	SETTABLE 	0 -21 1	; "IsBuffGoldDouble" -
+	57	[344]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	58	[346]	CLOSURE  	1 16	; 000002CDCCF337B0
+	59	[344]	SETTABLE 	0 -22 1	; "GetGiftRewards" -
+	60	[348]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	61	[350]	CLOSURE  	1 17	; 000002CDCCF32C30
+	62	[348]	SETTABLE 	0 -23 1	; "GetBuffRewards" -
+	63	[352]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	64	[354]	CLOSURE  	1 18	; 000002CDCCF33A30
+	65	[352]	SETTABLE 	0 -24 1	; "GetSupportBuffId" -
+	66	[356]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	67	[359]	CLOSURE  	1 19	; 000002CDCCF330B0
+	68	[356]	SETTABLE 	0 -25 1	; "GetCookingFrenzyConfig" -
+	69	[361]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	70	[369]	CLOSURE  	1 20	; 000002CDCCF33430
+	71	[361]	SETTABLE 	0 -26 1	; "GetCookingBIConfig" -
+	72	[372]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	73	[374]	CLOSURE  	1 21	; 000002CDCCF33130
+	74	[372]	SETTABLE 	0 -27 1	; "SetOrderBoostFinish" -
+	75	[376]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	76	[383]	CLOSURE  	1 22	; 000002CDCCF32BB0
+	77	[376]	SETTABLE 	0 -28 1	; "GetSupportOrderBoost" -
+	78	[385]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	79	[392]	CLOSURE  	1 23	; 000002CDCCF33530
+	80	[385]	SETTABLE 	0 -29 1	; "IsOrderBoostPro" -
+	81	[394]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	82	[400]	CLOSURE  	1 24	; 000002CDCCF32D30
+	83	[394]	SETTABLE 	0 -30 1	; "GetOrderBoostFinishRound" -
+	84	[402]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	85	[405]	CLOSURE  	1 25	; 000002CDCCF33830
+	86	[402]	SETTABLE 	0 -31 1	; "IsButterfly" -
+	87	[408]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	88	[416]	CLOSURE  	1 26	; 000002CDCCF331B0
+	89	[408]	SETTABLE 	0 -32 1	; "GetFirstRewardPropertyType" -
+	90	[419]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	91	[429]	CLOSURE  	1 27	; 000002CDCCF33230
+	92	[419]	SETTABLE 	0 -33 1	; "GetScore" -
+	93	[431]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	94	[452]	CLOSURE  	1 28	; 000002CDCCF33630
+	95	[431]	SETTABLE 	0 -34 1	; "GetDiffScore" -
+	96	[454]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	97	[474]	CLOSURE  	1 29	; 000002CDCCF33330
+	98	[454]	SETTABLE 	0 -35 1	; "GetTestDiffScore" -
+	99	[477]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	100	[479]	CLOSURE  	1 30	; 000002CDCCF339B0
+	101	[477]	SETTABLE 	0 -36 1	; "IsLuckyOrder" -
+	102	[482]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	103	[484]	CLOSURE  	1 31	; 000002CDCCF333B0
+	104	[482]	SETTABLE 	0 -37 1	; "IsBaselineOrder" -
+	105	[487]	GETTABUP 	0 0 -6	; _ENV "MainOrder"
+	106	[489]	CLOSURE  	1 32	; 000002CDCCF33AB0
+	107	[487]	SETTABLE 	0 -38 1	; "GetDiffRange" -
+	108	[489]	RETURN   	0 1
+constants (38) for 000002CDCCF2EFB0:
+	1	"MainOrder"
+	2	"setmetatable"
+	3	"SlotOrder"
+	4	"__index"
+	5	"Create"
+	6	"MainOrder"
+	7	"Init"
+	8	"UpdateRequirements"
+	9	"SetGiftRewardInfo"
+	10	"GetInnerType"
+	11	"GetType"
+	12	"GetAvatarId"
+	13	"UpdateAvatarId"
+	14	"GetAvatarName"
+	15	"GetMaxPossibleRewardNumber"
+	16	"_HasGoldReward"
+	17	"GetPrice"
+	18	"CanSupportAlbumBuff"
+	19	"GetRewards"
+	20	"GetOrderRewardByFinishOrder"
+	21	"IsBuffGoldDouble"
+	22	"GetGiftRewards"
+	23	"GetBuffRewards"
+	24	"GetSupportBuffId"
+	25	"GetCookingFrenzyConfig"
+	26	"GetCookingBIConfig"
+	27	"SetOrderBoostFinish"
+	28	"GetSupportOrderBoost"
+	29	"IsOrderBoostPro"
+	30	"GetOrderBoostFinishRound"
+	31	"IsButterfly"
+	32	"GetFirstRewardPropertyType"
+	33	"GetScore"
+	34	"GetDiffScore"
+	35	"GetTestDiffScore"
+	36	"IsLuckyOrder"
+	37	"IsBaselineOrder"
+	38	"GetDiffRange"
+locals (0) for 000002CDCCF2EFB0:
+upvalues (1) for 000002CDCCF2EFB0:
+	0	_ENV	1	0
+
+function <MainOrder.lua:19,23> (17 instructions at 000002CDCCF2F030)
+9 params, 21 slots, 1 upvalue, 10 locals, 3 constants, 0 functions
+	1	[20]	GETTABUP 	9 0 -1	; _ENV "setmetatable"
+	2	[20]	NEWTABLE 	10 0 0
+	3	[20]	GETTABUP 	11 0 -2	; _ENV "MainOrder"
+	4	[20]	CALL     	9 3 2
+	5	[21]	SELF     	10 9 -3	; "Init"
+	6	[21]	MOVE     	12 0
+	7	[21]	MOVE     	13 1
+	8	[21]	MOVE     	14 2
+	9	[21]	MOVE     	15 3
+	10	[21]	MOVE     	16 4
+	11	[21]	MOVE     	17 5
+	12	[21]	MOVE     	18 6
+	13	[21]	MOVE     	19 7
+	14	[21]	MOVE     	20 8
+	15	[21]	CALL     	10 11 1
+	16	[22]	RETURN   	9 2
+	17	[23]	RETURN   	0 1
+constants (3) for 000002CDCCF2F030:
+	1	"setmetatable"
+	2	"MainOrder"
+	3	"Init"
+locals (10) for 000002CDCCF2F030:
+	0	orderModel	1	18
+	1	slot	1	18
+	2	id	1	18
+	3	requirements	1	18
+	4	innerType	1	18
+	5	avatarId	1	18
+	6	bIsLukcy	1	18
+	7	bIsBaseline	1	18
+	8	diffRange	1	18
+	9	order	5	18
+upvalues (1) for 000002CDCCF2F030:
+	0	_ENV	0	0
+
+function <MainOrder.lua:25,34> (14 instructions at 000002CDCCF31B40)
+10 params, 15 slots, 1 upvalue, 10 locals, 8 constants, 0 functions
+	1	[26]	GETTABUP 	10 0 -1	; _ENV "SlotOrder"
+	2	[26]	GETTABLE 	10 10 -2	; "Init"
+	3	[26]	MOVE     	11 0
+	4	[26]	MOVE     	12 2
+	5	[26]	MOVE     	13 3
+	6	[26]	MOVE     	14 4
+	7	[26]	CALL     	10 5 1
+	8	[28]	SETTABLE 	0 -3 1	; "m_orderModel" -
+	9	[29]	SETTABLE 	0 -4 5	; "m_innerType" -
+	10	[30]	SETTABLE 	0 -5 6	; "m_avatarId" -
+	11	[31]	SETTABLE 	0 -6 7	; "m_bIsLucky" -
+	12	[32]	SETTABLE 	0 -7 8	; "m_bIsBaseline" -
+	13	[33]	SETTABLE 	0 -8 9	; "m_diffRange" -
+	14	[34]	RETURN   	0 1
+constants (8) for 000002CDCCF31B40:
+	1	"SlotOrder"
+	2	"Init"
+	3	"m_orderModel"
+	4	"m_innerType"
+	5	"m_avatarId"
+	6	"m_bIsLucky"
+	7	"m_bIsBaseline"
+	8	"m_diffRange"
+locals (10) for 000002CDCCF31B40:
+	0	self	1	15
+	1	orderModel	1	15
+	2	slot	1	15
+	3	id	1	15
+	4	requirements	1	15
+	5	innerType	1	15
+	6	avatarId	1	15
+	7	bIsLukcy	1	15
+	8	bIsBaseline	1	15
+	9	diffRange	1	15
+upvalues (1) for 000002CDCCF31B40:
+	0	_ENV	0	0
+
+function <MainOrder.lua:36,46> (28 instructions at 000002CDCCF32510)
+2 params, 12 slots, 1 upvalue, 9 locals, 10 constants, 0 functions
+	1	[37]	GETTABUP 	2 0 -1	; _ENV "SlotOrder"
+	2	[37]	GETTABLE 	2 2 -2	; "UpdateRequirements"
+	3	[37]	MOVE     	3 0
+	4	[37]	MOVE     	4 1
+	5	[37]	CALL     	2 3 1
+	6	[38]	GETTABUP 	2 0 -3	; _ENV "pairs"
+	7	[38]	GETTABUP 	3 0 -4	; _ENV "AlbumActivityDefinition"
+	8	[38]	CALL     	2 2 4
+	9	[38]	JMP      	0 16	; to 26
+	10	[39]	GETTABUP 	7 0 -5	; _ENV "GM"
+	11	[39]	GETTABLE 	7 7 -6	; "ActivityManager"
+	12	[39]	SELF     	7 7 -7	; "GetModel"
+	13	[39]	MOVE     	9 5
+	14	[39]	CALL     	7 3 2
+	15	[40]	TEST     	7 0
+	16	[40]	JMP      	0 9	; to 26
+	17	[40]	SELF     	8 7 -8	; "IsActivityOpen"
+	18	[40]	CALL     	8 2 2
+	19	[40]	TEST     	8 0
+	20	[40]	JMP      	0 5	; to 26
+	21	[41]	SELF     	8 0 -9	; "GetSlot"
+	22	[41]	CALL     	8 2 2
+	23	[42]	SELF     	9 7 -10	; "ClearOrderReward"
+	24	[42]	MOVE     	11 8
+	25	[42]	CALL     	9 3 1
+	26	[38]	TFORCALL 	2 2
+	27	[38]	TFORLOOP 	4 -18	; to 10
+	28	[46]	RETURN   	0 1
+constants (10) for 000002CDCCF32510:
+	1	"SlotOrder"
+	2	"UpdateRequirements"
+	3	"pairs"
+	4	"AlbumActivityDefinition"
+	5	"GM"
+	6	"ActivityManager"
+	7	"GetModel"
+	8	"IsActivityOpen"
+	9	"GetSlot"
+	10	"ClearOrderReward"
+locals (9) for 000002CDCCF32510:
+	0	self	1	29
+	1	requirements	1	29
+	2	(for generator)	9	28
+	3	(for state)	9	28
+	4	(for control)	9	28
+	5	activityType	10	26
+	6	_	10	26
+	7	AlbumModel	15	26
+	8	slot	23	26
+upvalues (1) for 000002CDCCF32510:
+	0	_ENV	0	0
+
+function <MainOrder.lua:48,50> (2 instructions at 000002CDCCF327E0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[49]	SETTABLE 	0 -1 1	; "m_giftRewards" -
+	2	[50]	RETURN   	0 1
+constants (1) for 000002CDCCF327E0:
+	1	"m_giftRewards"
+locals (2) for 000002CDCCF327E0:
+	0	self	1	3
+	1	giftRewards	1	3
+upvalues (0) for 000002CDCCF327E0:
+
+function <MainOrder.lua:53,55> (3 instructions at 000002CDCCF32860)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[54]	GETTABLE 	1 0 -1	; "m_innerType"
+	2	[54]	RETURN   	1 2
+	3	[55]	RETURN   	0 1
+constants (1) for 000002CDCCF32860:
+	1	"m_innerType"
+locals (1) for 000002CDCCF32860:
+	0	self	1	4
+upvalues (0) for 000002CDCCF32860:
+
+function <MainOrder.lua:57,65> (30 instructions at 000002CDCCF328E0)
+1 param, 3 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[58]	SELF     	1 0 -1	; "GetInnerType"
+	2	[58]	CALL     	1 2 2
+	3	[58]	GETTABUP 	2 0 -2	; _ENV "MainOrderType"
+	4	[58]	GETTABLE 	2 2 -3	; "Fixed"
+	5	[58]	EQ       	0 1 2
+	6	[58]	JMP      	0 4	; to 11
+	7	[59]	GETTABUP 	1 0 -4	; _ENV "OrderType"
+	8	[59]	GETTABLE 	1 1 -3	; "Fixed"
+	9	[59]	RETURN   	1 2
+	10	[59]	JMP      	0 19	; to 30
+	11	[60]	SELF     	1 0 -1	; "GetInnerType"
+	12	[60]	CALL     	1 2 2
+	13	[60]	GETTABUP 	2 0 -2	; _ENV "MainOrderType"
+	14	[60]	GETTABLE 	2 2 -5	; "Special"
+	15	[60]	EQ       	1 1 2
+	16	[60]	JMP      	0 6	; to 23
+	17	[60]	SELF     	1 0 -1	; "GetInnerType"
+	18	[60]	CALL     	1 2 2
+	19	[60]	GETTABUP 	2 0 -2	; _ENV "MainOrderType"
+	20	[60]	GETTABLE 	2 2 -6	; "Branch"
+	21	[60]	EQ       	0 1 2
+	22	[60]	JMP      	0 4	; to 27
+	23	[61]	GETTABUP 	1 0 -4	; _ENV "OrderType"
+	24	[61]	GETTABLE 	1 1 -5	; "Special"
+	25	[61]	RETURN   	1 2
+	26	[61]	JMP      	0 3	; to 30
+	27	[63]	GETTABUP 	1 0 -4	; _ENV "OrderType"
+	28	[63]	GETTABLE 	1 1 -7	; "Random"
+	29	[63]	RETURN   	1 2
+	30	[65]	RETURN   	0 1
+constants (7) for 000002CDCCF328E0:
+	1	"GetInnerType"
+	2	"MainOrderType"
+	3	"Fixed"
+	4	"OrderType"
+	5	"Special"
+	6	"Branch"
+	7	"Random"
+locals (1) for 000002CDCCF328E0:
+	0	self	1	31
+upvalues (1) for 000002CDCCF328E0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:67,69> (3 instructions at 000002CDCCF32AE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[68]	GETTABLE 	1 0 -1	; "m_avatarId"
+	2	[68]	RETURN   	1 2
+	3	[69]	RETURN   	0 1
+constants (1) for 000002CDCCF32AE0:
+	1	"m_avatarId"
+locals (1) for 000002CDCCF32AE0:
+	0	self	1	4
+upvalues (0) for 000002CDCCF32AE0:
+
+function <MainOrder.lua:71,73> (2 instructions at 000002CDCCF33030)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[72]	SETTABLE 	0 -1 1	; "m_avatarId" -
+	2	[73]	RETURN   	0 1
+constants (1) for 000002CDCCF33030:
+	1	"m_avatarId"
+locals (2) for 000002CDCCF33030:
+	0	self	1	3
+	1	avatarId	1	3
+upvalues (0) for 000002CDCCF33030:
+
+function <MainOrder.lua:77,104> (128 instructions at 000002CDCCF332B0)
+1 param, 5 slots, 1 upvalue, 5 locals, 26 constants, 0 functions
+	1	[78]	GETTABLE 	1 0 -1	; "m_orderModel"
+	2	[78]	SELF     	1 1 -2	; "GetAvatarConfig"
+	3	[78]	CALL     	1 2 2
+	4	[80]	GETTABLE 	2 1 -3	; "ChestCustomerAvatars"
+	5	[80]	GETTABLE 	3 0 -4	; "m_avatarId"
+	6	[80]	GETTABLE 	2 2 3
+	7	[80]	EQ       	1 2 -5	; - nil
+	8	[80]	JMP      	0 5	; to 14
+	9	[81]	GETTABLE 	2 1 -3	; "ChestCustomerAvatars"
+	10	[81]	GETTABLE 	3 0 -4	; "m_avatarId"
+	11	[81]	GETTABLE 	2 2 3
+	12	[81]	RETURN   	2 2
+	13	[81]	JMP      	0 114	; to 128
+	14	[82]	SELF     	2 0 -6	; "GetInnerType"
+	15	[82]	CALL     	2 2 2
+	16	[82]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	17	[82]	GETTABLE 	3 3 -8	; "Special"
+	18	[82]	EQ       	0 2 3
+	19	[82]	JMP      	0 5	; to 25
+	20	[83]	GETTABLE 	2 1 -9	; "SpecialAvatars"
+	21	[83]	GETTABLE 	3 0 -4	; "m_avatarId"
+	22	[83]	GETTABLE 	2 2 3
+	23	[83]	RETURN   	2 2
+	24	[83]	JMP      	0 103	; to 128
+	25	[84]	SELF     	2 0 -6	; "GetInnerType"
+	26	[84]	CALL     	2 2 2
+	27	[84]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	28	[84]	GETTABLE 	3 3 -10	; "Branch"
+	29	[84]	EQ       	0 2 3
+	30	[84]	JMP      	0 5	; to 36
+	31	[85]	GETTABLE 	2 1 -11	; "BranchAvatars"
+	32	[85]	GETTABLE 	3 0 -4	; "m_avatarId"
+	33	[85]	GETTABLE 	2 2 3
+	34	[85]	RETURN   	2 2
+	35	[85]	JMP      	0 92	; to 128
+	36	[86]	GETTABLE 	2 1 -12	; "BakeOutAvatars"
+	37	[86]	GETTABLE 	3 0 -4	; "m_avatarId"
+	38	[86]	GETTABLE 	2 2 3
+	39	[86]	EQ       	1 2 -5	; - nil
+	40	[86]	JMP      	0 5	; to 46
+	41	[87]	GETTABLE 	2 1 -12	; "BakeOutAvatars"
+	42	[87]	GETTABLE 	3 0 -4	; "m_avatarId"
+	43	[87]	GETTABLE 	2 2 3
+	44	[87]	RETURN   	2 2
+	45	[87]	JMP      	0 82	; to 128
+	46	[88]	SELF     	2 0 -6	; "GetInnerType"
+	47	[88]	CALL     	2 2 2
+	48	[88]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	49	[88]	GETTABLE 	3 3 -13	; "CharacterIntimacyRandom"
+	50	[88]	EQ       	0 2 3
+	51	[88]	JMP      	0 10	; to 62
+	52	[88]	GETTABLE 	2 1 -14	; "CharacterIntimacyAvatars"
+	53	[88]	GETTABLE 	3 0 -4	; "m_avatarId"
+	54	[88]	GETTABLE 	2 2 3
+	55	[88]	EQ       	1 2 -5	; - nil
+	56	[88]	JMP      	0 5	; to 62
+	57	[89]	GETTABLE 	2 1 -14	; "CharacterIntimacyAvatars"
+	58	[89]	GETTABLE 	3 0 -4	; "m_avatarId"
+	59	[89]	GETTABLE 	2 2 3
+	60	[89]	RETURN   	2 2
+	61	[89]	JMP      	0 66	; to 128
+	62	[90]	SELF     	2 0 -6	; "GetInnerType"
+	63	[90]	CALL     	2 2 2
+	64	[90]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	65	[90]	GETTABLE 	3 3 -15	; "TimedOrder"
+	66	[90]	EQ       	0 2 3
+	67	[90]	JMP      	0 10	; to 78
+	68	[90]	GETTABLE 	2 1 -16	; "TimedOrderAvatars"
+	69	[90]	GETTABLE 	3 0 -4	; "m_avatarId"
+	70	[90]	GETTABLE 	2 2 3
+	71	[90]	EQ       	1 2 -5	; - nil
+	72	[90]	JMP      	0 5	; to 78
+	73	[91]	GETTABLE 	2 1 -16	; "TimedOrderAvatars"
+	74	[91]	GETTABLE 	3 0 -4	; "m_avatarId"
+	75	[91]	GETTABLE 	2 2 3
+	76	[91]	RETURN   	2 2
+	77	[91]	JMP      	0 50	; to 128
+	78	[92]	SELF     	2 0 -6	; "GetInnerType"
+	79	[92]	CALL     	2 2 2
+	80	[92]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	81	[92]	GETTABLE 	3 3 -17	; "ExtraCustomer"
+	82	[92]	EQ       	0 2 3
+	83	[92]	JMP      	0 10	; to 94
+	84	[92]	GETTABLE 	2 1 -18	; "ExtraCustomerAvatars"
+	85	[92]	GETTABLE 	3 0 -4	; "m_avatarId"
+	86	[92]	GETTABLE 	2 2 3
+	87	[92]	EQ       	1 2 -5	; - nil
+	88	[92]	JMP      	0 5	; to 94
+	89	[93]	GETTABLE 	2 1 -18	; "ExtraCustomerAvatars"
+	90	[93]	GETTABLE 	3 0 -4	; "m_avatarId"
+	91	[93]	GETTABLE 	2 2 3
+	92	[93]	RETURN   	2 2
+	93	[93]	JMP      	0 34	; to 128
+	94	[94]	SELF     	2 0 -6	; "GetInnerType"
+	95	[94]	CALL     	2 2 2
+	96	[94]	GETTABUP 	3 0 -7	; _ENV "MainOrderType"
+	97	[94]	GETTABLE 	3 3 -19	; "Contiorder"
+	98	[94]	EQ       	0 2 3
+	99	[94]	JMP      	0 17	; to 117
+	100	[95]	GETTABLE 	2 0 -20	; "m_contiorderAvatarName"
+	101	[95]	EQ       	0 2 -5	; - nil
+	102	[95]	JMP      	0 11	; to 114
+	103	[96]	GETTABUP 	2 0 -21	; _ENV "GM"
+	104	[96]	GETTABLE 	2 2 -22	; "ActivityManager"
+	105	[96]	SELF     	2 2 -23	; "GetStartedContiorders"
+	106	[96]	CALL     	2 2 3
+	107	[97]	TEST     	2 0
+	108	[97]	JMP      	0 3	; to 112
+	109	[97]	GETTABLE 	4 3 -24	; "OrderAvatarName"
+	110	[97]	TEST     	4 1
+	111	[97]	JMP      	0 1	; to 113
+	112	[97]	LOADNIL  	4 0
+	113	[97]	SETTABLE 	0 -20 4	; "m_contiorderAvatarName" -
+	114	[99]	GETTABLE 	2 0 -20	; "m_contiorderAvatarName"
+	115	[99]	RETURN   	2 2
+	116	[99]	JMP      	0 11	; to 128
+	117	[101]	GETTABLE 	2 0 -1	; "m_orderModel"
+	118	[101]	SELF     	2 2 -25	; "GetNormalAvatarConfig"
+	119	[101]	GETTABLE 	4 0 -4	; "m_avatarId"
+	120	[101]	CALL     	2 3 2
+	121	[102]	EQ       	1 2 -5	; - nil
+	122	[102]	JMP      	0 3	; to 126
+	123	[102]	GETTABLE 	3 2 -26	; "Avatar"
+	124	[102]	TEST     	3 1
+	125	[102]	JMP      	0 1	; to 127
+	126	[102]	LOADNIL  	3 0
+	127	[102]	RETURN   	3 2
+	128	[104]	RETURN   	0 1
+constants (26) for 000002CDCCF332B0:
+	1	"m_orderModel"
+	2	"GetAvatarConfig"
+	3	"ChestCustomerAvatars"
+	4	"m_avatarId"
+	5	nil
+	6	"GetInnerType"
+	7	"MainOrderType"
+	8	"Special"
+	9	"SpecialAvatars"
+	10	"Branch"
+	11	"BranchAvatars"
+	12	"BakeOutAvatars"
+	13	"CharacterIntimacyRandom"
+	14	"CharacterIntimacyAvatars"
+	15	"TimedOrder"
+	16	"TimedOrderAvatars"
+	17	"ExtraCustomer"
+	18	"ExtraCustomerAvatars"
+	19	"Contiorder"
+	20	"m_contiorderAvatarName"
+	21	"GM"
+	22	"ActivityManager"
+	23	"GetStartedContiorders"
+	24	"OrderAvatarName"
+	25	"GetNormalAvatarConfig"
+	26	"Avatar"
+locals (5) for 000002CDCCF332B0:
+	0	self	1	129
+	1	avatarConfig	4	129
+	2	model	107	114
+	3	def	107	114
+	4	avatarConfig	121	128
+upvalues (1) for 000002CDCCF332B0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:106,129> (41 instructions at 000002CDCCF32EB0)
+1 param, 10 slots, 1 upvalue, 15 locals, 10 constants, 0 functions
+	1	[107]	LOADK    	1 -1	; 1
+	2	[109]	GETTABUP 	2 0 -2	; _ENV "pairs"
+	3	[109]	GETTABUP 	3 0 -3	; _ENV "MainDecorActivityDefinition"
+	4	[109]	CALL     	2 2 4
+	5	[109]	JMP      	0 10	; to 16
+	6	[110]	GETTABUP 	7 0 -4	; _ENV "GM"
+	7	[110]	GETTABLE 	7 7 -5	; "ActivityManager"
+	8	[110]	SELF     	7 7 -6	; "GetModel"
+	9	[110]	MOVE     	9 5
+	10	[110]	CALL     	7 3 2
+	11	[111]	SELF     	8 7 -7	; "CanAddScore"
+	12	[111]	CALL     	8 2 2
+	13	[111]	TEST     	8 0
+	14	[111]	JMP      	0 1	; to 16
+	15	[112]	ADD      	1 1 -1	; - 1
+	16	[109]	TFORCALL 	2 2
+	17	[109]	TFORLOOP 	4 -12	; to 6
+	18	[116]	GETTABUP 	2 0 -2	; _ENV "pairs"
+	19	[116]	GETTABUP 	3 0 -8	; _ENV "MainDecorNewActivityDefinition"
+	20	[116]	CALL     	2 2 4
+	21	[116]	JMP      	0 10	; to 32
+	22	[117]	GETTABUP 	7 0 -4	; _ENV "GM"
+	23	[117]	GETTABLE 	7 7 -5	; "ActivityManager"
+	24	[117]	SELF     	7 7 -6	; "GetModel"
+	25	[117]	MOVE     	9 5
+	26	[117]	CALL     	7 3 2
+	27	[118]	SELF     	8 7 -7	; "CanAddScore"
+	28	[118]	CALL     	8 2 2
+	29	[118]	TEST     	8 0
+	30	[118]	JMP      	0 1	; to 32
+	31	[119]	ADD      	1 1 -1	; - 1
+	32	[116]	TFORCALL 	2 2
+	33	[116]	TFORLOOP 	4 -12	; to 22
+	34	[123]	SELF     	2 0 -9	; "GetBuffRewards"
+	35	[123]	CALL     	2 2 2
+	36	[124]	EQ       	1 2 -10	; - nil
+	37	[124]	JMP      	0 2	; to 40
+	38	[125]	LEN      	3 2
+	39	[125]	ADD      	1 1 3
+	40	[128]	RETURN   	1 2
+	41	[129]	RETURN   	0 1
+constants (10) for 000002CDCCF32EB0:
+	1	1
+	2	"pairs"
+	3	"MainDecorActivityDefinition"
+	4	"GM"
+	5	"ActivityManager"
+	6	"GetModel"
+	7	"CanAddScore"
+	8	"MainDecorNewActivityDefinition"
+	9	"GetBuffRewards"
+	10	nil
+locals (15) for 000002CDCCF32EB0:
+	0	self	1	42
+	1	number	2	42
+	2	(for generator)	5	18
+	3	(for state)	5	18
+	4	(for control)	5	18
+	5	activityType	6	16
+	6	_	6	16
+	7	activity	11	16
+	8	(for generator)	21	34
+	9	(for state)	21	34
+	10	(for control)	21	34
+	11	activityType	22	32
+	12	_	22	32
+	13	activity	27	32
+	14	buffRewards	36	42
+upvalues (1) for 000002CDCCF32EB0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:132,134> (16 instructions at 000002CDCCF338B0)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[133]	SELF     	1 0 -1	; "GetInnerType"
+	2	[133]	CALL     	1 2 2
+	3	[133]	GETTABUP 	2 0 -2	; _ENV "MainOrderType"
+	4	[133]	GETTABLE 	2 2 -3	; "CharacterIntimacyRandom"
+	5	[133]	EQ       	0 1 2
+	6	[133]	JMP      	0 7	; to 14
+	7	[133]	GETTABUP 	1 0 -4	; _ENV "GM"
+	8	[133]	GETTABLE 	1 1 -5	; "CharacterIntimacyModel"
+	9	[133]	SELF     	1 1 -6	; "IsOpen"
+	10	[133]	CALL     	1 2 2
+	11	[133]	NOT      	1 1
+	12	[133]	JMP      	0 2	; to 15
+	13	[133]	LOADBOOL 	1 0 1
+	14	[133]	LOADBOOL 	1 1 0
+	15	[133]	RETURN   	1 2
+	16	[134]	RETURN   	0 1
+constants (6) for 000002CDCCF338B0:
+	1	"GetInnerType"
+	2	"MainOrderType"
+	3	"CharacterIntimacyRandom"
+	4	"GM"
+	5	"CharacterIntimacyModel"
+	6	"IsOpen"
+locals (1) for 000002CDCCF338B0:
+	0	self	1	17
+upvalues (1) for 000002CDCCF338B0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:136,153> (36 instructions at 000002CDCCF32DB0)
+1 param, 14 slots, 1 upvalue, 9 locals, 14 constants, 0 functions
+	1	[137]	LOADK    	1 -1	; 0
+	2	[138]	GETTABLE 	2 0 -2	; "m_orderModel"
+	3	[138]	SELF     	2 2 -3	; "GetItemCodeConfigMap"
+	4	[138]	CALL     	2 2 2
+	5	[139]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	6	[139]	GETTABLE 	4 0 -5	; "m_requirements"
+	7	[139]	CALL     	3 2 4
+	8	[139]	JMP      	0 24	; to 33
+	9	[140]	GETTABLE 	8 2 7
+	10	[141]	EQ       	0 8 -6	; - nil
+	11	[141]	JMP      	0 10	; to 22
+	12	[142]	GETTABUP 	9 0 -7	; _ENV "GM"
+	13	[142]	GETTABLE 	9 9 -8	; "BIManager"
+	14	[142]	SELF     	9 9 -9	; "LogErrorInfo"
+	15	[142]	LOADK    	11 -10	; "cfg_err"
+	16	[142]	LOADK    	12 -11	; "no item code config "
+	17	[142]	MOVE     	13 7
+	18	[142]	CONCAT   	12 12 13
+	19	[142]	CALL     	9 4 1
+	20	[143]	LOADK    	9 -1	; 0
+	21	[143]	RETURN   	9 2
+	22	[145]	GETTABLE 	9 0 -12	; "m_bIsBaseline"
+	23	[145]	TEST     	9 0
+	24	[145]	JMP      	0 6	; to 31
+	25	[145]	GETTABLE 	9 8 -13	; "RecommendedPrice"
+	26	[145]	EQ       	1 9 -6	; - nil
+	27	[145]	JMP      	0 3	; to 31
+	28	[146]	GETTABLE 	9 8 -13	; "RecommendedPrice"
+	29	[146]	ADD      	1 1 9
+	30	[146]	JMP      	0 2	; to 33
+	31	[148]	GETTABLE 	9 8 -14	; "Price"
+	32	[148]	ADD      	1 1 9
+	33	[139]	TFORCALL 	3 2
+	34	[139]	TFORLOOP 	5 -26	; to 9
+	35	[152]	RETURN   	1 2
+	36	[153]	RETURN   	0 1
+constants (14) for 000002CDCCF32DB0:
+	1	0
+	2	"m_orderModel"
+	3	"GetItemCodeConfigMap"
+	4	"ipairs"
+	5	"m_requirements"
+	6	nil
+	7	"GM"
+	8	"BIManager"
+	9	"LogErrorInfo"
+	10	"cfg_err"
+	11	"no item code config "
+	12	"m_bIsBaseline"
+	13	"RecommendedPrice"
+	14	"Price"
+locals (9) for 000002CDCCF32DB0:
+	0	self	1	37
+	1	price	2	37
+	2	itemCodeConfigMap	5	37
+	3	(for generator)	8	35
+	4	(for state)	8	35
+	5	(for control)	8	35
+	6	_	9	33
+	7	itemCode	9	33
+	8	config	10	33
+upvalues (1) for 000002CDCCF32DB0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:156,163> (50 instructions at 000002CDCCF32E30)
+1 param, 9 slots, 1 upvalue, 2 locals, 18 constants, 0 functions
+	1	[157]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[157]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[157]	SELF     	1 1 -3	; "GetStartedAlbumActivity"
+	4	[157]	CALL     	1 2 2
+	5	[158]	EQ       	1 1 -4	; - nil
+	6	[158]	JMP      	0 18	; to 25
+	7	[158]	GETTABUP 	2 0 -5	; _ENV "Table"
+	8	[158]	GETTABLE 	2 2 -6	; "IsEmpty"
+	9	[158]	SELF     	3 1 -7	; "GetMainOrderScore2AlbumPack"
+	10	[158]	SELF     	5 0 -8	; "GetDiffScore"
+	11	[158]	CALL     	5 2 2
+	12	[158]	SELF     	6 0 -9	; "GetSlot"
+	13	[158]	CALL     	6 2 2
+	14	[158]	TEST     	6 1
+	15	[158]	JMP      	0 4	; to 20
+	16	[158]	LOADK    	6 -10	; "orderType"
+	17	[158]	SELF     	7 0 -11	; "GetInnerType"
+	18	[158]	CALL     	7 2 2
+	19	[158]	CONCAT   	6 6 7
+	20	[158]	LOADBOOL 	7 0 0
+	21	[158]	CALL     	3 5 0
+	22	[158]	CALL     	2 0 2
+	23	[158]	TEST     	2 0
+	24	[158]	JMP      	0 2	; to 27
+	25	[159]	LOADBOOL 	2 0 0
+	26	[159]	RETURN   	2 2
+	27	[162]	GETTABUP 	2 0 -1	; _ENV "GM"
+	28	[162]	GETTABLE 	2 2 -12	; "BuffManager"
+	29	[162]	SELF     	2 2 -13	; "IsBuffActiveByType"
+	30	[162]	GETTABUP 	4 0 -14	; _ENV "EBuffProperty"
+	31	[162]	GETTABLE 	4 4 -15	; "buff_album"
+	32	[162]	CALL     	2 3 2
+	33	[162]	TEST     	2 0
+	34	[162]	JMP      	0 14	; to 49
+	35	[162]	SELF     	2 0 -11	; "GetInnerType"
+	36	[162]	CALL     	2 2 2
+	37	[162]	GETTABUP 	3 0 -16	; _ENV "MainOrderType"
+	38	[162]	GETTABLE 	3 3 -17	; "TimedOrder"
+	39	[162]	EQ       	1 2 3
+	40	[162]	JMP      	0 6	; to 47
+	41	[162]	SELF     	2 0 -11	; "GetInnerType"
+	42	[162]	CALL     	2 2 2
+	43	[162]	GETTABUP 	3 0 -16	; _ENV "MainOrderType"
+	44	[162]	GETTABLE 	3 3 -18	; "Special"
+	45	[162]	EQ       	0 2 3
+	46	[162]	JMP      	0 1	; to 48
+	47	[162]	LOADBOOL 	2 0 1
+	48	[162]	LOADBOOL 	2 1 0
+	49	[162]	RETURN   	2 2
+	50	[163]	RETURN   	0 1
+constants (18) for 000002CDCCF32E30:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetStartedAlbumActivity"
+	4	nil
+	5	"Table"
+	6	"IsEmpty"
+	7	"GetMainOrderScore2AlbumPack"
+	8	"GetDiffScore"
+	9	"GetSlot"
+	10	"orderType"
+	11	"GetInnerType"
+	12	"BuffManager"
+	13	"IsBuffActiveByType"
+	14	"EBuffProperty"
+	15	"buff_album"
+	16	"MainOrderType"
+	17	"TimedOrder"
+	18	"Special"
+locals (2) for 000002CDCCF32E30:
+	0	self	1	51
+	1	albumModel	5	51
+upvalues (1) for 000002CDCCF32E30:
+	0	_ENV	0	0
+
+function <MainOrder.lua:165,318> (343 instructions at 000002CDCCF32F30)
+1 param, 27 slots, 1 upvalue, 36 locals, 69 constants, 0 functions
+	1	[168]	GETTABLE 	1 0 -1	; "m_state"
+	2	[168]	GETTABUP 	2 0 -2	; _ENV "OrderState"
+	3	[168]	GETTABLE 	2 2 -3	; "Finished"
+	4	[168]	EQ       	0 1 2
+	5	[168]	JMP      	0 5	; to 11
+	6	[169]	GETTABUP 	1 0 -4	; _ENV "Table"
+	7	[169]	GETTABLE 	1 1 -5	; "DeepCopy"
+	8	[169]	GETTABLE 	2 0 -6	; "m_cacheRewards"
+	9	[169]	TAILCALL 	1 2 0
+	10	[169]	RETURN   	1 0
+	11	[172]	SELF     	1 0 -7	; "GetInnerType"
+	12	[172]	CALL     	1 2 2
+	13	[174]	GETTABUP 	2 0 -8	; _ENV "MainOrderType"
+	14	[174]	GETTABLE 	2 2 -9	; "Special"
+	15	[174]	EQ       	0 1 2
+	16	[174]	JMP      	0 3	; to 20
+	17	[175]	GETTABUP 	2 0 -4	; _ENV "Table"
+	18	[175]	GETTABLE 	2 2 -10	; "Empty"
+	19	[175]	RETURN   	2 2
+	20	[178]	NEWTABLE 	2 0 0
+	21	[179]	SELF     	3 0 -11	; "GetPrice"
+	22	[179]	CALL     	3 2 2
+	23	[180]	SELF     	4 0 -12	; "GetDiffScore"
+	24	[180]	CALL     	4 2 2
+	25	[182]	GETTABUP 	5 0 -13	; _ENV "GM"
+	26	[182]	GETTABLE 	5 5 -14	; "ActivityManager"
+	27	[182]	SELF     	5 5 -15	; "GetStartedMainDecorActivity"
+	28	[182]	CALL     	5 2 3
+	29	[183]	TEST     	5 0
+	30	[183]	JMP      	0 26	; to 57
+	31	[183]	SELF     	7 5 -16	; "CanAddScore"
+	32	[183]	CALL     	7 2 2
+	33	[183]	TEST     	7 0
+	34	[183]	JMP      	0 22	; to 57
+	35	[184]	SELF     	7 5 -17	; "GetMainOrderCoinToEventToken"
+	36	[184]	MOVE     	9 3
+	37	[184]	MOVE     	10 4
+	38	[184]	CALL     	7 4 2
+	39	[185]	LT       	0 -18 7	; 0 -
+	40	[185]	JMP      	0 16	; to 57
+	41	[186]	GETTABUP 	8 0 -19	; _ENV "table"
+	42	[186]	GETTABLE 	8 8 -20	; "insert"
+	43	[186]	MOVE     	9 2
+	44	[186]	NEWTABLE 	10 0 3
+	45	[187]	GETTABUP 	11 0 -21	; _ENV "PROPERTY_TYPE"
+	46	[187]	GETTABLE 	12 6 -22	; "ActivityTokenPropertyType"
+	47	[187]	SETTABLE 	10 11 12
+	48	[188]	GETTABUP 	11 0 -23	; _ENV "PROPERTY_COUNT"
+	49	[188]	SETTABLE 	10 11 7
+	50	[189]	GETTABUP 	11 0 -24	; _ENV "PROPERTY_CRYPT"
+	51	[189]	GETTABUP 	12 0 -25	; _ENV "Crypt"
+	52	[189]	GETTABLE 	12 12 -26	; "CryptCurrency"
+	53	[189]	MOVE     	13 7
+	54	[189]	CALL     	12 2 2
+	55	[189]	SETTABLE 	10 11 12
+	56	[186]	CALL     	8 3 1
+	57	[196]	GETTABUP 	7 0 -13	; _ENV "GM"
+	58	[196]	GETTABLE 	7 7 -14	; "ActivityManager"
+	59	[196]	SELF     	7 7 -27	; "GetModel"
+	60	[196]	GETTABUP 	9 0 -28	; _ENV "ActivityType"
+	61	[196]	GETTABLE 	9 9 -29	; "FloatRace"
+	62	[196]	CALL     	7 3 2
+	63	[197]	TEST     	7 0
+	64	[197]	JMP      	0 14	; to 79
+	65	[197]	SELF     	8 7 -16	; "CanAddScore"
+	66	[197]	CALL     	8 2 2
+	67	[197]	TEST     	8 0
+	68	[197]	JMP      	0 10	; to 79
+	69	[198]	SELF     	8 7 -30	; "GetAddScoreByOrder"
+	70	[198]	MOVE     	10 0
+	71	[198]	CALL     	8 3 2
+	72	[199]	EQ       	1 8 -31	; - nil
+	73	[199]	JMP      	0 5	; to 79
+	74	[200]	GETTABUP 	9 0 -19	; _ENV "table"
+	75	[200]	GETTABLE 	9 9 -20	; "insert"
+	76	[200]	MOVE     	10 2
+	77	[200]	MOVE     	11 8
+	78	[200]	CALL     	9 3 1
+	79	[205]	LOADBOOL 	8 0 0
+	80	[206]	GETTABUP 	9 0 -8	; _ENV "MainOrderType"
+	81	[206]	GETTABLE 	9 9 -32	; "TimedOrder"
+	82	[206]	EQ       	0 1 9
+	83	[206]	JMP      	0 19	; to 103
+	84	[206]	GETTABLE 	9 0 -33	; "GetTimedOrderRewards"
+	85	[206]	EQ       	1 9 -31	; - nil
+	86	[206]	JMP      	0 16	; to 103
+	87	[207]	SELF     	9 0 -33	; "GetTimedOrderRewards"
+	88	[207]	CALL     	9 2 2
+	89	[208]	GETTABUP 	10 0 -34	; _ENV "ipairs"
+	90	[208]	MOVE     	11 9
+	91	[208]	CALL     	10 2 4
+	92	[208]	JMP      	0 8	; to 101
+	93	[209]	GETTABUP 	15 0 -35	; _ENV "AlbumActivityModel"
+	94	[209]	GETTABLE 	15 15 -36	; "IsCacheProperty"
+	95	[209]	GETTABUP 	16 0 -21	; _ENV "PROPERTY_TYPE"
+	96	[209]	GETTABLE 	16 14 16
+	97	[209]	CALL     	15 2 2
+	98	[209]	TEST     	15 0
+	99	[209]	JMP      	0 1	; to 101
+	100	[210]	LOADBOOL 	8 1 0
+	101	[208]	TFORCALL 	10 2
+	102	[208]	TFORLOOP 	12 -10	; to 93
+	103	[215]	TEST     	8 1
+	104	[215]	JMP      	0 46	; to 151
+	105	[216]	GETTABUP 	9 0 -13	; _ENV "GM"
+	106	[216]	GETTABLE 	9 9 -14	; "ActivityManager"
+	107	[216]	SELF     	9 9 -37	; "GetStartedAlbumActivity"
+	108	[216]	CALL     	9 2 2
+	109	[217]	TEST     	9 0
+	110	[217]	JMP      	0 40	; to 151
+	111	[217]	SELF     	10 9 -38	; "IsActivityOpen"
+	112	[217]	CALL     	10 2 2
+	113	[217]	TEST     	10 0
+	114	[217]	JMP      	0 36	; to 151
+	115	[218]	SELF     	10 9 -39	; "GetMainOrderScore2AlbumPack"
+	116	[218]	MOVE     	12 4
+	117	[218]	SELF     	13 0 -40	; "GetSlot"
+	118	[218]	CALL     	13 2 2
+	119	[218]	TEST     	13 1
+	120	[218]	JMP      	0 4	; to 125
+	121	[218]	LOADK    	13 -41	; "orderType"
+	122	[218]	SELF     	14 0 -7	; "GetInnerType"
+	123	[218]	CALL     	14 2 2
+	124	[218]	CONCAT   	13 13 14
+	125	[218]	LOADBOOL 	14 1 0
+	126	[218]	CALL     	10 5 2
+	127	[219]	GETTABUP 	11 0 -4	; _ENV "Table"
+	128	[219]	GETTABLE 	11 11 -5	; "DeepCopy"
+	129	[219]	MOVE     	12 10
+	130	[219]	CALL     	11 2 2
+	131	[220]	GETTABUP 	12 0 -4	; _ENV "Table"
+	132	[220]	GETTABLE 	12 12 -42	; "IsEmpty"
+	133	[220]	MOVE     	13 11
+	134	[220]	CALL     	12 2 2
+	135	[220]	TEST     	12 1
+	136	[220]	JMP      	0 14	; to 151
+	137	[221]	SELF     	12 0 -43	; "CanSupportAlbumBuff"
+	138	[221]	CALL     	12 2 2
+	139	[221]	TEST     	12 0
+	140	[221]	JMP      	0 5	; to 146
+	141	[223]	GETTABUP 	12 0 -23	; _ENV "PROPERTY_COUNT"
+	142	[223]	GETTABUP 	13 0 -23	; _ENV "PROPERTY_COUNT"
+	143	[223]	GETTABLE 	13 11 13
+	144	[223]	MUL      	13 13 -44	; - 2
+	145	[223]	SETTABLE 	11 12 13
+	146	[225]	GETTABUP 	12 0 -19	; _ENV "table"
+	147	[225]	GETTABLE 	12 12 -20	; "insert"
+	148	[225]	MOVE     	13 2
+	149	[225]	MOVE     	14 11
+	150	[225]	CALL     	12 3 1
+	151	[231]	GETTABUP 	9 0 -13	; _ENV "GM"
+	152	[231]	GETTABLE 	9 9 -14	; "ActivityManager"
+	153	[231]	SELF     	9 9 -45	; "GetStartedAvenueActivity"
+	154	[231]	CALL     	9 2 2
+	155	[232]	TEST     	9 0
+	156	[232]	JMP      	0 16	; to 173
+	157	[233]	SELF     	10 9 -30	; "GetAddScoreByOrder"
+	158	[233]	MOVE     	12 0
+	159	[233]	CALL     	10 3 2
+	160	[234]	LT       	0 -18 10	; 0 -
+	161	[234]	JMP      	0 11	; to 173
+	162	[235]	GETTABUP 	11 0 -19	; _ENV "table"
+	163	[235]	GETTABLE 	11 11 -20	; "insert"
+	164	[235]	MOVE     	12 2
+	165	[235]	NEWTABLE 	13 0 2
+	166	[236]	GETTABUP 	14 0 -21	; _ENV "PROPERTY_TYPE"
+	167	[236]	SELF     	15 9 -46	; "GetTokenPropertyType"
+	168	[236]	CALL     	15 2 2
+	169	[236]	SETTABLE 	13 14 15
+	170	[237]	GETTABUP 	14 0 -23	; _ENV "PROPERTY_COUNT"
+	171	[237]	SETTABLE 	13 14 10
+	172	[235]	CALL     	11 3 1
+	173	[243]	GETTABUP 	10 0 -13	; _ENV "GM"
+	174	[243]	GETTABLE 	10 10 -14	; "ActivityManager"
+	175	[243]	SELF     	10 10 -47	; "GetStartedUpwardActivity"
+	176	[243]	CALL     	10 2 2
+	177	[244]	TEST     	10 0
+	178	[244]	JMP      	0 10	; to 189
+	179	[245]	SELF     	11 10 -30	; "GetAddScoreByOrder"
+	180	[245]	MOVE     	13 0
+	181	[245]	CALL     	11 3 2
+	182	[246]	EQ       	1 11 -31	; - nil
+	183	[246]	JMP      	0 5	; to 189
+	184	[247]	GETTABUP 	12 0 -19	; _ENV "table"
+	185	[247]	GETTABLE 	12 12 -20	; "insert"
+	186	[247]	MOVE     	13 2
+	187	[247]	MOVE     	14 11
+	188	[247]	CALL     	12 3 1
+	189	[252]	GETTABUP 	11 0 -13	; _ENV "GM"
+	190	[252]	GETTABLE 	11 11 -14	; "ActivityManager"
+	191	[252]	SELF     	11 11 -48	; "GetStartedRoadActivity"
+	192	[252]	CALL     	11 2 2
+	193	[253]	TEST     	11 0
+	194	[253]	JMP      	0 16	; to 211
+	195	[254]	SELF     	12 11 -30	; "GetAddScoreByOrder"
+	196	[254]	MOVE     	14 0
+	197	[254]	CALL     	12 3 2
+	198	[255]	LT       	0 -18 12	; 0 -
+	199	[255]	JMP      	0 11	; to 211
+	200	[256]	GETTABUP 	13 0 -19	; _ENV "table"
+	201	[256]	GETTABLE 	13 13 -20	; "insert"
+	202	[256]	MOVE     	14 2
+	203	[256]	NEWTABLE 	15 0 2
+	204	[257]	GETTABUP 	16 0 -21	; _ENV "PROPERTY_TYPE"
+	205	[257]	SELF     	17 11 -46	; "GetTokenPropertyType"
+	206	[257]	CALL     	17 2 2
+	207	[257]	SETTABLE 	15 16 17
+	208	[258]	GETTABUP 	16 0 -23	; _ENV "PROPERTY_COUNT"
+	209	[258]	SETTABLE 	15 16 12
+	210	[256]	CALL     	13 3 1
+	211	[264]	GETTABUP 	12 0 -13	; _ENV "GM"
+	212	[264]	GETTABLE 	12 12 -14	; "ActivityManager"
+	213	[264]	SELF     	12 12 -49	; "GetStartedHitBricksActivity"
+	214	[264]	CALL     	12 2 2
+	215	[266]	TEST     	12 0
+	216	[266]	JMP      	0 13	; to 230
+	217	[266]	SELF     	13 12 -30	; "GetAddScoreByOrder"
+	218	[266]	MOVE     	15 0
+	219	[266]	CALL     	13 3 2
+	220	[266]	TEST     	13 0
+	221	[266]	JMP      	0 8	; to 230
+	222	[267]	SELF     	13 12 -30	; "GetAddScoreByOrder"
+	223	[267]	MOVE     	15 0
+	224	[267]	CALL     	13 3 2
+	225	[268]	GETTABUP 	14 0 -19	; _ENV "table"
+	226	[268]	GETTABLE 	14 14 -20	; "insert"
+	227	[268]	MOVE     	15 2
+	228	[268]	MOVE     	16 13
+	229	[268]	CALL     	14 3 1
+	230	[272]	GETTABUP 	13 0 -13	; _ENV "GM"
+	231	[272]	GETTABLE 	13 13 -14	; "ActivityManager"
+	232	[272]	SELF     	13 13 -50	; "GetStartedRingActivity"
+	233	[272]	CALL     	13 2 2
+	234	[273]	TEST     	13 0
+	235	[273]	JMP      	0 10	; to 246
+	236	[274]	SELF     	14 13 -30	; "GetAddScoreByOrder"
+	237	[274]	MOVE     	16 0
+	238	[274]	CALL     	14 3 2
+	239	[275]	TEST     	14 0
+	240	[275]	JMP      	0 5	; to 246
+	241	[276]	GETTABUP 	15 0 -19	; _ENV "table"
+	242	[276]	GETTABLE 	15 15 -20	; "insert"
+	243	[276]	MOVE     	16 2
+	244	[276]	MOVE     	17 14
+	245	[276]	CALL     	15 3 1
+	246	[281]	GETTABUP 	14 0 -13	; _ENV "GM"
+	247	[281]	GETTABLE 	14 14 -14	; "ActivityManager"
+	248	[281]	SELF     	14 14 -51	; "GetStartedComboActivity"
+	249	[281]	CALL     	14 2 2
+	250	[282]	TEST     	14 0
+	251	[282]	JMP      	0 10	; to 262
+	252	[283]	SELF     	15 14 -30	; "GetAddScoreByOrder"
+	253	[283]	MOVE     	17 0
+	254	[283]	CALL     	15 3 2
+	255	[284]	TEST     	15 0
+	256	[284]	JMP      	0 5	; to 262
+	257	[285]	GETTABUP 	16 0 -19	; _ENV "table"
+	258	[285]	GETTABLE 	16 16 -20	; "insert"
+	259	[285]	MOVE     	17 2
+	260	[285]	MOVE     	18 15
+	261	[285]	CALL     	16 3 1
+	262	[289]	GETTABUP 	15 0 -13	; _ENV "GM"
+	263	[289]	GETTABLE 	15 15 -52	; "ActivityModuleManager"
+	264	[289]	SELF     	15 15 -53	; "GetRewardsByOrder"
+	265	[289]	MOVE     	17 0
+	266	[289]	CALL     	15 3 2
+	267	[290]	GETTABUP 	16 0 -4	; _ENV "Table"
+	268	[290]	GETTABLE 	16 16 -54	; "ListAppend"
+	269	[290]	MOVE     	17 2
+	270	[290]	MOVE     	18 15
+	271	[290]	CALL     	16 3 1
+	272	[293]	GETTABUP 	16 0 -13	; _ENV "GM"
+	273	[293]	GETTABLE 	16 16 -14	; "ActivityManager"
+	274	[293]	SELF     	16 16 -27	; "GetModel"
+	275	[293]	GETTABUP 	18 0 -28	; _ENV "ActivityType"
+	276	[293]	GETTABLE 	18 18 -55	; "ChestCustomer"
+	277	[293]	CALL     	16 3 2
+	278	[294]	TEST     	16 0
+	279	[294]	JMP      	0 27	; to 307
+	280	[294]	SELF     	17 16 -56	; "IsChestCustomerOrder"
+	281	[294]	SELF     	19 0 -40	; "GetSlot"
+	282	[294]	CALL     	19 2 0
+	283	[294]	CALL     	17 0 2
+	284	[294]	TEST     	17 0
+	285	[294]	JMP      	0 21	; to 307
+	286	[295]	GETTABUP 	17 0 -19	; _ENV "table"
+	287	[295]	GETTABLE 	17 17 -20	; "insert"
+	288	[295]	MOVE     	18 2
+	289	[295]	NEWTABLE 	19 0 2
+	290	[297]	GETTABUP 	20 0 -21	; _ENV "PROPERTY_TYPE"
+	291	[297]	GETTABUP 	21 0 -57	; _ENV "ChestCustomerModel"
+	292	[297]	GETTABLE 	21 21 -58	; "RewardKey"
+	293	[297]	GETTABUP 	22 0 -59	; _ENV "tostring"
+	294	[297]	SELF     	23 0 -7	; "GetInnerType"
+	295	[297]	CALL     	23 2 0
+	296	[297]	CALL     	22 0 2
+	297	[297]	LOADK    	23 -60	; "_"
+	298	[297]	GETTABUP 	24 0 -59	; _ENV "tostring"
+	299	[297]	SELF     	25 0 -40	; "GetSlot"
+	300	[297]	CALL     	25 2 0
+	301	[297]	CALL     	24 0 2
+	302	[297]	CONCAT   	21 21 24
+	303	[297]	SETTABLE 	19 20 21
+	304	[298]	GETTABUP 	20 0 -23	; _ENV "PROPERTY_COUNT"
+	305	[298]	SETTABLE 	19 20 -61	; - 1
+	306	[295]	CALL     	17 3 1
+	307	[303]	SELF     	17 0 -62	; "_HasGoldReward"
+	308	[303]	CALL     	17 2 2
+	309	[303]	TEST     	17 0
+	310	[303]	JMP      	0 31	; to 342
+	311	[304]	LOADK    	17 -61	; 1
+	312	[305]	GETTABUP 	18 0 -13	; _ENV "GM"
+	313	[305]	GETTABLE 	18 18 -63	; "BuffManager"
+	314	[305]	SELF     	18 18 -64	; "IsBuffActiveByType"
+	315	[305]	GETTABUP 	20 0 -65	; _ENV "EBuffProperty"
+	316	[305]	GETTABLE 	20 20 -66	; "BuffGold"
+	317	[305]	CALL     	18 3 2
+	318	[305]	TEST     	18 0
+	319	[305]	JMP      	0 1	; to 321
+	320	[306]	LOADK    	17 -44	; 2
+	321	[309]	GETTABUP 	18 0 -67	; _ENV "math"
+	322	[309]	GETTABLE 	18 18 -68	; "ceil"
+	323	[309]	MUL      	19 3 17
+	324	[309]	CALL     	18 2 2
+	325	[310]	GETTABUP 	19 0 -19	; _ENV "table"
+	326	[310]	GETTABLE 	19 19 -20	; "insert"
+	327	[310]	MOVE     	20 2
+	328	[310]	NEWTABLE 	21 0 3
+	329	[311]	GETTABUP 	22 0 -21	; _ENV "PROPERTY_TYPE"
+	330	[311]	SELF     	23 0 -69	; "GetFirstRewardPropertyType"
+	331	[311]	CALL     	23 2 2
+	332	[311]	SETTABLE 	21 22 23
+	333	[312]	GETTABUP 	22 0 -23	; _ENV "PROPERTY_COUNT"
+	334	[312]	SETTABLE 	21 22 18
+	335	[313]	GETTABUP 	22 0 -24	; _ENV "PROPERTY_CRYPT"
+	336	[313]	GETTABUP 	23 0 -25	; _ENV "Crypt"
+	337	[313]	GETTABLE 	23 23 -26	; "CryptCurrency"
+	338	[313]	MOVE     	24 18
+	339	[313]	CALL     	23 2 2
+	340	[313]	SETTABLE 	21 22 23
+	341	[310]	CALL     	19 3 1
+	342	[317]	RETURN   	2 2
+	343	[318]	RETURN   	0 1
+constants (69) for 000002CDCCF32F30:
+	1	"m_state"
+	2	"OrderState"
+	3	"Finished"
+	4	"Table"
+	5	"DeepCopy"
+	6	"m_cacheRewards"
+	7	"GetInnerType"
+	8	"MainOrderType"
+	9	"Special"
+	10	"Empty"
+	11	"GetPrice"
+	12	"GetDiffScore"
+	13	"GM"
+	14	"ActivityManager"
+	15	"GetStartedMainDecorActivity"
+	16	"CanAddScore"
+	17	"GetMainOrderCoinToEventToken"
+	18	0
+	19	"table"
+	20	"insert"
+	21	"PROPERTY_TYPE"
+	22	"ActivityTokenPropertyType"
+	23	"PROPERTY_COUNT"
+	24	"PROPERTY_CRYPT"
+	25	"Crypt"
+	26	"CryptCurrency"
+	27	"GetModel"
+	28	"ActivityType"
+	29	"FloatRace"
+	30	"GetAddScoreByOrder"
+	31	nil
+	32	"TimedOrder"
+	33	"GetTimedOrderRewards"
+	34	"ipairs"
+	35	"AlbumActivityModel"
+	36	"IsCacheProperty"
+	37	"GetStartedAlbumActivity"
+	38	"IsActivityOpen"
+	39	"GetMainOrderScore2AlbumPack"
+	40	"GetSlot"
+	41	"orderType"
+	42	"IsEmpty"
+	43	"CanSupportAlbumBuff"
+	44	2
+	45	"GetStartedAvenueActivity"
+	46	"GetTokenPropertyType"
+	47	"GetStartedUpwardActivity"
+	48	"GetStartedRoadActivity"
+	49	"GetStartedHitBricksActivity"
+	50	"GetStartedRingActivity"
+	51	"GetStartedComboActivity"
+	52	"ActivityModuleManager"
+	53	"GetRewardsByOrder"
+	54	"ListAppend"
+	55	"ChestCustomer"
+	56	"IsChestCustomerOrder"
+	57	"ChestCustomerModel"
+	58	"RewardKey"
+	59	"tostring"
+	60	"_"
+	61	1
+	62	"_HasGoldReward"
+	63	"BuffManager"
+	64	"IsBuffActiveByType"
+	65	"EBuffProperty"
+	66	"BuffGold"
+	67	"math"
+	68	"ceil"
+	69	"GetFirstRewardPropertyType"
+locals (36) for 000002CDCCF32F30:
+	0	self	1	344
+	1	type	13	344
+	2	rewards	21	344
+	3	price	23	344
+	4	diffScore	25	344
+	5	mainDecorActivity	29	344
+	6	mainDecorActivityDefinition	29	344
+	7	tokenNum	39	57
+	8	floatRaceModel	63	344
+	9	score	72	79
+	10	skipAlbumReward	80	344
+	11	timedOrderRewards	89	103
+	12	(for generator)	92	103
+	13	(for state)	92	103
+	14	(for control)	92	103
+	15	_	93	101
+	16	reward	93	101
+	17	AlbumModel	109	151
+	18	albumReward	127	151
+	19	tempalbumReward	131	151
+	20	avenueModel	155	344
+	21	avenueScore	160	173
+	22	upwardModel	177	344
+	23	upwardScore	182	189
+	24	roadModel	193	344
+	25	roadScore	198	211
+	26	hitBricksModel	215	344
+	27	hammerReward	225	230
+	28	ringModel	234	344
+	29	ringReward	239	246
+	30	comboModel	250	344
+	31	comboReward	255	262
+	32	activityModuleRewards	267	344
+	33	chestCustomModel	278	344
+	34	nMultiple	312	342
+	35	count	325	342
+upvalues (1) for 000002CDCCF32F30:
+	0	_ENV	0	0
+
+function <MainOrder.lua:321,337> (47 instructions at 000002CDCCF32CB0)
+1 param, 13 slots, 1 upvalue, 10 locals, 10 constants, 0 functions
+	1	[322]	SELF     	1 0 -1	; "GetRewards"
+	2	[322]	CALL     	1 2 2
+	3	[323]	NEWTABLE 	2 0 0
+	4	[323]	NEWTABLE 	3 0 0
+	5	[324]	GETTABUP 	4 0 -2	; _ENV "ipairs"
+	6	[324]	MOVE     	5 1
+	7	[324]	CALL     	4 2 4
+	8	[324]	JMP      	0 33	; to 42
+	9	[325]	GETTABUP 	9 0 -3	; _ENV "StringUtil"
+	10	[325]	GETTABLE 	9 9 -4	; "StartWith"
+	11	[325]	GETTABUP 	10 0 -5	; _ENV "PROPERTY_TYPE"
+	12	[325]	GETTABLE 	10 8 10
+	13	[325]	GETTABUP 	11 0 -6	; _ENV "ChestCustomerModel"
+	14	[325]	GETTABLE 	11 11 -7	; "RewardKey"
+	15	[325]	CALL     	9 3 2
+	16	[326]	TEST     	9 1
+	17	[326]	JMP      	0 6	; to 24
+	18	[327]	GETTABUP 	10 0 -8	; _ENV "table"
+	19	[327]	GETTABLE 	10 10 -9	; "insert"
+	20	[327]	MOVE     	11 2
+	21	[327]	MOVE     	12 8
+	22	[327]	CALL     	10 3 1
+	23	[327]	JMP      	0 18	; to 42
+	24	[328]	TEST     	9 0
+	25	[328]	JMP      	0 16	; to 42
+	26	[329]	GETTABUP 	10 0 -6	; _ENV "ChestCustomerModel"
+	27	[329]	GETTABLE 	10 10 -7	; "RewardKey"
+	28	[329]	GETTABLE 	10 3 10
+	29	[329]	EQ       	0 10 -10	; - nil
+	30	[329]	JMP      	0 4	; to 35
+	31	[330]	GETTABUP 	10 0 -6	; _ENV "ChestCustomerModel"
+	32	[330]	GETTABLE 	10 10 -7	; "RewardKey"
+	33	[330]	NEWTABLE 	11 0 0
+	34	[330]	SETTABLE 	3 10 11
+	35	[332]	GETTABUP 	10 0 -8	; _ENV "table"
+	36	[332]	GETTABLE 	10 10 -9	; "insert"
+	37	[332]	GETTABUP 	11 0 -6	; _ENV "ChestCustomerModel"
+	38	[332]	GETTABLE 	11 11 -7	; "RewardKey"
+	39	[332]	GETTABLE 	11 3 11
+	40	[332]	MOVE     	12 8
+	41	[332]	CALL     	10 3 1
+	42	[324]	TFORCALL 	4 2
+	43	[324]	TFORLOOP 	6 -35	; to 9
+	44	[336]	MOVE     	4 2
+	45	[336]	MOVE     	5 3
+	46	[336]	RETURN   	4 3
+	47	[337]	RETURN   	0 1
+constants (10) for 000002CDCCF32CB0:
+	1	"GetRewards"
+	2	"ipairs"
+	3	"StringUtil"
+	4	"StartWith"
+	5	"PROPERTY_TYPE"
+	6	"ChestCustomerModel"
+	7	"RewardKey"
+	8	"table"
+	9	"insert"
+	10	nil
+locals (10) for 000002CDCCF32CB0:
+	0	self	1	48
+	1	rewards	3	48
+	2	targetRewards	5	48
+	3	otherMapReward	5	48
+	4	(for generator)	8	44
+	5	(for state)	8	44
+	6	(for control)	8	44
+	7	_	9	42
+	8	reward	9	42
+	9	isChestCustomReward	16	42
+upvalues (1) for 000002CDCCF32CB0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:339,342> (12 instructions at 000002CDCCF33930)
+1 param, 4 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[341]	SELF     	1 0 -1	; "_HasGoldReward"
+	2	[341]	CALL     	1 2 2
+	3	[341]	TEST     	1 0
+	4	[341]	JMP      	0 6	; to 11
+	5	[341]	GETTABUP 	1 0 -2	; _ENV "GM"
+	6	[341]	GETTABLE 	1 1 -3	; "BuffManager"
+	7	[341]	SELF     	1 1 -4	; "IsBuffActiveByType"
+	8	[341]	GETTABUP 	3 0 -5	; _ENV "EBuffProperty"
+	9	[341]	GETTABLE 	3 3 -6	; "BuffGold"
+	10	[341]	CALL     	1 3 2
+	11	[341]	RETURN   	1 2
+	12	[342]	RETURN   	0 1
+constants (6) for 000002CDCCF33930:
+	1	"_HasGoldReward"
+	2	"GM"
+	3	"BuffManager"
+	4	"IsBuffActiveByType"
+	5	"EBuffProperty"
+	6	"BuffGold"
+locals (1) for 000002CDCCF33930:
+	0	self	1	13
+upvalues (1) for 000002CDCCF33930:
+	0	_ENV	0	0
+
+function <MainOrder.lua:344,346> (3 instructions at 000002CDCCF337B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[345]	GETTABLE 	1 0 -1	; "m_giftRewards"
+	2	[345]	RETURN   	1 2
+	3	[346]	RETURN   	0 1
+constants (1) for 000002CDCCF337B0:
+	1	"m_giftRewards"
+locals (1) for 000002CDCCF337B0:
+	0	self	1	4
+upvalues (0) for 000002CDCCF337B0:
+
+function <MainOrder.lua:348,350> (7 instructions at 000002CDCCF32C30)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[349]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[349]	GETTABLE 	1 1 -2	; "BuffManager"
+	3	[349]	SELF     	1 1 -3	; "GetBuffRewards"
+	4	[349]	MOVE     	3 0
+	5	[349]	TAILCALL 	1 3 0
+	6	[349]	RETURN   	1 0
+	7	[350]	RETURN   	0 1
+constants (3) for 000002CDCCF32C30:
+	1	"GM"
+	2	"BuffManager"
+	3	"GetBuffRewards"
+locals (1) for 000002CDCCF32C30:
+	0	self	1	8
+upvalues (1) for 000002CDCCF32C30:
+	0	_ENV	0	0
+
+function <MainOrder.lua:352,354> (7 instructions at 000002CDCCF33A30)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[353]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[353]	GETTABLE 	1 1 -2	; "BuffManager"
+	3	[353]	SELF     	1 1 -3	; "GetSupportBuffId"
+	4	[353]	MOVE     	3 0
+	5	[353]	TAILCALL 	1 3 0
+	6	[353]	RETURN   	1 0
+	7	[354]	RETURN   	0 1
+constants (3) for 000002CDCCF33A30:
+	1	"GM"
+	2	"BuffManager"
+	3	"GetSupportBuffId"
+locals (1) for 000002CDCCF33A30:
+	0	self	1	8
+upvalues (1) for 000002CDCCF33A30:
+	0	_ENV	0	0
+
+function <MainOrder.lua:356,359> (11 instructions at 000002CDCCF330B0)
+1 param, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[357]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[357]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[357]	SELF     	1 1 -3	; "GetModel"
+	4	[357]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[357]	GETTABLE 	3 3 -5	; "CookingFrenzy"
+	6	[357]	CALL     	1 3 2
+	7	[358]	SELF     	2 1 -6	; "GetCurBuffConifgByOrder"
+	8	[358]	MOVE     	4 0
+	9	[358]	TAILCALL 	2 3 0
+	10	[358]	RETURN   	2 0
+	11	[359]	RETURN   	0 1
+constants (6) for 000002CDCCF330B0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"CookingFrenzy"
+	6	"GetCurBuffConifgByOrder"
+locals (2) for 000002CDCCF330B0:
+	0	self	1	12
+	1	model	7	12
+upvalues (1) for 000002CDCCF330B0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:361,369> (22 instructions at 000002CDCCF33430)
+1 param, 7 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[363]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[363]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[363]	SELF     	1 1 -3	; "GetModel"
+	4	[363]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[363]	GETTABLE 	3 3 -5	; "CookingFrenzy"
+	6	[363]	CALL     	1 3 2
+	7	[364]	LOADNIL  	2 0
+	8	[365]	SELF     	3 1 -6	; "GetCurBuffConifgByOrder"
+	9	[365]	MOVE     	5 0
+	10	[365]	CALL     	3 3 2
+	11	[365]	TEST     	3 0
+	12	[365]	JMP      	0 4	; to 17
+	13	[366]	SELF     	3 1 -6	; "GetCurBuffConifgByOrder"
+	14	[366]	MOVE     	5 0
+	15	[366]	CALL     	3 3 2
+	16	[366]	GETTABLE 	2 3 -7	; "buff_id"
+	17	[368]	MOVE     	3 2
+	18	[368]	SELF     	4 1 -8	; "GetBIRewardByOrder"
+	19	[368]	MOVE     	6 0
+	20	[368]	CALL     	4 3 0
+	21	[368]	RETURN   	3 0
+	22	[369]	RETURN   	0 1
+constants (8) for 000002CDCCF33430:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"CookingFrenzy"
+	6	"GetCurBuffConifgByOrder"
+	7	"buff_id"
+	8	"GetBIRewardByOrder"
+locals (3) for 000002CDCCF33430:
+	0	self	1	23
+	1	model	7	23
+	2	buffID	8	23
+upvalues (1) for 000002CDCCF33430:
+	0	_ENV	0	0
+
+function <MainOrder.lua:372,374> (2 instructions at 000002CDCCF33130)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[373]	SETTABLE 	0 -1 1	; "m_bSupportSmile" -
+	2	[374]	RETURN   	0 1
+constants (1) for 000002CDCCF33130:
+	1	"m_bSupportSmile"
+locals (2) for 000002CDCCF33130:
+	0	self	1	3
+	1	score	1	3
+upvalues (0) for 000002CDCCF33130:
+
+function <MainOrder.lua:376,383> (18 instructions at 000002CDCCF32BB0)
+1 param, 5 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[378]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[378]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[378]	SELF     	1 1 -3	; "GetModel"
+	4	[378]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[378]	GETTABLE 	3 3 -5	; "OrderBoost"
+	6	[378]	CALL     	1 3 2
+	7	[379]	SELF     	2 1 -6	; "GetAddOrderBoostScoreByOrder"
+	8	[379]	MOVE     	4 0
+	9	[379]	CALL     	2 3 2
+	10	[379]	LT       	0 -7 2	; 0 -
+	11	[379]	JMP      	0 4	; to 16
+	12	[380]	SELF     	2 1 -6	; "GetAddOrderBoostScoreByOrder"
+	13	[380]	MOVE     	4 0
+	14	[380]	TAILCALL 	2 3 0
+	15	[380]	RETURN   	2 0
+	16	[382]	GETTABLE 	2 0 -8	; "m_bSupportSmile"
+	17	[382]	RETURN   	2 2
+	18	[383]	RETURN   	0 1
+constants (8) for 000002CDCCF32BB0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"OrderBoost"
+	6	"GetAddOrderBoostScoreByOrder"
+	7	0
+	8	"m_bSupportSmile"
+locals (2) for 000002CDCCF32BB0:
+	0	self	1	19
+	1	model	7	19
+upvalues (1) for 000002CDCCF32BB0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:385,392> (20 instructions at 000002CDCCF33530)
+1 param, 4 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[387]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[387]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[387]	SELF     	1 1 -3	; "GetModel"
+	4	[387]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[387]	GETTABLE 	3 3 -5	; "OrderBoost"
+	6	[387]	CALL     	1 3 2
+	7	[388]	EQ       	0 1 -6	; - nil
+	8	[388]	JMP      	0 2	; to 11
+	9	[389]	LOADBOOL 	2 0 0
+	10	[389]	RETURN   	2 2
+	11	[391]	SELF     	2 1 -7	; "GetLogicType"
+	12	[391]	CALL     	2 2 2
+	13	[391]	GETTABUP 	3 0 -8	; _ENV "EOrderBoostType"
+	14	[391]	GETTABLE 	3 3 -9	; "Super"
+	15	[391]	EQ       	1 2 3
+	16	[391]	JMP      	0 1	; to 18
+	17	[391]	LOADBOOL 	2 0 1
+	18	[391]	LOADBOOL 	2 1 0
+	19	[391]	RETURN   	2 2
+	20	[392]	RETURN   	0 1
+constants (9) for 000002CDCCF33530:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"OrderBoost"
+	6	nil
+	7	"GetLogicType"
+	8	"EOrderBoostType"
+	9	"Super"
+locals (2) for 000002CDCCF33530:
+	0	self	1	21
+	1	model	7	21
+upvalues (1) for 000002CDCCF33530:
+	0	_ENV	0	0
+
+function <MainOrder.lua:394,400> (16 instructions at 000002CDCCF32D30)
+1 param, 4 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[395]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[395]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[395]	SELF     	1 1 -3	; "GetModel"
+	4	[395]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[395]	GETTABLE 	3 3 -5	; "OrderBoost"
+	6	[395]	CALL     	1 3 2
+	7	[396]	SELF     	2 0 -6	; "GetSupportOrderBoost"
+	8	[396]	CALL     	2 2 2
+	9	[396]	TEST     	2 0
+	10	[396]	JMP      	0 3	; to 14
+	11	[397]	SELF     	2 1 -7	; "GetFinishRound"
+	12	[397]	TAILCALL 	2 2 0
+	13	[397]	RETURN   	2 0
+	14	[399]	LOADNIL  	2 0
+	15	[399]	RETURN   	2 2
+	16	[400]	RETURN   	0 1
+constants (7) for 000002CDCCF32D30:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"OrderBoost"
+	6	"GetSupportOrderBoost"
+	7	"GetFinishRound"
+locals (2) for 000002CDCCF32D30:
+	0	self	1	17
+	1	model	7	17
+upvalues (1) for 000002CDCCF32D30:
+	0	_ENV	0	0
+
+function <MainOrder.lua:402,405> (18 instructions at 000002CDCCF33830)
+1 param, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[403]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[403]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[403]	SELF     	1 1 -3	; "GetStartedButterflyActivity"
+	4	[403]	CALL     	1 2 2
+	5	[404]	TEST     	1 0
+	6	[404]	JMP      	0 6	; to 13
+	7	[404]	SELF     	2 1 -4	; "GetButterflySlot"
+	8	[404]	CALL     	2 2 2
+	9	[404]	SELF     	3 0 -5	; "GetSlot"
+	10	[404]	CALL     	3 2 2
+	11	[404]	EQ       	1 2 3
+	12	[404]	JMP      	0 3	; to 16
+	13	[404]	LOADBOOL 	2 0 0
+	14	[404]	JMP      	0 2	; to 17
+	15	[404]	LOADBOOL 	2 0 1
+	16	[404]	LOADBOOL 	2 1 0
+	17	[404]	RETURN   	2 2
+	18	[405]	RETURN   	0 1
+constants (5) for 000002CDCCF33830:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetStartedButterflyActivity"
+	4	"GetButterflySlot"
+	5	"GetSlot"
+locals (2) for 000002CDCCF33830:
+	0	self	1	19
+	1	model	5	19
+upvalues (1) for 000002CDCCF33830:
+	0	_ENV	0	0
+
+function <MainOrder.lua:408,416> (23 instructions at 000002CDCCF331B0)
+1 param, 4 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[409]	SELF     	1 0 -1	; "GetInnerType"
+	2	[409]	CALL     	1 2 2
+	3	[409]	GETTABUP 	2 0 -2	; _ENV "MainOrderType"
+	4	[409]	GETTABLE 	2 2 -3	; "Special"
+	5	[409]	EQ       	1 1 2
+	6	[409]	JMP      	0 13	; to 20
+	7	[410]	GETTABUP 	1 0 -4	; _ENV "GM"
+	8	[410]	GETTABLE 	1 1 -5	; "ActivityManager"
+	9	[410]	SELF     	1 1 -6	; "GetModel"
+	10	[410]	GETTABUP 	3 0 -7	; _ENV "ActivityType"
+	11	[410]	GETTABLE 	3 3 -8	; "BakeOut"
+	12	[410]	CALL     	1 3 2
+	13	[410]	SELF     	1 1 -9	; "CanAcquireToken"
+	14	[410]	CALL     	1 2 2
+	15	[411]	TEST     	1 0
+	16	[411]	JMP      	0 3	; to 20
+	17	[412]	GETTABUP 	1 0 -10	; _ENV "EPropertyType"
+	18	[412]	GETTABLE 	1 1 -11	; "BakeOutToken"
+	19	[412]	RETURN   	1 2
+	20	[415]	GETTABUP 	1 0 -10	; _ENV "EPropertyType"
+	21	[415]	GETTABLE 	1 1 -12	; "Gold"
+	22	[415]	RETURN   	1 2
+	23	[416]	RETURN   	0 1
+constants (12) for 000002CDCCF331B0:
+	1	"GetInnerType"
+	2	"MainOrderType"
+	3	"Special"
+	4	"GM"
+	5	"ActivityManager"
+	6	"GetModel"
+	7	"ActivityType"
+	8	"BakeOut"
+	9	"CanAcquireToken"
+	10	"EPropertyType"
+	11	"BakeOutToken"
+	12	"Gold"
+locals (1) for 000002CDCCF331B0:
+	0	self	1	24
+upvalues (1) for 000002CDCCF331B0:
+	0	_ENV	0	0
+
+function <MainOrder.lua:419,429> (23 instructions at 000002CDCCF33230)
+2 params, 7 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[420]	LOADNIL  	2 0
+	2	[421]	SELF     	3 0 -1	; "GetInnerType"
+	3	[421]	CALL     	3 2 2
+	4	[421]	GETTABUP 	4 0 -2	; _ENV "MainOrderType"
+	5	[421]	GETTABLE 	4 4 -3	; "Special"
+	6	[421]	EQ       	0 3 4
+	7	[421]	JMP      	0 7	; to 15
+	8	[422]	GETTABUP 	3 0 -4	; _ENV "GM"
+	9	[422]	GETTABLE 	3 3 -5	; "MainBoardModel"
+	10	[422]	SELF     	3 3 -6	; "GetSpecialOrderConfig"
+	11	[422]	MOVE     	5 0
+	12	[422]	CALL     	3 3 2
+	13	[423]	GETTABLE 	2 3 -7	; "Rewards"
+	14	[423]	JMP      	0 3	; to 18
+	15	[425]	SELF     	3 0 -8	; "GetRewards"
+	16	[425]	CALL     	3 2 2
+	17	[425]	MOVE     	2 3
+	18	[428]	SELF     	3 0 -9	; "_CalculateScore"
+	19	[428]	MOVE     	5 2
+	20	[428]	MOVE     	6 1
+	21	[428]	TAILCALL 	3 4 0
+	22	[428]	RETURN   	3 0
+	23	[429]	RETURN   	0 1
+constants (9) for 000002CDCCF33230:
+	1	"GetInnerType"
+	2	"MainOrderType"
+	3	"Special"
+	4	"GM"
+	5	"MainBoardModel"
+	6	"GetSpecialOrderConfig"
+	7	"Rewards"
+	8	"GetRewards"
+	9	"_CalculateScore"
+locals (4) for 000002CDCCF33230:
+	0	self	1	24
+	1	includeGold	1	24
+	2	rewards	2	24
+	3	orderConfig	13	14
+upvalues (1) for 000002CDCCF33230:
+	0	_ENV	0	0
+
+function <MainOrder.lua:431,452> (37 instructions at 000002CDCCF33630)
+1 param, 15 slots, 1 upvalue, 10 locals, 15 constants, 0 functions
+	1	[432]	LOADK    	1 -1	; 0
+	2	[433]	SELF     	2 0 -2	; "GetInnerType"
+	3	[433]	CALL     	2 2 2
+	4	[435]	GETTABUP 	3 0 -3	; _ENV "MainOrderType"
+	5	[435]	GETTABLE 	3 3 -4	; "Special"
+	6	[435]	EQ       	0 2 3
+	7	[435]	JMP      	0 1	; to 9
+	8	[436]	RETURN   	1 2
+	9	[438]	GETTABLE 	3 0 -5	; "m_orderModel"
+	10	[438]	SELF     	3 3 -6	; "GetItemCodeConfigMap"
+	11	[438]	CALL     	3 2 2
+	12	[439]	GETTABUP 	4 0 -7	; _ENV "ipairs"
+	13	[439]	GETTABLE 	5 0 -8	; "m_requirements"
+	14	[439]	CALL     	4 2 4
+	15	[439]	JMP      	0 18	; to 34
+	16	[440]	GETTABLE 	9 3 8
+	17	[441]	EQ       	0 9 -9	; - nil
+	18	[441]	JMP      	0 10	; to 29
+	19	[442]	GETTABUP 	10 0 -10	; _ENV "GM"
+	20	[442]	GETTABLE 	10 10 -11	; "BIManager"
+	21	[442]	SELF     	10 10 -12	; "LogErrorInfo"
+	22	[442]	LOADK    	12 -13	; "cfg_err"
+	23	[442]	LOADK    	13 -14	; "no item code config "
+	24	[442]	MOVE     	14 8
+	25	[442]	CONCAT   	13 13 14
+	26	[442]	CALL     	10 4 1
+	27	[443]	LOADK    	10 -1	; 0
+	28	[443]	RETURN   	10 2
+	29	[446]	GETTABLE 	10 9 -15	; "DiffScore"
+	30	[446]	EQ       	1 10 -9	; - nil
+	31	[446]	JMP      	0 2	; to 34
+	32	[447]	GETTABLE 	10 9 -15	; "DiffScore"
+	33	[447]	ADD      	1 1 10
+	34	[439]	TFORCALL 	4 2
+	35	[439]	TFORLOOP 	6 -20	; to 16
+	36	[451]	RETURN   	1 2
+	37	[452]	RETURN   	0 1
+constants (15) for 000002CDCCF33630:
+	1	0
+	2	"GetInnerType"
+	3	"MainOrderType"
+	4	"Special"
+	5	"m_orderModel"
+	6	"GetItemCodeConfigMap"
+	7	"ipairs"
+	8	"m_requirements"
+	9	nil
+	10	"GM"
+	11	"BIManager"
+	12	"LogErrorInfo"
+	13	"cfg_err"
+	14	"no item code config "
+	15	"DiffScore"
+locals (10) for 000002CDCCF33630:
+	0	self	1	38
+	1	score	2	38
+	2	type	4	38
+	3	itemCodeConfigMap	12	38
+	4	(for generator)	15	36
+	5	(for state)	15	36
+	6	(for control)	15	36
+	7	_	16	34
+	8	itemCode	16	34
+	9	config	17	34
+upvalues (1) for 000002CDCCF33630:
+	0	_ENV	0	0
+
+function <MainOrder.lua:454,474> (36 instructions at 000002CDCCF33330)
+1 param, 16 slots, 1 upvalue, 11 locals, 13 constants, 0 functions
+	1	[455]	LOADK    	1 -1	; ""
+	2	[456]	LOADK    	2 -2	; 0
+	3	[457]	SELF     	3 0 -3	; "GetInnerType"
+	4	[457]	CALL     	3 2 2
+	5	[459]	GETTABUP 	4 0 -4	; _ENV "MainOrderType"
+	6	[459]	GETTABLE 	4 4 -5	; "Special"
+	7	[459]	EQ       	0 3 4
+	8	[459]	JMP      	0 1	; to 10
+	9	[460]	RETURN   	2 2
+	10	[462]	GETTABLE 	4 0 -6	; "m_orderModel"
+	11	[462]	SELF     	4 4 -7	; "GetItemCodeConfigMap"
+	12	[462]	CALL     	4 2 2
+	13	[463]	GETTABUP 	5 0 -8	; _ENV "ipairs"
+	14	[463]	GETTABLE 	6 0 -9	; "m_requirements"
+	15	[463]	CALL     	5 2 4
+	16	[463]	JMP      	0 14	; to 31
+	17	[464]	GETTABLE 	10 4 9
+	18	[466]	EQ       	1 10 -10	; - nil
+	19	[466]	JMP      	0 11	; to 31
+	20	[466]	GETTABLE 	11 10 -11	; "DiffScore"
+	21	[466]	EQ       	1 11 -10	; - nil
+	22	[466]	JMP      	0 8	; to 31
+	23	[467]	MOVE     	11 1
+	24	[467]	MOVE     	12 9
+	25	[467]	LOADK    	13 -12	; ":"
+	26	[467]	GETTABLE 	14 10 -11	; "DiffScore"
+	27	[467]	LOADK    	15 -13	; ","
+	28	[467]	CONCAT   	1 11 15
+	29	[468]	GETTABLE 	11 10 -11	; "DiffScore"
+	30	[468]	ADD      	2 2 11
+	31	[463]	TFORCALL 	5 2
+	32	[463]	TFORLOOP 	7 -16	; to 17
+	33	[473]	MOVE     	5 1
+	34	[473]	MOVE     	6 2
+	35	[473]	RETURN   	5 3
+	36	[474]	RETURN   	0 1
+constants (13) for 000002CDCCF33330:
+	1	""
+	2	0
+	3	"GetInnerType"
+	4	"MainOrderType"
+	5	"Special"
+	6	"m_orderModel"
+	7	"GetItemCodeConfigMap"
+	8	"ipairs"
+	9	"m_requirements"
+	10	nil
+	11	"DiffScore"
+	12	":"
+	13	","
+locals (11) for 000002CDCCF33330:
+	0	self	1	37
+	1	testScore	2	37
+	2	score	3	37
+	3	type	5	37
+	4	itemCodeConfigMap	13	37
+	5	(for generator)	16	33
+	6	(for state)	16	33
+	7	(for control)	16	33
+	8	_	17	31
+	9	itemCode	17	31
+	10	config	18	31
+upvalues (1) for 000002CDCCF33330:
+	0	_ENV	0	0
+
+function <MainOrder.lua:477,479> (3 instructions at 000002CDCCF339B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[478]	GETTABLE 	1 0 -1	; "m_bIsLucky"
+	2	[478]	RETURN   	1 2
+	3	[479]	RETURN   	0 1
+constants (1) for 000002CDCCF339B0:
+	1	"m_bIsLucky"
+locals (1) for 000002CDCCF339B0:
+	0	self	1	4
+upvalues (0) for 000002CDCCF339B0:
+
+function <MainOrder.lua:482,484> (3 instructions at 000002CDCCF333B0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[483]	GETTABLE 	1 0 -1	; "m_bIsBaseline"
+	2	[483]	RETURN   	1 2
+	3	[484]	RETURN   	0 1
+constants (1) for 000002CDCCF333B0:
+	1	"m_bIsBaseline"
+locals (1) for 000002CDCCF333B0:
+	0	self	1	4
+upvalues (0) for 000002CDCCF333B0:
+
+function <MainOrder.lua:487,489> (3 instructions at 000002CDCCF33AB0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[488]	GETTABLE 	1 0 -1	; "m_diffRange"
+	2	[488]	RETURN   	1 2
+	3	[489]	RETURN   	0 1
+constants (1) for 000002CDCCF33AB0:
+	1	"m_diffRange"
+locals (1) for 000002CDCCF33AB0:
+	0	self	1	4
+upvalues (0) for 000002CDCCF33AB0:

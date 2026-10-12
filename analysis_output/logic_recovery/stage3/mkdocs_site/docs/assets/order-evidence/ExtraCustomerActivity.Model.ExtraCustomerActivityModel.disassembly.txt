@@ -1,0 +1,1767 @@
+
+main <ExtraCustomerActivityModel.lua:0,0> (131 instructions at 000001A5BB9CEC10)
+0+ params, 4 slots, 1 upvalue, 2 locals, 48 constants, 38 functions
+	1	[8]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[8]	NEWTABLE 	1 0 0
+	3	[8]	GETTABUP 	2 0 -3	; _ENV "BaseActivityModel"
+	4	[8]	CALL     	0 3 2
+	5	[8]	SETTABUP 	0 -1 0	; _ENV "ExtraCustomerActivityModel"
+	6	[9]	GETTABUP 	0 0 -1	; _ENV "ExtraCustomerActivityModel"
+	7	[9]	GETTABUP 	1 0 -1	; _ENV "ExtraCustomerActivityModel"
+	8	[9]	SETTABLE 	0 -4 1	; "__index" -
+	9	[11]	LOADK    	0 -5	; "value"
+	10	[13]	NEWTABLE 	1 0 6
+	11	[14]	SETTABLE 	1 -6 -6	; "CoolDownTime" "CoolDownTime"
+	12	[15]	SETTABLE 	1 -7 -7	; "LimitTime" "LimitTime"
+	13	[17]	SETTABLE 	1 -8 -8	; "HasActiveOrder" "HasActiveOrder"
+	14	[18]	SETTABLE 	1 -9 -9	; "NeedAutoPopTip" "NeedAutoPopTip"
+	15	[20]	SETTABLE 	1 -10 -10	; "FirstAppear" "FirstAppear"
+	16	[21]	SETTABLE 	1 -11 -11	; "FirstAppearTime" "FirstAppearTime"
+	17	[24]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	18	[26]	CLOSURE  	3 0	; 000001A5BB9CEC90
+	19	[24]	SETTABLE 	2 -12 3	; "Init" -
+	20	[28]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	21	[42]	CLOSURE  	3 1	; 000001A5BB9CF100
+	22	[28]	SETTABLE 	2 -13 3	; "LateInit" -
+	23	[44]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	24	[46]	CLOSURE  	3 2	; 000001A5BB9CF180
+	25	[44]	SETTABLE 	2 -14 3	; "Destroy" -
+	26	[48]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	27	[65]	CLOSURE  	3 3	; 000001A5BB9D37C0
+	28	[48]	SETTABLE 	2 -15 3	; "_LoadOtherServerConfig" -
+	29	[67]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	30	[72]	CLOSURE  	3 4	; 000001A5BB9CE880
+	31	[67]	SETTABLE 	2 -16 3	; "_DropData" -
+	32	[74]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	33	[85]	CLOSURE  	3 5	; 000001A5BB9CE900
+	34	[74]	SETTABLE 	2 -17 3	; "_OnStateChanged" -
+	35	[88]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	36	[90]	CLOSURE  	3 6	; 000001A5BB9D4C90
+	37	[88]	SETTABLE 	2 -18 3	; "GetResourceLabels" -
+	38	[92]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	39	[116]	CLOSURE  	3 7	; 000001A5BB9D4D10
+	40	[92]	SETTABLE 	2 -19 3	; "CanCreateOrder" -
+	41	[118]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	42	[135]	CLOSURE  	3 8	; 000001A5BB9D5110
+	43	[118]	SETTABLE 	2 -20 3	; "UpdatePerSecond" -
+	44	[137]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	45	[149]	CLOSURE  	3 9	; 000001A5BB9D5600
+	46	[137]	SETTABLE 	2 -21 3	; "CreateOrder" -
+	47	[151]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	48	[161]	CLOSURE  	3 10	; 000001A5BB9D58E0
+	49	[151]	SETTABLE 	2 -22 3	; "GetSmileRewardNumber" -
+	50	[163]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	51	[175]	CLOSURE  	3 11	; 000001A5BB9D6AE0
+	52	[163]	SETTABLE 	2 -23 3	; "FinishOrder" -
+	53	[177]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	54	[190]	CLOSURE  	3 12	; 000001A5BB9D5BE0
+	55	[177]	SETTABLE 	2 -24 3	; "RejectOrder" -
+	56	[192]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	57	[216]	CLOSURE  	3 13	; 000001A5BB9D62E0
+	58	[192]	SETTABLE 	2 -25 3	; "AcceptOrder" -
+	59	[218]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	60	[227]	CLOSURE  	3 14	; 000001A5BB9D68E0
+	61	[218]	SETTABLE 	2 -26 3	; "FailedOrder" -
+	62	[229]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	63	[245]	CLOSURE  	3 15	; 000001A5BB9D6760
+	64	[229]	SETTABLE 	2 -27 3	; "CanShowCountDown" -
+	65	[248]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	66	[250]	CLOSURE  	3 16	; 000001A5BB9D5C60
+	67	[248]	SETTABLE 	2 -9 3	; "NeedAutoPopTip" -
+	68	[252]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	69	[254]	CLOSURE  	3 17	; 000001A5BB9D5F60
+	70	[252]	SETTABLE 	2 -28 3	; "SaveNeedAutoPopTip" -
+	71	[256]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	72	[258]	CLOSURE  	3 18	; 000001A5BB9D6860
+	73	[256]	SETTABLE 	2 -29 3	; "HasActiveOrder" -
+	74	[260]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	75	[265]	CLOSURE  	3 19	; 000001A5BB9D6360
+	76	[260]	SETTABLE 	2 -30 3	; "SaveHasActiveOrder" -
+	77	[267]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	78	[269]	CLOSURE  	3 20	; 000001A5BB9D5D60
+	79	[267]	SETTABLE 	2 -31 3	; "GetLimitTime" -
+	80	[271]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	81	[273]	CLOSURE  	3 21	; 000001A5BB9D65E0
+	82	[271]	SETTABLE 	2 -32 3	; "SaveLimitTime" -
+	83	[275]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	84	[277]	CLOSURE  	3 22	; 000001A5BB9D6660
+	85	[275]	SETTABLE 	2 -33 3	; "GetCoolDownTime" -
+	86	[279]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	87	[281]	CLOSURE  	3 23	; 000001A5BB9D63E0
+	88	[279]	SETTABLE 	2 -34 3	; "SaveCoolDownTime" -
+	89	[283]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	90	[285]	CLOSURE  	3 24	; 000001A5BB9D66E0
+	91	[283]	SETTABLE 	2 -35 3	; "GetFirstAppear" -
+	92	[287]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	93	[289]	CLOSURE  	3 25	; 000001A5BB9D5CE0
+	94	[287]	SETTABLE 	2 -36 3	; "SaveFirstAppear" -
+	95	[291]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	96	[293]	CLOSURE  	3 26	; 000001A5BB9D5DE0
+	97	[291]	SETTABLE 	2 -37 3	; "GetFirstAppearTime" -
+	98	[295]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	99	[297]	CLOSURE  	3 27	; 000001A5BB9D6060
+	100	[295]	SETTABLE 	2 -38 3	; "SaveFirstAppearTime" -
+	101	[299]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	102	[301]	CLOSURE  	3 28	; 000001A5BB9D60E0
+	103	[299]	SETTABLE 	2 -39 3	; "SaveNeedBanner" -
+	104	[303]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	105	[305]	CLOSURE  	3 29	; 000001A5BB9D6A60
+	106	[303]	SETTABLE 	2 -40 3	; "GetNeedBanner" -
+	107	[307]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	108	[309]	CLOSURE  	3 30	; 000001A5BB9D5E60
+	109	[307]	SETTABLE 	2 -41 3	; "SaveNeedTrayAnim" -
+	110	[311]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	111	[313]	CLOSURE  	3 31	; 000001A5BB9D5FE0
+	112	[311]	SETTABLE 	2 -42 3	; "NeedTrayAnim" -
+	113	[315]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	114	[323]	CLOSURE  	3 32	; 000001A5BB9D6160
+	115	[315]	SETTABLE 	2 -43 3	; "GetSingleConfig" -
+	116	[325]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	117	[329]	CLOSURE  	3 33	; 000001A5BB9D5EE0
+	118	[325]	SETTABLE 	2 -44 3	; "IncreaseExtraCustomerCompleteTimes" -
+	119	[331]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	120	[333]	CLOSURE  	3 34	; 000001A5BB9D6960
+	121	[331]	SETTABLE 	2 -45 3	; "ResetExtraCustomerCompleteTimes" -
+	122	[335]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	123	[338]	CLOSURE  	3 35	; 000001A5BB9D61E0
+	124	[335]	SETTABLE 	2 -46 3	; "GetExtraCustomerCompleteTimes" -
+	125	[340]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	126	[342]	CLOSURE  	3 36	; 000001A5BB9D6260
+	127	[340]	SETTABLE 	2 -47 3	; "GetRTime" -
+	128	[344]	GETTABUP 	2 0 -1	; _ENV "ExtraCustomerActivityModel"
+	129	[346]	CLOSURE  	3 37	; 000001A5BB9D69E0
+	130	[344]	SETTABLE 	2 -48 3	; "GetETime" -
+	131	[346]	RETURN   	0 1
+constants (48) for 000001A5BB9CEC10:
+	1	"ExtraCustomerActivityModel"
+	2	"setmetatable"
+	3	"BaseActivityModel"
+	4	"__index"
+	5	"value"
+	6	"CoolDownTime"
+	7	"LimitTime"
+	8	"HasActiveOrder"
+	9	"NeedAutoPopTip"
+	10	"FirstAppear"
+	11	"FirstAppearTime"
+	12	"Init"
+	13	"LateInit"
+	14	"Destroy"
+	15	"_LoadOtherServerConfig"
+	16	"_DropData"
+	17	"_OnStateChanged"
+	18	"GetResourceLabels"
+	19	"CanCreateOrder"
+	20	"UpdatePerSecond"
+	21	"CreateOrder"
+	22	"GetSmileRewardNumber"
+	23	"FinishOrder"
+	24	"RejectOrder"
+	25	"AcceptOrder"
+	26	"FailedOrder"
+	27	"CanShowCountDown"
+	28	"SaveNeedAutoPopTip"
+	29	"HasActiveOrder"
+	30	"SaveHasActiveOrder"
+	31	"GetLimitTime"
+	32	"SaveLimitTime"
+	33	"GetCoolDownTime"
+	34	"SaveCoolDownTime"
+	35	"GetFirstAppear"
+	36	"SaveFirstAppear"
+	37	"GetFirstAppearTime"
+	38	"SaveFirstAppearTime"
+	39	"SaveNeedBanner"
+	40	"GetNeedBanner"
+	41	"SaveNeedTrayAnim"
+	42	"NeedTrayAnim"
+	43	"GetSingleConfig"
+	44	"IncreaseExtraCustomerCompleteTimes"
+	45	"ResetExtraCustomerCompleteTimes"
+	46	"GetExtraCustomerCompleteTimes"
+	47	"GetRTime"
+	48	"GetETime"
+locals (2) for 000001A5BB9CEC10:
+	0	DBColumnValue	10	132
+	1	DBKeys	17	132
+upvalues (1) for 000001A5BB9CEC10:
+	0	_ENV	1	0
+
+function <ExtraCustomerActivityModel.lua:24,26> (8 instructions at 000001A5BB9CEC90)
+2 params, 6 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[25]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[25]	GETTABLE 	2 2 -2	; "Init"
+	3	[25]	MOVE     	3 0
+	4	[25]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[25]	GETTABLE 	4 4 -4	; "ExtraCustomer"
+	6	[25]	MOVE     	5 1
+	7	[25]	CALL     	2 4 1
+	8	[26]	RETURN   	0 1
+constants (4) for 000001A5BB9CEC90:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"ExtraCustomer"
+locals (2) for 000001A5BB9CEC90:
+	0	self	1	9
+	1	activityDataTable	1	9
+upvalues (1) for 000001A5BB9CEC90:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:28,42> (71 instructions at 000001A5BB9CF100)
+1 param, 4 slots, 1 upvalue, 1 local, 18 constants, 0 functions
+	1	[29]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[29]	GETTABLE 	1 1 -2	; "LateInit"
+	3	[29]	MOVE     	2 0
+	4	[29]	CALL     	1 2 1
+	5	[31]	SELF     	1 0 -3	; "GetState"
+	6	[31]	LOADBOOL 	3 0 0
+	7	[31]	CALL     	1 3 2
+	8	[31]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	9	[31]	GETTABLE 	2 2 -5	; "Released"
+	10	[31]	EQ       	1 1 2
+	11	[31]	JMP      	0 4	; to 16
+	12	[31]	SELF     	1 0 -6	; "HasActiveOrder"
+	13	[31]	CALL     	1 2 2
+	14	[31]	TEST     	1 1
+	15	[31]	JMP      	0 32	; to 48
+	16	[32]	GETTABUP 	1 0 -7	; _ENV "GM"
+	17	[32]	GETTABLE 	1 1 -8	; "MainBoardModel"
+	18	[32]	SELF     	1 1 -9	; "GetOrders"
+	19	[32]	GETTABUP 	3 0 -10	; _ENV "OrderModelType"
+	20	[32]	GETTABLE 	3 3 -11	; "Slot"
+	21	[32]	CALL     	1 3 2
+	22	[32]	TEST     	1 0
+	23	[32]	JMP      	0 24	; to 48
+	24	[32]	GETTABUP 	1 0 -7	; _ENV "GM"
+	25	[32]	GETTABLE 	1 1 -8	; "MainBoardModel"
+	26	[32]	SELF     	1 1 -9	; "GetOrders"
+	27	[32]	GETTABUP 	3 0 -10	; _ENV "OrderModelType"
+	28	[32]	GETTABLE 	3 3 -11	; "Slot"
+	29	[32]	CALL     	1 3 2
+	30	[32]	GETTABUP 	2 0 -12	; _ENV "MainOrderSlotDefinition"
+	31	[32]	GETTABLE 	2 2 -13	; "ExtraCustomerSlot"
+	32	[32]	GETTABLE 	1 1 2
+	33	[32]	TEST     	1 0
+	34	[32]	JMP      	0 13	; to 48
+	35	[33]	SELF     	1 0 -14	; "SaveHasActiveOrder"
+	36	[33]	LOADBOOL 	3 0 0
+	37	[33]	CALL     	1 3 1
+	38	[34]	GETTABUP 	1 0 -7	; _ENV "GM"
+	39	[34]	GETTABLE 	1 1 -8	; "MainBoardModel"
+	40	[34]	SELF     	1 1 -15	; "GetOrderModel"
+	41	[34]	GETTABUP 	3 0 -10	; _ENV "OrderModelType"
+	42	[34]	GETTABLE 	3 3 -11	; "Slot"
+	43	[34]	CALL     	1 3 2
+	44	[34]	SELF     	1 1 -16	; "RemoveOrder"
+	45	[34]	GETTABUP 	3 0 -12	; _ENV "MainOrderSlotDefinition"
+	46	[34]	GETTABLE 	3 3 -13	; "ExtraCustomerSlot"
+	47	[34]	CALL     	1 3 1
+	48	[38]	GETTABUP 	1 0 -7	; _ENV "GM"
+	49	[38]	GETTABLE 	1 1 -8	; "MainBoardModel"
+	50	[38]	SELF     	1 1 -9	; "GetOrders"
+	51	[38]	GETTABUP 	3 0 -10	; _ENV "OrderModelType"
+	52	[38]	GETTABLE 	3 3 -11	; "Slot"
+	53	[38]	CALL     	1 3 2
+	54	[38]	TEST     	1 0
+	55	[38]	JMP      	0 14	; to 70
+	56	[38]	GETTABUP 	1 0 -7	; _ENV "GM"
+	57	[38]	GETTABLE 	1 1 -8	; "MainBoardModel"
+	58	[38]	SELF     	1 1 -9	; "GetOrders"
+	59	[38]	GETTABUP 	3 0 -10	; _ENV "OrderModelType"
+	60	[38]	GETTABLE 	3 3 -11	; "Slot"
+	61	[38]	CALL     	1 3 2
+	62	[38]	GETTABUP 	2 0 -12	; _ENV "MainOrderSlotDefinition"
+	63	[38]	GETTABLE 	2 2 -13	; "ExtraCustomerSlot"
+	64	[38]	GETTABLE 	1 1 2
+	65	[38]	TEST     	1 1
+	66	[38]	JMP      	0 3	; to 70
+	67	[39]	SELF     	1 0 -14	; "SaveHasActiveOrder"
+	68	[39]	LOADBOOL 	3 0 0
+	69	[39]	CALL     	1 3 1
+	70	[41]	SETTABLE 	0 -17 -18	; "m_lateInit" true
+	71	[42]	RETURN   	0 1
+constants (18) for 000001A5BB9CF100:
+	1	"BaseActivityModel"
+	2	"LateInit"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Released"
+	6	"HasActiveOrder"
+	7	"GM"
+	8	"MainBoardModel"
+	9	"GetOrders"
+	10	"OrderModelType"
+	11	"Slot"
+	12	"MainOrderSlotDefinition"
+	13	"ExtraCustomerSlot"
+	14	"SaveHasActiveOrder"
+	15	"GetOrderModel"
+	16	"RemoveOrder"
+	17	"m_lateInit"
+	18	true
+locals (1) for 000001A5BB9CF100:
+	0	self	1	72
+upvalues (1) for 000001A5BB9CF100:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:44,46> (5 instructions at 000001A5BB9CF180)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[45]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[45]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[45]	MOVE     	2 0
+	4	[45]	CALL     	1 2 1
+	5	[46]	RETURN   	0 1
+constants (2) for 000001A5BB9CF180:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 000001A5BB9CF180:
+	0	self	1	6
+upvalues (1) for 000001A5BB9CF180:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:48,65> (54 instructions at 000001A5BB9D37C0)
+2 params, 10 slots, 1 upvalue, 11 locals, 18 constants, 1 function
+	1	[50]	GETTABUP 	2 0 -2	; _ENV "Table"
+	2	[50]	GETTABLE 	2 2 -3	; "DeepCopy"
+	3	[50]	GETTABLE 	3 1 -4	; "extraCustomerConfig"
+	4	[50]	CALL     	2 2 2
+	5	[50]	SETTABLE 	0 -1 2	; "m_extraCustomerConfig" -
+	6	[51]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	7	[51]	GETTABLE 	3 0 -1	; "m_extraCustomerConfig"
+	8	[51]	CALL     	2 2 4
+	9	[51]	JMP      	0 14	; to 24
+	10	[52]	GETTABLE 	7 6 -6	; "timesMin"
+	11	[52]	TEST     	7 1
+	12	[52]	JMP      	0 1	; to 14
+	13	[52]	LOADK    	7 -7	; 0
+	14	[52]	SETTABLE 	6 -6 7	; "timesMin" -
+	15	[53]	GETTABLE 	7 6 -8	; "cooldown"
+	16	[53]	GETTABLE 	7 7 -9	; "range_entry"
+	17	[53]	TEST     	7 1
+	18	[53]	JMP      	0 4	; to 23
+	19	[53]	NEWTABLE 	7 2 0
+	20	[53]	LOADK    	8 -7	; 0
+	21	[53]	LOADK    	9 -7	; 0
+	22	[53]	SETLIST  	7 2 1	; 1
+	23	[53]	SETTABLE 	6 -8 7	; "cooldown" -
+	24	[51]	TFORCALL 	2 2
+	25	[51]	TFORLOOP 	4 -16	; to 10
+	26	[55]	GETTABUP 	2 0 -10	; _ENV "table"
+	27	[55]	GETTABLE 	2 2 -11	; "sort"
+	28	[55]	GETTABLE 	3 0 -1	; "m_extraCustomerConfig"
+	29	[57]	CLOSURE  	4 0	; 000001A5BB9CE660
+	30	[55]	CALL     	2 3 1
+	31	[60]	LOADK    	2 -12	; 1
+	32	[60]	GETTABLE 	3 0 -1	; "m_extraCustomerConfig"
+	33	[60]	LEN      	3 3
+	34	[60]	SUB      	3 3 -12	; - 1
+	35	[60]	LOADK    	4 -12	; 1
+	36	[60]	FORPREP  	2 16	; to 53
+	37	[61]	GETTABLE 	6 0 -1	; "m_extraCustomerConfig"
+	38	[61]	GETTABLE 	6 6 5
+	39	[61]	GETTABLE 	6 6 -13	; "timesMin"
+	40	[61]	GETTABLE 	7 0 -1	; "m_extraCustomerConfig"
+	41	[61]	ADD      	8 5 -12	; - 1
+	42	[61]	GETTABLE 	7 7 8
+	43	[61]	GETTABLE 	7 7 -13	; "timesMin"
+	44	[61]	EQ       	0 6 7
+	45	[61]	JMP      	0 7	; to 53
+	46	[62]	GETTABUP 	6 0 -14	; _ENV "Log"
+	47	[62]	GETTABLE 	6 6 -15	; "Assert"
+	48	[62]	LOADBOOL 	7 0 0
+	49	[62]	LOADK    	8 -16	; "timesMin\233\133\141\231\189\174\230\156\137\233\135\141\229\143\160"
+	50	[62]	GETTABUP 	9 0 -17	; _ENV "LogTag"
+	51	[62]	GETTABLE 	9 9 -18	; "ConfigCheck"
+	52	[62]	CALL     	6 4 1
+	53	[60]	FORLOOP  	2 -17	; to 37
+	54	[65]	RETURN   	0 1
+constants (18) for 000001A5BB9D37C0:
+	1	"m_extraCustomerConfig"
+	2	"Table"
+	3	"DeepCopy"
+	4	"extraCustomerConfig"
+	5	"ipairs"
+	6	"timesMin"
+	7	0
+	8	"cooldown"
+	9	"range_entry"
+	10	"table"
+	11	"sort"
+	12	1
+	13	"timesMin"
+	14	"Log"
+	15	"Assert"
+	16	"timesMin\233\133\141\231\189\174\230\156\137\233\135\141\229\143\160"
+	17	"LogTag"
+	18	"ConfigCheck"
+locals (11) for 000001A5BB9D37C0:
+	0	self	1	55
+	1	config	1	55
+	2	(for generator)	9	26
+	3	(for state)	9	26
+	4	(for control)	9	26
+	5	_	10	24
+	6	myConfig	10	24
+	7	(for index)	36	54
+	8	(for limit)	36	54
+	9	(for step)	36	54
+	10	i	37	53
+upvalues (1) for 000001A5BB9D37C0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:55,57> (8 instructions at 000001A5BB9CE660)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[56]	GETTABLE 	2 0 -1	; "timesMin"
+	2	[56]	GETTABLE 	3 1 -1	; "timesMin"
+	3	[56]	LT       	1 2 3
+	4	[56]	JMP      	0 1	; to 6
+	5	[56]	LOADBOOL 	2 0 1
+	6	[56]	LOADBOOL 	2 1 0
+	7	[56]	RETURN   	2 2
+	8	[57]	RETURN   	0 1
+constants (1) for 000001A5BB9CE660:
+	1	"timesMin"
+locals (2) for 000001A5BB9CE660:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 000001A5BB9CE660:
+
+function <ExtraCustomerActivityModel.lua:67,72> (8 instructions at 000001A5BB9CE880)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[68]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[68]	GETTABLE 	1 1 -2	; "_DropData"
+	3	[68]	MOVE     	2 0
+	4	[68]	CALL     	1 2 1
+	5	[69]	SETTABLE 	0 -3 -4	; "m_myOrder" nil
+	6	[70]	SETTABLE 	0 -5 -4	; "m_needBanner" nil
+	7	[71]	SETTABLE 	0 -6 -4	; "m_needTrayAnim" nil
+	8	[72]	RETURN   	0 1
+constants (6) for 000001A5BB9CE880:
+	1	"BaseActivityModel"
+	2	"_DropData"
+	3	"m_myOrder"
+	4	nil
+	5	"m_needBanner"
+	6	"m_needTrayAnim"
+locals (1) for 000001A5BB9CE880:
+	0	self	1	9
+upvalues (1) for 000001A5BB9CE880:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:74,85> (52 instructions at 000001A5BB9CE900)
+1 param, 4 slots, 1 upvalue, 1 local, 19 constants, 0 functions
+	1	[75]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[75]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[75]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[75]	GETTABLE 	2 2 -4	; "ExtraCustomerStateChanged"
+	5	[75]	CALL     	1 2 1
+	6	[77]	GETTABLE 	1 0 -5	; "m_lateInit"
+	7	[77]	TEST     	1 0
+	8	[77]	JMP      	0 43	; to 52
+	9	[78]	SELF     	1 0 -6	; "GetState"
+	10	[78]	LOADBOOL 	3 0 0
+	11	[78]	CALL     	1 3 2
+	12	[78]	GETTABUP 	2 0 -7	; _ENV "ActivityState"
+	13	[78]	GETTABLE 	2 2 -8	; "Released"
+	14	[78]	EQ       	1 1 2
+	15	[78]	JMP      	0 4	; to 20
+	16	[78]	SELF     	1 0 -9	; "HasActiveOrder"
+	17	[78]	CALL     	1 2 2
+	18	[78]	TEST     	1 1
+	19	[78]	JMP      	0 32	; to 52
+	20	[79]	GETTABUP 	1 0 -10	; _ENV "GM"
+	21	[79]	GETTABLE 	1 1 -11	; "MainBoardModel"
+	22	[79]	SELF     	1 1 -12	; "GetOrders"
+	23	[79]	GETTABUP 	3 0 -13	; _ENV "OrderModelType"
+	24	[79]	GETTABLE 	3 3 -14	; "Slot"
+	25	[79]	CALL     	1 3 2
+	26	[79]	TEST     	1 0
+	27	[79]	JMP      	0 24	; to 52
+	28	[79]	GETTABUP 	1 0 -10	; _ENV "GM"
+	29	[79]	GETTABLE 	1 1 -11	; "MainBoardModel"
+	30	[79]	SELF     	1 1 -12	; "GetOrders"
+	31	[79]	GETTABUP 	3 0 -13	; _ENV "OrderModelType"
+	32	[79]	GETTABLE 	3 3 -14	; "Slot"
+	33	[79]	CALL     	1 3 2
+	34	[79]	GETTABUP 	2 0 -15	; _ENV "MainOrderSlotDefinition"
+	35	[79]	GETTABLE 	2 2 -16	; "ExtraCustomerSlot"
+	36	[79]	GETTABLE 	1 1 2
+	37	[79]	TEST     	1 0
+	38	[79]	JMP      	0 13	; to 52
+	39	[80]	SELF     	1 0 -17	; "SaveHasActiveOrder"
+	40	[80]	LOADBOOL 	3 0 0
+	41	[80]	CALL     	1 3 1
+	42	[81]	GETTABUP 	1 0 -10	; _ENV "GM"
+	43	[81]	GETTABLE 	1 1 -11	; "MainBoardModel"
+	44	[81]	SELF     	1 1 -18	; "GetOrderModel"
+	45	[81]	GETTABUP 	3 0 -13	; _ENV "OrderModelType"
+	46	[81]	GETTABLE 	3 3 -14	; "Slot"
+	47	[81]	CALL     	1 3 2
+	48	[81]	SELF     	1 1 -19	; "RemoveOrder"
+	49	[81]	GETTABUP 	3 0 -15	; _ENV "MainOrderSlotDefinition"
+	50	[81]	GETTABLE 	3 3 -16	; "ExtraCustomerSlot"
+	51	[81]	CALL     	1 3 1
+	52	[85]	RETURN   	0 1
+constants (19) for 000001A5BB9CE900:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"ExtraCustomerStateChanged"
+	5	"m_lateInit"
+	6	"GetState"
+	7	"ActivityState"
+	8	"Released"
+	9	"HasActiveOrder"
+	10	"GM"
+	11	"MainBoardModel"
+	12	"GetOrders"
+	13	"OrderModelType"
+	14	"Slot"
+	15	"MainOrderSlotDefinition"
+	16	"ExtraCustomerSlot"
+	17	"SaveHasActiveOrder"
+	18	"GetOrderModel"
+	19	"RemoveOrder"
+locals (1) for 000001A5BB9CE900:
+	0	self	1	53
+upvalues (1) for 000001A5BB9CE900:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:88,90> (6 instructions at 000001A5BB9D4C90)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[89]	NEWTABLE 	1 1 0
+	2	[89]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[89]	GETTABLE 	2 2 -2	; "ExtraCustomer"
+	4	[89]	SETLIST  	1 1 1	; 1
+	5	[89]	RETURN   	1 2
+	6	[90]	RETURN   	0 1
+constants (2) for 000001A5BB9D4C90:
+	1	"AddressableLabel"
+	2	"ExtraCustomer"
+locals (1) for 000001A5BB9D4C90:
+	0	self	1	7
+upvalues (1) for 000001A5BB9D4C90:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:92,116> (72 instructions at 000001A5BB9D4D10)
+2 params, 5 slots, 1 upvalue, 2 locals, 17 constants, 0 functions
+	1	[93]	GETTABUP 	2 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[93]	GETTABLE 	2 2 -2	; "ExtraCustomerSlot"
+	3	[93]	EQ       	1 1 2
+	4	[93]	JMP      	0 2	; to 7
+	5	[94]	LOADBOOL 	2 0 0
+	6	[94]	RETURN   	2 2
+	7	[97]	SELF     	2 0 -3	; "GetState"
+	8	[97]	CALL     	2 2 2
+	9	[97]	GETTABUP 	3 0 -4	; _ENV "ActivityState"
+	10	[97]	GETTABLE 	3 3 -5	; "Started"
+	11	[97]	EQ       	0 2 3
+	12	[97]	JMP      	0 10	; to 23
+	13	[97]	GETTABLE 	2 0 -6	; "m_config"
+	14	[97]	GETTABLE 	2 2 -7	; "eTime"
+	15	[97]	GETTABUP 	3 0 -8	; _ENV "GM"
+	16	[97]	GETTABLE 	3 3 -9	; "GameModel"
+	17	[97]	SELF     	3 3 -10	; "GetServerTime"
+	18	[97]	CALL     	3 2 2
+	19	[97]	SUB      	2 2 3
+	20	[97]	GETTABUP 	3 0 -11	; _ENV "Sec2Hour"
+	21	[97]	LT       	0 2 3
+	22	[97]	JMP      	0 2	; to 25
+	23	[98]	LOADBOOL 	2 0 0
+	24	[98]	RETURN   	2 2
+	25	[100]	SELF     	2 0 -12	; "HasActiveOrder"
+	26	[100]	CALL     	2 2 2
+	27	[100]	TEST     	2 0
+	28	[100]	JMP      	0 2	; to 31
+	29	[101]	LOADBOOL 	2 0 0
+	30	[101]	RETURN   	2 2
+	31	[103]	GETTABUP 	2 0 -8	; _ENV "GM"
+	32	[103]	GETTABLE 	2 2 -13	; "MainBoardModel"
+	33	[103]	SELF     	2 2 -14	; "GetOrders"
+	34	[103]	GETTABUP 	4 0 -15	; _ENV "OrderModelType"
+	35	[103]	GETTABLE 	4 4 -16	; "Slot"
+	36	[103]	CALL     	2 3 2
+	37	[103]	TEST     	2 0
+	38	[103]	JMP      	0 13	; to 52
+	39	[103]	GETTABUP 	2 0 -8	; _ENV "GM"
+	40	[103]	GETTABLE 	2 2 -13	; "MainBoardModel"
+	41	[103]	SELF     	2 2 -14	; "GetOrders"
+	42	[103]	GETTABUP 	4 0 -15	; _ENV "OrderModelType"
+	43	[103]	GETTABLE 	4 4 -16	; "Slot"
+	44	[103]	CALL     	2 3 2
+	45	[103]	GETTABUP 	3 0 -1	; _ENV "MainOrderSlotDefinition"
+	46	[103]	GETTABLE 	3 3 -2	; "ExtraCustomerSlot"
+	47	[103]	GETTABLE 	2 2 3
+	48	[103]	TEST     	2 0
+	49	[103]	JMP      	0 2	; to 52
+	50	[104]	LOADBOOL 	2 0 0
+	51	[104]	RETURN   	2 2
+	52	[107]	SELF     	2 0 -17	; "GetCoolDownTime"
+	53	[107]	CALL     	2 2 2
+	54	[107]	TEST     	2 1
+	55	[107]	JMP      	0 3	; to 59
+	56	[108]	LOADBOOL 	2 1 0
+	57	[108]	RETURN   	2 2
+	58	[108]	JMP      	0 13	; to 72
+	59	[110]	GETTABUP 	2 0 -8	; _ENV "GM"
+	60	[110]	GETTABLE 	2 2 -9	; "GameModel"
+	61	[110]	SELF     	2 2 -10	; "GetServerTime"
+	62	[110]	CALL     	2 2 2
+	63	[110]	SELF     	3 0 -17	; "GetCoolDownTime"
+	64	[110]	CALL     	3 2 2
+	65	[110]	LT       	0 3 2
+	66	[110]	JMP      	0 3	; to 70
+	67	[111]	LOADBOOL 	2 1 0
+	68	[111]	RETURN   	2 2
+	69	[111]	JMP      	0 2	; to 72
+	70	[114]	LOADBOOL 	2 0 0
+	71	[114]	RETURN   	2 2
+	72	[116]	RETURN   	0 1
+constants (17) for 000001A5BB9D4D10:
+	1	"MainOrderSlotDefinition"
+	2	"ExtraCustomerSlot"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"m_config"
+	7	"eTime"
+	8	"GM"
+	9	"GameModel"
+	10	"GetServerTime"
+	11	"Sec2Hour"
+	12	"HasActiveOrder"
+	13	"MainBoardModel"
+	14	"GetOrders"
+	15	"OrderModelType"
+	16	"Slot"
+	17	"GetCoolDownTime"
+locals (2) for 000001A5BB9D4D10:
+	0	self	1	73
+	1	slot	1	73
+upvalues (1) for 000001A5BB9D4D10:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:118,135> (89 instructions at 000001A5BB9D5110)
+1 param, 4 slots, 1 upvalue, 1 local, 24 constants, 0 functions
+	1	[119]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[119]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[119]	MOVE     	2 0
+	4	[119]	CALL     	1 2 1
+	5	[120]	SELF     	1 0 -3	; "HasActiveOrder"
+	6	[120]	CALL     	1 2 2
+	7	[120]	TEST     	1 0
+	8	[120]	JMP      	0 80	; to 89
+	9	[121]	GETTABLE 	1 0 -4	; "m_myOrder"
+	10	[121]	TEST     	1 1
+	11	[121]	JMP      	0 9	; to 21
+	12	[121]	GETTABUP 	1 0 -5	; _ENV "GM"
+	13	[121]	GETTABLE 	1 1 -6	; "MainBoardModel"
+	14	[121]	SELF     	1 1 -7	; "GetOrders"
+	15	[121]	GETTABUP 	3 0 -8	; _ENV "OrderModelType"
+	16	[121]	GETTABLE 	3 3 -9	; "Slot"
+	17	[121]	CALL     	1 3 2
+	18	[121]	GETTABUP 	2 0 -10	; _ENV "MainOrderSlotDefinition"
+	19	[121]	GETTABLE 	2 2 -11	; "ExtraCustomerSlot"
+	20	[121]	GETTABLE 	1 1 2
+	21	[121]	SETTABLE 	0 -4 1	; "m_myOrder" -
+	22	[122]	GETTABLE 	1 0 -4	; "m_myOrder"
+	23	[122]	TEST     	1 0
+	24	[122]	JMP      	0 25	; to 50
+	25	[122]	GETTABLE 	1 0 -4	; "m_myOrder"
+	26	[122]	SELF     	1 1 -12	; "GetState"
+	27	[122]	CALL     	1 2 2
+	28	[122]	GETTABUP 	2 0 -13	; _ENV "OrderState"
+	29	[122]	GETTABLE 	2 2 -14	; "Dormant"
+	30	[122]	EQ       	1 1 2
+	31	[122]	JMP      	0 18	; to 50
+	32	[122]	GETTABLE 	1 0 -4	; "m_myOrder"
+	33	[122]	SELF     	1 1 -12	; "GetState"
+	34	[122]	CALL     	1 2 2
+	35	[122]	GETTABUP 	2 0 -13	; _ENV "OrderState"
+	36	[122]	GETTABLE 	2 2 -15	; "Finished"
+	37	[122]	EQ       	1 1 2
+	38	[122]	JMP      	0 11	; to 50
+	39	[123]	GETTABUP 	1 0 -5	; _ENV "GM"
+	40	[123]	GETTABLE 	1 1 -16	; "GameModel"
+	41	[123]	SELF     	1 1 -17	; "GetServerTime"
+	42	[123]	CALL     	1 2 2
+	43	[123]	SELF     	2 0 -18	; "GetLimitTime"
+	44	[123]	CALL     	2 2 2
+	45	[123]	LE       	0 2 1
+	46	[123]	JMP      	0 42	; to 89
+	47	[124]	SELF     	1 0 -19	; "FailedOrder"
+	48	[124]	CALL     	1 2 1
+	49	[125]	JMP      	0 39	; to 89
+	50	[126]	GETTABLE 	1 0 -4	; "m_myOrder"
+	51	[126]	TEST     	1 0
+	52	[126]	JMP      	0 36	; to 89
+	53	[126]	GETTABLE 	1 0 -4	; "m_myOrder"
+	54	[126]	SELF     	1 1 -12	; "GetState"
+	55	[126]	CALL     	1 2 2
+	56	[126]	GETTABUP 	2 0 -13	; _ENV "OrderState"
+	57	[126]	GETTABLE 	2 2 -14	; "Dormant"
+	58	[126]	EQ       	0 1 2
+	59	[126]	JMP      	0 29	; to 89
+	60	[127]	GETTABUP 	1 0 -5	; _ENV "GM"
+	61	[127]	GETTABLE 	1 1 -16	; "GameModel"
+	62	[127]	SELF     	1 1 -17	; "GetServerTime"
+	63	[127]	CALL     	1 2 2
+	64	[127]	GETTABLE 	2 0 -20	; "m_config"
+	65	[127]	GETTABLE 	2 2 -21	; "eTime"
+	66	[127]	LE       	0 2 1
+	67	[127]	JMP      	0 21	; to 89
+	68	[128]	GETTABUP 	1 0 -5	; _ENV "GM"
+	69	[128]	GETTABLE 	1 1 -6	; "MainBoardModel"
+	70	[128]	SELF     	1 1 -22	; "GetOrderModel"
+	71	[128]	GETTABUP 	3 0 -8	; _ENV "OrderModelType"
+	72	[128]	GETTABLE 	3 3 -9	; "Slot"
+	73	[128]	CALL     	1 3 2
+	74	[128]	TEST     	1 0
+	75	[128]	JMP      	0 13	; to 89
+	76	[129]	SELF     	1 0 -23	; "SaveHasActiveOrder"
+	77	[129]	LOADBOOL 	3 0 0
+	78	[129]	CALL     	1 3 1
+	79	[130]	GETTABUP 	1 0 -5	; _ENV "GM"
+	80	[130]	GETTABLE 	1 1 -6	; "MainBoardModel"
+	81	[130]	SELF     	1 1 -22	; "GetOrderModel"
+	82	[130]	GETTABUP 	3 0 -8	; _ENV "OrderModelType"
+	83	[130]	GETTABLE 	3 3 -9	; "Slot"
+	84	[130]	CALL     	1 3 2
+	85	[130]	SELF     	1 1 -24	; "RemoveOrder"
+	86	[130]	GETTABUP 	3 0 -10	; _ENV "MainOrderSlotDefinition"
+	87	[130]	GETTABLE 	3 3 -11	; "ExtraCustomerSlot"
+	88	[130]	CALL     	1 3 1
+	89	[135]	RETURN   	0 1
+constants (24) for 000001A5BB9D5110:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"HasActiveOrder"
+	4	"m_myOrder"
+	5	"GM"
+	6	"MainBoardModel"
+	7	"GetOrders"
+	8	"OrderModelType"
+	9	"Slot"
+	10	"MainOrderSlotDefinition"
+	11	"ExtraCustomerSlot"
+	12	"GetState"
+	13	"OrderState"
+	14	"Dormant"
+	15	"Finished"
+	16	"GameModel"
+	17	"GetServerTime"
+	18	"GetLimitTime"
+	19	"FailedOrder"
+	20	"m_config"
+	21	"eTime"
+	22	"GetOrderModel"
+	23	"SaveHasActiveOrder"
+	24	"RemoveOrder"
+locals (1) for 000001A5BB9D5110:
+	0	self	1	90
+upvalues (1) for 000001A5BB9D5110:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:137,149> (41 instructions at 000001A5BB9D5600)
+3 params, 11 slots, 3 upvalues, 3 locals, 15 constants, 0 functions
+	1	[138]	GETTABUP 	3 0 -1	; _ENV "MainOrderSlotDefinition"
+	2	[138]	GETTABLE 	3 3 -2	; "ExtraCustomerSlot"
+	3	[138]	EQ       	1 2 3
+	4	[138]	JMP      	0 1	; to 6
+	5	[139]	RETURN   	0 1
+	6	[142]	SELF     	3 0 -3	; "SaveHasActiveOrder"
+	7	[142]	LOADBOOL 	5 1 0
+	8	[142]	CALL     	3 3 1
+	9	[143]	SELF     	3 0 -4	; "SaveNeedBanner"
+	10	[143]	LOADBOOL 	5 1 0
+	11	[143]	CALL     	3 3 1
+	12	[144]	SELF     	3 0 -5	; "SaveNeedAutoPopTip"
+	13	[144]	LOADBOOL 	5 1 0
+	14	[144]	CALL     	3 3 1
+	15	[145]	SELF     	3 0 -6	; "SaveFirstAppear"
+	16	[145]	LOADBOOL 	5 1 0
+	17	[145]	CALL     	3 3 1
+	18	[146]	GETTABLE 	3 0 -7	; "m_dbTable"
+	19	[146]	SELF     	3 3 -8	; "Remove"
+	20	[146]	GETTABUP 	5 1 -9	; DBKeys "CoolDownTime"
+	21	[146]	GETUPVAL 	6 2	; DBColumnValue
+	22	[146]	CALL     	3 4 1
+	23	[147]	GETTABLE 	3 0 -7	; "m_dbTable"
+	24	[147]	SELF     	3 3 -8	; "Remove"
+	25	[147]	GETTABUP 	5 1 -10	; DBKeys "LimitTime"
+	26	[147]	GETUPVAL 	6 2	; DBColumnValue
+	27	[147]	CALL     	3 4 1
+	28	[148]	GETTABUP 	3 0 -11	; _ENV "EmptyReqOrder"
+	29	[148]	GETTABLE 	3 3 -12	; "Create"
+	30	[148]	MOVE     	4 1
+	31	[148]	GETTABUP 	5 0 -1	; _ENV "MainOrderSlotDefinition"
+	32	[148]	GETTABLE 	5 5 -2	; "ExtraCustomerSlot"
+	33	[148]	LOADNIL  	6 0
+	34	[148]	NEWTABLE 	7 0 0
+	35	[148]	GETTABUP 	8 0 -13	; _ENV "MainOrderType"
+	36	[148]	GETTABLE 	8 8 -14	; "ExtraCustomer"
+	37	[148]	LOADK    	9 -15	; 3001
+	38	[148]	LOADBOOL 	10 0 0
+	39	[148]	TAILCALL 	3 8 0
+	40	[148]	RETURN   	3 0
+	41	[149]	RETURN   	0 1
+constants (15) for 000001A5BB9D5600:
+	1	"MainOrderSlotDefinition"
+	2	"ExtraCustomerSlot"
+	3	"SaveHasActiveOrder"
+	4	"SaveNeedBanner"
+	5	"SaveNeedAutoPopTip"
+	6	"SaveFirstAppear"
+	7	"m_dbTable"
+	8	"Remove"
+	9	"CoolDownTime"
+	10	"LimitTime"
+	11	"EmptyReqOrder"
+	12	"Create"
+	13	"MainOrderType"
+	14	"ExtraCustomer"
+	15	3001
+locals (3) for 000001A5BB9D5600:
+	0	self	1	42
+	1	orderModel	1	42
+	2	slot	1	42
+upvalues (3) for 000001A5BB9D5600:
+	0	_ENV	0	0
+	1	DBKeys	1	1
+	2	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:151,161> (26 instructions at 000001A5BB9D58E0)
+1 param, 12 slots, 1 upvalue, 9 locals, 10 constants, 0 functions
+	1	[152]	SELF     	1 0 -1	; "GetExtraCustomerCompleteTimes"
+	2	[152]	CALL     	1 2 2
+	3	[153]	SELF     	2 0 -2	; "GetSingleConfig"
+	4	[153]	MOVE     	4 1
+	5	[153]	CALL     	2 3 2
+	6	[154]	GETTABLE 	3 2 -3	; "rewards"
+	7	[155]	GETTABUP 	4 0 -4	; _ENV "ipairs"
+	8	[155]	MOVE     	5 3
+	9	[155]	CALL     	4 2 4
+	10	[155]	JMP      	0 11	; to 22
+	11	[156]	GETTABUP 	9 0 -5	; _ENV "RewardApi"
+	12	[156]	GETTABLE 	9 9 -6	; "CheckRewardPrefix"
+	13	[156]	GETTABUP 	10 0 -7	; _ENV "PROPERTY_TYPE"
+	14	[156]	GETTABLE 	10 8 10
+	15	[156]	GETTABUP 	11 0 -8	; _ENV "ORDER_BOOST_SMILE_PREFIX"
+	16	[156]	CALL     	9 3 2
+	17	[156]	TEST     	9 0
+	18	[156]	JMP      	0 3	; to 22
+	19	[157]	GETTABUP 	9 0 -9	; _ENV "PROPERTY_COUNT"
+	20	[157]	GETTABLE 	9 8 9
+	21	[157]	RETURN   	9 2
+	22	[155]	TFORCALL 	4 2
+	23	[155]	TFORLOOP 	6 -13	; to 11
+	24	[160]	LOADK    	4 -10	; 0
+	25	[160]	RETURN   	4 2
+	26	[161]	RETURN   	0 1
+constants (10) for 000001A5BB9D58E0:
+	1	"GetExtraCustomerCompleteTimes"
+	2	"GetSingleConfig"
+	3	"rewards"
+	4	"ipairs"
+	5	"RewardApi"
+	6	"CheckRewardPrefix"
+	7	"PROPERTY_TYPE"
+	8	"ORDER_BOOST_SMILE_PREFIX"
+	9	"PROPERTY_COUNT"
+	10	0
+locals (9) for 000001A5BB9D58E0:
+	0	self	1	27
+	1	times	3	27
+	2	config	6	27
+	3	rewards	7	27
+	4	(for generator)	10	24
+	5	(for state)	10	24
+	6	(for control)	10	24
+	7	_	11	22
+	8	reward	11	22
+upvalues (1) for 000001A5BB9D58E0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:163,175> (41 instructions at 000001A5BB9D6AE0)
+1 param, 9 slots, 1 upvalue, 3 locals, 22 constants, 0 functions
+	1	[165]	SELF     	1 0 -1	; "GetExtraCustomerCompleteTimes"
+	2	[165]	CALL     	1 2 2
+	3	[166]	SELF     	2 0 -2	; "GetSingleConfig"
+	4	[166]	MOVE     	4 1
+	5	[166]	CALL     	2 3 2
+	6	[167]	GETTABUP 	3 0 -3	; _ENV "RewardApi"
+	7	[167]	GETTABLE 	3 3 -4	; "AcquireRewardsLogic"
+	8	[167]	GETTABLE 	4 2 -5	; "rewards"
+	9	[167]	GETTABUP 	5 0 -6	; _ENV "EPropertySource"
+	10	[167]	GETTABLE 	5 5 -7	; "Give"
+	11	[167]	GETTABUP 	6 0 -8	; _ENV "EBIType"
+	12	[167]	GETTABLE 	6 6 -9	; "FinishOrder"
+	13	[167]	GETTABUP 	7 0 -10	; _ENV "EGameMode"
+	14	[167]	GETTABLE 	7 7 -11	; "Main"
+	15	[167]	GETTABUP 	8 0 -12	; _ENV "CacheItemType"
+	16	[167]	GETTABLE 	8 8 -13	; "Type2"
+	17	[167]	CALL     	3 6 1
+	18	[169]	SELF     	3 0 -14	; "IncreaseExtraCustomerCompleteTimes"
+	19	[169]	CALL     	3 2 1
+	20	[170]	SELF     	3 0 -1	; "GetExtraCustomerCompleteTimes"
+	21	[170]	CALL     	3 2 2
+	22	[170]	MOVE     	1 3
+	23	[171]	SELF     	3 0 -2	; "GetSingleConfig"
+	24	[171]	MOVE     	5 1
+	25	[171]	CALL     	3 3 2
+	26	[171]	MOVE     	2 3
+	27	[172]	SELF     	3 0 -15	; "SaveCoolDownTime"
+	28	[172]	GETTABUP 	5 0 -16	; _ENV "GM"
+	29	[172]	GETTABLE 	5 5 -17	; "GameModel"
+	30	[172]	SELF     	5 5 -18	; "GetServerTime"
+	31	[172]	CALL     	5 2 2
+	32	[172]	GETTABLE 	6 2 -19	; "cooldown"
+	33	[172]	GETTABLE 	6 6 -20	; 1
+	34	[172]	GETTABUP 	7 0 -21	; _ENV "Sec2Hour"
+	35	[172]	MUL      	6 6 7
+	36	[172]	ADD      	5 5 6
+	37	[172]	CALL     	3 3 1
+	38	[174]	SELF     	3 0 -22	; "SaveHasActiveOrder"
+	39	[174]	LOADBOOL 	5 0 0
+	40	[174]	CALL     	3 3 1
+	41	[175]	RETURN   	0 1
+constants (22) for 000001A5BB9D6AE0:
+	1	"GetExtraCustomerCompleteTimes"
+	2	"GetSingleConfig"
+	3	"RewardApi"
+	4	"AcquireRewardsLogic"
+	5	"rewards"
+	6	"EPropertySource"
+	7	"Give"
+	8	"EBIType"
+	9	"FinishOrder"
+	10	"EGameMode"
+	11	"Main"
+	12	"CacheItemType"
+	13	"Type2"
+	14	"IncreaseExtraCustomerCompleteTimes"
+	15	"SaveCoolDownTime"
+	16	"GM"
+	17	"GameModel"
+	18	"GetServerTime"
+	19	"cooldown"
+	20	1
+	21	"Sec2Hour"
+	22	"SaveHasActiveOrder"
+locals (3) for 000001A5BB9D6AE0:
+	0	self	1	42
+	1	times	3	42
+	2	config	6	42
+upvalues (1) for 000001A5BB9D6AE0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:177,190> (55 instructions at 000001A5BB9D5BE0)
+1 param, 11 slots, 1 upvalue, 4 locals, 28 constants, 0 functions
+	1	[178]	SELF     	1 0 -1	; "GetExtraCustomerCompleteTimes"
+	2	[178]	CALL     	1 2 2
+	3	[179]	SELF     	2 0 -2	; "GetSingleConfig"
+	4	[179]	MOVE     	4 1
+	5	[179]	CALL     	2 3 2
+	6	[180]	SELF     	3 0 -3	; "SaveCoolDownTime"
+	7	[180]	GETTABUP 	5 0 -4	; _ENV "GM"
+	8	[180]	GETTABLE 	5 5 -5	; "GameModel"
+	9	[180]	SELF     	5 5 -6	; "GetServerTime"
+	10	[180]	CALL     	5 2 2
+	11	[180]	GETTABLE 	6 2 -7	; "cooldown"
+	12	[180]	GETTABLE 	6 6 -8	; 2
+	13	[180]	GETTABUP 	7 0 -9	; _ENV "Sec2Hour"
+	14	[180]	MUL      	6 6 7
+	15	[180]	ADD      	5 5 6
+	16	[180]	CALL     	3 3 1
+	17	[181]	SELF     	3 0 -10	; "SaveHasActiveOrder"
+	18	[181]	LOADBOOL 	5 0 0
+	19	[181]	CALL     	3 3 1
+	20	[182]	GETTABUP 	3 0 -11	; _ENV "EventDispatcher"
+	21	[182]	GETTABLE 	3 3 -12	; "DispatchEvent"
+	22	[182]	GETTABUP 	4 0 -13	; _ENV "EEventType"
+	23	[182]	GETTABLE 	4 4 -14	; "ExtraCustomerRejected"
+	24	[182]	CALL     	3 2 1
+	25	[184]	GETTABUP 	3 0 -4	; _ENV "GM"
+	26	[184]	GETTABLE 	3 3 -15	; "MainBoardModel"
+	27	[184]	SELF     	3 3 -16	; "GetOrders"
+	28	[184]	GETTABUP 	5 0 -17	; _ENV "OrderModelType"
+	29	[184]	GETTABLE 	5 5 -18	; "Slot"
+	30	[184]	CALL     	3 3 2
+	31	[184]	GETTABUP 	4 0 -19	; _ENV "MainOrderSlotDefinition"
+	32	[184]	GETTABLE 	4 4 -20	; "ExtraCustomerSlot"
+	33	[184]	GETTABLE 	3 3 4
+	34	[185]	GETTABUP 	4 0 -4	; _ENV "GM"
+	35	[185]	GETTABLE 	4 4 -21	; "BIManager"
+	36	[185]	SELF     	4 4 -22	; "LogAction"
+	37	[185]	GETTABUP 	6 0 -23	; _ENV "EBIType"
+	38	[185]	GETTABLE 	6 6 -14	; "ExtraCustomerRejected"
+	39	[185]	NEWTABLE 	7 0 3
+	40	[186]	SELF     	8 0 -25	; "GetId"
+	41	[186]	CALL     	8 2 2
+	42	[186]	SETTABLE 	7 -24 8	; "actID" -
+	43	[187]	SELF     	8 3 -25	; "GetId"
+	44	[187]	CALL     	8 2 2
+	45	[187]	SETTABLE 	7 -26 8	; "orderID" -
+	46	[188]	GETTABUP 	8 0 -4	; _ENV "GM"
+	47	[188]	GETTABLE 	8 8 -5	; "GameModel"
+	48	[188]	SELF     	8 8 -6	; "GetServerTime"
+	49	[188]	CALL     	8 2 2
+	50	[188]	SELF     	9 0 -28	; "GetFirstAppearTime"
+	51	[188]	CALL     	9 2 2
+	52	[188]	SUB      	8 8 9
+	53	[188]	SETTABLE 	7 -27 8	; "elapsed" -
+	54	[185]	CALL     	4 4 1
+	55	[190]	RETURN   	0 1
+constants (28) for 000001A5BB9D5BE0:
+	1	"GetExtraCustomerCompleteTimes"
+	2	"GetSingleConfig"
+	3	"SaveCoolDownTime"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"cooldown"
+	8	2
+	9	"Sec2Hour"
+	10	"SaveHasActiveOrder"
+	11	"EventDispatcher"
+	12	"DispatchEvent"
+	13	"EEventType"
+	14	"ExtraCustomerRejected"
+	15	"MainBoardModel"
+	16	"GetOrders"
+	17	"OrderModelType"
+	18	"Slot"
+	19	"MainOrderSlotDefinition"
+	20	"ExtraCustomerSlot"
+	21	"BIManager"
+	22	"LogAction"
+	23	"EBIType"
+	24	"actID"
+	25	"GetId"
+	26	"orderID"
+	27	"elapsed"
+	28	"GetFirstAppearTime"
+locals (4) for 000001A5BB9D5BE0:
+	0	self	1	56
+	1	times	3	56
+	2	config	6	56
+	3	myOrder	34	56
+upvalues (1) for 000001A5BB9D5BE0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:192,216> (78 instructions at 000001A5BB9D62E0)
+1 param, 11 slots, 1 upvalue, 5 locals, 34 constants, 0 functions
+	1	[193]	SELF     	1 0 -1	; "GetExtraCustomerCompleteTimes"
+	2	[193]	CALL     	1 2 2
+	3	[194]	SELF     	2 0 -2	; "GetSingleConfig"
+	4	[194]	MOVE     	4 1
+	5	[194]	CALL     	2 3 2
+	6	[195]	GETTABLE 	3 2 -3	; "timelimit"
+	7	[195]	TEST     	3 0
+	8	[195]	JMP      	0 19	; to 28
+	9	[196]	GETTABUP 	3 0 -4	; _ENV "GM"
+	10	[196]	GETTABLE 	3 3 -5	; "GameModel"
+	11	[196]	SELF     	3 3 -6	; "GetServerTime"
+	12	[196]	CALL     	3 2 2
+	13	[196]	GETTABLE 	4 2 -3	; "timelimit"
+	14	[196]	GETTABUP 	5 0 -7	; _ENV "Sec2Hour"
+	15	[196]	MUL      	4 4 5
+	16	[196]	ADD      	3 3 4
+	17	[197]	GETTABUP 	4 0 -8	; _ENV "math"
+	18	[197]	GETTABLE 	4 4 -9	; "min"
+	19	[197]	MOVE     	5 3
+	20	[197]	GETTABLE 	6 0 -10	; "m_config"
+	21	[197]	GETTABLE 	6 6 -11	; "rTime"
+	22	[197]	CALL     	4 3 2
+	23	[197]	MOVE     	3 4
+	24	[198]	SELF     	4 0 -12	; "SaveLimitTime"
+	25	[198]	MOVE     	6 3
+	26	[198]	CALL     	4 3 1
+	27	[198]	JMP      	0 4	; to 32
+	28	[200]	SELF     	3 0 -12	; "SaveLimitTime"
+	29	[200]	GETTABLE 	5 0 -10	; "m_config"
+	30	[200]	GETTABLE 	5 5 -11	; "rTime"
+	31	[200]	CALL     	3 3 1
+	32	[205]	GETTABUP 	3 0 -4	; _ENV "GM"
+	33	[205]	GETTABLE 	3 3 -13	; "MainBoardModel"
+	34	[205]	SELF     	3 3 -14	; "GetOrders"
+	35	[205]	GETTABUP 	5 0 -15	; _ENV "OrderModelType"
+	36	[205]	GETTABLE 	5 5 -16	; "Slot"
+	37	[205]	CALL     	3 3 2
+	38	[205]	GETTABUP 	4 0 -17	; _ENV "MainOrderSlotDefinition"
+	39	[205]	GETTABLE 	4 4 -18	; "ExtraCustomerSlot"
+	40	[205]	GETTABLE 	3 3 4
+	41	[206]	TEST     	3 0
+	42	[206]	JMP      	0 35	; to 78
+	43	[207]	SELF     	4 0 -19	; "SaveNeedTrayAnim"
+	44	[207]	LOADBOOL 	6 1 0
+	45	[207]	CALL     	4 3 1
+	46	[208]	SELF     	4 3 -20	; "TryRefreshMyRequirements"
+	47	[208]	NEWTABLE 	6 1 0
+	48	[208]	GETTABUP 	7 0 -21	; _ENV "ItemType"
+	49	[208]	GETTABLE 	7 7 -22	; "Flour12"
+	50	[208]	SETLIST  	6 1 1	; 1
+	51	[208]	CALL     	4 3 1
+	52	[209]	GETTABUP 	4 0 -23	; _ENV "EventDispatcher"
+	53	[209]	GETTABLE 	4 4 -24	; "DispatchEvent"
+	54	[209]	GETTABUP 	5 0 -25	; _ENV "EEventType"
+	55	[209]	GETTABLE 	5 5 -26	; "ExtraCustomerAccepted"
+	56	[209]	CALL     	4 2 1
+	57	[210]	GETTABUP 	4 0 -4	; _ENV "GM"
+	58	[210]	GETTABLE 	4 4 -27	; "BIManager"
+	59	[210]	SELF     	4 4 -28	; "LogAction"
+	60	[210]	GETTABUP 	6 0 -29	; _ENV "EBIType"
+	61	[210]	GETTABLE 	6 6 -26	; "ExtraCustomerAccepted"
+	62	[210]	NEWTABLE 	7 0 3
+	63	[211]	SELF     	8 0 -31	; "GetId"
+	64	[211]	CALL     	8 2 2
+	65	[211]	SETTABLE 	7 -30 8	; "actID" -
+	66	[212]	SELF     	8 3 -31	; "GetId"
+	67	[212]	CALL     	8 2 2
+	68	[212]	SETTABLE 	7 -32 8	; "orderID" -
+	69	[213]	GETTABUP 	8 0 -4	; _ENV "GM"
+	70	[213]	GETTABLE 	8 8 -5	; "GameModel"
+	71	[213]	SELF     	8 8 -6	; "GetServerTime"
+	72	[213]	CALL     	8 2 2
+	73	[213]	SELF     	9 0 -34	; "GetFirstAppearTime"
+	74	[213]	CALL     	9 2 2
+	75	[213]	SUB      	8 8 9
+	76	[213]	SETTABLE 	7 -33 8	; "elapsed" -
+	77	[210]	CALL     	4 4 1
+	78	[216]	RETURN   	0 1
+constants (34) for 000001A5BB9D62E0:
+	1	"GetExtraCustomerCompleteTimes"
+	2	"GetSingleConfig"
+	3	"timelimit"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"Sec2Hour"
+	8	"math"
+	9	"min"
+	10	"m_config"
+	11	"rTime"
+	12	"SaveLimitTime"
+	13	"MainBoardModel"
+	14	"GetOrders"
+	15	"OrderModelType"
+	16	"Slot"
+	17	"MainOrderSlotDefinition"
+	18	"ExtraCustomerSlot"
+	19	"SaveNeedTrayAnim"
+	20	"TryRefreshMyRequirements"
+	21	"ItemType"
+	22	"Flour12"
+	23	"EventDispatcher"
+	24	"DispatchEvent"
+	25	"EEventType"
+	26	"ExtraCustomerAccepted"
+	27	"BIManager"
+	28	"LogAction"
+	29	"EBIType"
+	30	"actID"
+	31	"GetId"
+	32	"orderID"
+	33	"elapsed"
+	34	"GetFirstAppearTime"
+locals (5) for 000001A5BB9D62E0:
+	0	self	1	79
+	1	times	3	79
+	2	config	6	79
+	3	tempTime	17	27
+	4	myOrder	41	79
+upvalues (1) for 000001A5BB9D62E0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:218,227> (45 instructions at 000001A5BB9D68E0)
+1 param, 9 slots, 1 upvalue, 4 locals, 20 constants, 0 functions
+	1	[219]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[219]	GETTABLE 	1 1 -2	; "MainBoardModel"
+	3	[219]	SELF     	1 1 -3	; "GetOrders"
+	4	[219]	GETTABUP 	3 0 -4	; _ENV "OrderModelType"
+	5	[219]	GETTABLE 	3 3 -5	; "Slot"
+	6	[219]	CALL     	1 3 2
+	7	[219]	GETTABUP 	2 0 -6	; _ENV "MainOrderSlotDefinition"
+	8	[219]	GETTABLE 	2 2 -7	; "ExtraCustomerSlot"
+	9	[219]	GETTABLE 	1 1 2
+	10	[220]	TEST     	1 0
+	11	[220]	JMP      	0 30	; to 42
+	12	[220]	SELF     	2 1 -8	; "GetState"
+	13	[220]	CALL     	2 2 2
+	14	[220]	GETTABUP 	3 0 -9	; _ENV "OrderState"
+	15	[220]	GETTABLE 	3 3 -10	; "Finished"
+	16	[220]	EQ       	1 2 3
+	17	[220]	JMP      	0 24	; to 42
+	18	[221]	SELF     	2 0 -11	; "GetExtraCustomerCompleteTimes"
+	19	[221]	CALL     	2 2 2
+	20	[222]	SELF     	3 0 -12	; "GetSingleConfig"
+	21	[222]	MOVE     	5 2
+	22	[222]	CALL     	3 3 2
+	23	[223]	SELF     	4 0 -13	; "SaveCoolDownTime"
+	24	[223]	SELF     	6 0 -14	; "GetLimitTime"
+	25	[223]	CALL     	6 2 2
+	26	[223]	GETTABLE 	7 3 -15	; "cooldown"
+	27	[223]	GETTABLE 	7 7 -16	; 1
+	28	[223]	GETTABUP 	8 0 -17	; _ENV "Sec2Hour"
+	29	[223]	MUL      	7 7 8
+	30	[223]	ADD      	6 6 7
+	31	[223]	CALL     	4 3 1
+	32	[224]	GETTABUP 	4 0 -1	; _ENV "GM"
+	33	[224]	GETTABLE 	4 4 -2	; "MainBoardModel"
+	34	[224]	SELF     	4 4 -18	; "GetOrderModel"
+	35	[224]	GETTABUP 	6 0 -4	; _ENV "OrderModelType"
+	36	[224]	GETTABLE 	6 6 -5	; "Slot"
+	37	[224]	CALL     	4 3 2
+	38	[224]	SELF     	4 4 -19	; "RemoveOrder"
+	39	[224]	GETTABUP 	6 0 -6	; _ENV "MainOrderSlotDefinition"
+	40	[224]	GETTABLE 	6 6 -7	; "ExtraCustomerSlot"
+	41	[224]	CALL     	4 3 1
+	42	[226]	SELF     	2 0 -20	; "SaveHasActiveOrder"
+	43	[226]	LOADBOOL 	4 0 0
+	44	[226]	CALL     	2 3 1
+	45	[227]	RETURN   	0 1
+constants (20) for 000001A5BB9D68E0:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"GetOrders"
+	4	"OrderModelType"
+	5	"Slot"
+	6	"MainOrderSlotDefinition"
+	7	"ExtraCustomerSlot"
+	8	"GetState"
+	9	"OrderState"
+	10	"Finished"
+	11	"GetExtraCustomerCompleteTimes"
+	12	"GetSingleConfig"
+	13	"SaveCoolDownTime"
+	14	"GetLimitTime"
+	15	"cooldown"
+	16	1
+	17	"Sec2Hour"
+	18	"GetOrderModel"
+	19	"RemoveOrder"
+	20	"SaveHasActiveOrder"
+locals (4) for 000001A5BB9D68E0:
+	0	self	1	46
+	1	myOrder	10	46
+	2	times	20	42
+	3	config	23	42
+upvalues (1) for 000001A5BB9D68E0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:229,245> (47 instructions at 000001A5BB9D6760)
+1 param, 6 slots, 1 upvalue, 3 locals, 18 constants, 0 functions
+	1	[230]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[230]	GETTABLE 	1 1 -2	; "MainBoardModel"
+	3	[230]	SELF     	1 1 -3	; "GetOrders"
+	4	[230]	GETTABUP 	3 0 -4	; _ENV "OrderModelType"
+	5	[230]	GETTABLE 	3 3 -5	; "Slot"
+	6	[230]	CALL     	1 3 2
+	7	[230]	GETTABUP 	2 0 -6	; _ENV "MainOrderSlotDefinition"
+	8	[230]	GETTABLE 	2 2 -7	; "ExtraCustomerSlot"
+	9	[230]	GETTABLE 	1 1 2
+	10	[231]	TEST     	1 0
+	11	[231]	JMP      	0 6	; to 18
+	12	[231]	SELF     	2 1 -8	; "GetState"
+	13	[231]	CALL     	2 2 2
+	14	[231]	GETTABUP 	3 0 -9	; _ENV "OrderState"
+	15	[231]	GETTABLE 	3 3 -10	; "Dormant"
+	16	[231]	EQ       	0 2 3
+	17	[231]	JMP      	0 2	; to 20
+	18	[232]	LOADBOOL 	2 0 0
+	19	[232]	RETURN   	2 2
+	20	[235]	SELF     	2 0 -11	; "GetExtraCustomerCompleteTimes"
+	21	[235]	CALL     	2 2 2
+	22	[236]	SELF     	3 0 -12	; "GetSingleConfig"
+	23	[236]	MOVE     	5 2
+	24	[236]	CALL     	3 3 2
+	25	[236]	GETTABLE 	3 3 -13	; "timelimit"
+	26	[236]	TEST     	3 0
+	27	[236]	JMP      	0 3	; to 31
+	28	[237]	LOADBOOL 	3 1 0
+	29	[237]	RETURN   	3 2
+	30	[237]	JMP      	0 16	; to 47
+	31	[239]	SELF     	3 0 -14	; "GetRTime"
+	32	[239]	CALL     	3 2 2
+	33	[239]	GETTABUP 	4 0 -1	; _ENV "GM"
+	34	[239]	GETTABLE 	4 4 -15	; "GameModel"
+	35	[239]	SELF     	4 4 -16	; "GetServerTime"
+	36	[239]	CALL     	4 2 2
+	37	[239]	SUB      	3 3 4
+	38	[239]	GETTABUP 	4 0 -17	; _ENV "Sec2Hour"
+	39	[239]	MUL      	4 -18 4	; 2 -
+	40	[239]	LE       	0 3 4
+	41	[239]	JMP      	0 3	; to 45
+	42	[240]	LOADBOOL 	3 1 0
+	43	[240]	RETURN   	3 2
+	44	[240]	JMP      	0 2	; to 47
+	45	[242]	LOADBOOL 	3 0 0
+	46	[242]	RETURN   	3 2
+	47	[245]	RETURN   	0 1
+constants (18) for 000001A5BB9D6760:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"GetOrders"
+	4	"OrderModelType"
+	5	"Slot"
+	6	"MainOrderSlotDefinition"
+	7	"ExtraCustomerSlot"
+	8	"GetState"
+	9	"OrderState"
+	10	"Dormant"
+	11	"GetExtraCustomerCompleteTimes"
+	12	"GetSingleConfig"
+	13	"timelimit"
+	14	"GetRTime"
+	15	"GameModel"
+	16	"GetServerTime"
+	17	"Sec2Hour"
+	18	2
+locals (3) for 000001A5BB9D6760:
+	0	self	1	48
+	1	myOrder	10	48
+	2	times	22	48
+upvalues (1) for 000001A5BB9D6760:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:248,250> (10 instructions at 000001A5BB9D5C60)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[249]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[249]	SELF     	1 1 -2	; "GetValue"
+	3	[249]	GETTABUP 	3 0 -3	; DBKeys "NeedAutoPopTip"
+	4	[249]	GETUPVAL 	4 1	; DBColumnValue
+	5	[249]	CALL     	1 4 2
+	6	[249]	TEST     	1 1
+	7	[249]	JMP      	0 1	; to 9
+	8	[249]	LOADBOOL 	1 0 0
+	9	[249]	RETURN   	1 2
+	10	[250]	RETURN   	0 1
+constants (3) for 000001A5BB9D5C60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"NeedAutoPopTip"
+locals (1) for 000001A5BB9D5C60:
+	0	self	1	11
+upvalues (2) for 000001A5BB9D5C60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:252,254> (7 instructions at 000001A5BB9D5F60)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[253]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[253]	SELF     	2 2 -2	; "Set"
+	3	[253]	GETTABUP 	4 0 -3	; DBKeys "NeedAutoPopTip"
+	4	[253]	GETUPVAL 	5 1	; DBColumnValue
+	5	[253]	MOVE     	6 1
+	6	[253]	CALL     	2 5 1
+	7	[254]	RETURN   	0 1
+constants (3) for 000001A5BB9D5F60:
+	1	"m_dbTable"
+	2	"Set"
+	3	"NeedAutoPopTip"
+locals (2) for 000001A5BB9D5F60:
+	0	self	1	8
+	1	value	1	8
+upvalues (2) for 000001A5BB9D5F60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:256,258> (10 instructions at 000001A5BB9D6860)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[257]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[257]	SELF     	1 1 -2	; "GetValue"
+	3	[257]	GETTABUP 	3 0 -3	; DBKeys "HasActiveOrder"
+	4	[257]	GETUPVAL 	4 1	; DBColumnValue
+	5	[257]	CALL     	1 4 2
+	6	[257]	TEST     	1 1
+	7	[257]	JMP      	0 1	; to 9
+	8	[257]	LOADBOOL 	1 0 0
+	9	[257]	RETURN   	1 2
+	10	[258]	RETURN   	0 1
+constants (3) for 000001A5BB9D6860:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"HasActiveOrder"
+locals (1) for 000001A5BB9D6860:
+	0	self	1	11
+upvalues (2) for 000001A5BB9D6860:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:260,265> (10 instructions at 000001A5BB9D6360)
+2 params, 7 slots, 2 upvalues, 2 locals, 5 constants, 0 functions
+	1	[261]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[261]	SELF     	2 2 -2	; "Set"
+	3	[261]	GETTABUP 	4 0 -3	; DBKeys "HasActiveOrder"
+	4	[261]	GETUPVAL 	5 1	; DBColumnValue
+	5	[261]	MOVE     	6 1
+	6	[261]	CALL     	2 5 1
+	7	[262]	TEST     	1 1
+	8	[262]	JMP      	0 1	; to 10
+	9	[263]	SETTABLE 	0 -4 -5	; "m_myOrder" nil
+	10	[265]	RETURN   	0 1
+constants (5) for 000001A5BB9D6360:
+	1	"m_dbTable"
+	2	"Set"
+	3	"HasActiveOrder"
+	4	"m_myOrder"
+	5	nil
+locals (2) for 000001A5BB9D6360:
+	0	self	1	11
+	1	has	1	11
+upvalues (2) for 000001A5BB9D6360:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:267,269> (7 instructions at 000001A5BB9D5D60)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[268]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[268]	SELF     	1 1 -2	; "GetValue"
+	3	[268]	GETTABUP 	3 0 -3	; DBKeys "LimitTime"
+	4	[268]	GETUPVAL 	4 1	; DBColumnValue
+	5	[268]	TAILCALL 	1 4 0
+	6	[268]	RETURN   	1 0
+	7	[269]	RETURN   	0 1
+constants (3) for 000001A5BB9D5D60:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LimitTime"
+locals (1) for 000001A5BB9D5D60:
+	0	self	1	8
+upvalues (2) for 000001A5BB9D5D60:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:271,273> (7 instructions at 000001A5BB9D65E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[272]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[272]	SELF     	2 2 -2	; "Set"
+	3	[272]	GETTABUP 	4 0 -3	; DBKeys "LimitTime"
+	4	[272]	GETUPVAL 	5 1	; DBColumnValue
+	5	[272]	MOVE     	6 1
+	6	[272]	CALL     	2 5 1
+	7	[273]	RETURN   	0 1
+constants (3) for 000001A5BB9D65E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LimitTime"
+locals (2) for 000001A5BB9D65E0:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 000001A5BB9D65E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:275,277> (7 instructions at 000001A5BB9D6660)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[276]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[276]	SELF     	1 1 -2	; "GetValue"
+	3	[276]	GETTABUP 	3 0 -3	; DBKeys "CoolDownTime"
+	4	[276]	GETUPVAL 	4 1	; DBColumnValue
+	5	[276]	TAILCALL 	1 4 0
+	6	[276]	RETURN   	1 0
+	7	[277]	RETURN   	0 1
+constants (3) for 000001A5BB9D6660:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CoolDownTime"
+locals (1) for 000001A5BB9D6660:
+	0	self	1	8
+upvalues (2) for 000001A5BB9D6660:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:279,281> (7 instructions at 000001A5BB9D63E0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[280]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[280]	SELF     	2 2 -2	; "Set"
+	3	[280]	GETTABUP 	4 0 -3	; DBKeys "CoolDownTime"
+	4	[280]	GETUPVAL 	5 1	; DBColumnValue
+	5	[280]	MOVE     	6 1
+	6	[280]	CALL     	2 5 1
+	7	[281]	RETURN   	0 1
+constants (3) for 000001A5BB9D63E0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CoolDownTime"
+locals (2) for 000001A5BB9D63E0:
+	0	self	1	8
+	1	time	1	8
+upvalues (2) for 000001A5BB9D63E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:283,285> (10 instructions at 000001A5BB9D66E0)
+1 param, 5 slots, 2 upvalues, 1 local, 3 constants, 0 functions
+	1	[284]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[284]	SELF     	1 1 -2	; "GetValue"
+	3	[284]	GETTABUP 	3 0 -3	; DBKeys "FirstAppear"
+	4	[284]	GETUPVAL 	4 1	; DBColumnValue
+	5	[284]	CALL     	1 4 2
+	6	[284]	TEST     	1 1
+	7	[284]	JMP      	0 1	; to 9
+	8	[284]	LOADBOOL 	1 0 0
+	9	[284]	RETURN   	1 2
+	10	[285]	RETURN   	0 1
+constants (3) for 000001A5BB9D66E0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FirstAppear"
+locals (1) for 000001A5BB9D66E0:
+	0	self	1	11
+upvalues (2) for 000001A5BB9D66E0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:287,289> (7 instructions at 000001A5BB9D5CE0)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[288]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[288]	SELF     	2 2 -2	; "Set"
+	3	[288]	GETTABUP 	4 0 -3	; DBKeys "FirstAppear"
+	4	[288]	GETUPVAL 	5 1	; DBColumnValue
+	5	[288]	MOVE     	6 1
+	6	[288]	CALL     	2 5 1
+	7	[289]	RETURN   	0 1
+constants (3) for 000001A5BB9D5CE0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstAppear"
+locals (2) for 000001A5BB9D5CE0:
+	0	self	1	8
+	1	v	1	8
+upvalues (2) for 000001A5BB9D5CE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:291,293> (10 instructions at 000001A5BB9D5DE0)
+1 param, 5 slots, 2 upvalues, 1 local, 4 constants, 0 functions
+	1	[292]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[292]	SELF     	1 1 -2	; "GetValue"
+	3	[292]	GETTABUP 	3 0 -3	; DBKeys "FirstAppearTime"
+	4	[292]	GETUPVAL 	4 1	; DBColumnValue
+	5	[292]	CALL     	1 4 2
+	6	[292]	TEST     	1 1
+	7	[292]	JMP      	0 1	; to 9
+	8	[292]	LOADK    	1 -4	; 0
+	9	[292]	RETURN   	1 2
+	10	[293]	RETURN   	0 1
+constants (4) for 000001A5BB9D5DE0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FirstAppearTime"
+	4	0
+locals (1) for 000001A5BB9D5DE0:
+	0	self	1	11
+upvalues (2) for 000001A5BB9D5DE0:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:295,297> (7 instructions at 000001A5BB9D6060)
+2 params, 7 slots, 2 upvalues, 2 locals, 3 constants, 0 functions
+	1	[296]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[296]	SELF     	2 2 -2	; "Set"
+	3	[296]	GETTABUP 	4 0 -3	; DBKeys "FirstAppearTime"
+	4	[296]	GETUPVAL 	5 1	; DBColumnValue
+	5	[296]	MOVE     	6 1
+	6	[296]	CALL     	2 5 1
+	7	[297]	RETURN   	0 1
+constants (3) for 000001A5BB9D6060:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FirstAppearTime"
+locals (2) for 000001A5BB9D6060:
+	0	self	1	8
+	1	v	1	8
+upvalues (2) for 000001A5BB9D6060:
+	0	DBKeys	1	1
+	1	DBColumnValue	1	0
+
+function <ExtraCustomerActivityModel.lua:299,301> (2 instructions at 000001A5BB9D60E0)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[300]	SETTABLE 	0 -1 1	; "m_needBanner" -
+	2	[301]	RETURN   	0 1
+constants (1) for 000001A5BB9D60E0:
+	1	"m_needBanner"
+locals (2) for 000001A5BB9D60E0:
+	0	self	1	3
+	1	need	1	3
+upvalues (0) for 000001A5BB9D60E0:
+
+function <ExtraCustomerActivityModel.lua:303,305> (3 instructions at 000001A5BB9D6A60)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[304]	GETTABLE 	1 0 -1	; "m_needBanner"
+	2	[304]	RETURN   	1 2
+	3	[305]	RETURN   	0 1
+constants (1) for 000001A5BB9D6A60:
+	1	"m_needBanner"
+locals (1) for 000001A5BB9D6A60:
+	0	self	1	4
+upvalues (0) for 000001A5BB9D6A60:
+
+function <ExtraCustomerActivityModel.lua:307,309> (2 instructions at 000001A5BB9D5E60)
+2 params, 2 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[308]	SETTABLE 	0 -1 1	; "m_needTrayAnim" -
+	2	[309]	RETURN   	0 1
+constants (1) for 000001A5BB9D5E60:
+	1	"m_needTrayAnim"
+locals (2) for 000001A5BB9D5E60:
+	0	self	1	3
+	1	need	1	3
+upvalues (0) for 000001A5BB9D5E60:
+
+function <ExtraCustomerActivityModel.lua:311,313> (3 instructions at 000001A5BB9D5FE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[312]	GETTABLE 	1 0 -1	; "m_needTrayAnim"
+	2	[312]	RETURN   	1 2
+	3	[313]	RETURN   	0 1
+constants (1) for 000001A5BB9D5FE0:
+	1	"m_needTrayAnim"
+locals (1) for 000001A5BB9D5FE0:
+	0	self	1	4
+upvalues (0) for 000001A5BB9D5FE0:
+
+function <ExtraCustomerActivityModel.lua:315,323> (24 instructions at 000001A5BB9D6160)
+2 params, 9 slots, 1 upvalue, 7 locals, 5 constants, 0 functions
+	1	[316]	TEST     	1 1
+	2	[316]	JMP      	0 3	; to 6
+	3	[316]	SELF     	2 0 -1	; "GetExtraCustomerCompleteTimes"
+	4	[316]	CALL     	2 2 2
+	5	[316]	MOVE     	1 2
+	6	[317]	GETTABUP 	2 0 -2	; _ENV "ipairs"
+	7	[317]	GETTABLE 	3 0 -3	; "m_extraCustomerConfig"
+	8	[317]	CALL     	2 2 4
+	9	[317]	JMP      	0 7	; to 17
+	10	[318]	GETTABLE 	7 6 -4	; "timesMin"
+	11	[318]	LT       	0 1 7
+	12	[318]	JMP      	0 4	; to 17
+	13	[319]	GETTABLE 	7 0 -3	; "m_extraCustomerConfig"
+	14	[319]	SUB      	8 5 -5	; - 1
+	15	[319]	GETTABLE 	7 7 8
+	16	[319]	RETURN   	7 2
+	17	[317]	TFORCALL 	2 2
+	18	[317]	TFORLOOP 	4 -9	; to 10
+	19	[322]	GETTABLE 	2 0 -3	; "m_extraCustomerConfig"
+	20	[322]	GETTABLE 	3 0 -3	; "m_extraCustomerConfig"
+	21	[322]	LEN      	3 3
+	22	[322]	GETTABLE 	2 2 3
+	23	[322]	RETURN   	2 2
+	24	[323]	RETURN   	0 1
+constants (5) for 000001A5BB9D6160:
+	1	"GetExtraCustomerCompleteTimes"
+	2	"ipairs"
+	3	"m_extraCustomerConfig"
+	4	"timesMin"
+	5	1
+locals (7) for 000001A5BB9D6160:
+	0	self	1	25
+	1	times	1	25
+	2	(for generator)	9	19
+	3	(for state)	9	19
+	4	(for control)	9	19
+	5	i	10	17
+	6	conf	10	17
+upvalues (1) for 000001A5BB9D6160:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:325,329> (11 instructions at 000001A5BB9D5EE0)
+1 param, 6 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[326]	SELF     	1 0 -1	; "GetExtraCustomerCompleteTimes"
+	2	[326]	CALL     	1 2 2
+	3	[327]	ADD      	1 1 -2	; - 1
+	4	[328]	GETTABUP 	2 0 -3	; _ENV "GM"
+	5	[328]	GETTABLE 	2 2 -4	; "MiscModel"
+	6	[328]	SELF     	2 2 -5	; "SetExtraCustomerCompleteTimes"
+	7	[328]	GETTABUP 	4 0 -6	; _ENV "tostring"
+	8	[328]	MOVE     	5 1
+	9	[328]	CALL     	4 2 0
+	10	[328]	CALL     	2 0 1
+	11	[329]	RETURN   	0 1
+constants (6) for 000001A5BB9D5EE0:
+	1	"GetExtraCustomerCompleteTimes"
+	2	1
+	3	"GM"
+	4	"MiscModel"
+	5	"SetExtraCustomerCompleteTimes"
+	6	"tostring"
+locals (2) for 000001A5BB9D5EE0:
+	0	self	1	12
+	1	res	3	12
+upvalues (1) for 000001A5BB9D5EE0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:331,333> (8 instructions at 000001A5BB9D6960)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[332]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[332]	GETTABLE 	1 1 -2	; "MiscModel"
+	3	[332]	SELF     	1 1 -3	; "SetExtraCustomerCompleteTimes"
+	4	[332]	GETTABUP 	3 0 -4	; _ENV "tostring"
+	5	[332]	LOADK    	4 -5	; 0
+	6	[332]	CALL     	3 2 0
+	7	[332]	CALL     	1 0 1
+	8	[333]	RETURN   	0 1
+constants (5) for 000001A5BB9D6960:
+	1	"GM"
+	2	"MiscModel"
+	3	"SetExtraCustomerCompleteTimes"
+	4	"tostring"
+	5	0
+locals (1) for 000001A5BB9D6960:
+	0	self	1	9
+upvalues (1) for 000001A5BB9D6960:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:335,338> (14 instructions at 000001A5BB9D61E0)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[336]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[336]	GETTABLE 	1 1 -2	; "MiscModel"
+	3	[336]	SELF     	1 1 -3	; "GetExtraCustomerCompleteTimes"
+	4	[336]	CALL     	1 2 2
+	5	[337]	EQ       	0 1 -4	; - nil
+	6	[337]	JMP      	0 3	; to 10
+	7	[337]	LOADK    	2 -5	; 0
+	8	[337]	TEST     	2 1
+	9	[337]	JMP      	0 3	; to 13
+	10	[337]	GETTABUP 	2 0 -6	; _ENV "tonumber"
+	11	[337]	MOVE     	3 1
+	12	[337]	CALL     	2 2 2
+	13	[337]	RETURN   	2 2
+	14	[338]	RETURN   	0 1
+constants (6) for 000001A5BB9D61E0:
+	1	"GM"
+	2	"MiscModel"
+	3	"GetExtraCustomerCompleteTimes"
+	4	nil
+	5	0
+	6	"tonumber"
+locals (2) for 000001A5BB9D61E0:
+	0	self	1	15
+	1	res	5	15
+upvalues (1) for 000001A5BB9D61E0:
+	0	_ENV	0	0
+
+function <ExtraCustomerActivityModel.lua:340,342> (4 instructions at 000001A5BB9D6260)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[341]	GETTABLE 	1 0 -1	; "m_config"
+	2	[341]	GETTABLE 	1 1 -2	; "rTime"
+	3	[341]	RETURN   	1 2
+	4	[342]	RETURN   	0 1
+constants (2) for 000001A5BB9D6260:
+	1	"m_config"
+	2	"rTime"
+locals (1) for 000001A5BB9D6260:
+	0	self	1	5
+upvalues (0) for 000001A5BB9D6260:
+
+function <ExtraCustomerActivityModel.lua:344,346> (4 instructions at 000001A5BB9D69E0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[345]	GETTABLE 	1 0 -1	; "m_config"
+	2	[345]	GETTABLE 	1 1 -2	; "eTime"
+	3	[345]	RETURN   	1 2
+	4	[346]	RETURN   	0 1
+constants (2) for 000001A5BB9D69E0:
+	1	"m_config"
+	2	"eTime"
+locals (1) for 000001A5BB9D69E0:
+	0	self	1	5
+upvalues (0) for 000001A5BB9D69E0:

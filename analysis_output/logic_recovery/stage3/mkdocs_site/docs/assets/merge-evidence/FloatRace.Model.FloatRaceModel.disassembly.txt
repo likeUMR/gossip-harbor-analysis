@@ -1,0 +1,3934 @@
+
+main <FloatRaceModel.lua:0,0> (253 instructions at 0000023F2A3AEED0)
+0+ params, 4 slots, 1 upvalue, 1 local, 105 constants, 72 functions
+	1	[29]	NEWTABLE 	0 0 2
+	2	[30]	SETTABLE 	0 -2 -2	; "Merge" "Merge"
+	3	[31]	SETTABLE 	0 -3 -3	; "Order" "Order"
+	4	[32]	SETTABUP 	0 -1 0	; _ENV "EFloatRaceAddScoreScene"
+	5	[34]	NEWTABLE 	0 0 4
+	6	[35]	SETTABLE 	0 -5 -6	; "None" 0
+	7	[36]	SETTABLE 	0 -7 -8	; "Easy" 1
+	8	[37]	SETTABLE 	0 -9 -10	; "Normal" 2
+	9	[38]	SETTABLE 	0 -11 -12	; "Hard" 3
+	10	[39]	SETTABUP 	0 -4 0	; _ENV "EFloatRaceDifficultyMode"
+	11	[41]	NEWTABLE 	0 0 17
+	12	[43]	SETTABLE 	0 -13 -13	; "Round" "Round"
+	13	[45]	SETTABLE 	0 -14 -14	; "Level" "Level"
+	14	[47]	SETTABLE 	0 -15 -15	; "Score" "Score"
+	15	[49]	SETTABLE 	0 -16 -16	; "Difficulty" "Difficulty"
+	16	[51]	SETTABLE 	0 -17 -17	; "CurrentInfo" "CurrentInfo"
+	17	[53]	SETTABLE 	0 -18 -18	; "LastScore" "LastScore"
+	18	[55]	SETTABLE 	0 -19 -19	; "LastLevel" "LastLevel"
+	19	[57]	SETTABLE 	0 -20 -20	; "LevelFinishTime" "LevelFinishTime"
+	20	[60]	SETTABLE 	0 -21 -21	; "FinishWindowPop" "FinishWindowPop"
+	21	[61]	SETTABLE 	0 -22 -22	; "EndWindowPop" "EndWindowPop"
+	22	[63]	SETTABLE 	0 -23 -23	; "HalfTopTipPop" "HalfTopTipPop"
+	23	[64]	SETTABLE 	0 -24 -24	; "FiveTopTipPop" "FiveTopTipPop"
+	24	[65]	SETTABLE 	0 -25 -25	; "OneTopTipPop" "OneTopTipPop"
+	25	[67]	SETTABLE 	0 -26 -26	; "CurLevelTryTimes" "CurLevelTryTimes"
+	26	[69]	SETTABLE 	0 -27 -27	; "FailWindowPop" "FailWindowPop"
+	27	[71]	SETTABLE 	0 -28 -28	; "Rank" "Rank"
+	28	[73]	SETTABLE 	0 -29 -29	; "RecoverRewardsLevel" "RecoverRewardsLevel"
+	29	[77]	GETTABUP 	1 0 -31	; _ENV "setmetatable"
+	30	[77]	NEWTABLE 	2 0 0
+	31	[77]	GETTABUP 	3 0 -32	; _ENV "BaseActivityModel"
+	32	[77]	CALL     	1 3 2
+	33	[77]	SETTABUP 	0 -30 1	; _ENV "FloatRaceModel"
+	34	[78]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	35	[78]	GETTABUP 	2 0 -30	; _ENV "FloatRaceModel"
+	36	[78]	SETTABLE 	1 -33 2	; "__index" -
+	37	[80]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	38	[84]	CLOSURE  	2 0	; 0000023F2A3AEF50
+	39	[80]	SETTABLE 	1 -34 2	; "Init" -
+	40	[86]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	41	[89]	CLOSURE  	2 1	; 0000023F2A3AEC50
+	42	[86]	SETTABLE 	1 -35 2	; "_OnStateChanged" -
+	43	[91]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	44	[93]	CLOSURE  	2 2	; 0000023F2A3AF170
+	45	[91]	SETTABLE 	1 -36 2	; "GetResourceLabels" -
+	46	[95]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	47	[100]	CLOSURE  	2 3	; 0000023F2A3AF1F0
+	48	[95]	SETTABLE 	1 -37 2	; "_DropData" -
+	49	[103]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	50	[110]	CLOSURE  	2 4	; 0000023F2A3B39C0
+	51	[103]	SETTABLE 	1 -38 2	; "LogActivity" -
+	52	[114]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	53	[124]	CLOSURE  	2 5	; 0000023F2A3B4350
+	54	[114]	SETTABLE 	1 -39 2	; "LoadLocalConfig" -
+	55	[126]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	56	[237]	CLOSURE  	2 6	; 0000023F2A3B4580
+	57	[126]	SETTABLE 	1 -40 2	; "_LoadOtherServerConfig" -
+	58	[241]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	59	[272]	CLOSURE  	2 7	; 0000023F2A3B6930
+	60	[241]	SETTABLE 	1 -41 2	; "CanAddScore" -
+	61	[274]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	62	[278]	CLOSURE  	2 8	; 0000023F2A3B6C00
+	63	[274]	SETTABLE 	1 -42 2	; "_OnItemMerged" -
+	64	[281]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	65	[294]	CLOSURE  	2 9	; 0000023F2A3B76D0
+	66	[281]	SETTABLE 	1 -43 2	; "_TryAddMergeScore" -
+	67	[297]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	68	[336]	CLOSURE  	2 10	; 0000023F2A3B7950
+	69	[297]	SETTABLE 	1 -44 2	; "GetAddScoreByOrder" -
+	70	[338]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	71	[340]	CLOSURE  	2 11	; 0000023F2A3B7250
+	72	[338]	SETTABLE 	1 -45 2	; "AcquireActivityToken" -
+	73	[343]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	74	[378]	CLOSURE  	2 12	; 0000023F2A3B7650
+	75	[343]	SETTABLE 	1 -46 2	; "_AddScore" -
+	76	[381]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	77	[405]	CLOSURE  	2 13	; 0000023F2A3B73D0
+	78	[381]	SETTABLE 	1 -47 2	; "_LevelUp" -
+	79	[407]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	80	[425]	CLOSURE  	2 14	; 0000023F2A3B78D0
+	81	[407]	SETTABLE 	1 -48 2	; "LogLevelEnd" -
+	82	[427]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	83	[436]	CLOSURE  	2 15	; 0000023F2A3B7450
+	84	[427]	SETTABLE 	1 -49 2	; "LevelFail" -
+	85	[438]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	86	[440]	CLOSURE  	2 16	; 0000023F2A3B79D0
+	87	[438]	SETTABLE 	1 -50 2	; "CanFailWindowPop" -
+	88	[442]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	89	[444]	CLOSURE  	2 17	; 0000023F2A3B6E50
+	90	[442]	SETTABLE 	1 -51 2	; "ClearFailWindowPop" -
+	91	[446]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	92	[450]	CLOSURE  	2 18	; 0000023F2A3B7150
+	93	[446]	SETTABLE 	1 -52 2	; "AcquireRewardsLogic" -
+	94	[452]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	95	[462]	CLOSURE  	2 19	; 0000023F2A3B74D0
+	96	[452]	SETTABLE 	1 -53 2	; "GetRecoverRewards" -
+	97	[464]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	98	[466]	CLOSURE  	2 20	; 0000023F2A3B7550
+	99	[464]	SETTABLE 	1 -54 2	; "SetRecoverRewardsLevel" -
+	100	[468]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	101	[478]	CLOSURE  	2 21	; 0000023F2A3B7750
+	102	[468]	SETTABLE 	1 -55 2	; "GetRewardCongfigByLevel" -
+	103	[483]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	104	[495]	CLOSURE  	2 22	; 0000023F2A3B7A50
+	105	[483]	SETTABLE 	1 -56 2	; "CanSignUp" -
+	106	[497]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	107	[499]	CLOSURE  	2 23	; 0000023F2A3B7AD0
+	108	[497]	SETTABLE 	1 -57 2	; "CanSelectDifficulty" -
+	109	[501]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	110	[503]	CLOSURE  	2 24	; 0000023F2A3B7B50
+	111	[501]	SETTABLE 	1 -58 2	; "GetRobotConfigByDiffAndLevel" -
+	112	[506]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	113	[510]	CLOSURE  	2 25	; 0000023F2A3B7BD0
+	114	[506]	SETTABLE 	1 -59 2	; "TrySignUp" -
+	115	[512]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	116	[595]	CLOSURE  	2 26	; 0000023F2A3B6CD0
+	117	[512]	SETTABLE 	1 -60 2	; "SignUp" -
+	118	[597]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	119	[609]	CLOSURE  	2 27	; 0000023F2A3B75D0
+	120	[597]	SETTABLE 	1 -61 2	; "RandomDeleteAvatar" -
+	121	[613]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	122	[617]	CLOSURE  	2 28	; 0000023F2A3B77D0
+	123	[613]	SETTABLE 	1 -62 2	; "ClearTopTipState" -
+	124	[619]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	125	[621]	CLOSURE  	2 29	; 0000023F2A3B6ED0
+	126	[619]	SETTABLE 	1 -63 2	; "PopTopTip" -
+	127	[623]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	128	[625]	CLOSURE  	2 30	; 0000023F2A3B6F50
+	129	[623]	SETTABLE 	1 -64 2	; "CanPopTopTip" -
+	130	[627]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	131	[675]	CLOSURE  	2 31	; 0000023F2A3B6FD0
+	132	[627]	SETTABLE 	1 -65 2	; "CheckTopTip" -
+	133	[677]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	134	[738]	CLOSURE  	2 32	; 0000023F2A3C1720
+	135	[677]	SETTABLE 	1 -66 2	; "UpdatePerSecond" -
+	136	[743]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	137	[750]	CLOSURE  	2 33	; 0000023F2A3C2820
+	138	[743]	SETTABLE 	1 -67 2	; "GetMaxLevel" -
+	139	[752]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	140	[754]	CLOSURE  	2 34	; 0000023F2A3C1BA0
+	141	[752]	SETTABLE 	1 -68 2	; "SetRound" -
+	142	[756]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	143	[758]	CLOSURE  	2 35	; 0000023F2A3C15A0
+	144	[756]	SETTABLE 	1 -69 2	; "GetRound" -
+	145	[760]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	146	[762]	CLOSURE  	2 36	; 0000023F2A3C1020
+	147	[760]	SETTABLE 	1 -70 2	; "GetLevel" -
+	148	[764]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	149	[766]	CLOSURE  	2 37	; 0000023F2A3C10A0
+	150	[764]	SETTABLE 	1 -71 2	; "SetLevel" -
+	151	[768]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	152	[770]	CLOSURE  	2 38	; 0000023F2A3C2DA0
+	153	[768]	SETTABLE 	1 -72 2	; "GetScore" -
+	154	[772]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	155	[774]	CLOSURE  	2 39	; 0000023F2A3C12A0
+	156	[772]	SETTABLE 	1 -73 2	; "SetScore" -
+	157	[776]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	158	[778]	CLOSURE  	2 40	; 0000023F2A3C22A0
+	159	[776]	SETTABLE 	1 -74 2	; "SetDifficultyMode" -
+	160	[780]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	161	[782]	CLOSURE  	2 41	; 0000023F2A3C1F20
+	162	[780]	SETTABLE 	1 -75 2	; "GetDifficultyMode" -
+	163	[784]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	164	[786]	CLOSURE  	2 42	; 0000023F2A3C2C20
+	165	[784]	SETTABLE 	1 -76 2	; "GetLastScore" -
+	166	[788]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	167	[790]	CLOSURE  	2 43	; 0000023F2A3C2AA0
+	168	[788]	SETTABLE 	1 -77 2	; "SetLastScore" -
+	169	[792]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	170	[794]	CLOSURE  	2 44	; 0000023F2A3C1220
+	171	[792]	SETTABLE 	1 -78 2	; "GetLastLevel" -
+	172	[796]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	173	[798]	CLOSURE  	2 45	; 0000023F2A3C1FA0
+	174	[796]	SETTABLE 	1 -79 2	; "SetLastLevel" -
+	175	[800]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	176	[806]	CLOSURE  	2 46	; 0000023F2A3C24A0
+	177	[800]	SETTABLE 	1 -80 2	; "IsAllRoundFinished" -
+	178	[808]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	179	[810]	CLOSURE  	2 47	; 0000023F2A3C2120
+	180	[808]	SETTABLE 	1 -81 2	; "GetCurrentInfo" -
+	181	[812]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	182	[819]	CLOSURE  	2 48	; 0000023F2A3C11A0
+	183	[812]	SETTABLE 	1 -82 2	; "SaveCurrentInfo" -
+	184	[821]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	185	[823]	CLOSURE  	2 49	; 0000023F2A3C2A20
+	186	[821]	SETTABLE 	1 -83 2	; "SetLevelFinishTime" -
+	187	[825]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	188	[827]	CLOSURE  	2 50	; 0000023F2A3C2B20
+	189	[825]	SETTABLE 	1 -84 2	; "GetLevelFinishTime" -
+	190	[829]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	191	[831]	CLOSURE  	2 51	; 0000023F2A3C1520
+	192	[829]	SETTABLE 	1 -85 2	; "GetAliveNum" -
+	193	[833]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	194	[840]	CLOSURE  	2 52	; 0000023F2A3C1120
+	195	[833]	SETTABLE 	1 -86 2	; "GetFinishAliveNum" -
+	196	[842]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	197	[853]	CLOSURE  	2 53	; 0000023F2A3C21A0
+	198	[842]	SETTABLE 	1 -87 2	; "GetBigRewardByDiff" -
+	199	[855]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	200	[857]	CLOSURE  	2 54	; 0000023F2A3C1320
+	201	[855]	SETTABLE 	1 -88 2	; "GetRank" -
+	202	[859]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	203	[861]	CLOSURE  	2 55	; 0000023F2A3C2BA0
+	204	[859]	SETTABLE 	1 -89 2	; "SetRank" -
+	205	[863]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	206	[865]	CLOSURE  	2 56	; 0000023F2A3C1820
+	207	[863]	SETTABLE 	1 -90 2	; "GetDeleteAvatarIndexs" -
+	208	[868]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	209	[881]	CLOSURE  	2 57	; 0000023F2A3C2520
+	210	[868]	SETTABLE 	1 -91 2	; "ClearCurrentPlayState" -
+	211	[883]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	212	[885]	CLOSURE  	2 58	; 0000023F2A3C1620
+	213	[883]	SETTABLE 	1 -92 2	; "PopFinishWindow" -
+	214	[887]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	215	[889]	CLOSURE  	2 59	; 0000023F2A3C14A0
+	216	[887]	SETTABLE 	1 -93 2	; "CanPopFinishWindow" -
+	217	[891]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	218	[893]	CLOSURE  	2 60	; 0000023F2A3C2220
+	219	[891]	SETTABLE 	1 -94 2	; "PopEndWindow" -
+	220	[895]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	221	[897]	CLOSURE  	2 61	; 0000023F2A3C2E20
+	222	[895]	SETTABLE 	1 -95 2	; "CanPopEndWindow" -
+	223	[899]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	224	[903]	CLOSURE  	2 62	; 0000023F2A3C23A0
+	225	[899]	SETTABLE 	1 -96 2	; "CanPopSelectWindow" -
+	226	[905]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	227	[907]	CLOSURE  	2 63	; 0000023F2A3C29A0
+	228	[905]	SETTABLE 	1 -97 2	; "PopSelectWindow" -
+	229	[909]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	230	[911]	CLOSURE  	2 64	; 0000023F2A3C2920
+	231	[909]	SETTABLE 	1 -98 2	; "SetCurLevelTryTimes" -
+	232	[913]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	233	[915]	CLOSURE  	2 65	; 0000023F2A3C2020
+	234	[913]	SETTABLE 	1 -99 2	; "GetCurLevelTryTimes" -
+	235	[919]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	236	[921]	CLOSURE  	2 66	; 0000023F2A3C1D20
+	237	[919]	SETTABLE 	1 -100 2	; "CanShowRedPoint" -
+	238	[924]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	239	[976]	CLOSURE  	2 67	; 0000023F2A3C2D20
+	240	[924]	SETTABLE 	1 -101 2	; "GetHudEntryShowConfig" -
+	241	[979]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	242	[991]	CLOSURE  	2 68	; 0000023F2A3C27A0
+	243	[979]	SETTABLE 	1 -102 2	; "GetBoardEntryShowConfig" -
+	244	[996]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	245	[998]	CLOSURE  	2 69	; 0000023F2A3C1EA0
+	246	[996]	SETTABLE 	1 -103 2	; "TestAddScore" -
+	247	[1000]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	248	[1008]	CLOSURE  	2 70	; 0000023F2A3C2F20
+	249	[1000]	SETTABLE 	1 -104 2	; "TestLevelUp" -
+	250	[1010]	GETTABUP 	1 0 -30	; _ENV "FloatRaceModel"
+	251	[1017]	CLOSURE  	2 71	; 0000023F2A3C26A0
+	252	[1010]	SETTABLE 	1 -105 2	; "Test2LastLevel" -
+	253	[1017]	RETURN   	0 1
+constants (105) for 0000023F2A3AEED0:
+	1	"EFloatRaceAddScoreScene"
+	2	"Merge"
+	3	"Order"
+	4	"EFloatRaceDifficultyMode"
+	5	"None"
+	6	0
+	7	"Easy"
+	8	1
+	9	"Normal"
+	10	2
+	11	"Hard"
+	12	3
+	13	"Round"
+	14	"Level"
+	15	"Score"
+	16	"Difficulty"
+	17	"CurrentInfo"
+	18	"LastScore"
+	19	"LastLevel"
+	20	"LevelFinishTime"
+	21	"FinishWindowPop"
+	22	"EndWindowPop"
+	23	"HalfTopTipPop"
+	24	"FiveTopTipPop"
+	25	"OneTopTipPop"
+	26	"CurLevelTryTimes"
+	27	"FailWindowPop"
+	28	"Rank"
+	29	"RecoverRewardsLevel"
+	30	"FloatRaceModel"
+	31	"setmetatable"
+	32	"BaseActivityModel"
+	33	"__index"
+	34	"Init"
+	35	"_OnStateChanged"
+	36	"GetResourceLabels"
+	37	"_DropData"
+	38	"LogActivity"
+	39	"LoadLocalConfig"
+	40	"_LoadOtherServerConfig"
+	41	"CanAddScore"
+	42	"_OnItemMerged"
+	43	"_TryAddMergeScore"
+	44	"GetAddScoreByOrder"
+	45	"AcquireActivityToken"
+	46	"_AddScore"
+	47	"_LevelUp"
+	48	"LogLevelEnd"
+	49	"LevelFail"
+	50	"CanFailWindowPop"
+	51	"ClearFailWindowPop"
+	52	"AcquireRewardsLogic"
+	53	"GetRecoverRewards"
+	54	"SetRecoverRewardsLevel"
+	55	"GetRewardCongfigByLevel"
+	56	"CanSignUp"
+	57	"CanSelectDifficulty"
+	58	"GetRobotConfigByDiffAndLevel"
+	59	"TrySignUp"
+	60	"SignUp"
+	61	"RandomDeleteAvatar"
+	62	"ClearTopTipState"
+	63	"PopTopTip"
+	64	"CanPopTopTip"
+	65	"CheckTopTip"
+	66	"UpdatePerSecond"
+	67	"GetMaxLevel"
+	68	"SetRound"
+	69	"GetRound"
+	70	"GetLevel"
+	71	"SetLevel"
+	72	"GetScore"
+	73	"SetScore"
+	74	"SetDifficultyMode"
+	75	"GetDifficultyMode"
+	76	"GetLastScore"
+	77	"SetLastScore"
+	78	"GetLastLevel"
+	79	"SetLastLevel"
+	80	"IsAllRoundFinished"
+	81	"GetCurrentInfo"
+	82	"SaveCurrentInfo"
+	83	"SetLevelFinishTime"
+	84	"GetLevelFinishTime"
+	85	"GetAliveNum"
+	86	"GetFinishAliveNum"
+	87	"GetBigRewardByDiff"
+	88	"GetRank"
+	89	"SetRank"
+	90	"GetDeleteAvatarIndexs"
+	91	"ClearCurrentPlayState"
+	92	"PopFinishWindow"
+	93	"CanPopFinishWindow"
+	94	"PopEndWindow"
+	95	"CanPopEndWindow"
+	96	"CanPopSelectWindow"
+	97	"PopSelectWindow"
+	98	"SetCurLevelTryTimes"
+	99	"GetCurLevelTryTimes"
+	100	"CanShowRedPoint"
+	101	"GetHudEntryShowConfig"
+	102	"GetBoardEntryShowConfig"
+	103	"TestAddScore"
+	104	"TestLevelUp"
+	105	"Test2LastLevel"
+locals (1) for 0000023F2A3AEED0:
+	0	EStrDBKeys	29	254
+upvalues (1) for 0000023F2A3AEED0:
+	0	_ENV	1	0
+
+function <FloatRaceModel.lua:80,84> (17 instructions at 0000023F2A3AEF50)
+2 params, 6 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[81]	GETTABUP 	2 0 -1	; _ENV "BaseActivityModel"
+	2	[81]	GETTABLE 	2 2 -2	; "Init"
+	3	[81]	MOVE     	3 0
+	4	[81]	GETTABUP 	4 0 -3	; _ENV "ActivityType"
+	5	[81]	GETTABLE 	4 4 -4	; "FloatRace"
+	6	[81]	MOVE     	5 1
+	7	[81]	CALL     	2 4 1
+	8	[82]	SELF     	2 0 -5	; "LoadLocalConfig"
+	9	[82]	CALL     	2 2 1
+	10	[83]	GETTABUP 	2 0 -6	; _ENV "EventDispatcher"
+	11	[83]	GETTABLE 	2 2 -7	; "AddListener"
+	12	[83]	GETTABUP 	3 0 -8	; _ENV "EEventType"
+	13	[83]	GETTABLE 	3 3 -9	; "ItemMerged"
+	14	[83]	MOVE     	4 0
+	15	[83]	GETTABLE 	5 0 -10	; "_OnItemMerged"
+	16	[83]	CALL     	2 4 1
+	17	[84]	RETURN   	0 1
+constants (10) for 0000023F2A3AEF50:
+	1	"BaseActivityModel"
+	2	"Init"
+	3	"ActivityType"
+	4	"FloatRace"
+	5	"LoadLocalConfig"
+	6	"EventDispatcher"
+	7	"AddListener"
+	8	"EEventType"
+	9	"ItemMerged"
+	10	"_OnItemMerged"
+locals (2) for 0000023F2A3AEF50:
+	0	self	1	18
+	1	virtualDBTable	1	18
+upvalues (1) for 0000023F2A3AEF50:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:86,89> (11 instructions at 0000023F2A3AEC50)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[87]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[87]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	3	[87]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	4	[87]	GETTABLE 	2 2 -4	; "FloatRaceStateChanged"
+	5	[87]	CALL     	1 2 1
+	6	[88]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	7	[88]	GETTABLE 	1 1 -2	; "DispatchEvent"
+	8	[88]	GETTABUP 	2 0 -3	; _ENV "EEventType"
+	9	[88]	GETTABLE 	2 2 -5	; "OrderStatusChanged"
+	10	[88]	CALL     	1 2 1
+	11	[89]	RETURN   	0 1
+constants (5) for 0000023F2A3AEC50:
+	1	"EventDispatcher"
+	2	"DispatchEvent"
+	3	"EEventType"
+	4	"FloatRaceStateChanged"
+	5	"OrderStatusChanged"
+locals (1) for 0000023F2A3AEC50:
+	0	self	1	12
+upvalues (1) for 0000023F2A3AEC50:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:91,93> (6 instructions at 0000023F2A3AF170)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[92]	NEWTABLE 	1 1 0
+	2	[92]	GETTABUP 	2 0 -1	; _ENV "AddressableLabel"
+	3	[92]	GETTABLE 	2 2 -2	; "FloatRace"
+	4	[92]	SETLIST  	1 1 1	; 1
+	5	[92]	RETURN   	1 2
+	6	[93]	RETURN   	0 1
+constants (2) for 0000023F2A3AF170:
+	1	"AddressableLabel"
+	2	"FloatRace"
+locals (1) for 0000023F2A3AF170:
+	0	self	1	7
+upvalues (1) for 0000023F2A3AF170:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:95,100> (7 instructions at 0000023F2A3AF1F0)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[96]	SETTABLE 	0 -1 -2	; "m_currentInfo" nil
+	2	[97]	SETTABLE 	0 -3 -2	; "m_selectWindowPop" nil
+	3	[99]	GETTABUP 	1 0 -4	; _ENV "BaseActivityModel"
+	4	[99]	GETTABLE 	1 1 -5	; "_DropData"
+	5	[99]	MOVE     	2 0
+	6	[99]	CALL     	1 2 1
+	7	[100]	RETURN   	0 1
+constants (5) for 0000023F2A3AF1F0:
+	1	"m_currentInfo"
+	2	nil
+	3	"m_selectWindowPop"
+	4	"BaseActivityModel"
+	5	"_DropData"
+locals (1) for 0000023F2A3AF1F0:
+	0	self	1	8
+upvalues (1) for 0000023F2A3AF1F0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:103,110> (19 instructions at 0000023F2A3B39C0)
+4 params, 12 slots, 1 upvalue, 6 locals, 8 constants, 0 functions
+	1	[104]	SELF     	4 0 -1	; "GetRound"
+	2	[104]	CALL     	4 2 2
+	3	[105]	TEST     	3 0
+	4	[105]	JMP      	0 1	; to 6
+	5	[106]	SUB      	4 4 -2	; - 1
+	6	[108]	GETTABLE 	5 0 -3	; "m_type"
+	7	[108]	LOADK    	6 -4	; "_"
+	8	[108]	MOVE     	7 4
+	9	[108]	CONCAT   	5 5 7
+	10	[109]	GETTABUP 	6 0 -5	; _ENV "GM"
+	11	[109]	GETTABLE 	6 6 -6	; "BIManager"
+	12	[109]	SELF     	6 6 -7	; "LogActivity"
+	13	[109]	MOVE     	8 5
+	14	[109]	SELF     	9 0 -8	; "GetId"
+	15	[109]	CALL     	9 2 2
+	16	[109]	MOVE     	10 1
+	17	[109]	MOVE     	11 2
+	18	[109]	CALL     	6 6 1
+	19	[110]	RETURN   	0 1
+constants (8) for 0000023F2A3B39C0:
+	1	"GetRound"
+	2	1
+	3	"m_type"
+	4	"_"
+	5	"GM"
+	6	"BIManager"
+	7	"LogActivity"
+	8	"GetId"
+locals (6) for 0000023F2A3B39C0:
+	0	self	1	20
+	1	scene	1	20
+	2	action	1	20
+	3	isFinalReward	1	20
+	4	round	3	20
+	5	biType	10	20
+upvalues (1) for 0000023F2A3B39C0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:114,124> (25 instructions at 0000023F2A3B4350)
+1 param, 5 slots, 2 upvalues, 2 locals, 12 constants, 0 functions
+	1	[115]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[115]	SELF     	1 1 -2	; "GetValue"
+	3	[115]	GETTABUP 	3 0 -3	; EStrDBKeys "CurrentInfo"
+	4	[115]	LOADK    	4 -4	; "value"
+	5	[115]	CALL     	1 4 2
+	6	[116]	EQ       	1 1 -5	; - nil
+	7	[116]	JMP      	0 17	; to 25
+	8	[117]	GETTABUP 	2 1 -7	; _ENV "json"
+	9	[117]	GETTABLE 	2 2 -8	; "decode"
+	10	[117]	MOVE     	3 1
+	11	[117]	CALL     	2 2 2
+	12	[117]	SETTABLE 	0 -6 2	; "m_currentInfo" -
+	13	[120]	GETTABLE 	2 0 -6	; "m_currentInfo"
+	14	[120]	GETTABLE 	2 2 -9	; "showIconFrameList"
+	15	[120]	EQ       	0 2 -5	; - nil
+	16	[120]	JMP      	0 8	; to 25
+	17	[121]	GETTABLE 	2 0 -6	; "m_currentInfo"
+	18	[121]	GETTABUP 	3 1 -10	; _ENV "UIHelper"
+	19	[121]	GETTABLE 	3 3 -11	; "GetRandomAvatarIconFrame"
+	20	[121]	GETTABLE 	4 0 -6	; "m_currentInfo"
+	21	[121]	GETTABLE 	4 4 -12	; "showIconList"
+	22	[121]	LEN      	4 4
+	23	[121]	CALL     	3 2 2
+	24	[121]	SETTABLE 	2 -9 3	; "showIconFrameList" -
+	25	[124]	RETURN   	0 1
+constants (12) for 0000023F2A3B4350:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurrentInfo"
+	4	"value"
+	5	nil
+	6	"m_currentInfo"
+	7	"json"
+	8	"decode"
+	9	"showIconFrameList"
+	10	"UIHelper"
+	11	"GetRandomAvatarIconFrame"
+	12	"showIconList"
+locals (2) for 0000023F2A3B4350:
+	0	self	1	26
+	1	strInfo	6	26
+upvalues (2) for 0000023F2A3B4350:
+	0	EStrDBKeys	1	0
+	1	_ENV	0	0
+
+function <FloatRaceModel.lua:126,237> (236 instructions at 0000023F2A3B4580)
+2 params, 26 slots, 1 upvalue, 36 locals, 59 constants, 3 functions
+	1	[128]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[128]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[128]	SELF     	2 2 -3	; "GetLocalConfig"
+	4	[128]	GETTABUP 	4 0 -4	; _ENV "LocalConfigKey"
+	5	[128]	GETTABLE 	4 4 -5	; "MergeItemScoreConfig"
+	6	[128]	CALL     	2 3 2
+	7	[129]	GETTABLE 	3 0 -6	; "m_config"
+	8	[129]	NEWTABLE 	4 0 0
+	9	[129]	SETTABLE 	3 -7 4	; "mergeItemScoreConfig" -
+	10	[130]	GETTABUP 	3 0 -8	; _ENV "ipairs"
+	11	[130]	MOVE     	4 2
+	12	[130]	CALL     	3 2 4
+	13	[130]	JMP      	0 4	; to 18
+	14	[131]	GETTABLE 	8 0 -6	; "m_config"
+	15	[131]	GETTABLE 	8 8 -7	; "mergeItemScoreConfig"
+	16	[131]	GETTABLE 	9 7 -9	; "item_id"
+	17	[131]	SETTABLE 	8 9 7
+	18	[130]	TFORCALL 	3 2
+	19	[130]	TFORLOOP 	5 -6	; to 14
+	20	[135]	GETTABLE 	3 0 -6	; "m_config"
+	21	[135]	NEWTABLE 	4 0 0
+	22	[135]	SETTABLE 	3 -10 4	; "finishOrderScoreConfig" -
+	23	[136]	LOADBOOL 	3 0 0
+	24	[137]	GETTABUP 	4 0 -11	; _ENV "pairs"
+	25	[137]	GETTABLE 	5 1 -12	; "eventOrderScore"
+	26	[137]	CALL     	4 2 4
+	27	[137]	JMP      	0 18	; to 46
+	28	[138]	GETTABUP 	9 0 -13	; _ENV "table"
+	29	[138]	GETTABLE 	9 9 -14	; "insert"
+	30	[138]	GETTABLE 	10 0 -6	; "m_config"
+	31	[138]	GETTABLE 	10 10 -10	; "finishOrderScoreConfig"
+	32	[138]	GETTABUP 	11 0 -15	; _ENV "Table"
+	33	[138]	GETTABLE 	11 11 -16	; "DeepCopy"
+	34	[138]	MOVE     	12 8
+	35	[138]	LOADBOOL 	13 1 0
+	36	[138]	CALL     	11 3 0
+	37	[138]	CALL     	9 0 1
+	38	[139]	TEST     	3 1
+	39	[139]	JMP      	0 6	; to 46
+	40	[139]	GETTABUP 	9 0 -17	; _ENV "IsNumber"
+	41	[139]	GETTABLE 	10 8 -18	; "diff_score_min"
+	42	[139]	CALL     	9 2 2
+	43	[139]	TEST     	9 0
+	44	[139]	JMP      	0 1	; to 46
+	45	[140]	LOADBOOL 	3 1 0
+	46	[137]	TFORCALL 	4 2
+	47	[137]	TFORLOOP 	6 -20	; to 28
+	48	[143]	SETTABLE 	0 -19 3	; "m_bUseDiff" -
+	49	[144]	TEST     	3 0
+	50	[144]	JMP      	0 7	; to 58
+	51	[145]	GETTABUP 	4 0 -13	; _ENV "table"
+	52	[145]	GETTABLE 	4 4 -20	; "sort"
+	53	[145]	GETTABLE 	5 0 -6	; "m_config"
+	54	[145]	GETTABLE 	5 5 -10	; "finishOrderScoreConfig"
+	55	[147]	CLOSURE  	6 0	; 0000023F2A3B5990
+	56	[145]	CALL     	4 3 1
+	57	[147]	JMP      	0 6	; to 64
+	58	[149]	GETTABUP 	4 0 -13	; _ENV "table"
+	59	[149]	GETTABLE 	4 4 -20	; "sort"
+	60	[149]	GETTABLE 	5 0 -6	; "m_config"
+	61	[149]	GETTABLE 	5 5 -10	; "finishOrderScoreConfig"
+	62	[151]	CLOSURE  	6 1	; 0000023F2A3B5A10
+	63	[149]	CALL     	4 3 1
+	64	[155]	GETTABLE 	4 1 -21	; "floatRaceConfig"
+	65	[155]	GETTABLE 	4 4 -22	; 1
+	66	[155]	GETTABLE 	4 4 -23	; "isDifficultySelect"
+	67	[155]	EQ       	0 4 -24	; - 0
+	68	[155]	JMP      	0 2	; to 71
+	69	[157]	SETTABLE 	0 -25 -26	; "m_bDifficultySelect" false
+	70	[157]	JMP      	0 6	; to 77
+	71	[158]	GETTABLE 	4 1 -21	; "floatRaceConfig"
+	72	[158]	GETTABLE 	4 4 -22	; 1
+	73	[158]	GETTABLE 	4 4 -23	; "isDifficultySelect"
+	74	[158]	EQ       	0 4 -22	; - 1
+	75	[158]	JMP      	0 1	; to 77
+	76	[159]	SETTABLE 	0 -25 -27	; "m_bDifficultySelect" true
+	77	[163]	GETTABLE 	4 0 -6	; "m_config"
+	78	[163]	GETTABLE 	5 1 -21	; "floatRaceConfig"
+	79	[163]	GETTABLE 	5 5 -22	; 1
+	80	[163]	GETTABLE 	5 5 -29	; "round"
+	81	[163]	SETTABLE 	4 -28 5	; "roundCount" -
+	82	[171]	CLOSURE  	4 2	; 0000023F2A3B5A90
+	83	[175]	GETTABLE 	5 0 -6	; "m_config"
+	84	[175]	NEWTABLE 	6 0 0
+	85	[175]	SETTABLE 	5 -30 6	; "rewardConfigs" -
+	86	[176]	GETTABUP 	5 0 -15	; _ENV "Table"
+	87	[176]	GETTABLE 	5 5 -16	; "DeepCopy"
+	88	[176]	GETTABLE 	6 1 -31	; "floatRaceReward"
+	89	[176]	LOADBOOL 	7 1 0
+	90	[176]	CALL     	5 3 2
+	91	[177]	GETTABLE 	6 0 -25	; "m_bDifficultySelect"
+	92	[177]	TEST     	6 0
+	93	[177]	JMP      	0 5	; to 99
+	94	[178]	GETTABUP 	6 0 -13	; _ENV "table"
+	95	[178]	GETTABLE 	6 6 -20	; "sort"
+	96	[178]	MOVE     	7 5
+	97	[178]	MOVE     	8 4
+	98	[178]	CALL     	6 3 1
+	99	[181]	GETTABUP 	6 0 -8	; _ENV "ipairs"
+	100	[181]	MOVE     	7 5
+	101	[181]	CALL     	6 2 4
+	102	[181]	JMP      	0 28	; to 131
+	103	[182]	GETTABLE 	11 10 -32	; "difficultyMode"
+	104	[182]	EQ       	0 11 -33	; - nil
+	105	[182]	JMP      	0 3	; to 109
+	106	[183]	GETTABUP 	11 0 -34	; _ENV "EFloatRaceDifficultyMode"
+	107	[183]	GETTABLE 	11 11 -35	; "None"
+	108	[183]	SETTABLE 	10 -32 11	; "difficultyMode" -
+	109	[186]	GETTABLE 	11 0 -6	; "m_config"
+	110	[186]	GETTABLE 	11 11 -30	; "rewardConfigs"
+	111	[186]	GETTABLE 	12 10 -32	; "difficultyMode"
+	112	[186]	GETTABLE 	11 11 12
+	113	[186]	EQ       	0 11 -33	; - nil
+	114	[186]	JMP      	0 5	; to 120
+	115	[187]	GETTABLE 	11 0 -6	; "m_config"
+	116	[187]	GETTABLE 	11 11 -30	; "rewardConfigs"
+	117	[187]	GETTABLE 	12 10 -32	; "difficultyMode"
+	118	[187]	NEWTABLE 	13 0 0
+	119	[187]	SETTABLE 	11 12 13
+	120	[191]	NEWTABLE 	11 0 2
+	121	[192]	GETTABLE 	12 10 -36	; "target"
+	122	[192]	SETTABLE 	11 -36 12	; "target" -
+	123	[193]	GETTABLE 	12 10 -37	; "rewards"
+	124	[193]	SETTABLE 	11 -37 12	; "rewards" -
+	125	[195]	GETTABLE 	12 0 -6	; "m_config"
+	126	[195]	GETTABLE 	12 12 -30	; "rewardConfigs"
+	127	[195]	GETTABLE 	13 10 -32	; "difficultyMode"
+	128	[195]	GETTABLE 	12 12 13
+	129	[195]	GETTABLE 	13 10 -38	; "raceLevel"
+	130	[195]	SETTABLE 	12 13 11
+	131	[181]	TFORCALL 	6 2
+	132	[181]	TFORLOOP 	8 -30	; to 103
+	133	[199]	GETTABLE 	6 0 -6	; "m_config"
+	134	[199]	NEWTABLE 	7 0 0
+	135	[199]	SETTABLE 	6 -39 7	; "robotConfigs" -
+	136	[200]	GETTABUP 	6 0 -15	; _ENV "Table"
+	137	[200]	GETTABLE 	6 6 -16	; "DeepCopy"
+	138	[200]	GETTABLE 	7 1 -40	; "floatRaceRobot"
+	139	[200]	LOADBOOL 	8 1 0
+	140	[200]	CALL     	6 3 2
+	141	[201]	GETTABLE 	7 0 -25	; "m_bDifficultySelect"
+	142	[201]	TEST     	7 0
+	143	[201]	JMP      	0 5	; to 149
+	144	[202]	GETTABUP 	7 0 -13	; _ENV "table"
+	145	[202]	GETTABLE 	7 7 -20	; "sort"
+	146	[202]	MOVE     	8 6
+	147	[202]	MOVE     	9 4
+	148	[202]	CALL     	7 3 1
+	149	[205]	GETTABUP 	7 0 -8	; _ENV "ipairs"
+	150	[205]	MOVE     	8 6
+	151	[205]	CALL     	7 2 4
+	152	[205]	JMP      	0 81	; to 234
+	153	[206]	GETTABLE 	12 11 -32	; "difficultyMode"
+	154	[206]	EQ       	0 12 -33	; - nil
+	155	[206]	JMP      	0 1	; to 157
+	156	[207]	SETTABLE 	11 -32 -24	; "difficultyMode" 0
+	157	[210]	GETTABLE 	12 0 -6	; "m_config"
+	158	[210]	GETTABLE 	12 12 -39	; "robotConfigs"
+	159	[210]	GETTABLE 	13 11 -32	; "difficultyMode"
+	160	[210]	GETTABLE 	12 12 13
+	161	[210]	EQ       	0 12 -33	; - nil
+	162	[210]	JMP      	0 5	; to 168
+	163	[211]	GETTABLE 	12 0 -6	; "m_config"
+	164	[211]	GETTABLE 	12 12 -39	; "robotConfigs"
+	165	[211]	GETTABLE 	13 11 -32	; "difficultyMode"
+	166	[211]	NEWTABLE 	14 0 0
+	167	[211]	SETTABLE 	12 13 14
+	168	[214]	NEWTABLE 	12 0 3
+	169	[215]	GETTABLE 	13 11 -41	; "upgradeSlotsNum"
+	170	[215]	SETTABLE 	12 -41 13	; "upgradeSlotsNum" -
+	171	[216]	GETTABLE 	13 11 -42	; "maxRobotArriveTime"
+	172	[216]	SETTABLE 	12 -42 13	; "maxRobotArriveTime" -
+	173	[217]	NEWTABLE 	13 0 0
+	174	[217]	SETTABLE 	12 -43 13	; "robotSpeed" -
+	175	[220]	GETTABUP 	13 0 -8	; _ENV "ipairs"
+	176	[220]	GETTABLE 	14 11 -43	; "robotSpeed"
+	177	[220]	CALL     	13 2 4
+	178	[220]	JMP      	0 47	; to 226
+	179	[221]	GETTABUP 	18 0 -44	; _ENV "StringUtil"
+	180	[221]	GETTABLE 	18 18 -45	; "Split"
+	181	[221]	MOVE     	19 17
+	182	[221]	LOADK    	20 -46	; ","
+	183	[221]	CALL     	18 3 2
+	184	[223]	GETTABUP 	19 0 -47	; _ENV "tonumber"
+	185	[223]	GETTABLE 	20 18 -22	; 1
+	186	[223]	CALL     	19 2 2
+	187	[223]	EQ       	1 19 -24	; - 0
+	188	[223]	JMP      	0 9	; to 198
+	189	[223]	GETTABUP 	19 0 -47	; _ENV "tonumber"
+	190	[223]	GETTABLE 	20 18 -48	; 2
+	191	[223]	CALL     	19 2 2
+	192	[223]	EQ       	1 19 -24	; - 0
+	193	[223]	JMP      	0 4	; to 198
+	194	[223]	GETTABLE 	19 18 -22	; 1
+	195	[223]	GETTABLE 	20 18 -48	; 2
+	196	[223]	LE       	0 20 19
+	197	[223]	JMP      	0 12	; to 210
+	198	[224]	GETTABUP 	19 0 -1	; _ENV "GM"
+	199	[224]	GETTABLE 	19 19 -49	; "BIManager"
+	200	[224]	SELF     	19 19 -50	; "LogErrorInfo"
+	201	[224]	GETTABUP 	21 0 -51	; _ENV "EBIType"
+	202	[224]	GETTABLE 	21 21 -52	; "FloatRaceRobotConfigError"
+	203	[225]	GETTABUP 	22 0 -53	; _ENV "string"
+	204	[225]	GETTABLE 	22 22 -54	; "format"
+	205	[225]	LOADK    	23 -55	; "robot config: min=%s, max=%s"
+	206	[225]	GETTABLE 	24 18 -22	; 1
+	207	[225]	GETTABLE 	25 18 -48	; 2
+	208	[225]	CALL     	22 4 0
+	209	[224]	CALL     	19 0 1
+	210	[227]	NEWTABLE 	19 0 3
+	211	[228]	GETTABLE 	20 18 -22	; 1
+	212	[228]	GETTABLE 	21 11 -42	; "maxRobotArriveTime"
+	213	[228]	MUL      	20 20 21
+	214	[228]	SETTABLE 	19 -56 20	; "minTime" -
+	215	[229]	GETTABLE 	20 18 -48	; 2
+	216	[229]	GETTABLE 	21 11 -42	; "maxRobotArriveTime"
+	217	[229]	MUL      	20 20 21
+	218	[229]	SETTABLE 	19 -57 20	; "maxTime" -
+	219	[230]	GETTABLE 	20 18 -59	; 3
+	220	[230]	SETTABLE 	19 -58 20	; "num" -
+	221	[232]	GETTABUP 	20 0 -13	; _ENV "table"
+	222	[232]	GETTABLE 	20 20 -14	; "insert"
+	223	[232]	GETTABLE 	21 12 -43	; "robotSpeed"
+	224	[232]	MOVE     	22 19
+	225	[232]	CALL     	20 3 1
+	226	[220]	TFORCALL 	13 2
+	227	[220]	TFORLOOP 	15 -49	; to 179
+	228	[235]	GETTABLE 	13 0 -6	; "m_config"
+	229	[235]	GETTABLE 	13 13 -39	; "robotConfigs"
+	230	[235]	GETTABLE 	14 11 -32	; "difficultyMode"
+	231	[235]	GETTABLE 	13 13 14
+	232	[235]	GETTABLE 	14 11 -38	; "raceLevel"
+	233	[235]	SETTABLE 	13 14 12
+	234	[205]	TFORCALL 	7 2
+	235	[205]	TFORLOOP 	9 -83	; to 153
+	236	[237]	RETURN   	0 1
+constants (59) for 0000023F2A3B4580:
+	1	"GM"
+	2	"ConfigModel"
+	3	"GetLocalConfig"
+	4	"LocalConfigKey"
+	5	"MergeItemScoreConfig"
+	6	"m_config"
+	7	"mergeItemScoreConfig"
+	8	"ipairs"
+	9	"item_id"
+	10	"finishOrderScoreConfig"
+	11	"pairs"
+	12	"eventOrderScore"
+	13	"table"
+	14	"insert"
+	15	"Table"
+	16	"DeepCopy"
+	17	"IsNumber"
+	18	"diff_score_min"
+	19	"m_bUseDiff"
+	20	"sort"
+	21	"floatRaceConfig"
+	22	1
+	23	"isDifficultySelect"
+	24	0
+	25	"m_bDifficultySelect"
+	26	false
+	27	true
+	28	"roundCount"
+	29	"round"
+	30	"rewardConfigs"
+	31	"floatRaceReward"
+	32	"difficultyMode"
+	33	nil
+	34	"EFloatRaceDifficultyMode"
+	35	"None"
+	36	"target"
+	37	"rewards"
+	38	"raceLevel"
+	39	"robotConfigs"
+	40	"floatRaceRobot"
+	41	"upgradeSlotsNum"
+	42	"maxRobotArriveTime"
+	43	"robotSpeed"
+	44	"StringUtil"
+	45	"Split"
+	46	","
+	47	"tonumber"
+	48	2
+	49	"BIManager"
+	50	"LogErrorInfo"
+	51	"EBIType"
+	52	"FloatRaceRobotConfigError"
+	53	"string"
+	54	"format"
+	55	"robot config: min=%s, max=%s"
+	56	"minTime"
+	57	"maxTime"
+	58	"num"
+	59	3
+locals (36) for 0000023F2A3B4580:
+	0	self	1	237
+	1	config	1	237
+	2	mergeConfig	7	237
+	3	(for generator)	13	20
+	4	(for state)	13	20
+	5	(for control)	13	20
+	6	_	14	18
+	7	data	14	18
+	8	isUseDiff	24	237
+	9	(for generator)	27	48
+	10	(for state)	27	48
+	11	(for control)	27	48
+	12	_	28	46
+	13	cfg	28	46
+	14	sortFunc	83	237
+	15	rewardConfigs	91	237
+	16	(for generator)	102	133
+	17	(for state)	102	133
+	18	(for control)	102	133
+	19	_	103	131
+	20	cfg	103	131
+	21	rewardConfig	125	131
+	22	robotConfigs	141	237
+	23	(for generator)	152	236
+	24	(for state)	152	236
+	25	(for control)	152	236
+	26	_	153	234
+	27	cfg	153	234
+	28	robotConfig	175	234
+	29	(for generator)	178	228
+	30	(for state)	178	228
+	31	(for control)	178	228
+	32	_	179	226
+	33	spCfg	179	226
+	34	spConfig	184	226
+	35	speed	221	226
+upvalues (1) for 0000023F2A3B4580:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:145,147> (8 instructions at 0000023F2A3B5990)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[146]	GETTABLE 	2 0 -1	; "diff_score_min"
+	2	[146]	GETTABLE 	3 1 -1	; "diff_score_min"
+	3	[146]	LT       	1 2 3
+	4	[146]	JMP      	0 1	; to 6
+	5	[146]	LOADBOOL 	2 0 1
+	6	[146]	LOADBOOL 	2 1 0
+	7	[146]	RETURN   	2 2
+	8	[147]	RETURN   	0 1
+constants (1) for 0000023F2A3B5990:
+	1	"diff_score_min"
+locals (2) for 0000023F2A3B5990:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000023F2A3B5990:
+
+function <FloatRaceModel.lua:149,151> (8 instructions at 0000023F2A3B5A10)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[150]	GETTABLE 	2 0 -1	; "gold_min"
+	2	[150]	GETTABLE 	3 1 -1	; "gold_min"
+	3	[150]	LT       	1 2 3
+	4	[150]	JMP      	0 1	; to 6
+	5	[150]	LOADBOOL 	2 0 1
+	6	[150]	LOADBOOL 	2 1 0
+	7	[150]	RETURN   	2 2
+	8	[151]	RETURN   	0 1
+constants (1) for 0000023F2A3B5A10:
+	1	"gold_min"
+locals (2) for 0000023F2A3B5A10:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000023F2A3B5A10:
+
+function <FloatRaceModel.lua:165,171> (20 instructions at 0000023F2A3B5A90)
+2 params, 4 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[166]	GETTABLE 	2 0 -1	; "difficultyMode"
+	2	[166]	GETTABLE 	3 1 -1	; "difficultyMode"
+	3	[166]	EQ       	0 2 3
+	4	[166]	JMP      	0 8	; to 13
+	5	[167]	GETTABLE 	2 0 -2	; "raceLevel"
+	6	[167]	GETTABLE 	3 1 -2	; "raceLevel"
+	7	[167]	LT       	1 2 3
+	8	[167]	JMP      	0 1	; to 10
+	9	[167]	LOADBOOL 	2 0 1
+	10	[167]	LOADBOOL 	2 1 0
+	11	[167]	RETURN   	2 2
+	12	[167]	JMP      	0 7	; to 20
+	13	[169]	GETTABLE 	2 0 -1	; "difficultyMode"
+	14	[169]	GETTABLE 	3 1 -1	; "difficultyMode"
+	15	[169]	LT       	1 2 3
+	16	[169]	JMP      	0 1	; to 18
+	17	[169]	LOADBOOL 	2 0 1
+	18	[169]	LOADBOOL 	2 1 0
+	19	[169]	RETURN   	2 2
+	20	[171]	RETURN   	0 1
+constants (2) for 0000023F2A3B5A90:
+	1	"difficultyMode"
+	2	"raceLevel"
+locals (2) for 0000023F2A3B5A90:
+	0	a	1	21
+	1	b	1	21
+upvalues (0) for 0000023F2A3B5A90:
+
+function <FloatRaceModel.lua:241,272> (46 instructions at 0000023F2A3B6930)
+1 param, 4 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[243]	SELF     	1 0 -1	; "GetState"
+	2	[243]	CALL     	1 2 2
+	3	[243]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[243]	GETTABLE 	2 2 -3	; "Started"
+	5	[243]	EQ       	1 1 2
+	6	[243]	JMP      	0 2	; to 9
+	7	[244]	LOADBOOL 	1 0 0
+	8	[244]	RETURN   	1 2
+	9	[248]	GETTABLE 	1 0 -4	; "m_currentInfo"
+	10	[248]	EQ       	0 1 -5	; - nil
+	11	[248]	JMP      	0 2	; to 14
+	12	[249]	LOADBOOL 	1 0 0
+	13	[249]	RETURN   	1 2
+	14	[253]	SELF     	1 0 -6	; "GetRound"
+	15	[253]	CALL     	1 2 2
+	16	[253]	GETTABLE 	2 0 -7	; "m_config"
+	17	[253]	GETTABLE 	2 2 -8	; "roundCount"
+	18	[253]	LT       	0 2 1
+	19	[253]	JMP      	0 2	; to 22
+	20	[254]	LOADBOOL 	1 0 0
+	21	[254]	RETURN   	1 2
+	22	[258]	SELF     	1 0 -9	; "GetLevel"
+	23	[258]	CALL     	1 2 2
+	24	[258]	SELF     	2 0 -10	; "GetMaxLevel"
+	25	[258]	CALL     	2 2 2
+	26	[258]	LT       	0 2 1
+	27	[258]	JMP      	0 2	; to 30
+	28	[259]	LOADBOOL 	1 0 0
+	29	[259]	RETURN   	1 2
+	30	[263]	SELF     	1 0 -9	; "GetLevel"
+	31	[263]	CALL     	1 2 2
+	32	[263]	SELF     	2 0 -11	; "GetLastLevel"
+	33	[263]	CALL     	2 2 2
+	34	[263]	LT       	0 2 1
+	35	[263]	JMP      	0 2	; to 38
+	36	[264]	LOADBOOL 	1 0 0
+	37	[264]	RETURN   	1 2
+	38	[268]	SELF     	1 0 -12	; "GetLevelFinishTime"
+	39	[268]	CALL     	1 2 2
+	40	[268]	EQ       	1 1 -5	; - nil
+	41	[268]	JMP      	0 2	; to 44
+	42	[269]	LOADBOOL 	1 0 0
+	43	[269]	RETURN   	1 2
+	44	[271]	LOADBOOL 	1 1 0
+	45	[271]	RETURN   	1 2
+	46	[272]	RETURN   	0 1
+constants (12) for 0000023F2A3B6930:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_currentInfo"
+	5	nil
+	6	"GetRound"
+	7	"m_config"
+	8	"roundCount"
+	9	"GetLevel"
+	10	"GetMaxLevel"
+	11	"GetLastLevel"
+	12	"GetLevelFinishTime"
+locals (1) for 0000023F2A3B6930:
+	0	self	1	47
+upvalues (1) for 0000023F2A3B6930:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:274,278> (11 instructions at 0000023F2A3B6C00)
+2 params, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[275]	GETTABLE 	2 1 -1	; "Source"
+	2	[275]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[275]	CALL     	2 2 2
+	4	[275]	GETTABUP 	3 0 -3	; _ENV "GM"
+	5	[275]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	6	[275]	EQ       	0 2 3
+	7	[275]	JMP      	0 3	; to 11
+	8	[276]	SELF     	2 0 -5	; "_TryAddMergeScore"
+	9	[276]	GETTABLE 	4 1 -1	; "Source"
+	10	[276]	CALL     	2 3 1
+	11	[278]	RETURN   	0 1
+constants (5) for 0000023F2A3B6C00:
+	1	"Source"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"_TryAddMergeScore"
+locals (2) for 0000023F2A3B6C00:
+	0	self	1	12
+	1	message	1	12
+upvalues (1) for 0000023F2A3B6C00:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:281,294> (26 instructions at 0000023F2A3B76D0)
+2 params, 9 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[282]	SELF     	2 0 -1	; "CanAddScore"
+	2	[282]	CALL     	2 2 2
+	3	[282]	TEST     	2 1
+	4	[282]	JMP      	0 1	; to 6
+	5	[283]	RETURN   	0 1
+	6	[285]	SELF     	2 1 -2	; "GetType"
+	7	[285]	CALL     	2 2 2
+	8	[286]	GETTABLE 	3 0 -3	; "m_config"
+	9	[286]	GETTABLE 	3 3 -4	; "mergeItemScoreConfig"
+	10	[286]	GETTABLE 	3 3 2
+	11	[286]	EQ       	0 3 -5	; - nil
+	12	[286]	JMP      	0 1	; to 14
+	13	[287]	RETURN   	0 1
+	14	[290]	GETTABLE 	3 0 -3	; "m_config"
+	15	[290]	GETTABLE 	3 3 -4	; "mergeItemScoreConfig"
+	16	[290]	GETTABLE 	3 3 2
+	17	[290]	GETTABLE 	3 3 -6	; "merge_score"
+	18	[291]	EQ       	1 3 -5	; - nil
+	19	[291]	JMP      	0 6	; to 26
+	20	[292]	SELF     	4 0 -7	; "_AddScore"
+	21	[292]	MOVE     	6 3
+	22	[292]	GETTABUP 	7 0 -8	; _ENV "EFloatRaceAddScoreScene"
+	23	[292]	GETTABLE 	7 7 -9	; "Merge"
+	24	[292]	MOVE     	8 1
+	25	[292]	CALL     	4 5 1
+	26	[294]	RETURN   	0 1
+constants (9) for 0000023F2A3B76D0:
+	1	"CanAddScore"
+	2	"GetType"
+	3	"m_config"
+	4	"mergeItemScoreConfig"
+	5	nil
+	6	"merge_score"
+	7	"_AddScore"
+	8	"EFloatRaceAddScoreScene"
+	9	"Merge"
+locals (4) for 0000023F2A3B76D0:
+	0	self	1	27
+	1	itemModel	1	27
+	2	itemType	8	27
+	3	mergeScore	18	27
+upvalues (1) for 0000023F2A3B76D0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:297,336> (70 instructions at 0000023F2A3B7950)
+2 params, 10 slots, 1 upvalue, 8 locals, 23 constants, 0 functions
+	1	[298]	SELF     	2 0 -1	; "CanAddScore"
+	2	[298]	CALL     	2 2 2
+	3	[298]	TEST     	2 1
+	4	[298]	JMP      	0 1	; to 6
+	5	[299]	RETURN   	0 1
+	6	[302]	LOADNIL  	2 1
+	7	[303]	GETTABLE 	4 0 -2	; "m_bUseDiff"
+	8	[303]	TEST     	4 0
+	9	[303]	JMP      	0 16	; to 26
+	10	[304]	SELF     	4 1 -3	; "GetDiffScore"
+	11	[304]	CALL     	4 2 2
+	12	[305]	EQ       	0 4 -4	; - 0
+	13	[305]	JMP      	0 1	; to 15
+	14	[306]	RETURN   	0 1
+	15	[309]	GETTABUP 	5 0 -5	; _ENV "Table"
+	16	[309]	GETTABLE 	5 5 -6	; "BinarySearch"
+	17	[309]	GETTABLE 	6 0 -7	; "m_config"
+	18	[309]	GETTABLE 	6 6 -8	; "finishOrderScoreConfig"
+	19	[309]	MOVE     	7 4
+	20	[309]	LOADK    	8 -9	; "diff_score_min"
+	21	[309]	LOADK    	9 -10	; "diff_score_max"
+	22	[309]	CALL     	5 5 2
+	23	[309]	MOVE     	2 5
+	24	[310]	MOVE     	3 4
+	25	[310]	JMP      	0 15	; to 41
+	26	[312]	SELF     	4 1 -11	; "GetPrice"
+	27	[312]	CALL     	4 2 2
+	28	[313]	EQ       	0 4 -4	; - 0
+	29	[313]	JMP      	0 1	; to 31
+	30	[314]	RETURN   	0 1
+	31	[317]	GETTABUP 	5 0 -5	; _ENV "Table"
+	32	[317]	GETTABLE 	5 5 -6	; "BinarySearch"
+	33	[317]	GETTABLE 	6 0 -7	; "m_config"
+	34	[317]	GETTABLE 	6 6 -8	; "finishOrderScoreConfig"
+	35	[317]	MOVE     	7 4
+	36	[317]	LOADK    	8 -12	; "gold_min"
+	37	[317]	LOADK    	9 -13	; "gold_max"
+	38	[317]	CALL     	5 5 2
+	39	[317]	MOVE     	2 5
+	40	[318]	MOVE     	3 4
+	41	[321]	EQ       	0 2 -14	; - nil
+	42	[321]	JMP      	0 1	; to 44
+	43	[322]	RETURN   	0 1
+	44	[325]	GETTABLE 	4 0 -7	; "m_config"
+	45	[325]	GETTABLE 	4 4 -8	; "finishOrderScoreConfig"
+	46	[325]	GETTABLE 	4 4 2
+	47	[327]	GETTABLE 	5 4 -15	; "reward_num_percentage"
+	48	[327]	TEST     	5 0
+	49	[327]	JMP      	0 8	; to 58
+	50	[327]	GETTABUP 	5 0 -16	; _ENV "math"
+	51	[327]	GETTABLE 	5 5 -17	; "floor"
+	52	[327]	GETTABLE 	6 4 -15	; "reward_num_percentage"
+	53	[327]	MUL      	6 3 6
+	54	[327]	DIV      	6 6 -18	; - 10000
+	55	[327]	CALL     	5 2 2
+	56	[327]	TEST     	5 1
+	57	[327]	JMP      	0 1	; to 59
+	58	[327]	GETTABLE 	5 4 -19	; "reward_num_fix"
+	59	[328]	LE       	0 5 -4	; - 0
+	60	[328]	JMP      	0 1	; to 62
+	61	[329]	RETURN   	0 1
+	62	[332]	NEWTABLE 	6 0 2
+	63	[333]	GETTABUP 	7 0 -20	; _ENV "PROPERTY_TYPE"
+	64	[333]	GETTABUP 	8 0 -21	; _ENV "EPropertyType"
+	65	[333]	GETTABLE 	8 8 -22	; "FloatRaceScore"
+	66	[333]	SETTABLE 	6 7 8
+	67	[334]	GETTABUP 	7 0 -23	; _ENV "PROPERTY_COUNT"
+	68	[334]	SETTABLE 	6 7 5
+	69	[335]	RETURN   	6 2
+	70	[336]	RETURN   	0 1
+constants (23) for 0000023F2A3B7950:
+	1	"CanAddScore"
+	2	"m_bUseDiff"
+	3	"GetDiffScore"
+	4	0
+	5	"Table"
+	6	"BinarySearch"
+	7	"m_config"
+	8	"finishOrderScoreConfig"
+	9	"diff_score_min"
+	10	"diff_score_max"
+	11	"GetPrice"
+	12	"gold_min"
+	13	"gold_max"
+	14	nil
+	15	"reward_num_percentage"
+	16	"math"
+	17	"floor"
+	18	10000
+	19	"reward_num_fix"
+	20	"PROPERTY_TYPE"
+	21	"EPropertyType"
+	22	"FloatRaceScore"
+	23	"PROPERTY_COUNT"
+locals (8) for 0000023F2A3B7950:
+	0	self	1	71
+	1	order	1	71
+	2	selectedIdx	7	71
+	3	score	7	71
+	4	diffScore	12	25
+	5	price	28	41
+	6	selected	47	71
+	7	count	59	71
+upvalues (1) for 0000023F2A3B7950:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:338,340> (7 instructions at 0000023F2A3B7250)
+2 params, 7 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[339]	SELF     	2 0 -1	; "_AddScore"
+	2	[339]	MOVE     	4 1
+	3	[339]	GETTABUP 	5 0 -2	; _ENV "EFloatRaceAddScoreScene"
+	4	[339]	GETTABLE 	5 5 -3	; "Order"
+	5	[339]	LOADNIL  	6 0
+	6	[339]	CALL     	2 5 1
+	7	[340]	RETURN   	0 1
+constants (3) for 0000023F2A3B7250:
+	1	"_AddScore"
+	2	"EFloatRaceAddScoreScene"
+	3	"Order"
+locals (2) for 0000023F2A3B7250:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3B7250:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:343,378> (68 instructions at 0000023F2A3B7650)
+4 params, 13 slots, 1 upvalue, 7 locals, 31 constants, 0 functions
+	1	[344]	SELF     	4 0 -1	; "GetLevel"
+	2	[344]	CALL     	4 2 2
+	3	[345]	SELF     	5 0 -2	; "GetRewardCongfigByLevel"
+	4	[345]	MOVE     	7 4
+	5	[345]	CALL     	5 3 2
+	6	[346]	EQ       	0 5 -3	; - nil
+	7	[346]	JMP      	0 1	; to 9
+	8	[347]	RETURN   	0 1
+	9	[350]	SELF     	6 0 -4	; "GetScore"
+	10	[350]	CALL     	6 2 2
+	11	[350]	GETTABLE 	7 5 -5	; "target"
+	12	[350]	LE       	0 7 6
+	13	[350]	JMP      	0 1	; to 15
+	14	[351]	RETURN   	0 1
+	15	[354]	GETTABUP 	6 0 -6	; _ENV "math"
+	16	[354]	GETTABLE 	6 6 -7	; "min"
+	17	[354]	SELF     	7 0 -4	; "GetScore"
+	18	[354]	CALL     	7 2 2
+	19	[354]	ADD      	7 7 1
+	20	[354]	GETTABLE 	8 5 -5	; "target"
+	21	[354]	CALL     	6 3 2
+	22	[355]	SELF     	7 0 -8	; "SetScore"
+	23	[355]	MOVE     	9 6
+	24	[355]	CALL     	7 3 1
+	25	[356]	SELF     	7 0 -9	; "LogActivity"
+	26	[356]	GETTABUP 	9 0 -10	; _ENV "EBIType"
+	27	[356]	GETTABLE 	9 9 -11	; "ActivityAddScore"
+	28	[356]	GETTABUP 	10 0 -12	; _ENV "GM"
+	29	[356]	GETTABLE 	10 10 -13	; "BIManager"
+	30	[356]	SELF     	10 10 -14	; "TableToString"
+	31	[356]	NEWTABLE 	12 0 2
+	32	[357]	SETTABLE 	12 -15 1	; "num" -
+	33	[358]	SETTABLE 	12 -16 2	; "type" -
+	34	[356]	CALL     	10 3 0
+	35	[356]	CALL     	7 0 1
+	36	[361]	GETTABUP 	7 0 -17	; _ENV "EventDispatcher"
+	37	[361]	GETTABLE 	7 7 -18	; "DispatchEvent"
+	38	[361]	GETTABUP 	8 0 -19	; _ENV "EEventType"
+	39	[361]	GETTABLE 	8 8 -20	; "FloatRaceScoreChanged"
+	40	[361]	NEWTABLE 	9 0 3
+	41	[362]	SETTABLE 	9 -21 2	; "Scene" -
+	42	[363]	SETTABLE 	9 -22 3	; "Source" -
+	43	[364]	SETTABLE 	9 -23 1	; "TokenScore" -
+	44	[361]	CALL     	7 3 1
+	45	[368]	GETTABLE 	7 5 -5	; "target"
+	46	[368]	LE       	0 7 6
+	47	[368]	JMP      	0 20	; to 68
+	48	[370]	GETTABUP 	7 0 -24	; _ENV "ApplicationManager"
+	49	[370]	GETTABLE 	7 7 -25	; "Instance"
+	50	[370]	GETTABLE 	7 7 -26	; "isNetworkConnected"
+	51	[370]	TEST     	7 1
+	52	[370]	JMP      	0 12	; to 65
+	53	[371]	SELF     	7 0 -27	; "SetLevelFinishTime"
+	54	[371]	GETTABUP 	9 0 -12	; _ENV "GM"
+	55	[371]	GETTABLE 	9 9 -28	; "GameModel"
+	56	[371]	SELF     	9 9 -29	; "GetServerTime"
+	57	[371]	CALL     	9 2 0
+	58	[371]	CALL     	7 0 1
+	59	[372]	GETTABUP 	7 0 -17	; _ENV "EventDispatcher"
+	60	[372]	GETTABLE 	7 7 -18	; "DispatchEvent"
+	61	[372]	GETTABUP 	8 0 -19	; _ENV "EEventType"
+	62	[372]	GETTABLE 	8 8 -30	; "FloatRaceFullScoreWithoutNet"
+	63	[372]	CALL     	7 2 1
+	64	[373]	RETURN   	0 1
+	65	[376]	SELF     	7 0 -31	; "_LevelUp"
+	66	[376]	MOVE     	9 4
+	67	[376]	CALL     	7 3 1
+	68	[378]	RETURN   	0 1
+constants (31) for 0000023F2A3B7650:
+	1	"GetLevel"
+	2	"GetRewardCongfigByLevel"
+	3	nil
+	4	"GetScore"
+	5	"target"
+	6	"math"
+	7	"min"
+	8	"SetScore"
+	9	"LogActivity"
+	10	"EBIType"
+	11	"ActivityAddScore"
+	12	"GM"
+	13	"BIManager"
+	14	"TableToString"
+	15	"num"
+	16	"type"
+	17	"EventDispatcher"
+	18	"DispatchEvent"
+	19	"EEventType"
+	20	"FloatRaceScoreChanged"
+	21	"Scene"
+	22	"Source"
+	23	"TokenScore"
+	24	"ApplicationManager"
+	25	"Instance"
+	26	"isNetworkConnected"
+	27	"SetLevelFinishTime"
+	28	"GameModel"
+	29	"GetServerTime"
+	30	"FloatRaceFullScoreWithoutNet"
+	31	"_LevelUp"
+locals (7) for 0000023F2A3B7650:
+	0	self	1	69
+	1	addScore	1	69
+	2	scene	1	69
+	3	item	1	69
+	4	level	3	69
+	5	rewardConfig	6	69
+	6	score	22	69
+upvalues (1) for 0000023F2A3B7650:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:381,405> (63 instructions at 0000023F2A3B73D0)
+2 params, 8 slots, 1 upvalue, 3 locals, 26 constants, 0 functions
+	1	[382]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	2	[382]	GETTABLE 	2 2 -2	; "finishAliveNum"
+	3	[382]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	4	[382]	GETTABLE 	3 3 -3	; "curAliveNum"
+	5	[382]	SUB      	2 2 3
+	6	[382]	ADD      	2 2 -4	; - 1
+	7	[383]	SELF     	3 0 -5	; "SetRank"
+	8	[383]	MOVE     	5 2
+	9	[383]	CALL     	3 3 1
+	10	[384]	SELF     	3 0 -6	; "LogLevelEnd"
+	11	[384]	LOADBOOL 	5 1 0
+	12	[384]	CALL     	3 3 1
+	13	[386]	SELF     	3 0 -7	; "SetLevel"
+	14	[386]	ADD      	5 1 -4	; - 1
+	15	[386]	CALL     	3 3 1
+	16	[387]	SELF     	3 0 -8	; "LogActivity"
+	17	[387]	GETTABUP 	5 0 -9	; _ENV "EBIType"
+	18	[387]	GETTABLE 	5 5 -10	; "ActivityRankUp"
+	19	[387]	SELF     	6 0 -11	; "GetMaxLevel"
+	20	[387]	CALL     	6 2 2
+	21	[387]	EQ       	0 1 6
+	22	[387]	JMP      	0 3	; to 26
+	23	[387]	LOADK    	6 -12	; 0
+	24	[387]	TEST     	6 1
+	25	[387]	JMP      	0 1	; to 27
+	26	[387]	MOVE     	6 1
+	27	[387]	CALL     	3 4 1
+	28	[389]	SELF     	3 0 -13	; "SetRecoverRewardsLevel"
+	29	[389]	MOVE     	5 1
+	30	[389]	CALL     	3 3 1
+	31	[391]	SELF     	3 0 -14	; "RandomDeleteAvatar"
+	32	[391]	CALL     	3 2 1
+	33	[392]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	34	[392]	SETTABLE 	3 -15 -16	; "arriveTimeList" nil
+	35	[393]	SELF     	3 0 -17	; "SaveCurrentInfo"
+	36	[393]	CALL     	3 2 1
+	37	[395]	GETTABUP 	3 0 -18	; _ENV "EventDispatcher"
+	38	[395]	GETTABLE 	3 3 -19	; "DispatchEvent"
+	39	[395]	GETTABUP 	4 0 -20	; _ENV "EEventType"
+	40	[395]	GETTABLE 	4 4 -21	; "OrderStatusChanged"
+	41	[395]	CALL     	3 2 1
+	42	[398]	ADD      	3 1 -4	; - 1
+	43	[398]	SELF     	4 0 -11	; "GetMaxLevel"
+	44	[398]	CALL     	4 2 2
+	45	[398]	LT       	0 4 3
+	46	[398]	JMP      	0 5	; to 52
+	47	[399]	SELF     	3 0 -22	; "SetRound"
+	48	[399]	SELF     	5 0 -23	; "GetRound"
+	49	[399]	CALL     	5 2 2
+	50	[399]	ADD      	5 5 -4	; - 1
+	51	[399]	CALL     	3 3 1
+	52	[402]	SELF     	3 0 -23	; "GetRound"
+	53	[402]	CALL     	3 2 2
+	54	[402]	GETTABLE 	4 0 -24	; "m_config"
+	55	[402]	GETTABLE 	4 4 -25	; "roundCount"
+	56	[402]	LT       	0 4 3
+	57	[402]	JMP      	0 5	; to 63
+	58	[403]	GETTABUP 	3 0 -18	; _ENV "EventDispatcher"
+	59	[403]	GETTABLE 	3 3 -19	; "DispatchEvent"
+	60	[403]	GETTABUP 	4 0 -20	; _ENV "EEventType"
+	61	[403]	GETTABLE 	4 4 -26	; "FloatRaceFinishedAll"
+	62	[403]	CALL     	3 2 1
+	63	[405]	RETURN   	0 1
+constants (26) for 0000023F2A3B73D0:
+	1	"m_currentInfo"
+	2	"finishAliveNum"
+	3	"curAliveNum"
+	4	1
+	5	"SetRank"
+	6	"LogLevelEnd"
+	7	"SetLevel"
+	8	"LogActivity"
+	9	"EBIType"
+	10	"ActivityRankUp"
+	11	"GetMaxLevel"
+	12	0
+	13	"SetRecoverRewardsLevel"
+	14	"RandomDeleteAvatar"
+	15	"arriveTimeList"
+	16	nil
+	17	"SaveCurrentInfo"
+	18	"EventDispatcher"
+	19	"DispatchEvent"
+	20	"EEventType"
+	21	"OrderStatusChanged"
+	22	"SetRound"
+	23	"GetRound"
+	24	"m_config"
+	25	"roundCount"
+	26	"FloatRaceFinishedAll"
+locals (3) for 0000023F2A3B73D0:
+	0	self	1	64
+	1	level	1	64
+	2	rank	7	64
+upvalues (1) for 0000023F2A3B73D0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:407,425> (41 instructions at 0000023F2A3B78D0)
+2 params, 7 slots, 1 upvalue, 3 locals, 22 constants, 0 functions
+	1	[408]	NEWTABLE 	2 0 7
+	2	[409]	SELF     	3 0 -2	; "GetId"
+	3	[409]	CALL     	3 2 2
+	4	[409]	SETTABLE 	2 -1 3	; "id" -
+	5	[410]	SELF     	3 0 -4	; "GetRound"
+	6	[410]	CALL     	3 2 2
+	7	[410]	SETTABLE 	2 -3 3	; "r" -
+	8	[411]	SELF     	3 0 -6	; "GetLevel"
+	9	[411]	CALL     	3 2 2
+	10	[411]	SETTABLE 	2 -5 3	; "lv" -
+	11	[412]	SELF     	3 0 -8	; "GetDifficultyMode"
+	12	[412]	CALL     	3 2 2
+	13	[412]	SETTABLE 	2 -7 3	; "diff" -
+	14	[413]	SELF     	3 0 -10	; "GetCurLevelTryTimes"
+	15	[413]	CALL     	3 2 2
+	16	[413]	SETTABLE 	2 -9 3	; "tryNum" -
+	17	[414]	SETTABLE 	2 -11 1	; "isSuccess" -
+	18	[415]	SELF     	3 0 -13	; "GetScore"
+	19	[415]	CALL     	3 2 2
+	20	[415]	SETTABLE 	2 -12 3	; "score" -
+	21	[417]	TEST     	1 0
+	22	[417]	JMP      	0 7	; to 30
+	23	[418]	SELF     	3 0 -15	; "GetRank"
+	24	[418]	CALL     	3 2 2
+	25	[418]	SETTABLE 	2 -14 3	; "rank" -
+	26	[419]	SELF     	3 0 -16	; "SetCurLevelTryTimes"
+	27	[419]	LOADK    	5 -17	; 1
+	28	[419]	CALL     	3 3 1
+	29	[419]	JMP      	0 4	; to 34
+	30	[421]	SELF     	3 0 -16	; "SetCurLevelTryTimes"
+	31	[421]	GETTABLE 	5 2 -9	; "tryNum"
+	32	[421]	ADD      	5 5 -17	; - 1
+	33	[421]	CALL     	3 3 1
+	34	[424]	GETTABUP 	3 0 -18	; _ENV "GM"
+	35	[424]	GETTABLE 	3 3 -19	; "BIManager"
+	36	[424]	SELF     	3 3 -20	; "LogAction"
+	37	[424]	GETTABUP 	5 0 -21	; _ENV "EBIType"
+	38	[424]	GETTABLE 	5 5 -22	; "FloatRaceLevelEnd"
+	39	[424]	MOVE     	6 2
+	40	[424]	CALL     	3 4 1
+	41	[425]	RETURN   	0 1
+constants (22) for 0000023F2A3B78D0:
+	1	"id"
+	2	"GetId"
+	3	"r"
+	4	"GetRound"
+	5	"lv"
+	6	"GetLevel"
+	7	"diff"
+	8	"GetDifficultyMode"
+	9	"tryNum"
+	10	"GetCurLevelTryTimes"
+	11	"isSuccess"
+	12	"score"
+	13	"GetScore"
+	14	"rank"
+	15	"GetRank"
+	16	"SetCurLevelTryTimes"
+	17	1
+	18	"GM"
+	19	"BIManager"
+	20	"LogAction"
+	21	"EBIType"
+	22	"FloatRaceLevelEnd"
+locals (3) for 0000023F2A3B78D0:
+	0	self	1	42
+	1	bSuccess	1	42
+	2	biAction	21	42
+upvalues (1) for 0000023F2A3B78D0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:427,436> (26 instructions at 0000023F2A3B7450)
+1 param, 6 slots, 2 upvalues, 1 local, 16 constants, 0 functions
+	1	[428]	SELF     	1 0 -1	; "LogLevelEnd"
+	2	[428]	LOADBOOL 	3 0 0
+	3	[428]	CALL     	1 3 1
+	4	[430]	SETTABLE 	0 -2 -3	; "m_currentInfo" nil
+	5	[431]	SELF     	1 0 -4	; "SaveCurrentInfo"
+	6	[431]	CALL     	1 2 1
+	7	[432]	SELF     	1 0 -5	; "SetScore"
+	8	[432]	LOADK    	3 -6	; 0
+	9	[432]	CALL     	1 3 1
+	10	[433]	GETTABUP 	1 0 -7	; _ENV "EventDispatcher"
+	11	[433]	GETTABLE 	1 1 -8	; "DispatchEvent"
+	12	[433]	GETTABUP 	2 0 -9	; _ENV "EEventType"
+	13	[433]	GETTABLE 	2 2 -10	; "FloatRaceFail"
+	14	[433]	CALL     	1 2 1
+	15	[434]	GETTABLE 	1 0 -11	; "m_dbTable"
+	16	[434]	SELF     	1 1 -12	; "Set"
+	17	[434]	GETTABUP 	3 1 -13	; EStrDBKeys "FailWindowPop"
+	18	[434]	LOADK    	4 -14	; "value"
+	19	[434]	LOADK    	5 -15	; "1"
+	20	[434]	CALL     	1 5 1
+	21	[435]	GETTABUP 	1 0 -7	; _ENV "EventDispatcher"
+	22	[435]	GETTABLE 	1 1 -8	; "DispatchEvent"
+	23	[435]	GETTABUP 	2 0 -9	; _ENV "EEventType"
+	24	[435]	GETTABLE 	2 2 -16	; "OrderStatusChanged"
+	25	[435]	CALL     	1 2 1
+	26	[436]	RETURN   	0 1
+constants (16) for 0000023F2A3B7450:
+	1	"LogLevelEnd"
+	2	"m_currentInfo"
+	3	nil
+	4	"SaveCurrentInfo"
+	5	"SetScore"
+	6	0
+	7	"EventDispatcher"
+	8	"DispatchEvent"
+	9	"EEventType"
+	10	"FloatRaceFail"
+	11	"m_dbTable"
+	12	"Set"
+	13	"FailWindowPop"
+	14	"value"
+	15	"1"
+	16	"OrderStatusChanged"
+locals (1) for 0000023F2A3B7450:
+	0	self	1	27
+upvalues (2) for 0000023F2A3B7450:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:438,440> (11 instructions at 0000023F2A3B79D0)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[439]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[439]	SELF     	1 1 -2	; "GetValue"
+	3	[439]	GETTABUP 	3 0 -3	; EStrDBKeys "FailWindowPop"
+	4	[439]	LOADK    	4 -4	; "value"
+	5	[439]	CALL     	1 4 2
+	6	[439]	EQ       	1 1 -5	; - "1"
+	7	[439]	JMP      	0 1	; to 9
+	8	[439]	LOADBOOL 	1 0 1
+	9	[439]	LOADBOOL 	1 1 0
+	10	[439]	RETURN   	1 2
+	11	[440]	RETURN   	0 1
+constants (5) for 0000023F2A3B79D0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FailWindowPop"
+	4	"value"
+	5	"1"
+locals (1) for 0000023F2A3B79D0:
+	0	self	1	12
+upvalues (1) for 0000023F2A3B79D0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:442,444> (7 instructions at 0000023F2A3B6E50)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[443]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[443]	SELF     	1 1 -2	; "Set"
+	3	[443]	GETTABUP 	3 0 -3	; EStrDBKeys "FailWindowPop"
+	4	[443]	LOADK    	4 -4	; "value"
+	5	[443]	LOADK    	5 -5	; "0"
+	6	[443]	CALL     	1 5 1
+	7	[444]	RETURN   	0 1
+constants (5) for 0000023F2A3B6E50:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FailWindowPop"
+	4	"value"
+	5	"0"
+locals (1) for 0000023F2A3B6E50:
+	0	self	1	8
+upvalues (1) for 0000023F2A3B6E50:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:446,450> (32 instructions at 0000023F2A3B7150)
+3 params, 9 slots, 1 upvalue, 3 locals, 17 constants, 0 functions
+	1	[447]	SELF     	3 0 -1	; "SetRecoverRewardsLevel"
+	2	[447]	LOADK    	5 -2	; 0
+	3	[447]	CALL     	3 3 1
+	4	[448]	GETTABUP 	3 0 -3	; _ENV "RewardApi"
+	5	[448]	GETTABLE 	3 3 -4	; "AcquireRewardsLogic"
+	6	[448]	SELF     	4 0 -5	; "GetRewardCongfigByLevel"
+	7	[448]	MOVE     	6 1
+	8	[448]	CALL     	4 3 2
+	9	[448]	GETTABLE 	4 4 -6	; "rewards"
+	10	[448]	GETTABUP 	5 0 -7	; _ENV "EPropertySource"
+	11	[448]	GETTABLE 	5 5 -8	; "Give"
+	12	[448]	GETTABUP 	6 0 -9	; _ENV "EBIType"
+	13	[448]	GETTABLE 	6 6 -10	; "FloatRaceGetRewards"
+	14	[448]	GETTABUP 	7 0 -11	; _ENV "EGameMode"
+	15	[448]	GETTABLE 	7 7 -12	; "Main"
+	16	[448]	GETTABUP 	8 0 -13	; _ENV "CacheItemType"
+	17	[448]	GETTABLE 	8 8 -14	; "Type2"
+	18	[448]	CALL     	3 6 1
+	19	[449]	SELF     	3 0 -15	; "LogActivity"
+	20	[449]	GETTABUP 	5 0 -9	; _ENV "EBIType"
+	21	[449]	GETTABLE 	5 5 -16	; "ActivityGetRewards"
+	22	[449]	SELF     	6 0 -17	; "GetMaxLevel"
+	23	[449]	CALL     	6 2 2
+	24	[449]	EQ       	0 1 6
+	25	[449]	JMP      	0 3	; to 29
+	26	[449]	LOADK    	6 -2	; 0
+	27	[449]	TEST     	6 1
+	28	[449]	JMP      	0 1	; to 30
+	29	[449]	MOVE     	6 1
+	30	[449]	MOVE     	7 2
+	31	[449]	CALL     	3 5 1
+	32	[450]	RETURN   	0 1
+constants (17) for 0000023F2A3B7150:
+	1	"SetRecoverRewardsLevel"
+	2	0
+	3	"RewardApi"
+	4	"AcquireRewardsLogic"
+	5	"GetRewardCongfigByLevel"
+	6	"rewards"
+	7	"EPropertySource"
+	8	"Give"
+	9	"EBIType"
+	10	"FloatRaceGetRewards"
+	11	"EGameMode"
+	12	"Main"
+	13	"CacheItemType"
+	14	"Type2"
+	15	"LogActivity"
+	16	"ActivityGetRewards"
+	17	"GetMaxLevel"
+locals (3) for 0000023F2A3B7150:
+	0	self	1	33
+	1	level	1	33
+	2	isFinalReward	1	33
+upvalues (1) for 0000023F2A3B7150:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:452,462> (20 instructions at 0000023F2A3B74D0)
+1 param, 5 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[453]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[453]	SELF     	1 1 -2	; "GetValue"
+	3	[453]	GETTABUP 	3 0 -3	; EStrDBKeys "RecoverRewardsLevel"
+	4	[453]	LOADK    	4 -4	; "value"
+	5	[453]	CALL     	1 4 2
+	6	[454]	EQ       	1 1 -5	; - nil
+	7	[454]	JMP      	0 2	; to 10
+	8	[454]	EQ       	0 1 -6	; - "0"
+	9	[454]	JMP      	0 3	; to 13
+	10	[455]	LOADNIL  	2 0
+	11	[455]	RETURN   	2 2
+	12	[455]	JMP      	0 7	; to 20
+	13	[457]	SELF     	2 0 -7	; "GetRewardCongfigByLevel"
+	14	[457]	MOVE     	4 1
+	15	[457]	CALL     	2 3 2
+	16	[458]	EQ       	1 2 -5	; - nil
+	17	[458]	JMP      	0 2	; to 20
+	18	[459]	GETTABLE 	3 2 -8	; "rewards"
+	19	[459]	RETURN   	3 2
+	20	[462]	RETURN   	0 1
+constants (8) for 0000023F2A3B74D0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"RecoverRewardsLevel"
+	4	"value"
+	5	nil
+	6	"0"
+	7	"GetRewardCongfigByLevel"
+	8	"rewards"
+locals (3) for 0000023F2A3B74D0:
+	0	self	1	21
+	1	level	6	21
+	2	rewardConfig	16	20
+upvalues (1) for 0000023F2A3B74D0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:464,466> (7 instructions at 0000023F2A3B7550)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[465]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[465]	SELF     	2 2 -2	; "Set"
+	3	[465]	GETTABUP 	4 0 -3	; EStrDBKeys "RecoverRewardsLevel"
+	4	[465]	LOADK    	5 -4	; "value"
+	5	[465]	MOVE     	6 1
+	6	[465]	CALL     	2 5 1
+	7	[466]	RETURN   	0 1
+constants (4) for 0000023F2A3B7550:
+	1	"m_dbTable"
+	2	"Set"
+	3	"RecoverRewardsLevel"
+	4	"value"
+locals (2) for 0000023F2A3B7550:
+	0	self	1	8
+	1	level	1	8
+upvalues (1) for 0000023F2A3B7550:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:468,478> (22 instructions at 0000023F2A3B7750)
+2 params, 6 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[469]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[469]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[469]	GETTABLE 	3 0 -3	; "m_config"
+	4	[469]	GETTABLE 	3 3 -4	; "rewardConfigs"
+	5	[469]	CALL     	2 2 2
+	6	[469]	TEST     	2 0
+	7	[469]	JMP      	0 1	; to 9
+	8	[470]	RETURN   	0 1
+	9	[473]	SELF     	2 0 -5	; "GetDifficultyMode"
+	10	[473]	CALL     	2 2 2
+	11	[474]	GETTABLE 	3 0 -3	; "m_config"
+	12	[474]	GETTABLE 	3 3 -4	; "rewardConfigs"
+	13	[474]	GETTABLE 	3 3 2
+	14	[475]	GETTABUP 	4 0 -1	; _ENV "Table"
+	15	[475]	GETTABLE 	4 4 -2	; "IsEmpty"
+	16	[475]	MOVE     	5 3
+	17	[475]	CALL     	4 2 2
+	18	[475]	TEST     	4 1
+	19	[475]	JMP      	0 2	; to 22
+	20	[476]	GETTABLE 	4 3 1
+	21	[476]	RETURN   	4 2
+	22	[478]	RETURN   	0 1
+constants (5) for 0000023F2A3B7750:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_config"
+	4	"rewardConfigs"
+	5	"GetDifficultyMode"
+locals (4) for 0000023F2A3B7750:
+	0	self	1	23
+	1	level	1	23
+	2	selectedDif	11	23
+	3	rewardConfig	14	23
+upvalues (1) for 0000023F2A3B7750:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:483,495> (22 instructions at 0000023F2A3B7A50)
+1 param, 3 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[484]	SELF     	1 0 -1	; "GetState"
+	2	[484]	CALL     	1 2 2
+	3	[484]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[484]	GETTABLE 	2 2 -3	; "Started"
+	5	[484]	EQ       	1 1 2
+	6	[484]	JMP      	0 2	; to 9
+	7	[485]	LOADBOOL 	1 0 0
+	8	[485]	RETURN   	1 2
+	9	[488]	SELF     	1 0 -4	; "GetRound"
+	10	[488]	CALL     	1 2 2
+	11	[488]	GETTABLE 	2 0 -5	; "m_config"
+	12	[488]	GETTABLE 	2 2 -6	; "roundCount"
+	13	[488]	LT       	0 2 1
+	14	[488]	JMP      	0 2	; to 17
+	15	[489]	LOADBOOL 	1 0 0
+	16	[489]	RETURN   	1 2
+	17	[492]	GETTABLE 	1 0 -7	; "m_currentInfo"
+	18	[492]	EQ       	0 1 -8	; - nil
+	19	[492]	JMP      	0 2	; to 22
+	20	[493]	LOADBOOL 	1 1 0
+	21	[493]	RETURN   	1 2
+	22	[495]	RETURN   	0 1
+constants (8) for 0000023F2A3B7A50:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetRound"
+	5	"m_config"
+	6	"roundCount"
+	7	"m_currentInfo"
+	8	nil
+locals (1) for 0000023F2A3B7A50:
+	0	self	1	23
+upvalues (1) for 0000023F2A3B7A50:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:497,499> (3 instructions at 0000023F2A3B7AD0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[498]	GETTABLE 	1 0 -1	; "m_bDifficultySelect"
+	2	[498]	RETURN   	1 2
+	3	[499]	RETURN   	0 1
+constants (1) for 0000023F2A3B7AD0:
+	1	"m_bDifficultySelect"
+locals (1) for 0000023F2A3B7AD0:
+	0	self	1	4
+upvalues (0) for 0000023F2A3B7AD0:
+
+function <FloatRaceModel.lua:501,503> (6 instructions at 0000023F2A3B7B50)
+3 params, 4 slots, 0 upvalues, 3 locals, 2 constants, 0 functions
+	1	[502]	GETTABLE 	3 0 -1	; "m_config"
+	2	[502]	GETTABLE 	3 3 -2	; "robotConfigs"
+	3	[502]	GETTABLE 	3 3 1
+	4	[502]	GETTABLE 	3 3 2
+	5	[502]	RETURN   	3 2
+	6	[503]	RETURN   	0 1
+constants (2) for 0000023F2A3B7B50:
+	1	"m_config"
+	2	"robotConfigs"
+locals (3) for 0000023F2A3B7B50:
+	0	self	1	7
+	1	diff	1	7
+	2	level	1	7
+upvalues (0) for 0000023F2A3B7B50:
+
+function <FloatRaceModel.lua:506,510> (15 instructions at 0000023F2A3B7BD0)
+1 param, 4 slots, 0 upvalues, 1 local, 5 constants, 0 functions
+	1	[507]	GETTABLE 	1 0 -1	; "m_bDifficultySelect"
+	2	[507]	TEST     	1 1
+	3	[507]	JMP      	0 11	; to 15
+	4	[507]	SELF     	1 0 -2	; "GetLevel"
+	5	[507]	CALL     	1 2 2
+	6	[507]	EQ       	0 1 -3	; - 1
+	7	[507]	JMP      	0 7	; to 15
+	8	[507]	SELF     	1 0 -4	; "GetRound"
+	9	[507]	CALL     	1 2 2
+	10	[507]	EQ       	0 1 -3	; - 1
+	11	[507]	JMP      	0 3	; to 15
+	12	[508]	SELF     	1 0 -5	; "SignUp"
+	13	[508]	LOADBOOL 	3 1 0
+	14	[508]	CALL     	1 3 1
+	15	[510]	RETURN   	0 1
+constants (5) for 0000023F2A3B7BD0:
+	1	"m_bDifficultySelect"
+	2	"GetLevel"
+	3	1
+	4	"GetRound"
+	5	"SignUp"
+locals (1) for 0000023F2A3B7BD0:
+	0	self	1	16
+upvalues (0) for 0000023F2A3B7BD0:
+
+function <FloatRaceModel.lua:512,595> (191 instructions at 0000023F2A3B6CD0)
+3 params, 25 slots, 2 upvalues, 30 locals, 69 constants, 1 function
+	1	[513]	SELF     	3 0 -1	; "ClearTopTipState"
+	2	[513]	CALL     	3 2 1
+	3	[514]	LOADNIL  	3 0
+	4	[515]	TEST     	1 0
+	5	[515]	JMP      	0 10	; to 16
+	6	[516]	EQ       	1 2 -2	; - nil
+	7	[516]	JMP      	0 2	; to 10
+	8	[516]	TESTSET  	3 2 1
+	9	[516]	JMP      	0 2	; to 12
+	10	[516]	GETTABUP 	4 0 -3	; _ENV "EFloatRaceDifficultyMode"
+	11	[516]	GETTABLE 	3 4 -4	; "None"
+	12	[517]	SELF     	4 0 -5	; "SetDifficultyMode"
+	13	[517]	MOVE     	6 3
+	14	[517]	CALL     	4 3 1
+	15	[517]	JMP      	0 3	; to 19
+	16	[519]	SELF     	4 0 -6	; "GetDifficultyMode"
+	17	[519]	CALL     	4 2 2
+	18	[519]	MOVE     	3 4
+	19	[522]	NEWTABLE 	4 0 3
+	20	[523]	SELF     	5 0 -8	; "GetId"
+	21	[523]	CALL     	5 2 2
+	22	[523]	SETTABLE 	4 -7 5	; "id" -
+	23	[524]	SELF     	5 0 -10	; "GetRound"
+	24	[524]	CALL     	5 2 2
+	25	[524]	SETTABLE 	4 -9 5	; "r" -
+	26	[525]	SETTABLE 	4 -11 3	; "diff" -
+	27	[528]	SELF     	5 0 -12	; "GetLevel"
+	28	[528]	CALL     	5 2 2
+	29	[530]	EQ       	0 5 -13	; - 1
+	30	[530]	JMP      	0 7	; to 38
+	31	[531]	GETTABUP 	6 0 -14	; _ENV "GM"
+	32	[531]	GETTABLE 	6 6 -15	; "BIManager"
+	33	[531]	SELF     	6 6 -16	; "LogAction"
+	34	[531]	GETTABUP 	8 0 -17	; _ENV "EBIType"
+	35	[531]	GETTABLE 	8 8 -18	; "FloatRaceNewRound"
+	36	[531]	MOVE     	9 4
+	37	[531]	CALL     	6 4 1
+	38	[533]	SELF     	6 0 -19	; "SetScore"
+	39	[533]	LOADK    	8 -20	; 0
+	40	[533]	CALL     	6 3 1
+	41	[535]	SETTABLE 	4 -21 5	; "lv" -
+	42	[536]	SELF     	6 0 -23	; "GetCurLevelTryTimes"
+	43	[536]	CALL     	6 2 2
+	44	[536]	SETTABLE 	4 -22 6	; "trynum" -
+	45	[537]	GETTABUP 	6 0 -14	; _ENV "GM"
+	46	[537]	GETTABLE 	6 6 -15	; "BIManager"
+	47	[537]	SELF     	6 6 -16	; "LogAction"
+	48	[537]	GETTABUP 	8 0 -17	; _ENV "EBIType"
+	49	[537]	GETTABLE 	8 8 -24	; "FloatRaceLevelStart"
+	50	[537]	MOVE     	9 4
+	51	[537]	CALL     	6 4 1
+	52	[539]	SELF     	6 0 -25	; "GetRobotConfigByDiffAndLevel"
+	53	[539]	MOVE     	8 3
+	54	[539]	MOVE     	9 5
+	55	[539]	CALL     	6 4 2
+	56	[542]	NEWTABLE 	7 0 0
+	57	[542]	SETTABLE 	0 -26 7	; "m_currentInfo" -
+	58	[545]	GETTABLE 	7 0 -26	; "m_currentInfo"
+	59	[545]	GETTABLE 	8 6 -28	; "upgradeSlotsNum"
+	60	[545]	SETTABLE 	7 -27 8	; "finishAliveNum" -
+	61	[547]	GETTABUP 	7 0 -29	; _ENV "math"
+	62	[547]	GETTABLE 	7 7 -30	; "ceil"
+	63	[547]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	64	[547]	GETTABLE 	8 8 -27	; "finishAliveNum"
+	65	[547]	MUL      	8 8 -31	; - 0.5
+	66	[547]	CALL     	7 2 2
+	67	[549]	SUB      	8 7 -13	; - 1
+	68	[549]	LE       	0 8 -32	; - 5
+	69	[549]	JMP      	0 3	; to 73
+	70	[550]	SELF     	8 0 -33	; "PopTopTip"
+	71	[550]	GETTABUP 	10 1 -34	; EStrDBKeys "HalfTopTipPop"
+	72	[550]	CALL     	8 3 1
+	73	[554]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	74	[554]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	75	[554]	GETTABLE 	9 9 -27	; "finishAliveNum"
+	76	[554]	SETTABLE 	8 -35 9	; "curAliveNum" -
+	77	[557]	GETTABLE 	8 0 -26	; "m_currentInfo"
+	78	[557]	NEWTABLE 	9 0 0
+	79	[557]	SETTABLE 	8 -36 9	; "arriveTimeList" -
+	80	[558]	GETTABUP 	8 0 -14	; _ENV "GM"
+	81	[558]	GETTABLE 	8 8 -37	; "GameModel"
+	82	[558]	SELF     	8 8 -38	; "GetServerTime"
+	83	[558]	CALL     	8 2 2
+	84	[560]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	85	[560]	SETTABLE 	9 -39 8	; "levelStartTime" -
+	86	[563]	GETTABUP 	9 0 -40	; _ENV "ipairs"
+	87	[563]	GETTABLE 	10 6 -41	; "robotSpeed"
+	88	[563]	CALL     	9 2 4
+	89	[563]	JMP      	0 42	; to 132
+	90	[564]	LOADK    	14 -13	; 1
+	91	[564]	GETTABLE 	15 13 -42	; "num"
+	92	[564]	LOADK    	16 -13	; 1
+	93	[564]	FORPREP  	14 37	; to 131
+	94	[566]	GETTABLE 	18 13 -43	; "minTime"
+	95	[566]	EQ       	1 18 -20	; - 0
+	96	[566]	JMP      	0 7	; to 104
+	97	[566]	GETTABLE 	18 13 -43	; "minTime"
+	98	[566]	EQ       	1 18 -20	; - 0
+	99	[566]	JMP      	0 4	; to 104
+	100	[566]	GETTABLE 	18 13 -43	; "minTime"
+	101	[566]	GETTABLE 	19 13 -44	; "maxTime"
+	102	[566]	LE       	0 19 18
+	103	[566]	JMP      	0 12	; to 116
+	104	[567]	GETTABUP 	18 0 -14	; _ENV "GM"
+	105	[567]	GETTABLE 	18 18 -15	; "BIManager"
+	106	[567]	SELF     	18 18 -45	; "LogErrorInfo"
+	107	[567]	GETTABUP 	20 0 -17	; _ENV "EBIType"
+	108	[567]	GETTABLE 	20 20 -46	; "FloatRaceRobotConfigError"
+	109	[568]	GETTABUP 	21 0 -47	; _ENV "string"
+	110	[568]	GETTABLE 	21 21 -48	; "format"
+	111	[568]	LOADK    	22 -49	; "robot sign up: min=%s, max=%s"
+	112	[568]	GETTABLE 	23 13 -43	; "minTime"
+	113	[568]	GETTABLE 	24 13 -44	; "maxTime"
+	114	[568]	CALL     	21 4 0
+	115	[567]	CALL     	18 0 1
+	116	[571]	GETTABUP 	18 0 -29	; _ENV "math"
+	117	[571]	GETTABLE 	18 18 -50	; "random"
+	118	[571]	GETTABLE 	19 13 -43	; "minTime"
+	119	[571]	MUL      	19 19 -51	; - 60
+	120	[571]	GETTABLE 	20 13 -44	; "maxTime"
+	121	[571]	MUL      	20 20 -51	; - 60
+	122	[571]	SUB      	20 20 -13	; - 1
+	123	[571]	CALL     	18 3 2
+	124	[571]	ADD      	18 8 18
+	125	[572]	GETTABUP 	19 0 -52	; _ENV "table"
+	126	[572]	GETTABLE 	19 19 -53	; "insert"
+	127	[572]	GETTABLE 	20 0 -26	; "m_currentInfo"
+	128	[572]	GETTABLE 	20 20 -36	; "arriveTimeList"
+	129	[572]	MOVE     	21 18
+	130	[572]	CALL     	19 3 1
+	131	[564]	FORLOOP  	14 -38	; to 94
+	132	[563]	TFORCALL 	9 2
+	133	[563]	TFORLOOP 	11 -44	; to 90
+	134	[576]	GETTABUP 	9 0 -52	; _ENV "table"
+	135	[576]	GETTABLE 	9 9 -54	; "sort"
+	136	[576]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	137	[576]	GETTABLE 	10 10 -36	; "arriveTimeList"
+	138	[576]	CLOSURE  	11 0	; 0000023F2A3B7850
+	139	[576]	CALL     	9 3 1
+	140	[579]	GETTABLE 	9 0 -26	; "m_currentInfo"
+	141	[579]	NEWTABLE 	10 0 0
+	142	[579]	SETTABLE 	9 -55 10	; "showIconList" -
+	143	[580]	NEWTABLE 	9 0 0
+	144	[581]	GETTABUP 	10 0 -40	; _ENV "ipairs"
+	145	[581]	GETTABUP 	11 0 -56	; _ENV "AVATAR_IMAGE"
+	146	[581]	CALL     	10 2 4
+	147	[581]	JMP      	0 5	; to 153
+	148	[582]	GETTABUP 	15 0 -52	; _ENV "table"
+	149	[582]	GETTABLE 	15 15 -53	; "insert"
+	150	[582]	MOVE     	16 9
+	151	[582]	MOVE     	17 14
+	152	[582]	CALL     	15 3 1
+	153	[581]	TFORCALL 	10 2
+	154	[581]	TFORLOOP 	12 -7	; to 148
+	155	[585]	GETTABUP 	10 0 -40	; _ENV "ipairs"
+	156	[585]	GETTABUP 	11 0 -57	; _ENV "ACTIVITY_AVATAR_IMAGE"
+	157	[585]	CALL     	10 2 4
+	158	[585]	JMP      	0 5	; to 164
+	159	[586]	GETTABUP 	15 0 -52	; _ENV "table"
+	160	[586]	GETTABLE 	15 15 -53	; "insert"
+	161	[586]	MOVE     	16 9
+	162	[586]	MOVE     	17 14
+	163	[586]	CALL     	15 3 1
+	164	[585]	TFORCALL 	10 2
+	165	[585]	TFORLOOP 	12 -7	; to 159
+	166	[589]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	167	[589]	GETTABUP 	11 0 -58	; _ENV "Table"
+	168	[589]	GETTABLE 	11 11 -59	; "ListRandomSelectN"
+	169	[589]	MOVE     	12 9
+	170	[589]	LOADK    	13 -60	; 6
+	171	[589]	CALL     	11 3 2
+	172	[589]	SETTABLE 	10 -55 11	; "showIconList" -
+	173	[590]	GETTABLE 	10 0 -26	; "m_currentInfo"
+	174	[590]	GETTABUP 	11 0 -62	; _ENV "UIHelper"
+	175	[590]	GETTABLE 	11 11 -63	; "GetRandomAvatarIconFrame"
+	176	[590]	LOADK    	12 -60	; 6
+	177	[590]	CALL     	11 2 2
+	178	[590]	SETTABLE 	10 -61 11	; "showIconFrameList" -
+	179	[592]	SELF     	10 0 -64	; "SaveCurrentInfo"
+	180	[592]	CALL     	10 2 1
+	181	[593]	GETTABUP 	10 0 -65	; _ENV "EventDispatcher"
+	182	[593]	GETTABLE 	10 10 -66	; "DispatchEvent"
+	183	[593]	GETTABUP 	11 0 -67	; _ENV "EEventType"
+	184	[593]	GETTABLE 	11 11 -68	; "FloatRaceSignUp"
+	185	[593]	CALL     	10 2 1
+	186	[594]	GETTABUP 	10 0 -65	; _ENV "EventDispatcher"
+	187	[594]	GETTABLE 	10 10 -66	; "DispatchEvent"
+	188	[594]	GETTABUP 	11 0 -67	; _ENV "EEventType"
+	189	[594]	GETTABLE 	11 11 -69	; "OrderStatusChanged"
+	190	[594]	CALL     	10 2 1
+	191	[595]	RETURN   	0 1
+constants (69) for 0000023F2A3B6CD0:
+	1	"ClearTopTipState"
+	2	nil
+	3	"EFloatRaceDifficultyMode"
+	4	"None"
+	5	"SetDifficultyMode"
+	6	"GetDifficultyMode"
+	7	"id"
+	8	"GetId"
+	9	"r"
+	10	"GetRound"
+	11	"diff"
+	12	"GetLevel"
+	13	1
+	14	"GM"
+	15	"BIManager"
+	16	"LogAction"
+	17	"EBIType"
+	18	"FloatRaceNewRound"
+	19	"SetScore"
+	20	0
+	21	"lv"
+	22	"trynum"
+	23	"GetCurLevelTryTimes"
+	24	"FloatRaceLevelStart"
+	25	"GetRobotConfigByDiffAndLevel"
+	26	"m_currentInfo"
+	27	"finishAliveNum"
+	28	"upgradeSlotsNum"
+	29	"math"
+	30	"ceil"
+	31	0.5
+	32	5
+	33	"PopTopTip"
+	34	"HalfTopTipPop"
+	35	"curAliveNum"
+	36	"arriveTimeList"
+	37	"GameModel"
+	38	"GetServerTime"
+	39	"levelStartTime"
+	40	"ipairs"
+	41	"robotSpeed"
+	42	"num"
+	43	"minTime"
+	44	"maxTime"
+	45	"LogErrorInfo"
+	46	"FloatRaceRobotConfigError"
+	47	"string"
+	48	"format"
+	49	"robot sign up: min=%s, max=%s"
+	50	"random"
+	51	60
+	52	"table"
+	53	"insert"
+	54	"sort"
+	55	"showIconList"
+	56	"AVATAR_IMAGE"
+	57	"ACTIVITY_AVATAR_IMAGE"
+	58	"Table"
+	59	"ListRandomSelectN"
+	60	6
+	61	"showIconFrameList"
+	62	"UIHelper"
+	63	"GetRandomAvatarIconFrame"
+	64	"SaveCurrentInfo"
+	65	"EventDispatcher"
+	66	"DispatchEvent"
+	67	"EEventType"
+	68	"FloatRaceSignUp"
+	69	"OrderStatusChanged"
+locals (30) for 0000023F2A3B6CD0:
+	0	self	1	192
+	1	bNewRound	1	192
+	2	difficultyMode	1	192
+	3	diff	4	192
+	4	biAction	27	192
+	5	level	29	192
+	6	robotConfig	56	192
+	7	half	67	192
+	8	time	84	192
+	9	(for generator)	89	134
+	10	(for state)	89	134
+	11	(for control)	89	134
+	12	_	90	132
+	13	cfg	90	132
+	14	(for index)	93	132
+	15	(for limit)	93	132
+	16	(for step)	93	132
+	17	i	94	131
+	18	arriveTime	125	131
+	19	randomAvatars	144	192
+	20	(for generator)	147	155
+	21	(for state)	147	155
+	22	(for control)	147	155
+	23	_	148	153
+	24	eleAvatad	148	153
+	25	(for generator)	158	166
+	26	(for state)	158	166
+	27	(for control)	158	166
+	28	_	159	164
+	29	eleAvatar	159	164
+upvalues (2) for 0000023F2A3B6CD0:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:576,576> (6 instructions at 0000023F2A3B7850)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[576]	LT       	1 1 0
+	2	[576]	JMP      	0 1	; to 4
+	3	[576]	LOADBOOL 	2 0 1
+	4	[576]	LOADBOOL 	2 1 0
+	5	[576]	RETURN   	2 2
+	6	[576]	RETURN   	0 1
+constants (0) for 0000023F2A3B7850:
+locals (2) for 0000023F2A3B7850:
+	0	a	1	7
+	1	b	1	7
+upvalues (0) for 0000023F2A3B7850:
+
+function <FloatRaceModel.lua:597,609> (42 instructions at 0000023F2A3B75D0)
+1 param, 9 slots, 1 upvalue, 2 locals, 17 constants, 1 function
+	1	[598]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[598]	GETTABLE 	1 1 -2	; "showIconList"
+	3	[598]	TEST     	1 0
+	4	[598]	JMP      	0 37	; to 42
+	5	[600]	SELF     	1 0 -3	; "GetRank"
+	6	[600]	CALL     	1 2 2
+	7	[600]	EQ       	0 1 -4	; - 1
+	8	[600]	JMP      	0 11	; to 20
+	9	[601]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	10	[601]	NEWTABLE 	2 6 0
+	11	[601]	LOADK    	3 -6	; 6
+	12	[601]	LOADK    	4 -7	; 5
+	13	[601]	LOADK    	5 -8	; 4
+	14	[601]	LOADK    	6 -9	; 3
+	15	[601]	LOADK    	7 -10	; 2
+	16	[601]	LOADK    	8 -4	; 1
+	17	[601]	SETLIST  	2 6 1	; 1
+	18	[601]	SETTABLE 	1 -5 2	; "deleteIconIndex" -
+	19	[601]	JMP      	0 20	; to 40
+	20	[603]	GETTABUP 	1 0 -11	; _ENV "math"
+	21	[603]	GETTABLE 	1 1 -12	; "random"
+	22	[603]	LOADK    	2 -4	; 1
+	23	[603]	LOADK    	3 -10	; 2
+	24	[603]	CALL     	1 3 2
+	25	[604]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	26	[604]	GETTABUP 	3 0 -13	; _ENV "MathUtil"
+	27	[604]	GETTABLE 	3 3 -14	; "RandomN"
+	28	[604]	GETTABLE 	4 0 -1	; "m_currentInfo"
+	29	[604]	GETTABLE 	4 4 -2	; "showIconList"
+	30	[604]	LEN      	4 4
+	31	[604]	SUB      	5 -6 1	; 6 -
+	32	[604]	CALL     	3 3 2
+	33	[604]	SETTABLE 	2 -5 3	; "deleteIconIndex" -
+	34	[605]	GETTABUP 	2 0 -15	; _ENV "table"
+	35	[605]	GETTABLE 	2 2 -16	; "sort"
+	36	[605]	GETTABLE 	3 0 -1	; "m_currentInfo"
+	37	[605]	GETTABLE 	3 3 -5	; "deleteIconIndex"
+	38	[605]	CLOSURE  	4 0	; 0000023F2A3B6DD0
+	39	[605]	CALL     	2 3 1
+	40	[607]	SELF     	1 0 -17	; "SaveCurrentInfo"
+	41	[607]	CALL     	1 2 1
+	42	[609]	RETURN   	0 1
+constants (17) for 0000023F2A3B75D0:
+	1	"m_currentInfo"
+	2	"showIconList"
+	3	"GetRank"
+	4	1
+	5	"deleteIconIndex"
+	6	6
+	7	5
+	8	4
+	9	3
+	10	2
+	11	"math"
+	12	"random"
+	13	"MathUtil"
+	14	"RandomN"
+	15	"table"
+	16	"sort"
+	17	"SaveCurrentInfo"
+locals (2) for 0000023F2A3B75D0:
+	0	self	1	43
+	1	upNum	25	40
+upvalues (1) for 0000023F2A3B75D0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:605,605> (6 instructions at 0000023F2A3B6DD0)
+2 params, 3 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[605]	LT       	1 1 0
+	2	[605]	JMP      	0 1	; to 4
+	3	[605]	LOADBOOL 	2 0 1
+	4	[605]	LOADBOOL 	2 1 0
+	5	[605]	RETURN   	2 2
+	6	[605]	RETURN   	0 1
+constants (0) for 0000023F2A3B6DD0:
+locals (2) for 0000023F2A3B6DD0:
+	0	a	1	7
+	1	b	1	7
+upvalues (0) for 0000023F2A3B6DD0:
+
+function <FloatRaceModel.lua:613,617> (16 instructions at 0000023F2A3B77D0)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[614]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[614]	SELF     	1 1 -2	; "Remove"
+	3	[614]	GETTABUP 	3 0 -3	; EStrDBKeys "OneTopTipPop"
+	4	[614]	LOADK    	4 -4	; "value"
+	5	[614]	CALL     	1 4 1
+	6	[615]	GETTABLE 	1 0 -1	; "m_dbTable"
+	7	[615]	SELF     	1 1 -2	; "Remove"
+	8	[615]	GETTABUP 	3 0 -5	; EStrDBKeys "FiveTopTipPop"
+	9	[615]	LOADK    	4 -4	; "value"
+	10	[615]	CALL     	1 4 1
+	11	[616]	GETTABLE 	1 0 -1	; "m_dbTable"
+	12	[616]	SELF     	1 1 -2	; "Remove"
+	13	[616]	GETTABUP 	3 0 -6	; EStrDBKeys "HalfTopTipPop"
+	14	[616]	LOADK    	4 -4	; "value"
+	15	[616]	CALL     	1 4 1
+	16	[617]	RETURN   	0 1
+constants (6) for 0000023F2A3B77D0:
+	1	"m_dbTable"
+	2	"Remove"
+	3	"OneTopTipPop"
+	4	"value"
+	5	"FiveTopTipPop"
+	6	"HalfTopTipPop"
+locals (1) for 0000023F2A3B77D0:
+	0	self	1	17
+upvalues (1) for 0000023F2A3B77D0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:619,621> (7 instructions at 0000023F2A3B6ED0)
+2 params, 7 slots, 0 upvalues, 2 locals, 4 constants, 0 functions
+	1	[620]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[620]	SELF     	2 2 -2	; "Set"
+	3	[620]	MOVE     	4 1
+	4	[620]	LOADK    	5 -3	; "value"
+	5	[620]	LOADK    	6 -4	; "1"
+	6	[620]	CALL     	2 5 1
+	7	[621]	RETURN   	0 1
+constants (4) for 0000023F2A3B6ED0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"value"
+	4	"1"
+locals (2) for 0000023F2A3B6ED0:
+	0	self	1	8
+	1	type	1	8
+upvalues (0) for 0000023F2A3B6ED0:
+
+function <FloatRaceModel.lua:623,625> (11 instructions at 0000023F2A3B6F50)
+2 params, 6 slots, 0 upvalues, 2 locals, 4 constants, 0 functions
+	1	[624]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[624]	SELF     	2 2 -2	; "GetValue"
+	3	[624]	MOVE     	4 1
+	4	[624]	LOADK    	5 -3	; "value"
+	5	[624]	CALL     	2 4 2
+	6	[624]	EQ       	0 2 -4	; - "1"
+	7	[624]	JMP      	0 1	; to 9
+	8	[624]	LOADBOOL 	2 0 1
+	9	[624]	LOADBOOL 	2 1 0
+	10	[624]	RETURN   	2 2
+	11	[625]	RETURN   	0 1
+constants (4) for 0000023F2A3B6F50:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"value"
+	4	"1"
+locals (2) for 0000023F2A3B6F50:
+	0	self	1	12
+	1	type	1	12
+upvalues (0) for 0000023F2A3B6F50:
+
+function <FloatRaceModel.lua:627,675> (54 instructions at 0000023F2A3B6FD0)
+1 param, 9 slots, 2 upvalues, 5 locals, 23 constants, 4 functions
+	1	[628]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[628]	GETTABLE 	1 1 -2	; "curAliveNum"
+	3	[628]	LE       	0 1 -3	; - 0
+	4	[628]	JMP      	0 1	; to 6
+	5	[629]	RETURN   	0 1
+	6	[632]	GETTABUP 	1 0 -4	; _ENV "math"
+	7	[632]	GETTABLE 	1 1 -5	; "floor"
+	8	[632]	GETTABLE 	2 0 -1	; "m_currentInfo"
+	9	[632]	GETTABLE 	2 2 -6	; "finishAliveNum"
+	10	[632]	MUL      	2 2 -7	; - 0.5
+	11	[632]	CALL     	1 2 2
+	12	[633]	LOADNIL  	2 2
+	13	[635]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	14	[635]	GETTABLE 	5 5 -2	; "curAliveNum"
+	15	[635]	LE       	0 5 -8	; - 1
+	16	[635]	JMP      	0 5	; to 22
+	17	[636]	GETTABUP 	2 1 -9	; EStrDBKeys "OneTopTipPop"
+	18	[637]	LOADK    	3 -10	; "floatRace_notice_3"
+	19	[641]	CLOSURE  	5 0	; 0000023F2A3B72D0
+	20	[641]	MOVE     	4 5
+	21	[641]	JMP      	0 17	; to 39
+	22	[643]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	23	[643]	GETTABLE 	5 5 -2	; "curAliveNum"
+	24	[643]	LE       	0 5 -11	; - 5
+	25	[643]	JMP      	0 5	; to 31
+	26	[644]	GETTABUP 	2 1 -12	; EStrDBKeys "FiveTopTipPop"
+	27	[645]	LOADK    	3 -13	; "floatRace_notice_2"
+	28	[648]	CLOSURE  	5 1	; 0000023F2A3B7050
+	29	[648]	MOVE     	4 5
+	30	[648]	JMP      	0 8	; to 39
+	31	[650]	GETTABLE 	5 0 -1	; "m_currentInfo"
+	32	[650]	GETTABLE 	5 5 -2	; "curAliveNum"
+	33	[650]	LT       	0 5 1
+	34	[650]	JMP      	0 4	; to 39
+	35	[651]	GETTABUP 	2 1 -14	; EStrDBKeys "HalfTopTipPop"
+	36	[652]	LOADK    	3 -15	; "floatRace_notice_1"
+	37	[655]	CLOSURE  	5 2	; 0000023F2A3B70D0
+	38	[655]	MOVE     	4 5
+	39	[658]	EQ       	1 2 -16	; - nil
+	40	[658]	JMP      	0 13	; to 54
+	41	[658]	SELF     	5 0 -17	; "CanPopTopTip"
+	42	[658]	MOVE     	7 2
+	43	[658]	CALL     	5 3 2
+	44	[658]	TEST     	5 0
+	45	[658]	JMP      	0 8	; to 54
+	46	[659]	GETTABUP 	5 0 -18	; _ENV "TopSliderManager"
+	47	[659]	GETTABLE 	5 5 -19	; "TrySlide"
+	48	[659]	GETTABUP 	6 0 -20	; _ENV "ActivityType"
+	49	[659]	GETTABLE 	6 6 -21	; "FloatRace"
+	50	[659]	GETTABUP 	7 0 -22	; _ENV "UIPrefabConfigName"
+	51	[659]	GETTABLE 	7 7 -23	; "FloatRaceTopTip"
+	52	[673]	CLOSURE  	8 3	; 0000023F2A3B71D0
+	53	[659]	CALL     	5 4 1
+	54	[675]	RETURN   	0 1
+constants (23) for 0000023F2A3B6FD0:
+	1	"m_currentInfo"
+	2	"curAliveNum"
+	3	0
+	4	"math"
+	5	"floor"
+	6	"finishAliveNum"
+	7	0.5
+	8	1
+	9	"OneTopTipPop"
+	10	"floatRace_notice_3"
+	11	5
+	12	"FiveTopTipPop"
+	13	"floatRace_notice_2"
+	14	"HalfTopTipPop"
+	15	"floatRace_notice_1"
+	16	nil
+	17	"CanPopTopTip"
+	18	"TopSliderManager"
+	19	"TrySlide"
+	20	"ActivityType"
+	21	"FloatRace"
+	22	"UIPrefabConfigName"
+	23	"FloatRaceTopTip"
+locals (5) for 0000023F2A3B6FD0:
+	0	self	1	55
+	1	half	12	55
+	2	tipType	13	55
+	3	textKey	13	55
+	4	callBack	13	55
+upvalues (2) for 0000023F2A3B6FD0:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:638,641> (9 instructions at 0000023F2A3B72D0)
+0 params, 3 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[639]	GETUPVAL 	0 0	; self
+	2	[639]	SELF     	0 0 -1	; "PopTopTip"
+	3	[639]	GETTABUP 	2 1 -2	; EStrDBKeys "OneTopTipPop"
+	4	[639]	CALL     	0 3 1
+	5	[640]	GETUPVAL 	0 0	; self
+	6	[640]	SELF     	0 0 -1	; "PopTopTip"
+	7	[640]	GETTABUP 	2 1 -3	; EStrDBKeys "FiveTopTipPop"
+	8	[640]	CALL     	0 3 1
+	9	[641]	RETURN   	0 1
+constants (3) for 0000023F2A3B72D0:
+	1	"PopTopTip"
+	2	"OneTopTipPop"
+	3	"FiveTopTipPop"
+locals (0) for 0000023F2A3B72D0:
+upvalues (2) for 0000023F2A3B72D0:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <FloatRaceModel.lua:646,648> (5 instructions at 0000023F2A3B7050)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[647]	GETUPVAL 	0 0	; self
+	2	[647]	SELF     	0 0 -1	; "PopTopTip"
+	3	[647]	GETTABUP 	2 1 -2	; EStrDBKeys "FiveTopTipPop"
+	4	[647]	CALL     	0 3 1
+	5	[648]	RETURN   	0 1
+constants (2) for 0000023F2A3B7050:
+	1	"PopTopTip"
+	2	"FiveTopTipPop"
+locals (0) for 0000023F2A3B7050:
+upvalues (2) for 0000023F2A3B7050:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <FloatRaceModel.lua:653,655> (5 instructions at 0000023F2A3B70D0)
+0 params, 3 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[654]	GETUPVAL 	0 0	; self
+	2	[654]	SELF     	0 0 -1	; "PopTopTip"
+	3	[654]	GETTABUP 	2 1 -2	; EStrDBKeys "HalfTopTipPop"
+	4	[654]	CALL     	0 3 1
+	5	[655]	RETURN   	0 1
+constants (2) for 0000023F2A3B70D0:
+	1	"PopTopTip"
+	2	"HalfTopTipPop"
+locals (0) for 0000023F2A3B70D0:
+upvalues (2) for 0000023F2A3B70D0:
+	0	self	1	0
+	1	EStrDBKeys	0	1
+
+function <FloatRaceModel.lua:659,673> (34 instructions at 0000023F2A3B71D0)
+1 param, 5 slots, 3 upvalues, 2 locals, 16 constants, 1 function
+	1	[660]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[660]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[660]	SELF     	1 1 -3	; "GetModel"
+	4	[660]	GETTABUP 	3 0 -4	; _ENV "ActivityType"
+	5	[660]	GETTABLE 	3 3 -5	; "FloatRace"
+	6	[660]	CALL     	1 3 2
+	7	[661]	EQ       	1 1 -6	; - nil
+	8	[661]	JMP      	0 10	; to 19
+	9	[661]	SELF     	2 1 -7	; "GetState"
+	10	[661]	CALL     	2 2 2
+	11	[661]	GETTABUP 	3 0 -8	; _ENV "ActivityState"
+	12	[661]	GETTABLE 	3 3 -9	; "Started"
+	13	[661]	EQ       	0 2 3
+	14	[661]	JMP      	0 4	; to 19
+	15	[661]	SELF     	2 1 -10	; "GetAliveNum"
+	16	[661]	CALL     	2 2 2
+	17	[661]	EQ       	0 2 -6	; - nil
+	18	[661]	JMP      	0 5	; to 24
+	19	[662]	GETTABUP 	2 0 -11	; _ENV "GameObject"
+	20	[662]	GETTABLE 	2 2 -12	; "Destroy"
+	21	[662]	MOVE     	3 0
+	22	[662]	CALL     	2 2 1
+	23	[663]	RETURN   	0 1
+	24	[665]	SELF     	2 0 -13	; "GetLuaTable"
+	25	[665]	CALL     	2 2 2
+	26	[665]	SELF     	2 2 -14	; "Init"
+	27	[665]	GETUPVAL 	4 1	; textKey
+	28	[665]	CALL     	2 3 1
+	29	[667]	GETTABUP 	2 0 -15	; _ENV "TopSliderManager"
+	30	[667]	GETTABLE 	2 2 -16	; "Appear"
+	31	[667]	MOVE     	3 0
+	32	[672]	CLOSURE  	4 0	; 0000023F2A3B7350
+	33	[667]	CALL     	2 3 1
+	34	[673]	RETURN   	0 1
+constants (16) for 0000023F2A3B71D0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"FloatRace"
+	6	nil
+	7	"GetState"
+	8	"ActivityState"
+	9	"Started"
+	10	"GetAliveNum"
+	11	"GameObject"
+	12	"Destroy"
+	13	"GetLuaTable"
+	14	"Init"
+	15	"TopSliderManager"
+	16	"Appear"
+locals (2) for 0000023F2A3B71D0:
+	0	go	1	35
+	1	model	7	35
+upvalues (3) for 0000023F2A3B71D0:
+	0	_ENV	0	0
+	1	textKey	1	3
+	2	callBack	1	4
+
+function <FloatRaceModel.lua:667,672> (7 instructions at 0000023F2A3B7350)
+0 params, 3 slots, 3 upvalues, 0 locals, 2 constants, 1 function
+	1	[668]	GETUPVAL 	0 0	; callBack
+	2	[668]	CALL     	0 1 1
+	3	[669]	GETTABUP 	0 1 -1	; _ENV "DelayExecuteFunc"
+	4	[671]	CLOSURE  	1 0	; 0000023F2A3C19A0
+	5	[671]	LOADK    	2 -2	; 2.0
+	6	[669]	CALL     	0 3 1
+	7	[672]	RETURN   	0 1
+constants (2) for 0000023F2A3B7350:
+	1	"DelayExecuteFunc"
+	2	2.0
+locals (0) for 0000023F2A3B7350:
+upvalues (3) for 0000023F2A3B7350:
+	0	callBack	0	2
+	1	_ENV	0	0
+	2	go	1	0
+
+function <FloatRaceModel.lua:669,671> (5 instructions at 0000023F2A3C19A0)
+0 params, 2 slots, 2 upvalues, 0 locals, 2 constants, 0 functions
+	1	[670]	GETTABUP 	0 0 -1	; _ENV "TopSliderManager"
+	2	[670]	GETTABLE 	0 0 -2	; "Disappear"
+	3	[670]	GETUPVAL 	1 1	; go
+	4	[670]	CALL     	0 2 1
+	5	[671]	RETURN   	0 1
+constants (2) for 0000023F2A3C19A0:
+	1	"TopSliderManager"
+	2	"Disappear"
+locals (0) for 0000023F2A3C19A0:
+upvalues (2) for 0000023F2A3C19A0:
+	0	_ENV	0	1
+	1	go	0	2
+
+function <FloatRaceModel.lua:677,738> (124 instructions at 0000023F2A3C1720)
+1 param, 11 slots, 2 upvalues, 13 locals, 34 constants, 0 functions
+	1	[678]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[678]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[678]	MOVE     	2 0
+	4	[678]	CALL     	1 2 1
+	5	[679]	GETTABLE 	1 0 -3	; "m_currentInfo"
+	6	[679]	EQ       	0 1 -4	; - nil
+	7	[679]	JMP      	0 1	; to 9
+	8	[680]	RETURN   	0 1
+	9	[684]	GETTABUP 	1 0 -5	; _ENV "ApplicationManager"
+	10	[684]	GETTABLE 	1 1 -6	; "Instance"
+	11	[684]	GETTABLE 	1 1 -7	; "isNetworkConnected"
+	12	[684]	TEST     	1 1
+	13	[684]	JMP      	0 1	; to 15
+	14	[685]	RETURN   	0 1
+	15	[689]	SELF     	1 0 -8	; "GetLevelFinishTime"
+	16	[689]	CALL     	1 2 2
+	17	[690]	EQ       	1 1 -4	; - nil
+	18	[690]	JMP      	0 52	; to 71
+	19	[691]	GETTABUP 	2 0 -9	; _ENV "Table"
+	20	[691]	GETTABLE 	2 2 -10	; "IsEmpty"
+	21	[691]	GETTABLE 	3 0 -3	; "m_currentInfo"
+	22	[691]	GETTABLE 	3 3 -11	; "arriveTimeList"
+	23	[691]	CALL     	2 2 2
+	24	[691]	TEST     	2 1
+	25	[691]	JMP      	0 45	; to 71
+	26	[692]	GETTABLE 	2 0 -12	; "m_dbTable"
+	27	[692]	SELF     	2 2 -13	; "Remove"
+	28	[692]	GETTABUP 	4 1 -14	; EStrDBKeys "LevelFinishTime"
+	29	[692]	LOADK    	5 -15	; "value"
+	30	[692]	CALL     	2 4 1
+	31	[693]	GETTABLE 	2 0 -3	; "m_currentInfo"
+	32	[693]	GETTABLE 	2 2 -11	; "arriveTimeList"
+	33	[693]	LEN      	2 2
+	34	[693]	LOADK    	3 -16	; 1
+	35	[693]	LOADK    	4 -17	; -1
+	36	[693]	FORPREP  	2 23	; to 60
+	37	[694]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	38	[694]	GETTABLE 	6 6 -11	; "arriveTimeList"
+	39	[694]	GETTABLE 	6 6 5
+	40	[694]	LT       	0 6 1
+	41	[694]	JMP      	0 18	; to 60
+	42	[695]	GETTABUP 	6 0 -18	; _ENV "table"
+	43	[695]	GETTABLE 	6 6 -19	; "remove"
+	44	[695]	GETTABLE 	7 0 -3	; "m_currentInfo"
+	45	[695]	GETTABLE 	7 7 -11	; "arriveTimeList"
+	46	[695]	MOVE     	8 5
+	47	[695]	CALL     	6 3 1
+	48	[697]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	49	[697]	GETTABLE 	7 0 -3	; "m_currentInfo"
+	50	[697]	GETTABLE 	7 7 -20	; "curAliveNum"
+	51	[697]	SUB      	7 7 -16	; - 1
+	52	[697]	SETTABLE 	6 -20 7	; "curAliveNum" -
+	53	[700]	GETTABLE 	6 0 -3	; "m_currentInfo"
+	54	[700]	GETTABLE 	6 6 -20	; "curAliveNum"
+	55	[700]	LE       	0 6 -21	; - 0
+	56	[700]	JMP      	0 3	; to 60
+	57	[701]	SELF     	6 0 -22	; "LevelFail"
+	58	[701]	CALL     	6 2 1
+	59	[702]	RETURN   	0 1
+	60	[693]	FORLOOP  	2 -24	; to 37
+	61	[708]	SELF     	2 0 -23	; "GetLevel"
+	62	[708]	CALL     	2 2 2
+	63	[709]	SELF     	3 0 -24	; "_LevelUp"
+	64	[709]	MOVE     	5 2
+	65	[709]	CALL     	3 3 1
+	66	[710]	GETTABUP 	3 0 -25	; _ENV "EventDispatcher"
+	67	[710]	GETTABLE 	3 3 -26	; "DispatchEvent"
+	68	[710]	GETTABUP 	4 0 -27	; _ENV "EEventType"
+	69	[710]	GETTABLE 	4 4 -28	; "FloatRaceLevelUp"
+	70	[710]	CALL     	3 2 1
+	71	[715]	GETTABUP 	2 0 -9	; _ENV "Table"
+	72	[715]	GETTABLE 	2 2 -10	; "IsEmpty"
+	73	[715]	GETTABLE 	3 0 -3	; "m_currentInfo"
+	74	[715]	GETTABLE 	3 3 -11	; "arriveTimeList"
+	75	[715]	CALL     	2 2 2
+	76	[715]	TEST     	2 1
+	77	[715]	JMP      	0 46	; to 124
+	78	[716]	GETTABUP 	2 0 -29	; _ENV "GM"
+	79	[716]	GETTABLE 	2 2 -30	; "GameModel"
+	80	[716]	SELF     	2 2 -31	; "GetServerTime"
+	81	[716]	CALL     	2 2 2
+	82	[717]	NEWTABLE 	3 0 0
+	83	[718]	GETTABLE 	4 0 -3	; "m_currentInfo"
+	84	[718]	GETTABLE 	4 4 -11	; "arriveTimeList"
+	85	[718]	LEN      	4 4
+	86	[718]	LOADK    	5 -16	; 1
+	87	[718]	LOADK    	6 -17	; -1
+	88	[718]	FORPREP  	4 32	; to 121
+	89	[720]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	90	[720]	GETTABLE 	8 8 -11	; "arriveTimeList"
+	91	[720]	GETTABLE 	8 8 7
+	92	[720]	LE       	0 8 2
+	93	[720]	JMP      	0 24	; to 118
+	94	[721]	GETTABUP 	8 0 -18	; _ENV "table"
+	95	[721]	GETTABLE 	8 8 -19	; "remove"
+	96	[721]	GETTABLE 	9 0 -3	; "m_currentInfo"
+	97	[721]	GETTABLE 	9 9 -11	; "arriveTimeList"
+	98	[721]	MOVE     	10 7
+	99	[721]	CALL     	8 3 1
+	100	[723]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	101	[723]	GETTABLE 	9 0 -3	; "m_currentInfo"
+	102	[723]	GETTABLE 	9 9 -20	; "curAliveNum"
+	103	[723]	SUB      	9 9 -16	; - 1
+	104	[723]	SETTABLE 	8 -20 9	; "curAliveNum" -
+	105	[724]	GETTABUP 	8 0 -25	; _ENV "EventDispatcher"
+	106	[724]	GETTABLE 	8 8 -26	; "DispatchEvent"
+	107	[724]	GETTABUP 	9 0 -27	; _ENV "EEventType"
+	108	[724]	GETTABLE 	9 9 -32	; "FloatRaceRobotArrive"
+	109	[724]	CALL     	8 2 1
+	110	[727]	GETTABLE 	8 0 -3	; "m_currentInfo"
+	111	[727]	GETTABLE 	8 8 -20	; "curAliveNum"
+	112	[727]	LE       	0 8 -21	; - 0
+	113	[727]	JMP      	0 7	; to 121
+	114	[728]	SELF     	8 0 -22	; "LevelFail"
+	115	[728]	CALL     	8 2 1
+	116	[729]	RETURN   	0 1
+	117	[730]	JMP      	0 3	; to 121
+	118	[732]	SELF     	8 0 -33	; "SaveCurrentInfo"
+	119	[732]	CALL     	8 2 1
+	120	[732]	JMP      	0 1	; to 122
+	121	[718]	FORLOOP  	4 -33	; to 89
+	122	[736]	SELF     	4 0 -34	; "CheckTopTip"
+	123	[736]	CALL     	4 2 1
+	124	[738]	RETURN   	0 1
+constants (34) for 0000023F2A3C1720:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"m_currentInfo"
+	4	nil
+	5	"ApplicationManager"
+	6	"Instance"
+	7	"isNetworkConnected"
+	8	"GetLevelFinishTime"
+	9	"Table"
+	10	"IsEmpty"
+	11	"arriveTimeList"
+	12	"m_dbTable"
+	13	"Remove"
+	14	"LevelFinishTime"
+	15	"value"
+	16	1
+	17	-1
+	18	"table"
+	19	"remove"
+	20	"curAliveNum"
+	21	0
+	22	"LevelFail"
+	23	"GetLevel"
+	24	"_LevelUp"
+	25	"EventDispatcher"
+	26	"DispatchEvent"
+	27	"EEventType"
+	28	"FloatRaceLevelUp"
+	29	"GM"
+	30	"GameModel"
+	31	"GetServerTime"
+	32	"FloatRaceRobotArrive"
+	33	"SaveCurrentInfo"
+	34	"CheckTopTip"
+locals (13) for 0000023F2A3C1720:
+	0	self	1	125
+	1	finishTime	17	125
+	2	(for index)	36	61
+	3	(for limit)	36	61
+	4	(for step)	36	61
+	5	i	37	60
+	6	level	63	71
+	7	time	82	124
+	8	removeList	83	124
+	9	(for index)	88	122
+	10	(for limit)	88	122
+	11	(for step)	88	122
+	12	i	89	121
+upvalues (2) for 0000023F2A3C1720:
+	0	_ENV	0	0
+	1	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:743,750> (16 instructions at 0000023F2A3C2820)
+1 param, 3 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[744]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[744]	GETTABLE 	1 1 -2	; "IsEmpty"
+	3	[744]	GETTABLE 	2 0 -3	; "m_config"
+	4	[744]	GETTABLE 	2 2 -4	; "rewardConfigs"
+	5	[744]	CALL     	1 2 2
+	6	[744]	TEST     	1 0
+	7	[744]	JMP      	0 1	; to 9
+	8	[745]	RETURN   	0 1
+	9	[748]	SELF     	1 0 -5	; "GetDifficultyMode"
+	10	[748]	CALL     	1 2 2
+	11	[749]	GETTABLE 	2 0 -3	; "m_config"
+	12	[749]	GETTABLE 	2 2 -4	; "rewardConfigs"
+	13	[749]	GETTABLE 	2 2 1
+	14	[749]	LEN      	2 2
+	15	[749]	RETURN   	2 2
+	16	[750]	RETURN   	0 1
+constants (5) for 0000023F2A3C2820:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_config"
+	4	"rewardConfigs"
+	5	"GetDifficultyMode"
+locals (2) for 0000023F2A3C2820:
+	0	self	1	17
+	1	selectedDif	11	17
+upvalues (1) for 0000023F2A3C2820:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:752,754> (7 instructions at 0000023F2A3C1BA0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[753]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[753]	SELF     	2 2 -2	; "Set"
+	3	[753]	GETTABUP 	4 0 -3	; EStrDBKeys "Round"
+	4	[753]	LOADK    	5 -4	; "value"
+	5	[753]	MOVE     	6 1
+	6	[753]	CALL     	2 5 1
+	7	[754]	RETURN   	0 1
+constants (4) for 0000023F2A3C1BA0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Round"
+	4	"value"
+locals (2) for 0000023F2A3C1BA0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C1BA0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:756,758> (10 instructions at 0000023F2A3C15A0)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[757]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[757]	SELF     	1 1 -2	; "GetValue"
+	3	[757]	GETTABUP 	3 0 -3	; EStrDBKeys "Round"
+	4	[757]	LOADK    	4 -4	; "value"
+	5	[757]	CALL     	1 4 2
+	6	[757]	TEST     	1 1
+	7	[757]	JMP      	0 1	; to 9
+	8	[757]	LOADK    	1 -5	; 1
+	9	[757]	RETURN   	1 2
+	10	[758]	RETURN   	0 1
+constants (5) for 0000023F2A3C15A0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Round"
+	4	"value"
+	5	1
+locals (1) for 0000023F2A3C15A0:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C15A0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:760,762> (10 instructions at 0000023F2A3C1020)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[761]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[761]	SELF     	1 1 -2	; "GetValue"
+	3	[761]	GETTABUP 	3 0 -3	; EStrDBKeys "Level"
+	4	[761]	LOADK    	4 -4	; "value"
+	5	[761]	CALL     	1 4 2
+	6	[761]	TEST     	1 1
+	7	[761]	JMP      	0 1	; to 9
+	8	[761]	LOADK    	1 -5	; 1
+	9	[761]	RETURN   	1 2
+	10	[762]	RETURN   	0 1
+constants (5) for 0000023F2A3C1020:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Level"
+	4	"value"
+	5	1
+locals (1) for 0000023F2A3C1020:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C1020:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:764,766> (7 instructions at 0000023F2A3C10A0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[765]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[765]	SELF     	2 2 -2	; "Set"
+	3	[765]	GETTABUP 	4 0 -3	; EStrDBKeys "Level"
+	4	[765]	LOADK    	5 -4	; "value"
+	5	[765]	MOVE     	6 1
+	6	[765]	CALL     	2 5 1
+	7	[766]	RETURN   	0 1
+constants (4) for 0000023F2A3C10A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Level"
+	4	"value"
+locals (2) for 0000023F2A3C10A0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C10A0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:768,770> (10 instructions at 0000023F2A3C2DA0)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[769]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[769]	SELF     	1 1 -2	; "GetValue"
+	3	[769]	GETTABUP 	3 0 -3	; EStrDBKeys "Score"
+	4	[769]	LOADK    	4 -4	; "value"
+	5	[769]	CALL     	1 4 2
+	6	[769]	TEST     	1 1
+	7	[769]	JMP      	0 1	; to 9
+	8	[769]	LOADK    	1 -5	; 0
+	9	[769]	RETURN   	1 2
+	10	[770]	RETURN   	0 1
+constants (5) for 0000023F2A3C2DA0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Score"
+	4	"value"
+	5	0
+locals (1) for 0000023F2A3C2DA0:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C2DA0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:772,774> (7 instructions at 0000023F2A3C12A0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[773]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[773]	SELF     	2 2 -2	; "Set"
+	3	[773]	GETTABUP 	4 0 -3	; EStrDBKeys "Score"
+	4	[773]	LOADK    	5 -4	; "value"
+	5	[773]	MOVE     	6 1
+	6	[773]	CALL     	2 5 1
+	7	[774]	RETURN   	0 1
+constants (4) for 0000023F2A3C12A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Score"
+	4	"value"
+locals (2) for 0000023F2A3C12A0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C12A0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:776,778> (7 instructions at 0000023F2A3C22A0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[777]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[777]	SELF     	2 2 -2	; "Set"
+	3	[777]	GETTABUP 	4 0 -3	; EStrDBKeys "Difficulty"
+	4	[777]	LOADK    	5 -4	; "value"
+	5	[777]	MOVE     	6 1
+	6	[777]	CALL     	2 5 1
+	7	[778]	RETURN   	0 1
+constants (4) for 0000023F2A3C22A0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Difficulty"
+	4	"value"
+locals (2) for 0000023F2A3C22A0:
+	0	self	1	8
+	1	mode	1	8
+upvalues (1) for 0000023F2A3C22A0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:780,782> (11 instructions at 0000023F2A3C1F20)
+1 param, 5 slots, 2 upvalues, 1 local, 6 constants, 0 functions
+	1	[781]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[781]	SELF     	1 1 -2	; "GetValue"
+	3	[781]	GETTABUP 	3 0 -3	; EStrDBKeys "Difficulty"
+	4	[781]	LOADK    	4 -4	; "value"
+	5	[781]	CALL     	1 4 2
+	6	[781]	TEST     	1 1
+	7	[781]	JMP      	0 2	; to 10
+	8	[781]	GETTABUP 	1 1 -5	; _ENV "EFloatRaceDifficultyMode"
+	9	[781]	GETTABLE 	1 1 -6	; "None"
+	10	[781]	RETURN   	1 2
+	11	[782]	RETURN   	0 1
+constants (6) for 0000023F2A3C1F20:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Difficulty"
+	4	"value"
+	5	"EFloatRaceDifficultyMode"
+	6	"None"
+locals (1) for 0000023F2A3C1F20:
+	0	self	1	12
+upvalues (2) for 0000023F2A3C1F20:
+	0	EStrDBKeys	1	0
+	1	_ENV	0	0
+
+function <FloatRaceModel.lua:784,786> (10 instructions at 0000023F2A3C2C20)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[785]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[785]	SELF     	1 1 -2	; "GetValue"
+	3	[785]	GETTABUP 	3 0 -3	; EStrDBKeys "LastScore"
+	4	[785]	LOADK    	4 -4	; "value"
+	5	[785]	CALL     	1 4 2
+	6	[785]	TEST     	1 1
+	7	[785]	JMP      	0 1	; to 9
+	8	[785]	LOADK    	1 -5	; 0
+	9	[785]	RETURN   	1 2
+	10	[786]	RETURN   	0 1
+constants (5) for 0000023F2A3C2C20:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastScore"
+	4	"value"
+	5	0
+locals (1) for 0000023F2A3C2C20:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C2C20:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:788,790> (7 instructions at 0000023F2A3C2AA0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[789]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[789]	SELF     	2 2 -2	; "Set"
+	3	[789]	GETTABUP 	4 0 -3	; EStrDBKeys "LastScore"
+	4	[789]	LOADK    	5 -4	; "value"
+	5	[789]	MOVE     	6 1
+	6	[789]	CALL     	2 5 1
+	7	[790]	RETURN   	0 1
+constants (4) for 0000023F2A3C2AA0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastScore"
+	4	"value"
+locals (2) for 0000023F2A3C2AA0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C2AA0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:792,794> (10 instructions at 0000023F2A3C1220)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[793]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[793]	SELF     	1 1 -2	; "GetValue"
+	3	[793]	GETTABUP 	3 0 -3	; EStrDBKeys "LastLevel"
+	4	[793]	LOADK    	4 -4	; "value"
+	5	[793]	CALL     	1 4 2
+	6	[793]	TEST     	1 1
+	7	[793]	JMP      	0 1	; to 9
+	8	[793]	LOADK    	1 -5	; 1
+	9	[793]	RETURN   	1 2
+	10	[794]	RETURN   	0 1
+constants (5) for 0000023F2A3C1220:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LastLevel"
+	4	"value"
+	5	1
+locals (1) for 0000023F2A3C1220:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C1220:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:796,798> (7 instructions at 0000023F2A3C1FA0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[797]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[797]	SELF     	2 2 -2	; "Set"
+	3	[797]	GETTABUP 	4 0 -3	; EStrDBKeys "LastLevel"
+	4	[797]	LOADK    	5 -4	; "value"
+	5	[797]	MOVE     	6 1
+	6	[797]	CALL     	2 5 1
+	7	[798]	RETURN   	0 1
+constants (4) for 0000023F2A3C1FA0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LastLevel"
+	4	"value"
+locals (2) for 0000023F2A3C1FA0:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C1FA0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:800,806> (16 instructions at 0000023F2A3C24A0)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[801]	GETTABLE 	1 0 -1	; "m_config"
+	2	[801]	EQ       	0 1 -2	; - nil
+	3	[801]	JMP      	0 3	; to 7
+	4	[802]	LOADBOOL 	1 0 0
+	5	[802]	RETURN   	1 2
+	6	[802]	JMP      	0 9	; to 16
+	7	[804]	SELF     	1 0 -3	; "GetRound"
+	8	[804]	CALL     	1 2 2
+	9	[804]	GETTABLE 	2 0 -1	; "m_config"
+	10	[804]	GETTABLE 	2 2 -4	; "roundCount"
+	11	[804]	LT       	1 2 1
+	12	[804]	JMP      	0 1	; to 14
+	13	[804]	LOADBOOL 	1 0 1
+	14	[804]	LOADBOOL 	1 1 0
+	15	[804]	RETURN   	1 2
+	16	[806]	RETURN   	0 1
+constants (4) for 0000023F2A3C24A0:
+	1	"m_config"
+	2	nil
+	3	"GetRound"
+	4	"roundCount"
+locals (1) for 0000023F2A3C24A0:
+	0	self	1	17
+upvalues (0) for 0000023F2A3C24A0:
+
+function <FloatRaceModel.lua:808,810> (6 instructions at 0000023F2A3C2120)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[809]	GETTABUP 	1 0 -1	; _ENV "Table"
+	2	[809]	GETTABLE 	1 1 -2	; "ShallowCopy"
+	3	[809]	GETTABLE 	2 0 -3	; "m_currentInfo"
+	4	[809]	TAILCALL 	1 2 0
+	5	[809]	RETURN   	1 0
+	6	[810]	RETURN   	0 1
+constants (3) for 0000023F2A3C2120:
+	1	"Table"
+	2	"ShallowCopy"
+	3	"m_currentInfo"
+locals (1) for 0000023F2A3C2120:
+	0	self	1	7
+upvalues (1) for 0000023F2A3C2120:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:812,819> (19 instructions at 0000023F2A3C11A0)
+1 param, 7 slots, 2 upvalues, 1 local, 9 constants, 0 functions
+	1	[813]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[813]	EQ       	0 1 -2	; - nil
+	3	[813]	JMP      	0 6	; to 10
+	4	[814]	GETTABLE 	1 0 -3	; "m_dbTable"
+	5	[814]	SELF     	1 1 -4	; "Remove"
+	6	[814]	GETTABUP 	3 0 -5	; EStrDBKeys "CurrentInfo"
+	7	[814]	LOADK    	4 -6	; "value"
+	8	[814]	CALL     	1 4 1
+	9	[814]	JMP      	0 9	; to 19
+	10	[817]	GETTABLE 	1 0 -3	; "m_dbTable"
+	11	[817]	SELF     	1 1 -7	; "Set"
+	12	[817]	GETTABUP 	3 0 -5	; EStrDBKeys "CurrentInfo"
+	13	[817]	LOADK    	4 -6	; "value"
+	14	[817]	GETTABUP 	5 1 -8	; _ENV "json"
+	15	[817]	GETTABLE 	5 5 -9	; "encode"
+	16	[817]	GETTABLE 	6 0 -1	; "m_currentInfo"
+	17	[817]	CALL     	5 2 0
+	18	[817]	CALL     	1 0 1
+	19	[819]	RETURN   	0 1
+constants (9) for 0000023F2A3C11A0:
+	1	"m_currentInfo"
+	2	nil
+	3	"m_dbTable"
+	4	"Remove"
+	5	"CurrentInfo"
+	6	"value"
+	7	"Set"
+	8	"json"
+	9	"encode"
+locals (1) for 0000023F2A3C11A0:
+	0	self	1	20
+upvalues (2) for 0000023F2A3C11A0:
+	0	EStrDBKeys	1	0
+	1	_ENV	0	0
+
+function <FloatRaceModel.lua:821,823> (7 instructions at 0000023F2A3C2A20)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[822]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[822]	SELF     	2 2 -2	; "Set"
+	3	[822]	GETTABUP 	4 0 -3	; EStrDBKeys "LevelFinishTime"
+	4	[822]	LOADK    	5 -4	; "value"
+	5	[822]	MOVE     	6 1
+	6	[822]	CALL     	2 5 1
+	7	[823]	RETURN   	0 1
+constants (4) for 0000023F2A3C2A20:
+	1	"m_dbTable"
+	2	"Set"
+	3	"LevelFinishTime"
+	4	"value"
+locals (2) for 0000023F2A3C2A20:
+	0	self	1	8
+	1	time	1	8
+upvalues (1) for 0000023F2A3C2A20:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:825,827> (7 instructions at 0000023F2A3C2B20)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[826]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[826]	SELF     	1 1 -2	; "GetValue"
+	3	[826]	GETTABUP 	3 0 -3	; EStrDBKeys "LevelFinishTime"
+	4	[826]	LOADK    	4 -4	; "value"
+	5	[826]	TAILCALL 	1 4 0
+	6	[826]	RETURN   	1 0
+	7	[827]	RETURN   	0 1
+constants (4) for 0000023F2A3C2B20:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"LevelFinishTime"
+	4	"value"
+locals (1) for 0000023F2A3C2B20:
+	0	self	1	8
+upvalues (1) for 0000023F2A3C2B20:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:829,831> (10 instructions at 0000023F2A3C1520)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[830]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[830]	TEST     	1 0
+	3	[830]	JMP      	0 4	; to 8
+	4	[830]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[830]	GETTABLE 	1 1 -2	; "curAliveNum"
+	6	[830]	TEST     	1 1
+	7	[830]	JMP      	0 1	; to 9
+	8	[830]	LOADNIL  	1 0
+	9	[830]	RETURN   	1 2
+	10	[831]	RETURN   	0 1
+constants (2) for 0000023F2A3C1520:
+	1	"m_currentInfo"
+	2	"curAliveNum"
+locals (1) for 0000023F2A3C1520:
+	0	self	1	11
+upvalues (0) for 0000023F2A3C1520:
+
+function <FloatRaceModel.lua:833,840> (16 instructions at 0000023F2A3C1120)
+1 param, 6 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[834]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[834]	EQ       	1 1 -2	; - nil
+	3	[834]	JMP      	0 4	; to 8
+	4	[835]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[835]	GETTABLE 	1 1 -3	; "finishAliveNum"
+	6	[835]	RETURN   	1 2
+	7	[835]	JMP      	0 8	; to 16
+	8	[837]	SELF     	1 0 -4	; "GetRobotConfigByDiffAndLevel"
+	9	[837]	SELF     	3 0 -5	; "GetDifficultyMode"
+	10	[837]	CALL     	3 2 2
+	11	[837]	SELF     	4 0 -6	; "GetLevel"
+	12	[837]	CALL     	4 2 0
+	13	[837]	CALL     	1 0 2
+	14	[838]	GETTABLE 	2 1 -7	; "upgradeSlotsNum"
+	15	[838]	RETURN   	2 2
+	16	[840]	RETURN   	0 1
+constants (7) for 0000023F2A3C1120:
+	1	"m_currentInfo"
+	2	nil
+	3	"finishAliveNum"
+	4	"GetRobotConfigByDiffAndLevel"
+	5	"GetDifficultyMode"
+	6	"GetLevel"
+	7	"upgradeSlotsNum"
+locals (2) for 0000023F2A3C1120:
+	0	self	1	17
+	1	robotConfig	14	16
+upvalues (0) for 0000023F2A3C1120:
+
+function <FloatRaceModel.lua:842,853> (24 instructions at 0000023F2A3C21A0)
+2 params, 5 slots, 1 upvalue, 3 locals, 5 constants, 0 functions
+	1	[843]	GETTABUP 	2 0 -1	; _ENV "Table"
+	2	[843]	GETTABLE 	2 2 -2	; "IsEmpty"
+	3	[843]	GETTABLE 	3 0 -3	; "m_config"
+	4	[843]	GETTABLE 	3 3 -4	; "rewardConfigs"
+	5	[843]	CALL     	2 2 2
+	6	[843]	TEST     	2 0
+	7	[843]	JMP      	0 1	; to 9
+	8	[844]	RETURN   	0 1
+	9	[847]	GETTABLE 	2 0 -3	; "m_config"
+	10	[847]	GETTABLE 	2 2 -4	; "rewardConfigs"
+	11	[847]	GETTABLE 	2 2 1
+	12	[848]	GETTABUP 	3 0 -1	; _ENV "Table"
+	13	[848]	GETTABLE 	3 3 -2	; "IsEmpty"
+	14	[848]	GETTABLE 	4 0 -3	; "m_config"
+	15	[848]	GETTABLE 	4 4 -4	; "rewardConfigs"
+	16	[848]	CALL     	3 2 2
+	17	[848]	TEST     	3 0
+	18	[848]	JMP      	0 1	; to 20
+	19	[849]	RETURN   	0 1
+	20	[852]	LEN      	3 2
+	21	[852]	GETTABLE 	3 2 3
+	22	[852]	GETTABLE 	3 3 -5	; "rewards"
+	23	[852]	RETURN   	3 2
+	24	[853]	RETURN   	0 1
+constants (5) for 0000023F2A3C21A0:
+	1	"Table"
+	2	"IsEmpty"
+	3	"m_config"
+	4	"rewardConfigs"
+	5	"rewards"
+locals (3) for 0000023F2A3C21A0:
+	0	self	1	25
+	1	diff	1	25
+	2	rewardConfig	12	25
+upvalues (1) for 0000023F2A3C21A0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:855,857> (7 instructions at 0000023F2A3C1320)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[856]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[856]	SELF     	1 1 -2	; "GetValue"
+	3	[856]	GETTABUP 	3 0 -3	; EStrDBKeys "Rank"
+	4	[856]	LOADK    	4 -4	; "value"
+	5	[856]	TAILCALL 	1 4 0
+	6	[856]	RETURN   	1 0
+	7	[857]	RETURN   	0 1
+constants (4) for 0000023F2A3C1320:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"Rank"
+	4	"value"
+locals (1) for 0000023F2A3C1320:
+	0	self	1	8
+upvalues (1) for 0000023F2A3C1320:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:859,861> (7 instructions at 0000023F2A3C2BA0)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[860]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[860]	SELF     	2 2 -2	; "Set"
+	3	[860]	GETTABUP 	4 0 -3	; EStrDBKeys "Rank"
+	4	[860]	LOADK    	5 -4	; "value"
+	5	[860]	MOVE     	6 1
+	6	[860]	CALL     	2 5 1
+	7	[861]	RETURN   	0 1
+constants (4) for 0000023F2A3C2BA0:
+	1	"m_dbTable"
+	2	"Set"
+	3	"Rank"
+	4	"value"
+locals (2) for 0000023F2A3C2BA0:
+	0	self	1	8
+	1	rank	1	8
+upvalues (1) for 0000023F2A3C2BA0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:863,865> (10 instructions at 0000023F2A3C1820)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[864]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	2	[864]	TEST     	1 0
+	3	[864]	JMP      	0 4	; to 8
+	4	[864]	GETTABLE 	1 0 -1	; "m_currentInfo"
+	5	[864]	GETTABLE 	1 1 -2	; "deleteIconIndex"
+	6	[864]	TEST     	1 1
+	7	[864]	JMP      	0 1	; to 9
+	8	[864]	LOADNIL  	1 0
+	9	[864]	RETURN   	1 2
+	10	[865]	RETURN   	0 1
+constants (2) for 0000023F2A3C1820:
+	1	"m_currentInfo"
+	2	"deleteIconIndex"
+locals (1) for 0000023F2A3C1820:
+	0	self	1	11
+upvalues (0) for 0000023F2A3C1820:
+
+function <FloatRaceModel.lua:868,881> (30 instructions at 0000023F2A3C2520)
+1 param, 5 slots, 1 upvalue, 1 local, 14 constants, 0 functions
+	1	[869]	SELF     	1 0 -1	; "SetLastLevel"
+	2	[869]	SELF     	3 0 -2	; "GetLevel"
+	3	[869]	CALL     	3 2 0
+	4	[869]	CALL     	1 0 1
+	5	[870]	SELF     	1 0 -3	; "SetLastScore"
+	6	[870]	LOADK    	3 -4	; 0
+	7	[870]	CALL     	1 3 1
+	8	[871]	SELF     	1 0 -5	; "SetScore"
+	9	[871]	LOADK    	3 -4	; 0
+	10	[871]	CALL     	1 3 1
+	11	[873]	SETTABLE 	0 -6 -7	; "m_currentInfo" nil
+	12	[874]	SELF     	1 0 -8	; "SaveCurrentInfo"
+	13	[874]	CALL     	1 2 1
+	14	[876]	SELF     	1 0 -2	; "GetLevel"
+	15	[876]	CALL     	1 2 2
+	16	[876]	SELF     	2 0 -9	; "GetMaxLevel"
+	17	[876]	CALL     	2 2 2
+	18	[876]	LT       	0 2 1
+	19	[876]	JMP      	0 10	; to 30
+	20	[877]	SELF     	1 0 -10	; "SetDifficultyMode"
+	21	[877]	GETTABUP 	3 0 -11	; _ENV "EFloatRaceDifficultyMode"
+	22	[877]	GETTABLE 	3 3 -12	; "None"
+	23	[877]	CALL     	1 3 1
+	24	[878]	SELF     	1 0 -13	; "SetLevel"
+	25	[878]	LOADK    	3 -14	; 1
+	26	[878]	CALL     	1 3 1
+	27	[879]	SELF     	1 0 -1	; "SetLastLevel"
+	28	[879]	LOADK    	3 -14	; 1
+	29	[879]	CALL     	1 3 1
+	30	[881]	RETURN   	0 1
+constants (14) for 0000023F2A3C2520:
+	1	"SetLastLevel"
+	2	"GetLevel"
+	3	"SetLastScore"
+	4	0
+	5	"SetScore"
+	6	"m_currentInfo"
+	7	nil
+	8	"SaveCurrentInfo"
+	9	"GetMaxLevel"
+	10	"SetDifficultyMode"
+	11	"EFloatRaceDifficultyMode"
+	12	"None"
+	13	"SetLevel"
+	14	1
+locals (1) for 0000023F2A3C2520:
+	0	self	1	31
+upvalues (1) for 0000023F2A3C2520:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:883,885> (7 instructions at 0000023F2A3C1620)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[884]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[884]	SELF     	1 1 -2	; "Set"
+	3	[884]	GETTABUP 	3 0 -3	; EStrDBKeys "FinishWindowPop"
+	4	[884]	LOADK    	4 -4	; "value"
+	5	[884]	LOADK    	5 -5	; "1"
+	6	[884]	CALL     	1 5 1
+	7	[885]	RETURN   	0 1
+constants (5) for 0000023F2A3C1620:
+	1	"m_dbTable"
+	2	"Set"
+	3	"FinishWindowPop"
+	4	"value"
+	5	"1"
+locals (1) for 0000023F2A3C1620:
+	0	self	1	8
+upvalues (1) for 0000023F2A3C1620:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:887,889> (11 instructions at 0000023F2A3C14A0)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[888]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[888]	SELF     	1 1 -2	; "GetValue"
+	3	[888]	GETTABUP 	3 0 -3	; EStrDBKeys "FinishWindowPop"
+	4	[888]	LOADK    	4 -4	; "value"
+	5	[888]	CALL     	1 4 2
+	6	[888]	EQ       	0 1 -5	; - "1"
+	7	[888]	JMP      	0 1	; to 9
+	8	[888]	LOADBOOL 	1 0 1
+	9	[888]	LOADBOOL 	1 1 0
+	10	[888]	RETURN   	1 2
+	11	[889]	RETURN   	0 1
+constants (5) for 0000023F2A3C14A0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"FinishWindowPop"
+	4	"value"
+	5	"1"
+locals (1) for 0000023F2A3C14A0:
+	0	self	1	12
+upvalues (1) for 0000023F2A3C14A0:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:891,893> (7 instructions at 0000023F2A3C2220)
+1 param, 6 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[892]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[892]	SELF     	1 1 -2	; "Set"
+	3	[892]	GETTABUP 	3 0 -3	; EStrDBKeys "EndWindowPop"
+	4	[892]	LOADK    	4 -4	; "value"
+	5	[892]	LOADK    	5 -5	; "1"
+	6	[892]	CALL     	1 5 1
+	7	[893]	RETURN   	0 1
+constants (5) for 0000023F2A3C2220:
+	1	"m_dbTable"
+	2	"Set"
+	3	"EndWindowPop"
+	4	"value"
+	5	"1"
+locals (1) for 0000023F2A3C2220:
+	0	self	1	8
+upvalues (1) for 0000023F2A3C2220:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:895,897> (11 instructions at 0000023F2A3C2E20)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[896]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[896]	SELF     	1 1 -2	; "GetValue"
+	3	[896]	GETTABUP 	3 0 -3	; EStrDBKeys "EndWindowPop"
+	4	[896]	LOADK    	4 -4	; "value"
+	5	[896]	CALL     	1 4 2
+	6	[896]	EQ       	0 1 -5	; - "1"
+	7	[896]	JMP      	0 1	; to 9
+	8	[896]	LOADBOOL 	1 0 1
+	9	[896]	LOADBOOL 	1 1 0
+	10	[896]	RETURN   	1 2
+	11	[897]	RETURN   	0 1
+constants (5) for 0000023F2A3C2E20:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"EndWindowPop"
+	4	"value"
+	5	"1"
+locals (1) for 0000023F2A3C2E20:
+	0	self	1	12
+upvalues (1) for 0000023F2A3C2E20:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:899,903> (17 instructions at 0000023F2A3C23A0)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[900]	SELF     	1 0 -1	; "CanSelectDifficulty"
+	2	[900]	CALL     	1 2 2
+	3	[901]	TEST     	1 0
+	4	[901]	JMP      	0 11	; to 16
+	5	[901]	SELF     	1 0 -2	; "GetDifficultyMode"
+	6	[901]	CALL     	1 2 2
+	7	[901]	GETTABUP 	2 0 -3	; _ENV "EFloatRaceDifficultyMode"
+	8	[901]	GETTABLE 	2 2 -4	; "None"
+	9	[901]	EQ       	0 1 2
+	10	[901]	JMP      	0 3	; to 14
+	11	[902]	GETTABLE 	1 0 -5	; "m_selectWindowPop"
+	12	[902]	EQ       	0 1 -6	; - true
+	13	[902]	JMP      	0 1	; to 15
+	14	[902]	LOADBOOL 	1 0 1
+	15	[902]	LOADBOOL 	1 1 0
+	16	[902]	RETURN   	1 2
+	17	[903]	RETURN   	0 1
+constants (6) for 0000023F2A3C23A0:
+	1	"CanSelectDifficulty"
+	2	"GetDifficultyMode"
+	3	"EFloatRaceDifficultyMode"
+	4	"None"
+	5	"m_selectWindowPop"
+	6	true
+locals (1) for 0000023F2A3C23A0:
+	0	self	1	18
+upvalues (1) for 0000023F2A3C23A0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:905,907> (2 instructions at 0000023F2A3C29A0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[906]	SETTABLE 	0 -1 -2	; "m_selectWindowPop" true
+	2	[907]	RETURN   	0 1
+constants (2) for 0000023F2A3C29A0:
+	1	"m_selectWindowPop"
+	2	true
+locals (1) for 0000023F2A3C29A0:
+	0	self	1	3
+upvalues (0) for 0000023F2A3C29A0:
+
+function <FloatRaceModel.lua:909,911> (7 instructions at 0000023F2A3C2920)
+2 params, 7 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[910]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[910]	SELF     	2 2 -2	; "Set"
+	3	[910]	GETTABUP 	4 0 -3	; EStrDBKeys "CurLevelTryTimes"
+	4	[910]	LOADK    	5 -4	; "value"
+	5	[910]	MOVE     	6 1
+	6	[910]	CALL     	2 5 1
+	7	[911]	RETURN   	0 1
+constants (4) for 0000023F2A3C2920:
+	1	"m_dbTable"
+	2	"Set"
+	3	"CurLevelTryTimes"
+	4	"value"
+locals (2) for 0000023F2A3C2920:
+	0	self	1	8
+	1	num	1	8
+upvalues (1) for 0000023F2A3C2920:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:913,915> (10 instructions at 0000023F2A3C2020)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[914]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[914]	SELF     	1 1 -2	; "GetValue"
+	3	[914]	GETTABUP 	3 0 -3	; EStrDBKeys "CurLevelTryTimes"
+	4	[914]	LOADK    	4 -4	; "value"
+	5	[914]	CALL     	1 4 2
+	6	[914]	TEST     	1 1
+	7	[914]	JMP      	0 1	; to 9
+	8	[914]	LOADK    	1 -5	; 1
+	9	[914]	RETURN   	1 2
+	10	[915]	RETURN   	0 1
+constants (5) for 0000023F2A3C2020:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"CurLevelTryTimes"
+	4	"value"
+	5	1
+locals (1) for 0000023F2A3C2020:
+	0	self	1	11
+upvalues (1) for 0000023F2A3C2020:
+	0	EStrDBKeys	1	0
+
+function <FloatRaceModel.lua:919,921> (12 instructions at 0000023F2A3C1D20)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[920]	SELF     	1 0 -1	; "CanSignUp"
+	2	[920]	CALL     	1 2 2
+	3	[920]	TEST     	1 1
+	4	[920]	JMP      	0 6	; to 11
+	5	[920]	SELF     	1 0 -2	; "GetLevelFinishTime"
+	6	[920]	CALL     	1 2 2
+	7	[920]	EQ       	0 1 -3	; - nil
+	8	[920]	JMP      	0 1	; to 10
+	9	[920]	LOADBOOL 	1 0 1
+	10	[920]	LOADBOOL 	1 1 0
+	11	[920]	RETURN   	1 2
+	12	[921]	RETURN   	0 1
+constants (3) for 0000023F2A3C1D20:
+	1	"CanSignUp"
+	2	"GetLevelFinishTime"
+	3	nil
+locals (1) for 0000023F2A3C1D20:
+	0	self	1	13
+upvalues (0) for 0000023F2A3C1D20:
+
+function <FloatRaceModel.lua:924,976> (47 instructions at 0000023F2A3C2D20)
+1 param, 9 slots, 1 upvalue, 1 local, 31 constants, 3 functions
+	1	[925]	NEWTABLE 	1 0 11
+	2	[926]	SETTABLE 	1 -1 -2	; "Type" "floatRace"
+	3	[927]	NEWTABLE 	2 2 0
+	4	[927]	GETTABUP 	3 0 -4	; _ENV "EEventType"
+	5	[927]	GETTABLE 	3 3 -5	; "FloatRaceStateChanged"
+	6	[927]	GETTABUP 	4 0 -4	; _ENV "EEventType"
+	7	[927]	GETTABLE 	4 4 -6	; "FloatRaceFinishedAll"
+	8	[927]	SETLIST  	2 2 1	; 1
+	9	[927]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	10	[928]	GETTABUP 	2 0 -8	; _ENV "UIPrefabConfigName"
+	11	[928]	GETTABLE 	2 2 -9	; "FloatRaceHudEntry"
+	12	[928]	SETTABLE 	1 -7 2	; "EntryPrefabConfigName" -
+	13	[931]	CLOSURE  	2 0	; 0000023F2A3C1DA0
+	14	[931]	SETTABLE 	1 -10 2	; "CheckFunc" -
+	15	[932]	GETTABUP 	2 0 -12	; _ENV "EHudSideBarType"
+	16	[932]	GETTABLE 	2 2 -13	; "Left"
+	17	[932]	SETTABLE 	1 -11 2	; "HudSideBarType" -
+	18	[933]	GETTABUP 	2 0 -15	; _ENV "ESceneViewHudButtonKey"
+	19	[933]	GETTABLE 	2 2 -16	; "FloatRace"
+	20	[933]	SETTABLE 	1 -14 2	; "EntryButtonKey" -
+	21	[934]	GETTABUP 	2 0 -18	; _ENV "ImageFileConfigName"
+	22	[934]	GETTABLE 	2 2 -19	; "icon_floatRace"
+	23	[934]	SETTABLE 	1 -17 2	; "EntryIconName" -
+	24	[962]	CLOSURE  	2 1	; 0000023F2A3C13A0
+	25	[962]	SETTABLE 	1 -20 2	; "OnClickedFunc" -
+	26	[963]	GETTABUP 	2 0 -22	; _ENV "EntryRedPointType"
+	27	[963]	GETTABLE 	2 2 -23	; "Exc"
+	28	[963]	SETTABLE 	1 -21 2	; "RedPointType" -
+	29	[966]	CLOSURE  	2 2	; 0000023F2A3C2EA0
+	30	[966]	SETTABLE 	1 -24 2	; "GetRedPointNumFunc" -
+	31	[967]	NEWTABLE 	2 6 0
+	32	[968]	GETTABUP 	3 0 -4	; _ENV "EEventType"
+	33	[968]	GETTABLE 	3 3 -26	; "FloatRaceSignUp"
+	34	[969]	GETTABUP 	4 0 -4	; _ENV "EEventType"
+	35	[969]	GETTABLE 	4 4 -27	; "FloatRaceScoreChanged"
+	36	[970]	GETTABUP 	5 0 -4	; _ENV "EEventType"
+	37	[970]	GETTABLE 	5 5 -28	; "FloatRaceWaitSignUp"
+	38	[971]	GETTABUP 	6 0 -4	; _ENV "EEventType"
+	39	[971]	GETTABLE 	6 6 -29	; "FloatRaceRobotArrive"
+	40	[972]	GETTABUP 	7 0 -4	; _ENV "EEventType"
+	41	[972]	GETTABLE 	7 7 -30	; "FloatRaceFail"
+	42	[973]	GETTABUP 	8 0 -4	; _ENV "EEventType"
+	43	[974]	GETTABLE 	8 8 -31	; "FloatRaceFullScoreWithoutNet"
+	44	[974]	SETLIST  	2 6 1	; 1
+	45	[974]	SETTABLE 	1 -25 2	; "ArrUpdateEntryContentEvent" -
+	46	[975]	RETURN   	1 2
+	47	[976]	RETURN   	0 1
+constants (31) for 0000023F2A3C2D20:
+	1	"Type"
+	2	"floatRace"
+	3	"ArrCheckShowEvent"
+	4	"EEventType"
+	5	"FloatRaceStateChanged"
+	6	"FloatRaceFinishedAll"
+	7	"EntryPrefabConfigName"
+	8	"UIPrefabConfigName"
+	9	"FloatRaceHudEntry"
+	10	"CheckFunc"
+	11	"HudSideBarType"
+	12	"EHudSideBarType"
+	13	"Left"
+	14	"EntryButtonKey"
+	15	"ESceneViewHudButtonKey"
+	16	"FloatRace"
+	17	"EntryIconName"
+	18	"ImageFileConfigName"
+	19	"icon_floatRace"
+	20	"OnClickedFunc"
+	21	"RedPointType"
+	22	"EntryRedPointType"
+	23	"Exc"
+	24	"GetRedPointNumFunc"
+	25	"ArrUpdateEntryContentEvent"
+	26	"FloatRaceSignUp"
+	27	"FloatRaceScoreChanged"
+	28	"FloatRaceWaitSignUp"
+	29	"FloatRaceRobotArrive"
+	30	"FloatRaceFail"
+	31	"FloatRaceFullScoreWithoutNet"
+locals (1) for 0000023F2A3C2D20:
+	0	self	1	48
+upvalues (1) for 0000023F2A3C2D20:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:929,931> (23 instructions at 0000023F2A3C1DA0)
+0 params, 2 slots, 2 upvalues, 0 locals, 5 constants, 0 functions
+	1	[930]	GETUPVAL 	0 0	; self
+	2	[930]	SELF     	0 0 -1	; "GetState"
+	3	[930]	CALL     	0 2 2
+	4	[930]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[930]	GETTABLE 	1 1 -3	; "Preparing"
+	6	[930]	EQ       	1 0 1
+	7	[930]	JMP      	0 13	; to 21
+	8	[930]	GETUPVAL 	0 0	; self
+	9	[930]	SELF     	0 0 -1	; "GetState"
+	10	[930]	CALL     	0 2 2
+	11	[930]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	12	[930]	GETTABLE 	1 1 -4	; "Started"
+	13	[930]	EQ       	0 0 1
+	14	[930]	JMP      	0 5	; to 20
+	15	[930]	GETUPVAL 	0 0	; self
+	16	[930]	SELF     	0 0 -5	; "IsAllRoundFinished"
+	17	[930]	CALL     	0 2 2
+	18	[930]	NOT      	0 0
+	19	[930]	JMP      	0 2	; to 22
+	20	[930]	LOADBOOL 	0 0 1
+	21	[930]	LOADBOOL 	0 1 0
+	22	[930]	RETURN   	0 2
+	23	[931]	RETURN   	0 1
+constants (5) for 0000023F2A3C1DA0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Preparing"
+	4	"Started"
+	5	"IsAllRoundFinished"
+locals (0) for 0000023F2A3C1DA0:
+upvalues (2) for 0000023F2A3C1DA0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <FloatRaceModel.lua:935,962> (79 instructions at 0000023F2A3C13A0)
+0 params, 5 slots, 2 upvalues, 2 locals, 26 constants, 0 functions
+	1	[937]	GETTABUP 	0 0 -1	; _ENV "ApplicationManager"
+	2	[937]	GETTABLE 	0 0 -2	; "Instance"
+	3	[937]	GETTABLE 	0 0 -3	; "isNetworkConnected"
+	4	[937]	TEST     	0 1
+	5	[937]	JMP      	0 7	; to 13
+	6	[938]	GETTABUP 	0 0 -4	; _ENV "GM"
+	7	[938]	GETTABLE 	0 0 -5	; "UIManager"
+	8	[938]	SELF     	0 0 -6	; "OpenView"
+	9	[938]	GETTABUP 	2 0 -7	; _ENV "UIPrefabConfigName"
+	10	[938]	GETTABLE 	2 2 -8	; "NetworkErrorWindow"
+	11	[938]	CALL     	0 3 1
+	12	[939]	RETURN   	0 1
+	13	[942]	GETUPVAL 	0 1	; self
+	14	[942]	SELF     	0 0 -9	; "GetState"
+	15	[942]	CALL     	0 2 2
+	16	[943]	GETTABUP 	1 0 -10	; _ENV "ActivityState"
+	17	[943]	GETTABLE 	1 1 -11	; "Preparing"
+	18	[943]	EQ       	0 0 1
+	19	[943]	JMP      	0 6	; to 26
+	20	[944]	GETTABUP 	1 0 -4	; _ENV "GM"
+	21	[944]	GETTABLE 	1 1 -5	; "UIManager"
+	22	[944]	SELF     	1 1 -6	; "OpenView"
+	23	[944]	GETTABUP 	3 0 -7	; _ENV "UIPrefabConfigName"
+	24	[944]	GETTABLE 	3 3 -12	; "FloatRaceNoticeWindow"
+	25	[944]	CALL     	1 3 1
+	26	[947]	GETUPVAL 	1 1	; self
+	27	[947]	SELF     	1 1 -13	; "GetCurrentInfo"
+	28	[947]	CALL     	1 2 2
+	29	[948]	GETTABUP 	2 0 -10	; _ENV "ActivityState"
+	30	[948]	GETTABLE 	2 2 -14	; "Started"
+	31	[948]	EQ       	0 0 2
+	32	[948]	JMP      	0 46	; to 79
+	33	[949]	GETUPVAL 	2 1	; self
+	34	[949]	SELF     	2 2 -15	; "CanSelectDifficulty"
+	35	[949]	CALL     	2 2 2
+	36	[949]	TEST     	2 0
+	37	[949]	JMP      	0 14	; to 52
+	38	[949]	GETUPVAL 	2 1	; self
+	39	[949]	SELF     	2 2 -16	; "GetDifficultyMode"
+	40	[949]	CALL     	2 2 2
+	41	[949]	GETTABUP 	3 0 -17	; _ENV "EFloatRaceDifficultyMode"
+	42	[949]	GETTABLE 	3 3 -18	; "None"
+	43	[949]	EQ       	0 2 3
+	44	[949]	JMP      	0 7	; to 52
+	45	[950]	GETTABUP 	2 0 -4	; _ENV "GM"
+	46	[950]	GETTABLE 	2 2 -5	; "UIManager"
+	47	[950]	SELF     	2 2 -6	; "OpenView"
+	48	[950]	GETTABUP 	4 0 -7	; _ENV "UIPrefabConfigName"
+	49	[950]	GETTABLE 	4 4 -19	; "FloatRaceSelectWindow"
+	50	[950]	CALL     	2 3 1
+	51	[950]	JMP      	0 27	; to 79
+	52	[952]	GETUPVAL 	2 1	; self
+	53	[952]	SELF     	2 2 -20	; "GetLevelFinishTime"
+	54	[952]	CALL     	2 2 2
+	55	[952]	TEST     	2 0
+	56	[952]	JMP      	0 16	; to 73
+	57	[953]	GETTABUP 	2 0 -4	; _ENV "GM"
+	58	[953]	GETTABLE 	2 2 -5	; "UIManager"
+	59	[953]	SELF     	2 2 -6	; "OpenView"
+	60	[953]	GETTABUP 	4 0 -7	; _ENV "UIPrefabConfigName"
+	61	[953]	GETTABLE 	4 4 -8	; "NetworkErrorWindow"
+	62	[953]	CALL     	2 3 1
+	63	[954]	GETTABUP 	2 0 -21	; _ENV "GameConfig"
+	64	[954]	GETTABLE 	2 2 -22	; "IsTestMode"
+	65	[954]	CALL     	2 1 2
+	66	[954]	TEST     	2 0
+	67	[954]	JMP      	0 4	; to 72
+	68	[955]	GETTABUP 	2 0 -23	; _ENV "Log"
+	69	[955]	GETTABLE 	2 2 -24	; "Info"
+	70	[955]	LOADK    	3 -25	; "\232\191\158\233\151\175\239\188\154\229\129\135\228\186\186\232\191\152\230\156\170\229\136\183\230\150\176\239\188\140\230\151\160\230\179\149\230\137\147\229\188\128\228\184\187\231\149\140\233\157\162"
+	71	[955]	CALL     	2 2 1
+	72	[957]	RETURN   	0 1
+	73	[959]	GETTABUP 	2 0 -4	; _ENV "GM"
+	74	[959]	GETTABLE 	2 2 -5	; "UIManager"
+	75	[959]	SELF     	2 2 -6	; "OpenView"
+	76	[959]	GETTABUP 	4 0 -7	; _ENV "UIPrefabConfigName"
+	77	[959]	GETTABLE 	4 4 -26	; "FloatRaceMainWindow"
+	78	[959]	CALL     	2 3 1
+	79	[962]	RETURN   	0 1
+constants (26) for 0000023F2A3C13A0:
+	1	"ApplicationManager"
+	2	"Instance"
+	3	"isNetworkConnected"
+	4	"GM"
+	5	"UIManager"
+	6	"OpenView"
+	7	"UIPrefabConfigName"
+	8	"NetworkErrorWindow"
+	9	"GetState"
+	10	"ActivityState"
+	11	"Preparing"
+	12	"FloatRaceNoticeWindow"
+	13	"GetCurrentInfo"
+	14	"Started"
+	15	"CanSelectDifficulty"
+	16	"GetDifficultyMode"
+	17	"EFloatRaceDifficultyMode"
+	18	"None"
+	19	"FloatRaceSelectWindow"
+	20	"GetLevelFinishTime"
+	21	"GameConfig"
+	22	"IsTestMode"
+	23	"Log"
+	24	"Info"
+	25	"\232\191\158\233\151\175\239\188\154\229\129\135\228\186\186\232\191\152\230\156\170\229\136\183\230\150\176\239\188\140\230\151\160\230\179\149\230\137\147\229\188\128\228\184\187\231\149\140\233\157\162"
+	26	"FloatRaceMainWindow"
+locals (2) for 0000023F2A3C13A0:
+	0	state	16	80
+	1	currentInfo	29	80
+upvalues (2) for 0000023F2A3C13A0:
+	0	_ENV	0	0
+	1	self	1	0
+
+function <FloatRaceModel.lua:964,966> (11 instructions at 0000023F2A3C2EA0)
+0 params, 2 slots, 1 upvalue, 0 locals, 3 constants, 0 functions
+	1	[965]	GETUPVAL 	0 0	; self
+	2	[965]	SELF     	0 0 -1	; "CanShowRedPoint"
+	3	[965]	CALL     	0 2 2
+	4	[965]	TEST     	0 0
+	5	[965]	JMP      	0 3	; to 9
+	6	[965]	LOADK    	0 -2	; 1
+	7	[965]	TEST     	0 1
+	8	[965]	JMP      	0 1	; to 10
+	9	[965]	LOADK    	0 -3	; 0
+	10	[965]	RETURN   	0 2
+	11	[966]	RETURN   	0 1
+constants (3) for 0000023F2A3C2EA0:
+	1	"CanShowRedPoint"
+	2	1
+	3	0
+locals (0) for 0000023F2A3C2EA0:
+upvalues (1) for 0000023F2A3C2EA0:
+	0	self	1	0
+
+function <FloatRaceModel.lua:979,991> (21 instructions at 0000023F2A3C27A0)
+1 param, 5 slots, 1 upvalue, 1 local, 16 constants, 1 function
+	1	[980]	NEWTABLE 	1 0 7
+	2	[981]	NEWTABLE 	2 2 0
+	3	[981]	GETTABUP 	3 0 -2	; _ENV "EEventType"
+	4	[981]	GETTABLE 	3 3 -3	; "FloatRaceFinishedAll"
+	5	[981]	GETTABUP 	4 0 -2	; _ENV "EEventType"
+	6	[981]	GETTABLE 	4 4 -4	; "FloatRaceStateChanged"
+	7	[981]	SETLIST  	2 2 1	; 1
+	8	[981]	SETTABLE 	1 -1 2	; "listeners" -
+	9	[982]	SETTABLE 	1 -5 -6	; "bubbleName" "m_floatRaceBubble"
+	10	[983]	SETTABLE 	1 -7 -8	; "bubbleNodeName" "m_floatRaceEntryNode"
+	11	[984]	GETTABUP 	2 0 -10	; _ENV "UIPrefabConfigName"
+	12	[984]	GETTABLE 	2 2 -11	; "FloatRaceBoardEntry"
+	13	[984]	SETTABLE 	1 -9 2	; "entryPrefabName" -
+	14	[985]	SETTABLE 	1 -12 -13	; "scrollToFunName" "ScrollToFloatRaceBoardEntry"
+	15	[986]	SELF     	2 0 -15	; "GetType"
+	16	[986]	CALL     	2 2 2
+	17	[986]	SETTABLE 	1 -14 2	; "activityType" -
+	18	[989]	CLOSURE  	2 0	; 0000023F2A3C2420
+	19	[989]	SETTABLE 	1 -16 2	; "checkFun" -
+	20	[990]	RETURN   	1 2
+	21	[991]	RETURN   	0 1
+constants (16) for 0000023F2A3C27A0:
+	1	"listeners"
+	2	"EEventType"
+	3	"FloatRaceFinishedAll"
+	4	"FloatRaceStateChanged"
+	5	"bubbleName"
+	6	"m_floatRaceBubble"
+	7	"bubbleNodeName"
+	8	"m_floatRaceEntryNode"
+	9	"entryPrefabName"
+	10	"UIPrefabConfigName"
+	11	"FloatRaceBoardEntry"
+	12	"scrollToFunName"
+	13	"ScrollToFloatRaceBoardEntry"
+	14	"activityType"
+	15	"GetType"
+	16	"checkFun"
+locals (1) for 0000023F2A3C27A0:
+	0	self	1	22
+upvalues (1) for 0000023F2A3C27A0:
+	0	_ENV	0	0
+
+function <FloatRaceModel.lua:987,989> (16 instructions at 0000023F2A3C2420)
+0 params, 2 slots, 2 upvalues, 0 locals, 4 constants, 0 functions
+	1	[988]	GETUPVAL 	0 0	; self
+	2	[988]	SELF     	0 0 -1	; "GetState"
+	3	[988]	CALL     	0 2 2
+	4	[988]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[988]	GETTABLE 	1 1 -3	; "Started"
+	6	[988]	EQ       	0 0 1
+	7	[988]	JMP      	0 5	; to 13
+	8	[988]	GETUPVAL 	0 0	; self
+	9	[988]	SELF     	0 0 -4	; "IsAllRoundFinished"
+	10	[988]	CALL     	0 2 2
+	11	[988]	NOT      	0 0
+	12	[988]	JMP      	0 2	; to 15
+	13	[988]	LOADBOOL 	0 0 1
+	14	[988]	LOADBOOL 	0 1 0
+	15	[988]	RETURN   	0 2
+	16	[989]	RETURN   	0 1
+constants (4) for 0000023F2A3C2420:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"IsAllRoundFinished"
+locals (0) for 0000023F2A3C2420:
+upvalues (2) for 0000023F2A3C2420:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <FloatRaceModel.lua:996,998> (5 instructions at 0000023F2A3C1EA0)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[997]	SELF     	2 0 -1	; "_AddScore"
+	2	[997]	MOVE     	4 1
+	3	[997]	LOADK    	5 -2	; "test"
+	4	[997]	CALL     	2 4 1
+	5	[998]	RETURN   	0 1
+constants (2) for 0000023F2A3C1EA0:
+	1	"_AddScore"
+	2	"test"
+locals (2) for 0000023F2A3C1EA0:
+	0	self	1	6
+	1	num	1	6
+upvalues (0) for 0000023F2A3C1EA0:
+
+function <FloatRaceModel.lua:1000,1008> (13 instructions at 0000023F2A3C2F20)
+1 param, 7 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[1001]	SELF     	1 0 -1	; "GetLevel"
+	2	[1001]	CALL     	1 2 2
+	3	[1002]	SELF     	2 0 -2	; "GetRewardCongfigByLevel"
+	4	[1002]	MOVE     	4 1
+	5	[1002]	CALL     	2 3 2
+	6	[1003]	EQ       	0 2 -3	; - nil
+	7	[1003]	JMP      	0 1	; to 9
+	8	[1004]	RETURN   	0 1
+	9	[1007]	SELF     	3 0 -4	; "_AddScore"
+	10	[1007]	GETTABLE 	5 2 -5	; "target"
+	11	[1007]	LOADK    	6 -6	; "test"
+	12	[1007]	CALL     	3 4 1
+	13	[1008]	RETURN   	0 1
+constants (6) for 0000023F2A3C2F20:
+	1	"GetLevel"
+	2	"GetRewardCongfigByLevel"
+	3	nil
+	4	"_AddScore"
+	5	"target"
+	6	"test"
+locals (3) for 0000023F2A3C2F20:
+	0	self	1	14
+	1	level	3	14
+	2	rewardConfig	6	14
+upvalues (0) for 0000023F2A3C2F20:
+
+function <FloatRaceModel.lua:1010,1017> (18 instructions at 0000023F2A3C26A0)
+1 param, 5 slots, 0 upvalues, 2 locals, 7 constants, 0 functions
+	1	[1011]	SELF     	1 0 -1	; "GetMaxLevel"
+	2	[1011]	CALL     	1 2 2
+	3	[1012]	SELF     	2 0 -2	; "SetLevel"
+	4	[1012]	MOVE     	4 1
+	5	[1012]	CALL     	2 3 1
+	6	[1013]	SELF     	2 0 -3	; "SetLastLevel"
+	7	[1013]	MOVE     	4 1
+	8	[1013]	CALL     	2 3 1
+	9	[1014]	SELF     	2 0 -4	; "SetScore"
+	10	[1014]	LOADK    	4 -5	; 0
+	11	[1014]	CALL     	2 3 1
+	12	[1015]	SELF     	2 0 -6	; "SetLastScore"
+	13	[1015]	LOADK    	4 -5	; 0
+	14	[1015]	CALL     	2 3 1
+	15	[1016]	SELF     	2 0 -7	; "SignUp"
+	16	[1016]	LOADBOOL 	4 0 0
+	17	[1016]	CALL     	2 3 1
+	18	[1017]	RETURN   	0 1
+constants (7) for 0000023F2A3C26A0:
+	1	"GetMaxLevel"
+	2	"SetLevel"
+	3	"SetLastLevel"
+	4	"SetScore"
+	5	0
+	6	"SetLastScore"
+	7	"SignUp"
+locals (2) for 0000023F2A3C26A0:
+	0	self	1	19
+	1	maxLevel	3	19
+upvalues (0) for 0000023F2A3C26A0:

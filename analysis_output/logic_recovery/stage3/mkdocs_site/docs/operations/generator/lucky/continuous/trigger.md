@@ -16,7 +16,7 @@
 
 ### 代入本页的值
 
-假设服务器配置为 `triple_lucky_chance=1000`、`double_lucky_chance=3000`（随机范围1..10000），且本次普通 Lucky 已命中。调用 `_Try2TriggerContiLuckyProduce("105")` 时，三连点800命中，写入 `clpit=105、clpmc=2、clpc=0、clpeet=1010`；另一组输入三连点4500未中、二连点1200命中，写入二连次数1。配置和随机点都是演示假设，用来展示成功结果。
+基础 105 行确认的是 `lucky_chance` 和物品池；没有能量区间的实际配置快照，不能填写二连/三连概率。B 调用 `_Try2TriggerContiLuckyProduce("105")`，是否写入连续状态取决于实际配置。
 
 <details><summary>本案例共同前提</summary>
 

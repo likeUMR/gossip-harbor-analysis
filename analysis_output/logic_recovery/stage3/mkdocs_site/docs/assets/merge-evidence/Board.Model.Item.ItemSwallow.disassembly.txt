@@ -1,0 +1,646 @@
+
+main <ItemSwallow.lua:0,0> (44 instructions at 000001E7948DEFB0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 21 constants, 10 functions
+	1	[1]	NEWTABLE 	0 0 1
+	2	[2]	SETTABLE 	0 -2 -3	; "ProgressChanged" 1
+	3	[3]	SETTABUP 	0 -1 0	; _ENV "ItemSwallowEventType"
+	4	[7]	GETTABUP 	0 0 -5	; _ENV "setmetatable"
+	5	[7]	NEWTABLE 	1 0 0
+	6	[7]	GETTABUP 	2 0 -6	; _ENV "BaseItemComponent"
+	7	[7]	CALL     	0 3 2
+	8	[7]	SETTABUP 	0 -4 0	; _ENV "ItemSwallow"
+	9	[8]	GETTABUP 	0 0 -4	; _ENV "ItemSwallow"
+	10	[8]	GETTABUP 	1 0 -4	; _ENV "ItemSwallow"
+	11	[8]	SETTABLE 	0 -7 1	; "__index" -
+	12	[10]	GETTABUP 	0 0 -4	; _ENV "ItemSwallow"
+	13	[10]	SETTABLE 	0 -8 -3	; "TapProtectionTime" 1
+	14	[12]	GETTABUP 	0 0 -4	; _ENV "ItemSwallow"
+	15	[16]	CLOSURE  	1 0	; 000001E7948DF310
+	16	[12]	SETTABLE 	0 -9 1	; "Create" -
+	17	[18]	GETTABUP 	0 0 -10	; _ENV "ItemSwallow"
+	18	[28]	CLOSURE  	1 1	; 000001E7948DF390
+	19	[18]	SETTABLE 	0 -11 1	; "Init" -
+	20	[30]	GETTABUP 	0 0 -10	; _ENV "ItemSwallow"
+	21	[32]	CLOSURE  	1 2	; 000001E7948E1A60
+	22	[30]	SETTABLE 	0 -12 1	; "AllowTap" -
+	23	[35]	GETTABUP 	0 0 -10	; _ENV "ItemSwallow"
+	24	[68]	CLOSURE  	1 3	; 000001E7948E1AE0
+	25	[35]	SETTABLE 	0 -13 1	; "OnTap" -
+	26	[70]	GETTABUP 	0 0 -14	; _ENV "ItemSwallow"
+	27	[78]	CLOSURE  	1 4	; 000001E7948E28A0
+	28	[70]	SETTABLE 	0 -15 1	; "CanSwallow" -
+	29	[80]	GETTABUP 	0 0 -14	; _ENV "ItemSwallow"
+	30	[120]	CLOSURE  	1 5	; 000001E7948E2AD0
+	31	[80]	SETTABLE 	0 -16 1	; "Swallow" -
+	32	[122]	GETTABUP 	0 0 -17	; _ENV "ItemSwallow"
+	33	[124]	CLOSURE  	1 6	; 000001E7948E3180
+	34	[122]	SETTABLE 	0 -18 1	; "GetSwallowInfo" -
+	35	[126]	GETTABUP 	0 0 -17	; _ENV "ItemSwallow"
+	36	[149]	CLOSURE  	1 7	; 000001E7948E3200
+	37	[126]	SETTABLE 	0 -19 1	; "_CreateSwallowInfo" -
+	38	[151]	GETTABUP 	0 0 -17	; _ENV "ItemSwallow"
+	39	[161]	CLOSURE  	1 8	; 000001E7948E3D20
+	40	[151]	SETTABLE 	0 -20 1	; "SwallowInfoToString" -
+	41	[163]	GETTABUP 	0 0 -17	; _ENV "ItemSwallow"
+	42	[177]	CLOSURE  	1 9	; 000001E7948E4F00
+	43	[163]	SETTABLE 	0 -21 1	; "StringToSwallowInfo" -
+	44	[177]	RETURN   	0 1
+constants (21) for 000001E7948DEFB0:
+	1	"ItemSwallowEventType"
+	2	"ProgressChanged"
+	3	1
+	4	"ItemSwallow"
+	5	"setmetatable"
+	6	"BaseItemComponent"
+	7	"__index"
+	8	"TapProtectionTime"
+	9	"Create"
+	10	"ItemSwallow"
+	11	"Init"
+	12	"AllowTap"
+	13	"OnTap"
+	14	"ItemSwallow"
+	15	"CanSwallow"
+	16	"Swallow"
+	17	"ItemSwallow"
+	18	"GetSwallowInfo"
+	19	"_CreateSwallowInfo"
+	20	"SwallowInfoToString"
+	21	"StringToSwallowInfo"
+locals (0) for 000001E7948DEFB0:
+upvalues (1) for 000001E7948DEFB0:
+	0	_ENV	1	0
+
+function <ItemSwallow.lua:12,16> (9 instructions at 000001E7948DF310)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[13]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[13]	NEWTABLE 	2 0 0
+	3	[13]	GETTABUP 	3 0 -2	; _ENV "ItemSwallow"
+	4	[13]	CALL     	1 3 2
+	5	[14]	SELF     	2 1 -3	; "Init"
+	6	[14]	MOVE     	4 0
+	7	[14]	CALL     	2 3 1
+	8	[15]	RETURN   	1 2
+	9	[16]	RETURN   	0 1
+constants (3) for 000001E7948DF310:
+	1	"setmetatable"
+	2	"ItemSwallow"
+	3	"Init"
+locals (2) for 000001E7948DF310:
+	0	itemConfig	1	10
+	1	itemSwallow	5	10
+upvalues (1) for 000001E7948DF310:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:18,28> (28 instructions at 000001E7948DF390)
+2 params, 8 slots, 1 upvalue, 2 locals, 14 constants, 0 functions
+	1	[19]	GETTABUP 	2 0 -2	; _ENV "PairEvent"
+	2	[19]	GETTABLE 	2 2 -3	; "Create"
+	3	[19]	MOVE     	3 0
+	4	[19]	CALL     	2 2 2
+	5	[19]	SETTABLE 	0 -1 2	; "event" -
+	6	[20]	NEWTABLE 	2 1 0
+	7	[21]	SELF     	3 0 -5	; "_CreateSwallowInfo"
+	8	[21]	MOVE     	5 1
+	9	[21]	LOADK    	6 -6	; 1
+	10	[21]	CALL     	3 4 2
+	11	[22]	SELF     	4 0 -5	; "_CreateSwallowInfo"
+	12	[22]	MOVE     	6 1
+	13	[22]	LOADK    	7 -7	; 2
+	14	[22]	CALL     	4 4 0
+	15	[23]	SETLIST  	2 0 1	; 1
+	16	[23]	SETTABLE 	0 -4 2	; "m_swallowInfo" -
+	17	[24]	GETTABLE 	2 1 -9	; "Swallow_AllowTap"
+	18	[24]	EQ       	0 2 -10	; - 0
+	19	[24]	JMP      	0 1	; to 21
+	20	[24]	LOADBOOL 	2 0 1
+	21	[24]	LOADBOOL 	2 1 0
+	22	[24]	SETTABLE 	0 -8 2	; "m_allowTap" -
+	23	[27]	GETTABUP 	2 0 -12	; _ENV "GM"
+	24	[27]	GETTABLE 	2 2 -13	; "GameModel"
+	25	[27]	SELF     	2 2 -14	; "GetServerTime"
+	26	[27]	CALL     	2 2 2
+	27	[27]	SETTABLE 	0 -11 2	; "m_generateTime" -
+	28	[28]	RETURN   	0 1
+constants (14) for 000001E7948DF390:
+	1	"event"
+	2	"PairEvent"
+	3	"Create"
+	4	"m_swallowInfo"
+	5	"_CreateSwallowInfo"
+	6	1
+	7	2
+	8	"m_allowTap"
+	9	"Swallow_AllowTap"
+	10	0
+	11	"m_generateTime"
+	12	"GM"
+	13	"GameModel"
+	14	"GetServerTime"
+locals (2) for 000001E7948DF390:
+	0	self	1	29
+	1	itemConfig	1	29
+upvalues (1) for 000001E7948DF390:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:30,32> (3 instructions at 000001E7948E1A60)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[31]	GETTABLE 	1 0 -1	; "m_allowTap"
+	2	[31]	RETURN   	1 2
+	3	[32]	RETURN   	0 1
+constants (1) for 000001E7948E1A60:
+	1	"m_allowTap"
+locals (1) for 000001E7948E1A60:
+	0	self	1	4
+upvalues (0) for 000001E7948E1A60:
+
+function <ItemSwallow.lua:35,68> (72 instructions at 000001E7948E1AE0)
+1 param, 17 slots, 1 upvalue, 15 locals, 28 constants, 0 functions
+	1	[37]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[37]	GETTABLE 	1 1 -2	; "GameModel"
+	3	[37]	SELF     	1 1 -3	; "GetServerTime"
+	4	[37]	CALL     	1 2 2
+	5	[37]	GETTABLE 	2 0 -4	; "m_generateTime"
+	6	[37]	SUB      	1 1 2
+	7	[37]	GETTABUP 	2 0 -5	; _ENV "ItemSwallow"
+	8	[37]	GETTABLE 	2 2 -6	; "TapProtectionTime"
+	9	[37]	LE       	1 1 2
+	10	[37]	JMP      	0 3	; to 14
+	11	[38]	GETTABLE 	1 0 -7	; "m_allowTap"
+	12	[39]	TEST     	1 1
+	13	[39]	JMP      	0 1	; to 15
+	14	[40]	RETURN   	0 1
+	15	[43]	NEWTABLE 	1 0 0
+	16	[44]	NEWTABLE 	2 2 0
+	17	[44]	LOADK    	3 -8	; 0
+	18	[44]	LOADK    	4 -8	; 0
+	19	[44]	SETLIST  	2 2 1	; 1
+	20	[46]	GETTABLE 	3 0 -9	; "m_itemModel"
+	21	[46]	SELF     	3 3 -10	; "GetBoardModel"
+	22	[46]	CALL     	3 2 2
+	23	[47]	SELF     	4 3 -11	; "GetValidPositionIterator"
+	24	[47]	CALL     	4 2 4
+	25	[47]	JMP      	0 30	; to 56
+	26	[48]	SELF     	8 3 -12	; "GetItem"
+	27	[48]	MOVE     	10 7
+	28	[48]	CALL     	8 3 2
+	29	[49]	EQ       	1 8 -13	; - nil
+	30	[49]	JMP      	0 25	; to 56
+	31	[50]	GETTABUP 	9 0 -14	; _ENV "ipairs"
+	32	[50]	GETTABLE 	10 0 -15	; "m_swallowInfo"
+	33	[50]	CALL     	9 2 4
+	34	[50]	JMP      	0 19	; to 54
+	35	[51]	GETTABLE 	14 13 -16	; "Code"
+	36	[51]	SELF     	15 8 -17	; "GetCode"
+	37	[51]	CALL     	15 2 2
+	38	[51]	EQ       	0 14 15
+	39	[51]	JMP      	0 14	; to 54
+	40	[51]	GETTABLE 	14 13 -18	; "Swallowed"
+	41	[51]	GETTABLE 	15 2 12
+	42	[51]	ADD      	14 14 15
+	43	[51]	GETTABLE 	15 13 -19	; "Count"
+	44	[51]	LT       	0 14 15
+	45	[51]	JMP      	0 8	; to 54
+	46	[52]	GETTABUP 	14 0 -20	; _ENV "table"
+	47	[52]	GETTABLE 	14 14 -21	; "insert"
+	48	[52]	MOVE     	15 1
+	49	[52]	MOVE     	16 8
+	50	[52]	CALL     	14 3 1
+	51	[53]	GETTABLE 	14 2 12
+	52	[53]	ADD      	14 14 -22	; - 1
+	53	[53]	SETTABLE 	2 12 14
+	54	[50]	TFORCALL 	9 2
+	55	[50]	TFORLOOP 	11 -21	; to 35
+	56	[47]	TFORCALL 	4 1
+	57	[47]	TFORLOOP 	6 -32	; to 26
+	58	[59]	LEN      	4 1
+	59	[59]	EQ       	0 4 -8	; - 0
+	60	[59]	JMP      	0 1	; to 62
+	61	[60]	RETURN   	0 1
+	62	[63]	NEWTABLE 	4 0 2
+	63	[64]	SETTABLE 	4 -23 1	; "Sources" -
+	64	[65]	GETTABLE 	5 0 -9	; "m_itemModel"
+	65	[65]	SETTABLE 	4 -24 5	; "Target" -
+	66	[67]	GETTABLE 	5 3 -25	; "event"
+	67	[67]	SELF     	5 5 -26	; "Call"
+	68	[67]	GETTABUP 	7 0 -27	; _ENV "BoardEventType"
+	69	[67]	GETTABLE 	7 7 -28	; "BatchSwallowItem"
+	70	[67]	MOVE     	8 4
+	71	[67]	CALL     	5 4 1
+	72	[68]	RETURN   	0 1
+constants (28) for 000001E7948E1AE0:
+	1	"GM"
+	2	"GameModel"
+	3	"GetServerTime"
+	4	"m_generateTime"
+	5	"ItemSwallow"
+	6	"TapProtectionTime"
+	7	"m_allowTap"
+	8	0
+	9	"m_itemModel"
+	10	"GetBoardModel"
+	11	"GetValidPositionIterator"
+	12	"GetItem"
+	13	nil
+	14	"ipairs"
+	15	"m_swallowInfo"
+	16	"Code"
+	17	"GetCode"
+	18	"Swallowed"
+	19	"Count"
+	20	"table"
+	21	"insert"
+	22	1
+	23	"Sources"
+	24	"Target"
+	25	"event"
+	26	"Call"
+	27	"BoardEventType"
+	28	"BatchSwallowItem"
+locals (15) for 000001E7948E1AE0:
+	0	self	1	73
+	1	targetItems	16	73
+	2	targetNumbers	20	73
+	3	boardModel	23	73
+	4	(for generator)	25	58
+	5	(for state)	25	58
+	6	(for control)	25	58
+	7	position	26	56
+	8	item	29	56
+	9	(for generator)	34	56
+	10	(for state)	34	56
+	11	(for control)	34	56
+	12	index	35	54
+	13	info	35	54
+	14	message	66	73
+upvalues (1) for 000001E7948E1AE0:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:70,78> (20 instructions at 000001E7948E28A0)
+2 params, 10 slots, 1 upvalue, 7 locals, 6 constants, 0 functions
+	1	[71]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[71]	GETTABLE 	3 0 -2	; "m_swallowInfo"
+	3	[71]	CALL     	2 2 4
+	4	[71]	JMP      	0 11	; to 16
+	5	[72]	GETTABLE 	7 6 -3	; "Code"
+	6	[72]	SELF     	8 1 -4	; "GetCode"
+	7	[72]	CALL     	8 2 2
+	8	[72]	EQ       	0 7 8
+	9	[72]	JMP      	0 6	; to 16
+	10	[72]	GETTABLE 	7 6 -5	; "Swallowed"
+	11	[72]	GETTABLE 	8 6 -6	; "Count"
+	12	[72]	LT       	0 7 8
+	13	[72]	JMP      	0 2	; to 16
+	14	[73]	LOADBOOL 	7 1 0
+	15	[73]	RETURN   	7 2
+	16	[71]	TFORCALL 	2 2
+	17	[71]	TFORLOOP 	4 -13	; to 5
+	18	[77]	LOADBOOL 	2 0 0
+	19	[77]	RETURN   	2 2
+	20	[78]	RETURN   	0 1
+constants (6) for 000001E7948E28A0:
+	1	"ipairs"
+	2	"m_swallowInfo"
+	3	"Code"
+	4	"GetCode"
+	5	"Swallowed"
+	6	"Count"
+locals (7) for 000001E7948E28A0:
+	0	self	1	21
+	1	item	1	21
+	2	(for generator)	4	18
+	3	(for state)	4	18
+	4	(for control)	4	18
+	5	_	5	16
+	6	info	5	16
+upvalues (1) for 000001E7948E28A0:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:80,120> (89 instructions at 000001E7948E2AD0)
+2 params, 12 slots, 1 upvalue, 16 locals, 35 constants, 0 functions
+	1	[81]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[81]	GETTABLE 	3 0 -2	; "m_swallowInfo"
+	3	[81]	CALL     	2 2 4
+	4	[81]	JMP      	0 9	; to 14
+	5	[82]	GETTABLE 	7 6 -3	; "Code"
+	6	[82]	SELF     	8 1 -4	; "GetCode"
+	7	[82]	CALL     	8 2 2
+	8	[82]	EQ       	0 7 8
+	9	[82]	JMP      	0 4	; to 14
+	10	[83]	GETTABLE 	7 6 -5	; "Swallowed"
+	11	[83]	ADD      	7 7 -6	; - 1
+	12	[83]	SETTABLE 	6 -5 7	; "Swallowed" -
+	13	[83]	JMP      	0 2	; to 16
+	14	[81]	TFORCALL 	2 2
+	15	[81]	TFORLOOP 	4 -11	; to 5
+	16	[88]	GETTABLE 	2 0 -7	; "m_itemModel"
+	17	[88]	SELF     	2 2 -8	; "GetBoardModel"
+	18	[88]	CALL     	2 2 2
+	19	[89]	SELF     	3 2 -9	; "SaveItemProperty"
+	20	[89]	GETTABLE 	5 0 -7	; "m_itemModel"
+	21	[89]	CALL     	3 3 1
+	22	[90]	SELF     	3 2 -10	; "RemoveItem"
+	23	[90]	MOVE     	5 1
+	24	[90]	CALL     	3 3 1
+	25	[92]	NEWTABLE 	3 0 2
+	26	[93]	SETTABLE 	3 -11 1	; "Source" -
+	27	[94]	GETTABLE 	4 0 -7	; "m_itemModel"
+	28	[94]	SETTABLE 	3 -12 4	; "Target" -
+	29	[96]	GETTABLE 	4 2 -13	; "event"
+	30	[96]	SELF     	4 4 -14	; "Call"
+	31	[96]	GETTABUP 	6 0 -15	; _ENV "BoardEventType"
+	32	[96]	GETTABLE 	6 6 -16	; "SwallowItem"
+	33	[96]	MOVE     	7 3
+	34	[96]	CALL     	4 4 1
+	35	[97]	GETTABUP 	4 0 -17	; _ENV "GM"
+	36	[97]	GETTABLE 	4 4 -18	; "BIManager"
+	37	[97]	SELF     	4 4 -19	; "LogAction"
+	38	[97]	GETTABUP 	6 0 -20	; _ENV "EBIType"
+	39	[97]	GETTABLE 	6 6 -16	; "SwallowItem"
+	40	[97]	NEWTABLE 	7 0 2
+	41	[97]	SELF     	8 1 -4	; "GetCode"
+	42	[97]	CALL     	8 2 2
+	43	[97]	SETTABLE 	7 -21 8	; "s" -
+	44	[97]	GETTABLE 	8 0 -7	; "m_itemModel"
+	45	[97]	SELF     	8 8 -4	; "GetCode"
+	46	[97]	CALL     	8 2 2
+	47	[97]	SETTABLE 	7 -22 8	; "t" -
+	48	[97]	CALL     	4 4 1
+	49	[99]	LOADBOOL 	4 1 0
+	50	[100]	GETTABUP 	5 0 -1	; _ENV "ipairs"
+	51	[100]	GETTABLE 	6 0 -2	; "m_swallowInfo"
+	52	[100]	CALL     	5 2 4
+	53	[100]	JMP      	0 6	; to 60
+	54	[101]	GETTABLE 	10 9 -5	; "Swallowed"
+	55	[101]	GETTABLE 	11 9 -23	; "Count"
+	56	[101]	LT       	0 10 11
+	57	[101]	JMP      	0 2	; to 60
+	58	[102]	LOADBOOL 	4 0 0
+	59	[102]	JMP      	0 2	; to 62
+	60	[100]	TFORCALL 	5 2
+	61	[100]	TFORLOOP 	7 -8	; to 54
+	62	[107]	GETTABLE 	5 0 -13	; "event"
+	63	[107]	SELF     	5 5 -14	; "Call"
+	64	[107]	GETTABUP 	7 0 -24	; _ENV "ItemSwallowEventType"
+	65	[107]	GETTABLE 	7 7 -25	; "ProgressChanged"
+	66	[107]	CALL     	5 3 1
+	67	[109]	TEST     	4 0
+	68	[109]	JMP      	0 14	; to 83
+	69	[110]	GETTABLE 	5 0 -7	; "m_itemModel"
+	70	[110]	SELF     	5 5 -26	; "GetComponent"
+	71	[110]	GETTABUP 	7 0 -27	; _ENV "ItemTransform"
+	72	[110]	CALL     	5 3 2
+	73	[111]	SELF     	6 5 -28	; "Transform"
+	74	[111]	CALL     	6 2 1
+	75	[114]	GETTABLE 	6 0 -29	; "m_allowTap"
+	76	[114]	TEST     	6 1
+	77	[114]	JMP      	0 5	; to 83
+	78	[115]	SELF     	6 2 -30	; "ShockNeighborItems"
+	79	[115]	GETTABLE 	8 0 -7	; "m_itemModel"
+	80	[115]	SELF     	8 8 -31	; "GetPosition"
+	81	[115]	CALL     	8 2 0
+	82	[115]	CALL     	6 0 1
+	83	[119]	GETTABUP 	5 0 -32	; _ENV "EventDispatcher"
+	84	[119]	GETTABLE 	5 5 -33	; "DispatchEvent"
+	85	[119]	GETTABUP 	6 0 -34	; _ENV "EEventType"
+	86	[119]	GETTABLE 	6 6 -35	; "ItemSwallow"
+	87	[119]	MOVE     	7 3
+	88	[119]	CALL     	5 3 1
+	89	[120]	RETURN   	0 1
+constants (35) for 000001E7948E2AD0:
+	1	"ipairs"
+	2	"m_swallowInfo"
+	3	"Code"
+	4	"GetCode"
+	5	"Swallowed"
+	6	1
+	7	"m_itemModel"
+	8	"GetBoardModel"
+	9	"SaveItemProperty"
+	10	"RemoveItem"
+	11	"Source"
+	12	"Target"
+	13	"event"
+	14	"Call"
+	15	"BoardEventType"
+	16	"SwallowItem"
+	17	"GM"
+	18	"BIManager"
+	19	"LogAction"
+	20	"EBIType"
+	21	"s"
+	22	"t"
+	23	"Count"
+	24	"ItemSwallowEventType"
+	25	"ProgressChanged"
+	26	"GetComponent"
+	27	"ItemTransform"
+	28	"Transform"
+	29	"m_allowTap"
+	30	"ShockNeighborItems"
+	31	"GetPosition"
+	32	"EventDispatcher"
+	33	"DispatchEvent"
+	34	"EEventType"
+	35	"ItemSwallow"
+locals (16) for 000001E7948E2AD0:
+	0	self	1	90
+	1	item	1	90
+	2	(for generator)	4	16
+	3	(for state)	4	16
+	4	(for control)	4	16
+	5	_	5	14
+	6	info	5	14
+	7	boardModel	19	90
+	8	message	29	90
+	9	canTransform	50	90
+	10	(for generator)	53	62
+	11	(for state)	53	62
+	12	(for control)	53	62
+	13	_	54	60
+	14	info	54	60
+	15	itemTransform	73	83
+upvalues (1) for 000001E7948E2AD0:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:122,124> (3 instructions at 000001E7948E3180)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[123]	GETTABLE 	1 0 -1	; "m_swallowInfo"
+	2	[123]	RETURN   	1 2
+	3	[124]	RETURN   	0 1
+constants (1) for 000001E7948E3180:
+	1	"m_swallowInfo"
+locals (1) for 000001E7948E3180:
+	0	self	1	4
+upvalues (0) for 000001E7948E3180:
+
+function <ItemSwallow.lua:126,149> (38 instructions at 000001E7948E3200)
+3 params, 11 slots, 1 upvalue, 6 locals, 13 constants, 0 functions
+	1	[127]	LOADK    	3 -1	; "Swallow_Weight"
+	2	[127]	MOVE     	4 2
+	3	[127]	CONCAT   	3 3 4
+	4	[127]	GETTABLE 	3 1 3
+	5	[128]	EQ       	0 3 -2	; - nil
+	6	[128]	JMP      	0 2	; to 9
+	7	[129]	LOADNIL  	4 0
+	8	[129]	RETURN   	4 2
+	9	[132]	LOADNIL  	4 0
+	10	[133]	GETTABUP 	5 0 -3	; _ENV "TutorialBoardHelper"
+	11	[133]	GETTABLE 	5 5 -4	; "GetForcedSwallowItemTypes"
+	12	[133]	CALL     	5 1 2
+	13	[134]	EQ       	0 5 -2	; - nil
+	14	[134]	JMP      	0 9	; to 24
+	15	[135]	GETTABUP 	6 0 -5	; _ENV "GM"
+	16	[135]	GETTABLE 	6 6 -6	; "ItemFixedSwallowModel"
+	17	[135]	SELF     	6 6 -7	; "GenerateTargetCode"
+	18	[135]	GETTABLE 	8 1 -8	; "Type"
+	19	[135]	MOVE     	9 3
+	20	[135]	MOVE     	10 2
+	21	[135]	CALL     	6 5 2
+	22	[135]	MOVE     	4 6
+	23	[135]	JMP      	0 1	; to 25
+	24	[137]	GETTABLE 	4 5 2
+	25	[140]	EQ       	0 4 -2	; - nil
+	26	[140]	JMP      	0 2	; to 29
+	27	[141]	LOADNIL  	6 0
+	28	[141]	RETURN   	6 2
+	29	[144]	NEWTABLE 	6 0 3
+	30	[145]	SETTABLE 	6 -9 4	; "Code" -
+	31	[146]	LOADK    	7 -11	; "Swallow_Number"
+	32	[146]	MOVE     	8 2
+	33	[146]	CONCAT   	7 7 8
+	34	[146]	GETTABLE 	7 1 7
+	35	[146]	SETTABLE 	6 -10 7	; "Count" -
+	36	[147]	SETTABLE 	6 -12 -13	; "Swallowed" 0
+	37	[148]	RETURN   	6 2
+	38	[149]	RETURN   	0 1
+constants (13) for 000001E7948E3200:
+	1	"Swallow_Weight"
+	2	nil
+	3	"TutorialBoardHelper"
+	4	"GetForcedSwallowItemTypes"
+	5	"GM"
+	6	"ItemFixedSwallowModel"
+	7	"GenerateTargetCode"
+	8	"Type"
+	9	"Code"
+	10	"Count"
+	11	"Swallow_Number"
+	12	"Swallowed"
+	13	0
+locals (6) for 000001E7948E3200:
+	0	self	1	39
+	1	itemConfig	1	39
+	2	index	1	39
+	3	swallowWeight	5	39
+	4	code	10	39
+	5	forcedTypes	13	39
+upvalues (1) for 000001E7948E3200:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:151,161> (22 instructions at 000001E7948E3D20)
+1 param, 13 slots, 1 upvalue, 7 locals, 7 constants, 0 functions
+	1	[152]	LOADK    	1 -1	; ""
+	2	[153]	GETTABUP 	2 0 -2	; _ENV "ipairs"
+	3	[153]	MOVE     	3 0
+	4	[153]	CALL     	2 2 4
+	5	[153]	JMP      	0 13	; to 19
+	6	[154]	MOVE     	7 1
+	7	[154]	GETTABLE 	8 6 -3	; "Code"
+	8	[154]	LOADK    	9 -4	; "-"
+	9	[154]	GETTABLE 	10 6 -5	; "Swallowed"
+	10	[154]	LOADK    	11 -4	; "-"
+	11	[154]	GETTABLE 	12 6 -6	; "Count"
+	12	[154]	CONCAT   	1 7 12
+	13	[155]	LEN      	7 0
+	14	[155]	EQ       	1 5 7
+	15	[155]	JMP      	0 3	; to 19
+	16	[156]	MOVE     	7 1
+	17	[156]	LOADK    	8 -7	; ";"
+	18	[156]	CONCAT   	1 7 8
+	19	[153]	TFORCALL 	2 2
+	20	[153]	TFORLOOP 	4 -15	; to 6
+	21	[160]	RETURN   	1 2
+	22	[161]	RETURN   	0 1
+constants (7) for 000001E7948E3D20:
+	1	""
+	2	"ipairs"
+	3	"Code"
+	4	"-"
+	5	"Swallowed"
+	6	"Count"
+	7	";"
+locals (7) for 000001E7948E3D20:
+	0	swallowInfo	1	23
+	1	data	2	23
+	2	(for generator)	5	21
+	3	(for state)	5	21
+	4	(for control)	5	21
+	5	index	6	19
+	6	item	6	19
+upvalues (1) for 000001E7948E3D20:
+	0	_ENV	0	0
+
+function <ItemSwallow.lua:163,177> (34 instructions at 000001E7948E4F00)
+1 param, 14 slots, 1 upvalue, 9 locals, 14 constants, 0 functions
+	1	[164]	NEWTABLE 	1 0 0
+	2	[166]	GETTABUP 	2 0 -1	; _ENV "StringUtil"
+	3	[166]	GETTABLE 	2 2 -2	; "Split"
+	4	[166]	MOVE     	3 0
+	5	[166]	LOADK    	4 -3	; ";"
+	6	[166]	CALL     	2 3 2
+	7	[167]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	8	[167]	MOVE     	4 2
+	9	[167]	CALL     	3 2 4
+	10	[167]	JMP      	0 20	; to 31
+	11	[168]	GETTABUP 	8 0 -1	; _ENV "StringUtil"
+	12	[168]	GETTABLE 	8 8 -2	; "Split"
+	13	[168]	MOVE     	9 7
+	14	[168]	LOADK    	10 -5	; "-"
+	15	[168]	CALL     	8 3 2
+	16	[169]	GETTABUP 	9 0 -6	; _ENV "table"
+	17	[169]	GETTABLE 	9 9 -7	; "insert"
+	18	[169]	MOVE     	10 1
+	19	[169]	NEWTABLE 	11 0 3
+	20	[170]	GETTABLE 	12 8 -9	; 1
+	21	[170]	SETTABLE 	11 -8 12	; "Code" -
+	22	[171]	GETTABUP 	12 0 -11	; _ENV "tonumber"
+	23	[171]	GETTABLE 	13 8 -12	; 2
+	24	[171]	CALL     	12 2 2
+	25	[171]	SETTABLE 	11 -10 12	; "Swallowed" -
+	26	[172]	GETTABUP 	12 0 -11	; _ENV "tonumber"
+	27	[172]	GETTABLE 	13 8 -14	; 3
+	28	[172]	CALL     	12 2 2
+	29	[172]	SETTABLE 	11 -13 12	; "Count" -
+	30	[169]	CALL     	9 3 1
+	31	[167]	TFORCALL 	3 2
+	32	[167]	TFORLOOP 	5 -22	; to 11
+	33	[176]	RETURN   	1 2
+	34	[177]	RETURN   	0 1
+constants (14) for 000001E7948E4F00:
+	1	"StringUtil"
+	2	"Split"
+	3	";"
+	4	"ipairs"
+	5	"-"
+	6	"table"
+	7	"insert"
+	8	"Code"
+	9	1
+	10	"Swallowed"
+	11	"tonumber"
+	12	2
+	13	"Count"
+	14	3
+locals (9) for 000001E7948E4F00:
+	0	data	1	35
+	1	swallowInfo	2	35
+	2	array	7	35
+	3	(for generator)	10	33
+	4	(for state)	10	33
+	5	(for control)	10	33
+	6	_	11	31
+	7	item	11	31
+	8	parts	16	31
+upvalues (1) for 000001E7948E4F00:
+	0	_ENV	0	0

@@ -1,0 +1,1074 @@
+[
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "101"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "401"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "701"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "1001"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "1201"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 5,
+    "item_id": "1701"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "203"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "204"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "205"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 1,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "206"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "207"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "208"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 2,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "209"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "210"
+  },
+  {
+    "shop_score": 10,
+    "merge_score_race": 3,
+    "bubble_score": 10,
+    "merge_score": 8,
+    "item_id": "211"
+  },
+  {
+    "shop_score": 11,
+    "merge_score_race": 3,
+    "bubble_score": 11,
+    "merge_score": 9,
+    "item_id": "212"
+  },
+  {
+    "shop_score": 12,
+    "merge_score_race": 4,
+    "bubble_score": 12,
+    "merge_score": 10,
+    "item_id": "213"
+  },
+  {
+    "shop_score": 13,
+    "merge_score_race": 4,
+    "bubble_score": 13,
+    "merge_score": 11,
+    "item_id": "214"
+  },
+  {
+    "bubble_score": 14,
+    "shop_score": 14,
+    "item_id": "215"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "301"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "302"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "303"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "304"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "305"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 3,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "306"
+  },
+  {
+    "bubble_score": 8,
+    "shop_score": 8,
+    "item_id": "307"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "503"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "504"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "505"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 1,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "506"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "507"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "508"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 2,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "509"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "510"
+  },
+  {
+    "shop_score": 10,
+    "merge_score_race": 3,
+    "bubble_score": 10,
+    "merge_score": 8,
+    "item_id": "511"
+  },
+  {
+    "shop_score": 11,
+    "merge_score_race": 3,
+    "bubble_score": 11,
+    "merge_score": 9,
+    "item_id": "512"
+  },
+  {
+    "shop_score": 12,
+    "merge_score_race": 4,
+    "bubble_score": 12,
+    "merge_score": 10,
+    "item_id": "513"
+  },
+  {
+    "bubble_score": 13,
+    "shop_score": 13,
+    "item_id": "514"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "601"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "602"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "603"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "604"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "605"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 3,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "606"
+  },
+  {
+    "bubble_score": 8,
+    "shop_score": 8,
+    "item_id": "607"
+  },
+  {
+    "bubble_score": 1,
+    "shop_score": 1,
+    "item_id": "801"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "802"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "803"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 2,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "804"
+  },
+  {
+    "bubble_score": 5,
+    "shop_score": 5,
+    "item_id": "805"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "901"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "902"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "903"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 1,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "904"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "905"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "906"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 2,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "907"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "908"
+  },
+  {
+    "shop_score": 10,
+    "merge_score_race": 3,
+    "bubble_score": 10,
+    "merge_score": 8,
+    "item_id": "909"
+  },
+  {
+    "bubble_score": 11,
+    "shop_score": 11,
+    "item_id": "910"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "1101"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "1102"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "1103"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "1104"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "1105"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 3,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "1106"
+  },
+  {
+    "bubble_score": 8,
+    "shop_score": 8,
+    "item_id": "1107"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "1302"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "1303"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "1304"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 1,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "1305"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "1306"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "1307"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 2,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "1308"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "1309"
+  },
+  {
+    "shop_score": 10,
+    "merge_score_race": 3,
+    "bubble_score": 10,
+    "merge_score": 8,
+    "item_id": "1310"
+  },
+  {
+    "bubble_score": 11,
+    "shop_score": 11,
+    "item_id": "1311"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "1401"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "1402"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "1403"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "1404"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 3,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "1405"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "1406"
+  },
+  {
+    "bubble_score": 9,
+    "shop_score": 9,
+    "item_id": "1407"
+  },
+  {
+    "bubble_score": 1,
+    "shop_score": 1,
+    "item_id": "1801"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "1802"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "1803"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "1804"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 1,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "1805"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "1806"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "1807"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 2,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "1808"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "1809"
+  },
+  {
+    "shop_score": 10,
+    "merge_score_race": 3,
+    "bubble_score": 10,
+    "merge_score": 8,
+    "item_id": "1810"
+  },
+  {
+    "shop_score": 11,
+    "merge_score_race": 3,
+    "bubble_score": 11,
+    "merge_score": 9,
+    "item_id": "1811"
+  },
+  {
+    "bubble_score": 12,
+    "shop_score": 12,
+    "item_id": "1812"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "1602"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "1603"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "1604"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "1605"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "1606"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "1607"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "1608"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "1609"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "1610"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "2002"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "2003"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "2004"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "2005"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "2006"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "2007"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "2008"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "2009"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "2010"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp3_2_2"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "sp3_2_3"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "sp3_2_4"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "sp3_2_5"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "sp3_2_6"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "sp3_2_7"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "sp3_2_8"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "sp3_2_9"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "sp3_2_10"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp3_3_1"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "sp3_3_2"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "sp3_3_3"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "sp3_3_4"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "sp3_3_5"
+  },
+  {
+    "bubble_score": 7,
+    "shop_score": 7,
+    "item_id": "sp3_3_6"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp4_2_2"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp4_2_3"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp4_2_4"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp4_3_2"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "sp4_3_3"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "sp4_3_4"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "sp4_3_5"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "sp4_3_6"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "sp4_3_7"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "sp4_3_8"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "sp4_3_9"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "sp4_3_10"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp5_2_2"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "sp5_2_3"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "sp5_2_4"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "sp5_2_5"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "sp5_2_6"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "sp5_2_7"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "sp5_2_8"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "sp5_2_9"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "sp5_2_10"
+  },
+  {
+    "bubble_score": 2,
+    "shop_score": 2,
+    "item_id": "sp6_2_2"
+  },
+  {
+    "shop_score": 3,
+    "merge_score_race": 1,
+    "bubble_score": 3,
+    "merge_score": 1,
+    "item_id": "sp6_2_3"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "sp6_2_4"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "sp6_2_5"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "sp6_2_6"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 2,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "sp6_2_7"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "sp6_2_8"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 3,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "sp6_2_9"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "sp6_2_10"
+  },
+  {
+    "shop_score": 4,
+    "merge_score_race": 1,
+    "bubble_score": 4,
+    "merge_score": 2,
+    "item_id": "main_g_artifact_2"
+  },
+  {
+    "shop_score": 5,
+    "merge_score_race": 2,
+    "bubble_score": 5,
+    "merge_score": 3,
+    "item_id": "main_g_artifact_3"
+  },
+  {
+    "shop_score": 6,
+    "merge_score_race": 2,
+    "bubble_score": 6,
+    "merge_score": 4,
+    "item_id": "main_g_artifact_4"
+  },
+  {
+    "shop_score": 7,
+    "merge_score_race": 3,
+    "bubble_score": 7,
+    "merge_score": 5,
+    "item_id": "main_g_artifact_5"
+  },
+  {
+    "shop_score": 8,
+    "merge_score_race": 3,
+    "bubble_score": 8,
+    "merge_score": 6,
+    "item_id": "main_g_artifact_6"
+  },
+  {
+    "shop_score": 9,
+    "merge_score_race": 4,
+    "bubble_score": 9,
+    "merge_score": 7,
+    "item_id": "main_g_artifact_7"
+  },
+  {
+    "bubble_score": 10,
+    "shop_score": 10,
+    "item_id": "main_g_artifact_8"
+  }
+]

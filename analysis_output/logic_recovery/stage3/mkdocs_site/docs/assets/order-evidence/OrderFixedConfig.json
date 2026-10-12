@@ -1,0 +1,149 @@
+[
+  {
+    "Requirement1": "203",
+    "UnlockLevel": 1,
+    "Id": 1,
+    "Slots": [
+      1
+    ]
+  },
+  {
+    "Requirement1": "208",
+    "UnlockLevel": 1,
+    "Id": 2,
+    "Slots": [
+      1
+    ]
+  },
+  {
+    "Requirement1": "204",
+    "UnlockLevel": 1,
+    "Id": 3,
+    "Slots": [
+      1
+    ]
+  },
+  {
+    "Requirement1": "206",
+    "UnlockLevel": 1,
+    "Id": 4,
+    "Slots": [
+      1
+    ]
+  },
+  {
+    "Requirement1": "304",
+    "UnlockLevel": 2,
+    "Id": 5,
+    "Slots": [
+      1,
+      2
+    ]
+  },
+  {
+    "Requirement1": "303",
+    "UnlockLevel": 2,
+    "Id": 6,
+    "Slots": [
+      1,
+      2
+    ]
+  },
+  {
+    "UnlockLevel": 2,
+    "Id": 7,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "206",
+    "Requirement1": "303"
+  },
+  {
+    "Requirement1": "305",
+    "UnlockLevel": 2,
+    "Id": 8,
+    "Slots": [
+      1,
+      2
+    ]
+  },
+  {
+    "Requirement1": "208",
+    "UnlockLevel": 2,
+    "Id": 9,
+    "Slots": [
+      1,
+      2
+    ]
+  },
+  {
+    "UnlockLevel": 2,
+    "Id": 10,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "303",
+    "Requirement1": "205"
+  },
+  {
+    "UnlockLevel": 3,
+    "Id": 11,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "504",
+    "Requirement1": "504"
+  },
+  {
+    "UnlockLevel": 3,
+    "Id": 12,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "505",
+    "Requirement1": "205"
+  },
+  {
+    "UnlockLevel": 3,
+    "Id": 13,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "503",
+    "Requirement1": "505"
+  },
+  {
+    "Requirement1": "603",
+    "UnlockLevel": 4,
+    "Id": 14,
+    "Slots": [
+      1,
+      2
+    ]
+  },
+  {
+    "UnlockLevel": 4,
+    "Id": 15,
+    "Slots": [
+      3
+    ],
+    "Requirement2": "204",
+    "Requirement1": "507",
+    "Requirement3": "303"
+  },
+  {
+    "UnlockLevel": 4,
+    "Id": 16,
+    "Slots": [
+      1,
+      2
+    ],
+    "Requirement2": "604",
+    "Requirement1": "206"
+  }
+]

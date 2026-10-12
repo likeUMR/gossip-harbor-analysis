@@ -1,0 +1,1380 @@
+
+main <GooglePgsManager.lua:0,0> (138 instructions at 00000206D45DEEA0)
+0+ params, 7 slots, 1 upvalue, 5 locals, 64 constants, 27 functions
+	1	[3]	NEWTABLE 	0 0 0
+	2	[3]	SETTABUP 	0 -1 0	; _ENV "GooglePgsManager"
+	3	[4]	GETTABUP 	0 0 -1	; _ENV "GooglePgsManager"
+	4	[4]	GETTABUP 	1 0 -1	; _ENV "GooglePgsManager"
+	5	[4]	SETTABLE 	0 -2 1	; "__index" -
+	6	[13]	NEWTABLE 	0 0 3
+	7	[14]	SETTABLE 	0 -4 -5	; "UNLOCKED" 0
+	8	[15]	SETTABLE 	0 -6 -7	; "REVEALED" 1
+	9	[16]	SETTABLE 	0 -8 -9	; "HIDDEN" 2
+	10	[17]	SETTABUP 	0 -3 0	; _ENV "EAchievementStatus"
+	11	[20]	NEWTABLE 	0 0 2
+	12	[21]	SETTABLE 	0 -11 -5	; "STANDARD" 0
+	13	[22]	SETTABLE 	0 -12 -7	; "INCREMENTAL" 1
+	14	[23]	SETTABUP 	0 -10 0	; _ENV "EAchievementType"
+	15	[26]	NEWTABLE 	0 6 0
+	16	[27]	LOADK    	1 -13	; "CgkI3YvxrpUIEAIQAQ"
+	17	[28]	LOADK    	2 -14	; "CgkI3YvxrpUIEAIQAg"
+	18	[29]	LOADK    	3 -15	; "CgkI3YvxrpUIEAIQAw"
+	19	[30]	LOADK    	4 -16	; "CgkI3YvxrpUIEAIQBA"
+	20	[31]	LOADK    	5 -17	; "CgkI3YvxrpUIEAIQBQ"
+	21	[33]	LOADK    	6 -18	; "CgkI3YvxrpUIEAIQBg"
+	22	[33]	SETLIST  	0 6 1	; 1
+	23	[36]	NEWTABLE 	1 5 0
+	24	[36]	NEWTABLE 	2 0 2
+	25	[37]	SETTABLE 	2 -19 -20	; "id" "CgkI3YvxrpUIEAIQBw"
+	26	[37]	SETTABLE 	2 -21 -7	; "days" 1
+	27	[37]	NEWTABLE 	3 0 2
+	28	[38]	SETTABLE 	3 -19 -22	; "id" "CgkI3YvxrpUIEAIQCA"
+	29	[38]	SETTABLE 	3 -21 -9	; "days" 2
+	30	[38]	NEWTABLE 	4 0 2
+	31	[39]	SETTABLE 	4 -19 -23	; "id" "CgkI3YvxrpUIEAIQCQ"
+	32	[39]	SETTABLE 	4 -21 -24	; "days" 20
+	33	[39]	NEWTABLE 	5 0 2
+	34	[40]	SETTABLE 	5 -19 -25	; "id" "CgkI3YvxrpUIEAIQCg"
+	35	[40]	SETTABLE 	5 -21 -26	; "days" 100
+	36	[40]	NEWTABLE 	6 0 2
+	37	[41]	SETTABLE 	6 -19 -27	; "id" "CgkI3YvxrpUIEAIQCw"
+	38	[41]	SETTABLE 	6 -21 -28	; "days" 200
+	39	[42]	SETLIST  	1 5 1	; 1
+	40	[45]	NEWTABLE 	2 1 0
+	41	[45]	NEWTABLE 	3 0 2
+	42	[46]	SETTABLE 	3 -19 -29	; "id" "CgkI3YvxrpUIEAIQDA"
+	43	[46]	SETTABLE 	3 -30 -31	; "level" 6
+	44	[47]	SETLIST  	2 1 1	; 1
+	45	[50]	NEWTABLE 	3 2 0
+	46	[51]	LOADK    	4 -32	; "CgkI3YvxrpUIEAIQDg"
+	47	[53]	LOADK    	5 -33	; "CgkI3YvxrpUIEAIQDw"
+	48	[53]	SETLIST  	3 2 1	; 1
+	49	[56]	NEWTABLE 	4 2 0
+	50	[56]	NEWTABLE 	5 0 2
+	51	[57]	SETTABLE 	5 -19 -34	; "id" "CgkI3YvxrpUIEAIQEA"
+	52	[57]	SETTABLE 	5 -35 -9	; "count" 2
+	53	[57]	NEWTABLE 	6 0 2
+	54	[58]	SETTABLE 	6 -19 -36	; "id" "CgkI3YvxrpUIEAIQEQ"
+	55	[58]	SETTABLE 	6 -35 -37	; "count" 4
+	56	[59]	SETLIST  	4 2 1	; 1
+	57	[62]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	58	[79]	CLOSURE  	6 0	; 00000206D45DEF20
+	59	[62]	SETTABLE 	5 -38 6	; "Init" -
+	60	[82]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	61	[99]	CLOSURE  	6 1	; 00000206D45E2F10
+	62	[82]	SETTABLE 	5 -39 6	; "_OnEnterMainScene" -
+	63	[101]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	64	[106]	CLOSURE  	6 2	; 00000206D45E3900
+	65	[101]	SETTABLE 	5 -40 6	; "LateUpdate" -
+	66	[109]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	67	[120]	CLOSURE  	6 3	; 00000206D45E3980
+	68	[109]	SETTABLE 	5 -41 6	; "CheckAuthenticated" -
+	69	[123]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	70	[135]	CLOSURE  	6 4	; 00000206D45DE930
+	71	[123]	SETTABLE 	5 -42 6	; "SignIn" -
+	72	[139]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	73	[143]	CLOSURE  	6 5	; 00000206D45E45D0
+	74	[139]	SETTABLE 	5 -43 6	; "_OnOrderFinished" -
+	75	[146]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	76	[151]	CLOSURE  	6 6	; 00000206D45E4450
+	77	[146]	SETTABLE 	5 -44 6	; "_OnLevelUp" -
+	78	[154]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	79	[156]	CLOSURE  	6 7	; 00000206D45E44D0
+	80	[154]	SETTABLE 	5 -45 6	; "_OnTaskFinished" -
+	81	[159]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	82	[164]	CLOSURE  	6 8	; 00000206D45E47D0
+	83	[159]	SETTABLE 	5 -46 6	; "_OnAlbumCompleted" -
+	84	[166]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	85	[168]	CLOSURE  	6 9	; 00000206D45E49D0
+	86	[166]	SETTABLE 	5 -47 6	; "_OnItemMerged" -
+	87	[170]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	88	[177]	CLOSURE  	6 10	; 00000206D45E4F50
+	89	[170]	SETTABLE 	5 -48 6	; "_OnPropertyAcquired" -
+	90	[179]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	91	[181]	CLOSURE  	6 11	; 00000206D45E4A50
+	92	[179]	SETTABLE 	5 -49 6	; "_OnOrderBoostSmileAddScore" -
+	93	[187]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	94	[197]	CLOSURE  	6 12	; 00000206D45E4550
+	95	[187]	SETTABLE 	5 -50 6	; "_CheckStatsAchievements" -
+	96	[200]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	97	[222]	CLOSURE  	6 13	; 00000206D45E4B50
+	98	[200]	SETTABLE 	5 -51 6	; "GetAchievements" -
+	99	[224]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	100	[246]	CLOSURE  	6 14	; 00000206D45E4AD0
+	101	[224]	SETTABLE 	5 -52 6	; "_RetryGetAchievements" -
+	102	[249]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	103	[266]	CLOSURE  	6 15	; 00000206D45E4850
+	104	[249]	SETTABLE 	5 -53 6	; "CheckTimelineAchievements" -
+	105	[269]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	106	[288]	CLOSURE  	6 16	; 00000206D45E5150
+	107	[269]	SETTABLE 	5 -54 6	; "CheckLevelAchievements" -
+	108	[291]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	109	[310]	CLOSURE  	6 17	; 00000206D45E4C50
+	110	[291]	SETTABLE 	5 -55 6	; "CheckCollectionAchievements" -
+	111	[313]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	112	[329]	CLOSURE  	6 18	; 00000206D45E48D0
+	113	[313]	SETTABLE 	5 -56 6	; "IncreaseAchievements" -
+	114	[332]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	115	[334]	CLOSURE  	6 19	; 00000206D45E4D50
+	116	[332]	SETTABLE 	5 -57 6	; "ShowAchievementsUI" -
+	117	[337]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	118	[339]	CLOSURE  	6 20	; 00000206D45E4950
+	119	[337]	SETTABLE 	5 -58 6	; "Test_FinishOrderAchievements" -
+	120	[343]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	121	[347]	CLOSURE  	6 21	; 00000206D45E4DD0
+	122	[343]	SETTABLE 	5 -59 6	; "RecordGameStatsOrderAmount" -
+	123	[349]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	124	[353]	CLOSURE  	6 22	; 00000206D45E4ED0
+	125	[349]	SETTABLE 	5 -60 6	; "RecordGameStatsCoinAcquired" -
+	126	[355]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	127	[359]	CLOSURE  	6 23	; 00000206D45E4FD0
+	128	[355]	SETTABLE 	5 -61 6	; "RecordGameStatsSmileAcquired" -
+	129	[361]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	130	[365]	CLOSURE  	6 24	; 00000206D45E5050
+	131	[361]	SETTABLE 	5 -62 6	; "RecordGameStatsMerge" -
+	132	[367]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	133	[371]	CLOSURE  	6 25	; 00000206D45E51D0
+	134	[367]	SETTABLE 	5 -63 6	; "RecordGameStatsAlbumComplete" -
+	135	[373]	GETTABUP 	5 0 -1	; _ENV "GooglePgsManager"
+	136	[377]	CLOSURE  	6 26	; 00000206D45E5350
+	137	[373]	SETTABLE 	5 -64 6	; "RecordGameStatsUserLevel" -
+	138	[377]	RETURN   	0 1
+constants (64) for 00000206D45DEEA0:
+	1	"GooglePgsManager"
+	2	"__index"
+	3	"EAchievementStatus"
+	4	"UNLOCKED"
+	5	0
+	6	"REVEALED"
+	7	1
+	8	"HIDDEN"
+	9	2
+	10	"EAchievementType"
+	11	"STANDARD"
+	12	"INCREMENTAL"
+	13	"CgkI3YvxrpUIEAIQAQ"
+	14	"CgkI3YvxrpUIEAIQAg"
+	15	"CgkI3YvxrpUIEAIQAw"
+	16	"CgkI3YvxrpUIEAIQBA"
+	17	"CgkI3YvxrpUIEAIQBQ"
+	18	"CgkI3YvxrpUIEAIQBg"
+	19	"id"
+	20	"CgkI3YvxrpUIEAIQBw"
+	21	"days"
+	22	"CgkI3YvxrpUIEAIQCA"
+	23	"CgkI3YvxrpUIEAIQCQ"
+	24	20
+	25	"CgkI3YvxrpUIEAIQCg"
+	26	100
+	27	"CgkI3YvxrpUIEAIQCw"
+	28	200
+	29	"CgkI3YvxrpUIEAIQDA"
+	30	"level"
+	31	6
+	32	"CgkI3YvxrpUIEAIQDg"
+	33	"CgkI3YvxrpUIEAIQDw"
+	34	"CgkI3YvxrpUIEAIQEA"
+	35	"count"
+	36	"CgkI3YvxrpUIEAIQEQ"
+	37	4
+	38	"Init"
+	39	"_OnEnterMainScene"
+	40	"LateUpdate"
+	41	"CheckAuthenticated"
+	42	"SignIn"
+	43	"_OnOrderFinished"
+	44	"_OnLevelUp"
+	45	"_OnTaskFinished"
+	46	"_OnAlbumCompleted"
+	47	"_OnItemMerged"
+	48	"_OnPropertyAcquired"
+	49	"_OnOrderBoostSmileAddScore"
+	50	"_CheckStatsAchievements"
+	51	"GetAchievements"
+	52	"_RetryGetAchievements"
+	53	"CheckTimelineAchievements"
+	54	"CheckLevelAchievements"
+	55	"CheckCollectionAchievements"
+	56	"IncreaseAchievements"
+	57	"ShowAchievementsUI"
+	58	"Test_FinishOrderAchievements"
+	59	"RecordGameStatsOrderAmount"
+	60	"RecordGameStatsCoinAcquired"
+	61	"RecordGameStatsSmileAcquired"
+	62	"RecordGameStatsMerge"
+	63	"RecordGameStatsAlbumComplete"
+	64	"RecordGameStatsUserLevel"
+locals (5) for 00000206D45DEEA0:
+	0	orderAchievementsKey	23	139
+	1	dayAchievements	40	139
+	2	levelAchievements	45	139
+	3	albumAchievementsKeys	49	139
+	4	collectionAchievements	57	139
+upvalues (1) for 00000206D45DEEA0:
+	0	_ENV	1	0
+
+function <GooglePgsManager.lua:62,79> (63 instructions at 00000206D45DEF20)
+1 param, 5 slots, 1 upvalue, 1 local, 22 constants, 1 function
+	1	[63]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[63]	SELF     	1 1 -2	; "Init"
+	3	[63]	CALL     	1 2 1
+	4	[65]	SELF     	1 0 -3	; "CheckAuthenticated"
+	5	[69]	CLOSURE  	3 0	; 00000206D45E1E80
+	6	[65]	CALL     	1 3 1
+	7	[71]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	8	[71]	GETTABLE 	1 1 -5	; "AddListener"
+	9	[71]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	10	[71]	GETTABLE 	2 2 -7	; "EnterMainScene"
+	11	[71]	MOVE     	3 0
+	12	[71]	GETTABLE 	4 0 -8	; "_OnEnterMainScene"
+	13	[71]	CALL     	1 4 1
+	14	[72]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	15	[72]	GETTABLE 	1 1 -5	; "AddListener"
+	16	[72]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	17	[72]	GETTABLE 	2 2 -9	; "LevelUp"
+	18	[72]	MOVE     	3 0
+	19	[72]	GETTABLE 	4 0 -10	; "_OnLevelUp"
+	20	[72]	CALL     	1 4 1
+	21	[73]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	22	[73]	GETTABLE 	1 1 -5	; "AddListener"
+	23	[73]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	24	[73]	GETTABLE 	2 2 -11	; "OrderFinished"
+	25	[73]	MOVE     	3 0
+	26	[73]	GETTABLE 	4 0 -12	; "_OnOrderFinished"
+	27	[73]	CALL     	1 4 1
+	28	[74]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	29	[74]	GETTABLE 	1 1 -5	; "AddListener"
+	30	[74]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	31	[74]	GETTABLE 	2 2 -13	; "MainTaskFinished"
+	32	[74]	MOVE     	3 0
+	33	[74]	GETTABLE 	4 0 -14	; "_OnTaskFinished"
+	34	[74]	CALL     	1 4 1
+	35	[75]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	36	[75]	GETTABLE 	1 1 -5	; "AddListener"
+	37	[75]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	38	[75]	GETTABLE 	2 2 -15	; "AlbumGradeCompleted"
+	39	[75]	MOVE     	3 0
+	40	[75]	GETTABLE 	4 0 -16	; "_OnAlbumCompleted"
+	41	[75]	CALL     	1 4 1
+	42	[76]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	43	[76]	GETTABLE 	1 1 -5	; "AddListener"
+	44	[76]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	45	[76]	GETTABLE 	2 2 -17	; "ItemMerged"
+	46	[76]	MOVE     	3 0
+	47	[76]	GETTABLE 	4 0 -18	; "_OnItemMerged"
+	48	[76]	CALL     	1 4 1
+	49	[77]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	50	[77]	GETTABLE 	1 1 -5	; "AddListener"
+	51	[77]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	52	[77]	GETTABLE 	2 2 -19	; "PropertyAcquired"
+	53	[77]	MOVE     	3 0
+	54	[77]	GETTABLE 	4 0 -20	; "_OnPropertyAcquired"
+	55	[77]	CALL     	1 4 1
+	56	[78]	GETTABUP 	1 0 -4	; _ENV "EventDispatcher"
+	57	[78]	GETTABLE 	1 1 -5	; "AddListener"
+	58	[78]	GETTABUP 	2 0 -6	; _ENV "EEventType"
+	59	[78]	GETTABLE 	2 2 -21	; "OrderBoostSmileAddScore"
+	60	[78]	MOVE     	3 0
+	61	[78]	GETTABLE 	4 0 -22	; "_OnOrderBoostSmileAddScore"
+	62	[78]	CALL     	1 4 1
+	63	[79]	RETURN   	0 1
+constants (22) for 00000206D45DEF20:
+	1	"CSGooglePgsClient"
+	2	"Init"
+	3	"CheckAuthenticated"
+	4	"EventDispatcher"
+	5	"AddListener"
+	6	"EEventType"
+	7	"EnterMainScene"
+	8	"_OnEnterMainScene"
+	9	"LevelUp"
+	10	"_OnLevelUp"
+	11	"OrderFinished"
+	12	"_OnOrderFinished"
+	13	"MainTaskFinished"
+	14	"_OnTaskFinished"
+	15	"AlbumGradeCompleted"
+	16	"_OnAlbumCompleted"
+	17	"ItemMerged"
+	18	"_OnItemMerged"
+	19	"PropertyAcquired"
+	20	"_OnPropertyAcquired"
+	21	"OrderBoostSmileAddScore"
+	22	"_OnOrderBoostSmileAddScore"
+locals (1) for 00000206D45DEF20:
+	0	self	1	64
+upvalues (1) for 00000206D45DEF20:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:65,69> (7 instructions at 00000206D45E1E80)
+2 params, 5 slots, 1 upvalue, 2 locals, 1 constant, 0 functions
+	1	[66]	TEST     	0 0
+	2	[66]	JMP      	0 4	; to 7
+	3	[67]	GETUPVAL 	2 0	; self
+	4	[67]	SELF     	2 2 -1	; "GetAchievements"
+	5	[67]	LOADBOOL 	4 1 0
+	6	[67]	CALL     	2 3 1
+	7	[69]	RETURN   	0 1
+constants (1) for 00000206D45E1E80:
+	1	"GetAchievements"
+locals (2) for 00000206D45E1E80:
+	0	success	1	8
+	1	data	1	8
+upvalues (1) for 00000206D45E1E80:
+	0	self	1	0
+
+function <GooglePgsManager.lua:82,99> (12 instructions at 00000206D45E2F10)
+1 param, 4 slots, 1 upvalue, 1 local, 5 constants, 1 function
+	1	[84]	GETTABLE 	1 0 -1	; "m_achievementsProgress"
+	2	[84]	EQ       	1 1 -2	; - nil
+	3	[84]	JMP      	0 3	; to 7
+	4	[85]	SELF     	1 0 -3	; "_CheckStatsAchievements"
+	5	[85]	CALL     	1 2 1
+	6	[85]	JMP      	0 3	; to 10
+	7	[87]	SELF     	1 0 -4	; "CheckAuthenticated"
+	8	[94]	CLOSURE  	3 0	; 00000206D45E2FF0
+	9	[87]	CALL     	1 3 1
+	10	[98]	SELF     	1 0 -5	; "RecordGameStatsUserLevel"
+	11	[98]	CALL     	1 2 1
+	12	[99]	RETURN   	0 1
+constants (5) for 00000206D45E2F10:
+	1	"m_achievementsProgress"
+	2	nil
+	3	"_CheckStatsAchievements"
+	4	"CheckAuthenticated"
+	5	"RecordGameStatsUserLevel"
+locals (1) for 00000206D45E2F10:
+	0	self	1	13
+upvalues (1) for 00000206D45E2F10:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:87,94> (8 instructions at 00000206D45E2FF0)
+2 params, 6 slots, 2 upvalues, 2 locals, 1 constant, 1 function
+	1	[88]	TEST     	0 0
+	2	[88]	JMP      	0 5	; to 8
+	3	[89]	GETUPVAL 	2 0	; self
+	4	[89]	SELF     	2 2 -1	; "GetAchievements"
+	5	[89]	LOADBOOL 	4 1 0
+	6	[92]	CLOSURE  	5 0	; 00000206D45E3070
+	7	[89]	CALL     	2 4 1
+	8	[94]	RETURN   	0 1
+constants (1) for 00000206D45E2FF0:
+	1	"GetAchievements"
+locals (2) for 00000206D45E2FF0:
+	0	success	1	9
+	1	data	1	9
+upvalues (2) for 00000206D45E2FF0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <GooglePgsManager.lua:89,92> (8 instructions at 00000206D45E3070)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[90]	GETTABUP 	0 0 -1	; _ENV "GM"
+	2	[90]	EQ       	0 0 -2	; - nil
+	3	[90]	JMP      	0 1	; to 5
+	4	[90]	RETURN   	0 1
+	5	[91]	GETUPVAL 	0 1	; self
+	6	[91]	SELF     	0 0 -3	; "_CheckStatsAchievements"
+	7	[91]	CALL     	0 2 1
+	8	[92]	RETURN   	0 1
+constants (3) for 00000206D45E3070:
+	1	"GM"
+	2	nil
+	3	"_CheckStatsAchievements"
+locals (0) for 00000206D45E3070:
+upvalues (2) for 00000206D45E3070:
+	0	_ENV	0	1
+	1	self	0	0
+
+function <GooglePgsManager.lua:101,106> (10 instructions at 00000206D45E3900)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[102]	GETTABLE 	1 0 -1	; "m_bNeedRefreshAchievements"
+	2	[102]	TEST     	1 0
+	3	[102]	JMP      	0 6	; to 10
+	4	[102]	GETTABLE 	1 0 -2	; "m_bGettingAchievements"
+	5	[102]	TEST     	1 1
+	6	[102]	JMP      	0 3	; to 10
+	7	[103]	SELF     	1 0 -3	; "GetAchievements"
+	8	[103]	CALL     	1 2 1
+	9	[104]	SETTABLE 	0 -1 -4	; "m_bNeedRefreshAchievements" nil
+	10	[106]	RETURN   	0 1
+constants (4) for 00000206D45E3900:
+	1	"m_bNeedRefreshAchievements"
+	2	"m_bGettingAchievements"
+	3	"GetAchievements"
+	4	nil
+locals (1) for 00000206D45E3900:
+	0	self	1	11
+upvalues (0) for 00000206D45E3900:
+
+function <GooglePgsManager.lua:109,120> (5 instructions at 00000206D45E3980)
+2 params, 5 slots, 1 upvalue, 2 locals, 2 constants, 1 function
+	1	[110]	GETTABUP 	2 0 -1	; _ENV "CSGooglePgsClient"
+	2	[110]	SELF     	2 2 -2	; "CheckAuth"
+	3	[119]	CLOSURE  	4 0	; 00000206D45E3A00
+	4	[110]	CALL     	2 3 1
+	5	[120]	RETURN   	0 1
+constants (2) for 00000206D45E3980:
+	1	"CSGooglePgsClient"
+	2	"CheckAuth"
+locals (2) for 00000206D45E3980:
+	0	self	1	6
+	1	callback	1	6
+upvalues (1) for 00000206D45E3980:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:110,119> (27 instructions at 00000206D45E3A00)
+2 params, 6 slots, 2 upvalues, 2 locals, 6 constants, 0 functions
+	1	[111]	TEST     	0 0
+	2	[111]	JMP      	0 9	; to 12
+	3	[112]	GETTABUP 	2 0 -1	; _ENV "Log"
+	4	[112]	GETTABLE 	2 2 -2	; "Info"
+	5	[112]	LOADK    	3 -3	; "[GooglePgsManager] CheckAuthenticated success:"
+	6	[112]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	7	[112]	MOVE     	5 1
+	8	[112]	CALL     	4 2 2
+	9	[112]	CONCAT   	3 3 4
+	10	[112]	CALL     	2 2 1
+	11	[112]	JMP      	0 8	; to 20
+	12	[114]	GETTABUP 	2 0 -1	; _ENV "Log"
+	13	[114]	GETTABLE 	2 2 -5	; "Warning"
+	14	[114]	LOADK    	3 -6	; "[GooglePgsManager] CheckAuthenticated failed:"
+	15	[114]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	16	[114]	MOVE     	5 1
+	17	[114]	CALL     	4 2 2
+	18	[114]	CONCAT   	3 3 4
+	19	[114]	CALL     	2 2 1
+	20	[116]	GETUPVAL 	2 1	; callback
+	21	[116]	TEST     	2 0
+	22	[116]	JMP      	0 4	; to 27
+	23	[117]	GETUPVAL 	2 1	; callback
+	24	[117]	MOVE     	3 0
+	25	[117]	MOVE     	4 1
+	26	[117]	CALL     	2 3 1
+	27	[119]	RETURN   	0 1
+constants (6) for 00000206D45E3A00:
+	1	"Log"
+	2	"Info"
+	3	"[GooglePgsManager] CheckAuthenticated success:"
+	4	"tostring"
+	5	"Warning"
+	6	"[GooglePgsManager] CheckAuthenticated failed:"
+locals (2) for 00000206D45E3A00:
+	0	success	1	28
+	1	data	1	28
+upvalues (2) for 00000206D45E3A00:
+	0	_ENV	0	0
+	1	callback	1	1
+
+function <GooglePgsManager.lua:123,135> (5 instructions at 00000206D45DE930)
+2 params, 5 slots, 1 upvalue, 2 locals, 2 constants, 1 function
+	1	[124]	GETTABUP 	2 0 -1	; _ENV "CSGooglePgsClient"
+	2	[124]	SELF     	2 2 -2	; "Login"
+	3	[134]	CLOSURE  	4 0	; 00000206D45DE9B0
+	4	[124]	CALL     	2 3 1
+	5	[135]	RETURN   	0 1
+constants (2) for 00000206D45DE930:
+	1	"CSGooglePgsClient"
+	2	"Login"
+locals (2) for 00000206D45DE930:
+	0	self	1	6
+	1	callback	1	6
+upvalues (1) for 00000206D45DE930:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:124,134> (31 instructions at 00000206D45DE9B0)
+2 params, 6 slots, 3 upvalues, 2 locals, 7 constants, 0 functions
+	1	[125]	TEST     	0 0
+	2	[125]	JMP      	0 13	; to 16
+	3	[126]	GETTABUP 	2 0 -1	; _ENV "Log"
+	4	[126]	GETTABLE 	2 2 -2	; "Info"
+	5	[126]	LOADK    	3 -3	; "[GooglePgsManager] SignIn success:"
+	6	[126]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	7	[126]	MOVE     	5 1
+	8	[126]	CALL     	4 2 2
+	9	[126]	CONCAT   	3 3 4
+	10	[126]	CALL     	2 2 1
+	11	[127]	GETUPVAL 	2 1	; self
+	12	[127]	SELF     	2 2 -5	; "GetAchievements"
+	13	[127]	LOADBOOL 	4 1 0
+	14	[127]	CALL     	2 3 1
+	15	[127]	JMP      	0 8	; to 24
+	16	[129]	GETTABUP 	2 0 -1	; _ENV "Log"
+	17	[129]	GETTABLE 	2 2 -6	; "Warning"
+	18	[129]	LOADK    	3 -7	; "[GooglePgsManager] SignIn failed:"
+	19	[129]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	20	[129]	MOVE     	5 1
+	21	[129]	CALL     	4 2 2
+	22	[129]	CONCAT   	3 3 4
+	23	[129]	CALL     	2 2 1
+	24	[131]	GETUPVAL 	2 2	; callback
+	25	[131]	TEST     	2 0
+	26	[131]	JMP      	0 4	; to 31
+	27	[132]	GETUPVAL 	2 2	; callback
+	28	[132]	MOVE     	3 0
+	29	[132]	MOVE     	4 1
+	30	[132]	CALL     	2 3 1
+	31	[134]	RETURN   	0 1
+constants (7) for 00000206D45DE9B0:
+	1	"Log"
+	2	"Info"
+	3	"[GooglePgsManager] SignIn success:"
+	4	"tostring"
+	5	"GetAchievements"
+	6	"Warning"
+	7	"[GooglePgsManager] SignIn failed:"
+locals (2) for 00000206D45DE9B0:
+	0	success	1	32
+	1	data	1	32
+upvalues (3) for 00000206D45DE9B0:
+	0	_ENV	0	0
+	1	self	1	0
+	2	callback	1	1
+
+function <GooglePgsManager.lua:139,143> (6 instructions at 00000206D45E45D0)
+2 params, 5 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[140]	SELF     	2 0 -1	; "IncreaseAchievements"
+	2	[140]	GETUPVAL 	4 0	; orderAchievementsKey
+	3	[140]	CALL     	2 3 1
+	4	[142]	SELF     	2 0 -2	; "RecordGameStatsOrderAmount"
+	5	[142]	CALL     	2 2 1
+	6	[143]	RETURN   	0 1
+constants (2) for 00000206D45E45D0:
+	1	"IncreaseAchievements"
+	2	"RecordGameStatsOrderAmount"
+locals (2) for 00000206D45E45D0:
+	0	self	1	7
+	1	msg	1	7
+upvalues (1) for 00000206D45E45D0:
+	0	orderAchievementsKey	1	0
+
+function <GooglePgsManager.lua:146,151> (10 instructions at 00000206D45E4450)
+1 param, 5 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[147]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[147]	GETTABLE 	1 1 -2	; "LevelModel"
+	3	[147]	SELF     	1 1 -3	; "GetCurrentLevel"
+	4	[147]	CALL     	1 2 2
+	5	[148]	SELF     	2 0 -4	; "CheckLevelAchievements"
+	6	[148]	MOVE     	4 1
+	7	[148]	CALL     	2 3 1
+	8	[150]	SELF     	2 0 -5	; "RecordGameStatsUserLevel"
+	9	[150]	CALL     	2 2 1
+	10	[151]	RETURN   	0 1
+constants (5) for 00000206D45E4450:
+	1	"GM"
+	2	"LevelModel"
+	3	"GetCurrentLevel"
+	4	"CheckLevelAchievements"
+	5	"RecordGameStatsUserLevel"
+locals (2) for 00000206D45E4450:
+	0	self	1	11
+	1	curLevel	5	11
+upvalues (1) for 00000206D45E4450:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:154,156> (3 instructions at 00000206D45E44D0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[155]	SELF     	2 0 -1	; "CheckTimelineAchievements"
+	2	[155]	CALL     	2 2 1
+	3	[156]	RETURN   	0 1
+constants (1) for 00000206D45E44D0:
+	1	"CheckTimelineAchievements"
+locals (2) for 00000206D45E44D0:
+	0	self	1	4
+	1	data	1	4
+upvalues (0) for 00000206D45E44D0:
+
+function <GooglePgsManager.lua:159,164> (9 instructions at 00000206D45E47D0)
+2 params, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[160]	SELF     	2 0 -1	; "IncreaseAchievements"
+	2	[160]	GETUPVAL 	4 0	; albumAchievementsKeys
+	3	[160]	CALL     	2 3 1
+	4	[161]	SELF     	2 0 -2	; "CheckCollectionAchievements"
+	5	[161]	MOVE     	4 1
+	6	[161]	CALL     	2 3 1
+	7	[163]	SELF     	2 0 -3	; "RecordGameStatsAlbumComplete"
+	8	[163]	CALL     	2 2 1
+	9	[164]	RETURN   	0 1
+constants (3) for 00000206D45E47D0:
+	1	"IncreaseAchievements"
+	2	"CheckCollectionAchievements"
+	3	"RecordGameStatsAlbumComplete"
+locals (2) for 00000206D45E47D0:
+	0	self	1	10
+	1	count	1	10
+upvalues (1) for 00000206D45E47D0:
+	0	albumAchievementsKeys	1	3
+
+function <GooglePgsManager.lua:166,168> (3 instructions at 00000206D45E49D0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[167]	SELF     	2 0 -1	; "RecordGameStatsMerge"
+	2	[167]	CALL     	2 2 1
+	3	[168]	RETURN   	0 1
+constants (1) for 00000206D45E49D0:
+	1	"RecordGameStatsMerge"
+locals (2) for 00000206D45E49D0:
+	0	self	1	4
+	1	msg	1	4
+upvalues (0) for 00000206D45E49D0:
+
+function <GooglePgsManager.lua:170,177> (31 instructions at 00000206D45E4F50)
+2 params, 10 slots, 1 upvalue, 7 locals, 10 constants, 0 functions
+	1	[171]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[171]	GETTABLE 	3 1 -2	; "arrProperties"
+	3	[171]	CALL     	2 2 4
+	4	[171]	JMP      	0 24	; to 29
+	5	[172]	GETTABUP 	7 0 -3	; _ENV "PROPERTY_TYPE"
+	6	[172]	GETTABLE 	7 6 7
+	7	[172]	GETTABUP 	8 0 -4	; _ENV "EPropertyType"
+	8	[172]	GETTABLE 	8 8 -5	; "Gold"
+	9	[172]	EQ       	1 7 8
+	10	[172]	JMP      	0 6	; to 17
+	11	[172]	GETTABUP 	7 0 -3	; _ENV "PROPERTY_TYPE"
+	12	[172]	GETTABLE 	7 6 7
+	13	[172]	GETTABUP 	8 0 -4	; _ENV "EPropertyType"
+	14	[172]	GETTABLE 	8 8 -6	; "BakeOutToken"
+	15	[172]	EQ       	0 7 8
+	16	[172]	JMP      	0 12	; to 29
+	17	[173]	GETTABUP 	7 0 -7	; _ENV "PROPERTY_COUNT"
+	18	[173]	GETTABLE 	7 6 7
+	19	[173]	EQ       	1 7 -8	; - nil
+	20	[173]	JMP      	0 8	; to 29
+	21	[173]	GETTABUP 	7 0 -7	; _ENV "PROPERTY_COUNT"
+	22	[173]	GETTABLE 	7 6 7
+	23	[173]	LT       	0 -9 7	; 0 -
+	24	[173]	JMP      	0 4	; to 29
+	25	[174]	SELF     	7 0 -10	; "RecordGameStatsCoinAcquired"
+	26	[174]	GETTABUP 	9 0 -7	; _ENV "PROPERTY_COUNT"
+	27	[174]	GETTABLE 	9 6 9
+	28	[174]	CALL     	7 3 1
+	29	[171]	TFORCALL 	2 2
+	30	[171]	TFORLOOP 	4 -26	; to 5
+	31	[177]	RETURN   	0 1
+constants (10) for 00000206D45E4F50:
+	1	"ipairs"
+	2	"arrProperties"
+	3	"PROPERTY_TYPE"
+	4	"EPropertyType"
+	5	"Gold"
+	6	"BakeOutToken"
+	7	"PROPERTY_COUNT"
+	8	nil
+	9	0
+	10	"RecordGameStatsCoinAcquired"
+locals (7) for 00000206D45E4F50:
+	0	self	1	32
+	1	msg	1	32
+	2	(for generator)	4	31
+	3	(for state)	4	31
+	4	(for control)	4	31
+	5	_	5	29
+	6	propertyData	5	29
+upvalues (1) for 00000206D45E4F50:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:179,181> (4 instructions at 00000206D45E4A50)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[180]	SELF     	2 0 -1	; "RecordGameStatsSmileAcquired"
+	2	[180]	MOVE     	4 1
+	3	[180]	CALL     	2 3 1
+	4	[181]	RETURN   	0 1
+constants (1) for 00000206D45E4A50:
+	1	"RecordGameStatsSmileAcquired"
+locals (2) for 00000206D45E4A50:
+	0	self	1	5
+	1	msg	1	5
+upvalues (0) for 00000206D45E4A50:
+
+function <GooglePgsManager.lua:187,197> (18 instructions at 00000206D45E4550)
+1 param, 5 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[189]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[189]	GETTABLE 	1 1 -2	; "MainTaskModel"
+	3	[189]	SELF     	1 1 -3	; "IsAllFinished"
+	4	[189]	CALL     	1 2 2
+	5	[189]	TEST     	1 0
+	6	[189]	JMP      	0 2	; to 9
+	7	[190]	SELF     	1 0 -4	; "CheckTimelineAchievements"
+	8	[190]	CALL     	1 2 1
+	9	[193]	GETTABUP 	1 0 -1	; _ENV "GM"
+	10	[193]	GETTABLE 	1 1 -5	; "LevelModel"
+	11	[193]	SELF     	1 1 -6	; "GetCurrentLevel"
+	12	[193]	CALL     	1 2 2
+	13	[194]	LT       	0 -7 1	; 1 -
+	14	[194]	JMP      	0 3	; to 18
+	15	[195]	SELF     	2 0 -8	; "CheckLevelAchievements"
+	16	[195]	MOVE     	4 1
+	17	[195]	CALL     	2 3 1
+	18	[197]	RETURN   	0 1
+constants (8) for 00000206D45E4550:
+	1	"GM"
+	2	"MainTaskModel"
+	3	"IsAllFinished"
+	4	"CheckTimelineAchievements"
+	5	"LevelModel"
+	6	"GetCurrentLevel"
+	7	1
+	8	"CheckLevelAchievements"
+locals (2) for 00000206D45E4550:
+	0	self	1	19
+	1	curLevel	13	19
+upvalues (1) for 00000206D45E4550:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:200,222> (24 instructions at 00000206D45E4B50)
+4 params, 8 slots, 1 upvalue, 4 locals, 7 constants, 1 function
+	1	[202]	GETTABLE 	4 0 -1	; "m_bGettingAchievements"
+	2	[202]	TEST     	4 0
+	3	[202]	JMP      	0 1	; to 5
+	4	[203]	RETURN   	0 1
+	5	[205]	GETTABUP 	4 0 -2	; _ENV "IsNil"
+	6	[205]	MOVE     	5 3
+	7	[205]	CALL     	4 2 2
+	8	[205]	TEST     	4 0
+	9	[205]	JMP      	0 1	; to 11
+	10	[206]	LOADK    	3 -3	; 0
+	11	[208]	SETTABLE 	0 -1 -4	; "m_bGettingAchievements" true
+	12	[209]	GETTABUP 	4 0 -5	; _ENV "CSGooglePgsClient"
+	13	[209]	SELF     	4 4 -6	; "GetAchievements"
+	14	[209]	GETTABUP 	6 0 -7	; _ENV "IsBool"
+	15	[209]	MOVE     	7 1
+	16	[209]	CALL     	6 2 2
+	17	[209]	TEST     	6 0
+	18	[209]	JMP      	0 2	; to 21
+	19	[209]	TESTSET  	6 1 1
+	20	[209]	JMP      	0 1	; to 22
+	21	[209]	LOADBOOL 	6 0 0
+	22	[221]	CLOSURE  	7 0	; 00000206D45E4750
+	23	[209]	CALL     	4 4 1
+	24	[222]	RETURN   	0 1
+constants (7) for 00000206D45E4B50:
+	1	"m_bGettingAchievements"
+	2	"IsNil"
+	3	0
+	4	true
+	5	"CSGooglePgsClient"
+	6	"GetAchievements"
+	7	"IsBool"
+locals (4) for 00000206D45E4B50:
+	0	self	1	25
+	1	refresh	1	25
+	2	successCallback	1	25
+	3	retryTime	1	25
+upvalues (1) for 00000206D45E4B50:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:209,221> (37 instructions at 00000206D45E4750)
+2 params, 7 slots, 5 upvalues, 2 locals, 12 constants, 0 functions
+	1	[210]	SETTABUP 	0 -1 -2	; self "m_bGettingAchievements" nil
+	2	[211]	TEST     	0 0
+	3	[211]	JMP      	0 19	; to 23
+	4	[212]	GETTABUP 	2 1 -3	; _ENV "Log"
+	5	[212]	GETTABLE 	2 2 -4	; "Info"
+	6	[212]	LOADK    	3 -5	; "[GooglePgsManager] GetAchievements success:"
+	7	[212]	GETTABUP 	4 1 -6	; _ENV "tostring"
+	8	[212]	MOVE     	5 1
+	9	[212]	CALL     	4 2 2
+	10	[212]	CONCAT   	3 3 4
+	11	[212]	CALL     	2 2 1
+	12	[213]	GETTABUP 	2 1 -8	; _ENV "json"
+	13	[213]	GETTABLE 	2 2 -9	; "decode"
+	14	[213]	MOVE     	3 1
+	15	[213]	CALL     	2 2 2
+	16	[213]	SETTABUP 	0 -7 2	; self "m_achievementsProgress"
+	17	[214]	GETUPVAL 	2 2	; successCallback
+	18	[214]	TEST     	2 0
+	19	[214]	JMP      	0 17	; to 37
+	20	[215]	GETUPVAL 	2 2	; successCallback
+	21	[215]	CALL     	2 1 1
+	22	[216]	JMP      	0 14	; to 37
+	23	[218]	GETUPVAL 	2 0	; self
+	24	[218]	SELF     	2 2 -10	; "_RetryGetAchievements"
+	25	[218]	GETUPVAL 	4 3	; refresh
+	26	[218]	GETUPVAL 	5 2	; successCallback
+	27	[218]	GETUPVAL 	6 4	; retryTime
+	28	[218]	CALL     	2 5 1
+	29	[219]	GETTABUP 	2 1 -3	; _ENV "Log"
+	30	[219]	GETTABLE 	2 2 -11	; "Warning"
+	31	[219]	LOADK    	3 -12	; "[GooglePgsManager] GetAchievements failed:"
+	32	[219]	GETTABUP 	4 1 -6	; _ENV "tostring"
+	33	[219]	MOVE     	5 1
+	34	[219]	CALL     	4 2 2
+	35	[219]	CONCAT   	3 3 4
+	36	[219]	CALL     	2 2 1
+	37	[221]	RETURN   	0 1
+constants (12) for 00000206D45E4750:
+	1	"m_bGettingAchievements"
+	2	nil
+	3	"Log"
+	4	"Info"
+	5	"[GooglePgsManager] GetAchievements success:"
+	6	"tostring"
+	7	"m_achievementsProgress"
+	8	"json"
+	9	"decode"
+	10	"_RetryGetAchievements"
+	11	"Warning"
+	12	"[GooglePgsManager] GetAchievements failed:"
+locals (2) for 00000206D45E4750:
+	0	success	1	38
+	1	data	1	38
+upvalues (5) for 00000206D45E4750:
+	0	self	1	0
+	1	_ENV	0	0
+	2	successCallback	1	2
+	3	refresh	1	1
+	4	retryTime	1	3
+
+function <GooglePgsManager.lua:224,246> (38 instructions at 00000206D45E4AD0)
+4 params, 8 slots, 1 upvalue, 4 locals, 11 constants, 1 function
+	1	[225]	GETTABUP 	4 0 -1	; _ENV "Log"
+	2	[225]	GETTABLE 	4 4 -2	; "Info"
+	3	[225]	LOADK    	5 -3	; "GooglePgsManager:_RetryGetAchievements"
+	4	[225]	CALL     	4 2 1
+	5	[226]	GETTABUP 	4 0 -4	; _ENV "IsNil"
+	6	[226]	MOVE     	5 0
+	7	[226]	CALL     	4 2 2
+	8	[226]	TEST     	4 0
+	9	[226]	JMP      	0 5	; to 15
+	10	[227]	GETTABUP 	4 0 -1	; _ENV "Log"
+	11	[227]	GETTABLE 	4 4 -2	; "Info"
+	12	[227]	LOADK    	5 -5	; "GooglePgsManager:_RetryGetAchievements:self nil"
+	13	[227]	CALL     	4 2 1
+	14	[228]	RETURN   	0 1
+	15	[231]	GETTABUP 	4 0 -4	; _ENV "IsNil"
+	16	[231]	MOVE     	5 3
+	17	[231]	CALL     	4 2 2
+	18	[231]	TEST     	4 0
+	19	[231]	JMP      	0 5	; to 25
+	20	[232]	GETTABUP 	4 0 -1	; _ENV "Log"
+	21	[232]	GETTABLE 	4 4 -2	; "Info"
+	22	[232]	LOADK    	5 -6	; "retryTime nil"
+	23	[232]	CALL     	4 2 1
+	24	[233]	RETURN   	0 1
+	25	[236]	LT       	0 -7 3	; 3 -
+	26	[236]	JMP      	0 5	; to 32
+	27	[237]	GETTABUP 	4 0 -1	; _ENV "Log"
+	28	[237]	GETTABLE 	4 4 -2	; "Info"
+	29	[237]	LOADK    	5 -8	; "GooglePgsManager:_RetryGetAchievements >3"
+	30	[237]	CALL     	4 2 1
+	31	[238]	RETURN   	0 1
+	32	[241]	ADD      	3 3 -9	; - 1
+	33	[242]	GETTABUP 	4 0 -10	; _ENV "DelayExecuteFunc"
+	34	[245]	CLOSURE  	5 0	; 00000206D45E4CD0
+	35	[245]	MUL      	6 -11 3	; 2 -
+	36	[245]	MOVE     	7 0
+	37	[242]	CALL     	4 4 1
+	38	[246]	RETURN   	0 1
+constants (11) for 00000206D45E4AD0:
+	1	"Log"
+	2	"Info"
+	3	"GooglePgsManager:_RetryGetAchievements"
+	4	"IsNil"
+	5	"GooglePgsManager:_RetryGetAchievements:self nil"
+	6	"retryTime nil"
+	7	3
+	8	"GooglePgsManager:_RetryGetAchievements >3"
+	9	1
+	10	"DelayExecuteFunc"
+	11	2
+locals (4) for 00000206D45E4AD0:
+	0	self	1	39
+	1	refresh	1	39
+	2	successCallback	1	39
+	3	retryTime	1	39
+upvalues (1) for 00000206D45E4AD0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:242,245> (15 instructions at 00000206D45E4CD0)
+0 params, 5 slots, 5 upvalues, 0 locals, 5 constants, 0 functions
+	1	[243]	GETTABUP 	0 0 -1	; _ENV "Log"
+	2	[243]	GETTABLE 	0 0 -2	; "Info"
+	3	[243]	LOADK    	1 -3	; "GooglePgsManager:_RetryGetAchievements delay:"
+	4	[243]	GETTABUP 	2 0 -4	; _ENV "tostring"
+	5	[243]	GETUPVAL 	3 1	; retryTime
+	6	[243]	CALL     	2 2 2
+	7	[243]	CONCAT   	1 1 2
+	8	[243]	CALL     	0 2 1
+	9	[244]	GETUPVAL 	0 2	; self
+	10	[244]	SELF     	0 0 -5	; "GetAchievements"
+	11	[244]	GETUPVAL 	2 3	; refresh
+	12	[244]	GETUPVAL 	3 4	; successCallback
+	13	[244]	GETUPVAL 	4 1	; retryTime
+	14	[244]	CALL     	0 5 1
+	15	[245]	RETURN   	0 1
+constants (5) for 00000206D45E4CD0:
+	1	"Log"
+	2	"Info"
+	3	"GooglePgsManager:_RetryGetAchievements delay:"
+	4	"tostring"
+	5	"GetAchievements"
+locals (0) for 00000206D45E4CD0:
+upvalues (5) for 00000206D45E4CD0:
+	0	_ENV	0	0
+	1	retryTime	1	3
+	2	self	1	0
+	3	refresh	1	1
+	4	successCallback	1	2
+
+function <GooglePgsManager.lua:249,266> (38 instructions at 00000206D45E4850)
+1 param, 12 slots, 2 upvalues, 9 locals, 16 constants, 0 functions
+	1	[250]	GETTABLE 	1 0 -1	; "m_achievementsProgress"
+	2	[250]	EQ       	0 1 -2	; - nil
+	3	[250]	JMP      	0 3	; to 7
+	4	[251]	SELF     	1 0 -3	; "GetAchievements"
+	5	[251]	CALL     	1 2 1
+	6	[252]	RETURN   	0 1
+	7	[255]	GETTABUP 	1 0 -4	; _ENV "GM"
+	8	[255]	GETTABLE 	1 1 -5	; "MainTaskModel"
+	9	[255]	SELF     	1 1 -6	; "GetCurTaskDayAndId"
+	10	[255]	CALL     	1 2 3
+	11	[256]	GETTABUP 	3 0 -7	; _ENV "ipairs"
+	12	[256]	GETUPVAL 	4 1	; dayAchievements
+	13	[256]	CALL     	3 2 4
+	14	[256]	JMP      	0 21	; to 36
+	15	[257]	GETTABLE 	8 0 -1	; "m_achievementsProgress"
+	16	[257]	GETTABLE 	9 7 -8	; "id"
+	17	[257]	GETTABLE 	8 8 9
+	18	[258]	EQ       	1 8 -2	; - nil
+	19	[258]	JMP      	0 16	; to 36
+	20	[258]	GETTABLE 	9 8 -9	; "status"
+	21	[258]	GETTABUP 	10 0 -10	; _ENV "EAchievementStatus"
+	22	[258]	GETTABLE 	10 10 -11	; "UNLOCKED"
+	23	[258]	EQ       	1 9 10
+	24	[258]	JMP      	0 11	; to 36
+	25	[259]	GETTABLE 	9 7 -12	; "days"
+	26	[259]	LT       	0 9 1
+	27	[259]	JMP      	0 8	; to 36
+	28	[260]	GETTABUP 	9 0 -13	; _ENV "CSGooglePgsClient"
+	29	[260]	SELF     	9 9 -14	; "UnlockAchievement"
+	30	[260]	GETTABLE 	11 7 -8	; "id"
+	31	[260]	CALL     	9 3 1
+	32	[261]	GETTABUP 	9 0 -10	; _ENV "EAchievementStatus"
+	33	[261]	GETTABLE 	9 9 -11	; "UNLOCKED"
+	34	[261]	SETTABLE 	8 -9 9	; "status" -
+	35	[262]	SETTABLE 	0 -15 -16	; "m_bNeedRefreshAchievements" true
+	36	[256]	TFORCALL 	3 2
+	37	[256]	TFORLOOP 	5 -23	; to 15
+	38	[266]	RETURN   	0 1
+constants (16) for 00000206D45E4850:
+	1	"m_achievementsProgress"
+	2	nil
+	3	"GetAchievements"
+	4	"GM"
+	5	"MainTaskModel"
+	6	"GetCurTaskDayAndId"
+	7	"ipairs"
+	8	"id"
+	9	"status"
+	10	"EAchievementStatus"
+	11	"UNLOCKED"
+	12	"days"
+	13	"CSGooglePgsClient"
+	14	"UnlockAchievement"
+	15	"m_bNeedRefreshAchievements"
+	16	true
+locals (9) for 00000206D45E4850:
+	0	self	1	39
+	1	curDay	11	39
+	2	Id	11	39
+	3	(for generator)	14	38
+	4	(for state)	14	38
+	5	(for control)	14	38
+	6	i	15	36
+	7	item	15	36
+	8	progress	18	36
+upvalues (2) for 00000206D45E4850:
+	0	_ENV	0	0
+	1	dayAchievements	1	1
+
+function <GooglePgsManager.lua:269,288> (39 instructions at 00000206D45E5150)
+2 params, 11 slots, 2 upvalues, 8 locals, 14 constants, 0 functions
+	1	[270]	GETTABLE 	2 0 -1	; "m_achievementsProgress"
+	2	[270]	EQ       	0 2 -2	; - nil
+	3	[270]	JMP      	0 3	; to 7
+	4	[271]	SELF     	2 0 -3	; "GetAchievements"
+	5	[271]	CALL     	2 2 1
+	6	[272]	RETURN   	0 1
+	7	[274]	EQ       	1 1 -2	; - nil
+	8	[274]	JMP      	0 2	; to 11
+	9	[274]	LE       	0 1 -4	; - 0
+	10	[274]	JMP      	0 1	; to 12
+	11	[275]	RETURN   	0 1
+	12	[278]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	13	[278]	GETUPVAL 	3 1	; levelAchievements
+	14	[278]	CALL     	2 2 4
+	15	[278]	JMP      	0 21	; to 37
+	16	[279]	GETTABLE 	7 0 -1	; "m_achievementsProgress"
+	17	[279]	GETTABLE 	8 6 -6	; "id"
+	18	[279]	GETTABLE 	7 7 8
+	19	[280]	EQ       	1 7 -2	; - nil
+	20	[280]	JMP      	0 16	; to 37
+	21	[280]	GETTABLE 	8 7 -7	; "status"
+	22	[280]	GETTABUP 	9 0 -8	; _ENV "EAchievementStatus"
+	23	[280]	GETTABLE 	9 9 -9	; "UNLOCKED"
+	24	[280]	EQ       	1 8 9
+	25	[280]	JMP      	0 11	; to 37
+	26	[281]	GETTABLE 	8 6 -10	; "level"
+	27	[281]	LE       	0 8 1
+	28	[281]	JMP      	0 8	; to 37
+	29	[282]	GETTABUP 	8 0 -11	; _ENV "CSGooglePgsClient"
+	30	[282]	SELF     	8 8 -12	; "UnlockAchievement"
+	31	[282]	GETTABLE 	10 6 -6	; "id"
+	32	[282]	CALL     	8 3 1
+	33	[283]	GETTABUP 	8 0 -8	; _ENV "EAchievementStatus"
+	34	[283]	GETTABLE 	8 8 -9	; "UNLOCKED"
+	35	[283]	SETTABLE 	7 -7 8	; "status" -
+	36	[284]	SETTABLE 	0 -13 -14	; "m_bNeedRefreshAchievements" true
+	37	[278]	TFORCALL 	2 2
+	38	[278]	TFORLOOP 	4 -23	; to 16
+	39	[288]	RETURN   	0 1
+constants (14) for 00000206D45E5150:
+	1	"m_achievementsProgress"
+	2	nil
+	3	"GetAchievements"
+	4	0
+	5	"ipairs"
+	6	"id"
+	7	"status"
+	8	"EAchievementStatus"
+	9	"UNLOCKED"
+	10	"level"
+	11	"CSGooglePgsClient"
+	12	"UnlockAchievement"
+	13	"m_bNeedRefreshAchievements"
+	14	true
+locals (8) for 00000206D45E5150:
+	0	self	1	40
+	1	level	1	40
+	2	(for generator)	15	39
+	3	(for state)	15	39
+	4	(for control)	15	39
+	5	i	16	37
+	6	item	16	37
+	7	progress	19	37
+upvalues (2) for 00000206D45E5150:
+	0	_ENV	0	0
+	1	levelAchievements	1	2
+
+function <GooglePgsManager.lua:291,310> (39 instructions at 00000206D45E4C50)
+2 params, 11 slots, 2 upvalues, 8 locals, 14 constants, 0 functions
+	1	[292]	GETTABLE 	2 0 -1	; "m_achievementsProgress"
+	2	[292]	EQ       	0 2 -2	; - nil
+	3	[292]	JMP      	0 3	; to 7
+	4	[293]	SELF     	2 0 -3	; "GetAchievements"
+	5	[293]	CALL     	2 2 1
+	6	[294]	RETURN   	0 1
+	7	[296]	EQ       	1 1 -2	; - nil
+	8	[296]	JMP      	0 2	; to 11
+	9	[296]	LE       	0 1 -4	; - 0
+	10	[296]	JMP      	0 1	; to 12
+	11	[297]	RETURN   	0 1
+	12	[300]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	13	[300]	GETUPVAL 	3 1	; collectionAchievements
+	14	[300]	CALL     	2 2 4
+	15	[300]	JMP      	0 21	; to 37
+	16	[301]	GETTABLE 	7 0 -1	; "m_achievementsProgress"
+	17	[301]	GETTABLE 	8 6 -6	; "id"
+	18	[301]	GETTABLE 	7 7 8
+	19	[302]	EQ       	1 7 -2	; - nil
+	20	[302]	JMP      	0 16	; to 37
+	21	[302]	GETTABLE 	8 7 -7	; "status"
+	22	[302]	GETTABUP 	9 0 -8	; _ENV "EAchievementStatus"
+	23	[302]	GETTABLE 	9 9 -9	; "UNLOCKED"
+	24	[302]	EQ       	1 8 9
+	25	[302]	JMP      	0 11	; to 37
+	26	[303]	GETTABLE 	8 6 -10	; "count"
+	27	[303]	LE       	0 8 1
+	28	[303]	JMP      	0 8	; to 37
+	29	[304]	GETTABUP 	8 0 -11	; _ENV "CSGooglePgsClient"
+	30	[304]	SELF     	8 8 -12	; "UnlockAchievement"
+	31	[304]	GETTABLE 	10 6 -6	; "id"
+	32	[304]	CALL     	8 3 1
+	33	[305]	GETTABUP 	8 0 -8	; _ENV "EAchievementStatus"
+	34	[305]	GETTABLE 	8 8 -9	; "UNLOCKED"
+	35	[305]	SETTABLE 	7 -7 8	; "status" -
+	36	[306]	SETTABLE 	0 -13 -14	; "m_bNeedRefreshAchievements" true
+	37	[300]	TFORCALL 	2 2
+	38	[300]	TFORLOOP 	4 -23	; to 16
+	39	[310]	RETURN   	0 1
+constants (14) for 00000206D45E4C50:
+	1	"m_achievementsProgress"
+	2	nil
+	3	"GetAchievements"
+	4	0
+	5	"ipairs"
+	6	"id"
+	7	"status"
+	8	"EAchievementStatus"
+	9	"UNLOCKED"
+	10	"count"
+	11	"CSGooglePgsClient"
+	12	"UnlockAchievement"
+	13	"m_bNeedRefreshAchievements"
+	14	true
+locals (8) for 00000206D45E4C50:
+	0	self	1	40
+	1	count	1	40
+	2	(for generator)	15	39
+	3	(for state)	15	39
+	4	(for control)	15	39
+	5	i	16	37
+	6	item	16	37
+	7	progress	19	37
+upvalues (2) for 00000206D45E4C50:
+	0	_ENV	0	0
+	1	collectionAchievements	1	4
+
+function <GooglePgsManager.lua:313,329> (40 instructions at 00000206D45E48D0)
+3 params, 13 slots, 1 upvalue, 9 locals, 14 constants, 0 functions
+	1	[314]	GETTABLE 	3 0 -1	; "m_achievementsProgress"
+	2	[314]	EQ       	0 3 -2	; - nil
+	3	[314]	JMP      	0 3	; to 7
+	4	[315]	SELF     	3 0 -3	; "GetAchievements"
+	5	[315]	CALL     	3 2 1
+	6	[316]	RETURN   	0 1
+	7	[319]	GETTABUP 	3 0 -4	; _ENV "ipairs"
+	8	[319]	MOVE     	4 1
+	9	[319]	CALL     	3 2 4
+	10	[319]	JMP      	0 27	; to 38
+	11	[320]	GETTABLE 	8 0 -1	; "m_achievementsProgress"
+	12	[320]	GETTABLE 	8 8 7
+	13	[321]	EQ       	1 8 -2	; - nil
+	14	[321]	JMP      	0 23	; to 38
+	15	[321]	GETTABLE 	9 8 -5	; "status"
+	16	[321]	GETTABUP 	10 0 -6	; _ENV "EAchievementStatus"
+	17	[321]	GETTABLE 	10 10 -7	; "UNLOCKED"
+	18	[321]	EQ       	1 9 10
+	19	[321]	JMP      	0 18	; to 38
+	20	[322]	GETTABUP 	9 0 -8	; _ENV "CSGooglePgsClient"
+	21	[322]	SELF     	9 9 -9	; "IncreaseAchievement"
+	22	[322]	MOVE     	11 7
+	23	[322]	TESTSET  	12 2 1
+	24	[322]	JMP      	0 1	; to 26
+	25	[322]	LOADK    	12 -10	; 1
+	26	[322]	CALL     	9 4 1
+	27	[323]	GETTABLE 	9 8 -11	; "step"
+	28	[323]	TESTSET  	10 2 1
+	29	[323]	JMP      	0 1	; to 31
+	30	[323]	LOADK    	10 -10	; 1
+	31	[323]	ADD      	9 9 10
+	32	[323]	SETTABLE 	8 -11 9	; "step" -
+	33	[324]	GETTABLE 	9 8 -11	; "step"
+	34	[324]	GETTABLE 	10 8 -12	; "total"
+	35	[324]	LE       	0 10 9
+	36	[324]	JMP      	0 1	; to 38
+	37	[325]	SETTABLE 	0 -13 -14	; "m_bNeedRefreshAchievements" true
+	38	[319]	TFORCALL 	3 2
+	39	[319]	TFORLOOP 	5 -29	; to 11
+	40	[329]	RETURN   	0 1
+constants (14) for 00000206D45E48D0:
+	1	"m_achievementsProgress"
+	2	nil
+	3	"GetAchievements"
+	4	"ipairs"
+	5	"status"
+	6	"EAchievementStatus"
+	7	"UNLOCKED"
+	8	"CSGooglePgsClient"
+	9	"IncreaseAchievement"
+	10	1
+	11	"step"
+	12	"total"
+	13	"m_bNeedRefreshAchievements"
+	14	true
+locals (9) for 00000206D45E48D0:
+	0	self	1	41
+	1	achievementsKeys	1	41
+	2	step	1	41
+	3	(for generator)	10	40
+	4	(for state)	10	40
+	5	(for control)	10	40
+	6	i	11	38
+	7	achievementId	11	38
+	8	progress	13	38
+upvalues (1) for 00000206D45E48D0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:332,334> (4 instructions at 00000206D45E4D50)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[333]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[333]	SELF     	1 1 -2	; "ShowAchievementsUI"
+	3	[333]	CALL     	1 2 1
+	4	[334]	RETURN   	0 1
+constants (2) for 00000206D45E4D50:
+	1	"CSGooglePgsClient"
+	2	"ShowAchievementsUI"
+locals (1) for 00000206D45E4D50:
+	0	self	1	5
+upvalues (1) for 00000206D45E4D50:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:337,339> (5 instructions at 00000206D45E4950)
+2 params, 6 slots, 1 upvalue, 2 locals, 1 constant, 0 functions
+	1	[338]	SELF     	2 0 -1	; "IncreaseAchievements"
+	2	[338]	GETUPVAL 	4 0	; orderAchievementsKey
+	3	[338]	MOVE     	5 1
+	4	[338]	CALL     	2 4 1
+	5	[339]	RETURN   	0 1
+constants (1) for 00000206D45E4950:
+	1	"IncreaseAchievements"
+locals (2) for 00000206D45E4950:
+	0	self	1	6
+	1	step	1	6
+upvalues (1) for 00000206D45E4950:
+	0	orderAchievementsKey	1	0
+
+function <GooglePgsManager.lua:343,347> (10 instructions at 00000206D45E4DD0)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[344]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[344]	SELF     	1 1 -2	; "RecordGameEvent"
+	3	[344]	LOADK    	3 -3	; "orderComplete"
+	4	[344]	GETTABUP 	4 0 -4	; _ENV "json"
+	5	[344]	GETTABLE 	4 4 -5	; "encode"
+	6	[344]	NEWTABLE 	5 0 1
+	7	[345]	SETTABLE 	5 -6 -7	; "orderAmount" 1
+	8	[344]	CALL     	4 2 0
+	9	[344]	CALL     	1 0 1
+	10	[347]	RETURN   	0 1
+constants (7) for 00000206D45E4DD0:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"orderComplete"
+	4	"json"
+	5	"encode"
+	6	"orderAmount"
+	7	1
+locals (1) for 00000206D45E4DD0:
+	0	self	1	11
+upvalues (1) for 00000206D45E4DD0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:349,353> (10 instructions at 00000206D45E4ED0)
+2 params, 7 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[350]	GETTABUP 	2 0 -1	; _ENV "CSGooglePgsClient"
+	2	[350]	SELF     	2 2 -2	; "RecordGameEvent"
+	3	[350]	LOADK    	4 -3	; "coinAcquired"
+	4	[350]	GETTABUP 	5 0 -4	; _ENV "json"
+	5	[350]	GETTABLE 	5 5 -5	; "encode"
+	6	[350]	NEWTABLE 	6 0 1
+	7	[351]	SETTABLE 	6 -6 1	; "coinAmount" -
+	8	[350]	CALL     	5 2 0
+	9	[350]	CALL     	2 0 1
+	10	[353]	RETURN   	0 1
+constants (6) for 00000206D45E4ED0:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"coinAcquired"
+	4	"json"
+	5	"encode"
+	6	"coinAmount"
+locals (2) for 00000206D45E4ED0:
+	0	self	1	11
+	1	num	1	11
+upvalues (1) for 00000206D45E4ED0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:355,359> (10 instructions at 00000206D45E4FD0)
+2 params, 7 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[356]	GETTABUP 	2 0 -1	; _ENV "CSGooglePgsClient"
+	2	[356]	SELF     	2 2 -2	; "RecordGameEvent"
+	3	[356]	LOADK    	4 -3	; "smileAcquired"
+	4	[356]	GETTABUP 	5 0 -4	; _ENV "json"
+	5	[356]	GETTABLE 	5 5 -5	; "encode"
+	6	[356]	NEWTABLE 	6 0 1
+	7	[357]	SETTABLE 	6 -6 1	; "smileAmount" -
+	8	[356]	CALL     	5 2 0
+	9	[356]	CALL     	2 0 1
+	10	[359]	RETURN   	0 1
+constants (6) for 00000206D45E4FD0:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"smileAcquired"
+	4	"json"
+	5	"encode"
+	6	"smileAmount"
+locals (2) for 00000206D45E4FD0:
+	0	self	1	11
+	1	num	1	11
+upvalues (1) for 00000206D45E4FD0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:361,365> (10 instructions at 00000206D45E5050)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[362]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[362]	SELF     	1 1 -2	; "RecordGameEvent"
+	3	[362]	LOADK    	3 -3	; "mergeComplete"
+	4	[362]	GETTABUP 	4 0 -4	; _ENV "json"
+	5	[362]	GETTABLE 	4 4 -5	; "encode"
+	6	[362]	NEWTABLE 	5 0 1
+	7	[363]	SETTABLE 	5 -6 -7	; "mergeAmount" 1
+	8	[362]	CALL     	4 2 0
+	9	[362]	CALL     	1 0 1
+	10	[365]	RETURN   	0 1
+constants (7) for 00000206D45E5050:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"mergeComplete"
+	4	"json"
+	5	"encode"
+	6	"mergeAmount"
+	7	1
+locals (1) for 00000206D45E5050:
+	0	self	1	11
+upvalues (1) for 00000206D45E5050:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:367,371> (10 instructions at 00000206D45E51D0)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[368]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[368]	SELF     	1 1 -2	; "RecordGameEvent"
+	3	[368]	LOADK    	3 -3	; "albumComplete"
+	4	[368]	GETTABUP 	4 0 -4	; _ENV "json"
+	5	[368]	GETTABLE 	4 4 -5	; "encode"
+	6	[368]	NEWTABLE 	5 0 1
+	7	[369]	SETTABLE 	5 -6 -7	; "albumAmount" 1
+	8	[368]	CALL     	4 2 0
+	9	[368]	CALL     	1 0 1
+	10	[371]	RETURN   	0 1
+constants (7) for 00000206D45E51D0:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"albumComplete"
+	4	"json"
+	5	"encode"
+	6	"albumAmount"
+	7	1
+locals (1) for 00000206D45E51D0:
+	0	self	1	11
+upvalues (1) for 00000206D45E51D0:
+	0	_ENV	0	0
+
+function <GooglePgsManager.lua:373,377> (14 instructions at 00000206D45E5350)
+1 param, 8 slots, 1 upvalue, 1 local, 9 constants, 0 functions
+	1	[374]	GETTABUP 	1 0 -1	; _ENV "CSGooglePgsClient"
+	2	[374]	SELF     	1 1 -2	; "RecordGameEvent"
+	3	[374]	LOADK    	3 -3	; "progressUpdate"
+	4	[374]	GETTABUP 	4 0 -4	; _ENV "json"
+	5	[374]	GETTABLE 	4 4 -5	; "encode"
+	6	[374]	NEWTABLE 	5 0 1
+	7	[375]	GETTABUP 	6 0 -7	; _ENV "GM"
+	8	[375]	GETTABLE 	6 6 -8	; "LevelModel"
+	9	[375]	SELF     	6 6 -9	; "GetCurrentLevel"
+	10	[375]	CALL     	6 2 2
+	11	[375]	SETTABLE 	5 -6 6	; "currentProgress" -
+	12	[374]	CALL     	4 2 0
+	13	[374]	CALL     	1 0 1
+	14	[377]	RETURN   	0 1
+constants (9) for 00000206D45E5350:
+	1	"CSGooglePgsClient"
+	2	"RecordGameEvent"
+	3	"progressUpdate"
+	4	"json"
+	5	"encode"
+	6	"currentProgress"
+	7	"GM"
+	8	"LevelModel"
+	9	"GetCurrentLevel"
+locals (1) for 00000206D45E5350:
+	0	self	1	15
+upvalues (1) for 00000206D45E5350:
+	0	_ENV	0	0

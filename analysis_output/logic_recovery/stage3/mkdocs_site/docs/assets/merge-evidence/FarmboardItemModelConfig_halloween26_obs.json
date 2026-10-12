@@ -1,0 +1,409 @@
+[
+  {
+    "MergedType": "fb_halloween26_tar_2",
+    "Type": "fb_halloween26_tar_1"
+  },
+  {
+    "Type": "fb_halloween26_tar_2",
+    "MergedType": "fb_halloween26_tar_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "fb_halloween26_tar_3",
+    "MergedType": "fb_halloween26_tar_4",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "fb_halloween26_tar_4",
+    "MergedType": "fb_halloween26_tar_5",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_5",
+    "MergedType": "fb_halloween26_tar_6",
+    "Spread_Weight": [
+      "main_super_gold_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 1,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 1
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_6",
+    "MergedType": "fb_halloween26_tar_7",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 2,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 2
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_7",
+    "MergedType": "fb_halloween26_tar_8",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_2-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 2,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 2
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_8",
+    "MergedType": "fb_halloween26_tar_9",
+    "Spread_Weight": [
+      "main_super_gold_2-2",
+      "main_super_energy_2-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 3,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 3
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_9",
+    "MergedType": "fb_halloween26_tar_10",
+    "Spread_Weight": [
+      "main_super_gold_2-2",
+      "main_super_energy_2-2",
+      "main_super_gem_1-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_10",
+    "MergedType": "fb_halloween26_tar_11",
+    "Spread_Weight": [
+      "main_super_gold_2-3",
+      "main_super_energy_2-2",
+      "main_super_gem_2-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 7,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 7
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_11",
+    "MergedType": "fb_halloween26_tar_12",
+    "Spread_Weight": [
+      "main_super_gold_2-3",
+      "main_super_energy_2-3",
+      "main_super_gem_2-3",
+      "main_level_up_piece_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 10,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 10
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_tar_12",
+    "Spread_Weight": [
+      "main_super_gold_2-2",
+      "main_super_gold_3-3",
+      "main_super_energy_2-2",
+      "main_super_energy_3-3",
+      "main_super_gem_2-3",
+      "main_super_gem_3-1",
+      "main_pack_laser_5_1-1",
+      "fb_halloween26_gembox_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 16,
+    "Spread_ItemMaxNumber": 16,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 13
+  },
+  {
+    "MergedType": "fb_halloween26_byprod_2",
+    "Type": "fb_halloween26_byprod_1"
+  },
+  {
+    "Type": "fb_halloween26_byprod_2",
+    "MergedType": "fb_halloween26_byprod_3",
+    "BubbleChance": 0
+  },
+  {
+    "Type": "fb_halloween26_byprod_3",
+    "MergedType": "fb_halloween26_byprod_4",
+    "BubbleChance": 0
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_byprod_4",
+    "MergedType": "fb_halloween26_byprod_5",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 2,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 2
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_byprod_5",
+    "MergedType": "fb_halloween26_byprod_6",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_2-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 2,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 2
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_byprod_6",
+    "MergedType": "fb_halloween26_byprod_7",
+    "Spread_Weight": [
+      "main_super_gold_2-1",
+      "main_super_energy_2-1",
+      "main_super_gem_1-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 4,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 4
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_byprod_7",
+    "MergedType": "fb_halloween26_byprod_8",
+    "Spread_Weight": [
+      "main_super_gold_2-2",
+      "main_super_energy_2-2",
+      "main_super_gem_1-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_byprod_8",
+    "MergedType": "fb_halloween26_byprod_9",
+    "Spread_Weight": [
+      "main_super_gold_2-3",
+      "main_super_energy_2-3",
+      "main_super_gem_2-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 8,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 8
+  },
+  {
+    "Spread_Weight": [
+      "rb#level_down_piece_1-1",
+      "main_super_gold_2-2",
+      "main_super_gold_3-3",
+      "main_super_energy_2-2",
+      "main_super_energy_3-3",
+      "main_super_gem_2-3",
+      "main_super_gem_3-1"
+    ],
+    "Type": "fb_halloween26_byprod_9",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 15,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 15
+  },
+  {
+    "Type": "fb_halloween26_seed_1",
+    "CommandOperation": "FarmboardUnlockBlock",
+    "ProtectLevel": 2
+  },
+  {
+    "MergedType": "fb_halloween26_tool_2",
+    "Type": "fb_halloween26_tool_1"
+  },
+  {
+    "MergedType": "fb_halloween26_tool_3",
+    "Type": "fb_halloween26_tool_2"
+  },
+  {
+    "MergedType": "fb_halloween26_tool_4",
+    "Type": "fb_halloween26_tool_3"
+  },
+  {
+    "MergedType": "fb_halloween26_tool_5",
+    "Type": "fb_halloween26_tool_4"
+  },
+  {
+    "CommandOperation": "FarmboardActivateAnimal",
+    "Type": "fb_halloween26_tool_5"
+  },
+  {
+    "Spread_Weight": [
+      "main_super_energy_2-4",
+      "main_super_energy_3-2",
+      "fb_halloween26_gembox_1-1"
+    ],
+    "Type": "fb_halloween26_box1_1",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 7,
+    "Spread_WeightType": 2,
+    "Spread_ItemMaxNumber": 7,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 2
+  },
+  {
+    "Spread_Weight": [
+      "main_super_gold_2-4",
+      "main_super_gold_3-2",
+      "fb_halloween26_gembox_1-1",
+      "main_pack_laser_5_1-1"
+    ],
+    "Type": "fb_halloween26_box2_1",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 8,
+    "Spread_WeightType": 2,
+    "Spread_ItemMaxNumber": 8,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 2
+  },
+  {
+    "Spread_Weight": [
+      "fb_halloween26_byprod_1-4",
+      "fb_halloween26_tool_3-2"
+    ],
+    "Type": "fb_halloween26_box3_1",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 6,
+    "Spread_WeightType": 2,
+    "Spread_ItemMaxNumber": 6,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 2
+  },
+  {
+    "Spread_Weight": [
+      "fb_halloween26_tool_3-3",
+      "fb_halloween26_tool_1-4"
+    ],
+    "Type": "fb_halloween26_box4_1",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 7,
+    "Spread_WeightType": 2,
+    "Spread_ItemMaxNumber": 7,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 2
+  },
+  {
+    "BubbleChance": 0,
+    "Type": "fb_halloween26_gembox_1",
+    "MergedType": "fb_halloween26_gembox_2",
+    "ProtectLevel": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_gembox_2",
+    "MergedType": "fb_halloween26_gembox_3",
+    "BubbleChance": 0,
+    "ProtectLevel": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_gembox_3",
+    "MergedType": "fb_halloween26_gembox_4",
+    "Spread_Weight": [
+      "main_super_gold_2-4",
+      "main_super_gem_1-2",
+      "main_pack_laser_5_1-1"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 7,
+    "Spread_ItemMaxNumber": 7,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_gembox_4",
+    "MergedType": "fb_halloween26_gembox_5",
+    "Spread_Weight": [
+      "main_super_gold_2-4",
+      "main_super_gold_3-1",
+      "main_super_gem_1-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 1,
+    "Spread_StorageMaxNumber": 7,
+    "Spread_ItemMaxNumber": 7,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 6
+  },
+  {
+    "Spread_WeightType": 2,
+    "Type": "fb_halloween26_gembox_5",
+    "Spread_Weight": [
+      "main_super_gold_2-4",
+      "main_super_gold_3-2",
+      "main_super_gem_2-3",
+      "fb_halloween26_byprod_2-3",
+      "main_pack_laser_5_1-1",
+      "main_level_up_piece_1-2"
+    ],
+    "BubbleChance": 0,
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 15,
+    "Spread_ItemMaxNumber": 15,
+    "Spread_CostEnergy": 0,
+    "ProtectLevel": 6
+  },
+  {
+    "Spread_Weight": [
+      "main_level_up_piece_1-2",
+      "rb#main_smart_pot_a_1-1",
+      "rb#main_smart_pot_a_1-1",
+      "rb#main_smart_pot_a_1-1",
+      "rb#main_smart_pot_a_1-1",
+      "main_super_energy_4-4",
+      "main_super_gold_4-4",
+      "main_gem_super_3-4"
+    ],
+    "Type": "fb_halloween26_obs_tr_1",
+    "Spread_Auto": 0,
+    "Spread_StorageMaxNumber": 18,
+    "Spread_WeightType": 2,
+    "BubbleChance": 0,
+    "Spread_CostEnergy": 0,
+    "Spread_ItemMaxNumber": 18
+  }
+]

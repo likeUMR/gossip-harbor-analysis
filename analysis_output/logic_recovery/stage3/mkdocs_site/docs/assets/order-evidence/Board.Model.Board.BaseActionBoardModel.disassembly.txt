@@ -1,0 +1,1741 @@
+
+main <BaseActionBoardModel.lua:0,0> (90 instructions at 00000143AD04EF80)
+0+ params, 3 slots, 1 upvalue, 0 locals, 31 constants, 27 functions
+	1	[12]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[12]	NEWTABLE 	1 0 0
+	3	[12]	GETTABUP 	2 0 -3	; _ENV "BaseBoardModel"
+	4	[12]	CALL     	0 3 2
+	5	[12]	SETTABUP 	0 -1 0	; _ENV "BaseActionBoardModel"
+	6	[13]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	7	[13]	GETTABUP 	1 0 -1	; _ENV "BaseActionBoardModel"
+	8	[13]	SETTABLE 	0 -4 1	; "__index" -
+	9	[22]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	10	[24]	CLOSURE  	1 0	; 00000143AD04F000
+	11	[22]	SETTABLE 	0 -5 1	; "_LogCacheItems" -
+	12	[26]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	13	[33]	CLOSURE  	1 1	; 00000143AD051A00
+	14	[26]	SETTABLE 	0 -6 1	; "CacheItems" -
+	15	[38]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	16	[60]	CLOSURE  	1 2	; 00000143AD051BA0
+	17	[38]	SETTABLE 	0 -7 1	; "CacheItemsFromBoard" -
+	18	[64]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	19	[72]	CLOSURE  	1 3	; 00000143AD0537F0
+	20	[64]	SETTABLE 	0 -8 1	; "CacheItemFromSpread" -
+	21	[74]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	22	[117]	CLOSURE  	1 4	; 00000143AD053AB0
+	23	[74]	SETTABLE 	0 -9 1	; "PopCachedItem" -
+	24	[119]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	25	[124]	CLOSURE  	1 5	; 00000143AD04EC80
+	26	[119]	SETTABLE 	0 -10 1	; "_TryGetNewPosition" -
+	27	[126]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	28	[128]	CLOSURE  	1 6	; 00000143AD04ED70
+	29	[126]	SETTABLE 	0 -11 1	; "_PostProcessOnPopCachedItem" -
+	30	[131]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	31	[133]	CLOSURE  	1 7	; 00000143AD0547E0
+	32	[131]	SETTABLE 	0 -12 1	; "RemoveCachedItem" -
+	33	[136]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	34	[138]	CLOSURE  	1 8	; 00000143AD055070
+	35	[136]	SETTABLE 	0 -13 1	; "GetCachedItem" -
+	36	[140]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	37	[142]	CLOSURE  	1 9	; 00000143AD0550F0
+	38	[140]	SETTABLE 	0 -14 1	; "GetCachedItemCount" -
+	39	[144]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	40	[146]	CLOSURE  	1 10	; 00000143AD055F40
+	41	[144]	SETTABLE 	0 -15 1	; "GetAllCacheItems" -
+	42	[148]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	43	[150]	CLOSURE  	1 11	; 00000143AD055640
+	44	[148]	SETTABLE 	0 -16 1	; "GetItemCacheModel" -
+	45	[152]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	46	[154]	CLOSURE  	1 12	; 00000143AD055340
+	47	[152]	SETTABLE 	0 -17 1	; "GetCachedItems" -
+	48	[161]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	49	[163]	CLOSURE  	1 13	; 00000143AD055EC0
+	50	[161]	SETTABLE 	0 -18 1	; "SaveItemProperty" -
+	51	[166]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	52	[180]	CLOSURE  	1 14	; 00000143AD055E40
+	53	[166]	SETTABLE 	0 -19 1	; "_RemoveItemProperty" -
+	54	[191]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	55	[210]	CLOSURE  	1 15	; 00000143AD055C40
+	56	[191]	SETTABLE 	0 -20 1	; "GetCodeCountMap" -
+	57	[214]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	58	[221]	CLOSURE  	1 16	; 00000143AD0557C0
+	59	[214]	SETTABLE 	0 -21 1	; "CollectBoardPropertyRewardsWithoutConvert" -
+	60	[224]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	61	[332]	CLOSURE  	1 17	; 00000143AD055FC0
+	62	[224]	SETTABLE 	0 -22 1	; "_CalculateItemCollectRewards" -
+	63	[334]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	64	[336]	CLOSURE  	1 18	; 00000143AD055840
+	65	[334]	SETTABLE 	0 -23 1	; "GetPromptConfig" -
+	66	[344]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	67	[375]	CLOSURE  	1 19	; 00000143AD055540
+	68	[344]	SETTABLE 	0 -24 1	; "InitPaperBoxRewardConfig" -
+	69	[377]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	70	[379]	CLOSURE  	1 20	; 00000143AD055740
+	71	[377]	SETTABLE 	0 -25 1	; "GetPaperBoxRewardConfig" -
+	72	[381]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	73	[383]	CLOSURE  	1 21	; 00000143AD056040
+	74	[381]	SETTABLE 	0 -26 1	; "GetPaperBoxRewardVerticalTiles" -
+	75	[386]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	76	[388]	CLOSURE  	1 22	; 00000143AD0558C0
+	77	[386]	SETTABLE 	0 -27 1	; "GetPaperBoxRewardPosition" -
+	78	[390]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	79	[393]	CLOSURE  	1 23	; 00000143AD0560C0
+	80	[390]	SETTABLE 	0 -28 1	; "GetPaperBoxExtraReward" -
+	81	[395]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	82	[398]	CLOSURE  	1 24	; 00000143AD0551C0
+	83	[395]	SETTABLE 	0 -29 1	; "IsPaperBoxExtraRewardFirstAppear" -
+	84	[400]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	85	[403]	CLOSURE  	1 25	; 00000143AD055240
+	86	[400]	SETTABLE 	0 -30 1	; "SetPaperBoxExtraRewardAppeared" -
+	87	[405]	GETTABUP 	0 0 -1	; _ENV "BaseActionBoardModel"
+	88	[416]	CLOSURE  	1 26	; 00000143AD055BC0
+	89	[405]	SETTABLE 	0 -31 1	; "_PostProcessCollapseItem" -
+	90	[416]	RETURN   	0 1
+constants (31) for 00000143AD04EF80:
+	1	"BaseActionBoardModel"
+	2	"setmetatable"
+	3	"BaseBoardModel"
+	4	"__index"
+	5	"_LogCacheItems"
+	6	"CacheItems"
+	7	"CacheItemsFromBoard"
+	8	"CacheItemFromSpread"
+	9	"PopCachedItem"
+	10	"_TryGetNewPosition"
+	11	"_PostProcessOnPopCachedItem"
+	12	"RemoveCachedItem"
+	13	"GetCachedItem"
+	14	"GetCachedItemCount"
+	15	"GetAllCacheItems"
+	16	"GetItemCacheModel"
+	17	"GetCachedItems"
+	18	"SaveItemProperty"
+	19	"_RemoveItemProperty"
+	20	"GetCodeCountMap"
+	21	"CollectBoardPropertyRewardsWithoutConvert"
+	22	"_CalculateItemCollectRewards"
+	23	"GetPromptConfig"
+	24	"InitPaperBoxRewardConfig"
+	25	"GetPaperBoxRewardConfig"
+	26	"GetPaperBoxRewardVerticalTiles"
+	27	"GetPaperBoxRewardPosition"
+	28	"GetPaperBoxExtraReward"
+	29	"IsPaperBoxExtraRewardFirstAppear"
+	30	"SetPaperBoxExtraRewardAppeared"
+	31	"_PostProcessCollapseItem"
+locals (0) for 00000143AD04EF80:
+upvalues (1) for 00000143AD04EF80:
+	0	_ENV	1	0
+
+function <BaseActionBoardModel.lua:22,24> (1 instruction at 00000143AD04F000)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[24]	RETURN   	0 1
+constants (0) for 00000143AD04F000:
+locals (2) for 00000143AD04F000:
+	0	self	1	2
+	1	info	1	2
+upvalues (0) for 00000143AD04F000:
+
+function <BaseActionBoardModel.lua:26,33> (21 instructions at 00000143AD051A00)
+4 params, 9 slots, 1 upvalue, 4 locals, 11 constants, 0 functions
+	1	[27]	GETTABLE 	4 0 -1	; "m_itemCacheModel"
+	2	[27]	SELF     	4 4 -2	; "PushItems"
+	3	[27]	MOVE     	6 1
+	4	[27]	TESTSET  	7 2 1
+	5	[27]	JMP      	0 1	; to 7
+	6	[27]	GETTABLE 	7 0 -3	; "CacheItemType"
+	7	[27]	MOVE     	8 3
+	8	[27]	CALL     	4 5 1
+	9	[28]	SELF     	4 0 -4	; "_LogCacheItems"
+	10	[28]	NEWTABLE 	6 0 1
+	11	[29]	SETTABLE 	6 -5 1	; "items" -
+	12	[28]	CALL     	4 3 1
+	13	[32]	GETTABUP 	4 0 -6	; _ENV "EventDispatcher"
+	14	[32]	GETTABLE 	4 4 -7	; "DispatchEvent"
+	15	[32]	GETTABUP 	5 0 -8	; _ENV "EEventType"
+	16	[32]	GETTABLE 	5 5 -9	; "CacheItems"
+	17	[32]	NEWTABLE 	6 0 1
+	18	[32]	GETTABLE 	7 0 -11	; "BoardType"
+	19	[32]	SETTABLE 	6 -10 7	; "boardType" -
+	20	[32]	CALL     	4 3 1
+	21	[33]	RETURN   	0 1
+constants (11) for 00000143AD051A00:
+	1	"m_itemCacheModel"
+	2	"PushItems"
+	3	"CacheItemType"
+	4	"_LogCacheItems"
+	5	"items"
+	6	"EventDispatcher"
+	7	"DispatchEvent"
+	8	"EEventType"
+	9	"CacheItems"
+	10	"boardType"
+	11	"BoardType"
+locals (4) for 00000143AD051A00:
+	0	self	1	22
+	1	cachedItemCodes	1	22
+	2	type	1	22
+	3	mapCacheItemId	1	22
+upvalues (1) for 00000143AD051A00:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:38,60> (64 instructions at 00000143AD051BA0)
+3 params, 17 slots, 1 upvalue, 12 locals, 28 constants, 0 functions
+	1	[39]	NEWTABLE 	3 0 0
+	2	[40]	NEWTABLE 	4 0 0
+	3	[41]	GETTABUP 	5 0 -1	; _ENV "ipairs"
+	4	[41]	MOVE     	6 1
+	5	[41]	CALL     	5 2 4
+	6	[41]	JMP      	0 34	; to 41
+	7	[42]	SELF     	10 9 -2	; "GetId"
+	8	[42]	CALL     	10 2 2
+	9	[43]	GETTABLE 	11 0 -3	; "m_itemManager"
+	10	[43]	SELF     	11 11 -4	; "GetItem"
+	11	[43]	MOVE     	13 10
+	12	[43]	CALL     	11 3 2
+	13	[43]	EQ       	0 11 9
+	14	[43]	JMP      	0 26	; to 41
+	15	[44]	SELF     	11 9 -5	; "GetCode"
+	16	[44]	CALL     	11 2 2
+	17	[45]	LEN      	12 4
+	18	[45]	ADD      	12 12 -6	; - 1
+	19	[45]	SELF     	13 9 -5	; "GetCode"
+	20	[45]	CALL     	13 2 2
+	21	[45]	SETTABLE 	4 12 13
+	22	[46]	LEN      	12 4
+	23	[46]	SETTABLE 	3 12 10
+	24	[47]	SELF     	12 0 -7	; "_SetItem"
+	25	[47]	SELF     	14 9 -8	; "GetPosition"
+	26	[47]	CALL     	14 2 2
+	27	[47]	LOADNIL  	15 0
+	28	[47]	LOADBOOL 	16 0 0
+	29	[47]	CALL     	12 5 1
+	30	[49]	GETTABUP 	12 0 -9	; _ENV "GM"
+	31	[49]	GETTABLE 	12 12 -10	; "BIManager"
+	32	[49]	SELF     	12 12 -11	; "LogAction"
+	33	[49]	GETTABUP 	14 0 -12	; _ENV "EBIType"
+	34	[49]	GETTABLE 	14 14 -13	; "CacheItemFromBoard"
+	35	[49]	NEWTABLE 	15 0 3
+	36	[49]	SETTABLE 	15 -14 11	; "code" -
+	37	[49]	SETTABLE 	15 -15 10	; "id" -
+	38	[49]	GETTABLE 	16 0 -17	; "BoardType"
+	39	[49]	SETTABLE 	15 -16 16	; "boardType" -
+	40	[49]	CALL     	12 4 1
+	41	[41]	TFORCALL 	5 2
+	42	[41]	TFORLOOP 	7 -36	; to 7
+	43	[52]	GETTABLE 	5 0 -18	; "m_itemCacheModel"
+	44	[52]	SELF     	5 5 -19	; "PushItems"
+	45	[52]	MOVE     	7 4
+	46	[52]	TESTSET  	8 2 1
+	47	[52]	JMP      	0 1	; to 49
+	48	[52]	GETTABLE 	8 0 -20	; "CacheItemType"
+	49	[52]	MOVE     	9 3
+	50	[52]	CALL     	5 5 1
+	51	[54]	SELF     	5 0 -21	; "_LogCacheItems"
+	52	[54]	NEWTABLE 	7 0 2
+	53	[55]	SETTABLE 	7 -22 4	; "items" -
+	54	[56]	SETTABLE 	7 -23 -24	; "fromb" true
+	55	[54]	CALL     	5 3 1
+	56	[59]	GETTABUP 	5 0 -25	; _ENV "EventDispatcher"
+	57	[59]	GETTABLE 	5 5 -26	; "DispatchEvent"
+	58	[59]	GETTABUP 	6 0 -27	; _ENV "EEventType"
+	59	[59]	GETTABLE 	6 6 -28	; "CacheItems"
+	60	[59]	NEWTABLE 	7 0 1
+	61	[59]	GETTABLE 	8 0 -17	; "BoardType"
+	62	[59]	SETTABLE 	7 -16 8	; "boardType" -
+	63	[59]	CALL     	5 3 1
+	64	[60]	RETURN   	0 1
+constants (28) for 00000143AD051BA0:
+	1	"ipairs"
+	2	"GetId"
+	3	"m_itemManager"
+	4	"GetItem"
+	5	"GetCode"
+	6	1
+	7	"_SetItem"
+	8	"GetPosition"
+	9	"GM"
+	10	"BIManager"
+	11	"LogAction"
+	12	"EBIType"
+	13	"CacheItemFromBoard"
+	14	"code"
+	15	"id"
+	16	"boardType"
+	17	"BoardType"
+	18	"m_itemCacheModel"
+	19	"PushItems"
+	20	"CacheItemType"
+	21	"_LogCacheItems"
+	22	"items"
+	23	"fromb"
+	24	true
+	25	"EventDispatcher"
+	26	"DispatchEvent"
+	27	"EEventType"
+	28	"CacheItems"
+locals (12) for 00000143AD051BA0:
+	0	self	1	65
+	1	items	1	65
+	2	type	1	65
+	3	mapCacheItemId	2	65
+	4	itemCodes	3	65
+	5	(for generator)	6	43
+	6	(for state)	6	43
+	7	(for control)	6	43
+	8	i	7	41
+	9	item	7	41
+	10	id	9	41
+	11	code	17	41
+upvalues (1) for 00000143AD051BA0:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:64,72> (27 instructions at 00000143AD0537F0)
+3 params, 7 slots, 1 upvalue, 3 locals, 19 constants, 0 functions
+	1	[65]	GETTABLE 	3 0 -1	; "m_itemCacheModel"
+	2	[65]	SELF     	3 3 -2	; "PushItems"
+	3	[65]	MOVE     	5 1
+	4	[65]	GETTABLE 	6 0 -3	; "CacheItemType"
+	5	[65]	CALL     	3 4 1
+	6	[66]	SELF     	3 0 -4	; "_LogCacheItems"
+	7	[66]	NEWTABLE 	5 0 2
+	8	[67]	SETTABLE 	5 -5 1	; "items" -
+	9	[68]	SETTABLE 	5 -6 -7	; "autoSpread" true
+	10	[66]	CALL     	3 3 1
+	11	[70]	GETTABLE 	3 0 -8	; "event"
+	12	[70]	SELF     	3 3 -9	; "Call"
+	13	[70]	GETTABUP 	5 0 -10	; _ENV "BoardEventType"
+	14	[70]	GETTABLE 	5 5 -11	; "CacheItemFromSpread"
+	15	[70]	NEWTABLE 	6 0 2
+	16	[70]	SETTABLE 	6 -12 2	; "Source" -
+	17	[70]	SETTABLE 	6 -13 1	; "CachedItems" -
+	18	[70]	CALL     	3 4 1
+	19	[71]	GETTABUP 	3 0 -14	; _ENV "EventDispatcher"
+	20	[71]	GETTABLE 	3 3 -15	; "DispatchEvent"
+	21	[71]	GETTABUP 	4 0 -16	; _ENV "EEventType"
+	22	[71]	GETTABLE 	4 4 -17	; "CacheItems"
+	23	[71]	NEWTABLE 	5 0 1
+	24	[71]	GETTABLE 	6 0 -19	; "BoardType"
+	25	[71]	SETTABLE 	5 -18 6	; "boardType" -
+	26	[71]	CALL     	3 3 1
+	27	[72]	RETURN   	0 1
+constants (19) for 00000143AD0537F0:
+	1	"m_itemCacheModel"
+	2	"PushItems"
+	3	"CacheItemType"
+	4	"_LogCacheItems"
+	5	"items"
+	6	"autoSpread"
+	7	true
+	8	"event"
+	9	"Call"
+	10	"BoardEventType"
+	11	"CacheItemFromSpread"
+	12	"Source"
+	13	"CachedItems"
+	14	"EventDispatcher"
+	15	"DispatchEvent"
+	16	"EEventType"
+	17	"CacheItems"
+	18	"boardType"
+	19	"BoardType"
+locals (3) for 00000143AD0537F0:
+	0	self	1	28
+	1	cachedItemCodes	1	28
+	2	spreadItem	1	28
+upvalues (1) for 00000143AD0537F0:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:74,117> (132 instructions at 00000143AD053AB0)
+1 param, 15 slots, 1 upvalue, 6 locals, 39 constants, 0 functions
+	1	[75]	SELF     	1 0 -1	; "IsBoardFull"
+	2	[75]	CALL     	1 2 2
+	3	[75]	TEST     	1 0
+	4	[75]	JMP      	0 2	; to 7
+	5	[76]	LOADBOOL 	1 0 0
+	6	[76]	RETURN   	1 2
+	7	[79]	SELF     	1 0 -2	; "FindEmptyPositionInValidOrder"
+	8	[79]	CALL     	1 2 2
+	9	[80]	EQ       	0 1 -3	; - nil
+	10	[80]	JMP      	0 2	; to 13
+	11	[81]	LOADBOOL 	2 0 0
+	12	[81]	RETURN   	2 2
+	13	[84]	GETTABLE 	2 0 -4	; "m_itemCacheModel"
+	14	[84]	SELF     	2 2 -5	; "PopItem"
+	15	[84]	CALL     	2 2 3
+	16	[85]	GETTABUP 	4 0 -6	; _ENV "StringUtil"
+	17	[85]	GETTABLE 	4 4 -7	; "IsNilOrEmpty"
+	18	[85]	MOVE     	5 2
+	19	[85]	CALL     	4 2 2
+	20	[85]	TEST     	4 0
+	21	[85]	JMP      	0 7	; to 29
+	22	[86]	GETTABUP 	4 0 -8	; _ENV "Log"
+	23	[86]	GETTABLE 	4 4 -9	; "Assert"
+	24	[86]	LOADBOOL 	5 0 0
+	25	[86]	LOADK    	6 -10	; "code\228\184\141\232\131\189\228\184\186\231\169\186"
+	26	[86]	CALL     	4 3 1
+	27	[87]	LOADBOOL 	4 0 0
+	28	[87]	RETURN   	4 2
+	29	[90]	LOADNIL  	4 0
+	30	[91]	GETTABUP 	5 0 -6	; _ENV "StringUtil"
+	31	[91]	GETTABLE 	5 5 -7	; "IsNilOrEmpty"
+	32	[91]	MOVE     	6 3
+	33	[91]	CALL     	5 2 2
+	34	[91]	TEST     	5 1
+	35	[91]	JMP      	0 66	; to 102
+	36	[92]	GETTABLE 	5 0 -11	; "m_itemManager"
+	37	[92]	SELF     	5 5 -12	; "GetItem"
+	38	[92]	MOVE     	7 3
+	39	[92]	CALL     	5 3 2
+	40	[92]	MOVE     	4 5
+	41	[93]	EQ       	1 4 -3	; - nil
+	42	[93]	JMP      	0 4	; to 47
+	43	[93]	SELF     	5 4 -13	; "GetCode"
+	44	[93]	CALL     	5 2 2
+	45	[93]	EQ       	1 5 2
+	46	[93]	JMP      	0 36	; to 83
+	47	[94]	GETTABUP 	5 0 -14	; _ENV "GM"
+	48	[94]	GETTABLE 	5 5 -15	; "BIManager"
+	49	[94]	SELF     	5 5 -16	; "LogErrorInfo"
+	50	[94]	GETTABUP 	7 0 -17	; _ENV "EBIType"
+	51	[94]	GETTABLE 	7 7 -18	; "CacheItemIdDiffer"
+	52	[94]	LOADK    	8 -19	; "code:"
+	53	[94]	GETTABUP 	9 0 -20	; _ENV "tostring"
+	54	[94]	MOVE     	10 2
+	55	[94]	CALL     	9 2 2
+	56	[94]	LOADK    	10 -21	; " cache:"
+	57	[94]	GETTABUP 	11 0 -20	; _ENV "tostring"
+	58	[94]	EQ       	1 4 -3	; - nil
+	59	[94]	JMP      	0 4	; to 64
+	60	[94]	SELF     	12 4 -13	; "GetCode"
+	61	[94]	CALL     	12 2 2
+	62	[94]	TEST     	12 1
+	63	[94]	JMP      	0 1	; to 65
+	64	[94]	LOADNIL  	12 0
+	65	[94]	CALL     	11 2 2
+	66	[94]	LOADK    	12 -22	; " boardType:"
+	67	[94]	GETTABUP 	13 0 -20	; _ENV "tostring"
+	68	[94]	GETTABLE 	14 0 -23	; "BoardType"
+	69	[94]	CALL     	13 2 2
+	70	[94]	CONCAT   	8 8 13
+	71	[94]	CALL     	5 4 1
+	72	[95]	SELF     	5 0 -24	; "_TryGetNewPosition"
+	73	[95]	MOVE     	7 2
+	74	[95]	CALL     	5 3 2
+	75	[95]	TESTSET  	1 5 1
+	76	[95]	JMP      	0 0	; to 77
+	77	[96]	SELF     	5 0 -25	; "GenerateItem"
+	78	[96]	MOVE     	7 1
+	79	[96]	MOVE     	8 2
+	80	[96]	CALL     	5 4 2
+	81	[96]	MOVE     	4 5
+	82	[96]	JMP      	0 29	; to 112
+	83	[98]	SELF     	5 0 -24	; "_TryGetNewPosition"
+	84	[98]	SELF     	7 4 -26	; "GetType"
+	85	[98]	CALL     	7 2 0
+	86	[98]	CALL     	5 0 2
+	87	[98]	TESTSET  	1 5 1
+	88	[98]	JMP      	0 0	; to 89
+	89	[99]	SELF     	5 0 -27	; "_SetItem"
+	90	[99]	MOVE     	7 1
+	91	[99]	MOVE     	8 4
+	92	[99]	CALL     	5 4 1
+	93	[100]	SELF     	5 4 -28	; "SetPosition"
+	94	[100]	MOVE     	7 1
+	95	[100]	CALL     	5 3 1
+	96	[101]	GETTABLE 	5 0 -29	; "m_mergeAllIgnoredItems"
+	97	[101]	EQ       	1 5 -3	; - nil
+	98	[101]	JMP      	0 13	; to 112
+	99	[102]	GETTABLE 	5 0 -29	; "m_mergeAllIgnoredItems"
+	100	[102]	SETTABLE 	5 4 -30	; - true
+	101	[104]	JMP      	0 10	; to 112
+	102	[106]	SELF     	5 0 -24	; "_TryGetNewPosition"
+	103	[106]	MOVE     	7 2
+	104	[106]	CALL     	5 3 2
+	105	[106]	TESTSET  	1 5 1
+	106	[106]	JMP      	0 0	; to 107
+	107	[107]	SELF     	5 0 -25	; "GenerateItem"
+	108	[107]	MOVE     	7 1
+	109	[107]	MOVE     	8 2
+	110	[107]	CALL     	5 4 2
+	111	[107]	MOVE     	4 5
+	112	[110]	NEWTABLE 	5 0 1
+	113	[110]	SETTABLE 	5 -31 4	; "New" -
+	114	[111]	GETTABUP 	6 0 -32	; _ENV "EventDispatcher"
+	115	[111]	GETTABLE 	6 6 -33	; "DispatchEvent"
+	116	[111]	GETTABUP 	7 0 -34	; _ENV "EEventType"
+	117	[111]	GETTABLE 	7 7 -35	; "PopCachedItem"
+	118	[111]	MOVE     	8 5
+	119	[111]	CALL     	6 3 1
+	120	[112]	GETTABLE 	6 0 -36	; "event"
+	121	[112]	SELF     	6 6 -37	; "Call"
+	122	[112]	GETTABUP 	8 0 -38	; _ENV "BoardEventType"
+	123	[112]	GETTABLE 	8 8 -35	; "PopCachedItem"
+	124	[112]	MOVE     	9 5
+	125	[112]	CALL     	6 4 1
+	126	[114]	SELF     	6 0 -39	; "_PostProcessOnPopCachedItem"
+	127	[114]	MOVE     	8 2
+	128	[114]	MOVE     	9 3
+	129	[114]	CALL     	6 4 1
+	130	[116]	LOADBOOL 	6 1 0
+	131	[116]	RETURN   	6 2
+	132	[117]	RETURN   	0 1
+constants (39) for 00000143AD053AB0:
+	1	"IsBoardFull"
+	2	"FindEmptyPositionInValidOrder"
+	3	nil
+	4	"m_itemCacheModel"
+	5	"PopItem"
+	6	"StringUtil"
+	7	"IsNilOrEmpty"
+	8	"Log"
+	9	"Assert"
+	10	"code\228\184\141\232\131\189\228\184\186\231\169\186"
+	11	"m_itemManager"
+	12	"GetItem"
+	13	"GetCode"
+	14	"GM"
+	15	"BIManager"
+	16	"LogErrorInfo"
+	17	"EBIType"
+	18	"CacheItemIdDiffer"
+	19	"code:"
+	20	"tostring"
+	21	" cache:"
+	22	" boardType:"
+	23	"BoardType"
+	24	"_TryGetNewPosition"
+	25	"GenerateItem"
+	26	"GetType"
+	27	"_SetItem"
+	28	"SetPosition"
+	29	"m_mergeAllIgnoredItems"
+	30	true
+	31	"New"
+	32	"EventDispatcher"
+	33	"DispatchEvent"
+	34	"EEventType"
+	35	"PopCachedItem"
+	36	"event"
+	37	"Call"
+	38	"BoardEventType"
+	39	"_PostProcessOnPopCachedItem"
+locals (6) for 00000143AD053AB0:
+	0	self	1	133
+	1	position	9	133
+	2	code	16	133
+	3	cachedItemId	16	133
+	4	newItem	30	133
+	5	message	114	133
+upvalues (1) for 00000143AD053AB0:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:119,124> (13 instructions at 00000143AD04EC80)
+2 params, 5 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[121]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[121]	GETTABLE 	2 2 -2	; "ConfigModel"
+	3	[121]	SELF     	2 2 -3	; "IsServerControlOpen"
+	4	[121]	GETTABUP 	4 0 -4	; _ENV "EGeneralConfType"
+	5	[121]	GETTABLE 	4 4 -5	; "ItemLandOpt"
+	6	[121]	CALL     	2 3 2
+	7	[121]	TEST     	2 0
+	8	[121]	JMP      	0 4	; to 13
+	9	[122]	SELF     	2 0 -6	; "FindEmptySpreadPosition"
+	10	[122]	MOVE     	4 1
+	11	[122]	TAILCALL 	2 3 0
+	12	[122]	RETURN   	2 0
+	13	[124]	RETURN   	0 1
+constants (6) for 00000143AD04EC80:
+	1	"GM"
+	2	"ConfigModel"
+	3	"IsServerControlOpen"
+	4	"EGeneralConfType"
+	5	"ItemLandOpt"
+	6	"FindEmptySpreadPosition"
+locals (2) for 00000143AD04EC80:
+	0	self	1	14
+	1	newItemCode	1	14
+upvalues (1) for 00000143AD04EC80:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:126,128> (1 instruction at 00000143AD04ED70)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[128]	RETURN   	0 1
+constants (0) for 00000143AD04ED70:
+locals (1) for 00000143AD04ED70:
+	0	self	1	2
+upvalues (0) for 00000143AD04ED70:
+
+function <BaseActionBoardModel.lua:131,133> (6 instructions at 00000143AD0547E0)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[132]	GETTABLE 	2 0 -1	; "m_itemCacheModel"
+	2	[132]	SELF     	2 2 -2	; "RemoveItem"
+	3	[132]	MOVE     	4 1
+	4	[132]	TAILCALL 	2 3 0
+	5	[132]	RETURN   	2 0
+	6	[133]	RETURN   	0 1
+constants (2) for 00000143AD0547E0:
+	1	"m_itemCacheModel"
+	2	"RemoveItem"
+locals (2) for 00000143AD0547E0:
+	0	self	1	7
+	1	index	1	7
+upvalues (0) for 00000143AD0547E0:
+
+function <BaseActionBoardModel.lua:136,138> (6 instructions at 00000143AD055070)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[137]	GETTABLE 	2 0 -1	; "m_itemCacheModel"
+	2	[137]	SELF     	2 2 -2	; "GetItem"
+	3	[137]	MOVE     	4 1
+	4	[137]	TAILCALL 	2 3 0
+	5	[137]	RETURN   	2 0
+	6	[138]	RETURN   	0 1
+constants (2) for 00000143AD055070:
+	1	"m_itemCacheModel"
+	2	"GetItem"
+locals (2) for 00000143AD055070:
+	0	self	1	7
+	1	index	1	7
+upvalues (0) for 00000143AD055070:
+
+function <BaseActionBoardModel.lua:140,142> (5 instructions at 00000143AD0550F0)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[141]	GETTABLE 	1 0 -1	; "m_itemCacheModel"
+	2	[141]	SELF     	1 1 -2	; "GetItemCount"
+	3	[141]	TAILCALL 	1 2 0
+	4	[141]	RETURN   	1 0
+	5	[142]	RETURN   	0 1
+constants (2) for 00000143AD0550F0:
+	1	"m_itemCacheModel"
+	2	"GetItemCount"
+locals (1) for 00000143AD0550F0:
+	0	self	1	6
+upvalues (0) for 00000143AD0550F0:
+
+function <BaseActionBoardModel.lua:144,146> (5 instructions at 00000143AD055F40)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[145]	GETTABLE 	1 0 -1	; "m_itemCacheModel"
+	2	[145]	SELF     	1 1 -2	; "GetAllCacheItems"
+	3	[145]	TAILCALL 	1 2 0
+	4	[145]	RETURN   	1 0
+	5	[146]	RETURN   	0 1
+constants (2) for 00000143AD055F40:
+	1	"m_itemCacheModel"
+	2	"GetAllCacheItems"
+locals (1) for 00000143AD055F40:
+	0	self	1	6
+upvalues (0) for 00000143AD055F40:
+
+function <BaseActionBoardModel.lua:148,150> (3 instructions at 00000143AD055640)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[149]	GETTABLE 	1 0 -1	; "m_itemCacheModel"
+	2	[149]	RETURN   	1 2
+	3	[150]	RETURN   	0 1
+constants (1) for 00000143AD055640:
+	1	"m_itemCacheModel"
+locals (1) for 00000143AD055640:
+	0	self	1	4
+upvalues (0) for 00000143AD055640:
+
+function <BaseActionBoardModel.lua:152,154> (5 instructions at 00000143AD055340)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[153]	GETTABLE 	1 0 -1	; "m_itemCacheModel"
+	2	[153]	SELF     	1 1 -2	; "GetAllCachedItemsWithSort"
+	3	[153]	TAILCALL 	1 2 0
+	4	[153]	RETURN   	1 0
+	5	[154]	RETURN   	0 1
+constants (2) for 00000143AD055340:
+	1	"m_itemCacheModel"
+	2	"GetAllCachedItemsWithSort"
+locals (1) for 00000143AD055340:
+	0	self	1	6
+upvalues (0) for 00000143AD055340:
+
+function <BaseActionBoardModel.lua:161,163> (5 instructions at 00000143AD055EC0)
+2 params, 5 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[162]	GETTABLE 	2 0 -1	; "m_itemManager"
+	2	[162]	SELF     	2 2 -2	; "SetItem"
+	3	[162]	MOVE     	4 1
+	4	[162]	CALL     	2 3 1
+	5	[163]	RETURN   	0 1
+constants (2) for 00000143AD055EC0:
+	1	"m_itemManager"
+	2	"SetItem"
+locals (2) for 00000143AD055EC0:
+	0	self	1	6
+	1	item	1	6
+upvalues (0) for 00000143AD055EC0:
+
+function <BaseActionBoardModel.lua:166,180> (38 instructions at 00000143AD055E40)
+2 params, 10 slots, 1 upvalue, 3 locals, 14 constants, 0 functions
+	1	[168]	EQ       	0 1 -1	; - nil
+	2	[168]	JMP      	0 5	; to 8
+	3	[169]	GETTABUP 	2 0 -2	; _ENV "Log"
+	4	[169]	GETTABLE 	2 2 -3	; "Error"
+	5	[169]	LOADK    	3 -4	; "remove item is nil"
+	6	[169]	CALL     	2 2 1
+	7	[170]	RETURN   	0 1
+	8	[173]	SELF     	2 1 -5	; "GetPosition"
+	9	[173]	CALL     	2 2 2
+	10	[175]	EQ       	1 2 -1	; - nil
+	11	[175]	JMP      	0 21	; to 33
+	12	[175]	GETTABLE 	3 0 -6	; "m_itemLayerModel"
+	13	[175]	SELF     	3 3 -7	; "GetItem"
+	14	[175]	SELF     	5 1 -5	; "GetPosition"
+	15	[175]	CALL     	5 2 0
+	16	[175]	CALL     	3 0 2
+	17	[175]	EQ       	0 3 1
+	18	[175]	JMP      	0 14	; to 33
+	19	[176]	GETTABUP 	3 0 -2	; _ENV "Log"
+	20	[176]	GETTABLE 	3 3 -3	; "Error"
+	21	[176]	LOADK    	4 -8	; "Should remove from ItemLayerModel BEFORE remove from ItemManager. type:"
+	22	[176]	GETTABUP 	5 0 -9	; _ENV "tostring"
+	23	[176]	SELF     	6 1 -10	; "GetType"
+	24	[176]	CALL     	6 2 0
+	25	[176]	CALL     	5 0 2
+	26	[176]	LOADK    	6 -11	; " pos:"
+	27	[176]	GETTABUP 	7 0 -9	; _ENV "tostring"
+	28	[176]	SELF     	8 1 -5	; "GetPosition"
+	29	[176]	CALL     	8 2 0
+	30	[176]	CALL     	7 0 2
+	31	[176]	CONCAT   	4 4 7
+	32	[176]	CALL     	3 2 1
+	33	[179]	GETTABLE 	3 0 -12	; "m_itemManager"
+	34	[179]	SELF     	3 3 -13	; "RemoveItem"
+	35	[179]	SELF     	5 1 -14	; "GetId"
+	36	[179]	CALL     	5 2 0
+	37	[179]	CALL     	3 0 1
+	38	[180]	RETURN   	0 1
+constants (14) for 00000143AD055E40:
+	1	nil
+	2	"Log"
+	3	"Error"
+	4	"remove item is nil"
+	5	"GetPosition"
+	6	"m_itemLayerModel"
+	7	"GetItem"
+	8	"Should remove from ItemLayerModel BEFORE remove from ItemManager. type:"
+	9	"tostring"
+	10	"GetType"
+	11	" pos:"
+	12	"m_itemManager"
+	13	"RemoveItem"
+	14	"GetId"
+locals (3) for 00000143AD055E40:
+	0	self	1	39
+	1	item	1	39
+	2	position	10	39
+upvalues (1) for 00000143AD055E40:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:191,210> (33 instructions at 00000143AD055C40)
+4 params, 12 slots, 1 upvalue, 10 locals, 8 constants, 0 functions
+	1	[192]	GETTABUP 	4 0 -1	; _ENV "BaseBoardModel"
+	2	[192]	GETTABLE 	4 4 -2	; "GetCodeCountMap"
+	3	[192]	MOVE     	5 0
+	4	[192]	MOVE     	6 1
+	5	[192]	MOVE     	7 2
+	6	[192]	MOVE     	8 3
+	7	[192]	CALL     	4 5 2
+	8	[194]	EQ       	0 2 -3	; - false
+	9	[194]	JMP      	0 1	; to 11
+	10	[194]	LOADBOOL 	2 0 1
+	11	[194]	LOADBOOL 	2 1 0
+	12	[195]	TEST     	2 0
+	13	[195]	JMP      	0 18	; to 32
+	14	[197]	LOADK    	5 -4	; 1
+	15	[197]	SELF     	6 0 -5	; "GetCachedItemCount"
+	16	[197]	CALL     	6 2 2
+	17	[197]	LOADK    	7 -4	; 1
+	18	[197]	FORPREP  	5 12	; to 31
+	19	[198]	SELF     	9 0 -6	; "GetCachedItem"
+	20	[198]	MOVE     	11 8
+	21	[198]	CALL     	9 3 2
+	22	[199]	EQ       	1 9 -7	; - nil
+	23	[199]	JMP      	0 7	; to 31
+	24	[200]	GETTABLE 	10 4 9
+	25	[200]	EQ       	0 10 -7	; - nil
+	26	[200]	JMP      	0 1	; to 28
+	27	[201]	SETTABLE 	4 9 -8	; - 0
+	28	[204]	GETTABLE 	10 4 9
+	29	[204]	ADD      	10 10 -4	; - 1
+	30	[204]	SETTABLE 	4 9 10
+	31	[197]	FORLOOP  	5 -13	; to 19
+	32	[209]	RETURN   	4 2
+	33	[210]	RETURN   	0 1
+constants (8) for 00000143AD055C40:
+	1	"BaseBoardModel"
+	2	"GetCodeCountMap"
+	3	false
+	4	1
+	5	"GetCachedItemCount"
+	6	"GetCachedItem"
+	7	nil
+	8	0
+locals (10) for 00000143AD055C40:
+	0	self	1	34
+	1	includeBoard	1	34
+	2	includeCache	1	34
+	3	includeStore	1	34
+	4	codeCountMap	8	34
+	5	(for index)	18	32
+	6	(for limit)	18	32
+	7	(for step)	18	32
+	8	i	19	31
+	9	code	22	31
+upvalues (1) for 00000143AD055C40:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:214,221> (16 instructions at 00000143AD0557C0)
+1 param, 11 slots, 0 upvalues, 6 locals, 4 constants, 0 functions
+	1	[215]	NEWTABLE 	1 0 0
+	2	[216]	SELF     	2 0 -1	; "GetValidPositionIterator"
+	3	[216]	CALL     	2 2 4
+	4	[216]	JMP      	0 8	; to 13
+	5	[217]	SELF     	6 0 -2	; "_CalculateItemCollectRewards"
+	6	[217]	SELF     	8 0 -3	; "GetItem"
+	7	[217]	MOVE     	10 5
+	8	[217]	CALL     	8 3 2
+	9	[217]	MOVE     	9 1
+	10	[217]	LOADK    	10 -4	; 1
+	11	[217]	CALL     	6 5 2
+	12	[217]	MOVE     	1 6
+	13	[216]	TFORCALL 	2 1
+	14	[216]	TFORLOOP 	4 -10	; to 5
+	15	[220]	RETURN   	1 2
+	16	[221]	RETURN   	0 1
+constants (4) for 00000143AD0557C0:
+	1	"GetValidPositionIterator"
+	2	"_CalculateItemCollectRewards"
+	3	"GetItem"
+	4	1
+locals (6) for 00000143AD0557C0:
+	0	self	1	17
+	1	rewards	2	17
+	2	(for generator)	4	15
+	3	(for state)	4	15
+	4	(for control)	4	15
+	5	position	5	13
+upvalues (0) for 00000143AD0557C0:
+
+function <BaseActionBoardModel.lua:224,332> (438 instructions at 00000143AD055FC0)
+4 params, 36 slots, 1 upvalue, 52 locals, 67 constants, 0 functions
+	1	[226]	TEST     	3 1
+	2	[226]	JMP      	0 1	; to 4
+	3	[226]	LOADK    	3 -1	; 1
+	4	[227]	EQ       	1 1 -2	; - nil
+	5	[227]	JMP      	0 431	; to 437
+	6	[227]	LT       	0 -3 3	; 0 -
+	7	[227]	JMP      	0 429	; to 437
+	8	[228]	NEWTABLE 	4 0 0
+	9	[229]	SELF     	5 1 -4	; "GetComponent"
+	10	[229]	GETTABUP 	7 0 -5	; _ENV "ItemCollectable"
+	11	[229]	CALL     	5 3 2
+	12	[230]	TEST     	5 0
+	13	[230]	JMP      	0 37	; to 51
+	14	[231]	SELF     	6 5 -6	; "GetRewards"
+	15	[231]	CALL     	6 2 2
+	16	[232]	GETTABUP 	7 0 -7	; _ENV "pairs"
+	17	[232]	MOVE     	8 6
+	18	[232]	CALL     	7 2 4
+	19	[232]	JMP      	0 23	; to 43
+	20	[233]	GETTABUP 	12 0 -8	; _ENV "PROPERTY_COUNT"
+	21	[233]	GETTABUP 	13 0 -8	; _ENV "PROPERTY_COUNT"
+	22	[233]	GETTABLE 	13 11 13
+	23	[233]	MUL      	13 13 3
+	24	[233]	SETTABLE 	11 12 13
+	25	[234]	GETTABUP 	12 0 -9	; _ENV "GameConfig"
+	26	[234]	GETTABLE 	12 12 -10	; "IsTestMode"
+	27	[234]	CALL     	12 1 2
+	28	[234]	TEST     	12 0
+	29	[234]	JMP      	0 13	; to 43
+	30	[234]	TEST     	4 0
+	31	[234]	JMP      	0 11	; to 43
+	32	[235]	GETTABUP 	12 0 -11	; _ENV "table"
+	33	[235]	GETTABLE 	12 12 -12	; "insert"
+	34	[235]	MOVE     	13 4
+	35	[235]	LOADK    	14 -13	; "\230\148\182\233\155\134\230\163\139\229\173\144\229\165\150\229\138\177\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	36	[235]	GETTABUP 	15 0 -14	; _ENV "PROPERTY_TYPE"
+	37	[235]	GETTABLE 	15 11 15
+	38	[235]	LOADK    	16 -15	; ", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	39	[235]	GETTABUP 	17 0 -8	; _ENV "PROPERTY_COUNT"
+	40	[235]	GETTABLE 	17 11 17
+	41	[235]	CONCAT   	14 14 17
+	42	[235]	CALL     	12 3 1
+	43	[232]	TFORCALL 	7 2
+	44	[232]	TFORLOOP 	9 -25	; to 20
+	45	[238]	GETTABUP 	7 0 -16	; _ENV "RewardApi"
+	46	[238]	GETTABLE 	7 7 -17	; "MergeRewards"
+	47	[238]	MOVE     	8 2
+	48	[238]	MOVE     	9 6
+	49	[238]	CALL     	7 3 2
+	50	[238]	MOVE     	2 7
+	51	[240]	SELF     	6 1 -4	; "GetComponent"
+	52	[240]	GETTABUP 	8 0 -18	; _ENV "ItemSpread"
+	53	[240]	CALL     	6 3 2
+	54	[241]	TEST     	6 0
+	55	[241]	JMP      	0 343	; to 399
+	56	[241]	SELF     	7 6 -19	; "IsDisposable"
+	57	[241]	CALL     	7 2 2
+	58	[241]	TEST     	7 0
+	59	[241]	JMP      	0 339	; to 399
+	60	[242]	SELF     	7 6 -20	; "GetCodeWeightPairs"
+	61	[242]	CALL     	7 2 2
+	62	[243]	SELF     	8 6 -21	; "GetWeightType"
+	63	[243]	CALL     	8 2 2
+	64	[244]	EQ       	0 8 -1	; - 1
+	65	[244]	JMP      	0 172	; to 238
+	66	[246]	SELF     	9 6 -22	; "GetSpreadMaxNum"
+	67	[246]	CALL     	9 2 2
+	68	[246]	SELF     	10 6 -23	; "GetSpreadCount"
+	69	[246]	CALL     	10 2 2
+	70	[246]	SUB      	9 9 10
+	71	[247]	LOADK    	10 -24	; 0.0
+	72	[248]	GETTABUP 	11 0 -25	; _ENV "ipairs"
+	73	[248]	MOVE     	12 7
+	74	[248]	CALL     	11 2 4
+	75	[248]	JMP      	0 2	; to 78
+	76	[249]	GETTABLE 	16 15 -26	; "Weight"
+	77	[249]	ADD      	10 10 16
+	78	[248]	TFORCALL 	11 2
+	79	[248]	TFORLOOP 	13 -4	; to 76
+	80	[251]	GETTABUP 	11 0 -25	; _ENV "ipairs"
+	81	[251]	MOVE     	12 7
+	82	[251]	CALL     	11 2 4
+	83	[251]	JMP      	0 151	; to 235
+	84	[252]	GETTABLE 	16 15 -26	; "Weight"
+	85	[252]	LT       	0 -3 16	; 0 -
+	86	[252]	JMP      	0 148	; to 235
+	87	[253]	GETTABUP 	16 0 -27	; _ENV "ItemModelFactory"
+	88	[253]	GETTABLE 	16 16 -28	; "GetCodePrefixTargetType"
+	89	[253]	GETTABLE 	17 15 -29	; "Code"
+	90	[253]	CALL     	16 2 2
+	91	[253]	GETTABUP 	17 0 -30	; _ENV "ItemType"
+	92	[253]	GETTABLE 	17 17 -31	; "RewardBubble"
+	93	[253]	EQ       	0 16 17
+	94	[253]	JMP      	0 63	; to 158
+	95	[254]	GETTABUP 	16 0 -27	; _ENV "ItemModelFactory"
+	96	[254]	GETTABLE 	16 16 -32	; "GetInnerType"
+	97	[254]	GETTABLE 	17 15 -29	; "Code"
+	98	[254]	CALL     	16 2 2
+	99	[255]	NEWTABLE 	17 1 0
+	100	[255]	NEWTABLE 	18 0 2
+	101	[257]	GETTABUP 	19 0 -14	; _ENV "PROPERTY_TYPE"
+	102	[257]	SETTABLE 	18 19 16
+	103	[258]	GETTABUP 	19 0 -8	; _ENV "PROPERTY_COUNT"
+	104	[258]	GETTABUP 	20 0 -33	; _ENV "math"
+	105	[258]	GETTABLE 	20 20 -34	; "ceil"
+	106	[258]	GETTABLE 	21 15 -26	; "Weight"
+	107	[258]	MUL      	21 21 9
+	108	[258]	DIV      	21 21 10
+	109	[258]	CALL     	20 2 2
+	110	[258]	MUL      	20 20 3
+	111	[258]	SETTABLE 	18 19 20
+	112	[260]	SETLIST  	17 1 1	; 1
+	113	[261]	GETTABUP 	18 0 -16	; _ENV "RewardApi"
+	114	[261]	GETTABLE 	18 18 -17	; "MergeRewards"
+	115	[261]	MOVE     	19 2
+	116	[261]	MOVE     	20 17
+	117	[261]	CALL     	18 3 2
+	118	[261]	MOVE     	2 18
+	119	[262]	GETTABUP 	18 0 -9	; _ENV "GameConfig"
+	120	[262]	GETTABLE 	18 18 -10	; "IsTestMode"
+	121	[262]	CALL     	18 1 2
+	122	[262]	TEST     	18 0
+	123	[262]	JMP      	0 111	; to 235
+	124	[262]	TEST     	4 0
+	125	[262]	JMP      	0 109	; to 235
+	126	[263]	GETTABUP 	18 0 -11	; _ENV "table"
+	127	[263]	GETTABLE 	18 18 -12	; "insert"
+	128	[263]	MOVE     	19 4
+	129	[263]	LOADK    	20 -35	; "\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177\239\188\136Spread_WeightType = "
+	130	[263]	MOVE     	21 8
+	131	[263]	LOADK    	22 -36	; "--RewardBubble\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	132	[263]	MOVE     	23 16
+	133	[263]	LOADK    	24 -15	; ", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	134	[263]	GETTABLE 	25 17 -1	; 1
+	135	[263]	GETTABUP 	26 0 -8	; _ENV "PROPERTY_COUNT"
+	136	[263]	GETTABLE 	25 25 26
+	137	[263]	CONCAT   	20 20 25
+	138	[263]	CALL     	18 3 1
+	139	[264]	GETTABUP 	18 0 -11	; _ENV "table"
+	140	[264]	GETTABLE 	18 18 -12	; "insert"
+	141	[264]	MOVE     	19 4
+	142	[264]	LOADK    	20 -37	; "    \229\165\150\229\138\177\230\149\176\233\135\143["
+	143	[264]	GETTABLE 	21 17 -1	; 1
+	144	[264]	GETTABUP 	22 0 -8	; _ENV "PROPERTY_COUNT"
+	145	[264]	GETTABLE 	21 21 22
+	146	[264]	LOADK    	22 -38	; "] =  (\230\157\131\233\135\141["
+	147	[264]	GETTABLE 	23 15 -26	; "Weight"
+	148	[264]	LOADK    	24 -39	; "] * \229\137\169\228\189\153\229\150\183\229\143\145\230\149\176\233\135\143["
+	149	[264]	MOVE     	25 9
+	150	[264]	LOADK    	26 -40	; "] / \230\128\187\230\157\131\233\135\141["
+	151	[264]	MOVE     	27 10
+	152	[264]	LOADK    	28 -41	; "]) * \230\163\139\229\173\144\230\149\176\233\135\143["
+	153	[264]	MOVE     	29 3
+	154	[264]	LOADK    	30 -42	; "]"
+	155	[264]	CONCAT   	20 20 30
+	156	[264]	CALL     	18 3 1
+	157	[265]	JMP      	0 77	; to 235
+	158	[267]	GETTABUP 	16 0 -43	; _ENV "GM"
+	159	[267]	GETTABLE 	16 16 -44	; "ItemDataModel"
+	160	[267]	SELF     	16 16 -45	; "GetModelConfig"
+	161	[267]	GETTABLE 	18 15 -29	; "Code"
+	162	[267]	LOADBOOL 	19 1 0
+	163	[267]	CALL     	16 4 2
+	164	[268]	GETTABUP 	17 0 -46	; _ENV "ConfigUtil"
+	165	[268]	GETTABLE 	17 17 -47	; "GetCurrencyFromArrStr"
+	166	[268]	GETTABLE 	18 16 -48	; "CollectRewards"
+	167	[268]	CALL     	17 2 2
+	168	[269]	GETTABUP 	18 0 -49	; _ENV "Table"
+	169	[269]	GETTABLE 	18 18 -50	; "IsEmpty"
+	170	[269]	MOVE     	19 17
+	171	[269]	CALL     	18 2 2
+	172	[269]	TEST     	18 1
+	173	[269]	JMP      	0 61	; to 235
+	174	[270]	GETTABUP 	18 0 -25	; _ENV "ipairs"
+	175	[270]	MOVE     	19 17
+	176	[270]	CALL     	18 2 4
+	177	[270]	JMP      	0 49	; to 227
+	178	[271]	GETTABUP 	23 0 -8	; _ENV "PROPERTY_COUNT"
+	179	[271]	GETTABUP 	24 0 -33	; _ENV "math"
+	180	[271]	GETTABLE 	24 24 -34	; "ceil"
+	181	[271]	GETTABUP 	25 0 -8	; _ENV "PROPERTY_COUNT"
+	182	[271]	GETTABLE 	25 22 25
+	183	[271]	GETTABLE 	26 15 -26	; "Weight"
+	184	[271]	MUL      	25 25 26
+	185	[271]	MUL      	25 25 9
+	186	[271]	DIV      	25 25 10
+	187	[271]	CALL     	24 2 2
+	188	[271]	MUL      	24 24 3
+	189	[271]	SETTABLE 	22 23 24
+	190	[272]	GETTABUP 	23 0 -9	; _ENV "GameConfig"
+	191	[272]	GETTABLE 	23 23 -10	; "IsTestMode"
+	192	[272]	CALL     	23 1 2
+	193	[272]	TEST     	23 0
+	194	[272]	JMP      	0 32	; to 227
+	195	[272]	TEST     	4 0
+	196	[272]	JMP      	0 30	; to 227
+	197	[273]	GETTABUP 	23 0 -11	; _ENV "table"
+	198	[273]	GETTABLE 	23 23 -12	; "insert"
+	199	[273]	MOVE     	24 4
+	200	[273]	LOADK    	25 -35	; "\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177\239\188\136Spread_WeightType = "
+	201	[273]	MOVE     	26 8
+	202	[273]	LOADK    	27 -51	; "\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	203	[273]	GETTABUP 	28 0 -14	; _ENV "PROPERTY_TYPE"
+	204	[273]	GETTABLE 	28 22 28
+	205	[273]	LOADK    	29 -15	; ", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	206	[273]	GETTABUP 	30 0 -8	; _ENV "PROPERTY_COUNT"
+	207	[273]	GETTABLE 	30 22 30
+	208	[273]	CONCAT   	25 25 30
+	209	[273]	CALL     	23 3 1
+	210	[274]	GETTABUP 	23 0 -11	; _ENV "table"
+	211	[274]	GETTABLE 	23 23 -12	; "insert"
+	212	[274]	MOVE     	24 4
+	213	[274]	LOADK    	25 -37	; "    \229\165\150\229\138\177\230\149\176\233\135\143["
+	214	[274]	GETTABUP 	26 0 -8	; _ENV "PROPERTY_COUNT"
+	215	[274]	GETTABLE 	26 22 26
+	216	[274]	LOADK    	27 -38	; "] =  (\230\157\131\233\135\141["
+	217	[274]	GETTABLE 	28 15 -26	; "Weight"
+	218	[274]	LOADK    	29 -39	; "] * \229\137\169\228\189\153\229\150\183\229\143\145\230\149\176\233\135\143["
+	219	[274]	MOVE     	30 9
+	220	[274]	LOADK    	31 -40	; "] / \230\128\187\230\157\131\233\135\141["
+	221	[274]	MOVE     	32 10
+	222	[274]	LOADK    	33 -41	; "]) * \230\163\139\229\173\144\230\149\176\233\135\143["
+	223	[274]	MOVE     	34 3
+	224	[274]	LOADK    	35 -42	; "]"
+	225	[274]	CONCAT   	25 25 35
+	226	[274]	CALL     	23 3 1
+	227	[270]	TFORCALL 	18 2
+	228	[270]	TFORLOOP 	20 -51	; to 178
+	229	[277]	GETTABUP 	18 0 -16	; _ENV "RewardApi"
+	230	[277]	GETTABLE 	18 18 -17	; "MergeRewards"
+	231	[277]	MOVE     	19 2
+	232	[277]	MOVE     	20 17
+	233	[277]	CALL     	18 3 2
+	234	[277]	MOVE     	2 18
+	235	[251]	TFORCALL 	11 2
+	236	[251]	TFORLOOP 	13 -153	; to 84
+	237	[281]	JMP      	0 161	; to 399
+	238	[284]	GETTABUP 	9 0 -25	; _ENV "ipairs"
+	239	[284]	MOVE     	10 7
+	240	[284]	CALL     	9 2 4
+	241	[284]	JMP      	0 155	; to 397
+	242	[285]	GETTABLE 	14 13 -26	; "Weight"
+	243	[285]	LT       	0 -3 14	; 0 -
+	244	[285]	JMP      	0 152	; to 397
+	245	[286]	GETTABUP 	14 0 -27	; _ENV "ItemModelFactory"
+	246	[286]	GETTABLE 	14 14 -28	; "GetCodePrefixTargetType"
+	247	[286]	GETTABLE 	15 13 -29	; "Code"
+	248	[286]	CALL     	14 2 2
+	249	[287]	GETTABUP 	15 0 -30	; _ENV "ItemType"
+	250	[287]	GETTABLE 	15 15 -31	; "RewardBubble"
+	251	[287]	EQ       	0 14 15
+	252	[287]	JMP      	0 54	; to 307
+	253	[288]	GETTABUP 	15 0 -27	; _ENV "ItemModelFactory"
+	254	[288]	GETTABLE 	15 15 -32	; "GetInnerType"
+	255	[288]	GETTABLE 	16 13 -29	; "Code"
+	256	[288]	CALL     	15 2 2
+	257	[289]	NEWTABLE 	16 1 0
+	258	[289]	NEWTABLE 	17 0 2
+	259	[291]	GETTABUP 	18 0 -14	; _ENV "PROPERTY_TYPE"
+	260	[291]	SETTABLE 	17 18 15
+	261	[292]	GETTABUP 	18 0 -8	; _ENV "PROPERTY_COUNT"
+	262	[292]	GETTABLE 	19 13 -26	; "Weight"
+	263	[292]	MUL      	19 19 3
+	264	[292]	SETTABLE 	17 18 19
+	265	[294]	SETLIST  	16 1 1	; 1
+	266	[295]	GETTABUP 	17 0 -16	; _ENV "RewardApi"
+	267	[295]	GETTABLE 	17 17 -17	; "MergeRewards"
+	268	[295]	MOVE     	18 2
+	269	[295]	MOVE     	19 16
+	270	[295]	CALL     	17 3 2
+	271	[295]	MOVE     	2 17
+	272	[296]	GETTABUP 	17 0 -9	; _ENV "GameConfig"
+	273	[296]	GETTABLE 	17 17 -10	; "IsTestMode"
+	274	[296]	CALL     	17 1 2
+	275	[296]	TEST     	17 0
+	276	[296]	JMP      	0 120	; to 397
+	277	[296]	TEST     	4 0
+	278	[296]	JMP      	0 118	; to 397
+	279	[297]	GETTABUP 	17 0 -11	; _ENV "table"
+	280	[297]	GETTABLE 	17 17 -12	; "insert"
+	281	[297]	MOVE     	18 4
+	282	[297]	LOADK    	19 -35	; "\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177\239\188\136Spread_WeightType = "
+	283	[297]	MOVE     	20 8
+	284	[297]	LOADK    	21 -52	; "\232\135\170\229\135\143\229\150\183\229\143\145\230\168\161\229\188\143--RewardBubble\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	285	[297]	MOVE     	22 15
+	286	[297]	LOADK    	23 -15	; ", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	287	[297]	GETTABLE 	24 16 -1	; 1
+	288	[297]	GETTABUP 	25 0 -8	; _ENV "PROPERTY_COUNT"
+	289	[297]	GETTABLE 	24 24 25
+	290	[297]	CONCAT   	19 19 24
+	291	[297]	CALL     	17 3 1
+	292	[298]	GETTABUP 	17 0 -11	; _ENV "table"
+	293	[298]	GETTABLE 	17 17 -12	; "insert"
+	294	[298]	MOVE     	18 4
+	295	[298]	LOADK    	19 -37	; "    \229\165\150\229\138\177\230\149\176\233\135\143["
+	296	[298]	GETTABLE 	20 16 -1	; 1
+	297	[298]	GETTABUP 	21 0 -8	; _ENV "PROPERTY_COUNT"
+	298	[298]	GETTABLE 	20 20 21
+	299	[298]	LOADK    	21 -53	; "] = \230\157\131\233\135\141["
+	300	[298]	GETTABLE 	22 13 -26	; "Weight"
+	301	[298]	LOADK    	23 -54	; "] * \230\163\139\229\173\144\230\149\176\233\135\143["
+	302	[298]	MOVE     	24 3
+	303	[298]	LOADK    	25 -42	; "]"
+	304	[298]	CONCAT   	19 19 25
+	305	[298]	CALL     	17 3 1
+	306	[299]	JMP      	0 90	; to 397
+	307	[301]	EQ       	0 14 -2	; - nil
+	308	[301]	JMP      	0 88	; to 397
+	309	[302]	GETTABUP 	15 0 -43	; _ENV "GM"
+	310	[302]	GETTABLE 	15 15 -44	; "ItemDataModel"
+	311	[302]	SELF     	15 15 -45	; "GetModelConfig"
+	312	[302]	GETTABLE 	17 13 -29	; "Code"
+	313	[302]	LOADBOOL 	18 1 0
+	314	[302]	CALL     	15 4 2
+	315	[303]	GETTABUP 	16 0 -46	; _ENV "ConfigUtil"
+	316	[303]	GETTABLE 	16 16 -47	; "GetCurrencyFromArrStr"
+	317	[303]	GETTABLE 	17 15 -48	; "CollectRewards"
+	318	[303]	CALL     	16 2 2
+	319	[304]	GETTABUP 	17 0 -49	; _ENV "Table"
+	320	[304]	GETTABLE 	17 17 -50	; "IsEmpty"
+	321	[304]	MOVE     	18 16
+	322	[304]	CALL     	17 2 2
+	323	[304]	TEST     	17 1
+	324	[304]	JMP      	0 55	; to 380
+	325	[305]	GETTABUP 	17 0 -25	; _ENV "ipairs"
+	326	[305]	MOVE     	18 16
+	327	[305]	CALL     	17 2 4
+	328	[305]	JMP      	0 42	; to 371
+	329	[306]	GETTABUP 	22 0 -8	; _ENV "PROPERTY_COUNT"
+	330	[306]	GETTABLE 	22 21 22
+	331	[307]	GETTABUP 	23 0 -8	; _ENV "PROPERTY_COUNT"
+	332	[307]	GETTABLE 	24 13 -26	; "Weight"
+	333	[307]	MUL      	24 22 24
+	334	[307]	MUL      	24 24 3
+	335	[307]	SETTABLE 	21 23 24
+	336	[308]	GETTABUP 	23 0 -9	; _ENV "GameConfig"
+	337	[308]	GETTABLE 	23 23 -10	; "IsTestMode"
+	338	[308]	CALL     	23 1 2
+	339	[308]	TEST     	23 0
+	340	[308]	JMP      	0 30	; to 371
+	341	[308]	TEST     	4 0
+	342	[308]	JMP      	0 28	; to 371
+	343	[309]	GETTABUP 	23 0 -11	; _ENV "table"
+	344	[309]	GETTABLE 	23 23 -12	; "insert"
+	345	[309]	MOVE     	24 4
+	346	[309]	LOADK    	25 -35	; "\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177\239\188\136Spread_WeightType = "
+	347	[309]	MOVE     	26 8
+	348	[309]	LOADK    	27 -55	; "\232\135\170\229\135\143\229\150\183\229\143\145\230\168\161\229\188\143\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	349	[309]	GETTABUP 	28 0 -14	; _ENV "PROPERTY_TYPE"
+	350	[309]	GETTABLE 	28 21 28
+	351	[309]	LOADK    	29 -15	; ", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	352	[309]	GETTABUP 	30 0 -8	; _ENV "PROPERTY_COUNT"
+	353	[309]	GETTABLE 	30 21 30
+	354	[309]	CONCAT   	25 25 30
+	355	[309]	CALL     	23 3 1
+	356	[310]	GETTABUP 	23 0 -11	; _ENV "table"
+	357	[310]	GETTABLE 	23 23 -12	; "insert"
+	358	[310]	MOVE     	24 4
+	359	[310]	LOADK    	25 -37	; "    \229\165\150\229\138\177\230\149\176\233\135\143["
+	360	[310]	GETTABUP 	26 0 -8	; _ENV "PROPERTY_COUNT"
+	361	[310]	GETTABLE 	26 21 26
+	362	[310]	LOADK    	27 -56	; "] = \233\133\141\231\189\174\230\149\176\233\135\143["
+	363	[310]	MOVE     	28 22
+	364	[310]	LOADK    	29 -57	; "] * \230\157\131\233\135\141["
+	365	[310]	GETTABLE 	30 13 -26	; "Weight"
+	366	[310]	LOADK    	31 -54	; "] * \230\163\139\229\173\144\230\149\176\233\135\143["
+	367	[310]	MOVE     	32 3
+	368	[310]	LOADK    	33 -42	; "]"
+	369	[310]	CONCAT   	25 25 33
+	370	[310]	CALL     	23 3 1
+	371	[305]	TFORCALL 	17 2
+	372	[305]	TFORLOOP 	19 -44	; to 329
+	373	[313]	GETTABUP 	17 0 -16	; _ENV "RewardApi"
+	374	[313]	GETTABLE 	17 17 -17	; "MergeRewards"
+	375	[313]	MOVE     	18 2
+	376	[313]	MOVE     	19 16
+	377	[313]	CALL     	17 3 2
+	378	[313]	MOVE     	2 17
+	379	[313]	JMP      	0 17	; to 397
+	380	[315]	GETTABUP 	17 0 -9	; _ENV "GameConfig"
+	381	[315]	GETTABLE 	17 17 -10	; "IsTestMode"
+	382	[315]	CALL     	17 1 2
+	383	[315]	TEST     	17 0
+	384	[315]	JMP      	0 12	; to 397
+	385	[315]	TEST     	4 0
+	386	[315]	JMP      	0 10	; to 397
+	387	[316]	GETTABUP 	17 0 -11	; _ENV "table"
+	388	[316]	GETTABLE 	17 17 -12	; "insert"
+	389	[316]	MOVE     	18 4
+	390	[316]	LOADK    	19 -58	; "\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177(Spread_WeightType = "
+	391	[316]	MOVE     	20 8
+	392	[316]	LOADK    	21 -55	; "\232\135\170\229\135\143\229\150\183\229\143\145\230\168\161\229\188\143\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	393	[316]	GETTABLE 	22 13 -29	; "Code"
+	394	[316]	LOADK    	23 -59	; " \229\177\158\228\186\142\229\133\182\228\187\150\231\137\185\230\174\138\229\137\141\231\188\128\230\163\139\229\173\144\229\165\150\229\138\177\239\188\140\229\183\178\229\191\189\231\149\165"
+	395	[316]	CONCAT   	19 19 23
+	396	[316]	CALL     	17 3 1
+	397	[284]	TFORCALL 	9 2
+	398	[284]	TFORLOOP 	11 -157	; to 242
+	399	[324]	GETTABUP 	7 0 -9	; _ENV "GameConfig"
+	400	[324]	GETTABLE 	7 7 -10	; "IsTestMode"
+	401	[324]	CALL     	7 1 2
+	402	[324]	TEST     	7 0
+	403	[324]	JMP      	0 33	; to 437
+	404	[324]	GETTABUP 	7 0 -49	; _ENV "Table"
+	405	[324]	GETTABLE 	7 7 -50	; "IsEmpty"
+	406	[324]	MOVE     	8 4
+	407	[324]	CALL     	7 2 2
+	408	[324]	TEST     	7 1
+	409	[324]	JMP      	0 27	; to 437
+	410	[324]	TEST     	4 0
+	411	[324]	JMP      	0 25	; to 437
+	412	[325]	GETTABUP 	7 0 -11	; _ENV "table"
+	413	[325]	GETTABLE 	7 7 -12	; "insert"
+	414	[325]	MOVE     	8 4
+	415	[325]	LOADK    	9 -1	; 1
+	416	[325]	LOADK    	10 -60	; "\230\163\139\229\173\144\229\155\158\230\148\182\232\175\166\231\187\134\228\191\161\230\129\175\239\188\154\230\163\139\229\173\144["
+	417	[325]	SELF     	11 1 -61	; "GetCode"
+	418	[325]	CALL     	11 2 2
+	419	[325]	LOADK    	12 -62	; "], \230\163\139\229\173\144\230\149\176\233\135\143["
+	420	[325]	MOVE     	13 3
+	421	[325]	LOADK    	14 -42	; "]"
+	422	[325]	CONCAT   	10 10 14
+	423	[325]	CALL     	7 4 1
+	424	[326]	GETTABUP 	7 0 -11	; _ENV "table"
+	425	[326]	GETTABLE 	7 7 -12	; "insert"
+	426	[326]	MOVE     	8 4
+	427	[326]	LOADK    	9 -63	; "--------------------------------------------------------"
+	428	[326]	CALL     	7 3 1
+	429	[327]	GETTABUP 	7 0 -64	; _ENV "Log"
+	430	[327]	GETTABLE 	7 7 -65	; "Info"
+	431	[327]	GETTABUP 	8 0 -11	; _ENV "table"
+	432	[327]	GETTABLE 	8 8 -66	; "concat"
+	433	[327]	MOVE     	9 4
+	434	[327]	LOADK    	10 -67	; "\n"
+	435	[327]	CALL     	8 3 0
+	436	[327]	CALL     	7 0 1
+	437	[331]	RETURN   	2 2
+	438	[332]	RETURN   	0 1
+constants (67) for 00000143AD055FC0:
+	1	1
+	2	nil
+	3	0
+	4	"GetComponent"
+	5	"ItemCollectable"
+	6	"GetRewards"
+	7	"pairs"
+	8	"PROPERTY_COUNT"
+	9	"GameConfig"
+	10	"IsTestMode"
+	11	"table"
+	12	"insert"
+	13	"\230\148\182\233\155\134\230\163\139\229\173\144\229\165\150\229\138\177\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	14	"PROPERTY_TYPE"
+	15	", \229\165\150\229\138\177\230\149\176\233\135\143 = "
+	16	"RewardApi"
+	17	"MergeRewards"
+	18	"ItemSpread"
+	19	"IsDisposable"
+	20	"GetCodeWeightPairs"
+	21	"GetWeightType"
+	22	"GetSpreadMaxNum"
+	23	"GetSpreadCount"
+	24	0.0
+	25	"ipairs"
+	26	"Weight"
+	27	"ItemModelFactory"
+	28	"GetCodePrefixTargetType"
+	29	"Code"
+	30	"ItemType"
+	31	"RewardBubble"
+	32	"GetInnerType"
+	33	"math"
+	34	"ceil"
+	35	"\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177\239\188\136Spread_WeightType = "
+	36	"--RewardBubble\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	37	"    \229\165\150\229\138\177\230\149\176\233\135\143["
+	38	"] =  (\230\157\131\233\135\141["
+	39	"] * \229\137\169\228\189\153\229\150\183\229\143\145\230\149\176\233\135\143["
+	40	"] / \230\128\187\230\157\131\233\135\141["
+	41	"]) * \230\163\139\229\173\144\230\149\176\233\135\143["
+	42	"]"
+	43	"GM"
+	44	"ItemDataModel"
+	45	"GetModelConfig"
+	46	"ConfigUtil"
+	47	"GetCurrencyFromArrStr"
+	48	"CollectRewards"
+	49	"Table"
+	50	"IsEmpty"
+	51	"\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	52	"\232\135\170\229\135\143\229\150\183\229\143\145\230\168\161\229\188\143--RewardBubble\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	53	"] = \230\157\131\233\135\141["
+	54	"] * \230\163\139\229\173\144\230\149\176\233\135\143["
+	55	"\232\135\170\229\135\143\229\150\183\229\143\145\230\168\161\229\188\143\239\188\137\239\188\154\229\165\150\229\138\177\231\177\187\229\158\139 = "
+	56	"] = \233\133\141\231\189\174\230\149\176\233\135\143["
+	57	"] * \230\157\131\233\135\141["
+	58	"\229\150\183\229\143\145\230\163\139\229\173\144\229\165\150\229\138\177(Spread_WeightType = "
+	59	" \229\177\158\228\186\142\229\133\182\228\187\150\231\137\185\230\174\138\229\137\141\231\188\128\230\163\139\229\173\144\229\165\150\229\138\177\239\188\140\229\183\178\229\191\189\231\149\165"
+	60	"\230\163\139\229\173\144\229\155\158\230\148\182\232\175\166\231\187\134\228\191\161\230\129\175\239\188\154\230\163\139\229\173\144["
+	61	"GetCode"
+	62	"], \230\163\139\229\173\144\230\149\176\233\135\143["
+	63	"--------------------------------------------------------"
+	64	"Log"
+	65	"Info"
+	66	"concat"
+	67	"\n"
+locals (52) for 00000143AD055FC0:
+	0	self	1	439
+	1	item	1	439
+	2	rewards	1	439
+	3	itemCount	1	439
+	4	logTable	9	437
+	5	collectTb	12	437
+	6	collectRewards	16	51
+	7	(for generator)	19	45
+	8	(for state)	19	45
+	9	(for control)	19	45
+	10	_	20	43
+	11	v	20	43
+	12	itemSpread	54	437
+	13	arrCw	62	399
+	14	spreadtype	64	399
+	15	count	71	237
+	16	sumweight	72	237
+	17	(for generator)	75	80
+	18	(for state)	75	80
+	19	(for control)	75	80
+	20	_	76	78
+	21	v	76	78
+	22	(for generator)	83	237
+	23	(for state)	83	237
+	24	(for control)	83	237
+	25	_	84	235
+	26	v	84	235
+	27	innerRewardType	99	157
+	28	arrTemp	113	157
+	29	itemConfig	164	235
+	30	arrRwds	168	235
+	31	(for generator)	177	229
+	32	(for state)	177	229
+	33	(for control)	177	229
+	34	_	178	227
+	35	v1	178	227
+	36	(for generator)	241	399
+	37	(for state)	241	399
+	38	(for control)	241	399
+	39	_	242	397
+	40	v	242	397
+	41	prefixItemType	249	397
+	42	innerRewardType	257	306
+	43	arrTemp	266	306
+	44	itemConfig	315	397
+	45	arrRwds	319	397
+	46	(for generator)	328	373
+	47	(for state)	328	373
+	48	(for control)	328	373
+	49	_	329	371
+	50	v1	329	371
+	51	configCount	331	371
+upvalues (1) for 00000143AD055FC0:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:334,336> (3 instructions at 00000143AD055840)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[335]	GETTABLE 	1 0 -1	; "m_promptConfig"
+	2	[335]	RETURN   	1 2
+	3	[336]	RETURN   	0 1
+constants (1) for 00000143AD055840:
+	1	"m_promptConfig"
+locals (1) for 00000143AD055840:
+	0	self	1	4
+upvalues (0) for 00000143AD055840:
+
+function <BaseActionBoardModel.lua:344,375> (95 instructions at 00000143AD055540)
+2 params, 15 slots, 1 upvalue, 18 locals, 23 constants, 0 functions
+	1	[345]	GETTABUP 	2 0 -2	; _ENV "Table"
+	2	[345]	GETTABLE 	2 2 -3	; "DeepCopy"
+	3	[345]	SELF     	3 0 -4	; "GetPaperBoxRewardConfig"
+	4	[345]	CALL     	3 2 0
+	5	[345]	CALL     	2 0 2
+	6	[345]	SETTABLE 	0 -1 2	; "m_paperboxExtraRewardMap" -
+	7	[346]	GETTABUP 	2 0 -2	; _ENV "Table"
+	8	[346]	GETTABLE 	2 2 -5	; "IsEmpty"
+	9	[346]	GETTABLE 	3 0 -1	; "m_paperboxExtraRewardMap"
+	10	[346]	CALL     	2 2 2
+	11	[346]	TEST     	2 0
+	12	[346]	JMP      	0 1	; to 14
+	13	[347]	RETURN   	0 1
+	14	[350]	GETTABUP 	2 0 -6	; _ENV "GameConfig"
+	15	[350]	GETTABLE 	2 2 -7	; "IsTestMode"
+	16	[350]	CALL     	2 1 2
+	17	[350]	TEST     	2 0
+	18	[350]	JMP      	0 32	; to 51
+	19	[351]	SELF     	2 0 -8	; "GetPaperBoxRewardVerticalTiles"
+	20	[351]	CALL     	2 2 2
+	21	[352]	GETTABLE 	3 0 -1	; "m_paperboxExtraRewardMap"
+	22	[352]	LEN      	3 3
+	23	[352]	EQ       	1 3 2
+	24	[352]	JMP      	0 7	; to 32
+	25	[353]	GETTABUP 	3 0 -9	; _ENV "Log"
+	26	[353]	GETTABLE 	3 3 -10	; "Error"
+	27	[353]	GETTABLE 	4 0 -11	; "BoardType"
+	28	[353]	LOADK    	5 -12	; "[PaperboxExtraRewardConfig]\232\161\140\230\149\176\228\184\141\228\184\186"
+	29	[353]	MOVE     	6 2
+	30	[353]	CONCAT   	4 4 6
+	31	[353]	CALL     	3 2 1
+	32	[355]	GETTABUP 	3 0 -13	; _ENV "ipairs"
+	33	[355]	GETTABLE 	4 0 -1	; "m_paperboxExtraRewardMap"
+	34	[355]	CALL     	3 2 4
+	35	[355]	JMP      	0 13	; to 49
+	36	[356]	LEN      	8 7
+	37	[356]	GETTABLE 	9 0 -14	; "HorizontalTiles"
+	38	[356]	EQ       	1 8 9
+	39	[356]	JMP      	0 9	; to 49
+	40	[357]	GETTABUP 	8 0 -9	; _ENV "Log"
+	41	[357]	GETTABLE 	8 8 -10	; "Error"
+	42	[357]	GETTABLE 	9 0 -11	; "BoardType"
+	43	[357]	LOADK    	10 -15	; "[PaperboxExtraRewardConfig]\231\172\172"
+	44	[357]	MOVE     	11 6
+	45	[357]	LOADK    	12 -16	; "\232\161\140\229\136\151\230\149\176\228\184\141\228\184\186"
+	46	[357]	GETTABLE 	13 0 -14	; "HorizontalTiles"
+	47	[357]	CONCAT   	9 9 13
+	48	[357]	CALL     	8 2 1
+	49	[355]	TFORCALL 	3 2
+	50	[355]	TFORLOOP 	5 -15	; to 36
+	51	[362]	NEWTABLE 	2 0 0
+	52	[362]	SETTABLE 	0 -17 2	; "m_paperboxExtraRewardAppearMap" -
+	53	[363]	GETTABUP 	2 0 -13	; _ENV "ipairs"
+	54	[363]	GETTABLE 	3 0 -1	; "m_paperboxExtraRewardMap"
+	55	[363]	CALL     	2 2 4
+	56	[363]	JMP      	0 36	; to 93
+	57	[364]	GETTABLE 	7 0 -17	; "m_paperboxExtraRewardAppearMap"
+	58	[364]	NEWTABLE 	8 0 0
+	59	[364]	SETTABLE 	7 5 8
+	60	[365]	GETTABUP 	7 0 -13	; _ENV "ipairs"
+	61	[365]	MOVE     	8 6
+	62	[365]	CALL     	7 2 4
+	63	[365]	JMP      	0 27	; to 91
+	64	[366]	GETTABUP 	12 0 -18	; _ENV "StringUtil"
+	65	[366]	GETTABLE 	12 12 -19	; "IsNilOrEmpty"
+	66	[366]	GETTABLE 	13 0 -1	; "m_paperboxExtraRewardMap"
+	67	[366]	GETTABLE 	13 13 5
+	68	[366]	GETTABLE 	13 13 10
+	69	[366]	CALL     	12 2 2
+	70	[366]	TEST     	12 1
+	71	[366]	JMP      	0 13	; to 85
+	72	[366]	GETTABLE 	12 0 -1	; "m_paperboxExtraRewardMap"
+	73	[366]	GETTABLE 	12 12 5
+	74	[366]	GETTABLE 	12 12 10
+	75	[366]	EQ       	1 12 -20	; - "0"
+	76	[366]	JMP      	0 8	; to 85
+	77	[367]	GETTABLE 	12 0 -1	; "m_paperboxExtraRewardMap"
+	78	[367]	GETTABLE 	12 12 5
+	79	[367]	GETTABUP 	13 0 -21	; _ENV "ConfigUtil"
+	80	[367]	GETTABLE 	13 13 -22	; "GetCurrencyFromStr"
+	81	[367]	MOVE     	14 11
+	82	[367]	CALL     	13 2 2
+	83	[367]	SETTABLE 	12 10 13
+	84	[367]	JMP      	0 3	; to 88
+	85	[369]	GETTABLE 	12 0 -1	; "m_paperboxExtraRewardMap"
+	86	[369]	GETTABLE 	12 12 5
+	87	[369]	SETTABLE 	12 10 -23	; - nil
+	88	[372]	GETTABLE 	12 0 -17	; "m_paperboxExtraRewardAppearMap"
+	89	[372]	GETTABLE 	12 12 5
+	90	[372]	SETTABLE 	12 10 1
+	91	[365]	TFORCALL 	7 2
+	92	[365]	TFORLOOP 	9 -29	; to 64
+	93	[363]	TFORCALL 	2 2
+	94	[363]	TFORLOOP 	4 -38	; to 57
+	95	[375]	RETURN   	0 1
+constants (23) for 00000143AD055540:
+	1	"m_paperboxExtraRewardMap"
+	2	"Table"
+	3	"DeepCopy"
+	4	"GetPaperBoxRewardConfig"
+	5	"IsEmpty"
+	6	"GameConfig"
+	7	"IsTestMode"
+	8	"GetPaperBoxRewardVerticalTiles"
+	9	"Log"
+	10	"Error"
+	11	"BoardType"
+	12	"[PaperboxExtraRewardConfig]\232\161\140\230\149\176\228\184\141\228\184\186"
+	13	"ipairs"
+	14	"HorizontalTiles"
+	15	"[PaperboxExtraRewardConfig]\231\172\172"
+	16	"\232\161\140\229\136\151\230\149\176\228\184\141\228\184\186"
+	17	"m_paperboxExtraRewardAppearMap"
+	18	"StringUtil"
+	19	"IsNilOrEmpty"
+	20	"0"
+	21	"ConfigUtil"
+	22	"GetCurrencyFromStr"
+	23	nil
+locals (18) for 00000143AD055540:
+	0	self	1	96
+	1	needRecordAppear	1	96
+	2	VerticalTiles	21	51
+	3	(for generator)	35	51
+	4	(for state)	35	51
+	5	(for control)	35	51
+	6	index	36	49
+	7	row	36	49
+	8	(for generator)	56	95
+	9	(for state)	56	95
+	10	(for control)	56	95
+	11	y	57	93
+	12	row	57	93
+	13	(for generator)	63	93
+	14	(for state)	63	93
+	15	(for control)	63	93
+	16	x	64	91
+	17	configStr	64	91
+upvalues (1) for 00000143AD055540:
+	0	_ENV	0	0
+
+function <BaseActionBoardModel.lua:377,379> (1 instruction at 00000143AD055740)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[379]	RETURN   	0 1
+constants (0) for 00000143AD055740:
+locals (1) for 00000143AD055740:
+	0	self	1	2
+upvalues (0) for 00000143AD055740:
+
+function <BaseActionBoardModel.lua:381,383> (3 instructions at 00000143AD056040)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[382]	GETTABLE 	1 0 -1	; "VerticalTiles"
+	2	[382]	RETURN   	1 2
+	3	[383]	RETURN   	0 1
+constants (1) for 00000143AD056040:
+	1	"VerticalTiles"
+locals (1) for 00000143AD056040:
+	0	self	1	4
+upvalues (0) for 00000143AD056040:
+
+function <BaseActionBoardModel.lua:386,388> (2 instructions at 00000143AD0558C0)
+2 params, 2 slots, 0 upvalues, 2 locals, 0 constants, 0 functions
+	1	[387]	RETURN   	1 2
+	2	[388]	RETURN   	0 1
+constants (0) for 00000143AD0558C0:
+locals (2) for 00000143AD0558C0:
+	0	self	1	3
+	1	boardPos	1	3
+upvalues (0) for 00000143AD0558C0:
+
+function <BaseActionBoardModel.lua:390,393> (25 instructions at 00000143AD0560C0)
+2 params, 5 slots, 0 upvalues, 2 locals, 4 constants, 0 functions
+	1	[391]	SELF     	2 0 -1	; "GetPaperBoxRewardPosition"
+	2	[391]	MOVE     	4 1
+	3	[391]	CALL     	2 3 2
+	4	[391]	MOVE     	1 2
+	5	[392]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardMap"
+	6	[392]	TEST     	2 0
+	7	[392]	JMP      	0 15	; to 23
+	8	[392]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardMap"
+	9	[392]	SELF     	3 1 -3	; "GetY"
+	10	[392]	CALL     	3 2 2
+	11	[392]	GETTABLE 	2 2 3
+	12	[392]	TEST     	2 0
+	13	[392]	JMP      	0 9	; to 23
+	14	[392]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardMap"
+	15	[392]	SELF     	3 1 -3	; "GetY"
+	16	[392]	CALL     	3 2 2
+	17	[392]	GETTABLE 	2 2 3
+	18	[392]	SELF     	3 1 -4	; "GetX"
+	19	[392]	CALL     	3 2 2
+	20	[392]	GETTABLE 	2 2 3
+	21	[392]	TEST     	2 1
+	22	[392]	JMP      	0 1	; to 24
+	23	[392]	LOADNIL  	2 0
+	24	[392]	RETURN   	2 2
+	25	[393]	RETURN   	0 1
+constants (4) for 00000143AD0560C0:
+	1	"GetPaperBoxRewardPosition"
+	2	"m_paperboxExtraRewardMap"
+	3	"GetY"
+	4	"GetX"
+locals (2) for 00000143AD0560C0:
+	0	self	1	26
+	1	boardPos	1	26
+upvalues (0) for 00000143AD0560C0:
+
+function <BaseActionBoardModel.lua:395,398> (25 instructions at 00000143AD0551C0)
+2 params, 5 slots, 0 upvalues, 2 locals, 4 constants, 0 functions
+	1	[396]	SELF     	2 0 -1	; "GetPaperBoxRewardPosition"
+	2	[396]	MOVE     	4 1
+	3	[396]	CALL     	2 3 2
+	4	[396]	MOVE     	1 2
+	5	[397]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardAppearMap"
+	6	[397]	TEST     	2 0
+	7	[397]	JMP      	0 15	; to 23
+	8	[397]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardAppearMap"
+	9	[397]	SELF     	3 1 -3	; "GetY"
+	10	[397]	CALL     	3 2 2
+	11	[397]	GETTABLE 	2 2 3
+	12	[397]	TEST     	2 0
+	13	[397]	JMP      	0 9	; to 23
+	14	[397]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardAppearMap"
+	15	[397]	SELF     	3 1 -3	; "GetY"
+	16	[397]	CALL     	3 2 2
+	17	[397]	GETTABLE 	2 2 3
+	18	[397]	SELF     	3 1 -4	; "GetX"
+	19	[397]	CALL     	3 2 2
+	20	[397]	GETTABLE 	2 2 3
+	21	[397]	TEST     	2 1
+	22	[397]	JMP      	0 1	; to 24
+	23	[397]	LOADNIL  	2 0
+	24	[397]	RETURN   	2 2
+	25	[398]	RETURN   	0 1
+constants (4) for 00000143AD0551C0:
+	1	"GetPaperBoxRewardPosition"
+	2	"m_paperboxExtraRewardAppearMap"
+	3	"GetY"
+	4	"GetX"
+locals (2) for 00000143AD0551C0:
+	0	self	1	26
+	1	boardPos	1	26
+upvalues (0) for 00000143AD0551C0:
+
+function <BaseActionBoardModel.lua:400,403> (12 instructions at 00000143AD055240)
+2 params, 5 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[401]	SELF     	2 0 -1	; "GetPaperBoxRewardPosition"
+	2	[401]	MOVE     	4 1
+	3	[401]	CALL     	2 3 2
+	4	[401]	MOVE     	1 2
+	5	[402]	GETTABLE 	2 0 -2	; "m_paperboxExtraRewardAppearMap"
+	6	[402]	SELF     	3 1 -3	; "GetY"
+	7	[402]	CALL     	3 2 2
+	8	[402]	GETTABLE 	2 2 3
+	9	[402]	SELF     	3 1 -4	; "GetX"
+	10	[402]	CALL     	3 2 2
+	11	[402]	SETTABLE 	2 3 -5	; - false
+	12	[403]	RETURN   	0 1
+constants (5) for 00000143AD055240:
+	1	"GetPaperBoxRewardPosition"
+	2	"m_paperboxExtraRewardAppearMap"
+	3	"GetY"
+	4	"GetX"
+	5	false
+locals (2) for 00000143AD055240:
+	0	self	1	13
+	1	boardPos	1	13
+upvalues (0) for 00000143AD055240:
+
+function <BaseActionBoardModel.lua:405,416> (42 instructions at 00000143AD055BC0)
+3 params, 12 slots, 1 upvalue, 4 locals, 23 constants, 0 functions
+	1	[406]	SELF     	3 0 -1	; "GetPaperBoxExtraReward"
+	2	[406]	MOVE     	5 1
+	3	[406]	CALL     	3 3 2
+	4	[407]	TEST     	3 0
+	5	[407]	JMP      	0 36	; to 42
+	6	[408]	GETTABUP 	4 0 -2	; _ENV "RewardApi"
+	7	[408]	GETTABLE 	4 4 -3	; "AcquireRewardsLogic"
+	8	[408]	NEWTABLE 	5 1 0
+	9	[408]	MOVE     	6 3
+	10	[408]	SETLIST  	5 1 1	; 1
+	11	[408]	GETTABUP 	6 0 -4	; _ENV "EPropertySource"
+	12	[408]	GETTABLE 	6 6 -5	; "Give"
+	13	[408]	GETTABUP 	7 0 -6	; _ENV "EBIType"
+	14	[408]	GETTABLE 	7 7 -7	; "CollapseItemReward"
+	15	[408]	GETTABUP 	8 0 -8	; _ENV "EGameMode"
+	16	[408]	GETTABLE 	8 8 -9	; "Main"
+	17	[408]	GETTABUP 	9 0 -10	; _ENV "CacheItemType"
+	18	[408]	GETTABLE 	9 9 -11	; "Type2"
+	19	[408]	GETTABLE 	10 0 -12	; "BoardType"
+	20	[408]	CALL     	4 7 1
+	21	[409]	GETTABUP 	4 0 -13	; _ENV "GM"
+	22	[409]	GETTABLE 	4 4 -14	; "BIManager"
+	23	[409]	SELF     	4 4 -15	; "LogAction"
+	24	[409]	GETTABUP 	6 0 -6	; _ENV "EBIType"
+	25	[409]	GETTABLE 	6 6 -7	; "CollapseItemReward"
+	26	[409]	NEWTABLE 	7 0 3
+	27	[410]	GETTABUP 	8 0 -17	; _ENV "tostring"
+	28	[410]	SELF     	9 0 -18	; "GetPaperBoxRewardPosition"
+	29	[410]	MOVE     	11 1
+	30	[410]	CALL     	9 3 0
+	31	[410]	CALL     	8 0 2
+	32	[410]	SETTABLE 	7 -16 8	; "pos" -
+	33	[411]	GETTABUP 	8 0 -20	; _ENV "ConfigUtil"
+	34	[411]	GETTABLE 	8 8 -21	; "GetCurrencyStr"
+	35	[411]	MOVE     	9 3
+	36	[411]	CALL     	8 2 2
+	37	[411]	SETTABLE 	7 -19 8	; "rwd" -
+	38	[412]	GETTABLE 	8 0 -12	; "BoardType"
+	39	[412]	SETTABLE 	7 -22 8	; "boardType" -
+	40	[409]	CALL     	4 4 1
+	41	[414]	SETTABLE 	2 -23 3	; "CollapseReward" -
+	42	[416]	RETURN   	0 1
+constants (23) for 00000143AD055BC0:
+	1	"GetPaperBoxExtraReward"
+	2	"RewardApi"
+	3	"AcquireRewardsLogic"
+	4	"EPropertySource"
+	5	"Give"
+	6	"EBIType"
+	7	"CollapseItemReward"
+	8	"EGameMode"
+	9	"Main"
+	10	"CacheItemType"
+	11	"Type2"
+	12	"BoardType"
+	13	"GM"
+	14	"BIManager"
+	15	"LogAction"
+	16	"pos"
+	17	"tostring"
+	18	"GetPaperBoxRewardPosition"
+	19	"rwd"
+	20	"ConfigUtil"
+	21	"GetCurrencyStr"
+	22	"boardType"
+	23	"CollapseReward"
+locals (4) for 00000143AD055BC0:
+	0	self	1	43
+	1	boardPos	1	43
+	2	msg	1	43
+	3	extraReward	4	43
+upvalues (1) for 00000143AD055BC0:
+	0	_ENV	0	0

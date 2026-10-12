@@ -72,3 +72,11 @@
 ## 当前门禁结论
 
 `status = pending`。本批目前只有输入清单、初始执行骨架和部分页面；不能称为付费系统已完成或可完整复刻。
+
+## 本轮核验记录（2026-10-12）
+
+- 环节 1/2 产物：`paid_source_inventory.json`、`scope_manifest.json`、`paid_logic_unit_ledger.csv`、`EXECUTION_SKELETON.md`。
+- 逻辑单元账本当前 27 条，状态仍以 draft/pending 为主，不能当作全量通过。
+- 付费站点目录当前 39 个 Markdown 页面；导航引用 39 个，实际文件缺失数 0。
+- MkDocs 构建完成；现有其它模块的历史链接警告不计入本批付费页面通过。
+- G1–G7 总状态仍为 `pending`，因为逐函数分支、全量配置双向核销和原版运行差分尚未完成。

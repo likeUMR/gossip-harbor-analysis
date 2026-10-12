@@ -1,0 +1,4792 @@
+
+main <PassActivityModel.lua:0,0> (306 instructions at 000001C307A2F000)
+0+ params, 3 slots, 1 upvalue, 0 locals, 187 constants, 79 functions
+	1	[6]	NEWTABLE 	0 0 1
+	2	[7]	SETTABLE 	0 -2 -3	; "StateChanged" 1
+	3	[8]	SETTABUP 	0 -1 0	; _ENV "PassActivityEventType"
+	4	[11]	NEWTABLE 	0 0 3
+	5	[12]	SETTABLE 	0 -5 -6	; "None" 0
+	6	[14]	SETTABLE 	0 -7 -3	; "Normal" 1
+	7	[16]	SETTABLE 	0 -8 -9	; "Super" 2
+	8	[17]	SETTABUP 	0 -4 0	; _ENV "PassActivityTicketState"
+	9	[20]	NEWTABLE 	0 0 3
+	10	[21]	SETTABLE 	0 -11 -12	; "EnergyWindow" "EnergyWnd"
+	11	[22]	SETTABLE 	0 -13 -13	; "BuyTicketPopupWindow" "BuyTicketPopupWindow"
+	12	[23]	SETTABLE 	0 -14 -15	; "ActivityWindow" "ActivityWnd"
+	13	[24]	SETTABUP 	0 -10 0	; _ENV "PassActivityBuyTicketScene"
+	14	[28]	GETTABUP 	0 0 -17	; _ENV "setmetatable"
+	15	[28]	NEWTABLE 	1 0 1
+	16	[29]	SETTABLE 	1 -18 -19	; "AllowRestoreOnEnd" true
+	17	[30]	GETTABUP 	2 0 -20	; _ENV "BaseActivityModel"
+	18	[28]	CALL     	0 3 2
+	19	[30]	SETTABUP 	0 -16 0	; _ENV "PassActivityModel"
+	20	[31]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	21	[31]	GETTABUP 	1 0 -16	; _ENV "PassActivityModel"
+	22	[31]	SETTABLE 	0 -21 1	; "__index" -
+	23	[33]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	24	[33]	SETTABLE 	0 -22 -23	; "TimelimitTaskOrderKey" "TimelimitTaskOrder"
+	25	[34]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	26	[34]	SETTABLE 	0 -24 -25	; "TimelimitTaskFinishedCountKey" "TimelimitTaskFinishedCount%d"
+	27	[35]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	28	[35]	SETTABLE 	0 -26 -27	; "TimelimitTaskFinishedKey" "TimelimitTaskFinished%d"
+	29	[36]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	30	[36]	SETTABLE 	0 -28 -29	; "BonusTaskIndexKey" "BonusTaskIndex"
+	31	[37]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	32	[37]	SETTABLE 	0 -30 -31	; "BonusTaskPreviewedKey" "BonusTaskPreviewed"
+	33	[38]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	34	[38]	SETTABLE 	0 -32 -33	; "CycleTaskFinishedCountKey" "CycleTaskFinishedCount"
+	35	[40]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	36	[40]	SETTABLE 	0 -34 -35	; "TokenNumberKey" "TokenNumber"
+	37	[41]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	38	[41]	SETTABLE 	0 -36 -37	; "TicketStateKey" "TicketState"
+	39	[42]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	40	[42]	SETTABLE 	0 -38 -39	; "TicketRewardStateKey" "TicketRewardState"
+	41	[47]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	42	[47]	SETTABLE 	0 -40 -41	; "UnlimitedRewardUnlockedTokenNumberKey" "UnlimitedRewardUnlockedTokenNumber"
+	43	[52]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	44	[52]	SETTABLE 	0 -42 -43	; "UnlimitedRewardTakenLevelKey" "UnlimitedRewardTakenLevel"
+	45	[53]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	46	[53]	SETTABLE 	0 -44 -45	; "RewardTakenKey" "RewardTaken%d_%d"
+	47	[55]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	48	[55]	SETTABLE 	0 -46 -47	; "FinishedLevelKey" "FinishedLevel"
+	49	[57]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	50	[57]	SETTABLE 	0 -48 -49	; "LastBuyTicketPopupWindowDayKey" "LastBuyTicketPopupWindowDay"
+	51	[58]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	52	[58]	SETTABLE 	0 -50 -51	; "BuyTicketPopupWindowOpenedStateEndedKey" "BuyTicketPopupWindowOpenedStateEnded"
+	53	[59]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	54	[59]	SETTABLE 	0 -52 -53	; "RewardEffectKey" "RewardEffect%d_%d"
+	55	[60]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	56	[60]	SETTABLE 	0 -54 -55	; "ProgressEffectKey" "ProgressEffect_%d"
+	57	[63]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	58	[63]	SETTABLE 	0 -56 -57	; "TicketBonusRewardTakenKey" "TicketBonusRewardTaken"
+	59	[65]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	60	[65]	SETTABLE 	0 -58 -59	; "DailyTaskRewardsKey" "DailyTaskRewards"
+	61	[66]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	62	[66]	SETTABLE 	0 -60 -60	; "LastDailyTaskFinished" "LastDailyTaskFinished"
+	63	[68]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	64	[68]	SETTABLE 	0 -61 -62	; "CycleTaskCount" 100
+	65	[69]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	66	[69]	SETTABLE 	0 -63 -62	; "CycleTaskReward" 100
+	67	[71]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	68	[71]	SETTABLE 	0 -64 -6	; "BattleScoreOrderId" 0
+	69	[73]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	70	[96]	CLOSURE  	1 0	; 000001C307A2F080
+	71	[73]	SETTABLE 	0 -65 1	; "Init" -
+	72	[98]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	73	[100]	CLOSURE  	1 1	; 000001C307A34A00
+	74	[98]	SETTABLE 	0 -66 1	; "Destroy" -
+	75	[102]	GETTABUP 	0 0 -16	; _ENV "PassActivityModel"
+	76	[170]	CLOSURE  	1 2	; 000001C307A34A80
+	77	[102]	SETTABLE 	0 -67 1	; "_LoadOtherServerConfig" -
+	78	[172]	GETTABUP 	0 0 -68	; _ENV "PassActivityModel"
+	79	[183]	CLOSURE  	1 3	; 000001C307A32D40
+	80	[172]	SETTABLE 	0 -69 1	; "_TryAddTask" -
+	81	[185]	GETTABUP 	0 0 -68	; _ENV "PassActivityModel"
+	82	[190]	CLOSURE  	1 4	; 000001C307A376F0
+	83	[185]	SETTABLE 	0 -70 1	; "UpdatePerSecond" -
+	84	[192]	GETTABUP 	0 0 -68	; _ENV "PassActivityModel"
+	85	[208]	CLOSURE  	1 5	; 000001C307A37770
+	86	[192]	SETTABLE 	0 -71 1	; "_OnStateChanged" -
+	87	[210]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	88	[212]	CLOSURE  	1 6	; 000001C307A37B70
+	89	[210]	SETTABLE 	0 -73 1	; "GetResourceLabels" -
+	90	[215]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	91	[227]	CLOSURE  	1 7	; 000001C307A37BF0
+	92	[215]	SETTABLE 	0 -74 1	; "GetBoardEntryShowConfig" -
+	93	[230]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	94	[257]	CLOSURE  	1 8	; 000001C307A38670
+	95	[230]	SETTABLE 	0 -75 1	; "GetHudEntryShowConfig" -
+	96	[259]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	97	[261]	CLOSURE  	1 9	; 000001C307A3A2F0
+	98	[259]	SETTABLE 	0 -76 1	; "GetLevelConfigs" -
+	99	[263]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	100	[265]	CLOSURE  	1 10	; 000001C307A39A70
+	101	[263]	SETTABLE 	0 -77 1	; "GetSuperTicketConfig" -
+	102	[267]	GETTABUP 	0 0 -72	; _ENV "PassActivityModel"
+	103	[290]	CLOSURE  	1 11	; 000001C307A3A070
+	104	[267]	SETTABLE 	0 -78 1	; "CanOpenBuyTicketPopupWindow" -
+	105	[292]	GETTABUP 	0 0 -79	; _ENV "PassActivityModel"
+	106	[299]	CLOSURE  	1 12	; 000001C307A39E70
+	107	[292]	SETTABLE 	0 -80 1	; "SetBuyTicketPopupWindowOpened" -
+	108	[302]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	109	[305]	CLOSURE  	1 13	; 000001C307A39EF0
+	110	[302]	SETTABLE 	0 -82 1	; "_OnItemMerged" -
+	111	[307]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	112	[309]	CLOSURE  	1 14	; 000001C307A3A270
+	113	[307]	SETTABLE 	0 -83 1	; "_OnOrderFinished" -
+	114	[311]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	115	[313]	CLOSURE  	1 15	; 000001C307A3A5F0
+	116	[311]	SETTABLE 	0 -84 1	; "_OnGoldScoreAcquired" -
+	117	[315]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	118	[322]	CLOSURE  	1 16	; 000001C307A39F70
+	119	[315]	SETTABLE 	0 -85 1	; "_OnPropertyConsumed" -
+	120	[324]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	121	[341]	CLOSURE  	1 17	; 000001C307A39CF0
+	122	[324]	SETTABLE 	0 -86 1	; "_OnTaskTargetReached" -
+	123	[345]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	124	[358]	CLOSURE  	1 18	; 000001C307A3A370
+	125	[345]	SETTABLE 	0 -87 1	; "_UpdateShouldRefreshTimelimitTasks" -
+	126	[360]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	127	[362]	CLOSURE  	1 19	; 000001C307A39C70
+	128	[360]	SETTABLE 	0 -88 1	; "ShouldRefreshTimelimitTasks" -
+	129	[364]	GETTABUP 	0 0 -81	; _ENV "PassActivityModel"
+	130	[375]	CLOSURE  	1 20	; 000001C307A39D70
+	131	[364]	SETTABLE 	0 -89 1	; "TestFinishNextTask" -
+	132	[377]	GETTABUP 	0 0 -90	; _ENV "PassActivityModel"
+	133	[383]	CLOSURE  	1 21	; 000001C307A3A4F0
+	134	[377]	SETTABLE 	0 -91 1	; "TestFinishAllTask" -
+	135	[385]	GETTABUP 	0 0 -92	; _ENV "PassActivityModel"
+	136	[410]	CLOSURE  	1 22	; 000001C307A3A770
+	137	[385]	SETTABLE 	0 -93 1	; "GetActiveTasks" -
+	138	[412]	GETTABUP 	0 0 -94	; _ENV "PassActivityModel"
+	139	[415]	CLOSURE  	1 23	; 000001C307A3A670
+	140	[412]	SETTABLE 	0 -95 1	; "GetFinishedCount" -
+	141	[417]	GETTABUP 	0 0 -94	; _ENV "PassActivityModel"
+	142	[438]	CLOSURE  	1 24	; 000001C307A3A470
+	143	[417]	SETTABLE 	0 -96 1	; "_AddFinishedCount" -
+	144	[440]	GETTABUP 	0 0 -94	; _ENV "PassActivityModel"
+	145	[444]	CLOSURE  	1 25	; 000001C307A3A870
+	146	[440]	SETTABLE 	0 -97 1	; "GetTaskRefreshTime" -
+	147	[446]	GETTABUP 	0 0 -98	; _ENV "PassActivityModel"
+	148	[455]	CLOSURE  	1 26	; 000001C307A3A3F0
+	149	[446]	SETTABLE 	0 -99 1	; "SupportBonusTask" -
+	150	[457]	GETTABUP 	0 0 -98	; _ENV "PassActivityModel"
+	151	[460]	CLOSURE  	1 27	; 000001C307A399F0
+	152	[457]	SETTABLE 	0 -100 1	; "SetBattleScoreOrder" -
+	153	[462]	GETTABUP 	0 0 -101	; _ENV "PassActivityModel"
+	154	[464]	CLOSURE  	1 28	; 000001C307A3A6F0
+	155	[462]	SETTABLE 	0 -102 1	; "GetBattleScoreOrder" -
+	156	[466]	GETTABUP 	0 0 -101	; _ENV "PassActivityModel"
+	157	[468]	CLOSURE  	1 29	; 000001C307A40590
+	158	[466]	SETTABLE 	0 -103 1	; "_GetBonusTaskIndex" -
+	159	[470]	GETTABUP 	0 0 -104	; _ENV "PassActivityModel"
+	160	[472]	CLOSURE  	1 30	; 000001C307A40790
+	161	[470]	SETTABLE 	0 -105 1	; "IsBonusTaskPreviewed" -
+	162	[474]	GETTABUP 	0 0 -106	; _ENV "PassActivityModel"
+	163	[476]	CLOSURE  	1 31	; 000001C307A40990
+	164	[474]	SETTABLE 	0 -107 1	; "SetBonusTaskPreviewed" -
+	165	[478]	GETTABUP 	0 0 -108	; _ENV "PassActivityModel"
+	166	[499]	CLOSURE  	1 32	; 000001C307A40610
+	167	[478]	SETTABLE 	0 -109 1	; "GetCanFinishTasks" -
+	168	[502]	GETTABUP 	0 0 -110	; _ENV "PassActivityModel"
+	169	[522]	CLOSURE  	1 33	; 000001C307A40810
+	170	[502]	SETTABLE 	0 -111 1	; "GetCanFinishTaskTimes" -
+	171	[524]	GETTABUP 	0 0 -112	; _ENV "PassActivityModel"
+	172	[531]	CLOSURE  	1 34	; 000001C307A41810
+	173	[524]	SETTABLE 	0 -113 1	; "HasDailyReward" -
+	174	[533]	GETTABUP 	0 0 -114	; _ENV "PassActivityModel"
+	175	[550]	CLOSURE  	1 35	; 000001C307A40D10
+	176	[533]	SETTABLE 	0 -115 1	; "GetCurrentFinishedLimitTaskProgress" -
+	177	[552]	GETTABUP 	0 0 -116	; _ENV "PassActivityModel"
+	178	[565]	CLOSURE  	1 36	; 000001C307A42410
+	179	[552]	SETTABLE 	0 -117 1	; "FinishTasks" -
+	180	[567]	GETTABUP 	0 0 -116	; _ENV "PassActivityModel"
+	181	[617]	CLOSURE  	1 37	; 000001C307A41910
+	182	[567]	SETTABLE 	0 -118 1	; "_FinishTaskOnce" -
+	183	[619]	GETTABUP 	0 0 -119	; _ENV "PassActivityModel"
+	184	[626]	CLOSURE  	1 38	; 000001C307A41890
+	185	[619]	SETTABLE 	0 -120 1	; "SaveDailyReward" -
+	186	[628]	GETTABUP 	0 0 -121	; _ENV "PassActivityModel"
+	187	[631]	CLOSURE  	1 39	; 000001C307A41A10
+	188	[628]	SETTABLE 	0 -122 1	; "GetSavedDailyRewards" -
+	189	[633]	GETTABUP 	0 0 -123	; _ENV "PassActivityModel"
+	190	[649]	CLOSURE  	1 40	; 000001C307A41A90
+	191	[633]	SETTABLE 	0 -124 1	; "AquireSavedDailyRewards" -
+	192	[651]	GETTABUP 	0 0 -125	; _ENV "PassActivityModel"
+	193	[678]	CLOSURE  	1 41	; 000001C307A41490
+	194	[651]	SETTABLE 	0 -126 1	; "RefreshTimelimitTasks" -
+	195	[680]	GETTABUP 	0 0 -127	; _ENV "PassActivityModel"
+	196	[682]	CLOSURE  	1 42	; 000001C307A41B10
+	197	[680]	SETTABLE 	0 -128 1	; "GetLastFinished" -
+	198	[684]	GETTABUP 	0 0 -129	; _ENV "PassActivityModel"
+	199	[686]	CLOSURE  	1 43	; 000001C307A40A10
+	200	[684]	SETTABLE 	0 -130 1	; "SetLastFinished" -
+	201	[688]	GETTABUP 	0 0 -131	; _ENV "PassActivityModel"
+	202	[693]	CLOSURE  	1 44	; 000001C307A41590
+	203	[688]	SETTABLE 	0 -132 1	; "GetDailyReward" -
+	204	[695]	GETTABUP 	0 0 -133	; _ENV "PassActivityModel"
+	205	[698]	CLOSURE  	1 45	; 000001C307A41410
+	206	[695]	SETTABLE 	0 -134 1	; "IsLastTimelimitTaskGroup" -
+	207	[700]	GETTABUP 	0 0 -135	; _ENV "PassActivityModel"
+	208	[722]	CLOSURE  	1 46	; 000001C307A41990
+	209	[700]	SETTABLE 	0 -136 1	; "_RefreshBonusTask" -
+	210	[724]	GETTABUP 	0 0 -137	; _ENV "PassActivityModel"
+	211	[730]	CLOSURE  	1 47	; 000001C307A40510
+	212	[724]	SETTABLE 	0 -138 1	; "_GetFinishedCountKey" -
+	213	[734]	GETTABUP 	0 0 -139	; _ENV "PassActivityModel"
+	214	[736]	CLOSURE  	1 48	; 000001C307A41790
+	215	[734]	SETTABLE 	0 -140 1	; "GetTokenNumber" -
+	216	[739]	GETTABUP 	0 0 -141	; _ENV "PassActivityModel"
+	217	[757]	CLOSURE  	1 49	; 000001C307A41B90
+	218	[739]	SETTABLE 	0 -142 1	; "_AcquireToken" -
+	219	[760]	GETTABUP 	0 0 -143	; _ENV "PassActivityModel"
+	220	[773]	CLOSURE  	1 50	; 000001C307A41C10
+	221	[760]	SETTABLE 	0 -144 1	; "GetCurrentLevel" -
+	222	[780]	GETTABUP 	0 0 -143	; _ENV "PassActivityModel"
+	223	[782]	CLOSURE  	1 51	; 000001C307A41210
+	224	[780]	SETTABLE 	0 -145 1	; "GetTicketState" -
+	225	[787]	GETTABUP 	0 0 -146	; _ENV "PassActivityModel"
+	226	[794]	CLOSURE  	1 52	; 000001C307A40C10
+	227	[787]	SETTABLE 	0 -147 1	; "GetTicketRewardState" -
+	228	[797]	GETTABUP 	0 0 -148	; _ENV "PassActivityModel"
+	229	[813]	CLOSURE  	1 53	; 000001C307A41E10
+	230	[797]	SETTABLE 	0 -149 1	; "BuyTicket" -
+	231	[815]	GETTABUP 	0 0 -148	; _ENV "PassActivityModel"
+	232	[828]	CLOSURE  	1 54	; 000001C307A42110
+	233	[815]	SETTABLE 	0 -150 1	; "RestoreIapRewards" -
+	234	[832]	GETTABUP 	0 0 -148	; _ENV "PassActivityModel"
+	235	[854]	CLOSURE  	1 55	; 000001C307A40910
+	236	[832]	SETTABLE 	0 -151 1	; "_OnBuyTicketSuccess" -
+	237	[857]	GETTABUP 	0 0 -152	; _ENV "PassActivityModel"
+	238	[865]	CLOSURE  	1 56	; 000001C307A41E90
+	239	[857]	SETTABLE 	0 -153 1	; "_GetTargetTicketState" -
+	240	[867]	GETTABUP 	0 0 -152	; _ENV "PassActivityModel"
+	241	[894]	CLOSURE  	1 57	; 000001C307A41D10
+	242	[867]	SETTABLE 	0 -154 1	; "GetCanTakeRewards" -
+	243	[896]	GETTABUP 	0 0 -152	; _ENV "PassActivityModel"
+	244	[899]	CLOSURE  	1 58	; 000001C307A41F10
+	245	[896]	SETTABLE 	0 -155 1	; "IsRewardTaken" -
+	246	[901]	GETTABUP 	0 0 -156	; _ENV "PassActivityModel"
+	247	[916]	CLOSURE  	1 59	; 000001C307A41090
+	248	[901]	SETTABLE 	0 -157 1	; "TakeReward" -
+	249	[921]	GETTABUP 	0 0 -158	; _ENV "PassActivityModel"
+	250	[929]	CLOSURE  	1 60	; 000001C307A41F90
+	251	[921]	SETTABLE 	0 -159 1	; "TakeTicketReward" -
+	252	[933]	GETTABUP 	0 0 -160	; _ENV "PassActivityModel"
+	253	[935]	CLOSURE  	1 61	; 000001C307A42010
+	254	[933]	SETTABLE 	0 -161 1	; "GetTicketBonusReward" -
+	255	[937]	GETTABUP 	0 0 -160	; _ENV "PassActivityModel"
+	256	[939]	CLOSURE  	1 62	; 000001C307A40A90
+	257	[937]	SETTABLE 	0 -162 1	; "HasTicketBonusRewardTaken" -
+	258	[941]	GETTABUP 	0 0 -163	; _ENV "PassActivityModel"
+	259	[943]	CLOSURE  	1 63	; 000001C307A42190
+	260	[941]	SETTABLE 	0 -164 1	; "CanTakeTicketBonusReward" -
+	261	[945]	GETTABUP 	0 0 -163	; _ENV "PassActivityModel"
+	262	[953]	CLOSURE  	1 64	; 000001C307A40B10
+	263	[945]	SETTABLE 	0 -165 1	; "TakeTicketBonusReward" -
+	264	[955]	GETTABUP 	0 0 -166	; _ENV "PassActivityModel"
+	265	[957]	CLOSURE  	1 65	; 000001C307A41010
+	266	[955]	SETTABLE 	0 -167 1	; "GetTicketIapType" -
+	267	[959]	GETTABUP 	0 0 -166	; _ENV "PassActivityModel"
+	268	[961]	CLOSURE  	1 66	; 000001C307A41290
+	269	[959]	SETTABLE 	0 -168 1	; "GetSuperTicketIapType" -
+	270	[963]	GETTABUP 	0 0 -166	; _ENV "PassActivityModel"
+	271	[965]	CLOSURE  	1 67	; 000001C307A40690
+	272	[963]	SETTABLE 	0 -169 1	; "GetUpgradeTicketIapType" -
+	273	[971]	GETTABUP 	0 0 -166	; _ENV "PassActivityModel"
+	274	[975]	CLOSURE  	1 68	; 000001C307A41110
+	275	[971]	SETTABLE 	0 -170 1	; "GetUnlimitedRewardConfig" -
+	276	[977]	GETTABUP 	0 0 -166	; _ENV "PassActivityModel"
+	277	[1000]	CLOSURE  	1 69	; 000001C307A42210
+	278	[977]	SETTABLE 	0 -171 1	; "GetUnlimitedRewardLevel" -
+	279	[1002]	GETTABUP 	0 0 -172	; _ENV "PassActivityModel"
+	280	[1015]	CLOSURE  	1 70	; 000001C307A42290
+	281	[1002]	SETTABLE 	0 -173 1	; "GetCanTakeUnlimitedRewards" -
+	282	[1017]	GETTABUP 	0 0 -172	; _ENV "PassActivityModel"
+	283	[1031]	CLOSURE  	1 71	; 000001C307A42310
+	284	[1017]	SETTABLE 	0 -174 1	; "TakeUnlimitedRewards" -
+	285	[1033]	GETTABUP 	0 0 -175	; _ENV "PassActivityModel"
+	286	[1035]	CLOSURE  	1 72	; 000001C307A41190
+	287	[1033]	SETTABLE 	0 -176 1	; "_GetUnlimitedRewardTakenLevel" -
+	288	[1039]	GETTABUP 	0 0 -177	; _ENV "PassActivityModel"
+	289	[1042]	CLOSURE  	1 73	; 000001C307A42390
+	290	[1039]	SETTABLE 	0 -178 1	; "HasShownRewardEffect" -
+	291	[1044]	GETTABUP 	0 0 -179	; _ENV "PassActivityModel"
+	292	[1047]	CLOSURE  	1 74	; 000001C307A41710
+	293	[1044]	SETTABLE 	0 -180 1	; "SetShownRewardEffect" -
+	294	[1049]	GETTABUP 	0 0 -181	; _ENV "PassActivityModel"
+	295	[1052]	CLOSURE  	1 75	; 000001C307A41310
+	296	[1049]	SETTABLE 	0 -182 1	; "HasShownProgressEffect" -
+	297	[1054]	GETTABUP 	0 0 -183	; _ENV "PassActivityModel"
+	298	[1057]	CLOSURE  	1 76	; 000001C307A40D90
+	299	[1054]	SETTABLE 	0 -184 1	; "SetShownProgressEffect" -
+	300	[1060]	GETTABUP 	0 0 -185	; _ENV "PassActivityModel"
+	301	[1062]	CLOSURE  	1 77	; 000001C307A40710
+	302	[1060]	SETTABLE 	0 -186 1	; "GetMissionProgress" -
+	303	[1064]	GETTABUP 	0 0 -185	; _ENV "PassActivityModel"
+	304	[1066]	CLOSURE  	1 78	; 000001C307A40B90
+	305	[1064]	SETTABLE 	0 -187 1	; "GetActivityDefinition" -
+	306	[1066]	RETURN   	0 1
+constants (187) for 000001C307A2F000:
+	1	"PassActivityEventType"
+	2	"StateChanged"
+	3	1
+	4	"PassActivityTicketState"
+	5	"None"
+	6	0
+	7	"Normal"
+	8	"Super"
+	9	2
+	10	"PassActivityBuyTicketScene"
+	11	"EnergyWindow"
+	12	"EnergyWnd"
+	13	"BuyTicketPopupWindow"
+	14	"ActivityWindow"
+	15	"ActivityWnd"
+	16	"PassActivityModel"
+	17	"setmetatable"
+	18	"AllowRestoreOnEnd"
+	19	true
+	20	"BaseActivityModel"
+	21	"__index"
+	22	"TimelimitTaskOrderKey"
+	23	"TimelimitTaskOrder"
+	24	"TimelimitTaskFinishedCountKey"
+	25	"TimelimitTaskFinishedCount%d"
+	26	"TimelimitTaskFinishedKey"
+	27	"TimelimitTaskFinished%d"
+	28	"BonusTaskIndexKey"
+	29	"BonusTaskIndex"
+	30	"BonusTaskPreviewedKey"
+	31	"BonusTaskPreviewed"
+	32	"CycleTaskFinishedCountKey"
+	33	"CycleTaskFinishedCount"
+	34	"TokenNumberKey"
+	35	"TokenNumber"
+	36	"TicketStateKey"
+	37	"TicketState"
+	38	"TicketRewardStateKey"
+	39	"TicketRewardState"
+	40	"UnlimitedRewardUnlockedTokenNumberKey"
+	41	"UnlimitedRewardUnlockedTokenNumber"
+	42	"UnlimitedRewardTakenLevelKey"
+	43	"UnlimitedRewardTakenLevel"
+	44	"RewardTakenKey"
+	45	"RewardTaken%d_%d"
+	46	"FinishedLevelKey"
+	47	"FinishedLevel"
+	48	"LastBuyTicketPopupWindowDayKey"
+	49	"LastBuyTicketPopupWindowDay"
+	50	"BuyTicketPopupWindowOpenedStateEndedKey"
+	51	"BuyTicketPopupWindowOpenedStateEnded"
+	52	"RewardEffectKey"
+	53	"RewardEffect%d_%d"
+	54	"ProgressEffectKey"
+	55	"ProgressEffect_%d"
+	56	"TicketBonusRewardTakenKey"
+	57	"TicketBonusRewardTaken"
+	58	"DailyTaskRewardsKey"
+	59	"DailyTaskRewards"
+	60	"LastDailyTaskFinished"
+	61	"CycleTaskCount"
+	62	100
+	63	"CycleTaskReward"
+	64	"BattleScoreOrderId"
+	65	"Init"
+	66	"Destroy"
+	67	"_LoadOtherServerConfig"
+	68	"PassActivityModel"
+	69	"_TryAddTask"
+	70	"UpdatePerSecond"
+	71	"_OnStateChanged"
+	72	"PassActivityModel"
+	73	"GetResourceLabels"
+	74	"GetBoardEntryShowConfig"
+	75	"GetHudEntryShowConfig"
+	76	"GetLevelConfigs"
+	77	"GetSuperTicketConfig"
+	78	"CanOpenBuyTicketPopupWindow"
+	79	"PassActivityModel"
+	80	"SetBuyTicketPopupWindowOpened"
+	81	"PassActivityModel"
+	82	"_OnItemMerged"
+	83	"_OnOrderFinished"
+	84	"_OnGoldScoreAcquired"
+	85	"_OnPropertyConsumed"
+	86	"_OnTaskTargetReached"
+	87	"_UpdateShouldRefreshTimelimitTasks"
+	88	"ShouldRefreshTimelimitTasks"
+	89	"TestFinishNextTask"
+	90	"PassActivityModel"
+	91	"TestFinishAllTask"
+	92	"PassActivityModel"
+	93	"GetActiveTasks"
+	94	"PassActivityModel"
+	95	"GetFinishedCount"
+	96	"_AddFinishedCount"
+	97	"GetTaskRefreshTime"
+	98	"PassActivityModel"
+	99	"SupportBonusTask"
+	100	"SetBattleScoreOrder"
+	101	"PassActivityModel"
+	102	"GetBattleScoreOrder"
+	103	"_GetBonusTaskIndex"
+	104	"PassActivityModel"
+	105	"IsBonusTaskPreviewed"
+	106	"PassActivityModel"
+	107	"SetBonusTaskPreviewed"
+	108	"PassActivityModel"
+	109	"GetCanFinishTasks"
+	110	"PassActivityModel"
+	111	"GetCanFinishTaskTimes"
+	112	"PassActivityModel"
+	113	"HasDailyReward"
+	114	"PassActivityModel"
+	115	"GetCurrentFinishedLimitTaskProgress"
+	116	"PassActivityModel"
+	117	"FinishTasks"
+	118	"_FinishTaskOnce"
+	119	"PassActivityModel"
+	120	"SaveDailyReward"
+	121	"PassActivityModel"
+	122	"GetSavedDailyRewards"
+	123	"PassActivityModel"
+	124	"AquireSavedDailyRewards"
+	125	"PassActivityModel"
+	126	"RefreshTimelimitTasks"
+	127	"PassActivityModel"
+	128	"GetLastFinished"
+	129	"PassActivityModel"
+	130	"SetLastFinished"
+	131	"PassActivityModel"
+	132	"GetDailyReward"
+	133	"PassActivityModel"
+	134	"IsLastTimelimitTaskGroup"
+	135	"PassActivityModel"
+	136	"_RefreshBonusTask"
+	137	"PassActivityModel"
+	138	"_GetFinishedCountKey"
+	139	"PassActivityModel"
+	140	"GetTokenNumber"
+	141	"PassActivityModel"
+	142	"_AcquireToken"
+	143	"PassActivityModel"
+	144	"GetCurrentLevel"
+	145	"GetTicketState"
+	146	"PassActivityModel"
+	147	"GetTicketRewardState"
+	148	"PassActivityModel"
+	149	"BuyTicket"
+	150	"RestoreIapRewards"
+	151	"_OnBuyTicketSuccess"
+	152	"PassActivityModel"
+	153	"_GetTargetTicketState"
+	154	"GetCanTakeRewards"
+	155	"IsRewardTaken"
+	156	"PassActivityModel"
+	157	"TakeReward"
+	158	"PassActivityModel"
+	159	"TakeTicketReward"
+	160	"PassActivityModel"
+	161	"GetTicketBonusReward"
+	162	"HasTicketBonusRewardTaken"
+	163	"PassActivityModel"
+	164	"CanTakeTicketBonusReward"
+	165	"TakeTicketBonusReward"
+	166	"PassActivityModel"
+	167	"GetTicketIapType"
+	168	"GetSuperTicketIapType"
+	169	"GetUpgradeTicketIapType"
+	170	"GetUnlimitedRewardConfig"
+	171	"GetUnlimitedRewardLevel"
+	172	"PassActivityModel"
+	173	"GetCanTakeUnlimitedRewards"
+	174	"TakeUnlimitedRewards"
+	175	"PassActivityModel"
+	176	"_GetUnlimitedRewardTakenLevel"
+	177	"PassActivityModel"
+	178	"HasShownRewardEffect"
+	179	"PassActivityModel"
+	180	"SetShownRewardEffect"
+	181	"PassActivityModel"
+	182	"HasShownProgressEffect"
+	183	"PassActivityModel"
+	184	"SetShownProgressEffect"
+	185	"PassActivityModel"
+	186	"GetMissionProgress"
+	187	"GetActivityDefinition"
+locals (0) for 000001C307A2F000:
+upvalues (1) for 000001C307A2F000:
+	0	_ENV	1	0
+
+function <PassActivityModel.lua:73,96> (75 instructions at 000001C307A2F080)
+3 params, 7 slots, 1 upvalue, 3 locals, 31 constants, 0 functions
+	1	[74]	GETTABUP 	3 0 -2	; _ENV "PassActivityDefinition"
+	2	[74]	GETTABLE 	3 3 1
+	3	[74]	SETTABLE 	0 -1 3	; "m_activityDefinition" -
+	4	[75]	GETTABUP 	3 0 -3	; _ENV "BaseActivityModel"
+	5	[75]	GETTABLE 	3 3 -4	; "Init"
+	6	[75]	MOVE     	4 0
+	7	[75]	MOVE     	5 1
+	8	[75]	MOVE     	6 2
+	9	[75]	CALL     	3 4 1
+	10	[77]	GETTABLE 	3 0 -1	; "m_activityDefinition"
+	11	[77]	GETTABLE 	3 3 -5	; "IapTypeSet"
+	12	[77]	EQ       	0 3 -6	; - 0
+	13	[77]	JMP      	0 10	; to 24
+	14	[78]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	15	[78]	GETTABLE 	3 3 -9	; "shoppingpassticket"
+	16	[78]	SETTABLE 	0 -7 3	; "m_ticketIapType" -
+	17	[79]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	18	[79]	GETTABLE 	3 3 -11	; "battlepassticket_super"
+	19	[79]	SETTABLE 	0 -10 3	; "m_superTicketIapType" -
+	20	[80]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	21	[80]	GETTABLE 	3 3 -13	; "battlepassticket_upgrade"
+	22	[80]	SETTABLE 	0 -12 3	; "m_upgradeTicketIapType" -
+	23	[80]	JMP      	0 23	; to 47
+	24	[82]	GETTABLE 	3 0 -1	; "m_activityDefinition"
+	25	[82]	GETTABLE 	3 3 -5	; "IapTypeSet"
+	26	[82]	EQ       	0 3 -14	; - 2
+	27	[82]	JMP      	0 10	; to 38
+	28	[83]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	29	[83]	GETTABLE 	3 3 -15	; "shoppingpassticket_2"
+	30	[83]	SETTABLE 	0 -7 3	; "m_ticketIapType" -
+	31	[84]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	32	[84]	GETTABLE 	3 3 -16	; "battlepassticket_super_2"
+	33	[84]	SETTABLE 	0 -10 3	; "m_superTicketIapType" -
+	34	[85]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	35	[85]	GETTABLE 	3 3 -17	; "battlepassticket_upgrade_2"
+	36	[85]	SETTABLE 	0 -12 3	; "m_upgradeTicketIapType" -
+	37	[85]	JMP      	0 9	; to 47
+	38	[87]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	39	[87]	GETTABLE 	3 3 -18	; "shoppingpassticket_1"
+	40	[87]	SETTABLE 	0 -7 3	; "m_ticketIapType" -
+	41	[88]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	42	[88]	GETTABLE 	3 3 -19	; "battlepassticket_super_1"
+	43	[88]	SETTABLE 	0 -10 3	; "m_superTicketIapType" -
+	44	[89]	GETTABUP 	3 0 -8	; _ENV "EIAPType"
+	45	[89]	GETTABLE 	3 3 -20	; "battlepassticket_upgrade_1"
+	46	[89]	SETTABLE 	0 -12 3	; "m_upgradeTicketIapType" -
+	47	[92]	GETTABUP 	3 0 -21	; _ENV "EventDispatcher"
+	48	[92]	GETTABLE 	3 3 -22	; "AddListener"
+	49	[92]	GETTABUP 	4 0 -23	; _ENV "EEventType"
+	50	[92]	GETTABLE 	4 4 -24	; "ItemMerged"
+	51	[92]	MOVE     	5 0
+	52	[92]	GETTABLE 	6 0 -25	; "_OnItemMerged"
+	53	[92]	CALL     	3 4 1
+	54	[93]	GETTABUP 	3 0 -21	; _ENV "EventDispatcher"
+	55	[93]	GETTABLE 	3 3 -22	; "AddListener"
+	56	[93]	GETTABUP 	4 0 -23	; _ENV "EEventType"
+	57	[93]	GETTABLE 	4 4 -26	; "OrderFinished"
+	58	[93]	MOVE     	5 0
+	59	[93]	GETTABLE 	6 0 -27	; "_OnOrderFinished"
+	60	[93]	CALL     	3 4 1
+	61	[94]	GETTABUP 	3 0 -21	; _ENV "EventDispatcher"
+	62	[94]	GETTABLE 	3 3 -22	; "AddListener"
+	63	[94]	GETTABUP 	4 0 -23	; _ENV "EEventType"
+	64	[94]	GETTABLE 	4 4 -28	; "GoldScoreAcquired"
+	65	[94]	MOVE     	5 0
+	66	[94]	GETTABLE 	6 0 -29	; "_OnGoldScoreAcquired"
+	67	[94]	CALL     	3 4 1
+	68	[95]	GETTABUP 	3 0 -21	; _ENV "EventDispatcher"
+	69	[95]	GETTABLE 	3 3 -22	; "AddListener"
+	70	[95]	GETTABUP 	4 0 -23	; _ENV "EEventType"
+	71	[95]	GETTABLE 	4 4 -30	; "PropertyConsumed"
+	72	[95]	MOVE     	5 0
+	73	[95]	GETTABLE 	6 0 -31	; "_OnPropertyConsumed"
+	74	[95]	CALL     	3 4 1
+	75	[96]	RETURN   	0 1
+constants (31) for 000001C307A2F080:
+	1	"m_activityDefinition"
+	2	"PassActivityDefinition"
+	3	"BaseActivityModel"
+	4	"Init"
+	5	"IapTypeSet"
+	6	0
+	7	"m_ticketIapType"
+	8	"EIAPType"
+	9	"shoppingpassticket"
+	10	"m_superTicketIapType"
+	11	"battlepassticket_super"
+	12	"m_upgradeTicketIapType"
+	13	"battlepassticket_upgrade"
+	14	2
+	15	"shoppingpassticket_2"
+	16	"battlepassticket_super_2"
+	17	"battlepassticket_upgrade_2"
+	18	"shoppingpassticket_1"
+	19	"battlepassticket_super_1"
+	20	"battlepassticket_upgrade_1"
+	21	"EventDispatcher"
+	22	"AddListener"
+	23	"EEventType"
+	24	"ItemMerged"
+	25	"_OnItemMerged"
+	26	"OrderFinished"
+	27	"_OnOrderFinished"
+	28	"GoldScoreAcquired"
+	29	"_OnGoldScoreAcquired"
+	30	"PropertyConsumed"
+	31	"_OnPropertyConsumed"
+locals (3) for 000001C307A2F080:
+	0	self	1	76
+	1	activityType	1	76
+	2	virtualDBTable	1	76
+upvalues (1) for 000001C307A2F080:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:98,100> (5 instructions at 000001C307A34A00)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[99]	GETTABUP 	1 0 -1	; _ENV "EventDispatcher"
+	2	[99]	GETTABLE 	1 1 -2	; "RemoveTarget"
+	3	[99]	MOVE     	2 0
+	4	[99]	CALL     	1 2 1
+	5	[100]	RETURN   	0 1
+constants (2) for 000001C307A34A00:
+	1	"EventDispatcher"
+	2	"RemoveTarget"
+locals (1) for 000001C307A34A00:
+	0	self	1	6
+upvalues (1) for 000001C307A34A00:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:102,170> (184 instructions at 000001C307A34A80)
+2 params, 16 slots, 1 upvalue, 21 locals, 67 constants, 1 function
+	1	[103]	SETTABLE 	0 -1 -2	; "m_levelTokenSum" 0
+	2	[104]	GETTABLE 	2 0 -3	; "m_config"
+	3	[104]	NEWTABLE 	3 0 0
+	4	[104]	SETTABLE 	2 -4 3	; "levelConfigs" -
+	5	[105]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	6	[105]	GETTABLE 	3 1 -6	; "battlePassReward"
+	7	[105]	CALL     	2 2 4
+	8	[105]	JMP      	0 21	; to 30
+	9	[106]	GETTABLE 	7 0 -1	; "m_levelTokenSum"
+	10	[106]	GETTABLE 	8 6 -7	; "require"
+	11	[106]	ADD      	7 7 8
+	12	[106]	SETTABLE 	0 -1 7	; "m_levelTokenSum" -
+	13	[108]	NEWTABLE 	7 0 3
+	14	[109]	GETTABLE 	8 6 -7	; "require"
+	15	[109]	SETTABLE 	7 -7 8	; "require" -
+	16	[110]	GETTABUP 	8 0 -9	; _ENV "ConfigUtil"
+	17	[110]	GETTABLE 	8 8 -10	; "GetCurrencyFromArrStr"
+	18	[110]	GETTABLE 	9 6 -11	; "reward"
+	19	[110]	CALL     	8 2 2
+	20	[110]	SETTABLE 	7 -8 8	; "rewards" -
+	21	[111]	GETTABUP 	8 0 -9	; _ENV "ConfigUtil"
+	22	[111]	GETTABLE 	8 8 -10	; "GetCurrencyFromArrStr"
+	23	[111]	GETTABLE 	9 6 -13	; "golden_reward"
+	24	[111]	CALL     	8 2 2
+	25	[111]	SETTABLE 	7 -12 8	; "vipRewards" -
+	26	[113]	GETTABLE 	8 0 -3	; "m_config"
+	27	[113]	GETTABLE 	8 8 -4	; "levelConfigs"
+	28	[113]	GETTABLE 	9 6 -14	; "level"
+	29	[113]	SETTABLE 	8 9 7
+	30	[105]	TFORCALL 	2 2
+	31	[105]	TFORLOOP 	4 -23	; to 9
+	32	[116]	GETTABLE 	2 0 -3	; "m_config"
+	33	[116]	NEWTABLE 	3 0 0
+	34	[116]	SETTABLE 	2 -15 3	; "timelimitTasks" -
+	35	[117]	NEWTABLE 	2 0 0
+	36	[118]	GETTABUP 	3 0 -16	; _ENV "Table"
+	37	[118]	GETTABLE 	3 3 -17	; "IsEmpty"
+	38	[118]	GETTABLE 	4 1 -18	; "battlePassMoreTask"
+	39	[118]	CALL     	3 2 2
+	40	[118]	TEST     	3 1
+	41	[118]	JMP      	0 6	; to 48
+	42	[119]	GETTABUP 	3 0 -16	; _ENV "Table"
+	43	[119]	GETTABLE 	3 3 -19	; "DeepCopy"
+	44	[119]	GETTABLE 	4 1 -18	; "battlePassMoreTask"
+	45	[119]	CALL     	3 2 2
+	46	[119]	MOVE     	2 3
+	47	[119]	JMP      	0 5	; to 53
+	48	[121]	GETTABUP 	3 0 -16	; _ENV "Table"
+	49	[121]	GETTABLE 	3 3 -19	; "DeepCopy"
+	50	[121]	GETTABLE 	4 1 -20	; "battlePassDailyTask"
+	51	[121]	CALL     	3 2 2
+	52	[121]	MOVE     	2 3
+	53	[124]	GETTABUP 	3 0 -5	; _ENV "ipairs"
+	54	[124]	MOVE     	4 2
+	55	[124]	CALL     	3 2 4
+	56	[124]	JMP      	0 42	; to 99
+	57	[125]	NEWTABLE 	8 0 0
+	58	[128]	LOADK    	9 -21	; 1
+	59	[130]	SELF     	10 0 -22	; "_TryAddTask"
+	60	[130]	MOVE     	12 8
+	61	[130]	MOVE     	13 7
+	62	[130]	LOADK    	14 -23	; "task"
+	63	[130]	MOVE     	15 9
+	64	[130]	CONCAT   	14 14 15
+	65	[130]	LOADBOOL 	15 0 0
+	66	[130]	CALL     	10 6 2
+	67	[130]	TEST     	10 0
+	68	[130]	JMP      	0 2	; to 71
+	69	[134]	ADD      	9 9 -21	; - 1
+	70	[134]	JMP      	0 -12	; to 59
+	71	[137]	GETTABUP 	10 0 -16	; _ENV "Table"
+	72	[137]	GETTABLE 	10 10 -17	; "IsEmpty"
+	73	[137]	GETTABLE 	11 1 -18	; "battlePassMoreTask"
+	74	[137]	CALL     	10 2 2
+	75	[137]	TEST     	10 1
+	76	[137]	JMP      	0 12	; to 89
+	77	[138]	SELF     	10 0 -22	; "_TryAddTask"
+	78	[138]	MOVE     	12 8
+	79	[138]	MOVE     	13 7
+	80	[138]	LOADK    	14 -24	; "spTask1"
+	81	[138]	LOADBOOL 	15 1 0
+	82	[138]	CALL     	10 6 1
+	83	[139]	SELF     	10 0 -22	; "_TryAddTask"
+	84	[139]	MOVE     	12 8
+	85	[139]	MOVE     	13 7
+	86	[139]	LOADK    	14 -25	; "spTask2"
+	87	[139]	LOADBOOL 	15 1 0
+	88	[139]	CALL     	10 6 1
+	89	[142]	GETTABLE 	10 7 -26	; "reward_1"
+	90	[143]	NEWTABLE 	11 0 3
+	91	[144]	GETTABLE 	12 7 -28	; "order"
+	92	[144]	SETTABLE 	11 -27 12	; "time" -
+	93	[145]	SETTABLE 	11 -29 8	; "tasks" -
+	94	[146]	SETTABLE 	11 -30 10	; "extraReward" -
+	95	[148]	GETTABLE 	12 0 -3	; "m_config"
+	96	[148]	GETTABLE 	12 12 -15	; "timelimitTasks"
+	97	[148]	GETTABLE 	13 7 -28	; "order"
+	98	[148]	SETTABLE 	12 13 11
+	99	[124]	TFORCALL 	3 2
+	100	[124]	TFORLOOP 	5 -44	; to 57
+	101	[151]	GETTABUP 	3 0 -31	; _ENV "MiscConfigReader"
+	102	[151]	GETTABLE 	3 3 -32	; "Create"
+	103	[151]	MOVE     	4 1
+	104	[151]	CALL     	3 2 2
+	105	[152]	SELF     	4 3 -33	; "GetInteger"
+	106	[152]	LOADK    	6 -34	; "bp_svip_token_free"
+	107	[152]	CALL     	4 3 2
+	108	[153]	EQ       	1 4 -35	; - nil
+	109	[153]	JMP      	0 19	; to 129
+	110	[154]	GETTABLE 	5 0 -3	; "m_config"
+	111	[154]	NEWTABLE 	6 0 2
+	112	[155]	SETTABLE 	6 -37 4	; "FreeToken" -
+	113	[156]	SELF     	7 3 -39	; "GetNumber"
+	114	[156]	LOADK    	9 -40	; "bp_svip_token_multiple"
+	115	[156]	CALL     	7 3 2
+	116	[156]	SETTABLE 	6 -38 7	; "MultipleFactor" -
+	117	[157]	SETTABLE 	5 -36 6	; "superTicketConfig" -
+	118	[159]	GETTABLE 	5 0 -3	; "m_config"
+	119	[159]	GETTABLE 	5 5 -36	; "superTicketConfig"
+	120	[159]	GETTABLE 	6 1 -42	; "battlePassExtraReward"
+	121	[159]	SETTABLE 	5 -41 6	; "UnlimitedRewardConfig" -
+	122	[160]	GETTABUP 	5 0 -43	; _ENV "table"
+	123	[160]	GETTABLE 	5 5 -44	; "sort"
+	124	[160]	GETTABLE 	6 0 -3	; "m_config"
+	125	[160]	GETTABLE 	6 6 -36	; "superTicketConfig"
+	126	[160]	GETTABLE 	6 6 -41	; "UnlimitedRewardConfig"
+	127	[160]	CLOSURE  	7 0	; 000001C307A32870
+	128	[160]	CALL     	5 3 1
+	129	[163]	SELF     	5 3 -45	; "GetString"
+	130	[163]	LOADK    	7 -46	; "bp_task"
+	131	[163]	CALL     	5 3 2
+	132	[163]	EQ       	0 5 -47	; - "new"
+	133	[163]	JMP      	0 3	; to 137
+	134	[163]	LOADK    	5 -48	; "energy"
+	135	[163]	TEST     	5 1
+	136	[163]	JMP      	0 1	; to 138
+	137	[163]	LOADK    	5 -49	; "merge"
+	138	[164]	GETTABLE 	6 0 -3	; "m_config"
+	139	[164]	GETTABUP 	7 0 -51	; _ENV "PassActivityTask"
+	140	[164]	GETTABLE 	7 7 -32	; "Create"
+	141	[164]	GETTABUP 	8 0 -52	; _ENV "PassActivityTaskType"
+	142	[164]	GETTABLE 	8 8 -53	; "Cycle"
+	143	[164]	LOADBOOL 	9 0 0
+	144	[164]	LOADK    	10 -21	; 1
+	145	[164]	MOVE     	11 5
+	146	[164]	GETTABUP 	12 0 -54	; _ENV "PassActivityModel"
+	147	[164]	GETTABLE 	12 12 -55	; "CycleTaskCount"
+	148	[164]	GETTABUP 	13 0 -54	; _ENV "PassActivityModel"
+	149	[164]	GETTABLE 	13 13 -56	; "CycleTaskReward"
+	150	[164]	CALL     	7 7 2
+	151	[164]	SETTABLE 	6 -50 7	; "cycleTask" -
+	152	[166]	GETTABLE 	6 0 -3	; "m_config"
+	153	[166]	SELF     	7 3 -58	; "GetReward"
+	154	[166]	LOADK    	9 -59	; "extra_bonus"
+	155	[166]	CALL     	7 3 2
+	156	[166]	SETTABLE 	6 -57 7	; "vipExtraBonus" -
+	157	[167]	GETTABUP 	6 0 -60	; _ENV "GameConfig"
+	158	[167]	GETTABLE 	6 6 -61	; "IsTestMode"
+	159	[167]	CALL     	6 1 2
+	160	[167]	TEST     	6 0
+	161	[167]	JMP      	0 22	; to 184
+	162	[167]	GETTABLE 	6 0 -3	; "m_config"
+	163	[167]	GETTABLE 	6 6 -57	; "vipExtraBonus"
+	164	[167]	EQ       	1 6 -35	; - nil
+	165	[167]	JMP      	0 18	; to 184
+	166	[167]	GETTABLE 	6 0 -3	; "m_config"
+	167	[167]	GETTABLE 	6 6 -57	; "vipExtraBonus"
+	168	[167]	GETTABLE 	6 6 -21	; 1
+	169	[167]	EQ       	1 6 -35	; - nil
+	170	[167]	JMP      	0 13	; to 184
+	171	[167]	GETTABLE 	6 0 -3	; "m_config"
+	172	[167]	GETTABLE 	6 6 -57	; "vipExtraBonus"
+	173	[167]	GETTABLE 	6 6 -21	; 1
+	174	[167]	GETTABUP 	7 0 -62	; _ENV "PROPERTY_TYPE"
+	175	[167]	GETTABLE 	6 6 7
+	176	[167]	GETTABUP 	7 0 -63	; _ENV "EPropertyType"
+	177	[167]	GETTABLE 	7 7 -64	; "Energy"
+	178	[167]	EQ       	1 6 7
+	179	[167]	JMP      	0 4	; to 184
+	180	[168]	GETTABUP 	6 0 -65	; _ENV "Log"
+	181	[168]	GETTABLE 	6 6 -66	; "Error"
+	182	[168]	LOADK    	7 -67	; "[BP]VIP\232\180\173\228\185\176\233\162\157\229\164\150\229\165\150\229\138\177\231\177\187\229\158\139\228\184\141\230\152\175\232\131\189\233\135\143\239\188\140\232\191\157\232\131\140\228\186\134\228\184\154\230\172\163\229\144\140\229\173\166\229\156\1682024\229\185\1807\230\156\13629\230\151\165\232\175\180\231\154\132\229\143\170\233\133\141\232\131\189\233\135\143\231\154\132\232\167\132\229\136\153"
+	183	[168]	CALL     	6 2 1
+	184	[170]	RETURN   	0 1
+constants (67) for 000001C307A34A80:
+	1	"m_levelTokenSum"
+	2	0
+	3	"m_config"
+	4	"levelConfigs"
+	5	"ipairs"
+	6	"battlePassReward"
+	7	"require"
+	8	"rewards"
+	9	"ConfigUtil"
+	10	"GetCurrencyFromArrStr"
+	11	"reward"
+	12	"vipRewards"
+	13	"golden_reward"
+	14	"level"
+	15	"timelimitTasks"
+	16	"Table"
+	17	"IsEmpty"
+	18	"battlePassMoreTask"
+	19	"DeepCopy"
+	20	"battlePassDailyTask"
+	21	1
+	22	"_TryAddTask"
+	23	"task"
+	24	"spTask1"
+	25	"spTask2"
+	26	"reward_1"
+	27	"time"
+	28	"order"
+	29	"tasks"
+	30	"extraReward"
+	31	"MiscConfigReader"
+	32	"Create"
+	33	"GetInteger"
+	34	"bp_svip_token_free"
+	35	nil
+	36	"superTicketConfig"
+	37	"FreeToken"
+	38	"MultipleFactor"
+	39	"GetNumber"
+	40	"bp_svip_token_multiple"
+	41	"UnlimitedRewardConfig"
+	42	"battlePassExtraReward"
+	43	"table"
+	44	"sort"
+	45	"GetString"
+	46	"bp_task"
+	47	"new"
+	48	"energy"
+	49	"merge"
+	50	"cycleTask"
+	51	"PassActivityTask"
+	52	"PassActivityTaskType"
+	53	"Cycle"
+	54	"PassActivityModel"
+	55	"CycleTaskCount"
+	56	"CycleTaskReward"
+	57	"vipExtraBonus"
+	58	"GetReward"
+	59	"extra_bonus"
+	60	"GameConfig"
+	61	"IsTestMode"
+	62	"PROPERTY_TYPE"
+	63	"EPropertyType"
+	64	"Energy"
+	65	"Log"
+	66	"Error"
+	67	"[BP]VIP\232\180\173\228\185\176\233\162\157\229\164\150\229\165\150\229\138\177\231\177\187\229\158\139\228\184\141\230\152\175\232\131\189\233\135\143\239\188\140\232\191\157\232\131\140\228\186\134\228\184\154\230\172\163\229\144\140\229\173\166\229\156\1682024\229\185\1807\230\156\13629\230\151\165\232\175\180\231\154\132\229\143\170\233\133\141\232\131\189\233\135\143\231\154\132\232\167\132\229\136\153"
+locals (21) for 000001C307A34A80:
+	0	self	1	185
+	1	config	1	185
+	2	(for generator)	8	32
+	3	(for state)	8	32
+	4	(for control)	8	32
+	5	_	9	30
+	6	lConfig	9	30
+	7	item	26	30
+	8	taskConfig	36	185
+	9	(for generator)	56	101
+	10	(for state)	56	101
+	11	(for control)	56	101
+	12	_	57	99
+	13	tConfig	57	99
+	14	tasks	58	99
+	15	index	59	99
+	16	reward	90	99
+	17	taskSet	95	99
+	18	reader	105	185
+	19	svipFreeToken	108	185
+	20	type	138	185
+upvalues (1) for 000001C307A34A80:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:160,160> (8 instructions at 000001C307A32870)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[160]	GETTABLE 	2 0 -1	; "id"
+	2	[160]	GETTABLE 	3 1 -1	; "id"
+	3	[160]	LT       	1 2 3
+	4	[160]	JMP      	0 1	; to 6
+	5	[160]	LOADBOOL 	2 0 1
+	6	[160]	LOADBOOL 	2 1 0
+	7	[160]	RETURN   	2 2
+	8	[160]	RETURN   	0 1
+constants (1) for 000001C307A32870:
+	1	"id"
+locals (2) for 000001C307A32870:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 000001C307A32870:
+
+function <PassActivityModel.lua:172,183> (33 instructions at 000001C307A32D40)
+5 params, 15 slots, 1 upvalue, 8 locals, 14 constants, 0 functions
+	1	[173]	GETTABLE 	5 2 3
+	2	[174]	EQ       	0 5 -1	; - nil
+	3	[174]	JMP      	0 2	; to 6
+	4	[175]	LOADBOOL 	6 0 0
+	5	[175]	RETURN   	6 2
+	6	[178]	GETTABUP 	6 0 -2	; _ENV "StringUtil"
+	7	[178]	GETTABLE 	6 6 -3	; "Split"
+	8	[178]	MOVE     	7 5
+	9	[178]	LOADK    	8 -4	; "-"
+	10	[178]	CALL     	6 3 2
+	11	[179]	GETTABUP 	7 0 -5	; _ENV "PassActivityTask"
+	12	[179]	GETTABLE 	7 7 -6	; "Create"
+	13	[179]	GETTABUP 	8 0 -7	; _ENV "PassActivityTaskType"
+	14	[179]	GETTABLE 	8 8 -8	; "Timelimit"
+	15	[179]	MOVE     	9 4
+	16	[179]	LEN      	10 1
+	17	[179]	ADD      	10 10 -9	; - 1
+	18	[179]	GETTABLE 	11 6 -9	; 1
+	19	[179]	GETTABUP 	12 0 -10	; _ENV "tonumber"
+	20	[179]	GETTABLE 	13 6 -11	; 2
+	21	[179]	CALL     	12 2 2
+	22	[179]	GETTABUP 	13 0 -10	; _ENV "tonumber"
+	23	[179]	GETTABLE 	14 6 -12	; 3
+	24	[179]	CALL     	13 2 0
+	25	[179]	CALL     	7 0 2
+	26	[180]	GETTABUP 	8 0 -13	; _ENV "table"
+	27	[180]	GETTABLE 	8 8 -14	; "insert"
+	28	[180]	MOVE     	9 1
+	29	[180]	MOVE     	10 7
+	30	[180]	CALL     	8 3 1
+	31	[182]	LOADBOOL 	8 1 0
+	32	[182]	RETURN   	8 2
+	33	[183]	RETURN   	0 1
+constants (14) for 000001C307A32D40:
+	1	nil
+	2	"StringUtil"
+	3	"Split"
+	4	"-"
+	5	"PassActivityTask"
+	6	"Create"
+	7	"PassActivityTaskType"
+	8	"Timelimit"
+	9	1
+	10	"tonumber"
+	11	2
+	12	3
+	13	"table"
+	14	"insert"
+locals (8) for 000001C307A32D40:
+	0	self	1	34
+	1	taskList	1	34
+	2	taskConfig	1	34
+	3	key	1	34
+	4	isBonus	1	34
+	5	taskString	2	34
+	6	parts	11	34
+	7	task	26	34
+upvalues (1) for 000001C307A32D40:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:185,190> (13 instructions at 000001C307A376F0)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[186]	GETTABUP 	1 0 -1	; _ENV "BaseActivityModel"
+	2	[186]	GETTABLE 	1 1 -2	; "UpdatePerSecond"
+	3	[186]	MOVE     	2 0
+	4	[186]	CALL     	1 2 1
+	5	[187]	SELF     	1 0 -3	; "GetState"
+	6	[187]	CALL     	1 2 2
+	7	[187]	GETTABUP 	2 0 -4	; _ENV "ActivityState"
+	8	[187]	GETTABLE 	2 2 -5	; "Started"
+	9	[187]	EQ       	0 1 2
+	10	[187]	JMP      	0 2	; to 13
+	11	[188]	SELF     	1 0 -6	; "_UpdateShouldRefreshTimelimitTasks"
+	12	[188]	CALL     	1 2 1
+	13	[190]	RETURN   	0 1
+constants (6) for 000001C307A376F0:
+	1	"BaseActivityModel"
+	2	"UpdatePerSecond"
+	3	"GetState"
+	4	"ActivityState"
+	5	"Started"
+	6	"_UpdateShouldRefreshTimelimitTasks"
+locals (1) for 000001C307A376F0:
+	0	self	1	14
+upvalues (1) for 000001C307A376F0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:192,208> (52 instructions at 000001C307A37770)
+1 param, 7 slots, 1 upvalue, 2 locals, 27 constants, 0 functions
+	1	[193]	SELF     	1 0 -1	; "GetState"
+	2	[193]	CALL     	1 2 2
+	3	[193]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[193]	GETTABLE 	2 2 -3	; "Started"
+	5	[193]	EQ       	0 1 2
+	6	[193]	JMP      	0 17	; to 24
+	7	[195]	GETTABLE 	1 0 -4	; "m_dbTable"
+	8	[195]	SELF     	1 1 -5	; "GetValue"
+	9	[195]	GETTABUP 	3 0 -6	; _ENV "PassActivityModel"
+	10	[195]	GETTABLE 	3 3 -7	; "CycleTaskFinishedCountKey"
+	11	[195]	LOADK    	4 -8	; "value"
+	12	[195]	CALL     	1 4 2
+	13	[195]	EQ       	0 1 -9	; - nil
+	14	[195]	JMP      	0 9	; to 24
+	15	[196]	GETTABLE 	1 0 -4	; "m_dbTable"
+	16	[196]	SELF     	1 1 -10	; "Set"
+	17	[196]	GETTABUP 	3 0 -6	; _ENV "PassActivityModel"
+	18	[196]	GETTABLE 	3 3 -7	; "CycleTaskFinishedCountKey"
+	19	[196]	LOADK    	4 -8	; "value"
+	20	[196]	LOADK    	5 -11	; 0
+	21	[196]	CALL     	1 5 1
+	22	[197]	SELF     	1 0 -12	; "RefreshTimelimitTasks"
+	23	[197]	CALL     	1 2 1
+	24	[201]	SELF     	1 0 -1	; "GetState"
+	25	[201]	CALL     	1 2 2
+	26	[201]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	27	[201]	GETTABLE 	2 2 -13	; "Released"
+	28	[201]	EQ       	1 1 2
+	29	[201]	JMP      	0 12	; to 42
+	30	[202]	SELF     	1 0 -14	; "GetCurrentLevel"
+	31	[202]	CALL     	1 2 2
+	32	[203]	GETTABUP 	2 0 -15	; _ENV "EventDispatcher"
+	33	[203]	GETTABLE 	2 2 -16	; "DispatchEvent"
+	34	[203]	GETTABUP 	3 0 -17	; _ENV "EEventType"
+	35	[203]	GETTABLE 	3 3 -18	; "PassActivityLevelUp"
+	36	[203]	NEWTABLE 	4 0 2
+	37	[203]	SETTABLE 	4 -19 1	; "num" -
+	38	[203]	SELF     	5 0 -21	; "GetType"
+	39	[203]	CALL     	5 2 2
+	40	[203]	SETTABLE 	4 -20 5	; "atype" -
+	41	[203]	CALL     	2 3 1
+	42	[206]	GETTABLE 	1 0 -22	; "event"
+	43	[206]	SELF     	1 1 -23	; "Call"
+	44	[206]	GETTABUP 	3 0 -24	; _ENV "PassActivityEventType"
+	45	[206]	GETTABLE 	3 3 -25	; "StateChanged"
+	46	[206]	CALL     	1 3 1
+	47	[207]	GETTABUP 	1 0 -15	; _ENV "EventDispatcher"
+	48	[207]	GETTABLE 	1 1 -16	; "DispatchEvent"
+	49	[207]	GETTABLE 	2 0 -26	; "m_activityDefinition"
+	50	[207]	GETTABLE 	2 2 -27	; "StateChangedEvent"
+	51	[207]	CALL     	1 2 1
+	52	[208]	RETURN   	0 1
+constants (27) for 000001C307A37770:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"PassActivityModel"
+	7	"CycleTaskFinishedCountKey"
+	8	"value"
+	9	nil
+	10	"Set"
+	11	0
+	12	"RefreshTimelimitTasks"
+	13	"Released"
+	14	"GetCurrentLevel"
+	15	"EventDispatcher"
+	16	"DispatchEvent"
+	17	"EEventType"
+	18	"PassActivityLevelUp"
+	19	"num"
+	20	"atype"
+	21	"GetType"
+	22	"event"
+	23	"Call"
+	24	"PassActivityEventType"
+	25	"StateChanged"
+	26	"m_activityDefinition"
+	27	"StateChangedEvent"
+locals (2) for 000001C307A37770:
+	0	self	1	53
+	1	currentTokenLevel	32	42
+upvalues (1) for 000001C307A37770:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:210,212> (4 instructions at 000001C307A37B70)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[211]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[211]	GETTABLE 	1 1 -2	; "ResourceLabels"
+	3	[211]	RETURN   	1 2
+	4	[212]	RETURN   	0 1
+constants (2) for 000001C307A37B70:
+	1	"m_activityDefinition"
+	2	"ResourceLabels"
+locals (1) for 000001C307A37B70:
+	0	self	1	5
+upvalues (0) for 000001C307A37B70:
+
+function <PassActivityModel.lua:215,227> (21 instructions at 000001C307A37BF0)
+1 param, 5 slots, 1 upvalue, 1 local, 16 constants, 1 function
+	1	[216]	NEWTABLE 	1 0 7
+	2	[217]	GETTABLE 	2 0 -2	; "m_activityDefinition"
+	3	[217]	GETTABLE 	2 2 -3	; "StateChangedEvent"
+	4	[217]	SETTABLE 	1 -1 2	; "statusChangeName" -
+	5	[218]	LOADK    	2 -5	; "m_"
+	6	[218]	GETTABLE 	3 0 -6	; "m_type"
+	7	[218]	LOADK    	4 -7	; "Bubble"
+	8	[218]	CONCAT   	2 2 4
+	9	[218]	SETTABLE 	1 -4 2	; "bubbleName" -
+	10	[219]	SETTABLE 	1 -8 -9	; "bubbleNodeName" "m_passActivityBubbleNode"
+	11	[220]	GETTABLE 	2 0 -2	; "m_activityDefinition"
+	12	[220]	GETTABLE 	2 2 -11	; "BoardEntryPrefabName"
+	13	[220]	SETTABLE 	1 -10 2	; "entryPrefabName" -
+	14	[221]	SETTABLE 	1 -12 -13	; "bubbleCountName" "m_passActivityBubbleCount"
+	15	[222]	SELF     	2 0 -15	; "GetType"
+	16	[222]	CALL     	2 2 2
+	17	[222]	SETTABLE 	1 -14 2	; "activityType" -
+	18	[225]	CLOSURE  	2 0	; 000001C307A38590
+	19	[225]	SETTABLE 	1 -16 2	; "checkFun" -
+	20	[226]	RETURN   	1 2
+	21	[227]	RETURN   	0 1
+constants (16) for 000001C307A37BF0:
+	1	"statusChangeName"
+	2	"m_activityDefinition"
+	3	"StateChangedEvent"
+	4	"bubbleName"
+	5	"m_"
+	6	"m_type"
+	7	"Bubble"
+	8	"bubbleNodeName"
+	9	"m_passActivityBubbleNode"
+	10	"entryPrefabName"
+	11	"BoardEntryPrefabName"
+	12	"bubbleCountName"
+	13	"m_passActivityBubbleCount"
+	14	"activityType"
+	15	"GetType"
+	16	"checkFun"
+locals (1) for 000001C307A37BF0:
+	0	self	1	22
+upvalues (1) for 000001C307A37BF0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:223,225> (11 instructions at 000001C307A38590)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[224]	GETUPVAL 	0 0	; self
+	2	[224]	SELF     	0 0 -1	; "GetState"
+	3	[224]	CALL     	0 2 2
+	4	[224]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[224]	GETTABLE 	1 1 -3	; "Started"
+	6	[224]	EQ       	1 0 1
+	7	[224]	JMP      	0 1	; to 9
+	8	[224]	LOADBOOL 	0 0 1
+	9	[224]	LOADBOOL 	0 1 0
+	10	[224]	RETURN   	0 2
+	11	[225]	RETURN   	0 1
+constants (3) for 000001C307A38590:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+locals (0) for 000001C307A38590:
+upvalues (2) for 000001C307A38590:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <PassActivityModel.lua:230,257> (37 instructions at 000001C307A38670)
+1 param, 5 slots, 1 upvalue, 1 local, 23 constants, 3 functions
+	1	[231]	NEWTABLE 	1 0 11
+	2	[232]	SETTABLE 	1 -1 -2	; "Type" "passActivity"
+	3	[233]	NEWTABLE 	2 1 0
+	4	[233]	GETTABLE 	3 0 -4	; "m_activityDefinition"
+	5	[233]	GETTABLE 	3 3 -5	; "StateChangedEvent"
+	6	[233]	SETLIST  	2 1 1	; 1
+	7	[233]	SETTABLE 	1 -3 2	; "ArrCheckShowEvent" -
+	8	[234]	GETTABUP 	2 0 -7	; _ENV "UIPrefabConfigName"
+	9	[234]	GETTABLE 	2 2 -8	; "HudActivityEntry"
+	10	[234]	SETTABLE 	1 -6 2	; "EntryPrefabConfigName" -
+	11	[237]	CLOSURE  	2 0	; 000001C307A39920
+	12	[237]	SETTABLE 	1 -9 2	; "CheckFunc" -
+	13	[238]	GETTABUP 	2 0 -11	; _ENV "EHudSideBarType"
+	14	[238]	GETTABLE 	2 2 -12	; "Right"
+	15	[238]	SETTABLE 	1 -10 2	; "HudSideBarType" -
+	16	[239]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	17	[239]	GETTABLE 	2 2 -13	; "EntryButtonKey"
+	18	[239]	SETTABLE 	1 -13 2	; "EntryButtonKey" -
+	19	[240]	GETTABLE 	2 0 -4	; "m_activityDefinition"
+	20	[240]	GETTABLE 	2 2 -14	; "EntryIconName"
+	21	[240]	SETTABLE 	1 -14 2	; "EntryIconName" -
+	22	[247]	CLOSURE  	2 1	; 000001C307A39AF0
+	23	[247]	SETTABLE 	1 -15 2	; "OnClickedFunc" -
+	24	[248]	GETTABUP 	2 0 -17	; _ENV "EntryRedPointType"
+	25	[248]	GETTABLE 	2 2 -18	; "Num"
+	26	[248]	SETTABLE 	1 -16 2	; "RedPointType" -
+	27	[251]	CLOSURE  	2 2	; 000001C307A39FF0
+	28	[251]	SETTABLE 	1 -19 2	; "GetRedPointNumFunc" -
+	29	[252]	NEWTABLE 	2 2 0
+	30	[253]	GETTABLE 	3 0 -21	; "m_activityDefinition"
+	31	[253]	GETTABLE 	3 3 -22	; "CanFinishTaskTimesChangedEvent"
+	32	[254]	GETTABLE 	4 0 -21	; "m_activityDefinition"
+	33	[255]	GETTABLE 	4 4 -23	; "CanTakeRewardNumberChangedEvent"
+	34	[255]	SETLIST  	2 2 1	; 1
+	35	[255]	SETTABLE 	1 -20 2	; "ArrUpdateEntryContentEvent" -
+	36	[256]	RETURN   	1 2
+	37	[257]	RETURN   	0 1
+constants (23) for 000001C307A38670:
+	1	"Type"
+	2	"passActivity"
+	3	"ArrCheckShowEvent"
+	4	"m_activityDefinition"
+	5	"StateChangedEvent"
+	6	"EntryPrefabConfigName"
+	7	"UIPrefabConfigName"
+	8	"HudActivityEntry"
+	9	"CheckFunc"
+	10	"HudSideBarType"
+	11	"EHudSideBarType"
+	12	"Right"
+	13	"EntryButtonKey"
+	14	"EntryIconName"
+	15	"OnClickedFunc"
+	16	"RedPointType"
+	17	"EntryRedPointType"
+	18	"Num"
+	19	"GetRedPointNumFunc"
+	20	"ArrUpdateEntryContentEvent"
+	21	"m_activityDefinition"
+	22	"CanFinishTaskTimesChangedEvent"
+	23	"CanTakeRewardNumberChangedEvent"
+locals (1) for 000001C307A38670:
+	0	self	1	38
+upvalues (1) for 000001C307A38670:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:235,237> (11 instructions at 000001C307A39920)
+0 params, 2 slots, 2 upvalues, 0 locals, 3 constants, 0 functions
+	1	[236]	GETUPVAL 	0 0	; self
+	2	[236]	SELF     	0 0 -1	; "GetState"
+	3	[236]	CALL     	0 2 2
+	4	[236]	GETTABUP 	1 1 -2	; _ENV "ActivityState"
+	5	[236]	GETTABLE 	1 1 -3	; "Started"
+	6	[236]	EQ       	1 0 1
+	7	[236]	JMP      	0 1	; to 9
+	8	[236]	LOADBOOL 	0 0 1
+	9	[236]	LOADBOOL 	0 1 0
+	10	[236]	RETURN   	0 2
+	11	[237]	RETURN   	0 1
+constants (3) for 000001C307A39920:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+locals (0) for 000001C307A39920:
+upvalues (2) for 000001C307A39920:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <PassActivityModel.lua:241,247> (27 instructions at 000001C307A39AF0)
+0 params, 5 slots, 2 upvalues, 0 locals, 8 constants, 0 functions
+	1	[242]	GETUPVAL 	0 0	; self
+	2	[242]	SELF     	0 0 -1	; "HasDailyReward"
+	3	[242]	CALL     	0 2 2
+	4	[242]	TEST     	0 1
+	5	[242]	JMP      	0 11	; to 17
+	6	[243]	GETTABUP 	0 1 -2	; _ENV "GM"
+	7	[243]	GETTABLE 	0 0 -3	; "UIManager"
+	8	[243]	SELF     	0 0 -4	; "OpenView"
+	9	[243]	GETTABUP 	2 0 -5	; self "m_activityDefinition"
+	10	[243]	GETTABLE 	2 2 -6	; "MainWindowPrefabName"
+	11	[243]	GETUPVAL 	3 0	; self
+	12	[243]	SELF     	3 3 -7	; "GetType"
+	13	[243]	CALL     	3 2 2
+	14	[243]	LOADBOOL 	4 1 0
+	15	[243]	CALL     	0 5 1
+	16	[243]	JMP      	0 10	; to 27
+	17	[245]	GETTABUP 	0 1 -2	; _ENV "GM"
+	18	[245]	GETTABLE 	0 0 -3	; "UIManager"
+	19	[245]	SELF     	0 0 -4	; "OpenView"
+	20	[245]	GETTABUP 	2 0 -5	; self "m_activityDefinition"
+	21	[245]	GETTABLE 	2 2 -8	; "MainWindowNewPrefabName"
+	22	[245]	GETUPVAL 	3 0	; self
+	23	[245]	SELF     	3 3 -7	; "GetType"
+	24	[245]	CALL     	3 2 2
+	25	[245]	LOADBOOL 	4 1 0
+	26	[245]	CALL     	0 5 1
+	27	[247]	RETURN   	0 1
+constants (8) for 000001C307A39AF0:
+	1	"HasDailyReward"
+	2	"GM"
+	3	"UIManager"
+	4	"OpenView"
+	5	"m_activityDefinition"
+	6	"MainWindowPrefabName"
+	7	"GetType"
+	8	"MainWindowNewPrefabName"
+locals (0) for 000001C307A39AF0:
+upvalues (2) for 000001C307A39AF0:
+	0	self	1	0
+	1	_ENV	0	0
+
+function <PassActivityModel.lua:249,251> (10 instructions at 000001C307A39FF0)
+0 params, 3 slots, 1 upvalue, 0 locals, 2 constants, 0 functions
+	1	[250]	GETUPVAL 	0 0	; self
+	2	[250]	SELF     	0 0 -1	; "GetCanFinishTaskTimes"
+	3	[250]	CALL     	0 2 2
+	4	[250]	GETUPVAL 	1 0	; self
+	5	[250]	SELF     	1 1 -2	; "GetCanTakeRewards"
+	6	[250]	CALL     	1 2 2
+	7	[250]	LEN      	1 1
+	8	[250]	ADD      	0 0 1
+	9	[250]	RETURN   	0 2
+	10	[251]	RETURN   	0 1
+constants (2) for 000001C307A39FF0:
+	1	"GetCanFinishTaskTimes"
+	2	"GetCanTakeRewards"
+locals (0) for 000001C307A39FF0:
+upvalues (1) for 000001C307A39FF0:
+	0	self	1	0
+
+function <PassActivityModel.lua:259,261> (4 instructions at 000001C307A3A2F0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[260]	GETTABLE 	1 0 -1	; "m_config"
+	2	[260]	GETTABLE 	1 1 -2	; "levelConfigs"
+	3	[260]	RETURN   	1 2
+	4	[261]	RETURN   	0 1
+constants (2) for 000001C307A3A2F0:
+	1	"m_config"
+	2	"levelConfigs"
+locals (1) for 000001C307A3A2F0:
+	0	self	1	5
+upvalues (0) for 000001C307A3A2F0:
+
+function <PassActivityModel.lua:263,265> (4 instructions at 000001C307A39A70)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[264]	GETTABLE 	1 0 -1	; "m_config"
+	2	[264]	GETTABLE 	1 1 -2	; "superTicketConfig"
+	3	[264]	RETURN   	1 2
+	4	[265]	RETURN   	0 1
+constants (2) for 000001C307A39A70:
+	1	"m_config"
+	2	"superTicketConfig"
+locals (1) for 000001C307A39A70:
+	0	self	1	5
+upvalues (0) for 000001C307A39A70:
+
+function <PassActivityModel.lua:267,290> (66 instructions at 000001C307A3A070)
+1 param, 6 slots, 1 upvalue, 4 locals, 23 constants, 0 functions
+	1	[269]	SELF     	1 0 -1	; "GetTicketState"
+	2	[269]	CALL     	1 2 2
+	3	[269]	GETTABUP 	2 0 -2	; _ENV "PassActivityTicketState"
+	4	[269]	GETTABLE 	2 2 -3	; "None"
+	5	[269]	EQ       	1 1 2
+	6	[269]	JMP      	0 2	; to 9
+	7	[270]	LOADBOOL 	1 0 0
+	8	[270]	RETURN   	1 2
+	9	[273]	SELF     	1 0 -4	; "GetState"
+	10	[273]	CALL     	1 2 2
+	11	[273]	GETTABUP 	2 0 -5	; _ENV "ActivityState"
+	12	[273]	GETTABLE 	2 2 -6	; "Started"
+	13	[273]	EQ       	0 1 2
+	14	[273]	JMP      	0 32	; to 47
+	15	[275]	SELF     	1 0 -7	; "GetCurrentLevel"
+	16	[275]	CALL     	1 2 2
+	17	[276]	GETTABLE 	2 0 -8	; "m_config"
+	18	[276]	GETTABLE 	2 2 -9	; "levelConfigs"
+	19	[276]	LEN      	2 2
+	20	[276]	EQ       	1 1 2
+	21	[276]	JMP      	0 2	; to 24
+	22	[277]	LOADBOOL 	2 0 0
+	23	[277]	RETURN   	2 2
+	24	[281]	GETTABLE 	2 0 -10	; "m_dbTable"
+	25	[281]	SELF     	2 2 -11	; "GetValue"
+	26	[281]	GETTABUP 	4 0 -12	; _ENV "PassActivityModel"
+	27	[281]	GETTABLE 	4 4 -13	; "LastBuyTicketPopupWindowDayKey"
+	28	[281]	LOADK    	5 -14	; "value"
+	29	[281]	CALL     	2 4 2
+	30	[281]	TEST     	2 1
+	31	[281]	JMP      	0 1	; to 33
+	32	[281]	LOADK    	2 -15	; 0
+	33	[282]	GETTABUP 	3 0 -16	; _ENV "GM"
+	34	[282]	GETTABLE 	3 3 -17	; "GameModel"
+	35	[282]	SELF     	3 3 -18	; "GetServerTime"
+	36	[282]	CALL     	3 2 2
+	37	[282]	GETTABLE 	4 0 -8	; "m_config"
+	38	[282]	GETTABLE 	4 4 -19	; "sTime"
+	39	[282]	SUB      	3 3 4
+	40	[282]	IDIV     	3 3 -20	; - 86400
+	41	[283]	LT       	1 2 3
+	42	[283]	JMP      	0 1	; to 44
+	43	[283]	LOADBOOL 	4 0 1
+	44	[283]	LOADBOOL 	4 1 0
+	45	[283]	RETURN   	4 2
+	46	[283]	JMP      	0 17	; to 64
+	47	[285]	SELF     	1 0 -4	; "GetState"
+	48	[285]	CALL     	1 2 2
+	49	[285]	GETTABUP 	2 0 -5	; _ENV "ActivityState"
+	50	[285]	GETTABLE 	2 2 -21	; "Ended"
+	51	[285]	EQ       	0 1 2
+	52	[285]	JMP      	0 11	; to 64
+	53	[286]	GETTABLE 	1 0 -10	; "m_dbTable"
+	54	[286]	SELF     	1 1 -11	; "GetValue"
+	55	[286]	GETTABUP 	3 0 -12	; _ENV "PassActivityModel"
+	56	[286]	GETTABLE 	3 3 -22	; "BuyTicketPopupWindowOpenedStateEndedKey"
+	57	[286]	LOADK    	4 -14	; "value"
+	58	[286]	CALL     	1 4 2
+	59	[286]	EQ       	0 1 -23	; - 1
+	60	[286]	JMP      	0 1	; to 62
+	61	[286]	LOADBOOL 	1 0 1
+	62	[286]	LOADBOOL 	1 1 0
+	63	[286]	RETURN   	1 2
+	64	[289]	LOADBOOL 	1 0 0
+	65	[289]	RETURN   	1 2
+	66	[290]	RETURN   	0 1
+constants (23) for 000001C307A3A070:
+	1	"GetTicketState"
+	2	"PassActivityTicketState"
+	3	"None"
+	4	"GetState"
+	5	"ActivityState"
+	6	"Started"
+	7	"GetCurrentLevel"
+	8	"m_config"
+	9	"levelConfigs"
+	10	"m_dbTable"
+	11	"GetValue"
+	12	"PassActivityModel"
+	13	"LastBuyTicketPopupWindowDayKey"
+	14	"value"
+	15	0
+	16	"GM"
+	17	"GameModel"
+	18	"GetServerTime"
+	19	"sTime"
+	20	86400
+	21	"Ended"
+	22	"BuyTicketPopupWindowOpenedStateEndedKey"
+	23	1
+locals (4) for 000001C307A3A070:
+	0	self	1	67
+	1	tokenLevel	17	46
+	2	lastDay	33	46
+	3	currentDay	41	46
+upvalues (1) for 000001C307A3A070:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:292,299> (30 instructions at 000001C307A39E70)
+1 param, 7 slots, 1 upvalue, 2 locals, 16 constants, 0 functions
+	1	[293]	SELF     	1 0 -1	; "GetState"
+	2	[293]	CALL     	1 2 2
+	3	[293]	GETTABUP 	2 0 -2	; _ENV "ActivityState"
+	4	[293]	GETTABLE 	2 2 -3	; "Started"
+	5	[293]	EQ       	0 1 2
+	6	[293]	JMP      	0 16	; to 23
+	7	[294]	GETTABUP 	1 0 -4	; _ENV "GM"
+	8	[294]	GETTABLE 	1 1 -5	; "GameModel"
+	9	[294]	SELF     	1 1 -6	; "GetServerTime"
+	10	[294]	CALL     	1 2 2
+	11	[294]	GETTABLE 	2 0 -7	; "m_config"
+	12	[294]	GETTABLE 	2 2 -8	; "sTime"
+	13	[294]	SUB      	1 1 2
+	14	[294]	IDIV     	1 1 -9	; - 86400
+	15	[295]	GETTABLE 	2 0 -10	; "m_dbTable"
+	16	[295]	SELF     	2 2 -11	; "Set"
+	17	[295]	GETTABUP 	4 0 -12	; _ENV "PassActivityModel"
+	18	[295]	GETTABLE 	4 4 -13	; "LastBuyTicketPopupWindowDayKey"
+	19	[295]	LOADK    	5 -14	; "value"
+	20	[295]	MOVE     	6 1
+	21	[295]	CALL     	2 5 1
+	22	[295]	JMP      	0 7	; to 30
+	23	[297]	GETTABLE 	1 0 -10	; "m_dbTable"
+	24	[297]	SELF     	1 1 -11	; "Set"
+	25	[297]	GETTABUP 	3 0 -12	; _ENV "PassActivityModel"
+	26	[297]	GETTABLE 	3 3 -15	; "BuyTicketPopupWindowOpenedStateEndedKey"
+	27	[297]	LOADK    	4 -14	; "value"
+	28	[297]	LOADK    	5 -16	; 1
+	29	[297]	CALL     	1 5 1
+	30	[299]	RETURN   	0 1
+constants (16) for 000001C307A39E70:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"m_config"
+	8	"sTime"
+	9	86400
+	10	"m_dbTable"
+	11	"Set"
+	12	"PassActivityModel"
+	13	"LastBuyTicketPopupWindowDayKey"
+	14	"value"
+	15	"BuyTicketPopupWindowOpenedStateEndedKey"
+	16	1
+locals (2) for 000001C307A39E70:
+	0	self	1	31
+	1	day	15	22
+upvalues (1) for 000001C307A39E70:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:302,305> (11 instructions at 000001C307A39EF0)
+2 params, 6 slots, 0 upvalues, 2 locals, 5 constants, 0 functions
+	1	[303]	SELF     	2 0 -1	; "_OnTaskTargetReached"
+	2	[303]	GETTABLE 	4 1 -2	; "New"
+	3	[303]	SELF     	4 4 -3	; "GetCode"
+	4	[303]	CALL     	4 2 2
+	5	[303]	LOADK    	5 -4	; 1
+	6	[303]	CALL     	2 4 1
+	7	[304]	SELF     	2 0 -1	; "_OnTaskTargetReached"
+	8	[304]	LOADK    	4 -5	; "merge"
+	9	[304]	LOADK    	5 -4	; 1
+	10	[304]	CALL     	2 4 1
+	11	[305]	RETURN   	0 1
+constants (5) for 000001C307A39EF0:
+	1	"_OnTaskTargetReached"
+	2	"New"
+	3	"GetCode"
+	4	1
+	5	"merge"
+locals (2) for 000001C307A39EF0:
+	0	self	1	12
+	1	message	1	12
+upvalues (0) for 000001C307A39EF0:
+
+function <PassActivityModel.lua:307,309> (5 instructions at 000001C307A3A270)
+2 params, 6 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[308]	SELF     	2 0 -1	; "_OnTaskTargetReached"
+	2	[308]	LOADK    	4 -2	; "customer"
+	3	[308]	LOADK    	5 -3	; 1
+	4	[308]	CALL     	2 4 1
+	5	[309]	RETURN   	0 1
+constants (3) for 000001C307A3A270:
+	1	"_OnTaskTargetReached"
+	2	"customer"
+	3	1
+locals (2) for 000001C307A3A270:
+	0	self	1	6
+	1	message	1	6
+upvalues (0) for 000001C307A3A270:
+
+function <PassActivityModel.lua:311,313> (5 instructions at 000001C307A3A5F0)
+2 params, 6 slots, 0 upvalues, 2 locals, 3 constants, 0 functions
+	1	[312]	SELF     	2 0 -1	; "_OnTaskTargetReached"
+	2	[312]	LOADK    	4 -2	; "gold"
+	3	[312]	GETTABLE 	5 1 -3	; "count"
+	4	[312]	CALL     	2 4 1
+	5	[313]	RETURN   	0 1
+constants (3) for 000001C307A3A5F0:
+	1	"_OnTaskTargetReached"
+	2	"gold"
+	3	"count"
+locals (2) for 000001C307A3A5F0:
+	0	self	1	6
+	1	message	1	6
+upvalues (0) for 000001C307A3A5F0:
+
+function <PassActivityModel.lua:315,322> (27 instructions at 000001C307A39F70)
+2 params, 7 slots, 1 upvalue, 2 locals, 11 constants, 0 functions
+	1	[316]	GETTABLE 	2 1 -1	; "property"
+	2	[316]	GETTABUP 	3 0 -2	; _ENV "PROPERTY_TYPE"
+	3	[316]	GETTABLE 	2 2 3
+	4	[316]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	5	[316]	GETTABLE 	3 3 -4	; "Gem"
+	6	[316]	EQ       	0 2 3
+	7	[316]	JMP      	0 7	; to 15
+	8	[317]	SELF     	2 0 -5	; "_OnTaskTargetReached"
+	9	[317]	LOADK    	4 -6	; "gem"
+	10	[317]	GETTABLE 	5 1 -1	; "property"
+	11	[317]	GETTABUP 	6 0 -7	; _ENV "PROPERTY_COUNT"
+	12	[317]	GETTABLE 	5 5 6
+	13	[317]	CALL     	2 4 1
+	14	[317]	JMP      	0 12	; to 27
+	15	[318]	GETTABLE 	2 1 -1	; "property"
+	16	[318]	GETTABUP 	3 0 -2	; _ENV "PROPERTY_TYPE"
+	17	[318]	GETTABLE 	2 2 3
+	18	[318]	GETTABUP 	3 0 -3	; _ENV "EPropertyType"
+	19	[318]	GETTABLE 	3 3 -8	; "Energy"
+	20	[318]	EQ       	0 2 3
+	21	[318]	JMP      	0 5	; to 27
+	22	[320]	SELF     	2 0 -5	; "_OnTaskTargetReached"
+	23	[320]	LOADK    	4 -9	; "energy"
+	24	[320]	GETTABLE 	5 1 -10	; "ext"
+	25	[320]	GETTABLE 	5 5 -11	; "origin"
+	26	[320]	CALL     	2 4 1
+	27	[322]	RETURN   	0 1
+constants (11) for 000001C307A39F70:
+	1	"property"
+	2	"PROPERTY_TYPE"
+	3	"EPropertyType"
+	4	"Gem"
+	5	"_OnTaskTargetReached"
+	6	"gem"
+	7	"PROPERTY_COUNT"
+	8	"Energy"
+	9	"energy"
+	10	"ext"
+	11	"origin"
+locals (2) for 000001C307A39F70:
+	0	self	1	28
+	1	message	1	28
+upvalues (1) for 000001C307A39F70:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:324,341> (37 instructions at 000001C307A39CF0)
+3 params, 13 slots, 1 upvalue, 9 locals, 13 constants, 0 functions
+	1	[325]	SELF     	3 0 -1	; "GetState"
+	2	[325]	CALL     	3 2 2
+	3	[325]	GETTABUP 	4 0 -2	; _ENV "ActivityState"
+	4	[325]	GETTABLE 	4 4 -3	; "Started"
+	5	[325]	EQ       	1 3 4
+	6	[325]	JMP      	0 1	; to 8
+	7	[326]	RETURN   	0 1
+	8	[330]	SELF     	3 0 -4	; "GetTicketState"
+	9	[330]	CALL     	3 2 2
+	10	[330]	GETTABUP 	4 0 -5	; _ENV "PassActivityTicketState"
+	11	[330]	GETTABLE 	4 4 -6	; "Super"
+	12	[330]	EQ       	1 3 4
+	13	[330]	JMP      	0 8	; to 22
+	14	[331]	SELF     	3 0 -7	; "GetCurrentLevel"
+	15	[331]	CALL     	3 2 2
+	16	[331]	GETTABLE 	4 0 -8	; "m_config"
+	17	[331]	GETTABLE 	4 4 -9	; "levelConfigs"
+	18	[331]	LEN      	4 4
+	19	[331]	EQ       	0 3 4
+	20	[331]	JMP      	0 1	; to 22
+	21	[332]	RETURN   	0 1
+	22	[335]	SELF     	3 0 -10	; "GetActiveTasks"
+	23	[335]	CALL     	3 2 2
+	24	[336]	GETTABUP 	4 0 -11	; _ENV "ipairs"
+	25	[336]	MOVE     	5 3
+	26	[336]	CALL     	4 2 4
+	27	[336]	JMP      	0 7	; to 35
+	28	[337]	GETTABLE 	9 8 -12	; "Target"
+	29	[337]	EQ       	0 9 1
+	30	[337]	JMP      	0 4	; to 35
+	31	[338]	SELF     	9 0 -13	; "_AddFinishedCount"
+	32	[338]	MOVE     	11 8
+	33	[338]	MOVE     	12 2
+	34	[338]	CALL     	9 4 1
+	35	[336]	TFORCALL 	4 2
+	36	[336]	TFORLOOP 	6 -9	; to 28
+	37	[341]	RETURN   	0 1
+constants (13) for 000001C307A39CF0:
+	1	"GetState"
+	2	"ActivityState"
+	3	"Started"
+	4	"GetTicketState"
+	5	"PassActivityTicketState"
+	6	"Super"
+	7	"GetCurrentLevel"
+	8	"m_config"
+	9	"levelConfigs"
+	10	"GetActiveTasks"
+	11	"ipairs"
+	12	"Target"
+	13	"_AddFinishedCount"
+locals (9) for 000001C307A39CF0:
+	0	self	1	38
+	1	target	1	38
+	2	count	1	38
+	3	tasks	24	38
+	4	(for generator)	27	37
+	5	(for state)	27	37
+	6	(for control)	27	37
+	7	_	28	35
+	8	task	28	35
+upvalues (1) for 000001C307A39CF0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:345,358> (38 instructions at 000001C307A3A370)
+1 param, 4 slots, 1 upvalue, 3 locals, 16 constants, 0 functions
+	1	[346]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[346]	GETTABLE 	1 1 -2	; "GameModel"
+	3	[346]	SELF     	1 1 -3	; "GetServerTime"
+	4	[346]	CALL     	1 2 2
+	5	[346]	SELF     	2 0 -4	; "GetTaskRefreshTime"
+	6	[346]	CALL     	2 2 2
+	7	[346]	LE       	1 2 1
+	8	[346]	JMP      	0 1	; to 10
+	9	[346]	LOADBOOL 	1 0 1
+	10	[346]	LOADBOOL 	1 1 0
+	11	[347]	TEST     	1 0
+	12	[347]	JMP      	0 14	; to 27
+	13	[347]	SELF     	2 0 -5	; "GetTicketState"
+	14	[347]	CALL     	2 2 2
+	15	[347]	GETTABUP 	3 0 -6	; _ENV "PassActivityTicketState"
+	16	[347]	GETTABLE 	3 3 -7	; "Super"
+	17	[347]	EQ       	1 2 3
+	18	[347]	JMP      	0 8	; to 27
+	19	[348]	SELF     	2 0 -8	; "GetCurrentLevel"
+	20	[348]	CALL     	2 2 2
+	21	[349]	GETTABLE 	3 0 -9	; "m_config"
+	22	[349]	GETTABLE 	3 3 -10	; "levelConfigs"
+	23	[349]	LEN      	3 3
+	24	[349]	EQ       	0 2 3
+	25	[349]	JMP      	0 1	; to 27
+	26	[350]	LOADBOOL 	1 0 0
+	27	[354]	GETTABLE 	2 0 -11	; "m_shouldRefreshTimelimitTasks"
+	28	[354]	TEST     	2 1
+	29	[354]	JMP      	0 8	; to 38
+	30	[354]	TEST     	1 0
+	31	[354]	JMP      	0 6	; to 38
+	32	[355]	SETTABLE 	0 -11 -12	; "m_shouldRefreshTimelimitTasks" true
+	33	[356]	GETTABUP 	2 0 -13	; _ENV "EventDispatcher"
+	34	[356]	GETTABLE 	2 2 -14	; "DispatchEvent"
+	35	[356]	GETTABLE 	3 0 -15	; "m_activityDefinition"
+	36	[356]	GETTABLE 	3 3 -16	; "ShouldRefreshTimelimitTasksEvent"
+	37	[356]	CALL     	2 2 1
+	38	[358]	RETURN   	0 1
+constants (16) for 000001C307A3A370:
+	1	"GM"
+	2	"GameModel"
+	3	"GetServerTime"
+	4	"GetTaskRefreshTime"
+	5	"GetTicketState"
+	6	"PassActivityTicketState"
+	7	"Super"
+	8	"GetCurrentLevel"
+	9	"m_config"
+	10	"levelConfigs"
+	11	"m_shouldRefreshTimelimitTasks"
+	12	true
+	13	"EventDispatcher"
+	14	"DispatchEvent"
+	15	"m_activityDefinition"
+	16	"ShouldRefreshTimelimitTasksEvent"
+locals (3) for 000001C307A3A370:
+	0	self	1	39
+	1	shouldRefresh	11	39
+	2	currentTokenLevel	21	27
+upvalues (1) for 000001C307A3A370:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:360,362> (3 instructions at 000001C307A39C70)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[361]	GETTABLE 	1 0 -1	; "m_shouldRefreshTimelimitTasks"
+	2	[361]	RETURN   	1 2
+	3	[362]	RETURN   	0 1
+constants (1) for 000001C307A39C70:
+	1	"m_shouldRefreshTimelimitTasks"
+locals (1) for 000001C307A39C70:
+	0	self	1	4
+upvalues (0) for 000001C307A39C70:
+
+function <PassActivityModel.lua:364,375> (34 instructions at 000001C307A39D70)
+1 param, 14 slots, 1 upvalue, 10 locals, 14 constants, 0 functions
+	1	[365]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[365]	SELF     	1 1 -2	; "GetValue"
+	3	[365]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[365]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[365]	LOADK    	4 -5	; "value"
+	6	[365]	CALL     	1 4 2
+	7	[366]	GETTABLE 	2 0 -6	; "m_config"
+	8	[366]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[366]	GETTABLE 	2 2 1
+	10	[366]	GETTABLE 	2 2 -8	; "tasks"
+	11	[367]	GETTABUP 	3 0 -9	; _ENV "ipairs"
+	12	[367]	MOVE     	4 2
+	13	[367]	CALL     	3 2 4
+	14	[367]	JMP      	0 17	; to 32
+	15	[368]	SELF     	8 0 -10	; "_GetFinishedCountKey"
+	16	[368]	GETTABLE 	10 7 -11	; "Type"
+	17	[368]	GETTABLE 	11 7 -12	; "Index"
+	18	[368]	CALL     	8 4 2
+	19	[369]	GETTABLE 	9 0 -1	; "m_dbTable"
+	20	[369]	SELF     	9 9 -2	; "GetValue"
+	21	[369]	MOVE     	11 8
+	22	[369]	LOADK    	12 -5	; "value"
+	23	[369]	CALL     	9 4 2
+	24	[370]	GETTABLE 	10 7 -13	; "Count"
+	25	[370]	EQ       	1 9 10
+	26	[370]	JMP      	0 5	; to 32
+	27	[371]	SELF     	10 0 -14	; "_AddFinishedCount"
+	28	[371]	MOVE     	12 7
+	29	[371]	GETTABLE 	13 7 -13	; "Count"
+	30	[371]	CALL     	10 4 1
+	31	[371]	JMP      	0 2	; to 34
+	32	[367]	TFORCALL 	3 2
+	33	[367]	TFORLOOP 	5 -19	; to 15
+	34	[375]	RETURN   	0 1
+constants (14) for 000001C307A39D70:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"tasks"
+	9	"ipairs"
+	10	"_GetFinishedCountKey"
+	11	"Type"
+	12	"Index"
+	13	"Count"
+	14	"_AddFinishedCount"
+locals (10) for 000001C307A39D70:
+	0	self	1	35
+	1	timelimitTaskOrder	7	35
+	2	tasks	11	35
+	3	(for generator)	14	34
+	4	(for state)	14	34
+	5	(for control)	14	34
+	6	_	15	32
+	7	task	15	32
+	8	finishedCountKey	19	32
+	9	currentCount	24	32
+upvalues (1) for 000001C307A39D70:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:377,383> (21 instructions at 000001C307A3A4F0)
+1 param, 12 slots, 1 upvalue, 8 locals, 11 constants, 0 functions
+	1	[378]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[378]	SELF     	1 1 -2	; "GetValue"
+	3	[378]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[378]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[378]	LOADK    	4 -5	; "value"
+	6	[378]	CALL     	1 4 2
+	7	[379]	GETTABLE 	2 0 -6	; "m_config"
+	8	[379]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[379]	GETTABLE 	2 2 1
+	10	[379]	GETTABLE 	2 2 -8	; "tasks"
+	11	[380]	GETTABUP 	3 0 -9	; _ENV "ipairs"
+	12	[380]	MOVE     	4 2
+	13	[380]	CALL     	3 2 4
+	14	[380]	JMP      	0 4	; to 19
+	15	[381]	SELF     	8 0 -10	; "_AddFinishedCount"
+	16	[381]	MOVE     	10 7
+	17	[381]	GETTABLE 	11 7 -11	; "Count"
+	18	[381]	CALL     	8 4 1
+	19	[380]	TFORCALL 	3 2
+	20	[380]	TFORLOOP 	5 -6	; to 15
+	21	[383]	RETURN   	0 1
+constants (11) for 000001C307A3A4F0:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"tasks"
+	9	"ipairs"
+	10	"_AddFinishedCount"
+	11	"Count"
+locals (8) for 000001C307A3A4F0:
+	0	self	1	22
+	1	timelimitTaskOrder	7	22
+	2	tasks	11	22
+	3	(for generator)	14	21
+	4	(for state)	14	21
+	5	(for control)	14	21
+	6	_	15	19
+	7	task	15	19
+upvalues (1) for 000001C307A3A4F0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:385,410> (39 instructions at 000001C307A3A770)
+1 param, 12 slots, 1 upvalue, 11 locals, 15 constants, 1 function
+	1	[386]	NEWTABLE 	1 0 0
+	2	[392]	CLOSURE  	2 0	; 000001C307A3A1F0
+	3	[394]	GETTABLE 	3 0 -1	; "m_dbTable"
+	4	[394]	SELF     	3 3 -2	; "GetValue"
+	5	[394]	GETTABUP 	5 0 -3	; _ENV "PassActivityModel"
+	6	[394]	GETTABLE 	5 5 -4	; "TimelimitTaskOrderKey"
+	7	[394]	LOADK    	6 -5	; "value"
+	8	[394]	CALL     	3 4 2
+	9	[395]	GETTABLE 	4 0 -6	; "m_config"
+	10	[395]	GETTABLE 	4 4 -7	; "timelimitTasks"
+	11	[395]	GETTABLE 	4 4 3
+	12	[395]	GETTABLE 	4 4 -8	; "tasks"
+	13	[396]	GETTABUP 	5 0 -9	; _ENV "ipairs"
+	14	[396]	MOVE     	6 4
+	15	[396]	CALL     	5 2 4
+	16	[396]	JMP      	0 6	; to 23
+	17	[397]	GETTABLE 	10 9 -10	; "IsBonus"
+	18	[397]	TEST     	10 1
+	19	[397]	JMP      	0 3	; to 23
+	20	[398]	MOVE     	10 2
+	21	[398]	MOVE     	11 9
+	22	[398]	CALL     	10 2 1
+	23	[396]	TFORCALL 	5 2
+	24	[396]	TFORLOOP 	7 -8	; to 17
+	25	[402]	SELF     	5 0 -11	; "_GetBonusTaskIndex"
+	26	[402]	CALL     	5 2 2
+	27	[403]	EQ       	1 5 -12	; - nil
+	28	[403]	JMP      	0 3	; to 32
+	29	[404]	MOVE     	6 2
+	30	[404]	GETTABLE 	7 4 5
+	31	[404]	CALL     	6 2 1
+	32	[407]	GETTABUP 	6 0 -13	; _ENV "table"
+	33	[407]	GETTABLE 	6 6 -14	; "insert"
+	34	[407]	MOVE     	7 1
+	35	[407]	GETTABLE 	8 0 -6	; "m_config"
+	36	[407]	GETTABLE 	8 8 -15	; "cycleTask"
+	37	[407]	CALL     	6 3 1
+	38	[409]	RETURN   	1 2
+	39	[410]	RETURN   	0 1
+constants (15) for 000001C307A3A770:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"tasks"
+	9	"ipairs"
+	10	"IsBonus"
+	11	"_GetBonusTaskIndex"
+	12	nil
+	13	"table"
+	14	"insert"
+	15	"cycleTask"
+locals (11) for 000001C307A3A770:
+	0	self	1	40
+	1	activeTasks	2	40
+	2	tryAppendTimelimitTask	3	40
+	3	timelimitTaskOrder	9	40
+	4	tasks	13	40
+	5	(for generator)	16	25
+	6	(for state)	16	25
+	7	(for control)	16	25
+	8	_	17	23
+	9	task	17	23
+	10	bonusTaskIndex	27	40
+upvalues (1) for 000001C307A3A770:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:387,392> (19 instructions at 000001C307A3A1F0)
+1 param, 6 slots, 3 upvalues, 2 locals, 11 constants, 0 functions
+	1	[388]	GETTABUP 	1 0 -1	; _ENV "string"
+	2	[388]	GETTABLE 	1 1 -2	; "format"
+	3	[388]	GETTABUP 	2 0 -3	; _ENV "PassActivityModel"
+	4	[388]	GETTABLE 	2 2 -4	; "TimelimitTaskFinishedKey"
+	5	[388]	GETTABLE 	3 0 -5	; "Index"
+	6	[388]	CALL     	1 3 2
+	7	[389]	GETTABUP 	2 1 -6	; self "m_dbTable"
+	8	[389]	SELF     	2 2 -7	; "GetValue"
+	9	[389]	MOVE     	4 1
+	10	[389]	LOADK    	5 -8	; "value"
+	11	[389]	CALL     	2 4 2
+	12	[389]	EQ       	1 2 -9	; - 1
+	13	[389]	JMP      	0 5	; to 19
+	14	[390]	GETTABUP 	2 0 -10	; _ENV "table"
+	15	[390]	GETTABLE 	2 2 -11	; "insert"
+	16	[390]	GETUPVAL 	3 2	; activeTasks
+	17	[390]	MOVE     	4 0
+	18	[390]	CALL     	2 3 1
+	19	[392]	RETURN   	0 1
+constants (11) for 000001C307A3A1F0:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"TimelimitTaskFinishedKey"
+	5	"Index"
+	6	"m_dbTable"
+	7	"GetValue"
+	8	"value"
+	9	1
+	10	"table"
+	11	"insert"
+locals (2) for 000001C307A3A1F0:
+	0	task	1	20
+	1	finishedKey	7	20
+upvalues (3) for 000001C307A3A1F0:
+	0	_ENV	0	0
+	1	self	1	0
+	2	activeTasks	1	1
+
+function <PassActivityModel.lua:412,415> (11 instructions at 000001C307A3A670)
+2 params, 7 slots, 0 upvalues, 3 locals, 6 constants, 0 functions
+	1	[413]	SELF     	2 0 -1	; "_GetFinishedCountKey"
+	2	[413]	GETTABLE 	4 1 -2	; "Type"
+	3	[413]	GETTABLE 	5 1 -3	; "Index"
+	4	[413]	CALL     	2 4 2
+	5	[414]	GETTABLE 	3 0 -4	; "m_dbTable"
+	6	[414]	SELF     	3 3 -5	; "GetValue"
+	7	[414]	MOVE     	5 2
+	8	[414]	LOADK    	6 -6	; "value"
+	9	[414]	TAILCALL 	3 4 0
+	10	[414]	RETURN   	3 0
+	11	[415]	RETURN   	0 1
+constants (6) for 000001C307A3A670:
+	1	"_GetFinishedCountKey"
+	2	"Type"
+	3	"Index"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"value"
+locals (3) for 000001C307A3A670:
+	0	self	1	12
+	1	task	1	12
+	2	finishedCountKey	5	12
+upvalues (0) for 000001C307A3A670:
+
+function <PassActivityModel.lua:417,438> (55 instructions at 000001C307A3A470)
+3 params, 11 slots, 1 upvalue, 7 locals, 18 constants, 0 functions
+	1	[418]	SELF     	3 0 -1	; "_GetFinishedCountKey"
+	2	[418]	GETTABLE 	5 1 -2	; "Type"
+	3	[418]	GETTABLE 	6 1 -3	; "Index"
+	4	[418]	CALL     	3 4 2
+	5	[419]	GETTABLE 	4 0 -4	; "m_dbTable"
+	6	[419]	SELF     	4 4 -5	; "GetValue"
+	7	[419]	MOVE     	6 3
+	8	[419]	LOADK    	7 -6	; "value"
+	9	[419]	CALL     	4 4 2
+	10	[420]	GETTABLE 	5 1 -7	; "Count"
+	11	[420]	EQ       	0 4 5
+	12	[420]	JMP      	0 6	; to 19
+	13	[420]	GETTABLE 	5 1 -2	; "Type"
+	14	[420]	GETTABUP 	6 0 -8	; _ENV "PassActivityTaskType"
+	15	[420]	GETTABLE 	6 6 -9	; "Timelimit"
+	16	[420]	EQ       	0 5 6
+	17	[420]	JMP      	0 1	; to 19
+	18	[421]	RETURN   	0 1
+	19	[424]	GETTABLE 	5 1 -7	; "Count"
+	20	[424]	IDIV     	5 4 5
+	21	[425]	ADD      	4 4 2
+	22	[427]	GETTABLE 	6 1 -2	; "Type"
+	23	[427]	GETTABUP 	7 0 -8	; _ENV "PassActivityTaskType"
+	24	[427]	GETTABLE 	7 7 -9	; "Timelimit"
+	25	[427]	EQ       	0 6 7
+	26	[427]	JMP      	0 6	; to 33
+	27	[428]	GETTABUP 	6 0 -10	; _ENV "math"
+	28	[428]	GETTABLE 	6 6 -11	; "min"
+	29	[428]	MOVE     	7 4
+	30	[428]	GETTABLE 	8 1 -7	; "Count"
+	31	[428]	CALL     	6 3 2
+	32	[428]	MOVE     	4 6
+	33	[431]	GETTABLE 	6 0 -4	; "m_dbTable"
+	34	[431]	SELF     	6 6 -12	; "Set"
+	35	[431]	MOVE     	8 3
+	36	[431]	LOADK    	9 -6	; "value"
+	37	[431]	MOVE     	10 4
+	38	[431]	CALL     	6 5 1
+	39	[433]	GETTABLE 	6 1 -7	; "Count"
+	40	[433]	IDIV     	6 4 6
+	41	[434]	EQ       	1 5 6
+	42	[434]	JMP      	0 12	; to 55
+	43	[435]	GETTABUP 	7 0 -13	; _ENV "EventDispatcher"
+	44	[435]	GETTABLE 	7 7 -14	; "DispatchEvent"
+	45	[435]	GETTABLE 	8 0 -15	; "m_activityDefinition"
+	46	[435]	GETTABLE 	8 8 -16	; "TaskProgressChangedEvent"
+	47	[435]	NEWTABLE 	9 0 1
+	48	[435]	SETTABLE 	9 -17 1	; "Task" -
+	49	[435]	CALL     	7 3 1
+	50	[436]	GETTABUP 	7 0 -13	; _ENV "EventDispatcher"
+	51	[436]	GETTABLE 	7 7 -14	; "DispatchEvent"
+	52	[436]	GETTABLE 	8 0 -15	; "m_activityDefinition"
+	53	[436]	GETTABLE 	8 8 -18	; "CanFinishTaskTimesChangedEvent"
+	54	[436]	CALL     	7 2 1
+	55	[438]	RETURN   	0 1
+constants (18) for 000001C307A3A470:
+	1	"_GetFinishedCountKey"
+	2	"Type"
+	3	"Index"
+	4	"m_dbTable"
+	5	"GetValue"
+	6	"value"
+	7	"Count"
+	8	"PassActivityTaskType"
+	9	"Timelimit"
+	10	"math"
+	11	"min"
+	12	"Set"
+	13	"EventDispatcher"
+	14	"DispatchEvent"
+	15	"m_activityDefinition"
+	16	"TaskProgressChangedEvent"
+	17	"Task"
+	18	"CanFinishTaskTimesChangedEvent"
+locals (7) for 000001C307A3A470:
+	0	self	1	56
+	1	task	1	56
+	2	count	1	56
+	3	finishedCountKey	5	56
+	4	currentCount	10	56
+	5	lastTimes	21	56
+	6	currentTimes	41	56
+upvalues (1) for 000001C307A3A470:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:440,444> (16 instructions at 000001C307A3A870)
+1 param, 5 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[441]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[441]	SELF     	1 1 -2	; "GetValue"
+	3	[441]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[441]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[441]	LOADK    	4 -5	; "value"
+	6	[441]	CALL     	1 4 2
+	7	[442]	GETTABLE 	2 0 -6	; "m_config"
+	8	[442]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[442]	GETTABLE 	2 2 1
+	10	[443]	GETTABLE 	3 0 -6	; "m_config"
+	11	[443]	GETTABLE 	3 3 -8	; "sTime"
+	12	[443]	GETTABLE 	4 2 -9	; "time"
+	13	[443]	MUL      	4 4 -10	; - 86400
+	14	[443]	ADD      	3 3 4
+	15	[443]	RETURN   	3 2
+	16	[444]	RETURN   	0 1
+constants (10) for 000001C307A3A870:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"sTime"
+	9	"time"
+	10	86400
+locals (3) for 000001C307A3A870:
+	0	self	1	17
+	1	timelimitTaskOrder	7	17
+	2	taskSet	10	17
+upvalues (1) for 000001C307A3A870:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:446,455> (18 instructions at 000001C307A3A3F0)
+1 param, 8 slots, 1 upvalue, 7 locals, 6 constants, 0 functions
+	1	[447]	GETTABLE 	1 0 -1	; "m_config"
+	2	[447]	GETTABLE 	1 1 -2	; "timelimitTasks"
+	3	[447]	GETTABLE 	1 1 -3	; 1
+	4	[447]	GETTABLE 	1 1 -4	; "tasks"
+	5	[448]	GETTABUP 	2 0 -5	; _ENV "ipairs"
+	6	[448]	MOVE     	3 1
+	7	[448]	CALL     	2 2 4
+	8	[448]	JMP      	0 5	; to 14
+	9	[449]	GETTABLE 	7 6 -6	; "IsBonus"
+	10	[449]	TEST     	7 0
+	11	[449]	JMP      	0 2	; to 14
+	12	[450]	LOADBOOL 	7 1 0
+	13	[450]	RETURN   	7 2
+	14	[448]	TFORCALL 	2 2
+	15	[448]	TFORLOOP 	4 -7	; to 9
+	16	[454]	LOADBOOL 	2 0 0
+	17	[454]	RETURN   	2 2
+	18	[455]	RETURN   	0 1
+constants (6) for 000001C307A3A3F0:
+	1	"m_config"
+	2	"timelimitTasks"
+	3	1
+	4	"tasks"
+	5	"ipairs"
+	6	"IsBonus"
+locals (7) for 000001C307A3A3F0:
+	0	self	1	19
+	1	tasks	5	19
+	2	(for generator)	8	16
+	3	(for state)	8	16
+	4	(for control)	8	16
+	5	_	9	14
+	6	task	9	14
+upvalues (1) for 000001C307A3A3F0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:457,460> (9 instructions at 000001C307A399F0)
+1 param, 3 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[458]	GETTABUP 	1 0 -1	; _ENV "PassActivityModel"
+	2	[458]	GETTABUP 	2 0 -1	; _ENV "PassActivityModel"
+	3	[458]	GETTABLE 	2 2 -2	; "BattleScoreOrderId"
+	4	[458]	ADD      	2 2 -3	; - 1
+	5	[458]	SETTABLE 	1 -2 2	; "BattleScoreOrderId" -
+	6	[459]	GETTABUP 	1 0 -1	; _ENV "PassActivityModel"
+	7	[459]	GETTABLE 	1 1 -2	; "BattleScoreOrderId"
+	8	[459]	SETTABLE 	0 -4 1	; "m_aquireRewardOrderId" -
+	9	[460]	RETURN   	0 1
+constants (4) for 000001C307A399F0:
+	1	"PassActivityModel"
+	2	"BattleScoreOrderId"
+	3	1
+	4	"m_aquireRewardOrderId"
+locals (1) for 000001C307A399F0:
+	0	self	1	10
+upvalues (1) for 000001C307A399F0:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:462,464> (3 instructions at 000001C307A3A6F0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[463]	GETTABLE 	1 0 -1	; "m_aquireRewardOrderId"
+	2	[463]	RETURN   	1 2
+	3	[464]	RETURN   	0 1
+constants (1) for 000001C307A3A6F0:
+	1	"m_aquireRewardOrderId"
+locals (1) for 000001C307A3A6F0:
+	0	self	1	4
+upvalues (0) for 000001C307A3A6F0:
+
+function <PassActivityModel.lua:466,468> (8 instructions at 000001C307A40590)
+1 param, 5 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[467]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[467]	SELF     	1 1 -2	; "GetValue"
+	3	[467]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[467]	GETTABLE 	3 3 -4	; "BonusTaskIndexKey"
+	5	[467]	LOADK    	4 -5	; "value"
+	6	[467]	TAILCALL 	1 4 0
+	7	[467]	RETURN   	1 0
+	8	[468]	RETURN   	0 1
+constants (5) for 000001C307A40590:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"BonusTaskIndexKey"
+	5	"value"
+locals (1) for 000001C307A40590:
+	0	self	1	9
+upvalues (1) for 000001C307A40590:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:470,472> (12 instructions at 000001C307A40790)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[471]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[471]	SELF     	1 1 -2	; "GetValue"
+	3	[471]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[471]	GETTABLE 	3 3 -4	; "BonusTaskPreviewedKey"
+	5	[471]	LOADK    	4 -5	; "value"
+	6	[471]	CALL     	1 4 2
+	7	[471]	EQ       	1 1 -6	; - 1
+	8	[471]	JMP      	0 1	; to 10
+	9	[471]	LOADBOOL 	1 0 1
+	10	[471]	LOADBOOL 	1 1 0
+	11	[471]	RETURN   	1 2
+	12	[472]	RETURN   	0 1
+constants (6) for 000001C307A40790:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"BonusTaskPreviewedKey"
+	5	"value"
+	6	1
+locals (1) for 000001C307A40790:
+	0	self	1	13
+upvalues (1) for 000001C307A40790:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:474,476> (8 instructions at 000001C307A40990)
+1 param, 6 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[475]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[475]	SELF     	1 1 -2	; "Set"
+	3	[475]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[475]	GETTABLE 	3 3 -4	; "BonusTaskPreviewedKey"
+	5	[475]	LOADK    	4 -5	; "value"
+	6	[475]	LOADK    	5 -6	; 1
+	7	[475]	CALL     	1 5 1
+	8	[476]	RETURN   	0 1
+constants (6) for 000001C307A40990:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PassActivityModel"
+	4	"BonusTaskPreviewedKey"
+	5	"value"
+	6	1
+locals (1) for 000001C307A40990:
+	0	self	1	9
+upvalues (1) for 000001C307A40990:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:478,499> (56 instructions at 000001C307A40610)
+1 param, 13 slots, 1 upvalue, 11 locals, 17 constants, 0 functions
+	1	[479]	NEWTABLE 	1 0 0
+	2	[481]	GETTABLE 	2 0 -1	; "m_dbTable"
+	3	[481]	SELF     	2 2 -2	; "GetValue"
+	4	[481]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	5	[481]	GETTABLE 	4 4 -4	; "TimelimitTaskOrderKey"
+	6	[481]	LOADK    	5 -5	; "value"
+	7	[481]	CALL     	2 4 2
+	8	[482]	GETTABLE 	3 0 -6	; "m_config"
+	9	[482]	GETTABLE 	3 3 -7	; "timelimitTasks"
+	10	[482]	GETTABLE 	3 3 2
+	11	[482]	GETTABLE 	3 3 -8	; "tasks"
+	12	[483]	LOADK    	4 -9	; 1
+	13	[483]	LEN      	5 3
+	14	[483]	LOADK    	6 -9	; 1
+	15	[483]	FORPREP  	4 25	; to 41
+	16	[484]	GETTABUP 	8 0 -10	; _ENV "string"
+	17	[484]	GETTABLE 	8 8 -11	; "format"
+	18	[484]	GETTABUP 	9 0 -3	; _ENV "PassActivityModel"
+	19	[484]	GETTABLE 	9 9 -12	; "TimelimitTaskFinishedKey"
+	20	[484]	MOVE     	10 7
+	21	[484]	CALL     	8 3 2
+	22	[485]	GETTABLE 	9 0 -1	; "m_dbTable"
+	23	[485]	SELF     	9 9 -2	; "GetValue"
+	24	[485]	MOVE     	11 8
+	25	[485]	LOADK    	12 -5	; "value"
+	26	[485]	CALL     	9 4 2
+	27	[485]	EQ       	1 9 -9	; - 1
+	28	[485]	JMP      	0 12	; to 41
+	29	[486]	GETTABLE 	9 3 7
+	30	[487]	SELF     	10 0 -13	; "GetFinishedCount"
+	31	[487]	MOVE     	12 9
+	32	[487]	CALL     	10 3 2
+	33	[487]	GETTABLE 	11 9 -14	; "Count"
+	34	[487]	EQ       	0 10 11
+	35	[487]	JMP      	0 5	; to 41
+	36	[488]	GETTABUP 	10 0 -15	; _ENV "table"
+	37	[488]	GETTABLE 	10 10 -16	; "insert"
+	38	[488]	MOVE     	11 1
+	39	[488]	MOVE     	12 9
+	40	[488]	CALL     	10 3 1
+	41	[483]	FORLOOP  	4 -26	; to 16
+	42	[493]	GETTABLE 	4 0 -6	; "m_config"
+	43	[493]	GETTABLE 	4 4 -17	; "cycleTask"
+	44	[494]	SELF     	5 0 -13	; "GetFinishedCount"
+	45	[494]	MOVE     	7 4
+	46	[494]	CALL     	5 3 2
+	47	[494]	GETTABLE 	6 4 -14	; "Count"
+	48	[494]	LE       	0 6 5
+	49	[494]	JMP      	0 5	; to 55
+	50	[495]	GETTABUP 	5 0 -15	; _ENV "table"
+	51	[495]	GETTABLE 	5 5 -16	; "insert"
+	52	[495]	MOVE     	6 1
+	53	[495]	MOVE     	7 4
+	54	[495]	CALL     	5 3 1
+	55	[498]	RETURN   	1 2
+	56	[499]	RETURN   	0 1
+constants (17) for 000001C307A40610:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"tasks"
+	9	1
+	10	"string"
+	11	"format"
+	12	"TimelimitTaskFinishedKey"
+	13	"GetFinishedCount"
+	14	"Count"
+	15	"table"
+	16	"insert"
+	17	"cycleTask"
+locals (11) for 000001C307A40610:
+	0	self	1	57
+	1	canFinishTasks	2	57
+	2	timelimitTaskOrder	8	57
+	3	tasks	12	57
+	4	(for index)	15	42
+	5	(for limit)	15	42
+	6	(for step)	15	42
+	7	index	16	41
+	8	finishedKey	22	41
+	9	task	30	41
+	10	task	44	57
+upvalues (1) for 000001C307A40610:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:502,522> (47 instructions at 000001C307A40810)
+1 param, 13 slots, 1 upvalue, 12 locals, 16 constants, 0 functions
+	1	[503]	LOADK    	1 -1	; 0
+	2	[505]	GETTABLE 	2 0 -2	; "m_dbTable"
+	3	[505]	SELF     	2 2 -3	; "GetValue"
+	4	[505]	GETTABUP 	4 0 -4	; _ENV "PassActivityModel"
+	5	[505]	GETTABLE 	4 4 -5	; "TimelimitTaskOrderKey"
+	6	[505]	LOADK    	5 -6	; "value"
+	7	[505]	CALL     	2 4 2
+	8	[506]	GETTABLE 	3 0 -7	; "m_config"
+	9	[506]	GETTABLE 	3 3 -8	; "timelimitTasks"
+	10	[506]	GETTABLE 	3 3 2
+	11	[506]	GETTABLE 	3 3 -9	; "tasks"
+	12	[507]	LOADK    	4 -10	; 1
+	13	[507]	LEN      	5 3
+	14	[507]	LOADK    	6 -10	; 1
+	15	[507]	FORPREP  	4 21	; to 37
+	16	[508]	GETTABUP 	8 0 -11	; _ENV "string"
+	17	[508]	GETTABLE 	8 8 -12	; "format"
+	18	[508]	GETTABUP 	9 0 -4	; _ENV "PassActivityModel"
+	19	[508]	GETTABLE 	9 9 -13	; "TimelimitTaskFinishedKey"
+	20	[508]	MOVE     	10 7
+	21	[508]	CALL     	8 3 2
+	22	[509]	GETTABLE 	9 0 -2	; "m_dbTable"
+	23	[509]	SELF     	9 9 -3	; "GetValue"
+	24	[509]	MOVE     	11 8
+	25	[509]	LOADK    	12 -6	; "value"
+	26	[509]	CALL     	9 4 2
+	27	[509]	EQ       	1 9 -10	; - 1
+	28	[509]	JMP      	0 8	; to 37
+	29	[510]	GETTABLE 	9 3 7
+	30	[511]	SELF     	10 0 -14	; "GetFinishedCount"
+	31	[511]	MOVE     	12 9
+	32	[511]	CALL     	10 3 2
+	33	[511]	GETTABLE 	11 9 -15	; "Count"
+	34	[511]	EQ       	0 10 11
+	35	[511]	JMP      	0 1	; to 37
+	36	[512]	ADD      	1 1 -10	; - 1
+	37	[507]	FORLOOP  	4 -22	; to 16
+	38	[517]	GETTABLE 	4 0 -7	; "m_config"
+	39	[517]	GETTABLE 	4 4 -16	; "cycleTask"
+	40	[518]	SELF     	5 0 -14	; "GetFinishedCount"
+	41	[518]	MOVE     	7 4
+	42	[518]	CALL     	5 3 2
+	43	[519]	GETTABLE 	6 4 -15	; "Count"
+	44	[519]	IDIV     	6 5 6
+	45	[519]	ADD      	1 1 6
+	46	[521]	RETURN   	1 2
+	47	[522]	RETURN   	0 1
+constants (16) for 000001C307A40810:
+	1	0
+	2	"m_dbTable"
+	3	"GetValue"
+	4	"PassActivityModel"
+	5	"TimelimitTaskOrderKey"
+	6	"value"
+	7	"m_config"
+	8	"timelimitTasks"
+	9	"tasks"
+	10	1
+	11	"string"
+	12	"format"
+	13	"TimelimitTaskFinishedKey"
+	14	"GetFinishedCount"
+	15	"Count"
+	16	"cycleTask"
+locals (12) for 000001C307A40810:
+	0	self	1	48
+	1	number	2	48
+	2	timelimitTaskOrder	8	48
+	3	tasks	12	48
+	4	(for index)	15	38
+	5	(for limit)	15	38
+	6	(for step)	15	38
+	7	index	16	37
+	8	finishedKey	22	37
+	9	task	30	37
+	10	task	40	48
+	11	finishedCount	43	48
+upvalues (1) for 000001C307A40810:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:524,531> (21 instructions at 000001C307A41810)
+1 param, 5 slots, 1 upvalue, 3 locals, 11 constants, 0 functions
+	1	[525]	GETTABLE 	1 0 -1	; "m_config"
+	2	[525]	EQ       	0 1 -2	; - nil
+	3	[525]	JMP      	0 2	; to 6
+	4	[526]	LOADBOOL 	1 0 0
+	5	[526]	RETURN   	1 2
+	6	[528]	GETTABLE 	1 0 -3	; "m_dbTable"
+	7	[528]	SELF     	1 1 -4	; "GetValue"
+	8	[528]	GETTABUP 	3 0 -5	; _ENV "PassActivityModel"
+	9	[528]	GETTABLE 	3 3 -6	; "TimelimitTaskOrderKey"
+	10	[528]	LOADK    	4 -7	; "value"
+	11	[528]	CALL     	1 4 2
+	12	[529]	GETTABLE 	2 0 -1	; "m_config"
+	13	[529]	GETTABLE 	2 2 -8	; "timelimitTasks"
+	14	[529]	GETTABLE 	2 2 1
+	15	[530]	GETTABUP 	3 0 -9	; _ENV "Table"
+	16	[530]	GETTABLE 	3 3 -10	; "IsEmpty"
+	17	[530]	GETTABLE 	4 2 -11	; "extraReward"
+	18	[530]	CALL     	3 2 2
+	19	[530]	NOT      	3 3
+	20	[530]	RETURN   	3 2
+	21	[531]	RETURN   	0 1
+constants (11) for 000001C307A41810:
+	1	"m_config"
+	2	nil
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"PassActivityModel"
+	6	"TimelimitTaskOrderKey"
+	7	"value"
+	8	"timelimitTasks"
+	9	"Table"
+	10	"IsEmpty"
+	11	"extraReward"
+locals (3) for 000001C307A41810:
+	0	self	1	22
+	1	timelimitTaskOrder	12	22
+	2	taskSetConfig	15	22
+upvalues (1) for 000001C307A41810:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:533,550> (43 instructions at 000001C307A40D10)
+1 param, 13 slots, 1 upvalue, 9 locals, 16 constants, 0 functions
+	1	[534]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[534]	SELF     	1 1 -2	; "GetValue"
+	3	[534]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[534]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[534]	LOADK    	4 -5	; "value"
+	6	[534]	CALL     	1 4 2
+	7	[535]	GETTABLE 	2 0 -6	; "m_config"
+	8	[535]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[535]	GETTABLE 	2 2 1
+	10	[538]	GETTABUP 	3 0 -8	; _ENV "Table"
+	11	[538]	GETTABLE 	3 3 -9	; "IsEmpty"
+	12	[538]	GETTABLE 	4 2 -10	; "extraReward"
+	13	[538]	CALL     	3 2 2
+	14	[538]	TEST     	3 0
+	15	[538]	JMP      	0 2	; to 18
+	16	[539]	LOADNIL  	3 0
+	17	[539]	RETURN   	3 2
+	18	[542]	LOADK    	3 -11	; 0
+	19	[543]	LOADK    	4 -12	; 1
+	20	[543]	GETTABLE 	5 2 -13	; "tasks"
+	21	[543]	LEN      	5 5
+	22	[543]	LOADK    	6 -12	; 1
+	23	[543]	FORPREP  	4 14	; to 38
+	24	[544]	GETTABUP 	8 0 -14	; _ENV "string"
+	25	[544]	GETTABLE 	8 8 -15	; "format"
+	26	[544]	GETTABUP 	9 0 -3	; _ENV "PassActivityModel"
+	27	[544]	GETTABLE 	9 9 -16	; "TimelimitTaskFinishedKey"
+	28	[544]	MOVE     	10 7
+	29	[544]	CALL     	8 3 2
+	30	[545]	GETTABLE 	9 0 -1	; "m_dbTable"
+	31	[545]	SELF     	9 9 -2	; "GetValue"
+	32	[545]	MOVE     	11 8
+	33	[545]	LOADK    	12 -5	; "value"
+	34	[545]	CALL     	9 4 2
+	35	[545]	EQ       	0 9 -12	; - 1
+	36	[545]	JMP      	0 1	; to 38
+	37	[546]	ADD      	3 3 -12	; - 1
+	38	[543]	FORLOOP  	4 -15	; to 24
+	39	[549]	MOVE     	4 3
+	40	[549]	GETTABLE 	5 2 -13	; "tasks"
+	41	[549]	LEN      	5 5
+	42	[549]	RETURN   	4 3
+	43	[550]	RETURN   	0 1
+constants (16) for 000001C307A40D10:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"Table"
+	9	"IsEmpty"
+	10	"extraReward"
+	11	0
+	12	1
+	13	"tasks"
+	14	"string"
+	15	"format"
+	16	"TimelimitTaskFinishedKey"
+locals (9) for 000001C307A40D10:
+	0	self	1	44
+	1	timelimitTaskOrder	7	44
+	2	taskSetConfig	10	44
+	3	num	19	44
+	4	(for index)	23	39
+	5	(for limit)	23	39
+	6	(for step)	23	39
+	7	index	24	38
+	8	finishedKey	30	38
+upvalues (1) for 000001C307A40D10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:552,565> (33 instructions at 000001C307A42410)
+2 params, 15 slots, 1 upvalue, 12 locals, 12 constants, 0 functions
+	1	[553]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	2	[553]	MOVE     	3 1
+	3	[553]	CALL     	2 2 4
+	4	[553]	JMP      	0 21	; to 26
+	5	[554]	GETTABLE 	7 6 -2	; "Type"
+	6	[554]	GETTABUP 	8 0 -3	; _ENV "PassActivityTaskType"
+	7	[554]	GETTABLE 	8 8 -4	; "Timelimit"
+	8	[554]	EQ       	0 7 8
+	9	[554]	JMP      	0 4	; to 14
+	10	[555]	SELF     	7 0 -5	; "_FinishTaskOnce"
+	11	[555]	MOVE     	9 6
+	12	[555]	CALL     	7 3 1
+	13	[555]	JMP      	0 12	; to 26
+	14	[557]	SELF     	7 0 -6	; "GetFinishedCount"
+	15	[557]	MOVE     	9 6
+	16	[557]	CALL     	7 3 2
+	17	[558]	LOADK    	8 -7	; 1
+	18	[558]	GETTABLE 	9 6 -8	; "Count"
+	19	[558]	IDIV     	9 7 9
+	20	[558]	LOADK    	10 -7	; 1
+	21	[558]	FORPREP  	8 3	; to 25
+	22	[559]	SELF     	12 0 -5	; "_FinishTaskOnce"
+	23	[559]	MOVE     	14 6
+	24	[559]	CALL     	12 3 1
+	25	[558]	FORLOOP  	8 -4	; to 22
+	26	[553]	TFORCALL 	2 2
+	27	[553]	TFORLOOP 	4 -23	; to 5
+	28	[564]	GETTABUP 	2 0 -9	; _ENV "EventDispatcher"
+	29	[564]	GETTABLE 	2 2 -10	; "DispatchEvent"
+	30	[564]	GETTABLE 	3 0 -11	; "m_activityDefinition"
+	31	[564]	GETTABLE 	3 3 -12	; "CanFinishTaskTimesChangedEvent"
+	32	[564]	CALL     	2 2 1
+	33	[565]	RETURN   	0 1
+constants (12) for 000001C307A42410:
+	1	"ipairs"
+	2	"Type"
+	3	"PassActivityTaskType"
+	4	"Timelimit"
+	5	"_FinishTaskOnce"
+	6	"GetFinishedCount"
+	7	1
+	8	"Count"
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"m_activityDefinition"
+	12	"CanFinishTaskTimesChangedEvent"
+locals (12) for 000001C307A42410:
+	0	self	1	34
+	1	tasks	1	34
+	2	(for generator)	4	28
+	3	(for state)	4	28
+	4	(for control)	4	28
+	5	_	5	26
+	6	task	5	26
+	7	finishedCount	17	26
+	8	(for index)	21	26
+	9	(for limit)	21	26
+	10	(for step)	21	26
+	11	i	22	25
+upvalues (1) for 000001C307A42410:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:567,617> (128 instructions at 000001C307A41910)
+2 params, 14 slots, 1 upvalue, 9 locals, 43 constants, 0 functions
+	1	[568]	LOADNIL  	2 0
+	2	[569]	GETTABLE 	3 1 -1	; "Type"
+	3	[569]	GETTABUP 	4 0 -2	; _ENV "PassActivityTaskType"
+	4	[569]	GETTABLE 	4 4 -3	; "Timelimit"
+	5	[569]	EQ       	0 3 4
+	6	[569]	JMP      	0 95	; to 102
+	7	[570]	GETTABUP 	3 0 -4	; _ENV "string"
+	8	[570]	GETTABLE 	3 3 -5	; "format"
+	9	[570]	GETTABUP 	4 0 -6	; _ENV "PassActivityModel"
+	10	[570]	GETTABLE 	4 4 -7	; "TimelimitTaskFinishedKey"
+	11	[570]	GETTABLE 	5 1 -8	; "Index"
+	12	[570]	CALL     	3 3 2
+	13	[571]	GETTABLE 	4 0 -9	; "m_dbTable"
+	14	[571]	SELF     	4 4 -10	; "GetValue"
+	15	[571]	MOVE     	6 3
+	16	[571]	LOADK    	7 -11	; "value"
+	17	[571]	CALL     	4 4 2
+	18	[571]	EQ       	0 4 -12	; - 1
+	19	[571]	JMP      	0 1	; to 21
+	20	[571]	LOADBOOL 	4 0 1
+	21	[571]	LOADBOOL 	4 1 0
+	22	[573]	GETTABLE 	5 0 -9	; "m_dbTable"
+	23	[573]	SELF     	5 5 -13	; "Set"
+	24	[573]	MOVE     	7 3
+	25	[573]	LOADK    	8 -11	; "value"
+	26	[573]	LOADK    	9 -12	; 1
+	27	[573]	CALL     	5 5 1
+	28	[575]	GETTABLE 	5 0 -9	; "m_dbTable"
+	29	[575]	SELF     	5 5 -10	; "GetValue"
+	30	[575]	GETTABUP 	7 0 -6	; _ENV "PassActivityModel"
+	31	[575]	GETTABLE 	7 7 -14	; "TimelimitTaskOrderKey"
+	32	[575]	LOADK    	8 -11	; "value"
+	33	[575]	CALL     	5 4 2
+	34	[576]	MOVE     	6 5
+	35	[576]	LOADK    	7 -15	; "_"
+	36	[576]	GETTABLE 	8 1 -8	; "Index"
+	37	[576]	CONCAT   	2 6 8
+	38	[578]	SELF     	6 0 -16	; "GetCurrentFinishedLimitTaskProgress"
+	39	[578]	CALL     	6 2 3
+	40	[579]	EQ       	1 6 -17	; - nil
+	41	[579]	JMP      	0 19	; to 61
+	42	[579]	TEST     	4 0
+	43	[579]	JMP      	0 17	; to 61
+	44	[580]	GETTABUP 	8 0 -18	; _ENV "GM"
+	45	[580]	GETTABLE 	8 8 -19	; "BIManager"
+	46	[580]	SELF     	8 8 -20	; "LogAction"
+	47	[580]	GETTABLE 	10 0 -21	; "m_activityDefinition"
+	48	[580]	GETTABLE 	10 10 -22	; "AddDailyTaskScoreBIType"
+	49	[580]	NEWTABLE 	11 0 6
+	50	[581]	GETTABLE 	12 0 -24	; "m_type"
+	51	[581]	SETTABLE 	11 -23 12	; "activityType" -
+	52	[582]	SELF     	12 0 -26	; "GetId"
+	53	[582]	CALL     	12 2 2
+	54	[582]	SETTABLE 	11 -25 12	; "activityId" -
+	55	[583]	SETTABLE 	11 -27 5	; "taskDay" -
+	56	[584]	GETTABLE 	12 1 -8	; "Index"
+	57	[584]	SETTABLE 	11 -28 12	; "taskIndex" -
+	58	[585]	SETTABLE 	11 -29 -12	; "addScore" 1
+	59	[586]	SETTABLE 	11 -30 6	; "taskScore" -
+	60	[580]	CALL     	8 4 1
+	61	[590]	EQ       	1 6 -17	; - nil
+	62	[590]	JMP      	0 17	; to 80
+	63	[590]	EQ       	0 6 7
+	64	[590]	JMP      	0 15	; to 80
+	65	[591]	SELF     	8 0 -31	; "SaveDailyReward"
+	66	[591]	CALL     	8 2 1
+	67	[593]	GETTABUP 	8 0 -18	; _ENV "GM"
+	68	[593]	GETTABLE 	8 8 -19	; "BIManager"
+	69	[593]	SELF     	8 8 -20	; "LogAction"
+	70	[593]	GETTABLE 	10 0 -21	; "m_activityDefinition"
+	71	[593]	GETTABLE 	10 10 -32	; "FinishDailyTaskBIType"
+	72	[593]	NEWTABLE 	11 0 3
+	73	[594]	GETTABLE 	12 0 -24	; "m_type"
+	74	[594]	SETTABLE 	11 -23 12	; "activityType" -
+	75	[595]	SELF     	12 0 -26	; "GetId"
+	76	[595]	CALL     	12 2 2
+	77	[595]	SETTABLE 	11 -25 12	; "activityId" -
+	78	[596]	SETTABLE 	11 -27 5	; "taskDay" -
+	79	[593]	CALL     	8 4 1
+	80	[600]	GETTABLE 	8 1 -8	; "Index"
+	81	[600]	EQ       	0 8 -33	; - 11
+	82	[600]	JMP      	0 16	; to 99
+	83	[600]	GETTABLE 	8 1 -34	; "IsBonus"
+	84	[600]	TEST     	8 0
+	85	[600]	JMP      	0 13	; to 99
+	86	[601]	GETTABUP 	8 0 -18	; _ENV "GM"
+	87	[601]	GETTABLE 	8 8 -19	; "BIManager"
+	88	[601]	SELF     	8 8 -20	; "LogAction"
+	89	[601]	GETTABLE 	10 0 -21	; "m_activityDefinition"
+	90	[601]	GETTABLE 	10 10 -35	; "FinishSpTask2BIType"
+	91	[601]	NEWTABLE 	11 0 3
+	92	[602]	GETTABLE 	12 0 -24	; "m_type"
+	93	[602]	SETTABLE 	11 -23 12	; "activityType" -
+	94	[603]	SELF     	12 0 -26	; "GetId"
+	95	[603]	CALL     	12 2 2
+	96	[603]	SETTABLE 	11 -25 12	; "activityId" -
+	97	[604]	SETTABLE 	11 -27 5	; "taskDay" -
+	98	[601]	CALL     	8 4 1
+	99	[607]	SELF     	8 0 -36	; "_RefreshBonusTask"
+	100	[607]	CALL     	8 2 1
+	101	[607]	JMP      	0 16	; to 118
+	102	[609]	SELF     	3 0 -37	; "GetFinishedCount"
+	103	[609]	MOVE     	5 1
+	104	[609]	CALL     	3 3 2
+	105	[610]	GETTABLE 	4 1 -38	; "Count"
+	106	[610]	SUB      	3 3 4
+	107	[611]	GETTABLE 	4 0 -9	; "m_dbTable"
+	108	[611]	SELF     	4 4 -13	; "Set"
+	109	[611]	GETTABUP 	6 0 -6	; _ENV "PassActivityModel"
+	110	[611]	GETTABLE 	6 6 -39	; "CycleTaskFinishedCountKey"
+	111	[611]	LOADK    	7 -11	; "value"
+	112	[611]	MOVE     	8 3
+	113	[611]	CALL     	4 5 1
+	114	[612]	GETTABUP 	4 0 -40	; _ENV "tostring"
+	115	[612]	GETTABLE 	5 1 -8	; "Index"
+	116	[612]	CALL     	4 2 2
+	117	[612]	MOVE     	2 4
+	118	[615]	SELF     	3 0 -41	; "_AcquireToken"
+	119	[615]	GETTABLE 	5 1 -42	; "Reward"
+	120	[615]	LOADBOOL 	6 1 0
+	121	[615]	CALL     	3 4 1
+	122	[616]	GETTABUP 	3 0 -18	; _ENV "GM"
+	123	[616]	GETTABLE 	3 3 -19	; "BIManager"
+	124	[616]	SELF     	3 3 -43	; "LogPassActivityTask"
+	125	[616]	MOVE     	5 2
+	126	[616]	MOVE     	6 1
+	127	[616]	CALL     	3 4 1
+	128	[617]	RETURN   	0 1
+constants (43) for 000001C307A41910:
+	1	"Type"
+	2	"PassActivityTaskType"
+	3	"Timelimit"
+	4	"string"
+	5	"format"
+	6	"PassActivityModel"
+	7	"TimelimitTaskFinishedKey"
+	8	"Index"
+	9	"m_dbTable"
+	10	"GetValue"
+	11	"value"
+	12	1
+	13	"Set"
+	14	"TimelimitTaskOrderKey"
+	15	"_"
+	16	"GetCurrentFinishedLimitTaskProgress"
+	17	nil
+	18	"GM"
+	19	"BIManager"
+	20	"LogAction"
+	21	"m_activityDefinition"
+	22	"AddDailyTaskScoreBIType"
+	23	"activityType"
+	24	"m_type"
+	25	"activityId"
+	26	"GetId"
+	27	"taskDay"
+	28	"taskIndex"
+	29	"addScore"
+	30	"taskScore"
+	31	"SaveDailyReward"
+	32	"FinishDailyTaskBIType"
+	33	11
+	34	"IsBonus"
+	35	"FinishSpTask2BIType"
+	36	"_RefreshBonusTask"
+	37	"GetFinishedCount"
+	38	"Count"
+	39	"CycleTaskFinishedCountKey"
+	40	"tostring"
+	41	"_AcquireToken"
+	42	"Reward"
+	43	"LogPassActivityTask"
+locals (9) for 000001C307A41910:
+	0	self	1	129
+	1	task	1	129
+	2	taskId	2	129
+	3	finishedKey	13	101
+	4	isNewFinish	22	101
+	5	timelimitTaskOrder	34	101
+	6	tasknum	40	101
+	7	tasktarget	40	101
+	8	finishedCount	105	118
+upvalues (1) for 000001C307A41910:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:619,626> (43 instructions at 000001C307A41890)
+1 param, 10 slots, 1 upvalue, 4 locals, 16 constants, 0 functions
+	1	[620]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[620]	SELF     	1 1 -2	; "GetValue"
+	3	[620]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[620]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[620]	LOADK    	4 -5	; "value"
+	6	[620]	CALL     	1 4 2
+	7	[621]	GETTABLE 	2 0 -6	; "m_config"
+	8	[621]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[621]	GETTABLE 	2 2 1
+	10	[623]	GETTABUP 	3 0 -8	; _ENV "json"
+	11	[623]	GETTABLE 	3 3 -9	; "decode"
+	12	[623]	GETTABLE 	4 0 -1	; "m_dbTable"
+	13	[623]	SELF     	4 4 -2	; "GetValue"
+	14	[623]	GETTABUP 	6 0 -3	; _ENV "PassActivityModel"
+	15	[623]	GETTABLE 	6 6 -10	; "DailyTaskRewardsKey"
+	16	[623]	LOADK    	7 -5	; "value"
+	17	[623]	CALL     	4 4 2
+	18	[623]	TEST     	4 1
+	19	[623]	JMP      	0 1	; to 21
+	20	[623]	LOADK    	4 -11	; ""
+	21	[623]	CALL     	3 2 2
+	22	[623]	TEST     	3 1
+	23	[623]	JMP      	0 1	; to 25
+	24	[623]	NEWTABLE 	3 0 0
+	25	[624]	GETTABUP 	4 0 -12	; _ENV "RewardApi"
+	26	[624]	GETTABLE 	4 4 -13	; "MergeRewards"
+	27	[624]	MOVE     	5 3
+	28	[624]	NEWTABLE 	6 1 0
+	29	[624]	GETTABLE 	7 2 -14	; "extraReward"
+	30	[624]	SETLIST  	6 1 1	; 1
+	31	[624]	CALL     	4 3 2
+	32	[624]	MOVE     	3 4
+	33	[625]	GETTABLE 	4 0 -1	; "m_dbTable"
+	34	[625]	SELF     	4 4 -15	; "Set"
+	35	[625]	GETTABUP 	6 0 -3	; _ENV "PassActivityModel"
+	36	[625]	GETTABLE 	6 6 -10	; "DailyTaskRewardsKey"
+	37	[625]	LOADK    	7 -5	; "value"
+	38	[625]	GETTABUP 	8 0 -8	; _ENV "json"
+	39	[625]	GETTABLE 	8 8 -16	; "encode"
+	40	[625]	MOVE     	9 3
+	41	[625]	CALL     	8 2 0
+	42	[625]	CALL     	4 0 1
+	43	[626]	RETURN   	0 1
+constants (16) for 000001C307A41890:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"json"
+	9	"decode"
+	10	"DailyTaskRewardsKey"
+	11	""
+	12	"RewardApi"
+	13	"MergeRewards"
+	14	"extraReward"
+	15	"Set"
+	16	"encode"
+locals (4) for 000001C307A41890:
+	0	self	1	44
+	1	timelimitTaskOrder	7	44
+	2	taskSetConfig	10	44
+	3	savedDailyRewards	25	44
+upvalues (1) for 000001C307A41890:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:628,631> (17 instructions at 000001C307A41A10)
+1 param, 6 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[629]	GETTABUP 	1 0 -1	; _ENV "json"
+	2	[629]	GETTABLE 	1 1 -2	; "decode"
+	3	[629]	GETTABLE 	2 0 -3	; "m_dbTable"
+	4	[629]	SELF     	2 2 -4	; "GetValue"
+	5	[629]	GETTABUP 	4 0 -5	; _ENV "PassActivityModel"
+	6	[629]	GETTABLE 	4 4 -6	; "DailyTaskRewardsKey"
+	7	[629]	LOADK    	5 -7	; "value"
+	8	[629]	CALL     	2 4 2
+	9	[629]	TEST     	2 1
+	10	[629]	JMP      	0 1	; to 12
+	11	[629]	LOADK    	2 -8	; ""
+	12	[629]	CALL     	1 2 2
+	13	[629]	TEST     	1 1
+	14	[629]	JMP      	0 1	; to 16
+	15	[629]	NEWTABLE 	1 0 0
+	16	[630]	RETURN   	1 2
+	17	[631]	RETURN   	0 1
+constants (8) for 000001C307A41A10:
+	1	"json"
+	2	"decode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"PassActivityModel"
+	6	"DailyTaskRewardsKey"
+	7	"value"
+	8	""
+locals (2) for 000001C307A41A10:
+	0	self	1	18
+	1	savedDailyRewards	16	18
+upvalues (1) for 000001C307A41A10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:633,649> (55 instructions at 000001C307A41A90)
+2 params, 10 slots, 1 upvalue, 5 locals, 33 constants, 0 functions
+	1	[634]	GETTABUP 	2 0 -1	; _ENV "json"
+	2	[634]	GETTABLE 	2 2 -2	; "decode"
+	3	[634]	GETTABLE 	3 0 -3	; "m_dbTable"
+	4	[634]	SELF     	3 3 -4	; "GetValue"
+	5	[634]	GETTABUP 	5 0 -5	; _ENV "PassActivityModel"
+	6	[634]	GETTABLE 	5 5 -6	; "DailyTaskRewardsKey"
+	7	[634]	LOADK    	6 -7	; "value"
+	8	[634]	CALL     	3 4 2
+	9	[634]	TEST     	3 1
+	10	[634]	JMP      	0 1	; to 12
+	11	[634]	LOADK    	3 -8	; ""
+	12	[634]	CALL     	2 2 2
+	13	[634]	TEST     	2 1
+	14	[634]	JMP      	0 1	; to 16
+	15	[634]	NEWTABLE 	2 0 0
+	16	[635]	GETTABUP 	3 0 -9	; _ENV "Table"
+	17	[635]	GETTABLE 	3 3 -10	; "DeepCopy"
+	18	[635]	MOVE     	4 2
+	19	[635]	CALL     	3 2 2
+	20	[636]	SELF     	4 0 -11	; "SetBattleScoreOrder"
+	21	[636]	CALL     	4 2 1
+	22	[637]	GETTABUP 	4 0 -12	; _ENV "RewardApi"
+	23	[637]	GETTABLE 	4 4 -13	; "AcquireRewardsLogic"
+	24	[637]	MOVE     	5 3
+	25	[637]	GETTABUP 	6 0 -14	; _ENV "EPropertySource"
+	26	[637]	GETTABLE 	6 6 -15	; "Give"
+	27	[637]	GETTABLE 	7 0 -16	; "m_activityDefinition"
+	28	[637]	GETTABLE 	7 7 -17	; "TakeDailyTaskRewardBIType"
+	29	[637]	GETTABUP 	8 0 -18	; _ENV "EGameMode"
+	30	[637]	GETTABLE 	8 8 -19	; "Main"
+	31	[637]	GETTABUP 	9 0 -20	; _ENV "CacheItemType"
+	32	[637]	GETTABLE 	9 9 -21	; "Type2"
+	33	[637]	CALL     	4 6 1
+	34	[639]	TEST     	1 1
+	35	[639]	JMP      	0 13	; to 49
+	36	[640]	NEWTABLE 	4 0 3
+	37	[641]	SETTABLE 	4 -22 3	; "arrRewards" -
+	38	[642]	SETTABLE 	4 -23 -24	; "playRewardAnim" true
+	39	[643]	NEWTABLE 	5 0 1
+	40	[643]	SETTABLE 	5 -26 -27	; "duration" 3
+	41	[643]	SETTABLE 	4 -25 5	; "highlightHudArgs" -
+	42	[645]	GETTABUP 	5 0 -28	; _ENV "GM"
+	43	[645]	GETTABLE 	5 5 -29	; "UIManager"
+	44	[645]	SELF     	5 5 -30	; "OpenView"
+	45	[645]	GETTABUP 	7 0 -31	; _ENV "UIPrefabConfigName"
+	46	[645]	GETTABLE 	7 7 -32	; "RewardWindow"
+	47	[645]	MOVE     	8 4
+	48	[645]	CALL     	5 4 1
+	49	[648]	GETTABLE 	4 0 -3	; "m_dbTable"
+	50	[648]	SELF     	4 4 -33	; "Remove"
+	51	[648]	GETTABUP 	6 0 -5	; _ENV "PassActivityModel"
+	52	[648]	GETTABLE 	6 6 -6	; "DailyTaskRewardsKey"
+	53	[648]	LOADK    	7 -7	; "value"
+	54	[648]	CALL     	4 4 1
+	55	[649]	RETURN   	0 1
+constants (33) for 000001C307A41A90:
+	1	"json"
+	2	"decode"
+	3	"m_dbTable"
+	4	"GetValue"
+	5	"PassActivityModel"
+	6	"DailyTaskRewardsKey"
+	7	"value"
+	8	""
+	9	"Table"
+	10	"DeepCopy"
+	11	"SetBattleScoreOrder"
+	12	"RewardApi"
+	13	"AcquireRewardsLogic"
+	14	"EPropertySource"
+	15	"Give"
+	16	"m_activityDefinition"
+	17	"TakeDailyTaskRewardBIType"
+	18	"EGameMode"
+	19	"Main"
+	20	"CacheItemType"
+	21	"Type2"
+	22	"arrRewards"
+	23	"playRewardAnim"
+	24	true
+	25	"highlightHudArgs"
+	26	"duration"
+	27	3
+	28	"GM"
+	29	"UIManager"
+	30	"OpenView"
+	31	"UIPrefabConfigName"
+	32	"RewardWindow"
+	33	"Remove"
+locals (5) for 000001C307A41A90:
+	0	self	1	56
+	1	onlyLogic	1	56
+	2	savedDailyRewards	16	56
+	3	temp	20	56
+	4	rewardWindowArgs	42	49
+upvalues (1) for 000001C307A41A90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:651,678> (83 instructions at 000001C307A41490)
+1 param, 15 slots, 1 upvalue, 16 locals, 29 constants, 0 functions
+	1	[652]	LOADK    	1 -1	; 0
+	2	[653]	GETTABUP 	2 0 -2	; _ENV "GM"
+	3	[653]	GETTABLE 	2 2 -3	; "GameModel"
+	4	[653]	SELF     	2 2 -4	; "GetServerTime"
+	5	[653]	CALL     	2 2 2
+	6	[654]	GETTABUP 	3 0 -5	; _ENV "ipairs"
+	7	[654]	GETTABLE 	4 0 -6	; "m_config"
+	8	[654]	GETTABLE 	4 4 -7	; "timelimitTasks"
+	9	[654]	CALL     	3 2 4
+	10	[654]	JMP      	0 9	; to 20
+	11	[655]	GETTABLE 	8 0 -6	; "m_config"
+	12	[655]	GETTABLE 	8 8 -8	; "sTime"
+	13	[655]	GETTABLE 	9 7 -9	; "time"
+	14	[655]	SUB      	9 9 -10	; - 1
+	15	[655]	MUL      	9 9 -11	; - 86400
+	16	[655]	ADD      	8 8 9
+	17	[656]	LE       	0 8 2
+	18	[656]	JMP      	0 1	; to 20
+	19	[657]	MOVE     	1 6
+	20	[654]	TFORCALL 	3 2
+	21	[654]	TFORLOOP 	5 -11	; to 11
+	22	[661]	GETTABLE 	3 0 -12	; "m_dbTable"
+	23	[661]	SELF     	3 3 -13	; "Set"
+	24	[661]	GETTABUP 	5 0 -14	; _ENV "PassActivityModel"
+	25	[661]	GETTABLE 	5 5 -15	; "LastDailyTaskFinished"
+	26	[661]	LOADK    	6 -16	; "value"
+	27	[661]	LOADK    	7 -1	; 0
+	28	[661]	CALL     	3 5 1
+	29	[663]	GETTABLE 	3 0 -6	; "m_config"
+	30	[663]	GETTABLE 	3 3 -7	; "timelimitTasks"
+	31	[663]	GETTABLE 	3 3 1
+	32	[663]	GETTABLE 	3 3 -17	; "tasks"
+	33	[664]	GETTABLE 	4 0 -12	; "m_dbTable"
+	34	[664]	SELF     	4 4 -13	; "Set"
+	35	[664]	GETTABUP 	6 0 -14	; _ENV "PassActivityModel"
+	36	[664]	GETTABLE 	6 6 -18	; "TimelimitTaskOrderKey"
+	37	[664]	LOADK    	7 -16	; "value"
+	38	[664]	MOVE     	8 1
+	39	[664]	CALL     	4 5 1
+	40	[665]	LOADK    	4 -10	; 1
+	41	[665]	LEN      	5 3
+	42	[665]	LOADK    	6 -10	; 1
+	43	[665]	FORPREP  	4 24	; to 68
+	44	[666]	GETTABUP 	8 0 -19	; _ENV "string"
+	45	[666]	GETTABLE 	8 8 -20	; "format"
+	46	[666]	GETTABUP 	9 0 -14	; _ENV "PassActivityModel"
+	47	[666]	GETTABLE 	9 9 -21	; "TimelimitTaskFinishedCountKey"
+	48	[666]	MOVE     	10 7
+	49	[666]	CALL     	8 3 2
+	50	[667]	GETTABLE 	9 0 -12	; "m_dbTable"
+	51	[667]	SELF     	9 9 -13	; "Set"
+	52	[667]	MOVE     	11 8
+	53	[667]	LOADK    	12 -16	; "value"
+	54	[667]	LOADK    	13 -1	; 0
+	55	[667]	CALL     	9 5 1
+	56	[669]	GETTABUP 	9 0 -19	; _ENV "string"
+	57	[669]	GETTABLE 	9 9 -20	; "format"
+	58	[669]	GETTABUP 	10 0 -14	; _ENV "PassActivityModel"
+	59	[669]	GETTABLE 	10 10 -22	; "TimelimitTaskFinishedKey"
+	60	[669]	MOVE     	11 7
+	61	[669]	CALL     	9 3 2
+	62	[670]	GETTABLE 	10 0 -12	; "m_dbTable"
+	63	[670]	SELF     	10 10 -13	; "Set"
+	64	[670]	MOVE     	12 9
+	65	[670]	LOADK    	13 -16	; "value"
+	66	[670]	LOADK    	14 -1	; 0
+	67	[670]	CALL     	10 5 1
+	68	[665]	FORLOOP  	4 -25	; to 44
+	69	[673]	GETTABLE 	4 0 -12	; "m_dbTable"
+	70	[673]	SELF     	4 4 -13	; "Set"
+	71	[673]	GETTABUP 	6 0 -14	; _ENV "PassActivityModel"
+	72	[673]	GETTABLE 	6 6 -23	; "BonusTaskIndexKey"
+	73	[673]	LOADK    	7 -16	; "value"
+	74	[673]	LOADNIL  	8 0
+	75	[673]	CALL     	4 5 1
+	76	[674]	SETTABLE 	0 -24 -25	; "m_shouldRefreshTimelimitTasks" false
+	77	[676]	GETTABUP 	4 0 -26	; _ENV "EventDispatcher"
+	78	[676]	GETTABLE 	4 4 -27	; "DispatchEvent"
+	79	[676]	GETTABLE 	5 0 -28	; "m_activityDefinition"
+	80	[676]	GETTABLE 	5 5 -29	; "RefreshDailyTasksEvent"
+	81	[676]	CALL     	4 2 1
+	82	[677]	RETURN   	3 2
+	83	[678]	RETURN   	0 1
+constants (29) for 000001C307A41490:
+	1	0
+	2	"GM"
+	3	"GameModel"
+	4	"GetServerTime"
+	5	"ipairs"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"sTime"
+	9	"time"
+	10	1
+	11	86400
+	12	"m_dbTable"
+	13	"Set"
+	14	"PassActivityModel"
+	15	"LastDailyTaskFinished"
+	16	"value"
+	17	"tasks"
+	18	"TimelimitTaskOrderKey"
+	19	"string"
+	20	"format"
+	21	"TimelimitTaskFinishedCountKey"
+	22	"TimelimitTaskFinishedKey"
+	23	"BonusTaskIndexKey"
+	24	"m_shouldRefreshTimelimitTasks"
+	25	false
+	26	"EventDispatcher"
+	27	"DispatchEvent"
+	28	"m_activityDefinition"
+	29	"RefreshDailyTasksEvent"
+locals (16) for 000001C307A41490:
+	0	self	1	84
+	1	maxValidOrder	2	84
+	2	serverTime	6	84
+	3	(for generator)	10	22
+	4	(for state)	10	22
+	5	(for control)	10	22
+	6	order	11	20
+	7	taskSet	11	20
+	8	startTime	17	20
+	9	newTasks	33	84
+	10	(for index)	43	69
+	11	(for limit)	43	69
+	12	(for step)	43	69
+	13	index	44	68
+	14	finishedCountKey	50	68
+	15	finishedKey	62	68
+upvalues (1) for 000001C307A41490:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:680,682> (11 instructions at 000001C307A41B10)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[681]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[681]	SELF     	1 1 -2	; "GetValue"
+	3	[681]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[681]	GETTABLE 	3 3 -4	; "LastDailyTaskFinished"
+	5	[681]	LOADK    	4 -5	; "value"
+	6	[681]	CALL     	1 4 2
+	7	[681]	TEST     	1 1
+	8	[681]	JMP      	0 1	; to 10
+	9	[681]	LOADK    	1 -6	; 0
+	10	[681]	RETURN   	1 2
+	11	[682]	RETURN   	0 1
+constants (6) for 000001C307A41B10:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"LastDailyTaskFinished"
+	5	"value"
+	6	0
+locals (1) for 000001C307A41B10:
+	0	self	1	12
+upvalues (1) for 000001C307A41B10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:684,686> (9 instructions at 000001C307A40A10)
+2 params, 7 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[685]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[685]	SELF     	2 2 -2	; "Set"
+	3	[685]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	4	[685]	GETTABLE 	4 4 -4	; "LastDailyTaskFinished"
+	5	[685]	LOADK    	5 -5	; "value"
+	6	[685]	MOVE     	6 1
+	7	[685]	TAILCALL 	2 5 0
+	8	[685]	RETURN   	2 0
+	9	[686]	RETURN   	0 1
+constants (5) for 000001C307A40A10:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PassActivityModel"
+	4	"LastDailyTaskFinished"
+	5	"value"
+locals (2) for 000001C307A40A10:
+	0	self	1	10
+	1	num	1	10
+upvalues (1) for 000001C307A40A10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:688,693> (12 instructions at 000001C307A41590)
+1 param, 5 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[689]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[689]	SELF     	1 1 -2	; "GetValue"
+	3	[689]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[689]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[689]	LOADK    	4 -5	; "value"
+	6	[689]	CALL     	1 4 2
+	7	[690]	GETTABLE 	2 0 -6	; "m_config"
+	8	[690]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[690]	GETTABLE 	2 2 1
+	10	[692]	GETTABLE 	3 2 -8	; "extraReward"
+	11	[692]	RETURN   	3 2
+	12	[693]	RETURN   	0 1
+constants (8) for 000001C307A41590:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+	8	"extraReward"
+locals (3) for 000001C307A41590:
+	0	self	1	13
+	1	timelimitTaskOrder	7	13
+	2	taskSetConfig	10	13
+upvalues (1) for 000001C307A41590:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:695,698> (15 instructions at 000001C307A41410)
+1 param, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[696]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[696]	SELF     	1 1 -2	; "GetValue"
+	3	[696]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[696]	GETTABLE 	3 3 -4	; "TimelimitTaskOrderKey"
+	5	[696]	LOADK    	4 -5	; "value"
+	6	[696]	CALL     	1 4 2
+	7	[697]	GETTABLE 	2 0 -6	; "m_config"
+	8	[697]	GETTABLE 	2 2 -7	; "timelimitTasks"
+	9	[697]	LEN      	2 2
+	10	[697]	EQ       	1 1 2
+	11	[697]	JMP      	0 1	; to 13
+	12	[697]	LOADBOOL 	2 0 1
+	13	[697]	LOADBOOL 	2 1 0
+	14	[697]	RETURN   	2 2
+	15	[698]	RETURN   	0 1
+constants (7) for 000001C307A41410:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TimelimitTaskOrderKey"
+	5	"value"
+	6	"m_config"
+	7	"timelimitTasks"
+locals (2) for 000001C307A41410:
+	0	self	1	16
+	1	timelimitTaskOrder	7	16
+upvalues (1) for 000001C307A41410:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:700,722> (54 instructions at 000001C307A41990)
+1 param, 17 slots, 1 upvalue, 12 locals, 20 constants, 1 function
+	1	[701]	SELF     	1 0 -1	; "GetActiveTasks"
+	2	[701]	CALL     	1 2 2
+	3	[704]	CLOSURE  	2 0	; 000001C307A40890
+	4	[705]	GETTABUP 	3 0 -2	; _ENV "Table"
+	5	[705]	GETTABLE 	3 3 -3	; "ListSelect"
+	6	[705]	MOVE     	4 1
+	7	[705]	MOVE     	5 2
+	8	[705]	CALL     	3 3 2
+	9	[706]	LEN      	4 3
+	10	[706]	EQ       	1 4 -4	; - 0
+	11	[706]	JMP      	0 1	; to 13
+	12	[707]	RETURN   	0 1
+	13	[710]	GETTABLE 	4 0 -5	; "m_dbTable"
+	14	[710]	SELF     	4 4 -6	; "GetValue"
+	15	[710]	GETTABUP 	6 0 -7	; _ENV "PassActivityModel"
+	16	[710]	GETTABLE 	6 6 -8	; "TimelimitTaskOrderKey"
+	17	[710]	LOADK    	7 -9	; "value"
+	18	[710]	CALL     	4 4 2
+	19	[711]	GETTABLE 	5 0 -10	; "m_config"
+	20	[711]	GETTABLE 	5 5 -11	; "timelimitTasks"
+	21	[711]	GETTABLE 	5 5 4
+	22	[711]	GETTABLE 	5 5 -12	; "tasks"
+	23	[712]	SELF     	6 0 -13	; "_GetBonusTaskIndex"
+	24	[712]	CALL     	6 2 2
+	25	[713]	GETTABUP 	7 0 -14	; _ENV "ipairs"
+	26	[713]	MOVE     	8 5
+	27	[713]	CALL     	7 2 4
+	28	[713]	JMP      	0 23	; to 52
+	29	[715]	GETTABLE 	12 11 -15	; "IsBonus"
+	30	[715]	TEST     	12 0
+	31	[715]	JMP      	0 20	; to 52
+	32	[715]	EQ       	1 6 -16	; - nil
+	33	[715]	JMP      	0 3	; to 37
+	34	[715]	GETTABLE 	12 11 -17	; "Index"
+	35	[715]	LT       	0 6 12
+	36	[715]	JMP      	0 15	; to 52
+	37	[717]	GETTABLE 	12 0 -5	; "m_dbTable"
+	38	[717]	SELF     	12 12 -18	; "Set"
+	39	[717]	GETTABUP 	14 0 -7	; _ENV "PassActivityModel"
+	40	[717]	GETTABLE 	14 14 -19	; "BonusTaskIndexKey"
+	41	[717]	LOADK    	15 -9	; "value"
+	42	[717]	GETTABLE 	16 11 -17	; "Index"
+	43	[717]	CALL     	12 5 1
+	44	[718]	GETTABLE 	12 0 -5	; "m_dbTable"
+	45	[718]	SELF     	12 12 -18	; "Set"
+	46	[718]	GETTABUP 	14 0 -7	; _ENV "PassActivityModel"
+	47	[718]	GETTABLE 	14 14 -20	; "BonusTaskPreviewedKey"
+	48	[718]	LOADK    	15 -9	; "value"
+	49	[718]	LOADK    	16 -4	; 0
+	50	[718]	CALL     	12 5 1
+	51	[718]	JMP      	0 2	; to 54
+	52	[713]	TFORCALL 	7 2
+	53	[713]	TFORLOOP 	9 -25	; to 29
+	54	[722]	RETURN   	0 1
+constants (20) for 000001C307A41990:
+	1	"GetActiveTasks"
+	2	"Table"
+	3	"ListSelect"
+	4	0
+	5	"m_dbTable"
+	6	"GetValue"
+	7	"PassActivityModel"
+	8	"TimelimitTaskOrderKey"
+	9	"value"
+	10	"m_config"
+	11	"timelimitTasks"
+	12	"tasks"
+	13	"_GetBonusTaskIndex"
+	14	"ipairs"
+	15	"IsBonus"
+	16	nil
+	17	"Index"
+	18	"Set"
+	19	"BonusTaskIndexKey"
+	20	"BonusTaskPreviewedKey"
+locals (12) for 000001C307A41990:
+	0	self	1	55
+	1	activeTasks	3	55
+	2	filter	4	55
+	3	timelimitTasks	9	55
+	4	timelimitTaskOrder	19	55
+	5	tasks	23	55
+	6	bonusTaskIndex	25	55
+	7	(for generator)	28	54
+	8	(for state)	28	54
+	9	(for control)	28	54
+	10	_	29	52
+	11	task	29	52
+upvalues (1) for 000001C307A41990:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:702,704> (9 instructions at 000001C307A40890)
+1 param, 3 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[703]	GETTABLE 	1 0 -1	; "Type"
+	2	[703]	GETTABUP 	2 0 -2	; _ENV "PassActivityTaskType"
+	3	[703]	GETTABLE 	2 2 -3	; "Timelimit"
+	4	[703]	EQ       	1 1 2
+	5	[703]	JMP      	0 1	; to 7
+	6	[703]	LOADBOOL 	1 0 1
+	7	[703]	LOADBOOL 	1 1 0
+	8	[703]	RETURN   	1 2
+	9	[704]	RETURN   	0 1
+constants (3) for 000001C307A40890:
+	1	"Type"
+	2	"PassActivityTaskType"
+	3	"Timelimit"
+locals (1) for 000001C307A40890:
+	0	task	1	10
+upvalues (1) for 000001C307A40890:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:724,730> (16 instructions at 000001C307A40510)
+3 params, 6 slots, 1 upvalue, 3 locals, 7 constants, 0 functions
+	1	[725]	GETTABUP 	3 0 -1	; _ENV "PassActivityTaskType"
+	2	[725]	GETTABLE 	3 3 -2	; "Timelimit"
+	3	[725]	EQ       	0 1 3
+	4	[725]	JMP      	0 8	; to 13
+	5	[726]	GETTABUP 	3 0 -3	; _ENV "string"
+	6	[726]	GETTABLE 	3 3 -4	; "format"
+	7	[726]	GETTABUP 	4 0 -5	; _ENV "PassActivityModel"
+	8	[726]	GETTABLE 	4 4 -6	; "TimelimitTaskFinishedCountKey"
+	9	[726]	MOVE     	5 2
+	10	[726]	TAILCALL 	3 3 0
+	11	[726]	RETURN   	3 0
+	12	[726]	JMP      	0 3	; to 16
+	13	[728]	GETTABUP 	3 0 -5	; _ENV "PassActivityModel"
+	14	[728]	GETTABLE 	3 3 -7	; "CycleTaskFinishedCountKey"
+	15	[728]	RETURN   	3 2
+	16	[730]	RETURN   	0 1
+constants (7) for 000001C307A40510:
+	1	"PassActivityTaskType"
+	2	"Timelimit"
+	3	"string"
+	4	"format"
+	5	"PassActivityModel"
+	6	"TimelimitTaskFinishedCountKey"
+	7	"CycleTaskFinishedCountKey"
+locals (3) for 000001C307A40510:
+	0	self	1	17
+	1	type	1	17
+	2	index	1	17
+upvalues (1) for 000001C307A40510:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:734,736> (11 instructions at 000001C307A41790)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[735]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[735]	SELF     	1 1 -2	; "GetValue"
+	3	[735]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[735]	GETTABLE 	3 3 -4	; "TokenNumberKey"
+	5	[735]	LOADK    	4 -5	; "value"
+	6	[735]	CALL     	1 4 2
+	7	[735]	TEST     	1 1
+	8	[735]	JMP      	0 1	; to 10
+	9	[735]	LOADK    	1 -6	; 0
+	10	[735]	RETURN   	1 2
+	11	[736]	RETURN   	0 1
+constants (6) for 000001C307A41790:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TokenNumberKey"
+	5	"value"
+	6	0
+locals (1) for 000001C307A41790:
+	0	self	1	12
+upvalues (1) for 000001C307A41790:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:739,757> (71 instructions at 000001C307A41B90)
+3 params, 11 slots, 1 upvalue, 6 locals, 31 constants, 0 functions
+	1	[740]	TEST     	2 0
+	2	[740]	JMP      	0 14	; to 17
+	3	[740]	SELF     	3 0 -1	; "GetTicketState"
+	4	[740]	CALL     	3 2 2
+	5	[740]	GETTABUP 	4 0 -2	; _ENV "PassActivityTicketState"
+	6	[740]	GETTABLE 	4 4 -3	; "Super"
+	7	[740]	EQ       	0 3 4
+	8	[740]	JMP      	0 8	; to 17
+	9	[741]	GETTABUP 	3 0 -4	; _ENV "math"
+	10	[741]	GETTABLE 	3 3 -5	; "ceil"
+	11	[741]	GETTABLE 	4 0 -6	; "m_config"
+	12	[741]	GETTABLE 	4 4 -7	; "superTicketConfig"
+	13	[741]	GETTABLE 	4 4 -8	; "MultipleFactor"
+	14	[741]	MUL      	4 1 4
+	15	[741]	CALL     	3 2 2
+	16	[741]	MOVE     	1 3
+	17	[744]	SELF     	3 0 -9	; "GetTokenNumber"
+	18	[744]	CALL     	3 2 2
+	19	[745]	GETTABLE 	4 0 -10	; "m_dbTable"
+	20	[745]	SELF     	4 4 -11	; "Set"
+	21	[745]	GETTABUP 	6 0 -12	; _ENV "PassActivityModel"
+	22	[745]	GETTABLE 	6 6 -13	; "TokenNumberKey"
+	23	[745]	LOADK    	7 -14	; "value"
+	24	[745]	ADD      	8 3 1
+	25	[745]	CALL     	4 5 1
+	26	[746]	SELF     	4 0 -15	; "LogActivity"
+	27	[746]	GETTABUP 	6 0 -16	; _ENV "EBIType"
+	28	[746]	GETTABLE 	6 6 -17	; "ActivityAddScore"
+	29	[746]	MOVE     	7 1
+	30	[746]	CALL     	4 4 1
+	31	[748]	GETTABLE 	4 0 -10	; "m_dbTable"
+	32	[748]	SELF     	4 4 -18	; "GetValue"
+	33	[748]	GETTABUP 	6 0 -12	; _ENV "PassActivityModel"
+	34	[748]	GETTABLE 	6 6 -19	; "FinishedLevelKey"
+	35	[748]	LOADK    	7 -14	; "value"
+	36	[748]	CALL     	4 4 2
+	37	[748]	TEST     	4 1
+	38	[748]	JMP      	0 1	; to 40
+	39	[748]	LOADK    	4 -20	; 1
+	40	[749]	SELF     	5 0 -21	; "GetCurrentLevel"
+	41	[749]	CALL     	5 2 2
+	42	[750]	LT       	0 4 5
+	43	[750]	JMP      	0 20	; to 64
+	44	[751]	SELF     	6 0 -15	; "LogActivity"
+	45	[751]	GETTABUP 	8 0 -16	; _ENV "EBIType"
+	46	[751]	GETTABLE 	8 8 -22	; "ActivityRankUp"
+	47	[751]	MOVE     	9 5
+	48	[751]	CALL     	6 4 1
+	49	[752]	GETTABUP 	6 0 -23	; _ENV "EventDispatcher"
+	50	[752]	GETTABLE 	6 6 -24	; "DispatchEvent"
+	51	[752]	GETTABLE 	7 0 -25	; "m_activityDefinition"
+	52	[752]	GETTABLE 	7 7 -26	; "CanTakeRewardNumberChangedEvent"
+	53	[752]	CALL     	6 2 1
+	54	[753]	GETTABUP 	6 0 -23	; _ENV "EventDispatcher"
+	55	[753]	GETTABLE 	6 6 -24	; "DispatchEvent"
+	56	[753]	GETTABUP 	7 0 -27	; _ENV "EEventType"
+	57	[753]	GETTABLE 	7 7 -28	; "PassActivityLevelUp"
+	58	[753]	NEWTABLE 	8 0 2
+	59	[753]	SETTABLE 	8 -29 5	; "num" -
+	60	[753]	SELF     	9 0 -31	; "GetType"
+	61	[753]	CALL     	9 2 2
+	62	[753]	SETTABLE 	8 -30 9	; "atype" -
+	63	[753]	CALL     	6 3 1
+	64	[756]	GETTABLE 	6 0 -10	; "m_dbTable"
+	65	[756]	SELF     	6 6 -11	; "Set"
+	66	[756]	GETTABUP 	8 0 -12	; _ENV "PassActivityModel"
+	67	[756]	GETTABLE 	8 8 -19	; "FinishedLevelKey"
+	68	[756]	LOADK    	9 -14	; "value"
+	69	[756]	MOVE     	10 5
+	70	[756]	CALL     	6 5 1
+	71	[757]	RETURN   	0 1
+constants (31) for 000001C307A41B90:
+	1	"GetTicketState"
+	2	"PassActivityTicketState"
+	3	"Super"
+	4	"math"
+	5	"ceil"
+	6	"m_config"
+	7	"superTicketConfig"
+	8	"MultipleFactor"
+	9	"GetTokenNumber"
+	10	"m_dbTable"
+	11	"Set"
+	12	"PassActivityModel"
+	13	"TokenNumberKey"
+	14	"value"
+	15	"LogActivity"
+	16	"EBIType"
+	17	"ActivityAddScore"
+	18	"GetValue"
+	19	"FinishedLevelKey"
+	20	1
+	21	"GetCurrentLevel"
+	22	"ActivityRankUp"
+	23	"EventDispatcher"
+	24	"DispatchEvent"
+	25	"m_activityDefinition"
+	26	"CanTakeRewardNumberChangedEvent"
+	27	"EEventType"
+	28	"PassActivityLevelUp"
+	29	"num"
+	30	"atype"
+	31	"GetType"
+locals (6) for 000001C307A41B90:
+	0	self	1	72
+	1	count	1	72
+	2	useMultipleFactor	1	72
+	3	tokenNumber	19	72
+	4	finishedLevel	40	72
+	5	currentTokenLevel	42	72
+upvalues (1) for 000001C307A41B90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:760,773> (24 instructions at 000001C307A41C10)
+2 params, 10 slots, 1 upvalue, 9 locals, 6 constants, 0 functions
+	1	[761]	TESTSET  	2 1 1
+	2	[761]	JMP      	0 2	; to 5
+	3	[761]	SELF     	2 0 -1	; "GetTokenNumber"
+	4	[761]	CALL     	2 2 2
+	5	[762]	LOADK    	3 -2	; 0
+	6	[763]	GETTABUP 	4 0 -3	; _ENV "ipairs"
+	7	[763]	GETTABLE 	5 0 -4	; "m_config"
+	8	[763]	GETTABLE 	5 5 -5	; "levelConfigs"
+	9	[763]	CALL     	4 2 4
+	10	[763]	JMP      	0 8	; to 19
+	11	[764]	GETTABLE 	9 8 -6	; "require"
+	12	[764]	LE       	0 9 2
+	13	[764]	JMP      	0 7	; to 21
+	14	[765]	MOVE     	3 7
+	15	[766]	GETTABLE 	9 8 -6	; "require"
+	16	[766]	SUB      	2 2 9
+	17	[766]	JMP      	0 1	; to 19
+	18	[767]	JMP      	0 2	; to 21
+	19	[763]	TFORCALL 	4 2
+	20	[763]	TFORLOOP 	6 -10	; to 11
+	21	[772]	MOVE     	4 3
+	22	[772]	MOVE     	5 2
+	23	[772]	RETURN   	4 3
+	24	[773]	RETURN   	0 1
+constants (6) for 000001C307A41C10:
+	1	"GetTokenNumber"
+	2	0
+	3	"ipairs"
+	4	"m_config"
+	5	"levelConfigs"
+	6	"require"
+locals (9) for 000001C307A41C10:
+	0	self	1	25
+	1	tokenNumber	1	25
+	2	tokenNumber	5	25
+	3	tokenLevel	6	25
+	4	(for generator)	10	21
+	5	(for state)	10	21
+	6	(for control)	10	21
+	7	level	11	19
+	8	config	11	19
+upvalues (1) for 000001C307A41C10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:780,782> (12 instructions at 000001C307A41210)
+1 param, 5 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[781]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[781]	SELF     	1 1 -2	; "GetValue"
+	3	[781]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[781]	GETTABLE 	3 3 -4	; "TicketStateKey"
+	5	[781]	LOADK    	4 -5	; "value"
+	6	[781]	CALL     	1 4 2
+	7	[781]	TEST     	1 1
+	8	[781]	JMP      	0 2	; to 11
+	9	[781]	GETTABUP 	1 0 -6	; _ENV "PassActivityTicketState"
+	10	[781]	GETTABLE 	1 1 -7	; "None"
+	11	[781]	RETURN   	1 2
+	12	[782]	RETURN   	0 1
+constants (7) for 000001C307A41210:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TicketStateKey"
+	5	"value"
+	6	"PassActivityTicketState"
+	7	"None"
+locals (1) for 000001C307A41210:
+	0	self	1	13
+upvalues (1) for 000001C307A41210:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:787,794> (19 instructions at 000001C307A40C10)
+1 param, 5 slots, 1 upvalue, 1 local, 11 constants, 0 functions
+	1	[789]	GETTABLE 	1 0 -1	; "m_config"
+	2	[789]	GETTABLE 	1 1 -2	; "superTicketConfig"
+	3	[789]	EQ       	0 1 -3	; - nil
+	4	[789]	JMP      	0 3	; to 8
+	5	[790]	SELF     	1 0 -4	; "GetTicketState"
+	6	[790]	TAILCALL 	1 2 0
+	7	[790]	RETURN   	1 0
+	8	[793]	GETTABLE 	1 0 -5	; "m_dbTable"
+	9	[793]	SELF     	1 1 -6	; "GetValue"
+	10	[793]	GETTABUP 	3 0 -7	; _ENV "PassActivityModel"
+	11	[793]	GETTABLE 	3 3 -8	; "TicketRewardStateKey"
+	12	[793]	LOADK    	4 -9	; "value"
+	13	[793]	CALL     	1 4 2
+	14	[793]	TEST     	1 1
+	15	[793]	JMP      	0 2	; to 18
+	16	[793]	GETTABUP 	1 0 -10	; _ENV "PassActivityTicketState"
+	17	[793]	GETTABLE 	1 1 -11	; "None"
+	18	[793]	RETURN   	1 2
+	19	[794]	RETURN   	0 1
+constants (11) for 000001C307A40C10:
+	1	"m_config"
+	2	"superTicketConfig"
+	3	nil
+	4	"GetTicketState"
+	5	"m_dbTable"
+	6	"GetValue"
+	7	"PassActivityModel"
+	8	"TicketRewardStateKey"
+	9	"value"
+	10	"PassActivityTicketState"
+	11	"None"
+locals (1) for 000001C307A40C10:
+	0	self	1	20
+upvalues (1) for 000001C307A40C10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:797,813> (39 instructions at 000001C307A41E10)
+3 params, 10 slots, 1 upvalue, 5 locals, 16 constants, 1 function
+	1	[798]	SELF     	3 0 -1	; "_GetTargetTicketState"
+	2	[798]	MOVE     	5 1
+	3	[798]	CALL     	3 3 2
+	4	[801]	SELF     	4 0 -2	; "GetTicketState"
+	5	[801]	CALL     	4 2 2
+	6	[801]	EQ       	0 4 3
+	7	[801]	JMP      	0 14	; to 22
+	8	[802]	GETTABUP 	4 0 -3	; _ENV "GM"
+	9	[802]	GETTABLE 	4 4 -4	; "BIManager"
+	10	[802]	SELF     	4 4 -5	; "LogErrorInfo"
+	11	[802]	GETTABUP 	6 0 -6	; _ENV "EBIType"
+	12	[802]	GETTABLE 	6 6 -7	; "BPTicketRebuy"
+	13	[802]	LOADK    	7 -8	; ""
+	14	[802]	CALL     	4 4 1
+	15	[803]	SELF     	4 0 -9	; "_OnBuyTicketSuccess"
+	16	[803]	MOVE     	6 1
+	17	[803]	MOVE     	7 3
+	18	[803]	MOVE     	8 2
+	19	[803]	LOADBOOL 	9 0 0
+	20	[803]	CALL     	4 6 1
+	21	[804]	RETURN   	0 1
+	22	[807]	GETTABUP 	4 0 -3	; _ENV "GM"
+	23	[807]	GETTABLE 	4 4 -4	; "BIManager"
+	24	[807]	SELF     	4 4 -10	; "LogAction"
+	25	[807]	GETTABLE 	6 0 -11	; "m_activityDefinition"
+	26	[807]	GETTABLE 	6 6 -12	; "BuyTicketStartedBIType"
+	27	[807]	NEWTABLE 	7 0 1
+	28	[807]	SETTABLE 	7 -13 2	; "openScene" -
+	29	[807]	CALL     	4 4 1
+	30	[811]	CLOSURE  	4 0	; 000001C307A42090
+	31	[812]	GETTABUP 	5 0 -3	; _ENV "GM"
+	32	[812]	GETTABLE 	5 5 -14	; "InAppPurchaseModel"
+	33	[812]	SELF     	5 5 -15	; "StartPurchase"
+	34	[812]	MOVE     	7 1
+	35	[812]	MOVE     	8 4
+	36	[812]	GETTABUP 	9 0 -6	; _ENV "EBIType"
+	37	[812]	GETTABLE 	9 9 -16	; "ShopBuy"
+	38	[812]	CALL     	5 5 1
+	39	[813]	RETURN   	0 1
+constants (16) for 000001C307A41E10:
+	1	"_GetTargetTicketState"
+	2	"GetTicketState"
+	3	"GM"
+	4	"BIManager"
+	5	"LogErrorInfo"
+	6	"EBIType"
+	7	"BPTicketRebuy"
+	8	""
+	9	"_OnBuyTicketSuccess"
+	10	"LogAction"
+	11	"m_activityDefinition"
+	12	"BuyTicketStartedBIType"
+	13	"openScene"
+	14	"InAppPurchaseModel"
+	15	"StartPurchase"
+	16	"ShopBuy"
+locals (5) for 000001C307A41E10:
+	0	self	1	40
+	1	iapType	1	40
+	2	openScene	1	40
+	3	targetTicketState	4	40
+	4	purchaseCallback	31	40
+upvalues (1) for 000001C307A41E10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:809,811> (8 instructions at 000001C307A42090)
+0 params, 6 slots, 4 upvalues, 0 locals, 1 constant, 0 functions
+	1	[810]	GETUPVAL 	0 0	; self
+	2	[810]	SELF     	0 0 -1	; "_OnBuyTicketSuccess"
+	3	[810]	GETUPVAL 	2 1	; iapType
+	4	[810]	GETUPVAL 	3 2	; targetTicketState
+	5	[810]	GETUPVAL 	4 3	; openScene
+	6	[810]	LOADBOOL 	5 0 0
+	7	[810]	CALL     	0 6 1
+	8	[811]	RETURN   	0 1
+constants (1) for 000001C307A42090:
+	1	"_OnBuyTicketSuccess"
+locals (0) for 000001C307A42090:
+upvalues (4) for 000001C307A42090:
+	0	self	1	0
+	1	iapType	1	1
+	2	targetTicketState	1	3
+	3	openScene	1	2
+
+function <PassActivityModel.lua:815,828> (24 instructions at 000001C307A42110)
+2 params, 9 slots, 1 upvalue, 3 locals, 6 constants, 0 functions
+	1	[817]	SELF     	2 0 -1	; "GetTicketState"
+	2	[817]	CALL     	2 2 2
+	3	[817]	GETTABUP 	3 0 -2	; _ENV "PassActivityTicketState"
+	4	[817]	GETTABLE 	3 3 -3	; "Super"
+	5	[817]	EQ       	0 2 3
+	6	[817]	JMP      	0 2	; to 9
+	7	[818]	LOADBOOL 	2 0 0
+	8	[818]	RETURN   	2 2
+	9	[821]	SELF     	2 0 -4	; "_GetTargetTicketState"
+	10	[821]	MOVE     	4 1
+	11	[821]	CALL     	2 3 2
+	12	[822]	EQ       	1 2 -5	; - nil
+	13	[822]	JMP      	0 8	; to 22
+	14	[823]	SELF     	3 0 -6	; "_OnBuyTicketSuccess"
+	15	[823]	MOVE     	5 1
+	16	[823]	MOVE     	6 2
+	17	[823]	LOADNIL  	7 0
+	18	[823]	LOADBOOL 	8 1 0
+	19	[823]	CALL     	3 6 1
+	20	[824]	LOADBOOL 	3 1 0
+	21	[824]	RETURN   	3 2
+	22	[827]	LOADBOOL 	3 0 0
+	23	[827]	RETURN   	3 2
+	24	[828]	RETURN   	0 1
+constants (6) for 000001C307A42110:
+	1	"GetTicketState"
+	2	"PassActivityTicketState"
+	3	"Super"
+	4	"_GetTargetTicketState"
+	5	nil
+	6	"_OnBuyTicketSuccess"
+locals (3) for 000001C307A42110:
+	0	self	1	25
+	1	iapType	1	25
+	2	targetTicketState	12	25
+upvalues (1) for 000001C307A42110:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:832,854> (53 instructions at 000001C307A40910)
+5 params, 12 slots, 1 upvalue, 9 locals, 25 constants, 0 functions
+	1	[833]	GETTABLE 	5 0 -1	; "m_dbTable"
+	2	[833]	SELF     	5 5 -2	; "Set"
+	3	[833]	GETTABUP 	7 0 -3	; _ENV "PassActivityModel"
+	4	[833]	GETTABLE 	7 7 -4	; "TicketStateKey"
+	5	[833]	LOADK    	8 -5	; "value"
+	6	[833]	MOVE     	9 2
+	7	[833]	CALL     	5 5 1
+	8	[835]	GETTABUP 	5 0 -6	; _ENV "PassActivityTicketState"
+	9	[835]	GETTABLE 	5 5 -7	; "Super"
+	10	[835]	EQ       	0 2 5
+	11	[835]	JMP      	0 14	; to 26
+	12	[836]	SELF     	5 0 -8	; "GetTokenNumber"
+	13	[836]	CALL     	5 2 2
+	14	[840]	GETTABUP 	6 0 -9	; _ENV "math"
+	15	[840]	GETTABLE 	6 6 -10	; "max"
+	16	[840]	MOVE     	7 5
+	17	[840]	GETTABLE 	8 0 -11	; "m_levelTokenSum"
+	18	[840]	CALL     	6 3 2
+	19	[841]	GETTABLE 	7 0 -1	; "m_dbTable"
+	20	[841]	SELF     	7 7 -2	; "Set"
+	21	[841]	GETTABUP 	9 0 -3	; _ENV "PassActivityModel"
+	22	[841]	GETTABLE 	9 9 -12	; "UnlimitedRewardUnlockedTokenNumberKey"
+	23	[841]	LOADK    	10 -5	; "value"
+	24	[841]	MOVE     	11 6
+	25	[841]	CALL     	7 5 1
+	26	[844]	GETTABUP 	5 0 -13	; _ENV "EventDispatcher"
+	27	[844]	GETTABLE 	5 5 -14	; "DispatchEvent"
+	28	[844]	GETTABLE 	6 0 -15	; "m_activityDefinition"
+	29	[844]	GETTABLE 	6 6 -16	; "CanTakeRewardNumberChangedEvent"
+	30	[844]	CALL     	5 2 1
+	31	[845]	GETTABUP 	5 0 -13	; _ENV "EventDispatcher"
+	32	[845]	GETTABLE 	5 5 -14	; "DispatchEvent"
+	33	[845]	GETTABLE 	6 0 -15	; "m_activityDefinition"
+	34	[845]	GETTABLE 	6 6 -17	; "BuyTicketSuccessEvent"
+	35	[845]	CALL     	5 2 1
+	36	[847]	GETTABUP 	5 0 -18	; _ENV "GM"
+	37	[847]	GETTABLE 	5 5 -19	; "InAppPurchaseModel"
+	38	[847]	SELF     	5 5 -20	; "GetLocalizedPrice"
+	39	[847]	MOVE     	7 1
+	40	[847]	CALL     	5 3 2
+	41	[848]	NEWTABLE 	6 0 1
+	42	[848]	SETTABLE 	6 -21 5	; "price" -
+	43	[849]	TEST     	3 0
+	44	[849]	JMP      	0 1	; to 46
+	45	[850]	SETTABLE 	6 -22 3	; "openScene" -
+	46	[853]	GETTABUP 	7 0 -18	; _ENV "GM"
+	47	[853]	GETTABLE 	7 7 -23	; "BIManager"
+	48	[853]	SELF     	7 7 -24	; "LogAction"
+	49	[853]	GETTABLE 	9 0 -15	; "m_activityDefinition"
+	50	[853]	GETTABLE 	9 9 -25	; "BuyTicketSuccessBIType"
+	51	[853]	MOVE     	10 6
+	52	[853]	CALL     	7 4 1
+	53	[854]	RETURN   	0 1
+constants (25) for 000001C307A40910:
+	1	"m_dbTable"
+	2	"Set"
+	3	"PassActivityModel"
+	4	"TicketStateKey"
+	5	"value"
+	6	"PassActivityTicketState"
+	7	"Super"
+	8	"GetTokenNumber"
+	9	"math"
+	10	"max"
+	11	"m_levelTokenSum"
+	12	"UnlimitedRewardUnlockedTokenNumberKey"
+	13	"EventDispatcher"
+	14	"DispatchEvent"
+	15	"m_activityDefinition"
+	16	"CanTakeRewardNumberChangedEvent"
+	17	"BuyTicketSuccessEvent"
+	18	"GM"
+	19	"InAppPurchaseModel"
+	20	"GetLocalizedPrice"
+	21	"price"
+	22	"openScene"
+	23	"BIManager"
+	24	"LogAction"
+	25	"BuyTicketSuccessBIType"
+locals (9) for 000001C307A40910:
+	0	self	1	54
+	1	iapType	1	54
+	2	targetTicketState	1	54
+	3	openScene	1	54
+	4	restore	1	54
+	5	tokenNumber	14	26
+	6	unlimitedRewardUnlockedTokenNumber	19	26
+	7	price	41	54
+	8	action	43	54
+upvalues (1) for 000001C307A40910:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:857,865> (20 instructions at 000001C307A41E90)
+2 params, 3 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[858]	GETTABLE 	2 0 -1	; "m_ticketIapType"
+	2	[858]	EQ       	0 1 2
+	3	[858]	JMP      	0 4	; to 8
+	4	[859]	GETTABUP 	2 0 -2	; _ENV "PassActivityTicketState"
+	5	[859]	GETTABLE 	2 2 -3	; "Normal"
+	6	[859]	RETURN   	2 2
+	7	[859]	JMP      	0 12	; to 20
+	8	[860]	GETTABLE 	2 0 -4	; "m_superTicketIapType"
+	9	[860]	EQ       	1 1 2
+	10	[860]	JMP      	0 3	; to 14
+	11	[860]	GETTABLE 	2 0 -5	; "m_upgradeTicketIapType"
+	12	[860]	EQ       	0 1 2
+	13	[860]	JMP      	0 4	; to 18
+	14	[861]	GETTABUP 	2 0 -2	; _ENV "PassActivityTicketState"
+	15	[861]	GETTABLE 	2 2 -6	; "Super"
+	16	[861]	RETURN   	2 2
+	17	[861]	JMP      	0 2	; to 20
+	18	[863]	LOADNIL  	2 0
+	19	[863]	RETURN   	2 2
+	20	[865]	RETURN   	0 1
+constants (6) for 000001C307A41E90:
+	1	"m_ticketIapType"
+	2	"PassActivityTicketState"
+	3	"Normal"
+	4	"m_superTicketIapType"
+	5	"m_upgradeTicketIapType"
+	6	"Super"
+locals (2) for 000001C307A41E90:
+	0	self	1	21
+	1	iapType	1	21
+upvalues (1) for 000001C307A41E90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:867,894> (54 instructions at 000001C307A41D10)
+1 param, 13 slots, 1 upvalue, 9 locals, 17 constants, 0 functions
+	1	[868]	NEWTABLE 	1 0 0
+	2	[869]	SELF     	2 0 -1	; "GetCurrentLevel"
+	3	[869]	CALL     	2 2 2
+	4	[870]	SELF     	3 0 -2	; "GetTicketState"
+	5	[870]	CALL     	3 2 2
+	6	[870]	GETTABUP 	4 0 -3	; _ENV "PassActivityTicketState"
+	7	[870]	GETTABLE 	4 4 -4	; "None"
+	8	[870]	EQ       	0 3 4
+	9	[870]	JMP      	0 1	; to 11
+	10	[870]	LOADBOOL 	3 0 1
+	11	[870]	LOADBOOL 	3 1 0
+	12	[871]	GETTABUP 	4 0 -5	; _ENV "ipairs"
+	13	[871]	GETTABLE 	5 0 -6	; "m_config"
+	14	[871]	GETTABLE 	5 5 -7	; "levelConfigs"
+	15	[871]	CALL     	4 2 4
+	16	[871]	JMP      	0 34	; to 51
+	17	[872]	LT       	1 2 7
+	18	[872]	JMP      	0 34	; to 53
+	19	[876]	SELF     	9 0 -8	; "IsRewardTaken"
+	20	[876]	MOVE     	11 7
+	21	[876]	LOADBOOL 	12 0 0
+	22	[876]	CALL     	9 4 2
+	23	[876]	TEST     	9 1
+	24	[876]	JMP      	0 9	; to 34
+	25	[877]	GETTABUP 	9 0 -9	; _ENV "table"
+	26	[877]	GETTABLE 	9 9 -10	; "insert"
+	27	[877]	MOVE     	10 1
+	28	[877]	NEWTABLE 	11 0 3
+	29	[878]	SETTABLE 	11 -11 7	; "Level" -
+	30	[879]	SETTABLE 	11 -12 -13	; "IsVip" false
+	31	[880]	GETTABLE 	12 8 -15	; "rewards"
+	32	[880]	SETTABLE 	11 -14 12	; "Rewards" -
+	33	[877]	CALL     	9 3 1
+	34	[884]	TEST     	3 0
+	35	[884]	JMP      	0 15	; to 51
+	36	[884]	SELF     	9 0 -8	; "IsRewardTaken"
+	37	[884]	MOVE     	11 7
+	38	[884]	LOADBOOL 	12 1 0
+	39	[884]	CALL     	9 4 2
+	40	[884]	TEST     	9 1
+	41	[884]	JMP      	0 9	; to 51
+	42	[885]	GETTABUP 	9 0 -9	; _ENV "table"
+	43	[885]	GETTABLE 	9 9 -10	; "insert"
+	44	[885]	MOVE     	10 1
+	45	[885]	NEWTABLE 	11 0 3
+	46	[886]	SETTABLE 	11 -11 7	; "Level" -
+	47	[887]	SETTABLE 	11 -12 -16	; "IsVip" true
+	48	[888]	GETTABLE 	12 8 -17	; "vipRewards"
+	49	[888]	SETTABLE 	11 -14 12	; "Rewards" -
+	50	[885]	CALL     	9 3 1
+	51	[871]	TFORCALL 	4 2
+	52	[871]	TFORLOOP 	6 -36	; to 17
+	53	[893]	RETURN   	1 2
+	54	[894]	RETURN   	0 1
+constants (17) for 000001C307A41D10:
+	1	"GetCurrentLevel"
+	2	"GetTicketState"
+	3	"PassActivityTicketState"
+	4	"None"
+	5	"ipairs"
+	6	"m_config"
+	7	"levelConfigs"
+	8	"IsRewardTaken"
+	9	"table"
+	10	"insert"
+	11	"Level"
+	12	"IsVip"
+	13	false
+	14	"Rewards"
+	15	"rewards"
+	16	true
+	17	"vipRewards"
+locals (9) for 000001C307A41D10:
+	0	self	1	55
+	1	rewards	2	55
+	2	currentTokenLevel	4	55
+	3	hasTicket	12	55
+	4	(for generator)	16	53
+	5	(for state)	16	53
+	6	(for control)	16	53
+	7	level	17	51
+	8	config	17	51
+upvalues (1) for 000001C307A41D10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:896,899> (23 instructions at 000001C307A41F10)
+3 params, 8 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[897]	GETTABUP 	3 0 -1	; _ENV "string"
+	2	[897]	GETTABLE 	3 3 -2	; "format"
+	3	[897]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	4	[897]	GETTABLE 	4 4 -4	; "RewardTakenKey"
+	5	[897]	MOVE     	5 1
+	6	[897]	TEST     	2 0
+	7	[897]	JMP      	0 3	; to 11
+	8	[897]	LOADK    	6 -5	; 1
+	9	[897]	TEST     	6 1
+	10	[897]	JMP      	0 1	; to 12
+	11	[897]	LOADK    	6 -6	; 0
+	12	[897]	CALL     	3 4 2
+	13	[898]	GETTABLE 	4 0 -7	; "m_dbTable"
+	14	[898]	SELF     	4 4 -8	; "GetValue"
+	15	[898]	MOVE     	6 3
+	16	[898]	LOADK    	7 -9	; "value"
+	17	[898]	CALL     	4 4 2
+	18	[898]	EQ       	1 4 -5	; - 1
+	19	[898]	JMP      	0 1	; to 21
+	20	[898]	LOADBOOL 	4 0 1
+	21	[898]	LOADBOOL 	4 1 0
+	22	[898]	RETURN   	4 2
+	23	[899]	RETURN   	0 1
+constants (9) for 000001C307A41F10:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"RewardTakenKey"
+	5	1
+	6	0
+	7	"m_dbTable"
+	8	"GetValue"
+	9	"value"
+locals (4) for 000001C307A41F10:
+	0	self	1	24
+	1	level	1	24
+	2	isVip	1	24
+	3	rewardTakenKey	13	24
+upvalues (1) for 000001C307A41F10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:901,916> (65 instructions at 000001C307A41090)
+4 params, 12 slots, 1 upvalue, 8 locals, 34 constants, 0 functions
+	1	[902]	GETTABLE 	4 0 -1	; "m_state"
+	2	[902]	GETTABUP 	5 0 -2	; _ENV "ActivityState"
+	3	[902]	GETTABLE 	5 5 -3	; "Started"
+	4	[902]	EQ       	0 4 5
+	5	[902]	JMP      	0 4	; to 10
+	6	[902]	GETTABLE 	4 0 -4	; "m_activityDefinition"
+	7	[902]	GETTABLE 	4 4 -5	; "TakeRewardBIType"
+	8	[902]	TEST     	4 1
+	9	[902]	JMP      	0 2	; to 12
+	10	[902]	GETTABLE 	4 0 -4	; "m_activityDefinition"
+	11	[902]	GETTABLE 	4 4 -6	; "TakeRewardOnEndBIType"
+	12	[903]	GETTABUP 	5 0 -7	; _ENV "RewardApi"
+	13	[903]	GETTABLE 	5 5 -8	; "AcquireRewardsLogic"
+	14	[903]	MOVE     	6 3
+	15	[903]	GETTABUP 	7 0 -9	; _ENV "EPropertySource"
+	16	[903]	GETTABLE 	7 7 -10	; "Buy"
+	17	[903]	MOVE     	8 4
+	18	[903]	GETTABUP 	9 0 -11	; _ENV "EGameMode"
+	19	[903]	GETTABLE 	9 9 -12	; "Main"
+	20	[903]	GETTABUP 	10 0 -13	; _ENV "CacheItemType"
+	21	[903]	GETTABLE 	10 10 -14	; "Type2"
+	22	[903]	CALL     	5 6 1
+	23	[905]	GETTABUP 	5 0 -15	; _ENV "string"
+	24	[905]	GETTABLE 	5 5 -16	; "format"
+	25	[905]	GETTABUP 	6 0 -17	; _ENV "PassActivityModel"
+	26	[905]	GETTABLE 	6 6 -18	; "RewardTakenKey"
+	27	[905]	MOVE     	7 1
+	28	[905]	TEST     	2 0
+	29	[905]	JMP      	0 3	; to 33
+	30	[905]	LOADK    	8 -19	; 1
+	31	[905]	TEST     	8 1
+	32	[905]	JMP      	0 1	; to 34
+	33	[905]	LOADK    	8 -20	; 0
+	34	[905]	CALL     	5 4 2
+	35	[906]	GETTABLE 	6 0 -21	; "m_dbTable"
+	36	[906]	SELF     	6 6 -22	; "Set"
+	37	[906]	MOVE     	8 5
+	38	[906]	LOADK    	9 -23	; "value"
+	39	[906]	LOADK    	10 -19	; 1
+	40	[906]	CALL     	6 5 1
+	41	[908]	NEWTABLE 	6 0 2
+	42	[909]	SETTABLE 	6 -24 1	; "level" -
+	43	[910]	TEST     	2 0
+	44	[910]	JMP      	0 3	; to 48
+	45	[910]	LOADK    	7 -19	; 1
+	46	[910]	TEST     	7 1
+	47	[910]	JMP      	0 1	; to 49
+	48	[910]	LOADK    	7 -20	; 0
+	49	[910]	SETTABLE 	6 -25 7	; "vip" -
+	50	[912]	GETTABUP 	7 0 -26	; _ENV "GM"
+	51	[912]	GETTABLE 	7 7 -27	; "BIManager"
+	52	[912]	SELF     	7 7 -28	; "TableToString"
+	53	[912]	MOVE     	9 6
+	54	[912]	CALL     	7 3 2
+	55	[913]	SELF     	8 0 -29	; "LogActivity"
+	56	[913]	GETTABUP 	10 0 -30	; _ENV "EBIType"
+	57	[913]	GETTABLE 	10 10 -31	; "ActivityGetRewards"
+	58	[913]	MOVE     	11 7
+	59	[913]	CALL     	8 4 1
+	60	[915]	GETTABUP 	8 0 -32	; _ENV "EventDispatcher"
+	61	[915]	GETTABLE 	8 8 -33	; "DispatchEvent"
+	62	[915]	GETTABLE 	9 0 -4	; "m_activityDefinition"
+	63	[915]	GETTABLE 	9 9 -34	; "CanTakeRewardNumberChangedEvent"
+	64	[915]	CALL     	8 2 1
+	65	[916]	RETURN   	0 1
+constants (34) for 000001C307A41090:
+	1	"m_state"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_activityDefinition"
+	5	"TakeRewardBIType"
+	6	"TakeRewardOnEndBIType"
+	7	"RewardApi"
+	8	"AcquireRewardsLogic"
+	9	"EPropertySource"
+	10	"Buy"
+	11	"EGameMode"
+	12	"Main"
+	13	"CacheItemType"
+	14	"Type2"
+	15	"string"
+	16	"format"
+	17	"PassActivityModel"
+	18	"RewardTakenKey"
+	19	1
+	20	0
+	21	"m_dbTable"
+	22	"Set"
+	23	"value"
+	24	"level"
+	25	"vip"
+	26	"GM"
+	27	"BIManager"
+	28	"TableToString"
+	29	"LogActivity"
+	30	"EBIType"
+	31	"ActivityGetRewards"
+	32	"EventDispatcher"
+	33	"DispatchEvent"
+	34	"CanTakeRewardNumberChangedEvent"
+locals (8) for 000001C307A41090:
+	0	self	1	66
+	1	level	1	66
+	2	isVip	1	66
+	3	rewards	1	66
+	4	scene	12	66
+	5	rewardTakenKey	35	66
+	6	action	50	66
+	7	actionString	55	66
+upvalues (1) for 000001C307A41090:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:921,929> (20 instructions at 000001C307A41F90)
+1 param, 7 slots, 1 upvalue, 2 locals, 12 constants, 0 functions
+	1	[923]	SELF     	1 0 -1	; "GetTicketState"
+	2	[923]	CALL     	1 2 2
+	3	[924]	GETTABUP 	2 0 -2	; _ENV "PassActivityTicketState"
+	4	[924]	GETTABLE 	2 2 -3	; "Super"
+	5	[924]	EQ       	0 1 2
+	6	[924]	JMP      	0 6	; to 13
+	7	[925]	SELF     	2 0 -4	; "_AcquireToken"
+	8	[925]	GETTABLE 	4 0 -5	; "m_config"
+	9	[925]	GETTABLE 	4 4 -6	; "superTicketConfig"
+	10	[925]	GETTABLE 	4 4 -7	; "FreeToken"
+	11	[925]	LOADBOOL 	5 0 0
+	12	[925]	CALL     	2 4 1
+	13	[928]	GETTABLE 	2 0 -8	; "m_dbTable"
+	14	[928]	SELF     	2 2 -9	; "Set"
+	15	[928]	GETTABUP 	4 0 -10	; _ENV "PassActivityModel"
+	16	[928]	GETTABLE 	4 4 -11	; "TicketRewardStateKey"
+	17	[928]	LOADK    	5 -12	; "value"
+	18	[928]	MOVE     	6 1
+	19	[928]	CALL     	2 5 1
+	20	[929]	RETURN   	0 1
+constants (12) for 000001C307A41F90:
+	1	"GetTicketState"
+	2	"PassActivityTicketState"
+	3	"Super"
+	4	"_AcquireToken"
+	5	"m_config"
+	6	"superTicketConfig"
+	7	"FreeToken"
+	8	"m_dbTable"
+	9	"Set"
+	10	"PassActivityModel"
+	11	"TicketRewardStateKey"
+	12	"value"
+locals (2) for 000001C307A41F90:
+	0	self	1	21
+	1	ticketState	3	21
+upvalues (1) for 000001C307A41F90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:933,935> (4 instructions at 000001C307A42010)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[934]	GETTABLE 	1 0 -1	; "m_config"
+	2	[934]	GETTABLE 	1 1 -2	; "vipExtraBonus"
+	3	[934]	RETURN   	1 2
+	4	[935]	RETURN   	0 1
+constants (2) for 000001C307A42010:
+	1	"m_config"
+	2	"vipExtraBonus"
+locals (1) for 000001C307A42010:
+	0	self	1	5
+upvalues (0) for 000001C307A42010:
+
+function <PassActivityModel.lua:937,939> (12 instructions at 000001C307A40A90)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[938]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[938]	SELF     	1 1 -2	; "GetValue"
+	3	[938]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[938]	GETTABLE 	3 3 -4	; "TicketBonusRewardTakenKey"
+	5	[938]	LOADK    	4 -5	; "value"
+	6	[938]	CALL     	1 4 2
+	7	[938]	EQ       	1 1 -6	; - 1
+	8	[938]	JMP      	0 1	; to 10
+	9	[938]	LOADBOOL 	1 0 1
+	10	[938]	LOADBOOL 	1 1 0
+	11	[938]	RETURN   	1 2
+	12	[939]	RETURN   	0 1
+constants (6) for 000001C307A40A90:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"TicketBonusRewardTakenKey"
+	5	"value"
+	6	1
+locals (1) for 000001C307A40A90:
+	0	self	1	13
+upvalues (1) for 000001C307A40A90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:941,943> (18 instructions at 000001C307A42190)
+1 param, 3 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[942]	SELF     	1 0 -1	; "GetTicketState"
+	2	[942]	CALL     	1 2 2
+	3	[942]	GETTABUP 	2 0 -2	; _ENV "PassActivityTicketState"
+	4	[942]	GETTABLE 	2 2 -3	; "None"
+	5	[942]	EQ       	1 1 2
+	6	[942]	JMP      	0 8	; to 15
+	7	[942]	SELF     	1 0 -4	; "HasTicketBonusRewardTaken"
+	8	[942]	CALL     	1 2 2
+	9	[942]	TEST     	1 1
+	10	[942]	JMP      	0 4	; to 15
+	11	[942]	SELF     	1 0 -5	; "GetTicketBonusReward"
+	12	[942]	CALL     	1 2 2
+	13	[942]	EQ       	0 1 -6	; - nil
+	14	[942]	JMP      	0 1	; to 16
+	15	[942]	LOADBOOL 	1 0 1
+	16	[942]	LOADBOOL 	1 1 0
+	17	[942]	RETURN   	1 2
+	18	[943]	RETURN   	0 1
+constants (6) for 000001C307A42190:
+	1	"GetTicketState"
+	2	"PassActivityTicketState"
+	3	"None"
+	4	"HasTicketBonusRewardTaken"
+	5	"GetTicketBonusReward"
+	6	nil
+locals (1) for 000001C307A42190:
+	0	self	1	19
+upvalues (1) for 000001C307A42190:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:945,953> (40 instructions at 000001C307A40B10)
+1 param, 8 slots, 1 upvalue, 2 locals, 22 constants, 0 functions
+	1	[946]	SELF     	1 0 -1	; "CanTakeTicketBonusReward"
+	2	[946]	CALL     	1 2 2
+	3	[946]	TEST     	1 0
+	4	[946]	JMP      	0 33	; to 38
+	5	[947]	GETTABLE 	1 0 -2	; "m_state"
+	6	[947]	GETTABUP 	2 0 -3	; _ENV "ActivityState"
+	7	[947]	GETTABLE 	2 2 -4	; "Started"
+	8	[947]	EQ       	0 1 2
+	9	[947]	JMP      	0 4	; to 14
+	10	[947]	GETTABLE 	1 0 -5	; "m_activityDefinition"
+	11	[947]	GETTABLE 	1 1 -6	; "TakeRewardBIType"
+	12	[947]	TEST     	1 1
+	13	[947]	JMP      	0 2	; to 16
+	14	[947]	GETTABLE 	1 0 -5	; "m_activityDefinition"
+	15	[947]	GETTABLE 	1 1 -7	; "TakeRewardOnEndBIType"
+	16	[948]	GETTABUP 	2 0 -8	; _ENV "RewardApi"
+	17	[948]	GETTABLE 	2 2 -9	; "AcquireRewardsLogic"
+	18	[948]	SELF     	3 0 -10	; "GetTicketBonusReward"
+	19	[948]	CALL     	3 2 2
+	20	[948]	GETTABUP 	4 0 -11	; _ENV "EPropertySource"
+	21	[948]	GETTABLE 	4 4 -12	; "Buy"
+	22	[948]	MOVE     	5 1
+	23	[948]	GETTABUP 	6 0 -13	; _ENV "EGameMode"
+	24	[948]	GETTABLE 	6 6 -14	; "Main"
+	25	[948]	GETTABUP 	7 0 -15	; _ENV "CacheItemType"
+	26	[948]	GETTABLE 	7 7 -16	; "Type2"
+	27	[948]	CALL     	2 6 1
+	28	[949]	GETTABLE 	2 0 -17	; "m_dbTable"
+	29	[949]	SELF     	2 2 -18	; "Set"
+	30	[949]	GETTABUP 	4 0 -19	; _ENV "PassActivityModel"
+	31	[949]	GETTABLE 	4 4 -20	; "TicketBonusRewardTakenKey"
+	32	[949]	LOADK    	5 -21	; "value"
+	33	[949]	LOADK    	6 -22	; 1
+	34	[949]	CALL     	2 5 1
+	35	[950]	SELF     	2 0 -10	; "GetTicketBonusReward"
+	36	[950]	TAILCALL 	2 2 0
+	37	[950]	RETURN   	2 0
+	38	[952]	LOADNIL  	1 0
+	39	[952]	RETURN   	1 2
+	40	[953]	RETURN   	0 1
+constants (22) for 000001C307A40B10:
+	1	"CanTakeTicketBonusReward"
+	2	"m_state"
+	3	"ActivityState"
+	4	"Started"
+	5	"m_activityDefinition"
+	6	"TakeRewardBIType"
+	7	"TakeRewardOnEndBIType"
+	8	"RewardApi"
+	9	"AcquireRewardsLogic"
+	10	"GetTicketBonusReward"
+	11	"EPropertySource"
+	12	"Buy"
+	13	"EGameMode"
+	14	"Main"
+	15	"CacheItemType"
+	16	"Type2"
+	17	"m_dbTable"
+	18	"Set"
+	19	"PassActivityModel"
+	20	"TicketBonusRewardTakenKey"
+	21	"value"
+	22	1
+locals (2) for 000001C307A40B10:
+	0	self	1	41
+	1	scene	16	38
+upvalues (1) for 000001C307A40B10:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:955,957> (3 instructions at 000001C307A41010)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[956]	GETTABLE 	1 0 -1	; "m_ticketIapType"
+	2	[956]	RETURN   	1 2
+	3	[957]	RETURN   	0 1
+constants (1) for 000001C307A41010:
+	1	"m_ticketIapType"
+locals (1) for 000001C307A41010:
+	0	self	1	4
+upvalues (0) for 000001C307A41010:
+
+function <PassActivityModel.lua:959,961> (3 instructions at 000001C307A41290)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[960]	GETTABLE 	1 0 -1	; "m_superTicketIapType"
+	2	[960]	RETURN   	1 2
+	3	[961]	RETURN   	0 1
+constants (1) for 000001C307A41290:
+	1	"m_superTicketIapType"
+locals (1) for 000001C307A41290:
+	0	self	1	4
+upvalues (0) for 000001C307A41290:
+
+function <PassActivityModel.lua:963,965> (3 instructions at 000001C307A40690)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[964]	GETTABLE 	1 0 -1	; "m_upgradeTicketIapType"
+	2	[964]	RETURN   	1 2
+	3	[965]	RETURN   	0 1
+constants (1) for 000001C307A40690:
+	1	"m_upgradeTicketIapType"
+locals (1) for 000001C307A40690:
+	0	self	1	4
+upvalues (0) for 000001C307A40690:
+
+function <PassActivityModel.lua:971,975> (13 instructions at 000001C307A41110)
+2 params, 4 slots, 0 upvalues, 2 locals, 4 constants, 0 functions
+	1	[973]	SUB      	2 1 -1	; - 1
+	2	[973]	GETTABLE 	3 0 -2	; "m_config"
+	3	[973]	GETTABLE 	3 3 -3	; "superTicketConfig"
+	4	[973]	GETTABLE 	3 3 -4	; "UnlimitedRewardConfig"
+	5	[973]	LEN      	3 3
+	6	[973]	MOD      	2 2 3
+	7	[973]	ADD      	1 2 -1	; - 1
+	8	[974]	GETTABLE 	2 0 -2	; "m_config"
+	9	[974]	GETTABLE 	2 2 -3	; "superTicketConfig"
+	10	[974]	GETTABLE 	2 2 -4	; "UnlimitedRewardConfig"
+	11	[974]	GETTABLE 	2 2 1
+	12	[974]	RETURN   	2 2
+	13	[975]	RETURN   	0 1
+constants (4) for 000001C307A41110:
+	1	1
+	2	"m_config"
+	3	"superTicketConfig"
+	4	"UnlimitedRewardConfig"
+locals (2) for 000001C307A41110:
+	0	self	1	14
+	1	level	1	14
+upvalues (0) for 000001C307A41110:
+
+function <PassActivityModel.lua:977,1000> (38 instructions at 000001C307A42210)
+2 params, 8 slots, 1 upvalue, 6 locals, 11 constants, 0 functions
+	1	[978]	GETTABLE 	2 0 -1	; "m_dbTable"
+	2	[978]	SELF     	2 2 -2	; "GetValue"
+	3	[978]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	4	[978]	GETTABLE 	4 4 -4	; "UnlimitedRewardUnlockedTokenNumberKey"
+	5	[978]	LOADK    	5 -5	; "value"
+	6	[978]	CALL     	2 4 2
+	7	[979]	EQ       	0 2 -6	; - nil
+	8	[979]	JMP      	0 3	; to 12
+	9	[980]	LOADK    	3 -7	; 0
+	10	[980]	LOADK    	4 -7	; 0
+	11	[980]	RETURN   	3 3
+	12	[983]	TESTSET  	3 1 1
+	13	[983]	JMP      	0 2	; to 16
+	14	[983]	SELF     	3 0 -8	; "GetTokenNumber"
+	15	[983]	CALL     	3 2 2
+	16	[983]	SUB      	3 3 2
+	17	[984]	LT       	0 3 -7	; - 0
+	18	[984]	JMP      	0 3	; to 22
+	19	[985]	LOADK    	4 -7	; 0
+	20	[985]	LOADK    	5 -7	; 0
+	21	[985]	RETURN   	4 3
+	22	[988]	LOADK    	4 -7	; 0
+	23	[990]	SELF     	5 0 -9	; "GetUnlimitedRewardConfig"
+	24	[990]	ADD      	7 4 -10	; - 1
+	25	[990]	CALL     	5 3 2
+	26	[991]	GETTABLE 	6 5 -11	; "require"
+	27	[991]	LE       	0 6 3
+	28	[991]	JMP      	0 6	; to 35
+	29	[992]	ADD      	4 4 -10	; - 1
+	30	[993]	GETTABLE 	6 5 -11	; "require"
+	31	[993]	SUB      	3 3 6
+	32	[993]	JMP      	0 -10	; to 23
+	33	[994]	JMP      	0 1	; to 35
+	34	[996]	JMP      	0 -12	; to 23
+	35	[999]	MOVE     	5 4
+	36	[999]	MOVE     	6 3
+	37	[999]	RETURN   	5 3
+	38	[1000]	RETURN   	0 1
+constants (11) for 000001C307A42210:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"UnlimitedRewardUnlockedTokenNumberKey"
+	5	"value"
+	6	nil
+	7	0
+	8	"GetTokenNumber"
+	9	"GetUnlimitedRewardConfig"
+	10	1
+	11	"require"
+locals (6) for 000001C307A42210:
+	0	self	1	39
+	1	number	1	39
+	2	unlimitedRewardUnlockedTokenNumber	7	39
+	3	tokenNumber	17	39
+	4	level	23	39
+	5	config	26	34
+upvalues (1) for 000001C307A42210:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1002,1015> (24 instructions at 000001C307A42290)
+2 params, 14 slots, 1 upvalue, 10 locals, 9 constants, 0 functions
+	1	[1003]	NEWTABLE 	2 0 0
+	2	[1004]	SELF     	3 0 -1	; "_GetUnlimitedRewardTakenLevel"
+	3	[1004]	CALL     	3 2 2
+	4	[1005]	SELF     	4 0 -2	; "GetUnlimitedRewardLevel"
+	5	[1005]	MOVE     	6 1
+	6	[1005]	CALL     	4 3 2
+	7	[1006]	ADD      	5 3 -3	; - 1
+	8	[1006]	MOVE     	6 4
+	9	[1006]	LOADK    	7 -3	; 1
+	10	[1006]	FORPREP  	5 11	; to 22
+	11	[1007]	SELF     	9 0 -4	; "GetUnlimitedRewardConfig"
+	12	[1007]	MOVE     	11 8
+	13	[1007]	CALL     	9 3 2
+	14	[1008]	GETTABUP 	10 0 -5	; _ENV "table"
+	15	[1008]	GETTABLE 	10 10 -6	; "insert"
+	16	[1008]	MOVE     	11 2
+	17	[1008]	NEWTABLE 	12 0 2
+	18	[1009]	SETTABLE 	12 -7 8	; "Level" -
+	19	[1010]	GETTABLE 	13 9 -9	; "reward"
+	20	[1010]	SETTABLE 	12 -8 13	; "Rewards" -
+	21	[1008]	CALL     	10 3 1
+	22	[1006]	FORLOOP  	5 -12	; to 11
+	23	[1014]	RETURN   	2 2
+	24	[1015]	RETURN   	0 1
+constants (9) for 000001C307A42290:
+	1	"_GetUnlimitedRewardTakenLevel"
+	2	"GetUnlimitedRewardLevel"
+	3	1
+	4	"GetUnlimitedRewardConfig"
+	5	"table"
+	6	"insert"
+	7	"Level"
+	8	"Rewards"
+	9	"reward"
+locals (10) for 000001C307A42290:
+	0	self	1	25
+	1	number	1	25
+	2	rewards	2	25
+	3	takenLevel	4	25
+	4	level	7	25
+	5	(for index)	10	23
+	6	(for limit)	10	23
+	7	(for step)	10	23
+	8	l	11	22
+	9	config	14	22
+upvalues (1) for 000001C307A42290:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1017,1031> (45 instructions at 000001C307A42310)
+3 params, 11 slots, 1 upvalue, 6 locals, 26 constants, 0 functions
+	1	[1018]	GETTABLE 	3 0 -1	; "m_state"
+	2	[1018]	GETTABUP 	4 0 -2	; _ENV "ActivityState"
+	3	[1018]	GETTABLE 	4 4 -3	; "Started"
+	4	[1018]	EQ       	0 3 4
+	5	[1018]	JMP      	0 4	; to 10
+	6	[1018]	GETTABLE 	3 0 -4	; "m_activityDefinition"
+	7	[1018]	GETTABLE 	3 3 -5	; "TakeUnlimitedRewardBIType"
+	8	[1018]	TEST     	3 1
+	9	[1018]	JMP      	0 2	; to 12
+	10	[1018]	GETTABLE 	3 0 -4	; "m_activityDefinition"
+	11	[1018]	GETTABLE 	3 3 -6	; "TakeUnlimitedRewardOnEndBIType"
+	12	[1019]	GETTABUP 	4 0 -7	; _ENV "RewardApi"
+	13	[1019]	GETTABLE 	4 4 -8	; "AcquireRewardsLogic"
+	14	[1019]	MOVE     	5 2
+	15	[1019]	GETTABUP 	6 0 -9	; _ENV "EPropertySource"
+	16	[1019]	GETTABLE 	6 6 -10	; "Buy"
+	17	[1019]	MOVE     	7 3
+	18	[1019]	GETTABUP 	8 0 -11	; _ENV "EGameMode"
+	19	[1019]	GETTABLE 	8 8 -12	; "Main"
+	20	[1019]	GETTABUP 	9 0 -13	; _ENV "CacheItemType"
+	21	[1019]	GETTABLE 	9 9 -14	; "Type2"
+	22	[1019]	CALL     	4 6 1
+	23	[1021]	NEWTABLE 	4 0 2
+	24	[1022]	SETTABLE 	4 -15 1	; "rewardLevel" -
+	25	[1023]	SELF     	5 0 -17	; "GetUnlimitedRewardLevel"
+	26	[1023]	CALL     	5 2 2
+	27	[1023]	SETTABLE 	4 -16 5	; "currentLevel" -
+	28	[1025]	GETTABUP 	5 0 -18	; _ENV "GM"
+	29	[1025]	GETTABLE 	5 5 -19	; "BIManager"
+	30	[1025]	SELF     	5 5 -20	; "LogAction"
+	31	[1025]	MOVE     	7 3
+	32	[1025]	MOVE     	8 4
+	33	[1025]	CALL     	5 4 1
+	34	[1027]	SELF     	5 0 -21	; "_GetUnlimitedRewardTakenLevel"
+	35	[1027]	CALL     	5 2 2
+	36	[1028]	LT       	0 5 1
+	37	[1028]	JMP      	0 7	; to 45
+	38	[1029]	GETTABLE 	6 0 -22	; "m_dbTable"
+	39	[1029]	SELF     	6 6 -23	; "Set"
+	40	[1029]	GETTABUP 	8 0 -24	; _ENV "PassActivityModel"
+	41	[1029]	GETTABLE 	8 8 -25	; "UnlimitedRewardTakenLevelKey"
+	42	[1029]	LOADK    	9 -26	; "value"
+	43	[1029]	MOVE     	10 1
+	44	[1029]	CALL     	6 5 1
+	45	[1031]	RETURN   	0 1
+constants (26) for 000001C307A42310:
+	1	"m_state"
+	2	"ActivityState"
+	3	"Started"
+	4	"m_activityDefinition"
+	5	"TakeUnlimitedRewardBIType"
+	6	"TakeUnlimitedRewardOnEndBIType"
+	7	"RewardApi"
+	8	"AcquireRewardsLogic"
+	9	"EPropertySource"
+	10	"Buy"
+	11	"EGameMode"
+	12	"Main"
+	13	"CacheItemType"
+	14	"Type2"
+	15	"rewardLevel"
+	16	"currentLevel"
+	17	"GetUnlimitedRewardLevel"
+	18	"GM"
+	19	"BIManager"
+	20	"LogAction"
+	21	"_GetUnlimitedRewardTakenLevel"
+	22	"m_dbTable"
+	23	"Set"
+	24	"PassActivityModel"
+	25	"UnlimitedRewardTakenLevelKey"
+	26	"value"
+locals (6) for 000001C307A42310:
+	0	self	1	46
+	1	level	1	46
+	2	rewards	1	46
+	3	scene	12	46
+	4	action	28	46
+	5	takenLevel	36	46
+upvalues (1) for 000001C307A42310:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1033,1035> (11 instructions at 000001C307A41190)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[1034]	GETTABLE 	1 0 -1	; "m_dbTable"
+	2	[1034]	SELF     	1 1 -2	; "GetValue"
+	3	[1034]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[1034]	GETTABLE 	3 3 -4	; "UnlimitedRewardTakenLevelKey"
+	5	[1034]	LOADK    	4 -5	; "value"
+	6	[1034]	CALL     	1 4 2
+	7	[1034]	TEST     	1 1
+	8	[1034]	JMP      	0 1	; to 10
+	9	[1034]	LOADK    	1 -6	; 0
+	10	[1034]	RETURN   	1 2
+	11	[1035]	RETURN   	0 1
+constants (6) for 000001C307A41190:
+	1	"m_dbTable"
+	2	"GetValue"
+	3	"PassActivityModel"
+	4	"UnlimitedRewardTakenLevelKey"
+	5	"value"
+	6	0
+locals (1) for 000001C307A41190:
+	0	self	1	12
+upvalues (1) for 000001C307A41190:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1039,1042> (23 instructions at 000001C307A42390)
+3 params, 8 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[1040]	GETTABUP 	3 0 -1	; _ENV "string"
+	2	[1040]	GETTABLE 	3 3 -2	; "format"
+	3	[1040]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	4	[1040]	GETTABLE 	4 4 -4	; "RewardEffectKey"
+	5	[1040]	MOVE     	5 1
+	6	[1040]	TEST     	2 0
+	7	[1040]	JMP      	0 3	; to 11
+	8	[1040]	LOADK    	6 -5	; 1
+	9	[1040]	TEST     	6 1
+	10	[1040]	JMP      	0 1	; to 12
+	11	[1040]	LOADK    	6 -6	; 0
+	12	[1040]	CALL     	3 4 2
+	13	[1041]	GETTABLE 	4 0 -7	; "m_dbTable"
+	14	[1041]	SELF     	4 4 -8	; "GetValue"
+	15	[1041]	MOVE     	6 3
+	16	[1041]	LOADK    	7 -9	; "value"
+	17	[1041]	CALL     	4 4 2
+	18	[1041]	EQ       	1 4 -5	; - 1
+	19	[1041]	JMP      	0 1	; to 21
+	20	[1041]	LOADBOOL 	4 0 1
+	21	[1041]	LOADBOOL 	4 1 0
+	22	[1041]	RETURN   	4 2
+	23	[1042]	RETURN   	0 1
+constants (9) for 000001C307A42390:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"RewardEffectKey"
+	5	1
+	6	0
+	7	"m_dbTable"
+	8	"GetValue"
+	9	"value"
+locals (4) for 000001C307A42390:
+	0	self	1	24
+	1	level	1	24
+	2	isVip	1	24
+	3	rewardEffectKey	13	24
+upvalues (1) for 000001C307A42390:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1044,1047> (19 instructions at 000001C307A41710)
+3 params, 9 slots, 1 upvalue, 4 locals, 9 constants, 0 functions
+	1	[1045]	GETTABUP 	3 0 -1	; _ENV "string"
+	2	[1045]	GETTABLE 	3 3 -2	; "format"
+	3	[1045]	GETTABUP 	4 0 -3	; _ENV "PassActivityModel"
+	4	[1045]	GETTABLE 	4 4 -4	; "RewardEffectKey"
+	5	[1045]	MOVE     	5 1
+	6	[1045]	TEST     	2 0
+	7	[1045]	JMP      	0 3	; to 11
+	8	[1045]	LOADK    	6 -5	; 1
+	9	[1045]	TEST     	6 1
+	10	[1045]	JMP      	0 1	; to 12
+	11	[1045]	LOADK    	6 -6	; 0
+	12	[1045]	CALL     	3 4 2
+	13	[1046]	GETTABLE 	4 0 -7	; "m_dbTable"
+	14	[1046]	SELF     	4 4 -8	; "Set"
+	15	[1046]	MOVE     	6 3
+	16	[1046]	LOADK    	7 -9	; "value"
+	17	[1046]	LOADK    	8 -5	; 1
+	18	[1046]	CALL     	4 5 1
+	19	[1047]	RETURN   	0 1
+constants (9) for 000001C307A41710:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"RewardEffectKey"
+	5	1
+	6	0
+	7	"m_dbTable"
+	8	"Set"
+	9	"value"
+locals (4) for 000001C307A41710:
+	0	self	1	20
+	1	level	1	20
+	2	isVip	1	20
+	3	rewardEffectKey	13	20
+upvalues (1) for 000001C307A41710:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1049,1052> (17 instructions at 000001C307A41310)
+2 params, 7 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[1050]	GETTABUP 	2 0 -1	; _ENV "string"
+	2	[1050]	GETTABLE 	2 2 -2	; "format"
+	3	[1050]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[1050]	GETTABLE 	3 3 -4	; "ProgressEffectKey"
+	5	[1050]	MOVE     	4 1
+	6	[1050]	CALL     	2 3 2
+	7	[1051]	GETTABLE 	3 0 -5	; "m_dbTable"
+	8	[1051]	SELF     	3 3 -6	; "GetValue"
+	9	[1051]	MOVE     	5 2
+	10	[1051]	LOADK    	6 -7	; "value"
+	11	[1051]	CALL     	3 4 2
+	12	[1051]	EQ       	1 3 -8	; - 1
+	13	[1051]	JMP      	0 1	; to 15
+	14	[1051]	LOADBOOL 	3 0 1
+	15	[1051]	LOADBOOL 	3 1 0
+	16	[1051]	RETURN   	3 2
+	17	[1052]	RETURN   	0 1
+constants (8) for 000001C307A41310:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"ProgressEffectKey"
+	5	"m_dbTable"
+	6	"GetValue"
+	7	"value"
+	8	1
+locals (3) for 000001C307A41310:
+	0	self	1	18
+	1	level	1	18
+	2	progressEffectKey	7	18
+upvalues (1) for 000001C307A41310:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1054,1057> (13 instructions at 000001C307A40D90)
+2 params, 8 slots, 1 upvalue, 3 locals, 8 constants, 0 functions
+	1	[1055]	GETTABUP 	2 0 -1	; _ENV "string"
+	2	[1055]	GETTABLE 	2 2 -2	; "format"
+	3	[1055]	GETTABUP 	3 0 -3	; _ENV "PassActivityModel"
+	4	[1055]	GETTABLE 	3 3 -4	; "ProgressEffectKey"
+	5	[1055]	MOVE     	4 1
+	6	[1055]	CALL     	2 3 2
+	7	[1056]	GETTABLE 	3 0 -5	; "m_dbTable"
+	8	[1056]	SELF     	3 3 -6	; "Set"
+	9	[1056]	MOVE     	5 2
+	10	[1056]	LOADK    	6 -7	; "value"
+	11	[1056]	LOADK    	7 -8	; 1
+	12	[1056]	CALL     	3 5 1
+	13	[1057]	RETURN   	0 1
+constants (8) for 000001C307A40D90:
+	1	"string"
+	2	"format"
+	3	"PassActivityModel"
+	4	"ProgressEffectKey"
+	5	"m_dbTable"
+	6	"Set"
+	7	"value"
+	8	1
+locals (3) for 000001C307A40D90:
+	0	self	1	14
+	1	level	1	14
+	2	progressEffectKey	7	14
+upvalues (1) for 000001C307A40D90:
+	0	_ENV	0	0
+
+function <PassActivityModel.lua:1060,1062> (4 instructions at 000001C307A40710)
+1 param, 3 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1061]	SELF     	1 0 -1	; "GetCurrentLevel"
+	2	[1061]	TAILCALL 	1 2 0
+	3	[1061]	RETURN   	1 0
+	4	[1062]	RETURN   	0 1
+constants (1) for 000001C307A40710:
+	1	"GetCurrentLevel"
+locals (1) for 000001C307A40710:
+	0	self	1	5
+upvalues (0) for 000001C307A40710:
+
+function <PassActivityModel.lua:1064,1066> (3 instructions at 000001C307A40B90)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[1065]	GETTABLE 	1 0 -1	; "m_activityDefinition"
+	2	[1065]	RETURN   	1 2
+	3	[1066]	RETURN   	0 1
+constants (1) for 000001C307A40B90:
+	1	"m_activityDefinition"
+locals (1) for 000001C307A40B90:
+	0	self	1	4
+upvalues (0) for 000001C307A40B90:

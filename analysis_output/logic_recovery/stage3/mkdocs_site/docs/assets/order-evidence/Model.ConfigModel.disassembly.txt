@@ -1,0 +1,3810 @@
+
+main <ConfigModel.lua:0,0> (658 instructions at 0000029D739CEE80)
+0+ params, 7 slots, 1 upvalue, 2 locals, 464 constants, 58 functions
+	1	[2]	NEWTABLE 	0 0 28
+	2	[4]	SETTABLE 	0 -2 -2	; "MapBorder" "MapBorder"
+	3	[5]	SETTABLE 	0 -3 -3	; "BoardPrompt" "BoardPrompt"
+	4	[6]	SETTABLE 	0 -4 -4	; "Bundle" "Bundle"
+	5	[7]	SETTABLE 	0 -5 -5	; "CharacterIntimacyDialog" "CharacterIntimacyDialog"
+	6	[8]	SETTABLE 	0 -6 -6	; "CharacterIntimacyCoinToGift" "CharacterIntimacyCoinToGift"
+	7	[9]	SETTABLE 	0 -7 -7	; "CharacterIntimacyGift" "CharacterIntimacyGift"
+	8	[10]	SETTABLE 	0 -8 -8	; "CharacterIntimacyLevel" "CharacterIntimacyLevel"
+	9	[11]	SETTABLE 	0 -9 -9	; "CharacterIntimacyList" "CharacterIntimacyList"
+	10	[12]	SETTABLE 	0 -10 -10	; "CharacterIntimacyShop" "CharacterIntimacyShop"
+	11	[13]	SETTABLE 	0 -11 -11	; "FunctionEnable" "FunctionEnable"
+	12	[14]	SETTABLE 	0 -12 -12	; "InventorySlot" "InventorySlot"
+	13	[15]	SETTABLE 	0 -13 -13	; "ItemModel" "ItemModel"
+	14	[16]	SETTABLE 	0 -14 -14	; "ItemProperty" "ItemProperty"
+	15	[17]	SETTABLE 	0 -15 -15	; "ItemView" "ItemView"
+	16	[18]	SETTABLE 	0 -16 -16	; "MainTask" "MainTask"
+	17	[19]	SETTABLE 	0 -17 -17	; "OrderAvatar" "OrderAvatar"
+	18	[20]	SETTABLE 	0 -18 -18	; "OrderFixed" "OrderFixed"
+	19	[21]	SETTABLE 	0 -19 -19	; "OrderItem" "OrderItem"
+	20	[22]	SETTABLE 	0 -20 -20	; "OrderItemNumberWeight" "OrderItemNumberWeight"
+	21	[23]	SETTABLE 	0 -21 -21	; "OrderRandom" "OrderRandom"
+	22	[24]	SETTABLE 	0 -22 -22	; "OrderRandomReCall" "OrderRandomReCall"
+	23	[25]	SETTABLE 	0 -23 -23	; "OrderSpecial" "OrderSpecial"
+	24	[26]	SETTABLE 	0 -24 -24	; "OrderBranch" "OrderBranch"
+	25	[27]	SETTABLE 	0 -25 -25	; "RoleIdle" "RoleIdle"
+	26	[28]	SETTABLE 	0 -26 -26	; "ShopDailyDeals" "ShopDailyDeals"
+	27	[29]	SETTABLE 	0 -27 -27	; "ShopIAP" "ShopIAP"
+	28	[30]	SETTABLE 	0 -28 -28	; "ShopSlot" "ShopSlot"
+	29	[31]	SETTABLE 	0 -29 -29	; "StorySpeaker" "StorySpeaker"
+	30	[32]	SETTABLE 	0 -30 -30	; "System" "System"
+	31	[33]	SETTABLE 	0 -31 -31	; "EnergyBoostItem" "EnergyBoostItem"
+	32	[34]	SETTABLE 	0 -32 -32	; "NotificationText" "NotificationText"
+	33	[35]	SETTABLE 	0 -33 -33	; "StoryRecap" "StoryRecap"
+	34	[36]	SETTABLE 	0 -34 -34	; "Level" "Level"
+	35	[37]	SETTABLE 	0 -35 -35	; "LuckyProduce" "LuckyProduce"
+	36	[38]	SETTABLE 	0 -36 -36	; "MapSlotInCameraCheckPos" "MapSlotInCameraCheckPos"
+	37	[39]	SETTABLE 	0 -37 -37	; "PlaneRewardItem" "PlaneRewardItem"
+	38	[40]	SETTABLE 	0 -38 -38	; "RaccoonRewardShowItem" "RaccoonRewardShowItem"
+	39	[41]	SETTABLE 	0 -39 -39	; "MergeItemScoreConfig" "MergeItemScoreConfig"
+	40	[42]	SETTABLE 	0 -40 -40	; "ChestOrderRandomConfig" "ChestOrderRandomConfig"
+	41	[43]	SETTABLE 	0 -41 -41	; "ChestOrderRandomRecallConfig" "ChestOrderRandomRecallConfig"
+	42	[44]	SETTABLE 	0 -42 -42	; "MainPaperboxExtraRewardConfig" "MainPaperboxExtraRewardConfig"
+	43	[45]	SETTABLE 	0 -43 -43	; "TutoriaiOrderConfig" "TutoriaiOrderConfig"
+	44	[46]	SETTABLE 	0 -44 -44	; "GeneratorBoostItemModel" "GeneratorBoostItemModel"
+	45	[47]	SETTABLE 	0 -45 -45	; "GeneratorBoostLuckyProduce" "GeneratorBoostLuckyProduce"
+	46	[48]	SETTABLE 	0 -46 -46	; "BattleRobot" "BattleRobot"
+	47	[49]	SETTABLE 	0 -47 -47	; "TeamRobot" "TeamRobot"
+	48	[50]	SETTABLE 	0 -48 -48	; "Preview" "Preview"
+	49	[51]	SETTABUP 	0 -1 0	; _ENV "LocalConfigKey"
+	50	[54]	NEWTABLE 	0 0 29
+	51	[55]	SETTABLE 	0 -50 -51	; "RateUs" "rateUs"
+	52	[58]	SETTABLE 	0 -52 -53	; "Notify" "notify_new"
+	53	[59]	SETTABLE 	0 -54 -55	; "Ad" "adAllControl"
+	54	[61]	SETTABLE 	0 -56 -57	; "FileReplace" "fileReplace"
+	55	[62]	SETTABLE 	0 -58 -59	; "StoryUpdate" "story_update"
+	56	[65]	SETTABLE 	0 -60 -61	; "GeneralConf" "general_conf_new"
+	57	[66]	SETTABLE 	0 -62 -63	; "Bulletin" "bulletin"
+	58	[67]	SETTABLE 	0 -64 -65	; "BulletinLanguage" "bulletinLanguage"
+	59	[70]	SETTABLE 	0 -66 -67	; "TimeLimitGift" "timeLimitGift"
+	60	[71]	SETTABLE 	0 -68 -69	; "EnergyGift" "energyGift"
+	61	[72]	SETTABLE 	0 -70 -71	; "ItemGift" "itemGift"
+	62	[73]	SETTABLE 	0 -72 -73	; "WeeklyGift" "weeklyGift"
+	63	[74]	SETTABLE 	0 -74 -75	; "Survey" "questionnaire"
+	64	[75]	SETTABLE 	0 -76 -77	; "UpcomingEvent" "upcoming_event"
+	65	[76]	SETTABLE 	0 -78 -79	; "UpcomingEventNew" "upcoming_event_new"
+	66	[77]	SETTABLE 	0 -80 -81	; "ChainGift" "chainGift"
+	67	[78]	SETTABLE 	0 -82 -83	; "GrowthFund" "growthFund"
+	68	[79]	SETTABLE 	0 -84 -85	; "ReturnUserRewards" "returnUser_rewards"
+	69	[80]	SETTABLE 	0 -86 -87	; "NewWeeklyGift" "newWeeklyGift"
+	70	[81]	SETTABLE 	0 -88 -89	; "Invitation" "invite_minigame"
+	71	[82]	SETTABLE 	0 -90 -91	; "GameClub" "game_club_control"
+	72	[83]	SETTABLE 	0 -92 -92	; "levelupGift" "levelupGift"
+	73	[85]	SETTABLE 	0 -93 -93	; "LoginRandomBuff" "LoginRandomBuff"
+	74	[87]	SETTABLE 	0 -94 -95	; "TriStageGift" "tristage_gift"
+	75	[89]	SETTABLE 	0 -96 -97	; "ChainEnergy" "chainEnergy"
+	76	[91]	SETTABLE 	0 -98 -99	; "OrderBuffConfig" "order_buff_config"
+	77	[93]	SETTABLE 	0 -100 -101	; "EnergyBoostCost" "energy_boost_cost"
+	78	[95]	SETTABLE 	0 -102 -103	; "OnePlusNGift" "onePlusNGift"
+	79	[97]	SETTABLE 	0 -104 -105	; "RandomRewardContent" "randomRewardContent"
+	80	[99]	SETTABLE 	0 -106 -107	; "AccountBinding" "accountBinding"
+	81	[101]	SETTABLE 	0 -108 -109	; "CustomizeCard" "customizeCardGift"
+	82	[106]	SETTABLE 	0 -110 -111	; "EnergyGemOffer" "energyGemOffer"
+	83	[109]	SETTABLE 	0 -112 -113	; "ChopGift" "chopGift"
+	84	[112]	SETTABLE 	0 -114 -115	; "CoconutPacket" "coconut_packet"
+	85	[115]	SETTABLE 	0 -116 -117	; "PlaneRewardContent" "planeContentConfig"
+	86	[116]	SETTABLE 	0 -118 -119	; "NewReturnReward" "newReturnRewardConfig"
+	87	[118]	SETTABLE 	0 -120 -121	; "RaccoonRewardConfig" "raccoonRewardConfig"
+	88	[121]	SETTABLE 	0 -122 -123	; "OrderBoostProRewardConfig" "orderBoostProRewardConfig"
+	89	[124]	SETTABLE 	0 -124 -125	; "TaskGoldCostConfig" "taskGoldCostConfig"
+	90	[126]	SETTABLE 	0 -126 -127	; "PlentyGift" "plentyGift"
+	91	[128]	SETTABLE 	0 -128 -129	; "AgeCompliance" "ageCompliance"
+	92	[130]	SETTABLE 	0 -130 -131	; "DiscoContentConfig" "discoContentConfig"
+	93	[132]	SETTABLE 	0 -132 -133	; "SpinRandomReward" "spinRandomReward"
+	94	[134]	SETTABLE 	0 -134 -135	; "BubbleDecreaseConfig" "bubbleDecreaseConfig"
+	95	[136]	SETTABLE 	0 -136 -137	; "WxIosPayment" "wxIosPayment"
+	96	[138]	SETTABLE 	0 -138 -139	; "OnePlusFourGift" "onePlusFourGift"
+	97	[140]	SETTABLE 	0 -140 -141	; "ChannelEventRestoreConfig" "spOfferCodes"
+	98	[142]	SETTABLE 	0 -142 -142	; "nChooseOneReward" "nChooseOneReward"
+	99	[144]	SETTABLE 	0 -143 -143	; "orderBoostExtraRewardConfig" "orderBoostExtraRewardConfig"
+	100	[145]	SETTABUP 	0 -49 0	; _ENV "ServerConfigKey"
+	101	[148]	NEWTABLE 	0 0 39
+	102	[150]	SETTABLE 	0 -145 -146	; "AntiMisTouch" "anti_mistouch"
+	103	[151]	SETTABLE 	0 -147 -148	; "CGControl" "cg_control"
+	104	[152]	SETTABLE 	0 -149 -150	; "TaskPriceIncrease" "task_price_increase"
+	105	[153]	SETTABLE 	0 -151 -152	; "WinterDecorate" "winter_decorate"
+	106	[154]	SETTABLE 	0 -153 -154	; "CharacterIntimacy" "character_intimacy"
+	107	[155]	SETTABLE 	0 -155 -156	; "CharacterIntimacyOrder" "intimacy_customer"
+	108	[157]	SETTABLE 	0 -157 -158	; "IOSUpdateHint" "iosUpdateHint"
+	109	[158]	SETTABLE 	0 -159 -160	; "StarterBundle" "starter_bundle"
+	110	[160]	SETTABLE 	0 -161 -162	; "BubbleBuyBonus" "bubble_buy_bonus"
+	111	[161]	SETTABLE 	0 -163 -164	; "InventoryMoreSlot" "inventory_moreslot"
+	112	[162]	SETTABLE 	0 -165 -166	; "BubbleConfirm" "bubble_confirm"
+	113	[163]	SETTABLE 	0 -167 -168	; "InventoryConfirm" "inventory_confirm"
+	114	[164]	SETTABLE 	0 -169 -170	; "EnergyBoost" "energy_boost"
+	115	[166]	SETTABLE 	0 -171 -172	; "RecallOrder" "recall_order"
+	116	[168]	SETTABLE 	0 -173 -174	; "OrderRandomCreate" "order_opt"
+	117	[170]	SETTABLE 	0 -175 -176	; "NewUserFreeEnergyCount" "newuser_free_energy_count"
+	118	[172]	SETTABLE 	0 -177 -178	; "ShopItemFlashSale" "shopitem_flashsale"
+	119	[173]	SETTABLE 	0 -179 -180	; "GameSpeed" "game_speed"
+	120	[175]	SETTABLE 	0 -181 -182	; "JumpToShopWindowWhenLackGem" "lack_gem_jump_shop"
+	121	[177]	SETTABLE 	0 -183 -184	; "TimelineSkip" "timelineSkip"
+	122	[179]	SETTABLE 	0 -185 -186	; "BuyEnergyBp" "buy_energy_bp"
+	123	[181]	SETTABLE 	0 -187 -188	; "BubbleOrderBonus" "bubble_order_bonus"
+	124	[183]	SETTABLE 	0 -189 -190	; "ShopNewType" "shop_new_type"
+	125	[185]	SETTABLE 	0 -191 -192	; "FacebookSetting" "facebook_setting"
+	126	[187]	SETTABLE 	0 -193 -194	; "NewUserSaveProgress" "newuser_save_progress"
+	127	[189]	SETTABLE 	0 -195 -196	; "DeleteFirstTimeline" "delete_first_timeline"
+	128	[191]	SETTABLE 	0 -197 -198	; "NotificationOnRewardNum" "notification_on_reward"
+	129	[193]	SETTABLE 	0 -199 -200	; "WechatFollowUs" "wechat_follow_us"
+	130	[195]	SETTABLE 	0 -201 -202	; "JackOrder" "jack_order"
+	131	[197]	SETTABLE 	0 -203 -204	; "BuyAnimationOptimazation" "buy_animation_opt"
+	132	[199]	SETTABLE 	0 -205 -206	; "ClickEffectOn" "touch_effect"
+	133	[201]	SETTABLE 	0 -207 -208	; "ScreenEffect" "scene_effect"
+	134	[203]	SETTABLE 	0 -209 -210	; "WechatAddMyPrograms" "wechat_add_my_programs"
+	135	[205]	SETTABLE 	0 -211 -212	; "WechatAddHomescreenPop" "wechat_add_homescreen_pop"
+	136	[206]	SETTABLE 	0 -213 -214	; "TiktokAddHomescreenIcon" "tiktok_add_homescreen_icon"
+	137	[208]	SETTABLE 	0 -215 -216	; "NotifyTiktok" "notify_tiktok"
+	138	[210]	SETTABLE 	0 -217 -218	; "EnableIAP" "all_gift_switch"
+	139	[212]	SETTABLE 	0 -219 -220	; "EnergyBoostLevel" "energy_boost_tap"
+	140	[214]	SETTABLE 	0 -221 -222	; "RedemptionCode" "redemption_code"
+	141	[216]	SETTABLE 	0 -223 -224	; "TiktokNavigateToScene" "tiktok_navigate_to_scene"
+	142	[218]	SETTABLE 	0 -225 -226	; "IconFolder" "icon_folder"
+	143	[220]	SETTABLE 	0 -227 -228	; "DYVideoRecord" "tiktok_game_recorder"
+	144	[222]	SETTABLE 	0 -229 -230	; "NewUserGem" "newuser_gem_num"
+	145	[224]	SETTABLE 	0 -231 -232	; "ResourceCollectHint" "resource_collect_hint"
+	146	[226]	SETTABLE 	0 -233 -234	; "MotherItemHint" "mother_item_hint"
+	147	[228]	SETTABLE 	0 -235 -236	; "DisableRestartByTime" "disable_restart_by_time"
+	148	[230]	SETTABLE 	0 -237 -238	; "StrongNetworkEnterForeground" "strong_network_enter_foreground"
+	149	[233]	SETTABLE 	0 -239 -240	; "AdPrivacyOpen" "adPrivacyOpen"
+	150	[236]	SETTABLE 	0 -241 -242	; "Vibration" "vibration"
+	151	[238]	SETTABLE 	0 -243 -244	; "NoticeLessPopup" "notice_popup_less"
+	152	[240]	SETTABLE 	0 -245 -246	; "ServeButtonPositionType" "serve_button_position"
+	153	[242]	SETTABLE 	0 -33 -247	; "StoryRecap" "story_recap"
+	154	[245]	SETTABLE 	0 -248 -249	; "OptionalWindowMaxCountInPopupPeriod" "popup_max"
+	155	[247]	SETTABLE 	0 -250 -251	; "OrderPositionOpt" "order_position_opt"
+	156	[250]	SETTABLE 	0 -252 -253	; "BubbleOrderDecrease" "bubble_order_decrease"
+	157	[252]	SETTABLE 	0 -254 -255	; "BubbleChainDecreaseLevel" "bubble_chain_decrease_level"
+	158	[254]	LOADK    	1 -257	; "bubble_chain_decrease_ratio"
+	159	[254]	SETTABLE 	0 -256 1	; "BubbleChainDecreaseRatio" -
+	160	[256]	LOADK    	1 -258	; "IconBoard"
+	161	[256]	LOADK    	2 -259	; "icon_board"
+	162	[256]	SETTABLE 	0 1 2
+	163	[258]	LOADK    	1 -260	; "ItemInfoShowNum"
+	164	[258]	LOADK    	2 -261	; "item_info_show_num"
+	165	[258]	SETTABLE 	0 1 2
+	166	[260]	LOADK    	1 -262	; "CloseUdp"
+	167	[260]	LOADK    	2 -263	; "closeUdp"
+	168	[260]	SETTABLE 	0 1 2
+	169	[263]	LOADK    	1 -264	; "AutoSelectConflictData"
+	170	[263]	LOADK    	2 -265	; "auto_select_conflict_data"
+	171	[263]	SETTABLE 	0 1 2
+	172	[265]	LOADK    	1 -266	; "RevertDouYinGem"
+	173	[265]	LOADK    	2 -267	; "revert_douyin_gem"
+	174	[265]	SETTABLE 	0 1 2
+	175	[267]	LOADK    	1 -268	; "DisableDouYinFeed"
+	176	[267]	LOADK    	2 -269	; "disable_douyin_feed"
+	177	[267]	SETTABLE 	0 1 2
+	178	[269]	LOADK    	1 -270	; "EnableAlipayBean"
+	179	[269]	LOADK    	2 -271	; "alipay_ios_coin"
+	180	[269]	SETTABLE 	0 1 2
+	181	[272]	LOADK    	1 -272	; "ShopFlashItemRefreshTime"
+	182	[272]	LOADK    	2 -273	; "shop_item_refresh_time"
+	183	[272]	SETTABLE 	0 1 2
+	184	[275]	LOADK    	1 -274	; "OrderBoostHint"
+	185	[275]	LOADK    	2 -275	; "order_boost_hint"
+	186	[275]	SETTABLE 	0 1 2
+	187	[278]	LOADK    	1 -276	; "DisableItemViewPool"
+	188	[278]	LOADK    	2 -277	; "disable_item_pool"
+	189	[278]	SETTABLE 	0 1 2
+	190	[281]	LOADK    	1 -278	; "EnergyBoostEight"
+	191	[281]	LOADK    	2 -279	; "energy_boost_eight"
+	192	[281]	SETTABLE 	0 1 2
+	193	[284]	LOADK    	1 -280	; "ScoreRaceHint"
+	194	[284]	LOADK    	2 -281	; "score_race_pass_hint"
+	195	[284]	SETTABLE 	0 1 2
+	196	[287]	LOADK    	1 -282	; "ScoreRaceForce"
+	197	[287]	LOADK    	2 -283	; "score_race_force"
+	198	[287]	SETTABLE 	0 1 2
+	199	[290]	LOADK    	1 -284	; "NewReturnRewardActive"
+	200	[290]	LOADK    	2 -285	; "newReturn"
+	201	[290]	SETTABLE 	0 1 2
+	202	[293]	LOADK    	1 -286	; "AliPaySetHomeRevisit"
+	203	[293]	LOADK    	2 -287	; "alipay_revisit_show"
+	204	[293]	SETTABLE 	0 1 2
+	205	[295]	LOADK    	1 -288	; "AliPayRevisitLimit"
+	206	[295]	LOADK    	2 -289	; "alipay_revisit_limit"
+	207	[295]	SETTABLE 	0 1 2
+	208	[297]	LOADK    	1 -290	; "AliPayAddHomeScreen"
+	209	[297]	LOADK    	2 -291	; "alipay_add_homescreen"
+	210	[297]	SETTABLE 	0 1 2
+	211	[300]	LOADK    	1 -292	; "OrderBoostPro"
+	212	[300]	LOADK    	2 -293	; "orderBoostPro"
+	213	[300]	SETTABLE 	0 1 2
+	214	[302]	LOADK    	1 -294	; "GemDetailShow"
+	215	[302]	LOADK    	2 -295	; "gem_detail_show"
+	216	[302]	SETTABLE 	0 1 2
+	217	[304]	LOADK    	1 -296	; "GemLawShow"
+	218	[304]	LOADK    	2 -297	; "gem_law_show"
+	219	[304]	SETTABLE 	0 1 2
+	220	[306]	LOADK    	1 -298	; "EnergyUpload"
+	221	[306]	LOADK    	2 -299	; "energy_upload"
+	222	[306]	SETTABLE 	0 1 2
+	223	[308]	LOADK    	1 -300	; "InventoryRowAdd"
+	224	[308]	LOADK    	2 -301	; "inventory_row_add"
+	225	[308]	SETTABLE 	0 1 2
+	226	[310]	LOADK    	1 -302	; "WXSyncStorage"
+	227	[310]	LOADK    	2 -303	; "wx_sync_storage"
+	228	[310]	SETTABLE 	0 1 2
+	229	[313]	LOADK    	1 -304	; "LoadingViewTimelimit"
+	230	[313]	LOADK    	2 -305	; "loadingViewTimelimit"
+	231	[313]	SETTABLE 	0 1 2
+	232	[316]	LOADK    	1 -306	; "TaskGoldCostControl"
+	233	[316]	LOADK    	2 -307	; "task_gold_cost_control"
+	234	[316]	SETTABLE 	0 1 2
+	235	[319]	LOADK    	1 -308	; "TempItemTriggerAdvanced"
+	236	[319]	LOADK    	2 -309	; "temp_item_trigger_advanced"
+	237	[319]	SETTABLE 	0 1 2
+	238	[322]	LOADK    	1 -310	; "ShowItemrewardDisplayWindow"
+	239	[322]	LOADK    	2 -311	; "multi_item_reward_window"
+	240	[322]	SETTABLE 	0 1 2
+	241	[325]	LOADK    	1 -312	; "ItemBubbleDuration"
+	242	[325]	LOADK    	2 -313	; "bubble_duration"
+	243	[325]	SETTABLE 	0 1 2
+	244	[328]	LOADK    	1 -314	; "AlbumPackOpenNext"
+	245	[328]	LOADK    	2 -315	; "pack_open_next"
+	246	[328]	SETTABLE 	0 1 2
+	247	[331]	LOADK    	1 -316	; "AutoOpenMainTaskWindow"
+	248	[331]	LOADK    	2 -317	; "task_window_auto"
+	249	[331]	SETTABLE 	0 1 2
+	250	[334]	LOADK    	1 -318	; "BGMSwitch"
+	251	[334]	LOADK    	2 -319	; "bgm_switch"
+	252	[334]	SETTABLE 	0 1 2
+	253	[336]	LOADK    	1 -320	; "WeeklyActiveBonusStar"
+	254	[336]	LOADK    	2 -321	; "weekly_active_bonus_star"
+	255	[336]	SETTABLE 	0 1 2
+	256	[338]	LOADK    	1 -322	; "UploadGap"
+	257	[338]	LOADK    	2 -323	; "upload_gap"
+	258	[338]	SETTABLE 	0 1 2
+	259	[341]	LOADK    	1 -324	; "CookingFrenzyLight"
+	260	[341]	LOADK    	2 -325	; "cookingfrenzy_light"
+	261	[341]	SETTABLE 	0 1 2
+	262	[343]	LOADK    	1 -326	; "NotificationFirstTime"
+	263	[343]	LOADK    	2 -327	; "notification_firsttime"
+	264	[343]	SETTABLE 	0 1 2
+	265	[345]	LOADK    	1 -328	; "NotificationPopup"
+	266	[345]	LOADK    	2 -329	; "notification_popup"
+	267	[345]	SETTABLE 	0 1 2
+	268	[347]	LOADK    	1 -330	; "NotificationCooldown"
+	269	[347]	LOADK    	2 -331	; "notification_cooldown"
+	270	[347]	SETTABLE 	0 1 2
+	271	[349]	LOADK    	1 -332	; "NotificationContent"
+	272	[349]	LOADK    	2 -333	; "notification_content"
+	273	[349]	SETTABLE 	0 1 2
+	274	[351]	LOADK    	1 -334	; "NotificationAppRed"
+	275	[351]	LOADK    	2 -335	; "notification_appred"
+	276	[351]	SETTABLE 	0 1 2
+	277	[353]	LOADK    	1 -336	; "RewardStockCount"
+	278	[353]	LOADK    	2 -337	; "reward_stock_count"
+	279	[353]	SETTABLE 	0 1 2
+	280	[355]	LOADK    	1 -338	; "ItemRewardIntelligent"
+	281	[355]	LOADK    	2 -339	; "item_reward_intelligent"
+	282	[355]	SETTABLE 	0 1 2
+	283	[357]	LOADK    	1 -340	; "OrderDiffDynamic"
+	284	[357]	LOADK    	2 -341	; "order_diff_dynamic"
+	285	[357]	SETTABLE 	0 1 2
+	286	[359]	LOADK    	1 -342	; "SlotOrderNew"
+	287	[359]	LOADK    	2 -343	; "slot_order_new"
+	288	[359]	SETTABLE 	0 1 2
+	289	[361]	LOADK    	1 -344	; "InventoryOrder"
+	290	[361]	LOADK    	2 -345	; "inventory_order"
+	291	[361]	SETTABLE 	0 1 2
+	292	[363]	LOADK    	1 -346	; "RankByTimeDesc"
+	293	[363]	LOADK    	2 -347	; "rank_bytime_desc"
+	294	[363]	SETTABLE 	0 1 2
+	295	[365]	LOADK    	1 -348	; "DataUploadNew"
+	296	[365]	LOADK    	2 -349	; "data_upload_new"
+	297	[365]	SETTABLE 	0 1 2
+	298	[367]	LOADK    	1 -350	; "ItemLandOpt"
+	299	[367]	LOADK    	2 -351	; "item_land_opt"
+	300	[367]	SETTABLE 	0 1 2
+	301	[369]	LOADK    	1 -352	; "BubbleDecrease"
+	302	[369]	LOADK    	2 -353	; "bubble_purchase_decrease"
+	303	[369]	SETTABLE 	0 1 2
+	304	[371]	LOADK    	1 -354	; "GeneratorFactory"
+	305	[371]	LOADK    	2 -355	; "generator_factory"
+	306	[371]	SETTABLE 	0 1 2
+	307	[373]	LOADK    	1 -356	; "NewUserTimeline"
+	308	[373]	LOADK    	2 -357	; "newuser_timeline"
+	309	[373]	SETTABLE 	0 1 2
+	310	[375]	LOADK    	1 -358	; "AdjustLuckyProduceBoostRatio"
+	311	[375]	LOADK    	2 -359	; "adjust_lucky_produce_boost_ratio"
+	312	[375]	SETTABLE 	0 1 2
+	313	[377]	LOADK    	1 -360	; "NewReturnUserExperience"
+	314	[377]	LOADK    	2 -361	; "return_user_new"
+	315	[377]	SETTABLE 	0 1 2
+	316	[379]	LOADK    	1 -362	; "FishNetProduceSmart"
+	317	[379]	LOADK    	2 -363	; "fish_net_produce_smart"
+	318	[379]	SETTABLE 	0 1 2
+	319	[381]	LOADK    	1 -364	; "CanRestoreButtonShow"
+	320	[381]	LOADK    	2 -365	; "restore_purchases_switch"
+	321	[381]	SETTABLE 	0 1 2
+	322	[383]	LOADK    	1 -366	; "NoEnergyGiftGem"
+	323	[383]	LOADK    	2 -367	; "no_energy_gift_gem"
+	324	[383]	SETTABLE 	0 1 2
+	325	[385]	LOADK    	1 -368	; "NoEnergyGiftCoolDown"
+	326	[385]	LOADK    	2 -369	; "no_energy_gift_cooldown"
+	327	[385]	SETTABLE 	0 1 2
+	328	[387]	LOADK    	1 -370	; "AutoSpreadToCache"
+	329	[387]	LOADK    	2 -371	; "spread_cache"
+	330	[387]	SETTABLE 	0 1 2
+	331	[390]	LOADK    	1 -372	; "cardItemStack"
+	332	[390]	LOADK    	2 -373	; "card_item_stack"
+	333	[390]	SETTABLE 	0 1 2
+	334	[392]	LOADK    	1 -374	; "ConfNewGenerator"
+	335	[392]	LOADK    	2 -375	; "conf_new_generator"
+	336	[392]	SETTABLE 	0 1 2
+	337	[393]	SETTABUP 	0 -144 0	; _ENV "EGeneralConfType"
+	338	[395]	LOADK    	0 -376	; "key"
+	339	[396]	LOADK    	1 -377	; "value"
+	340	[399]	LOADK    	2 -378	; "ConfigModel"
+	341	[399]	NEWTABLE 	3 0 0
+	342	[399]	SETTABUP 	0 2 3	; _ENV
+	343	[400]	LOADK    	2 -378	; "ConfigModel"
+	344	[400]	GETTABUP 	2 0 2	; _ENV
+	345	[400]	LOADK    	3 -379	; "__index"
+	346	[400]	LOADK    	4 -378	; "ConfigModel"
+	347	[400]	GETTABUP 	4 0 4	; _ENV
+	348	[400]	SETTABLE 	2 3 4
+	349	[403]	LOADK    	2 -378	; "ConfigModel"
+	350	[403]	GETTABUP 	2 0 2	; _ENV
+	351	[403]	LOADK    	3 -380	; "EGeneralConfigParam"
+	352	[403]	NEWTABLE 	4 0 5
+	353	[405]	LOADK    	5 -381	; "Int"
+	354	[405]	LOADK    	6 -382	; "param_int"
+	355	[405]	SETTABLE 	4 5 6
+	356	[406]	LOADK    	5 -383	; "Float"
+	357	[406]	LOADK    	6 -384	; "param_float"
+	358	[406]	SETTABLE 	4 5 6
+	359	[407]	LOADK    	5 -385	; "String"
+	360	[407]	LOADK    	6 -386	; "param_string"
+	361	[407]	SETTABLE 	4 5 6
+	362	[408]	LOADK    	5 -387	; "llETime"
+	363	[408]	LOADK    	6 -388	; "eTime"
+	364	[408]	SETTABLE 	4 5 6
+	365	[409]	LOADK    	5 -389	; "llRTime"
+	366	[409]	LOADK    	6 -390	; "rTime"
+	367	[409]	SETTABLE 	4 5 6
+	368	[410]	SETTABLE 	2 3 4
+	369	[415]	LOADK    	2 -378	; "ConfigModel"
+	370	[415]	GETTABUP 	2 0 2	; _ENV
+	371	[415]	LOADK    	3 -391	; "GetReplacesFilePath"
+	372	[432]	CLOSURE  	4 0	; 0000029D739CF0E0
+	373	[415]	SETTABLE 	2 3 4
+	374	[434]	LOADK    	2 -378	; "ConfigModel"
+	375	[434]	GETTABUP 	2 0 2	; _ENV
+	376	[434]	LOADK    	3 -392	; "Init"
+	377	[445]	CLOSURE  	4 1	; 0000029D739DB910
+	378	[434]	SETTABLE 	2 3 4
+	379	[447]	LOADK    	2 -378	; "ConfigModel"
+	380	[447]	GETTABUP 	2 0 2	; _ENV
+	381	[447]	LOADK    	3 -393	; "LoadConfigs"
+	382	[554]	CLOSURE  	4 2	; 0000029D739DDB80
+	383	[447]	SETTABLE 	2 3 4
+	384	[557]	LOADK    	2 -378	; "ConfigModel"
+	385	[557]	GETTABUP 	2 0 2	; _ENV
+	386	[557]	LOADK    	3 -394	; "GetLocalConfig"
+	387	[559]	CLOSURE  	4 3	; 0000029D739E1630
+	388	[557]	SETTABLE 	2 3 4
+	389	[563]	LOADK    	2 -378	; "ConfigModel"
+	390	[563]	GETTABUP 	2 0 2	; _ENV
+	391	[563]	LOADK    	3 -395	; "GetServerConfig"
+	392	[566]	CLOSURE  	4 4	; 0000029D739E16B0
+	393	[563]	SETTABLE 	2 3 4
+	394	[570]	LOADK    	2 -378	; "ConfigModel"
+	395	[570]	GETTABUP 	2 0 2	; _ENV
+	396	[570]	LOADK    	3 -396	; "GetServerConfigMD5"
+	397	[573]	CLOSURE  	4 5	; 0000029D739E1730
+	398	[570]	SETTABLE 	2 3 4
+	399	[576]	LOADK    	2 -378	; "ConfigModel"
+	400	[576]	GETTABUP 	2 0 2	; _ENV
+	401	[576]	LOADK    	3 -397	; "UpdateServerConfigs"
+	402	[624]	CLOSURE  	4 6	; 0000029D739E17B0
+	403	[576]	SETTABLE 	2 3 4
+	404	[627]	LOADK    	2 -378	; "ConfigModel"
+	405	[627]	GETTABUP 	2 0 2	; _ENV
+	406	[627]	LOADK    	3 -398	; "GetSeverConfigEntries"
+	407	[645]	CLOSURE  	4 7	; 0000029D739E1E30
+	408	[627]	SETTABLE 	2 3 4
+	409	[647]	LOADK    	2 -399	; "ConfigModel"
+	410	[647]	GETTABUP 	2 0 2	; _ENV
+	411	[647]	LOADK    	3 -400	; "GetAntiMisTouchDuration"
+	412	[649]	CLOSURE  	4 8	; 0000029D739E2190
+	413	[647]	SETTABLE 	2 3 4
+	414	[652]	LOADK    	2 -401	; "ConfigModel"
+	415	[652]	GETTABUP 	2 0 2	; _ENV
+	416	[652]	LOADK    	3 -402	; "GetCGPath"
+	417	[663]	CLOSURE  	4 9	; 0000029D739E2AE0
+	418	[652]	SETTABLE 	2 3 4
+	419	[665]	LOADK    	2 -403	; "ConfigModel"
+	420	[665]	GETTABUP 	2 0 2	; _ENV
+	421	[665]	LOADK    	3 -404	; "CanPlaySceneCG"
+	422	[667]	CLOSURE  	4 10	; 0000029D739E24E0
+	423	[665]	SETTABLE 	2 3 4
+	424	[670]	LOADK    	2 -405	; "ConfigModel"
+	425	[670]	GETTABUP 	2 0 2	; _ENV
+	426	[670]	LOADK    	3 -406	; "GetTaskPriceIncreaseCfg"
+	427	[679]	CLOSURE  	4 11	; 0000029D739E2B60
+	428	[670]	SETTABLE 	2 3 4
+	429	[681]	LOADK    	2 -407	; "ConfigModel"
+	430	[681]	GETTABUP 	2 0 2	; _ENV
+	431	[681]	LOADK    	3 -408	; "GetLawUrl"
+	432	[686]	CLOSURE  	4 12	; 0000029D739E2EE0
+	433	[681]	SETTABLE 	2 3 4
+	434	[688]	LOADK    	2 -409	; "ConfigModel"
+	435	[688]	GETTABUP 	2 0 2	; _ENV
+	436	[688]	LOADK    	3 -410	; "UseWinterUI"
+	437	[694]	CLOSURE  	4 13	; 0000029D739E2A60
+	438	[688]	SETTABLE 	2 3 4
+	439	[697]	LOADK    	2 -409	; "ConfigModel"
+	440	[697]	GETTABUP 	2 0 2	; _ENV
+	441	[697]	LOADK    	3 -411	; "UseSnowScene"
+	442	[703]	CLOSURE  	4 14	; 0000029D739E2D60
+	443	[697]	SETTABLE 	2 3 4
+	444	[705]	LOADK    	2 -409	; "ConfigModel"
+	445	[705]	GETTABUP 	2 0 2	; _ENV
+	446	[705]	LOADK    	3 -412	; "GetCharacterIntimacyParams"
+	447	[712]	CLOSURE  	4 15	; 0000029D739E2DE0
+	448	[705]	SETTABLE 	2 3 4
+	449	[714]	LOADK    	2 -413	; "ConfigModel"
+	450	[714]	GETTABUP 	2 0 2	; _ENV
+	451	[714]	LOADK    	3 -414	; "IsCharacterIntimacyOrderOpen"
+	452	[716]	CLOSURE  	4 16	; 0000029D739E3060
+	453	[714]	SETTABLE 	2 3 4
+	454	[718]	LOADK    	2 -413	; "ConfigModel"
+	455	[718]	GETTABUP 	2 0 2	; _ENV
+	456	[718]	LOADK    	3 -415	; "HasBubbleBuyBonus"
+	457	[720]	CLOSURE  	4 17	; 0000029D739E30E0
+	458	[718]	SETTABLE 	2 3 4
+	459	[723]	LOADK    	2 -413	; "ConfigModel"
+	460	[723]	GETTABUP 	2 0 2	; _ENV
+	461	[723]	LOADK    	3 -416	; "GetCustomItemBubbleCountdown"
+	462	[725]	CLOSURE  	4 18	; 0000029D739E2460
+	463	[723]	SETTABLE 	2 3 4
+	464	[728]	LOADK    	2 -417	; "ConfigModel"
+	465	[728]	GETTABUP 	2 0 2	; _ENV
+	466	[728]	LOADK    	3 -418	; "IsStarterBundleEnable"
+	467	[734]	CLOSURE  	4 19	; 0000029D739E2360
+	468	[728]	SETTABLE 	2 3 4
+	469	[737]	LOADK    	2 -417	; "ConfigModel"
+	470	[737]	GETTABUP 	2 0 2	; _ENV
+	471	[737]	LOADK    	3 -419	; "IsReturnUserRewardOpen"
+	472	[743]	CLOSURE  	4 20	; 0000029D739E2E60
+	473	[737]	SETTABLE 	2 3 4
+	474	[745]	LOADK    	2 -417	; "ConfigModel"
+	475	[745]	GETTABUP 	2 0 2	; _ENV
+	476	[745]	LOADK    	3 -420	; "GetEnergyBoostType"
+	477	[747]	CLOSURE  	4 21	; 0000029D739E2660
+	478	[745]	SETTABLE 	2 3 4
+	479	[749]	LOADK    	2 -417	; "ConfigModel"
+	480	[749]	GETTABUP 	2 0 2	; _ENV
+	481	[749]	LOADK    	3 -421	; "IsJumpToShopWindowWhenLackGem"
+	482	[751]	CLOSURE  	4 22	; 0000029D739E3160
+	483	[749]	SETTABLE 	2 3 4
+	484	[753]	LOADK    	2 -417	; "ConfigModel"
+	485	[753]	GETTABUP 	2 0 2	; _ENV
+	486	[753]	LOADK    	3 -422	; "GetGameSpeed"
+	487	[756]	CLOSURE  	4 23	; 0000029D739E31E0
+	488	[753]	SETTABLE 	2 3 4
+	489	[759]	LOADK    	2 -423	; "ConfigModel"
+	490	[759]	GETTABUP 	2 0 2	; _ENV
+	491	[759]	LOADK    	3 -424	; "IsTimelineSkipOpen"
+	492	[761]	CLOSURE  	4 24	; 0000029D739E2F60
+	493	[759]	SETTABLE 	2 3 4
+	494	[763]	LOADK    	2 -423	; "ConfigModel"
+	495	[763]	GETTABUP 	2 0 2	; _ENV
+	496	[763]	LOADK    	3 -425	; "HasBubbleOrderBonus"
+	497	[765]	CLOSURE  	4 25	; 0000029D739E2760
+	498	[763]	SETTABLE 	2 3 4
+	499	[767]	LOADK    	2 -423	; "ConfigModel"
+	500	[767]	GETTABUP 	2 0 2	; _ENV
+	501	[767]	LOADK    	3 -426	; "ShowNewUserSaveProgress"
+	502	[769]	CLOSURE  	4 26	; 0000029D739E22E0
+	503	[767]	SETTABLE 	2 3 4
+	504	[771]	LOADK    	2 -423	; "ConfigModel"
+	505	[771]	GETTABUP 	2 0 2	; _ENV
+	506	[771]	LOADK    	3 -427	; "IsFollowUsOpen"
+	507	[774]	CLOSURE  	4 27	; 0000029D739E2560
+	508	[771]	SETTABLE 	2 3 4
+	509	[776]	LOADK    	2 -428	; "ConfigModel"
+	510	[776]	GETTABUP 	2 0 2	; _ENV
+	511	[776]	LOADK    	3 -429	; "IsPlayerGroupOpen"
+	512	[780]	CLOSURE  	4 28	; 0000029D739E2FE0
+	513	[776]	SETTABLE 	2 3 4
+	514	[782]	LOADK    	2 -430	; "ConfigModel"
+	515	[782]	GETTABUP 	2 0 2	; _ENV
+	516	[782]	LOADK    	3 -431	; "GetPlayerGroupQRCodeUrl"
+	517	[784]	CLOSURE  	4 29	; 0000029D739E25E0
+	518	[782]	SETTABLE 	2 3 4
+	519	[785]	LOADK    	2 -432	; "ConfigModel"
+	520	[785]	GETTABUP 	2 0 2	; _ENV
+	521	[785]	LOADK    	3 -433	; "IsShopNewType"
+	522	[792]	CLOSURE  	4 30	; 0000029D739E27E0
+	523	[785]	SETTABLE 	2 3 4
+	524	[794]	LOADK    	2 -432	; "ConfigModel"
+	525	[794]	GETTABUP 	2 0 2	; _ENV
+	526	[794]	LOADK    	3 -434	; "IsNewShopRule"
+	527	[796]	CLOSURE  	4 31	; 0000029D739E2860
+	528	[794]	SETTABLE 	2 3 4
+	529	[798]	LOADK    	2 -432	; "ConfigModel"
+	530	[798]	GETTABUP 	2 0 2	; _ENV
+	531	[798]	LOADK    	3 -435	; "IsClickEffectOpen"
+	532	[800]	CLOSURE  	4 32	; 0000029D739E28E0
+	533	[798]	SETTABLE 	2 3 4
+	534	[802]	LOADK    	2 -432	; "ConfigModel"
+	535	[802]	GETTABUP 	2 0 2	; _ENV
+	536	[802]	LOADK    	3 -436	; "IsIAPEnabled"
+	537	[805]	CLOSURE  	4 33	; 0000029D739E2960
+	538	[802]	SETTABLE 	2 3 4
+	539	[807]	LOADK    	2 -432	; "ConfigModel"
+	540	[807]	GETTABUP 	2 0 2	; _ENV
+	541	[807]	LOADK    	3 -364	; "CanRestoreButtonShow"
+	542	[810]	CLOSURE  	4 34	; 0000029D739E29E0
+	543	[807]	SETTABLE 	2 3 4
+	544	[813]	LOADK    	2 -432	; "ConfigModel"
+	545	[813]	GETTABUP 	2 0 2	; _ENV
+	546	[813]	LOADK    	3 -437	; "IsDYSubscriptionOpen"
+	547	[821]	CLOSURE  	4 35	; 0000029D739E65F0
+	548	[813]	SETTABLE 	2 3 4
+	549	[824]	LOADK    	2 -432	; "ConfigModel"
+	550	[824]	GETTABUP 	2 0 2	; _ENV
+	551	[824]	LOADK    	3 -438	; "IsDYVideoRecorderOpen"
+	552	[833]	CLOSURE  	4 36	; 0000029D739E70F0
+	553	[824]	SETTABLE 	2 3 4
+	554	[835]	LOADK    	2 -432	; "ConfigModel"
+	555	[835]	GETTABUP 	2 0 2	; _ENV
+	556	[835]	LOADK    	3 -439	; "IsDYVideoRecorderDailyRewardOpen"
+	557	[841]	CLOSURE  	4 37	; 0000029D739E72F0
+	558	[835]	SETTABLE 	2 3 4
+	559	[843]	LOADK    	2 -432	; "ConfigModel"
+	560	[843]	GETTABUP 	2 0 2	; _ENV
+	561	[843]	LOADK    	3 -440	; "IsVibrateServerControlOpen"
+	562	[850]	CLOSURE  	4 38	; 0000029D739E6E70
+	563	[843]	SETTABLE 	2 3 4
+	564	[852]	LOADK    	2 -432	; "ConfigModel"
+	565	[852]	GETTABUP 	2 0 2	; _ENV
+	566	[852]	LOADK    	3 -441	; "IsUsingOrderButtonNewPositionType"
+	567	[857]	CLOSURE  	4 39	; 0000029D739E7870
+	568	[852]	SETTABLE 	2 3 4
+	569	[859]	LOADK    	2 -432	; "ConfigModel"
+	570	[859]	GETTABUP 	2 0 2	; _ENV
+	571	[859]	LOADK    	3 -442	; "GetOptionalWindowMaxCountInPopupPeriod"
+	572	[861]	CLOSURE  	4 40	; 0000029D739E6370
+	573	[859]	SETTABLE 	2 3 4
+	574	[863]	LOADK    	2 -443	; "ConfigModel"
+	575	[863]	GETTABUP 	2 0 2	; _ENV
+	576	[863]	LOADK    	3 -444	; "IsOrderPositionOpt"
+	577	[865]	CLOSURE  	4 41	; 0000029D739E7DF0
+	578	[863]	SETTABLE 	2 3 4
+	579	[868]	LOADK    	2 -443	; "ConfigModel"
+	580	[868]	GETTABUP 	2 0 2	; _ENV
+	581	[868]	LOADK    	3 -445	; "IsNewUserTimeline"
+	582	[880]	CLOSURE  	4 42	; 0000029D739E7AF0
+	583	[868]	SETTABLE 	2 3 4
+	584	[883]	LOADK    	2 -443	; "ConfigModel"
+	585	[883]	GETTABUP 	2 0 2	; _ENV
+	586	[883]	LOADK    	3 -446	; "IsNewUserTimelineConfigEnable"
+	587	[885]	CLOSURE  	4 43	; 0000029D739E7FF0
+	588	[883]	SETTABLE 	2 3 4
+	589	[892]	LOADK    	2 -443	; "ConfigModel"
+	590	[892]	GETTABUP 	2 0 2	; _ENV
+	591	[892]	LOADK    	3 -447	; "GetGeneralConfByType"
+	592	[902]	CLOSURE  	4 44	; 0000029D739E7EF0
+	593	[892]	SETTABLE 	2 3 4
+	594	[907]	LOADK    	2 -448	; "ConfigModel"
+	595	[907]	GETTABUP 	2 0 2	; _ENV
+	596	[907]	LOADK    	3 -449	; "IsServerControlOpen"
+	597	[919]	CLOSURE  	4 45	; 0000029D739E7B70
+	598	[907]	SETTABLE 	2 3 4
+	599	[921]	LOADK    	2 -448	; "ConfigModel"
+	600	[921]	GETTABUP 	2 0 2	; _ENV
+	601	[921]	LOADK    	3 -450	; "IsScreenEffectOpen"
+	602	[923]	CLOSURE  	4 46	; 0000029D739E8070
+	603	[921]	SETTABLE 	2 3 4
+	604	[926]	LOADK    	2 -448	; "ConfigModel"
+	605	[926]	GETTABUP 	2 0 2	; _ENV
+	606	[926]	LOADK    	3 -451	; "GetShopFlashItemRefreshTime"
+	607	[934]	CLOSURE  	4 47	; 0000029D739E7370
+	608	[926]	SETTABLE 	2 3 4
+	609	[937]	LOADK    	2 -448	; "ConfigModel"
+	610	[937]	GETTABUP 	2 0 2	; _ENV
+	611	[939]	CLOSURE  	3 48	; 0000029D739E79F0
+	612	[937]	SETTABLE 	2 -177 3	; "ShopItemFlashSale" -
+	613	[942]	LOADK    	2 -448	; "ConfigModel"
+	614	[942]	GETTABUP 	2 0 2	; _ENV
+	615	[942]	LOADK    	3 -452	; "GetAliPayRevisitCount"
+	616	[944]	CLOSURE  	4 49	; 0000029D739E69F0
+	617	[942]	SETTABLE 	2 3 4
+	618	[948]	LOADK    	2 -453	; "ConfigModel"
+	619	[948]	GETTABUP 	2 0 2	; _ENV
+	620	[948]	LOADK    	3 -454	; "_UpdateGeneralConfigInfo"
+	621	[962]	CLOSURE  	4 50	; 0000029D739E7CF0
+	622	[948]	SETTABLE 	2 3 4
+	623	[967]	LOADK    	2 -453	; "ConfigModel"
+	624	[967]	GETTABUP 	2 0 2	; _ENV
+	625	[967]	LOADK    	3 -455	; "LoadDynamicConfigAsync"
+	626	[1010]	CLOSURE  	4 51	; 0000029D739E6D70
+	627	[967]	SETTABLE 	2 3 4
+	628	[1012]	LOADK    	2 -453	; "ConfigModel"
+	629	[1012]	GETTABUP 	2 0 2	; _ENV
+	630	[1012]	LOADK    	3 -456	; "GetOrderBoostProConfig"
+	631	[1021]	CLOSURE  	4 52	; 0000029D739E73F0
+	632	[1012]	SETTABLE 	2 3 4
+	633	[1023]	LOADK    	2 -457	; "ConfigModel"
+	634	[1023]	GETTABUP 	2 0 2	; _ENV
+	635	[1023]	LOADK    	3 -458	; "CanInventoryShowMoreSlot"
+	636	[1025]	CLOSURE  	4 53	; 0000029D739E7A70
+	637	[1023]	SETTABLE 	2 3 4
+	638	[1028]	LOADK    	2 -459	; "ConfigModel"
+	639	[1028]	GETTABUP 	2 0 2	; _ENV
+	640	[1028]	LOADK    	3 -460	; "WaitForStorageBeforeExitGame"
+	641	[1030]	CLOSURE  	4 54	; 0000029D739E63F0
+	642	[1028]	SETTABLE 	2 3 4
+	643	[1033]	LOADK    	2 -461	; "ConfigModel"
+	644	[1033]	GETTABUP 	2 0 2	; _ENV
+	645	[1033]	LOADK    	3 -462	; "GetLoadingViewTimeLimit"
+	646	[1042]	CLOSURE  	4 55	; 0000029D739E6F70
+	647	[1033]	SETTABLE 	2 3 4
+	648	[1045]	LOADK    	2 -461	; "ConfigModel"
+	649	[1045]	GETTABUP 	2 0 2	; _ENV
+	650	[1045]	LOADK    	3 -463	; "IsBGMSwitchOpen"
+	651	[1047]	CLOSURE  	4 56	; 0000029D739E6AF0
+	652	[1045]	SETTABLE 	2 3 4
+	653	[1050]	LOADK    	2 -461	; "ConfigModel"
+	654	[1050]	GETTABUP 	2 0 2	; _ENV
+	655	[1050]	LOADK    	3 -464	; "IsNewReturnExperienceOpen"
+	656	[1052]	CLOSURE  	4 57	; 0000029D739E64F0
+	657	[1050]	SETTABLE 	2 3 4
+	658	[1052]	RETURN   	0 1
+constants (464) for 0000029D739CEE80:
+	1	"LocalConfigKey"
+	2	"MapBorder"
+	3	"BoardPrompt"
+	4	"Bundle"
+	5	"CharacterIntimacyDialog"
+	6	"CharacterIntimacyCoinToGift"
+	7	"CharacterIntimacyGift"
+	8	"CharacterIntimacyLevel"
+	9	"CharacterIntimacyList"
+	10	"CharacterIntimacyShop"
+	11	"FunctionEnable"
+	12	"InventorySlot"
+	13	"ItemModel"
+	14	"ItemProperty"
+	15	"ItemView"
+	16	"MainTask"
+	17	"OrderAvatar"
+	18	"OrderFixed"
+	19	"OrderItem"
+	20	"OrderItemNumberWeight"
+	21	"OrderRandom"
+	22	"OrderRandomReCall"
+	23	"OrderSpecial"
+	24	"OrderBranch"
+	25	"RoleIdle"
+	26	"ShopDailyDeals"
+	27	"ShopIAP"
+	28	"ShopSlot"
+	29	"StorySpeaker"
+	30	"System"
+	31	"EnergyBoostItem"
+	32	"NotificationText"
+	33	"StoryRecap"
+	34	"Level"
+	35	"LuckyProduce"
+	36	"MapSlotInCameraCheckPos"
+	37	"PlaneRewardItem"
+	38	"RaccoonRewardShowItem"
+	39	"MergeItemScoreConfig"
+	40	"ChestOrderRandomConfig"
+	41	"ChestOrderRandomRecallConfig"
+	42	"MainPaperboxExtraRewardConfig"
+	43	"TutoriaiOrderConfig"
+	44	"GeneratorBoostItemModel"
+	45	"GeneratorBoostLuckyProduce"
+	46	"BattleRobot"
+	47	"TeamRobot"
+	48	"Preview"
+	49	"ServerConfigKey"
+	50	"RateUs"
+	51	"rateUs"
+	52	"Notify"
+	53	"notify_new"
+	54	"Ad"
+	55	"adAllControl"
+	56	"FileReplace"
+	57	"fileReplace"
+	58	"StoryUpdate"
+	59	"story_update"
+	60	"GeneralConf"
+	61	"general_conf_new"
+	62	"Bulletin"
+	63	"bulletin"
+	64	"BulletinLanguage"
+	65	"bulletinLanguage"
+	66	"TimeLimitGift"
+	67	"timeLimitGift"
+	68	"EnergyGift"
+	69	"energyGift"
+	70	"ItemGift"
+	71	"itemGift"
+	72	"WeeklyGift"
+	73	"weeklyGift"
+	74	"Survey"
+	75	"questionnaire"
+	76	"UpcomingEvent"
+	77	"upcoming_event"
+	78	"UpcomingEventNew"
+	79	"upcoming_event_new"
+	80	"ChainGift"
+	81	"chainGift"
+	82	"GrowthFund"
+	83	"growthFund"
+	84	"ReturnUserRewards"
+	85	"returnUser_rewards"
+	86	"NewWeeklyGift"
+	87	"newWeeklyGift"
+	88	"Invitation"
+	89	"invite_minigame"
+	90	"GameClub"
+	91	"game_club_control"
+	92	"levelupGift"
+	93	"LoginRandomBuff"
+	94	"TriStageGift"
+	95	"tristage_gift"
+	96	"ChainEnergy"
+	97	"chainEnergy"
+	98	"OrderBuffConfig"
+	99	"order_buff_config"
+	100	"EnergyBoostCost"
+	101	"energy_boost_cost"
+	102	"OnePlusNGift"
+	103	"onePlusNGift"
+	104	"RandomRewardContent"
+	105	"randomRewardContent"
+	106	"AccountBinding"
+	107	"accountBinding"
+	108	"CustomizeCard"
+	109	"customizeCardGift"
+	110	"EnergyGemOffer"
+	111	"energyGemOffer"
+	112	"ChopGift"
+	113	"chopGift"
+	114	"CoconutPacket"
+	115	"coconut_packet"
+	116	"PlaneRewardContent"
+	117	"planeContentConfig"
+	118	"NewReturnReward"
+	119	"newReturnRewardConfig"
+	120	"RaccoonRewardConfig"
+	121	"raccoonRewardConfig"
+	122	"OrderBoostProRewardConfig"
+	123	"orderBoostProRewardConfig"
+	124	"TaskGoldCostConfig"
+	125	"taskGoldCostConfig"
+	126	"PlentyGift"
+	127	"plentyGift"
+	128	"AgeCompliance"
+	129	"ageCompliance"
+	130	"DiscoContentConfig"
+	131	"discoContentConfig"
+	132	"SpinRandomReward"
+	133	"spinRandomReward"
+	134	"BubbleDecreaseConfig"
+	135	"bubbleDecreaseConfig"
+	136	"WxIosPayment"
+	137	"wxIosPayment"
+	138	"OnePlusFourGift"
+	139	"onePlusFourGift"
+	140	"ChannelEventRestoreConfig"
+	141	"spOfferCodes"
+	142	"nChooseOneReward"
+	143	"orderBoostExtraRewardConfig"
+	144	"EGeneralConfType"
+	145	"AntiMisTouch"
+	146	"anti_mistouch"
+	147	"CGControl"
+	148	"cg_control"
+	149	"TaskPriceIncrease"
+	150	"task_price_increase"
+	151	"WinterDecorate"
+	152	"winter_decorate"
+	153	"CharacterIntimacy"
+	154	"character_intimacy"
+	155	"CharacterIntimacyOrder"
+	156	"intimacy_customer"
+	157	"IOSUpdateHint"
+	158	"iosUpdateHint"
+	159	"StarterBundle"
+	160	"starter_bundle"
+	161	"BubbleBuyBonus"
+	162	"bubble_buy_bonus"
+	163	"InventoryMoreSlot"
+	164	"inventory_moreslot"
+	165	"BubbleConfirm"
+	166	"bubble_confirm"
+	167	"InventoryConfirm"
+	168	"inventory_confirm"
+	169	"EnergyBoost"
+	170	"energy_boost"
+	171	"RecallOrder"
+	172	"recall_order"
+	173	"OrderRandomCreate"
+	174	"order_opt"
+	175	"NewUserFreeEnergyCount"
+	176	"newuser_free_energy_count"
+	177	"ShopItemFlashSale"
+	178	"shopitem_flashsale"
+	179	"GameSpeed"
+	180	"game_speed"
+	181	"JumpToShopWindowWhenLackGem"
+	182	"lack_gem_jump_shop"
+	183	"TimelineSkip"
+	184	"timelineSkip"
+	185	"BuyEnergyBp"
+	186	"buy_energy_bp"
+	187	"BubbleOrderBonus"
+	188	"bubble_order_bonus"
+	189	"ShopNewType"
+	190	"shop_new_type"
+	191	"FacebookSetting"
+	192	"facebook_setting"
+	193	"NewUserSaveProgress"
+	194	"newuser_save_progress"
+	195	"DeleteFirstTimeline"
+	196	"delete_first_timeline"
+	197	"NotificationOnRewardNum"
+	198	"notification_on_reward"
+	199	"WechatFollowUs"
+	200	"wechat_follow_us"
+	201	"JackOrder"
+	202	"jack_order"
+	203	"BuyAnimationOptimazation"
+	204	"buy_animation_opt"
+	205	"ClickEffectOn"
+	206	"touch_effect"
+	207	"ScreenEffect"
+	208	"scene_effect"
+	209	"WechatAddMyPrograms"
+	210	"wechat_add_my_programs"
+	211	"WechatAddHomescreenPop"
+	212	"wechat_add_homescreen_pop"
+	213	"TiktokAddHomescreenIcon"
+	214	"tiktok_add_homescreen_icon"
+	215	"NotifyTiktok"
+	216	"notify_tiktok"
+	217	"EnableIAP"
+	218	"all_gift_switch"
+	219	"EnergyBoostLevel"
+	220	"energy_boost_tap"
+	221	"RedemptionCode"
+	222	"redemption_code"
+	223	"TiktokNavigateToScene"
+	224	"tiktok_navigate_to_scene"
+	225	"IconFolder"
+	226	"icon_folder"
+	227	"DYVideoRecord"
+	228	"tiktok_game_recorder"
+	229	"NewUserGem"
+	230	"newuser_gem_num"
+	231	"ResourceCollectHint"
+	232	"resource_collect_hint"
+	233	"MotherItemHint"
+	234	"mother_item_hint"
+	235	"DisableRestartByTime"
+	236	"disable_restart_by_time"
+	237	"StrongNetworkEnterForeground"
+	238	"strong_network_enter_foreground"
+	239	"AdPrivacyOpen"
+	240	"adPrivacyOpen"
+	241	"Vibration"
+	242	"vibration"
+	243	"NoticeLessPopup"
+	244	"notice_popup_less"
+	245	"ServeButtonPositionType"
+	246	"serve_button_position"
+	247	"story_recap"
+	248	"OptionalWindowMaxCountInPopupPeriod"
+	249	"popup_max"
+	250	"OrderPositionOpt"
+	251	"order_position_opt"
+	252	"BubbleOrderDecrease"
+	253	"bubble_order_decrease"
+	254	"BubbleChainDecreaseLevel"
+	255	"bubble_chain_decrease_level"
+	256	"BubbleChainDecreaseRatio"
+	257	"bubble_chain_decrease_ratio"
+	258	"IconBoard"
+	259	"icon_board"
+	260	"ItemInfoShowNum"
+	261	"item_info_show_num"
+	262	"CloseUdp"
+	263	"closeUdp"
+	264	"AutoSelectConflictData"
+	265	"auto_select_conflict_data"
+	266	"RevertDouYinGem"
+	267	"revert_douyin_gem"
+	268	"DisableDouYinFeed"
+	269	"disable_douyin_feed"
+	270	"EnableAlipayBean"
+	271	"alipay_ios_coin"
+	272	"ShopFlashItemRefreshTime"
+	273	"shop_item_refresh_time"
+	274	"OrderBoostHint"
+	275	"order_boost_hint"
+	276	"DisableItemViewPool"
+	277	"disable_item_pool"
+	278	"EnergyBoostEight"
+	279	"energy_boost_eight"
+	280	"ScoreRaceHint"
+	281	"score_race_pass_hint"
+	282	"ScoreRaceForce"
+	283	"score_race_force"
+	284	"NewReturnRewardActive"
+	285	"newReturn"
+	286	"AliPaySetHomeRevisit"
+	287	"alipay_revisit_show"
+	288	"AliPayRevisitLimit"
+	289	"alipay_revisit_limit"
+	290	"AliPayAddHomeScreen"
+	291	"alipay_add_homescreen"
+	292	"OrderBoostPro"
+	293	"orderBoostPro"
+	294	"GemDetailShow"
+	295	"gem_detail_show"
+	296	"GemLawShow"
+	297	"gem_law_show"
+	298	"EnergyUpload"
+	299	"energy_upload"
+	300	"InventoryRowAdd"
+	301	"inventory_row_add"
+	302	"WXSyncStorage"
+	303	"wx_sync_storage"
+	304	"LoadingViewTimelimit"
+	305	"loadingViewTimelimit"
+	306	"TaskGoldCostControl"
+	307	"task_gold_cost_control"
+	308	"TempItemTriggerAdvanced"
+	309	"temp_item_trigger_advanced"
+	310	"ShowItemrewardDisplayWindow"
+	311	"multi_item_reward_window"
+	312	"ItemBubbleDuration"
+	313	"bubble_duration"
+	314	"AlbumPackOpenNext"
+	315	"pack_open_next"
+	316	"AutoOpenMainTaskWindow"
+	317	"task_window_auto"
+	318	"BGMSwitch"
+	319	"bgm_switch"
+	320	"WeeklyActiveBonusStar"
+	321	"weekly_active_bonus_star"
+	322	"UploadGap"
+	323	"upload_gap"
+	324	"CookingFrenzyLight"
+	325	"cookingfrenzy_light"
+	326	"NotificationFirstTime"
+	327	"notification_firsttime"
+	328	"NotificationPopup"
+	329	"notification_popup"
+	330	"NotificationCooldown"
+	331	"notification_cooldown"
+	332	"NotificationContent"
+	333	"notification_content"
+	334	"NotificationAppRed"
+	335	"notification_appred"
+	336	"RewardStockCount"
+	337	"reward_stock_count"
+	338	"ItemRewardIntelligent"
+	339	"item_reward_intelligent"
+	340	"OrderDiffDynamic"
+	341	"order_diff_dynamic"
+	342	"SlotOrderNew"
+	343	"slot_order_new"
+	344	"InventoryOrder"
+	345	"inventory_order"
+	346	"RankByTimeDesc"
+	347	"rank_bytime_desc"
+	348	"DataUploadNew"
+	349	"data_upload_new"
+	350	"ItemLandOpt"
+	351	"item_land_opt"
+	352	"BubbleDecrease"
+	353	"bubble_purchase_decrease"
+	354	"GeneratorFactory"
+	355	"generator_factory"
+	356	"NewUserTimeline"
+	357	"newuser_timeline"
+	358	"AdjustLuckyProduceBoostRatio"
+	359	"adjust_lucky_produce_boost_ratio"
+	360	"NewReturnUserExperience"
+	361	"return_user_new"
+	362	"FishNetProduceSmart"
+	363	"fish_net_produce_smart"
+	364	"CanRestoreButtonShow"
+	365	"restore_purchases_switch"
+	366	"NoEnergyGiftGem"
+	367	"no_energy_gift_gem"
+	368	"NoEnergyGiftCoolDown"
+	369	"no_energy_gift_cooldown"
+	370	"AutoSpreadToCache"
+	371	"spread_cache"
+	372	"cardItemStack"
+	373	"card_item_stack"
+	374	"ConfNewGenerator"
+	375	"conf_new_generator"
+	376	"key"
+	377	"value"
+	378	"ConfigModel"
+	379	"__index"
+	380	"EGeneralConfigParam"
+	381	"Int"
+	382	"param_int"
+	383	"Float"
+	384	"param_float"
+	385	"String"
+	386	"param_string"
+	387	"llETime"
+	388	"eTime"
+	389	"llRTime"
+	390	"rTime"
+	391	"GetReplacesFilePath"
+	392	"Init"
+	393	"LoadConfigs"
+	394	"GetLocalConfig"
+	395	"GetServerConfig"
+	396	"GetServerConfigMD5"
+	397	"UpdateServerConfigs"
+	398	"GetSeverConfigEntries"
+	399	"ConfigModel"
+	400	"GetAntiMisTouchDuration"
+	401	"ConfigModel"
+	402	"GetCGPath"
+	403	"ConfigModel"
+	404	"CanPlaySceneCG"
+	405	"ConfigModel"
+	406	"GetTaskPriceIncreaseCfg"
+	407	"ConfigModel"
+	408	"GetLawUrl"
+	409	"ConfigModel"
+	410	"UseWinterUI"
+	411	"UseSnowScene"
+	412	"GetCharacterIntimacyParams"
+	413	"ConfigModel"
+	414	"IsCharacterIntimacyOrderOpen"
+	415	"HasBubbleBuyBonus"
+	416	"GetCustomItemBubbleCountdown"
+	417	"ConfigModel"
+	418	"IsStarterBundleEnable"
+	419	"IsReturnUserRewardOpen"
+	420	"GetEnergyBoostType"
+	421	"IsJumpToShopWindowWhenLackGem"
+	422	"GetGameSpeed"
+	423	"ConfigModel"
+	424	"IsTimelineSkipOpen"
+	425	"HasBubbleOrderBonus"
+	426	"ShowNewUserSaveProgress"
+	427	"IsFollowUsOpen"
+	428	"ConfigModel"
+	429	"IsPlayerGroupOpen"
+	430	"ConfigModel"
+	431	"GetPlayerGroupQRCodeUrl"
+	432	"ConfigModel"
+	433	"IsShopNewType"
+	434	"IsNewShopRule"
+	435	"IsClickEffectOpen"
+	436	"IsIAPEnabled"
+	437	"IsDYSubscriptionOpen"
+	438	"IsDYVideoRecorderOpen"
+	439	"IsDYVideoRecorderDailyRewardOpen"
+	440	"IsVibrateServerControlOpen"
+	441	"IsUsingOrderButtonNewPositionType"
+	442	"GetOptionalWindowMaxCountInPopupPeriod"
+	443	"ConfigModel"
+	444	"IsOrderPositionOpt"
+	445	"IsNewUserTimeline"
+	446	"IsNewUserTimelineConfigEnable"
+	447	"GetGeneralConfByType"
+	448	"ConfigModel"
+	449	"IsServerControlOpen"
+	450	"IsScreenEffectOpen"
+	451	"GetShopFlashItemRefreshTime"
+	452	"GetAliPayRevisitCount"
+	453	"ConfigModel"
+	454	"_UpdateGeneralConfigInfo"
+	455	"LoadDynamicConfigAsync"
+	456	"GetOrderBoostProConfig"
+	457	"ConfigModel"
+	458	"CanInventoryShowMoreSlot"
+	459	"ConfigModel"
+	460	"WaitForStorageBeforeExitGame"
+	461	"ConfigModel"
+	462	"GetLoadingViewTimeLimit"
+	463	"IsBGMSwitchOpen"
+	464	"IsNewReturnExperienceOpen"
+locals (2) for 0000029D739CEE80:
+	0	DBKEY	339	659
+	1	DBVALUE	340	659
+upvalues (1) for 0000029D739CEE80:
+	0	_ENV	1	0
+
+function <ConfigModel.lua:415,432> (38 instructions at 0000029D739CF0E0)
+3 params, 12 slots, 1 upvalue, 10 locals, 12 constants, 0 functions
+	1	[416]	MOVE     	3 1
+	2	[417]	GETTABUP 	4 0 -1	; _ENV "StringUtil"
+	3	[417]	GETTABLE 	4 4 -2	; "rFindChar"
+	4	[417]	MOVE     	5 1
+	5	[417]	TESTSET  	6 2 1
+	6	[417]	JMP      	0 1	; to 8
+	7	[417]	LOADK    	6 -3	; "/"
+	8	[417]	CALL     	4 3 2
+	9	[418]	EQ       	1 4 -4	; - nil
+	10	[418]	JMP      	0 6	; to 17
+	11	[419]	GETTABUP 	5 0 -5	; _ENV "string"
+	12	[419]	GETTABLE 	5 5 -6	; "sub"
+	13	[419]	MOVE     	6 1
+	14	[419]	ADD      	7 4 -7	; - 1
+	15	[419]	CALL     	5 3 2
+	16	[419]	MOVE     	3 5
+	17	[422]	SELF     	5 0 -8	; "GetServerConfig"
+	18	[422]	GETTABUP 	7 0 -9	; _ENV "ServerConfigKey"
+	19	[422]	GETTABLE 	7 7 -10	; "FileReplace"
+	20	[422]	CALL     	5 3 2
+	21	[423]	TEST     	5 0
+	22	[423]	JMP      	0 14	; to 37
+	23	[424]	LOADK    	6 -7	; 1
+	24	[424]	LEN      	7 5
+	25	[424]	LOADK    	8 -7	; 1
+	26	[424]	FORPREP  	6 9	; to 36
+	27	[425]	GETTABLE 	10 5 9
+	28	[425]	GETTABLE 	10 10 -11	; "file"
+	29	[425]	EQ       	0 10 3
+	30	[425]	JMP      	0 5	; to 36
+	31	[426]	MOVE     	10 1
+	32	[426]	GETTABLE 	11 5 9
+	33	[426]	GETTABLE 	11 11 -12	; "suffix"
+	34	[426]	CONCAT   	10 10 11
+	35	[426]	RETURN   	10 2
+	36	[424]	FORLOOP  	6 -10	; to 27
+	37	[431]	RETURN   	1 2
+	38	[432]	RETURN   	0 1
+constants (12) for 0000029D739CF0E0:
+	1	"StringUtil"
+	2	"rFindChar"
+	3	"/"
+	4	nil
+	5	"string"
+	6	"sub"
+	7	1
+	8	"GetServerConfig"
+	9	"ServerConfigKey"
+	10	"FileReplace"
+	11	"file"
+	12	"suffix"
+locals (10) for 0000029D739CF0E0:
+	0	self	1	39
+	1	path	1	39
+	2	separator	1	39
+	3	fileName	2	39
+	4	lastSepIndex	9	39
+	5	config	21	39
+	6	(for index)	26	37
+	7	(for limit)	26	37
+	8	(for step)	26	37
+	9	i	27	36
+upvalues (1) for 0000029D739CF0E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:434,445> (29 instructions at 0000029D739DB910)
+1 param, 5 slots, 3 upvalues, 3 locals, 13 constants, 0 functions
+	1	[435]	GETTABUP 	1 0 -2	; _ENV "GM"
+	2	[435]	GETTABLE 	1 1 -3	; "DBTableManager"
+	3	[435]	SELF     	1 1 -4	; "GetTable"
+	4	[435]	GETTABUP 	3 0 -5	; _ENV "EDBTableConfigs"
+	5	[435]	GETTABLE 	3 3 -6	; "Config"
+	6	[435]	CALL     	1 3 2
+	7	[435]	SETTABLE 	0 -1 1	; "m_dbTable" -
+	8	[437]	NEWTABLE 	1 0 0
+	9	[437]	SETTABLE 	0 -7 1	; "m_serverConfigs" -
+	10	[438]	NEWTABLE 	1 0 0
+	11	[438]	SETTABLE 	0 -8 1	; "m_generalConfigs" -
+	12	[439]	GETTABLE 	1 0 -1	; "m_dbTable"
+	13	[439]	SELF     	1 1 -9	; "GetValue"
+	14	[439]	GETUPVAL 	3 1	; DBKEY
+	15	[439]	GETUPVAL 	4 2	; DBVALUE
+	16	[439]	CALL     	1 4 2
+	17	[439]	TEST     	1 1
+	18	[439]	JMP      	0 1	; to 20
+	19	[439]	LOADK    	1 -10	; ""
+	20	[440]	GETTABUP 	2 0 -11	; _ENV "json"
+	21	[440]	GETTABLE 	2 2 -12	; "decode"
+	22	[440]	MOVE     	3 1
+	23	[440]	CALL     	2 2 2
+	24	[441]	TEST     	2 0
+	25	[441]	JMP      	0 3	; to 29
+	26	[442]	SETTABLE 	0 -7 2	; "m_serverConfigs" -
+	27	[443]	SELF     	3 0 -13	; "_UpdateGeneralConfigInfo"
+	28	[443]	CALL     	3 2 1
+	29	[445]	RETURN   	0 1
+constants (13) for 0000029D739DB910:
+	1	"m_dbTable"
+	2	"GM"
+	3	"DBTableManager"
+	4	"GetTable"
+	5	"EDBTableConfigs"
+	6	"Config"
+	7	"m_serverConfigs"
+	8	"m_generalConfigs"
+	9	"GetValue"
+	10	""
+	11	"json"
+	12	"decode"
+	13	"_UpdateGeneralConfigInfo"
+locals (3) for 0000029D739DB910:
+	0	self	1	30
+	1	data	20	30
+	2	cacheServerConfig	24	30
+upvalues (3) for 0000029D739DB910:
+	0	_ENV	0	0
+	1	DBKEY	1	0
+	2	DBVALUE	1	1
+
+function <ConfigModel.lua:447,554> (490 instructions at 0000029D739DDB80)
+1 param, 11 slots, 1 upvalue, 56 locals, 113 constants, 0 functions
+	1	[448]	NEWTABLE 	1 0 0
+	2	[448]	SETTABLE 	0 -1 1	; "m_configs" -
+	3	[450]	GETTABUP 	1 0 -2	; _ENV "require"
+	4	[450]	LOADK    	2 -3	; "Data.Config.ItemModelConfig"
+	5	[450]	CALL     	1 2 2
+	6	[452]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	7	[452]	GETTABUP 	3 0 -5	; _ENV "AdventureActivityDefinition"
+	8	[452]	CALL     	2 2 4
+	9	[452]	JMP      	0 10	; to 20
+	10	[453]	GETTABUP 	7 0 -2	; _ENV "require"
+	11	[453]	LOADK    	8 -6	; "Data.Config."
+	12	[453]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	13	[453]	CONCAT   	8 8 9
+	14	[453]	CALL     	7 2 2
+	15	[454]	GETTABUP 	8 0 -8	; _ENV "Table"
+	16	[454]	GETTABLE 	8 8 -9	; "ListAppend"
+	17	[454]	MOVE     	9 1
+	18	[454]	MOVE     	10 7
+	19	[454]	CALL     	8 3 1
+	20	[452]	TFORCALL 	2 2
+	21	[452]	TFORLOOP 	4 -12	; to 10
+	22	[457]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	23	[457]	GETTABUP 	3 0 -10	; _ENV "MultiboardsActivityDefinition"
+	24	[457]	CALL     	2 2 4
+	25	[457]	JMP      	0 10	; to 36
+	26	[458]	GETTABUP 	7 0 -2	; _ENV "require"
+	27	[458]	LOADK    	8 -6	; "Data.Config."
+	28	[458]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	29	[458]	CONCAT   	8 8 9
+	30	[458]	CALL     	7 2 2
+	31	[459]	GETTABUP 	8 0 -8	; _ENV "Table"
+	32	[459]	GETTABLE 	8 8 -9	; "ListAppend"
+	33	[459]	MOVE     	9 1
+	34	[459]	MOVE     	10 7
+	35	[459]	CALL     	8 3 1
+	36	[457]	TFORCALL 	2 2
+	37	[457]	TFORLOOP 	4 -12	; to 26
+	38	[462]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	39	[462]	GETTABUP 	3 0 -11	; _ENV "FarmboardActivityDefinition"
+	40	[462]	CALL     	2 2 4
+	41	[462]	JMP      	0 10	; to 52
+	42	[463]	GETTABUP 	7 0 -2	; _ENV "require"
+	43	[463]	LOADK    	8 -6	; "Data.Config."
+	44	[463]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	45	[463]	CONCAT   	8 8 9
+	46	[463]	CALL     	7 2 2
+	47	[464]	GETTABUP 	8 0 -8	; _ENV "Table"
+	48	[464]	GETTABLE 	8 8 -9	; "ListAppend"
+	49	[464]	MOVE     	9 1
+	50	[464]	MOVE     	10 7
+	51	[464]	CALL     	8 3 1
+	52	[462]	TFORCALL 	2 2
+	53	[462]	TFORLOOP 	4 -12	; to 42
+	54	[467]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	55	[467]	GETTABUP 	3 0 -12	; _ENV "FreefallActivityDefinition"
+	56	[467]	CALL     	2 2 4
+	57	[467]	JMP      	0 10	; to 68
+	58	[468]	GETTABUP 	7 0 -2	; _ENV "require"
+	59	[468]	LOADK    	8 -6	; "Data.Config."
+	60	[468]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	61	[468]	CONCAT   	8 8 9
+	62	[468]	CALL     	7 2 2
+	63	[469]	GETTABUP 	8 0 -8	; _ENV "Table"
+	64	[469]	GETTABLE 	8 8 -9	; "ListAppend"
+	65	[469]	MOVE     	9 1
+	66	[469]	MOVE     	10 7
+	67	[469]	CALL     	8 3 1
+	68	[467]	TFORCALL 	2 2
+	69	[467]	TFORLOOP 	4 -12	; to 58
+	70	[472]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	71	[472]	GETTABUP 	3 0 -13	; _ENV "BreakDefinition"
+	72	[472]	CALL     	2 2 4
+	73	[472]	JMP      	0 10	; to 84
+	74	[473]	GETTABUP 	7 0 -2	; _ENV "require"
+	75	[473]	LOADK    	8 -6	; "Data.Config."
+	76	[473]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	77	[473]	CONCAT   	8 8 9
+	78	[473]	CALL     	7 2 2
+	79	[474]	GETTABUP 	8 0 -8	; _ENV "Table"
+	80	[474]	GETTABLE 	8 8 -9	; "ListAppend"
+	81	[474]	MOVE     	9 1
+	82	[474]	MOVE     	10 7
+	83	[474]	CALL     	8 3 1
+	84	[472]	TFORCALL 	2 2
+	85	[472]	TFORLOOP 	4 -12	; to 74
+	86	[477]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	87	[477]	GETTABUP 	3 0 -14	; _ENV "MapExploreActivityDefinition"
+	88	[477]	CALL     	2 2 4
+	89	[477]	JMP      	0 10	; to 100
+	90	[478]	GETTABUP 	7 0 -2	; _ENV "require"
+	91	[478]	LOADK    	8 -6	; "Data.Config."
+	92	[478]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	93	[478]	CONCAT   	8 8 9
+	94	[478]	CALL     	7 2 2
+	95	[479]	GETTABUP 	8 0 -8	; _ENV "Table"
+	96	[479]	GETTABLE 	8 8 -9	; "ListAppend"
+	97	[479]	MOVE     	9 1
+	98	[479]	MOVE     	10 7
+	99	[479]	CALL     	8 3 1
+	100	[477]	TFORCALL 	2 2
+	101	[477]	TFORLOOP 	4 -12	; to 90
+	102	[482]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	103	[482]	GETTABUP 	3 0 -15	; _ENV "StickerboardActivityDefinition"
+	104	[482]	CALL     	2 2 4
+	105	[482]	JMP      	0 10	; to 116
+	106	[483]	GETTABUP 	7 0 -2	; _ENV "require"
+	107	[483]	LOADK    	8 -6	; "Data.Config."
+	108	[483]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	109	[483]	CONCAT   	8 8 9
+	110	[483]	CALL     	7 2 2
+	111	[484]	GETTABUP 	8 0 -8	; _ENV "Table"
+	112	[484]	GETTABLE 	8 8 -9	; "ListAppend"
+	113	[484]	MOVE     	9 1
+	114	[484]	MOVE     	10 7
+	115	[484]	CALL     	8 3 1
+	116	[482]	TFORCALL 	2 2
+	117	[482]	TFORLOOP 	4 -12	; to 106
+	118	[487]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	119	[487]	GETTABUP 	3 0 -16	; _ENV "DigActivityDefinition"
+	120	[487]	CALL     	2 2 4
+	121	[487]	JMP      	0 10	; to 132
+	122	[488]	GETTABUP 	7 0 -2	; _ENV "require"
+	123	[488]	LOADK    	8 -6	; "Data.Config."
+	124	[488]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	125	[488]	CONCAT   	8 8 9
+	126	[488]	CALL     	7 2 2
+	127	[489]	GETTABUP 	8 0 -8	; _ENV "Table"
+	128	[489]	GETTABLE 	8 8 -9	; "ListAppend"
+	129	[489]	MOVE     	9 1
+	130	[489]	MOVE     	10 7
+	131	[489]	CALL     	8 3 1
+	132	[487]	TFORCALL 	2 2
+	133	[487]	TFORLOOP 	4 -12	; to 122
+	134	[492]	GETTABUP 	2 0 -4	; _ENV "pairs"
+	135	[492]	GETTABUP 	3 0 -17	; _ENV "PureBoardActivityDefinition"
+	136	[492]	CALL     	2 2 4
+	137	[492]	JMP      	0 10	; to 148
+	138	[493]	GETTABUP 	7 0 -2	; _ENV "require"
+	139	[493]	LOADK    	8 -6	; "Data.Config."
+	140	[493]	GETTABLE 	9 6 -7	; "ItemModelConfigName"
+	141	[493]	CONCAT   	8 8 9
+	142	[493]	CALL     	7 2 2
+	143	[494]	GETTABUP 	8 0 -8	; _ENV "Table"
+	144	[494]	GETTABLE 	8 8 -9	; "ListAppend"
+	145	[494]	MOVE     	9 1
+	146	[494]	MOVE     	10 7
+	147	[494]	CALL     	8 3 1
+	148	[492]	TFORCALL 	2 2
+	149	[492]	TFORLOOP 	4 -12	; to 138
+	150	[497]	GETTABLE 	2 0 -1	; "m_configs"
+	151	[497]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	152	[497]	GETTABLE 	3 3 -19	; "ItemModel"
+	153	[497]	SETTABLE 	2 3 1
+	154	[499]	GETTABLE 	2 0 -1	; "m_configs"
+	155	[499]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	156	[499]	GETTABLE 	3 3 -20	; "Level"
+	157	[499]	GETTABUP 	4 0 -2	; _ENV "require"
+	158	[499]	LOADK    	5 -21	; "Data.Config.LevelConfig"
+	159	[499]	CALL     	4 2 2
+	160	[499]	SETTABLE 	2 3 4
+	161	[500]	GETTABLE 	2 0 -1	; "m_configs"
+	162	[500]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	163	[500]	GETTABLE 	3 3 -22	; "BoardPrompt"
+	164	[500]	GETTABUP 	4 0 -2	; _ENV "require"
+	165	[500]	LOADK    	5 -23	; "Data.Config.BoardPromptConfig"
+	166	[500]	CALL     	4 2 2
+	167	[500]	SETTABLE 	2 3 4
+	168	[501]	GETTABLE 	2 0 -1	; "m_configs"
+	169	[501]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	170	[501]	GETTABLE 	3 3 -24	; "Bundle"
+	171	[501]	GETTABUP 	4 0 -2	; _ENV "require"
+	172	[501]	LOADK    	5 -25	; "Data.Config.BundleConfig"
+	173	[501]	CALL     	4 2 2
+	174	[501]	SETTABLE 	2 3 4
+	175	[502]	GETTABLE 	2 0 -1	; "m_configs"
+	176	[502]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	177	[502]	GETTABLE 	3 3 -26	; "MapBorder"
+	178	[502]	GETTABUP 	4 0 -2	; _ENV "require"
+	179	[502]	LOADK    	5 -27	; "Data.Config.MapBorderConfig"
+	180	[502]	CALL     	4 2 2
+	181	[502]	SETTABLE 	2 3 4
+	182	[503]	GETTABLE 	2 0 -1	; "m_configs"
+	183	[503]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	184	[503]	GETTABLE 	3 3 -28	; "CharacterIntimacyDialog"
+	185	[503]	GETTABUP 	4 0 -2	; _ENV "require"
+	186	[503]	LOADK    	5 -29	; "Data.Config.CharacterIntimacyDialogConfig"
+	187	[503]	CALL     	4 2 2
+	188	[503]	SETTABLE 	2 3 4
+	189	[504]	GETTABLE 	2 0 -1	; "m_configs"
+	190	[504]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	191	[504]	GETTABLE 	3 3 -30	; "CharacterIntimacyCoinToGift"
+	192	[504]	GETTABUP 	4 0 -2	; _ENV "require"
+	193	[504]	LOADK    	5 -31	; "Data.Config.CharacterIntimacyCoinToGiftConfig"
+	194	[504]	CALL     	4 2 2
+	195	[504]	SETTABLE 	2 3 4
+	196	[505]	GETTABLE 	2 0 -1	; "m_configs"
+	197	[505]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	198	[505]	GETTABLE 	3 3 -32	; "CharacterIntimacyGift"
+	199	[505]	GETTABUP 	4 0 -2	; _ENV "require"
+	200	[505]	LOADK    	5 -33	; "Data.Config.CharacterIntimacyGiftConfig"
+	201	[505]	CALL     	4 2 2
+	202	[505]	SETTABLE 	2 3 4
+	203	[506]	GETTABLE 	2 0 -1	; "m_configs"
+	204	[506]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	205	[506]	GETTABLE 	3 3 -34	; "CharacterIntimacyLevel"
+	206	[506]	GETTABUP 	4 0 -2	; _ENV "require"
+	207	[506]	LOADK    	5 -35	; "Data.Config.CharacterIntimacyLevelConfig"
+	208	[506]	CALL     	4 2 2
+	209	[506]	SETTABLE 	2 3 4
+	210	[507]	GETTABLE 	2 0 -1	; "m_configs"
+	211	[507]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	212	[507]	GETTABLE 	3 3 -36	; "CharacterIntimacyList"
+	213	[507]	GETTABUP 	4 0 -2	; _ENV "require"
+	214	[507]	LOADK    	5 -37	; "Data.Config.CharacterIntimacyListConfig"
+	215	[507]	CALL     	4 2 2
+	216	[507]	SETTABLE 	2 3 4
+	217	[508]	GETTABLE 	2 0 -1	; "m_configs"
+	218	[508]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	219	[508]	GETTABLE 	3 3 -38	; "CharacterIntimacyShop"
+	220	[508]	GETTABUP 	4 0 -2	; _ENV "require"
+	221	[508]	LOADK    	5 -39	; "Data.Config.CharacterIntimacyShopConfig"
+	222	[508]	CALL     	4 2 2
+	223	[508]	SETTABLE 	2 3 4
+	224	[509]	GETTABLE 	2 0 -1	; "m_configs"
+	225	[509]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	226	[509]	GETTABLE 	3 3 -40	; "FunctionEnable"
+	227	[509]	GETTABUP 	4 0 -2	; _ENV "require"
+	228	[509]	LOADK    	5 -41	; "Data.Config.FunctionEnableConfig"
+	229	[509]	CALL     	4 2 2
+	230	[509]	SETTABLE 	2 3 4
+	231	[510]	GETTABLE 	2 0 -1	; "m_configs"
+	232	[510]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	233	[510]	GETTABLE 	3 3 -42	; "InventorySlot"
+	234	[510]	GETTABUP 	4 0 -2	; _ENV "require"
+	235	[510]	LOADK    	5 -43	; "Data.Config.InventorySlotConfig"
+	236	[510]	CALL     	4 2 2
+	237	[510]	SETTABLE 	2 3 4
+	238	[511]	GETTABLE 	2 0 -1	; "m_configs"
+	239	[511]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	240	[511]	GETTABLE 	3 3 -44	; "ItemProperty"
+	241	[511]	GETTABUP 	4 0 -2	; _ENV "require"
+	242	[511]	LOADK    	5 -45	; "Data.Config.ItemPropertyConfig"
+	243	[511]	CALL     	4 2 2
+	244	[511]	SETTABLE 	2 3 4
+	245	[512]	GETTABLE 	2 0 -1	; "m_configs"
+	246	[512]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	247	[512]	GETTABLE 	3 3 -46	; "ItemView"
+	248	[512]	GETTABUP 	4 0 -2	; _ENV "require"
+	249	[512]	LOADK    	5 -47	; "Data.Config.ItemViewConfig"
+	250	[512]	CALL     	4 2 2
+	251	[512]	SETTABLE 	2 3 4
+	252	[513]	GETTABLE 	2 0 -1	; "m_configs"
+	253	[513]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	254	[513]	GETTABLE 	3 3 -48	; "MainTask"
+	255	[513]	GETTABUP 	4 0 -2	; _ENV "require"
+	256	[513]	LOADK    	5 -49	; "Data.Config.MainTaskConfig"
+	257	[513]	CALL     	4 2 2
+	258	[513]	SETTABLE 	2 3 4
+	259	[514]	GETTABLE 	2 0 -1	; "m_configs"
+	260	[514]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	261	[514]	GETTABLE 	3 3 -50	; "OrderAvatar"
+	262	[514]	GETTABUP 	4 0 -2	; _ENV "require"
+	263	[514]	LOADK    	5 -51	; "Data.Config.OrderAvatarConfig"
+	264	[514]	CALL     	4 2 2
+	265	[514]	SETTABLE 	2 3 4
+	266	[515]	GETTABLE 	2 0 -1	; "m_configs"
+	267	[515]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	268	[515]	GETTABLE 	3 3 -52	; "OrderFixed"
+	269	[515]	GETTABUP 	4 0 -2	; _ENV "require"
+	270	[515]	LOADK    	5 -53	; "Data.Config.OrderFixedConfig"
+	271	[515]	CALL     	4 2 2
+	272	[515]	SETTABLE 	2 3 4
+	273	[516]	GETTABLE 	2 0 -1	; "m_configs"
+	274	[516]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	275	[516]	GETTABLE 	3 3 -54	; "OrderItem"
+	276	[516]	GETTABUP 	4 0 -2	; _ENV "require"
+	277	[516]	LOADK    	5 -55	; "Data.Config.OrderItemConfig"
+	278	[516]	CALL     	4 2 2
+	279	[516]	SETTABLE 	2 3 4
+	280	[517]	GETTABLE 	2 0 -1	; "m_configs"
+	281	[517]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	282	[517]	GETTABLE 	3 3 -56	; "OrderItemNumberWeight"
+	283	[517]	GETTABUP 	4 0 -2	; _ENV "require"
+	284	[517]	LOADK    	5 -57	; "Data.Config.OrderItemNumberWeightConfig"
+	285	[517]	CALL     	4 2 2
+	286	[517]	SETTABLE 	2 3 4
+	287	[518]	GETTABLE 	2 0 -1	; "m_configs"
+	288	[518]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	289	[518]	GETTABLE 	3 3 -58	; "OrderRandom"
+	290	[518]	GETTABUP 	4 0 -2	; _ENV "require"
+	291	[518]	LOADK    	5 -59	; "Data.Config.OrderRandomConfig"
+	292	[518]	CALL     	4 2 2
+	293	[518]	SETTABLE 	2 3 4
+	294	[519]	GETTABLE 	2 0 -1	; "m_configs"
+	295	[519]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	296	[519]	GETTABLE 	3 3 -60	; "OrderRandomReCall"
+	297	[519]	GETTABUP 	4 0 -2	; _ENV "require"
+	298	[519]	LOADK    	5 -61	; "Data.Config.OrderRandomRecallConfig"
+	299	[519]	CALL     	4 2 2
+	300	[519]	SETTABLE 	2 3 4
+	301	[520]	GETTABLE 	2 0 -1	; "m_configs"
+	302	[520]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	303	[520]	GETTABLE 	3 3 -62	; "OrderSpecial"
+	304	[520]	GETTABUP 	4 0 -2	; _ENV "require"
+	305	[520]	LOADK    	5 -63	; "Data.Config.OrderSpecialConfig"
+	306	[520]	CALL     	4 2 2
+	307	[520]	SETTABLE 	2 3 4
+	308	[521]	GETTABLE 	2 0 -1	; "m_configs"
+	309	[521]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	310	[521]	GETTABLE 	3 3 -64	; "OrderBranch"
+	311	[521]	GETTABUP 	4 0 -2	; _ENV "require"
+	312	[521]	LOADK    	5 -65	; "Data.Config.OrderBranchConfig"
+	313	[521]	CALL     	4 2 2
+	314	[521]	SETTABLE 	2 3 4
+	315	[522]	GETTABLE 	2 0 -1	; "m_configs"
+	316	[522]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	317	[522]	GETTABLE 	3 3 -66	; "RoleIdle"
+	318	[522]	GETTABUP 	4 0 -2	; _ENV "require"
+	319	[522]	LOADK    	5 -67	; "Data.Config.RoleIdleConfig"
+	320	[522]	CALL     	4 2 2
+	321	[522]	SETTABLE 	2 3 4
+	322	[523]	GETTABLE 	2 0 -1	; "m_configs"
+	323	[523]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	324	[523]	GETTABLE 	3 3 -68	; "ShopDailyDeals"
+	325	[523]	GETTABUP 	4 0 -2	; _ENV "require"
+	326	[523]	LOADK    	5 -69	; "Data.Config.ShopDailyDealsConfig"
+	327	[523]	CALL     	4 2 2
+	328	[523]	SETTABLE 	2 3 4
+	329	[525]	GETTABLE 	2 0 -1	; "m_configs"
+	330	[525]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	331	[525]	GETTABLE 	3 3 -70	; "ShopSlot"
+	332	[525]	GETTABUP 	4 0 -2	; _ENV "require"
+	333	[525]	LOADK    	5 -71	; "Data.Config.ShopSlotConfig"
+	334	[525]	CALL     	4 2 2
+	335	[525]	SETTABLE 	2 3 4
+	336	[526]	GETTABLE 	2 0 -1	; "m_configs"
+	337	[526]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	338	[526]	GETTABLE 	3 3 -72	; "StorySpeaker"
+	339	[526]	GETTABUP 	4 0 -2	; _ENV "require"
+	340	[526]	LOADK    	5 -73	; "Data.Config.StorySpeakerConfig"
+	341	[526]	CALL     	4 2 2
+	342	[526]	SETTABLE 	2 3 4
+	343	[527]	GETTABLE 	2 0 -1	; "m_configs"
+	344	[527]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	345	[527]	GETTABLE 	3 3 -74	; "System"
+	346	[527]	GETTABUP 	4 0 -2	; _ENV "require"
+	347	[527]	LOADK    	5 -75	; "Data.Config.SystemConfig"
+	348	[527]	CALL     	4 2 2
+	349	[527]	SETTABLE 	2 3 4
+	350	[528]	GETTABLE 	2 0 -1	; "m_configs"
+	351	[528]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	352	[528]	GETTABLE 	3 3 -76	; "NotificationText"
+	353	[528]	GETTABUP 	4 0 -2	; _ENV "require"
+	354	[528]	LOADK    	5 -77	; "Data.Config.NotificationTextConfig"
+	355	[528]	CALL     	4 2 2
+	356	[528]	SETTABLE 	2 3 4
+	357	[529]	GETTABLE 	2 0 -1	; "m_configs"
+	358	[529]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	359	[529]	GETTABLE 	3 3 -78	; "StoryRecap"
+	360	[529]	GETTABUP 	4 0 -2	; _ENV "require"
+	361	[529]	LOADK    	5 -79	; "Data.Config.StoryRecapConfig"
+	362	[529]	CALL     	4 2 2
+	363	[529]	SETTABLE 	2 3 4
+	364	[530]	GETTABLE 	2 0 -1	; "m_configs"
+	365	[530]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	366	[530]	GETTABLE 	3 3 -80	; "LuckyProduce"
+	367	[530]	GETTABUP 	4 0 -2	; _ENV "require"
+	368	[530]	LOADK    	5 -81	; "Data.Config.LuckyProduceConfig"
+	369	[530]	CALL     	4 2 2
+	370	[530]	SETTABLE 	2 3 4
+	371	[531]	GETTABLE 	2 0 -1	; "m_configs"
+	372	[531]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	373	[531]	GETTABLE 	3 3 -82	; "MapSlotInCameraCheckPos"
+	374	[531]	GETTABUP 	4 0 -2	; _ENV "require"
+	375	[531]	LOADK    	5 -83	; "Data.Config.MapSlotInCameraCheckPosConfig"
+	376	[531]	CALL     	4 2 2
+	377	[531]	SETTABLE 	2 3 4
+	378	[532]	GETTABLE 	2 0 -1	; "m_configs"
+	379	[532]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	380	[532]	GETTABLE 	3 3 -84	; "PlaneRewardItem"
+	381	[532]	GETTABUP 	4 0 -2	; _ENV "require"
+	382	[532]	LOADK    	5 -85	; "Data.Config.PlaneRewardItemConfig"
+	383	[532]	CALL     	4 2 2
+	384	[532]	SETTABLE 	2 3 4
+	385	[533]	GETTABLE 	2 0 -1	; "m_configs"
+	386	[533]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	387	[533]	GETTABLE 	3 3 -86	; "RaccoonRewardShowItem"
+	388	[533]	GETTABUP 	4 0 -2	; _ENV "require"
+	389	[533]	LOADK    	5 -87	; "Data.Config.RaccoonRewardItemShowConfig"
+	390	[533]	CALL     	4 2 2
+	391	[533]	SETTABLE 	2 3 4
+	392	[534]	GETTABLE 	2 0 -1	; "m_configs"
+	393	[534]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	394	[534]	GETTABLE 	3 3 -88	; "MergeItemScoreConfig"
+	395	[534]	GETTABUP 	4 0 -2	; _ENV "require"
+	396	[534]	LOADK    	5 -89	; "Data.Config.MergeItemScoreConfig"
+	397	[534]	CALL     	4 2 2
+	398	[534]	SETTABLE 	2 3 4
+	399	[535]	GETTABLE 	2 0 -1	; "m_configs"
+	400	[535]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	401	[535]	GETTABLE 	3 3 -90	; "ChestOrderRandomConfig"
+	402	[535]	GETTABUP 	4 0 -2	; _ENV "require"
+	403	[535]	LOADK    	5 -91	; "Data.Config.ChestOrderRandomConfig"
+	404	[535]	CALL     	4 2 2
+	405	[535]	SETTABLE 	2 3 4
+	406	[536]	GETTABLE 	2 0 -1	; "m_configs"
+	407	[536]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	408	[536]	GETTABLE 	3 3 -92	; "ChestOrderRandomRecallConfig"
+	409	[536]	GETTABUP 	4 0 -2	; _ENV "require"
+	410	[536]	LOADK    	5 -93	; "Data.Config.ChestOrderRandomRecallConfig"
+	411	[536]	CALL     	4 2 2
+	412	[536]	SETTABLE 	2 3 4
+	413	[537]	GETTABLE 	2 0 -1	; "m_configs"
+	414	[537]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	415	[537]	GETTABLE 	3 3 -94	; "MainPaperboxExtraRewardConfig"
+	416	[537]	GETTABUP 	4 0 -2	; _ENV "require"
+	417	[537]	LOADK    	5 -95	; "Data.Config.MainPaperboxExtraRewardConfig"
+	418	[537]	CALL     	4 2 2
+	419	[537]	SETTABLE 	2 3 4
+	420	[538]	GETTABLE 	2 0 -1	; "m_configs"
+	421	[538]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	422	[538]	GETTABLE 	3 3 -96	; "TutoriaiOrderConfig"
+	423	[538]	GETTABUP 	4 0 -2	; _ENV "require"
+	424	[538]	LOADK    	5 -97	; "Data.Config.NewItemOrderConfig"
+	425	[538]	CALL     	4 2 2
+	426	[538]	SETTABLE 	2 3 4
+	427	[539]	GETTABLE 	2 0 -1	; "m_configs"
+	428	[539]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	429	[539]	GETTABLE 	3 3 -98	; "GeneratorBoostItemModel"
+	430	[539]	GETTABUP 	4 0 -2	; _ENV "require"
+	431	[539]	LOADK    	5 -99	; "Data.Config.GeneratorBoostItemModelConfig"
+	432	[539]	CALL     	4 2 2
+	433	[539]	SETTABLE 	2 3 4
+	434	[540]	GETTABLE 	2 0 -1	; "m_configs"
+	435	[540]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	436	[540]	GETTABLE 	3 3 -100	; "GeneratorBoostLuckyProduce"
+	437	[540]	GETTABUP 	4 0 -2	; _ENV "require"
+	438	[540]	LOADK    	5 -101	; "Data.Config.GeneratorBoostLuckyProduceConfig"
+	439	[540]	CALL     	4 2 2
+	440	[540]	SETTABLE 	2 3 4
+	441	[541]	GETTABLE 	2 0 -1	; "m_configs"
+	442	[541]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	443	[541]	GETTABLE 	3 3 -102	; "BattleRobot"
+	444	[541]	GETTABUP 	4 0 -2	; _ENV "require"
+	445	[541]	LOADK    	5 -103	; "Data.Config.BattleRobotConfig"
+	446	[541]	CALL     	4 2 2
+	447	[541]	SETTABLE 	2 3 4
+	448	[542]	GETTABLE 	2 0 -1	; "m_configs"
+	449	[542]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	450	[542]	GETTABLE 	3 3 -104	; "TeamRobot"
+	451	[542]	GETTABUP 	4 0 -2	; _ENV "require"
+	452	[542]	LOADK    	5 -105	; "Data.Config.TeamRobotConfig"
+	453	[542]	CALL     	4 2 2
+	454	[542]	SETTABLE 	2 3 4
+	455	[546]	GETTABUP 	2 0 -106	; _ENV "CHINA_APP"
+	456	[546]	TEST     	2 1
+	457	[546]	JMP      	0 3	; to 461
+	458	[546]	GETTABUP 	2 0 -107	; _ENV "MINIGAME"
+	459	[546]	TEST     	2 0
+	460	[546]	JMP      	0 15	; to 476
+	461	[547]	GETTABLE 	2 0 -1	; "m_configs"
+	462	[547]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	463	[547]	GETTABLE 	3 3 -108	; "ShopIAP"
+	464	[547]	GETTABUP 	4 0 -2	; _ENV "require"
+	465	[547]	LOADK    	5 -109	; "Data.Config.ShopIAPConfigCN"
+	466	[547]	CALL     	4 2 2
+	467	[547]	SETTABLE 	2 3 4
+	468	[548]	GETTABLE 	2 0 -1	; "m_configs"
+	469	[548]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	470	[548]	GETTABLE 	3 3 -110	; "Preview"
+	471	[548]	GETTABUP 	4 0 -2	; _ENV "require"
+	472	[548]	LOADK    	5 -111	; "Data.Config.PreviewConfig_ml"
+	473	[548]	CALL     	4 2 2
+	474	[548]	SETTABLE 	2 3 4
+	475	[548]	JMP      	0 14	; to 490
+	476	[550]	GETTABLE 	2 0 -1	; "m_configs"
+	477	[550]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	478	[550]	GETTABLE 	3 3 -108	; "ShopIAP"
+	479	[550]	GETTABUP 	4 0 -2	; _ENV "require"
+	480	[550]	LOADK    	5 -112	; "Data.Config.ShopIAPConfig"
+	481	[550]	CALL     	4 2 2
+	482	[550]	SETTABLE 	2 3 4
+	483	[551]	GETTABLE 	2 0 -1	; "m_configs"
+	484	[551]	GETTABUP 	3 0 -18	; _ENV "LocalConfigKey"
+	485	[551]	GETTABLE 	3 3 -110	; "Preview"
+	486	[551]	GETTABUP 	4 0 -2	; _ENV "require"
+	487	[551]	LOADK    	5 -113	; "Data.Config.PreviewConfig"
+	488	[551]	CALL     	4 2 2
+	489	[551]	SETTABLE 	2 3 4
+	490	[554]	RETURN   	0 1
+constants (113) for 0000029D739DDB80:
+	1	"m_configs"
+	2	"require"
+	3	"Data.Config.ItemModelConfig"
+	4	"pairs"
+	5	"AdventureActivityDefinition"
+	6	"Data.Config."
+	7	"ItemModelConfigName"
+	8	"Table"
+	9	"ListAppend"
+	10	"MultiboardsActivityDefinition"
+	11	"FarmboardActivityDefinition"
+	12	"FreefallActivityDefinition"
+	13	"BreakDefinition"
+	14	"MapExploreActivityDefinition"
+	15	"StickerboardActivityDefinition"
+	16	"DigActivityDefinition"
+	17	"PureBoardActivityDefinition"
+	18	"LocalConfigKey"
+	19	"ItemModel"
+	20	"Level"
+	21	"Data.Config.LevelConfig"
+	22	"BoardPrompt"
+	23	"Data.Config.BoardPromptConfig"
+	24	"Bundle"
+	25	"Data.Config.BundleConfig"
+	26	"MapBorder"
+	27	"Data.Config.MapBorderConfig"
+	28	"CharacterIntimacyDialog"
+	29	"Data.Config.CharacterIntimacyDialogConfig"
+	30	"CharacterIntimacyCoinToGift"
+	31	"Data.Config.CharacterIntimacyCoinToGiftConfig"
+	32	"CharacterIntimacyGift"
+	33	"Data.Config.CharacterIntimacyGiftConfig"
+	34	"CharacterIntimacyLevel"
+	35	"Data.Config.CharacterIntimacyLevelConfig"
+	36	"CharacterIntimacyList"
+	37	"Data.Config.CharacterIntimacyListConfig"
+	38	"CharacterIntimacyShop"
+	39	"Data.Config.CharacterIntimacyShopConfig"
+	40	"FunctionEnable"
+	41	"Data.Config.FunctionEnableConfig"
+	42	"InventorySlot"
+	43	"Data.Config.InventorySlotConfig"
+	44	"ItemProperty"
+	45	"Data.Config.ItemPropertyConfig"
+	46	"ItemView"
+	47	"Data.Config.ItemViewConfig"
+	48	"MainTask"
+	49	"Data.Config.MainTaskConfig"
+	50	"OrderAvatar"
+	51	"Data.Config.OrderAvatarConfig"
+	52	"OrderFixed"
+	53	"Data.Config.OrderFixedConfig"
+	54	"OrderItem"
+	55	"Data.Config.OrderItemConfig"
+	56	"OrderItemNumberWeight"
+	57	"Data.Config.OrderItemNumberWeightConfig"
+	58	"OrderRandom"
+	59	"Data.Config.OrderRandomConfig"
+	60	"OrderRandomReCall"
+	61	"Data.Config.OrderRandomRecallConfig"
+	62	"OrderSpecial"
+	63	"Data.Config.OrderSpecialConfig"
+	64	"OrderBranch"
+	65	"Data.Config.OrderBranchConfig"
+	66	"RoleIdle"
+	67	"Data.Config.RoleIdleConfig"
+	68	"ShopDailyDeals"
+	69	"Data.Config.ShopDailyDealsConfig"
+	70	"ShopSlot"
+	71	"Data.Config.ShopSlotConfig"
+	72	"StorySpeaker"
+	73	"Data.Config.StorySpeakerConfig"
+	74	"System"
+	75	"Data.Config.SystemConfig"
+	76	"NotificationText"
+	77	"Data.Config.NotificationTextConfig"
+	78	"StoryRecap"
+	79	"Data.Config.StoryRecapConfig"
+	80	"LuckyProduce"
+	81	"Data.Config.LuckyProduceConfig"
+	82	"MapSlotInCameraCheckPos"
+	83	"Data.Config.MapSlotInCameraCheckPosConfig"
+	84	"PlaneRewardItem"
+	85	"Data.Config.PlaneRewardItemConfig"
+	86	"RaccoonRewardShowItem"
+	87	"Data.Config.RaccoonRewardItemShowConfig"
+	88	"MergeItemScoreConfig"
+	89	"Data.Config.MergeItemScoreConfig"
+	90	"ChestOrderRandomConfig"
+	91	"Data.Config.ChestOrderRandomConfig"
+	92	"ChestOrderRandomRecallConfig"
+	93	"Data.Config.ChestOrderRandomRecallConfig"
+	94	"MainPaperboxExtraRewardConfig"
+	95	"Data.Config.MainPaperboxExtraRewardConfig"
+	96	"TutoriaiOrderConfig"
+	97	"Data.Config.NewItemOrderConfig"
+	98	"GeneratorBoostItemModel"
+	99	"Data.Config.GeneratorBoostItemModelConfig"
+	100	"GeneratorBoostLuckyProduce"
+	101	"Data.Config.GeneratorBoostLuckyProduceConfig"
+	102	"BattleRobot"
+	103	"Data.Config.BattleRobotConfig"
+	104	"TeamRobot"
+	105	"Data.Config.TeamRobotConfig"
+	106	"CHINA_APP"
+	107	"MINIGAME"
+	108	"ShopIAP"
+	109	"Data.Config.ShopIAPConfigCN"
+	110	"Preview"
+	111	"Data.Config.PreviewConfig_ml"
+	112	"Data.Config.ShopIAPConfig"
+	113	"Data.Config.PreviewConfig"
+locals (56) for 0000029D739DDB80:
+	0	self	1	491
+	1	itemModelConfigs	6	491
+	2	(for generator)	9	22
+	3	(for state)	9	22
+	4	(for control)	9	22
+	5	_	10	20
+	6	activityDefinition	10	20
+	7	adventureActivityConfig	15	20
+	8	(for generator)	25	38
+	9	(for state)	25	38
+	10	(for control)	25	38
+	11	_	26	36
+	12	activityDefinition	26	36
+	13	mtbActivityConfig	31	36
+	14	(for generator)	41	54
+	15	(for state)	41	54
+	16	(for control)	41	54
+	17	_	42	52
+	18	activityDefinition	42	52
+	19	farmboardActivityConfig	47	52
+	20	(for generator)	57	70
+	21	(for state)	57	70
+	22	(for control)	57	70
+	23	_	58	68
+	24	activityDefinition	58	68
+	25	freefallActivityConfig	63	68
+	26	(for generator)	73	86
+	27	(for state)	73	86
+	28	(for control)	73	86
+	29	_	74	84
+	30	activityDefinition	74	84
+	31	breakConfig	79	84
+	32	(for generator)	89	102
+	33	(for state)	89	102
+	34	(for control)	89	102
+	35	_	90	100
+	36	activityDefinition	90	100
+	37	exploreConfig	95	100
+	38	(for generator)	105	118
+	39	(for state)	105	118
+	40	(for control)	105	118
+	41	_	106	116
+	42	activityDefinition	106	116
+	43	stickerboardConfig	111	116
+	44	(for generator)	121	134
+	45	(for state)	121	134
+	46	(for control)	121	134
+	47	_	122	132
+	48	activityDefinition	122	132
+	49	digActivityConfig	127	132
+	50	(for generator)	137	150
+	51	(for state)	137	150
+	52	(for control)	137	150
+	53	_	138	148
+	54	activityDefinition	138	148
+	55	pureBoardActivityConfig	143	148
+upvalues (1) for 0000029D739DDB80:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:557,559> (4 instructions at 0000029D739E1630)
+2 params, 3 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[558]	GETTABLE 	2 0 -1	; "m_configs"
+	2	[558]	GETTABLE 	2 2 1
+	3	[558]	RETURN   	2 2
+	4	[559]	RETURN   	0 1
+constants (1) for 0000029D739E1630:
+	1	"m_configs"
+locals (2) for 0000029D739E1630:
+	0	self	1	5
+	1	key	1	5
+upvalues (0) for 0000029D739E1630:
+
+function <ConfigModel.lua:563,566> (7 instructions at 0000029D739E16B0)
+2 params, 4 slots, 0 upvalues, 3 locals, 2 constants, 0 functions
+	1	[564]	GETTABLE 	2 0 -1	; "m_serverConfigs"
+	2	[564]	GETTABLE 	2 2 1
+	3	[565]	TESTSET  	3 2 0
+	4	[565]	JMP      	0 1	; to 6
+	5	[565]	GETTABLE 	3 2 -2	; "config"
+	6	[565]	RETURN   	3 2
+	7	[566]	RETURN   	0 1
+constants (2) for 0000029D739E16B0:
+	1	"m_serverConfigs"
+	2	"config"
+locals (3) for 0000029D739E16B0:
+	0	self	1	8
+	1	key	1	8
+	2	config	3	8
+upvalues (0) for 0000029D739E16B0:
+
+function <ConfigModel.lua:570,573> (10 instructions at 0000029D739E1730)
+2 params, 4 slots, 0 upvalues, 3 locals, 3 constants, 0 functions
+	1	[571]	GETTABLE 	2 0 -1	; "m_serverConfigs"
+	2	[571]	GETTABLE 	2 2 1
+	3	[572]	TEST     	2 0
+	4	[572]	JMP      	0 3	; to 8
+	5	[572]	GETTABLE 	3 2 -2	; "md5"
+	6	[572]	TEST     	3 1
+	7	[572]	JMP      	0 1	; to 9
+	8	[572]	LOADK    	3 -3	; ""
+	9	[572]	RETURN   	3 2
+	10	[573]	RETURN   	0 1
+constants (3) for 0000029D739E1730:
+	1	"m_serverConfigs"
+	2	"md5"
+	3	""
+locals (3) for 0000029D739E1730:
+	0	self	1	11
+	1	key	1	11
+	2	config	3	11
+upvalues (0) for 0000029D739E1730:
+
+function <ConfigModel.lua:576,624> (119 instructions at 0000029D739E17B0)
+2 params, 11 slots, 3 upvalues, 16 locals, 33 constants, 0 functions
+	1	[577]	LOADBOOL 	2 0 0
+	2	[578]	NEWTABLE 	3 0 0
+	3	[580]	GETTABUP 	4 0 -1	; _ENV "json"
+	4	[580]	GETTABLE 	4 4 -2	; "decode"
+	5	[580]	MOVE     	5 1
+	6	[580]	CALL     	4 2 2
+	7	[580]	TESTSET  	1 4 1
+	8	[580]	JMP      	0 2	; to 11
+	9	[580]	NEWTABLE 	4 0 0
+	10	[580]	MOVE     	1 4
+	11	[582]	GETTABUP 	4 0 -3	; _ENV "pairs"
+	12	[582]	GETTABLE 	5 0 -4	; "m_serverConfigs"
+	13	[582]	CALL     	4 2 4
+	14	[582]	JMP      	0 7	; to 22
+	15	[583]	GETTABLE 	9 1 7
+	16	[583]	EQ       	0 9 -5	; - nil
+	17	[583]	JMP      	0 4	; to 22
+	18	[584]	GETTABLE 	9 0 -4	; "m_serverConfigs"
+	19	[584]	SETTABLE 	9 7 -5	; - nil
+	20	[585]	SETTABLE 	3 7 -6	; - true
+	21	[586]	LOADBOOL 	2 1 0
+	22	[582]	TFORCALL 	4 2
+	23	[582]	TFORLOOP 	6 -9	; to 15
+	24	[591]	GETTABUP 	4 0 -3	; _ENV "pairs"
+	25	[591]	MOVE     	5 1
+	26	[591]	CALL     	4 2 4
+	27	[591]	JMP      	0 14	; to 42
+	28	[592]	GETTABLE 	9 0 -4	; "m_serverConfigs"
+	29	[592]	GETTABLE 	9 9 7
+	30	[592]	EQ       	1 9 -5	; - nil
+	31	[592]	JMP      	0 6	; to 38
+	32	[592]	GETTABLE 	9 0 -4	; "m_serverConfigs"
+	33	[592]	GETTABLE 	9 9 7
+	34	[592]	GETTABLE 	9 9 -7	; "md5"
+	35	[592]	GETTABLE 	10 8 -7	; "md5"
+	36	[592]	EQ       	1 9 10
+	37	[592]	JMP      	0 4	; to 42
+	38	[593]	GETTABLE 	9 0 -4	; "m_serverConfigs"
+	39	[593]	SETTABLE 	9 7 8
+	40	[594]	SETTABLE 	3 7 -6	; - true
+	41	[595]	LOADBOOL 	2 1 0
+	42	[591]	TFORCALL 	4 2
+	43	[591]	TFORLOOP 	6 -16	; to 28
+	44	[599]	TEST     	2 0
+	45	[599]	JMP      	0 11	; to 57
+	46	[600]	GETTABLE 	4 0 -8	; "m_dbTable"
+	47	[600]	SELF     	4 4 -9	; "Set"
+	48	[600]	GETUPVAL 	6 1	; DBKEY
+	49	[600]	GETUPVAL 	7 2	; DBVALUE
+	50	[600]	GETTABUP 	8 0 -1	; _ENV "json"
+	51	[600]	GETTABLE 	8 8 -10	; "encode"
+	52	[600]	GETTABLE 	9 0 -4	; "m_serverConfigs"
+	53	[600]	CALL     	8 2 0
+	54	[600]	CALL     	4 0 1
+	55	[602]	SELF     	4 0 -11	; "_UpdateGeneralConfigInfo"
+	56	[602]	CALL     	4 2 1
+	57	[605]	GETTABUP 	4 0 -12	; _ENV "GM"
+	58	[605]	GETTABLE 	4 4 -13	; "SceneManager"
+	59	[605]	SELF     	4 4 -14	; "GetGameMode"
+	60	[605]	CALL     	4 2 2
+	61	[606]	GETTABUP 	5 0 -15	; _ENV "ServerConfigKey"
+	62	[606]	GETTABLE 	5 5 -16	; "FileReplace"
+	63	[606]	GETTABLE 	5 3 5
+	64	[606]	TEST     	5 0
+	65	[606]	JMP      	0 22	; to 88
+	66	[606]	GETTABUP 	5 0 -17	; _ENV "EGameMode"
+	67	[606]	GETTABLE 	5 5 -18	; "Loading"
+	68	[606]	EQ       	1 4 5
+	69	[606]	JMP      	0 18	; to 88
+	70	[607]	GETTABUP 	5 0 -1	; _ENV "json"
+	71	[607]	GETTABLE 	5 5 -10	; "encode"
+	72	[607]	SELF     	6 0 -19	; "GetServerConfig"
+	73	[607]	GETTABUP 	8 0 -15	; _ENV "ServerConfigKey"
+	74	[607]	GETTABLE 	8 8 -16	; "FileReplace"
+	75	[607]	CALL     	6 3 2
+	76	[607]	TEST     	6 1
+	77	[607]	JMP      	0 1	; to 79
+	78	[607]	NEWTABLE 	6 0 0
+	79	[607]	CALL     	5 2 2
+	80	[608]	GETTABUP 	6 0 -20	; _ENV "Log"
+	81	[608]	GETTABLE 	6 6 -21	; "Info"
+	82	[608]	LOADK    	7 -22	; "[Restart] file replace: config is "
+	83	[608]	MOVE     	8 5
+	84	[608]	CONCAT   	7 7 8
+	85	[608]	CALL     	6 2 1
+	86	[609]	LOADBOOL 	6 1 0
+	87	[609]	RETURN   	6 2
+	88	[613]	SELF     	5 0 -23	; "WaitForStorageBeforeExitGame"
+	89	[613]	CALL     	5 2 2
+	90	[613]	TEST     	5 0
+	91	[613]	JMP      	0 12	; to 104
+	92	[613]	GETTABUP 	5 0 -24	; _ENV "MINIGAME_WECHAT"
+	93	[613]	TEST     	5 0
+	94	[613]	JMP      	0 9	; to 104
+	95	[614]	GETTABUP 	5 0 -20	; _ENV "Log"
+	96	[614]	GETTABLE 	5 5 -21	; "Info"
+	97	[614]	LOADK    	6 -25	; "[Restart] wait for storage before exit game"
+	98	[614]	CALL     	5 2 1
+	99	[615]	GETTABUP 	5 0 -26	; _ENV "ApplicationManager"
+	100	[615]	GETTABLE 	5 5 -27	; "Instance"
+	101	[615]	SELF     	5 5 -28	; "SetSyncStorageOnExitEnabled"
+	102	[615]	LOADBOOL 	7 1 0
+	103	[615]	CALL     	5 3 1
+	104	[618]	GETTABUP 	5 0 -29	; _ENV "GameConfig"
+	105	[618]	GETTABLE 	5 5 -30	; "IsTestMode"
+	106	[618]	CALL     	5 1 2
+	107	[618]	TEST     	5 0
+	108	[618]	JMP      	0 8	; to 117
+	109	[619]	GETTABUP 	5 0 -12	; _ENV "GM"
+	110	[619]	GETTABLE 	5 5 -31	; "TestModel"
+	111	[619]	SELF     	5 5 -32	; "ForceActiveActivity"
+	112	[619]	CALL     	5 2 1
+	113	[620]	GETTABUP 	5 0 -12	; _ENV "GM"
+	114	[620]	GETTABLE 	5 5 -31	; "TestModel"
+	115	[620]	SELF     	5 5 -33	; "ForceActiveBundle"
+	116	[620]	CALL     	5 2 1
+	117	[623]	LOADBOOL 	5 0 0
+	118	[623]	RETURN   	5 2
+	119	[624]	RETURN   	0 1
+constants (33) for 0000029D739E17B0:
+	1	"json"
+	2	"decode"
+	3	"pairs"
+	4	"m_serverConfigs"
+	5	nil
+	6	true
+	7	"md5"
+	8	"m_dbTable"
+	9	"Set"
+	10	"encode"
+	11	"_UpdateGeneralConfigInfo"
+	12	"GM"
+	13	"SceneManager"
+	14	"GetGameMode"
+	15	"ServerConfigKey"
+	16	"FileReplace"
+	17	"EGameMode"
+	18	"Loading"
+	19	"GetServerConfig"
+	20	"Log"
+	21	"Info"
+	22	"[Restart] file replace: config is "
+	23	"WaitForStorageBeforeExitGame"
+	24	"MINIGAME_WECHAT"
+	25	"[Restart] wait for storage before exit game"
+	26	"ApplicationManager"
+	27	"Instance"
+	28	"SetSyncStorageOnExitEnabled"
+	29	"GameConfig"
+	30	"IsTestMode"
+	31	"TestModel"
+	32	"ForceActiveActivity"
+	33	"ForceActiveBundle"
+locals (16) for 0000029D739E17B0:
+	0	self	1	120
+	1	data	1	120
+	2	bChanged	2	120
+	3	mapChangedKeys	3	120
+	4	(for generator)	14	24
+	5	(for state)	14	24
+	6	(for control)	14	24
+	7	key	15	22
+	8	config	15	22
+	9	(for generator)	27	44
+	10	(for state)	27	44
+	11	(for control)	27	44
+	12	key	28	42
+	13	config	28	42
+	14	eGameMode	61	120
+	15	info	80	88
+upvalues (3) for 0000029D739E17B0:
+	0	_ENV	0	0
+	1	DBKEY	1	0
+	2	DBVALUE	1	1
+
+function <ConfigModel.lua:627,645> (39 instructions at 0000029D739E1E30)
+1 param, 13 slots, 1 upvalue, 12 locals, 10 constants, 0 functions
+	1	[628]	NEWTABLE 	1 0 0
+	2	[630]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	3	[630]	GETTABUP 	3 0 -2	; _ENV "ServerConfigKey"
+	4	[630]	CALL     	2 2 4
+	5	[630]	JMP      	0 12	; to 18
+	6	[631]	GETTABUP 	7 0 -3	; _ENV "table"
+	7	[631]	GETTABLE 	7 7 -4	; "insert"
+	8	[631]	MOVE     	8 1
+	9	[631]	NEWTABLE 	9 0 2
+	10	[632]	SETTABLE 	9 -5 6	; "config_key" -
+	11	[633]	GETTABUP 	10 0 -7	; _ENV "GM"
+	12	[633]	GETTABLE 	10 10 -8	; "ConfigModel"
+	13	[633]	SELF     	10 10 -9	; "GetServerConfigMD5"
+	14	[633]	MOVE     	12 6
+	15	[633]	CALL     	10 3 2
+	16	[633]	SETTABLE 	9 -6 10	; "config_md5" -
+	17	[631]	CALL     	7 3 1
+	18	[630]	TFORCALL 	2 2
+	19	[630]	TFORLOOP 	4 -14	; to 6
+	20	[637]	GETTABUP 	2 0 -1	; _ENV "pairs"
+	21	[637]	GETTABUP 	3 0 -10	; _ENV "ActivityType"
+	22	[637]	CALL     	2 2 4
+	23	[637]	JMP      	0 12	; to 36
+	24	[638]	GETTABUP 	7 0 -3	; _ENV "table"
+	25	[638]	GETTABLE 	7 7 -4	; "insert"
+	26	[638]	MOVE     	8 1
+	27	[638]	NEWTABLE 	9 0 2
+	28	[639]	SETTABLE 	9 -5 6	; "config_key" -
+	29	[640]	GETTABUP 	10 0 -7	; _ENV "GM"
+	30	[640]	GETTABLE 	10 10 -8	; "ConfigModel"
+	31	[640]	SELF     	10 10 -9	; "GetServerConfigMD5"
+	32	[640]	MOVE     	12 6
+	33	[640]	CALL     	10 3 2
+	34	[640]	SETTABLE 	9 -6 10	; "config_md5" -
+	35	[638]	CALL     	7 3 1
+	36	[637]	TFORCALL 	2 2
+	37	[637]	TFORLOOP 	4 -14	; to 24
+	38	[644]	RETURN   	1 2
+	39	[645]	RETURN   	0 1
+constants (10) for 0000029D739E1E30:
+	1	"pairs"
+	2	"ServerConfigKey"
+	3	"table"
+	4	"insert"
+	5	"config_key"
+	6	"config_md5"
+	7	"GM"
+	8	"ConfigModel"
+	9	"GetServerConfigMD5"
+	10	"ActivityType"
+locals (12) for 0000029D739E1E30:
+	0	self	1	40
+	1	entries	2	40
+	2	(for generator)	5	20
+	3	(for state)	5	20
+	4	(for control)	5	20
+	5	_	6	18
+	6	type	6	18
+	7	(for generator)	23	38
+	8	(for state)	23	38
+	9	(for control)	23	38
+	10	_	24	36
+	11	type	24	36
+upvalues (1) for 0000029D739E1E30:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:647,649> (10 instructions at 0000029D739E2190)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[648]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[648]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[648]	GETTABLE 	3 3 -3	; "AntiMisTouch"
+	4	[648]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[648]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[648]	GETTABLE 	4 4 -6	; "Float"
+	7	[648]	LOADK    	5 -7	; 0.5
+	8	[648]	TAILCALL 	1 5 0
+	9	[648]	RETURN   	1 0
+	10	[649]	RETURN   	0 1
+constants (7) for 0000029D739E2190:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"AntiMisTouch"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Float"
+	7	0.5
+locals (1) for 0000029D739E2190:
+	0	self	1	11
+upvalues (1) for 0000029D739E2190:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:652,663> (34 instructions at 0000029D739E2AE0)
+1 param, 6 slots, 1 upvalue, 2 locals, 15 constants, 0 functions
+	1	[653]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[653]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[653]	GETTABLE 	3 3 -3	; "CGControl"
+	4	[653]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[653]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[653]	GETTABLE 	4 4 -6	; "String"
+	7	[653]	CALL     	1 4 2
+	8	[654]	GETTABUP 	2 0 -7	; _ENV "StringUtil"
+	9	[654]	GETTABLE 	2 2 -8	; "IsNilOrEmpty"
+	10	[654]	MOVE     	3 1
+	11	[654]	CALL     	2 2 2
+	12	[654]	TEST     	2 1
+	13	[654]	JMP      	0 15	; to 29
+	14	[655]	EQ       	1 1 -9	; - "no_cg"
+	15	[655]	JMP      	0 2	; to 18
+	16	[655]	EQ       	0 1 -10	; - "inter"
+	17	[655]	JMP      	0 3	; to 21
+	18	[656]	LOADNIL  	2 0
+	19	[656]	RETURN   	2 2
+	20	[656]	JMP      	0 13	; to 34
+	21	[658]	GETTABUP 	2 0 -11	; _ENV "Application"
+	22	[658]	GETTABLE 	2 2 -12	; "streamingAssetsPath"
+	23	[658]	LOADK    	3 -13	; "/"
+	24	[658]	MOVE     	4 1
+	25	[658]	LOADK    	5 -14	; ".mp4"
+	26	[658]	CONCAT   	2 2 5
+	27	[658]	RETURN   	2 2
+	28	[659]	JMP      	0 5	; to 34
+	29	[661]	GETTABUP 	2 0 -11	; _ENV "Application"
+	30	[661]	GETTABLE 	2 2 -12	; "streamingAssetsPath"
+	31	[661]	LOADK    	3 -15	; "/cg_casino.mp4"
+	32	[661]	CONCAT   	2 2 3
+	33	[661]	RETURN   	2 2
+	34	[663]	RETURN   	0 1
+constants (15) for 0000029D739E2AE0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"CGControl"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"String"
+	7	"StringUtil"
+	8	"IsNilOrEmpty"
+	9	"no_cg"
+	10	"inter"
+	11	"Application"
+	12	"streamingAssetsPath"
+	13	"/"
+	14	".mp4"
+	15	"/cg_casino.mp4"
+locals (2) for 0000029D739E2AE0:
+	0	self	1	35
+	1	strParam	8	35
+upvalues (1) for 0000029D739E2AE0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:665,667> (13 instructions at 0000029D739E24E0)
+1 param, 5 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[666]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[666]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[666]	GETTABLE 	3 3 -3	; "CGControl"
+	4	[666]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[666]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[666]	GETTABLE 	4 4 -6	; "String"
+	7	[666]	CALL     	1 4 2
+	8	[666]	EQ       	1 1 -7	; - "inter"
+	9	[666]	JMP      	0 1	; to 11
+	10	[666]	LOADBOOL 	1 0 1
+	11	[666]	LOADBOOL 	1 1 0
+	12	[666]	RETURN   	1 2
+	13	[667]	RETURN   	0 1
+constants (7) for 0000029D739E24E0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"CGControl"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"String"
+	7	"inter"
+locals (1) for 0000029D739E24E0:
+	0	self	1	14
+upvalues (1) for 0000029D739E24E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:670,679> (27 instructions at 0000029D739E2B60)
+1 param, 6 slots, 1 upvalue, 3 locals, 9 constants, 0 functions
+	1	[671]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[671]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[671]	GETTABLE 	3 3 -3	; "TaskPriceIncrease"
+	4	[671]	CALL     	1 3 2
+	5	[672]	SELF     	2 0 -1	; "GetGeneralConfByType"
+	6	[672]	GETTABUP 	4 0 -2	; _ENV "EGeneralConfType"
+	7	[672]	GETTABLE 	4 4 -3	; "TaskPriceIncrease"
+	8	[672]	GETTABUP 	5 0 -4	; _ENV "ConfigModel"
+	9	[672]	GETTABLE 	5 5 -5	; "EGeneralConfigParam"
+	10	[672]	GETTABLE 	5 5 -6	; "Float"
+	11	[672]	CALL     	2 4 2
+	12	[674]	GETTABUP 	3 0 -7	; _ENV "IsNil"
+	13	[674]	MOVE     	4 1
+	14	[674]	CALL     	3 2 2
+	15	[674]	TEST     	3 1
+	16	[674]	JMP      	0 9	; to 26
+	17	[674]	GETTABUP 	3 0 -7	; _ENV "IsNil"
+	18	[674]	MOVE     	4 2
+	19	[674]	CALL     	3 2 2
+	20	[674]	TEST     	3 1
+	21	[674]	JMP      	0 4	; to 26
+	22	[675]	NEWTABLE 	3 0 2
+	23	[675]	SETTABLE 	3 -8 1	; "dayLast" -
+	24	[675]	SETTABLE 	3 -9 2	; "multiple" -
+	25	[675]	RETURN   	3 2
+	26	[678]	RETURN   	0 1
+	27	[679]	RETURN   	0 1
+constants (9) for 0000029D739E2B60:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"TaskPriceIncrease"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Float"
+	7	"IsNil"
+	8	"dayLast"
+	9	"multiple"
+locals (3) for 0000029D739E2B60:
+	0	self	1	28
+	1	nParamTask	5	28
+	2	fParamGold	12	28
+upvalues (1) for 0000029D739E2B60:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:681,686> (21 instructions at 0000029D739E2EE0)
+1 param, 5 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[682]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[682]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[682]	GETTABLE 	3 3 -3	; "GemLawShow"
+	4	[682]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[682]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[682]	GETTABLE 	4 4 -6	; "String"
+	7	[682]	CALL     	1 4 2
+	8	[683]	GETTABUP 	2 0 -7	; _ENV "StringUtil"
+	9	[683]	GETTABLE 	2 2 -8	; "IsNilOrEmpty"
+	10	[683]	MOVE     	3 1
+	11	[683]	CALL     	2 2 2
+	12	[683]	TEST     	2 1
+	13	[683]	JMP      	0 7	; to 21
+	14	[683]	GETTABUP 	2 0 -7	; _ENV "StringUtil"
+	15	[683]	GETTABLE 	2 2 -9	; "IsValidUrl"
+	16	[683]	MOVE     	3 1
+	17	[683]	CALL     	2 2 2
+	18	[683]	TEST     	2 0
+	19	[683]	JMP      	0 1	; to 21
+	20	[684]	RETURN   	1 2
+	21	[686]	RETURN   	0 1
+constants (9) for 0000029D739E2EE0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"GemLawShow"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"String"
+	7	"StringUtil"
+	8	"IsNilOrEmpty"
+	9	"IsValidUrl"
+locals (2) for 0000029D739E2EE0:
+	0	self	1	22
+	1	strUrl	8	22
+upvalues (1) for 0000029D739E2EE0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:688,694> (19 instructions at 0000029D739E2A60)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[689]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[689]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[689]	GETTABLE 	3 3 -3	; "WinterDecorate"
+	4	[689]	CALL     	1 3 2
+	5	[690]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[690]	MOVE     	3 1
+	7	[690]	CALL     	2 2 2
+	8	[690]	TEST     	2 1
+	9	[690]	JMP      	0 7	; to 17
+	10	[691]	EQ       	1 1 -5	; - 1
+	11	[691]	JMP      	0 3	; to 15
+	12	[691]	EQ       	1 1 -6	; - 2
+	13	[691]	JMP      	0 1	; to 15
+	14	[691]	LOADBOOL 	2 0 1
+	15	[691]	LOADBOOL 	2 1 0
+	16	[691]	RETURN   	2 2
+	17	[693]	LOADBOOL 	2 0 0
+	18	[693]	RETURN   	2 2
+	19	[694]	RETURN   	0 1
+constants (6) for 0000029D739E2A60:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WinterDecorate"
+	4	"IsNil"
+	5	1
+	6	2
+locals (2) for 0000029D739E2A60:
+	0	self	1	20
+	1	nParpam	5	20
+upvalues (1) for 0000029D739E2A60:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:697,703> (17 instructions at 0000029D739E2D60)
+1 param, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[698]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[698]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[698]	GETTABLE 	3 3 -3	; "WinterDecorate"
+	4	[698]	CALL     	1 3 2
+	5	[699]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[699]	MOVE     	3 1
+	7	[699]	CALL     	2 2 2
+	8	[699]	TEST     	2 1
+	9	[699]	JMP      	0 5	; to 15
+	10	[700]	EQ       	1 1 -5	; - 2
+	11	[700]	JMP      	0 1	; to 13
+	12	[700]	LOADBOOL 	2 0 1
+	13	[700]	LOADBOOL 	2 1 0
+	14	[700]	RETURN   	2 2
+	15	[702]	LOADBOOL 	2 0 0
+	16	[702]	RETURN   	2 2
+	17	[703]	RETURN   	0 1
+constants (5) for 0000029D739E2D60:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WinterDecorate"
+	4	"IsNil"
+	5	2
+locals (2) for 0000029D739E2D60:
+	0	self	1	18
+	1	nParpam	5	18
+upvalues (1) for 0000029D739E2D60:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:705,712> (24 instructions at 0000029D739E2DE0)
+1 param, 6 slots, 1 upvalue, 3 locals, 12 constants, 0 functions
+	1	[706]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[706]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[706]	GETTABLE 	3 3 -3	; "CharacterIntimacy"
+	4	[706]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[706]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[706]	GETTABLE 	4 4 -6	; "Int"
+	7	[706]	CALL     	1 4 2
+	8	[707]	EQ       	1 1 -7	; - 1
+	9	[707]	JMP      	0 3	; to 13
+	10	[708]	NEWTABLE 	2 0 1
+	11	[708]	SETTABLE 	2 -8 -9	; "IsOpen" false
+	12	[708]	RETURN   	2 2
+	13	[710]	SELF     	2 0 -1	; "GetGeneralConfByType"
+	14	[710]	GETTABUP 	4 0 -2	; _ENV "EGeneralConfType"
+	15	[710]	GETTABLE 	4 4 -3	; "CharacterIntimacy"
+	16	[710]	GETTABUP 	5 0 -4	; _ENV "ConfigModel"
+	17	[710]	GETTABLE 	5 5 -5	; "EGeneralConfigParam"
+	18	[710]	GETTABLE 	5 5 -10	; "llETime"
+	19	[710]	CALL     	2 4 2
+	20	[711]	NEWTABLE 	3 0 2
+	21	[711]	SETTABLE 	3 -8 -11	; "IsOpen" true
+	22	[711]	SETTABLE 	3 -12 2	; "EndTime" -
+	23	[711]	RETURN   	3 2
+	24	[712]	RETURN   	0 1
+constants (12) for 0000029D739E2DE0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"CharacterIntimacy"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	1
+	8	"IsOpen"
+	9	false
+	10	"llETime"
+	11	true
+	12	"EndTime"
+locals (3) for 0000029D739E2DE0:
+	0	self	1	25
+	1	isOpen	8	25
+	2	eTime	20	25
+upvalues (1) for 0000029D739E2DE0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:714,716> (7 instructions at 0000029D739E3060)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[715]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[715]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[715]	GETTABLE 	3 3 -3	; "CharacterIntimacyOrder"
+	4	[715]	LOADBOOL 	4 1 0
+	5	[715]	TAILCALL 	1 4 0
+	6	[715]	RETURN   	1 0
+	7	[716]	RETURN   	0 1
+constants (3) for 0000029D739E3060:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"CharacterIntimacyOrder"
+locals (1) for 0000029D739E3060:
+	0	self	1	8
+upvalues (1) for 0000029D739E3060:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:718,720> (6 instructions at 0000029D739E30E0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[719]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[719]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[719]	GETTABLE 	3 3 -3	; "BubbleBuyBonus"
+	4	[719]	TAILCALL 	1 3 0
+	5	[719]	RETURN   	1 0
+	6	[720]	RETURN   	0 1
+constants (3) for 0000029D739E30E0:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"BubbleBuyBonus"
+locals (1) for 0000029D739E30E0:
+	0	self	1	7
+upvalues (1) for 0000029D739E30E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:723,725> (9 instructions at 0000029D739E2460)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[724]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[724]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[724]	GETTABLE 	3 3 -3	; "ItemBubbleDuration"
+	4	[724]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[724]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[724]	GETTABLE 	4 4 -6	; "Int"
+	7	[724]	TAILCALL 	1 4 0
+	8	[724]	RETURN   	1 0
+	9	[725]	RETURN   	0 1
+constants (6) for 0000029D739E2460:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"ItemBubbleDuration"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+locals (1) for 0000029D739E2460:
+	0	self	1	10
+upvalues (1) for 0000029D739E2460:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:728,734> (17 instructions at 0000029D739E2360)
+1 param, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[729]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[729]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[729]	GETTABLE 	3 3 -3	; "StarterBundle"
+	4	[729]	CALL     	1 3 2
+	5	[730]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[730]	MOVE     	3 1
+	7	[730]	CALL     	2 2 2
+	8	[730]	TEST     	2 1
+	9	[730]	JMP      	0 5	; to 15
+	10	[731]	EQ       	0 1 -5	; - 0
+	11	[731]	JMP      	0 1	; to 13
+	12	[731]	LOADBOOL 	2 0 1
+	13	[731]	LOADBOOL 	2 1 0
+	14	[731]	RETURN   	2 2
+	15	[733]	LOADBOOL 	2 1 0
+	16	[733]	RETURN   	2 2
+	17	[734]	RETURN   	0 1
+constants (5) for 0000029D739E2360:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"StarterBundle"
+	4	"IsNil"
+	5	0
+locals (2) for 0000029D739E2360:
+	0	self	1	18
+	1	nParam	5	18
+upvalues (1) for 0000029D739E2360:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:737,743> (17 instructions at 0000029D739E2E60)
+1 param, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[738]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[738]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[738]	GETTABLE 	3 3 -3	; "RecallOrder"
+	4	[738]	CALL     	1 3 2
+	5	[739]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[739]	MOVE     	3 1
+	7	[739]	CALL     	2 2 2
+	8	[739]	TEST     	2 1
+	9	[739]	JMP      	0 5	; to 15
+	10	[740]	EQ       	1 1 -5	; - 1
+	11	[740]	JMP      	0 1	; to 13
+	12	[740]	LOADBOOL 	2 0 1
+	13	[740]	LOADBOOL 	2 1 0
+	14	[740]	RETURN   	2 2
+	15	[742]	LOADBOOL 	2 0 0
+	16	[742]	RETURN   	2 2
+	17	[743]	RETURN   	0 1
+constants (5) for 0000029D739E2E60:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"RecallOrder"
+	4	"IsNil"
+	5	1
+locals (2) for 0000029D739E2E60:
+	0	self	1	18
+	1	nParam	5	18
+upvalues (1) for 0000029D739E2E60:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:745,747> (6 instructions at 0000029D739E2660)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[746]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[746]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[746]	GETTABLE 	3 3 -3	; "EnergyBoost"
+	4	[746]	TAILCALL 	1 3 0
+	5	[746]	RETURN   	1 0
+	6	[747]	RETURN   	0 1
+constants (3) for 0000029D739E2660:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"EnergyBoost"
+locals (1) for 0000029D739E2660:
+	0	self	1	7
+upvalues (1) for 0000029D739E2660:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:749,751> (7 instructions at 0000029D739E3160)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[750]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[750]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[750]	GETTABLE 	3 3 -3	; "JumpToShopWindowWhenLackGem"
+	4	[750]	LOADBOOL 	4 1 0
+	5	[750]	TAILCALL 	1 4 0
+	6	[750]	RETURN   	1 0
+	7	[751]	RETURN   	0 1
+constants (3) for 0000029D739E3160:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"JumpToShopWindowWhenLackGem"
+locals (1) for 0000029D739E3160:
+	0	self	1	8
+upvalues (1) for 0000029D739E3160:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:753,756> (12 instructions at 0000029D739E31E0)
+1 param, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[754]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[754]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[754]	GETTABLE 	3 3 -3	; "GameSpeed"
+	4	[754]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[754]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[754]	GETTABLE 	4 4 -6	; "Float"
+	7	[754]	CALL     	1 4 2
+	8	[755]	TESTSET  	2 1 1
+	9	[755]	JMP      	0 1	; to 11
+	10	[755]	LOADK    	2 -7	; 1
+	11	[755]	RETURN   	2 2
+	12	[756]	RETURN   	0 1
+constants (7) for 0000029D739E31E0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"GameSpeed"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Float"
+	7	1
+locals (2) for 0000029D739E31E0:
+	0	self	1	13
+	1	speed	8	13
+upvalues (1) for 0000029D739E31E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:759,761> (7 instructions at 0000029D739E2F60)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[760]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[760]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[760]	GETTABLE 	3 3 -3	; "TimelineSkip"
+	4	[760]	LOADBOOL 	4 1 0
+	5	[760]	TAILCALL 	1 4 0
+	6	[760]	RETURN   	1 0
+	7	[761]	RETURN   	0 1
+constants (3) for 0000029D739E2F60:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"TimelineSkip"
+locals (1) for 0000029D739E2F60:
+	0	self	1	8
+upvalues (1) for 0000029D739E2F60:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:763,765> (6 instructions at 0000029D739E2760)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[764]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[764]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[764]	GETTABLE 	3 3 -3	; "BubbleOrderBonus"
+	4	[764]	TAILCALL 	1 3 0
+	5	[764]	RETURN   	1 0
+	6	[765]	RETURN   	0 1
+constants (3) for 0000029D739E2760:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"BubbleOrderBonus"
+locals (1) for 0000029D739E2760:
+	0	self	1	7
+upvalues (1) for 0000029D739E2760:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:767,769> (10 instructions at 0000029D739E22E0)
+1 param, 5 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[768]	GETTABUP 	1 0 -1	; _ENV "GLOBAL_APP"
+	2	[768]	TEST     	1 0
+	3	[768]	JMP      	0 5	; to 9
+	4	[768]	SELF     	1 0 -2	; "IsServerControlOpen"
+	5	[768]	GETTABUP 	3 0 -3	; _ENV "EGeneralConfType"
+	6	[768]	GETTABLE 	3 3 -4	; "NewUserSaveProgress"
+	7	[768]	LOADBOOL 	4 1 0
+	8	[768]	CALL     	1 4 2
+	9	[768]	RETURN   	1 2
+	10	[769]	RETURN   	0 1
+constants (4) for 0000029D739E22E0:
+	1	"GLOBAL_APP"
+	2	"IsServerControlOpen"
+	3	"EGeneralConfType"
+	4	"NewUserSaveProgress"
+locals (1) for 0000029D739E22E0:
+	0	self	1	11
+upvalues (1) for 0000029D739E22E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:771,774> (15 instructions at 0000029D739E2560)
+1 param, 5 slots, 1 upvalue, 2 locals, 8 constants, 0 functions
+	1	[772]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[772]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[772]	GETTABLE 	3 3 -3	; "WechatFollowUs"
+	4	[772]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[772]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[772]	GETTABLE 	4 4 -6	; "Int"
+	7	[772]	CALL     	1 4 2
+	8	[773]	EQ       	1 1 -7	; - 1
+	9	[773]	JMP      	0 3	; to 13
+	10	[773]	EQ       	1 1 -8	; - 2
+	11	[773]	JMP      	0 1	; to 13
+	12	[773]	LOADBOOL 	2 0 1
+	13	[773]	LOADBOOL 	2 1 0
+	14	[773]	RETURN   	2 2
+	15	[774]	RETURN   	0 1
+constants (8) for 0000029D739E2560:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WechatFollowUs"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	1
+	8	2
+locals (2) for 0000029D739E2560:
+	0	self	1	16
+	1	switch	8	16
+upvalues (1) for 0000029D739E2560:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:776,780> (25 instructions at 0000029D739E2FE0)
+1 param, 6 slots, 1 upvalue, 3 locals, 9 constants, 0 functions
+	1	[777]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[777]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[777]	GETTABLE 	3 3 -3	; "WechatFollowUs"
+	4	[777]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[777]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[777]	GETTABLE 	4 4 -6	; "Int"
+	7	[777]	CALL     	1 4 2
+	8	[778]	SELF     	2 0 -1	; "GetGeneralConfByType"
+	9	[778]	GETTABUP 	4 0 -2	; _ENV "EGeneralConfType"
+	10	[778]	GETTABLE 	4 4 -3	; "WechatFollowUs"
+	11	[778]	GETTABUP 	5 0 -4	; _ENV "ConfigModel"
+	12	[778]	GETTABLE 	5 5 -5	; "EGeneralConfigParam"
+	13	[778]	GETTABLE 	5 5 -7	; "String"
+	14	[778]	CALL     	2 4 2
+	15	[779]	EQ       	0 1 -8	; - 2
+	16	[779]	JMP      	0 5	; to 22
+	17	[779]	GETTABUP 	3 0 -9	; _ENV "IsNil"
+	18	[779]	MOVE     	4 2
+	19	[779]	CALL     	3 2 2
+	20	[779]	NOT      	3 3
+	21	[779]	JMP      	0 2	; to 24
+	22	[779]	LOADBOOL 	3 0 1
+	23	[779]	LOADBOOL 	3 1 0
+	24	[779]	RETURN   	3 2
+	25	[780]	RETURN   	0 1
+constants (9) for 0000029D739E2FE0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WechatFollowUs"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	"String"
+	8	2
+	9	"IsNil"
+locals (3) for 0000029D739E2FE0:
+	0	self	1	26
+	1	switch	8	26
+	2	url	15	26
+upvalues (1) for 0000029D739E2FE0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:782,784> (12 instructions at 0000029D739E25E0)
+1 param, 5 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[783]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[783]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[783]	GETTABLE 	3 3 -3	; "WechatFollowUs"
+	4	[783]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[783]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[783]	GETTABLE 	4 4 -6	; "String"
+	7	[783]	CALL     	1 4 2
+	8	[783]	TEST     	1 1
+	9	[783]	JMP      	0 1	; to 11
+	10	[783]	LOADK    	1 -7	; ""
+	11	[783]	RETURN   	1 2
+	12	[784]	RETURN   	0 1
+constants (7) for 0000029D739E25E0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WechatFollowUs"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"String"
+	7	""
+locals (1) for 0000029D739E25E0:
+	0	self	1	13
+upvalues (1) for 0000029D739E25E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:785,792> (19 instructions at 0000029D739E27E0)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[786]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[786]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[786]	GETTABLE 	3 3 -3	; "ShopNewType"
+	4	[786]	CALL     	1 3 2
+	5	[787]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[787]	MOVE     	3 1
+	7	[787]	CALL     	2 2 2
+	8	[787]	TEST     	2 1
+	9	[787]	JMP      	0 7	; to 17
+	10	[788]	EQ       	1 1 -5	; - 1
+	11	[788]	JMP      	0 3	; to 15
+	12	[788]	EQ       	1 1 -6	; - 2
+	13	[788]	JMP      	0 1	; to 15
+	14	[788]	LOADBOOL 	2 0 1
+	15	[788]	LOADBOOL 	2 1 0
+	16	[788]	RETURN   	2 2
+	17	[791]	LOADBOOL 	2 0 0
+	18	[791]	RETURN   	2 2
+	19	[792]	RETURN   	0 1
+constants (6) for 0000029D739E27E0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"ShopNewType"
+	4	"IsNil"
+	5	1
+	6	2
+locals (2) for 0000029D739E27E0:
+	0	self	1	20
+	1	nParam	5	20
+upvalues (1) for 0000029D739E27E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:794,796> (7 instructions at 0000029D739E2860)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[795]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[795]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[795]	GETTABLE 	3 3 -3	; "ShopNewType"
+	4	[795]	LOADBOOL 	4 1 0
+	5	[795]	TAILCALL 	1 4 0
+	6	[795]	RETURN   	1 0
+	7	[796]	RETURN   	0 1
+constants (3) for 0000029D739E2860:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"ShopNewType"
+locals (1) for 0000029D739E2860:
+	0	self	1	8
+upvalues (1) for 0000029D739E2860:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:798,800> (7 instructions at 0000029D739E28E0)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[799]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[799]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[799]	GETTABLE 	3 3 -3	; "ClickEffectOn"
+	4	[799]	LOADBOOL 	4 1 0
+	5	[799]	TAILCALL 	1 4 0
+	6	[799]	RETURN   	1 0
+	7	[800]	RETURN   	0 1
+constants (3) for 0000029D739E28E0:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"ClickEffectOn"
+locals (1) for 0000029D739E28E0:
+	0	self	1	8
+upvalues (1) for 0000029D739E28E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:802,805> (10 instructions at 0000029D739E2960)
+1 param, 4 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[803]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[803]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[803]	GETTABLE 	3 3 -3	; "EnableIAP"
+	4	[803]	CALL     	1 3 2
+	5	[804]	EQ       	0 1 -4	; - 0
+	6	[804]	JMP      	0 1	; to 8
+	7	[804]	LOADBOOL 	2 0 1
+	8	[804]	LOADBOOL 	2 1 0
+	9	[804]	RETURN   	2 2
+	10	[805]	RETURN   	0 1
+constants (4) for 0000029D739E2960:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"EnableIAP"
+	4	0
+locals (2) for 0000029D739E2960:
+	0	self	1	11
+	1	nParam	5	11
+upvalues (1) for 0000029D739E2960:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:807,810> (10 instructions at 0000029D739E29E0)
+1 param, 4 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[808]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[808]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[808]	GETTABLE 	3 3 -3	; "CanRestoreButtonShow"
+	4	[808]	CALL     	1 3 2
+	5	[809]	EQ       	0 1 -4	; - 0
+	6	[809]	JMP      	0 1	; to 8
+	7	[809]	LOADBOOL 	2 0 1
+	8	[809]	LOADBOOL 	2 1 0
+	9	[809]	RETURN   	2 2
+	10	[810]	RETURN   	0 1
+constants (4) for 0000029D739E29E0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"CanRestoreButtonShow"
+	4	0
+locals (2) for 0000029D739E29E0:
+	0	self	1	11
+	1	nParam	5	11
+upvalues (1) for 0000029D739E29E0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:813,821> (19 instructions at 0000029D739E65F0)
+1 param, 4 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[814]	GETTABUP 	1 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[814]	TEST     	1 1
+	3	[814]	JMP      	0 2	; to 6
+	4	[815]	LOADBOOL 	1 0 0
+	5	[815]	RETURN   	1 2
+	6	[817]	GETTABUP 	1 0 -2	; _ENV "GM"
+	7	[817]	GETTABLE 	1 1 -3	; "SDKHelper"
+	8	[817]	SELF     	1 1 -4	; "IsDYNovelRead"
+	9	[817]	CALL     	1 2 2
+	10	[817]	TEST     	1 0
+	11	[817]	JMP      	0 2	; to 14
+	12	[818]	LOADBOOL 	1 0 0
+	13	[818]	RETURN   	1 2
+	14	[820]	SELF     	1 0 -5	; "IsServerControlOpen"
+	15	[820]	GETTABUP 	3 0 -6	; _ENV "EGeneralConfType"
+	16	[820]	GETTABLE 	3 3 -7	; "NotifyTiktok"
+	17	[820]	TAILCALL 	1 3 0
+	18	[820]	RETURN   	1 0
+	19	[821]	RETURN   	0 1
+constants (7) for 0000029D739E65F0:
+	1	"MINIGAME_DOUYIN"
+	2	"GM"
+	3	"SDKHelper"
+	4	"IsDYNovelRead"
+	5	"IsServerControlOpen"
+	6	"EGeneralConfType"
+	7	"NotifyTiktok"
+locals (1) for 0000029D739E65F0:
+	0	self	1	20
+upvalues (1) for 0000029D739E65F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:824,833> (28 instructions at 0000029D739E70F0)
+1 param, 4 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[825]	GETTABUP 	1 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[825]	TEST     	1 1
+	3	[825]	JMP      	0 2	; to 6
+	4	[826]	LOADBOOL 	1 0 0
+	5	[826]	RETURN   	1 2
+	6	[828]	GETTABUP 	1 0 -2	; _ENV "GM"
+	7	[828]	GETTABLE 	1 1 -3	; "SDKHelper"
+	8	[828]	SELF     	1 1 -4	; "IsDYNovelRead"
+	9	[828]	CALL     	1 2 2
+	10	[828]	TEST     	1 0
+	11	[828]	JMP      	0 2	; to 14
+	12	[829]	LOADBOOL 	1 0 0
+	13	[829]	RETURN   	1 2
+	14	[831]	SELF     	1 0 -5	; "GetGeneralConfByType"
+	15	[831]	GETTABUP 	3 0 -6	; _ENV "EGeneralConfType"
+	16	[831]	GETTABLE 	3 3 -7	; "DYVideoRecord"
+	17	[831]	CALL     	1 3 2
+	18	[832]	GETTABUP 	2 0 -8	; _ENV "IsNil"
+	19	[832]	MOVE     	3 1
+	20	[832]	CALL     	2 2 2
+	21	[832]	TEST     	2 1
+	22	[832]	JMP      	0 2	; to 25
+	23	[832]	LT       	1 -9 1	; 0 -
+	24	[832]	JMP      	0 1	; to 26
+	25	[832]	LOADBOOL 	2 0 1
+	26	[832]	LOADBOOL 	2 1 0
+	27	[832]	RETURN   	2 2
+	28	[833]	RETURN   	0 1
+constants (9) for 0000029D739E70F0:
+	1	"MINIGAME_DOUYIN"
+	2	"GM"
+	3	"SDKHelper"
+	4	"IsDYNovelRead"
+	5	"GetGeneralConfByType"
+	6	"EGeneralConfType"
+	7	"DYVideoRecord"
+	8	"IsNil"
+	9	0
+locals (2) for 0000029D739E70F0:
+	0	self	1	29
+	1	param	18	29
+upvalues (1) for 0000029D739E70F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:835,841> (15 instructions at 0000029D739E72F0)
+1 param, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[836]	GETTABUP 	1 0 -1	; _ENV "MINIGAME_DOUYIN"
+	2	[836]	TEST     	1 1
+	3	[836]	JMP      	0 2	; to 6
+	4	[837]	LOADBOOL 	1 0 0
+	5	[837]	RETURN   	1 2
+	6	[839]	SELF     	1 0 -2	; "GetGeneralConfByType"
+	7	[839]	GETTABUP 	3 0 -3	; _ENV "EGeneralConfType"
+	8	[839]	GETTABLE 	3 3 -4	; "DYVideoRecord"
+	9	[839]	CALL     	1 3 2
+	10	[840]	EQ       	1 1 -5	; - 2
+	11	[840]	JMP      	0 1	; to 13
+	12	[840]	LOADBOOL 	2 0 1
+	13	[840]	LOADBOOL 	2 1 0
+	14	[840]	RETURN   	2 2
+	15	[841]	RETURN   	0 1
+constants (5) for 0000029D739E72F0:
+	1	"MINIGAME_DOUYIN"
+	2	"GetGeneralConfByType"
+	3	"EGeneralConfType"
+	4	"DYVideoRecord"
+	5	2
+locals (2) for 0000029D739E72F0:
+	0	self	1	16
+	1	param	10	16
+upvalues (1) for 0000029D739E72F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:843,850> (19 instructions at 0000029D739E6E70)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[844]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[844]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[844]	GETTABLE 	3 3 -3	; "Vibration"
+	4	[844]	CALL     	1 3 2
+	5	[845]	GETTABUP 	2 0 -4	; _ENV "IsNil"
+	6	[845]	MOVE     	3 1
+	7	[845]	CALL     	2 2 2
+	8	[845]	TEST     	2 1
+	9	[845]	JMP      	0 7	; to 17
+	10	[846]	EQ       	1 1 -5	; - 1
+	11	[846]	JMP      	0 3	; to 15
+	12	[846]	EQ       	1 1 -6	; - 2
+	13	[846]	JMP      	0 1	; to 15
+	14	[846]	LOADBOOL 	2 0 1
+	15	[846]	LOADBOOL 	2 1 0
+	16	[846]	RETURN   	2 2
+	17	[849]	LOADBOOL 	2 0 0
+	18	[849]	RETURN   	2 2
+	19	[850]	RETURN   	0 1
+constants (6) for 0000029D739E6E70:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"Vibration"
+	4	"IsNil"
+	5	1
+	6	2
+locals (2) for 0000029D739E6E70:
+	0	self	1	20
+	1	nParam	5	20
+upvalues (1) for 0000029D739E6E70:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:852,857> (3 instructions at 0000029D739E7870)
+1 param, 2 slots, 0 upvalues, 1 local, 0 constants, 0 functions
+	1	[856]	LOADBOOL 	1 1 0
+	2	[856]	RETURN   	1 2
+	3	[857]	RETURN   	0 1
+constants (0) for 0000029D739E7870:
+locals (1) for 0000029D739E7870:
+	0	self	1	4
+upvalues (0) for 0000029D739E7870:
+
+function <ConfigModel.lua:859,861> (9 instructions at 0000029D739E6370)
+1 param, 5 slots, 1 upvalue, 1 local, 6 constants, 0 functions
+	1	[860]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[860]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[860]	GETTABLE 	3 3 -3	; "OptionalWindowMaxCountInPopupPeriod"
+	4	[860]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[860]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[860]	GETTABLE 	4 4 -6	; "Int"
+	7	[860]	TAILCALL 	1 4 0
+	8	[860]	RETURN   	1 0
+	9	[861]	RETURN   	0 1
+constants (6) for 0000029D739E6370:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"OptionalWindowMaxCountInPopupPeriod"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+locals (1) for 0000029D739E6370:
+	0	self	1	10
+upvalues (1) for 0000029D739E6370:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:863,865> (7 instructions at 0000029D739E7DF0)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[864]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[864]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[864]	GETTABLE 	3 3 -3	; "OrderPositionOpt"
+	4	[864]	LOADBOOL 	4 1 0
+	5	[864]	TAILCALL 	1 4 0
+	6	[864]	RETURN   	1 0
+	7	[865]	RETURN   	0 1
+constants (3) for 0000029D739E7DF0:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"OrderPositionOpt"
+locals (1) for 0000029D739E7DF0:
+	0	self	1	8
+upvalues (1) for 0000029D739E7DF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:868,880> (30 instructions at 0000029D739E7AF0)
+1 param, 3 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[873]	SELF     	1 0 -1	; "IsNewUserTimelineConfigEnable"
+	2	[873]	CALL     	1 2 2
+	3	[874]	TEST     	1 0
+	4	[874]	JMP      	0 24	; to 29
+	5	[874]	GETTABUP 	1 0 -2	; _ENV "GM"
+	6	[874]	GETTABLE 	1 1 -3	; "MainTaskModel"
+	7	[874]	SELF     	1 1 -4	; "HasPreTaskConfig"
+	8	[874]	CALL     	1 2 2
+	9	[875]	TEST     	1 0
+	10	[875]	JMP      	0 18	; to 29
+	11	[876]	GETTABUP 	1 0 -2	; _ENV "GM"
+	12	[876]	SELF     	1 1 -5	; "IsNewUser"
+	13	[876]	CALL     	1 2 2
+	14	[876]	TEST     	1 1
+	15	[876]	JMP      	0 13	; to 29
+	16	[878]	GETTABUP 	1 0 -2	; _ENV "GM"
+	17	[878]	GETTABLE 	1 1 -6	; "MiscModel"
+	18	[878]	SELF     	1 1 -7	; "GetHasTriggerDefaultIntroTimeline"
+	19	[878]	CALL     	1 2 2
+	20	[878]	TEST     	1 1
+	21	[878]	JMP      	0 5	; to 27
+	22	[878]	GETTABUP 	1 0 -2	; _ENV "GM"
+	23	[878]	GETTABLE 	1 1 -3	; "MainTaskModel"
+	24	[878]	SELF     	1 1 -8	; "IsCurTaskPreOrEmpty"
+	25	[878]	CALL     	1 2 2
+	26	[879]	JMP      	0 2	; to 29
+	27	[879]	LOADBOOL 	1 0 1
+	28	[879]	LOADBOOL 	1 1 0
+	29	[879]	RETURN   	1 2
+	30	[880]	RETURN   	0 1
+constants (8) for 0000029D739E7AF0:
+	1	"IsNewUserTimelineConfigEnable"
+	2	"GM"
+	3	"MainTaskModel"
+	4	"HasPreTaskConfig"
+	5	"IsNewUser"
+	6	"MiscModel"
+	7	"GetHasTriggerDefaultIntroTimeline"
+	8	"IsCurTaskPreOrEmpty"
+locals (1) for 0000029D739E7AF0:
+	0	self	1	31
+upvalues (1) for 0000029D739E7AF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:883,885> (10 instructions at 0000029D739E7FF0)
+1 param, 4 slots, 1 upvalue, 1 local, 4 constants, 0 functions
+	1	[884]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[884]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[884]	GETTABLE 	3 3 -3	; "NewUserTimeline"
+	4	[884]	CALL     	1 3 2
+	5	[884]	EQ       	1 1 -4	; - 1
+	6	[884]	JMP      	0 1	; to 8
+	7	[884]	LOADBOOL 	1 0 1
+	8	[884]	LOADBOOL 	1 1 0
+	9	[884]	RETURN   	1 2
+	10	[885]	RETURN   	0 1
+constants (4) for 0000029D739E7FF0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"NewUserTimeline"
+	4	1
+locals (1) for 0000029D739E7FF0:
+	0	self	1	11
+upvalues (1) for 0000029D739E7FF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:892,902> (15 instructions at 0000029D739E7EF0)
+4 params, 5 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[893]	EQ       	0 2 -1	; - nil
+	2	[893]	JMP      	0 3	; to 6
+	3	[894]	GETTABUP 	4 0 -2	; _ENV "ConfigModel"
+	4	[894]	GETTABLE 	4 4 -3	; "EGeneralConfigParam"
+	5	[894]	GETTABLE 	2 4 -4	; "Int"
+	6	[897]	GETTABLE 	4 0 -5	; "m_generalConfigs"
+	7	[897]	GETTABLE 	4 4 1
+	8	[897]	EQ       	1 4 -1	; - nil
+	9	[897]	JMP      	0 4	; to 14
+	10	[898]	GETTABLE 	4 0 -5	; "m_generalConfigs"
+	11	[898]	GETTABLE 	4 4 1
+	12	[898]	GETTABLE 	4 4 2
+	13	[898]	RETURN   	4 2
+	14	[901]	RETURN   	3 2
+	15	[902]	RETURN   	0 1
+constants (5) for 0000029D739E7EF0:
+	1	nil
+	2	"ConfigModel"
+	3	"EGeneralConfigParam"
+	4	"Int"
+	5	"m_generalConfigs"
+locals (4) for 0000029D739E7EF0:
+	0	self	1	16
+	1	eGeneralConfType	1	16
+	2	eParam	1	16
+	3	defaultValue	1	16
+upvalues (1) for 0000029D739E7EF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:907,919> (23 instructions at 0000029D739E7B70)
+3 params, 6 slots, 1 upvalue, 4 locals, 4 constants, 0 functions
+	1	[908]	SELF     	3 0 -1	; "GetGeneralConfByType"
+	2	[908]	MOVE     	5 1
+	3	[908]	CALL     	3 3 2
+	4	[910]	TEST     	2 0
+	5	[910]	JMP      	0 5	; to 11
+	6	[911]	EQ       	0 3 -2	; - 0
+	7	[911]	JMP      	0 1	; to 9
+	8	[911]	LOADBOOL 	4 0 1
+	9	[911]	LOADBOOL 	4 1 0
+	10	[911]	RETURN   	4 2
+	11	[914]	GETTABUP 	4 0 -3	; _ENV "IsNil"
+	12	[914]	MOVE     	5 3
+	13	[914]	CALL     	4 2 2
+	14	[914]	TEST     	4 1
+	15	[914]	JMP      	0 5	; to 21
+	16	[915]	EQ       	1 3 -4	; - 1
+	17	[915]	JMP      	0 1	; to 19
+	18	[915]	LOADBOOL 	4 0 1
+	19	[915]	LOADBOOL 	4 1 0
+	20	[915]	RETURN   	4 2
+	21	[918]	LOADBOOL 	4 0 0
+	22	[918]	RETURN   	4 2
+	23	[919]	RETURN   	0 1
+constants (4) for 0000029D739E7B70:
+	1	"GetGeneralConfByType"
+	2	0
+	3	"IsNil"
+	4	1
+locals (4) for 0000029D739E7B70:
+	0	self	1	24
+	1	key	1	24
+	2	bDefaultOpen	1	24
+	3	nParam	4	24
+upvalues (1) for 0000029D739E7B70:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:921,923> (7 instructions at 0000029D739E8070)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[922]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[922]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[922]	GETTABLE 	3 3 -3	; "ScreenEffect"
+	4	[922]	LOADBOOL 	4 1 0
+	5	[922]	TAILCALL 	1 4 0
+	6	[922]	RETURN   	1 0
+	7	[923]	RETURN   	0 1
+constants (3) for 0000029D739E8070:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"ScreenEffect"
+locals (1) for 0000029D739E8070:
+	0	self	1	8
+upvalues (1) for 0000029D739E8070:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:926,934> (13 instructions at 0000029D739E7370)
+1 param, 4 slots, 1 upvalue, 2 locals, 4 constants, 0 functions
+	1	[927]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[927]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[927]	GETTABLE 	3 3 -3	; "ShopFlashItemRefreshTime"
+	4	[927]	CALL     	1 3 2
+	5	[929]	TEST     	1 0
+	6	[929]	JMP      	0 4	; to 11
+	7	[929]	LT       	0 -4 1	; 0 -
+	8	[929]	JMP      	0 2	; to 11
+	9	[930]	RETURN   	1 2
+	10	[930]	JMP      	0 2	; to 13
+	11	[932]	LOADNIL  	2 0
+	12	[932]	RETURN   	2 2
+	13	[934]	RETURN   	0 1
+constants (4) for 0000029D739E7370:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"ShopFlashItemRefreshTime"
+	4	0
+locals (2) for 0000029D739E7370:
+	0	self	1	14
+	1	param	5	14
+upvalues (1) for 0000029D739E7370:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:937,939> (6 instructions at 0000029D739E79F0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[938]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[938]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[938]	GETTABLE 	3 3 -3	; "ShopItemFlashSale"
+	4	[938]	TAILCALL 	1 3 0
+	5	[938]	RETURN   	1 0
+	6	[939]	RETURN   	0 1
+constants (3) for 0000029D739E79F0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"ShopItemFlashSale"
+locals (1) for 0000029D739E79F0:
+	0	self	1	7
+upvalues (1) for 0000029D739E79F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:942,944> (10 instructions at 0000029D739E69F0)
+1 param, 6 slots, 1 upvalue, 1 local, 7 constants, 0 functions
+	1	[943]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[943]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[943]	GETTABLE 	3 3 -3	; "AliPayRevisitLimit"
+	4	[943]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[943]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[943]	GETTABLE 	4 4 -6	; "Int"
+	7	[943]	LOADK    	5 -7	; 0
+	8	[943]	TAILCALL 	1 5 0
+	9	[943]	RETURN   	1 0
+	10	[944]	RETURN   	0 1
+constants (7) for 0000029D739E69F0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"AliPayRevisitLimit"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	0
+locals (1) for 0000029D739E69F0:
+	0	self	1	11
+upvalues (1) for 0000029D739E69F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:948,962> (40 instructions at 0000029D739E7CF0)
+1 param, 9 slots, 1 upvalue, 7 locals, 13 constants, 0 functions
+	1	[949]	NEWTABLE 	1 0 0
+	2	[949]	SETTABLE 	0 -1 1	; "m_generalConfigs" -
+	3	[950]	SELF     	1 0 -2	; "GetServerConfig"
+	4	[950]	GETTABUP 	3 0 -3	; _ENV "ServerConfigKey"
+	5	[950]	GETTABLE 	3 3 -4	; "GeneralConf"
+	6	[950]	CALL     	1 3 2
+	7	[951]	GETTABUP 	2 0 -5	; _ENV "Table"
+	8	[951]	GETTABLE 	2 2 -6	; "IsEmpty"
+	9	[951]	MOVE     	3 1
+	10	[951]	CALL     	2 2 2
+	11	[951]	TEST     	2 0
+	12	[951]	JMP      	0 2	; to 15
+	13	[952]	LOADNIL  	2 0
+	14	[952]	RETURN   	2 2
+	15	[955]	GETTABUP 	2 0 -7	; _ENV "pairs"
+	16	[955]	MOVE     	3 1
+	17	[955]	CALL     	2 2 4
+	18	[955]	JMP      	0 3	; to 22
+	19	[956]	GETTABLE 	7 0 -1	; "m_generalConfigs"
+	20	[956]	GETTABLE 	8 6 -8	; "confType"
+	21	[956]	SETTABLE 	7 8 6
+	22	[955]	TFORCALL 	2 2
+	23	[955]	TFORLOOP 	4 -5	; to 19
+	24	[959]	GETTABUP 	2 0 -9	; _ENV "GameConfig"
+	25	[959]	GETTABLE 	2 2 -10	; "IsTestMode"
+	26	[959]	CALL     	2 1 2
+	27	[959]	TEST     	2 0
+	28	[959]	JMP      	0 11	; to 40
+	29	[959]	GETTABUP 	2 0 -11	; _ENV "GM"
+	30	[959]	TEST     	2 0
+	31	[959]	JMP      	0 8	; to 40
+	32	[959]	GETTABUP 	2 0 -11	; _ENV "GM"
+	33	[959]	GETTABLE 	2 2 -12	; "TestModel"
+	34	[959]	TEST     	2 0
+	35	[959]	JMP      	0 4	; to 40
+	36	[960]	GETTABUP 	2 0 -11	; _ENV "GM"
+	37	[960]	GETTABLE 	2 2 -12	; "TestModel"
+	38	[960]	SELF     	2 2 -13	; "CustomizeGeneralConfigs"
+	39	[960]	CALL     	2 2 1
+	40	[962]	RETURN   	0 1
+constants (13) for 0000029D739E7CF0:
+	1	"m_generalConfigs"
+	2	"GetServerConfig"
+	3	"ServerConfigKey"
+	4	"GeneralConf"
+	5	"Table"
+	6	"IsEmpty"
+	7	"pairs"
+	8	"confType"
+	9	"GameConfig"
+	10	"IsTestMode"
+	11	"GM"
+	12	"TestModel"
+	13	"CustomizeGeneralConfigs"
+locals (7) for 0000029D739E7CF0:
+	0	self	1	41
+	1	serverConfig	7	41
+	2	(for generator)	18	24
+	3	(for state)	18	24
+	4	(for control)	18	24
+	5	_	19	22
+	6	v	19	22
+upvalues (1) for 0000029D739E7CF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:967,1010> (25 instructions at 0000029D739E6D70)
+4 params, 10 slots, 1 upvalue, 6 locals, 5 constants, 2 functions
+	1	[969]	SELF     	4 0 -1	; "GetReplacesFilePath"
+	2	[969]	MOVE     	6 1
+	3	[969]	LOADK    	7 -2	; "."
+	4	[969]	CALL     	4 4 2
+	5	[971]	GETTABLE 	5 0 -3	; "m_cacheConfigRawFile"
+	6	[971]	TEST     	5 1
+	7	[971]	JMP      	0 2	; to 10
+	8	[972]	NEWTABLE 	5 0 0
+	9	[972]	SETTABLE 	0 -3 5	; "m_cacheConfigRawFile" -
+	10	[976]	GETTABLE 	5 0 -3	; "m_cacheConfigRawFile"
+	11	[976]	GETTABLE 	5 5 4
+	12	[976]	TEST     	5 0
+	13	[976]	JMP      	0 5	; to 19
+	14	[977]	MOVE     	5 2
+	15	[977]	GETTABLE 	6 0 -3	; "m_cacheConfigRawFile"
+	16	[977]	GETTABLE 	6 6 4
+	17	[977]	CALL     	5 2 1
+	18	[978]	RETURN   	0 1
+	19	[992]	CLOSURE  	5 0	; 0000029D739E81F0
+	20	[995]	GETTABUP 	6 0 -4	; _ENV "LuaManager"
+	21	[995]	SELF     	6 6 -5	; "LoadDynamicConfigAsync"
+	22	[995]	MOVE     	8 4
+	23	[1009]	CLOSURE  	9 1	; 0000029D739E8270
+	24	[995]	CALL     	6 4 1
+	25	[1010]	RETURN   	0 1
+constants (5) for 0000029D739E6D70:
+	1	"GetReplacesFilePath"
+	2	"."
+	3	"m_cacheConfigRawFile"
+	4	"LuaManager"
+	5	"LoadDynamicConfigAsync"
+locals (6) for 0000029D739E6D70:
+	0	self	1	26
+	1	requireStr	1	26
+	2	callback	1	26
+	3	resultCustomFunc	1	26
+	4	fileReplaceRequire	5	26
+	5	loadedCallback	20	26
+upvalues (1) for 0000029D739E6D70:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:982,992> (19 instructions at 0000029D739E81F0)
+2 params, 5 slots, 3 upvalues, 2 locals, 1 constant, 0 functions
+	1	[984]	GETUPVAL 	2 0	; resultCustomFunc
+	2	[984]	TEST     	2 0
+	3	[984]	JMP      	0 6	; to 10
+	4	[985]	GETTABUP 	2 1 -1	; self "m_cacheConfigRawFile"
+	5	[985]	GETUPVAL 	3 0	; resultCustomFunc
+	6	[985]	MOVE     	4 0
+	7	[985]	CALL     	3 2 2
+	8	[985]	SETTABLE 	2 1 3
+	9	[985]	JMP      	0 2	; to 12
+	10	[987]	GETTABUP 	2 1 -1	; self "m_cacheConfigRawFile"
+	11	[987]	SETTABLE 	2 1 0
+	12	[989]	GETUPVAL 	2 2	; callback
+	13	[989]	TEST     	2 0
+	14	[989]	JMP      	0 4	; to 19
+	15	[990]	GETUPVAL 	2 2	; callback
+	16	[990]	GETTABUP 	3 1 -1	; self "m_cacheConfigRawFile"
+	17	[990]	GETTABLE 	3 3 1
+	18	[990]	CALL     	2 2 1
+	19	[992]	RETURN   	0 1
+constants (1) for 0000029D739E81F0:
+	1	"m_cacheConfigRawFile"
+locals (2) for 0000029D739E81F0:
+	0	tb	1	20
+	1	reqStr	1	20
+upvalues (3) for 0000029D739E81F0:
+	0	resultCustomFunc	1	3
+	1	self	1	0
+	2	callback	1	2
+
+function <ConfigModel.lua:995,1009> (13 instructions at 0000029D739E8270)
+1 param, 5 slots, 4 upvalues, 1 local, 2 constants, 1 function
+	1	[996]	TEST     	0 1
+	2	[996]	JMP      	0 6	; to 9
+	3	[998]	GETTABUP 	1 0 -1	; _ENV "LuaManager"
+	4	[998]	SELF     	1 1 -2	; "LoadDynamicConfigAsync"
+	5	[998]	GETUPVAL 	3 1	; requireStr
+	6	[1005]	CLOSURE  	4 0	; 0000029D739E66F0
+	7	[998]	CALL     	1 4 1
+	8	[1006]	RETURN   	0 1
+	9	[1008]	GETUPVAL 	1 2	; loadedCallback
+	10	[1008]	MOVE     	2 0
+	11	[1008]	GETUPVAL 	3 3	; fileReplaceRequire
+	12	[1008]	CALL     	1 3 1
+	13	[1009]	RETURN   	0 1
+constants (2) for 0000029D739E8270:
+	1	"LuaManager"
+	2	"LoadDynamicConfigAsync"
+locals (1) for 0000029D739E8270:
+	0	tb	1	14
+upvalues (4) for 0000029D739E8270:
+	0	_ENV	0	0
+	1	requireStr	1	1
+	2	loadedCallback	1	5
+	3	fileReplaceRequire	1	4
+
+function <ConfigModel.lua:998,1005> (24 instructions at 0000029D739E66F0)
+1 param, 7 slots, 3 upvalues, 1 local, 11 constants, 0 functions
+	1	[999]	TEST     	0 1
+	2	[999]	JMP      	0 17	; to 20
+	3	[1000]	GETTABUP 	1 0 -1	; _ENV "GM"
+	4	[1000]	GETTABLE 	1 1 -2	; "BIManager"
+	5	[1000]	SELF     	1 1 -3	; "LogErrorInfo"
+	6	[1000]	LOADK    	3 -4	; "tm_ld_er"
+	7	[1000]	GETUPVAL 	4 1	; requireStr
+	8	[1000]	LOADK    	5 -5	; "\n"
+	9	[1000]	GETTABUP 	6 0 -6	; _ENV "debug"
+	10	[1000]	GETTABLE 	6 6 -7	; "traceback"
+	11	[1000]	CALL     	6 1 2
+	12	[1000]	CONCAT   	4 4 6
+	13	[1000]	CALL     	1 4 1
+	14	[1001]	GETTABUP 	1 0 -8	; _ENV "CS"
+	15	[1001]	GETTABLE 	1 1 -9	; "CSErrorMonitor"
+	16	[1001]	GETTABLE 	1 1 -10	; "OpenForceRestartWindow"
+	17	[1001]	LOADK    	2 -11	; "force_restart_desc"
+	18	[1001]	CALL     	1 2 1
+	19	[1002]	RETURN   	0 1
+	20	[1004]	GETUPVAL 	1 2	; loadedCallback
+	21	[1004]	MOVE     	2 0
+	22	[1004]	GETUPVAL 	3 1	; requireStr
+	23	[1004]	CALL     	1 3 1
+	24	[1005]	RETURN   	0 1
+constants (11) for 0000029D739E66F0:
+	1	"GM"
+	2	"BIManager"
+	3	"LogErrorInfo"
+	4	"tm_ld_er"
+	5	"\n"
+	6	"debug"
+	7	"traceback"
+	8	"CS"
+	9	"CSErrorMonitor"
+	10	"OpenForceRestartWindow"
+	11	"force_restart_desc"
+locals (1) for 0000029D739E66F0:
+	0	tb	1	25
+upvalues (3) for 0000029D739E66F0:
+	0	_ENV	0	0
+	1	requireStr	0	1
+	2	loadedCallback	0	2
+
+function <ConfigModel.lua:1012,1021> (40 instructions at 0000029D739E73F0)
+1 param, 8 slots, 1 upvalue, 5 locals, 16 constants, 0 functions
+	1	[1013]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[1013]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1013]	GETTABLE 	3 3 -3	; "OrderBoostPro"
+	4	[1013]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[1013]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[1013]	GETTABLE 	4 4 -6	; "Int"
+	7	[1013]	CALL     	1 4 2
+	8	[1014]	EQ       	1 1 -7	; - 1
+	9	[1014]	JMP      	0 3	; to 13
+	10	[1015]	NEWTABLE 	2 0 1
+	11	[1015]	SETTABLE 	2 -8 -9	; "IsOpen" false
+	12	[1015]	RETURN   	2 2
+	13	[1017]	SELF     	2 0 -1	; "GetGeneralConfByType"
+	14	[1017]	GETTABUP 	4 0 -2	; _ENV "EGeneralConfType"
+	15	[1017]	GETTABLE 	4 4 -3	; "OrderBoostPro"
+	16	[1017]	GETTABUP 	5 0 -4	; _ENV "ConfigModel"
+	17	[1017]	GETTABLE 	5 5 -5	; "EGeneralConfigParam"
+	18	[1017]	GETTABLE 	5 5 -10	; "String"
+	19	[1017]	CALL     	2 4 2
+	20	[1018]	SELF     	3 0 -1	; "GetGeneralConfByType"
+	21	[1018]	GETTABUP 	5 0 -2	; _ENV "EGeneralConfType"
+	22	[1018]	GETTABLE 	5 5 -3	; "OrderBoostPro"
+	23	[1018]	GETTABUP 	6 0 -4	; _ENV "ConfigModel"
+	24	[1018]	GETTABLE 	6 6 -5	; "EGeneralConfigParam"
+	25	[1018]	GETTABLE 	6 6 -11	; "llETime"
+	26	[1018]	CALL     	3 4 2
+	27	[1019]	SELF     	4 0 -1	; "GetGeneralConfByType"
+	28	[1019]	GETTABUP 	6 0 -2	; _ENV "EGeneralConfType"
+	29	[1019]	GETTABLE 	6 6 -3	; "OrderBoostPro"
+	30	[1019]	GETTABUP 	7 0 -4	; _ENV "ConfigModel"
+	31	[1019]	GETTABLE 	7 7 -5	; "EGeneralConfigParam"
+	32	[1019]	GETTABLE 	7 7 -12	; "llRTime"
+	33	[1019]	CALL     	4 4 2
+	34	[1020]	NEWTABLE 	5 0 4
+	35	[1020]	SETTABLE 	5 -8 -13	; "IsOpen" true
+	36	[1020]	SETTABLE 	5 -14 2	; "tag" -
+	37	[1020]	SETTABLE 	5 -15 3	; "eTime" -
+	38	[1020]	SETTABLE 	5 -16 4	; "rTime" -
+	39	[1020]	RETURN   	5 2
+	40	[1021]	RETURN   	0 1
+constants (16) for 0000029D739E73F0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"OrderBoostPro"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	1
+	8	"IsOpen"
+	9	false
+	10	"String"
+	11	"llETime"
+	12	"llRTime"
+	13	true
+	14	"tag"
+	15	"eTime"
+	16	"rTime"
+locals (5) for 0000029D739E73F0:
+	0	self	1	41
+	1	isOpen	8	41
+	2	tag	20	41
+	3	eTime	27	41
+	4	rTime	34	41
+upvalues (1) for 0000029D739E73F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:1023,1025> (14 instructions at 0000029D739E7A70)
+1 param, 6 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[1024]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[1024]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1024]	GETTABLE 	3 3 -3	; "InventoryRowAdd"
+	4	[1024]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[1024]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[1024]	GETTABLE 	4 4 -6	; "Int"
+	7	[1024]	LOADK    	5 -7	; 0
+	8	[1024]	CALL     	1 5 2
+	9	[1024]	EQ       	1 1 -8	; - 1
+	10	[1024]	JMP      	0 1	; to 12
+	11	[1024]	LOADBOOL 	1 0 1
+	12	[1024]	LOADBOOL 	1 1 0
+	13	[1024]	RETURN   	1 2
+	14	[1025]	RETURN   	0 1
+constants (8) for 0000029D739E7A70:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"InventoryRowAdd"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	0
+	8	1
+locals (1) for 0000029D739E7A70:
+	0	self	1	15
+upvalues (1) for 0000029D739E7A70:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:1028,1030> (14 instructions at 0000029D739E63F0)
+1 param, 6 slots, 1 upvalue, 1 local, 8 constants, 0 functions
+	1	[1029]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[1029]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1029]	GETTABLE 	3 3 -3	; "WXSyncStorage"
+	4	[1029]	GETTABUP 	4 0 -4	; _ENV "ConfigModel"
+	5	[1029]	GETTABLE 	4 4 -5	; "EGeneralConfigParam"
+	6	[1029]	GETTABLE 	4 4 -6	; "Int"
+	7	[1029]	LOADK    	5 -7	; 0
+	8	[1029]	CALL     	1 5 2
+	9	[1029]	EQ       	1 1 -8	; - 1
+	10	[1029]	JMP      	0 1	; to 12
+	11	[1029]	LOADBOOL 	1 0 1
+	12	[1029]	LOADBOOL 	1 1 0
+	13	[1029]	RETURN   	1 2
+	14	[1030]	RETURN   	0 1
+constants (8) for 0000029D739E63F0:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"WXSyncStorage"
+	4	"ConfigModel"
+	5	"EGeneralConfigParam"
+	6	"Int"
+	7	0
+	8	1
+locals (1) for 0000029D739E63F0:
+	0	self	1	15
+upvalues (1) for 0000029D739E63F0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:1033,1042> (20 instructions at 0000029D739E6F70)
+1 param, 4 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[1034]	SELF     	1 0 -1	; "GetGeneralConfByType"
+	2	[1034]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1034]	GETTABLE 	3 3 -3	; "LoadingViewTimelimit"
+	4	[1034]	CALL     	1 3 2
+	5	[1035]	TEST     	1 0
+	6	[1035]	JMP      	0 11	; to 18
+	7	[1035]	GETTABUP 	2 0 -4	; _ENV "tonumber"
+	8	[1035]	MOVE     	3 1
+	9	[1035]	CALL     	2 2 2
+	10	[1035]	LT       	0 -5 2	; 0 -
+	11	[1035]	JMP      	0 6	; to 18
+	12	[1037]	GETTABUP 	2 0 -4	; _ENV "tonumber"
+	13	[1037]	MOVE     	3 1
+	14	[1037]	CALL     	2 2 2
+	15	[1037]	DIV      	2 2 -6	; - 1000
+	16	[1037]	RETURN   	2 2
+	17	[1037]	JMP      	0 2	; to 20
+	18	[1040]	LOADK    	2 -7	; 2
+	19	[1040]	RETURN   	2 2
+	20	[1042]	RETURN   	0 1
+constants (7) for 0000029D739E6F70:
+	1	"GetGeneralConfByType"
+	2	"EGeneralConfType"
+	3	"LoadingViewTimelimit"
+	4	"tonumber"
+	5	0
+	6	1000
+	7	2
+locals (2) for 0000029D739E6F70:
+	0	self	1	21
+	1	time	5	21
+upvalues (1) for 0000029D739E6F70:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:1045,1047> (7 instructions at 0000029D739E6AF0)
+1 param, 5 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[1046]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[1046]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1046]	GETTABLE 	3 3 -3	; "BGMSwitch"
+	4	[1046]	LOADBOOL 	4 0 0
+	5	[1046]	TAILCALL 	1 4 0
+	6	[1046]	RETURN   	1 0
+	7	[1047]	RETURN   	0 1
+constants (3) for 0000029D739E6AF0:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"BGMSwitch"
+locals (1) for 0000029D739E6AF0:
+	0	self	1	8
+upvalues (1) for 0000029D739E6AF0:
+	0	_ENV	0	0
+
+function <ConfigModel.lua:1050,1052> (6 instructions at 0000029D739E64F0)
+1 param, 4 slots, 1 upvalue, 1 local, 3 constants, 0 functions
+	1	[1051]	SELF     	1 0 -1	; "IsServerControlOpen"
+	2	[1051]	GETTABUP 	3 0 -2	; _ENV "EGeneralConfType"
+	3	[1051]	GETTABLE 	3 3 -3	; "NewReturnUserExperience"
+	4	[1051]	TAILCALL 	1 3 0
+	5	[1051]	RETURN   	1 0
+	6	[1052]	RETURN   	0 1
+constants (3) for 0000029D739E64F0:
+	1	"IsServerControlOpen"
+	2	"EGeneralConfType"
+	3	"NewReturnUserExperience"
+locals (1) for 0000029D739E64F0:
+	0	self	1	7
+upvalues (1) for 0000029D739E64F0:
+	0	_ENV	0	0

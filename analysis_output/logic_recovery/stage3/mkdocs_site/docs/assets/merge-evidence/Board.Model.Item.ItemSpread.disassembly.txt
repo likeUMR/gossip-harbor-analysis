@@ -1,0 +1,4742 @@
+
+main <ItemSpread.lua:0,0> (241 instructions at 0000022A550DEEC0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 102 constants, 69 functions
+	1	[2]	NEWTABLE 	0 0 4
+	2	[3]	SETTABLE 	0 -2 -3	; "ItemClosed" 1
+	3	[4]	SETTABLE 	0 -4 -5	; "ItemOpening" 2
+	4	[5]	SETTABLE 	0 -6 -7	; "ItemRecharging" 3
+	5	[6]	SETTABLE 	0 -8 -9	; "BoardFull" 4
+	6	[7]	SETTABUP 	0 -1 0	; _ENV "SpreadFailedReason"
+	7	[10]	NEWTABLE 	0 0 2
+	8	[11]	SETTABLE 	0 -11 -3	; "StateChanged" 1
+	9	[12]	SETTABLE 	0 -12 -5	; "SpeedUp" 2
+	10	[13]	SETTABUP 	0 -10 0	; _ENV "ItemSpreadEventType"
+	11	[26]	NEWTABLE 	0 0 4
+	12	[27]	SETTABLE 	0 -14 -9	; "Initializing" 4
+	13	[28]	SETTABLE 	0 -15 -3	; "Closed" 1
+	14	[29]	SETTABLE 	0 -16 -5	; "Opening" 2
+	15	[30]	SETTABLE 	0 -17 -7	; "Opened" 3
+	16	[31]	SETTABUP 	0 -13 0	; _ENV "ItemSpreadState"
+	17	[34]	NEWTABLE 	0 0 5
+	18	[35]	SETTABLE 	0 -19 -3	; "Fixed" 1
+	19	[36]	SETTABLE 	0 -20 -5	; "Decremental" 2
+	20	[38]	SETTABLE 	0 -21 -7	; "OrderItem" 3
+	21	[40]	SETTABLE 	0 -22 -9	; "ChestCustomItem" 4
+	22	[42]	SETTABLE 	0 -23 -24	; "SmartItem" 5
+	23	[43]	SETTABUP 	0 -18 0	; _ENV "ItemSpreadWeightType"
+	24	[46]	GETTABUP 	0 0 -26	; _ENV "setmetatable"
+	25	[46]	NEWTABLE 	1 0 0
+	26	[46]	GETTABUP 	2 0 -27	; _ENV "BaseItemComponent"
+	27	[46]	CALL     	0 3 2
+	28	[46]	SETTABUP 	0 -25 0	; _ENV "ItemSpread"
+	29	[47]	GETTABUP 	0 0 -25	; _ENV "ItemSpread"
+	30	[47]	GETTABUP 	1 0 -25	; _ENV "ItemSpread"
+	31	[47]	SETTABLE 	0 -28 1	; "__index" -
+	32	[49]	GETTABUP 	0 0 -25	; _ENV "ItemSpread"
+	33	[49]	SETTABLE 	0 -29 -30	; "OrderItemDiffScoreLimit" 300
+	34	[51]	GETTABUP 	0 0 -25	; _ENV "ItemSpread"
+	35	[55]	CLOSURE  	1 0	; 0000022A550DEF40
+	36	[51]	SETTABLE 	0 -31 1	; "Create" -
+	37	[57]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	38	[101]	CLOSURE  	1 1	; 0000022A550DEB80
+	39	[57]	SETTABLE 	0 -33 1	; "Init" -
+	40	[104]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	41	[110]	CLOSURE  	1 2	; 0000022A550DEC00
+	42	[104]	SETTABLE 	0 -34 1	; "Update" -
+	43	[112]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	44	[146]	CLOSURE  	1 3	; 0000022A550DEC80
+	45	[112]	SETTABLE 	0 -35 1	; "UpdatePerSecond" -
+	46	[148]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	47	[150]	CLOSURE  	1 4	; 0000022A550E53B0
+	48	[148]	SETTABLE 	0 -36 1	; "CanAccelerate" -
+	49	[152]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	50	[155]	CLOSURE  	1 5	; 0000022A550E5430
+	51	[152]	SETTABLE 	0 -37 1	; "ShowCountdownAnimation" -
+	52	[157]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	53	[164]	CLOSURE  	1 6	; 0000022A550E54B0
+	54	[157]	SETTABLE 	0 -38 1	; "ShowCountDown" -
+	55	[166]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	56	[197]	CLOSURE  	1 7	; 0000022A550E56B0
+	57	[166]	SETTABLE 	0 -39 1	; "_UpdateRecoveryState" -
+	58	[199]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	59	[221]	CLOSURE  	1 8	; 0000022A550E5A80
+	60	[199]	SETTABLE 	0 -40 1	; "OnTap" -
+	61	[223]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	62	[230]	CLOSURE  	1 9	; 0000022A550E7FE0
+	63	[223]	SETTABLE 	0 -41 1	; "OnOpen" -
+	64	[232]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	65	[234]	CLOSURE  	1 10	; 0000022A550E85E0
+	66	[232]	SETTABLE 	0 -42 1	; "OnSpeedUp" -
+	67	[236]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	68	[254]	CLOSURE  	1 11	; 0000022A550E7BE0
+	69	[236]	SETTABLE 	0 -43 1	; "_SpeedUp" -
+	70	[256]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	71	[278]	CLOSURE  	1 12	; 0000022A550E86E0
+	72	[256]	SETTABLE 	0 -44 1	; "OnTimeSkip" -
+	73	[280]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	74	[284]	CLOSURE  	1 13	; 0000022A550E8160
+	75	[280]	SETTABLE 	0 -45 1	; "TryUnlockCdByZroCd" -
+	76	[286]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	77	[300]	CLOSURE  	1 14	; 0000022A550E8460
+	78	[286]	SETTABLE 	0 -46 1	; "TryUseCDBuff" -
+	79	[302]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	80	[320]	CLOSURE  	1 15	; 0000022A550E7E60
+	81	[302]	SETTABLE 	0 -47 1	; "OnTimeSkipInZeroRestNumber" -
+	82	[323]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	83	[332]	CLOSURE  	1 16	; 0000022A550E8860
+	84	[323]	SETTABLE 	0 -48 1	; "EmptySpreadCount" -
+	85	[336]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	86	[338]	CLOSURE  	1 17	; 0000022A550E81E0
+	87	[336]	SETTABLE 	0 -49 1	; "IsAutoSpread" -
+	88	[340]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	89	[342]	CLOSURE  	1 18	; 0000022A550E8760
+	90	[340]	SETTABLE 	0 -50 1	; "GetOpenDuration" -
+	91	[344]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	92	[351]	CLOSURE  	1 19	; 0000022A550E87E0
+	93	[344]	SETTABLE 	0 -51 1	; "CostEnergy" -
+	94	[353]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	95	[355]	CLOSURE  	1 20	; 0000022A550E7AE0
+	96	[353]	SETTABLE 	0 -52 1	; "GetCodeWeightPairs" -
+	97	[357]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	98	[359]	CLOSURE  	1 21	; 0000022A550E88E0
+	99	[357]	SETTABLE 	0 -53 1	; "GetItemRestNumber" -
+	100	[361]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	101	[363]	CLOSURE  	1 22	; 0000022A550E8960
+	102	[361]	SETTABLE 	0 -54 1	; "GetStorageRestNumber" -
+	103	[365]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	104	[367]	CLOSURE  	1 23	; 0000022A550E84E0
+	105	[365]	SETTABLE 	0 -55 1	; "GetSpreadCount" -
+	106	[369]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	107	[371]	CLOSURE  	1 24	; 0000022A550E7EE0
+	108	[369]	SETTABLE 	0 -56 1	; "GetSpreadMaxNum" -
+	109	[373]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	110	[375]	CLOSURE  	1 25	; 0000022A550E80E0
+	111	[373]	SETTABLE 	0 -57 1	; "GetState" -
+	112	[377]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	113	[379]	CLOSURE  	1 26	; 0000022A550E7F60
+	114	[377]	SETTABLE 	0 -58 1	; "GetStartTimer" -
+	115	[381]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	116	[383]	CLOSURE  	1 27	; 0000022A550E8060
+	117	[381]	SETTABLE 	0 -59 1	; "GetWeightType" -
+	118	[385]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	119	[387]	CLOSURE  	1 28	; 0000022A550E7B60
+	120	[385]	SETTABLE 	0 -60 1	; "GetTransformNumber" -
+	121	[389]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	122	[400]	CLOSURE  	1 29	; 0000022A550E7C60
+	123	[389]	SETTABLE 	0 -61 1	; "GetAutoSpreadDecrementalRemainTypes" -
+	124	[402]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	125	[411]	CLOSURE  	1 30	; 0000022A550E7CE0
+	126	[402]	SETTABLE 	0 -62 1	; "CanSupportCDBuff" -
+	127	[413]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	128	[418]	CLOSURE  	1 31	; 0000022A550E8260
+	129	[413]	SETTABLE 	0 -63 1	; "CanSupportSmart" -
+	130	[420]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	131	[425]	CLOSURE  	1 32	; 0000022A550E8560
+	132	[420]	SETTABLE 	0 -64 1	; "CanSupportGeneratorBoost" -
+	133	[427]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	134	[431]	CLOSURE  	1 33	; 0000022A550E82E0
+	135	[427]	SETTABLE 	0 -65 1	; "CanSupportGeneratorBoostCDBuff" -
+	136	[433]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	137	[437]	CLOSURE  	1 34	; 0000022A550E8360
+	138	[433]	SETTABLE 	0 -66 1	; "CanSupportBoostDisco" -
+	139	[439]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	140	[444]	CLOSURE  	1 35	; 0000022A550E83E0
+	141	[439]	SETTABLE 	0 -67 1	; "CanTestSupportCDFree" -
+	142	[447]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	143	[449]	CLOSURE  	1 36	; 0000022A550EE530
+	144	[447]	SETTABLE 	0 -68 1	; "IsDisposable" -
+	145	[451]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	146	[458]	CLOSURE  	1 37	; 0000022A550EEA30
+	147	[451]	SETTABLE 	0 -69 1	; "GetTimerAmount" -
+	148	[460]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	149	[467]	CLOSURE  	1 38	; 0000022A550EEBB0
+	150	[460]	SETTABLE 	0 -70 1	; "GetNextTimerAmount" -
+	151	[469]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	152	[490]	CLOSURE  	1 39	; 0000022A550EE630
+	153	[469]	SETTABLE 	0 -71 1	; "_GetTimerAmount" -
+	154	[492]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	155	[506]	CLOSURE  	1 40	; 0000022A550EEC30
+	156	[492]	SETTABLE 	0 -72 1	; "GetTimerDuration" -
+	157	[508]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	158	[535]	CLOSURE  	1 41	; 0000022A550EE830
+	159	[508]	SETTABLE 	0 -73 1	; "GetSpeedUpCost" -
+	160	[538]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	161	[540]	CLOSURE  	1 42	; 0000022A550ED5B0
+	162	[538]	SETTABLE 	0 -74 1	; "IsChestUsedOnce" -
+	163	[543]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	164	[560]	CLOSURE  	1 43	; 0000022A550ED630
+	165	[543]	SETTABLE 	0 -75 1	; "CheckLuckyProduce" -
+	166	[562]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	167	[574]	CLOSURE  	1 44	; 0000022A550EE7B0
+	168	[562]	SETTABLE 	0 -76 1	; "TryGenerateLuckyItem" -
+	169	[576]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	170	[597]	CLOSURE  	1 45	; 0000022A550EE230
+	171	[576]	SETTABLE 	0 -77 1	; "SafeSpreadItem" -
+	172	[600]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	173	[690]	CLOSURE  	1 46	; 0000022A550ED6B0
+	174	[600]	SETTABLE 	0 -78 1	; "SpreadCheckEnergyRatioAndCode" -
+	175	[692]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	176	[715]	CLOSURE  	1 47	; 0000022A550EEEB0
+	177	[692]	SETTABLE 	0 -79 1	; "CosetRestNumber" -
+	178	[717]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	179	[728]	CLOSURE  	1 48	; 0000022A550EE3B0
+	180	[717]	SETTABLE 	0 -80 1	; "TryGenerateDiscoItem" -
+	181	[731]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	182	[741]	CLOSURE  	1 49	; 0000022A550EE6B0
+	183	[731]	SETTABLE 	0 -81 1	; "DealActivityLimit" -
+	184	[748]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	185	[798]	CLOSURE  	1 50	; 0000022A550ED730
+	186	[748]	SETTABLE 	0 -82 1	; "GenerateItemCode" -
+	187	[802]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	188	[890]	CLOSURE  	1 51	; 0000022A550EECB0
+	189	[802]	SETTABLE 	0 -83 1	; "_GenerateItemCode" -
+	190	[892]	GETTABUP 	0 0 -32	; _ENV "ItemSpread"
+	191	[941]	CLOSURE  	1 52	; 0000022A550EDEB0
+	192	[892]	SETTABLE 	0 -84 1	; "GetOrderItemCode" -
+	193	[943]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	194	[952]	CLOSURE  	1 53	; 0000022A550EEAB0
+	195	[943]	SETTABLE 	0 -86 1	; "_FixedGenerateItemCode" -
+	196	[954]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	197	[975]	CLOSURE  	1 54	; 0000022A550EDF30
+	198	[954]	SETTABLE 	0 -87 1	; "_TryGenerateItemCodeByOrderItem" -
+	199	[977]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	200	[1001]	CLOSURE  	1 55	; 0000022A550ED0B0
+	201	[977]	SETTABLE 	0 -88 1	; "_TryGenerateItemCodeAll" -
+	202	[1004]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	203	[1053]	CLOSURE  	1 56	; 0000022A550EE330
+	204	[1004]	SETTABLE 	0 -89 1	; "_TryAutoSpread" -
+	205	[1056]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	206	[1076]	CLOSURE  	1 57	; 0000022A550ED8B0
+	207	[1056]	SETTABLE 	0 -90 1	; "CheckSpreadState" -
+	208	[1079]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	209	[1096]	CLOSURE  	1 58	; 0000022A550EE9B0
+	210	[1079]	SETTABLE 	0 -91 1	; "CheckSpreadPosAndAuto" -
+	211	[1100]	GETTABUP 	0 0 -85	; _ENV "ItemSpread"
+	212	[1124]	CLOSURE  	1 59	; 0000022A550ED7B0
+	213	[1100]	SETTABLE 	0 -92 1	; "CheckEnergy" -
+	214	[1127]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	215	[1139]	CLOSURE  	1 60	; 0000022A550EE730
+	216	[1127]	SETTABLE 	0 -94 1	; "SpreadCostEnergy" -
+	217	[1141]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	218	[1197]	CLOSURE  	1 61	; 0000022A550EDAB0
+	219	[1141]	SETTABLE 	0 -95 1	; "_TrySpread" -
+	220	[1199]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	221	[1214]	CLOSURE  	1 62	; 0000022A550EE8B0
+	222	[1199]	SETTABLE 	0 -96 1	; "TryRemoveSelf" -
+	223	[1218]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	224	[1220]	CLOSURE  	1 63	; 0000022A550EDFB0
+	225	[1218]	SETTABLE 	0 -97 1	; "_GetAutoSpreadPosition" -
+	226	[1222]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	227	[1232]	CLOSURE  	1 64	; 0000022A550EED30
+	228	[1222]	SETTABLE 	0 -98 1	; "_NotifySpreadFailed" -
+	229	[1238]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	230	[1252]	CLOSURE  	1 65	; 0000022A550ED2B0
+	231	[1238]	SETTABLE 	0 -99 1	; "GetCostEnergyNum" -
+	232	[1254]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	233	[1276]	CLOSURE  	1 66	; 0000022A550ED4B0
+	234	[1254]	SETTABLE 	0 -100 1	; "_Log" -
+	235	[1278]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	236	[1285]	CLOSURE  	1 67	; 0000022A550EDBB0
+	237	[1278]	SETTABLE 	0 -101 1	; "_FlushLog" -
+	238	[1295]	GETTABUP 	0 0 -93	; _ENV "ItemSpread"
+	239	[1302]	CLOSURE  	1 68	; 0000022A550ED530
+	240	[1295]	SETTABLE 	0 -102 1	; "GetTestLastSpreadInfo" -
+	241	[1302]	RETURN   	0 1
+constants (102) for 0000022A550DEEC0:
+	1	"SpreadFailedReason"
+	2	"ItemClosed"
+	3	1
+	4	"ItemOpening"
+	5	2
+	6	"ItemRecharging"
+	7	3
+	8	"BoardFull"
+	9	4
+	10	"ItemSpreadEventType"
+	11	"StateChanged"
+	12	"SpeedUp"
+	13	"ItemSpreadState"
+	14	"Initializing"
+	15	"Closed"
+	16	"Opening"
+	17	"Opened"
+	18	"ItemSpreadWeightType"
+	19	"Fixed"
+	20	"Decremental"
+	21	"OrderItem"
+	22	"ChestCustomItem"
+	23	"SmartItem"
+	24	5
+	25	"ItemSpread"
+	26	"setmetatable"
+	27	"BaseItemComponent"
+	28	"__index"
+	29	"OrderItemDiffScoreLimit"
+	30	300
+	31	"Create"
+	32	"ItemSpread"
+	33	"Init"
+	34	"Update"
+	35	"UpdatePerSecond"
+	36	"CanAccelerate"
+	37	"ShowCountdownAnimation"
+	38	"ShowCountDown"
+	39	"_UpdateRecoveryState"
+	40	"OnTap"
+	41	"OnOpen"
+	42	"OnSpeedUp"
+	43	"_SpeedUp"
+	44	"OnTimeSkip"
+	45	"TryUnlockCdByZroCd"
+	46	"TryUseCDBuff"
+	47	"OnTimeSkipInZeroRestNumber"
+	48	"EmptySpreadCount"
+	49	"IsAutoSpread"
+	50	"GetOpenDuration"
+	51	"CostEnergy"
+	52	"GetCodeWeightPairs"
+	53	"GetItemRestNumber"
+	54	"GetStorageRestNumber"
+	55	"GetSpreadCount"
+	56	"GetSpreadMaxNum"
+	57	"GetState"
+	58	"GetStartTimer"
+	59	"GetWeightType"
+	60	"GetTransformNumber"
+	61	"GetAutoSpreadDecrementalRemainTypes"
+	62	"CanSupportCDBuff"
+	63	"CanSupportSmart"
+	64	"CanSupportGeneratorBoost"
+	65	"CanSupportGeneratorBoostCDBuff"
+	66	"CanSupportBoostDisco"
+	67	"CanTestSupportCDFree"
+	68	"IsDisposable"
+	69	"GetTimerAmount"
+	70	"GetNextTimerAmount"
+	71	"_GetTimerAmount"
+	72	"GetTimerDuration"
+	73	"GetSpeedUpCost"
+	74	"IsChestUsedOnce"
+	75	"CheckLuckyProduce"
+	76	"TryGenerateLuckyItem"
+	77	"SafeSpreadItem"
+	78	"SpreadCheckEnergyRatioAndCode"
+	79	"CosetRestNumber"
+	80	"TryGenerateDiscoItem"
+	81	"DealActivityLimit"
+	82	"GenerateItemCode"
+	83	"_GenerateItemCode"
+	84	"GetOrderItemCode"
+	85	"ItemSpread"
+	86	"_FixedGenerateItemCode"
+	87	"_TryGenerateItemCodeByOrderItem"
+	88	"_TryGenerateItemCodeAll"
+	89	"_TryAutoSpread"
+	90	"CheckSpreadState"
+	91	"CheckSpreadPosAndAuto"
+	92	"CheckEnergy"
+	93	"ItemSpread"
+	94	"SpreadCostEnergy"
+	95	"_TrySpread"
+	96	"TryRemoveSelf"
+	97	"_GetAutoSpreadPosition"
+	98	"_NotifySpreadFailed"
+	99	"GetCostEnergyNum"
+	100	"_Log"
+	101	"_FlushLog"
+	102	"GetTestLastSpreadInfo"
+locals (0) for 0000022A550DEEC0:
+upvalues (1) for 0000022A550DEEC0:
+	0	_ENV	1	0
+
+function <ItemSpread.lua:51,55> (9 instructions at 0000022A550DEF40)
+1 param, 5 slots, 1 upvalue, 2 locals, 3 constants, 0 functions
+	1	[52]	GETTABUP 	1 0 -1	; _ENV "setmetatable"
+	2	[52]	NEWTABLE 	2 0 0
+	3	[52]	GETTABUP 	3 0 -2	; _ENV "ItemSpread"
+	4	[52]	CALL     	1 3 2
+	5	[53]	SELF     	2 1 -3	; "Init"
+	6	[53]	MOVE     	4 0
+	7	[53]	CALL     	2 3 1
+	8	[54]	RETURN   	1 2
+	9	[55]	RETURN   	0 1
+constants (3) for 0000022A550DEF40:
+	1	"setmetatable"
+	2	"ItemSpread"
+	3	"Init"
+locals (2) for 0000022A550DEF40:
+	0	itemConfig	1	10
+	1	itemSpread	5	10
+upvalues (1) for 0000022A550DEF40:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:57,101> (94 instructions at 0000022A550DEB80)
+2 params, 5 slots, 1 upvalue, 3 locals, 53 constants, 0 functions
+	1	[58]	GETTABUP 	2 0 -2	; _ENV "PairEvent"
+	2	[58]	GETTABLE 	2 2 -3	; "Create"
+	3	[58]	MOVE     	3 0
+	4	[58]	CALL     	2 2 2
+	5	[58]	SETTABLE 	0 -1 2	; "event" -
+	6	[59]	GETTABUP 	2 0 -5	; _ENV "GM"
+	7	[59]	GETTABLE 	2 2 -6	; "ItemDataModel"
+	8	[59]	SELF     	2 2 -7	; "GetChainId"
+	9	[59]	GETTABLE 	4 1 -8	; "Type"
+	10	[59]	CALL     	2 3 2
+	11	[59]	SETTABLE 	0 -4 2	; "m_chainId" -
+	12	[60]	GETTABLE 	2 1 -10	; "Spread_Auto"
+	13	[60]	SETTABLE 	0 -9 2	; "m_auto" -
+	14	[61]	GETTABLE 	2 1 -12	; "Spread_InitDuration"
+	15	[61]	SETTABLE 	0 -11 2	; "m_initDuration" -
+	16	[62]	GETTABLE 	2 1 -14	; "Spread_InitSpeedUpCost"
+	17	[62]	SETTABLE 	0 -13 2	; "m_initSpeedUpCost" -
+	18	[63]	GETTABLE 	2 1 -16	; "Spread_OpenDuration"
+	19	[63]	SETTABLE 	0 -15 2	; "m_openDuration" -
+	20	[64]	GETTABLE 	2 1 -18	; "Spread_OpenSpeedUpCost"
+	21	[64]	SETTABLE 	0 -17 2	; "m_openSpeedUpCost" -
+	22	[65]	GETTABLE 	2 1 -20	; "Spread_CostEnergy"
+	23	[65]	SETTABLE 	0 -19 2	; "m_costEnergy" -
+	24	[66]	GETTABLE 	2 1 -22	; "Spread_ItemMaxNumber"
+	25	[66]	SETTABLE 	0 -21 2	; "m_itemMaxNumber" -
+	26	[67]	GETTABLE 	2 1 -24	; "Spread_ItemRecoveryDuration"
+	27	[67]	SETTABLE 	0 -23 2	; "m_itemRecoveryDuration" -
+	28	[68]	GETTABLE 	2 1 -26	; "Spread_ItemSpeedUpCost"
+	29	[68]	SETTABLE 	0 -25 2	; "m_itemSpeedUpCost" -
+	30	[69]	GETTABLE 	2 1 -28	; "Spread_StorageMaxNumber"
+	31	[69]	SETTABLE 	0 -27 2	; "m_storageMaxNumber" -
+	32	[70]	GETTABLE 	2 1 -30	; "Spread_StorageRecoveryDuration"
+	33	[70]	SETTABLE 	0 -29 2	; "m_storageRecoveryDuration" -
+	34	[71]	GETTABLE 	2 1 -32	; "Spread_StorageSpeedUpCost"
+	35	[71]	SETTABLE 	0 -31 2	; "m_storageSpeedUpCost" -
+	36	[72]	GETTABLE 	2 1 -34	; "Spread_TransformNumber"
+	37	[72]	SETTABLE 	0 -33 2	; "m_transformNumber" -
+	38	[75]	GETTABUP 	2 0 -35	; _ENV "TutorialBoardHelper"
+	39	[75]	GETTABLE 	2 2 -36	; "GetForcedTimerDuration"
+	40	[75]	CALL     	2 1 2
+	41	[76]	EQ       	1 2 -37	; - nil
+	42	[76]	JMP      	0 20	; to 63
+	43	[77]	GETTABLE 	3 0 -11	; "m_initDuration"
+	44	[77]	TEST     	3 0
+	45	[77]	JMP      	0 1	; to 47
+	46	[77]	MOVE     	3 2
+	47	[77]	SETTABLE 	0 -11 3	; "m_initDuration" -
+	48	[78]	GETTABLE 	3 0 -15	; "m_openDuration"
+	49	[78]	TEST     	3 0
+	50	[78]	JMP      	0 1	; to 52
+	51	[78]	MOVE     	3 2
+	52	[78]	SETTABLE 	0 -15 3	; "m_openDuration" -
+	53	[79]	GETTABLE 	3 0 -23	; "m_itemRecoveryDuration"
+	54	[79]	TEST     	3 0
+	55	[79]	JMP      	0 1	; to 57
+	56	[79]	MOVE     	3 2
+	57	[79]	SETTABLE 	0 -23 3	; "m_itemRecoveryDuration" -
+	58	[80]	GETTABLE 	3 0 -29	; "m_storageRecoveryDuration"
+	59	[80]	TEST     	3 0
+	60	[80]	JMP      	0 1	; to 62
+	61	[80]	MOVE     	3 2
+	62	[80]	SETTABLE 	0 -29 3	; "m_storageRecoveryDuration" -
+	63	[84]	GETTABUP 	3 0 -39	; _ENV "Table"
+	64	[84]	GETTABLE 	3 3 -40	; "DeepCopy"
+	65	[84]	GETTABLE 	4 1 -41	; "Spread_Weight"
+	66	[84]	CALL     	3 2 2
+	67	[84]	SETTABLE 	0 -38 3	; "m_codeWeightPairs" -
+	68	[85]	GETTABLE 	3 1 -43	; "Spread_WeightType"
+	69	[85]	SETTABLE 	0 -42 3	; "m_weightType" -
+	70	[87]	GETTABLE 	3 0 -21	; "m_itemMaxNumber"
+	71	[87]	SETTABLE 	0 -44 3	; "m_itemRestNumber" -
+	72	[88]	GETTABLE 	3 0 -27	; "m_storageMaxNumber"
+	73	[88]	SETTABLE 	0 -45 3	; "m_storageRestNumber" -
+	74	[91]	SETTABLE 	0 -46 -47	; "m_spreadCount" 0
+	75	[93]	GETTABLE 	3 0 -11	; "m_initDuration"
+	76	[93]	EQ       	1 3 -37	; - nil
+	77	[93]	JMP      	0 6	; to 84
+	78	[94]	GETTABUP 	3 0 -49	; _ENV "ItemSpreadState"
+	79	[94]	GETTABLE 	3 3 -50	; "Initializing"
+	80	[94]	SETTABLE 	0 -48 3	; "m_state" -
+	81	[95]	SELF     	3 0 -51	; "UpdatePerSecond"
+	82	[95]	CALL     	3 2 1
+	83	[95]	JMP      	0 10	; to 94
+	84	[96]	GETTABLE 	3 0 -15	; "m_openDuration"
+	85	[96]	EQ       	1 3 -37	; - nil
+	86	[96]	JMP      	0 4	; to 91
+	87	[97]	GETTABUP 	3 0 -49	; _ENV "ItemSpreadState"
+	88	[97]	GETTABLE 	3 3 -52	; "Closed"
+	89	[97]	SETTABLE 	0 -48 3	; "m_state" -
+	90	[97]	JMP      	0 3	; to 94
+	91	[99]	GETTABUP 	3 0 -49	; _ENV "ItemSpreadState"
+	92	[99]	GETTABLE 	3 3 -53	; "Opened"
+	93	[99]	SETTABLE 	0 -48 3	; "m_state" -
+	94	[101]	RETURN   	0 1
+constants (53) for 0000022A550DEB80:
+	1	"event"
+	2	"PairEvent"
+	3	"Create"
+	4	"m_chainId"
+	5	"GM"
+	6	"ItemDataModel"
+	7	"GetChainId"
+	8	"Type"
+	9	"m_auto"
+	10	"Spread_Auto"
+	11	"m_initDuration"
+	12	"Spread_InitDuration"
+	13	"m_initSpeedUpCost"
+	14	"Spread_InitSpeedUpCost"
+	15	"m_openDuration"
+	16	"Spread_OpenDuration"
+	17	"m_openSpeedUpCost"
+	18	"Spread_OpenSpeedUpCost"
+	19	"m_costEnergy"
+	20	"Spread_CostEnergy"
+	21	"m_itemMaxNumber"
+	22	"Spread_ItemMaxNumber"
+	23	"m_itemRecoveryDuration"
+	24	"Spread_ItemRecoveryDuration"
+	25	"m_itemSpeedUpCost"
+	26	"Spread_ItemSpeedUpCost"
+	27	"m_storageMaxNumber"
+	28	"Spread_StorageMaxNumber"
+	29	"m_storageRecoveryDuration"
+	30	"Spread_StorageRecoveryDuration"
+	31	"m_storageSpeedUpCost"
+	32	"Spread_StorageSpeedUpCost"
+	33	"m_transformNumber"
+	34	"Spread_TransformNumber"
+	35	"TutorialBoardHelper"
+	36	"GetForcedTimerDuration"
+	37	nil
+	38	"m_codeWeightPairs"
+	39	"Table"
+	40	"DeepCopy"
+	41	"Spread_Weight"
+	42	"m_weightType"
+	43	"Spread_WeightType"
+	44	"m_itemRestNumber"
+	45	"m_storageRestNumber"
+	46	"m_spreadCount"
+	47	0
+	48	"m_state"
+	49	"ItemSpreadState"
+	50	"Initializing"
+	51	"UpdatePerSecond"
+	52	"Closed"
+	53	"Opened"
+locals (3) for 0000022A550DEB80:
+	0	self	1	95
+	1	itemConfig	1	95
+	2	forcedDuration	41	95
+upvalues (1) for 0000022A550DEB80:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:104,110> (10 instructions at 0000022A550DEC00)
+1 param, 3 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[105]	SELF     	1 0 -1	; "IsAutoSpread"
+	2	[105]	CALL     	1 2 2
+	3	[105]	TEST     	1 0
+	4	[105]	JMP      	0 5	; to 10
+	5	[106]	SELF     	1 0 -2	; "_TryAutoSpread"
+	6	[106]	CALL     	1 2 2
+	7	[106]	TEST     	1 0
+	8	[106]	JMP      	0 1	; to 10
+	9	[106]	JMP      	0 -5	; to 5
+	10	[110]	RETURN   	0 1
+constants (2) for 0000022A550DEC00:
+	1	"IsAutoSpread"
+	2	"_TryAutoSpread"
+locals (1) for 0000022A550DEC00:
+	0	self	1	11
+upvalues (0) for 0000022A550DEC00:
+
+function <ItemSpread.lua:112,146> (102 instructions at 0000022A550DEC80)
+1 param, 6 slots, 1 upvalue, 3 locals, 33 constants, 0 functions
+	1	[113]	GETTABLE 	1 0 -1	; "m_startTimer"
+	2	[113]	EQ       	0 1 -2	; - nil
+	3	[113]	JMP      	0 46	; to 50
+	4	[114]	GETTABLE 	1 0 -3	; "m_state"
+	5	[114]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	6	[114]	GETTABLE 	2 2 -5	; "Initializing"
+	7	[114]	EQ       	1 1 2
+	8	[114]	JMP      	0 21	; to 30
+	9	[115]	GETTABLE 	1 0 -3	; "m_state"
+	10	[115]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	11	[115]	GETTABLE 	2 2 -6	; "Opening"
+	12	[115]	EQ       	1 1 2
+	13	[115]	JMP      	0 16	; to 30
+	14	[116]	GETTABLE 	1 0 -3	; "m_state"
+	15	[116]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	16	[116]	GETTABLE 	2 2 -7	; "Opened"
+	17	[116]	EQ       	0 1 2
+	18	[116]	JMP      	0 30	; to 49
+	19	[117]	GETTABLE 	1 0 -8	; "m_itemRestNumber"
+	20	[117]	GETTABLE 	2 0 -9	; "m_itemMaxNumber"
+	21	[117]	LT       	1 1 2
+	22	[117]	JMP      	0 3	; to 26
+	23	[118]	GETTABLE 	1 0 -10	; "m_storageRestNumber"
+	24	[118]	EQ       	0 1 -11	; - 0
+	25	[118]	JMP      	0 23	; to 49
+	26	[119]	SELF     	1 0 -12	; "IsDisposable"
+	27	[119]	CALL     	1 2 2
+	28	[120]	TEST     	1 1
+	29	[120]	JMP      	0 19	; to 49
+	30	[121]	GETTABUP 	1 0 -13	; _ENV "GM"
+	31	[121]	GETTABLE 	1 1 -14	; "GameModel"
+	32	[121]	SELF     	1 1 -15	; "GetServerTime"
+	33	[121]	CALL     	1 2 2
+	34	[121]	SETTABLE 	0 -1 1	; "m_startTimer" -
+	35	[124]	GETTABLE 	1 0 -16	; "m_itemModel"
+	36	[124]	EQ       	1 1 -2	; - nil
+	37	[124]	JMP      	0 6	; to 44
+	38	[125]	GETTABLE 	1 0 -16	; "m_itemModel"
+	39	[125]	SELF     	1 1 -17	; "GetBoardModel"
+	40	[125]	CALL     	1 2 2
+	41	[125]	SELF     	1 1 -18	; "SaveItemProperty"
+	42	[125]	GETTABLE 	3 0 -16	; "m_itemModel"
+	43	[125]	CALL     	1 3 1
+	44	[128]	GETTABLE 	1 0 -19	; "event"
+	45	[128]	SELF     	1 1 -20	; "Call"
+	46	[128]	GETTABUP 	3 0 -21	; _ENV "ItemSpreadEventType"
+	47	[128]	GETTABLE 	3 3 -22	; "StateChanged"
+	48	[128]	CALL     	1 3 1
+	49	[131]	RETURN   	0 1
+	50	[134]	GETTABLE 	1 0 -16	; "m_itemModel"
+	51	[134]	SELF     	1 1 -23	; "GetComponent"
+	52	[134]	GETTABUP 	3 0 -24	; _ENV "ItemAccelerateTime"
+	53	[134]	CALL     	1 3 2
+	54	[135]	SELF     	2 0 -25	; "CanAccelerate"
+	55	[135]	CALL     	2 2 2
+	56	[135]	TEST     	2 0
+	57	[135]	JMP      	0 27	; to 85
+	58	[135]	EQ       	1 1 -2	; - nil
+	59	[135]	JMP      	0 25	; to 85
+	60	[135]	SELF     	2 1 -26	; "IsAccelerated"
+	61	[135]	CALL     	2 2 2
+	62	[135]	TEST     	2 0
+	63	[135]	JMP      	0 21	; to 85
+	64	[136]	GETTABUP 	2 0 -27	; _ENV "math"
+	65	[136]	GETTABLE 	2 2 -28	; "min"
+	66	[136]	SELF     	3 1 -29	; "GetTime"
+	67	[136]	CALL     	3 2 2
+	68	[136]	GETTABUP 	4 0 -13	; _ENV "GM"
+	69	[136]	GETTABLE 	4 4 -14	; "GameModel"
+	70	[136]	SELF     	4 4 -15	; "GetServerTime"
+	71	[136]	CALL     	4 2 0
+	72	[136]	CALL     	2 0 2
+	73	[137]	GETTABLE 	3 0 -1	; "m_startTimer"
+	74	[137]	SELF     	4 1 -30	; "GetLastUpdateTime"
+	75	[137]	CALL     	4 2 2
+	76	[137]	ADD      	3 3 4
+	77	[137]	SUB      	3 3 2
+	78	[137]	SETTABLE 	0 -1 3	; "m_startTimer" -
+	79	[138]	GETTABLE 	3 0 -16	; "m_itemModel"
+	80	[138]	SELF     	3 3 -17	; "GetBoardModel"
+	81	[138]	CALL     	3 2 2
+	82	[138]	SELF     	3 3 -18	; "SaveItemProperty"
+	83	[138]	GETTABLE 	5 0 -16	; "m_itemModel"
+	84	[138]	CALL     	3 3 1
+	85	[141]	SELF     	2 0 -31	; "GetTimerAmount"
+	86	[141]	CALL     	2 2 2
+	87	[141]	EQ       	0 2 -32	; - 1
+	88	[141]	JMP      	0 8	; to 97
+	89	[142]	SELF     	2 0 -33	; "_UpdateRecoveryState"
+	90	[142]	CALL     	2 2 1
+	91	[143]	GETTABLE 	2 0 -16	; "m_itemModel"
+	92	[143]	SELF     	2 2 -17	; "GetBoardModel"
+	93	[143]	CALL     	2 2 2
+	94	[143]	SELF     	2 2 -18	; "SaveItemProperty"
+	95	[143]	GETTABLE 	4 0 -16	; "m_itemModel"
+	96	[143]	CALL     	2 3 1
+	97	[145]	GETTABLE 	2 0 -19	; "event"
+	98	[145]	SELF     	2 2 -20	; "Call"
+	99	[145]	GETTABUP 	4 0 -21	; _ENV "ItemSpreadEventType"
+	100	[145]	GETTABLE 	4 4 -22	; "StateChanged"
+	101	[145]	CALL     	2 3 1
+	102	[146]	RETURN   	0 1
+constants (33) for 0000022A550DEC80:
+	1	"m_startTimer"
+	2	nil
+	3	"m_state"
+	4	"ItemSpreadState"
+	5	"Initializing"
+	6	"Opening"
+	7	"Opened"
+	8	"m_itemRestNumber"
+	9	"m_itemMaxNumber"
+	10	"m_storageRestNumber"
+	11	0
+	12	"IsDisposable"
+	13	"GM"
+	14	"GameModel"
+	15	"GetServerTime"
+	16	"m_itemModel"
+	17	"GetBoardModel"
+	18	"SaveItemProperty"
+	19	"event"
+	20	"Call"
+	21	"ItemSpreadEventType"
+	22	"StateChanged"
+	23	"GetComponent"
+	24	"ItemAccelerateTime"
+	25	"CanAccelerate"
+	26	"IsAccelerated"
+	27	"math"
+	28	"min"
+	29	"GetTime"
+	30	"GetLastUpdateTime"
+	31	"GetTimerAmount"
+	32	1
+	33	"_UpdateRecoveryState"
+locals (3) for 0000022A550DEC80:
+	0	self	1	103
+	1	itemAccelerateTime	54	103
+	2	endTime	73	85
+upvalues (1) for 0000022A550DEC80:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:148,150> (7 instructions at 0000022A550E53B0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[149]	GETTABLE 	1 0 -1	; "m_startTimer"
+	2	[149]	EQ       	0 1 -2	; - nil
+	3	[149]	JMP      	0 1	; to 5
+	4	[149]	LOADBOOL 	1 0 1
+	5	[149]	LOADBOOL 	1 1 0
+	6	[149]	RETURN   	1 2
+	7	[150]	RETURN   	0 1
+constants (2) for 0000022A550E53B0:
+	1	"m_startTimer"
+	2	nil
+locals (1) for 0000022A550E53B0:
+	0	self	1	8
+upvalues (0) for 0000022A550E53B0:
+
+function <ItemSpread.lua:152,155> (12 instructions at 0000022A550E5430)
+1 param, 4 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[153]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[153]	SELF     	1 1 -2	; "GetComponent"
+	3	[153]	GETTABUP 	3 0 -3	; _ENV "ItemAccelerateTime"
+	4	[153]	CALL     	1 3 2
+	5	[154]	SELF     	2 0 -4	; "CanAccelerate"
+	6	[154]	CALL     	2 2 2
+	7	[154]	TEST     	2 0
+	8	[154]	JMP      	0 2	; to 11
+	9	[154]	SELF     	2 1 -5	; "IsAccelerated"
+	10	[154]	CALL     	2 2 2
+	11	[154]	RETURN   	2 2
+	12	[155]	RETURN   	0 1
+constants (5) for 0000022A550E5430:
+	1	"m_itemModel"
+	2	"GetComponent"
+	3	"ItemAccelerateTime"
+	4	"CanAccelerate"
+	5	"IsAccelerated"
+locals (2) for 0000022A550E5430:
+	0	self	1	13
+	1	itemAccelerateTime	5	13
+upvalues (1) for 0000022A550E5430:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:157,164> (28 instructions at 0000022A550E54B0)
+1 param, 3 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[158]	SELF     	1 0 -1	; "GetItemRestNumber"
+	2	[158]	CALL     	1 2 2
+	3	[158]	LT       	0 -2 1	; 0 -
+	4	[158]	JMP      	0 12	; to 17
+	5	[159]	SELF     	1 0 -3	; "GetState"
+	6	[159]	CALL     	1 2 2
+	7	[159]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	8	[159]	GETTABLE 	2 2 -5	; "Initializing"
+	9	[159]	EQ       	1 1 2
+	10	[159]	JMP      	0 6	; to 17
+	11	[160]	SELF     	1 0 -3	; "GetState"
+	12	[160]	CALL     	1 2 2
+	13	[160]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	14	[160]	GETTABLE 	2 2 -6	; "Opening"
+	15	[160]	EQ       	0 1 2
+	16	[160]	JMP      	0 8	; to 25
+	17	[161]	SELF     	1 0 -1	; "GetItemRestNumber"
+	18	[161]	CALL     	1 2 2
+	19	[161]	EQ       	0 1 -2	; - 0
+	20	[161]	JMP      	0 3	; to 24
+	21	[162]	SELF     	1 0 -7	; "IsDisposable"
+	22	[162]	CALL     	1 2 2
+	23	[162]	JMP      	0 2	; to 26
+	24	[162]	LOADBOOL 	1 0 1
+	25	[162]	LOADBOOL 	1 1 0
+	26	[163]	NOT      	2 1
+	27	[163]	RETURN   	2 2
+	28	[164]	RETURN   	0 1
+constants (7) for 0000022A550E54B0:
+	1	"GetItemRestNumber"
+	2	0
+	3	"GetState"
+	4	"ItemSpreadState"
+	5	"Initializing"
+	6	"Opening"
+	7	"IsDisposable"
+locals (2) for 0000022A550E54B0:
+	0	self	1	29
+	1	notShow	26	29
+upvalues (1) for 0000022A550E54B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:166,197> (58 instructions at 0000022A550E56B0)
+1 param, 5 slots, 1 upvalue, 2 locals, 22 constants, 0 functions
+	1	[167]	GETTABLE 	1 0 -1	; "m_state"
+	2	[167]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	3	[167]	GETTABLE 	2 2 -3	; "Initializing"
+	4	[167]	EQ       	1 1 2
+	5	[167]	JMP      	0 5	; to 11
+	6	[168]	GETTABLE 	1 0 -1	; "m_state"
+	7	[168]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	8	[168]	GETTABLE 	2 2 -4	; "Opening"
+	9	[168]	EQ       	0 1 2
+	10	[168]	JMP      	0 18	; to 29
+	11	[170]	SETTABLE 	0 -5 -6	; "m_startTimer" nil
+	12	[171]	GETTABUP 	1 0 -2	; _ENV "ItemSpreadState"
+	13	[171]	GETTABLE 	1 1 -7	; "Opened"
+	14	[171]	SETTABLE 	0 -1 1	; "m_state" -
+	15	[172]	GETTABUP 	1 0 -8	; _ENV "EventDispatcher"
+	16	[172]	GETTABLE 	1 1 -9	; "DispatchEvent"
+	17	[172]	GETTABUP 	2 0 -10	; _ENV "EEventType"
+	18	[172]	GETTABLE 	2 2 -11	; "ItemOpened"
+	19	[172]	NEWTABLE 	3 0 1
+	20	[172]	GETTABLE 	4 0 -13	; "m_itemModel"
+	21	[172]	SETTABLE 	3 -12 4	; "item" -
+	22	[172]	CALL     	1 3 1
+	23	[174]	GETTABLE 	1 0 -13	; "m_itemModel"
+	24	[174]	SELF     	1 1 -14	; "GetBoardModel"
+	25	[174]	CALL     	1 2 2
+	26	[174]	SELF     	1 1 -15	; "UpdateOpeningItem"
+	27	[174]	CALL     	1 2 1
+	28	[176]	RETURN   	0 1
+	29	[179]	GETTABLE 	1 0 -16	; "m_storageRestNumber"
+	30	[179]	EQ       	0 1 -17	; - 0
+	31	[179]	JMP      	0 6	; to 38
+	32	[180]	SETTABLE 	0 -5 -6	; "m_startTimer" nil
+	33	[181]	GETTABLE 	1 0 -18	; "m_storageMaxNumber"
+	34	[181]	SETTABLE 	0 -16 1	; "m_storageRestNumber" -
+	35	[183]	GETTABLE 	1 0 -20	; "m_itemMaxNumber"
+	36	[183]	SETTABLE 	0 -19 1	; "m_itemRestNumber" -
+	37	[184]	RETURN   	0 1
+	38	[187]	GETTABLE 	1 0 -20	; "m_itemMaxNumber"
+	39	[187]	GETTABLE 	2 0 -19	; "m_itemRestNumber"
+	40	[187]	SUB      	1 1 2
+	41	[188]	GETTABLE 	2 0 -20	; "m_itemMaxNumber"
+	42	[188]	SETTABLE 	0 -19 2	; "m_itemRestNumber" -
+	43	[189]	GETTABLE 	2 0 -16	; "m_storageRestNumber"
+	44	[189]	SUB      	2 2 1
+	45	[189]	SETTABLE 	0 -16 2	; "m_storageRestNumber" -
+	46	[190]	GETTABLE 	2 0 -16	; "m_storageRestNumber"
+	47	[190]	LE       	0 2 -17	; - 0
+	48	[190]	JMP      	0 8	; to 57
+	49	[191]	SETTABLE 	0 -16 -17	; "m_storageRestNumber" 0
+	50	[192]	GETTABLE 	2 0 -5	; "m_startTimer"
+	51	[192]	GETTABLE 	3 0 -21	; "m_itemRecoveryDuration"
+	52	[192]	ADD      	2 2 3
+	53	[192]	SETTABLE 	0 -5 2	; "m_startTimer" -
+	54	[193]	SELF     	2 0 -22	; "UpdatePerSecond"
+	55	[193]	CALL     	2 2 1
+	56	[193]	JMP      	0 1	; to 58
+	57	[195]	SETTABLE 	0 -5 -6	; "m_startTimer" nil
+	58	[197]	RETURN   	0 1
+constants (22) for 0000022A550E56B0:
+	1	"m_state"
+	2	"ItemSpreadState"
+	3	"Initializing"
+	4	"Opening"
+	5	"m_startTimer"
+	6	nil
+	7	"Opened"
+	8	"EventDispatcher"
+	9	"DispatchEvent"
+	10	"EEventType"
+	11	"ItemOpened"
+	12	"item"
+	13	"m_itemModel"
+	14	"GetBoardModel"
+	15	"UpdateOpeningItem"
+	16	"m_storageRestNumber"
+	17	0
+	18	"m_storageMaxNumber"
+	19	"m_itemRestNumber"
+	20	"m_itemMaxNumber"
+	21	"m_itemRecoveryDuration"
+	22	"UpdatePerSecond"
+locals (2) for 0000022A550E56B0:
+	0	self	1	59
+	1	recoveryNumber	41	59
+upvalues (1) for 0000022A550E56B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:199,221> (63 instructions at 0000022A550E5A80)
+1 param, 8 slots, 1 upvalue, 8 locals, 28 constants, 0 functions
+	1	[200]	LOADK    	1 -1	; 1
+	2	[201]	GETTABUP 	2 0 -2	; _ENV "GameConfig"
+	3	[201]	GETTABLE 	2 2 -3	; "IsTestMode"
+	4	[201]	CALL     	2 1 2
+	5	[201]	TEST     	2 0
+	6	[201]	JMP      	0 18	; to 25
+	7	[201]	GETTABUP 	2 0 -4	; _ENV "PlayerPrefs"
+	8	[201]	GETTABLE 	2 2 -5	; "GetInt"
+	9	[201]	GETTABUP 	3 0 -6	; _ENV "EPlayerPrefKey"
+	10	[201]	GETTABLE 	3 3 -7	; "TestSuperTap"
+	11	[201]	LOADK    	4 -8	; 0
+	12	[201]	CALL     	2 3 2
+	13	[201]	EQ       	0 2 -1	; - 1
+	14	[201]	JMP      	0 10	; to 25
+	15	[202]	LOADK    	1 -9	; 10
+	16	[203]	GETTABLE 	2 0 -10	; "m_itemModel"
+	17	[203]	SELF     	2 2 -11	; "GetBoardModel"
+	18	[203]	CALL     	2 2 2
+	19	[203]	GETTABLE 	2 2 -12	; "BoardType"
+	20	[203]	GETTABUP 	3 0 -13	; _ENV "EBoardType"
+	21	[203]	GETTABLE 	3 3 -14	; "Tutorial"
+	22	[203]	EQ       	0 2 3
+	23	[203]	JMP      	0 1	; to 25
+	24	[204]	LOADK    	1 -1	; 1
+	25	[208]	LOADK    	2 -1	; 1
+	26	[208]	MOVE     	3 1
+	27	[208]	LOADK    	4 -1	; 1
+	28	[208]	FORPREP  	2 4	; to 33
+	29	[209]	SELF     	6 0 -15	; "_TrySpread"
+	30	[209]	CALL     	6 2 2
+	31	[210]	TEST     	6 0
+	32	[210]	JMP      	0 1	; to 34
+	33	[208]	FORLOOP  	2 -5	; to 29
+	34	[215]	SELF     	2 0 -16	; "IsDisposable"
+	35	[215]	CALL     	2 2 2
+	36	[215]	TEST     	2 1
+	37	[215]	JMP      	0 25	; to 63
+	38	[215]	SELF     	2 0 -17	; "CanAccelerate"
+	39	[215]	CALL     	2 2 2
+	40	[215]	TEST     	2 0
+	41	[215]	JMP      	0 21	; to 63
+	42	[216]	SELF     	2 0 -18	; "GetTimerDuration"
+	43	[216]	CALL     	2 2 2
+	44	[216]	SELF     	3 0 -19	; "GetStartTimer"
+	45	[216]	CALL     	3 2 2
+	46	[216]	ADD      	2 2 3
+	47	[216]	GETTABUP 	3 0 -20	; _ENV "GM"
+	48	[216]	GETTABLE 	3 3 -21	; "GameModel"
+	49	[216]	SELF     	3 3 -22	; "GetServerTime"
+	50	[216]	CALL     	3 2 2
+	51	[216]	SUB      	2 2 3
+	52	[217]	LE       	0 -23 2	; 1200 -
+	53	[217]	JMP      	0 9	; to 63
+	54	[217]	GETTABLE 	3 0 -24	; "m_itemRestNumber"
+	55	[217]	EQ       	0 3 -8	; - 0
+	56	[217]	JMP      	0 6	; to 63
+	57	[218]	GETTABUP 	3 0 -20	; _ENV "GM"
+	58	[218]	GETTABLE 	3 3 -25	; "NotificationModel"
+	59	[218]	SELF     	3 3 -26	; "TryOpenIOSNotificationWindow"
+	60	[218]	GETTABUP 	5 0 -27	; _ENV "ENotiSceneDescKey"
+	61	[218]	GETTABLE 	5 5 -28	; "ItemCoolDown"
+	62	[218]	CALL     	3 3 1
+	63	[221]	RETURN   	0 1
+constants (28) for 0000022A550E5A80:
+	1	1
+	2	"GameConfig"
+	3	"IsTestMode"
+	4	"PlayerPrefs"
+	5	"GetInt"
+	6	"EPlayerPrefKey"
+	7	"TestSuperTap"
+	8	0
+	9	10
+	10	"m_itemModel"
+	11	"GetBoardModel"
+	12	"BoardType"
+	13	"EBoardType"
+	14	"Tutorial"
+	15	"_TrySpread"
+	16	"IsDisposable"
+	17	"CanAccelerate"
+	18	"GetTimerDuration"
+	19	"GetStartTimer"
+	20	"GM"
+	21	"GameModel"
+	22	"GetServerTime"
+	23	1200
+	24	"m_itemRestNumber"
+	25	"NotificationModel"
+	26	"TryOpenIOSNotificationWindow"
+	27	"ENotiSceneDescKey"
+	28	"ItemCoolDown"
+locals (8) for 0000022A550E5A80:
+	0	self	1	64
+	1	spreadCount	2	64
+	2	(for index)	28	34
+	3	(for limit)	28	34
+	4	(for step)	28	34
+	5	i	29	33
+	6	canContinue	31	33
+	7	restDuration	52	63
+upvalues (1) for 0000022A550E5A80:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:223,230> (25 instructions at 0000022A550E7FE0)
+1 param, 6 slots, 1 upvalue, 1 local, 17 constants, 0 functions
+	1	[224]	GETTABUP 	1 0 -2	; _ENV "ItemSpreadState"
+	2	[224]	GETTABLE 	1 1 -3	; "Opening"
+	3	[224]	SETTABLE 	0 -1 1	; "m_state" -
+	4	[225]	SELF     	1 0 -4	; "UpdatePerSecond"
+	5	[225]	CALL     	1 2 1
+	6	[226]	GETTABUP 	1 0 -5	; _ENV "EventDispatcher"
+	7	[226]	GETTABLE 	1 1 -6	; "DispatchEvent"
+	8	[226]	GETTABUP 	2 0 -7	; _ENV "EEventType"
+	9	[226]	GETTABLE 	2 2 -8	; "ItemOpening"
+	10	[226]	CALL     	1 2 1
+	11	[227]	GETTABLE 	1 0 -9	; "m_itemModel"
+	12	[227]	SELF     	1 1 -10	; "GetBoardModel"
+	13	[227]	CALL     	1 2 2
+	14	[227]	SELF     	1 1 -11	; "UpdateOpeningItem"
+	15	[227]	CALL     	1 2 1
+	16	[229]	GETTABUP 	1 0 -12	; _ENV "GM"
+	17	[229]	GETTABLE 	1 1 -13	; "BIManager"
+	18	[229]	SELF     	1 1 -14	; "LogAction"
+	19	[229]	GETTABUP 	3 0 -15	; _ENV "EBIType"
+	20	[229]	GETTABLE 	3 3 -16	; "OpenItem"
+	21	[229]	GETTABLE 	4 0 -9	; "m_itemModel"
+	22	[229]	SELF     	4 4 -17	; "GetId"
+	23	[229]	CALL     	4 2 0
+	24	[229]	CALL     	1 0 1
+	25	[230]	RETURN   	0 1
+constants (17) for 0000022A550E7FE0:
+	1	"m_state"
+	2	"ItemSpreadState"
+	3	"Opening"
+	4	"UpdatePerSecond"
+	5	"EventDispatcher"
+	6	"DispatchEvent"
+	7	"EEventType"
+	8	"ItemOpening"
+	9	"m_itemModel"
+	10	"GetBoardModel"
+	11	"UpdateOpeningItem"
+	12	"GM"
+	13	"BIManager"
+	14	"LogAction"
+	15	"EBIType"
+	16	"OpenItem"
+	17	"GetId"
+locals (1) for 0000022A550E7FE0:
+	0	self	1	26
+upvalues (1) for 0000022A550E7FE0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:232,234> (4 instructions at 0000022A550E85E0)
+2 params, 5 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[233]	SELF     	2 0 -1	; "_SpeedUp"
+	2	[233]	MOVE     	4 1
+	3	[233]	CALL     	2 3 1
+	4	[234]	RETURN   	0 1
+constants (1) for 0000022A550E85E0:
+	1	"_SpeedUp"
+locals (2) for 0000022A550E85E0:
+	0	self	1	5
+	1	isFree	1	5
+upvalues (0) for 0000022A550E85E0:
+
+function <ItemSpread.lua:236,254> (59 instructions at 0000022A550E7BE0)
+2 params, 11 slots, 1 upvalue, 5 locals, 26 constants, 0 functions
+	1	[237]	TEST     	1 1
+	2	[237]	JMP      	0 37	; to 40
+	3	[238]	SELF     	2 0 -1	; "GetSpeedUpCost"
+	4	[238]	CALL     	2 2 2
+	5	[239]	GETTABUP 	3 0 -2	; _ENV "GM"
+	6	[239]	GETTABLE 	3 3 -3	; "PropertyDataManager"
+	7	[239]	SELF     	3 3 -4	; "GetPropertyNum"
+	8	[239]	GETTABUP 	5 0 -5	; _ENV "EPropertyType"
+	9	[239]	GETTABLE 	5 5 -6	; "Gem"
+	10	[239]	CALL     	3 3 2
+	11	[240]	LT       	0 3 2
+	12	[240]	JMP      	0 15	; to 28
+	13	[241]	GETTABLE 	4 0 -7	; "m_itemModel"
+	14	[241]	SELF     	4 4 -8	; "GetBoardModel"
+	15	[241]	CALL     	4 2 2
+	16	[242]	GETTABLE 	5 4 -9	; "event"
+	17	[242]	SELF     	5 5 -10	; "Call"
+	18	[242]	GETTABUP 	7 0 -11	; _ENV "BoardEventType"
+	19	[242]	GETTABLE 	7 7 -12	; "LackGem"
+	20	[242]	NEWTABLE 	8 0 2
+	21	[242]	SUB      	9 2 3
+	22	[242]	SETTABLE 	8 -13 9	; "LackNumber" -
+	23	[242]	GETTABUP 	9 0 -15	; _ENV "EGemCostScene"
+	24	[242]	GETTABLE 	9 9 -16	; "TimeSkip"
+	25	[242]	SETTABLE 	8 -14 9	; "Scene" -
+	26	[242]	CALL     	5 4 1
+	27	[243]	RETURN   	0 1
+	28	[246]	GETTABUP 	4 0 -2	; _ENV "GM"
+	29	[246]	GETTABLE 	4 4 -3	; "PropertyDataManager"
+	30	[246]	SELF     	4 4 -17	; "Consume"
+	31	[246]	GETTABUP 	6 0 -5	; _ENV "EPropertyType"
+	32	[246]	GETTABLE 	6 6 -6	; "Gem"
+	33	[246]	MOVE     	7 2
+	34	[246]	GETTABUP 	8 0 -18	; _ENV "EBIType"
+	35	[246]	GETTABLE 	8 8 -19	; "SpeedUp"
+	36	[246]	GETTABLE 	9 0 -7	; "m_itemModel"
+	37	[246]	SELF     	9 9 -20	; "GetCode"
+	38	[246]	CALL     	9 2 0
+	39	[246]	CALL     	4 0 1
+	40	[250]	GETTABLE 	2 0 -21	; "m_startTimer"
+	41	[250]	EQ       	1 2 -22	; - nil
+	42	[250]	JMP      	0 16	; to 59
+	43	[251]	SELF     	2 0 -23	; "OnTimeSkip"
+	44	[251]	LOADNIL  	4 0
+	45	[251]	TEST     	1 0
+	46	[251]	JMP      	0 4	; to 51
+	47	[251]	GETTABUP 	5 0 -24	; _ENV "ItemSkipType"
+	48	[251]	GETTABLE 	5 5 -25	; "ad"
+	49	[251]	TEST     	5 1
+	50	[251]	JMP      	0 2	; to 53
+	51	[251]	GETTABUP 	5 0 -24	; _ENV "ItemSkipType"
+	52	[251]	GETTABLE 	5 5 -6	; "Gem"
+	53	[251]	CALL     	2 4 1
+	54	[252]	GETTABLE 	2 0 -9	; "event"
+	55	[252]	SELF     	2 2 -10	; "Call"
+	56	[252]	GETTABUP 	4 0 -26	; _ENV "ItemSpreadEventType"
+	57	[252]	GETTABLE 	4 4 -19	; "SpeedUp"
+	58	[252]	CALL     	2 3 1
+	59	[254]	RETURN   	0 1
+constants (26) for 0000022A550E7BE0:
+	1	"GetSpeedUpCost"
+	2	"GM"
+	3	"PropertyDataManager"
+	4	"GetPropertyNum"
+	5	"EPropertyType"
+	6	"Gem"
+	7	"m_itemModel"
+	8	"GetBoardModel"
+	9	"event"
+	10	"Call"
+	11	"BoardEventType"
+	12	"LackGem"
+	13	"LackNumber"
+	14	"Scene"
+	15	"EGemCostScene"
+	16	"TimeSkip"
+	17	"Consume"
+	18	"EBIType"
+	19	"SpeedUp"
+	20	"GetCode"
+	21	"m_startTimer"
+	22	nil
+	23	"OnTimeSkip"
+	24	"ItemSkipType"
+	25	"ad"
+	26	"ItemSpreadEventType"
+locals (5) for 0000022A550E7BE0:
+	0	self	1	60
+	1	isFree	1	60
+	2	cost	5	40
+	3	gemNumber	11	40
+	4	boardModel	16	28
+upvalues (1) for 0000022A550E7BE0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:256,278> (50 instructions at 0000022A550E86E0)
+3 params, 9 slots, 1 upvalue, 3 locals, 23 constants, 0 functions
+	1	[257]	GETTABLE 	3 0 -1	; "m_startTimer"
+	2	[257]	EQ       	1 3 -2	; - nil
+	3	[257]	JMP      	0 46	; to 50
+	4	[258]	EQ       	0 1 -2	; - nil
+	5	[258]	JMP      	0 8	; to 14
+	6	[259]	SELF     	3 0 -3	; "GetTimerDuration"
+	7	[259]	CALL     	3 2 2
+	8	[259]	MOVE     	1 3
+	9	[261]	GETTABUP 	3 0 -4	; _ENV "GM"
+	10	[261]	GETTABLE 	3 3 -5	; "GameModel"
+	11	[261]	SELF     	3 3 -6	; "GetServerTime"
+	12	[261]	CALL     	3 2 2
+	13	[261]	SETTABLE 	0 -1 3	; "m_startTimer" -
+	14	[264]	GETTABLE 	3 0 -1	; "m_startTimer"
+	15	[264]	SUB      	3 3 1
+	16	[264]	SETTABLE 	0 -1 3	; "m_startTimer" -
+	17	[265]	GETTABLE 	3 0 -7	; "m_itemModel"
+	18	[265]	SELF     	3 3 -8	; "GetBoardModel"
+	19	[265]	CALL     	3 2 2
+	20	[265]	SELF     	3 3 -9	; "SaveItemProperty"
+	21	[265]	GETTABLE 	5 0 -7	; "m_itemModel"
+	22	[265]	CALL     	3 3 1
+	23	[267]	GETTABUP 	3 0 -4	; _ENV "GM"
+	24	[267]	GETTABLE 	3 3 -10	; "AudioModel"
+	25	[267]	SELF     	3 3 -11	; "PlayEffect"
+	26	[267]	GETTABUP 	5 0 -12	; _ENV "AudioFileConfigName"
+	27	[267]	GETTABLE 	5 5 -13	; "sfxItemSpeedUp"
+	28	[267]	CALL     	3 3 1
+	29	[268]	SELF     	3 0 -14	; "UpdatePerSecond"
+	30	[268]	CALL     	3 2 1
+	31	[270]	GETTABLE 	3 0 -7	; "m_itemModel"
+	32	[270]	SELF     	3 3 -8	; "GetBoardModel"
+	33	[270]	CALL     	3 2 2
+	34	[270]	GETTABLE 	3 3 -15	; "IgnoreBI"
+	35	[270]	TEST     	3 1
+	36	[270]	JMP      	0 13	; to 50
+	37	[271]	GETTABUP 	3 0 -4	; _ENV "GM"
+	38	[271]	GETTABLE 	3 3 -16	; "BIManager"
+	39	[271]	SELF     	3 3 -17	; "LogAction"
+	40	[271]	GETTABUP 	5 0 -18	; _ENV "EBIType"
+	41	[271]	GETTABLE 	5 5 -19	; "SpeedUp"
+	42	[271]	NEWTABLE 	6 0 3
+	43	[272]	GETTABLE 	7 0 -7	; "m_itemModel"
+	44	[272]	SELF     	7 7 -21	; "GetType"
+	45	[272]	CALL     	7 2 2
+	46	[272]	SETTABLE 	6 -20 7	; "t" -
+	47	[273]	SETTABLE 	6 -22 1	; "d" -
+	48	[274]	SETTABLE 	6 -23 2	; "s" -
+	49	[271]	CALL     	3 4 1
+	50	[278]	RETURN   	0 1
+constants (23) for 0000022A550E86E0:
+	1	"m_startTimer"
+	2	nil
+	3	"GetTimerDuration"
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"m_itemModel"
+	8	"GetBoardModel"
+	9	"SaveItemProperty"
+	10	"AudioModel"
+	11	"PlayEffect"
+	12	"AudioFileConfigName"
+	13	"sfxItemSpeedUp"
+	14	"UpdatePerSecond"
+	15	"IgnoreBI"
+	16	"BIManager"
+	17	"LogAction"
+	18	"EBIType"
+	19	"SpeedUp"
+	20	"t"
+	21	"GetType"
+	22	"d"
+	23	"s"
+locals (3) for 0000022A550E86E0:
+	0	self	1	51
+	1	duration	1	51
+	2	BISkipType	1	51
+upvalues (1) for 0000022A550E86E0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:280,284> (6 instructions at 0000022A550E8160)
+1 param, 3 slots, 0 upvalues, 1 local, 3 constants, 0 functions
+	1	[281]	GETTABLE 	1 0 -1	; "m_itemRestNumber"
+	2	[281]	EQ       	0 1 -2	; - 0
+	3	[281]	JMP      	0 2	; to 6
+	4	[282]	SELF     	1 0 -3	; "TryUseCDBuff"
+	5	[282]	CALL     	1 2 1
+	6	[284]	RETURN   	0 1
+constants (3) for 0000022A550E8160:
+	1	"m_itemRestNumber"
+	2	0
+	3	"TryUseCDBuff"
+locals (1) for 0000022A550E8160:
+	0	self	1	7
+upvalues (0) for 0000022A550E8160:
+
+function <ItemSpread.lua:286,300> (27 instructions at 0000022A550E8460)
+1 param, 5 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[288]	SELF     	1 0 -1	; "CanSupportCDBuff"
+	2	[288]	CALL     	1 2 2
+	3	[289]	TEST     	1 1
+	4	[289]	JMP      	0 9	; to 14
+	5	[289]	SELF     	1 0 -2	; "CanSupportGeneratorBoostCDBuff"
+	6	[289]	CALL     	1 2 2
+	7	[290]	TEST     	1 1
+	8	[290]	JMP      	0 5	; to 14
+	9	[290]	SELF     	1 0 -3	; "CanTestSupportCDFree"
+	10	[290]	CALL     	1 2 2
+	11	[291]	TEST     	1 1
+	12	[291]	JMP      	0 1	; to 14
+	13	[292]	RETURN   	0 1
+	14	[295]	GETTABLE 	1 0 -4	; "m_itemRestNumber"
+	15	[295]	EQ       	0 1 -5	; - 0
+	16	[295]	JMP      	0 5	; to 22
+	17	[296]	SELF     	1 0 -6	; "OnTimeSkip"
+	18	[296]	LOADNIL  	3 0
+	19	[296]	GETTABUP 	4 0 -7	; _ENV "ItemSkipType"
+	20	[296]	GETTABLE 	4 4 -8	; "Buff"
+	21	[296]	CALL     	1 4 1
+	22	[299]	GETTABLE 	1 0 -9	; "event"
+	23	[299]	SELF     	1 1 -10	; "Call"
+	24	[299]	GETTABUP 	3 0 -11	; _ENV "ItemSpreadEventType"
+	25	[299]	GETTABLE 	3 3 -12	; "StateChanged"
+	26	[299]	CALL     	1 3 1
+	27	[300]	RETURN   	0 1
+constants (12) for 0000022A550E8460:
+	1	"CanSupportCDBuff"
+	2	"CanSupportGeneratorBoostCDBuff"
+	3	"CanTestSupportCDFree"
+	4	"m_itemRestNumber"
+	5	0
+	6	"OnTimeSkip"
+	7	"ItemSkipType"
+	8	"Buff"
+	9	"event"
+	10	"Call"
+	11	"ItemSpreadEventType"
+	12	"StateChanged"
+locals (1) for 0000022A550E8460:
+	0	self	1	28
+upvalues (1) for 0000022A550E8460:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:302,320> (37 instructions at 0000022A550E7E60)
+1 param, 5 slots, 1 upvalue, 1 local, 17 constants, 0 functions
+	1	[303]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[303]	GETTABLE 	1 1 -2	; "ItemDataModel"
+	3	[303]	SELF     	1 1 -3	; "IsGeneratorItem"
+	4	[303]	GETTABLE 	3 0 -4	; "m_itemModel"
+	5	[303]	SELF     	3 3 -5	; "GetType"
+	6	[303]	CALL     	3 2 0
+	7	[303]	CALL     	1 0 2
+	8	[303]	TEST     	1 1
+	9	[303]	JMP      	0 1	; to 11
+	10	[304]	RETURN   	0 1
+	11	[307]	SELF     	1 0 -6	; "CostEnergy"
+	12	[307]	CALL     	1 2 2
+	13	[307]	TEST     	1 1
+	14	[307]	JMP      	0 1	; to 16
+	15	[308]	RETURN   	0 1
+	16	[311]	GETTABUP 	1 0 -1	; _ENV "GM"
+	17	[311]	GETTABLE 	1 1 -7	; "MainBoardModel"
+	18	[311]	GETTABLE 	2 0 -4	; "m_itemModel"
+	19	[311]	SELF     	2 2 -8	; "GetBoardModel"
+	20	[311]	CALL     	2 2 2
+	21	[311]	EQ       	1 1 2
+	22	[311]	JMP      	0 1	; to 24
+	23	[312]	RETURN   	0 1
+	24	[315]	GETTABLE 	1 0 -9	; "m_itemRestNumber"
+	25	[315]	EQ       	0 1 -10	; - 0
+	26	[315]	JMP      	0 5	; to 32
+	27	[316]	SELF     	1 0 -11	; "OnTimeSkip"
+	28	[316]	LOADNIL  	3 0
+	29	[316]	GETTABUP 	4 0 -12	; _ENV "ItemSkipType"
+	30	[316]	GETTABLE 	4 4 -13	; "Buff"
+	31	[316]	CALL     	1 4 1
+	32	[319]	GETTABLE 	1 0 -14	; "event"
+	33	[319]	SELF     	1 1 -15	; "Call"
+	34	[319]	GETTABUP 	3 0 -16	; _ENV "ItemSpreadEventType"
+	35	[319]	GETTABLE 	3 3 -17	; "StateChanged"
+	36	[319]	CALL     	1 3 1
+	37	[320]	RETURN   	0 1
+constants (17) for 0000022A550E7E60:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"IsGeneratorItem"
+	4	"m_itemModel"
+	5	"GetType"
+	6	"CostEnergy"
+	7	"MainBoardModel"
+	8	"GetBoardModel"
+	9	"m_itemRestNumber"
+	10	0
+	11	"OnTimeSkip"
+	12	"ItemSkipType"
+	13	"Buff"
+	14	"event"
+	15	"Call"
+	16	"ItemSpreadEventType"
+	17	"StateChanged"
+locals (1) for 0000022A550E7E60:
+	0	self	1	38
+upvalues (1) for 0000022A550E7E60:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:323,332> (23 instructions at 0000022A550E8860)
+1 param, 4 slots, 1 upvalue, 1 local, 15 constants, 0 functions
+	1	[324]	SETTABLE 	0 -1 -2	; "m_itemRestNumber" 0
+	2	[325]	SETTABLE 	0 -3 -2	; "m_storageRestNumber" 0
+	3	[326]	GETTABLE 	1 0 -4	; "m_weightType"
+	4	[326]	GETTABUP 	2 0 -5	; _ENV "ItemSpreadWeightType"
+	5	[326]	GETTABLE 	2 2 -6	; "Decremental"
+	6	[326]	EQ       	0 1 2
+	7	[326]	JMP      	0 2	; to 10
+	8	[327]	NEWTABLE 	1 0 0
+	9	[327]	SETTABLE 	0 -7 1	; "m_codeWeightPairs" -
+	10	[329]	SELF     	1 0 -8	; "UpdatePerSecond"
+	11	[329]	CALL     	1 2 1
+	12	[330]	GETTABLE 	1 0 -9	; "event"
+	13	[330]	SELF     	1 1 -10	; "Call"
+	14	[330]	GETTABUP 	3 0 -11	; _ENV "ItemSpreadEventType"
+	15	[330]	GETTABLE 	3 3 -12	; "StateChanged"
+	16	[330]	CALL     	1 3 1
+	17	[331]	GETTABLE 	1 0 -13	; "m_itemModel"
+	18	[331]	SELF     	1 1 -14	; "GetBoardModel"
+	19	[331]	CALL     	1 2 2
+	20	[331]	SELF     	1 1 -15	; "SaveItemProperty"
+	21	[331]	GETTABLE 	3 0 -13	; "m_itemModel"
+	22	[331]	CALL     	1 3 1
+	23	[332]	RETURN   	0 1
+constants (15) for 0000022A550E8860:
+	1	"m_itemRestNumber"
+	2	0
+	3	"m_storageRestNumber"
+	4	"m_weightType"
+	5	"ItemSpreadWeightType"
+	6	"Decremental"
+	7	"m_codeWeightPairs"
+	8	"UpdatePerSecond"
+	9	"event"
+	10	"Call"
+	11	"ItemSpreadEventType"
+	12	"StateChanged"
+	13	"m_itemModel"
+	14	"GetBoardModel"
+	15	"SaveItemProperty"
+locals (1) for 0000022A550E8860:
+	0	self	1	24
+upvalues (1) for 0000022A550E8860:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:336,338> (7 instructions at 0000022A550E81E0)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[337]	GETTABLE 	1 0 -1	; "m_auto"
+	2	[337]	EQ       	1 1 -2	; - 1
+	3	[337]	JMP      	0 1	; to 5
+	4	[337]	LOADBOOL 	1 0 1
+	5	[337]	LOADBOOL 	1 1 0
+	6	[337]	RETURN   	1 2
+	7	[338]	RETURN   	0 1
+constants (2) for 0000022A550E81E0:
+	1	"m_auto"
+	2	1
+locals (1) for 0000022A550E81E0:
+	0	self	1	8
+upvalues (0) for 0000022A550E81E0:
+
+function <ItemSpread.lua:340,342> (3 instructions at 0000022A550E8760)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[341]	GETTABLE 	1 0 -1	; "m_openDuration"
+	2	[341]	RETURN   	1 2
+	3	[342]	RETURN   	0 1
+constants (1) for 0000022A550E8760:
+	1	"m_openDuration"
+locals (1) for 0000022A550E8760:
+	0	self	1	4
+upvalues (0) for 0000022A550E8760:
+
+function <ItemSpread.lua:344,351> (13 instructions at 0000022A550E87E0)
+1 param, 3 slots, 1 upvalue, 2 locals, 5 constants, 0 functions
+	1	[345]	GETTABUP 	1 0 -1	; _ENV "TutorialBoardHelper"
+	2	[345]	GETTABLE 	1 1 -2	; "GetForcedCostEnergy"
+	3	[345]	CALL     	1 1 2
+	4	[346]	EQ       	1 1 -3	; - nil
+	5	[346]	JMP      	0 1	; to 7
+	6	[347]	RETURN   	1 2
+	7	[350]	GETTABLE 	2 0 -4	; "m_costEnergy"
+	8	[350]	EQ       	1 2 -5	; - 1
+	9	[350]	JMP      	0 1	; to 11
+	10	[350]	LOADBOOL 	2 0 1
+	11	[350]	LOADBOOL 	2 1 0
+	12	[350]	RETURN   	2 2
+	13	[351]	RETURN   	0 1
+constants (5) for 0000022A550E87E0:
+	1	"TutorialBoardHelper"
+	2	"GetForcedCostEnergy"
+	3	nil
+	4	"m_costEnergy"
+	5	1
+locals (2) for 0000022A550E87E0:
+	0	self	1	14
+	1	forcedCostEnergy	4	14
+upvalues (1) for 0000022A550E87E0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:353,355> (6 instructions at 0000022A550E7AE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[354]	GETTABLE 	1 0 -1	; "m_codeWeightPairs"
+	2	[354]	TEST     	1 1
+	3	[354]	JMP      	0 1	; to 5
+	4	[354]	NEWTABLE 	1 0 0
+	5	[354]	RETURN   	1 2
+	6	[355]	RETURN   	0 1
+constants (1) for 0000022A550E7AE0:
+	1	"m_codeWeightPairs"
+locals (1) for 0000022A550E7AE0:
+	0	self	1	7
+upvalues (0) for 0000022A550E7AE0:
+
+function <ItemSpread.lua:357,359> (3 instructions at 0000022A550E88E0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[358]	GETTABLE 	1 0 -1	; "m_itemRestNumber"
+	2	[358]	RETURN   	1 2
+	3	[359]	RETURN   	0 1
+constants (1) for 0000022A550E88E0:
+	1	"m_itemRestNumber"
+locals (1) for 0000022A550E88E0:
+	0	self	1	4
+upvalues (0) for 0000022A550E88E0:
+
+function <ItemSpread.lua:361,363> (3 instructions at 0000022A550E8960)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[362]	GETTABLE 	1 0 -1	; "m_storageRestNumber"
+	2	[362]	RETURN   	1 2
+	3	[363]	RETURN   	0 1
+constants (1) for 0000022A550E8960:
+	1	"m_storageRestNumber"
+locals (1) for 0000022A550E8960:
+	0	self	1	4
+upvalues (0) for 0000022A550E8960:
+
+function <ItemSpread.lua:365,367> (3 instructions at 0000022A550E84E0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[366]	GETTABLE 	1 0 -1	; "m_spreadCount"
+	2	[366]	RETURN   	1 2
+	3	[367]	RETURN   	0 1
+constants (1) for 0000022A550E84E0:
+	1	"m_spreadCount"
+locals (1) for 0000022A550E84E0:
+	0	self	1	4
+upvalues (0) for 0000022A550E84E0:
+
+function <ItemSpread.lua:369,371> (3 instructions at 0000022A550E7EE0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[370]	GETTABLE 	1 0 -1	; "m_itemMaxNumber"
+	2	[370]	RETURN   	1 2
+	3	[371]	RETURN   	0 1
+constants (1) for 0000022A550E7EE0:
+	1	"m_itemMaxNumber"
+locals (1) for 0000022A550E7EE0:
+	0	self	1	4
+upvalues (0) for 0000022A550E7EE0:
+
+function <ItemSpread.lua:373,375> (3 instructions at 0000022A550E80E0)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[374]	GETTABLE 	1 0 -1	; "m_state"
+	2	[374]	RETURN   	1 2
+	3	[375]	RETURN   	0 1
+constants (1) for 0000022A550E80E0:
+	1	"m_state"
+locals (1) for 0000022A550E80E0:
+	0	self	1	4
+upvalues (0) for 0000022A550E80E0:
+
+function <ItemSpread.lua:377,379> (3 instructions at 0000022A550E7F60)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[378]	GETTABLE 	1 0 -1	; "m_startTimer"
+	2	[378]	RETURN   	1 2
+	3	[379]	RETURN   	0 1
+constants (1) for 0000022A550E7F60:
+	1	"m_startTimer"
+locals (1) for 0000022A550E7F60:
+	0	self	1	4
+upvalues (0) for 0000022A550E7F60:
+
+function <ItemSpread.lua:381,383> (3 instructions at 0000022A550E8060)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[382]	GETTABLE 	1 0 -1	; "m_weightType"
+	2	[382]	RETURN   	1 2
+	3	[383]	RETURN   	0 1
+constants (1) for 0000022A550E8060:
+	1	"m_weightType"
+locals (1) for 0000022A550E8060:
+	0	self	1	4
+upvalues (0) for 0000022A550E8060:
+
+function <ItemSpread.lua:385,387> (3 instructions at 0000022A550E7B60)
+1 param, 2 slots, 0 upvalues, 1 local, 1 constant, 0 functions
+	1	[386]	GETTABLE 	1 0 -1	; "m_transformNumber"
+	2	[386]	RETURN   	1 2
+	3	[387]	RETURN   	0 1
+constants (1) for 0000022A550E7B60:
+	1	"m_transformNumber"
+locals (1) for 0000022A550E7B60:
+	0	self	1	4
+upvalues (0) for 0000022A550E7B60:
+
+function <ItemSpread.lua:389,400> (32 instructions at 0000022A550E7C60)
+1 param, 13 slots, 1 upvalue, 11 locals, 11 constants, 0 functions
+	1	[390]	SELF     	1 0 -1	; "IsAutoSpread"
+	2	[390]	CALL     	1 2 2
+	3	[390]	TEST     	1 0
+	4	[390]	JMP      	0 8	; to 13
+	5	[390]	GETTABLE 	1 0 -2	; "m_weightType"
+	6	[390]	GETTABUP 	2 0 -3	; _ENV "ItemSpreadWeightType"
+	7	[390]	GETTABLE 	2 2 -4	; "Decremental"
+	8	[390]	EQ       	0 1 2
+	9	[390]	JMP      	0 3	; to 13
+	10	[390]	GETTABLE 	1 0 -5	; "m_itemRestNumber"
+	11	[390]	EQ       	0 1 -6	; - 0
+	12	[390]	JMP      	0 2	; to 15
+	13	[391]	LOADNIL  	1 0
+	14	[391]	RETURN   	1 2
+	15	[393]	NEWTABLE 	1 0 0
+	16	[394]	GETTABUP 	2 0 -7	; _ENV "ipairs"
+	17	[394]	GETTABLE 	3 0 -8	; "m_codeWeightPairs"
+	18	[394]	CALL     	2 2 4
+	19	[394]	JMP      	0 9	; to 29
+	20	[395]	LOADK    	7 -9	; 1
+	21	[395]	GETTABLE 	8 6 -10	; "Weight"
+	22	[395]	LOADK    	9 -9	; 1
+	23	[395]	FORPREP  	7 4	; to 28
+	24	[396]	LEN      	11 1
+	25	[396]	ADD      	11 11 -9	; - 1
+	26	[396]	GETTABLE 	12 6 -11	; "Code"
+	27	[396]	SETTABLE 	1 11 12
+	28	[395]	FORLOOP  	7 -5	; to 24
+	29	[394]	TFORCALL 	2 2
+	30	[394]	TFORLOOP 	4 -11	; to 20
+	31	[399]	RETURN   	1 2
+	32	[400]	RETURN   	0 1
+constants (11) for 0000022A550E7C60:
+	1	"IsAutoSpread"
+	2	"m_weightType"
+	3	"ItemSpreadWeightType"
+	4	"Decremental"
+	5	"m_itemRestNumber"
+	6	0
+	7	"ipairs"
+	8	"m_codeWeightPairs"
+	9	1
+	10	"Weight"
+	11	"Code"
+locals (11) for 0000022A550E7C60:
+	0	self	1	33
+	1	remainTypes	16	33
+	2	(for generator)	19	31
+	3	(for state)	19	31
+	4	(for control)	19	31
+	5	_	20	29
+	6	item	20	29
+	7	(for index)	23	29
+	8	(for limit)	23	29
+	9	(for step)	23	29
+	10	i	24	28
+upvalues (1) for 0000022A550E7C60:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:402,411> (28 instructions at 0000022A550E7CE0)
+1 param, 4 slots, 1 upvalue, 1 local, 10 constants, 0 functions
+	1	[403]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[403]	GETTABLE 	1 1 -2	; "BuffManager"
+	3	[403]	SELF     	1 1 -3	; "IsBuffActiveByType"
+	4	[403]	GETTABUP 	3 0 -4	; _ENV "EBuffProperty"
+	5	[403]	GETTABLE 	3 3 -5	; "BuffItemcd"
+	6	[403]	CALL     	1 3 2
+	7	[404]	TEST     	1 0
+	8	[404]	JMP      	0 17	; to 26
+	9	[404]	GETTABLE 	1 0 -6	; "m_itemModel"
+	10	[404]	SELF     	1 1 -7	; "GetBoardModel"
+	11	[404]	CALL     	1 2 2
+	12	[404]	GETTABUP 	2 0 -1	; _ENV "GM"
+	13	[404]	GETTABLE 	2 2 -8	; "MainBoardModel"
+	14	[404]	EQ       	0 1 2
+	15	[404]	JMP      	0 10	; to 26
+	16	[405]	SELF     	1 0 -9	; "CostEnergy"
+	17	[405]	CALL     	1 2 2
+	18	[406]	TEST     	1 0
+	19	[406]	JMP      	0 6	; to 26
+	20	[406]	SELF     	1 0 -10	; "IsDisposable"
+	21	[406]	CALL     	1 2 2
+	22	[406]	TEST     	1 1
+	23	[406]	JMP      	0 2	; to 26
+	24	[407]	LOADBOOL 	1 1 0
+	25	[407]	RETURN   	1 2
+	26	[410]	LOADBOOL 	1 0 0
+	27	[410]	RETURN   	1 2
+	28	[411]	RETURN   	0 1
+constants (10) for 0000022A550E7CE0:
+	1	"GM"
+	2	"BuffManager"
+	3	"IsBuffActiveByType"
+	4	"EBuffProperty"
+	5	"BuffItemcd"
+	6	"m_itemModel"
+	7	"GetBoardModel"
+	8	"MainBoardModel"
+	9	"CostEnergy"
+	10	"IsDisposable"
+locals (1) for 0000022A550E7CE0:
+	0	self	1	29
+upvalues (1) for 0000022A550E7CE0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:413,418> (34 instructions at 0000022A550E8260)
+1 param, 4 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[414]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[414]	GETTABLE 	1 1 -2	; "BuffManager"
+	3	[414]	SELF     	1 1 -3	; "IsBuffActiveByType"
+	4	[414]	GETTABUP 	3 0 -4	; _ENV "EBuffProperty"
+	5	[414]	GETTABLE 	3 3 -5	; "buff_smart"
+	6	[414]	CALL     	1 3 2
+	7	[415]	TEST     	1 0
+	8	[415]	JMP      	0 24	; to 33
+	9	[415]	GETTABLE 	1 0 -6	; "m_itemModel"
+	10	[415]	SELF     	1 1 -7	; "GetBoardModel"
+	11	[415]	CALL     	1 2 2
+	12	[415]	GETTABUP 	2 0 -1	; _ENV "GM"
+	13	[415]	GETTABLE 	2 2 -8	; "MainBoardModel"
+	14	[415]	EQ       	0 1 2
+	15	[415]	JMP      	0 15	; to 31
+	16	[416]	SELF     	1 0 -9	; "CostEnergy"
+	17	[416]	CALL     	1 2 2
+	18	[416]	TEST     	1 0
+	19	[416]	JMP      	0 4	; to 24
+	20	[416]	SELF     	1 0 -10	; "IsDisposable"
+	21	[416]	CALL     	1 2 2
+	22	[417]	TEST     	1 0
+	23	[417]	JMP      	0 8	; to 32
+	24	[417]	GETTABLE 	1 0 -6	; "m_itemModel"
+	25	[417]	SELF     	1 1 -11	; "GetType"
+	26	[417]	CALL     	1 2 2
+	27	[417]	GETTABUP 	2 0 -12	; _ENV "ItemType"
+	28	[417]	GETTABLE 	2 2 -13	; "RawFish05"
+	29	[417]	EQ       	1 1 2
+	30	[417]	JMP      	0 1	; to 32
+	31	[417]	LOADBOOL 	1 0 1
+	32	[417]	LOADBOOL 	1 1 0
+	33	[417]	RETURN   	1 2
+	34	[418]	RETURN   	0 1
+constants (13) for 0000022A550E8260:
+	1	"GM"
+	2	"BuffManager"
+	3	"IsBuffActiveByType"
+	4	"EBuffProperty"
+	5	"buff_smart"
+	6	"m_itemModel"
+	7	"GetBoardModel"
+	8	"MainBoardModel"
+	9	"CostEnergy"
+	10	"IsDisposable"
+	11	"GetType"
+	12	"ItemType"
+	13	"RawFish05"
+locals (1) for 0000022A550E8260:
+	0	self	1	35
+upvalues (1) for 0000022A550E8260:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:420,425> (33 instructions at 0000022A550E8560)
+1 param, 4 slots, 1 upvalue, 1 local, 12 constants, 0 functions
+	1	[421]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[421]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[421]	SELF     	1 1 -3	; "GetStartedActivityByDefinition"
+	4	[421]	GETTABUP 	3 0 -4	; _ENV "GeneratorBoostActivityDefinition"
+	5	[421]	CALL     	1 3 2
+	6	[422]	TEST     	1 0
+	7	[422]	JMP      	0 24	; to 32
+	8	[422]	GETTABLE 	1 0 -5	; "m_itemModel"
+	9	[422]	SELF     	1 1 -6	; "GetBoardModel"
+	10	[422]	CALL     	1 2 2
+	11	[422]	GETTABUP 	2 0 -1	; _ENV "GM"
+	12	[422]	GETTABLE 	2 2 -7	; "MainBoardModel"
+	13	[422]	EQ       	0 1 2
+	14	[422]	JMP      	0 15	; to 30
+	15	[423]	SELF     	1 0 -8	; "CostEnergy"
+	16	[423]	CALL     	1 2 2
+	17	[423]	TEST     	1 0
+	18	[423]	JMP      	0 4	; to 23
+	19	[423]	SELF     	1 0 -9	; "IsDisposable"
+	20	[423]	CALL     	1 2 2
+	21	[424]	TEST     	1 0
+	22	[424]	JMP      	0 8	; to 31
+	23	[424]	GETTABLE 	1 0 -5	; "m_itemModel"
+	24	[424]	SELF     	1 1 -10	; "GetType"
+	25	[424]	CALL     	1 2 2
+	26	[424]	GETTABUP 	2 0 -11	; _ENV "ItemType"
+	27	[424]	GETTABLE 	2 2 -12	; "RawFish05"
+	28	[424]	EQ       	1 1 2
+	29	[424]	JMP      	0 1	; to 31
+	30	[424]	LOADBOOL 	1 0 1
+	31	[424]	LOADBOOL 	1 1 0
+	32	[424]	RETURN   	1 2
+	33	[425]	RETURN   	0 1
+constants (12) for 0000022A550E8560:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetStartedActivityByDefinition"
+	4	"GeneratorBoostActivityDefinition"
+	5	"m_itemModel"
+	6	"GetBoardModel"
+	7	"MainBoardModel"
+	8	"CostEnergy"
+	9	"IsDisposable"
+	10	"GetType"
+	11	"ItemType"
+	12	"RawFish05"
+locals (1) for 0000022A550E8560:
+	0	self	1	34
+upvalues (1) for 0000022A550E8560:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:427,431> (13 instructions at 0000022A550E82E0)
+1 param, 4 slots, 1 upvalue, 2 locals, 6 constants, 0 functions
+	1	[429]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[429]	GETTABLE 	1 1 -2	; "ActivityManager"
+	3	[429]	SELF     	1 1 -3	; "GetStartedActivityByDefinition"
+	4	[429]	GETTABUP 	3 0 -4	; _ENV "GeneratorBoostActivityDefinition"
+	5	[429]	CALL     	1 3 2
+	6	[430]	SELF     	2 0 -5	; "CanSupportGeneratorBoost"
+	7	[430]	CALL     	2 2 2
+	8	[430]	TEST     	2 0
+	9	[430]	JMP      	0 2	; to 12
+	10	[430]	SELF     	2 1 -6	; "IsNoCDActive"
+	11	[430]	CALL     	2 2 2
+	12	[430]	RETURN   	2 2
+	13	[431]	RETURN   	0 1
+constants (6) for 0000022A550E82E0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetStartedActivityByDefinition"
+	4	"GeneratorBoostActivityDefinition"
+	5	"CanSupportGeneratorBoost"
+	6	"IsNoCDActive"
+locals (2) for 0000022A550E82E0:
+	0	self	1	14
+	1	generatorBoost	6	14
+upvalues (1) for 0000022A550E82E0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:433,437> (24 instructions at 0000022A550E8360)
+1 param, 7 slots, 1 upvalue, 3 locals, 10 constants, 0 functions
+	1	[434]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[434]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[434]	CALL     	1 2 2
+	4	[434]	GETTABUP 	2 0 -3	; _ENV "GM"
+	5	[434]	GETTABLE 	2 2 -4	; "MainBoardModel"
+	6	[434]	EQ       	1 1 2
+	7	[434]	JMP      	0 1	; to 9
+	8	[434]	LOADBOOL 	1 0 1
+	9	[434]	LOADBOOL 	1 1 0
+	10	[435]	GETTABUP 	2 0 -3	; _ENV "GM"
+	11	[435]	GETTABLE 	2 2 -5	; "BoostChargeManager"
+	12	[435]	SELF     	2 2 -6	; "GetHandler"
+	13	[435]	GETTABUP 	4 0 -7	; _ENV "EBoostChargeType"
+	14	[435]	GETTABLE 	4 4 -8	; "BoostCharge_disco"
+	15	[435]	CALL     	2 3 2
+	16	[436]	TESTSET  	3 1 0
+	17	[436]	JMP      	0 5	; to 23
+	18	[436]	SELF     	3 2 -9	; "CanSupportItem"
+	19	[436]	GETTABLE 	5 0 -1	; "m_itemModel"
+	20	[436]	SELF     	5 5 -10	; "GetType"
+	21	[436]	CALL     	5 2 0
+	22	[436]	CALL     	3 0 2
+	23	[436]	RETURN   	3 2
+	24	[437]	RETURN   	0 1
+constants (10) for 0000022A550E8360:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"MainBoardModel"
+	5	"BoostChargeManager"
+	6	"GetHandler"
+	7	"EBoostChargeType"
+	8	"BoostCharge_disco"
+	9	"CanSupportItem"
+	10	"GetType"
+locals (3) for 0000022A550E8360:
+	0	self	1	25
+	1	bSupport	10	25
+	2	handler	16	25
+upvalues (1) for 0000022A550E8360:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:439,444> (25 instructions at 0000022A550E83E0)
+1 param, 4 slots, 1 upvalue, 1 local, 10 constants, 0 functions
+	1	[440]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[440]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[440]	CALL     	1 1 2
+	4	[441]	TEST     	1 0
+	5	[441]	JMP      	0 18	; to 24
+	6	[441]	GETTABUP 	1 0 -3	; _ENV "PlayerPrefs"
+	7	[441]	GETTABLE 	1 1 -4	; "GetInt"
+	8	[441]	GETTABUP 	2 0 -5	; _ENV "EPlayerPrefKey"
+	9	[441]	GETTABLE 	2 2 -6	; "TestSpreadItemCDFree"
+	10	[441]	LOADK    	3 -7	; 0
+	11	[441]	CALL     	1 3 2
+	12	[441]	EQ       	0 1 -8	; - 1
+	13	[441]	JMP      	0 8	; to 22
+	14	[442]	SELF     	1 0 -9	; "CostEnergy"
+	15	[442]	CALL     	1 2 2
+	16	[443]	TEST     	1 0
+	17	[443]	JMP      	0 6	; to 24
+	18	[443]	SELF     	1 0 -10	; "IsDisposable"
+	19	[443]	CALL     	1 2 2
+	20	[443]	NOT      	1 1
+	21	[443]	JMP      	0 2	; to 24
+	22	[443]	LOADBOOL 	1 0 1
+	23	[443]	LOADBOOL 	1 1 0
+	24	[443]	RETURN   	1 2
+	25	[444]	RETURN   	0 1
+constants (10) for 0000022A550E83E0:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"PlayerPrefs"
+	4	"GetInt"
+	5	"EPlayerPrefKey"
+	6	"TestSpreadItemCDFree"
+	7	0
+	8	1
+	9	"CostEnergy"
+	10	"IsDisposable"
+locals (1) for 0000022A550E83E0:
+	0	self	1	26
+upvalues (1) for 0000022A550E83E0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:447,449> (7 instructions at 0000022A550EE530)
+1 param, 2 slots, 0 upvalues, 1 local, 2 constants, 0 functions
+	1	[448]	GETTABLE 	1 0 -1	; "m_itemRecoveryDuration"
+	2	[448]	EQ       	1 1 -2	; - nil
+	3	[448]	JMP      	0 1	; to 5
+	4	[448]	LOADBOOL 	1 0 1
+	5	[448]	LOADBOOL 	1 1 0
+	6	[448]	RETURN   	1 2
+	7	[449]	RETURN   	0 1
+constants (2) for 0000022A550EE530:
+	1	"m_itemRecoveryDuration"
+	2	nil
+locals (1) for 0000022A550EE530:
+	0	self	1	8
+upvalues (0) for 0000022A550EE530:
+
+function <ItemSpread.lua:451,458> (16 instructions at 0000022A550EEA30)
+1 param, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[452]	GETTABLE 	1 0 -1	; "m_startTimer"
+	2	[452]	EQ       	0 1 -2	; - nil
+	3	[452]	JMP      	0 2	; to 6
+	4	[453]	LOADK    	1 -3	; 1
+	5	[453]	RETURN   	1 2
+	6	[456]	GETTABUP 	1 0 -4	; _ENV "GM"
+	7	[456]	GETTABLE 	1 1 -5	; "GameModel"
+	8	[456]	SELF     	1 1 -6	; "GetServerTime"
+	9	[456]	CALL     	1 2 2
+	10	[456]	GETTABLE 	2 0 -1	; "m_startTimer"
+	11	[456]	SUB      	1 1 2
+	12	[457]	SELF     	2 0 -7	; "_GetTimerAmount"
+	13	[457]	MOVE     	4 1
+	14	[457]	TAILCALL 	2 3 0
+	15	[457]	RETURN   	2 0
+	16	[458]	RETURN   	0 1
+constants (7) for 0000022A550EEA30:
+	1	"m_startTimer"
+	2	nil
+	3	1
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"_GetTimerAmount"
+locals (2) for 0000022A550EEA30:
+	0	self	1	17
+	1	elapsedTime	12	17
+upvalues (1) for 0000022A550EEA30:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:460,467> (17 instructions at 0000022A550EEBB0)
+1 param, 5 slots, 1 upvalue, 2 locals, 7 constants, 0 functions
+	1	[461]	GETTABLE 	1 0 -1	; "m_startTimer"
+	2	[461]	EQ       	0 1 -2	; - nil
+	3	[461]	JMP      	0 2	; to 6
+	4	[462]	LOADK    	1 -3	; 1
+	5	[462]	RETURN   	1 2
+	6	[465]	GETTABUP 	1 0 -4	; _ENV "GM"
+	7	[465]	GETTABLE 	1 1 -5	; "GameModel"
+	8	[465]	SELF     	1 1 -6	; "GetServerTime"
+	9	[465]	CALL     	1 2 2
+	10	[465]	GETTABLE 	2 0 -1	; "m_startTimer"
+	11	[465]	SUB      	1 1 2
+	12	[465]	ADD      	1 1 -3	; - 1
+	13	[466]	SELF     	2 0 -7	; "_GetTimerAmount"
+	14	[466]	MOVE     	4 1
+	15	[466]	TAILCALL 	2 3 0
+	16	[466]	RETURN   	2 0
+	17	[467]	RETURN   	0 1
+constants (7) for 0000022A550EEBB0:
+	1	"m_startTimer"
+	2	nil
+	3	1
+	4	"GM"
+	5	"GameModel"
+	6	"GetServerTime"
+	7	"_GetTimerAmount"
+locals (2) for 0000022A550EEBB0:
+	0	self	1	18
+	1	nextElapsedTime	13	18
+upvalues (1) for 0000022A550EEBB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:469,490> (52 instructions at 0000022A550EE630)
+2 params, 8 slots, 1 upvalue, 4 locals, 28 constants, 0 functions
+	1	[470]	SELF     	2 0 -1	; "GetTimerDuration"
+	2	[470]	CALL     	2 2 2
+	3	[471]	EQ       	0 2 -2	; - nil
+	4	[471]	JMP      	0 37	; to 42
+	5	[472]	NEWTABLE 	3 0 7
+	6	[473]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	7	[473]	GETTABLE 	5 0 -5	; "m_initDuration"
+	8	[473]	CALL     	4 2 2
+	9	[473]	SETTABLE 	3 -3 4	; "init" -
+	10	[474]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	11	[474]	GETTABLE 	5 0 -7	; "m_openDuration"
+	12	[474]	CALL     	4 2 2
+	13	[474]	SETTABLE 	3 -6 4	; "open" -
+	14	[475]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	15	[475]	GETTABLE 	5 0 -9	; "m_storageRecoveryDuration"
+	16	[475]	CALL     	4 2 2
+	17	[475]	SETTABLE 	3 -8 4	; "storage" -
+	18	[476]	GETTABUP 	4 0 -4	; _ENV "tostring"
+	19	[476]	GETTABLE 	5 0 -11	; "m_itemRecoveryDuration"
+	20	[476]	CALL     	4 2 2
+	21	[476]	SETTABLE 	3 -10 4	; "item" -
+	22	[477]	GETTABLE 	4 0 -13	; "m_storageRestNumber"
+	23	[477]	SETTABLE 	3 -12 4	; "storageRestNumber" -
+	24	[478]	GETTABLE 	4 0 -15	; "m_state"
+	25	[478]	SETTABLE 	3 -14 4	; "state" -
+	26	[479]	GETTABLE 	4 0 -17	; "m_itemModel"
+	27	[479]	SELF     	4 4 -18	; "GetType"
+	28	[479]	CALL     	4 2 2
+	29	[479]	SETTABLE 	3 -16 4	; "type" -
+	30	[481]	GETTABUP 	4 0 -19	; _ENV "Log"
+	31	[481]	GETTABLE 	4 4 -20	; "Error"
+	32	[481]	LOADK    	5 -21	; "duration is nil:"
+	33	[481]	GETTABUP 	6 0 -22	; _ENV "json"
+	34	[481]	GETTABLE 	6 6 -23	; "encode"
+	35	[481]	MOVE     	7 3
+	36	[481]	CALL     	6 2 2
+	37	[481]	CONCAT   	5 5 6
+	38	[481]	CALL     	4 2 1
+	39	[482]	SETTABLE 	0 -24 -2	; "m_startTimer" nil
+	40	[483]	LOADK    	4 -25	; 1
+	41	[483]	RETURN   	4 2
+	42	[485]	EQ       	0 2 -26	; - 0
+	43	[485]	JMP      	0 2	; to 46
+	44	[486]	LOADK    	3 -25	; 1
+	45	[486]	RETURN   	3 2
+	46	[489]	GETTABUP 	3 0 -27	; _ENV "math"
+	47	[489]	GETTABLE 	3 3 -28	; "min"
+	48	[489]	DIV      	4 1 2
+	49	[489]	LOADK    	5 -25	; 1
+	50	[489]	TAILCALL 	3 3 0
+	51	[489]	RETURN   	3 0
+	52	[490]	RETURN   	0 1
+constants (28) for 0000022A550EE630:
+	1	"GetTimerDuration"
+	2	nil
+	3	"init"
+	4	"tostring"
+	5	"m_initDuration"
+	6	"open"
+	7	"m_openDuration"
+	8	"storage"
+	9	"m_storageRecoveryDuration"
+	10	"item"
+	11	"m_itemRecoveryDuration"
+	12	"storageRestNumber"
+	13	"m_storageRestNumber"
+	14	"state"
+	15	"m_state"
+	16	"type"
+	17	"m_itemModel"
+	18	"GetType"
+	19	"Log"
+	20	"Error"
+	21	"duration is nil:"
+	22	"json"
+	23	"encode"
+	24	"m_startTimer"
+	25	1
+	26	0
+	27	"math"
+	28	"min"
+locals (4) for 0000022A550EE630:
+	0	self	1	53
+	1	elapsedTime	1	53
+	2	duration	3	53
+	3	data	30	42
+upvalues (1) for 0000022A550EE630:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:492,506> (36 instructions at 0000022A550EEC30)
+1 param, 4 slots, 1 upvalue, 1 local, 14 constants, 0 functions
+	1	[493]	GETTABLE 	1 0 -1	; "m_state"
+	2	[493]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	3	[493]	GETTABLE 	2 2 -3	; "Initializing"
+	4	[493]	EQ       	0 1 2
+	5	[493]	JMP      	0 3	; to 9
+	6	[494]	GETTABLE 	1 0 -4	; "m_initDuration"
+	7	[494]	RETURN   	1 2
+	8	[494]	JMP      	0 27	; to 36
+	9	[495]	GETTABLE 	1 0 -1	; "m_state"
+	10	[495]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	11	[495]	GETTABLE 	2 2 -5	; "Opening"
+	12	[495]	EQ       	0 1 2
+	13	[495]	JMP      	0 3	; to 17
+	14	[496]	GETTABLE 	1 0 -6	; "m_openDuration"
+	15	[496]	RETURN   	1 2
+	16	[496]	JMP      	0 19	; to 36
+	17	[497]	GETTABLE 	1 0 -1	; "m_state"
+	18	[497]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	19	[497]	GETTABLE 	2 2 -7	; "Opened"
+	20	[497]	EQ       	0 1 2
+	21	[497]	JMP      	0 9	; to 31
+	22	[498]	GETTABLE 	1 0 -8	; "m_storageRestNumber"
+	23	[498]	EQ       	0 1 -9	; - 0
+	24	[498]	JMP      	0 3	; to 28
+	25	[499]	GETTABLE 	1 0 -10	; "m_storageRecoveryDuration"
+	26	[499]	RETURN   	1 2
+	27	[499]	JMP      	0 8	; to 36
+	28	[501]	GETTABLE 	1 0 -11	; "m_itemRecoveryDuration"
+	29	[501]	RETURN   	1 2
+	30	[502]	JMP      	0 5	; to 36
+	31	[504]	GETTABUP 	1 0 -12	; _ENV "Log"
+	32	[504]	GETTABLE 	1 1 -13	; "Assert"
+	33	[504]	LOADBOOL 	2 0 0
+	34	[504]	LOADK    	3 -14	; "ItemSpread:GetTimerDuration unknown state"
+	35	[504]	CALL     	1 3 1
+	36	[506]	RETURN   	0 1
+constants (14) for 0000022A550EEC30:
+	1	"m_state"
+	2	"ItemSpreadState"
+	3	"Initializing"
+	4	"m_initDuration"
+	5	"Opening"
+	6	"m_openDuration"
+	7	"Opened"
+	8	"m_storageRestNumber"
+	9	0
+	10	"m_storageRecoveryDuration"
+	11	"m_itemRecoveryDuration"
+	12	"Log"
+	13	"Assert"
+	14	"ItemSpread:GetTimerDuration unknown state"
+locals (1) for 0000022A550EEC30:
+	0	self	1	37
+upvalues (1) for 0000022A550EEC30:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:508,535> (52 instructions at 0000022A550EE830)
+1 param, 6 slots, 1 upvalue, 3 locals, 20 constants, 0 functions
+	1	[509]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[509]	GETTABLE 	1 1 -2	; "TutorialModel"
+	3	[509]	SELF     	1 1 -3	; "GetForceSkipCost"
+	4	[509]	CALL     	1 2 2
+	5	[510]	EQ       	1 1 -4	; - nil
+	6	[510]	JMP      	0 1	; to 8
+	7	[511]	RETURN   	1 2
+	8	[514]	LOADK    	1 -5	; 0
+	9	[515]	GETTABLE 	2 0 -6	; "m_state"
+	10	[515]	GETTABUP 	3 0 -7	; _ENV "ItemSpreadState"
+	11	[515]	GETTABLE 	3 3 -8	; "Initializing"
+	12	[515]	EQ       	0 2 3
+	13	[515]	JMP      	0 2	; to 16
+	14	[516]	GETTABLE 	1 0 -9	; "m_initSpeedUpCost"
+	15	[516]	JMP      	0 18	; to 34
+	16	[517]	GETTABLE 	2 0 -6	; "m_state"
+	17	[517]	GETTABUP 	3 0 -7	; _ENV "ItemSpreadState"
+	18	[517]	GETTABLE 	3 3 -10	; "Opening"
+	19	[517]	EQ       	0 2 3
+	20	[517]	JMP      	0 2	; to 23
+	21	[518]	GETTABLE 	1 0 -11	; "m_openSpeedUpCost"
+	22	[518]	JMP      	0 11	; to 34
+	23	[519]	GETTABLE 	2 0 -6	; "m_state"
+	24	[519]	GETTABUP 	3 0 -7	; _ENV "ItemSpreadState"
+	25	[519]	GETTABLE 	3 3 -12	; "Opened"
+	26	[519]	EQ       	0 2 3
+	27	[519]	JMP      	0 6	; to 34
+	28	[520]	GETTABLE 	2 0 -13	; "m_storageRestNumber"
+	29	[520]	EQ       	0 2 -5	; - 0
+	30	[520]	JMP      	0 2	; to 33
+	31	[521]	GETTABLE 	1 0 -14	; "m_storageSpeedUpCost"
+	32	[521]	JMP      	0 1	; to 34
+	33	[523]	GETTABLE 	1 0 -15	; "m_itemSpeedUpCost"
+	34	[527]	TEST     	1 1
+	35	[527]	JMP      	0 1	; to 37
+	36	[527]	LOADK    	1 -5	; 0
+	37	[530]	SELF     	2 0 -16	; "GetTimerAmount"
+	38	[530]	CALL     	2 2 2
+	39	[531]	SUB      	3 -17 2	; 1 -
+	40	[531]	MUL      	1 3 1
+	41	[533]	GETTABUP 	3 0 -18	; _ENV "math"
+	42	[533]	GETTABLE 	3 3 -19	; "ceil"
+	43	[533]	MOVE     	4 1
+	44	[533]	CALL     	3 2 2
+	45	[533]	MOVE     	1 3
+	46	[534]	GETTABUP 	3 0 -18	; _ENV "math"
+	47	[534]	GETTABLE 	3 3 -20	; "max"
+	48	[534]	MOVE     	4 1
+	49	[534]	LOADK    	5 -17	; 1
+	50	[534]	TAILCALL 	3 3 0
+	51	[534]	RETURN   	3 0
+	52	[535]	RETURN   	0 1
+constants (20) for 0000022A550EE830:
+	1	"GM"
+	2	"TutorialModel"
+	3	"GetForceSkipCost"
+	4	nil
+	5	0
+	6	"m_state"
+	7	"ItemSpreadState"
+	8	"Initializing"
+	9	"m_initSpeedUpCost"
+	10	"Opening"
+	11	"m_openSpeedUpCost"
+	12	"Opened"
+	13	"m_storageRestNumber"
+	14	"m_storageSpeedUpCost"
+	15	"m_itemSpeedUpCost"
+	16	"GetTimerAmount"
+	17	1
+	18	"math"
+	19	"ceil"
+	20	"max"
+locals (3) for 0000022A550EE830:
+	0	self	1	53
+	1	speedUpCost	5	53
+	2	timerAmount	39	53
+upvalues (1) for 0000022A550EE830:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:538,540> (11 instructions at 0000022A550ED5B0)
+1 param, 3 slots, 0 upvalues, 1 local, 4 constants, 0 functions
+	1	[539]	GETTABLE 	1 0 -1	; "m_openDuration"
+	2	[539]	EQ       	1 1 -2	; - nil
+	3	[539]	JMP      	0 4	; to 8
+	4	[539]	GETTABLE 	1 0 -3	; "m_itemRestNumber"
+	5	[539]	GETTABLE 	2 0 -4	; "m_itemMaxNumber"
+	6	[539]	EQ       	0 1 2
+	7	[539]	JMP      	0 1	; to 9
+	8	[539]	LOADBOOL 	1 0 1
+	9	[539]	LOADBOOL 	1 1 0
+	10	[539]	RETURN   	1 2
+	11	[540]	RETURN   	0 1
+constants (4) for 0000022A550ED5B0:
+	1	"m_openDuration"
+	2	nil
+	3	"m_itemRestNumber"
+	4	"m_itemMaxNumber"
+locals (1) for 0000022A550ED5B0:
+	0	self	1	12
+upvalues (0) for 0000022A550ED5B0:
+
+function <ItemSpread.lua:543,560> (34 instructions at 0000022A550ED630)
+1 param, 6 slots, 1 upvalue, 3 locals, 13 constants, 0 functions
+	1	[545]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[545]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[545]	CALL     	1 2 2
+	4	[545]	GETTABLE 	1 1 -3	; "BoardType"
+	5	[545]	GETTABUP 	2 0 -4	; _ENV "EBoardType"
+	6	[545]	GETTABLE 	2 2 -5	; "Tutorial"
+	7	[545]	EQ       	0 1 2
+	8	[545]	JMP      	0 2	; to 11
+	9	[546]	LOADBOOL 	1 0 0
+	10	[546]	RETURN   	1 2
+	11	[550]	SELF     	1 0 -6	; "CanSupportBoostDisco"
+	12	[550]	CALL     	1 2 2
+	13	[550]	TEST     	1 0
+	14	[550]	JMP      	0 2	; to 17
+	15	[551]	LOADBOOL 	1 0 0
+	16	[551]	RETURN   	1 2
+	17	[554]	GETTABUP 	1 0 -7	; _ENV "GM"
+	18	[554]	GETTABLE 	1 1 -8	; "ActivityManager"
+	19	[554]	SELF     	1 1 -9	; "GetModel"
+	20	[554]	GETTABUP 	3 0 -10	; _ENV "ActivityType"
+	21	[554]	GETTABLE 	3 3 -11	; "LuckyProduce"
+	22	[554]	CALL     	1 3 2
+	23	[554]	SELF     	1 1 -12	; "Try2ProduceLuckyItem"
+	24	[554]	GETTABLE 	3 0 -1	; "m_itemModel"
+	25	[554]	CALL     	1 3 3
+	26	[555]	EQ       	0 1 -13	; - nil
+	27	[555]	JMP      	0 2	; to 30
+	28	[556]	LOADBOOL 	3 0 0
+	29	[556]	RETURN   	3 2
+	30	[559]	LOADBOOL 	3 1 0
+	31	[559]	MOVE     	4 1
+	32	[559]	MOVE     	5 2
+	33	[559]	RETURN   	3 4
+	34	[560]	RETURN   	0 1
+constants (13) for 0000022A550ED630:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"BoardType"
+	4	"EBoardType"
+	5	"Tutorial"
+	6	"CanSupportBoostDisco"
+	7	"GM"
+	8	"ActivityManager"
+	9	"GetModel"
+	10	"ActivityType"
+	11	"LuckyProduce"
+	12	"Try2ProduceLuckyItem"
+	13	nil
+locals (3) for 0000022A550ED630:
+	0	self	1	35
+	1	luckyProduceType	26	35
+	2	spreadType	26	35
+upvalues (1) for 0000022A550ED630:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:562,574> (30 instructions at 0000022A550EE7B0)
+4 params, 12 slots, 1 upvalue, 9 locals, 11 constants, 0 functions
+	1	[565]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[565]	GETTABLE 	4 4 -2	; "ActivityManager"
+	3	[565]	SELF     	4 4 -3	; "GetModel"
+	4	[565]	GETTABUP 	6 0 -4	; _ENV "ActivityType"
+	5	[565]	GETTABLE 	6 6 -5	; "LuckyProduce"
+	6	[565]	CALL     	4 3 2
+	7	[565]	SELF     	4 4 -6	; "GetAdjustedMaxEnergyBoostRatio"
+	8	[565]	MOVE     	6 1
+	9	[565]	CALL     	4 3 2
+	10	[565]	MOVE     	1 4
+	11	[567]	LT       	0 -7 1	; 0 -
+	12	[567]	JMP      	0 13	; to 26
+	13	[568]	GETTABUP 	4 0 -1	; _ENV "GM"
+	14	[568]	GETTABLE 	4 4 -8	; "ItemDataModel"
+	15	[569]	LOADK    	5 -9	; 1
+	16	[569]	MOVE     	6 1
+	17	[569]	LOADK    	7 -9	; 1
+	18	[569]	FORPREP  	5 6	; to 25
+	19	[570]	SELF     	9 4 -10	; "GetModelConfig"
+	20	[570]	MOVE     	11 2
+	21	[570]	CALL     	9 3 2
+	22	[570]	GETTABLE 	9 9 -11	; "MergedType"
+	23	[570]	TESTSET  	2 9 1
+	24	[570]	JMP      	0 0	; to 25
+	25	[569]	FORLOOP  	5 -7	; to 19
+	26	[573]	MOVE     	4 2
+	27	[573]	MOVE     	5 3
+	28	[573]	MOVE     	6 1
+	29	[573]	RETURN   	4 4
+	30	[574]	RETURN   	0 1
+constants (11) for 0000022A550EE7B0:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"LuckyProduce"
+	6	"GetAdjustedMaxEnergyBoostRatio"
+	7	0
+	8	"ItemDataModel"
+	9	1
+	10	"GetModelConfig"
+	11	"MergedType"
+locals (9) for 0000022A550EE7B0:
+	0	self	1	31
+	1	maxEnergyBoostRatio	1	31
+	2	luckyProduceType	1	31
+	3	spreadType	1	31
+	4	itemDataModel	15	26
+	5	(for index)	18	26
+	6	(for limit)	18	26
+	7	(for step)	18	26
+	8	i	19	25
+upvalues (1) for 0000022A550EE7B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:576,597> (50 instructions at 0000022A550EE230)
+1 param, 7 slots, 1 upvalue, 5 locals, 14 constants, 0 functions
+	1	[578]	GETTABLE 	1 0 -1	; "m_itemRestNumber"
+	2	[578]	GETTABLE 	2 0 -2	; "m_itemMaxNumber"
+	3	[578]	LT       	0 2 1
+	4	[578]	JMP      	0 19	; to 24
+	5	[579]	NEWTABLE 	1 0 2
+	6	[580]	GETTABLE 	2 0 -1	; "m_itemRestNumber"
+	7	[580]	SETTABLE 	1 -3 2	; "rest" -
+	8	[581]	GETTABLE 	2 0 -2	; "m_itemMaxNumber"
+	9	[581]	SETTABLE 	1 -4 2	; "max" -
+	10	[583]	GETTABUP 	2 0 -5	; _ENV "GM"
+	11	[583]	GETTABLE 	2 2 -6	; "BIManager"
+	12	[583]	SELF     	2 2 -7	; "TableToString"
+	13	[583]	MOVE     	4 1
+	14	[583]	CALL     	2 3 2
+	15	[584]	GETTABUP 	3 0 -5	; _ENV "GM"
+	16	[584]	GETTABLE 	3 3 -6	; "BIManager"
+	17	[584]	SELF     	3 3 -8	; "LogAction"
+	18	[584]	GETTABUP 	5 0 -9	; _ENV "EBIType"
+	19	[584]	GETTABLE 	5 5 -10	; "ItemRestNumberOverflowError"
+	20	[584]	MOVE     	6 2
+	21	[584]	CALL     	3 4 1
+	22	[585]	GETTABLE 	3 0 -2	; "m_itemMaxNumber"
+	23	[585]	SETTABLE 	0 -1 3	; "m_itemRestNumber" -
+	24	[588]	GETTABLE 	1 0 -11	; "m_storageRestNumber"
+	25	[588]	EQ       	1 1 -12	; - nil
+	26	[588]	JMP      	0 23	; to 50
+	27	[588]	GETTABLE 	1 0 -11	; "m_storageRestNumber"
+	28	[588]	GETTABLE 	2 0 -13	; "m_storageMaxNumber"
+	29	[588]	LT       	0 2 1
+	30	[588]	JMP      	0 19	; to 50
+	31	[589]	NEWTABLE 	1 0 2
+	32	[590]	GETTABLE 	2 0 -11	; "m_storageRestNumber"
+	33	[590]	SETTABLE 	1 -3 2	; "rest" -
+	34	[591]	GETTABLE 	2 0 -13	; "m_storageMaxNumber"
+	35	[591]	SETTABLE 	1 -4 2	; "max" -
+	36	[593]	GETTABUP 	2 0 -5	; _ENV "GM"
+	37	[593]	GETTABLE 	2 2 -6	; "BIManager"
+	38	[593]	SELF     	2 2 -7	; "TableToString"
+	39	[593]	MOVE     	4 1
+	40	[593]	CALL     	2 3 2
+	41	[594]	GETTABUP 	3 0 -5	; _ENV "GM"
+	42	[594]	GETTABLE 	3 3 -6	; "BIManager"
+	43	[594]	SELF     	3 3 -8	; "LogAction"
+	44	[594]	GETTABUP 	5 0 -9	; _ENV "EBIType"
+	45	[594]	GETTABLE 	5 5 -14	; "StorageRestNumberOverflowError"
+	46	[594]	MOVE     	6 2
+	47	[594]	CALL     	3 4 1
+	48	[595]	GETTABLE 	3 0 -13	; "m_storageMaxNumber"
+	49	[595]	SETTABLE 	0 -11 3	; "m_storageRestNumber" -
+	50	[597]	RETURN   	0 1
+constants (14) for 0000022A550EE230:
+	1	"m_itemRestNumber"
+	2	"m_itemMaxNumber"
+	3	"rest"
+	4	"max"
+	5	"GM"
+	6	"BIManager"
+	7	"TableToString"
+	8	"LogAction"
+	9	"EBIType"
+	10	"ItemRestNumberOverflowError"
+	11	"m_storageRestNumber"
+	12	nil
+	13	"m_storageMaxNumber"
+	14	"StorageRestNumberOverflowError"
+locals (5) for 0000022A550EE230:
+	0	self	1	51
+	1	action	10	24
+	2	actionString	15	24
+	3	action	36	50
+	4	actionString	41	50
+upvalues (1) for 0000022A550EE230:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:600,690> (218 instructions at 0000022A550ED6B0)
+4 params, 27 slots, 1 upvalue, 46 locals, 39 constants, 0 functions
+	1	[601]	SETTABLE 	0 -1 1	; "m_testLastSpreadCodeOrigin" -
+	2	[602]	MOVE     	4 1
+	3	[603]	LOADK    	5 -2	; 0
+	4	[604]	GETTABUP 	6 0 -3	; _ENV "GM"
+	5	[604]	GETTABLE 	6 6 -4	; "ItemDataModel"
+	6	[605]	LT       	0 -2 2	; 0 -
+	7	[605]	JMP      	0 92	; to 100
+	8	[607]	TEST     	3 0
+	9	[607]	JMP      	0 90	; to 100
+	10	[607]	GETTABUP 	7 0 -5	; _ENV "ItemModelFactory"
+	11	[607]	GETTABLE 	7 7 -6	; "GetCodePrefixTargetType"
+	12	[607]	MOVE     	8 1
+	13	[607]	CALL     	7 2 2
+	14	[607]	EQ       	0 7 -7	; - nil
+	15	[607]	JMP      	0 84	; to 100
+	16	[608]	MOVE     	5 2
+	17	[611]	GETTABLE 	7 0 -8	; "m_itemModel"
+	18	[611]	SELF     	7 7 -9	; "GetBoardModel"
+	19	[611]	CALL     	7 2 2
+	20	[612]	GETTABLE 	8 7 -10	; "GetOrderCodeLackCountMap"
+	21	[612]	EQ       	1 8 -7	; - nil
+	22	[612]	JMP      	0 64	; to 87
+	23	[613]	SELF     	8 6 -11	; "GetChainId"
+	24	[613]	MOVE     	10 1
+	25	[613]	CALL     	8 3 2
+	26	[614]	SELF     	9 6 -12	; "GetChainLevel"
+	27	[614]	MOVE     	11 1
+	28	[614]	CALL     	9 3 2
+	29	[615]	SELF     	10 6 -13	; "GetChainMaxLevel"
+	30	[615]	MOVE     	12 8
+	31	[615]	CALL     	10 3 2
+	32	[616]	SELF     	11 6 -14	; "GetChain"
+	33	[616]	MOVE     	13 8
+	34	[616]	CALL     	11 3 2
+	35	[617]	SELF     	12 7 -10	; "GetOrderCodeLackCountMap"
+	36	[617]	CALL     	12 2 2
+	37	[618]	SELF     	13 7 -15	; "GetCodeCountMap"
+	38	[618]	LOADBOOL 	15 1 0
+	39	[618]	LOADBOOL 	16 0 0
+	40	[618]	LOADBOOL 	17 0 0
+	41	[618]	CALL     	13 5 2
+	42	[619]	GETTABUP 	14 0 -16	; _ENV "Table"
+	43	[619]	GETTABLE 	14 14 -17	; "Empty"
+	44	[620]	GETTABLE 	15 7 -18	; "GetOrderCodeRequireCountMap"
+	45	[620]	EQ       	1 15 -7	; - nil
+	46	[620]	JMP      	0 3	; to 50
+	47	[621]	SELF     	15 7 -18	; "GetOrderCodeRequireCountMap"
+	48	[621]	CALL     	15 2 2
+	49	[621]	MOVE     	14 15
+	50	[623]	LOADK    	15 -2	; 0
+	51	[623]	MOVE     	16 2
+	52	[623]	LOADK    	17 -19	; 1
+	53	[623]	FORPREP  	15 32	; to 86
+	54	[624]	ADD      	19 9 18
+	55	[624]	LE       	0 19 10
+	56	[624]	JMP      	0 29	; to 86
+	57	[625]	SELF     	19 6 -20	; "GetTypeByChainAndLevel"
+	58	[625]	MOVE     	21 8
+	59	[625]	ADD      	22 9 18
+	60	[625]	CALL     	19 4 2
+	61	[629]	GETTABLE 	20 12 19
+	62	[629]	TEST     	20 1
+	63	[629]	JMP      	0 20	; to 84
+	64	[629]	ADD      	20 9 18
+	65	[629]	ADD      	21 2 -19	; - 1
+	66	[629]	LT       	0 20 21
+	67	[629]	JMP      	0 18	; to 86
+	68	[629]	GETTABLE 	20 13 19
+	69	[629]	EQ       	1 20 -7	; - nil
+	70	[629]	JMP      	0 15	; to 86
+	71	[629]	GETTABUP 	20 0 -21	; _ENV "math"
+	72	[629]	GETTABLE 	20 20 -22	; "max"
+	73	[629]	GETTABLE 	21 13 19
+	74	[629]	GETTABLE 	22 14 19
+	75	[629]	TEST     	22 1
+	76	[629]	JMP      	0 1	; to 78
+	77	[629]	LOADK    	22 -2	; 0
+	78	[629]	SUB      	21 21 22
+	79	[629]	LOADK    	22 -2	; 0
+	80	[629]	CALL     	20 3 2
+	81	[629]	MOD      	20 20 -23	; - 2
+	82	[629]	EQ       	0 20 -19	; - 1
+	83	[629]	JMP      	0 2	; to 86
+	84	[631]	MOVE     	5 18
+	85	[631]	JMP      	0 1	; to 87
+	86	[623]	FORLOOP  	15 -33	; to 54
+	87	[638]	LOADK    	8 -19	; 1
+	88	[638]	MOVE     	9 5
+	89	[638]	LOADK    	10 -19	; 1
+	90	[638]	FORPREP  	8 8	; to 99
+	91	[639]	GETTABUP 	12 0 -3	; _ENV "GM"
+	92	[639]	GETTABLE 	12 12 -4	; "ItemDataModel"
+	93	[639]	SELF     	12 12 -24	; "GetModelConfig"
+	94	[639]	MOVE     	14 1
+	95	[639]	CALL     	12 3 2
+	96	[639]	GETTABLE 	12 12 -25	; "MergedType"
+	97	[639]	TESTSET  	1 12 1
+	98	[639]	JMP      	0 0	; to 99
+	99	[638]	FORLOOP  	8 -9	; to 91
+	100	[642]	SETTABLE 	0 -26 1	; "m_testLastSpreadCodeEnergyBoost" -
+	101	[643]	SETTABLE 	0 -27 -7	; "m_testLastSpreadFishNetProduceSmartCode" nil
+	102	[645]	LOADNIL  	7 0
+	103	[647]	GETTABUP 	8 0 -3	; _ENV "GM"
+	104	[647]	GETTABLE 	8 8 -28	; "ConfigModel"
+	105	[647]	SELF     	8 8 -29	; "IsServerControlOpen"
+	106	[647]	GETTABUP 	10 0 -30	; _ENV "EGeneralConfType"
+	107	[647]	GETTABLE 	10 10 -31	; "FishNetProduceSmart"
+	108	[647]	CALL     	8 3 2
+	109	[647]	TEST     	8 0
+	110	[647]	JMP      	0 103	; to 214
+	111	[647]	GETTABUP 	8 0 -5	; _ENV "ItemModelFactory"
+	112	[647]	GETTABLE 	8 8 -6	; "GetCodePrefixTargetType"
+	113	[647]	MOVE     	9 1
+	114	[647]	CALL     	8 2 2
+	115	[647]	EQ       	0 8 -7	; - nil
+	116	[647]	JMP      	0 97	; to 214
+	117	[648]	SELF     	8 6 -11	; "GetChainId"
+	118	[648]	MOVE     	10 1
+	119	[648]	CALL     	8 3 2
+	120	[649]	GETTABUP 	9 0 -32	; _ENV "ItemChain"
+	121	[649]	GETTABLE 	9 9 -33	; "RwaFish"
+	122	[649]	EQ       	0 8 9
+	123	[649]	JMP      	0 90	; to 214
+	124	[650]	GETTABLE 	9 0 -8	; "m_itemModel"
+	125	[650]	SELF     	9 9 -9	; "GetBoardModel"
+	126	[650]	CALL     	9 2 2
+	127	[651]	SELF     	10 9 -15	; "GetCodeCountMap"
+	128	[651]	LOADBOOL 	12 1 0
+	129	[651]	LOADBOOL 	13 0 0
+	130	[651]	LOADBOOL 	14 0 0
+	131	[651]	CALL     	10 5 2
+	132	[652]	SELF     	11 6 -13	; "GetChainMaxLevel"
+	133	[652]	MOVE     	13 8
+	134	[652]	CALL     	11 3 2
+	135	[654]	LOADK    	12 -2	; 0
+	136	[655]	LOADK    	13 -19	; 1
+	137	[655]	SUB      	14 11 -19	; - 1
+	138	[655]	LOADK    	15 -19	; 1
+	139	[655]	FORPREP  	13 15	; to 155
+	140	[656]	SELF     	17 6 -20	; "GetTypeByChainAndLevel"
+	141	[656]	MOVE     	19 8
+	142	[656]	MOVE     	20 16
+	143	[656]	CALL     	17 4 2
+	144	[657]	GETTABLE 	18 10 17
+	145	[657]	TEST     	18 1
+	146	[657]	JMP      	0 1	; to 148
+	147	[657]	LOADK    	18 -2	; 0
+	148	[657]	GETTABUP 	19 0 -34	; _ENV "MathUtil"
+	149	[657]	GETTABLE 	19 19 -35	; "IntPow"
+	150	[657]	LOADK    	20 -23	; 2
+	151	[657]	SUB      	21 16 -19	; - 1
+	152	[657]	CALL     	19 3 2
+	153	[657]	MUL      	18 18 19
+	154	[657]	ADD      	12 12 18
+	155	[655]	FORLOOP  	13 -16	; to 140
+	156	[660]	GETTABUP 	13 0 -34	; _ENV "MathUtil"
+	157	[660]	GETTABLE 	13 13 -35	; "IntPow"
+	158	[660]	LOADK    	14 -23	; 2
+	159	[660]	SUB      	15 11 -19	; - 1
+	160	[660]	CALL     	13 3 2
+	161	[662]	MOD      	14 12 13
+	162	[662]	SUB      	14 13 14
+	163	[665]	GETTABUP 	15 0 -34	; _ENV "MathUtil"
+	164	[665]	GETTABLE 	15 15 -36	; "IsPowerOfTwo"
+	165	[665]	MOVE     	16 14
+	166	[665]	CALL     	15 2 2
+	167	[665]	TEST     	15 0
+	168	[665]	JMP      	0 45	; to 214
+	169	[665]	EQ       	1 14 13
+	170	[665]	JMP      	0 43	; to 214
+	171	[667]	LOADK    	15 -19	; 1
+	172	[668]	LOADK    	16 -37	; 3
+	173	[669]	ADD      	17 15 5
+	174	[670]	ADD      	18 16 5
+	175	[671]	GETTABUP 	19 0 -21	; _ENV "math"
+	176	[671]	GETTABLE 	19 19 -38	; "min"
+	177	[671]	MOVE     	20 18
+	178	[671]	MOVE     	21 11
+	179	[671]	CALL     	19 3 2
+	180	[671]	MOVE     	18 19
+	181	[673]	GETTABUP 	19 0 -34	; _ENV "MathUtil"
+	182	[673]	GETTABLE 	19 19 -35	; "IntPow"
+	183	[673]	LOADK    	20 -23	; 2
+	184	[673]	SUB      	21 17 -19	; - 1
+	185	[673]	CALL     	19 3 2
+	186	[673]	LE       	0 19 14
+	187	[673]	JMP      	0 26	; to 214
+	188	[674]	MOVE     	19 17
+	189	[674]	MOVE     	20 18
+	190	[674]	LOADK    	21 -19	; 1
+	191	[674]	FORPREP  	19 21	; to 213
+	192	[675]	SELF     	23 6 -20	; "GetTypeByChainAndLevel"
+	193	[675]	MOVE     	25 8
+	194	[675]	MOVE     	26 22
+	195	[675]	CALL     	23 4 2
+	196	[677]	GETTABUP 	24 0 -34	; _ENV "MathUtil"
+	197	[677]	GETTABLE 	24 24 -35	; "IntPow"
+	198	[677]	LOADK    	25 -23	; 2
+	199	[677]	SUB      	26 22 -19	; - 1
+	200	[677]	CALL     	24 3 2
+	201	[677]	EQ       	0 24 14
+	202	[677]	JMP      	0 10	; to 213
+	203	[677]	SELF     	24 6 -12	; "GetChainLevel"
+	204	[677]	MOVE     	26 1
+	205	[677]	CALL     	24 3 2
+	206	[677]	LT       	0 22 24
+	207	[677]	JMP      	0 5	; to 213
+	208	[678]	MOVE     	1 23
+	209	[679]	SETTABLE 	0 -27 23	; "m_testLastSpreadFishNetProduceSmartCode" -
+	210	[680]	GETTABUP 	24 0 -39	; _ENV "ELogSpreadExtScene"
+	211	[680]	GETTABLE 	7 24 -31	; "FishNetProduceSmart"
+	212	[680]	JMP      	0 1	; to 214
+	213	[674]	FORLOOP  	19 -22	; to 192
+	214	[689]	MOVE     	8 1
+	215	[689]	MOVE     	9 5
+	216	[689]	MOVE     	10 7
+	217	[689]	RETURN   	8 4
+	218	[690]	RETURN   	0 1
+constants (39) for 0000022A550ED6B0:
+	1	"m_testLastSpreadCodeOrigin"
+	2	0
+	3	"GM"
+	4	"ItemDataModel"
+	5	"ItemModelFactory"
+	6	"GetCodePrefixTargetType"
+	7	nil
+	8	"m_itemModel"
+	9	"GetBoardModel"
+	10	"GetOrderCodeLackCountMap"
+	11	"GetChainId"
+	12	"GetChainLevel"
+	13	"GetChainMaxLevel"
+	14	"GetChain"
+	15	"GetCodeCountMap"
+	16	"Table"
+	17	"Empty"
+	18	"GetOrderCodeRequireCountMap"
+	19	1
+	20	"GetTypeByChainAndLevel"
+	21	"math"
+	22	"max"
+	23	2
+	24	"GetModelConfig"
+	25	"MergedType"
+	26	"m_testLastSpreadCodeEnergyBoost"
+	27	"m_testLastSpreadFishNetProduceSmartCode"
+	28	"ConfigModel"
+	29	"IsServerControlOpen"
+	30	"EGeneralConfType"
+	31	"FishNetProduceSmart"
+	32	"ItemChain"
+	33	"RwaFish"
+	34	"MathUtil"
+	35	"IntPow"
+	36	"IsPowerOfTwo"
+	37	3
+	38	"min"
+	39	"ELogSpreadExtScene"
+locals (46) for 0000022A550ED6B0:
+	0	self	1	219
+	1	code	1	219
+	2	maxEnergyBoostRatio	1	219
+	3	bCanEnergyBoost	1	219
+	4	originCode	3	219
+	5	energyBoostRatio	4	219
+	6	itemDataModel	6	219
+	7	boardModel	20	100
+	8	chainId	26	87
+	9	chainLevel	29	87
+	10	chainMaxLevel	32	87
+	11	chainItemTypes	35	87
+	12	lackCountMap	37	87
+	13	itemCodeCountMap	42	87
+	14	orderRequiredMap	44	87
+	15	(for index)	53	87
+	16	(for limit)	53	87
+	17	(for step)	53	87
+	18	i	54	86
+	19	checkType	61	86
+	20	(for index)	90	100
+	21	(for limit)	90	100
+	22	(for step)	90	100
+	23	i	91	99
+	24	logSpreadExtScene	103	219
+	25	chainId	120	214
+	26	boardModel	127	214
+	27	itemCodeCountMap	132	214
+	28	maxFishLevel	135	214
+	29	totalLevelOneItemCount	136	214
+	30	(for index)	139	156
+	31	(for limit)	139	156
+	32	(for step)	139	156
+	33	level	140	155
+	34	fishItemType	144	155
+	35	maxLevelFishOneCount	161	214
+	36	lackMaxLevelOneCount	163	214
+	37	minOriginSpreadLevel	172	214
+	38	maxOriginSpreadLevel	173	214
+	39	minEnergyBoostRatioSpreadLevel	174	214
+	40	maxEnergyBoostRatioSpreadLevel	175	214
+	41	(for index)	191	214
+	42	(for limit)	191	214
+	43	(for step)	191	214
+	44	spreadLevel	192	213
+	45	newCode	196	213
+upvalues (1) for 0000022A550ED6B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:692,715> (55 instructions at 0000022A550EEEB0)
+4 params, 11 slots, 1 upvalue, 10 locals, 20 constants, 0 functions
+	1	[693]	GETTABLE 	4 0 -1	; "m_spreadCount"
+	2	[693]	ADD      	4 4 -2	; - 1
+	3	[693]	SETTABLE 	0 -1 4	; "m_spreadCount" -
+	4	[694]	EQ       	1 1 -3	; - nil
+	5	[694]	JMP      	0 8	; to 14
+	6	[695]	GETTABUP 	4 0 -5	; _ENV "math"
+	7	[695]	GETTABLE 	4 4 -6	; "max"
+	8	[695]	GETTABLE 	5 0 -4	; "m_itemRestNumber"
+	9	[695]	SUB      	5 5 1
+	10	[695]	LOADK    	6 -7	; 0
+	11	[695]	CALL     	4 3 2
+	12	[695]	SETTABLE 	0 -4 4	; "m_itemRestNumber" -
+	13	[696]	RETURN   	0 1
+	14	[699]	LOADNIL  	4 0
+	15	[700]	GETTABLE 	5 0 -8	; "m_weightType"
+	16	[700]	GETTABUP 	6 0 -9	; _ENV "ItemSpreadWeightType"
+	17	[700]	GETTABLE 	6 6 -10	; "OrderItem"
+	18	[700]	EQ       	1 5 6
+	19	[700]	JMP      	0 17	; to 37
+	20	[701]	SELF     	5 0 -11	; "IsDisposable"
+	21	[701]	CALL     	5 2 2
+	22	[701]	TEST     	5 0
+	23	[701]	JMP      	0 6	; to 30
+	24	[702]	GETTABUP 	5 0 -5	; _ENV "math"
+	25	[702]	GETTABLE 	5 5 -12	; "floor"
+	26	[702]	POW      	6 -13 2	; 2 -
+	27	[702]	CALL     	5 2 2
+	28	[702]	MOVE     	4 5
+	29	[702]	JMP      	0 18	; to 48
+	30	[704]	GETTABUP 	5 0 -14	; _ENV "GM"
+	31	[704]	GETTABLE 	5 5 -15	; "EnergyBoostModel"
+	32	[704]	SELF     	5 5 -16	; "NextEnergyBoostCostIndex"
+	33	[704]	MOVE     	7 2
+	34	[704]	CALL     	5 3 2
+	35	[704]	MOVE     	4 5
+	36	[705]	JMP      	0 11	; to 48
+	37	[707]	GETTABUP 	5 0 -17	; _ENV "ipairs"
+	38	[707]	GETTABLE 	6 0 -18	; "m_codeWeightPairs"
+	39	[707]	CALL     	5 2 4
+	40	[707]	JMP      	0 5	; to 46
+	41	[708]	GETTABLE 	10 9 -19	; "Code"
+	42	[708]	EQ       	0 10 3
+	43	[708]	JMP      	0 2	; to 46
+	44	[709]	GETTABLE 	4 9 -20	; "Weight"
+	45	[709]	JMP      	0 2	; to 48
+	46	[707]	TFORCALL 	5 2
+	47	[707]	TFORLOOP 	7 -7	; to 41
+	48	[714]	GETTABUP 	5 0 -5	; _ENV "math"
+	49	[714]	GETTABLE 	5 5 -6	; "max"
+	50	[714]	GETTABLE 	6 0 -4	; "m_itemRestNumber"
+	51	[714]	SUB      	6 6 4
+	52	[714]	LOADK    	7 -7	; 0
+	53	[714]	CALL     	5 3 2
+	54	[714]	SETTABLE 	0 -4 5	; "m_itemRestNumber" -
+	55	[715]	RETURN   	0 1
+constants (20) for 0000022A550EEEB0:
+	1	"m_spreadCount"
+	2	1
+	3	nil
+	4	"m_itemRestNumber"
+	5	"math"
+	6	"max"
+	7	0
+	8	"m_weightType"
+	9	"ItemSpreadWeightType"
+	10	"OrderItem"
+	11	"IsDisposable"
+	12	"floor"
+	13	2
+	14	"GM"
+	15	"EnergyBoostModel"
+	16	"NextEnergyBoostCostIndex"
+	17	"ipairs"
+	18	"m_codeWeightPairs"
+	19	"Code"
+	20	"Weight"
+locals (10) for 0000022A550EEEB0:
+	0	self	1	56
+	1	costCount	1	56
+	2	energyBoostRatio	1	56
+	3	code	1	56
+	4	costRestNumber	15	56
+	5	(for generator)	40	48
+	6	(for state)	40	48
+	7	(for control)	40	48
+	8	_	41	46
+	9	item	41	46
+upvalues (1) for 0000022A550EEEB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:717,728> (22 instructions at 0000022A550EE3B0)
+1 param, 8 slots, 1 upvalue, 4 locals, 13 constants, 0 functions
+	1	[719]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[719]	GETTABLE 	1 1 -2	; "BoostChargeManager"
+	3	[719]	SELF     	1 1 -3	; "GetHandler"
+	4	[719]	GETTABUP 	3 0 -4	; _ENV "EBoostChargeType"
+	5	[719]	GETTABLE 	3 3 -5	; "BoostCharge_disco"
+	6	[719]	CALL     	1 3 2
+	7	[719]	SELF     	1 1 -6	; "TryGetSpreadItem"
+	8	[719]	GETTABLE 	3 0 -7	; "m_itemModel"
+	9	[719]	SELF     	3 3 -8	; "GetType"
+	10	[719]	CALL     	3 2 0
+	11	[719]	CALL     	1 0 4
+	12	[720]	TEST     	1 0
+	13	[720]	JMP      	0 6	; to 20
+	14	[721]	LOADK    	4 -9	; 1
+	15	[721]	MOVE     	5 2
+	16	[721]	GETTABUP 	6 0 -10	; _ENV "BoardSpreadType"
+	17	[721]	GETTABLE 	6 6 -11	; "Disco"
+	18	[721]	LOADK    	7 -12	; 0
+	19	[721]	RETURN   	4 5
+	20	[727]	LOADK    	4 -13	; 2
+	21	[727]	RETURN   	4 2
+	22	[728]	RETURN   	0 1
+constants (13) for 0000022A550EE3B0:
+	1	"GM"
+	2	"BoostChargeManager"
+	3	"GetHandler"
+	4	"EBoostChargeType"
+	5	"BoostCharge_disco"
+	6	"TryGetSpreadItem"
+	7	"m_itemModel"
+	8	"GetType"
+	9	1
+	10	"BoardSpreadType"
+	11	"Disco"
+	12	0
+	13	2
+locals (4) for 0000022A550EE3B0:
+	0	self	1	23
+	1	bSupport	12	23
+	2	code	12	23
+	3	level	12	23
+upvalues (1) for 0000022A550EE3B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:731,741> (25 instructions at 0000022A550EE6B0)
+4 params, 10 slots, 1 upvalue, 5 locals, 10 constants, 0 functions
+	1	[733]	SELF     	4 0 -1	; "CanSupportBoostDisco"
+	2	[733]	CALL     	4 2 2
+	3	[733]	TEST     	4 0
+	4	[733]	JMP      	0 16	; to 21
+	5	[735]	GETTABUP 	4 0 -2	; _ENV "GM"
+	6	[735]	GETTABLE 	4 4 -3	; "BoostChargeManager"
+	7	[735]	SELF     	4 4 -4	; "GetHandler"
+	8	[735]	GETTABUP 	6 0 -5	; _ENV "EBoostChargeType"
+	9	[735]	GETTABLE 	6 6 -6	; "BoostCharge_disco"
+	10	[735]	CALL     	4 3 2
+	11	[736]	SELF     	5 4 -7	; "TryUseDiscoItem"
+	12	[736]	GETTABLE 	7 0 -8	; "m_itemModel"
+	13	[736]	SELF     	7 7 -9	; "GetType"
+	14	[736]	CALL     	7 2 2
+	15	[736]	MOVE     	8 1
+	16	[736]	MOVE     	9 2
+	17	[736]	CALL     	5 5 3
+	18	[736]	MOVE     	2 6
+	19	[736]	MOVE     	1 5
+	20	[737]	LOADK    	3 -10	; 0
+	21	[740]	MOVE     	4 1
+	22	[740]	MOVE     	5 2
+	23	[740]	MOVE     	6 3
+	24	[740]	RETURN   	4 4
+	25	[741]	RETURN   	0 1
+constants (10) for 0000022A550EE6B0:
+	1	"CanSupportBoostDisco"
+	2	"GM"
+	3	"BoostChargeManager"
+	4	"GetHandler"
+	5	"EBoostChargeType"
+	6	"BoostCharge_disco"
+	7	"TryUseDiscoItem"
+	8	"m_itemModel"
+	9	"GetType"
+	10	0
+locals (5) for 0000022A550EE6B0:
+	0	self	1	26
+	1	code	1	26
+	2	energyBoostRatio	1	26
+	3	costCount	1	26
+	4	discoHandler	11	21
+upvalues (1) for 0000022A550EE6B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:748,798> (97 instructions at 0000022A550ED730)
+2 params, 17 slots, 1 upvalue, 16 locals, 24 constants, 0 functions
+	1	[749]	TEST     	1 1
+	2	[749]	JMP      	0 1	; to 4
+	3	[749]	LOADK    	1 -1	; 0
+	4	[751]	SELF     	2 0 -2	; "CheckLuckyProduce"
+	5	[751]	CALL     	2 2 4
+	6	[752]	TEST     	2 0
+	7	[752]	JMP      	0 6	; to 14
+	8	[753]	SELF     	5 0 -3	; "TryGenerateLuckyItem"
+	9	[753]	MOVE     	7 1
+	10	[753]	MOVE     	8 3
+	11	[753]	MOVE     	9 4
+	12	[753]	TAILCALL 	5 5 0
+	13	[753]	RETURN   	5 0
+	14	[757]	SELF     	5 0 -4	; "CanSupportBoostDisco"
+	15	[757]	CALL     	5 2 2
+	16	[757]	TEST     	5 0
+	17	[757]	JMP      	0 13	; to 31
+	18	[758]	SELF     	5 0 -5	; "TryGenerateDiscoItem"
+	19	[758]	CALL     	5 2 5
+	20	[759]	EQ       	0 5 -6	; - 1
+	21	[759]	JMP      	0 4	; to 26
+	22	[760]	MOVE     	9 6
+	23	[760]	MOVE     	10 7
+	24	[760]	MOVE     	11 8
+	25	[760]	RETURN   	9 4
+	26	[763]	EQ       	0 5 -7	; - 2
+	27	[763]	JMP      	0 3	; to 31
+	28	[764]	GETTABUP 	9 0 -8	; _ENV "BoardSpreadType"
+	29	[764]	GETTABLE 	4 9 -9	; "Disco"
+	30	[765]	LOADK    	1 -10	; 3
+	31	[770]	SELF     	5 0 -11	; "SafeSpreadItem"
+	32	[770]	CALL     	5 2 1
+	33	[773]	SELF     	5 0 -12	; "_GenerateItemCode"
+	34	[773]	CALL     	5 2 5
+	35	[774]	MOVE     	9 5
+	36	[776]	TEST     	4 1
+	37	[776]	JMP      	0 1	; to 39
+	38	[776]	MOVE     	4 8
+	39	[777]	LOADNIL  	10 0
+	40	[779]	MOVE     	11 1
+	41	[780]	SELF     	12 0 -13	; "SpreadCheckEnergyRatioAndCode"
+	42	[780]	MOVE     	14 5
+	43	[780]	MOVE     	15 1
+	44	[780]	MOVE     	16 6
+	45	[780]	CALL     	12 5 4
+	46	[780]	MOVE     	10 14
+	47	[780]	MOVE     	11 13
+	48	[780]	MOVE     	5 12
+	49	[783]	SELF     	12 0 -14	; "DealActivityLimit"
+	50	[783]	MOVE     	14 5
+	51	[783]	MOVE     	15 11
+	52	[783]	MOVE     	16 7
+	53	[783]	CALL     	12 5 4
+	54	[783]	MOVE     	7 14
+	55	[783]	MOVE     	11 13
+	56	[783]	MOVE     	5 12
+	57	[786]	SELF     	12 0 -15	; "CosetRestNumber"
+	58	[786]	MOVE     	14 7
+	59	[786]	MOVE     	15 11
+	60	[786]	MOVE     	16 5
+	61	[786]	CALL     	12 5 1
+	62	[788]	SELF     	12 0 -16	; "UpdatePerSecond"
+	63	[788]	CALL     	12 2 1
+	64	[790]	GETTABLE 	12 0 -17	; "event"
+	65	[790]	SELF     	12 12 -18	; "Call"
+	66	[790]	GETTABUP 	14 0 -19	; _ENV "ItemSpreadEventType"
+	67	[790]	GETTABLE 	14 14 -20	; "StateChanged"
+	68	[790]	CALL     	12 3 1
+	69	[791]	GETTABLE 	12 0 -21	; "m_itemModel"
+	70	[791]	SELF     	12 12 -22	; "GetBoardModel"
+	71	[791]	CALL     	12 2 2
+	72	[791]	SELF     	12 12 -23	; "SaveItemProperty"
+	73	[791]	GETTABLE 	14 0 -21	; "m_itemModel"
+	74	[791]	CALL     	12 3 1
+	75	[794]	TEST     	10 0
+	76	[794]	JMP      	0 11	; to 88
+	77	[795]	MOVE     	12 5
+	78	[795]	TEST     	4 0
+	79	[795]	JMP      	0 2	; to 82
+	80	[795]	TESTSET  	13 4 1
+	81	[795]	JMP      	0 2	; to 84
+	82	[795]	GETTABUP 	13 0 -8	; _ENV "BoardSpreadType"
+	83	[795]	GETTABLE 	13 13 -24	; "Normal"
+	84	[795]	MOVE     	14 11
+	85	[795]	MOVE     	15 9
+	86	[795]	MOVE     	16 10
+	87	[795]	RETURN   	12 6
+	88	[797]	MOVE     	12 5
+	89	[797]	TEST     	4 0
+	90	[797]	JMP      	0 2	; to 93
+	91	[797]	TESTSET  	13 4 1
+	92	[797]	JMP      	0 2	; to 95
+	93	[797]	GETTABUP 	13 0 -8	; _ENV "BoardSpreadType"
+	94	[797]	GETTABLE 	13 13 -24	; "Normal"
+	95	[797]	MOVE     	14 11
+	96	[797]	RETURN   	12 4
+	97	[798]	RETURN   	0 1
+constants (24) for 0000022A550ED730:
+	1	0
+	2	"CheckLuckyProduce"
+	3	"TryGenerateLuckyItem"
+	4	"CanSupportBoostDisco"
+	5	"TryGenerateDiscoItem"
+	6	1
+	7	2
+	8	"BoardSpreadType"
+	9	"Disco"
+	10	3
+	11	"SafeSpreadItem"
+	12	"_GenerateItemCode"
+	13	"SpreadCheckEnergyRatioAndCode"
+	14	"DealActivityLimit"
+	15	"CosetRestNumber"
+	16	"UpdatePerSecond"
+	17	"event"
+	18	"Call"
+	19	"ItemSpreadEventType"
+	20	"StateChanged"
+	21	"m_itemModel"
+	22	"GetBoardModel"
+	23	"SaveItemProperty"
+	24	"Normal"
+locals (16) for 0000022A550ED730:
+	0	self	1	98
+	1	maxEnergyBoostRatio	1	98
+	2	canLuckyProduce	6	98
+	3	luckyProduceType	6	98
+	4	spreadType	6	98
+	5	bSupport	20	31
+	6	code	20	31
+	7	tempspreadType	20	31
+	8	energyBoostRatio	20	31
+	9	code	35	98
+	10	bCanEnergyBoost	35	98
+	11	costCount	35	98
+	12	tempSpreadType	35	98
+	13	originalElement	36	98
+	14	logSpreadExtScene	40	98
+	15	energyBoostRatio	41	98
+upvalues (1) for 0000022A550ED730:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:802,890> (246 instructions at 0000022A550EECB0)
+1 param, 16 slots, 1 upvalue, 22 locals, 69 constants, 0 functions
+	1	[803]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[803]	GETTABLE 	1 1 -2	; "TutorialModel"
+	3	[803]	SELF     	1 1 -3	; "GetForceSpreadItemCode"
+	4	[803]	CALL     	1 2 2
+	5	[804]	EQ       	1 1 -4	; - nil
+	6	[804]	JMP      	0 3	; to 10
+	7	[805]	MOVE     	2 1
+	8	[805]	LOADBOOL 	3 0 0
+	9	[805]	RETURN   	2 3
+	10	[809]	LOADNIL  	2 0
+	11	[811]	GETTABLE 	3 0 -5	; "m_weightType"
+	12	[811]	GETTABUP 	4 0 -6	; _ENV "ItemSpreadWeightType"
+	13	[811]	GETTABLE 	4 4 -7	; "Fixed"
+	14	[811]	EQ       	0 3 4
+	15	[811]	JMP      	0 77	; to 93
+	16	[812]	LOADNIL  	3 0
+	17	[813]	GETTABUP 	4 0 -1	; _ENV "GM"
+	18	[813]	GETTABLE 	4 4 -8	; "ActivityManager"
+	19	[813]	SELF     	4 4 -9	; "GetStartedActivityByDefinition"
+	20	[813]	GETTABUP 	6 0 -10	; _ENV "GeneratorBoostActivityDefinition"
+	21	[813]	CALL     	4 3 2
+	22	[815]	SELF     	5 0 -11	; "CanSupportGeneratorBoost"
+	23	[815]	CALL     	5 2 2
+	24	[815]	TEST     	5 0
+	25	[815]	JMP      	0 9	; to 35
+	26	[815]	EQ       	1 4 -4	; - nil
+	27	[815]	JMP      	0 5	; to 33
+	28	[815]	SELF     	5 4 -12	; "IsBuffActive"
+	29	[815]	GETTABUP 	7 0 -13	; _ENV "EGeneratorBoostBuffType"
+	30	[815]	GETTABLE 	7 7 -14	; "SmartProduce"
+	31	[815]	CALL     	5 3 2
+	32	[815]	JMP      	0 2	; to 35
+	33	[815]	LOADBOOL 	5 0 1
+	34	[815]	LOADBOOL 	5 1 0
+	35	[817]	SELF     	6 0 -15	; "CanSupportSmart"
+	36	[817]	CALL     	6 2 2
+	37	[818]	TEST     	5 1
+	38	[818]	JMP      	0 2	; to 41
+	39	[818]	TEST     	6 0
+	40	[818]	JMP      	0 30	; to 71
+	41	[820]	GETTABUP 	7 0 -16	; _ENV "RandomGenerateCodeHelper"
+	42	[820]	GETTABLE 	7 7 -17	; "TrySmartProduceItem"
+	43	[820]	GETTABLE 	8 0 -18	; "m_itemModel"
+	44	[820]	CALL     	7 2 2
+	45	[820]	MOVE     	1 7
+	46	[823]	EQ       	1 1 -4	; - nil
+	47	[823]	JMP      	0 23	; to 71
+	48	[824]	TEST     	5 0
+	49	[824]	JMP      	0 12	; to 62
+	50	[825]	SELF     	7 4 -19	; "TryExtraProduceItem"
+	51	[825]	GETTABLE 	9 0 -18	; "m_itemModel"
+	52	[825]	CALL     	7 3 2
+	53	[825]	TEST     	7 0
+	54	[825]	JMP      	0 4	; to 59
+	55	[825]	GETTABUP 	7 0 -20	; _ENV "BoardSpreadType"
+	56	[825]	GETTABLE 	7 7 -21	; "GeneratorBoostExtraSmart"
+	57	[825]	TESTSET  	3 7 1
+	58	[825]	JMP      	0 2	; to 61
+	59	[825]	GETTABUP 	7 0 -20	; _ENV "BoardSpreadType"
+	60	[825]	GETTABLE 	3 7 -22	; "GeneratorBoostSmart"
+	61	[825]	JMP      	0 4	; to 66
+	62	[826]	TEST     	6 0
+	63	[826]	JMP      	0 2	; to 66
+	64	[827]	GETTABUP 	7 0 -20	; _ENV "BoardSpreadType"
+	65	[827]	GETTABLE 	3 7 -23	; "BuffSmart"
+	66	[829]	MOVE     	7 1
+	67	[829]	LOADBOOL 	8 1 0
+	68	[829]	LOADNIL  	9 0
+	69	[829]	MOVE     	10 3
+	70	[829]	RETURN   	7 5
+	71	[833]	SELF     	7 0 -24	; "_FixedGenerateItemCode"
+	72	[833]	CALL     	7 2 2
+	73	[833]	MOVE     	1 7
+	74	[834]	TEST     	5 0
+	75	[834]	JMP      	0 11	; to 87
+	76	[835]	SELF     	7 4 -19	; "TryExtraProduceItem"
+	77	[835]	GETTABLE 	9 0 -18	; "m_itemModel"
+	78	[835]	CALL     	7 3 2
+	79	[835]	TEST     	7 0
+	80	[835]	JMP      	0 4	; to 85
+	81	[835]	GETTABUP 	7 0 -20	; _ENV "BoardSpreadType"
+	82	[835]	GETTABLE 	7 7 -25	; "GeneratorBoostExtraNormal"
+	83	[835]	TESTSET  	3 7 1
+	84	[835]	JMP      	0 2	; to 87
+	85	[835]	GETTABUP 	7 0 -20	; _ENV "BoardSpreadType"
+	86	[835]	GETTABLE 	3 7 -26	; "Normal"
+	87	[837]	MOVE     	7 1
+	88	[837]	LOADBOOL 	8 1 0
+	89	[837]	LOADNIL  	9 0
+	90	[837]	MOVE     	10 3
+	91	[837]	RETURN   	7 5
+	92	[837]	JMP      	0 149	; to 242
+	93	[839]	GETTABLE 	3 0 -5	; "m_weightType"
+	94	[839]	GETTABUP 	4 0 -6	; _ENV "ItemSpreadWeightType"
+	95	[839]	GETTABLE 	4 4 -27	; "Decremental"
+	96	[839]	EQ       	0 3 4
+	97	[839]	JMP      	0 33	; to 131
+	98	[841]	GETTABUP 	3 0 -28	; _ENV "Table"
+	99	[841]	GETTABLE 	3 3 -29	; "ListWeightSelectOne"
+	100	[841]	GETTABLE 	4 0 -30	; "m_codeWeightPairs"
+	101	[841]	CALL     	3 2 2
+	102	[841]	GETTABLE 	1 3 -31	; "Code"
+	103	[842]	GETTABUP 	3 0 -32	; _ENV "ipairs"
+	104	[842]	GETTABLE 	4 0 -30	; "m_codeWeightPairs"
+	105	[842]	CALL     	3 2 4
+	106	[842]	JMP      	0 21	; to 128
+	107	[843]	GETTABLE 	8 7 -31	; "Code"
+	108	[843]	EQ       	0 1 8
+	109	[843]	JMP      	0 18	; to 128
+	110	[844]	GETTABLE 	8 7 -33	; "Weight"
+	111	[844]	SUB      	8 8 -34	; - 1
+	112	[844]	SETTABLE 	7 -33 8	; "Weight" -
+	113	[845]	GETTABLE 	8 7 -33	; "Weight"
+	114	[845]	EQ       	0 8 -35	; - 0
+	115	[845]	JMP      	0 5	; to 121
+	116	[846]	GETTABUP 	8 0 -36	; _ENV "table"
+	117	[846]	GETTABLE 	8 8 -37	; "remove"
+	118	[846]	GETTABLE 	9 0 -30	; "m_codeWeightPairs"
+	119	[846]	MOVE     	10 6
+	120	[846]	CALL     	8 3 1
+	121	[849]	GETTABLE 	8 0 -18	; "m_itemModel"
+	122	[849]	SELF     	8 8 -38	; "GetBoardModel"
+	123	[849]	CALL     	8 2 2
+	124	[849]	SELF     	8 8 -39	; "SaveItemProperty"
+	125	[849]	GETTABLE 	10 0 -18	; "m_itemModel"
+	126	[849]	CALL     	8 3 1
+	127	[849]	JMP      	0 114	; to 242
+	128	[842]	TFORCALL 	3 2
+	129	[842]	TFORLOOP 	5 -23	; to 107
+	130	[852]	JMP      	0 111	; to 242
+	131	[854]	GETTABLE 	3 0 -5	; "m_weightType"
+	132	[854]	GETTABUP 	4 0 -6	; _ENV "ItemSpreadWeightType"
+	133	[854]	GETTABLE 	4 4 -40	; "OrderItem"
+	134	[854]	EQ       	0 3 4
+	135	[854]	JMP      	0 4	; to 140
+	136	[855]	SELF     	3 0 -41	; "GetOrderItemCode"
+	137	[855]	CALL     	3 2 2
+	138	[855]	MOVE     	1 3
+	139	[855]	JMP      	0 102	; to 242
+	140	[856]	GETTABLE 	3 0 -5	; "m_weightType"
+	141	[856]	GETTABUP 	4 0 -6	; _ENV "ItemSpreadWeightType"
+	142	[856]	GETTABLE 	4 4 -42	; "ChestCustomItem"
+	143	[856]	EQ       	0 3 4
+	144	[856]	JMP      	0 50	; to 195
+	145	[857]	GETTABUP 	3 0 -16	; _ENV "RandomGenerateCodeHelper"
+	146	[857]	GETTABLE 	3 3 -43	; "GenerateChestCustomCodeRule"
+	147	[857]	GETTABLE 	4 0 -44	; "m_itemRestNumber"
+	148	[857]	LOADK    	5 -34	; 1
+	149	[857]	LOADBOOL 	6 0 0
+	150	[857]	CALL     	3 4 3
+	151	[858]	EQ       	1 3 -4	; - nil
+	152	[858]	JMP      	0 3	; to 156
+	153	[858]	GETTABLE 	5 3 -34	; 1
+	154	[858]	EQ       	0 5 -4	; - nil
+	155	[858]	JMP      	0 6	; to 162
+	156	[859]	LOADK    	1 -45	; "205"
+	157	[860]	GETTABUP 	5 0 -46	; _ENV "Log"
+	158	[860]	GETTABLE 	5 5 -47	; "Error"
+	159	[860]	LOADK    	6 -48	; "\233\148\153\232\175\175\231\154\132\231\148\159\230\136\144\230\163\139\229\173\144"
+	160	[860]	CALL     	5 2 1
+	161	[860]	JMP      	0 1	; to 163
+	162	[862]	GETTABLE 	1 3 -34	; 1
+	163	[864]	GETTABLE 	5 0 -18	; "m_itemModel"
+	164	[864]	SELF     	5 5 -38	; "GetBoardModel"
+	165	[864]	CALL     	5 2 2
+	166	[864]	SELF     	5 5 -49	; "GetOrderModel"
+	167	[864]	GETTABUP 	7 0 -50	; _ENV "OrderModelType"
+	168	[864]	GETTABLE 	7 7 -51	; "Slot"
+	169	[864]	CALL     	5 3 2
+	170	[864]	SELF     	5 5 -52	; "GetItemCodeConfigMap"
+	171	[864]	CALL     	5 2 2
+	172	[865]	GETTABLE 	6 5 1
+	173	[865]	GETTABLE 	2 6 -53	; "DiffScore"
+	174	[866]	GETTABUP 	6 0 -54	; _ENV "GameConfig"
+	175	[866]	GETTABLE 	6 6 -55	; "IsTestMode"
+	176	[866]	CALL     	6 1 2
+	177	[866]	TEST     	6 0
+	178	[866]	JMP      	0 63	; to 242
+	179	[867]	GETTABUP 	6 0 -46	; _ENV "Log"
+	180	[867]	GETTABLE 	6 6 -56	; "Debug"
+	181	[867]	LOADK    	7 -57	; "\230\163\139\229\173\144\229\165\150\229\138\177\229\150\183\229\143\145\239\188\154"
+	182	[867]	LOADK    	8 -58	; "\229\136\134\229\128\188\228\184\138\233\153\144: "
+	183	[867]	GETTABUP 	9 0 -59	; _ENV "tostring"
+	184	[867]	GETTABLE 	10 0 -44	; "m_itemRestNumber"
+	185	[867]	CALL     	9 2 2
+	186	[867]	LOADK    	10 -60	; "\n"
+	187	[867]	MOVE     	11 4
+	188	[867]	LOADK    	12 -61	; "\n\230\156\128\229\144\142\233\128\137\230\139\169\231\154\132\230\163\139\229\173\144:"
+	189	[867]	MOVE     	13 1
+	190	[867]	LOADK    	14 -62	; "\n\232\138\177\232\180\185\231\154\132\229\136\134:"
+	191	[867]	MOVE     	15 2
+	192	[867]	CONCAT   	7 7 15
+	193	[867]	CALL     	6 2 1
+	194	[868]	JMP      	0 47	; to 242
+	195	[869]	GETTABLE 	3 0 -5	; "m_weightType"
+	196	[869]	GETTABUP 	4 0 -6	; _ENV "ItemSpreadWeightType"
+	197	[869]	GETTABLE 	4 4 -63	; "SmartItem"
+	198	[869]	EQ       	0 3 4
+	199	[869]	JMP      	0 42	; to 242
+	200	[871]	GETTABLE 	3 0 -64	; "m_SmarOrderConfig"
+	201	[871]	EQ       	0 3 -4	; - nil
+	202	[871]	JMP      	0 27	; to 230
+	203	[873]	GETTABLE 	3 0 -65	; "m_storageMaxNumber"
+	204	[875]	NEWTABLE 	4 0 0
+	205	[875]	SETTABLE 	0 -64 4	; "m_SmarOrderConfig" -
+	206	[876]	GETTABLE 	4 0 -18	; "m_itemModel"
+	207	[876]	SELF     	4 4 -38	; "GetBoardModel"
+	208	[876]	CALL     	4 2 2
+	209	[876]	SELF     	4 4 -49	; "GetOrderModel"
+	210	[876]	GETTABUP 	6 0 -50	; _ENV "OrderModelType"
+	211	[876]	GETTABLE 	6 6 -51	; "Slot"
+	212	[876]	CALL     	4 3 2
+	213	[876]	SELF     	4 4 -52	; "GetItemCodeConfigMap"
+	214	[876]	CALL     	4 2 2
+	215	[877]	GETTABUP 	5 0 -66	; _ENV "pairs"
+	216	[877]	MOVE     	6 4
+	217	[877]	CALL     	5 2 4
+	218	[877]	JMP      	0 9	; to 228
+	219	[878]	GETTABLE 	10 9 -53	; "DiffScore"
+	220	[878]	EQ       	1 10 -4	; - nil
+	221	[878]	JMP      	0 6	; to 228
+	222	[878]	GETTABLE 	10 9 -53	; "DiffScore"
+	223	[878]	LE       	0 10 3
+	224	[878]	JMP      	0 3	; to 228
+	225	[879]	GETTABLE 	10 0 -64	; "m_SmarOrderConfig"
+	226	[879]	GETTABLE 	11 9 -53	; "DiffScore"
+	227	[879]	SETTABLE 	10 8 11
+	228	[877]	TFORCALL 	5 2
+	229	[877]	TFORLOOP 	7 -11	; to 219
+	230	[885]	GETTABUP 	3 0 -67	; _ENV "SmartRewardHelper"
+	231	[885]	GETTABLE 	3 3 -68	; "GetCodesFor_ItemSpread"
+	232	[885]	GETTABLE 	4 0 -64	; "m_SmarOrderConfig"
+	233	[885]	GETTABLE 	5 0 -44	; "m_itemRestNumber"
+	234	[885]	LOADK    	6 -69	; "itemSpread"
+	235	[885]	CALL     	3 4 2
+	236	[885]	GETTABLE 	1 3 -34	; 1
+	237	[886]	GETTABLE 	3 0 -64	; "m_SmarOrderConfig"
+	238	[886]	GETTABLE 	3 3 1
+	239	[886]	TESTSET  	2 3 1
+	240	[886]	JMP      	0 1	; to 242
+	241	[886]	LOADK    	2 -34	; 1
+	242	[889]	MOVE     	3 1
+	243	[889]	LOADBOOL 	4 0 0
+	244	[889]	MOVE     	5 2
+	245	[889]	RETURN   	3 4
+	246	[890]	RETURN   	0 1
+constants (69) for 0000022A550EECB0:
+	1	"GM"
+	2	"TutorialModel"
+	3	"GetForceSpreadItemCode"
+	4	nil
+	5	"m_weightType"
+	6	"ItemSpreadWeightType"
+	7	"Fixed"
+	8	"ActivityManager"
+	9	"GetStartedActivityByDefinition"
+	10	"GeneratorBoostActivityDefinition"
+	11	"CanSupportGeneratorBoost"
+	12	"IsBuffActive"
+	13	"EGeneratorBoostBuffType"
+	14	"SmartProduce"
+	15	"CanSupportSmart"
+	16	"RandomGenerateCodeHelper"
+	17	"TrySmartProduceItem"
+	18	"m_itemModel"
+	19	"TryExtraProduceItem"
+	20	"BoardSpreadType"
+	21	"GeneratorBoostExtraSmart"
+	22	"GeneratorBoostSmart"
+	23	"BuffSmart"
+	24	"_FixedGenerateItemCode"
+	25	"GeneratorBoostExtraNormal"
+	26	"Normal"
+	27	"Decremental"
+	28	"Table"
+	29	"ListWeightSelectOne"
+	30	"m_codeWeightPairs"
+	31	"Code"
+	32	"ipairs"
+	33	"Weight"
+	34	1
+	35	0
+	36	"table"
+	37	"remove"
+	38	"GetBoardModel"
+	39	"SaveItemProperty"
+	40	"OrderItem"
+	41	"GetOrderItemCode"
+	42	"ChestCustomItem"
+	43	"GenerateChestCustomCodeRule"
+	44	"m_itemRestNumber"
+	45	"205"
+	46	"Log"
+	47	"Error"
+	48	"\233\148\153\232\175\175\231\154\132\231\148\159\230\136\144\230\163\139\229\173\144"
+	49	"GetOrderModel"
+	50	"OrderModelType"
+	51	"Slot"
+	52	"GetItemCodeConfigMap"
+	53	"DiffScore"
+	54	"GameConfig"
+	55	"IsTestMode"
+	56	"Debug"
+	57	"\230\163\139\229\173\144\229\165\150\229\138\177\229\150\183\229\143\145\239\188\154"
+	58	"\229\136\134\229\128\188\228\184\138\233\153\144: "
+	59	"tostring"
+	60	"\n"
+	61	"\n\230\156\128\229\144\142\233\128\137\230\139\169\231\154\132\230\163\139\229\173\144:"
+	62	"\n\232\138\177\232\180\185\231\154\132\229\136\134:"
+	63	"SmartItem"
+	64	"m_SmarOrderConfig"
+	65	"m_storageMaxNumber"
+	66	"pairs"
+	67	"SmartRewardHelper"
+	68	"GetCodesFor_ItemSpread"
+	69	"itemSpread"
+locals (22) for 0000022A550EECB0:
+	0	self	1	247
+	1	code	5	247
+	2	costCount	11	247
+	3	spreadType	17	92
+	4	generatorBoostActivity	22	92
+	5	bCanGeneratorBoost	35	92
+	6	bCanSmartBuff	37	92
+	7	(for generator)	106	130
+	8	(for state)	106	130
+	9	(for control)	106	130
+	10	index	107	128
+	11	item	107	128
+	12	listItemType	151	194
+	13	testStr	151	194
+	14	orderItemConfig	172	194
+	15	currentDiffScoreLimit	204	230
+	16	orderItemConfig	215	230
+	17	(for generator)	218	230
+	18	(for state)	218	230
+	19	(for control)	218	230
+	20	code	219	228
+	21	config	219	228
+upvalues (1) for 0000022A550EECB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:892,941> (143 instructions at 0000022A550EDEB0)
+1 param, 18 slots, 1 upvalue, 20 locals, 47 constants, 0 functions
+	1	[893]	GETTABUP 	1 0 -1	; _ENV "assert"
+	2	[893]	GETTABLE 	2 0 -2	; "m_itemModel"
+	3	[893]	SELF     	2 2 -3	; "GetBoardModel"
+	4	[893]	CALL     	2 2 2
+	5	[893]	GETTABUP 	3 0 -4	; _ENV "GM"
+	6	[893]	GETTABLE 	3 3 -5	; "MainBoardModel"
+	7	[893]	EQ       	1 2 3
+	8	[893]	JMP      	0 1	; to 10
+	9	[893]	LOADBOOL 	2 0 1
+	10	[893]	LOADBOOL 	2 1 0
+	11	[893]	LOADK    	3 -6	; "\230\157\131\233\135\141\231\177\187\229\158\139\228\184\186OrderItem\231\154\132\230\175\141\228\189\147\230\163\139\229\173\144\229\191\133\233\156\128\228\189\141\228\186\142\228\184\187\230\163\139\231\155\152\228\184\138"
+	12	[893]	CALL     	1 3 1
+	13	[895]	NEWTABLE 	1 0 0
+	14	[896]	GETTABUP 	2 0 -4	; _ENV "GM"
+	15	[896]	GETTABLE 	2 2 -5	; "MainBoardModel"
+	16	[896]	SELF     	2 2 -7	; "CalculateOrderCodeLackNumMap"
+	17	[896]	LOADBOOL 	4 0 0
+	18	[896]	LOADBOOL 	5 1 0
+	19	[896]	LOADBOOL 	6 0 0
+	20	[896]	CALL     	2 5 2
+	21	[897]	GETTABUP 	3 0 -4	; _ENV "GM"
+	22	[897]	GETTABLE 	3 3 -5	; "MainBoardModel"
+	23	[897]	SELF     	3 3 -8	; "GetOrderBoostOrderCodeLackMap"
+	24	[897]	CALL     	3 2 2
+	25	[898]	GETTABUP 	4 0 -4	; _ENV "GM"
+	26	[898]	GETTABLE 	4 4 -5	; "MainBoardModel"
+	27	[898]	SELF     	4 4 -9	; "GetOrderModel"
+	28	[898]	GETTABUP 	6 0 -10	; _ENV "OrderModelType"
+	29	[898]	GETTABLE 	6 6 -11	; "Slot"
+	30	[898]	CALL     	4 3 2
+	31	[898]	SELF     	4 4 -12	; "GetItemCodeConfigMap"
+	32	[898]	CALL     	4 2 2
+	33	[899]	GETTABUP 	5 0 -13	; _ENV "pairs"
+	34	[899]	MOVE     	6 2
+	35	[899]	CALL     	5 2 4
+	36	[899]	JMP      	0 24	; to 61
+	37	[900]	GETTABLE 	10 4 8
+	38	[902]	EQ       	1 10 -14	; - nil
+	39	[902]	JMP      	0 21	; to 61
+	40	[903]	GETTABUP 	11 0 -15	; _ENV "math"
+	41	[903]	GETTABLE 	11 11 -16	; "min"
+	42	[903]	GETTABLE 	12 10 -17	; "DiffScore"
+	43	[903]	GETTABUP 	13 0 -18	; _ENV "ItemSpread"
+	44	[903]	GETTABLE 	13 13 -19	; "OrderItemDiffScoreLimit"
+	45	[903]	CALL     	11 3 2
+	46	[904]	GETTABUP 	12 0 -20	; _ENV "table"
+	47	[904]	GETTABLE 	12 12 -21	; "insert"
+	48	[904]	MOVE     	13 1
+	49	[904]	NEWTABLE 	14 0 2
+	50	[905]	SETTABLE 	14 -22 8	; "Code" -
+	51	[906]	GETTABLE 	15 3 8
+	52	[906]	EQ       	0 15 -14	; - nil
+	53	[906]	JMP      	0 3	; to 57
+	54	[906]	LOADK    	15 -24	; 1
+	55	[906]	TEST     	15 1
+	56	[906]	JMP      	0 1	; to 58
+	57	[906]	LOADK    	15 -25	; 1000
+	58	[906]	MUL      	15 11 15
+	59	[906]	SETTABLE 	14 -23 15	; "Weight" -
+	60	[904]	CALL     	12 3 1
+	61	[899]	TFORCALL 	5 2
+	62	[899]	TFORLOOP 	7 -26	; to 37
+	63	[911]	SELF     	5 0 -26	; "_Log"
+	64	[911]	LOADK    	7 -27	; "\232\174\162\229\141\149\230\163\139\229\173\144\229\174\157\231\174\177\229\150\183\229\143\145\230\151\165\229\191\151"
+	65	[911]	CALL     	5 3 1
+	66	[912]	SELF     	5 0 -26	; "_Log"
+	67	[912]	LOADK    	7 -28	; "\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144\229\143\138\229\133\182\229\175\185\229\186\1481\231\186\167\230\163\139\229\173\144\230\149\176\233\135\143"
+	68	[912]	CALL     	5 3 1
+	69	[913]	SELF     	5 0 -26	; "_Log"
+	70	[913]	MOVE     	7 2
+	71	[913]	CALL     	5 3 1
+	72	[914]	SELF     	5 0 -26	; "_Log"
+	73	[914]	LOADK    	7 -29	; "\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144\229\143\138\229\133\182\230\157\131\233\135\141"
+	74	[914]	CALL     	5 3 1
+	75	[916]	NEWTABLE 	5 0 0
+	76	[917]	GETTABUP 	6 0 -30	; _ENV "ipairs"
+	77	[917]	MOVE     	7 1
+	78	[917]	CALL     	6 2 4
+	79	[917]	JMP      	0 3	; to 83
+	80	[918]	GETTABLE 	11 10 -22	; "Code"
+	81	[918]	GETTABLE 	12 10 -23	; "Weight"
+	82	[918]	SETTABLE 	5 11 12
+	83	[917]	TFORCALL 	6 2
+	84	[917]	TFORLOOP 	8 -5	; to 80
+	85	[920]	SELF     	6 0 -26	; "_Log"
+	86	[920]	MOVE     	8 5
+	87	[920]	CALL     	6 3 1
+	88	[922]	LOADNIL  	6 0
+	89	[923]	EQ       	0 6 -14	; - nil
+	90	[923]	JMP      	0 35	; to 126
+	91	[923]	LEN      	7 1
+	92	[923]	EQ       	1 7 -31	; - 0
+	93	[923]	JMP      	0 32	; to 126
+	94	[924]	GETTABUP 	7 0 -32	; _ENV "Table"
+	95	[924]	GETTABLE 	7 7 -33	; "ListWeightSelectOne"
+	96	[924]	MOVE     	8 1
+	97	[924]	CALL     	7 2 2
+	98	[925]	GETTABUP 	8 0 -32	; _ENV "Table"
+	99	[925]	GETTABLE 	8 8 -34	; "ListRemove"
+	100	[925]	MOVE     	9 1
+	101	[925]	MOVE     	10 7
+	102	[925]	CALL     	8 3 1
+	103	[926]	SELF     	8 0 -35	; "_TryGenerateItemCodeByOrderItem"
+	104	[926]	GETTABLE 	10 7 -22	; "Code"
+	105	[926]	CALL     	8 3 2
+	106	[926]	MOVE     	6 8
+	107	[927]	EQ       	1 6 -14	; - nil
+	108	[927]	JMP      	0 -20	; to 89
+	109	[928]	SELF     	8 0 -26	; "_Log"
+	110	[928]	LOADK    	10 -36	; "\233\128\137\229\143\150\229\176\157\232\175\149\229\144\136\230\136\144\231\154\132\231\155\174\230\160\135\230\163\139\229\173\144"
+	111	[928]	GETTABLE 	11 7 -22	; "Code"
+	112	[928]	LOADK    	12 -37	; ", \231\188\186\229\164\177\230\149\176\233\135\143\233\153\141\228\189\142 "
+	113	[928]	GETTABUP 	13 0 -38	; _ENV "MathUtil"
+	114	[928]	GETTABLE 	13 13 -39	; "IntPow"
+	115	[928]	LOADK    	14 -40	; 2
+	116	[928]	GETTABUP 	15 0 -4	; _ENV "GM"
+	117	[928]	GETTABLE 	15 15 -41	; "ItemDataModel"
+	118	[928]	SELF     	15 15 -42	; "GetChainLevel"
+	119	[928]	MOVE     	17 6
+	120	[928]	CALL     	15 3 2
+	121	[928]	SUB      	15 15 -24	; - 1
+	122	[928]	CALL     	13 3 2
+	123	[928]	CONCAT   	10 10 13
+	124	[928]	CALL     	8 3 1
+	125	[929]	JMP      	0 -37	; to 89
+	126	[932]	EQ       	0 6 -14	; - nil
+	127	[932]	JMP      	0 6	; to 134
+	128	[933]	SELF     	7 0 -26	; "_Log"
+	129	[933]	LOADK    	9 -43	; "\230\178\161\230\156\137\229\143\175\233\128\137\230\139\169\231\154\132\232\174\162\229\141\149\230\163\139\229\173\144\239\188\140\229\156\168\230\137\128\230\156\137\233\133\141\231\189\174\231\154\132\230\163\139\229\173\144\228\184\173\232\191\155\232\161\140\233\128\137\230\139\169"
+	130	[933]	CALL     	7 3 1
+	131	[934]	SELF     	7 0 -44	; "_TryGenerateItemCodeAll"
+	132	[934]	CALL     	7 2 2
+	133	[934]	MOVE     	6 7
+	134	[937]	SELF     	7 0 -26	; "_Log"
+	135	[937]	LOADK    	9 -45	; "\233\128\137\230\139\169"
+	136	[937]	MOVE     	10 6
+	137	[937]	LOADK    	11 -46	; "\228\189\156\228\184\186\229\150\183\229\143\145\231\154\132\230\163\139\229\173\144"
+	138	[937]	CONCAT   	9 9 11
+	139	[937]	CALL     	7 3 1
+	140	[938]	SELF     	7 0 -47	; "_FlushLog"
+	141	[938]	CALL     	7 2 1
+	142	[940]	RETURN   	6 2
+	143	[941]	RETURN   	0 1
+constants (47) for 0000022A550EDEB0:
+	1	"assert"
+	2	"m_itemModel"
+	3	"GetBoardModel"
+	4	"GM"
+	5	"MainBoardModel"
+	6	"\230\157\131\233\135\141\231\177\187\229\158\139\228\184\186OrderItem\231\154\132\230\175\141\228\189\147\230\163\139\229\173\144\229\191\133\233\156\128\228\189\141\228\186\142\228\184\187\230\163\139\231\155\152\228\184\138"
+	7	"CalculateOrderCodeLackNumMap"
+	8	"GetOrderBoostOrderCodeLackMap"
+	9	"GetOrderModel"
+	10	"OrderModelType"
+	11	"Slot"
+	12	"GetItemCodeConfigMap"
+	13	"pairs"
+	14	nil
+	15	"math"
+	16	"min"
+	17	"DiffScore"
+	18	"ItemSpread"
+	19	"OrderItemDiffScoreLimit"
+	20	"table"
+	21	"insert"
+	22	"Code"
+	23	"Weight"
+	24	1
+	25	1000
+	26	"_Log"
+	27	"\232\174\162\229\141\149\230\163\139\229\173\144\229\174\157\231\174\177\229\150\183\229\143\145\230\151\165\229\191\151"
+	28	"\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144\229\143\138\229\133\182\229\175\185\229\186\1481\231\186\167\230\163\139\229\173\144\230\149\176\233\135\143"
+	29	"\232\174\162\229\141\149\231\188\186\229\176\145\231\154\132\230\163\139\229\173\144\229\143\138\229\133\182\230\157\131\233\135\141"
+	30	"ipairs"
+	31	0
+	32	"Table"
+	33	"ListWeightSelectOne"
+	34	"ListRemove"
+	35	"_TryGenerateItemCodeByOrderItem"
+	36	"\233\128\137\229\143\150\229\176\157\232\175\149\229\144\136\230\136\144\231\154\132\231\155\174\230\160\135\230\163\139\229\173\144"
+	37	", \231\188\186\229\164\177\230\149\176\233\135\143\233\153\141\228\189\142 "
+	38	"MathUtil"
+	39	"IntPow"
+	40	2
+	41	"ItemDataModel"
+	42	"GetChainLevel"
+	43	"\230\178\161\230\156\137\229\143\175\233\128\137\230\139\169\231\154\132\232\174\162\229\141\149\230\163\139\229\173\144\239\188\140\229\156\168\230\137\128\230\156\137\233\133\141\231\189\174\231\154\132\230\163\139\229\173\144\228\184\173\232\191\155\232\161\140\233\128\137\230\139\169"
+	44	"_TryGenerateItemCodeAll"
+	45	"\233\128\137\230\139\169"
+	46	"\228\189\156\228\184\186\229\150\183\229\143\145\231\154\132\230\163\139\229\173\144"
+	47	"_FlushLog"
+locals (20) for 0000022A550EDEB0:
+	0	self	1	144
+	1	orderCodeWeight	14	144
+	2	orderCodeLackCountMap	21	144
+	3	itemsInBoostOrder	25	144
+	4	itemCodeConfigMap	33	144
+	5	(for generator)	36	63
+	6	(for state)	36	63
+	7	(for control)	36	63
+	8	code	37	61
+	9	_	37	61
+	10	codeConfig	38	61
+	11	diffScore	46	61
+	12	orderCodeWeightMap	76	144
+	13	(for generator)	79	85
+	14	(for state)	79	85
+	15	(for control)	79	85
+	16	_	80	83
+	17	item	80	83
+	18	code	89	144
+	19	item	98	125
+upvalues (1) for 0000022A550EDEB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:943,952> (22 instructions at 0000022A550EEAB0)
+1 param, 6 slots, 1 upvalue, 2 locals, 9 constants, 0 functions
+	1	[946]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[946]	SELF     	1 1 -2	; "GetComponent"
+	3	[946]	GETTABUP 	3 0 -3	; _ENV "ItemStateCollection"
+	4	[946]	CALL     	1 3 2
+	5	[947]	EQ       	1 1 -4	; - nil
+	6	[947]	JMP      	0 7	; to 14
+	7	[948]	GETTABUP 	2 0 -5	; _ENV "GM"
+	8	[948]	GETTABLE 	2 2 -6	; "ItemFixedSpreadModel"
+	9	[948]	SELF     	2 2 -7	; "GenerateItemCode"
+	10	[948]	SELF     	4 1 -8	; "GetStateType"
+	11	[948]	CALL     	4 2 0
+	12	[948]	TAILCALL 	2 0 0
+	13	[948]	RETURN   	2 0
+	14	[951]	GETTABUP 	2 0 -5	; _ENV "GM"
+	15	[951]	GETTABLE 	2 2 -6	; "ItemFixedSpreadModel"
+	16	[951]	SELF     	2 2 -7	; "GenerateItemCode"
+	17	[951]	GETTABLE 	4 0 -1	; "m_itemModel"
+	18	[951]	SELF     	4 4 -9	; "GetType"
+	19	[951]	CALL     	4 2 0
+	20	[951]	TAILCALL 	2 0 0
+	21	[951]	RETURN   	2 0
+	22	[952]	RETURN   	0 1
+constants (9) for 0000022A550EEAB0:
+	1	"m_itemModel"
+	2	"GetComponent"
+	3	"ItemStateCollection"
+	4	nil
+	5	"GM"
+	6	"ItemFixedSpreadModel"
+	7	"GenerateItemCode"
+	8	"GetStateType"
+	9	"GetType"
+locals (2) for 0000022A550EEAB0:
+	0	self	1	23
+	1	itemStateCollection	5	23
+upvalues (1) for 0000022A550EEAB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:954,975> (60 instructions at 0000022A550EDF30)
+2 params, 15 slots, 1 upvalue, 12 locals, 16 constants, 0 functions
+	1	[955]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[955]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[955]	SELF     	2 2 -3	; "GetChainId"
+	4	[955]	MOVE     	4 1
+	5	[955]	CALL     	2 3 2
+	6	[956]	GETTABUP 	3 0 -1	; _ENV "GM"
+	7	[956]	GETTABLE 	3 3 -2	; "ItemDataModel"
+	8	[956]	SELF     	3 3 -4	; "GetChainLevel"
+	9	[956]	MOVE     	5 1
+	10	[956]	CALL     	3 3 2
+	11	[957]	NEWTABLE 	4 0 0
+	12	[958]	GETTABUP 	5 0 -5	; _ENV "ipairs"
+	13	[958]	GETTABLE 	6 0 -6	; "m_codeWeightPairs"
+	14	[958]	CALL     	5 2 4
+	15	[958]	JMP      	0 27	; to 43
+	16	[960]	GETTABUP 	10 0 -1	; _ENV "GM"
+	17	[960]	GETTABLE 	10 10 -2	; "ItemDataModel"
+	18	[960]	SELF     	10 10 -7	; "GetModelConfig"
+	19	[960]	GETTABLE 	12 9 -8	; "Code"
+	20	[960]	LOADBOOL 	13 1 0
+	21	[960]	CALL     	10 4 2
+	22	[960]	EQ       	1 10 -9	; - nil
+	23	[960]	JMP      	0 19	; to 43
+	24	[961]	GETTABUP 	10 0 -1	; _ENV "GM"
+	25	[961]	GETTABLE 	10 10 -2	; "ItemDataModel"
+	26	[961]	SELF     	10 10 -3	; "GetChainId"
+	27	[961]	GETTABLE 	12 9 -8	; "Code"
+	28	[961]	CALL     	10 3 2
+	29	[962]	EQ       	0 10 2
+	30	[962]	JMP      	0 12	; to 43
+	31	[963]	GETTABUP 	11 0 -1	; _ENV "GM"
+	32	[963]	GETTABLE 	11 11 -2	; "ItemDataModel"
+	33	[963]	SELF     	11 11 -4	; "GetChainLevel"
+	34	[963]	GETTABLE 	13 9 -8	; "Code"
+	35	[963]	CALL     	11 3 2
+	36	[964]	LT       	0 11 3
+	37	[964]	JMP      	0 5	; to 43
+	38	[965]	GETTABUP 	12 0 -10	; _ENV "table"
+	39	[965]	GETTABLE 	12 12 -11	; "insert"
+	40	[965]	MOVE     	13 4
+	41	[965]	GETTABLE 	14 9 -8	; "Code"
+	42	[965]	CALL     	12 3 1
+	43	[958]	TFORCALL 	5 2
+	44	[958]	TFORLOOP 	7 -29	; to 16
+	45	[971]	SELF     	5 0 -12	; "_Log"
+	46	[971]	LOADK    	7 -13	; "\229\176\157\232\175\149\233\128\137\230\139\169\232\174\162\229\141\149\230\163\139\229\173\144"
+	47	[971]	MOVE     	8 1
+	48	[971]	LOADK    	9 -14	; "\239\188\140\229\143\175\232\131\189\229\150\183\229\143\145\231\154\132\230\163\139\229\173\144\229\136\151\232\161\168"
+	49	[971]	CONCAT   	7 7 9
+	50	[971]	CALL     	5 3 1
+	51	[972]	SELF     	5 0 -12	; "_Log"
+	52	[972]	MOVE     	7 4
+	53	[972]	LOADBOOL 	8 1 0
+	54	[972]	CALL     	5 4 1
+	55	[974]	GETTABUP 	5 0 -15	; _ENV "Table"
+	56	[974]	GETTABLE 	5 5 -16	; "ListRandomSelectOne"
+	57	[974]	MOVE     	6 4
+	58	[974]	TAILCALL 	5 2 0
+	59	[974]	RETURN   	5 0
+	60	[975]	RETURN   	0 1
+constants (16) for 0000022A550EDF30:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"GetChainLevel"
+	5	"ipairs"
+	6	"m_codeWeightPairs"
+	7	"GetModelConfig"
+	8	"Code"
+	9	nil
+	10	"table"
+	11	"insert"
+	12	"_Log"
+	13	"\229\176\157\232\175\149\233\128\137\230\139\169\232\174\162\229\141\149\230\163\139\229\173\144"
+	14	"\239\188\140\229\143\175\232\131\189\229\150\183\229\143\145\231\154\132\230\163\139\229\173\144\229\136\151\232\161\168"
+	15	"Table"
+	16	"ListRandomSelectOne"
+locals (12) for 0000022A550EDF30:
+	0	self	1	61
+	1	itemCode	1	61
+	2	targetChainId	6	61
+	3	levelLimit	11	61
+	4	itemCodes	12	61
+	5	(for generator)	15	45
+	6	(for state)	15	45
+	7	(for control)	15	45
+	8	_	16	43
+	9	item	16	43
+	10	chainId	29	43
+	11	level	36	43
+upvalues (1) for 0000022A550EDF30:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:977,1001> (67 instructions at 0000022A550ED0B0)
+1 param, 17 slots, 1 upvalue, 14 locals, 17 constants, 0 functions
+	1	[978]	NEWTABLE 	1 0 0
+	2	[979]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	3	[979]	GETTABLE 	3 0 -2	; "m_codeWeightPairs"
+	4	[979]	CALL     	2 2 4
+	5	[979]	JMP      	0 37	; to 43
+	6	[981]	GETTABUP 	7 0 -3	; _ENV "GM"
+	7	[981]	GETTABLE 	7 7 -4	; "ItemDataModel"
+	8	[981]	SELF     	7 7 -5	; "GetModelConfig"
+	9	[981]	GETTABLE 	9 6 -6	; "Code"
+	10	[981]	LOADBOOL 	10 1 0
+	11	[981]	CALL     	7 4 2
+	12	[981]	EQ       	1 7 -7	; - nil
+	13	[981]	JMP      	0 29	; to 43
+	14	[982]	GETTABUP 	7 0 -3	; _ENV "GM"
+	15	[982]	GETTABLE 	7 7 -4	; "ItemDataModel"
+	16	[982]	SELF     	7 7 -8	; "GetChainId"
+	17	[982]	GETTABLE 	9 6 -6	; "Code"
+	18	[982]	CALL     	7 3 2
+	19	[983]	GETTABUP 	8 0 -3	; _ENV "GM"
+	20	[983]	GETTABLE 	8 8 -4	; "ItemDataModel"
+	21	[983]	SELF     	8 8 -9	; "GetChainGenerators"
+	22	[983]	MOVE     	10 7
+	23	[983]	CALL     	8 3 2
+	24	[984]	GETTABUP 	9 0 -1	; _ENV "ipairs"
+	25	[984]	MOVE     	10 8
+	26	[984]	CALL     	9 2 4
+	27	[984]	JMP      	0 13	; to 41
+	28	[985]	GETTABUP 	14 0 -3	; _ENV "GM"
+	29	[985]	GETTABLE 	14 14 -4	; "ItemDataModel"
+	30	[985]	SELF     	14 14 -10	; "IsUnlocked"
+	31	[985]	MOVE     	16 13
+	32	[985]	CALL     	14 3 2
+	33	[985]	TEST     	14 0
+	34	[985]	JMP      	0 6	; to 41
+	35	[986]	GETTABUP 	14 0 -11	; _ENV "table"
+	36	[986]	GETTABLE 	14 14 -12	; "insert"
+	37	[986]	MOVE     	15 1
+	38	[986]	GETTABLE 	16 6 -6	; "Code"
+	39	[986]	CALL     	14 3 1
+	40	[986]	JMP      	0 2	; to 43
+	41	[984]	TFORCALL 	9 2
+	42	[984]	TFORLOOP 	11 -15	; to 28
+	43	[979]	TFORCALL 	2 2
+	44	[979]	TFORLOOP 	4 -39	; to 6
+	45	[993]	SELF     	2 0 -13	; "_Log"
+	46	[993]	LOADK    	4 -14	; "\230\175\141\228\189\147\230\163\139\229\173\144\229\183\178\229\173\152\229\156\168\231\154\132\230\163\139\229\173\144"
+	47	[993]	CALL     	2 3 1
+	48	[994]	SELF     	2 0 -13	; "_Log"
+	49	[994]	MOVE     	4 1
+	50	[994]	LOADBOOL 	5 1 0
+	51	[994]	CALL     	2 4 1
+	52	[996]	LEN      	2 1
+	53	[996]	EQ       	0 2 -15	; - 0
+	54	[996]	JMP      	0 7	; to 62
+	55	[997]	GETTABUP 	2 0 -16	; _ENV "Table"
+	56	[997]	GETTABLE 	2 2 -17	; "ListRandomSelectOne"
+	57	[997]	GETTABLE 	3 0 -2	; "m_codeWeightPairs"
+	58	[997]	CALL     	2 2 2
+	59	[997]	GETTABLE 	2 2 -6	; "Code"
+	60	[997]	RETURN   	2 2
+	61	[997]	JMP      	0 5	; to 67
+	62	[999]	GETTABUP 	2 0 -16	; _ENV "Table"
+	63	[999]	GETTABLE 	2 2 -17	; "ListRandomSelectOne"
+	64	[999]	MOVE     	3 1
+	65	[999]	TAILCALL 	2 2 0
+	66	[999]	RETURN   	2 0
+	67	[1001]	RETURN   	0 1
+constants (17) for 0000022A550ED0B0:
+	1	"ipairs"
+	2	"m_codeWeightPairs"
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetModelConfig"
+	6	"Code"
+	7	nil
+	8	"GetChainId"
+	9	"GetChainGenerators"
+	10	"IsUnlocked"
+	11	"table"
+	12	"insert"
+	13	"_Log"
+	14	"\230\175\141\228\189\147\230\163\139\229\173\144\229\183\178\229\173\152\229\156\168\231\154\132\230\163\139\229\173\144"
+	15	0
+	16	"Table"
+	17	"ListRandomSelectOne"
+locals (14) for 0000022A550ED0B0:
+	0	self	1	68
+	1	generatorValidCodes	2	68
+	2	(for generator)	5	45
+	3	(for state)	5	45
+	4	(for control)	5	45
+	5	_	6	43
+	6	pair	6	43
+	7	chainId	19	43
+	8	generators	24	43
+	9	(for generator)	27	43
+	10	(for state)	27	43
+	11	(for control)	27	43
+	12	_	28	41
+	13	generator	28	41
+upvalues (1) for 0000022A550ED0B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1004,1053> (105 instructions at 0000022A550EE330)
+1 param, 12 slots, 1 upvalue, 7 locals, 37 constants, 0 functions
+	1	[1005]	GETTABLE 	1 0 -1	; "m_itemRestNumber"
+	2	[1005]	EQ       	1 1 -2	; - 0
+	3	[1005]	JMP      	0 5	; to 9
+	4	[1005]	GETTABLE 	1 0 -3	; "m_state"
+	5	[1005]	GETTABUP 	2 0 -4	; _ENV "ItemSpreadState"
+	6	[1005]	GETTABLE 	2 2 -5	; "Opened"
+	7	[1005]	EQ       	1 1 2
+	8	[1005]	JMP      	0 2	; to 11
+	9	[1006]	LOADBOOL 	1 0 0
+	10	[1006]	RETURN   	1 2
+	11	[1009]	GETTABLE 	1 0 -6	; "m_itemModel"
+	12	[1009]	SELF     	1 1 -7	; "GetBoardModel"
+	13	[1009]	CALL     	1 2 2
+	14	[1010]	SELF     	2 0 -8	; "_GetAutoSpreadPosition"
+	15	[1010]	MOVE     	4 1
+	16	[1010]	CALL     	2 3 2
+	17	[1013]	SELF     	3 0 -9	; "IsDisposable"
+	18	[1013]	CALL     	3 2 2
+	19	[1014]	TEST     	3 0
+	20	[1014]	JMP      	0 17	; to 38
+	21	[1014]	GETTABLE 	3 0 -10	; "m_weightType"
+	22	[1014]	GETTABUP 	4 0 -11	; _ENV "ItemSpreadWeightType"
+	23	[1014]	GETTABLE 	4 4 -12	; "Decremental"
+	24	[1014]	EQ       	0 3 4
+	25	[1014]	JMP      	0 10	; to 36
+	26	[1015]	GETTABLE 	3 1 -13	; "CacheItemFromSpread"
+	27	[1015]	EQ       	1 3 -14	; - nil
+	28	[1015]	JMP      	0 7	; to 36
+	29	[1016]	GETTABUP 	3 0 -15	; _ENV "GM"
+	30	[1016]	GETTABLE 	3 3 -16	; "ConfigModel"
+	31	[1016]	SELF     	3 3 -17	; "IsServerControlOpen"
+	32	[1016]	GETTABUP 	5 0 -18	; _ENV "EGeneralConfType"
+	33	[1016]	GETTABLE 	5 5 -19	; "AutoSpreadToCache"
+	34	[1016]	CALL     	3 3 2
+	35	[1016]	JMP      	0 2	; to 38
+	36	[1016]	LOADBOOL 	3 0 1
+	37	[1016]	LOADBOOL 	3 1 0
+	38	[1018]	EQ       	0 2 -14	; - nil
+	39	[1018]	JMP      	0 4	; to 44
+	40	[1018]	TEST     	3 1
+	41	[1018]	JMP      	0 2	; to 44
+	42	[1019]	LOADBOOL 	4 0 0
+	43	[1019]	RETURN   	4 2
+	44	[1022]	TEST     	3 0
+	45	[1022]	JMP      	0 15	; to 61
+	46	[1022]	EQ       	0 2 -14	; - nil
+	47	[1022]	JMP      	0 13	; to 61
+	48	[1024]	SELF     	4 0 -20	; "GetAutoSpreadDecrementalRemainTypes"
+	49	[1024]	CALL     	4 2 2
+	50	[1025]	SELF     	5 1 -13	; "CacheItemFromSpread"
+	51	[1025]	MOVE     	7 4
+	52	[1025]	GETTABLE 	8 0 -6	; "m_itemModel"
+	53	[1025]	CALL     	5 4 1
+	54	[1026]	GETTABLE 	5 0 -21	; "m_spreadCount"
+	55	[1026]	LEN      	6 4
+	56	[1026]	ADD      	5 5 6
+	57	[1026]	SETTABLE 	0 -21 5	; "m_spreadCount" -
+	58	[1027]	SELF     	5 0 -22	; "EmptySpreadCount"
+	59	[1027]	CALL     	5 2 1
+	60	[1027]	JMP      	0 21	; to 82
+	61	[1029]	NEWTABLE 	4 0 2
+	62	[1030]	SETTABLE 	4 -23 -24	; "logSpread" true
+	63	[1031]	SETTABLE 	4 -25 -2	; "energyBoostRatio" 0
+	64	[1034]	GETTABLE 	5 0 -6	; "m_itemModel"
+	65	[1034]	SELF     	5 5 -26	; "GetComponent"
+	66	[1034]	GETTABUP 	7 0 -27	; _ENV "ItemDig"
+	67	[1034]	CALL     	5 3 2
+	68	[1034]	EQ       	1 5 -14	; - nil
+	69	[1034]	JMP      	0 4	; to 74
+	70	[1035]	SETTABLE 	4 -28 -29	; "costEnergy" false
+	71	[1036]	GETTABUP 	5 0 -31	; _ENV "BoardSpreadType"
+	72	[1036]	GETTABLE 	5 5 -32	; "Dig"
+	73	[1036]	SETTABLE 	4 -30 5	; "spreadType" -
+	74	[1039]	SELF     	5 0 -33	; "GenerateItemCode"
+	75	[1039]	CALL     	5 2 2
+	76	[1040]	SELF     	6 1 -34	; "SpreadItem"
+	77	[1040]	GETTABLE 	8 0 -6	; "m_itemModel"
+	78	[1040]	MOVE     	9 2
+	79	[1040]	MOVE     	10 5
+	80	[1040]	MOVE     	11 4
+	81	[1040]	CALL     	6 6 1
+	82	[1044]	GETTABLE 	4 0 -6	; "m_itemModel"
+	83	[1044]	SELF     	4 4 -26	; "GetComponent"
+	84	[1044]	GETTABUP 	6 0 -27	; _ENV "ItemDig"
+	85	[1044]	CALL     	4 3 2
+	86	[1044]	EQ       	0 4 -14	; - nil
+	87	[1044]	JMP      	0 15	; to 103
+	88	[1045]	GETTABLE 	4 0 -35	; "m_transformNumber"
+	89	[1045]	EQ       	1 4 -14	; - nil
+	90	[1045]	JMP      	0 12	; to 103
+	91	[1045]	GETTABLE 	4 0 -35	; "m_transformNumber"
+	92	[1045]	GETTABLE 	5 0 -21	; "m_spreadCount"
+	93	[1045]	EQ       	0 4 5
+	94	[1045]	JMP      	0 8	; to 103
+	95	[1046]	GETTABLE 	4 0 -6	; "m_itemModel"
+	96	[1046]	SELF     	4 4 -26	; "GetComponent"
+	97	[1046]	GETTABUP 	6 0 -36	; _ENV "ItemTransform"
+	98	[1046]	CALL     	4 3 2
+	99	[1046]	SELF     	4 4 -37	; "Transform"
+	100	[1046]	CALL     	4 2 1
+	101	[1047]	LOADBOOL 	4 0 0
+	102	[1047]	RETURN   	4 2
+	103	[1052]	LOADBOOL 	4 1 0
+	104	[1052]	RETURN   	4 2
+	105	[1053]	RETURN   	0 1
+constants (37) for 0000022A550EE330:
+	1	"m_itemRestNumber"
+	2	0
+	3	"m_state"
+	4	"ItemSpreadState"
+	5	"Opened"
+	6	"m_itemModel"
+	7	"GetBoardModel"
+	8	"_GetAutoSpreadPosition"
+	9	"IsDisposable"
+	10	"m_weightType"
+	11	"ItemSpreadWeightType"
+	12	"Decremental"
+	13	"CacheItemFromSpread"
+	14	nil
+	15	"GM"
+	16	"ConfigModel"
+	17	"IsServerControlOpen"
+	18	"EGeneralConfType"
+	19	"AutoSpreadToCache"
+	20	"GetAutoSpreadDecrementalRemainTypes"
+	21	"m_spreadCount"
+	22	"EmptySpreadCount"
+	23	"logSpread"
+	24	true
+	25	"energyBoostRatio"
+	26	"GetComponent"
+	27	"ItemDig"
+	28	"costEnergy"
+	29	false
+	30	"spreadType"
+	31	"BoardSpreadType"
+	32	"Dig"
+	33	"GenerateItemCode"
+	34	"SpreadItem"
+	35	"m_transformNumber"
+	36	"ItemTransform"
+	37	"Transform"
+locals (7) for 0000022A550EE330:
+	0	self	1	106
+	1	boardModel	14	106
+	2	position	17	106
+	3	bAllowAutoSpreadToCache	38	106
+	4	remainTypes	50	60
+	5	args	64	82
+	6	newItemCode	76	82
+upvalues (1) for 0000022A550EE330:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1056,1076> (43 instructions at 0000022A550ED8B0)
+1 param, 4 slots, 1 upvalue, 1 local, 13 constants, 0 functions
+	1	[1057]	GETTABLE 	1 0 -1	; "m_state"
+	2	[1057]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	3	[1057]	GETTABLE 	2 2 -3	; "Closed"
+	4	[1057]	EQ       	0 1 2
+	5	[1057]	JMP      	0 6	; to 12
+	6	[1058]	SELF     	1 0 -4	; "_NotifySpreadFailed"
+	7	[1058]	GETTABUP 	3 0 -5	; _ENV "SpreadFailedReason"
+	8	[1058]	GETTABLE 	3 3 -6	; "ItemClosed"
+	9	[1058]	CALL     	1 3 1
+	10	[1059]	LOADBOOL 	1 0 0
+	11	[1059]	RETURN   	1 2
+	12	[1062]	GETTABLE 	1 0 -1	; "m_state"
+	13	[1062]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	14	[1062]	GETTABLE 	2 2 -7	; "Opening"
+	15	[1062]	EQ       	0 1 2
+	16	[1062]	JMP      	0 6	; to 23
+	17	[1063]	SELF     	1 0 -4	; "_NotifySpreadFailed"
+	18	[1063]	GETTABUP 	3 0 -5	; _ENV "SpreadFailedReason"
+	19	[1063]	GETTABLE 	3 3 -8	; "ItemOpening"
+	20	[1063]	CALL     	1 3 1
+	21	[1064]	LOADBOOL 	1 0 0
+	22	[1064]	RETURN   	1 2
+	23	[1067]	GETTABLE 	1 0 -1	; "m_state"
+	24	[1067]	GETTABUP 	2 0 -2	; _ENV "ItemSpreadState"
+	25	[1067]	GETTABLE 	2 2 -9	; "Initializing"
+	26	[1067]	EQ       	1 1 2
+	27	[1067]	JMP      	0 3	; to 31
+	28	[1067]	GETTABLE 	1 0 -10	; "m_itemRestNumber"
+	29	[1067]	EQ       	0 1 -11	; - 0
+	30	[1067]	JMP      	0 10	; to 41
+	31	[1069]	SELF     	1 0 -12	; "IsDisposable"
+	32	[1069]	CALL     	1 2 2
+	33	[1069]	TEST     	1 1
+	34	[1069]	JMP      	0 4	; to 39
+	35	[1070]	SELF     	1 0 -4	; "_NotifySpreadFailed"
+	36	[1070]	GETTABUP 	3 0 -5	; _ENV "SpreadFailedReason"
+	37	[1070]	GETTABLE 	3 3 -13	; "ItemRecharging"
+	38	[1070]	CALL     	1 3 1
+	39	[1072]	LOADBOOL 	1 0 0
+	40	[1072]	RETURN   	1 2
+	41	[1075]	LOADBOOL 	1 1 0
+	42	[1075]	RETURN   	1 2
+	43	[1076]	RETURN   	0 1
+constants (13) for 0000022A550ED8B0:
+	1	"m_state"
+	2	"ItemSpreadState"
+	3	"Closed"
+	4	"_NotifySpreadFailed"
+	5	"SpreadFailedReason"
+	6	"ItemClosed"
+	7	"Opening"
+	8	"ItemOpening"
+	9	"Initializing"
+	10	"m_itemRestNumber"
+	11	0
+	12	"IsDisposable"
+	13	"ItemRecharging"
+locals (1) for 0000022A550ED8B0:
+	0	self	1	44
+upvalues (1) for 0000022A550ED8B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1079,1096> (31 instructions at 0000022A550EE9B0)
+1 param, 6 slots, 1 upvalue, 4 locals, 10 constants, 0 functions
+	1	[1080]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[1080]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[1080]	CALL     	1 2 2
+	4	[1082]	SELF     	2 0 -3	; "IsAutoSpread"
+	5	[1082]	CALL     	2 2 2
+	6	[1082]	TEST     	2 0
+	7	[1082]	JMP      	0 7	; to 15
+	8	[1083]	SELF     	2 0 -4	; "_GetAutoSpreadPosition"
+	9	[1083]	MOVE     	4 1
+	10	[1083]	CALL     	2 3 2
+	11	[1084]	EQ       	1 2 -5	; - nil
+	12	[1084]	JMP      	0 2	; to 15
+	13	[1085]	LOADBOOL 	3 0 0
+	14	[1085]	RETURN   	3 2
+	15	[1089]	SELF     	2 1 -6	; "FindEmptyPositionInSpreadOrder"
+	16	[1089]	GETTABLE 	4 0 -1	; "m_itemModel"
+	17	[1089]	SELF     	4 4 -7	; "GetPosition"
+	18	[1089]	CALL     	4 2 0
+	19	[1089]	CALL     	2 0 2
+	20	[1090]	EQ       	0 2 -5	; - nil
+	21	[1090]	JMP      	0 6	; to 28
+	22	[1091]	SELF     	3 0 -8	; "_NotifySpreadFailed"
+	23	[1091]	GETTABUP 	5 0 -9	; _ENV "SpreadFailedReason"
+	24	[1091]	GETTABLE 	5 5 -10	; "BoardFull"
+	25	[1091]	CALL     	3 3 1
+	26	[1092]	LOADBOOL 	3 0 0
+	27	[1092]	RETURN   	3 2
+	28	[1095]	LOADBOOL 	3 1 0
+	29	[1095]	MOVE     	4 2
+	30	[1095]	RETURN   	3 3
+	31	[1096]	RETURN   	0 1
+constants (10) for 0000022A550EE9B0:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"IsAutoSpread"
+	4	"_GetAutoSpreadPosition"
+	5	nil
+	6	"FindEmptyPositionInSpreadOrder"
+	7	"GetPosition"
+	8	"_NotifySpreadFailed"
+	9	"SpreadFailedReason"
+	10	"BoardFull"
+locals (4) for 0000022A550EE9B0:
+	0	self	1	32
+	1	boardModel	4	32
+	2	autoSpreadPosition	11	15
+	3	position	20	32
+upvalues (1) for 0000022A550EE9B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1100,1124> (53 instructions at 0000022A550ED7B0)
+1 param, 9 slots, 1 upvalue, 5 locals, 19 constants, 0 functions
+	1	[1101]	SELF     	1 0 -1	; "CostEnergy"
+	2	[1101]	CALL     	1 2 2
+	3	[1103]	SELF     	2 0 -2	; "CanSupportBoostDisco"
+	4	[1103]	CALL     	2 2 2
+	5	[1103]	TEST     	2 0
+	6	[1103]	JMP      	0 1	; to 8
+	7	[1104]	LOADBOOL 	1 0 0
+	8	[1107]	TEST     	1 1
+	9	[1107]	JMP      	0 4	; to 14
+	10	[1108]	LOADBOOL 	2 1 0
+	11	[1108]	LOADK    	3 -3	; 0
+	12	[1108]	LOADBOOL 	4 0 0
+	13	[1108]	RETURN   	2 4
+	14	[1110]	GETTABLE 	2 0 -4	; "m_itemModel"
+	15	[1110]	SELF     	2 2 -5	; "GetBoardModel"
+	16	[1110]	CALL     	2 2 2
+	17	[1111]	LOADNIL  	3 0
+	18	[1112]	LOADK    	4 -3	; 0
+	19	[1113]	GETTABUP 	5 0 -6	; _ENV "ItemSpread"
+	20	[1113]	GETTABLE 	5 5 -7	; "GetCostEnergyNum"
+	21	[1113]	GETTABLE 	6 0 -4	; "m_itemModel"
+	22	[1113]	SELF     	6 6 -8	; "GetType"
+	23	[1113]	CALL     	6 2 0
+	24	[1113]	CALL     	5 0 3
+	25	[1113]	MOVE     	4 6
+	26	[1113]	MOVE     	3 5
+	27	[1116]	GETTABUP 	5 0 -9	; _ENV "GM"
+	28	[1116]	GETTABLE 	5 5 -10	; "EnergyModel"
+	29	[1116]	SELF     	5 5 -11	; "HasEnoughEnergy"
+	30	[1116]	SELF     	7 2 -12	; "GetCostEnergyType"
+	31	[1116]	CALL     	7 2 2
+	32	[1116]	MOVE     	8 3
+	33	[1116]	CALL     	5 4 2
+	34	[1116]	TEST     	5 1
+	35	[1116]	JMP      	0 10	; to 46
+	36	[1117]	GETTABUP 	5 0 -9	; _ENV "GM"
+	37	[1117]	GETTABLE 	5 5 -10	; "EnergyModel"
+	38	[1117]	SETTABLE 	5 -13 -14	; "popupBundleEnergyWindowForLackingEnergy" true
+	39	[1118]	GETTABLE 	5 2 -15	; "event"
+	40	[1118]	SELF     	5 5 -16	; "Call"
+	41	[1118]	GETTABUP 	7 0 -17	; _ENV "BoardEventType"
+	42	[1118]	GETTABLE 	7 7 -18	; "LackEnergy"
+	43	[1118]	CALL     	5 3 1
+	44	[1119]	LOADBOOL 	5 0 0
+	45	[1119]	RETURN   	5 2
+	46	[1121]	GETTABUP 	5 0 -9	; _ENV "GM"
+	47	[1121]	GETTABLE 	5 5 -10	; "EnergyModel"
+	48	[1121]	SETTABLE 	5 -13 -19	; "popupBundleEnergyWindowForLackingEnergy" false
+	49	[1123]	LOADBOOL 	5 1 0
+	50	[1123]	MOVE     	6 4
+	51	[1123]	MOVE     	7 1
+	52	[1123]	RETURN   	5 4
+	53	[1124]	RETURN   	0 1
+constants (19) for 0000022A550ED7B0:
+	1	"CostEnergy"
+	2	"CanSupportBoostDisco"
+	3	0
+	4	"m_itemModel"
+	5	"GetBoardModel"
+	6	"ItemSpread"
+	7	"GetCostEnergyNum"
+	8	"GetType"
+	9	"GM"
+	10	"EnergyModel"
+	11	"HasEnoughEnergy"
+	12	"GetCostEnergyType"
+	13	"popupBundleEnergyWindowForLackingEnergy"
+	14	true
+	15	"event"
+	16	"Call"
+	17	"BoardEventType"
+	18	"LackEnergy"
+	19	false
+locals (5) for 0000022A550ED7B0:
+	0	self	1	54
+	1	costEnergy	3	54
+	2	boardModel	17	54
+	3	maxCostCount	18	54
+	4	maxEnergyBoostRatio	19	54
+upvalues (1) for 0000022A550ED7B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1127,1139> (30 instructions at 0000022A550EE730)
+3 params, 13 slots, 1 upvalue, 6 locals, 15 constants, 0 functions
+	1	[1128]	GETTABLE 	3 0 -1	; "m_itemModel"
+	2	[1128]	SELF     	3 3 -2	; "GetBoardModel"
+	3	[1128]	CALL     	3 2 2
+	4	[1129]	GETTABUP 	4 0 -3	; _ENV "GM"
+	5	[1129]	GETTABLE 	4 4 -4	; "EnergyModel"
+	6	[1129]	SELF     	4 4 -5	; "EnergyTypeToPropertyType"
+	7	[1129]	SELF     	6 3 -6	; "GetCostEnergyType"
+	8	[1129]	CALL     	6 2 0
+	9	[1129]	CALL     	4 0 2
+	10	[1131]	SETTABLE 	0 -7 -8	; "m_testLastCostEnergyCount" 0
+	11	[1132]	TEST     	2 0
+	12	[1132]	JMP      	0 16	; to 29
+	13	[1133]	GETTABUP 	5 0 -9	; _ENV "EnergyBoostModel"
+	14	[1133]	GETTABLE 	5 5 -10	; "GetBoostCostNum"
+	15	[1133]	MOVE     	6 1
+	16	[1133]	CALL     	5 2 2
+	17	[1134]	GETTABUP 	6 0 -3	; _ENV "GM"
+	18	[1134]	GETTABLE 	6 6 -11	; "PropertyDataManager"
+	19	[1134]	SELF     	6 6 -12	; "Consume"
+	20	[1134]	MOVE     	8 4
+	21	[1134]	MOVE     	9 5
+	22	[1134]	GETTABUP 	10 0 -13	; _ENV "EBIType"
+	23	[1134]	GETTABLE 	10 10 -14	; "SpreadItem"
+	24	[1134]	GETTABLE 	11 0 -1	; "m_itemModel"
+	25	[1134]	SELF     	11 11 -15	; "GetCode"
+	26	[1134]	CALL     	11 2 0
+	27	[1134]	CALL     	6 0 1
+	28	[1135]	SETTABLE 	0 -7 5	; "m_testLastCostEnergyCount" -
+	29	[1138]	RETURN   	2 2
+	30	[1139]	RETURN   	0 1
+constants (15) for 0000022A550EE730:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"GM"
+	4	"EnergyModel"
+	5	"EnergyTypeToPropertyType"
+	6	"GetCostEnergyType"
+	7	"m_testLastCostEnergyCount"
+	8	0
+	9	"EnergyBoostModel"
+	10	"GetBoostCostNum"
+	11	"PropertyDataManager"
+	12	"Consume"
+	13	"EBIType"
+	14	"SpreadItem"
+	15	"GetCode"
+locals (6) for 0000022A550EE730:
+	0	self	1	31
+	1	energyBoostRatio	1	31
+	2	costEnergy	1	31
+	3	boardModel	4	31
+	4	propertyType	10	31
+	5	costCount	17	29
+upvalues (1) for 0000022A550EE730:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1141,1197> (99 instructions at 0000022A550EDAB0)
+1 param, 19 slots, 1 upvalue, 13 locals, 38 constants, 0 functions
+	1	[1143]	SELF     	1 0 -1	; "CheckSpreadState"
+	2	[1143]	CALL     	1 2 2
+	3	[1143]	TEST     	1 1
+	4	[1143]	JMP      	0 2	; to 7
+	5	[1144]	LOADBOOL 	1 0 0
+	6	[1144]	RETURN   	1 2
+	7	[1148]	SELF     	1 0 -2	; "CheckSpreadPosAndAuto"
+	8	[1148]	CALL     	1 2 3
+	9	[1149]	TEST     	1 1
+	10	[1149]	JMP      	0 2	; to 13
+	11	[1150]	LOADBOOL 	3 0 0
+	12	[1150]	RETURN   	3 2
+	13	[1154]	SELF     	3 0 -3	; "CheckEnergy"
+	14	[1154]	CALL     	3 2 4
+	15	[1155]	TEST     	3 1
+	16	[1155]	JMP      	0 2	; to 19
+	17	[1156]	LOADBOOL 	6 0 0
+	18	[1156]	RETURN   	6 2
+	19	[1159]	GETTABLE 	6 0 -4	; "m_itemModel"
+	20	[1159]	SELF     	6 6 -5	; "GetBoardModel"
+	21	[1159]	CALL     	6 2 2
+	22	[1160]	SELF     	7 0 -6	; "GenerateItemCode"
+	23	[1160]	MOVE     	9 4
+	24	[1160]	CALL     	7 3 6
+	25	[1163]	SELF     	12 0 -7	; "SpreadCostEnergy"
+	26	[1163]	MOVE     	14 9
+	27	[1163]	MOVE     	15 5
+	28	[1163]	CALL     	12 4 1
+	29	[1166]	GETTABUP 	12 0 -8	; _ENV "GM"
+	30	[1166]	GETTABLE 	12 12 -9	; "ActivityManager"
+	31	[1166]	SELF     	12 12 -10	; "GetModel"
+	32	[1166]	GETTABUP 	14 0 -11	; _ENV "ActivityType"
+	33	[1166]	GETTABLE 	14 14 -12	; "LuckyProduce"
+	34	[1166]	CALL     	12 3 2
+	35	[1166]	SELF     	12 12 -13	; "RecordBoostRatioAdjustData"
+	36	[1166]	MOVE     	14 9
+	37	[1166]	MOVE     	15 8
+	38	[1166]	MOVE     	16 5
+	39	[1166]	SELF     	17 0 -14	; "GetItemModel"
+	40	[1166]	CALL     	17 2 2
+	41	[1166]	SELF     	17 17 -15	; "GetType"
+	42	[1166]	CALL     	17 2 0
+	43	[1166]	CALL     	12 0 1
+	44	[1169]	GETTABUP 	12 0 -8	; _ENV "GM"
+	45	[1169]	GETTABLE 	12 12 -16	; "ConfigModel"
+	46	[1169]	SELF     	12 12 -17	; "IsServerControlOpen"
+	47	[1169]	GETTABUP 	14 0 -18	; _ENV "EGeneralConfType"
+	48	[1169]	GETTABLE 	14 14 -19	; "ItemLandOpt"
+	49	[1169]	CALL     	12 3 2
+	50	[1170]	TEST     	12 0
+	51	[1170]	JMP      	0 19	; to 71
+	52	[1170]	GETTABLE 	12 0 -4	; "m_itemModel"
+	53	[1170]	SELF     	12 12 -5	; "GetBoardModel"
+	54	[1170]	CALL     	12 2 2
+	55	[1170]	GETTABLE 	12 12 -20	; "BoardType"
+	56	[1170]	GETTABUP 	13 0 -21	; _ENV "EBoardType"
+	57	[1170]	GETTABLE 	13 13 -22	; "Tutorial"
+	58	[1170]	EQ       	1 12 13
+	59	[1170]	JMP      	0 11	; to 71
+	60	[1172]	GETTABLE 	12 0 -4	; "m_itemModel"
+	61	[1172]	SELF     	12 12 -5	; "GetBoardModel"
+	62	[1172]	CALL     	12 2 2
+	63	[1172]	SELF     	12 12 -23	; "FindEmptySpreadPosition"
+	64	[1172]	MOVE     	14 7
+	65	[1172]	GETTABLE 	15 0 -4	; "m_itemModel"
+	66	[1172]	SELF     	15 15 -24	; "GetPosition"
+	67	[1172]	CALL     	15 2 0
+	68	[1172]	CALL     	12 0 2
+	69	[1172]	TESTSET  	2 12 1
+	70	[1172]	JMP      	0 0	; to 71
+	71	[1176]	NEWTABLE 	12 0 6
+	72	[1177]	SETTABLE 	12 -25 -26	; "logSpread" true
+	73	[1178]	SETTABLE 	12 -27 9	; "energyBoostRatio" -
+	74	[1179]	SETTABLE 	12 -28 5	; "costEnergy" -
+	75	[1180]	SETTABLE 	12 -29 8	; "spreadType" -
+	76	[1181]	SETTABLE 	12 -30 10	; "originalElement" -
+	77	[1182]	SETTABLE 	12 -31 11	; "specialScene" -
+	78	[1184]	SELF     	13 6 -32	; "SpreadItem"
+	79	[1184]	GETTABLE 	15 0 -4	; "m_itemModel"
+	80	[1184]	MOVE     	16 2
+	81	[1184]	MOVE     	17 7
+	82	[1184]	MOVE     	18 12
+	83	[1184]	CALL     	13 6 1
+	84	[1187]	GETTABUP 	13 0 -33	; _ENV "EventDispatcher"
+	85	[1187]	GETTABLE 	13 13 -34	; "DispatchEvent"
+	86	[1187]	GETTABUP 	14 0 -35	; _ENV "EEventType"
+	87	[1187]	GETTABLE 	14 14 -36	; "VibrationLight"
+	88	[1187]	CALL     	13 2 1
+	89	[1190]	SELF     	13 0 -37	; "TryRemoveSelf"
+	90	[1190]	CALL     	13 2 2
+	91	[1190]	TEST     	13 1
+	92	[1190]	JMP      	0 2	; to 95
+	93	[1191]	LOADBOOL 	13 0 0
+	94	[1191]	RETURN   	13 2
+	95	[1195]	SELF     	13 0 -38	; "TryUseCDBuff"
+	96	[1195]	CALL     	13 2 1
+	97	[1196]	LOADBOOL 	13 1 0
+	98	[1196]	RETURN   	13 2
+	99	[1197]	RETURN   	0 1
+constants (38) for 0000022A550EDAB0:
+	1	"CheckSpreadState"
+	2	"CheckSpreadPosAndAuto"
+	3	"CheckEnergy"
+	4	"m_itemModel"
+	5	"GetBoardModel"
+	6	"GenerateItemCode"
+	7	"SpreadCostEnergy"
+	8	"GM"
+	9	"ActivityManager"
+	10	"GetModel"
+	11	"ActivityType"
+	12	"LuckyProduce"
+	13	"RecordBoostRatioAdjustData"
+	14	"GetItemModel"
+	15	"GetType"
+	16	"ConfigModel"
+	17	"IsServerControlOpen"
+	18	"EGeneralConfType"
+	19	"ItemLandOpt"
+	20	"BoardType"
+	21	"EBoardType"
+	22	"Tutorial"
+	23	"FindEmptySpreadPosition"
+	24	"GetPosition"
+	25	"logSpread"
+	26	true
+	27	"energyBoostRatio"
+	28	"costEnergy"
+	29	"spreadType"
+	30	"originalElement"
+	31	"specialScene"
+	32	"SpreadItem"
+	33	"EventDispatcher"
+	34	"DispatchEvent"
+	35	"EEventType"
+	36	"VibrationLight"
+	37	"TryRemoveSelf"
+	38	"TryUseCDBuff"
+locals (13) for 0000022A550EDAB0:
+	0	self	1	100
+	1	bCheckPos	9	100
+	2	position	9	100
+	3	bCheckEnergy	15	100
+	4	maxEnergyBoostRatio	15	100
+	5	costEnergy	15	100
+	6	boardModel	22	100
+	7	newItemCode	25	100
+	8	spreadType	25	100
+	9	energyBoostRatio	25	100
+	10	originalElement	25	100
+	11	specialScene	25	100
+	12	args	78	100
+upvalues (1) for 0000022A550EDAB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1199,1214> (42 instructions at 0000022A550EE8B0)
+1 param, 7 slots, 1 upvalue, 2 locals, 17 constants, 0 functions
+	1	[1200]	GETTABLE 	1 0 -1	; "m_itemModel"
+	2	[1200]	SELF     	1 1 -2	; "GetBoardModel"
+	3	[1200]	CALL     	1 2 2
+	4	[1202]	GETTABLE 	2 0 -3	; "m_transformNumber"
+	5	[1202]	EQ       	1 2 -4	; - nil
+	6	[1202]	JMP      	0 13	; to 20
+	7	[1202]	GETTABLE 	2 0 -3	; "m_transformNumber"
+	8	[1202]	GETTABLE 	3 0 -5	; "m_spreadCount"
+	9	[1202]	EQ       	0 2 3
+	10	[1202]	JMP      	0 9	; to 20
+	11	[1203]	GETTABLE 	2 0 -1	; "m_itemModel"
+	12	[1203]	SELF     	2 2 -6	; "GetComponent"
+	13	[1203]	GETTABUP 	4 0 -7	; _ENV "ItemTransform"
+	14	[1203]	CALL     	2 3 2
+	15	[1203]	SELF     	2 2 -8	; "Transform"
+	16	[1203]	CALL     	2 2 1
+	17	[1204]	LOADBOOL 	2 0 0
+	18	[1204]	RETURN   	2 2
+	19	[1204]	JMP      	0 20	; to 40
+	20	[1207]	GETTABLE 	2 0 -9	; "m_itemRestNumber"
+	21	[1207]	EQ       	0 2 -10	; - 0
+	22	[1207]	JMP      	0 17	; to 40
+	23	[1207]	SELF     	2 0 -11	; "IsDisposable"
+	24	[1207]	CALL     	2 2 2
+	25	[1207]	TEST     	2 0
+	26	[1207]	JMP      	0 13	; to 40
+	27	[1208]	SELF     	2 1 -12	; "RemoveItem"
+	28	[1208]	GETTABLE 	4 0 -1	; "m_itemModel"
+	29	[1208]	CALL     	2 3 1
+	30	[1209]	GETTABLE 	2 1 -13	; "event"
+	31	[1209]	SELF     	2 2 -14	; "Call"
+	32	[1209]	GETTABUP 	4 0 -15	; _ENV "BoardEventType"
+	33	[1209]	GETTABLE 	4 4 -16	; "CollapseItem"
+	34	[1209]	NEWTABLE 	5 0 1
+	35	[1209]	GETTABLE 	6 0 -1	; "m_itemModel"
+	36	[1209]	SETTABLE 	5 -17 6	; "Source" -
+	37	[1209]	CALL     	2 4 1
+	38	[1210]	LOADBOOL 	2 0 0
+	39	[1210]	RETURN   	2 2
+	40	[1213]	LOADBOOL 	2 1 0
+	41	[1213]	RETURN   	2 2
+	42	[1214]	RETURN   	0 1
+constants (17) for 0000022A550EE8B0:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"m_transformNumber"
+	4	nil
+	5	"m_spreadCount"
+	6	"GetComponent"
+	7	"ItemTransform"
+	8	"Transform"
+	9	"m_itemRestNumber"
+	10	0
+	11	"IsDisposable"
+	12	"RemoveItem"
+	13	"event"
+	14	"Call"
+	15	"BoardEventType"
+	16	"CollapseItem"
+	17	"Source"
+locals (2) for 0000022A550EE8B0:
+	0	self	1	43
+	1	boardModel	4	43
+upvalues (1) for 0000022A550EE8B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1218,1220> (6 instructions at 0000022A550EDFB0)
+2 params, 6 slots, 0 upvalues, 2 locals, 2 constants, 0 functions
+	1	[1219]	SELF     	2 1 -1	; "FindSpreadPosition"
+	2	[1219]	MOVE     	4 0
+	3	[1219]	GETTABLE 	5 0 -2	; "m_itemModel"
+	4	[1219]	TAILCALL 	2 4 0
+	5	[1219]	RETURN   	2 0
+	6	[1220]	RETURN   	0 1
+constants (2) for 0000022A550EDFB0:
+	1	"FindSpreadPosition"
+	2	"m_itemModel"
+locals (2) for 0000022A550EDFB0:
+	0	self	1	7
+	1	boardModel	1	7
+upvalues (0) for 0000022A550EDFB0:
+
+function <ItemSpread.lua:1222,1232> (25 instructions at 0000022A550EED30)
+2 params, 8 slots, 1 upvalue, 4 locals, 12 constants, 0 functions
+	1	[1223]	GETTABLE 	2 0 -1	; "m_itemModel"
+	2	[1223]	SELF     	2 2 -2	; "GetBoardModel"
+	3	[1223]	CALL     	2 2 2
+	4	[1224]	NEWTABLE 	3 0 2
+	5	[1225]	GETTABLE 	4 0 -1	; "m_itemModel"
+	6	[1225]	SETTABLE 	3 -3 4	; "Item" -
+	7	[1226]	SETTABLE 	3 -4 1	; "Reason" -
+	8	[1228]	GETTABLE 	4 2 -5	; "event"
+	9	[1228]	SELF     	4 4 -6	; "Call"
+	10	[1228]	GETTABUP 	6 0 -7	; _ENV "BoardEventType"
+	11	[1228]	GETTABLE 	6 6 -8	; "SpreadFailed"
+	12	[1228]	MOVE     	7 3
+	13	[1228]	CALL     	4 4 1
+	14	[1230]	GETTABUP 	4 0 -9	; _ENV "EventDispatcher"
+	15	[1230]	GETTABLE 	4 4 -10	; "DispatchEvent"
+	16	[1230]	GETTABUP 	5 0 -11	; _ENV "EEventType"
+	17	[1230]	GETTABLE 	5 5 -8	; "SpreadFailed"
+	18	[1230]	MOVE     	6 3
+	19	[1230]	CALL     	4 3 1
+	20	[1231]	GETTABUP 	4 0 -9	; _ENV "EventDispatcher"
+	21	[1231]	GETTABLE 	4 4 -10	; "DispatchEvent"
+	22	[1231]	GETTABUP 	5 0 -11	; _ENV "EEventType"
+	23	[1231]	GETTABLE 	5 5 -12	; "VibrationHeavy"
+	24	[1231]	CALL     	4 2 1
+	25	[1232]	RETURN   	0 1
+constants (12) for 0000022A550EED30:
+	1	"m_itemModel"
+	2	"GetBoardModel"
+	3	"Item"
+	4	"Reason"
+	5	"event"
+	6	"Call"
+	7	"BoardEventType"
+	8	"SpreadFailed"
+	9	"EventDispatcher"
+	10	"DispatchEvent"
+	11	"EEventType"
+	12	"VibrationHeavy"
+locals (4) for 0000022A550EED30:
+	0	self	1	26
+	1	reason	1	26
+	2	boardModel	4	26
+	3	eventInfo	8	26
+upvalues (1) for 0000022A550EED30:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1238,1252> (42 instructions at 0000022A550ED2B0)
+1 param, 6 slots, 1 upvalue, 3 locals, 9 constants, 0 functions
+	1	[1239]	LOADK    	1 -1	; 1
+	2	[1240]	LOADK    	2 -2	; 0
+	3	[1241]	EQ       	0 0 -3	; - nil
+	4	[1241]	JMP      	0 17	; to 22
+	5	[1242]	GETTABUP 	3 0 -4	; _ENV "GM"
+	6	[1242]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	7	[1242]	SELF     	3 3 -6	; "IsEnergyBoostModeOn"
+	8	[1242]	CALL     	3 2 2
+	9	[1242]	TEST     	3 0
+	10	[1242]	JMP      	0 28	; to 39
+	11	[1243]	GETTABUP 	3 0 -4	; _ENV "GM"
+	12	[1243]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	13	[1243]	SELF     	3 3 -7	; "GetEnergyBoostCostNum"
+	14	[1243]	CALL     	3 2 2
+	15	[1243]	MOVE     	1 3
+	16	[1244]	GETTABUP 	3 0 -4	; _ENV "GM"
+	17	[1244]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	18	[1244]	SELF     	3 3 -8	; "GetEnergyBoostPowerRatio"
+	19	[1244]	CALL     	3 2 2
+	20	[1244]	MOVE     	2 3
+	21	[1245]	JMP      	0 17	; to 39
+	22	[1246]	GETTABUP 	3 0 -4	; _ENV "GM"
+	23	[1246]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	24	[1246]	SELF     	3 3 -9	; "CanEnergyBoost"
+	25	[1246]	MOVE     	5 0
+	26	[1246]	CALL     	3 3 2
+	27	[1246]	TEST     	3 0
+	28	[1246]	JMP      	0 10	; to 39
+	29	[1247]	GETTABUP 	3 0 -4	; _ENV "GM"
+	30	[1247]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	31	[1247]	SELF     	3 3 -7	; "GetEnergyBoostCostNum"
+	32	[1247]	CALL     	3 2 2
+	33	[1247]	MOVE     	1 3
+	34	[1248]	GETTABUP 	3 0 -4	; _ENV "GM"
+	35	[1248]	GETTABLE 	3 3 -5	; "EnergyBoostModel"
+	36	[1248]	SELF     	3 3 -8	; "GetEnergyBoostPowerRatio"
+	37	[1248]	CALL     	3 2 2
+	38	[1248]	MOVE     	2 3
+	39	[1251]	MOVE     	3 1
+	40	[1251]	MOVE     	4 2
+	41	[1251]	RETURN   	3 3
+	42	[1252]	RETURN   	0 1
+constants (9) for 0000022A550ED2B0:
+	1	1
+	2	0
+	3	nil
+	4	"GM"
+	5	"EnergyBoostModel"
+	6	"IsEnergyBoostModeOn"
+	7	"GetEnergyBoostCostNum"
+	8	"GetEnergyBoostPowerRatio"
+	9	"CanEnergyBoost"
+locals (3) for 0000022A550ED2B0:
+	0	itemType	1	43
+	1	nCostNum	2	43
+	2	nEnergyBoostRatio	3	43
+upvalues (1) for 0000022A550ED2B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1254,1276> (58 instructions at 0000022A550ED4B0)
+3 params, 13 slots, 1 upvalue, 13 locals, 13 constants, 0 functions
+	1	[1255]	GETTABUP 	3 0 -1	; _ENV "GameConfig"
+	2	[1255]	GETTABLE 	3 3 -2	; "IsTestMode"
+	3	[1255]	CALL     	3 1 2
+	4	[1255]	TEST     	3 1
+	5	[1255]	JMP      	0 1	; to 7
+	6	[1256]	RETURN   	0 1
+	7	[1259]	GETTABLE 	3 0 -3	; "m_log"
+	8	[1259]	EQ       	0 3 -4	; - nil
+	9	[1259]	JMP      	0 1	; to 11
+	10	[1260]	SETTABLE 	0 -3 -5	; "m_log" ""
+	11	[1263]	GETTABUP 	3 0 -6	; _ENV "type"
+	12	[1263]	MOVE     	4 1
+	13	[1263]	CALL     	3 2 2
+	14	[1263]	EQ       	0 3 -7	; - "string"
+	15	[1263]	JMP      	0 5	; to 21
+	16	[1264]	GETTABLE 	3 0 -3	; "m_log"
+	17	[1264]	MOVE     	4 1
+	18	[1264]	CONCAT   	3 3 4
+	19	[1264]	SETTABLE 	0 -3 3	; "m_log" -
+	20	[1264]	JMP      	0 33	; to 54
+	21	[1265]	TEST     	2 0
+	22	[1265]	JMP      	0 14	; to 37
+	23	[1266]	GETTABUP 	3 0 -8	; _ENV "ipairs"
+	24	[1266]	MOVE     	4 1
+	25	[1266]	CALL     	3 2 4
+	26	[1266]	JMP      	0 7	; to 34
+	27	[1267]	GETTABLE 	8 0 -3	; "m_log"
+	28	[1267]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	29	[1267]	MOVE     	10 7
+	30	[1267]	CALL     	9 2 2
+	31	[1267]	LOADK    	10 -10	; ", "
+	32	[1267]	CONCAT   	8 8 10
+	33	[1267]	SETTABLE 	0 -3 8	; "m_log" -
+	34	[1266]	TFORCALL 	3 2
+	35	[1266]	TFORLOOP 	5 -9	; to 27
+	36	[1268]	JMP      	0 17	; to 54
+	37	[1270]	GETTABUP 	3 0 -11	; _ENV "pairs"
+	38	[1270]	MOVE     	4 1
+	39	[1270]	CALL     	3 2 4
+	40	[1270]	JMP      	0 11	; to 52
+	41	[1271]	GETTABLE 	8 0 -3	; "m_log"
+	42	[1271]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	43	[1271]	MOVE     	10 6
+	44	[1271]	CALL     	9 2 2
+	45	[1271]	LOADK    	10 -12	; " : "
+	46	[1271]	GETTABUP 	11 0 -9	; _ENV "tostring"
+	47	[1271]	MOVE     	12 7
+	48	[1271]	CALL     	11 2 2
+	49	[1271]	LOADK    	12 -10	; ", "
+	50	[1271]	CONCAT   	8 8 12
+	51	[1271]	SETTABLE 	0 -3 8	; "m_log" -
+	52	[1270]	TFORCALL 	3 2
+	53	[1270]	TFORLOOP 	5 -13	; to 41
+	54	[1275]	GETTABLE 	3 0 -3	; "m_log"
+	55	[1275]	LOADK    	4 -13	; "\n"
+	56	[1275]	CONCAT   	3 3 4
+	57	[1275]	SETTABLE 	0 -3 3	; "m_log" -
+	58	[1276]	RETURN   	0 1
+constants (13) for 0000022A550ED4B0:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"m_log"
+	4	nil
+	5	""
+	6	"type"
+	7	"string"
+	8	"ipairs"
+	9	"tostring"
+	10	", "
+	11	"pairs"
+	12	" : "
+	13	"\n"
+locals (13) for 0000022A550ED4B0:
+	0	self	1	59
+	1	element	1	59
+	2	isList	1	59
+	3	(for generator)	26	36
+	4	(for state)	26	36
+	5	(for control)	26	36
+	6	_	27	34
+	7	item	27	34
+	8	(for generator)	40	54
+	9	(for state)	40	54
+	10	(for control)	40	54
+	11	key	41	52
+	12	value	41	52
+upvalues (1) for 0000022A550ED4B0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1278,1285> (11 instructions at 0000022A550EDBB0)
+1 param, 3 slots, 1 upvalue, 1 local, 5 constants, 0 functions
+	1	[1279]	GETTABUP 	1 0 -1	; _ENV "GameConfig"
+	2	[1279]	GETTABLE 	1 1 -2	; "IsTestMode"
+	3	[1279]	CALL     	1 1 2
+	4	[1279]	TEST     	1 1
+	5	[1279]	JMP      	0 1	; to 7
+	6	[1280]	RETURN   	0 1
+	7	[1283]	GETTABUP 	1 0 -3	; _ENV "print"
+	8	[1283]	GETTABLE 	2 0 -4	; "m_log"
+	9	[1283]	CALL     	1 2 1
+	10	[1284]	SETTABLE 	0 -4 -5	; "m_log" ""
+	11	[1285]	RETURN   	0 1
+constants (5) for 0000022A550EDBB0:
+	1	"GameConfig"
+	2	"IsTestMode"
+	3	"print"
+	4	"m_log"
+	5	""
+locals (1) for 0000022A550EDBB0:
+	0	self	1	12
+upvalues (1) for 0000022A550EDBB0:
+	0	_ENV	0	0
+
+function <ItemSpread.lua:1295,1302> (11 instructions at 0000022A550ED530)
+1 param, 3 slots, 0 upvalues, 1 local, 8 constants, 0 functions
+	1	[1296]	NEWTABLE 	1 0 4
+	2	[1297]	GETTABLE 	2 0 -2	; "m_testLastSpreadCodeOrigin"
+	3	[1297]	SETTABLE 	1 -1 2	; "lastSpreadCodeOrigin" -
+	4	[1298]	GETTABLE 	2 0 -4	; "m_testLastSpreadCodeEnergyBoost"
+	5	[1298]	SETTABLE 	1 -3 2	; "lastSpreadCodeEnergyBoost" -
+	6	[1299]	GETTABLE 	2 0 -6	; "m_testLastSpreadFishNetProduceSmartCode"
+	7	[1299]	SETTABLE 	1 -5 2	; "lastSpreadFishNetProduceSmartCode" -
+	8	[1300]	GETTABLE 	2 0 -8	; "m_testLastCostEnergyCount"
+	9	[1300]	SETTABLE 	1 -7 2	; "lastCostEnergyCount" -
+	10	[1301]	RETURN   	1 2
+	11	[1302]	RETURN   	0 1
+constants (8) for 0000022A550ED530:
+	1	"lastSpreadCodeOrigin"
+	2	"m_testLastSpreadCodeOrigin"
+	3	"lastSpreadCodeEnergyBoost"
+	4	"m_testLastSpreadCodeEnergyBoost"
+	5	"lastSpreadFishNetProduceSmartCode"
+	6	"m_testLastSpreadFishNetProduceSmartCode"
+	7	"lastCostEnergyCount"
+	8	"m_testLastCostEnergyCount"
+locals (1) for 0000022A550ED530:
+	0	self	1	12
+upvalues (0) for 0000022A550ED530:

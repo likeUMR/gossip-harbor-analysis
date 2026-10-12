@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path = Path("analysis_output/logic_recovery/stage3/mkdocs_site/mkdocs.yml")
+path = Path(r"C:\Users\TU\Documents\ChatGPT\Gossip_Harbor_Analysis\analysis_output\logic_recovery\stage3\mkdocs_site\mkdocs.yml")
 text = path.read_text(encoding="utf-8")
 if "operations/paid/index.md" not in text:
     block = """  - 付费项目:

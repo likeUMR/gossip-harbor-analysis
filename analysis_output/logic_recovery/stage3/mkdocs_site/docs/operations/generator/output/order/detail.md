@@ -855,183 +855,183 @@
 来源：`Data.Config.OrderItemConfig_shell`。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 16 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>产物 ID<small style="display:block">Code</small></th><th>产物难度分<small style="display:block">DiffScore</small></th><th>解锁等级<small style="display:block">UnlockLevel</small></th><th>订单权重<small style="display:block">Weight</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span></td><td>3</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 3,
   &quot;Code&quot;: &quot;1803&quot;,
-  &quot;Price&quot;: 7,
-  &quot;DiffScore&quot;: 3
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 7
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span></td><td>6</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 6,
   &quot;Code&quot;: &quot;1804&quot;,
-  &quot;Price&quot;: 13,
-  &quot;DiffScore&quot;: 6
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>11</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 11,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 13
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>11</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1805&quot;,
-  &quot;Price&quot;: 21,
+  &quot;DiffScore&quot;: 11,
   &quot;ForbiddenSlot&quot;: [
     10
-  ]
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1805&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 21
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1806.png" alt="1806"><span><b>1806</b><small>稀有鹦鹉螺</small></span></span></td><td>22</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 22,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1806&quot;,
-  &quot;Price&quot;: 32,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>43</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 43,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;Code&quot;: &quot;1807&quot;,
-  &quot;Price&quot;: 50,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>86</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 86,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 26,
-  &quot;Code&quot;: &quot;1808&quot;,
-  &quot;Price&quot;: 79,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>171</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1809&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 22,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 171,
+  &quot;Code&quot;: &quot;1806&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 32
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>43</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DiffScore&quot;: 43,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1807&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 50
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>86</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 26,
+  &quot;DiffScore&quot;: 86,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1808&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 79
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>171</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 118,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 118,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>341</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1810&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 171,
+  &quot;Code&quot;: &quot;1809&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 341,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>341</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 180,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 36,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 180,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>682</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1811&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 682,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 271,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1364</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1812&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1364,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 409,
-  &quot;Price&quot;: 409,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_3</b><small>无本地视图映射</small></span></span></td><td>11</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DifficultyLevel&quot;: 4,
-  &quot;UnlockLevel&quot;: 9,
-  &quot;Code&quot;: &quot;main_g_artifact_3&quot;,
-  &quot;Price&quot;: 13,
-  &quot;DiffScore&quot;: 11
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_4</b><small>无本地视图映射</small></span></span></td><td>22</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DifficultyLevel&quot;: 5,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;Code&quot;: &quot;main_g_artifact_4&quot;,
-  &quot;Price&quot;: 21,
-  &quot;DiffScore&quot;: 22
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_5</b><small>无本地视图映射</small></span></span></td><td>43</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 6,
-  &quot;Code&quot;: &quot;main_g_artifact_5&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;DiffScore&quot;: 43,
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 32,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_6</b><small>无本地视图映射</small></span></span></td><td>86</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 7,
-  &quot;Code&quot;: &quot;main_g_artifact_6&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 86,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 50,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_7</b><small>无本地视图映射</small></span></span></td><td>171</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 8,
-  &quot;Code&quot;: &quot;main_g_artifact_7&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 171,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 79,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_8</b><small>无本地视图映射</small></span></span></td><td>341</td><td>51</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 2,
-  &quot;DifficultyLevel&quot;: 9,
-  &quot;Code&quot;: &quot;main_g_artifact_8&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
   &quot;DiffScore&quot;: 341,
+  &quot;Code&quot;: &quot;1810&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>682</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 271,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 51,
-  &quot;RecommendedPrice&quot;: 118,
+  &quot;DiffScore&quot;: 682,
+  &quot;Code&quot;: &quot;1811&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1364</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 409,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DiffScore&quot;: 1364,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RecommendedPrice&quot;: 409,
+  &quot;Code&quot;: &quot;1812&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_3</b><small>无本地视图映射</small></span></span></td><td>11</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 9,
+  &quot;DifficultyLevel&quot;: 4,
+  &quot;DiffScore&quot;: 11,
+  &quot;Code&quot;: &quot;main_g_artifact_3&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 13
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_4</b><small>无本地视图映射</small></span></span></td><td>22</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 5,
+  &quot;DiffScore&quot;: 22,
+  &quot;Code&quot;: &quot;main_g_artifact_4&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 21
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_5</b><small>无本地视图映射</small></span></span></td><td>43</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 32,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DifficultyLevel&quot;: 6,
+  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;Code&quot;: &quot;main_g_artifact_5&quot;,
+  &quot;DiffScore&quot;: 43,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_6</b><small>无本地视图映射</small></span></span></td><td>86</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 50,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;DifficultyLevel&quot;: 7,
+  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;DiffScore&quot;: 86,
+  &quot;Code&quot;: &quot;main_g_artifact_6&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_7</b><small>无本地视图映射</small></span></span></td><td>171</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 79,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DifficultyLevel&quot;: 8,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;DiffScore&quot;: 171,
+  &quot;Code&quot;: &quot;main_g_artifact_7&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><span><b>main_g_artifact_8</b><small>无本地视图映射</small></span></span></td><td>341</td><td>51</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 118,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 341,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;UnlockLevel&quot;: 51,
+  &quot;DifficultyLevel&quot;: 9,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 118,
+  &quot;Code&quot;: &quot;main_g_artifact_8&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 2
 }</pre></details></td></tr></tbody></table></div></div>
 
 
@@ -1043,291 +1043,291 @@
 来源：`Data.Config.OrderItemConfig_hard`。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 21 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>产物 ID<small style="display:block">Code</small></th><th>产物难度分<small style="display:block">DiffScore</small></th><th>解锁等级<small style="display:block">UnlockLevel</small></th><th>订单权重<small style="display:block">Weight</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/306.png" alt="306"><span><b>306</b><small>薯条鸡块组合</small></span></span></td><td>92</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 7,
-  &quot;Code&quot;: &quot;306&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 92,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 38,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/307.png" alt="307"><span><b>307</b><small>全家桶</small></span></span></td><td>184</td><td>16</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 2,
-  &quot;DifficultyLevel&quot;: 8,
-  &quot;Code&quot;: &quot;307&quot;,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 184,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 16,
-  &quot;RecommendedPrice&quot;: 58,
-  &quot;Price&quot;: 58,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/606.png" alt="606"><span><b>606</b><small>高雅茶壶</small></span></span></td><td>110</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 7,
-  &quot;Code&quot;: &quot;606&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 110,
   &quot;UnlockLevel&quot;: 10,
+  &quot;DifficultyLevel&quot;: 7,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 41,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/607.png" alt="607"><span><b>607</b><small>精致茶饮</small></span></span></td><td>220</td><td>16</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 2,
-  &quot;DifficultyLevel&quot;: 8,
-  &quot;Code&quot;: &quot;607&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 92,
+  &quot;Code&quot;: &quot;306&quot;,
   &quot;ForbiddenSlot&quot;: [
     10
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 220,
-  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/307.png" alt="307"><span><b>307</b><small>全家桶</small></span></span></td><td>184</td><td>16</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 58,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 184,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
   &quot;UnlockLevel&quot;: 16,
-  &quot;RecommendedPrice&quot;: 62,
-  &quot;Price&quot;: 62,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/908.png" alt="908"><span><b>908</b><small>水煮全蟹</small></span></span></td><td>239</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 9,
-  &quot;Code&quot;: &quot;908&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 239,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 88,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/909.png" alt="909"><span><b>909</b><small>龙虾大餐</small></span></span></td><td>479</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 10,
-  &quot;Code&quot;: &quot;909&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 479,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 132,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/910.png" alt="910"><span><b>910</b><small>大海鲜塔</small></span></span></td><td>957</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;DifficultyLevel&quot;: 11,
-  &quot;Code&quot;: &quot;910&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 957,
+  &quot;DifficultyLevel&quot;: 8,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;RecommendedPrice&quot;: 202,
-  &quot;Price&quot;: 202,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1105.png" alt="1105"><span><b>1105</b><small>令人惬意的橘子蛋糕</small></span></span></td><td>35</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1105&quot;,
+  &quot;RecommendedPrice&quot;: 58,
+  &quot;Code&quot;: &quot;307&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 2
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/606.png" alt="606"><span><b>606</b><small>高雅茶壶</small></span></span></td><td>110</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 41,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DifficultyLevel&quot;: 7,
+  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;DiffScore&quot;: 110,
+  &quot;Code&quot;: &quot;606&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/607.png" alt="607"><span><b>607</b><small>精致茶饮</small></span></span></td><td>220</td><td>16</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 62,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 220,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
+  &quot;UnlockLevel&quot;: 16,
+  &quot;DifficultyLevel&quot;: 8,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 62,
+  &quot;Code&quot;: &quot;607&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 2
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/908.png" alt="908"><span><b>908</b><small>水煮全蟹</small></span></span></td><td>239</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 88,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 9,
+  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;DiffScore&quot;: 239,
+  &quot;Code&quot;: &quot;908&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
-    11,
-    18
+    11
   ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/909.png" alt="909"><span><b>909</b><small>龙虾大餐</small></span></span></td><td>479</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 132,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 10,
+  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;DiffScore&quot;: 479,
+  &quot;Code&quot;: &quot;909&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/910.png" alt="910"><span><b>910</b><small>大海鲜塔</small></span></span></td><td>957</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 202,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 957,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 11,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 202,
+  &quot;Code&quot;: &quot;910&quot;,
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 35,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1105.png" alt="1105"><span><b>1105</b><small>令人惬意的橘子蛋糕</small></span></span></td><td>35</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 24,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 15,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 24,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1106.png" alt="1106"><span><b>1106</b><small>橙色梦幻蛋糕</small></span></span></td><td>70</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1106&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 35,
+  &quot;Code&quot;: &quot;1105&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11,
     18
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 70,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1106.png" alt="1106"><span><b>1106</b><small>橙色梦幻蛋糕</small></span></span></td><td>70</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 36,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 36,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1107.png" alt="1107"><span><b>1107</b><small>豪华梦幻蛋糕</small></span></span></td><td>140</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 2,
-  &quot;Code&quot;: &quot;1107&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 70,
+  &quot;Code&quot;: &quot;1106&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11,
     18
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 140,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 42,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1107.png" alt="1107"><span><b>1107</b><small>豪华梦幻蛋糕</small></span></span></td><td>140</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 54,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 140,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11,
+    18
+  ],
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 42,
+  &quot;Code&quot;: &quot;1107&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 2
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1307.png" alt="1307"><span><b>1307</b><small>鸭子漂浮圈</small></span></span></td><td>52</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 9,
   &quot;DiffScore&quot;: 52,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
   &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 9,
   &quot;Code&quot;: &quot;1307&quot;,
-  &quot;Price&quot;: 56,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 56
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1308.png" alt="1308"><span><b>1308</b><small>独角兽漂浮圈</small></span></span></td><td>88</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 9,
   &quot;DiffScore&quot;: 88,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
   &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 9,
   &quot;Code&quot;: &quot;1308&quot;,
-  &quot;Price&quot;: 88,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 88
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1309.png" alt="1309"><span><b>1309</b><small>火烈鸟漂浮圈</small></span></span></td><td>176</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1309&quot;,
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 132,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
+  &quot;UnlockLevel&quot;: 9,
+  &quot;RepeatWeightDecrease&quot;: 10,
   &quot;DiffScore&quot;: 176,
-  &quot;UnlockLevel&quot;: 9,
-  &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 132,
-  &quot;WeightMultiple&quot;: 1
+  &quot;Code&quot;: &quot;1309&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1310.png" alt="1310"><span><b>1310</b><small>皇家孔雀漂浮圈</small></span></span></td><td>352</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1310&quot;,
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 202,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 352,
   &quot;UnlockLevel&quot;: 9,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 202,
-  &quot;WeightMultiple&quot;: 1
+  &quot;DiffScore&quot;: 352,
+  &quot;Code&quot;: &quot;1310&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1311&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 704,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 9,
-  &quot;RecommendedPrice&quot;: 318,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 318,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 704,
+  &quot;UnlockLevel&quot;: 9,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 318,
+  &quot;Code&quot;: &quot;1311&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>58</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 10,
   &quot;DiffScore&quot;: 58,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1807&quot;,
-  &quot;Price&quot;: 56,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 91,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1808&quot;,
-  &quot;Price&quot;: 88,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1809&quot;,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1807&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 56
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 91,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1808&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 88
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 132,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 132,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1810&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1809&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 366,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 202,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 202,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1811&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 366,
+  &quot;Code&quot;: &quot;1810&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 731,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 304,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 304,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1812&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 731,
+  &quot;Code&quot;: &quot;1811&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1463,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;RecommendedPrice&quot;: 458,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 458,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 1463,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RecommendedPrice&quot;: 458,
+  &quot;Code&quot;: &quot;1812&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr></tbody></table></div></div>
 
 
@@ -1339,282 +1339,282 @@
 来源：`Data.Config.OrderItemConfig_nerf`。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 24 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>产物 ID<small style="display:block">Code</small></th><th>产物难度分<small style="display:block">DiffScore</small></th><th>解锁等级<small style="display:block">UnlockLevel</small></th><th>订单权重<small style="display:block">Weight</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1303.png" alt="1303"><span><b>1303</b><small>救生圈</small></span></span></td><td>3</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DiffScore&quot;: 3,
   &quot;Code&quot;: &quot;1303&quot;,
-  &quot;Price&quot;: 7,
-  &quot;DiffScore&quot;: 3
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 7
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1304.png" alt="1304"><span><b>1304</b><small>粉红果冻游泳圈</small></span></span></td><td>6</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DiffScore&quot;: 6,
   &quot;Code&quot;: &quot;1304&quot;,
-  &quot;Price&quot;: 12,
-  &quot;DiffScore&quot;: 6
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span></td><td>13</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 13,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 12
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span></td><td>13</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;UnlockLevel&quot;: 9,
-  &quot;Code&quot;: &quot;1305&quot;,
-  &quot;Price&quot;: 20,
+  &quot;DiffScore&quot;: 13,
   &quot;ForbiddenSlot&quot;: [
     10
-  ]
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1305&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 20
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1306.png" alt="1306"><span><b>1306</b><small>美人鱼漂浮圈</small></span></span></td><td>26</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 26,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 9,
-  &quot;Code&quot;: &quot;1306&quot;,
-  &quot;Price&quot;: 30,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1307.png" alt="1307"><span><b>1307</b><small>鸭子漂浮圈</small></span></span></td><td>52</td><td>18</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 52,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 18,
-  &quot;Code&quot;: &quot;1307&quot;,
-  &quot;Price&quot;: 47,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1308.png" alt="1308"><span><b>1308</b><small>独角兽漂浮圈</small></span></span></td><td>88</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 88,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;Code&quot;: &quot;1308&quot;,
-  &quot;Price&quot;: 73,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1309.png" alt="1309"><span><b>1309</b><small>火烈鸟漂浮圈</small></span></span></td><td>176</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1309&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 26,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 176,
+  &quot;Code&quot;: &quot;1306&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 30
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1307.png" alt="1307"><span><b>1307</b><small>鸭子漂浮圈</small></span></span></td><td>52</td><td>18</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 18,
+  &quot;DiffScore&quot;: 52,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1307&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 47
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1308.png" alt="1308"><span><b>1308</b><small>独角兽漂浮圈</small></span></span></td><td>88</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DiffScore&quot;: 88,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1308&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 73
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1309.png" alt="1309"><span><b>1309</b><small>火烈鸟漂浮圈</small></span></span></td><td>176</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 110,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 26,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 110,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1310.png" alt="1310"><span><b>1310</b><small>皇家孔雀漂浮圈</small></span></span></td><td>352</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1310&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 176,
+  &quot;Code&quot;: &quot;1309&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 352,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1310.png" alt="1310"><span><b>1310</b><small>皇家孔雀漂浮圈</small></span></span></td><td>352</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 168,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 168,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1311&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 352,
+  &quot;Code&quot;: &quot;1310&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 704,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RecommendedPrice&quot;: 318,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 265,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 704,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 318,
+  &quot;Code&quot;: &quot;1311&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1403.png" alt="1403"><span><b>1403</b><small>基础救生衣</small></span></span></td><td>12</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;DiffScore&quot;: 12,
-  &quot;Weight&quot;: 100,
-  &quot;DifficultyLevel&quot;: 4,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DifficultyLevel&quot;: 4,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
   &quot;Code&quot;: &quot;1403&quot;,
-  &quot;Price&quot;: 10,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 10
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1404.png" alt="1404"><span><b>1404</b><small>潜水手套</small></span></span></td><td>24</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 5,
-  &quot;Code&quot;: &quot;1404&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;DiffScore&quot;: 24,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 18,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 5,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Code&quot;: &quot;1404&quot;,
+  &quot;DiffScore&quot;: 24,
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1405.png" alt="1405"><span><b>1405</b><small>潜水脚蹼</small></span></span></td><td>48</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 6,
-  &quot;Code&quot;: &quot;1405&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 48,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 28,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DifficultyLevel&quot;: 6,
+  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;DiffScore&quot;: 48,
+  &quot;Code&quot;: &quot;1405&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1406.png" alt="1406"><span><b>1406</b><small>微型氧气罐</small></span></span></td><td>97</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 7,
-  &quot;Code&quot;: &quot;1406&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 97,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 45,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1407.png" alt="1407"><span><b>1407</b><small>潜水探险舱</small></span></span></td><td>194</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;DifficultyLevel&quot;: 8,
-  &quot;Code&quot;: &quot;1407&quot;,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;DifficultyLevel&quot;: 7,
+  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;DiffScore&quot;: 97,
+  &quot;Code&quot;: &quot;1406&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 194,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 86,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1407.png" alt="1407"><span><b>1407</b><small>潜水探险舱</small></span></span></td><td>194</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 72,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span></td><td>3</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1803&quot;,
-  &quot;Price&quot;: 7,
-  &quot;DiffScore&quot;: 3
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span></td><td>7</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1804&quot;,
-  &quot;Price&quot;: 12,
-  &quot;DiffScore&quot;: 7
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>13</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 13,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 194,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DifficultyLevel&quot;: 8,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 86,
+  &quot;Code&quot;: &quot;1407&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span></td><td>3</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1805&quot;,
-  &quot;Price&quot;: 20,
+  &quot;DiffScore&quot;: 3,
+  &quot;Code&quot;: &quot;1803&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 7
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span></td><td>7</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 7,
+  &quot;Code&quot;: &quot;1804&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 12
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>13</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 13,
   &quot;ForbiddenSlot&quot;: [
     10
-  ]
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1805&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 20
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1806.png" alt="1806"><span><b>1806</b><small>稀有鹦鹉螺</small></span></span></td><td>27</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 27,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1806&quot;,
-  &quot;Price&quot;: 30,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>58</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 58,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;Code&quot;: &quot;1807&quot;,
-  &quot;Price&quot;: 47,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 91,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 26,
-  &quot;Code&quot;: &quot;1808&quot;,
-  &quot;Price&quot;: 73,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1809&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 27,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1806&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 30
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>58</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DiffScore&quot;: 58,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1807&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 47
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 26,
+  &quot;DiffScore&quot;: 91,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1808&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 73
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 110,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 110,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1810&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1809&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 366,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 168,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 36,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 168,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1811&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 366,
+  &quot;Code&quot;: &quot;1810&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 731,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 253,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 41,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 253,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1812&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 731,
+  &quot;Code&quot;: &quot;1811&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1463,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 458,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 382,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DiffScore&quot;: 1463,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RecommendedPrice&quot;: 458,
+  &quot;Code&quot;: &quot;1812&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr></tbody></table></div></div>
 
 
@@ -1626,282 +1626,282 @@
 来源：`Data.Config.OrderItemConfig_nerf_more`。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 24 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>产物 ID<small style="display:block">Code</small></th><th>产物难度分<small style="display:block">DiffScore</small></th><th>解锁等级<small style="display:block">UnlockLevel</small></th><th>订单权重<small style="display:block">Weight</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1303.png" alt="1303"><span><b>1303</b><small>救生圈</small></span></span></td><td>3</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DiffScore&quot;: 3,
   &quot;Code&quot;: &quot;1303&quot;,
-  &quot;Price&quot;: 6,
-  &quot;DiffScore&quot;: 3
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 6
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1304.png" alt="1304"><span><b>1304</b><small>粉红果冻游泳圈</small></span></span></td><td>6</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DiffScore&quot;: 6,
   &quot;Code&quot;: &quot;1304&quot;,
-  &quot;Price&quot;: 10,
-  &quot;DiffScore&quot;: 6
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span></td><td>13</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 13,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 10
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span></td><td>13</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;UnlockLevel&quot;: 9,
-  &quot;Code&quot;: &quot;1305&quot;,
-  &quot;Price&quot;: 17,
+  &quot;DiffScore&quot;: 13,
   &quot;ForbiddenSlot&quot;: [
     10
-  ]
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1305&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 17
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1306.png" alt="1306"><span><b>1306</b><small>美人鱼漂浮圈</small></span></span></td><td>26</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 26,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 9,
-  &quot;Code&quot;: &quot;1306&quot;,
-  &quot;Price&quot;: 26,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1307.png" alt="1307"><span><b>1307</b><small>鸭子漂浮圈</small></span></span></td><td>52</td><td>18</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 52,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 18,
-  &quot;Code&quot;: &quot;1307&quot;,
-  &quot;Price&quot;: 40,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1308.png" alt="1308"><span><b>1308</b><small>独角兽漂浮圈</small></span></span></td><td>88</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 88,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;Code&quot;: &quot;1308&quot;,
-  &quot;Price&quot;: 63,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1309.png" alt="1309"><span><b>1309</b><small>火烈鸟漂浮圈</small></span></span></td><td>176</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1309&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 26,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 176,
+  &quot;Code&quot;: &quot;1306&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 26
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1307.png" alt="1307"><span><b>1307</b><small>鸭子漂浮圈</small></span></span></td><td>52</td><td>18</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 18,
+  &quot;DiffScore&quot;: 52,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1307&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 40
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1308.png" alt="1308"><span><b>1308</b><small>独角兽漂浮圈</small></span></span></td><td>88</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DiffScore&quot;: 88,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1308&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 63
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1309.png" alt="1309"><span><b>1309</b><small>火烈鸟漂浮圈</small></span></span></td><td>176</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 94,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 26,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 94,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1310.png" alt="1310"><span><b>1310</b><small>皇家孔雀漂浮圈</small></span></span></td><td>352</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1310&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 176,
+  &quot;Code&quot;: &quot;1309&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 352,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1310.png" alt="1310"><span><b>1310</b><small>皇家孔雀漂浮圈</small></span></span></td><td>352</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 144,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 144,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1311&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 352,
+  &quot;Code&quot;: &quot;1310&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 704,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RecommendedPrice&quot;: 318,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 227,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 704,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 318,
+  &quot;Code&quot;: &quot;1311&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1403.png" alt="1403"><span><b>1403</b><small>基础救生衣</small></span></span></td><td>12</td><td>9</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;DiffScore&quot;: 12,
-  &quot;Weight&quot;: 100,
-  &quot;DifficultyLevel&quot;: 4,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 9,
+  &quot;DifficultyLevel&quot;: 4,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
   &quot;Code&quot;: &quot;1403&quot;,
-  &quot;Price&quot;: 9,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 9
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1404.png" alt="1404"><span><b>1404</b><small>潜水手套</small></span></span></td><td>24</td><td>15</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 5,
-  &quot;Code&quot;: &quot;1404&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 15,
-  &quot;DiffScore&quot;: 24,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 16,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 15,
+  &quot;DifficultyLevel&quot;: 5,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Code&quot;: &quot;1404&quot;,
+  &quot;DiffScore&quot;: 24,
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1405.png" alt="1405"><span><b>1405</b><small>潜水脚蹼</small></span></span></td><td>48</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 6,
-  &quot;Code&quot;: &quot;1405&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 48,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 24,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DifficultyLevel&quot;: 6,
+  &quot;RepeatWeightDecrease&quot;: 10,
+  &quot;DiffScore&quot;: 48,
+  &quot;Code&quot;: &quot;1405&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1406.png" alt="1406"><span><b>1406</b><small>微型氧气罐</small></span></span></td><td>97</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 7,
-  &quot;Code&quot;: &quot;1406&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 97,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 39,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1407.png" alt="1407"><span><b>1407</b><small>潜水探险舱</small></span></span></td><td>194</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;DifficultyLevel&quot;: 8,
-  &quot;Code&quot;: &quot;1407&quot;,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;DifficultyLevel&quot;: 7,
+  &quot;RepeatWeightDecrease&quot;: 50,
+  &quot;DiffScore&quot;: 97,
+  &quot;Code&quot;: &quot;1406&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 194,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 86,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1407.png" alt="1407"><span><b>1407</b><small>潜水探险舱</small></span></span></td><td>194</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 61,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span></td><td>3</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1803&quot;,
-  &quot;Price&quot;: 6,
-  &quot;DiffScore&quot;: 3
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span></td><td>7</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1804&quot;,
-  &quot;Price&quot;: 10,
-  &quot;DiffScore&quot;: 7
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>13</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 13,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 194,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DifficultyLevel&quot;: 8,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 86,
+  &quot;Code&quot;: &quot;1407&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span></td><td>3</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1805&quot;,
-  &quot;Price&quot;: 17,
+  &quot;DiffScore&quot;: 3,
+  &quot;Code&quot;: &quot;1803&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 6
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span></td><td>7</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 7,
+  &quot;Code&quot;: &quot;1804&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;Price&quot;: 10
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span></td><td>13</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;UnlockLevel&quot;: 10,
+  &quot;DiffScore&quot;: 13,
   &quot;ForbiddenSlot&quot;: [
     10
-  ]
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1805&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 17
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1806.png" alt="1806"><span><b>1806</b><small>稀有鹦鹉螺</small></span></span></td><td>27</td><td>10</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 27,
-  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 10,
-  &quot;Code&quot;: &quot;1806&quot;,
-  &quot;Price&quot;: 26,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>58</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 58,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 21,
-  &quot;Code&quot;: &quot;1807&quot;,
-  &quot;Price&quot;: 40,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DiffScore&quot;: 91,
-  &quot;Weight&quot;: 100,
-  &quot;WeightMultiple&quot;: 1,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;UnlockLevel&quot;: 26,
-  &quot;Code&quot;: &quot;1808&quot;,
-  &quot;Price&quot;: 63,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ]
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1809&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 27,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1806&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 26
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1807.png" alt="1807"><span><b>1807</b><small>喇叭海螺</small></span></span></td><td>58</td><td>21</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 21,
+  &quot;DiffScore&quot;: 58,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1807&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 40
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1808.png" alt="1808"><span><b>1808</b><small>神奇海螺</small></span></span></td><td>91</td><td>26</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;UnlockLevel&quot;: 26,
+  &quot;DiffScore&quot;: 91,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100,
+  &quot;Code&quot;: &quot;1808&quot;,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;Price&quot;: 63
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1809.png" alt="1809"><span><b>1809</b><small>装甲外壳</small></span></span></td><td>183</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 94,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 10,
-  &quot;Price&quot;: 94,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1810&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 183,
+  &quot;Code&quot;: &quot;1809&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 366,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1810.png" alt="1810"><span><b>1810</b><small>伪装海螺</small></span></span></td><td>366</td><td>36</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 144,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 36,
   &quot;RepeatWeightDecrease&quot;: 50,
-  &quot;Price&quot;: 144,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1811&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 366,
+  &quot;Code&quot;: &quot;1810&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 731,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1811.png" alt="1811"><span><b>1811</b><small>封闭式蛤蜊</small></span></span></td><td>731</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 217,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 41,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 217,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1812&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 731,
+  &quot;Code&quot;: &quot;1811&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1463,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 458,
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1463</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 327,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DiffScore&quot;: 1463,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RecommendedPrice&quot;: 458,
+  &quot;Code&quot;: &quot;1812&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr></tbody></table></div></div>
 
 
@@ -1913,155 +1913,155 @@
 来源：`Data.Config.OrderItemConfig_extracust`。
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 11 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>产物 ID<small style="display:block">Code</small></th><th>产物难度分<small style="display:block">DiffScore</small></th><th>解锁等级<small style="display:block">UnlockLevel</small></th><th>订单权重<small style="display:block">Weight</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/212.png" alt="212"><span><b>212</b><small>火腿奶酪羊角面包</small></span></span></td><td>878</td><td>1</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;212&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 878,
-  &quot;UnlockLevel&quot;: 1,
-  &quot;RecommendedPrice&quot;: 178,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 178,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 1,
+  &quot;DiffScore&quot;: 878,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
+  &quot;RecommendedPrice&quot;: 178,
+  &quot;Code&quot;: &quot;212&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/213.png" alt="213"><span><b>213</b><small>粘稠的芝士汉堡</small></span></span></td><td>1317</td><td>1</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;213&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1317,
-  &quot;UnlockLevel&quot;: 1,
-  &quot;RecommendedPrice&quot;: 270,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 270,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/214.png" alt="214"><span><b>214</b><small>芝士汉堡和薯条</small></span></span></td><td>1976</td><td>1</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;214&quot;,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1976,
   &quot;UnlockLevel&quot;: 1,
-  &quot;RecommendedPrice&quot;: 406,
+  &quot;DiffScore&quot;: 1317,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
+  &quot;RecommendedPrice&quot;: 270,
+  &quot;Code&quot;: &quot;213&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/214.png" alt="214"><span><b>214</b><small>芝士汉堡和薯条</small></span></span></td><td>1976</td><td>1</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 406,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 1,
+  &quot;DiffScore&quot;: 1976,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
+  &quot;RecommendedPrice&quot;: 406,
+  &quot;Code&quot;: &quot;214&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/512.png" alt="512"><span><b>512</b><small>蜜饯浆果咖啡</small></span></span></td><td>926</td><td>3</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;512&quot;,
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 202,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
+  &quot;UnlockLevel&quot;: 3,
   &quot;DiffScore&quot;: 926,
-  &quot;UnlockLevel&quot;: 3,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
   &quot;RecommendedPrice&quot;: 202,
-  &quot;Price&quot;: 202,
-  &quot;WeightMultiple&quot;: 1
+  &quot;Code&quot;: &quot;512&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/513.png" alt="513"><span><b>513</b><small>咖啡甜点</small></span></span></td><td>1389</td><td>3</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;513&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1389,
-  &quot;UnlockLevel&quot;: 3,
-  &quot;RecommendedPrice&quot;: 304,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 304,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/514.png" alt="514"><span><b>514</b><small>甜茶派对</small></span></span></td><td>2084</td><td>3</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;514&quot;,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 3,
+  &quot;DiffScore&quot;: 1389,
   &quot;ForbiddenSlot&quot;: [
     10
   ],
+  &quot;RecommendedPrice&quot;: 304,
+  &quot;Code&quot;: &quot;513&quot;,
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 2084,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/514.png" alt="514"><span><b>514</b><small>甜茶派对</small></span></span></td><td>2084</td><td>3</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 458,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 3,
+  &quot;DiffScore&quot;: 2084,
+  &quot;ForbiddenSlot&quot;: [
+    10
+  ],
   &quot;RecommendedPrice&quot;: 458,
-  &quot;Price&quot;: 458,
-  &quot;WeightMultiple&quot;: 1
+  &quot;Code&quot;: &quot;514&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/910.png" alt="910"><span><b>910</b><small>大海鲜塔</small></span></span></td><td>957</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;DifficultyLevel&quot;: 11,
-  &quot;Code&quot;: &quot;910&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 957,
-  &quot;UnlockLevel&quot;: 31,
-  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 202,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/911.png" alt="911"><span><b>911</b><small>Seafood11</small></span></span></td><td>1436</td><td>51</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;DifficultyLevel&quot;: 12,
-  &quot;Code&quot;: &quot;911&quot;,
   &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1436,
+  &quot;UnlockLevel&quot;: 31,
+  &quot;DifficultyLevel&quot;: 11,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 51,
-  &quot;RecommendedPrice&quot;: 309,
-  &quot;Price&quot;: 309,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;Code&quot;: &quot;1311&quot;,
-  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 957,
+  &quot;Code&quot;: &quot;910&quot;,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
+  &quot;Weight&quot;: 100
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/911.png" alt="911"><span><b>911</b><small>Seafood11</small></span></span></td><td>1436</td><td>51</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 309,
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 1436,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;UnlockLevel&quot;: 51,
+  &quot;DifficultyLevel&quot;: 12,
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 309,
+  &quot;Code&quot;: &quot;911&quot;,
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 704,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1311.png" alt="1311"><span><b>1311</b><small>恐龙漂浮圈</small></span></span></td><td>704</td><td>31</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
+  &quot;Price&quot;: 318,
+  &quot;ProgressUnlock&quot;: 1,
   &quot;UnlockLevel&quot;: 31,
   &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;Price&quot;: 318,
-  &quot;WeightMultiple&quot;: 1
+  &quot;DiffScore&quot;: 704,
+  &quot;Code&quot;: &quot;1311&quot;,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;Weight&quot;: 100
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1312.png" alt="1312"><span><b>1312</b><small>SwimmingRing12</small></span></span></td><td>1056</td><td>51</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1312&quot;,
-  &quot;ProgressUnlock&quot;: 1,
-  &quot;ForbiddenSlot&quot;: [
-    10,
-    11
-  ],
-  &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1056,
-  &quot;RepeatWeightDecrease&quot;: 100,
-  &quot;UnlockLevel&quot;: 51,
-  &quot;RecommendedPrice&quot;: 501,
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 501,
-  &quot;WeightMultiple&quot;: 1
-}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1097</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;RecommendedNumber&quot;: 1,
-  &quot;Code&quot;: &quot;1812&quot;,
   &quot;ProgressUnlock&quot;: 1,
+  &quot;DiffScore&quot;: 1056,
+  &quot;UnlockLevel&quot;: 51,
   &quot;ForbiddenSlot&quot;: [
     10,
     11
   ],
+  &quot;RepeatWeightDecrease&quot;: 100,
+  &quot;RecommendedPrice&quot;: 501,
+  &quot;Code&quot;: &quot;1312&quot;,
   &quot;Weight&quot;: 100,
-  &quot;DiffScore&quot;: 1097,
-  &quot;UnlockLevel&quot;: 41,
-  &quot;RecommendedPrice&quot;: 458,
+  &quot;RecommendedNumber&quot;: 1
+}</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1812.png" alt="1812"><span><b>1812</b><small>珍珠贝</small></span></span></td><td>1097</td><td>41</td><td>100</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;WeightMultiple&quot;: 1,
   &quot;Price&quot;: 458,
-  &quot;WeightMultiple&quot;: 1
+  &quot;ProgressUnlock&quot;: 1,
+  &quot;UnlockLevel&quot;: 41,
+  &quot;DiffScore&quot;: 1097,
+  &quot;ForbiddenSlot&quot;: [
+    10,
+    11
+  ],
+  &quot;RecommendedPrice&quot;: 458,
+  &quot;Code&quot;: &quot;1812&quot;,
+  &quot;Weight&quot;: 100,
+  &quot;RecommendedNumber&quot;: 1
 }</pre></details></td></tr></tbody></table></div></div>
 
 

@@ -1,0 +1,83 @@
+
+main <ChestCustomOrderRewardCategoryHandler.lua:0,0> (15 instructions at 000001608315EFE0)
+0+ params, 3 slots, 1 upvalue, 0 locals, 7 constants, 2 functions
+	1	[2]	GETTABUP 	0 0 -2	; _ENV "setmetatable"
+	2	[2]	NEWTABLE 	1 0 0
+	3	[2]	GETTABUP 	2 0 -3	; _ENV "BaseRewardCategoryHandler"
+	4	[2]	CALL     	0 3 2
+	5	[2]	SETTABUP 	0 -1 0	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	6	[3]	GETTABUP 	0 0 -1	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	7	[3]	GETTABUP 	1 0 -1	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	8	[3]	SETTABLE 	0 -4 1	; "__index" -
+	9	[5]	GETTABUP 	0 0 -1	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	10	[8]	CLOSURE  	1 0	; 000001608315F4E0
+	11	[5]	SETTABLE 	0 -5 1	; "Create" -
+	12	[10]	GETTABUP 	0 0 -6	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	13	[16]	CLOSURE  	1 1	; 000001608315F160
+	14	[10]	SETTABLE 	0 -7 1	; "LogicHandle" -
+	15	[16]	RETURN   	0 1
+constants (7) for 000001608315EFE0:
+	1	"ChestCustomOrderRewardCategoryHandler"
+	2	"setmetatable"
+	3	"BaseRewardCategoryHandler"
+	4	"__index"
+	5	"Create"
+	6	"ChestCustomOrderRewardCategoryHandler"
+	7	"LogicHandle"
+locals (0) for 000001608315EFE0:
+upvalues (1) for 000001608315EFE0:
+	0	_ENV	1	0
+
+function <ChestCustomOrderRewardCategoryHandler.lua:5,8> (6 instructions at 000001608315F4E0)
+0 params, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[6]	GETTABUP 	0 0 -1	; _ENV "setmetatable"
+	2	[6]	NEWTABLE 	1 0 0
+	3	[6]	GETTABUP 	2 0 -2	; _ENV "ChestCustomOrderRewardCategoryHandler"
+	4	[6]	CALL     	0 3 2
+	5	[7]	RETURN   	0 2
+	6	[8]	RETURN   	0 1
+constants (2) for 000001608315F4E0:
+	1	"setmetatable"
+	2	"ChestCustomOrderRewardCategoryHandler"
+locals (1) for 000001608315F4E0:
+	0	handler	5	7
+upvalues (1) for 000001608315F4E0:
+	0	_ENV	0	0
+
+function <ChestCustomOrderRewardCategoryHandler.lua:10,16> (16 instructions at 000001608315F160)
+2 params, 11 slots, 1 upvalue, 8 locals, 7 constants, 0 functions
+	1	[12]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[12]	GETTABLE 	2 2 -2	; "ActivityManager"
+	3	[12]	SELF     	2 2 -3	; "GetModel"
+	4	[12]	GETTABUP 	4 0 -4	; _ENV "ActivityType"
+	5	[12]	GETTABLE 	4 4 -5	; "ChestCustomer"
+	6	[12]	CALL     	2 3 2
+	7	[13]	GETTABUP 	3 0 -6	; _ENV "ipairs"
+	8	[13]	MOVE     	4 1
+	9	[13]	CALL     	3 2 4
+	10	[13]	JMP      	0 3	; to 14
+	11	[14]	SELF     	8 2 -7	; "AcquireChestCustomOrderReward"
+	12	[14]	MOVE     	10 7
+	13	[14]	CALL     	8 3 1
+	14	[13]	TFORCALL 	3 2
+	15	[13]	TFORLOOP 	5 -5	; to 11
+	16	[16]	RETURN   	0 1
+constants (7) for 000001608315F160:
+	1	"GM"
+	2	"ActivityManager"
+	3	"GetModel"
+	4	"ActivityType"
+	5	"ChestCustomer"
+	6	"ipairs"
+	7	"AcquireChestCustomOrderReward"
+locals (8) for 000001608315F160:
+	0	self	1	17
+	1	rewardDatas	1	17
+	2	chestCustomModel	7	17
+	3	(for generator)	10	16
+	4	(for state)	10	16
+	5	(for control)	10	16
+	6	_	11	14
+	7	reward	11	14
+upvalues (1) for 000001608315F160:
+	0	_ENV	0	0

@@ -1,0 +1,1582 @@
+
+main <ItemModelFactory.lua:0,0> (54 instructions at 000002C98F4AEFB0)
+0+ params, 2 slots, 1 upvalue, 0 locals, 20 constants, 17 functions
+	1	[5]	NEWTABLE 	0 0 0
+	2	[5]	SETTABUP 	0 -1 0	; _ENV "ItemModelFactory"
+	3	[10]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	4	[74]	CLOSURE  	1 0	; 000002C98F4AF330
+	5	[10]	SETTABLE 	0 -2 1	; "CreateWithData" -
+	6	[76]	GETTABUP 	0 0 -3	; _ENV "ItemModelFactory"
+	7	[85]	CLOSURE  	1 1	; 000002C98F4AF3B0
+	8	[76]	SETTABLE 	0 -4 1	; "CreateWithCode" -
+	9	[87]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	10	[140]	CLOSURE  	1 2	; 000002C98F4AEA40
+	11	[87]	SETTABLE 	0 -5 1	; "_CreateWithCode" -
+	12	[142]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	13	[150]	CLOSURE  	1 3	; 000002C98F4B40A0
+	14	[142]	SETTABLE 	0 -7 1	; "_CreatePaperBox" -
+	15	[152]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	16	[166]	CLOSURE  	1 4	; 000002C98F4B4300
+	17	[152]	SETTABLE 	0 -8 1	; "_CreateCobweb" -
+	18	[168]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	19	[176]	CLOSURE  	1 5	; 000002C98F4B4640
+	20	[168]	SETTABLE 	0 -9 1	; "_CreateBubble" -
+	21	[178]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	22	[186]	CLOSURE  	1 6	; 000002C98F4B5070
+	23	[178]	SETTABLE 	0 -10 1	; "_CreateTemp" -
+	24	[188]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	25	[197]	CLOSURE  	1 7	; 000002C98F4B69D0
+	26	[188]	SETTABLE 	0 -11 1	; "_CreateRewardBubble" -
+	27	[199]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	28	[215]	CLOSURE  	1 8	; 000002C98F4B63D0
+	29	[199]	SETTABLE 	0 -12 1	; "_CreatePropertyBubble" -
+	30	[217]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	31	[225]	CLOSURE  	1 9	; 000002C98F4B6A50
+	32	[217]	SETTABLE 	0 -13 1	; "_CreateFog" -
+	33	[227]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	34	[235]	CLOSURE  	1 10	; 000002C98F4B6B50
+	35	[227]	SETTABLE 	0 -14 1	; "_CreateLocked" -
+	36	[242]	GETTABUP 	0 0 -6	; _ENV "ItemModelFactory"
+	37	[251]	CLOSURE  	1 11	; 000002C98F4B6BD0
+	38	[242]	SETTABLE 	0 -15 1	; "CreateWithType" -
+	39	[258]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	40	[368]	CLOSURE  	1 12	; 000002C98F4B66D0
+	41	[258]	SETTABLE 	0 -16 1	; "_CreateWithType" -
+	42	[375]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	43	[382]	CLOSURE  	1 13	; 000002C98F4B67D0
+	44	[375]	SETTABLE 	0 -17 1	; "GetCodeAndWeightPairs" -
+	45	[384]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	46	[394]	CLOSURE  	1 14	; 000002C98F4B6AD0
+	47	[384]	SETTABLE 	0 -18 1	; "GetInnerType" -
+	48	[398]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	49	[411]	CLOSURE  	1 15	; 000002C98F4B60D0
+	50	[398]	SETTABLE 	0 -19 1	; "GetInnerTypeRecursive" -
+	51	[414]	GETTABUP 	0 0 -1	; _ENV "ItemModelFactory"
+	52	[434]	CLOSURE  	1 16	; 000002C98F4B6150
+	53	[414]	SETTABLE 	0 -20 1	; "GetCodePrefixTargetType" -
+	54	[434]	RETURN   	0 1
+constants (20) for 000002C98F4AEFB0:
+	1	"ItemModelFactory"
+	2	"CreateWithData"
+	3	"ItemModelFactory"
+	4	"CreateWithCode"
+	5	"_CreateWithCode"
+	6	"ItemModelFactory"
+	7	"_CreatePaperBox"
+	8	"_CreateCobweb"
+	9	"_CreateBubble"
+	10	"_CreateTemp"
+	11	"_CreateRewardBubble"
+	12	"_CreatePropertyBubble"
+	13	"_CreateFog"
+	14	"_CreateLocked"
+	15	"CreateWithType"
+	16	"_CreateWithType"
+	17	"GetCodeAndWeightPairs"
+	18	"GetInnerType"
+	19	"GetInnerTypeRecursive"
+	20	"GetCodePrefixTargetType"
+locals (0) for 000002C98F4AEFB0:
+upvalues (1) for 000002C98F4AEFB0:
+	0	_ENV	1	0
+
+function <ItemModelFactory.lua:10,74> (114 instructions at 000002C98F4AF330)
+2 params, 13 slots, 1 upvalue, 11 locals, 50 constants, 0 functions
+	1	[11]	GETTABLE 	2 1 -1	; "codeStr"
+	2	[11]	EQ       	1 2 -2	; - nil
+	3	[11]	JMP      	0 5	; to 9
+	4	[11]	GETTABUP 	2 0 -3	; _ENV "type"
+	5	[11]	GETTABLE 	3 1 -1	; "codeStr"
+	6	[11]	CALL     	2 2 2
+	7	[11]	EQ       	1 2 -4	; - "string"
+	8	[11]	JMP      	0 12	; to 21
+	9	[12]	GETTABUP 	2 0 -5	; _ENV "Log"
+	10	[12]	GETTABLE 	2 2 -6	; "Error"
+	11	[12]	LOADK    	3 -7	; "ItemModelFactory.CreateWithData codeStr is "
+	12	[12]	GETTABUP 	4 0 -8	; _ENV "tostring"
+	13	[12]	GETTABLE 	5 1 -1	; "codeStr"
+	14	[12]	CALL     	4 2 2
+	15	[12]	LOADK    	5 -9	; "code is "
+	16	[12]	GETTABUP 	6 0 -8	; _ENV "tostring"
+	17	[12]	GETTABLE 	7 1 -10	; "code"
+	18	[12]	CALL     	6 2 2
+	19	[12]	CONCAT   	3 3 6
+	20	[12]	CALL     	2 2 1
+	21	[16]	GETTABUP 	2 0 -11	; _ENV "ItemModelFactory"
+	22	[16]	GETTABLE 	2 2 -12	; "CreateWithCode"
+	23	[16]	MOVE     	3 0
+	24	[16]	LOADNIL  	4 0
+	25	[16]	GETTABLE 	5 1 -1	; "codeStr"
+	26	[16]	LOADBOOL 	6 0 0
+	27	[16]	CALL     	2 5 2
+	28	[17]	EQ       	0 2 -2	; - nil
+	29	[17]	JMP      	0 1	; to 31
+	30	[20]	RETURN   	0 1
+	31	[23]	GETTABLE 	3 1 -14	; "id"
+	32	[23]	SETTABLE 	2 -13 3	; "m_id" -
+	33	[25]	SELF     	3 2 -15	; "GetComponent"
+	34	[25]	GETTABUP 	5 0 -16	; _ENV "ItemSpread"
+	35	[25]	CALL     	3 3 2
+	36	[26]	EQ       	1 3 -2	; - nil
+	37	[26]	JMP      	0 18	; to 56
+	38	[27]	GETTABLE 	4 1 -18	; "spreadState"
+	39	[27]	SETTABLE 	3 -17 4	; "m_state" -
+	40	[28]	GETTABLE 	4 1 -20	; "spreadStartTimer"
+	41	[28]	SETTABLE 	3 -19 4	; "m_startTimer" -
+	42	[29]	GETTABLE 	4 1 -22	; "spreadItemRestNumber"
+	43	[29]	SETTABLE 	3 -21 4	; "m_itemRestNumber" -
+	44	[30]	GETTABLE 	4 1 -24	; "spreadStorageRestNumber"
+	45	[30]	SETTABLE 	3 -23 4	; "m_storageRestNumber" -
+	46	[32]	GETTABLE 	4 1 -26	; "spreadCount"
+	47	[32]	TEST     	4 1
+	48	[32]	JMP      	0 1	; to 50
+	49	[32]	LOADK    	4 -27	; 0
+	50	[32]	SETTABLE 	3 -25 4	; "m_spreadCount" -
+	51	[33]	GETTABUP 	4 0 -29	; _ENV "ItemUtility"
+	52	[33]	GETTABLE 	4 4 -30	; "StringToCodeWeightPairs"
+	53	[33]	GETTABLE 	5 1 -31	; "spreadCodeWeightPairs"
+	54	[33]	CALL     	4 2 2
+	55	[33]	SETTABLE 	3 -28 4	; "m_codeWeightPairs" -
+	56	[36]	SELF     	4 2 -15	; "GetComponent"
+	57	[36]	GETTABUP 	6 0 -32	; _ENV "ItemTransform"
+	58	[36]	CALL     	4 3 2
+	59	[37]	EQ       	1 4 -2	; - nil
+	60	[37]	JMP      	0 2	; to 63
+	61	[38]	GETTABLE 	5 1 -33	; "transformStartTimer"
+	62	[38]	SETTABLE 	4 -19 5	; "m_startTimer" -
+	63	[41]	SELF     	5 2 -15	; "GetComponent"
+	64	[41]	GETTABUP 	7 0 -34	; _ENV "ItemSwallow"
+	65	[41]	CALL     	5 3 2
+	66	[42]	EQ       	1 5 -2	; - nil
+	67	[42]	JMP      	0 5	; to 73
+	68	[43]	GETTABUP 	6 0 -34	; _ENV "ItemSwallow"
+	69	[43]	GETTABLE 	6 6 -36	; "StringToSwallowInfo"
+	70	[43]	GETTABLE 	7 1 -37	; "swallowInfo"
+	71	[43]	CALL     	6 2 2
+	72	[43]	SETTABLE 	5 -35 6	; "m_swallowInfo" -
+	73	[46]	SELF     	6 2 -15	; "GetComponent"
+	74	[46]	GETTABUP 	8 0 -38	; _ENV "ItemBubble"
+	75	[46]	CALL     	6 3 2
+	76	[47]	EQ       	1 6 -2	; - nil
+	77	[47]	JMP      	0 2	; to 80
+	78	[48]	GETTABLE 	7 1 -39	; "bubbleStartTimer"
+	79	[48]	SETTABLE 	6 -19 7	; "m_startTimer" -
+	80	[51]	SELF     	7 2 -15	; "GetComponent"
+	81	[51]	GETTABUP 	9 0 -40	; _ENV "ItemPropertyBubble"
+	82	[51]	CALL     	7 3 2
+	83	[52]	EQ       	1 7 -2	; - nil
+	84	[52]	JMP      	0 2	; to 87
+	85	[53]	GETTABLE 	8 1 -39	; "bubbleStartTimer"
+	86	[53]	SETTABLE 	7 -19 8	; "m_startTimer" -
+	87	[56]	SELF     	8 2 -15	; "GetComponent"
+	88	[56]	GETTABUP 	10 0 -41	; _ENV "ItemAccelerate"
+	89	[56]	CALL     	8 3 2
+	90	[57]	EQ       	1 8 -2	; - nil
+	91	[57]	JMP      	0 2	; to 94
+	92	[58]	GETTABLE 	9 1 -42	; "accelerateStartTimer"
+	93	[58]	SETTABLE 	8 -19 9	; "m_startTimer" -
+	94	[61]	SELF     	9 2 -15	; "GetComponent"
+	95	[61]	GETTABUP 	11 0 -43	; _ENV "ItemAccelerateTime"
+	96	[61]	CALL     	9 3 2
+	97	[62]	EQ       	1 9 -2	; - nil
+	98	[62]	JMP      	0 7	; to 106
+	99	[64]	GETTABLE 	10 1 -45	; "accelerateTime"
+	100	[64]	TEST     	10 1
+	101	[64]	JMP      	0 1	; to 103
+	102	[64]	LOADK    	10 -27	; 0
+	103	[64]	SETTABLE 	9 -44 10	; "m_time" -
+	104	[65]	GETTABLE 	10 1 -47	; "accelerateLastUpdateTime"
+	105	[65]	SETTABLE 	9 -46 10	; "m_lastUpdateTime" -
+	106	[68]	SELF     	10 2 -15	; "GetComponent"
+	107	[68]	GETTABUP 	12 0 -48	; _ENV "ItemSplit"
+	108	[68]	CALL     	10 3 2
+	109	[69]	EQ       	1 10 -2	; - nil
+	110	[69]	JMP      	0 2	; to 113
+	111	[70]	GETTABLE 	11 1 -50	; "splitUseCount"
+	112	[70]	SETTABLE 	10 -49 11	; "m_count" -
+	113	[73]	RETURN   	2 2
+	114	[74]	RETURN   	0 1
+constants (50) for 000002C98F4AF330:
+	1	"codeStr"
+	2	nil
+	3	"type"
+	4	"string"
+	5	"Log"
+	6	"Error"
+	7	"ItemModelFactory.CreateWithData codeStr is "
+	8	"tostring"
+	9	"code is "
+	10	"code"
+	11	"ItemModelFactory"
+	12	"CreateWithCode"
+	13	"m_id"
+	14	"id"
+	15	"GetComponent"
+	16	"ItemSpread"
+	17	"m_state"
+	18	"spreadState"
+	19	"m_startTimer"
+	20	"spreadStartTimer"
+	21	"m_itemRestNumber"
+	22	"spreadItemRestNumber"
+	23	"m_storageRestNumber"
+	24	"spreadStorageRestNumber"
+	25	"m_spreadCount"
+	26	"spreadCount"
+	27	0
+	28	"m_codeWeightPairs"
+	29	"ItemUtility"
+	30	"StringToCodeWeightPairs"
+	31	"spreadCodeWeightPairs"
+	32	"ItemTransform"
+	33	"transformStartTimer"
+	34	"ItemSwallow"
+	35	"m_swallowInfo"
+	36	"StringToSwallowInfo"
+	37	"swallowInfo"
+	38	"ItemBubble"
+	39	"bubbleStartTimer"
+	40	"ItemPropertyBubble"
+	41	"ItemAccelerate"
+	42	"accelerateStartTimer"
+	43	"ItemAccelerateTime"
+	44	"m_time"
+	45	"accelerateTime"
+	46	"m_lastUpdateTime"
+	47	"accelerateLastUpdateTime"
+	48	"ItemSplit"
+	49	"m_count"
+	50	"splitUseCount"
+locals (11) for 000002C98F4AF330:
+	0	boardModel	1	115
+	1	data	1	115
+	2	item	28	115
+	3	itemSpread	36	115
+	4	itemTransform	59	115
+	5	itemSwallow	66	115
+	6	itemBubble	76	115
+	7	itemPropertyBubble	83	115
+	8	itemAccelerate	90	115
+	9	itemAccelerateTime	97	115
+	10	itemSplit	109	115
+upvalues (1) for 000002C98F4AF330:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:76,85> (23 instructions at 000002C98F4AF3B0)
+4 params, 9 slots, 1 upvalue, 6 locals, 7 constants, 0 functions
+	1	[77]	GETTABUP 	4 0 -1	; _ENV "ItemModelFactory"
+	2	[77]	GETTABLE 	4 4 -2	; "_CreateWithCode"
+	3	[77]	MOVE     	5 0
+	4	[77]	MOVE     	6 1
+	5	[77]	MOVE     	7 2
+	6	[77]	MOVE     	8 3
+	7	[77]	CALL     	4 5 2
+	8	[78]	EQ       	1 4 -3	; - nil
+	9	[78]	JMP      	0 12	; to 22
+	10	[79]	EQ       	1 0 -3	; - nil
+	11	[79]	JMP      	0 10	; to 22
+	12	[79]	GETTABLE 	5 0 -4	; "Freefall"
+	13	[79]	TEST     	5 0
+	14	[79]	JMP      	0 7	; to 22
+	15	[80]	GETTABUP 	5 0 -5	; _ENV "ItemFall"
+	16	[80]	GETTABLE 	5 5 -6	; "Create"
+	17	[80]	MOVE     	6 0
+	18	[80]	CALL     	5 2 2
+	19	[81]	SELF     	6 4 -7	; "AddComponent"
+	20	[81]	MOVE     	8 5
+	21	[81]	CALL     	6 3 1
+	22	[84]	RETURN   	4 2
+	23	[85]	RETURN   	0 1
+constants (7) for 000002C98F4AF3B0:
+	1	"ItemModelFactory"
+	2	"_CreateWithCode"
+	3	nil
+	4	"Freefall"
+	5	"ItemFall"
+	6	"Create"
+	7	"AddComponent"
+locals (6) for 000002C98F4AF3B0:
+	0	boardModel	1	24
+	1	position	1	24
+	2	code	1	24
+	3	needUnlockType	1	24
+	4	itemModel	8	24
+	5	itemFall	19	22
+upvalues (1) for 000002C98F4AF3B0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:87,140> (184 instructions at 000002C98F4AEA40)
+4 params, 16 slots, 1 upvalue, 15 locals, 35 constants, 2 functions
+	1	[88]	GETTABUP 	4 0 -1	; _ENV "tonumber"
+	2	[88]	MOVE     	5 2
+	3	[88]	CALL     	4 2 2
+	4	[89]	EQ       	1 4 -2	; - nil
+	5	[89]	JMP      	0 90	; to 96
+	6	[90]	EQ       	0 4 -3	; - 0
+	7	[90]	JMP      	0 2	; to 10
+	8	[91]	LOADNIL  	5 0
+	9	[91]	RETURN   	5 2
+	10	[94]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	11	[94]	GETTABLE 	5 5 -5	; "PaperBox"
+	12	[94]	LT       	0 5 4
+	13	[94]	JMP      	0 21	; to 35
+	14	[94]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	15	[94]	GETTABLE 	5 5 -6	; "Cobweb"
+	16	[94]	LT       	0 4 5
+	17	[94]	JMP      	0 17	; to 35
+	18	[96]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	19	[96]	GETTABLE 	5 5 -5	; "PaperBox"
+	20	[96]	SUB      	5 4 5
+	21	[96]	GETTABUP 	6 0 -4	; _ENV "ItemCodeOffset"
+	22	[96]	GETTABLE 	6 6 -6	; "Cobweb"
+	23	[96]	ADD      	5 5 6
+	24	[97]	GETTABUP 	6 0 -7	; _ENV "ItemModelFactory"
+	25	[97]	GETTABLE 	6 6 -8	; "_CreatePaperBox"
+	26	[97]	MOVE     	7 0
+	27	[97]	MOVE     	8 1
+	28	[97]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	29	[97]	MOVE     	10 5
+	30	[97]	CALL     	9 2 2
+	31	[97]	MOVE     	10 2
+	32	[97]	TAILCALL 	6 5 0
+	33	[97]	RETURN   	6 0
+	34	[97]	JMP      	0 61	; to 96
+	35	[99]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	36	[99]	GETTABLE 	5 5 -6	; "Cobweb"
+	37	[99]	LT       	0 5 4
+	38	[99]	JMP      	0 18	; to 57
+	39	[99]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	40	[99]	GETTABLE 	5 5 -10	; "Bubble"
+	41	[99]	LT       	0 4 5
+	42	[99]	JMP      	0 14	; to 57
+	43	[100]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	44	[100]	GETTABLE 	5 5 -6	; "Cobweb"
+	45	[100]	SUB      	5 4 5
+	46	[101]	GETTABUP 	6 0 -7	; _ENV "ItemModelFactory"
+	47	[101]	GETTABLE 	6 6 -11	; "_CreateCobweb"
+	48	[101]	MOVE     	7 0
+	49	[101]	MOVE     	8 1
+	50	[101]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	51	[101]	MOVE     	10 5
+	52	[101]	CALL     	9 2 2
+	53	[101]	MOVE     	10 2
+	54	[101]	TAILCALL 	6 5 0
+	55	[101]	RETURN   	6 0
+	56	[101]	JMP      	0 39	; to 96
+	57	[103]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	58	[103]	GETTABLE 	5 5 -10	; "Bubble"
+	59	[103]	LT       	0 5 4
+	60	[103]	JMP      	0 18	; to 79
+	61	[103]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	62	[103]	GETTABLE 	5 5 -12	; "PlainPaperBox"
+	63	[103]	LT       	0 4 5
+	64	[103]	JMP      	0 14	; to 79
+	65	[104]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	66	[104]	GETTABLE 	5 5 -10	; "Bubble"
+	67	[104]	SUB      	5 4 5
+	68	[105]	GETTABUP 	6 0 -7	; _ENV "ItemModelFactory"
+	69	[105]	GETTABLE 	6 6 -13	; "_CreateBubble"
+	70	[105]	MOVE     	7 0
+	71	[105]	MOVE     	8 1
+	72	[105]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	73	[105]	MOVE     	10 5
+	74	[105]	CALL     	9 2 2
+	75	[105]	MOVE     	10 2
+	76	[105]	TAILCALL 	6 5 0
+	77	[105]	RETURN   	6 0
+	78	[105]	JMP      	0 17	; to 96
+	79	[107]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	80	[107]	GETTABLE 	5 5 -12	; "PlainPaperBox"
+	81	[107]	LT       	0 5 4
+	82	[107]	JMP      	0 13	; to 96
+	83	[109]	GETTABUP 	5 0 -4	; _ENV "ItemCodeOffset"
+	84	[109]	GETTABLE 	5 5 -12	; "PlainPaperBox"
+	85	[109]	SUB      	5 4 5
+	86	[110]	GETTABUP 	6 0 -7	; _ENV "ItemModelFactory"
+	87	[110]	GETTABLE 	6 6 -8	; "_CreatePaperBox"
+	88	[110]	MOVE     	7 0
+	89	[110]	MOVE     	8 1
+	90	[110]	GETTABUP 	9 0 -9	; _ENV "tostring"
+	91	[110]	MOVE     	10 5
+	92	[110]	CALL     	9 2 2
+	93	[110]	MOVE     	10 2
+	94	[110]	TAILCALL 	6 5 0
+	95	[110]	RETURN   	6 0
+	96	[114]	GETTABUP 	5 0 -7	; _ENV "ItemModelFactory"
+	97	[114]	GETTABLE 	5 5 -14	; "s_codePrefixCreatorMap"
+	98	[114]	EQ       	0 5 -2	; - nil
+	99	[114]	JMP      	0 46	; to 146
+	100	[115]	GETTABUP 	5 0 -7	; _ENV "ItemModelFactory"
+	101	[115]	NEWTABLE 	6 0 9
+	102	[116]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	103	[116]	GETTABLE 	7 7 -5	; "PaperBox"
+	104	[116]	GETTABUP 	8 0 -7	; _ENV "ItemModelFactory"
+	105	[116]	GETTABLE 	8 8 -8	; "_CreatePaperBox"
+	106	[116]	SETTABLE 	6 7 8
+	107	[117]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	108	[117]	GETTABLE 	7 7 -6	; "Cobweb"
+	109	[117]	GETTABUP 	8 0 -7	; _ENV "ItemModelFactory"
+	110	[117]	GETTABLE 	8 8 -11	; "_CreateCobweb"
+	111	[117]	SETTABLE 	6 7 8
+	112	[118]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	113	[118]	GETTABLE 	7 7 -10	; "Bubble"
+	114	[120]	CLOSURE  	8 0	; 000002C98F4AEDB0
+	115	[120]	SETTABLE 	6 7 8
+	116	[121]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	117	[121]	GETTABLE 	7 7 -16	; "InstantBubble"
+	118	[123]	CLOSURE  	8 1	; 000002C98F4B3C30
+	119	[123]	SETTABLE 	6 7 8
+	120	[124]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	121	[124]	GETTABLE 	7 7 -17	; "Temp"
+	122	[124]	GETTABUP 	8 0 -18	; _ENV "ItemModelFactory"
+	123	[124]	GETTABLE 	8 8 -19	; "_CreateTemp"
+	124	[124]	SETTABLE 	6 7 8
+	125	[125]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	126	[125]	GETTABLE 	7 7 -20	; "RewardBubble"
+	127	[125]	GETTABUP 	8 0 -18	; _ENV "ItemModelFactory"
+	128	[125]	GETTABLE 	8 8 -21	; "_CreateRewardBubble"
+	129	[125]	SETTABLE 	6 7 8
+	130	[126]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	131	[126]	GETTABLE 	7 7 -22	; "Fog"
+	132	[126]	GETTABUP 	8 0 -18	; _ENV "ItemModelFactory"
+	133	[126]	GETTABLE 	8 8 -23	; "_CreateFog"
+	134	[126]	SETTABLE 	6 7 8
+	135	[127]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	136	[127]	GETTABLE 	7 7 -24	; "PropertyBubble"
+	137	[127]	GETTABUP 	8 0 -18	; _ENV "ItemModelFactory"
+	138	[127]	GETTABLE 	8 8 -25	; "_CreatePropertyBubble"
+	139	[127]	SETTABLE 	6 7 8
+	140	[128]	GETTABUP 	7 0 -15	; _ENV "ItemCodePrefix"
+	141	[128]	GETTABLE 	7 7 -26	; "Locked"
+	142	[128]	GETTABUP 	8 0 -18	; _ENV "ItemModelFactory"
+	143	[128]	GETTABLE 	8 8 -27	; "_CreateLocked"
+	144	[128]	SETTABLE 	6 7 8
+	145	[129]	SETTABLE 	5 -14 6	; "s_codePrefixCreatorMap" -
+	146	[132]	GETTABUP 	5 0 -28	; _ENV "pairs"
+	147	[132]	GETTABUP 	6 0 -18	; _ENV "ItemModelFactory"
+	148	[132]	GETTABLE 	6 6 -14	; "s_codePrefixCreatorMap"
+	149	[132]	CALL     	5 2 4
+	150	[132]	JMP      	0 23	; to 174
+	151	[133]	GETTABUP 	10 0 -29	; _ENV "StringUtil"
+	152	[133]	GETTABLE 	10 10 -30	; "StartWith"
+	153	[133]	MOVE     	11 2
+	154	[133]	MOVE     	12 8
+	155	[133]	CALL     	10 3 2
+	156	[133]	TEST     	10 0
+	157	[133]	JMP      	0 16	; to 174
+	158	[134]	GETTABUP 	10 0 -31	; _ENV "string"
+	159	[134]	GETTABLE 	10 10 -32	; "sub"
+	160	[134]	MOVE     	11 2
+	161	[134]	GETTABUP 	12 0 -31	; _ENV "string"
+	162	[134]	GETTABLE 	12 12 -33	; "len"
+	163	[134]	MOVE     	13 8
+	164	[134]	CALL     	12 2 2
+	165	[134]	ADD      	12 12 -34	; - 1
+	166	[134]	CALL     	10 3 2
+	167	[135]	MOVE     	11 9
+	168	[135]	MOVE     	12 0
+	169	[135]	MOVE     	13 1
+	170	[135]	MOVE     	14 10
+	171	[135]	MOVE     	15 2
+	172	[135]	TAILCALL 	11 5 0
+	173	[135]	RETURN   	11 0
+	174	[132]	TFORCALL 	5 2
+	175	[132]	TFORLOOP 	7 -25	; to 151
+	176	[139]	GETTABUP 	5 0 -18	; _ENV "ItemModelFactory"
+	177	[139]	GETTABLE 	5 5 -35	; "_CreateWithType"
+	178	[139]	MOVE     	6 0
+	179	[139]	MOVE     	7 1
+	180	[139]	MOVE     	8 2
+	181	[139]	MOVE     	9 3
+	182	[139]	TAILCALL 	5 5 0
+	183	[139]	RETURN   	5 0
+	184	[140]	RETURN   	0 1
+constants (35) for 000002C98F4AEA40:
+	1	"tonumber"
+	2	nil
+	3	0
+	4	"ItemCodeOffset"
+	5	"PaperBox"
+	6	"Cobweb"
+	7	"ItemModelFactory"
+	8	"_CreatePaperBox"
+	9	"tostring"
+	10	"Bubble"
+	11	"_CreateCobweb"
+	12	"PlainPaperBox"
+	13	"_CreateBubble"
+	14	"s_codePrefixCreatorMap"
+	15	"ItemCodePrefix"
+	16	"InstantBubble"
+	17	"Temp"
+	18	"ItemModelFactory"
+	19	"_CreateTemp"
+	20	"RewardBubble"
+	21	"_CreateRewardBubble"
+	22	"Fog"
+	23	"_CreateFog"
+	24	"PropertyBubble"
+	25	"_CreatePropertyBubble"
+	26	"Locked"
+	27	"_CreateLocked"
+	28	"pairs"
+	29	"StringUtil"
+	30	"StartWith"
+	31	"string"
+	32	"sub"
+	33	"len"
+	34	1
+	35	"_CreateWithType"
+locals (15) for 000002C98F4AEA40:
+	0	boardModel	1	185
+	1	position	1	185
+	2	code	1	185
+	3	needUnlockType	1	185
+	4	numberCode	4	185
+	5	innerCode	24	34
+	6	innerCode	46	56
+	7	innerCode	68	78
+	8	innerCode	86	96
+	9	(for generator)	150	176
+	10	(for state)	150	176
+	11	(for control)	150	176
+	12	prefix	151	174
+	13	creator	151	174
+	14	innerCode	167	174
+upvalues (1) for 000002C98F4AEA40:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:118,120> (10 instructions at 000002C98F4AEDB0)
+4 params, 10 slots, 1 upvalue, 4 locals, 2 constants, 0 functions
+	1	[119]	GETTABUP 	4 0 -1	; _ENV "ItemModelFactory"
+	2	[119]	GETTABLE 	4 4 -2	; "_CreateBubble"
+	3	[119]	MOVE     	5 0
+	4	[119]	MOVE     	6 1
+	5	[119]	MOVE     	7 2
+	6	[119]	MOVE     	8 3
+	7	[119]	LOADBOOL 	9 0 0
+	8	[119]	TAILCALL 	4 6 0
+	9	[119]	RETURN   	4 0
+	10	[120]	RETURN   	0 1
+constants (2) for 000002C98F4AEDB0:
+	1	"ItemModelFactory"
+	2	"_CreateBubble"
+locals (4) for 000002C98F4AEDB0:
+	0	boardModel	1	11
+	1	position	1	11
+	2	innerCode	1	11
+	3	originalCode	1	11
+upvalues (1) for 000002C98F4AEDB0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:121,123> (10 instructions at 000002C98F4B3C30)
+4 params, 10 slots, 1 upvalue, 4 locals, 2 constants, 0 functions
+	1	[122]	GETTABUP 	4 0 -1	; _ENV "ItemModelFactory"
+	2	[122]	GETTABLE 	4 4 -2	; "_CreateBubble"
+	3	[122]	MOVE     	5 0
+	4	[122]	MOVE     	6 1
+	5	[122]	MOVE     	7 2
+	6	[122]	MOVE     	8 3
+	7	[122]	LOADBOOL 	9 1 0
+	8	[122]	TAILCALL 	4 6 0
+	9	[122]	RETURN   	4 0
+	10	[123]	RETURN   	0 1
+constants (2) for 000002C98F4B3C30:
+	1	"ItemModelFactory"
+	2	"_CreateBubble"
+locals (4) for 000002C98F4B3C30:
+	0	boardModel	1	11
+	1	position	1	11
+	2	innerCode	1	11
+	3	originalCode	1	11
+upvalues (1) for 000002C98F4B3C30:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:142,150> (22 instructions at 000002C98F4B40A0)
+4 params, 10 slots, 1 upvalue, 7 locals, 9 constants, 0 functions
+	1	[143]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[143]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[143]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[143]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[143]	GETTABLE 	6 6 -5	; "PaperBox"
+	6	[143]	CALL     	4 3 2
+	7	[144]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[144]	GETTABLE 	5 5 -7	; "Create"
+	9	[144]	MOVE     	6 0
+	10	[144]	MOVE     	7 1
+	11	[144]	MOVE     	8 4
+	12	[144]	MOVE     	9 3
+	13	[144]	CALL     	5 5 2
+	14	[146]	GETTABUP 	6 0 -8	; _ENV "ItemPaperBox"
+	15	[146]	GETTABLE 	6 6 -7	; "Create"
+	16	[146]	MOVE     	7 2
+	17	[146]	CALL     	6 2 2
+	18	[147]	SELF     	7 5 -9	; "AddComponent"
+	19	[147]	MOVE     	9 6
+	20	[147]	CALL     	7 3 1
+	21	[149]	RETURN   	5 2
+	22	[150]	RETURN   	0 1
+constants (9) for 000002C98F4B40A0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"PaperBox"
+	6	"ItemModel"
+	7	"Create"
+	8	"ItemPaperBox"
+	9	"AddComponent"
+locals (7) for 000002C98F4B40A0:
+	0	boardModel	1	23
+	1	position	1	23
+	2	innerCode	1	23
+	3	originalCode	1	23
+	4	itemConfig	7	23
+	5	itemModel	14	23
+	6	itemPaperBox	18	23
+upvalues (1) for 000002C98F4B40A0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:152,166> (38 instructions at 000002C98F4B4300)
+4 params, 11 slots, 1 upvalue, 8 locals, 14 constants, 0 functions
+	1	[153]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[153]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[153]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[153]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[153]	GETTABLE 	6 6 -5	; "Cobweb"
+	6	[153]	CALL     	4 3 2
+	7	[154]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[154]	GETTABLE 	5 5 -7	; "Create"
+	9	[154]	MOVE     	6 0
+	10	[154]	MOVE     	7 1
+	11	[154]	MOVE     	8 4
+	12	[154]	MOVE     	9 3
+	13	[154]	CALL     	5 5 2
+	14	[156]	LOADNIL  	6 0
+	15	[157]	GETTABUP 	7 0 -8	; _ENV "StringUtil"
+	16	[157]	GETTABLE 	7 7 -9	; "StartWith"
+	17	[157]	MOVE     	8 2
+	18	[157]	GETTABUP 	9 0 -10	; _ENV "ItemCodePrefix"
+	19	[157]	GETTABLE 	9 9 -11	; "ObstacleClear"
+	20	[157]	CALL     	7 3 2
+	21	[157]	TEST     	7 0
+	22	[157]	JMP      	0 7	; to 30
+	23	[158]	GETTABUP 	7 0 -12	; _ENV "ItemObstacleClear"
+	24	[158]	GETTABLE 	7 7 -7	; "Create"
+	25	[158]	CALL     	7 1 2
+	26	[158]	MOVE     	6 7
+	27	[159]	SELF     	7 5 -13	; "AddComponent"
+	28	[159]	MOVE     	9 6
+	29	[159]	CALL     	7 3 1
+	30	[162]	GETTABUP 	7 0 -14	; _ENV "ItemCobweb"
+	31	[162]	GETTABLE 	7 7 -7	; "Create"
+	32	[162]	MOVE     	8 2
+	33	[162]	CALL     	7 2 2
+	34	[163]	SELF     	8 5 -13	; "AddComponent"
+	35	[163]	MOVE     	10 7
+	36	[163]	CALL     	8 3 1
+	37	[165]	RETURN   	5 2
+	38	[166]	RETURN   	0 1
+constants (14) for 000002C98F4B4300:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"Cobweb"
+	6	"ItemModel"
+	7	"Create"
+	8	"StringUtil"
+	9	"StartWith"
+	10	"ItemCodePrefix"
+	11	"ObstacleClear"
+	12	"ItemObstacleClear"
+	13	"AddComponent"
+	14	"ItemCobweb"
+locals (8) for 000002C98F4B4300:
+	0	boardModel	1	39
+	1	position	1	39
+	2	innerCode	1	39
+	3	originalCode	1	39
+	4	itemConfig	7	39
+	5	itemModel	14	39
+	6	itemObstacleClear	15	39
+	7	itemCobweb	34	39
+upvalues (1) for 000002C98F4B4300:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:168,176> (23 instructions at 000002C98F4B4640)
+5 params, 11 slots, 1 upvalue, 8 locals, 9 constants, 0 functions
+	1	[169]	GETTABUP 	5 0 -1	; _ENV "GM"
+	2	[169]	GETTABLE 	5 5 -2	; "ItemDataModel"
+	3	[169]	SELF     	5 5 -3	; "GetModelConfig"
+	4	[169]	GETTABUP 	7 0 -4	; _ENV "ItemType"
+	5	[169]	GETTABLE 	7 7 -5	; "Bubble"
+	6	[169]	CALL     	5 3 2
+	7	[170]	GETTABUP 	6 0 -6	; _ENV "ItemModel"
+	8	[170]	GETTABLE 	6 6 -7	; "Create"
+	9	[170]	MOVE     	7 0
+	10	[170]	MOVE     	8 1
+	11	[170]	MOVE     	9 5
+	12	[170]	MOVE     	10 3
+	13	[170]	CALL     	6 5 2
+	14	[172]	GETTABUP 	7 0 -8	; _ENV "ItemBubble"
+	15	[172]	GETTABLE 	7 7 -7	; "Create"
+	16	[172]	MOVE     	8 2
+	17	[172]	MOVE     	9 4
+	18	[172]	CALL     	7 3 2
+	19	[173]	SELF     	8 6 -9	; "AddComponent"
+	20	[173]	MOVE     	10 7
+	21	[173]	CALL     	8 3 1
+	22	[175]	RETURN   	6 2
+	23	[176]	RETURN   	0 1
+constants (9) for 000002C98F4B4640:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"Bubble"
+	6	"ItemModel"
+	7	"Create"
+	8	"ItemBubble"
+	9	"AddComponent"
+locals (8) for 000002C98F4B4640:
+	0	boardModel	1	24
+	1	position	1	24
+	2	innerCode	1	24
+	3	originalCode	1	24
+	4	instant	1	24
+	5	itemConfig	7	24
+	6	itemModel	14	24
+	7	itemBubble	19	24
+upvalues (1) for 000002C98F4B4640:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:178,186> (22 instructions at 000002C98F4B5070)
+4 params, 10 slots, 1 upvalue, 7 locals, 9 constants, 0 functions
+	1	[179]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[179]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[179]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[179]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[179]	GETTABLE 	6 6 -5	; "Temp"
+	6	[179]	CALL     	4 3 2
+	7	[180]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[180]	GETTABLE 	5 5 -7	; "Create"
+	9	[180]	MOVE     	6 0
+	10	[180]	MOVE     	7 1
+	11	[180]	MOVE     	8 4
+	12	[180]	MOVE     	9 3
+	13	[180]	CALL     	5 5 2
+	14	[182]	GETTABUP 	6 0 -8	; _ENV "ItemTemp"
+	15	[182]	GETTABLE 	6 6 -7	; "Create"
+	16	[182]	MOVE     	7 2
+	17	[182]	CALL     	6 2 2
+	18	[183]	SELF     	7 5 -9	; "AddComponent"
+	19	[183]	MOVE     	9 6
+	20	[183]	CALL     	7 3 1
+	21	[185]	RETURN   	5 2
+	22	[186]	RETURN   	0 1
+constants (9) for 000002C98F4B5070:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"Temp"
+	6	"ItemModel"
+	7	"Create"
+	8	"ItemTemp"
+	9	"AddComponent"
+locals (7) for 000002C98F4B5070:
+	0	boardModel	1	23
+	1	position	1	23
+	2	innerCode	1	23
+	3	originalCode	1	23
+	4	itemConfig	7	23
+	5	itemModel	14	23
+	6	itemTemp	18	23
+upvalues (1) for 000002C98F4B5070:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:188,197> (27 instructions at 000002C98F4B69D0)
+4 params, 11 slots, 1 upvalue, 8 locals, 10 constants, 0 functions
+	1	[189]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[189]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[189]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[189]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[189]	GETTABLE 	6 6 -5	; "RewardBubble"
+	6	[189]	CALL     	4 3 2
+	7	[190]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[190]	GETTABLE 	5 5 -7	; "Create"
+	9	[190]	MOVE     	6 0
+	10	[190]	MOVE     	7 1
+	11	[190]	MOVE     	8 4
+	12	[190]	MOVE     	9 3
+	13	[190]	CALL     	5 5 2
+	14	[192]	MOVE     	6 2
+	15	[192]	LOADK    	7 -8	; "-1"
+	16	[192]	CONCAT   	6 6 7
+	17	[193]	GETTABUP 	7 0 -9	; _ENV "ItemCollectable"
+	18	[193]	GETTABLE 	7 7 -7	; "Create"
+	19	[193]	NEWTABLE 	8 1 0
+	20	[193]	MOVE     	9 6
+	21	[193]	SETLIST  	8 1 1	; 1
+	22	[193]	CALL     	7 2 2
+	23	[194]	SELF     	8 5 -10	; "AddComponent"
+	24	[194]	MOVE     	10 7
+	25	[194]	CALL     	8 3 1
+	26	[196]	RETURN   	5 2
+	27	[197]	RETURN   	0 1
+constants (10) for 000002C98F4B69D0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"RewardBubble"
+	6	"ItemModel"
+	7	"Create"
+	8	"-1"
+	9	"ItemCollectable"
+	10	"AddComponent"
+locals (8) for 000002C98F4B69D0:
+	0	boardModel	1	28
+	1	position	1	28
+	2	innerCode	1	28
+	3	originalCode	1	28
+	4	itemConfig	7	28
+	5	itemModel	14	28
+	6	rewardStr	17	28
+	7	itemCollectable	23	28
+upvalues (1) for 000002C98F4B69D0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:199,215> (50 instructions at 000002C98F4B63D0)
+4 params, 14 slots, 1 upvalue, 11 locals, 16 constants, 0 functions
+	1	[200]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[200]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[200]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[200]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[200]	GETTABLE 	6 6 -5	; "PropertyBubble"
+	6	[200]	CALL     	4 3 2
+	7	[201]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[201]	GETTABLE 	5 5 -7	; "Create"
+	9	[201]	MOVE     	6 0
+	10	[201]	MOVE     	7 1
+	11	[201]	MOVE     	8 4
+	12	[201]	MOVE     	9 3
+	13	[201]	CALL     	5 5 2
+	14	[204]	GETTABUP 	6 0 -8	; _ENV "StringUtil"
+	15	[204]	GETTABLE 	6 6 -9	; "rFindChar"
+	16	[204]	MOVE     	7 2
+	17	[204]	LOADK    	8 -10	; "-"
+	18	[204]	CALL     	6 3 2
+	19	[205]	GETTABUP 	7 0 -11	; _ENV "string"
+	20	[205]	GETTABLE 	7 7 -12	; "sub"
+	21	[205]	MOVE     	8 2
+	22	[205]	ADD      	9 6 -13	; - 1
+	23	[205]	CALL     	7 3 2
+	24	[206]	GETTABUP 	8 0 -11	; _ENV "string"
+	25	[206]	GETTABLE 	8 8 -12	; "sub"
+	26	[206]	MOVE     	9 2
+	27	[206]	LOADK    	10 -13	; 1
+	28	[206]	SUB      	11 6 -13	; - 1
+	29	[206]	CALL     	8 4 2
+	30	[208]	GETTABUP 	9 0 -14	; _ENV "ItemCollectable"
+	31	[208]	GETTABLE 	9 9 -7	; "Create"
+	32	[208]	NEWTABLE 	10 1 0
+	33	[208]	MOVE     	11 8
+	34	[208]	SETLIST  	10 1 1	; 1
+	35	[208]	CALL     	9 2 2
+	36	[209]	SELF     	10 5 -15	; "AddComponent"
+	37	[209]	MOVE     	12 9
+	38	[209]	CALL     	10 3 1
+	39	[211]	GETTABUP 	10 0 -16	; _ENV "ItemPropertyBubble"
+	40	[211]	GETTABLE 	10 10 -7	; "Create"
+	41	[211]	NEWTABLE 	11 1 0
+	42	[211]	MOVE     	12 8
+	43	[211]	SETLIST  	11 1 1	; 1
+	44	[211]	MOVE     	12 7
+	45	[211]	CALL     	10 3 2
+	46	[212]	SELF     	11 5 -15	; "AddComponent"
+	47	[212]	MOVE     	13 10
+	48	[212]	CALL     	11 3 1
+	49	[214]	RETURN   	5 2
+	50	[215]	RETURN   	0 1
+constants (16) for 000002C98F4B63D0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"PropertyBubble"
+	6	"ItemModel"
+	7	"Create"
+	8	"StringUtil"
+	9	"rFindChar"
+	10	"-"
+	11	"string"
+	12	"sub"
+	13	1
+	14	"ItemCollectable"
+	15	"AddComponent"
+	16	"ItemPropertyBubble"
+locals (11) for 000002C98F4B63D0:
+	0	boardModel	1	51
+	1	position	1	51
+	2	innerCode	1	51
+	3	originalCode	1	51
+	4	itemConfig	7	51
+	5	itemModel	14	51
+	6	i	19	51
+	7	price	24	51
+	8	rewardStr	30	51
+	9	itemCollectable	36	51
+	10	itemPropertyBubble	46	51
+upvalues (1) for 000002C98F4B63D0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:217,225> (22 instructions at 000002C98F4B6A50)
+4 params, 10 slots, 1 upvalue, 7 locals, 9 constants, 0 functions
+	1	[218]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[218]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[218]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[218]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[218]	GETTABLE 	6 6 -5	; "Fog"
+	6	[218]	CALL     	4 3 2
+	7	[219]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[219]	GETTABLE 	5 5 -7	; "Create"
+	9	[219]	MOVE     	6 0
+	10	[219]	MOVE     	7 1
+	11	[219]	MOVE     	8 4
+	12	[219]	MOVE     	9 3
+	13	[219]	CALL     	5 5 2
+	14	[221]	GETTABUP 	6 0 -8	; _ENV "ItemFog"
+	15	[221]	GETTABLE 	6 6 -7	; "Create"
+	16	[221]	MOVE     	7 2
+	17	[221]	CALL     	6 2 2
+	18	[222]	SELF     	7 5 -9	; "AddComponent"
+	19	[222]	MOVE     	9 6
+	20	[222]	CALL     	7 3 1
+	21	[224]	RETURN   	5 2
+	22	[225]	RETURN   	0 1
+constants (9) for 000002C98F4B6A50:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"Fog"
+	6	"ItemModel"
+	7	"Create"
+	8	"ItemFog"
+	9	"AddComponent"
+locals (7) for 000002C98F4B6A50:
+	0	boardModel	1	23
+	1	position	1	23
+	2	innerCode	1	23
+	3	originalCode	1	23
+	4	itemConfig	7	23
+	5	itemModel	14	23
+	6	itemFog	18	23
+upvalues (1) for 000002C98F4B6A50:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:227,235> (22 instructions at 000002C98F4B6B50)
+4 params, 10 slots, 1 upvalue, 7 locals, 9 constants, 0 functions
+	1	[228]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[228]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[228]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[228]	GETTABUP 	6 0 -4	; _ENV "ItemType"
+	5	[228]	GETTABLE 	6 6 -5	; "Locked"
+	6	[228]	CALL     	4 3 2
+	7	[229]	GETTABUP 	5 0 -6	; _ENV "ItemModel"
+	8	[229]	GETTABLE 	5 5 -7	; "Create"
+	9	[229]	MOVE     	6 0
+	10	[229]	MOVE     	7 1
+	11	[229]	MOVE     	8 4
+	12	[229]	MOVE     	9 3
+	13	[229]	CALL     	5 5 2
+	14	[231]	GETTABUP 	6 0 -8	; _ENV "ItemLocked"
+	15	[231]	GETTABLE 	6 6 -7	; "Create"
+	16	[231]	MOVE     	7 2
+	17	[231]	CALL     	6 2 2
+	18	[232]	SELF     	7 5 -9	; "AddComponent"
+	19	[232]	MOVE     	9 6
+	20	[232]	CALL     	7 3 1
+	21	[234]	RETURN   	5 2
+	22	[235]	RETURN   	0 1
+constants (9) for 000002C98F4B6B50:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"ItemType"
+	5	"Locked"
+	6	"ItemModel"
+	7	"Create"
+	8	"ItemLocked"
+	9	"AddComponent"
+locals (7) for 000002C98F4B6B50:
+	0	boardModel	1	23
+	1	position	1	23
+	2	innerCode	1	23
+	3	originalCode	1	23
+	4	itemConfig	7	23
+	5	itemModel	14	23
+	6	itemLocked	18	23
+upvalues (1) for 000002C98F4B6B50:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:242,251> (21 instructions at 000002C98F4B6BD0)
+4 params, 9 slots, 1 upvalue, 6 locals, 7 constants, 0 functions
+	1	[243]	GETTABUP 	4 0 -1	; _ENV "ItemModelFactory"
+	2	[243]	GETTABLE 	4 4 -2	; "_CreateWithType"
+	3	[243]	MOVE     	5 0
+	4	[243]	MOVE     	6 1
+	5	[243]	MOVE     	7 2
+	6	[243]	MOVE     	8 3
+	7	[243]	CALL     	4 5 2
+	8	[244]	EQ       	1 4 -3	; - nil
+	9	[244]	JMP      	0 10	; to 20
+	10	[245]	GETTABLE 	5 0 -4	; "Freefall"
+	11	[245]	TEST     	5 0
+	12	[245]	JMP      	0 7	; to 20
+	13	[246]	GETTABUP 	5 0 -5	; _ENV "ItemFall"
+	14	[246]	GETTABLE 	5 5 -6	; "Create"
+	15	[246]	MOVE     	6 0
+	16	[246]	CALL     	5 2 2
+	17	[247]	SELF     	6 4 -7	; "AddComponent"
+	18	[247]	MOVE     	8 5
+	19	[247]	CALL     	6 3 1
+	20	[250]	RETURN   	4 2
+	21	[251]	RETURN   	0 1
+constants (7) for 000002C98F4B6BD0:
+	1	"ItemModelFactory"
+	2	"_CreateWithType"
+	3	nil
+	4	"Freefall"
+	5	"ItemFall"
+	6	"Create"
+	7	"AddComponent"
+locals (6) for 000002C98F4B6BD0:
+	0	boardModel	1	22
+	1	position	1	22
+	2	type	1	22
+	3	needUnlockType	1	22
+	4	itemModel	8	22
+	5	itemFall	17	20
+upvalues (1) for 000002C98F4B6BD0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:258,368> (217 instructions at 000002C98F4B66D0)
+4 params, 15 slots, 1 upvalue, 25 locals, 47 constants, 0 functions
+	1	[260]	GETTABUP 	4 0 -1	; _ENV "GM"
+	2	[260]	GETTABLE 	4 4 -2	; "ItemDataModel"
+	3	[260]	SELF     	4 4 -3	; "GetModelConfig"
+	4	[260]	MOVE     	6 2
+	5	[260]	LOADBOOL 	7 1 0
+	6	[260]	CALL     	4 4 2
+	7	[261]	TEST     	4 1
+	8	[261]	JMP      	0 1	; to 10
+	9	[262]	RETURN   	0 1
+	10	[265]	TEST     	3 0
+	11	[265]	JMP      	0 5	; to 17
+	12	[266]	GETTABUP 	5 0 -1	; _ENV "GM"
+	13	[266]	GETTABLE 	5 5 -2	; "ItemDataModel"
+	14	[266]	SELF     	5 5 -4	; "SetUnlocked"
+	15	[266]	MOVE     	7 2
+	16	[266]	CALL     	5 3 1
+	17	[271]	MOVE     	5 2
+	18	[272]	LOADK    	6 -5	; 1
+	19	[275]	GETTABUP 	7 0 -1	; _ENV "GM"
+	20	[275]	GETTABLE 	7 7 -2	; "ItemDataModel"
+	21	[275]	SELF     	7 7 -6	; "GetStateCollectionStateType"
+	22	[275]	MOVE     	9 2
+	23	[275]	LOADK    	10 -5	; 1
+	24	[275]	CALL     	7 4 2
+	25	[276]	EQ       	0 7 -7	; - nil
+	26	[276]	JMP      	0 6	; to 33
+	27	[276]	GETTABLE 	8 4 -8	; "StateCollectionType"
+	28	[276]	EQ       	1 8 -7	; - nil
+	29	[276]	JMP      	0 3	; to 33
+	30	[277]	GETTABLE 	5 4 -8	; "StateCollectionType"
+	31	[278]	GETTABLE 	6 4 -9	; "StateCollectionIndex"
+	32	[279]	MOVE     	7 2
+	33	[282]	GETTABUP 	8 0 -1	; _ENV "GM"
+	34	[282]	GETTABLE 	8 8 -2	; "ItemDataModel"
+	35	[282]	SELF     	8 8 -3	; "GetModelConfig"
+	36	[282]	MOVE     	10 5
+	37	[282]	LOADBOOL 	11 1 0
+	38	[282]	CALL     	8 4 2
+	39	[283]	TEST     	8 1
+	40	[283]	JMP      	0 8	; to 49
+	41	[284]	GETTABUP 	9 0 -1	; _ENV "GM"
+	42	[284]	GETTABLE 	9 9 -10	; "BIManager"
+	43	[284]	SELF     	9 9 -11	; "LogErrorInfo"
+	44	[284]	GETTABUP 	11 0 -12	; _ENV "EBIType"
+	45	[284]	GETTABLE 	11 11 -13	; "StateCollectionItemCreateError"
+	46	[284]	LOADK    	12 -14	; "sourceItemConfig is nil"
+	47	[284]	CALL     	9 4 1
+	48	[285]	RETURN   	0 1
+	49	[289]	GETTABUP 	9 0 -15	; _ENV "ItemModel"
+	50	[289]	GETTABLE 	9 9 -16	; "Create"
+	51	[289]	MOVE     	10 0
+	52	[289]	MOVE     	11 1
+	53	[289]	MOVE     	12 8
+	54	[289]	TESTSET  	13 7 1
+	55	[289]	JMP      	0 1	; to 57
+	56	[289]	MOVE     	13 2
+	57	[289]	CALL     	9 5 2
+	58	[291]	MOVE     	10 8
+	59	[292]	EQ       	1 7 -7	; - nil
+	60	[292]	JMP      	0 13	; to 74
+	61	[294]	GETTABUP 	11 0 -1	; _ENV "GM"
+	62	[294]	GETTABLE 	11 11 -2	; "ItemDataModel"
+	63	[294]	SELF     	11 11 -3	; "GetModelConfig"
+	64	[294]	MOVE     	13 7
+	65	[294]	CALL     	11 3 2
+	66	[294]	MOVE     	10 11
+	67	[296]	GETTABUP 	11 0 -17	; _ENV "ItemStateCollection"
+	68	[296]	GETTABLE 	11 11 -16	; "Create"
+	69	[296]	MOVE     	12 6
+	70	[296]	CALL     	11 2 2
+	71	[297]	SELF     	12 9 -18	; "AddComponent"
+	72	[297]	MOVE     	14 11
+	73	[297]	CALL     	12 3 1
+	74	[300]	GETTABLE 	11 10 -19	; "Spread_Auto"
+	75	[300]	EQ       	1 11 -7	; - nil
+	76	[300]	JMP      	0 7	; to 84
+	77	[301]	GETTABUP 	11 0 -20	; _ENV "ItemSpread"
+	78	[301]	GETTABLE 	11 11 -16	; "Create"
+	79	[301]	MOVE     	12 10
+	80	[301]	CALL     	11 2 2
+	81	[302]	SELF     	12 9 -18	; "AddComponent"
+	82	[302]	MOVE     	14 11
+	83	[302]	CALL     	12 3 1
+	84	[305]	GETTABLE 	11 10 -21	; "Transform_Weight"
+	85	[305]	EQ       	1 11 -7	; - nil
+	86	[305]	JMP      	0 7	; to 94
+	87	[306]	GETTABUP 	11 0 -22	; _ENV "ItemTransform"
+	88	[306]	GETTABLE 	11 11 -16	; "Create"
+	89	[306]	MOVE     	12 10
+	90	[306]	CALL     	11 2 2
+	91	[307]	SELF     	12 9 -18	; "AddComponent"
+	92	[307]	MOVE     	14 11
+	93	[307]	CALL     	12 3 1
+	94	[310]	GETTABLE 	11 10 -23	; "Swallow_Weight1"
+	95	[310]	EQ       	1 11 -7	; - nil
+	96	[310]	JMP      	0 7	; to 104
+	97	[311]	GETTABUP 	11 0 -24	; _ENV "ItemSwallow"
+	98	[311]	GETTABLE 	11 11 -16	; "Create"
+	99	[311]	MOVE     	12 10
+	100	[311]	CALL     	11 2 2
+	101	[312]	SELF     	12 9 -18	; "AddComponent"
+	102	[312]	MOVE     	14 11
+	103	[312]	CALL     	12 3 1
+	104	[315]	GETTABLE 	11 10 -25	; "CollectRewards"
+	105	[315]	EQ       	1 11 -7	; - nil
+	106	[315]	JMP      	0 7	; to 114
+	107	[316]	GETTABUP 	11 0 -26	; _ENV "ItemCollectable"
+	108	[316]	GETTABLE 	11 11 -16	; "Create"
+	109	[316]	GETTABLE 	12 10 -25	; "CollectRewards"
+	110	[316]	CALL     	11 2 2
+	111	[317]	SELF     	12 9 -18	; "AddComponent"
+	112	[317]	MOVE     	14 11
+	113	[317]	CALL     	12 3 1
+	114	[320]	GETTABLE 	11 10 -27	; "Choices"
+	115	[320]	EQ       	1 11 -7	; - nil
+	116	[320]	JMP      	0 7	; to 124
+	117	[321]	GETTABUP 	11 0 -28	; _ENV "ItemChoose"
+	118	[321]	GETTABLE 	11 11 -16	; "Create"
+	119	[321]	GETTABLE 	12 10 -27	; "Choices"
+	120	[321]	CALL     	11 2 2
+	121	[322]	SELF     	12 9 -18	; "AddComponent"
+	122	[322]	MOVE     	14 11
+	123	[322]	CALL     	12 3 1
+	124	[325]	GETTABLE 	11 10 -29	; "CommandOperation"
+	125	[325]	EQ       	1 11 -7	; - nil
+	126	[325]	JMP      	0 7	; to 134
+	127	[326]	GETTABUP 	11 0 -30	; _ENV "ItemCommand"
+	128	[326]	GETTABLE 	11 11 -16	; "Create"
+	129	[326]	GETTABLE 	12 10 -29	; "CommandOperation"
+	130	[326]	CALL     	11 2 2
+	131	[327]	SELF     	12 9 -18	; "AddComponent"
+	132	[327]	MOVE     	14 11
+	133	[327]	CALL     	12 3 1
+	134	[330]	GETTABLE 	11 10 -31	; "AccelerateDuration"
+	135	[330]	EQ       	1 11 -7	; - nil
+	136	[330]	JMP      	0 7	; to 144
+	137	[331]	GETTABUP 	11 0 -32	; _ENV "ItemAccelerate"
+	138	[331]	GETTABLE 	11 11 -16	; "Create"
+	139	[331]	GETTABLE 	12 10 -31	; "AccelerateDuration"
+	140	[331]	CALL     	11 2 2
+	141	[332]	SELF     	12 9 -18	; "AddComponent"
+	142	[332]	MOVE     	14 11
+	143	[332]	CALL     	12 3 1
+	144	[335]	GETTABLE 	11 10 -33	; "SpecialType"
+	145	[335]	GETTABUP 	12 0 -34	; _ENV "ItemSpecialType"
+	146	[335]	GETTABLE 	12 12 -35	; "LevelDown"
+	147	[335]	EQ       	0 11 12
+	148	[335]	JMP      	0 6	; to 155
+	149	[336]	GETTABUP 	11 0 -36	; _ENV "ItemSplit"
+	150	[336]	GETTABLE 	11 11 -16	; "Create"
+	151	[336]	CALL     	11 1 2
+	152	[337]	SELF     	12 9 -18	; "AddComponent"
+	153	[337]	MOVE     	14 11
+	154	[337]	CALL     	12 3 1
+	155	[340]	GETTABLE 	11 10 -37	; "Dig_MaxLevel"
+	156	[340]	EQ       	1 11 -7	; - nil
+	157	[340]	JMP      	0 7	; to 165
+	158	[341]	GETTABUP 	11 0 -38	; _ENV "ItemDig"
+	159	[341]	GETTABLE 	11 11 -16	; "Create"
+	160	[341]	MOVE     	12 10
+	161	[341]	CALL     	11 2 2
+	162	[342]	SELF     	12 9 -18	; "AddComponent"
+	163	[342]	MOVE     	14 11
+	164	[342]	CALL     	12 3 1
+	165	[345]	GETTABLE 	11 10 -39	; "Portal"
+	166	[345]	EQ       	1 11 -7	; - nil
+	167	[345]	JMP      	0 6	; to 174
+	168	[346]	GETTABUP 	11 0 -40	; _ENV "ItemPortal"
+	169	[346]	GETTABLE 	11 11 -16	; "Create"
+	170	[346]	CALL     	11 1 2
+	171	[347]	SELF     	12 9 -18	; "AddComponent"
+	172	[347]	MOVE     	14 11
+	173	[347]	CALL     	12 3 1
+	174	[350]	GETTABLE 	11 10 -41	; "Clear_ClearNum"
+	175	[350]	EQ       	1 11 -7	; - nil
+	176	[350]	JMP      	0 7	; to 184
+	177	[351]	GETTABUP 	11 0 -42	; _ENV "ItemClearTool"
+	178	[351]	GETTABLE 	11 11 -16	; "Create"
+	179	[351]	MOVE     	12 10
+	180	[351]	CALL     	11 2 2
+	181	[352]	SELF     	12 9 -18	; "AddComponent"
+	182	[352]	MOVE     	14 11
+	183	[352]	CALL     	12 3 1
+	184	[355]	SELF     	11 9 -43	; "GetComponent"
+	185	[355]	GETTABUP 	13 0 -20	; _ENV "ItemSpread"
+	186	[355]	CALL     	11 3 2
+	187	[355]	EQ       	0 11 -7	; - nil
+	188	[355]	JMP      	0 5	; to 194
+	189	[356]	SELF     	11 9 -43	; "GetComponent"
+	190	[356]	GETTABUP 	13 0 -22	; _ENV "ItemTransform"
+	191	[356]	CALL     	11 3 2
+	192	[356]	EQ       	1 11 -7	; - nil
+	193	[356]	JMP      	0 6	; to 200
+	194	[358]	GETTABUP 	11 0 -44	; _ENV "ItemAccelerateTime"
+	195	[358]	GETTABLE 	11 11 -16	; "Create"
+	196	[358]	CALL     	11 1 2
+	197	[359]	SELF     	12 9 -18	; "AddComponent"
+	198	[359]	MOVE     	14 11
+	199	[359]	CALL     	12 3 1
+	200	[362]	TEST     	0 0
+	201	[362]	JMP      	0 14	; to 216
+	202	[362]	GETTABLE 	11 0 -45	; "IsGeneratorFactoryItem"
+	203	[362]	TEST     	11 0
+	204	[362]	JMP      	0 11	; to 216
+	205	[362]	SELF     	11 0 -45	; "IsGeneratorFactoryItem"
+	206	[362]	GETTABLE 	13 10 -46	; "Type"
+	207	[362]	CALL     	11 3 2
+	208	[362]	TEST     	11 0
+	209	[362]	JMP      	0 6	; to 216
+	210	[363]	GETTABUP 	11 0 -47	; _ENV "ItemGeneratorFactory"
+	211	[363]	GETTABLE 	11 11 -16	; "Create"
+	212	[363]	CALL     	11 1 2
+	213	[364]	SELF     	12 9 -18	; "AddComponent"
+	214	[364]	MOVE     	14 11
+	215	[364]	CALL     	12 3 1
+	216	[367]	RETURN   	9 2
+	217	[368]	RETURN   	0 1
+constants (47) for 000002C98F4B66D0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetModelConfig"
+	4	"SetUnlocked"
+	5	1
+	6	"GetStateCollectionStateType"
+	7	nil
+	8	"StateCollectionType"
+	9	"StateCollectionIndex"
+	10	"BIManager"
+	11	"LogErrorInfo"
+	12	"EBIType"
+	13	"StateCollectionItemCreateError"
+	14	"sourceItemConfig is nil"
+	15	"ItemModel"
+	16	"Create"
+	17	"ItemStateCollection"
+	18	"AddComponent"
+	19	"Spread_Auto"
+	20	"ItemSpread"
+	21	"Transform_Weight"
+	22	"ItemTransform"
+	23	"Swallow_Weight1"
+	24	"ItemSwallow"
+	25	"CollectRewards"
+	26	"ItemCollectable"
+	27	"Choices"
+	28	"ItemChoose"
+	29	"CommandOperation"
+	30	"ItemCommand"
+	31	"AccelerateDuration"
+	32	"ItemAccelerate"
+	33	"SpecialType"
+	34	"ItemSpecialType"
+	35	"LevelDown"
+	36	"ItemSplit"
+	37	"Dig_MaxLevel"
+	38	"ItemDig"
+	39	"Portal"
+	40	"ItemPortal"
+	41	"Clear_ClearNum"
+	42	"ItemClearTool"
+	43	"GetComponent"
+	44	"ItemAccelerateTime"
+	45	"IsGeneratorFactoryItem"
+	46	"Type"
+	47	"ItemGeneratorFactory"
+locals (25) for 000002C98F4B66D0:
+	0	boardModel	1	218
+	1	position	1	218
+	2	type	1	218
+	3	needUnlockType	1	218
+	4	config	7	218
+	5	sourceType	18	218
+	6	state	19	218
+	7	stateType	25	218
+	8	sourceItemConfig	39	218
+	9	itemModel	58	218
+	10	itemConfig	59	218
+	11	itemStateCollection	71	74
+	12	itemSpread	81	84
+	13	itemTransform	91	94
+	14	itemSwallow	101	104
+	15	itemCollectable	111	114
+	16	itemChoose	121	124
+	17	itemCommand	131	134
+	18	itemAccelerate	141	144
+	19	itemSplit	152	155
+	20	itemDig	162	165
+	21	itemPortal	171	174
+	22	itemClearTool	181	184
+	23	itemAccelerateTime	197	200
+	24	comp	213	216
+upvalues (1) for 000002C98F4B66D0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:375,382> (25 instructions at 000002C98F4B67D0)
+1 param, 13 slots, 1 upvalue, 8 locals, 11 constants, 0 functions
+	1	[376]	NEWTABLE 	1 0 0
+	2	[377]	GETTABUP 	2 0 -1	; _ENV "ipairs"
+	3	[377]	MOVE     	3 0
+	4	[377]	CALL     	2 2 4
+	5	[377]	JMP      	0 16	; to 22
+	6	[378]	GETTABUP 	7 0 -2	; _ENV "StringUtil"
+	7	[378]	GETTABLE 	7 7 -3	; "Split"
+	8	[378]	MOVE     	8 6
+	9	[378]	LOADK    	9 -4	; "-"
+	10	[378]	CALL     	7 3 2
+	11	[379]	GETTABUP 	8 0 -5	; _ENV "table"
+	12	[379]	GETTABLE 	8 8 -6	; "insert"
+	13	[379]	MOVE     	9 1
+	14	[379]	NEWTABLE 	10 0 2
+	15	[379]	GETTABLE 	11 7 -8	; 1
+	16	[379]	SETTABLE 	10 -7 11	; "Code" -
+	17	[379]	GETTABUP 	11 0 -10	; _ENV "tonumber"
+	18	[379]	GETTABLE 	12 7 -11	; 2
+	19	[379]	CALL     	11 2 2
+	20	[379]	SETTABLE 	10 -9 11	; "Weight" -
+	21	[379]	CALL     	8 3 1
+	22	[377]	TFORCALL 	2 2
+	23	[377]	TFORLOOP 	4 -18	; to 6
+	24	[381]	RETURN   	1 2
+	25	[382]	RETURN   	0 1
+constants (11) for 000002C98F4B67D0:
+	1	"ipairs"
+	2	"StringUtil"
+	3	"Split"
+	4	"-"
+	5	"table"
+	6	"insert"
+	7	"Code"
+	8	1
+	9	"Weight"
+	10	"tonumber"
+	11	2
+locals (8) for 000002C98F4B67D0:
+	0	configArray	1	26
+	1	ret	2	26
+	2	(for generator)	5	24
+	3	(for state)	5	24
+	4	(for control)	5	24
+	5	_	6	22
+	6	str	6	22
+	7	pairs	11	22
+upvalues (1) for 000002C98F4B67D0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:384,394> (28 instructions at 000002C98F4B6AD0)
+1 param, 5 slots, 1 upvalue, 2 locals, 10 constants, 0 functions
+	1	[385]	GETTABUP 	1 0 -1	; _ENV "tonumber"
+	2	[385]	MOVE     	2 0
+	3	[385]	CALL     	1 2 2
+	4	[385]	EQ       	1 1 -2	; - nil
+	5	[385]	JMP      	0 7	; to 13
+	6	[386]	GETTABUP 	1 0 -3	; _ENV "tostring"
+	7	[386]	GETTABUP 	2 0 -1	; _ENV "tonumber"
+	8	[386]	MOVE     	3 0
+	9	[386]	CALL     	2 2 2
+	10	[386]	MOD      	2 2 -4	; - 1000000
+	11	[386]	TAILCALL 	1 2 0
+	12	[386]	RETURN   	1 0
+	13	[388]	GETTABUP 	1 0 -5	; _ENV "StringUtil"
+	14	[388]	GETTABLE 	1 1 -6	; "rFindChar"
+	15	[388]	MOVE     	2 0
+	16	[388]	LOADK    	3 -7	; "#"
+	17	[388]	CALL     	1 3 2
+	18	[389]	TEST     	1 0
+	19	[389]	JMP      	0 7	; to 27
+	20	[390]	GETTABUP 	2 0 -8	; _ENV "string"
+	21	[390]	GETTABLE 	2 2 -9	; "sub"
+	22	[390]	MOVE     	3 0
+	23	[390]	ADD      	4 1 -10	; - 1
+	24	[390]	TAILCALL 	2 3 0
+	25	[390]	RETURN   	2 0
+	26	[390]	JMP      	0 1	; to 28
+	27	[392]	RETURN   	0 2
+	28	[394]	RETURN   	0 1
+constants (10) for 000002C98F4B6AD0:
+	1	"tonumber"
+	2	nil
+	3	"tostring"
+	4	1000000
+	5	"StringUtil"
+	6	"rFindChar"
+	7	"#"
+	8	"string"
+	9	"sub"
+	10	1
+locals (2) for 000002C98F4B6AD0:
+	0	code	1	29
+	1	index	18	29
+upvalues (1) for 000002C98F4B6AD0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:398,411> (14 instructions at 000002C98F4B60D0)
+1 param, 4 slots, 1 upvalue, 3 locals, 2 constants, 0 functions
+	1	[399]	LOADBOOL 	1 0 0
+	2	[401]	GETTABUP 	2 0 -1	; _ENV "ItemModelFactory"
+	3	[401]	GETTABLE 	2 2 -2	; "GetInnerType"
+	4	[401]	MOVE     	3 0
+	5	[401]	CALL     	2 2 2
+	6	[402]	EQ       	1 2 0
+	7	[402]	JMP      	0 3	; to 11
+	8	[405]	MOVE     	0 2
+	9	[406]	LOADBOOL 	1 1 0
+	10	[406]	JMP      	0 -9	; to 2
+	11	[408]	TEST     	1 0
+	12	[408]	JMP      	0 1	; to 14
+	13	[409]	RETURN   	0 2
+	14	[411]	RETURN   	0 1
+constants (2) for 000002C98F4B60D0:
+	1	"ItemModelFactory"
+	2	"GetInnerType"
+locals (3) for 000002C98F4B60D0:
+	0	code	1	15
+	1	hasInnerCode	2	15
+	2	innerCode	6	10
+upvalues (1) for 000002C98F4B60D0:
+	0	_ENV	0	0
+
+function <ItemModelFactory.lua:414,434> (68 instructions at 000002C98F4B6150)
+1 param, 9 slots, 1 upvalue, 6 locals, 17 constants, 0 functions
+	1	[415]	GETTABUP 	1 0 -1	; _ENV "ItemModelFactory"
+	2	[415]	GETTABLE 	1 1 -2	; "s_codePrefixItemTypeMap"
+	3	[415]	EQ       	0 1 -3	; - nil
+	4	[415]	JMP      	0 48	; to 53
+	5	[416]	GETTABUP 	1 0 -1	; _ENV "ItemModelFactory"
+	6	[416]	NEWTABLE 	2 0 9
+	7	[417]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	8	[417]	GETTABLE 	3 3 -5	; "PaperBox"
+	9	[417]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	10	[417]	GETTABLE 	4 4 -5	; "PaperBox"
+	11	[417]	SETTABLE 	2 3 4
+	12	[418]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	13	[418]	GETTABLE 	3 3 -7	; "Cobweb"
+	14	[418]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	15	[418]	GETTABLE 	4 4 -7	; "Cobweb"
+	16	[418]	SETTABLE 	2 3 4
+	17	[419]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	18	[419]	GETTABLE 	3 3 -8	; "Bubble"
+	19	[419]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	20	[419]	GETTABLE 	4 4 -8	; "Bubble"
+	21	[419]	SETTABLE 	2 3 4
+	22	[420]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	23	[420]	GETTABLE 	3 3 -9	; "InstantBubble"
+	24	[420]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	25	[420]	GETTABLE 	4 4 -8	; "Bubble"
+	26	[420]	SETTABLE 	2 3 4
+	27	[421]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	28	[421]	GETTABLE 	3 3 -10	; "Temp"
+	29	[421]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	30	[421]	GETTABLE 	4 4 -10	; "Temp"
+	31	[421]	SETTABLE 	2 3 4
+	32	[422]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	33	[422]	GETTABLE 	3 3 -11	; "RewardBubble"
+	34	[422]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	35	[422]	GETTABLE 	4 4 -11	; "RewardBubble"
+	36	[422]	SETTABLE 	2 3 4
+	37	[423]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	38	[423]	GETTABLE 	3 3 -12	; "Fog"
+	39	[423]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	40	[423]	GETTABLE 	4 4 -12	; "Fog"
+	41	[423]	SETTABLE 	2 3 4
+	42	[424]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	43	[424]	GETTABLE 	3 3 -13	; "PropertyBubble"
+	44	[424]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	45	[424]	GETTABLE 	4 4 -13	; "PropertyBubble"
+	46	[424]	SETTABLE 	2 3 4
+	47	[425]	GETTABUP 	3 0 -4	; _ENV "ItemCodePrefix"
+	48	[425]	GETTABLE 	3 3 -14	; "Locked"
+	49	[425]	GETTABUP 	4 0 -6	; _ENV "ItemType"
+	50	[425]	GETTABLE 	4 4 -14	; "Locked"
+	51	[425]	SETTABLE 	2 3 4
+	52	[426]	SETTABLE 	1 -2 2	; "s_codePrefixItemTypeMap" -
+	53	[429]	GETTABUP 	1 0 -15	; _ENV "pairs"
+	54	[429]	GETTABUP 	2 0 -1	; _ENV "ItemModelFactory"
+	55	[429]	GETTABLE 	2 2 -2	; "s_codePrefixItemTypeMap"
+	56	[429]	CALL     	1 2 4
+	57	[429]	JMP      	0 8	; to 66
+	58	[430]	GETTABUP 	6 0 -16	; _ENV "StringUtil"
+	59	[430]	GETTABLE 	6 6 -17	; "StartWith"
+	60	[430]	MOVE     	7 0
+	61	[430]	MOVE     	8 4
+	62	[430]	CALL     	6 3 2
+	63	[430]	TEST     	6 0
+	64	[430]	JMP      	0 1	; to 66
+	65	[431]	RETURN   	5 2
+	66	[429]	TFORCALL 	1 2
+	67	[429]	TFORLOOP 	3 -10	; to 58
+	68	[434]	RETURN   	0 1
+constants (17) for 000002C98F4B6150:
+	1	"ItemModelFactory"
+	2	"s_codePrefixItemTypeMap"
+	3	nil
+	4	"ItemCodePrefix"
+	5	"PaperBox"
+	6	"ItemType"
+	7	"Cobweb"
+	8	"Bubble"
+	9	"InstantBubble"
+	10	"Temp"
+	11	"RewardBubble"
+	12	"Fog"
+	13	"PropertyBubble"
+	14	"Locked"
+	15	"pairs"
+	16	"StringUtil"
+	17	"StartWith"
+locals (6) for 000002C98F4B6150:
+	0	code	1	69
+	1	(for generator)	57	68
+	2	(for state)	57	68
+	3	(for control)	57	68
+	4	prefix	58	66
+	5	type	58	66
+upvalues (1) for 000002C98F4B6150:
+	0	_ENV	0	0

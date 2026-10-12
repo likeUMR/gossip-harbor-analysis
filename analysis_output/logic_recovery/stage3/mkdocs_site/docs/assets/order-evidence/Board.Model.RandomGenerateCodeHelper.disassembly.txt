@@ -1,0 +1,2974 @@
+
+main <RandomGenerateCodeHelper.lua:0,0> (30 instructions at 0000020A5339EF80)
+0+ params, 2 slots, 1 upvalue, 0 locals, 13 constants, 8 functions
+	1	[5]	NEWTABLE 	0 0 0
+	2	[5]	SETTABUP 	0 -1 0	; _ENV "RandomGenerateCodeHelper"
+	3	[6]	GETTABUP 	0 0 -1	; _ENV "RandomGenerateCodeHelper"
+	4	[6]	GETTABUP 	1 0 -1	; _ENV "RandomGenerateCodeHelper"
+	5	[6]	SETTABLE 	0 -2 1	; "__index" -
+	6	[33]	GETTABUP 	0 0 -1	; _ENV "RandomGenerateCodeHelper"
+	7	[241]	CLOSURE  	1 0	; 0000020A5339F310
+	8	[33]	SETTABLE 	0 -3 1	; "GenerateChestCustomCodeRule" -
+	9	[243]	GETTABUP 	0 0 -4	; _ENV "RandomGenerateCodeHelper"
+	10	[274]	CLOSURE  	1 1	; 0000020A533A4BC0
+	11	[243]	SETTABLE 	0 -5 1	; "_PickItems_old" -
+	12	[276]	GETTABUP 	0 0 -4	; _ENV "RandomGenerateCodeHelper"
+	13	[333]	CLOSURE  	1 2	; 0000020A5339ECB0
+	14	[276]	SETTABLE 	0 -6 1	; "_PickItems_new" -
+	15	[335]	GETTABUP 	0 0 -4	; _ENV "RandomGenerateCodeHelper"
+	16	[347]	CLOSURE  	1 3	; 0000020A533A5800
+	17	[335]	SETTABLE 	0 -7 1	; "_GetItemLackMap" -
+	18	[351]	GETTABUP 	0 0 -4	; _ENV "RandomGenerateCodeHelper"
+	19	[361]	CLOSURE  	1 4	; 0000020A533A5AD0
+	20	[351]	SETTABLE 	0 -8 1	; "TrySmartProduceItem" -
+	21	[363]	GETTABUP 	0 0 -9	; _ENV "RandomGenerateCodeHelper"
+	22	[377]	CLOSURE  	1 5	; 0000020A533A7080
+	23	[363]	SETTABLE 	0 -10 1	; "GetSpliteCodeWeightMapSubAndMain" -
+	24	[380]	GETTABUP 	0 0 -9	; _ENV "RandomGenerateCodeHelper"
+	25	[455]	CLOSURE  	1 6	; 0000020A533A7230
+	26	[380]	SETTABLE 	0 -11 1	; "_GetSmartProduceItem" -
+	27	[459]	GETTABUP 	0 0 -12	; _ENV "RandomGenerateCodeHelper"
+	28	[845]	CLOSURE  	1 7	; 0000020A533A8A40
+	29	[459]	SETTABLE 	0 -13 1	; "GetCannonReward" -
+	30	[845]	RETURN   	0 1
+constants (13) for 0000020A5339EF80:
+	1	"RandomGenerateCodeHelper"
+	2	"__index"
+	3	"GenerateChestCustomCodeRule"
+	4	"RandomGenerateCodeHelper"
+	5	"_PickItems_old"
+	6	"_PickItems_new"
+	7	"_GetItemLackMap"
+	8	"TrySmartProduceItem"
+	9	"RandomGenerateCodeHelper"
+	10	"GetSpliteCodeWeightMapSubAndMain"
+	11	"_GetSmartProduceItem"
+	12	"RandomGenerateCodeHelper"
+	13	"GetCannonReward"
+locals (0) for 0000020A5339EF80:
+upvalues (1) for 0000020A5339EF80:
+	0	_ENV	1	0
+
+function <RandomGenerateCodeHelper.lua:33,241> (541 instructions at 0000020A5339F310)
+3 params, 31 slots, 1 upvalue, 83 locals, 82 constants, 2 functions
+	1	[34]	LOADK    	3 -1	; ""
+	2	[36]	GETTABUP 	4 0 -2	; _ENV "Table"
+	3	[36]	GETTABLE 	4 4 -3	; "DeepCopy"
+	4	[36]	GETTABUP 	5 0 -4	; _ENV "GM"
+	5	[36]	GETTABLE 	5 5 -5	; "MainBoardModel"
+	6	[36]	SELF     	5 5 -6	; "GetCodeCountMap"
+	7	[36]	LOADBOOL 	7 1 0
+	8	[36]	LOADBOOL 	8 0 0
+	9	[36]	LOADBOOL 	9 1 0
+	10	[36]	CALL     	5 5 0
+	11	[36]	CALL     	4 0 2
+	12	[38]	GETTABUP 	5 0 -4	; _ENV "GM"
+	13	[38]	GETTABLE 	5 5 -5	; "MainBoardModel"
+	14	[38]	SELF     	5 5 -7	; "GetOrderModel"
+	15	[38]	GETTABUP 	7 0 -8	; _ENV "OrderModelType"
+	16	[38]	GETTABLE 	7 7 -9	; "Slot"
+	17	[38]	CALL     	5 3 2
+	18	[38]	SELF     	5 5 -10	; "GetItemCodeConfigMap"
+	19	[38]	CALL     	5 2 2
+	20	[48]	NEWTABLE 	6 0 0
+	21	[49]	GETTABUP 	7 0 -11	; _ENV "pairs"
+	22	[49]	GETTABUP 	8 0 -4	; _ENV "GM"
+	23	[49]	GETTABLE 	8 8 -5	; "MainBoardModel"
+	24	[49]	SELF     	8 8 -12	; "GetOrders"
+	25	[49]	CALL     	8 2 0
+	26	[49]	CALL     	7 0 4
+	27	[49]	JMP      	0 52	; to 80
+	28	[50]	SELF     	12 11 -13	; "GetState"
+	29	[50]	CALL     	12 2 2
+	30	[50]	GETTABUP 	13 0 -14	; _ENV "OrderState"
+	31	[50]	GETTABLE 	13 13 -15	; "Finished"
+	32	[50]	EQ       	1 12 13
+	33	[50]	JMP      	0 46	; to 80
+	34	[51]	NEWTABLE 	12 0 0
+	35	[52]	SETTABLE 	12 -16 11	; "order" -
+	36	[53]	SETTABLE 	12 -17 -18	; "diffScore" 0
+	37	[54]	GETTABUP 	13 0 -19	; _ENV "ipairs"
+	38	[54]	SELF     	14 11 -20	; "GetRequirements"
+	39	[54]	CALL     	14 2 0
+	40	[54]	CALL     	13 0 4
+	41	[54]	JMP      	0 28	; to 70
+	42	[55]	GETTABLE 	18 5 17
+	43	[55]	EQ       	1 18 -21	; - nil
+	44	[55]	JMP      	0 25	; to 70
+	45	[56]	GETTABLE 	18 4 17
+	46	[56]	TEST     	18 1
+	47	[56]	JMP      	0 1	; to 49
+	48	[56]	LOADK    	18 -18	; 0
+	49	[57]	LT       	0 -18 18	; 0 -
+	50	[57]	JMP      	0 3	; to 54
+	51	[58]	SUB      	19 18 -22	; - 1
+	52	[58]	SETTABLE 	4 17 19
+	53	[58]	JMP      	0 16	; to 70
+	54	[60]	GETTABLE 	19 12 -23	; "ListCode"
+	55	[60]	EQ       	0 19 -21	; - nil
+	56	[60]	JMP      	0 2	; to 59
+	57	[61]	NEWTABLE 	19 0 0
+	58	[61]	SETTABLE 	12 -23 19	; "ListCode" -
+	59	[63]	GETTABUP 	19 0 -24	; _ENV "table"
+	60	[63]	GETTABLE 	19 19 -25	; "insert"
+	61	[63]	GETTABLE 	20 12 -23	; "ListCode"
+	62	[63]	NEWTABLE 	21 0 1
+	63	[64]	SETTABLE 	21 -26 17	; "code" -
+	64	[63]	CALL     	19 3 1
+	65	[66]	GETTABLE 	19 12 -17	; "diffScore"
+	66	[66]	GETTABLE 	20 5 17
+	67	[66]	GETTABLE 	20 20 -27	; "DiffScore"
+	68	[66]	ADD      	19 19 20
+	69	[66]	SETTABLE 	12 -17 19	; "diffScore" -
+	70	[54]	TFORCALL 	13 2
+	71	[54]	TFORLOOP 	15 -30	; to 42
+	72	[70]	GETTABLE 	13 12 -17	; "diffScore"
+	73	[70]	LT       	0 -18 13	; 0 -
+	74	[70]	JMP      	0 5	; to 80
+	75	[71]	GETTABUP 	13 0 -24	; _ENV "table"
+	76	[71]	GETTABLE 	13 13 -25	; "insert"
+	77	[71]	MOVE     	14 6
+	78	[71]	MOVE     	15 12
+	79	[71]	CALL     	13 3 1
+	80	[49]	TFORCALL 	7 2
+	81	[49]	TFORLOOP 	9 -54	; to 28
+	82	[76]	GETTABUP 	7 0 -24	; _ENV "table"
+	83	[76]	GETTABLE 	7 7 -28	; "sort"
+	84	[76]	MOVE     	8 6
+	85	[78]	CLOSURE  	9 0	; 0000020A533A2CE0
+	86	[76]	CALL     	7 3 1
+	87	[80]	NEWTABLE 	7 0 0
+	88	[82]	GETTABUP 	8 0 -29	; _ENV "GameConfig"
+	89	[82]	GETTABLE 	8 8 -30	; "IsTestMode"
+	90	[82]	CALL     	8 1 2
+	91	[82]	TEST     	8 0
+	92	[82]	JMP      	0 40	; to 133
+	93	[83]	MOVE     	8 3
+	94	[83]	LOADK    	9 -31	; "\230\175\143\228\184\170\232\174\162\229\141\149\231\188\186\229\176\145\230\163\139\229\173\144\231\154\132\228\191\161\230\129\175\228\187\165\229\143\138\233\154\190\229\186\166\229\136\134: \n"
+	95	[83]	CONCAT   	3 8 9
+	96	[84]	GETTABUP 	8 0 -19	; _ENV "ipairs"
+	97	[84]	MOVE     	9 6
+	98	[84]	CALL     	8 2 4
+	99	[84]	JMP      	0 28	; to 128
+	100	[85]	MOVE     	13 3
+	101	[85]	LOADK    	14 -32	; "\230\167\189\228\189\141\239\188\154"
+	102	[85]	GETTABUP 	15 0 -33	; _ENV "tostring"
+	103	[85]	GETTABLE 	16 12 -16	; "order"
+	104	[85]	SELF     	16 16 -34	; "GetSlot"
+	105	[85]	CALL     	16 2 0
+	106	[85]	CALL     	15 0 2
+	107	[85]	LOADK    	16 -35	; " \231\188\186\229\176\145\230\163\139\229\173\144: "
+	108	[85]	CONCAT   	3 13 16
+	109	[86]	GETTABUP 	13 0 -19	; _ENV "ipairs"
+	110	[86]	GETTABLE 	14 12 -23	; "ListCode"
+	111	[86]	CALL     	13 2 4
+	112	[86]	JMP      	0 6	; to 119
+	113	[87]	MOVE     	18 3
+	114	[87]	GETTABUP 	19 0 -33	; _ENV "tostring"
+	115	[87]	GETTABLE 	20 17 -26	; "code"
+	116	[87]	CALL     	19 2 2
+	117	[87]	LOADK    	20 -36	; " "
+	118	[87]	CONCAT   	3 18 20
+	119	[86]	TFORCALL 	13 2
+	120	[86]	TFORLOOP 	15 -8	; to 113
+	121	[89]	MOVE     	13 3
+	122	[89]	LOADK    	14 -37	; " \233\154\190\229\186\166\229\136\134: "
+	123	[89]	GETTABUP 	15 0 -33	; _ENV "tostring"
+	124	[89]	GETTABLE 	16 12 -38	; "diffScore"
+	125	[89]	CALL     	15 2 2
+	126	[89]	LOADK    	16 -39	; "\n"
+	127	[89]	CONCAT   	3 13 16
+	128	[84]	TFORCALL 	8 2
+	129	[84]	TFORLOOP 	10 -30	; to 100
+	130	[91]	MOVE     	8 3
+	131	[91]	LOADK    	9 -39	; "\n"
+	132	[91]	CONCAT   	3 8 9
+	133	[94]	LOADK    	8 -18	; 0
+	134	[95]	LOADNIL  	9 0
+	135	[97]	GETTABUP 	10 0 -19	; _ENV "ipairs"
+	136	[97]	MOVE     	11 6
+	137	[97]	CALL     	10 2 4
+	138	[97]	JMP      	0 222	; to 361
+	139	[98]	LE       	1 0 -18	; - 0
+	140	[98]	JMP      	0 222	; to 363
+	141	[102]	GETTABUP 	15 0 -2	; _ENV "Table"
+	142	[102]	GETTABLE 	15 15 -3	; "DeepCopy"
+	143	[102]	GETTABLE 	16 14 -23	; "ListCode"
+	144	[102]	CALL     	15 2 2
+	145	[104]	ADD      	16 0 -40	; - 10
+	146	[104]	GETTABLE 	17 14 -38	; "diffScore"
+	147	[104]	LE       	0 17 16
+	148	[104]	JMP      	0 61	; to 210
+	149	[106]	GETTABUP 	16 0 -19	; _ENV "ipairs"
+	150	[106]	MOVE     	17 15
+	151	[106]	CALL     	16 2 4
+	152	[106]	JMP      	0 5	; to 158
+	153	[107]	GETTABUP 	21 0 -24	; _ENV "table"
+	154	[107]	GETTABLE 	21 21 -25	; "insert"
+	155	[107]	MOVE     	22 7
+	156	[107]	GETTABLE 	23 20 -26	; "code"
+	157	[107]	CALL     	21 3 1
+	158	[106]	TFORCALL 	16 2
+	159	[106]	TFORLOOP 	18 -7	; to 153
+	160	[109]	GETTABLE 	16 14 -38	; "diffScore"
+	161	[109]	SUB      	0 0 16
+	162	[111]	GETTABUP 	16 0 -29	; _ENV "GameConfig"
+	163	[111]	GETTABLE 	16 16 -30	; "IsTestMode"
+	164	[111]	CALL     	16 1 2
+	165	[111]	TEST     	16 0
+	166	[111]	JMP      	0 193	; to 360
+	167	[112]	EQ       	1 1 -21	; - nil
+	168	[112]	JMP      	0 2	; to 171
+	169	[112]	LT       	0 8 1
+	170	[112]	JMP      	0 189	; to 360
+	171	[113]	MOVE     	16 3
+	172	[113]	LOADK    	17 -41	; "\229\136\134\230\149\176+10\231\155\180\230\142\165\230\187\161\232\182\179\232\174\162\229\141\149\230\167\189\228\189\141\239\188\154"
+	173	[113]	GETTABUP 	18 0 -33	; _ENV "tostring"
+	174	[113]	GETTABLE 	19 14 -16	; "order"
+	175	[113]	SELF     	19 19 -34	; "GetSlot"
+	176	[113]	CALL     	19 2 0
+	177	[113]	CALL     	18 0 2
+	178	[113]	LOADK    	19 -42	; ", \229\165\150\229\138\177: "
+	179	[113]	CONCAT   	3 16 19
+	180	[114]	GETTABUP 	16 0 -19	; _ENV "ipairs"
+	181	[114]	MOVE     	17 15
+	182	[114]	CALL     	16 2 4
+	183	[114]	JMP      	0 12	; to 196
+	184	[115]	MOVE     	21 3
+	185	[115]	GETTABUP 	22 0 -33	; _ENV "tostring"
+	186	[115]	GETTABLE 	23 20 -26	; "code"
+	187	[115]	CALL     	22 2 2
+	188	[115]	LOADK    	23 -43	; "("
+	189	[115]	GETTABUP 	24 0 -33	; _ENV "tostring"
+	190	[115]	GETTABLE 	25 20 -26	; "code"
+	191	[115]	GETTABLE 	25 5 25
+	192	[115]	GETTABLE 	25 25 -27	; "DiffScore"
+	193	[115]	CALL     	24 2 2
+	194	[115]	LOADK    	25 -44	; ") "
+	195	[115]	CONCAT   	3 21 25
+	196	[114]	TFORCALL 	16 2
+	197	[114]	TFORLOOP 	18 -14	; to 184
+	198	[117]	MOVE     	16 3
+	199	[117]	LOADK    	17 -45	; ", \230\128\187\229\136\134\230\149\176: "
+	200	[117]	GETTABUP 	18 0 -33	; _ENV "tostring"
+	201	[117]	GETTABLE 	19 14 -38	; "diffScore"
+	202	[117]	CALL     	18 2 2
+	203	[117]	LOADK    	19 -46	; ", \229\137\169\228\189\153\229\136\134\230\149\176: "
+	204	[117]	GETTABUP 	20 0 -33	; _ENV "tostring"
+	205	[117]	MOVE     	21 0
+	206	[117]	CALL     	20 2 2
+	207	[117]	LOADK    	21 -39	; "\n"
+	208	[117]	CONCAT   	3 16 21
+	209	[119]	JMP      	0 150	; to 360
+	210	[122]	GETTABUP 	16 0 -24	; _ENV "table"
+	211	[122]	GETTABLE 	16 16 -28	; "sort"
+	212	[122]	MOVE     	17 15
+	213	[124]	CLOSURE  	18 1	; 0000020A533A2D60
+	214	[122]	CALL     	16 3 1
+	215	[126]	GETTABUP 	16 0 -29	; _ENV "GameConfig"
+	216	[126]	GETTABLE 	16 16 -30	; "IsTestMode"
+	217	[126]	CALL     	16 1 2
+	218	[126]	TEST     	16 0
+	219	[126]	JMP      	0 13	; to 233
+	220	[127]	EQ       	1 1 -21	; - nil
+	221	[127]	JMP      	0 2	; to 224
+	222	[127]	LT       	0 8 1
+	223	[127]	JMP      	0 9	; to 233
+	224	[128]	MOVE     	16 3
+	225	[128]	LOADK    	17 -47	; "\229\136\134\230\149\176+10\228\184\141\230\187\161\232\182\179\230\167\189\228\189\141\233\156\128\230\177\130\239\188\154"
+	226	[128]	GETTABUP 	18 0 -33	; _ENV "tostring"
+	227	[128]	GETTABLE 	19 14 -16	; "order"
+	228	[128]	SELF     	19 19 -34	; "GetSlot"
+	229	[128]	CALL     	19 2 0
+	230	[128]	CALL     	18 0 2
+	231	[128]	LOADK    	19 -39	; "\n"
+	232	[128]	CONCAT   	3 16 19
+	233	[132]	TEST     	2 0
+	234	[132]	JMP      	0 16	; to 251
+	235	[132]	GETTABUP 	16 0 -4	; _ENV "GM"
+	236	[132]	GETTABLE 	16 16 -48	; "ConfigModel"
+	237	[132]	SELF     	16 16 -49	; "IsServerControlOpen"
+	238	[132]	GETTABUP 	18 0 -50	; _ENV "EGeneralConfType"
+	239	[132]	GETTABLE 	18 18 -51	; "RewardStockCount"
+	240	[132]	CALL     	16 3 2
+	241	[132]	TEST     	16 0
+	242	[132]	JMP      	0 8	; to 251
+	243	[132]	EQ       	0 9 -21	; - nil
+	244	[132]	JMP      	0 6	; to 251
+	245	[134]	GETTABUP 	16 0 -52	; _ENV "RandomGenerateCodeHelper"
+	246	[134]	GETTABLE 	16 16 -53	; "_GetItemLackMap"
+	247	[134]	MOVE     	17 3
+	248	[134]	CALL     	16 2 3
+	249	[134]	MOVE     	3 17
+	250	[134]	MOVE     	9 16
+	251	[137]	GETTABUP 	16 0 -19	; _ENV "ipairs"
+	252	[137]	MOVE     	17 15
+	253	[137]	CALL     	16 2 4
+	254	[137]	JMP      	0 103	; to 358
+	255	[138]	LE       	1 0 -18	; - 0
+	256	[138]	JMP      	0 103	; to 360
+	257	[142]	GETTABLE 	21 20 -54	; "code"
+	258	[143]	GETTABLE 	22 5 21
+	259	[143]	GETTABLE 	22 22 -55	; "DiffScore"
+	260	[143]	LE       	0 22 0
+	261	[143]	JMP      	0 60	; to 322
+	262	[144]	GETTABUP 	22 0 -24	; _ENV "table"
+	263	[144]	GETTABLE 	22 22 -25	; "insert"
+	264	[144]	MOVE     	23 7
+	265	[144]	MOVE     	24 21
+	266	[144]	CALL     	22 3 1
+	267	[145]	GETTABLE 	22 5 21
+	268	[145]	GETTABLE 	22 22 -55	; "DiffScore"
+	269	[145]	SUB      	0 0 22
+	270	[146]	TEST     	2 0
+	271	[146]	JMP      	0 28	; to 300
+	272	[146]	GETTABUP 	22 0 -4	; _ENV "GM"
+	273	[146]	GETTABLE 	22 22 -48	; "ConfigModel"
+	274	[146]	SELF     	22 22 -49	; "IsServerControlOpen"
+	275	[146]	GETTABUP 	24 0 -50	; _ENV "EGeneralConfType"
+	276	[146]	GETTABLE 	24 24 -51	; "RewardStockCount"
+	277	[146]	CALL     	22 3 2
+	278	[146]	TEST     	22 0
+	279	[146]	JMP      	0 20	; to 300
+	280	[147]	GETTABUP 	22 0 -4	; _ENV "GM"
+	281	[147]	GETTABLE 	22 22 -56	; "ItemDataModel"
+	282	[147]	SELF     	22 22 -57	; "GetChainLevel"
+	283	[147]	MOVE     	24 21
+	284	[147]	CALL     	22 3 2
+	285	[148]	GETTABUP 	23 0 -58	; _ENV "MathUtil"
+	286	[148]	GETTABLE 	23 23 -59	; "IntPow"
+	287	[148]	LOADK    	24 -60	; 2
+	288	[148]	SUB      	25 22 -22	; - 1
+	289	[148]	CALL     	23 3 2
+	290	[149]	GETTABLE 	24 9 21
+	291	[149]	EQ       	1 24 -21	; - nil
+	292	[149]	JMP      	0 7	; to 300
+	293	[150]	GETTABUP 	24 0 -61	; _ENV "math"
+	294	[150]	GETTABLE 	24 24 -62	; "max"
+	295	[150]	GETTABLE 	25 9 21
+	296	[150]	SUB      	25 25 23
+	297	[150]	LOADK    	26 -18	; 0
+	298	[150]	CALL     	24 3 2
+	299	[150]	SETTABLE 	9 21 24
+	300	[154]	GETTABUP 	22 0 -29	; _ENV "GameConfig"
+	301	[154]	GETTABLE 	22 22 -30	; "IsTestMode"
+	302	[154]	CALL     	22 1 2
+	303	[154]	TEST     	22 0
+	304	[154]	JMP      	0 53	; to 358
+	305	[155]	EQ       	1 1 -21	; - nil
+	306	[155]	JMP      	0 2	; to 309
+	307	[155]	LT       	0 8 1
+	308	[155]	JMP      	0 49	; to 358
+	309	[156]	MOVE     	22 3
+	310	[156]	LOADK    	23 -63	; "\229\136\134\230\149\176\230\187\161\232\182\179: "
+	311	[156]	GETTABUP 	24 0 -33	; _ENV "tostring"
+	312	[156]	MOVE     	25 21
+	313	[156]	CALL     	24 2 2
+	314	[156]	LOADK    	25 -64	; ":"
+	315	[156]	GETTABUP 	26 0 -33	; _ENV "tostring"
+	316	[156]	GETTABLE 	27 5 21
+	317	[156]	GETTABLE 	27 27 -55	; "DiffScore"
+	318	[156]	CALL     	26 2 2
+	319	[156]	LOADK    	27 -65	; " \n"
+	320	[156]	CONCAT   	3 22 27
+	321	[158]	JMP      	0 36	; to 358
+	322	[160]	TEST     	2 0
+	323	[160]	JMP      	0 22	; to 346
+	324	[160]	GETTABUP 	22 0 -4	; _ENV "GM"
+	325	[160]	GETTABLE 	22 22 -48	; "ConfigModel"
+	326	[160]	SELF     	22 22 -49	; "IsServerControlOpen"
+	327	[160]	GETTABUP 	24 0 -50	; _ENV "EGeneralConfType"
+	328	[160]	GETTABLE 	24 24 -51	; "RewardStockCount"
+	329	[160]	CALL     	22 3 2
+	330	[160]	TEST     	22 0
+	331	[160]	JMP      	0 14	; to 346
+	332	[161]	GETTABUP 	22 0 -52	; _ENV "RandomGenerateCodeHelper"
+	333	[161]	GETTABLE 	22 22 -66	; "_PickItems_new"
+	334	[161]	MOVE     	23 20
+	335	[161]	MOVE     	24 5
+	336	[161]	MOVE     	25 0
+	337	[161]	MOVE     	26 7
+	338	[161]	MOVE     	27 1
+	339	[161]	MOVE     	28 8
+	340	[161]	MOVE     	29 3
+	341	[161]	MOVE     	30 9
+	342	[161]	CALL     	22 9 3
+	343	[161]	MOVE     	3 23
+	344	[161]	MOVE     	0 22
+	345	[161]	JMP      	0 12	; to 358
+	346	[163]	GETTABUP 	22 0 -52	; _ENV "RandomGenerateCodeHelper"
+	347	[163]	GETTABLE 	22 22 -67	; "_PickItems_old"
+	348	[163]	MOVE     	23 20
+	349	[163]	MOVE     	24 5
+	350	[163]	MOVE     	25 0
+	351	[163]	MOVE     	26 7
+	352	[163]	MOVE     	27 1
+	353	[163]	MOVE     	28 8
+	354	[163]	MOVE     	29 3
+	355	[163]	CALL     	22 8 3
+	356	[163]	MOVE     	3 23
+	357	[163]	MOVE     	0 22
+	358	[137]	TFORCALL 	16 2
+	359	[137]	TFORLOOP 	18 -105	; to 255
+	360	[169]	ADD      	8 8 -22	; - 1
+	361	[97]	TFORCALL 	10 2
+	362	[97]	TFORLOOP 	12 -224	; to 139
+	363	[172]	GETTABUP 	10 0 -29	; _ENV "GameConfig"
+	364	[172]	GETTABLE 	10 10 -30	; "IsTestMode"
+	365	[172]	CALL     	10 1 2
+	366	[172]	TEST     	10 0
+	367	[172]	JMP      	0 38	; to 406
+	368	[172]	EQ       	0 1 -21	; - nil
+	369	[172]	JMP      	0 36	; to 406
+	370	[173]	MOVE     	10 3
+	371	[173]	LOADK    	11 -68	; "\231\173\155\233\128\137\232\174\162\229\141\149\229\137\169\228\189\153\230\163\139\229\173\144\229\144\142\229\137\169\228\189\153\229\136\134\230\149\176: "
+	372	[173]	GETTABUP 	12 0 -33	; _ENV "tostring"
+	373	[173]	MOVE     	13 0
+	374	[173]	CALL     	12 2 2
+	375	[173]	LOADK    	13 -39	; "\n"
+	376	[173]	CONCAT   	3 10 13
+	377	[174]	MOVE     	10 3
+	378	[174]	LOADK    	11 -69	; "\232\174\162\229\141\149\230\163\139\229\173\144\231\154\132\229\165\150\229\138\177\239\188\154"
+	379	[174]	CONCAT   	3 10 11
+	380	[175]	LOADK    	10 -18	; 0
+	381	[176]	GETTABUP 	11 0 -19	; _ENV "ipairs"
+	382	[176]	MOVE     	12 7
+	383	[176]	CALL     	11 2 4
+	384	[176]	JMP      	0 12	; to 397
+	385	[177]	MOVE     	16 3
+	386	[177]	MOVE     	17 15
+	387	[177]	LOADK    	18 -70	; "\229\136\134\230\149\176:"
+	388	[177]	GETTABUP 	19 0 -33	; _ENV "tostring"
+	389	[177]	GETTABLE 	20 5 15
+	390	[177]	GETTABLE 	20 20 -55	; "DiffScore"
+	391	[177]	CALL     	19 2 2
+	392	[177]	LOADK    	20 -36	; " "
+	393	[177]	CONCAT   	3 16 20
+	394	[178]	GETTABLE 	16 5 15
+	395	[178]	GETTABLE 	16 16 -55	; "DiffScore"
+	396	[178]	ADD      	10 10 16
+	397	[176]	TFORCALL 	11 2
+	398	[176]	TFORLOOP 	13 -14	; to 385
+	399	[181]	MOVE     	11 3
+	400	[181]	LOADK    	12 -45	; ", \230\128\187\229\136\134\230\149\176: "
+	401	[181]	GETTABUP 	13 0 -33	; _ENV "tostring"
+	402	[181]	MOVE     	14 10
+	403	[181]	CALL     	13 2 2
+	404	[181]	LOADK    	14 -39	; "\n"
+	405	[181]	CONCAT   	3 11 14
+	406	[184]	LT       	0 -18 0	; 0 -
+	407	[184]	JMP      	0 130	; to 538
+	408	[185]	NEWTABLE 	10 0 0
+	409	[187]	GETTABUP 	11 0 -11	; _ENV "pairs"
+	410	[187]	MOVE     	12 5
+	411	[187]	CALL     	11 2 4
+	412	[187]	JMP      	0 47	; to 460
+	413	[190]	GETTABLE 	16 15 -71	; "UnlockLevel"
+	414	[190]	GETTABUP 	17 0 -4	; _ENV "GM"
+	415	[190]	GETTABLE 	17 17 -72	; "LevelModel"
+	416	[190]	SELF     	17 17 -73	; "GetCurrentLevel"
+	417	[190]	CALL     	17 2 2
+	418	[190]	LE       	0 16 17
+	419	[190]	JMP      	0 40	; to 460
+	420	[192]	LOADBOOL 	16 0 0
+	421	[193]	GETTABUP 	17 0 -4	; _ENV "GM"
+	422	[193]	GETTABLE 	17 17 -56	; "ItemDataModel"
+	423	[193]	SELF     	17 17 -74	; "GetChainId"
+	424	[193]	MOVE     	19 14
+	425	[193]	CALL     	17 3 2
+	426	[194]	GETTABUP 	18 0 -4	; _ENV "GM"
+	427	[194]	GETTABLE 	18 18 -56	; "ItemDataModel"
+	428	[194]	SELF     	18 18 -75	; "GetChainGenerators"
+	429	[194]	MOVE     	20 17
+	430	[194]	CALL     	18 3 2
+	431	[195]	GETTABUP 	19 0 -4	; _ENV "GM"
+	432	[195]	GETTABLE 	19 19 -56	; "ItemDataModel"
+	433	[195]	SELF     	19 19 -57	; "GetChainLevel"
+	434	[195]	MOVE     	21 14
+	435	[195]	CALL     	19 3 2
+	436	[196]	GETTABUP 	20 0 -19	; _ENV "ipairs"
+	437	[196]	MOVE     	21 18
+	438	[196]	CALL     	20 2 4
+	439	[196]	JMP      	0 9	; to 449
+	440	[197]	GETTABUP 	25 0 -4	; _ENV "GM"
+	441	[197]	GETTABLE 	25 25 -56	; "ItemDataModel"
+	442	[197]	SELF     	25 25 -76	; "IsUnlocked"
+	443	[197]	MOVE     	27 24
+	444	[197]	CALL     	25 3 2
+	445	[197]	TEST     	25 0
+	446	[197]	JMP      	0 2	; to 449
+	447	[198]	LOADBOOL 	16 1 0
+	448	[198]	JMP      	0 2	; to 451
+	449	[196]	TFORCALL 	20 2
+	450	[196]	TFORLOOP 	22 -11	; to 440
+	451	[203]	TEST     	16 0
+	452	[203]	JMP      	0 7	; to 460
+	453	[203]	EQ       	0 19 -77	; - 5
+	454	[203]	JMP      	0 5	; to 460
+	455	[204]	GETTABUP 	20 0 -24	; _ENV "table"
+	456	[204]	GETTABLE 	20 20 -25	; "insert"
+	457	[204]	MOVE     	21 10
+	458	[204]	MOVE     	22 14
+	459	[204]	CALL     	20 3 1
+	460	[187]	TFORCALL 	11 2
+	461	[187]	TFORLOOP 	13 -49	; to 413
+	462	[209]	GETTABUP 	11 0 -2	; _ENV "Table"
+	463	[209]	GETTABLE 	11 11 -78	; "IsEmpty"
+	464	[209]	MOVE     	12 10
+	465	[209]	CALL     	11 2 2
+	466	[209]	TEST     	11 0
+	467	[209]	JMP      	0 5	; to 473
+	468	[210]	GETTABUP 	11 0 -24	; _ENV "table"
+	469	[210]	GETTABLE 	11 11 -25	; "insert"
+	470	[210]	MOVE     	12 10
+	471	[210]	LOADK    	13 -79	; "205"
+	472	[210]	CALL     	11 3 1
+	473	[212]	GETTABUP 	11 0 -29	; _ENV "GameConfig"
+	474	[212]	GETTABLE 	11 11 -30	; "IsTestMode"
+	475	[212]	CALL     	11 1 2
+	476	[212]	TEST     	11 0
+	477	[212]	JMP      	0 23	; to 501
+	478	[213]	EQ       	1 1 -21	; - nil
+	479	[213]	JMP      	0 2	; to 482
+	480	[213]	LT       	0 8 1
+	481	[213]	JMP      	0 19	; to 501
+	482	[214]	MOVE     	11 3
+	483	[214]	LOADK    	12 -80	; "\229\143\175\233\128\137\231\154\132\233\154\143\230\156\1865\231\186\167\230\163\139\229\173\144\239\188\154"
+	484	[214]	CONCAT   	3 11 12
+	485	[215]	GETTABUP 	11 0 -19	; _ENV "ipairs"
+	486	[215]	MOVE     	12 10
+	487	[215]	CALL     	11 2 4
+	488	[215]	JMP      	0 4	; to 493
+	489	[216]	MOVE     	16 3
+	490	[216]	MOVE     	17 15
+	491	[216]	LOADK    	18 -36	; " "
+	492	[216]	CONCAT   	3 16 18
+	493	[215]	TFORCALL 	11 2
+	494	[215]	TFORLOOP 	13 -6	; to 489
+	495	[218]	MOVE     	11 3
+	496	[218]	LOADK    	12 -39	; "\n"
+	497	[218]	CONCAT   	3 11 12
+	498	[219]	MOVE     	11 3
+	499	[219]	LOADK    	12 -81	; "\233\154\143\230\156\1865\231\186\167\230\163\139\229\173\144\231\154\132\229\165\150\229\138\177\239\188\154"
+	500	[219]	CONCAT   	3 11 12
+	501	[223]	LT       	0 -18 0	; 0 -
+	502	[223]	JMP      	0 27	; to 530
+	503	[224]	GETTABUP 	11 0 -2	; _ENV "Table"
+	504	[224]	GETTABLE 	11 11 -82	; "ListRandomSelectOne"
+	505	[224]	MOVE     	12 10
+	506	[224]	CALL     	11 2 2
+	507	[225]	GETTABUP 	12 0 -24	; _ENV "table"
+	508	[225]	GETTABLE 	12 12 -25	; "insert"
+	509	[225]	MOVE     	13 7
+	510	[225]	MOVE     	14 11
+	511	[225]	CALL     	12 3 1
+	512	[226]	GETTABLE 	12 5 11
+	513	[226]	GETTABLE 	12 12 -55	; "DiffScore"
+	514	[226]	SUB      	0 0 12
+	515	[227]	GETTABUP 	12 0 -29	; _ENV "GameConfig"
+	516	[227]	GETTABLE 	12 12 -30	; "IsTestMode"
+	517	[227]	CALL     	12 1 2
+	518	[227]	TEST     	12 0
+	519	[227]	JMP      	0 -19	; to 501
+	520	[228]	EQ       	1 1 -21	; - nil
+	521	[228]	JMP      	0 2	; to 524
+	522	[228]	LT       	0 8 1
+	523	[228]	JMP      	0 -23	; to 501
+	524	[229]	MOVE     	12 3
+	525	[229]	MOVE     	13 11
+	526	[229]	LOADK    	14 -36	; " "
+	527	[229]	CONCAT   	3 12 14
+	528	[230]	ADD      	8 8 -22	; - 1
+	529	[232]	JMP      	0 -29	; to 501
+	530	[235]	GETTABUP 	11 0 -29	; _ENV "GameConfig"
+	531	[235]	GETTABLE 	11 11 -30	; "IsTestMode"
+	532	[235]	CALL     	11 1 2
+	533	[235]	TEST     	11 0
+	534	[235]	JMP      	0 3	; to 538
+	535	[236]	MOVE     	11 3
+	536	[236]	LOADK    	12 -39	; "\n"
+	537	[236]	CONCAT   	3 11 12
+	538	[240]	MOVE     	10 7
+	539	[240]	MOVE     	11 3
+	540	[240]	RETURN   	10 3
+	541	[241]	RETURN   	0 1
+constants (82) for 0000020A5339F310:
+	1	""
+	2	"Table"
+	3	"DeepCopy"
+	4	"GM"
+	5	"MainBoardModel"
+	6	"GetCodeCountMap"
+	7	"GetOrderModel"
+	8	"OrderModelType"
+	9	"Slot"
+	10	"GetItemCodeConfigMap"
+	11	"pairs"
+	12	"GetOrders"
+	13	"GetState"
+	14	"OrderState"
+	15	"Finished"
+	16	"order"
+	17	"diffScore"
+	18	0
+	19	"ipairs"
+	20	"GetRequirements"
+	21	nil
+	22	1
+	23	"ListCode"
+	24	"table"
+	25	"insert"
+	26	"code"
+	27	"DiffScore"
+	28	"sort"
+	29	"GameConfig"
+	30	"IsTestMode"
+	31	"\230\175\143\228\184\170\232\174\162\229\141\149\231\188\186\229\176\145\230\163\139\229\173\144\231\154\132\228\191\161\230\129\175\228\187\165\229\143\138\233\154\190\229\186\166\229\136\134: \n"
+	32	"\230\167\189\228\189\141\239\188\154"
+	33	"tostring"
+	34	"GetSlot"
+	35	" \231\188\186\229\176\145\230\163\139\229\173\144: "
+	36	" "
+	37	" \233\154\190\229\186\166\229\136\134: "
+	38	"diffScore"
+	39	"\n"
+	40	10
+	41	"\229\136\134\230\149\176+10\231\155\180\230\142\165\230\187\161\232\182\179\232\174\162\229\141\149\230\167\189\228\189\141\239\188\154"
+	42	", \229\165\150\229\138\177: "
+	43	"("
+	44	") "
+	45	", \230\128\187\229\136\134\230\149\176: "
+	46	", \229\137\169\228\189\153\229\136\134\230\149\176: "
+	47	"\229\136\134\230\149\176+10\228\184\141\230\187\161\232\182\179\230\167\189\228\189\141\233\156\128\230\177\130\239\188\154"
+	48	"ConfigModel"
+	49	"IsServerControlOpen"
+	50	"EGeneralConfType"
+	51	"RewardStockCount"
+	52	"RandomGenerateCodeHelper"
+	53	"_GetItemLackMap"
+	54	"code"
+	55	"DiffScore"
+	56	"ItemDataModel"
+	57	"GetChainLevel"
+	58	"MathUtil"
+	59	"IntPow"
+	60	2
+	61	"math"
+	62	"max"
+	63	"\229\136\134\230\149\176\230\187\161\232\182\179: "
+	64	":"
+	65	" \n"
+	66	"_PickItems_new"
+	67	"_PickItems_old"
+	68	"\231\173\155\233\128\137\232\174\162\229\141\149\229\137\169\228\189\153\230\163\139\229\173\144\229\144\142\229\137\169\228\189\153\229\136\134\230\149\176: "
+	69	"\232\174\162\229\141\149\230\163\139\229\173\144\231\154\132\229\165\150\229\138\177\239\188\154"
+	70	"\229\136\134\230\149\176:"
+	71	"UnlockLevel"
+	72	"LevelModel"
+	73	"GetCurrentLevel"
+	74	"GetChainId"
+	75	"GetChainGenerators"
+	76	"IsUnlocked"
+	77	5
+	78	"IsEmpty"
+	79	"205"
+	80	"\229\143\175\233\128\137\231\154\132\233\154\143\230\156\1865\231\186\167\230\163\139\229\173\144\239\188\154"
+	81	"\233\154\143\230\156\1865\231\186\167\230\163\139\229\173\144\231\154\132\229\165\150\229\138\177\239\188\154"
+	82	"ListRandomSelectOne"
+locals (83) for 0000020A5339F310:
+	0	scoreNum	1	542
+	1	testNum	1	542
+	2	applyOptimization	1	542
+	3	testStr	2	542
+	4	codeCountMap	12	542
+	5	orderItemConfig	20	542
+	6	listLackItem	21	542
+	7	(for generator)	27	82
+	8	(for state)	27	82
+	9	(for control)	27	82
+	10	_	28	80
+	11	order	28	80
+	12	ele	35	80
+	13	(for generator)	41	72
+	14	(for state)	41	72
+	15	(for control)	41	72
+	16	_	42	70
+	17	requirement	42	70
+	18	count	49	70
+	19	targetItems	88	542
+	20	(for generator)	99	130
+	21	(for state)	99	130
+	22	(for control)	99	130
+	23	_	100	128
+	24	info	100	128
+	25	(for generator)	112	121
+	26	(for state)	112	121
+	27	(for control)	112	121
+	28	_	113	119
+	29	info	113	119
+	30	testCurNum	134	542
+	31	mapItemLackNum	135	542
+	32	(for generator)	138	363
+	33	(for state)	138	363
+	34	(for control)	138	363
+	35	index	139	361
+	36	info	139	361
+	37	listCodes	145	361
+	38	(for generator)	152	160
+	39	(for state)	152	160
+	40	(for control)	152	160
+	41	_	153	158
+	42	codeInfo	153	158
+	43	(for generator)	183	198
+	44	(for state)	183	198
+	45	(for control)	183	198
+	46	_	184	196
+	47	codeInfo	184	196
+	48	(for generator)	254	360
+	49	(for state)	254	360
+	50	(for control)	254	360
+	51	_	255	358
+	52	codeInfo	255	358
+	53	targetCode	258	358
+	54	level	285	300
+	55	num	290	300
+	56	allScore	381	406
+	57	(for generator)	384	399
+	58	(for state)	384	399
+	59	(for control)	384	399
+	60	_	385	397
+	61	itemType	385	397
+	62	fiveItemConfig	409	538
+	63	(for generator)	412	462
+	64	(for state)	412	462
+	65	(for control)	412	462
+	66	itemType	413	460
+	67	itemConfig	413	460
+	68	bUnLockGenerator	421	460
+	69	chainId	426	460
+	70	generators	431	460
+	71	curLevel	436	460
+	72	(for generator)	439	451
+	73	(for state)	439	451
+	74	(for control)	439	451
+	75	_	440	449
+	76	generator	440	449
+	77	(for generator)	488	495
+	78	(for state)	488	495
+	79	(for control)	488	495
+	80	_	489	493
+	81	itemType	489	493
+	82	itemType	507	529
+upvalues (1) for 0000020A5339F310:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:76,78> (8 instructions at 0000020A533A2CE0)
+2 params, 4 slots, 0 upvalues, 2 locals, 1 constant, 0 functions
+	1	[77]	GETTABLE 	2 0 -1	; "diffScore"
+	2	[77]	GETTABLE 	3 1 -1	; "diffScore"
+	3	[77]	LT       	1 2 3
+	4	[77]	JMP      	0 1	; to 6
+	5	[77]	LOADBOOL 	2 0 1
+	6	[77]	LOADBOOL 	2 1 0
+	7	[77]	RETURN   	2 2
+	8	[78]	RETURN   	0 1
+constants (1) for 0000020A533A2CE0:
+	1	"diffScore"
+locals (2) for 0000020A533A2CE0:
+	0	a	1	9
+	1	b	1	9
+upvalues (0) for 0000020A533A2CE0:
+
+function <RandomGenerateCodeHelper.lua:122,124> (12 instructions at 0000020A533A2D60)
+2 params, 4 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[123]	GETTABLE 	2 0 -1	; "code"
+	2	[123]	GETTABUP 	2 0 2	; orderItemConfig
+	3	[123]	GETTABLE 	2 2 -2	; "DiffScore"
+	4	[123]	GETTABLE 	3 1 -1	; "code"
+	5	[123]	GETTABUP 	3 0 3	; orderItemConfig
+	6	[123]	GETTABLE 	3 3 -2	; "DiffScore"
+	7	[123]	LT       	1 2 3
+	8	[123]	JMP      	0 1	; to 10
+	9	[123]	LOADBOOL 	2 0 1
+	10	[123]	LOADBOOL 	2 1 0
+	11	[123]	RETURN   	2 2
+	12	[124]	RETURN   	0 1
+constants (2) for 0000020A533A2D60:
+	1	"code"
+	2	"DiffScore"
+locals (2) for 0000020A533A2D60:
+	0	a	1	13
+	1	b	1	13
+upvalues (1) for 0000020A533A2D60:
+	0	orderItemConfig	1	5
+
+function <RandomGenerateCodeHelper.lua:243,274> (79 instructions at 0000020A533A4BC0)
+7 params, 20 slots, 1 upvalue, 22 locals, 22 constants, 0 functions
+	1	[244]	GETTABLE 	7 0 -1	; "code"
+	2	[245]	GETTABUP 	8 0 -2	; _ENV "GM"
+	3	[245]	GETTABLE 	8 8 -3	; "ItemDataModel"
+	4	[245]	SELF     	8 8 -4	; "GetChainId"
+	5	[245]	MOVE     	10 7
+	6	[245]	CALL     	8 3 2
+	7	[246]	GETTABUP 	9 0 -2	; _ENV "GM"
+	8	[246]	GETTABLE 	9 9 -3	; "ItemDataModel"
+	9	[246]	SELF     	9 9 -5	; "GetChainLevel"
+	10	[246]	MOVE     	11 7
+	11	[246]	CALL     	9 3 2
+	12	[248]	MOVE     	10 7
+	13	[249]	MOVE     	11 9
+	14	[249]	LOADK    	12 -6	; 1
+	15	[249]	LOADK    	13 -7	; -1
+	16	[249]	FORPREP  	11 14	; to 31
+	17	[251]	GETTABUP 	15 0 -2	; _ENV "GM"
+	18	[251]	GETTABLE 	15 15 -3	; "ItemDataModel"
+	19	[251]	SELF     	15 15 -8	; "GetTypeByChainAndLevel"
+	20	[251]	MOVE     	17 8
+	21	[251]	MOVE     	18 14
+	22	[251]	CALL     	15 4 2
+	23	[252]	GETTABLE 	16 1 15
+	24	[252]	EQ       	1 16 -9	; - nil
+	25	[252]	JMP      	0 5	; to 31
+	26	[253]	GETTABLE 	16 1 15
+	27	[253]	GETTABLE 	16 16 -10	; "DiffScore"
+	28	[254]	MOVE     	10 15
+	29	[255]	LE       	1 16 -11	; - 21
+	30	[255]	JMP      	0 1	; to 32
+	31	[249]	FORLOOP  	11 -15	; to 17
+	32	[261]	GETTABUP 	11 0 -12	; _ENV "math"
+	33	[261]	GETTABLE 	11 11 -13	; "ceil"
+	34	[261]	GETTABLE 	12 1 10
+	35	[261]	GETTABLE 	12 12 -10	; "DiffScore"
+	36	[261]	DIV      	12 2 12
+	37	[261]	CALL     	11 2 2
+	38	[262]	LOADK    	12 -6	; 1
+	39	[262]	MOVE     	13 11
+	40	[262]	LOADK    	14 -6	; 1
+	41	[262]	FORPREP  	12 8	; to 50
+	42	[263]	GETTABLE 	16 1 10
+	43	[263]	GETTABLE 	16 16 -10	; "DiffScore"
+	44	[263]	SUB      	2 2 16
+	45	[264]	GETTABUP 	16 0 -14	; _ENV "table"
+	46	[264]	GETTABLE 	16 16 -15	; "insert"
+	47	[264]	MOVE     	17 3
+	48	[264]	MOVE     	18 10
+	49	[264]	CALL     	16 3 1
+	50	[262]	FORLOOP  	12 -9	; to 42
+	51	[267]	GETTABUP 	12 0 -16	; _ENV "GameConfig"
+	52	[267]	GETTABLE 	12 12 -17	; "IsTestMode"
+	53	[267]	CALL     	12 1 2
+	54	[267]	TEST     	12 0
+	55	[267]	JMP      	0 20	; to 76
+	56	[268]	EQ       	1 4 -9	; - nil
+	57	[268]	JMP      	0 2	; to 60
+	58	[268]	LT       	0 5 4
+	59	[268]	JMP      	0 16	; to 76
+	60	[269]	MOVE     	12 6
+	61	[269]	LOADK    	13 -18	; "\229\136\134\230\149\176\228\184\141\232\182\179\228\187\165\231\155\180\230\142\165\229\143\145\230\148\190\230\137\128\233\156\128\230\163\139\229\173\144\227\128\130\229\143\145\230\148\190\230\149\176\233\135\143:"
+	62	[269]	GETTABUP 	14 0 -19	; _ENV "tostring"
+	63	[269]	MOVE     	15 11
+	64	[269]	CALL     	14 2 2
+	65	[269]	LOADK    	15 -20	; " \229\165\150\229\138\177:"
+	66	[269]	GETTABUP 	16 0 -19	; _ENV "tostring"
+	67	[269]	MOVE     	17 10
+	68	[269]	CALL     	16 2 2
+	69	[269]	LOADK    	17 -21	; "("
+	70	[269]	GETTABUP 	18 0 -19	; _ENV "tostring"
+	71	[269]	GETTABLE 	19 1 10
+	72	[269]	GETTABLE 	19 19 -10	; "DiffScore"
+	73	[269]	CALL     	18 2 2
+	74	[269]	LOADK    	19 -22	; ")\n"
+	75	[269]	CONCAT   	6 12 19
+	76	[273]	MOVE     	12 2
+	77	[273]	MOVE     	13 6
+	78	[273]	RETURN   	12 3
+	79	[274]	RETURN   	0 1
+constants (22) for 0000020A533A4BC0:
+	1	"code"
+	2	"GM"
+	3	"ItemDataModel"
+	4	"GetChainId"
+	5	"GetChainLevel"
+	6	1
+	7	-1
+	8	"GetTypeByChainAndLevel"
+	9	nil
+	10	"DiffScore"
+	11	21
+	12	"math"
+	13	"ceil"
+	14	"table"
+	15	"insert"
+	16	"GameConfig"
+	17	"IsTestMode"
+	18	"\229\136\134\230\149\176\228\184\141\232\182\179\228\187\165\231\155\180\230\142\165\229\143\145\230\148\190\230\137\128\233\156\128\230\163\139\229\173\144\227\128\130\229\143\145\230\148\190\230\149\176\233\135\143:"
+	19	"tostring"
+	20	" \229\165\150\229\138\177:"
+	21	"("
+	22	")\n"
+locals (22) for 0000020A533A4BC0:
+	0	codeInfo	1	80
+	1	orderItemConfig	1	80
+	2	scoreNum	1	80
+	3	targetItems	1	80
+	4	testNum	1	80
+	5	testCurNum	1	80
+	6	testStr	1	80
+	7	code	2	80
+	8	itemChain	7	80
+	9	curLevel	12	80
+	10	chosenCode	13	80
+	11	(for index)	16	32
+	12	(for limit)	16	32
+	13	(for step)	16	32
+	14	level	17	31
+	15	curItemType	23	31
+	16	diffScore	28	31
+	17	num	38	80
+	18	(for index)	41	51
+	19	(for limit)	41	51
+	20	(for step)	41	51
+	21	i	42	50
+upvalues (1) for 0000020A533A4BC0:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:276,333> (157 instructions at 0000020A5339ECB0)
+8 params, 25 slots, 1 upvalue, 20 locals, 36 constants, 0 functions
+	1	[277]	GETTABLE 	8 0 -1	; "code"
+	2	[278]	GETTABLE 	9 7 8
+	3	[278]	EQ       	1 9 -2	; - nil
+	4	[278]	JMP      	0 144	; to 149
+	5	[278]	GETTABLE 	9 7 8
+	6	[278]	LT       	0 -3 9	; 0 -
+	7	[278]	JMP      	0 141	; to 149
+	8	[279]	GETTABUP 	9 0 -4	; _ENV "GM"
+	9	[279]	GETTABLE 	9 9 -5	; "ItemDataModel"
+	10	[279]	SELF     	9 9 -6	; "GetChainId"
+	11	[279]	MOVE     	11 8
+	12	[279]	CALL     	9 3 2
+	13	[280]	GETTABUP 	10 0 -4	; _ENV "GM"
+	14	[280]	GETTABLE 	10 10 -5	; "ItemDataModel"
+	15	[280]	SELF     	10 10 -7	; "GetChainLevel"
+	16	[280]	MOVE     	12 8
+	17	[280]	CALL     	10 3 2
+	18	[281]	MOVE     	11 8
+	19	[282]	MOVE     	12 10
+	20	[282]	LOADK    	13 -8	; 1
+	21	[282]	LOADK    	14 -9	; -1
+	22	[282]	FORPREP  	12 14	; to 37
+	23	[284]	GETTABUP 	16 0 -4	; _ENV "GM"
+	24	[284]	GETTABLE 	16 16 -5	; "ItemDataModel"
+	25	[284]	SELF     	16 16 -10	; "GetTypeByChainAndLevel"
+	26	[284]	MOVE     	18 9
+	27	[284]	MOVE     	19 15
+	28	[284]	CALL     	16 4 2
+	29	[285]	GETTABLE 	17 1 16
+	30	[285]	EQ       	1 17 -2	; - nil
+	31	[285]	JMP      	0 5	; to 37
+	32	[286]	GETTABLE 	17 1 16
+	33	[286]	GETTABLE 	17 17 -11	; "DiffScore"
+	34	[287]	MOVE     	11 16
+	35	[288]	LE       	1 17 -12	; - 21
+	36	[288]	JMP      	0 1	; to 38
+	37	[282]	FORLOOP  	12 -15	; to 23
+	38	[293]	GETTABLE 	12 1 11
+	39	[293]	EQ       	1 12 -2	; - nil
+	40	[293]	JMP      	0 4	; to 45
+	41	[293]	GETTABLE 	12 1 11
+	42	[293]	GETTABLE 	12 12 -11	; "DiffScore"
+	43	[293]	LT       	0 -12 12	; 21 -
+	44	[293]	JMP      	0 11	; to 56
+	45	[294]	GETTABUP 	12 0 -13	; _ENV "GameConfig"
+	46	[294]	GETTABLE 	12 12 -14	; "IsTestMode"
+	47	[294]	CALL     	12 1 2
+	48	[294]	TEST     	12 0
+	49	[294]	JMP      	0 3	; to 53
+	50	[295]	MOVE     	12 6
+	51	[295]	LOADK    	13 -15	; "\230\178\161\230\156\137\230\137\190\229\136\176\230\156\137\230\149\136\230\163\139\229\173\144\239\188\140\233\128\128\229\135\186\230\156\172\230\172\161\230\144\156\231\180\162\n"
+	52	[295]	CONCAT   	6 12 13
+	53	[297]	MOVE     	12 2
+	54	[297]	MOVE     	13 6
+	55	[297]	RETURN   	12 3
+	56	[299]	GETTABUP 	12 0 -13	; _ENV "GameConfig"
+	57	[299]	GETTABLE 	12 12 -14	; "IsTestMode"
+	58	[299]	CALL     	12 1 2
+	59	[299]	TEST     	12 0
+	60	[299]	JMP      	0 13	; to 74
+	61	[300]	MOVE     	12 6
+	62	[300]	LOADK    	13 -16	; "--------\229\143\145\230\148\190"
+	63	[300]	MOVE     	14 8
+	64	[300]	LOADK    	15 -17	; "\229\175\185\229\186\148\230\163\139\229\173\144--------\n"
+	65	[300]	CONCAT   	6 12 15
+	66	[301]	MOVE     	12 6
+	67	[301]	LOADK    	13 -18	; "\233\128\137\229\143\150"
+	68	[301]	MOVE     	14 11
+	69	[301]	LOADK    	15 -19	; ":"
+	70	[301]	GETTABLE 	16 1 11
+	71	[301]	GETTABLE 	16 16 -11	; "DiffScore"
+	72	[301]	LOADK    	17 -20	; " "
+	73	[301]	CONCAT   	6 12 17
+	74	[304]	LOADK    	12 -3	; 0
+	75	[306]	ADD      	12 12 -8	; - 1
+	76	[307]	GETTABLE 	13 1 11
+	77	[307]	GETTABLE 	13 13 -11	; "DiffScore"
+	78	[307]	SUB      	2 2 13
+	79	[308]	GETTABUP 	13 0 -21	; _ENV "table"
+	80	[308]	GETTABLE 	13 13 -22	; "insert"
+	81	[308]	MOVE     	14 3
+	82	[308]	MOVE     	15 11
+	83	[308]	CALL     	13 3 1
+	84	[309]	GETTABUP 	13 0 -4	; _ENV "GM"
+	85	[309]	GETTABLE 	13 13 -5	; "ItemDataModel"
+	86	[309]	SELF     	13 13 -7	; "GetChainLevel"
+	87	[309]	MOVE     	15 11
+	88	[309]	CALL     	13 3 2
+	89	[310]	GETTABLE 	14 7 8
+	90	[310]	GETTABUP 	15 0 -23	; _ENV "MathUtil"
+	91	[310]	GETTABLE 	15 15 -24	; "IntPow"
+	92	[310]	LOADK    	16 -25	; 2
+	93	[310]	SUB      	17 13 -8	; - 1
+	94	[310]	CALL     	15 3 2
+	95	[310]	SUB      	14 14 15
+	96	[310]	SETTABLE 	7 8 14
+	97	[312]	GETTABUP 	14 0 -13	; _ENV "GameConfig"
+	98	[312]	GETTABLE 	14 14 -14	; "IsTestMode"
+	99	[312]	CALL     	14 1 2
+	100	[312]	TEST     	14 0
+	101	[312]	JMP      	0 8	; to 110
+	102	[313]	MOVE     	14 6
+	103	[313]	MOVE     	15 8
+	104	[313]	LOADK    	16 -26	; " \229\137\169\228\189\153\231\188\186\229\164\177 "
+	105	[313]	GETTABLE 	17 7 8
+	106	[313]	LOADK    	18 -27	; ", \229\137\169\228\189\153\229\165\150\229\138\177\229\136\134"
+	107	[313]	MOVE     	19 2
+	108	[313]	LOADK    	20 -28	; "\n"
+	109	[313]	CONCAT   	6 14 20
+	110	[316]	GETTABLE 	14 7 8
+	111	[316]	LE       	1 14 -3	; - 0
+	112	[316]	JMP      	0 3	; to 116
+	113	[316]	LE       	1 2 -3	; - 0
+	114	[316]	JMP      	0 1	; to 116
+	115	[318]	JMP      	0 -41	; to 75
+	116	[321]	GETTABUP 	13 0 -13	; _ENV "GameConfig"
+	117	[321]	GETTABLE 	13 13 -14	; "IsTestMode"
+	118	[321]	CALL     	13 1 2
+	119	[321]	TEST     	13 0
+	120	[321]	JMP      	0 24	; to 145
+	121	[322]	EQ       	1 4 -2	; - nil
+	122	[322]	JMP      	0 2	; to 125
+	123	[322]	LT       	0 5 4
+	124	[322]	JMP      	0 20	; to 145
+	125	[323]	MOVE     	13 6
+	126	[323]	LOADK    	14 -29	; "\230\150\176\232\167\132\229\136\153\231\148\159\230\149\136, \229\143\145\230\148\190 "
+	127	[323]	GETTABUP 	15 0 -30	; _ENV "tostring"
+	128	[323]	MOVE     	16 12
+	129	[323]	CALL     	15 2 2
+	130	[323]	LOADK    	16 -31	; "\228\184\170 code:"
+	131	[323]	GETTABUP 	17 0 -30	; _ENV "tostring"
+	132	[323]	MOVE     	18 11
+	133	[323]	CALL     	17 2 2
+	134	[323]	LOADK    	18 -19	; ":"
+	135	[323]	GETTABUP 	19 0 -30	; _ENV "tostring"
+	136	[323]	GETTABLE 	20 1 11
+	137	[323]	GETTABLE 	20 20 -11	; "DiffScore"
+	138	[323]	CALL     	19 2 2
+	139	[324]	LOADK    	20 -32	; " \231\155\174\230\160\135\229\144\136\230\136\144\230\163\139\229\173\144 "
+	140	[324]	MOVE     	21 8
+	141	[324]	LOADK    	22 -33	; ", \229\137\169\228\189\153\229\165\150\229\138\177\229\136\134 "
+	142	[324]	MOVE     	23 2
+	143	[324]	LOADK    	24 -34	; " \n"
+	144	[324]	CONCAT   	6 13 24
+	145	[328]	MOVE     	13 2
+	146	[328]	MOVE     	14 6
+	147	[328]	RETURN   	13 3
+	148	[328]	JMP      	0 8	; to 157
+	149	[330]	MOVE     	9 6
+	150	[330]	LOADK    	10 -35	; "code "
+	151	[330]	MOVE     	11 8
+	152	[330]	LOADK    	12 -36	; " \229\156\168\229\144\136\230\136\144\229\136\164\230\150\173\230\179\149\229\136\153\228\184\139\230\151\160\231\188\186\229\164\177\239\188\140\232\183\179\232\191\135\232\175\165\230\163\139\229\173\144\227\128\130 \n"
+	153	[330]	CONCAT   	6 9 12
+	154	[331]	MOVE     	9 2
+	155	[331]	MOVE     	10 6
+	156	[331]	RETURN   	9 3
+	157	[333]	RETURN   	0 1
+constants (36) for 0000020A5339ECB0:
+	1	"code"
+	2	nil
+	3	0
+	4	"GM"
+	5	"ItemDataModel"
+	6	"GetChainId"
+	7	"GetChainLevel"
+	8	1
+	9	-1
+	10	"GetTypeByChainAndLevel"
+	11	"DiffScore"
+	12	21
+	13	"GameConfig"
+	14	"IsTestMode"
+	15	"\230\178\161\230\156\137\230\137\190\229\136\176\230\156\137\230\149\136\230\163\139\229\173\144\239\188\140\233\128\128\229\135\186\230\156\172\230\172\161\230\144\156\231\180\162\n"
+	16	"--------\229\143\145\230\148\190"
+	17	"\229\175\185\229\186\148\230\163\139\229\173\144--------\n"
+	18	"\233\128\137\229\143\150"
+	19	":"
+	20	" "
+	21	"table"
+	22	"insert"
+	23	"MathUtil"
+	24	"IntPow"
+	25	2
+	26	" \229\137\169\228\189\153\231\188\186\229\164\177 "
+	27	", \229\137\169\228\189\153\229\165\150\229\138\177\229\136\134"
+	28	"\n"
+	29	"\230\150\176\232\167\132\229\136\153\231\148\159\230\149\136, \229\143\145\230\148\190 "
+	30	"tostring"
+	31	"\228\184\170 code:"
+	32	" \231\155\174\230\160\135\229\144\136\230\136\144\230\163\139\229\173\144 "
+	33	", \229\137\169\228\189\153\229\165\150\229\138\177\229\136\134 "
+	34	" \n"
+	35	"code "
+	36	" \229\156\168\229\144\136\230\136\144\229\136\164\230\150\173\230\179\149\229\136\153\228\184\139\230\151\160\231\188\186\229\164\177\239\188\140\232\183\179\232\191\135\232\175\165\230\163\139\229\173\144\227\128\130 \n"
+locals (20) for 0000020A5339ECB0:
+	0	codeInfo	1	158
+	1	orderItemConfig	1	158
+	2	scoreNum	1	158
+	3	targetItems	1	158
+	4	testNum	1	158
+	5	testCurNum	1	158
+	6	testStr	1	158
+	7	mapItemLackNum	1	158
+	8	code	2	158
+	9	itemChain	13	148
+	10	curLevel	18	148
+	11	chosenCode	19	148
+	12	(for index)	22	38
+	13	(for limit)	22	38
+	14	(for step)	22	38
+	15	level	23	37
+	16	curItemType	29	37
+	17	diffScore	34	37
+	18	num	75	148
+	19	level	89	115
+upvalues (1) for 0000020A5339ECB0:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:335,347> (34 instructions at 0000020A533A5800)
+1 param, 12 slots, 1 upvalue, 7 locals, 10 constants, 0 functions
+	1	[337]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[337]	GETTABLE 	1 1 -2	; "MainBoardModel"
+	3	[337]	SELF     	1 1 -3	; "CalculateOrderCodeLackNumMap"
+	4	[337]	LOADBOOL 	3 0 0
+	5	[337]	LOADBOOL 	4 1 0
+	6	[337]	LOADBOOL 	5 0 0
+	7	[337]	CALL     	1 5 2
+	8	[338]	GETTABUP 	2 0 -4	; _ENV "GameConfig"
+	9	[338]	GETTABLE 	2 2 -5	; "IsTestMode"
+	10	[338]	CALL     	2 1 2
+	11	[338]	TEST     	2 0
+	12	[338]	JMP      	0 18	; to 31
+	13	[339]	MOVE     	2 0
+	14	[339]	LOADK    	3 -6	; "\229\189\147\229\137\141\231\188\186\229\176\145\230\163\139\229\173\144\229\175\185\229\186\148\231\154\1321\231\186\167\230\163\139\229\173\144\230\149\176\233\135\143:\n"
+	15	[339]	CONCAT   	0 2 3
+	16	[340]	GETTABUP 	2 0 -7	; _ENV "pairs"
+	17	[340]	MOVE     	3 1
+	18	[340]	CALL     	2 2 4
+	19	[340]	JMP      	0 6	; to 26
+	20	[341]	MOVE     	7 0
+	21	[341]	MOVE     	8 5
+	22	[341]	LOADK    	9 -8	; " : "
+	23	[341]	MOVE     	10 6
+	24	[341]	LOADK    	11 -9	; " / "
+	25	[341]	CONCAT   	0 7 11
+	26	[340]	TFORCALL 	2 2
+	27	[340]	TFORLOOP 	4 -8	; to 20
+	28	[343]	MOVE     	2 0
+	29	[343]	LOADK    	3 -10	; "\n"
+	30	[343]	CONCAT   	0 2 3
+	31	[346]	MOVE     	2 1
+	32	[346]	MOVE     	3 0
+	33	[346]	RETURN   	2 3
+	34	[347]	RETURN   	0 1
+constants (10) for 0000020A533A5800:
+	1	"GM"
+	2	"MainBoardModel"
+	3	"CalculateOrderCodeLackNumMap"
+	4	"GameConfig"
+	5	"IsTestMode"
+	6	"\229\189\147\229\137\141\231\188\186\229\176\145\230\163\139\229\173\144\229\175\185\229\186\148\231\154\1321\231\186\167\230\163\139\229\173\144\230\149\176\233\135\143:\n"
+	7	"pairs"
+	8	" : "
+	9	" / "
+	10	"\n"
+locals (7) for 0000020A533A5800:
+	0	testStr	1	35
+	1	mapItemLackNum	8	35
+	2	(for generator)	19	28
+	3	(for state)	19	28
+	4	(for control)	19	28
+	5	code	20	26
+	6	lackNum	20	26
+upvalues (1) for 0000020A533A5800:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:351,361> (22 instructions at 0000020A533A5AD0)
+1 param, 9 slots, 1 upvalue, 7 locals, 8 constants, 0 functions
+	1	[353]	GETTABUP 	1 0 -1	; _ENV "GM"
+	2	[353]	GETTABLE 	1 1 -2	; "ItemDataModel"
+	3	[353]	SELF     	1 1 -3	; "GetChainId"
+	4	[353]	SELF     	3 0 -4	; "GetType"
+	5	[353]	CALL     	3 2 0
+	6	[353]	CALL     	1 0 2
+	7	[354]	GETTABUP 	2 0 -5	; _ENV "pairs"
+	8	[354]	GETTABUP 	3 0 -6	; _ENV "ItemSubChain"
+	9	[354]	CALL     	2 2 4
+	10	[354]	JMP      	0 7	; to 18
+	11	[355]	EQ       	0 5 1
+	12	[355]	JMP      	0 5	; to 18
+	13	[356]	GETTABUP 	7 0 -7	; _ENV "RandomGenerateCodeHelper"
+	14	[356]	GETTABLE 	7 7 -8	; "_GetSmartProduceItem"
+	15	[356]	MOVE     	8 0
+	16	[356]	TAILCALL 	7 2 0
+	17	[356]	RETURN   	7 0
+	18	[354]	TFORCALL 	2 2
+	19	[354]	TFORLOOP 	4 -9	; to 11
+	20	[360]	LOADNIL  	2 0
+	21	[360]	RETURN   	2 2
+	22	[361]	RETURN   	0 1
+constants (8) for 0000020A533A5AD0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainId"
+	4	"GetType"
+	5	"pairs"
+	6	"ItemSubChain"
+	7	"RandomGenerateCodeHelper"
+	8	"_GetSmartProduceItem"
+locals (7) for 0000020A533A5AD0:
+	0	sourceItemModel	1	23
+	1	chainId	7	23
+	2	(for generator)	10	20
+	3	(for state)	10	20
+	4	(for control)	10	20
+	5	id	11	18
+	6	_	11	18
+upvalues (1) for 0000020A533A5AD0:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:363,377> (23 instructions at 0000020A533A7080)
+3 params, 13 slots, 1 upvalue, 11 locals, 4 constants, 0 functions
+	1	[364]	NEWTABLE 	3 0 0
+	2	[365]	NEWTABLE 	4 0 0
+	3	[366]	GETTABUP 	5 0 -1	; _ENV "pairs"
+	4	[366]	MOVE     	6 0
+	5	[366]	CALL     	5 2 4
+	6	[366]	JMP      	0 11	; to 18
+	7	[367]	GETTABUP 	10 0 -2	; _ENV "GM"
+	8	[367]	GETTABLE 	10 10 -3	; "ItemDataModel"
+	9	[367]	SELF     	10 10 -4	; "GetChainId"
+	10	[367]	MOVE     	12 8
+	11	[367]	CALL     	10 3 2
+	12	[368]	EQ       	0 10 1
+	13	[368]	JMP      	0 1	; to 15
+	14	[369]	SETTABLE 	3 8 9
+	15	[372]	EQ       	0 10 2
+	16	[372]	JMP      	0 1	; to 18
+	17	[373]	SETTABLE 	4 8 9
+	18	[366]	TFORCALL 	5 2
+	19	[366]	TFORLOOP 	7 -13	; to 7
+	20	[376]	MOVE     	5 3
+	21	[376]	MOVE     	6 4
+	22	[376]	RETURN   	5 3
+	23	[377]	RETURN   	0 1
+constants (4) for 0000020A533A7080:
+	1	"pairs"
+	2	"GM"
+	3	"ItemDataModel"
+	4	"GetChainId"
+locals (11) for 0000020A533A7080:
+	0	codeMap	1	24
+	1	subChainId	1	24
+	2	mainChainId	1	24
+	3	subCodeMap	2	24
+	4	mainCodeMap	3	24
+	5	(for generator)	6	20
+	6	(for state)	6	20
+	7	(for control)	6	20
+	8	code	7	18
+	9	count	7	18
+	10	chainId	12	18
+upvalues (1) for 0000020A533A7080:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:380,455> (177 instructions at 0000020A533A7230)
+1 param, 28 slots, 1 upvalue, 33 locals, 39 constants, 0 functions
+	1	[382]	SELF     	1 0 -1	; "GetComponent"
+	2	[382]	GETTABUP 	3 0 -2	; _ENV "ItemSpread"
+	3	[382]	CALL     	1 3 2
+	4	[383]	SELF     	2 1 -3	; "GetCodeWeightPairs"
+	5	[383]	CALL     	2 2 2
+	6	[385]	GETTABUP 	3 0 -4	; _ENV "GM"
+	7	[385]	GETTABLE 	3 3 -5	; "ItemDataModel"
+	8	[385]	SELF     	3 3 -6	; "GetChainId"
+	9	[385]	SELF     	5 0 -7	; "GetType"
+	10	[385]	CALL     	5 2 0
+	11	[385]	CALL     	3 0 2
+	12	[386]	NEWTABLE 	4 0 0
+	13	[387]	NEWTABLE 	5 0 0
+	14	[389]	LOADNIL  	6 1
+	15	[390]	GETTABUP 	8 0 -8	; _ENV "pairs"
+	16	[390]	MOVE     	9 2
+	17	[390]	CALL     	8 2 4
+	18	[390]	JMP      	0 30	; to 49
+	19	[392]	GETTABUP 	13 0 -4	; _ENV "GM"
+	20	[392]	GETTABLE 	13 13 -5	; "ItemDataModel"
+	21	[392]	SELF     	13 13 -9	; "GetModelConfig"
+	22	[392]	GETTABLE 	15 12 -10	; "Code"
+	23	[392]	LOADBOOL 	16 1 0
+	24	[392]	CALL     	13 4 2
+	25	[392]	EQ       	1 13 -11	; - nil
+	26	[392]	JMP      	0 22	; to 49
+	27	[393]	GETTABUP 	13 0 -4	; _ENV "GM"
+	28	[393]	GETTABLE 	13 13 -5	; "ItemDataModel"
+	29	[393]	SELF     	13 13 -6	; "GetChainId"
+	30	[393]	GETTABLE 	15 12 -10	; "Code"
+	31	[393]	CALL     	13 3 2
+	32	[394]	GETTABUP 	14 0 -12	; _ENV "ItemSubChain"
+	33	[394]	GETTABLE 	14 14 3
+	34	[394]	EQ       	0 14 13
+	35	[394]	JMP      	0 7	; to 43
+	36	[395]	GETTABUP 	14 0 -13	; _ENV "table"
+	37	[395]	GETTABLE 	14 14 -14	; "insert"
+	38	[395]	MOVE     	15 4
+	39	[395]	MOVE     	16 12
+	40	[395]	CALL     	14 3 1
+	41	[396]	MOVE     	6 13
+	42	[396]	JMP      	0 6	; to 49
+	43	[398]	GETTABUP 	14 0 -13	; _ENV "table"
+	44	[398]	GETTABLE 	14 14 -14	; "insert"
+	45	[398]	MOVE     	15 5
+	46	[398]	MOVE     	16 12
+	47	[398]	CALL     	14 3 1
+	48	[399]	MOVE     	7 13
+	49	[390]	TFORCALL 	8 2
+	50	[390]	TFORLOOP 	10 -32	; to 19
+	51	[403]	EQ       	0 6 -11	; - nil
+	52	[403]	JMP      	0 2	; to 55
+	53	[404]	LOADNIL  	8 0
+	54	[404]	RETURN   	8 2
+	55	[409]	GETTABUP 	8 0 -4	; _ENV "GM"
+	56	[409]	GETTABLE 	8 8 -15	; "MainBoardModel"
+	57	[409]	SELF     	8 8 -16	; "GetOrderCodeLackCountMap"
+	58	[409]	CALL     	8 2 2
+	59	[410]	GETTABUP 	9 0 -17	; _ENV "RandomGenerateCodeHelper"
+	60	[410]	GETTABLE 	9 9 -18	; "GetSpliteCodeWeightMapSubAndMain"
+	61	[410]	MOVE     	10 8
+	62	[410]	MOVE     	11 6
+	63	[410]	MOVE     	12 7
+	64	[410]	CALL     	9 4 3
+	65	[411]	GETTABUP 	11 0 -19	; _ENV "Table"
+	66	[411]	GETTABLE 	11 11 -20	; "IsEmpty"
+	67	[411]	MOVE     	12 9
+	68	[411]	CALL     	11 2 2
+	69	[411]	TEST     	11 0
+	70	[411]	JMP      	0 8	; to 79
+	71	[411]	GETTABUP 	11 0 -19	; _ENV "Table"
+	72	[411]	GETTABLE 	11 11 -20	; "IsEmpty"
+	73	[411]	MOVE     	12 10
+	74	[411]	CALL     	11 2 2
+	75	[411]	TEST     	11 0
+	76	[411]	JMP      	0 2	; to 79
+	77	[412]	LOADNIL  	11 0
+	78	[412]	RETURN   	11 2
+	79	[416]	GETTABUP 	11 0 -19	; _ENV "Table"
+	80	[416]	GETTABLE 	11 11 -21	; "DeepCopy"
+	81	[416]	GETTABUP 	12 0 -4	; _ENV "GM"
+	82	[416]	GETTABLE 	12 12 -15	; "MainBoardModel"
+	83	[416]	SELF     	12 12 -22	; "GetCodeCountMap"
+	84	[416]	LOADBOOL 	14 1 0
+	85	[416]	LOADBOOL 	15 0 0
+	86	[416]	LOADBOOL 	16 1 0
+	87	[416]	CALL     	12 5 0
+	88	[416]	CALL     	11 0 2
+	89	[418]	LOADBOOL 	12 0 0
+	90	[419]	LOADBOOL 	13 0 0
+	91	[420]	GETTABUP 	14 0 -8	; _ENV "pairs"
+	92	[420]	GETTABUP 	15 0 -4	; _ENV "GM"
+	93	[420]	GETTABLE 	15 15 -15	; "MainBoardModel"
+	94	[420]	SELF     	15 15 -23	; "GetOrders"
+	95	[420]	CALL     	15 2 0
+	96	[420]	CALL     	14 0 4
+	97	[420]	JMP      	0 37	; to 135
+	98	[421]	SELF     	19 18 -24	; "GetState"
+	99	[421]	CALL     	19 2 2
+	100	[421]	GETTABUP 	20 0 -25	; _ENV "OrderState"
+	101	[421]	GETTABLE 	20 20 -26	; "Finished"
+	102	[421]	EQ       	1 19 20
+	103	[421]	JMP      	0 31	; to 135
+	104	[422]	GETTABUP 	19 0 -27	; _ENV "ipairs"
+	105	[422]	SELF     	20 18 -28	; "GetRequirements"
+	106	[422]	CALL     	20 2 0
+	107	[422]	CALL     	19 0 4
+	108	[422]	JMP      	0 24	; to 133
+	109	[423]	GETTABUP 	24 0 -4	; _ENV "GM"
+	110	[423]	GETTABLE 	24 24 -5	; "ItemDataModel"
+	111	[423]	SELF     	24 24 -6	; "GetChainId"
+	112	[423]	MOVE     	26 23
+	113	[423]	CALL     	24 3 2
+	114	[424]	GETTABUP 	25 0 -29	; _ENV "BoardModelHelper"
+	115	[424]	GETTABLE 	25 25 -30	; "CalculateLackNumForMergeRequire"
+	116	[424]	MOVE     	26 23
+	117	[424]	MOVE     	27 11
+	118	[424]	CALL     	25 3 2
+	119	[424]	EQ       	0 25 -31	; - 0
+	120	[424]	JMP      	0 1	; to 122
+	121	[424]	LOADBOOL 	25 0 1
+	122	[424]	LOADBOOL 	25 1 0
+	123	[425]	TEST     	25 0
+	124	[425]	JMP      	0 8	; to 133
+	125	[426]	EQ       	0 24 6
+	126	[426]	JMP      	0 3	; to 130
+	127	[427]	LOADBOOL 	12 1 0
+	128	[427]	JMP      	0 6	; to 135
+	129	[428]	JMP      	0 3	; to 133
+	130	[429]	EQ       	0 24 7
+	131	[429]	JMP      	0 1	; to 133
+	132	[430]	LOADBOOL 	13 1 0
+	133	[422]	TFORCALL 	19 2
+	134	[422]	TFORLOOP 	21 -26	; to 109
+	135	[420]	TFORCALL 	14 2
+	136	[420]	TFORLOOP 	16 -39	; to 98
+	137	[437]	LOADNIL  	14 0
+	138	[438]	TEST     	12 0
+	139	[438]	JMP      	0 6	; to 146
+	140	[440]	GETTABUP 	15 0 -19	; _ENV "Table"
+	141	[440]	GETTABLE 	15 15 -32	; "ListWeightSelectOne"
+	142	[440]	MOVE     	16 4
+	143	[440]	CALL     	15 2 2
+	144	[440]	MOVE     	14 15
+	145	[440]	JMP      	0 7	; to 153
+	146	[441]	TEST     	13 0
+	147	[441]	JMP      	0 5	; to 153
+	148	[443]	GETTABUP 	15 0 -19	; _ENV "Table"
+	149	[443]	GETTABLE 	15 15 -32	; "ListWeightSelectOne"
+	150	[443]	MOVE     	16 5
+	151	[443]	CALL     	15 2 2
+	152	[443]	MOVE     	14 15
+	153	[446]	TEST     	14 0
+	154	[446]	JMP      	0 20	; to 175
+	155	[447]	GETTABUP 	15 0 -33	; _ENV "GameConfig"
+	156	[447]	GETTABLE 	15 15 -34	; "IsTestMode"
+	157	[447]	CALL     	15 1 2
+	158	[447]	TEST     	15 0
+	159	[447]	JMP      	0 12	; to 172
+	160	[448]	GETTABUP 	15 0 -35	; _ENV "Log"
+	161	[448]	GETTABLE 	15 15 -36	; "Info"
+	162	[448]	LOADK    	16 -37	; "[\230\175\141\228\189\147\230\163\139\229\173\144\229\138\169\229\138\155]\232\167\166\229\143\145\230\153\186\232\131\189\229\150\183\229\143\145 "
+	163	[448]	TEST     	12 0
+	164	[448]	JMP      	0 3	; to 168
+	165	[448]	LOADK    	17 -38	; "\229\137\175\229\144\136\230\136\144\231\186\191 "
+	166	[448]	TEST     	17 1
+	167	[448]	JMP      	0 1	; to 169
+	168	[448]	LOADK    	17 -39	; "\228\184\187\229\144\136\230\136\144\231\186\191 "
+	169	[448]	GETTABLE 	18 14 -10	; "Code"
+	170	[448]	CONCAT   	16 16 18
+	171	[448]	CALL     	15 2 1
+	172	[451]	GETTABLE 	15 14 -10	; "Code"
+	173	[451]	RETURN   	15 2
+	174	[451]	JMP      	0 2	; to 177
+	175	[453]	LOADNIL  	15 0
+	176	[453]	RETURN   	15 2
+	177	[455]	RETURN   	0 1
+constants (39) for 0000020A533A7230:
+	1	"GetComponent"
+	2	"ItemSpread"
+	3	"GetCodeWeightPairs"
+	4	"GM"
+	5	"ItemDataModel"
+	6	"GetChainId"
+	7	"GetType"
+	8	"pairs"
+	9	"GetModelConfig"
+	10	"Code"
+	11	nil
+	12	"ItemSubChain"
+	13	"table"
+	14	"insert"
+	15	"MainBoardModel"
+	16	"GetOrderCodeLackCountMap"
+	17	"RandomGenerateCodeHelper"
+	18	"GetSpliteCodeWeightMapSubAndMain"
+	19	"Table"
+	20	"IsEmpty"
+	21	"DeepCopy"
+	22	"GetCodeCountMap"
+	23	"GetOrders"
+	24	"GetState"
+	25	"OrderState"
+	26	"Finished"
+	27	"ipairs"
+	28	"GetRequirements"
+	29	"BoardModelHelper"
+	30	"CalculateLackNumForMergeRequire"
+	31	0
+	32	"ListWeightSelectOne"
+	33	"GameConfig"
+	34	"IsTestMode"
+	35	"Log"
+	36	"Info"
+	37	"[\230\175\141\228\189\147\230\163\139\229\173\144\229\138\169\229\138\155]\232\167\166\229\143\145\230\153\186\232\131\189\229\150\183\229\143\145 "
+	38	"\229\137\175\229\144\136\230\136\144\231\186\191 "
+	39	"\228\184\187\229\144\136\230\136\144\231\186\191 "
+locals (33) for 0000020A533A7230:
+	0	sourceItemModel	1	178
+	1	itemSpread	4	178
+	2	codeWeightPairs	6	178
+	3	chainId	12	178
+	4	subChainCodeWeightPairs	13	178
+	5	mainChainCodeWeightPairs	14	178
+	6	subChainId	15	178
+	7	mainChainId	15	178
+	8	(for generator)	18	51
+	9	(for state)	18	51
+	10	(for control)	18	51
+	11	_	19	49
+	12	pair	19	49
+	13	spreadChainId	32	49
+	14	lackCountMap	59	178
+	15	lackCountMapSub	65	178
+	16	lackCountMapgMain	65	178
+	17	codeCountMap	89	178
+	18	listLackSubItem	90	178
+	19	listLackMainItem	91	178
+	20	(for generator)	97	137
+	21	(for state)	97	137
+	22	(for control)	97	137
+	23	_	98	135
+	24	order	98	135
+	25	(for generator)	108	135
+	26	(for state)	108	135
+	27	(for control)	108	135
+	28	_	109	133
+	29	requirement	109	133
+	30	chainId	114	133
+	31	bLack	123	133
+	32	item	138	178
+upvalues (1) for 0000020A533A7230:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:459,845> (935 instructions at 0000020A533A8A40)
+2 params, 36 slots, 1 upvalue, 121 locals, 121 constants, 6 functions
+	1	[460]	TEST     	0 1
+	2	[460]	JMP      	0 1	; to 4
+	3	[460]	LOADK    	0 -1	; -1
+	4	[461]	LOADK    	2 -2	; ""
+	5	[462]	GETTABUP 	3 0 -3	; _ENV "GM"
+	6	[462]	GETTABLE 	3 3 -4	; "MainBoardModel"
+	7	[462]	SELF     	3 3 -5	; "GetOrders"
+	8	[462]	CALL     	3 2 2
+	9	[463]	GETTABUP 	4 0 -6	; _ENV "Table"
+	10	[463]	GETTABLE 	4 4 -7	; "DeepCopy"
+	11	[463]	GETTABUP 	5 0 -3	; _ENV "GM"
+	12	[463]	GETTABLE 	5 5 -4	; "MainBoardModel"
+	13	[463]	SELF     	5 5 -8	; "GetCodeCountMap"
+	14	[463]	LOADBOOL 	7 1 0
+	15	[463]	LOADBOOL 	8 0 0
+	16	[463]	LOADBOOL 	9 1 0
+	17	[463]	CALL     	5 5 0
+	18	[463]	CALL     	4 0 2
+	19	[465]	NEWTABLE 	5 0 0
+	20	[466]	GETTABUP 	6 0 -9	; _ENV "pairs"
+	21	[466]	MOVE     	7 3
+	22	[466]	CALL     	6 2 4
+	23	[466]	JMP      	0 21	; to 45
+	24	[467]	SELF     	11 10 -10	; "GetInnerType"
+	25	[467]	CALL     	11 2 2
+	26	[467]	GETTABUP 	12 0 -11	; _ENV "MainOrderType"
+	27	[467]	GETTABLE 	12 12 -12	; "Special"
+	28	[467]	EQ       	1 11 12
+	29	[467]	JMP      	0 15	; to 45
+	30	[468]	SELF     	11 10 -13	; "GetRequirements"
+	31	[468]	CALL     	11 2 2
+	32	[469]	GETTABUP 	12 0 -9	; _ENV "pairs"
+	33	[469]	MOVE     	13 11
+	34	[469]	CALL     	12 2 4
+	35	[469]	JMP      	0 7	; to 43
+	36	[470]	GETTABUP 	17 0 -14	; _ENV "table"
+	37	[470]	GETTABLE 	17 17 -15	; "insert"
+	38	[470]	MOVE     	18 5
+	39	[470]	NEWTABLE 	19 0 2
+	40	[470]	SETTABLE 	19 -16 9	; "orderid" -
+	41	[470]	SETTABLE 	19 -17 16	; "code" -
+	42	[470]	CALL     	17 3 1
+	43	[469]	TFORCALL 	12 2
+	44	[469]	TFORLOOP 	14 -9	; to 36
+	45	[466]	TFORCALL 	6 2
+	46	[466]	TFORLOOP 	8 -23	; to 24
+	47	[476]	GETTABUP 	6 0 -14	; _ENV "table"
+	48	[476]	GETTABLE 	6 6 -18	; "sort"
+	49	[476]	MOVE     	7 5
+	50	[484]	CLOSURE  	8 0	; 0000020A533A83C0
+	51	[476]	CALL     	6 3 1
+	52	[486]	NEWTABLE 	6 0 0
+	53	[489]	GETTABUP 	7 0 -19	; _ENV "ipairs"
+	54	[489]	MOVE     	8 5
+	55	[489]	CALL     	7 2 4
+	56	[489]	JMP      	0 22	; to 79
+	57	[490]	GETTABUP 	12 0 -6	; _ENV "Table"
+	58	[490]	GETTABLE 	12 12 -7	; "DeepCopy"
+	59	[490]	MOVE     	13 4
+	60	[490]	CALL     	12 2 2
+	61	[491]	GETTABUP 	13 0 -20	; _ENV "BoardModelHelper"
+	62	[491]	GETTABLE 	13 13 -21	; "CalculateLackNumForMergeRequire"
+	63	[491]	GETTABLE 	14 11 -22	; "code"
+	64	[491]	MOVE     	15 12
+	65	[491]	CALL     	13 3 2
+	66	[491]	EQ       	0 13 -23	; - 0
+	67	[491]	JMP      	0 1	; to 69
+	68	[491]	LOADBOOL 	13 0 1
+	69	[491]	LOADBOOL 	13 1 0
+	70	[492]	TEST     	13 0
+	71	[492]	JMP      	0 6	; to 78
+	72	[493]	GETTABUP 	14 0 -14	; _ENV "table"
+	73	[493]	GETTABLE 	14 14 -15	; "insert"
+	74	[493]	MOVE     	15 6
+	75	[493]	MOVE     	16 11
+	76	[493]	CALL     	14 3 1
+	77	[493]	JMP      	0 1	; to 79
+	78	[495]	MOVE     	4 12
+	79	[489]	TFORCALL 	7 2
+	80	[489]	TFORLOOP 	9 -24	; to 57
+	81	[500]	GETTABUP 	7 0 -6	; _ENV "Table"
+	82	[500]	GETTABLE 	7 7 -7	; "DeepCopy"
+	83	[500]	GETTABUP 	8 0 -24	; _ENV "GM"
+	84	[500]	GETTABLE 	8 8 -4	; "MainBoardModel"
+	85	[500]	SELF     	8 8 -8	; "GetCodeCountMap"
+	86	[500]	LOADBOOL 	10 1 0
+	87	[500]	LOADBOOL 	11 0 0
+	88	[500]	LOADBOOL 	12 0 0
+	89	[500]	CALL     	8 5 0
+	90	[500]	CALL     	7 0 2
+	91	[501]	GETTABUP 	8 0 -9	; _ENV "pairs"
+	92	[501]	MOVE     	9 7
+	93	[501]	CALL     	8 2 4
+	94	[501]	JMP      	0 6	; to 101
+	95	[502]	GETTABUP 	13 0 -25	; _ENV "math"
+	96	[502]	GETTABLE 	13 13 -26	; "min"
+	97	[502]	MOVE     	14 12
+	98	[502]	GETTABLE 	15 4 11
+	99	[502]	CALL     	13 3 2
+	100	[502]	SETTABLE 	7 11 13
+	101	[501]	TFORCALL 	8 2
+	102	[501]	TFORLOOP 	10 -8	; to 95
+	103	[505]	GETTABUP 	8 0 -24	; _ENV "GM"
+	104	[505]	GETTABLE 	8 8 -4	; "MainBoardModel"
+	105	[505]	SELF     	8 8 -27	; "GetOrderModel"
+	106	[505]	GETTABUP 	10 0 -28	; _ENV "OrderModelType"
+	107	[505]	GETTABLE 	10 10 -29	; "Slot"
+	108	[505]	CALL     	8 3 2
+	109	[505]	SELF     	8 8 -30	; "GetItemCodeConfigMap"
+	110	[505]	CALL     	8 2 2
+	111	[513]	CLOSURE  	9 1	; 0000020A533A87C0
+	112	[515]	NEWTABLE 	10 0 0
+	113	[517]	MOVE     	11 2
+	114	[517]	LOADK    	12 -31	; "\232\174\162\229\141\149\231\188\186\231\154\132\230\163\139\229\173\144\233\152\159\229\136\151\229\140\185\233\133\141\230\163\139\231\155\152\228\184\138\230\163\139\229\173\144\239\188\154\n"
+	115	[517]	CONCAT   	2 11 12
+	116	[519]	GETTABUP 	11 0 -19	; _ENV "ipairs"
+	117	[519]	MOVE     	12 6
+	118	[519]	CALL     	11 2 4
+	119	[519]	JMP      	0 77	; to 197
+	120	[520]	GETTABUP 	16 0 -3	; _ENV "GM"
+	121	[520]	GETTABLE 	16 16 -32	; "ItemDataModel"
+	122	[520]	SELF     	16 16 -33	; "GetChainLevel"
+	123	[520]	GETTABLE 	18 15 -22	; "code"
+	124	[520]	CALL     	16 3 2
+	125	[521]	GETTABUP 	17 0 -3	; _ENV "GM"
+	126	[521]	GETTABLE 	17 17 -32	; "ItemDataModel"
+	127	[521]	SELF     	17 17 -34	; "GetChainId"
+	128	[521]	GETTABLE 	19 15 -22	; "code"
+	129	[521]	CALL     	17 3 2
+	130	[524]	MOVE     	18 9
+	131	[524]	GETTABLE 	19 15 -22	; "code"
+	132	[524]	CALL     	18 2 2
+	133	[524]	SETTABLE 	15 -35 18	; "needDiffScore" -
+	134	[526]	MOVE     	18 16
+	135	[526]	LOADK    	19 -36	; 1
+	136	[526]	LOADK    	20 -1	; -1
+	137	[526]	FORPREP  	18 25	; to 163
+	138	[527]	GETTABUP 	22 0 -3	; _ENV "GM"
+	139	[527]	GETTABLE 	22 22 -32	; "ItemDataModel"
+	140	[527]	SELF     	22 22 -37	; "GetTypeByChainAndLevel"
+	141	[527]	MOVE     	24 17
+	142	[527]	MOVE     	25 21
+	143	[527]	CALL     	22 4 2
+	144	[528]	GETTABLE 	23 7 22
+	145	[528]	EQ       	1 23 -38	; - nil
+	146	[528]	JMP      	0 16	; to 163
+	147	[528]	GETTABLE 	23 7 22
+	148	[528]	LT       	0 -23 23	; 0 -
+	149	[528]	JMP      	0 13	; to 163
+	150	[529]	GETTABLE 	23 7 22
+	151	[529]	SUB      	23 23 -36	; - 1
+	152	[529]	SETTABLE 	7 22 23
+	153	[530]	SETTABLE 	15 -39 22	; "pairItemType" -
+	154	[531]	MOVE     	23 9
+	155	[531]	GETTABLE 	24 15 -22	; "code"
+	156	[531]	CALL     	23 2 2
+	157	[531]	MOVE     	24 9
+	158	[531]	MOVE     	25 22
+	159	[531]	CALL     	24 2 2
+	160	[531]	SUB      	23 23 24
+	161	[531]	SETTABLE 	15 -35 23	; "needDiffScore" -
+	162	[531]	JMP      	0 1	; to 164
+	163	[526]	FORLOOP  	18 -26	; to 138
+	164	[536]	GETTABLE 	18 15 -40	; "orderid"
+	165	[536]	GETTABLE 	19 15 -40	; "orderid"
+	166	[536]	GETTABLE 	19 10 19
+	167	[536]	TEST     	19 1
+	168	[536]	JMP      	0 1	; to 170
+	169	[536]	LOADK    	19 -23	; 0
+	170	[536]	GETTABLE 	20 15 -35	; "needDiffScore"
+	171	[536]	ADD      	19 19 20
+	172	[536]	SETTABLE 	10 18 19
+	173	[538]	GETTABLE 	18 15 -39	; "pairItemType"
+	174	[538]	EQ       	1 18 -38	; - nil
+	175	[538]	JMP      	0 12	; to 188
+	176	[539]	MOVE     	18 2
+	177	[539]	LOADK    	19 -41	; "\232\174\162\229\141\149"
+	178	[539]	GETTABLE 	20 15 -40	; "orderid"
+	179	[539]	LOADK    	21 -42	; "\231\188\186\231\154\132\230\163\139\229\173\144\239\188\154"
+	180	[539]	GETTABLE 	22 15 -22	; "code"
+	181	[539]	LOADK    	23 -43	; "\239\188\140\229\140\185\233\133\141\228\184\138"
+	182	[539]	GETTABLE 	24 15 -39	; "pairItemType"
+	183	[539]	LOADK    	25 -44	; "\239\188\140\229\137\169\228\189\153\229\136\134\230\149\176\228\184\186"
+	184	[539]	GETTABLE 	26 15 -35	; "needDiffScore"
+	185	[539]	LOADK    	27 -45	; "\n"
+	186	[539]	CONCAT   	2 18 27
+	187	[539]	JMP      	0 9	; to 197
+	188	[541]	MOVE     	18 2
+	189	[541]	LOADK    	19 -41	; "\232\174\162\229\141\149"
+	190	[541]	GETTABLE 	20 15 -40	; "orderid"
+	191	[541]	LOADK    	21 -42	; "\231\188\186\231\154\132\230\163\139\229\173\144\239\188\154"
+	192	[541]	GETTABLE 	22 15 -22	; "code"
+	193	[541]	LOADK    	23 -46	; "\239\188\140\230\156\170\229\140\185\233\133\141\228\184\138\230\163\139\229\173\144\239\188\140\229\137\169\228\189\153\229\136\134\230\149\176\228\184\186"
+	194	[541]	GETTABLE 	24 15 -35	; "needDiffScore"
+	195	[541]	LOADK    	25 -45	; "\n"
+	196	[541]	CONCAT   	2 18 25
+	197	[519]	TFORCALL 	11 2
+	198	[519]	TFORLOOP 	13 -79	; to 120
+	199	[545]	MOVE     	11 2
+	200	[545]	LOADK    	12 -47	; "\n\229\144\132\232\174\162\229\141\149\230\128\187\229\137\169\228\189\153\229\136\134\230\149\176\239\188\154\n"
+	201	[545]	CONCAT   	2 11 12
+	202	[548]	GETTABUP 	11 0 -14	; _ENV "table"
+	203	[548]	GETTABLE 	11 11 -18	; "sort"
+	204	[548]	MOVE     	12 6
+	205	[556]	CLOSURE  	13 2	; 0000020A533A8940
+	206	[548]	CALL     	11 3 1
+	207	[558]	GETTABUP 	11 0 -9	; _ENV "pairs"
+	208	[558]	MOVE     	12 10
+	209	[558]	CALL     	11 2 4
+	210	[558]	JMP      	0 7	; to 218
+	211	[559]	MOVE     	16 2
+	212	[559]	LOADK    	17 -41	; "\232\174\162\229\141\149"
+	213	[559]	MOVE     	18 14
+	214	[559]	LOADK    	19 -48	; "\239\188\154"
+	215	[559]	MOVE     	20 15
+	216	[559]	LOADK    	21 -45	; "\n"
+	217	[559]	CONCAT   	2 16 21
+	218	[558]	TFORCALL 	11 2
+	219	[558]	TFORLOOP 	13 -9	; to 211
+	220	[563]	LOADK    	11 -49	; 8
+	221	[564]	NEWTABLE 	12 0 0
+	222	[565]	ADD      	1 1 11
+	223	[566]	MOVE     	13 2
+	224	[566]	LOADK    	14 -50	; "\n\229\164\167\231\130\174\229\165\150\229\138\177\229\136\134\230\149\176\239\188\154"
+	225	[566]	MOVE     	15 1
+	226	[566]	LOADK    	16 -51	; "\239\188\136\229\138\160\228\184\138\228\186\134\233\162\157\229\164\150\231\154\132"
+	227	[566]	MOVE     	17 11
+	228	[566]	LOADK    	18 -52	; "\229\136\134\239\188\137\n"
+	229	[566]	CONCAT   	2 13 18
+	230	[569]	NEWTABLE 	13 0 0
+	231	[581]	CLOSURE  	14 3	; 0000020A533A7DC0
+	232	[583]	MOVE     	15 2
+	233	[583]	LOADK    	16 -53	; "\n\229\164\167\231\130\174\229\165\150\229\138\177\230\163\139\229\173\144\231\172\172\228\184\128\232\189\174\231\173\155\233\128\137\239\188\154\n"
+	234	[583]	CONCAT   	2 15 16
+	235	[586]	GETTABUP 	15 0 -19	; _ENV "ipairs"
+	236	[586]	MOVE     	16 6
+	237	[586]	CALL     	15 2 4
+	238	[586]	JMP      	0 330	; to 569
+	239	[587]	GETTABLE 	20 19 -39	; "pairItemType"
+	240	[587]	EQ       	1 20 -38	; - nil
+	241	[587]	JMP      	0 229	; to 471
+	242	[588]	LOADNIL  	20 0
+	243	[589]	GETTABLE 	21 19 -54	; "needDiffScore"
+	244	[589]	LE       	0 21 1
+	245	[589]	JMP      	0 2	; to 248
+	246	[590]	GETTABLE 	20 19 -55	; "code"
+	247	[590]	JMP      	0 42	; to 290
+	248	[593]	GETTABUP 	21 0 -56	; _ENV "GM"
+	249	[593]	GETTABLE 	21 21 -57	; "ItemDataModel"
+	250	[593]	SELF     	21 21 -58	; "GetChainLevel"
+	251	[593]	GETTABLE 	23 19 -55	; "code"
+	252	[593]	CALL     	21 3 2
+	253	[594]	GETTABUP 	22 0 -56	; _ENV "GM"
+	254	[594]	GETTABLE 	22 22 -57	; "ItemDataModel"
+	255	[594]	SELF     	22 22 -58	; "GetChainLevel"
+	256	[594]	GETTABLE 	24 19 -39	; "pairItemType"
+	257	[594]	CALL     	22 3 2
+	258	[595]	GETTABUP 	23 0 -56	; _ENV "GM"
+	259	[595]	GETTABLE 	23 23 -57	; "ItemDataModel"
+	260	[595]	SELF     	23 23 -59	; "GetChainId"
+	261	[595]	GETTABLE 	25 19 -55	; "code"
+	262	[595]	CALL     	23 3 2
+	263	[596]	MOVE     	24 9
+	264	[596]	GETTABLE 	25 19 -39	; "pairItemType"
+	265	[596]	CALL     	24 2 2
+	266	[597]	SUB      	25 21 -60	; - 1
+	267	[597]	ADD      	26 22 -60	; - 1
+	268	[597]	LOADK    	27 -61	; -1
+	269	[597]	FORPREP  	25 19	; to 289
+	270	[598]	GETTABUP 	29 0 -56	; _ENV "GM"
+	271	[598]	GETTABLE 	29 29 -57	; "ItemDataModel"
+	272	[598]	SELF     	29 29 -62	; "GetTypeByChainAndLevel"
+	273	[598]	MOVE     	31 23
+	274	[598]	MOVE     	32 28
+	275	[598]	CALL     	29 4 2
+	276	[599]	MOVE     	30 9
+	277	[599]	MOVE     	31 29
+	278	[599]	CALL     	30 2 2
+	279	[599]	SUB      	30 30 24
+	280	[599]	LE       	0 30 1
+	281	[599]	JMP      	0 7	; to 289
+	282	[600]	MOVE     	20 29
+	283	[601]	MOVE     	30 9
+	284	[601]	MOVE     	31 29
+	285	[601]	CALL     	30 2 2
+	286	[601]	SUB      	30 30 24
+	287	[601]	SETTABLE 	19 -54 30	; "needDiffScore" -
+	288	[601]	JMP      	0 1	; to 290
+	289	[597]	FORLOOP  	25 -20	; to 270
+	290	[607]	EQ       	0 20 -38	; - nil
+	291	[607]	JMP      	0 6	; to 298
+	292	[609]	GETTABUP 	21 0 -14	; _ENV "table"
+	293	[609]	GETTABLE 	21 21 -15	; "insert"
+	294	[609]	MOVE     	22 13
+	295	[609]	MOVE     	23 19
+	296	[609]	CALL     	21 3 1
+	297	[609]	JMP      	0 268	; to 566
+	298	[614]	CLOSURE  	21 4	; 0000020A533A80C0
+	299	[615]	GETTABUP 	22 0 -56	; _ENV "GM"
+	300	[615]	GETTABLE 	22 22 -4	; "MainBoardModel"
+	301	[615]	SELF     	22 22 -63	; "FilterItems"
+	302	[615]	MOVE     	24 21
+	303	[615]	CALL     	22 3 2
+	304	[616]	GETTABUP 	23 0 -64	; _ENV "Log"
+	305	[616]	GETTABLE 	23 23 -65	; "Assert"
+	306	[616]	LEN      	24 22
+	307	[616]	LT       	1 -66 24	; 0 -
+	308	[616]	JMP      	0 1	; to 310
+	309	[616]	LOADBOOL 	24 0 1
+	310	[616]	LOADBOOL 	24 1 0
+	311	[616]	LOADK    	25 -67	; "\229\140\185\233\133\141\229\136\176\229\143\175\228\187\165\229\141\135\231\186\167\231\154\132\230\163\139\229\173\144\239\188\140\229\141\180\229\156\168\230\163\139\231\155\152\228\184\138\230\137\190\228\184\141\229\136\176\233\130\163\228\184\170\230\163\139\229\173\144\239\188\154"
+	312	[616]	GETTABLE 	26 19 -68	; "pairItemType"
+	313	[616]	CONCAT   	25 25 26
+	314	[616]	CALL     	23 3 1
+	315	[617]	LOADK    	23 -60	; 1
+	316	[618]	LOADK    	24 -69	; 2
+	317	[618]	LEN      	25 22
+	318	[618]	LOADK    	26 -60	; 1
+	319	[618]	FORPREP  	24 69	; to 389
+	320	[619]	GETTABLE 	28 22 27
+	321	[619]	SELF     	28 28 -70	; "GetPosition"
+	322	[619]	CALL     	28 2 2
+	323	[619]	SELF     	28 28 -71	; "GetX"
+	324	[619]	CALL     	28 2 2
+	325	[619]	SUB      	28 -72 28	; 7 -
+	326	[620]	GETTABLE 	29 22 27
+	327	[620]	SELF     	29 29 -70	; "GetPosition"
+	328	[620]	CALL     	29 2 2
+	329	[620]	SELF     	29 29 -73	; "GetY"
+	330	[620]	CALL     	29 2 2
+	331	[620]	SUB      	29 29 -60	; - 1
+	332	[621]	GETTABLE 	30 22 23
+	333	[621]	SELF     	30 30 -70	; "GetPosition"
+	334	[621]	CALL     	30 2 2
+	335	[621]	SELF     	30 30 -71	; "GetX"
+	336	[621]	CALL     	30 2 2
+	337	[621]	SUB      	30 -72 30	; 7 -
+	338	[622]	GETTABLE 	31 22 23
+	339	[622]	SELF     	31 31 -70	; "GetPosition"
+	340	[622]	CALL     	31 2 2
+	341	[622]	SELF     	31 31 -73	; "GetY"
+	342	[622]	CALL     	31 2 2
+	343	[622]	SUB      	31 31 -60	; - 1
+	344	[624]	GETTABUP 	32 0 -25	; _ENV "math"
+	345	[624]	GETTABLE 	32 32 -74	; "max"
+	346	[624]	MOVE     	33 28
+	347	[624]	MOVE     	34 29
+	348	[624]	CALL     	32 3 2
+	349	[624]	GETTABUP 	33 0 -25	; _ENV "math"
+	350	[624]	GETTABLE 	33 33 -74	; "max"
+	351	[624]	MOVE     	34 30
+	352	[624]	MOVE     	35 31
+	353	[624]	CALL     	33 3 2
+	354	[624]	LT       	0 32 33
+	355	[624]	JMP      	0 1	; to 357
+	356	[625]	MOVE     	23 27
+	357	[628]	GETTABUP 	32 0 -25	; _ENV "math"
+	358	[628]	GETTABLE 	32 32 -74	; "max"
+	359	[628]	MOVE     	33 28
+	360	[628]	MOVE     	34 29
+	361	[628]	CALL     	32 3 2
+	362	[628]	GETTABUP 	33 0 -25	; _ENV "math"
+	363	[628]	GETTABLE 	33 33 -74	; "max"
+	364	[628]	MOVE     	34 30
+	365	[628]	MOVE     	35 31
+	366	[628]	CALL     	33 3 2
+	367	[628]	EQ       	0 32 33
+	368	[628]	JMP      	0 3	; to 372
+	369	[628]	LT       	0 28 30
+	370	[628]	JMP      	0 1	; to 372
+	371	[629]	MOVE     	23 27
+	372	[632]	GETTABUP 	32 0 -25	; _ENV "math"
+	373	[632]	GETTABLE 	32 32 -74	; "max"
+	374	[632]	MOVE     	33 28
+	375	[632]	MOVE     	34 29
+	376	[632]	CALL     	32 3 2
+	377	[632]	GETTABUP 	33 0 -25	; _ENV "math"
+	378	[632]	GETTABLE 	33 33 -74	; "max"
+	379	[632]	MOVE     	34 30
+	380	[632]	MOVE     	35 31
+	381	[632]	CALL     	33 3 2
+	382	[632]	EQ       	0 32 33
+	383	[632]	JMP      	0 5	; to 389
+	384	[632]	EQ       	0 28 30
+	385	[632]	JMP      	0 3	; to 389
+	386	[632]	LT       	0 31 29
+	387	[632]	JMP      	0 1	; to 389
+	388	[633]	MOVE     	23 27
+	389	[618]	FORLOOP  	24 -70	; to 320
+	390	[637]	GETTABLE 	24 19 -54	; "needDiffScore"
+	391	[637]	SUB      	1 1 24
+	392	[638]	GETTABUP 	24 0 -56	; _ENV "GM"
+	393	[638]	GETTABLE 	24 24 -4	; "MainBoardModel"
+	394	[638]	SELF     	24 24 -75	; "ReplaceItem"
+	395	[638]	GETTABLE 	26 22 23
+	396	[638]	MOVE     	27 20
+	397	[638]	LOADBOOL 	28 1 0
+	398	[638]	CALL     	24 5 2
+	399	[639]	GETTABUP 	25 0 -56	; _ENV "GM"
+	400	[639]	GETTABLE 	25 25 -76	; "BIManager"
+	401	[639]	SELF     	25 25 -77	; "LogAcquire"
+	402	[639]	GETTABLE 	27 19 -68	; "pairItemType"
+	403	[639]	LOADK    	28 -60	; 1
+	404	[639]	GETTABUP 	29 0 -78	; _ENV "EBIType"
+	405	[639]	GETTABLE 	29 29 -79	; "OrderBoostCannonRewardItems"
+	406	[639]	LOADBOOL 	30 1 0
+	407	[639]	GETTABUP 	31 0 -80	; _ENV "EBoardType"
+	408	[639]	GETTABLE 	31 31 -81	; "Main"
+	409	[639]	MOVE     	32 20
+	410	[639]	CALL     	25 8 1
+	411	[640]	GETTABUP 	25 0 -56	; _ENV "GM"
+	412	[640]	GETTABLE 	25 25 -76	; "BIManager"
+	413	[640]	SELF     	25 25 -82	; "LogAction"
+	414	[640]	GETTABUP 	27 0 -78	; _ENV "EBIType"
+	415	[640]	GETTABLE 	27 27 -79	; "OrderBoostCannonRewardItems"
+	416	[640]	NEWTABLE 	28 0 6
+	417	[641]	SETTABLE 	28 -83 0	; "times" -
+	418	[642]	SETTABLE 	28 -84 -85	; "isUpgrade" true
+	419	[643]	GETTABLE 	29 19 -68	; "pairItemType"
+	420	[643]	SETTABLE 	28 -86 29	; "oldItem" -
+	421	[644]	SETTABLE 	28 -87 20	; "newItem" -
+	422	[645]	GETTABLE 	29 22 23
+	423	[645]	SELF     	29 29 -70	; "GetPosition"
+	424	[645]	CALL     	29 2 2
+	425	[645]	SELF     	29 29 -89	; "GetKey"
+	426	[645]	CALL     	29 2 2
+	427	[645]	SETTABLE 	28 -88 29	; "pos" -
+	428	[646]	GETTABLE 	29 19 -54	; "needDiffScore"
+	429	[646]	SETTABLE 	28 -90 29	; "costDiff" -
+	430	[640]	CALL     	25 4 1
+	431	[649]	GETTABUP 	25 0 -14	; _ENV "table"
+	432	[649]	GETTABLE 	25 25 -15	; "insert"
+	433	[649]	MOVE     	26 12
+	434	[649]	NEWTABLE 	27 0 5
+	435	[650]	GETTABLE 	28 22 23
+	436	[650]	SELF     	28 28 -70	; "GetPosition"
+	437	[650]	CALL     	28 2 2
+	438	[650]	SETTABLE 	27 -91 28	; "Pos" -
+	439	[651]	SETTABLE 	27 -92 20	; "itemType" -
+	440	[652]	GETTABLE 	28 22 23
+	441	[652]	SETTABLE 	27 -93 28	; "itemModel" -
+	442	[653]	SETTABLE 	27 -94 -85	; "isReplace" true
+	443	[654]	SETTABLE 	27 -87 24	; "newItem" -
+	444	[649]	CALL     	25 3 1
+	445	[657]	MOVE     	25 2
+	446	[657]	LOADK    	26 -95	; "\229\141\135\231\186\167\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	447	[657]	GETTABLE 	27 22 23
+	448	[657]	SELF     	27 27 -70	; "GetPosition"
+	449	[657]	CALL     	27 2 2
+	450	[657]	SELF     	27 27 -71	; "GetX"
+	451	[657]	CALL     	27 2 2
+	452	[657]	LOADK    	28 -96	; ","
+	453	[657]	GETTABLE 	29 22 23
+	454	[657]	SELF     	29 29 -70	; "GetPosition"
+	455	[657]	CALL     	29 2 2
+	456	[657]	SELF     	29 29 -73	; "GetY"
+	457	[657]	CALL     	29 2 2
+	458	[657]	LOADK    	30 -97	; ")"
+	459	[657]	CONCAT   	2 25 30
+	460	[658]	MOVE     	25 2
+	461	[658]	GETTABLE 	26 19 -68	; "pairItemType"
+	462	[658]	LOADK    	27 -98	; "\229\141\135\231\186\167\228\184\186"
+	463	[658]	MOVE     	28 20
+	464	[658]	LOADK    	29 -99	; "\239\188\140\230\182\136\232\128\151\239\188\154"
+	465	[658]	GETTABLE 	30 19 -54	; "needDiffScore"
+	466	[658]	LOADK    	31 -100	; "\239\188\140\229\137\169\228\189\153"
+	467	[658]	MOVE     	32 1
+	468	[658]	LOADK    	33 -101	; "\229\136\134\n"
+	469	[658]	CONCAT   	2 25 33
+	470	[659]	JMP      	0 95	; to 566
+	471	[661]	GETTABUP 	20 0 -56	; _ENV "GM"
+	472	[661]	GETTABLE 	20 20 -4	; "MainBoardModel"
+	473	[661]	SELF     	20 20 -102	; "IsBoardFull"
+	474	[661]	CALL     	20 2 2
+	475	[661]	TEST     	20 0
+	476	[661]	JMP      	0 6	; to 483
+	477	[663]	GETTABUP 	20 0 -14	; _ENV "table"
+	478	[663]	GETTABLE 	20 20 -15	; "insert"
+	479	[663]	MOVE     	21 13
+	480	[663]	MOVE     	22 19
+	481	[663]	CALL     	20 3 1
+	482	[663]	JMP      	0 83	; to 566
+	483	[665]	LOADNIL  	20 0
+	484	[666]	GETTABLE 	21 19 -54	; "needDiffScore"
+	485	[666]	LE       	0 21 1
+	486	[666]	JMP      	0 2	; to 489
+	487	[667]	GETTABLE 	20 19 -55	; "code"
+	488	[667]	JMP      	0 4	; to 493
+	489	[670]	MOVE     	21 14
+	490	[670]	MOVE     	22 19
+	491	[670]	CALL     	21 2 2
+	492	[670]	MOVE     	20 21
+	493	[673]	EQ       	1 20 -38	; - nil
+	494	[673]	JMP      	0 71	; to 566
+	495	[674]	GETTABUP 	21 0 -103	; _ENV "BoardPosition"
+	496	[674]	GETTABLE 	21 21 -104	; "Create"
+	497	[674]	LOADK    	22 -72	; 7
+	498	[674]	LOADK    	23 -60	; 1
+	499	[674]	CALL     	21 3 2
+	500	[675]	GETTABUP 	22 0 -56	; _ENV "GM"
+	501	[675]	GETTABLE 	22 22 -4	; "MainBoardModel"
+	502	[675]	SELF     	22 22 -105	; "FindEmptyPositionInSpreadOrder"
+	503	[675]	MOVE     	24 21
+	504	[675]	CALL     	22 3 2
+	505	[677]	GETTABLE 	23 19 -54	; "needDiffScore"
+	506	[677]	SUB      	1 1 23
+	507	[678]	GETTABUP 	23 0 -56	; _ENV "GM"
+	508	[678]	GETTABLE 	23 23 -4	; "MainBoardModel"
+	509	[678]	SELF     	23 23 -106	; "GenerateItem"
+	510	[678]	MOVE     	25 22
+	511	[678]	MOVE     	26 20
+	512	[678]	CALL     	23 4 2
+	513	[679]	GETTABUP 	24 0 -56	; _ENV "GM"
+	514	[679]	GETTABLE 	24 24 -76	; "BIManager"
+	515	[679]	SELF     	24 24 -77	; "LogAcquire"
+	516	[679]	MOVE     	26 20
+	517	[679]	LOADK    	27 -60	; 1
+	518	[679]	GETTABUP 	28 0 -78	; _ENV "EBIType"
+	519	[679]	GETTABLE 	28 28 -79	; "OrderBoostCannonRewardItems"
+	520	[679]	LOADBOOL 	29 1 0
+	521	[679]	GETTABUP 	30 0 -80	; _ENV "EBoardType"
+	522	[679]	GETTABLE 	30 30 -81	; "Main"
+	523	[679]	CALL     	24 7 1
+	524	[680]	GETTABUP 	24 0 -56	; _ENV "GM"
+	525	[680]	GETTABLE 	24 24 -76	; "BIManager"
+	526	[680]	SELF     	24 24 -82	; "LogAction"
+	527	[680]	GETTABUP 	26 0 -78	; _ENV "EBIType"
+	528	[680]	GETTABLE 	26 26 -79	; "OrderBoostCannonRewardItems"
+	529	[680]	NEWTABLE 	27 0 5
+	530	[681]	SETTABLE 	27 -83 0	; "times" -
+	531	[682]	SETTABLE 	27 -84 -107	; "isUpgrade" false
+	532	[683]	SETTABLE 	27 -87 20	; "newItem" -
+	533	[684]	SELF     	28 22 -89	; "GetKey"
+	534	[684]	CALL     	28 2 2
+	535	[684]	SETTABLE 	27 -88 28	; "pos" -
+	536	[685]	GETTABLE 	28 19 -54	; "needDiffScore"
+	537	[685]	SETTABLE 	27 -90 28	; "costDiff" -
+	538	[680]	CALL     	24 4 1
+	539	[688]	GETTABUP 	24 0 -14	; _ENV "table"
+	540	[688]	GETTABLE 	24 24 -15	; "insert"
+	541	[688]	MOVE     	25 12
+	542	[688]	NEWTABLE 	26 0 4
+	543	[689]	SETTABLE 	26 -91 22	; "Pos" -
+	544	[690]	SETTABLE 	26 -92 20	; "itemType" -
+	545	[691]	SETTABLE 	26 -93 23	; "itemModel" -
+	546	[692]	SETTABLE 	26 -94 -107	; "isReplace" false
+	547	[688]	CALL     	24 3 1
+	548	[695]	MOVE     	24 2
+	549	[695]	LOADK    	25 -108	; "\229\143\145\230\148\190\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	550	[695]	SELF     	26 22 -71	; "GetX"
+	551	[695]	CALL     	26 2 2
+	552	[695]	LOADK    	27 -96	; ","
+	553	[695]	SELF     	28 22 -73	; "GetY"
+	554	[695]	CALL     	28 2 2
+	555	[695]	LOADK    	29 -97	; ")"
+	556	[695]	CONCAT   	2 24 29
+	557	[696]	MOVE     	24 2
+	558	[696]	LOADK    	25 -109	; "\229\143\145\230\148\190\228\186\134"
+	559	[696]	MOVE     	26 20
+	560	[696]	LOADK    	27 -99	; "\239\188\140\230\182\136\232\128\151\239\188\154"
+	561	[696]	GETTABLE 	28 19 -54	; "needDiffScore"
+	562	[696]	LOADK    	29 -100	; "\239\188\140\229\137\169\228\189\153"
+	563	[696]	MOVE     	30 1
+	564	[696]	LOADK    	31 -101	; "\229\136\134\n"
+	565	[696]	CONCAT   	2 24 31
+	566	[700]	LE       	1 1 11
+	567	[700]	JMP      	19 3	; to 571
+	568	[702]	JMP      	19 0	; to 569
+	569	[586]	TFORCALL 	15 2
+	570	[586]	TFORLOOP 	17 -332	; to 239
+	571	[705]	MOVE     	15 2
+	572	[705]	LOADK    	16 -110	; "\n\231\172\172\228\186\140\232\189\174\229\164\132\231\144\134\228\185\139\229\137\141\232\183\179\232\191\135\231\154\132\230\163\139\229\173\144\n"
+	573	[705]	CONCAT   	2 15 16
+	574	[707]	NEWTABLE 	15 0 0
+	575	[709]	GETTABUP 	16 0 -19	; _ENV "ipairs"
+	576	[709]	MOVE     	17 13
+	577	[709]	CALL     	16 2 4
+	578	[709]	JMP      	0 124	; to 703
+	579	[710]	LE       	1 1 11
+	580	[710]	JMP      	0 124	; to 705
+	581	[713]	MOVE     	21 14
+	582	[713]	MOVE     	22 20
+	583	[713]	LOADBOOL 	23 1 0
+	584	[713]	CALL     	21 3 2
+	585	[714]	EQ       	1 21 -38	; - nil
+	586	[714]	JMP      	0 116	; to 703
+	587	[715]	GETTABLE 	22 20 -54	; "needDiffScore"
+	588	[715]	SUB      	1 1 22
+	589	[716]	GETTABUP 	22 0 -56	; _ENV "GM"
+	590	[716]	GETTABLE 	22 22 -4	; "MainBoardModel"
+	591	[716]	SELF     	22 22 -102	; "IsBoardFull"
+	592	[716]	CALL     	22 2 2
+	593	[716]	TEST     	22 0
+	594	[716]	JMP      	0 39	; to 634
+	595	[717]	GETTABUP 	22 0 -14	; _ENV "table"
+	596	[717]	GETTABLE 	22 22 -15	; "insert"
+	597	[717]	MOVE     	23 15
+	598	[717]	MOVE     	24 21
+	599	[717]	CALL     	22 3 1
+	600	[718]	GETTABUP 	22 0 -56	; _ENV "GM"
+	601	[718]	GETTABLE 	22 22 -76	; "BIManager"
+	602	[718]	SELF     	22 22 -77	; "LogAcquire"
+	603	[718]	MOVE     	24 21
+	604	[718]	LOADK    	25 -60	; 1
+	605	[718]	GETTABUP 	26 0 -78	; _ENV "EBIType"
+	606	[718]	GETTABLE 	26 26 -79	; "OrderBoostCannonRewardItems"
+	607	[718]	LOADBOOL 	27 1 0
+	608	[718]	GETTABUP 	28 0 -80	; _ENV "EBoardType"
+	609	[718]	GETTABLE 	28 28 -81	; "Main"
+	610	[718]	CALL     	22 7 1
+	611	[719]	GETTABUP 	22 0 -56	; _ENV "GM"
+	612	[719]	GETTABLE 	22 22 -76	; "BIManager"
+	613	[719]	SELF     	22 22 -82	; "LogAction"
+	614	[719]	GETTABUP 	24 0 -78	; _ENV "EBIType"
+	615	[719]	GETTABLE 	24 24 -79	; "OrderBoostCannonRewardItems"
+	616	[719]	NEWTABLE 	25 0 5
+	617	[720]	SETTABLE 	25 -83 0	; "times" -
+	618	[721]	SETTABLE 	25 -84 -107	; "isUpgrade" false
+	619	[722]	SETTABLE 	25 -87 21	; "newItem" -
+	620	[723]	SETTABLE 	25 -88 -111	; "pos" "cache"
+	621	[724]	GETTABLE 	26 20 -54	; "needDiffScore"
+	622	[724]	SETTABLE 	25 -90 26	; "costDiff" -
+	623	[719]	CALL     	22 4 1
+	624	[726]	MOVE     	22 2
+	625	[726]	LOADK    	23 -109	; "\229\143\145\230\148\190\228\186\134"
+	626	[726]	MOVE     	24 21
+	627	[726]	LOADK    	25 -112	; "\229\136\176\231\188\147\229\173\152\233\152\159\229\136\151\239\188\140\230\182\136\232\128\151\239\188\154"
+	628	[726]	GETTABLE 	26 20 -54	; "needDiffScore"
+	629	[726]	LOADK    	27 -100	; "\239\188\140\229\137\169\228\189\153"
+	630	[726]	MOVE     	28 1
+	631	[726]	LOADK    	29 -101	; "\229\136\134\n"
+	632	[726]	CONCAT   	2 22 29
+	633	[726]	JMP      	0 69	; to 703
+	634	[728]	GETTABUP 	22 0 -103	; _ENV "BoardPosition"
+	635	[728]	GETTABLE 	22 22 -104	; "Create"
+	636	[728]	LOADK    	23 -72	; 7
+	637	[728]	LOADK    	24 -60	; 1
+	638	[728]	CALL     	22 3 2
+	639	[729]	GETTABUP 	23 0 -56	; _ENV "GM"
+	640	[729]	GETTABLE 	23 23 -4	; "MainBoardModel"
+	641	[729]	SELF     	23 23 -105	; "FindEmptyPositionInSpreadOrder"
+	642	[729]	MOVE     	25 22
+	643	[729]	CALL     	23 3 2
+	644	[730]	GETTABUP 	24 0 -56	; _ENV "GM"
+	645	[730]	GETTABLE 	24 24 -4	; "MainBoardModel"
+	646	[730]	SELF     	24 24 -106	; "GenerateItem"
+	647	[730]	MOVE     	26 23
+	648	[730]	MOVE     	27 21
+	649	[730]	CALL     	24 4 2
+	650	[731]	GETTABUP 	25 0 -56	; _ENV "GM"
+	651	[731]	GETTABLE 	25 25 -76	; "BIManager"
+	652	[731]	SELF     	25 25 -77	; "LogAcquire"
+	653	[731]	MOVE     	27 21
+	654	[731]	LOADK    	28 -60	; 1
+	655	[731]	GETTABUP 	29 0 -78	; _ENV "EBIType"
+	656	[731]	GETTABLE 	29 29 -79	; "OrderBoostCannonRewardItems"
+	657	[731]	LOADBOOL 	30 1 0
+	658	[731]	GETTABUP 	31 0 -80	; _ENV "EBoardType"
+	659	[731]	GETTABLE 	31 31 -81	; "Main"
+	660	[731]	CALL     	25 7 1
+	661	[732]	GETTABUP 	25 0 -56	; _ENV "GM"
+	662	[732]	GETTABLE 	25 25 -76	; "BIManager"
+	663	[732]	SELF     	25 25 -82	; "LogAction"
+	664	[732]	GETTABUP 	27 0 -78	; _ENV "EBIType"
+	665	[732]	GETTABLE 	27 27 -79	; "OrderBoostCannonRewardItems"
+	666	[732]	NEWTABLE 	28 0 5
+	667	[733]	SETTABLE 	28 -83 0	; "times" -
+	668	[734]	SETTABLE 	28 -84 -107	; "isUpgrade" false
+	669	[735]	SETTABLE 	28 -87 21	; "newItem" -
+	670	[736]	SELF     	29 23 -89	; "GetKey"
+	671	[736]	CALL     	29 2 2
+	672	[736]	SETTABLE 	28 -88 29	; "pos" -
+	673	[737]	GETTABLE 	29 20 -54	; "needDiffScore"
+	674	[737]	SETTABLE 	28 -90 29	; "costDiff" -
+	675	[732]	CALL     	25 4 1
+	676	[740]	GETTABUP 	25 0 -14	; _ENV "table"
+	677	[740]	GETTABLE 	25 25 -15	; "insert"
+	678	[740]	MOVE     	26 12
+	679	[740]	NEWTABLE 	27 0 4
+	680	[741]	SETTABLE 	27 -91 23	; "Pos" -
+	681	[742]	SETTABLE 	27 -92 21	; "itemType" -
+	682	[743]	SETTABLE 	27 -93 24	; "itemModel" -
+	683	[744]	SETTABLE 	27 -94 -107	; "isReplace" false
+	684	[740]	CALL     	25 3 1
+	685	[747]	MOVE     	25 2
+	686	[747]	LOADK    	26 -108	; "\229\143\145\230\148\190\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	687	[747]	SELF     	27 23 -71	; "GetX"
+	688	[747]	CALL     	27 2 2
+	689	[747]	LOADK    	28 -96	; ","
+	690	[747]	SELF     	29 23 -73	; "GetY"
+	691	[747]	CALL     	29 2 2
+	692	[747]	LOADK    	30 -97	; ")"
+	693	[747]	CONCAT   	2 25 30
+	694	[748]	MOVE     	25 2
+	695	[748]	LOADK    	26 -109	; "\229\143\145\230\148\190\228\186\134"
+	696	[748]	MOVE     	27 21
+	697	[748]	LOADK    	28 -99	; "\239\188\140\230\182\136\232\128\151\239\188\154"
+	698	[748]	GETTABLE 	29 20 -54	; "needDiffScore"
+	699	[748]	LOADK    	30 -100	; "\239\188\140\229\137\169\228\189\153"
+	700	[748]	MOVE     	31 1
+	701	[748]	LOADK    	32 -101	; "\229\136\134\n"
+	702	[748]	CONCAT   	2 25 32
+	703	[709]	TFORCALL 	16 2
+	704	[709]	TFORLOOP 	18 -126	; to 579
+	705	[755]	MOVE     	16 2
+	706	[755]	LOADK    	17 -113	; "\n\231\172\172\228\184\137\232\189\174\233\154\143\230\156\186\229\143\145\230\148\1905\231\186\167\230\163\139\229\173\144\n"
+	707	[755]	CONCAT   	2 16 17
+	708	[758]	NEWTABLE 	16 0 0
+	709	[760]	GETTABUP 	17 0 -56	; _ENV "GM"
+	710	[760]	GETTABLE 	17 17 -4	; "MainBoardModel"
+	711	[760]	SELF     	17 17 -27	; "GetOrderModel"
+	712	[760]	GETTABUP 	19 0 -28	; _ENV "OrderModelType"
+	713	[760]	GETTABLE 	19 19 -29	; "Slot"
+	714	[760]	CALL     	17 3 2
+	715	[760]	SELF     	17 17 -30	; "GetItemCodeConfigMap"
+	716	[760]	CALL     	17 2 2
+	717	[761]	GETTABUP 	18 0 -9	; _ENV "pairs"
+	718	[761]	MOVE     	19 17
+	719	[761]	CALL     	18 2 4
+	720	[761]	JMP      	0 40	; to 761
+	721	[762]	GETTABUP 	23 0 -56	; _ENV "GM"
+	722	[762]	GETTABLE 	23 23 -57	; "ItemDataModel"
+	723	[762]	SELF     	23 23 -58	; "GetChainLevel"
+	724	[762]	MOVE     	25 21
+	725	[762]	CALL     	23 3 2
+	726	[762]	EQ       	0 23 -114	; - 5
+	727	[762]	JMP      	0 33	; to 761
+	728	[764]	LOADBOOL 	23 0 0
+	729	[765]	GETTABUP 	24 0 -56	; _ENV "GM"
+	730	[765]	GETTABLE 	24 24 -57	; "ItemDataModel"
+	731	[765]	SELF     	24 24 -59	; "GetChainId"
+	732	[765]	MOVE     	26 21
+	733	[765]	CALL     	24 3 2
+	734	[766]	GETTABUP 	25 0 -56	; _ENV "GM"
+	735	[766]	GETTABLE 	25 25 -57	; "ItemDataModel"
+	736	[766]	SELF     	25 25 -115	; "GetChainGenerators"
+	737	[766]	MOVE     	27 24
+	738	[766]	CALL     	25 3 2
+	739	[767]	GETTABUP 	26 0 -19	; _ENV "ipairs"
+	740	[767]	MOVE     	27 25
+	741	[767]	CALL     	26 2 4
+	742	[767]	JMP      	0 9	; to 752
+	743	[768]	GETTABUP 	31 0 -56	; _ENV "GM"
+	744	[768]	GETTABLE 	31 31 -57	; "ItemDataModel"
+	745	[768]	SELF     	31 31 -116	; "IsUnlocked"
+	746	[768]	MOVE     	33 30
+	747	[768]	CALL     	31 3 2
+	748	[768]	TEST     	31 0
+	749	[768]	JMP      	0 2	; to 752
+	750	[769]	LOADBOOL 	23 1 0
+	751	[769]	JMP      	0 2	; to 754
+	752	[767]	TFORCALL 	26 2
+	753	[767]	TFORLOOP 	28 -11	; to 743
+	754	[773]	TEST     	23 0
+	755	[773]	JMP      	0 5	; to 761
+	756	[774]	GETTABUP 	26 0 -14	; _ENV "table"
+	757	[774]	GETTABLE 	26 26 -15	; "insert"
+	758	[774]	MOVE     	27 16
+	759	[774]	MOVE     	28 21
+	760	[774]	CALL     	26 3 1
+	761	[761]	TFORCALL 	18 2
+	762	[761]	TFORLOOP 	20 -42	; to 721
+	763	[779]	LT       	0 11 1
+	764	[779]	JMP      	0 141	; to 906
+	765	[781]	NEWTABLE 	18 0 1
+	766	[781]	GETTABUP 	19 0 -6	; _ENV "Table"
+	767	[781]	GETTABLE 	19 19 -117	; "ListRandomSelectOne"
+	768	[781]	MOVE     	20 16
+	769	[781]	CALL     	19 2 2
+	770	[781]	SETTABLE 	18 -55 19	; "code" -
+	771	[783]	LOADNIL  	19 0
+	772	[784]	MOVE     	20 9
+	773	[784]	GETTABLE 	21 18 -55	; "code"
+	774	[784]	CALL     	20 2 2
+	775	[784]	LT       	0 20 1
+	776	[784]	JMP      	0 6	; to 783
+	777	[785]	GETTABLE 	19 18 -55	; "code"
+	778	[786]	MOVE     	20 9
+	779	[786]	GETTABLE 	21 18 -55	; "code"
+	780	[786]	CALL     	20 2 2
+	781	[786]	SETTABLE 	18 -54 20	; "needDiffScore" -
+	782	[786]	JMP      	0 4	; to 787
+	783	[788]	MOVE     	20 14
+	784	[788]	MOVE     	21 18
+	785	[788]	CALL     	20 2 2
+	786	[788]	MOVE     	19 20
+	787	[791]	EQ       	1 19 -38	; - nil
+	788	[791]	JMP      	0 -26	; to 763
+	789	[792]	GETTABLE 	20 18 -54	; "needDiffScore"
+	790	[792]	SUB      	1 1 20
+	791	[793]	GETTABUP 	20 0 -56	; _ENV "GM"
+	792	[793]	GETTABLE 	20 20 -4	; "MainBoardModel"
+	793	[793]	SELF     	20 20 -102	; "IsBoardFull"
+	794	[793]	CALL     	20 2 2
+	795	[793]	TEST     	20 0
+	796	[793]	JMP      	0 39	; to 836
+	797	[794]	GETTABUP 	20 0 -14	; _ENV "table"
+	798	[794]	GETTABLE 	20 20 -15	; "insert"
+	799	[794]	MOVE     	21 15
+	800	[794]	MOVE     	22 19
+	801	[794]	CALL     	20 3 1
+	802	[795]	GETTABUP 	20 0 -56	; _ENV "GM"
+	803	[795]	GETTABLE 	20 20 -76	; "BIManager"
+	804	[795]	SELF     	20 20 -77	; "LogAcquire"
+	805	[795]	MOVE     	22 19
+	806	[795]	LOADK    	23 -60	; 1
+	807	[795]	GETTABUP 	24 0 -78	; _ENV "EBIType"
+	808	[795]	GETTABLE 	24 24 -79	; "OrderBoostCannonRewardItems"
+	809	[795]	LOADBOOL 	25 1 0
+	810	[795]	GETTABUP 	26 0 -80	; _ENV "EBoardType"
+	811	[795]	GETTABLE 	26 26 -81	; "Main"
+	812	[795]	CALL     	20 7 1
+	813	[796]	GETTABUP 	20 0 -56	; _ENV "GM"
+	814	[796]	GETTABLE 	20 20 -76	; "BIManager"
+	815	[796]	SELF     	20 20 -82	; "LogAction"
+	816	[796]	GETTABUP 	22 0 -78	; _ENV "EBIType"
+	817	[796]	GETTABLE 	22 22 -79	; "OrderBoostCannonRewardItems"
+	818	[796]	NEWTABLE 	23 0 5
+	819	[797]	SETTABLE 	23 -83 0	; "times" -
+	820	[798]	SETTABLE 	23 -84 -107	; "isUpgrade" false
+	821	[799]	SETTABLE 	23 -87 19	; "newItem" -
+	822	[800]	SETTABLE 	23 -88 -111	; "pos" "cache"
+	823	[801]	GETTABLE 	24 18 -54	; "needDiffScore"
+	824	[801]	SETTABLE 	23 -90 24	; "costDiff" -
+	825	[796]	CALL     	20 4 1
+	826	[804]	MOVE     	20 2
+	827	[804]	LOADK    	21 -109	; "\229\143\145\230\148\190\228\186\134"
+	828	[804]	MOVE     	22 19
+	829	[804]	LOADK    	23 -112	; "\229\136\176\231\188\147\229\173\152\233\152\159\229\136\151\239\188\140\230\182\136\232\128\151\239\188\154"
+	830	[804]	GETTABLE 	24 18 -54	; "needDiffScore"
+	831	[804]	LOADK    	25 -100	; "\239\188\140\229\137\169\228\189\153"
+	832	[804]	MOVE     	26 1
+	833	[804]	LOADK    	27 -101	; "\229\136\134\n"
+	834	[804]	CONCAT   	2 20 27
+	835	[804]	JMP      	0 -73	; to 763
+	836	[806]	GETTABUP 	20 0 -103	; _ENV "BoardPosition"
+	837	[806]	GETTABLE 	20 20 -104	; "Create"
+	838	[806]	LOADK    	21 -72	; 7
+	839	[806]	LOADK    	22 -60	; 1
+	840	[806]	CALL     	20 3 2
+	841	[807]	GETTABUP 	21 0 -56	; _ENV "GM"
+	842	[807]	GETTABLE 	21 21 -4	; "MainBoardModel"
+	843	[807]	SELF     	21 21 -105	; "FindEmptyPositionInSpreadOrder"
+	844	[807]	MOVE     	23 20
+	845	[807]	CALL     	21 3 2
+	846	[808]	GETTABUP 	22 0 -56	; _ENV "GM"
+	847	[808]	GETTABLE 	22 22 -4	; "MainBoardModel"
+	848	[808]	SELF     	22 22 -106	; "GenerateItem"
+	849	[808]	MOVE     	24 21
+	850	[808]	MOVE     	25 19
+	851	[808]	CALL     	22 4 2
+	852	[809]	GETTABUP 	23 0 -56	; _ENV "GM"
+	853	[809]	GETTABLE 	23 23 -76	; "BIManager"
+	854	[809]	SELF     	23 23 -77	; "LogAcquire"
+	855	[809]	MOVE     	25 19
+	856	[809]	LOADK    	26 -60	; 1
+	857	[809]	GETTABUP 	27 0 -78	; _ENV "EBIType"
+	858	[809]	GETTABLE 	27 27 -79	; "OrderBoostCannonRewardItems"
+	859	[809]	LOADBOOL 	28 1 0
+	860	[809]	GETTABUP 	29 0 -80	; _ENV "EBoardType"
+	861	[809]	GETTABLE 	29 29 -81	; "Main"
+	862	[809]	CALL     	23 7 1
+	863	[810]	GETTABUP 	23 0 -56	; _ENV "GM"
+	864	[810]	GETTABLE 	23 23 -76	; "BIManager"
+	865	[810]	SELF     	23 23 -82	; "LogAction"
+	866	[810]	GETTABUP 	25 0 -78	; _ENV "EBIType"
+	867	[810]	GETTABLE 	25 25 -79	; "OrderBoostCannonRewardItems"
+	868	[810]	NEWTABLE 	26 0 5
+	869	[811]	SETTABLE 	26 -83 0	; "times" -
+	870	[812]	SETTABLE 	26 -84 -107	; "isUpgrade" false
+	871	[813]	SETTABLE 	26 -87 19	; "newItem" -
+	872	[814]	SELF     	27 21 -89	; "GetKey"
+	873	[814]	CALL     	27 2 2
+	874	[814]	SETTABLE 	26 -88 27	; "pos" -
+	875	[815]	GETTABLE 	27 18 -54	; "needDiffScore"
+	876	[815]	SETTABLE 	26 -90 27	; "costDiff" -
+	877	[810]	CALL     	23 4 1
+	878	[818]	GETTABUP 	23 0 -14	; _ENV "table"
+	879	[818]	GETTABLE 	23 23 -15	; "insert"
+	880	[818]	MOVE     	24 12
+	881	[818]	NEWTABLE 	25 0 4
+	882	[819]	SETTABLE 	25 -91 21	; "Pos" -
+	883	[820]	SETTABLE 	25 -92 19	; "itemType" -
+	884	[821]	SETTABLE 	25 -93 22	; "itemModel" -
+	885	[822]	SETTABLE 	25 -94 -107	; "isReplace" false
+	886	[818]	CALL     	23 3 1
+	887	[825]	MOVE     	23 2
+	888	[825]	LOADK    	24 -108	; "\229\143\145\230\148\190\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	889	[825]	SELF     	25 21 -71	; "GetX"
+	890	[825]	CALL     	25 2 2
+	891	[825]	LOADK    	26 -96	; ","
+	892	[825]	SELF     	27 21 -73	; "GetY"
+	893	[825]	CALL     	27 2 2
+	894	[825]	LOADK    	28 -97	; ")"
+	895	[825]	CONCAT   	2 23 28
+	896	[826]	MOVE     	23 2
+	897	[826]	LOADK    	24 -109	; "\229\143\145\230\148\190\228\186\134"
+	898	[826]	MOVE     	25 19
+	899	[826]	LOADK    	26 -99	; "\239\188\140\230\182\136\232\128\151\239\188\154"
+	900	[826]	GETTABLE 	27 18 -54	; "needDiffScore"
+	901	[826]	LOADK    	28 -100	; "\239\188\140\229\137\169\228\189\153"
+	902	[826]	MOVE     	29 1
+	903	[826]	LOADK    	30 -101	; "\229\136\134\n"
+	904	[826]	CONCAT   	2 23 30
+	905	[828]	JMP      	0 -143	; to 763
+	906	[832]	GETTABUP 	18 0 -14	; _ENV "table"
+	907	[832]	GETTABLE 	18 18 -18	; "sort"
+	908	[832]	MOVE     	19 15
+	909	[834]	CLOSURE  	20 5	; 0000020A533A86C0
+	910	[832]	CALL     	18 3 1
+	911	[836]	GETTABUP 	18 0 -19	; _ENV "ipairs"
+	912	[836]	MOVE     	19 15
+	913	[836]	CALL     	18 2 4
+	914	[836]	JMP      	0 6	; to 921
+	915	[837]	GETTABUP 	23 0 -14	; _ENV "table"
+	916	[837]	GETTABLE 	23 23 -15	; "insert"
+	917	[837]	MOVE     	24 12
+	918	[837]	NEWTABLE 	25 0 1
+	919	[837]	SETTABLE 	25 -92 22	; "itemType" -
+	920	[837]	CALL     	23 3 1
+	921	[836]	TFORCALL 	18 2
+	922	[836]	TFORLOOP 	20 -8	; to 915
+	923	[840]	GETTABUP 	18 0 -56	; _ENV "GM"
+	924	[840]	GETTABLE 	18 18 -4	; "MainBoardModel"
+	925	[840]	SELF     	18 18 -118	; "CacheItems"
+	926	[840]	MOVE     	20 15
+	927	[840]	GETTABUP 	21 0 -119	; _ENV "CacheItemType"
+	928	[840]	GETTABLE 	21 21 -120	; "Type2"
+	929	[840]	CALL     	18 4 1
+	930	[842]	GETTABUP 	18 0 -64	; _ENV "Log"
+	931	[842]	GETTABLE 	18 18 -121	; "Info"
+	932	[842]	MOVE     	19 2
+	933	[842]	CALL     	18 2 1
+	934	[844]	RETURN   	12 2
+	935	[845]	RETURN   	0 1
+constants (121) for 0000020A533A8A40:
+	1	-1
+	2	""
+	3	"GM"
+	4	"MainBoardModel"
+	5	"GetOrders"
+	6	"Table"
+	7	"DeepCopy"
+	8	"GetCodeCountMap"
+	9	"pairs"
+	10	"GetInnerType"
+	11	"MainOrderType"
+	12	"Special"
+	13	"GetRequirements"
+	14	"table"
+	15	"insert"
+	16	"orderid"
+	17	"code"
+	18	"sort"
+	19	"ipairs"
+	20	"BoardModelHelper"
+	21	"CalculateLackNumForMergeRequire"
+	22	"code"
+	23	0
+	24	"GM"
+	25	"math"
+	26	"min"
+	27	"GetOrderModel"
+	28	"OrderModelType"
+	29	"Slot"
+	30	"GetItemCodeConfigMap"
+	31	"\232\174\162\229\141\149\231\188\186\231\154\132\230\163\139\229\173\144\233\152\159\229\136\151\229\140\185\233\133\141\230\163\139\231\155\152\228\184\138\230\163\139\229\173\144\239\188\154\n"
+	32	"ItemDataModel"
+	33	"GetChainLevel"
+	34	"GetChainId"
+	35	"needDiffScore"
+	36	1
+	37	"GetTypeByChainAndLevel"
+	38	nil
+	39	"pairItemType"
+	40	"orderid"
+	41	"\232\174\162\229\141\149"
+	42	"\231\188\186\231\154\132\230\163\139\229\173\144\239\188\154"
+	43	"\239\188\140\229\140\185\233\133\141\228\184\138"
+	44	"\239\188\140\229\137\169\228\189\153\229\136\134\230\149\176\228\184\186"
+	45	"\n"
+	46	"\239\188\140\230\156\170\229\140\185\233\133\141\228\184\138\230\163\139\229\173\144\239\188\140\229\137\169\228\189\153\229\136\134\230\149\176\228\184\186"
+	47	"\n\229\144\132\232\174\162\229\141\149\230\128\187\229\137\169\228\189\153\229\136\134\230\149\176\239\188\154\n"
+	48	"\239\188\154"
+	49	8
+	50	"\n\229\164\167\231\130\174\229\165\150\229\138\177\229\136\134\230\149\176\239\188\154"
+	51	"\239\188\136\229\138\160\228\184\138\228\186\134\233\162\157\229\164\150\231\154\132"
+	52	"\229\136\134\239\188\137\n"
+	53	"\n\229\164\167\231\130\174\229\165\150\229\138\177\230\163\139\229\173\144\231\172\172\228\184\128\232\189\174\231\173\155\233\128\137\239\188\154\n"
+	54	"needDiffScore"
+	55	"code"
+	56	"GM"
+	57	"ItemDataModel"
+	58	"GetChainLevel"
+	59	"GetChainId"
+	60	1
+	61	-1
+	62	"GetTypeByChainAndLevel"
+	63	"FilterItems"
+	64	"Log"
+	65	"Assert"
+	66	0
+	67	"\229\140\185\233\133\141\229\136\176\229\143\175\228\187\165\229\141\135\231\186\167\231\154\132\230\163\139\229\173\144\239\188\140\229\141\180\229\156\168\230\163\139\231\155\152\228\184\138\230\137\190\228\184\141\229\136\176\233\130\163\228\184\170\230\163\139\229\173\144\239\188\154"
+	68	"pairItemType"
+	69	2
+	70	"GetPosition"
+	71	"GetX"
+	72	7
+	73	"GetY"
+	74	"max"
+	75	"ReplaceItem"
+	76	"BIManager"
+	77	"LogAcquire"
+	78	"EBIType"
+	79	"OrderBoostCannonRewardItems"
+	80	"EBoardType"
+	81	"Main"
+	82	"LogAction"
+	83	"times"
+	84	"isUpgrade"
+	85	true
+	86	"oldItem"
+	87	"newItem"
+	88	"pos"
+	89	"GetKey"
+	90	"costDiff"
+	91	"Pos"
+	92	"itemType"
+	93	"itemModel"
+	94	"isReplace"
+	95	"\229\141\135\231\186\167\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	96	","
+	97	")"
+	98	"\229\141\135\231\186\167\228\184\186"
+	99	"\239\188\140\230\182\136\232\128\151\239\188\154"
+	100	"\239\188\140\229\137\169\228\189\153"
+	101	"\229\136\134\n"
+	102	"IsBoardFull"
+	103	"BoardPosition"
+	104	"Create"
+	105	"FindEmptyPositionInSpreadOrder"
+	106	"GenerateItem"
+	107	false
+	108	"\229\143\145\230\148\190\230\163\139\229\173\144\239\188\140\228\189\141\231\189\174\228\184\186("
+	109	"\229\143\145\230\148\190\228\186\134"
+	110	"\n\231\172\172\228\186\140\232\189\174\229\164\132\231\144\134\228\185\139\229\137\141\232\183\179\232\191\135\231\154\132\230\163\139\229\173\144\n"
+	111	"cache"
+	112	"\229\136\176\231\188\147\229\173\152\233\152\159\229\136\151\239\188\140\230\182\136\232\128\151\239\188\154"
+	113	"\n\231\172\172\228\184\137\232\189\174\233\154\143\230\156\186\229\143\145\230\148\1905\231\186\167\230\163\139\229\173\144\n"
+	114	5
+	115	"GetChainGenerators"
+	116	"IsUnlocked"
+	117	"ListRandomSelectOne"
+	118	"CacheItems"
+	119	"CacheItemType"
+	120	"Type2"
+	121	"Info"
+locals (121) for 0000020A533A8A40:
+	0	rewardTimes	1	936
+	1	cannonScore	1	936
+	2	infoStr	5	936
+	3	currentOrders	9	936
+	4	codeCountMap1	19	936
+	5	requiredItemList	20	936
+	6	(for generator)	23	47
+	7	(for state)	23	47
+	8	(for control)	23	47
+	9	id	24	45
+	10	order	24	45
+	11	requireItems	32	45
+	12	(for generator)	35	45
+	13	(for state)	35	45
+	14	(for control)	35	45
+	15	_	36	43
+	16	item	36	43
+	17	lackItemList	53	936
+	18	(for generator)	56	81
+	19	(for state)	56	81
+	20	(for control)	56	81
+	21	_	57	79
+	22	requiredItem	57	79
+	23	codeCountMaptemp	61	79
+	24	bLack	70	79
+	25	codeCountMap2	91	936
+	26	(for generator)	94	103
+	27	(for state)	94	103
+	28	(for control)	94	103
+	29	itemType	95	101
+	30	num	95	101
+	31	orderItemConfig	111	936
+	32	getDiff	112	936
+	33	orderNeedDiffScoreTable	113	936
+	34	(for generator)	119	199
+	35	(for state)	119	199
+	36	(for control)	119	199
+	37	_	120	197
+	38	lackItem	120	197
+	39	curLevel	125	197
+	40	chainId	130	197
+	41	(for index)	137	164
+	42	(for limit)	137	164
+	43	(for step)	137	164
+	44	level	138	163
+	45	itemType	144	163
+	46	(for generator)	210	220
+	47	(for state)	210	220
+	48	(for control)	210	220
+	49	id	211	218
+	50	score	211	218
+	51	X	221	936
+	52	FindItemsAndPos	222	936
+	53	skipItemList	231	936
+	54	findLowerItem	232	936
+	55	(for generator)	238	571
+	56	(for state)	238	571
+	57	(for control)	238	571
+	58	_	239	569
+	59	lackItem	239	569
+	60	updateToItem	243	470
+	61	needItemLevel	253	290
+	62	pairItemLevel	258	290
+	63	chainId	263	290
+	64	pairItemDiffScore	266	290
+	65	(for index)	269	290
+	66	(for limit)	269	290
+	67	(for step)	269	290
+	68	level	270	289
+	69	itemType	276	289
+	70	filter	299	470
+	71	items	304	470
+	72	tempId	316	470
+	73	(for index)	319	390
+	74	(for limit)	319	390
+	75	(for step)	319	390
+	76	i	320	389
+	77	x1	326	389
+	78	y1	332	389
+	79	x2	338	389
+	80	y2	344	389
+	81	newItem	399	470
+	82	addItem	484	566
+	83	boarNewPos	500	566
+	84	targetPos	505	566
+	85	newItem	513	566
+	86	cacheItems	575	936
+	87	(for generator)	578	705
+	88	(for state)	578	705
+	89	(for control)	578	705
+	90	_	579	703
+	91	lackItem	579	703
+	92	addItem	585	703
+	93	boarNewPos	639	703
+	94	targetPos	644	703
+	95	newItem	650	703
+	96	unlocklv5Items	709	936
+	97	orderItemsConfig	717	936
+	98	(for generator)	720	763
+	99	(for state)	720	763
+	100	(for control)	720	763
+	101	itemCode	721	761
+	102	_	721	761
+	103	isUnLockProduct	729	761
+	104	chainId	734	761
+	105	generators	739	761
+	106	(for generator)	742	754
+	107	(for state)	742	754
+	108	(for control)	742	754
+	109	_	743	752
+	110	generator	743	752
+	111	lackItem	771	905
+	112	addItem	772	905
+	113	boarNewPos	841	905
+	114	targetPos	846	905
+	115	newItem	852	905
+	116	(for generator)	914	923
+	117	(for state)	914	923
+	118	(for control)	914	923
+	119	_	915	921
+	120	itemType	915	921
+upvalues (1) for 0000020A533A8A40:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:476,484> (26 instructions at 0000020A533A83C0)
+2 params, 6 slots, 1 upvalue, 4 locals, 5 constants, 0 functions
+	1	[477]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[477]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[477]	SELF     	2 2 -3	; "GetChainLevel"
+	4	[477]	GETTABLE 	4 0 -4	; "code"
+	5	[477]	CALL     	2 3 2
+	6	[478]	GETTABUP 	3 0 -1	; _ENV "GM"
+	7	[478]	GETTABLE 	3 3 -2	; "ItemDataModel"
+	8	[478]	SELF     	3 3 -3	; "GetChainLevel"
+	9	[478]	GETTABLE 	5 1 -4	; "code"
+	10	[478]	CALL     	3 3 2
+	11	[479]	EQ       	1 2 3
+	12	[479]	JMP      	0 6	; to 19
+	13	[480]	LT       	1 2 3
+	14	[480]	JMP      	0 1	; to 16
+	15	[480]	LOADBOOL 	4 0 1
+	16	[480]	LOADBOOL 	4 1 0
+	17	[480]	RETURN   	4 2
+	18	[480]	JMP      	0 7	; to 26
+	19	[482]	GETTABLE 	4 0 -5	; "orderid"
+	20	[482]	GETTABLE 	5 1 -5	; "orderid"
+	21	[482]	LT       	1 4 5
+	22	[482]	JMP      	0 1	; to 24
+	23	[482]	LOADBOOL 	4 0 1
+	24	[482]	LOADBOOL 	4 1 0
+	25	[482]	RETURN   	4 2
+	26	[484]	RETURN   	0 1
+constants (5) for 0000020A533A83C0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainLevel"
+	4	"code"
+	5	"orderid"
+locals (4) for 0000020A533A83C0:
+	0	a	1	27
+	1	b	1	27
+	2	levela	6	27
+	3	levelb	11	27
+upvalues (1) for 0000020A533A83C0:
+	0	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:506,513> (19 instructions at 0000020A533A87C0)
+1 param, 5 slots, 2 upvalues, 2 locals, 9 constants, 0 functions
+	1	[507]	GETTABUP 	1 0 0	; orderItemConfig
+	2	[507]	EQ       	1 1 -1	; - nil
+	3	[507]	JMP      	0 4	; to 8
+	4	[508]	GETTABUP 	1 0 0	; orderItemConfig
+	5	[508]	GETTABLE 	1 1 -2	; "DiffScore"
+	6	[508]	RETURN   	1 2
+	7	[508]	JMP      	0 11	; to 19
+	8	[510]	GETTABUP 	1 1 -3	; _ENV "GM"
+	9	[510]	GETTABLE 	1 1 -4	; "ItemDataModel"
+	10	[510]	SELF     	1 1 -5	; "GetChainLevel"
+	11	[510]	MOVE     	3 0
+	12	[510]	CALL     	1 3 2
+	13	[511]	GETTABUP 	2 1 -6	; _ENV "MathUtil"
+	14	[511]	GETTABLE 	2 2 -7	; "IntPow"
+	15	[511]	LOADK    	3 -8	; 2
+	16	[511]	SUB      	4 1 -9	; - 1
+	17	[511]	TAILCALL 	2 3 0
+	18	[511]	RETURN   	2 0
+	19	[513]	RETURN   	0 1
+constants (9) for 0000020A533A87C0:
+	1	nil
+	2	"DiffScore"
+	3	"GM"
+	4	"ItemDataModel"
+	5	"GetChainLevel"
+	6	"MathUtil"
+	7	"IntPow"
+	8	2
+	9	1
+locals (2) for 0000020A533A87C0:
+	0	itemType	1	20
+	1	curLevel	13	19
+upvalues (2) for 0000020A533A87C0:
+	0	orderItemConfig	1	8
+	1	_ENV	0	0
+
+function <RandomGenerateCodeHelper.lua:548,556> (36 instructions at 0000020A533A8940)
+2 params, 4 slots, 1 upvalue, 2 locals, 2 constants, 0 functions
+	1	[549]	GETTABLE 	2 0 -1	; "orderid"
+	2	[549]	GETTABUP 	2 0 2	; orderNeedDiffScoreTable
+	3	[549]	GETTABLE 	3 1 -1	; "orderid"
+	4	[549]	GETTABUP 	3 0 3	; orderNeedDiffScoreTable
+	5	[549]	EQ       	1 2 3
+	6	[549]	JMP      	0 10	; to 17
+	7	[550]	GETTABLE 	2 0 -1	; "orderid"
+	8	[550]	GETTABUP 	2 0 2	; orderNeedDiffScoreTable
+	9	[550]	GETTABLE 	3 1 -1	; "orderid"
+	10	[550]	GETTABUP 	3 0 3	; orderNeedDiffScoreTable
+	11	[550]	LT       	1 2 3
+	12	[550]	JMP      	0 1	; to 14
+	13	[550]	LOADBOOL 	2 0 1
+	14	[550]	LOADBOOL 	2 1 0
+	15	[550]	RETURN   	2 2
+	16	[550]	JMP      	0 19	; to 36
+	17	[551]	GETTABLE 	2 0 -1	; "orderid"
+	18	[551]	GETTABLE 	3 1 -1	; "orderid"
+	19	[551]	EQ       	1 2 3
+	20	[551]	JMP      	0 8	; to 29
+	21	[552]	GETTABLE 	2 0 -1	; "orderid"
+	22	[552]	GETTABLE 	3 1 -1	; "orderid"
+	23	[552]	LT       	1 2 3
+	24	[552]	JMP      	0 1	; to 26
+	25	[552]	LOADBOOL 	2 0 1
+	26	[552]	LOADBOOL 	2 1 0
+	27	[552]	RETURN   	2 2
+	28	[552]	JMP      	0 7	; to 36
+	29	[554]	GETTABLE 	2 0 -2	; "needDiffScore"
+	30	[554]	GETTABLE 	3 1 -2	; "needDiffScore"
+	31	[554]	LT       	1 2 3
+	32	[554]	JMP      	0 1	; to 34
+	33	[554]	LOADBOOL 	2 0 1
+	34	[554]	LOADBOOL 	2 1 0
+	35	[554]	RETURN   	2 2
+	36	[556]	RETURN   	0 1
+constants (2) for 0000020A533A8940:
+	1	"orderid"
+	2	"needDiffScore"
+locals (2) for 0000020A533A8940:
+	0	a	1	37
+	1	b	1	37
+upvalues (1) for 0000020A533A8940:
+	0	orderNeedDiffScoreTable	1	10
+
+function <RandomGenerateCodeHelper.lua:571,581> (39 instructions at 0000020A533A7DC0)
+2 params, 12 slots, 3 upvalues, 9 locals, 10 constants, 0 functions
+	1	[572]	GETTABUP 	2 0 -1	; _ENV "GM"
+	2	[572]	GETTABLE 	2 2 -2	; "ItemDataModel"
+	3	[572]	SELF     	2 2 -3	; "GetChainLevel"
+	4	[572]	GETTABLE 	4 0 -4	; "code"
+	5	[572]	CALL     	2 3 2
+	6	[573]	GETTABUP 	3 0 -1	; _ENV "GM"
+	7	[573]	GETTABLE 	3 3 -2	; "ItemDataModel"
+	8	[573]	SELF     	3 3 -5	; "GetChainId"
+	9	[573]	GETTABLE 	5 0 -4	; "code"
+	10	[573]	CALL     	3 3 2
+	11	[574]	TEST     	1 0
+	12	[574]	JMP      	0 3	; to 16
+	13	[574]	LOADK    	4 -6	; 0
+	14	[574]	TEST     	4 1
+	15	[574]	JMP      	0 1	; to 17
+	16	[574]	LOADK    	4 -7	; 1
+	17	[574]	SUB      	4 2 4
+	18	[574]	LOADK    	5 -7	; 1
+	19	[574]	LOADK    	6 -8	; -1
+	20	[574]	FORPREP  	4 17	; to 38
+	21	[575]	GETTABUP 	8 0 -1	; _ENV "GM"
+	22	[575]	GETTABLE 	8 8 -2	; "ItemDataModel"
+	23	[575]	SELF     	8 8 -9	; "GetTypeByChainAndLevel"
+	24	[575]	MOVE     	10 3
+	25	[575]	MOVE     	11 7
+	26	[575]	CALL     	8 4 2
+	27	[576]	GETUPVAL 	9 1	; cannonScore
+	28	[576]	GETUPVAL 	10 2	; getDiff
+	29	[576]	MOVE     	11 8
+	30	[576]	CALL     	10 2 2
+	31	[576]	LE       	0 10 9
+	32	[576]	JMP      	0 5	; to 38
+	33	[577]	GETUPVAL 	9 2	; getDiff
+	34	[577]	MOVE     	10 8
+	35	[577]	CALL     	9 2 2
+	36	[577]	SETTABLE 	0 -10 9	; "needDiffScore" -
+	37	[578]	RETURN   	8 2
+	38	[574]	FORLOOP  	4 -18	; to 21
+	39	[581]	RETURN   	0 1
+constants (10) for 0000020A533A7DC0:
+	1	"GM"
+	2	"ItemDataModel"
+	3	"GetChainLevel"
+	4	"code"
+	5	"GetChainId"
+	6	0
+	7	1
+	8	-1
+	9	"GetTypeByChainAndLevel"
+	10	"needDiffScore"
+locals (9) for 0000020A533A7DC0:
+	0	lackItem	1	40
+	1	includeSelf	1	40
+	2	needItemLevel	6	40
+	3	chainId	11	40
+	4	(for index)	20	39
+	5	(for limit)	20	39
+	6	(for step)	20	39
+	7	level	21	38
+	8	itemType	27	38
+upvalues (3) for 0000020A533A7DC0:
+	0	_ENV	0	0
+	1	cannonScore	1	1
+	2	getDiff	1	9
+
+function <RandomGenerateCodeHelper.lua:612,614> (9 instructions at 0000020A533A80C0)
+1 param, 3 slots, 1 upvalue, 1 local, 2 constants, 0 functions
+	1	[613]	SELF     	1 0 -1	; "GetType"
+	2	[613]	CALL     	1 2 2
+	3	[613]	GETTABUP 	2 0 -2	; lackItem "pairItemType"
+	4	[613]	EQ       	1 1 2
+	5	[613]	JMP      	0 1	; to 7
+	6	[613]	LOADBOOL 	1 0 1
+	7	[613]	LOADBOOL 	1 1 0
+	8	[613]	RETURN   	1 2
+	9	[614]	RETURN   	0 1
+constants (2) for 0000020A533A80C0:
+	1	"GetType"
+	2	"pairItemType"
+locals (1) for 0000020A533A80C0:
+	0	itemModel	1	10
+upvalues (1) for 0000020A533A80C0:
+	0	lackItem	1	19
+
+function <RandomGenerateCodeHelper.lua:832,834> (12 instructions at 0000020A533A86C0)
+2 params, 5 slots, 1 upvalue, 2 locals, 0 constants, 0 functions
+	1	[833]	GETUPVAL 	2 0	; getDiff
+	2	[833]	MOVE     	3 0
+	3	[833]	CALL     	2 2 2
+	4	[833]	GETUPVAL 	3 0	; getDiff
+	5	[833]	MOVE     	4 1
+	6	[833]	CALL     	3 2 2
+	7	[833]	LT       	1 2 3
+	8	[833]	JMP      	0 1	; to 10
+	9	[833]	LOADBOOL 	2 0 1
+	10	[833]	LOADBOOL 	2 1 0
+	11	[833]	RETURN   	2 2
+	12	[834]	RETURN   	0 1
+constants (0) for 0000020A533A86C0:
+locals (2) for 0000020A533A86C0:
+	0	a	1	13
+	1	b	1	13
+upvalues (1) for 0000020A533A86C0:
+	0	getDiff	1	9

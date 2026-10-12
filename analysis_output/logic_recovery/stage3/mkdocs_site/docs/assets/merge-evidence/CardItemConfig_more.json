@@ -1,0 +1,158 @@
+[
+  {
+    "Rarity": 4,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_energy_b",
+    "Weight": 515
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_energy_m",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 1,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_energy_s",
+    "Weight": 3221
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_gem_b",
+    "Weight": 515
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_gem_m",
+    "Weight": 2061
+  },
+  {
+    "Rarity": 1,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_gem_s",
+    "Weight": 12882
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_levelup",
+    "Weight": 201
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_plane_b",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 2,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_plane_m",
+    "Weight": 2061
+  },
+  {
+    "Rarity": 1,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_plane_s",
+    "Weight": 5725
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_pot_b",
+    "Weight": 201
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_pot_m",
+    "Weight": 515
+  },
+  {
+    "Rarity": 2,
+    "UnlockLevel": 25,
+    "ItemChain": "main_card_item_pot_s",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 30,
+    "ItemChain": "main_card_item_superball",
+    "Weight": 201
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 35,
+    "ItemChain": "main_card_item_raccoon_b",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 2,
+    "UnlockLevel": 35,
+    "ItemChain": "main_card_item_raccoon_m",
+    "Weight": 2061
+  },
+  {
+    "Rarity": 1,
+    "UnlockLevel": 35,
+    "ItemChain": "main_card_item_raccoon_s",
+    "Weight": 5725
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 45,
+    "ItemChain": "main_card_item_smart_buff",
+    "Weight": 805
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 50,
+    "ItemChain": "main_card_item_raccoon_customer",
+    "Weight": 358
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 55,
+    "ItemChain": "main_card_item_cannon_b",
+    "Weight": 515
+  },
+  {
+    "Rarity": 2,
+    "UnlockLevel": 55,
+    "ItemChain": "main_card_item_cannon_s",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 60,
+    "ItemChain": "main_card_item_disco_b",
+    "Weight": 1431
+  },
+  {
+    "Rarity": 2,
+    "UnlockLevel": 60,
+    "ItemChain": "main_card_item_disco_m",
+    "Weight": 2061
+  },
+  {
+    "Rarity": 1,
+    "UnlockLevel": 60,
+    "ItemChain": "main_card_item_disco_s",
+    "Weight": 5725
+  },
+  {
+    "Rarity": 3,
+    "UnlockLevel": 70,
+    "ItemChain": "main_card_item_infi_e_s",
+    "Weight": 201
+  },
+  {
+    "Rarity": 4,
+    "UnlockLevel": 80,
+    "ItemChain": "main_card_item_infi_e_b",
+    "Weight": 50
+  }
+]
