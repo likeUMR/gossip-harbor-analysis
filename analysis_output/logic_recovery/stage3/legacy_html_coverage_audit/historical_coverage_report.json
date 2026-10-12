@@ -1,0 +1,710 @@
+{
+  "current_commit": "5862c14d910d8ee87eba351e9103899c252fbf50",
+  "commit_count": 15,
+  "current_document_files": 304,
+  "current_unique_headings": 892,
+  "historical_commits": [
+    {
+      "commit": "b5affc7c2f5a7a891bb4b4e30806d3476282b63b",
+      "subject": "checkpoint: stage3 generator docs before merge and orders",
+      "files": 83,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/boost/detail.md": [
+          "基础消耗和倍增比率"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md": [
+          "棋盘事件的具体写入顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md": [
+          "资源事件的具体监听链"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "副作用的具体字段"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/index.md": [
+          "活动、日志和 ui 副作用"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md": [
+          "cd、加速和恢复结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "次数扣除、变换和销毁顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "读取与周期重装"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/free/generate.md": [
+          "阈值队列生成"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/items/type.md": [
+          "super/free 产出类型"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/detail.md": [
+          "chestcustomitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/index.md": [
+          "chestcustomitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/detail.md": [
+          "fixed 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/index.md": [
+          "fixed"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/detail.md": [
+          "smartitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/index.md": [
+          "smartitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/auto/detail.md": [
+          "自动产出与缓存的具体条件"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md": [
+          "1. 手动点击：确定性的方形环扫描",
+          "2. 自动产出：随机空位与自动循环",
+          "3. findrandomposition 的每一次抽样",
+          "4. 满盘、缓存与最终写入"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "b08df508edd3317aae300a0fa96e4669331d9b96",
+      "subject": "checkpoint: board operation four-level logic docs",
+      "files": 83,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/boost/detail.md": [
+          "基础消耗和倍增比率"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md": [
+          "棋盘事件的具体写入顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md": [
+          "资源事件的具体监听链"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "副作用的具体字段"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/index.md": [
+          "活动、日志和 ui 副作用"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md": [
+          "cd、加速和恢复结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "次数扣除、变换和销毁顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "读取与周期重装"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/free/generate.md": [
+          "阈值队列生成"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/items/type.md": [
+          "super/free 产出类型"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/detail.md": [
+          "chestcustomitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/index.md": [
+          "chestcustomitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/detail.md": [
+          "fixed 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/index.md": [
+          "fixed"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/detail.md": [
+          "smartitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/index.md": [
+          "smartitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/auto/detail.md": [
+          "自动产出与缓存的具体条件"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md": [
+          "1. 手动点击：确定性的方形环扫描",
+          "2. 自动产出：随机空位与自动循环",
+          "3. findrandomposition 的每一次抽样",
+          "4. 满盘、缓存与最终写入"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "2801f0eb2be359609f407534764295f7d14f8b7d",
+      "subject": "checkpoint: clickable operation index pages and disposable detail",
+      "files": 114,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/boost/detail.md": [
+          "基础消耗和倍增比率"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md": [
+          "棋盘事件的具体写入顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md": [
+          "资源事件的具体监听链"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "副作用的具体字段"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/index.md": [
+          "活动、日志和 ui 副作用"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md": [
+          "cd、加速和恢复结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "次数扣除、变换和销毁顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "读取与周期重装"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/free/generate.md": [
+          "阈值队列生成"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/items/type.md": [
+          "super/free 产出类型"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/detail.md": [
+          "chestcustomitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/index.md": [
+          "chestcustomitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/detail.md": [
+          "fixed 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/index.md": [
+          "fixed"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/detail.md": [
+          "smartitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/index.md": [
+          "smartitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/detail.md": [
+          "活动改写的具体顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/index.md": [
+          "lucky、disco 与产出改写"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/boost/detail.md": [
+          "链升级和 fishnet 具体算法"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/auto/detail.md": [
+          "自动产出与缓存的具体条件"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "218ec2c81ad876f7cf697bdb4d0c5ecbde73b841",
+      "subject": "checkpoint: deepen generator output branch semantics",
+      "files": 114,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/boost/detail.md": [
+          "基础消耗和倍增比率"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md": [
+          "棋盘事件的具体写入顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md": [
+          "资源事件的具体监听链"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "副作用的具体字段"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/index.md": [
+          "活动、日志和 ui 副作用"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md": [
+          "cd、加速和恢复结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "次数扣除、变换和销毁顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "读取与周期重装"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/free/generate.md": [
+          "阈值队列生成"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/items/type.md": [
+          "super/free 产出类型"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/detail.md": [
+          "chestcustomitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/index.md": [
+          "chestcustomitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/detail.md": [
+          "fixed 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/index.md": [
+          "fixed"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/detail.md": [
+          "smartitem 的具体选择"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/index.md": [
+          "smartitem"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/detail.md": [
+          "活动改写的具体顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/index.md": [
+          "lucky、disco 与产出改写"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/boost/detail.md": [
+          "链升级和 fishnet 具体算法"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/auto/detail.md": [
+          "自动产出与缓存的具体条件"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "bfaae4080f2cab9016dc78c933249966bd0636f1",
+      "subject": "Archive Gossip Harbor analysis results and methods",
+      "files": 117,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md": [
+          "棋盘事件的具体写入顺序"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md": [
+          "资源事件的具体监听链"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "落子通知后的 generatorboost 追加产出"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "96d52f5a442f2dfe79ba4be204546a434bfc29cb",
+      "subject": "Add consolidated analysis indexes and balance outputs",
+      "files": 117,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "落子通知后的 generatorboost 追加产出"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "062dc595e869b7c66010ace9c5a0e9ede8cf0cc2",
+      "subject": "Archive latest analysis and documentation updates",
+      "files": 234,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/consume/detail.md": [
+          "缺能量后先显示什么窗口"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "generatorboost 任务进度与增益升级"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "剩余池恢复的具体例子",
+          "次数与剩余权重池怎样跨重载保留"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "buff切换何时真正清机会池",
+          "两种切换的具体例子",
+          "接口切换例子与真实升级路线的区别"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/closed/detail.md": [
+          "点击关闭母体后，界面如何响应"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/model/detail.md": [
+          "存档如何恢复当前母体"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/opening/detail.md": [
+          "点击开启中的母体后，界面如何响应"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "交付收尾"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "6a6ac82159d26905e5f2ab92b25739ab845c0009",
+      "subject": "Publish MkDocs documentation with GitHub Pages",
+      "files": 234,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/consume/detail.md": [
+          "缺能量后先显示什么窗口"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md": [
+          "generatorboost 任务进度与增益升级"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md": [
+          "剩余池恢复的具体例子",
+          "次数与剩余权重池怎样跨重载保留"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md": [
+          "buff切换何时真正清机会池",
+          "两种切换的具体例子",
+          "接口切换例子与真实升级路线的区别"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/closed/detail.md": [
+          "点击关闭母体后，界面如何响应"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/model/detail.md": [
+          "存档如何恢复当前母体"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/opening/detail.md": [
+          "点击开启中的母体后，界面如何响应"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "交付收尾"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "0d0629e92e5e3a11255f1fdfa6696272fffb7f13",
+      "subject": "Archive latest documentation updates",
+      "files": 259,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md": [
+          "特殊棋子与吞噬"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md": [
+          "订单完成、补位与同步"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md": [
+          "奖励结算"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "071dd997088175c6b583b92a565c2bed2240131a",
+      "subject": "Archive consolidated analysis and fix offline documentation layout and navigation",
+      "files": 304,
+      "missing_headings": {
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md": [
+          "三个根操作"
+        ],
+        "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md": [
+          "三类操作验收矩阵"
+        ]
+      }
+    },
+    {
+      "commit": "4ee284555b48dd1376994234c875026961845054",
+      "subject": "Integrate recovered analysis into primary documentation",
+      "files": 294,
+      "missing_headings": {}
+    },
+    {
+      "commit": "af7f66863914f878389da5a7364a290b452ea82f",
+      "subject": "Expand merge and order downstream analysis",
+      "files": 294,
+      "missing_headings": {}
+    },
+    {
+      "commit": "e55054e63844205c5874d1185117bb6bfc2e4c8b",
+      "subject": "Cover reference PDF analysis topics",
+      "files": 297,
+      "missing_headings": {}
+    },
+    {
+      "commit": "cab9509c275a7add83d0c9a33fd77cb101cb1bf3",
+      "subject": "Complete MkDocs coverage for legacy analyses",
+      "files": 303,
+      "missing_headings": {}
+    },
+    {
+      "commit": "5862c14d910d8ee87eba351e9103899c252fbf50",
+      "subject": "Audit MkDocs coverage across Git history",
+      "files": 304,
+      "missing_headings": {}
+    }
+  ],
+  "unique_missing_headings": {
+    "1. 手动点击：确定性的方形环扫描": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md"
+    ],
+    "2. 自动产出：随机空位与自动循环": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md"
+    ],
+    "3. findrandomposition 的每一次抽样": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md"
+    ],
+    "4. 满盘、缓存与最终写入": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/disposable/detail.md"
+    ],
+    "buff切换何时真正清机会池": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md"
+    ],
+    "cd、加速和恢复结算": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/cooldown/detail.md"
+    ],
+    "chestcustomitem": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/index.md"
+    ],
+    "chestcustomitem 的具体选择": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/chest/detail.md"
+    ],
+    "fixed": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/index.md"
+    ],
+    "fixed 的具体选择": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/fixed/detail.md"
+    ],
+    "generatorboost 任务进度与增益升级": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md"
+    ],
+    "lucky、disco 与产出改写": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/index.md"
+    ],
+    "smartitem": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/index.md"
+    ],
+    "smartitem 的具体选择": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/output/smart/detail.md"
+    ],
+    "super/free 产出类型": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/items/type.md"
+    ],
+    "三个根操作": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/index.md"
+    ],
+    "三类操作验收矩阵": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/verification/acceptance.md"
+    ],
+    "两种切换的具体例子": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md"
+    ],
+    "交付收尾": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md"
+    ],
+    "剩余池恢复的具体例子": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md"
+    ],
+    "副作用的具体字段": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md"
+    ],
+    "基础消耗和倍增比率": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/boost/detail.md"
+    ],
+    "奖励结算": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards.md",
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/rewards/index.md"
+    ],
+    "存档如何恢复当前母体": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/model/detail.md"
+    ],
+    "接口切换例子与真实升级路线的区别": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md"
+    ],
+    "棋盘事件的具体写入顺序": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/board/detail.md"
+    ],
+    "次数与剩余权重池怎样跨重载保留": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md"
+    ],
+    "次数扣除、变换和销毁顺序": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lifecycle/count/detail.md"
+    ],
+    "活动、日志和 ui 副作用": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/index.md"
+    ],
+    "活动改写的具体顺序": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/activity/detail.md"
+    ],
+    "点击关闭母体后，界面如何响应": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/closed/detail.md"
+    ],
+    "点击开启中的母体后，界面如何响应": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/state/opening/detail.md"
+    ],
+    "特殊棋子与吞噬": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special.md",
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/merge/special/index.md"
+    ],
+    "缺能量后先显示什么窗口": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/consume/detail.md"
+    ],
+    "自动产出与缓存的具体条件": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/position/auto/detail.md"
+    ],
+    "落子通知后的 generatorboost 追加产出": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md"
+    ],
+    "订单完成、补位与同步": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish.md",
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/orders/finish/index.md"
+    ],
+    "读取与周期重装": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/chance/load.md"
+    ],
+    "资源事件的具体监听链": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/resource/detail.md"
+    ],
+    "链升级和 fishnet 具体算法": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/overrides/boost/detail.md"
+    ],
+    "阈值队列生成": [
+      "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/lucky/free/generate.md"
+    ]
+  },
+  "reviewed_renames": {
+    "1. 手动点击：确定性的方形环扫描": "operations/generator/position/disposable/detail.md",
+    "2. 自动产出：随机空位与自动循环": "operations/generator/position/disposable/detail.md",
+    "3. findrandomposition 的每一次抽样": "operations/generator/position/disposable/detail.md",
+    "4. 满盘、缓存与最终写入": "operations/generator/position/disposable/detail.md",
+    "buff切换何时真正清机会池": "operations/generator/lucky/chance/load.md",
+    "cd、加速和恢复结算": "operations/generator/lifecycle/cooldown/detail.md",
+    "chestcustomitem": "operations/generator/output/chest/index.md",
+    "chestcustomitem 的具体选择": "operations/generator/output/chest/detail.md",
+    "fixed": "operations/generator/output/fixed/index.md",
+    "fixed 的具体选择": "operations/generator/output/fixed/detail.md",
+    "generatorboost 任务进度与增益升级": "operations/generator/events/side_effects/detail.md",
+    "lucky、disco 与产出改写": "operations/generator/overrides/activity/index.md",
+    "smartitem": "operations/generator/output/smart/index.md",
+    "smartitem 的具体选择": "operations/generator/output/smart/detail.md",
+    "super/free 产出类型": "operations/generator/lucky/items/type.md",
+    "三个根操作": "docs/index.md:四个顶层主题",
+    "三类操作验收矩阵": "docs/index.md:历史验收基线",
+    "两种切换的具体例子": "operations/generator/lucky/chance/load.md",
+    "交付收尾": "operations/orders/finish/index.md",
+    "剩余池恢复的具体例子": "operations/generator/lifecycle/count/detail.md",
+    "副作用的具体字段": "operations/generator/events/side_effects/detail.md",
+    "基础消耗和倍增比率": "operations/generator/energy/boost/detail.md",
+    "奖励结算": "operations/orders/rewards/index.md",
+    "存档如何恢复当前母体": "operations/generator/state/model/detail.md",
+    "接口切换例子与真实升级路线的区别": "operations/generator/lucky/chance/load.md",
+    "棋盘事件的具体写入顺序": "operations/generator/events/board/detail.md",
+    "次数与剩余权重池怎样跨重载保留": "operations/generator/lifecycle/count/detail.md",
+    "次数扣除、变换和销毁顺序": "operations/generator/lifecycle/count/detail.md",
+    "活动、日志和 ui 副作用": "operations/generator/events/side_effects/index.md",
+    "活动改写的具体顺序": "operations/generator/overrides/activity/detail.md",
+    "点击关闭母体后，界面如何响应": "operations/generator/state/closed/detail.md",
+    "点击开启中的母体后，界面如何响应": "operations/generator/state/opening/detail.md",
+    "特殊棋子与吞噬": "operations/merge/special/index.md",
+    "缺能量后先显示什么窗口": "operations/generator/energy/consume/detail.md",
+    "自动产出与缓存的具体条件": "operations/generator/position/auto/detail.md",
+    "落子通知后的 generatorboost 追加产出": "operations/generator/events/side_effects/detail.md",
+    "订单完成、补位与同步": "operations/orders/finish/index.md",
+    "读取与周期重装": "operations/generator/lucky/chance/load.md",
+    "资源事件的具体监听链": "operations/generator/events/resource/detail.md",
+    "链升级和 fishnet 具体算法": "operations/generator/overrides/boost/detail.md",
+    "阈值队列生成": "operations/generator/lucky/free/generate.md"
+  },
+  "unresolved_headings": {},
+  "interpretation": "A missing heading is a review candidate. It is not proof of semantic loss; the reviewer must map or explicitly retire it."
+}

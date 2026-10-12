@@ -12,6 +12,19 @@
 ## 参考 PDF 对照
 
 - [参考 PDF 覆盖核验](reference_pdf_coverage.md)：逐章节核对母体、订单、剧情/好感度、用户差异、配置分层和订单附表，明确已覆盖内容与证据缺口。
+- [Git 历史版本覆盖审计](legacy_version_coverage.md)：逐提交比较历史 MkDocs/HTML 标题和归档内容，记录页面重组、别名映射与真正需要补回的内容。
+
+## 历史验收基线
+
+历史版本的三类操作验收要求已经整合到当前四个顶层主题：
+
+| 顶层主题 | 历史验收范围 |
+| --- | --- |
+| 母体点击 | 五种 `WeightType`、Lucky 机会耗尽/重复、免费/二连/三连、能量不足、棋盘满、初始化/关闭/开启/CD/恢复、EnergyBoost、GeneratorBoost、Disco、SmartProduce、一次性/可恢复耗尽 |
+| 棋子拖拽与合成 | 移动、交换、不可移动目标、普通合成、特殊棋子、`ItemSwallow`、`Temp`、`Card`、`EnergyBubble`、`Bubble`、`Coin` 和满盘跳过 |
+| 订单提交 | 单/多/重复需求、棋盘与仓库混合、不足需求、确认窗口、奖励、Special/Branch/Lucky/Timed/Contiorder、补位、状态更新、事件和同步 |
+
+每个验收场景都应记录输入、随机序列、配置快照、状态快照、事件顺序、网络交互和 UI 结果；当前没有原版运行环境的项目仍保持 `unavailable`，不因文档重组而误标通过。
 
 ## 阅读方法
 

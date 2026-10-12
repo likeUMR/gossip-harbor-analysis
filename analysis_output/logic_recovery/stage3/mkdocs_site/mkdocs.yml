@@ -33,6 +33,7 @@ markdown_extensions:
 nav:
 - 首页: index.md
 - 参考 PDF 覆盖核验: reference_pdf_coverage.md
+- Git 历史版本覆盖审计: legacy_version_coverage.md
 - 付费项目:
   - operations/paid/index.md
   - 主棋盘终局模拟:
