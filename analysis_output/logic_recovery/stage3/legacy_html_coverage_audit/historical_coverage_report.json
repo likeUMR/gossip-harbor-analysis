@@ -1,5 +1,5 @@
 {
-  "current_commit": "5862c14d910d8ee87eba351e9103899c252fbf50",
+  "current_commit": "working-tree-at-audit",
   "commit_count": 15,
   "current_document_files": 304,
   "current_unique_headings": 892,
@@ -528,7 +528,7 @@
       "missing_headings": {}
     },
     {
-      "commit": "5862c14d910d8ee87eba351e9103899c252fbf50",
+      "commit": "5e470c9fc0bbfde22ccf3113a3d094ec036915cc",
       "subject": "Audit MkDocs coverage across Git history",
       "files": 304,
       "missing_headings": {}

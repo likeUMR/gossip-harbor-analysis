@@ -178,7 +178,7 @@ def main() -> None:
         history.append({"commit": commit, "subject": subject, "files": len(files), "missing_headings": missing})
 
     report = {
-        "current_commit": commits[-1],
+        "current_commit": "working-tree-at-audit",
         "commit_count": len(commits),
         "current_document_files": len(current),
         "current_unique_headings": len(current_headings),
@@ -193,7 +193,7 @@ def main() -> None:
         handle.write("\n")
 
     unresolved = {k: v for k, v in missing_by_heading.items() if k not in REVIEWED_RENAMES}
-    lines = ["# Git 历史版本覆盖核验", "", f"审计提交数：{len(commits)}；当前提交：`{commits[-1][:12]}`。", "", "脚本按每个 Git 提交读取 MkDocs 文档和历史 HTML，抽取 Markdown/HTML 标题并与当前标题集合比较。标题缺失只代表需要人工复核，不自动宣称语义丢失。", "", "## 结果摘要", "", f"- 当前文档文件：{len(current)}", f"- 当前唯一标题：{len(current_headings)}", f"- 历史提交：{len(commits)}", f"- 历史标题差异：{len(missing_by_heading)}", f"- 已复核的页面重组/改名：{len(missing_by_heading) - len(unresolved)}", f"- 未解决标题：{len(unresolved)}", ""]
+    lines = ["# Git 历史版本覆盖核验", "", f"审计提交数：{len(commits)}；当前文档来源：工作树。", "", "脚本按每个 Git 提交读取 MkDocs 文档和历史 HTML，抽取 Markdown/HTML 标题并与当前工作树标题集合比较。标题缺失只代表需要人工复核，不自动宣称语义丢失。", "", "## 结果摘要", "", f"- 当前文档文件：{len(current)}", f"- 当前唯一标题：{len(current_headings)}", f"- 历史提交：{len(commits)}", f"- 历史标题差异：{len(missing_by_heading)}", f"- 已复核的页面重组/改名：{len(missing_by_heading) - len(unresolved)}", f"- 未解决标题：{len(unresolved)}", ""]
     if unresolved:
         lines += ["## 未解决标题", "", "| 历史标题 | 出现于历史文件 |", "| --- | --- |"]
         for value, paths in sorted(unresolved.items()):
