@@ -32,8 +32,11 @@ markdown_extensions:
 - tables
 nav:
 - 首页: index.md
+- 参考 PDF 覆盖核验: reference_pdf_coverage.md
 - 付费项目:
   - operations/paid/index.md
+  - 用户差异与配置分层:
+    - operations/paid/segmentation/index.md
   - 常驻钻石包:
     - operations/paid/gem_pack/index.md
     - 价格档位与奖励: operations/paid/gem_pack/detail.md
@@ -340,6 +343,8 @@ nav:
         - 位置交换：具体算法与配置: operations/merge/swap/exchange/detail.md
 - 订单提交:
   - operations/orders/index.md
+  - 剧情与好感度系统:
+    - operations/orders/intimacy/index.md
   - 可交付判断:
     - operations/orders/check/index.md
     - 重复需求与计数来源: operations/orders/check/detail.md

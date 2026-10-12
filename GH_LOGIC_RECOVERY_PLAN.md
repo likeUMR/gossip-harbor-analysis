@@ -621,6 +621,12 @@ G1–G6 不因本批改变，G7 仍为 unavailable；本批不允许进入下一
 
 本批证据和开放项位于 `analysis_output/logic_recovery/stage3/merge_order_reanalysis_audit/`。正式站点页面已同步，但 G1–G6 仍为 pending，G7 仍 unavailable：动态注册、匿名原型、远端档位、真实账号选择、原生持久化和原版运行差分没有被页面数量或受控 Lua 测试替代。
 
+### 9.19 参考 PDF 全量内容覆盖核验（2026-10-12）
+
+以28页 `0929-游戏策划学习-解包分析gossip-harbor.pdf` 为独立内容分母，完成母体、订单、剧情/好感度、用户差异与配置分层、订单物品附表的逐章映射。母体和订单主流程已有更细源码与配表页面；原站实际缺失的剧情/好感度和三层配置控制模型已新增正式页面，PDF 第21-28页的订单物品表映射到现有 `OrderItemConfig` 全记录和变体页面。站点新增“参考 PDF 覆盖核验”总账，审计文件位于 `analysis_output/logic_recovery/stage3/pdf_coverage_audit/`。
+
+内容覆盖与证据闭合分别判断：PDF 中的全部章节、表格字段、示例和公式已进入正式归档或明确链接到更完整页面；真实账号 `FileReplace`、服务器活动 payload、完整 CharacterIntimacy 配置和原版运行差分仍是开放项。不得因 PDF 内容已纳入而宣称客户端全量逻辑门禁已经通过。
+
 ## 10. 证据与问题管理
 
 结论区分配置确认、代码确认、运行观察、分析推断和无法确认。这些是不同证据类型，不能用一种证据替代另一种。

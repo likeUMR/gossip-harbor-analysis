@@ -1,0 +1,18 @@
+{
+  "reference": "0929-游戏策划学习-解包分析gossip-harbor.pdf",
+  "pages": 28,
+  "sections": [
+    {"pages":"1-3","section":"母体棋子","topics":["低等级母体直售价格与商店权重","固定无放回产出池","Lucky触发后的产出概率","按编号共享CD与跳时费用"],"status":"covered-with-source-and-config-gaps","page":"operations/generator/index.md"},
+    {"pages":"4-8","section":"订单设计与普通订单","topics":["19槽位分工","Random1-5New池和共享额度","等级/难度分档","1/2/3项概率","月付费字段不改变本地普通池","订单物品完整字段"],"status":"covered","page":"operations/orders/index.md"},
+    {"pages":"8-12","section":"特殊订单","topics":["剧情任务槽6","好感度槽10","限时槽13","库存槽15","连续槽18","额外顾客槽19","Lucky槽17","教程槽11","支线槽7"],"status":"covered-with-remote-config-gaps","page":"operations/orders/index.md"},
+    {"pages":"13-14","section":"剧情与好感度","topics":["角色等级奖励","每日回礼权重","剧情内容","角色前置解锁","Olivia参考档位"],"status":"newly-added-reference-backed","page":"operations/orders/intimacy/index.md"},
+    {"pages":"15-20","section":"用户差异与配置分层","topics":["FileReplace","活动直接payload","general_conf_new","18类包内变体","活动状态机","礼包序列进度","通行证字段","玩家数据差异","随机差异"],"status":"newly-added-with-source-boundaries","page":"operations/paid/segmentation/index.md"},
+    {"pages":"21-28","section":"订单物品附表","topics":["代码与中文名","链等级/解锁等级","金币/难度分","权重和禁用槽","重复抑制与前置解锁"],"status":"covered-by-full-local-records","page":"operations/orders/rewards/price/detail.md"}
+  ],
+  "remaining": [
+    "真实账号FileReplace后缀和服务器投放档位",
+    "完整CharacterIntimacy等级/回礼/角色关系配置",
+    "原版运行与服务端选择逻辑差分",
+    "PDF中的部分商业化解释仍是参考推断而非客户端证明"
+  ]
+}
