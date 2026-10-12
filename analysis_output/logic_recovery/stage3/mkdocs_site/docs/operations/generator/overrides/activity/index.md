@@ -1,10 +1,16 @@
-# Lucky、Disco 与产出改写
+# Disco：先直接帮助订单，否则改写普通产出
 
-`GenerateItemCode` 的入口优先检查 Lucky；Lucky 成功就直接返回 Lucky 代码。未命中时，如果 Disco 支持当前母体，先尝试直接提供 Disco 代码；没有直接代码时仍标记 Disco 场景并把最大能量增益档提升到 3。普通产出生成后，`DealActivityLimit` 还可以再次由 Disco 改写代码和增益倍率，并把本次 `costCount` 改为 0。
+Disco有自己的助力分值，不是把本次产物数量乘一个活动倍率。主棋盘母体获得Disco支持时，能量检查免能量，Lucky入口被跳过；然后先尝试直接提供订单相关代码。
 
-这解释了为什么同一个母体在不同活动状态下可能出现不同代码、不同扣费和不同 BI 产出类型。
+## 执行顺序
 
-**源码**：`CheckLuckyProduce`、`TryGenerateLuckyItem`、`TryGenerateDiscoItem`、`DealActivityLimit`、`GenerateItemCode`。Lucky 的机会池和物品池见左侧 Lucky 分支；本页只说明它们在普通产出入口的执行优先级。
+1. 检查剩余助力、母体是否生成器、配置Spread_CostEnergy是否为1。
+2. 从母体能产出的链中选订单缺口；若找到合适物品，扣Disco分值并直接返回，不进普通池或扣普通次数。
+3. 找不到直接目标时，用普通产出算法生成代码，但将最大升级指数设为3。
+4. 根据剩余Disco分值逐级降低过贵物品，扣Disco分值，将母体costCount改0；普通点击累计仍加1。
+5. Disco分值归零时关闭Buff、保存并发结束通知。
+
+普通算法中的教程强制、Fixed智能分支和FishNet仍在各自位置执行。[底层页](detail.md)解释缺口排序、难度等级、8分宽限与降级方式。追加一件物品属于GeneratorBoost，见[事件后的复制](../../events/side_effects/detail.md)，不要混为Disco倍率。
 
 ---
 
@@ -12,11 +18,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：105主例没有Disco。独立对照演示Disco支持时跳过Lucky并直接帮助订单，不能把活动Started理解成一律产物翻倍。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+对照假设Disco助力10、允许难度5、目标205难度5，直接产205并扣16助力，剩余截0；不扣Energy、普通次数或Fixed池。具体分值推导见底层页。
 
 <details><summary>本案例共同前提</summary>
 

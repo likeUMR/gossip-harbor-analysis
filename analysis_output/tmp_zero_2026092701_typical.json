@@ -1,0 +1,213 @@
+{
+  "selection_method": "每类玩家使用首个固定种子；排除首尾日后，选择订单完成、支付、主线推进三类事件计数最接近各自日中位数的日期，并优先要求三类事件均出现。",
+  "players": [
+    {
+      "player_type": "zero",
+      "player_label": "0氪金玩家",
+      "seed": 2026092701,
+      "day": 13,
+      "date": "2026-01-13",
+      "selection_method": "排除首尾日后，选择订单完成、支付、主线推进三类事件计数最接近各自日中位数的日期；优先要求三类事件均出现。",
+      "median_event_counts": {
+        "order_complete": 2,
+        "payment": 1,
+        "main_progress": 0
+      },
+      "event_counts": {
+        "login": 10,
+        "order_complete": 2,
+        "main_progress": 1,
+        "payment": 1
+      },
+      "payment_subtype_counts": {
+        "energy": 1
+      },
+      "events": [
+        {
+          "time": 1072800,
+          "day": 13,
+          "second_of_day": 36000,
+          "type": "login",
+          "energy": 100.0,
+          "gold_balance": 19,
+          "diamonds_spent_total": 120,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1076400,
+          "day": 13,
+          "second_of_day": 39600,
+          "type": "login",
+          "energy": 100.0,
+          "gold_balance": 19,
+          "diamonds_spent_total": 120,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1076405.08,
+          "day": 13,
+          "second_of_day": 39605.08,
+          "type": "order_complete",
+          "energy": 99.0,
+          "gold_balance": 95,
+          "diamonds_spent_total": 120,
+          "subtype": "Random2",
+          "slot": 3,
+          "gold": 76,
+          "requirements": [
+            {
+              "code": "607",
+              "name": "精致茶饮",
+              "series": 6,
+              "level": 7,
+              "count": 1
+            },
+            {
+              "code": "304",
+              "name": "番茄酱薯条",
+              "series": 3,
+              "level": 4,
+              "count": 1
+            }
+          ],
+          "expected_total_energy": 72,
+          "estimated_production_energy": 504.0,
+          "gold_energy_ratio": 1.0555555555555556,
+          "created_time": 910918.11,
+          "completion_seconds": 165486.97
+        },
+        {
+          "time": 1076406.35,
+          "day": 13,
+          "second_of_day": 39606.35,
+          "type": "main_progress",
+          "energy": 99.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 120,
+          "tasks_advanced": 2,
+          "tasks_completed": 32,
+          "gold_spent": 90
+        },
+        {
+          "time": 1080000,
+          "day": 13,
+          "second_of_day": 43200,
+          "type": "login",
+          "energy": 50.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 120,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1080072.39,
+          "day": 13,
+          "second_of_day": 43272.39,
+          "type": "payment",
+          "energy": 100.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "energy",
+          "diamonds": 10,
+          "energy_purchased": 100,
+          "purchase_index_of_day": 1
+        },
+        {
+          "time": 1083600,
+          "day": 13,
+          "second_of_day": 46800,
+          "type": "login",
+          "energy": 99.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1087200,
+          "day": 13,
+          "second_of_day": 50400,
+          "type": "login",
+          "energy": 49.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1090800,
+          "day": 13,
+          "second_of_day": 54000,
+          "type": "login",
+          "energy": 30.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1094400,
+          "day": 13,
+          "second_of_day": 57600,
+          "type": "login",
+          "energy": 30.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1098000,
+          "day": 13,
+          "second_of_day": 61200,
+          "type": "login",
+          "energy": 59.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1101600,
+          "day": 13,
+          "second_of_day": 64800,
+          "type": "login",
+          "energy": 29.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1105200,
+          "day": 13,
+          "second_of_day": 68400,
+          "type": "login",
+          "energy": 39.0,
+          "gold_balance": 5,
+          "diamonds_spent_total": 130,
+          "subtype": "scheduled"
+        },
+        {
+          "time": 1105224.13,
+          "day": 13,
+          "second_of_day": 68424.13,
+          "type": "order_complete",
+          "energy": 38.0,
+          "gold_balance": 63,
+          "diamonds_spent_total": 130,
+          "subtype": "Random2",
+          "slot": 2,
+          "gold": 58,
+          "requirements": [
+            {
+              "code": "307",
+              "name": "全家桶",
+              "series": 3,
+              "level": 7,
+              "count": 1
+            }
+          ],
+          "expected_total_energy": 64,
+          "estimated_production_energy": 448.0,
+          "gold_energy_ratio": 0.90625,
+          "created_time": 1076406.35,
+          "completion_seconds": 28817.78
+        }
+      ]
+    }
+  ]
+}

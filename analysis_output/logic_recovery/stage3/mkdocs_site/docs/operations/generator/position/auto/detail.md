@@ -1,8 +1,20 @@
-# 自动产出与缓存的具体条件
+# 自动母体为何可能忽略点击，以及棋盘满如何缓存
 
-`Update` 只有在 `m_auto==1` 时进入 while 循环；每轮 `_TryAutoSpread` 先要求 `m_itemRestNumber != 0` 且 `m_state==Opened`。落点由 `FindSpreadPosition` 决定：一次性母体调用全盘 `FindRandomPosition`，可恢复母体调用八邻域圆周顺序。无位置时，仅当 `IsDisposable()`、`m_weightType==Decremental`、棋盘实现 `CacheItemFromSpread` 且 `AutoSpreadToCache` 服务端开关为真才缓存剩余代码；缓存后 `m_spreadCount += #remainTypes`，`EmptySpreadCount` 将次数和 Decremental 权重清空。
+## 点击与自动更新的关系
 
-**证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
+手动 CheckSpreadPosAndAuto 对自动母体先查询自动落点：如果能找到，直接返回false，交给 Update 的自动循环处理，不另外因手动点击产出。自动落点为空才继续手动的方形环落点检查；因此“自动母体点击无反应”可能是主动避免重复产出，不是棋盘满错误。
+
+Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false。每轮要求次数不为0且状态Opened；一次性自动母体走全盘随机空格，可恢复自动母体只扫描固定八邻域。
+
+## 无空位的特殊缓存
+
+只有一次性、Decremental、棋盘提供CacheItemFromSpread、AutoSpreadToCache开关开启，四项同时成立才允许缓存。没有空位时GetAutoSpreadDecrementalRemainTypes把剩余权重逐份展开成列表，缓存后m_spreadCount加列表长度，EmptySpreadCount清次数、储备与实例权重，更新计时、通知并保存。不是所有自动母体都会转缓存。
+
+## 自动路径与手动的区别
+
+有位置时自动路径调用GenerateItemCode并落子，但只取其第一个返回值，落子参数默认增益0；存在ItemDig时标记Dig且costEnergy=false。此处不调用手动SpreadCostEnergy，也不调用手动TryRemoveSelf；无ItemDig且到变换点击数时执行Transform并停止。次数0后下一轮停止。不能把手动点击的销毁、事件类型、费用顺序直接套给自动路径。
+
+**来源**：Update、IsAutoSpread、_TryAutoSpread、_GetAutoSpreadPosition、CheckSpreadPosAndAuto、GetAutoSpreadDecrementalRemainTypes、EmptySpreadCount、MainBoardModel.FindSpreadPosition。动态缓存开关与棋盘实现需运行验证。
 
 ---
 
@@ -10,11 +22,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：食品袋105的主案例不是自动母体，自动路径不执行。下面对照说明自动Decremental母体在棋盘满时如何缓存剩余配额，而非无限重试点击。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+独立对照假设自动、一次性、Decremental母体余池[201×2,202×1]，没有空格；棋盘实现缓存且开关开启时缓存[201,201,202]，点击累计加3，次数与储备及权重归零。四条件任一不成立则停止，不生成、不缓存。这些自动母体字段是演示输入，不能套给105。
 
 <details><summary>本案例共同前提</summary>
 
@@ -25,3 +37,12 @@
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+
+
+<!-- generator-configs:end -->

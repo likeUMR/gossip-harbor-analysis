@@ -1,8 +1,34 @@
-# ChestCustomItem 的具体选择
+# ChestCustomItem 的预算、订单选择和降级算法
 
-`m_weightType==ChestCustomItem` 时调用 `RandomGenerateCodeHelper.GenerateChestCustomCodeRule(m_itemRestNumber,1,false)`；返回列表为空时使用错误兜底代码 `205` 并记录错误，正常时取列表第一个代码。随后读取 Slot 订单代码配置，把选中代码的 `DiffScore` 写为 `costCount`，因此次数消耗不是固定 1；测试模式会打印候选过程和最终代码。
+## 1. 输入和库存分配
 
-**证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
+ItemSpread 调用 `GenerateChestCustomCodeRule(m_itemRestNumber,1,false)`。三个参数分别是剩余分值、测试日志范围、是否应用库存优化；本调用第三参为false，因此走 `_PickItems_old`，不会进入 RewardStockCount 优化分支。
+
+先深拷贝主棋盘 `GetCodeCountMap(true,false,true)`。遍历 `GetOrders()`，跳过 Finished；按每条需求逐件扣对应代码库存。库存不足才加入该订单的缺少列表，并累计 Slot 配置 `DiffScore`。没有订单代码配置的需求直接略过。库存分配只在临时映射上进行，不删除棋盘棋子；订单采用 `pairs` 遍历，不能擅自写成固定槽位顺序。
+
+缺分大于0的订单按总缺分升序排序；同分没有额外排序键。
+
+## 2. 按预算处理订单
+
+令剩余预算为S、当前订单缺分为D。S≤0停止；若 `S+10≥D`，把该订单所有缺少代码按原需求顺序加入奖励列表，预算变为S−D。这允许最多10分的超预算整单补齐。
+
+否则把该订单需求按单件DiffScore升序处理：S足够支付时加入该代码并减分；S不足时，对该需求调用下述降级规则。每处理一项之前都检查S≤0，没有奖励件数上限；第二参数1只影响测试信息的输出范围。
+
+## 3. 不够买目标物品时如何降级
+
+`_PickItems_old` 从目标等级向一级倒序扫描同链代码。有订单配置就更新选中代码，找到第一个DiffScore≤21的等级立即停止；如果始终没有≤21的记录，仍保留最后找到的有效代码。
+
+发放件数 `n=ceil(S/选中代码DiffScore)`，把n件该代码依次加入列表，每件扣其DiffScore。ceil而不是floor，所以最后一件可以把预算扣到负数。这不是按剩余权重抽取，也不是等价拆分到恰好零分。
+
+## 4. 订单后还有预算
+
+从订单代码配置筛选 `UnlockLevel≤玩家等级`、所在链至少一个生成器已解锁、物品链等级恰好5的代码。没有候选时插入205；然后在候选代码列表中均匀随机选择，允许重复，直到S≤0。若205本身缺少订单配置，后续读DiffScore仍会失败，代码没有再次容错。
+
+## 5. 本次实际使用哪件、如何扣母体
+
+外层只取返回数组第一项；空列表/首项nil时记录错误并用205。再读取实际选中代码的 `DiffScore` 作为costCount；算法内其它候选并不在本次一起落子，也不按整个候选列表总分扣母体。普通后处理中的活动可能把costCount改为0；无活动改写时次数减该分并截到0。
+
+**证据**：ItemSpread `_GenerateItemCode` 的 ChestCustomItem 分支；RandomGenerateCodeHelper `GenerateChestCustomCodeRule` / `_PickItems_old`。本包存在同名模块变体，加载变体需按资源来源核销，不能仅按方法名认定为同一实现。配表完整记录保留在本页下方。
 
 ---
 
@@ -10,11 +36,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：105是Fixed，主例不执行宝箱算法。独立预算例说明：候选列表可以有多件，但点击只实际使用第一件。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设宝箱剩余分值S=20，唯一未完成订单缺同链204、205，假设DiffScore分别8、18，库存均0。总缺分26，20+10≥26，于是候选列表为[204,205]，内部预算−6；外层本次只取204，costCount=8，母体实际剩余20−8=12，只落一件204。物品代码沿用食品链；分值与订单为算法对照输入，并非105真实宝箱配置。
 
 <details><summary>本案例共同前提</summary>
 
@@ -25,3 +51,13 @@
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [产物难度分与解锁配置](../order/detail.md#configuration-order-item)：ItemSpread:GetOrderItemCode 读取 Slot:GetItemCodeConfigMap()[code].DiffScore；ChestCustomItem 与 SmartItem 复用同一个代码配置映射。
+- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+
+
+<!-- generator-configs:end -->

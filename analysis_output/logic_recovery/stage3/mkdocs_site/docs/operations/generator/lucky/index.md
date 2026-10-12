@@ -22,6 +22,27 @@ Lucky 判断的目的不是直接从 `lucky_items` 抽一个物品，而是先�
 
 **源码**：[LuckyProduceModel.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua)，主入口 `Try2ProduceLuckyItem`。
 
+Disco 支持当前母体时会排除 Lucky，见[活动资格与执行优先级](../overrides/activity/index.md)。Lucky 成功路径提前返回，不走普通产出的次数扣除链。
+
+<!-- lucky-classification-explanation:start -->
+
+## Super Lucky 是否多给一次机会？
+
+不会。机会判定回答“本次是否 Lucky”，物品抽取回答“得到哪个物品”；[Super Lucky 分类](items/type.md)发生在物品抽取之后，用来识别抽中的物品应采用普通还是 Super 表现。这里没有第三次“是否超级”的随机判定，也没有再送一次 Lucky 机会。
+
+连续 Lucky 会使后续点击直接取得资格；GeneratorBoost 的额外 Lucky Buff 可以在另一个空格追加物品。这两种机制有各自的状态和条件，不能与 Super Lucky 的分类混为一谈。
+
+| 机制 | 它实际改变什么 | 是否因此增加本次物品数 |
+|---|---|---|
+| 普通 Lucky 机会池 | 决定本次是否取得资格，并消费周期计数 | 本分支选择一个产物，不等于普通产物之外再加一个 |
+| 免费 Lucky | 普通机会失败后，用能量阈值队列提供资格；不消费普通总机会 | 本分支仍选择一个产物；“免费”指资格路径，不能据名称推断本次免扣能量 |
+| 连续 Lucky | 保存后续同类型母体点击的次数与有效期；后续点击不再抽普通机会 | 二连/三连不等于一次点击同时生成两件/三件 |
+| Super Lucky | 已抽物品的分类与表现 | 分类本身不追加物品 |
+| Lucky Smart Produce | 根据订单等状态修正选择物品的权重 | 本身不增加物品数 |
+| GeneratorBoost 额外 Lucky | Buff 与空位条件成立后，在另外空格复制本次最终产物 | 会追加一件；与 Super 分类独立 |
+
+<!-- lucky-classification-explanation:end -->
+
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -30,7 +51,7 @@ Lucky 判断的目的不是直接从 `lucky_items` 抽一个物品，而是先�
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例有适用的 Lucky 配置。先检查活动、等级和已有连续资格，再抽周期机会；失败才检查免费资格。A 未命中回普通池，B 命中再抽 Lucky 物品。
+**本页发生什么**：本例先检查活动和等级条件，再判断本周期机会和免费资格。A 这次没有获得 Lucky 资格，所以生成普通物品；B 获得了 Lucky 资格，因此额外生成 Lucky 物品 204，并消耗本周期的一次 Lucky 机会。
 
 <details><summary>本案例共同前提</summary>
 

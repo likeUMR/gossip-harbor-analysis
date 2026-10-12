@@ -1,0 +1,262 @@
+{
+  "verification_kind": "recovered-source-execution",
+  "original_client_runtime_confirmed": false,
+  "environment": "Lupa Lua 5.3; recovered modules; controlled RNG and explicitly mocked GM/DB services",
+  "source_hashes": {
+    "table": "3fd43bbbeac94f532aab72200ab6431046194f45a111a1cba86148471a45dc56",
+    "math": "6aa5a4af571731d94dbf5df36efbbec6df9573495b907999eceb34bb2e7b621f",
+    "spread": "e493c2ebdb4fb1523ce2ae4eb6872148426ec557c68cd98bfe850b23819ef32f",
+    "lucky": "0f1920656636f7d6ae01c484253ad10ef14b9219d6082764601375dbad3195cb",
+    "fixed": "5c23fb5fa659f12f2f6bef72b3e6af08de92afd4924621755482bda50d8db4dc",
+    "chest": "d47c20eb66b1e2e8c68bb20bd63de14944909378c71d9bd7c37b003257fcf985",
+    "smart_reward": "d0289ee1c8ae0fbc25505898fe1bd27c93bf09dcc77a0a0d2a369388480c2bd6",
+    "board_helper": "943110e380d082c5ca51a2882c484bb94ab6b84bac959291227953ec43d1e40f",
+    "generator_boost": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
+    "disco": "1767431be213fdfc167e7f6b7b38724a0990db2a05f6a7cd037481ef65fe47d8"
+  },
+  "limitations": "Selected rules only; mocks do not verify original events, account configs, Unity or native persistence. Not all branches or full operation closure.",
+  "cases": [
+    {
+      "id": "random_integer_endpoints",
+      "status": "passed",
+      "input_and_assertions": "randoms({0,0.999999,0,0.999999}); assert(MathUtil.Random(42)==1); assert(MathUtil.Random(42)==42); assert(MathUtil.Random(3,7)==3); assert(MathUtil.Random(3,7)==7)"
+    },
+    {
+      "id": "weighted_boundaries",
+      "status": "passed",
+      "input_and_assertions": "local p={{Code='a',Weight=35},{Code='b',Weight=2},{Code='c',Weight=5}}; randoms({34/42,35/42,36/42,37/42}); assert(Table.ListWeightSelectOne(p).Code=='a'); assert(Table.ListWeightSelectOne(p).Code=='b'); assert(Table.ListWeightSelectOne(p).Code=='b'); assert(Table.ListWeightSelectOne(p).Code=='c')"
+    },
+    {
+      "id": "smart_disabled_fraction",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=0.25; assert(m:_UseSmartProduce()==false)"
+    },
+    {
+      "id": "smart_enabled_one",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=1; assert(m:_UseSmartProduce()==true)"
+    },
+    {
+      "id": "smart_chain_level_boost",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=3; local a={Item='a',Weight=66,ItemChainLevel=4}; local b={Item='b',Weight=7,ItemChainLevel=5}; local p={lucky_items={a,b},itemChainMap={food={a,b}}}; GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end}; GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {target=99} end; GM.EnergyBoostModel.CanEnergyBoost=function() return true end; GM.EnergyBoostModel.GetEnergyBoostPowerRatio=function() return 1 end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==198 and b.Weight_Smart==7); assert(a.Weight==66 and b.Weight==7)"
+    },
+    {
+      "id": "smart_recomputed_no_compounding",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_smartProduceRatio=2; local a={Item='a',Weight=10,ItemChainLevel=1}; local p={lucky_items={a},itemChainMap={food={a}}}; GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 1 end}; GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {target=1} end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==20); m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==20); GM.MainBoardModel.GetOrderCodeLackCountMap=function() return {} end; m:_UpdateSpreadConfigSmartWeight('105',p); assert(a.Weight_Smart==10)"
+    },
+    {
+      "id": "super_no_extra_roll",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); local count=randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},false); assert(code=='205' and t=='SuperLucky' and count()==1)"
+    },
+    {
+      "id": "free_super_classification",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},true); assert(code=='205' and t=='FreeSuperLucky')"
+    },
+    {
+      "id": "continuous_type_precedence",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); randoms({0}); local code,t=m:_GetGenerateLuckyItem('105',{lucky_items={{Item='205',Weight=1}},super_items={'205'}},true,'TripleLucky1'); assert(t=='TripleLucky1')"
+    },
+    {
+      "id": "continuous_exact_expiry_allowed",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); now=1010; assert(m:_CanContiLuckyProduce('105')==true); now=1011; assert(m:_CanContiLuckyProduce('105')==false); assert(m.m_dbTable:GetValue('clpit','value')==nil)"
+    },
+    {
+      "id": "continuous_other_generator_clears",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); assert(m:_CanContiLuckyProduce('106')==false); assert(m:_CanContiLuckyProduce('105')==false)"
+    },
+    {
+      "id": "continuous_consume_refresh",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m:_TriggerContiLuckyProduce('105',2); now=1005; assert(m:_PostProcessOnContiLuckyProduce()=='TripleLucky1'); assert(m.m_dbTable:GetValue('clpeet','value')==1015); assert(m:_PostProcessOnContiLuckyProduce()=='TripleLucky2'); assert(m:_CanContiLuckyProduce('105')==false)"
+    },
+    {
+      "id": "triple_skips_second_roll",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{triple_lucky_chance=1000,double_lucky_chance=3000}}; m.m_curLuckyProduceConfigIndex=1; local count=randoms({0.0799}); m:_Try2TriggerContiLuckyProduce('105'); assert(m.m_dbTable:GetValue('clpmc','value')==2 and count()==1)"
+    },
+    {
+      "id": "double_after_triple_failure",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{triple_lucky_chance=1000,double_lucky_chance=3000}}; m.m_curLuckyProduceConfigIndex=1; local count=randoms({0.4499,0.1199}); m:_Try2TriggerContiLuckyProduce('105'); assert(m.m_dbTable:GetValue('clpmc','value')==1 and count()==2)"
+    },
+    {
+      "id": "free_threshold_consumed_once",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_arrFreeLuckyProduceEnergyCostCount={50,80}; m.m_dbTable:Set('ecc','value',60); assert(m:_CanFreeLuckyProduce()); m:_PostProcessOnFreeLuckyProduce(); assert(not m:_CanFreeLuckyProduce()); assert(m.m_dbTable:GetValue('elpec','value')=='80')"
+    },
+    {
+      "id": "daily_reset_preserves_continuous",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); m.m_arrLuckyProduceConfig={{energy_cost={range_entry={0,100}}}}; m.m_dbTable:Set('ecc','value',80); m.m_dbTable:Set('elpec','value','50'); m:_TriggerContiLuckyProduce('105',2); m:_ResetEnergyCost(); assert(m:_GetEnergyCostCount()==0); assert(#m.m_arrFreeLuckyProduceEnergyCostCount==0); assert(m.m_dbTable:GetValue('clpit','value')=='105')"
+    },
+    {
+      "id": "boost_history_ceiling",
+      "status": "passed",
+      "input_and_assertions": "local m=lucky(); GM.ConfigModel.IsServerControlOpen=function() return true end; m.m_cachedBoostRatioAdjustData={0,1,2,2}; assert(m:GetAdjustedMaxEnergyBoostRatio(3)==2); m.m_cachedBoostRatioAdjustData={}; assert(m:GetAdjustedMaxEnergyBoostRatio(3)==3)"
+    },
+    {
+      "id": "disposable_times_cost",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_weightType=1; s:CosetRestNumber(nil,2,'201'); assert(s.m_itemRestNumber==76 and s.m_spreadCount==1)"
+    },
+    {
+      "id": "explicit_zero_cost_still_counts",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s:CosetRestNumber(0,3,'201'); assert(s.m_itemRestNumber==80 and s.m_spreadCount==1)"
+    },
+    {
+      "id": "times_clamp_zero",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_itemRestNumber=2; s:CosetRestNumber(10,0,'201'); assert(s.m_itemRestNumber==0)"
+    },
+    {
+      "id": "timer_not_lower_clamped",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_state=3; s.m_itemRecoveryDuration=30; s.m_startTimer=1010; assert(s:GetTimerAmount()==-1/3); assert(s:GetNextTimerAmount()==-0.3)"
+    },
+    {
+      "id": "timer_zero_duration",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_state=3; s.m_itemRecoveryDuration=0; s.m_startTimer=1000; assert(s:GetTimerAmount()==1)"
+    },
+    {
+      "id": "timer_missing_duration_clears",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_itemModel={GetType=function() return '105' end}; s.m_startTimer=1000; json={encode=function() return '' end}; assert(s:GetTimerAmount()==1 and s.m_startTimer==nil)"
+    },
+    {
+      "id": "recovery_storage_insufficient",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s.m_storageRestNumber=10; s.m_itemRecoveryDuration=30; s.m_startTimer=1000; s.UpdatePerSecond=function() end; s:_UpdateRecoveryState(); assert(s.m_itemRestNumber==80 and s.m_storageRestNumber==0 and s.m_startTimer==1030)"
+    },
+    {
+      "id": "recovery_full_storage",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s.m_storageRestNumber=0; s.m_startTimer=1000; s:_UpdateRecoveryState(); assert(s.m_itemRestNumber==80 and s.m_storageRestNumber==240 and s.m_startTimer==nil)"
+    },
+    {
+      "id": "closed_priority",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_state=1; s.m_itemRestNumber=0; s._NotifySpreadFailed=function(self,r) self.reason=r end; assert(not s:CheckSpreadState()); assert(s.reason==1)"
+    },
+    {
+      "id": "disposable_empty_silent",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.m_itemRestNumber=0; s._NotifySpreadFailed=function() error('must not notify') end; assert(not s:CheckSpreadState())"
+    },
+    {
+      "id": "manual_gate_short_circuit",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.CheckSpreadState=function() return false end; s.CheckSpreadPosAndAuto=function() error('must not check position') end; assert(s:_TrySpread()==false)"
+    },
+    {
+      "id": "lucky_skips_ordinary_times",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.CheckLuckyProduce=function() return true,'205','Lucky' end; GM.ActivityManager={GetModel=function() return lucky() end}; GM.ItemDataModel={GetModelConfig=function() return {MergedType='206'} end}; local code,t,ratio=s:GenerateItemCode(1); assert(code=='206' and t=='Lucky' and ratio==1 and s.m_spreadCount==0 and s.m_itemRestNumber==80)"
+    },
+    {
+      "id": "fixed_pool_depletes_and_refills",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_dbTableOld=db(),m_mapFixedSpreadWeight={},m_mapLeftSpreadCount={}},ItemFixedSpreadModel)\n StringUtil={IsNilOrEmpty=function(v) return v==nil or v=='' end}\n ItemUtility={StringToCodeWeightPairs=function(str) local t={} for c,w in str:gmatch('([^,:]+):(%d+)') do t[#t+1]={Code=c,Weight=tonumber(w)} end return t end, CodeWeightPairsToString=function(p) local t={} for _,v in ipairs(p) do t[#t+1]=v.Code..':'..v.Weight end return table.concat(t,',') end}\n GM.ItemDataModel={GetModelConfig=function() return {Spread_Weight_Str='a:2,b:1'} end}\n randoms({0,0,0,0}); assert(m:GenerateItemCode('105')=='a'); assert(m.m_mapLeftSpreadCount['105']==2); assert(m:GenerateItemCode('105')=='a'); assert(m:GenerateItemCode('105')=='b'); assert(m.m_mapLeftSpreadCount['105']==3); assert(m:GenerateItemCode('105')=='a')"
+    },
+    {
+      "id": "disco_max_level_right_shift",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({},BoostChargeDiscoBoostHandler); assert(m:GetMaxLevelByScore(18)==5); assert(m:GetMaxLevelByScore(16)==5); assert(m:GetMaxLevelByScore(15)==4)"
+    },
+    {
+      "id": "disco_zero_closes_before_final_save",
+      "status": "passed",
+      "input_and_assertions": "local trace={}; EEventType={TriggerBoostDiscoUpdate='update'}; EventDispatcher={DispatchEvent=function(_,v) trace[#trace+1]='update:'..v end}; local m=setmetatable({m_cacheData={boostChargeNum=10}},BoostChargeDiscoBoostHandler); m.CloseDisco=function(self) assert(self.m_cacheData.boostChargeNum==0); trace[#trace+1]='close'; self.m_cacheData=nil end; m.SaveCacheData=function() trace[#trace+1]='save' end; m:ReduceDiscoScore(16); assert(table.concat(trace,',')=='update:16,close,save')"
+    },
+    {
+      "id": "disco_reduces_code_and_index_to_affordable",
+      "status": "passed",
+      "input_and_assertions": "OrderModelType={Slot='Slot'}; local m=setmetatable({m_cacheData={boostChargeNum=1}},BoostChargeDiscoBoostHandler); m.CanSupportItem=function() return true end; m.ReduceDiscoScore=function(_,n) assert(n==8) end; GM.ItemDataModel={GetChainLevel=function(_,c) return tonumber(c) end,GetChainId=function() return 'food' end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; GM.MainBoardModel.GetOrderModel=function() return {GetItemCodeConfigMap=function() return {} end} end; local c,b=m:TryUseDiscoItem('105','5',3); assert(c=='4' and b==2)"
+    },
+    {
+      "id": "disco_energy_and_lucky_gates_skip_services",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s.CostEnergy=function() return true end; s.CanSupportBoostDisco=function() return true end; s.m_itemModel={GetBoardModel=function() return {BoardType='Main'} end}; local ok,b,cost=s:CheckEnergy(); assert(ok and b==0 and cost==false); assert(s:CheckLuckyProduce()==false)"
+    },
+    {
+      "id": "fishnet_only_lowers_and_preserves_index",
+      "status": "passed",
+      "input_and_assertions": "ItemModelFactory={GetCodePrefixTargetType=function() return nil end}; ItemChain={RwaFish='fish'}; EGeneralConfType.FishNetProduceSmart='fishnet'; ELogSpreadExtScene={FishNetProduceSmart='scene'}; GM.ConfigModel.IsServerControlOpen=function(_,k) return k=='fishnet' end; GM.ItemDataModel={GetChainId=function() return 'fish' end,GetChainLevel=function(_,c) return tonumber(c) end,GetChainMaxLevel=function() return 6 end,GetChain=function() return {} end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end,GetModelConfig=function(_,c) return {MergedType=tostring(tonumber(c)+1)} end}; local board={GetOrderCodeLackCountMap=function() return {} end,GetCodeCountMap=function() return {['4']=3} end}; local s=spread(); s.m_itemModel={GetBoardModel=function() return board end}; local c,b,scene=s:SpreadCheckEnergyRatioAndCode('3',2,true); assert(c=='4' and b==2 and scene=='scene'); c,b,scene=s:SpreadCheckEnergyRatioAndCode('2',2,true); assert(c=='4' and b==2 and scene==nil)"
+    },
+    {
+      "id": "fixed_same_type_shares_pool_between_instances",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_dbTableOld=db(),m_mapFixedSpreadWeight={},m_mapLeftSpreadCount={}},ItemFixedSpreadModel); ItemUtility={StringToCodeWeightPairs=function(str) local t={} for c,w in str:gmatch('([^,:]+):(%d+)') do t[#t+1]={Code=c,Weight=tonumber(w)} end return t end,CodeWeightPairsToString=function(p) local t={} for _,v in ipairs(p) do t[#t+1]=v.Code..':'..v.Weight end return table.concat(t,',') end}; GM.ItemDataModel={GetModelConfig=function() return {Spread_Weight_Str='a:2,b:1'} end}; GM.ItemFixedSpreadModel=m; local a=spread(); local b=spread(); local item={GetType=function() return '105' end,GetComponent=function() return nil end}; a.m_itemModel=item; b.m_itemModel=item; randoms({0,0}); assert(a:_FixedGenerateItemCode()=='a'); assert(b:_FixedGenerateItemCode()=='a'); assert(m.m_mapLeftSpreadCount['105']==1)"
+    },
+    {
+      "id": "chest_tolerance_builds_more_than_first_item",
+      "status": "passed",
+      "input_and_assertions": "OrderState={Finished='Finished'} OrderModelType={Slot='Slot'}\n local cfg={a={DiffScore=8},b={DiffScore=18}}\n GM.MainBoardModel={GetCodeCountMap=function() return {} end, GetOrderModel=function() return {GetItemCodeConfigMap=function() return cfg end} end, GetOrders=function() return {{GetState=function() return 'Open' end,GetRequirements=function() return {'a','b'} end}} end}\n local codes=RandomGenerateCodeHelper.GenerateChestCustomCodeRule(20,1,false); assert(#codes==2 and codes[1]=='a' and codes[2]=='b')"
+    },
+    {
+      "id": "chest_old_pick_ceil_overspends",
+      "status": "passed",
+      "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end,GetTypeByChainAndLevel=function(_,chain,l) return tostring(l) end}; local cfg={['5']={DiffScore=30},['4']={DiffScore=8}}; local codes={}; local rest=RandomGenerateCodeHelper._PickItems_old({code='5'},cfg,10,codes,1,0,''); assert(rest==-6 and #codes==2 and codes[1]=='4')"
+    },
+    {
+      "id": "smart_merge_inventory_not_double_used",
+      "status": "passed",
+      "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end, GetChainLevel=function() return 5 end, GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local counts={['4']=1}; assert(BoardModelHelper.CalculateLackNumForMergeRequire('5',counts)==8); assert(counts['4']==0); assert(BoardModelHelper.CalculateLackNumForMergeRequire('5',counts)==16)"
+    },
+    {
+      "id": "smart_binary_one_result",
+      "status": "passed",
+      "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; GM.ItemDataModel={GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local data={resultCount=1,isNeedUpFind=true}; local res={}; local rest=SmartRewardHelper.CalculateRewardItems(res,10,'food',20,{['2']=2,['4']=8},{},1,data); assert(#res==1 and res[1]=='2' and rest==18 and data.resultCount==0)"
+    },
+    {
+      "id": "smart_equivalent_split_power_of_two",
+      "status": "passed",
+      "input_and_assertions": "GM.ItemDataModel={GetChainId=function() return 'food' end,GetChainLevel=function() return 5 end,GetTypeByChainAndLevel=function(_,c,l) return tostring(l) end}; local code,multi,score=SmartRewardHelper.GetEquivalentCode('5',{['3']=4},{}); assert(code=='3' and multi==4 and score==16)"
+    },
+    {
+      "id": "smart_205_fallback_no_random_when_budget_small",
+      "status": "passed",
+      "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; local calls=randoms({}); local res={}; local rest=SmartRewardHelper.DeliverRandom205_206(res,3,{['205']=8,['206']=16},{resultCount=1}); assert(res[1]=='205' and rest==-5 and calls()==0)"
+    },
+    {
+      "id": "smart_206_fallback_random_boundary",
+      "status": "passed",
+      "input_and_assertions": "SmartRewardHelper.AppendTestInfo=function() end; ItemChain={Bread='Bread'}; GM.ItemDataModel={GetTypeByChainAndLevel=function(_,c,l) return l==5 and '205' or '206' end}; randoms({0.5}); local res={}; local rest=SmartRewardHelper.DeliverRandom205_206(res,9,{['205']=8,['206']=16},{resultCount=1}); assert(res[1]=='206' and rest==-7)"
+    },
+    {
+      "id": "boost_finite_extra_pool",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db(),m_extraProduceChance={3,1}},GeneratorBoostActivityModel); randoms({0,0,0}); assert(m:_CanExtraProduceItem()==true); assert(m:_CanExtraProduceItem()==false); assert(m:_CanExtraProduceItem()==false); assert(m.m_dbTable:GetValue('ExtraProduceTotalSpreadCount','value')==0)"
+    },
+    {
+      "id": "boost_no_space_caches_boolean_qualification",
+      "status": "passed",
+      "input_and_assertions": "local m=setmetatable({m_dbTable=db()},GeneratorBoostActivityModel); GM.MainBoardModel.FindEmptyPositionInSpreadOrderWithNum=function() return {} end; local item={GetPosition=function() return 'P' end}; assert(m:_ExtraProduceItem(item,false)==false); assert(m:IsCachedExtraProduce()); GM.MainBoardModel.FindEmptyPositionInSpreadOrderWithNum=function() return {'P','Q'} end; assert(m:_ExtraProduceItem(item,true)==true); assert(not m:IsCachedExtraProduce())"
+    },
+    {
+      "id": "boost_lucky_listener_excludes_continuous",
+      "status": "passed",
+      "input_and_assertions": "local called=0; local m=setmetatable({},GeneratorBoostActivityModel); m.TryExtraLuckyProduceItem=function() called=called+1 end; local source={GetComponent=function() return {CanSupportGeneratorBoost=function() return true end} end}; m:_OnItemSpread({Source=source,BoardSpreadType='SuperLucky'}); assert(called==1); m:_OnItemSpread({Source=source,BoardSpreadType='TripleLucky1'}); m:_OnItemSpread({Source=source,BoardSpreadType='DoubleLucky'}); assert(called==1)"
+    },
+    {
+      "id": "order_empty_unlock_fallback_is_uniform_codes",
+      "status": "passed",
+      "input_and_assertions": "local s=spread(); s._Log=function() end; s.m_codeWeightPairs={{Code='a',Weight=100},{Code='b',Weight=1}}; GM.ItemDataModel={GetModelConfig=function() return nil end}; randoms({0.75}); assert(s:_TryGenerateItemCodeAll()=='b')"
+    },
+    {
+      "id": "ordinary_state_saved_before_actual_landing",
+      "status": "passed",
+      "input_and_assertions": "local order={}; local s=spread(); s.CheckLuckyProduce=function() return false end; s.CanSupportBoostDisco=function() return false end; s.SafeSpreadItem=function() end; s._GenerateItemCode=function() return 'a',false,1 end; s.SpreadCheckEnergyRatioAndCode=function() return 'a',0 end; s.DealActivityLimit=function(_,c,b,n) return c,b,n end; s.UpdatePerSecond=function() order[#order+1]='timer' end; s.event={Call=function() order[#order+1]='state' end}; s.m_itemModel={GetBoardModel=function() return {SaveItemProperty=function() order[#order+1]='save' end} end}; s:GenerateItemCode(0); assert(table.concat(order,',')=='timer,state,save'); assert(s.m_itemRestNumber==79 and s.m_spreadCount==1)"
+    }
+  ],
+  "passed": 48,
+  "total": 48
+}

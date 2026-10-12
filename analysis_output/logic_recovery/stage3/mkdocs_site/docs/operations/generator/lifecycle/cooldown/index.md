@@ -4,6 +4,7 @@ CD 使用服务器时间字段 `m_startTimer`。加速费用按剩余时长比�
 
 **字段/配表**：`m_startTimer`、`m_itemRecoveryDuration`、`m_storageRecoveryDuration`、`Spread_ItemRecoveryDuration`、`Spread_StorageRecoveryDuration`。**源码**：`UpdatePerSecond`、CD Buff 处理。Buff 叠加顺序和离线补时 `runtime-pending`。
 
+点击结束后的系统通知见[入口与通知分支](../../entry/index.md)，它不改变冷却计时。
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,7 +13,7 @@ CD 使用服务器时间字段 `m_startTimer`。加速费用按剩余时长比�
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：食品袋启动短恢复，补回本次缺少的次数，并从储备里支付。
+**本页发生什么**：本例点击后食品袋进入短恢复，缺少的次数按配置逐步补回，储备次数同步支付。玩家看到母体暂时不能继续产出，恢复完成后才可再次点击。
 
 ### 代入本页的值
 

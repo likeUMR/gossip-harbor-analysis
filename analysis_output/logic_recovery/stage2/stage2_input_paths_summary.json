@@ -1,0 +1,23 @@
+{
+  "title": "阶段二玩家输入静态路径",
+  "input_candidates": 2036,
+  "paths_with_downstream_evidence": 2020,
+  "path_items": 23874,
+  "item_counts": {
+    "lua_call": 18148,
+    "event": 4741,
+    "state": 985
+  },
+  "classification_counts": {
+    "calls": 255,
+    "event": 1597,
+    "event_state_and_calls": 37,
+    "no_downstream_static_evidence": 16,
+    "state": 131
+  },
+  "database": "analysis_data/logic_index/stage2/input_paths.sqlite3",
+  "limitations": [
+    "路径按同一模块和同一命名函数的源码顺序连接；跨函数调用需结合 Lua/IL2CPP 调用图继续展开。",
+    "候选入口可能是组件初始化或测试工具，实际玩家可达性仍需 prefab/运行时验证。"
+  ]
+}

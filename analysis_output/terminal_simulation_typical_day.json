@@ -1,0 +1,385 @@
+{
+  "player_type": "mid",
+  "player_label": "中氪金玩家",
+  "seed": 2026092701,
+  "day": 891,
+  "date": "2028-06-09",
+  "selection_method": "排除首尾日后，选择订单完成、支付、主线推进三类事件计数最接近各自日中位数的日期；优先要求三类事件均出现。",
+  "median_event_counts": {
+    "order_complete": 7,
+    "payment": 23,
+    "main_progress": 1
+  },
+  "event_counts": {
+    "login": 10,
+    "order_complete": 7,
+    "main_progress": 1,
+    "payment": 23
+  },
+  "payment_subtype_counts": {
+    "bubble_items": 10,
+    "energy": 3,
+    "shop_items": 10
+  },
+  "events": [
+    {
+      "time": 76932000,
+      "day": 891,
+      "second_of_day": 36000,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76935600,
+      "day": 891,
+      "second_of_day": 39600,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76935627.94,
+      "day": 891,
+      "second_of_day": 39627.94,
+      "type": "order_complete",
+      "subtype": "Random2",
+      "slot": 2,
+      "gold": 78
+    },
+    {
+      "time": 76935629.21,
+      "day": 891,
+      "second_of_day": 39629.21,
+      "type": "main_progress",
+      "tasks_advanced": 1,
+      "tasks_completed": 1743,
+      "gold_spent": 480
+    },
+    {
+      "time": 76935630.48,
+      "day": 891,
+      "second_of_day": 39630.48,
+      "type": "order_complete",
+      "subtype": "Random1",
+      "slot": 1,
+      "gold": 16
+    },
+    {
+      "time": 76935662.23,
+      "day": 891,
+      "second_of_day": 39662.23,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 2,
+      "code": "504"
+    },
+    {
+      "time": 76935674.93,
+      "day": 891,
+      "second_of_day": 39674.93,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 4,
+      "code": "505"
+    },
+    {
+      "time": 76935743.51,
+      "day": 891,
+      "second_of_day": 39743.51,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 4,
+      "code": "505"
+    },
+    {
+      "time": 76935744.78,
+      "day": 891,
+      "second_of_day": 39744.78,
+      "type": "payment",
+      "subtype": "energy",
+      "diamonds": 10,
+      "energy": 100
+    },
+    {
+      "time": 76935785.42,
+      "day": 891,
+      "second_of_day": 39785.42,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 25,
+      "code": "508"
+    },
+    {
+      "time": 76935787.96,
+      "day": 891,
+      "second_of_day": 39787.96,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 47,
+      "code": "509"
+    },
+    {
+      "time": 76935790.5,
+      "day": 891,
+      "second_of_day": 39790.5,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 89,
+      "code": "510"
+    },
+    {
+      "time": 76935793.04,
+      "day": 891,
+      "second_of_day": 39793.04,
+      "type": "order_complete",
+      "subtype": "Random4",
+      "slot": 5,
+      "gold": 132
+    },
+    {
+      "time": 76935798.12,
+      "day": 891,
+      "second_of_day": 39798.12,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 3,
+      "code": "602",
+      "shop_slot": 3
+    },
+    {
+      "time": 76935799.39,
+      "day": 891,
+      "second_of_day": 39799.39,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 3,
+      "code": "602",
+      "shop_slot": 3
+    },
+    {
+      "time": 76935803.2,
+      "day": 891,
+      "second_of_day": 39803.2,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 3,
+      "code": "602",
+      "shop_slot": 3
+    },
+    {
+      "time": 76935804.47,
+      "day": 891,
+      "second_of_day": 39804.47,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 3,
+      "code": "602",
+      "shop_slot": 3
+    },
+    {
+      "time": 76935807.01,
+      "day": 891,
+      "second_of_day": 39807.01,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 3,
+      "code": "602",
+      "shop_slot": 3
+    },
+    {
+      "time": 76935814.63,
+      "day": 891,
+      "second_of_day": 39814.63,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 11,
+      "code": "604"
+    },
+    {
+      "time": 76939200,
+      "day": 891,
+      "second_of_day": 43200,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76942800,
+      "day": 891,
+      "second_of_day": 46800,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76942852.07,
+      "day": 891,
+      "second_of_day": 46852.07,
+      "type": "payment",
+      "subtype": "energy",
+      "diamonds": 20,
+      "energy": 100
+    },
+    {
+      "time": 76946400,
+      "day": 891,
+      "second_of_day": 50400,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76946493.98,
+      "day": 891,
+      "second_of_day": 50493.98,
+      "type": "order_complete",
+      "subtype": "Random5New",
+      "slot": 8,
+      "gold": 64
+    },
+    {
+      "time": 76946495.25,
+      "day": 891,
+      "second_of_day": 50495.25,
+      "type": "order_complete",
+      "subtype": "Random2",
+      "slot": 2,
+      "gold": 20
+    },
+    {
+      "time": 76946528.27,
+      "day": 891,
+      "second_of_day": 50528.27,
+      "type": "payment",
+      "subtype": "energy",
+      "diamonds": 40,
+      "energy": 100
+    },
+    {
+      "time": 76950000,
+      "day": 891,
+      "second_of_day": 54000,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76953600,
+      "day": 891,
+      "second_of_day": 57600,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76957200,
+      "day": 891,
+      "second_of_day": 61200,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76957245.72,
+      "day": 891,
+      "second_of_day": 61245.72,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 1,
+      "code": "1302",
+      "shop_slot": 1
+    },
+    {
+      "time": 76957246.99,
+      "day": 891,
+      "second_of_day": 61246.99,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 1,
+      "code": "1302",
+      "shop_slot": 1
+    },
+    {
+      "time": 76957249.53,
+      "day": 891,
+      "second_of_day": 61249.53,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 1,
+      "code": "1302",
+      "shop_slot": 1
+    },
+    {
+      "time": 76957250.8,
+      "day": 891,
+      "second_of_day": 61250.8,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 1,
+      "code": "1302",
+      "shop_slot": 1
+    },
+    {
+      "time": 76957254.61,
+      "day": 891,
+      "second_of_day": 61254.61,
+      "type": "order_complete",
+      "subtype": "Random1",
+      "slot": 1,
+      "gold": 52
+    },
+    {
+      "time": 76957255.88,
+      "day": 891,
+      "second_of_day": 61255.88,
+      "type": "payment",
+      "subtype": "shop_items",
+      "diamonds": 1,
+      "code": "1302",
+      "shop_slot": 1
+    },
+    {
+      "time": 76960800,
+      "day": 891,
+      "second_of_day": 64800,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76960833.02,
+      "day": 891,
+      "second_of_day": 64833.02,
+      "type": "order_complete",
+      "subtype": "Random5New",
+      "slot": 8,
+      "gold": 56
+    },
+    {
+      "time": 76960839.37,
+      "day": 891,
+      "second_of_day": 64839.37,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 29,
+      "code": "1404"
+    },
+    {
+      "time": 76964400,
+      "day": 891,
+      "second_of_day": 68400,
+      "type": "login",
+      "subtype": "scheduled"
+    },
+    {
+      "time": 76964421.59,
+      "day": 891,
+      "second_of_day": 68421.59,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 8,
+      "code": "1402"
+    },
+    {
+      "time": 76964422.86,
+      "day": 891,
+      "second_of_day": 68422.86,
+      "type": "payment",
+      "subtype": "bubble_items",
+      "diamonds": 15,
+      "code": "1403"
+    }
+  ]
+}

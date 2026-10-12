@@ -1,0 +1,39 @@
+{
+  "title": "阶段二输入跨函数可达性",
+  "root_functions": 1010,
+  "reachable_function_rows": 47383,
+  "max_depth": 24,
+  "max_observed_depth": 17,
+  "reached_depth_limit": false,
+  "depth_counts": {
+    "0": 1013,
+    "1": 3694,
+    "2": 4856,
+    "3": 5361,
+    "4": 6117,
+    "5": 6551,
+    "6": 5511,
+    "7": 4975,
+    "8": 3761,
+    "9": 2891,
+    "10": 1412,
+    "11": 694,
+    "12": 315,
+    "13": 140,
+    "14": 60,
+    "15": 21,
+    "16": 7,
+    "17": 4
+  },
+  "evidence_counts": {
+    "event_functions": 2235,
+    "state_functions": 5253
+  },
+  "roots_with_event_reachable": 871,
+  "roots_with_state_reachable": 562,
+  "database": "analysis_data/logic_index/stage2/input_call_reachability.sqlite3",
+  "limitations": [
+    "只沿唯一解析的静态 Lua 候选边展开；动态接收者、跨 Lua/C# 桥接和未解析边不在可达性证明内.",
+    "本次最多允许深度 24；实际最大深度 17。"
+  ]
+}

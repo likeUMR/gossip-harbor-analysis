@@ -3,7 +3,6 @@
 `_CanContiLuckyProduce` 要求目标类型相同、当前次数小于最大次数且服务器时间未超过 `clpeet`；任一条件不满足就清除四个连续字段。命中后递增 `clpc` 并把有效期重新延长 10 秒。
 
 **源码**：`_CanContiLuckyProduce`、`_PostProcessOnContiLuckyProduce`、`_CLearContiLuckyProduceData`。对象类型变化、超时和次数用尽均属于不同失效原因，应在回放中分开验证。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,11 +11,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：开始时没有连续状态，所以本例继续周期抽样。
+**本页发生什么**：本例开始时没有连续资格，因此不会直接连续产出，而是继续走普通的机会判断。若上一次点击已经留下同一食品袋的连续资格，下一次点击会优先消耗它并直接生成连续奖励。
 
 ### 代入本页的值
 
-对照状态：`clpit="105",clpmc=2,clpc=0,clpeet=1010` 且 `serverTime=1005` 时资格有效；消费后 `clpc=1`、期限 1015。时间或母体不匹配时清除；此对照不是主案例已发生的事实。
+假设连续状态为 `clpit="105"、clpmc=2、clpc=0、clpeet=1010`，服务器时间 1005。母体匹配且 `1005<=1010`，消费后 `clpc=1`、期限刷新为 1015；若时间为 1016，资格失效并清除整组状态。
 
 <details><summary>本案例共同前提</summary>
 
@@ -27,3 +26,12 @@
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [连续 Lucky 服务器字段](trigger.md#configuration-continuous-lucky)：_CalculateLuckyProduceConfigIndex 按 energy_cost.range_entry 选段；_Try2TriggerContiLuckyProduce 直接读取 triple_lucky_chance / double_lucky_chance。
+
+
+<!-- generator-configs:end -->

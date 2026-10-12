@@ -1,0 +1,11 @@
+{
+  "definitions": 131,
+  "effects": 186,
+  "links": 347,
+  "by_effect": {
+    "event_dispatch": 3,
+    "state_mutation": 66,
+    "ui_effect": 117
+  },
+  "database": "analysis_data/logic_index/stage2/dynamic_callback_effects.sqlite3"
+}

@@ -4,17 +4,18 @@
 
 **源码**：`CheckSpreadPosAndAuto`、`SpreadItem`。**证据**：失败顺序 `source-confirmed`；UI 展示和重复点击行为 `runtime-pending`。
 
+本分支的失败通知见[事件与监听链](../../events/index.md)；它发生在产物计算之前。
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本次存在 P，棋盘满失败没有发生。
+**本页发生什么**：本例存在有效空位 P，因此产物成功落到棋盘。若空位为空，点击会在落子前结束，玩家看不到新棋子，且能量和次数都不会减少。
 
 ### 代入本页的值
 
-本例 `position=P`。对照输入 `position=nil` 时返回 false，发送 `BoardFull`；能量仍为 10，次数仍为 80。
+本例 `position=P`，所以 `P!=nil`，空位判断通过并进入写入；对照 `position=nil` 时返回 false、发送 `BoardFull`，能量仍为 10、次数仍为 80。
 
 <details><summary>本案例共同前提</summary>
 

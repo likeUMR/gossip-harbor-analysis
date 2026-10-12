@@ -1,0 +1,51 @@
+{
+  "title": "Gossip Harbor 阶段二逻辑索引初始构建",
+  "sample": "Gossip Harbor 3.98.10; existing stage-one resource snapshot",
+  "entities": {
+    "lua_module": 3415,
+    "lua_prototype": 33272,
+    "android_class": 43784,
+    "android_method": 254729,
+    "android_invoke_sites": 919992,
+    "il2cpp_method_mapping": 78516,
+    "native_library": 22,
+    "lua_require_edges": 2209,
+    "lua_event_registration_edges": 1205
+  },
+  "total_entities": 413738,
+  "edges": {
+    "android_invoke_direct": 95573,
+    "android_invoke_direct_range": 7060,
+    "android_invoke_interface": 38932,
+    "android_invoke_interface_range": 1242,
+    "android_invoke_static": 177772,
+    "android_invoke_static_range": 5770,
+    "android_invoke_super": 2838,
+    "android_invoke_super_range": 52,
+    "android_invoke_virtual": 198631,
+    "android_invoke_virtual_range": 5605,
+    "contains_nested_prototype": 29857,
+    "declares_method": 254729,
+    "defines_prototype": 33272,
+    "event_addlistener": 1197,
+    "event_removelistener": 8,
+    "lua_require": 2158
+  },
+  "unresolved": {
+    "android/external_or_unresolved": 9382,
+    "lua/require_target_unresolved": 51
+  },
+  "android_callsite_resolution": {
+    "invoke_sites": 919992,
+    "resolved": 533475,
+    "external_or_unresolved": 386517
+  },
+  "important_limits": [
+    "此初始索引包括所有已恢复 Lua、DEX 和 IL2CPP 符号实体，但调用边尚未完成全语言提取。",
+    "Lua require 与事件注册依据可读反编译文本抽取；generated_unverified 模块的行号及语义需要结合字节码复核。",
+    "IL2CPP 当前记录到方法签名和地址映射；地址不是已经反编译的 C# 方法体。",
+    "Test 工具函数的副作用标签是词面筛查候选，必须沿调用链核实后才能作确定结论。",
+    "测试模式的具体运行时值及账号远端自定义配置需要运行时或配置响应证据确认。"
+  ],
+  "database": "analysis_data\\logic_index\\stage2\\logic_index.sqlite3"
+}

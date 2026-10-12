@@ -3,7 +3,6 @@
 `OnOpen` 启动开启计时后进入 Opening。计时未完成时点击返回 `ItemOpening`，不会产出；完成后转为 Opened。
 
 **字段/配表**：`m_openDuration`、`Spread_OpenDuration`、服务器时间。**源码**：`OnOpen`、`CheckSpreadState`、`UpdatePerSecond`。边界时刻和前后台切换需回放。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,11 +11,7 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例没有正在开启的计时器，此关放行。
-
-### 代入本页的值
-
-`m_state=3`，与 `Opening=2` 不相等；不发送 `ItemOpening`。
+**本页发生什么**：本例假设食品袋 105 正处于开启中，点击只显示开启中状态并等待计时完成；本次不会生成物品或扣除能量。
 
 <details><summary>本案例共同前提</summary>
 

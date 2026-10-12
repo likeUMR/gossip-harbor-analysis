@@ -1,0 +1,4 @@
+﻿layer,units,unit_label,carrier_bytes,readable_lines,secondary_lines,validation
+Lua 5.3,33272,函数原型（含嵌套）,93973970,2396819,6024167,"3,415/3,415 结构一致"
+Android / SDK,254729,去重方法签名,36603844,2674393,14851334,DEX 类均有 smali；21 个 JADX 异常文件有低层回退
+IL2CPP / 原生,78516,方法映射（含引擎/SDK）,45937800,0,11517600,可执行节全覆盖反汇编；C# 方法体未还原为源码

@@ -1,0 +1,34 @@
+# Reproducible source extracts and tool runtimes
+analysis_data/logic_index/android/
+analysis_data/logic_index/lua/decoded/
+analysis_data/logic_index/sources/
+analysis_data/logic_index/native/
+analysis_data/logic_index/stage2/il2cpp_dumper_run/
+analysis_data/logic_index/lua/modules/
+analysis_data/logic_index/lua/standalone/
+analysis_data/logic_index/lua/archives/
+analysis_data/lua_modules/
+analysis_data/lua_activity_modules/
+analysis_data/logic_index/android_methods.json
+analysis_data/logic_index/native_methods.json
+analysis_data/logic_index/lua_functions.json
+apk_extract/
+tools/logic_vendor/
+analysis_output/logic_recovery/stage3/mkdocs_site/site/
+analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/
+analysis_output/video_*.mp4
+analysis_output/*.npz
+_tmp_generator_decomp/
+tools/__pycache__/
+
+# Local credentials and environment files
+.env*
+*.pem
+*.key
+*.p12
+*.pfx
+tools/Il2CppDumper/
+archived/
+*.png
+*.jpg
+luac.out

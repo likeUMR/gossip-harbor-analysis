@@ -3,12 +3,16 @@ from __future__ import annotations
 
 import json
 import inspect
+import re
 import shutil
 import subprocess
 import textwrap
 from pathlib import Path
+from stage3_lucky_explanation import supplement_lucky_explanation
+from stage3_generator_rule_repairs import supplement_generator_rules
 
 from stage3_cases import prepare_assets, render_case
+from stage3_generator_configs import supplement
 
 ROOT = Path(__file__).resolve().parents[1]
 STAGE3 = ROOT / "analysis_output" / "logic_recovery" / "stage3"
@@ -190,14 +194,25 @@ def main() -> None:
     | 2 | 空位检查 | BoardFull；不扣能量、不改次数 | 能量检查 |
     | 3 | 能量检查 | LackEnergy；不产出 | 产出代码计算 |
     | 4 | Lucky 判断 | 未命中则进入普通产出 | Lucky 物品或普通产出 |
-    | 5 | 普通产出分派 | 根据 WeightType 选择算法 | 能量扣除 |
-    | 6 | 能量扣除与落子 | 资源不足时失败 | 次数处理 |
-    | 7 | 次数、变换与销毁 | 可能 Transform 或 CollapseItem | CD/恢复 |
-    | 8 | CD 与恢复 | 记录服务器时间和恢复状态 | 本次点击结束 |
+    | 5 | 未命中 Lucky 后，尝试活动直接产出；否则进入普通产出 | 普通路径依次执行上限修正、候选选择、链升级、活动改写、次数扣除和计时更新；Lucky / Disco 直接产出提前返回 | 实际能量扣除 |
+    | 6 | 扣能量、记录增益、最终落点与落子 | 落子派发棋盘和全局事件，并记录日志 | 母体收尾 |
+    | 7 | 变换与销毁 | 变换或一次性耗尽时结束；否则继续 | CD Buff 检查 |
+    | 8 | 尝试 CD Buff | 冷却恢复另由计时更新推进，不是每次点击都恢复 | 本次点击结束 |
 
     本页只解释整条判断链；左侧子节点分别解释每个阶段。产出计算内部再分为 Lucky 判断和五种普通产出模式，不能概括成一个随机函数。
 
     **源码证据**：[Board_Model_Item_ItemSpread.lua](/C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua)。入口及主调用顺序为 `source-confirmed`；服务端开关和动态对象身份为 `runtime-pending`。
+
+    ## 如何阅读分支与后续影响
+
+    活动改写属于产出计算内部，事件与存档则在各个执行点发生。相关说明在对应阶段提供链接，不额外增加执行步骤：
+
+    - [Lucky 判断](lucky/index.md)：说明活动资格与优先级。
+    - [普通产出](output/index.md)：按顺序说明上限修正、候选选择、升级、活动改写与次数处理。
+    - [能量扣除](energy/consume/index.md)：同时说明资源通知。
+    - [次数、变换与销毁](lifecycle/count/index.md)：同时说明状态保存和落子后的收尾。
+
+    正常点击执行一次；测试十连和点击结束后的系统通知属于入口附加分支，见[点击入口与通知](entry/index.md)。跨阶段查阅可使用[事件与监听链](events/index.md)，其中每条事件均应以实际触发位置理解。
     """)
     write("operations/generator/entry.md", """# 点击入口与测试循环
 
@@ -491,15 +506,16 @@ def main() -> None:
 
     write("operations/generator/output/index.md", """# 普通产出
 
-    Lucky 未命中（或 Lucky 活动不适用）后，`GenerateItemCode` 才进入普通产出。它先保存当前状态并调用 `_GenerateItemCode` 按 `Spread_WeightType` 分派；拿到原始代码后，再经过能量增益升级、活动改写、次数扣除和保存。也就是说，下面的五类页面解释的是“原始代码如何选”，不是最终落子代码的全部来源。
+    Lucky 未命中（或 Lucky 活动不适用）后，先尝试 Disco 直接产出；没有直接代码才进入普通产出。普通路径先修正次数与储备上限，再调用 `_GenerateItemCode` 按 `Spread_WeightType` 分派；拿到原始代码后，再经过能量增益升级、活动改写、次数扣除和保存。也就是说，下面的五类页面解释的是“原始代码如何选”，不是最终落子代码的全部来源。
 
     统一顺序是：
 
-    1. 教程强制代码（有值时直接返回）。
-    2. 按 `Fixed / Decremental / OrderItem / ChestCustomItem / SmartItem` 选择原始代码。
-    3. `SpreadCheckEnergyRatioAndCode` 根据订单缺口、棋盘已有数量和链等级决定能量增益次数，并沿 `MergedType` 链升级代码。
-    4. Disco 等活动执行 `DealActivityLimit`，可能改写代码并把次数消耗设为 0。
-    5. `CosetRestNumber` 扣母体次数，`UpdatePerSecond`、事件和存档随后执行。
+    1. [活动前置分支](../overrides/activity/index.md)：Disco 提供直接代码时立即返回，不执行下面的普通路径；否则继续。
+    2. [次数与储备上限修正](../overrides/safety/index.md)，然后读取教程强制代码（有值时跳过五类候选选择，但仍继续后续处理）。
+    3. 按 `Fixed / Decremental / OrderItem / ChestCustomItem / SmartItem` 选择原始代码。
+    4. [链升级与增益修正](../overrides/boost/index.md)：根据订单缺口、棋盘已有数量和链等级决定能量增益次数，并沿 `MergedType` 链升级代码。
+    5. [活动后置改写](../overrides/activity/detail.md)：Disco 可再次改写代码与倍率，并把次数消耗设为 0。
+    6. [扣除次数与更新状态](../lifecycle/count/index.md)，随后处理计时、状态通知与存档。这些发生在实际扣能量与落子之前。
 
     分支页面：
 
@@ -564,7 +580,7 @@ def main() -> None:
     """)
     write("operations/generator/events.md", """# 事件与后续影响
 
-    事件不是另一套成功判定，而是把已经完成的状态变化通知给棋盘、活动、统计和界面。失败事件在对应闸门立即发送；成功事件要等产出代码、能量、落子和母体收尾参数都已准备好。
+    事件不是另一套成功判定，而是把已经完成的状态变化通知给棋盘、活动、统计和界面。失败事件在对应闸门立即发送；落子事件在创建棋子之后发送，此时母体变换与销毁检查尚未执行；普通路径的次数状态通知则更早发生在产物计算期间。
 
     **失败**：`_NotifySpreadFailed` 同时调用棋盘事件 `SpreadFailed`、全局 `EEventType.SpreadFailed` 和重震动 `VibrationHeavy`。
 
@@ -629,7 +645,7 @@ def main() -> None:
         "output/smart_detail.md": ("SmartItem 的具体选择", "首次进入 SmartItem 时，以 `m_storageMaxNumber` 作为分值上限遍历 Slot 订单代码配置，只保留 `DiffScore ~= nil` 且 `DiffScore <= m_storageMaxNumber` 的代码，结果缓存到 `m_SmarOrderConfig`；缓存后不会随每次订单变化自动重建。之后调用 `SmartRewardHelper.GetCodesFor_ItemSpread(m_SmarOrderConfig, m_itemRestNumber, \"itemSpread\")`，取返回数组第一个代码，以该代码的 `DiffScore` 作为 `costCount`，缺失时为 1。它不是 `m_codeWeightPairs` 的普通权重池。"),
         "lifecycle/count_detail.md": ("次数扣除、变换和销毁顺序", "`GenerateItemCode` 在普通路径内调用 `CosetRestNumber`：`m_spreadCount += 1`；若算法返回 `costCount` 就扣该值，否则一次性母体扣 `floor(2 ^ energyBoostRatio)`，可恢复母体调用 `EnergyBoostModel:NextEnergyBoostCostIndex`，OrderItem 查找选中代码的 `Weight`。扣减下限为 0，并调用 `UpdatePerSecond`、`StateChanged`、`SaveItemProperty`。成功落子后 `TryRemoveSelf` 先判断 `m_transformNumber == m_spreadCount`，成立则 `ItemTransform:Transform()` 并停止；否则若一次性母体次数为 0，移除母体并发送 `CollapseItem`；两者都不满足才尝试 CD Buff。"),
         "lifecycle/cooldown_detail.md": ("CD、加速和恢复结算", "`UpdatePerSecond` 在 Initializing、Opening，或 Opened 且（次数不足/储备为 0）且非一次性时写入服务器时间 `m_startTimer` 并保存属性。已有计时期间，`ItemAccelerateTime` 生效会修正计时起点；`GetTimerAmount()==1` 才调用 `_UpdateRecoveryState`。初始化/开启到期转 Opened；储备为 0 时先把储备和次数补满；普通恢复把次数补满并扣除相同数量储备，储备耗尽则继续以 `m_itemRecoveryDuration` 计时。加速费用按 `(1-timerAmount)*阶段SpeedUpCost` 向上取整且至少 1，`OnTimeSkip` 修改 `m_startTimer`、保存属性并记录 BI。"),
-        "events/index.md": ("事件与后续影响总览", "事件阶段位于产出、扣能量、落子和母体状态更新之后；继续按资源事件、棋盘事件、活动/UI副作用阅读。事件不是另一个成功判定。"),
+        "events/index.md": ("事件与后续影响总览", "事件分布在失败检查、产物计算、扣能量、落子和母体收尾的各个执行点，不构成最后一个统一阶段。按资源、棋盘、活动/UI分类查阅时，必须回到各条事件的触发位置理解顺序。"),
         "events/resource.md": ("资源与属性事件", "成功扣能量通过 `PropertyDataManager:Consume` 进入 `PropertyConsumed` 链，Lucky 和 Boost 模型可监听并更新统计。源码为 `SpreadCostEnergy`、`LuckyProduceModel:_OnPropertyConsumed`。"),
         "events/board.md": ("棋盘事件", "`BoardModel:SpreadItem` 写入新棋子和来源信息；成功后发送 `VibrationLight`，母体状态通过 `ItemSpreadEventType.StateChanged` 通知视图。"),
         "events/side_effects.md": ("活动、日志和 UI 副作用", "产出后记录 EnergyBoost 比率调整数据，可能进入 Disco、GeneratorBoost、SmartProduce 或测试日志。副作用可能改变下一次点击状态，但不改变本次主流程顺序。"),
@@ -770,6 +786,30 @@ function auto_spread_once(generator):
         clone_without_case("operations/generator/" + detail,
                            "operations/generator/" + stem + "/detail.md")
     clone_without_case("operations/generator/events.md", "operations/generator/events/index.md")
+
+    contextual_links = {
+        "entry/index.md": "进一步阅读：[循环短路与通知阈值的具体算法](detail.md)。",
+        "events/index.md": "按触发点继续阅读：[扣能量时的资源事件](resource/index.md)、[落子与棋盘事件](board/index.md)、[活动与日志字段](side_effects/index.md)。",
+        "events/resource/index.md": "具体调用、参数与时序见[资源事件底层说明](detail.md)。",
+        "events/board/index.md": "具体写入与派发顺序见[棋盘事件底层说明](detail.md)。",
+        "events/side_effects/index.md": "具体字段与来源见[活动与日志底层说明](detail.md)。",
+        "overrides/activity/index.md": "具体分支与提前返回条件见[活动改写底层顺序](detail.md)。",
+        "overrides/boost/index.md": "具体循环、等级条件与数值计算见[链升级与 FishNet 底层算法](detail.md)。",
+        "overrides/safety/index.md": "具体上限、日志与清空字段见[次数与储备底层修正](detail.md)。",
+        "state/index.md": "失败发生在本阶段时立即通知棋盘、全局监听和震动，见[失败事件](../events/index.md)。",
+        "position/full/index.md": "本分支的失败通知见[事件与监听链](../../events/index.md)；它发生在产物计算之前。",
+        "lucky/index.md": "Disco 支持当前母体时会排除 Lucky，见[活动资格与执行优先级](../overrides/activity/index.md)。Lucky 成功路径提前返回，不走普通产出的次数扣除链。",
+        "energy/consume/index.md": "扣能量时触发的资源通知属于这一步，见[资源事件与监听](../../events/resource/index.md)；落子通知稍后才发生，见[落子与棋盘事件](../../events/board/index.md)。",
+        "energy/boost/index.md": "最终等级在产物计算中确定，见[链升级与 FishNet 算法](../../overrides/boost/index.md)，不能把预检查的最大消耗视为最终扣费。",
+        "lifecycle/count/index.md": "普通路径在产物计算期间先扣次数、更新计时并保存状态；落子后才检查变换与销毁。对应通知见[落子与棋盘事件](../../events/board/index.md)和[状态持久化](../../events/index.md)。",
+        "lifecycle/cooldown/index.md": "点击结束后的系统通知见[入口与通知分支](../../entry/index.md)，它不改变冷却计时。",
+    }
+    for rel, note in contextual_links.items():
+        target = DOCS / "operations/generator" / rel
+        text = target.read_text(encoding="utf-8")
+        marker = "\n\n---\n\n## 贯穿案例"
+        head, separator, tail = text.partition(marker)
+        target.write_text(head.rstrip() + "\n\n" + note + "\n" + separator + tail, encoding="utf-8")
 
     # The flat files are staging inputs for the directory pages above. Remove
     # them before the build so an old URL cannot appear as a second, unindexed
@@ -1331,12 +1371,24 @@ nav:
         "operations/generator/events.md",
         "operations/generator/events/index.md",
     )
+    # The entry, event, and override pages document real code paths, but they
+    # are cross-cutting implementation notes rather than additional stages of
+    # the player's click flow. Keep them reachable from the generator overview
+    # while removing them from the stage list in the left navigation.
+    config = re.sub(r"(?ms)^      - 点击入口与测试循环:\n.*?(?=^      - 状态检查:)", "", config)
+    config = re.sub(r"(?ms)^      - 事件与后续影响:\n.*?(?=^      - 产出改写与安全边界:)", "", config)
+    config = re.sub(r"(?ms)^      - 产出改写与安全边界:\n.*?(?=^  - 棋子拖拽与合成:)", "", config)
     # Material's navigation.indexes makes a section title a real link when
     # its first child is the section's index document.  The old labels
     # ("机制说明"/"总览") made every branch expand-only, so the reader could
     # not open the mechanism page by clicking the tree node itself.
     config = config.replace("机制说明: operations/", "operations/")
     config = config.replace("总览: operations/", "operations/")
+    supplement(DOCS)
+    supplement_lucky_explanation(DOCS)
+    supplement_generator_rules(DOCS)
+    config = config.replace("Super/Free 产出类型", "Super Lucky：奖励分类与表现")
+    config += "\nextra_css:\n  - assets/generator-configs.css\nextra_javascript:\n  - assets/generator-configs.js\n"
     (SITE / "mkdocs.yml").write_text(textwrap.dedent(config).lstrip(), encoding="utf-8")
     subprocess.run(["mkdocs", "build", "--clean", "--config-file", str(SITE / "mkdocs.yml")], cwd=SITE, check=True)
     print(f"built {SITE / 'site'}")

@@ -1,0 +1,237 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'><title>Gossip Harbor 棋盘逻辑文档</title>
+<style>
+:root{--bg:#f6f7fb;--panel:#fff;--ink:#202532;--muted:#667085;--line:#d9dee8;--accent:#2457a6;--tag:#e8f0ff;--warn:#fff4d6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}header{background:#182b49;color:#fff;padding:24px 32px;position:sticky;top:0;z-index:2}header h1{margin:0 0 5px;font-size:25px}header p{margin:0;color:#d8e4f7}nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}nav a{color:#d8e4f7;text-decoration:none;border-bottom:1px solid #7596c5}main{max-width:1250px;margin:24px auto;padding:0 22px}section,details{background:var(--panel);border:1px solid var(--line);border-radius:7px;margin:0 0 16px;box-shadow:0 1px 2px #172b4d0c}section{padding:20px}summary{cursor:pointer;padding:16px 20px;font-weight:700;font-size:18px}summary small{color:var(--muted);font-weight:400;margin-left:10px}.operation{padding:0 20px 20px}h2{margin-top:0;color:var(--accent)}h3{margin-bottom:6px}code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}code{background:#f0f2f5;padding:1px 4px;border-radius:3px}pre{background:#18212f;color:#e7edf7;padding:14px;overflow:auto;border-radius:5px}.tag{display:inline-block;background:var(--tag);color:#2457a6;border-radius:12px;padding:2px 9px;margin:3px;font-size:13px}.status{background:var(--warn);padding:9px 12px;border-left:3px solid #d99b00}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}th{background:#f4f6fa}.search{width:100%;padding:10px;border:1px solid var(--line);border-radius:5px;margin:8px 0 15px}.count{color:var(--muted)}
+</style></head><body><header><h1>Gossip Harbor 3.98.10：棋盘逻辑文档</h1><p>从玩家操作到函数、配表、状态变化和验收证据的可展开分析</p><nav><a href='#op-board_generator_tap'>点击母体棋子</a><a href='#op-board_merge'>拖拽同类棋子合成</a><a href='#op-board_order_delivery'>点击订单交付</a><a href='#audit'>覆盖审计</a><a href='#spec'>详细规格</a></nav></header><main>
+<section><h2>阅读方法</h2><p>先看操作卡片中的有序调用链，再展开详细规格中的子流程。页面把静态反编译证据、配置统计和运行时待确认项分开，避免把推断当成事实。</p></section>
+<details open id='op-board_generator_tap'><summary>点击母体棋子 <small>ItemSpread:OnTap</small></summary>
+        <div class='operation'><h3>执行顺序</h3><ol><li><code>CheckSpreadState</code></li><li><code>CheckSpreadPosAndAuto</code></li><li><code>CheckEnergy</code></li><li><code>GenerateItemCode</code></li><li><code>SpreadCostEnergy</code></li><li><code>MainBoardModel:SpreadItem</code></li><li><code>TryRemoveSelf</code></li><li><code>TryUseCDBuff</code></li></ol><h3>分支覆盖</h3><div><span class='tag'>普通加权产出</span><span class='tag'>递减池</span><span class='tag'>订单导向</span><span class='tag'>箱子自定义</span><span class='tag'>SmartItem</span><span class='tag'>Lucky</span><span class='tag'>Disco</span><span class='tag'>能量增益</span><span class='tag'>鱼网智能产出</span><span class='tag'>CD/恢复</span><span class='tag'>棋盘满/能量不足</span></div>
+        <p class='status'>证据状态：source_confirmed_static; runtime_identity_and_server_flags_require_stage3_replay</p></div></details><details open id='op-board_merge'><summary>拖拽同类棋子合成 <small>MainBoardModel:DragItem</small></summary>
+        <div class='operation'><h3>执行顺序</h3><ol><li><code>CanItemMerge</code></li><li><code>MainBoardModel:_DoMergeItem -&gt; inherited BaseBoardModel:_DoMergeItem</code></li><li><code>ReplaceItem</code></li><li><code>ItemMerged event</code></li><li><code>activity merge hooks</code></li><li><code>Temp/Card/EnergyBubble/Bubble/Coin side effects</code></li><li><code>UpdateOrderState</code></li></ol><h3>分支覆盖</h3><div><span class='tag'>特殊棋子 LevelUp/LevelDown</span><span class='tag'>普通合成</span><span class='tag'>活动临时棋子</span><span class='tag'>卡牌棋子</span><span class='tag'>能量气泡</span><span class='tag'>订单气泡概率</span><span class='tag'>最低链等级喷金币</span><span class='tag'>棋盘满</span></div>
+        <p class='status'>证据状态：source_confirmed_static; activity/server-controlled branches require runtime replay</p></div></details><details open id='op-board_order_delivery'><summary>点击订单交付 <small>BaseOrderCell:OnGoButtonClicked</small></summary>
+        <div class='operation'><h3>执行顺序</h3><ol><li><code>CanDeliver(codeCountMap)</code></li><li><code>MainBoardModel:FinishOrder</code></li><li><code>AcquireRewardsLogic</code></li><li><code>RemoveOrderRequirementItems(board-first, inventory-second)</code></li><li><code>SlotOrderModel:FinishOrder</code></li><li><code>fill next orders</code></li><li><code>UpdateOrderState</code></li><li><code>FinishOrder event/network upload</code></li></ol><h3>分支覆盖</h3><div><span class='tag'>特殊/分支订单</span><span class='tag'>主订单奖励</span><span class='tag'>亲密度礼物</span><span class='tag'>Buff/OrderBoost/CookingFrenzy奖励</span><span class='tag'>延迟奖励</span><span class='tag'>幸运订单触发</span><span class='tag'>难度累计分</span><span class='tag'>订单补位</span></div>
+        <p class='status'>证据状态：source_confirmed_static; server responses and asynchronous UI timing require runtime replay</p></div></details>
+<section id='audit'><h2>覆盖审计</h2><p class='count'>模块：10；操作入口：3；已索引函数：45；配置表：2</p><table><thead><tr><th>配置表</th><th>统计</th></tr></thead><tbody><tr><th>ItemModelConfig</th><td>{"rows": 548, "spread_rows": 163, "merge_rows": 370, "bubble_rows": 138}</td></tr><tr><th>OrderItemConfig</th><td>{"rows": 74, "diff_min": 2, "diff_max": 3000}</td></tr></tbody></table><h3>明确的剩余验证项</h3><ul><li>动态对象身份和继承分派需运行时确认</li><li>服务端下发的 Lucky/Boost/活动开关需按真实账号状态回放</li><li>异步回调、动画时序、网络失败重试需运行时记录</li><li>原版与复刻版需进行同输入差分回放</li></ul></section>
+<section><h2>源函数索引</h2><input class='search' placeholder='过滤文件或函数名' oninput="filterRows(this.value)"><table id='functions'><thead><tr><th>文件</th><th>函数</th><th>行</th></tr></thead><tbody><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:Init</code></td><td>25</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_LoadFileConfig</code></td><td>32</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:CalculateItemChainMap</code></td><td>45</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_LoadOtherServerConfig</code></td><td>71</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_OnStateChanged</code></td><td>86</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:LateInit</code></td><td>93</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_DropData</code></td><td>97</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:UpdatePerSecond</code></td><td>102</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_OnPropertyConsumed</code></td><td>107</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:GetGeneratorBoostConfig</code></td><td>113</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:ReloadFileConfig</code></td><td>123</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:Try2ProduceLuckyItem</code></td><td>138</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetGenerateLuckyItem</code></td><td>215</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetLevelFitConfig</code></td><td>237</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:IsSuperLuckyProduce</code></td><td>250</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetTotalLeftSpreadCount</code></td><td>258</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_SetTotalLeftSpreadCount</code></td><td>265</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetLuckyLeftSpreadCount</code></td><td>272</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_SetLuckyLeftSpreadCount</code></td><td>279</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_ClearLuckyLeftSpreadCount</code></td><td>286</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_ClearTotalLeftSpreadCount</code></td><td>293</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_UseSmartProduce</code></td><td>300</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_UpdateSpreadConfigSmartWeight</code></td><td>304</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_InitEnergyBoostRatioAdjustData</code></td><td>333</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:GetAdjustedMaxEnergyBoostRatio</code></td><td>338</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:RecordBoostRatioAdjustData</code></td><td>352</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_IsSpecialModeOn</code></td><td>366</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_UpdateSpecialModeData</code></td><td>370</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_ClearSpecialModeData</code></td><td>378</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetEnergyCostCount</code></td><td>383</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_AddEnergyCostCount</code></td><td>387</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_GetCurLuckyProduceConfigIndex</code></td><td>395</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CalculateLuckyProduceConfigIndex</code></td><td>399</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CheckLuckyProduceConfigIndex</code></td><td>411</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CheckIfNeedResetEnergyCost</code></td><td>419</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_ResetEnergyCost</code></td><td>428</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_AddFreeLuckyProduceEnergyCostCount</code></td><td>436</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CanFreeLuckyProduce</code></td><td>451</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_PostProcessOnFreeLuckyProduce</code></td><td>455</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_Try2TriggerContiLuckyProduce</code></td><td>460</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_TriggerContiLuckyProduce</code></td><td>477</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CLearContiLuckyProduceData</code></td><td>484</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_CanContiLuckyProduce</code></td><td>491</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:_PostProcessOnContiLuckyProduce</code></td><td>502</td></tr><tr><td>decompiled.lua</td><td><code>LuckyProduceModel:GetTestInfo</code></td><td>520</td></tr></tbody></table></section>
+<section id='spec'><h2>详细规格正文</h2><h2 id=''>棋盘操作详细规格</h2>
+<p>这份规格是对 <code>BOARD_OPERATIONS_ANALYSIS.md</code> 的底层展开。阅读顺序是：玩家操作 -&gt; 子流程 -&gt; 伪代码 -&gt; 配置字段 -&gt; 状态和事件 -&gt; 验收用例。</p>
+<h3 id='0'>0. 覆盖边界</h3>
+<p>本规格覆盖主棋盘的三种操作：</p>
+<ul>
+<li>棋子拖拽：移动、交换、特殊棋子影响、普通合成、吞噬。</li>
+<li>母体点击：状态、空位、能量、Lucky、五类普通产出、增益、CD、落子和销毁。</li>
+<li>订单提交：需求验证、奖励、棋子扣除、订单完成、补位和同步。</li>
+</ul>
+<p>源码证据索引：</p>
+<ul>
+<li>[ItemSpread.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Item_ItemSpread.lua)</li>
+<li>[MainBoardModel.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Board_MainBoardModel.lua)</li>
+<li>[BaseBoardModel.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce.lua)</li>
+<li>[LuckyProduceModel.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505.lua)</li>
+<li>[BaseOrder.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Order_BaseOrder.lua)</li>
+<li>[MainOrderModel.lua](C:/Users/TU/Documents/ChatGPT/Gossip_Harbor_Analysis/analysis_output/logic_recovery/stage3/Board_Model_Order_MainOrderModel.lua)</li>
+<h3 id='1'>1. 母体点击</h3>
+<h4 id='1-1'>1.1 完整时序</h4>
+<pre><code>ItemSpread:OnTap
+  1. 计算本次点击循环次数
+  2. CheckSpreadState
+  3. CheckSpreadPosAndAuto
+  4. CheckEnergy
+  5. GenerateItemCode
+     5.1 CheckLuckyProduce
+     5.2 Disco 特殊产出
+     5.3 _GenerateItemCode
+     5.4 SpreadCheckEnergyRatioAndCode
+     5.5 DealActivityLimit
+     5.6 CosetRestNumber
+     5.7 UpdatePerSecond / 保存棋子属性
+  6. SpreadCostEnergy
+  7. MainBoardModel:SpreadItem
+  8. TryRemoveSelf
+  9. TryUseCDBuff</code></pre>
+<p>关键点：能量检查发生在产出算法之前；产出算法可能决定代码和能量增益倍率，但不会绕过空位检查；落子完成后才扣除母体剩余次数。</p>
+<h4 id='1-2'>1.2 状态机</h4>
+<p>| 状态 | 进入条件 | 点击结果 | 计时字段 |</p>
+<p>|---|---|---|---|</p>
+<p>| Initializing | <code>Spread_InitDuration</code> 存在 | 失败，非一次性报告 Recharging | <code>m_initDuration</code> |</p>
+<p>| Closed | 只有 <code>Spread_OpenDuration</code> 的母体初始状态 | 失败，报告 ItemClosed | 无 |</p>
+<p>| Opening | 调用 <code>OnOpen</code> | 失败，报告 ItemOpening | <code>m_openDuration</code> |</p>
+<p>| Opened | 初始化/打开计时完成 | 允许产出；剩余数不足时启动恢复 | <code>m_itemRecoveryDuration</code> 或 <code>m_storageRecoveryDuration</code> |</p>
+<p><code>UpdatePerSecond</code> 以服务器时间计算 <code>elapsed / duration</code>，结果限制在 0 到 1。计时完成后，Initializing/Opening 转为 Opened；储备恢复分支补回 <code>m_itemRestNumber</code> 并减少 <code>m_storageRestNumber</code>。</p>
+<h4 id='1-3'>1.3 空位算法</h4>
+<p>1. 一次性母体：<code>FindRandomPosition()</code>，从随机空位落子。</p>
+<p>2. 可恢复母体：<code>FindEmptyPositionInCircleOrder(sourcePosition)</code>，以源棋子为中心按圆周顺序寻找。</p>
+<p>3. 自动母体：先用 <code>FindSpreadPosition</code> 尝试自动落点；没有落点时，一次性递减母体在 <code>AutoSpreadToCache</code> 开关开启时可把剩余代码放入缓存。</p>
+<p>4. 主动点击若没有有效落点，触发 <code>SpreadFailed(BoardFull)</code>，不扣能量、不改次数。</p>
+<h4 id='1-4'>1.4 能量算法</h4>
+<pre><code>costEnergy = (Spread_CostEnergy == 1)
+若 Disco 对当前母体生效，则 costEnergy = false
+若不需要能量：返回 (true, 0, false)
+读取 GetCostEnergyNum(itemType)
+  -&gt; 基础消耗 nCostNum
+  -&gt; 最大 EnergyBoost 倍率 nEnergyBoostRatio
+余额不足：LackEnergy，停止
+余额足够：允许产出
+实际扣除 = EnergyBoostModel.GetBoostCostNum(energyBoostRatio)</code></pre>
+<p><code>SpreadCostEnergy</code> 使用 <code>PropertyDataManager:Consume</code> 扣除主棋盘对应能量，并以 <code>EBIType.SpreadItem</code> 记录 BI。Lucky、Disco、GeneratorBoost 可能改变 <code>energyBoostRatio</code> 或 <code>costEnergy</code>，这些变化必须记录在运行时回放中。</p>
+<h4 id='1-5-lucky'>1.5 Lucky：机会池和物品池是两套不同语义</h4>
+<h5 id=''>机会池</h5>
+<p>每种源母体类型独立保存两个数据库字段：</p>
+<ul>
+<li>`tl_&lt;sourceType&gt;`：当前周期剩余总机会。</li>
+<li>`ll_&lt;sourceType&gt;`：当前周期剩余 Lucky 机会。</li>
+<pre><code>total = tl_&lt;type&gt; 或 0
+lucky = ll_&lt;type&gt;
+若 total == 0:
+    total = config.lucky_chance[1]
+    lucky = config.lucky_chance[2]
+    保存 lucky
+index = Random(1, total)       # 两端包含
+hit = (index &lt;= lucky)
+若 hit:
+    lucky = lucky - 1
+    保存 lucky
+若不是免费 Lucky:
+    total = total - 1
+    保存 total</code></pre>
+<p>这是等价于“有限数量成功签 + 普通签，不放回抽取”的计数器实现。它不是每次都用固定概率重新独立抽样。</p>
+<h5 id='lucky'>Lucky 物品池</h5>
+<p>命中后从 <code>config.lucky_items</code> 调用 <code>Table.ListWeightSelectOne</code>。该调用只按累计权重选出一个对象，不删除对象、不减少 <code>Weight</code>，所以同一个 Lucky 物品可以在连续点击中再次出现。</p>
+<p>Smart Produce 开启时，先根据订单缺口和能量增益等级，把符合条件的权重乘 <code>m_smartProduceRatio</code>，再进行一次累计权重抽样。</p>
+<h5 id='lucky'>免费和连续 Lucky</h5>
+<ul>
+<li>免费阈值队列存储在 `elpec`；每次能量段用 `MathUtil.RandomN(rangeSize, min(rangeSize, extra_lucky))` 生成不重复位置，排序后追加到队列。</li>
+<li>免费 Lucky 消耗队首阈值，不减少 `tl_&lt;type&gt;`。</li>
+<li>特殊模式使用 `clpit`、`clpmc`、`clpc`、`clpeet` 保存连续 Lucky 的目标类型、最大次数、当前次数和到期时间。</li>
+<li>`triple_lucky_chance` 先与 `Random(1,10000)` 比较；未命中才检查 `double_lucky_chance`。</li>
+<li>连续 Lucky 有效期为服务器时间加 10 秒。</li>
+<h4 id='1-6'>1.6 五类普通产出</h4>
+<p>| WeightType | 算法 | 候选是否变化 | 次数消耗 |</p>
+<p>|---|---|---|---|</p>
+<p>| Fixed | 固定产出模型；可被 SmartProduce 替换 | 配置不变 | 普通能量增益索引 |</p>
+<p>| Decremental | 按权重抽取后 <code>Weight -= 1</code>，归零删除 | **变化；不放回权重单位** | 普通母体规则 |</p>
+<p>| OrderItem | 订单缺口候选按 <code>min(DiffScore,300)</code> 加权，Boost 缺口乘 1000；失败候选删除后重试 | **候选不放回** | 选中代码对应权重 |</p>
+<p>| ChestCustomItem | <code>GenerateChestCustomCodeRule</code> 生成代码，消耗该代码 DiffScore | 由箱子规则控制 | DiffScore |</p>
+<p>| SmartItem | 取 DiffScore 不超过 <code>Spread_StorageMaxNumber</code> 的订单棋子，调用 SmartRewardHelper | 由辅助算法决定 | 选中 DiffScore 或 1 |</p>
+<p>本地 <code>ItemModelConfig.json</code> 共 548 行，其中 163 行含 Spread 字段：Fixed 97、Decremental 54、OrderItem 6、ChestCustomItem 1、SmartItem 5。全部 Spread 行已经在现有配置索引中保留，不能只抽样说明。</p>
+<h4 id='1-7'>1.7 次数扣除、变换和销毁</h4>
+<p><code>CosetRestNumber</code> 先增加 <code>m_spreadCount</code>。一次性母体的默认扣除是 <code>floor(2 ^ energyBoostRatio)</code>；普通母体通过 <code>EnergyBoostModel:NextEnergyBoostCostIndex</code> 获取扣除量；OrderItem 使用命中代码的权重作为扣除量。</p>
+<p><code>TryRemoveSelf</code> 的顺序是：</p>
+<p>1. 若 <code>m_transformNumber == m_spreadCount</code>，执行 ItemTransform，不删除母体。</p>
+<p>2. 否则若剩余次数为 0 且母体不可恢复，删除棋子并发出 CollapseItem。</p>
+<p>3. 其他情况保留母体。</p>
+<h3 id='2'>2. 棋子拖拽和合成</h3>
+<h4 id='2-1'>2.1 拖拽分派顺序</h4>
+<pre><code>目标位置非法 -&gt; 恢复原位
+源位置对象不是拖拽对象 -&gt; 恢复原位
+目标为空 -&gt; 移动、更新加速、ItemMoveEnd
+CanItemAffect 成立 -&gt; LevelUp/LevelDown 确认回调
+CanItemMerge 成立 -&gt; 合成
+目标 ItemSwallow 可吞噬 -&gt; Swallow
+目标不可移动 -&gt; 恢复原位
+否则 -&gt; 交换两个棋子</code></pre>
+<p><code>CanItemMerge</code> 要求两个棋子类型相同，并且至少一个棋子的 <code>MergedType</code> 非空；若棋子带 ItemSpread 且一次性箱子已经使用过，也不能合成。</p>
+<h4 id='2-2'>2.2 基础合成</h4>
+<p>基础实现位于 BaseBoardModel 的 <code>_DoMergeItem</code>，主棋盘通过 MainBoardModel 扩展。目标位置被替换为 <code>MergedType</code>，源棋子被移除，新棋子保存属性。随后发送：</p>
+<ul>
+<li>`BoardEventType.MergeItem`；</li>
+<li>`EEventType.ItemMerged`；</li>
+<li>合成日志和活动监听。</li>
+</ul>
+<p><code>ItemGeneratorFactoryModel</code> 会监听 ItemMerged 并更新生成器工厂相关状态；ScoreRace 等活动也会在主棋盘扩展合成函数中得到合成分数。</p>
+<h4 id='2-3'>2.3 合成副产物顺序</h4>
+<pre><code>新棋子生成
+  -&gt; TempItem.GenerateType
+  -&gt; CardItem.TryGenerateItem
+  -&gt; EnergyBubble.CanSpreadEnergyBubble
+  -&gt; _TrySpreadBubbleByMerge
+  -&gt; SystemConfig.SpreadCoinMinChainLevel 检查金币</code></pre>
+<p>前四种副产物通过 <code>hasCreateItem</code> 互斥；金币检查在互斥流程之后独立执行。每一步都必须有空位，否则跳过该副产物。</p>
+<h4 id='2-4'>2.4 普通气泡的精确计算顺序</h4>
+<pre><code>若 Bubble 功能未开启：结束
+p = newItem.BubbleChance
+若已有相同 inner bubble：取消
+否则若购买气泡加成成立：p = 100
+否则若订单需求加成成立：p = 100
+否则：
+    p = p * 高等级棋子衰减
+    p = p * 订单缺口衰减
+    p = p * BubbleDecreaseModel 全局衰减
+    p = max(p, 1)
+若 TestBubbleMustSpread：p = 100
+r = Random(100)
+若 p &gt;= r：生成 Bubble + newItem.Type</code></pre>
+<p><code>BubbleChance</code> 是棋子自身的基础百分比；BubbleDecrease、订单衰减和购买加成的实际值可能来自服务端配置，必须在运行时配置快照中记录。</p>
+<h4 id='2-5'>2.5 特殊棋子和吞噬</h4>
+<ul>
+<li>LevelUp：确认后移除特殊棋子，将目标替换为目标的 MergedType。</li>
+<li>LevelDown：普通目标拆成两个前一级棋子；两个 LevelDown 目标会合并拆分使用次数。</li>
+<li>ItemSwallow：按两个 `Swallow_Weight` 生成目标代码，逐个吞噬后保存进度；两个目标的吞噬数量都达到配置值才 Transform。</li>
+<li>吞噬批处理扫描有效棋盘位置，不随机打乱扫描顺序。</li>
+<h3 id='3'>3. 订单提交</h3>
+<h4 id='3-1'>3.1 需求可交付判断</h4>
+<p>订单按钮调用 <code>GetCodeCountMap(true,false,false)</code> 后进入 <code>BaseOrder:CanDeliver</code>。对第 <code>i</code> 个需求，先统计该代码在前 <code>i</code> 项中出现了几次，再要求库存数量至少达到该出现次数。因此重复需求不会被集合去重。</p>
+<h4 id='3-2'>3.2 奖励和扣除顺序</h4>
+<pre><code>MainBoardModel:FinishOrder
+  -&gt; Special/Branch 专用完成分支
+  -&gt; GetOrderRewardByFinishOrder
+  -&gt; 立即发放主奖励
+  -&gt; 发放亲密度礼物
+  -&gt; 发放 Buff 奖励
+  -&gt; OrderBoost / CookingFrenzy / ChestCustomer 副作用
+  -&gt; RemoveOrderRequirementItems
+  -&gt; 发放延迟奖励
+  -&gt; 所属订单模型 FinishOrder
+  -&gt; 补位、UpdateOrderState、OrderFinished
+  -&gt; 同步上传和 BoardEventType.FinishOrder</code></pre>
+<h4 id='3-3'>3.3 棋子移除</h4>
+<p>每个需求独立处理：</p>
+<p>1. 按有效棋盘位置顺序找第一个相同代码。</p>
+<p>2. 找到则 <code>RemoveItem(item)</code>，并记录 <code>RemovedFromBoard</code>。</p>
+<p>3. 棋盘找不到才扫描仓库，移除第一个相同代码，记录 <code>RemovedFromInventory</code>。</p>
+<p>4. 每项之后重新 <code>CountItemsCode</code> 和 <code>UpdateOrderState</code>。</p>
+<p>5. 两处都找不到时记录 <code>FinishOrderRemoveItemError</code>。</p>
+<h4 id='3-4-lucky'>3.4 订单完成后的 Lucky</h4>
+<p><code>MainOrderModel:FinishOrder</code> 读取当前订单类型的 <code>LuckyTriggerChance</code>，调用 <code>MathUtil.Random()</code> 比较；订单已经标记为 Lucky 时直接允许连续触发。这个 Lucky 与母体产出的 LuckyProduce 是独立机制，不能共用同一个机会池。</p>
+<h3 id='4'>4. 配置全量索引要求</h3>
+<p>本三类操作的配置入口至少包括：</p>
+<ul>
+<li>`ItemModelConfig`：548 行；其中 163 行为母体配置，370 行含 MergedType，138 行 BubbleChance 大于 0。</li>
+<li>`OrderItemConfig`：74 行，DiffScore 为 2 到 3000。</li>
+<li>`OrderFixedConfig`、`OrderRandomConfig`、`OrderRandomRecallConfig`：订单创建和刷新。</li>
+<li>`LuckyProduceConfig`：`lucky_chance`、`lucky_items`、`super_items`、等级区间。</li>
+<li>`SystemConfig`：`SpreadCoinMinChainLevel` 等全局开关。</li>
+<li>服务端 GeneralConf：BubbleDecrease、FishNetProduceSmart、AdjustLuckyProduceBoostRatio 等。</li>
+</ul>
+<p>服务端配置不能在本地文件缺失时默认为“不存在”；必须标记为“客户端代码存在、当前包体未提供实际值、需要运行时快照”。</p>
+<h3 id='5'>5. 三类操作的验收矩阵</h3>
+<h4 id=''>母体点击</h4>
+<ul>
+<li>五种 WeightType 各选一个完整生命周期。</li>
+<li>Lucky 机会池从初始化抽到 `total=0`，验证计数器递减。</li>
+<li>Lucky 物品连续抽样，验证配置权重不被删除。</li>
+<li>普通、免费、Double、Triple Lucky 分别回放。</li>
+<li>Initializing、Closed、Opening、Recharging、BoardFull、LackEnergy 全部覆盖。</li>
+<li>EnergyBoost、GeneratorBoost、Disco、SmartProduce、FishNetProduceSmart 分别开关验证。</li>
+<li>一次性母体耗尽、可恢复母体储备耗尽、TransformNumber 到达分别验证。</li>
+<h4 id=''>拖拽和合成</h4>
+<ul>
+<li>空位移动、普通交换、不可移动目标。</li>
+<li>普通同类合成、不同类拖拽、已使用箱子合成。</li>
+<li>LevelUp、LevelDown、ItemSwallow。</li>
+<li>Temp、Card、EnergyBubble、Bubble、Coin 副产物逐项触发。</li>
+<li>棋盘满时各副产物的跳过行为。</li>
+<li>气泡基础概率、订单修正、购买修正、全局衰减和最低值修正。</li>
+<h4 id=''>订单提交</h4>
+<ul>
+<li>单需求、多需求、重复需求。</li>
+<li>全部来自棋盘、全部来自仓库、棋盘和仓库混合。</li>
+<li>不足需求、确认窗口、取消确认。</li>
+<li>主奖励、延迟奖励、亲密度、Buff、OrderBoost、CookingFrenzy。</li>
+<li>Special、Branch、Lucky、Timed、Contiorder 等不同订单类型。</li>
+<li>完成后补位、订单状态更新、事件和同步上传。</li>
+<h3 id='6'>6. 当前验收状态</h3>
+<p>静态层面：入口、调用顺序、状态变化、随机语义和本地配置索引已建立。  </p>
+<p>尚未达到最终运行时验收：服务端配置实际值、动态活动对象身份、异步回调时序、网络失败分支，以及原版与复刻版逐字段差分仍需第三阶段回放确认。</p></section>
+</main><script>function filterRows(q){q=q.toLowerCase();document.querySelectorAll('#functions tbody tr').forEach(r=>r.style.display=r.innerText.toLowerCase().includes(q)?'':'none')}</script></body></html>

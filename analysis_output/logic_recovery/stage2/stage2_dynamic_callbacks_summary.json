@@ -1,0 +1,17 @@
+{
+  "parsed_modules": 3415,
+  "parse_errors": [],
+  "calls": 411,
+  "assignments": 644,
+  "links": 273,
+  "unlinked_calls": 195,
+  "by_assignment_kind": {
+    "function_literal": 214,
+    "value_expression": 430
+  },
+  "database": "analysis_data/logic_index/stage2/dynamic_callbacks.sqlite3",
+  "limitations": [
+    "Callback naming is a discovery heuristic, not exhaustive callback detection.",
+    "Matching field expressions do not prove the same object, lifetime, assignment order or active target."
+  ]
+}

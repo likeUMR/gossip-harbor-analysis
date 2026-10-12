@@ -1,0 +1,31 @@
+{
+  "title": "阶段二玩家交互触发索引",
+  "method": "对全部 Lua 模块进行字符串/注释屏蔽后的源码扫描，并按最近命名函数记录触发点；结果是定位候选，不等同于运行时必然执行",
+  "modules": 3415,
+  "source_states": {
+    "available": 3415
+  },
+  "trigger_rows": 7572,
+  "by_kind": {
+    "async_or_callback": 1673,
+    "bridge": 2811,
+    "event": 3088
+  },
+  "by_operation": {
+    "async_or_callback/schedule_or_callback": 1673,
+    "bridge/lua_to_runtime_or_module": 2811,
+    "event/AddListener": 1612,
+    "event/DispatchEvent": 1443,
+    "event/RemoveListener": 33
+  },
+  "by_callback_shape": {
+    "inline_function": 3328,
+    "named_or_expression": 2800,
+    "none": 1444
+  },
+  "database": "analysis_data/logic_index/stage2/interaction_triggers.sqlite3",
+  "limitations": [
+    "函数归属使用最近命名函数；匿名闭包和动态函数值需结合 AST/运行时继续确认。",
+    "事件名、回调参数和延迟参数可能由表达式计算，当前保留原始行作为证据。"
+  ]
+}

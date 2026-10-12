@@ -1,0 +1,3835 @@
+{
+  "title": "阶段二静态事件覆盖矩阵",
+  "event_names": 424,
+  "status_counts": {
+    "balanced": 381,
+    "dispatch_without_listener": 33,
+    "listener_without_dispatch": 10
+  },
+  "unresolved_by_reason": {
+    "事件表达式由字段或运行时配置计算，无法静态归一化": 686,
+    "回调表达式不是当前模块可唯一解析的方法，可能是动态对象、继承、匿名函数或跨语言桥接": 254
+  },
+  "events": [
+    {
+      "event_name": "AccountBindSuccess",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AccountLogout",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AccountNewBind",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AccumPayAddScore",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "AccumPayStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AccumPayTakeReward",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "AcquireMedal",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AcquireWeeklyStar",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AdvanceNewDay",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AdvanceTaskFinish",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumFiveStarCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumFourStarCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumGradeCompleted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumOneStarCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumRoyalEnd",
+      "add_listener": 20,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 21,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumRoyalModuleInited",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumRoyalStart",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumThreeStarCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumTutorialStarted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumTwoStarCardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlbumUnpackAnimFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AliPayAddShortcutStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AlipaySetHomeRevisitStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ApplicationDidEnterBackground",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ApplicationWillEnterForeground",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AvatarFrameChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AvatarPreviewWindowCloseClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "AvatarSelected",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BakeOutCoinExchanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BakeOutModeChanged",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BakeOutStateChanged",
+      "add_listener": 8,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 9,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BingoAllFinish",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "BingoBallNumChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BingoClickBall",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BingoScoreChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BingoStateChanged",
+      "add_listener": 5,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BoardCacheRootClicked",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BoardCacheRootTurnToHide",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BoardCollect",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 9,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BoardPointerUp",
+      "add_listener": 7,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 9,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BoardStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BranchStart",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "BreakPropUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BubbleBroken",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BubbleDisappear",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BubbleSaleStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BubbleSpread",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffNoZeroCDPlayAct",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffPropertyAcquire",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffPropertyConsume",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffPropertyOutTime",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffPropertyWaitExpiredTime",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuffPropertyWillConsume",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BundleDataRefreshed",
+      "add_listener": 26,
+      "remove_listener": 0,
+      "dispatch_event": 66,
+      "post_event": 0,
+      "total_sites": 92,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ButterflyClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ButterflyDelayScroll",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuyEnergyBonusStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "BuyEnergyProgressStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CacheItems",
+      "add_listener": 12,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 17,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CalendarAllFinished",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CalendarGiftClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CalendarRefreshState",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CalendarStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CalendarTodayFinished",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CannonRewardTrigger",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardItemFirstPopWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardItemGenerate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardItemMergeAniFinish",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardItemStateChanged",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardItemUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardProgressPackAllRewardTaken",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardProgressPackBuySuccess",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardProgressPackNewUnlocked",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CardProgressPackStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CardProgressPackTakeReward",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CardProgressPackTaskFin",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CashDashLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChainEnergyConfigChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChangeCachedItems",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 8,
+      "post_event": 0,
+      "total_sites": 11,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChangeGameMode",
+      "add_listener": 33,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 34,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChangeMapSunShine",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CharacterIntimacyCharacterGiftSourceChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CharacterIntimacyGiftSelected",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CharacterIntimacyStateChanged",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CharacterIntimacyUntakenRewardNumberChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CharacterIntimacyUpdateEntryTips",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CheckInStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CheckinDay",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CheckinFinish",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChestCustomItemRewardTipShow",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ChestCustomerOrderCreate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChestCustomerOrderFinish",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChestCustomerShowTip",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ChestCustomerStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CloseView",
+      "add_listener": 70,
+      "remove_listener": 4,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 75,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CoinRaceRoundReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "CoinRaceStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "ComboRankChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "ComboRefreshEntry",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ComboWaitSignUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "CookingFrenzyAddScore",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "CookingFrenzyBuffChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CookingFrenzyFirstBuff",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CookingFrenzyStartTutorial",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CookingFrenzyStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CookingFrenzyTriggerChanged",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CustomerUpgradeActive",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CustomerUpgradeRewardAcquired",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CustomizeCardDataChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "CustomizeCardStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigBoardInit",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigFlyScoreFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigOreCollapse",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigPlayScoreFlyAnimation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigPropUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "DigScoreLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnergyBoostModeChanged",
+      "add_listener": 9,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 14,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnergyBoostRefresh",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "EnergyBubbleStateChanged",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "EnergyChanged",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnergyGemStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnergyInfiniteAcquire",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnergyRestored",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "EnterMainScene",
+      "add_listener": 15,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 17,
+      "status": "balanced"
+    },
+    {
+      "event_name": "Exclamation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ExtraCustomerAccepted",
+      "add_listener": 1,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ExtraCustomerRejected",
+      "add_listener": 2,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ExtraCustomerStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FBShareLinkReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmPropUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardAnimalProduced",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardBlockProduced",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardBoardPromptStarted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardBoardPromptStopped",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardCancelPrompt",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardStartPrompt",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 11,
+      "post_event": 0,
+      "total_sites": 12,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardSwitchBlockMultiple",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FarmboardUnlockBlockMultiple",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FavoriteItemChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FireworksWindowCloseClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceFail",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceFinishedAll",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceFullScoreWithoutNet",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceRobotArrive",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceScoreChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceSignUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceStateChanged",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FloatRaceWaitSignUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FlyingElementClear",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FogKeyItemTap",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FogUnlocked",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ForceRebuildStoryWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ForceTryFillOrders",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallChainLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallClearTargetBeatenCount",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallRandomLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallTargetBeaten",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallTokenUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FreefallUnlockMedal",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "FunctionOpen",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GameClubNewDay",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GameClubStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GameModeChangeFinished",
+      "add_listener": 44,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 46,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GameModeWillChange",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GemConsumed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GemDiscountStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorBoostBuffActiveAniEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorBoostBuffActiveLogic",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "GeneratorBoostBuffActivePlayed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorBoostBuffCleared",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorFactoryStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorFactoryTabBoardItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorFactoryTabButtonRedUpdate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GeneratorFactoryTabGenButton",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GoldMatchStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GoldScoreAcquired",
+      "add_listener": 9,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 10,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GrowthBenefitStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "GrowthBenefitTakeReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HideEditSlider",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HideTaskBubble",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HighlightHud",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 10,
+      "post_event": 0,
+      "total_sites": 12,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HitBricksFireworkProgressAdd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HitBricksFireworkProgressUpdate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HitBricksFireworkRelease",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HitBricksPropUsed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "HudGeneralButtonSetActive",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "IAPSuccess",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InitVideoFinished",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 6,
+      "post_event": 0,
+      "total_sites": 8,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InventoryItemClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InventoryItemUpdate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InventoryNewSlot",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InventoryStoryItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InventoryWindowUpdate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InvitationStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "InviteFriendsStateChanged",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ItemActivated",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ItemClearToolOnTap",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemClick",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemDig",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemDigOnTap",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemFlyTarget",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 8,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemGenByUIEnergy",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemMerged",
+      "add_listener": 39,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 42,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemMoveEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemOpened",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemOpening",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemRetrieved",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ItemShocked",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ItemSpread",
+      "add_listener": 28,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 30,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemSwallow",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemTransform",
+      "add_listener": 9,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 11,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ItemUnlocked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "JokerUpdateExchangeSelect",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "LetterStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "LevelUp",
+      "add_listener": 17,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 19,
+      "status": "balanced"
+    },
+    {
+      "event_name": "LightUpBook",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "LoginFinished",
+      "add_listener": 33,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 34,
+      "status": "balanced"
+    },
+    {
+      "event_name": "LoginRandomBuffTrigger",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainDecorNewChangeDecorationTutorial",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainDecorNewSkinUnlock",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainDecorNewTokenNumberChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainDecorProgressComplete",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainDecorTokenNumberChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainOrderCreated",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainTaskFinished",
+      "add_listener": 18,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 19,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MainTaskUpdate",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MapExploreCostEnergy",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MapExploreEndRefresh",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MapExploreEndTransition",
+      "add_listener": 1,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MapExploreStar",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MapExploreTask",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MissionHideEffect",
+      "add_listener": 1,
+      "remove_listener": 2,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MissionTaskStateChange",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "MultiboardsUnlockPortalAnimationFinished",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NChooseOneRewardAcquireReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NChooseOneRewardWindowClosed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NewExtraCustomerCreated",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NewInvitedFriend",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NewReturnRewardNewDay",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "NoviceTaskTaskProgress",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "OnAdEnd",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OnViewWillClose",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OpenView",
+      "add_listener": 99,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 100,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostCannonTutorialEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostFillOrder",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostFinishedAll",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "OrderBoostProCountdownTip",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostProEnd",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostProStart",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostRefreshEntry",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostSmileAddScore",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 8,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostSmileChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostStartTutorial",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderBoostStateChanged",
+      "add_listener": 9,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 10,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderFinished",
+      "add_listener": 20,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 22,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderStateChanged",
+      "add_listener": 8,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 9,
+      "status": "balanced"
+    },
+    {
+      "event_name": "OrderStatusChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 75,
+      "post_event": 0,
+      "total_sites": 76,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PackShopSaleStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PairWorkAcquireReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PaperboxDisappear",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PassActivityBonusTaskCellCreated",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PassActivityLevelUp",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PathFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PathRewardBaught",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PathStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlaneRewardAcquireReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlayAcquireAnimation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlayCollectAnimation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlayDigAnimation",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlayFloatUpAnimation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PlayFlyScoreAnimation",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PopActivityCacheProperty",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PopCachedItem",
+      "add_listener": 20,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 21,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PreviewStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PreviewUpdateRedPointEvent",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ProgressPackBuyTicketSuccess",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ProgressPackHasNewUnlockedTaskChanged",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ProgressPackStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ProgressPackTakeReward",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "PropertyAcquired",
+      "add_listener": 14,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 15,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PropertyConsumed",
+      "add_listener": 15,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 16,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PureBoardFlyMergeLineReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PureBoardMainWindowFlyItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PuzzlePieceAnimationBegan",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PuzzlePieceAnimationEnded",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PuzzleRoundChanged",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "PuzzleStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "PuzzleTokenNumberChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RaccoonRewardAcquireReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RandomRewardTipShow",
+      "add_listener": 2,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RedPacketRefreshRedTip",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RefreshHudPropertyButton",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 19,
+      "post_event": 0,
+      "total_sites": 21,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RefreshLightUpBook",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "RefreshSettingStrongTip",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 16,
+      "post_event": 0,
+      "total_sites": 22,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ResolutionChanged",
+      "add_listener": 7,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 8,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ReviewRaceFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ReviewRaceRankChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ReviewRaceStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScheduleOpenAvenueMainWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScheduleOpenComboAvenueWindow",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ScheduleOpenComboMainWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScheduleOpenComboReadyWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScheduleOpenGoldMatchMainWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScheduleOpenRoadMainWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceAllRoundFinished",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "ScoreRaceBoatStable",
+      "add_listener": 1,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceDefeated",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceProgressFinished",
+      "add_listener": 1,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceScoreChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceStateChanged",
+      "add_listener": 3,
+      "remove_listener": 1,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRaceUpdateRank",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 6,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ScoreRushFinishRace",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SelectNewAvatarFrame",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShopItemBaught",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShopRefreshed",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 13,
+      "post_event": 0,
+      "total_sites": 19,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShopWindowItemTabClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShowCustomerServiceBtn",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 14,
+      "post_event": 0,
+      "total_sites": 15,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShowEditSlider",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "ShowTaskBubble",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SkinAcquired",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SmartBuffItemSpreadAct",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SmartItemRewardTipShow",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "SmileOrderDeliver_1",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SpinDrawn",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "SpinRoundBaught",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SpinStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SpineRandomRewardAcquire",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "SpreadFailed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StartDraggingItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StickerUseToken",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StickerboardActivityClickPortalFail",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StickerboardActivityUnlockSticker",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StickerboardBoardViewUpdateFinish",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StickerboardObstacleReduceLevel",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "StoryBubbleShow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "SummerRingStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "SyncStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskBubbleReleaseBindRole",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskExtraRewardStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskExtraRewardTryPopStartWindow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskExtraRewardTutorialStart",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskLimitTimeEnd",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskLimitTimeFinish",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TaskLimitTimeStart",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TeamCakeCompleted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TeamMainWindowButtonClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TeamRaceEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TeamTutorial2Begin",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TeamTutorialContinue",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TempDisappear",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TempStateChanged",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestMapChangeSlotItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestMapSlotHit",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestModeIAPSuccess",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestOutputTableInfo",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 9,
+      "post_event": 0,
+      "total_sites": 10,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPlayerpreStateChange",
+      "add_listener": 6,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 10,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPropertyMonitorItemCachePushed",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPropertyMonitorItemCacheRemoved",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPropertyMonitorItemFlyTarget",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPropertyMonitorRewardsLogic",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestPropertyMonitorSyncDataFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestSetTutorialState",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TestSwitchShortcut",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TimedOrderShowPopup",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TimelineComplete",
+      "add_listener": 9,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 11,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TimelineNextStep",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "TimelineResetSkipBtn",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TimelineSetSkipBtn",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TimelineStart",
+      "add_listener": 5,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TotuorialRoyalEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostActivationFinishStage",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostActivationStart",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoActStarted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoActionEnded",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoFinished",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoPlayItemSpreadTagHide",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoShow",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoStarted",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostDiscoUpdate",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostFinalLightClose",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostFinishTutorial",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "TriggerBoostScoreChange",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerBoostStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlaneDailyStatusChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlanePlaneFlyingEnd",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlaneScoreChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlaneStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlaneTutorialClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerPlaneUpgraded",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TriggerServerFinished",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TryScrollToAvenueBoardEntry",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TryScrollToRoadBoardEntry",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TryStartBoardPromptEvent",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "TutorialAddtitionMiniGame",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TutorialAnyStrongTutorialUpdated",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TutorialFinished",
+      "add_listener": 8,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 9,
+      "status": "balanced"
+    },
+    {
+      "event_name": "TutorialStartPop",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UIBoardEnergyChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UIBoardExponentUnlock",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "UIBoardGeneratedItem",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UIBoardSwitchExponent",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UIBoardTryPlayEnergyBoostTutorial",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpcomingEventNewStateChanged",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 7,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpcomingEventStateChanged",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 4,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpdateGeneralRedPoint",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpdateLightUpBook",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpdateProfile",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 3,
+      "post_event": 0,
+      "total_sites": 5,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpdateSceneViewHud",
+      "add_listener": 2,
+      "remove_listener": 0,
+      "dispatch_event": 8,
+      "post_event": 0,
+      "total_sites": 10,
+      "status": "balanced"
+    },
+    {
+      "event_name": "UpdateTaskBubble",
+      "add_listener": 3,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 8,
+      "status": "balanced"
+    },
+    {
+      "event_name": "VibrationHeavy",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 5,
+      "post_event": 0,
+      "total_sites": 6,
+      "status": "balanced"
+    },
+    {
+      "event_name": "VibrationLight",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 181,
+      "post_event": 0,
+      "total_sites": 182,
+      "status": "balanced"
+    },
+    {
+      "event_name": "VibrationMedium",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 163,
+      "post_event": 0,
+      "total_sites": 164,
+      "status": "balanced"
+    },
+    {
+      "event_name": "VibrationSoft",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "WechatQrcodeScanned",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "WeeklyActiveQuestBonusStarCollect",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "WeeklyActiveQuestStarCollect",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "WeeklyActiveQuestStarTipClicked",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 2,
+      "status": "balanced"
+    },
+    {
+      "event_name": "WheelPackActivityRewardTipShow",
+      "add_listener": 0,
+      "remove_listener": 0,
+      "dispatch_event": 1,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "dispatch_without_listener"
+    },
+    {
+      "event_name": "WheelSpinRound",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 2,
+      "post_event": 0,
+      "total_sites": 3,
+      "status": "balanced"
+    },
+    {
+      "event_name": "WipeOutRoundReward",
+      "add_listener": 1,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 1,
+      "status": "listener_without_dispatch"
+    },
+    {
+      "event_name": "WipeOutStateChanged",
+      "add_listener": 4,
+      "remove_listener": 0,
+      "dispatch_event": 0,
+      "post_event": 0,
+      "total_sites": 4,
+      "status": "listener_without_dispatch"
+    }
+  ],
+  "limitations": [
+    "静态平衡不代表运行时一定可达；对象生命周期、条件注册和服务端事件仍需场景验证。",
+    "动态事件表达式不在静态事件名矩阵中，但已保留在 event_graph.sqlite3 的 unresolved 表。"
+  ]
+}

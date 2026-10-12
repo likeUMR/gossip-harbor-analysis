@@ -1,0 +1,70 @@
+{
+  "title": "阶段二 Lua 配置与状态访问候选索引",
+  "modules_total": 3415,
+  "module_source_states": {
+    "available": 3415
+  },
+  "access_sites": {
+    "configuration_control_or_metadata": 225,
+    "configuration_read": 163,
+    "database_table": 2089,
+    "model_api_candidate": 37,
+    "model_config_accessor": 42,
+    "player_prefs": 661,
+    "resource_config_read": 261
+  },
+  "operations": {
+    "configuration_control_or_metadata/flag_or_metadata_read": 225,
+    "configuration_read/config_read": 22,
+    "configuration_read/localconfig_read": 80,
+    "configuration_read/serverconfig_read": 61,
+    "database_table/clear": 10,
+    "database_table/read": 910,
+    "database_table/remove": 207,
+    "database_table/write": 962,
+    "model_api_candidate/write_candidate": 37,
+    "model_config_accessor/read_candidate": 42,
+    "player_prefs/read": 369,
+    "player_prefs/write": 292,
+    "resource_config_read/resource_key_lookup": 261
+  },
+  "key_expression_kinds": {
+    "configuration_control_or_metadata/dynamic_or_expression": 11,
+    "configuration_control_or_metadata/named_server_key_or_flag": 215,
+    "configuration_read/dynamic_or_expression": 24,
+    "configuration_read/missing_argument": 2,
+    "configuration_read/named_config_key": 83,
+    "configuration_read/named_server_key_or_flag": 54,
+    "database_table/first_argument_candidate": 2085,
+    "database_table/no_argument": 10,
+    "model_api_candidate/first_argument_candidate": 32,
+    "model_api_candidate/no_argument": 5,
+    "model_config_accessor/first_argument_candidate": 9,
+    "model_config_accessor/no_argument": 36,
+    "player_prefs/literal_string": 37,
+    "player_prefs/named_or_dynamic_key": 624,
+    "resource_config_read/computed_resource_key": 107,
+    "resource_config_read/named_resource_key": 154
+  },
+  "key_definition_map_sizes": {
+    "LocalConfigKey": 47,
+    "ServerConfigKey": 49,
+    "EGeneralConfType": 116,
+    "EPlayerPrefKey": 186,
+    "SystemConfigKey": 4,
+    "UIPrefabConfigName": 1667,
+    "ScenePrefabConfigName": 48
+  },
+  "enum_key_resolution": {
+    "resolved": 1021,
+    "unresolved": 15
+  },
+  "unresolved_config_or_resource_key_expressions": 132,
+  "database": "analysis_data/logic_index/stage2/state_config_access.sqlite3",
+  "limits": [
+    "Access sites are lexical candidates; they do not establish which configuration variant is selected at runtime.",
+    "Database table calls and model APIs need data-column and callee analysis to establish field-level state effects.",
+    "The nearest preceding named function is a locator hint; nested closures may be attributed to the enclosing method.",
+    "Read/write classification follows API names. Save, sync, server authority, migrations, resets, and restore paths remain to be traced."
+  ]
+}

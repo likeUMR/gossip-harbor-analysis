@@ -1,0 +1,17 @@
+{
+  "title": "阶段二玩家输入入口索引",
+  "modules": 3415,
+  "source_states": {
+    "available": 3415
+  },
+  "entries": 2036,
+  "by_kind": {
+    "input_registration_candidate": 1657,
+    "named_input_method": 182,
+    "inline_input_callback": 197
+  },
+  "database": "analysis_data/logic_index/stage2/input_entries.sqlite3",
+  "limitations": [
+    "命名输入方法和注册 API 是候选入口，需结合 prefab 绑定、Unity EventSystem 或 C# 调用确认实际可达性。"
+  ]
+}

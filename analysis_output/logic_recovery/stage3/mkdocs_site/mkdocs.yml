@@ -32,9 +32,6 @@ markdown_extensions:
 nav:
   - 母体点击:
       - operations/generator/index.md
-      - 点击入口与测试循环:
-          - operations/generator/entry/index.md
-          - OnTap、测试十连和通知判定: operations/generator/entry/detail.md
       - 状态检查:
           - operations/generator/state/index.md
           - Initializing：初始化中:
@@ -91,7 +88,7 @@ nav:
               - operations/generator/lucky/items/index.md
               - 候选与累计权重选择: operations/generator/lucky/items/select.md
               - Smart Produce 权重修正: operations/generator/lucky/items/smart.md
-              - Super/Free 产出类型: operations/generator/lucky/items/type.md
+              - Super Lucky：奖励分类与表现: operations/generator/lucky/items/type.md
           - 免费 Lucky:
               - operations/generator/lucky/free/index.md
               - 阈值队列生成: operations/generator/lucky/free/generate.md
@@ -126,28 +123,6 @@ nav:
           - CD、加速与恢复:
               - operations/generator/lifecycle/cooldown/index.md
               - CD、加速和恢复结算: operations/generator/lifecycle/cooldown/detail.md
-      - 事件与后续影响:
-          - operations/generator/events/index.md
-          - 资源与属性事件:
-              - operations/generator/events/resource/index.md
-              - 资源事件的具体监听链: operations/generator/events/resource/detail.md
-          - 棋盘事件:
-              - operations/generator/events/board/index.md
-              - 棋盘事件的具体写入顺序: operations/generator/events/board/detail.md
-          - 活动、日志和 UI 副作用:
-              - operations/generator/events/side_effects/index.md
-              - 副作用的具体字段: operations/generator/events/side_effects/detail.md
-      - 产出改写与安全边界:
-          - operations/generator/overrides/index.md
-          - Lucky、Disco 与产出改写:
-              - operations/generator/overrides/activity/index.md
-              - 活动改写的具体顺序: operations/generator/overrides/activity/detail.md
-          - 能量增益与链升级:
-              - operations/generator/overrides/boost/index.md
-              - 链升级和 FishNet 具体算法: operations/generator/overrides/boost/detail.md
-          - 数值安全修正:
-              - operations/generator/overrides/safety/index.md
-              - 次数与储备上限修正: operations/generator/overrides/safety/detail.md
   - 棋子拖拽与合成:
       - operations/merge/index.md
       - 拖拽分派与移动:
@@ -196,3 +171,8 @@ nav:
       - 订单创建与配置选择:
           - operations/orders/creation/index.md
           - 随机订单过滤与抽取细节: operations/orders/creation/detail.md
+
+extra_css:
+  - assets/generator-configs.css
+extra_javascript:
+  - assets/generator-configs.js

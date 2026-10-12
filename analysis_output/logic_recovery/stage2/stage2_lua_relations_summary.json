@@ -1,0 +1,39 @@
+{
+  "title": "阶段二 Lua 源码关系补充索引",
+  "method": "Tree-sitter 解析健康度加字符串/注释屏蔽后的源码候选提取；所有调用目标均为候选关系，事件类型名及派发调用点是源码直接证据",
+  "modules_total": 3415,
+  "source_states": {
+    "available": 3415
+  },
+  "parser_states": {
+    "ok": 3415
+  },
+  "function_declarations": 24736,
+  "relation_counts": {
+    "lua_bare_call_candidate": 17892,
+    "lua_self_call_candidate": 18816,
+    "lua_qualified_call_candidate": 49801,
+    "lua_dot_call_candidate": 31136,
+    "lua_event_dispatch": 1190,
+    "lua_event_callback_candidate": 1188
+  },
+  "resolution_counts": {
+    "unique_in_module": 13776,
+    "qualified_unique": 14855,
+    "qualified_unresolved": 34939,
+    "ambiguous": 6,
+    "qualified_ambiguous": 7
+  },
+  "unresolved_counts": {
+    "self_call_target_not_found": 5034,
+    "event_callback_not_unique": 76
+  },
+  "bytecode_source_mapping": "未建立：现有函数原型 first_line/last_line 多为 0 或不能稳定对应反编译文本；以 source_path + decompiled line 定位阅读，不声称映射到字节码原型。",
+  "limitations": [
+    "字符串和注释已从词法扫描中屏蔽；Tree-sitter 用于识别函数声明范围和报告解析健康度。",
+    "当前调用关系仍是保守候选；点调用、裸函数调用、匿名闭包以及动态索引需要后续 AST 语义层继续补齐。",
+    "self 接收对象、类继承、混入、动态 require、反射和 C#/Lua 桥接目标仍可能改变实际目标。",
+    "事件派发调用点已定位，但事件顺序、异步时机和运行时监听集合还需按场景追踪。"
+  ],
+  "database": "analysis_data/logic_index/stage2/lua_relations.sqlite3"
+}

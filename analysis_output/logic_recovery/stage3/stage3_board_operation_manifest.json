@@ -1,0 +1,164 @@
+{
+  "game": "Gossip Harbor 3.98.10",
+  "scope": [
+    "母体点击/产出",
+    "合成",
+    "订单交付"
+  ],
+  "modules": {
+    "Board.Model.Item.ItemSpread": {
+      "entity_id": "lua_module:1b00d962a168ea07b90fa80134c8c7cbc16220a14cacc30e427aa8467d832174",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Item/ItemSpread.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\1b00d962a168ea07b90fa80134c8c7cbc16220a14cacc30e427aa8467d832174\\decompiled.lua"
+    },
+    "Board.Model.Board.MainBoardModel": {
+      "entity_id": "lua_module:c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Board/MainBoardModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\c0065dc8ae320f8e49a76b6ab8593622c4cf0c3ff15e58bfe0a58a625636888e\\decompiled.lua"
+    },
+    "Board.Model.Board.BaseBoardModel": {
+      "entity_id": "lua_module:014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Board/BaseBoardModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\014680c92d54a5137aca22bd58674db5e2f720b14f2dcf28cadc00d9d47defce\\decompiled.lua"
+    },
+    "Board.Model.Board.BaseActionBoardModel": {
+      "entity_id": "lua_module:b01cc1db109fdfdb7b0c2e89a65d58fbc44b23e2a459742ef77a2f64480d82e3",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Board/BaseActionBoardModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\b01cc1db109fdfdb7b0c2e89a65d58fbc44b23e2a459742ef77a2f64480d82e3\\decompiled.lua"
+    },
+    "Board.Model.Item.ItemSwallow": {
+      "entity_id": "lua_module:c1d45e244190ac18aca1eebc5dddca5bad95fb735933cc0531ea1972df895749",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Item/ItemSwallow.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\c1d45e244190ac18aca1eebc5dddca5bad95fb735933cc0531ea1972df895749\\decompiled.lua"
+    },
+    "Board.Model.Item.ItemTransform": {
+      "entity_id": "lua_module:532740e25522ec125b34a2e498145888297d4c57bc966a9225d020b1ccb9783f",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Item/ItemTransform.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\532740e25522ec125b34a2e498145888297d4c57bc966a9225d020b1ccb9783f\\decompiled.lua"
+    },
+    "Board.Model.Order.MainOrderModel": {
+      "entity_id": "lua_module:d13aea9cefd48d0b2eeac39e898ed1b90b89114eb4b45374adaa7801419cfbe1",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Order/MainOrderModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\d13aea9cefd48d0b2eeac39e898ed1b90b89114eb4b45374adaa7801419cfbe1\\decompiled.lua"
+    },
+    "Board.Model.Order.SlotOrderModel": {
+      "entity_id": "lua_module:2313d326b39d3f5f6a56c9f0ab812a4909b104e1f7590bbd7c4a8d8f85651426",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/Model/Order/SlotOrderModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\2313d326b39d3f5f6a56c9f0ab812a4909b104e1f7590bbd7c4a8d8f85651426\\decompiled.lua"
+    },
+    "Board.View.Order.BaseOrderCell": {
+      "entity_id": "lua_module:8e234fa442db1997cdc65cd480ba4ca502bebefc241e4cf9fe771f77490b9bd6",
+      "location": "analysis_data/logic_index/lua/modules/fcc608a5dce8b145/Board/View/Order/BaseOrderCell.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\8e234fa442db1997cdc65cd480ba4ca502bebefc241e4cf9fe771f77490b9bd6\\decompiled.lua"
+    },
+    "LuckyProduce.Model.LuckyProduceModel": {
+      "entity_id": "lua_module:937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505",
+      "location": "analysis_data/logic_index/lua/modules/7479ec2d9fb1ebd6/LuckyProduce/Model/LuckyProduceModel.luac",
+      "decompiled_source": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\lua\\decoded\\937d00a311a7c3e02ffe929a1d19d18288822cf8d59700f5738c8dfe9b223505\\decompiled.lua"
+    }
+  },
+  "config_summary": {
+    "item_model_rows": 548,
+    "spread_item_rows": 163,
+    "merge_rows": 370,
+    "bubble_chance_rows": 138,
+    "spread_weight_type_counts": {
+      "Fixed": 97,
+      "Decremental": 54,
+      "OrderItem": 6,
+      "ChestCustomItem": 1,
+      "SmartItem": 5
+    },
+    "order_item_rows": 74,
+    "order_diff_score_min": 2,
+    "order_diff_score_max": 3000
+  },
+  "operations": [
+    {
+      "id": "board_generator_tap",
+      "label": "点击母体棋子",
+      "entry": "ItemSpread:OnTap",
+      "chain": [
+        "CheckSpreadState",
+        "CheckSpreadPosAndAuto",
+        "CheckEnergy",
+        "GenerateItemCode",
+        "SpreadCostEnergy",
+        "MainBoardModel:SpreadItem",
+        "TryRemoveSelf",
+        "TryUseCDBuff"
+      ],
+      "branches": [
+        "普通加权产出",
+        "递减池",
+        "订单导向",
+        "箱子自定义",
+        "SmartItem",
+        "Lucky",
+        "Disco",
+        "能量增益",
+        "鱼网智能产出",
+        "CD/恢复",
+        "棋盘满/能量不足"
+      ],
+      "evidence": "source_confirmed_static; runtime_identity_and_server_flags_require_stage3_replay"
+    },
+    {
+      "id": "board_merge",
+      "label": "拖拽同类棋子合成",
+      "entry": "MainBoardModel:DragItem",
+      "chain": [
+        "CanItemMerge",
+        "MainBoardModel:_DoMergeItem -> inherited BaseBoardModel:_DoMergeItem",
+        "ReplaceItem",
+        "ItemMerged event",
+        "activity merge hooks",
+        "Temp/Card/EnergyBubble/Bubble/Coin side effects",
+        "UpdateOrderState"
+      ],
+      "branches": [
+        "特殊棋子 LevelUp/LevelDown",
+        "普通合成",
+        "活动临时棋子",
+        "卡牌棋子",
+        "能量气泡",
+        "订单气泡概率",
+        "最低链等级喷金币",
+        "棋盘满"
+      ],
+      "evidence": "source_confirmed_static; activity/server-controlled branches require runtime replay"
+    },
+    {
+      "id": "board_order_delivery",
+      "label": "点击订单交付",
+      "entry": "BaseOrderCell:OnGoButtonClicked",
+      "chain": [
+        "CanDeliver(codeCountMap)",
+        "MainBoardModel:FinishOrder",
+        "AcquireRewardsLogic",
+        "RemoveOrderRequirementItems(board-first, inventory-second)",
+        "SlotOrderModel:FinishOrder",
+        "fill next orders",
+        "UpdateOrderState",
+        "FinishOrder event/network upload"
+      ],
+      "branches": [
+        "特殊/分支订单",
+        "主订单奖励",
+        "亲密度礼物",
+        "Buff/OrderBoost/CookingFrenzy奖励",
+        "延迟奖励",
+        "幸运订单触发",
+        "难度累计分",
+        "订单补位"
+      ],
+      "evidence": "source_confirmed_static; server responses and asynchronous UI timing require runtime replay"
+    }
+  ],
+  "acceptance_gaps": [
+    "动态对象身份和继承分派需运行时确认",
+    "服务端下发的 Lucky/Boost/活动开关需按真实账号状态回放",
+    "异步回调、动画时序、网络失败重试需运行时记录",
+    "原版与复刻版需进行同输入差分回放"
+  ]
+}

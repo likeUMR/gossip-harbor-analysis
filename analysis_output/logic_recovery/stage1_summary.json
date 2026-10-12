@@ -1,0 +1,1027 @@
+{
+  "generated_at": "2026-10-09T04:38:37.506159+00:00",
+  "sample": "Gossip Harbor 3.98.10",
+  "stage_complete": false,
+  "packages": 4,
+  "apk_entries": 2330,
+  "apk_expanded_bytes": 285855404,
+  "apk_kinds": {
+    "android_binary_xml": 949,
+    "java_class": 1,
+    "package_metadata": 115,
+    "text": 102,
+    "unity_bundle": 246,
+    "unity_serialized": 134,
+    "il2cpp_metadata": 1,
+    "unknown_binary": 11,
+    "unity_split_part": 9,
+    "video": 1,
+    "android_profile": 2,
+    "empty": 1,
+    "android_dex": 7,
+    "gzip": 2,
+    "protobuf_metadata": 9,
+    "image": 716,
+    "font": 1,
+    "android_resource_table": 1,
+    "native_elf": 22
+  },
+  "unity_container_occurrences": 2211,
+  "unity_unique_containers": 2210,
+  "unity_objects_occurrences": 713647,
+  "unity_object_types": {
+    "AudioClip": 319,
+    "AssetBundle": 2076,
+    "RectTransform": 76909,
+    "ParticleSystem": 19661,
+    "GameObject": 168928,
+    "MonoBehaviour": 116340,
+    "CanvasRenderer": 48995,
+    "ParticleSystemRenderer": 19661,
+    "Texture2D": 20798,
+    "Sprite": 10349,
+    "Material": 13849,
+    "TextAsset": 3817,
+    "MonoScript": 1617,
+    "Shader": 181,
+    "Transform": 92019,
+    "Animator": 3602,
+    "AnimationClip": 1967,
+    "SpriteRenderer": 1540,
+    "AnimatorController": 889,
+    "CanvasGroup": 5184,
+    "Canvas": 4008,
+    "BoxCollider2D": 325,
+    "MeshRenderer": 35368,
+    "MeshFilter": 35366,
+    "Mesh": 25630,
+    "SortingGroup": 387,
+    "SpriteMask": 24,
+    "MeshCollider": 12,
+    "TrailRenderer": 74,
+    "Font": 8,
+    "BoxCollider": 3543,
+    "Light": 1,
+    "VideoPlayer": 3,
+    "Camera": 56,
+    "PlayerSettings": 1,
+    "InputManager": 1,
+    "TagManager": 1,
+    "AudioManager": 1,
+    "ScriptMapper": 1,
+    "MonoManager": 1,
+    "GraphicsSettings": 1,
+    "TimeManager": 1,
+    "DelayedCallManager": 1,
+    "PhysicsManager": 1,
+    "BuildSettings": 1,
+    "QualitySettings": 1,
+    "ResourceManager": 1,
+    "NavMeshProjectSettings": 1,
+    "Physics2DSettings": 1,
+    "RuntimeInitializeOnLoadManager": 1,
+    "StreamingManager": 1,
+    "VFXManager": 1,
+    "PreloadData": 2,
+    "ShaderVariantCollection": 1,
+    "RenderSettings": 1,
+    "LightmapSettings": 1,
+    "NavMeshSettings": 1,
+    "ComputeShader": 6,
+    "SkinnedMeshRenderer": 109,
+    "Animation": 1,
+    "VideoClip": 1
+  },
+  "lua_archives": [
+    {
+      "name": "Lua_Activity",
+      "status": "recovered",
+      "modules": 1262,
+      "bytes": 8271933
+    },
+    {
+      "name": "Lua_Base",
+      "status": "recovered",
+      "modules": 70,
+      "bytes": 965950
+    },
+    {
+      "name": "Lua_Config",
+      "status": "recovered",
+      "modules": 303,
+      "bytes": 3151992
+    },
+    {
+      "name": "Lua_Core",
+      "status": "recovered",
+      "modules": 772,
+      "bytes": 6123327
+    },
+    {
+      "name": "Lua_Test",
+      "status": "recovered",
+      "modules": 115,
+      "bytes": 1150657
+    },
+    {
+      "name": "LuaUpdate",
+      "status": "empty_placeholder",
+      "modules": null,
+      "bytes": 0
+    },
+    {
+      "name": "LuaUpdate",
+      "status": "recovered",
+      "modules": 2,
+      "bytes": 31158
+    }
+  ],
+  "module_occurrences": 3415,
+  "module_names": 3413,
+  "unique_bytecode_chunks": 3415,
+  "bytecode_bytes": 93973970,
+  "function_prototypes_including_main": 33272,
+  "nested_function_prototypes": 29857,
+  "bytecode_instructions": 4286950,
+  "decompiled_lines": 2396819,
+  "disassembly_lines": 6024167,
+  "original_source_lines": null,
+  "decompile_status": {
+    "generated_unverified": 3415
+  },
+  "categories": {
+    "data_config": {
+      "files": 1217,
+      "bytes": 78151372,
+      "instructions": 3326010,
+      "decompiled_lines": 2063917,
+      "file_percent": 35.63689604685212
+    },
+    "support_or_unclassified": {
+      "files": 256,
+      "bytes": 969241,
+      "instructions": 56013,
+      "decompiled_lines": 21000,
+      "file_percent": 7.496339677891655
+    },
+    "model_gameplay": {
+      "files": 608,
+      "bytes": 6676489,
+      "instructions": 411790,
+      "decompiled_lines": 148492,
+      "file_percent": 17.80380673499268
+    },
+    "ui_view": {
+      "files": 1217,
+      "bytes": 7027769,
+      "instructions": 424155,
+      "decompiled_lines": 137454,
+      "file_percent": 35.63689604685212
+    },
+    "test_debug": {
+      "files": 117,
+      "bytes": 1149099,
+      "instructions": 68982,
+      "decompiled_lines": 25956,
+      "file_percent": 3.4260614934114204
+    }
+  },
+  "remote_status": {
+    "downloaded": 1829,
+    "local_apk": 245
+  },
+  "remote_download_bytes": 1394719149,
+  "native": {
+    "method_mappings": 78516,
+    "images": [
+      "Assembly-CSharp.dll",
+      "mscorlib.dll",
+      "UnityEngine.UIElementsModule.dll",
+      "Unity.InputSystem.dll",
+      "System.Xml.dll",
+      "System.dll",
+      "UnityEngine.CoreModule.dll",
+      "System.Data.dll",
+      "System.Core.dll",
+      "Newtonsoft.Json.dll",
+      "Unity.TextMeshPro.dll",
+      "spine-unity.dll",
+      "UnityEngine.UI.dll",
+      "UnityEngine.TextCoreTextEngineModule.dll",
+      "DOTween.dll",
+      "Facebook.Unity.dll",
+      "UnityEngine.IMGUIModule.dll",
+      "Mono.Security.dll",
+      "Unity.ResourceManager.dll",
+      "Unity.Addressables.dll",
+      "UnityEngine.Physics2DModule.dll",
+      "UnityEngine.AndroidJNIModule.dll",
+      "MaxSdk.Scripts.dll",
+      "com.microfun.profiling.dll",
+      "Coffee.SoftMaskForUGUI.dll",
+      "ICSharpCode.SharpZipLib.dll",
+      "UnityEngine.dll",
+      "com.microfun.ui.dll",
+      "UnityEngine.ParticleSystemModule.dll",
+      "UnityEngine.AnimationModule.dll",
+      "AppsFlyer.dll",
+      "System.Drawing.dll",
+      "UnityEngine.PropertiesModule.dll",
+      "Assembly-CSharp-firstpass.dll",
+      "UnityEngine.UnityWebRequestModule.dll",
+      "System.Numerics.dll",
+      "System.Xml.Linq.dll",
+      "Unity.Notifications.Android.dll",
+      "UnityEngine.TextCoreFontEngineModule.dll",
+      "UnityEngine.PhysicsModule.dll",
+      "UnityEngine.UIModule.dll",
+      "UnityEngine.InputLegacyModule.dll",
+      "UnityEngine.TextRenderingModule.dll",
+      "UnityEngine.VideoModule.dll",
+      "UnityEngine.AudioModule.dll",
+      "UnityEngine.SharedInternalsModule.dll",
+      "UnityEngine.AssetBundleModule.dll",
+      "NativeShare.Runtime.dll",
+      "UnityEngine.InputModule.dll",
+      "UnityEngine.UnityWebRequestWWWModule.dll",
+      "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "UnityEngine.JSONSerializeModule.dll",
+      "UnityEngine.SpriteMaskModule.dll",
+      "UnityEngine.ImageConversionModule.dll",
+      "UnityEngine.SpriteShapeModule.dll",
+      "Unity.Notifications.Unified.dll",
+      "Facebook.Unity.Settings.dll",
+      "Unity.MemoryProfiler.dll",
+      "System.Runtime.Serialization.dll",
+      "System.Configuration.dll",
+      "MIkuLuaProfiler.Runtime.dll",
+      "Facebook.Unity.Android.dll",
+      "Coffee.SoftMaskForUGUI.R.dll",
+      "__Generated"
+    ],
+    "dump_lines": 432236,
+    "class_declarations": 10387,
+    "source": "tools/Il2CppDumper/Il2CppDumper/bin/Release/net8.0/script.json",
+    "dump_sha256": "08930da30ec0e7ed5c89505fab12097ef70602dc41e80e66d38488556c08170d",
+    "warning": "dump.cs contains declarations and stub bodies, not recovered C# implementation",
+    "type_kinds": {
+      "class": 7093,
+      "enum": 1226,
+      "struct": 1603,
+      "interface": 465
+    },
+    "types_by_image": {
+      "Assembly-CSharp.dll": 1092,
+      "mscorlib.dll": 1730,
+      "UnityEngine.UIElementsModule.dll": 1092,
+      "Unity.InputSystem.dll": 651,
+      "System.Xml.dll": 669,
+      "System.dll": 696,
+      "UnityEngine.CoreModule.dll": 765,
+      "System.Data.dll": 238,
+      "System.Core.dll": 658,
+      "Newtonsoft.Json.dll": 306,
+      "Unity.TextMeshPro.dll": 177,
+      "spine-unity.dll": 223,
+      "UnityEngine.UI.dll": 205,
+      "UnityEngine.TextCoreTextEngineModule.dll": 68,
+      "DOTween.dll": 191,
+      "Facebook.Unity.dll": 193,
+      "UnityEngine.IMGUIModule.dll": 49,
+      "Mono.Security.dll": 85,
+      "Unity.ResourceManager.dll": 102,
+      "Unity.Addressables.dll": 89,
+      "UnityEngine.Physics2DModule.dll": 31,
+      "UnityEngine.AndroidJNIModule.dll": 27,
+      "MaxSdk.Scripts.dll": 70,
+      "com.microfun.profiling.dll": 65,
+      "Coffee.SoftMaskForUGUI.dll": 68,
+      "ICSharpCode.SharpZipLib.dll": 63,
+      "UnityEngine.dll": 1,
+      "com.microfun.ui.dll": 51,
+      "UnityEngine.ParticleSystemModule.dll": 65,
+      "UnityEngine.AnimationModule.dll": 51,
+      "AppsFlyer.dll": 71,
+      "System.Drawing.dll": 11,
+      "UnityEngine.PropertiesModule.dll": 105,
+      "Assembly-CSharp-firstpass.dll": 94,
+      "UnityEngine.UnityWebRequestModule.dll": 15,
+      "System.Numerics.dll": 13,
+      "System.Xml.Linq.dll": 38,
+      "Unity.Notifications.Android.dll": 22,
+      "UnityEngine.TextCoreFontEngineModule.dll": 24,
+      "UnityEngine.PhysicsModule.dll": 23,
+      "UnityEngine.UIModule.dll": 12,
+      "UnityEngine.InputLegacyModule.dll": 18,
+      "UnityEngine.TextRenderingModule.dll": 14,
+      "UnityEngine.VideoModule.dll": 16,
+      "UnityEngine.AudioModule.dll": 18,
+      "UnityEngine.SharedInternalsModule.dll": 31,
+      "UnityEngine.AssetBundleModule.dll": 6,
+      "NativeShare.Runtime.dll": 12,
+      "UnityEngine.InputModule.dll": 7,
+      "UnityEngine.UnityWebRequestWWWModule.dll": 2,
+      "UnityEngine.UnityWebRequestAssetBundleModule.dll": 3,
+      "UnityEngine.JSONSerializeModule.dll": 2,
+      "UnityEngine.SpriteMaskModule.dll": 2,
+      "UnityEngine.ImageConversionModule.dll": 2,
+      "UnityEngine.SpriteShapeModule.dll": 2,
+      "Unity.Notifications.Unified.dll": 11,
+      "Facebook.Unity.Settings.dll": 6,
+      "Unity.MemoryProfiler.dll": 9,
+      "System.Runtime.Serialization.dll": 5,
+      "System.Configuration.dll": 10,
+      "MIkuLuaProfiler.Runtime.dll": 3,
+      "Facebook.Unity.Android.dll": 2,
+      "Coffee.SoftMaskForUGUI.R.dll": 2,
+      "__Generated": 5
+    },
+    "parsed_types": 10387
+  },
+  "native_library_count": 22,
+  "native_disassembly_lines": 11517337,
+  "android": {
+    "dex_count": 11,
+    "class_definitions": 43784,
+    "smali_files": 43784,
+    "smali_lines": 14851334,
+    "jadx": {
+      "exit": 1,
+      "command": [
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jre\\zulu17.68.203-ca-jre17.0.20.1-win_x64\\bin\\java.exe",
+        "-Xmx4g",
+        "-cp",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\annotations-24.1.0.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\asm-9.6.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\directories-0.1.4.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\directories-jni-0.1.4.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\error_prone_annotations-2.36.0.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\failureaccess-1.0.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\gson-2.13.1.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\guava-33.4.8-jre.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\j2objc-annotations-3.0.0.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-app-commons-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-cli-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-core-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-dex-input-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-input-api-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-java-input-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-plugins-tools-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jadx-zip-1.5.3.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jcommander-2.0.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jspecify-1.0.0.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\jsr305-3.0.2.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\logback-classic-1.5.18.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\logback-core-1.5.18.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\raung-common-0.1.1.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\raung-disasm-0.1.1.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\slf4j-api-2.0.17.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\smali-baksmali-3.0.9.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\smali-dexlib2-3.0.9.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\smali-util-3.0.9.jar;C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\tools\\logic_vendor\\jadx_maven\\windows-jni-utils-0.3.3.jar",
+        "jadx.cli.JadxCLI",
+        "--show-bad-code",
+        "-j",
+        "8",
+        "-d",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\android\\jadx",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\apk_extract\\gossip_harbor_3.98.10\\base.apk",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\apk_extract\\gossip_harbor_3.98.10\\split_config.arm64_v8a.apk",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\apk_extract\\gossip_harbor_3.98.10\\split_gpdeku.apk",
+        "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\apk_extract\\gossip_harbor_3.98.10\\split_gpdeku.config.arm64_v8a.apk"
+      ],
+      "log": "analysis_data/logic_index/android/jadx.log",
+      "source_files": 26004,
+      "source_bytes": 106374004,
+      "source_lines": 2671635,
+      "status": "generated_with_errors"
+    },
+    "nested_dex_count": 4,
+    "nested_jadx": {
+      "exit": 0,
+      "source_files": 12,
+      "source_lines": 2758,
+      "log": "analysis_data/logic_index/android/protected_jadx.log"
+    },
+    "method_index": {
+      "classes": 43784,
+      "methods": 254729,
+      "methods_with_code": 238445,
+      "java_files_with_failure_markers": 21,
+      "java_marker_occurrences": 43,
+      "unmapped_fallbacks": 0,
+      "jadx_log_error_count": 37,
+      "note": "Log error events, marker occurrences and affected files have different denominators"
+    }
+  },
+  "lua_validation": {
+    "count": 3415,
+    "statuses": {
+      "instruction_structure_equal": 3415
+    },
+    "prototype_mismatches": 0,
+    "definition": "Exact args/opcodes/constants/upvalues/child prototypes comparison; debug data ignored",
+    "limitation": "A mismatch does not prove semantic error; source requires disassembly review. No gameplay execution performed."
+  },
+  "database": {
+    "status": "decrypted",
+    "compatibility": 4,
+    "source": "apk_extract/gossip_harbor_3.98.10/runtime/db.sqlite3",
+    "source_sha256": "2867de5e041943e8f71d2e577ab816faa48499906f5118afa4c7239a66669f75",
+    "output": "analysis_data/logic_index/database/decrypted_2867de5e0419.sqlite3",
+    "integrity_check": [
+      [
+        "ok"
+      ]
+    ],
+    "tables": [
+      {
+        "name": "characterIntimacy",
+        "schema": "CREATE TABLE characterIntimacy (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "item",
+        "schema": "CREATE TABLE item (splitUseCount integer, id text NOT NULL, spreadItemRestNumber integer, codeStr text, spreadStartTimer integer, spreadCodeWeightPairs text, accelerateTime integer, spreadState integer, spreadCount integer, accelerateLastUpdateTime integer, swallowInfo text, transformStartTimer integer, bubbleStartTimer integer, spreadStorageRestNumber integer, accelerateStartTimer integer, code integer, PRIMARY KEY (id))",
+        "columns": [
+          "splitUseCount",
+          "id",
+          "spreadItemRestNumber",
+          "codeStr",
+          "spreadStartTimer",
+          "spreadCodeWeightPairs",
+          "accelerateTime",
+          "spreadState",
+          "spreadCount",
+          "accelerateLastUpdateTime",
+          "swallowInfo",
+          "transformStartTimer",
+          "bubbleStartTimer",
+          "spreadStorageRestNumber",
+          "accelerateStartTimer",
+          "code"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "fixedSwallow",
+        "schema": "CREATE TABLE fixedSwallow (pairs1 text, type text NOT NULL, pairs2 text, sequence1 text, sequence2 text, PRIMARY KEY (type))",
+        "columns": [
+          "pairs1",
+          "type",
+          "pairs2",
+          "sequence1",
+          "sequence2"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "EnergyGemOffer",
+        "schema": "CREATE TABLE EnergyGemOffer (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "orderMeta",
+        "schema": "CREATE TABLE orderMeta (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "config",
+        "schema": "CREATE TABLE config (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "misc",
+        "schema": "CREATE TABLE misc (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "skin",
+        "schema": "CREATE TABLE skin (value integer, id integer NOT NULL, PRIMARY KEY (id))",
+        "columns": [
+          "value",
+          "id"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "mainTask",
+        "schema": "CREATE TABLE mainTask (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "iapOrder",
+        "schema": "CREATE TABLE iapOrder (orderId text NOT NULL, status integer, PRIMARY KEY (orderId))",
+        "columns": [
+          "orderId",
+          "status"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "userProfile",
+        "schema": "CREATE TABLE userProfile (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "newSkin",
+        "schema": "CREATE TABLE newSkin (value integer, id text NOT NULL, PRIMARY KEY (id))",
+        "columns": [
+          "value",
+          "id"
+        ],
+        "rows": 1
+      },
+      {
+        "name": "inventory",
+        "schema": "CREATE TABLE inventory (storeTime integer, itemId text NOT NULL, priority integer, codeStr text, PRIMARY KEY (itemId))",
+        "columns": [
+          "storeTime",
+          "itemId",
+          "priority",
+          "codeStr"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "openFunc",
+        "schema": "CREATE TABLE openFunc (state integer, id text NOT NULL, PRIMARY KEY (id))",
+        "columns": [
+          "state",
+          "id"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "shopItem",
+        "schema": "CREATE TABLE shopItem (id text NOT NULL, costCount integer, itemCodeStr text, itemCode integer, costType text, shopType integer, leftCount integer, PRIMARY KEY (id))",
+        "columns": [
+          "id",
+          "costCount",
+          "itemCodeStr",
+          "itemCode",
+          "costType",
+          "shopType",
+          "leftCount"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "cached_requests2",
+        "schema": "CREATE TABLE cached_requests2 (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "energy",
+        "schema": "CREATE TABLE energy (energyValue integer, id text NOT NULL, infiniteTime integer, generateTime integer, PRIMARY KEY (id))",
+        "columns": [
+          "energyValue",
+          "id",
+          "infiniteTime",
+          "generateTime"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "fixedSpreadNew",
+        "schema": "CREATE TABLE fixedSpreadNew (sequence text, type text NOT NULL, pairs text, PRIMARY KEY (type))",
+        "columns": [
+          "sequence",
+          "type",
+          "pairs"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "storyRecap",
+        "schema": "CREATE TABLE storyRecap (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "bundleMeta",
+        "schema": "CREATE TABLE bundleMeta (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "shop",
+        "schema": "CREATE TABLE shop (dailyRefreshTime integer, id text NOT NULL, energyBuyCost integer, energyDiscountCooldownTime integer, energyDiscountPrice integer, energyDiscountLastTime integer, spreeEnergyBuyCost integer, spreeEnergyBuyCount integer, flashRefreshTimeNew integer, gemDiscountInfo text, flashRefreshTime integer, chainEnergyStep integer, chainEnergyEndTime integer, energyDiscountCount integer, energyRefreshTime integer, eventEnergyBuyCost integer, PRIMARY KEY (id))",
+        "columns": [
+          "dailyRefreshTime",
+          "id",
+          "energyBuyCost",
+          "energyDiscountCooldownTime",
+          "energyDiscountPrice",
+          "energyDiscountLastTime",
+          "spreeEnergyBuyCost",
+          "spreeEnergyBuyCount",
+          "flashRefreshTimeNew",
+          "gemDiscountInfo",
+          "flashRefreshTime",
+          "chainEnergyStep",
+          "chainEnergyEndTime",
+          "energyDiscountCount",
+          "energyRefreshTime",
+          "eventEnergyBuyCost"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "weddingDay",
+        "schema": "CREATE TABLE weddingDay (data text, name text NOT NULL, PRIMARY KEY (name))",
+        "columns": [
+          "data",
+          "name"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "cdn2",
+        "schema": "CREATE TABLE cdn2 (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "activity",
+        "schema": "CREATE TABLE activity (data text, name text NOT NULL, PRIMARY KEY (name))",
+        "columns": [
+          "data",
+          "name"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "tutorial",
+        "schema": "CREATE TABLE tutorial (id text NOT NULL, ongoingDatas text, state integer, PRIMARY KEY (id))",
+        "columns": [
+          "id",
+          "ongoingDatas",
+          "state"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "itemUnlock",
+        "schema": "CREATE TABLE itemUnlock (type integer NOT NULL, state integer, PRIMARY KEY (type))",
+        "columns": [
+          "type",
+          "state"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "orders",
+        "schema": "CREATE TABLE orders (avatarId integer, id integer, type integer, slot integer NOT NULL, requirement2 integer, requirement3Str text, requirement3 integer, requirement1 integer, requirement1Str text, requirement2Str text, PRIMARY KEY (slot))",
+        "columns": [
+          "avatarId",
+          "id",
+          "type",
+          "slot",
+          "requirement2",
+          "requirement3Str",
+          "requirement3",
+          "requirement1",
+          "requirement1Str",
+          "requirement2Str"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "user",
+        "schema": "CREATE TABLE user (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "noticeState",
+        "schema": "CREATE TABLE noticeState (state integer, id text NOT NULL, PRIMARY KEY (id))",
+        "columns": [
+          "state",
+          "id"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "returnUser",
+        "schema": "CREATE TABLE returnUser (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "survey",
+        "schema": "CREATE TABLE survey (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "http_proxy_type",
+        "schema": "CREATE TABLE http_proxy_type (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 1
+      },
+      {
+        "name": "cacheItem",
+        "schema": "CREATE TABLE cacheItem (id text NOT NULL, type integer, cacheItemId text, codeStr text, code integer, PRIMARY KEY (id))",
+        "columns": [
+          "id",
+          "type",
+          "cacheItemId",
+          "codeStr",
+          "code"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "fixedSpread",
+        "schema": "CREATE TABLE fixedSpread (sequence text, type text NOT NULL, pairs text, PRIMARY KEY (type))",
+        "columns": [
+          "sequence",
+          "type",
+          "pairs"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "packet",
+        "schema": "CREATE TABLE packet (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "slot",
+        "schema": "CREATE TABLE slot (slot text NOT NULL, id text, PRIMARY KEY (slot))",
+        "columns": [
+          "slot",
+          "id"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "local",
+        "schema": "CREATE TABLE local (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 1
+      },
+      {
+        "name": "ItemUnlockStr",
+        "schema": "CREATE TABLE ItemUnlockStr (type text NOT NULL, state integer, PRIMARY KEY (type))",
+        "columns": [
+          "type",
+          "state"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "ad",
+        "schema": "CREATE TABLE ad (name text NOT NULL, lastShowTime integer, count integer, PRIMARY KEY (name))",
+        "columns": [
+          "name",
+          "lastShowTime",
+          "count"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "account",
+        "schema": "CREATE TABLE account (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "buffproperty_meta",
+        "schema": "CREATE TABLE buffproperty_meta (value text, key text NOT NULL, PRIMARY KEY (key))",
+        "columns": [
+          "value",
+          "key"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "buffproperty",
+        "schema": "CREATE TABLE buffproperty (expiredTime integer, id text NOT NULL, type text, durationTime integer, PRIMARY KEY (id))",
+        "columns": [
+          "expiredTime",
+          "id",
+          "type",
+          "durationTime"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "rate",
+        "schema": "CREATE TABLE rate (rated integer, id text NOT NULL, configId integer, popupCount integer, PRIMARY KEY (id))",
+        "columns": [
+          "rated",
+          "id",
+          "configId",
+          "popupCount"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "bundle",
+        "schema": "CREATE TABLE bundle (bundleType text, lastTime integer, bundleId text NOT NULL, leftCount integer, groupId integer, purchaseId text, refreshTime integer, PRIMARY KEY (bundleId))",
+        "columns": [
+          "bundleType",
+          "lastTime",
+          "bundleId",
+          "leftCount",
+          "groupId",
+          "purchaseId",
+          "refreshTime"
+        ],
+        "rows": 0
+      },
+      {
+        "name": "board",
+        "schema": "CREATE TABLE board (itemId text, id text NOT NULL, PRIMARY KEY (id))",
+        "columns": [
+          "itemId",
+          "id"
+        ],
+        "rows": 0
+      }
+    ],
+    "key_evidence": {
+      "initializer_rva": "0x136DE64",
+      "relocation_slot": "0x22CF3A8",
+      "string_literal_address": "0x23d62a0"
+    },
+    "scope": "Recorded 2026-09-22 device database; not a complete server configuration snapshot"
+  },
+  "spine_skeleton_status": {
+    "decoded_complete": 1115
+  },
+  "spine_animation_status": {
+    "decoded_complete": 237,
+    "failed": 318
+  },
+  "binary_disposition_status": {
+    "recovered": 9,
+    "wire_decoded": 2
+  },
+  "spine_wire_status": {
+    "wire_decoded": 555
+  },
+  "spine_dependency_status": {
+    "matching_dependency_absent_in_snapshot": 318
+  },
+  "nested_native_code": [
+    {
+      "source": "analysis_data/logic_index/sources/apk/base/assets/dic",
+      "source_sha256": "08a598423c6747c3c23fffb2fb12c2c3cf611986436a367d99b5acca3e6590c7",
+      "decoded_path": "analysis_data/logic_index/nested_code/c4ee9aa7cb3b1de2b52b4746b4e62142cddd5dae46429dc144edcc9d405b91a4/dic.elf",
+      "sha256": "c4ee9aa7cb3b1de2b52b4746b4e62142cddd5dae46429dc144edcc9d405b91a4",
+      "bytes": 4016,
+      "machine": "EM_386",
+      "entry": 1360,
+      "sections": [
+        {
+          "name": ".text",
+          "bytes": 756,
+          "covered_bytes": 756,
+          "lines": 245,
+          "path": "analysis_data/logic_index/nested_code/c4ee9aa7cb3b1de2b52b4746b4e62142cddd5dae46429dc144edcc9d405b91a4/.text.asm",
+          "decoding": "ELF machine mode; instruction/data boundaries require symbol-guided review"
+        },
+        {
+          "name": ".plt",
+          "bytes": 80,
+          "covered_bytes": 80,
+          "lines": 18,
+          "path": "analysis_data/logic_index/nested_code/c4ee9aa7cb3b1de2b52b4746b4e62142cddd5dae46429dc144edcc9d405b91a4/.plt.asm",
+          "decoding": "ELF machine mode; instruction/data boundaries require symbol-guided review"
+        }
+      ],
+      "strings": [
+        "/system/bin/linker",
+        "Android",
+        "r25c",
+        "9519653",
+        "__libc_init",
+        "__cxa_atexit",
+        "printf",
+        "__stack_chk_fail",
+        "libc.so",
+        "LIBC",
+        "liblog.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so",
+        "t$ 1",
+        "Genu3F",
+        "ntel3N",
+        "ineI3F",
+        "(D$ ",
+        ")D$`",
+        ")D$P",
+        ")D$@",
+        ")D$01",
+        "L$4PVQ",
+        "^_[]",
+        "C.V=201902121339",
+        "Linker: LLD 14.0.7",
+        "Android (9352603, based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)",
+        "clang version 14.0.7",
+        ".preinit_array",
+        ".init_array",
+        ".fini_array",
+        ".text",
+        ".got",
+        ".comment",
+        ".note.android.ident",
+        ".got.plt",
+        ".rel.plt",
+        ".bss",
+        ".dynstr",
+        ".eh_frame_hdr",
+        ".gnu.version_r",
+        ".interp",
+        ".rel.dyn",
+        ".gnu.version",
+        ".dynsym",
+        ".gnu.hash",
+        ".eh_frame",
+        ".note.gnu.build-id",
+        ".dynamic",
+        ".shstrtab",
+        ".rodata"
+      ],
+      "status": "decrypted_elf",
+      "reader": "com.pgl.ssdk.af.a(Context), af.a(byte[],int,byte[])",
+      "algorithm": "Each read block XOR with repeating UTF-8 dic; file is shorter than one 4096-byte read block",
+      "limitation": "SDK code recovered; executable has not been run"
+    }
+  ],
+  "phase_one_boundary": "All listed bodies acquired and decoded at least structurally; 318 animation contexts cannot be restored from the acquired snapshot because no matching skeleton exists among all 1115. This does not prove historical/server resources are globally unavailable.",
+  "issues": [
+    {
+      "category": "binary_field_semantics",
+      "severity": "readability",
+      "count": 2,
+      "note": "Complete binary structures are available; original field names/semantic roles require reader analysis"
+    },
+    {
+      "category": "unresolved_textasset_payload",
+      "severity": "blocking",
+      "count": 318,
+      "note": "Known animation format still requires successful full decoding with its skeleton context"
+    },
+    {
+      "category": "native_high_level_source",
+      "severity": "readability",
+      "count": 1,
+      "note": "All executable sections have disassembly; C# implementations and control-flow reconstruction remain review work"
+    },
+    {
+      "category": "android_java_errors",
+      "severity": "readability",
+      "count": 21,
+      "note": "Explicit source markers indexed and all mapped to complete smali; generated Java is not authoritative at marked lines"
+    }
+  ],
+  "definitions": {
+    "unique_chunks": "SHA-256 deduplication, not semantic deduplication",
+    "categories": "Path/name classification; provisional until function review",
+    "lines": "Generated decompiled/disassembly lines; original source LOC unknown",
+    "functions": "Parsed Lua prototypes, includes anonymous/nested functions and chunk main",
+    "remote": "Recorded 2026-09-22 catalog, fetched bytes timestamped separately; not current account configuration",
+    "decompilation": "Generated source is unverified until compilation/bytecode comparison"
+  }
+}

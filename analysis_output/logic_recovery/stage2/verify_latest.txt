@@ -1,0 +1,283 @@
+{
+  "title": "Stage-two index structural verification",
+  "structural_status": "pass",
+  "semantic_coverage_status": "static_candidate_complete_runtime_unverified",
+  "errors": [],
+  "lua_modules": 3415,
+  "lua_source_available": 3415,
+  "lua_source_missing": 0,
+  "lua_source_unreadable": 0,
+  "lua_parse_status": {
+    "complete": 3415
+  },
+  "lua_decompile_status": {
+    "generated_unverified": 3415
+  },
+  "lua_roundtrip_validation": {
+    "count": 3415,
+    "statuses": {
+      "instruction_structure_equal": 3415
+    },
+    "prototype_mismatches": 0,
+    "definition": "Exact args/opcodes/constants/upvalues/child prototypes comparison; debug data ignored",
+    "limitation": "A mismatch does not prove semantic error; source requires disassembly review. No gameplay execution performed."
+  },
+  "main_entity_counts": {
+    "android_class": 43784,
+    "android_method": 254729,
+    "il2cpp_method_mapping": 78516,
+    "lua_event": 391,
+    "lua_module": 3415,
+    "lua_prototype": 33272,
+    "native_library": 22
+  },
+  "main_edge_counts": {
+    "android_invoke_direct": 95573,
+    "android_invoke_direct_range": 7060,
+    "android_invoke_interface": 38932,
+    "android_invoke_interface_range": 1242,
+    "android_invoke_static": 177772,
+    "android_invoke_static_range": 5770,
+    "android_invoke_super": 2838,
+    "android_invoke_super_range": 52,
+    "android_invoke_virtual": 198631,
+    "android_invoke_virtual_range": 5605,
+    "contains_nested_prototype": 29857,
+    "declares_method": 254729,
+    "defines_prototype": 33272,
+    "event_addlistener": 1197,
+    "event_removelistener": 8,
+    "lua_require": 2158
+  },
+  "main_unresolved_counts": [
+    {
+      "layer": "android",
+      "category": "external_or_unresolved",
+      "count": 9382
+    },
+    {
+      "layer": "lua",
+      "category": "require_target_unresolved",
+      "count": 51
+    }
+  ],
+  "lua_relation_counts": {
+    "functions": 24736,
+    "relations": 120023,
+    "unresolved": 61879
+  },
+  "state_config_access_counts": {
+    "access_sites": 3478,
+    "unresolved": 146,
+    "by_kind": {
+      "configuration_control_or_metadata": 225,
+      "configuration_read": 163,
+      "database_table": 2089,
+      "model_api_candidate": 37,
+      "model_config_accessor": 42,
+      "player_prefs": 661,
+      "resource_config_read": 261
+    }
+  },
+  "interaction_trigger_counts": {
+    "rows": 7572,
+    "by_kind": {
+      "async_or_callback": 1673,
+      "bridge": 2811,
+      "event": 3088
+    }
+  },
+  "event_graph_counts": {
+    "sites": 3088,
+    "event_names": 424,
+    "by_operation": {
+      "AddListener": 1612,
+      "DispatchEvent": 1443,
+      "RemoveListener": 33
+    },
+    "unresolved": 940
+  },
+  "input_entry_counts": {
+    "entries": 2036,
+    "by_kind": {
+      "inline_input_callback": 197,
+      "input_registration_candidate": 1657,
+      "named_input_method": 182
+    }
+  },
+  "input_path_counts": {
+    "paths": 2036,
+    "paths_with_downstream_evidence": 2020,
+    "items": 23874
+  },
+  "input_call_reachability_counts": {
+    "roots": 1010,
+    "reachable_rows": 47383,
+    "roots_with_event_reachable": 871,
+    "roots_with_state_reachable": 562
+  },
+  "lua_bridge_counts": {
+    "rows": 602,
+    "by_certainty": {
+      "ambiguous_member_method_match": 36,
+      "constructor_method_candidate": 60,
+      "static_or_instance_member": 449,
+      "unique_member_method_match": 18,
+      "unresolved_constructor": 39
+    }
+  },
+  "network_call_counts": {
+    "calls": 15527,
+    "request_names": 989,
+    "by_callback_shape": {
+      "callback_expression": 1575,
+      "inline_function": 8003,
+      "none": 5949
+    }
+  },
+  "network_callback_effect_counts": {
+    "callbacks": 16,
+    "effects": 14,
+    "unresolved": 55
+  },
+  "named_network_callback_counts": {
+    "expressions": 2317,
+    "effects": 27,
+    "by_certainty": {
+      "ambiguous": 44,
+      "candidate_unique": 113,
+      "unresolved": 2160
+    }
+  },
+  "callback_assignment_counts": {
+    "assignments": 5095,
+    "resolved_call_arguments": 212,
+    "by_certainty": {
+      "ambiguous": 51,
+      "candidate_unique": 78,
+      "unresolved": 83
+    }
+  },
+  "random_mechanism_counts": {
+    "mechanisms": 1983,
+    "config_fields": 5857,
+    "by_kind": {
+      "candidate_mutation": 1493,
+      "candidate_remove": 150,
+      "random_n": 21,
+      "random_uniform": 257,
+      "weighted": 62
+    },
+    "by_replacement_status": {
+      "candidate_mutation": 1426,
+      "likely_without_replacement": 90,
+      "unknown": 296,
+      "without_replacement": 14,
+      "without_replacement_candidate_mutation": 150,
+      "without_replacement_source_preserved": 7
+    },
+    "explicit_candidate_removals": 150
+  },
+  "weight_config_counts": {
+    "assignments": 3830,
+    "selections": 62,
+    "groups": 28,
+    "zero_values": 528,
+    "negative_values": 0
+  },
+  "semantic_coverage_counts": {
+    "roots": 1010,
+    "by_class": {
+      "direct_wrapper_effect_unresolved_target": 5,
+      "downstream_effect_evidence": 993,
+      "dynamic_callback_candidate_linked": 3,
+      "dynamic_callback_effect_candidate": 2,
+      "dynamic_forwarding_candidate": 3,
+      "explicit_noop_or_guard_only": 4
+    },
+    "with_event": 872,
+    "with_state": 874,
+    "with_network": 684,
+    "with_bridge": 926,
+    "with_random": 344,
+    "with_config": 369
+  },
+  "dynamic_callback_counts": {
+    "calls": 411,
+    "assignments": 644,
+    "links": 273,
+    "unlinked_calls": 195
+  },
+  "state_mutation_counts": {
+    "mutations": 18734,
+    "self_mutations": 18673,
+    "global_model_mutations": 61
+  },
+  "dynamic_callback_effect_counts": {
+    "definitions": 131,
+    "effects": 186,
+    "links": 347
+  },
+  "dynamic_wrapper_effect_counts": {
+    "wrappers": 82,
+    "effects": 17,
+    "dynamic_calls": 186
+  },
+  "dynamic_forwarding_counts": {
+    "functions": 24736,
+    "assignments": 16504,
+    "calls": 24527,
+    "links": 10713
+  },
+  "il2cpp_native_counts": {
+    "methods": 78516,
+    "methods_mapped_to_function_start": 78516,
+    "native_function_entries": 90799,
+    "native_functions_with_disassembly": 90799,
+    "direct_calls": 712596,
+    "direct_calls_to_method_entry": 223770
+  },
+  "invalid_relation_locations": [],
+  "test_module_count": 117,
+  "test_framework_counts": {
+    "modules": 117,
+    "button_definitions": 133,
+    "button_configurations": 133,
+    "commands": 14,
+    "button_reference_resolution": {
+      "button_definition": 133,
+      "unique_static_definition": 133
+    },
+    "button_handler_resolution": {
+      "unique_TestWindowV2_method": 125,
+      "no_named_handler_candidate": 6,
+      "last_definition_wins_in_source_order": 2,
+      "configured_reference": 133
+    }
+  },
+  "database_integrity": {
+    "logic_index.sqlite3": "ok",
+    "lua_relations.sqlite3": "ok",
+    "state_config_access.sqlite3": "ok",
+    "il2cpp_native.sqlite3": "ok",
+    "interaction_triggers.sqlite3": "ok",
+    "event_graph.sqlite3": "ok",
+    "input_entries.sqlite3": "ok",
+    "input_paths.sqlite3": "ok",
+    "input_call_reachability.sqlite3": "ok",
+    "lua_bridge.sqlite3": "ok",
+    "network_calls.sqlite3": "ok",
+    "network_callback_effects.sqlite3": "ok",
+    "named_network_callbacks.sqlite3": "ok",
+    "callback_assignments.sqlite3": "ok",
+    "random_mechanisms.sqlite3": "ok",
+    "weight_config.sqlite3": "ok",
+    "semantic_coverage.sqlite3": "ok",
+    "dynamic_callbacks.sqlite3": "ok",
+    "state_mutations.sqlite3": "ok",
+    "dynamic_callback_effects.sqlite3": "ok",
+    "dynamic_wrapper_effects.sqlite3": "ok",
+    "dynamic_forwarding.sqlite3": "ok"
+  },
+  "interpretation": "A structural pass verifies counts, database integrity, and evidence locations only. It does not validate decompilation semantics, dynamic targets, runtime activation, configuration variants, state lifecycles, or full behavior coverage."
+}

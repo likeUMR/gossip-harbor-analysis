@@ -1,0 +1,4 @@
+﻿day,date,player_type,run_id,cumulative_gold_earned,cumulative_main_tasks_completed,cumulative_main_gold_spent,cumulative_orders_completed,cumulative_diamonds_spent,cumulative_energy_spent,cumulative_energy_natural,cumulative_energy_bought,energy_remaining
+1,2026-01-01,top,2026092701,13410,153,13402,114,47093,16855,374.0,16400,19.0
+2,2026-01-02,top,2026092701,25727,241,25637,211,86102,30914,814.0,30100,100.0
+3,2026-01-03,top,2026092701,25727,241,25637,211,86102,30914,814.0,30100,100.0

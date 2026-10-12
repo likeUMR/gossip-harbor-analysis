@@ -3,7 +3,6 @@
 `_CanFreeLuckyProduce` 检查队首阈值是否已被当前能量消耗计数达到；命中后 `_PostProcessOnFreeLuckyProduce` 移除队首并保存队列。本次不减少 `tl_<sourceType>`。
 
 **源码**：`_CanFreeLuckyProduce`、`_PostProcessOnFreeLuckyProduce`。**状态**：`elpec`、EnergyCostCount。每日重置和实际能量计数来源 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,11 +11,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：A 免费资格也失败，所以普通产出；B 不走该路径。
+**本页发生什么**：本例已有 1 次免费 Lucky 资格，因此点击时直接消费资格并生成 1 个 Lucky 物品；普通机会和能量不会因为这次免费领取重复扣除。
 
 ### 代入本页的值
 
-A 演示 `_CanFreeLuckyProduce()=false`：不调用免费消费后处理。若改为 true，则消费队首，`tl_105` 保持 60，进入 Free Lucky 物品抽取。这是对照分支，非 A 的实际演示路径。
+假设免费队列为 `[204]`，`_CanFreeLuckyProduce()` 返回 `true`。消费队首后队列变为空，`tl_105` 保持 60（免费产出不占普通机会），再用 Lucky 物品池抽出 204；若队列为空则函数直接返回 false。
 
 <details><summary>本案例共同前提</summary>
 
@@ -27,3 +26,12 @@ A 演示 `_CanFreeLuckyProduce()=false`：不调用免费消费后处理。若�
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [免费 Lucky 服务器字段](generate.md#configuration-free-lucky)：LuckyProduceModel:_LoadOtherServerConfig 载入 luckyProduceConfig；_AddFreeLuckyProduceEnergyCostCount 读取 energy_cost.range_entry 与 extra_lucky。
+
+
+<!-- generator-configs:end -->

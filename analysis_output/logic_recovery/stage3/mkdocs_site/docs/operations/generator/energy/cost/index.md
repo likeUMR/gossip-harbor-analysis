@@ -3,18 +3,17 @@
 `costEnergy = (Spread_CostEnergy == 1)`；若 Disco 对当前母体生效则强制改为 false。免能量时返回允许产出和 0 消耗，但仍需完成空位检查。
 
 **配表**：`ItemModelConfig.Spread_CostEnergy`。**源码**：`CheckEnergy`。Disco 的活动来源 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：食品袋需要能量；本例没有免能量活动。
+**本页发生什么**：本例配置要求能量，且没有免能量活动，因此这次点击会消耗 1 点能量。若免能量活动生效，玩家仍能看到产物，但能量余额不会下降。
 
 ### 代入本页的值
 
-`Spread_CostEnergy=1`；Disco 不生效；`costEnergy=true`。
+假设 `Spread_CostEnergy=1`，且 Disco 对食品袋 105 生效。先得到 `costEnergy=true`，再被 Disco 覆盖为 `false`；本次点击仍需完成空位检查，但玩家得到产物时能量保持 10，不扣除能量。
 
 <details><summary>本案例共同前提</summary>
 

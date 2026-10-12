@@ -1,0 +1,14 @@
+{
+  "title": "阶段二回调变量赋值传播",
+  "assignment_rows": 5095,
+  "resolved_call_arguments": 212,
+  "by_certainty": {
+    "unresolved": 83,
+    "ambiguous": 51,
+    "candidate_unique": 78
+  },
+  "database": "analysis_data/logic_index/stage2/callback_assignments.sqlite3",
+  "limitations": [
+    "仅传播同一模块、同一命名函数内的简单变量赋值；表字段、闭包捕获、跨函数返回值和动态赋值仍需 AST 数据流分析。"
+  ]
+}

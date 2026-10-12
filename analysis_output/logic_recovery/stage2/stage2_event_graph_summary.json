@@ -1,0 +1,23 @@
+{
+  "title": "阶段二事件传播图",
+  "modules": 3415,
+  "source_states": {
+    "available": 3415
+  },
+  "event_sites": 3088,
+  "by_operation": {
+    "AddListener": 1612,
+    "DispatchEvent": 1443,
+    "RemoveListener": 33
+  },
+  "event_names": 424,
+  "unresolved": {
+    "event_expression": 686,
+    "callback": 254
+  },
+  "database": "analysis_data/logic_index/stage2/event_graph.sqlite3",
+  "limitations": [
+    "同名方法候选按模块和方法名归类，继承/混入/对象别名仍需运行时或类型信息确认。",
+    "事件注册顺序、对象生命周期和网络返回触发关系需要第三阶段结合场景验证。"
+  ]
+}

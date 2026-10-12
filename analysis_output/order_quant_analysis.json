@@ -1,0 +1,2288 @@
+{
+  "filters": [
+    {
+      "type": 1,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 6,
+        "PlayerMax": 15,
+        "SecondMax": 5,
+        "ThirdMax": 3
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 6.8,
+          "mean_energy": 3.8,
+          "levels": {
+            "2": 1,
+            "3": 9
+          }
+        }
+      ],
+      "expected_gold": 25.065637065637066,
+      "expected_energy": 19.184362934362934,
+      "expected_count": 1.5,
+      "gold_per_energy": 1.3065660377358492
+    },
+    {
+      "type": 1,
+      "filter": 2,
+      "filter_config": {
+        "FirstMax": 6,
+        "PlayerMin": 16,
+        "SecondMax": 6,
+        "ThirdMax": 3
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 6.8,
+          "mean_energy": 3.8,
+          "levels": {
+            "2": 1,
+            "3": 9
+          }
+        }
+      ],
+      "expected_gold": 27.527027027027025,
+      "expected_energy": 21.972972972972975,
+      "expected_count": 1.5,
+      "gold_per_energy": 1.2527675276752765
+    },
+    {
+      "type": 2,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 7,
+        "FirstMin": 7,
+        "PlayerMax": 15,
+        "SecondMax": 6,
+        "ThirdMax": 4
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 7,
+          "count": 9,
+          "weight": 900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1111111111111111,
+          "mean_gold": 52.44444444444444,
+          "mean_energy": 64.0,
+          "levels": {
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 4,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 9.578947368421053,
+          "mean_energy": 5.7894736842105265,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9
+          }
+        }
+      ],
+      "expected_gold": 61.62012012012012,
+      "expected_energy": 71.32432432432432,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.8639425708391226
+    },
+    {
+      "type": 2,
+      "filter": 2,
+      "filter_config": {
+        "FirstMax": 7,
+        "FirstMin": 7,
+        "PlayerMin": 16,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 7,
+          "count": 9,
+          "weight": 900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1111111111111111,
+          "mean_gold": 52.44444444444444,
+          "mean_energy": 64.0,
+          "levels": {
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 64.95531400966183,
+      "expected_energy": 76.15217391304348,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.8529672978716655
+    },
+    {
+      "type": 3,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 7,
+        "FirstMin": 6,
+        "PlayerMax": 7,
+        "SecondMax": 5,
+        "ThirdMax": 3
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 6,
+          "max": 7,
+          "count": 18,
+          "weight": 1800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05555555555555555,
+          "mean_gold": 43.05555555555556,
+          "mean_energy": 48.0,
+          "levels": {
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 6.8,
+          "mean_energy": 3.8,
+          "levels": {
+            "2": 1,
+            "3": 9
+          }
+        }
+      ],
+      "expected_gold": 49.76984126984127,
+      "expected_energy": 52.535714285714285,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.9473525190724376
+    },
+    {
+      "type": 3,
+      "filter": 2,
+      "filter_config": {
+        "FirstMax": 8,
+        "FirstMin": 7,
+        "PlayerMax": 15,
+        "PlayerMin": 8,
+        "SecondMax": 5,
+        "ThirdMax": 3
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 8,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 57.42857142857143,
+          "mean_energy": 86.85714285714286,
+          "levels": {
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 6.8,
+          "mean_energy": 3.8,
+          "levels": {
+            "2": 1,
+            "3": 9
+          }
+        }
+      ],
+      "expected_gold": 64.14285714285714,
+      "expected_energy": 91.39285714285715,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.7018366549433371
+    },
+    {
+      "type": 3,
+      "filter": 3,
+      "filter_config": {
+        "FirstMax": 9,
+        "FirstMin": 7,
+        "PlayerMax": 29,
+        "PlayerMin": 16,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 9,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 68.73684210526316,
+          "mean_energy": 131.3684210526316,
+          "levels": {
+            "7": 9,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 81.24771167048056,
+      "expected_energy": 143.52059496567506,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.5661048972791123
+    },
+    {
+      "type": 3,
+      "filter": 4,
+      "filter_config": {
+        "FirstMax": 10,
+        "FirstMin": 7,
+        "PlayerMax": 35,
+        "PlayerMin": 30,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 10,
+          "count": 24,
+          "weight": 2400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.041666666666666664,
+          "mean_gold": 86.58333333333333,
+          "mean_energy": 210.66666666666666,
+          "levels": {
+            "7": 9,
+            "8": 5,
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 99.09420289855072,
+      "expected_energy": 222.81884057971013,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.4447299099157696
+    },
+    {
+      "type": 3,
+      "filter": 5,
+      "filter_config": {
+        "DiffSumMax": 2000,
+        "FirstMax": 10,
+        "FirstMin": 8,
+        "PlayerMax": 60,
+        "PlayerMin": 36,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 8,
+          "max": 10,
+          "count": 15,
+          "weight": 1500,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.06666666666666667,
+          "mean_gold": 107.06666666666666,
+          "mean_energy": 298.6666666666667,
+          "levels": {
+            "8": 5,
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 119.57753623188405,
+      "expected_energy": 310.8188405797102,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.3847177861189471
+    },
+    {
+      "type": 3,
+      "filter": 6,
+      "filter_config": {
+        "DiffSumMin": 2001,
+        "FirstMax": 10,
+        "FirstMin": 9,
+        "PlayerMax": 60,
+        "PlayerMin": 36,
+        "SecondMax": 8,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 9,
+          "max": 10,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 127.4,
+          "mean_energy": 384.0,
+          "levels": {
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 8,
+          "count": 51,
+          "weight": 5100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.0196078431372549,
+          "mean_gold": 29.07843137254902,
+          "mean_energy": 34.470588235294116,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 141.9392156862745,
+      "expected_energy": 401.2352941176471,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.3537555588134682
+    },
+    {
+      "type": 3,
+      "filter": 7,
+      "filter_config": {
+        "DiffSumMax": 2500,
+        "FirstMax": 10,
+        "FirstMin": 9,
+        "PlayerMin": 61,
+        "SecondMax": 8,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 9,
+          "max": 10,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 127.4,
+          "mean_energy": 384.0,
+          "levels": {
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 8,
+          "count": 51,
+          "weight": 5100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.0196078431372549,
+          "mean_gold": 29.07843137254902,
+          "mean_energy": 34.470588235294116,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 141.9392156862745,
+      "expected_energy": 401.2352941176471,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.3537555588134682
+    },
+    {
+      "type": 3,
+      "filter": 8,
+      "filter_config": {
+        "DiffSumMin": 2501,
+        "FirstMax": 10,
+        "FirstMin": 10,
+        "PlayerMin": 61,
+        "SecondMax": 8,
+        "ThirdMax": 6
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 10,
+          "max": 10,
+          "count": 5,
+          "weight": 500,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.2,
+          "mean_gold": 154.4,
+          "mean_energy": 512.0,
+          "levels": {
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 8,
+          "count": 51,
+          "weight": 5100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.0196078431372549,
+          "mean_gold": 29.07843137254902,
+          "mean_energy": 34.470588235294116,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        }
+      ],
+      "expected_gold": 168.9392156862745,
+      "expected_energy": 529.2352941176471,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.3192138120114112
+    },
+    {
+      "type": 4,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 8,
+        "FirstMin": 7,
+        "PlayerMax": 7,
+        "SecondMax": 5,
+        "ThirdMax": 3
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 8,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 57.42857142857143,
+          "mean_energy": 86.85714285714286,
+          "levels": {
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 3,
+          "count": 10,
+          "weight": 1000,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1,
+          "mean_gold": 6.8,
+          "mean_energy": 3.8,
+          "levels": {
+            "2": 1,
+            "3": 9
+          }
+        }
+      ],
+      "expected_gold": 64.14285714285714,
+      "expected_energy": 91.39285714285715,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.7018366549433371
+    },
+    {
+      "type": 4,
+      "filter": 2,
+      "filter_config": {
+        "FirstMax": 9,
+        "FirstMin": 7,
+        "PlayerMax": 15,
+        "PlayerMin": 8,
+        "SecondMax": 6,
+        "ThirdMax": 4
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 9,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 68.73684210526316,
+          "mean_energy": 131.3684210526316,
+          "levels": {
+            "7": 9,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 4,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 9.578947368421053,
+          "mean_energy": 5.7894736842105265,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9
+          }
+        }
+      ],
+      "expected_gold": 77.91251778093884,
+      "expected_energy": 138.6927453769559,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.5617634690926248
+    },
+    {
+      "type": 4,
+      "filter": 3,
+      "filter_config": {
+        "FirstMax": 10,
+        "FirstMin": 7,
+        "PlayerMax": 29,
+        "PlayerMin": 16,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 10,
+          "count": 24,
+          "weight": 2400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.041666666666666664,
+          "mean_gold": 86.58333333333333,
+          "mean_energy": 210.66666666666666,
+          "levels": {
+            "7": 9,
+            "8": 5,
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 99.09420289855072,
+      "expected_energy": 222.81884057971013,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.4447299099157696
+    },
+    {
+      "type": 4,
+      "filter": 4,
+      "filter_config": {
+        "DiffSumMax": 2000,
+        "FirstMax": 11,
+        "FirstMin": 8,
+        "PlayerMax": 50,
+        "PlayerMin": 30,
+        "SecondMax": 7,
+        "ThirdMax": 6
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 8,
+          "max": 11,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 130.42105263157896,
+          "mean_energy": 451.36842105263156,
+          "levels": {
+            "8": 5,
+            "9": 5,
+            "10": 5,
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        }
+      ],
+      "expected_gold": 142.93192219679634,
+      "expected_energy": 463.52059496567506,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.30836153506271025
+    },
+    {
+      "type": 4,
+      "filter": 5,
+      "filter_config": {
+        "DiffSumMin": 2001,
+        "FirstMax": 11,
+        "FirstMin": 9,
+        "PlayerMax": 50,
+        "PlayerMin": 30,
+        "SecondMax": 7,
+        "ThirdMax": 6
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 9,
+          "max": 11,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 153.28571428571428,
+          "mean_energy": 566.8571428571429,
+          "levels": {
+            "9": 5,
+            "10": 5,
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        }
+      ],
+      "expected_gold": 165.79658385093165,
+      "expected_energy": 579.0093167701864,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.2863452781308832
+    },
+    {
+      "type": 4,
+      "filter": 6,
+      "filter_config": {
+        "DiffSumMax": 2000,
+        "FirstMax": 11,
+        "FirstMin": 9,
+        "PlayerMax": 80,
+        "PlayerMin": 51,
+        "SecondMax": 8,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 9,
+          "max": 11,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 153.28571428571428,
+          "mean_energy": 566.8571428571429,
+          "levels": {
+            "9": 5,
+            "10": 5,
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 8,
+          "count": 51,
+          "weight": 5100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.0196078431372549,
+          "mean_gold": 29.07843137254902,
+          "mean_energy": 34.470588235294116,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 167.82492997198878,
+      "expected_energy": 584.09243697479,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.28732597676013444
+    },
+    {
+      "type": 4,
+      "filter": 7,
+      "filter_config": {
+        "DiffSumMin": 2001,
+        "FirstMax": 11,
+        "FirstMin": 10,
+        "PlayerMax": 80,
+        "PlayerMin": 51,
+        "SecondMax": 8,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 10,
+          "max": 11,
+          "count": 9,
+          "weight": 900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1111111111111111,
+          "mean_gold": 182.66666666666666,
+          "mean_energy": 739.5555555555555,
+          "levels": {
+            "10": 5,
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 8,
+          "count": 51,
+          "weight": 5100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.0196078431372549,
+          "mean_gold": 29.07843137254902,
+          "mean_energy": 34.470588235294116,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 197.20588235294116,
+      "expected_energy": 756.7908496732026,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.26058174783442295
+    },
+    {
+      "type": 4,
+      "filter": 8,
+      "filter_config": {
+        "DiffSumMax": 2500,
+        "FirstMax": 11,
+        "FirstMin": 10,
+        "PlayerMin": 81,
+        "SecondMax": 9,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 10,
+          "max": 11,
+          "count": 9,
+          "weight": 900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.1111111111111111,
+          "mean_gold": 182.66666666666666,
+          "mean_energy": 739.5555555555555,
+          "levels": {
+            "10": 5,
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 9,
+          "count": 56,
+          "weight": 5600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.017857142857142856,
+          "mean_gold": 35.44642857142857,
+          "mean_energy": 54.25,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 200.38988095238093,
+      "expected_energy": 766.6805555555555,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.261373370565233
+    },
+    {
+      "type": 4,
+      "filter": 9,
+      "filter_config": {
+        "DiffSumMin": 2501,
+        "FirstMax": 11,
+        "FirstMin": 11,
+        "PlayerMin": 81,
+        "SecondMax": 9,
+        "ThirdMax": 6
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 11,
+          "max": 11,
+          "count": 4,
+          "weight": 400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.25,
+          "mean_gold": 218.0,
+          "mean_energy": 1024.0,
+          "levels": {
+            "11": 4
+          }
+        },
+        {
+          "min": 1,
+          "max": 9,
+          "count": 56,
+          "weight": 5600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.017857142857142856,
+          "mean_gold": 35.44642857142857,
+          "mean_energy": 54.25,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        }
+      ],
+      "expected_gold": 235.72321428571428,
+      "expected_energy": 1051.125,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.22425802286665647
+    },
+    {
+      "type": 9,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 8,
+        "FirstMin": 7,
+        "PlayerMax": 15,
+        "SecondMax": 6,
+        "ThirdMax": 4
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 8,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 57.42857142857143,
+          "mean_energy": 86.85714285714286,
+          "levels": {
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 6,
+          "count": 37,
+          "weight": 3700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.02702702702702703,
+          "mean_gold": 18.35135135135135,
+          "mean_energy": 14.64864864864865,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 4,
+          "count": 19,
+          "weight": 1900,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05263157894736842,
+          "mean_gold": 9.578947368421053,
+          "mean_energy": 5.7894736842105265,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9
+          }
+        }
+      ],
+      "expected_gold": 66.60424710424711,
+      "expected_energy": 94.18146718146718,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.7071905874636166
+    },
+    {
+      "type": 9,
+      "filter": 2,
+      "filter_config": {
+        "FirstMax": 8,
+        "FirstMin": 7,
+        "PlayerMin": 16,
+        "SecondMax": 7,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 50,
+        "two": 50,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 7,
+          "max": 8,
+          "count": 14,
+          "weight": 1400,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.07142857142857142,
+          "mean_gold": 57.42857142857143,
+          "mean_energy": 86.85714285714286,
+          "levels": {
+            "7": 9,
+            "8": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "count": 46,
+          "weight": 4600,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.021739130434782608,
+          "mean_gold": 25.02173913043478,
+          "mean_energy": 24.304347826086957,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 69.93944099378882,
+      "expected_energy": 99.00931677018635,
+      "expected_count": 1.5,
+      "gold_per_energy": 0.7063925221919011
+    },
+    {
+      "type": 12,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 7,
+        "FirstMin": 6,
+        "SecondMax": 5,
+        "ThirdMax": 5
+      },
+      "amounts": {
+        "one": 30,
+        "two": 30,
+        "three": 40
+      },
+      "amount_source": "OrderItemNumberWeightConfig(level 11)",
+      "positions": [
+        {
+          "min": 6,
+          "max": 7,
+          "count": 18,
+          "weight": 1800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05555555555555555,
+          "mean_gold": 43.05555555555556,
+          "mean_energy": 48.0,
+          "levels": {
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "count": 28,
+          "weight": 2800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.03571428571428571,
+          "mean_gold": 13.428571428571429,
+          "mean_energy": 9.071428571428571,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9
+          }
+        }
+      ],
+      "expected_gold": 57.82698412698413,
+      "expected_energy": 57.97857142857143,
+      "expected_count": 2.1,
+      "gold_per_energy": 0.9973854598716001
+    },
+    {
+      "type": 15,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 7,
+        "FirstMin": 5,
+        "SecondMax": 5,
+        "SecondMin": 4,
+        "ThirdMax": 4,
+        "ThirdMin": 3
+      },
+      "amounts": {
+        "one": 30,
+        "two": 30,
+        "three": 40
+      },
+      "amount_source": "OrderItemNumberWeightConfig(level 11)",
+      "positions": [
+        {
+          "min": 5,
+          "max": 7,
+          "count": 27,
+          "weight": 2700,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.037037037037037035,
+          "mean_gold": 35.888888888888886,
+          "mean_energy": 37.333333333333336,
+          "levels": {
+            "5": 9,
+            "6": 9,
+            "7": 9
+          }
+        },
+        {
+          "min": 4,
+          "max": 5,
+          "count": 18,
+          "weight": 1800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05555555555555555,
+          "mean_gold": 17.11111111111111,
+          "mean_energy": 12.0,
+          "levels": {
+            "4": 9,
+            "5": 9
+          }
+        },
+        {
+          "min": 3,
+          "max": 4,
+          "count": 18,
+          "weight": 1800,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.05555555555555555,
+          "mean_gold": 9.88888888888889,
+          "mean_energy": 6.0,
+          "levels": {
+            "3": 9,
+            "4": 9
+          }
+        }
+      ],
+      "expected_gold": 51.822222222222216,
+      "expected_energy": 48.13333333333333,
+      "expected_count": 2.1,
+      "gold_per_energy": 1.0766389658356417
+    },
+    {
+      "type": 16,
+      "filter": 1,
+      "amounts": {
+        "one": 30,
+        "two": 30,
+        "three": 40
+      },
+      "amount_source": "OrderItemNumberWeightConfig(level 11)",
+      "positions": [],
+      "expected_gold": null,
+      "expected_energy": null,
+      "gold_per_energy": null
+    },
+    {
+      "type": 21,
+      "filter": 1,
+      "filter_config": {
+        "FirstMax": 12,
+        "FirstMin": 12,
+        "SecondMax": 10,
+        "ThirdMax": 10
+      },
+      "amounts": {
+        "one": 100,
+        "two": 0,
+        "three": 0
+      },
+      "amount_source": "OrderRandomConfig.ItemAmounts",
+      "positions": [
+        {
+          "min": 12,
+          "max": 12,
+          "count": 3,
+          "weight": 300,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.3333333333333333,
+          "mean_gold": 279.3333333333333,
+          "mean_energy": 2048.0,
+          "levels": {
+            "12": 3
+          }
+        },
+        {
+          "min": 1,
+          "max": 10,
+          "count": 61,
+          "weight": 6100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.01639344262295082,
+          "mean_gold": 45.19672131147541,
+          "mean_energy": 91.77049180327869,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5,
+            "9": 5,
+            "10": 5
+          }
+        },
+        {
+          "min": 1,
+          "max": 10,
+          "count": 61,
+          "weight": 6100,
+          "candidate_weight": [
+            100
+          ],
+          "weight_share_each": 0.01639344262295082,
+          "mean_gold": 45.19672131147541,
+          "mean_energy": 91.77049180327869,
+          "levels": {
+            "2": 1,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 9,
+            "7": 9,
+            "8": 5,
+            "9": 5,
+            "10": 5
+          }
+        }
+      ],
+      "expected_gold": 279.3333333333333,
+      "expected_energy": 2048.0,
+      "expected_count": 1.0,
+      "gold_per_energy": 0.13639322916666666
+    }
+  ],
+  "summaries": [
+    {
+      "type": 1,
+      "filter_count": 2,
+      "expected_gold_min": 25.065637065637066,
+      "expected_gold_max": 27.527027027027025,
+      "expected_energy_min": 19.184362934362934,
+      "expected_energy_max": 21.972972972972975,
+      "gold_per_energy_min": 1.2527675276752765,
+      "gold_per_energy_max": 1.3065660377358492,
+      "first_level_min": 1,
+      "first_level_max": 6
+    },
+    {
+      "type": 2,
+      "filter_count": 2,
+      "expected_gold_min": 61.62012012012012,
+      "expected_gold_max": 64.95531400966183,
+      "expected_energy_min": 71.32432432432432,
+      "expected_energy_max": 76.15217391304348,
+      "gold_per_energy_min": 0.8529672978716655,
+      "gold_per_energy_max": 0.8639425708391226,
+      "first_level_min": 7,
+      "first_level_max": 7
+    },
+    {
+      "type": 3,
+      "filter_count": 8,
+      "expected_gold_min": 49.76984126984127,
+      "expected_gold_max": 168.9392156862745,
+      "expected_energy_min": 52.535714285714285,
+      "expected_energy_max": 529.2352941176471,
+      "gold_per_energy_min": 0.3192138120114112,
+      "gold_per_energy_max": 0.9473525190724376,
+      "first_level_min": 6,
+      "first_level_max": 10
+    },
+    {
+      "type": 4,
+      "filter_count": 9,
+      "expected_gold_min": 64.14285714285714,
+      "expected_gold_max": 235.72321428571428,
+      "expected_energy_min": 91.39285714285715,
+      "expected_energy_max": 1051.125,
+      "gold_per_energy_min": 0.22425802286665647,
+      "gold_per_energy_max": 0.7018366549433371,
+      "first_level_min": 7,
+      "first_level_max": 11
+    },
+    {
+      "type": 9,
+      "filter_count": 2,
+      "expected_gold_min": 66.60424710424711,
+      "expected_gold_max": 69.93944099378882,
+      "expected_energy_min": 94.18146718146718,
+      "expected_energy_max": 99.00931677018635,
+      "gold_per_energy_min": 0.7063925221919011,
+      "gold_per_energy_max": 0.7071905874636166,
+      "first_level_min": 7,
+      "first_level_max": 8
+    },
+    {
+      "type": 12,
+      "filter_count": 1,
+      "expected_gold_min": 57.82698412698413,
+      "expected_gold_max": 57.82698412698413,
+      "expected_energy_min": 57.97857142857143,
+      "expected_energy_max": 57.97857142857143,
+      "gold_per_energy_min": 0.9973854598716001,
+      "gold_per_energy_max": 0.9973854598716001,
+      "first_level_min": 6,
+      "first_level_max": 7
+    },
+    {
+      "type": 15,
+      "filter_count": 1,
+      "expected_gold_min": 51.822222222222216,
+      "expected_gold_max": 51.822222222222216,
+      "expected_energy_min": 48.13333333333333,
+      "expected_energy_max": 48.13333333333333,
+      "gold_per_energy_min": 1.0766389658356417,
+      "gold_per_energy_max": 1.0766389658356417,
+      "first_level_min": 5,
+      "first_level_max": 7
+    },
+    {
+      "type": 21,
+      "filter_count": 1,
+      "expected_gold_min": 279.3333333333333,
+      "expected_gold_max": 279.3333333333333,
+      "expected_energy_min": 2048.0,
+      "expected_energy_max": 2048.0,
+      "gold_per_energy_min": 0.13639322916666666,
+      "gold_per_energy_max": 0.13639322916666666,
+      "first_level_min": 12,
+      "first_level_max": 12
+    }
+  ],
+  "special_orders": [
+    {
+      "id": 1,
+      "trigger": "taskFinish-2_7",
+      "requirements": [
+        "1610"
+      ],
+      "gold": 0,
+      "energy": 512,
+      "energy_reward": 100,
+      "reward_gems": 15,
+      "reward": "15 gems + 100 energy",
+      "net_energy": 412,
+      "gem_per_net_energy": 0.03640776699029126
+    },
+    {
+      "id": 2,
+      "trigger": "taskFinish-11_6",
+      "requirements": [
+        "2010"
+      ],
+      "gold": 0,
+      "energy": 512,
+      "energy_reward": 100,
+      "reward_gems": 20,
+      "reward": "20 gems + 100 energy",
+      "net_energy": 412,
+      "gem_per_net_energy": 0.04854368932038835
+    },
+    {
+      "id": 3,
+      "trigger": "taskFinish-18_7",
+      "requirements": [
+        "sp3_2_10",
+        "sp3_3_6"
+      ],
+      "gold": 0,
+      "energy": 544,
+      "energy_reward": 150,
+      "reward_gems": 30,
+      "reward": "30 gems + 150 energy",
+      "net_energy": 394,
+      "gem_per_net_energy": 0.07614213197969544
+    },
+    {
+      "id": 4,
+      "trigger": "taskFinish-24_3",
+      "requirements": [
+        "sp4_3_10"
+      ],
+      "gold": 0,
+      "energy": 512,
+      "energy_reward": 150,
+      "reward_gems": 30,
+      "reward": "30 gems + 150 energy",
+      "net_energy": 362,
+      "gem_per_net_energy": 0.08287292817679558
+    },
+    {
+      "id": 5,
+      "trigger": "taskFinish-29_8",
+      "requirements": [
+        "sp5_2_10"
+      ],
+      "gold": 0,
+      "energy": 512,
+      "energy_reward": 200,
+      "reward_gems": 25,
+      "reward": "25 gems + 200 energy",
+      "net_energy": 312,
+      "gem_per_net_energy": 0.08012820512820513
+    },
+    {
+      "id": 6,
+      "trigger": "taskFinish-33_9",
+      "requirements": [
+        "sp6_2_10"
+      ],
+      "gold": 0,
+      "energy": 512,
+      "energy_reward": 200,
+      "reward_gems": 25,
+      "reward": "25 gems + 200 energy",
+      "net_energy": 312,
+      "gem_per_net_energy": 0.08012820512820513
+    }
+  ],
+  "activity_orders": [
+    {
+      "type": "CharacterIntimacyRandom",
+      "open": "CharacterIntimacyModel.IsOpen && IsRandomOrderOpen",
+      "trigger": "对应亲密度槽 CanCreate + 独立 StartTimer/RefreshTime",
+      "cd": "3600 秒",
+      "quant": "Type12 Filter：First 6-7 / Second≤5 / Third≤5；数量使用通用 30/30/40"
+    },
+    {
+      "type": "TimedCustomer",
+      "open": "活动模型决定；Type15 本地静态表 UnlockLevel=12",
+      "trigger": "活动指定普通槽后使用 Type15 的随机需求档",
+      "cd": "本地 RefreshTime=1 秒；不是独立 TimedOrder 的频率",
+      "quant": "Type15：First 5-7 / Second 4-5 / Third 3-4；不得归到 TimedOrder"
+    },
+    {
+      "type": "TimedOrder",
+      "open": "Type16 本地 UnlockLevel=1；并且 TimedOrder 活动模型 CanCreateOrder(13)=true",
+      "trigger": "活动进入可创建状态后，还需遇到一次补位扫描；客户端存在难度/奖励选择流程",
+      "cd": "Type16 本地 RefreshTime=1 秒仅为即时资格；活动模型控制实际周期和上限",
+      "quant": "Type16 本地 Filters 为空；需求、难度与奖励来自活动模型/远端配置，当前不能计算金币/体力"
+    },
+    {
+      "type": "ChestCustomer",
+      "open": "ChestCustomerModel.CheckCreateChestOrder",
+      "trigger": "CanFillChestCustomerOrder + 活动槽位可用；CreateNewChestCustomerOrder",
+      "cd": "120 秒",
+      "quant": "Type21：First=12；1 件 100%"
+    },
+    {
+      "type": "Lucky",
+      "open": "LuckyOrderSlot.CanTriggerLucky",
+      "trigger": "订单完成后累积 LuckyOrderPoints；到达积分/时间条件后按 LuckyTriggerChance 尝试",
+      "cd": "LuckyOrderConfig.RefreshTime（本次未在 JSON 配置中导出）",
+      "quant": "需求沿用 LuckyOrderConfig Filter，需单独导出才能计算"
+    },
+    {
+      "type": "ReturnUserFree",
+      "open": "ReturnUserModel.IsOpen && IsInReturnRewardTime",
+      "trigger": "回归奖励期间检查 ReturnUserFreeOrderTimer，并从棋盘已有物品选需求",
+      "cd": "CreatorReturnFreeOrderRefreshTime（未在本次 JSON 中导出）",
+      "quant": "动态选棋盘物品，不能仅由 OrderItemConfig 计算"
+    },
+    {
+      "type": "Contiorder / ExtraCustomer",
+      "open": "GetStartedContiorders / ExtraCustomer 活动模型开放",
+      "trigger": "对应 ActivityModel.CanCreateOrder；完成后由 MainOrderModel 继续补位",
+      "cd": "活动模型控制",
+      "quant": "需活动专属配置与奖励表"
+    }
+  ],
+  "formulas": [
+    "P(candidate i | position, filter) = Weight_i / sum(Weight_j) over eligible Weight>0 candidates.",
+    "E[gold] = E[gold(First)] + P(2 items)·E[gold(Second)] + P(3 items)·E[gold(Second)+gold(Third)]. First is always required.",
+    "E[energy] uses the same position probabilities, with energy(L)=2^(L-1) base pieces.",
+    "Gold / energy = E[gold] / E[energy]; filters are not averaged because their live selection probabilities are state-dependent."
+  ],
+  "assumptions": [
+    "候选池取 OrderItemConfig 中 Weight>0 的全部标准棋子；按配置 Weight 加权。",
+    "基础子体=1体力，等级L棋子消耗 2^(L-1) 个基础子体；不计棋盘已有库存、生产器免费产出、订单互斥和重复权重动态衰减。",
+    "普通随机订单按 First 必选，Second/Third 按 ItemAmounts 或 OrderItemNumberWeightConfig(level 11: 30/30/40) 的数量权重计入。",
+    "当前标准候选的 Weight 均为100（Weight=0已排除），因此候选概率=1/候选总数；若未来出现不同Weight，按公式归一化。",
+    "该结果是配置级理论期望，不是某个玩家状态下的实测掉落概率。"
+  ]
+}

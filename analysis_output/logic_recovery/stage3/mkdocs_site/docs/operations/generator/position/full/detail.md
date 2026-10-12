@@ -3,18 +3,17 @@
 手动路径的落点函数返回 nil 后立即调用 `_NotifySpreadFailed(BoardFull)`，不调用 `GenerateItemCode`、`SpreadCostEnergy`、`SpreadItem` 或 `CosetRestNumber`。通知函数发送棋盘事件 `BoardEventType.SpreadFailed`、全局事件 `EEventType.SpreadFailed` 和 `VibrationHeavy`。自动路径棋盘满不发送这个主动点击失败链，而是让 `_TryAutoSpread` 返回 false；只有缓存条件全部满足时才转入 `CacheItemFromSpread`。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本页具体说明有空位时产物成功落盘、无空位时点击提前失败，资源保持不变。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设 `position=nil`、可用空位集合为空。`CheckSpreadPosAndAuto` 返回 false，发送 `BoardFull`，能量和次数仍为 10 与 80；若集合含 P，则返回 true 并继续产出。
 
 <details><summary>本案例共同前提</summary>
 

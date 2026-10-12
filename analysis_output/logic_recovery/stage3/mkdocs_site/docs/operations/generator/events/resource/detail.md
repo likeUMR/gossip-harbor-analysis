@@ -3,18 +3,17 @@
 通过能量检查后，`SpreadCostEnergy` 将棋盘能量类型映射为属性类型，调用 `PropertyDataManager:Consume(propertyType,costCount,EBIType.SpreadItem,sourceCode)`。这一步在 `GenerateItemCode` 之后、`BaseBoardModel:SpreadItem` 之前；`RecordBoostRatioAdjustData` 同时记录最终能量增益比率、产出类型、是否消耗能量和母体类型。属性系统的全局监听与上传目标在当前静态快照中未能确认，不能写成必然回调。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本页具体说明成功产出后能量、次数等资源如何更新，以及失败时为什么保持原值。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设 `energy=10` 且 `cost=1`。检查通过后先写入 9，再写入次数 1；事件读取到的是扣除后的值。把余额改为 0 时检查失败，状态仍为 0。
 
 <details><summary>本案例共同前提</summary>
 

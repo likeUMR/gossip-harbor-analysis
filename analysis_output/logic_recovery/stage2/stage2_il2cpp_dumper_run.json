@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "binary": "analysis_data/logic_index/sources/apk/split_config.arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+  "binary_sha256": "b0ff1562e49ac3aa6a8f06bd5582ba432457fe6508f5cee2171e5c4206fe7e2b",
+  "metadata": "apk_extract/gossip_harbor_3.98.10/base_extracted/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+  "metadata_sha256": "35f188dea189872da2866a402ed18d5b0c1e87a7ea37df26ce42386a2bd9c3e2",
+  "method_map": "analysis_data/logic_index/stage2/il2cpp_dumper_run/script.json",
+  "method_map_sha256": "228cbddd23c387afbf31ba2c9c28559cdfd1e544c74689cdd92cebeed9332af9",
+  "method_count": 78516,
+  "native_function_entry_count": 90799,
+  "dump_cs_bytes": 14827921,
+  "dumper_output_log": "analysis_data/logic_index/stage2/il2cpp_dumper_run/dumper_run.log",
+  "dumper_output_tail": [
+    "Il2Cpp Version: 31",
+    "Searching...",
+    "CodeRegistration : 21b8318",
+    "MetadataRegistration : 222f4d8",
+    "Dumping...",
+    "Done!",
+    "Generate struct...",
+    "Done!",
+    "Generate dummy dll...",
+    "Done!"
+  ]
+}

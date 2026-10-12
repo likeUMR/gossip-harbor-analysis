@@ -1,0 +1,62 @@
+{
+  "title": "IL2CPP 元数据方法与 ARM64 汇编关联索引",
+  "sample": "Gossip Harbor 3.98.10; recovered stage-one snapshot",
+  "inputs": {
+    "binary": "analysis_data/logic_index/sources/apk/split_config.arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+    "binary_sha256": "b0ff1562e49ac3aa6a8f06bd5582ba432457fe6508f5cee2171e5c4206fe7e2b",
+    "metadata": "apk_extract/gossip_harbor_3.98.10/base_extracted/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "metadata_sha256": "35f188dea189872da2866a402ed18d5b0c1e87a7ea37df26ce42386a2bd9c3e2",
+    "method_map": "analysis_data/logic_index/stage2/il2cpp_dumper_run/script.json",
+    "method_map_sha256": "228cbddd23c387afbf31ba2c9c28559cdfd1e544c74689cdd92cebeed9332af9",
+    "method_map_sha256_matches_prior_dump": true,
+    "dumper_version": "31 (metadata version 31)",
+    "disassembly_sections": [
+      {
+        "path": "analysis_data/logic_index/native/b0ff1562e49ac3aa6a8f06bd5582ba432457fe6508f5cee2171e5c4206fe7e2b/.text.asm",
+        "bytes": 2432196,
+        "lines": 608049
+      },
+      {
+        "path": "analysis_data/logic_index/native/b0ff1562e49ac3aa6a8f06bd5582ba432457fe6508f5cee2171e5c4206fe7e2b/il2cpp.asm",
+        "bytes": 19149432,
+        "lines": 4787358
+      },
+      {
+        "path": "analysis_data/logic_index/native/b0ff1562e49ac3aa6a8f06bd5582ba432457fe6508f5cee2171e5c4206fe7e2b/.plt.asm",
+        "bytes": 9280,
+        "lines": 2320
+      }
+    ]
+  },
+  "method_map": {
+    "methods": 78516,
+    "distinct_method_addresses": 78516,
+    "mapped_to_function_start": 78516,
+    "unmapped_or_non_entry": 0
+  },
+  "native_functions": {
+    "known_entry_addresses": 90799,
+    "with_disassembly": 90799,
+    "without_disassembly": 0
+  },
+  "assembly_scan": {
+    "assembly_lines": 5397727,
+    "instructions": 5394661,
+    "mapped_instruction_lines": 4787358,
+    "direct_calls": 712596,
+    "indirect_calls": 45301,
+    "method_entry_addresses_seen": 90799
+  },
+  "direct_call_target_resolution": {
+    "mapped_method": 223770,
+    "not_exact_method_entry": 488826
+  },
+  "database": "analysis_data/logic_index/stage2/il2cpp_native.sqlite3",
+  "limitations": [
+    "This indexes ARM64 assembly, not recovered C# source or high-level control flow.",
+    "Direct BL targets are exact only when they match a method entry address; thunk and shared generic bodies need manual attribution.",
+    "BLR targets are indirect and remain unresolved without data-flow or runtime evidence.",
+    "Function boundaries follow Il2CppDumper Addresses; shared bodies, aliases, and compiler-generated layout may complicate ownership.",
+    "The method map is accepted only for the indexed binary after SHA-256 is recorded; metadata hash is recorded separately by the stage-one inventory."
+  ]
+}

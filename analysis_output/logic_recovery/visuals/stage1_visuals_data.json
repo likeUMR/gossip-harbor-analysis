@@ -1,0 +1,645 @@
+{
+  "title": "Gossip Harbor 3.98.10 第一阶段资源与代码规模",
+  "generated_from": "analysis_data/logic_index",
+  "deduplication": {
+    "apk_entries": "精确文件 SHA-256；包体占用仍报告所有 APK entry 的实际压缩字节",
+    "unity_objects": "精确原始对象 SHA-256",
+    "lua": "唯一字节码 SHA-256",
+    "android_methods": "owner + 方法描述符",
+    "native_libraries": "ELF SHA-256",
+    "remote_bundles": "bundle SHA-256"
+  },
+  "apk": {
+    "apk_files": 4,
+    "apk_file_bytes": 223641843,
+    "apk_entry_count": 2330,
+    "apk_entry_hash_unique": 2206,
+    "apk_entry_duplicate_hashes": 124,
+    "zip_payload_compressed_bytes": 223157931,
+    "zip_container_overhead_bytes": 483912,
+    "expanded_entry_bytes_including_duplicates": 285855404,
+    "expanded_unique_entry_bytes": 285770570,
+    "packages": [
+      {
+        "name": "base.apk",
+        "bytes": 195909249,
+        "sha256": "797bcb3ce96430983f4cca68b765dc03873f944db4c732daafb963a0b24d7a19"
+      },
+      {
+        "name": "split_config.arm64_v8a.apk",
+        "bytes": 27441092,
+        "sha256": "10e507ccfc6a4d9d46b80d70bf7cbe940b59376dc5ee64fd933bbd4d03812e5b"
+      },
+      {
+        "name": "split_gpdeku.apk",
+        "bytes": 119049,
+        "sha256": "065c6ed81d402829c6ea272c6e52bc64a879c563cd510a160a769cdf1751cccf"
+      },
+      {
+        "name": "split_gpdeku.config.arm64_v8a.apk",
+        "bytes": 172453,
+        "sha256": "39b0416e554448678fd5321d382ceaad0a2c9e113421f83bf8c8fefef71e08d0"
+      }
+    ],
+    "categories": [
+      {
+        "category": "Unity 游戏资源容器",
+        "entries": 389,
+        "expanded_bytes": 146712411,
+        "stored_bytes": 141683303,
+        "unique_files": 389,
+        "unique_expanded_bytes": 146712411,
+        "expanded_share_percent": 51.323994210723406,
+        "stored_share_percent": 63.49014904605833
+      },
+      {
+        "category": "游戏与运行时代码",
+        "entries": 31,
+        "expanded_bytes": 123895793,
+        "stored_bytes": 66917830,
+        "unique_files": 31,
+        "unique_expanded_bytes": 123895793,
+        "expanded_share_percent": 43.34212027000896,
+        "stored_share_percent": 29.98675857054796
+      },
+      {
+        "category": "独立媒体文件",
+        "entries": 718,
+        "expanded_bytes": 6133000,
+        "stored_bytes": 6131978,
+        "unique_files": 683,
+        "unique_expanded_bytes": 6116069,
+        "expanded_share_percent": 2.1454903122978917,
+        "stored_share_percent": 2.747819883667948
+      },
+      {
+        "category": "配置、文本与其他数据",
+        "entries": 113,
+        "expanded_bytes": 5174985,
+        "stored_bytes": 4877035,
+        "unique_files": 101,
+        "unique_expanded_bytes": 5120172,
+        "expanded_share_percent": 1.8103505924974572,
+        "stored_share_percent": 2.185463442032002
+      },
+      {
+        "category": "Android 系统与包元数据",
+        "entries": 1068,
+        "expanded_bytes": 3431432,
+        "stored_bytes": 3365433,
+        "unique_files": 991,
+        "unique_expanded_bytes": 3418342,
+        "expanded_share_percent": 1.200408301534156,
+        "stored_share_percent": 1.5080947313497004
+      },
+      {
+        "category": "其他或待归类",
+        "entries": 11,
+        "expanded_bytes": 507783,
+        "stored_bytes": 182352,
+        "unique_files": 11,
+        "unique_expanded_bytes": 507783,
+        "expanded_share_percent": 0.17763631293813148,
+        "stored_share_percent": 0.08171432634406348
+      }
+    ]
+  },
+  "remote": {
+    "catalog_entries": 2074,
+    "downloaded_entries": 1829,
+    "unique_downloaded_bundles": 1829,
+    "unique_downloaded_bundle_bytes": 1394719149,
+    "source_note": "远端 catalog 快照单列，不并入 APK 安装大小；对 APK 已有内容不重复相加。"
+  },
+  "unity": {
+    "object_occurrences": 713647,
+    "unique_raw_object_hashes": 712202,
+    "duplicate_object_occurrences_removed": 1445,
+    "serialized_object_bytes": 599843142,
+    "texture_payload_bytes": 1861313627,
+    "unique_texture_records": 20790,
+    "texture_payload_measure": "Texture2D m_CompleteImageSize from decoded type trees; exact repeated serialized objects deduplicated by SHA-256",
+    "other_media_payload_measure": "Serialized Unity object bytes; not a decoded/transcoded media size",
+    "categories": [
+      {
+        "category": "材质、着色器与特效",
+        "unique_objects": 53060,
+        "serialized_bytes": 166108046,
+        "actual_payload_bytes": 166108046,
+        "object_share_percent": 7.450133529532351,
+        "serialized_share_percent": 27.691913830366005
+      },
+      {
+        "category": "动画与 Spine",
+        "unique_objects": 8041,
+        "serialized_bytes": 134796668,
+        "actual_payload_bytes": 134745953,
+        "object_share_percent": 1.1290336168671247,
+        "serialized_share_percent": 22.471986184681594
+      },
+      {
+        "category": "代码、配置与文本",
+        "unique_objects": 119869,
+        "serialized_bytes": 128093668,
+        "actual_payload_bytes": 108340765,
+        "object_share_percent": 16.830758689248274,
+        "serialized_share_percent": 21.35452738075982
+      },
+      {
+        "category": "3D 网格与模型",
+        "unique_objects": 95819,
+        "serialized_bytes": 74682144,
+        "actual_payload_bytes": 74682144,
+        "object_share_percent": 13.453907739658131,
+        "serialized_share_percent": 12.450278876406658
+      },
+      {
+        "category": "2D 图像与精灵",
+        "unique_objects": 31088,
+        "serialized_bytes": 35654612,
+        "actual_payload_bytes": 1876319179,
+        "object_share_percent": 4.365053734755027,
+        "serialized_share_percent": 5.943989270448307
+      },
+      {
+        "category": "场景与界面结构",
+        "unique_objects": 396016,
+        "serialized_bytes": 27471224,
+        "actual_payload_bytes": 27471224,
+        "object_share_percent": 55.604449299496494,
+        "serialized_share_percent": 4.579734613353303
+      },
+      {
+        "category": "物理、设置与其他",
+        "unique_objects": 7978,
+        "serialized_bytes": 17639318,
+        "actual_payload_bytes": 17639318,
+        "object_share_percent": 1.1201878118848305,
+        "serialized_share_percent": 2.9406551087984263
+      },
+      {
+        "category": "字体与视频",
+        "unique_objects": 12,
+        "serialized_bytes": 15342954,
+        "actual_payload_bytes": 15342954,
+        "object_share_percent": 0.0016849152347227332,
+        "serialized_share_percent": 2.557827692893753
+      },
+      {
+        "category": "音频",
+        "unique_objects": 319,
+        "serialized_bytes": 54508,
+        "actual_payload_bytes": 54508,
+        "object_share_percent": 0.04479066332304599,
+        "serialized_share_percent": 0.009087042292133099
+      }
+    ],
+    "types": [
+      {
+        "type": "TextAsset",
+        "unique_objects": 3713,
+        "serialized_bytes": 231827236
+      },
+      {
+        "type": "ParticleSystem",
+        "unique_objects": 19661,
+        "serialized_bytes": 147029720
+      },
+      {
+        "type": "Mesh",
+        "unique_objects": 24964,
+        "serialized_bytes": 68267524
+      },
+      {
+        "type": "Texture2D",
+        "unique_objects": 20790,
+        "serialized_bytes": 20649060
+      },
+      {
+        "type": "MonoBehaviour",
+        "unique_objects": 116313,
+        "serialized_bytes": 19966824
+      },
+      {
+        "type": "AssetBundle",
+        "unique_objects": 2075,
+        "serialized_bytes": 16293652
+      },
+      {
+        "type": "Font",
+        "unique_objects": 8,
+        "serialized_bytes": 15342188
+      },
+      {
+        "type": "Sprite",
+        "unique_objects": 10298,
+        "serialized_bytes": 15005552
+      },
+      {
+        "type": "Material",
+        "unique_objects": 13500,
+        "serialized_bytes": 10463976
+      },
+      {
+        "type": "GameObject",
+        "unique_objects": 168928,
+        "serialized_bytes": 10048980
+      },
+      {
+        "type": "AnimationClip",
+        "unique_objects": 1887,
+        "serialized_bytes": 9808240
+      },
+      {
+        "type": "RectTransform",
+        "unique_objects": 76909,
+        "serialized_bytes": 9194532
+      },
+      {
+        "type": "Transform",
+        "unique_objects": 92019,
+        "serialized_bytes": 7214208
+      },
+      {
+        "type": "ParticleSystemRenderer",
+        "unique_objects": 19661,
+        "serialized_bytes": 5826856
+      },
+      {
+        "type": "MeshRenderer",
+        "unique_objects": 35368,
+        "serialized_bytes": 5535360
+      },
+      {
+        "type": "Shader",
+        "unique_objects": 163,
+        "serialized_bytes": 2757864
+      },
+      {
+        "type": "AnimatorController",
+        "unique_objects": 881,
+        "serialized_bytes": 918364
+      },
+      {
+        "type": "MeshFilter",
+        "unique_objects": 35366,
+        "serialized_bytes": 848784
+      },
+      {
+        "type": "CanvasRenderer",
+        "unique_objects": 48968,
+        "serialized_bytes": 636584
+      },
+      {
+        "type": "ComputeShader",
+        "unique_objects": 6,
+        "serialized_bytes": 591080
+      },
+      {
+        "type": "SpriteRenderer",
+        "unique_objects": 1540,
+        "serialized_bytes": 301840
+      },
+      {
+        "type": "Canvas",
+        "unique_objects": 4008,
+        "serialized_bytes": 252504
+      },
+      {
+        "type": "BoxCollider",
+        "unique_objects": 3543,
+        "serialized_bytes": 240924
+      },
+      {
+        "type": "Animator",
+        "unique_objects": 3602,
+        "serialized_bytes": 201712
+      },
+      {
+        "type": "MonoScript",
+        "unique_objects": 1513,
+        "serialized_bytes": 167904
+      },
+      {
+        "type": "CanvasGroup",
+        "unique_objects": 5184,
+        "serialized_bytes": 124416
+      },
+      {
+        "type": "MonoManager",
+        "unique_objects": 1,
+        "serialized_bytes": 70732
+      },
+      {
+        "type": "AudioClip",
+        "unique_objects": 319,
+        "serialized_bytes": 54508
+      },
+      {
+        "type": "ResourceManager",
+        "unique_objects": 1,
+        "serialized_bytes": 50540
+      },
+      {
+        "type": "BoxCollider2D",
+        "unique_objects": 325,
+        "serialized_bytes": 45500
+      },
+      {
+        "type": "SkinnedMeshRenderer",
+        "unique_objects": 109,
+        "serialized_bytes": 29708
+      },
+      {
+        "type": "TrailRenderer",
+        "unique_objects": 74,
+        "serialized_bytes": 29366
+      },
+      {
+        "type": "SortingGroup",
+        "unique_objects": 387,
+        "serialized_bytes": 10836
+      },
+      {
+        "type": "ScriptMapper",
+        "unique_objects": 1,
+        "serialized_bytes": 10585
+      },
+      {
+        "type": "Camera",
+        "unique_objects": 56,
+        "serialized_bytes": 10304
+      },
+      {
+        "type": "SpriteMask",
+        "unique_objects": 24,
+        "serialized_bytes": 4128
+      },
+      {
+        "type": "InputManager",
+        "unique_objects": 1,
+        "serialized_bytes": 2580
+      },
+      {
+        "type": "PreloadData",
+        "unique_objects": 2,
+        "serialized_bytes": 1574
+      },
+      {
+        "type": "QualitySettings",
+        "unique_objects": 1,
+        "serialized_bytes": 1164
+      },
+      {
+        "type": "GraphicsSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 862
+      },
+      {
+        "type": "PlayerSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 832
+      },
+      {
+        "type": "MeshCollider",
+        "unique_objects": 12,
+        "serialized_bytes": 768
+      },
+      {
+        "type": "VideoPlayer",
+        "unique_objects": 3,
+        "serialized_bytes": 512
+      },
+      {
+        "type": "NavMeshProjectSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 372
+      },
+      {
+        "type": "RenderSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 333
+      },
+      {
+        "type": "Physics2DSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 280
+      },
+      {
+        "type": "ShaderVariantCollection",
+        "unique_objects": 1,
+        "serialized_bytes": 276
+      },
+      {
+        "type": "PhysicsManager",
+        "unique_objects": 1,
+        "serialized_bytes": 272
+      },
+      {
+        "type": "Light",
+        "unique_objects": 1,
+        "serialized_bytes": 264
+      },
+      {
+        "type": "VideoClip",
+        "unique_objects": 1,
+        "serialized_bytes": 254
+      },
+      {
+        "type": "TagManager",
+        "unique_objects": 1,
+        "serialized_bytes": 232
+      },
+      {
+        "type": "BuildSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 172
+      },
+      {
+        "type": "VFXManager",
+        "unique_objects": 1,
+        "serialized_bytes": 100
+      },
+      {
+        "type": "LightmapSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 72
+      },
+      {
+        "type": "Animation",
+        "unique_objects": 1,
+        "serialized_bytes": 56
+      },
+      {
+        "type": "AudioManager",
+        "unique_objects": 1,
+        "serialized_bytes": 48
+      },
+      {
+        "type": "TimeManager",
+        "unique_objects": 1,
+        "serialized_bytes": 16
+      },
+      {
+        "type": "NavMeshSettings",
+        "unique_objects": 1,
+        "serialized_bytes": 12
+      },
+      {
+        "type": "DelayedCallManager",
+        "unique_objects": 1,
+        "serialized_bytes": 0
+      }
+    ]
+  },
+  "code": {
+    "layers": [
+      {
+        "layer": "Lua 5.3",
+        "units": 33272,
+        "unit_label": "函数原型（含嵌套）",
+        "carrier_bytes": 93973970,
+        "readable_lines": 2396819,
+        "secondary_lines": 6024167,
+        "validation": "3,415/3,415 结构一致"
+      },
+      {
+        "layer": "Android / SDK",
+        "units": 254729,
+        "unit_label": "去重方法签名",
+        "carrier_bytes": 36603844,
+        "readable_lines": 2674393,
+        "secondary_lines": 14851334,
+        "validation": "DEX 类均有 smali；21 个 JADX 异常文件有低层回退"
+      },
+      {
+        "layer": "IL2CPP / 原生",
+        "units": 78516,
+        "unit_label": "方法映射（含引擎/SDK）",
+        "carrier_bytes": 45937800,
+        "readable_lines": 0,
+        "secondary_lines": 11517600,
+        "validation": "可执行节全覆盖反汇编；C# 方法体未还原为源码"
+      }
+    ],
+    "lua": {
+      "unique_chunks": 3415,
+      "logical_names": 3413,
+      "bytecode_bytes": 93973970,
+      "prototypes": 33272,
+      "instructions": 4286950,
+      "generated_source_lines": 2396819,
+      "disassembly_lines": 6024167
+    },
+    "android": {
+      "dex_files_unique": 11,
+      "dex_bytes_unique": 36603844,
+      "classes_in_dex_indexes": 43784,
+      "unique_class_descriptors": 43784,
+      "unique_methods": 254729,
+      "method_records_in_index": 254729,
+      "methods_with_code": 238445,
+      "smali_lines": 14851334,
+      "java_source_files": 26004,
+      "java_source_lines": 2671635,
+      "protected_java_source_files": 12,
+      "protected_java_source_lines": 2758
+    },
+    "native": {
+      "unique_arm64_libraries": 22,
+      "native_method_mappings": 78516,
+      "il2cpp_types": 10387,
+      "executable_section_bytes_excluding_plt": 45936964,
+      "assembly_lines": 11517337,
+      "nested_x86_elf_count": 1,
+      "nested_x86_executable_bytes": 836,
+      "nested_x86_assembly_lines": 263
+    }
+  },
+  "coverage": [
+    {
+      "layer": "APK 文件提取",
+      "done": 2330,
+      "total": 2330,
+      "unit": "ZIP entry",
+      "evidence": "清单、CRC、SHA-256",
+      "status": "通过"
+    },
+    {
+      "layer": "Unity 容器对象数",
+      "done": 2210,
+      "total": 2210,
+      "unit": "唯一容器",
+      "evidence": "UnityPy 独立重读对象数",
+      "status": "通过"
+    },
+    {
+      "layer": "Unity 对象字段解码",
+      "done": 713647,
+      "total": 713647,
+      "unit": "对象出现记录",
+      "evidence": "TypeTree / 显式布局完整读取",
+      "status": "通过"
+    },
+    {
+      "layer": "Lua 字节码结构",
+      "done": 3415,
+      "total": 3415,
+      "unit": "唯一字节码块",
+      "evidence": "回编译结构一致",
+      "status": "通过"
+    },
+    {
+      "layer": "Android DEX 类导出",
+      "done": 43784,
+      "total": 43784,
+      "unit": "类定义",
+      "evidence": "smali 文件数逐 DEX 对照",
+      "status": "通过"
+    },
+    {
+      "layer": "Spine 动画编码",
+      "done": 555,
+      "total": 555,
+      "unit": "分离动画",
+      "evidence": "完整读取并逐字节回编码",
+      "status": "通过"
+    },
+    {
+      "layer": "Spine 动画骨架上下文",
+      "done": 237,
+      "total": 555,
+      "unit": "分离动画",
+      "evidence": "候选骨架完整解析",
+      "status": "318 项缺匹配骨架"
+    },
+    {
+      "layer": "全部派生产物哈希",
+      "done": 1485143,
+      "total": 1485143,
+      "unit": "文件",
+      "evidence": "SHA-256 重算",
+      "status": "通过"
+    }
+  ],
+  "other_counts": {
+    "unique_unity_containers": 2210,
+    "database_tables": 45,
+    "database_rows": 3,
+    "spine_skeletons": 1115,
+    "spine_animations": 555,
+    "spine_animations_with_context": 237,
+    "spine_animations_missing_context": 318,
+    "unresolved_sdk_field_semantics": 2,
+    "artifact_hashes_checked": 1485143,
+    "artifact_hash_failures": 0
+  },
+  "limitations": [
+    "APK entry 压缩占用包含包内重复项，用于反映实际 APK 内容；哈希去重指标另报。",
+    "Unity 对象大小是序列化记录大小；Texture2D 另用 m_CompleteImageSize 统计图像载荷。",
+    "Unity 容器包含其内部对象，容器体积与对象体积不可相加。",
+    "Lua/Java/smali/汇编行数均为工具生成阅读材料，不是原始源码行数，也不跨语言相加。",
+    "去重只合并可证明字节完全相同的内容，不把相似实现或语义相同配置擅自合并。",
+    "统计范围是当前 3.98.10 四个 APK 与记录的 2026-09-22 catalog；不覆盖未知服务端、账号分组或历史版本资源。"
+  ]
+}

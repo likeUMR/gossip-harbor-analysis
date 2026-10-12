@@ -3,18 +3,17 @@
 `OnTap` 每次先把 `spreadCount` 设为 1；测试模式且 `PlayerPrefs.TestSuperTap==1` 时改为 10，但 Tutorial 棋盘再次限制为 1。循环逐次调用 `_TrySpread`，任何 false 结果立即终止，因此测试十连不会绕过状态、空位或能量门禁。循环后，非一次性且存在冷却计时的母体才计算 `GetTimerDuration()+GetStartTimer()-serverTime`；剩余时间至少 1200 秒并且 `m_itemRestNumber==0` 时调用 `TryOpenIOSNotificationWindow(ItemCoolDown)`。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本页把一次点击已通过状态检查后的循环行为具体化：成功的一轮产生 1 个物品；下一轮重新检查能量、空位和次数，失败就停止。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+以 `loopCount=1`、`_TrySpread` 返回 `true` 为例：入口只调用一次产出链，成功后不再重复扣能量。若测试循环为 10，循环变量在第 1 轮成功后进入第 2 轮；此时假设余额已为 0，`CheckEnergy` 返回 `false`，循环立即停止，最终仍只产出 1 件。
 
 <details><summary>本案例共同前提</summary>
 

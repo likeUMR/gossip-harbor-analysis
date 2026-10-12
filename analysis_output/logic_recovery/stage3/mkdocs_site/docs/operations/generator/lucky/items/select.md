@@ -3,7 +3,6 @@
 调用 `Table.ListWeightSelectOne(config.lucky_items)`，按累计权重选择一个对象；该调用不删除候选、不减少原始 `Weight`，因此物品池是有放回语义。
 
 **配置**：`LuckyProduceConfig.lucky_items` 的 `Item` 和 `Weight`。**源码**：`_GetGenerateLuckyItem`、`Table.ListWeightSelectOne`。连续点击出现同一物品是允许结果。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,11 +11,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：B 的 Lucky 奖励是高阶面粉物品 204；候选不会移除。
+**本页发生什么**：本例获得 Lucky 资格后，从完整候选池抽到 204 并放入棋盘；抽完后候选仍可在下一次点击继续使用，因此玩家可能连续看到同一种 Lucky 物品。
 
 ### 代入本页的值
 
-本地池 `204:63,205:10,303:15,304:10,305:2`，总权重 100。演示累计抽样点 50 落在第一项区间，选择 204。下次仍保留完整池；不是机会池的无放回语义。
+池为 `204:63,205:10,303:15,304:10,305:2`，总权重 100。抽样点 50 落在 1..63，选中 204；抽样点 95 落在 89..98，选中 304。每次抽样后权重仍是原值，不做无放回删除。
 
 <details><summary>本案例共同前提</summary>
 
@@ -27,3 +26,12 @@
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [Lucky 包内配置及活动变体](../chance/load.md#configuration-lucky)：LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
+
+
+<!-- generator-configs:end -->

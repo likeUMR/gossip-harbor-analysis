@@ -5,7 +5,6 @@
 初始状态由配置决定：有 `Spread_InitDuration` 就是 `Initializing`；否则有 `Spread_OpenDuration` 就是 `Closed`；两者都没有就是 `Opened`。教程强制时长只替换非空字段，不会凭空给母体增加一个计时阶段。`IsDisposable()` 的定义是没有 `Spread_ItemRecoveryDuration`，它决定耗尽后删除还是进入恢复。
 
 **源码**：`ItemSpread:Create`、`Init`、`IsDisposable`、`GetState`、`GetItemRestNumber`、`GetStorageRestNumber`、`GetWeightType`、`GetTransformNumber`。字段来源为 `ItemModelConfig`；教程覆盖为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -14,11 +13,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本例服务端状态被解释为“已打开”，所以进入正常点击流程；若状态表示“开启中”，玩家会看到开启中的状态反馈并等待，而不会得到产物。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设模型状态值为 3，映射为 Opened，状态检查通过并进入产出；若值为 2，映射为 Opening，发送 ItemOpening 后返回 false，产出函数不会被调用。
 
 <details><summary>本案例共同前提</summary>
 

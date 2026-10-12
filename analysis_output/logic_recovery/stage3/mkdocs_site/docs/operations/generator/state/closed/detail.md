@@ -3,7 +3,6 @@
 `Init` 在没有初始化时，如果 `Spread_OpenDuration` 非空就把 `m_state` 设为 `Closed`，但不启动计时。`OnTap` 进入 `CheckSpreadState` 后首先命中 Closed 分支，调用 `_NotifySpreadFailed(ItemClosed)`，依次发送棋盘失败事件、全局失败事件和重震动，然后返回 false；空位、能量和产出函数均不会执行。`OnOpen` 才把状态改为 Opening 并开始计时。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
@@ -12,11 +11,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本页具体说明关闭状态如何拦截点击：玩家收到关闭提示，棋盘、能量和次数都不改变。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设 `m_state=1 (Closed)`。判断 `m_state==Closed` 成立，发送 `ItemClosed` 并返回 false；把状态改为 3 (Opened) 后条件为假，继续进入产出链。
 
 <details><summary>本案例共同前提</summary>
 
@@ -27,3 +26,12 @@
 本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [母体配置与包内变体](../model/detail.md#configuration-item-model)：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+
+
+<!-- generator-configs:end -->

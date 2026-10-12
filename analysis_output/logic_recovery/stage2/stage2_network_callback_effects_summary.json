@@ -1,0 +1,15 @@
+{
+  "title": "阶段二网络回调副作用索引",
+  "parsed_modules": 3415,
+  "callbacks": 16,
+  "effects": 14,
+  "unresolved": 55,
+  "by_effect": {
+    "ui_effect": 14
+  },
+  "database": "analysis_data/logic_index/stage2/network_callback_effects.sqlite3",
+  "limitations": [
+    "只对 AST 能识别的匿名回调建立体内副作用证据；命名回调和动态函数值需沿 Lua 调用图继续追踪。",
+    "效果分类依据源码调用名，具体条件分支和运行时执行次数仍需场景验证。"
+  ]
+}

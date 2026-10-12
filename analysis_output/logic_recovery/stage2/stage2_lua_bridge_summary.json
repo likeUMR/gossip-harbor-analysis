@@ -1,0 +1,17 @@
+{
+  "title": "阶段二 Lua/C# 桥接索引",
+  "bridge_rows": 602,
+  "by_certainty": {
+    "static_or_instance_member": 449,
+    "ambiguous_member_method_match": 36,
+    "unique_member_method_match": 18,
+    "unresolved_constructor": 39,
+    "constructor_method_candidate": 60
+  },
+  "distinct_bridge_names": 245,
+  "database": "analysis_data/logic_index/stage2/lua_bridge.sqlite3",
+  "limitations": [
+    "Lua 中 CS.* 可能是类型、静态属性、实例属性或方法；仅凭文本终端名匹配不能证明具体 overload。",
+    "XLua userdata、反射和动态索引不一定带有可静态匹配的方法名，已作为未解析桥接保留。"
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "spec": "SIMULATION_SPEC.md",
+    "version": "Gossip Harbor 3.98.10 local Lua_Config snapshot",
+    "seeds": [
+      2026092701,
+      2026092702,
+      2026092703,
+      2026092704,
+      2026092705,
+      2026092706,
+      2026092707,
+      2026092708,
+      2026092709,
+      2026092710
+    ],
+    "runs": 1,
+    "created_by": "tools/run_terminal_simulation.py",
+    "known_approximations": [
+      "Random orders use the last Filter unconditionally and retain candidate weights/slot exclusions.",
+      "Bubble sampling uses configured base BubbleChance with neutral unavailable remote multipliers.",
+      "Daily shop samples one weighted configured item per slot at 00:00.",
+      "Producer inventory is modeled as batch and total click capacities with configured recovery durations."
+    ]
+  },
+  "summary": {
+    "players": [
+      {
+        "player_type": "top",
+        "player_label": "顶氪金玩家",
+        "runs": 1,
+        "completion_days": {
+          "mean": 4.183460648148148,
+          "median": 4.183460648148148,
+          "min": 4.183460648148148,
+          "max": 4.183460648148148
+        },
+        "gold_earned": {
+          "mean": 42836.0,
+          "median": 42836,
+          "min": 42836,
+          "max": 42836
+        },
+        "energy_spent": {
+          "mean": 47338.0,
+          "median": 47338,
+          "min": 47338,
+          "max": 47338
+        },
+        "energy_bought": {
+          "mean": 46100.0,
+          "median": 46100,
+          "min": 46100,
+          "max": 46100
+        },
+        "energy_buys": {
+          "mean": 461.0,
+          "median": 461,
+          "min": 461,
+          "max": 461
+        },
+        "actions": {
+          "mean": 100000.0,
+          "median": 100000,
+          "min": 100000,
+          "max": 100000
+        },
+        "diamonds_energy": {
+          "mean": 71310.0,
+          "median": 71310,
+          "min": 71310,
+          "max": 71310
+        },
+        "diamonds_shop_items": {
+          "mean": 8827.0,
+          "median": 8827,
+          "min": 8827,
+          "max": 8827
+        },
+        "diamonds_bubble_items": {
+          "mean": 66149.0,
+          "median": 66149,
+          "min": 66149,
+          "max": 66149
+        },
+        "diamonds_shop_refresh": {
+          "mean": 0.0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "diamonds_producer_speedup": {
+          "mean": 7549.0,
+          "median": 7549,
+          "min": 7549,
+          "max": 7549
+        },
+        "diamonds_total": {
+          "mean": 153835.0,
+          "median": 153835,
+          "min": 153835,
+          "max": 153835
+        }
+      }
+    ]
+  },
+  "runs": [
+    {
+      "player_type": "top",
+      "player_label": "顶氪金玩家",
+      "seed": 2026092701,
+      "completed": false,
+      "error": "max_actions=100000 reached",
+      "completion_seconds": 361451,
+      "completion_days": 4.183460648148148,
+      "completion_timestamp": "2026-01-05T14:24:11",
+      "tasks_completed": 346,
+      "level": 37,
+      "gold_earned": 42836,
+      "gold_spent": 42732,
+      "gold_remaining": 104,
+      "energy_spent": 47338,
+      "energy_natural": 1193,
+      "energy_bought": 46100,
+      "energy_buys": 461,
+      "energy_remaining": 55,
+      "diamonds": {
+        "energy": 71310,
+        "shop_items": 8827,
+        "bubble_items": 66149,
+        "shop_refresh": 0,
+        "producer_speedup": 7549,
+        "total": 153835
+      },
+      "orders_completed": {
+        "Random1": 40,
+        "Random2": 110,
+        "Random3": 61,
+        "Random4": 86,
+        "Random9": 42
+      },
+      "actions": 100000,
+      "scans": {
+        "initialization": 1,
+        "level_up": 36,
+        "order_complete": 339,
+        "force_empty": 35
+      },
+      "production": {
+        "1010": {
+          "1101": 483,
+          "clicks": 600,
+          "1103": 34,
+          "1102": 83,
+          "speedups": 36,
+          "speedup_diamonds": 4382
+        },
+        "111": {
+          "201": 8540,
+          "clicks": 11474,
+          "202": 1046,
+          "301": 1105,
+          "203": 506,
+          "302": 277,
+          "speedups": 141,
+          "speedup_diamonds": 515
+        },
+        "411": {
+          "501": 8335,
+          "clicks": 11397,
+          "503": 568,
+          "502": 1118,
+          "601": 1112,
+          "602": 264,
+          "speedups": 140,
+          "speedup_diamonds": 512
+        },
+        "1711": {
+          "1801": 7122,
+          "clicks": 8185,
+          "1802": 752,
+          "speedups": 193,
+          "speedup_diamonds": 707,
+          "1803": 311
+        },
+        "1211": {
+          "1303": 184,
+          "clicks": 7211,
+          "1401": 831,
+          "1301": 5516,
+          "1302": 516,
+          "speedups": 199,
+          "speedup_diamonds": 729,
+          "1402": 164
+        },
+        "711": {
+          "801": 3332,
+          "clicks": 5032,
+          "901": 866,
+          "803": 196,
+          "speedups": 192,
+          "speedup_diamonds": 704,
+          "802": 638
+        },
+        "805": {
+          "901": 3829,
+          "clicks": 4039,
+          "902": 210
+        }
+      },
+      "merges_by_series": {
+        "3": 1258,
+        "11": 591,
+        "6": 1329,
+        "18": 8649,
+        "13": 6501,
+        "2": 10197,
+        "8": 3829,
+        "9": 5044,
+        "5": 10258,
+        "14": 982
+      },
+      "inventory": [
+        {
+          "code": "301",
+          "name": "生土豆",
+          "series": 3,
+          "level": 1,
+          "count": 55,
+          "base_equivalent": 55
+        },
+        {
+          "code": "302",
+          "name": "切片土豆",
+          "series": 3,
+          "level": 2,
+          "count": 13,
+          "base_equivalent": 26
+        },
+        {
+          "code": "303",
+          "name": "经典炸薯条",
+          "series": 3,
+          "level": 3,
+          "count": 1,
+          "base_equivalent": 4
+        },
+        {
+          "code": "304",
+          "name": "番茄酱薯条",
+          "series": 3,
+          "level": 4,
+          "count": 28,
+          "base_equivalent": 224
+        },
+        {
+          "code": "501",
+          "name": "空咖啡杯",
+          "series": 5,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        },
+        {
+          "code": "502",
+          "name": "外卖咖啡",
+          "series": 5,
+          "level": 2,
+          "count": 1,
+          "base_equivalent": 2
+        },
+        {
+          "code": "505",
+          "name": "普通咖啡",
+          "series": 5,
+          "level": 5,
+          "count": 1,
+          "base_equivalent": 16
+        },
+        {
+          "code": "506",
+          "name": "特调咖啡",
+          "series": 5,
+          "level": 6,
+          "count": 1,
+          "base_equivalent": 32
+        },
+        {
+          "code": "509",
+          "name": "焦糖玛奇朵",
+          "series": 5,
+          "level": 9,
+          "count": 1,
+          "base_equivalent": 256
+        },
+        {
+          "code": "510",
+          "name": "热巧克力",
+          "series": 5,
+          "level": 10,
+          "count": 1,
+          "base_equivalent": 512
+        },
+        {
+          "code": "601",
+          "name": "茶包",
+          "series": 6,
+          "level": 1,
+          "count": 18,
+          "base_equivalent": 18
+        },
+        {
+          "code": "602",
+          "name": "热茶",
+          "series": 6,
+          "level": 2,
+          "count": 3,
+          "base_equivalent": 6
+        },
+        {
+          "code": "604",
+          "name": "乡村冰茶",
+          "series": 6,
+          "level": 4,
+          "count": 4,
+          "base_equivalent": 32
+        },
+        {
+          "code": "1101",
+          "name": "橙子",
+          "series": 11,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        },
+        {
+          "code": "1102",
+          "name": "橙子片",
+          "series": 11,
+          "level": 2,
+          "count": 1,
+          "base_equivalent": 2
+        },
+        {
+          "code": "1103",
+          "name": "橘子味饼干",
+          "series": 11,
+          "level": 3,
+          "count": 9,
+          "base_equivalent": 36
+        },
+        {
+          "code": "1401",
+          "name": "泳镜",
+          "series": 14,
+          "level": 1,
+          "count": 27,
+          "base_equivalent": 27
+        },
+        {
+          "code": "1402",
+          "name": "潜水护目镜",
+          "series": 14,
+          "level": 2,
+          "count": 2,
+          "base_equivalent": 4
+        }
+      ],
+      "producers": [
+        {
+          "code": "111",
+          "batch_remaining": 46,
+          "storage_remaining": 46,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "411",
+          "batch_remaining": 43,
+          "storage_remaining": 123,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "711",
+          "batch_remaining": 12,
+          "storage_remaining": 38,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1010",
+          "batch_remaining": 0,
+          "storage_remaining": 0,
+          "cooldown_kind": "storage",
+          "cooldown_remaining": 5860
+        },
+        {
+          "code": "1211",
+          "batch_remaining": 25,
+          "storage_remaining": 25,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1507",
+          "batch_remaining": 12,
+          "storage_remaining": 24,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1711",
+          "batch_remaining": 5,
+          "storage_remaining": 5,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1906",
+          "batch_remaining": 10,
+          "storage_remaining": 20,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        }
+      ],
+      "unexpired_bubbles": []
+    }
+  ]
+}

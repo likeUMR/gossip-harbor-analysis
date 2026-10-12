@@ -1,0 +1,172 @@
+[
+  {
+    "root_id": 109,
+    "module": "Break.View.BreakMainWindow",
+    "function_symbol": "self.m_tokenHudTrigger.OnLuaPointerDown",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 2,
+    "classification": "direct_wrapper_effect_unresolved_target"
+  },
+  {
+    "root_id": 110,
+    "module": "Break.View.BreakMainWindow",
+    "function_symbol": "self.m_tokenHudTrigger.OnLuaPointerUp",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 2,
+    "classification": "direct_wrapper_effect_unresolved_target"
+  },
+  {
+    "root_id": 307,
+    "module": "MainDecorNewActivity.View.MainDecorNewActivityRewardIcon",
+    "function_symbol": "MainDecorNewActivityRewardIcon:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_forwarding_candidate"
+  },
+  {
+    "root_id": 317,
+    "module": "MapExploreActivity.ExtraActivities.StageTask.View.MapExploreExtraStageTaskView",
+    "function_symbol": "MapExploreExtraStageTaskLabel:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_callback_candidate_linked"
+  },
+  {
+    "root_id": 325,
+    "module": "MapExploreActivity.Map.Obstacle.View.MapExploreResidualObstacleView",
+    "function_symbol": "MapExploreResidualObstacleView:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "explicit_noop_or_guard_only"
+  },
+  {
+    "root_id": 349,
+    "module": "MissionActivity.View.MissionEntry",
+    "function_symbol": "MissionEntry:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 2,
+    "classification": "dynamic_callback_effect_candidate"
+  },
+  {
+    "root_id": 590,
+    "module": "PairupActivity.View.PairupActivityStageRewardItem",
+    "function_symbol": "PairupActivityStageRewardItem:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "explicit_noop_or_guard_only"
+  },
+  {
+    "root_id": 591,
+    "module": "PairupActivity.View.PairupActivityStageRewardItemWithIconName",
+    "function_symbol": "PairupActivityStageRewardItemWithIconName:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_callback_candidate_linked"
+  },
+  {
+    "root_id": 679,
+    "module": "Room.View.RoomMainWindow",
+    "function_symbol": "self.m_tokenHudTrigger.OnLuaPointerDown",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 2,
+    "classification": "direct_wrapper_effect_unresolved_target"
+  },
+  {
+    "root_id": 680,
+    "module": "Room.View.RoomMainWindow",
+    "function_symbol": "self.m_tokenHudTrigger.OnLuaPointerUp",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 2,
+    "classification": "direct_wrapper_effect_unresolved_target"
+  },
+  {
+    "root_id": 802,
+    "module": "Test.TestTopSliderWindow",
+    "function_symbol": "TestTopSliderWindowCell:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_forwarding_candidate"
+  },
+  {
+    "root_id": 862,
+    "module": "UI.Button.HudActivityEntry",
+    "function_symbol": "HudActivityEntry:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_callback_effect_candidate"
+  },
+  {
+    "root_id": 865,
+    "module": "UI.Button.HudGeneralButton",
+    "function_symbol": "HudGeneralButton:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "explicit_noop_or_guard_only"
+  },
+  {
+    "root_id": 866,
+    "module": "UI.Button.HudPropertyButton",
+    "function_symbol": "HudPropertyButton:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "explicit_noop_or_guard_only"
+  },
+  {
+    "root_id": 942,
+    "module": "UI.Window.Notice.NoticeButton",
+    "function_symbol": "NoticeButton:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "direct_wrapper_effect_unresolved_target"
+  },
+  {
+    "root_id": 970,
+    "module": "UI.Window.UIBoardIllustrated.BaseUIBoardIllustratedEntry",
+    "function_symbol": "BaseUIBoardIllustratedEntry:OnClick",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_callback_candidate_linked"
+  },
+  {
+    "root_id": 1009,
+    "module": "WheelPackActivity.View.WheelPackShopRewardIcon",
+    "function_symbol": "WheelPackShopRewardIcon:OnClicked",
+    "entry_kinds": [
+      "named_input_method"
+    ],
+    "reachable_functions": 1,
+    "classification": "dynamic_forwarding_candidate"
+  }
+]

@@ -3,18 +3,17 @@
 `BaseBoardModel:SpreadItem` 先调用 `GenerateItem(newItemPosition,newItemCode,...)` 创建并放入目标格，再构造 `{Source,New,EnergyBoostRatio,CostEnergy,BoardSpreadType}` 发送 `BoardEventType.SpreadItem`。`MainBoardModel:SpreadItem` 随后派发 `EEventType.ItemSpread`；若 `logSpread` 则组装 `eb/md/st/oriEle/sc/ab` 写 `BIManager:LogSpread`，最后检查棋盘满。点击链再发送 `VibrationLight`，发生在落子之后。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-
 ---
 
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：本页具体说明产物写入棋盘和棋盘事件的先后，玩家何时看到新棋子。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+假设 `position=P`、`item=201`。`AddItem(201,P)` 成功后事件载荷包含母体 105、物品 201 和坐标 P；若 `P` 在写入前被占用，AddItem 返回失败，后续 BoardChanged 不执行。
 
 <details><summary>本案例共同前提</summary>
 

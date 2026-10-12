@@ -1,8 +1,16 @@
-# SmartItem
+# SmartItem：优先补齐便宜订单的一件物品
 
-收集订单棋子候选，数量上限由 `Spread_StorageMaxNumber` 控制，调用 `SmartRewardHelper.GetCodesFor_ItemSpread`；消耗选中代码的 `DiffScore`，缺失时使用 1。
+SmartItem 把可发物品转成难度分预算，计算已有棋子合成后还差多少，再优先帮助补分较少的订单。本次最多给一件；它和 Lucky 的Smart权重倍率、Fixed中的Smart Buff是三个不同算法。
 
-**配表**：`Spread_StorageMaxNumber`、订单候选和 `DiffScore`；当前 5 行。**源码**：`ItemSpread` SmartItem、`SmartRewardHelper`。FishNetProduceSmart `runtime-pending`。
+## 执行顺序
+
+1. 首次使用时按母体储备上限筛出可发物品分值表；后续复用这个缓存。
+2. 为已完成/可交付订单预留库存，再计算其它需求还缺的一级物品等价数量。
+3. 把缺口换算成补齐分值，按订单总分、订单内单项分值从低到高处理。
+4. 足够接近预算时直接补缺；太贵的需求先跳过，再给同链低级物品帮助积累。
+5. 仍没有结果且预算为正时使用205/206兜底。本次取第一件并扣它的配置分值。
+
+因此这不是“给权重乘订单缺口”。[底层页](detail.md)说明库存如何分配、二进制拆分、10分宽限、三级最低补发及兜底边界。
 
 ---
 
@@ -10,11 +18,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例不是 SmartItem 母体。
+**本页发生什么**：105主例不进入SmartItem；独立对照说明系统如何给一件能帮助合成订单物品的产物。
 
 ### 代入本页的值
 
-`m_weightType=1`，与 `SmartItem=5` 不相等。本分派与 Lucky 的 Smart 权重修正是两个不同入口。
+订单缺五级205，已有四级204一件时，还需要另一件204才能合成。对照SmartItem预算20、204分值8，发一件204并扣8分；这些分值是示例输入。
 
 <details><summary>本案例共同前提</summary>
 

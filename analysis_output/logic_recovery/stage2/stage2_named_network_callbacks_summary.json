@@ -1,0 +1,16 @@
+{
+  "title": "阶段二命名网络回调索引",
+  "callback_expressions": 2317,
+  "by_certainty": {
+    "unresolved": 2160,
+    "candidate_unique": 113,
+    "ambiguous": 44
+  },
+  "unique_callbacks_with_event_or_state_effect": 26,
+  "effect_rows": 27,
+  "database": "analysis_data/logic_index/stage2/named_network_callbacks.sqlite3",
+  "limitations": [
+    "参数中所有末端方法表达式都作为候选扫描，部分可能是普通请求参数而非回调；原始参数和候选列表均保留。",
+    "唯一方法名不等于运行时唯一对象；继承、动态赋值和跨语言回调仍需场景验证。"
+  ]
+}

@@ -1,8 +1,26 @@
-# 副作用的具体字段
+# 落子通知后的 GeneratorBoost 追加产出
 
-`GenerateItemCode` 可能被 SmartProduce、Disco、FishNetProduceSmart 改写，并返回 `spreadType`、原始代码和扩展场景；`DealActivityLimit` 在 Disco 生效时把最终 `costCount` 改为 0。成功落子时 BI 扩展字段包括 `eb`（最终能量增益比率）、`md`（能量增益类型）、`st`（产出来源类型）、`oriEle`（原始代码）和 `sc`（扩展场景）；GeneratorBoost 活动文本写入 `ab`。动态活动实例仍标为 `runtime-pending`。
+追加产出发生在已生成的棋子通知中，不能当成Super Lucky额外的奖池。GeneratorBoostActivityModel在Init注册EEventType.ItemSpread、Destroy移除自己全部监听；_OnItemSpread首先确认Source有ItemSpread且CanSupportGeneratorBoost。
 
-**证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
+## 1. 普通双倍资格先算，复制后落
+
+Fixed分支调用TryExtraProduceItem：ExtraProduce Buff有效且配置存在才继续。有ExtraProduceCached标记时优先消费缓存资格，不再抽资格；否则按剩余机会总数T、双倍配额L抽1..T，T减1，抽到≤L时L减1；T为0才装填配置新周期。这是另一个有限配额池。
+
+随后要求母体附近至少两个空位：够用时缓存资格移除，外层标记GeneratorBoostExtraNormal或GeneratorBoostExtraSmart；不够时将资格记为一个布尔缓存标记，外层不标双倍。多个不足时的资格不会作为整数累积。
+
+主物品落下后，_OnItemSpread看到上述双倍来源类型，调用_ExtraProduceItemSpread。ItemLandOpt开启用物品相关落点，否则用扩散顺序空位；再找不到位置时不落追加件，本函数不重新缓存。复制的是message.New的实际代码，不再抽物品，不再次扣母体次数；追加args沿用能量指数、costEnergy=false、类型GeneratorBoostExtra。
+
+## 2. Lucky 追加复制
+
+主类型为Lucky、SuperLucky、FreeLucky或FreeSuperLucky才进入TryExtraLuckyProduceItem；本监听条件不包括DoubleLucky和TripleLucky1/2。ExtraLuckyProduce Buff有效时，从母体位置找一个扩散空位；有位置则复制message.New代码，costEnergy=false，类型GeneratorBoostExtraLucky；无位置本方法不落子也不写缓存。
+
+资格阶段的HaveAndCanExtraLuckyProduce是另一方法：检查至少两个空位，可能保存/消费ExtraLuckyProduceCached；不能把这个缓存逻辑写成TryExtraLuckyProduceItem内部行为。追加件类型与监听触发类型不同，所以这些分支不会把自己无限递归复制。
+
+## 3. 记录信息与其它监听
+
+主普通代码改写链可返回原始代码和FishNet扩展场景；落子日志使用eb、md、st、oriEle、sc等字段，GeneratorBoost活动文本为ab。不能仅凭“Lucky”就写成通用活动进度必加1，各活动消费者有自己的条件；气泡及其它活动监听必须另按实际注册方法追溯。
+
+**证据**：GeneratorBoostActivityModel Init、Destroy、_OnItemSpread、TryExtraProduceItem、_CanExtraProduceItem、_ExtraProduceItem、_ExtraProduceItemSpread、TryExtraLuckyProduceItem、HaveAndCanExtraLuckyProduce及缓存方法。活动配置由账号/活动来源决定，具体开关和周期数不能用假设数代替。
 
 ---
 
@@ -10,11 +28,11 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
+**本页发生什么**：食品袋105主例未开启追加Buff，没有第二件。独立Lucky追加对照说明活动监听复制已落下的物品，不重抽Super资格。
 
 ### 代入本页的值
 
-本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
+对照假设Source支持GeneratorBoost、ExtraLuckyProduce Buff有效，主事件BoardSpreadType=SuperLucky、New代码205、EnergyBoostRatio=0，还有一个扩散空位Q：复制205到Q，追加类型GeneratorBoostExtraLucky，costEnergy=false。改为TripleLucky1时本监听不进入；改为空位不足时本方法不复制。主分类和Buff是对照输入，没有凭空写活动进度+1。
 
 <details><summary>本案例共同前提</summary>
 

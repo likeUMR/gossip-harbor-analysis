@@ -1,0 +1,508 @@
+{
+  "metadata": {
+    "spec": "SIMULATION_SPEC.md",
+    "version": "Gossip Harbor 3.98.10 local Lua_Config snapshot",
+    "seeds": [
+      2026092701,
+      2026092702,
+      2026092703,
+      2026092704,
+      2026092705,
+      2026092706,
+      2026092707,
+      2026092708,
+      2026092709,
+      2026092710
+    ],
+    "runs": 1,
+    "created_by": "tools/run_terminal_simulation.py",
+    "known_approximations": [
+      "Random orders use the last Filter unconditionally and retain candidate weights/slot exclusions.",
+      "Bubble sampling uses configured base BubbleChance with neutral unavailable remote multipliers.",
+      "Daily shop samples one weighted configured item per slot at 00:00.",
+      "Producer inventory is modeled as batch and total click capacities with configured recovery durations.",
+      "Active operation time is calibrated from the supplied gameplay recording; producer taps and merges use the same mean because the recording has no reliable action-type marker.",
+      "Order choice is recalculated after every action using order gold divided by base-equivalent order energy; producer-probability energy is retained as a separate diagnostic estimate."
+    ],
+    "video_calibration": {
+      "source": "share_video_tmp_3dfafdc66440676599f91a1d8c4b6bf01",
+      "sample_fps": 2,
+      "main_board_motion_bursts": 333,
+      "motion_burst_mean_seconds": 1.27,
+      "motion_burst_median_seconds": 1.0,
+      "motion_burst_p75_seconds": 1.5,
+      "excluded_blank_and_non_main_board": true,
+      "producer_merge_split": "not identifiable from recording"
+    }
+  },
+  "summary": {
+    "players": [
+      {
+        "player_type": "zero",
+        "player_label": "0氪金玩家",
+        "runs": 1,
+        "completion_days": {
+          "mean": 7865.083671412032,
+          "median": 7865.083671412032,
+          "min": 7865.083671412032,
+          "max": 7865.083671412032
+        },
+        "gold_earned": {
+          "mean": 1551047.0,
+          "median": 1551047,
+          "min": 1551047,
+          "max": 1551047
+        },
+        "energy_spent": {
+          "mean": 3398476.0,
+          "median": 3398476,
+          "min": 3398476,
+          "max": 3398476
+        },
+        "energy_bought": {
+          "mean": 722400.0,
+          "median": 722400,
+          "min": 722400,
+          "max": 722400
+        },
+        "energy_buys": {
+          "mean": 7224.0,
+          "median": 7224,
+          "min": 7224,
+          "max": 7224
+        },
+        "actions": {
+          "mean": 7327979.0,
+          "median": 7327979,
+          "min": 7327979,
+          "max": 7327979
+        },
+        "diamonds_energy": {
+          "mean": 72240.0,
+          "median": 72240,
+          "min": 72240,
+          "max": 72240
+        },
+        "diamonds_shop_items": {
+          "mean": 0.0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "diamonds_bubble_items": {
+          "mean": 0.0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "diamonds_shop_refresh": {
+          "mean": 0.0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "diamonds_producer_speedup": {
+          "mean": 0.0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "diamonds_total": {
+          "mean": 72240.0,
+          "median": 72240,
+          "min": 72240,
+          "max": 72240
+        }
+      }
+    ]
+  },
+  "runs": [
+    {
+      "player_type": "zero",
+      "player_label": "0氪金玩家",
+      "seed": 2026092710,
+      "completed": true,
+      "error": null,
+      "completion_seconds": 679543229.2099996,
+      "completion_days": 7865.083671412032,
+      "completion_timestamp": "2047-07-15T12:00:29.210000",
+      "tasks_completed": 4192,
+      "level": 257,
+      "gold_earned": 1551047,
+      "gold_spent": 1551042,
+      "gold_remaining": 5,
+      "energy_spent": 3398476,
+      "energy_natural": 2676011.0,
+      "energy_bought": 722400,
+      "energy_buys": 7224,
+      "energy_remaining": 35.0,
+      "diamonds": {
+        "energy": 72240,
+        "shop_items": 0,
+        "bubble_items": 0,
+        "shop_refresh": 0,
+        "producer_speedup": 0,
+        "total": 72240
+      },
+      "orders_completed": {
+        "Random1": 6309,
+        "Random2": 9089,
+        "Random5New": 3405,
+        "Random3": 1529,
+        "Random4": 1112
+      },
+      "actions": 7327979,
+      "scans": {
+        "initialization": 1,
+        "order_complete": 21444,
+        "level_up": 256,
+        "force_empty": 424
+      },
+      "production": {
+        "1010": {
+          "1101": 226515,
+          "clicks": 283152,
+          "1103": 14065,
+          "1102": 42572
+        },
+        "411": {
+          "501": 599281,
+          "clicks": 812505,
+          "601": 77529,
+          "503": 38961,
+          "502": 77700,
+          "602": 19034
+        },
+        "711": {
+          "802": 38617,
+          "clicks": 307530,
+          "801": 205059,
+          "901": 51139,
+          "803": 12715
+        },
+        "805": {
+          "901": 237417,
+          "clicks": 249863,
+          "902": 12446
+        },
+        "1211": {
+          "1401": 83443,
+          "clicks": 699815,
+          "1301": 533620,
+          "1302": 49497,
+          "1402": 16533,
+          "1303": 16722
+        },
+        "111": {
+          "202": 75351,
+          "clicks": 790895,
+          "201": 583618,
+          "301": 75338,
+          "302": 18837,
+          "203": 37751
+        },
+        "1711": {
+          "1801": 468442,
+          "clicks": 537868,
+          "1803": 21345,
+          "1802": 48081
+        }
+      },
+      "merges_by_series": {
+        "6": 93484,
+        "8": 235568,
+        "9": 297288,
+        "11": 271596,
+        "14": 96864,
+        "2": 691369,
+        "13": 595231,
+        "18": 533735,
+        "3": 91047,
+        "5": 711501
+      },
+      "inventory": [
+        {
+          "code": "201",
+          "name": "一袋面粉",
+          "series": 2,
+          "level": 1,
+          "count": 866,
+          "base_equivalent": 866
+        },
+        {
+          "code": "202",
+          "name": "一个面团",
+          "series": 2,
+          "level": 2,
+          "count": 99,
+          "base_equivalent": 198
+        },
+        {
+          "code": "203",
+          "name": "初学者的面包",
+          "series": 2,
+          "level": 3,
+          "count": 52,
+          "base_equivalent": 208
+        },
+        {
+          "code": "209",
+          "name": "火腿奶酪三明治",
+          "series": 2,
+          "level": 9,
+          "count": 1,
+          "base_equivalent": 256
+        },
+        {
+          "code": "210",
+          "name": "厚切三明治",
+          "series": 2,
+          "level": 10,
+          "count": 674,
+          "base_equivalent": 345088
+        },
+        {
+          "code": "501",
+          "name": "空咖啡杯",
+          "series": 5,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        },
+        {
+          "code": "503",
+          "name": "即食咖啡杯",
+          "series": 5,
+          "level": 3,
+          "count": 1,
+          "base_equivalent": 4
+        },
+        {
+          "code": "504",
+          "name": "无咖啡因咖啡",
+          "series": 5,
+          "level": 4,
+          "count": 1,
+          "base_equivalent": 8
+        },
+        {
+          "code": "505",
+          "name": "普通咖啡",
+          "series": 5,
+          "level": 5,
+          "count": 1,
+          "base_equivalent": 16
+        },
+        {
+          "code": "506",
+          "name": "特调咖啡",
+          "series": 5,
+          "level": 6,
+          "count": 33,
+          "base_equivalent": 1056
+        },
+        {
+          "code": "509",
+          "name": "焦糖玛奇朵",
+          "series": 5,
+          "level": 9,
+          "count": 1,
+          "base_equivalent": 256
+        },
+        {
+          "code": "510",
+          "name": "热巧克力",
+          "series": 5,
+          "level": 10,
+          "count": 741,
+          "base_equivalent": 379392
+        },
+        {
+          "code": "601",
+          "name": "茶包",
+          "series": 6,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        },
+        {
+          "code": "801",
+          "name": "生虾",
+          "series": 8,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        },
+        {
+          "code": "1101",
+          "name": "橙子",
+          "series": 11,
+          "level": 1,
+          "count": 119,
+          "base_equivalent": 119
+        },
+        {
+          "code": "1102",
+          "name": "橙子片",
+          "series": 11,
+          "level": 2,
+          "count": 19,
+          "base_equivalent": 38
+        },
+        {
+          "code": "1103",
+          "name": "橘子味饼干",
+          "series": 11,
+          "level": 3,
+          "count": 6,
+          "base_equivalent": 24
+        },
+        {
+          "code": "1104",
+          "name": "橙色纸杯蛋糕",
+          "series": 11,
+          "level": 4,
+          "count": 1,
+          "base_equivalent": 8
+        },
+        {
+          "code": "1105",
+          "name": "令人惬意的橘子蛋糕",
+          "series": 11,
+          "level": 5,
+          "count": 1,
+          "base_equivalent": 16
+        },
+        {
+          "code": "1106",
+          "name": "橙色梦幻蛋糕",
+          "series": 11,
+          "level": 6,
+          "count": 7913,
+          "base_equivalent": 253216
+        },
+        {
+          "code": "1301",
+          "name": "橡胶鸭",
+          "series": 13,
+          "level": 1,
+          "count": 322,
+          "base_equivalent": 322
+        },
+        {
+          "code": "1302",
+          "name": "花式鸭子",
+          "series": 13,
+          "level": 2,
+          "count": 32,
+          "base_equivalent": 64
+        },
+        {
+          "code": "1303",
+          "name": "救生圈",
+          "series": 13,
+          "level": 3,
+          "count": 9,
+          "base_equivalent": 36
+        },
+        {
+          "code": "1306",
+          "name": "美人鱼漂浮圈",
+          "series": 13,
+          "level": 6,
+          "count": 33,
+          "base_equivalent": 1056
+        },
+        {
+          "code": "1308",
+          "name": "独角兽漂浮圈",
+          "series": 13,
+          "level": 8,
+          "count": 1,
+          "base_equivalent": 128
+        },
+        {
+          "code": "1310",
+          "name": "皇家孔雀漂浮圈",
+          "series": 13,
+          "level": 10,
+          "count": 81,
+          "base_equivalent": 41472
+        },
+        {
+          "code": "1401",
+          "name": "泳镜",
+          "series": 14,
+          "level": 1,
+          "count": 1,
+          "base_equivalent": 1
+        }
+      ],
+      "producers": [
+        {
+          "code": "111",
+          "batch_remaining": 65,
+          "storage_remaining": 145,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "411",
+          "batch_remaining": 55,
+          "storage_remaining": 135,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "711",
+          "batch_remaining": 24,
+          "storage_remaining": 24,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1010",
+          "batch_remaining": 0,
+          "storage_remaining": 0,
+          "cooldown_kind": "storage",
+          "cooldown_remaining": 11984.760000228882
+        },
+        {
+          "code": "1211",
+          "batch_remaining": 25,
+          "storage_remaining": 25,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1507",
+          "batch_remaining": 12,
+          "storage_remaining": 24,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1711",
+          "batch_remaining": 26,
+          "storage_remaining": 26,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        },
+        {
+          "code": "1906",
+          "batch_remaining": 10,
+          "storage_remaining": 20,
+          "cooldown_kind": null,
+          "cooldown_remaining": 0
+        }
+      ],
+      "unexpired_bubbles": [
+        {
+          "code": "305",
+          "expires": 679579285.3999996,
+          "price": 14
+        }
+      ]
+    }
+  ]
+}

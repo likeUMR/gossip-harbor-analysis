@@ -1,0 +1,29 @@
+{
+  "database": "C:\\Users\\TU\\Documents\\ChatGPT\\Gossip_Harbor_Analysis\\analysis_data\\logic_index\\stage2\\random_mechanisms.sqlite3",
+  "mechanism_rows": 1983,
+  "config_field_rows": 5857,
+  "unresolved_rows": 0,
+  "by_kind": {
+    "candidate_mutation": 1493,
+    "candidate_remove": 150,
+    "random_n": 21,
+    "random_uniform": 257,
+    "weighted": 62
+  },
+  "by_replacement_status": {
+    "candidate_mutation": 1426,
+    "likely_without_replacement": 90,
+    "unknown": 296,
+    "without_replacement": 14,
+    "without_replacement_candidate_mutation": 150,
+    "without_replacement_source_preserved": 7
+  },
+  "by_certainty": {
+    "candidate": 1722,
+    "high": 171,
+    "medium": 90
+  },
+  "weighted_calls": 62,
+  "explicit_candidate_removals": 150,
+  "same_function_removal_candidates": 90
+}

@@ -1,0 +1,41 @@
+running mid seed=2026092701
+    progress actions=100,000 day=85 tasks=328 gold=39,719
+    progress actions=200,000 day=171 tasks=559 gold=82,947
+    progress actions=300,000 day=257 tasks=746 gold=125,949
+    progress actions=400,000 day=340 tasks=886 gold=164,420
+    progress actions=500,000 day=427 tasks=1,032 gold=207,685
+    progress actions=600,000 day=512 tasks=1,163 gold=251,498
+    progress actions=700,000 day=597 tasks=1,284 gold=295,593
+    progress actions=800,000 day=681 tasks=1,381 gold=335,777
+    progress actions=900,000 day=766 tasks=1,489 gold=382,189
+    progress actions=1,000,000 day=850 tasks=1,584 gold=423,926
+    progress actions=1,100,000 day=934 tasks=1,687 gold=468,076
+    progress actions=1,200,000 day=1,019 tasks=1,773 gold=506,539
+    progress actions=1,300,000 day=1,104 tasks=1,869 gold=548,868
+    progress actions=1,400,000 day=1,189 tasks=1,966 gold=590,707
+    progress actions=1,500,000 day=1,276 tasks=2,062 gold=631,729
+    progress actions=1,600,000 day=1,360 tasks=2,164 gold=675,502
+    progress actions=1,700,000 day=1,445 tasks=2,262 gold=717,451
+    progress actions=1,800,000 day=1,529 tasks=2,358 gold=759,148
+    progress actions=1,900,000 day=1,616 tasks=2,459 gold=804,384
+    progress actions=2,000,000 day=1,702 tasks=2,565 gold=851,246
+    progress actions=2,100,000 day=1,789 tasks=2,659 gold=893,448
+    progress actions=2,200,000 day=1,876 tasks=2,755 gold=935,080
+    progress actions=2,300,000 day=1,964 tasks=2,860 gold=980,413
+    progress actions=2,400,000 day=2,051 tasks=2,964 gold=1,024,553
+    progress actions=2,500,000 day=2,138 tasks=3,063 gold=1,066,694
+    progress actions=2,600,000 day=2,221 tasks=3,155 gold=1,105,158
+    progress actions=2,700,000 day=2,306 tasks=3,250 gold=1,145,626
+    progress actions=2,800,000 day=2,391 tasks=3,357 gold=1,190,635
+    progress actions=2,900,000 day=2,475 tasks=3,455 gold=1,232,965
+    progress actions=3,000,000 day=2,560 tasks=3,552 gold=1,274,834
+    progress actions=3,100,000 day=2,647 tasks=3,644 gold=1,315,425
+    progress actions=3,200,000 day=2,730 tasks=3,743 gold=1,357,969
+    progress actions=3,300,000 day=2,815 tasks=3,842 gold=1,401,120
+    progress actions=3,400,000 day=2,901 tasks=3,930 gold=1,439,225
+    progress actions=3,500,000 day=2,986 tasks=4,024 gold=1,480,046
+    progress actions=3,600,000 day=3,070 tasks=4,133 gold=1,525,864
+  completed=True days=3117.13 tasks=4192 diamonds=2051207 error=None
+wrote analysis_output\tmp_mid_2026092701.json
+wrote analysis_output\tmp_mid_2026092701_daily.csv
+wrote analysis_output\tmp_mid_2026092701_typical.json

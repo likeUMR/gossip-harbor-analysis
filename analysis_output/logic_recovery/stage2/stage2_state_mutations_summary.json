@@ -1,0 +1,6 @@
+{
+  "mutations": 18734,
+  "self_mutations": 18673,
+  "global_model_mutations": 61,
+  "database": "analysis_data/logic_index/stage2/state_mutations.sqlite3"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "existing_pages": 78,
+  "pages_with_tables": 10,
+  "tables": 28,
+  "complete_records": 632,
+  "image_links": 2511,
+  "placement": {
+    "energy/boost/detail.md": 2,
+    "lifecycle/count/detail.md": 1,
+    "lucky/chance/load.md": 9,
+    "lucky/continuous/trigger.md": 1,
+    "lucky/free/generate.md": 1,
+    "lucky/items/smart.md": 1,
+    "output/order/detail.md": 6,
+    "overrides/activity/detail.md": 4,
+    "overrides/boost/detail.md": 1,
+    "state/model/detail.md": 2
+  },
+  "case_before_config": true,
+  "configuration_coverage": "complete",
+  "upper_pages_have_tables": false
+}
