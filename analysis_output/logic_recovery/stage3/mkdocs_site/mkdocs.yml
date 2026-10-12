@@ -35,6 +35,8 @@ nav:
 - 参考 PDF 覆盖核验: reference_pdf_coverage.md
 - 付费项目:
   - operations/paid/index.md
+  - 主棋盘终局模拟:
+    - operations/paid/terminal_simulation/index.md
   - 用户差异与配置分层:
     - operations/paid/segmentation/index.md
   - 常驻钻石包:
@@ -96,6 +98,8 @@ nav:
     - 内部价值、折扣率与有效价值: operations/paid/value/detail.md
 - 母体点击:
   - operations/generator/index.md
+  - 棋子机制历史完整归档:
+    - operations/generator/legacy_mechanics/index.md
   - 状态检查:
     - operations/generator/state/index.md
     - Initializing：初始化中:
@@ -343,6 +347,8 @@ nav:
         - 位置交换：具体算法与配置: operations/merge/swap/exchange/detail.md
 - 订单提交:
   - operations/orders/index.md
+  - 订单机制历史完整归档:
+    - operations/orders/legacy_mechanics/index.md
   - 剧情与好感度系统:
     - operations/orders/intimacy/index.md
   - 可交付判断:

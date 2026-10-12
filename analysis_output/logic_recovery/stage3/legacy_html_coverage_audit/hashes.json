@@ -1,0 +1,9 @@
+{
+  "algorithm": "SHA256",
+  "source": {
+    "gossip_harbor_terminal_simulation.html": "7FFBEF3DDEA5656D72997BBC174A52F16C2C7FD01A864637850B9FC40AE73414",
+    "gossip_harbor_piece_mechanics.html": "E5F040242F4BA87A3E43B0994357EA00894FED57628625DBC9F7C91D0B8CEB3F",
+    "gossip_harbor_order_mechanics.html": "6E6CE914A22C09D1B87FB9FCAEF4C70720B6A1C47AD313F0802A61102F2332A6"
+  },
+  "copied_to": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/assets/reference-analysis/"
+}

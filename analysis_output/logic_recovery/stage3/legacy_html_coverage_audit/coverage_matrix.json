@@ -1,0 +1,9 @@
+{
+  "basis": "three legacy HTML files",
+  "coverage": [
+    {"source": "piece", "sections": 6, "tables": 7, "page": "operations/generator/legacy_mechanics/index.md", "raw_attachment": "assets/reference-analysis/piece-mechanics.html", "status": "covered"},
+    {"source": "orders", "sections": 6, "tables": 18, "page": "operations/orders/legacy_mechanics/index.md", "raw_attachment": "assets/reference-analysis/order-mechanics.html", "status": "covered"},
+    {"source": "terminal_simulation", "sections": 12, "tables": 5, "page": "operations/paid/terminal_simulation/index.md", "raw_attachment": "assets/reference-analysis/terminal-simulation.html", "status": "covered_with_assumptions"}
+  ],
+  "interpretation": "covered means the source is available verbatim and its knowledge points are mapped; covered_with_assumptions means the simulation output is preserved but its assumptions are not client facts"
+}
