@@ -4,6 +4,7 @@ theme:
   name: material
   language: zh
   features:
+    - navigation.sections
     - navigation.indexes
     - navigation.top
     - search.suggest
@@ -134,224 +135,54 @@ nav:
           - CD、加速与恢复:
               - operations/generator/lifecycle/cooldown/index.md
               - CD、加速和恢复结算: operations/generator/lifecycle/cooldown/detail.md
-  -   棋子拖拽与合成:
+  - 棋子拖拽与合成:
       - operations/merge/index.md
-      -   拖拽检查:
-          - operations/merge/release/index.md
-          -   拖动资格:
-              - operations/merge/release/movable/index.md
-              -   具体算法与配置: operations/merge/release/movable/detail.md
-          -   落点吸附与教程限制:
-              - operations/merge/release/position/index.md
-              -   具体算法与配置: operations/merge/release/position/detail.md
-          -   棋子入库:
-              - operations/merge/release/inventory/index.md
-              -   具体算法与配置: operations/merge/release/inventory/detail.md
-          -   坐标与对象校验:
-              - operations/merge/release/identity/index.md
-              -   具体算法与配置: operations/merge/release/identity/detail.md
-      -   棋子移动:
-          - operations/merge/move/index.md
-          -   位置更新:
-              - operations/merge/move/write/index.md
-              -   具体算法与配置: operations/merge/move/write/detail.md
-          -   加速刷新:
-              - operations/merge/move/accelerate/index.md
-              -   具体算法与配置: operations/merge/move/accelerate/detail.md
-      -   升级与剪刀:
-          - operations/merge/special/index.md
-          -   道具目标资格:
-              - operations/merge/special/eligibility/index.md
-              -   具体算法与配置: operations/merge/special/eligibility/detail.md
-          -   道具升级:
-              - operations/merge/special/upgrade/index.md
-              -   具体算法与配置: operations/merge/special/upgrade/detail.md
-          -   剪刀次数合并:
-              - operations/merge/special/scissors/index.md
-              -   具体算法与配置: operations/merge/special/scissors/detail.md
-          -   剪刀拆分:
-              - operations/merge/special/split/index.md
-              -   具体算法与配置: operations/merge/special/split/detail.md
-          -   道具作用失败:
-              - operations/merge/special/failure/index.md
-              -   具体算法与配置: operations/merge/special/failure/detail.md
-      -   普通合成:
+      - 拖拽分派与移动:
+          - operations/merge/dispatch/index.md
+          - 分支顺序与移动交换算法: operations/merge/dispatch/detail.md
+      - 普通合成:
           - operations/merge/normal/index.md
-          -   合成资格:
-              - operations/merge/normal/eligibility/index.md
-              -   具体算法与配置: operations/merge/normal/eligibility/detail.md
-          -   合成结果生成:
-              - operations/merge/normal/replacement/index.md
-              -   具体算法与配置: operations/merge/normal/replacement/detail.md
-          -   合成通知与邻格震动:
-              - operations/merge/normal/notify/index.md
-              -   具体算法与配置: operations/merge/normal/notify/detail.md
-          -   竞速计分:
-              - operations/merge/normal/score/index.md
-              -   具体算法与配置: operations/merge/normal/score/detail.md
-          -   临时棋子产出:
-              - operations/merge/normal/temp/index.md
-              -   具体算法与配置: operations/merge/normal/temp/detail.md
-          -   卡片产出:
-              - operations/merge/normal/card/index.md
-              -   具体算法与配置: operations/merge/normal/card/detail.md
-          -   能量气泡产出:
-              - operations/merge/normal/energy/index.md
-              -   具体算法与配置: operations/merge/normal/energy/detail.md
-          -   普通气泡产出:
-              - operations/merge/normal/bubble/index.md
-              -   具体算法与配置: operations/merge/normal/bubble/detail.md
-          -   金币棋子产出:
-              - operations/merge/normal/coin/index.md
-              -   具体算法与配置: operations/merge/normal/coin/detail.md
-          -   合成记录与同步:
-              - operations/merge/normal/finish/index.md
-              -   具体算法与配置: operations/merge/normal/finish/detail.md
-      -   棋子吞噬:
-          - operations/merge/swallow/index.md
-          -   吞噬需求与资格:
-              - operations/merge/swallow/target/index.md
-              -   具体算法与配置: operations/merge/swallow/target/detail.md
-          -   吞噬进度:
-              - operations/merge/swallow/progress/index.md
-              -   具体算法与配置: operations/merge/swallow/progress/detail.md
-          -   吞噬完成变换:
-              - operations/merge/swallow/transform/index.md
-              -   具体算法与配置: operations/merge/swallow/transform/detail.md
-      -   棋子交换:
-          - operations/merge/swap/index.md
-          -   交换资格:
-              - operations/merge/swap/blocked/index.md
-              -   具体算法与配置: operations/merge/swap/blocked/detail.md
-          -   位置交换:
-              - operations/merge/swap/exchange/index.md
-              -   具体算法与配置: operations/merge/swap/exchange/detail.md
-      -   拖拽收尾:
-          - operations/merge/pointer/index.md
-          -   选中与释放:
-              - operations/merge/pointer/selection/index.md
-              -   具体算法与配置: operations/merge/pointer/selection/detail.md
-  -   订单提交:
+          - 合成原子操作与事件顺序: operations/merge/normal/detail.md
+      - 特殊棋子与吞噬:
+          - operations/merge/special/index.md
+          - 升级、降级和吞噬的具体算法: operations/merge/special/detail.md
+      - 合成副产物:
+          - operations/merge/effects/index.md
+          - 普通气泡:
+              - operations/merge/effects/bubble/index.md
+              - 概率修正与随机判定: operations/merge/effects/bubble/detail.md
+          - 卡牌、能量气泡和临时棋子:
+              - operations/merge/effects/activity/index.md
+              - 互斥顺序与落点算法: operations/merge/effects/activity/detail.md
+          - 金币:
+              - operations/merge/effects/coin/index.md
+              - 合成等级与金币落点: operations/merge/effects/coin/detail.md
+  - 订单提交:
       - operations/orders/index.md
-      -   交付检查:
-          - operations/orders/entry/index.md
-          -   按钮资格:
-              - operations/orders/entry/button/index.md
-              -   具体算法与配置: operations/orders/entry/button/detail.md
-          -   棋盘物品计数:
-              - operations/orders/entry/counts/index.md
-              -   具体算法与配置: operations/orders/entry/counts/detail.md
-          -   需求数量核对:
-              - operations/orders/entry/requirements/index.md
-              -   具体算法与配置: operations/orders/entry/requirements/detail.md
-          -   仓库补交:
-              - operations/orders/entry/inventory/index.md
-              -   具体算法与配置: operations/orders/entry/inventory/detail.md
-          -   特殊任务确认:
-              - operations/orders/entry/special_window/index.md
-              -   具体算法与配置: operations/orders/entry/special_window/detail.md
-      -   订单分流:
-          - operations/orders/dispatch/index.md
-          -   订单类型判断:
-              - operations/orders/dispatch/type/index.md
-              -   具体算法与配置: operations/orders/dispatch/type/detail.md
-          -   特殊任务交付:
-              - operations/orders/dispatch/special/index.md
-              -   具体算法与配置: operations/orders/dispatch/special/detail.md
-          -   分支任务交付:
-              - operations/orders/dispatch/branch/index.md
-              -   具体算法与配置: operations/orders/dispatch/branch/detail.md
-      -   奖励结算:
+      - 可交付判断:
+          - operations/orders/check/index.md
+          - 重复需求与计数来源: operations/orders/check/detail.md
+      - 库存确认与补交:
+          - operations/orders/inventory/index.md
+          - 确认窗口的边界与待追踪调用: operations/orders/inventory/detail.md
+      - 奖励结算:
           - operations/orders/rewards/index.md
-          -   订单价格与难度:
-              - operations/orders/rewards/price/index.md
-              -   具体算法与配置: operations/orders/rewards/price/detail.md
-          -   活动奖励收集:
-              - operations/orders/rewards/activity/index.md
-              -   具体算法与配置: operations/orders/rewards/activity/detail.md
-          -   奖励分组与快照:
-              - operations/orders/rewards/snapshot/index.md
-              -   具体算法与配置: operations/orders/rewards/snapshot/detail.md
-          -   即时奖励发放:
-              - operations/orders/rewards/acquire/index.md
-              -   具体算法与配置: operations/orders/rewards/acquire/detail.md
-          -   礼物与Buff奖励:
-              - operations/orders/rewards/gift_buff/index.md
-              -   具体算法与配置: operations/orders/rewards/gift_buff/detail.md
-          -   微笑进度:
-              - operations/orders/rewards/smile/index.md
-              -   具体算法与配置: operations/orders/rewards/smile/detail.md
-      -   需求扣除:
-          - operations/orders/consume/index.md
-          -   订单完成标记:
-              - operations/orders/consume/mark/index.md
-              -   具体算法与配置: operations/orders/consume/mark/detail.md
-          -   棋盘扣物:
-              - operations/orders/consume/board/index.md
-              -   具体算法与配置: operations/orders/consume/board/detail.md
-          -   仓库扣物:
-              - operations/orders/consume/store/index.md
-              -   具体算法与配置: operations/orders/consume/store/detail.md
-          -   扣物刷新与缺物处理:
-              - operations/orders/consume/refresh_failure/index.md
-              -   具体算法与配置: operations/orders/consume/refresh_failure/detail.md
-      -   烹饪与宝箱奖励:
-          - operations/orders/after/index.md
-          -   烹饪狂热奖励:
-              - operations/orders/after/cooking/index.md
-              -   具体算法与配置: operations/orders/after/cooking/detail.md
-          -   宝箱顾客奖励:
-              - operations/orders/after/chest_delay/index.md
-              -   具体算法与配置: operations/orders/after/chest_delay/detail.md
-      -   订单补位:
-          - operations/orders/refill/index.md
-          -   完成历史与Lucky资格:
-              - operations/orders/refill/owner_history/index.md
-              -   具体算法与配置: operations/orders/refill/owner_history/detail.md
-          -   补位循环:
-              - operations/orders/refill/loop/index.md
-              -   具体算法与配置: operations/orders/refill/loop/detail.md
-          -   创建优先级:
-              - operations/orders/refill/priority/index.md
-              -   具体算法与配置: operations/orders/refill/priority/detail.md
-          -   固定与回归订单:
-              - operations/orders/refill/fixed_return/index.md
-              -   具体算法与配置: operations/orders/refill/fixed_return/detail.md
-          -   教程订单:
-              - operations/orders/refill/tutorial/index.md
-              -   具体算法与配置: operations/orders/refill/tutorial/detail.md
-          -   连续订单:
-              - operations/orders/refill/continuous/index.md
-              -   具体算法与配置: operations/orders/refill/continuous/detail.md
-          -   额外顾客入口:
-              - operations/orders/refill/extra/index.md
-              -   具体算法与配置: operations/orders/refill/extra/detail.md
-          -   Lucky订单:
-              - operations/orders/refill/lucky/index.md
-              -   具体算法与配置: operations/orders/refill/lucky/detail.md
-          -   随机订单资格:
-              - operations/orders/refill/random_gate/index.md
-              -   具体算法与配置: operations/orders/refill/random_gate/detail.md
-          -   候选筛选与权重:
-              - operations/orders/refill/candidates/index.md
-              -   具体算法与配置: operations/orders/refill/candidates/detail.md
-          -   订单难度调整:
-              - operations/orders/refill/dynamic/index.md
-              -   具体算法与配置: operations/orders/refill/dynamic/detail.md
-          -   需求抽取与项数:
-              - operations/orders/refill/draw/index.md
-              -   具体算法与配置: operations/orders/refill/draw/detail.md
-          -   订单存档与恢复:
-              - operations/orders/refill/save/index.md
-              -   具体算法与配置: operations/orders/refill/save/detail.md
-      -   交付收尾:
+          - 奖励、价格和活动副作用顺序: operations/orders/rewards/detail.md
+      - 奖励来源与配置字段:
+          - operations/orders/rewards_sources/index.md
+          - 奖励来源的底层追加顺序: operations/orders/rewards_sources/detail.md
+      - 需求扣除:
+          - operations/orders/remove/index.md
+          - 棋盘优先与仓库兜底: operations/orders/remove/detail.md
+      - 特殊与分支订单:
+          - operations/orders/special/index.md
+          - 特殊与分支的底层算法: operations/orders/special/detail.md
+      - 订单完成、补位与同步:
           - operations/orders/finish/index.md
-          -   状态刷新与同步:
-              - operations/orders/finish/sync/index.md
-              -   具体算法与配置: operations/orders/finish/sync/detail.md
-          -   交付动画:
-              - operations/orders/finish/animation/index.md
-              -   具体算法与配置: operations/orders/finish/animation/detail.md
+          - 完成状态、补位循环和事件顺序: operations/orders/finish/detail.md
+      - 订单创建与配置选择:
+          - operations/orders/creation/index.md
+          - 随机订单过滤与抽取细节: operations/orders/creation/detail.md
 
 extra_css:
   - assets/generator-configs.css

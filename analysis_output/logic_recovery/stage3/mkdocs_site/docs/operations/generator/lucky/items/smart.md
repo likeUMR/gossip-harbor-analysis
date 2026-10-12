@@ -34,21 +34,29 @@ Smart 修正改变“本次 Lucky 物品更倾向哪条订单链”，不增加 
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：主案例关闭Smart，仍按原始Lucky权重抽出204；下面的独立对照开启整数倍率3，订单缺205且能量指数1时，只把同链可帮助订单的204权重乘3，说明倾向如何改变。
+**本页发生什么**：本例开启 Smart 权重倍率3，订单缺205且能量指数1。系统只放大能帮助订单的同链204权重，抽样命中204后玩家得到一件四级物品。
 
 ### 代入本页的值
 
-本地食品袋105的默认Lucky池为204×63、205×10、303×15、304×10、305×2，总100。主案例未开启Smart。独立对照假设服务器倍率3、订单缺205（等级5）、能量指数1：204等级4满足5≥4+1，权重63×3=189；205等级5不满足5≥5+1，仍10；薯条链仍15、10、2。总226，204占189/226≈83.63%。演示整数抽样点50命中204。倍率、订单和抽样点为假设，原权重为本地配表；缺多少个205不再乘入权重。
+本地食品袋105的默认Lucky池为204×63、205×10、303×15、304×10、305×2，总100。假设服务器倍率3、订单缺205（等级5）、能量指数1：204等级4满足5≥4+1，权重63×3=189；205等级5不满足5≥5+1，仍10；其它候选仍15、10、2。总226，204占189/226≈83.63%。演示整数抽样点50命中204，完成一次 Smart 加权抽取。
 
 <details><summary>本案例共同前提</summary>
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- source-links:start -->
+
+## 对应源码
+
+[LuckyProduceModel.lua](../../../../assets/recovered-source/LuckyProduceModel.lua)
+
+<!-- source-links:end -->
 
 <!-- generator-configs:start -->
 
@@ -78,15 +86,8 @@ Smart 修正改变“本次 Lucky 物品更倾向哪条订单链”，不增加 
 
 ## 本逻辑使用的配表在哪里
 
-- Lucky 包内配置及活动变体：LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
+- [Lucky 包内配置及活动变体](../chance/load.md#configuration-lucky)：配表文件/字段：`LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell`；LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
 
 
 <!-- generator-configs:end -->
 
-<!-- source-links:start -->
-
-## 对应源码
-
-[LuckyProduceModel.lua](../../../../assets/recovered-source/LuckyProduceModel.lua)
-
-<!-- source-links:end -->

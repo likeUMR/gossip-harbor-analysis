@@ -588,21 +588,6 @@ AddRegister再次针对同一model调用会替换回调与参数，不直接清�
 
 ---
 
-<!-- reconciliation-generator-progress:start -->
-## GeneratorBoost 任务进度与增益升级
-
-GeneratorBoost 在活动进入 `Started` 时注册 `TaskEventProgressGain`，结束或释放时移除注册；因此产出事件本身不会直接升级增益，必须先由任务模块形成 `operation=Add` 的进度消息，再进入 `_OnProgressGain`。处理顺序是：先拒绝非 `Add` 消息；取得当前已完成任务数；按任务配置顺序遍历所有 `taskType` 等于消息类型的任务。
-
-对每个匹配任务，特殊订单类型 `MainOrderType.Special` 会被跳过；已经达到 `task.num` 的任务也跳过。其它任务把当前进度与 `message.num` 相加，再用 `min(结果, task.num)` 截顶，立即把整个进度数组 JSON 写回数据库。刚好达到目标时，再记录完成任务 BI 并派发 `TaskFinishedEvent`；只有进入本消息前已经至少完成过一个任务（`finishedCount >= 1`），才在这个完成点调用 `BuffLevelUp`。因此第一项任务完成不会升级，第二项及之后的完成才会升级；同一消息若匹配多个尚未完成任务，会按配置顺序逐项处理。
-
-`BuffLevelUp` 先计算当前等级加一。存在该等级配置时才写 `ActiveBuffLevel` 和激活 BI，并按新 Buff 类型重载 Lucky、重载普通物品配置，或派发 NoCD 的主棋盘逻辑事件；即使不存在下一级，函数最后仍会把主窗口标记为待弹出并把主动产出标记设为真。任务配置 `generatorBoostTask` 和增益配置 `generatorBoostBuff` 来自服务器配置，客户端源码只确定字段和算法，不能把当前账号的任务数量当成包内默认值。
-
-### 数值例子
-
-假设任务表按 index 为 1、2、3、4 排序，类型分别为 `ItemSpread`、`ItemSpread`、`OrderFinish`、`ItemSpread`，目标为 `[3, 2, 1, 5]`，当前进度为 `[2, 0, 1, 5]`。一次 `ItemSpread` 消息 `num=4` 到达时，任务1先从 2 加到 3 并截顶，写入进度并完成任务；任务2再从 0 加到 2 并完成，但本次进入前 `finishedCount=2`（任务3和任务4已完成）时，两次完成都会分别调用 `BuffLevelUp`，而不是整条消息只升级一次。若消息携带的订单是 `Special`，匹配任务3即使未完成也跳过；若消息 `operation` 不是 `Add`，整个消息不改变任何字段。
-
-<!-- reconciliation-generator-progress:end -->
-
 ## 贯穿案例：点击食品袋 105
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
@@ -617,9 +602,9 @@ GeneratorBoost 在活动进入 `Started` 时注册 `TaskEventProgressGain`，结
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Sta
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
 

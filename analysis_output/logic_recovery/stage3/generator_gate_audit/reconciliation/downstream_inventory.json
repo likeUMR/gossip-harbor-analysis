@@ -11667,7 +11667,9 @@
     "failure_downstream.json": "8343439a4d84111f3edee864e5e90b844050385df6d45a23a5364679ab5bdb36",
     "persistence_review.json": "09baabc02cc191ca7283028a556cebab536a4555e1f17046224c222fdb614f74",
     "reload_review.json": "50e776b21651a399d17afcb88fc07fe0d61676cc87c9578e76643b651266e678",
-    "buff_lifecycle_review.json": "30f5005f4d508b4c575d41eac2a07481310feca845de2ca60434141f99e13aaa"
+    "buff_lifecycle_review.json": "30f5005f4d508b4c575d41eac2a07481310feca845de2ca60434141f99e13aaa",
+    "activity_lifecycle_review.json": "d21fb004334ea798043892fea61b4803dfd24e6eb283c40ce72cdfe3f491bc35",
+    "progress_lifecycle_review.json": "79a2c472f266f6a0c398771de10269dfd5d8e2bec075d148ad6590c599787390"
   },
   "candidate_count": 802,
   "status": "not_accepted",

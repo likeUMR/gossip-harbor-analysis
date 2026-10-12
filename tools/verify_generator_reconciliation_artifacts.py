@@ -7,6 +7,7 @@ from reconcile_generator_persistence import BODIES as PERSISTENCE_BODIES
 from reconcile_generator_reload import BODIES as RELOAD_BODIES
 from reconcile_generator_buff_lifecycle import BODIES as BUFF_BODIES
 from reconcile_generator_activity_lifecycle import BODY as ACTIVITY_BODY
+from reconcile_generator_progress_lifecycle import BODY as PROGRESS_BODY
 def main():
  ledger=json.loads((OUT/'ledger.json').read_text(encoding='utf-8'))
  checks=[]
@@ -14,7 +15,7 @@ def main():
   assert sha(ROOT/row['path'])==row['source_sha256']
   for unit in row['reviewed_units']:
    assert sha(DOCS/unit['document'])==unit['document_sha256']
- for rel,body in {**BODIES,**PERSISTENCE_BODIES,**RELOAD_BODIES,**BUFF_BODIES,'lifecycle/cooldown/detail.md':ACTIVITY_BODY}.items():
+ for rel,body in {**BODIES,**PERSISTENCE_BODIES,**RELOAD_BODIES,**BUFF_BODIES,'lifecycle/cooldown/detail.md':ACTIVITY_BODY,'energy/consume/detail.md':PROGRESS_BODY}.items():
   rendered=DOCS.parent/'site/operations/generator'/rel.removesuffix('.md')/'index.html'
   article=BeautifulSoup(rendered.read_text(encoding='utf-8'),'html.parser').select_one('article')
   expected=body.splitlines()[0].removeprefix('## ')

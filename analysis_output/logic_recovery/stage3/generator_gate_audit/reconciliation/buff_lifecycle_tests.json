@@ -53,8 +53,7 @@
     {
       "case": "progress_add_caps_and_persists",
       "mode": "bytecode",
-      "status": "failed",
-      "error": "GeneratorBoostActivityModel.lua:639: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\tGeneratorBoostActivityModel.lua:639: in method 'GetRoundNum'\n\tGeneratorBoostActivityModel.lua:212: in method '_OnProgressGain'\n\t[string \"<python>\"]:1: in main chunk"
+      "status": "passed"
     },
     {
       "case": "progress_non_add_is_ignored",
@@ -64,8 +63,7 @@
     {
       "case": "second_completed_task_levels_buff",
       "mode": "bytecode",
-      "status": "failed",
-      "error": "GeneratorBoostActivityModel.lua:639: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\tGeneratorBoostActivityModel.lua:639: in method 'GetRoundNum'\n\tGeneratorBoostActivityModel.lua:212: in method '_OnProgressGain'\n\t[string \"<python>\"]:1: in main chunk"
+      "status": "passed"
     },
     {
       "case": "earlier_buff_remains_active",
@@ -120,8 +118,7 @@
     {
       "case": "progress_add_caps_and_persists",
       "mode": "recovered-source",
-      "status": "failed",
-      "error": "[string \"<python>\"]:556: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\t[string \"<python>\"]:1: in main chunk\n\t[string \"<python>\"]:172: in method '_OnProgressGain'\n\t[string \"<python>\"]:556: in method 'GetRoundNum'"
+      "status": "passed"
     },
     {
       "case": "progress_non_add_is_ignored",
@@ -131,11 +128,10 @@
     {
       "case": "second_completed_task_levels_buff",
       "mode": "recovered-source",
-      "status": "failed",
-      "error": "[string \"<python>\"]:556: attempt to index a nil value (field 'm_dbTable')\nstack traceback:\n\t[string \"<python>\"]:1: in main chunk\n\t[string \"<python>\"]:172: in method '_OnProgressGain'\n\t[string \"<python>\"]:556: in method 'GetRoundNum'"
+      "status": "passed"
     }
   ],
-  "passed": 22,
+  "passed": 26,
   "total": 26,
   "limits": "Selected direct lifecycle contracts, controlled model eligibility, clock, DB and dispatch dependencies; not full listener or runtime verification."
 }

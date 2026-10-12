@@ -3,7 +3,7 @@ import json,re
 from reconcile_generator_logic import ROOT,OUT,sha
 def main():
  records={};reports={}
- for filename in ('failure_downstream.json','persistence_review.json','reload_review.json','buff_lifecycle_review.json'):
+ for filename in ('failure_downstream.json','persistence_review.json','reload_review.json','buff_lifecycle_review.json','activity_lifecycle_review.json','progress_lifecycle_review.json'):
   report=json.loads((OUT/filename).read_text(encoding='utf-8'));reports[filename]=sha(OUT/filename)
   sources=report.get('sources',[])+report.get('expanded_function_candidates',[])
   for record in sources:

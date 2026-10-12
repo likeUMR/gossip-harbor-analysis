@@ -50,8 +50,28 @@ OWNERS = {
              'ItemSpread:SpreadCheckEnergyRatioAndCode 读取服务器通用开关 FishNetProduceSmart，再沿 ItemDataModel 的合成链计算升级。'),
 }
 
+# Human-readable source names shown wherever a non-owner page points to the
+# canonical table.  This keeps the lookup list concrete without duplicating
+# the full records on the orchestration page.
+CONFIG_FILES = {
+    'item': 'ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust',
+    'lucky': 'LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell',
+    'activity': 'GeneratorBoostItemModelConfig、GeneratorBoostItemModelConfig_shell',
+    'energy': 'EnergyBoostItemConfig；服务器 EnergyBoostEight',
+    'order': 'OrderItemConfig.json；OrderItemConfig_shell/hard/nerf/nerf_more/extracust',
+    'free': '服务器 luckyProduceConfig（energy_cost.range_entry、extra_lucky）',
+    'continuous': '服务器 luckyProduceConfig（energy_cost.range_entry、triple_lucky_chance、double_lucky_chance）',
+    'smart': '服务器 MiscConfig（LuckyProduceSmart）及运行时 Smart 权重',
+    'energy_cost': '服务器 EnergyBoostCost（boost_num、cost）',
+    'fish': '服务器 FishNetProduceSmart',
+}
+
 # These pages consume an already-loaded family. A link is sufficient; no full copy.
 REFERENCES = {
+    # The Lucky root page orchestrates all of these readers.  Keep the full
+    # tables on their leaf owners, but make every concrete source discoverable
+    # from the root logic page.
+    'lucky/index.md': ['item', 'lucky', 'activity', 'free', 'continuous', 'smart'],
     'state/initializing/detail.md': ['item'], 'state/closed/detail.md': ['item'],
     'state/opening/detail.md': ['item'], 'state/opened/detail.md': ['item'],
     'state/timing/detail.md': ['item'], 'position/auto/detail.md': ['item'],
@@ -343,7 +363,7 @@ class Renderer:
             for family in references:
                 owner, anchor, title, reader = OWNERS[family]
                 rel = os.path.relpath(self.docs / 'operations/generator' / owner, path.parent).replace('\\', '/')
-                result += f'- [{title}]({rel}#{anchor})：{reader}\n'
+                result += f'- [{title}]({rel}#{anchor})：配表文件/字段：`{CONFIG_FILES[family]}`；{reader}\n'
         return result + '\n\n' + END + '\n'
 
 
@@ -356,6 +376,10 @@ def supplement(docs):
     for page in pages:
         body = page.read_text(encoding='utf-8')
         body = re.sub(r'\n*' + re.escape(START) + r'.*?' + re.escape(END) + r'\n*', '\n', body, flags=re.S)
+        # Older builds could leave an unmarked lookup list when another
+        # supplement rewrote the page after the config block. Remove that
+        # stale generated list before inserting the canonical one again.
+        body = re.sub(r'\n## 本逻辑使用的配表在哪里\n\n(?:- .*\n)+', '\n', body)
         # Configurations and lookup links follow the full worked example.
         page.write_text(body.rstrip() + renderer.section(page) + '\n', encoding='utf-8')
     (assets / 'generator-config-source-snapshot.json').write_text(json.dumps(renderer.configs, ensure_ascii=False, indent=2), encoding='utf-8')

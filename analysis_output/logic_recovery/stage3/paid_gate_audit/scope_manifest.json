@@ -1,0 +1,63 @@
+{
+  "version_scope": "GH 3.98.10 recovered client snapshot",
+  "status": "pending",
+  "entry_scenarios": [
+    "shop_open",
+    "shop_manual_refresh",
+    "shop_ad_refresh",
+    "daily_boundary_refresh",
+    "flash_sale_refresh",
+    "bundle_trigger_by_level",
+    "bundle_trigger_by_order_item",
+    "bundle_trigger_by_energy",
+    "bundle_trigger_by_weekly_or_chain_state",
+    "bundle_purchase_success",
+    "bundle_purchase_failure_or_expiry",
+    "iap_price_load_and_restore"
+  ],
+  "bundle_types_from_BundleDefinition": [
+    "StarterBundle",
+    "TimeLimitBundle",
+    "EnergyBundle",
+    "OrderItemBundle",
+    "WeeklyBundle",
+    "ChainBundle",
+    "GrowthFund",
+    "NewWeeklyBundle",
+    "LevelUpBundle",
+    "TriStageBundle",
+    "OnePlusNBundle",
+    "CustomizeCardBundle",
+    "ChopGiftBundle",
+    "PlentyBundle",
+    "OnePlusFourBundle"
+  ],
+  "cross_cutting_systems": [
+    "IAP catalog and localized price",
+    "ShopSlot candidate and weight",
+    "ShopDailyDeals",
+    "FlashSale",
+    "discount and activity overrides",
+    "purchase records and persistence",
+    "value model"
+  ],
+  "evidence_boundary": {
+    "source_confirmed": [
+      "client-side type registry",
+      "field names and model factory",
+      "available local configuration records",
+      "static price bands and purchase IDs"
+    ],
+    "runtime_pending": [
+      "actual candidate set for an account",
+      "server override payload",
+      "localized store response",
+      "random draw trajectory"
+    ],
+    "unavailable": [
+      "server experiment cohort assignment",
+      "complete future event catalog",
+      "original client event/state/save replay"
+    ]
+  }
+}

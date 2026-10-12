@@ -3,23 +3,6 @@
 `Init` 先深拷贝 `Spread_Weight`，再把次数和储备初始化为各自最大值。`Spread_InitDuration` 非空时状态为 `Initializing` 并立即 `UpdatePerSecond`；否则 `Spread_OpenDuration` 非空时状态为 `Closed`；否则直接 `Opened`。教程强制时长只对原本存在的 init/open/item-recovery/storage-recovery 字段替换。计时进度由 `elapsed = serverTime - m_startTimer`、`amount=min(elapsed/duration,1)` 得到；没有 duration 时记录完整字段诊断并把起点清空，duration 为 0 直接视为完成。`GetTimerDuration` 在 Initializing/Opening 读取对应阶段时长，在 Opened 依据 `m_storageRestNumber==0` 选择储备恢复或单轮恢复。完成后 `_UpdateRecoveryState` 要么转为 Opened，要么补满次数并扣除储备；储备耗尽时把起点推进一个 item recovery duration 再递归重算。
 
 **证据状态**：主判断和字段为 `source-confirmed`；服务器开关、动态活动对象、实际回放时序为 `runtime-pending`。
-<!-- reconciliation-persistence:start -->
-## 存档如何恢复当前母体
-
-主棋盘继承 BaseActionBoardModel；`SaveItemProperty` 调用 ItemManager:SetItem，不是 BaseBoardModel 的空实现。同步数据结束时，ItemManager 逐行读取 Item 表，经 ItemModelFactory.CreateWithData 重建母体。先 CreateWithCode 按当前配置创建对象和组件，再覆盖存档状态；不是只保存类型，重新登录就补满次数。
-
-| 实例字段 | 存档列 | 恢复方法 |
-| --- | --- | --- |
-| m_state | spreadState | 原样覆盖；无默认状态替代 |
-| m_startTimer | spreadStartTimer | 原样覆盖；缺字段成为nil |
-| m_itemRestNumber | spreadItemRestNumber | 原样覆盖，不自动补满 |
-| m_storageRestNumber | spreadStorageRestNumber | 原样覆盖，不自动补满 |
-| m_spreadCount | spreadCount | 缺值才用0 |
-| m_codeWeightPairs | spreadCodeWeightPairs | 解析存档字符串，覆盖配置初始池 |
-
-如果按代码创建对象失败，工厂返回nil；ItemManager记ItemNotFound并删除该存档行。主棋盘成功恢复后标记棋子类型已解锁。恢复函数本身没有重新推进冷却；时间推进由随后UpdatePerSecond处理。当前配置的上限、时长和权重模式仍来自创建过程，存档只恢复上表的运行值。
-
-<!-- reconciliation-persistence:end -->
 
 ---
 
@@ -29,19 +12,19 @@
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本页具体说明状态值如何映射成玩家看到的已打开、开启中等状态，并决定是否允许产出。
+**本页发生什么**：本页是该阶段的第四层证据节点；沿用食品袋 105 的同一组案例输入，只展示当前节点涉及的算法和状态变化。
 
 ### 代入本页的值
 
-假设模型状态值从服务端读到 3，映射为 `Opened`，因此允许点击；若读到 2，映射为 `Opening`，只发送打开中事件，不调用产出函数。
+本页没有新增运行时输入；具体字段以本页正文的源码和配表为准。
 
 <details><summary>本案例共同前提</summary>
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
 
@@ -3058,134 +3041,135 @@
 
 <div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 9 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>母体/棋子 ID<small style="display:block">Type</small></th><th>自动产出<small style="display:block">Spread_Auto</small></th><th>是否消耗能量<small style="display:block">Spread_CostEnergy</small></th><th>初始化时长（秒）<small style="display:block">Spread_InitDuration</small></th><th>初始化加速（宝石）<small style="display:block">Spread_InitSpeedUpCost</small></th><th>单轮次数上限<small style="display:block">Spread_ItemMaxNumber</small></th><th>单轮恢复（秒）<small style="display:block">Spread_ItemRecoveryDuration</small></th><th>单轮加速（宝石）<small style="display:block">Spread_ItemSpeedUpCost</small></th><th>开启时长（秒）<small style="display:block">Spread_OpenDuration</small></th><th>开启加速（宝石）<small style="display:block">Spread_OpenSpeedUpCost</small></th><th>储备次数上限<small style="display:block">Spread_StorageMaxNumber</small></th><th>储备恢复（秒）<small style="display:block">Spread_StorageRecoveryDuration</small></th><th>储备加速（宝石）<small style="display:block">Spread_StorageSpeedUpCost</small></th><th>变换点击次数<small style="display:block">Spread_TransformNumber</small></th><th>普通产物 × 权重<small style="display:block">Spread_Weight</small></th><th>产出模式<small style="display:block">Spread_WeightType</small></th><th>完整记录</th></tr></thead><tbody><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1706.png" alt="1706"><span><b>1706</b><small>国王珊瑚群</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 95<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 5<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;LevelDownPiece&quot;: 1,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;MergedType&quot;: &quot;1707&quot;,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-95&quot;,
     &quot;1802-5&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;MergedType&quot;: &quot;1707&quot;,
   &quot;SellingPrice&quot;: 4,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1706&quot;,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Rare&quot;: 1,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
   &quot;Spread_WeightType&quot;: 1,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1707.png" alt="1707"><span><b>1707</b><small>珊瑚宝藏</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 90<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 10<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;LevelDownPiece&quot;: 1,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;MergedType&quot;: &quot;1708&quot;,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-90&quot;,
     &quot;1802-10&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;MergedType&quot;: &quot;1708&quot;,
   &quot;SellingPrice&quot;: 5,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1707&quot;,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Rare&quot;: 1,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
   &quot;Spread_WeightType&quot;: 1,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1708.png" alt="1708"><span><b>1708</b><small>错综复杂珊瑚丘</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 90<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 8<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span> × 2<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;LevelDownPiece&quot;: 1,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;MergedType&quot;: &quot;1709&quot;,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-90&quot;,
     &quot;1802-8&quot;,
     &quot;1803-2&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;MergedType&quot;: &quot;1709&quot;,
   &quot;SellingPrice&quot;: 6,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1708&quot;,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Rare&quot;: 1,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
   &quot;Spread_WeightType&quot;: 1,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1709.png" alt="1709"><span><b>1709</b><small>海螺珊瑚</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 89<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 8<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span> × 3<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;LevelDownPiece&quot;: 1,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;MergedType&quot;: &quot;1710&quot;,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-89&quot;,
     &quot;1802-8&quot;,
     &quot;1803-3&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;MergedType&quot;: &quot;1710&quot;,
   &quot;SellingPrice&quot;: 7,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1709&quot;,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Rare&quot;: 1,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
   &quot;Spread_WeightType&quot;: 1,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1710.png" alt="1710"><span><b>1710</b><small>珍稀珊瑚</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 88<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span> × 3<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
   &quot;LevelDownPiece&quot;: 1,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;MergedType&quot;: &quot;1711&quot;,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-88&quot;,
     &quot;1802-9&quot;,
     &quot;1803-3&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;MergedType&quot;: &quot;1711&quot;,
   &quot;SellingPrice&quot;: 8,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1710&quot;,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Rare&quot;: 1,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
   &quot;Spread_WeightType&quot;: 1,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1711.png" alt="1711"><span><b>1711</b><small>巨型蛤蜊珊瑚</small></span></span></td><td>0</td><td>1</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>42</td><td>180</td><td>3</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>126</td><td>300</td><td>5</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1801.png" alt="1801"><span><b>1801</b><small>贝壳</small></span></span> × 87<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1802.png" alt="1802"><span><b>1802</b><small>普通扇贝</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1803.png" alt="1803"><span><b>1803</b><small>新鲜扇贝</small></span></span> × 4<br><span class="config-piece"><span><b>main_g_artifact_1</b><small>无本地视图映射</small></span></span> × 15</div></td><td>1</td><td><details><summary>展开全部字段</summary><pre>{
-  &quot;LevelDownPiece&quot;: 1,
-  &quot;BubbleChance&quot;: 0,
-  &quot;Rare&quot;: 1,
-  &quot;Spread_Auto&quot;: 0,
-  &quot;Spread_StorageRecoveryDuration&quot;: 300,
   &quot;Spread_ItemMaxNumber&quot;: 42,
-  &quot;Spread_CostEnergy&quot;: 1,
-  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Spread_Weight&quot;: [
     &quot;1801-87&quot;,
     &quot;1802-9&quot;,
     &quot;1803-4&quot;,
     &quot;main_g_artifact_1-15&quot;
   ],
-  &quot;Spread_StorageSpeedUpCost&quot;: 5,
-  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;Rare&quot;: 1,
   &quot;SellingPrice&quot;: 9,
+  &quot;BubbleChance&quot;: 0,
+  &quot;Spread_ItemSpeedUpCost&quot;: 3,
   &quot;Type&quot;: &quot;1711&quot;,
+  &quot;LevelDownPiece&quot;: 1,
+  &quot;Spread_StorageSpeedUpCost&quot;: 5,
+  &quot;Spread_StorageRecoveryDuration&quot;: 300,
+  &quot;Spread_CostEnergy&quot;: 1,
+  &quot;Spread_ItemRecoveryDuration&quot;: 180,
+  &quot;Spread_Auto&quot;: 0,
   &quot;Spread_WeightType&quot;: 1,
   &quot;Spread_StorageMaxNumber&quot;: 126
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/main_order_chest_s_1.png" alt="main_order_chest_s_1"><span><b>main_order_chest_s_1</b><small>聪明宝箱</small></span></span></td><td>0</td><td>0</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>75</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>75</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/204.png" alt="204"><span><b>204</b><small>长条面包</small></span></span> × 5<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/205.png" alt="205"><span><b>205</b><small>切片面包</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/303.png" alt="303"><span><b>303</b><small>经典炸薯条</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/304.png" alt="304"><span><b>304</b><small>番茄酱薯条</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/504.png" alt="504"><span><b>504</b><small>无咖啡因咖啡</small></span></span> × 5<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/505.png" alt="505"><span><b>505</b><small>普通咖啡</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/603.png" alt="603"><span><b>603</b><small>冰柠檬茶</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/604.png" alt="604"><span><b>604</b><small>乡村冰茶</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/903.png" alt="903"><span><b>903</b><small>整条烤鱼</small></span></span> × 7<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/904.png" alt="904"><span><b>904</b><small>双人份烤鱼</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1103.png" alt="1103"><span><b>1103</b><small>橘子味饼干</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1304.png" alt="1304"><span><b>1304</b><small>粉红果冻游泳圈</small></span></span> × 6<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1403.png" alt="1403"><span><b>1403</b><small>基础救生衣</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1804.png" alt="1804"><span><b>1804</b><small>点状贝壳</small></span></span> × 7<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span> × 13<br><span class="config-piece"><span><b>main_g_artifact_3</b><small>无本地视图映射</small></span></span> × 9</div></td><td>3</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;Spread_ItemMaxNumber&quot;: 75,
   &quot;Spread_Weight&quot;: [
     &quot;204-5&quot;,
     &quot;205-10&quot;,
@@ -3205,13 +3189,13 @@
     &quot;1805-13&quot;,
     &quot;main_g_artifact_3-9&quot;
   ],
-  &quot;Spread_ItemMaxNumber&quot;: 75,
+  &quot;Spread_CostEnergy&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 75,
   &quot;Spread_Auto&quot;: 0,
-  &quot;Type&quot;: &quot;main_order_chest_s_1&quot;,
   &quot;Spread_WeightType&quot;: 3,
-  &quot;Spread_CostEnergy&quot;: 0
+  &quot;Type&quot;: &quot;main_order_chest_s_1&quot;
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/main_order_chest_m_1.png" alt="main_order_chest_m_1"><span><b>main_order_chest_m_1</b><small>睿智宝箱</small></span></span></td><td>0</td><td>0</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>150</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>150</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/205.png" alt="205"><span><b>205</b><small>切片面包</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/206.png" alt="206"><span><b>206</b><small>黄油果酱吐司</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/303.png" alt="303"><span><b>303</b><small>经典炸薯条</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/304.png" alt="304"><span><b>304</b><small>番茄酱薯条</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/505.png" alt="505"><span><b>505</b><small>普通咖啡</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/506.png" alt="506"><span><b>506</b><small>特调咖啡</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/603.png" alt="603"><span><b>603</b><small>冰柠檬茶</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/604.png" alt="604"><span><b>604</b><small>乡村冰茶</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/904.png" alt="904"><span><b>904</b><small>双人份烤鱼</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/905.png" alt="905"><span><b>905</b><small>虾仁</small></span></span> × 27<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1103.png" alt="1103"><span><b>1103</b><small>橘子味饼干</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1306.png" alt="1306"><span><b>1306</b><small>美人鱼漂浮圈</small></span></span> × 26<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1403.png" alt="1403"><span><b>1403</b><small>基础救生衣</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1806.png" alt="1806"><span><b>1806</b><small>稀有鹦鹉螺</small></span></span> × 27<br><span class="config-piece"><span><b>main_g_artifact_3</b><small>无本地视图映射</small></span></span> × 9</div></td><td>3</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;Spread_ItemMaxNumber&quot;: 150,
   &quot;Spread_Weight&quot;: [
     &quot;205-10&quot;,
     &quot;206-20&quot;,
@@ -3231,13 +3215,13 @@
     &quot;1806-27&quot;,
     &quot;main_g_artifact_3-9&quot;
   ],
-  &quot;Spread_ItemMaxNumber&quot;: 150,
+  &quot;Spread_CostEnergy&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 150,
   &quot;Spread_Auto&quot;: 0,
-  &quot;Type&quot;: &quot;main_order_chest_m_1&quot;,
   &quot;Spread_WeightType&quot;: 3,
-  &quot;Spread_CostEnergy&quot;: 0
+  &quot;Type&quot;: &quot;main_order_chest_m_1&quot;
 }</pre></details></td></tr><tr><td><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/main_order_chest_b_1.png" alt="main_order_chest_b_1"><span><b>main_order_chest_b_1</b><small>天才宝箱</small></span></span></td><td>0</td><td>0</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>225</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td>225</td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><span title="原始配置中不存在该字段">未配置</span></td><td><div class="config-pool"><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/205.png" alt="205"><span><b>205</b><small>切片面包</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/206.png" alt="206"><span><b>206</b><small>黄油果酱吐司</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/303.png" alt="303"><span><b>303</b><small>经典炸薯条</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/304.png" alt="304"><span><b>304</b><small>番茄酱薯条</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/505.png" alt="505"><span><b>505</b><small>普通咖啡</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/506.png" alt="506"><span><b>506</b><small>特调咖啡</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/603.png" alt="603"><span><b>603</b><small>冰柠檬茶</small></span></span> × 10<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/604.png" alt="604"><span><b>604</b><small>乡村冰茶</small></span></span> × 20<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/904.png" alt="904"><span><b>904</b><small>双人份烤鱼</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/905.png" alt="905"><span><b>905</b><small>虾仁</small></span></span> × 27<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1103.png" alt="1103"><span><b>1103</b><small>橘子味饼干</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1305.png" alt="1305"><span><b>1305</b><small>璀璨泳圈</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1306.png" alt="1306"><span><b>1306</b><small>美人鱼漂浮圈</small></span></span> × 26<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1403.png" alt="1403"><span><b>1403</b><small>基础救生衣</small></span></span> × 9<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1805.png" alt="1805"><span><b>1805</b><small>金色海螺</small></span></span> × 13<br><span class="config-piece"><img loading="lazy" src="../../../../../assets/config-pieces/1806.png" alt="1806"><span><b>1806</b><small>稀有鹦鹉螺</small></span></span> × 27<br><span class="config-piece"><span><b>main_g_artifact_3</b><small>无本地视图映射</small></span></span> × 9</div></td><td>3</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;Spread_ItemMaxNumber&quot;: 225,
   &quot;Spread_Weight&quot;: [
     &quot;205-10&quot;,
     &quot;206-20&quot;,
@@ -3257,12 +3241,11 @@
     &quot;1806-27&quot;,
     &quot;main_g_artifact_3-9&quot;
   ],
-  &quot;Spread_ItemMaxNumber&quot;: 225,
+  &quot;Spread_CostEnergy&quot;: 0,
   &quot;Spread_StorageMaxNumber&quot;: 225,
   &quot;Spread_Auto&quot;: 0,
-  &quot;Type&quot;: &quot;main_order_chest_b_1&quot;,
   &quot;Spread_WeightType&quot;: 3,
-  &quot;Spread_CostEnergy&quot;: 0
+  &quot;Type&quot;: &quot;main_order_chest_b_1&quot;
 }</pre></details></td></tr></tbody></table></div></div>
 
 
@@ -3273,3 +3256,4 @@
 
 
 <!-- generator-configs:end -->
+

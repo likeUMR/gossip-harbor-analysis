@@ -70,6 +70,7 @@ function auto_spread_once(generator):
 ```
 
 **底层证据位置**：`ItemSpread.lua` 的 `CheckSpreadPosAndAuto`（847-862）、`_TryAutoSpread`（798-828）、`_TrySpread`（864-928）、`TryRemoveSelf`（930-944）；`MainBoardModel.lua` 的 `FindSpreadPosition`（230-237）；解码 `BaseItemLayerModel` 的 `FindEmptyPositionInSpreadOrder` 和 `FindRandomPosition`；`Table.ListRandomSelectOne`。`MathUtil.Random` 的种子来源、实际棋盘尺寸和服务端 `AutoSpreadToCache` 开关仍是 `runtime-pending`，不能从客户端静态代码推出。
+
 ---
 
 ## 贯穿案例：打开一次性测试宝箱 main_t_chest_new_1
@@ -88,9 +89,9 @@ function auto_spread_once(generator):
 
 本地配表确认：`main_t_chest_new_1` 的开启时长 120 秒、可产出 7 次、储备 7 次，`Spread_WeightType=2`，权重为 `2401-2 / 2402-2 / 2501-2 / 2502-1`；没有 `Spread_ItemRecoveryDuration`，因此是一次性母体。素材为原版 Sprite 图标加说明性排布，不是运行时截图。
 
-共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
 
@@ -98,7 +99,8 @@ function auto_spread_once(generator):
 
 ## 本逻辑使用的配表在哪里
 
-- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：配表文件/字段：`ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust`；ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
 
 
 <!-- generator-configs:end -->
+

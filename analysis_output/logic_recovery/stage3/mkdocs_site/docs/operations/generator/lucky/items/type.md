@@ -74,20 +74,11 @@ GeneratorBoost 监听 `ItemSpread` 事件。母体支持 GeneratorBoost 时，Lu
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Sta
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
-
-<!-- generator-configs:start -->
-
-## 本逻辑使用的配表在哪里
-
-- Lucky 包内配置及活动变体：LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
-
-
-<!-- generator-configs:end -->
 
 <!-- source-links:start -->
 
@@ -96,3 +87,13 @@ GeneratorBoost 监听 `ItemSpread` 事件。母体支持 GeneratorBoost 时，Lu
 [LuckyProduceModel.lua](../../../../assets/recovered-source/LuckyProduceModel.lua) · [GeneratorBoostActivityModel.lua](../../../../assets/recovered-source/GeneratorBoostActivityModel.lua)
 
 <!-- source-links:end -->
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [Lucky 包内配置及活动变体](../chance/load.md#configuration-lucky)：配表文件/字段：`LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell`；LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
+
+
+<!-- generator-configs:end -->
+

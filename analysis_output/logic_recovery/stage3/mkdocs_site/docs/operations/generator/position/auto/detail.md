@@ -4,7 +4,7 @@
 
 手动 CheckSpreadPosAndAuto 对自动母体先查询自动落点：如果能找到，直接返回false，交给 Update 的自动循环处理，不另外因手动点击产出。自动落点为空才继续手动的方形环落点检查；因此“自动母体点击无反应”可能是主动避免重复产出，不是棋盘满错误。
 
-Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false。这里严格比较数值1；布尔true不等于1，不能用“字段非空”代替。每轮要求次数不为0且状态Opened；一次性自动母体走全盘随机空格，可恢复自动母体只扫描固定八邻域。
+Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false。每轮要求次数不为0且状态Opened；一次性自动母体走全盘随机空格，可恢复自动母体只扫描固定八邻域。
 
 ## 无空位的特殊缓存
 
@@ -22,7 +22,7 @@ Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false�
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：食品袋105的主案例不是自动母体，自动路径不执行。下面对照说明自动Decremental母体在棋盘满时如何缓存剩余配额，而非无限重试点击。
+**本页发生什么**：本例直接使用自动、一次性、Decremental 母体，在棋盘满时演示剩余配额缓存；玩家看到缓存数量增加，系统不会无限重试点击。
 
 ### 代入本页的值
 
@@ -32,20 +32,11 @@ Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
-
-<!-- generator-configs:start -->
-
-## 本逻辑使用的配表在哪里
-
-- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
-
-
-<!-- generator-configs:end -->
 
 <!-- source-links:start -->
 
@@ -54,3 +45,13 @@ Update 只有 Spread_Auto==1 才反复调用 _TryAutoSpread，直到返回false�
 [ItemSpread.lua](../../../../assets/recovered-source/ItemSpread.lua)
 
 <!-- source-links:end -->
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [母体配置与包内变体](../../state/model/detail.md#configuration-item-model)：配表文件/字段：`ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust`；ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+
+
+<!-- generator-configs:end -->
+

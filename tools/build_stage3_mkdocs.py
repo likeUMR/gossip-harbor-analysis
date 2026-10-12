@@ -1384,7 +1384,6 @@ nav:
     # not open the mechanism page by clicking the tree node itself.
     config = config.replace("机制说明: operations/", "operations/")
     config = config.replace("总览: operations/", "operations/")
-    supplement(DOCS)
     supplement_lucky_explanation(DOCS)
     supplement_generator_rules(DOCS)
     config = config.replace("Super/Free 产出类型", "Super Lucky：奖励分类与表现")
@@ -1392,6 +1391,10 @@ nav:
     config = wire_disco(config)
     from stage3_generator_execution_structure import wire as wire_execution
     config = wire_execution(config)
+    # Add configuration indexes last so later explanatory supplements cannot
+    # remove the canonical lookup sections from the pages that own them or
+    # reference them.
+    supplement(DOCS)
     config += "\nextra_css:\n  - assets/generator-configs.css\nextra_javascript:\n  - assets/generator-configs.js\n"
     (SITE / "mkdocs.yml").write_text(textwrap.dedent(config).lstrip(), encoding="utf-8")
     subprocess.run(["mkdocs", "build", "--clean", "--config-file", str(SITE / "mkdocs.yml")], cwd=SITE, check=True)

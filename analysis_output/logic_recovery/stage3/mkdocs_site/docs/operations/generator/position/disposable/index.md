@@ -15,6 +15,7 @@
 - **一次性判定由缺失字段实现**：`IsDisposable()` 等价于 `m_itemRecoveryDuration == nil`。它影响耗尽后的删除/缓存和 CD 恢复，不改变手动落点算法。
 
 **源码证据**：`ItemSpread:OnTap`、`_TrySpread`、`CheckSpreadState`、`CheckSpreadPosAndAuto`、`TryRemoveSelf`、`_TryAutoSpread`、`MainBoardModel:FindSpreadPosition`、`BaseItemLayerModel:FindEmptyPositionInSpreadOrder`、`BaseItemLayerModel:FindRandomPosition`。配置字段来自 `ItemModelConfig`。确定的代码分支标为 `source-confirmed`；服务端缓存开关、实际账号棋盘和运行时随机种子仍标为 `runtime-pending`，不能由静态代码假定。
+
 ---
 
 ## 贯穿案例：打开一次性测试宝箱 main_t_chest_new_1
@@ -33,8 +34,8 @@
 
 本地配表确认：`main_t_chest_new_1` 的开启时长 120 秒、可产出 7 次、储备 7 次，`Spread_WeightType=2`，权重为 `2401-2 / 2402-2 / 2501-2 / 2502-1`；没有 `Spread_ItemRecoveryDuration`，因此是一次性母体。素材为原版 Sprite 图标加说明性排布，不是运行时截图。
 
-演示输入：等级 10、活动 Sta
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>

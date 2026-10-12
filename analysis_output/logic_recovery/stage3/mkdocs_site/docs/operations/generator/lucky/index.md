@@ -51,14 +51,29 @@ Disco 支持当前母体时会排除 Lucky，见活动资格与执行优先级�
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例先检查活动和等级条件，再判断本周期机会和免费资格。A 这次没有获得 Lucky 资格，所以生成普通物品；B 获得了 Lucky 资格，因此额外生成 Lucky 物品 204，并消耗本周期的一次 Lucky 机会。
+**本页发生什么**：本例有适用的 Lucky 配置。先检查活动、等级和已有连续资格，再抽周期机会；失败才检查免费资格。A 未命中回普通池，B 命中再抽 Lucky 物品。
 
 <details><summary>本案例共同前提</summary>
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
+演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
 
-本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
+本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
 
 </details>
+
+<!-- generator-configs:start -->
+
+## 本逻辑使用的配表在哪里
+
+- [母体配置与包内变体](../state/model/detail.md#configuration-item-model)：配表文件/字段：`ItemModelConfig.json；ItemModelConfig_shell/carditem2/extracust`；ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- [Lucky 包内配置及活动变体](chance/load.md#configuration-lucky)：配表文件/字段：`LuckyProduceConfig、LuckyProduceConfig_shell/triple/tripleshell`；LuckyProduceModel:_LoadFileConfig → _GetLevelFitConfig → Try2ProduceLuckyItem；按 generator、等级区间选择记录，再用 lucky_chance 重装机会池。
+- [Generator Boost 母体替换配置](../overrides/activity/detail.md#configuration-generator-boost)：配表文件/字段：`GeneratorBoostItemModelConfig、GeneratorBoostItemModelConfig_shell`；GeneratorBoostActivityModel:GetItemModelConfig → ReloadItemModelConfig；按 Buff 选择 MoreLuckyProduce / ExtraProduce 并替换 ItemDataModel 中的母体配置。
+- [免费 Lucky 服务器字段](free/generate.md#configuration-free-lucky)：配表文件/字段：`服务器 luckyProduceConfig（energy_cost.range_entry、extra_lucky）`；LuckyProduceModel:_LoadOtherServerConfig 载入 luckyProduceConfig；_AddFreeLuckyProduceEnergyCostCount 读取 energy_cost.range_entry 与 extra_lucky。
+- [连续 Lucky 服务器字段](continuous/trigger.md#configuration-continuous-lucky)：配表文件/字段：`服务器 luckyProduceConfig（energy_cost.range_entry、triple_lucky_chance、double_lucky_chance）`；_CalculateLuckyProduceConfigIndex 按 energy_cost.range_entry 选段；_Try2TriggerContiLuckyProduce 直接读取 triple_lucky_chance / double_lucky_chance。
+- [Lucky Smart Produce 参数](items/smart.md#configuration-lucky-smart)：配表文件/字段：`服务器 MiscConfig（LuckyProduceSmart）及运行时 Smart 权重`；_LoadOtherServerConfig 用 MiscConfigReader:GetInteger(MiscConfKey.LuckyProduceSmart) 载入倍率；_UpdateSpreadConfigSmartWeight 使用原始物品池计算临时权重。
+
+
+<!-- generator-configs:end -->
+

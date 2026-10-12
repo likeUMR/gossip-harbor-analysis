@@ -1,8 +1,8 @@
 {
   "source": "analysis_data/logic_index/lua/decoded/e153e5646c658a0cfbd2c7ca4bce3a07202bab1ef4e5ef0782585dca7f5e7f01/decompiled.lua",
   "source_sha256": "61350cf348191485c0d96c998818c2c93039d9cd0bb8334d1e8af6272e4a2859",
-  "document": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/events/side_effects/detail.md",
-  "document_sha256": "59f07f81642e54ead2d730b145626dc80224002b8d1161416df5b897091d6475",
+  "document": "analysis_output/logic_recovery/stage3/mkdocs_site/docs/operations/generator/energy/consume/detail.md",
+  "document_sha256": "81e65575d8aeea6b976e401dceb665bbecb111fb96eeddded4168b86d5f00496",
   "resolved_rules": [
     "Started registration/remove",
     "Add-only gate",
@@ -10,7 +10,8 @@
     "special-order skip",
     "progress cap and DB write",
     "first-task no-level-up rule",
-    "BuffLevelUp terminal flags"
+    "BuffLevelUp terminal flags",
+    "finishedCount frozen across the message loop"
   ],
   "open_edges": [
     "TaskEventProgressGain dynamic producers and condition functions",
