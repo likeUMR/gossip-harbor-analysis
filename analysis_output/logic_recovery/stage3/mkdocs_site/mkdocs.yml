@@ -469,18 +469,6 @@ nav:
       - 奖励分组与快照:
         - operations/orders/rewards/snapshot/index.md
         - 奖励分组与快照：具体算法与配置: operations/orders/rewards/snapshot/detail.md
-- 历史分析补充:
-  - CD、恢复计时与 Buff 资格: recovered_analysis/generator/lifecycle_cooldown_detail.md
-  - Disco 的订单选择、助力分值与普通回退: recovered_analysis/generator/output_disco_detail.md
-  - 次数与储备上限修正: recovered_analysis/generator/output_preparation_detail.md
-  - 能量链升级与 FishNet 补缺算法: recovered_analysis/generator/output_upgrade_detail.md
-  - 棋盘满失败的具体副作用: recovered_analysis/generator/position_full_detail.md
-  - 初始化计时的具体判定: recovered_analysis/generator/state_initializing_detail.md
-- 配置与验证:
-  - 配置索引: reference/configuration.md
-  - 证据分级: reference/evidence.md
-  - 三类操作验收矩阵: verification/acceptance.md
-  - 当前状态: verification/status.md
 extra_css:
 - assets/generator-configs.css
 - assets/site-layout.css

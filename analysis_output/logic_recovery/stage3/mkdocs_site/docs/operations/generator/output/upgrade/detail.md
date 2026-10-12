@@ -34,11 +34,41 @@ D必须是二次幂且不等于M；T恰好是M倍数时D=M，故不改写。候�
 
 本地配表确认：105 的普通池 201-35 / 202-2 / 301-5；可用次数上限 80，储备上限 240，恢复时长 30 / 60 秒。视图表把 105 映射到 GroceryBag05，201/204 映射到 Flour01/Flour04。
 
-演示输入：等级 10、活动 Started、无既有连续资格、GeneratorBoost/Disco/Smart/教程强制/落点优化不生效；余额 10、次数 80、储备 240、有效空格 P、基础能量档。周期计数 60/1；A 机会抽样 60 且免费资格失败，普通抽样点 20；B 机会抽样 1、Lucky 抽样点 50。以上是静态规则演算，未采集真实账号回放。
+共同演示输入：等级 10、活动 Started、余额 10、次数 80、储备 240、有效空格 P。每个页面会为本页机制单独假设触发条件，并给出完整结果；其它机制只有在需要隔离当前分支时才单独说明。所有新增配置和数值均为演示假设。
 
-本例没执行的机制会明确标为跳过；对照分支只为解释条件，不能冒充主路径。
+本页案例只把当前机制设为触发条件；其它机制若被隔离，会在该段中明确说明假设。
 
 </details>
+
+<!-- generator-configs:start -->
+
+<a id="configuration-fish-smart"></a>
+
+## 本页涉及的配表：生鱼链智能升级开关
+
+**实际读取链**：`ItemSpread:SpreadCheckEnergyRatioAndCode 读取服务器通用开关 FishNetProduceSmart，再沿 ItemDataModel 的合成链计算升级。`
+
+本组配表集中展示在本页；其它使用同一份已加载配置的页面提供查阅链接。包内值与服务器生效值分开标注。
+
+
+### FishNetProduceSmart 服务器字段（1 条）
+
+来源：`ItemSpread:SpreadCheckEnergyRatioAndCode`。
+
+<div class="config-block"><div class="config-controls"><input type="search" aria-label="筛选配置" placeholder="搜索棋子 ID、名称或配置值"><span class="config-count">全部 1 条配置</span></div><div class="config-scroll"><table class="config-table"><thead><tr><th>字段</th><th>作用</th><th>配置值</th><th>完整记录</th></tr></thead><tbody><tr><td>FishNetProduceSmart</td><td>生鱼链智能升级开关</td><td>服务器通用配置，未采集</td><td><details><summary>展开全部字段</summary><pre>{
+  &quot;字段&quot;: &quot;FishNetProduceSmart&quot;,
+  &quot;作用&quot;: &quot;生鱼链智能升级开关&quot;,
+  &quot;配置值&quot;: &quot;服务器通用配置，未采集&quot;
+}</pre></details></td></tr></tbody></table></div></div>
+
+
+## 本逻辑使用的配表在哪里
+
+- 母体配置与包内变体：ItemSpread:Init(itemConfig) 读取 Spread_* 并写入实例字段；其它状态、恢复和扣费阶段使用这些字段。
+- 能量增益适用母体：EnergyBoostModel:OnSyncDataFinished 直接 require EnergyBoostItemConfig，建立 m_mapTargetItemType；CanEnergyBoost 读取此适用集合。
+
+
+<!-- generator-configs:end -->
 
 <!-- source-links:start -->
 
