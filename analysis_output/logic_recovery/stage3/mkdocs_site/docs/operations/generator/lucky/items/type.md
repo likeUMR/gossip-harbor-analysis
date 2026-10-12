@@ -64,13 +64,11 @@ GeneratorBoost 监听 `ItemSpread` 事件。母体支持 GeneratorBoost 时，Lu
 
 **目的**：制作食物，观察同一次点击怎样从前置检查进入当前页面所解释的分支。
 
-**本页发生什么**：本例抽到的 204 被识别为普通 Lucky 奖励，不是免费奖励，也不是更高阶的 Super 物品，因此按普通 Lucky 奖励展示给玩家。
+**本页发生什么**：主例B抽204，它不在本地Super名单中，因此显示普通Lucky。对照抽到名单中的205时，改用Super表现，物品不多抽、不多发。
 
 ### 代入本页的值
 
-主案例沿用前文：抽到 204、`isFree=false`，204 不在 Super 名单内，因此返回普通 `Lucky`，不发生第二次抽样。下面保留两个独立对照场景，用来解释其它类型；它们不是主案例的后续步骤。
-
-假设 `super_items={205}`，候选先抽到 205，且 `isFree=false`，因此它被判定为 SuperLucky ，物品仍来自前面已经完成的同一次抽取，并采用 Super 专用表现；没有进入独立奖池。为演示免费分支，再设下一次候选为 204、`isFree=true`，则判定为 FreeLucky，玩家领取免费奖励。
+食品袋105本地super_items=[205,304,305]，Lucky权重为204×63、205×10、303×15、304×10、305×2。B整数点50选204，isFree=false且无连续类型→Lucky。独立对照点70选205→SuperLucky；isFree=true则同一205→FreeSuperLucky。有TripleLucky1自定义类型时仍保留TripleLucky1，不再按名单分类。Smart关闭且没有连续自定义类型时，取得Lucky资格后的Super占比(10+10+2)/100=22%；不是额外22%的第二次机会。
 
 <details><summary>本案例共同前提</summary>
 

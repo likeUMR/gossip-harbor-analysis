@@ -1,5 +1,47 @@
 """Source-reviewed additions; merged into existing pages without rewriting configs."""
 BODIES = {
+'events/board/detail.md': '''# 棋子创建、订单刷新和落子事件的先后
+
+## 1. 创建与保存先于通知
+
+BaseBoardModel SpreadItem调用GenerateItem；它先由ItemModelFactory.CreateWithCode创建棋子（默认允许解锁类型），SaveItemProperty保存，再在位置非nil时_SetItem写入格子。主棋盘的_SetItem调用基类写入之后，除非autoUpdateOrderState显式false，才CountItemsCode、UpdateOrderState；订单状态刷新因此先于落子通知。
+
+GenerateItem返回新模型后构造消息：Source母体、New新棋子、EnergyBoostRatio（nil默认0）、CostEnergy、BoardSpreadType。先发送棋盘局部BoardEventType.SpreadItem；MainBoardModel再派发全局EEventType.ItemSpread。监听回调可在这个同步通知中继续产出追加棋子。
+
+## 2. 通知完成后才写本次日志
+
+MainBoardModel在全局通知之后处理日志。普通双倍来源GeneratorBoostExtraNormal归一为Normal，智能双倍来源GeneratorBoostExtraSmart归一为GeneratorBoostSmart；事件消息此前已经保留双倍类型，所以活动能据它复制，日志则区分另一口径。Disco日志类型再查当前仍有效的Disco属性；若本次用完助力并关闭，查到的属性值可为0。
+
+eb是本次指数、md是能量增益类型、st为日志来源、oriEle为返回的原始代码、sc为特殊场景；支持GeneratorBoost且有效Buff字符串非空时追加ab。之后LogSpread、_TryLogBoardFull。手动点击回到ItemSpread才发VibrationLight，并检查变换/销毁/CD Buff。
+
+## 3. 空位与失败边界
+
+上述SpreadItem没有“AddItem返回false就停止BoardChanged”的分支；文档不能自行补这样一条事务保障。空位前置检查和最终落点在点击链，创建/格层写入的异常或断言要继续追ItemModelFactory及ItemLayerModel。当前方法同样不把已扣能量、次数和保存自动回滚。
+
+**证据**：BaseBoardModel GenerateItem / SpreadItem；MainBoardModel _SetItem / SpreadItem；ItemSpread _TrySpread。完整事件消费者须逐个按其注册条件理解，不能把通知顺序理解成所有活动都无条件生效。
+''',
+'events/resource/detail.md': '''# 能量消耗、资源通知与免费 Lucky 进度
+
+## 1. 次数先处理，再扣实际能量
+
+手动点击在GenerateItemCode返回后才SpreadCostEnergy，然后记录Lucky的增益历史，最后落子。普通产出在GenerateItemCode内已改次数、更新计时、保存；Lucky直接返回没有普通扣次。不是先扣Energy再把次数写成1。
+
+SpreadCostEnergy把棋盘能量类型映射为属性类型；costEnergy真时，用最终指数的GetBoostCostNum作为请求数量，调用PropertyDataManager Consume，并把请求数写测试记录。此函数不检查Consume返回值，外层也不因失败自动撤回之前的状态。
+
+## 2. 属性消耗的实际分流
+
+Consume默认num为1，负数报错返回false，0返回true且不通知；测试无限属性开关命中也直接返回true。活动专用属性及礼物有各自handler。能量属性则调用EnergyModel SubtractEnergy，只有成功才派发PropertyConsumed并记录用户资源、SDK统计。
+
+SubtractEnergy先拒绝负数；无限能量直接返回true与实际消耗0。否则余额不足返回false；足够时写余额减请求数，到0记录耗尽统计，根据上传开关检查能量上传。若本次从不低于上限降到低于上限，开始恢复计时；最后返回实际消耗数。
+
+## 3. 请求量和实际量不能混用
+
+DispatchConsumeEvent消息包含property（类型、实际数量）和ext；能量分支ext.origin为请求数。先发全局PropertyConsumed，再LogUseItem。无限能量可能请求1却实际扣0；免费Lucky监听资源消耗时，必须按其读取的消息字段累计，不能用本次UI能量档代替所有入口的真实消耗。
+
+本次GenerateItemCode已完成，所以此次消耗推动的免费资格通常供后续点击使用；其它消耗入口也可能推进免费计数。具体服务器日重置、阈值生成与消费见[免费Lucky](../../lucky/free/generate.md)。
+
+**证据**：ItemSpread _TrySpread、SpreadCostEnergy；PropertyDataManager Consume、DispatchConsumeEvent；EnergyModel SubtractEnergy。上传handler、全局PropertyConsumed的其它监听还需按实际配置和订阅继续核对，不能推定为固定成功上传。
+''',
 'overrides/activity/index.md': '''# Disco：先直接帮助订单，否则改写普通产出
 
 Disco有自己的助力分值，不是把本次产物数量乘一个活动倍率。主棋盘母体获得Disco支持时，能量检查免能量，Lucky入口被跳过；然后先尝试直接提供订单相关代码。
@@ -223,14 +265,18 @@ Fixed分支调用TryExtraProduceItem：ExtraProduce Buff有效且配置存在才
 }
 
 CASES = {
+'lucky/items/type.md': ('主例B抽204，它不在本地Super名单中，因此显示普通Lucky。对照抽到名单中的205时，改用Super表现，物品不多抽、不多发。', '食品袋105本地super_items=[205,304,305]，Lucky权重为204×63、205×10、303×15、304×10、305×2。B整数点50选204，isFree=false且无连续类型→Lucky。独立对照点70选205→SuperLucky；isFree=true则同一205→FreeSuperLucky。有TripleLucky1自定义类型时仍保留TripleLucky1，不再按名单分类。Smart关闭且没有连续自定义类型时，取得Lucky资格后的Super占比(10+10+2)/100=22%；不是额外22%的第二次机会。'),
 'overrides/activity/detail.md': ('105主例未开启Disco。独立Disco对照说明先扣专用助力直接给订单物品，既不消耗普通池，也不扣普通能量和次数。', '假设105受Disco支持，剩余助力10，配置difficulty_level=5，订单缺五级205且其DifficultyLevel=5；可负担上限由10+8=18右移算得5，直接给205并扣2^(5−1)=16，助力截0且关闭Disco。返回能量指数0，costEnergy=false，次数仍80、Fixed池仍42。阈值与助力是对照输入，8分宽限来自代码；不足的6分不会成为负余额。'),
 'overrides/activity/index.md': ('105主例没有Disco。独立对照演示Disco支持时跳过Lucky并直接帮助订单，不能把活动Started理解成一律产物翻倍。', '对照假设Disco助力10、允许难度5、目标205难度5，直接产205并扣16助力，剩余截0；不扣Energy、普通次数或Fixed池。具体分值推导见底层页。'),
 'events/side_effects/index.md': ('食品袋105主例未启用追加Buff，Lucky产204没有凭空增加一件或活动进度。对照Buff有效时复制已经落下的Lucky物品。', '对照主Lucky代码204、有一个追加空位、ExtraLuckyProduce Buff有效时：再落一件204，追加类型GeneratorBoostExtraLucky且costEnergy=false。是否另增某项任务进度须由对应任务监听决定，不能统一写+1。'),
-'output/chest/detail.md': ('105是Fixed，主例不执行宝箱算法。独立预算例说明：候选列表可以有多件，但点击只实际使用第一件。', '假设宝箱剩余分值S=20，唯一未完成订单缺同链204、205，假设DiffScore分别8、18，库存均0。总缺分26，20+10≥26，于是候选列表为[204,205]，内部预算−6；外层本次只取204，costCount=8，母体实际剩余20−8=12，只落一件204。物品代码沿用食品链；分值与订单为算法对照输入，并非105真实宝箱配置。'),
-'output/chest/index.md': ('105主路径跳过宝箱；独立宝箱对照展示先帮接近完成的订单，再把预算变成实际物品。', '对照输入预算20、订单缺204与205（假设分值8、18）：10分宽限允许生成补齐候选，但本次只取204，扣8分、剩12。具体计算见底层页。'),
-'output/smart/detail.md': ('105主例不是SmartItem，不会进入此分值算法。独立SmartItem对照说明按二进制缺口补一件，而不是调整抽奖权重。', '假设仅一个有效订单缺205（五级），已有同链204一件（八个一级等价），其余库存0；需要16，扣现有8，缺口N=8（二进制1000），对应204。假设缓存分值204=8、205=18，母体预算20，SupplyScore=8；发204后resultCount从1变0，算法预算12，外层也按8扣母体到12。分值、库存及SmartItem母体为对照输入，105本地仍是Fixed。'),
-'output/smart/index.md': ('105主例不进入SmartItem；独立对照说明系统如何给一件能帮助合成订单物品的产物。', '订单缺五级205，已有四级204一件时，还需要另一件204才能合成。对照SmartItem预算20、204分值8，发一件204并扣8分；这些分值是示例输入。'),
+'output/chest/detail.md': ('105是Fixed，主例不执行宝箱算法。用实际宝箱main_super_ball_1作分支对照，说明候选列表可有多件，点击只使用第一件。', '本地main_super_ball_1模式4、初始分值450。假设使用后剩S=10、唯一未完成订单缺204与205、库存均0；默认OrderItemConfig中两者DiffScore为5、10，总缺分15。10+10≥15，候选列表[204,205]、算法内部预算−5；外层本次只取204，扣5，宝箱实际剩5，只落一件204。母体字段与分值来自本地表，剩余状态和订单是演示输入；不能套给食品袋105。'),
+'output/chest/index.md': ('105主路径跳过宝箱；实际宝箱main_super_ball_1的对照展示如何先帮接近完成的订单。', 'main_super_ball_1本地初始预算450，演示使用后剩10，订单缺204与205（本地分值5、10）。10分宽限使候选包含两件，但本次只给204、扣5、剩5，具体列表与母体预算差别见底层页。'),
+'output/smart/detail.md': ('105主例不是SmartItem。用实际main_smart_pot_a_1作对照，说明按合成缺口补一件，不是修改抽奖权重。', '本地main_smart_pot_a_1模式5、初始次数35、储备上限14；默认订单表204分值5、205分值10，均≤14，进入缓存。假设母体当前预算20、唯一订单缺五级205，已有四级204一件、其它同链库存0：目标16个一级等价、已有8、缺N=8（二进制1000），对应204，SupplyScore=5。发204后resultCount从1到0，预算20−5=15，母体也按5扣到15。母体字段和分值是本地值；订单、当前次数和库存为演示状态。'),
+'output/smart/index.md': ('105主例不进入SmartItem；实际智能母体main_smart_pot_a_1的对照展示给一件能帮助合成订单目标的物品。', '本地智能母体允许分值≤14的代码，204分值5。演示订单缺205、已有204一件时，还需要另一件204；当前预算20，本次给204并扣5、剩15。更细的库存分配和二进制计算见底层页。'),
 'overrides/boost/detail.md': ('食品袋105不属于生鱼链，主例不执行FishNet；独立生鱼对照展示“补缺降级”而不是再升级。', '假设生鱼最高级6，M=32，已有一级等价T=24，D=32−24=8，对应4级。实际能量指数2时候选等级为3..5；若升级后产物等级5，4在范围内且4<5，改给4级鱼，指数仍2。若当前产物已经4级，严格小于不成立，不改。链级数、库存和指数为对照输入。'),
 'lifecycle/count/detail.md': ('食品袋105普通分支扣次数，Lucky分支不进入普通扣次。状态更新与保存先发生，落子后的变换/销毁再判定。', '对照初始次数80、累计0、基础指数0，假设NextEnergyBoostCostIndex(0)返回1：普通A产201，次数79、累计1；随后计时更新、状态通知、保存，之后才扣能量和落子。Lucky B产204直接返回，次数仍80、累计仍0。循环返回值1是演示输入，不代替远端循环配置。'),
 'events/side_effects/detail.md': ('食品袋105主例未开启追加Buff，没有第二件。独立Lucky追加对照说明活动监听复制已落下的物品，不重抽Super资格。', '对照假设Source支持GeneratorBoost、ExtraLuckyProduce Buff有效，主事件BoardSpreadType=SuperLucky、New代码205、EnergyBoostRatio=0，还有一个扩散空位Q：复制205到Q，追加类型GeneratorBoostExtraLucky，costEnergy=false。改为TripleLucky1时本监听不进入；改为空位不足时本方法不复制。主分类和Buff是对照输入，没有凭空写活动进度+1。'),
+'events/board/detail.md': ('食品袋105普通A产201后，先保存新棋子并写目标格、刷新订单状态，再通知棋盘和全局监听；本例无追加Buff。', 'A输入位置P、代码201、指数0、CostEnergy=true、来源Normal。GenerateItem创建201并保存，_SetItem写P后CountItemsCode/UpdateOrderState；消息Source=105模型、New=201模型、EnergyBoostRatio=0、CostEnergy=true、BoardSpreadType=Normal。局部SpreadItem→全局ItemSpread→本次日志→满盘统计→返回点击链VibrationLight。源码没有案例旧说法中的AddItem失败返回或BoardChanged条件。'),
+'events/resource/detail.md': ('A普通产出先扣母体次数再扣能量；B Lucky不扣普通次数，但仍按本例条件扣能量。新的消耗通知推进后续免费Lucky进度。', '初始能量10、母体次数80；A示例次数循环返回1，GenerateItemCode先把次数改79并保存；最终指数0请求1能量，非无限、余额足够时Energy变9，PropertyConsumed数量1、ext.origin=1，再落201。B直接产204，次数仍80，能量同样10→9。无限能量对照请求仍1但真实消耗0、消息数量0；不能当成免费Lucky已累计1。'),
+'overrides/boost/index.md': ('食品袋105基础档不升级。独立能量增益对照说明订单可截断升级档，然后FishNet只对生鱼链补缺。', '对照原始代码201（一级）、最大指数2、订单当前缺202（二级）：按i=0检查201无缺口，i=1发现202缺口，实际指数截1，MergedType把201升到202；不会继续给203。它是2^指数的档位，不是把能量5乘1.2变6；主例指数0仍产201。'),
 }

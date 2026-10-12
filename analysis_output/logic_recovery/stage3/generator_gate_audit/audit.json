@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-12T03:08:29.393257+00:00",
+  "created_utc": "2026-10-12T03:25:29.154168+00:00",
   "version_scope": "GH 3.98.10 recovered client snapshot; actual server configuration unconfirmed",
   "status": "not_accepted",
   "scope_limitation": "Two core modules inventoried, not complete operation call closure. Regex candidates are not AST/bytecode semantic proof.",
@@ -3680,6 +3680,7 @@
         "operations/generator/energy/boost/detail.md",
         "operations/generator/energy/consume/detail.md",
         "operations/generator/energy/cost/detail.md",
+        "operations/generator/events/side_effects/detail.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/chance/load.md",
@@ -3853,7 +3854,6 @@
         "operations/generator/state/index.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/cooldown/index.md",
-        "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/free/generate.md",
         "operations/generator/state/initializing/detail.md",
         "operations/generator/state/initializing/index.md",
@@ -5263,7 +5263,8 @@
       "source": "source-confirmed",
       "body_sha256": "885762c6f22223f1d0c20c1ac3e480d6f2ad3a4cd4c64bd32ab6fa59190f6384",
       "document_name_matches": [
-        "operations/generator/energy/cost/detail.md"
+        "operations/generator/energy/cost/detail.md",
+        "operations/generator/overrides/activity/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -5739,8 +5740,7 @@
       "source": "source-confirmed",
       "body_sha256": "16c3a2609b95af6ad8e0529be90c35aa7921841ac73841680105160d3717ee66",
       "document_name_matches": [
-        "operations/generator/overrides/activity/detail.md",
-        "operations/generator/overrides/activity/index.md"
+        "operations/generator/overrides/activity/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -5804,9 +5804,7 @@
       "body_sha256": "a95d69a53caca077c22eb323452d8f94bd223bb006e9c8c051274b3e3a91593c",
       "document_name_matches": [
         "operations/generator/energy/boost/detail.md",
-        "operations/generator/lucky/items/type.md",
-        "operations/generator/overrides/activity/detail.md",
-        "operations/generator/overrides/activity/index.md"
+        "operations/generator/lucky/items/type.md"
       ],
       "conditions_and_returns": [
         {
@@ -5926,7 +5924,6 @@
       "body_sha256": "7471ea8febb9f5edcce19895fdae043e4710739182e65fc2ac2a49f6b8925c92",
       "document_name_matches": [
         "operations/generator/energy/boost/detail.md",
-        "operations/generator/overrides/activity/detail.md",
         "operations/generator/overrides/boost/detail.md",
         "operations/generator/overrides/boost/index.md"
       ],
@@ -6099,8 +6096,7 @@
       "source": "source-confirmed",
       "body_sha256": "bec4172b533f50e1cfc014598452068237eea19a59348580e35e483098703efd",
       "document_name_matches": [
-        "operations/generator/overrides/activity/detail.md",
-        "operations/generator/overrides/activity/index.md"
+        "operations/generator/overrides/activity/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -6150,9 +6146,7 @@
       "source": "source-confirmed",
       "body_sha256": "3cbc57970d0d32a9d2d1279aa6c8db8e5b8f186fb8e8acfd019e6c2c5a4d0431",
       "document_name_matches": [
-        "operations/generator/events/side_effects/detail.md",
-        "operations/generator/overrides/activity/detail.md",
-        "operations/generator/overrides/activity/index.md"
+        "operations/generator/overrides/activity/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -6217,12 +6211,9 @@
       "document_name_matches": [
         "operations/generator/energy/index.md",
         "operations/generator/overrides/index.md",
-        "operations/generator/events/resource/detail.md",
-        "operations/generator/events/side_effects/detail.md",
         "operations/generator/lifecycle/count/detail.md",
         "operations/generator/output/fixed/detail.md",
         "operations/generator/overrides/activity/detail.md",
-        "operations/generator/overrides/activity/index.md",
         "operations/generator/position/disposable/detail.md",
         "operations/generator/position/full/detail.md"
       ],
@@ -6330,6 +6321,7 @@
       "body_sha256": "5fd929fb8586e49d8a8bb09f17bdfda15a7c84f4e9982a1b77d8679863c2801f",
       "document_name_matches": [
         "operations/generator/output/index.md",
+        "operations/generator/output/chest/detail.md",
         "operations/generator/output/decremental/index.md",
         "operations/generator/output/fixed/detail.md",
         "operations/generator/overrides/safety/detail.md"
@@ -7010,6 +7002,7 @@
         "operations/generator/energy/consume/index.md",
         "operations/generator/energy/cost/detail.md",
         "operations/generator/energy/cost/index.md",
+        "operations/generator/overrides/activity/detail.md",
         "operations/generator/position/disposable/detail.md"
       ],
       "conditions_and_returns": [
@@ -7159,6 +7152,9 @@
         "operations/generator/entry/index.md",
         "operations/generator/state/index.md",
         "operations/generator/energy/consume/detail.md",
+        "operations/generator/events/board/detail.md",
+        "operations/generator/events/resource/detail.md",
+        "operations/generator/lifecycle/count/detail.md",
         "operations/generator/position/disposable/detail.md",
         "operations/generator/position/disposable/index.md"
       ],
@@ -7574,6 +7570,7 @@
         "operations/generator/energy/boost/detail.md",
         "operations/generator/energy/consume/detail.md",
         "operations/generator/energy/cost/detail.md",
+        "operations/generator/events/side_effects/detail.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/chance/load.md",
@@ -7906,7 +7903,6 @@
         "operations/generator/state/index.md",
         "operations/generator/lifecycle/cooldown/detail.md",
         "operations/generator/lifecycle/cooldown/index.md",
-        "operations/generator/lifecycle/count/detail.md",
         "operations/generator/lucky/free/generate.md",
         "operations/generator/state/initializing/detail.md",
         "operations/generator/state/initializing/index.md",
@@ -8876,8 +8872,7 @@
       "source": "source-confirmed",
       "body_sha256": "beb92623ad31a8829e8b4de8752d309db3131461c356587518b134450277e67b",
       "document_name_matches": [
-        "operations/generator/energy/boost/detail.md",
-        "operations/generator/events/resource/detail.md"
+        "operations/generator/energy/boost/detail.md"
       ],
       "conditions_and_returns": [
         {
@@ -9870,15 +9865,15 @@
     "operations/generator/energy/consume/index.md": "e96e26a04ebceadfee29a1d64e4955a6c3e6ae2110fab44e57569e182f3173ca",
     "operations/generator/energy/cost/detail.md": "a8587669084eebe2a1f6c30323c399d6cbde4e05a59a84b768d1202e38e77cc2",
     "operations/generator/energy/cost/index.md": "5797ff3803507e1118c66e0321454c14a86aea42f42f1773aed1c2489f1b728e",
-    "operations/generator/events/board/detail.md": "070d552eb7f4005b8806ea83885eeb53b1387ba8ac85ba95797e59bdf48f004b",
+    "operations/generator/events/board/detail.md": "c1daa29159ed6af9df1236f89f9a0e9ca6fe05f848607152afbcdb130e80f2e8",
     "operations/generator/events/board/index.md": "7d09c0fe34b95aa96b962e8beb563d30f881ae99ef8d4bf4db6c7fef1662840b",
-    "operations/generator/events/resource/detail.md": "1b039c31faa171de368efcf8eb0536c75a7a59ed5fd006c200ccfe6fb3ffff53",
+    "operations/generator/events/resource/detail.md": "a3be67a77e40eed2bc550e7827d6ace8c1b57c72e48cbf395f9f919a3a7b1b38",
     "operations/generator/events/resource/index.md": "8a472240f7a93ba3d8fbcbe8b7f1c07e708294fc6f6ca88cded5ad57a28c4bde",
-    "operations/generator/events/side_effects/detail.md": "ab713a03312fc43d94cadfeaee82faa99704e4eb30d96f9c05f82e2557ad3165",
-    "operations/generator/events/side_effects/index.md": "aa3e1c359b6bbb97c94e139ce14d83329353ed26a5819d46cd52966a6862c6de",
+    "operations/generator/events/side_effects/detail.md": "50a427821cb66a2d4c6941b67d60bf03135d7179c94c553af8c8fee1c45a5db7",
+    "operations/generator/events/side_effects/index.md": "f175a5566435db15f652d9935930926f97137c099f266491a400b8e23f5fbb58",
     "operations/generator/lifecycle/cooldown/detail.md": "ec2fab091ef15b0a170e62fb5995588bcc9e46429b5c9225b1fd6d34caae8983",
     "operations/generator/lifecycle/cooldown/index.md": "0bcce29ecd359f9a9abc1ef4a508c264e955d8b78587939030c926077a7061e0",
-    "operations/generator/lifecycle/count/detail.md": "ff037b92e211bce94f173e2b9182b87dc2a71c39b3e15eb2744f4f93781d1e7e",
+    "operations/generator/lifecycle/count/detail.md": "00c77fd57521a328f58eb3a2e532d49592d0fe0c8ca9e17ebceb229f7c289a84",
     "operations/generator/lifecycle/count/index.md": "cbc3f46780b2d99d6e30251d66a5ad9e8743d6f26b9bb12313b8009dc528355a",
     "operations/generator/lucky/chance/commit.md": "dc960c678be46944e3b92061ec14bec49aa3fa5a916fa90b7c6ba0ee69dba957",
     "operations/generator/lucky/chance/index.md": "84e49e060c395d16cac03aec1fea4814f01901420b1c09cb408f08fb64814db1",
@@ -9895,19 +9890,19 @@
     "operations/generator/lucky/items/select.md": "1bc7f0fde5f1e68be9276a100131a5b1a13a27271097bd0abb6a863c7e1241b6",
     "operations/generator/lucky/items/smart.md": "9a7c2e45400fb73ecc19737f093e526e27668ec58877c534773569d2a029d502",
     "operations/generator/lucky/items/type.md": "68cbe64bd8f11283fe90cae0a83384d94e2a42e5f7f01eca4540e06d28d80c5e",
-    "operations/generator/output/chest/detail.md": "73ee1d988df96799f706420778b3446804e6188c40ed490a81bce9ec98948942",
-    "operations/generator/output/chest/index.md": "1728b81122b414a206db10ba1558c097a40f7e79d7a69281b34f2dbd92207353",
+    "operations/generator/output/chest/detail.md": "2926f74620b38484bc05e9203370710b8d4e64a86fb1dd1ae1ee3b59b491db5a",
+    "operations/generator/output/chest/index.md": "48d80902549ea75207abc94b28606761ae5692881d54715c255cadc261bb67e3",
     "operations/generator/output/decremental/detail.md": "0b80f718d594f968ef257651c2699df5292c35bc7da7e8315827468673c3764c",
     "operations/generator/output/decremental/index.md": "a1e65d71e243f9aedf7a966b3cd6e1db08d9e125a5420eeab3830b44294e9831",
-    "operations/generator/output/fixed/detail.md": "2667e1443ec9107bf5bf9dd78f97b0cb836e60d991aff04099aa725f90e476e4",
-    "operations/generator/output/fixed/index.md": "e797e25a0633066e8f9ee7cd9efe374f6163c2432bcdc760b897fb8f46f3401f",
+    "operations/generator/output/fixed/detail.md": "48a062f362532cb9dcd30b2ce3823523f74cf46e5d688135bab433a96569bda2",
+    "operations/generator/output/fixed/index.md": "835427e397a2de68e9e04cafaac7116c6602ea8fe59b16ca6d505d232ef760b5",
     "operations/generator/output/order/detail.md": "f871068ad61f82749fbc47aff3a732204eac13bbadeae88b1b2f3dc82bb3504a",
     "operations/generator/output/order/index.md": "684276d054474e54af282c6afde578ee34c73971b5a85f28e55316e0bc79cc2a",
-    "operations/generator/output/smart/detail.md": "273ab414c546d34d9c5c5fc8088a33fded0dc2178442d98e165c72018a045b8c",
-    "operations/generator/output/smart/index.md": "c80064a78c619256981c352a618d8fdc1047b3cae8e106af427e255aab9cea5a",
-    "operations/generator/overrides/activity/detail.md": "e8799d63822cf3c310847ef13a7e72500ed2a51d2508a3a08ec0ee8309a409a6",
-    "operations/generator/overrides/activity/index.md": "53430c599f7f561f2fa74b704de8183bc24eb79145956642c9b25337e78732c1",
-    "operations/generator/overrides/boost/detail.md": "361f4e0cb5b8a12c313274451e781345f2e4da921918b01b8edef01612f09d2a",
+    "operations/generator/output/smart/detail.md": "95ec144039d0579b4b220542f36f6b17107bd7d25177925a76f307bbd7e208b7",
+    "operations/generator/output/smart/index.md": "ab4f503daefc564c494707a069b797fa3ccd7f32eca66e073dccce16b51ea9a8",
+    "operations/generator/overrides/activity/detail.md": "1d5005ef47273d3e1e34c66e619e4414c307419d70e5b9d57d794f7d50fe30a0",
+    "operations/generator/overrides/activity/index.md": "7affba0c14301d38878bdf8bcb154599a428b4987e61ea2e38951f6db2589bee",
+    "operations/generator/overrides/boost/detail.md": "42443557afab11d54f6d4f5b260938807c625a1cfb636a91d25a77f07fc93c5f",
     "operations/generator/overrides/boost/index.md": "a14ff7326f116eaf3c1857a46c16e324480c34a1544abe999654a57af62114a7",
     "operations/generator/overrides/safety/detail.md": "688a9d097c19588d2aa55c7baf95ef1502d6b19b588ec03fa43f571650bf3cdc",
     "operations/generator/overrides/safety/index.md": "de87b48d82910b87d098da19845c4341ba34674c4d038b9cae2b9cca08c48334",

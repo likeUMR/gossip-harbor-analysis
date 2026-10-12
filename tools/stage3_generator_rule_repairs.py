@@ -220,13 +220,14 @@ def supplement_generator_rules(docs: Path):
     from stage3_generator_deep_repairs import BODIES as DEEP_BODIES, CASES as DEEP_CASES
     BODIES.update(DEEP_BODIES)
     CASES.update(DEEP_CASES)
-    for rel, body in BODIES.items():
+    for rel in dict.fromkeys([*BODIES, *CASES]):
         p=docs/'operations/generator'/rel
         text=p.read_text(encoding='utf-8')
         idx=text.find('\n---\n')
         if idx<0: idx=text.find('\n\n---\n')
         if idx<0: raise ValueError(f'Cannot locate preserved example in {rel}')
-        text=body.strip()+'\n'+text[idx:]
+        if rel in BODIES:
+            text=BODIES[rel].strip()+'\n'+text[idx:]
         if rel in CASES:
             qualitative,values=CASES[rel]
             text=re.sub(r'(\*\*本页发生什么\*\*：).*?(?=\n\n)',lambda m:m.group(1)+qualitative,text,count=1,flags=re.S)
