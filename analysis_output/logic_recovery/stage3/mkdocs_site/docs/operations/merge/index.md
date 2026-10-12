@@ -82,3 +82,11 @@
 <div class="case-assets"><img src="../../../assets/cases/merge.png" alt="两个 201 合成 202" class="case-composite" style="display:block;max-width:560px;width:100%;height:auto;"></div>
 
 拖动 201 到另一个 201：两个输入被消耗，目标格变为 202，源格腾空。本地映射 201.MergedType=202，结果 202.BubbleChance=0，所以本例不会产生普通气泡；特殊棋子分支也未执行。坐标与动画未有运行时回放。
+# 棋子拖拽与合成
+
+本目录按实际调用顺序记录拖拽、交换、吸附、合成、邻格震动、气泡/纸箱处理和通知下游。合成结果不是只改变一个格子：它还可能写活动状态、任务进度、教程标记、平台统计和待联网完成时间。
+
+重点入口：
+
+- [普通合成通知](normal/notify/index.md)：`MergeItem`、`ItemMerged`、`OnShock` 及各活动消费者。
+- [通知详细算法](normal/notify/detail.md)：直接写入、目标截断、二次事件、联网边界与未闭合项。

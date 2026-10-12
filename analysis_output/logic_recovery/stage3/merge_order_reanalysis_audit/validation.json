@@ -1,0 +1,6 @@
+{
+  "method": "restored-Lua-vs-transformed-bytecode controlled cases",
+  "result": "supports-local-rules-only",
+  "covered": ["score/token target clamping", "Team score win/loss/offline branches", "Combo DBKeys.MyInfo seconds/token write", "OrderFinished consumer dispatch inventory", "MainOrderCreated pre-DBAdd ordering"],
+  "not_proven": ["Unity dispatcher registration order", "native database durability", "real-account server-config selection", "original-client visual/network behavior"]
+}

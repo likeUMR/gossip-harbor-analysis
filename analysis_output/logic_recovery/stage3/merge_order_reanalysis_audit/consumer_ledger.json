@@ -1,0 +1,7 @@
+{
+  "batch": "2026-10-12-merge-order-reanalysis",
+  "status": "partial-closed",
+  "merge": {"event_chain": ["BoardEventType.MergeItem", "EEventType.ItemMerged", "OnShock", "EEventType.ItemShocked"], "closed": ["activity qualification", "target clamping and activity DB writes", "offline full-score markers", "Team score and race-end branches", "task progress dispatch", "Farmboard and GeneratorFactory effects"], "open": ["dynamic task conditions/rewards", "account FileReplace and remote tiers", "native save/load and original-client diff", "anonymous/dynamic listeners"]},
+  "orders": {"event_chain": ["OrderFinished", "UpdateOrderState", "SmileOrderDeliver_1", "CheckMoreUpload", "FinishOrder"], "closed": ["activity token/cache consumers", "TimedOrder and TutorialOrder state", "task/Pass progress", "shop/platform/SDK effects", "MainOrderCreated pre-DBAdd ordering"], "open": ["dynamic reward handlers", "native persistence/reload", "network/server acknowledgement", "dynamic listeners and anonymous prototypes"]},
+  "gates": {"G1":"pending","G2":"pending","G3":"pending","G4":"pending","G5":"pending","G6":"pending","G7":"unavailable"}
+}

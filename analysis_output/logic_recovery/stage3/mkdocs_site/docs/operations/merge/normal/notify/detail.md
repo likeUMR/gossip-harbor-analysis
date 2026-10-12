@@ -26,6 +26,22 @@ ItemMerged消费者可包括卡片链、教程、解锁表现和活动；必须�
 
 TaskEventProgressGainModule默认operation=Add；BubbleSpread监听则为Bubble、operation=Update、num=1。动态注册任务模型的具体任务条件、目标量和奖励仍由各自活动配置决定，不能把注册器当成统一奖励算法。事件响应需要继续追到各活动存档/奖励边界，表格描述的是已核实的入口与直接规则，不把尚未取得的远端档位当已知值。
 
+## 合成后的状态闭包
+
+`ItemMerged` 不是一个“所有活动统一加一分”的事件。每个活动都先做自己的资格判断，再把配置值截断、落库并决定是否派出结束或表现事件：
+
+| 活动/模块 | 直接写入 | 达标或后续派发 | 离线边界 |
+| --- | --- | --- | --- |
+| Avenue、Road | `DBKey.Score` 累加并 `UpdateContent` | 跨普通阶段立即领取阶段奖励；Road 结束时派 `OrderStatusChanged`，合成场景派 `ScoreChangedEvent` | 奖励处理依赖活动当前状态；远端档位不能由本地默认值代替 |
+| Exped | 分数写回，使用 `min(old+add,target)` | 派 `Event_ScoreChanged`；达标进入升级逻辑 | 达标时只保存完成时间并派 `Event_FullScoreWithoutNet`，联网后才升级 |
+| Upward、FloatRace | 分数截到目标并保存 | 达标升级，保存等级/排名/奖励恢复信息，清到达时间，派 `OrderStatusChanged`；跨最大等级增加轮次，超过总轮数派完成事件 | 与 Exped 相同，离线只记“满分待联网” |
+| Battle | 当前比赛分数截到目标并保存 | 派分数变化；比赛中达标直接 `RaceEnd(Win)` | 只有 `Started`、未完成轮次且 `InRace` 才能加分 |
+| Team | 先写本方分数，再重算队友/对手时间分数与排名 | 达标时保存机器人数据、记录胜负、推进轮次/状态并派 `TeamRaceEnd` 与 `OrderStatusChanged`；未达标派 `ScoreChangedEvent` | 联网才立即领取和记录胜负；断网只设置结束提示，等待连接完成结算 |
+| Combo | `DBKeys.MyInfo.seconds/token` 批量写入，代币为 `min(old+num,target)` | 派 `TokenChangedEvent` 和行为日志；胜负/阶段推进由后续任务状态处理 | `_CanAddToken` 在任务进行中或无网络且未达目标时才允许入口，不能据事件本身推导已经领奖 |
+| Farmboard、GeneratorFactory | Farmboard 只在新等级严格高于当前等级时写 `LevelKey`；工厂写 `m_bOpen` | Farmboard 尝试解雾并派等级事件；工厂开启时检查蜘蛛网、派开关事件并刷新仓库红点 | 这些是开关/等级状态，不是普通棋盘物数量的替代保存 |
+
+因此，合成一次可能同时改变棋盘结果、一个或多个活动数据库字段、任务进度、活动完成时间和待联网标记。恢复或实现时必须按 `Source.BoardModel`、活动状态、目标上限和网络状态逐项判断；不能只复现 `MergeItem`/`ItemMerged` 两个事件名。受控 Lua 测试覆盖的是上述局部规则，未证明 Unity 原生存档、服务器档位或所有动态任务奖励。
+
 
 ## 对应本地配表
 
