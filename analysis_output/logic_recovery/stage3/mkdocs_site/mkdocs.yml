@@ -103,8 +103,6 @@ nav:
   - operations/generator/index.md
   - Week9 游玩节奏与 42 次轮询:
     - operations/generator/week9_experience/index.md
-  - 棋子机制历史完整归档:
-    - operations/generator/legacy_mechanics/index.md
   - 状态检查:
     - operations/generator/state/index.md
     - Initializing：初始化中:
@@ -354,8 +352,6 @@ nav:
   - operations/orders/index.md
   - Week9 槽位、笑脸与好感度实测:
     - operations/orders/week9_empirical/index.md
-  - 订单机制历史完整归档:
-    - operations/orders/legacy_mechanics/index.md
   - 剧情与好感度系统:
     - operations/orders/intimacy/index.md
   - 可交付判断:

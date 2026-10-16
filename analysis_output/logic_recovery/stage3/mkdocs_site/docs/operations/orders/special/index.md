@@ -1,5 +1,7 @@
 # 特殊与分支订单
 
+TimedOrder 是活动期间的专属 Slot13 分支：活动资格和补位扫描都通过后才创建限时订单；本地 `RefreshTime=1` 只是创建门槛，不能解释为每秒生成。完成后会再次触发补位，是否续单由远端活动轮数和时间窗口决定。
+
 `MainBoardModel:FinishOrder` 先检查 `order:GetInnerType()`。`Special` 进入 `_FinishSpecialOrder`，`Branch` 进入 `_FinishBranchOrder`，两者都会立即返回，不执行普通订单的奖励快照、亲密度礼物和逐项需求扣除链。
 
 特殊订单按 `OrderSpecialConfig` 的 `Requirement1..3` 链和 `GeneratorChain` 批量清除棋盘相关物品，发放专用 `Rewards`，写入 `EndTimeline` 地图进度并派发 `BoardEventType.FinishSpecialOrder`。分支订单按单条 `Requirement` 链清除相关物品，然后对 `Rewards` 权重列表循环抽取并把结果落到空位；空位不足和尾部事件需要运行时复核。

@@ -1,5 +1,11 @@
 # 合成副产物
 
+合成副产物属于普通合成完成后的实际结算阶段。购买气泡会改变后续气泡的资格或状态，破坏气泡、下一次合成和状态结束必须沿本页的顺序处理；它们不是独立的历史玩法入口。
+
+## 气泡生命周期的历史规则
+
+合成先写入主结果，再按等级、空位、BubbleChance 和活动开关检查普通气泡、卡牌、能量气泡、金币和临时棋子。购买气泡后的破坏状态只影响满足条件的后续合成；状态消费后清除，下一次合成恢复普通判断。棋盘满、资格不符或活动关闭时，副产物分支提前返回，主合成结果仍然保留。
+
 顺序是 `TempItem.GenerateType` → `CardItem.TryGenerateItem` → `EnergyBubble.CanSpreadEnergyBubble` → `_TrySpreadBubbleByMerge` → 独立金币检查。前四类用 `hasCreateItem` 互斥，金币检查在之后单独执行，均需有效空位。
 
 - [普通气泡](bubble/index.md)
